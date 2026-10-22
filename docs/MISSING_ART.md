@@ -1,20 +1,9 @@
-# Missing production art — 43 catalog entries
+# Missing production art — 31 catalog entries
 
-The sprites below are missing. Their metadata exists but **no PNG is committed**. The available images are first-pass drafts and still need artistic QA.
+The following registered assets still have no standalone PNG file in the repo. The current artwork is useful for prototyping but remains unapproved until artistic visual QA.
 
-Priority after characters:
-- Complete room architecture, stairs and ocean backgrounds.
-- Clean labels and edge halos from existing atlas crops.
-- Produce more detailed hero / NPC art to replace the first-pass animation sheets.
+## Outstanding image files
 
-## Pending PNG IDs
-
-- W008 — Stone Wall Corner SW (walls)
-- W009 — Stone Wall Corner SE (walls)
-- A002 — Stone Arch Top (architecture)
-- A003 — Stone Arch Left (architecture)
-- A004 — Stone Arch Right (architecture)
-- A016 — Stone Door Decorated (architecture)
 - ST001 — Stone Stair Top (stairs)
 - ST002 — Stone Stair Middle (stairs)
 - ST003 — Stone Stair Bottom (stairs)
@@ -46,9 +35,13 @@ Priority after characters:
 - O015 — Book Open (objects)
 - O020 — Compass Decoration (objects)
 - D005 — Banner Anchor (decor)
-- D006 — Banner Wall Mount (decor)
-- D012 — Candle Flame Frame 01 (decor)
-- D013 — Candle Flame Frame 02 (decor)
-- D014 — Candle Flame Frame 03 (decor)
-- D015 — Lantern Glow (decor)
-- D016 — Candle Glow (decor)
+
+## Art and gameplay priorities
+
+1. Improve character and portrait fidelity compared with the seaside sanctuary reference; preserve compatible animation frames and update the index.
+2. Finish ocean background tiles and coherent looping foam/wave animation.
+3. Create remaining furniture and object variants as clean individual PNGs.
+4. Remove colored fringes or leftovers from concept-sheet crops and fix collision/origin.
+5. Visual approval of all individual assets before marking status as ready.
+
+Review links: `docs/ASSET_GALLERY.md`, `docs/ASSET_AUDIT.md`, and `docs/ASSET_QUALITY_POLICY.md`.

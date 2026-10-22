@@ -13,9 +13,11 @@ The actors are gameplay placeholders. **There are 12 original first-pass charact
 
 ## Assets and QA
 - **218** catalog entries with stable IDs and reuse across rooms.
-- **175** independent sprite PNG files currently stored under `map_factory/parts/`.
-- **43** remaining PNGs not created.
-- **175** available images remain unapproved drafts (`needs_cleanup`) until their native visual quality is reviewed.
+- **187** independent sprite PNG files currently stored under `map_factory/parts/`.
+- **31** remaining PNGs not created.
+- **187** available images remain unapproved drafts (`needs_cleanup`) until their native visual quality is reviewed.
+
+The latest pass also added modular arch/wall fragments and separated animated candle flames + glow in `scenes/room_light_fx.gd`. All new items are unreviewed drafts, not approved finished art.
 
 Browse the [visual review gallery](docs/ASSET_GALLERY.md), [automatic audit](docs/ASSET_AUDIT.md), and [asset index](map_factory/metadata/asset_index.json).
 
