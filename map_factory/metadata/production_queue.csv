@@ -28,8 +28,8 @@ W004,walls,Stone Wall Tall,needs_cleanup,res://map_factory/parts/walls/W004_Ston
 W005,walls,Stone Wall Low,needs_cleanup,res://map_factory/parts/walls/W005_Stone_Wall_Low.png
 W006,walls,Stone Wall Corner NW,needs_cleanup,res://map_factory/parts/walls/W006_Stone_Wall_Corner_NW.png
 W007,walls,Stone Wall Corner NE,needs_cleanup,res://map_factory/parts/walls/W007_Stone_Wall_Corner_NE.png
-W008,walls,Stone Wall Corner SW,planned,res://map_factory/parts/walls/W008_Stone_Wall_Corner_SW.png
-W009,walls,Stone Wall Corner SE,planned,res://map_factory/parts/walls/W009_Stone_Wall_Corner_SE.png
+W008,walls,Stone Wall Corner SW,needs_cleanup,res://map_factory/parts/walls/W008_Stone_Wall_Corner_SW.png
+W009,walls,Stone Wall Corner SE,needs_cleanup,res://map_factory/parts/walls/W009_Stone_Wall_Corner_SE.png
 W010,walls,Stone Wall End Left,needs_cleanup,res://map_factory/parts/walls/W010_Stone_Wall_End_Left.png
 W011,walls,Stone Wall End Right,needs_cleanup,res://map_factory/parts/walls/W011_Stone_Wall_End_Right.png
 W012,walls,Stone Wall With Ivy,needs_cleanup,res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png
@@ -40,9 +40,9 @@ W016,walls,Stone Wall Doorway,needs_cleanup,res://map_factory/parts/walls/W016_S
 W017,walls,Stone Wall Ruined Top,needs_cleanup,res://map_factory/parts/walls/W017_Stone_Wall_Ruined_Top.png
 W018,walls,Stone Wall Inner Corner,needs_cleanup,res://map_factory/parts/walls/W018_Stone_Wall_Inner_Corner.png
 A001,architecture,Stone Arch Full,needs_cleanup,res://map_factory/parts/architecture/A001_Stone_Arch_Full.png
-A002,architecture,Stone Arch Top,planned,res://map_factory/parts/architecture/A002_Stone_Arch_Top.png
-A003,architecture,Stone Arch Left,planned,res://map_factory/parts/architecture/A003_Stone_Arch_Left.png
-A004,architecture,Stone Arch Right,planned,res://map_factory/parts/architecture/A004_Stone_Arch_Right.png
+A002,architecture,Stone Arch Top,needs_cleanup,res://map_factory/parts/architecture/A002_Stone_Arch_Top.png
+A003,architecture,Stone Arch Left,needs_cleanup,res://map_factory/parts/architecture/A003_Stone_Arch_Left.png
+A004,architecture,Stone Arch Right,needs_cleanup,res://map_factory/parts/architecture/A004_Stone_Arch_Right.png
 A005,architecture,Stone Arch With Ivy,needs_cleanup,res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png
 A006,architecture,Stone Arch Broken,needs_cleanup,res://map_factory/parts/architecture/A006_Stone_Arch_Broken.png
 A007,architecture,Stone Column Full,needs_cleanup,res://map_factory/parts/architecture/A007_Stone_Column_Full.png
@@ -54,7 +54,7 @@ A012,architecture,Stone Column With Flowers,needs_cleanup,res://map_factory/part
 A013,architecture,Stone Pillar Short,needs_cleanup,res://map_factory/parts/architecture/A013_Stone_Pillar_Short.png
 A014,architecture,Stone Pillar Tall,needs_cleanup,res://map_factory/parts/architecture/A014_Stone_Pillar_Tall.png
 A015,architecture,Stone Door Arched,needs_cleanup,res://map_factory/parts/architecture/A015_Stone_Door_Arched.png
-A016,architecture,Stone Door Decorated,planned,res://map_factory/parts/architecture/A016_Stone_Door_Decorated.png
+A016,architecture,Stone Door Decorated,needs_cleanup,res://map_factory/parts/architecture/A016_Stone_Door_Decorated.png
 ST001,stairs,Stone Stair Top,planned,res://map_factory/parts/stairs/ST001_Stone_Stair_Top.png
 ST002,stairs,Stone Stair Middle,planned,res://map_factory/parts/stairs/ST002_Stone_Stair_Middle.png
 ST003,stairs,Stone Stair Bottom,planned,res://map_factory/parts/stairs/ST003_Stone_Stair_Bottom.png
@@ -164,17 +164,17 @@ D002,decor,Banner Blue Medium,needs_cleanup,res://map_factory/parts/decor/D002_B
 D003,decor,Banner Blue Short,needs_cleanup,res://map_factory/parts/decor/D003_Banner_Blue_Short.png
 D004,decor,Banner Compass,needs_cleanup,res://map_factory/parts/decor/D004_Banner_Compass.png
 D005,decor,Banner Anchor,planned,res://map_factory/parts/decor/D005_Banner_Anchor.png
-D006,decor,Banner Wall Mount,planned,res://map_factory/parts/decor/D006_Banner_Wall_Mount.png
+D006,decor,Banner Wall Mount,needs_cleanup,res://map_factory/parts/decor/D006_Banner_Wall_Mount.png
 D007,decor,Lantern Hanging,needs_cleanup,res://map_factory/parts/decor/D007_Lantern_Hanging.png
 D008,decor,Lantern Wall Left,needs_cleanup,res://map_factory/parts/decor/D008_Lantern_Wall_Left.png
 D009,decor,Lantern Wall Right,needs_cleanup,res://map_factory/parts/decor/D009_Lantern_Wall_Right.png
 D010,decor,Lantern Table,needs_cleanup,res://map_factory/parts/decor/D010_Lantern_Table.png
 D011,decor,Lantern Pole,needs_cleanup,res://map_factory/parts/decor/D011_Lantern_Pole.png
-D012,decor,Candle Flame Frame 01,planned,res://map_factory/parts/decor/D012_Candle_Flame_Frame_01.png
-D013,decor,Candle Flame Frame 02,planned,res://map_factory/parts/decor/D013_Candle_Flame_Frame_02.png
-D014,decor,Candle Flame Frame 03,planned,res://map_factory/parts/decor/D014_Candle_Flame_Frame_03.png
-D015,decor,Lantern Glow,planned,res://map_factory/parts/decor/D015_Lantern_Glow.png
-D016,decor,Candle Glow,planned,res://map_factory/parts/decor/D016_Candle_Glow.png
+D012,decor,Candle Flame Frame 01,needs_cleanup,res://map_factory/parts/decor/D012_Candle_Flame_Frame_01.png
+D013,decor,Candle Flame Frame 02,needs_cleanup,res://map_factory/parts/decor/D013_Candle_Flame_Frame_02.png
+D014,decor,Candle Flame Frame 03,needs_cleanup,res://map_factory/parts/decor/D014_Candle_Flame_Frame_03.png
+D015,decor,Lantern Glow,needs_cleanup,res://map_factory/parts/decor/D015_Lantern_Glow.png
+D016,decor,Candle Glow,needs_cleanup,res://map_factory/parts/decor/D016_Candle_Glow.png
 D017,decor,Rope Hanging,needs_cleanup,res://map_factory/parts/decor/D017_Rope_Hanging.png
 D018,decor,Decorative Ornament,needs_cleanup,res://map_factory/parts/decor/D018_Decorative_Ornament.png
 S001,shadows,Shadow Contact Small,needs_cleanup,res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png

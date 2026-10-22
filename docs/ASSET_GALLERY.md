@@ -8,7 +8,7 @@ Draft art is not approved until a person checks native pixel detail, clean alpha
 
 ![architecture sprites](previews/architecture.png)
 
-**12 PNGs** | Actual files: [map_factory/parts/architecture](../map_factory/parts/architecture)
+**16 PNGs** | Actual files: [map_factory/parts/architecture](../map_factory/parts/architecture)
 
 ## Characters
 
@@ -20,7 +20,7 @@ Draft art is not approved until a person checks native pixel detail, clean alpha
 
 ![decor sprites](previews/decor.png)
 
-**11 PNGs** | Actual files: [map_factory/parts/decor](../map_factory/parts/decor)
+**17 PNGs** | Actual files: [map_factory/parts/decor](../map_factory/parts/decor)
 
 ## Environment
 
@@ -74,4 +74,4 @@ Draft art is not approved until a person checks native pixel detail, clean alpha
 
 ![walls sprites](previews/walls.png)
 
-**16 PNGs** | Actual files: [map_factory/parts/walls](../map_factory/parts/walls)
+**18 PNGs** | Actual files: [map_factory/parts/walls](../map_factory/parts/walls)

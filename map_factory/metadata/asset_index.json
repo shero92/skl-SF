@@ -1,7 +1,7 @@
 {
   "version": 2,
   "asset_count": 218,
-  "extracted_count": 175,
+  "extracted_count": 187,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
   "assets": [
@@ -1341,14 +1341,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W008_Stone_Wall_Corner_SW.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        180,
+        239
       ],
       "origin": [
-        32,
-        64
+        90,
+        239
       ],
       "collision": {
         "enabled": false,
@@ -1375,7 +1375,13 @@
         "corner",
         "sw"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "derived_high_detail_source_fragment",
+        "parent_id": "W006",
+        "method": "mirror"
+      },
+      "qa_notes": "Mirrored source; corner orientation needs manual art QA; preserves source-native pixels; visually inspect before approval."
     },
     {
       "id": "W009",
@@ -1383,14 +1389,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W009_Stone_Wall_Corner_SE.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        157,
+        250
       ],
       "origin": [
-        32,
-        64
+        78,
+        250
       ],
       "collision": {
         "enabled": false,
@@ -1417,7 +1423,13 @@
         "corner",
         "se"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "derived_high_detail_source_fragment",
+        "parent_id": "W007",
+        "method": "mirror"
+      },
+      "qa_notes": "Mirrored source; corner orientation needs manual art QA; preserves source-native pixels; visually inspect before approval."
     },
     {
       "id": "W010",
@@ -1893,14 +1905,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A002_Stone_Arch_Top.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        302,
+        110
       ],
       "origin": [
-        32,
-        64
+        151,
+        110
       ],
       "collision": {
         "enabled": false,
@@ -1926,7 +1938,13 @@
         "arch",
         "top"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "derived_high_detail_source_fragment",
+        "parent_id": "A001",
+        "method": "arch_top"
+      },
+      "qa_notes": "Top segment; verify seams with adjoining arch parts; preserves source-native pixels; visually inspect before approval."
     },
     {
       "id": "A003",
@@ -1934,14 +1952,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A003_Stone_Arch_Left.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        126,
+        179
       ],
       "origin": [
-        32,
-        64
+        63,
+        179
       ],
       "collision": {
         "enabled": false,
@@ -1967,7 +1985,13 @@
         "arch",
         "left"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "derived_high_detail_source_fragment",
+        "parent_id": "A001",
+        "method": "arch_left"
+      },
+      "qa_notes": "Left segment; verify connecting seams and proportions; preserves source-native pixels; visually inspect before approval."
     },
     {
       "id": "A004",
@@ -1975,14 +1999,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A004_Stone_Arch_Right.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        126,
+        194
       ],
       "origin": [
-        32,
-        64
+        63,
+        194
       ],
       "collision": {
         "enabled": false,
@@ -2008,7 +2032,13 @@
         "arch",
         "right"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "derived_high_detail_source_fragment",
+        "parent_id": "A001",
+        "method": "arch_right"
+      },
+      "qa_notes": "Right segment; verify connecting seams and proportions; preserves source-native pixels; visually inspect before approval."
     },
     {
       "id": "A005",
@@ -2524,14 +2554,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A016_Stone_Door_Decorated.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        117,
+        204
       ],
       "origin": [
-        32,
-        64
+        58,
+        204
       ],
       "collision": {
         "enabled": false,
@@ -2557,7 +2587,13 @@
         "door",
         "decorated"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "derived_high_detail_source_fragment",
+        "parent_id": "W016",
+        "method": "door"
+      },
+      "qa_notes": "Decorated door segment; crop needs manual refinement; preserves source-native pixels; visually inspect before approval."
     },
     {
       "id": "ST001",
@@ -7396,14 +7432,14 @@
       "category": "decor",
       "subtype": "banner",
       "texture_path": "res://map_factory/parts/decor/D006_Banner_Wall_Mount.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        152,
+        56
       ],
       "origin": [
-        32,
-        64
+        76,
+        56
       ],
       "collision": {
         "enabled": false,
@@ -7429,7 +7465,13 @@
         "wall",
         "mount"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "derived_high_detail_source_fragment",
+        "parent_id": "D001",
+        "method": "banner_mount"
+      },
+      "qa_notes": "Banner upper mount detail; attachment needs review; preserves source-native pixels; visually inspect before approval."
     },
     {
       "id": "D007",
@@ -7664,14 +7706,14 @@
       "category": "decor",
       "subtype": "candle",
       "texture_path": "res://map_factory/parts/decor/D012_Candle_Flame_Frame_01.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        96,
+        128
       ],
       "origin": [
-        32,
-        64
+        48,
+        122
       ],
       "collision": {
         "enabled": false,
@@ -7698,7 +7740,12 @@
         "frame",
         "01"
       ],
-      "reusable": true
+      "reusable": true,
+      "qa_notes": "One of 3-frame independent candle flame RGBA effects; compare light and timing.",
+      "source": {
+        "kind": "original_procedural_fx",
+        "generator": "tools/generate_missing_details.py"
+      }
     },
     {
       "id": "D013",
@@ -7706,14 +7753,14 @@
       "category": "decor",
       "subtype": "candle",
       "texture_path": "res://map_factory/parts/decor/D013_Candle_Flame_Frame_02.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        96,
+        128
       ],
       "origin": [
-        32,
-        64
+        48,
+        122
       ],
       "collision": {
         "enabled": false,
@@ -7740,7 +7787,12 @@
         "frame",
         "02"
       ],
-      "reusable": true
+      "reusable": true,
+      "qa_notes": "One of 3-frame independent candle flame RGBA effects; compare light and timing.",
+      "source": {
+        "kind": "original_procedural_fx",
+        "generator": "tools/generate_missing_details.py"
+      }
     },
     {
       "id": "D014",
@@ -7748,14 +7800,14 @@
       "category": "decor",
       "subtype": "candle",
       "texture_path": "res://map_factory/parts/decor/D014_Candle_Flame_Frame_03.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        96,
+        128
       ],
       "origin": [
-        32,
-        64
+        48,
+        122
       ],
       "collision": {
         "enabled": false,
@@ -7782,7 +7834,12 @@
         "frame",
         "03"
       ],
-      "reusable": true
+      "reusable": true,
+      "qa_notes": "One of 3-frame independent candle flame RGBA effects; compare light and timing.",
+      "source": {
+        "kind": "original_procedural_fx",
+        "generator": "tools/generate_missing_details.py"
+      }
     },
     {
       "id": "D015",
@@ -7790,14 +7847,14 @@
       "category": "decor",
       "subtype": "lantern",
       "texture_path": "res://map_factory/parts/decor/D015_Lantern_Glow.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        256,
+        256
       ],
       "origin": [
-        32,
-        64
+        128,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7822,7 +7879,12 @@
         "lantern",
         "glow"
       ],
-      "reusable": true
+      "reusable": true,
+      "qa_notes": "Soft independent translucent orange light overlay. Blend/tint in Godot after visual QA.",
+      "source": {
+        "kind": "original_procedural_fx",
+        "generator": "tools/generate_missing_details.py"
+      }
     },
     {
       "id": "D016",
@@ -7830,14 +7892,14 @@
       "category": "decor",
       "subtype": "candle",
       "texture_path": "res://map_factory/parts/decor/D016_Candle_Glow.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        256,
+        256
       ],
       "origin": [
-        32,
-        64
+        128,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7862,7 +7924,12 @@
         "candle",
         "glow"
       ],
-      "reusable": true
+      "reusable": true,
+      "qa_notes": "Soft independent translucent orange light overlay. Blend/tint in Godot after visual QA.",
+      "source": {
+        "kind": "original_procedural_fx",
+        "generator": "tools/generate_missing_details.py"
+      }
     },
     {
       "id": "D017",

@@ -1,9 +1,9 @@
 {
   "summary": {
     "total": 218,
-    "existing": 175,
-    "needs_cleanup": 175,
-    "missing": 43
+    "existing": 187,
+    "needs_cleanup": 187,
+    "missing": 31
   },
   "by_category": {
     "floors": {
@@ -11,12 +11,12 @@
       "missing": 0
     },
     "walls": {
-      "existing": 16,
-      "missing": 2
+      "existing": 18,
+      "missing": 0
     },
     "architecture": {
-      "existing": 12,
-      "missing": 4
+      "existing": 16,
+      "missing": 0
     },
     "stairs": {
       "existing": 10,
@@ -39,8 +39,8 @@
       "missing": 0
     },
     "decor": {
-      "existing": 11,
-      "missing": 7
+      "existing": 17,
+      "missing": 1
     },
     "shadows": {
       "existing": 16,
@@ -634,12 +634,40 @@
     {
       "id": "W008",
       "category": "walls",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        180,
+        239
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        180,
+        239
+      ],
+      "bytes": 109250,
+      "sha256": "4ca11637f5ed764a6cabc0f729c6b5466b4832f6cf8345310f2aaad5bf34c918",
+      "warnings": []
     },
     {
       "id": "W009",
       "category": "walls",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        157,
+        250
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        157,
+        250
+      ],
+      "bytes": 87128,
+      "sha256": "6042e78ca66a6fafe005f6e041adc8e354c0fbdee5214c39f3d2b5b60b843966",
+      "warnings": []
     },
     {
       "id": "W010",
@@ -834,17 +862,59 @@
     {
       "id": "A002",
       "category": "architecture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        302,
+        110
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        302,
+        110
+      ],
+      "bytes": 71941,
+      "sha256": "2a9dda2b03d1147cd6758a838a142c4659c64f5dadbbcef91d3921351ebab959",
+      "warnings": []
     },
     {
       "id": "A003",
       "category": "architecture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        179
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        126,
+        179
+      ],
+      "bytes": 47265,
+      "sha256": "41960f4d1be0788a74030ee01a0506f90f4c3d196a3b5f2e3a50ee61e1404ed7",
+      "warnings": []
     },
     {
       "id": "A004",
       "category": "architecture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        194
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        126,
+        194
+      ],
+      "bytes": 45748,
+      "sha256": "937693dc59b6c29fccc8a3708bd2a95b2766073b24e9d14e998c2b47b6085397",
+      "warnings": []
     },
     {
       "id": "A005",
@@ -1058,7 +1128,21 @@
     {
       "id": "A016",
       "category": "architecture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        117,
+        204
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        117,
+        204
+      ],
+      "bytes": 64621,
+      "sha256": "4ef3003f010b20269817bfcbae2af2fa4fbc1945ed5cdb94b735af310f144d81",
+      "warnings": []
     },
     {
       "id": "ST001",
@@ -2700,7 +2784,21 @@
     {
       "id": "D006",
       "category": "decor",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        152,
+        56
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        152,
+        56
+      ],
+      "bytes": 17827,
+      "sha256": "b6003f66dc6b59f75b7a71c4a89b62e25f54fd8f94e4812f162bb9c87e134e07",
+      "warnings": []
     },
     {
       "id": "D007",
@@ -2800,27 +2898,97 @@
     {
       "id": "D012",
       "category": "decor",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        96,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        24,
+        25,
+        76,
+        122
+      ],
+      "bytes": 757,
+      "sha256": "48cff8275710efa8c0d768229fd5ee8095e7e35648b8f5ab8f02bd7092aa5c26",
+      "warnings": []
     },
     {
       "id": "D013",
       "category": "decor",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        96,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        24,
+        16,
+        76,
+        122
+      ],
+      "bytes": 773,
+      "sha256": "b045bad720bc4de92db8dd4ad839da20195a765672230add7dfaff39d8b0cc13",
+      "warnings": []
     },
     {
       "id": "D014",
       "category": "decor",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        96,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        24,
+        21,
+        76,
+        122
+      ],
+      "bytes": 753,
+      "sha256": "f1f5a3d82b65ddcfa404d2ea424ce8d9559e2b18f934eb421acc26b9b3949cf4",
+      "warnings": []
     },
     {
       "id": "D015",
       "category": "decor",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "bytes": 9178,
+      "sha256": "0b1b95c27dacff9fb2d916f7cf8071e12e0b250a5077c17a6c233624e5a85daa",
+      "warnings": []
     },
     {
       "id": "D016",
       "category": "decor",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "bytes": 9848,
+      "sha256": "438db9976cfc47d2f3aaa3be0baf8e8665a742245c62381a051a1c03d545912a",
+      "warnings": []
     },
     {
       "id": "D017",
