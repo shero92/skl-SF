@@ -1,0 +1,21 @@
+name: Validate Godot project
+on:
+  push:
+    paths:
+      - "**/*.gd"
+      - "**/*.tscn"
+      - "**/*.json"
+      - "project.godot"
+      - ".github/workflows/godot_validate.yml"
+  workflow_dispatch:
+jobs:
+  import_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: chickensoft/setup-godot@v2
+        with:
+          version: "4.4.1"
+          use-dotnet: false
+      - name: Godot headless resource import and script parse
+        run: godot --headless --path . --editor --quit
