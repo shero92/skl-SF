@@ -1,0 +1,33 @@
+name: Build pixel art review gallery
+on:
+  push:
+    paths:
+      - "tools/build_asset_previews.py"
+      - ".github/workflows/build_asset_previews.yml"
+      - "map_factory/parts/**/*.png"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Pillow
+        run: python -m pip install "Pillow>=10,<13"
+      - name: Create QA preview sheets
+        run: python tools/build_asset_previews.py
+      - name: Commit QA gallery
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/previews docs/ASSET_GALLERY.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Build visual review gallery for independent PNG sprites"
+            git push
+          fi
