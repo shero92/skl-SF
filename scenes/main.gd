@@ -14,9 +14,15 @@ func _ready() -> void:
         return
     var spawn: Array = data.get("player_spawn", [770, 720])
     player = HeroPlayer.new()
-    player.name = "HeroGameplayProxy"
+    player.name = "Hero"
     player.position = Vector2(float(spawn[0]), float(spawn[1]))
     room.get_node("Entities").add_child(player)
+
+    var companion := RoomCompanion.new()
+    companion.name = "CrystalCompanion"
+    companion.position = player.position + Vector2(55, 30)
+    companion.follow_target = player
+    room.get_node("Entities").add_child(companion)
 
     var camera := Camera2D.new()
     camera.position = Vector2(768, 512)
@@ -29,6 +35,7 @@ func _ready() -> void:
     for info in data.get("npcs", []):
         var npc := RoomNpc.new()
         npc.display_name = String(info.get("name", "NPC"))
+        npc.flip_sprite = bool(info.get("flip_h", false))
         npc.position = Vector2(float(info.get("x", 0)), float(info.get("y", 0)))
         room.get_node("Entities").add_child(npc)
         interactions.append({

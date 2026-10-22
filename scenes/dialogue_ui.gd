@@ -8,6 +8,7 @@ var line_number: int = 0
 var container: Control
 var speaker_label: Label
 var body_label: Label
+var portrait: TextureRect
 
 func _ready() -> void:
     layer = 10
@@ -33,27 +34,42 @@ func _ready() -> void:
     backing.mouse_filter = Control.MOUSE_FILTER_IGNORE
     container.add_child(backing)
 
+    portrait = TextureRect.new()
+    portrait.name = "DialoguePortrait"
+    portrait.anchor_left = 0.09
+    portrait.anchor_right = 0.09
+    portrait.anchor_top = 1.0
+    portrait.anchor_bottom = 1.0
+    portrait.offset_left = 12
+    portrait.offset_right = 148
+    portrait.offset_top = -177
+    portrait.offset_bottom = -30
+    portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+    portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+    portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
+    container.add_child(portrait)
+
     speaker_label = Label.new()
-    speaker_label.anchor_left = 0.12
+    speaker_label.anchor_left = 0.21
     speaker_label.anchor_right = 0.88
     speaker_label.anchor_top = 1.0
     speaker_label.anchor_bottom = 1.0
-    speaker_label.offset_top = -170.0
-    speaker_label.offset_bottom = -128.0
-    speaker_label.add_theme_font_size_override("font_size", 29)
+    speaker_label.offset_top = -169.0
+    speaker_label.offset_bottom = -126.0
+    speaker_label.add_theme_font_size_override("font_size", 27)
     speaker_label.add_theme_color_override("font_color", Color("#f9c766"))
     container.add_child(speaker_label)
 
     body_label = Label.new()
-    body_label.anchor_left = 0.12
+    body_label.anchor_left = 0.21
     body_label.anchor_right = 0.88
     body_label.anchor_top = 1.0
     body_label.anchor_bottom = 1.0
-    body_label.offset_top = -124.0
+    body_label.offset_top = -123.0
     body_label.offset_bottom = -35.0
     body_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-    body_label.add_theme_font_size_override("font_size", 25)
-    body_label.add_theme_color_override("font_color", Color("#ffffff"))
+    body_label.add_theme_font_size_override("font_size", 24)
+    body_label.add_theme_color_override("font_color", Color.WHITE)
     container.add_child(body_label)
     container.visible = false
 
@@ -65,6 +81,9 @@ func open_dialogue(character_name: String, script_lines: Array) -> void:
     line_number = 0
     is_open = true
     container.visible = true
+    var is_fairy := "guardian" in speaker.to_lower() or "fairy" in speaker.to_lower()
+    var portrait_path := "res://map_factory/parts/ui/UI008_Fairy_Portrait.png" if is_fairy else "res://map_factory/parts/ui/UI007_Hero_Portrait.png"
+    portrait.texture = load(portrait_path) as Texture2D if ResourceLoader.exists(portrait_path) else null
     _render()
 
 func _render() -> void:
