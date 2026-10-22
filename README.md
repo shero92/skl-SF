@@ -9,13 +9,13 @@ Godot 4 project with reusable map parts and a data-driven room factory.
 4. Use **WASD / arrow keys** to move the temporary hero actor.
 5. Stand near either guardian, bed, table or chest and press **E** to interact. Press **E / Enter / Space** to continue dialogue.
 
-The actors are gameplay placeholders. **There are no approved character sprites yet.** They are intentionally not described as final art.
+The actors are gameplay placeholders. **There are 12 original first-pass character sprite sheets and two portraits; none are artist-approved yet.** They are intentionally not described as final art. The hero, guardians and follower now use these animation strips.
 
 ## Assets and QA
 - **218** catalog entries with stable IDs and reuse across rooms.
-- **161** independent sprite PNG files currently stored under `map_factory/parts/`.
-- **57** remaining PNGs not created.
-- **161** available images remain unapproved drafts (`needs_cleanup`) until their native visual quality is reviewed.
+- **175** independent sprite PNG files currently stored under `map_factory/parts/`.
+- **43** remaining PNGs not created.
+- **175** available images remain unapproved drafts (`needs_cleanup`) until their native visual quality is reviewed.
 
 Browse the [visual review gallery](docs/ASSET_GALLERY.md), [automatic audit](docs/ASSET_AUDIT.md), and [asset index](map_factory/metadata/asset_index.json).
 
