@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "required": [
+    "id",
+    "name",
+    "category",
+    "subtype",
+    "texture_path",
+    "status",
+    "pixel_size",
+    "origin",
+    "collision",
+    "shadow",
+    "tags"
+  ],
+  "statuses": [
+    "planned",
+    "needs_cleanup",
+    "ready"
+  ],
+  "categories": [
+    "floors",
+    "walls",
+    "architecture",
+    "stairs",
+    "environment",
+    "furniture",
+    "objects",
+    "vegetation",
+    "decor",
+    "shadows",
+    "characters",
+    "ui"
+  ],
+  "origin_description": "Origin is in pixel coordinates from source image top-left; bottom-center for taller assets.",
+  "shadow_description": "Shadow is positioned near ground contact; values are defaults and should be reviewed by artists."
+}

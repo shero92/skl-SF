@@ -1,0 +1,1 @@
+Manual smoke test: open Godot 4 and run scenes/main.tscn; verify placeholder IDs, no missing script errors, and ability to place the same asset ID in multiple room JSON files. Automated Godot validation is not yet configured.

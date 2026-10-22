@@ -1,0 +1,1 @@
+Every asset should be a separate transparent PNG in its category directory. Folders currently contain only .gitkeep files. Consult metadata/production_queue.csv and asset_index.json. Do not mistake prior labeled reference sheets for production sprites.

@@ -1,0 +1,36 @@
+{
+  "room_id": "hero_room_01",
+  "tile_size": 48,
+  "size": [
+    18,
+    11
+  ],
+  "objects": [
+    {
+      "id": "P001",
+      "x": 165,
+      "y": 185
+    },
+    {
+      "id": "P008",
+      "x": 690,
+      "y": 190
+    },
+    {
+      "id": "A001",
+      "x": 440,
+      "y": 60
+    },
+    {
+      "id": "V001",
+      "x": 650,
+      "y": 65
+    },
+    {
+      "id": "D001",
+      "x": 70,
+      "y": 140
+    }
+  ],
+  "notes": "Starter demonstration coordinates. Missing sprites intentionally rendered as placeholders; not a faithful reconstruction yet."
+}

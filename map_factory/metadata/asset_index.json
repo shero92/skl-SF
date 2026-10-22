@@ -1,0 +1,8928 @@
+{
+  "version": 1,
+  "asset_count": 218,
+  "grid_size": 48,
+  "asset_status_note": "All assets are planned. PNGs have not yet been produced or uploaded.",
+  "assets": [
+    {
+      "id": "F001",
+      "name": "Stone Floor Plain",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F001_Stone_Floor_Plain.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "plain"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F002",
+      "name": "Stone Floor Cracked",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "cracked"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F003",
+      "name": "Stone Floor Worn",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F003_Stone_Floor_Worn.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "worn"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F004",
+      "name": "Stone Floor Light",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F004_Stone_Floor_Light.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "light"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F005",
+      "name": "Stone Floor Dark",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F005_Stone_Floor_Dark.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "dark"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F006",
+      "name": "Stone Floor Edge N",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "edge",
+        "n"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F007",
+      "name": "Stone Floor Edge S",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "edge",
+        "s"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F008",
+      "name": "Stone Floor Edge E",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "edge",
+        "e"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F009",
+      "name": "Stone Floor Edge W",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "edge",
+        "w"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F010",
+      "name": "Stone Floor Corner NW",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "corner",
+        "nw"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F011",
+      "name": "Stone Floor Corner NE",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "corner",
+        "ne"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F012",
+      "name": "Stone Floor Corner SW",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "corner",
+        "sw"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F013",
+      "name": "Stone Floor Corner SE",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "stone",
+        "floor",
+        "corner",
+        "se"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F014",
+      "name": "Compass Floor Center",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F014_Compass_Floor_Center.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "center"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F015",
+      "name": "Compass Floor N",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F015_Compass_Floor_N.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "n"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F016",
+      "name": "Compass Floor S",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F016_Compass_Floor_S.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "s"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F017",
+      "name": "Compass Floor E",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F017_Compass_Floor_E.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "e"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F018",
+      "name": "Compass Floor W",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F018_Compass_Floor_W.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "w"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F019",
+      "name": "Compass Floor Corner NW",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F019_Compass_Floor_Corner_NW.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "corner",
+        "nw"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F020",
+      "name": "Compass Floor Corner NE",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F020_Compass_Floor_Corner_NE.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "corner",
+        "ne"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F021",
+      "name": "Compass Floor Corner SW",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F021_Compass_Floor_Corner_SW.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "corner",
+        "sw"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "F022",
+      "name": "Compass Floor Corner SE",
+      "category": "floors",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/floors/F022_Compass_Floor_Corner_SE.png",
+      "status": "planned",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "floors",
+        "compass",
+        "floor",
+        "corner",
+        "se"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W001",
+      "name": "Stone Wall Straight",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W001_Stone_Wall_Straight.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "straight"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W002",
+      "name": "Stone Wall Short",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W002_Stone_Wall_Short.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "short"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W003",
+      "name": "Stone Wall Broken",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W003_Stone_Wall_Broken.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "broken"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W004",
+      "name": "Stone Wall Tall",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W004_Stone_Wall_Tall.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "tall"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W005",
+      "name": "Stone Wall Low",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W005_Stone_Wall_Low.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "low"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W006",
+      "name": "Stone Wall Corner NW",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W006_Stone_Wall_Corner_NW.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "corner",
+        "nw"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W007",
+      "name": "Stone Wall Corner NE",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W007_Stone_Wall_Corner_NE.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "corner",
+        "ne"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W008",
+      "name": "Stone Wall Corner SW",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W008_Stone_Wall_Corner_SW.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "corner",
+        "sw"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W009",
+      "name": "Stone Wall Corner SE",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W009_Stone_Wall_Corner_SE.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "corner",
+        "se"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W010",
+      "name": "Stone Wall End Left",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W010_Stone_Wall_End_Left.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "end",
+        "left"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W011",
+      "name": "Stone Wall End Right",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W011_Stone_Wall_End_Right.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "end",
+        "right"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W012",
+      "name": "Stone Wall With Ivy",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "ivy"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W013",
+      "name": "Stone Wall With Flowers",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "flowers"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W014",
+      "name": "Stone Wall With Lantern",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W014_Stone_Wall_With_Lantern.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "lantern"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W015",
+      "name": "Stone Wall With Banner",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W015_Stone_Wall_With_Banner.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "banner"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W016",
+      "name": "Stone Wall Doorway",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W016_Stone_Wall_Doorway.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "doorway"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W017",
+      "name": "Stone Wall Ruined Top",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W017_Stone_Wall_Ruined_Top.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "ruined",
+        "top"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "W018",
+      "name": "Stone Wall Inner Corner",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W018_Stone_Wall_Inner_Corner.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "inner",
+        "corner"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A001",
+      "name": "Stone Arch Full",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A001_Stone_Arch_Full.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "arch",
+        "full"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A002",
+      "name": "Stone Arch Top",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A002_Stone_Arch_Top.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "arch",
+        "top"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A003",
+      "name": "Stone Arch Left",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A003_Stone_Arch_Left.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "arch",
+        "left"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A004",
+      "name": "Stone Arch Right",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A004_Stone_Arch_Right.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "arch",
+        "right"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A005",
+      "name": "Stone Arch With Ivy",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "arch",
+        "with",
+        "ivy"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A006",
+      "name": "Stone Arch Broken",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A006_Stone_Arch_Broken.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "arch",
+        "broken"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A007",
+      "name": "Stone Column Full",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A007_Stone_Column_Full.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "column",
+        "full"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A008",
+      "name": "Stone Column Base",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A008_Stone_Column_Base.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "column",
+        "base"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A009",
+      "name": "Stone Column Middle",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A009_Stone_Column_Middle.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "column",
+        "middle"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A010",
+      "name": "Stone Column Capital",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A010_Stone_Column_Capital.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "column",
+        "capital"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A011",
+      "name": "Stone Column Broken",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A011_Stone_Column_Broken.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "column",
+        "broken"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A012",
+      "name": "Stone Column With Flowers",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A012_Stone_Column_With_Flowers.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "column",
+        "with",
+        "flowers"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A013",
+      "name": "Stone Pillar Short",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A013_Stone_Pillar_Short.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "pillar",
+        "short"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A014",
+      "name": "Stone Pillar Tall",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A014_Stone_Pillar_Tall.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "pillar",
+        "tall"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A015",
+      "name": "Stone Door Arched",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A015_Stone_Door_Arched.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "door",
+        "arched"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "A016",
+      "name": "Stone Door Decorated",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A016_Stone_Door_Decorated.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "door",
+        "decorated"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST001",
+      "name": "Stone Stair Top",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST001_Stone_Stair_Top.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "top"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST002",
+      "name": "Stone Stair Middle",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST002_Stone_Stair_Middle.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "middle"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST003",
+      "name": "Stone Stair Bottom",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST003_Stone_Stair_Bottom.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "bottom"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST004",
+      "name": "Stone Stair Left Edge",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST004_Stone_Stair_Left_Edge.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "left",
+        "edge"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST005",
+      "name": "Stone Stair Right Edge",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST005_Stone_Stair_Right_Edge.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "right",
+        "edge"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST006",
+      "name": "Stone Stair Landing",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST006_Stone_Stair_Landing.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "landing"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST007",
+      "name": "Stair Entrance Left",
+      "category": "stairs",
+      "subtype": "stair",
+      "texture_path": "res://map_factory/parts/stairs/ST007_Stair_Entrance_Left.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stair",
+        "entrance",
+        "left"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST008",
+      "name": "Stair Entrance Right",
+      "category": "stairs",
+      "subtype": "stair",
+      "texture_path": "res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stair",
+        "entrance",
+        "right"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST009",
+      "name": "Stone Railing Straight",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST009_Stone_Railing_Straight.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "railing",
+        "straight"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST010",
+      "name": "Stone Railing Broken",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST010_Stone_Railing_Broken.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "railing",
+        "broken"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST011",
+      "name": "Stone Railing Post",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST011_Stone_Railing_Post.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "railing",
+        "post"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST012",
+      "name": "Stone Railing Corner",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST012_Stone_Railing_Corner.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "railing",
+        "corner"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST013",
+      "name": "Stone Parapet Short",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "parapet",
+        "short"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "ST014",
+      "name": "Stone Parapet Long",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "parapet",
+        "long"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E001",
+      "name": "Cliff Edge Straight",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E001_Cliff_Edge_Straight.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "edge",
+        "straight"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E002",
+      "name": "Cliff Edge Corner Left",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E002_Cliff_Edge_Corner_Left.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "edge",
+        "corner",
+        "left"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E003",
+      "name": "Cliff Edge Corner Right",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E003_Cliff_Edge_Corner_Right.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "edge",
+        "corner",
+        "right"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E004",
+      "name": "Cliff Rock Tall",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E004_Cliff_Rock_Tall.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "rock",
+        "tall"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E005",
+      "name": "Cliff Rock Small",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E005_Cliff_Rock_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "rock",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E006",
+      "name": "Cliff Rock Group",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E006_Cliff_Rock_Group.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "rock",
+        "group"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E007",
+      "name": "Cliff With Ivy",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E007_Cliff_With_Ivy.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "with",
+        "ivy"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E008",
+      "name": "Cliff With Flowers",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E008_Cliff_With_Flowers.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "with",
+        "flowers"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E009",
+      "name": "Cliff Ocean Foam",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E009_Cliff_Ocean_Foam.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "cliff",
+        "ocean",
+        "foam"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E010",
+      "name": "Ocean Water Base",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E010_Ocean_Water_Base.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "water",
+        "base"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E011",
+      "name": "Ocean Wave Frame 01",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E011_Ocean_Wave_Frame_01.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "wave",
+        "frame",
+        "01"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E012",
+      "name": "Ocean Wave Frame 02",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E012_Ocean_Wave_Frame_02.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "wave",
+        "frame",
+        "02"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E013",
+      "name": "Ocean Wave Frame 03",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E013_Ocean_Wave_Frame_03.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "wave",
+        "frame",
+        "03"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E014",
+      "name": "Ocean Wave Frame 04",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E014_Ocean_Wave_Frame_04.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "wave",
+        "frame",
+        "04"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E015",
+      "name": "Ocean Rock Island Small",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E016",
+      "name": "Ocean Rock Island Large",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E017",
+      "name": "Distant Island Arch",
+      "category": "environment",
+      "subtype": "distant",
+      "texture_path": "res://map_factory/parts/environment/E017_Distant_Island_Arch.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "distant",
+        "island",
+        "arch"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "E018",
+      "name": "Sky Cloud Background",
+      "category": "environment",
+      "subtype": "sky",
+      "texture_path": "res://map_factory/parts/environment/E018_Sky_Cloud_Background.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "sky",
+        "cloud",
+        "background"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P001",
+      "name": "Hero Bed",
+      "category": "furniture",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/furniture/P001_Hero_Bed.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "hero",
+        "bed"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P002",
+      "name": "Bed Blanket Blue",
+      "category": "furniture",
+      "subtype": "bed",
+      "texture_path": "res://map_factory/parts/furniture/P002_Bed_Blanket_Blue.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "bed",
+        "blanket",
+        "blue"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P003",
+      "name": "Bed Pillow",
+      "category": "furniture",
+      "subtype": "bed",
+      "texture_path": "res://map_factory/parts/furniture/P003_Bed_Pillow.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "bed",
+        "pillow"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P004",
+      "name": "Bed Frame",
+      "category": "furniture",
+      "subtype": "bed",
+      "texture_path": "res://map_factory/parts/furniture/P004_Bed_Frame.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "bed",
+        "frame"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P005",
+      "name": "Bedroom Rug",
+      "category": "furniture",
+      "subtype": "bedroom",
+      "texture_path": "res://map_factory/parts/furniture/P005_Bedroom_Rug.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "bedroom",
+        "rug"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P006",
+      "name": "Bedroom Rug Variant",
+      "category": "furniture",
+      "subtype": "bedroom",
+      "texture_path": "res://map_factory/parts/furniture/P006_Bedroom_Rug_Variant.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "bedroom",
+        "rug",
+        "variant"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P007",
+      "name": "Bedside Table",
+      "category": "furniture",
+      "subtype": "bedside",
+      "texture_path": "res://map_factory/parts/furniture/P007_Bedside_Table.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "bedside",
+        "table"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P008",
+      "name": "Wooden Desk",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P008_Wooden_Desk.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "desk"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P009",
+      "name": "Wooden Table Large",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P009_Wooden_Table_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "table",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P010",
+      "name": "Wooden Table Small",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P010_Wooden_Table_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "table",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P011",
+      "name": "Wooden Chair",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P011_Wooden_Chair.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "chair"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P012",
+      "name": "Wooden Stool",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "stool"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P013",
+      "name": "Wooden Bench",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P013_Wooden_Bench.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "bench"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P014",
+      "name": "Bookshelf Large",
+      "category": "furniture",
+      "subtype": "bookshelf",
+      "texture_path": "res://map_factory/parts/furniture/P014_Bookshelf_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "bookshelf",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P015",
+      "name": "Bookshelf Small",
+      "category": "furniture",
+      "subtype": "bookshelf",
+      "texture_path": "res://map_factory/parts/furniture/P015_Bookshelf_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "bookshelf",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P016",
+      "name": "Wooden Cabinet",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P016_Wooden_Cabinet.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "cabinet"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P017",
+      "name": "Treasure Chest Closed",
+      "category": "furniture",
+      "subtype": "treasure",
+      "texture_path": "res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "treasure",
+        "chest",
+        "closed"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P018",
+      "name": "Treasure Chest Open",
+      "category": "furniture",
+      "subtype": "treasure",
+      "texture_path": "res://map_factory/parts/furniture/P018_Treasure_Chest_Open.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "treasure",
+        "chest",
+        "open"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P019",
+      "name": "Wooden Crate Large",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P019_Wooden_Crate_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "crate",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P020",
+      "name": "Wooden Crate Small",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P020_Wooden_Crate_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "crate",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P021",
+      "name": "Wooden Box",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P021_Wooden_Box.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "box"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "P022",
+      "name": "Storage Chest",
+      "category": "furniture",
+      "subtype": "storage",
+      "texture_path": "res://map_factory/parts/furniture/P022_Storage_Chest.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "storage",
+        "chest"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O001",
+      "name": "Blue Vase Large",
+      "category": "objects",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "blue",
+        "vase",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O002",
+      "name": "Blue Vase Medium",
+      "category": "objects",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/objects/O002_Blue_Vase_Medium.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "blue",
+        "vase",
+        "medium"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O003",
+      "name": "Blue Vase Small",
+      "category": "objects",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/objects/O003_Blue_Vase_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "blue",
+        "vase",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O004",
+      "name": "Ceramic Jug",
+      "category": "objects",
+      "subtype": "ceramic",
+      "texture_path": "res://map_factory/parts/objects/O004_Ceramic_Jug.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "ceramic",
+        "jug"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O005",
+      "name": "Ceramic Bottle",
+      "category": "objects",
+      "subtype": "ceramic",
+      "texture_path": "res://map_factory/parts/objects/O005_Ceramic_Bottle.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "ceramic",
+        "bottle"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O006",
+      "name": "Fruit Bowl",
+      "category": "objects",
+      "subtype": "fruit",
+      "texture_path": "res://map_factory/parts/objects/O006_Fruit_Bowl.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "fruit",
+        "bowl"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O007",
+      "name": "Apple Red",
+      "category": "objects",
+      "subtype": "apple",
+      "texture_path": "res://map_factory/parts/objects/O007_Apple_Red.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "apple",
+        "red"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O008",
+      "name": "Apple Green",
+      "category": "objects",
+      "subtype": "apple",
+      "texture_path": "res://map_factory/parts/objects/O008_Apple_Green.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "apple",
+        "green"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O009",
+      "name": "Map Open",
+      "category": "objects",
+      "subtype": "map",
+      "texture_path": "res://map_factory/parts/objects/O009_Map_Open.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "map",
+        "open"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O010",
+      "name": "Map Rolled",
+      "category": "objects",
+      "subtype": "map",
+      "texture_path": "res://map_factory/parts/objects/O010_Map_Rolled.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "map",
+        "rolled"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O011",
+      "name": "Scroll Single",
+      "category": "objects",
+      "subtype": "scroll",
+      "texture_path": "res://map_factory/parts/objects/O011_Scroll_Single.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "scroll",
+        "single"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O012",
+      "name": "Scroll Bundle",
+      "category": "objects",
+      "subtype": "scroll",
+      "texture_path": "res://map_factory/parts/objects/O012_Scroll_Bundle.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "scroll",
+        "bundle"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O013",
+      "name": "Book Closed Blue",
+      "category": "objects",
+      "subtype": "book",
+      "texture_path": "res://map_factory/parts/objects/O013_Book_Closed_Blue.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "book",
+        "closed",
+        "blue"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O014",
+      "name": "Book Closed Brown",
+      "category": "objects",
+      "subtype": "book",
+      "texture_path": "res://map_factory/parts/objects/O014_Book_Closed_Brown.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "book",
+        "closed",
+        "brown"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O015",
+      "name": "Book Open",
+      "category": "objects",
+      "subtype": "book",
+      "texture_path": "res://map_factory/parts/objects/O015_Book_Open.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "book",
+        "open"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O016",
+      "name": "Book Stack",
+      "category": "objects",
+      "subtype": "book",
+      "texture_path": "res://map_factory/parts/objects/O016_Book_Stack.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "book",
+        "stack"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O017",
+      "name": "Candle Single",
+      "category": "objects",
+      "subtype": "candle",
+      "texture_path": "res://map_factory/parts/objects/O017_Candle_Single.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "candle",
+        "single"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O018",
+      "name": "Candle Group",
+      "category": "objects",
+      "subtype": "candle",
+      "texture_path": "res://map_factory/parts/objects/O018_Candle_Group.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "candle",
+        "group"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O019",
+      "name": "Astrolabe Gold",
+      "category": "objects",
+      "subtype": "astrolabe",
+      "texture_path": "res://map_factory/parts/objects/O019_Astrolabe_Gold.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "astrolabe",
+        "gold"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O020",
+      "name": "Compass Decoration",
+      "category": "objects",
+      "subtype": "compass",
+      "texture_path": "res://map_factory/parts/objects/O020_Compass_Decoration.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "compass",
+        "decoration"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O021",
+      "name": "Seashell Large",
+      "category": "objects",
+      "subtype": "seashell",
+      "texture_path": "res://map_factory/parts/objects/O021_Seashell_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "seashell",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O022",
+      "name": "Seashell Small",
+      "category": "objects",
+      "subtype": "seashell",
+      "texture_path": "res://map_factory/parts/objects/O022_Seashell_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "seashell",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O023",
+      "name": "Small Wooden Box",
+      "category": "objects",
+      "subtype": "small",
+      "texture_path": "res://map_factory/parts/objects/O023_Small_Wooden_Box.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "small",
+        "wooden",
+        "box"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O024",
+      "name": "Small Potion Bottle",
+      "category": "objects",
+      "subtype": "small",
+      "texture_path": "res://map_factory/parts/objects/O024_Small_Potion_Bottle.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "small",
+        "potion",
+        "bottle"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O025",
+      "name": "Decorative Tray",
+      "category": "objects",
+      "subtype": "decorative",
+      "texture_path": "res://map_factory/parts/objects/O025_Decorative_Tray.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "decorative",
+        "tray"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "O026",
+      "name": "Flower Vase Small",
+      "category": "objects",
+      "subtype": "flower",
+      "texture_path": "res://map_factory/parts/objects/O026_Flower_Vase_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "flower",
+        "vase",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V001",
+      "name": "Ivy Hanging Long",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V001_Ivy_Hanging_Long.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "hanging",
+        "long"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V002",
+      "name": "Ivy Hanging Medium",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V002_Ivy_Hanging_Medium.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "hanging",
+        "medium"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V003",
+      "name": "Ivy Hanging Short",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V003_Ivy_Hanging_Short.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "hanging",
+        "short"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V004",
+      "name": "Ivy Horizontal Long",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "horizontal",
+        "long"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V005",
+      "name": "Ivy Horizontal Short",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V005_Ivy_Horizontal_Short.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "horizontal",
+        "short"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V006",
+      "name": "Ivy Corner Left",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V006_Ivy_Corner_Left.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "corner",
+        "left"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V007",
+      "name": "Ivy Corner Right",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "corner",
+        "right"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V008",
+      "name": "Ivy Wall Cluster",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V008_Ivy_Wall_Cluster.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "wall",
+        "cluster"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V009",
+      "name": "Ivy Arch Cluster",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V009_Ivy_Arch_Cluster.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "arch",
+        "cluster"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V010",
+      "name": "White Flowers Large",
+      "category": "vegetation",
+      "subtype": "white",
+      "texture_path": "res://map_factory/parts/vegetation/V010_White_Flowers_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "white",
+        "flowers",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V011",
+      "name": "White Flowers Medium",
+      "category": "vegetation",
+      "subtype": "white",
+      "texture_path": "res://map_factory/parts/vegetation/V011_White_Flowers_Medium.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "white",
+        "flowers",
+        "medium"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V012",
+      "name": "White Flowers Small",
+      "category": "vegetation",
+      "subtype": "white",
+      "texture_path": "res://map_factory/parts/vegetation/V012_White_Flowers_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "white",
+        "flowers",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V013",
+      "name": "Blue Flowers Large",
+      "category": "vegetation",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/vegetation/V013_Blue_Flowers_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "blue",
+        "flowers",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V014",
+      "name": "Blue Flowers Small",
+      "category": "vegetation",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/vegetation/V014_Blue_Flowers_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "blue",
+        "flowers",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V015",
+      "name": "Orange Flowers",
+      "category": "vegetation",
+      "subtype": "orange",
+      "texture_path": "res://map_factory/parts/vegetation/V015_Orange_Flowers.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "orange",
+        "flowers"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V016",
+      "name": "Green Shrub",
+      "category": "vegetation",
+      "subtype": "green",
+      "texture_path": "res://map_factory/parts/vegetation/V016_Green_Shrub.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "green",
+        "shrub"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V017",
+      "name": "Tropical Plant Large",
+      "category": "vegetation",
+      "subtype": "tropical",
+      "texture_path": "res://map_factory/parts/vegetation/V017_Tropical_Plant_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "tropical",
+        "plant",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V018",
+      "name": "Tropical Plant Medium",
+      "category": "vegetation",
+      "subtype": "tropical",
+      "texture_path": "res://map_factory/parts/vegetation/V018_Tropical_Plant_Medium.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "tropical",
+        "plant",
+        "medium"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V019",
+      "name": "Tropical Plant Small",
+      "category": "vegetation",
+      "subtype": "tropical",
+      "texture_path": "res://map_factory/parts/vegetation/V019_Tropical_Plant_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "tropical",
+        "plant",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V020",
+      "name": "Flower Pot Large",
+      "category": "vegetation",
+      "subtype": "flower",
+      "texture_path": "res://map_factory/parts/vegetation/V020_Flower_Pot_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "flower",
+        "pot",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V021",
+      "name": "Flower Pot Small",
+      "category": "vegetation",
+      "subtype": "flower",
+      "texture_path": "res://map_factory/parts/vegetation/V021_Flower_Pot_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "flower",
+        "pot",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V022",
+      "name": "Wooden Planter",
+      "category": "vegetation",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/vegetation/V022_Wooden_Planter.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "wooden",
+        "planter"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V023",
+      "name": "Cliff Vegetation",
+      "category": "vegetation",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/vegetation/V023_Cliff_Vegetation.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "cliff",
+        "vegetation"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "V024",
+      "name": "Ground Grass Cluster",
+      "category": "vegetation",
+      "subtype": "ground",
+      "texture_path": "res://map_factory/parts/vegetation/V024_Ground_Grass_Cluster.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ground",
+        "grass",
+        "cluster"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D001",
+      "name": "Banner Blue Long",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D001_Banner_Blue_Long.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "blue",
+        "long"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D002",
+      "name": "Banner Blue Medium",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D002_Banner_Blue_Medium.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "blue",
+        "medium"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D003",
+      "name": "Banner Blue Short",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D003_Banner_Blue_Short.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "blue",
+        "short"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D004",
+      "name": "Banner Compass",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D004_Banner_Compass.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "compass"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D005",
+      "name": "Banner Anchor",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D005_Banner_Anchor.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "anchor"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D006",
+      "name": "Banner Wall Mount",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D006_Banner_Wall_Mount.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "wall",
+        "mount"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D007",
+      "name": "Lantern Hanging",
+      "category": "decor",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/decor/D007_Lantern_Hanging.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "lantern",
+        "hanging"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D008",
+      "name": "Lantern Wall Left",
+      "category": "decor",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/decor/D008_Lantern_Wall_Left.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "lantern",
+        "wall",
+        "left"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D009",
+      "name": "Lantern Wall Right",
+      "category": "decor",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/decor/D009_Lantern_Wall_Right.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "lantern",
+        "wall",
+        "right"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D010",
+      "name": "Lantern Table",
+      "category": "decor",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/decor/D010_Lantern_Table.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "lantern",
+        "table"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D011",
+      "name": "Lantern Pole",
+      "category": "decor",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/decor/D011_Lantern_Pole.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "lantern",
+        "pole"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D012",
+      "name": "Candle Flame Frame 01",
+      "category": "decor",
+      "subtype": "candle",
+      "texture_path": "res://map_factory/parts/decor/D012_Candle_Flame_Frame_01.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "candle",
+        "flame",
+        "frame",
+        "01"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D013",
+      "name": "Candle Flame Frame 02",
+      "category": "decor",
+      "subtype": "candle",
+      "texture_path": "res://map_factory/parts/decor/D013_Candle_Flame_Frame_02.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "candle",
+        "flame",
+        "frame",
+        "02"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D014",
+      "name": "Candle Flame Frame 03",
+      "category": "decor",
+      "subtype": "candle",
+      "texture_path": "res://map_factory/parts/decor/D014_Candle_Flame_Frame_03.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "candle",
+        "flame",
+        "frame",
+        "03"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D015",
+      "name": "Lantern Glow",
+      "category": "decor",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/decor/D015_Lantern_Glow.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "lantern",
+        "glow"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D016",
+      "name": "Candle Glow",
+      "category": "decor",
+      "subtype": "candle",
+      "texture_path": "res://map_factory/parts/decor/D016_Candle_Glow.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "candle",
+        "glow"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D017",
+      "name": "Rope Hanging",
+      "category": "decor",
+      "subtype": "rope",
+      "texture_path": "res://map_factory/parts/decor/D017_Rope_Hanging.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "rope",
+        "hanging"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "D018",
+      "name": "Decorative Ornament",
+      "category": "decor",
+      "subtype": "decorative",
+      "texture_path": "res://map_factory/parts/decor/D018_Decorative_Ornament.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "decorative",
+        "ornament"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S001",
+      "name": "Shadow Contact Small",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "contact",
+        "small"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S002",
+      "name": "Shadow Contact Medium",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "contact",
+        "medium"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S003",
+      "name": "Shadow Contact Large",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "contact",
+        "large"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S004",
+      "name": "Shadow Character",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S004_Shadow_Character.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "character"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S005",
+      "name": "Shadow Bed",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S005_Shadow_Bed.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "bed"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S006",
+      "name": "Shadow Table",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "table"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S007",
+      "name": "Shadow Chair",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S007_Shadow_Chair.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "chair"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S008",
+      "name": "Shadow Bookshelf",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "bookshelf"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S009",
+      "name": "Shadow Chest",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S009_Shadow_Chest.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "chest"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S010",
+      "name": "Shadow Plant",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "plant"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S011",
+      "name": "Shadow Column Short",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "column",
+        "short"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S012",
+      "name": "Shadow Column Long",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S012_Shadow_Column_Long.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "column",
+        "long"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S013",
+      "name": "Shadow Wall Base",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "wall",
+        "base"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S014",
+      "name": "Shadow Wall Corner",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "wall",
+        "corner"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S015",
+      "name": "Shadow Stairs",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "stairs"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "S016",
+      "name": "Shadow Soft Diagonal",
+      "category": "shadows",
+      "subtype": "shadow",
+      "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "shadows",
+        "shadow",
+        "soft",
+        "diagonal"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH001",
+      "name": "Hero Idle Down",
+      "category": "characters",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/characters/CH001_Hero_Idle_Down.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "hero",
+        "idle",
+        "down"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH002",
+      "name": "Hero Idle Up",
+      "category": "characters",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/characters/CH002_Hero_Idle_Up.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "hero",
+        "idle",
+        "up"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH003",
+      "name": "Hero Idle Left",
+      "category": "characters",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/characters/CH003_Hero_Idle_Left.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "hero",
+        "idle",
+        "left"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH004",
+      "name": "Hero Idle Right",
+      "category": "characters",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/characters/CH004_Hero_Idle_Right.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "hero",
+        "idle",
+        "right"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH005",
+      "name": "Hero Walk Down",
+      "category": "characters",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/characters/CH005_Hero_Walk_Down.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "hero",
+        "walk",
+        "down"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH006",
+      "name": "Hero Walk Up",
+      "category": "characters",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/characters/CH006_Hero_Walk_Up.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "hero",
+        "walk",
+        "up"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH007",
+      "name": "Hero Walk Left",
+      "category": "characters",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/characters/CH007_Hero_Walk_Left.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "hero",
+        "walk",
+        "left"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH008",
+      "name": "Hero Walk Right",
+      "category": "characters",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/characters/CH008_Hero_Walk_Right.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "hero",
+        "walk",
+        "right"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH009",
+      "name": "Companion Idle",
+      "category": "characters",
+      "subtype": "companion",
+      "texture_path": "res://map_factory/parts/characters/CH009_Companion_Idle.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "companion",
+        "idle"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH010",
+      "name": "Companion Walk",
+      "category": "characters",
+      "subtype": "companion",
+      "texture_path": "res://map_factory/parts/characters/CH010_Companion_Walk.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "companion",
+        "walk"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH011",
+      "name": "NPC Fairy Green Idle",
+      "category": "characters",
+      "subtype": "npc",
+      "texture_path": "res://map_factory/parts/characters/CH011_NPC_Fairy_Green_Idle.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "npc",
+        "fairy",
+        "green",
+        "idle"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "CH012",
+      "name": "NPC Fairy Green Walk",
+      "category": "characters",
+      "subtype": "npc",
+      "texture_path": "res://map_factory/parts/characters/CH012_NPC_Fairy_Green_Walk.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "characters",
+        "npc",
+        "fairy",
+        "green",
+        "walk"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI001",
+      "name": "Dialogue Panel Background",
+      "category": "ui",
+      "subtype": "dialogue",
+      "texture_path": "res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "dialogue",
+        "panel",
+        "background"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI002",
+      "name": "Dialogue Panel Border",
+      "category": "ui",
+      "subtype": "dialogue",
+      "texture_path": "res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "dialogue",
+        "panel",
+        "border"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI003",
+      "name": "Dialogue Nameplate",
+      "category": "ui",
+      "subtype": "dialogue",
+      "texture_path": "res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "dialogue",
+        "nameplate"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI004",
+      "name": "Dialogue Portrait Frame",
+      "category": "ui",
+      "subtype": "dialogue",
+      "texture_path": "res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "dialogue",
+        "portrait",
+        "frame"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI005",
+      "name": "Dialogue Next Arrow",
+      "category": "ui",
+      "subtype": "dialogue",
+      "texture_path": "res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "dialogue",
+        "next",
+        "arrow"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI006",
+      "name": "Dialogue Choice Selector",
+      "category": "ui",
+      "subtype": "dialogue",
+      "texture_path": "res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "dialogue",
+        "choice",
+        "selector"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI007",
+      "name": "Hero Portrait",
+      "category": "ui",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/ui/UI007_Hero_Portrait.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "hero",
+        "portrait"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI008",
+      "name": "Fairy Portrait",
+      "category": "ui",
+      "subtype": "fairy",
+      "texture_path": "res://map_factory/parts/ui/UI008_Fairy_Portrait.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "fairy",
+        "portrait"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI009",
+      "name": "Interaction Icon",
+      "category": "ui",
+      "subtype": "interaction",
+      "texture_path": "res://map_factory/parts/ui/UI009_Interaction_Icon.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "interaction",
+        "icon"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI010",
+      "name": "Interaction Prompt",
+      "category": "ui",
+      "subtype": "interaction",
+      "texture_path": "res://map_factory/parts/ui/UI010_Interaction_Prompt.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "interaction",
+        "prompt"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI011",
+      "name": "Room Title Panel",
+      "category": "ui",
+      "subtype": "room",
+      "texture_path": "res://map_factory/parts/ui/UI011_Room_Title_Panel.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "room",
+        "title",
+        "panel"
+      ],
+      "reusable": true
+    },
+    {
+      "id": "UI012",
+      "name": "UI Gold Decorative Corner",
+      "category": "ui",
+      "subtype": "ui",
+      "texture_path": "res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png",
+      "status": "planned",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ui",
+        "ui",
+        "gold",
+        "decorative",
+        "corner"
+      ],
+      "reusable": true
+    }
+  ]
+}
