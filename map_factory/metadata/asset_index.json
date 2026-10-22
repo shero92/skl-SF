@@ -10,10 +10,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F001_Stone_Floor_Plain.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -43,7 +43,8 @@
         "floor",
         "plain"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F002",
@@ -51,10 +52,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -84,7 +85,8 @@
         "floor",
         "cracked"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F003",
@@ -92,10 +94,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F003_Stone_Floor_Worn.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -125,7 +127,8 @@
         "floor",
         "worn"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F004",
@@ -133,10 +136,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F004_Stone_Floor_Light.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -166,7 +169,8 @@
         "floor",
         "light"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F005",
@@ -174,10 +178,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F005_Stone_Floor_Dark.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -207,7 +211,8 @@
         "floor",
         "dark"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F006",
@@ -215,10 +220,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -249,7 +254,8 @@
         "edge",
         "n"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F007",
@@ -257,10 +263,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -291,7 +297,8 @@
         "edge",
         "s"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F008",
@@ -299,10 +306,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -333,7 +340,8 @@
         "edge",
         "e"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F009",
@@ -341,10 +349,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -375,7 +383,8 @@
         "edge",
         "w"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F010",
@@ -383,10 +392,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -417,7 +426,8 @@
         "corner",
         "nw"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F011",
@@ -425,10 +435,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -459,7 +469,8 @@
         "corner",
         "ne"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F012",
@@ -467,10 +478,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -501,7 +512,8 @@
         "corner",
         "sw"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F013",
@@ -509,10 +521,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -543,7 +555,8 @@
         "corner",
         "se"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F014",
@@ -551,10 +564,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F014_Compass_Floor_Center.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -584,7 +597,8 @@
         "floor",
         "center"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F015",
@@ -592,10 +606,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F015_Compass_Floor_N.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -625,7 +639,8 @@
         "floor",
         "n"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F016",
@@ -633,10 +648,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F016_Compass_Floor_S.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -666,7 +681,8 @@
         "floor",
         "s"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F017",
@@ -674,10 +690,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F017_Compass_Floor_E.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -707,7 +723,8 @@
         "floor",
         "e"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F018",
@@ -715,10 +732,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F018_Compass_Floor_W.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -748,7 +765,8 @@
         "floor",
         "w"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F019",
@@ -756,10 +774,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F019_Compass_Floor_Corner_NW.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -790,7 +808,8 @@
         "corner",
         "nw"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F020",
@@ -798,10 +817,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F020_Compass_Floor_Corner_NE.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -832,7 +851,8 @@
         "corner",
         "ne"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F021",
@@ -840,10 +860,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F021_Compass_Floor_Corner_SW.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -874,7 +894,8 @@
         "corner",
         "sw"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "F022",
@@ -882,10 +903,10 @@
       "category": "floors",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/floors/F022_Compass_Floor_Corner_SE.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -916,7 +937,8 @@
         "corner",
         "se"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "W001",
@@ -7302,10 +7324,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7335,7 +7357,8 @@
         "contact",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S002",
@@ -7343,10 +7366,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7376,7 +7399,8 @@
         "contact",
         "medium"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S003",
@@ -7384,10 +7408,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7417,7 +7441,8 @@
         "contact",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S004",
@@ -7425,10 +7450,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S004_Shadow_Character.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7457,7 +7482,8 @@
         "shadow",
         "character"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S005",
@@ -7465,10 +7491,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S005_Shadow_Bed.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7497,7 +7523,8 @@
         "shadow",
         "bed"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S006",
@@ -7505,10 +7532,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7537,7 +7564,8 @@
         "shadow",
         "table"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S007",
@@ -7545,10 +7573,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S007_Shadow_Chair.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7577,7 +7605,8 @@
         "shadow",
         "chair"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S008",
@@ -7585,10 +7614,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7617,7 +7646,8 @@
         "shadow",
         "bookshelf"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S009",
@@ -7625,10 +7655,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S009_Shadow_Chest.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7657,7 +7687,8 @@
         "shadow",
         "chest"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S010",
@@ -7665,10 +7696,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7697,7 +7728,8 @@
         "shadow",
         "plant"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S011",
@@ -7705,10 +7737,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7738,7 +7770,8 @@
         "column",
         "short"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S012",
@@ -7746,10 +7779,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S012_Shadow_Column_Long.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7779,7 +7812,8 @@
         "column",
         "long"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S013",
@@ -7787,10 +7821,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7820,7 +7854,8 @@
         "wall",
         "base"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S014",
@@ -7828,10 +7863,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7861,7 +7896,8 @@
         "wall",
         "corner"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S015",
@@ -7869,10 +7905,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7901,7 +7937,8 @@
         "shadow",
         "stairs"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "S016",
@@ -7909,10 +7946,10 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
-      "status": "planned",
+      "status": "ready",
       "pixel_size": [
-        64,
-        64
+        164,
+        80
       ],
       "origin": [
         32,
@@ -7942,7 +7979,8 @@
         "soft",
         "diagonal"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "CH001",
@@ -8442,10 +8480,10 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        512,
+        144
       ],
       "origin": [
         32,
@@ -8475,7 +8513,8 @@
         "panel",
         "background"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI002",
@@ -8483,10 +8522,10 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        300,
+        96
       ],
       "origin": [
         32,
@@ -8516,7 +8555,8 @@
         "panel",
         "border"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI003",
@@ -8524,10 +8564,10 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        235,
+        56
       ],
       "origin": [
         32,
@@ -8556,7 +8596,8 @@
         "dialogue",
         "nameplate"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI004",
@@ -8564,10 +8605,10 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        132,
+        160
       ],
       "origin": [
         32,
@@ -8597,7 +8638,8 @@
         "portrait",
         "frame"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI005",
@@ -8605,7 +8647,7 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
         64,
         64
@@ -8638,7 +8680,8 @@
         "next",
         "arrow"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI006",
@@ -8646,10 +8689,10 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        250,
+        60
       ],
       "origin": [
         32,
@@ -8679,7 +8722,8 @@
         "choice",
         "selector"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI007",
@@ -8767,7 +8811,7 @@
       "category": "ui",
       "subtype": "interaction",
       "texture_path": "res://map_factory/parts/ui/UI009_Interaction_Icon.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
         64,
         64
@@ -8799,7 +8843,8 @@
         "interaction",
         "icon"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI010",
@@ -8807,7 +8852,7 @@
       "category": "ui",
       "subtype": "interaction",
       "texture_path": "res://map_factory/parts/ui/UI010_Interaction_Prompt.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
         64,
         64
@@ -8839,7 +8884,8 @@
         "interaction",
         "prompt"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI011",
@@ -8847,10 +8893,10 @@
       "category": "ui",
       "subtype": "room",
       "texture_path": "res://map_factory/parts/ui/UI011_Room_Title_Panel.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        340,
+        80
       ],
       "origin": [
         32,
@@ -8880,7 +8926,8 @@
         "title",
         "panel"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     },
     {
       "id": "UI012",
@@ -8888,7 +8935,7 @@
       "category": "ui",
       "subtype": "ui",
       "texture_path": "res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
         64,
         64
@@ -8922,7 +8969,9 @@
         "decorative",
         "corner"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": "procedural_starter_v1"
     }
-  ]
+  ],
+  "note": "Generated floor/UI drafts need art QA; PNGs are real independent textures. Unprocessed items remain planned."
 }
