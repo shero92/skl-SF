@@ -21,5 +21,7 @@ jobs:
           /tmp/Godot_v4.4.1-stable_linux.x86_64 --version
       - name: Godot headless resource import and script parse
         run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --editor --quit
+      - name: Validate reusable room JSON IDs
+        run: python tools/validate_rooms.py
       - name: Godot headless smoke test
         run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --quit-after 45
