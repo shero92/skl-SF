@@ -1,8 +1,9 @@
 {
-  "version": 1,
+  "version": 2,
   "asset_count": 218,
+  "extracted_count": 152,
   "grid_size": 48,
-  "asset_status_note": "48 generated independent PNG files are present: 22 floors, 16 shadows and 10 UI elements. Floor/UI drafts need visual QA. The other 170 entries are planned; no PNGs present.",
+  "status_note": "Only ready means clean first-pass. needs_cleanup images have no QA and may contain crop artifacts/duplication. planned PNG paths are absent.",
   "assets": [
     {
       "id": "F001",
@@ -12,8 +13,8 @@
       "texture_path": "res://map_factory/parts/floors/F001_Stone_Floor_Plain.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        162,
+        161
       ],
       "origin": [
         0,
@@ -44,7 +45,11 @@
         "plain"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F002",
@@ -54,8 +59,8 @@
       "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        161,
+        161
       ],
       "origin": [
         0,
@@ -86,7 +91,11 @@
         "cracked"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F003",
@@ -94,10 +103,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F003_Stone_Floor_Worn.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -127,8 +136,7 @@
         "floor",
         "worn"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F004",
@@ -136,10 +144,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F004_Stone_Floor_Light.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -169,8 +177,7 @@
         "floor",
         "light"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F005",
@@ -178,10 +185,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F005_Stone_Floor_Dark.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -211,8 +218,7 @@
         "floor",
         "dark"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F006",
@@ -222,8 +228,8 @@
       "texture_path": "res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        151,
+        161
       ],
       "origin": [
         0,
@@ -255,7 +261,11 @@
         "n"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F007",
@@ -263,10 +273,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -297,8 +307,7 @@
         "edge",
         "s"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F008",
@@ -306,10 +315,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -340,8 +349,7 @@
         "edge",
         "e"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F009",
@@ -349,10 +357,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -383,8 +391,7 @@
         "edge",
         "w"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F010",
@@ -394,8 +401,8 @@
       "texture_path": "res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        166,
+        161
       ],
       "origin": [
         0,
@@ -427,7 +434,11 @@
         "nw"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F011",
@@ -435,10 +446,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -469,8 +480,7 @@
         "corner",
         "ne"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F012",
@@ -478,10 +488,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -512,8 +522,7 @@
         "corner",
         "sw"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F013",
@@ -521,10 +530,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png",
-      "status": "needs_cleanup",
+      "status": "planned",
       "pixel_size": [
-        64,
-        64
+        48,
+        48
       ],
       "origin": [
         0,
@@ -555,8 +564,7 @@
         "corner",
         "se"
       ],
-      "reusable": true,
-      "source": "procedural_starter_v1"
+      "reusable": true
     },
     {
       "id": "F014",
@@ -566,8 +574,8 @@
       "texture_path": "res://map_factory/parts/floors/F014_Compass_Floor_Center.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        473,
+        464
       ],
       "origin": [
         0,
@@ -598,7 +606,11 @@
         "center"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F015",
@@ -608,8 +620,8 @@
       "texture_path": "res://map_factory/parts/floors/F015_Compass_Floor_N.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        245,
+        123
       ],
       "origin": [
         0,
@@ -640,7 +652,11 @@
         "n"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F016",
@@ -650,8 +666,8 @@
       "texture_path": "res://map_factory/parts/floors/F016_Compass_Floor_S.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        239,
+        122
       ],
       "origin": [
         0,
@@ -682,7 +698,11 @@
         "s"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F017",
@@ -692,8 +712,8 @@
       "texture_path": "res://map_factory/parts/floors/F017_Compass_Floor_E.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        109,
+        193
       ],
       "origin": [
         0,
@@ -724,7 +744,11 @@
         "e"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F018",
@@ -734,8 +758,8 @@
       "texture_path": "res://map_factory/parts/floors/F018_Compass_Floor_W.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        102,
+        185
       ],
       "origin": [
         0,
@@ -766,7 +790,11 @@
         "w"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F019",
@@ -776,8 +804,8 @@
       "texture_path": "res://map_factory/parts/floors/F019_Compass_Floor_Corner_NW.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        126,
+        127
       ],
       "origin": [
         0,
@@ -809,7 +837,11 @@
         "nw"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F020",
@@ -819,8 +851,8 @@
       "texture_path": "res://map_factory/parts/floors/F020_Compass_Floor_Corner_NE.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        134,
+        128
       ],
       "origin": [
         0,
@@ -852,7 +884,11 @@
         "ne"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F021",
@@ -862,8 +898,8 @@
       "texture_path": "res://map_factory/parts/floors/F021_Compass_Floor_Corner_SW.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        128,
+        119
       ],
       "origin": [
         0,
@@ -895,7 +931,11 @@
         "sw"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "F022",
@@ -905,8 +945,8 @@
       "texture_path": "res://map_factory/parts/floors/F022_Compass_Floor_Corner_SE.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        131,
+        119
       ],
       "origin": [
         0,
@@ -938,7 +978,11 @@
         "se"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W001",
@@ -946,14 +990,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W001_Stone_Wall_Straight.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        202,
+        239
       ],
       "origin": [
-        32,
-        64
+        101,
+        239
       ],
       "collision": {
         "enabled": false,
@@ -979,7 +1023,12 @@
         "wall",
         "straight"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W002",
@@ -987,14 +1036,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W002_Stone_Wall_Short.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        165,
+        189
       ],
       "origin": [
-        32,
-        64
+        82,
+        189
       ],
       "collision": {
         "enabled": false,
@@ -1020,7 +1069,12 @@
         "wall",
         "short"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W003",
@@ -1028,14 +1082,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W003_Stone_Wall_Broken.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        134,
+        153
       ],
       "origin": [
-        32,
-        64
+        67,
+        153
       ],
       "collision": {
         "enabled": false,
@@ -1061,7 +1115,12 @@
         "wall",
         "broken"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W004",
@@ -1069,14 +1128,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W004_Stone_Wall_Tall.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        193,
+        112
       ],
       "origin": [
-        32,
-        64
+        96,
+        112
       ],
       "collision": {
         "enabled": false,
@@ -1102,7 +1161,12 @@
         "wall",
         "tall"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W005",
@@ -1110,14 +1174,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W005_Stone_Wall_Low.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        197,
+        229
       ],
       "origin": [
-        32,
-        64
+        98,
+        229
       ],
       "collision": {
         "enabled": false,
@@ -1143,7 +1207,12 @@
         "wall",
         "low"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W006",
@@ -1151,14 +1220,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W006_Stone_Wall_Corner_NW.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        180,
+        239
       ],
       "origin": [
-        32,
-        64
+        90,
+        239
       ],
       "collision": {
         "enabled": false,
@@ -1185,7 +1254,12 @@
         "corner",
         "nw"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W007",
@@ -1193,14 +1267,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W007_Stone_Wall_Corner_NE.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        157,
+        250
       ],
       "origin": [
-        32,
-        64
+        78,
+        250
       ],
       "collision": {
         "enabled": false,
@@ -1227,7 +1301,12 @@
         "corner",
         "ne"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W008",
@@ -1319,14 +1398,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W010_Stone_Wall_End_Left.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        166,
+        87
       ],
       "origin": [
-        32,
-        64
+        83,
+        87
       ],
       "collision": {
         "enabled": false,
@@ -1353,7 +1432,12 @@
         "end",
         "left"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W011",
@@ -1361,14 +1445,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W011_Stone_Wall_End_Right.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        126,
+        99
       ],
       "origin": [
-        32,
-        64
+        63,
+        99
       ],
       "collision": {
         "enabled": false,
@@ -1395,7 +1479,12 @@
         "end",
         "right"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W012",
@@ -1403,14 +1492,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        169,
+        91
       ],
       "origin": [
-        32,
-        64
+        84,
+        91
       ],
       "collision": {
         "enabled": false,
@@ -1437,7 +1526,12 @@
         "with",
         "ivy"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W013",
@@ -1445,14 +1539,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        146,
+        92
       ],
       "origin": [
-        32,
-        64
+        73,
+        92
       ],
       "collision": {
         "enabled": false,
@@ -1479,7 +1573,12 @@
         "with",
         "flowers"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W014",
@@ -1487,14 +1586,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W014_Stone_Wall_With_Lantern.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        178,
+        245
       ],
       "origin": [
-        32,
-        64
+        89,
+        245
       ],
       "collision": {
         "enabled": false,
@@ -1521,7 +1620,12 @@
         "with",
         "lantern"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W015",
@@ -1529,14 +1633,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W015_Stone_Wall_With_Banner.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        146,
+        157
       ],
       "origin": [
-        32,
-        64
+        73,
+        157
       ],
       "collision": {
         "enabled": false,
@@ -1563,7 +1667,12 @@
         "with",
         "banner"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W016",
@@ -1571,14 +1680,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W016_Stone_Wall_Doorway.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        201,
+        235
       ],
       "origin": [
-        32,
-        64
+        100,
+        235
       ],
       "collision": {
         "enabled": false,
@@ -1604,7 +1713,12 @@
         "wall",
         "doorway"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W017",
@@ -1612,14 +1726,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W017_Stone_Wall_Ruined_Top.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        191,
+        118
       ],
       "origin": [
-        32,
-        64
+        95,
+        118
       ],
       "collision": {
         "enabled": false,
@@ -1646,7 +1760,12 @@
         "ruined",
         "top"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "W018",
@@ -1654,14 +1773,14 @@
       "category": "walls",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/walls/W018_Stone_Wall_Inner_Corner.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        107,
+        101
       ],
       "origin": [
-        32,
-        64
+        53,
+        101
       ],
       "collision": {
         "enabled": false,
@@ -1688,7 +1807,12 @@
         "inner",
         "corner"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A001",
@@ -1696,14 +1820,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A001_Stone_Arch_Full.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        323,
+        198
       ],
       "origin": [
-        32,
-        64
+        161,
+        198
       ],
       "collision": {
         "enabled": false,
@@ -1729,7 +1853,12 @@
         "arch",
         "full"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A002",
@@ -1860,14 +1989,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        328,
+        283
       ],
       "origin": [
-        32,
-        64
+        164,
+        283
       ],
       "collision": {
         "enabled": false,
@@ -1894,7 +2023,12 @@
         "with",
         "ivy"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A006",
@@ -1902,14 +2036,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A006_Stone_Arch_Broken.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        308,
+        196
       ],
       "origin": [
-        32,
-        64
+        154,
+        196
       ],
       "collision": {
         "enabled": false,
@@ -1935,7 +2069,12 @@
         "arch",
         "broken"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A007",
@@ -1943,14 +2082,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A007_Stone_Column_Full.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        104,
+        271
       ],
       "origin": [
-        32,
-        64
+        52,
+        271
       ],
       "collision": {
         "enabled": false,
@@ -1976,7 +2115,12 @@
         "column",
         "full"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A008",
@@ -1984,14 +2128,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A008_Stone_Column_Base.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        101,
+        81
       ],
       "origin": [
-        32,
-        64
+        50,
+        81
       ],
       "collision": {
         "enabled": false,
@@ -2017,7 +2161,12 @@
         "column",
         "base"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A009",
@@ -2025,14 +2174,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A009_Stone_Column_Middle.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        97,
+        240
       ],
       "origin": [
-        32,
-        64
+        48,
+        240
       ],
       "collision": {
         "enabled": false,
@@ -2058,7 +2207,12 @@
         "column",
         "middle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A010",
@@ -2066,14 +2220,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A010_Stone_Column_Capital.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        99,
+        178
       ],
       "origin": [
-        32,
-        64
+        49,
+        178
       ],
       "collision": {
         "enabled": false,
@@ -2099,7 +2253,12 @@
         "column",
         "capital"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A011",
@@ -2107,14 +2266,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A011_Stone_Column_Broken.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        112,
+        218
       ],
       "origin": [
-        32,
-        64
+        56,
+        218
       ],
       "collision": {
         "enabled": false,
@@ -2140,7 +2299,12 @@
         "column",
         "broken"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A012",
@@ -2148,14 +2312,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A012_Stone_Column_With_Flowers.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        103,
+        272
       ],
       "origin": [
-        32,
-        64
+        51,
+        272
       ],
       "collision": {
         "enabled": false,
@@ -2182,7 +2346,12 @@
         "with",
         "flowers"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A013",
@@ -2190,14 +2359,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A013_Stone_Pillar_Short.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        71,
+        103
       ],
       "origin": [
-        32,
-        64
+        35,
+        103
       ],
       "collision": {
         "enabled": false,
@@ -2223,7 +2392,12 @@
         "pillar",
         "short"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A014",
@@ -2231,14 +2405,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A014_Stone_Pillar_Tall.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        95,
+        114
       ],
       "origin": [
-        32,
-        64
+        47,
+        114
       ],
       "collision": {
         "enabled": false,
@@ -2264,7 +2438,12 @@
         "pillar",
         "tall"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A015",
@@ -2272,14 +2451,14 @@
       "category": "architecture",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/architecture/A015_Stone_Door_Arched.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        196,
+        233
       ],
       "origin": [
-        32,
-        64
+        98,
+        233
       ],
       "collision": {
         "enabled": false,
@@ -2305,7 +2484,12 @@
         "door",
         "arched"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "A016",
@@ -2477,14 +2661,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST004_Stone_Stair_Left_Edge.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        115,
+        105
       ],
       "origin": [
-        32,
-        64
+        57,
+        105
       ],
       "collision": {
         "enabled": false,
@@ -2511,7 +2695,12 @@
         "left",
         "edge"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST005",
@@ -2519,14 +2708,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST005_Stone_Stair_Right_Edge.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        117,
+        105
       ],
       "origin": [
-        32,
-        64
+        58,
+        105
       ],
       "collision": {
         "enabled": false,
@@ -2553,7 +2742,12 @@
         "right",
         "edge"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST006",
@@ -2602,14 +2796,14 @@
       "category": "stairs",
       "subtype": "stair",
       "texture_path": "res://map_factory/parts/stairs/ST007_Stair_Entrance_Left.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        73,
+        145
       ],
       "origin": [
-        32,
-        64
+        36,
+        145
       ],
       "collision": {
         "enabled": false,
@@ -2635,7 +2829,12 @@
         "entrance",
         "left"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST008",
@@ -2643,14 +2842,14 @@
       "category": "stairs",
       "subtype": "stair",
       "texture_path": "res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        88,
+        146
       ],
       "origin": [
-        32,
-        64
+        44,
+        146
       ],
       "collision": {
         "enabled": false,
@@ -2676,7 +2875,12 @@
         "entrance",
         "right"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST009",
@@ -2684,14 +2888,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST009_Stone_Railing_Straight.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        113,
+        112
       ],
       "origin": [
-        32,
-        64
+        56,
+        112
       ],
       "collision": {
         "enabled": false,
@@ -2717,7 +2921,12 @@
         "railing",
         "straight"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST010",
@@ -2725,14 +2934,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST010_Stone_Railing_Broken.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        139,
+        115
       ],
       "origin": [
-        32,
-        64
+        69,
+        115
       ],
       "collision": {
         "enabled": false,
@@ -2758,7 +2967,12 @@
         "railing",
         "broken"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST011",
@@ -2766,14 +2980,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST011_Stone_Railing_Post.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        72,
+        110
       ],
       "origin": [
-        32,
-        64
+        36,
+        110
       ],
       "collision": {
         "enabled": false,
@@ -2799,7 +3013,12 @@
         "railing",
         "post"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST012",
@@ -2807,14 +3026,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST012_Stone_Railing_Corner.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        90,
+        117
       ],
       "origin": [
-        32,
-        64
+        45,
+        117
       ],
       "collision": {
         "enabled": false,
@@ -2840,7 +3059,12 @@
         "railing",
         "corner"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST013",
@@ -2848,14 +3072,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        185,
+        123
       ],
       "origin": [
-        32,
-        64
+        92,
+        123
       ],
       "collision": {
         "enabled": false,
@@ -2881,7 +3105,12 @@
         "parapet",
         "short"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "ST014",
@@ -2889,14 +3118,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        176,
+        92
       ],
       "origin": [
-        32,
-        64
+        88,
+        92
       ],
       "collision": {
         "enabled": false,
@@ -2922,7 +3151,12 @@
         "parapet",
         "long"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E001",
@@ -2930,14 +3164,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E001_Cliff_Edge_Straight.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        186,
+        176
       ],
       "origin": [
-        32,
-        64
+        93,
+        176
       ],
       "collision": {
         "enabled": false,
@@ -2963,7 +3197,12 @@
         "edge",
         "straight"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E002",
@@ -2971,14 +3210,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E002_Cliff_Edge_Corner_Left.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        149,
+        179
       ],
       "origin": [
-        32,
-        64
+        74,
+        179
       ],
       "collision": {
         "enabled": false,
@@ -3005,7 +3244,12 @@
         "corner",
         "left"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E003",
@@ -3013,14 +3257,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E003_Cliff_Edge_Corner_Right.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        146,
+        167
       ],
       "origin": [
-        32,
-        64
+        73,
+        167
       ],
       "collision": {
         "enabled": false,
@@ -3047,7 +3291,12 @@
         "corner",
         "right"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E004",
@@ -3055,14 +3304,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E004_Cliff_Rock_Tall.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        225,
+        181
       ],
       "origin": [
-        32,
-        64
+        112,
+        181
       ],
       "collision": {
         "enabled": false,
@@ -3088,7 +3337,12 @@
         "rock",
         "tall"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E005",
@@ -3096,14 +3350,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E005_Cliff_Rock_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        286,
+        186
       ],
       "origin": [
-        32,
-        64
+        143,
+        186
       ],
       "collision": {
         "enabled": false,
@@ -3129,7 +3383,12 @@
         "rock",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E006",
@@ -3137,14 +3396,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E006_Cliff_Rock_Group.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        208,
+        178
       ],
       "origin": [
-        32,
-        64
+        104,
+        178
       ],
       "collision": {
         "enabled": false,
@@ -3170,7 +3429,12 @@
         "rock",
         "group"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E007",
@@ -3178,14 +3442,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E007_Cliff_With_Ivy.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        231,
+        188
       ],
       "origin": [
-        32,
-        64
+        115,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -3211,7 +3475,12 @@
         "with",
         "ivy"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E008",
@@ -3219,14 +3488,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E008_Cliff_With_Flowers.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        149,
+        180
       ],
       "origin": [
-        32,
-        64
+        74,
+        180
       ],
       "collision": {
         "enabled": false,
@@ -3252,7 +3521,12 @@
         "with",
         "flowers"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "E009",
@@ -3676,14 +3950,14 @@
       "category": "furniture",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/furniture/P001_Hero_Bed.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        296,
+        339
       ],
       "origin": [
-        32,
-        64
+        148,
+        339
       ],
       "collision": {
         "enabled": false,
@@ -3708,7 +3982,12 @@
         "hero",
         "bed"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P002",
@@ -3837,14 +4116,14 @@
       "category": "furniture",
       "subtype": "bedroom",
       "texture_path": "res://map_factory/parts/furniture/P005_Bedroom_Rug.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        238,
+        304
       ],
       "origin": [
-        32,
-        64
+        119,
+        304
       ],
       "collision": {
         "enabled": false,
@@ -3869,7 +4148,12 @@
         "bedroom",
         "rug"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P006",
@@ -3918,14 +4202,14 @@
       "category": "furniture",
       "subtype": "bedside",
       "texture_path": "res://map_factory/parts/furniture/P007_Bedside_Table.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        151,
+        243
       ],
       "origin": [
-        32,
-        64
+        75,
+        243
       ],
       "collision": {
         "enabled": false,
@@ -3950,7 +4234,12 @@
         "bedside",
         "table"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P008",
@@ -3958,14 +4247,14 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P008_Wooden_Desk.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        392,
+        278
       ],
       "origin": [
-        32,
-        64
+        196,
+        278
       ],
       "collision": {
         "enabled": false,
@@ -3990,7 +4279,12 @@
         "wooden",
         "desk"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P009",
@@ -3998,14 +4292,14 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P009_Wooden_Table_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        393,
+        275
       ],
       "origin": [
-        32,
-        64
+        196,
+        275
       ],
       "collision": {
         "enabled": false,
@@ -4031,7 +4325,12 @@
         "table",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P010",
@@ -4039,14 +4338,14 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P010_Wooden_Table_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        151,
+        110
       ],
       "origin": [
-        32,
-        64
+        75,
+        110
       ],
       "collision": {
         "enabled": false,
@@ -4072,7 +4371,12 @@
         "table",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P011",
@@ -4080,14 +4384,14 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P011_Wooden_Chair.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        140,
+        166
       ],
       "origin": [
-        32,
-        64
+        70,
+        166
       ],
       "collision": {
         "enabled": false,
@@ -4112,7 +4416,12 @@
         "wooden",
         "chair"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P012",
@@ -4120,14 +4429,14 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        119,
+        115
       ],
       "origin": [
-        32,
-        64
+        59,
+        115
       ],
       "collision": {
         "enabled": false,
@@ -4152,7 +4461,12 @@
         "wooden",
         "stool"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P013",
@@ -4200,14 +4514,14 @@
       "category": "furniture",
       "subtype": "bookshelf",
       "texture_path": "res://map_factory/parts/furniture/P014_Bookshelf_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        296,
+        276
       ],
       "origin": [
-        32,
-        64
+        148,
+        276
       ],
       "collision": {
         "enabled": false,
@@ -4232,7 +4546,12 @@
         "bookshelf",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P015",
@@ -4240,14 +4559,14 @@
       "category": "furniture",
       "subtype": "bookshelf",
       "texture_path": "res://map_factory/parts/furniture/P015_Bookshelf_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        248,
+        238
       ],
       "origin": [
-        32,
-        64
+        124,
+        238
       ],
       "collision": {
         "enabled": false,
@@ -4272,7 +4591,12 @@
         "bookshelf",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P016",
@@ -4320,14 +4644,14 @@
       "category": "furniture",
       "subtype": "treasure",
       "texture_path": "res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        191,
+        157
       ],
       "origin": [
-        32,
-        64
+        95,
+        157
       ],
       "collision": {
         "enabled": false,
@@ -4353,7 +4677,12 @@
         "chest",
         "closed"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P018",
@@ -4402,14 +4731,14 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P019_Wooden_Crate_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        158,
+        164
       ],
       "origin": [
-        32,
-        64
+        79,
+        164
       ],
       "collision": {
         "enabled": false,
@@ -4435,7 +4764,12 @@
         "crate",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P020",
@@ -4443,14 +4777,14 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P020_Wooden_Crate_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        126,
+        125
       ],
       "origin": [
-        32,
-        64
+        63,
+        125
       ],
       "collision": {
         "enabled": false,
@@ -4476,7 +4810,12 @@
         "crate",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "P021",
@@ -4564,14 +4903,14 @@
       "category": "objects",
       "subtype": "blue",
       "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        126,
+        165
       ],
       "origin": [
-        32,
-        64
+        63,
+        165
       ],
       "collision": {
         "enabled": false,
@@ -4597,7 +4936,12 @@
         "vase",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O002",
@@ -4605,14 +4949,14 @@
       "category": "objects",
       "subtype": "blue",
       "texture_path": "res://map_factory/parts/objects/O002_Blue_Vase_Medium.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        85,
+        123
       ],
       "origin": [
-        32,
-        64
+        42,
+        123
       ],
       "collision": {
         "enabled": false,
@@ -4638,7 +4982,12 @@
         "vase",
         "medium"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O003",
@@ -4646,14 +4995,14 @@
       "category": "objects",
       "subtype": "blue",
       "texture_path": "res://map_factory/parts/objects/O003_Blue_Vase_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        85,
+        110
       ],
       "origin": [
-        32,
-        64
+        42,
+        110
       ],
       "collision": {
         "enabled": false,
@@ -4679,7 +5028,12 @@
         "vase",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O004",
@@ -4687,14 +5041,14 @@
       "category": "objects",
       "subtype": "ceramic",
       "texture_path": "res://map_factory/parts/objects/O004_Ceramic_Jug.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        77,
+        90
       ],
       "origin": [
-        32,
-        64
+        38,
+        90
       ],
       "collision": {
         "enabled": false,
@@ -4719,7 +5073,12 @@
         "ceramic",
         "jug"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O005",
@@ -4727,14 +5086,14 @@
       "category": "objects",
       "subtype": "ceramic",
       "texture_path": "res://map_factory/parts/objects/O005_Ceramic_Bottle.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        66,
+        85
       ],
       "origin": [
-        32,
-        64
+        33,
+        85
       ],
       "collision": {
         "enabled": false,
@@ -4759,7 +5118,12 @@
         "ceramic",
         "bottle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O006",
@@ -4767,14 +5131,14 @@
       "category": "objects",
       "subtype": "fruit",
       "texture_path": "res://map_factory/parts/objects/O006_Fruit_Bowl.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        130,
+        105
       ],
       "origin": [
-        32,
-        64
+        65,
+        105
       ],
       "collision": {
         "enabled": false,
@@ -4799,7 +5163,12 @@
         "fruit",
         "bowl"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O007",
@@ -4887,14 +5256,14 @@
       "category": "objects",
       "subtype": "map",
       "texture_path": "res://map_factory/parts/objects/O009_Map_Open.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        196,
+        135
       ],
       "origin": [
-        32,
-        64
+        98,
+        135
       ],
       "collision": {
         "enabled": false,
@@ -4919,7 +5288,12 @@
         "map",
         "open"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O010",
@@ -4967,14 +5341,14 @@
       "category": "objects",
       "subtype": "scroll",
       "texture_path": "res://map_factory/parts/objects/O011_Scroll_Single.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        122,
+        106
       ],
       "origin": [
-        32,
-        64
+        61,
+        106
       ],
       "collision": {
         "enabled": false,
@@ -4999,7 +5373,12 @@
         "scroll",
         "single"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O012",
@@ -5047,14 +5426,14 @@
       "category": "objects",
       "subtype": "book",
       "texture_path": "res://map_factory/parts/objects/O013_Book_Closed_Blue.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        147,
+        122
       ],
       "origin": [
-        32,
-        64
+        73,
+        122
       ],
       "collision": {
         "enabled": false,
@@ -5080,7 +5459,12 @@
         "closed",
         "blue"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O014",
@@ -5169,14 +5553,14 @@
       "category": "objects",
       "subtype": "book",
       "texture_path": "res://map_factory/parts/objects/O016_Book_Stack.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        153,
+        122
       ],
       "origin": [
-        32,
-        64
+        76,
+        122
       ],
       "collision": {
         "enabled": false,
@@ -5201,7 +5585,12 @@
         "book",
         "stack"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O017",
@@ -5209,14 +5598,14 @@
       "category": "objects",
       "subtype": "candle",
       "texture_path": "res://map_factory/parts/objects/O017_Candle_Single.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        129,
+        106
       ],
       "origin": [
-        32,
-        64
+        64,
+        106
       ],
       "collision": {
         "enabled": false,
@@ -5241,7 +5630,12 @@
         "candle",
         "single"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O018",
@@ -5249,14 +5643,14 @@
       "category": "objects",
       "subtype": "candle",
       "texture_path": "res://map_factory/parts/objects/O018_Candle_Group.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        127,
+        132
       ],
       "origin": [
-        32,
-        64
+        63,
+        132
       ],
       "collision": {
         "enabled": false,
@@ -5281,7 +5675,12 @@
         "candle",
         "group"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O019",
@@ -5289,14 +5688,14 @@
       "category": "objects",
       "subtype": "astrolabe",
       "texture_path": "res://map_factory/parts/objects/O019_Astrolabe_Gold.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        151,
+        141
       ],
       "origin": [
-        32,
-        64
+        75,
+        141
       ],
       "collision": {
         "enabled": false,
@@ -5321,7 +5720,12 @@
         "astrolabe",
         "gold"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O020",
@@ -5369,14 +5773,14 @@
       "category": "objects",
       "subtype": "seashell",
       "texture_path": "res://map_factory/parts/objects/O021_Seashell_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        123,
+        114
       ],
       "origin": [
-        32,
-        64
+        61,
+        114
       ],
       "collision": {
         "enabled": false,
@@ -5401,7 +5805,12 @@
         "seashell",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O022",
@@ -5409,14 +5818,14 @@
       "category": "objects",
       "subtype": "seashell",
       "texture_path": "res://map_factory/parts/objects/O022_Seashell_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        69,
+        77
       ],
       "origin": [
-        32,
-        64
+        34,
+        77
       ],
       "collision": {
         "enabled": false,
@@ -5441,7 +5850,12 @@
         "seashell",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O023",
@@ -5449,14 +5863,14 @@
       "category": "objects",
       "subtype": "small",
       "texture_path": "res://map_factory/parts/objects/O023_Small_Wooden_Box.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        128,
+        123
       ],
       "origin": [
-        32,
-        64
+        64,
+        123
       ],
       "collision": {
         "enabled": false,
@@ -5482,7 +5896,12 @@
         "wooden",
         "box"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O024",
@@ -5490,14 +5909,14 @@
       "category": "objects",
       "subtype": "small",
       "texture_path": "res://map_factory/parts/objects/O024_Small_Potion_Bottle.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        66,
+        83
       ],
       "origin": [
-        32,
-        64
+        33,
+        83
       ],
       "collision": {
         "enabled": false,
@@ -5523,7 +5942,12 @@
         "potion",
         "bottle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O025",
@@ -5531,14 +5955,14 @@
       "category": "objects",
       "subtype": "decorative",
       "texture_path": "res://map_factory/parts/objects/O025_Decorative_Tray.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        140,
+        237
       ],
       "origin": [
-        32,
-        64
+        70,
+        237
       ],
       "collision": {
         "enabled": false,
@@ -5563,7 +5987,12 @@
         "decorative",
         "tray"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "O026",
@@ -5571,14 +6000,14 @@
       "category": "objects",
       "subtype": "flower",
       "texture_path": "res://map_factory/parts/objects/O026_Flower_Vase_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        130,
+        108
       ],
       "origin": [
-        32,
-        64
+        65,
+        108
       ],
       "collision": {
         "enabled": false,
@@ -5604,7 +6033,12 @@
         "vase",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V001",
@@ -5612,14 +6046,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V001_Ivy_Hanging_Long.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        310,
+        249
       ],
       "origin": [
-        32,
-        64
+        155,
+        249
       ],
       "collision": {
         "enabled": false,
@@ -5645,7 +6079,12 @@
         "hanging",
         "long"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V002",
@@ -5653,14 +6092,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V002_Ivy_Hanging_Medium.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        173,
+        217
       ],
       "origin": [
-        32,
-        64
+        86,
+        217
       ],
       "collision": {
         "enabled": false,
@@ -5686,7 +6125,12 @@
         "hanging",
         "medium"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V003",
@@ -5694,14 +6138,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V003_Ivy_Hanging_Short.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        133,
+        169
       ],
       "origin": [
-        32,
-        64
+        66,
+        169
       ],
       "collision": {
         "enabled": false,
@@ -5727,7 +6171,12 @@
         "hanging",
         "short"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V004",
@@ -5735,14 +6184,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        241,
+        168
       ],
       "origin": [
-        32,
-        64
+        120,
+        168
       ],
       "collision": {
         "enabled": false,
@@ -5768,7 +6217,12 @@
         "horizontal",
         "long"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V005",
@@ -5776,14 +6230,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V005_Ivy_Horizontal_Short.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        199,
+        154
       ],
       "origin": [
-        32,
-        64
+        99,
+        154
       ],
       "collision": {
         "enabled": false,
@@ -5809,7 +6263,12 @@
         "horizontal",
         "short"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V006",
@@ -5817,14 +6276,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V006_Ivy_Corner_Left.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        179,
+        233
       ],
       "origin": [
-        32,
-        64
+        89,
+        233
       ],
       "collision": {
         "enabled": false,
@@ -5850,7 +6309,12 @@
         "corner",
         "left"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V007",
@@ -5858,14 +6322,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        160,
+        173
       ],
       "origin": [
-        32,
-        64
+        80,
+        173
       ],
       "collision": {
         "enabled": false,
@@ -5891,7 +6355,12 @@
         "corner",
         "right"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V008",
@@ -5899,14 +6368,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V008_Ivy_Wall_Cluster.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        130,
+        174
       ],
       "origin": [
-        32,
-        64
+        65,
+        174
       ],
       "collision": {
         "enabled": false,
@@ -5932,7 +6401,12 @@
         "wall",
         "cluster"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V009",
@@ -5940,14 +6414,14 @@
       "category": "vegetation",
       "subtype": "ivy",
       "texture_path": "res://map_factory/parts/vegetation/V009_Ivy_Arch_Cluster.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        169,
+        160
       ],
       "origin": [
-        32,
-        64
+        84,
+        160
       ],
       "collision": {
         "enabled": false,
@@ -5973,7 +6447,12 @@
         "arch",
         "cluster"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V010",
@@ -5981,14 +6460,14 @@
       "category": "vegetation",
       "subtype": "white",
       "texture_path": "res://map_factory/parts/vegetation/V010_White_Flowers_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        160,
+        176
       ],
       "origin": [
-        32,
-        64
+        80,
+        176
       ],
       "collision": {
         "enabled": false,
@@ -6014,7 +6493,12 @@
         "flowers",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V011",
@@ -6022,14 +6506,14 @@
       "category": "vegetation",
       "subtype": "white",
       "texture_path": "res://map_factory/parts/vegetation/V011_White_Flowers_Medium.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        155,
+        146
       ],
       "origin": [
-        32,
-        64
+        77,
+        146
       ],
       "collision": {
         "enabled": false,
@@ -6055,7 +6539,12 @@
         "flowers",
         "medium"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V012",
@@ -6063,14 +6552,14 @@
       "category": "vegetation",
       "subtype": "white",
       "texture_path": "res://map_factory/parts/vegetation/V012_White_Flowers_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        105,
+        115
       ],
       "origin": [
-        32,
-        64
+        52,
+        115
       ],
       "collision": {
         "enabled": false,
@@ -6096,7 +6585,12 @@
         "flowers",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V013",
@@ -6104,14 +6598,14 @@
       "category": "vegetation",
       "subtype": "blue",
       "texture_path": "res://map_factory/parts/vegetation/V013_Blue_Flowers_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        187,
+        182
       ],
       "origin": [
-        32,
-        64
+        93,
+        182
       ],
       "collision": {
         "enabled": false,
@@ -6137,7 +6631,12 @@
         "flowers",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V014",
@@ -6145,14 +6644,14 @@
       "category": "vegetation",
       "subtype": "blue",
       "texture_path": "res://map_factory/parts/vegetation/V014_Blue_Flowers_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        155,
+        182
       ],
       "origin": [
-        32,
-        64
+        77,
+        182
       ],
       "collision": {
         "enabled": false,
@@ -6178,7 +6677,12 @@
         "flowers",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V015",
@@ -6186,14 +6690,14 @@
       "category": "vegetation",
       "subtype": "orange",
       "texture_path": "res://map_factory/parts/vegetation/V015_Orange_Flowers.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        160,
+        131
       ],
       "origin": [
-        32,
-        64
+        80,
+        131
       ],
       "collision": {
         "enabled": false,
@@ -6218,7 +6722,12 @@
         "orange",
         "flowers"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V016",
@@ -6226,14 +6735,14 @@
       "category": "vegetation",
       "subtype": "green",
       "texture_path": "res://map_factory/parts/vegetation/V016_Green_Shrub.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        147,
+        166
       ],
       "origin": [
-        32,
-        64
+        73,
+        166
       ],
       "collision": {
         "enabled": false,
@@ -6258,7 +6767,12 @@
         "green",
         "shrub"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V017",
@@ -6266,14 +6780,14 @@
       "category": "vegetation",
       "subtype": "tropical",
       "texture_path": "res://map_factory/parts/vegetation/V017_Tropical_Plant_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        142,
+        171
       ],
       "origin": [
-        32,
-        64
+        71,
+        171
       ],
       "collision": {
         "enabled": false,
@@ -6299,7 +6813,12 @@
         "plant",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V018",
@@ -6307,14 +6826,14 @@
       "category": "vegetation",
       "subtype": "tropical",
       "texture_path": "res://map_factory/parts/vegetation/V018_Tropical_Plant_Medium.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        167,
+        168
       ],
       "origin": [
-        32,
-        64
+        83,
+        168
       ],
       "collision": {
         "enabled": false,
@@ -6340,7 +6859,12 @@
         "plant",
         "medium"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V019",
@@ -6348,14 +6872,14 @@
       "category": "vegetation",
       "subtype": "tropical",
       "texture_path": "res://map_factory/parts/vegetation/V019_Tropical_Plant_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        157,
+        152
       ],
       "origin": [
-        32,
-        64
+        78,
+        152
       ],
       "collision": {
         "enabled": false,
@@ -6381,7 +6905,12 @@
         "plant",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V020",
@@ -6389,14 +6918,14 @@
       "category": "vegetation",
       "subtype": "flower",
       "texture_path": "res://map_factory/parts/vegetation/V020_Flower_Pot_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        107,
+        108
       ],
       "origin": [
-        32,
-        64
+        53,
+        108
       ],
       "collision": {
         "enabled": false,
@@ -6422,7 +6951,12 @@
         "pot",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V021",
@@ -6430,14 +6964,14 @@
       "category": "vegetation",
       "subtype": "flower",
       "texture_path": "res://map_factory/parts/vegetation/V021_Flower_Pot_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        174,
+        161
       ],
       "origin": [
-        32,
-        64
+        87,
+        161
       ],
       "collision": {
         "enabled": false,
@@ -6463,7 +6997,12 @@
         "pot",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V022",
@@ -6471,14 +7010,14 @@
       "category": "vegetation",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/vegetation/V022_Wooden_Planter.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        160,
+        111
       ],
       "origin": [
-        32,
-        64
+        80,
+        111
       ],
       "collision": {
         "enabled": false,
@@ -6503,7 +7042,12 @@
         "wooden",
         "planter"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V023",
@@ -6511,14 +7055,14 @@
       "category": "vegetation",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/vegetation/V023_Cliff_Vegetation.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        163,
+        95
       ],
       "origin": [
-        32,
-        64
+        81,
+        95
       ],
       "collision": {
         "enabled": false,
@@ -6543,7 +7087,12 @@
         "cliff",
         "vegetation"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "V024",
@@ -6551,14 +7100,14 @@
       "category": "vegetation",
       "subtype": "ground",
       "texture_path": "res://map_factory/parts/vegetation/V024_Ground_Grass_Cluster.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        165,
+        102
       ],
       "origin": [
-        32,
-        64
+        82,
+        102
       ],
       "collision": {
         "enabled": false,
@@ -6584,7 +7133,12 @@
         "grass",
         "cluster"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D001",
@@ -6592,14 +7146,14 @@
       "category": "decor",
       "subtype": "banner",
       "texture_path": "res://map_factory/parts/decor/D001_Banner_Blue_Long.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        154,
+        260
       ],
       "origin": [
-        32,
-        64
+        77,
+        260
       ],
       "collision": {
         "enabled": false,
@@ -6625,7 +7179,12 @@
         "blue",
         "long"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D002",
@@ -6633,14 +7192,14 @@
       "category": "decor",
       "subtype": "banner",
       "texture_path": "res://map_factory/parts/decor/D002_Banner_Blue_Medium.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        126,
+        239
       ],
       "origin": [
-        32,
-        64
+        63,
+        239
       ],
       "collision": {
         "enabled": false,
@@ -6666,7 +7225,12 @@
         "blue",
         "medium"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D003",
@@ -6674,14 +7238,14 @@
       "category": "decor",
       "subtype": "banner",
       "texture_path": "res://map_factory/parts/decor/D003_Banner_Blue_Short.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        102,
+        195
       ],
       "origin": [
-        32,
-        64
+        51,
+        195
       ],
       "collision": {
         "enabled": false,
@@ -6707,7 +7271,12 @@
         "blue",
         "short"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D004",
@@ -6715,14 +7284,14 @@
       "category": "decor",
       "subtype": "banner",
       "texture_path": "res://map_factory/parts/decor/D004_Banner_Compass.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        84,
+        152
       ],
       "origin": [
-        32,
-        64
+        42,
+        152
       ],
       "collision": {
         "enabled": false,
@@ -6747,7 +7316,12 @@
         "banner",
         "compass"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D005",
@@ -6836,14 +7410,14 @@
       "category": "decor",
       "subtype": "lantern",
       "texture_path": "res://map_factory/parts/decor/D007_Lantern_Hanging.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        73,
+        141
       ],
       "origin": [
-        32,
-        64
+        36,
+        141
       ],
       "collision": {
         "enabled": false,
@@ -6868,7 +7442,12 @@
         "lantern",
         "hanging"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D008",
@@ -6876,14 +7455,14 @@
       "category": "decor",
       "subtype": "lantern",
       "texture_path": "res://map_factory/parts/decor/D008_Lantern_Wall_Left.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        164,
+        175
       ],
       "origin": [
-        32,
-        64
+        82,
+        175
       ],
       "collision": {
         "enabled": false,
@@ -6909,7 +7488,12 @@
         "wall",
         "left"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D009",
@@ -6917,14 +7501,14 @@
       "category": "decor",
       "subtype": "lantern",
       "texture_path": "res://map_factory/parts/decor/D009_Lantern_Wall_Right.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        140,
+        166
       ],
       "origin": [
-        32,
-        64
+        70,
+        166
       ],
       "collision": {
         "enabled": false,
@@ -6950,7 +7534,12 @@
         "wall",
         "right"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D010",
@@ -6958,14 +7547,14 @@
       "category": "decor",
       "subtype": "lantern",
       "texture_path": "res://map_factory/parts/decor/D010_Lantern_Table.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        65,
+        118
       ],
       "origin": [
         32,
-        64
+        118
       ],
       "collision": {
         "enabled": false,
@@ -6990,7 +7579,12 @@
         "lantern",
         "table"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D011",
@@ -6998,14 +7592,14 @@
       "category": "decor",
       "subtype": "lantern",
       "texture_path": "res://map_factory/parts/decor/D011_Lantern_Pole.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        66,
+        116
       ],
       "origin": [
-        32,
-        64
+        33,
+        116
       ],
       "collision": {
         "enabled": false,
@@ -7030,7 +7624,12 @@
         "lantern",
         "pole"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D012",
@@ -7244,14 +7843,14 @@
       "category": "decor",
       "subtype": "rope",
       "texture_path": "res://map_factory/parts/decor/D017_Rope_Hanging.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        25,
+        147
       ],
       "origin": [
-        32,
-        64
+        12,
+        147
       ],
       "collision": {
         "enabled": false,
@@ -7276,7 +7875,12 @@
         "rope",
         "hanging"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "D018",
@@ -7284,14 +7888,14 @@
       "category": "decor",
       "subtype": "decorative",
       "texture_path": "res://map_factory/parts/decor/D018_Decorative_Ornament.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        74,
+        147
       ],
       "origin": [
-        32,
-        64
+        37,
+        147
       ],
       "collision": {
         "enabled": false,
@@ -7316,7 +7920,12 @@
         "decorative",
         "ornament"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
     },
     {
       "id": "S001",
@@ -7326,12 +7935,12 @@
       "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7344,7 +7953,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7358,7 +7967,11 @@
         "small"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S002",
@@ -7368,12 +7981,12 @@
       "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7386,7 +7999,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7400,7 +8013,11 @@
         "medium"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S003",
@@ -7410,12 +8027,12 @@
       "texture_path": "res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7428,7 +8045,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7442,7 +8059,11 @@
         "large"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S004",
@@ -7452,12 +8073,12 @@
       "texture_path": "res://map_factory/parts/shadows/S004_Shadow_Character.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7470,7 +8091,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7483,7 +8104,11 @@
         "character"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S005",
@@ -7493,12 +8118,12 @@
       "texture_path": "res://map_factory/parts/shadows/S005_Shadow_Bed.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7511,7 +8136,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7524,7 +8149,11 @@
         "bed"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S006",
@@ -7534,12 +8163,12 @@
       "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7552,7 +8181,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7565,7 +8194,11 @@
         "table"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S007",
@@ -7575,12 +8208,12 @@
       "texture_path": "res://map_factory/parts/shadows/S007_Shadow_Chair.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7593,7 +8226,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7606,7 +8239,11 @@
         "chair"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S008",
@@ -7616,12 +8253,12 @@
       "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7634,7 +8271,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7647,7 +8284,11 @@
         "bookshelf"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S009",
@@ -7657,12 +8298,12 @@
       "texture_path": "res://map_factory/parts/shadows/S009_Shadow_Chest.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7675,7 +8316,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7688,7 +8329,11 @@
         "chest"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S010",
@@ -7698,12 +8343,12 @@
       "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7716,7 +8361,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7729,7 +8374,11 @@
         "plant"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S011",
@@ -7739,12 +8388,12 @@
       "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7757,7 +8406,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7771,7 +8420,11 @@
         "short"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S012",
@@ -7781,12 +8434,12 @@
       "texture_path": "res://map_factory/parts/shadows/S012_Shadow_Column_Long.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7799,7 +8452,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7813,7 +8466,11 @@
         "long"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S013",
@@ -7823,12 +8480,12 @@
       "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7841,7 +8498,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7855,7 +8512,11 @@
         "base"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S014",
@@ -7865,12 +8526,12 @@
       "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7883,7 +8544,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7897,7 +8558,11 @@
         "corner"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S015",
@@ -7907,12 +8572,12 @@
       "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7925,7 +8590,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7938,7 +8603,11 @@
         "stairs"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "S016",
@@ -7948,12 +8617,12 @@
       "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
       "status": "ready",
       "pixel_size": [
-        164,
-        80
+        240,
+        128
       ],
       "origin": [
-        32,
-        64
+        120,
+        128
       ],
       "collision": {
         "enabled": false,
@@ -7966,7 +8635,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -7980,7 +8649,11 @@
         "diagonal"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "CH001",
@@ -8480,14 +9153,14 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
-        512,
-        144
+        860,
+        168
       ],
       "origin": [
-        32,
-        64
+        430,
+        168
       ],
       "collision": {
         "enabled": false,
@@ -8500,7 +9173,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8514,7 +9187,11 @@
         "background"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI002",
@@ -8522,14 +9199,14 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
-        300,
-        96
+        380,
+        105
       ],
       "origin": [
-        32,
-        64
+        190,
+        105
       ],
       "collision": {
         "enabled": false,
@@ -8542,7 +9219,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8556,7 +9233,11 @@
         "border"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI003",
@@ -8564,14 +9245,14 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
-        235,
-        56
+        250,
+        52
       ],
       "origin": [
-        32,
-        64
+        125,
+        52
       ],
       "collision": {
         "enabled": false,
@@ -8584,7 +9265,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8597,7 +9278,11 @@
         "nameplate"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI004",
@@ -8605,14 +9290,14 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
-        132,
+        142,
         160
       ],
       "origin": [
-        32,
-        64
+        71,
+        160
       ],
       "collision": {
         "enabled": false,
@@ -8625,7 +9310,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8639,7 +9324,11 @@
         "frame"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI005",
@@ -8647,7 +9336,7 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
         64,
         64
@@ -8667,7 +9356,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8681,7 +9370,11 @@
         "arrow"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI006",
@@ -8689,14 +9382,14 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
-        250,
-        60
+        220,
+        42
       ],
       "origin": [
-        32,
-        64
+        110,
+        42
       ],
       "collision": {
         "enabled": false,
@@ -8709,7 +9402,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8723,7 +9416,11 @@
         "selector"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI007",
@@ -8751,7 +9448,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8791,7 +9488,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8811,7 +9508,7 @@
       "category": "ui",
       "subtype": "interaction",
       "texture_path": "res://map_factory/parts/ui/UI009_Interaction_Icon.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
         64,
         64
@@ -8831,7 +9528,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8844,7 +9541,11 @@
         "icon"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI010",
@@ -8852,7 +9553,7 @@
       "category": "ui",
       "subtype": "interaction",
       "texture_path": "res://map_factory/parts/ui/UI010_Interaction_Prompt.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
         64,
         64
@@ -8872,7 +9573,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8885,7 +9586,11 @@
         "prompt"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI011",
@@ -8893,14 +9598,14 @@
       "category": "ui",
       "subtype": "room",
       "texture_path": "res://map_factory/parts/ui/UI011_Room_Title_Panel.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
-        340,
-        80
+        360,
+        72
       ],
       "origin": [
-        32,
-        64
+        180,
+        72
       ],
       "collision": {
         "enabled": false,
@@ -8913,7 +9618,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8927,7 +9632,11 @@
         "panel"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     },
     {
       "id": "UI012",
@@ -8935,7 +9644,7 @@
       "category": "ui",
       "subtype": "ui",
       "texture_path": "res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png",
-      "status": "needs_cleanup",
+      "status": "ready",
       "pixel_size": [
         64,
         64
@@ -8955,7 +9664,7 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
         "opacity": 0.25,
@@ -8970,9 +9679,11 @@
         "corner"
       ],
       "reusable": true,
-      "source": "procedural_starter_v1"
+      "source": {
+        "kind": "procedural",
+        "file": "procedural"
+      },
+      "qa_notes": "Procedural asset; inspect in Godot."
     }
-  ],
-  "note": "Generated floor/UI drafts need art QA; PNGs are real independent textures. Unprocessed items remain planned.",
-  "generated_png_count": 48
+  ]
 }

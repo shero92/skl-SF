@@ -1,17 +1,17 @@
 id,category,name,status,texture_path
 F001,floors,Stone Floor Plain,needs_cleanup,res://map_factory/parts/floors/F001_Stone_Floor_Plain.png
 F002,floors,Stone Floor Cracked,needs_cleanup,res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png
-F003,floors,Stone Floor Worn,needs_cleanup,res://map_factory/parts/floors/F003_Stone_Floor_Worn.png
-F004,floors,Stone Floor Light,needs_cleanup,res://map_factory/parts/floors/F004_Stone_Floor_Light.png
-F005,floors,Stone Floor Dark,needs_cleanup,res://map_factory/parts/floors/F005_Stone_Floor_Dark.png
+F003,floors,Stone Floor Worn,planned,res://map_factory/parts/floors/F003_Stone_Floor_Worn.png
+F004,floors,Stone Floor Light,planned,res://map_factory/parts/floors/F004_Stone_Floor_Light.png
+F005,floors,Stone Floor Dark,planned,res://map_factory/parts/floors/F005_Stone_Floor_Dark.png
 F006,floors,Stone Floor Edge N,needs_cleanup,res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png
-F007,floors,Stone Floor Edge S,needs_cleanup,res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png
-F008,floors,Stone Floor Edge E,needs_cleanup,res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png
-F009,floors,Stone Floor Edge W,needs_cleanup,res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png
+F007,floors,Stone Floor Edge S,planned,res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png
+F008,floors,Stone Floor Edge E,planned,res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png
+F009,floors,Stone Floor Edge W,planned,res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png
 F010,floors,Stone Floor Corner NW,needs_cleanup,res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png
-F011,floors,Stone Floor Corner NE,needs_cleanup,res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png
-F012,floors,Stone Floor Corner SW,needs_cleanup,res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png
-F013,floors,Stone Floor Corner SE,needs_cleanup,res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png
+F011,floors,Stone Floor Corner NE,planned,res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png
+F012,floors,Stone Floor Corner SW,planned,res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png
+F013,floors,Stone Floor Corner SE,planned,res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png
 F014,floors,Compass Floor Center,needs_cleanup,res://map_factory/parts/floors/F014_Compass_Floor_Center.png
 F015,floors,Compass Floor N,needs_cleanup,res://map_factory/parts/floors/F015_Compass_Floor_N.png
 F016,floors,Compass Floor S,needs_cleanup,res://map_factory/parts/floors/F016_Compass_Floor_S.png
@@ -21,62 +21,62 @@ F019,floors,Compass Floor Corner NW,needs_cleanup,res://map_factory/parts/floors
 F020,floors,Compass Floor Corner NE,needs_cleanup,res://map_factory/parts/floors/F020_Compass_Floor_Corner_NE.png
 F021,floors,Compass Floor Corner SW,needs_cleanup,res://map_factory/parts/floors/F021_Compass_Floor_Corner_SW.png
 F022,floors,Compass Floor Corner SE,needs_cleanup,res://map_factory/parts/floors/F022_Compass_Floor_Corner_SE.png
-W001,walls,Stone Wall Straight,planned,res://map_factory/parts/walls/W001_Stone_Wall_Straight.png
-W002,walls,Stone Wall Short,planned,res://map_factory/parts/walls/W002_Stone_Wall_Short.png
-W003,walls,Stone Wall Broken,planned,res://map_factory/parts/walls/W003_Stone_Wall_Broken.png
-W004,walls,Stone Wall Tall,planned,res://map_factory/parts/walls/W004_Stone_Wall_Tall.png
-W005,walls,Stone Wall Low,planned,res://map_factory/parts/walls/W005_Stone_Wall_Low.png
-W006,walls,Stone Wall Corner NW,planned,res://map_factory/parts/walls/W006_Stone_Wall_Corner_NW.png
-W007,walls,Stone Wall Corner NE,planned,res://map_factory/parts/walls/W007_Stone_Wall_Corner_NE.png
+W001,walls,Stone Wall Straight,needs_cleanup,res://map_factory/parts/walls/W001_Stone_Wall_Straight.png
+W002,walls,Stone Wall Short,needs_cleanup,res://map_factory/parts/walls/W002_Stone_Wall_Short.png
+W003,walls,Stone Wall Broken,needs_cleanup,res://map_factory/parts/walls/W003_Stone_Wall_Broken.png
+W004,walls,Stone Wall Tall,needs_cleanup,res://map_factory/parts/walls/W004_Stone_Wall_Tall.png
+W005,walls,Stone Wall Low,needs_cleanup,res://map_factory/parts/walls/W005_Stone_Wall_Low.png
+W006,walls,Stone Wall Corner NW,needs_cleanup,res://map_factory/parts/walls/W006_Stone_Wall_Corner_NW.png
+W007,walls,Stone Wall Corner NE,needs_cleanup,res://map_factory/parts/walls/W007_Stone_Wall_Corner_NE.png
 W008,walls,Stone Wall Corner SW,planned,res://map_factory/parts/walls/W008_Stone_Wall_Corner_SW.png
 W009,walls,Stone Wall Corner SE,planned,res://map_factory/parts/walls/W009_Stone_Wall_Corner_SE.png
-W010,walls,Stone Wall End Left,planned,res://map_factory/parts/walls/W010_Stone_Wall_End_Left.png
-W011,walls,Stone Wall End Right,planned,res://map_factory/parts/walls/W011_Stone_Wall_End_Right.png
-W012,walls,Stone Wall With Ivy,planned,res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png
-W013,walls,Stone Wall With Flowers,planned,res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png
-W014,walls,Stone Wall With Lantern,planned,res://map_factory/parts/walls/W014_Stone_Wall_With_Lantern.png
-W015,walls,Stone Wall With Banner,planned,res://map_factory/parts/walls/W015_Stone_Wall_With_Banner.png
-W016,walls,Stone Wall Doorway,planned,res://map_factory/parts/walls/W016_Stone_Wall_Doorway.png
-W017,walls,Stone Wall Ruined Top,planned,res://map_factory/parts/walls/W017_Stone_Wall_Ruined_Top.png
-W018,walls,Stone Wall Inner Corner,planned,res://map_factory/parts/walls/W018_Stone_Wall_Inner_Corner.png
-A001,architecture,Stone Arch Full,planned,res://map_factory/parts/architecture/A001_Stone_Arch_Full.png
+W010,walls,Stone Wall End Left,needs_cleanup,res://map_factory/parts/walls/W010_Stone_Wall_End_Left.png
+W011,walls,Stone Wall End Right,needs_cleanup,res://map_factory/parts/walls/W011_Stone_Wall_End_Right.png
+W012,walls,Stone Wall With Ivy,needs_cleanup,res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png
+W013,walls,Stone Wall With Flowers,needs_cleanup,res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png
+W014,walls,Stone Wall With Lantern,needs_cleanup,res://map_factory/parts/walls/W014_Stone_Wall_With_Lantern.png
+W015,walls,Stone Wall With Banner,needs_cleanup,res://map_factory/parts/walls/W015_Stone_Wall_With_Banner.png
+W016,walls,Stone Wall Doorway,needs_cleanup,res://map_factory/parts/walls/W016_Stone_Wall_Doorway.png
+W017,walls,Stone Wall Ruined Top,needs_cleanup,res://map_factory/parts/walls/W017_Stone_Wall_Ruined_Top.png
+W018,walls,Stone Wall Inner Corner,needs_cleanup,res://map_factory/parts/walls/W018_Stone_Wall_Inner_Corner.png
+A001,architecture,Stone Arch Full,needs_cleanup,res://map_factory/parts/architecture/A001_Stone_Arch_Full.png
 A002,architecture,Stone Arch Top,planned,res://map_factory/parts/architecture/A002_Stone_Arch_Top.png
 A003,architecture,Stone Arch Left,planned,res://map_factory/parts/architecture/A003_Stone_Arch_Left.png
 A004,architecture,Stone Arch Right,planned,res://map_factory/parts/architecture/A004_Stone_Arch_Right.png
-A005,architecture,Stone Arch With Ivy,planned,res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png
-A006,architecture,Stone Arch Broken,planned,res://map_factory/parts/architecture/A006_Stone_Arch_Broken.png
-A007,architecture,Stone Column Full,planned,res://map_factory/parts/architecture/A007_Stone_Column_Full.png
-A008,architecture,Stone Column Base,planned,res://map_factory/parts/architecture/A008_Stone_Column_Base.png
-A009,architecture,Stone Column Middle,planned,res://map_factory/parts/architecture/A009_Stone_Column_Middle.png
-A010,architecture,Stone Column Capital,planned,res://map_factory/parts/architecture/A010_Stone_Column_Capital.png
-A011,architecture,Stone Column Broken,planned,res://map_factory/parts/architecture/A011_Stone_Column_Broken.png
-A012,architecture,Stone Column With Flowers,planned,res://map_factory/parts/architecture/A012_Stone_Column_With_Flowers.png
-A013,architecture,Stone Pillar Short,planned,res://map_factory/parts/architecture/A013_Stone_Pillar_Short.png
-A014,architecture,Stone Pillar Tall,planned,res://map_factory/parts/architecture/A014_Stone_Pillar_Tall.png
-A015,architecture,Stone Door Arched,planned,res://map_factory/parts/architecture/A015_Stone_Door_Arched.png
+A005,architecture,Stone Arch With Ivy,needs_cleanup,res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png
+A006,architecture,Stone Arch Broken,needs_cleanup,res://map_factory/parts/architecture/A006_Stone_Arch_Broken.png
+A007,architecture,Stone Column Full,needs_cleanup,res://map_factory/parts/architecture/A007_Stone_Column_Full.png
+A008,architecture,Stone Column Base,needs_cleanup,res://map_factory/parts/architecture/A008_Stone_Column_Base.png
+A009,architecture,Stone Column Middle,needs_cleanup,res://map_factory/parts/architecture/A009_Stone_Column_Middle.png
+A010,architecture,Stone Column Capital,needs_cleanup,res://map_factory/parts/architecture/A010_Stone_Column_Capital.png
+A011,architecture,Stone Column Broken,needs_cleanup,res://map_factory/parts/architecture/A011_Stone_Column_Broken.png
+A012,architecture,Stone Column With Flowers,needs_cleanup,res://map_factory/parts/architecture/A012_Stone_Column_With_Flowers.png
+A013,architecture,Stone Pillar Short,needs_cleanup,res://map_factory/parts/architecture/A013_Stone_Pillar_Short.png
+A014,architecture,Stone Pillar Tall,needs_cleanup,res://map_factory/parts/architecture/A014_Stone_Pillar_Tall.png
+A015,architecture,Stone Door Arched,needs_cleanup,res://map_factory/parts/architecture/A015_Stone_Door_Arched.png
 A016,architecture,Stone Door Decorated,planned,res://map_factory/parts/architecture/A016_Stone_Door_Decorated.png
 ST001,stairs,Stone Stair Top,planned,res://map_factory/parts/stairs/ST001_Stone_Stair_Top.png
 ST002,stairs,Stone Stair Middle,planned,res://map_factory/parts/stairs/ST002_Stone_Stair_Middle.png
 ST003,stairs,Stone Stair Bottom,planned,res://map_factory/parts/stairs/ST003_Stone_Stair_Bottom.png
-ST004,stairs,Stone Stair Left Edge,planned,res://map_factory/parts/stairs/ST004_Stone_Stair_Left_Edge.png
-ST005,stairs,Stone Stair Right Edge,planned,res://map_factory/parts/stairs/ST005_Stone_Stair_Right_Edge.png
+ST004,stairs,Stone Stair Left Edge,needs_cleanup,res://map_factory/parts/stairs/ST004_Stone_Stair_Left_Edge.png
+ST005,stairs,Stone Stair Right Edge,needs_cleanup,res://map_factory/parts/stairs/ST005_Stone_Stair_Right_Edge.png
 ST006,stairs,Stone Stair Landing,planned,res://map_factory/parts/stairs/ST006_Stone_Stair_Landing.png
-ST007,stairs,Stair Entrance Left,planned,res://map_factory/parts/stairs/ST007_Stair_Entrance_Left.png
-ST008,stairs,Stair Entrance Right,planned,res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png
-ST009,stairs,Stone Railing Straight,planned,res://map_factory/parts/stairs/ST009_Stone_Railing_Straight.png
-ST010,stairs,Stone Railing Broken,planned,res://map_factory/parts/stairs/ST010_Stone_Railing_Broken.png
-ST011,stairs,Stone Railing Post,planned,res://map_factory/parts/stairs/ST011_Stone_Railing_Post.png
-ST012,stairs,Stone Railing Corner,planned,res://map_factory/parts/stairs/ST012_Stone_Railing_Corner.png
-ST013,stairs,Stone Parapet Short,planned,res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png
-ST014,stairs,Stone Parapet Long,planned,res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png
-E001,environment,Cliff Edge Straight,planned,res://map_factory/parts/environment/E001_Cliff_Edge_Straight.png
-E002,environment,Cliff Edge Corner Left,planned,res://map_factory/parts/environment/E002_Cliff_Edge_Corner_Left.png
-E003,environment,Cliff Edge Corner Right,planned,res://map_factory/parts/environment/E003_Cliff_Edge_Corner_Right.png
-E004,environment,Cliff Rock Tall,planned,res://map_factory/parts/environment/E004_Cliff_Rock_Tall.png
-E005,environment,Cliff Rock Small,planned,res://map_factory/parts/environment/E005_Cliff_Rock_Small.png
-E006,environment,Cliff Rock Group,planned,res://map_factory/parts/environment/E006_Cliff_Rock_Group.png
-E007,environment,Cliff With Ivy,planned,res://map_factory/parts/environment/E007_Cliff_With_Ivy.png
-E008,environment,Cliff With Flowers,planned,res://map_factory/parts/environment/E008_Cliff_With_Flowers.png
+ST007,stairs,Stair Entrance Left,needs_cleanup,res://map_factory/parts/stairs/ST007_Stair_Entrance_Left.png
+ST008,stairs,Stair Entrance Right,needs_cleanup,res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png
+ST009,stairs,Stone Railing Straight,needs_cleanup,res://map_factory/parts/stairs/ST009_Stone_Railing_Straight.png
+ST010,stairs,Stone Railing Broken,needs_cleanup,res://map_factory/parts/stairs/ST010_Stone_Railing_Broken.png
+ST011,stairs,Stone Railing Post,needs_cleanup,res://map_factory/parts/stairs/ST011_Stone_Railing_Post.png
+ST012,stairs,Stone Railing Corner,needs_cleanup,res://map_factory/parts/stairs/ST012_Stone_Railing_Corner.png
+ST013,stairs,Stone Parapet Short,needs_cleanup,res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png
+ST014,stairs,Stone Parapet Long,needs_cleanup,res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png
+E001,environment,Cliff Edge Straight,needs_cleanup,res://map_factory/parts/environment/E001_Cliff_Edge_Straight.png
+E002,environment,Cliff Edge Corner Left,needs_cleanup,res://map_factory/parts/environment/E002_Cliff_Edge_Corner_Left.png
+E003,environment,Cliff Edge Corner Right,needs_cleanup,res://map_factory/parts/environment/E003_Cliff_Edge_Corner_Right.png
+E004,environment,Cliff Rock Tall,needs_cleanup,res://map_factory/parts/environment/E004_Cliff_Rock_Tall.png
+E005,environment,Cliff Rock Small,needs_cleanup,res://map_factory/parts/environment/E005_Cliff_Rock_Small.png
+E006,environment,Cliff Rock Group,needs_cleanup,res://map_factory/parts/environment/E006_Cliff_Rock_Group.png
+E007,environment,Cliff With Ivy,needs_cleanup,res://map_factory/parts/environment/E007_Cliff_With_Ivy.png
+E008,environment,Cliff With Flowers,needs_cleanup,res://map_factory/parts/environment/E008_Cliff_With_Flowers.png
 E009,environment,Cliff Ocean Foam,planned,res://map_factory/parts/environment/E009_Cliff_Ocean_Foam.png
 E010,environment,Ocean Water Base,planned,res://map_factory/parts/environment/E010_Ocean_Water_Base.png
 E011,environment,Ocean Wave Frame 01,planned,res://map_factory/parts/environment/E011_Ocean_Wave_Frame_01.png
@@ -87,96 +87,96 @@ E015,environment,Ocean Rock Island Small,planned,res://map_factory/parts/environ
 E016,environment,Ocean Rock Island Large,planned,res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png
 E017,environment,Distant Island Arch,planned,res://map_factory/parts/environment/E017_Distant_Island_Arch.png
 E018,environment,Sky Cloud Background,planned,res://map_factory/parts/environment/E018_Sky_Cloud_Background.png
-P001,furniture,Hero Bed,planned,res://map_factory/parts/furniture/P001_Hero_Bed.png
+P001,furniture,Hero Bed,needs_cleanup,res://map_factory/parts/furniture/P001_Hero_Bed.png
 P002,furniture,Bed Blanket Blue,planned,res://map_factory/parts/furniture/P002_Bed_Blanket_Blue.png
 P003,furniture,Bed Pillow,planned,res://map_factory/parts/furniture/P003_Bed_Pillow.png
 P004,furniture,Bed Frame,planned,res://map_factory/parts/furniture/P004_Bed_Frame.png
-P005,furniture,Bedroom Rug,planned,res://map_factory/parts/furniture/P005_Bedroom_Rug.png
+P005,furniture,Bedroom Rug,needs_cleanup,res://map_factory/parts/furniture/P005_Bedroom_Rug.png
 P006,furniture,Bedroom Rug Variant,planned,res://map_factory/parts/furniture/P006_Bedroom_Rug_Variant.png
-P007,furniture,Bedside Table,planned,res://map_factory/parts/furniture/P007_Bedside_Table.png
-P008,furniture,Wooden Desk,planned,res://map_factory/parts/furniture/P008_Wooden_Desk.png
-P009,furniture,Wooden Table Large,planned,res://map_factory/parts/furniture/P009_Wooden_Table_Large.png
-P010,furniture,Wooden Table Small,planned,res://map_factory/parts/furniture/P010_Wooden_Table_Small.png
-P011,furniture,Wooden Chair,planned,res://map_factory/parts/furniture/P011_Wooden_Chair.png
-P012,furniture,Wooden Stool,planned,res://map_factory/parts/furniture/P012_Wooden_Stool.png
+P007,furniture,Bedside Table,needs_cleanup,res://map_factory/parts/furniture/P007_Bedside_Table.png
+P008,furniture,Wooden Desk,needs_cleanup,res://map_factory/parts/furniture/P008_Wooden_Desk.png
+P009,furniture,Wooden Table Large,needs_cleanup,res://map_factory/parts/furniture/P009_Wooden_Table_Large.png
+P010,furniture,Wooden Table Small,needs_cleanup,res://map_factory/parts/furniture/P010_Wooden_Table_Small.png
+P011,furniture,Wooden Chair,needs_cleanup,res://map_factory/parts/furniture/P011_Wooden_Chair.png
+P012,furniture,Wooden Stool,needs_cleanup,res://map_factory/parts/furniture/P012_Wooden_Stool.png
 P013,furniture,Wooden Bench,planned,res://map_factory/parts/furniture/P013_Wooden_Bench.png
-P014,furniture,Bookshelf Large,planned,res://map_factory/parts/furniture/P014_Bookshelf_Large.png
-P015,furniture,Bookshelf Small,planned,res://map_factory/parts/furniture/P015_Bookshelf_Small.png
+P014,furniture,Bookshelf Large,needs_cleanup,res://map_factory/parts/furniture/P014_Bookshelf_Large.png
+P015,furniture,Bookshelf Small,needs_cleanup,res://map_factory/parts/furniture/P015_Bookshelf_Small.png
 P016,furniture,Wooden Cabinet,planned,res://map_factory/parts/furniture/P016_Wooden_Cabinet.png
-P017,furniture,Treasure Chest Closed,planned,res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png
+P017,furniture,Treasure Chest Closed,needs_cleanup,res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png
 P018,furniture,Treasure Chest Open,planned,res://map_factory/parts/furniture/P018_Treasure_Chest_Open.png
-P019,furniture,Wooden Crate Large,planned,res://map_factory/parts/furniture/P019_Wooden_Crate_Large.png
-P020,furniture,Wooden Crate Small,planned,res://map_factory/parts/furniture/P020_Wooden_Crate_Small.png
+P019,furniture,Wooden Crate Large,needs_cleanup,res://map_factory/parts/furniture/P019_Wooden_Crate_Large.png
+P020,furniture,Wooden Crate Small,needs_cleanup,res://map_factory/parts/furniture/P020_Wooden_Crate_Small.png
 P021,furniture,Wooden Box,planned,res://map_factory/parts/furniture/P021_Wooden_Box.png
 P022,furniture,Storage Chest,planned,res://map_factory/parts/furniture/P022_Storage_Chest.png
-O001,objects,Blue Vase Large,planned,res://map_factory/parts/objects/O001_Blue_Vase_Large.png
-O002,objects,Blue Vase Medium,planned,res://map_factory/parts/objects/O002_Blue_Vase_Medium.png
-O003,objects,Blue Vase Small,planned,res://map_factory/parts/objects/O003_Blue_Vase_Small.png
-O004,objects,Ceramic Jug,planned,res://map_factory/parts/objects/O004_Ceramic_Jug.png
-O005,objects,Ceramic Bottle,planned,res://map_factory/parts/objects/O005_Ceramic_Bottle.png
-O006,objects,Fruit Bowl,planned,res://map_factory/parts/objects/O006_Fruit_Bowl.png
+O001,objects,Blue Vase Large,needs_cleanup,res://map_factory/parts/objects/O001_Blue_Vase_Large.png
+O002,objects,Blue Vase Medium,needs_cleanup,res://map_factory/parts/objects/O002_Blue_Vase_Medium.png
+O003,objects,Blue Vase Small,needs_cleanup,res://map_factory/parts/objects/O003_Blue_Vase_Small.png
+O004,objects,Ceramic Jug,needs_cleanup,res://map_factory/parts/objects/O004_Ceramic_Jug.png
+O005,objects,Ceramic Bottle,needs_cleanup,res://map_factory/parts/objects/O005_Ceramic_Bottle.png
+O006,objects,Fruit Bowl,needs_cleanup,res://map_factory/parts/objects/O006_Fruit_Bowl.png
 O007,objects,Apple Red,planned,res://map_factory/parts/objects/O007_Apple_Red.png
 O008,objects,Apple Green,planned,res://map_factory/parts/objects/O008_Apple_Green.png
-O009,objects,Map Open,planned,res://map_factory/parts/objects/O009_Map_Open.png
+O009,objects,Map Open,needs_cleanup,res://map_factory/parts/objects/O009_Map_Open.png
 O010,objects,Map Rolled,planned,res://map_factory/parts/objects/O010_Map_Rolled.png
-O011,objects,Scroll Single,planned,res://map_factory/parts/objects/O011_Scroll_Single.png
+O011,objects,Scroll Single,needs_cleanup,res://map_factory/parts/objects/O011_Scroll_Single.png
 O012,objects,Scroll Bundle,planned,res://map_factory/parts/objects/O012_Scroll_Bundle.png
-O013,objects,Book Closed Blue,planned,res://map_factory/parts/objects/O013_Book_Closed_Blue.png
+O013,objects,Book Closed Blue,needs_cleanup,res://map_factory/parts/objects/O013_Book_Closed_Blue.png
 O014,objects,Book Closed Brown,planned,res://map_factory/parts/objects/O014_Book_Closed_Brown.png
 O015,objects,Book Open,planned,res://map_factory/parts/objects/O015_Book_Open.png
-O016,objects,Book Stack,planned,res://map_factory/parts/objects/O016_Book_Stack.png
-O017,objects,Candle Single,planned,res://map_factory/parts/objects/O017_Candle_Single.png
-O018,objects,Candle Group,planned,res://map_factory/parts/objects/O018_Candle_Group.png
-O019,objects,Astrolabe Gold,planned,res://map_factory/parts/objects/O019_Astrolabe_Gold.png
+O016,objects,Book Stack,needs_cleanup,res://map_factory/parts/objects/O016_Book_Stack.png
+O017,objects,Candle Single,needs_cleanup,res://map_factory/parts/objects/O017_Candle_Single.png
+O018,objects,Candle Group,needs_cleanup,res://map_factory/parts/objects/O018_Candle_Group.png
+O019,objects,Astrolabe Gold,needs_cleanup,res://map_factory/parts/objects/O019_Astrolabe_Gold.png
 O020,objects,Compass Decoration,planned,res://map_factory/parts/objects/O020_Compass_Decoration.png
-O021,objects,Seashell Large,planned,res://map_factory/parts/objects/O021_Seashell_Large.png
-O022,objects,Seashell Small,planned,res://map_factory/parts/objects/O022_Seashell_Small.png
-O023,objects,Small Wooden Box,planned,res://map_factory/parts/objects/O023_Small_Wooden_Box.png
-O024,objects,Small Potion Bottle,planned,res://map_factory/parts/objects/O024_Small_Potion_Bottle.png
-O025,objects,Decorative Tray,planned,res://map_factory/parts/objects/O025_Decorative_Tray.png
-O026,objects,Flower Vase Small,planned,res://map_factory/parts/objects/O026_Flower_Vase_Small.png
-V001,vegetation,Ivy Hanging Long,planned,res://map_factory/parts/vegetation/V001_Ivy_Hanging_Long.png
-V002,vegetation,Ivy Hanging Medium,planned,res://map_factory/parts/vegetation/V002_Ivy_Hanging_Medium.png
-V003,vegetation,Ivy Hanging Short,planned,res://map_factory/parts/vegetation/V003_Ivy_Hanging_Short.png
-V004,vegetation,Ivy Horizontal Long,planned,res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png
-V005,vegetation,Ivy Horizontal Short,planned,res://map_factory/parts/vegetation/V005_Ivy_Horizontal_Short.png
-V006,vegetation,Ivy Corner Left,planned,res://map_factory/parts/vegetation/V006_Ivy_Corner_Left.png
-V007,vegetation,Ivy Corner Right,planned,res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png
-V008,vegetation,Ivy Wall Cluster,planned,res://map_factory/parts/vegetation/V008_Ivy_Wall_Cluster.png
-V009,vegetation,Ivy Arch Cluster,planned,res://map_factory/parts/vegetation/V009_Ivy_Arch_Cluster.png
-V010,vegetation,White Flowers Large,planned,res://map_factory/parts/vegetation/V010_White_Flowers_Large.png
-V011,vegetation,White Flowers Medium,planned,res://map_factory/parts/vegetation/V011_White_Flowers_Medium.png
-V012,vegetation,White Flowers Small,planned,res://map_factory/parts/vegetation/V012_White_Flowers_Small.png
-V013,vegetation,Blue Flowers Large,planned,res://map_factory/parts/vegetation/V013_Blue_Flowers_Large.png
-V014,vegetation,Blue Flowers Small,planned,res://map_factory/parts/vegetation/V014_Blue_Flowers_Small.png
-V015,vegetation,Orange Flowers,planned,res://map_factory/parts/vegetation/V015_Orange_Flowers.png
-V016,vegetation,Green Shrub,planned,res://map_factory/parts/vegetation/V016_Green_Shrub.png
-V017,vegetation,Tropical Plant Large,planned,res://map_factory/parts/vegetation/V017_Tropical_Plant_Large.png
-V018,vegetation,Tropical Plant Medium,planned,res://map_factory/parts/vegetation/V018_Tropical_Plant_Medium.png
-V019,vegetation,Tropical Plant Small,planned,res://map_factory/parts/vegetation/V019_Tropical_Plant_Small.png
-V020,vegetation,Flower Pot Large,planned,res://map_factory/parts/vegetation/V020_Flower_Pot_Large.png
-V021,vegetation,Flower Pot Small,planned,res://map_factory/parts/vegetation/V021_Flower_Pot_Small.png
-V022,vegetation,Wooden Planter,planned,res://map_factory/parts/vegetation/V022_Wooden_Planter.png
-V023,vegetation,Cliff Vegetation,planned,res://map_factory/parts/vegetation/V023_Cliff_Vegetation.png
-V024,vegetation,Ground Grass Cluster,planned,res://map_factory/parts/vegetation/V024_Ground_Grass_Cluster.png
-D001,decor,Banner Blue Long,planned,res://map_factory/parts/decor/D001_Banner_Blue_Long.png
-D002,decor,Banner Blue Medium,planned,res://map_factory/parts/decor/D002_Banner_Blue_Medium.png
-D003,decor,Banner Blue Short,planned,res://map_factory/parts/decor/D003_Banner_Blue_Short.png
-D004,decor,Banner Compass,planned,res://map_factory/parts/decor/D004_Banner_Compass.png
+O021,objects,Seashell Large,needs_cleanup,res://map_factory/parts/objects/O021_Seashell_Large.png
+O022,objects,Seashell Small,needs_cleanup,res://map_factory/parts/objects/O022_Seashell_Small.png
+O023,objects,Small Wooden Box,needs_cleanup,res://map_factory/parts/objects/O023_Small_Wooden_Box.png
+O024,objects,Small Potion Bottle,needs_cleanup,res://map_factory/parts/objects/O024_Small_Potion_Bottle.png
+O025,objects,Decorative Tray,needs_cleanup,res://map_factory/parts/objects/O025_Decorative_Tray.png
+O026,objects,Flower Vase Small,needs_cleanup,res://map_factory/parts/objects/O026_Flower_Vase_Small.png
+V001,vegetation,Ivy Hanging Long,needs_cleanup,res://map_factory/parts/vegetation/V001_Ivy_Hanging_Long.png
+V002,vegetation,Ivy Hanging Medium,needs_cleanup,res://map_factory/parts/vegetation/V002_Ivy_Hanging_Medium.png
+V003,vegetation,Ivy Hanging Short,needs_cleanup,res://map_factory/parts/vegetation/V003_Ivy_Hanging_Short.png
+V004,vegetation,Ivy Horizontal Long,needs_cleanup,res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png
+V005,vegetation,Ivy Horizontal Short,needs_cleanup,res://map_factory/parts/vegetation/V005_Ivy_Horizontal_Short.png
+V006,vegetation,Ivy Corner Left,needs_cleanup,res://map_factory/parts/vegetation/V006_Ivy_Corner_Left.png
+V007,vegetation,Ivy Corner Right,needs_cleanup,res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png
+V008,vegetation,Ivy Wall Cluster,needs_cleanup,res://map_factory/parts/vegetation/V008_Ivy_Wall_Cluster.png
+V009,vegetation,Ivy Arch Cluster,needs_cleanup,res://map_factory/parts/vegetation/V009_Ivy_Arch_Cluster.png
+V010,vegetation,White Flowers Large,needs_cleanup,res://map_factory/parts/vegetation/V010_White_Flowers_Large.png
+V011,vegetation,White Flowers Medium,needs_cleanup,res://map_factory/parts/vegetation/V011_White_Flowers_Medium.png
+V012,vegetation,White Flowers Small,needs_cleanup,res://map_factory/parts/vegetation/V012_White_Flowers_Small.png
+V013,vegetation,Blue Flowers Large,needs_cleanup,res://map_factory/parts/vegetation/V013_Blue_Flowers_Large.png
+V014,vegetation,Blue Flowers Small,needs_cleanup,res://map_factory/parts/vegetation/V014_Blue_Flowers_Small.png
+V015,vegetation,Orange Flowers,needs_cleanup,res://map_factory/parts/vegetation/V015_Orange_Flowers.png
+V016,vegetation,Green Shrub,needs_cleanup,res://map_factory/parts/vegetation/V016_Green_Shrub.png
+V017,vegetation,Tropical Plant Large,needs_cleanup,res://map_factory/parts/vegetation/V017_Tropical_Plant_Large.png
+V018,vegetation,Tropical Plant Medium,needs_cleanup,res://map_factory/parts/vegetation/V018_Tropical_Plant_Medium.png
+V019,vegetation,Tropical Plant Small,needs_cleanup,res://map_factory/parts/vegetation/V019_Tropical_Plant_Small.png
+V020,vegetation,Flower Pot Large,needs_cleanup,res://map_factory/parts/vegetation/V020_Flower_Pot_Large.png
+V021,vegetation,Flower Pot Small,needs_cleanup,res://map_factory/parts/vegetation/V021_Flower_Pot_Small.png
+V022,vegetation,Wooden Planter,needs_cleanup,res://map_factory/parts/vegetation/V022_Wooden_Planter.png
+V023,vegetation,Cliff Vegetation,needs_cleanup,res://map_factory/parts/vegetation/V023_Cliff_Vegetation.png
+V024,vegetation,Ground Grass Cluster,needs_cleanup,res://map_factory/parts/vegetation/V024_Ground_Grass_Cluster.png
+D001,decor,Banner Blue Long,needs_cleanup,res://map_factory/parts/decor/D001_Banner_Blue_Long.png
+D002,decor,Banner Blue Medium,needs_cleanup,res://map_factory/parts/decor/D002_Banner_Blue_Medium.png
+D003,decor,Banner Blue Short,needs_cleanup,res://map_factory/parts/decor/D003_Banner_Blue_Short.png
+D004,decor,Banner Compass,needs_cleanup,res://map_factory/parts/decor/D004_Banner_Compass.png
 D005,decor,Banner Anchor,planned,res://map_factory/parts/decor/D005_Banner_Anchor.png
 D006,decor,Banner Wall Mount,planned,res://map_factory/parts/decor/D006_Banner_Wall_Mount.png
-D007,decor,Lantern Hanging,planned,res://map_factory/parts/decor/D007_Lantern_Hanging.png
-D008,decor,Lantern Wall Left,planned,res://map_factory/parts/decor/D008_Lantern_Wall_Left.png
-D009,decor,Lantern Wall Right,planned,res://map_factory/parts/decor/D009_Lantern_Wall_Right.png
-D010,decor,Lantern Table,planned,res://map_factory/parts/decor/D010_Lantern_Table.png
-D011,decor,Lantern Pole,planned,res://map_factory/parts/decor/D011_Lantern_Pole.png
+D007,decor,Lantern Hanging,needs_cleanup,res://map_factory/parts/decor/D007_Lantern_Hanging.png
+D008,decor,Lantern Wall Left,needs_cleanup,res://map_factory/parts/decor/D008_Lantern_Wall_Left.png
+D009,decor,Lantern Wall Right,needs_cleanup,res://map_factory/parts/decor/D009_Lantern_Wall_Right.png
+D010,decor,Lantern Table,needs_cleanup,res://map_factory/parts/decor/D010_Lantern_Table.png
+D011,decor,Lantern Pole,needs_cleanup,res://map_factory/parts/decor/D011_Lantern_Pole.png
 D012,decor,Candle Flame Frame 01,planned,res://map_factory/parts/decor/D012_Candle_Flame_Frame_01.png
 D013,decor,Candle Flame Frame 02,planned,res://map_factory/parts/decor/D013_Candle_Flame_Frame_02.png
 D014,decor,Candle Flame Frame 03,planned,res://map_factory/parts/decor/D014_Candle_Flame_Frame_03.png
 D015,decor,Lantern Glow,planned,res://map_factory/parts/decor/D015_Lantern_Glow.png
 D016,decor,Candle Glow,planned,res://map_factory/parts/decor/D016_Candle_Glow.png
-D017,decor,Rope Hanging,planned,res://map_factory/parts/decor/D017_Rope_Hanging.png
-D018,decor,Decorative Ornament,planned,res://map_factory/parts/decor/D018_Decorative_Ornament.png
+D017,decor,Rope Hanging,needs_cleanup,res://map_factory/parts/decor/D017_Rope_Hanging.png
+D018,decor,Decorative Ornament,needs_cleanup,res://map_factory/parts/decor/D018_Decorative_Ornament.png
 S001,shadows,Shadow Contact Small,ready,res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png
 S002,shadows,Shadow Contact Medium,ready,res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png
 S003,shadows,Shadow Contact Large,ready,res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png
@@ -205,15 +205,15 @@ CH009,characters,Companion Idle,planned,res://map_factory/parts/characters/CH009
 CH010,characters,Companion Walk,planned,res://map_factory/parts/characters/CH010_Companion_Walk.png
 CH011,characters,NPC Fairy Green Idle,planned,res://map_factory/parts/characters/CH011_NPC_Fairy_Green_Idle.png
 CH012,characters,NPC Fairy Green Walk,planned,res://map_factory/parts/characters/CH012_NPC_Fairy_Green_Walk.png
-UI001,ui,Dialogue Panel Background,needs_cleanup,res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png
-UI002,ui,Dialogue Panel Border,needs_cleanup,res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png
-UI003,ui,Dialogue Nameplate,needs_cleanup,res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png
-UI004,ui,Dialogue Portrait Frame,needs_cleanup,res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png
-UI005,ui,Dialogue Next Arrow,needs_cleanup,res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png
-UI006,ui,Dialogue Choice Selector,needs_cleanup,res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png
+UI001,ui,Dialogue Panel Background,ready,res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png
+UI002,ui,Dialogue Panel Border,ready,res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png
+UI003,ui,Dialogue Nameplate,ready,res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png
+UI004,ui,Dialogue Portrait Frame,ready,res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png
+UI005,ui,Dialogue Next Arrow,ready,res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png
+UI006,ui,Dialogue Choice Selector,ready,res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png
 UI007,ui,Hero Portrait,planned,res://map_factory/parts/ui/UI007_Hero_Portrait.png
 UI008,ui,Fairy Portrait,planned,res://map_factory/parts/ui/UI008_Fairy_Portrait.png
-UI009,ui,Interaction Icon,needs_cleanup,res://map_factory/parts/ui/UI009_Interaction_Icon.png
-UI010,ui,Interaction Prompt,needs_cleanup,res://map_factory/parts/ui/UI010_Interaction_Prompt.png
-UI011,ui,Room Title Panel,needs_cleanup,res://map_factory/parts/ui/UI011_Room_Title_Panel.png
-UI012,ui,UI Gold Decorative Corner,needs_cleanup,res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png
+UI009,ui,Interaction Icon,ready,res://map_factory/parts/ui/UI009_Interaction_Icon.png
+UI010,ui,Interaction Prompt,ready,res://map_factory/parts/ui/UI010_Interaction_Prompt.png
+UI011,ui,Room Title Panel,ready,res://map_factory/parts/ui/UI011_Room_Title_Panel.png
+UI012,ui,UI Gold Decorative Corner,ready,res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png

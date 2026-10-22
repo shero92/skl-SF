@@ -1,0 +1,1836 @@
+{
+  "counts": {
+    "generated": 152,
+    "planned": 66
+  },
+  "sources": {
+    "AI fantasy concept sheets": "Cropped PNG sprites, pending QA",
+    "Procedural renderer": "RGBA UI and shadows"
+  },
+  "assets": {
+    "F001": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F001_Stone_Floor_Plain.png",
+      "pixel_size": [
+        162,
+        161
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F002": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
+      "pixel_size": [
+        161,
+        161
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F006": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png",
+      "pixel_size": [
+        151,
+        161
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F010": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png",
+      "pixel_size": [
+        166,
+        161
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F014": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F014_Compass_Floor_Center.png",
+      "pixel_size": [
+        473,
+        464
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F015": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F015_Compass_Floor_N.png",
+      "pixel_size": [
+        245,
+        123
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F016": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F016_Compass_Floor_S.png",
+      "pixel_size": [
+        239,
+        122
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F017": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F017_Compass_Floor_E.png",
+      "pixel_size": [
+        109,
+        193
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F018": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F018_Compass_Floor_W.png",
+      "pixel_size": [
+        102,
+        185
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F019": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F019_Compass_Floor_Corner_NW.png",
+      "pixel_size": [
+        126,
+        127
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F020": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F020_Compass_Floor_Corner_NE.png",
+      "pixel_size": [
+        134,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F021": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F021_Compass_Floor_Corner_SW.png",
+      "pixel_size": [
+        128,
+        119
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "F022": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/floors/F022_Compass_Floor_Corner_SE.png",
+      "pixel_size": [
+        131,
+        119
+      ],
+      "origin": [
+        0,
+        0
+      ]
+    },
+    "W001": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W001_Stone_Wall_Straight.png",
+      "pixel_size": [
+        202,
+        239
+      ],
+      "origin": [
+        101,
+        239
+      ]
+    },
+    "W002": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W002_Stone_Wall_Short.png",
+      "pixel_size": [
+        165,
+        189
+      ],
+      "origin": [
+        82,
+        189
+      ]
+    },
+    "W003": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W003_Stone_Wall_Broken.png",
+      "pixel_size": [
+        134,
+        153
+      ],
+      "origin": [
+        67,
+        153
+      ]
+    },
+    "W004": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W004_Stone_Wall_Tall.png",
+      "pixel_size": [
+        193,
+        112
+      ],
+      "origin": [
+        96,
+        112
+      ]
+    },
+    "W005": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W005_Stone_Wall_Low.png",
+      "pixel_size": [
+        197,
+        229
+      ],
+      "origin": [
+        98,
+        229
+      ]
+    },
+    "W006": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W006_Stone_Wall_Corner_NW.png",
+      "pixel_size": [
+        180,
+        239
+      ],
+      "origin": [
+        90,
+        239
+      ]
+    },
+    "W007": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W007_Stone_Wall_Corner_NE.png",
+      "pixel_size": [
+        157,
+        250
+      ],
+      "origin": [
+        78,
+        250
+      ]
+    },
+    "W010": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W010_Stone_Wall_End_Left.png",
+      "pixel_size": [
+        166,
+        87
+      ],
+      "origin": [
+        83,
+        87
+      ]
+    },
+    "W011": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W011_Stone_Wall_End_Right.png",
+      "pixel_size": [
+        126,
+        99
+      ],
+      "origin": [
+        63,
+        99
+      ]
+    },
+    "W012": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
+      "pixel_size": [
+        169,
+        91
+      ],
+      "origin": [
+        84,
+        91
+      ]
+    },
+    "W013": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
+      "pixel_size": [
+        146,
+        92
+      ],
+      "origin": [
+        73,
+        92
+      ]
+    },
+    "W014": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W014_Stone_Wall_With_Lantern.png",
+      "pixel_size": [
+        178,
+        245
+      ],
+      "origin": [
+        89,
+        245
+      ]
+    },
+    "W015": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W015_Stone_Wall_With_Banner.png",
+      "pixel_size": [
+        146,
+        157
+      ],
+      "origin": [
+        73,
+        157
+      ]
+    },
+    "W016": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W016_Stone_Wall_Doorway.png",
+      "pixel_size": [
+        201,
+        235
+      ],
+      "origin": [
+        100,
+        235
+      ]
+    },
+    "W017": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W017_Stone_Wall_Ruined_Top.png",
+      "pixel_size": [
+        191,
+        118
+      ],
+      "origin": [
+        95,
+        118
+      ]
+    },
+    "W018": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/walls/W018_Stone_Wall_Inner_Corner.png",
+      "pixel_size": [
+        107,
+        101
+      ],
+      "origin": [
+        53,
+        101
+      ]
+    },
+    "A001": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A001_Stone_Arch_Full.png",
+      "pixel_size": [
+        323,
+        198
+      ],
+      "origin": [
+        161,
+        198
+      ]
+    },
+    "A005": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png",
+      "pixel_size": [
+        328,
+        283
+      ],
+      "origin": [
+        164,
+        283
+      ]
+    },
+    "A006": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A006_Stone_Arch_Broken.png",
+      "pixel_size": [
+        308,
+        196
+      ],
+      "origin": [
+        154,
+        196
+      ]
+    },
+    "A007": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A007_Stone_Column_Full.png",
+      "pixel_size": [
+        104,
+        271
+      ],
+      "origin": [
+        52,
+        271
+      ]
+    },
+    "A008": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A008_Stone_Column_Base.png",
+      "pixel_size": [
+        101,
+        81
+      ],
+      "origin": [
+        50,
+        81
+      ]
+    },
+    "A009": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A009_Stone_Column_Middle.png",
+      "pixel_size": [
+        97,
+        240
+      ],
+      "origin": [
+        48,
+        240
+      ]
+    },
+    "A010": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A010_Stone_Column_Capital.png",
+      "pixel_size": [
+        99,
+        178
+      ],
+      "origin": [
+        49,
+        178
+      ]
+    },
+    "A011": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A011_Stone_Column_Broken.png",
+      "pixel_size": [
+        112,
+        218
+      ],
+      "origin": [
+        56,
+        218
+      ]
+    },
+    "A012": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A012_Stone_Column_With_Flowers.png",
+      "pixel_size": [
+        103,
+        272
+      ],
+      "origin": [
+        51,
+        272
+      ]
+    },
+    "A013": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A013_Stone_Pillar_Short.png",
+      "pixel_size": [
+        71,
+        103
+      ],
+      "origin": [
+        35,
+        103
+      ]
+    },
+    "A014": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A014_Stone_Pillar_Tall.png",
+      "pixel_size": [
+        95,
+        114
+      ],
+      "origin": [
+        47,
+        114
+      ]
+    },
+    "A015": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/architecture/A015_Stone_Door_Arched.png",
+      "pixel_size": [
+        196,
+        233
+      ],
+      "origin": [
+        98,
+        233
+      ]
+    },
+    "ST004": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST004_Stone_Stair_Left_Edge.png",
+      "pixel_size": [
+        115,
+        105
+      ],
+      "origin": [
+        57,
+        105
+      ]
+    },
+    "ST005": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST005_Stone_Stair_Right_Edge.png",
+      "pixel_size": [
+        117,
+        105
+      ],
+      "origin": [
+        58,
+        105
+      ]
+    },
+    "ST007": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST007_Stair_Entrance_Left.png",
+      "pixel_size": [
+        73,
+        145
+      ],
+      "origin": [
+        36,
+        145
+      ]
+    },
+    "ST008": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png",
+      "pixel_size": [
+        88,
+        146
+      ],
+      "origin": [
+        44,
+        146
+      ]
+    },
+    "ST009": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST009_Stone_Railing_Straight.png",
+      "pixel_size": [
+        113,
+        112
+      ],
+      "origin": [
+        56,
+        112
+      ]
+    },
+    "ST010": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST010_Stone_Railing_Broken.png",
+      "pixel_size": [
+        139,
+        115
+      ],
+      "origin": [
+        69,
+        115
+      ]
+    },
+    "ST011": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST011_Stone_Railing_Post.png",
+      "pixel_size": [
+        72,
+        110
+      ],
+      "origin": [
+        36,
+        110
+      ]
+    },
+    "ST012": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST012_Stone_Railing_Corner.png",
+      "pixel_size": [
+        90,
+        117
+      ],
+      "origin": [
+        45,
+        117
+      ]
+    },
+    "ST013": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png",
+      "pixel_size": [
+        185,
+        123
+      ],
+      "origin": [
+        92,
+        123
+      ]
+    },
+    "ST014": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png",
+      "pixel_size": [
+        176,
+        92
+      ],
+      "origin": [
+        88,
+        92
+      ]
+    },
+    "E001": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/environment/E001_Cliff_Edge_Straight.png",
+      "pixel_size": [
+        186,
+        176
+      ],
+      "origin": [
+        93,
+        176
+      ]
+    },
+    "E002": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/environment/E002_Cliff_Edge_Corner_Left.png",
+      "pixel_size": [
+        149,
+        179
+      ],
+      "origin": [
+        74,
+        179
+      ]
+    },
+    "E003": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/environment/E003_Cliff_Edge_Corner_Right.png",
+      "pixel_size": [
+        146,
+        167
+      ],
+      "origin": [
+        73,
+        167
+      ]
+    },
+    "E004": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/environment/E004_Cliff_Rock_Tall.png",
+      "pixel_size": [
+        225,
+        181
+      ],
+      "origin": [
+        112,
+        181
+      ]
+    },
+    "E005": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/environment/E005_Cliff_Rock_Small.png",
+      "pixel_size": [
+        286,
+        186
+      ],
+      "origin": [
+        143,
+        186
+      ]
+    },
+    "E006": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/environment/E006_Cliff_Rock_Group.png",
+      "pixel_size": [
+        208,
+        178
+      ],
+      "origin": [
+        104,
+        178
+      ]
+    },
+    "E007": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/environment/E007_Cliff_With_Ivy.png",
+      "pixel_size": [
+        231,
+        188
+      ],
+      "origin": [
+        115,
+        188
+      ]
+    },
+    "E008": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/environment/E008_Cliff_With_Flowers.png",
+      "pixel_size": [
+        149,
+        180
+      ],
+      "origin": [
+        74,
+        180
+      ]
+    },
+    "P001": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P001_Hero_Bed.png",
+      "pixel_size": [
+        296,
+        339
+      ],
+      "origin": [
+        148,
+        339
+      ]
+    },
+    "P005": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P005_Bedroom_Rug.png",
+      "pixel_size": [
+        238,
+        304
+      ],
+      "origin": [
+        119,
+        304
+      ]
+    },
+    "P007": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P007_Bedside_Table.png",
+      "pixel_size": [
+        151,
+        243
+      ],
+      "origin": [
+        75,
+        243
+      ]
+    },
+    "P008": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P008_Wooden_Desk.png",
+      "pixel_size": [
+        392,
+        278
+      ],
+      "origin": [
+        196,
+        278
+      ]
+    },
+    "P009": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P009_Wooden_Table_Large.png",
+      "pixel_size": [
+        393,
+        275
+      ],
+      "origin": [
+        196,
+        275
+      ]
+    },
+    "P010": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P010_Wooden_Table_Small.png",
+      "pixel_size": [
+        151,
+        110
+      ],
+      "origin": [
+        75,
+        110
+      ]
+    },
+    "P011": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P011_Wooden_Chair.png",
+      "pixel_size": [
+        140,
+        166
+      ],
+      "origin": [
+        70,
+        166
+      ]
+    },
+    "P012": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
+      "pixel_size": [
+        119,
+        115
+      ],
+      "origin": [
+        59,
+        115
+      ]
+    },
+    "P014": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P014_Bookshelf_Large.png",
+      "pixel_size": [
+        296,
+        276
+      ],
+      "origin": [
+        148,
+        276
+      ]
+    },
+    "P015": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P015_Bookshelf_Small.png",
+      "pixel_size": [
+        248,
+        238
+      ],
+      "origin": [
+        124,
+        238
+      ]
+    },
+    "P017": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png",
+      "pixel_size": [
+        191,
+        157
+      ],
+      "origin": [
+        95,
+        157
+      ]
+    },
+    "P019": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P019_Wooden_Crate_Large.png",
+      "pixel_size": [
+        158,
+        164
+      ],
+      "origin": [
+        79,
+        164
+      ]
+    },
+    "P020": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/furniture/P020_Wooden_Crate_Small.png",
+      "pixel_size": [
+        126,
+        125
+      ],
+      "origin": [
+        63,
+        125
+      ]
+    },
+    "O001": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+      "pixel_size": [
+        126,
+        165
+      ],
+      "origin": [
+        63,
+        165
+      ]
+    },
+    "O002": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O002_Blue_Vase_Medium.png",
+      "pixel_size": [
+        85,
+        123
+      ],
+      "origin": [
+        42,
+        123
+      ]
+    },
+    "O003": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O003_Blue_Vase_Small.png",
+      "pixel_size": [
+        85,
+        110
+      ],
+      "origin": [
+        42,
+        110
+      ]
+    },
+    "O004": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O004_Ceramic_Jug.png",
+      "pixel_size": [
+        77,
+        90
+      ],
+      "origin": [
+        38,
+        90
+      ]
+    },
+    "O005": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O005_Ceramic_Bottle.png",
+      "pixel_size": [
+        66,
+        85
+      ],
+      "origin": [
+        33,
+        85
+      ]
+    },
+    "O006": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O006_Fruit_Bowl.png",
+      "pixel_size": [
+        130,
+        105
+      ],
+      "origin": [
+        65,
+        105
+      ]
+    },
+    "O009": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O009_Map_Open.png",
+      "pixel_size": [
+        196,
+        135
+      ],
+      "origin": [
+        98,
+        135
+      ]
+    },
+    "O011": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O011_Scroll_Single.png",
+      "pixel_size": [
+        122,
+        106
+      ],
+      "origin": [
+        61,
+        106
+      ]
+    },
+    "O013": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O013_Book_Closed_Blue.png",
+      "pixel_size": [
+        147,
+        122
+      ],
+      "origin": [
+        73,
+        122
+      ]
+    },
+    "O016": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O016_Book_Stack.png",
+      "pixel_size": [
+        153,
+        122
+      ],
+      "origin": [
+        76,
+        122
+      ]
+    },
+    "O017": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O017_Candle_Single.png",
+      "pixel_size": [
+        129,
+        106
+      ],
+      "origin": [
+        64,
+        106
+      ]
+    },
+    "O018": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O018_Candle_Group.png",
+      "pixel_size": [
+        127,
+        132
+      ],
+      "origin": [
+        63,
+        132
+      ]
+    },
+    "O019": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O019_Astrolabe_Gold.png",
+      "pixel_size": [
+        151,
+        141
+      ],
+      "origin": [
+        75,
+        141
+      ]
+    },
+    "O021": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O021_Seashell_Large.png",
+      "pixel_size": [
+        123,
+        114
+      ],
+      "origin": [
+        61,
+        114
+      ]
+    },
+    "O022": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O022_Seashell_Small.png",
+      "pixel_size": [
+        69,
+        77
+      ],
+      "origin": [
+        34,
+        77
+      ]
+    },
+    "O023": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O023_Small_Wooden_Box.png",
+      "pixel_size": [
+        128,
+        123
+      ],
+      "origin": [
+        64,
+        123
+      ]
+    },
+    "O024": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O024_Small_Potion_Bottle.png",
+      "pixel_size": [
+        66,
+        83
+      ],
+      "origin": [
+        33,
+        83
+      ]
+    },
+    "O025": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O025_Decorative_Tray.png",
+      "pixel_size": [
+        140,
+        237
+      ],
+      "origin": [
+        70,
+        237
+      ]
+    },
+    "O026": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/objects/O026_Flower_Vase_Small.png",
+      "pixel_size": [
+        130,
+        108
+      ],
+      "origin": [
+        65,
+        108
+      ]
+    },
+    "V001": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V001_Ivy_Hanging_Long.png",
+      "pixel_size": [
+        310,
+        249
+      ],
+      "origin": [
+        155,
+        249
+      ]
+    },
+    "V002": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V002_Ivy_Hanging_Medium.png",
+      "pixel_size": [
+        173,
+        217
+      ],
+      "origin": [
+        86,
+        217
+      ]
+    },
+    "V003": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V003_Ivy_Hanging_Short.png",
+      "pixel_size": [
+        133,
+        169
+      ],
+      "origin": [
+        66,
+        169
+      ]
+    },
+    "V004": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
+      "pixel_size": [
+        241,
+        168
+      ],
+      "origin": [
+        120,
+        168
+      ]
+    },
+    "V005": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V005_Ivy_Horizontal_Short.png",
+      "pixel_size": [
+        199,
+        154
+      ],
+      "origin": [
+        99,
+        154
+      ]
+    },
+    "V006": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V006_Ivy_Corner_Left.png",
+      "pixel_size": [
+        179,
+        233
+      ],
+      "origin": [
+        89,
+        233
+      ]
+    },
+    "V007": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png",
+      "pixel_size": [
+        160,
+        173
+      ],
+      "origin": [
+        80,
+        173
+      ]
+    },
+    "V008": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V008_Ivy_Wall_Cluster.png",
+      "pixel_size": [
+        130,
+        174
+      ],
+      "origin": [
+        65,
+        174
+      ]
+    },
+    "V009": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V009_Ivy_Arch_Cluster.png",
+      "pixel_size": [
+        169,
+        160
+      ],
+      "origin": [
+        84,
+        160
+      ]
+    },
+    "V010": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V010_White_Flowers_Large.png",
+      "pixel_size": [
+        160,
+        176
+      ],
+      "origin": [
+        80,
+        176
+      ]
+    },
+    "V011": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V011_White_Flowers_Medium.png",
+      "pixel_size": [
+        155,
+        146
+      ],
+      "origin": [
+        77,
+        146
+      ]
+    },
+    "V012": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V012_White_Flowers_Small.png",
+      "pixel_size": [
+        105,
+        115
+      ],
+      "origin": [
+        52,
+        115
+      ]
+    },
+    "V013": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V013_Blue_Flowers_Large.png",
+      "pixel_size": [
+        187,
+        182
+      ],
+      "origin": [
+        93,
+        182
+      ]
+    },
+    "V014": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V014_Blue_Flowers_Small.png",
+      "pixel_size": [
+        155,
+        182
+      ],
+      "origin": [
+        77,
+        182
+      ]
+    },
+    "V015": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V015_Orange_Flowers.png",
+      "pixel_size": [
+        160,
+        131
+      ],
+      "origin": [
+        80,
+        131
+      ]
+    },
+    "V016": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V016_Green_Shrub.png",
+      "pixel_size": [
+        147,
+        166
+      ],
+      "origin": [
+        73,
+        166
+      ]
+    },
+    "V017": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V017_Tropical_Plant_Large.png",
+      "pixel_size": [
+        142,
+        171
+      ],
+      "origin": [
+        71,
+        171
+      ]
+    },
+    "V018": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V018_Tropical_Plant_Medium.png",
+      "pixel_size": [
+        167,
+        168
+      ],
+      "origin": [
+        83,
+        168
+      ]
+    },
+    "V019": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V019_Tropical_Plant_Small.png",
+      "pixel_size": [
+        157,
+        152
+      ],
+      "origin": [
+        78,
+        152
+      ]
+    },
+    "V020": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V020_Flower_Pot_Large.png",
+      "pixel_size": [
+        107,
+        108
+      ],
+      "origin": [
+        53,
+        108
+      ]
+    },
+    "V021": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V021_Flower_Pot_Small.png",
+      "pixel_size": [
+        174,
+        161
+      ],
+      "origin": [
+        87,
+        161
+      ]
+    },
+    "V022": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V022_Wooden_Planter.png",
+      "pixel_size": [
+        160,
+        111
+      ],
+      "origin": [
+        80,
+        111
+      ]
+    },
+    "V023": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V023_Cliff_Vegetation.png",
+      "pixel_size": [
+        163,
+        95
+      ],
+      "origin": [
+        81,
+        95
+      ]
+    },
+    "V024": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/vegetation/V024_Ground_Grass_Cluster.png",
+      "pixel_size": [
+        165,
+        102
+      ],
+      "origin": [
+        82,
+        102
+      ]
+    },
+    "D001": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D001_Banner_Blue_Long.png",
+      "pixel_size": [
+        154,
+        260
+      ],
+      "origin": [
+        77,
+        260
+      ]
+    },
+    "D002": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D002_Banner_Blue_Medium.png",
+      "pixel_size": [
+        126,
+        239
+      ],
+      "origin": [
+        63,
+        239
+      ]
+    },
+    "D003": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D003_Banner_Blue_Short.png",
+      "pixel_size": [
+        102,
+        195
+      ],
+      "origin": [
+        51,
+        195
+      ]
+    },
+    "D004": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D004_Banner_Compass.png",
+      "pixel_size": [
+        84,
+        152
+      ],
+      "origin": [
+        42,
+        152
+      ]
+    },
+    "D007": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D007_Lantern_Hanging.png",
+      "pixel_size": [
+        73,
+        141
+      ],
+      "origin": [
+        36,
+        141
+      ]
+    },
+    "D008": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D008_Lantern_Wall_Left.png",
+      "pixel_size": [
+        164,
+        175
+      ],
+      "origin": [
+        82,
+        175
+      ]
+    },
+    "D009": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D009_Lantern_Wall_Right.png",
+      "pixel_size": [
+        140,
+        166
+      ],
+      "origin": [
+        70,
+        166
+      ]
+    },
+    "D010": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D010_Lantern_Table.png",
+      "pixel_size": [
+        65,
+        118
+      ],
+      "origin": [
+        32,
+        118
+      ]
+    },
+    "D011": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D011_Lantern_Pole.png",
+      "pixel_size": [
+        66,
+        116
+      ],
+      "origin": [
+        33,
+        116
+      ]
+    },
+    "D017": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D017_Rope_Hanging.png",
+      "pixel_size": [
+        25,
+        147
+      ],
+      "origin": [
+        12,
+        147
+      ]
+    },
+    "D018": {
+      "status": "needs_cleanup",
+      "texture_path": "res://map_factory/parts/decor/D018_Decorative_Ornament.png",
+      "pixel_size": [
+        74,
+        147
+      ],
+      "origin": [
+        37,
+        147
+      ]
+    },
+    "S001": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S002": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S003": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S004": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S004_Shadow_Character.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S005": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S005_Shadow_Bed.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S006": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S007": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S007_Shadow_Chair.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S008": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S009": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S009_Shadow_Chest.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S010": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S011": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S012": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S012_Shadow_Column_Long.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S013": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S014": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S015": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "S016": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "origin": [
+        120,
+        128
+      ]
+    },
+    "UI001": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png",
+      "pixel_size": [
+        860,
+        168
+      ],
+      "origin": [
+        430,
+        168
+      ]
+    },
+    "UI002": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png",
+      "pixel_size": [
+        380,
+        105
+      ],
+      "origin": [
+        190,
+        105
+      ]
+    },
+    "UI003": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png",
+      "pixel_size": [
+        250,
+        52
+      ],
+      "origin": [
+        125,
+        52
+      ]
+    },
+    "UI004": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png",
+      "pixel_size": [
+        142,
+        160
+      ],
+      "origin": [
+        71,
+        160
+      ]
+    },
+    "UI005": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ]
+    },
+    "UI006": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png",
+      "pixel_size": [
+        220,
+        42
+      ],
+      "origin": [
+        110,
+        42
+      ]
+    },
+    "UI009": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI009_Interaction_Icon.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ]
+    },
+    "UI010": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI010_Interaction_Prompt.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ]
+    },
+    "UI011": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI011_Room_Title_Panel.png",
+      "pixel_size": [
+        360,
+        72
+      ],
+      "origin": [
+        180,
+        72
+      ]
+    },
+    "UI012": {
+      "status": "ready",
+      "texture_path": "res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ]
+    }
+  }
+}
