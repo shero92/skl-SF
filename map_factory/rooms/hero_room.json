@@ -432,5 +432,29 @@
         "The ocean stretches beyond the ancient arch."
       ]
     }
+  ],
+  "npcs": [
+    {
+      "instance_id": "ForestGuardianA",
+      "name": "Forest Guardian",
+      "x": 550,
+      "y": 741,
+      "radius": 92,
+      "lines": [
+        "Welcome to our sanctuary.",
+        "The sea protects this ancient place."
+      ]
+    },
+    {
+      "instance_id": "ForestGuardianB",
+      "name": "Forest Guardian",
+      "x": 1000,
+      "y": 790,
+      "radius": 92,
+      "lines": [
+        "The old stone arch holds many memories.",
+        "We should prepare before the next journey."
+      ]
+    }
   ]
 }
