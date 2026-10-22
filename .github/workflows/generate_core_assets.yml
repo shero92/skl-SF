@@ -1,0 +1,30 @@
+name: Generate first-pass PNG parts
+on:
+  push:
+    paths:
+      - "tools/generate_core_assets.py"
+      - ".github/workflows/generate_core_assets.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate actual transparent PNG files
+        run: python tools/generate_core_assets.py
+      - name: Commit generated PNGs and catalog statuses
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map_factory/parts map_factory/metadata/asset_index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate 48 independent transparent PNG asset files"
+            git push
+          fi
