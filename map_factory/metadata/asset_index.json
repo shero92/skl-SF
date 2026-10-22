@@ -2,7 +2,7 @@
   "version": 1,
   "asset_count": 218,
   "grid_size": 48,
-  "asset_status_note": "All assets are planned. PNGs have not yet been produced or uploaded.",
+  "asset_status_note": "48 generated independent PNG files are present: 22 floors, 16 shadows and 10 UI elements. Floor/UI drafts need visual QA. The other 170 entries are planned; no PNGs present.",
   "assets": [
     {
       "id": "F001",
@@ -8973,5 +8973,6 @@
       "source": "procedural_starter_v1"
     }
   ],
-  "note": "Generated floor/UI drafts need art QA; PNGs are real independent textures. Unprocessed items remain planned."
+  "note": "Generated floor/UI drafts need art QA; PNGs are real independent textures. Unprocessed items remain planned.",
+  "generated_png_count": 48
 }
