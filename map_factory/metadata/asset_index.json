@@ -1,7 +1,7 @@
 {
   "version": 2,
   "asset_count": 218,
-  "extracted_count": 161,
+  "extracted_count": 175,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
   "assets": [
@@ -8688,14 +8688,14 @@
       "category": "characters",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/characters/CH001_Hero_Idle_Down.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        288,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -8710,10 +8710,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -8721,7 +8721,18 @@
         "idle",
         "down"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 2,
+      "fps": 2,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH002",
@@ -8729,14 +8740,14 @@
       "category": "characters",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/characters/CH002_Hero_Idle_Up.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        288,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -8751,10 +8762,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -8762,7 +8773,18 @@
         "idle",
         "up"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 2,
+      "fps": 2,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH003",
@@ -8770,14 +8792,14 @@
       "category": "characters",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/characters/CH003_Hero_Idle_Left.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        288,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -8792,10 +8814,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -8803,7 +8825,18 @@
         "idle",
         "left"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 2,
+      "fps": 2,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH004",
@@ -8811,14 +8844,14 @@
       "category": "characters",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/characters/CH004_Hero_Idle_Right.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        288,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -8833,10 +8866,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -8844,7 +8877,18 @@
         "idle",
         "right"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 2,
+      "fps": 2,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH005",
@@ -8852,14 +8896,14 @@
       "category": "characters",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/characters/CH005_Hero_Walk_Down.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        576,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -8874,10 +8918,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -8885,7 +8929,18 @@
         "walk",
         "down"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 4,
+      "fps": 7,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH006",
@@ -8893,14 +8948,14 @@
       "category": "characters",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/characters/CH006_Hero_Walk_Up.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        576,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -8915,10 +8970,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -8926,7 +8981,18 @@
         "walk",
         "up"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 4,
+      "fps": 7,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH007",
@@ -8934,14 +9000,14 @@
       "category": "characters",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/characters/CH007_Hero_Walk_Left.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        576,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -8956,10 +9022,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -8967,7 +9033,18 @@
         "walk",
         "left"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 4,
+      "fps": 7,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH008",
@@ -8975,14 +9052,14 @@
       "category": "characters",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/characters/CH008_Hero_Walk_Right.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        576,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -8997,10 +9074,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -9008,7 +9085,18 @@
         "walk",
         "right"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 4,
+      "fps": 7,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH009",
@@ -9016,14 +9104,14 @@
       "category": "characters",
       "subtype": "companion",
       "texture_path": "res://map_factory/parts/characters/CH009_Companion_Idle.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        288,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -9038,17 +9126,28 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
         "companion",
         "idle"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 2,
+      "fps": 2,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH010",
@@ -9056,14 +9155,14 @@
       "category": "characters",
       "subtype": "companion",
       "texture_path": "res://map_factory/parts/characters/CH010_Companion_Walk.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        576,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -9078,17 +9177,28 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
         "companion",
         "walk"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 4,
+      "fps": 7,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH011",
@@ -9096,14 +9206,14 @@
       "category": "characters",
       "subtype": "npc",
       "texture_path": "res://map_factory/parts/characters/CH011_NPC_Fairy_Green_Idle.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        288,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -9118,10 +9228,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -9130,7 +9240,18 @@
         "green",
         "idle"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 2,
+      "fps": 2,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "CH012",
@@ -9138,14 +9259,14 @@
       "category": "characters",
       "subtype": "npc",
       "texture_path": "res://map_factory/parts/characters/CH012_NPC_Fairy_Green_Walk.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        576,
+        192
       ],
       "origin": [
-        32,
-        64
+        72,
+        188
       ],
       "collision": {
         "enabled": false,
@@ -9160,10 +9281,10 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "character",
+        "opacity": 0.4,
+        "offset_x": 0,
+        "offset_y": -3
       },
       "tags": [
         "characters",
@@ -9172,7 +9293,18 @@
         "green",
         "walk"
       ],
-      "reusable": true
+      "reusable": true,
+      "frame_size": [
+        144,
+        192
+      ],
+      "animation_frames": 4,
+      "fps": 7,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent original pixel-art animation; visual QA pending."
     },
     {
       "id": "UI001",
@@ -9455,14 +9587,14 @@
       "category": "ui",
       "subtype": "hero",
       "texture_path": "res://map_factory/parts/ui/UI007_Hero_Portrait.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        272,
+        320
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -9477,17 +9609,19 @@
       },
       "y_sort": false,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "none"
       },
       "tags": [
         "ui",
         "hero",
         "portrait"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent portrait; visual QA pending."
     },
     {
       "id": "UI008",
@@ -9495,14 +9629,14 @@
       "category": "ui",
       "subtype": "fairy",
       "texture_path": "res://map_factory/parts/ui/UI008_Fairy_Portrait.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        272,
+        320
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -9517,17 +9651,19 @@
       },
       "y_sort": false,
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "none"
       },
       "tags": [
         "ui",
         "fairy",
         "portrait"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_pixel_art",
+        "generator": "tools/generate_character_art.py"
+      },
+      "qa_notes": "Transparent portrait; visual QA pending."
     },
     {
       "id": "UI009",

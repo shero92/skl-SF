@@ -193,26 +193,26 @@ S013,shadows,Shadow Wall Base,needs_cleanup,res://map_factory/parts/shadows/S013
 S014,shadows,Shadow Wall Corner,needs_cleanup,res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png
 S015,shadows,Shadow Stairs,needs_cleanup,res://map_factory/parts/shadows/S015_Shadow_Stairs.png
 S016,shadows,Shadow Soft Diagonal,needs_cleanup,res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png
-CH001,characters,Hero Idle Down,planned,res://map_factory/parts/characters/CH001_Hero_Idle_Down.png
-CH002,characters,Hero Idle Up,planned,res://map_factory/parts/characters/CH002_Hero_Idle_Up.png
-CH003,characters,Hero Idle Left,planned,res://map_factory/parts/characters/CH003_Hero_Idle_Left.png
-CH004,characters,Hero Idle Right,planned,res://map_factory/parts/characters/CH004_Hero_Idle_Right.png
-CH005,characters,Hero Walk Down,planned,res://map_factory/parts/characters/CH005_Hero_Walk_Down.png
-CH006,characters,Hero Walk Up,planned,res://map_factory/parts/characters/CH006_Hero_Walk_Up.png
-CH007,characters,Hero Walk Left,planned,res://map_factory/parts/characters/CH007_Hero_Walk_Left.png
-CH008,characters,Hero Walk Right,planned,res://map_factory/parts/characters/CH008_Hero_Walk_Right.png
-CH009,characters,Companion Idle,planned,res://map_factory/parts/characters/CH009_Companion_Idle.png
-CH010,characters,Companion Walk,planned,res://map_factory/parts/characters/CH010_Companion_Walk.png
-CH011,characters,NPC Fairy Green Idle,planned,res://map_factory/parts/characters/CH011_NPC_Fairy_Green_Idle.png
-CH012,characters,NPC Fairy Green Walk,planned,res://map_factory/parts/characters/CH012_NPC_Fairy_Green_Walk.png
+CH001,characters,Hero Idle Down,needs_cleanup,res://map_factory/parts/characters/CH001_Hero_Idle_Down.png
+CH002,characters,Hero Idle Up,needs_cleanup,res://map_factory/parts/characters/CH002_Hero_Idle_Up.png
+CH003,characters,Hero Idle Left,needs_cleanup,res://map_factory/parts/characters/CH003_Hero_Idle_Left.png
+CH004,characters,Hero Idle Right,needs_cleanup,res://map_factory/parts/characters/CH004_Hero_Idle_Right.png
+CH005,characters,Hero Walk Down,needs_cleanup,res://map_factory/parts/characters/CH005_Hero_Walk_Down.png
+CH006,characters,Hero Walk Up,needs_cleanup,res://map_factory/parts/characters/CH006_Hero_Walk_Up.png
+CH007,characters,Hero Walk Left,needs_cleanup,res://map_factory/parts/characters/CH007_Hero_Walk_Left.png
+CH008,characters,Hero Walk Right,needs_cleanup,res://map_factory/parts/characters/CH008_Hero_Walk_Right.png
+CH009,characters,Companion Idle,needs_cleanup,res://map_factory/parts/characters/CH009_Companion_Idle.png
+CH010,characters,Companion Walk,needs_cleanup,res://map_factory/parts/characters/CH010_Companion_Walk.png
+CH011,characters,NPC Fairy Green Idle,needs_cleanup,res://map_factory/parts/characters/CH011_NPC_Fairy_Green_Idle.png
+CH012,characters,NPC Fairy Green Walk,needs_cleanup,res://map_factory/parts/characters/CH012_NPC_Fairy_Green_Walk.png
 UI001,ui,Dialogue Panel Background,needs_cleanup,res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png
 UI002,ui,Dialogue Panel Border,needs_cleanup,res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png
 UI003,ui,Dialogue Nameplate,needs_cleanup,res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png
 UI004,ui,Dialogue Portrait Frame,needs_cleanup,res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png
 UI005,ui,Dialogue Next Arrow,needs_cleanup,res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png
 UI006,ui,Dialogue Choice Selector,needs_cleanup,res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png
-UI007,ui,Hero Portrait,planned,res://map_factory/parts/ui/UI007_Hero_Portrait.png
-UI008,ui,Fairy Portrait,planned,res://map_factory/parts/ui/UI008_Fairy_Portrait.png
+UI007,ui,Hero Portrait,needs_cleanup,res://map_factory/parts/ui/UI007_Hero_Portrait.png
+UI008,ui,Fairy Portrait,needs_cleanup,res://map_factory/parts/ui/UI008_Fairy_Portrait.png
 UI009,ui,Interaction Icon,needs_cleanup,res://map_factory/parts/ui/UI009_Interaction_Icon.png
 UI010,ui,Interaction Prompt,needs_cleanup,res://map_factory/parts/ui/UI010_Interaction_Prompt.png
 UI011,ui,Room Title Panel,needs_cleanup,res://map_factory/parts/ui/UI011_Room_Title_Panel.png

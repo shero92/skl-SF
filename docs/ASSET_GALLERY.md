@@ -10,6 +10,12 @@ Draft art is not approved until a person checks native pixel detail, clean alpha
 
 **12 PNGs** | Actual files: [map_factory/parts/architecture](../map_factory/parts/architecture)
 
+## Characters
+
+![characters sprites](previews/characters.png)
+
+**12 PNGs** | Actual files: [map_factory/parts/characters](../map_factory/parts/characters)
+
 ## Decor
 
 ![decor sprites](previews/decor.png)
@@ -56,7 +62,7 @@ Draft art is not approved until a person checks native pixel detail, clean alpha
 
 ![ui sprites](previews/ui.png)
 
-**10 PNGs** | Actual files: [map_factory/parts/ui](../map_factory/parts/ui)
+**12 PNGs** | Actual files: [map_factory/parts/ui](../map_factory/parts/ui)
 
 ## Vegetation
 
