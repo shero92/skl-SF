@@ -1,0 +1,42 @@
+name: Import map asset ZIP
+
+on:
+  push:
+    paths:
+      - "map_factory/incoming/*.zip"
+      - "tools/import_asset_pack.py"
+      - ".github/workflows/import_asset_pack.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import_assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install validation tool
+        run: python -m pip install "Pillow>=10,<13"
+      - name: Import ZIP packs
+        shell: bash
+        run: |
+          for archive in map_factory/incoming/*.zip; do
+            if [ -f "$archive" ]; then
+              python tools/import_asset_pack.py "$archive"
+            fi
+          done
+      - name: Commit separated PNGs and updated metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A map_factory/parts map_factory/candidates map_factory/metadata
+          if ! git diff --cached --quiet; then
+            git commit -m "Import independent sprite PNGs and stage quality candidates"
+            git push
+          fi
