@@ -1,9 +1,9 @@
 {
   "version": 2,
   "asset_count": 218,
-  "extracted_count": 152,
+  "extracted_count": 161,
   "grid_size": 48,
-  "status_note": "Only ready means clean first-pass. needs_cleanup images have no QA and may contain crop artifacts/duplication. planned PNG paths are absent.",
+  "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
   "assets": [
     {
       "id": "F001",
@@ -103,10 +103,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F003_Stone_Floor_Worn.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -136,7 +136,10 @@
         "floor",
         "worn"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F004",
@@ -144,10 +147,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F004_Stone_Floor_Light.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -177,7 +180,10 @@
         "floor",
         "light"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F005",
@@ -185,10 +191,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F005_Stone_Floor_Dark.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -218,7 +224,10 @@
         "floor",
         "dark"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F006",
@@ -273,10 +282,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -307,7 +316,10 @@
         "edge",
         "s"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F008",
@@ -315,10 +327,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -349,7 +361,10 @@
         "edge",
         "e"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F009",
@@ -357,10 +372,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -391,7 +406,10 @@
         "edge",
         "w"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F010",
@@ -446,10 +464,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -480,7 +498,10 @@
         "corner",
         "ne"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F012",
@@ -488,10 +509,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -522,7 +543,10 @@
         "corner",
         "sw"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F013",
@@ -530,10 +554,10 @@
       "category": "floors",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        48,
-        48
+        64,
+        64
       ],
       "origin": [
         0,
@@ -564,7 +588,10 @@
         "corner",
         "se"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "existing_unreviewed_png"
+      }
     },
     {
       "id": "F014",
@@ -7933,7 +7960,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -7979,7 +8006,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8025,7 +8052,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8071,7 +8098,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S004_Shadow_Character.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8116,7 +8143,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S005_Shadow_Bed.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8161,7 +8188,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8206,7 +8233,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S007_Shadow_Chair.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8251,7 +8278,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8296,7 +8323,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S009_Shadow_Chest.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8341,7 +8368,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8386,7 +8413,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8432,7 +8459,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S012_Shadow_Column_Long.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8478,7 +8505,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8524,7 +8551,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8570,7 +8597,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -8615,7 +8642,7 @@
       "category": "shadows",
       "subtype": "shadow",
       "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         240,
         128
@@ -9153,7 +9180,7 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         860,
         168
@@ -9199,7 +9226,7 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         380,
         105
@@ -9245,7 +9272,7 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         250,
         52
@@ -9290,7 +9317,7 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         142,
         160
@@ -9336,7 +9363,7 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         64,
         64
@@ -9382,7 +9409,7 @@
       "category": "ui",
       "subtype": "dialogue",
       "texture_path": "res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         220,
         42
@@ -9508,7 +9535,7 @@
       "category": "ui",
       "subtype": "interaction",
       "texture_path": "res://map_factory/parts/ui/UI009_Interaction_Icon.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         64,
         64
@@ -9553,7 +9580,7 @@
       "category": "ui",
       "subtype": "interaction",
       "texture_path": "res://map_factory/parts/ui/UI010_Interaction_Prompt.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         64,
         64
@@ -9598,7 +9625,7 @@
       "category": "ui",
       "subtype": "room",
       "texture_path": "res://map_factory/parts/ui/UI011_Room_Title_Panel.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         360,
         72
@@ -9644,7 +9671,7 @@
       "category": "ui",
       "subtype": "ui",
       "texture_path": "res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png",
-      "status": "ready",
+      "status": "needs_cleanup",
       "pixel_size": [
         64,
         64

@@ -1,0 +1,3510 @@
+{
+  "summary": {
+    "total": 218,
+    "existing": 161,
+    "needs_cleanup": 161,
+    "missing": 57
+  },
+  "by_category": {
+    "floors": {
+      "existing": 22,
+      "missing": 0
+    },
+    "walls": {
+      "existing": 16,
+      "missing": 2
+    },
+    "architecture": {
+      "existing": 12,
+      "missing": 4
+    },
+    "stairs": {
+      "existing": 10,
+      "missing": 4
+    },
+    "environment": {
+      "existing": 8,
+      "missing": 10
+    },
+    "furniture": {
+      "existing": 13,
+      "missing": 9
+    },
+    "objects": {
+      "existing": 19,
+      "missing": 7
+    },
+    "vegetation": {
+      "existing": 24,
+      "missing": 0
+    },
+    "decor": {
+      "existing": 11,
+      "missing": 7
+    },
+    "shadows": {
+      "existing": 16,
+      "missing": 0
+    },
+    "ui": {
+      "existing": 10,
+      "missing": 2
+    },
+    "characters": {
+      "existing": 0,
+      "missing": 12
+    }
+  },
+  "assets": [
+    {
+      "id": "F001",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        162,
+        161
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        161,
+        160
+      ],
+      "bytes": 52088,
+      "sha256": "60ac5e5f398faec06ffbcd9575f4e9b3b6febbf560720f69e507a91c28206d06",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F002",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        161,
+        161
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        160,
+        161
+      ],
+      "bytes": 54195,
+      "sha256": "f5066d565630b7a2aee2584861193b7273da6a00ba87eb21206745ba4e184b7e",
+      "warnings": []
+    },
+    {
+      "id": "F003",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2673,
+      "sha256": "59bb9a5c4f021cdf2aa383758d408bfa1cd4163b75f50b699a8a0a872fe20901",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F004",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2641,
+      "sha256": "ad274c6b4b4f2e32b15a97cad162d33f8fe048c91c7c37aaa283735388037458",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F005",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2682,
+      "sha256": "a9c88c549695723fb62f70eabe643e6c2df2b8ee64315842ac91483f767b9c07",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F006",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        151,
+        161
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        150,
+        160
+      ],
+      "bytes": 49928,
+      "sha256": "657dd29a8077cf9ec53d4432aaf5674259e4c001c15ffadfac9c6f4a9b340a03",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F007",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2496,
+      "sha256": "1abaed0f5957435794d6839051afaa8a2e42e37f272252e72ce472b68c798504",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F008",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2518,
+      "sha256": "d362aa9794da0eb36c120a4b57cebd3a6a96e8c2b75bc91907a110cc811aa06e",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F009",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2510,
+      "sha256": "37f9d9c1fc98e5823e9a24d32a37057b97d90bff9e6bdb5f04c3f6c876a6f2bd",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F010",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        166,
+        161
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        165,
+        160
+      ],
+      "bytes": 49297,
+      "sha256": "0cc7e994f69501a76ca9a5abbfcbc4c9a150904b7a0bcc252650234e16690fa9",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F011",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2362,
+      "sha256": "a2a991d6c2b550f294b36bbc81bae0b53b77dc97bcef2c40408dc7653bad1554",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F012",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2378,
+      "sha256": "b29be4364fa58609f4ce0969fb9c5cebb90af4c4464e237c1b741a84ebca5a82",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F013",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "bytes": 2357,
+      "sha256": "59bd8f6e5981f7a4037cf242fbb480639860d1663e5dc9ecfaf3fbbea5ab663d",
+      "warnings": [
+        "metadata_was_planned_but_png_exists",
+        "metadata_dimensions_corrected"
+      ]
+    },
+    {
+      "id": "F014",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        473,
+        464
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        473,
+        464
+      ],
+      "bytes": 307182,
+      "sha256": "bbc1b47205213984808bf4644d915c8ee415f30fcdaacc33cf47e6f3bd9b3fa2",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F015",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        245,
+        123
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        244,
+        123
+      ],
+      "bytes": 47185,
+      "sha256": "7efe1283dc6447ba8700c4137c135c286c9081df1b247225d0db304902286958",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F016",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        239,
+        122
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        238,
+        122
+      ],
+      "bytes": 47186,
+      "sha256": "67cfcbf88a36be91013a34273ad641f6d193b9c15668f0e82f9cec4c1d882197",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F017",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        109,
+        193
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        109,
+        193
+      ],
+      "bytes": 34251,
+      "sha256": "872d59a2e2241263c3fdb9e46390ab036bb2bbaf87d5493fa0fcc5e4814d0600",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F018",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        102,
+        185
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        101,
+        185
+      ],
+      "bytes": 33378,
+      "sha256": "abd93d76bd0cdb28906c8ad07ed20443eb14c760ebccaa906cfb698c7863ec4b",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F019",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        127
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        126,
+        127
+      ],
+      "bytes": 26741,
+      "sha256": "a9666feac657e30312c519a75643500c04827714fee3592dc7cff4d578f5130b",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F020",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        134,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        133,
+        128
+      ],
+      "bytes": 28393,
+      "sha256": "10e4b6bb72cd8c18ced0576187847f17f2f61b372e2e0b6caa5d1bf661354422",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F021",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        128,
+        119
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        127,
+        119
+      ],
+      "bytes": 27663,
+      "sha256": "68cc81dbd69dd7e116dc9ac038e0c5edea00c8f258f69c9da72234d407c0d39d",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "F022",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        131,
+        119
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        130,
+        119
+      ],
+      "bytes": 26652,
+      "sha256": "4c0794f94dc3b48dfac3e896f96bf4f024b6f86091c5c8fab9cc5de815c78560",
+      "warnings": [
+        "non_square_floor_tile_or_decal"
+      ]
+    },
+    {
+      "id": "W001",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        202,
+        239
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        202,
+        239
+      ],
+      "bytes": 105381,
+      "sha256": "1ee2228973f3864314d8584129e4a53189510a71ecc03a35905771e7d6b98f36",
+      "warnings": []
+    },
+    {
+      "id": "W002",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        165,
+        189
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        164,
+        189
+      ],
+      "bytes": 74461,
+      "sha256": "3ea5413058d4c90d4ccb5aad7f2242238c29cdd473a854b80156a9f7647003ff",
+      "warnings": []
+    },
+    {
+      "id": "W003",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        134,
+        153
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        134,
+        153
+      ],
+      "bytes": 50038,
+      "sha256": "c898512f6aced26558c749c4bdfc7942e8645d0b2ec01a9af06640128290d625",
+      "warnings": []
+    },
+    {
+      "id": "W004",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        193,
+        112
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        193,
+        112
+      ],
+      "bytes": 56125,
+      "sha256": "d48d83badf489ff89c25110b89938df13323c8647e68ad5d7de9176fda05c5e7",
+      "warnings": []
+    },
+    {
+      "id": "W005",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        197,
+        229
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        197,
+        229
+      ],
+      "bytes": 112035,
+      "sha256": "fe7c1c0b026307ba5e67bf5aebc7961f3f2f27ef3105d0885362465751de3f86",
+      "warnings": []
+    },
+    {
+      "id": "W006",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        180,
+        239
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        180,
+        239
+      ],
+      "bytes": 109300,
+      "sha256": "e88a55222cdd9b4c6986882a9286a9ca8938da1641e00e5c5b2d7809b81c7908",
+      "warnings": []
+    },
+    {
+      "id": "W007",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        157,
+        250
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        157,
+        250
+      ],
+      "bytes": 86832,
+      "sha256": "042aece9ed164b5a223b4109e6df1baa59363720b374eff9896a1142fafe928f",
+      "warnings": []
+    },
+    {
+      "id": "W008",
+      "category": "walls",
+      "status": "planned"
+    },
+    {
+      "id": "W009",
+      "category": "walls",
+      "status": "planned"
+    },
+    {
+      "id": "W010",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        166,
+        87
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        166,
+        87
+      ],
+      "bytes": 39913,
+      "sha256": "c3a5d38099c372f6965820133356942d4a541303ae6e8628c44ae7bb4f45eed0",
+      "warnings": []
+    },
+    {
+      "id": "W011",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        99
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        126,
+        99
+      ],
+      "bytes": 31715,
+      "sha256": "36a19f573df060c856593dbf3d7dd4e2e4191eabbe2e243e706d28a3024b7f1e",
+      "warnings": []
+    },
+    {
+      "id": "W012",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        169,
+        91
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        169,
+        91
+      ],
+      "bytes": 42263,
+      "sha256": "aaae443af0e88cef25afab672173c7be70362998b779f2d0269135f60e2f5fd3",
+      "warnings": []
+    },
+    {
+      "id": "W013",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        146,
+        92
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        146,
+        92
+      ],
+      "bytes": 34036,
+      "sha256": "daa111d44d35690eb5775b61a927d8fb072e1789694a9690af74524573349f83",
+      "warnings": []
+    },
+    {
+      "id": "W014",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        178,
+        245
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        177,
+        245
+      ],
+      "bytes": 101587,
+      "sha256": "8a0a3724c428ea92def1a68b3b4fb247951a7214ddcc1adc300016dc57644daa",
+      "warnings": []
+    },
+    {
+      "id": "W015",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        146,
+        157
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        145,
+        157
+      ],
+      "bytes": 56136,
+      "sha256": "3c74499b59bba390746ffa6f2d7337344009fbba38a49760fcad9c322dd12e29",
+      "warnings": []
+    },
+    {
+      "id": "W016",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        201,
+        235
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        200,
+        235
+      ],
+      "bytes": 115786,
+      "sha256": "8b41a781b77607d2d44380b354dc457d51e12c1bbc53f9281ed2597e2cb48cdc",
+      "warnings": []
+    },
+    {
+      "id": "W017",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        191,
+        118
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        191,
+        118
+      ],
+      "bytes": 58401,
+      "sha256": "1ad6cc921458cf8e54a9d1d35ee901a31e441c4929fd377a140567a0ffff0e76",
+      "warnings": []
+    },
+    {
+      "id": "W018",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        107,
+        101
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        107,
+        101
+      ],
+      "bytes": 28105,
+      "sha256": "a0213a0f8cc4ce1b7defa50ba80df348f83a1d21dd92cd622829eb15b30e6a6d",
+      "warnings": []
+    },
+    {
+      "id": "A001",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        323,
+        198
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        323,
+        198
+      ],
+      "bytes": 114732,
+      "sha256": "3e7658fd4cd1878030408c2c4ce30d332ce633e044390e0dce48a5968fb66ed9",
+      "warnings": []
+    },
+    {
+      "id": "A002",
+      "category": "architecture",
+      "status": "planned"
+    },
+    {
+      "id": "A003",
+      "category": "architecture",
+      "status": "planned"
+    },
+    {
+      "id": "A004",
+      "category": "architecture",
+      "status": "planned"
+    },
+    {
+      "id": "A005",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        328,
+        283
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        328,
+        283
+      ],
+      "bytes": 174205,
+      "sha256": "0c9450d3a9ec8e9fa445007f9c4976d18a7d4c42122d1d09ad3d1b68433176bb",
+      "warnings": []
+    },
+    {
+      "id": "A006",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        308,
+        196
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        307,
+        196
+      ],
+      "bytes": 112868,
+      "sha256": "27352a8f4402da13bc2d5ee74c087138b5a07edfead39d8a941a71a7781ba05f",
+      "warnings": []
+    },
+    {
+      "id": "A007",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        104,
+        271
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        103,
+        271
+      ],
+      "bytes": 62540,
+      "sha256": "43aaf5b59e20a35e69a00112d8314f6243ed9c124f2114a07b6c91694348113a",
+      "warnings": []
+    },
+    {
+      "id": "A008",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        101,
+        81
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        100,
+        81
+      ],
+      "bytes": 18793,
+      "sha256": "0bc9cb72ebbeea7737cb73731ea17f6597a472e223e4cd2a3bc082334e9edace",
+      "warnings": []
+    },
+    {
+      "id": "A009",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        97,
+        240
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        96,
+        240
+      ],
+      "bytes": 54061,
+      "sha256": "48827e7d572f94809a72721afc5f5b71de528ce3f0a024cfa08ebe589c3180e7",
+      "warnings": []
+    },
+    {
+      "id": "A010",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        99,
+        178
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        99,
+        178
+      ],
+      "bytes": 43871,
+      "sha256": "3b87e9b7a57778cd88c8cb2d483abc4ea1d193c2a8df08b6626cde0dcac18b54",
+      "warnings": []
+    },
+    {
+      "id": "A011",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        112,
+        218
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        111,
+        218
+      ],
+      "bytes": 57781,
+      "sha256": "e57a9e116a5dea9f3a7de6cc8fbf6da2a4b3bcdbaca31255f5f990b1e8e84ba2",
+      "warnings": []
+    },
+    {
+      "id": "A012",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        103,
+        272
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        102,
+        272
+      ],
+      "bytes": 62492,
+      "sha256": "c541548fd31a73053141c1758032efea217a5ed8c1922829221a5fb113a5c3a7",
+      "warnings": []
+    },
+    {
+      "id": "A013",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        71,
+        103
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        71,
+        103
+      ],
+      "bytes": 16959,
+      "sha256": "ea546a8274434ec3b369c88b242cf7dcb78e67eb1812c7f96cdc86843bf88fec",
+      "warnings": []
+    },
+    {
+      "id": "A014",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        95,
+        114
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        95,
+        114
+      ],
+      "bytes": 21984,
+      "sha256": "3947a46cd75e9bdbab03e298dcd34c7faa982c8062993d7e942393f4454ac39a",
+      "warnings": []
+    },
+    {
+      "id": "A015",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        196,
+        233
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        196,
+        233
+      ],
+      "bytes": 113200,
+      "sha256": "898387f0a7f4bd77b7653fcaccc99aa150ebc52c9c93a2f079a521b662ab3670",
+      "warnings": []
+    },
+    {
+      "id": "A016",
+      "category": "architecture",
+      "status": "planned"
+    },
+    {
+      "id": "ST001",
+      "category": "stairs",
+      "status": "planned"
+    },
+    {
+      "id": "ST002",
+      "category": "stairs",
+      "status": "planned"
+    },
+    {
+      "id": "ST003",
+      "category": "stairs",
+      "status": "planned"
+    },
+    {
+      "id": "ST004",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        115,
+        105
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        115,
+        105
+      ],
+      "bytes": 30694,
+      "sha256": "4ad2cfc5a23866b096948e8624b0c84c0e6f0a6bb8a70317b8d2ef04210d29c5",
+      "warnings": []
+    },
+    {
+      "id": "ST005",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        117,
+        105
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        117,
+        105
+      ],
+      "bytes": 30867,
+      "sha256": "04a2e4bee53d9fd0e387f87d49793b8655f8057ec7215596f69a4e951fb22ff4",
+      "warnings": []
+    },
+    {
+      "id": "ST006",
+      "category": "stairs",
+      "status": "planned"
+    },
+    {
+      "id": "ST007",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        73,
+        145
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        72,
+        145
+      ],
+      "bytes": 25663,
+      "sha256": "ebd8b82ec90522e257350daf07327d840dc33b286931d53acb7d46d579d0ece5",
+      "warnings": []
+    },
+    {
+      "id": "ST008",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        88,
+        146
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        87,
+        146
+      ],
+      "bytes": 29125,
+      "sha256": "ee6d3b98d5587aaab63f0947aa6a54d58d0dff5cb20b7e5c1cb76d0de99fc3cc",
+      "warnings": []
+    },
+    {
+      "id": "ST009",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        113,
+        112
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        113,
+        112
+      ],
+      "bytes": 17964,
+      "sha256": "093d1aecf1f4558d6e30bafbe058462da537a2b6cb066bf08d242c8338b99122",
+      "warnings": []
+    },
+    {
+      "id": "ST010",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        139,
+        115
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        139,
+        115
+      ],
+      "bytes": 24970,
+      "sha256": "775656f80c9749f6f2c5f2d7013bc798a9a04cf876e32885002dd142170f5a62",
+      "warnings": []
+    },
+    {
+      "id": "ST011",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        72,
+        110
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        72,
+        110
+      ],
+      "bytes": 18573,
+      "sha256": "f99d997f0eb70056899ac6bd3258976377ea3398a2bbefc99ebb4dd0a196a05d",
+      "warnings": []
+    },
+    {
+      "id": "ST012",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        90,
+        117
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        90,
+        117
+      ],
+      "bytes": 22380,
+      "sha256": "b0e76f0a10098f951e8a88add71600b213be37f5630b578291aee59bce007a25",
+      "warnings": []
+    },
+    {
+      "id": "ST013",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        185,
+        123
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        185,
+        123
+      ],
+      "bytes": 39112,
+      "sha256": "101031e4bc4f4456990728fd7bd80a62c6c73813a7298a8536f299899fd6b042",
+      "warnings": []
+    },
+    {
+      "id": "ST014",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        176,
+        92
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        175,
+        92
+      ],
+      "bytes": 35567,
+      "sha256": "5d637a3716ccfd89dfd33041b4a7c1626d024e210df2ec608f75f5c322b47f4d",
+      "warnings": []
+    },
+    {
+      "id": "E001",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        186,
+        176
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        186,
+        176
+      ],
+      "bytes": 81886,
+      "sha256": "666da5d3a0c7f8634699a9ab3f42266a363fc8d588abfbeed8ccb6fe9078b44d",
+      "warnings": []
+    },
+    {
+      "id": "E002",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        149,
+        179
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        149,
+        179
+      ],
+      "bytes": 67451,
+      "sha256": "ff6c6984ee58ffb00a29664831b670949ad6d2f2f93a0856ee902b3d65b1da5d",
+      "warnings": []
+    },
+    {
+      "id": "E003",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        146,
+        167
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        146,
+        167
+      ],
+      "bytes": 62893,
+      "sha256": "8ab3ee532c94e64a0c44e74819f343708b7dd909e50b0ca7cdaf48820a2a464c",
+      "warnings": []
+    },
+    {
+      "id": "E004",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        225,
+        181
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        225,
+        181
+      ],
+      "bytes": 106040,
+      "sha256": "981d8398e7e11fa90b5b5480aee0942feabe041d560490db480318a8296634b8",
+      "warnings": []
+    },
+    {
+      "id": "E005",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        286,
+        186
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        286,
+        186
+      ],
+      "bytes": 133279,
+      "sha256": "c8c2f9d784bfb0f2fc9b4c7d51f3b5f90fc055b24d342a9672da4e252ff82237",
+      "warnings": []
+    },
+    {
+      "id": "E006",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        208,
+        178
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        208,
+        178
+      ],
+      "bytes": 93611,
+      "sha256": "417885c3acf5793ffe3b1a282afeebdef447efbe9c2aa9a14ef4bb7d54066aeb",
+      "warnings": []
+    },
+    {
+      "id": "E007",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        231,
+        188
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        231,
+        188
+      ],
+      "bytes": 109833,
+      "sha256": "abbe4b3f8c281c86df5396c193bc9350db640e85bf429b2ad1de7e55e131a6a4",
+      "warnings": []
+    },
+    {
+      "id": "E008",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        149,
+        180
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        149,
+        180
+      ],
+      "bytes": 67749,
+      "sha256": "1c95898be04aaaa22fc39d0178c451f533a781f9bb96fe8c8520e4288921dd12",
+      "warnings": []
+    },
+    {
+      "id": "E009",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E010",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E011",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E012",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E013",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E014",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E015",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E016",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E017",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "E018",
+      "category": "environment",
+      "status": "planned"
+    },
+    {
+      "id": "P001",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        296,
+        339
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        296,
+        339
+      ],
+      "bytes": 198547,
+      "sha256": "01d74df421f1716e15a1c32c495dacc5308a841887ca706d5d19ef699d4d4be8",
+      "warnings": []
+    },
+    {
+      "id": "P002",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "P003",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "P004",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "P005",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        238,
+        304
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        237,
+        304
+      ],
+      "bytes": 180712,
+      "sha256": "eae1d8c392f82109ed5be15482713a9c469d912faf00c059c574f5d7c3919695",
+      "warnings": []
+    },
+    {
+      "id": "P006",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "P007",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        151,
+        243
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        151,
+        242
+      ],
+      "bytes": 69118,
+      "sha256": "c4068ffe15ada5e15423463530cdb0d56a44d0fd66a537d7b8d08c779af8be6f",
+      "warnings": []
+    },
+    {
+      "id": "P008",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        392,
+        278
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        392,
+        278
+      ],
+      "bytes": 186213,
+      "sha256": "aacfcf11a900caee9e96ee8cfdcb714f132519db0a8cbf7c08fa94a07230c08e",
+      "warnings": []
+    },
+    {
+      "id": "P009",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        393,
+        275
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        392,
+        275
+      ],
+      "bytes": 185885,
+      "sha256": "1cf6319abc66287f903cff9c33e74e53dab720180ba6a49319a1b30cefd07852",
+      "warnings": []
+    },
+    {
+      "id": "P010",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        151,
+        110
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        150,
+        110
+      ],
+      "bytes": 26960,
+      "sha256": "77bb53022eab028d36fbff758552c922b4c10d94f0c7cadf57983c3a24b03f54",
+      "warnings": []
+    },
+    {
+      "id": "P011",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        140,
+        166
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        140,
+        166
+      ],
+      "bytes": 37387,
+      "sha256": "4f53842237cbf9575b35fc2d5139692612dee3ae50edec12c8cf42e111b813fe",
+      "warnings": []
+    },
+    {
+      "id": "P012",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        119,
+        115
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        119,
+        115
+      ],
+      "bytes": 26573,
+      "sha256": "ce0a897adbd2f919b103348831a16b809c44eda30d4c9a9513141ceba51fa0d2",
+      "warnings": []
+    },
+    {
+      "id": "P013",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "P014",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        296,
+        276
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        295,
+        276
+      ],
+      "bytes": 176952,
+      "sha256": "fa4c8234fa5ec3137ce65bba211f7410611f801e69e21c3481bd07bea47fa895",
+      "warnings": []
+    },
+    {
+      "id": "P015",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        248,
+        238
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        248,
+        238
+      ],
+      "bytes": 117309,
+      "sha256": "9499fd5120241bb58363b98d2d9fe3aee6e9b3626814b84853516dac5cbbb2c1",
+      "warnings": []
+    },
+    {
+      "id": "P016",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "P017",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        191,
+        157
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        190,
+        157
+      ],
+      "bytes": 65068,
+      "sha256": "bcf2938872137a8d475194a82b674aeabfe7029174018c64322d37a8bbfeeff0",
+      "warnings": []
+    },
+    {
+      "id": "P018",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "P019",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        158,
+        164
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        157,
+        163
+      ],
+      "bytes": 53121,
+      "sha256": "ae27a69bbdff3f4905f5c9732093f310c886ce70c40debfafb13f8c2ff89c1fb",
+      "warnings": []
+    },
+    {
+      "id": "P020",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        125
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        125,
+        125
+      ],
+      "bytes": 33445,
+      "sha256": "280678f0bf7072a6990502eb3d1b202fe92150843c8638b5a284ed40dfdf67c8",
+      "warnings": []
+    },
+    {
+      "id": "P021",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "P022",
+      "category": "furniture",
+      "status": "planned"
+    },
+    {
+      "id": "O001",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        165
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        126,
+        165
+      ],
+      "bytes": 43427,
+      "sha256": "421f7e56fad9ba30ad998cb782841665dee3295ae7074ae2c7384f1bb978655b",
+      "warnings": []
+    },
+    {
+      "id": "O002",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        85,
+        123
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        84,
+        123
+      ],
+      "bytes": 26407,
+      "sha256": "bf27bdb2775700d0dfc9b26cbab0491648b0cc67da928a4c7ad49b63c4b29c0a",
+      "warnings": []
+    },
+    {
+      "id": "O003",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        85,
+        110
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        84,
+        110
+      ],
+      "bytes": 23176,
+      "sha256": "7ad56d2a34791911da2c7d95730c4daad1f11c131096957822008c5268184520",
+      "warnings": []
+    },
+    {
+      "id": "O004",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        77,
+        90
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        76,
+        90
+      ],
+      "bytes": 15783,
+      "sha256": "1f85dca7d81fc30b75621e74285192d67bfe29c482dbe9429cc97656825957c7",
+      "warnings": []
+    },
+    {
+      "id": "O005",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        66,
+        85
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        65,
+        85
+      ],
+      "bytes": 13609,
+      "sha256": "364b07436cf6b6a0a7dde257c4a38bc079634aba87c095943ab4830d277587d4",
+      "warnings": []
+    },
+    {
+      "id": "O006",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        130,
+        105
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        129,
+        105
+      ],
+      "bytes": 29357,
+      "sha256": "f19955bf41baf53ab4608f00bb2833b0cb40fd1b2082d39216d57203896e1ed9",
+      "warnings": []
+    },
+    {
+      "id": "O007",
+      "category": "objects",
+      "status": "planned"
+    },
+    {
+      "id": "O008",
+      "category": "objects",
+      "status": "planned"
+    },
+    {
+      "id": "O009",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        196,
+        135
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        196,
+        135
+      ],
+      "bytes": 52093,
+      "sha256": "a9e1eaa8908d5d06c42e1caa43674cb7fff179b7d360bfc440c03fb874d5ff01",
+      "warnings": []
+    },
+    {
+      "id": "O010",
+      "category": "objects",
+      "status": "planned"
+    },
+    {
+      "id": "O011",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        122,
+        106
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        121,
+        106
+      ],
+      "bytes": 29206,
+      "sha256": "e6a406901006634e04c60644906bbc3e1e8c98d10a9cd5f3fc1cb59b7896639d",
+      "warnings": []
+    },
+    {
+      "id": "O012",
+      "category": "objects",
+      "status": "planned"
+    },
+    {
+      "id": "O013",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        147,
+        122
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        147,
+        121
+      ],
+      "bytes": 39718,
+      "sha256": "c90c50c5d22810a0f401e2e6844a37e25fed867f42fa40050d95a230c843b237",
+      "warnings": []
+    },
+    {
+      "id": "O014",
+      "category": "objects",
+      "status": "planned"
+    },
+    {
+      "id": "O015",
+      "category": "objects",
+      "status": "planned"
+    },
+    {
+      "id": "O016",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        153,
+        122
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        153,
+        121
+      ],
+      "bytes": 41016,
+      "sha256": "447553d32ed1098fa95b54b369fc0adf1986a7f72944c0878761cf7d085a0f02",
+      "warnings": []
+    },
+    {
+      "id": "O017",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        129,
+        106
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        129,
+        106
+      ],
+      "bytes": 26581,
+      "sha256": "419951186cf81b9a28b2d74b00ca74edb17d82669c1a3dfe416ac08fca4f3f28",
+      "warnings": []
+    },
+    {
+      "id": "O018",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        127,
+        132
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        127,
+        132
+      ],
+      "bytes": 29785,
+      "sha256": "adc18f5108948300fa3d35c35ffa46154800688c693890be6b96533ad35b209a",
+      "warnings": []
+    },
+    {
+      "id": "O019",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        151,
+        141
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        150,
+        141
+      ],
+      "bytes": 37376,
+      "sha256": "20099e8252ed786690984755cb0b74ed971832f9b0d5bf225c20cfb933763093",
+      "warnings": []
+    },
+    {
+      "id": "O020",
+      "category": "objects",
+      "status": "planned"
+    },
+    {
+      "id": "O021",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        123,
+        114
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        122,
+        113
+      ],
+      "bytes": 29805,
+      "sha256": "bfbee6f4e60f4a3a82e16dd798e937d9c41379b9e8f4db956da995f0c140a30c",
+      "warnings": []
+    },
+    {
+      "id": "O022",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        69,
+        77
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        69,
+        77
+      ],
+      "bytes": 12600,
+      "sha256": "a8e62d84f1cfce8cceb99ef6505f94e8ecbfddcd83354252ec44c1bc049511a2",
+      "warnings": []
+    },
+    {
+      "id": "O023",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        128,
+        123
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        127,
+        123
+      ],
+      "bytes": 33466,
+      "sha256": "1d6dfbd1810aa4ee82d8b5a6ee483807014918fcdb91e3f6788dd9992882db16",
+      "warnings": []
+    },
+    {
+      "id": "O024",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        66,
+        83
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        65,
+        83
+      ],
+      "bytes": 13314,
+      "sha256": "27b6604c7c405023f36cb487a8d4bab85802f4a4437589caa347eee6c59e4bcc",
+      "warnings": []
+    },
+    {
+      "id": "O025",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        140,
+        237
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        140,
+        237
+      ],
+      "bytes": 67293,
+      "sha256": "812d84fe6ec834cb3b29b9cabb333e3858c9323b70b4106cf8afae4f2295575c",
+      "warnings": []
+    },
+    {
+      "id": "O026",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        130,
+        108
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        129,
+        108
+      ],
+      "bytes": 29729,
+      "sha256": "a5160a38f16489ac6401d0049f707c529acaa49eeca81664b38763e553b9a1f0",
+      "warnings": []
+    },
+    {
+      "id": "V001",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        310,
+        249
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        310,
+        249
+      ],
+      "bytes": 165470,
+      "sha256": "a1d2287826b58a9755838f7cd5738ddab37fb0202fc3bbd7e7bb275af37178cc",
+      "warnings": []
+    },
+    {
+      "id": "V002",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        173,
+        217
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        172,
+        217
+      ],
+      "bytes": 75136,
+      "sha256": "bf8938707f9e886fe13afc435ffe16c353f337ff32afb2d0567f7923fcd52f9e",
+      "warnings": []
+    },
+    {
+      "id": "V003",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        133,
+        169
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        133,
+        169
+      ],
+      "bytes": 49603,
+      "sha256": "391dc5185acf1f7d3a5fcb2f1e1e7ae711479c655b13e6e5e6ff85b6b55c6cf4",
+      "warnings": []
+    },
+    {
+      "id": "V004",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        241,
+        168
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        241,
+        168
+      ],
+      "bytes": 84924,
+      "sha256": "09fb2965d8114fd67f29c93a9f89df6a4a43554bfedbb9914830162affa58077",
+      "warnings": []
+    },
+    {
+      "id": "V005",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        199,
+        154
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        199,
+        154
+      ],
+      "bytes": 44627,
+      "sha256": "0dc791433dd54edd795c722b32a8dea49d3d135919f5d92fa6f98098838e91b2",
+      "warnings": []
+    },
+    {
+      "id": "V006",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        179,
+        233
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        178,
+        233
+      ],
+      "bytes": 78300,
+      "sha256": "a566f545e855b43d55e3798e4de2318c5c328332543c62153255a44a1e118c64",
+      "warnings": []
+    },
+    {
+      "id": "V007",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        160,
+        173
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        160,
+        173
+      ],
+      "bytes": 61439,
+      "sha256": "ff6cdd565489bff27d2cc270291b4624662866b6c248e7ed17632dc48cf2e904",
+      "warnings": []
+    },
+    {
+      "id": "V008",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        130,
+        174
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        129,
+        174
+      ],
+      "bytes": 46190,
+      "sha256": "a81507b5b7d65d4bdeb16a171a727a3080406634b285428a9986e26cdd47fede",
+      "warnings": []
+    },
+    {
+      "id": "V009",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        169,
+        160
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        169,
+        160
+      ],
+      "bytes": 55158,
+      "sha256": "b142bf49587bbcb8e51610226bc3093b5865070ee2a5ba13fedccfa028ff4a10",
+      "warnings": []
+    },
+    {
+      "id": "V010",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        160,
+        176
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        160,
+        176
+      ],
+      "bytes": 62020,
+      "sha256": "497229e383f461d14abac5a4f9d6060b230ca8128b9f8f3c689e219af3575b49",
+      "warnings": []
+    },
+    {
+      "id": "V011",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        155,
+        146
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        155,
+        146
+      ],
+      "bytes": 46631,
+      "sha256": "6b7b4340f893cef730faf2cc036e9f0182acc79b3e6757da2cdc013aaa8d270f",
+      "warnings": []
+    },
+    {
+      "id": "V012",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        105,
+        115
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        104,
+        115
+      ],
+      "bytes": 28169,
+      "sha256": "a5e4eec606041df2b69706ac8f4fd9e07c75cde9308eaa4b68ff1c7882f91559",
+      "warnings": []
+    },
+    {
+      "id": "V013",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        187,
+        182
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        187,
+        182
+      ],
+      "bytes": 68272,
+      "sha256": "53c2f16c83903dae02e06c205c8df155cbce3ee300b1a330162b050eda014588",
+      "warnings": []
+    },
+    {
+      "id": "V014",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        155,
+        182
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        155,
+        182
+      ],
+      "bytes": 47990,
+      "sha256": "d86c2c4ab68fbd2f8e78055904c604b9635add187761d41f443baca83c385acd",
+      "warnings": []
+    },
+    {
+      "id": "V015",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        160,
+        131
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        160,
+        131
+      ],
+      "bytes": 42695,
+      "sha256": "471f3279a1268b29cddbf87c01c39b6faa110332d1ec2a702a931d3fd83ff006",
+      "warnings": []
+    },
+    {
+      "id": "V016",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        147,
+        166
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        147,
+        166
+      ],
+      "bytes": 54924,
+      "sha256": "e3ab7b9ec19208340efa07ce6c4ffa59fa07fad04822e943715ad88b11557457",
+      "warnings": []
+    },
+    {
+      "id": "V017",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        142,
+        171
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        142,
+        171
+      ],
+      "bytes": 54545,
+      "sha256": "cca9e8439536efcc16af1f3ba5eacaacd1933810bc37b27b1f713e58847c7b76",
+      "warnings": []
+    },
+    {
+      "id": "V018",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        167,
+        168
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        167,
+        168
+      ],
+      "bytes": 63211,
+      "sha256": "e4226d5663ef0007b3877ac5733a6d93cd66d45635cc11261683ed64947d0b27",
+      "warnings": []
+    },
+    {
+      "id": "V019",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        157,
+        152
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        157,
+        152
+      ],
+      "bytes": 54813,
+      "sha256": "c902034c8133b4e6b69e7382637d20a436b44d2eb70e71874a994c80bc04dbaf",
+      "warnings": []
+    },
+    {
+      "id": "V020",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        107,
+        108
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        107,
+        107
+      ],
+      "bytes": 23614,
+      "sha256": "7d8986933f5e644ef3cdca9c74456157a1842b6854115dcedc322a27182fd6c0",
+      "warnings": []
+    },
+    {
+      "id": "V021",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        174,
+        161
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        174,
+        161
+      ],
+      "bytes": 58165,
+      "sha256": "5c07b8307ceb25be6fb4866a04ac8ee931136886139f25e7574465ee34b57c41",
+      "warnings": []
+    },
+    {
+      "id": "V022",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        160,
+        111
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        160,
+        111
+      ],
+      "bytes": 40070,
+      "sha256": "92d2d9c05175542e4e63120c6ddf5a52702024499b6cd97b21b6ab7c90a0b0fd",
+      "warnings": []
+    },
+    {
+      "id": "V023",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        163,
+        95
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        163,
+        95
+      ],
+      "bytes": 36557,
+      "sha256": "cc8851daaf25e62ee00833046a79c138a9af254e1221bf648e93b55bf3a24c81",
+      "warnings": []
+    },
+    {
+      "id": "V024",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        165,
+        102
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        165,
+        102
+      ],
+      "bytes": 38785,
+      "sha256": "4540caee9b2f0fde8ab1ff1e26fde4f3088b7d47d46ebc1c1b9080c20a4fb06f",
+      "warnings": []
+    },
+    {
+      "id": "D001",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        154,
+        260
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        153,
+        260
+      ],
+      "bytes": 75773,
+      "sha256": "71e164b994d766fa6b21b4611388adc607b0049342f51e500e3367cf2324aba2",
+      "warnings": []
+    },
+    {
+      "id": "D002",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        239
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        126,
+        239
+      ],
+      "bytes": 57573,
+      "sha256": "de4af93091860c3e6a08927bea4fde0d9fa691a8726defbdf3892981b23b97b1",
+      "warnings": []
+    },
+    {
+      "id": "D003",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        102,
+        195
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        101,
+        195
+      ],
+      "bytes": 40536,
+      "sha256": "824f045b36ce467af827a72879a449b4a8f99d2d2f49e1c02a189fcabfa6131d",
+      "warnings": []
+    },
+    {
+      "id": "D004",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        84,
+        152
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        83,
+        152
+      ],
+      "bytes": 25363,
+      "sha256": "d8f95004756b2293c57a94b03477a8573ef4289bb98ef047c2e18be81dd7e74e",
+      "warnings": []
+    },
+    {
+      "id": "D005",
+      "category": "decor",
+      "status": "planned"
+    },
+    {
+      "id": "D006",
+      "category": "decor",
+      "status": "planned"
+    },
+    {
+      "id": "D007",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        73,
+        141
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        73,
+        141
+      ],
+      "bytes": 20653,
+      "sha256": "1beca6ffe525642f5a358e6dc5298f310d5b0d23433136f64bda765d6befb731",
+      "warnings": []
+    },
+    {
+      "id": "D008",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        164,
+        175
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        0,
+        164,
+        175
+      ],
+      "bytes": 55602,
+      "sha256": "56155e4e40de332144b154d2892240d9d786cd7963419ffbcfa90b4b5e77255e",
+      "warnings": []
+    },
+    {
+      "id": "D009",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        140,
+        166
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        140,
+        166
+      ],
+      "bytes": 50521,
+      "sha256": "da7d347402e8c4d8bf5289fd7746c87fef7bb79b9064463f16e35f9c1a299549",
+      "warnings": []
+    },
+    {
+      "id": "D010",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        65,
+        118
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        65,
+        118
+      ],
+      "bytes": 15513,
+      "sha256": "79f2b6eb9049c17d2672fc0158ea8ad39a76e30641985244b4cb707bff7f13c0",
+      "warnings": []
+    },
+    {
+      "id": "D011",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        66,
+        116
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        66,
+        116
+      ],
+      "bytes": 16826,
+      "sha256": "3fc3c1e171799f543e35c70facf8121f88d7eb18400d946bb0343f912beb5d31",
+      "warnings": []
+    },
+    {
+      "id": "D012",
+      "category": "decor",
+      "status": "planned"
+    },
+    {
+      "id": "D013",
+      "category": "decor",
+      "status": "planned"
+    },
+    {
+      "id": "D014",
+      "category": "decor",
+      "status": "planned"
+    },
+    {
+      "id": "D015",
+      "category": "decor",
+      "status": "planned"
+    },
+    {
+      "id": "D016",
+      "category": "decor",
+      "status": "planned"
+    },
+    {
+      "id": "D017",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        25,
+        147
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        24,
+        147
+      ],
+      "bytes": 8858,
+      "sha256": "c0ad30d6cf7ec94217a96c47e5d31acca57e0725a30f2c0a3964578c88c4ecb3",
+      "warnings": [
+        "small_native_resolution"
+      ]
+    },
+    {
+      "id": "D018",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        74,
+        147
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        74,
+        147
+      ],
+      "bytes": 11749,
+      "sha256": "fe137143776d351131a22bdd469a247e4d5c9338b57d6893e9c49f3d751ec628",
+      "warnings": []
+    },
+    {
+      "id": "S001",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        96,
+        55,
+        145,
+        74
+      ],
+      "bytes": 750,
+      "sha256": "760a602044accad7790d7c7bff808245ee9551511210f4caa2d2b8ef4ec3b11c",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S002",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        75,
+        49,
+        166,
+        80
+      ],
+      "bytes": 1094,
+      "sha256": "5cd8559a7c5f260c6cf7d6c58bc7afb809ab9f778da4eb4ef9f6b61cbdfb981e",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S003",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        35,
+        40,
+        206,
+        89
+      ],
+      "bytes": 1881,
+      "sha256": "68afec08ba8d2c41dfc351d79d8039edf1309ecef3ea9b446c703e69b3958b1b",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S004",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        81,
+        49,
+        160,
+        80
+      ],
+      "bytes": 1097,
+      "sha256": "40be4fbd290ce7e543fa12e31197d78c266c1e23a119f478d8af467c59043393",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S005",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        36,
+        240,
+        93
+      ],
+      "bytes": 2199,
+      "sha256": "6337d77a40c5fdacd56dfe4657d9187c071548d70b9bbe8f2e5cb111c6b740f2",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S006",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        21,
+        37,
+        220,
+        92
+      ],
+      "bytes": 2119,
+      "sha256": "a9e679297987d372255785b9e3bf8eb3b1c78267ed4686f4faad805f5a83aaa0",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S007",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        83,
+        50,
+        158,
+        79
+      ],
+      "bytes": 999,
+      "sha256": "22dd8a32c098b8311e63dc72b74ce1cb5f3f26c9fcda067f898fcd121334ce26",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S008",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        39,
+        240,
+        90
+      ],
+      "bytes": 2048,
+      "sha256": "b3aa76ef57089f65a03b526e912b164102c8e52f06a831996c042b06cb2f6cbc",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S009",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        73,
+        42,
+        168,
+        87
+      ],
+      "bytes": 1434,
+      "sha256": "9393c472f4bd3d488e1c8cddc09ce37deae0ecf0601eb8b6e9270dd7052154ef",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S010",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        85,
+        49,
+        156,
+        80
+      ],
+      "bytes": 1066,
+      "sha256": "eb28602c7fa4cf56bf23e643722acc6fdf81ae2fd2b914c578256d19f20d6ffd",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S011",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        66,
+        48,
+        215,
+        97
+      ],
+      "bytes": 1833,
+      "sha256": "238a503cfd14ddc9947f73e45db8f86176a76e52d924360c6cfb1053a8c27fd0",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S012",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        35,
+        35,
+        240,
+        110
+      ],
+      "bytes": 2525,
+      "sha256": "cffddb4c2ecdd5e7e70f8d85204a639a24b718b29755956c507845702c3fb71a",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S013",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        54,
+        240,
+        91
+      ],
+      "bytes": 1470,
+      "sha256": "fdaa2a58f398140dc0d4ecbb097201db24665c4c4ad38785bdc490f47f15ae7e",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S014",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        59,
+        37,
+        210,
+        108
+      ],
+      "bytes": 2331,
+      "sha256": "9fc450fa6ad30b803edc01576c8ac805a1c9cb324636d6f4cd332794b494b12e",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S015",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        11,
+        47,
+        240,
+        98
+      ],
+      "bytes": 2004,
+      "sha256": "7b6e04c645077e5eb15764a2011db53b6243b7b2e0a838eb5698c81d67d6a1a8",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "S016",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        37,
+        33,
+        240,
+        112
+      ],
+      "bytes": 2919,
+      "sha256": "3074cf88b36db05d3fef5fdd40e71576c39ef0176777c19db04a90fed1df009c",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "CH001",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH002",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH003",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH004",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH005",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH006",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH007",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH008",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH009",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH010",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH011",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "CH012",
+      "category": "characters",
+      "status": "planned"
+    },
+    {
+      "id": "UI001",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        860,
+        168
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        2,
+        2,
+        858,
+        166
+      ],
+      "bytes": 1278,
+      "sha256": "0f408154b0e34efc54e981aa894140db3585795c3260ab21747d11b6a2c3a22f",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI002",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        380,
+        105
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        2,
+        2,
+        378,
+        103
+      ],
+      "bytes": 770,
+      "sha256": "9f0b2053abff078ae3b3b30d59f4e76662ad94aef5cc1034f4545db411d64fbb",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI003",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        250,
+        52
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        2,
+        2,
+        248,
+        50
+      ],
+      "bytes": 580,
+      "sha256": "b1625f6d74e186d8124ccbf7d71bae76d15ce6610d82e625830315d0224062cb",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI004",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        142,
+        160
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        2,
+        2,
+        140,
+        158
+      ],
+      "bytes": 737,
+      "sha256": "739cc2c83acf4546d519dcdb6b88c3a1bc7e546eb749c253e27592262ee3ec29",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI005",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        18,
+        22,
+        48,
+        43
+      ],
+      "bytes": 244,
+      "sha256": "7860d26e3809251a5ec6103e376e50b21d4a6d2d55dea97a387a178de7cd427c",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI006",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        220,
+        42
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        2,
+        2,
+        218,
+        40
+      ],
+      "bytes": 524,
+      "sha256": "3414de26ea73b240e62795445c7092f9bf0df7199324bf1833e4166793b17891",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI007",
+      "category": "ui",
+      "status": "planned"
+    },
+    {
+      "id": "UI008",
+      "category": "ui",
+      "status": "planned"
+    },
+    {
+      "id": "UI009",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        11,
+        11,
+        53,
+        53
+      ],
+      "bytes": 443,
+      "sha256": "2e21bf6ca32bbfa522d9dab38150ecfd278519bb43782125d79de6aae27950b9",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI010",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        10,
+        9,
+        55,
+        54
+      ],
+      "bytes": 418,
+      "sha256": "7d9709689fece7acb4fa96d851faede5f89e73df120ef2e2471675eda6e49472",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI011",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        360,
+        72
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        2,
+        2,
+        358,
+        70
+      ],
+      "bytes": 662,
+      "sha256": "2b4baef945d9991669b8870e606439643b17dddfe02e48bc25f4dea04e52faaa",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    },
+    {
+      "id": "UI012",
+      "category": "ui",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        5,
+        4,
+        60,
+        60
+      ],
+      "bytes": 405,
+      "sha256": "2e0bc16784a15f6577e006cd548d54993959bb2f1c71b3d3578542f4dec3794b",
+      "warnings": [
+        "previously_ready_without_godot_review"
+      ]
+    }
+  ],
+  "notice": "An existing PNG is NOT a high-quality approval. Manual visual QA required."
+}

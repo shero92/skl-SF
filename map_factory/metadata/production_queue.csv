@@ -1,17 +1,17 @@
 id,category,name,status,texture_path
 F001,floors,Stone Floor Plain,needs_cleanup,res://map_factory/parts/floors/F001_Stone_Floor_Plain.png
 F002,floors,Stone Floor Cracked,needs_cleanup,res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png
-F003,floors,Stone Floor Worn,planned,res://map_factory/parts/floors/F003_Stone_Floor_Worn.png
-F004,floors,Stone Floor Light,planned,res://map_factory/parts/floors/F004_Stone_Floor_Light.png
-F005,floors,Stone Floor Dark,planned,res://map_factory/parts/floors/F005_Stone_Floor_Dark.png
+F003,floors,Stone Floor Worn,needs_cleanup,res://map_factory/parts/floors/F003_Stone_Floor_Worn.png
+F004,floors,Stone Floor Light,needs_cleanup,res://map_factory/parts/floors/F004_Stone_Floor_Light.png
+F005,floors,Stone Floor Dark,needs_cleanup,res://map_factory/parts/floors/F005_Stone_Floor_Dark.png
 F006,floors,Stone Floor Edge N,needs_cleanup,res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png
-F007,floors,Stone Floor Edge S,planned,res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png
-F008,floors,Stone Floor Edge E,planned,res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png
-F009,floors,Stone Floor Edge W,planned,res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png
+F007,floors,Stone Floor Edge S,needs_cleanup,res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png
+F008,floors,Stone Floor Edge E,needs_cleanup,res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png
+F009,floors,Stone Floor Edge W,needs_cleanup,res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png
 F010,floors,Stone Floor Corner NW,needs_cleanup,res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png
-F011,floors,Stone Floor Corner NE,planned,res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png
-F012,floors,Stone Floor Corner SW,planned,res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png
-F013,floors,Stone Floor Corner SE,planned,res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png
+F011,floors,Stone Floor Corner NE,needs_cleanup,res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png
+F012,floors,Stone Floor Corner SW,needs_cleanup,res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png
+F013,floors,Stone Floor Corner SE,needs_cleanup,res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png
 F014,floors,Compass Floor Center,needs_cleanup,res://map_factory/parts/floors/F014_Compass_Floor_Center.png
 F015,floors,Compass Floor N,needs_cleanup,res://map_factory/parts/floors/F015_Compass_Floor_N.png
 F016,floors,Compass Floor S,needs_cleanup,res://map_factory/parts/floors/F016_Compass_Floor_S.png
@@ -177,22 +177,22 @@ D015,decor,Lantern Glow,planned,res://map_factory/parts/decor/D015_Lantern_Glow.
 D016,decor,Candle Glow,planned,res://map_factory/parts/decor/D016_Candle_Glow.png
 D017,decor,Rope Hanging,needs_cleanup,res://map_factory/parts/decor/D017_Rope_Hanging.png
 D018,decor,Decorative Ornament,needs_cleanup,res://map_factory/parts/decor/D018_Decorative_Ornament.png
-S001,shadows,Shadow Contact Small,ready,res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png
-S002,shadows,Shadow Contact Medium,ready,res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png
-S003,shadows,Shadow Contact Large,ready,res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png
-S004,shadows,Shadow Character,ready,res://map_factory/parts/shadows/S004_Shadow_Character.png
-S005,shadows,Shadow Bed,ready,res://map_factory/parts/shadows/S005_Shadow_Bed.png
-S006,shadows,Shadow Table,ready,res://map_factory/parts/shadows/S006_Shadow_Table.png
-S007,shadows,Shadow Chair,ready,res://map_factory/parts/shadows/S007_Shadow_Chair.png
-S008,shadows,Shadow Bookshelf,ready,res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png
-S009,shadows,Shadow Chest,ready,res://map_factory/parts/shadows/S009_Shadow_Chest.png
-S010,shadows,Shadow Plant,ready,res://map_factory/parts/shadows/S010_Shadow_Plant.png
-S011,shadows,Shadow Column Short,ready,res://map_factory/parts/shadows/S011_Shadow_Column_Short.png
-S012,shadows,Shadow Column Long,ready,res://map_factory/parts/shadows/S012_Shadow_Column_Long.png
-S013,shadows,Shadow Wall Base,ready,res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png
-S014,shadows,Shadow Wall Corner,ready,res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png
-S015,shadows,Shadow Stairs,ready,res://map_factory/parts/shadows/S015_Shadow_Stairs.png
-S016,shadows,Shadow Soft Diagonal,ready,res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png
+S001,shadows,Shadow Contact Small,needs_cleanup,res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png
+S002,shadows,Shadow Contact Medium,needs_cleanup,res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png
+S003,shadows,Shadow Contact Large,needs_cleanup,res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png
+S004,shadows,Shadow Character,needs_cleanup,res://map_factory/parts/shadows/S004_Shadow_Character.png
+S005,shadows,Shadow Bed,needs_cleanup,res://map_factory/parts/shadows/S005_Shadow_Bed.png
+S006,shadows,Shadow Table,needs_cleanup,res://map_factory/parts/shadows/S006_Shadow_Table.png
+S007,shadows,Shadow Chair,needs_cleanup,res://map_factory/parts/shadows/S007_Shadow_Chair.png
+S008,shadows,Shadow Bookshelf,needs_cleanup,res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png
+S009,shadows,Shadow Chest,needs_cleanup,res://map_factory/parts/shadows/S009_Shadow_Chest.png
+S010,shadows,Shadow Plant,needs_cleanup,res://map_factory/parts/shadows/S010_Shadow_Plant.png
+S011,shadows,Shadow Column Short,needs_cleanup,res://map_factory/parts/shadows/S011_Shadow_Column_Short.png
+S012,shadows,Shadow Column Long,needs_cleanup,res://map_factory/parts/shadows/S012_Shadow_Column_Long.png
+S013,shadows,Shadow Wall Base,needs_cleanup,res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png
+S014,shadows,Shadow Wall Corner,needs_cleanup,res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png
+S015,shadows,Shadow Stairs,needs_cleanup,res://map_factory/parts/shadows/S015_Shadow_Stairs.png
+S016,shadows,Shadow Soft Diagonal,needs_cleanup,res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png
 CH001,characters,Hero Idle Down,planned,res://map_factory/parts/characters/CH001_Hero_Idle_Down.png
 CH002,characters,Hero Idle Up,planned,res://map_factory/parts/characters/CH002_Hero_Idle_Up.png
 CH003,characters,Hero Idle Left,planned,res://map_factory/parts/characters/CH003_Hero_Idle_Left.png
@@ -205,15 +205,15 @@ CH009,characters,Companion Idle,planned,res://map_factory/parts/characters/CH009
 CH010,characters,Companion Walk,planned,res://map_factory/parts/characters/CH010_Companion_Walk.png
 CH011,characters,NPC Fairy Green Idle,planned,res://map_factory/parts/characters/CH011_NPC_Fairy_Green_Idle.png
 CH012,characters,NPC Fairy Green Walk,planned,res://map_factory/parts/characters/CH012_NPC_Fairy_Green_Walk.png
-UI001,ui,Dialogue Panel Background,ready,res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png
-UI002,ui,Dialogue Panel Border,ready,res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png
-UI003,ui,Dialogue Nameplate,ready,res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png
-UI004,ui,Dialogue Portrait Frame,ready,res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png
-UI005,ui,Dialogue Next Arrow,ready,res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png
-UI006,ui,Dialogue Choice Selector,ready,res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png
+UI001,ui,Dialogue Panel Background,needs_cleanup,res://map_factory/parts/ui/UI001_Dialogue_Panel_Background.png
+UI002,ui,Dialogue Panel Border,needs_cleanup,res://map_factory/parts/ui/UI002_Dialogue_Panel_Border.png
+UI003,ui,Dialogue Nameplate,needs_cleanup,res://map_factory/parts/ui/UI003_Dialogue_Nameplate.png
+UI004,ui,Dialogue Portrait Frame,needs_cleanup,res://map_factory/parts/ui/UI004_Dialogue_Portrait_Frame.png
+UI005,ui,Dialogue Next Arrow,needs_cleanup,res://map_factory/parts/ui/UI005_Dialogue_Next_Arrow.png
+UI006,ui,Dialogue Choice Selector,needs_cleanup,res://map_factory/parts/ui/UI006_Dialogue_Choice_Selector.png
 UI007,ui,Hero Portrait,planned,res://map_factory/parts/ui/UI007_Hero_Portrait.png
 UI008,ui,Fairy Portrait,planned,res://map_factory/parts/ui/UI008_Fairy_Portrait.png
-UI009,ui,Interaction Icon,ready,res://map_factory/parts/ui/UI009_Interaction_Icon.png
-UI010,ui,Interaction Prompt,ready,res://map_factory/parts/ui/UI010_Interaction_Prompt.png
-UI011,ui,Room Title Panel,ready,res://map_factory/parts/ui/UI011_Room_Title_Panel.png
-UI012,ui,UI Gold Decorative Corner,ready,res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png
+UI009,ui,Interaction Icon,needs_cleanup,res://map_factory/parts/ui/UI009_Interaction_Icon.png
+UI010,ui,Interaction Prompt,needs_cleanup,res://map_factory/parts/ui/UI010_Interaction_Prompt.png
+UI011,ui,Room Title Panel,needs_cleanup,res://map_factory/parts/ui/UI011_Room_Title_Panel.png
+UI012,ui,UI Gold Decorative Corner,needs_cleanup,res://map_factory/parts/ui/UI012_UI_Gold_Decorative_Corner.png
