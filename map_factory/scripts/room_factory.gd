@@ -40,6 +40,7 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     _place_group(data.get("back_objects", []), root, "RearArchitecture", false)
     _place_group(data.get("objects", []), root, "Entities", true)
     _place_group(data.get("front_objects", []), root, "FrontDecorations", false)
+    _place_effects(data.get("effects", []), root)
     return root
 
 func _paint_ground(data: Dictionary, target: Node2D) -> void:
@@ -97,3 +98,15 @@ func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool
         node.scale = Vector2(s, s)
         node.z_index = int(item.get("z_index", 0))
         group.add_child(node)
+
+func _place_effects(entries: Array, parent: Node2D) -> void:
+    var group := Node2D.new()
+    group.name = "AnimatedLighting"
+    parent.add_child(group)
+    for info in entries:
+        if typeof(info) != TYPE_DICTIONARY:
+            continue
+        var light := RoomLightFX.new()
+        light.name = String(info.get("instance_id", "LightFX"))
+        group.add_child(light)
+        light.configure(info, catalog)

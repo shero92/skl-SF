@@ -456,5 +456,31 @@
         "We should prepare before the next journey."
       ]
     }
+  ],
+  "effects": [
+    {
+      "instance_id": "LanternLeftGlow",
+      "kind": "lantern",
+      "x": 331,
+      "y": 323,
+      "scale": 0.52,
+      "glow_alpha": 0.46
+    },
+    {
+      "instance_id": "LanternRightGlow",
+      "kind": "lantern",
+      "x": 1236,
+      "y": 315,
+      "scale": 0.52,
+      "glow_alpha": 0.46
+    },
+    {
+      "instance_id": "TableCandleGlow",
+      "kind": "candle",
+      "x": 1164,
+      "y": 600,
+      "scale": 0.42,
+      "glow_alpha": 0.36
+    }
   ]
 }
