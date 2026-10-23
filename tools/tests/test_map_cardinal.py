@@ -92,6 +92,21 @@ class FourDirections(unittest.TestCase):
         self.assertEqual(v2["layer_stack"]["occlusion_mode"],"world_y_sort")
         self.assertEqual(mf.validate_repository(self.root),[("demo_01",2)])
 
+    def test_set_tile_manifest_preserves_cardinal_direction(self):
+        patch=self._patch([
+            {"op":"set_tile","x":3,"y":2,"id":"F001","facing":"west"}
+        ])
+        v2=mf.apply(self.root,patch)
+        tile=v2["tile_overrides"][0]
+        self.assertEqual(tile,{"x":3,"y":2,"id":"F001","facing":"west"})
+        manifest=mf.build_block_manifest(v2,self.catalog)
+        self.assertEqual(manifest["floor_overrides"][0]["orientation"]["turn_quarters"],3)
+    def test_visual_approval_requires_committed_reference(self):
+        update=self._patch([{"op":"set_property","key":"visual_qa","value":{
+            "status":"approved","reference_sha256":"test-reference-sha",
+            "preview_path":"docs/previews/test.png","reviewer":"Test QA"}}])
+        with self.assertRaisesRegex(ValueError,"committed reference image"):
+            mf.apply(self.root,update)
     def test_legacy_map_is_byte_compatible(self):
         layer=self.room["layer_stack"]["passes"]["decorations"][0]
         self.assertNotIn("orientation",layer)

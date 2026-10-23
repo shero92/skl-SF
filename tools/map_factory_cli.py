@@ -376,6 +376,7 @@ def build_block_manifest(snapshot, catalog):
         for part in snapshot.get(layer, []):
             record = catalog[part["id"]]
             used.add(part["id"])
+            orientation=resolve_orientation(part,catalog)
             instances.append({
                 "instance_id": part["instance_id"],
                 "asset_id": part["id"],
@@ -389,7 +390,7 @@ def build_block_manifest(snapshot, catalog):
                 "position": [part["x"], part["y"]],
                 "scale": part.get("scale", 1.0),
                 "rotation_degrees": part.get("rotation_degrees", 0),
-                **({"orientation":resolve_orientation(part,catalog)} if resolve_orientation(part,catalog) else {}),
+                **({"orientation":orientation} if orientation else {}),
                 "flip_h": part.get("flip_h", False),
                 "z_index": part.get("z_index", 0),
                 "collision": part.get("collision", record.get("collision", {})),
@@ -400,6 +401,7 @@ def build_block_manifest(snapshot, catalog):
     floor = []
     for item in snapshot.get("tile_overrides", []):
         record = catalog[item["id"]]
+        orientation=resolve_orientation(item,catalog)
         floor.append({
             "x": item["x"], "y": item["y"],
             "asset_id": item["id"],
@@ -407,7 +409,7 @@ def build_block_manifest(snapshot, catalog):
             "texture_path": record["texture_path"],
             "pixel_size": record.get("pixel_size"),
             "asset_status": record.get("status", "planned"),
-            **({"orientation":resolve_orientation(item,catalog)} if resolve_orientation(item,catalog) else {})
+            **({"orientation":orientation} if orientation else {})
         })
         used.add(item["id"])
     for ident in snapshot.get("floor_ids", []):
