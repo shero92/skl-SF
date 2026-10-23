@@ -39,7 +39,8 @@ func _run_smoke() -> void:
         var host := Node2D.new()
         root.add_child(host)
         var built := RoomFactory.new().build_latest(id, host)
-        var ground := built.get_node_or_null("Ground")
+        var layered: bool = data.has("layer_stack")
+        var ground := built.get_node_or_null("Level1_Ground/Ground" if layered else "Ground")
         var dimensions: Array = data.get("size", [0, 0])
         var expected_floor := int(dimensions[0]) * int(dimensions[1])
         if ground == null or ground.get_child_count() != expected_floor:
@@ -71,19 +72,66 @@ func _run_smoke() -> void:
                 if tested_pixels == 0 or float(blue_pixels) / float(tested_pixels) < 0.15:
                     push_error("Compass tile is missing its blue detail")
                     ok = false
-        var layer_nodes := {
-            "background_objects": "DistantRuins",
-            "ground_overlays": "GroundOverlays",
-            "back_objects": "RearArchitecture",
-            "objects": "Entities",
-            "front_objects": "FrontDecorations"
-        }
-        for layer in layer_nodes:
-            var section := built.get_node_or_null(String(layer_nodes[layer]))
-            var expected_count := (data.get(String(layer), []) as Array).size()
-            if section == null or section.get_child_count() != expected_count:
-                push_error("Missing/wrong " + String(layer) + " in map " + id)
-                ok = false
+        if layered:
+            var stack: Dictionary = data["layer_stack"]
+            var passes: Dictionary = stack.get("passes", {})
+            var layer_nodes := {
+                "background": "Level0_Background",
+                "ground": "Level1_Ground/GroundOverlays",
+                "walls": "Level2_Walls",
+                "decorations": "Level3_Decorations",
+                "shadows": "Level4_Shadows"
+            }
+            for pass_id in layer_nodes:
+                var section := built.get_node_or_null(String(layer_nodes[pass_id]))
+                var records: Array = passes.get(String(pass_id), [])
+                if section == null or section.get_child_count() != records.size():
+                    push_error("Five-pass wrong size: " + id + "/" + String(pass_id))
+                    ok = false
+                    continue
+                for record in records:
+                    var label: String = String(record.get("instance_id",""))
+                    var node := section.get_node_or_null(label)
+                    if node == null:
+                        push_error("Five-pass missing block "+ id + "/" +label)
+                        ok=false
+                        continue
+                    if pass_id == "shadows":
+                        if node.get_meta("owner_instance_id","") != record.get("owner_instance_id",""):
+                            push_error("Incorrect independent shadow owner for "+label)
+                            ok=false
+                        if node.get_node_or_null("AlphaShadow") == null:
+                            push_error("Missing shadow PNG for "+label)
+                            ok=false
+                    else:
+                        var sprite := node.get_node_or_null("Visual") as Sprite2D
+                        if sprite == null or sprite.texture == null:
+                            push_error("Unloaded individual PNG: "+label)
+                            ok=false
+                    if pass_id == "decorations":
+                        var attach: Variant = record.get("attachment")
+                        if typeof(attach) == TYPE_DICTIONARY:
+                            if node.get_meta("mount_on","") != attach.get("parent_instance_id",""):
+                                push_error("Mount lost: "+label)
+                                ok=false
+                    var p: Array = record.get("position",[0,0])
+                    if node.position.distance_to(Vector2(float(p[0]),float(p[1]))) > 0.5:
+                        push_error("Wrong block/shadow world position: "+label)
+                        ok=false
+        else:
+            var layer_nodes := {
+                "background_objects": "DistantRuins",
+                "ground_overlays": "GroundOverlays",
+                "back_objects": "RearArchitecture",
+                "objects": "Entities",
+                "front_objects": "FrontDecorations"
+            }
+            for layer in layer_nodes:
+                var section := built.get_node_or_null(String(layer_nodes[layer]))
+                var expected_count := (data.get(String(layer), []) as Array).size()
+                if section == null or section.get_child_count() != expected_count:
+                    push_error("Missing/wrong " + String(layer) + " in map " + id)
+                    ok = false
         var ocean_settings: Dictionary = data.get("ocean", {})
         var needs_sea := not ocean_settings.is_empty() and bool(ocean_settings.get("enabled", true))
         var has_sea := built.get_node_or_null("OceanBackground") != null
