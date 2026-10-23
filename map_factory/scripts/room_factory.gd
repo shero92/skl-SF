@@ -143,7 +143,9 @@ func _place_compiled_entries(entries: Array, group: Node2D) -> void:
         if typeof(record) != TYPE_DICTIONARY:
             continue
         var asset_id := String(record.get("asset_id", ""))
-        var info: Dictionary = catalog.get_asset(asset_id)
+        var orientation: Dictionary = record.get("orientation", {})
+        var render_id: String = String(orientation.get("resolved_asset_id", asset_id))
+        var info: Dictionary = catalog.get_asset(render_id)
         if info.is_empty() or String(info.get("category", "")) in ["characters", "ui", "shadows"]:
             push_error("Invalid map-only block: " + asset_id)
             continue
@@ -153,11 +155,24 @@ func _place_compiled_entries(entries: Array, group: Node2D) -> void:
             "collision": record.get("collision", {"enabled":false}),
             "flip_h": record.get("flip_h", false)
         }
-        var node := assets.create_asset(asset_id, opts)
+        var node := assets.create_asset(render_id, opts)
         node.name = String(record.get("instance_id", asset_id))
+        # Four cardinal facings. Flat sprites rotate the root AND collision.
+        # Perspective-aware props use four independent upright art variants.
+        if not orientation.is_empty():
+            var facing: String = String(orientation.get("facing", "north"))
+            var turn: int = int(orientation.get("turn_quarters", 0))
+            if String(orientation.get("orientation_mode", "rotate")) == "rotate":
+                node.rotation_degrees = 90.0 * float(turn)
+            else:
+                node.rotation_degrees = 0.0
+            node.set_meta("facing", facing)
+            node.set_meta("orientation_mode", String(orientation.get("orientation_mode", "rotate")))
+            node.set_meta("source_asset_id", asset_id)
         var xy: Array = record.get("position", [0, 0])
         node.position = Vector2(float(xy[0]), float(xy[1]))
-        node.rotation_degrees = float(record.get("rotation_degrees", 0))
+        if orientation.is_empty():
+            node.rotation_degrees = float(record.get("rotation_degrees", 0))
         var scale_value := float(record.get("scale", 1))
         node.scale = Vector2.ONE * scale_value
         # A negative or unusually high local z must not escape its semantic pass.
@@ -261,8 +276,23 @@ func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool
             continue
         var node := assets.create_asset(asset_id, item)
         node.name = String(item.get("instance_id", asset_id))
+        if item.has("facing"):
+            var facing: String = String(item["facing"])
+            var turns := ["north", "east", "south", "west"].find(facing)
+            if turns >= 0:
+                if String(item.get("orientation_mode", "rotate")) == "rotate":
+                    node.rotation_degrees = 90.0 * float(turns)
+                else:
+                    var directions: Dictionary = item.get("direction_asset_ids", record.get("direction_asset_ids", {}))
+                    var variant_id: String = String(directions.get(facing, ""))
+                    if variant_id != "" and not catalog.get_asset(variant_id).is_empty():
+                        node.queue_free()
+                        node = assets.create_asset(variant_id, item)
+                        node.name = String(item.get("instance_id", asset_id))
+                node.set_meta("facing", facing)
         node.position = Vector2(float(item.get("x", 0)), float(item.get("y", 0)))
-        node.rotation_degrees = float(item.get("rotation_degrees", 0))
+        if not item.has("facing"):
+            node.rotation_degrees = float(item.get("rotation_degrees", 0))
         var s := float(item.get("scale", 1.0))
         node.scale = Vector2(s, s)
         node.z_index = int(item.get("z_index", 0))
