@@ -6,6 +6,9 @@ on:
       - "map_factory/intake/assets/**/*.png"
       - "map_factory/references/**"
       - "tools/process_map_intake.py"
+      - "tools/map_factory_layers.py"
+      - "tools/map_factory_cli.py"
+      - "tools/tests/test_map_layers.py"
       - "tools/import_map_assets.py"
       - ".github/workflows/process_map_intake.yml"
   workflow_dispatch:
