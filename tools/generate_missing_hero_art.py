@@ -244,6 +244,28 @@ def main():
         {"enabled":False,"size":[1,1],"offset":[0,0]},
         {"type":"none","opacity":0.25,"offset_x":0,"offset_y":0},
         ["shadow","environment","sunlight"],[])
+    # Superseding candidates: v8 assets stay immutable for old map snapshots.
+    register("O028","Antlered Skull Flower Shrine Refined","objects","floral_skull_relic",
+        shrine(),[134,266],
+        {"enabled":True,"size":[86,44],"offset":[0,-25]},
+        {"type":"directional_sun","opacity":0.40,"offset_x":-28,"offset_y":21},
+        ["relic","ivory_skull","antlers","white_flowers","hero_room"],
+        ["V009","V008","V004","V005","V010"])
+    register("E021","Clean Sea Cliff Ruin Left","environment","coastal_wall_apron",
+        irregular_segment(),[170,242],
+        {"enabled":True,"size":[220,44],"offset":[0,-31]},
+        {"type":"wall_base","opacity":0.2,"offset_x":5,"offset_y":8},
+        ["stone","coast","flora","no_baked_ocean"],["E007","E008","W017","ST010","W012","V023","V004","V012","V011","V013"])
+    register("E022","Clean Sea Cliff Ruin Right","environment","coastal_wall_apron",
+        irregular_segment(right=True),[170,242],
+        {"enabled":True,"size":[220,44],"offset":[0,-31]},
+        {"type":"wall_base","opacity":0.2,"offset_x":5,"offset_y":8},
+        ["stone","coast","flora","no_baked_ocean"],["E007","E008","W017","ST010","W012","V023","V004","V012","V011","V013"])
+    register("W020","Deep Limestone Corner Without Sea","walls","deep_stone_corner",
+        deep_corner(),[123,235],
+        {"enabled":True,"size":[126,42],"offset":[0,-28]},
+        {"type":"wall_corner","opacity":0.28,"offset_x":5,"offset_y":7},
+        ["limestone","ivy","ruins","corner"],["W005","W008","W017","ST011","W012","V006","V012","V023"])
     record["assets"].sort(key=lambda a:(a["category"],a["id"]))
     record["asset_count"]=len(record["assets"])
     record["generated_png_count"]=sum((ROOT/a["texture_path"].removeprefix("res://")).exists() for a in record["assets"])
