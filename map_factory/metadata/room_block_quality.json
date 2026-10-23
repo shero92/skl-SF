@@ -19,33 +19,106 @@
     },
     {
       "map_id": "hero_room_01",
-      "version": 3,
+      "version": 4,
       "counts": {
         "background": 7,
         "ground": 2,
         "walls": 32,
         "decorations": 34,
-        "shadows": 8
+        "shadows": 23
       },
       "placed_instances": 75,
-      "mounted_details": 0,
-      "owned_shadows": 8,
-      "unique_asset_ids": 77,
+      "mounted_details": 14,
+      "owned_shadows": 23,
+      "unique_asset_ids": 82,
       "visual_qa_status": "needs_review",
-      "reference_sha256": null
+      "reference_sha256": "f659a18b03f844e049b3b20319f0418fd2d5f20e573f8238d05c87b932a9c616"
     }
   ],
-  "referenced_physical_png_files": 78,
+  "verified_environment_png_files": 194,
+  "environment_catalog_count": 194,
   "catalog_total": 218,
   "catalog_status": {
     "needs_cleanup": 218
   },
   "referenced_status": {
-    "needs_cleanup": 78
+    "needs_cleanup": 194
   },
   "errors": [],
   "artistic_qa": "NOT APPROVED: image file presence and alpha cannot confirm full fidelity.",
   "assets": [
+    {
+      "id": "A001",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        323,
+        198
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        323,
+        198
+      ],
+      "file_bytes": 114715,
+      "sha256": "cadc98f6023b6d3ae263e84db81f79c8d83499ac7420890815b8e64f2ef85c74",
+      "texture_path": "res://map_factory/parts/architecture/A001_Stone_Arch_Full.png"
+    },
+    {
+      "id": "A002",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        302,
+        110
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        302,
+        110
+      ],
+      "file_bytes": 71941,
+      "sha256": "2a9dda2b03d1147cd6758a838a142c4659c64f5dadbbcef91d3921351ebab959",
+      "texture_path": "res://map_factory/parts/architecture/A002_Stone_Arch_Top.png"
+    },
+    {
+      "id": "A003",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        126,
+        179
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        126,
+        179
+      ],
+      "file_bytes": 47265,
+      "sha256": "41960f4d1be0788a74030ee01a0506f90f4c3d196a3b5f2e3a50ee61e1404ed7",
+      "texture_path": "res://map_factory/parts/architecture/A003_Stone_Arch_Left.png"
+    },
+    {
+      "id": "A004",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        126,
+        194
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        126,
+        194
+      ],
+      "file_bytes": 45748,
+      "sha256": "937693dc59b6c29fccc8a3708bd2a95b2766073b24e9d14e998c2b47b6085397",
+      "texture_path": "res://map_factory/parts/architecture/A004_Stone_Arch_Right.png"
+    },
     {
       "id": "A005",
       "category": "architecture",
@@ -63,6 +136,24 @@
       "file_bytes": 174205,
       "sha256": "0c9450d3a9ec8e9fa445007f9c4976d18a7d4c42122d1d09ad3d1b68433176bb",
       "texture_path": "res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png"
+    },
+    {
+      "id": "A006",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        308,
+        196
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        307,
+        196
+      ],
+      "file_bytes": 112868,
+      "sha256": "27352a8f4402da13bc2d5ee74c087138b5a07edfead39d8a941a71a7781ba05f",
+      "texture_path": "res://map_factory/parts/architecture/A006_Stone_Arch_Broken.png"
     },
     {
       "id": "A007",
@@ -83,6 +174,78 @@
       "texture_path": "res://map_factory/parts/architecture/A007_Stone_Column_Full.png"
     },
     {
+      "id": "A008",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        101,
+        81
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        100,
+        81
+      ],
+      "file_bytes": 18793,
+      "sha256": "0bc9cb72ebbeea7737cb73731ea17f6597a472e223e4cd2a3bc082334e9edace",
+      "texture_path": "res://map_factory/parts/architecture/A008_Stone_Column_Base.png"
+    },
+    {
+      "id": "A009",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        97,
+        240
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        96,
+        240
+      ],
+      "file_bytes": 54061,
+      "sha256": "48827e7d572f94809a72721afc5f5b71de528ce3f0a024cfa08ebe589c3180e7",
+      "texture_path": "res://map_factory/parts/architecture/A009_Stone_Column_Middle.png"
+    },
+    {
+      "id": "A010",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        99,
+        178
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        99,
+        178
+      ],
+      "file_bytes": 43871,
+      "sha256": "3b87e9b7a57778cd88c8cb2d483abc4ea1d193c2a8df08b6626cde0dcac18b54",
+      "texture_path": "res://map_factory/parts/architecture/A010_Stone_Column_Capital.png"
+    },
+    {
+      "id": "A011",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        112,
+        218
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        111,
+        218
+      ],
+      "file_bytes": 57781,
+      "sha256": "e57a9e116a5dea9f3a7de6cc8fbf6da2a4b3bcdbaca31255f5f990b1e8e84ba2",
+      "texture_path": "res://map_factory/parts/architecture/A011_Stone_Column_Broken.png"
+    },
+    {
       "id": "A012",
       "category": "architecture",
       "status": "needs_cleanup",
@@ -99,6 +262,42 @@
       "file_bytes": 62492,
       "sha256": "c541548fd31a73053141c1758032efea217a5ed8c1922829221a5fb113a5c3a7",
       "texture_path": "res://map_factory/parts/architecture/A012_Stone_Column_With_Flowers.png"
+    },
+    {
+      "id": "A013",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        71,
+        103
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        71,
+        103
+      ],
+      "file_bytes": 16959,
+      "sha256": "ea546a8274434ec3b369c88b242cf7dcb78e67eb1812c7f96cdc86843bf88fec",
+      "texture_path": "res://map_factory/parts/architecture/A013_Stone_Pillar_Short.png"
+    },
+    {
+      "id": "A014",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        95,
+        114
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        95,
+        114
+      ],
+      "file_bytes": 21984,
+      "sha256": "3947a46cd75e9bdbab03e298dcd34c7faa982c8062993d7e942393f4454ac39a",
+      "texture_path": "res://map_factory/parts/architecture/A014_Stone_Pillar_Tall.png"
     },
     {
       "id": "A015",
@@ -119,6 +318,24 @@
       "texture_path": "res://map_factory/parts/architecture/A015_Stone_Door_Arched.png"
     },
     {
+      "id": "A016",
+      "category": "architecture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        117,
+        204
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        117,
+        204
+      ],
+      "file_bytes": 64621,
+      "sha256": "4ef3003f010b20269817bfcbae2af2fa4fbc1945ed5cdb94b735af310f144d81",
+      "texture_path": "res://map_factory/parts/architecture/A016_Stone_Door_Decorated.png"
+    },
+    {
       "id": "D001",
       "category": "decor",
       "status": "needs_cleanup",
@@ -137,6 +354,42 @@
       "texture_path": "res://map_factory/parts/decor/D001_Banner_Blue_Long.png"
     },
     {
+      "id": "D002",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        126,
+        239
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        126,
+        239
+      ],
+      "file_bytes": 57573,
+      "sha256": "de4af93091860c3e6a08927bea4fde0d9fa691a8726defbdf3892981b23b97b1",
+      "texture_path": "res://map_factory/parts/decor/D002_Banner_Blue_Medium.png"
+    },
+    {
+      "id": "D003",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        102,
+        195
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        101,
+        195
+      ],
+      "file_bytes": 40536,
+      "sha256": "824f045b36ce467af827a72879a449b4a8f99d2d2f49e1c02a189fcabfa6131d",
+      "texture_path": "res://map_factory/parts/decor/D003_Banner_Blue_Short.png"
+    },
+    {
       "id": "D004",
       "category": "decor",
       "status": "needs_cleanup",
@@ -153,6 +406,42 @@
       "file_bytes": 25363,
       "sha256": "d8f95004756b2293c57a94b03477a8573ef4289bb98ef047c2e18be81dd7e74e",
       "texture_path": "res://map_factory/parts/decor/D004_Banner_Compass.png"
+    },
+    {
+      "id": "D005",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        154,
+        260
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        153,
+        260
+      ],
+      "file_bytes": 72862,
+      "sha256": "32e22e8aa2dfa50893ee668332107cb0f032b02c35a538ec409eb1fd5c5a147d",
+      "texture_path": "res://map_factory/parts/decor/D005_Banner_Anchor.png"
+    },
+    {
+      "id": "D006",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        152,
+        56
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        152,
+        56
+      ],
+      "file_bytes": 17827,
+      "sha256": "b6003f66dc6b59f75b7a71c4a89b62e25f54fd8f94e4812f162bb9c87e134e07",
+      "texture_path": "res://map_factory/parts/decor/D006_Banner_Wall_Mount.png"
     },
     {
       "id": "D007",
@@ -209,6 +498,168 @@
       "texture_path": "res://map_factory/parts/decor/D009_Lantern_Wall_Right.png"
     },
     {
+      "id": "D010",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        65,
+        118
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        65,
+        118
+      ],
+      "file_bytes": 15513,
+      "sha256": "79f2b6eb9049c17d2672fc0158ea8ad39a76e30641985244b4cb707bff7f13c0",
+      "texture_path": "res://map_factory/parts/decor/D010_Lantern_Table.png"
+    },
+    {
+      "id": "D011",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        66,
+        116
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        66,
+        116
+      ],
+      "file_bytes": 16826,
+      "sha256": "3fc3c1e171799f543e35c70facf8121f88d7eb18400d946bb0343f912beb5d31",
+      "texture_path": "res://map_factory/parts/decor/D011_Lantern_Pole.png"
+    },
+    {
+      "id": "D012",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        96,
+        128
+      ],
+      "alpha_bbox": [
+        24,
+        25,
+        76,
+        122
+      ],
+      "file_bytes": 757,
+      "sha256": "48cff8275710efa8c0d768229fd5ee8095e7e35648b8f5ab8f02bd7092aa5c26",
+      "texture_path": "res://map_factory/parts/decor/D012_Candle_Flame_Frame_01.png"
+    },
+    {
+      "id": "D013",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        96,
+        128
+      ],
+      "alpha_bbox": [
+        24,
+        16,
+        76,
+        122
+      ],
+      "file_bytes": 773,
+      "sha256": "b045bad720bc4de92db8dd4ad839da20195a765672230add7dfaff39d8b0cc13",
+      "texture_path": "res://map_factory/parts/decor/D013_Candle_Flame_Frame_02.png"
+    },
+    {
+      "id": "D014",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        96,
+        128
+      ],
+      "alpha_bbox": [
+        24,
+        21,
+        76,
+        122
+      ],
+      "file_bytes": 753,
+      "sha256": "f1f5a3d82b65ddcfa404d2ea424ce8d9559e2b18f934eb421acc26b9b3949cf4",
+      "texture_path": "res://map_factory/parts/decor/D014_Candle_Flame_Frame_03.png"
+    },
+    {
+      "id": "D015",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "file_bytes": 9178,
+      "sha256": "0b1b95c27dacff9fb2d916f7cf8071e12e0b250a5077c17a6c233624e5a85daa",
+      "texture_path": "res://map_factory/parts/decor/D015_Lantern_Glow.png"
+    },
+    {
+      "id": "D016",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "file_bytes": 9848,
+      "sha256": "438db9976cfc47d2f3aaa3be0baf8e8665a742245c62381a051a1c03d545912a",
+      "texture_path": "res://map_factory/parts/decor/D016_Candle_Glow.png"
+    },
+    {
+      "id": "D017",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        25,
+        147
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        24,
+        147
+      ],
+      "file_bytes": 8858,
+      "sha256": "c0ad30d6cf7ec94217a96c47e5d31acca57e0725a30f2c0a3964578c88c4ecb3",
+      "texture_path": "res://map_factory/parts/decor/D017_Rope_Hanging.png"
+    },
+    {
+      "id": "D018",
+      "category": "decor",
+      "status": "needs_cleanup",
+      "dimensions": [
+        74,
+        147
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        74,
+        147
+      ],
+      "file_bytes": 11749,
+      "sha256": "fe137143776d351131a22bdd469a247e4d5c9338b57d6893e9c49f3d751ec628",
+      "texture_path": "res://map_factory/parts/decor/D018_Decorative_Ornament.png"
+    },
+    {
       "id": "E001",
       "category": "environment",
       "status": "needs_cleanup",
@@ -245,6 +696,24 @@
       "texture_path": "res://map_factory/parts/environment/E002_Cliff_Edge_Corner_Left.png"
     },
     {
+      "id": "E003",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        146,
+        167
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        146,
+        167
+      ],
+      "file_bytes": 62893,
+      "sha256": "8ab3ee532c94e64a0c44e74819f343708b7dd909e50b0ca7cdaf48820a2a464c",
+      "texture_path": "res://map_factory/parts/environment/E003_Cliff_Edge_Corner_Right.png"
+    },
+    {
       "id": "E004",
       "category": "environment",
       "status": "needs_cleanup",
@@ -279,6 +748,168 @@
       "file_bytes": 133279,
       "sha256": "c8c2f9d784bfb0f2fc9b4c7d51f3b5f90fc055b24d342a9672da4e252ff82237",
       "texture_path": "res://map_factory/parts/environment/E005_Cliff_Rock_Small.png"
+    },
+    {
+      "id": "E006",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        208,
+        178
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        208,
+        178
+      ],
+      "file_bytes": 93611,
+      "sha256": "417885c3acf5793ffe3b1a282afeebdef447efbe9c2aa9a14ef4bb7d54066aeb",
+      "texture_path": "res://map_factory/parts/environment/E006_Cliff_Rock_Group.png"
+    },
+    {
+      "id": "E007",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        231,
+        188
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        231,
+        188
+      ],
+      "file_bytes": 109833,
+      "sha256": "abbe4b3f8c281c86df5396c193bc9350db640e85bf429b2ad1de7e55e131a6a4",
+      "texture_path": "res://map_factory/parts/environment/E007_Cliff_With_Ivy.png"
+    },
+    {
+      "id": "E008",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        149,
+        180
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        149,
+        180
+      ],
+      "file_bytes": 67749,
+      "sha256": "1c95898be04aaaa22fc39d0178c451f533a781f9bb96fe8c8520e4288921dd12",
+      "texture_path": "res://map_factory/parts/environment/E008_Cliff_With_Flowers.png"
+    },
+    {
+      "id": "E009",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        320,
+        102
+      ],
+      "alpha_bbox": [
+        0,
+        3,
+        320,
+        68
+      ],
+      "file_bytes": 8338,
+      "sha256": "4b4de665b23f82ac9d23596c553940aa77bb2a3c95f137e69751f78eb517a228",
+      "texture_path": "res://map_factory/parts/environment/E009_Cliff_Ocean_Foam.png"
+    },
+    {
+      "id": "E010",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "file_bytes": 176617,
+      "sha256": "78b04101b542ff8a3731fa10cd858df5d78b32b4e889d353c53cd7c50997e61f",
+      "texture_path": "res://map_factory/parts/environment/E010_Ocean_Water_Base.png"
+    },
+    {
+      "id": "E011",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "file_bytes": 22116,
+      "sha256": "76b4a0a2338cedb20c575efd1b444dc62866647b67b384f997b43b51099130fa",
+      "texture_path": "res://map_factory/parts/environment/E011_Ocean_Wave_Frame_01.png"
+    },
+    {
+      "id": "E012",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "file_bytes": 22116,
+      "sha256": "05da75cca0a9cb52ce00ca5fb6e4b92b5dafe7c856e2a84530ab9af38fb25152",
+      "texture_path": "res://map_factory/parts/environment/E012_Ocean_Wave_Frame_02.png"
+    },
+    {
+      "id": "E013",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "file_bytes": 22147,
+      "sha256": "33829ec93191a6a82a88bda5208cea5f76ddbc45d41e62f95fdc017492a35d50",
+      "texture_path": "res://map_factory/parts/environment/E013_Ocean_Wave_Frame_03.png"
+    },
+    {
+      "id": "E014",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        512,
+        512
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "file_bytes": 22076,
+      "sha256": "04a38a261380eadef16a08ed44b0643faf0011eacc4f78f781bf4881fd6252ec",
+      "texture_path": "res://map_factory/parts/environment/E014_Ocean_Wave_Frame_04.png"
     },
     {
       "id": "E015",
@@ -333,6 +964,24 @@
       "file_bytes": 244707,
       "sha256": "6d12de8cc31bb3e9ced6e45f3e7540f8849296c0ce466b9ee8c3e232a01a90d5",
       "texture_path": "res://map_factory/parts/environment/E017_Distant_Island_Arch.png"
+    },
+    {
+      "id": "E018",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        1024,
+        272
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1024,
+        272
+      ],
+      "file_bytes": 9700,
+      "sha256": "0e68361959b20febf694350314d5b7b9ff9ec96eafe2408129eda152e4617066",
+      "texture_path": "res://map_factory/parts/environment/E018_Sky_Cloud_Background.png"
     },
     {
       "id": "F001",
@@ -405,6 +1054,168 @@
       "file_bytes": 7331,
       "sha256": "e62a8b664b38ad0931fb3896a2607fce80b8d9e7e7139e80c08eef909623323e",
       "texture_path": "res://map_factory/parts/floors/F004_Stone_Floor_Light.png"
+    },
+    {
+      "id": "F005",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "file_bytes": 6964,
+      "sha256": "e24517504616c7750eaca2db18415ebdf7e2bbb9a093f3818de7ddd019efdf7e",
+      "texture_path": "res://map_factory/parts/floors/F005_Stone_Floor_Dark.png"
+    },
+    {
+      "id": "F006",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        151,
+        161
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        150,
+        160
+      ],
+      "file_bytes": 49928,
+      "sha256": "657dd29a8077cf9ec53d4432aaf5674259e4c001c15ffadfac9c6f4a9b340a03",
+      "texture_path": "res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png"
+    },
+    {
+      "id": "F007",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "file_bytes": 6893,
+      "sha256": "51fc6cf7d6ac2b87bd693a44f6cd43a927000fd7bf8bd5a46b789c59ce7c94b8",
+      "texture_path": "res://map_factory/parts/floors/F007_Stone_Floor_Edge_S.png"
+    },
+    {
+      "id": "F008",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "file_bytes": 6880,
+      "sha256": "9264e32f4cf78925691f92ed5ce2a2a0602dcad8eb6aae4e3a405abb18826a1d",
+      "texture_path": "res://map_factory/parts/floors/F008_Stone_Floor_Edge_E.png"
+    },
+    {
+      "id": "F009",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "file_bytes": 6883,
+      "sha256": "6078a80a1da7c6a37a4cb8ebdc4ae015f029f33322118f82e75fbef317181a2f",
+      "texture_path": "res://map_factory/parts/floors/F009_Stone_Floor_Edge_W.png"
+    },
+    {
+      "id": "F010",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        166,
+        161
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        165,
+        160
+      ],
+      "file_bytes": 49297,
+      "sha256": "0cc7e994f69501a76ca9a5abbfcbc4c9a150904b7a0bcc252650234e16690fa9",
+      "texture_path": "res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png"
+    },
+    {
+      "id": "F011",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "file_bytes": 6659,
+      "sha256": "3df681e336b674ffe34445bf6cd7b19fa3b59ebafa16f8d85473bf542fd35645",
+      "texture_path": "res://map_factory/parts/floors/F011_Stone_Floor_Corner_NE.png"
+    },
+    {
+      "id": "F012",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "file_bytes": 6584,
+      "sha256": "aff4d2daa761f0bd896da9dc9ce89ee42a6e2e5f904825fa694c0f7d0343e28f",
+      "texture_path": "res://map_factory/parts/floors/F012_Stone_Floor_Corner_SW.png"
+    },
+    {
+      "id": "F013",
+      "category": "floors",
+      "status": "needs_cleanup",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "file_bytes": 6702,
+      "sha256": "539d2dbe8ca323621a37aed1a53b2db84523ccea9216ad9ddf4149cabb02f38c",
+      "texture_path": "res://map_factory/parts/floors/F013_Stone_Floor_Corner_SE.png"
     },
     {
       "id": "F014",
@@ -587,6 +1398,312 @@
       "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png"
     },
     {
+      "id": "O002",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        85,
+        123
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        84,
+        123
+      ],
+      "file_bytes": 26407,
+      "sha256": "bf27bdb2775700d0dfc9b26cbab0491648b0cc67da928a4c7ad49b63c4b29c0a",
+      "texture_path": "res://map_factory/parts/objects/O002_Blue_Vase_Medium.png"
+    },
+    {
+      "id": "O003",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        85,
+        110
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        84,
+        110
+      ],
+      "file_bytes": 23176,
+      "sha256": "7ad56d2a34791911da2c7d95730c4daad1f11c131096957822008c5268184520",
+      "texture_path": "res://map_factory/parts/objects/O003_Blue_Vase_Small.png"
+    },
+    {
+      "id": "O004",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        77,
+        90
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        76,
+        90
+      ],
+      "file_bytes": 15783,
+      "sha256": "1f85dca7d81fc30b75621e74285192d67bfe29c482dbe9429cc97656825957c7",
+      "texture_path": "res://map_factory/parts/objects/O004_Ceramic_Jug.png"
+    },
+    {
+      "id": "O005",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        66,
+        85
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        65,
+        85
+      ],
+      "file_bytes": 13609,
+      "sha256": "364b07436cf6b6a0a7dde257c4a38bc079634aba87c095943ab4830d277587d4",
+      "texture_path": "res://map_factory/parts/objects/O005_Ceramic_Bottle.png"
+    },
+    {
+      "id": "O006",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        130,
+        105
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        129,
+        105
+      ],
+      "file_bytes": 29357,
+      "sha256": "f19955bf41baf53ab4608f00bb2833b0cb40fd1b2082d39216d57203896e1ed9",
+      "texture_path": "res://map_factory/parts/objects/O006_Fruit_Bowl.png"
+    },
+    {
+      "id": "O007",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        104,
+        108
+      ],
+      "alpha_bbox": [
+        11,
+        10,
+        93,
+        103
+      ],
+      "file_bytes": 1813,
+      "sha256": "76ec58d1462dfc04b43bbb723df380cb4bf08c0482e09c3e6cb5898cffa4fb14",
+      "texture_path": "res://map_factory/parts/objects/O007_Apple_Red.png"
+    },
+    {
+      "id": "O008",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        104,
+        108
+      ],
+      "alpha_bbox": [
+        11,
+        10,
+        93,
+        103
+      ],
+      "file_bytes": 1885,
+      "sha256": "722d237a1baa4ee81b5c789f0cdda92aeccc6606a736bc56e9e12100f03fbd42",
+      "texture_path": "res://map_factory/parts/objects/O008_Apple_Green.png"
+    },
+    {
+      "id": "O009",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        196,
+        135
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        196,
+        135
+      ],
+      "file_bytes": 52093,
+      "sha256": "a9e1eaa8908d5d06c42e1caa43674cb7fff179b7d360bfc440c03fb874d5ff01",
+      "texture_path": "res://map_factory/parts/objects/O009_Map_Open.png"
+    },
+    {
+      "id": "O010",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        148,
+        136
+      ],
+      "alpha_bbox": [
+        16,
+        15,
+        127,
+        133
+      ],
+      "file_bytes": 27756,
+      "sha256": "eb7acd0ee384bd2c80194c4799329359001e45715f46eccf150af18b6e9f4a66",
+      "texture_path": "res://map_factory/parts/objects/O010_Map_Rolled.png"
+    },
+    {
+      "id": "O011",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        122,
+        106
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        121,
+        106
+      ],
+      "file_bytes": 29206,
+      "sha256": "e6a406901006634e04c60644906bbc3e1e8c98d10a9cd5f3fc1cb59b7896639d",
+      "texture_path": "res://map_factory/parts/objects/O011_Scroll_Single.png"
+    },
+    {
+      "id": "O012",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        270,
+        165
+      ],
+      "alpha_bbox": [
+        30,
+        32,
+        225,
+        165
+      ],
+      "file_bytes": 54026,
+      "sha256": "fb049fac3d035daba638c9a08e2f12498ef648211d69ba80c8e67df54317331e",
+      "texture_path": "res://map_factory/parts/objects/O012_Scroll_Bundle.png"
+    },
+    {
+      "id": "O013",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        147,
+        122
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        147,
+        121
+      ],
+      "file_bytes": 39718,
+      "sha256": "c90c50c5d22810a0f401e2e6844a37e25fed867f42fa40050d95a230c843b237",
+      "texture_path": "res://map_factory/parts/objects/O013_Book_Closed_Blue.png"
+    },
+    {
+      "id": "O014",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        147,
+        122
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        147,
+        121
+      ],
+      "file_bytes": 38946,
+      "sha256": "0e98bea51cc59ad620f1bec209364045683f1708cddcc5447a121cb4397a7d03",
+      "texture_path": "res://map_factory/parts/objects/O014_Book_Closed_Brown.png"
+    },
+    {
+      "id": "O015",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        230,
+        163
+      ],
+      "alpha_bbox": [
+        14,
+        37,
+        218,
+        145
+      ],
+      "file_bytes": 1954,
+      "sha256": "804efefa2c896cb8c1b2331c36b310201c2e73c5c5347d29713c90e68c16b2e6",
+      "texture_path": "res://map_factory/parts/objects/O015_Book_Open.png"
+    },
+    {
+      "id": "O016",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        153,
+        122
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        153,
+        121
+      ],
+      "file_bytes": 41016,
+      "sha256": "447553d32ed1098fa95b54b369fc0adf1986a7f72944c0878761cf7d085a0f02",
+      "texture_path": "res://map_factory/parts/objects/O016_Book_Stack.png"
+    },
+    {
+      "id": "O017",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        129,
+        106
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        129,
+        106
+      ],
+      "file_bytes": 26581,
+      "sha256": "419951186cf81b9a28b2d74b00ca74edb17d82669c1a3dfe416ac08fca4f3f28",
+      "texture_path": "res://map_factory/parts/objects/O017_Candle_Single.png"
+    },
+    {
+      "id": "O018",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        127,
+        132
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        127,
+        132
+      ],
+      "file_bytes": 29785,
+      "sha256": "adc18f5108948300fa3d35c35ffa46154800688c693890be6b96533ad35b209a",
+      "texture_path": "res://map_factory/parts/objects/O018_Candle_Group.png"
+    },
+    {
       "id": "O019",
       "category": "objects",
       "status": "needs_cleanup",
@@ -603,6 +1720,24 @@
       "file_bytes": 37376,
       "sha256": "20099e8252ed786690984755cb0b74ed971832f9b0d5bf225c20cfb933763093",
       "texture_path": "res://map_factory/parts/objects/O019_Astrolabe_Gold.png"
+    },
+    {
+      "id": "O020",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        210,
+        210
+      ],
+      "alpha_bbox": [
+        18,
+        18,
+        193,
+        193
+      ],
+      "file_bytes": 4009,
+      "sha256": "9a91328d888dc9aa4410545041249d6e22eb4da0b874c7710391dc19e044e922",
+      "texture_path": "res://map_factory/parts/objects/O020_Compass_Decoration.png"
     },
     {
       "id": "O021",
@@ -623,6 +1758,96 @@
       "texture_path": "res://map_factory/parts/objects/O021_Seashell_Large.png"
     },
     {
+      "id": "O022",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        69,
+        77
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        69,
+        77
+      ],
+      "file_bytes": 12600,
+      "sha256": "a8e62d84f1cfce8cceb99ef6505f94e8ecbfddcd83354252ec44c1bc049511a2",
+      "texture_path": "res://map_factory/parts/objects/O022_Seashell_Small.png"
+    },
+    {
+      "id": "O023",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        128,
+        123
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        127,
+        123
+      ],
+      "file_bytes": 33466,
+      "sha256": "1d6dfbd1810aa4ee82d8b5a6ee483807014918fcdb91e3f6788dd9992882db16",
+      "texture_path": "res://map_factory/parts/objects/O023_Small_Wooden_Box.png"
+    },
+    {
+      "id": "O024",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        66,
+        83
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        65,
+        83
+      ],
+      "file_bytes": 13314,
+      "sha256": "27b6604c7c405023f36cb487a8d4bab85802f4a4437589caa347eee6c59e4bcc",
+      "texture_path": "res://map_factory/parts/objects/O024_Small_Potion_Bottle.png"
+    },
+    {
+      "id": "O025",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        140,
+        237
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        140,
+        237
+      ],
+      "file_bytes": 67293,
+      "sha256": "812d84fe6ec834cb3b29b9cabb333e3858c9323b70b4106cf8afae4f2295575c",
+      "texture_path": "res://map_factory/parts/objects/O025_Decorative_Tray.png"
+    },
+    {
+      "id": "O026",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        130,
+        108
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        129,
+        108
+      ],
+      "file_bytes": 29729,
+      "sha256": "a5160a38f16489ac6401d0049f707c529acaa49eeca81664b38763e553b9a1f0",
+      "texture_path": "res://map_factory/parts/objects/O026_Flower_Vase_Small.png"
+    },
+    {
       "id": "P001",
       "category": "furniture",
       "status": "needs_cleanup",
@@ -641,6 +1866,60 @@
       "texture_path": "res://map_factory/parts/furniture/P001_Hero_Bed.png"
     },
     {
+      "id": "P002",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        186,
+        170
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        186,
+        170
+      ],
+      "file_bytes": 72038,
+      "sha256": "4090349e13314bdcaf2384aa954db98089dbf66bff9e9d2381ff4deaa496eb31",
+      "texture_path": "res://map_factory/parts/furniture/P002_Bed_Blanket_Blue.png"
+    },
+    {
+      "id": "P003",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        162,
+        88
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        162,
+        88
+      ],
+      "file_bytes": 30941,
+      "sha256": "e0a4c9073929c3db608b20d1ee45f0f365ce22a02810c123f46b2ba61fed0e71",
+      "texture_path": "res://map_factory/parts/furniture/P003_Bed_Pillow.png"
+    },
+    {
+      "id": "P004",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        296,
+        339
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        296,
+        339
+      ],
+      "file_bytes": 197610,
+      "sha256": "6dc57f2aa6edd8e031d95a5bb96716c4df2ce0b008af95254937dce46b2f2958",
+      "texture_path": "res://map_factory/parts/furniture/P004_Bed_Frame.png"
+    },
+    {
       "id": "P005",
       "category": "furniture",
       "status": "needs_cleanup",
@@ -657,6 +1936,24 @@
       "file_bytes": 180712,
       "sha256": "eae1d8c392f82109ed5be15482713a9c469d912faf00c059c574f5d7c3919695",
       "texture_path": "res://map_factory/parts/furniture/P005_Bedroom_Rug.png"
+    },
+    {
+      "id": "P006",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        238,
+        304
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        237,
+        304
+      ],
+      "file_bytes": 178622,
+      "sha256": "a2ec45f3b6a5d61a805710f434bd31b5ad8c1bc047e84e36ef4b2fa067acf559",
+      "texture_path": "res://map_factory/parts/furniture/P006_Bedroom_Rug_Variant.png"
     },
     {
       "id": "P007",
@@ -695,6 +1992,96 @@
       "texture_path": "res://map_factory/parts/furniture/P008_Wooden_Desk.png"
     },
     {
+      "id": "P009",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        393,
+        275
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        392,
+        275
+      ],
+      "file_bytes": 185885,
+      "sha256": "1cf6319abc66287f903cff9c33e74e53dab720180ba6a49319a1b30cefd07852",
+      "texture_path": "res://map_factory/parts/furniture/P009_Wooden_Table_Large.png"
+    },
+    {
+      "id": "P010",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        151,
+        110
+      ],
+      "alpha_bbox": [
+        29,
+        1,
+        150,
+        110
+      ],
+      "file_bytes": 26889,
+      "sha256": "913fc805abe0e2f0d93eb7de764fc8f01992d2eb6987898609e0b40df521113a",
+      "texture_path": "res://map_factory/parts/furniture/P010_Wooden_Table_Small.png"
+    },
+    {
+      "id": "P011",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        112,
+        166
+      ],
+      "alpha_bbox": [
+        0,
+        4,
+        112,
+        166
+      ],
+      "file_bytes": 34484,
+      "sha256": "906cee709bb9a4617198e6615d14643c872aab5b8a99b9c01c0cd7bdf8fe6f4f",
+      "texture_path": "res://map_factory/parts/furniture/P011_Wooden_Chair.png"
+    },
+    {
+      "id": "P012",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        119,
+        115
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        119,
+        115
+      ],
+      "file_bytes": 26573,
+      "sha256": "ce0a897adbd2f919b103348831a16b809c44eda30d4c9a9513141ceba51fa0d2",
+      "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png"
+    },
+    {
+      "id": "P013",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        320,
+        186
+      ],
+      "alpha_bbox": [
+        28,
+        55,
+        308,
+        174
+      ],
+      "file_bytes": 4924,
+      "sha256": "43421b9a944f5196e9092b02eff8792a8262f376d0956de64a60ae0340f10721",
+      "texture_path": "res://map_factory/parts/furniture/P013_Wooden_Bench.png"
+    },
+    {
       "id": "P014",
       "category": "furniture",
       "status": "needs_cleanup",
@@ -731,6 +2118,24 @@
       "texture_path": "res://map_factory/parts/furniture/P015_Bookshelf_Small.png"
     },
     {
+      "id": "P016",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        296,
+        276
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        295,
+        276
+      ],
+      "file_bytes": 105735,
+      "sha256": "1b5e00fca07078a4ae807282527e0b62f4cc5fc992e1dfe761522a06fe7baa9e",
+      "texture_path": "res://map_factory/parts/furniture/P016_Wooden_Cabinet.png"
+    },
+    {
       "id": "P017",
       "category": "furniture",
       "status": "needs_cleanup",
@@ -749,6 +2154,114 @@
       "texture_path": "res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png"
     },
     {
+      "id": "P018",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        191,
+        230
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        190,
+        182
+      ],
+      "file_bytes": 56732,
+      "sha256": "926c6a3e3d5d0a5dbfaa26e1d766077bd91aebb2d079123799766f10e359a063",
+      "texture_path": "res://map_factory/parts/furniture/P018_Treasure_Chest_Open.png"
+    },
+    {
+      "id": "P019",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        158,
+        164
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        157,
+        163
+      ],
+      "file_bytes": 53121,
+      "sha256": "ae27a69bbdff3f4905f5c9732093f310c886ce70c40debfafb13f8c2ff89c1fb",
+      "texture_path": "res://map_factory/parts/furniture/P019_Wooden_Crate_Large.png"
+    },
+    {
+      "id": "P020",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        126,
+        125
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        125,
+        125
+      ],
+      "file_bytes": 33445,
+      "sha256": "280678f0bf7072a6990502eb3d1b202fe92150843c8638b5a284ed40dfdf67c8",
+      "texture_path": "res://map_factory/parts/furniture/P020_Wooden_Crate_Small.png"
+    },
+    {
+      "id": "P021",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        126,
+        125
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        125,
+        125
+      ],
+      "file_bytes": 31404,
+      "sha256": "9d8c1742736594faebe880dcd4c23302d33fc4e2a84b390242b86138c708b012",
+      "texture_path": "res://map_factory/parts/furniture/P021_Wooden_Box.png"
+    },
+    {
+      "id": "P022",
+      "category": "furniture",
+      "status": "needs_cleanup",
+      "dimensions": [
+        244,
+        172
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        243,
+        172
+      ],
+      "file_bytes": 70165,
+      "sha256": "d1473cb05c3a9e529039ca1ecd6143becfdf7ebb20386780fa9a644d9c39c192",
+      "texture_path": "res://map_factory/parts/furniture/P022_Storage_Chest.png"
+    },
+    {
+      "id": "S001",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        96,
+        55,
+        145,
+        74
+      ],
+      "file_bytes": 750,
+      "sha256": "760a602044accad7790d7c7bff808245ee9551511210f4caa2d2b8ef4ec3b11c",
+      "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png"
+    },
+    {
       "id": "S002",
       "category": "shadows",
       "status": "needs_cleanup",
@@ -765,6 +2278,42 @@
       "file_bytes": 1094,
       "sha256": "5cd8559a7c5f260c6cf7d6c58bc7afb809ab9f778da4eb4ef9f6b61cbdfb981e",
       "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png"
+    },
+    {
+      "id": "S003",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        35,
+        40,
+        206,
+        89
+      ],
+      "file_bytes": 1881,
+      "sha256": "68afec08ba8d2c41dfc351d79d8039edf1309ecef3ea9b446c703e69b3958b1b",
+      "texture_path": "res://map_factory/parts/shadows/S003_Shadow_Contact_Large.png"
+    },
+    {
+      "id": "S004",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        81,
+        49,
+        160,
+        80
+      ],
+      "file_bytes": 1097,
+      "sha256": "40be4fbd290ce7e543fa12e31197d78c266c1e23a119f478d8af467c59043393",
+      "texture_path": "res://map_factory/parts/shadows/S004_Shadow_Character.png"
     },
     {
       "id": "S005",
@@ -801,6 +2350,186 @@
       "file_bytes": 2119,
       "sha256": "a9e679297987d372255785b9e3bf8eb3b1c78267ed4686f4faad805f5a83aaa0",
       "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png"
+    },
+    {
+      "id": "S007",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        83,
+        50,
+        158,
+        79
+      ],
+      "file_bytes": 999,
+      "sha256": "22dd8a32c098b8311e63dc72b74ce1cb5f3f26c9fcda067f898fcd121334ce26",
+      "texture_path": "res://map_factory/parts/shadows/S007_Shadow_Chair.png"
+    },
+    {
+      "id": "S008",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        0,
+        39,
+        240,
+        90
+      ],
+      "file_bytes": 2048,
+      "sha256": "b3aa76ef57089f65a03b526e912b164102c8e52f06a831996c042b06cb2f6cbc",
+      "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png"
+    },
+    {
+      "id": "S009",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        73,
+        42,
+        168,
+        87
+      ],
+      "file_bytes": 1434,
+      "sha256": "9393c472f4bd3d488e1c8cddc09ce37deae0ecf0601eb8b6e9270dd7052154ef",
+      "texture_path": "res://map_factory/parts/shadows/S009_Shadow_Chest.png"
+    },
+    {
+      "id": "S010",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        85,
+        49,
+        156,
+        80
+      ],
+      "file_bytes": 1066,
+      "sha256": "eb28602c7fa4cf56bf23e643722acc6fdf81ae2fd2b914c578256d19f20d6ffd",
+      "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png"
+    },
+    {
+      "id": "S011",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        66,
+        48,
+        215,
+        97
+      ],
+      "file_bytes": 1833,
+      "sha256": "238a503cfd14ddc9947f73e45db8f86176a76e52d924360c6cfb1053a8c27fd0",
+      "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png"
+    },
+    {
+      "id": "S012",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        35,
+        35,
+        240,
+        110
+      ],
+      "file_bytes": 2525,
+      "sha256": "cffddb4c2ecdd5e7e70f8d85204a639a24b718b29755956c507845702c3fb71a",
+      "texture_path": "res://map_factory/parts/shadows/S012_Shadow_Column_Long.png"
+    },
+    {
+      "id": "S013",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        0,
+        54,
+        240,
+        91
+      ],
+      "file_bytes": 1470,
+      "sha256": "fdaa2a58f398140dc0d4ecbb097201db24665c4c4ad38785bdc490f47f15ae7e",
+      "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png"
+    },
+    {
+      "id": "S014",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        59,
+        37,
+        210,
+        108
+      ],
+      "file_bytes": 2331,
+      "sha256": "9fc450fa6ad30b803edc01576c8ac805a1c9cb324636d6f4cd332794b494b12e",
+      "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png"
+    },
+    {
+      "id": "S015",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        11,
+        47,
+        240,
+        98
+      ],
+      "file_bytes": 2004,
+      "sha256": "7b6e04c645077e5eb15764a2011db53b6243b7b2e0a838eb5698c81d67d6a1a8",
+      "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png"
+    },
+    {
+      "id": "S016",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        240,
+        128
+      ],
+      "alpha_bbox": [
+        37,
+        33,
+        240,
+        112
+      ],
+      "file_bytes": 2919,
+      "sha256": "3074cf88b36db05d3fef5fdd40e71576c39ef0176777c19db04a90fed1df009c",
+      "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png"
     },
     {
       "id": "ST001",
@@ -947,6 +2676,42 @@
       "texture_path": "res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png"
     },
     {
+      "id": "ST009",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "dimensions": [
+        113,
+        112
+      ],
+      "alpha_bbox": [
+        24,
+        29,
+        99,
+        99
+      ],
+      "file_bytes": 14217,
+      "sha256": "4b5dedc64b13a742c89fe305827a7938e6a3ef0451dfaa929412cd89b008dac2",
+      "texture_path": "res://map_factory/parts/stairs/ST009_Stone_Railing_Straight.png"
+    },
+    {
+      "id": "ST010",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "dimensions": [
+        139,
+        115
+      ],
+      "alpha_bbox": [
+        4,
+        28,
+        118,
+        97
+      ],
+      "file_bytes": 20170,
+      "sha256": "a7adc5729626b9fa04f557c36553b868dde227d239c0f334b3b8ba8785f5eab1",
+      "texture_path": "res://map_factory/parts/stairs/ST010_Stone_Railing_Broken.png"
+    },
+    {
       "id": "ST011",
       "category": "stairs",
       "status": "needs_cleanup",
@@ -1001,6 +2766,24 @@
       "texture_path": "res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png"
     },
     {
+      "id": "ST014",
+      "category": "stairs",
+      "status": "needs_cleanup",
+      "dimensions": [
+        176,
+        92
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        175,
+        92
+      ],
+      "file_bytes": 35567,
+      "sha256": "5d637a3716ccfd89dfd33041b4a7c1626d024e210df2ec608f75f5c322b47f4d",
+      "texture_path": "res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png"
+    },
+    {
       "id": "V001",
       "category": "vegetation",
       "status": "needs_cleanup",
@@ -1017,6 +2800,42 @@
       "file_bytes": 165470,
       "sha256": "a1d2287826b58a9755838f7cd5738ddab37fb0202fc3bbd7e7bb275af37178cc",
       "texture_path": "res://map_factory/parts/vegetation/V001_Ivy_Hanging_Long.png"
+    },
+    {
+      "id": "V002",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        173,
+        217
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        172,
+        217
+      ],
+      "file_bytes": 75136,
+      "sha256": "bf8938707f9e886fe13afc435ffe16c353f337ff32afb2d0567f7923fcd52f9e",
+      "texture_path": "res://map_factory/parts/vegetation/V002_Ivy_Hanging_Medium.png"
+    },
+    {
+      "id": "V003",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        133,
+        169
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        133,
+        169
+      ],
+      "file_bytes": 49603,
+      "sha256": "391dc5185acf1f7d3a5fcb2f1e1e7ae711479c655b13e6e5e6ff85b6b55c6cf4",
+      "texture_path": "res://map_factory/parts/vegetation/V003_Ivy_Hanging_Short.png"
     },
     {
       "id": "V004",
@@ -1089,6 +2908,24 @@
       "file_bytes": 61439,
       "sha256": "ff6cdd565489bff27d2cc270291b4624662866b6c248e7ed17632dc48cf2e904",
       "texture_path": "res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png"
+    },
+    {
+      "id": "V008",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        130,
+        174
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        129,
+        174
+      ],
+      "file_bytes": 46190,
+      "sha256": "a81507b5b7d65d4bdeb16a171a727a3080406634b285428a9986e26cdd47fede",
+      "texture_path": "res://map_factory/parts/vegetation/V008_Ivy_Wall_Cluster.png"
     },
     {
       "id": "V009",
@@ -1181,6 +3018,60 @@
       "texture_path": "res://map_factory/parts/vegetation/V013_Blue_Flowers_Large.png"
     },
     {
+      "id": "V014",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        155,
+        182
+      ],
+      "alpha_bbox": [
+        3,
+        56,
+        155,
+        178
+      ],
+      "file_bytes": 42380,
+      "sha256": "12f719122686a25c9a7beb05b69f8094bb6b1a55b9d391406e8908ff8acf0f4e",
+      "texture_path": "res://map_factory/parts/vegetation/V014_Blue_Flowers_Small.png"
+    },
+    {
+      "id": "V015",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        160,
+        131
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        160,
+        131
+      ],
+      "file_bytes": 42132,
+      "sha256": "939af3d0b478c94ce5da745b7fec541024b9ca80ffc6862fbd2ff4d95e1e8c2c",
+      "texture_path": "res://map_factory/parts/vegetation/V015_Orange_Flowers.png"
+    },
+    {
+      "id": "V016",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        147,
+        166
+      ],
+      "alpha_bbox": [
+        0,
+        22,
+        147,
+        166
+      ],
+      "file_bytes": 52877,
+      "sha256": "5e28e5de04bf2cf2e4ee33446b7031fa8c8284217a876f6c4d85ddd56b7b7b4f",
+      "texture_path": "res://map_factory/parts/vegetation/V016_Green_Shrub.png"
+    },
+    {
       "id": "V017",
       "category": "vegetation",
       "status": "needs_cleanup",
@@ -1197,6 +3088,42 @@
       "file_bytes": 52166,
       "sha256": "f6e23f69bf0ba4ce184e272fa2a0d785f57e5639cf8209771a3e7e7ea2589e43",
       "texture_path": "res://map_factory/parts/vegetation/V017_Tropical_Plant_Large.png"
+    },
+    {
+      "id": "V018",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        167,
+        168
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        167,
+        168
+      ],
+      "file_bytes": 63211,
+      "sha256": "e4226d5663ef0007b3877ac5733a6d93cd66d45635cc11261683ed64947d0b27",
+      "texture_path": "res://map_factory/parts/vegetation/V018_Tropical_Plant_Medium.png"
+    },
+    {
+      "id": "V019",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        157,
+        152
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        157,
+        152
+      ],
+      "file_bytes": 54813,
+      "sha256": "c902034c8133b4e6b69e7382637d20a436b44d2eb70e71874a994c80bc04dbaf",
+      "texture_path": "res://map_factory/parts/vegetation/V019_Tropical_Plant_Small.png"
     },
     {
       "id": "V020",
@@ -1233,6 +3160,24 @@
       "file_bytes": 57132,
       "sha256": "73ee5c55493495919e40ff3f7e730efd9fadaecf2f465ed4ca5aca0ba8cab0a4",
       "texture_path": "res://map_factory/parts/vegetation/V021_Flower_Pot_Small.png"
+    },
+    {
+      "id": "V022",
+      "category": "vegetation",
+      "status": "needs_cleanup",
+      "dimensions": [
+        160,
+        111
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        160,
+        111
+      ],
+      "file_bytes": 40012,
+      "sha256": "6794a1858dafb5fd9bd511bc89ae8d67213e1ae82be32be90002b6ffc2b91ede",
+      "texture_path": "res://map_factory/parts/vegetation/V022_Wooden_Planter.png"
     },
     {
       "id": "V023",
@@ -1325,6 +3270,24 @@
       "texture_path": "res://map_factory/parts/walls/W003_Stone_Wall_Broken.png"
     },
     {
+      "id": "W004",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        193,
+        112
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        193,
+        112
+      ],
+      "file_bytes": 56125,
+      "sha256": "d48d83badf489ff89c25110b89938df13323c8647e68ad5d7de9176fda05c5e7",
+      "texture_path": "res://map_factory/parts/walls/W004_Stone_Wall_Tall.png"
+    },
+    {
       "id": "W005",
       "category": "walls",
       "status": "needs_cleanup",
@@ -1341,6 +3304,78 @@
       "file_bytes": 112035,
       "sha256": "fe7c1c0b026307ba5e67bf5aebc7961f3f2f27ef3105d0885362465751de3f86",
       "texture_path": "res://map_factory/parts/walls/W005_Stone_Wall_Low.png"
+    },
+    {
+      "id": "W006",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        180,
+        239
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        180,
+        232
+      ],
+      "file_bytes": 107425,
+      "sha256": "75795b13b96f9cebc3353b18a5717558b207108c3664a8a85cde98012bff2775",
+      "texture_path": "res://map_factory/parts/walls/W006_Stone_Wall_Corner_NW.png"
+    },
+    {
+      "id": "W007",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        157,
+        250
+      ],
+      "alpha_bbox": [
+        31,
+        0,
+        153,
+        239
+      ],
+      "file_bytes": 74053,
+      "sha256": "dde3e49c4380c11a296eefa4cfad76c0c982845cc8b17f36eb84e52074a4067f",
+      "texture_path": "res://map_factory/parts/walls/W007_Stone_Wall_Corner_NE.png"
+    },
+    {
+      "id": "W008",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        180,
+        239
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        180,
+        239
+      ],
+      "file_bytes": 109250,
+      "sha256": "4ca11637f5ed764a6cabc0f729c6b5466b4832f6cf8345310f2aaad5bf34c918",
+      "texture_path": "res://map_factory/parts/walls/W008_Stone_Wall_Corner_SW.png"
+    },
+    {
+      "id": "W009",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        157,
+        250
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        157,
+        250
+      ],
+      "file_bytes": 87128,
+      "sha256": "6042e78ca66a6fafe005f6e041adc8e354c0fbdee5214c39f3d2b5b60b843966",
+      "texture_path": "res://map_factory/parts/walls/W009_Stone_Wall_Corner_SE.png"
     },
     {
       "id": "W010",
@@ -1449,6 +3484,60 @@
       "file_bytes": 49318,
       "sha256": "a70a9fdcc189b463cf99c6cbd18385c31dc854f9dac6ce7155d60ae99682520d",
       "texture_path": "res://map_factory/parts/walls/W015_Stone_Wall_With_Banner.png"
+    },
+    {
+      "id": "W016",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        201,
+        235
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        200,
+        235
+      ],
+      "file_bytes": 115786,
+      "sha256": "8b41a781b77607d2d44380b354dc457d51e12c1bbc53f9281ed2597e2cb48cdc",
+      "texture_path": "res://map_factory/parts/walls/W016_Stone_Wall_Doorway.png"
+    },
+    {
+      "id": "W017",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        191,
+        118
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        191,
+        118
+      ],
+      "file_bytes": 58401,
+      "sha256": "1ad6cc921458cf8e54a9d1d35ee901a31e441c4929fd377a140567a0ffff0e76",
+      "texture_path": "res://map_factory/parts/walls/W017_Stone_Wall_Ruined_Top.png"
+    },
+    {
+      "id": "W018",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        107,
+        101
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        107,
+        101
+      ],
+      "file_bytes": 28105,
+      "sha256": "a0213a0f8cc4ce1b7defa50ba80df348f83a1d21dd92cd622829eb15b30e6a6d",
+      "texture_path": "res://map_factory/parts/walls/W018_Stone_Wall_Inner_Corner.png"
     }
   ]
 }
