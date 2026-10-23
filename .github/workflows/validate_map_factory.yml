@@ -4,6 +4,8 @@ on:
     paths:
       - "map_factory/maps/**/*.json"
       - "tools/map_factory_cli.py"
+      - "tools/map_factory_layers.py"
+      - "tools/map_factory_orientation.py"
       - "tools/tests/test_map*.py"
       - ".github/workflows/validate_map_factory.yml"
   workflow_dispatch:

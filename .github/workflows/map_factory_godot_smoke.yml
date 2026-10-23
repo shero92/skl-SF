@@ -9,6 +9,8 @@ on:
       - "scenes/ocean_background.gd"
       - "scenes/room_light_fx.gd"
       - "tools/map_factory_godot_smoke.gd"
+      - "tools/test_cardinal_map_blocks.gd"
+      - "tools/map_factory_orientation.py"
       - ".github/workflows/map_factory_godot_smoke.yml"
   workflow_dispatch:
 jobs:
@@ -30,3 +32,5 @@ jobs:
         run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --editor --quit
       - name: Build and check every map including ocean and block count
         run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --script res://tools/map_factory_godot_smoke.gd
+      - name: Verify four directions and upright directional sprite variants
+        run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --script res://tools/test_cardinal_map_blocks.gd
