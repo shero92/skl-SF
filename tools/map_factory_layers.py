@@ -47,7 +47,7 @@ def create_layer_stack(snapshot,catalog):
                 "flip_h":bool(block.get("flip_h",False)),
                 "z_index":int(block.get("z_index",0)),
                 "texture_path":record["texture_path"],
-                "pixel_size":record["pixel_size"],"origin":record.get("origin",[0,0]),
+                "pixel_size":record.get("pixel_size",[64,64]),"origin":record.get("origin",[0,0]),
                 "status":record.get("status","planned"),
                 "collision":deepcopy(block.get("collision",record.get("collision",{}))),
                 "shadow":deepcopy(block.get("shadow",record.get("shadow",{"type":"none"}))),
