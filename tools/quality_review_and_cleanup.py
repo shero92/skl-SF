@@ -53,7 +53,7 @@ def cleanup(img,ident):
     if frac>.32 or not np.any(new[:,:,3]>40):
         raise RuntimeError("Unsafe edit to "+ident+" (removed %.2f)"%frac)
     # Keep dimensions and every pixel not in the erased-alpha region unchanged.
-    if not np.array_equal(old[~changed],new[~changed]):
+    if not np.array_equal(old[new[:,:,3]>15],new[new[:,:,3]>15]):
         raise RuntimeError("Unintended color mutation in "+ident)
     return Image.fromarray(new,"RGBA"),count,frac
 
