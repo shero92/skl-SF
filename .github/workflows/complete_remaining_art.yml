@@ -1,0 +1,47 @@
+name: Complete remaining 31 game art assets
+on:
+  push:
+    paths:
+      - "tools/generate_remaining_art.py"
+      - ".github/workflows/complete_remaining_art.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Setup art tools
+        run: python -m pip install "Pillow>=10,<13"
+      - name: Render missing sprite files and update catalog
+        run: python tools/generate_remaining_art.py
+      - name: Audit PNG integrity, transparency and metadata
+        run: python tools/audit_assets.py
+      - name: Build QA galleries
+        run: python tools/build_asset_previews.py
+      - name: Validate all registered paths are on disk
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          j=json.loads(Path("map_factory/metadata/asset_index.json").read_text())
+          missing=[a["id"] for a in j["assets"] if not Path(a["texture_path"].removeprefix("res://")).is_file()]
+          assert len(j["assets"])==218, len(j["assets"])
+          assert not missing, missing
+          print("Verified: 218/218 independent PNG paths exist")
+          PY
+      - name: Commit all new art and documentation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map_factory/parts map_factory/metadata docs/ASSET_AUDIT.md docs/ASSET_GALLERY.md docs/previews
+          if ! git diff --cached --quiet; then
+            git commit -m "Complete all 218 named game sprites and refresh metadata"
+            git push
+          fi
