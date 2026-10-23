@@ -437,6 +437,7 @@ def clone_map(root, new_map, from_map):
         raise ValueError("Map already exists: " + new_map)
     source = get_latest(root, from_map, reg)
     copy = deepcopy(source)
+    copy.pop("layer_stack", None)  # Recompile derived graph under the new map identity.
     copy["map_id"] = new_map
     copy["version"] = 1
     copy["parent_version"] = None
