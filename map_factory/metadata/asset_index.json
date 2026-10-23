@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "asset_count": 227,
-  "extracted_count": 227,
+  "asset_count": 229,
+  "extracted_count": 229,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
   "assets": [
@@ -3301,6 +3301,124 @@
           "V013"
         ],
         "sha256": "430f6f1a027a04f9c8d4d9d18d5078f7b32ec9655d66f3e39a70fd8fc69f1075",
+        "approved": false
+      },
+      "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
+    },
+    {
+      "id": "E023",
+      "name": "Coastal Foundation No Water Left",
+      "category": "environment",
+      "subtype": "limestone_cliff_facing",
+      "texture_path": "res://map_factory/parts/environment/E023_Coastal_Foundation_No_Water_Left.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        340,
+        248
+      ],
+      "origin": [
+        170,
+        242
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          216,
+          48
+        ],
+        "offset": [
+          0,
+          -36
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.19,
+        "offset_x": 4,
+        "offset_y": 9
+      },
+      "tags": [
+        "stone",
+        "coast",
+        "dry_sprite",
+        "sea_layer_separate",
+        "ivy"
+      ],
+      "reusable": true,
+      "y_sort": true,
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "W005",
+          "W012",
+          "W017",
+          "ST010",
+          "V023",
+          "V005",
+          "V012",
+          "V011"
+        ],
+        "sha256": "df220726ccadd4cf41f9221d0f85983b58598eb1cd8bce733c25a1275627428c",
+        "approved": false
+      },
+      "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
+    },
+    {
+      "id": "E024",
+      "name": "Coastal Foundation No Water Right",
+      "category": "environment",
+      "subtype": "limestone_cliff_facing",
+      "texture_path": "res://map_factory/parts/environment/E024_Coastal_Foundation_No_Water_Right.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        340,
+        248
+      ],
+      "origin": [
+        170,
+        242
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          216,
+          48
+        ],
+        "offset": [
+          0,
+          -36
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.19,
+        "offset_x": 4,
+        "offset_y": 9
+      },
+      "tags": [
+        "stone",
+        "coast",
+        "dry_sprite",
+        "sea_layer_separate",
+        "ivy"
+      ],
+      "reusable": true,
+      "y_sort": true,
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "W005",
+          "W012",
+          "W017",
+          "ST010",
+          "V023",
+          "V005",
+          "V012",
+          "V011"
+        ],
+        "sha256": "d6bf1bee986a401cffc8593ccf7fc98f1702f16c7a7c1ea1083898b9715e6d03",
         "approved": false
       },
       "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
@@ -10714,6 +10832,6 @@
       "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
     }
   ],
-  "generated_png_count": 227,
+  "generated_png_count": 229,
   "quality_audit_path": "res://map_factory/metadata/quality_review.json"
 }
