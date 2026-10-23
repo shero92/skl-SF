@@ -15,6 +15,137 @@
     },
     {
       "op": "set_property",
+      "key": "navigation",
+      "value": {
+        "schema_version": 1,
+        "origin": [
+          226,
+          225
+        ],
+        "cell_size": 64,
+        "grid_size": [
+          17,
+          10
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "upper_terrace_floor",
+            "rect": [
+              1,
+              1,
+              15,
+              8
+            ],
+            "surface": "stone",
+            "allow": [
+              "walk",
+              "fly"
+            ],
+            "floor_height": 0,
+            "ceiling_height": null,
+            "requires": {
+              "walk": [],
+              "fly": []
+            },
+            "review_status": "needs_review"
+          },
+          {
+            "id": "entrance_stairs",
+            "rect": [
+              7,
+              8,
+              3,
+              2
+            ],
+            "surface": "stairs",
+            "allow": [
+              "walk",
+              "fly"
+            ],
+            "floor_height": -24,
+            "ceiling_height": null,
+            "requires": {
+              "walk": [],
+              "fly": []
+            },
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [
+          {
+            "instance_id": "HeroBed",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 75
+          },
+          {
+            "instance_id": "WritingTable",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 80
+          },
+          {
+            "instance_id": "FrontWallLeftWide",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 78
+          },
+          {
+            "instance_id": "LeftPerimeterWallMid",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 110
+          },
+          {
+            "instance_id": "RightPerimeterWallMid",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 110
+          }
+        ],
+        "links": [
+          {
+            "id": "coastal_stair_exit",
+            "from": [
+              8,
+              8
+            ],
+            "to": [
+              8,
+              9
+            ],
+            "modes": [
+              "walk",
+              "fly"
+            ],
+            "requires": []
+          }
+        ],
+        "note": "Navigation provisional, unreviewed and blocked by default for all nonfloor areas. No changes to characters."
+      }
+    },
+    {
+      "op": "set_property",
       "key": "visual_qa",
       "value": {
         "status": "needs_review",
