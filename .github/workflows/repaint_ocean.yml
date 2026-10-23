@@ -1,0 +1,36 @@
+name: Repaint looping pixel sea
+on:
+  push:
+    paths:
+      - "tools/repaint_ocean.py"
+      - ".github/workflows/repaint_ocean.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  paint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Pillow
+        run: python -m pip install "Pillow>=10,<13"
+      - name: Render the detailed seamless sea and wave animation frames
+        run: python tools/repaint_ocean.py
+      - name: Validate artwork and metadata
+        run: python tools/audit_assets.py
+      - name: Rebuild ocean art review gallery
+        run: python tools/build_asset_previews.py
+      - name: Commit improved water textures
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map_factory/parts/environment/E010_*.png map_factory/parts/environment/E011_*.png map_factory/parts/environment/E012_*.png map_factory/parts/environment/E013_*.png map_factory/parts/environment/E014_*.png map_factory/metadata/asset_index.json map_factory/metadata/production_queue.csv map_factory/metadata/asset_audit.json docs/previews/ocean_seam_review.png docs/previews/environment.png docs/ASSET_GALLERY.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Upgrade ocean to detailed seamless 512px waves with four animation frames"
+            git push
+          fi
