@@ -31,7 +31,7 @@ jobs:
       - name: Validate all immutable map versions
         run: python tools/map_factory_cli.py validate
       - name: Run tests
-        run: python -m unittest discover -s tools/tests -p 'test_map_factory.py' -v
+        run: python -m unittest discover -s tools/tests -p 'test_map*.py' -v
       - name: Verify complete PNG catalog
         run: python tools/audit_assets.py
       - name: Commit generated map versions, reused blocks and metadata
