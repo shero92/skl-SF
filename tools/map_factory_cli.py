@@ -378,6 +378,7 @@ def build_block_manifest(snapshot, catalog):
             used.add(part["id"])
             orientation=resolve_orientation(part,catalog)
             resolved=catalog[orientation["resolved_asset_id"]] if orientation else record
+            if orientation: used.add(orientation["resolved_asset_id"])
             instances.append({
                 "instance_id": part["instance_id"],
                 "asset_id": part["id"],
@@ -405,6 +406,7 @@ def build_block_manifest(snapshot, catalog):
         record = catalog[item["id"]]
         orientation=resolve_orientation(item,catalog)
         resolved=catalog[orientation["resolved_asset_id"]] if orientation else record
+        if orientation: used.add(orientation["resolved_asset_id"])
         floor.append({
             "x": item["x"], "y": item["y"],
             "asset_id": item["id"],

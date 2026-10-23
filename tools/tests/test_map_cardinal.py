@@ -65,6 +65,8 @@ class FourDirections(unittest.TestCase):
         self.assertEqual(block["asset_id"],"P001")
         self.assertEqual(block["render_asset_id"],"P004")
         self.assertEqual(block["texture_path"],"res://invalid/P004.png")
+        self.assertIn("P004",meta["reused_asset_ids"])
+        self.assertIn("P004",v2["layer_stack"]["unique_asset_ids"])
     def test_invalid_orientation_rejected(self):
         for val in ["northeast","top","90",90]:
             with self.subTest(value=val):

@@ -108,6 +108,7 @@ def create_layer_stack(snapshot,catalog):
     used.update(x["id"] for x in snapshot.get("tile_overrides",[]))
     for entries in passes.values():
         used.update(x["asset_id"] for x in entries if x.get("asset_id"))
+        used.update(x["orientation"]["resolved_asset_id"] for x in entries if x.get("orientation"))
     return {"schema_version":1,"map_id":snapshot["map_id"],
       "version":snapshot["version"],
       "processing_passes":list(PASS_NAMES),
