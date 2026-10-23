@@ -57,11 +57,19 @@ func _run_smoke() -> void:
                 ok = false
             elif tile_id == "F014":
                 var img := tile.texture.get_image()
-                var col := img.get_pixel(img.get_width() / 2, img.get_height() / 2)
+                var blue_pixels := 0
+                var tested_pixels := 0
+                for py in range(0, img.get_height(), 4):
+                    for px in range(0, img.get_width(), 4):
+                        var col := img.get_pixel(px, py)
+                        tested_pixels += 1
+                        if col.b > col.r * 1.4 and col.b > col.g * 1.16 and col.b > 0.37:
+                            blue_pixels += 1
                 print("FOCAL_COMPASS_DIAGNOSTIC ", id, " ", tile_name,
-                      " texture=", tile.texture.resource_path, " center=", col)
-                if col.b < col.r * 1.05:
-                    push_error("Compass floor block has unexpectedly low-blue visual center")
+                      " texture=", tile.texture.resource_path, " blue_fraction=",
+                      float(blue_pixels) / float(tested_pixels))
+                if tested_pixels == 0 or float(blue_pixels) / float(tested_pixels) < 0.15:
+                    push_error("Compass tile is missing its blue detail")
                     ok = false
         var layer_nodes := {
             "background_objects": "DistantRuins",
