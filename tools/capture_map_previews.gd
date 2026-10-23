@@ -21,7 +21,8 @@ func _capture_all() -> void:
         {"id": "hero_room_01", "version": 5, "file": "hero_room_01_v0005.png"},
         {"id": "hero_room_01", "version": 6, "file": "hero_room_01_v0006.png"},
         {"id": "hero_room_01", "version": 7, "file": "hero_room_01_v0007.png"},
-        {"id": "hero_room_01", "version": 8, "file": "hero_room_01_v0008.png"}
+        {"id": "hero_room_01", "version": 8, "file": "hero_room_01_v0008.png"},
+        {"id": "hero_room_01", "version": 9, "file": "hero_room_01_v0009.png"}
     ]
     var failures := 0
     for case in cases:

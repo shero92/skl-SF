@@ -46,7 +46,8 @@ jobs:
                     "hero_room_01_v0005.png":(1536,1024),
                     "hero_room_01_v0006.png":(1536,1024),
                     "hero_room_01_v0007.png":(1536,1024),
-                    "hero_room_01_v0008.png":(1536,1024)}
+                    "hero_room_01_v0008.png":(1536,1024),
+                    "hero_room_01_v0009.png":(1536,1024)}
           base=Path("docs/previews/map_factory_renders")
           for filename,(w,h) in checks.items():
               path=base/filename
