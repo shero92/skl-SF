@@ -11,6 +11,25 @@ func _init() -> void:
     catalog.load_index()
     assets = AssetFactory.new(catalog)
 
+func build_latest(map_id: String, parent: Node2D) -> Node2D:
+    # The registry points to the last materialized map snapshot.
+    var registry_path := "res://map_factory/maps/index.json"
+    if not FileAccess.file_exists(registry_path):
+        push_error("Missing map registry; run map factory bootstrap")
+        return Node2D.new()
+    var reg: Variant = JSON.parse_string(FileAccess.get_file_as_string(registry_path))
+    if typeof(reg) != TYPE_DICTIONARY:
+        push_error("Invalid map registry")
+        return Node2D.new()
+    var maps: Dictionary = reg.get("maps", {})
+    if not maps.has(map_id):
+        push_error("Unknown map: " + map_id)
+        return Node2D.new()
+    var reference: Dictionary = maps[map_id]
+    var file := "res://" + String(reference.get("latest", ""))
+    return build_room(file, parent)
+
+
 func build_room(path: String, parent: Node2D) -> Node2D:
     var root := Node2D.new()
     root.name = "Room"
@@ -101,6 +120,7 @@ func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool
         var node := assets.create_asset(asset_id, item)
         node.name = String(item.get("instance_id", asset_id))
         node.position = Vector2(float(item.get("x", 0)), float(item.get("y", 0)))
+        node.rotation_degrees = float(item.get("rotation_degrees", 0))
         var s := float(item.get("scale", 1.0))
         node.scale = Vector2(s, s)
         node.z_index = int(item.get("z_index", 0))
