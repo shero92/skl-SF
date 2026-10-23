@@ -177,6 +177,59 @@ def normalize_existing(data: dict, map_id: str) -> dict:
     return data
 
 
+def build_block_manifest(snapshot, catalog):
+    """Resolve each placed reusable map part to its full authoritative catalog metadata."""
+    instances = []
+    used = set()
+    for layer in LAYERS:
+        for part in snapshot.get(layer, []):
+            record = catalog[part["id"]]
+            used.add(part["id"])
+            instances.append({
+                "instance_id": part["instance_id"],
+                "asset_id": part["id"],
+                "category": record["category"],
+                "subtype": record.get("subtype", "general"),
+                "texture_path": record["texture_path"],
+                "asset_status": record.get("status", "planned"),
+                "pixel_size": record.get("pixel_size", [0, 0]),
+                "anchor": record.get("origin", [0, 0]),
+                "layer": layer,
+                "position": [part["x"], part["y"]],
+                "scale": part.get("scale", 1.0),
+                "rotation_degrees": part.get("rotation_degrees", 0),
+                "flip_h": part.get("flip_h", False),
+                "z_index": part.get("z_index", 0),
+                "collision": part.get("collision", record.get("collision", {})),
+                "shadow": part.get("shadow", record.get("shadow", {})),
+                "tags": record.get("tags", []),
+                "source": record.get("source", {}),
+            })
+    floor = []
+    for item in snapshot.get("tile_overrides", []):
+        record = catalog[item["id"]]
+        floor.append({
+            "x": item["x"], "y": item["y"],
+            "asset_id": item["id"],
+            "category": record["category"],
+            "texture_path": record["texture_path"],
+            "pixel_size": record.get("pixel_size"),
+            "asset_status": record.get("status", "planned")
+        })
+        used.add(item["id"])
+    for ident in snapshot.get("floor_ids", []):
+        used.add(ident)
+    return {
+        "schema_version": 1, "map_id": snapshot["map_id"],
+        "version": snapshot["version"], "source_image": snapshot.get("source_image"),
+        "block_count": len(instances), "unique_asset_count": len(used),
+        "reused_asset_ids": sorted(used), "placed_blocks": instances,
+        "floor_pattern_ids": snapshot.get("floor_ids", []),
+        "floor_overrides": floor, "effects": snapshot.get("effects", []),
+        "note": "Resolved read-only map metadata. Edit map manifests, not this generated index."
+    }
+
+
 def write_revision(root, map_id, snapshot, reg, patch=None):
     base = map_base(map_id)
     n = snapshot["version"]
@@ -185,6 +238,9 @@ def write_revision(root, map_id, snapshot, reg, patch=None):
         raise ValueError("Revision already exists; refusing to overwrite history")
     dump(root, dest, snapshot)
     dump(root, base / "latest.json", snapshot)
+    metadata = build_block_manifest(snapshot, asset_catalog(root))
+    dump(root, base / "blocks" / f"v{n:04d}.json", metadata)
+    dump(root, base / "blocks" / "latest.json", metadata)
     reg["maps"][map_id] = {
         "map_id": map_id, "version": n,
         "latest": (base / "latest.json").as_posix(),
@@ -341,6 +397,11 @@ def validate_repository(root):
                 raise ValueError("Broken parent revision "+map_id)
         if read(root,version_file(map_id,n))!=current:
             raise ValueError("Latest snapshot does not match immutable version")
+        expected_blocks=build_block_manifest(current,catalog)
+        if read(root,map_base(map_id)/"blocks"/"latest.json")!=expected_blocks:
+            raise ValueError("Resolved latest blocks metadata mismatch")
+        if read(root,map_base(map_id)/"blocks"/f"v{n:04d}.json")!=expected_blocks:
+            raise ValueError("Versioned blocks metadata mismatch")
         validated.append((map_id,n))
     return validated
 
