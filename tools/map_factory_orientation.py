@@ -32,6 +32,8 @@ def resolve_orientation(block,catalog):
                            source.get("direction_asset_ids"))
         if not isinstance(variants,dict) or set(variants)!=set(FACINGS):
             raise ValueError("Perspective variants require four direction_asset_ids")
+        if len(set(variants.values())) != 4:
+            raise ValueError("Four perspective directions require four distinct art assets")
         for cardinal,asset_id in variants.items():
             if not isinstance(asset_id,str) or asset_id not in catalog:
                 raise ValueError("Missing directional art for "+cardinal)

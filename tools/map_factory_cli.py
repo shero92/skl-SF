@@ -342,6 +342,10 @@ def validate_room(data, catalog, expect_map_id=None):
         validate_navigation(data["navigation"], seen)
     if "visual_qa" in data:
         validate_visual_qa(data["visual_qa"])
+        if data["visual_qa"]["status"]=="approved":
+            source=data.get("source_image",{})
+            if not source.get("path") or not source.get("sha256"):
+                raise ValueError("Cannot approve a room without a committed reference image and SHA-256")
     # Resolve attachments, detect cycles and validate optional compiled layer graph.
     create_layer_stack(data,catalog)
     validate_layer_stack(data,catalog)
