@@ -45,6 +45,24 @@ func _run_smoke() -> void:
         if ground == null or ground.get_child_count() != expected_floor:
             push_error("Incorrect floor tiles: " + id)
             ok = false
+        # Validate actual floor ID-to-texture mapping, not just tile count.
+        for override in data.get("tile_overrides", []):
+            var cx: int = int(override.get("x", -1))
+            var cy: int = int(override.get("y", -1))
+            var tile_id: String = String(override.get("id", ""))
+            var tile_name := "Floor_%d_%d_%s" % [cx, cy, tile_id]
+            var tile := ground.get_node_or_null(tile_name) as Sprite2D if ground != null else null
+            if tile == null or tile.texture == null:
+                push_error("Missing actual override tile: " + id + " " + tile_name)
+                ok = false
+            elif tile_id == "F014":
+                var img := tile.texture.get_image()
+                var col := img.get_pixel(img.get_width() / 2, img.get_height() / 2)
+                print("FOCAL_COMPASS_DIAGNOSTIC ", id, " ", tile_name,
+                      " texture=", tile.texture.resource_path, " center=", col)
+                if col.b < col.r * 1.05:
+                    push_error("Compass floor block has unexpectedly low-blue visual center")
+                    ok = false
         var layer_nodes := {
             "background_objects": "DistantRuins",
             "ground_overlays": "GroundOverlays",
