@@ -74,6 +74,24 @@ class FourDirections(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"same environmental category"):
             resolve_orientation({"id":"P001","facing":"north","orientation_mode":"variants",
                 "direction_asset_ids":{"north":"P001","east":"P002","south":"CH001","west":"P002"}},self.catalog)
+    def test_floor_override_accepts_four_cardinal_facings(self):
+        for cardinal in FACINGS:
+            with self.subTest(cardinal=cardinal):
+                tile={"id":"F001","facing":cardinal}
+                self.assertEqual(resolve_orientation(tile,self.catalog)["facing"],cardinal)
+        self.room["tile_overrides"]=[{"x":2,"y":2,"id":"F001","facing":"east"}]
+        self.room.pop("layer_stack",None)
+        self.assertTrue(mf.validate_room(self.room,self.catalog))
+        self.room["tile_overrides"][0]["facing"]="diagonal"
+        with self.assertRaisesRegex(ValueError,"facing must"):
+            mf.validate_room(self.room,self.catalog)
+    def test_world_occlusion_pass_selection_is_versioned(self):
+        manifest=self._patch([{"op":"set_property","key":"occlusion_mode",
+                              "value":"world_y_sort"}])
+        v2=mf.apply(self.root,manifest)
+        self.assertEqual(v2["layer_stack"]["occlusion_mode"],"world_y_sort")
+        self.assertEqual(mf.validate_repository(self.root),[("demo_01",2)])
+
     def test_legacy_map_is_byte_compatible(self):
         layer=self.room["layer_stack"]["passes"]["decorations"][0]
         self.assertNotIn("orientation",layer)
