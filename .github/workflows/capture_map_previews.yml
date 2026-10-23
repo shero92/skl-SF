@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "tools/capture_map_previews.gd"
+      - "tools/create_hero_new_parts_preview.py"
       - ".github/workflows/capture_map_previews.yml"
   workflow_dispatch:
 permissions:
@@ -44,7 +45,8 @@ jobs:
                     "hero_room_01_v0004.png":(1536,1024),
                     "hero_room_01_v0005.png":(1536,1024),
                     "hero_room_01_v0006.png":(1536,1024),
-                    "hero_room_01_v0007.png":(1536,1024)}
+                    "hero_room_01_v0007.png":(1536,1024),
+                    "hero_room_01_v0008.png":(1536,1024)}
           base=Path("docs/previews/map_factory_renders")
           for filename,(w,h) in checks.items():
               path=base/filename
@@ -55,6 +57,10 @@ jobs:
               assert len(raw)>10000,(filename,len(raw))
               print(f"Verified {filename}: {w}x{h} {len(raw)} bytes")
           PY
+      - name: Install pillow for transparency review
+        run: python -m pip install "Pillow>=10,<13"
+      - name: Create transparent asset QA sheet for 5 new map sprites
+        run: python tools/create_hero_new_parts_preview.py
       - name: Upload PNG previews for inspection
         uses: actions/upload-artifact@v4
         with:
