@@ -1,0 +1,37 @@
+{
+  "mode": "patch",
+  "map_id": "hero_room_01",
+  "base_version": 6,
+  "analysis_status": "reviewed",
+  "note": "Keep high-resolution original stone surface texture but trim its thick beveled border at runtime and add understated warm seams; improve whole-room composition without replacing any PNG.",
+  "changes": [
+    {
+      "op": "set_property",
+      "key": "floor_tile_style",
+      "value": {
+        "enabled": true,
+        "tile_ids": [
+          "F001",
+          "F002"
+        ],
+        "crop_insets": [
+          9,
+          8,
+          9,
+          16
+        ],
+        "joint_color": "#776957",
+        "joint_opacity": 0.27,
+        "joint_width": 1.15
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "v7 stone floor interior + fine warm joins A/B test; floor morphology and contextual asset placement still require artist visual approval. Do not claim perfect match."
+      }
+    }
+  ]
+}
