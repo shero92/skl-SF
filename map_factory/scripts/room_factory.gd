@@ -31,6 +31,13 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     backdrop.color = Color(String(data.get("background_color", "#087ac6")))
     root.add_child(backdrop)
 
+    var ocean := OceanBackground.new()
+    ocean.name = "OceanBackground"
+    root.add_child(ocean)
+    var ocean_info: Dictionary = data.get("ocean", {}).duplicate(true)
+    ocean_info["canvas_size"] = canvas
+    ocean.configure(ocean_info, catalog)
+
     _place_group(data.get("background_objects", []), root, "DistantRuins", false)
     var ground := Node2D.new()
     ground.name = "Ground"

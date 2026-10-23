@@ -482,5 +482,11 @@
       "scale": 0.42,
       "glow_alpha": 0.36
     }
-  ]
+  ],
+  "ocean": {
+    "tile_size": 256,
+    "fps": 5,
+    "sky_height": 226,
+    "notes": "E010 seamless base, E011-E014 overlay animation, E018 clouds; all pending visual QA"
+  }
 }

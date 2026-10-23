@@ -1,41 +1,25 @@
-# skl-SF — Fantasy seaside tactical RPG
+# skl-SF — Seaside Fantasy RPG in Godot 4
 
-Godot 4 project with reusable map parts and a data-driven room factory.
+A data-driven 2D Pixel Art RPG with a reusable map factory, movement, companion, NPC dialogue, animated lighting and ocean.
 
-## How to run
-1. Clone or download this repository.
-2. Import `project.godot` with **Godot 4.4.1** (or a compatible Godot 4 release).
-3. Run the project (**F5**).
-4. Use **WASD / arrow keys** to move the temporary hero actor.
-5. Stand near either guardian, bed, table or chest and press **E** to interact. Press **E / Enter / Space** to continue dialogue.
+## Asset completion
+- **218 / 218** registered assets have **separate PNG files** at their catalog paths.
+- **0 files missing**, **218 files marked needs_cleanup**, **0 artist-approved final assets**.
+- Files are organized by ID into floors, walls, architecture, stairs, environment, furniture, objects, vegetation, decor, shadows, characters and UI.
+- Individual files and metadata: [parts](map_factory/parts/README.md) and [asset_index.json](map_factory/metadata/asset_index.json).
+- Quality review: [asset gallery](docs/ASSET_GALLERY.md) and [audit](docs/ASSET_AUDIT.md).
+- **Never call these all final high-quality assets merely because the files exist.** Some are procedural art or extracted concept-sheet sprites; validate alpha, anchor, seams, lighting, continuity and visual quality before approving.
 
-The actors are gameplay placeholders. **There are 12 original first-pass character sprite sheets and two portraits; none are artist-approved yet.** They are intentionally not described as final art. The hero, guardians and follower now use these animation strips.
+## Run game
+1. Open `project.godot` in Godot 4.4.1 or compatible 4.x.
+2. Press **F5**.
+3. Move with **WASD / arrows**; interact with **E** near NPCs, furniture and the room.
+4. Continue dialogue with **E**, **Enter**, or **Space**.
 
-## Assets and QA
-- **218** catalog entries with stable IDs and reuse across rooms.
-- **187** independent sprite PNG files currently stored under `map_factory/parts/`.
-- **31** remaining PNGs not created.
-- **187** available images remain unapproved drafts (`needs_cleanup`) until their native visual quality is reviewed.
+The player, companion and two guardian NPCs use initial animated sprite sheets. The Hero Room combines reusable furniture, vegetation, stonework, sea and cloud assets. Four independent transparent ocean-wave frames animate on top of a repeated ocean base. Small lanterns and flames use separate PNGs.
 
-The latest pass also added modular arch/wall fragments and separated animated candle flames + glow in `scenes/room_light_fx.gd`. All new items are unreviewed drafts, not approved finished art.
+## Map reuse
+Every element is addressed by stable IDs and appears in `map_factory/rooms/hero_room.json`. Reuse the IDs in other room JSON layouts. Code lives in `map_factory/scripts/` and `scenes/`.
 
-Browse the [visual review gallery](docs/ASSET_GALLERY.md), [automatic audit](docs/ASSET_AUDIT.md), and [asset index](map_factory/metadata/asset_index.json).
-
-**Read the mandatory [asset quality and replacement policy](docs/ASSET_QUALITY_POLICY.md) and [AGENTS.md](AGENTS.md) before changing any sprites.** Replace an old file only when the new candidate is verifiably better and technically usable. Stable IDs and metadata must stay consistent.
-
-## Room development
-- Room data: `map_factory/rooms/hero_room.json`
-- Scene composition: `map_factory/scripts/room_factory.gd`
-- Sprite/collision/shadow definitions: `map_factory/scripts/asset_factory.gd` and `shadow_factory.gd`
-- Hero movement / dialogue: `scenes/player.gd`, `scenes/dialogue_ui.gd`, `scenes/main.gd`
-- Quick headless test: `.github/workflows/godot_validate.yml`
-- PNG catalog validator: `tools/audit_assets.py`
-- Review gallery builder: `tools/build_asset_previews.py`
-
-## Current visual limitations
-The current ocean is a flat-colored backdrop. Some architecture and prop PNGs were extracted from AI concept sheets and may have halo or label fragments, inconsistent dimensions, and non-seamless edges. All must pass human visual QA before their status changes to `ready`. This is a playable scaffold, **not** a production-complete recreation of the reference image.
-
-## Reusing assets in other maps
-Create a new JSON under `map_factory/rooms/`. Use the stable asset IDs in `background_objects`, `ground_overlays`, `back_objects`, `objects` and `front_objects`. To load it, pass its resource path to `RoomFactory.build_room(path, self)`.
-
-See [Hero Room notes](map_factory/rooms/HERO_ROOM_NOTES.md) and [Map Factory guide](map_factory/README.md).
+## Quality and replacement
+**Before adding or replacing artwork, read [docs/ASSET_QUALITY_POLICY.md](docs/ASSET_QUALITY_POLICY.md) and [AGENTS.md](AGENTS.md).** Favor verified crisp, higher-fidelity, consistent images; preserve original IDs, update all metadata and do not replace an existing working image with an unverified worse one.
