@@ -1567,18 +1567,18 @@
       "category": "environment",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
         0,
-        256,
-        256
+        512,
+        512
       ],
-      "bytes": 60618,
-      "sha256": "4e26f8da7815e87e567fdf3f04c51ad5a2df8343cc0bbe916b69dc08a82de105",
+      "bytes": 176617,
+      "sha256": "78b04101b542ff8a3731fa10cd858df5d78b32b4e889d353c53cd7c50997e61f",
       "warnings": []
     },
     {
@@ -1586,18 +1586,18 @@
       "category": "environment",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
         0,
-        256,
-        256
+        512,
+        512
       ],
-      "bytes": 2289,
-      "sha256": "5e4123b30849342e9cd107ea4ea2a2eb2b8126153417c429f67388837d4e6aaf",
+      "bytes": 22116,
+      "sha256": "76b4a0a2338cedb20c575efd1b444dc62866647b67b384f997b43b51099130fa",
       "warnings": []
     },
     {
@@ -1605,18 +1605,18 @@
       "category": "environment",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
-        1,
-        256,
-        256
+        0,
+        512,
+        512
       ],
-      "bytes": 2260,
-      "sha256": "c17a4fab6d6c930bf548290f073b67858867d770c2e52d68055dc5752fe1f7b9",
+      "bytes": 22116,
+      "sha256": "05da75cca0a9cb52ce00ca5fb6e4b92b5dafe7c856e2a84530ab9af38fb25152",
       "warnings": []
     },
     {
@@ -1624,18 +1624,18 @@
       "category": "environment",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
         0,
-        256,
-        256
+        512,
+        512
       ],
-      "bytes": 2274,
-      "sha256": "43a241f7e09b712c95f9419d20ccaa1f3d31b61eb655382997b0caec55eac34d",
+      "bytes": 22147,
+      "sha256": "33829ec93191a6a82a88bda5208cea5f76ddbc45d41e62f95fdc017492a35d50",
       "warnings": []
     },
     {
@@ -1643,18 +1643,18 @@
       "category": "environment",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
         0,
-        256,
-        256
+        512,
+        512
       ],
-      "bytes": 2261,
-      "sha256": "0e1cabf6931a5f5d7d3f8aa349c38cd6d00fdc2e1ea346ab56a8255b96a86dcc",
+      "bytes": 22076,
+      "sha256": "04a38a261380eadef16a08ed44b0643faf0011eacc4f78f781bf4881fd6252ec",
       "warnings": []
     },
     {

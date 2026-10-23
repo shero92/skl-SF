@@ -3726,8 +3726,8 @@
       "texture_path": "res://map_factory/parts/environment/E010_Ocean_Water_Base.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "origin": [
         0,
@@ -3761,11 +3761,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "original_procedural_or_derived_sprite",
-        "generator": "tools/generate_remaining_art.py",
-        "reference_style": "hero_room_seaside_pixel_art"
+        "kind": "multi_scale_maritime_pixel_art_revision",
+        "revision": 2,
+        "generator": "tools/repaint_ocean.py"
       },
-      "qa_notes": "Opaque reusable background artwork; verify visual quality with Hero Room, not a transparent object.",
+      "qa_notes": "Cobalt/cyan sea with wrap-safe white foam. Validate looping, tint, light direction and visual fidelity before ready.",
       "animation_frames": 1,
       "frame_group": "ocean_base"
     },
@@ -3777,8 +3777,8 @@
       "texture_path": "res://map_factory/parts/environment/E011_Ocean_Wave_Frame_01.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "origin": [
         0,
@@ -3813,11 +3813,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "original_procedural_or_derived_sprite",
-        "generator": "tools/generate_remaining_art.py",
-        "reference_style": "hero_room_seaside_pixel_art"
+        "kind": "multi_scale_maritime_pixel_art_revision",
+        "revision": 2,
+        "generator": "tools/repaint_ocean.py"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "qa_notes": "Cobalt/cyan sea with wrap-safe white foam. Validate looping, tint, light direction and visual fidelity before ready.",
       "animation_frames": 1,
       "frame_group": "ocean_wave_4"
     },
@@ -3829,8 +3829,8 @@
       "texture_path": "res://map_factory/parts/environment/E012_Ocean_Wave_Frame_02.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "origin": [
         0,
@@ -3865,11 +3865,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "original_procedural_or_derived_sprite",
-        "generator": "tools/generate_remaining_art.py",
-        "reference_style": "hero_room_seaside_pixel_art"
+        "kind": "multi_scale_maritime_pixel_art_revision",
+        "revision": 2,
+        "generator": "tools/repaint_ocean.py"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "qa_notes": "Cobalt/cyan sea with wrap-safe white foam. Validate looping, tint, light direction and visual fidelity before ready.",
       "animation_frames": 1,
       "frame_group": "ocean_wave_4"
     },
@@ -3881,8 +3881,8 @@
       "texture_path": "res://map_factory/parts/environment/E013_Ocean_Wave_Frame_03.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "origin": [
         0,
@@ -3917,11 +3917,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "original_procedural_or_derived_sprite",
-        "generator": "tools/generate_remaining_art.py",
-        "reference_style": "hero_room_seaside_pixel_art"
+        "kind": "multi_scale_maritime_pixel_art_revision",
+        "revision": 2,
+        "generator": "tools/repaint_ocean.py"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "qa_notes": "Cobalt/cyan sea with wrap-safe white foam. Validate looping, tint, light direction and visual fidelity before ready.",
       "animation_frames": 1,
       "frame_group": "ocean_wave_4"
     },
@@ -3933,8 +3933,8 @@
       "texture_path": "res://map_factory/parts/environment/E014_Ocean_Wave_Frame_04.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        256,
-        256
+        512,
+        512
       ],
       "origin": [
         0,
@@ -3969,11 +3969,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "original_procedural_or_derived_sprite",
-        "generator": "tools/generate_remaining_art.py",
-        "reference_style": "hero_room_seaside_pixel_art"
+        "kind": "multi_scale_maritime_pixel_art_revision",
+        "revision": 2,
+        "generator": "tools/repaint_ocean.py"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "qa_notes": "Cobalt/cyan sea with wrap-safe white foam. Validate looping, tint, light direction and visual fidelity before ready.",
       "animation_frames": 1,
       "frame_group": "ocean_wave_4"
     },
