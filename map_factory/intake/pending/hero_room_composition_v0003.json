@@ -1,0 +1,25 @@
+{
+  "mode": "patch",
+  "map_id": "hero_room_01",
+  "base_version": 2,
+  "analysis_status": "reviewed",
+  "note": "Remove two front parapet sprite instances carrying source atlas text labels; underlying high-quality low ruin wall geometry remains.",
+  "changes": [
+    {
+      "op": "remove_block",
+      "instance_id": "FrontWallRightWide"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontParapetRight"
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "Pass 3 removes source-sheet label strips in ST014 frontage; needs comparison to original reference and final visual art approval."
+      }
+    }
+  ]
+}
