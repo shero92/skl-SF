@@ -57,3 +57,13 @@ Stable IDs, exact image dimensions, pivots and collisions preserved.
 ## Individual wall-lantern cutout corrections
 
 D008 and D009 previously contained unrelated neighboring objects from a concept-sheet crop. The cleaned sprites preserve their actual source pixels; the PNG canvas now tightly fits each wall-mounted lantern. Metadata pixel_size and bottom-center origin have been updated. Art review for shadows and alpha fringing is still pending.
+
+## Five additional high-detail cutout corrections
+
+- **W001** (202, 239) → (179, 239): remove unrelated wall segment at right. All retained source pixels unchanged.
+- **P011** (140, 166) → (112, 166): remove neighboring sliced sprite at left. All retained source pixels unchanged.
+- **P014** (296, 276) → (296, 269): discard disconnected gold label line. All retained source pixels unchanged.
+- **P015** (248, 238) → (210, 232): remove unrelated hanging banner and label line. All retained source pixels unchanged.
+- **O001** (126, 165) → (117, 165): remove adjacent black strip. All retained source pixels unchanged.
+
+All five remain needs_cleanup until manual on-screen comparison.

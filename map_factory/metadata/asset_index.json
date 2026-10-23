@@ -1073,11 +1073,11 @@
       "texture_path": "res://map_factory/parts/walls/W001_Stone_Wall_Straight.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        202,
+        179,
         239
       ],
       "origin": [
-        101,
+        89,
         239
       ],
       "collision": {
@@ -1106,10 +1106,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "fantasy_mediterranean_ruins_tileset.png"
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection.; stray atlas label/crop debris removed."
+      "qa_notes": "Removed remove unrelated wall segment at right. High-resolution source content unchanged; art QA still pending."
     },
     {
       "id": "W002",
@@ -4631,11 +4633,11 @@
       "texture_path": "res://map_factory/parts/furniture/P011_Wooden_Chair.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        140,
+        112,
         166
       ],
       "origin": [
-        70,
+        56,
         166
       ],
       "collision": {
@@ -4663,10 +4665,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Removed remove neighboring sliced sprite at left. High-resolution source content unchanged; art QA still pending."
     },
     {
       "id": "P012",
@@ -4768,11 +4772,11 @@
       "status": "needs_cleanup",
       "pixel_size": [
         296,
-        276
+        269
       ],
       "origin": [
         148,
-        276
+        269
       ],
       "collision": {
         "enabled": false,
@@ -4799,10 +4803,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Removed discard disconnected gold label line. High-resolution source content unchanged; art QA still pending."
     },
     {
       "id": "P015",
@@ -4812,12 +4818,12 @@
       "texture_path": "res://map_factory/parts/furniture/P015_Bookshelf_Small.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        248,
-        238
+        210,
+        232
       ],
       "origin": [
-        124,
-        238
+        105,
+        232
       ],
       "collision": {
         "enabled": false,
@@ -4844,10 +4850,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Removed remove unrelated hanging banner and label line. High-resolution source content unchanged; art QA still pending."
     },
     {
       "id": "P016",
@@ -5180,11 +5188,11 @@
       "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        126,
+        117,
         165
       ],
       "origin": [
-        63,
+        58,
         165
       ],
       "collision": {
@@ -5213,10 +5221,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection.; stray atlas label/crop debris removed."
+      "qa_notes": "Removed remove adjacent black strip. High-resolution source content unchanged; art QA still pending."
     },
     {
       "id": "O002",

@@ -484,18 +484,18 @@
       "category": "walls",
       "status": "needs_cleanup",
       "pixel_size": [
-        202,
+        179,
         239
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
         1,
-        186,
+        179,
         239
       ],
-      "bytes": 103347,
-      "sha256": "16d7c710a23f8c5a48f6d72c0ebb1671d363b6255d4d1167dde729fab762ced7",
+      "bytes": 98202,
+      "sha256": "073cfbbe3433be9d97a088a2333c2bb0f05872587ff5387e217f495a56f0665c",
       "warnings": []
     },
     {
@@ -1928,18 +1928,18 @@
       "category": "furniture",
       "status": "needs_cleanup",
       "pixel_size": [
-        140,
+        112,
         166
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
-        0,
-        140,
+        4,
+        112,
         166
       ],
-      "bytes": 37387,
-      "sha256": "4f53842237cbf9575b35fc2d5139692612dee3ae50edec12c8cf42e111b813fe",
+      "bytes": 34484,
+      "sha256": "906cee709bb9a4617198e6615d14643c872aab5b8a99b9c01c0cd7bdf8fe6f4f",
       "warnings": []
     },
     {
@@ -1986,17 +1986,17 @@
       "status": "needs_cleanup",
       "pixel_size": [
         296,
-        276
+        269
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
         0,
         295,
-        276
+        269
       ],
-      "bytes": 176952,
-      "sha256": "fa4c8234fa5ec3137ce65bba211f7410611f801e69e21c3481bd07bea47fa895",
+      "bytes": 174912,
+      "sha256": "6d33fb55b45dfec7b6513da01aa89ea4844302d3e4fc813cc3c2ea7e1c12ff12",
       "warnings": []
     },
     {
@@ -2004,18 +2004,18 @@
       "category": "furniture",
       "status": "needs_cleanup",
       "pixel_size": [
-        248,
-        238
+        210,
+        232
       ],
       "has_transparency": true,
       "alpha_bbox": [
         1,
         1,
-        248,
-        238
+        210,
+        232
       ],
-      "bytes": 117309,
-      "sha256": "9499fd5120241bb58363b98d2d9fe3aee6e9b3626814b84853516dac5cbbb2c1",
+      "bytes": 103935,
+      "sha256": "b4d53bb0d496225c0da38e8f6805e5adf0562b5b1d3f04767018630dbb7b2570",
       "warnings": []
     },
     {
@@ -2156,7 +2156,7 @@
       "category": "objects",
       "status": "needs_cleanup",
       "pixel_size": [
-        126,
+        117,
         165
       ],
       "has_transparency": true,
@@ -2166,8 +2166,8 @@
         108,
         165
       ],
-      "bytes": 42773,
-      "sha256": "17ab1dbe2806cf3fb954ae9715450aee4701e8426b936e14474782e9c8188b83",
+      "bytes": 42410,
+      "sha256": "2ddf9907adc76ab2b3ae2fd21cce2052934b1338608ace5d6f409accae131df0",
       "warnings": []
     },
     {
