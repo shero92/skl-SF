@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 2,
+  "version": 3,
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "block_count": 77,
-  "unique_asset_count": 75,
+  "block_count": 75,
+  "unique_asset_count": 74,
   "reused_asset_ids": [
     "A005",
     "A007",
@@ -59,7 +59,6 @@
     "ST011",
     "ST012",
     "ST013",
-    "ST014",
     "V001",
     "V004",
     "V005",
@@ -2389,58 +2388,6 @@
       }
     },
     {
-      "instance_id": "FrontParapetRight",
-      "asset_id": "ST014",
-      "category": "stairs",
-      "subtype": "stone",
-      "texture_path": "res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png",
-      "asset_status": "needs_cleanup",
-      "pixel_size": [
-        176,
-        92
-      ],
-      "anchor": [
-        88,
-        92
-      ],
-      "layer": "objects",
-      "position": [
-        1172,
-        871
-      ],
-      "scale": 0.9,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "stairs",
-        "stone",
-        "parapet",
-        "long"
-      ],
-      "source": {
-        "kind": "ai_sheet_crop",
-        "file": "fantasy_mediterranean_ruins_tileset.png"
-      }
-    },
-    {
       "instance_id": "V004_objects_017",
       "asset_id": "V004",
       "category": "vegetation",
@@ -3115,58 +3062,6 @@
         "stone",
         "parapet",
         "short"
-      ],
-      "source": {
-        "kind": "ai_sheet_crop",
-        "file": "fantasy_mediterranean_ruins_tileset.png"
-      }
-    },
-    {
-      "instance_id": "FrontWallRightWide",
-      "asset_id": "ST014",
-      "category": "stairs",
-      "subtype": "stone",
-      "texture_path": "res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png",
-      "asset_status": "needs_cleanup",
-      "pixel_size": [
-        176,
-        92
-      ],
-      "anchor": [
-        88,
-        92
-      ],
-      "layer": "front_objects",
-      "position": [
-        1012,
-        878
-      ],
-      "scale": 0.95,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 1,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "stairs",
-        "stone",
-        "parapet",
-        "long"
       ],
       "source": {
         "kind": "ai_sheet_crop",

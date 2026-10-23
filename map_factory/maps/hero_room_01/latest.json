@@ -464,13 +464,6 @@
       "scale": 0.88
     },
     {
-      "id": "ST014",
-      "instance_id": "FrontParapetRight",
-      "x": 1172,
-      "y": 871,
-      "scale": 0.9
-    },
-    {
       "id": "V004",
       "x": 300,
       "y": 830,
@@ -572,14 +565,6 @@
       "x": 527,
       "y": 881,
       "scale": 0.92,
-      "z_index": 1
-    },
-    {
-      "id": "ST014",
-      "instance_id": "FrontWallRightWide",
-      "x": 1012,
-      "y": 878,
-      "scale": 0.95,
       "z_index": 1
     },
     {
@@ -800,18 +785,18 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 2,
-  "parent_version": 1,
-  "created_at": "2026-10-23T13:29:55+00:00",
+  "version": 3,
+  "parent_version": 2,
+  "created_at": "2026-10-23T13:43:14+00:00",
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "change_note": "Correct environmental composition against the provided seaside sanctuary: continuous ruin perimeter, steps at bottom, horizon, framing flora, and placement; keep artwork IDs.",
+  "change_note": "Remove two front parapet sprite instances carrying source atlas text labels; underlying high-quality low ruin wall geometry remains.",
   "visual_qa": {
     "status": "needs_review",
-    "notes": "User reported strong sprites but weak room composition. New layout and parapet/entrance need scene screenshot comparison."
+    "notes": "Pass 3 removes source-sheet label strips in ST014 frontage; needs comparison to original reference and final visual art approval."
   },
   "navigation": {
     "schema_version": 1,
@@ -894,15 +879,6 @@
       },
       {
         "instance_id": "FrontWallLeftWide",
-        "blocks": [
-          "walk",
-          "fly"
-        ],
-        "min_altitude": 0,
-        "max_altitude": 78
-      },
-      {
-        "instance_id": "FrontWallRightWide",
         "blocks": [
           "walk",
           "fly"
