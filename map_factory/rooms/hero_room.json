@@ -512,10 +512,10 @@
     }
   ],
   "ocean": {
-    "tile_size": 256,
-    "fps": 5,
+    "tile_size": 512,
+    "fps": 4,
     "sky_height": 226,
-    "notes": "E010 seamless base, E011-E014 overlay animation, E018 clouds; all pending visual QA"
+    "notes": "E010 is a detailed native 512px seamless water tile. E011-E014 are four independent full-resolution RGBA wave overlays. Art pending QA."
   },
   "asset_quality_review": {
     "source": "docs/REFERENCE_ART_DIRECTION.md",
