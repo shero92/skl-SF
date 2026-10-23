@@ -73,7 +73,7 @@ class FourDirections(unittest.TestCase):
                                  "direction_asset_ids":{"north":"P001"}},self.catalog)
         with self.assertRaisesRegex(ValueError,"same environmental category"):
             resolve_orientation({"id":"P001","facing":"north","orientation_mode":"variants",
-                "direction_asset_ids":{"north":"P001","east":"P002","south":"CH001","west":"P002"}},self.catalog)
+                "direction_asset_ids":{"north":"P001","east":"P002","south":"CH001","west":"W001"}},self.catalog)
     def test_floor_override_accepts_four_cardinal_facings(self):
         for cardinal in FACINGS:
             with self.subTest(cardinal=cardinal):
