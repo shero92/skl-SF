@@ -12,7 +12,7 @@ def fixture(root):
     assets=[]
     for ident,category in [("F001","floors"),("F002","floors"),("P001","furniture"),
                            ("P002","furniture"),("W001","walls"),("CH001","characters"),
-                           ("UI001","ui")]:
+                           ("UI001","ui"),("S002","shadows"),("S007","shadows")]:
         assets.append({"id":ident,"category":category,"texture_path":"res://invalid/"+ident+".png"})
     (root/mf.CATALOG).write_text(json.dumps({"assets":assets}))
     (root/"map_factory/rooms").mkdir(parents=True,exist_ok=True)

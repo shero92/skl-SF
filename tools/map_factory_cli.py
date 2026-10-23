@@ -451,6 +451,8 @@ def clone_map(root, new_map, from_map):
 
 def apply_changes(snapshot, manifest, catalog):
     result = deepcopy(snapshot)
+    # Derived layer metadata belongs to the OLD snapshot: rebuild it only after edits.
+    result.pop("layer_stack", None)
     ops = manifest.get("changes")
     if not isinstance(ops, list) or not ops:
         raise ValueError("Patch manifest needs nonempty changes array")
