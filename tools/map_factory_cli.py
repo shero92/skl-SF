@@ -299,6 +299,8 @@ def validate_room(data, catalog, expect_map_id=None):
             raise ValueError(f"Duplicate tile override: {x},{y}")
         coords.add((x,y))
         check_asset(str(override["id"]), floor=True)
+        # Floor tile turns use the same four-cardinal contract as props.
+        resolve_orientation(override,catalog)
     validate_floor_footprint(data)
     validate_floor_tile_style(data,catalog)
     if "occlusion_mode" in data and data["occlusion_mode"] not in ("fixed_layers","world_y_sort"):
@@ -400,7 +402,8 @@ def build_block_manifest(snapshot, catalog):
             "category": record["category"],
             "texture_path": record["texture_path"],
             "pixel_size": record.get("pixel_size"),
-            "asset_status": record.get("status", "planned")
+            "asset_status": record.get("status", "planned"),
+            **({"orientation":resolve_orientation(item,catalog)} if resolve_orientation(item,catalog) else {})
         })
         used.add(item["id"])
     for ident in snapshot.get("floor_ids", []):

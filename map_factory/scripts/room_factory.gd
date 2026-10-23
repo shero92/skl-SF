@@ -209,7 +209,7 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
     for entry in data.get("tile_overrides", []):
         # JSON numeric cells must be normalized before forming dictionary keys.
         # Godot can parse JSON 7 as float 7.0; "7.0:5.0" never equals "7:5".
-        override_map["%d:%d" % [int(entry.get("x", 0)), int(entry.get("y", 0))]] = String(entry.get("id", "F001"))
+        override_map["%d:%d" % [int(entry.get("x", 0)), int(entry.get("y", 0))]] = entry
     for y in int(size[1]):
         for x in int(size[0]):
             if not row_spans.is_empty():
@@ -222,8 +222,20 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
                     continue
             var asset_id := String(floor_ids[(x * 17 + y * 11) % floor_ids.size()])
             var key := str(x) + ":" + str(y)
+            var facing := "north"
+            var oriented := false
+            var mode := "rotate"
             if override_map.has(key):
-                asset_id = String(override_map[key])
+                var tile_entry: Dictionary = override_map[key]
+                asset_id = String(tile_entry.get("id", asset_id))
+                if tile_entry.has("facing"):
+                    oriented = true
+                    facing = String(tile_entry["facing"])
+                    mode = String(tile_entry.get("orientation_mode", "rotate"))
+                    if mode == "variants":
+                        var main_record: Dictionary = catalog.get_asset(asset_id)
+                        var ids: Dictionary = tile_entry.get("direction_asset_ids", main_record.get("direction_asset_ids", {}))
+                        asset_id = String(ids.get(facing, asset_id))
             var record: Dictionary = catalog.get_asset(asset_id)
             var path := String(record.get("texture_path", ""))
             var pos := Vector2(float(offset[0]) + x * tile_size, float(offset[1]) + y * tile_size)
@@ -246,7 +258,15 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
                     sprite.centered = false
                     sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
                     sprite.texture = texture
-                    sprite.position = pos
+                    if oriented:
+                        # Rotate around the TILE CENTER, not its upper-left:
+                        # a 90-degree top-left rotation displaces the whole floor.
+                        sprite.centered = true
+                        sprite.position = pos + Vector2(float(tile_size), float(tile_size)) * 0.5
+                        if mode == "rotate":
+                            sprite.rotation_degrees = 90.0 * float(["north","east","south","west"].find(facing))
+                    else:
+                        sprite.position = pos
                     sprite.scale = Vector2(float(tile_size) / texture.get_width(), float(tile_size) / texture.get_height())
                     if styled_tile:
                         var mortar := Line2D.new()
@@ -257,6 +277,8 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
                         mortar.default_color = tint
                         var w := float(texture.get_width())
                         var h := float(texture.get_height())
+                        if oriented:
+                            mortar.position = -Vector2(w,h) * 0.5
                         mortar.points = PackedVector2Array([
                             Vector2(0, 0), Vector2(w, 0), Vector2(w, h),
                             Vector2(0, h), Vector2(0, 0)
