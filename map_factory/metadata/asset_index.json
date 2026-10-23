@@ -13,8 +13,8 @@
       "texture_path": "res://map_factory/parts/floors/F001_Stone_Floor_Plain.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        162,
+        161
       ],
       "origin": [
         0,
@@ -46,12 +46,10 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "manual_procedural_pixel_art_revision",
-        "generator": "tools/repaint_sandstone_floor.py",
-        "revision": "2",
-        "pixel_scale": "native_64"
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
       },
-      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
+      "qa_notes": "Restored native high-detail source sprite; visually superior to flat procedural 64px repaint. Needs alpha/seam review."
     },
     {
       "id": "F002",
@@ -61,8 +59,8 @@
       "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        161,
+        161
       ],
       "origin": [
         0,
@@ -94,12 +92,10 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "manual_procedural_pixel_art_revision",
-        "generator": "tools/repaint_sandstone_floor.py",
-        "revision": "2",
-        "pixel_scale": "native_64"
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
       },
-      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
+      "qa_notes": "Restored native high-detail source sprite; visually superior to flat procedural 64px repaint. Needs alpha/seam review."
     },
     {
       "id": "F003",
@@ -253,8 +249,8 @@
       "texture_path": "res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        151,
+        161
       ],
       "origin": [
         0,
@@ -287,12 +283,10 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "manual_procedural_pixel_art_revision",
-        "generator": "tools/repaint_sandstone_floor.py",
-        "revision": "2",
-        "pixel_scale": "native_64"
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
       },
-      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
+      "qa_notes": "Restored native high-detail source sprite; visually superior to flat procedural 64px repaint. Needs alpha/seam review."
     },
     {
       "id": "F007",
@@ -449,8 +443,8 @@
       "texture_path": "res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        166,
+        161
       ],
       "origin": [
         0,
@@ -483,12 +477,10 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "manual_procedural_pixel_art_revision",
-        "generator": "tools/repaint_sandstone_floor.py",
-        "revision": "2",
-        "pixel_scale": "native_64"
+        "kind": "ai_sheet_crop",
+        "file": "pixel_art_sandstone_compass_rug_tileset.png"
       },
-      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
+      "qa_notes": "Restored native high-detail source sprite; visually superior to flat procedural 64px repaint. Needs alpha/seam review."
     },
     {
       "id": "F011",
