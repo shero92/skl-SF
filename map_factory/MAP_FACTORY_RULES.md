@@ -59,3 +59,7 @@ NOT YET IMPLEMENTED: foolproof image-to-perfect-sprite decomposition, automatic 
 ## Strictly protected
 
 Never modify map_factory/parts/characters, map_factory/parts/ui, any character/UI asset records, scenes/player.gd, actor/NPC/companion scripts, or dialogue/HUD. The Map Factory workflow owns environment files only.
+
+## Deployment entrypoint for every future user image
+
+Start with `python tools/prepare_map_reference.py --image <file> --map-id <id> --mode create --preset <template>` (or `--mode patch` / `clone`). Keep AI drafts under `map_factory/intake/drafts`. Only submit to `map_factory/intake/pending` after asset reuse, source reconstruction, placements and navigation were reviewed; set `analysis_status=reviewed`. Run the multi-map Godot smoke test, not just the original Hero Room startup. See `map_factory/DEPLOYED_FACTORY.md`.
