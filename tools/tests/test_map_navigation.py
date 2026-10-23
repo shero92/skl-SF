@@ -58,6 +58,19 @@ class MapNavigation(unittest.TestCase):
         self.snapshot["navigation"]=self.map
         with self.assertRaisesRegex(ValueError,"unknown block"):
             mf.validate_room(self.snapshot,mf.asset_catalog(self.root))
+    def test_explicit_forbidden_zone(self):
+        self.map["regions"].append({
+            "id":"solid_wall","rect":[2,2,1,2],"surface":"stone",
+            "allow":[],"floor_height":0,"review_status":"needs_review"})
+        self.snapshot["navigation"]=self.map
+        self.assertTrue(mf.validate_room(self.snapshot,mf.asset_catalog(self.root)))
+
+    def test_navigation_link_must_be_in_grid(self):
+        self.map["links"][0]["to"]=[99,88]
+        self.snapshot["navigation"]=self.map
+        with self.assertRaisesRegex(ValueError,"endpoints"):
+            mf.validate_room(self.snapshot,mf.asset_catalog(self.root))
+
     def test_rejects_unreviewed_visual_approval(self):
         self.snapshot["visual_qa"]={"status":"approved"}
         with self.assertRaisesRegex(ValueError,"requires"):

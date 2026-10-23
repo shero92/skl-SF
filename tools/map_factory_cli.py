@@ -101,8 +101,8 @@ def _ability_list(value):
                     for a in value))
 
 
-def _modes(value):
-    return isinstance(value, list) and bool(value) and len(value) == len(set(value)) and all(
+def _modes(value, require_nonempty=True):
+    return isinstance(value, list) and (bool(value) or not require_nonempty) and len(value) == len(set(value)) and all(
         isinstance(mode, str) and mode in TRAVERSAL_MODES for mode in value)
 
 
@@ -138,8 +138,8 @@ def validate_navigation(nav: dict, placed_instance_ids):
             raise ValueError("Navigation region out of bounds: "+ident)
         if region.get("surface") not in SURFACES:
             raise ValueError("Invalid surface type: "+ident)
-        if not _modes(region.get("allow", [])):
-            raise ValueError("Navigation region must explicitly allow one or more modes: "+ident)
+        if "allow" not in region or not _modes(region["allow"], require_nonempty=False):
+            raise ValueError("Navigation region must explicitly list allowed modes (empty list means blocked): "+ident)
         if not _number(region.get("floor_height",0)):
             raise ValueError("Invalid floor_height: "+ident)
         ceiling = region.get("ceiling_height")
@@ -168,8 +168,12 @@ def validate_navigation(nav: dict, placed_instance_ids):
     for link in nav.get("links", []):
         if not isinstance(link,dict) or not isinstance(link.get("id"),str):
             raise ValueError("Invalid navigation link")
-        if not _point(link.get("from")) or not _point(link.get("to")):
-            raise ValueError("Navigation link must define from/to coordinates")
+        for end in ("from","to"):
+            p=link.get(end)
+            if (not isinstance(p,list) or len(p)!=2 or
+                    any(type(v) is not int for v in p) or
+                    not (0 <= p[0] < size[0] and 0 <= p[1] < size[1])):
+                raise ValueError("Navigation link endpoints must be integer grid cells inside navigation grid")
         if not _modes(link.get("modes")) or not _ability_list(link.get("requires",[])):
             raise ValueError("Invalid link modes/abilities")
     return True
