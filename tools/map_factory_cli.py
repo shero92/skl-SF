@@ -301,6 +301,8 @@ def validate_room(data, catalog, expect_map_id=None):
         check_asset(str(override["id"]), floor=True)
     validate_floor_footprint(data)
     validate_floor_tile_style(data,catalog)
+    if "occlusion_mode" in data and data["occlusion_mode"] not in ("fixed_layers","world_y_sort"):
+        raise ValueError("occlusion_mode must be fixed_layers or world_y_sort")
     for layer in LAYERS:
         blocks = data.get(layer, [])
         if not isinstance(blocks, list):
@@ -568,7 +570,7 @@ def apply_changes(snapshot, manifest, catalog):
         elif op=="set_property":
             key=operation["key"]
             allowed={"description","background_color","canvas_size","tile_size",
-                     "size","ground_offset","floor_ids","floor_footprint","floor_tile_style","ocean","effects",
+                     "size","ground_offset","floor_ids","floor_footprint","floor_tile_style","occlusion_mode","ocean","effects",
                      "source_image","floor_art","composition_reference", "navigation", "visual_qa"}
             if key not in allowed:
                 raise ValueError("Forbidden map-only property: "+str(key))

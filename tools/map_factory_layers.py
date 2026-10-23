@@ -111,6 +111,7 @@ def create_layer_stack(snapshot,catalog):
     return {"schema_version":1,"map_id":snapshot["map_id"],
       "version":snapshot["version"],
       "processing_passes":list(PASS_NAMES),
+      **({"occlusion_mode":snapshot["occlusion_mode"]} if "occlusion_mode" in snapshot else {}),
       "display_z":DISPLAY_DEPTH,
       "passes":passes,
       "ground":{

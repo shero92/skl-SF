@@ -103,18 +103,31 @@ func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> vo
     floor_level.add_child(overlays)
     _place_compiled_entries(passes.get("ground", []), overlays)
 
+    # The old fixed z=30/40 hierarchy ALWAYS drew furniture in front of
+    # every wall, even walls physically closer to the camera. Optional unified
+    # Y-sorting allows occlusion by the ground-contact Y of each wall/prop.
+    var unified_sort := String(data.get("occlusion_mode", "fixed_layers")) == "world_y_sort"
+    var world_parent: Node2D = root
+    if unified_sort:
+        var depth_world := Node2D.new()
+        depth_world.name = "WorldDepthSort"
+        depth_world.y_sort_enabled = true
+        depth_world.z_index = 30
+        root.add_child(depth_world)
+        world_parent = depth_world
+
     var walls := Node2D.new()
     walls.name = "Level2_Walls"
-    walls.z_index = 30
+    walls.z_index = 0 if unified_sort else 30
     walls.y_sort_enabled = true
-    root.add_child(walls)
+    world_parent.add_child(walls)
     _place_compiled_entries(passes.get("walls", []), walls)
 
     var decor := Node2D.new()
     decor.name = "Level3_Decorations"
-    decor.z_index = 40
+    decor.z_index = 0 if unified_sort else 40
     decor.y_sort_enabled = true
-    root.add_child(decor)
+    world_parent.add_child(decor)
     _place_compiled_entries(passes.get("decorations", []), decor)
 
     # Pass five: separate shadow instances, composited above floor but below
