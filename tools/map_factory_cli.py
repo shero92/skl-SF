@@ -79,7 +79,7 @@ def version_file(map_id, n):
 
 
 def tile_override_lookup(snapshot):
-    return {(int(e["x"]), int(e["y"])): str(e["id"])
+    return {(int(e["x"]), int(e["y"])): deepcopy(e)
             for e in snapshot.get("tile_overrides", [])}
 
 
@@ -543,8 +543,12 @@ def apply_changes(snapshot, manifest, catalog):
             if operation.get("id") is None:
                 updates.pop((x,y), None)
             else:
-                updates[(x,y)] = operation["id"]
-            result["tile_overrides"] = [{"x": pos[0], "y": pos[1], "id": v}
+                new_tile={"x":x,"y":y,"id":operation["id"]}
+                for option in ("facing","orientation_mode","direction_asset_ids"):
+                    if option in operation:
+                        new_tile[option]=deepcopy(operation[option])
+                updates[(x,y)] = new_tile
+            result["tile_overrides"] = [v
                 for pos, v in sorted(updates.items())]
         elif op == "add_block":
             layer = operation["layer"]
