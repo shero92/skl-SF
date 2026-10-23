@@ -1,0 +1,34 @@
+name: Backfill resolved map block metadata
+on:
+  push:
+    paths:
+      - ".github/workflows/backfill_map_blocks.yml"
+      - "tools/map_factory_cli.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate typed block manifests without changing room layout versions
+        run: python tools/map_factory_cli.py sync-blocks
+      - name: Check the registry and immutable version chain
+        run: python tools/map_factory_cli.py validate
+      - name: Test versioning and metadata
+        run: python -m unittest discover -s tools/tests -p 'test_map_factory.py' -v
+      - name: Commit only generated map metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map_factory/maps
+          if ! git diff --cached --quiet; then
+            git commit -m "Index every map block with shared texture/type metadata"
+            git push
+          fi

@@ -406,6 +406,22 @@ def validate_repository(root):
     return validated
 
 
+def sync_block_metadata(root):
+    """Backfill derived block indices without changing immutable scene revisions."""
+    reg=registry(root)
+    cat=asset_catalog(root)
+    rebuilt=[]
+    for map_id,item in sorted(reg["maps"].items()):
+        for version in range(1,item["version"]+1):
+            snapshot=read(root,version_file(map_id,version))
+            metadata=build_block_manifest(snapshot,cat)
+            dump(root,map_base(map_id)/"blocks"/f"v{version:04d}.json",metadata)
+            if version==item["version"]:
+                dump(root,map_base(map_id)/"blocks"/"latest.json",metadata)
+            rebuilt.append(f"{map_id}@v{version:04d}")
+    return rebuilt
+
+
 def main(argv=None,root=ROOT):
     p=argparse.ArgumentParser(description="AI-assisted versioned map blocks, excluding characters")
     sub=p.add_subparsers(dest="action",required=True)
@@ -418,6 +434,7 @@ def main(argv=None,root=ROOT):
     for action in ("preview","apply"):
         sp=sub.add_parser(action)
         sp.add_argument("--manifest",required=True)
+    sub.add_parser("sync-blocks")
     sub.add_parser("validate")
     sub.add_parser("list")
     args=p.parse_args(argv)
@@ -427,6 +444,9 @@ def main(argv=None,root=ROOT):
         result=clone_map(root,args.map_id,args.from_map)
     elif args.action in ("preview","apply"):
         result=apply(root,Path(args.manifest),dry_run=args.action=="preview")
+    elif args.action=="sync-blocks":
+        print(json.dumps({"recreated_indices":sync_block_metadata(root)},indent=2))
+        return 0
     elif args.action=="validate":
         print(json.dumps({"validated_maps":validate_repository(root)},indent=2))
         return 0
