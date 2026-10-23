@@ -488,5 +488,11 @@
     "fps": 5,
     "sky_height": 226,
     "notes": "E010 seamless base, E011-E014 overlay animation, E018 clouds; all pending visual QA"
+  },
+  "asset_quality_review": {
+    "source": "docs/REFERENCE_ART_DIRECTION.md",
+    "status": "pending_visual_approval",
+    "asset_count": 218,
+    "description": "Atlas debris cleanup completed for selected sprites; detailed reference-style art is still in progress."
   }
 }
