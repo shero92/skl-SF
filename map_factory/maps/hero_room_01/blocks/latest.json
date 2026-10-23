@@ -1,7 +1,7 @@
 {
   "layer_schema_version": 1,
   "five_level_map": {
-    "background": 7,
+    "background": 5,
     "ground": 2,
     "walls": 32,
     "decorations": 34,
@@ -10,14 +10,14 @@
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 4,
+  "version": 5,
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "block_count": 75,
-  "unique_asset_count": 74,
+  "block_count": 73,
+  "unique_asset_count": 70,
   "reused_asset_ids": [
     "A005",
     "A007",
@@ -28,10 +28,6 @@
     "D007",
     "D008",
     "D009",
-    "E001",
-    "E002",
-    "E004",
-    "E005",
     "E015",
     "E016",
     "E017",
@@ -95,215 +91,6 @@
     "W015"
   ],
   "placed_blocks": [
-    {
-      "instance_id": "E004_background_objects_001",
-      "asset_id": "E004",
-      "category": "environment",
-      "subtype": "cliff",
-      "texture_path": "res://map_factory/parts/environment/E004_Cliff_Rock_Tall.png",
-      "asset_status": "needs_cleanup",
-      "pixel_size": [
-        225,
-        181
-      ],
-      "anchor": [
-        112,
-        181
-      ],
-      "layer": "background_objects",
-      "position": [
-        76,
-        250
-      ],
-      "scale": 0.85,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "environment",
-        "cliff",
-        "rock",
-        "tall"
-      ],
-      "source": {
-        "kind": "ai_sheet_crop",
-        "file": "fantasy_mediterranean_ruins_tileset.png"
-      }
-    },
-    {
-      "instance_id": "E001_background_objects_002",
-      "asset_id": "E001",
-      "category": "environment",
-      "subtype": "cliff",
-      "texture_path": "res://map_factory/parts/environment/E001_Cliff_Edge_Straight.png",
-      "asset_status": "needs_cleanup",
-      "pixel_size": [
-        186,
-        176
-      ],
-      "anchor": [
-        93,
-        176
-      ],
-      "layer": "background_objects",
-      "position": [
-        1477,
-        288
-      ],
-      "scale": 1.1,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "environment",
-        "cliff",
-        "edge",
-        "straight"
-      ],
-      "source": {
-        "kind": "ai_sheet_crop",
-        "file": "fantasy_mediterranean_ruins_tileset.png"
-      }
-    },
-    {
-      "instance_id": "E005_background_objects_003",
-      "asset_id": "E005",
-      "category": "environment",
-      "subtype": "cliff",
-      "texture_path": "res://map_factory/parts/environment/E005_Cliff_Rock_Small.png",
-      "asset_status": "needs_cleanup",
-      "pixel_size": [
-        286,
-        186
-      ],
-      "anchor": [
-        143,
-        186
-      ],
-      "layer": "background_objects",
-      "position": [
-        1394,
-        147
-      ],
-      "scale": 0.54,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "environment",
-        "cliff",
-        "rock",
-        "small"
-      ],
-      "source": {
-        "kind": "ai_sheet_crop",
-        "file": "fantasy_mediterranean_ruins_tileset.png"
-      }
-    },
-    {
-      "instance_id": "E002_background_objects_004",
-      "asset_id": "E002",
-      "category": "environment",
-      "subtype": "cliff",
-      "texture_path": "res://map_factory/parts/environment/E002_Cliff_Edge_Corner_Left.png",
-      "asset_status": "needs_cleanup",
-      "pixel_size": [
-        149,
-        179
-      ],
-      "anchor": [
-        74,
-        179
-      ],
-      "layer": "background_objects",
-      "position": [
-        126,
-        142
-      ],
-      "scale": 0.52,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "environment",
-        "cliff",
-        "edge",
-        "corner",
-        "left"
-      ],
-      "source": {
-        "kind": "ai_sheet_crop",
-        "file": "fantasy_mediterranean_ruins_tileset.png"
-      }
-    },
     {
       "instance_id": "DistantIsleLeft",
       "asset_id": "E015",
@@ -466,6 +253,114 @@
       }
     },
     {
+      "instance_id": "LeftIslandDistantExtra",
+      "asset_id": "E015",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        320,
+        260
+      ],
+      "anchor": [
+        160,
+        260
+      ],
+      "layer": "background_objects",
+      "position": [
+        90,
+        110
+      ],
+      "scale": 0.27,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "small"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "RightIslandDistantExtra",
+      "asset_id": "E016",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        465,
+        310
+      ],
+      "anchor": [
+        232,
+        310
+      ],
+      "layer": "background_objects",
+      "position": [
+        1452,
+        126
+      ],
+      "scale": 0.19,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "large"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
       "instance_id": "BedRug",
       "asset_id": "P005",
       "category": "furniture",
@@ -533,10 +428,10 @@
       ],
       "layer": "ground_overlays",
       "position": [
-        1127,
-        642
+        1126,
+        631
       ],
-      "scale": 0.7,
+      "scale": 0.68,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1790,9 +1685,9 @@
       "layer": "objects",
       "position": [
         1132,
-        431
+        413
       ],
-      "scale": 0.62,
+      "scale": 0.63,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1842,10 +1737,10 @@
       ],
       "layer": "objects",
       "position": [
-        1127,
-        622
+        1124,
+        606
       ],
-      "scale": 0.65,
+      "scale": 0.64,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,

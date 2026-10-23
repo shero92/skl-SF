@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 4,
+  "version": 5,
   "processing_passes": [
     "background",
     "ground",
@@ -18,174 +18,6 @@
   },
   "passes": {
     "background": [
-      {
-        "instance_id": "E004_background_objects_001",
-        "asset_id": "E004",
-        "source_layer": "background_objects",
-        "render_layer": "background",
-        "position": [
-          76.0,
-          250.0
-        ],
-        "scale": 0.85,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/environment/E004_Cliff_Rock_Tall.png",
-        "pixel_size": [
-          225,
-          181
-        ],
-        "origin": [
-          112,
-          181
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "E001_background_objects_002",
-        "asset_id": "E001",
-        "source_layer": "background_objects",
-        "render_layer": "background",
-        "position": [
-          1477.0,
-          288.0
-        ],
-        "scale": 1.1,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/environment/E001_Cliff_Edge_Straight.png",
-        "pixel_size": [
-          186,
-          176
-        ],
-        "origin": [
-          93,
-          176
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "E005_background_objects_003",
-        "asset_id": "E005",
-        "source_layer": "background_objects",
-        "render_layer": "background",
-        "position": [
-          1394.0,
-          147.0
-        ],
-        "scale": 0.54,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/environment/E005_Cliff_Rock_Small.png",
-        "pixel_size": [
-          286,
-          186
-        ],
-        "origin": [
-          143,
-          186
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "E002_background_objects_004",
-        "asset_id": "E002",
-        "source_layer": "background_objects",
-        "render_layer": "background",
-        "position": [
-          126.0,
-          142.0
-        ],
-        "scale": 0.52,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/environment/E002_Cliff_Edge_Corner_Left.png",
-        "pixel_size": [
-          149,
-          179
-        ],
-        "origin": [
-          74,
-          179
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
       {
         "instance_id": "DistantIsleLeft",
         "asset_id": "E015",
@@ -311,6 +143,90 @@
           "offset_y": 2
         },
         "attachment": null
+      },
+      {
+        "instance_id": "LeftIslandDistantExtra",
+        "asset_id": "E015",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          90.0,
+          110.0
+        ],
+        "scale": 0.27,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png",
+        "pixel_size": [
+          320,
+          260
+        ],
+        "origin": [
+          160,
+          260
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "RightIslandDistantExtra",
+        "asset_id": "E016",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1452.0,
+          126.0
+        ],
+        "scale": 0.19,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png",
+        "pixel_size": [
+          465,
+          310
+        ],
+        "origin": [
+          232,
+          310
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
       }
     ],
     "ground": [
@@ -362,10 +278,10 @@
         "source_layer": "ground_overlays",
         "render_layer": "ground",
         "position": [
-          1127.0,
-          642.0
+          1126.0,
+          631.0
         ],
-        "scale": 0.7,
+        "scale": 0.68,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -2257,9 +2173,9 @@
         "render_layer": "decorations",
         "position": [
           1132.0,
-          431.0
+          413.0
         ],
-        "scale": 0.62,
+        "scale": 0.63,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -2298,10 +2214,10 @@
         "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          1127.0,
-          622.0
+          1124.0,
+          606.0
         ],
-        "scale": 0.65,
+        "scale": 0.64,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -3305,10 +3221,10 @@
         "asset_id": "S002",
         "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
         "position": [
-          1127.0,
-          642.0
+          1126.0,
+          631.0
         ],
-        "scale": 0.7,
+        "scale": 0.68,
         "sprite_pixel_size": [
           238,
           304
@@ -3642,9 +3558,9 @@
         "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
         "position": [
           1132.0,
-          431.0
+          413.0
         ],
-        "scale": 0.62,
+        "scale": 0.63,
         "sprite_pixel_size": [
           210,
           232
@@ -3665,10 +3581,10 @@
         "asset_id": "S006",
         "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
         "position": [
-          1127.0,
-          622.0
+          1124.0,
+          606.0
         ],
-        "scale": 0.65,
+        "scale": 0.64,
         "sprite_pixel_size": [
           392,
           278
@@ -3893,10 +3809,80 @@
         "y": 6,
         "id": "F022"
       }
-    ]
+    ],
+    "footprint": {
+      "row_spans": [
+        [
+          [
+            2,
+            5
+          ],
+          [
+            11,
+            14
+          ]
+        ],
+        [
+          [
+            1,
+            15
+          ]
+        ],
+        [
+          [
+            1,
+            15
+          ]
+        ],
+        [
+          [
+            0,
+            16
+          ]
+        ],
+        [
+          [
+            0,
+            16
+          ]
+        ],
+        [
+          [
+            0,
+            16
+          ]
+        ],
+        [
+          [
+            0,
+            16
+          ]
+        ],
+        [
+          [
+            1,
+            15
+          ]
+        ],
+        [
+          [
+            1,
+            15
+          ]
+        ],
+        [
+          [
+            3,
+            13
+          ]
+        ]
+      ],
+      "shape": "stepped_ruined_sanctuary",
+      "notes": "Only listed world cells receive floor sprites; omitted cells show the actual ocean beneath. Floor grid 17x10."
+    }
   },
   "counts": {
-    "background": 7,
+    "background": 5,
     "ground": 2,
     "walls": 32,
     "decorations": 34,
@@ -3912,10 +3898,6 @@
     "D007",
     "D008",
     "D009",
-    "E001",
-    "E002",
-    "E004",
-    "E005",
     "E015",
     "E016",
     "E017",
