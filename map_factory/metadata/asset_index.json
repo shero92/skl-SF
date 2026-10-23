@@ -13,8 +13,8 @@
       "texture_path": "res://map_factory/parts/floors/F001_Stone_Floor_Plain.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        162,
-        161
+        64,
+        64
       ],
       "origin": [
         0,
@@ -46,10 +46,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F002",
@@ -59,8 +61,8 @@
       "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        161,
-        161
+        64,
+        64
       ],
       "origin": [
         0,
@@ -92,10 +94,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F003",
@@ -138,8 +142,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F004",
@@ -182,8 +190,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F005",
@@ -226,8 +238,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F006",
@@ -237,8 +253,8 @@
       "texture_path": "res://map_factory/parts/floors/F006_Stone_Floor_Edge_N.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        151,
-        161
+        64,
+        64
       ],
       "origin": [
         0,
@@ -271,10 +287,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F007",
@@ -318,8 +336,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F008",
@@ -363,8 +385,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F009",
@@ -408,8 +434,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F010",
@@ -419,8 +449,8 @@
       "texture_path": "res://map_factory/parts/floors/F010_Stone_Floor_Corner_NW.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        166,
-        161
+        64,
+        64
       ],
       "origin": [
         0,
@@ -453,10 +483,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F011",
@@ -500,8 +532,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F012",
@@ -545,8 +581,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F013",
@@ -590,8 +630,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "existing_unreviewed_png"
-      }
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
+      },
+      "qa_notes": "Repainted warm weathered sandstone tile with directional grout; Visual QA required against original Hero Room reference."
     },
     {
       "id": "F014",
@@ -601,8 +645,8 @@
       "texture_path": "res://map_factory/parts/floors/F014_Compass_Floor_Center.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        473,
-        464
+        64,
+        64
       ],
       "origin": [
         0,
@@ -634,10 +678,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "F015",
@@ -647,8 +693,8 @@
       "texture_path": "res://map_factory/parts/floors/F015_Compass_Floor_N.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        245,
-        123
+        64,
+        64
       ],
       "origin": [
         0,
@@ -680,10 +726,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "F016",
@@ -693,8 +741,8 @@
       "texture_path": "res://map_factory/parts/floors/F016_Compass_Floor_S.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        239,
-        122
+        64,
+        64
       ],
       "origin": [
         0,
@@ -726,10 +774,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "F017",
@@ -739,8 +789,8 @@
       "texture_path": "res://map_factory/parts/floors/F017_Compass_Floor_E.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        109,
-        193
+        64,
+        64
       ],
       "origin": [
         0,
@@ -772,10 +822,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "F018",
@@ -785,8 +837,8 @@
       "texture_path": "res://map_factory/parts/floors/F018_Compass_Floor_W.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        102,
-        185
+        64,
+        64
       ],
       "origin": [
         0,
@@ -818,10 +870,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "F019",
@@ -831,8 +885,8 @@
       "texture_path": "res://map_factory/parts/floors/F019_Compass_Floor_Corner_NW.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        126,
-        127
+        64,
+        64
       ],
       "origin": [
         0,
@@ -865,10 +919,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "F020",
@@ -878,8 +934,8 @@
       "texture_path": "res://map_factory/parts/floors/F020_Compass_Floor_Corner_NE.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        134,
-        128
+        64,
+        64
       ],
       "origin": [
         0,
@@ -912,10 +968,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "F021",
@@ -925,8 +983,8 @@
       "texture_path": "res://map_factory/parts/floors/F021_Compass_Floor_Corner_SW.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        128,
-        119
+        64,
+        64
       ],
       "origin": [
         0,
@@ -959,10 +1017,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "F022",
@@ -972,8 +1032,8 @@
       "texture_path": "res://map_factory/parts/floors/F022_Compass_Floor_Corner_SE.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        131,
-        119
+        64,
+        64
       ],
       "origin": [
         0,
@@ -1006,10 +1066,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "pixel_art_sandstone_compass_rug_tileset.png"
+        "kind": "manual_procedural_pixel_art_revision",
+        "generator": "tools/repaint_sandstone_floor.py",
+        "revision": "2",
+        "pixel_scale": "native_64"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Coherent 3x3 nautical compass floor inlay. Visual QA required against original Hero Room reference."
     },
     {
       "id": "W001",
