@@ -44,7 +44,7 @@ func _test() -> void:
         if diff>0.02:
             push_error("Incorrect cardinal sprite rotation "+faces[i]+": "+str(obj.rotation_degrees))
             errors+=1
-        if obj.get_node_or_null("SolidFootprint/CollisionShape2D") == null:
+        if obj.get_node_or_null("SolidFootprint/FootprintShape") == null:
             push_error("Collision not attached to rotated node "+faces[i])
             errors+=1
         if obj.get_meta("facing","")!=faces[i]:

@@ -43,6 +43,7 @@ func create_asset(asset_id: String, options: Dictionary = {}) -> Node2D:
         var body := StaticBody2D.new()
         body.name = "SolidFootprint"
         var shape := CollisionShape2D.new()
+        shape.name = "FootprintShape"
         var rect := RectangleShape2D.new()
         var dims: Array = collision_cfg.get("size", [32, 16])
         var offset: Array = collision_cfg.get("offset", [0, 0])
