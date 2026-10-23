@@ -9674,10 +9674,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "procedural",
-        "file": "procedural"
+        "kind": "handcrafted_pixel_ui_revision",
+        "revision": 1,
+        "generator": "tools/repaint_dialogue_ui.py"
       },
-      "qa_notes": "Procedural asset; inspect in Godot."
+      "qa_notes": "More detailed deep navy/gold ornaments matching the Hero Room reference; visual QA pending."
     },
     {
       "id": "UI002",
@@ -9811,10 +9812,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "procedural",
-        "file": "procedural"
+        "kind": "handcrafted_pixel_ui_revision",
+        "revision": 1,
+        "generator": "tools/repaint_dialogue_ui.py"
       },
-      "qa_notes": "Procedural asset; inspect in Godot."
+      "qa_notes": "More detailed deep navy/gold ornaments matching the Hero Room reference; visual QA pending."
     },
     {
       "id": "UI005",
@@ -9857,10 +9859,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "procedural",
-        "file": "procedural"
+        "kind": "handcrafted_pixel_ui_revision",
+        "revision": 1,
+        "generator": "tools/repaint_dialogue_ui.py"
       },
-      "qa_notes": "Procedural asset; inspect in Godot."
+      "qa_notes": "More detailed deep navy/gold ornaments matching the Hero Room reference; visual QA pending."
     },
     {
       "id": "UI006",
@@ -10123,10 +10126,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "procedural",
-        "file": "procedural"
+        "kind": "handcrafted_pixel_ui_revision",
+        "revision": 1,
+        "generator": "tools/repaint_dialogue_ui.py"
       },
-      "qa_notes": "Procedural asset; inspect in Godot."
+      "qa_notes": "More detailed deep navy/gold ornaments matching the Hero Room reference; visual QA pending."
     },
     {
       "id": "UI012",
@@ -10170,10 +10174,11 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "procedural",
-        "file": "procedural"
+        "kind": "handcrafted_pixel_ui_revision",
+        "revision": 1,
+        "generator": "tools/repaint_dialogue_ui.py"
       },
-      "qa_notes": "Procedural asset; inspect in Godot."
+      "qa_notes": "More detailed deep navy/gold ornaments matching the Hero Room reference; visual QA pending."
     }
   ],
   "generated_png_count": 218,
