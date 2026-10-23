@@ -22,6 +22,8 @@ jobs:
           if [ ! -e map_factory/maps/index.json ]; then
             python tools/map_factory_cli.py bootstrap --map-id hero_room_01 --source map_factory/rooms/hero_room.json
           fi
+      - name: Install PNG image validation library for end-to-end tests
+        run: python -m pip install "Pillow>=10,<13"
       - name: Run map factory unit tests
         run: python -m unittest discover -s tools/tests -p 'test_map*.py' -v
       - name: Validate map registry and all immutable snapshots
