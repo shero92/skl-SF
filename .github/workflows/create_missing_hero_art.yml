@@ -1,0 +1,42 @@
+name: Create missing Hero Room environmental art and map
+on:
+  push:
+    paths:
+      - "tools/generate_missing_hero_art.py"
+      - ".github/workflows/create_missing_hero_art.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: map-factory-intake-main
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pillow
+        run: python -m pip install "Pillow>=10,<13"
+      - name: Generate new isolated map art with provenance and PNG metadata
+        run: python tools/generate_missing_hero_art.py
+      - name: Verify all current environment PNG assets
+        run: python tools/verify_map_assets.py
+      - name: Validate existing maps and versions
+        run: python tools/map_factory_cli.py validate
+      - name: Commit real independent PNGs and asset catalog records
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map_factory/parts/objects/O027_*.png map_factory/parts/environment/E019_*.png map_factory/parts/environment/E020_*.png map_factory/parts/walls/W019_*.png map_factory/parts/shadows/S017_*.png map_factory/metadata/asset_index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate missing coastal shrine cliff wall and environmental shadow PNG parts"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
