@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 9,
+  "version": 10,
   "processing_passes": [
     "background",
     "ground",
@@ -1746,18 +1746,18 @@
       },
       {
         "instance_id": "TerraceRockFrontLeft",
-        "asset_id": "E021",
+        "asset_id": "E023",
         "source_layer": "front_objects",
         "render_layer": "walls",
         "position": [
-          390.0,
-          945.0
+          394.0,
+          941.0
         ],
-        "scale": 0.86,
+        "scale": 0.88,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/environment/E021_Clean_Sea_Cliff_Ruin_Left.png",
+        "texture_path": "res://map_factory/parts/environment/E023_Coastal_Foundation_No_Water_Left.png",
         "pixel_size": [
           340,
           248
@@ -1770,12 +1770,12 @@
         "collision": {
           "enabled": true,
           "size": [
-            220,
-            44
+            216,
+            48
           ],
           "offset": [
             0,
-            -31
+            -36
           ]
         },
         "shadow": {
@@ -1788,18 +1788,18 @@
       },
       {
         "instance_id": "TerraceRockFrontRight",
-        "asset_id": "E022",
+        "asset_id": "E024",
         "source_layer": "front_objects",
         "render_layer": "walls",
         "position": [
-          1150.0,
-          945.0
+          1145.0,
+          941.0
         ],
-        "scale": 0.86,
+        "scale": 0.88,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/environment/E022_Clean_Sea_Cliff_Ruin_Right.png",
+        "texture_path": "res://map_factory/parts/environment/E024_Coastal_Foundation_No_Water_Right.png",
         "pixel_size": [
           340,
           248
@@ -1812,12 +1812,12 @@
         "collision": {
           "enabled": true,
           "size": [
-            220,
-            44
+            216,
+            48
           ],
           "offset": [
             0,
-            -31
+            -36
           ]
         },
         "shadow": {
@@ -3739,14 +3739,14 @@
       {
         "instance_id": "TerraceRockFrontLeft__shadow",
         "owner_instance_id": "TerraceRockFrontLeft",
-        "owner_asset_id": "E021",
+        "owner_asset_id": "E023",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          390.0,
-          945.0
+          394.0,
+          941.0
         ],
-        "scale": 0.86,
+        "scale": 0.88,
         "sprite_pixel_size": [
           340,
           248
@@ -3763,14 +3763,14 @@
       {
         "instance_id": "TerraceRockFrontRight__shadow",
         "owner_instance_id": "TerraceRockFrontRight",
-        "owner_asset_id": "E022",
+        "owner_asset_id": "E024",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          1150.0,
-          945.0
+          1145.0,
+          941.0
         ],
-        "scale": 0.86,
+        "scale": 0.88,
         "sprite_pixel_size": [
           340,
           248
@@ -4247,8 +4247,8 @@
     "E015",
     "E016",
     "E017",
-    "E021",
-    "E022",
+    "E023",
+    "E024",
     "F001",
     "F002",
     "F014",

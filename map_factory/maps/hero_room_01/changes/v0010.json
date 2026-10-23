@@ -1,0 +1,79 @@
+{
+  "mode": "patch",
+  "map_id": "hero_room_01",
+  "base_version": 9,
+  "analysis_status": "reviewed",
+  "note": "Replace watery edge composites with pure stone facing sprites, render the sea exclusively behind the platform, and retain history.",
+  "changes": [
+    {
+      "op": "update_block",
+      "instance_id": "TerraceRockFrontLeft",
+      "set": {
+        "id": "E023",
+        "scale": 0.88,
+        "x": 394,
+        "y": 941
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "TerraceRockFrontRight",
+      "set": {
+        "id": "E024",
+        "scale": 0.88,
+        "x": 1145,
+        "y": 941
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "v10 clean independent limestone cliff sprites E023/E024 replace unwanted baked ocean bars; reference artistic match and overall illumination still need QA."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "composition_reference",
+      "value": {
+        "image": "User-provided original Hero's Room reference from conversation (1448x1086)",
+        "reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+        "reference_dimensions": [
+          1448,
+          1086
+        ],
+        "revision": "10-clean-dry-coastal-stone",
+        "qa": "pending visual comparison",
+        "not_in_repo": true,
+        "goals": [
+          "Non-rectangular floor silhouette",
+          "ocean behind top arch",
+          "remove background sprite rectangular seams",
+          "preserve already detailed sprites"
+        ],
+        "new_parts": [
+          "O027",
+          "E019",
+          "E020",
+          "W019",
+          "S017"
+        ],
+        "missing_piece_status": "first-pass-art-generated-awaiting-artist-review",
+        "new_parts_used": [
+          "O028",
+          "E021",
+          "E022",
+          "W020",
+          "S017"
+        ],
+        "fidelity": "needs_review",
+        "replacement_ids": [
+          "E023",
+          "E024"
+        ],
+        "status": "needs_visual_review"
+      }
+    }
+  ]
+}

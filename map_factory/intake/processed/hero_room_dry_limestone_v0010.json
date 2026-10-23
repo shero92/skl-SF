@@ -1,0 +1,10 @@
+{
+  "manifest": "map_factory/intake/pending/hero_room_dry_limestone_v0010.json",
+  "manifest_sha256": "6bb8bfc48ade4c06a016f207b253b320b6c0ee99f5da22ca13a0ba0ade8a1f1b",
+  "map_id": "hero_room_01",
+  "result_version": 10,
+  "imported_assets": [],
+  "staged_candidates": [],
+  "status": "processed",
+  "source_image": null
+}

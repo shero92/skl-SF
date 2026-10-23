@@ -917,11 +917,11 @@
       ]
     },
     {
-      "id": "E021",
+      "id": "E023",
       "instance_id": "TerraceRockFrontLeft",
-      "x": 390,
-      "y": 945,
-      "scale": 0.86,
+      "x": 394,
+      "y": 941,
+      "scale": 0.88,
       "render_layer": "walls",
       "z_index": 0,
       "shadow": {
@@ -932,11 +932,11 @@
       }
     },
     {
-      "id": "E022",
+      "id": "E024",
       "instance_id": "TerraceRockFrontRight",
-      "x": 1150,
-      "y": 945,
-      "scale": 0.86,
+      "x": 1145,
+      "y": 941,
+      "scale": 0.88,
       "render_layer": "walls",
       "z_index": 0,
       "shadow": {
@@ -1012,7 +1012,7 @@
       1448,
       1086
     ],
-    "revision": "9-refined-bone-and-clean-edges",
+    "revision": "10-clean-dry-coastal-stone",
     "qa": "pending visual comparison",
     "not_in_repo": true,
     "goals": [
@@ -1036,22 +1036,27 @@
       "W020",
       "S017"
     ],
-    "fidelity": "needs_review"
+    "fidelity": "needs_review",
+    "replacement_ids": [
+      "E023",
+      "E024"
+    ],
+    "status": "needs_visual_review"
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 9,
-  "parent_version": 8,
-  "created_at": "2026-10-23T17:03:23+00:00",
+  "version": 10,
+  "parent_version": 9,
+  "created_at": "2026-10-23T17:09:23+00:00",
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "change_note": "Replace first-pass composite sprites with clearer ivory skull shrine and cleaned ocean-edge rock wall PNGs; retain prior full versions; add movement obstacle for physical shrine.",
+  "change_note": "Replace watery edge composites with pure stone facing sprites, render the sea exclusively behind the platform, and retain history.",
   "visual_qa": {
     "status": "needs_review",
-    "notes": "v9 now has a clearly painted ivory skull and stone-edge composites with cyan water-strip pixels removed. Scene geometry, perspective, lighting and seams still need in-Godot visual inspection."
+    "notes": "v10 clean independent limestone cliff sprites E023/E024 replace unwanted baked ocean bars; reference artistic match and overall illumination still need QA."
   },
   "navigation": {
     "schema_version": 1,
@@ -1278,7 +1283,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 9,
+    "version": 10,
     "processing_passes": [
       "background",
       "ground",
@@ -3023,18 +3028,18 @@
         },
         {
           "instance_id": "TerraceRockFrontLeft",
-          "asset_id": "E021",
+          "asset_id": "E023",
           "source_layer": "front_objects",
           "render_layer": "walls",
           "position": [
-            390.0,
-            945.0
+            394.0,
+            941.0
           ],
-          "scale": 0.86,
+          "scale": 0.88,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://map_factory/parts/environment/E021_Clean_Sea_Cliff_Ruin_Left.png",
+          "texture_path": "res://map_factory/parts/environment/E023_Coastal_Foundation_No_Water_Left.png",
           "pixel_size": [
             340,
             248
@@ -3047,12 +3052,12 @@
           "collision": {
             "enabled": true,
             "size": [
-              220,
-              44
+              216,
+              48
             ],
             "offset": [
               0,
-              -31
+              -36
             ]
           },
           "shadow": {
@@ -3065,18 +3070,18 @@
         },
         {
           "instance_id": "TerraceRockFrontRight",
-          "asset_id": "E022",
+          "asset_id": "E024",
           "source_layer": "front_objects",
           "render_layer": "walls",
           "position": [
-            1150.0,
-            945.0
+            1145.0,
+            941.0
           ],
-          "scale": 0.86,
+          "scale": 0.88,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://map_factory/parts/environment/E022_Clean_Sea_Cliff_Ruin_Right.png",
+          "texture_path": "res://map_factory/parts/environment/E024_Coastal_Foundation_No_Water_Right.png",
           "pixel_size": [
             340,
             248
@@ -3089,12 +3094,12 @@
           "collision": {
             "enabled": true,
             "size": [
-              220,
-              44
+              216,
+              48
             ],
             "offset": [
               0,
-              -31
+              -36
             ]
           },
           "shadow": {
@@ -5016,14 +5021,14 @@
         {
           "instance_id": "TerraceRockFrontLeft__shadow",
           "owner_instance_id": "TerraceRockFrontLeft",
-          "owner_asset_id": "E021",
+          "owner_asset_id": "E023",
           "asset_id": "S013",
           "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
           "position": [
-            390.0,
-            945.0
+            394.0,
+            941.0
           ],
-          "scale": 0.86,
+          "scale": 0.88,
           "sprite_pixel_size": [
             340,
             248
@@ -5040,14 +5045,14 @@
         {
           "instance_id": "TerraceRockFrontRight__shadow",
           "owner_instance_id": "TerraceRockFrontRight",
-          "owner_asset_id": "E022",
+          "owner_asset_id": "E024",
           "asset_id": "S013",
           "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
           "position": [
-            1150.0,
-            945.0
+            1145.0,
+            941.0
           ],
-          "scale": 0.86,
+          "scale": 0.88,
           "sprite_pixel_size": [
             340,
             248
@@ -5524,8 +5529,8 @@
       "E015",
       "E016",
       "E017",
-      "E021",
-      "E022",
+      "E023",
+      "E024",
       "F001",
       "F002",
       "F014",

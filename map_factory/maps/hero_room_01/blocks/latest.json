@@ -10,7 +10,7 @@
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 9,
+  "version": 10,
   "source_image": {
     "path": null,
     "sha256": null,
@@ -31,8 +31,8 @@
     "E015",
     "E016",
     "E017",
-    "E021",
-    "E022",
+    "E023",
+    "E024",
     "F001",
     "F002",
     "F014",
@@ -4109,10 +4109,10 @@
     },
     {
       "instance_id": "TerraceRockFrontLeft",
-      "asset_id": "E021",
+      "asset_id": "E023",
       "category": "environment",
-      "subtype": "coastal_wall_apron",
-      "texture_path": "res://map_factory/parts/environment/E021_Clean_Sea_Cliff_Ruin_Left.png",
+      "subtype": "limestone_cliff_facing",
+      "texture_path": "res://map_factory/parts/environment/E023_Coastal_Foundation_No_Water_Left.png",
       "asset_status": "needs_cleanup",
       "pixel_size": [
         340,
@@ -4124,22 +4124,22 @@
       ],
       "layer": "front_objects",
       "position": [
-        390,
-        945
+        394,
+        941
       ],
-      "scale": 0.86,
+      "scale": 0.88,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
       "collision": {
         "enabled": true,
         "size": [
-          220,
-          44
+          216,
+          48
         ],
         "offset": [
           0,
-          -31
+          -36
         ]
       },
       "shadow": {
@@ -4151,34 +4151,33 @@
       "tags": [
         "stone",
         "coast",
-        "flora",
-        "no_baked_ocean"
+        "dry_sprite",
+        "sea_layer_separate",
+        "ivy"
       ],
       "source": {
         "kind": "procedural_pixel_art_and_registered_asset_composite",
         "tool": "tools/generate_missing_hero_art.py",
         "reused_asset_ids": [
-          "E007",
-          "E008",
+          "W005",
+          "W012",
           "W017",
           "ST010",
-          "W012",
           "V023",
-          "V004",
+          "V005",
           "V012",
-          "V011",
-          "V013"
+          "V011"
         ],
-        "sha256": "9444a8a51d5e6a6d3edb97abcd99201f27d485c3e2e3e8dc436c7cf486de369d",
+        "sha256": "df220726ccadd4cf41f9221d0f85983b58598eb1cd8bce733c25a1275627428c",
         "approved": false
       }
     },
     {
       "instance_id": "TerraceRockFrontRight",
-      "asset_id": "E022",
+      "asset_id": "E024",
       "category": "environment",
-      "subtype": "coastal_wall_apron",
-      "texture_path": "res://map_factory/parts/environment/E022_Clean_Sea_Cliff_Ruin_Right.png",
+      "subtype": "limestone_cliff_facing",
+      "texture_path": "res://map_factory/parts/environment/E024_Coastal_Foundation_No_Water_Right.png",
       "asset_status": "needs_cleanup",
       "pixel_size": [
         340,
@@ -4190,22 +4189,22 @@
       ],
       "layer": "front_objects",
       "position": [
-        1150,
-        945
+        1145,
+        941
       ],
-      "scale": 0.86,
+      "scale": 0.88,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
       "collision": {
         "enabled": true,
         "size": [
-          220,
-          44
+          216,
+          48
         ],
         "offset": [
           0,
-          -31
+          -36
         ]
       },
       "shadow": {
@@ -4217,25 +4216,24 @@
       "tags": [
         "stone",
         "coast",
-        "flora",
-        "no_baked_ocean"
+        "dry_sprite",
+        "sea_layer_separate",
+        "ivy"
       ],
       "source": {
         "kind": "procedural_pixel_art_and_registered_asset_composite",
         "tool": "tools/generate_missing_hero_art.py",
         "reused_asset_ids": [
-          "E007",
-          "E008",
+          "W005",
+          "W012",
           "W017",
           "ST010",
-          "W012",
           "V023",
-          "V004",
+          "V005",
           "V012",
-          "V011",
-          "V013"
+          "V011"
         ],
-        "sha256": "430f6f1a027a04f9c8d4d9d18d5078f7b32ec9655d66f3e39a70fd8fc69f1075",
+        "sha256": "d6bf1bee986a401cffc8593ccf7fc98f1702f16c7a7c1ea1083898b9715e6d03",
         "approved": false
       }
     }
