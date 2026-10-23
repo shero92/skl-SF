@@ -100,16 +100,16 @@
     {
       "id": "P005",
       "instance_id": "BedRug",
-      "x": 406,
-      "y": 725,
-      "scale": 0.68
+      "x": 404,
+      "y": 588,
+      "scale": 0.65
     },
     {
       "id": "P005",
       "instance_id": "DeskRug",
-      "x": 1190,
-      "y": 730,
-      "scale": 0.7
+      "x": 1127,
+      "y": 646,
+      "scale": 0.69
     }
   ],
   "back_objects": [
@@ -197,9 +197,9 @@
     {
       "id": "P001",
       "instance_id": "HeroBed",
-      "x": 423,
-      "y": 674,
-      "scale": 0.87,
+      "x": 399,
+      "y": 566,
+      "scale": 0.76,
       "collision": {
         "enabled": true,
         "size": [
@@ -221,9 +221,9 @@
     {
       "id": "P007",
       "instance_id": "SideTable",
-      "x": 264,
-      "y": 640,
-      "scale": 0.58,
+      "x": 266,
+      "y": 540,
+      "scale": 0.56,
       "collision": {
         "enabled": true,
         "size": [
@@ -239,9 +239,9 @@
     {
       "id": "P014",
       "instance_id": "LeftBookshelf",
-      "x": 428,
-      "y": 438,
-      "scale": 0.62,
+      "x": 423,
+      "y": 401,
+      "scale": 0.65,
       "collision": {
         "enabled": true,
         "size": [
@@ -257,9 +257,9 @@
     {
       "id": "P015",
       "instance_id": "RightBookshelf",
-      "x": 1120,
-      "y": 457,
-      "scale": 0.65,
+      "x": 1135,
+      "y": 424,
+      "scale": 0.64,
       "collision": {
         "enabled": true,
         "size": [
@@ -275,9 +275,9 @@
     {
       "id": "P008",
       "instance_id": "WritingTable",
-      "x": 1120,
-      "y": 705,
-      "scale": 0.86,
+      "x": 1125,
+      "y": 614,
+      "scale": 0.7,
       "collision": {
         "enabled": true,
         "size": [
@@ -320,9 +320,9 @@
     {
       "id": "P017",
       "instance_id": "TreasureChest",
-      "x": 1320,
-      "y": 780,
-      "scale": 0.75,
+      "x": 1230,
+      "y": 783,
+      "scale": 0.7,
       "collision": {
         "enabled": true,
         "size": [
@@ -413,14 +413,14 @@
     }
   ],
   "player_spawn": [
-    770,
-    720
+    740,
+    617
   ],
   "interactions": [
     {
       "id": "HeroBed",
-      "x": 425,
-      "y": 660,
+      "x": 399,
+      "y": 560,
       "radius": 112,
       "speaker": "Hero",
       "lines": [
@@ -430,8 +430,8 @@
     },
     {
       "id": "WritingTable",
-      "x": 1080,
-      "y": 710,
+      "x": 1125,
+      "y": 612,
       "radius": 126,
       "speaker": "Hero",
       "lines": [
@@ -441,8 +441,8 @@
     },
     {
       "id": "TreasureChest",
-      "x": 1320,
-      "y": 790,
+      "x": 1230,
+      "y": 777,
       "radius": 108,
       "speaker": "Hero",
       "lines": [
@@ -452,8 +452,8 @@
     },
     {
       "id": "ArchMain",
-      "x": 770,
-      "y": 375,
+      "x": 776,
+      "y": 350,
       "radius": 135,
       "speaker": "Hero",
       "lines": [
@@ -465,8 +465,8 @@
     {
       "instance_id": "ForestGuardianA",
       "name": "Forest Guardian",
-      "x": 550,
-      "y": 741,
+      "x": 507,
+      "y": 693,
       "radius": 92,
       "lines": [
         "Welcome to our sanctuary.",
@@ -476,8 +476,8 @@
     {
       "instance_id": "ForestGuardianB",
       "name": "Forest Guardian",
-      "x": 1000,
-      "y": 790,
+      "x": 1057,
+      "y": 698,
       "radius": 92,
       "lines": [
         "The old stone arch holds many memories.",
@@ -539,5 +539,12 @@
     ],
     "qa": "needs_cleanup",
     "reference": "docs/FLOOR_REPAINT_QA.md"
+  },
+  "composition_reference": {
+    "image": "User Hero's Room screenshot",
+    "target": "Seaside sanctuary top-down 3/4 pixel art",
+    "revision": "3",
+    "qa": "Manual screenshot comparison still required.",
+    "notes": "Moved furniture and NPCs toward corresponding top-down reference positions while preserving unique IDs and collisions."
   }
 }
