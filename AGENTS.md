@@ -1,6 +1,6 @@
 # Agent instructions for skl-SF
 
-Before modifying assets or maps, read `docs/ASSET_QUALITY_POLICY.md`, `map_factory/metadata/asset_index.json`, and `docs/ART_PIPELINE.md`.
+Before modifying assets or maps, read `docs/ASSET_QUALITY_POLICY.md`, `map_factory/metadata/asset_index.json`, and `docs/ART_PIPELINE.md`, and `docs/ART_UPGRADE_STATUS.md`.
 
 Always choose the highest **verified** quality. Keep independent transparent sprite PNGs with stable IDs, update catalog metadata when replacing them, and do not substitute blurry upscales or labeled atlas crops for production-ready artwork. If a candidate may not be better, keep the original and stage it for visual review.
 
