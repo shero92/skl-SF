@@ -1,0 +1,17 @@
+{
+  "mode": "clone",
+  "map_id": "seaside_guest_room_01",
+  "from_map": "hero_room_01",
+  "note": "New map inherits every reusable block from latest parent, then applies this difference.",
+  "changes": [
+    {
+      "op": "set_property",
+      "key": "description",
+      "value": "An alternate coastal guest room built from the latest sanctuary map."
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "WritingTable"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "mode": "patch",
+  "map_id": "hero_room_01",
+  "base_version": 1,
+  "note": "Example only: move one existing piece and add reusable flowers from catalog.",
+  "changes": [
+    {
+      "op": "update_block",
+      "instance_id": "HeroBed",
+      "set": {"x": 425, "y": 567, "scale": 0.76}
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "V004",
+        "instance_id": "FreshIvy_01",
+        "x": 310,
+        "y": 875,
+        "scale": 0.85,
+        "rotation_degrees": 0,
+        "z_index": 2,
+        "shadow": {"type": "plant", "offset_x": 3, "offset_y": 2, "opacity": 0.25},
+        "collision": {"enabled": false, "size": [48, 28], "offset": [0, 0]}
+      }
+    }
+  ]
+}

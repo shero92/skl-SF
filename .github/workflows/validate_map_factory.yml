@@ -1,0 +1,36 @@
+name: Validate versioned map factory
+on:
+  push:
+    paths:
+      - "map_factory/maps/**/*.json"
+      - "tools/map_factory_cli.py"
+      - "tools/tests/test_map_factory.py"
+      - ".github/workflows/validate_map_factory.yml"
+  workflow_dispatch:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit test map-only metadata revisions
+        run: python -m unittest discover -s tools/tests -p 'test_map_factory.py' -v
+      - name: Check every published version and latest registry hash
+        run: python tools/map_factory_cli.py validate
+      - name: Reject character and UI objects in map snapshots
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          index=json.loads(Path("map_factory/metadata/asset_index.json").read_text())
+          by={a['id']:a for a in index['assets']}
+          forbidden={'characters','ui','shadows'}
+          for f in Path("map_factory/maps").glob("*/latest.json"):
+              data=json.loads(f.read_text())
+              for layer in ("background_objects","ground_overlays","back_objects","objects","front_objects"):
+                  for obj in data.get(layer,[]):
+                      assert by[obj["id"]]["category"] not in forbidden,(f,obj)
+          print("No character or interface objects in map factory")
+          PY
