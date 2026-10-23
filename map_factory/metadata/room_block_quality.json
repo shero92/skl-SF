@@ -35,14 +35,14 @@
       "reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7"
     }
   ],
-  "verified_environment_png_files": 194,
-  "environment_catalog_count": 194,
-  "catalog_total": 218,
+  "verified_environment_png_files": 199,
+  "environment_catalog_count": 199,
+  "catalog_total": 223,
   "catalog_status": {
-    "needs_cleanup": 218
+    "needs_cleanup": 223
   },
   "referenced_status": {
-    "needs_cleanup": 194
+    "needs_cleanup": 199
   },
   "errors": [],
   "artistic_qa": "NOT APPROVED: image file presence and alpha cannot confirm full fidelity.",
@@ -984,6 +984,42 @@
       "texture_path": "res://map_factory/parts/environment/E018_Sky_Cloud_Background.png"
     },
     {
+      "id": "E019",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        340,
+        248
+      ],
+      "alpha_bbox": [
+        12,
+        13,
+        339,
+        248
+      ],
+      "file_bytes": 168990,
+      "sha256": "35212db385e3a97241a1e69f3a72a248a19fc310b61a1e171e46dc05b49e4e81",
+      "texture_path": "res://map_factory/parts/environment/E019_Sea_Cliff_Ruin_Edge_Left.png"
+    },
+    {
+      "id": "E020",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        340,
+        248
+      ],
+      "alpha_bbox": [
+        1,
+        13,
+        328,
+        248
+      ],
+      "file_bytes": 168751,
+      "sha256": "d7d161e65e8812782c5d4072b62acb70b0efcb918806fb915d648341af45b674",
+      "texture_path": "res://map_factory/parts/environment/E020_Sea_Cliff_Ruin_Edge_Right.png"
+    },
+    {
       "id": "F001",
       "category": "floors",
       "status": "needs_cleanup",
@@ -1848,6 +1884,24 @@
       "texture_path": "res://map_factory/parts/objects/O026_Flower_Vase_Small.png"
     },
     {
+      "id": "O027",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        268,
+        276
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        252,
+        276
+      ],
+      "file_bytes": 80767,
+      "sha256": "64b865abf6d43666b395352ad590473e2087490d612fb4999b947a9237eb5a42",
+      "texture_path": "res://map_factory/parts/objects/O027_Antlered_Skull_Flower_Shrine.png"
+    },
+    {
       "id": "P001",
       "category": "furniture",
       "status": "needs_cleanup",
@@ -2530,6 +2584,24 @@
       "file_bytes": 2919,
       "sha256": "3074cf88b36db05d3fef5fdd40e71576c39ef0176777c19db04a90fed1df009c",
       "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png"
+    },
+    {
+      "id": "S017",
+      "category": "shadows",
+      "status": "needs_cleanup",
+      "dimensions": [
+        320,
+        158
+      ],
+      "alpha_bbox": [
+        28,
+        29,
+        293,
+        125
+      ],
+      "file_bytes": 4336,
+      "sha256": "944245e23376726b23b73b659d33411699041d3d5a7a1644315e001c6ecb86fd",
+      "texture_path": "res://map_factory/parts/shadows/S017_Directional_Sun_Cast_Shadow.png"
     },
     {
       "id": "ST001",
@@ -3538,6 +3610,24 @@
       "file_bytes": 28105,
       "sha256": "a0213a0f8cc4ce1b7defa50ba80df348f83a1d21dd92cd622829eb15b30e6a6d",
       "texture_path": "res://map_factory/parts/walls/W018_Stone_Wall_Inner_Corner.png"
+    },
+    {
+      "id": "W019",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        246,
+        238
+      ],
+      "alpha_bbox": [
+        2,
+        17,
+        239,
+        238
+      ],
+      "file_bytes": 131430,
+      "sha256": "ed84eeea7a1969fb012eb82ceac54b29e36bc1aabd47bae2ad725e66f4443d3b",
+      "texture_path": "res://map_factory/parts/walls/W019_Deep_Limestone_Parapet_Corner.png"
     }
   ]
 }
