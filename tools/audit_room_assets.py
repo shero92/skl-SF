@@ -70,8 +70,45 @@ def main():
         if count["shadows"] != sum(
               x["shadow"].get("type","none")!="none" for key in ("background","ground","walls","decorations") for x in stack["passes"][key]):
             errors.append("Shadow pass count mismatch "+map_id)
+    # Inspect every environmental PNG, not only images used in current maps.
+    # Characters and UI are strictly excluded.
+    all_map_ids=[ident for ident,record in sorted(catalog.items())
+                 if record.get("category") not in ("characters","ui")]
+    for asset_id in all_map_ids:
+        if asset_id in inspected:
+            continue
+        record=catalog[asset_id]
+        relative=record["texture_path"].removeprefix("res://")
+        file=ROOT/relative
+        if not file.is_file():
+            errors.append("Missing reusable map PNG "+asset_id)
+            continue
+        try:
+            with Image.open(file) as img:
+                img.load()
+                if img.format!="PNG":
+                    errors.append("Non-PNG reusable sprite "+asset_id)
+                if list(img.size)!=record.get("pixel_size"):
+                    errors.append("Metadata pixel size mismatch "+asset_id)
+                bounds=img.convert("RGBA").getchannel("A").getbbox()
+                if not bounds:
+                    errors.append("Empty alpha for "+asset_id)
+                inspected[asset_id]={
+                    "id":asset_id,"category":record["category"],
+                    "status":record.get("status","planned"),
+                    "dimensions":list(img.size),
+                    "alpha_bbox":list(bounds) if bounds else None,
+                    "file_bytes":file.stat().st_size,
+                    "sha256":hashlib.sha256(file.read_bytes()).hexdigest(),
+                    "texture_path":record["texture_path"]}
+        except Exception as exc:
+            errors.append("Unreadable environmental sprite "+asset_id+": "+str(exc))
+    if len(inspected)!=len(all_map_ids):
+        errors.append("Map catalog incomplete: %d/%d PNGs verified"%(len(inspected),len(all_map_ids)))
+
     by_status=collections.Counter(x["status"] for x in inspected.values())
-    response={"maps":summaries,"referenced_physical_png_files":len(inspected),
+    response={"maps":summaries,"verified_environment_png_files":len(inspected),
+              "environment_catalog_count":len(all_map_ids),
               "catalog_total":len(catalog),"catalog_status":dict(collections.Counter(x.get("status","planned") for x in catalog.values())),
               "referenced_status":dict(by_status),"errors":errors,
               "artistic_qa":"NOT APPROVED: image file presence and alpha cannot confirm full fidelity.",
@@ -86,7 +123,7 @@ def main():
         c=s["counts"]
         md.append(f'| {s["map_id"]} | v{s["version"]:04d} | {c["background"]} | {c["ground"]} | {c["walls"]} | {c["decorations"]} | {c["shadows"]} | {s["mounted_details"]} |')
     md += ["",f"- Registered catalog images: **{len(catalog)}**.",
-           f"- Referenced distinct verified files: **{len(inspected)}**.",
+           f"- Verified environmental and shadow PNG files: **{len(inspected)} / {len(all_map_ids)}**.",
            f"- Integrity errors: **{len(errors)}**.",
            f"- Catalog QA statuses: **{dict(response['catalog_status'])}**.",
            "- Reference fidelity still needs artist comparison of exported Godot room render.",

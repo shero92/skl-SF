@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - "map_factory/maps/**"
+      - "map_factory/parts/**/*.png"
+      - "map_factory/metadata/asset_index.json"
       - "tools/audit_room_assets.py"
       - ".github/workflows/audit_room_assets.yml"
   workflow_dispatch:
