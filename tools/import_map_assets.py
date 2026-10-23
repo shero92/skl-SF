@@ -114,6 +114,6 @@ def import_assets(root: Path, assets: list):
     with (root/QUEUE).open("w",newline="",encoding="utf-8") as f:
         writer=csv.writer(f)
         writer.writerow(["id","category","name","status","texture_path"])
-        writer.writerows((a["id"],a["category"],a["name"],a["status"],a["texture_path"])
+        writer.writerows((a["id"],a["category"],a.get("name",a["id"]),a.get("status","planned"),a["texture_path"])
                          for a in index["assets"])
     return {"installed":installed,"candidates":candidates,"unchanged":unchanged}
