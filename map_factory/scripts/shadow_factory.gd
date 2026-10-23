@@ -18,7 +18,8 @@ const SHADOW_TEXTURES := {
     "wall_base": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
     "wall_corner": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
     "stairs": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
-    "soft_cast": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png"
+    "soft_cast": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
+    "directional_sun": "res://map_factory/parts/shadows/S017_Directional_Sun_Cast_Shadow.png"
 }
 
 static func create_shadow(config: Dictionary, sprite_size: Vector2) -> Node2D:

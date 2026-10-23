@@ -13,7 +13,7 @@ SHADOW_FILES={
  "contact_large":"S003","bed":"S005","table":"S006","chair":"S007",
  "bookshelf":"S008","chest":"S009","plant":"S010",
  "column_short":"S011","column_long":"S012","wall_base":"S013",
- "wall_corner":"S014","stairs":"S015","soft_cast":"S016"}
+ "wall_corner":"S014","stairs":"S015","soft_cast":"S016","directional_sun":"S017"}
 DISPLAY_DEPTH={"background":0,"ground":10,"shadows":20,"walls":30,"decorations":40}
 
 def classify(part,record,source):
