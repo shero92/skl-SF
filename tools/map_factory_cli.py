@@ -7,6 +7,7 @@ room placement manifest and optionally independently generated PNG assets.
 Each revision is based on the verified latest version, not a stale screenshot.
 """
 from __future__ import annotations
+from map_factory_layers import create_layer_stack, validate_layer_stack
 import argparse
 from copy import deepcopy
 from datetime import datetime, timezone
@@ -269,6 +270,9 @@ def validate_room(data, catalog, expect_map_id=None):
         validate_navigation(data["navigation"], seen)
     if "visual_qa" in data:
         validate_visual_qa(data["visual_qa"])
+    # Resolve attachments, detect cycles and validate optional compiled layer graph.
+    create_layer_stack(data,catalog)
+    validate_layer_stack(data,catalog)
     return True
 
 
@@ -331,6 +335,9 @@ def build_block_manifest(snapshot, catalog):
     for ident in snapshot.get("floor_ids", []):
         used.add(ident)
     return {
+        "layer_schema_version": 1,
+        "five_level_map": (snapshot.get("layer_stack") or create_layer_stack(snapshot,catalog))["counts"],
+        "layer_stack_path": "map_factory/maps/"+snapshot["map_id"]+"/layers/latest.json",
         "schema_version": 1, "map_id": snapshot["map_id"],
         "version": snapshot["version"], "source_image": snapshot.get("source_image"),
         "block_count": len(instances), "unique_asset_count": len(used),
@@ -347,9 +354,14 @@ def write_revision(root, map_id, snapshot, reg, patch=None):
     dest = version_file(map_id, n)
     if (root / dest).exists():
         raise ValueError("Revision already exists; refusing to overwrite history")
+    cat=asset_catalog(root)
+    snapshot["layer_stack"]=create_layer_stack(snapshot,cat)
+    validate_room(snapshot,cat,map_id)
     dump(root, dest, snapshot)
     dump(root, base / "latest.json", snapshot)
-    metadata = build_block_manifest(snapshot, asset_catalog(root))
+    dump(root, base / "layers" / f"v{n:04d}.json", snapshot["layer_stack"])
+    dump(root, base / "layers" / "latest.json", snapshot["layer_stack"])
+    metadata = build_block_manifest(snapshot, cat)
     dump(root, base / "blocks" / f"v{n:04d}.json", metadata)
     dump(root, base / "blocks" / "latest.json", metadata)
     reg["maps"][map_id] = {
@@ -534,6 +546,15 @@ def validate_repository(root):
                 raise ValueError("Broken parent revision "+map_id)
         if read(root,version_file(map_id,n))!=current:
             raise ValueError("Latest snapshot does not match immutable version")
+        layer_path=map_base(map_id)/"layers"/"latest.json"
+        if (root/layer_path).exists():
+            if read(root,layer_path)!=create_layer_stack(current,catalog):
+                raise ValueError("Latest five-level layer stack metadata mismatch")
+            for version in range(1,n+1):
+                source=read(root,version_file(map_id,version))
+                expected=create_layer_stack(source,catalog)
+                if read(root,map_base(map_id)/"layers"/f"v{version:04d}.json")!=expected:
+                    raise ValueError("Versioned layer stack does not match map "+map_id)
         expected_blocks=build_block_manifest(current,catalog)
         if read(root,map_base(map_id)/"blocks"/"latest.json")!=expected_blocks:
             raise ValueError("Resolved latest blocks metadata mismatch")
@@ -553,6 +574,10 @@ def sync_block_metadata(root):
             snapshot=read(root,version_file(map_id,version))
             metadata=build_block_manifest(snapshot,cat)
             dump(root,map_base(map_id)/"blocks"/f"v{version:04d}.json",metadata)
+            stack=create_layer_stack(snapshot,cat)
+            dump(root,map_base(map_id)/"layers"/f"v{version:04d}.json",stack)
+            if version==item["version"]:
+                dump(root,map_base(map_id)/"layers"/"latest.json",stack)
             if version==item["version"]:
                 dump(root,map_base(map_id)/"blocks"/"latest.json",metadata)
             rebuilt.append(f"{map_id}@v{version:04d}")
