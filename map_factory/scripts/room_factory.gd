@@ -62,6 +62,14 @@ func build_room(path: String, parent: Node2D) -> Node2D:
         sea_config["canvas_size"] = canvas
         ocean.configure(sea_config, catalog)
 
+    # New maps have an explicit, immutable five-pass sprite/placement graph.
+    # Old maps continue using their original legacy groups.
+    var stack: Dictionary = data.get("layer_stack", {})
+    if not stack.is_empty() and int(stack.get("schema_version", 0)) == 1:
+        _build_five_levels(data, stack, root)
+        _place_effects(data.get("effects", []), root)
+        return root
+
     _place_group(data.get("background_objects", []), root, "DistantRuins", false)
     var ground := Node2D.new()
     ground.name = "Ground"
@@ -73,6 +81,92 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     _place_group(data.get("front_objects", []), root, "FrontDecorations", false)
     _place_effects(data.get("effects", []), root)
     return root
+
+func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> void:
+    var passes: Dictionary = stack.get("passes", {})
+    var background := Node2D.new()
+    background.name = "Level0_Background"
+    background.z_index = 0
+    root.add_child(background)
+    _place_compiled_entries(passes.get("background", []), background)
+
+    var floor_level := Node2D.new()
+    floor_level.name = "Level1_Ground"
+    floor_level.z_index = 10
+    root.add_child(floor_level)
+    var tiles := Node2D.new()
+    tiles.name = "Ground"
+    floor_level.add_child(tiles)
+    _paint_ground(data, tiles)
+    var overlays := Node2D.new()
+    overlays.name = "GroundOverlays"
+    floor_level.add_child(overlays)
+    _place_compiled_entries(passes.get("ground", []), overlays)
+
+    var walls := Node2D.new()
+    walls.name = "Level2_Walls"
+    walls.z_index = 30
+    walls.y_sort_enabled = true
+    root.add_child(walls)
+    _place_compiled_entries(passes.get("walls", []), walls)
+
+    var decor := Node2D.new()
+    decor.name = "Level3_Decorations"
+    decor.z_index = 40
+    decor.y_sort_enabled = true
+    root.add_child(decor)
+    _place_compiled_entries(passes.get("decorations", []), decor)
+
+    # Pass five: separate shadow instances, composited above floor but below
+    # walls and decor. Processing last must NOT obscure their casting objects.
+    var shadows := Node2D.new()
+    shadows.name = "Level4_Shadows"
+    shadows.z_index = 20
+    root.add_child(shadows)
+    for record in passes.get("shadows", []):
+        if typeof(record) != TYPE_DICTIONARY:
+            continue
+        var cfg: Dictionary = record.get("settings", {})
+        var dimensions: Array = record.get("sprite_pixel_size", [64, 64])
+        var native_size := Vector2(float(dimensions[0]), float(dimensions[1]))
+        var layer_shadow := ShadowFactory.create_shadow(cfg, native_size)
+        layer_shadow.name = String(record.get("instance_id", "UnnamedShadow"))
+        var xy: Array = record.get("position", [0, 0])
+        layer_shadow.position = Vector2(float(xy[0]), float(xy[1]))
+        var scale_value := float(record.get("scale", 1))
+        layer_shadow.scale = Vector2.ONE * scale_value
+        layer_shadow.set_meta("owner_instance_id", String(record.get("owner_instance_id", "")))
+        shadows.add_child(layer_shadow)
+
+func _place_compiled_entries(entries: Array, group: Node2D) -> void:
+    for record in entries:
+        if typeof(record) != TYPE_DICTIONARY:
+            continue
+        var asset_id := String(record.get("asset_id", ""))
+        var info: Dictionary = catalog.get_asset(asset_id)
+        if info.is_empty() or String(info.get("category", "")) in ["characters", "ui", "shadows"]:
+            push_error("Invalid map-only block: " + asset_id)
+            continue
+        var opts: Dictionary = {
+            "_separate_shadow": true,
+            "shadow": record.get("shadow", {"type":"none"}),
+            "collision": record.get("collision", {"enabled":false}),
+            "flip_h": record.get("flip_h", false)
+        }
+        var node := assets.create_asset(asset_id, opts)
+        node.name = String(record.get("instance_id", asset_id))
+        var xy: Array = record.get("position", [0, 0])
+        node.position = Vector2(float(xy[0]), float(xy[1]))
+        node.rotation_degrees = float(record.get("rotation_degrees", 0))
+        var scale_value := float(record.get("scale", 1))
+        node.scale = Vector2.ONE * scale_value
+        # A negative or unusually high local z must not escape its semantic pass.
+        node.z_index = clampi(int(record.get("z_index", 0)), -2, 2)
+        var attachment: Variant = record.get("attachment")
+        if typeof(attachment) == TYPE_DICTIONARY:
+            node.set_meta("mount_on", String(attachment.get("parent_instance_id", "")))
+            node.set_meta("mount_offset", attachment.get("mount_offset", [0,0]))
+        group.add_child(node)
 
 func _paint_ground(data: Dictionary, target: Node2D) -> void:
     var size: Array = data.get("size", [17, 10])

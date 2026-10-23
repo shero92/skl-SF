@@ -33,7 +33,7 @@ func create_asset(asset_id: String, options: Dictionary = {}) -> Node2D:
     var shadow_cfg: Dictionary = record.get("shadow", {"type": "none"}).duplicate(true)
     if options.has("shadow"):
         shadow_cfg = options["shadow"]
-    if String(shadow_cfg.get("type", "none")) != "none":
+    if not bool(options.get("_separate_shadow", false)) and String(shadow_cfg.get("type", "none")) != "none":
         root.add_child(ShadowFactory.create_shadow(shadow_cfg, size))
 
     var collision_cfg: Dictionary = record.get("collision", {}).duplicate(true)
