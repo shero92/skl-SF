@@ -1,0 +1,31 @@
+{
+  "mode": "create",
+  "map_id": "forest_camp_example_01",
+  "preset": "sky_island",
+  "source_image": {
+    "path": "map_factory/references/forest_camp_example.png",
+    "sha256": "REPLACE_WITH_REAL_SHA256"
+  },
+  "note": "Example only: upload a real image and provide independent PNGs for any missing blocks.",
+  "assets": [],
+  "changes": [
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P001",
+        "instance_id": "ReusableBench",
+        "x": 640,
+        "y": 500,
+        "scale": 0.68
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review"
+      }
+    }
+  ]
+}
