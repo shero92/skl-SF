@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "description": "Underground stone room with dark ambient backdrop.",
+  "background_color": "#0e1d30",
+  "canvas_size": [
+    1536,
+    1024
+  ],
+  "tile_size": 64,
+  "size": [
+    20,
+    12
+  ],
+  "ground_offset": [
+    128,
+    128
+  ],
+  "floor_ids": [
+    "F005",
+    "F004"
+  ],
+  "tile_overrides": [],
+  "background_objects": [],
+  "ground_overlays": [],
+  "back_objects": [],
+  "objects": [],
+  "front_objects": [],
+  "effects": [],
+  "navigation": {
+    "schema_version": 1,
+    "grid_size": [
+      20,
+      12
+    ],
+    "origin": [
+      128,
+      128
+    ],
+    "cell_size": 64,
+    "default": {
+      "walk": false,
+      "fly": false,
+      "swim": false
+    },
+    "regions": [],
+    "obstacles": [],
+    "links": []
+  }
+}

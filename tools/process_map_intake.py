@@ -6,7 +6,7 @@ The last version is the authoritative base; stale updates fail safely.
 """
 from pathlib import Path
 import hashlib,json,re,sys
-from map_factory_cli import ROOT, clone_map, get_latest, apply, registry
+from map_factory_cli import ROOT, clone_map, create_map, get_latest, apply, registry
 from import_map_assets import import_assets
 
 PENDING=Path("map_factory/intake/pending")
@@ -46,7 +46,27 @@ def process(root=ROOT):
         assets=import_assets(root,doc.get("assets",[]))
         mode=doc.get("mode","patch")
         map_id=doc.get("map_id")
-        if mode=="clone":
+        if mode=="create":
+            create_map(root,map_id,doc.get("preset","indoor_room"),
+                       source_image=doc.get("source_image"),
+                       note=doc.get("note"))
+            create_ops=list(doc.get("changes",[]))
+            if create_ops:
+                generated={
+                    "map_id":map_id,"base_version":1,"changes":create_ops,
+                    "note":doc.get("note","Placed environmental blocks in newly created map")
+                }
+                if doc.get("source_image"):
+                    generated["source_image"]=doc["source_image"]
+                temp=root/"map_factory/intake"/"_created_map_patch.json"
+                temp.write_text(json.dumps(generated,ensure_ascii=False)+"\n")
+                try:
+                    result=apply(root,temp.relative_to(root))
+                finally:
+                    temp.unlink(missing_ok=True)
+            else:
+                result=get_latest(root,map_id)
+        elif mode=="clone":
             from_map=doc.get("from_map")
             if not from_map:
                 raise ValueError("Clone mode requires from_map")

@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "description": "Coastal terrace with sea and clouds enabled.",
+  "background_color": "#2985cb",
+  "canvas_size": [
+    1920,
+    1152
+  ],
+  "tile_size": 64,
+  "size": [
+    24,
+    13
+  ],
+  "ground_offset": [
+    192,
+    216
+  ],
+  "floor_ids": [
+    "F001",
+    "F003"
+  ],
+  "tile_overrides": [],
+  "background_objects": [],
+  "ground_overlays": [],
+  "back_objects": [],
+  "objects": [],
+  "front_objects": [],
+  "effects": [],
+  "ocean": {
+    "tile_size": 512,
+    "fps": 4,
+    "sky_height": 210
+  },
+  "navigation": {
+    "schema_version": 1,
+    "grid_size": [
+      24,
+      13
+    ],
+    "origin": [
+      192,
+      216
+    ],
+    "cell_size": 64,
+    "default": {
+      "walk": false,
+      "fly": false,
+      "swim": false
+    },
+    "regions": [],
+    "obstacles": [],
+    "links": []
+  }
+}

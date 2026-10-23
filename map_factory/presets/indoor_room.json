@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "description": "Indoor chamber; stone floor without any ocean.",
+  "background_color": "#202c43",
+  "canvas_size": [
+    1280,
+    896
+  ],
+  "tile_size": 64,
+  "size": [
+    16,
+    11
+  ],
+  "ground_offset": [
+    128,
+    96
+  ],
+  "floor_ids": [
+    "F001"
+  ],
+  "tile_overrides": [],
+  "background_objects": [],
+  "ground_overlays": [],
+  "back_objects": [],
+  "objects": [],
+  "front_objects": [],
+  "effects": [],
+  "navigation": {
+    "schema_version": 1,
+    "grid_size": [
+      16,
+      11
+    ],
+    "origin": [
+      128,
+      96
+    ],
+    "cell_size": 64,
+    "default": {
+      "walk": false,
+      "fly": false,
+      "swim": false
+    },
+    "regions": [],
+    "obstacles": [],
+    "links": []
+  }
+}

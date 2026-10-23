@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "description": "Sky realm map with islands placed as independent background blocks.",
+  "background_color": "#9bcbf0",
+  "canvas_size": [
+    1920,
+    1080
+  ],
+  "tile_size": 64,
+  "size": [
+    18,
+    10
+  ],
+  "ground_offset": [
+    360,
+    230
+  ],
+  "floor_ids": [
+    "F001",
+    "F002"
+  ],
+  "tile_overrides": [],
+  "background_objects": [],
+  "ground_overlays": [],
+  "back_objects": [],
+  "objects": [],
+  "front_objects": [],
+  "effects": [],
+  "navigation": {
+    "schema_version": 1,
+    "grid_size": [
+      18,
+      10
+    ],
+    "origin": [
+      360,
+      230
+    ],
+    "cell_size": 64,
+    "default": {
+      "walk": false,
+      "fly": false,
+      "swim": false
+    },
+    "regions": [],
+    "obstacles": [],
+    "links": []
+  }
+}

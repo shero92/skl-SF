@@ -392,6 +392,32 @@ def get_latest(root, map_id, reg=None):
     return snap
 
 
+PRESET_NAMES = ("indoor_room", "courtyard", "dungeon", "coast", "sky_island")
+
+
+def create_map(root, map_id, preset="indoor_room", source_image=None, note=None):
+    """Start an independent map, never inherit unwanted Hero Room blocks."""
+    check_id(map_id)
+    if preset not in PRESET_NAMES:
+        raise ValueError("Unknown map preset: " + str(preset))
+    reg=registry(root)
+    if map_id in reg["maps"] or (root/map_base(map_id)).exists():
+        raise ValueError("Map already exists: " + map_id)
+    template=read(root,Path("map_factory/presets")/(preset+".json"))
+    snapshot=deepcopy(template)
+    snapshot.update({
+        "schema_version":2,"map_id":map_id,"version":1,
+        "parent_version":None,"created_at":now(),"preset":preset,
+        "source_image":deepcopy(source_image or {
+            "path":None,"sha256":None,"status":"no_source_image_yet"}),
+        "visual_qa":{"status":"needs_review"},
+        "change_note":note or ("Created from reusable map preset "+preset)
+    })
+    validate_room(snapshot,asset_catalog(root),map_id)
+    write_revision(root,map_id,snapshot,reg)
+    return snapshot
+
+
 def clone_map(root, new_map, from_map):
     check_id(new_map)
     reg = registry(root)
@@ -539,6 +565,9 @@ def main(argv=None,root=ROOT):
     boot=sub.add_parser("bootstrap")
     boot.add_argument("--map-id",required=True)
     boot.add_argument("--source",default="map_factory/rooms/hero_room.json")
+    create=sub.add_parser("new")
+    create.add_argument("--map-id",required=True)
+    create.add_argument("--preset",choices=PRESET_NAMES,default="indoor_room")
     clone=sub.add_parser("clone")
     clone.add_argument("--map-id",required=True)
     clone.add_argument("--from-map",required=True)
@@ -551,6 +580,8 @@ def main(argv=None,root=ROOT):
     args=p.parse_args(argv)
     if args.action=="bootstrap":
         result=bootstrap(root,args.map_id,Path(args.source))
+    elif args.action=="new":
+        result=create_map(root,args.map_id,args.preset)
     elif args.action=="clone":
         result=clone_map(root,args.map_id,args.from_map)
     elif args.action in ("preview","apply"):
