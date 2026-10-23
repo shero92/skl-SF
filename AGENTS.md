@@ -31,3 +31,7 @@ Future user-supplied room/map photos should start with `tools/prepare_map_refere
 ## Mandatory five-layer map rendering convention
 
 When authoring a room or map, follow map_factory/LAYER_SCHEMA.md. The compiled layer_stack and per-map layers/latest.json must specify **background, ground, walls, decorations, shadows** with correct owner and mount metadata. Wall ornaments must use mount_on plus mount_offset if they depend on wall placement. Every new map revision rebuilds derived layer indices; never alter old immutable snapshots. Shadows form the fifth *data* pass but draw below wall and decoration sprites at z20 for correct compositing. Check map_factory/metadata/room_block_quality.json: all environmental PNG files must exist, but needs_cleanup is not artistic approval. Do not touch characters/UI.
+
+## Cardinal block orientation and scene fidelity
+
+All future map work must follow map_factory/FOUR_DIRECTION_BLOCKS.md. The renderer supports north/east/south/west facings, turntable 90-degree rotation for flat props and four DISTINCT real perspective image variants for 3/4 objects. If art variants are absent, do not claim the 360-degree asset looks correct. Wall-mounted decor rotates offset with its parent. Opt-in world_y_sort can fix nearer-wall occlusion when bottom pivots are correct. Keep characters, actor control and dialogue out of scope. Read docs/MAP_FACTORY_REFERENCE_DIAGNOSIS.md before changing Hero Room. Save a reference image in the repo and visually QA a Godot render before approving any map.

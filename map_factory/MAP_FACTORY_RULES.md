@@ -85,3 +85,7 @@ All new map snapshots must compile the five-pass level graph as specified by map
 ## Mandatory scene-reference coverage gate (added after v0007 Hero Room review)
 
 Do not confuse high-quality *individual PNGs* with an accurate room. For each reference image, check all visually distinctive objects, especially the scene's centerpiece, broken landscape silhouette, walls connected in perspective, lighting and contact shadows. If a distinct critical object is absent from the catalog, add a proposed new independent sprite to a per-room reference_gaps.json document and keep map visual_qa=needs_review. Never silently substitute an unrelated existing object. The scene is not finished until the missing PNG is actually produced, registered, placed and compared via a real Godot screenshot. For the baseline Hero Room see map_factory/maps/hero_room_01/reference_gaps.json.
+
+## Mandatory four-direction handling and reference diagnosis
+
+Apply map_factory/FOUR_DIRECTION_BLOCKS.md for all new room parts, and docs/MAP_FACTORY_REFERENCE_DIAGNOSIS.md for the initial Hero Room. New sprite facings must be north/east/south/west; rotate mode is for flat objects, variants mode requires four separate artwork IDs for upright perspective walls/furniture. Enforce collision rotations and mounted decor orientation. Use source-image-preserving visual QA and inspect whole-scene projection, wall thickness, connected stairs and occlusion before declaring the Factory build matched the original. No character sprites or gameplay changes.
