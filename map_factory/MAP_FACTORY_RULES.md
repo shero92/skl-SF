@@ -81,3 +81,7 @@ The standard first map is Hero Room. Its corrected composition revisions are sto
 ## Five-level room building is now required
 
 All new map snapshots must compile the five-pass level graph as specified by map_factory/LAYER_SCHEMA.md: 0 background, 1 ground and tile overrides, 2 walls/arches/stairs, 3 decorative parts mounted on terrain/walls/props, and 4 owner-linked independent shadow entries. The shadow *processing* pass is last, while render depth is below its casting walls or furniture. Check attachments, real PNG dimensions, and every layer in the Godot scene, not just in JSON. Reuse existing high-quality PNGs; never make false 100%-approved claims for sprites still marked needs_cleanup.
+
+## Mandatory scene-reference coverage gate (added after v0007 Hero Room review)
+
+Do not confuse high-quality *individual PNGs* with an accurate room. For each reference image, check all visually distinctive objects, especially the scene's centerpiece, broken landscape silhouette, walls connected in perspective, lighting and contact shadows. If a distinct critical object is absent from the catalog, add a proposed new independent sprite to a per-room reference_gaps.json document and keep map visual_qa=needs_review. Never silently substitute an unrelated existing object. The scene is not finished until the missing PNG is actually produced, registered, placed and compared via a real Godot screenshot. For the baseline Hero Room see map_factory/maps/hero_room_01/reference_gaps.json.

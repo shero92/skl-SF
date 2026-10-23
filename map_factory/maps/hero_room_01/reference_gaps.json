@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "map_id": "hero_room_01",
+  "latest_evaluated_version": 7,
+  "source_reference": {
+    "name": "Original Hero's Room seaside sanctuary scene",
+    "pixel_size": [
+      1448,
+      1086
+    ],
+    "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+    "source_file_committed": false,
+    "source_note": "Reference image from user conversation; save explicitly in repo before assuming future automated use."
+  },
+  "actual_godot_preview": "docs/previews/map_factory_renders/hero_room_01_v0007.png",
+  "state": "needs_review",
+  "confirmed_improvements": [
+    "Irregular 147-cell floor outline instead of a solid 170-cell floating rectangle.",
+    "Removed four atlas-cropped rock backgrounds with squared image seams.",
+    "Sea is visible in the arch opening.",
+    "Non-destructive warm limestone tile crop reduces over-dark tiled grids."
+  ],
+  "required_missing_visual_components": [
+    {
+      "priority": "critical",
+      "feature": "central_antlered_skull_flower_shrine",
+      "suggested_asset_id": "O027",
+      "category": "objects",
+      "present_in_catalog": false,
+      "existing_placement_id": null,
+      "approx_world_position": [
+        890,
+        476
+      ],
+      "required_png": "Clean complete RGBA pixel-art shrine; no character or HUD portions",
+      "quality_state": "new_independent_art_required",
+      "reference_reason": "Large one-of-a-kind floral skull/trophy focal object slightly right of center is absent from the rendered room."
+    },
+    {
+      "priority": "high",
+      "feature": "deep_integrated_left_right_coastal_ruin_edges",
+      "suggested_asset_id": "E019",
+      "category": "environment",
+      "present_in_catalog": false,
+      "quality_state": "new_independent_art_or_curated_reconstruction_required",
+      "reference_reason": "The reference's broken cliffside masonry forms physical terrace edges; the assembled room has thin straight decorative walls above water."
+    },
+    {
+      "priority": "high",
+      "feature": "angled_wall_segments_and_stone_parapet_depth",
+      "suggested_asset_id": "W019",
+      "category": "walls",
+      "present_in_catalog": false,
+      "quality_state": "new_independent_art_or_redesign_required",
+      "reference_reason": "3/4 perspective side walls and front corners must read as connected masonry rather than scattered props."
+    },
+    {
+      "priority": "high",
+      "feature": "sunlight_slanted_contact_shadow_variants",
+      "suggested_asset_id": "S017",
+      "category": "shadows",
+      "present_in_catalog": false,
+      "quality_state": "quality_direction_and_light_review_required",
+      "reference_reason": "Reference has warm directional sunlight and richer contact shadow depth than the current flat render."
+    }
+  ],
+  "followup_rules": [
+    "Do not fill a missing signature centerpiece with unrelated furniture solely to obtain item counts.",
+    "Create individually transparent PNGs, add metadata, and only then place new asset IDs.",
+    "Do not modify character PNGs or gameplay movement.",
+    "Do not approve a room until all critical visual features are represented and a new Godot preview has been compared with the user reference."
+  ],
+  "approval_status": "not_artist_approved"
+}
