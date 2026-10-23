@@ -30,7 +30,10 @@ def process(root=ROOT):
         if not isinstance(doc,dict):
             raise ValueError("Manifest must be JSON object")
         source=doc.get("source_image")
+        # Never publish an unreviewed image-only draft as a finished assembled map.
         if source is not None:
+            if doc.get("analysis_status") != "reviewed":
+                raise ValueError("Reference image requires reviewed block analysis before map import")
             if not isinstance(source,dict) or not isinstance(source.get("path"),str):
                 raise ValueError("source_image needs a repository path")
             src=(root/source["path"]).resolve()

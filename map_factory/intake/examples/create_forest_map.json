@@ -27,5 +27,6 @@
         "status": "needs_review"
       }
     }
-  ]
+  ],
+  "analysis_status": "pending_review"
 }
