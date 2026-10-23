@@ -46,5 +46,16 @@ jobs:
           git add -A map_factory
           if ! git diff --cached --quiet; then
             git commit -m "Compile AI room changes against the last version and sync reusable blocks"
-            git push
+            git fetch origin main
+            git rebase origin/main
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              sleep 2
+              git fetch origin main
+              git rebase origin/main
+            done
+            echo "Map intake commit could not be pushed after 5 retries"
+            exit 1
           fi
