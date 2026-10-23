@@ -1,0 +1,952 @@
+{
+  "description": "Hero's Seaside Sanctuary — improved environment-only composition with enclosed ruin platform, connected entrance stairs, coastal cliffs, blue/gold decor and dedicated focal compass. First revised staging; visual approval pending.",
+  "canvas_size": [
+    1536,
+    1024
+  ],
+  "background_color": "#047ed1",
+  "tile_size": 64,
+  "size": [
+    17,
+    10
+  ],
+  "ground_offset": [
+    226,
+    225
+  ],
+  "floor_ids": [
+    "F003",
+    "F003",
+    "F003",
+    "F002",
+    "F003",
+    "F004",
+    "F003"
+  ],
+  "tile_overrides": [
+    {
+      "x": 7,
+      "y": 4,
+      "id": "F019"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "id": "F018"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "id": "F021"
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "id": "F015"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "id": "F014"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "id": "F016"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "id": "F020"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "id": "F017"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "id": "F022"
+    }
+  ],
+  "background_objects": [
+    {
+      "id": "E004",
+      "x": 76,
+      "y": 250,
+      "scale": 0.85,
+      "instance_id": "E004_background_objects_001"
+    },
+    {
+      "id": "E001",
+      "x": 1477,
+      "y": 288,
+      "scale": 1.1,
+      "instance_id": "E001_background_objects_002"
+    },
+    {
+      "id": "E005",
+      "x": 1394,
+      "y": 147,
+      "scale": 0.54,
+      "instance_id": "E005_background_objects_003"
+    },
+    {
+      "id": "E002",
+      "x": 126,
+      "y": 142,
+      "scale": 0.52,
+      "instance_id": "E002_background_objects_004"
+    },
+    {
+      "id": "E015",
+      "instance_id": "DistantIsleLeft",
+      "x": 288,
+      "y": 130,
+      "scale": 0.32
+    },
+    {
+      "id": "E016",
+      "instance_id": "DistantIsleRight",
+      "x": 1120,
+      "y": 145,
+      "scale": 0.25
+    },
+    {
+      "id": "E017",
+      "instance_id": "DistantIsleArch",
+      "x": 1012,
+      "y": 106,
+      "scale": 0.14
+    }
+  ],
+  "ground_overlays": [
+    {
+      "id": "P005",
+      "instance_id": "BedRug",
+      "x": 410,
+      "y": 594,
+      "scale": 0.69
+    },
+    {
+      "id": "P005",
+      "instance_id": "DeskRug",
+      "x": 1127,
+      "y": 642,
+      "scale": 0.7
+    }
+  ],
+  "back_objects": [
+    {
+      "id": "A005",
+      "instance_id": "ArchMain",
+      "x": 759,
+      "y": 346,
+      "scale": 1.03
+    },
+    {
+      "id": "W001",
+      "x": 277,
+      "y": 405,
+      "scale": 0.98,
+      "instance_id": "W001_back_objects_002"
+    },
+    {
+      "id": "W003",
+      "x": 464,
+      "y": 359,
+      "scale": 0.87,
+      "instance_id": "W003_back_objects_003"
+    },
+    {
+      "id": "W002",
+      "x": 1148,
+      "y": 349,
+      "scale": 0.93,
+      "instance_id": "W002_back_objects_004"
+    },
+    {
+      "id": "W014",
+      "x": 1324,
+      "y": 414,
+      "scale": 0.93,
+      "instance_id": "W014_back_objects_005"
+    },
+    {
+      "id": "W015",
+      "x": 233,
+      "y": 541,
+      "scale": 0.89,
+      "instance_id": "W015_back_objects_006"
+    },
+    {
+      "id": "W015",
+      "x": 1328,
+      "y": 539,
+      "scale": 0.89,
+      "instance_id": "W015_back_objects_007"
+    },
+    {
+      "id": "A007",
+      "x": 629,
+      "y": 360,
+      "scale": 0.82,
+      "instance_id": "A007_back_objects_008"
+    },
+    {
+      "id": "A012",
+      "x": 906,
+      "y": 360,
+      "scale": 0.84,
+      "instance_id": "A012_back_objects_009"
+    },
+    {
+      "id": "V001",
+      "x": 609,
+      "y": 197,
+      "scale": 0.56,
+      "instance_id": "V001_back_objects_010"
+    },
+    {
+      "id": "V007",
+      "x": 978,
+      "y": 222,
+      "scale": 0.6,
+      "instance_id": "V007_back_objects_011"
+    },
+    {
+      "id": "D007",
+      "x": 325,
+      "y": 426,
+      "scale": 0.63,
+      "instance_id": "D007_back_objects_012"
+    },
+    {
+      "id": "D007",
+      "x": 1235,
+      "y": 433,
+      "scale": 0.63,
+      "instance_id": "D007_back_objects_013"
+    },
+    {
+      "id": "W012",
+      "instance_id": "RearLeftFlowerWall",
+      "x": 484,
+      "y": 372,
+      "scale": 0.76
+    },
+    {
+      "id": "W013",
+      "instance_id": "RearRightFlowerWall",
+      "x": 1066,
+      "y": 373,
+      "scale": 0.79
+    },
+    {
+      "id": "A015",
+      "instance_id": "DecoratedDoorRight",
+      "x": 1249,
+      "y": 355,
+      "scale": 0.68
+    },
+    {
+      "id": "D004",
+      "instance_id": "CompassBannerArchRight",
+      "x": 1020,
+      "y": 291,
+      "scale": 0.79
+    },
+    {
+      "id": "V009",
+      "instance_id": "FlowerClusterArch",
+      "x": 775,
+      "y": 184,
+      "scale": 0.62
+    },
+    {
+      "id": "D008",
+      "instance_id": "LeftWallLantern",
+      "x": 256,
+      "y": 463,
+      "scale": 0.59
+    },
+    {
+      "id": "D009",
+      "instance_id": "RightWallLantern",
+      "x": 1332,
+      "y": 481,
+      "scale": 0.59
+    }
+  ],
+  "objects": [
+    {
+      "id": "P001",
+      "instance_id": "HeroBed",
+      "x": 410,
+      "y": 560,
+      "scale": 0.75,
+      "collision": {
+        "enabled": true,
+        "size": [
+          184,
+          58
+        ],
+        "offset": [
+          0,
+          -31
+        ]
+      },
+      "shadow": {
+        "type": "bed",
+        "offset_x": 0,
+        "offset_y": -5,
+        "opacity": 0.5
+      }
+    },
+    {
+      "id": "P007",
+      "instance_id": "SideTable",
+      "x": 276,
+      "y": 567,
+      "scale": 0.58,
+      "collision": {
+        "enabled": true,
+        "size": [
+          64,
+          36
+        ],
+        "offset": [
+          0,
+          -20
+        ]
+      }
+    },
+    {
+      "id": "P014",
+      "instance_id": "LeftBookshelf",
+      "x": 407,
+      "y": 424,
+      "scale": 0.63,
+      "collision": {
+        "enabled": true,
+        "size": [
+          138,
+          46
+        ],
+        "offset": [
+          0,
+          -23
+        ]
+      }
+    },
+    {
+      "id": "P015",
+      "instance_id": "RightBookshelf",
+      "x": 1132,
+      "y": 431,
+      "scale": 0.62,
+      "collision": {
+        "enabled": true,
+        "size": [
+          118,
+          42
+        ],
+        "offset": [
+          0,
+          -22
+        ]
+      }
+    },
+    {
+      "id": "P008",
+      "instance_id": "WritingTable",
+      "x": 1127,
+      "y": 622,
+      "scale": 0.65,
+      "collision": {
+        "enabled": true,
+        "size": [
+          205,
+          57
+        ],
+        "offset": [
+          0,
+          -26
+        ]
+      },
+      "shadow": {
+        "type": "table",
+        "offset_x": 8,
+        "offset_y": 0,
+        "opacity": 0.35
+      }
+    },
+    {
+      "id": "O001",
+      "instance_id": "VaseByArch",
+      "x": 1062,
+      "y": 484,
+      "scale": 0.43
+    },
+    {
+      "id": "O019",
+      "instance_id": "Astrolabe",
+      "x": 1226,
+      "y": 512,
+      "scale": 0.57
+    },
+    {
+      "id": "O021",
+      "instance_id": "Shell",
+      "x": 1320,
+      "y": 760,
+      "scale": 0.35
+    },
+    {
+      "id": "P017",
+      "instance_id": "TreasureChest",
+      "x": 1200,
+      "y": 780,
+      "scale": 0.61,
+      "collision": {
+        "enabled": true,
+        "size": [
+          74,
+          40
+        ],
+        "offset": [
+          0,
+          -15
+        ]
+      }
+    },
+    {
+      "id": "V017",
+      "x": 1353,
+      "y": 623,
+      "scale": 0.6,
+      "instance_id": "V017_objects_010"
+    },
+    {
+      "id": "V013",
+      "x": 322,
+      "y": 777,
+      "scale": 0.62,
+      "instance_id": "V013_objects_011"
+    },
+    {
+      "id": "V020",
+      "x": 1138,
+      "y": 834,
+      "scale": 0.49,
+      "instance_id": "V020_objects_012"
+    },
+    {
+      "id": "ST011",
+      "instance_id": "EntrancePillarLeft",
+      "x": 642,
+      "y": 856,
+      "scale": 0.74
+    },
+    {
+      "id": "ST012",
+      "instance_id": "EntrancePillarRight",
+      "x": 882,
+      "y": 856,
+      "scale": 0.74
+    },
+    {
+      "id": "ST013",
+      "instance_id": "FrontParapetLeft",
+      "x": 365,
+      "y": 874,
+      "scale": 0.88
+    },
+    {
+      "id": "ST014",
+      "instance_id": "FrontParapetRight",
+      "x": 1172,
+      "y": 871,
+      "scale": 0.9
+    },
+    {
+      "id": "V004",
+      "x": 300,
+      "y": 830,
+      "scale": 0.66,
+      "instance_id": "V004_objects_017"
+    },
+    {
+      "id": "V021",
+      "x": 1037,
+      "y": 827,
+      "scale": 0.6,
+      "instance_id": "V021_objects_018"
+    }
+  ],
+  "front_objects": [
+    {
+      "id": "V023",
+      "instance_id": "LowerLeftVines",
+      "x": 331,
+      "y": 852,
+      "scale": 0.7,
+      "z_index": 2
+    },
+    {
+      "id": "V024",
+      "instance_id": "LowerRightVines",
+      "x": 1220,
+      "y": 854,
+      "scale": 0.76,
+      "z_index": 2
+    },
+    {
+      "id": "W005",
+      "instance_id": "LeftPerimeterWallMid",
+      "x": 238,
+      "y": 655,
+      "scale": 0.75,
+      "z_index": 1
+    },
+    {
+      "id": "W012",
+      "instance_id": "LeftPerimeterWallLow",
+      "x": 239,
+      "y": 778,
+      "scale": 0.75,
+      "z_index": 1
+    },
+    {
+      "id": "W005",
+      "instance_id": "RightPerimeterWallMid",
+      "x": 1308,
+      "y": 655,
+      "scale": 0.77,
+      "z_index": 1
+    },
+    {
+      "id": "W013",
+      "instance_id": "RightPerimeterWallLow",
+      "x": 1294,
+      "y": 786,
+      "scale": 0.75,
+      "z_index": 1
+    },
+    {
+      "id": "W012",
+      "instance_id": "FrontWallUpperLeft",
+      "x": 437,
+      "y": 841,
+      "scale": 0.96,
+      "z_index": 1
+    },
+    {
+      "id": "W013",
+      "instance_id": "FrontWallUpperRight",
+      "x": 1085,
+      "y": 846,
+      "scale": 0.95,
+      "z_index": 1
+    },
+    {
+      "id": "W010",
+      "instance_id": "FrontWallCenterLeft",
+      "x": 552,
+      "y": 861,
+      "scale": 0.92,
+      "z_index": 1
+    },
+    {
+      "id": "W011",
+      "instance_id": "FrontWallCenterRight",
+      "x": 978,
+      "y": 858,
+      "scale": 0.92,
+      "z_index": 1
+    },
+    {
+      "id": "ST013",
+      "instance_id": "FrontWallLeftWide",
+      "x": 527,
+      "y": 881,
+      "scale": 0.92,
+      "z_index": 1
+    },
+    {
+      "id": "ST014",
+      "instance_id": "FrontWallRightWide",
+      "x": 1012,
+      "y": 878,
+      "scale": 0.95,
+      "z_index": 1
+    },
+    {
+      "id": "ST006",
+      "instance_id": "LandingCenter",
+      "x": 776,
+      "y": 865,
+      "scale": 0.91,
+      "z_index": 3
+    },
+    {
+      "id": "ST001",
+      "instance_id": "EntryStairUpper",
+      "x": 776,
+      "y": 895,
+      "scale": 1.03,
+      "z_index": 3
+    },
+    {
+      "id": "ST002",
+      "instance_id": "EntryStairMiddle",
+      "x": 776,
+      "y": 918,
+      "scale": 1.04,
+      "z_index": 3
+    },
+    {
+      "id": "ST003",
+      "instance_id": "EntryStairLower",
+      "x": 776,
+      "y": 942,
+      "scale": 1.05,
+      "z_index": 3
+    },
+    {
+      "id": "ST004",
+      "instance_id": "EntryStairLeftEdge",
+      "x": 654,
+      "y": 929,
+      "scale": 0.7,
+      "z_index": 3
+    },
+    {
+      "id": "ST005",
+      "instance_id": "EntryStairRightEdge",
+      "x": 904,
+      "y": 929,
+      "scale": 0.7,
+      "z_index": 3
+    },
+    {
+      "id": "ST007",
+      "instance_id": "EntranceGuardLeft",
+      "x": 670,
+      "y": 836,
+      "scale": 0.68,
+      "z_index": 3
+    },
+    {
+      "id": "ST008",
+      "instance_id": "EntranceGuardRight",
+      "x": 873,
+      "y": 836,
+      "scale": 0.68,
+      "z_index": 3
+    },
+    {
+      "id": "V005",
+      "instance_id": "FrontIvyLeft",
+      "x": 438,
+      "y": 829,
+      "scale": 0.6,
+      "z_index": 2
+    },
+    {
+      "id": "V004",
+      "instance_id": "FrontIvyRight",
+      "x": 1114,
+      "y": 828,
+      "scale": 0.56,
+      "z_index": 2
+    },
+    {
+      "id": "V010",
+      "instance_id": "LeftFlowerFence",
+      "x": 240,
+      "y": 826,
+      "scale": 0.5,
+      "z_index": 2
+    },
+    {
+      "id": "V011",
+      "instance_id": "RightFlowerFence",
+      "x": 1338,
+      "y": 815,
+      "scale": 0.53,
+      "z_index": 2
+    },
+    {
+      "id": "V012",
+      "instance_id": "ArchLeftFlowers",
+      "x": 513,
+      "y": 318,
+      "scale": 0.5,
+      "z_index": 2
+    },
+    {
+      "id": "V012",
+      "instance_id": "ArchRightFlowers",
+      "x": 1054,
+      "y": 320,
+      "scale": 0.48,
+      "z_index": 2
+    },
+    {
+      "id": "D001",
+      "instance_id": "BlueBannerLeft",
+      "x": 205,
+      "y": 643,
+      "scale": 0.59,
+      "z_index": 2
+    },
+    {
+      "id": "D001",
+      "instance_id": "BlueBannerRight",
+      "x": 1366,
+      "y": 651,
+      "scale": 0.62,
+      "z_index": 2
+    },
+    {
+      "id": "V006",
+      "instance_id": "UpperLeftClimbingIvy",
+      "x": 225,
+      "y": 434,
+      "scale": 0.55,
+      "z_index": 2
+    },
+    {
+      "id": "V007",
+      "instance_id": "UpperRightClimbingIvy",
+      "x": 1305,
+      "y": 440,
+      "scale": 0.55,
+      "z_index": 2
+    }
+  ],
+  "effects": [
+    {
+      "instance_id": "LanternLeftGlow",
+      "kind": "lantern",
+      "x": 327,
+      "y": 382,
+      "scale": 0.48,
+      "glow_alpha": 0.38
+    },
+    {
+      "instance_id": "LanternRightGlow",
+      "kind": "lantern",
+      "x": 1245,
+      "y": 384,
+      "scale": 0.5,
+      "glow_alpha": 0.38
+    },
+    {
+      "instance_id": "TableCandleGlow",
+      "kind": "candle",
+      "x": 1172,
+      "y": 542,
+      "scale": 0.42,
+      "glow_alpha": 0.34
+    }
+  ],
+  "ocean": {
+    "tile_size": 512,
+    "fps": 4,
+    "sky_height": 92,
+    "notes": "Reduce giant empty sky: match reference low seaside horizon; ocean remains wave animated and all art pending QA."
+  },
+  "asset_quality_review": {
+    "source": "docs/REFERENCE_ART_DIRECTION.md",
+    "status": "pending_visual_approval",
+    "asset_count": 218,
+    "description": "Atlas debris cleanup completed for selected sprites; detailed reference-style art is still in progress."
+  },
+  "floor_art": {
+    "design": "9 native sapphire/gold compass tiles, center-left of walking floor",
+    "tile_size": 64,
+    "ids": [
+      "F019",
+      "F015",
+      "F020",
+      "F018",
+      "F014",
+      "F017",
+      "F021",
+      "F016",
+      "F022"
+    ],
+    "top_left_grid": [
+      7,
+      4
+    ],
+    "qa": "needs_review"
+  },
+  "composition_reference": {
+    "image": "Uploaded Hero's Seaside Sanctuary scene, reference image supplied in chat",
+    "target": "Seaside fantasy JRPG three-quarter platform, enclosing coastal parapets and centered stair opening",
+    "revision": "4",
+    "qa": "Compare Godot output screenshot at same resolution",
+    "key_differences_fixed": [
+      "removed featureless back sky",
+      "left and right ruin boundary",
+      "front parapet with central stairs",
+      "unbroken environmental skyline",
+      "center floor focal point"
+    ]
+  },
+  "schema_version": 2,
+  "map_id": "hero_room_01",
+  "version": 2,
+  "parent_version": 1,
+  "created_at": "2026-10-23T13:29:55+00:00",
+  "source_image": {
+    "path": null,
+    "sha256": null,
+    "status": "reference_in_chat_not_imported"
+  },
+  "change_note": "Correct environmental composition against the provided seaside sanctuary: continuous ruin perimeter, steps at bottom, horizon, framing flora, and placement; keep artwork IDs.",
+  "visual_qa": {
+    "status": "needs_review",
+    "notes": "User reported strong sprites but weak room composition. New layout and parapet/entrance need scene screenshot comparison."
+  },
+  "navigation": {
+    "schema_version": 1,
+    "origin": [
+      226,
+      225
+    ],
+    "cell_size": 64,
+    "grid_size": [
+      17,
+      10
+    ],
+    "default": {
+      "walk": false,
+      "fly": false,
+      "swim": false
+    },
+    "regions": [
+      {
+        "id": "upper_terrace_floor",
+        "rect": [
+          1,
+          1,
+          15,
+          8
+        ],
+        "surface": "stone",
+        "allow": [
+          "walk",
+          "fly"
+        ],
+        "floor_height": 0,
+        "ceiling_height": null,
+        "requires": {
+          "walk": [],
+          "fly": []
+        },
+        "review_status": "needs_review"
+      },
+      {
+        "id": "entrance_stairs",
+        "rect": [
+          7,
+          8,
+          3,
+          2
+        ],
+        "surface": "stairs",
+        "allow": [
+          "walk",
+          "fly"
+        ],
+        "floor_height": -24,
+        "ceiling_height": null,
+        "requires": {
+          "walk": [],
+          "fly": []
+        },
+        "review_status": "needs_review"
+      }
+    ],
+    "obstacles": [
+      {
+        "instance_id": "HeroBed",
+        "blocks": [
+          "walk",
+          "fly"
+        ],
+        "min_altitude": 0,
+        "max_altitude": 75
+      },
+      {
+        "instance_id": "WritingTable",
+        "blocks": [
+          "walk",
+          "fly"
+        ],
+        "min_altitude": 0,
+        "max_altitude": 80
+      },
+      {
+        "instance_id": "FrontWallLeftWide",
+        "blocks": [
+          "walk",
+          "fly"
+        ],
+        "min_altitude": 0,
+        "max_altitude": 78
+      },
+      {
+        "instance_id": "FrontWallRightWide",
+        "blocks": [
+          "walk",
+          "fly"
+        ],
+        "min_altitude": 0,
+        "max_altitude": 78
+      },
+      {
+        "instance_id": "LeftPerimeterWallMid",
+        "blocks": [
+          "walk",
+          "fly"
+        ],
+        "min_altitude": 0,
+        "max_altitude": 110
+      },
+      {
+        "instance_id": "RightPerimeterWallMid",
+        "blocks": [
+          "walk",
+          "fly"
+        ],
+        "min_altitude": 0,
+        "max_altitude": 110
+      }
+    ],
+    "links": [
+      {
+        "id": "coastal_stair_exit",
+        "from": [
+          8,
+          8
+        ],
+        "to": [
+          8,
+          9
+        ],
+        "modes": [
+          "walk",
+          "fly"
+        ],
+        "requires": []
+      }
+    ],
+    "note": "Navigation provisional, unreviewed and blocked by default for all nonfloor areas. No changes to characters."
+  }
+}

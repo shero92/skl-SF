@@ -1,26 +1,34 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 1,
+  "version": 2,
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "block_count": 39,
-  "unique_asset_count": 48,
+  "block_count": 77,
+  "unique_asset_count": 75,
   "reused_asset_ids": [
     "A005",
     "A007",
     "A012",
+    "A015",
+    "D001",
+    "D004",
     "D007",
+    "D008",
+    "D009",
     "E001",
     "E002",
     "E004",
     "E005",
-    "F001",
+    "E015",
+    "E016",
+    "E017",
     "F002",
     "F003",
+    "F004",
     "F014",
     "F015",
     "F016",
@@ -40,13 +48,27 @@
     "P014",
     "P015",
     "P017",
+    "ST001",
+    "ST002",
+    "ST003",
+    "ST004",
+    "ST005",
+    "ST006",
+    "ST007",
+    "ST008",
     "ST011",
     "ST012",
     "ST013",
     "ST014",
     "V001",
     "V004",
+    "V005",
+    "V006",
     "V007",
+    "V009",
+    "V010",
+    "V011",
+    "V012",
     "V013",
     "V017",
     "V020",
@@ -56,6 +78,11 @@
     "W001",
     "W002",
     "W003",
+    "W005",
+    "W010",
+    "W011",
+    "W012",
+    "W013",
     "W014",
     "W015"
   ],
@@ -77,10 +104,10 @@
       ],
       "layer": "background_objects",
       "position": [
-        75,
-        310
+        76,
+        250
       ],
-      "scale": 1.2,
+      "scale": 0.85,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -129,10 +156,10 @@
       ],
       "layer": "background_objects",
       "position": [
-        1460,
-        320
+        1477,
+        288
       ],
-      "scale": 1.3,
+      "scale": 1.1,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -181,10 +208,10 @@
       ],
       "layer": "background_objects",
       "position": [
-        1395,
-        160
+        1394,
+        147
       ],
-      "scale": 0.9,
+      "scale": 0.54,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -233,10 +260,10 @@
       ],
       "layer": "background_objects",
       "position": [
-        80,
-        125
+        126,
+        142
       ],
-      "scale": 0.8,
+      "scale": 0.52,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -270,6 +297,167 @@
       }
     },
     {
+      "instance_id": "DistantIsleLeft",
+      "asset_id": "E015",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        320,
+        260
+      ],
+      "anchor": [
+        160,
+        260
+      ],
+      "layer": "background_objects",
+      "position": [
+        288,
+        130
+      ],
+      "scale": 0.32,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "small"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "DistantIsleRight",
+      "asset_id": "E016",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        465,
+        310
+      ],
+      "anchor": [
+        232,
+        310
+      ],
+      "layer": "background_objects",
+      "position": [
+        1120,
+        145
+      ],
+      "scale": 0.25,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "large"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "DistantIsleArch",
+      "asset_id": "E017",
+      "category": "environment",
+      "subtype": "distant",
+      "texture_path": "res://map_factory/parts/environment/E017_Distant_Island_Arch.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        600,
+        370
+      ],
+      "anchor": [
+        300,
+        370
+      ],
+      "layer": "background_objects",
+      "position": [
+        1012,
+        106
+      ],
+      "scale": 0.14,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "distant",
+        "island",
+        "arch"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
       "instance_id": "BedRug",
       "asset_id": "P005",
       "category": "furniture",
@@ -286,10 +474,10 @@
       ],
       "layer": "ground_overlays",
       "position": [
-        404,
-        588
+        410,
+        594
       ],
-      "scale": 0.65,
+      "scale": 0.69,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -338,9 +526,9 @@
       "layer": "ground_overlays",
       "position": [
         1127,
-        646
+        642
       ],
-      "scale": 0.69,
+      "scale": 0.7,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -388,10 +576,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        776,
-        350
+        759,
+        346
       ],
-      "scale": 1.05,
+      "scale": 1.03,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -441,10 +629,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        260,
-        393
+        277,
+        405
       ],
-      "scale": 0.95,
+      "scale": 0.98,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -495,10 +683,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        450,
-        352
+        464,
+        359
       ],
-      "scale": 0.9,
+      "scale": 0.87,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -547,10 +735,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        1160,
-        352
+        1148,
+        349
       ],
-      "scale": 0.9,
+      "scale": 0.93,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -599,10 +787,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        1335,
-        420
+        1324,
+        414
       ],
-      "scale": 0.95,
+      "scale": 0.93,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -652,10 +840,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        222,
-        530
+        233,
+        541
       ],
-      "scale": 0.88,
+      "scale": 0.89,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -705,10 +893,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        1332,
-        520
+        1328,
+        539
       ],
-      "scale": 0.88,
+      "scale": 0.89,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -758,10 +946,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        617,
-        365
+        629,
+        360
       ],
-      "scale": 0.84,
+      "scale": 0.82,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -810,8 +998,8 @@
       ],
       "layer": "back_objects",
       "position": [
-        945,
-        355
+        906,
+        360
       ],
       "scale": 0.84,
       "rotation_degrees": 0,
@@ -863,10 +1051,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        590,
-        175
+        609,
+        197
       ],
-      "scale": 0.64,
+      "scale": 0.56,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -915,10 +1103,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        995,
-        241
+        978,
+        222
       ],
-      "scale": 0.64,
+      "scale": 0.6,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -967,10 +1155,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        331,
-        406
+        325,
+        426
       ],
-      "scale": 0.65,
+      "scale": 0.63,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1018,10 +1206,10 @@
       ],
       "layer": "back_objects",
       "position": [
-        1236,
-        392
+        1235,
+        433
       ],
-      "scale": 0.65,
+      "scale": 0.63,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1053,6 +1241,375 @@
       }
     },
     {
+      "instance_id": "RearLeftFlowerWall",
+      "asset_id": "W012",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        169,
+        91
+      ],
+      "anchor": [
+        84,
+        91
+      ],
+      "layer": "back_objects",
+      "position": [
+        484,
+        372
+      ],
+      "scale": 0.76,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "ivy"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "RearRightFlowerWall",
+      "asset_id": "W013",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        146,
+        92
+      ],
+      "anchor": [
+        73,
+        92
+      ],
+      "layer": "back_objects",
+      "position": [
+        1066,
+        373
+      ],
+      "scale": 0.79,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "flowers"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "DecoratedDoorRight",
+      "asset_id": "A015",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A015_Stone_Door_Arched.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        196,
+        233
+      ],
+      "anchor": [
+        98,
+        233
+      ],
+      "layer": "back_objects",
+      "position": [
+        1249,
+        355
+      ],
+      "scale": 0.68,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "door",
+        "arched"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "CompassBannerArchRight",
+      "asset_id": "D004",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D004_Banner_Compass.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        84,
+        152
+      ],
+      "anchor": [
+        42,
+        152
+      ],
+      "layer": "back_objects",
+      "position": [
+        1020,
+        291
+      ],
+      "scale": 0.79,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "compass"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "FlowerClusterArch",
+      "asset_id": "V009",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V009_Ivy_Arch_Cluster.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        169,
+        160
+      ],
+      "anchor": [
+        84,
+        160
+      ],
+      "layer": "back_objects",
+      "position": [
+        775,
+        184
+      ],
+      "scale": 0.62,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "arch",
+        "cluster"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "LeftWallLantern",
+      "asset_id": "D008",
+      "category": "decor",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/decor/D008_Lantern_Wall_Left.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        94,
+        175
+      ],
+      "anchor": [
+        47,
+        175
+      ],
+      "layer": "back_objects",
+      "position": [
+        256,
+        463
+      ],
+      "scale": 0.59,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "lantern",
+        "wall",
+        "left"
+      ],
+      "source": {
+        "kind": "curated_individual_crop",
+        "parent": "original_high_detail_atlas",
+        "tool": "tools/curate_wall_lanterns.py",
+        "revision": 2
+      }
+    },
+    {
+      "instance_id": "RightWallLantern",
+      "asset_id": "D009",
+      "category": "decor",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/decor/D009_Lantern_Wall_Right.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        116,
+        166
+      ],
+      "anchor": [
+        58,
+        166
+      ],
+      "layer": "back_objects",
+      "position": [
+        1332,
+        481
+      ],
+      "scale": 0.59,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "lantern",
+        "wall",
+        "right"
+      ],
+      "source": {
+        "kind": "curated_individual_crop",
+        "parent": "original_high_detail_atlas",
+        "tool": "tools/curate_wall_lanterns.py",
+        "revision": 2
+      }
+    },
+    {
       "instance_id": "HeroBed",
       "asset_id": "P001",
       "category": "furniture",
@@ -1069,10 +1626,10 @@
       ],
       "layer": "objects",
       "position": [
-        399,
-        566
+        410,
+        560
       ],
-      "scale": 0.76,
+      "scale": 0.75,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1120,10 +1677,10 @@
       ],
       "layer": "objects",
       "position": [
-        266,
-        540
+        276,
+        567
       ],
-      "scale": 0.56,
+      "scale": 0.58,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1171,10 +1728,10 @@
       ],
       "layer": "objects",
       "position": [
-        423,
-        401
+        407,
+        424
       ],
-      "scale": 0.65,
+      "scale": 0.63,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1224,10 +1781,10 @@
       ],
       "layer": "objects",
       "position": [
-        1135,
-        424
+        1132,
+        431
       ],
-      "scale": 0.64,
+      "scale": 0.62,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1277,10 +1834,10 @@
       ],
       "layer": "objects",
       "position": [
-        1125,
-        614
+        1127,
+        622
       ],
-      "scale": 0.7,
+      "scale": 0.65,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1328,10 +1885,10 @@
       ],
       "layer": "objects",
       "position": [
-        1025,
-        477
+        1062,
+        484
       ],
-      "scale": 0.48,
+      "scale": 0.43,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1382,10 +1939,10 @@
       ],
       "layer": "objects",
       "position": [
-        1258,
-        485
+        1226,
+        512
       ],
-      "scale": 0.55,
+      "scale": 0.57,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1433,10 +1990,10 @@
       ],
       "layer": "objects",
       "position": [
-        1335,
-        755
+        1320,
+        760
       ],
-      "scale": 0.5,
+      "scale": 0.35,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1484,10 +2041,10 @@
       ],
       "layer": "objects",
       "position": [
-        1230,
-        783
+        1200,
+        780
       ],
-      "scale": 0.7,
+      "scale": 0.61,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1536,10 +2093,10 @@
       ],
       "layer": "objects",
       "position": [
-        1360,
-        590
+        1353,
+        623
       ],
-      "scale": 0.7,
+      "scale": 0.6,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1588,10 +2145,10 @@
       ],
       "layer": "objects",
       "position": [
-        340,
-        824
+        322,
+        777
       ],
-      "scale": 0.63,
+      "scale": 0.62,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1640,10 +2197,10 @@
       ],
       "layer": "objects",
       "position": [
-        1190,
-        863
+        1138,
+        834
       ],
-      "scale": 0.55,
+      "scale": 0.49,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1692,10 +2249,10 @@
       ],
       "layer": "objects",
       "position": [
-        645,
-        902
+        642,
+        856
       ],
-      "scale": 0.75,
+      "scale": 0.74,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1744,10 +2301,10 @@
       ],
       "layer": "objects",
       "position": [
-        875,
-        902
+        882,
+        856
       ],
-      "scale": 0.75,
+      "scale": 0.74,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1796,10 +2353,10 @@
       ],
       "layer": "objects",
       "position": [
-        386,
-        943
+        365,
+        874
       ],
-      "scale": 0.75,
+      "scale": 0.88,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1848,10 +2405,10 @@
       ],
       "layer": "objects",
       "position": [
-        1142,
-        943
+        1172,
+        871
       ],
-      "scale": 0.8,
+      "scale": 0.9,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1900,10 +2457,10 @@
       ],
       "layer": "objects",
       "position": [
-        320,
-        850
+        300,
+        830
       ],
-      "scale": 0.8,
+      "scale": 0.66,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1952,10 +2509,10 @@
       ],
       "layer": "objects",
       "position": [
-        1060,
-        875
+        1037,
+        827
       ],
-      "scale": 0.62,
+      "scale": 0.6,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2004,10 +2561,10 @@
       ],
       "layer": "front_objects",
       "position": [
-        300,
-        940
+        331,
+        852
       ],
-      "scale": 0.83,
+      "scale": 0.7,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 2,
@@ -2055,10 +2612,10 @@
       ],
       "layer": "front_objects",
       "position": [
-        1210,
-        948
+        1220,
+        854
       ],
-      "scale": 0.75,
+      "scale": 0.76,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 2,
@@ -2089,20 +2646,1489 @@
         "kind": "ai_sheet_crop",
         "file": "seaside_ruin_garden_sprite_sheet.png"
       }
+    },
+    {
+      "instance_id": "LeftPerimeterWallMid",
+      "asset_id": "W005",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W005_Stone_Wall_Low.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        197,
+        229
+      ],
+      "anchor": [
+        98,
+        229
+      ],
+      "layer": "front_objects",
+      "position": [
+        238,
+        655
+      ],
+      "scale": 0.75,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "low"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "LeftPerimeterWallLow",
+      "asset_id": "W012",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        169,
+        91
+      ],
+      "anchor": [
+        84,
+        91
+      ],
+      "layer": "front_objects",
+      "position": [
+        239,
+        778
+      ],
+      "scale": 0.75,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "ivy"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "RightPerimeterWallMid",
+      "asset_id": "W005",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W005_Stone_Wall_Low.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        197,
+        229
+      ],
+      "anchor": [
+        98,
+        229
+      ],
+      "layer": "front_objects",
+      "position": [
+        1308,
+        655
+      ],
+      "scale": 0.77,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "low"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "RightPerimeterWallLow",
+      "asset_id": "W013",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        146,
+        92
+      ],
+      "anchor": [
+        73,
+        92
+      ],
+      "layer": "front_objects",
+      "position": [
+        1294,
+        786
+      ],
+      "scale": 0.75,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "flowers"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "FrontWallUpperLeft",
+      "asset_id": "W012",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        169,
+        91
+      ],
+      "anchor": [
+        84,
+        91
+      ],
+      "layer": "front_objects",
+      "position": [
+        437,
+        841
+      ],
+      "scale": 0.96,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "ivy"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "FrontWallUpperRight",
+      "asset_id": "W013",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        146,
+        92
+      ],
+      "anchor": [
+        73,
+        92
+      ],
+      "layer": "front_objects",
+      "position": [
+        1085,
+        846
+      ],
+      "scale": 0.95,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "with",
+        "flowers"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "FrontWallCenterLeft",
+      "asset_id": "W010",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W010_Stone_Wall_End_Left.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        166,
+        87
+      ],
+      "anchor": [
+        83,
+        87
+      ],
+      "layer": "front_objects",
+      "position": [
+        552,
+        861
+      ],
+      "scale": 0.92,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "end",
+        "left"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "FrontWallCenterRight",
+      "asset_id": "W011",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W011_Stone_Wall_End_Right.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        99
+      ],
+      "anchor": [
+        63,
+        99
+      ],
+      "layer": "front_objects",
+      "position": [
+        978,
+        858
+      ],
+      "scale": 0.92,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "end",
+        "right"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "FrontWallLeftWide",
+      "asset_id": "ST013",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        185,
+        123
+      ],
+      "anchor": [
+        92,
+        123
+      ],
+      "layer": "front_objects",
+      "position": [
+        527,
+        881
+      ],
+      "scale": 0.92,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "parapet",
+        "short"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "FrontWallRightWide",
+      "asset_id": "ST014",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST014_Stone_Parapet_Long.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        176,
+        92
+      ],
+      "anchor": [
+        88,
+        92
+      ],
+      "layer": "front_objects",
+      "position": [
+        1012,
+        878
+      ],
+      "scale": 0.95,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "parapet",
+        "long"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "LandingCenter",
+      "asset_id": "ST006",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST006_Stone_Stair_Landing.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        192,
+        76
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "layer": "front_objects",
+      "position": [
+        776,
+        865
+      ],
+      "scale": 0.91,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 3,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "landing"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "EntryStairUpper",
+      "asset_id": "ST001",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST001_Stone_Stair_Top.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        192,
+        76
+      ],
+      "anchor": [
+        96,
+        76
+      ],
+      "layer": "front_objects",
+      "position": [
+        776,
+        895
+      ],
+      "scale": 1.03,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 3,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "top"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "EntryStairMiddle",
+      "asset_id": "ST002",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST002_Stone_Stair_Middle.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        192,
+        76
+      ],
+      "anchor": [
+        96,
+        76
+      ],
+      "layer": "front_objects",
+      "position": [
+        776,
+        918
+      ],
+      "scale": 1.04,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 3,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "middle"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "EntryStairLower",
+      "asset_id": "ST003",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST003_Stone_Stair_Bottom.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        192,
+        76
+      ],
+      "anchor": [
+        96,
+        76
+      ],
+      "layer": "front_objects",
+      "position": [
+        776,
+        942
+      ],
+      "scale": 1.05,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 3,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "bottom"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "EntryStairLeftEdge",
+      "asset_id": "ST004",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST004_Stone_Stair_Left_Edge.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        115,
+        105
+      ],
+      "anchor": [
+        57,
+        105
+      ],
+      "layer": "front_objects",
+      "position": [
+        654,
+        929
+      ],
+      "scale": 0.7,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 3,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "left",
+        "edge"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "EntryStairRightEdge",
+      "asset_id": "ST005",
+      "category": "stairs",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/stairs/ST005_Stone_Stair_Right_Edge.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        117,
+        105
+      ],
+      "anchor": [
+        58,
+        105
+      ],
+      "layer": "front_objects",
+      "position": [
+        904,
+        929
+      ],
+      "scale": 0.7,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 3,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stone",
+        "stair",
+        "right",
+        "edge"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "EntranceGuardLeft",
+      "asset_id": "ST007",
+      "category": "stairs",
+      "subtype": "stair",
+      "texture_path": "res://map_factory/parts/stairs/ST007_Stair_Entrance_Left.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        73,
+        145
+      ],
+      "anchor": [
+        36,
+        145
+      ],
+      "layer": "front_objects",
+      "position": [
+        670,
+        836
+      ],
+      "scale": 0.68,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 3,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stair",
+        "entrance",
+        "left"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "EntranceGuardRight",
+      "asset_id": "ST008",
+      "category": "stairs",
+      "subtype": "stair",
+      "texture_path": "res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        88,
+        146
+      ],
+      "anchor": [
+        44,
+        146
+      ],
+      "layer": "front_objects",
+      "position": [
+        873,
+        836
+      ],
+      "scale": 0.68,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 3,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "stairs",
+        "stair",
+        "entrance",
+        "right"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "FrontIvyLeft",
+      "asset_id": "V005",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V005_Ivy_Horizontal_Short.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        199,
+        154
+      ],
+      "anchor": [
+        99,
+        154
+      ],
+      "layer": "front_objects",
+      "position": [
+        438,
+        829
+      ],
+      "scale": 0.6,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "horizontal",
+        "short"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "FrontIvyRight",
+      "asset_id": "V004",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        241,
+        168
+      ],
+      "anchor": [
+        120,
+        168
+      ],
+      "layer": "front_objects",
+      "position": [
+        1114,
+        828
+      ],
+      "scale": 0.56,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "horizontal",
+        "long"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "LeftFlowerFence",
+      "asset_id": "V010",
+      "category": "vegetation",
+      "subtype": "white",
+      "texture_path": "res://map_factory/parts/vegetation/V010_White_Flowers_Large.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        160,
+        176
+      ],
+      "anchor": [
+        80,
+        176
+      ],
+      "layer": "front_objects",
+      "position": [
+        240,
+        826
+      ],
+      "scale": 0.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "white",
+        "flowers",
+        "large"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "RightFlowerFence",
+      "asset_id": "V011",
+      "category": "vegetation",
+      "subtype": "white",
+      "texture_path": "res://map_factory/parts/vegetation/V011_White_Flowers_Medium.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        155,
+        146
+      ],
+      "anchor": [
+        77,
+        146
+      ],
+      "layer": "front_objects",
+      "position": [
+        1338,
+        815
+      ],
+      "scale": 0.53,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "white",
+        "flowers",
+        "medium"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "ArchLeftFlowers",
+      "asset_id": "V012",
+      "category": "vegetation",
+      "subtype": "white",
+      "texture_path": "res://map_factory/parts/vegetation/V012_White_Flowers_Small.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        105,
+        115
+      ],
+      "anchor": [
+        52,
+        115
+      ],
+      "layer": "front_objects",
+      "position": [
+        513,
+        318
+      ],
+      "scale": 0.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "white",
+        "flowers",
+        "small"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "ArchRightFlowers",
+      "asset_id": "V012",
+      "category": "vegetation",
+      "subtype": "white",
+      "texture_path": "res://map_factory/parts/vegetation/V012_White_Flowers_Small.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        105,
+        115
+      ],
+      "anchor": [
+        52,
+        115
+      ],
+      "layer": "front_objects",
+      "position": [
+        1054,
+        320
+      ],
+      "scale": 0.48,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "white",
+        "flowers",
+        "small"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "BlueBannerLeft",
+      "asset_id": "D001",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D001_Banner_Blue_Long.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        154,
+        260
+      ],
+      "anchor": [
+        77,
+        260
+      ],
+      "layer": "front_objects",
+      "position": [
+        205,
+        643
+      ],
+      "scale": 0.59,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "blue",
+        "long"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "BlueBannerRight",
+      "asset_id": "D001",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D001_Banner_Blue_Long.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        154,
+        260
+      ],
+      "anchor": [
+        77,
+        260
+      ],
+      "layer": "front_objects",
+      "position": [
+        1366,
+        651
+      ],
+      "scale": 0.62,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "banner",
+        "blue",
+        "long"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "UpperLeftClimbingIvy",
+      "asset_id": "V006",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V006_Ivy_Corner_Left.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        179,
+        233
+      ],
+      "anchor": [
+        89,
+        233
+      ],
+      "layer": "front_objects",
+      "position": [
+        225,
+        434
+      ],
+      "scale": 0.55,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "corner",
+        "left"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "UpperRightClimbingIvy",
+      "asset_id": "V007",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        160,
+        173
+      ],
+      "anchor": [
+        80,
+        173
+      ],
+      "layer": "front_objects",
+      "position": [
+        1305,
+        440
+      ],
+      "scale": 0.55,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 2,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "corner",
+        "right"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
     }
   ],
   "floor_pattern_ids": [
-    "F001",
-    "F001",
+    "F003",
+    "F003",
+    "F003",
     "F002",
-    "F001",
-    "F001",
+    "F003",
+    "F004",
     "F003"
   ],
   "floor_overrides": [
     {
       "x": 7,
-      "y": 5,
+      "y": 4,
       "asset_id": "F019",
       "category": "floors",
       "texture_path": "res://map_factory/parts/floors/F019_Compass_Floor_Corner_NW.png",
@@ -2113,32 +4139,8 @@
       "asset_status": "needs_cleanup"
     },
     {
-      "x": 8,
-      "y": 5,
-      "asset_id": "F015",
-      "category": "floors",
-      "texture_path": "res://map_factory/parts/floors/F015_Compass_Floor_N.png",
-      "pixel_size": [
-        64,
-        64
-      ],
-      "asset_status": "needs_cleanup"
-    },
-    {
-      "x": 9,
-      "y": 5,
-      "asset_id": "F020",
-      "category": "floors",
-      "texture_path": "res://map_factory/parts/floors/F020_Compass_Floor_Corner_NE.png",
-      "pixel_size": [
-        64,
-        64
-      ],
-      "asset_status": "needs_cleanup"
-    },
-    {
       "x": 7,
-      "y": 6,
+      "y": 5,
       "asset_id": "F018",
       "category": "floors",
       "texture_path": "res://map_factory/parts/floors/F018_Compass_Floor_W.png",
@@ -2149,32 +4151,8 @@
       "asset_status": "needs_cleanup"
     },
     {
-      "x": 8,
-      "y": 6,
-      "asset_id": "F014",
-      "category": "floors",
-      "texture_path": "res://map_factory/parts/floors/F014_Compass_Floor_Center.png",
-      "pixel_size": [
-        64,
-        64
-      ],
-      "asset_status": "needs_cleanup"
-    },
-    {
-      "x": 9,
-      "y": 6,
-      "asset_id": "F017",
-      "category": "floors",
-      "texture_path": "res://map_factory/parts/floors/F017_Compass_Floor_E.png",
-      "pixel_size": [
-        64,
-        64
-      ],
-      "asset_status": "needs_cleanup"
-    },
-    {
       "x": 7,
-      "y": 7,
+      "y": 6,
       "asset_id": "F021",
       "category": "floors",
       "texture_path": "res://map_factory/parts/floors/F021_Compass_Floor_Corner_SW.png",
@@ -2186,7 +4164,31 @@
     },
     {
       "x": 8,
-      "y": 7,
+      "y": 4,
+      "asset_id": "F015",
+      "category": "floors",
+      "texture_path": "res://map_factory/parts/floors/F015_Compass_Floor_N.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "asset_status": "needs_cleanup"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "asset_id": "F014",
+      "category": "floors",
+      "texture_path": "res://map_factory/parts/floors/F014_Compass_Floor_Center.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "asset_status": "needs_cleanup"
+    },
+    {
+      "x": 8,
+      "y": 6,
       "asset_id": "F016",
       "category": "floors",
       "texture_path": "res://map_factory/parts/floors/F016_Compass_Floor_S.png",
@@ -2198,7 +4200,31 @@
     },
     {
       "x": 9,
-      "y": 7,
+      "y": 4,
+      "asset_id": "F020",
+      "category": "floors",
+      "texture_path": "res://map_factory/parts/floors/F020_Compass_Floor_Corner_NE.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "asset_status": "needs_cleanup"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "asset_id": "F017",
+      "category": "floors",
+      "texture_path": "res://map_factory/parts/floors/F017_Compass_Floor_E.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "asset_status": "needs_cleanup"
+    },
+    {
+      "x": 9,
+      "y": 6,
       "asset_id": "F022",
       "category": "floors",
       "texture_path": "res://map_factory/parts/floors/F022_Compass_Floor_Corner_SE.png",
@@ -2213,26 +4239,26 @@
     {
       "instance_id": "LanternLeftGlow",
       "kind": "lantern",
-      "x": 331,
-      "y": 323,
-      "scale": 0.52,
-      "glow_alpha": 0.46
+      "x": 327,
+      "y": 382,
+      "scale": 0.48,
+      "glow_alpha": 0.38
     },
     {
       "instance_id": "LanternRightGlow",
       "kind": "lantern",
-      "x": 1236,
-      "y": 315,
-      "scale": 0.52,
-      "glow_alpha": 0.46
+      "x": 1245,
+      "y": 384,
+      "scale": 0.5,
+      "glow_alpha": 0.38
     },
     {
       "instance_id": "TableCandleGlow",
       "kind": "candle",
-      "x": 1164,
-      "y": 600,
+      "x": 1172,
+      "y": 542,
       "scale": 0.42,
-      "glow_alpha": 0.36
+      "glow_alpha": 0.34
     }
   ],
   "note": "Resolved read-only map metadata. Edit map manifests, not this generated index."
