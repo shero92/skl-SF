@@ -10,14 +10,14 @@
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 5,
+  "version": 6,
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
   "block_count": 73,
-  "unique_asset_count": 70,
+  "unique_asset_count": 69,
   "reused_asset_ids": [
     "A005",
     "A007",
@@ -31,9 +31,8 @@
     "E015",
     "E016",
     "E017",
+    "F001",
     "F002",
-    "F003",
-    "F004",
     "F014",
     "F015",
     "F016",
@@ -3916,13 +3915,13 @@
     }
   ],
   "floor_pattern_ids": [
-    "F003",
-    "F003",
-    "F003",
+    "F001",
+    "F001",
+    "F001",
     "F002",
-    "F003",
-    "F004",
-    "F003"
+    "F001",
+    "F002",
+    "F001"
   ],
   "floor_overrides": [
     {

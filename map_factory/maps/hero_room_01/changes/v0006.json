@@ -1,0 +1,30 @@
+{
+  "mode": "patch",
+  "map_id": "hero_room_01",
+  "base_version": 5,
+  "analysis_status": "reviewed",
+  "note": "Use the existing high-resolution limestone floor tiles in place of blue-grouted draft tiles, retaining compass mosaic and independent environment blocks. Compare in Godot before approval.",
+  "changes": [
+    {
+      "op": "set_property",
+      "key": "floor_ids",
+      "value": [
+        "F001",
+        "F001",
+        "F001",
+        "F002",
+        "F001",
+        "F002",
+        "F001"
+      ]
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "v0006 A/B material trial: 162px source limestone texture downscaled to 64px tiles. Compare against v0005 and original before approval. Distinct reference skull/altar asset still absent; room not exact."
+      }
+    }
+  ]
+}

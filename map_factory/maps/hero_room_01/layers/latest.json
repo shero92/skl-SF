@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 5,
+  "version": 6,
   "processing_passes": [
     "background",
     "ground",
@@ -3755,13 +3755,13 @@
       225
     ],
     "floor_pattern_ids": [
-      "F003",
-      "F003",
-      "F003",
+      "F001",
+      "F001",
+      "F001",
       "F002",
-      "F003",
-      "F004",
-      "F003"
+      "F001",
+      "F002",
+      "F001"
     ],
     "overrides": [
       {
@@ -3901,9 +3901,8 @@
     "E015",
     "E016",
     "E017",
+    "F001",
     "F002",
-    "F003",
-    "F004",
     "F014",
     "F015",
     "F016",

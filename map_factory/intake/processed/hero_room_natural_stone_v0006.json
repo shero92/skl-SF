@@ -1,0 +1,10 @@
+{
+  "manifest": "map_factory/intake/pending/hero_room_natural_stone_v0006.json",
+  "manifest_sha256": "422c625dcf46b37960504a25c030c0cfa75b38597ef540da814c7ad953f87887",
+  "map_id": "hero_room_01",
+  "result_version": 6,
+  "imported_assets": [],
+  "staged_candidates": [],
+  "status": "processed",
+  "source_image": null
+}
