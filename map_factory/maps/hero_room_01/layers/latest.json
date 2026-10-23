@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 6,
+  "version": 7,
   "processing_passes": [
     "background",
     "ground",
@@ -3763,6 +3763,22 @@
       "F002",
       "F001"
     ],
+    "floor_tile_style": {
+      "enabled": true,
+      "tile_ids": [
+        "F001",
+        "F002"
+      ],
+      "crop_insets": [
+        9,
+        8,
+        9,
+        16
+      ],
+      "joint_color": "#776957",
+      "joint_opacity": 0.27,
+      "joint_width": 1.15
+    },
     "overrides": [
       {
         "x": 7,

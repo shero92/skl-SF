@@ -949,18 +949,18 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 6,
-  "parent_version": 5,
-  "created_at": "2026-10-23T15:55:14+00:00",
+  "version": 7,
+  "parent_version": 6,
+  "created_at": "2026-10-23T16:00:31+00:00",
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "change_note": "Use the existing high-resolution limestone floor tiles in place of blue-grouted draft tiles, retaining compass mosaic and independent environment blocks. Compare in Godot before approval.",
+  "change_note": "Keep high-resolution original stone surface texture but trim its thick beveled border at runtime and add understated warm seams; improve whole-room composition without replacing any PNG.",
   "visual_qa": {
     "status": "needs_review",
-    "notes": "v0006 A/B material trial: 162px source limestone texture downscaled to 64px tiles. Compare against v0005 and original before approval. Distinct reference skull/altar asset still absent; room not exact."
+    "notes": "v7 stone floor interior + fine warm joins A/B test; floor morphology and contextual asset placement still require artist visual approval. Do not claim perfect match."
   },
   "navigation": {
     "schema_version": 1,
@@ -1159,10 +1159,26 @@
     "shape": "stepped_ruined_sanctuary",
     "notes": "Only listed world cells receive floor sprites; omitted cells show the actual ocean beneath. Floor grid 17x10."
   },
+  "floor_tile_style": {
+    "enabled": true,
+    "tile_ids": [
+      "F001",
+      "F002"
+    ],
+    "crop_insets": [
+      9,
+      8,
+      9,
+      16
+    ],
+    "joint_color": "#776957",
+    "joint_opacity": 0.27,
+    "joint_width": 1.15
+  },
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 6,
+    "version": 7,
     "processing_passes": [
       "background",
       "ground",
@@ -4924,6 +4940,22 @@
         "F002",
         "F001"
       ],
+      "floor_tile_style": {
+        "enabled": true,
+        "tile_ids": [
+          "F001",
+          "F002"
+        ],
+        "crop_insets": [
+          9,
+          8,
+          9,
+          16
+        ],
+        "joint_color": "#776957",
+        "joint_opacity": 0.27,
+        "joint_width": 1.15
+      },
       "overrides": [
         {
           "x": 7,

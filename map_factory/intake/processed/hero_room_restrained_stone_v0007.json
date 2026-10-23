@@ -1,0 +1,10 @@
+{
+  "manifest": "map_factory/intake/pending/hero_room_restrained_stone_v0007.json",
+  "manifest_sha256": "424502390fe87419047f2dd82ba63fcb18f77a21ef1bba3818f13f82df80588c",
+  "map_id": "hero_room_01",
+  "result_version": 7,
+  "imported_assets": [],
+  "staged_candidates": [],
+  "status": "processed",
+  "source_image": null
+}

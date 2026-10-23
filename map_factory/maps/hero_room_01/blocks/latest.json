@@ -10,7 +10,7 @@
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 6,
+  "version": 7,
   "source_image": {
     "path": null,
     "sha256": null,
