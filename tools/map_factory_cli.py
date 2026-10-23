@@ -377,15 +377,17 @@ def build_block_manifest(snapshot, catalog):
             record = catalog[part["id"]]
             used.add(part["id"])
             orientation=resolve_orientation(part,catalog)
+            resolved=catalog[orientation["resolved_asset_id"]] if orientation else record
             instances.append({
                 "instance_id": part["instance_id"],
                 "asset_id": part["id"],
+                **({"render_asset_id":resolved["id"]} if orientation else {}),
                 "category": record["category"],
                 "subtype": record.get("subtype", "general"),
-                "texture_path": record["texture_path"],
+                "texture_path": resolved["texture_path"],
                 "asset_status": record.get("status", "planned"),
-                "pixel_size": record.get("pixel_size", [0, 0]),
-                "anchor": record.get("origin", [0, 0]),
+                "pixel_size": resolved.get("pixel_size", [0, 0]),
+                "anchor": resolved.get("origin", [0, 0]),
                 "layer": layer,
                 "position": [part["x"], part["y"]],
                 "scale": part.get("scale", 1.0),
@@ -393,8 +395,8 @@ def build_block_manifest(snapshot, catalog):
                 **({"orientation":orientation} if orientation else {}),
                 "flip_h": part.get("flip_h", False),
                 "z_index": part.get("z_index", 0),
-                "collision": part.get("collision", record.get("collision", {})),
-                "shadow": part.get("shadow", record.get("shadow", {})),
+                "collision": part.get("collision", resolved.get("collision", {})),
+                "shadow": part.get("shadow", resolved.get("shadow", {})),
                 "tags": record.get("tags", []),
                 "source": record.get("source", {}),
             })
@@ -402,12 +404,14 @@ def build_block_manifest(snapshot, catalog):
     for item in snapshot.get("tile_overrides", []):
         record = catalog[item["id"]]
         orientation=resolve_orientation(item,catalog)
+        resolved=catalog[orientation["resolved_asset_id"]] if orientation else record
         floor.append({
             "x": item["x"], "y": item["y"],
             "asset_id": item["id"],
+            **({"render_asset_id":resolved["id"]} if orientation else {}),
             "category": record["category"],
-            "texture_path": record["texture_path"],
-            "pixel_size": record.get("pixel_size"),
+            "texture_path": resolved["texture_path"],
+            "pixel_size": resolved.get("pixel_size"),
             "asset_status": record.get("status", "planned"),
             **({"orientation":orientation} if orientation else {})
         })

@@ -60,6 +60,11 @@ class FourDirections(unittest.TestCase):
         self.assertEqual(e["orientation"]["resolved_asset_id"],"P004")
         self.assertEqual(e["texture_path"],"res://invalid/P004.png")
         self.assertEqual(e["origin"],[44,112])
+        meta=mf.build_block_manifest(v2,mf.asset_catalog(self.root))
+        block=meta["placed_blocks"][0]
+        self.assertEqual(block["asset_id"],"P001")
+        self.assertEqual(block["render_asset_id"],"P004")
+        self.assertEqual(block["texture_path"],"res://invalid/P004.png")
     def test_invalid_orientation_rejected(self):
         for val in ["northeast","top","90",90]:
             with self.subTest(value=val):
