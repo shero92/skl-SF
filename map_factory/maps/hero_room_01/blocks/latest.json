@@ -5,12 +5,12 @@
     "ground": 2,
     "walls": 32,
     "decorations": 34,
-    "shadows": 8
+    "shadows": 23
   },
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 3,
+  "version": 4,
   "source_image": {
     "path": null,
     "sha256": null,
@@ -603,10 +603,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "soft_cast",
+        "opacity": 0.22,
+        "offset_x": 9,
+        "offset_y": 8
       },
       "tags": [
         "architecture",
@@ -2120,10 +2120,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 3,
+        "offset_y": 3
       },
       "tags": [
         "vegetation",
@@ -2172,10 +2172,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 3,
+        "offset_y": 3
       },
       "tags": [
         "vegetation",
@@ -2224,10 +2224,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 3,
+        "offset_y": 3
       },
       "tags": [
         "vegetation",
@@ -2536,10 +2536,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "plant",
+        "opacity": 0.13,
+        "offset_x": 2,
+        "offset_y": 3
       },
       "tags": [
         "vegetation",
@@ -2587,10 +2587,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "plant",
+        "opacity": 0.13,
+        "offset_x": 2,
+        "offset_y": 3
       },
       "tags": [
         "vegetation",
@@ -2639,10 +2639,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 9,
+        "offset_y": 7
       },
       "tags": [
         "walls",
@@ -2744,10 +2744,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 9,
+        "offset_y": 7
       },
       "tags": [
         "walls",
@@ -2849,10 +2849,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
+        "type": "wall_base",
+        "opacity": 0.18,
         "offset_x": 4,
-        "offset_y": 2
+        "offset_y": 8
       },
       "tags": [
         "walls",
@@ -2902,10 +2902,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
+        "type": "wall_base",
+        "opacity": 0.18,
         "offset_x": 4,
-        "offset_y": 2
+        "offset_y": 8
       },
       "tags": [
         "walls",
@@ -2955,10 +2955,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 8,
+        "offset_y": 9
       },
       "tags": [
         "walls",
@@ -3008,10 +3008,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 8,
+        "offset_y": 9
       },
       "tags": [
         "walls",
@@ -3166,10 +3166,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
+        "type": "stairs",
+        "opacity": 0.24,
         "offset_x": 4,
-        "offset_y": 2
+        "offset_y": 5
       },
       "tags": [
         "stairs",
@@ -3431,10 +3431,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "column_short",
+        "opacity": 0.28,
+        "offset_x": 7,
+        "offset_y": 4
       },
       "tags": [
         "stairs",
@@ -3483,10 +3483,10 @@
         ]
       },
       "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
+        "type": "column_short",
+        "opacity": 0.28,
+        "offset_x": 7,
+        "offset_y": 4
       },
       "tags": [
         "stairs",

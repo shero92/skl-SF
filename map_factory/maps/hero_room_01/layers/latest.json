@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 3,
+  "version": 4,
   "processing_passes": [
     "background",
     "ground",
@@ -435,10 +435,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "soft_cast",
+          "opacity": 0.22,
+          "offset_x": 9,
+          "offset_y": 8
         },
         "attachment": null
       },
@@ -1065,10 +1065,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 9,
+          "offset_y": 7
         },
         "attachment": null
       },
@@ -1149,10 +1149,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 9,
+          "offset_y": 7
         },
         "attachment": null
       },
@@ -1233,10 +1233,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "type": "wall_base",
+          "opacity": 0.18,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 8
         },
         "attachment": null
       },
@@ -1275,10 +1275,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "type": "wall_base",
+          "opacity": 0.18,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 8
         },
         "attachment": null
       },
@@ -1317,10 +1317,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 8,
+          "offset_y": 9
         },
         "attachment": null
       },
@@ -1359,10 +1359,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 8,
+          "offset_y": 9
         },
         "attachment": null
       },
@@ -1485,10 +1485,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "type": "stairs",
+          "opacity": 0.24,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 5
         },
         "attachment": null
       },
@@ -1695,10 +1695,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "column_short",
+          "opacity": 0.28,
+          "offset_x": 7,
+          "offset_y": 4
         },
         "attachment": null
       },
@@ -1737,10 +1737,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "column_short",
+          "opacity": 0.28,
+          "offset_x": 7,
+          "offset_y": 4
         },
         "attachment": null
       }
@@ -1870,7 +1870,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "W001_back_objects_002",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            48.0,
+            21.0
+          ]
+        }
       },
       {
         "instance_id": "D007_back_objects_013",
@@ -1912,7 +1919,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "W014_back_objects_005",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            -89.0,
+            19.0
+          ]
+        }
       },
       {
         "instance_id": "CompassBannerArchRight",
@@ -1954,7 +1968,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "A012_back_objects_009",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            114.0,
+            -69.0
+          ]
+        }
       },
       {
         "instance_id": "FlowerClusterArch",
@@ -1996,7 +2017,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "ArchMain",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            16.0,
+            -162.0
+          ]
+        }
       },
       {
         "instance_id": "LeftWallLantern",
@@ -2038,7 +2066,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "W001_back_objects_002",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            -21.0,
+            58.0
+          ]
+        }
       },
       {
         "instance_id": "RightWallLantern",
@@ -2080,7 +2115,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "W014_back_objects_005",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            8.0,
+            67.0
+          ]
+        }
       },
       {
         "instance_id": "HeroBed",
@@ -2495,10 +2537,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "attachment": null
       },
@@ -2537,10 +2579,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "attachment": null
       },
@@ -2579,10 +2621,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "attachment": null
       },
@@ -2705,10 +2747,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.13,
+          "offset_x": 2,
+          "offset_y": 3
         },
         "attachment": null
       },
@@ -2747,10 +2789,10 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.13,
+          "offset_x": 2,
+          "offset_y": 3
         },
         "attachment": null
       },
@@ -2794,7 +2836,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "FrontWallUpperLeft",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            1.0,
+            -12.0
+          ]
+        }
       },
       {
         "instance_id": "FrontIvyRight",
@@ -2836,7 +2885,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "FrontWallUpperRight",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            29.0,
+            -18.0
+          ]
+        }
       },
       {
         "instance_id": "LeftFlowerFence",
@@ -2962,7 +3018,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "W003_back_objects_003",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            49.0,
+            -41.0
+          ]
+        }
       },
       {
         "instance_id": "ArchRightFlowers",
@@ -3004,7 +3067,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "W002_back_objects_004",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            -94.0,
+            -29.0
+          ]
+        }
       },
       {
         "instance_id": "BlueBannerLeft",
@@ -3046,7 +3116,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "LeftPerimeterWallMid",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            -33.0,
+            -12.0
+          ]
+        }
       },
       {
         "instance_id": "BlueBannerRight",
@@ -3088,7 +3165,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "RightPerimeterWallMid",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            58.0,
+            -4.0
+          ]
+        }
       },
       {
         "instance_id": "UpperLeftClimbingIvy",
@@ -3130,7 +3214,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "W001_back_objects_002",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            -52.0,
+            29.0
+          ]
+        }
       },
       {
         "instance_id": "UpperRightClimbingIvy",
@@ -3172,7 +3263,14 @@
           "offset_x": 4,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "W014_back_objects_005",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            -19.0,
+            26.0
+          ]
+        }
       }
     ],
     "shadows": [
@@ -3220,6 +3318,246 @@
           "opacity": 0.25,
           "offset_x": 4,
           "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "ArchMain__shadow",
+        "owner_instance_id": "ArchMain",
+        "owner_asset_id": "A005",
+        "asset_id": "S016",
+        "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
+        "position": [
+          759.0,
+          346.0
+        ],
+        "scale": 1.03,
+        "sprite_pixel_size": [
+          328,
+          283
+        ],
+        "settings": {
+          "type": "soft_cast",
+          "opacity": 0.22,
+          "offset_x": 9,
+          "offset_y": 8
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "LeftPerimeterWallMid__shadow",
+        "owner_instance_id": "LeftPerimeterWallMid",
+        "owner_asset_id": "W005",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          238.0,
+          655.0
+        ],
+        "scale": 0.75,
+        "sprite_pixel_size": [
+          197,
+          229
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 9,
+          "offset_y": 7
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "RightPerimeterWallMid__shadow",
+        "owner_instance_id": "RightPerimeterWallMid",
+        "owner_asset_id": "W005",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          1308.0,
+          655.0
+        ],
+        "scale": 0.77,
+        "sprite_pixel_size": [
+          197,
+          229
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 9,
+          "offset_y": 7
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontWallUpperLeft__shadow",
+        "owner_instance_id": "FrontWallUpperLeft",
+        "owner_asset_id": "W012",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          437.0,
+          841.0
+        ],
+        "scale": 0.96,
+        "sprite_pixel_size": [
+          169,
+          91
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 4,
+          "offset_y": 8
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontWallUpperRight__shadow",
+        "owner_instance_id": "FrontWallUpperRight",
+        "owner_asset_id": "W013",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          1085.0,
+          846.0
+        ],
+        "scale": 0.95,
+        "sprite_pixel_size": [
+          146,
+          92
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 4,
+          "offset_y": 8
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontWallCenterLeft__shadow",
+        "owner_instance_id": "FrontWallCenterLeft",
+        "owner_asset_id": "W010",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          552.0,
+          861.0
+        ],
+        "scale": 0.92,
+        "sprite_pixel_size": [
+          166,
+          87
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 8,
+          "offset_y": 9
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontWallCenterRight__shadow",
+        "owner_instance_id": "FrontWallCenterRight",
+        "owner_asset_id": "W011",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          978.0,
+          858.0
+        ],
+        "scale": 0.92,
+        "sprite_pixel_size": [
+          126,
+          99
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 8,
+          "offset_y": 9
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "EntryStairUpper__shadow",
+        "owner_instance_id": "EntryStairUpper",
+        "owner_asset_id": "ST001",
+        "asset_id": "S015",
+        "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
+        "position": [
+          776.0,
+          895.0
+        ],
+        "scale": 1.03,
+        "sprite_pixel_size": [
+          192,
+          76
+        ],
+        "settings": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "EntranceGuardLeft__shadow",
+        "owner_instance_id": "EntranceGuardLeft",
+        "owner_asset_id": "ST007",
+        "asset_id": "S011",
+        "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
+        "position": [
+          670.0,
+          836.0
+        ],
+        "scale": 0.68,
+        "sprite_pixel_size": [
+          73,
+          145
+        ],
+        "settings": {
+          "type": "column_short",
+          "opacity": 0.28,
+          "offset_x": 7,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "EntranceGuardRight__shadow",
+        "owner_instance_id": "EntranceGuardRight",
+        "owner_asset_id": "ST008",
+        "asset_id": "S011",
+        "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
+        "position": [
+          873.0,
+          836.0
+        ],
+        "scale": 0.68,
+        "sprite_pixel_size": [
+          88,
+          146
+        ],
+        "settings": {
+          "type": "column_short",
+          "opacity": 0.28,
+          "offset_x": 7,
+          "offset_y": 4
         },
         "render_layer": "shadows",
         "display_z": 20
@@ -3367,6 +3705,126 @@
         },
         "render_layer": "shadows",
         "display_z": 20
+      },
+      {
+        "instance_id": "V017_objects_010__shadow",
+        "owner_instance_id": "V017_objects_010",
+        "owner_asset_id": "V017",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          1353.0,
+          623.0
+        ],
+        "scale": 0.6,
+        "sprite_pixel_size": [
+          142,
+          171
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "V013_objects_011__shadow",
+        "owner_instance_id": "V013_objects_011",
+        "owner_asset_id": "V013",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          322.0,
+          777.0
+        ],
+        "scale": 0.62,
+        "sprite_pixel_size": [
+          187,
+          182
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "V020_objects_012__shadow",
+        "owner_instance_id": "V020_objects_012",
+        "owner_asset_id": "V020",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          1138.0,
+          834.0
+        ],
+        "scale": 0.49,
+        "sprite_pixel_size": [
+          107,
+          108
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "LowerLeftVines__shadow",
+        "owner_instance_id": "LowerLeftVines",
+        "owner_asset_id": "V023",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          331.0,
+          852.0
+        ],
+        "scale": 0.7,
+        "sprite_pixel_size": [
+          163,
+          95
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.13,
+          "offset_x": 2,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "LowerRightVines__shadow",
+        "owner_instance_id": "LowerRightVines",
+        "owner_asset_id": "V024",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          1220.0,
+          854.0
+        ],
+        "scale": 0.76,
+        "sprite_pixel_size": [
+          165,
+          102
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.13,
+          "offset_x": 2,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
       }
     ]
   },
@@ -3442,7 +3900,7 @@
     "ground": 2,
     "walls": 32,
     "decorations": 34,
-    "shadows": 8
+    "shadows": 23
   },
   "unique_asset_ids": [
     "A005",
@@ -3486,6 +3944,11 @@
     "S002",
     "S005",
     "S006",
+    "S010",
+    "S011",
+    "S013",
+    "S015",
+    "S016",
     "ST001",
     "ST002",
     "ST003",

@@ -1,0 +1,380 @@
+{
+  "mode": "patch",
+  "map_id": "hero_room_01",
+  "base_version": 3,
+  "analysis_status": "reviewed",
+  "note": "Rebuild Hero Room v0004 with five deterministic map-building levels and wall-mounted secondary details plus separate shadows; do not touch character sprites or gameplay.",
+  "changes": [
+    {
+      "op": "update_block",
+      "instance_id": "LeftWallLantern",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "W001_back_objects_002",
+        "mount_offset": [
+          -21,
+          58
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "RightWallLantern",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "W014_back_objects_005",
+        "mount_offset": [
+          8,
+          67
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "CompassBannerArchRight",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "A012_back_objects_009",
+        "mount_offset": [
+          114,
+          -69
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "FlowerClusterArch",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "ArchMain",
+        "mount_offset": [
+          16,
+          -162
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "ArchLeftFlowers",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "W003_back_objects_003",
+        "mount_offset": [
+          49,
+          -41
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "ArchRightFlowers",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "W002_back_objects_004",
+        "mount_offset": [
+          -94,
+          -29
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "D007_back_objects_012",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "W001_back_objects_002",
+        "mount_offset": [
+          48,
+          21
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "D007_back_objects_013",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "W014_back_objects_005",
+        "mount_offset": [
+          -89,
+          19
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "UpperLeftClimbingIvy",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "W001_back_objects_002",
+        "mount_offset": [
+          -52,
+          29
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "UpperRightClimbingIvy",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "W014_back_objects_005",
+        "mount_offset": [
+          -19,
+          26
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "BlueBannerLeft",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "LeftPerimeterWallMid",
+        "mount_offset": [
+          -33,
+          -12
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "BlueBannerRight",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "RightPerimeterWallMid",
+        "mount_offset": [
+          58,
+          -4
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "FrontIvyLeft",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "FrontWallUpperLeft",
+        "mount_offset": [
+          1,
+          -12
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "FrontIvyRight",
+      "set": {
+        "render_layer": "decorations",
+        "mount_on": "FrontWallUpperRight",
+        "mount_offset": [
+          29,
+          -18
+        ]
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "ArchMain",
+      "set": {
+        "shadow": {
+          "type": "soft_cast",
+          "opacity": 0.22,
+          "offset_x": 9,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "LeftPerimeterWallMid",
+      "set": {
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 9,
+          "offset_y": 7
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "RightPerimeterWallMid",
+      "set": {
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 9,
+          "offset_y": 7
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "FrontWallUpperLeft",
+      "set": {
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 4,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "FrontWallUpperRight",
+      "set": {
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 4,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "FrontWallCenterLeft",
+      "set": {
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 8,
+          "offset_y": 9
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "FrontWallCenterRight",
+      "set": {
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 8,
+          "offset_y": 9
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "EntryStairUpper",
+      "set": {
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "EntranceGuardLeft",
+      "set": {
+        "shadow": {
+          "type": "column_short",
+          "opacity": 0.28,
+          "offset_x": 7,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "EntranceGuardRight",
+      "set": {
+        "shadow": {
+          "type": "column_short",
+          "opacity": 0.28,
+          "offset_x": 7,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "V017_objects_010",
+      "set": {
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "V013_objects_011",
+      "set": {
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "V020_objects_012",
+      "set": {
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "LowerLeftVines",
+      "set": {
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.13,
+          "offset_x": 2,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "LowerRightVines",
+      "set": {
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.13,
+          "offset_x": 2,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "composition_reference",
+      "value": {
+        "style": "Hero Room pixel-art coastal sanctuary",
+        "reference_status": "user_upload_attached_to_conversation_not_copied_to_repository",
+        "reference_sha256": "f659a18b03f844e049b3b20319f0418fd2d5f20e573f8238d05c87b932a9c616",
+        "reference_dimensions": [
+          1536,
+          1024
+        ],
+        "notes": "Current user-provided image is the v0003 factory render. Five-pass grouping references the actual existing 75 environment assets; artist QA pending.",
+        "revision": "5.0-factory-layer-stack"
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "Verified 75 placed environment instances have indexed PNG paths; five-pass map and 2nd-level wall mount metadata introduced. All 218 assets still needs_cleanup; no 100% fidelity approval."
+      }
+    }
+  ]
+}
