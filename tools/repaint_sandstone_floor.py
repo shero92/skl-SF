@@ -135,6 +135,16 @@ def main():
         path=ROOT/record["texture_path"].removeprefix("res://")
         if path.name!=ident+"_"+NAMES[i]+".png":
             raise RuntimeError("Catalog path differs: "+str(path))
+        source=record.get("source", {})
+        kind=source.get("kind", "") if isinstance(source,dict) else str(source)
+        if record.get("status")=="ready" or kind not in (
+                "procedural","existing_unreviewed_png",
+                "manual_procedural_pixel_art_revision"):
+            print("Preserved higher-detail or approved source:",ident,kind)
+            continue
+        if kind=="manual_procedural_pixel_art_revision" and source.get("revision")!="2":
+            print("Preserved a newer floor revision:",ident)
+            continue
         im.save(path,optimize=True)
         record["pixel_size"]=[64,64]
         record["origin"]=[0,0]
@@ -152,14 +162,20 @@ def main():
         PREVIEW/"compass_mosaic_review.png",optimize=True)
     sheet=Image.new("RGB",(5*260,5*280),"#0a254b")
     d=ImageDraw.Draw(sheet)
-    for i,im in enumerate(images):
+    for i in range(len(images)):
+        id="F%03d"%(i+1)
+        actual=ROOT/by_id[id]["texture_path"].removeprefix("res://")
+        with Image.open(actual) as file:
+            im=file.convert("RGBA")
         x=(i%5)*260;y=(i//5)*280
-        sheet.paste(im.resize((240,240),Image.Resampling.NEAREST),(x+8,y+8))
-        d.text((x+8,y+253),"F%03d"%(i+1),fill="#ffd477")
+        thumbnail=im.copy()
+        thumbnail.thumbnail((240,240),Image.Resampling.LANCZOS)
+        sheet.paste(thumbnail,(x+8+(240-thumbnail.width)//2,y+8+(240-thumbnail.height)//2),mask=thumbnail.getchannel("A"))
+        d.text((x+8,y+253),id,fill="#ffd477")
     sheet.save(PREVIEW/"sandstone_floor_review.png",optimize=True)
     (ROOT/"docs/FLOOR_REPAINT_QA.md").write_text(
         "# Stone Floor 22-piece repaint\n\n"
-        "This change **replaces the 22 existing floor PNGs at stable paths**. "
+        "This change repaints 18 draft tiles while deliberately preserving four richer original F001/F002/F006/F010 source PNGs. "
         "The compass now composes into one coherent 3×3 192×192 nautical inlay; "
         "it is NOT nine copies of a single compass. Each file remains 64×64 "
         "pixel-native RGBA and therefore compatible with the room grid. "
