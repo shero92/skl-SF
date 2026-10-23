@@ -1,6 +1,7 @@
 extends SceneTree
 
 ## Create REAL Godot screenshots: no AI simulation, no characters or HUD.
+## v0004 now published: screenshot the five-level environment renderer for visual QA.
 ## The revised Hero Room captures the fixed integer tile override mapping.
 ## Use a virtual X11 display and OpenGL3 in CI; headless dummy rendering cannot screenshot.
 const OUTPUT: String = "res://docs/previews/map_factory_renders/"
