@@ -1,0 +1,32 @@
+name: Test all registered maps in Godot
+on:
+  push:
+    paths:
+      - "map_factory/maps/**"
+      - "map_factory/presets/**"
+      - "map_factory/scripts/**"
+      - "scenes/map_factory_preview.*"
+      - "scenes/ocean_background.gd"
+      - "scenes/room_light_fx.gd"
+      - "tools/map_factory_godot_smoke.gd"
+      - ".github/workflows/map_factory_godot_smoke.yml"
+  workflow_dispatch:
+jobs:
+  render_all_maps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate versioned map registry
+        run: python tools/map_factory_cli.py validate
+      - name: Download official Godot 4.4.1
+        run: |
+          curl -fsSL --retry 3 -o /tmp/godot.zip "https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip"
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.4.1-stable_linux.x86_64
+      - name: Godot headless import and parse
+        run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --editor --quit
+      - name: Build and check every map including ocean and block count
+        run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --script res://tools/map_factory_godot_smoke.gd
