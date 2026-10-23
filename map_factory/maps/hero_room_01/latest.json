@@ -305,6 +305,25 @@
         8,
         67
       ]
+    },
+    {
+      "id": "W019",
+      "instance_id": "LeftDeepRuinCorner",
+      "x": 228,
+      "y": 713,
+      "scale": 0.72,
+      "render_layer": "walls",
+      "z_index": -1
+    },
+    {
+      "id": "W019",
+      "instance_id": "RightDeepRuinCorner",
+      "x": 1326,
+      "y": 713,
+      "scale": 0.71,
+      "flip_h": true,
+      "render_layer": "walls",
+      "z_index": -1
     }
   ],
   "objects": [
@@ -522,6 +541,32 @@
       "y": 827,
       "scale": 0.6,
       "instance_id": "V021_objects_018"
+    },
+    {
+      "id": "O027",
+      "instance_id": "AntleredFlowerShrine",
+      "x": 877,
+      "y": 555,
+      "scale": 0.71,
+      "render_layer": "decorations",
+      "z_index": 1,
+      "shadow": {
+        "type": "directional_sun",
+        "opacity": 0.36,
+        "offset_x": -25,
+        "offset_y": 24
+      },
+      "collision": {
+        "enabled": true,
+        "size": [
+          80,
+          45
+        ],
+        "offset": [
+          0,
+          -22
+        ]
+      }
     }
   ],
   "front_objects": [
@@ -870,6 +915,36 @@
         -19,
         26
       ]
+    },
+    {
+      "id": "E019",
+      "instance_id": "TerraceRockFrontLeft",
+      "x": 397,
+      "y": 960,
+      "scale": 0.87,
+      "render_layer": "walls",
+      "z_index": 0,
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.18,
+        "offset_x": 5,
+        "offset_y": 8
+      }
+    },
+    {
+      "id": "E020",
+      "instance_id": "TerraceRockFrontRight",
+      "x": 1142,
+      "y": 954,
+      "scale": 0.86,
+      "render_layer": "walls",
+      "z_index": 0,
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.18,
+        "offset_x": 5,
+        "offset_y": 8
+      }
     }
   ],
   "effects": [
@@ -937,7 +1012,7 @@
       1448,
       1086
     ],
-    "revision": "5",
+    "revision": "8-new-scene-parts",
     "qa": "pending visual comparison",
     "not_in_repo": true,
     "goals": [
@@ -945,22 +1020,30 @@
       "ocean behind top arch",
       "remove background sprite rectangular seams",
       "preserve already detailed sprites"
-    ]
+    ],
+    "new_parts": [
+      "O027",
+      "E019",
+      "E020",
+      "W019",
+      "S017"
+    ],
+    "missing_piece_status": "first-pass-art-generated-awaiting-artist-review"
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 7,
-  "parent_version": 6,
-  "created_at": "2026-10-23T16:00:31+00:00",
+  "version": 8,
+  "parent_version": 7,
+  "created_at": "2026-10-23T16:54:03+00:00",
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "change_note": "Keep high-resolution original stone surface texture but trim its thick beveled border at runtime and add understated warm seams; improve whole-room composition without replacing any PNG.",
+  "change_note": "Install actual independent antlered shrine sprite, deeper marine stone cliff borders and new wall corners; keep room collision/shadow layering and historic revisions. Art pending final screenshot QA.",
   "visual_qa": {
     "status": "needs_review",
-    "notes": "v7 stone floor interior + fine warm joins A/B test; floor morphology and contextual asset placement still require artist visual approval. Do not claim perfect match."
+    "notes": "Hero Room v8 includes new independent transparent shrine cliff and parapet parts. Verify real Godot placement and assess visual fidelity; source art is non-final composite generated from registered sprites, not claimed 100%."
   },
   "navigation": {
     "schema_version": 1,
@@ -1178,7 +1261,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 7,
+    "version": 8,
     "processing_passes": [
       "background",
       "ground",
@@ -1994,6 +2077,90 @@
             "opacity": 0.25,
             "offset_x": 4,
             "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "LeftDeepRuinCorner",
+          "asset_id": "W019",
+          "source_layer": "back_objects",
+          "render_layer": "walls",
+          "position": [
+            228.0,
+            713.0
+          ],
+          "scale": 0.72,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": -1,
+          "texture_path": "res://map_factory/parts/walls/W019_Deep_Limestone_Parapet_Corner.png",
+          "pixel_size": [
+            246,
+            238
+          ],
+          "origin": [
+            123,
+            235
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": true,
+            "size": [
+              126,
+              42
+            ],
+            "offset": [
+              0,
+              -28
+            ]
+          },
+          "shadow": {
+            "type": "wall_corner",
+            "opacity": 0.32,
+            "offset_x": 7,
+            "offset_y": 9
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "RightDeepRuinCorner",
+          "asset_id": "W019",
+          "source_layer": "back_objects",
+          "render_layer": "walls",
+          "position": [
+            1326.0,
+            713.0
+          ],
+          "scale": 0.71,
+          "rotation_degrees": 0.0,
+          "flip_h": true,
+          "z_index": -1,
+          "texture_path": "res://map_factory/parts/walls/W019_Deep_Limestone_Parapet_Corner.png",
+          "pixel_size": [
+            246,
+            238
+          ],
+          "origin": [
+            123,
+            235
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": true,
+            "size": [
+              126,
+              42
+            ],
+            "offset": [
+              0,
+              -28
+            ]
+          },
+          "shadow": {
+            "type": "wall_corner",
+            "opacity": 0.32,
+            "offset_x": 7,
+            "offset_y": 9
           },
           "attachment": null
         },
@@ -2834,6 +3001,90 @@
             "opacity": 0.28,
             "offset_x": 7,
             "offset_y": 4
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "TerraceRockFrontLeft",
+          "asset_id": "E019",
+          "source_layer": "front_objects",
+          "render_layer": "walls",
+          "position": [
+            397.0,
+            960.0
+          ],
+          "scale": 0.87,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E019_Sea_Cliff_Ruin_Edge_Left.png",
+          "pixel_size": [
+            340,
+            248
+          ],
+          "origin": [
+            170,
+            242
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": true,
+            "size": [
+              220,
+              44
+            ],
+            "offset": [
+              0,
+              -31
+            ]
+          },
+          "shadow": {
+            "type": "wall_base",
+            "opacity": 0.18,
+            "offset_x": 5,
+            "offset_y": 8
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "TerraceRockFrontRight",
+          "asset_id": "E020",
+          "source_layer": "front_objects",
+          "render_layer": "walls",
+          "position": [
+            1142.0,
+            954.0
+          ],
+          "scale": 0.86,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E020_Sea_Cliff_Ruin_Edge_Right.png",
+          "pixel_size": [
+            340,
+            248
+          ],
+          "origin": [
+            170,
+            242
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": true,
+            "size": [
+              220,
+              44
+            ],
+            "offset": [
+              0,
+              -31
+            ]
+          },
+          "shadow": {
+            "type": "wall_base",
+            "opacity": 0.18,
+            "offset_x": 5,
+            "offset_y": 8
           },
           "attachment": null
         }
@@ -3806,6 +4057,48 @@
           "attachment": null
         },
         {
+          "instance_id": "AntleredFlowerShrine",
+          "asset_id": "O027",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            877.0,
+            555.0
+          ],
+          "scale": 0.71,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 1,
+          "texture_path": "res://map_factory/parts/objects/O027_Antlered_Skull_Flower_Shrine.png",
+          "pixel_size": [
+            268,
+            276
+          ],
+          "origin": [
+            134,
+            266
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": true,
+            "size": [
+              80,
+              45
+            ],
+            "offset": [
+              0,
+              -22
+            ]
+          },
+          "shadow": {
+            "type": "directional_sun",
+            "opacity": 0.36,
+            "offset_x": -25,
+            "offset_y": 24
+          },
+          "attachment": null
+        },
+        {
           "instance_id": "LowerLeftVines",
           "asset_id": "V023",
           "source_layer": "front_objects",
@@ -4440,6 +4733,54 @@
           "display_z": 20
         },
         {
+          "instance_id": "LeftDeepRuinCorner__shadow",
+          "owner_instance_id": "LeftDeepRuinCorner",
+          "owner_asset_id": "W019",
+          "asset_id": "S014",
+          "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
+          "position": [
+            228.0,
+            713.0
+          ],
+          "scale": 0.72,
+          "sprite_pixel_size": [
+            246,
+            238
+          ],
+          "settings": {
+            "type": "wall_corner",
+            "opacity": 0.32,
+            "offset_x": 7,
+            "offset_y": 9
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
+          "instance_id": "RightDeepRuinCorner__shadow",
+          "owner_instance_id": "RightDeepRuinCorner",
+          "owner_asset_id": "W019",
+          "asset_id": "S014",
+          "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
+          "position": [
+            1326.0,
+            713.0
+          ],
+          "scale": 0.71,
+          "sprite_pixel_size": [
+            246,
+            238
+          ],
+          "settings": {
+            "type": "wall_corner",
+            "opacity": 0.32,
+            "offset_x": 7,
+            "offset_y": 9
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
           "instance_id": "LeftPerimeterWallMid__shadow",
           "owner_instance_id": "LeftPerimeterWallMid",
           "owner_asset_id": "W005",
@@ -4651,6 +4992,54 @@
             "opacity": 0.28,
             "offset_x": 7,
             "offset_y": 4
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
+          "instance_id": "TerraceRockFrontLeft__shadow",
+          "owner_instance_id": "TerraceRockFrontLeft",
+          "owner_asset_id": "E019",
+          "asset_id": "S013",
+          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+          "position": [
+            397.0,
+            960.0
+          ],
+          "scale": 0.87,
+          "sprite_pixel_size": [
+            340,
+            248
+          ],
+          "settings": {
+            "type": "wall_base",
+            "opacity": 0.18,
+            "offset_x": 5,
+            "offset_y": 8
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
+          "instance_id": "TerraceRockFrontRight__shadow",
+          "owner_instance_id": "TerraceRockFrontRight",
+          "owner_asset_id": "E020",
+          "asset_id": "S013",
+          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+          "position": [
+            1142.0,
+            954.0
+          ],
+          "scale": 0.86,
+          "sprite_pixel_size": [
+            340,
+            248
+          ],
+          "settings": {
+            "type": "wall_base",
+            "opacity": 0.18,
+            "offset_x": 5,
+            "offset_y": 8
           },
           "render_layer": "shadows",
           "display_z": 20
@@ -4872,6 +5261,30 @@
           "display_z": 20
         },
         {
+          "instance_id": "AntleredFlowerShrine__shadow",
+          "owner_instance_id": "AntleredFlowerShrine",
+          "owner_asset_id": "O027",
+          "asset_id": "S017",
+          "texture_path": "res://map_factory/parts/shadows/S017_Directional_Sun_Cast_Shadow.png",
+          "position": [
+            877.0,
+            555.0
+          ],
+          "scale": 0.71,
+          "sprite_pixel_size": [
+            268,
+            276
+          ],
+          "settings": {
+            "type": "directional_sun",
+            "opacity": 0.36,
+            "offset_x": -25,
+            "offset_y": 24
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
           "instance_id": "LowerLeftVines__shadow",
           "owner_instance_id": "LowerLeftVines",
           "owner_asset_id": "V023",
@@ -5077,9 +5490,9 @@
     "counts": {
       "background": 5,
       "ground": 2,
-      "walls": 32,
-      "decorations": 34,
-      "shadows": 23
+      "walls": 36,
+      "decorations": 35,
+      "shadows": 28
     },
     "unique_asset_ids": [
       "A005",
@@ -5094,6 +5507,8 @@
       "E015",
       "E016",
       "E017",
+      "E019",
+      "E020",
       "F001",
       "F002",
       "F014",
@@ -5108,6 +5523,7 @@
       "O001",
       "O019",
       "O021",
+      "O027",
       "P001",
       "P005",
       "P007",
@@ -5121,8 +5537,10 @@
       "S010",
       "S011",
       "S013",
+      "S014",
       "S015",
       "S016",
+      "S017",
       "ST001",
       "ST002",
       "ST003",
@@ -5158,7 +5576,8 @@
       "W012",
       "W013",
       "W014",
-      "W015"
+      "W015",
+      "W019"
     ],
     "lighting_effects": [
       {

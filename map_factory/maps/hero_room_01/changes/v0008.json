@@ -1,0 +1,141 @@
+{
+  "mode": "patch",
+  "map_id": "hero_room_01",
+  "base_version": 7,
+  "analysis_status": "reviewed",
+  "note": "Install actual independent antlered shrine sprite, deeper marine stone cliff borders and new wall corners; keep room collision/shadow layering and historic revisions. Art pending final screenshot QA.",
+  "changes": [
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "O027",
+        "instance_id": "AntleredFlowerShrine",
+        "x": 877,
+        "y": 555,
+        "scale": 0.71,
+        "render_layer": "decorations",
+        "z_index": 1,
+        "shadow": {
+          "type": "directional_sun",
+          "opacity": 0.36,
+          "offset_x": -25,
+          "offset_y": 24
+        },
+        "collision": {
+          "enabled": true,
+          "size": [
+            80,
+            45
+          ],
+          "offset": [
+            0,
+            -22
+          ]
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "E019",
+        "instance_id": "TerraceRockFrontLeft",
+        "x": 397,
+        "y": 960,
+        "scale": 0.87,
+        "render_layer": "walls",
+        "z_index": 0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 5,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "E020",
+        "instance_id": "TerraceRockFrontRight",
+        "x": 1142,
+        "y": 954,
+        "scale": 0.86,
+        "render_layer": "walls",
+        "z_index": 0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 5,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W019",
+        "instance_id": "LeftDeepRuinCorner",
+        "x": 228,
+        "y": 713,
+        "scale": 0.72,
+        "render_layer": "walls",
+        "z_index": -1
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W019",
+        "instance_id": "RightDeepRuinCorner",
+        "x": 1326,
+        "y": 713,
+        "scale": 0.71,
+        "flip_h": true,
+        "render_layer": "walls",
+        "z_index": -1
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "Hero Room v8 includes new independent transparent shrine cliff and parapet parts. Verify real Godot placement and assess visual fidelity; source art is non-final composite generated from registered sprites, not claimed 100%."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "composition_reference",
+      "value": {
+        "image": "User-provided original Hero's Room reference from conversation (1448x1086)",
+        "reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+        "reference_dimensions": [
+          1448,
+          1086
+        ],
+        "revision": "8-new-scene-parts",
+        "qa": "pending visual comparison",
+        "not_in_repo": true,
+        "goals": [
+          "Non-rectangular floor silhouette",
+          "ocean behind top arch",
+          "remove background sprite rectangular seams",
+          "preserve already detailed sprites"
+        ],
+        "new_parts": [
+          "O027",
+          "E019",
+          "E020",
+          "W019",
+          "S017"
+        ],
+        "missing_piece_status": "first-pass-art-generated-awaiting-artist-review"
+      }
+    }
+  ]
+}

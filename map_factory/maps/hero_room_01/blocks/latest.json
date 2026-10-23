@@ -3,21 +3,21 @@
   "five_level_map": {
     "background": 5,
     "ground": 2,
-    "walls": 32,
-    "decorations": 34,
-    "shadows": 23
+    "walls": 36,
+    "decorations": 35,
+    "shadows": 28
   },
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 7,
+  "version": 8,
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "block_count": 73,
-  "unique_asset_count": 69,
+  "block_count": 78,
+  "unique_asset_count": 73,
   "reused_asset_ids": [
     "A005",
     "A007",
@@ -31,6 +31,8 @@
     "E015",
     "E016",
     "E017",
+    "E019",
+    "E020",
     "F001",
     "F002",
     "F014",
@@ -45,6 +47,7 @@
     "O001",
     "O019",
     "O021",
+    "O027",
     "P001",
     "P005",
     "P007",
@@ -87,7 +90,8 @@
     "W012",
     "W013",
     "W014",
-    "W015"
+    "W015",
+    "W019"
   ],
   "placed_blocks": [
     {
@@ -1512,6 +1516,136 @@
       }
     },
     {
+      "instance_id": "LeftDeepRuinCorner",
+      "asset_id": "W019",
+      "category": "walls",
+      "subtype": "ruin_wall_corner_deep",
+      "texture_path": "res://map_factory/parts/walls/W019_Deep_Limestone_Parapet_Corner.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        246,
+        238
+      ],
+      "anchor": [
+        123,
+        235
+      ],
+      "layer": "back_objects",
+      "position": [
+        228,
+        713
+      ],
+      "scale": 0.72,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": -1,
+      "collision": {
+        "enabled": true,
+        "size": [
+          126,
+          42
+        ],
+        "offset": [
+          0,
+          -28
+        ]
+      },
+      "shadow": {
+        "type": "wall_corner",
+        "opacity": 0.32,
+        "offset_x": 7,
+        "offset_y": 9
+      },
+      "tags": [
+        "stone",
+        "ruins",
+        "corner",
+        "ivy",
+        "flowers"
+      ],
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "E006",
+          "W008",
+          "W017",
+          "ST011",
+          "W012",
+          "V006",
+          "V012",
+          "V023"
+        ],
+        "sha256": "ed84eeea7a1969fb012eb82ceac54b29e36bc1aabd47bae2ad725e66f4443d3b",
+        "approved": false
+      }
+    },
+    {
+      "instance_id": "RightDeepRuinCorner",
+      "asset_id": "W019",
+      "category": "walls",
+      "subtype": "ruin_wall_corner_deep",
+      "texture_path": "res://map_factory/parts/walls/W019_Deep_Limestone_Parapet_Corner.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        246,
+        238
+      ],
+      "anchor": [
+        123,
+        235
+      ],
+      "layer": "back_objects",
+      "position": [
+        1326,
+        713
+      ],
+      "scale": 0.71,
+      "rotation_degrees": 0,
+      "flip_h": true,
+      "z_index": -1,
+      "collision": {
+        "enabled": true,
+        "size": [
+          126,
+          42
+        ],
+        "offset": [
+          0,
+          -28
+        ]
+      },
+      "shadow": {
+        "type": "wall_corner",
+        "opacity": 0.32,
+        "offset_x": 7,
+        "offset_y": 9
+      },
+      "tags": [
+        "stone",
+        "ruins",
+        "corner",
+        "ivy",
+        "flowers"
+      ],
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "E006",
+          "W008",
+          "W017",
+          "ST011",
+          "W012",
+          "V006",
+          "V012",
+          "V023"
+        ],
+        "sha256": "ed84eeea7a1969fb012eb82ceac54b29e36bc1aabd47bae2ad725e66f4443d3b",
+        "approved": false
+      }
+    },
+    {
       "instance_id": "HeroBed",
       "asset_id": "P001",
       "category": "furniture",
@@ -2392,6 +2526,70 @@
       "source": {
         "kind": "ai_sheet_crop",
         "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "AntleredFlowerShrine",
+      "asset_id": "O027",
+      "category": "objects",
+      "subtype": "floral_skull_relic",
+      "texture_path": "res://map_factory/parts/objects/O027_Antlered_Skull_Flower_Shrine.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        268,
+        276
+      ],
+      "anchor": [
+        134,
+        266
+      ],
+      "layer": "objects",
+      "position": [
+        877,
+        555
+      ],
+      "scale": 0.71,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 1,
+      "collision": {
+        "enabled": true,
+        "size": [
+          80,
+          45
+        ],
+        "offset": [
+          0,
+          -22
+        ]
+      },
+      "shadow": {
+        "type": "directional_sun",
+        "opacity": 0.36,
+        "offset_x": -25,
+        "offset_y": 24
+      },
+      "tags": [
+        "hero_room",
+        "relic",
+        "skull",
+        "antlers",
+        "ivy",
+        "white_flowers",
+        "signature_prop"
+      ],
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "V009",
+          "V008",
+          "V004",
+          "V005",
+          "V010"
+        ],
+        "sha256": "64b865abf6d43666b395352ad590473e2087490d612fb4999b947a9237eb5a42",
+        "approved": false
       }
     },
     {
@@ -3911,6 +4109,138 @@
       "source": {
         "kind": "ai_sheet_crop",
         "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "TerraceRockFrontLeft",
+      "asset_id": "E019",
+      "category": "environment",
+      "subtype": "cliff_wall_apron",
+      "texture_path": "res://map_factory/parts/environment/E019_Sea_Cliff_Ruin_Edge_Left.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        340,
+        248
+      ],
+      "anchor": [
+        170,
+        242
+      ],
+      "layer": "front_objects",
+      "position": [
+        397,
+        960
+      ],
+      "scale": 0.87,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          220,
+          44
+        ],
+        "offset": [
+          0,
+          -31
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.18,
+        "offset_x": 5,
+        "offset_y": 8
+      },
+      "tags": [
+        "limestone",
+        "sea_cliff",
+        "parapet",
+        "wildflowers"
+      ],
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "E007",
+          "E008",
+          "W017",
+          "ST010",
+          "W012",
+          "V023",
+          "V004",
+          "V012",
+          "V011",
+          "V013"
+        ],
+        "sha256": "35212db385e3a97241a1e69f3a72a248a19fc310b61a1e171e46dc05b49e4e81",
+        "approved": false
+      }
+    },
+    {
+      "instance_id": "TerraceRockFrontRight",
+      "asset_id": "E020",
+      "category": "environment",
+      "subtype": "cliff_wall_apron",
+      "texture_path": "res://map_factory/parts/environment/E020_Sea_Cliff_Ruin_Edge_Right.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        340,
+        248
+      ],
+      "anchor": [
+        170,
+        242
+      ],
+      "layer": "front_objects",
+      "position": [
+        1142,
+        954
+      ],
+      "scale": 0.86,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          220,
+          44
+        ],
+        "offset": [
+          0,
+          -31
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.18,
+        "offset_x": 5,
+        "offset_y": 8
+      },
+      "tags": [
+        "limestone",
+        "sea_cliff",
+        "parapet",
+        "wildflowers"
+      ],
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "E007",
+          "E008",
+          "W017",
+          "ST010",
+          "W012",
+          "V023",
+          "V004",
+          "V012",
+          "V011",
+          "V013"
+        ],
+        "sha256": "d7d161e65e8812782c5d4072b62acb70b0efcb918806fb915d648341af45b674",
+        "approved": false
       }
     }
   ],

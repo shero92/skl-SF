@@ -1,0 +1,10 @@
+{
+  "manifest": "map_factory/intake/pending/hero_room_new_environment_art_v0008.json",
+  "manifest_sha256": "421e43ded6d6d7efc6fd38e91e380172991d65d44a0035e5e3229cf1771e31d8",
+  "map_id": "hero_room_01",
+  "result_version": 8,
+  "imported_assets": [],
+  "staged_candidates": [],
+  "status": "processed",
+  "source_image": null
+}
