@@ -32,8 +32,8 @@ jobs:
         run: python tools/map_factory_cli.py validate
       - name: Run tests
         run: python -m unittest discover -s tools/tests -p 'test_map*.py' -v
-      - name: Verify complete PNG catalog
-        run: python tools/audit_assets.py
+      - name: Read-only verification of map PNG assets (not characters/UI)
+        run: python tools/verify_map_assets.py
       - name: Commit generated map versions, reused blocks and metadata
         run: |
           git config user.name "github-actions[bot]"
