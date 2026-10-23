@@ -63,3 +63,17 @@ Never modify map_factory/parts/characters, map_factory/parts/ui, any character/U
 ## Deployment entrypoint for every future user image
 
 Start with `python tools/prepare_map_reference.py --image <file> --map-id <id> --mode create --preset <template>` (or `--mode patch` / `clone`). Keep AI drafts under `map_factory/intake/drafts`. Only submit to `map_factory/intake/pending` after asset reuse, source reconstruction, placements and navigation were reviewed; set `analysis_status=reviewed`. Run the multi-map Godot smoke test, not just the original Hero Room startup. See `map_factory/DEPLOYED_FACTORY.md`.
+
+## Composition quality gate: visual arrangement is separate from asset quality
+
+A room may have beautiful sprites but still be wrong as a ROOM. After the factory assembles the map, assess the rendered image against the source at whole-scene scale. Mandatory checks:
+
+1. The platform/room **silhouette and walkable footprint** resemble the reference: correct width, depth, edge contours, entrances, stair openings, wall height and parapet continuity. A rectangular tile grid floating on water does not count as a good reconstruction of a broken-stone sanctuary.
+2. The **architectural hierarchy** is faithful: focal center, main arch, principal doors/columns, side ruins, front perimeter and skyline all occupy corresponding positions. Do not scatter impressive-looking objects at arbitrary locations.
+3. Furniture must be grouped in **functional zones** (bed and shelves on one side, desk and associated items on the other), not merely distributed aesthetically.
+4. Floor decals such as the compass must be **actually visible in a real Godot render**. Validate every tile_override applies in runtime, not only that the JSON entry exists. Normalize parsed JSON coordinate types before forming tile lookup keys.
+5. **No atlas captions or source-sheet border labels** are allowed in the final room. If one sprite contains text, stage its repair or omit that placement; do not discard the asset from the shared library.
+6. Compare source and rendered screenshots without characters or HUD, record layout differences and revise until the scene is recognizably the same environment. Do not mark the layout visually approved because the PNG files are sharp.
+7. Preserve old map versions so a layout improvement can be compared and reversed. Never overwrite old snapshots.
+
+The standard first map is Hero Room. Its corrected composition revisions are stored under map_factory/maps/hero_room_01/versions; see docs/HERO_ROOM_COMPOSITION_REVIEW.md.
