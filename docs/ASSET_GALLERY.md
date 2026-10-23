@@ -20,13 +20,13 @@ Draft art is not approved until a person checks native pixel detail, clean alpha
 
 ![decor sprites](previews/decor.png)
 
-**17 PNGs** | Actual files: [map_factory/parts/decor](../map_factory/parts/decor)
+**18 PNGs** | Actual files: [map_factory/parts/decor](../map_factory/parts/decor)
 
 ## Environment
 
 ![environment sprites](previews/environment.png)
 
-**8 PNGs** | Actual files: [map_factory/parts/environment](../map_factory/parts/environment)
+**18 PNGs** | Actual files: [map_factory/parts/environment](../map_factory/parts/environment)
 
 ## Floors
 
@@ -38,13 +38,13 @@ Draft art is not approved until a person checks native pixel detail, clean alpha
 
 ![furniture sprites](previews/furniture.png)
 
-**13 PNGs** | Actual files: [map_factory/parts/furniture](../map_factory/parts/furniture)
+**22 PNGs** | Actual files: [map_factory/parts/furniture](../map_factory/parts/furniture)
 
 ## Objects
 
 ![objects sprites](previews/objects.png)
 
-**19 PNGs** | Actual files: [map_factory/parts/objects](../map_factory/parts/objects)
+**26 PNGs** | Actual files: [map_factory/parts/objects](../map_factory/parts/objects)
 
 ## Shadows
 
@@ -56,7 +56,7 @@ Draft art is not approved until a person checks native pixel detail, clean alpha
 
 ![stairs sprites](previews/stairs.png)
 
-**10 PNGs** | Actual files: [map_factory/parts/stairs](../map_factory/parts/stairs)
+**14 PNGs** | Actual files: [map_factory/parts/stairs](../map_factory/parts/stairs)
 
 ## Ui
 

@@ -1,9 +1,8 @@
 {
   "summary": {
     "total": 218,
-    "existing": 187,
-    "needs_cleanup": 187,
-    "missing": 31
+    "existing": 218,
+    "needs_cleanup": 218
   },
   "by_category": {
     "floors": {
@@ -19,28 +18,28 @@
       "missing": 0
     },
     "stairs": {
-      "existing": 10,
-      "missing": 4
+      "existing": 14,
+      "missing": 0
     },
     "environment": {
-      "existing": 8,
-      "missing": 10
+      "existing": 18,
+      "missing": 0
     },
     "furniture": {
-      "existing": 13,
-      "missing": 9
+      "existing": 22,
+      "missing": 0
     },
     "objects": {
-      "existing": 19,
-      "missing": 7
+      "existing": 26,
+      "missing": 0
     },
     "vegetation": {
       "existing": 24,
       "missing": 0
     },
     "decor": {
-      "existing": 17,
-      "missing": 1
+      "existing": 18,
+      "missing": 0
     },
     "shadows": {
       "existing": 16,
@@ -1147,17 +1146,59 @@
     {
       "id": "ST001",
       "category": "stairs",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        192,
+        76
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        192,
+        71
+      ],
+      "bytes": 4277,
+      "sha256": "b91ea9cf665a09f3e7c14aacbd05e64238101cc5b67683ba674b97765ecf2882",
+      "warnings": []
     },
     {
       "id": "ST002",
       "category": "stairs",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        192,
+        76
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        192,
+        71
+      ],
+      "bytes": 4353,
+      "sha256": "7356ebbd8db02458ab3c5c3822a84a5c062fc310c35d2667cb43c264d180a87b",
+      "warnings": []
     },
     {
       "id": "ST003",
       "category": "stairs",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        192,
+        76
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        192,
+        71
+      ],
+      "bytes": 4459,
+      "sha256": "af8866321d6f16773ef5dbdf98be2e1677ce9cb313e3ebc6dec04f7893d3fa34",
+      "warnings": []
     },
     {
       "id": "ST004",
@@ -1200,7 +1241,21 @@
     {
       "id": "ST006",
       "category": "stairs",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        192,
+        76
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        192,
+        71
+      ],
+      "bytes": 2160,
+      "sha256": "5881cf9dfe5c2d9ba2e6f0987c47664657f2d9b5c640f7ee946f20c2d96e0ada",
+      "warnings": []
     },
     {
       "id": "ST007",
@@ -1509,52 +1564,192 @@
     {
       "id": "E009",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        320,
+        102
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        3,
+        320,
+        68
+      ],
+      "bytes": 8338,
+      "sha256": "4b4de665b23f82ac9d23596c553940aa77bb2a3c95f137e69751f78eb517a228",
+      "warnings": []
     },
     {
       "id": "E010",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "bytes": 60618,
+      "sha256": "4e26f8da7815e87e567fdf3f04c51ad5a2df8343cc0bbe916b69dc08a82de105",
+      "warnings": []
     },
     {
       "id": "E011",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "bytes": 2289,
+      "sha256": "5e4123b30849342e9cd107ea4ea2a2eb2b8126153417c429f67388837d4e6aaf",
+      "warnings": []
     },
     {
       "id": "E012",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        256,
+        256
+      ],
+      "bytes": 2260,
+      "sha256": "c17a4fab6d6c930bf548290f073b67858867d770c2e52d68055dc5752fe1f7b9",
+      "warnings": []
     },
     {
       "id": "E013",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "bytes": 2274,
+      "sha256": "43a241f7e09b712c95f9419d20ccaa1f3d31b61eb655382997b0caec55eac34d",
+      "warnings": []
     },
     {
       "id": "E014",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "bytes": 2261,
+      "sha256": "0e1cabf6931a5f5d7d3f8aa349c38cd6d00fdc2e1ea346ab56a8255b96a86dcc",
+      "warnings": []
     },
     {
       "id": "E015",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        320,
+        260
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        20,
+        40,
+        298,
+        233
+      ],
+      "bytes": 102409,
+      "sha256": "2bc47f9a8272fd7becfd20722720c92ae121afaf1601842c62940171a88c0941",
+      "warnings": []
     },
     {
       "id": "E016",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        465,
+        310
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        30,
+        85,
+        434,
+        283
+      ],
+      "bytes": 130397,
+      "sha256": "7eed03c26d2dc5607ee296b7742d0b187c8a8e80e6a0e570aa949583dae2b768",
+      "warnings": []
     },
     {
       "id": "E017",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        600,
+        370
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        76,
+        48,
+        543,
+        344
+      ],
+      "bytes": 244707,
+      "sha256": "6d12de8cc31bb3e9ced6e45f3e7540f8849296c0ce466b9ee8c3e232a01a90d5",
+      "warnings": []
     },
     {
       "id": "E018",
       "category": "environment",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        1024,
+        272
+      ],
+      "has_transparency": false,
+      "alpha_bbox": [
+        0,
+        0,
+        1024,
+        272
+      ],
+      "bytes": 9700,
+      "sha256": "0e68361959b20febf694350314d5b7b9ff9ec96eafe2408129eda152e4617066",
+      "warnings": []
     },
     {
       "id": "P001",
@@ -1578,17 +1773,59 @@
     {
       "id": "P002",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        186,
+        170
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        186,
+        170
+      ],
+      "bytes": 72038,
+      "sha256": "4090349e13314bdcaf2384aa954db98089dbf66bff9e9d2381ff4deaa496eb31",
+      "warnings": []
     },
     {
       "id": "P003",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        162,
+        88
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        162,
+        88
+      ],
+      "bytes": 30941,
+      "sha256": "e0a4c9073929c3db608b20d1ee45f0f365ce22a02810c123f46b2ba61fed0e71",
+      "warnings": []
     },
     {
       "id": "P004",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        296,
+        339
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        296,
+        339
+      ],
+      "bytes": 197610,
+      "sha256": "6dc57f2aa6edd8e031d95a5bb96716c4df2ce0b008af95254937dce46b2f2958",
+      "warnings": []
     },
     {
       "id": "P005",
@@ -1612,7 +1849,21 @@
     {
       "id": "P006",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        238,
+        304
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        237,
+        304
+      ],
+      "bytes": 178622,
+      "sha256": "a2ec45f3b6a5d61a805710f434bd31b5ad8c1bc047e84e36ef4b2fa067acf559",
+      "warnings": []
     },
     {
       "id": "P007",
@@ -1731,7 +1982,21 @@
     {
       "id": "P013",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        320,
+        186
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        28,
+        55,
+        308,
+        174
+      ],
+      "bytes": 4924,
+      "sha256": "43421b9a944f5196e9092b02eff8792a8262f376d0956de64a60ae0340f10721",
+      "warnings": []
     },
     {
       "id": "P014",
@@ -1774,7 +2039,21 @@
     {
       "id": "P016",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        296,
+        276
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        0,
+        295,
+        276
+      ],
+      "bytes": 105735,
+      "sha256": "1b5e00fca07078a4ae807282527e0b62f4cc5fc992e1dfe761522a06fe7baa9e",
+      "warnings": []
     },
     {
       "id": "P017",
@@ -1798,7 +2077,21 @@
     {
       "id": "P018",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        191,
+        230
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        10,
+        190,
+        182
+      ],
+      "bytes": 56732,
+      "sha256": "926c6a3e3d5d0a5dbfaa26e1d766077bd91aebb2d079123799766f10e359a063",
+      "warnings": []
     },
     {
       "id": "P019",
@@ -1841,12 +2134,40 @@
     {
       "id": "P021",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        126,
+        125
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        125,
+        125
+      ],
+      "bytes": 31404,
+      "sha256": "9d8c1742736594faebe880dcd4c23302d33fc4e2a84b390242b86138c708b012",
+      "warnings": []
     },
     {
       "id": "P022",
       "category": "furniture",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        244,
+        172
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        0,
+        1,
+        243,
+        172
+      ],
+      "bytes": 70165,
+      "sha256": "d1473cb05c3a9e529039ca1ecd6143becfdf7ebb20386780fa9a644d9c39c192",
+      "warnings": []
     },
     {
       "id": "O001",
@@ -1965,12 +2286,40 @@
     {
       "id": "O007",
       "category": "objects",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        104,
+        108
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        11,
+        10,
+        93,
+        103
+      ],
+      "bytes": 1813,
+      "sha256": "76ec58d1462dfc04b43bbb723df380cb4bf08c0482e09c3e6cb5898cffa4fb14",
+      "warnings": []
     },
     {
       "id": "O008",
       "category": "objects",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        104,
+        108
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        11,
+        10,
+        93,
+        103
+      ],
+      "bytes": 1885,
+      "sha256": "722d237a1baa4ee81b5c789f0cdda92aeccc6606a736bc56e9e12100f03fbd42",
+      "warnings": []
     },
     {
       "id": "O009",
@@ -1994,7 +2343,21 @@
     {
       "id": "O010",
       "category": "objects",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        148,
+        136
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        16,
+        15,
+        127,
+        133
+      ],
+      "bytes": 27756,
+      "sha256": "eb7acd0ee384bd2c80194c4799329359001e45715f46eccf150af18b6e9f4a66",
+      "warnings": []
     },
     {
       "id": "O011",
@@ -2018,7 +2381,21 @@
     {
       "id": "O012",
       "category": "objects",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        270,
+        165
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        30,
+        32,
+        225,
+        165
+      ],
+      "bytes": 54026,
+      "sha256": "fb049fac3d035daba638c9a08e2f12498ef648211d69ba80c8e67df54317331e",
+      "warnings": []
     },
     {
       "id": "O013",
@@ -2042,12 +2419,40 @@
     {
       "id": "O014",
       "category": "objects",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        147,
+        122
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        147,
+        121
+      ],
+      "bytes": 38946,
+      "sha256": "0e98bea51cc59ad620f1bec209364045683f1708cddcc5447a121cb4397a7d03",
+      "warnings": []
     },
     {
       "id": "O015",
       "category": "objects",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        230,
+        163
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        14,
+        37,
+        218,
+        145
+      ],
+      "bytes": 1954,
+      "sha256": "804efefa2c896cb8c1b2331c36b310201c2e73c5c5347d29713c90e68c16b2e6",
+      "warnings": []
     },
     {
       "id": "O016",
@@ -2128,7 +2533,21 @@
     {
       "id": "O020",
       "category": "objects",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        210,
+        210
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        18,
+        18,
+        193,
+        193
+      ],
+      "bytes": 4009,
+      "sha256": "9a91328d888dc9aa4410545041249d6e22eb4da0b874c7710391dc19e044e922",
+      "warnings": []
     },
     {
       "id": "O021",
@@ -2779,7 +3198,21 @@
     {
       "id": "D005",
       "category": "decor",
-      "status": "planned"
+      "status": "needs_cleanup",
+      "pixel_size": [
+        154,
+        260
+      ],
+      "has_transparency": true,
+      "alpha_bbox": [
+        1,
+        1,
+        153,
+        260
+      ],
+      "bytes": 72862,
+      "sha256": "32e22e8aa2dfa50893ee668332107cb0f032b02c35a538ec409eb1fd5c5a147d",
+      "warnings": []
     },
     {
       "id": "D006",

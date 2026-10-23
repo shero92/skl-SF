@@ -1,7 +1,7 @@
 {
   "version": 2,
   "asset_count": 218,
-  "extracted_count": 187,
+  "extracted_count": 218,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
   "assets": [
@@ -2601,14 +2601,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST001_Stone_Stair_Top.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        192,
+        76
       ],
       "origin": [
-        32,
-        64
+        96,
+        76
       ],
       "collision": {
         "enabled": false,
@@ -2634,7 +2634,13 @@
         "stair",
         "top"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "ST002",
@@ -2642,14 +2648,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST002_Stone_Stair_Middle.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        192,
+        76
       ],
       "origin": [
-        32,
-        64
+        96,
+        76
       ],
       "collision": {
         "enabled": false,
@@ -2675,7 +2681,13 @@
         "stair",
         "middle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "ST003",
@@ -2683,14 +2695,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST003_Stone_Stair_Bottom.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        192,
+        76
       ],
       "origin": [
-        32,
-        64
+        96,
+        76
       ],
       "collision": {
         "enabled": false,
@@ -2716,7 +2728,13 @@
         "stair",
         "bottom"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "ST004",
@@ -2818,14 +2836,14 @@
       "category": "stairs",
       "subtype": "stone",
       "texture_path": "res://map_factory/parts/stairs/ST006_Stone_Stair_Landing.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        192,
+        76
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -2851,7 +2869,13 @@
         "stair",
         "landing"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "ST007",
@@ -3597,14 +3621,14 @@
       "category": "environment",
       "subtype": "cliff",
       "texture_path": "res://map_factory/parts/environment/E009_Cliff_Ocean_Foam.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        320,
+        102
       ],
       "origin": [
-        32,
-        64
+        160,
+        102
       ],
       "collision": {
         "enabled": false,
@@ -3630,7 +3654,13 @@
         "ocean",
         "foam"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "E010",
@@ -3638,14 +3668,14 @@
       "category": "environment",
       "subtype": "ocean",
       "texture_path": "res://map_factory/parts/environment/E010_Ocean_Water_Base.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        256,
+        256
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -3669,9 +3699,19 @@
         "environment",
         "ocean",
         "water",
-        "base"
+        "base",
+        "seamless_256",
+        "wave_cycle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "Opaque reusable background artwork; verify visual quality with Hero Room, not a transparent object.",
+      "animation_frames": 1,
+      "frame_group": "ocean_base"
     },
     {
       "id": "E011",
@@ -3679,14 +3719,14 @@
       "category": "environment",
       "subtype": "ocean",
       "texture_path": "res://map_factory/parts/environment/E011_Ocean_Wave_Frame_01.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        256,
+        256
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -3711,9 +3751,19 @@
         "ocean",
         "wave",
         "frame",
-        "01"
+        "01",
+        "seamless_256",
+        "wave_cycle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "animation_frames": 1,
+      "frame_group": "ocean_wave_4"
     },
     {
       "id": "E012",
@@ -3721,14 +3771,14 @@
       "category": "environment",
       "subtype": "ocean",
       "texture_path": "res://map_factory/parts/environment/E012_Ocean_Wave_Frame_02.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        256,
+        256
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -3753,9 +3803,19 @@
         "ocean",
         "wave",
         "frame",
-        "02"
+        "02",
+        "seamless_256",
+        "wave_cycle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "animation_frames": 1,
+      "frame_group": "ocean_wave_4"
     },
     {
       "id": "E013",
@@ -3763,14 +3823,14 @@
       "category": "environment",
       "subtype": "ocean",
       "texture_path": "res://map_factory/parts/environment/E013_Ocean_Wave_Frame_03.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        256,
+        256
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -3795,9 +3855,19 @@
         "ocean",
         "wave",
         "frame",
-        "03"
+        "03",
+        "seamless_256",
+        "wave_cycle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "animation_frames": 1,
+      "frame_group": "ocean_wave_4"
     },
     {
       "id": "E014",
@@ -3805,14 +3875,14 @@
       "category": "environment",
       "subtype": "ocean",
       "texture_path": "res://map_factory/parts/environment/E014_Ocean_Wave_Frame_04.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        256,
+        256
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -3837,9 +3907,19 @@
         "ocean",
         "wave",
         "frame",
-        "04"
+        "04",
+        "seamless_256",
+        "wave_cycle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "animation_frames": 1,
+      "frame_group": "ocean_wave_4"
     },
     {
       "id": "E015",
@@ -3847,14 +3927,14 @@
       "category": "environment",
       "subtype": "ocean",
       "texture_path": "res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        320,
+        260
       ],
       "origin": [
-        32,
-        64
+        160,
+        260
       ],
       "collision": {
         "enabled": false,
@@ -3881,7 +3961,13 @@
         "island",
         "small"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "E016",
@@ -3889,14 +3975,14 @@
       "category": "environment",
       "subtype": "ocean",
       "texture_path": "res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        465,
+        310
       ],
       "origin": [
-        32,
-        64
+        232,
+        310
       ],
       "collision": {
         "enabled": false,
@@ -3923,7 +4009,13 @@
         "island",
         "large"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "E017",
@@ -3931,14 +4023,14 @@
       "category": "environment",
       "subtype": "distant",
       "texture_path": "res://map_factory/parts/environment/E017_Distant_Island_Arch.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        600,
+        370
       ],
       "origin": [
-        32,
-        64
+        300,
+        370
       ],
       "collision": {
         "enabled": false,
@@ -3964,7 +4056,13 @@
         "island",
         "arch"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "E018",
@@ -3972,14 +4070,14 @@
       "category": "environment",
       "subtype": "sky",
       "texture_path": "res://map_factory/parts/environment/E018_Sky_Cloud_Background.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        1024,
+        272
       ],
       "origin": [
-        32,
-        64
+        0,
+        0
       ],
       "collision": {
         "enabled": false,
@@ -4005,7 +4103,13 @@
         "cloud",
         "background"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "Opaque reusable background artwork; verify visual quality with Hero Room, not a transparent object."
     },
     {
       "id": "P001",
@@ -4058,14 +4162,14 @@
       "category": "furniture",
       "subtype": "bed",
       "texture_path": "res://map_factory/parts/furniture/P002_Bed_Blanket_Blue.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        186,
+        170
       ],
       "origin": [
-        32,
-        64
+        93,
+        170
       ],
       "collision": {
         "enabled": false,
@@ -4091,7 +4195,13 @@
         "blanket",
         "blue"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "P003",
@@ -4099,14 +4209,14 @@
       "category": "furniture",
       "subtype": "bed",
       "texture_path": "res://map_factory/parts/furniture/P003_Bed_Pillow.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        162,
+        88
       ],
       "origin": [
-        32,
-        64
+        81,
+        88
       ],
       "collision": {
         "enabled": false,
@@ -4131,7 +4241,13 @@
         "bed",
         "pillow"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "P004",
@@ -4139,14 +4255,14 @@
       "category": "furniture",
       "subtype": "bed",
       "texture_path": "res://map_factory/parts/furniture/P004_Bed_Frame.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        296,
+        339
       ],
       "origin": [
-        32,
-        64
+        148,
+        339
       ],
       "collision": {
         "enabled": false,
@@ -4171,7 +4287,13 @@
         "bed",
         "frame"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "P005",
@@ -4224,14 +4346,14 @@
       "category": "furniture",
       "subtype": "bedroom",
       "texture_path": "res://map_factory/parts/furniture/P006_Bedroom_Rug_Variant.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        238,
+        304
       ],
       "origin": [
-        32,
-        64
+        119,
+        304
       ],
       "collision": {
         "enabled": false,
@@ -4257,7 +4379,13 @@
         "rug",
         "variant"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "P007",
@@ -4537,39 +4665,45 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P013_Wooden_Bench.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        320,
+        186
       ],
       "origin": [
-        32,
-        64
+        160,
+        186
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          153,
+          26
         ],
         "offset": [
           0,
-          0
+          -11
         ]
       },
       "y_sort": true,
       "shadow": {
-        "type": "contact",
-        "opacity": 0.25,
+        "type": "contact_medium",
+        "opacity": 0.36,
         "offset_x": 4,
-        "offset_y": 2
+        "offset_y": -3
       },
       "tags": [
         "furniture",
         "wooden",
         "bench"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "P014",
@@ -4667,39 +4801,45 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P016_Wooden_Cabinet.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        296,
+        276
       ],
       "origin": [
-        32,
-        64
+        148,
+        276
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          142,
+          38
         ],
         "offset": [
           0,
-          0
+          -16
         ]
       },
       "y_sort": true,
       "shadow": {
-        "type": "contact",
-        "opacity": 0.25,
+        "type": "contact_medium",
+        "opacity": 0.36,
         "offset_x": 4,
-        "offset_y": 2
+        "offset_y": -3
       },
       "tags": [
         "furniture",
         "wooden",
         "cabinet"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "P017",
@@ -4753,32 +4893,32 @@
       "category": "furniture",
       "subtype": "treasure",
       "texture_path": "res://map_factory/parts/furniture/P018_Treasure_Chest_Open.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        191,
+        230
       ],
       "origin": [
-        32,
-        64
+        95,
+        230
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          91,
+          32
         ],
         "offset": [
           0,
-          0
+          -13
         ]
       },
       "y_sort": true,
       "shadow": {
-        "type": "contact",
-        "opacity": 0.25,
+        "type": "contact_medium",
+        "opacity": 0.36,
         "offset_x": 4,
-        "offset_y": 2
+        "offset_y": -3
       },
       "tags": [
         "furniture",
@@ -4786,7 +4926,13 @@
         "chest",
         "open"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "P019",
@@ -4886,39 +5032,45 @@
       "category": "furniture",
       "subtype": "wooden",
       "texture_path": "res://map_factory/parts/furniture/P021_Wooden_Box.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        126,
+        125
       ],
       "origin": [
-        32,
-        64
+        63,
+        125
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          60,
+          17
         ],
         "offset": [
           0,
-          0
+          -8
         ]
       },
       "y_sort": true,
       "shadow": {
-        "type": "contact",
-        "opacity": 0.25,
+        "type": "contact_medium",
+        "opacity": 0.36,
         "offset_x": 4,
-        "offset_y": 2
+        "offset_y": -3
       },
       "tags": [
         "furniture",
         "wooden",
         "box"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "P022",
@@ -4926,39 +5078,45 @@
       "category": "furniture",
       "subtype": "storage",
       "texture_path": "res://map_factory/parts/furniture/P022_Storage_Chest.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        244,
+        172
       ],
       "origin": [
-        32,
-        64
+        122,
+        172
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          117,
+          24
         ],
         "offset": [
           0,
-          0
+          -10
         ]
       },
       "y_sort": true,
       "shadow": {
-        "type": "contact",
-        "opacity": 0.25,
+        "type": "contact_medium",
+        "opacity": 0.36,
         "offset_x": 4,
-        "offset_y": 2
+        "offset_y": -3
       },
       "tags": [
         "furniture",
         "storage",
         "chest"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "O001",
@@ -5239,14 +5397,14 @@
       "category": "objects",
       "subtype": "apple",
       "texture_path": "res://map_factory/parts/objects/O007_Apple_Red.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        104,
+        108
       ],
       "origin": [
-        32,
-        64
+        52,
+        108
       ],
       "collision": {
         "enabled": false,
@@ -5271,7 +5429,13 @@
         "apple",
         "red"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "O008",
@@ -5279,14 +5443,14 @@
       "category": "objects",
       "subtype": "apple",
       "texture_path": "res://map_factory/parts/objects/O008_Apple_Green.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        104,
+        108
       ],
       "origin": [
-        32,
-        64
+        52,
+        108
       ],
       "collision": {
         "enabled": false,
@@ -5311,7 +5475,13 @@
         "apple",
         "green"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "O009",
@@ -5364,14 +5534,14 @@
       "category": "objects",
       "subtype": "map",
       "texture_path": "res://map_factory/parts/objects/O010_Map_Rolled.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        148,
+        136
       ],
       "origin": [
-        32,
-        64
+        74,
+        136
       ],
       "collision": {
         "enabled": false,
@@ -5396,7 +5566,13 @@
         "map",
         "rolled"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "O011",
@@ -5449,14 +5625,14 @@
       "category": "objects",
       "subtype": "scroll",
       "texture_path": "res://map_factory/parts/objects/O012_Scroll_Bundle.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        270,
+        165
       ],
       "origin": [
-        32,
-        64
+        135,
+        165
       ],
       "collision": {
         "enabled": false,
@@ -5481,7 +5657,13 @@
         "scroll",
         "bundle"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "O013",
@@ -5535,14 +5717,14 @@
       "category": "objects",
       "subtype": "book",
       "texture_path": "res://map_factory/parts/objects/O014_Book_Closed_Brown.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        147,
+        122
       ],
       "origin": [
-        32,
-        64
+        73,
+        122
       ],
       "collision": {
         "enabled": false,
@@ -5568,7 +5750,13 @@
         "closed",
         "brown"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "O015",
@@ -5576,14 +5764,14 @@
       "category": "objects",
       "subtype": "book",
       "texture_path": "res://map_factory/parts/objects/O015_Book_Open.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        230,
+        163
       ],
       "origin": [
-        32,
-        64
+        115,
+        163
       ],
       "collision": {
         "enabled": false,
@@ -5608,7 +5796,13 @@
         "book",
         "open"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "O016",
@@ -5796,14 +5990,14 @@
       "category": "objects",
       "subtype": "compass",
       "texture_path": "res://map_factory/parts/objects/O020_Compass_Decoration.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        210,
+        210
       ],
       "origin": [
-        32,
-        64
+        105,
+        210
       ],
       "collision": {
         "enabled": false,
@@ -5828,7 +6022,13 @@
         "compass",
         "decoration"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "O021",
@@ -7392,14 +7592,14 @@
       "category": "decor",
       "subtype": "banner",
       "texture_path": "res://map_factory/parts/decor/D005_Banner_Anchor.png",
-      "status": "planned",
+      "status": "needs_cleanup",
       "pixel_size": [
-        64,
-        64
+        154,
+        260
       ],
       "origin": [
-        32,
-        64
+        77,
+        260
       ],
       "collision": {
         "enabled": false,
@@ -7424,7 +7624,13 @@
         "banner",
         "anchor"
       ],
-      "reusable": true
+      "reusable": true,
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      },
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
     },
     {
       "id": "D006",
@@ -9915,5 +10121,6 @@
       },
       "qa_notes": "Procedural asset; inspect in Godot."
     }
-  ]
+  ],
+  "generated_png_count": 218
 }

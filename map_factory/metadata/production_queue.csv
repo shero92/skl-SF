@@ -55,12 +55,12 @@ A013,architecture,Stone Pillar Short,needs_cleanup,res://map_factory/parts/archi
 A014,architecture,Stone Pillar Tall,needs_cleanup,res://map_factory/parts/architecture/A014_Stone_Pillar_Tall.png
 A015,architecture,Stone Door Arched,needs_cleanup,res://map_factory/parts/architecture/A015_Stone_Door_Arched.png
 A016,architecture,Stone Door Decorated,needs_cleanup,res://map_factory/parts/architecture/A016_Stone_Door_Decorated.png
-ST001,stairs,Stone Stair Top,planned,res://map_factory/parts/stairs/ST001_Stone_Stair_Top.png
-ST002,stairs,Stone Stair Middle,planned,res://map_factory/parts/stairs/ST002_Stone_Stair_Middle.png
-ST003,stairs,Stone Stair Bottom,planned,res://map_factory/parts/stairs/ST003_Stone_Stair_Bottom.png
+ST001,stairs,Stone Stair Top,needs_cleanup,res://map_factory/parts/stairs/ST001_Stone_Stair_Top.png
+ST002,stairs,Stone Stair Middle,needs_cleanup,res://map_factory/parts/stairs/ST002_Stone_Stair_Middle.png
+ST003,stairs,Stone Stair Bottom,needs_cleanup,res://map_factory/parts/stairs/ST003_Stone_Stair_Bottom.png
 ST004,stairs,Stone Stair Left Edge,needs_cleanup,res://map_factory/parts/stairs/ST004_Stone_Stair_Left_Edge.png
 ST005,stairs,Stone Stair Right Edge,needs_cleanup,res://map_factory/parts/stairs/ST005_Stone_Stair_Right_Edge.png
-ST006,stairs,Stone Stair Landing,planned,res://map_factory/parts/stairs/ST006_Stone_Stair_Landing.png
+ST006,stairs,Stone Stair Landing,needs_cleanup,res://map_factory/parts/stairs/ST006_Stone_Stair_Landing.png
 ST007,stairs,Stair Entrance Left,needs_cleanup,res://map_factory/parts/stairs/ST007_Stair_Entrance_Left.png
 ST008,stairs,Stair Entrance Right,needs_cleanup,res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png
 ST009,stairs,Stone Railing Straight,needs_cleanup,res://map_factory/parts/stairs/ST009_Stone_Railing_Straight.png
@@ -77,58 +77,58 @@ E005,environment,Cliff Rock Small,needs_cleanup,res://map_factory/parts/environm
 E006,environment,Cliff Rock Group,needs_cleanup,res://map_factory/parts/environment/E006_Cliff_Rock_Group.png
 E007,environment,Cliff With Ivy,needs_cleanup,res://map_factory/parts/environment/E007_Cliff_With_Ivy.png
 E008,environment,Cliff With Flowers,needs_cleanup,res://map_factory/parts/environment/E008_Cliff_With_Flowers.png
-E009,environment,Cliff Ocean Foam,planned,res://map_factory/parts/environment/E009_Cliff_Ocean_Foam.png
-E010,environment,Ocean Water Base,planned,res://map_factory/parts/environment/E010_Ocean_Water_Base.png
-E011,environment,Ocean Wave Frame 01,planned,res://map_factory/parts/environment/E011_Ocean_Wave_Frame_01.png
-E012,environment,Ocean Wave Frame 02,planned,res://map_factory/parts/environment/E012_Ocean_Wave_Frame_02.png
-E013,environment,Ocean Wave Frame 03,planned,res://map_factory/parts/environment/E013_Ocean_Wave_Frame_03.png
-E014,environment,Ocean Wave Frame 04,planned,res://map_factory/parts/environment/E014_Ocean_Wave_Frame_04.png
-E015,environment,Ocean Rock Island Small,planned,res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png
-E016,environment,Ocean Rock Island Large,planned,res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png
-E017,environment,Distant Island Arch,planned,res://map_factory/parts/environment/E017_Distant_Island_Arch.png
-E018,environment,Sky Cloud Background,planned,res://map_factory/parts/environment/E018_Sky_Cloud_Background.png
+E009,environment,Cliff Ocean Foam,needs_cleanup,res://map_factory/parts/environment/E009_Cliff_Ocean_Foam.png
+E010,environment,Ocean Water Base,needs_cleanup,res://map_factory/parts/environment/E010_Ocean_Water_Base.png
+E011,environment,Ocean Wave Frame 01,needs_cleanup,res://map_factory/parts/environment/E011_Ocean_Wave_Frame_01.png
+E012,environment,Ocean Wave Frame 02,needs_cleanup,res://map_factory/parts/environment/E012_Ocean_Wave_Frame_02.png
+E013,environment,Ocean Wave Frame 03,needs_cleanup,res://map_factory/parts/environment/E013_Ocean_Wave_Frame_03.png
+E014,environment,Ocean Wave Frame 04,needs_cleanup,res://map_factory/parts/environment/E014_Ocean_Wave_Frame_04.png
+E015,environment,Ocean Rock Island Small,needs_cleanup,res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png
+E016,environment,Ocean Rock Island Large,needs_cleanup,res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png
+E017,environment,Distant Island Arch,needs_cleanup,res://map_factory/parts/environment/E017_Distant_Island_Arch.png
+E018,environment,Sky Cloud Background,needs_cleanup,res://map_factory/parts/environment/E018_Sky_Cloud_Background.png
 P001,furniture,Hero Bed,needs_cleanup,res://map_factory/parts/furniture/P001_Hero_Bed.png
-P002,furniture,Bed Blanket Blue,planned,res://map_factory/parts/furniture/P002_Bed_Blanket_Blue.png
-P003,furniture,Bed Pillow,planned,res://map_factory/parts/furniture/P003_Bed_Pillow.png
-P004,furniture,Bed Frame,planned,res://map_factory/parts/furniture/P004_Bed_Frame.png
+P002,furniture,Bed Blanket Blue,needs_cleanup,res://map_factory/parts/furniture/P002_Bed_Blanket_Blue.png
+P003,furniture,Bed Pillow,needs_cleanup,res://map_factory/parts/furniture/P003_Bed_Pillow.png
+P004,furniture,Bed Frame,needs_cleanup,res://map_factory/parts/furniture/P004_Bed_Frame.png
 P005,furniture,Bedroom Rug,needs_cleanup,res://map_factory/parts/furniture/P005_Bedroom_Rug.png
-P006,furniture,Bedroom Rug Variant,planned,res://map_factory/parts/furniture/P006_Bedroom_Rug_Variant.png
+P006,furniture,Bedroom Rug Variant,needs_cleanup,res://map_factory/parts/furniture/P006_Bedroom_Rug_Variant.png
 P007,furniture,Bedside Table,needs_cleanup,res://map_factory/parts/furniture/P007_Bedside_Table.png
 P008,furniture,Wooden Desk,needs_cleanup,res://map_factory/parts/furniture/P008_Wooden_Desk.png
 P009,furniture,Wooden Table Large,needs_cleanup,res://map_factory/parts/furniture/P009_Wooden_Table_Large.png
 P010,furniture,Wooden Table Small,needs_cleanup,res://map_factory/parts/furniture/P010_Wooden_Table_Small.png
 P011,furniture,Wooden Chair,needs_cleanup,res://map_factory/parts/furniture/P011_Wooden_Chair.png
 P012,furniture,Wooden Stool,needs_cleanup,res://map_factory/parts/furniture/P012_Wooden_Stool.png
-P013,furniture,Wooden Bench,planned,res://map_factory/parts/furniture/P013_Wooden_Bench.png
+P013,furniture,Wooden Bench,needs_cleanup,res://map_factory/parts/furniture/P013_Wooden_Bench.png
 P014,furniture,Bookshelf Large,needs_cleanup,res://map_factory/parts/furniture/P014_Bookshelf_Large.png
 P015,furniture,Bookshelf Small,needs_cleanup,res://map_factory/parts/furniture/P015_Bookshelf_Small.png
-P016,furniture,Wooden Cabinet,planned,res://map_factory/parts/furniture/P016_Wooden_Cabinet.png
+P016,furniture,Wooden Cabinet,needs_cleanup,res://map_factory/parts/furniture/P016_Wooden_Cabinet.png
 P017,furniture,Treasure Chest Closed,needs_cleanup,res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png
-P018,furniture,Treasure Chest Open,planned,res://map_factory/parts/furniture/P018_Treasure_Chest_Open.png
+P018,furniture,Treasure Chest Open,needs_cleanup,res://map_factory/parts/furniture/P018_Treasure_Chest_Open.png
 P019,furniture,Wooden Crate Large,needs_cleanup,res://map_factory/parts/furniture/P019_Wooden_Crate_Large.png
 P020,furniture,Wooden Crate Small,needs_cleanup,res://map_factory/parts/furniture/P020_Wooden_Crate_Small.png
-P021,furniture,Wooden Box,planned,res://map_factory/parts/furniture/P021_Wooden_Box.png
-P022,furniture,Storage Chest,planned,res://map_factory/parts/furniture/P022_Storage_Chest.png
+P021,furniture,Wooden Box,needs_cleanup,res://map_factory/parts/furniture/P021_Wooden_Box.png
+P022,furniture,Storage Chest,needs_cleanup,res://map_factory/parts/furniture/P022_Storage_Chest.png
 O001,objects,Blue Vase Large,needs_cleanup,res://map_factory/parts/objects/O001_Blue_Vase_Large.png
 O002,objects,Blue Vase Medium,needs_cleanup,res://map_factory/parts/objects/O002_Blue_Vase_Medium.png
 O003,objects,Blue Vase Small,needs_cleanup,res://map_factory/parts/objects/O003_Blue_Vase_Small.png
 O004,objects,Ceramic Jug,needs_cleanup,res://map_factory/parts/objects/O004_Ceramic_Jug.png
 O005,objects,Ceramic Bottle,needs_cleanup,res://map_factory/parts/objects/O005_Ceramic_Bottle.png
 O006,objects,Fruit Bowl,needs_cleanup,res://map_factory/parts/objects/O006_Fruit_Bowl.png
-O007,objects,Apple Red,planned,res://map_factory/parts/objects/O007_Apple_Red.png
-O008,objects,Apple Green,planned,res://map_factory/parts/objects/O008_Apple_Green.png
+O007,objects,Apple Red,needs_cleanup,res://map_factory/parts/objects/O007_Apple_Red.png
+O008,objects,Apple Green,needs_cleanup,res://map_factory/parts/objects/O008_Apple_Green.png
 O009,objects,Map Open,needs_cleanup,res://map_factory/parts/objects/O009_Map_Open.png
-O010,objects,Map Rolled,planned,res://map_factory/parts/objects/O010_Map_Rolled.png
+O010,objects,Map Rolled,needs_cleanup,res://map_factory/parts/objects/O010_Map_Rolled.png
 O011,objects,Scroll Single,needs_cleanup,res://map_factory/parts/objects/O011_Scroll_Single.png
-O012,objects,Scroll Bundle,planned,res://map_factory/parts/objects/O012_Scroll_Bundle.png
+O012,objects,Scroll Bundle,needs_cleanup,res://map_factory/parts/objects/O012_Scroll_Bundle.png
 O013,objects,Book Closed Blue,needs_cleanup,res://map_factory/parts/objects/O013_Book_Closed_Blue.png
-O014,objects,Book Closed Brown,planned,res://map_factory/parts/objects/O014_Book_Closed_Brown.png
-O015,objects,Book Open,planned,res://map_factory/parts/objects/O015_Book_Open.png
+O014,objects,Book Closed Brown,needs_cleanup,res://map_factory/parts/objects/O014_Book_Closed_Brown.png
+O015,objects,Book Open,needs_cleanup,res://map_factory/parts/objects/O015_Book_Open.png
 O016,objects,Book Stack,needs_cleanup,res://map_factory/parts/objects/O016_Book_Stack.png
 O017,objects,Candle Single,needs_cleanup,res://map_factory/parts/objects/O017_Candle_Single.png
 O018,objects,Candle Group,needs_cleanup,res://map_factory/parts/objects/O018_Candle_Group.png
 O019,objects,Astrolabe Gold,needs_cleanup,res://map_factory/parts/objects/O019_Astrolabe_Gold.png
-O020,objects,Compass Decoration,planned,res://map_factory/parts/objects/O020_Compass_Decoration.png
+O020,objects,Compass Decoration,needs_cleanup,res://map_factory/parts/objects/O020_Compass_Decoration.png
 O021,objects,Seashell Large,needs_cleanup,res://map_factory/parts/objects/O021_Seashell_Large.png
 O022,objects,Seashell Small,needs_cleanup,res://map_factory/parts/objects/O022_Seashell_Small.png
 O023,objects,Small Wooden Box,needs_cleanup,res://map_factory/parts/objects/O023_Small_Wooden_Box.png
@@ -163,7 +163,7 @@ D001,decor,Banner Blue Long,needs_cleanup,res://map_factory/parts/decor/D001_Ban
 D002,decor,Banner Blue Medium,needs_cleanup,res://map_factory/parts/decor/D002_Banner_Blue_Medium.png
 D003,decor,Banner Blue Short,needs_cleanup,res://map_factory/parts/decor/D003_Banner_Blue_Short.png
 D004,decor,Banner Compass,needs_cleanup,res://map_factory/parts/decor/D004_Banner_Compass.png
-D005,decor,Banner Anchor,planned,res://map_factory/parts/decor/D005_Banner_Anchor.png
+D005,decor,Banner Anchor,needs_cleanup,res://map_factory/parts/decor/D005_Banner_Anchor.png
 D006,decor,Banner Wall Mount,needs_cleanup,res://map_factory/parts/decor/D006_Banner_Wall_Mount.png
 D007,decor,Lantern Hanging,needs_cleanup,res://map_factory/parts/decor/D007_Lantern_Hanging.png
 D008,decor,Lantern Wall Left,needs_cleanup,res://map_factory/parts/decor/D008_Lantern_Wall_Left.png
