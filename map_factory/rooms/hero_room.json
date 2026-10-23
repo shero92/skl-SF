@@ -25,14 +25,49 @@
   ],
   "tile_overrides": [
     {
-      "x": 4,
+      "x": 7,
       "y": 5,
-      "id": "F006"
+      "id": "F019"
     },
     {
-      "x": 12,
+      "x": 8,
       "y": 5,
-      "id": "F010"
+      "id": "F015"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "id": "F020"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "id": "F018"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "id": "F014"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "id": "F017"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "id": "F021"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "id": "F016"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "id": "F022"
     }
   ],
   "background_objects": [
@@ -62,13 +97,6 @@
     }
   ],
   "ground_overlays": [
-    {
-      "id": "F014",
-      "instance_id": "MainCompass",
-      "x": 675,
-      "y": 590,
-      "scale": 0.42
-    },
     {
       "id": "P005",
       "instance_id": "BedRug",
@@ -494,5 +522,22 @@
     "status": "pending_visual_approval",
     "asset_count": 218,
     "description": "Atlas debris cleanup completed for selected sprites; detailed reference-style art is still in progress."
+  },
+  "floor_art": {
+    "design": "3x3 compass mosaic",
+    "tile_size": 64,
+    "ids": [
+      "F019",
+      "F015",
+      "F020",
+      "F018",
+      "F014",
+      "F017",
+      "F021",
+      "F016",
+      "F022"
+    ],
+    "qa": "needs_cleanup",
+    "reference": "docs/FLOOR_REPAINT_QA.md"
   }
 }
