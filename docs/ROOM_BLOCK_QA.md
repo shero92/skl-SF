@@ -5,7 +5,7 @@ This report only certifies file/metadata integrity. It **does not certify that a
 | Map | Revision | Background | Ground detail | Walls | Decorations | Independent shadows | Mounted |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | courtyard_demo_01 | v0002 | 0 | 0 | 3 | 3 | 1 | 0 |
-| hero_room_01 | v0004 | 7 | 2 | 32 | 34 | 23 | 14 |
+| hero_room_01 | v0007 | 5 | 2 | 32 | 34 | 23 | 14 |
 
 - Registered catalog images: **218**.
 - Verified environmental and shadow PNG files: **194 / 194**.

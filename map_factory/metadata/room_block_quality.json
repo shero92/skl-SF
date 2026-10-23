@@ -19,20 +19,20 @@
     },
     {
       "map_id": "hero_room_01",
-      "version": 4,
+      "version": 7,
       "counts": {
-        "background": 7,
+        "background": 5,
         "ground": 2,
         "walls": 32,
         "decorations": 34,
         "shadows": 23
       },
-      "placed_instances": 75,
+      "placed_instances": 73,
       "mounted_details": 14,
       "owned_shadows": 23,
-      "unique_asset_ids": 82,
+      "unique_asset_ids": 77,
       "visual_qa_status": "needs_review",
-      "reference_sha256": "f659a18b03f844e049b3b20319f0418fd2d5f20e573f8238d05c87b932a9c616"
+      "reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7"
     }
   ],
   "verified_environment_png_files": 194,
