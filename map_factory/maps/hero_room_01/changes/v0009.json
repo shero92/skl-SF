@@ -1,0 +1,250 @@
+{
+  "mode": "patch",
+  "map_id": "hero_room_01",
+  "base_version": 8,
+  "analysis_status": "reviewed",
+  "note": "Replace first-pass composite sprites with clearer ivory skull shrine and cleaned ocean-edge rock wall PNGs; retain prior full versions; add movement obstacle for physical shrine.",
+  "changes": [
+    {
+      "op": "update_block",
+      "instance_id": "AntleredFlowerShrine",
+      "set": {
+        "id": "O028",
+        "scale": 0.73,
+        "x": 892,
+        "y": 543,
+        "shadow": {
+          "type": "directional_sun",
+          "opacity": 0.34,
+          "offset_x": -19,
+          "offset_y": 18
+        }
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "TerraceRockFrontLeft",
+      "set": {
+        "id": "E021",
+        "x": 390,
+        "y": 945,
+        "scale": 0.86
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "TerraceRockFrontRight",
+      "set": {
+        "id": "E022",
+        "x": 1150,
+        "y": 945,
+        "scale": 0.86
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "LeftDeepRuinCorner",
+      "set": {
+        "id": "W020",
+        "x": 237,
+        "y": 697,
+        "scale": 0.73
+      }
+    },
+    {
+      "op": "update_block",
+      "instance_id": "RightDeepRuinCorner",
+      "set": {
+        "id": "W020",
+        "x": 1316,
+        "y": 698,
+        "scale": 0.73
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "navigation",
+      "value": {
+        "schema_version": 1,
+        "origin": [
+          226,
+          225
+        ],
+        "cell_size": 64,
+        "grid_size": [
+          17,
+          10
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "inner_terrace_safe_walk",
+            "rect": [
+              1,
+              2,
+              15,
+              7
+            ],
+            "surface": "stone",
+            "allow": [
+              "walk",
+              "fly"
+            ],
+            "requires": {
+              "walk": [],
+              "fly": []
+            },
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "stairs_to_ocean_entrance",
+            "rect": [
+              7,
+              9,
+              3,
+              1
+            ],
+            "surface": "stairs",
+            "allow": [
+              "walk",
+              "fly"
+            ],
+            "requires": {
+              "walk": [],
+              "fly": []
+            },
+            "floor_height": -24,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [
+          {
+            "instance_id": "HeroBed",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 75
+          },
+          {
+            "instance_id": "WritingTable",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 80
+          },
+          {
+            "instance_id": "FrontWallLeftWide",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 78
+          },
+          {
+            "instance_id": "LeftPerimeterWallMid",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 110
+          },
+          {
+            "instance_id": "RightPerimeterWallMid",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 110
+          },
+          {
+            "instance_id": "AntleredFlowerShrine",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 182
+          }
+        ],
+        "links": [
+          {
+            "id": "coastal_stair_exit",
+            "from": [
+              8,
+              8
+            ],
+            "to": [
+              8,
+              9
+            ],
+            "modes": [
+              "walk",
+              "fly"
+            ],
+            "requires": []
+          }
+        ],
+        "note": "Navigation provisional, unreviewed and blocked by default for all nonfloor areas. No changes to characters."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "v9 now has a clearly painted ivory skull and stone-edge composites with cyan water-strip pixels removed. Scene geometry, perspective, lighting and seams still need in-Godot visual inspection."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "composition_reference",
+      "value": {
+        "image": "User-provided original Hero's Room reference from conversation (1448x1086)",
+        "reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+        "reference_dimensions": [
+          1448,
+          1086
+        ],
+        "revision": "9-refined-bone-and-clean-edges",
+        "qa": "pending visual comparison",
+        "not_in_repo": true,
+        "goals": [
+          "Non-rectangular floor silhouette",
+          "ocean behind top arch",
+          "remove background sprite rectangular seams",
+          "preserve already detailed sprites"
+        ],
+        "new_parts": [
+          "O027",
+          "E019",
+          "E020",
+          "W019",
+          "S017"
+        ],
+        "missing_piece_status": "first-pass-art-generated-awaiting-artist-review",
+        "new_parts_used": [
+          "O028",
+          "E021",
+          "E022",
+          "W020",
+          "S017"
+        ],
+        "fidelity": "needs_review"
+      }
+    }
+  ]
+}

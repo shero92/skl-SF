@@ -1,0 +1,10 @@
+{
+  "manifest": "map_factory/intake/pending/hero_room_refined_relic_v0009.json",
+  "manifest_sha256": "e36587397c5268bc782794ef367b7bd8ca9d4d3149bb58146f31ceb2d3f65342",
+  "map_id": "hero_room_01",
+  "result_version": 9,
+  "imported_assets": [],
+  "staged_candidates": [],
+  "status": "processed",
+  "source_image": null
+}
