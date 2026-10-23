@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "maps": {
+    "hero_room_01": {
+      "map_id": "hero_room_01",
+      "version": 1,
+      "latest": "map_factory/maps/hero_room_01/latest.json",
+      "immutable_snapshot": "map_factory/maps/hero_room_01/versions/v0001.json",
+      "snapshot_sha256": "202c1c4a850d3b9953857d3ea931739cb0339cb940d525b51736b5aa607c86ba",
+      "updated_at": "2026-10-23T12:06:52+00:00",
+      "parent_map": null
+    }
+  }
+}

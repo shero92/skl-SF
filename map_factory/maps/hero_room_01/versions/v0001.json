@@ -1,0 +1,508 @@
+{
+  "description": "Seaside sanctuary starter composition. Existing atlas-cut art is unreviewed; layout is reusable.",
+  "canvas_size": [
+    1536,
+    1024
+  ],
+  "background_color": "#087ccc",
+  "tile_size": 64,
+  "size": [
+    17,
+    10
+  ],
+  "ground_offset": [
+    224,
+    226
+  ],
+  "floor_ids": [
+    "F001",
+    "F001",
+    "F002",
+    "F001",
+    "F001",
+    "F003"
+  ],
+  "tile_overrides": [
+    {
+      "x": 7,
+      "y": 5,
+      "id": "F019"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "id": "F015"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "id": "F020"
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "id": "F018"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "id": "F014"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "id": "F017"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "id": "F021"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "id": "F016"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "id": "F022"
+    }
+  ],
+  "background_objects": [
+    {
+      "id": "E004",
+      "x": 75,
+      "y": 310,
+      "scale": 1.2,
+      "instance_id": "E004_background_objects_001"
+    },
+    {
+      "id": "E001",
+      "x": 1460,
+      "y": 320,
+      "scale": 1.3,
+      "instance_id": "E001_background_objects_002"
+    },
+    {
+      "id": "E005",
+      "x": 1395,
+      "y": 160,
+      "scale": 0.9,
+      "instance_id": "E005_background_objects_003"
+    },
+    {
+      "id": "E002",
+      "x": 80,
+      "y": 125,
+      "scale": 0.8,
+      "instance_id": "E002_background_objects_004"
+    }
+  ],
+  "ground_overlays": [
+    {
+      "id": "P005",
+      "instance_id": "BedRug",
+      "x": 404,
+      "y": 588,
+      "scale": 0.65
+    },
+    {
+      "id": "P005",
+      "instance_id": "DeskRug",
+      "x": 1127,
+      "y": 646,
+      "scale": 0.69
+    }
+  ],
+  "back_objects": [
+    {
+      "id": "A005",
+      "instance_id": "ArchMain",
+      "x": 776,
+      "y": 350,
+      "scale": 1.05
+    },
+    {
+      "id": "W001",
+      "x": 260,
+      "y": 393,
+      "scale": 0.95,
+      "instance_id": "W001_back_objects_002"
+    },
+    {
+      "id": "W003",
+      "x": 450,
+      "y": 352,
+      "scale": 0.9,
+      "instance_id": "W003_back_objects_003"
+    },
+    {
+      "id": "W002",
+      "x": 1160,
+      "y": 352,
+      "scale": 0.9,
+      "instance_id": "W002_back_objects_004"
+    },
+    {
+      "id": "W014",
+      "x": 1335,
+      "y": 420,
+      "scale": 0.95,
+      "instance_id": "W014_back_objects_005"
+    },
+    {
+      "id": "W015",
+      "x": 222,
+      "y": 530,
+      "scale": 0.88,
+      "instance_id": "W015_back_objects_006"
+    },
+    {
+      "id": "W015",
+      "x": 1332,
+      "y": 520,
+      "scale": 0.88,
+      "instance_id": "W015_back_objects_007"
+    },
+    {
+      "id": "A007",
+      "x": 617,
+      "y": 365,
+      "scale": 0.84,
+      "instance_id": "A007_back_objects_008"
+    },
+    {
+      "id": "A012",
+      "x": 945,
+      "y": 355,
+      "scale": 0.84,
+      "instance_id": "A012_back_objects_009"
+    },
+    {
+      "id": "V001",
+      "x": 590,
+      "y": 175,
+      "scale": 0.64,
+      "instance_id": "V001_back_objects_010"
+    },
+    {
+      "id": "V007",
+      "x": 995,
+      "y": 241,
+      "scale": 0.64,
+      "instance_id": "V007_back_objects_011"
+    },
+    {
+      "id": "D007",
+      "x": 331,
+      "y": 406,
+      "scale": 0.65,
+      "instance_id": "D007_back_objects_012"
+    },
+    {
+      "id": "D007",
+      "x": 1236,
+      "y": 392,
+      "scale": 0.65,
+      "instance_id": "D007_back_objects_013"
+    }
+  ],
+  "objects": [
+    {
+      "id": "P001",
+      "instance_id": "HeroBed",
+      "x": 399,
+      "y": 566,
+      "scale": 0.76,
+      "collision": {
+        "enabled": true,
+        "size": [
+          184,
+          58
+        ],
+        "offset": [
+          0,
+          -31
+        ]
+      },
+      "shadow": {
+        "type": "bed",
+        "offset_x": 0,
+        "offset_y": -5,
+        "opacity": 0.5
+      }
+    },
+    {
+      "id": "P007",
+      "instance_id": "SideTable",
+      "x": 266,
+      "y": 540,
+      "scale": 0.56,
+      "collision": {
+        "enabled": true,
+        "size": [
+          64,
+          36
+        ],
+        "offset": [
+          0,
+          -20
+        ]
+      }
+    },
+    {
+      "id": "P014",
+      "instance_id": "LeftBookshelf",
+      "x": 423,
+      "y": 401,
+      "scale": 0.65,
+      "collision": {
+        "enabled": true,
+        "size": [
+          138,
+          46
+        ],
+        "offset": [
+          0,
+          -23
+        ]
+      }
+    },
+    {
+      "id": "P015",
+      "instance_id": "RightBookshelf",
+      "x": 1135,
+      "y": 424,
+      "scale": 0.64,
+      "collision": {
+        "enabled": true,
+        "size": [
+          118,
+          42
+        ],
+        "offset": [
+          0,
+          -22
+        ]
+      }
+    },
+    {
+      "id": "P008",
+      "instance_id": "WritingTable",
+      "x": 1125,
+      "y": 614,
+      "scale": 0.7,
+      "collision": {
+        "enabled": true,
+        "size": [
+          205,
+          57
+        ],
+        "offset": [
+          0,
+          -26
+        ]
+      },
+      "shadow": {
+        "type": "table",
+        "offset_x": 8,
+        "offset_y": 0,
+        "opacity": 0.35
+      }
+    },
+    {
+      "id": "O001",
+      "instance_id": "VaseByArch",
+      "x": 1025,
+      "y": 477,
+      "scale": 0.48
+    },
+    {
+      "id": "O019",
+      "instance_id": "Astrolabe",
+      "x": 1258,
+      "y": 485,
+      "scale": 0.55
+    },
+    {
+      "id": "O021",
+      "instance_id": "Shell",
+      "x": 1335,
+      "y": 755,
+      "scale": 0.5
+    },
+    {
+      "id": "P017",
+      "instance_id": "TreasureChest",
+      "x": 1230,
+      "y": 783,
+      "scale": 0.7,
+      "collision": {
+        "enabled": true,
+        "size": [
+          74,
+          40
+        ],
+        "offset": [
+          0,
+          -15
+        ]
+      }
+    },
+    {
+      "id": "V017",
+      "x": 1360,
+      "y": 590,
+      "scale": 0.7,
+      "instance_id": "V017_objects_010"
+    },
+    {
+      "id": "V013",
+      "x": 340,
+      "y": 824,
+      "scale": 0.63,
+      "instance_id": "V013_objects_011"
+    },
+    {
+      "id": "V020",
+      "x": 1190,
+      "y": 863,
+      "scale": 0.55,
+      "instance_id": "V020_objects_012"
+    },
+    {
+      "id": "ST011",
+      "instance_id": "EntrancePillarLeft",
+      "x": 645,
+      "y": 902,
+      "scale": 0.75
+    },
+    {
+      "id": "ST012",
+      "instance_id": "EntrancePillarRight",
+      "x": 875,
+      "y": 902,
+      "scale": 0.75
+    },
+    {
+      "id": "ST013",
+      "instance_id": "FrontParapetLeft",
+      "x": 386,
+      "y": 943,
+      "scale": 0.75
+    },
+    {
+      "id": "ST014",
+      "instance_id": "FrontParapetRight",
+      "x": 1142,
+      "y": 943,
+      "scale": 0.8
+    },
+    {
+      "id": "V004",
+      "x": 320,
+      "y": 850,
+      "scale": 0.8,
+      "instance_id": "V004_objects_017"
+    },
+    {
+      "id": "V021",
+      "x": 1060,
+      "y": 875,
+      "scale": 0.62,
+      "instance_id": "V021_objects_018"
+    }
+  ],
+  "front_objects": [
+    {
+      "id": "V023",
+      "instance_id": "LowerLeftVines",
+      "x": 300,
+      "y": 940,
+      "scale": 0.83,
+      "z_index": 2
+    },
+    {
+      "id": "V024",
+      "instance_id": "LowerRightVines",
+      "x": 1210,
+      "y": 948,
+      "scale": 0.75,
+      "z_index": 2
+    }
+  ],
+  "effects": [
+    {
+      "instance_id": "LanternLeftGlow",
+      "kind": "lantern",
+      "x": 331,
+      "y": 323,
+      "scale": 0.52,
+      "glow_alpha": 0.46
+    },
+    {
+      "instance_id": "LanternRightGlow",
+      "kind": "lantern",
+      "x": 1236,
+      "y": 315,
+      "scale": 0.52,
+      "glow_alpha": 0.46
+    },
+    {
+      "instance_id": "TableCandleGlow",
+      "kind": "candle",
+      "x": 1164,
+      "y": 600,
+      "scale": 0.42,
+      "glow_alpha": 0.36
+    }
+  ],
+  "ocean": {
+    "tile_size": 512,
+    "fps": 4,
+    "sky_height": 226,
+    "notes": "E010 is a detailed native 512px seamless water tile. E011-E014 are four independent full-resolution RGBA wave overlays. Art pending QA."
+  },
+  "asset_quality_review": {
+    "source": "docs/REFERENCE_ART_DIRECTION.md",
+    "status": "pending_visual_approval",
+    "asset_count": 218,
+    "description": "Atlas debris cleanup completed for selected sprites; detailed reference-style art is still in progress."
+  },
+  "floor_art": {
+    "design": "3x3 compass mosaic",
+    "tile_size": 64,
+    "ids": [
+      "F019",
+      "F015",
+      "F020",
+      "F018",
+      "F014",
+      "F017",
+      "F021",
+      "F016",
+      "F022"
+    ],
+    "qa": "needs_cleanup",
+    "reference": "docs/FLOOR_REPAINT_QA.md"
+  },
+  "composition_reference": {
+    "image": "User Hero's Room screenshot",
+    "target": "Seaside sanctuary top-down 3/4 pixel art",
+    "revision": "3",
+    "qa": "Manual screenshot comparison still required.",
+    "notes": "Moved furniture and NPCs toward corresponding top-down reference positions while preserving unique IDs and collisions."
+  },
+  "schema_version": 2,
+  "map_id": "hero_room_01",
+  "version": 1,
+  "parent_version": null,
+  "created_at": "2026-10-23T12:06:52+00:00",
+  "source_image": {
+    "path": null,
+    "sha256": null,
+    "status": "reference_in_chat_not_imported"
+  },
+  "change_note": "Map-only baseline extracted from the pre-existing room."
+}
