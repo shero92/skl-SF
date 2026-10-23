@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "asset_count": 223,
-  "extracted_count": 223,
+  "asset_count": 227,
+  "extracted_count": 227,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
   "assets": [
@@ -3181,6 +3181,126 @@
           "V013"
         ],
         "sha256": "d7d161e65e8812782c5d4072b62acb70b0efcb918806fb915d648341af45b674",
+        "approved": false
+      },
+      "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
+    },
+    {
+      "id": "E021",
+      "name": "Clean Sea Cliff Ruin Left",
+      "category": "environment",
+      "subtype": "coastal_wall_apron",
+      "texture_path": "res://map_factory/parts/environment/E021_Clean_Sea_Cliff_Ruin_Left.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        340,
+        248
+      ],
+      "origin": [
+        170,
+        242
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          220,
+          44
+        ],
+        "offset": [
+          0,
+          -31
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.2,
+        "offset_x": 5,
+        "offset_y": 8
+      },
+      "tags": [
+        "stone",
+        "coast",
+        "flora",
+        "no_baked_ocean"
+      ],
+      "reusable": true,
+      "y_sort": true,
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "E007",
+          "E008",
+          "W017",
+          "ST010",
+          "W012",
+          "V023",
+          "V004",
+          "V012",
+          "V011",
+          "V013"
+        ],
+        "sha256": "9444a8a51d5e6a6d3edb97abcd99201f27d485c3e2e3e8dc436c7cf486de369d",
+        "approved": false
+      },
+      "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
+    },
+    {
+      "id": "E022",
+      "name": "Clean Sea Cliff Ruin Right",
+      "category": "environment",
+      "subtype": "coastal_wall_apron",
+      "texture_path": "res://map_factory/parts/environment/E022_Clean_Sea_Cliff_Ruin_Right.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        340,
+        248
+      ],
+      "origin": [
+        170,
+        242
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          220,
+          44
+        ],
+        "offset": [
+          0,
+          -31
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.2,
+        "offset_x": 5,
+        "offset_y": 8
+      },
+      "tags": [
+        "stone",
+        "coast",
+        "flora",
+        "no_baked_ocean"
+      ],
+      "reusable": true,
+      "y_sort": true,
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "E007",
+          "E008",
+          "W017",
+          "ST010",
+          "W012",
+          "V023",
+          "V004",
+          "V012",
+          "V011",
+          "V013"
+        ],
+        "sha256": "430f6f1a027a04f9c8d4d9d18d5078f7b32ec9655d66f3e39a70fd8fc69f1075",
         "approved": false
       },
       "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
@@ -6499,6 +6619,62 @@
           "V010"
         ],
         "sha256": "64b865abf6d43666b395352ad590473e2087490d612fb4999b947a9237eb5a42",
+        "approved": false
+      },
+      "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
+    },
+    {
+      "id": "O028",
+      "name": "Antlered Skull Flower Shrine Refined",
+      "category": "objects",
+      "subtype": "floral_skull_relic",
+      "texture_path": "res://map_factory/parts/objects/O028_Antlered_Skull_Flower_Shrine_Refined.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        268,
+        276
+      ],
+      "origin": [
+        134,
+        266
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          86,
+          44
+        ],
+        "offset": [
+          0,
+          -25
+        ]
+      },
+      "shadow": {
+        "type": "directional_sun",
+        "opacity": 0.4,
+        "offset_x": -28,
+        "offset_y": 21
+      },
+      "tags": [
+        "relic",
+        "ivory_skull",
+        "antlers",
+        "white_flowers",
+        "hero_room"
+      ],
+      "reusable": true,
+      "y_sort": true,
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "V009",
+          "V008",
+          "V004",
+          "V005",
+          "V010"
+        ],
+        "sha256": "04d05bfcc23754c37b63d6881ec9b0a486d0a9b7c5a6e2141005f017b411eeff",
         "approved": false
       },
       "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
@@ -10478,8 +10654,66 @@
         "approved": false
       },
       "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
+    },
+    {
+      "id": "W020",
+      "name": "Deep Limestone Corner Without Sea",
+      "category": "walls",
+      "subtype": "deep_stone_corner",
+      "texture_path": "res://map_factory/parts/walls/W020_Deep_Limestone_Corner_Without_Sea.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        246,
+        238
+      ],
+      "origin": [
+        123,
+        235
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          126,
+          42
+        ],
+        "offset": [
+          0,
+          -28
+        ]
+      },
+      "shadow": {
+        "type": "wall_corner",
+        "opacity": 0.28,
+        "offset_x": 5,
+        "offset_y": 7
+      },
+      "tags": [
+        "limestone",
+        "ivy",
+        "ruins",
+        "corner"
+      ],
+      "reusable": true,
+      "y_sort": true,
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "W005",
+          "W008",
+          "W017",
+          "ST011",
+          "W012",
+          "V006",
+          "V012",
+          "V023"
+        ],
+        "sha256": "30c60768424703915a379d56979e24b0fca4a84c17b9241f6322c879f42b96a1",
+        "approved": false
+      },
+      "qa_notes": "Independent genuine RGBA PNG, no room background. Artist/reference review required; do not claim exact original fidelity."
     }
   ],
-  "generated_png_count": 223,
+  "generated_png_count": 227,
   "quality_audit_path": "res://map_factory/metadata/quality_review.json"
 }
