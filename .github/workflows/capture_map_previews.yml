@@ -1,0 +1,66 @@
+name: Capture actual Godot map factory screenshots
+on:
+  push:
+    paths:
+      - "tools/capture_map_previews.gd"
+      - ".github/workflows/capture_map_previews.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install virtual X11 and software OpenGL for real frame rendering
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb xauth libgl1-mesa-dri libgl1 libx11-6 libxcursor1 libxi6 libxinerama1 libxrandr2
+      - name: Download Godot 4.4.1
+        run: |
+          curl -fsSL --retry 3 -o /tmp/godot.zip "https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip"
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.4.1-stable_linux.x86_64
+      - name: Import sprites into Godot
+        run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --editor --quit
+      - name: Render screenshot PNGs with Godot viewport
+        run: |
+          xvfb-run -a -s "-screen 0 1920x1200x24" \
+            /tmp/Godot_v4.4.1-stable_linux.x86_64 --path . --rendering-driver opengl3 \
+            --script res://tools/capture_map_previews.gd
+      - name: Check generated previews are nonempty, correctly sized PNGs
+        run: |
+          python - <<'PY'
+          import struct
+          from pathlib import Path
+          checks = {"courtyard_demo_01_v0001.png":(1792,1152),
+                    "courtyard_demo_01_v0002.png":(1792,1152),
+                    "hero_room_01_v0001.png":(1536,1024)}
+          base=Path("docs/previews/map_factory_renders")
+          for filename,(w,h) in checks.items():
+              path=base/filename
+              assert path.is_file(),path
+              raw=path.read_bytes()
+              assert raw[:8]==b"\x89PNG\r\n\x1a\n",path
+              assert struct.unpack(">II",raw[16:24])==(w,h),(path,struct.unpack(">II",raw[16:24]))
+              assert len(raw)>10000,(filename,len(raw))
+              print(f"Verified {filename}: {w}x{h} {len(raw)} bytes")
+          PY
+      - name: Upload PNG previews for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: real-godot-map-factory-screenshots
+          path: docs/previews/map_factory_renders/*.png
+          retention-days: 30
+      - name: Commit genuine Godot map screenshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/previews/map_factory_renders
+          if ! git diff --cached --quiet; then
+            git commit -m "Save actual Godot rendered courtyard before-after and Hero Room screenshots"
+            git push
+          fi
