@@ -6,7 +6,7 @@ import json
 ROOT=Path(__file__).resolve().parents[1]
 record=json.loads((ROOT/"map_factory/metadata/asset_index.json").read_text())
 by={x["id"]:x for x in record["assets"]}
-ids=["O028","E021","E022","W020","S017"]
+ids=["O028","E023","E024","W020","S017"]
 w,h=330,350
 sheet=Image.new("RGBA",(w*len(ids),h),(16,33,54,255))
 d=ImageDraw.Draw(sheet)
@@ -24,7 +24,7 @@ for i,id in enumerate(ids):
     sheet.alpha_composite(scaled,(x+(w-scaled.width)//2,35+(260-scaled.height)//2))
     d.text((x+12,6),id+" — "+rec["name"],fill=(244,211,104),stroke_width=0)
     d.text((x+12,322),f'{src.width}x{src.height} • {rec["status"]}',fill=(246,247,251))
-out=ROOT/"docs/previews/map_factory_renders/new_hero_parts_v9.png"
+out=ROOT/"docs/previews/map_factory_renders/new_hero_parts_v10.png"
 out.parent.mkdir(parents=True,exist_ok=True)
 sheet.convert("RGB").save(out)
 print("Created real sprite contact sheet",out, "bytes",out.stat().st_size)
