@@ -1,0 +1,33 @@
+name: Audit five-layer room assets
+on:
+  push:
+    paths:
+      - "map_factory/maps/**"
+      - "tools/audit_room_assets.py"
+      - ".github/workflows/audit_room_assets.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read true PNG dimensions alpha and metadata
+        run: python -m pip install "Pillow>=10,<13"
+      - name: Audit all registered map parts and 5-level placements
+        run: python tools/audit_room_assets.py
+      - name: Commit read-only QA evidence
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map_factory/metadata/room_block_quality.json docs/ROOM_BLOCK_QA.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit per-map 5-level part IDs, real PNGs and shadow ownership"
+            git push
+          fi
