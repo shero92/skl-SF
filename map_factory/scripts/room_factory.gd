@@ -81,7 +81,9 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
     var floor_ids: Array = data.get("floor_ids", ["F001", "F002"])
     var override_map: Dictionary = {}
     for entry in data.get("tile_overrides", []):
-        override_map[str(entry.get("x", 0)) + ":" + str(entry.get("y", 0))] = String(entry.get("id", "F001"))
+        # JSON numeric cells must be normalized before forming dictionary keys.
+        # Godot can parse JSON 7 as float 7.0; "7.0:5.0" never equals "7:5".
+        override_map["%d:%d" % [int(entry.get("x", 0)), int(entry.get("y", 0))]] = String(entry.get("id", "F001"))
     for y in int(size[1]):
         for x in int(size[0]):
             var asset_id := String(floor_ids[(x * 17 + y * 11) % floor_ids.size()])
