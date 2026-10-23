@@ -173,6 +173,8 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
     var offset: Array = data.get("ground_offset", [220, 225])
     var tile_size := int(data.get("tile_size", 64))
     var floor_ids: Array = data.get("floor_ids", ["F001", "F002"])
+    var footprint: Dictionary = data.get("floor_footprint", {})
+    var row_spans: Array = footprint.get("row_spans", [])
     var override_map: Dictionary = {}
     for entry in data.get("tile_overrides", []):
         # JSON numeric cells must be normalized before forming dictionary keys.
@@ -180,6 +182,14 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
         override_map["%d:%d" % [int(entry.get("x", 0)), int(entry.get("y", 0))]] = String(entry.get("id", "F001"))
     for y in int(size[1]):
         for x in int(size[0]):
+            if not row_spans.is_empty():
+                var inside := false
+                for span in row_spans[y]:
+                    if x >= int(span[0]) and x <= int(span[1]):
+                        inside = true
+                        break
+                if not inside:
+                    continue
             var asset_id := String(floor_ids[(x * 17 + y * 11) % floor_ids.size()])
             var key := str(x) + ":" + str(y)
             if override_map.has(key):

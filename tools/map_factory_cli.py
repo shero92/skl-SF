@@ -189,6 +189,38 @@ def validate_visual_qa(qa):
     return True
 
 
+def validate_floor_footprint(data):
+    """Check irregular floor occupancy, keeping all absent cells non-walkable."""
+    geometry=data.get("floor_footprint")
+    if geometry is None:
+        return True
+    if not isinstance(geometry,dict):
+        raise ValueError("floor_footprint must be a dictionary")
+    rows=geometry.get("row_spans")
+    width,height=data["size"]
+    if not isinstance(rows,list) or len(rows)!=height:
+        raise ValueError("floor_footprint row_spans must match floor height")
+    painted=set()
+    for y,spans in enumerate(rows):
+        if not isinstance(spans,list):
+            raise ValueError("Each footprint row must contain spans")
+        previous_end=-1
+        for span in spans:
+            if not isinstance(span,list) or len(span)!=2 or any(type(x)!=int for x in span):
+                raise ValueError("Footprint spans must contain integer [start,end]")
+            lo,hi=span
+            if not (0<=lo<=hi<width) or lo<=previous_end:
+                raise ValueError("Overlapping/out-of-range floor footprint row")
+            painted.update((x,y) for x in range(lo,hi+1))
+            previous_end=hi
+    if not painted:
+        raise ValueError("Floor footprint has zero active cells")
+    for cell in data.get("tile_overrides",[]):
+        if (cell["x"],cell["y"]) not in painted:
+            raise ValueError("Floor override is outside painted room footprint")
+    return True
+
+
 def validate_room(data, catalog, expect_map_id=None):
     if not isinstance(data, dict):
         raise ValueError("Map must be a JSON object")
@@ -236,6 +268,7 @@ def validate_room(data, catalog, expect_map_id=None):
             raise ValueError(f"Duplicate tile override: {x},{y}")
         coords.add((x,y))
         check_asset(str(override["id"]), floor=True)
+    validate_floor_footprint(data)
     for layer in LAYERS:
         blocks = data.get(layer, [])
         if not isinstance(blocks, list):
@@ -499,7 +532,7 @@ def apply_changes(snapshot, manifest, catalog):
         elif op=="set_property":
             key=operation["key"]
             allowed={"description","background_color","canvas_size","tile_size",
-                     "size","ground_offset","floor_ids","ocean","effects",
+                     "size","ground_offset","floor_ids","floor_footprint","ocean","effects",
                      "source_image","floor_art","composition_reference", "navigation", "visual_qa"}
             if key not in allowed:
                 raise ValueError("Forbidden map-only property: "+str(key))

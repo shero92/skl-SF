@@ -43,6 +43,12 @@ func _run_smoke() -> void:
         var ground := built.get_node_or_null("Level1_Ground/Ground" if layered else "Ground")
         var dimensions: Array = data.get("size", [0, 0])
         var expected_floor := int(dimensions[0]) * int(dimensions[1])
+        var outline: Dictionary = data.get("floor_footprint", {})
+        if outline.has("row_spans"):
+            expected_floor = 0
+            for row in outline["row_spans"]:
+                for span in row:
+                    expected_floor += int(span[1]) - int(span[0]) + 1
         if ground == null or ground.get_child_count() != expected_floor:
             push_error("Incorrect floor tiles: " + id)
             ok = false

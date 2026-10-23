@@ -112,7 +112,9 @@ def create_layer_stack(snapshot,catalog):
         "tile_size":snapshot["tile_size"],"size":snapshot["size"],
         "origin":snapshot["ground_offset"],
         "floor_pattern_ids":snapshot.get("floor_ids",[]),
-        "overrides":deepcopy(snapshot.get("tile_overrides",[]))},
+        "overrides":deepcopy(snapshot.get("tile_overrides",[])),
+        **({"footprint":deepcopy(snapshot["floor_footprint"])} if "floor_footprint" in snapshot else {})
+      },
       "counts":{k:len(v) for k,v in passes.items()},
       "unique_asset_ids":sorted(used),
       "lighting_effects":deepcopy(snapshot.get("effects",[])),
