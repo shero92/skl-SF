@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add map_factory/parts/objects/O027_*.png map_factory/parts/environment/E019_*.png map_factory/parts/environment/E020_*.png map_factory/parts/walls/W019_*.png map_factory/parts/shadows/S017_*.png map_factory/parts/objects/O028_*.png map_factory/parts/environment/E021_*.png map_factory/parts/environment/E022_*.png map_factory/parts/walls/W020_*.png map_factory/metadata/asset_index.json
+          git add map_factory/parts/objects/O027_*.png map_factory/parts/environment/E019_*.png map_factory/parts/environment/E020_*.png map_factory/parts/walls/W019_*.png map_factory/parts/shadows/S017_*.png map_factory/parts/objects/O028_*.png map_factory/parts/environment/E021_*.png map_factory/parts/environment/E022_*.png map_factory/parts/walls/W020_*.png map_factory/parts/environment/E023_*.png map_factory/parts/environment/E024_*.png map_factory/metadata/asset_index.json
           if ! git diff --cached --quiet; then
             git commit -m "Generate missing coastal shrine cliff wall and environmental shadow PNG parts"
             git fetch origin main

@@ -60,6 +60,55 @@ def irregular_segment(width=340,height=248,right=False):
         canvas=canvas.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
     return canvas
 
+def clean_stone_facing(right=False):
+    """Cliff terrace section composed strictly from clean limestone/ivy assets.
+
+    Crucially does NOT include E-source sea foam or screenshot background.
+    """
+    w,h=340,248
+    canvas=Image.new("RGBA",(w,h))
+    # A hand-painted weathered foundation under registered stone blocks.
+    draw=ImageDraw.Draw(canvas)
+    browns=[(181,142,94,255),(194,158,109,255),(166,127,82,255),
+            (210,175,122,255),(147,111,72,255)]
+    draw.polygon([(15,88),(76,79),(118,105),(172,88),(225,106),
+                  (287,85),(320,117),(313,172),(299,217),(267,233),
+                  (231,217),(196,237),(141,216),(103,230),
+                  (60,211),(27,179)],fill=(147,113,78,255))
+    local=random.Random(981)
+    for k in range(24):
+        cx=local.randint(16,w-29);cy=local.randint(107,213)
+        rw=local.randint(24,57);rh=local.randint(16,39)
+        pts=[(cx-rw//2,cy-7),(cx-rw//3,cy-rh//2),(cx+rw//3,cy-rh//2),
+             (cx+rw//2,cy+rh//4),(cx+rw//4,cy+rh//2),
+             (cx-rw//3,cy+rh//3)]
+        draw.polygon(pts,fill=local.choice(browns),outline=(112,81,53,255),width=2)
+        draw.line([(cx-rw//3,cy-rh//3),(cx+rw//4,cy-rh//3)],
+                  fill=(229,192,139,255),width=2)
+    # Native transparent masonry over the foundation.
+    add(canvas,"W005",5,34,151)
+    add(canvas,"W012",107,24,142)
+    add(canvas,"W017",215,42,120)
+    add(canvas,"ST010",85,39,97)
+    add(canvas,"V023",18,91,105)
+    add(canvas,"V005",164,17,153)
+    add(canvas,"V012",37,24,62)
+    add(canvas,"V011",240,58,67)
+    # Creeping vines run down the sunlit vertical cliff face.
+    draw=ImageDraw.Draw(canvas)
+    for base_x in (28,80,171,263,304):
+        for j in range(local.randint(3,6)):
+            yy=132+j*16+local.randint(-4,4)
+            xx=base_x+local.randint(-8,8)
+            draw.line((xx,yy-6,xx+4,yy+11),fill=(37,78,38,255),width=3)
+            draw.polygon([(xx-7,yy),(xx+1,yy-5),(xx+7,yy-2),(xx,yy+3)],
+                         fill=local.choice([(39,117,49,255),(65,139,56,255),
+                                            (85,142,48,255)]))
+    if right:
+        canvas=canvas.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
+    return canvas
+
+
 def deep_corner():
     canvas=Image.new("RGBA",(246,238))
     add(canvas,"W005",24,53,192)
@@ -266,6 +315,18 @@ def main():
         {"enabled":True,"size":[126,42],"offset":[0,-28]},
         {"type":"wall_corner","opacity":0.28,"offset_x":5,"offset_y":7},
         ["limestone","ivy","ruins","corner"],["W005","W008","W017","ST011","W012","V006","V012","V023"])
+    register("E023","Coastal Foundation No Water Left","environment","limestone_cliff_facing",
+        clean_stone_facing(),[170,242],
+        {"enabled":True,"size":[216,48],"offset":[0,-36]},
+        {"type":"wall_base","opacity":0.19,"offset_x":4,"offset_y":9},
+        ["stone","coast","dry_sprite","sea_layer_separate","ivy"],
+        ["W005","W012","W017","ST010","V023","V005","V012","V011"])
+    register("E024","Coastal Foundation No Water Right","environment","limestone_cliff_facing",
+        clean_stone_facing(True),[170,242],
+        {"enabled":True,"size":[216,48],"offset":[0,-36]},
+        {"type":"wall_base","opacity":0.19,"offset_x":4,"offset_y":9},
+        ["stone","coast","dry_sprite","sea_layer_separate","ivy"],
+        ["W005","W012","W017","ST010","V023","V005","V012","V011"])
     record["assets"].sort(key=lambda a:(a["category"],a["id"]))
     record["asset_count"]=len(record["assets"])
     record["generated_png_count"]=sum((ROOT/a["texture_path"].removeprefix("res://")).exists() for a in record["assets"])
