@@ -6,7 +6,8 @@ The last version is the authoritative base; stale updates fail safely.
 """
 from pathlib import Path
 import hashlib,json,re,sys
-from map_factory_cli import ROOT, clone_map, create_map, get_latest, apply, registry
+from PIL import Image
+from map_factory_cli import ROOT, clone_map, create_map, get_latest, apply, registry, digest_json
 from import_map_assets import import_assets
 
 PENDING=Path("map_factory/intake/pending")
@@ -44,11 +45,26 @@ def process(root=ROOT):
             actual_sha=hashlib.sha256(src.read_bytes()).hexdigest()
             if source.get("sha256") and source["sha256"] != actual_sha:
                 raise ValueError("Source image hash mismatch")
+            with Image.open(src) as reference_image:
+                reference_image.load()
+                actual_size=list(reference_image.size)
+            if source.get("pixel_size") and source["pixel_size"]!=actual_size:
+                raise ValueError("Source image dimensions mismatch")
             doc["source_image"]={"path":source["path"],"sha256":actual_sha,
+                                 "pixel_size":actual_size,
                                  "status":"image_supplied_for_ai_layout_review"}
         assets=import_assets(root,doc.get("assets",[]))
         mode=doc.get("mode","patch")
         map_id=doc.get("map_id")
+        if mode=="clone":
+            from_map=doc.get("from_map")
+            if not from_map:
+                raise ValueError("Clone mode requires from_map")
+            actual_parent=get_latest(root,from_map)
+            if "source_parent_version" in doc and doc["source_parent_version"]!=actual_parent["version"]:
+                raise ValueError("Outdated source_parent_version; re-analyze latest map")
+            if doc.get("source_parent_sha256") and doc["source_parent_sha256"]!=digest_json(actual_parent):
+                raise ValueError("Outdated source_parent_sha256; re-analyze latest map")
         if mode=="create":
             create_map(root,map_id,doc.get("preset","indoor_room"),
                        source_image=doc.get("source_image"),
