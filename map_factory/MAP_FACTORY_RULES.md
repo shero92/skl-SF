@@ -77,3 +77,7 @@ A room may have beautiful sprites but still be wrong as a ROOM. After the factor
 7. Preserve old map versions so a layout improvement can be compared and reversed. Never overwrite old snapshots.
 
 The standard first map is Hero Room. Its corrected composition revisions are stored under map_factory/maps/hero_room_01/versions; see docs/HERO_ROOM_COMPOSITION_REVIEW.md.
+
+## Five-level room building is now required
+
+All new map snapshots must compile the five-pass level graph as specified by map_factory/LAYER_SCHEMA.md: 0 background, 1 ground and tile overrides, 2 walls/arches/stairs, 3 decorative parts mounted on terrain/walls/props, and 4 owner-linked independent shadow entries. The shadow *processing* pass is last, while render depth is below its casting walls or furniture. Check attachments, real PNG dimensions, and every layer in the Godot scene, not just in JSON. Reuse existing high-quality PNGs; never make false 100%-approved claims for sprites still marked needs_cleanup.

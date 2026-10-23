@@ -65,5 +65,15 @@ jobs:
           git add docs/previews/map_factory_renders
           if ! git diff --cached --quiet; then
             git commit -m "Save actual Godot rendered courtyard before-after and Hero Room screenshots"
-            git push
+            git fetch origin main
+            git rebase origin/main
+            for i in 1 2 3; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              sleep 2
+              git fetch origin main
+              git rebase origin/main
+            done
+            exit 1
           fi

@@ -27,3 +27,7 @@ Future agents MUST follow map_factory/MAP_FACTORY_RULES.md before any image/room
 Ability ownership belongs to a separate gameplay system: map permissions and clearance are NOT character abilities. Keep unreviewed navigation blocked; do not claim visual equality, working pathfinding or flying physics unless verified in Godot. No character or UI edits.
 
 Future user-supplied room/map photos should start with `tools/prepare_map_reference.py` to preserve the original and pin the last map version. Follow `map_factory/DEPLOYED_FACTORY.md`. Draft images must NOT be auto-published as finished maps: provide independent PNGs for missing parts, reviewed block placements, and set analysis_status=reviewed before moving a manifest into pending. Map work remains strictly environment-only.
+
+## Mandatory five-layer map rendering convention
+
+When authoring a room or map, follow map_factory/LAYER_SCHEMA.md. The compiled layer_stack and per-map layers/latest.json must specify **background, ground, walls, decorations, shadows** with correct owner and mount metadata. Wall ornaments must use mount_on plus mount_offset if they depend on wall placement. Every new map revision rebuilds derived layer indices; never alter old immutable snapshots. Shadows form the fifth *data* pass but draw below wall and decoration sprites at z20 for correct compositing. Check map_factory/metadata/room_block_quality.json: all environmental PNG files must exist, but needs_cleanup is not artistic approval. Do not touch characters/UI.
