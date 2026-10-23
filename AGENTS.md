@@ -3,6 +3,7 @@
 **The present workstream is MAPS AND ROOMS ONLY. Do not generate, regenerate, curate, import, move, or change any character sprites, NPC/gameplay scripts, dialogue portraits, dialogue UI or their metadata.** Previously existing gameplay code may remain, untouched.
 
 Before map work, read:
+- map_factory/MAP_FACTORY_RULES.md (MANDATORY contract)
 - `map_factory/MAP_FACTORY_WORKFLOW.md`
 - `map_factory/maps/index.json` and the relevant `map_factory/maps/<map_id>/latest.json`
 - `map_factory/metadata/asset_index.json`
@@ -18,3 +19,9 @@ When a new AI room image is provided:
 7. Validate registry, map-only rules, PNG catalog and Godot map preview before reporting a successful push.
 
 No change to character category (`characters`), user interface (`ui`), player movement, dialogue UI, or NPC gameplay is authorized by this map-only workflow. Existing game preview remains intact; use `scenes/map_factory_preview.tscn` for map work.
+
+## Mandatory image-to-map production contract
+
+Future agents MUST follow map_factory/MAP_FACTORY_RULES.md before any image/room/map task. Use the user's image as a reference, compare with the latest map, reuse good assets, create individual environmental PNG files only for genuinely missing parts, register per-part metadata, assemble the room with numbered immutable JSON versions, describe walk/fly/swim restrictions and obstacle altitude, render and compare against the source, and commit only reviewed outcomes.
+
+Ability ownership belongs to a separate gameplay system: map permissions and clearance are NOT character abilities. Keep unreviewed navigation blocked; do not claim visual equality, working pathfinding or flying physics unless verified in Godot. No character or UI edits.

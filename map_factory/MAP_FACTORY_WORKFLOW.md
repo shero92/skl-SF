@@ -1,5 +1,7 @@
 # AI-powered map factory: map blocks ONLY
 
+> **Mandatory rules:** [MAP_FACTORY_RULES.md](MAP_FACTORY_RULES.md). Read these first for each new image or map.
+
 Use this area for **landscape, floor, walls, architecture, stairs, furniture, vegetation, props, shadows, lighting, and reusable room composition**.
 
 **Never import, generate, change or place characters, dialogue portraits, NPCs or game UI here.** Those systems are separate.
@@ -63,3 +65,9 @@ Open `scenes/map_factory_preview.tscn` in Godot 4 and **Run Current Scene (F6)**
 - Map change receipts: `map_factory/intake/processed/`.
 
 **Quality policy:** consult `docs/ASSET_QUALITY_POLICY.md`. Map-only assets must pass visual QA; no PNG is upgraded based on file size alone.
+
+## Navigation and QA contract
+
+A future gameplay-ready map must include navigation metadata using [navigation_example.json](metadata/navigation_example.json): blocked-by-default walk/fly/swim regions, surface heights, ceilings, obstacle altitude bands and links such as stairs. The compiler validates these fields when present. It does NOT yet implement actor movement, pathfinding, altitude collision, or special abilities; character code is out of scope.
+
+For visual comparison, keep visual_qa.status = needs_review until the actual Godot map is reviewed against the original image. Approval requires reference_sha256, preview_path and reviewer. The global rulebook is [MAP_FACTORY_RULES.md](MAP_FACTORY_RULES.md).

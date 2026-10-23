@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "origin": [
+    0,
+    0
+  ],
+  "cell_size": 64,
+  "grid_size": [
+    24,
+    16
+  ],
+  "default": {
+    "walk": false,
+    "fly": false,
+    "swim": false
+  },
+  "regions": [
+    {
+      "id": "stone_platform",
+      "surface": "stone",
+      "rect": [
+        3,
+        3,
+        15,
+        9
+      ],
+      "allow": [
+        "walk",
+        "fly"
+      ],
+      "requires": {
+        "walk": [],
+        "fly": []
+      },
+      "floor_height": 0,
+      "ceiling_height": null,
+      "review_status": "needs_review"
+    },
+    {
+      "id": "water_below",
+      "surface": "water",
+      "rect": [
+        0,
+        12,
+        24,
+        4
+      ],
+      "allow": [
+        "swim",
+        "fly"
+      ],
+      "requires": {
+        "swim": [
+          "can_swim"
+        ]
+      },
+      "floor_height": -24,
+      "ceiling_height": null,
+      "review_status": "needs_review"
+    },
+    {
+      "id": "roofed_hall",
+      "surface": "roof",
+      "rect": [
+        10,
+        3,
+        4,
+        3
+      ],
+      "allow": [
+        "walk"
+      ],
+      "requires": {
+        "walk": []
+      },
+      "floor_height": 0,
+      "ceiling_height": 96,
+      "review_status": "needs_review"
+    }
+  ],
+  "obstacles": [
+    {
+      "instance_id": "HeroBed",
+      "blocks": [
+        "walk",
+        "fly"
+      ],
+      "min_altitude": 0,
+      "max_altitude": 76
+    }
+  ],
+  "links": [
+    {
+      "id": "stairs_down",
+      "from": [
+        8,
+        11
+      ],
+      "to": [
+        8,
+        12
+      ],
+      "modes": [
+        "walk"
+      ],
+      "requires": []
+    }
+  ],
+  "note": "Example only; coordinates require author review and this is not a working navigation controller."
+}

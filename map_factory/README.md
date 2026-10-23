@@ -2,7 +2,7 @@
 
 All reusable environmental components are indexed. For layout compilation, AI-generated room imagery is converted to **layered per-block metadata** and **immutable map versions**, building on the last published map revision.
 
-Start here: [MAP_FACTORY_WORKFLOW.md](MAP_FACTORY_WORKFLOW.md).
+Start here: **[mandatory map factory rules](MAP_FACTORY_RULES.md)** and [the workflow](MAP_FACTORY_WORKFLOW.md).
 
 A separate Godot map-only preview renders the latest room from `map_factory/maps/index.json`. Characters, NPCs, dialogue portraits and interface elements are explicitly excluded from this subsystem.
 

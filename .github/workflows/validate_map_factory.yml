@@ -4,7 +4,7 @@ on:
     paths:
       - "map_factory/maps/**/*.json"
       - "tools/map_factory_cli.py"
-      - "tools/tests/test_map_factory.py"
+      - "tools/tests/test_map*.py"
       - ".github/workflows/validate_map_factory.yml"
   workflow_dispatch:
 jobs:
@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Unit test map-only metadata revisions
-        run: python -m unittest discover -s tools/tests -p 'test_map_factory.py' -v
+        run: python -m unittest discover -s tools/tests -p 'test_map*.py' -v
       - name: Check every published version and latest registry hash
         run: python tools/map_factory_cli.py validate
       - name: Reject character and UI objects in map snapshots

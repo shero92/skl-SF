@@ -23,7 +23,7 @@ jobs:
             python tools/map_factory_cli.py bootstrap --map-id hero_room_01 --source map_factory/rooms/hero_room.json
           fi
       - name: Run map factory unit tests
-        run: python -m unittest discover -s tools/tests -p 'test_map_factory.py' -v
+        run: python -m unittest discover -s tools/tests -p 'test_map*.py' -v
       - name: Validate map registry and all immutable snapshots
         run: python tools/map_factory_cli.py validate
       - name: Commit baseline map snapshots
