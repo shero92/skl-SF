@@ -1,4 +1,13 @@
 {
+  "layer_schema_version": 1,
+  "five_level_map": {
+    "background": 0,
+    "ground": 0,
+    "walls": 3,
+    "decorations": 3,
+    "shadows": 1
+  },
+  "layer_stack_path": "map_factory/maps/courtyard_demo_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "courtyard_demo_01",
   "version": 2,

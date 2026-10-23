@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "map_id": "courtyard_demo_01",
+  "version": 2,
+  "processing_passes": [
+    "background",
+    "ground",
+    "walls",
+    "decorations",
+    "shadows"
+  ],
+  "display_z": {
+    "background": 0,
+    "ground": 10,
+    "shadows": 20,
+    "walls": 30,
+    "decorations": 40
+  },
+  "passes": {
+    "background": [],
+    "ground": [],
+    "walls": [
+      {
+        "instance_id": "CourtyardArch",
+        "asset_id": "A005",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          850.0,
+          348.0
+        ],
+        "scale": 0.85,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png",
+        "pixel_size": [
+          328,
+          283
+        ],
+        "origin": [
+          164,
+          283
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CourtyardWallLeft",
+        "asset_id": "W001",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          420.0,
+          414.0
+        ],
+        "scale": 0.85,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/walls/W001_Stone_Wall_Straight.png",
+        "pixel_size": [
+          179,
+          239
+        ],
+        "origin": [
+          89,
+          239
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CourtyardWallRight",
+        "asset_id": "W002",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          1260.0,
+          414.0
+        ],
+        "scale": 0.85,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/walls/W002_Stone_Wall_Short.png",
+        "pixel_size": [
+          165,
+          189
+        ],
+        "origin": [
+          82,
+          189
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      }
+    ],
+    "decorations": [
+      {
+        "instance_id": "CourtyardFurniture",
+        "asset_id": "P001",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          510.0,
+          680.0
+        ],
+        "scale": 0.65,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/furniture/P001_Hero_Bed.png",
+        "pixel_size": [
+          296,
+          339
+        ],
+        "origin": [
+          148,
+          339
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CourtyardVine_01",
+        "asset_id": "V004",
+        "source_layer": "front_objects",
+        "render_layer": "decorations",
+        "position": [
+          460.0,
+          660.0
+        ],
+        "scale": 0.7,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
+        "pixel_size": [
+          241,
+          168
+        ],
+        "origin": [
+          120,
+          168
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CourtyardVine_02",
+        "asset_id": "V004",
+        "source_layer": "front_objects",
+        "render_layer": "decorations",
+        "position": [
+          1250.0,
+          650.0
+        ],
+        "scale": 0.78,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
+        "pixel_size": [
+          241,
+          168
+        ],
+        "origin": [
+          120,
+          168
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      }
+    ],
+    "shadows": [
+      {
+        "instance_id": "CourtyardFurniture__shadow",
+        "owner_instance_id": "CourtyardFurniture",
+        "owner_asset_id": "P001",
+        "asset_id": "S002",
+        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
+        "position": [
+          510.0,
+          680.0
+        ],
+        "scale": 0.65,
+        "sprite_pixel_size": [
+          296,
+          339
+        ],
+        "settings": {
+          "type": "contact",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      }
+    ]
+  },
+  "ground": {
+    "tile_size": 64,
+    "size": [
+      24,
+      16
+    ],
+    "origin": [
+      128,
+      64
+    ],
+    "floor_pattern_ids": [
+      "F001",
+      "F002"
+    ],
+    "overrides": [
+      {
+        "x": 5,
+        "y": 5,
+        "id": "F002"
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "id": "F002"
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "id": "F002"
+      }
+    ]
+  },
+  "counts": {
+    "background": 0,
+    "ground": 0,
+    "walls": 3,
+    "decorations": 3,
+    "shadows": 1
+  },
+  "unique_asset_ids": [
+    "A005",
+    "F001",
+    "F002",
+    "P001",
+    "S002",
+    "V004",
+    "W001",
+    "W002"
+  ],
+  "lighting_effects": [],
+  "quality_status": "needs_review",
+  "note": "Shadows are last DATA pass, rendered z20 below walls z30 and props z40."
+}

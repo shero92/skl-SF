@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "map_id": "courtyard_demo_01",
+  "version": 1,
+  "processing_passes": [
+    "background",
+    "ground",
+    "walls",
+    "decorations",
+    "shadows"
+  ],
+  "display_z": {
+    "background": 0,
+    "ground": 10,
+    "shadows": 20,
+    "walls": 30,
+    "decorations": 40
+  },
+  "passes": {
+    "background": [],
+    "ground": [],
+    "walls": [],
+    "decorations": [],
+    "shadows": []
+  },
+  "ground": {
+    "tile_size": 64,
+    "size": [
+      24,
+      16
+    ],
+    "origin": [
+      128,
+      64
+    ],
+    "floor_pattern_ids": [
+      "F001",
+      "F002"
+    ],
+    "overrides": []
+  },
+  "counts": {
+    "background": 0,
+    "ground": 0,
+    "walls": 0,
+    "decorations": 0,
+    "shadows": 0
+  },
+  "unique_asset_ids": [
+    "F001",
+    "F002"
+  ],
+  "lighting_effects": [],
+  "quality_status": "needs_review",
+  "note": "Shadows are last DATA pass, rendered z20 below walls z30 and props z40."
+}

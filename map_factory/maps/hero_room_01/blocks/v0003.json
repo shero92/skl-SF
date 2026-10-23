@@ -1,4 +1,13 @@
 {
+  "layer_schema_version": 1,
+  "five_level_map": {
+    "background": 7,
+    "ground": 2,
+    "walls": 32,
+    "decorations": 34,
+    "shadows": 8
+  },
+  "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
   "version": 3,
