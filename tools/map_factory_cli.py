@@ -8,6 +8,7 @@ Each revision is based on the verified latest version, not a stale screenshot.
 """
 from __future__ import annotations
 from map_factory_layers import create_layer_stack, validate_layer_stack
+from map_factory_orientation import resolve_orientation
 import argparse
 from copy import deepcopy
 from datetime import datetime, timezone
@@ -320,6 +321,9 @@ def validate_room(data, catalog, expect_map_id=None):
                 raise ValueError(f"Invalid scale: {ident}")
             if "rotation_degrees" in item and not isinstance(item["rotation_degrees"],(int,float)):
                 raise ValueError(f"Invalid rotation: {ident}")
+            # Cardinal facings may either rotate the scene node, or select
+            # a complete set of four independently drawn perspective views.
+            resolve_orientation(item,catalog)
             if "shadow" in item and not isinstance(item["shadow"],dict):
                 raise ValueError(f"Invalid shadow: {ident}")
             if "collision" in item and not isinstance(item["collision"],dict):
@@ -377,6 +381,7 @@ def build_block_manifest(snapshot, catalog):
                 "position": [part["x"], part["y"]],
                 "scale": part.get("scale", 1.0),
                 "rotation_degrees": part.get("rotation_degrees", 0),
+                **({"orientation":resolve_orientation(part,catalog)} if resolve_orientation(part,catalog) else {}),
                 "flip_h": part.get("flip_h", False),
                 "z_index": part.get("z_index", 0),
                 "collision": part.get("collision", record.get("collision", {})),

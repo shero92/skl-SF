@@ -3,6 +3,7 @@ Shadows are the fifth DATA pass; they draw between ground and walls at z20.
 """
 from __future__ import annotations
 from copy import deepcopy
+from map_factory_orientation import resolve_orientation, rotate_offset
 
 PASS_NAMES=("background","ground","walls","decorations","shadows")
 SOURCE_LAYERS=("background_objects","ground_overlays","back_objects","objects","front_objects")
@@ -38,6 +39,8 @@ def create_layer_stack(snapshot,catalog):
         for block in snapshot.get(source,[]):
             record=catalog[block["id"]];ident=block["instance_id"]
             if ident in placed:raise ValueError("Duplicate rendered block "+ident)
+            orientation=resolve_orientation(block,catalog)
+            resolved=catalog[orientation["resolved_asset_id"]] if orientation else record
             entry={
                 "instance_id":ident,"asset_id":block["id"],"source_layer":source,
                 "render_layer":classify(block,record,source),
@@ -46,12 +49,12 @@ def create_layer_stack(snapshot,catalog):
                 "rotation_degrees":float(block.get("rotation_degrees",0)),
                 "flip_h":bool(block.get("flip_h",False)),
                 "z_index":int(block.get("z_index",0)),
-                "texture_path":record["texture_path"],
-                "pixel_size":record.get("pixel_size",[64,64]),"origin":record.get("origin",[0,0]),
+                "texture_path":resolved["texture_path"],
+                "pixel_size":resolved.get("pixel_size",[64,64]),"origin":resolved.get("origin",[0,0]),
                 "status":record.get("status","planned"),
-                "collision":deepcopy(block.get("collision",record.get("collision",{}))),
-                "shadow":deepcopy(block.get("shadow",record.get("shadow",{"type":"none"}))),
-                "attachment":None}
+                "collision":deepcopy(block.get("collision",resolved.get("collision",{}))),
+                "shadow":deepcopy(block.get("shadow",resolved.get("shadow",{"type":"none"}))),
+                "attachment":None,**({"orientation":orientation} if orientation else {})}
             placed[ident]=entry;raw.append((block,entry))
     resolved={}
     def resolve(ident,trail=()):
@@ -69,7 +72,9 @@ def create_layer_stack(snapshot,catalog):
                 any(not isinstance(n,(int,float)) or isinstance(n,bool) for n in offset)):
                 raise ValueError("Mounted part requires numeric mount_offset")
             parent=resolve(host,trail+(ident,))
-            pos=[parent[0]+float(offset[0]),parent[1]+float(offset[1])]
+            parent_orientation=placed[host].get("orientation")
+            local_offset=rotate_offset(offset,parent_orientation["turn_quarters"]) if parent_orientation else [float(offset[0]),float(offset[1])]
+            pos=[parent[0]+local_offset[0],parent[1]+local_offset[1]]
             entry["attachment"]={"parent_instance_id":host,
                 "host_render_layer":placed[host]["render_layer"],
                 "mount_offset":[float(offset[0]),float(offset[1])]}
