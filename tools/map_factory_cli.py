@@ -189,6 +189,36 @@ def validate_visual_qa(qa):
     return True
 
 
+def validate_floor_tile_style(data,catalog):
+    value=data.get("floor_tile_style")
+    if value is None:
+        return True
+    if not isinstance(value,dict):
+        raise ValueError("floor_tile_style must be an object")
+    if type(value.get("enabled")) is not bool:
+        raise ValueError("floor_tile_style.enabled must be boolean")
+    inset=value.get("crop_insets")
+    if not isinstance(inset,list) or len(inset)!=4 or any(type(v)!=int or v<0 for v in inset):
+        raise ValueError("floor_tile_style.crop_insets must have four nonnegative integers")
+    ids=value.get("tile_ids")
+    if not isinstance(ids,list) or not ids or len(set(ids))!=len(ids):
+        raise ValueError("floor_tile_style.tile_ids needs distinct registered floor IDs")
+    for ident in ids:
+        info=catalog.get(ident)
+        if not info or info["category"]!="floors":
+            raise ValueError("Invalid floor style asset "+str(ident))
+        size=info.get("pixel_size",[0,0])
+        if size[0] <= inset[0]+inset[2] or size[1] <= inset[1]+inset[3]:
+            raise ValueError("floor crop removes entire tile "+ident)
+    if not isinstance(value.get("joint_opacity"),(int,float)) or not 0<=value["joint_opacity"]<=1:
+        raise ValueError("Invalid floor grout opacity")
+    if not isinstance(value.get("joint_width"),(int,float)) or not 0<value["joint_width"]<=5:
+        raise ValueError("Invalid floor grout width")
+    if not isinstance(value.get("joint_color"),str) or not re.fullmatch(r"#[0-9a-fA-F]{6}",value["joint_color"]):
+        raise ValueError("Invalid grout color")
+    return True
+
+
 def validate_floor_footprint(data):
     """Check irregular floor occupancy, keeping all absent cells non-walkable."""
     geometry=data.get("floor_footprint")
@@ -269,6 +299,7 @@ def validate_room(data, catalog, expect_map_id=None):
         coords.add((x,y))
         check_asset(str(override["id"]), floor=True)
     validate_floor_footprint(data)
+    validate_floor_tile_style(data,catalog)
     for layer in LAYERS:
         blocks = data.get(layer, [])
         if not isinstance(blocks, list):
@@ -532,7 +563,7 @@ def apply_changes(snapshot, manifest, catalog):
         elif op=="set_property":
             key=operation["key"]
             allowed={"description","background_color","canvas_size","tile_size",
-                     "size","ground_offset","floor_ids","floor_footprint","ocean","effects",
+                     "size","ground_offset","floor_ids","floor_footprint","floor_tile_style","ocean","effects",
                      "source_image","floor_art","composition_reference", "navigation", "visual_qa"}
             if key not in allowed:
                 raise ValueError("Forbidden map-only property: "+str(key))

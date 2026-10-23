@@ -175,6 +175,8 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
     var floor_ids: Array = data.get("floor_ids", ["F001", "F002"])
     var footprint: Dictionary = data.get("floor_footprint", {})
     var row_spans: Array = footprint.get("row_spans", [])
+    var tile_style: Dictionary = data.get("floor_tile_style", {})
+    var style_tile_ids: Array = tile_style.get("tile_ids", [])
     var override_map: Dictionary = {}
     for entry in data.get("tile_overrides", []):
         # JSON numeric cells must be normalized before forming dictionary keys.
@@ -200,6 +202,17 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
             if path != "" and ResourceLoader.exists(path):
                 var texture := load(path) as Texture2D
                 if texture != null:
+                    var styled_tile := bool(tile_style.get("enabled", false)) and style_tile_ids.has(asset_id)
+                    if styled_tile:
+                        var edges: Array = tile_style.get("crop_insets", [0, 0, 0, 0])
+                        var cut := AtlasTexture.new()
+                        cut.atlas = texture
+                        cut.region = Rect2(
+                            float(edges[0]), float(edges[1]),
+                            float(texture.get_width()) - float(edges[0]) - float(edges[2]),
+                            float(texture.get_height()) - float(edges[1]) - float(edges[3])
+                        )
+                        texture = cut
                     var sprite := Sprite2D.new()
                     sprite.name = "Floor_" + str(x) + "_" + str(y) + "_" + asset_id
                     sprite.centered = false
@@ -207,6 +220,20 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
                     sprite.texture = texture
                     sprite.position = pos
                     sprite.scale = Vector2(float(tile_size) / texture.get_width(), float(tile_size) / texture.get_height())
+                    if styled_tile:
+                        var mortar := Line2D.new()
+                        mortar.name = "WarmStoneJoint"
+                        mortar.width = float(tile_style.get("joint_width", 1.0)) / sprite.scale.x
+                        var tint := Color(String(tile_style.get("joint_color", "#88755b")))
+                        tint.a = float(tile_style.get("joint_opacity", 0.22))
+                        mortar.default_color = tint
+                        var w := float(texture.get_width())
+                        var h := float(texture.get_height())
+                        mortar.points = PackedVector2Array([
+                            Vector2(0, 0), Vector2(w, 0), Vector2(w, h),
+                            Vector2(0, h), Vector2(0, 0)
+                        ])
+                        sprite.add_child(mortar)
                     target.add_child(sprite)
                     continue
             var fallback := Polygon2D.new()

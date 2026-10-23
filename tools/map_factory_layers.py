@@ -112,6 +112,7 @@ def create_layer_stack(snapshot,catalog):
         "tile_size":snapshot["tile_size"],"size":snapshot["size"],
         "origin":snapshot["ground_offset"],
         "floor_pattern_ids":snapshot.get("floor_ids",[]),
+        **({"floor_tile_style":deepcopy(snapshot["floor_tile_style"])} if "floor_tile_style" in snapshot else {}),
         "overrides":deepcopy(snapshot.get("tile_overrides",[])),
         **({"footprint":deepcopy(snapshot["floor_footprint"])} if "floor_footprint" in snapshot else {})
       },
