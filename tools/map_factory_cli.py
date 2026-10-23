@@ -81,6 +81,109 @@ def tile_override_lookup(snapshot):
             for e in snapshot.get("tile_overrides", [])}
 
 
+TRAVERSAL_MODES = frozenset(("walk", "fly", "swim"))
+SURFACES = frozenset(("stone", "wood", "sand", "grass", "water",
+                      "lava", "void", "bridge", "stairs", "roof", "other"))
+QA_STATUSES = frozenset(("needs_review", "approved", "rejected"))
+
+
+def _number(value):
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+
+def _point(value):
+    return isinstance(value, list) and len(value) == 2 and all(_number(n) for n in value)
+
+
+def _ability_list(value):
+    return (isinstance(value, list) and len(set(map(str, value))) == len(value)
+            and all(isinstance(a, str) and re.fullmatch(r"[a-z][a-z0-9_]{0,63}", a)
+                    for a in value))
+
+
+def _modes(value):
+    return isinstance(value, list) and bool(value) and len(value) == len(set(value)) and all(
+        isinstance(mode, str) and mode in TRAVERSAL_MODES for mode in value)
+
+
+def validate_navigation(nav: dict, placed_instance_ids):
+    """Validate map-side traversability metadata only; do not control characters."""
+    if not isinstance(nav, dict) or nav.get("schema_version") != 1:
+        raise ValueError("navigation must have schema_version=1")
+    size = nav.get("grid_size")
+    origin = nav.get("origin")
+    cell_size = nav.get("cell_size")
+    if (not isinstance(size, list) or len(size) != 2 or
+            any(type(x) is not int or x <= 0 for x in size)):
+        raise ValueError("navigation.grid_size must be two positive integers")
+    if not _point(origin) or not _number(cell_size) or cell_size <= 0:
+        raise ValueError("navigation origin/cell_size invalid")
+    default = nav.get("default")
+    if not isinstance(default, dict) or any(type(default.get(m)) is not bool
+                                             for m in TRAVERSAL_MODES):
+        raise ValueError("navigation.default must explicitly define walk/fly/swim booleans")
+    seen = set()
+    for region in nav.get("regions", []):
+        if not isinstance(region, dict):
+            raise ValueError("Navigation region must be object")
+        ident = region.get("id")
+        if not isinstance(ident,str) or not re.fullmatch(r"[a-z][a-z0-9_]{0,63}",ident) or ident in seen:
+            raise ValueError("Invalid/duplicate navigation region ID")
+        seen.add(ident)
+        rect = region.get("rect")
+        if not isinstance(rect,list) or len(rect)!=4 or any(type(x) is not int for x in rect):
+            raise ValueError("navigation region rect must be [cell_x,cell_y,width,height]")
+        x,y,w,h = rect
+        if x<0 or y<0 or w<=0 or h<=0 or x+w>size[0] or y+h>size[1]:
+            raise ValueError("Navigation region out of bounds: "+ident)
+        if region.get("surface") not in SURFACES:
+            raise ValueError("Invalid surface type: "+ident)
+        if not _modes(region.get("allow", [])):
+            raise ValueError("Navigation region must explicitly allow one or more modes: "+ident)
+        if not _number(region.get("floor_height",0)):
+            raise ValueError("Invalid floor_height: "+ident)
+        ceiling = region.get("ceiling_height")
+        if ceiling is not None and (
+            not _number(ceiling) or ceiling <= region.get("floor_height",0)):
+            raise ValueError("ceiling_height must be greater than floor_height: "+ident)
+        required=region.get("requires",{})
+        if not isinstance(required,dict) or any(
+            m not in TRAVERSAL_MODES or not _ability_list(v)
+            for m,v in required.items()
+        ):
+            raise ValueError("Invalid navigation required abilities: "+ident)
+        if region.get("review_status","needs_review") not in QA_STATUSES:
+            raise ValueError("Unknown navigation review_status")
+    for obstacle in nav.get("obstacles", []):
+        if not isinstance(obstacle,dict):
+            raise ValueError("Invalid navigation obstacle")
+        instance=obstacle.get("instance_id")
+        if instance not in placed_instance_ids:
+            raise ValueError("Navigation obstacle references unknown block: "+str(instance))
+        if not _modes(obstacle.get("blocks")):
+            raise ValueError("Obstacle blocks must list movement modes")
+        lo,hi=obstacle.get("min_altitude",0),obstacle.get("max_altitude")
+        if not _number(lo) or not _number(hi) or hi <= lo:
+            raise ValueError("Obstacle altitude band is invalid")
+    for link in nav.get("links", []):
+        if not isinstance(link,dict) or not isinstance(link.get("id"),str):
+            raise ValueError("Invalid navigation link")
+        if not _point(link.get("from")) or not _point(link.get("to")):
+            raise ValueError("Navigation link must define from/to coordinates")
+        if not _modes(link.get("modes")) or not _ability_list(link.get("requires",[])):
+            raise ValueError("Invalid link modes/abilities")
+    return True
+
+
+def validate_visual_qa(qa):
+    if not isinstance(qa,dict) or qa.get("status") not in QA_STATUSES:
+        raise ValueError("visual_qa requires status=needs_review/approved/rejected")
+    if qa.get("status") == "approved":
+        if not qa.get("reference_sha256") or not qa.get("preview_path") or not qa.get("reviewer"):
+            raise ValueError("Approved visual_qa requires reference SHA, preview and reviewer")
+    return True
+
+
 def validate_room(data, catalog, expect_map_id=None):
     if not isinstance(data, dict):
         raise ValueError("Map must be a JSON object")
@@ -158,6 +261,10 @@ def validate_room(data, catalog, expect_map_id=None):
         if item["instance_id"] in seen:
             raise ValueError("Duplicate effect instance")
         seen.add(item["instance_id"])
+    if "navigation" in data:
+        validate_navigation(data["navigation"], seen)
+    if "visual_qa" in data:
+        validate_visual_qa(data["visual_qa"])
     return True
 
 
@@ -348,7 +455,7 @@ def apply_changes(snapshot, manifest, catalog):
             key=operation["key"]
             allowed={"description","background_color","canvas_size","tile_size",
                      "size","ground_offset","floor_ids","ocean","effects",
-                     "source_image","floor_art","composition_reference"}
+                     "source_image","floor_art","composition_reference", "navigation", "visual_qa"}
             if key not in allowed:
                 raise ValueError("Forbidden map-only property: "+str(key))
             result[key]=deepcopy(operation["value"])
