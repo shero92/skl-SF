@@ -53,3 +53,7 @@ sprites, blue and gold furniture, strong stylized pixel clusters and consistent
 Machine-readable report: map_factory/metadata/quality_review.json
 All assets remain needs_cleanup until manual fidelity review.
 Stable IDs, exact image dimensions, pivots and collisions preserved.
+
+## Individual wall-lantern cutout corrections
+
+D008 and D009 previously contained unrelated neighboring objects from a concept-sheet crop. The cleaned sprites preserve their actual source pixels; the PNG canvas now tightly fits each wall-mounted lantern. Metadata pixel_size and bottom-center origin have been updated. Art review for shadows and alpha fringing is still pending.

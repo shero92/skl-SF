@@ -110,8 +110,8 @@
         64,
         64
       ],
-      "bytes": 2673,
-      "sha256": "59bb9a5c4f021cdf2aa383758d408bfa1cd4163b75f50b699a8a0a872fe20901",
+      "bytes": 7343,
+      "sha256": "bc159355c6e48329ff38b27d2c4db6e1587675b5abd2424b7837985a9d339689",
       "warnings": []
     },
     {
@@ -129,8 +129,8 @@
         64,
         64
       ],
-      "bytes": 2641,
-      "sha256": "ad274c6b4b4f2e32b15a97cad162d33f8fe048c91c7c37aaa283735388037458",
+      "bytes": 7331,
+      "sha256": "e62a8b664b38ad0931fb3896a2607fce80b8d9e7e7139e80c08eef909623323e",
       "warnings": []
     },
     {
@@ -148,8 +148,8 @@
         64,
         64
       ],
-      "bytes": 2682,
-      "sha256": "a9c88c549695723fb62f70eabe643e6c2df2b8ee64315842ac91483f767b9c07",
+      "bytes": 6964,
+      "sha256": "e24517504616c7750eaca2db18415ebdf7e2bbb9a093f3818de7ddd019efdf7e",
       "warnings": []
     },
     {
@@ -188,8 +188,8 @@
         64,
         64
       ],
-      "bytes": 2496,
-      "sha256": "1abaed0f5957435794d6839051afaa8a2e42e37f272252e72ce472b68c798504",
+      "bytes": 6893,
+      "sha256": "51fc6cf7d6ac2b87bd693a44f6cd43a927000fd7bf8bd5a46b789c59ce7c94b8",
       "warnings": []
     },
     {
@@ -207,8 +207,8 @@
         64,
         64
       ],
-      "bytes": 2518,
-      "sha256": "d362aa9794da0eb36c120a4b57cebd3a6a96e8c2b75bc91907a110cc811aa06e",
+      "bytes": 6880,
+      "sha256": "9264e32f4cf78925691f92ed5ce2a2a0602dcad8eb6aae4e3a405abb18826a1d",
       "warnings": []
     },
     {
@@ -226,8 +226,8 @@
         64,
         64
       ],
-      "bytes": 2510,
-      "sha256": "37f9d9c1fc98e5823e9a24d32a37057b97d90bff9e6bdb5f04c3f6c876a6f2bd",
+      "bytes": 6883,
+      "sha256": "6078a80a1da7c6a37a4cb8ebdc4ae015f029f33322118f82e75fbef317181a2f",
       "warnings": []
     },
     {
@@ -266,8 +266,8 @@
         64,
         64
       ],
-      "bytes": 2362,
-      "sha256": "a2a991d6c2b550f294b36bbc81bae0b53b77dc97bcef2c40408dc7653bad1554",
+      "bytes": 6659,
+      "sha256": "3df681e336b674ffe34445bf6cd7b19fa3b59ebafa16f8d85473bf542fd35645",
       "warnings": []
     },
     {
@@ -285,8 +285,8 @@
         64,
         64
       ],
-      "bytes": 2378,
-      "sha256": "b29be4364fa58609f4ce0969fb9c5cebb90af4c4464e237c1b741a84ebca5a82",
+      "bytes": 6584,
+      "sha256": "aff4d2daa761f0bd896da9dc9ce89ee42a6e2e5f904825fa694c0f7d0343e28f",
       "warnings": []
     },
     {
@@ -304,8 +304,8 @@
         64,
         64
       ],
-      "bytes": 2357,
-      "sha256": "59bd8f6e5981f7a4037cf242fbb480639860d1663e5dc9ecfaf3fbbea5ab663d",
+      "bytes": 6702,
+      "sha256": "539d2dbe8ca323621a37aed1a53b2db84523ccea9216ad9ddf4149cabb02f38c",
       "warnings": []
     },
     {
@@ -313,189 +313,171 @@
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        473,
-        464
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
-        1,
         0,
-        473,
-        464
+        0,
+        64,
+        64
       ],
-      "bytes": 307182,
-      "sha256": "bbc1b47205213984808bf4644d915c8ee415f30fcdaacc33cf47e6f3bd9b3fa2",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 1470,
+      "sha256": "aa8d6e7b7e3a6d6dfbbb268045a0fb1f2b547e3fc488cc35cfdb60a6f1412039",
+      "warnings": []
     },
     {
       "id": "F015",
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        245,
-        123
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
-        1,
-        1,
-        244,
-        123
+        0,
+        0,
+        64,
+        64
       ],
-      "bytes": 47185,
-      "sha256": "7efe1283dc6447ba8700c4137c135c286c9081df1b247225d0db304902286958",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 3872,
+      "sha256": "5a8966168b0b702901743a90342d80342d833f881679e2e49e57c3f616990283",
+      "warnings": []
     },
     {
       "id": "F016",
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        239,
-        122
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
-        1,
-        1,
-        238,
-        122
+        0,
+        0,
+        64,
+        64
       ],
-      "bytes": 47186,
-      "sha256": "67cfcbf88a36be91013a34273ad641f6d193b9c15668f0e82f9cec4c1d882197",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 3660,
+      "sha256": "1f1999fe71d180bdc2e6be078bb046cdbdcb261dd9eae863498d38350db0d769",
+      "warnings": []
     },
     {
       "id": "F017",
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        109,
-        193
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
-        1,
         0,
-        109,
-        193
+        0,
+        64,
+        64
       ],
-      "bytes": 34251,
-      "sha256": "872d59a2e2241263c3fdb9e46390ab036bb2bbaf87d5493fa0fcc5e4814d0600",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 3585,
+      "sha256": "3ff272affaf476380e15ffaf6411a1b128d949caf60ac15394a3d24dfe95117e",
+      "warnings": []
     },
     {
       "id": "F018",
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        102,
-        185
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
         0,
-        1,
-        101,
-        185
+        0,
+        64,
+        64
       ],
-      "bytes": 33378,
-      "sha256": "abd93d76bd0cdb28906c8ad07ed20443eb14c760ebccaa906cfb698c7863ec4b",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 3823,
+      "sha256": "40c542dbaf909782b39603b60461c0ea85cd556d22080630bef3c2a9545c7cd4",
+      "warnings": []
     },
     {
       "id": "F019",
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        126,
-        127
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
         0,
-        1,
-        126,
-        127
+        0,
+        64,
+        64
       ],
-      "bytes": 26741,
-      "sha256": "a9666feac657e30312c519a75643500c04827714fee3592dc7cff4d578f5130b",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 7115,
+      "sha256": "126e9267bbc85d9142a0f163b44f63cfb76079f7915b0060538121ce5858716d",
+      "warnings": []
     },
     {
       "id": "F020",
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        134,
-        128
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
-        1,
-        1,
-        133,
-        128
+        0,
+        0,
+        64,
+        64
       ],
-      "bytes": 28393,
-      "sha256": "10e4b6bb72cd8c18ced0576187847f17f2f61b372e2e0b6caa5d1bf661354422",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 7120,
+      "sha256": "7af0728656286b41b36d6c011c95b1f44e2a3d75ae329fea903cd262bd3fd5f9",
+      "warnings": []
     },
     {
       "id": "F021",
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        128,
-        119
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
         0,
         0,
-        127,
-        119
+        64,
+        64
       ],
-      "bytes": 27663,
-      "sha256": "68cc81dbd69dd7e116dc9ac038e0c5edea00c8f258f69c9da72234d407c0d39d",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 6964,
+      "sha256": "75d8ea5948d0f3808eb5465c61fe17f00a7b83976166ee02858610cd39ff7f50",
+      "warnings": []
     },
     {
       "id": "F022",
       "category": "floors",
       "status": "needs_cleanup",
       "pixel_size": [
-        131,
-        119
+        64,
+        64
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
-        1,
-        1,
-        130,
-        119
+        0,
+        0,
+        64,
+        64
       ],
-      "bytes": 26652,
-      "sha256": "4c0794f94dc3b48dfac3e896f96bf4f024b6f86091c5c8fab9cc5de815c78560",
-      "warnings": [
-        "non_square_floor_tile_or_decal"
-      ]
+      "bytes": 7074,
+      "sha256": "b0fdf977e6678eab6401fca65836fec07e050a9425cf6afdca9630949614b198",
+      "warnings": []
     },
     {
       "id": "W001",
@@ -3257,18 +3239,18 @@
       "category": "decor",
       "status": "needs_cleanup",
       "pixel_size": [
-        164,
+        94,
         175
       ],
       "has_transparency": true,
       "alpha_bbox": [
         1,
-        12,
-        164,
+        14,
+        92,
         175
       ],
-      "bytes": 54858,
-      "sha256": "a436aeefd5fb7f832cf9a7bfed13380e9c7fa492fa23d8bc50c044b8644ce37e",
+      "bytes": 31497,
+      "sha256": "7850cf401249b567751d16fe3285ef7362f71f08188d1ebe806befee6954256a",
       "warnings": []
     },
     {
@@ -3276,18 +3258,18 @@
       "category": "decor",
       "status": "needs_cleanup",
       "pixel_size": [
-        140,
+        116,
         166
       ],
       "has_transparency": true,
       "alpha_bbox": [
         0,
         1,
-        140,
+        116,
         166
       ],
-      "bytes": 50114,
-      "sha256": "16263103f71eea9df752f7e8718876fa40652e003d6eb2fbb4dbc6579519a056",
+      "bytes": 47437,
+      "sha256": "e3fb1c1d71d2ce4528fae4fa26096039f71ca3a61390cf54cd3f7ecbef80367c",
       "warnings": []
     },
     {
@@ -4003,15 +3985,15 @@
         860,
         168
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
-        2,
-        2,
-        858,
-        166
+        0,
+        0,
+        860,
+        168
       ],
-      "bytes": 1278,
-      "sha256": "0f408154b0e34efc54e981aa894140db3585795c3260ab21747d11b6a2c3a22f",
+      "bytes": 18233,
+      "sha256": "e154a137d561f2b44e236cb97ed6e584db20f09280a1425c801fba7fc4813671",
       "warnings": []
     },
     {
@@ -4062,13 +4044,13 @@
       ],
       "has_transparency": true,
       "alpha_bbox": [
-        2,
-        2,
-        140,
-        158
+        0,
+        0,
+        142,
+        160
       ],
-      "bytes": 737,
-      "sha256": "739cc2c83acf4546d519dcdb6b88c3a1bc7e546eb749c253e27592262ee3ec29",
+      "bytes": 702,
+      "sha256": "87b342952a5288ff5110676dfe48b1fc898a1f553d59019114fab058eb459cf4",
       "warnings": []
     },
     {
@@ -4082,12 +4064,12 @@
       "has_transparency": true,
       "alpha_bbox": [
         18,
-        22,
-        48,
-        43
+        20,
+        49,
+        44
       ],
-      "bytes": 244,
-      "sha256": "7860d26e3809251a5ec6103e376e50b21d4a6d2d55dea97a387a178de7cd427c",
+      "bytes": 408,
+      "sha256": "43053f768fd75abfbd19a6e9de6f9a5fbf1b0f9bb253d55aae63d011e94caa93",
       "warnings": []
     },
     {
@@ -4193,15 +4175,15 @@
         360,
         72
       ],
-      "has_transparency": true,
+      "has_transparency": false,
       "alpha_bbox": [
-        2,
-        2,
-        358,
-        70
+        0,
+        0,
+        360,
+        72
       ],
-      "bytes": 662,
-      "sha256": "2b4baef945d9991669b8870e606439643b17dddfe02e48bc25f4dea04e52faaa",
+      "bytes": 4497,
+      "sha256": "8438f6b1261a0db6e1fcb8c088c3079958bbc5e2cde9a203a4e39ed047168ca0",
       "warnings": []
     },
     {
@@ -4214,13 +4196,13 @@
       ],
       "has_transparency": true,
       "alpha_bbox": [
-        5,
-        4,
-        60,
-        60
+        1,
+        2,
+        54,
+        51
       ],
-      "bytes": 405,
-      "sha256": "2e0bc16784a15f6577e006cd548d54993959bb2f1c71b3d3578542f4dec3794b",
+      "bytes": 440,
+      "sha256": "553e0db88aef3bce3e1d130b25379c31d0149b39d252ed32de5e8b69a10b4d92",
       "warnings": []
     }
   ],

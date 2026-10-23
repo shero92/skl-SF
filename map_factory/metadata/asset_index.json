@@ -7786,11 +7786,11 @@
       "texture_path": "res://map_factory/parts/decor/D008_Lantern_Wall_Left.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        164,
+        94,
         175
       ],
       "origin": [
-        82,
+        47,
         175
       ],
       "collision": {
@@ -7819,10 +7819,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "seaside_ruin_garden_sprite_sheet.png"
+        "kind": "curated_individual_crop",
+        "parent": "original_high_detail_atlas",
+        "tool": "tools/curate_wall_lanterns.py",
+        "revision": 2
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection.; stray atlas label/crop debris removed."
+      "qa_notes": "Removed unrelated adjacent lantern or wall from high-detail source; verify at game scale."
     },
     {
       "id": "D009",
@@ -7832,11 +7834,11 @@
       "texture_path": "res://map_factory/parts/decor/D009_Lantern_Wall_Right.png",
       "status": "needs_cleanup",
       "pixel_size": [
-        140,
+        116,
         166
       ],
       "origin": [
-        70,
+        58,
         166
       ],
       "collision": {
@@ -7865,10 +7867,12 @@
       ],
       "reusable": true,
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "seaside_ruin_garden_sprite_sheet.png"
+        "kind": "curated_individual_crop",
+        "parent": "original_high_detail_atlas",
+        "tool": "tools/curate_wall_lanterns.py",
+        "revision": 2
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection.; stray atlas label/crop debris removed."
+      "qa_notes": "Removed unrelated adjacent lantern or wall from high-detail source; verify at game scale."
     },
     {
       "id": "D010",
