@@ -1,0 +1,36 @@
+name: Repaint sandstone floor and compass tiles
+on:
+  push:
+    paths:
+      - "tools/repaint_sandstone_floor.py"
+      - ".github/workflows/repaint_sandstone_floor.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  art:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install art tools
+        run: python -m pip install "Pillow>=10,<13"
+      - name: Repaint individual floor parts
+        run: python tools/repaint_sandstone_floor.py
+      - name: Validate new compass geometry
+        run: python tools/validate_rooms.py
+      - name: Rebuild QA gallery
+        run: python tools/build_asset_previews.py
+      - name: Commit upgraded tiles and metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add map_factory/parts/floors map_factory/metadata/asset_index.json map_factory/metadata/production_queue.csv docs/FLOOR_REPAINT_QA.md docs/previews/compass_mosaic_review.png docs/previews/sandstone_floor_review.png docs/ASSET_GALLERY.md docs/previews/floors.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Repaint 22 native-size sandstone tiles and coherent nautical compass"
+            git push
+          fi
