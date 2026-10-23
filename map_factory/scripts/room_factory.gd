@@ -42,20 +42,25 @@ func build_room(path: String, parent: Node2D) -> Node2D:
         push_error("Room JSON malformed: " + path)
         return root
     var data: Dictionary = value
+    root.set_meta("map_id", String(data.get("map_id", "legacy_room")))
+    root.set_meta("map_version", int(data.get("version", 0)))
     var backdrop := Polygon2D.new()
-    backdrop.name = "OceanTemporaryColor"
+    backdrop.name = "MapBackdrop"
     var canvas: Array = data.get("canvas_size", [1536, 1024])
     backdrop.polygon = PackedVector2Array([Vector2.ZERO, Vector2(float(canvas[0]), 0),
         Vector2(float(canvas[0]), float(canvas[1])), Vector2(0, float(canvas[1]))])
     backdrop.color = Color(String(data.get("background_color", "#087ac6")))
     root.add_child(backdrop)
 
-    var ocean := OceanBackground.new()
-    ocean.name = "OceanBackground"
-    root.add_child(ocean)
-    var ocean_info: Dictionary = data.get("ocean", {}).duplicate(true)
-    ocean_info["canvas_size"] = canvas
-    ocean.configure(ocean_info, catalog)
+    # No sea in dungeons or indoor chambers unless the map explicitly requests it.
+    var ocean_info: Dictionary = data.get("ocean", {})
+    if not ocean_info.is_empty() and bool(ocean_info.get("enabled", true)):
+        var ocean := OceanBackground.new()
+        ocean.name = "OceanBackground"
+        root.add_child(ocean)
+        var sea_config: Dictionary = ocean_info.duplicate(true)
+        sea_config["canvas_size"] = canvas
+        ocean.configure(sea_config, catalog)
 
     _place_group(data.get("background_objects", []), root, "DistantRuins", false)
     var ground := Node2D.new()
@@ -90,7 +95,7 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
                 var texture := load(path) as Texture2D
                 if texture != null:
                     var sprite := Sprite2D.new()
-                    sprite.name = asset_id
+                    sprite.name = "Floor_" + str(x) + "_" + str(y) + "_" + asset_id
                     sprite.centered = false
                     sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
                     sprite.texture = texture
@@ -114,8 +119,12 @@ func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool
         if typeof(item) != TYPE_DICTIONARY:
             continue
         var asset_id := String(item.get("id", ""))
-        if catalog.get_asset(asset_id).is_empty():
+        var record: Dictionary = catalog.get_asset(asset_id)
+        if record.is_empty():
             push_warning("Unknown asset in room layout: " + asset_id)
+            continue
+        if String(record.get("category", "")) in ["characters", "ui", "shadows"]:
+            push_error("Map factory rejects non-environment sprite " + asset_id)
             continue
         var node := assets.create_asset(asset_id, item)
         node.name = String(item.get("instance_id", asset_id))
