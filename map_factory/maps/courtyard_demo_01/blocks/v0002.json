@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "map_id": "courtyard_demo_01",
+  "version": 2,
+  "source_image": {
+    "path": null,
+    "sha256": null,
+    "status": "no_source_image_yet"
+  },
+  "block_count": 6,
+  "unique_asset_count": 7,
+  "reused_asset_ids": [
+    "A005",
+    "F001",
+    "F002",
+    "P001",
+    "V004",
+    "W001",
+    "W002"
+  ],
+  "placed_blocks": [
+    {
+      "instance_id": "CourtyardArch",
+      "asset_id": "A005",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        328,
+        283
+      ],
+      "anchor": [
+        164,
+        283
+      ],
+      "layer": "back_objects",
+      "position": [
+        850,
+        348
+      ],
+      "scale": 0.85,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "stone",
+        "arch",
+        "with",
+        "ivy"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "CourtyardWallLeft",
+      "asset_id": "W001",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W001_Stone_Wall_Straight.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        179,
+        239
+      ],
+      "anchor": [
+        89,
+        239
+      ],
+      "layer": "back_objects",
+      "position": [
+        420,
+        414
+      ],
+      "scale": 0.85,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "straight"
+      ],
+      "source": {
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
+      }
+    },
+    {
+      "instance_id": "CourtyardWallRight",
+      "asset_id": "W002",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W002_Stone_Wall_Short.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        165,
+        189
+      ],
+      "anchor": [
+        82,
+        189
+      ],
+      "layer": "back_objects",
+      "position": [
+        1260,
+        414
+      ],
+      "scale": 0.85,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "stone",
+        "wall",
+        "short"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "fantasy_mediterranean_ruins_tileset.png"
+      }
+    },
+    {
+      "instance_id": "CourtyardFurniture",
+      "asset_id": "P001",
+      "category": "furniture",
+      "subtype": "hero",
+      "texture_path": "res://map_factory/parts/furniture/P001_Hero_Bed.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        296,
+        339
+      ],
+      "anchor": [
+        148,
+        339
+      ],
+      "layer": "objects",
+      "position": [
+        510,
+        680
+      ],
+      "scale": 0.65,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "hero",
+        "bed"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      }
+    },
+    {
+      "instance_id": "CourtyardVine_01",
+      "asset_id": "V004",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        241,
+        168
+      ],
+      "anchor": [
+        120,
+        168
+      ],
+      "layer": "front_objects",
+      "position": [
+        460,
+        660
+      ],
+      "scale": 0.7,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "horizontal",
+        "long"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    },
+    {
+      "instance_id": "CourtyardVine_02",
+      "asset_id": "V004",
+      "category": "vegetation",
+      "subtype": "ivy",
+      "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        241,
+        168
+      ],
+      "anchor": [
+        120,
+        168
+      ],
+      "layer": "front_objects",
+      "position": [
+        1250,
+        650
+      ],
+      "scale": 0.78,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "vegetation",
+        "ivy",
+        "horizontal",
+        "long"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "seaside_ruin_garden_sprite_sheet.png"
+      }
+    }
+  ],
+  "floor_pattern_ids": [
+    "F001",
+    "F002"
+  ],
+  "floor_overrides": [
+    {
+      "x": 5,
+      "y": 5,
+      "asset_id": "F002",
+      "category": "floors",
+      "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
+      "pixel_size": [
+        161,
+        161
+      ],
+      "asset_status": "needs_cleanup"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "asset_id": "F002",
+      "category": "floors",
+      "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
+      "pixel_size": [
+        161,
+        161
+      ],
+      "asset_status": "needs_cleanup"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "asset_id": "F002",
+      "category": "floors",
+      "texture_path": "res://map_factory/parts/floors/F002_Stone_Floor_Cracked.png",
+      "pixel_size": [
+        161,
+        161
+      ],
+      "asset_status": "needs_cleanup"
+    }
+  ],
+  "effects": [],
+  "note": "Resolved read-only map metadata. Edit map manifests, not this generated index."
+}

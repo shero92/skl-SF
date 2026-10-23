@@ -1,0 +1,10 @@
+{
+  "manifest": "map_factory/intake/pending/create_courtyard_demo_01.json",
+  "manifest_sha256": "7a72e5dc2c27e175e4ba3be71f12e37f98dcc0fd47fd3a72c8ba72934b93c763",
+  "map_id": "courtyard_demo_01",
+  "result_version": 2,
+  "imported_assets": [],
+  "staged_candidates": [],
+  "status": "processed",
+  "source_image": null
+}

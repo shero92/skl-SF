@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "map_id": "courtyard_demo_01",
+  "version": 1,
+  "source_image": {
+    "path": null,
+    "sha256": null,
+    "status": "no_source_image_yet"
+  },
+  "block_count": 0,
+  "unique_asset_count": 2,
+  "reused_asset_ids": [
+    "F001",
+    "F002"
+  ],
+  "placed_blocks": [],
+  "floor_pattern_ids": [
+    "F001",
+    "F002"
+  ],
+  "floor_overrides": [],
+  "effects": [],
+  "note": "Resolved read-only map metadata. Edit map manifests, not this generated index."
+}

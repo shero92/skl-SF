@@ -1,0 +1,96 @@
+{
+  "map_id": "courtyard_demo_01",
+  "base_version": 1,
+  "changes": [
+    {
+      "op": "set_property",
+      "key": "description",
+      "value": "Proof-of-concept coastal courtyard assembled from independent shared map blocks"
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A005",
+        "instance_id": "CourtyardArch",
+        "x": 850,
+        "y": 348,
+        "scale": 0.85
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W001",
+        "instance_id": "CourtyardWallLeft",
+        "x": 420,
+        "y": 414,
+        "scale": 0.85
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W002",
+        "instance_id": "CourtyardWallRight",
+        "x": 1260,
+        "y": 414,
+        "scale": 0.85
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P001",
+        "instance_id": "CourtyardFurniture",
+        "x": 510,
+        "y": 680,
+        "scale": 0.65
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "V004",
+        "instance_id": "CourtyardVine_01",
+        "x": 460,
+        "y": 660,
+        "scale": 0.7
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "V004",
+        "instance_id": "CourtyardVine_02",
+        "x": 1250,
+        "y": 650,
+        "scale": 0.78
+      }
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 5,
+      "id": "F002"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 5,
+      "id": "F002"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 5,
+      "id": "F002"
+    }
+  ],
+  "note": "Preview of generalized reusable map builder. Stone and furniture come from existing catalog; no characters."
+}

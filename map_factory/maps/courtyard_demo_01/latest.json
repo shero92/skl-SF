@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "description": "Proof-of-concept coastal courtyard assembled from independent shared map blocks",
+  "background_color": "#8ac9e8",
+  "canvas_size": [
+    1792,
+    1152
+  ],
+  "tile_size": 64,
+  "size": [
+    24,
+    16
+  ],
+  "ground_offset": [
+    128,
+    64
+  ],
+  "floor_ids": [
+    "F001",
+    "F002"
+  ],
+  "tile_overrides": [
+    {
+      "x": 5,
+      "y": 5,
+      "id": "F002"
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "id": "F002"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "id": "F002"
+    }
+  ],
+  "background_objects": [],
+  "ground_overlays": [],
+  "back_objects": [
+    {
+      "id": "A005",
+      "instance_id": "CourtyardArch",
+      "x": 850,
+      "y": 348,
+      "scale": 0.85
+    },
+    {
+      "id": "W001",
+      "instance_id": "CourtyardWallLeft",
+      "x": 420,
+      "y": 414,
+      "scale": 0.85
+    },
+    {
+      "id": "W002",
+      "instance_id": "CourtyardWallRight",
+      "x": 1260,
+      "y": 414,
+      "scale": 0.85
+    }
+  ],
+  "objects": [
+    {
+      "id": "P001",
+      "instance_id": "CourtyardFurniture",
+      "x": 510,
+      "y": 680,
+      "scale": 0.65
+    }
+  ],
+  "front_objects": [
+    {
+      "id": "V004",
+      "instance_id": "CourtyardVine_01",
+      "x": 460,
+      "y": 660,
+      "scale": 0.7
+    },
+    {
+      "id": "V004",
+      "instance_id": "CourtyardVine_02",
+      "x": 1250,
+      "y": 650,
+      "scale": 0.78
+    }
+  ],
+  "effects": [],
+  "navigation": {
+    "schema_version": 1,
+    "grid_size": [
+      24,
+      16
+    ],
+    "origin": [
+      128,
+      64
+    ],
+    "cell_size": 64,
+    "default": {
+      "walk": false,
+      "fly": false,
+      "swim": false
+    },
+    "regions": [],
+    "obstacles": [],
+    "links": []
+  },
+  "map_id": "courtyard_demo_01",
+  "version": 2,
+  "parent_version": 1,
+  "created_at": "2026-10-23T12:56:53+00:00",
+  "preset": "courtyard",
+  "source_image": {
+    "path": null,
+    "sha256": null,
+    "status": "no_source_image_yet"
+  },
+  "visual_qa": {
+    "status": "needs_review"
+  },
+  "change_note": "Preview of generalized reusable map builder. Stone and furniture come from existing catalog; no characters."
+}
