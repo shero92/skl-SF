@@ -51,8 +51,12 @@ def process(root=ROOT):
             if not from_map:
                 raise ValueError("Clone mode requires from_map")
             clone_map(root,map_id,from_map)
-            if doc.get("changes"):
-                patch={"map_id":map_id,"base_version":1,"changes":doc["changes"],
+            clone_ops=list(doc.get("changes",[]))
+            if doc.get("source_image") and not clone_ops:
+                clone_ops.append({"op":"set_property","key":"source_image",
+                                  "value":doc["source_image"]})
+            if clone_ops:
+                patch={"map_id":map_id,"base_version":1,"changes":clone_ops,
                        "note":doc.get("note","Cloned room modified from latest parent")}
                 if doc.get("source_image"):
                     patch["source_image"]=doc["source_image"]

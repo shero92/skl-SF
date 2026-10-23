@@ -28,8 +28,12 @@ def main():
     records=curr["assets"]
     errors=[]
     notes=[]
-    if len(records)!=218:
-        fail("Index count must remain 218 or be intentionally migrated",errors)
+    # New reusable map blocks may grow the catalog. Never silently delete IDs.
+    deleted_ids=set(old)-{a.get("id") for a in records}
+    if deleted_ids:
+        fail("Existing catalog IDs removed: "+", ".join(sorted(deleted_ids)),errors)
+    if len(records)<len(old):
+        fail("Asset count unexpectedly decreased",errors)
     ids=set()
     for a in records:
         ident=a.get("id")
