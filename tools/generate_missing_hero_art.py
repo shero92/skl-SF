@@ -47,13 +47,22 @@ def irregular_segment(width=340,height=248,right=False):
     add(canvas,"V012",192,17,62)
     add(canvas,"V011",46,49,76)
     add(canvas,"V013",240,64,75)
+    # Remove legacy screenshot-like ocean blue bands and dark ruler lines.
+    px=canvas.load()
+    for yy in range(154,height):
+        for xx in range(width):
+            r,g,b,a=px[xx,yy]
+            if a and ((b>112 and b>r*1.36 and b>g*1.12) or
+                      (yy>188 and r<50 and g<71 and b<94) or
+                      (yy>212 and b>170 and g>132 and r>111)):
+                px[xx,yy]=(r,g,b,0)
     if right:
         canvas=canvas.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
     return canvas
 
 def deep_corner():
     canvas=Image.new("RGBA",(246,238))
-    add(canvas,"E006",20,64,206)
+    add(canvas,"W005",24,53,192)
     add(canvas,"W008",18,32,115)
     add(canvas,"W017",114,37,122)
     add(canvas,"ST011",145,39,63)
@@ -138,6 +147,32 @@ def shrine():
     d.ellipse((131,176,148,193),fill=(232,170,37,255),outline=(79,48,23,255),width=3)
     d.line((139,172,139,196),fill=(35,90,156,255),width=2)
     d.line((127,184,152,184),fill=(35,90,156,255),width=2)
+    # LAST overlay: keep the entire ivory deer skull in FRONT of the foliage.
+    face=[(110,92),(123,80),(145,81),(160,95),(165,118),
+          (154,142),(147,168),(139,192),(129,181),(121,162),
+          (109,134),(105,109)]
+    d.polygon(face,fill=(70,45,29,255))
+    d.polygon([(115,95),(125,85),(144,85),(158,96),(159,114),
+               (150,135),(145,160),(139,180),(133,183),
+               (124,151),(115,129),(110,109)],
+              fill=(245,227,184,255))
+    d.polygon([(115,97),(125,88),(138,88),(133,119),(119,124)],
+              fill=(255,250,216,255))
+    d.polygon([(144,89),(157,97),(157,116),(146,130),(138,118)],
+              fill=(215,183,130,255))
+    d.polygon([(111,117),(124,124),(127,138),(121,145),(114,133)],
+              fill=(42,33,26,255))
+    d.polygon([(144,125),(156,115),(153,138),(144,145),(140,136)],
+              fill=(43,31,25,255))
+    d.polygon([(130,144),(134,156),(139,151),(142,165),(133,169)],
+              fill=(44,31,26,255))
+    d.line([(122,154),(129,177),(136,186)],fill=(170,132,81,255),width=3)
+    d.line([(147,153),(140,182)],fill=(167,127,78,255),width=3)
+    for xx in (129,133,138,142):
+        d.line([(xx,173),(xx-1,182)],fill=(255,244,210,255),width=2)
+    d.ellipse((129,191,148,210),fill=(217,164,47,255),
+              outline=(91,60,28,255),width=3)
+    d.ellipse((136,198,142,204),fill=(29,101,173,255))
     return im
 
 def sunlight_shadow():
