@@ -29,6 +29,6 @@
   "art_integration_enabled": false,
   "graphics_issue_enabled": false,
   "execution_timeout_seconds": 1800,
-  "godot_executable": "godot",
+  "godot_executable": "C:\\Users\\shiya_8v7nrr4\\Documents\\AncientSeal-DevTools\\runtime\\godot\\Godot_v4.7.2-stable_win64_console.exe",
   "godot_qa_headless": true
 }
