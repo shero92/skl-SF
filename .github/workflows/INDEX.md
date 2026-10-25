@@ -2,6 +2,7 @@
 
 | Work type | Main workflow(s) |
 | --- | --- |
+| Four daily long-goal scans, task proposals and prompts | `daily_goal_task_factory.yml` (PR-only) |
 | Project parser / headless Godot | `godot_validate.yml` |
 | Map version registry and unit tests | `validate_map_factory.yml` |
 | Every-map Godot smoke/facing checks | `map_factory_godot_smoke.yml` |

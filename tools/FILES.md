@@ -28,6 +28,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`generate_missing_hero_art.py`](generate_missing_hero_art.py)
 - [`generate_project_indexes.py`](generate_project_indexes.py)
 - [`generate_remaining_art.py`](generate_remaining_art.py)
+- [`goal_task_factory.py`](goal_task_factory.py)
 - [`import_asset_pack.py`](import_asset_pack.py)
 - [`import_map_assets.py`](import_map_assets.py)
 - [`map_factory_cli.py`](map_factory_cli.py)

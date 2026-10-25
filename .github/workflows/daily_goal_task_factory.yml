@@ -1,0 +1,79 @@
+name: Daily Goal Task Factory
+on:
+  schedule:
+    - cron: '17 1,7,13,19 * * *'
+      timezone: Europe/Berlin
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+concurrency:
+  group: daily-goal-task-factory
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Open persistent planning branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code origin refs/heads/automation/daily-queue > /dev/null; then
+            git fetch origin automation/daily-queue
+            git switch -C automation/daily-queue origin/automation/daily-queue
+            git rebase origin/main
+          else
+            git switch -c automation/daily-queue
+          fi
+      - name: Plan next small tasks
+        run: python3 tools/goal_task_factory.py pulse
+      - name: Regenerate indexes and status
+        run: |
+          python3 tools/agent_workflow.py --write
+          python3 tools/generate_project_indexes.py --write
+      - name: Validate artifacts
+        run: |
+          python3 -m unittest discover -s tools/tests -p 'test_goal_task_factory.py' -v
+          python3 tools/agent_workflow.py --check
+          python3 tools/generate_project_indexes.py --check
+      - name: Commit daily plan to review branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          git add -A -- .agents/planner .agents/tasks .agents/project/TASKS.md ':(glob)**/FILES.md'
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh daily goal and task queue"
+            git push --force-with-lease origin HEAD:automation/daily-queue
+          fi
+          if ! gh pr list --head automation/daily-queue --base main --state open --json number --jq '.[0].number' | grep -q '[0-9]'; then
+            if ! git diff --quiet origin/main...HEAD; then
+              if ! gh pr create --base main --head automation/daily-queue \
+                --title "Daily goal and task planning queue" \
+                --body "Automatically generated reviewable task proposals. No unattended coding or production artwork. Please review before merge."; then
+                echo "::warning::PR creation requires repository Actions permission. Planning branch was pushed; review it manually."
+              fi
+            fi
+          fi
+      - name: Notify on verified long-goal completion
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python3 tools/goal_task_factory.py completed > /tmp/completed-goals.json
+          python3 -c 'import json;print("\n".join(x["id"]+"\t"+x["title"] for x in json.load(open("/tmp/completed-goals.json"))))' |
+          while IFS=$'\t' read -r goal title; do
+            [ -n "$goal" ] || continue
+            label="[Goal complete] $goal"
+            if ! gh issue list --state all --limit 100 --json title --jq '.[].title' | grep -Fxq "$label"; then
+              gh issue create --title "$label" --assignee shero92 \
+                --body "Verified in repo: $title. All linked tasks are done with PR evidence and final_verified=true."
+            fi
+          done

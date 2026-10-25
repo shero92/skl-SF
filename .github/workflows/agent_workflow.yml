@@ -14,3 +14,5 @@ jobs:
         run: python3 tools/agent_workflow.py --check
       - name: Verify code/graphics boundary and deduplication rules
         run: python3 -m unittest discover -s tools/tests -p 'test_agent_workflow.py' -v
+      - name: Verify goal planner, prompt and claim safeguards
+        run: python3 -m unittest discover -s tools/tests -p 'test_goal_task_factory.py' -v

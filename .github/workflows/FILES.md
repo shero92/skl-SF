@@ -23,6 +23,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`create_missing_hero_art.yml`](create_missing_hero_art.yml)
 - [`curate_high_detail_sprites.yml`](curate_high_detail_sprites.yml)
 - [`curate_wall_lanterns.yml`](curate_wall_lanterns.yml)
+- [`daily_goal_task_factory.yml`](daily_goal_task_factory.yml)
 - [`generate_character_art.yml`](generate_character_art.yml)
 - [`generate_core_assets.yml`](generate_core_assets.yml)
 - [`generate_missing_details.yml`](generate_missing_details.yml)
