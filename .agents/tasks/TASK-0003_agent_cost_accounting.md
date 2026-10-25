@@ -1,6 +1,6 @@
 ---
 id: TASK-0003
-status: review
+status: done
 owner: coding-agent
 branch: feat/agent-task-cost-accounting
 depends_on: none
@@ -15,10 +15,10 @@ Goal: commit one cost receipt with every coding task and build a transparent tas
 - [x] Capture local Claude/Codex sessions, preserving unknown values.
 - [x] Produce committed receipts and generated leaderboard, without transcripts.
 - [x] Add CI/unit test checks.
-- [ ] Review PR and test on one real session from each CLI.
+- [x] PR #4 merged; Claude token/cost and Codex token capture tested on actual CLI sessions.
 
 ## Evidence / handoff
 - Changes: tools/agent_costs.py, tools/tests/test_agent_costs.py, project hooks, monitoring records, GitHub Actions.
 - Tests: GitHub workflow agent_costs.yml, pending real-client verification.
-- PR: branch feat/agent-task-cost-accounting.
-- Next: verify the hooks on both local agents and merge after review.
+- PR: https://github.com/shero92/skl-SF/pull/4 (merged).
+- Next: maintain model pricing and measurement coverage as clients change.

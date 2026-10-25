@@ -2,6 +2,12 @@
 
 **Source of truth for live status:** one `../tasks/TASK-####_*.md` file per task. The auto-generated `../project/TASKS.md` is only a tiny index; Git commits/PRs are the source of truth for what code actually changed. Keep `../project/PLAN.md` as milestones, not a duplicate checklist.
 
+## Long goals and explicit user prompts
+- Follow .agents/planner/PROMPT_RULES.md: narrow scope, evidence, exact file and verified line, tests and acceptance criteria.
+- A specific user bug/feature becomes a request using goal_task_factory.py request; requests outrank general goals.
+- Long goals are recorded in .agents/planner/goals.json with approved steps. Scheduled analysis runs 4/day and proposes task files via PR, not production code.
+- Claim a task before starting a new Claude/Codex session. Suggested agent routing is a heuristic, not a measured quality claim.
+
 ## Before starting
 1. Check `../project/TASKS.md` for an active task, owner, dependency and any related GitHub Issue/PR.
 2. Open only that task and the feature-specific files through the root/folder indexes.
