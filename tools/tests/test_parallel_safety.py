@@ -47,6 +47,13 @@ class ParallelSafety(unittest.TestCase):
         self.assertNotIn('dangerously-bypass-approvals',text)
         self.assertIn('execution_enabled',text)
         self.assertIn('git("revert","-m","1"',text)
+    def test_first_supervised_run_requires_interactive_owner_consent(self):
+        code=(TOOLS/"agent_runner.py").read_text(encoding="utf8")
+        self.assertIn('mode.add_argument("--supervised"',code)
+        self.assertIn("sys.stdin.isatty()",code)
+        self.assertIn('typed != "SUPERVISE "+tid',code)
+        self.assertIn("supervised_e2e_passed",code)
+
     def test_untrusted_task_test_cannot_inject_shell(self):
         rs.safe_test(["python","-m","unittest","discover","-s","tools/tests"])
         for cmd in (["powershell","-Command","Remove-Item"],
