@@ -15,6 +15,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`audit_room_assets.py`](audit_room_assets.py)
 - [`build_asset_previews.py`](build_asset_previews.py)
 - [`capture_map_previews.gd`](capture_map_previews.gd)
+- [`capture_map_previews.gd.uid`](capture_map_previews.gd.uid)
 - [`check_floor_emblem.py`](check_floor_emblem.py)
 - [`create_hero_new_parts_preview.py`](create_hero_new_parts_preview.py)
 - [`curate_high_detail_sprites.py`](curate_high_detail_sprites.py)
@@ -29,6 +30,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`import_map_assets.py`](import_map_assets.py)
 - [`map_factory_cli.py`](map_factory_cli.py)
 - [`map_factory_godot_smoke.gd`](map_factory_godot_smoke.gd)
+- [`map_factory_godot_smoke.gd.uid`](map_factory_godot_smoke.gd.uid)
 - [`map_factory_layers.py`](map_factory_layers.py)
 - [`map_factory_orientation.py`](map_factory_orientation.py)
 - [`prepare_map_reference.py`](prepare_map_reference.py)
@@ -40,6 +42,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`repaint_sandstone_floor.py`](repaint_sandstone_floor.py)
 - [`restore_high_detail_floors.py`](restore_high_detail_floors.py)
 - [`test_cardinal_map_blocks.gd`](test_cardinal_map_blocks.gd)
+- [`test_cardinal_map_blocks.gd.uid`](test_cardinal_map_blocks.gd.uid)
 - [`validate_rooms.py`](validate_rooms.py)
 - [`verify_map_assets.py`](verify_map_assets.py)
 

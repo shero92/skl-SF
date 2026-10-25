@@ -11,8 +11,12 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`asset_catalog.gd`](asset_catalog.gd)
+- [`asset_catalog.gd.uid`](asset_catalog.gd.uid)
 - [`asset_factory.gd`](asset_factory.gd)
+- [`asset_factory.gd.uid`](asset_factory.gd.uid)
 - [`room_factory.gd`](room_factory.gd)
+- [`room_factory.gd.uid`](room_factory.gd.uid)
 - [`shadow_factory.gd`](shadow_factory.gd)
+- [`shadow_factory.gd.uid`](shadow_factory.gd.uid)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
