@@ -10,7 +10,7 @@
 
 ## Cost receipts for Claude Code and Codex
 - Start the TASK-#### tracker BEFORE a fresh agent session: `python3 tools/agent_costs.py start TASK-#### --agent claude|codex`.
-- Before committing task code run `python3 tools/agent_costs.py finish`. Include the receipt and generated summaries in the same commit, with Task-ID and Agent commit trailers.
+- Before committing task code run `python3 tools/agent_costs.py finish`. Include the receipt and generated summaries in the same commit, with Task-ID, Agent and Cost-USD commit trailers.
 - Missing or unavailable cost remains unknown (null), not $0. Never commit local transcripts. Read `.agents/monitoring/README.md` for detailed procedure.
 
 ## States and completion
