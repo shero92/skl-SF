@@ -131,7 +131,7 @@ def compare(gid):
             digest=hashlib.sha256((gid+"|"+difference).encode()).hexdigest()[:12]
             dest=requests/("REQ-"+digest+".json")
             if not dest.exists():
-                dest.write_text(json.dumps(request,indent=2,ensure_ascii=False)+"\\n",encoding="utf-8")
+                dest.write_text(json.dumps(request,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
 
         state["final_comparison_run_at"]=payload["at"]
         (folder/"state.json").write_text(json.dumps(state,indent=2)+"\n",encoding="utf-8")
