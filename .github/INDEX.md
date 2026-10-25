@@ -1,8 +1,8 @@
 # GitHub automation index
 
-- [workflows/INDEX.md](workflows/INDEX.md): purpose and risk level of GitHub Actions workflows.
-- [copilot-instructions.md](copilot-instructions.md): GitHub Copilot-specific instruction file; keep consistent with root `AGENTS.md`.
-- **Current risk:** some workflows commit generated map data or screenshot outputs back to `main` on push. Agents should work on isolated branches and submit PRs; do not assume workflows are read-only.
-- Distinguish metadata-valid/tests-pass from source-versus-render visual approval.
+- [workflows/INDEX.md](workflows/INDEX.md): active read-only validations and verified completion notification.
+- [workflows-disabled/README.md](workflows-disabled/README.md): archived cloud art generation and write-back workflows, preserved for historical review, never auto-triggered.
+- [copilot-instructions.md](copilot-instructions.md): Copilot project guidance (must agree with root AGENTS.md).
+- No active GitHub workflow commits produced art or task files to `main`; local Windows runner will own future planning.
 
 [All directory entries](FILES.md).

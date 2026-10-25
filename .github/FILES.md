@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`workflows/`](workflows/FILES.md)
+- [`workflows-disabled/`](workflows-disabled/FILES.md)
 
 ## Files
 
