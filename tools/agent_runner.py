@@ -174,12 +174,21 @@ def checkpoint(tid,agent,phase,details):
     p.write_text(json.dumps({"task":tid,"agent":agent,"phase":phase,"at":stamp(),
                              "details":details},indent=2)+"\n",encoding="utf-8")
 
-def run(tid):
+def run(tid, supervised=False):
     config=read_json(CONFIG,{})
-    if not config.get("execution_enabled",False):
-        raise RuntimeError("Execution disabled: supervised end-to-end verification required")
-    if not config.get("supervised_e2e_passed",False):
-        raise RuntimeError("Must explicitly record supervised_e2e_passed before enabling")
+    if supervised:
+        if not sys.stdin.isatty():
+            raise RuntimeError("First supervised execution needs a real interactive terminal")
+        print("SUPERVISED ONE-TIME TEST. This can commit and merge verified task code into main.")
+        print("Check TASK touches, backup local changes, and confirm correct Godot CLI first.")
+        typed=input("To continue type exactly SUPERVISE "+tid+": ").strip()
+        if typed != "SUPERVISE "+tid:
+            raise RuntimeError("Supervised consent not given")
+    else:
+        if not config.get("execution_enabled",False):
+            raise RuntimeError("Execution disabled: supervised end-to-end verification required")
+        if not config.get("supervised_e2e_passed",False):
+            raise RuntimeError("Must explicitly record supervised_e2e_passed before enabling")
     if os.name!="nt":
         raise RuntimeError("Run coding agents only on the owner's Windows host")
     if git("branch","--show-current")!="main" or git("status","--porcelain"):
@@ -263,8 +272,10 @@ def run(tid):
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("--run",metavar="TASK-ID")
-    parser.add_argument("--preflight",action="store_true")
+    mode=parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--run",metavar="TASK-ID")
+    mode.add_argument("--supervised",metavar="TASK-ID")
+    mode.add_argument("--preflight",action="store_true")
     args=parser.parse_args()
     if args.preflight:
         cfg=read_json(CONFIG,{})
@@ -272,8 +283,10 @@ def main():
           "supervised_e2e_passed":cfg.get("supervised_e2e_passed",False),
           "mode":"Windows only; no API keys; default disabled"},indent=2))
         return
-    if not args.run:parser.error("Choose --preflight or --run TASK-####")
-    run(args.run)
+    if args.supervised:
+        run(args.supervised,supervised=True)
+    else:
+        run(args.run)
 
 if __name__=="__main__":
     try:main()
