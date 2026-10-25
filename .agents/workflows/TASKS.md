@@ -29,3 +29,9 @@
 
 ## Adding a task
 Copy `../templates/TASK.md`, select the next unoccupied `TASK-####` ID, keep frontmatter keys and short acceptance criteria. One task should produce one reviewable PR. Do not create many speculative tasks without an actual plan.
+
+## Owner direct code merge (ADR-006 override)
+- A task must specify agent, touches, test and done_when. Only main may update generated INDEX.md, FILES.md, TASKS.md, ACTIVE.md, cost dashboards.
+- Use one worktree per agent, max one active task/agent, no overlapping touches. The local runner owns claim commits and controls a merge lock.
+- Check allowlisted diff, rebase main, run task + map tests + actual Godot smoke. If any fail, block and preserve evidence. After merge retest on main; if failures occur, revert the merge commit and block.
+- Automated code merges require a completed supervised Windows E2E; config.execution_enabled remains false until then. No human PR review required for subsequently tested code merges, but infrastructure changes use PRs.

@@ -10,6 +10,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`ACTIVE.md`](ACTIVE.md)
 - [`CHANGELOG.md`](CHANGELOG.md)
 - [`DECISIONS.md`](DECISIONS.md)
 - [`PLAN.md`](PLAN.md)

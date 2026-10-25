@@ -23,6 +23,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_map_navigation.py`](test_map_navigation.py)
 - [`test_map_reference.py`](test_map_reference.py)
 - [`test_map_templates.py`](test_map_templates.py)
+- [`test_parallel_safety.py`](test_parallel_safety.py)
 - [`test_project_indexes.py`](test_project_indexes.py)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

@@ -4,6 +4,7 @@
 | --- | --- |
 | [PROJECT.md](PROJECT.md) | Stable project purpose, architecture and scope |
 | [PLAN.md](PLAN.md) | Stable milestones, not active task status |
+| [ACTIVE.md](ACTIVE.md) | **Generated on main** live ownership, touches and known costs |
 | [TASKS.md](TASKS.md) | **Generated** short task queue/status/ownership (do not edit directly) |
 | [STATUS.md](STATUS.md) | Tiny milestone-level state, not every individual task |
 | [CHANGELOG.md](CHANGELOG.md) | Brief merged PR change summaries; Git is authoritative |

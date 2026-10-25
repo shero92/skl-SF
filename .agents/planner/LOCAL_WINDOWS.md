@@ -49,3 +49,12 @@ Automatic merge is allowed only if every CI check is successful and all paths
 are restricted to .agents/tasks/, .agents/planner/ and generated FILES.md /
 task dashboards. If CI fails or cannot be verified, PR stays open.
 Code-task execution is *not* enabled here.
+
+## Safe parallel code execution (Part 3 — OFF until owner-supervised E2E)
+- Local script: `py -3 tools/agent_runner.py --preflight`. This checks configuration but cannot run code.
+- `execution_enabled=false`, `supervised_e2e_passed=false` by default. **Do not toggle these before the first observed real task completes with tests, merge and post-merge verification.**
+- After owner approval on Windows: `py -3 tools/agent_runner.py --run TASK-####` on a clean main branch. The runner creates an ephemeral worktree, hides image files during the AI stage, records task token receipts without writing indexes there, runs trusted unittest/Godot checks and serializes direct main merges. After a regression it reverts the merge commit and blocks the task.
+- Two agents may run distinct nonoverlapping tasks, but merge to main is guarded by one lock. No auto-start Schedule for execution is installed while disabled.
+- Art delivery: `py -3 tools/art_delivery.py --check` verifies PNG headers, alpha-capable channels, dimensions and SHA/metadata without rendering. `--integrate` remains disabled until metadata workflow supervision; it never paints images.
+- Final goal visual approval belongs to owner. Rendering/comparing goal references is a separately supervised phase, not part of regular planning or coding.
+- Risks: Claude and Codex file tool settings do not imply perfect OS-level denial of image reads; Codex can potentially read git objects. The sparse worktree reduces exposure but needs explicit real-world validation. Godot may require a renderable desktop environment for screenshots; headless dummy rendering cannot certify artwork.

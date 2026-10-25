@@ -1,5 +1,6 @@
 # Map-factory Python tests
 
+- `test_parallel_safety.py`: task touch isolation, anti-art boundaries, no-code-run default, rollback guard, goal costs.
 - `test_goal_task_factory.py`: evidence, deduplication, manual requests, agent routing, claim safeguards.
 - `test_map_factory.py`: baseline versioning/factory operations.
 - `test_map_cardinal.py`: four directions, sprite selection and mounted offsets.
