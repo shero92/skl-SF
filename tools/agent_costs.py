@@ -402,7 +402,10 @@ def run(args):
     file = folder / (active["task_id"] + "_" + agent + "_" + uuid.uuid4().hex[:10] + ".json")
     put(file, receipt)
     active_path.unlink()
-    report()
+    # Local TEST sessions must not modify versioned reports. Otherwise
+    # a smoke test makes git pull fail with a dirty summary file.
+    if not is_test:
+        report()
     if is_test:
         print("Local TEST receipt (not committed; not included in leaderboard):", file.relative_to(ROOT))
     else:

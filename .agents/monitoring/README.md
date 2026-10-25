@@ -12,7 +12,7 @@ On Windows **exit Claude/Codex before starting** and use a normal PowerShell ter
     # ask a short read-only question, then /exit
     py -3 tools/agent_costs.py finish
 
-Use --agent codex and launch codex for the other client. A no-ID run receives a unique TEST-* ID and creates a **local-only** receipt under .agents/monitoring/.local/test_receipts/. Test receipts never appear in the committed leaderboard. This cannot retroactively measure a session that was started before tracking.
+Use --agent codex and launch codex for the other client. A no-ID run receives a unique TEST-* ID and creates a **local-only** receipt under .agents/monitoring/.local/test_receipts/. Test receipts never appear in the committed leaderboard and do not modify the version-controlled summary reports. This cannot retroactively measure a session that was started before tracking.
 
 To run the portable hook command manually in Git Bash:
 
