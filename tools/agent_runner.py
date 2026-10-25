@@ -151,6 +151,7 @@ def changed_paths(workdir):
 
 def tests(workdir,task):
     # Only expected unittest arguments; never execute arbitrary task-supplied shell.
+    godot=read_json(CONFIG,{}).get("godot_executable","godot")
     requested=shlex.split(task["test"],posix=False)
     safe_test(requested)
     # Use current interpreter and trusted test modules regardless of task-controlled exe.
@@ -159,8 +160,8 @@ def tests(workdir,task):
     commands=[
         [sys.executable,*step],
         [sys.executable,"-m","unittest","discover","-s","tools/tests","-p","test_map*.py","-v"],
-        ["godot","--headless","--path",".","--editor","--quit"],
-        ["godot","--headless","--path",".","--script","res://tools/map_factory_godot_smoke.gd"]]
+        [godot,"--headless","--path",".","--editor","--quit"],
+        [godot,"--headless","--path",".","--script","res://tools/map_factory_godot_smoke.gd"]]
     failures=[]
     for command in commands:
         proc=execute(command,workdir,timeout=420,check=False)
