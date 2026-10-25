@@ -28,5 +28,7 @@
   "supervised_e2e_passed": false,
   "art_integration_enabled": false,
   "graphics_issue_enabled": false,
-  "execution_timeout_seconds": 1800
+  "execution_timeout_seconds": 1800,
+  "godot_executable": "godot",
+  "godot_qa_headless": true
 }
