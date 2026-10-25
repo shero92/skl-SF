@@ -66,3 +66,10 @@ Code-task execution is *not* enabled here.
 4. Final goal preview: py -3 tools/goal_qa.py render GOAL-0001. Godot capture runs in temporary separate worktree using **actual factory script** tools/capture_map_previews.gd, copies real hero_room_final.png to .agents/qa/renders/GOAL-0001/. The renderer needs working OpenGL/video; if Windows --headless dummy cannot produce frames, switch config godot_qa_headless=false for owner desktop.
 5. Compare once: py -3 tools/goal_qa.py compare GOAL-0001. ONLY this explicitly requested final verification permits Codex to see the original goal reference and final Godot render as image attachments. A one-attempt guard prevents unnoticed repeat viewing. Differences are written to .agents/qa/results/ for your review, not misattributed to fictional code lines.
 6. After committing the QA paths and results, py -3 tools/goal_qa.py notify GOAL-0001 opens an owner-assigned GitHub Issue. Owner decides whether to approve or create new narrow investigation tasks. The script NEVER sets final_verified=true.
+
+## Entering and approving the first long-term goal
+- Put your exact request in .agents/planner/goals/GOAL-0001/goal.md. Put genuine optional image references only in references/ within the same goal folder.
+- The goal starts with state.json status=draft and milestones_approved=false. Use the shared goal-task-factory skill to propose narrow, evidence-backed milestones once; do not auto-activate.
+- After owner approval, set status=active and milestones_approved=true; review matching milestones in goals.json before scheduled local planning creates coding tasks. auto_activate stays false unless deliberately changed.
+- To stop scheduled planning, use powershell -NoProfile -File tools/setup_local_planner.ps1 -Uninstall and set planning_enabled=false, execution_enabled=false, art_integration_enabled=false, graphics_issue_enabled=false in config.json.
+- For a first supervised trial, run py -3 tools/agent_runner.py --preflight and Python CI checks; do not set supervised_e2e_passed=true until actual Windows coding worktree tests, main merge and rollback/recovery have been observed.

@@ -1,6 +1,6 @@
 ---
 id: TASK-0007
-status: review
+status: blocked
 owner: chatgpt
 branch: feat/safe-parallel-agent-runner
 agent: codex
@@ -31,5 +31,5 @@ paths, tests, sequential merge locks and rollback protect main.
 - Changes: task schema, local runner, safe path validation, receipt integration,
   graphics delivery pipeline, reference render verification and owner policy.
 - Tests: CI and supervised Windows E2E outstanding.
-- PR: review required.
-- Next: supervised local E2E, only then enable execution.
+- PR: https://github.com/shero92/skl-SF/pull/8 (CI successful; infrastructure merge pending).
+- Next: supervised Windows end-to-end task and image containment test. Configuration stays disabled until owner accepts actual results.
