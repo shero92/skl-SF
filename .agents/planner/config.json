@@ -3,19 +3,19 @@
   "timezone": "Europe/Berlin",
   "schedule": [
     {
-      "time": "08:13",
+      "time": "00:00",
       "agent": "claude"
     },
     {
-      "time": "12:13",
+      "time": "06:00",
       "agent": "codex"
     },
     {
-      "time": "16:13",
+      "time": "12:00",
       "agent": "claude"
     },
     {
-      "time": "20:13",
+      "time": "18:00",
       "agent": "codex"
     }
   ],
