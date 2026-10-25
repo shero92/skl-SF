@@ -1,6 +1,6 @@
 ---
 id: TASK-0005
-status: review
+status: done
 owner: chatgpt
 branch: chore/disable-cloud-art-generation
 depends_on: TASK-0004
@@ -20,11 +20,11 @@ GitHub Issue notification; no cloud AI execution or generation.
 - [x] Byte-identical Claude/Codex goal-task-factory skill CI guard.
 - [x] Ignore .claude/settings.local.json.
 - [x] Mark old merged tasks done, require real Agent git trailer.
-- [ ] Review and merge PR; verify CI.
+- [x] PR #6 merged, CI successful.
 
 ## Evidence / handoff
 - Changed files: .github/workflows-disabled/, .github/workflows/,
   .gitignore, AGENTS.md, task records and generated FILES/TASKS indexes.
 - Tests: GitHub Actions task/index/receipt validations; no art tasks executed.
-- PR: review required.
+- PR: https://github.com/shero92/skl-SF/pull/6 (merged).
 - Next: confirm actual local Windows CLI help outputs, then implement Part 2.

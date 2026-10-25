@@ -18,3 +18,5 @@ jobs:
         run: python3 -m unittest discover -s tools/tests -p 'test_goal_task_factory.py' -v
       - name: Ensure Claude and Codex planner skills are byte-identical
         run: cmp -s .claude/skills/goal-task-factory/SKILL.md .agents/skills/goal-task-factory/SKILL.md
+      - name: Validate local-only planning proposals and setup defaults
+        run: python3 -m unittest discover -s tools/tests -p 'test_local_planner.py' -v
