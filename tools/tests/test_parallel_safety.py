@@ -54,6 +54,25 @@ class ParallelSafety(unittest.TestCase):
         self.assertIn('typed != "SUPERVISE "+tid',code)
         self.assertIn("supervised_e2e_passed",code)
 
+    def test_pickup_selects_highest_priority_without_ai(self):
+        import agent_runner as ar
+        from unittest.mock import patch
+        queue={"TASK-0100":{"id":"TASK-0100","status":"todo","agent":"codex",
+             "touches":"tools/tests/a.py","depends_on":"none",
+             "text":"**Priority:** normal"},
+             "TASK-0101":{"id":"TASK-0101","status":"todo","agent":"codex",
+             "touches":"tools/tests/b.py","depends_on":"none",
+             "text":"**Priority:** high"}}
+        with patch.object(ar,"records",return_value=queue):
+            self.assertEqual(ar.pick_next("codex"),"TASK-0101")
+            self.assertIsNone(ar.pick_next("claude"))
+    def test_execution_schedule_is_opt_in(self):
+        content=(TOOLS/"setup_local_planner.ps1").read_text(encoding="utf8")
+        self.assertIn("[switch]$InstallExecution",content)
+        self.assertIn("supervised_e2e_passed",content)
+        self.assertIn("execution_enabled",content)
+        self.assertIn("$execPrefix",content)
+
     def test_untrusted_task_test_cannot_inject_shell(self):
         rs.safe_test(["python","-m","unittest","discover","-s","tools/tests"])
         for cmd in (["powershell","-Command","Remove-Item"],

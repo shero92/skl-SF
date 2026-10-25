@@ -270,11 +270,31 @@ def run(tid, supervised=False):
             git("worktree","remove","--force",str(workdir))
             git("branch","-d",branch)
 
+def pick_next(agent):
+    """Choose the highest priority eligible task without contacting AI."""
+    if agent not in ("claude", "codex"):
+        raise ValueError("Unsupported agent")
+    active=records()
+    rank={"critical":0,"high":1,"normal":2,"low":3}
+    choices=[]
+    for t in active.values():
+        if t.get("agent") != agent or t.get("status") != "todo":
+            continue
+        try:
+            verify_claim(t,active)
+        except ValueError:
+            continue
+        m=re.search(r"(?m)^\*\*Priority:\*\* (critical|high|normal|low)",t["text"])
+        priority=m.group(1) if m else "normal"
+        choices.append((rank[priority],t["id"]))
+    return min(choices)[1] if choices else None
+
 def main():
     parser=argparse.ArgumentParser()
     mode=parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--run",metavar="TASK-ID")
     mode.add_argument("--supervised",metavar="TASK-ID")
+    mode.add_argument("--run-next",choices=("claude","codex"))
     mode.add_argument("--preflight",action="store_true")
     args=parser.parse_args()
     if args.preflight:
@@ -285,6 +305,14 @@ def main():
         return
     if args.supervised:
         run(args.supervised,supervised=True)
+    elif args.run_next:
+        if not read_json(CONFIG,{}).get("execution_enabled",False) or not read_json(CONFIG,{}).get("supervised_e2e_passed",False):
+            raise RuntimeError("Scheduled execution is disabled until supervised E2E owner signoff")
+        selected=pick_next(args.run_next)
+        if selected is None:
+            print("No eligible task for "+args.run_next+"; no AI call made")
+            return
+        run(selected)
     else:
         run(args.run)
 

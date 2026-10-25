@@ -50,6 +50,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`repaint_ocean.py`](repaint_ocean.py)
 - [`repaint_sandstone_floor.py`](repaint_sandstone_floor.py)
 - [`restore_high_detail_floors.py`](restore_high_detail_floors.py)
+- [`run_local_agent.ps1`](run_local_agent.ps1)
 - [`run_local_planner.ps1`](run_local_planner.ps1)
 - [`runner_safety.py`](runner_safety.py)
 - [`setup_local_planner.ps1`](setup_local_planner.ps1)

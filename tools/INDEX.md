@@ -13,7 +13,7 @@
 | Generate agent task/art queues and verify delivery hashes | `agent_workflow.py` |
 | Grounded daily goal/task proposals and agent claims | `goal_task_factory.py` |
 | Run read-only local Windows daily planner using subscription CLIs | `local_planner.py`, `setup_local_planner.ps1` |
-| Disabled-by-default local code runner with sparse art-free worktrees | `agent_runner.py`, `runner_safety.py` |
+| Disabled-by-default local code runner with sparse art-free worktrees | `agent_runner.py`, `runner_safety.py`, `run_local_agent.ps1` |
 | Validate owner-delivered PNG headers and metadata without viewing art | `art_delivery.py` |
 | Create owner art-needed GitHub Issues and guarded delivery requests | `art_requests.py` |
 | Capture real Godot QA renders and compare authentic goal references once | `goal_qa.py` |
