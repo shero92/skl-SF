@@ -1,7 +1,7 @@
 {
   "statusLine": {
     "type": "command",
-    "command": "sh tools/agent_costs_hook.sh hook --agent claude --statusline"
+    "command": "py -3 tools/agent_costs.py hook --agent claude --statusline"
   },
   "hooks": {
     "Stop": [
@@ -9,7 +9,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh tools/agent_costs_hook.sh hook --agent claude"
+            "command": "py -3 tools/agent_costs.py hook --agent claude",
+            "shell": "powershell"
           }
         ]
       }
@@ -19,7 +20,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh tools/agent_costs_hook.sh hook --agent claude"
+            "command": "py -3 tools/agent_costs.py hook --agent claude",
+            "shell": "powershell"
           }
         ]
       }

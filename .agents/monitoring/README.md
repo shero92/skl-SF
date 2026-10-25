@@ -18,7 +18,7 @@ To run the portable hook command manually in Git Bash:
 
     sh tools/agent_costs_hook.sh --help
 
-The versioned hook configurations use sh tools/agent_costs_hook.sh to try the Windows py launcher, then python3 and python (minimum Python 3.10). Git Bash is expected on Windows. If py -3 --version fails, install Python 3.x first and relaunch the terminal. Claude hook edits may need approval under /hooks after pulling new settings. Codex project hooks require workspace trust.
+On this Windows project, Claude and Codex hooks invoke `py -3` directly; no Git Bash is required. On macOS/Linux, replace the hook command with `python3 tools/agent_costs.py hook ...` or use `sh tools/agent_costs_hook.sh`. A task transcript is never committed. Use `py -3 tools/agent_costs.py diagnose` to check whether hooks captured a transcript, tokens, and status-line cost without revealing personal paths. If py -3 --version fails, install Python 3.x first and relaunch the terminal. Claude hook edits may need approval under /hooks after pulling new settings. Codex project hooks require workspace trust.
 
 ## How to use
 
@@ -54,3 +54,7 @@ For joint tasks each agent uses its own worktree and writes a separate receipt. 
 summary.md ranks tasks by known USD; summary.json powers dashboards. If unknown_costs is not zero, that task's known USD is a lower bound and should not be used as a complete comparison.
 
 Keep local session files and provider credentials private. Inspect project hooks before trusting the repository.
+
+## Print mode and cost estimation
+
+`claude -p` might not invoke a UI status line. For such sessions the tool now estimates Opus 5.5 API-equivalent USD from Claude JSONL assistant usage, including 5-minute and 1-hour cache creation when the transcript distinguishes them, and cache reads. This is an estimate, NOT what a Claude Pro subscription charged. If the model or transcript cannot be determined, cost remains null. Codex pricing still requires a matching model key. The `diagnose` command reports local hook coverage without exposing transcripts.

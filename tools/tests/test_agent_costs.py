@@ -72,6 +72,36 @@ class CostTests(unittest.TestCase):
         self.assertEqual(summary["tasks"], [])
         self.invoke("report", "--check")
 
+    def test_claude_transcript_fallback_with_cache_prices(self):
+        self.invoke("start", "TASK-0096", "--agent", "claude")
+        log = self.root / "claude.jsonl"
+        log.write_text(json.dumps({
+            "timestamp": "2099-01-01T00:00:00Z",
+            "type": "assistant",
+            "message": {"id": "msg-1", "model": "claude-opus-5-5",
+                        "usage": {"input_tokens": 1000, "cache_read_input_tokens": 500,
+                                  "cache_creation_input_tokens": 300,
+                                  "cache_creation": {"ephemeral_1h_input_tokens": 100},
+                                  "output_tokens": 100}}
+        }) + "\n")
+        pricing = self.root / ".agents/monitoring/pricing.json"
+        pricing.parent.mkdir(parents=True, exist_ok=True)
+        pricing.write_text(json.dumps({"models": {"claude-opus-5-5": {
+            "input_per_million": 4, "cached_input_per_million": 0.2,
+            "output_per_million": 20, "cache_creation_5m_per_million": 5,
+            "cache_creation_1h_per_million": 8}}}))
+        self.invoke("hook", "--agent", "claude",
+                    event={"session_id": "test", "transcript_path": str(log)})
+        diagnostic = json.loads(self.invoke("diagnose"))
+        self.assertTrue(diagnostic["sessions"][0]["tokens_found"])
+        self.assertFalse(diagnostic["sessions"][0]["statusline_cost_found"])
+        self.invoke("finish")
+        receipt = json.loads(self.receipts()[0].read_text())
+        self.assertEqual(receipt["tokens"]["input_tokens"], 1800)
+        self.assertEqual(receipt["cost_usd"], 0.0079)
+        self.assertEqual(receipt["coverage"], "complete")
+        self.assertIn("claude_api_equivalent_estimate", receipt["source"])
+
     def test_unknown_is_not_zero(self):
         self.invoke("start", "TASK-0097", "--agent", "codex")
         self.invoke("finish")

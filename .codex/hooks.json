@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh tools/agent_costs_hook.sh hook --agent codex",
+            "command": "py -3 tools/agent_costs.py hook --agent codex",
             "timeout": 15
           }
         ]
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh tools/agent_costs_hook.sh hook --agent codex",
+            "command": "py -3 tools/agent_costs.py hook --agent codex",
             "timeout": 15
           }
         ]

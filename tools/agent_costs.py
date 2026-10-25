@@ -13,7 +13,8 @@ import uuid
 ROOT = Path(os.environ.get("SKL_COST_ROOT", Path(__file__).resolve().parents[1]))
 BASE = ROOT / ".agents" / "monitoring"
 LOCAL = BASE / ".local"
-FIELDS = ("input_tokens", "cached_input_tokens", "output_tokens", "reasoning_output_tokens")
+FIELDS = ("input_tokens", "cached_input_tokens", "output_tokens", "reasoning_output_tokens",
+          "cache_creation_input_tokens", "cache_creation_1h_input_tokens")
 
 def get(path, default=None):
     return json.loads(path.read_text(encoding="utf8")) if path.is_file() else default
@@ -24,15 +25,57 @@ def put(path, value):
     tmp.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="utf8")
     os.replace(tmp, path)
 
-def usage(value):
+def usage(value, agent="codex"):
     if not isinstance(value, dict):
         return None
+    if agent == "claude":
+        # Anthropic separates uncached, cache reads, and cache writes.
+        # Normalize input_tokens to INCLUDE all three for task comparison.
+        required = ("input_tokens", "output_tokens")
+        if not all(key in value for key in required):
+            return None
+        cc = value.get("cache_creation") or {}
+        if not isinstance(cc, dict):
+            cc = {}
+        raw_in = value["input_tokens"]
+        read = value.get("cache_read_input_tokens", 0)
+        created = value.get("cache_creation_input_tokens", 0)
+        one_hour = cc.get("ephemeral_1h_input_tokens", 0)
+        values = (raw_in, read, created, one_hour, value["output_tokens"])
+        if any(type(n) is not int or n < 0 for n in values) or one_hour > created:
+            return None
+        return {"input_tokens": raw_in + read + created,
+                "cached_input_tokens": read, "output_tokens": value["output_tokens"],
+                "reasoning_output_tokens": 0, "cache_creation_input_tokens": created,
+                "cache_creation_1h_input_tokens": one_hour}
     nums = {k: value.get(k, 0) for k in FIELDS}
     if any(type(v) is not int or v < 0 for v in nums.values()):
         return None
     if nums["cached_input_tokens"] > nums["input_tokens"]:
         return None
     return nums
+
+def cost_from_tokens(u, agent, model):
+    if u is None or not isinstance(model, str):
+        return None
+    prices = get(BASE / "pricing.json", {}).get("models", {})
+    # Date-suffixed Claude model identifiers use the same published model rates.
+    key = "claude-opus-5-5" if agent == "claude" and model.startswith("claude-opus-5-5") else model
+    rates = prices.get(key)
+    if not rates:
+        return None
+    uncached = u["input_tokens"] - u["cached_input_tokens"] - u["cache_creation_input_tokens"]
+    try:
+        total = (uncached * rates["input_per_million"]
+                 + u["cached_input_tokens"] * rates["cached_input_per_million"]
+                 + u["output_tokens"] * rates["output_per_million"])
+        if agent == "claude":
+            total += ((u["cache_creation_input_tokens"] - u["cache_creation_1h_input_tokens"])
+                      * rates["cache_creation_5m_per_million"])
+            total += u["cache_creation_1h_input_tokens"] * rates["cache_creation_1h_per_million"]
+        return round(total / 1000000, 6)
+    except (KeyError, TypeError):
+        return None
 
 def read_transcript(path, agent):
     if not path or not Path(path).is_file():
@@ -48,7 +91,7 @@ def read_transcript(path, agent):
         payload = row.get("payload") or {}
         if agent == "claude" and row.get("type") == "assistant":
             msg = row.get("message") or {}
-            u = usage(msg.get("usage"))
+            u = usage(msg.get("usage"), "claude")
             if u is not None:
                 key = msg.get("id") or str(i)
                 items[key] = u
@@ -167,6 +210,22 @@ def run(args):
     if args.command == "report":
         report(args.check)
         return
+    if args.command == "diagnose":
+        summary = []
+        for path in sorted(LOCAL.glob("session_*.json")):
+            info = get(path, {})
+            transcript_path = info.get("transcript_path")
+            transcript_found = bool(transcript_path and Path(transcript_path).is_file())
+            u, model, _ = read_transcript(transcript_path, info.get("agent", "claude"))
+            summary.append({"agent": info.get("agent"),
+                            "has_transcript_path": bool(transcript_path),
+                            "transcript_exists": transcript_found,
+                            "tokens_found": u is not None,
+                            "statusline_cost_found": info.get("cost_usd") is not None,
+                            "model_found": bool(info.get("model") or model)})
+        print(json.dumps({"active": bool(get(active_path)), "sessions": summary},
+                         indent=2, sort_keys=True))
+        return
     active = get(active_path)
     if not active:
         raise ValueError("No active task")
@@ -189,13 +248,13 @@ def run(args):
             cost = item.get("cost_usd")
             if cost is not None:
                 sources.add("claude_statusline_estimate")
+            else:
+                cost = cost_from_tokens(u, agent, model)
+                if cost is not None:
+                    sources.add("claude_api_equivalent_estimate")
         else:
-            rates = get(BASE / "pricing.json", {}).get("models", {}).get(model or "")
-            cost = None
-            if u is not None and rates:
-                cost = round(((u["input_tokens"]-u["cached_input_tokens"])*rates["input_per_million"]
-                         + u["cached_input_tokens"]*rates["cached_input_per_million"]
-                         + u["output_tokens"]*rates["output_per_million"])/1000000, 6)
+            cost = cost_from_tokens(u, agent, model)
+            if cost is not None:
                 sources.add("codex_api_equivalent_estimate")
         if u is None:
             missing_tokens = True
@@ -247,6 +306,7 @@ def main():
     f.add_argument("--manual-cost-usd", type=float)
     r = sub.add_parser("report")
     r.add_argument("--check", action="store_true")
+    sub.add_parser("diagnose", help="Show privacy-safe local hook/session health")
     try:
         run(p.parse_args())
         return 0
