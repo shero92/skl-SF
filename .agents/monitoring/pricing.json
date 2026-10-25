@@ -1,0 +1,19 @@
+{
+  "note": "Standard API-equivalent estimates, NOT Pro subscription charges. Claude Opus 5.5 rates are published at platform.claude.com/docs/en/models/opus-5-5/overview. Unknown cache write duration defaults to 5m estimate.",
+  "as_of": "2026-10-25",
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "models": {
+    "gpt-5.3-codex": {
+      "input_per_million": 1.75,
+      "cached_input_per_million": 0.175,
+      "output_per_million": 14
+    },
+    "claude-opus-5-5": {
+      "input_per_million": 4,
+      "cached_input_per_million": 0.2,
+      "output_per_million": 20,
+      "cache_creation_5m_per_million": 5,
+      "cache_creation_1h_per_million": 8
+    }
+  }
+}

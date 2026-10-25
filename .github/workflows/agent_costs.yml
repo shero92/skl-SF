@@ -1,0 +1,16 @@
+name: Verify agent cost receipts
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check aggregated receipts
+        run: python3 tools/agent_costs.py report --check
+      - name: Test Claude and Codex accounting
+        run: python3 -m unittest discover -s tools/tests -p 'test_agent_costs.py' -v

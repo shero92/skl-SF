@@ -1,0 +1,30 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "py -3 tools/agent_costs.py hook --agent claude --statusline"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 tools/agent_costs.py hook --agent claude",
+            "shell": "powershell"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 tools/agent_costs.py hook --agent claude",
+            "shell": "powershell"
+          }
+        ]
+      }
+    ]
+  }
+}

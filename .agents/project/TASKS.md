@@ -9,3 +9,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | --- | --- | --- | --- | --- |
 | [TASK-0001](../tasks/TASK-0001_reference_baseline.md) | blocked | unassigned | none | none |
 | [TASK-0002](../tasks/TASK-0002_directional_bed_assets.md) | blocked | unassigned | TASK-0001 | ART-0001 |
+| [TASK-0003](../tasks/TASK-0003_agent_cost_accounting.md) | review | coding-agent | none | none |

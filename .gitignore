@@ -29,3 +29,6 @@ Thumbs.db
 
 # DO NOT ignore *.png.import, *.gd.uid, *.png, *.gd, *.tscn,
 # *.tres, project.godot, or map_factory's source JSON/CSV files.
+
+# Never commit agent conversations, raw JSONL transcripts or local usage snapshots
+.agents/monitoring/.local/

@@ -18,6 +18,7 @@
 | Project constraints / milestones / current progress | [Project files](.agents/project/INDEX.md) | refer only when relevant |
 
 ## Shared multi-agent coordination
+- [Per-task Claude/Codex cost tracker](.agents/monitoring/INDEX.md): task receipts, pricing assumptions, and token/cost leaderboard.
 - [Agent collaboration, task handoffs and graphics queue](.agents/INDEX.md): roles, task records, stage-gated specialist graphics requests and project status.
 - [Project roadmap and handoff](.agents/project/INDEX.md): PROJECT, PLAN, STATUS, generated TASKS, CHANGELOG and DECISIONS.
 - Root `AGENTS.md` is the **only** agent instruction file at root; the project has no root `CLAUDE.md` for current Claude Code v2.1.277+.

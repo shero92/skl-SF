@@ -12,5 +12,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`TASK-0001_reference_baseline.md`](TASK-0001_reference_baseline.md)
 - [`TASK-0002_directional_bed_assets.md`](TASK-0002_directional_bed_assets.md)
+- [`TASK-0003_agent_cost_accounting.md`](TASK-0003_agent_cost_accounting.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
