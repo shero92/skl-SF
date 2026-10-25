@@ -19,7 +19,7 @@ ART_DIR = Path(".agents/graphics/requests")
 TASK_BOARD = Path(".agents/project/TASKS.md")
 ART_BOARD = Path(".agents/graphics/QUEUE.md")
 ACTIVE_BOARD = Path(".agents/project/ACTIVE.md")
-TASK_STATES = {"todo", "in_progress", "blocked", "review", "done", "cancelled"}
+TASK_STATES = {"todo", "in_progress", "blocked", "blocked_on_art", "review", "done", "cancelled"}
 ART_STATES = {"blocked_reference", "requested", "in_progress", "delivered", "reviewed", "integrated", "cancelled"}
 ID_RE = re.compile(r"^(TASK|ART)-[0-9]{4}$")
 SHA_RE = re.compile(r"^[0-9a-f]{64}$")
@@ -86,6 +86,8 @@ def generated(root: Path) -> dict[Path, str]:
                 raise ValueError(f"{task['id']}: unknown dependency {dep}")
             if dep == task["id"]:
                 raise ValueError(f"{task['id']}: circular self-dependency")
+        if task["status"] == "blocked_on_art" and task["art_request"] == "none":
+            raise ValueError(f"{task['id']}: blocked_on_art requires an ART request")
         a = task["art_request"]
         if a != "none" and a not in art_by_id:
             raise ValueError(f"{task['id']}: unknown art request {a}")
