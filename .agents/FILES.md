@@ -11,6 +11,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`planner/`](planner/FILES.md)
 - [`project/`](project/FILES.md)
 - [`roles/`](roles/FILES.md)
+- [`skills/`](skills/FILES.md)
 - [`tasks/`](tasks/FILES.md)
 - [`templates/`](templates/FILES.md)
 - [`workflows/`](workflows/FILES.md)

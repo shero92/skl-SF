@@ -11,6 +11,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`GOAL_SETUP_PROMPT.md`](GOAL_SETUP_PROMPT.md)
 - [`PROMPT_RULES.md`](PROMPT_RULES.md)
 - [`README.md`](README.md)
 - [`goals.json`](goals.json)

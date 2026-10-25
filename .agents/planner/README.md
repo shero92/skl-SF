@@ -40,3 +40,16 @@ Windows PowerShell examples (run from repository root):
 Run agent task tracking BEFORE a new session, and finish via agent_costs.py complete
 on the task branch after tests. For goals with broad text only, first review
 and fill the milestone steps once; never invent an implementation file/line.
+
+## One-time intelligent goal breakdown
+
+Use the goal-task-factory skill installed for BOTH clients:
+- Codex: .agents/skills/goal-task-factory/SKILL.md
+- Claude Code: .claude/skills/goal-task-factory/SKILL.md
+
+Tell an agent: "Use goal-task-factory to prepare a verified long goal:
+[YOUR OUTCOME], without coding." It inspects just the relevant indexes
+and real evidence, then proposes milestone steps in goals.json.
+Activate the goal only once the steps are reviewed (status=active).
+Four daily runs then create tasks without repeating expensive exploration.
+See GOAL_SETUP_PROMPT.md for an editable copyable prompt.
