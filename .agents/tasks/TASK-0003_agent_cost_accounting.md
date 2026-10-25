@@ -3,6 +3,12 @@ id: TASK-0003
 status: done
 owner: coding-agent
 branch: feat/agent-task-cost-accounting
+agent: codex
+touches: tools/agent_costs.py,tools/tests/test_agent_costs.py,.agents/monitoring/
+test: python -m unittest discover -s tools/tests -p test_agent_costs.py
+done_when: Token receipts and task leaderboard verifiable
+started_at: unknown
+cost_usd: unknown
 depends_on: none
 issue: none
 art_request: none

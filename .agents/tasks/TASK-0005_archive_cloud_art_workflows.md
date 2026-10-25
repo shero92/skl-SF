@@ -3,6 +3,12 @@ id: TASK-0005
 status: done
 owner: chatgpt
 branch: chore/disable-cloud-art-generation
+agent: claude
+touches: .github/workflows-disabled/,.github/workflows/
+test: python -m unittest discover -s tools/tests -p test_agent_workflow.py
+done_when: Unsafe cloud artwork and writeback workflows disabled
+started_at: unknown
+cost_usd: unknown
 depends_on: TASK-0004
 issue: none
 art_request: none

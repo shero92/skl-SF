@@ -3,6 +3,12 @@ id: TASK-0004
 status: done
 owner: coding-agent
 branch: feat/daily-goal-task-factory
+agent: claude
+touches: tools/goal_task_factory.py,.agents/planner/
+test: python -m unittest discover -s tools/tests -p test_goal_task_factory.py
+done_when: Task factory and prompt standards checked
+started_at: unknown
+cost_usd: unknown
 depends_on: TASK-0003
 issue: none
 art_request: none
