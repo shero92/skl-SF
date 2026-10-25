@@ -11,14 +11,22 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`dialogue_ui.gd`](dialogue_ui.gd)
+- [`dialogue_ui.gd.uid`](dialogue_ui.gd.uid)
 - [`main.gd`](main.gd)
+- [`main.gd.uid`](main.gd.uid)
 - [`main.tscn`](main.tscn)
 - [`map_factory_preview.gd`](map_factory_preview.gd)
+- [`map_factory_preview.gd.uid`](map_factory_preview.gd.uid)
 - [`map_factory_preview.tscn`](map_factory_preview.tscn)
 - [`ocean_background.gd`](ocean_background.gd)
+- [`ocean_background.gd.uid`](ocean_background.gd.uid)
 - [`player.gd`](player.gd)
+- [`player.gd.uid`](player.gd.uid)
 - [`room_companion.gd`](room_companion.gd)
+- [`room_companion.gd.uid`](room_companion.gd.uid)
 - [`room_light_fx.gd`](room_light_fx.gd)
+- [`room_light_fx.gd.uid`](room_light_fx.gd.uid)
 - [`room_npc.gd`](room_npc.gd)
+- [`room_npc.gd.uid`](room_npc.gd.uid)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
