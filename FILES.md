@@ -15,6 +15,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`.gitattributes`](.gitattributes)
 - [`.gitignore`](.gitignore)
 - [`AGENTS.md`](AGENTS.md)
 - [`README.md`](README.md)

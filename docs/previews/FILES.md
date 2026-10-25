@@ -10,6 +10,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`.gdignore`](.gdignore)
 - [`architecture.png`](architecture.png)
 - [`characters.png`](characters.png)
 - [`compass_mosaic_review.png`](compass_mosaic_review.png)
