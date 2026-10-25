@@ -15,5 +15,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0003_agent_cost_accounting.md`](TASK-0003_agent_cost_accounting.md)
 - [`TASK-0004_daily_goal_factory.md`](TASK-0004_daily_goal_factory.md)
 - [`TASK-0005_archive_cloud_art_workflows.md`](TASK-0005_archive_cloud_art_workflows.md)
+- [`TASK-0006_local_planning.md`](TASK-0006_local_planning.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

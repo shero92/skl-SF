@@ -7,13 +7,17 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`daily/`](daily/FILES.md)
+- [`goals/`](goals/FILES.md)
 - [`requests/`](requests/FILES.md)
 
 ## Files
 
 - [`GOAL_SETUP_PROMPT.md`](GOAL_SETUP_PROMPT.md)
+- [`LOCAL_WINDOWS.md`](LOCAL_WINDOWS.md)
 - [`PROMPT_RULES.md`](PROMPT_RULES.md)
 - [`README.md`](README.md)
+- [`config.json`](config.json)
 - [`goals.json`](goals.json)
+- [`proposal.schema.json`](proposal.schema.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
