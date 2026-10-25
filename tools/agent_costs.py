@@ -321,6 +321,16 @@ def run(args):
     if args.command == "report":
         report(args.check)
         return
+    if args.command == "abort":
+        # Stale tracking: discard without a receipt so no cost is attributed.
+        active = get(active_path)
+        if not active:
+            raise ValueError("No active task")
+        for file in LOCAL.glob("session_*.json"):
+            file.unlink()
+        active_path.unlink()
+        print("Aborted tracking for " + active["task_id"] + "; no receipt written.")
+        return
     if args.command == "import-codex":
         import_codex(args)
         return
@@ -432,6 +442,7 @@ def main():
     r = sub.add_parser("report")
     r.add_argument("--check", action="store_true")
     sub.add_parser("diagnose", help="Show privacy-safe local hook/session health")
+    sub.add_parser("abort", help="Discard stale tracking without writing a receipt")
     done = sub.add_parser("complete", help="Commit tracked tokens with staged task code")
     done.add_argument("--message", required=True, help="Task commit subject")
     done.add_argument("--push", action="store_true", help="Push current task branch to origin")

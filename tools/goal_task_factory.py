@@ -167,11 +167,22 @@ def pulse(day=None):
     known = {m.group(1) for r in tasks.values()
              if (m := re.search(r"(?m)^\*\*Source:\*\* (.+)$", r["raw"]))}
     count = sum("**Created:** " + today in x["raw"] for x in tasks.values())
+    by_source = {m.group(1): i for i, r in tasks.items()
+                 if (m := re.search(r"(?m)^\*\*Source:\*\* (.+)$", r["raw"]))}
     new = []
     for source, spec in sources():
         if source in known or count >= MAX_NEW_PER_DAY:
             continue
-        new.append(create(source, spec, tasks, today))
+        # Milestone order: create a step only after every "after" step has a done task.
+        after = ["goal:" + spec["goal_id"] + ":" + k for k in spec.get("after", [])] if "goal_id" in spec else []
+        after_ids = [by_source.get(a) for a in after]
+        if any(i is None or tasks[i]["status"] != "done" for i in after_ids):
+            continue
+        if after_ids:
+            spec = {**spec, "depends_on": list(dict.fromkeys(deps(spec) + after_ids))}
+        task_id = create(source, spec, tasks, today)
+        by_source[source] = task_id
+        new.append(task_id)
         count += 1
         known.add(source)
     goals = read(BASE / "goals.json", {"goals": []}).get("goals", [])

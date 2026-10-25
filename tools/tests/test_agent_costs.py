@@ -47,6 +47,15 @@ class CostTests(unittest.TestCase):
         self.assertNotIn("transcript_path", self.receipts()[0].read_text())
         self.invoke("report", "--check")
 
+    def test_abort_discards_without_receipt(self):
+        self.invoke("start", "TASK-0097", "--agent", "claude")
+        self.invoke("hook", "--agent", "claude", event={"session_id": "stale",
+                                                         "cost": {"total_cost_usd": 1.5}})
+        self.assertIn("no receipt", self.invoke("abort"))
+        self.assertEqual(self.receipts(), [])
+        self.assertFalse((self.root / ".agents/monitoring/.local/active.json").exists())
+        self.assertEqual(list((self.root / ".agents/monitoring/.local").glob("session_*.json")), [])
+
     def test_claude_statusline_no_fabricated_tokens(self):
         self.invoke("start", "TASK-0098", "--agent", "claude")
         self.invoke("hook", "--agent", "claude", "--statusline",

@@ -1,6 +1,7 @@
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import sys
 import tempfile
@@ -111,6 +112,35 @@ class GoalFactoryTests(unittest.TestCase):
         config["goals"][0]["final_verified"] = True
         (self.base / "goals.json").write_text(json.dumps(config))
         self.assertEqual(json.loads(self.run_script("completed").stdout), [])
+
+    def task_status(self, task_id):
+        file = next((self.root / ".agents/tasks").glob(task_id + "_*.md"))
+        return file, re.search(r"(?m)^status: (.+)$", file.read_text()).group(1)
+
+    def set_done(self, task_id):
+        file, status = self.task_status(task_id)
+        file.write_text(file.read_text().replace("status: " + status, "status: done", 1))
+
+    def test_after_blocks_until_previous_step_done(self):
+        self.goals(steps=[self.step("a"), {**self.step("b"), "after": ["a"]}])
+        out = json.loads(self.run_script("pulse", "--date", "2026-10-25").stdout)
+        self.assertEqual(out["created"], ["TASK-0001"])
+        out = json.loads(self.run_script("pulse", "--date", "2026-10-26").stdout)
+        self.assertEqual(out["created"], [])
+
+    def test_after_creates_with_depends_on_when_done(self):
+        self.goals(steps=[self.step("a"), self.step("b"),
+                          {**self.step("c"), "after": ["a", "b"]}])
+        self.run_script("pulse", "--date", "2026-10-25")
+        self.set_done("TASK-0001")
+        out = json.loads(self.run_script("pulse", "--date", "2026-10-26").stdout)
+        self.assertEqual(out["created"], [])
+        self.set_done("TASK-0002")
+        out = json.loads(self.run_script("pulse", "--date", "2026-10-27").stdout)
+        self.assertEqual(out["created"], ["TASK-0003"])
+        file, status = self.task_status("TASK-0003")
+        self.assertEqual(status, "todo")
+        self.assertIn("depends_on: TASK-0001,TASK-0002", file.read_text())
 
     def test_unsafe_file_refused(self):
         self.goals(steps=[{**self.step("bad"), "file": "../secret"}])
