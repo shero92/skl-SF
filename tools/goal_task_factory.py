@@ -221,6 +221,77 @@ def claim(args):
     save(r["path"], body)
     print("Claimed " + args.task + " for " + args.agent)
 
+
+# Local read-only LLM proposals are untrusted data, never commands.
+def apply_proposal(payload, run_key):
+    """Validate an entire proposal before any file write."""
+    if not isinstance(payload, dict) or set(payload) != {"tasks", "updates"} or not isinstance(payload["tasks"], list) or not isinstance(payload["updates"], list):
+        raise ValueError("Proposal needs tasks[] and updates[] only")
+    if len(payload["tasks"]) > 4 or len(payload["updates"]) > 12:
+        raise ValueError("Exceeded per-run limits")
+    current = records()
+    sources_seen = {m.group(1) for x in current.values()
+                    if (m := re.search(r"(?m)^\*\*Source:\*\* (.+)$", x["raw"]))}
+    pending = []
+    for t in payload["tasks"]:
+        required = {"title", "problem", "file", "done_when", "test", "priority", "kind", "agent", "depends_on"}
+        if not isinstance(t, dict) or not required <= set(t) or (set(t) - (required | {"line", "touches", "goal_id"})):
+            raise ValueError("Invalid task fields")
+        if any(not isinstance(t[k], str) or not 1 <= len(t[k]) <= 500 for k in ("title", "problem", "done_when", "test")):
+            raise ValueError("Invalid task text")
+        file, line = target(t["file"], t.get("line"))
+        if not (ROOT / file).is_file() or file.lower().endswith((".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif")):
+            raise ValueError("Task must target existing source file, not artwork")
+        if not (file.startswith(("map_factory/", "tools/", ".agents/")) or file in ("project.godot", "scenes/map_factory_preview.gd", "scenes/map_factory_preview.tscn")):
+            raise ValueError("Outside approved code scope")
+        if any(bad in file.lower() for bad in ("/characters/", "/ui/", "generate_character", "repaint_", "/portraits/")):
+            raise ValueError("Excluded characters, interface or art")
+        if t["kind"] not in ("bug", "test", "feature", "architecture", "investigation", "refactor") or t["agent"] not in ("claude", "codex"):
+            raise ValueError("Only coding tasks for coding agents")
+        if t["priority"] not in PRIORITIES or not isinstance(t["depends_on"], list) or any(not re.fullmatch(r"TASK-\d{4}", d) for d in t["depends_on"]):
+            raise ValueError("Bad priority/dependencies")
+        if any(d not in current for d in t["depends_on"]):
+            raise ValueError("Unknown task dependency")
+        touches = t.get("touches", [file])
+        if not isinstance(touches, list) or not touches:
+            raise ValueError("Missing touches")
+        for p in touches:
+            if not isinstance(p, str) or not p.startswith(("map_factory/", "tools/", ".agents/")) or ".." in Path(p).parts or any(x in p.lower() for x in ("/characters/", "/ui/", "/graphics/", "/parts/", "repaint_")):
+                raise ValueError("Forbidden touches path")
+        fingerprint = hashlib.sha256((file + "|" + t["problem"].strip().casefold()).encode()).hexdigest()[:16]
+        source = "ai:" + fingerprint
+        if source not in sources_seen:
+            pending.append((source, t, touches))
+            sources_seen.add(source)
+    updates = []
+    for u in payload["updates"]:
+        if not isinstance(u, dict) or set(u) != {"task_id", "status", "reason", "depends_on"}:
+            raise ValueError("Bad update schema")
+        tid = u["task_id"]
+        if tid not in current or current[tid]["status"] not in ("todo", "blocked") or u["status"] not in ("todo", "blocked"):
+            raise ValueError("Cannot change claimed/completed tasks")
+        if not isinstance(u["reason"], str) or not 5 <= len(u["reason"]) <= 500:
+            raise ValueError("Missing update evidence")
+        if not isinstance(u["depends_on"], list) or any(d not in current or d == tid for d in u["depends_on"]):
+            raise ValueError("Bad dependency update")
+        if u["status"] == "todo" and any(current[d]["status"] != "done" for d in u["depends_on"]):
+            raise ValueError("Dependencies not done")
+        updates.append(u)
+    created = []
+    for source, t, touches in pending:
+        task_id = create(source, t, current, datetime.now(ZONE).strftime("%Y-%m-%d"))
+        rec = current[task_id]
+        text = rec["raw"] + "\n## Allowed touches\n" + "\n".join("- " + p for p in touches) + "\n"
+        save(rec["path"], text)
+        created.append(task_id)
+    for u in updates:
+        rec = current[u["task_id"]]
+        text = re.sub(r"(?m)^status: (todo|blocked)$", "status: " + u["status"], rec["raw"], count=1)
+        text = re.sub(r"(?m)^depends_on: .+$", "depends_on: " + (",".join(u["depends_on"]) or "none"), text, count=1)
+        text += "\n## Planner evidence\n- " + u["reason"].replace("\n", " ") + "\n"
+        save(rec["path"], text)
+    return {"created": created, "updated": [x["task_id"] for x in updates]}
+
 def main():
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -240,10 +311,15 @@ def main():
     pro = sub.add_parser("prompt")
     pro.add_argument("task")
     sub.add_parser("completed")
+    ap = sub.add_parser("apply-proposal")
+    ap.add_argument("json_file")
+    ap.add_argument("--run-key", required=True)
     args = p.parse_args()
     try:
         if args.cmd == "pulse":
             print(json.dumps(pulse(args.date), ensure_ascii=False))
+        elif args.cmd == "apply-proposal":
+            print(json.dumps(apply_proposal(read(Path(args.json_file)), args.run_key)))
         elif args.cmd == "request":
             request(args)
         elif args.cmd == "claim":
