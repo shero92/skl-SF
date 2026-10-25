@@ -73,3 +73,10 @@ Code-task execution is *not* enabled here.
 - After owner approval, set status=active and milestones_approved=true; review matching milestones in goals.json before scheduled local planning creates coding tasks. auto_activate stays false unless deliberately changed.
 - To stop scheduled planning, use powershell -NoProfile -File tools/setup_local_planner.ps1 -Uninstall and set planning_enabled=false, execution_enabled=false, art_integration_enabled=false, graphics_issue_enabled=false in config.json.
 - For a first supervised trial, run py -3 tools/agent_runner.py --preflight and Python CI checks; do not set supervised_e2e_passed=true until actual Windows coding worktree tests, main merge and rollback/recovery have been observed.
+
+## First supervised trial (does NOT enable autonomous execution)
+1. Create a small real TODO task with explicit non-art touches, a trusted unittest command and done_when. Start from a clean main worktree and configure the Godot 4.7 executable in config.json.
+2. Run: py -3 tools/agent_runner.py --preflight. Confirm execution_enabled=false and supervised_e2e_passed=false.
+3. Run: py -3 tools/agent_runner.py --supervised TASK-#### in an interactive PowerShell session. The runner requests the exact confirmation SUPERVISE TASK-####. This single test can edit code and merge verified changes to main: watch the terminal and GitHub.
+4. Review the actual merge/rollback, Godot and Python tests, changed file list, token receipt and image containment. Any failure leaves automatic execution disabled.
+5. Only after owner acceptance, manually set supervised_e2e_passed=true and execution_enabled=true; no scheduler execution task is installed until then.
