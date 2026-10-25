@@ -1,5 +1,6 @@
 # Map-factory Python tests
 
+- `test_art_delivery.py`: check alpha-capable PNG headers without image decoding and QA signoff guard.
 - `test_parallel_safety.py`: task touch isolation, anti-art boundaries, no-code-run default, rollback guard, goal costs.
 - `test_goal_task_factory.py`: evidence, deduplication, manual requests, agent routing, claim safeguards.
 - `test_map_factory.py`: baseline versioning/factory operations.

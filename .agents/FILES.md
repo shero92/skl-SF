@@ -9,6 +9,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`graphics/`](graphics/FILES.md)
 - [`monitoring/`](monitoring/FILES.md)
 - [`planner/`](planner/FILES.md)
+- [`qa/`](qa/FILES.md)
 - [`project/`](project/FILES.md)
 - [`roles/`](roles/FILES.md)
 - [`skills/`](skills/FILES.md)

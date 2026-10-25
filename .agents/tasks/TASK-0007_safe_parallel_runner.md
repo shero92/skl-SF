@@ -21,7 +21,9 @@ paths, tests, sequential merge locks and rollback protect main.
 ## Acceptance
 - [x] Canonical task agent, touches, test, done_when enforced and collisions rejected.
 - [x] ACTIVE.md generated on main from claims, no generated dashboards in task branches.
-- [x] CLAUDE settings deny image reads and main runner refuses art paths.
+- [x] Claude settings deny image reads; agent worktrees exclude images while code agents run.
+- [x] Owner art request Issue helper; non-visual PNG delivery checks and gated asset registration.
+- [x] Isolated genuine Godot goal QA capture and owner-only final signoff.
 - [ ] Execute one supervised real task using local Windows subscription CLIs.
 - [ ] Enable execution_enabled=true only after successful supervised end-to-end test.
 

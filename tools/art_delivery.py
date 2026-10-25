@@ -134,6 +134,27 @@ def integrate():
             fields_before=req.read_text(encoding="utf8")
             req.write_text(fields_before.replace("status: delivered","status: integrated",1),encoding="utf8")
             call("git","add","--",str(req.relative_to(ROOT)).replace("\\","/"))
+            # Only unblock the task when the ART request was its sole blocker.
+            related=fields.get("task")
+            if related:
+                matches=list((ROOT/".agents/tasks").glob(related+"_*.md"))
+                if len(matches)==1:
+                    task_file=matches[0]
+                    text=task_file.read_text(encoding="utf8")
+                    if "status: blocked_on_art" in text and "art_request: "+fields["id"] in text:
+                        requirements=[]
+                        for line in text.splitlines():
+                            if line.startswith("depends_on: "):
+                                requirements=[d.strip() for d in line.split(":",1)[1].split(",") if d.strip()!="none"]
+                        status_by_id={}
+                        for current in (ROOT/".agents/tasks").glob("TASK-*.md"):
+                            m=re.search(r"(?m)^id: (TASK-\d{4})$",current.read_text(encoding="utf8"))
+                            n=re.search(r"(?m)^status: ([a-z_]+)$",current.read_text(encoding="utf8"))
+                            if m and n:status_by_id[m.group(1)]=n.group(1)
+                        if all(status_by_id.get(dep)=="done" for dep in requirements):
+                            task_file.write_text(text.replace("status: blocked_on_art","status: todo",1),encoding="utf8")
+                            call("git","add","--",str(task_file.relative_to(ROOT)).replace("\\","/"))
+
             issue=fields.get("issue")
             if issue and issue.isdigit():
                 # Closing issue after commit and successful post-registration validation only.
