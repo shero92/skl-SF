@@ -284,7 +284,7 @@ def pick_next(agent):
             verify_claim(t,active)
         except ValueError:
             continue
-        m=re.search(r"(?m)^\\*\\*Priority:\\*\\* (critical|high|normal|low)",t["text"])
+        m=re.search(r"(?m)^\*\*Priority:\*\* (critical|high|normal|low)",t["text"])
         priority=m.group(1) if m else "normal"
         choices.append((rank[priority],t["id"]))
     return min(choices)[1] if choices else None
