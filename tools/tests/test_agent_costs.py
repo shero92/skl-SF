@@ -35,7 +35,7 @@ class CostTests(unittest.TestCase):
         ]
         log.write_text("\n".join(json.dumps(x) for x in entries) + "\n")
         prices = self.root / ".agents/monitoring/pricing.json"
-        prices.parent.mkdir(parents=True)
+        prices.parent.mkdir(parents=True, exist_ok=True)
         prices.write_text(json.dumps({"models": {"test": {
             "input_per_million": 2, "cached_input_per_million": 1, "output_per_million": 10}}}))
         self.invoke("hook", "--agent", "codex", event={"session_id": "sample",
