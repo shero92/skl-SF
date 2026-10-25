@@ -1,6 +1,6 @@
 ---
 id: TASK-0004
-status: review
+status: done
 owner: coding-agent
 branch: feat/daily-goal-task-factory
 depends_on: TASK-0003
@@ -16,10 +16,10 @@ art_request: none
 - [x] Manual requests, priority, routing, deduplication, low token budgets.
 - [x] Four-times-daily GitHub Actions proposal PR and index regeneration.
 - [x] Verified completed-goal notification via assigned GitHub Issue.
-- [ ] CI and manual workflow run verified; PR reviewed and merged.
+- [x] PR #5 merged and CI passed; 4x cloud planning now superseded by local-only design.
 
 ## Evidence / handoff
 - Changed files: tools/goal_task_factory.py, .agents/planner, workflow, tests and indexes.
 - Tests: unit test and GitHub CI.
-- PR: pending review.
-- Next: review and merge after checks; configure your first explicit long-term goal.
+- PR: https://github.com/shero92/skl-SF/pull/5 (merged).
+- Next: implement verified local planning to replace the disabled cloud schedule.
