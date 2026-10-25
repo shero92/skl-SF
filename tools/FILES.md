@@ -10,8 +10,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
-- [`agent_costs_hook.sh`](agent_costs_hook.sh)
 - [`agent_costs.py`](agent_costs.py)
+- [`agent_costs_hook.sh`](agent_costs_hook.sh)
 - [`agent_runner.py`](agent_runner.py)
 - [`agent_workflow.py`](agent_workflow.py)
 - [`art_delivery.py`](art_delivery.py)
