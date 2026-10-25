@@ -109,8 +109,10 @@ def create(source, spec, existing, today):
     slug = re.sub(r"[^a-z0-9]+", "_", title.lower()).strip("_")[:50] or "work"
     file = TASKS / (task_id + "_" + slug + ".md")
     limit = 30000 if agent == "claude" else 12000
-    prompt = ("Read AGENTS.md and this task, then only the target file. Verify the issue and "
-              "location before changing code. Work only within Map Factory. Run the named test. "
+    prompt = ("Outcome: " + spec["done_when"] + ". Evidence: " + spec["problem"]
+              + ". Target: " + path + " (line " + line + "). Verify with: " + spec["test"]
+              + ". Read AGENTS.md and this task, then only the target file. "
+              "Verify the issue and location before changing code. Work only within Map Factory. "
               "Never generate artwork. Stop when evidence is missing. Commit the task, token receipt "
               "and summary on a PR branch, never main.")
     content = "\n".join([
@@ -138,8 +140,19 @@ def create(source, spec, existing, today):
     return task_id
 
 def goal_done(goal, tasks):
-    ids = goal.get("task_ids", [])
-    return goal.get("status") == "active" and goal.get("final_verified") is True and bool(ids) and all(
+    if goal.get("status") != "active" or goal.get("final_verified") is not True:
+        return False
+    ids = list(goal.get("task_ids", []))
+    # Every milestone step must have an actual TASK record; no premature
+    # success when the daily planner has not generated future steps yet.
+    for step in goal.get("steps", []):
+        marker = "**Source:** goal:" + goal["id"] + ":" + step["key"]
+        matches = [i for i, row in tasks.items() if marker in row["raw"]]
+        if len(matches) != 1:
+            return False
+        ids.extend(matches)
+    ids = list(dict.fromkeys(ids))
+    return bool(ids) and all(
         i in tasks and tasks[i]["status"] == "done" and
         re.search(r"(?m)^- PR: https://", tasks[i]["raw"]) for i in ids)
 
