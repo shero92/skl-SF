@@ -2,6 +2,6 @@
   "id": "GOAL-0001",
   "status": "draft",
   "milestones_approved": false,
-  "reference_planning_viewed": false,
+  "reference_planning_viewed": true,
   "final_verified": false
 }
