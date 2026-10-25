@@ -25,15 +25,13 @@ On this Windows project, Claude and Codex hooks invoke `py -3` directly; no Git 
 Start from the repository root in a dedicated branch/worktree, BEFORE opening a new agent session.
 
 Claude example:
-    python3 tools/agent_costs.py start TASK-0003 --agent claude
+    py -3 tools/agent_costs.py start TASK-0003 --agent claude
     claude
-    python3 tools/agent_costs.py finish
-    python3 tools/agent_costs.py report
-    git add .agents/monitoring/receipts .agents/monitoring/summary.json .agents/monitoring/summary.md
-    git commit -m "feat: describe task" -m "Task-ID: TASK-0003" -m "Agent: claude"
-    git push origin YOUR_BRANCH
+    # After tests, agent stages only intended task files:
+    git add path/to/changed/code path/to/task/evidence
+    py -3 tools/agent_costs.py complete --message "feat: implement TASK-0003" --push
 
-Codex: start with --agent codex, then launch codex in a FRESH session, and finish/commit the same way with Agent: codex.
+Codex: start with `--agent codex`, then launch Codex in a fresh session. If using `codex exec --json`, import the JSONL usage after the run. Once task code/evidence is staged, invoke the same `complete --message ... --push` command. Hooks gather usage but **do not perform git actions on their own**.
 
 For joint tasks each agent uses its own worktree and writes a separate receipt. Both receipts share the same Task-ID. Never run two agents from the same worktree: the ignored local active-task file is worktree-scoped.
 
@@ -44,7 +42,7 @@ For joint tasks each agent uses its own worktree and writes a separate receipt. 
 - For unsupported clients, cloud sessions or unavailable data, finish still creates a receipt but stores null for unknown cost or tokens. Manual estimation is possible using: python3 tools/agent_costs.py finish --manual-cost-usd 0.42 (labeled manual).
 - Fresh sessions are required for task attribution. Existing sessions that demonstrably began before tracking are excluded instead of charging earlier tasks to the current one.
 - A session cost can contain subagent usage if the provider includes it. Subscription charges, third-party tool charges and unobserved subagent costs are NOT independently measured.
-- No hooks automatically push commits. The finishing agent must include the receipt and summary in the same commit as the code. The SHA can then be resolved using: git log -1 --format=%H -- path/to/receipt.json. Including the SHA inside that same receipt would be circular.
+- The agent's `complete --message "..." --push` command commits and pushes only its task branch, never `main`. It will refuse to run without a tracked TASK ID and already staged task files. If push fails, the commit remains local and the agent must report that failure. The SHA is resolved from git history after committing; it cannot be embedded into the commit it names.
 
 ## Read or validate
 
@@ -68,6 +66,21 @@ If `codex resume` fails or the terminal immediately disconnects, use the officia
     py -3 tools/agent_costs.py diagnose
     py -3 tools/agent_costs.py finish
 
-The JSONL contains tool output, prompts and model responses: treat it as **private** and never commit it. The importer extracts **only** `turn.completed.usage` into a hashed local snapshot, with thread IDs not committed. If the stream lacks a model identifier, add `--model ACTUAL_MODEL_SLUG` to `import-codex` after confirming the model used. The pricing table contains only verified/existing slugs; unknown rates produce null cost. Never invent a model or a price.
+PowerShell 5.1 may write Tee-Object JSONL with UTF-16LE BOM. `import-codex` handles UTF-8, UTF-8 BOM and UTF-16 BOM. The JSONL contains tool output, prompts and model responses: treat it as **private** and never commit it. The importer extracts **only** `turn.completed.usage` into a hashed local snapshot, with thread IDs not committed. If the stream lacks a model identifier, add `--model ACTUAL_MODEL_SLUG` to `import-codex` after confirming the model used. The pricing table contains only verified/existing slugs; unknown rates produce null cost. Never invent a model or a price.
 
 When the same thread's Codex hooks have run, the imported thread ID replaces its session usage to avoid double-counting. This importer can be reused for real tasks as well as smoke tests.
+
+## Required committed token receipt and Git trailers
+
+For every **real TASK-####**, Claude or Codex should stage only intended code/evidence, then finish with `py -3 tools/agent_costs.py complete --message "feat: ..." --push`. This does NOT automatically stage all modifications, avoiding accidental unrelated changes. The resulting commit includes:
+
+    Task-ID: TASK-0012
+    Agent: codex
+    Tokens-Input: 57167
+    Tokens-Output: 199
+    Tokens-Cached-Input: 49920
+    Tokens-Reasoning: 0
+    Cost-USD: unknown
+    Cost-Receipt: .agents/monitoring/receipts/TASK-0012_codex_xxxxx.json
+
+Each receipt also records models, agent, measured tokens, estimated cost (nullable), and completion timestamp. The per-task leaderboard combines Claude and Codex receipts under the same TASK ID. `Tokens-Input` already includes cached tokens; `Tokens-Output` includes reasoning tokens, so never sum them twice. Capture is a snapshot **as of the completion command** and cannot include later agent output or changes made after push. This is a price-comparison estimate, not an actual subscription bill. Unknown costs are clearly marked; never invent rates or metrics.

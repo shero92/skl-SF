@@ -8,10 +8,11 @@
 3. If a task is already `in_progress` by another agent, do not redo it. Work in a separate Git branch/worktree. Name branch in the task record when claimed.
 4. If an art request is required, first search the art queue/catalog, create/reuse one request, and set task `blocked` with that request ID.
 
-## Cost receipts for Claude Code and Codex
-- Start the TASK-#### tracker BEFORE a fresh agent session: `python3 tools/agent_costs.py start TASK-#### --agent claude|codex`.
-- Before committing task code run `python3 tools/agent_costs.py finish`. Include the receipt and generated summaries in the same commit, with Task-ID, Agent and Cost-USD commit trailers.
-- Missing or unavailable cost remains unknown (null), not $0. Never commit local transcripts. Read `.agents/monitoring/README.md` for detailed procedure.
+## Mandatory Claude/Codex token receipts for task commits
+- Start tracking a real `TASK-####` before beginning a fresh session: `py -3 tools/agent_costs.py start TASK-#### --agent claude|codex` (use `python3` on Linux).
+- After finishing work and tests, import Codex JSONL usage if using `codex exec --json`, then stage **only intended task code/evidence** with `git add path1 path2`.
+- The finishing agent MUST run `py -3 tools/agent_costs.py complete --message "feat: ..." --push`. It snapshots measured tokens/cost, commits receipt + leaderboard along with staged work, includes Task-ID/Agent/Tokens-Input/Tokens-Output/Tokens-Cached-Input/Tokens-Reasoning/Cost-USD/Cost-Receipt trailers and pushes to the task branch. Never push directly to main.
+- Missing metrics remain unknown (not $0), and API-equivalent estimates are not subscription bills. Logs and raw transcripts stay local. See `.agents/monitoring/README.md`.
 
 ## States and completion
 - `todo`: planned; `in_progress`: assigned and editing; `blocked`: waiting on something explicit; `review`: PR submitted; `done`: reviewed/merged and validated; `cancelled`: no longer needed.
