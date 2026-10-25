@@ -1,0 +1,21 @@
+# Map factory — navigation
+
+**Scope:** reusable environment construction only. See [root instructions](../AGENTS.md), [main navigation](../INDEX.md).
+
+| Concern | Entry point |
+| --- | --- |
+| Mandatory system invariants | [MAP_FACTORY_RULES.md](MAP_FACTORY_RULES.md) |
+| Exact image-to-map workflow and manifest operations | [MAP_FACTORY_WORKFLOW.md](MAP_FACTORY_WORKFLOW.md), [DEPLOYED_FACTORY.md](DEPLOYED_FACTORY.md) |
+| Five logical passes, drawing and mount metadata | [LAYER_SCHEMA.md](LAYER_SCHEMA.md) |
+| North/east/south/west and real perspective artwork | [FOUR_DIRECTION_BLOCKS.md](FOUR_DIRECTION_BLOCKS.md) |
+| Saved rooms and immutable versions | [maps/INDEX.md](maps/INDEX.md) |
+| Asset catalog, schema, QA metadata | [metadata/INDEX.md](metadata/INDEX.md) |
+| Pixel-art images by stable ID and category | [parts/INDEX.md](parts/INDEX.md) |
+| Godot scene-building functions | [scripts/INDEX.md](scripts/INDEX.md) |
+| Original artwork intake and review queues | [intake/INDEX.md](intake/INDEX.md), [references/FILES.md](references/FILES.md) |
+| Preset creation | [presets/INDEX.md](presets/INDEX.md) |
+| Legacy room templates (not latest revision) | [rooms/INDEX.md](rooms/INDEX.md) |
+| Inbound packs | [incoming/FILES.md](incoming/FILES.md) |
+
+**Efficient lookup:** JSON map location → `maps/index.json` → `<map_id>/latest.json`; sprite location → `metadata/asset_index.json` search ID, not full dump; Godot renderer → `scripts/room_factory.gd`. Do not modify characters/UI.
+[All entries](FILES.md).

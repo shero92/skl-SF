@@ -2,12 +2,18 @@
 
 **The present workstream is MAPS AND ROOMS ONLY. Do not generate, regenerate, curate, import, move, or change any character sprites, NPC/gameplay scripts, dialogue portraits, dialogue UI or their metadata.** Previously existing gameplay code may remain, untouched.
 
-Before map work, read:
-- map_factory/MAP_FACTORY_RULES.md (MANDATORY contract)
-- `map_factory/MAP_FACTORY_WORKFLOW.md`
-- `map_factory/maps/index.json` and the relevant `map_factory/maps/<map_id>/latest.json`
-- `map_factory/metadata/asset_index.json`
-- `docs/ASSET_QUALITY_POLICY.md`, `docs/REFERENCE_ART_DIRECTION.md`
+## Efficient file navigation (all coding agents)
+
+- Start from `INDEX.md` -> the matching folder's `INDEX.md` -> target files. Each folder's generated `FILES.md` lists exact names; never load all inventories into context.
+- For map tasks, read `map_factory/MAP_FACTORY_RULES.md` (MANDATORY). Then open only the relevant additional documentation: workflow for intake, layer schema for rendering, four-facing guide for rotations, art direction/quality policy for visual asset work.
+- Use `map_factory/maps/index.json` to confirm latest map versions; read only the relevant map's `latest.json` and targeted entries in `metadata/asset_index.json`. Do not dump the full catalog or historic versions without a concrete reason.
+- After adding, deleting or renaming files, run `python tools/generate_project_indexes.py --write` and stage updated `FILES.md` inventories. CI enforces `--check`.
+- Share one task per agent branch/worktree and propose a PR; avoid concurrent edits to the same files, avoid direct pushes to main, and do not authorize artwork or reference fidelity without a verified Godot render.
+- Use `PROJECT.md` for product context, `PLAN.md` for roadmap, `STATUS.md` for a short handoff only when state materially changes. Report changed paths, commands actually run, results and one next step.
+
+## Before map work
+
+Read the mandatory rules above and use the targeted paths in `INDEX.md`; map-only scope and quality protections below remain in force.
 
 When a new AI room image is provided:
 1. Compare it to the **latest** registered map version, not an old room screenshot.
