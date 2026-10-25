@@ -29,7 +29,7 @@ class CostTests(unittest.TestCase):
         self.invoke("start", "TASK-0099", "--agent", "codex")
         log = self.root / "codex.jsonl"
         entries = [
-            {"timestamp": "2099-01-01T00:00:00Z", "type": "turn_context", "payload": {"model": "test"}},
+            {"timestamp": "2099-01-01T00:00:00Z", "type": "session_meta", "payload": {}},
             {"type": "event_msg", "payload": {"type": "token_count", "info": {
                 "total_token_usage": {"input_tokens": 1000, "cached_input_tokens": 500, "output_tokens": 100}}}}
         ]
@@ -38,7 +38,7 @@ class CostTests(unittest.TestCase):
         prices.parent.mkdir(parents=True, exist_ok=True)
         prices.write_text(json.dumps({"models": {"test": {
             "input_per_million": 2, "cached_input_per_million": 1, "output_per_million": 10}}}))
-        self.invoke("hook", "--agent", "codex", event={"session_id": "sample",
+        self.invoke("hook", "--agent", "codex", event={"session_id": "sample", "model": "test",
                                                         "transcript_path": str(log)})
         self.invoke("finish")
         receipt = json.loads(self.receipts()[0].read_text())
