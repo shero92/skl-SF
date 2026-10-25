@@ -17,5 +17,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0005_archive_cloud_art_workflows.md`](TASK-0005_archive_cloud_art_workflows.md)
 - [`TASK-0006_local_planning.md`](TASK-0006_local_planning.md)
 - [`TASK-0007_safe_parallel_runner.md`](TASK-0007_safe_parallel_runner.md)
+- [`TASK-0008_map_goal_0001_written_spec_to_existing_asset_ids_a.md`](TASK-0008_map_goal_0001_written_spec_to_existing_asset_ids_a.md)
+- [`TASK-0009_layer_0_animation_and_scroll_schema_validation_in_.md`](TASK-0009_layer_0_animation_and_scroll_schema_validation_in_.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
