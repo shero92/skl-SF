@@ -15,7 +15,7 @@ BASE = ROOT / ".agents/planner"
 TASKS = ROOT / ".agents/tasks"
 ZONE = ZoneInfo("Europe/Berlin")
 PRIORITIES = {"critical": 0, "high": 1, "normal": 2, "low": 3}
-KINDS = ("bug", "test", "feature", "architecture", "investigation", "art")
+KINDS = ("bug", "test", "feature", "architecture", "investigation", "refactor", "art")
 MAX_NEW_PER_DAY = 3
 
 def read(path, default=None):
@@ -239,6 +239,13 @@ def apply_proposal(payload, run_key):
             raise ValueError("Invalid task fields")
         if any(not isinstance(t[k], str) or not 1 <= len(t[k]) <= 500 for k in ("title", "problem", "done_when", "test")):
             raise ValueError("Invalid task text")
+        goal_id = t.get("goal_id")
+        if goal_id:
+            if not re.fullmatch(r"GOAL-\d{4}", goal_id):
+                raise ValueError("Invalid GOAL ID")
+            state = read(BASE / "goals" / goal_id / "state.json", {})
+            if state.get("status") != "active" or state.get("milestones_approved") is not True:
+                raise ValueError("Goal milestones must be reviewed/approved before task creation")
         file, line = target(t["file"], t.get("line"))
         if not (ROOT / file).is_file() or file.lower().endswith((".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif")):
             raise ValueError("Task must target existing source file, not artwork")
