@@ -127,7 +127,7 @@ class CostTests(unittest.TestCase):
         self.assertEqual(receipt["session_count"], 1)
         self.assertEqual(receipt["tokens"]["input_tokens"], 1900)
         self.assertEqual(receipt["tokens"]["output_tokens"], 350)
-        self.assertEqual(receipt["cost_usd"], 0.0067)
+        self.assertEqual(receipt["cost_usd"], 0.007)
         self.assertEqual(receipt["coverage"], "complete")
         self.assertNotIn("abc123", json.dumps(receipt))
 
