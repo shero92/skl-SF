@@ -15,9 +15,15 @@
 | Python map tests / tools | [tools/INDEX.md](tools/INDEX.md) | `tools/tests/INDEX.md` |
 | Automated GitHub validation | [.github/INDEX.md](.github/INDEX.md) | `.github/workflows/INDEX.md` |
 | Art direction, visual QA and historical reviews | [docs/INDEX.md](docs/INDEX.md) | relevant review/quality policy |
-| Project constraints / milestones / current progress | [PROJECT.md](PROJECT.md), [PLAN.md](PLAN.md), [STATUS.md](STATUS.md) | refer only when relevant |
+| Project constraints / milestones / current progress | [Project files](.agents/project/INDEX.md) | refer only when relevant |
+
+## Shared multi-agent coordination
+- [Agent collaboration, task handoffs and graphics queue](.agents/INDEX.md): roles, task records, stage-gated specialist graphics requests and project status.
+- [Project roadmap and handoff](.agents/project/INDEX.md): PROJECT, PLAN, STATUS, generated TASKS, CHANGELOG and DECISIONS.
+- Root `AGENTS.md` is the **only** agent instruction file at root; the project has no root `CLAUDE.md` for current Claude Code v2.1.277+.
 
 ## Major directories
+- [.agents/](.agents/INDEX.md): on-demand agent instructions, live task records and specialist graphics.
 - [map_factory/](map_factory/INDEX.md): source assets, factory rules, JSON map snapshots and Godot renderers.
 - [tools/](tools/INDEX.md): builders, audits and tests.
 - [scenes/](scenes/INDEX.md): runtime/preview GDScript.

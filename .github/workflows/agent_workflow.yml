@@ -1,0 +1,16 @@
+name: Verify multi-agent task and graphics handoffs
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate tracking records and generated dashboards
+        run: python3 tools/agent_workflow.py --check
+      - name: Verify code/graphics boundary and deduplication rules
+        run: python3 -m unittest discover -s tools/tests -p 'test_agent_workflow.py' -v

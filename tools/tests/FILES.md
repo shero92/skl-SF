@@ -10,6 +10,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`test_agent_workflow.py`](test_agent_workflow.py)
 - [`test_map_cardinal.py`](test_map_cardinal.py)
 - [`test_map_factory.py`](test_map_factory.py)
 - [`test_map_floor_geometry.py`](test_map_floor_geometry.py)

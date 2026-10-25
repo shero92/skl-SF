@@ -10,6 +10,7 @@
 | Verify image presence and map quality | `verify_map_assets.py`, `audit_room_assets.py`, `quality_guard.py` |
 | Render real Godot preview | `capture_map_previews.gd`, `map_factory_godot_smoke.gd` |
 | Test map behaviors | [tests/INDEX.md](tests/INDEX.md), `test_cardinal_map_blocks.gd` |
+| Generate agent task/art queues and verify delivery hashes | `agent_workflow.py` |
 | Generate directory inventories | `generate_project_indexes.py` |
 | Curate/import historical asset sheets | other `generate_*`, `repaint_*`, `curate_*` scripts; not part of map-only task by default |
 

@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`.agents/`](.agents/FILES.md)
 - [`.github/`](.github/FILES.md)
 - [`docs/`](docs/FILES.md)
 - [`map_factory/`](map_factory/FILES.md)
@@ -16,12 +17,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`.gitignore`](.gitignore)
 - [`AGENTS.md`](AGENTS.md)
-- [`CLAUDE.md`](CLAUDE.md)
-- [`PLAN.md`](PLAN.md)
-- [`PROJECT.md`](PROJECT.md)
 - [`README.md`](README.md)
 - [`README_IMPORT.md`](README_IMPORT.md)
-- [`STATUS.md`](STATUS.md)
 - [`project.godot`](project.godot)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

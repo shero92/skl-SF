@@ -10,6 +10,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`agent_workflow.yml`](agent_workflow.yml)
 - [`art_quality_cleanup.yml`](art_quality_cleanup.yml)
 - [`audit_assets.yml`](audit_assets.yml)
 - [`audit_room_assets.yml`](audit_room_assets.yml)
