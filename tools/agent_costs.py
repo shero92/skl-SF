@@ -154,9 +154,10 @@ def run(args):
             cost = (event.get("cost") or {}).get("total_cost_usd")
             if type(cost) in (int, float) and 0 <= cost < float("inf"):
                 item["cost_usd"] = cost
-            model = event.get("model") or {}
-            if isinstance(model, dict):
-                item["model"] = model.get("id") or item.get("model")
+        model = event.get("model")
+        model_id = model.get("id") if isinstance(model, dict) else model
+        if isinstance(model_id, str) and model_id:
+            item["model"] = model_id
         put(file, item)
         if args.statusline:
             print(active["task_id"] + " | session USD " + str(item.get("cost_usd", "unknown")))
