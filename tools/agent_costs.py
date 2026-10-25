@@ -223,7 +223,7 @@ def run(args):
     report()
     print("Commit this receipt WITH task code:", file.relative_to(ROOT))
     print("USD:", receipt["cost_usd"], "|", receipt["coverage"])
-    print("Commit trailers: Task-ID:", active["task_id"], "Agent:", agent)
+    print("Commit trailers: Task-ID:", active["task_id"], "| Agent:", agent, "| Cost-USD:", receipt["cost_usd"] if receipt["cost_usd"] is not None else "unknown")
 
 def main():
     p = argparse.ArgumentParser()
