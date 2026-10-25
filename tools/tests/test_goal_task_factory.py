@@ -100,6 +100,18 @@ class GoalFactoryTests(unittest.TestCase):
         (self.base / "goals.json").write_text(json.dumps(goals))
         self.assertEqual(json.loads(self.run_script("completed").stdout)[0]["id"], "GOAL-0099")
 
+    def test_goal_waits_for_uncreated_milestones(self):
+        self.goals(steps=[self.step("not-created")])
+        file = self.root / ".agents/tasks/TASK-0001_existing.md"
+        file.write_text("---\nid: TASK-0001\nstatus: done\nowner: codex\n"
+                        "branch: feat/example\ndepends_on: none\nissue: none\n"
+                        "art_request: none\n---\n# Done\n- PR: https://github.com/example/repo/pull/1\n")
+        config = json.loads((self.base / "goals.json").read_text())
+        config["goals"][0]["task_ids"] = ["TASK-0001"]
+        config["goals"][0]["final_verified"] = True
+        (self.base / "goals.json").write_text(json.dumps(config))
+        self.assertEqual(json.loads(self.run_script("completed").stdout), [])
+
     def test_unsafe_file_refused(self):
         self.goals(steps=[{**self.step("bad"), "file": "../secret"}])
         self.run_script("pulse", "--date", "2026-10-25", success=False)
