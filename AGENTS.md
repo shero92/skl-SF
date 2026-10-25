@@ -20,4 +20,6 @@
 
 12. **Goal/task automation:** User-specified tasks enter as .agents/planner/requests/REQ-*.json via tools/goal_task_factory.py request. Long goals and accepted step specifications belong in .agents/planner/goals.json; follow PROMPT_RULES.md. Four future LOCAL Windows scans propose no more than three tasks/day on review PRs, refresh indexes, and suggest agents; cloud GitHub Actions must not run planning or AI. Claim tasks before coding. The scanner never generates production art or directly pushes to main. Verified goal completion produces a GitHub Issue notification.
 
+Before any commit/merge run: py -3 tools/run_tests.py --changed
+
 Details only when needed: `.agents/roles/`, `.agents/workflows/`, `.agents/project/`, `.agents/graphics/`. Keep context concise.

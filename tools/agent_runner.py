@@ -149,23 +149,21 @@ def changed_paths(workdir):
     untracked=git("ls-files","--others","--exclude-standard",cwd=workdir).splitlines()
     return sorted(set(tracked+staged+untracked))
 
-def tests(workdir,task):
+def tests(workdir,task,scope="--changed"):
     # Only expected unittest arguments; never execute arbitrary task-supplied shell.
-    godot=read_json(CONFIG,{}).get("godot_executable","godot")
     requested=shlex.split(task["test"],posix=False)
     safe_test(requested)
     # Use current interpreter and trusted test modules regardless of task-controlled exe.
     step=requested[1:]
     if step[:1]==["-3"]:step=step[1:]
+    # The router (tools/test_map.json) picks tests for changed paths, or all of them on main.
     commands=[
         [sys.executable,*step],
-        [sys.executable,"-m","unittest","discover","-s","tools/tests","-p","test_map*.py","-v"],
-        [godot,"--headless","--path",".","--editor","--quit"],
-        [godot,"--headless","--path",".","--script","res://tools/map_factory_godot_smoke.gd"]]
+        [sys.executable,"tools/run_tests.py",scope]]
     failures=[]
     for command in commands:
-        proc=execute(command,workdir,timeout=420,check=False)
-        if proc.returncode:failures.append(command[0]+" returned "+str(proc.returncode))
+        proc=execute(command,workdir,timeout=1800,check=False)
+        if proc.returncode:failures.append(" ".join(str(x) for x in command[1:3])+" returned "+str(proc.returncode))
     if failures:raise RuntimeError("; ".join(failures))
 
 def checkpoint(tid,agent,phase,details):
@@ -243,7 +241,7 @@ def run(tid, supervised=False):
             git("push","origin","main")
             checkpoint(tid,agent,"merged_pending_main_tests",merge_sha)
             try:
-                tests(ROOT,task)
+                tests(ROOT,task,"--all")
             except Exception:
                 git("revert","-m","1","--no-edit",merge_sha)
                 git("push","origin","main")

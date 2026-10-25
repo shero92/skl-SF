@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
+  "tests": [
+    {
+      "id": "agent_costs",
+      "kind": "python",
+      "covers": "Claude/Codex token and cost receipts, leaderboard and hooks.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_agent_costs.py"],
+      "paths": ["tools/tests/test_agent_costs.py", "tools/agent_costs.py", "tools/agent_costs_hook.sh", ".agents/monitoring/**"]
+    },
+    {
+      "id": "agent_workflow",
+      "kind": "python",
+      "covers": "Task/art tracking records, generated dashboards, code/graphics boundary and deduplication.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_agent_workflow.py"],
+      "paths": ["tools/tests/test_agent_workflow.py", "tools/agent_workflow.py", ".agents/tasks/**", ".agents/graphics/**", ".agents/workflows/**", ".agents/project/**", "map_factory/metadata/asset_index.json"]
+    },
+    {
+      "id": "art_delivery",
+      "kind": "python",
+      "covers": "Alpha-capable PNG headers without image decoding and QA signoff guard.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_art_delivery.py"],
+      "paths": ["tools/tests/test_art_delivery.py", "tools/art_delivery.py", "tools/art_requests.py", ".agents/graphics/deliveries/**"]
+    },
+    {
+      "id": "goal_task_factory",
+      "kind": "python",
+      "covers": "Goal planner evidence, deduplication, manual requests, agent routing and claim safeguards.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_goal_task_factory.py"],
+      "paths": ["tools/tests/test_goal_task_factory.py", "tools/goal_task_factory.py", ".agents/planner/**", ".agents/tasks/**", ".claude/skills/goal-task-factory/**", ".agents/skills/goal-task-factory/**"]
+    },
+    {
+      "id": "local_planner",
+      "kind": "python",
+      "covers": "Local-only planning proposals and setup defaults.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_local_planner.py"],
+      "paths": ["tools/tests/test_local_planner.py", "tools/local_planner.py", "tools/goal_task_factory.py", "tools/run_local_planner.ps1", "tools/setup_local_planner.ps1", ".agents/planner/**"]
+    },
+    {
+      "id": "parallel_safety",
+      "kind": "python",
+      "covers": "Task touch isolation, anti-art boundaries, no-code-run default, rollback guard, goal costs.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_parallel_safety.py"],
+      "paths": ["tools/tests/test_parallel_safety.py", "tools/agent_runner.py", "tools/runner_safety.py", "tools/agent_workflow.py", "tools/goal_costs.py", "tools/goal_qa.py", "tools/run_local_agent.ps1", ".agents/planner/config.json"]
+    },
+    {
+      "id": "project_indexes",
+      "kind": "python",
+      "covers": "Deterministic FILES.md inventory generation.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_project_indexes.py"],
+      "paths": ["tools/tests/test_project_indexes.py", "tools/generate_project_indexes.py"]
+    },
+    {
+      "id": "map_factory",
+      "kind": "python",
+      "covers": "Baseline map versioning and factory operations.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_factory.py"],
+      "paths": ["tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "map_factory/rooms/**", "map_factory/metadata/**", "map_factory/maps/**", "map_factory/intake/**"]
+    },
+    {
+      "id": "map_cardinal",
+      "kind": "python",
+      "covers": "Four directions, sprite selection and mounted offsets.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_cardinal.py"],
+      "paths": ["tools/tests/test_map_cardinal.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "tools/map_factory_orientation.py", "map_factory/rooms/**", "map_factory/metadata/**"]
+    },
+    {
+      "id": "map_floor_geometry",
+      "kind": "python",
+      "covers": "Floor geometry.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_floor_geometry.py"],
+      "paths": ["tools/tests/test_map_floor_geometry.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "map_factory/rooms/**", "map_factory/metadata/**"]
+    },
+    {
+      "id": "map_floor_style",
+      "kind": "python",
+      "covers": "Floor style and tiling.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_floor_style.py"],
+      "paths": ["tools/tests/test_map_floor_style.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "tools/map_factory_layers.py", "map_factory/rooms/**", "map_factory/metadata/**"]
+    },
+    {
+      "id": "map_intake",
+      "kind": "python",
+      "covers": "Map intake and asset import.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_intake.py"],
+      "paths": ["tools/tests/test_map_intake.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "tools/import_map_assets.py", "tools/process_map_intake.py", "map_factory/rooms/**", "map_factory/metadata/**", "map_factory/intake/**"]
+    },
+    {
+      "id": "map_layers",
+      "kind": "python",
+      "covers": "Five-layer composition and block mount rules.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_layers.py"],
+      "paths": ["tools/tests/test_map_layers.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "tools/map_factory_layers.py", "map_factory/rooms/**", "map_factory/metadata/**"]
+    },
+    {
+      "id": "map_navigation",
+      "kind": "python",
+      "covers": "Traversal metadata validation.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_navigation.py"],
+      "paths": ["tools/tests/test_map_navigation.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "map_factory/rooms/**", "map_factory/metadata/**"]
+    },
+    {
+      "id": "map_reference",
+      "kind": "python",
+      "covers": "Source reference images and version checks.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_reference.py"],
+      "paths": ["tools/tests/test_map_reference.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "tools/prepare_map_reference.py", "tools/process_map_intake.py", "map_factory/rooms/**", "map_factory/metadata/**", "map_factory/presets/**"]
+    },
+    {
+      "id": "map_templates",
+      "kind": "python",
+      "covers": "Map templates and presets.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_templates.py"],
+      "paths": ["tools/tests/test_map_templates.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "tools/process_map_intake.py", "map_factory/rooms/**", "map_factory/metadata/**", "map_factory/presets/**", "map_factory/intake/**"]
+    },
+    {
+      "id": "map_registry_validate",
+      "kind": "python",
+      "covers": "Every published map version and latest registry hash.",
+      "command": ["{python}", "tools/map_factory_cli.py", "validate"],
+      "paths": ["tools/map_factory_cli.py", "map_factory/maps/**", "map_factory/metadata/**"]
+    },
+    {
+      "id": "test_router",
+      "kind": "python",
+      "covers": "Test router: glob matching, changed-path selection, unmatched fallback, map coverage.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_run_tests.py"],
+      "paths": ["tools/tests/test_run_tests.py", "tools/run_tests.py", "tools/test_map.json"]
+    },
+    {
+      "id": "test_index",
+      "kind": "python",
+      "covers": "tools/tests/INDEX.md matches tools/test_map.json.",
+      "command": ["{python}", "tools/run_tests.py", "--check-index"],
+      "paths": ["tools/run_tests.py", "tools/test_map.json", "tools/tests/INDEX.md"]
+    },
+    {
+      "id": "godot_import",
+      "kind": "godot",
+      "covers": "Godot headless resource import and script parse.",
+      "command": ["{godot}", "--headless", "--path", ".", "--editor", "--quit"],
+      "paths": ["project.godot", "**/*.gd", "**/*.tscn", "**/*.tres", "map_factory/parts/**"]
+    },
+    {
+      "id": "godot_map_smoke",
+      "kind": "godot",
+      "covers": "Builds every registered map in Godot including ocean and block counts.",
+      "command": ["{godot}", "--headless", "--path", ".", "--script", "res://tools/map_factory_godot_smoke.gd"],
+      "paths": ["tools/map_factory_godot_smoke.gd", "map_factory/maps/**", "map_factory/presets/**", "map_factory/scripts/**", "map_factory/metadata/**", "map_factory/parts/**", "scenes/map_factory_preview.*", "scenes/ocean_background.gd", "scenes/room_light_fx.gd", "tools/map_factory_orientation.py"]
+    },
+    {
+      "id": "godot_cardinal_blocks",
+      "kind": "godot",
+      "covers": "Four 90-degree rotations, collision transforms and drawn directional variants.",
+      "command": ["{godot}", "--headless", "--path", ".", "--script", "res://tools/test_cardinal_map_blocks.gd"],
+      "paths": ["tools/test_cardinal_map_blocks.gd", "map_factory/scripts/**", "map_factory/maps/**", "map_factory/metadata/**", "tools/map_factory_orientation.py"]
+    }
+  ]
+}

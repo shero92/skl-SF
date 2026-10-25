@@ -52,10 +52,12 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`restore_high_detail_floors.py`](restore_high_detail_floors.py)
 - [`run_local_agent.ps1`](run_local_agent.ps1)
 - [`run_local_planner.ps1`](run_local_planner.ps1)
+- [`run_tests.py`](run_tests.py)
 - [`runner_safety.py`](runner_safety.py)
 - [`setup_local_planner.ps1`](setup_local_planner.ps1)
 - [`test_cardinal_map_blocks.gd`](test_cardinal_map_blocks.gd)
 - [`test_cardinal_map_blocks.gd.uid`](test_cardinal_map_blocks.gd.uid)
+- [`test_map.json`](test_map.json)
 - [`validate_rooms.py`](validate_rooms.py)
 - [`verify_map_assets.py`](verify_map_assets.py)
 

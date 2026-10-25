@@ -12,5 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify directory listings are synchronized
         run: python3 tools/generate_project_indexes.py --check
+      - name: Verify tools/tests/INDEX.md matches the test router map
+        run: python3 tools/run_tests.py --check-index
       - name: Test deterministic index generation
         run: python3 -m unittest discover -s tools/tests -p 'test_project_indexes.py' -v

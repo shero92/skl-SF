@@ -11,6 +11,8 @@ on:
       - "tools/map_factory_godot_smoke.gd"
       - "tools/test_cardinal_map_blocks.gd"
       - "tools/map_factory_orientation.py"
+      - "tools/run_tests.py"
+      - "tools/test_map.json"
       - ".github/workflows/map_factory_godot_smoke.yml"
   workflow_dispatch:
 jobs:
@@ -28,9 +30,5 @@ jobs:
           curl -fsSL --retry 3 -o /tmp/godot.zip "https://github.com/godotengine/godot/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip"
           unzip -q /tmp/godot.zip -d /tmp
           chmod +x /tmp/Godot_v4.4.1-stable_linux.x86_64
-      - name: Godot headless import and parse
-        run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --editor --quit
-      - name: Build and check every map including ocean and block count
-        run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --script res://tools/map_factory_godot_smoke.gd
-      - name: Verify four directions and upright directional sprite variants
-        run: /tmp/Godot_v4.4.1-stable_linux.x86_64 --headless --path . --script res://tools/test_cardinal_map_blocks.gd
+      - name: Godot import, map smoke and cardinal blocks through the test router
+        run: python tools/run_tests.py --all --kind godot --godot /tmp/Godot_v4.4.1-stable_linux.x86_64

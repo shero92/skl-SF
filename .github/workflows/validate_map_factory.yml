@@ -6,8 +6,11 @@ on:
       - "tools/map_factory_cli.py"
       - "tools/map_factory_layers.py"
       - "tools/map_factory_orientation.py"
-      - "tools/tests/test_map*.py"
+      - "tools/tests/**"
+      - "tools/run_tests.py"
+      - "tools/test_map.json"
       - ".github/workflows/validate_map_factory.yml"
+  pull_request:
   workflow_dispatch:
 jobs:
   tests:
@@ -19,10 +22,8 @@ jobs:
           python-version: "3.12"
       - name: Install PNG image validation library for end-to-end tests
         run: python -m pip install "Pillow>=10,<13"
-      - name: Unit test map-only metadata revisions
-        run: python -m unittest discover -s tools/tests -p 'test_map*.py' -v
-      - name: Check every published version and latest registry hash
-        run: python tools/map_factory_cli.py validate
+      - name: Run every Python test and map registry check through the test router
+        run: python tools/run_tests.py --all --kind python
       - name: Reject character and UI objects in map snapshots
         run: |
           python - <<'PY'
