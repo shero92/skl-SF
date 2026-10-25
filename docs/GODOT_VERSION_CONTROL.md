@@ -6,6 +6,7 @@ This project tracks **source files and useful import configuration**, not Godot'
 - https://docs.godotengine.org/en/4.4/tutorials/assets_pipeline/import_process.html
 - https://docs.godotengine.org/en/4.4/tutorials/best_practices/project_organization.html
 - https://docs.godotengine.org/en/4.4/tutorials/assets_pipeline/importing_translations.html
+- https://godotengine.org/article/uid-changes-coming-to-godot-4-4/ (official guidance explicitly says commit all `*.uid` files)
 
 ## Track and push (do not blanket-ignore)
 
