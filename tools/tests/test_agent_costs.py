@@ -102,6 +102,35 @@ class CostTests(unittest.TestCase):
         self.assertEqual(receipt["coverage"], "complete")
         self.assertIn("claude_api_equivalent_estimate", receipt["source"])
 
+    def test_import_codex_exec_json_and_deduplicate_session(self):
+        self.invoke("start", "--agent", "codex")
+        path = self.root / "codex-exec.jsonl"
+        path.write_text("\n".join(json.dumps(event) for event in [
+            {"type": "thread.started", "thread_id": "abc123"},
+            {"type": "turn.started"},
+            {"type": "turn.completed", "usage": {
+                "input_tokens": 1200, "cached_input_tokens": 100,
+                "output_tokens": 250}},
+            {"type": "turn.completed", "usage": {
+                "input_tokens": 700, "cached_input_tokens": 200,
+                "output_tokens": 100}}
+        ]) + "\n")
+        pricing = self.root / ".agents/monitoring/pricing.json"
+        pricing.parent.mkdir(parents=True, exist_ok=True)
+        pricing.write_text(json.dumps({"models": {"test-model": {
+            "input_per_million": 2, "cached_input_per_million": 1,
+            "output_per_million": 10}}}))
+        self.invoke("import-codex", str(path), "--model", "test-model")
+        self.invoke("import-codex", str(path), "--model", "test-model")
+        self.invoke("finish")
+        receipt = json.loads(list((self.root / ".agents/monitoring/.local/test_receipts").glob("TEST-*.json"))[0].read_text())
+        self.assertEqual(receipt["session_count"], 1)
+        self.assertEqual(receipt["tokens"]["input_tokens"], 1900)
+        self.assertEqual(receipt["tokens"]["output_tokens"], 350)
+        self.assertEqual(receipt["cost_usd"], 0.0067)
+        self.assertEqual(receipt["coverage"], "complete")
+        self.assertNotIn("abc123", json.dumps(receipt))
+
     def test_unknown_is_not_zero(self):
         self.invoke("start", "TASK-0097", "--agent", "codex")
         self.invoke("finish")

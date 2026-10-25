@@ -110,6 +110,46 @@ def read_transcript(path, agent):
     parts = list(items.values()) if agent == "claude" else ([last] if last is not None else turns)
     return ({k: sum(part[k] for part in parts) for k in FIELDS} if parts else None), model, first
 
+def import_codex(args):
+    """Import trusted codex exec --json turn.completed events, never their message content."""
+    active = get(LOCAL / "active.json")
+    if not active or active.get("agent") != "codex":
+        raise ValueError("Start a Codex task with 'start --agent codex' first")
+    path = Path(args.path)
+    if not path.is_file():
+        raise ValueError("Missing Codex --json output file")
+    turns, thread_id, detected_model = [], None, None
+    try:
+        with path.open(encoding="utf8") as lines:
+            for line in lines:
+                try:
+                    obj = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if obj.get("type") == "thread.started":
+                    thread_id = obj.get("thread_id") or thread_id
+                if obj.get("type") == "turn.completed":
+                    u = usage(obj.get("usage"), "codex")
+                    if u is not None:
+                        turns.append(u)
+                if obj.get("type") == "turn.started":
+                    detected_model = obj.get("model") or detected_model
+    except (OSError, UnicodeError) as exc:
+        raise ValueError("Unable to read the JSONL usage file") from exc
+    if not turns:
+        raise ValueError("No valid turn.completed.usage records found; don't finish yet")
+    totals = {k: sum(u[k] for u in turns) for k in FIELDS}
+    identifier = str(thread_id) if thread_id else "import:" + str(path.resolve())
+    filename = "session_" + hashlib.sha256(identifier.encode()).hexdigest()[:16] + ".json"
+    dest = LOCAL / filename
+    item = get(dest, {})
+    item.update({"agent": "codex", "imported_usage": totals,
+                 "model": args.model or detected_model or item.get("model")})
+    put(dest, item)
+    print("Imported Codex usage:", totals["input_tokens"], "input;",
+          totals["output_tokens"], "output;", "model:", item.get("model") or "unknown")
+    print("Only token totals are saved; raw --json logs stay local.")
+
 def old_session(start, first):
     if not first:
         return False
@@ -210,6 +250,9 @@ def run(args):
     if args.command == "report":
         report(args.check)
         return
+    if args.command == "import-codex":
+        import_codex(args)
+        return
     if args.command == "diagnose":
         summary = []
         for path in sorted(LOCAL.glob("session_*.json")):
@@ -220,7 +263,7 @@ def run(args):
             summary.append({"agent": info.get("agent"),
                             "has_transcript_path": bool(transcript_path),
                             "transcript_exists": transcript_found,
-                            "tokens_found": u is not None,
+                            "tokens_found": u is not None or info.get("imported_usage") is not None,
                             "statusline_cost_found": info.get("cost_usd") is not None,
                             "model_found": bool(info.get("model") or model)})
         print(json.dumps({"active": bool(get(active_path)), "sessions": summary},
@@ -237,8 +280,12 @@ def run(args):
         if item["agent"] != agent:
             continue
         sessions += 1
-        u, model, first = read_transcript(item.get("transcript_path"), agent)
-        model = item.get("model") or model
+        if agent == "codex" and item.get("imported_usage") is not None:
+            u = usage(item["imported_usage"], "codex")
+            model, first = item.get("model"), None
+        else:
+            u, model, first = read_transcript(item.get("transcript_path"), agent)
+            model = item.get("model") or model
         if model:
             models.add(model)
         if old_session(active["started_at"], first):
@@ -307,6 +354,9 @@ def main():
     r = sub.add_parser("report")
     r.add_argument("--check", action="store_true")
     sub.add_parser("diagnose", help="Show privacy-safe local hook/session health")
+    imp = sub.add_parser("import-codex", help="Import Codex exec --json token usage from a local JSONL file")
+    imp.add_argument("path")
+    imp.add_argument("--model", help="Codex model slug (required for pricing if not detected)")
     try:
         run(p.parse_args())
         return 0
