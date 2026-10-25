@@ -24,5 +24,9 @@
   "timeout_seconds": 180,
   "ci_wait_seconds": 600,
   "max_tasks_per_run": 4,
-  "execution_enabled": false
+  "execution_enabled": false,
+  "supervised_e2e_passed": false,
+  "art_integration_enabled": false,
+  "graphics_issue_enabled": false,
+  "execution_timeout_seconds": 1800
 }
