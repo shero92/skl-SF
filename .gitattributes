@@ -1,0 +1,13 @@
+# Match Godot 4 VCS template: stable LF text checkout on Windows/Linux.
+* text=auto eol=lf
+
+# Source art and compressed asset data are binary; never normalize bytes.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.zip binary
+*.ogg binary
+*.wav binary
+*.mp3 binary

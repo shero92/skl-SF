@@ -1,4 +1,31 @@
+# Godot 4 project cache (regenerated locally)
 .godot/
+# Older Godot import cache
 .import/
+# Binary translation outputs generated from CSV sources
+*.translation
+
+# Screenshots in docs/previews are reference/QA files, not Godot textures.
+# They are hidden from Godot's importer via docs/previews/.gdignore.
+docs/previews/**/*.import
+
+# Python and local tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Temporary editor and operating system files
 *.tmp
+*.bak
+*.swp
+*.swo
+*.log
 .DS_Store
+Thumbs.db
+
+# DO NOT ignore *.png.import, *.gd.uid, *.png, *.gd, *.tscn,
+# *.tres, project.godot, or map_factory's source JSON/CSV files.
