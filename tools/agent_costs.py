@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import uuid
 
@@ -119,8 +120,12 @@ def import_codex(args):
     if not path.is_file():
         raise ValueError("Missing Codex --json output file")
     turns, thread_id, detected_model = [], None, None
+    # Windows PowerShell 5.1 Tee-Object writes UTF-16LE with a BOM.
+    with path.open("rb") as probe:
+        bom = probe.read(4)
+    encoding = "utf-16" if bom.startswith((bytes([255, 254]), bytes([254, 255]))) else "utf-8-sig"
     try:
-        with path.open(encoding="utf8") as lines:
+        with path.open(encoding=encoding) as lines:
             for line in lines:
                 try:
                     obj = json.loads(line)
@@ -202,6 +207,60 @@ def report(check=False):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(content, encoding="utf8")
 
+def git(*parts):
+    """Run only narrowly scoped git operations from the active project worktree."""
+    result = subprocess.run(["git", "-C", str(ROOT), *parts],
+                            capture_output=True, text=True, encoding="utf-8")
+    if result.returncode:
+        raise ValueError("git " + " ".join(parts[:2]) + ": "
+                         + (result.stderr.strip() or result.stdout.strip()))
+    return result.stdout.strip()
+
+def complete_task(args):
+    """Finalize token receipt, commit it with STAGED task work, push task branch."""
+    active = get(LOCAL / "active.json")
+    if not active or not re.fullmatch(r"TASK-\d{4}", active["task_id"]):
+        raise ValueError("Start a real TASK-#### first; TEST tasks must never push")
+    task = active["task_id"]
+    if not list((ROOT / ".agents" / "tasks").glob(task + "_*.md")):
+        raise ValueError("Missing canonical task record for " + task)
+    branch = git("symbolic-ref", "--short", "HEAD")
+    if branch in ("main", "master") or branch.startswith("release/"):
+        raise ValueError("Refusing to commit/push to protected branch " + branch)
+    staged = [x for x in git("diff", "--cached", "--name-only", "--diff-filter=ACMR").splitlines()
+              if x.strip()]
+    if any(x.startswith(".agents/monitoring/.local/") or x.lower().endswith(
+            (".jsonl", ".env", ".pem", ".key")) for x in staged):
+        raise ValueError("Unstage private logs/keys before completion")
+    if not any(not x.startswith(".agents/monitoring/") for x in staged):
+        raise ValueError("First git add the intentional task code/evidence files")
+    if not args.message.strip():
+        raise ValueError("Commit message cannot be empty")
+    # Preflight must happen before deleting the active task snapshot.
+    receipt, path = run(argparse.Namespace(command="finish", manual_cost_usd=None))
+    rel = path.relative_to(ROOT).as_posix()
+    git("add", "--", rel, ".agents/monitoring/summary.json",
+        ".agents/monitoring/summary.md")
+    u = receipt["tokens"]
+    trailers = [
+        "Task-ID: " + task,
+        "Agent: " + receipt["agent"],
+        "Tokens-Input: " + (str(u["input_tokens"]) if u else "unknown"),
+        "Tokens-Output: " + (str(u["output_tokens"]) if u else "unknown"),
+        "Tokens-Cached-Input: " + (str(u["cached_input_tokens"]) if u else "unknown"),
+        "Tokens-Reasoning: " + (str(u["reasoning_output_tokens"]) if u else "unknown"),
+        "Cost-USD: " + (str(receipt["cost_usd"]) if receipt["cost_usd"] is not None else "unknown"),
+        "Cost-Receipt: " + rel,
+    ]
+    git("commit", "-m", args.message.strip(), "-m", "\n".join(trailers))
+    sha = git("rev-parse", "HEAD")
+    print("Committed cost receipt with task work:", sha)
+    if args.push:
+        git("push", "origin", "HEAD:" + branch)
+        print("Pushed to origin/" + branch)
+    else:
+        print("Push not requested; use git push origin " + branch)
+
 def run(args):
     active_path = LOCAL/"active.json"
     if args.command == "start":
@@ -252,6 +311,9 @@ def run(args):
         return
     if args.command == "import-codex":
         import_codex(args)
+        return
+    if args.command == "complete":
+        complete_task(args)
         return
     if args.command == "diagnose":
         summary = []
@@ -339,6 +401,7 @@ def run(args):
     print("USD:", receipt["cost_usd"], "|", receipt["coverage"])
     if not is_test:
         print("Commit trailers: Task-ID:", active["task_id"], "| Agent:", agent, "| Cost-USD:", receipt["cost_usd"] if receipt["cost_usd"] is not None else "unknown")
+    return receipt, file
 
 def main():
     p = argparse.ArgumentParser()
@@ -354,6 +417,9 @@ def main():
     r = sub.add_parser("report")
     r.add_argument("--check", action="store_true")
     sub.add_parser("diagnose", help="Show privacy-safe local hook/session health")
+    done = sub.add_parser("complete", help="Commit tracked tokens with staged task code")
+    done.add_argument("--message", required=True, help="Task commit subject")
+    done.add_argument("--push", action="store_true", help="Push current task branch to origin")
     imp = sub.add_parser("import-codex", help="Import Codex exec --json token usage from a local JSONL file")
     imp.add_argument("path")
     imp.add_argument("--model", help="Codex model slug (required for pricing if not detected)")
