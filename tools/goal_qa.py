@@ -53,6 +53,11 @@ def render(gid):
     if os.name!="nt":raise RuntimeError("Run Godot capture on owner Windows desktop")
     if command(["git","branch","--show-current"]).stdout.strip()!="main":
         raise RuntimeError("Use main for final verification")
+    version=json.loads((ROOT/"map_factory/maps/index.json").read_text(encoding="utf-8"))["maps"]["hero_room_01"]["version"]
+    if version != 10:
+        # The historical capture script currently lists v0001-v0010 explicitly.
+        # Refuse stale images until the capture script is updated to current map version.
+        raise ValueError("Current Hero Room version is "+str(version)+" but factory capture script ends at v0010")
     with tempfile.TemporaryDirectory(prefix="skl-qa-") as tmp:
         tmp=Path(tmp)
         # Godot needs image assets to render, so its isolated process sees them,
@@ -112,6 +117,22 @@ def compare(gid):
                  "owner_final_signoff":False,"at":datetime.now(timezone.utc).isoformat()}
         RESULTS.mkdir(parents=True,exist_ok=True)
         (RESULTS/(gid+".json")).write_text(json.dumps(payload,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        # Reviewable investigation requests: do not guess which code or sprite is at fault.
+        requests=ROOT/".agents/planner/requests"
+        requests.mkdir(parents=True,exist_ok=True)
+        import hashlib
+        for difference in obj["differences"]:
+            request={"status":"draft","title":"Investigate visible Hero Room mismatch",
+                     "problem":difference,"file":"map_factory/maps/hero_room_01/latest.json",
+                     "done_when":"Locate actual cause and document a safe evidence-backed correction",
+                     "test":"python tools/map_factory_cli.py validate",
+                     "priority":"normal","kind":"investigation","agent":"auto",
+                     "origin":gid+" final QA"}
+            digest=hashlib.sha256((gid+"|"+difference).encode()).hexdigest()[:12]
+            dest=requests/("REQ-"+digest+".json")
+            if not dest.exists():
+                dest.write_text(json.dumps(request,indent=2,ensure_ascii=False)+"\\n",encoding="utf-8")
+
         state["final_comparison_run_at"]=payload["at"]
         (folder/"state.json").write_text(json.dumps(state,indent=2)+"\n",encoding="utf-8")
         print("Wrote final comparison evidence; owner must review: "+gid)
