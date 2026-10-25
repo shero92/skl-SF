@@ -5,3 +5,5 @@
 - [Machine-readable leaderboard](summary.json): aggregations for dashboards.
 - [Pricing](pricing.json): explicitly configured Codex model rate estimates.
 - [Receipts](receipts/FILES.md): one JSON receipt per completed agent task.
+
+- [Per-goal cost report](goal_summary.md): known and unknown task token/cost aggregation.

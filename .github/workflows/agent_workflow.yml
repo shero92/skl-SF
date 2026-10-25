@@ -20,3 +20,8 @@ jobs:
         run: cmp -s .claude/skills/goal-task-factory/SKILL.md .agents/skills/goal-task-factory/SKILL.md
       - name: Validate local-only planning proposals and setup defaults
         run: python3 -m unittest discover -s tools/tests -p 'test_local_planner.py' -v
+      - name: Verify safe direct-merge guardrails
+        run: |
+          python3 -m unittest discover -s tools/tests -p 'test_parallel_safety.py' -v
+          python3 -m py_compile tools/agent_runner.py tools/runner_safety.py tools/art_delivery.py tools/art_requests.py tools/goal_qa.py tools/goal_costs.py
+          python3 -m unittest discover -s tools/tests -p 'test_art_delivery.py' -v

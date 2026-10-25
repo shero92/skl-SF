@@ -13,6 +13,11 @@
 | Generate agent task/art queues and verify delivery hashes | `agent_workflow.py` |
 | Grounded daily goal/task proposals and agent claims | `goal_task_factory.py` |
 | Run read-only local Windows daily planner using subscription CLIs | `local_planner.py`, `setup_local_planner.ps1` |
+| Disabled-by-default local code runner with sparse art-free worktrees | `agent_runner.py`, `runner_safety.py` |
+| Validate owner-delivered PNG headers and metadata without viewing art | `art_delivery.py` |
+| Create owner art-needed GitHub Issues and guarded delivery requests | `art_requests.py` |
+| Capture real Godot QA renders and compare authentic goal references once | `goal_qa.py` |
+| Aggregate per-goal costs from committed receipts | `goal_costs.py` |
 | Capture agent usage and produce per-task cost leaderboard | `agent_costs.py` |
 | Generate directory inventories | `generate_project_indexes.py` |
 | Curate/import historical asset sheets | other `generate_*`, `repaint_*`, `curate_*` scripts; not part of map-only task by default |

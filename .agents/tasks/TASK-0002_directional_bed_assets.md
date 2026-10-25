@@ -3,6 +3,12 @@ id: TASK-0002
 status: blocked
 owner: unassigned
 branch: none
+agent: graphics
+touches: map_factory/parts/furniture/,map_factory/metadata/
+test: python tools/map_factory_cli.py validate
+done_when: Approved four upright bed views integrated with verified metadata
+started_at: unknown
+cost_usd: unknown
 depends_on: TASK-0001
 issue: none
 art_request: ART-0001

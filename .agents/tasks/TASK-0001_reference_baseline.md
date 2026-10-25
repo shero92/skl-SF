@@ -3,6 +3,12 @@ id: TASK-0001
 status: blocked
 owner: unassigned
 branch: none
+agent: graphics
+touches: map_factory/references/,map_factory/maps/
+test: python tools/map_factory_cli.py validate
+done_when: Authentic source reference committed and map comparison reviewed
+started_at: unknown
+cost_usd: unknown
 depends_on: none
 issue: none
 art_request: none

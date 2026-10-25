@@ -26,5 +26,19 @@
         ]
       }
     ]
+  },
+  "permissions": {
+    "deny": [
+      "Read(./map_factory/parts/**)",
+      "Read(./map_factory/references/**)",
+      "Read(./docs/previews/**)",
+      "Read(./.agents/graphics/deliveries/**)",
+      "Read(./.agents/planner/goals/**/references/**)",
+      "Read(./map_factory/**/*.png)",
+      "Read(./map_factory/**/*.jpg)",
+      "Read(./map_factory/**/*.jpeg)",
+      "Read(./map_factory/**/*.svg)",
+      "Read(./map_factory/**/*.webp)"
+    ]
   }
 }

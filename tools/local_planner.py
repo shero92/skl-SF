@@ -150,6 +150,12 @@ def run(requested=None, dry_run=False):
     if git("branch", "--show-current") != "main" or git("status", "--porcelain"):
         raise RuntimeError("Start from a clean main worktree")
     git("pull", "--ff-only", "origin", "main")
+    # Owner-supplied art is processed by deterministic local tools only,
+    # never by a model; disabled until supervised configuration.
+    if conf.get("art_integration_enabled", False):
+        invoke([sys.executable, "tools/art_delivery.py", "--integrate"], timeout=600)
+    if conf.get("graphics_issue_enabled", False):
+        invoke([sys.executable, "tools/art_requests.py", "notify"], timeout=180)
     sha = git("rev-parse", "HEAD")
     before = digest()
     checkpoint = load(BASE/"checkpoint.json", {})

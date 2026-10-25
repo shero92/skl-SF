@@ -12,4 +12,5 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0003](../tasks/TASK-0003_agent_cost_accounting.md) | done | coding-agent | none | none |
 | [TASK-0004](../tasks/TASK-0004_daily_goal_factory.md) | done | coding-agent | TASK-0003 | none |
 | [TASK-0005](../tasks/TASK-0005_archive_cloud_art_workflows.md) | done | chatgpt | TASK-0004 | none |
-| [TASK-0006](../tasks/TASK-0006_local_planning.md) | review | chatgpt | TASK-0005 | none |
+| [TASK-0006](../tasks/TASK-0006_local_planning.md) | done | chatgpt | TASK-0005 | none |
+| [TASK-0007](../tasks/TASK-0007_safe_parallel_runner.md) | blocked | chatgpt | TASK-0006 | none |

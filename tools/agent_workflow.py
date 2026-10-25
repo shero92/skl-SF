@@ -18,7 +18,8 @@ TASK_DIR = Path(".agents/tasks")
 ART_DIR = Path(".agents/graphics/requests")
 TASK_BOARD = Path(".agents/project/TASKS.md")
 ART_BOARD = Path(".agents/graphics/QUEUE.md")
-TASK_STATES = {"todo", "in_progress", "blocked", "review", "done", "cancelled"}
+ACTIVE_BOARD = Path(".agents/project/ACTIVE.md")
+TASK_STATES = {"todo", "in_progress", "blocked", "blocked_on_art", "review", "done", "cancelled"}
 ART_STATES = {"blocked_reference", "requested", "in_progress", "delivered", "reviewed", "integrated", "cancelled"}
 ID_RE = re.compile(r"^(TASK|ART)-[0-9]{4}$")
 SHA_RE = re.compile(r"^[0-9a-f]{64}$")
@@ -42,7 +43,7 @@ def read_record(file: Path, kind: str) -> dict[str, str]:
         if not re.fullmatch(r"[a-z_]+", name) or not value or name in info:
             raise ValueError(f"{file}: invalid/empty/duplicate field {name!r}")
         info[name] = value
-    required = ({"id", "status", "owner", "branch", "depends_on", "issue", "art_request"}
+    required = ({"id", "status", "owner", "branch", "depends_on", "issue", "art_request", "agent", "touches", "test", "done_when"}
                 if kind == "TASK" else
                 {"id", "status", "owner", "task", "dedupe_key", "existing_asset_ids", "output_paths"})
     if missing := required - info.keys():
@@ -85,11 +86,53 @@ def generated(root: Path) -> dict[Path, str]:
                 raise ValueError(f"{task['id']}: unknown dependency {dep}")
             if dep == task["id"]:
                 raise ValueError(f"{task['id']}: circular self-dependency")
+        if task["status"] == "blocked_on_art" and task["art_request"] == "none":
+            raise ValueError(f"{task['id']}: blocked_on_art requires an ART request")
         a = task["art_request"]
         if a != "none" and a not in art_by_id:
             raise ValueError(f"{task['id']}: unknown art request {a}")
         if task["status"] in {"review", "done"} and task["branch"] == "none":
             raise ValueError(f"{task['id']}: review/done must record branch")
+    out = {}
+    active = [t for t in tasks if t["status"] == "in_progress"]
+    def touch_list(task):
+        raw = [p.strip().replace("\\", "/") for p in task["touches"].split(",") if p.strip()]
+        if not raw or len(raw) != len(set(raw)):
+            raise ValueError(task["id"] + ": touches must list unique explicit paths")
+        for path in raw:
+            loc = Path(path)
+            if loc.is_absolute() or ".." in loc.parts or "*" in path or path.startswith("/"):
+                raise ValueError(task["id"] + ": invalid touches " + path)
+            if any(part.lower() in ("characters", "ui", "portraits") for part in loc.parts):
+                raise ValueError(task["id"] + ": characters/gameplay/UI out of scope")
+        return raw
+    def collide(a, b):
+        return a == b or a.rstrip("/") + "/" == b[:len(a.rstrip("/"))+1] or b.rstrip("/") + "/" == a[:len(b.rstrip("/"))+1]
+    for task in tasks:
+        if task["agent"] not in {"claude", "codex", "graphics"}:
+            raise ValueError(task["id"] + ": agent must be claude|codex|graphics")
+        if task["test"] in ("none", "") or task["done_when"] in ("none", ""):
+            raise ValueError(task["id"] + ": missing test/done_when")
+        touch_list(task)
+    for i, a in enumerate(active):
+        if a["agent"] in ("claude", "codex") and any(
+                b["agent"] == a["agent"] for b in active[i+1:]):
+            raise ValueError("Agent has more than one active task: " + a["agent"])
+        for other in active[i+1:]:
+            if any(collide(x,y) for x in touch_list(a) for y in touch_list(other)):
+                raise ValueError("Parallel tasks have overlapping touches: " + a["id"] + " " + other["id"])
+    active_lines = ["# Active agent tasks", "", BANNER, "",
+                    "Generated only on main after claims/merges. Unknown cost is not zero.", "",
+                    "| Agent | Task | Touches | Started | Status | USD so far |",
+                    "| --- | --- | --- | --- | --- | --- |"]
+    for t in active:
+        active_lines.append("| " + t["agent"] + " | " + t["id"] + " | "
+                            + t["touches"].replace(",", ", ") + " | "
+                            + t.get("started_at", "unknown") + " | in_progress | "
+                            + t.get("cost_usd", "unknown") + " |")
+    if not active:
+        active_lines.append("| — | none | — | — | — | — |")
+    out[ACTIVE_BOARD] = "\n".join(active_lines) + "\n"
     for art in arts:
         rid = art["id"]
         need = art["dedupe_key"]
@@ -133,7 +176,6 @@ def generated(root: Path) -> dict[Path, str]:
                     raise ValueError(f"{rid}: missing file/hash for {item['path']}")
                 if hashlib.sha256(file.read_bytes()).hexdigest() != sha:
                     raise ValueError(f"{rid}: delivery SHA-256 mismatch: {item['path']}")
-    out = {}
     lines = ["# Current task queue", "", BANNER, "",
              "State is authoritative in each linked TASK file; actual code changes are proven by Git PRs.",
              "Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md).",

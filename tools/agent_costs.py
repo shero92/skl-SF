@@ -246,10 +246,13 @@ def complete_task(args):
     if not args.message.strip():
         raise ValueError("Commit message cannot be empty")
     # Preflight must happen before deleting the active task snapshot.
-    receipt, path = run(argparse.Namespace(command="finish", manual_cost_usd=None))
+    receipt, path = run(argparse.Namespace(command="finish", manual_cost_usd=None, defer_report=getattr(args, "no_summary", False)))
     rel = path.relative_to(ROOT).as_posix()
-    git("add", "--", rel, ".agents/monitoring/summary.json",
-        ".agents/monitoring/summary.md")
+    if getattr(args, "no_summary", False):
+        git("add", "--", rel)
+    else:
+        git("add", "--", rel, ".agents/monitoring/summary.json",
+            ".agents/monitoring/summary.md")
     u = receipt["tokens"]
     trailers = [
         "Task-ID: " + task,
@@ -404,7 +407,7 @@ def run(args):
     active_path.unlink()
     # Local TEST sessions must not modify versioned reports. Otherwise
     # a smoke test makes git pull fail with a dirty summary file.
-    if not is_test:
+    if not is_test and not getattr(args, "defer_report", False):
         report()
     if is_test:
         print("Local TEST receipt (not committed; not included in leaderboard):", file.relative_to(ROOT))
@@ -432,6 +435,7 @@ def main():
     done = sub.add_parser("complete", help="Commit tracked tokens with staged task code")
     done.add_argument("--message", required=True, help="Task commit subject")
     done.add_argument("--push", action="store_true", help="Push current task branch to origin")
+    done.add_argument("--no-summary", action="store_true", help="Keep generated reports main-only for worktree runner")
     imp = sub.add_parser("import-codex", help="Import Codex exec --json token usage from a local JSONL file")
     imp.add_argument("path")
     imp.add_argument("--model", help="Codex model slug (required for pricing if not detected)")

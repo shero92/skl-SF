@@ -11,6 +11,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`README.md`](README.md)
+- [`goal_summary.json`](goal_summary.json)
+- [`goal_summary.md`](goal_summary.md)
 - [`pricing.json`](pricing.json)
 - [`summary.json`](summary.json)
 - [`summary.md`](summary.md)

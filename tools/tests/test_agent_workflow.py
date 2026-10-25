@@ -23,6 +23,12 @@ id: TASK-0001
 status: blocked
 owner: unassigned
 branch: none
+agent: graphics
+touches: map_factory/parts/furniture/
+test: python -m unittest
+done_when: Image request reviewed
+started_at: unknown
+cost_usd: unknown
 depends_on: none
 issue: none
 art_request: ART-0001

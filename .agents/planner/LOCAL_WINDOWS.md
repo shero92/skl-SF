@@ -49,3 +49,27 @@ Automatic merge is allowed only if every CI check is successful and all paths
 are restricted to .agents/tasks/, .agents/planner/ and generated FILES.md /
 task dashboards. If CI fails or cannot be verified, PR stays open.
 Code-task execution is *not* enabled here.
+
+## Safe parallel code execution (Part 3 — OFF until owner-supervised E2E)
+- Local script: `py -3 tools/agent_runner.py --preflight`. This checks configuration but cannot run code.
+- `execution_enabled=false`, `supervised_e2e_passed=false` by default. **Do not toggle these before the first observed real task completes with tests, merge and post-merge verification.**
+- After owner approval on Windows: `py -3 tools/agent_runner.py --run TASK-####` on a clean main branch. The runner creates an ephemeral worktree, hides image files during the AI stage, records task token receipts without writing indexes there, runs trusted unittest/Godot checks and serializes direct main merges. After a regression it reverts the merge commit and blocks the task.
+- Two agents may run distinct nonoverlapping tasks, but merge to main is guarded by one lock. No auto-start Schedule for execution is installed while disabled.
+- Art delivery: `py -3 tools/art_delivery.py --check` verifies PNG headers, alpha-capable channels, dimensions and SHA/metadata without rendering. `--integrate` remains disabled until metadata workflow supervision; it never paints images.
+- Final goal visual approval belongs to owner. Rendering/comparing goal references is a separately supervised phase, not part of regular planning or coding.
+- Risks: Claude and Codex file tool settings do not imply perfect OS-level denial of image reads; Codex can potentially read git objects. The sparse worktree reduces exposure but needs explicit real-world validation. Godot may require a renderable desktop environment for screenshots; headless dummy rendering cannot certify artwork.
+
+## Owner art handoffs and final goal QA (supervised)
+1. New art need: on clean main run tools/art_requests.py request with all required native dimensions, reference path, palette, 4 filenames, shadows, layers and quality criteria; commit ART record and blocked_on_art task before notifying.
+2. Issue notice: set graphics_issue_enabled=true **only after checking gh auth**, then a local scheduled pulse calls art_requests.py notify; creates art-needed GitHub Issue assigned to shero92, one per request.
+3. Owner delivers PNGs + complete native asset metadata and SHA hashes in .agents/graphics/deliveries/ART-####/; no coder opens these PNGs. tools/art_delivery.py --check validates headers, RGBA-capable channels, dimensions, hashes and catalog fields without visual interpretation. Once art_integration_enabled=true following supervised dry run, local planner integrates valid artifacts, closes Issue and unblocks ART-only blockers when dependencies are done. It cannot certify artistic quality.
+4. Final goal preview: py -3 tools/goal_qa.py render GOAL-0001. Godot capture runs in temporary separate worktree using **actual factory script** tools/capture_map_previews.gd, copies real hero_room_final.png to .agents/qa/renders/GOAL-0001/. The renderer needs working OpenGL/video; if Windows --headless dummy cannot produce frames, switch config godot_qa_headless=false for owner desktop.
+5. Compare once: py -3 tools/goal_qa.py compare GOAL-0001. ONLY this explicitly requested final verification permits Codex to see the original goal reference and final Godot render as image attachments. A one-attempt guard prevents unnoticed repeat viewing. Differences are written to .agents/qa/results/ for your review, not misattributed to fictional code lines.
+6. After committing the QA paths and results, py -3 tools/goal_qa.py notify GOAL-0001 opens an owner-assigned GitHub Issue. Owner decides whether to approve or create new narrow investigation tasks. The script NEVER sets final_verified=true.
+
+## Entering and approving the first long-term goal
+- Put your exact request in .agents/planner/goals/GOAL-0001/goal.md. Put genuine optional image references only in references/ within the same goal folder.
+- The goal starts with state.json status=draft and milestones_approved=false. Use the shared goal-task-factory skill to propose narrow, evidence-backed milestones once; do not auto-activate.
+- After owner approval, set status=active and milestones_approved=true; review matching milestones in goals.json before scheduled local planning creates coding tasks. auto_activate stays false unless deliberately changed.
+- To stop scheduled planning, use powershell -NoProfile -File tools/setup_local_planner.ps1 -Uninstall and set planning_enabled=false, execution_enabled=false, art_integration_enabled=false, graphics_issue_enabled=false in config.json.
+- For a first supervised trial, run py -3 tools/agent_runner.py --preflight and Python CI checks; do not set supervised_e2e_passed=true until actual Windows coding worktree tests, main merge and rollback/recovery have been observed.
