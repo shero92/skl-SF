@@ -1,0 +1,129 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "tasks",
+    "updates"
+  ],
+  "properties": {
+    "tasks": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "problem",
+          "file",
+          "done_when",
+          "test",
+          "priority",
+          "kind",
+          "agent",
+          "depends_on"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 140
+          },
+          "problem": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "file": {
+            "type": "string"
+          },
+          "line": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "done_when": {
+            "type": "string"
+          },
+          "test": {
+            "type": "string"
+          },
+          "priority": {
+            "enum": [
+              "critical",
+              "high",
+              "normal",
+              "low"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "bug",
+              "test",
+              "feature",
+              "architecture",
+              "investigation",
+              "refactor"
+            ]
+          },
+          "agent": {
+            "enum": [
+              "claude",
+              "codex"
+            ]
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "touches": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "goal_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "updates": {
+      "type": "array",
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "task_id",
+          "status",
+          "reason",
+          "depends_on"
+        ],
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "todo",
+              "blocked"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

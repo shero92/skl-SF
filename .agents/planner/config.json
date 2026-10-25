@@ -1,0 +1,28 @@
+{
+  "planning_enabled": true,
+  "timezone": "Europe/Berlin",
+  "schedule": [
+    {
+      "time": "08:13",
+      "agent": "claude"
+    },
+    {
+      "time": "12:13",
+      "agent": "codex"
+    },
+    {
+      "time": "16:13",
+      "agent": "claude"
+    },
+    {
+      "time": "20:13",
+      "agent": "codex"
+    }
+  ],
+  "auto_activate": false,
+  "auto_merge_planning": true,
+  "timeout_seconds": 180,
+  "ci_wait_seconds": 600,
+  "max_tasks_per_run": 4,
+  "execution_enabled": false
+}
