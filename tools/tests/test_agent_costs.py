@@ -58,6 +58,20 @@ class CostTests(unittest.TestCase):
         self.assertIsNone(receipt["tokens"])
         self.assertEqual(receipt["coverage"], "partial")
 
+    def test_no_id_creates_local_test_receipt(self):
+        response = self.invoke("start", "--agent", "claude")
+        self.assertIn("TEST-", response)
+        self.invoke("hook", "--agent", "claude", event={
+            "session_id": "test-only", "cost": {"total_cost_usd": 0.10}})
+        self.invoke("finish")
+        local_receipts = list((self.root / ".agents/monitoring/.local/test_receipts").glob("TEST-*.json"))
+        self.assertEqual(len(local_receipts), 1)
+        self.assertEqual(json.loads(local_receipts[0].read_text())["cost_usd"], 0.10)
+        self.assertFalse(self.receipts())
+        summary = json.loads((self.root / ".agents/monitoring/summary.json").read_text())
+        self.assertEqual(summary["tasks"], [])
+        self.invoke("report", "--check")
+
     def test_unknown_is_not_zero(self):
         self.invoke("start", "TASK-0097", "--agent", "codex")
         self.invoke("finish")

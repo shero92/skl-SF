@@ -122,16 +122,18 @@ def report(check=False):
 def run(args):
     active_path = LOCAL/"active.json"
     if args.command == "start":
-        if not re.fullmatch(r"TASK-\d{4}", args.task):
-            raise ValueError("Expected TASK-####")
+        task_id = args.task or ("TEST-" + uuid.uuid4().hex[:10])
+        if not (re.fullmatch(r"TASK-\d{4}", task_id)
+                or re.fullmatch(r"TEST-[0-9a-f]{10}", task_id)):
+            raise ValueError("Expected TASK-#### or omit ID for a local-only test")
         if active_path.exists():
             raise ValueError("Finish the current task first")
         LOCAL.mkdir(parents=True, exist_ok=True)
         for file in LOCAL.glob("session_*.json"):
             file.unlink()
-        put(active_path, {"task_id": args.task, "agent": args.agent,
+        put(active_path, {"task_id": task_id, "agent": args.agent,
                           "started_at": datetime.now(timezone.utc).isoformat()})
-        print("Task started; open a fresh " + args.agent + " session.")
+        print("Tracking " + task_id + (" (local test; do not commit)" if task_id.startswith("TEST-") else "") + "; open a FRESH " + args.agent + " session.")
         return
     if args.command == "hook":
         try:
@@ -218,19 +220,25 @@ def run(args):
                "cost_usd": None if missing else round(total_usd, 6),
                "source": sorted(sources) or ["unknown"],
                "coverage": "complete" if not (missing or missing_tokens) else "partial"}
-    file = BASE / "receipts" / (active["task_id"] + "_" + agent + "_" + uuid.uuid4().hex[:10] + ".json")
+    is_test = active["task_id"].startswith("TEST-")
+    folder = LOCAL / "test_receipts" if is_test else BASE / "receipts"
+    file = folder / (active["task_id"] + "_" + agent + "_" + uuid.uuid4().hex[:10] + ".json")
     put(file, receipt)
     active_path.unlink()
     report()
-    print("Commit this receipt WITH task code:", file.relative_to(ROOT))
+    if is_test:
+        print("Local TEST receipt (not committed; not included in leaderboard):", file.relative_to(ROOT))
+    else:
+        print("Commit this receipt WITH task code:", file.relative_to(ROOT))
     print("USD:", receipt["cost_usd"], "|", receipt["coverage"])
-    print("Commit trailers: Task-ID:", active["task_id"], "| Agent:", agent, "| Cost-USD:", receipt["cost_usd"] if receipt["cost_usd"] is not None else "unknown")
+    if not is_test:
+        print("Commit trailers: Task-ID:", active["task_id"], "| Agent:", agent, "| Cost-USD:", receipt["cost_usd"] if receipt["cost_usd"] is not None else "unknown")
 
 def main():
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="command", required=True)
     s = sub.add_parser("start")
-    s.add_argument("task")
+    s.add_argument("task", nargs="?", help="TASK-####; omit only for a local TEST receipt")
     s.add_argument("--agent", required=True, choices=("claude", "codex"))
     h = sub.add_parser("hook")
     h.add_argument("--agent", required=True, choices=("claude", "codex"))

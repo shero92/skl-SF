@@ -2,6 +2,24 @@
 
 Every coding task gets a JSON cost receipt inside .agents/monitoring/receipts, committed WITH its code changes. The task ID is the common key for both agents. Logs and transcripts stay local and ignored by Git.
 
+## Quick local smoke test, no task ID needed
+
+On Windows **exit Claude/Codex before starting** and use a normal PowerShell terminal:
+
+    py -3 --version
+    py -3 tools/agent_costs.py start --agent claude
+    claude
+    # ask a short read-only question, then /exit
+    py -3 tools/agent_costs.py finish
+
+Use --agent codex and launch codex for the other client. A no-ID run receives a unique TEST-* ID and creates a **local-only** receipt under .agents/monitoring/.local/test_receipts/. Test receipts never appear in the committed leaderboard. This cannot retroactively measure a session that was started before tracking.
+
+To run the portable hook command manually in Git Bash:
+
+    sh tools/agent_costs_hook.sh --help
+
+The versioned hook configurations use sh tools/agent_costs_hook.sh to try the Windows py launcher, then python3 and python (minimum Python 3.10). Git Bash is expected on Windows. If py -3 --version fails, install Python 3.x first and relaunch the terminal. Claude hook edits may need approval under /hooks after pulling new settings. Codex project hooks require workspace trust.
+
 ## How to use
 
 Start from the repository root in a dedicated branch/worktree, BEFORE opening a new agent session.
