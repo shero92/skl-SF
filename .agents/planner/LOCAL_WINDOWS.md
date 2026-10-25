@@ -80,3 +80,11 @@ Code-task execution is *not* enabled here.
 3. Run: py -3 tools/agent_runner.py --supervised TASK-#### in an interactive PowerShell session. The runner requests the exact confirmation SUPERVISE TASK-####. This single test can edit code and merge verified changes to main: watch the terminal and GitHub.
 4. Review the actual merge/rollback, Godot and Python tests, changed file list, token receipt and image containment. Any failure leaves automatic execution disabled.
 5. Only after owner acceptance, manually set supervised_e2e_passed=true and execution_enabled=true; no scheduler execution task is installed until then.
+
+## Optional automated task pickup — explicit opt-in only
+After (not before) a successful supervised Windows task, reviewed logs, and manual owner signoff:
+- Set supervised_e2e_passed=true and execution_enabled=true in config.json and commit this config change. Both flags default false.
+- Run powershell -NoProfile -File tools/setup_local_planner.ps1 -InstallExecution to register TWO local hourly Task Scheduler workers, one Claude and one Codex, staggered 15 minutes. The workers select the highest priority claimable task with zero AI calls when nothing is claimable.
+- Registration refuses to proceed when either flag is false. Config changes do not install jobs automatically.
+- Pause/remove ALL planners and workers with powershell -NoProfile -File tools/setup_local_planner.ps1 -Uninstall, then set planning_enabled=false and execution_enabled=false in config.json.
+- A stopped computer, logged-out Windows session or expired CLI login stops unattended work; scheduled jobs are interactive-user only.
