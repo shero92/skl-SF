@@ -1,0 +1,15 @@
+{
+  "goals": [
+    {
+      "id": "GOAL-0001",
+      "title": "Bring the Hero Room Map Factory toward reference-faithful output",
+      "status": "draft",
+      "outcome": "Evidence-backed geometry, layers and four-direction environments",
+      "verification": "Authentic reference committed, map tests pass and reviewed Godot comparison",
+      "constraints": "Map Factory only; coding agents do not create production art",
+      "task_ids": ["TASK-0001", "TASK-0002"],
+      "final_verified": false,
+      "steps": []
+    }
+  ]
+}
