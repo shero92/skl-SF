@@ -91,6 +91,7 @@ def generated(root: Path) -> dict[Path, str]:
             raise ValueError(f"{task['id']}: unknown art request {a}")
         if task["status"] in {"review", "done"} and task["branch"] == "none":
             raise ValueError(f"{task['id']}: review/done must record branch")
+    out = {}
     active = [t for t in tasks if t["status"] == "in_progress"]
     def touch_list(task):
         raw = [p.strip().replace("\\", "/") for p in task["touches"].split(",") if p.strip()]
@@ -173,7 +174,6 @@ def generated(root: Path) -> dict[Path, str]:
                     raise ValueError(f"{rid}: missing file/hash for {item['path']}")
                 if hashlib.sha256(file.read_bytes()).hexdigest() != sha:
                     raise ValueError(f"{rid}: delivery SHA-256 mismatch: {item['path']}")
-    out = {}
     lines = ["# Current task queue", "", BANNER, "",
              "State is authoritative in each linked TASK file; actual code changes are proven by Git PRs.",
              "Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md).",
