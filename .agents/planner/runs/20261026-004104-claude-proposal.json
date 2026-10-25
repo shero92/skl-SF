@@ -1,0 +1,38 @@
+{
+  "tasks": [
+    {
+      "title": "Map GOAL-0001 written spec to existing asset IDs and missing-art gaps",
+      "problem": "No table links each item of the GOAL-0001 goal.md written spec to an existing asset ID or a missing-art gap per level 0-4 (goal step g1-m1-gap-audit). Later art requests (g1-m8) depend on it.",
+      "file": "map_factory/metadata/asset_index.json",
+      "line": null,
+      "done_when": "map_factory/maps/hero_room_01/reference_gaps.json maps every spec item to an existing asset ID or a gap entry with level (0-4), proposed native size and 4-direction needs; no unrelated substitutes; uncertain matches listed as gaps; no PNGs opened",
+      "test": "py -3 -m unittest tools.tests.test_map_reference",
+      "priority": "critical",
+      "kind": "investigation",
+      "agent": "claude",
+      "depends_on": [],
+      "goal_id": "GOAL-0001",
+      "touches": [
+        "map_factory/maps/hero_room_01/reference_gaps.json"
+      ]
+    },
+    {
+      "title": "Layer 0 animation and scroll schema validation in map CLI",
+      "problem": "Layer 0 placements cannot describe animation frames, fps or scroll, so the Hero Room background cannot be alive (goal step g1-m2-bg-schema).",
+      "file": "tools/map_factory_cli.py",
+      "line": null,
+      "done_when": "CLI accepts animation {frames, fps} and scroll {vx, vy} on layer 0 entries and rejects frame IDs missing from the asset catalog, with unit tests covering accept and reject cases",
+      "test": "py -3 -m unittest tools.tests.test_map_layers",
+      "priority": "high",
+      "kind": "feature",
+      "agent": "codex",
+      "depends_on": [],
+      "goal_id": "GOAL-0001",
+      "touches": [
+        "tools/map_factory_cli.py",
+        "tools/tests/test_map_layers.py"
+      ]
+    }
+  ],
+  "updates": []
+}

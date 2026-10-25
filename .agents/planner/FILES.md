@@ -9,6 +9,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`daily/`](daily/FILES.md)
 - [`goals/`](goals/FILES.md)
 - [`requests/`](requests/FILES.md)
+- [`runs/`](runs/FILES.md)
 
 ## Files
 
@@ -16,7 +17,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`LOCAL_WINDOWS.md`](LOCAL_WINDOWS.md)
 - [`PROMPT_RULES.md`](PROMPT_RULES.md)
 - [`README.md`](README.md)
+- [`checkpoint.json`](checkpoint.json)
 - [`config.json`](config.json)
+- [`cooldowns.json`](cooldowns.json)
 - [`goals.json`](goals.json)
 - [`proposal.schema.json`](proposal.schema.json)
 
