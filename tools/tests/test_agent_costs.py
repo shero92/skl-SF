@@ -131,6 +131,78 @@ class CostTests(unittest.TestCase):
         self.assertEqual(receipt["coverage"], "complete")
         self.assertNotIn("abc123", json.dumps(receipt))
 
+    def test_import_utf16_powershell_codex(self):
+        self.invoke("start", "--agent", "codex")
+        path = self.root / "powershell.jsonl"
+        records = [
+            {"type": "thread.started", "thread_id": "utf16-thread"},
+            {"type": "turn.completed", "usage": {
+                "input_tokens": 57167, "cached_input_tokens": 49920,
+                "output_tokens": 199, "reasoning_output_tokens": 0}},
+        ]
+        path.write_text("\n".join(json.dumps(x) for x in records) + "\n", encoding="utf-16")
+        output = self.invoke("import-codex", str(path), "--model", "test-model")
+        self.assertIn("57167 input", output)
+        self.invoke("finish")
+        found = list((self.root / ".agents/monitoring/.local/test_receipts").glob("TEST-*.json"))
+        receipt = json.loads(found[0].read_text())
+        self.assertEqual(receipt["tokens"]["input_tokens"], 57167)
+        self.assertEqual(receipt["tokens"]["cached_input_tokens"], 49920)
+
+    def test_complete_commits_token_trailers_and_pushes(self):
+        def git(*args):
+            proc = subprocess.run(["git", *args], cwd=self.root, capture_output=True, text=True)
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            return proc.stdout.strip()
+        git("init", "-b", "feat/my-task")
+        git("config", "user.name", "Task Test")
+        git("config", "user.email", "task@example.invalid")
+        origin = self.root / "remote.git"
+        subprocess.run(["git", "init", "--bare", str(origin)], check=True, capture_output=True)
+        git("remote", "add", "origin", str(origin))
+        (self.root / "README.md").write_text("base\n")
+        git("add", "README.md")
+        git("commit", "-m", "initial")
+        task = self.root / ".agents/tasks/TASK-0095_test.md"
+        task.parent.mkdir(parents=True, exist_ok=True)
+        task.write_text("# Task\n")
+        self.invoke("start", "TASK-0095", "--agent", "claude")
+        self.invoke("hook", "--agent", "claude", event={
+            "session_id": "task-session", "cost": {"total_cost_usd": 0.3}})
+        (self.root / "feature.py").write_text("print('task')\n")
+        git("add", "feature.py")
+        self.invoke("complete", "--message", "feat: token-aware task", "--push")
+        msg = git("log", "-1", "--format=%B")
+        self.assertIn("Task-ID: TASK-0095", msg)
+        self.assertIn("Agent: claude", msg)
+        self.assertIn("Tokens-Input: unknown", msg)
+        self.assertIn("Cost-USD: 0.3", msg)
+        self.assertIn("Cost-Receipt: .agents/monitoring/receipts/", msg)
+        names = git("ls-tree", "-r", "--name-only", "HEAD").splitlines()
+        self.assertIn("feature.py", names)
+        self.assertTrue(any(p.startswith(".agents/monitoring/receipts/TASK-0095") for p in names))
+        pushed = subprocess.run(["git", "--git-dir", str(origin), "rev-parse",
+                                 "refs/heads/feat/my-task"], capture_output=True, text=True)
+        self.assertEqual(pushed.returncode, 0, pushed.stderr)
+
+    def test_complete_refuses_main(self):
+        def git(*args):
+            p = subprocess.run(["git", *args], cwd=self.root, capture_output=True, text=True)
+            self.assertEqual(p.returncode, 0, p.stderr)
+        git("init", "-b", "main")
+        git("config", "user.name", "Task Test")
+        git("config", "user.email", "task@example.invalid")
+        file = self.root / ".agents/tasks/TASK-0094_test.md"
+        file.parent.mkdir(parents=True, exist_ok=True)
+        file.write_text("# Test\n")
+        self.invoke("start", "TASK-0094", "--agent", "codex")
+        response = subprocess.run([sys.executable, str(SCRIPT), "complete",
+                                   "--message", "feat: invalid", "--push"],
+                                  env=self.env, capture_output=True, text=True)
+        self.assertNotEqual(response.returncode, 0)
+        self.assertIn("Refusing to commit/push", response.stderr)
+        self.assertTrue((self.root / ".agents/monitoring/.local/active.json").exists())
+
     def test_unknown_is_not_zero(self):
         self.invoke("start", "TASK-0097", "--agent", "codex")
         self.invoke("finish")
