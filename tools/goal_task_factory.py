@@ -117,7 +117,11 @@ def create(source, spec, existing, today):
               "and summary on a PR branch, never main.")
     content = "\n".join([
         "---", "id: " + task_id, "status: " + state, "owner: unassigned",
-        "branch: none", "depends_on: " + (",".join(dependencies) or "none"),
+        "branch: none", "agent: " + ("graphics" if agent == "specialist" else agent),
+        "touches: " + ",".join(spec.get("touches", [path])),
+        "test: " + spec["test"], "done_when: " + spec["done_when"],
+        "started_at: unknown", "cost_usd: unknown",
+        "depends_on: " + (",".join(dependencies) or "none"),
         "issue: none", "art_request: none", "---", "# " + title, "",
         "**Source:** " + source, "**Created:** " + today,
         "**Goal:** " + spec.get("goal_id", "manual request"),
@@ -213,11 +217,23 @@ def claim(args):
         raise ValueError("Task missing, blocked, or already claimed")
     if any(d not in tasks or tasks[d]["status"] != "done" for d in deps(r)):
         raise ValueError("Task dependencies not done")
+    active = [t for t in tasks.values() if t["status"] == "in_progress"]
+    def overlap(a, b):
+        return a == b or a.rstrip("/") + "/" == b[:len(a.rstrip("/"))+1] or b.rstrip("/") + "/" == a[:len(b.rstrip("/"))+1]
+    my_paths = [p.strip() for p in r["touches"].split(",")]
+    for current in active:
+        if current.get("agent") == args.agent:
+            raise ValueError("Agent already has an active task")
+        if any(overlap(p, q) for p in my_paths for q in current["touches"].split(",")):
+            raise ValueError("Touch conflict with " + current["id"])
+    if r.get("agent") != args.agent:
+        raise ValueError("Task routed to another agent")
     if args.branch in ("main", "master") or not re.fullmatch(r"[a-zA-Z0-9_./-]+", args.branch):
         raise ValueError("Task requires a dedicated branch")
     body = r["raw"].replace("status: todo", "status: in_progress", 1)
     body = body.replace("owner: unassigned", "owner: " + args.agent, 1)
     body = body.replace("branch: none", "branch: " + args.branch, 1)
+    body = body.replace("started_at: unknown", "started_at: " + datetime.now(ZONE).isoformat(), 1)
     save(r["path"], body)
     print("Claimed " + args.task + " for " + args.agent)
 
