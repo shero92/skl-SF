@@ -19,30 +19,30 @@
     },
     {
       "map_id": "hero_room_01",
-      "version": 7,
+      "version": 10,
       "counts": {
         "background": 5,
         "ground": 2,
-        "walls": 32,
-        "decorations": 34,
-        "shadows": 23
+        "walls": 36,
+        "decorations": 35,
+        "shadows": 28
       },
-      "placed_instances": 73,
+      "placed_instances": 78,
       "mounted_details": 14,
-      "owned_shadows": 23,
-      "unique_asset_ids": 77,
+      "owned_shadows": 28,
+      "unique_asset_ids": 83,
       "visual_qa_status": "needs_review",
       "reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7"
     }
   ],
-  "verified_environment_png_files": 199,
-  "environment_catalog_count": 199,
-  "catalog_total": 223,
+  "verified_environment_png_files": 205,
+  "environment_catalog_count": 205,
+  "catalog_total": 229,
   "catalog_status": {
-    "needs_cleanup": 223
+    "needs_cleanup": 229
   },
   "referenced_status": {
-    "needs_cleanup": 199
+    "needs_cleanup": 205
   },
   "errors": [],
   "artistic_qa": "NOT APPROVED: image file presence and alpha cannot confirm full fidelity.",
@@ -1020,6 +1020,78 @@
       "texture_path": "res://map_factory/parts/environment/E020_Sea_Cliff_Ruin_Edge_Right.png"
     },
     {
+      "id": "E021",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        340,
+        248
+      ],
+      "alpha_bbox": [
+        12,
+        13,
+        339,
+        248
+      ],
+      "file_bytes": 168015,
+      "sha256": "9444a8a51d5e6a6d3edb97abcd99201f27d485c3e2e3e8dc436c7cf486de369d",
+      "texture_path": "res://map_factory/parts/environment/E021_Clean_Sea_Cliff_Ruin_Left.png"
+    },
+    {
+      "id": "E022",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        340,
+        248
+      ],
+      "alpha_bbox": [
+        1,
+        13,
+        328,
+        248
+      ],
+      "file_bytes": 167731,
+      "sha256": "430f6f1a027a04f9c8d4d9d18d5078f7b32ec9655d66f3e39a70fd8fc69f1075",
+      "texture_path": "res://map_factory/parts/environment/E022_Clean_Sea_Cliff_Ruin_Right.png"
+    },
+    {
+      "id": "E023",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        340,
+        248
+      ],
+      "alpha_bbox": [
+        5,
+        17,
+        335,
+        238
+      ],
+      "file_bytes": 122787,
+      "sha256": "df220726ccadd4cf41f9221d0f85983b58598eb1cd8bce733c25a1275627428c",
+      "texture_path": "res://map_factory/parts/environment/E023_Coastal_Foundation_No_Water_Left.png"
+    },
+    {
+      "id": "E024",
+      "category": "environment",
+      "status": "needs_cleanup",
+      "dimensions": [
+        340,
+        248
+      ],
+      "alpha_bbox": [
+        5,
+        17,
+        335,
+        238
+      ],
+      "file_bytes": 122237,
+      "sha256": "d6bf1bee986a401cffc8593ccf7fc98f1702f16c7a7c1ea1083898b9715e6d03",
+      "texture_path": "res://map_factory/parts/environment/E024_Coastal_Foundation_No_Water_Right.png"
+    },
+    {
       "id": "F001",
       "category": "floors",
       "status": "needs_cleanup",
@@ -1900,6 +1972,24 @@
       "file_bytes": 80767,
       "sha256": "64b865abf6d43666b395352ad590473e2087490d612fb4999b947a9237eb5a42",
       "texture_path": "res://map_factory/parts/objects/O027_Antlered_Skull_Flower_Shrine.png"
+    },
+    {
+      "id": "O028",
+      "category": "objects",
+      "status": "needs_cleanup",
+      "dimensions": [
+        268,
+        276
+      ],
+      "alpha_bbox": [
+        15,
+        16,
+        250,
+        276
+      ],
+      "file_bytes": 77256,
+      "sha256": "04d05bfcc23754c37b63d6881ec9b0a486d0a9b7c5a6e2141005f017b411eeff",
+      "texture_path": "res://map_factory/parts/objects/O028_Antlered_Skull_Flower_Shrine_Refined.png"
     },
     {
       "id": "P001",
@@ -3628,6 +3718,24 @@
       "file_bytes": 131430,
       "sha256": "ed84eeea7a1969fb012eb82ceac54b29e36bc1aabd47bae2ad725e66f4443d3b",
       "texture_path": "res://map_factory/parts/walls/W019_Deep_Limestone_Parapet_Corner.png"
+    },
+    {
+      "id": "W020",
+      "category": "walls",
+      "status": "needs_cleanup",
+      "dimensions": [
+        246,
+        238
+      ],
+      "alpha_bbox": [
+        2,
+        17,
+        239,
+        238
+      ],
+      "file_bytes": 129862,
+      "sha256": "30c60768424703915a379d56979e24b0fca4a84c17b9241f6322c879f42b96a1",
+      "texture_path": "res://map_factory/parts/walls/W020_Deep_Limestone_Corner_Without_Sea.png"
     }
   ]
 }
