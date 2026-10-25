@@ -7,6 +7,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`.agents/`](.agents/FILES.md)
+- [`.claude/`](.claude/FILES.md)
+- [`.codex/`](.codex/FILES.md)
 - [`.github/`](.github/FILES.md)
 - [`docs/`](docs/FILES.md)
 - [`map_factory/`](map_factory/FILES.md)

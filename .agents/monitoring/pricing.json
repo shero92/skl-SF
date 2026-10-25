@@ -1,0 +1,12 @@
+{
+  "note": "STANDARD API-equivalent estimates, not subscription charges. Check official model pricing before edits.",
+  "as_of": "2026-10-25",
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "models": {
+    "gpt-5.3-codex": {
+      "input_per_million": 1.75,
+      "cached_input_per_million": 0.175,
+      "output_per_million": 14
+    }
+  }
+}

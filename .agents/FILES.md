@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`graphics/`](graphics/FILES.md)
+- [`monitoring/`](monitoring/FILES.md)
 - [`project/`](project/FILES.md)
 - [`roles/`](roles/FILES.md)
 - [`tasks/`](tasks/FILES.md)

@@ -10,6 +10,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`agent_costs.py`](agent_costs.py)
 - [`agent_workflow.py`](agent_workflow.py)
 - [`audit_assets.py`](audit_assets.py)
 - [`audit_room_assets.py`](audit_room_assets.py)

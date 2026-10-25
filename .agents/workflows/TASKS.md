@@ -8,6 +8,11 @@
 3. If a task is already `in_progress` by another agent, do not redo it. Work in a separate Git branch/worktree. Name branch in the task record when claimed.
 4. If an art request is required, first search the art queue/catalog, create/reuse one request, and set task `blocked` with that request ID.
 
+## Cost receipts for Claude Code and Codex
+- Start the TASK-#### tracker BEFORE a fresh agent session: `python3 tools/agent_costs.py start TASK-#### --agent claude|codex`.
+- Before committing task code run `python3 tools/agent_costs.py finish`. Include the receipt and generated summaries in the same commit, with Task-ID and Agent commit trailers.
+- Missing or unavailable cost remains unknown (null), not $0. Never commit local transcripts. Read `.agents/monitoring/README.md` for detailed procedure.
+
 ## States and completion
 - `todo`: planned; `in_progress`: assigned and editing; `blocked`: waiting on something explicit; `review`: PR submitted; `done`: reviewed/merged and validated; `cancelled`: no longer needed.
 - Update task body: actual changed file paths, test commands + outcomes, PR/commit link, reason for blocking, then **one next step**. Do not paste giant logs.
