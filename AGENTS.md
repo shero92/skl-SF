@@ -1,37 +1,14 @@
-# Agent instructions for skl-SF — MAP FACTORY FOCUS
+# skl-SF — shared coding-agent contract
 
-**The present workstream is MAPS AND ROOMS ONLY. Do not generate, regenerate, curate, import, move, or change any character sprites, NPC/gameplay scripts, dialogue portraits, dialogue UI or their metadata.** Previously existing gameplay code may remain, untouched.
+**Applies to Codex, Claude Code and all coding agents.** These are the only auto-loaded project instructions; open supporting files on demand.
 
-Before map work, read:
-- map_factory/MAP_FACTORY_RULES.md (MANDATORY contract)
-- `map_factory/MAP_FACTORY_WORKFLOW.md`
-- `map_factory/maps/index.json` and the relevant `map_factory/maps/<map_id>/latest.json`
-- `map_factory/metadata/asset_index.json`
-- `docs/ASSET_QUALITY_POLICY.md`, `docs/REFERENCE_ART_DIRECTION.md`
+1. **Scope:** environment / Map Factory only. Do NOT alter characters, NPC/player gameplay, portraits, dialogue or UI without a separate explicit new scope approval.
+2. **Locate first:** `INDEX.md` → relevant folder `INDEX.md` → exact file/range. Read `.agents/INDEX.md` only when coordinating work or delegating graphics; never bulk-read all inventories.
+3. **Track tasks:** follow `.agents/workflows/TASKS.md`. Check `.agents/project/TASKS.md` for current ownership/status before editing; claim one task and branch/worktree, avoid parallel edits to the same file. Update the task's own status and evidence, then regenerate dashboards.
+4. **Graphics boundary (hard rule):** Codex/Claude Code MUST NOT generate, redraw, repaint, upscale, synthesize or replace production graphics or art with scripts, image tools or AI. Instead check the asset catalog and `.agents/graphics/QUEUE.md` for duplicates, then create a full art request using `.agents/workflows/GRAPHICS.md`. A graphics specialist creates the art. Coding agents may validate and integrate approved delivered files only.
+5. **Truth:** Git commits and PRs prove changes, task files track progress, existing art IDs/catalog prove registered sprites. Do not claim a requested image or unapproved sprite is finished.
+6. **Map safety:** follow `map_factory/MAP_FACTORY_RULES.md` for map tasks; load `MAP_FACTORY_WORKFLOW.md`, `LAYER_SCHEMA.md`, `FOUR_DIRECTION_BLOCKS.md`, or art rules only when relevant. Preserve map revisions; patch latest, never historical JSON snapshots. Godot preview is `scenes/map_factory_preview.tscn`.
+7. **Completion:** run applicable tests, report actual commands/results, changed paths, PR/commit, blockers and one next task. Never claim visual approval without a genuine source-versus-Godot comparison and reviewer.
+8. **Index maintenance:** when files change, run `python tools/generate_project_indexes.py --write` and `python tools/agent_workflow.py --write`; validate both with `--check`. Work on branches and use PR review, not direct main pushes.
 
-When a new AI room image is provided:
-1. Compare it to the **latest** registered map version, not an old room screenshot.
-2. Match every reusable stone block, furniture item, plant, effect and backdrop to a registered asset ID.
-3. Create independent clean PNGs only for genuinely new environmental parts; do not claim a full AI image is already segmented.
-4. Record the source image hash, map change manifest, per-block placement/layer, native pixel_size, anchor, shadow, collision, scale, and provenance.
-5. Call the map intake/versioning pipeline. Retain `versions/v000N.json` and update `latest.json` + `blocks/latest.json` automatically.
-6. Keep every existing good asset intact; stage same-ID candidate replacements for review. Do not claim unreviewed art is 100% reference quality.
-7. Validate registry, map-only rules, PNG catalog and Godot map preview before reporting a successful push.
-
-No change to character category (`characters`), user interface (`ui`), player movement, dialogue UI, or NPC gameplay is authorized by this map-only workflow. Existing game preview remains intact; use `scenes/map_factory_preview.tscn` for map work.
-
-## Mandatory image-to-map production contract
-
-Future agents MUST follow map_factory/MAP_FACTORY_RULES.md before any image/room/map task. Use the user's image as a reference, compare with the latest map, reuse good assets, create individual environmental PNG files only for genuinely missing parts, register per-part metadata, assemble the room with numbered immutable JSON versions, describe walk/fly/swim restrictions and obstacle altitude, render and compare against the source, and commit only reviewed outcomes.
-
-Ability ownership belongs to a separate gameplay system: map permissions and clearance are NOT character abilities. Keep unreviewed navigation blocked; do not claim visual equality, working pathfinding or flying physics unless verified in Godot. No character or UI edits.
-
-Future user-supplied room/map photos should start with `tools/prepare_map_reference.py` to preserve the original and pin the last map version. Follow `map_factory/DEPLOYED_FACTORY.md`. Draft images must NOT be auto-published as finished maps: provide independent PNGs for missing parts, reviewed block placements, and set analysis_status=reviewed before moving a manifest into pending. Map work remains strictly environment-only.
-
-## Mandatory five-layer map rendering convention
-
-When authoring a room or map, follow map_factory/LAYER_SCHEMA.md. The compiled layer_stack and per-map layers/latest.json must specify **background, ground, walls, decorations, shadows** with correct owner and mount metadata. Wall ornaments must use mount_on plus mount_offset if they depend on wall placement. Every new map revision rebuilds derived layer indices; never alter old immutable snapshots. Shadows form the fifth *data* pass but draw below wall and decoration sprites at z20 for correct compositing. Check map_factory/metadata/room_block_quality.json: all environmental PNG files must exist, but needs_cleanup is not artistic approval. Do not touch characters/UI.
-
-## Cardinal block orientation and scene fidelity
-
-All future map work must follow map_factory/FOUR_DIRECTION_BLOCKS.md. The renderer supports north/east/south/west facings, turntable 90-degree rotation for flat props and four DISTINCT real perspective image variants for 3/4 objects. If art variants are absent, do not claim the 360-degree asset looks correct. Wall-mounted decor rotates offset with its parent. Opt-in world_y_sort can fix nearer-wall occlusion when bottom pivots are correct. Keep characters, actor control and dialogue out of scope. Read docs/MAP_FACTORY_REFERENCE_DIAGNOSIS.md before changing Hero Room. Save a reference image in the repo and visually QA a Godot render before approving any map.
+Details only when needed: `.agents/roles/`, `.agents/workflows/`, `.agents/project/`, `.agents/graphics/`. Keep context concise.

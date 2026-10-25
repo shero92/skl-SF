@@ -5,12 +5,12 @@ This report only certifies file/metadata integrity. It **does not certify that a
 | Map | Revision | Background | Ground detail | Walls | Decorations | Independent shadows | Mounted |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | courtyard_demo_01 | v0002 | 0 | 0 | 3 | 3 | 1 | 0 |
-| hero_room_01 | v0007 | 5 | 2 | 32 | 34 | 23 | 14 |
+| hero_room_01 | v0010 | 5 | 2 | 36 | 35 | 28 | 14 |
 
-- Registered catalog images: **223**.
-- Verified environmental and shadow PNG files: **199 / 199**.
+- Registered catalog images: **229**.
+- Verified environmental and shadow PNG files: **205 / 205**.
 - Integrity errors: **0**.
-- Catalog QA statuses: **{'needs_cleanup': 223}**.
+- Catalog QA statuses: **{'needs_cleanup': 229}**.
 - Reference fidelity still needs artist comparison of exported Godot room render.
 - Only environment sprites and their independent shadow images are included; no characters/UI are added.
 
