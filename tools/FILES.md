@@ -10,16 +10,16 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
-- [`agent_costs.py`](agent_costs.py)
 - [`agent_costs_hook.sh`](agent_costs_hook.sh)
+- [`agent_costs.py`](agent_costs.py)
 - [`agent_runner.py`](agent_runner.py)
 - [`agent_workflow.py`](agent_workflow.py)
 - [`art_delivery.py`](art_delivery.py)
 - [`audit_assets.py`](audit_assets.py)
 - [`audit_room_assets.py`](audit_room_assets.py)
 - [`build_asset_previews.py`](build_asset_previews.py)
-- [`capture_map_previews.gd.uid`](capture_map_previews.gd.uid)
 - [`capture_map_previews.gd`](capture_map_previews.gd)
+- [`capture_map_previews.gd.uid`](capture_map_previews.gd.uid)
 - [`check_floor_emblem.py`](check_floor_emblem.py)
 - [`create_hero_new_parts_preview.py`](create_hero_new_parts_preview.py)
 - [`curate_high_detail_sprites.py`](curate_high_detail_sprites.py)
@@ -36,8 +36,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`import_map_assets.py`](import_map_assets.py)
 - [`local_planner.py`](local_planner.py)
 - [`map_factory_cli.py`](map_factory_cli.py)
-- [`map_factory_godot_smoke.gd.uid`](map_factory_godot_smoke.gd.uid)
 - [`map_factory_godot_smoke.gd`](map_factory_godot_smoke.gd)
+- [`map_factory_godot_smoke.gd.uid`](map_factory_godot_smoke.gd.uid)
 - [`map_factory_layers.py`](map_factory_layers.py)
 - [`map_factory_orientation.py`](map_factory_orientation.py)
 - [`prepare_map_reference.py`](prepare_map_reference.py)
@@ -51,8 +51,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`run_local_planner.ps1`](run_local_planner.ps1)
 - [`runner_safety.py`](runner_safety.py)
 - [`setup_local_planner.ps1`](setup_local_planner.ps1)
-- [`test_cardinal_map_blocks.gd.uid`](test_cardinal_map_blocks.gd.uid)
 - [`test_cardinal_map_blocks.gd`](test_cardinal_map_blocks.gd)
+- [`test_cardinal_map_blocks.gd.uid`](test_cardinal_map_blocks.gd.uid)
 - [`validate_rooms.py`](validate_rooms.py)
 - [`verify_map_assets.py`](verify_map_assets.py)
 
