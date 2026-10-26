@@ -31,6 +31,13 @@
       "paths": ["tools/tests/test_goal_task_factory.py", "tools/goal_task_factory.py", ".agents/planner/**", ".agents/tasks/**", ".claude/skills/goal-task-factory/**", ".agents/skills/goal-task-factory/**"]
     },
     {
+      "id": "candidate_room",
+      "kind": "python",
+      "covers": "Review-only Hero Room candidates: cell to pixel placement from delivery anchors, regions and reference comparison sheet.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_candidate_room.py"],
+      "paths": ["tools/tests/test_candidate_room.py", "tools/candidate_room.py", "tools/capture_candidate_room.gd", "map_factory/candidates/**"]
+    },
+    {
       "id": "blender_factory",
       "kind": "python",
       "covers": "Blender part factory: spec validation, technical PNG QA, calibrated 64 px tile and real facings (Blender tests skip where Blender is absent).",

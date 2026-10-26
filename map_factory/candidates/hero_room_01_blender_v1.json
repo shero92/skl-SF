@@ -1,0 +1,19 @@
+{
+  "candidate_id": "hero_room_01_blender_v1",
+  "base": {"map_id": "hero_room_01", "version": 11},
+  "status": "candidate_unapproved",
+  "notes": "Review layout only: renders the published v0011 with the Blender ART-0004 side walls and ART-0014 broken front edge from .agents/graphics/deliveries/. Not a published map version; nothing enters map_factory/parts or the catalog until the owner approves the capture. The back (north) wall keeps the accepted HD sprites.",
+  "hide_instances": [
+    "LeftPerimeterWallMid", "LeftPerimeterWallLow", "RightPerimeterWallMid", "RightPerimeterWallLow",
+    "W015_back_objects_006", "W015_back_objects_007"
+  ],
+  "hide_floor_cells": [[3, 9], [4, 9], [5, 9], [6, 9], [7, 9], [8, 9], [9, 9], [10, 9], [11, 9], [12, 9], [13, 9]],
+  "pieces": [
+    {"art": "ART-0014", "file": "hero_broken_floor_corner_left", "anchor": "tile_top_left", "point": "top_left", "layer": "ground", "cells": [[3, 9]]},
+    {"art": "ART-0014", "file": "hero_broken_floor_edge_01", "anchor": "tile_top_left", "point": "top_left", "layer": "ground", "cells": [[4, 9], [6, 9], [8, 9], [10, 9], [12, 9]]},
+    {"art": "ART-0014", "file": "hero_broken_floor_edge_02", "anchor": "tile_top_left", "point": "top_left", "layer": "ground", "cells": [[5, 9], [7, 9], [9, 9], [11, 9]]},
+    {"art": "ART-0014", "file": "hero_broken_floor_corner_right", "anchor": "tile_top_left", "point": "top_left", "layer": "ground", "cells": [[13, 9]]},
+    {"art": "ART-0004", "file": "hero_wall_run_west", "anchor": "foot_center_front", "point": "left_center", "layer": "walls", "cells": [[1, 1], [1, 2], [0, 3], [0, 4], [0, 5], [0, 6], [1, 7], [1, 8]]},
+    {"art": "ART-0004", "file": "hero_wall_run_east", "anchor": "foot_center_front", "point": "right_center", "layer": "walls", "cells": [[15, 1], [15, 2], [16, 3], [16, 4], [16, 5], [16, 6], [15, 7], [15, 8]]}
+  ]
+}
