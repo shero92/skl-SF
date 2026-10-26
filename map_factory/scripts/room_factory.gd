@@ -170,6 +170,11 @@ func _place_compiled_entries(entries: Array, group: Node2D) -> void:
         }
         var node := assets.create_asset(render_id, opts)
         node.name = String(record.get("instance_id", asset_id))
+        if record.has("grid_placement"):
+            node.set_meta("grid_placement", record["grid_placement"])
+            node.set_meta("placement_contract", record.get("placement_contract", {}))
+            node.set_meta("occupied_floor_cells", record.get("occupied_floor_cells", []))
+            node.set_meta("anchor_on_ground", "bottom_center")
         # Four cardinal facings. Flat sprites rotate the root AND collision.
         # Perspective-aware props use four independent upright art variants.
         if not orientation.is_empty():
