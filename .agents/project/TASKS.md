@@ -46,3 +46,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0039](../tasks/TASK-0039_preserve_immutable_resolved_map_metadata.md) | blocked | unassigned | TASK-0036 | none |
 | [TASK-0046](../tasks/TASK-0046_blender_part_factory_foundation.md) | review | claude | none | none |
 | [TASK-0047](../tasks/TASK-0047_hero_room_blender_candidate.md) | review | claude | TASK-0046 | none |
+| [TASK-0048](../tasks/TASK-0048_hero_room_blender_v2.md) | review | claude | TASK-0047 | none |
