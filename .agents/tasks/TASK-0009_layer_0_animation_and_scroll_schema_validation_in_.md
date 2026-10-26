@@ -1,6 +1,6 @@
 ---
 id: TASK-0009
-status: in_progress
+status: done
 owner: codex
 branch: work/task-0009-8f0f0ad5
 agent: codex
@@ -58,3 +58,6 @@ Outcome: CLI accepts animation {frames, fps} and scroll {vx, vy} on layer 0 entr
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T09:53:07.745211+00:00
+
+## Runner evidence
+- Merged 1bd74a054e698232d00c20f631fb9eab6a054717; post-merge validation passed

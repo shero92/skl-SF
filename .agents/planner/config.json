@@ -25,10 +25,16 @@
   "ci_wait_seconds": 600,
   "max_tasks_per_run": 4,
   "execution_enabled": false,
-  "supervised_e2e_passed": false,
+  "supervised_e2e_passed": true,
   "art_integration_enabled": false,
   "graphics_issue_enabled": true,
   "execution_timeout_seconds": 1800,
   "godot_executable": "C:\\Users\\shiya_8v7nrr4\\Documents\\AncientSeal-DevTools\\runtime\\godot\\Godot_v4.7.2-stable_win64_console.exe",
-  "godot_qa_headless": true
+  "godot_qa_headless": true,
+  "supervised_e2e": {
+    "task": "TASK-0009",
+    "agent": "codex",
+    "merge_sha": "1bd74a054e698232d00c20f631fb9eab6a054717",
+    "verified_at": "2026-10-26T09:55:22.840855+00:00"
+  }
 }

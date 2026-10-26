@@ -1,6 +1,21 @@
 {
-  "missing_cost_receipts": 0,
+  "missing_cost_receipts": 1,
   "missing_token_receipts": 0,
-  "tasks": [],
-  "total_known_usd": 0
+  "tasks": [
+    {
+      "agents": [
+        "codex"
+      ],
+      "cached_input_tokens": 448128,
+      "input_tokens": 491369,
+      "known_usd": 0.0,
+      "output_tokens": 2993,
+      "reasoning_output_tokens": 65,
+      "receipts": 1,
+      "task_id": "TASK-0009",
+      "unknown_costs": 1,
+      "unknown_token_receipts": 0
+    }
+  ],
+  "total_known_usd": 0.0
 }

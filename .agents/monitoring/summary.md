@@ -4,5 +4,6 @@
 
 | Task | Agents | Known USD | Missing costs | Input tokens | Cached input | Output tokens | Reasoning | Missing tokens | Receipts |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| TASK-0009 | codex | 0.000000 | 1 | 491369 | 448128 | 2993 | 65 | 0 | 1 |
 
 Missing costs are unknown, not zero. Estimates are not subscription invoices.
