@@ -324,15 +324,47 @@
       "flip_h": true,
       "render_layer": "walls",
       "z_index": -1
+    },
+    {
+      "id": "W021",
+      "instance_id": "HeroHDLeftWall",
+      "x": 385,
+      "y": 445,
+      "scale": 0.38,
+      "render_layer": "walls"
+    },
+    {
+      "id": "W022",
+      "instance_id": "HeroHDRightWall",
+      "x": 1165,
+      "y": 446,
+      "scale": 0.38,
+      "render_layer": "walls"
+    },
+    {
+      "id": "A017",
+      "instance_id": "HeroHDPillar",
+      "x": 580,
+      "y": 416,
+      "scale": 0.4,
+      "render_layer": "walls"
+    },
+    {
+      "id": "A018",
+      "instance_id": "HeroHDDoor",
+      "x": 773,
+      "y": 436,
+      "scale": 0.43,
+      "render_layer": "walls"
     }
   ],
   "objects": [
     {
-      "id": "P001",
+      "id": "P024",
       "instance_id": "HeroBed",
       "x": 410,
       "y": 560,
-      "scale": 0.75,
+      "scale": 0.42,
       "collision": {
         "enabled": true,
         "size": [
@@ -346,9 +378,9 @@
       },
       "shadow": {
         "type": "bed",
+        "opacity": 0.35,
         "offset_x": 0,
-        "offset_y": -5,
-        "opacity": 0.5
+        "offset_y": 0
       }
     },
     {
@@ -406,11 +438,11 @@
       }
     },
     {
-      "id": "P008",
+      "id": "P026",
       "instance_id": "WritingTable",
       "x": 1124,
       "y": 606,
-      "scale": 0.64,
+      "scale": 0.46,
       "collision": {
         "enabled": true,
         "size": [
@@ -451,11 +483,11 @@
       "scale": 0.35
     },
     {
-      "id": "P017",
+      "id": "P023",
       "instance_id": "TreasureChest",
       "x": 1200,
       "y": 780,
-      "scale": 0.61,
+      "scale": 0.31,
       "collision": {
         "enabled": true,
         "size": [
@@ -566,6 +598,22 @@
           0,
           -22
         ]
+      }
+    },
+    {
+      "id": "P025",
+      "instance_id": "HeroHDBedCover",
+      "x": 410,
+      "y": 550,
+      "scale": 0.37,
+      "mount_on": "HeroBed",
+      "mount_offset": [
+        0,
+        -25
+      ],
+      "render_layer": "decorations",
+      "shadow": {
+        "type": "none"
       }
     }
   ],
@@ -945,6 +993,14 @@
         "offset_x": 5,
         "offset_y": 8
       }
+    },
+    {
+      "id": "D019",
+      "instance_id": "HeroHDBanner",
+      "x": 985,
+      "y": 366,
+      "scale": 0.31,
+      "render_layer": "decorations"
     }
   ],
   "effects": [
@@ -1045,18 +1101,18 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 10,
-  "parent_version": 9,
-  "created_at": "2026-10-23T17:09:23+00:00",
+  "version": 11,
+  "parent_version": 10,
+  "created_at": "2026-10-26T17:15:08+00:00",
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "change_note": "Replace watery edge composites with pure stone facing sprites, render the sea exclusively behind the platform, and retain history.",
+  "change_note": "Show nine independently generated high-detail PNGs in the real Godot Hero Room; pending in-game placement review.",
   "visual_qa": {
     "status": "needs_review",
-    "notes": "v10 clean independent limestone cliff sprites E023/E024 replace unwanted baked ocean bars; reference artistic match and overall illumination still need QA."
+    "notes": "9 HD sprites visible; Godot native screenshot and ground pivot review needed"
   },
   "navigation": {
     "schema_version": 1,
@@ -1283,7 +1339,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 10,
+    "version": 11,
     "processing_passes": [
       "background",
       "ground",
@@ -2183,6 +2239,174 @@
             "opacity": 0.28,
             "offset_x": 5,
             "offset_y": 7
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "HeroHDLeftWall",
+          "asset_id": "W021",
+          "source_layer": "back_objects",
+          "render_layer": "walls",
+          "position": [
+            385.0,
+            445.0
+          ],
+          "scale": 0.38,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/walls/W021_Vine_Covered_Compass_Ruin_Wall.png",
+          "pixel_size": [
+            680,
+            843
+          ],
+          "origin": [
+            340,
+            843
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "HeroHDRightWall",
+          "asset_id": "W022",
+          "source_layer": "back_objects",
+          "render_layer": "walls",
+          "position": [
+            1165.0,
+            446.0
+          ],
+          "scale": 0.38,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/walls/W022_Isometric_Ivy_Fantasy_Wall.png",
+          "pixel_size": [
+            680,
+            847
+          ],
+          "origin": [
+            340,
+            847
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "HeroHDPillar",
+          "asset_id": "A017",
+          "source_layer": "back_objects",
+          "render_layer": "walls",
+          "position": [
+            580.0,
+            416.0
+          ],
+          "scale": 0.4,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/architecture/A017_Ivy_Covered_Compass_Shrine_Pillar.png",
+          "pixel_size": [
+            324,
+            694
+          ],
+          "origin": [
+            162,
+            694
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "HeroHDDoor",
+          "asset_id": "A018",
+          "source_layer": "back_objects",
+          "render_layer": "walls",
+          "position": [
+            773.0,
+            436.0
+          ],
+          "scale": 0.43,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/architecture/A018_Sapphire_Compass_Doorway.png",
+          "pixel_size": [
+            520,
+            641
+          ],
+          "origin": [
+            260,
+            641
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
           },
           "attachment": null
         },
@@ -3492,25 +3716,25 @@
         },
         {
           "instance_id": "HeroBed",
-          "asset_id": "P001",
+          "asset_id": "P024",
           "source_layer": "objects",
           "render_layer": "decorations",
           "position": [
             410.0,
             560.0
           ],
-          "scale": 0.75,
+          "scale": 0.42,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://map_factory/parts/furniture/P001_Hero_Bed.png",
+          "texture_path": "res://map_factory/parts/furniture/P024_Compass_Rose_Fantasy_Bed_Frame.png",
           "pixel_size": [
-            296,
-            339
+            679,
+            570
           ],
           "origin": [
-            148,
-            339
+            339,
+            570
           ],
           "status": "needs_cleanup",
           "collision": {
@@ -3526,9 +3750,9 @@
           },
           "shadow": {
             "type": "bed",
+            "opacity": 0.35,
             "offset_x": 0,
-            "offset_y": -5,
-            "opacity": 0.5
+            "offset_y": 0
           },
           "attachment": null
         },
@@ -3660,25 +3884,25 @@
         },
         {
           "instance_id": "WritingTable",
-          "asset_id": "P008",
+          "asset_id": "P026",
           "source_layer": "objects",
           "render_layer": "decorations",
           "position": [
             1124.0,
             606.0
           ],
-          "scale": 0.64,
+          "scale": 0.46,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://map_factory/parts/furniture/P008_Wooden_Desk.png",
+          "texture_path": "res://map_factory/parts/furniture/P026_Nautical_Compass_Study_Desk.png",
           "pixel_size": [
-            392,
-            278
+            760,
+            561
           ],
           "origin": [
-            196,
-            278
+            380,
+            561
           ],
           "status": "needs_cleanup",
           "collision": {
@@ -3828,25 +4052,25 @@
         },
         {
           "instance_id": "TreasureChest",
-          "asset_id": "P017",
+          "asset_id": "P023",
           "source_layer": "objects",
           "render_layer": "decorations",
           "position": [
             1200.0,
             780.0
           ],
-          "scale": 0.61,
+          "scale": 0.31,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png",
+          "texture_path": "res://map_factory/parts/furniture/P023_Cobalt_Compass_Treasure_Chest.png",
           "pixel_size": [
-            191,
-            157
+            649,
+            540
           ],
           "origin": [
-            95,
-            157
+            324,
+            540
           ],
           "status": "needs_cleanup",
           "collision": {
@@ -3861,7 +4085,7 @@
             ]
           },
           "shadow": {
-            "type": "contact",
+            "type": "none",
             "opacity": 0.25,
             "offset_x": 4,
             "offset_y": 2
@@ -4119,6 +4343,52 @@
             "offset_y": 18
           },
           "attachment": null
+        },
+        {
+          "instance_id": "HeroHDBedCover",
+          "asset_id": "P025",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            410.0,
+            535.0
+          ],
+          "scale": 0.37,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/furniture/P025_Royal_Blue_Compass_Bedspread.png",
+          "pixel_size": [
+            760,
+            516
+          ],
+          "origin": [
+            380,
+            516
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none"
+          },
+          "attachment": {
+            "parent_instance_id": "HeroBed",
+            "host_render_layer": "decorations",
+            "mount_offset": [
+              0.0,
+              -25.0
+            ]
+          }
         },
         {
           "instance_id": "LowerLeftVines",
@@ -4679,6 +4949,48 @@
               26.0
             ]
           }
+        },
+        {
+          "instance_id": "HeroHDBanner",
+          "asset_id": "D019",
+          "source_layer": "front_objects",
+          "render_layer": "decorations",
+          "position": [
+            985.0,
+            366.0
+          ],
+          "scale": 0.31,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D019_Royal_Blue_Compass_Banner.png",
+          "pixel_size": [
+            491,
+            667
+          ],
+          "origin": [
+            245,
+            667
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
         }
       ],
       "shadows": [
@@ -5069,23 +5381,23 @@
         {
           "instance_id": "HeroBed__shadow",
           "owner_instance_id": "HeroBed",
-          "owner_asset_id": "P001",
+          "owner_asset_id": "P024",
           "asset_id": "S005",
           "texture_path": "res://map_factory/parts/shadows/S005_Shadow_Bed.png",
           "position": [
             410.0,
             560.0
           ],
-          "scale": 0.75,
+          "scale": 0.42,
           "sprite_pixel_size": [
-            296,
-            339
+            679,
+            570
           ],
           "settings": {
             "type": "bed",
+            "opacity": 0.35,
             "offset_x": 0,
-            "offset_y": -5,
-            "opacity": 0.5
+            "offset_y": 0
           },
           "render_layer": "shadows",
           "display_z": 20
@@ -5165,47 +5477,23 @@
         {
           "instance_id": "WritingTable__shadow",
           "owner_instance_id": "WritingTable",
-          "owner_asset_id": "P008",
+          "owner_asset_id": "P026",
           "asset_id": "S006",
           "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
           "position": [
             1124.0,
             606.0
           ],
-          "scale": 0.64,
+          "scale": 0.46,
           "sprite_pixel_size": [
-            392,
-            278
+            760,
+            561
           ],
           "settings": {
             "type": "table",
             "offset_x": 8,
             "offset_y": 0,
             "opacity": 0.35
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "TreasureChest__shadow",
-          "owner_instance_id": "TreasureChest",
-          "owner_asset_id": "P017",
-          "asset_id": "S002",
-          "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-          "position": [
-            1200.0,
-            780.0
-          ],
-          "scale": 0.61,
-          "sprite_pixel_size": [
-            191,
-            157
-          ],
-          "settings": {
-            "type": "contact",
-            "opacity": 0.25,
-            "offset_x": 4,
-            "offset_y": 2
           },
           "render_layer": "shadows",
           "display_z": 20
@@ -5512,20 +5800,23 @@
     "counts": {
       "background": 5,
       "ground": 2,
-      "walls": 36,
-      "decorations": 35,
-      "shadows": 28
+      "walls": 40,
+      "decorations": 37,
+      "shadows": 27
     },
     "unique_asset_ids": [
       "A005",
       "A007",
       "A012",
       "A015",
+      "A017",
+      "A018",
       "D001",
       "D004",
       "D007",
       "D008",
       "D009",
+      "D019",
       "E015",
       "E016",
       "E017",
@@ -5546,13 +5837,14 @@
       "O019",
       "O021",
       "O028",
-      "P001",
       "P005",
       "P007",
-      "P008",
       "P014",
       "P015",
-      "P017",
+      "P023",
+      "P024",
+      "P025",
+      "P026",
       "S002",
       "S005",
       "S006",
@@ -5599,7 +5891,9 @@
       "W013",
       "W014",
       "W015",
-      "W020"
+      "W020",
+      "W021",
+      "W022"
     ],
     "lighting_effects": [
       {
