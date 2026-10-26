@@ -76,6 +76,24 @@ def select(tests: list[dict], changed: list[str]) -> tuple[list[dict], list[str]
     return [t for t in tests if any(matches(p, t["paths"]) for p in changed)], []
 
 
+GODOT_IMPORT = "godot_import"
+CLASS_CACHE = Path(".godot/global_script_class_cache.cfg")
+
+
+def with_godot_import(selected: list[dict], tests: list[dict], root: Path = ROOT) -> list[dict]:
+    """--script runs need Godot's class_name cache (e.g. RoomFactory), which a fresh worktree
+    lacks; run the editor import first when the cache is missing and any Godot test is selected."""
+    others = [t for t in selected if t["kind"] == "godot" and t["id"] != GODOT_IMPORT]
+    if not others or (root / CLASS_CACHE).is_file():
+        return selected
+    importer = next((t for t in tests if t["id"] == GODOT_IMPORT), None)
+    if importer is None:
+        return selected
+    rest = [t for t in selected if t["id"] != GODOT_IMPORT]
+    first = next(i for i, t in enumerate(rest) if t["kind"] == "godot")
+    return rest[:first] + [importer] + rest[first:]
+
+
 def _git(*args: str, cwd: Path) -> list[str]:
     proc = subprocess.run(["git", *args], cwd=str(cwd), capture_output=True, text=True,
                           encoding="utf-8", errors="replace")
@@ -256,6 +274,10 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.kind:
         selected = [t for t in selected if t["kind"] == args.kind]
+    before = {t["id"] for t in selected}
+    selected = with_godot_import(selected, tests)
+    if GODOT_IMPORT in {t["id"] for t in selected} - before:
+        print(f"{CLASS_CACHE.as_posix()} missing: running {GODOT_IMPORT} before Godot tests")
     if not selected:
         print("No tests selected.")
         return 0

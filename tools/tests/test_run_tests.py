@@ -89,6 +89,47 @@ class MapTests(unittest.TestCase):
         self.assertEqual(run_tests.godot_executable("/explicit"), "/explicit")
 
 
+class GodotImportPrerequisiteTests(unittest.TestCase):
+    importer = entry("godot_import", ["**/*.gd"], ["{godot}", "--editor", "--quit"], "godot")
+    smoke = entry("godot_map_smoke", ["map_factory/maps/**"], ["{godot}", "--script", "s.gd"], "godot")
+    unit = entry("map_factory", ["map_factory/maps/**"])
+    tests = [unit, importer, smoke]
+
+    def root(self, cached):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        if cached:
+            cache = Path(tmp.name) / run_tests.CLASS_CACHE
+            cache.parent.mkdir(parents=True)
+            cache.write_text("list=[]\n", encoding="utf-8")
+        return Path(tmp.name)
+
+    def ids(self, selected):
+        return [t["id"] for t in selected]
+
+    def test_fresh_worktree_imports_before_godot_scripts(self):
+        # TASK-0008: maps-only change selected the smoke but not the import; RoomFactory undeclared.
+        selected = run_tests.with_godot_import([self.unit, self.smoke], self.tests, self.root(False))
+        self.assertEqual(self.ids(selected), ["map_factory", "godot_import", "godot_map_smoke"])
+
+    def test_import_moves_ahead_when_already_selected(self):
+        selected = run_tests.with_godot_import([self.smoke, self.importer], self.tests, self.root(False))
+        self.assertEqual(self.ids(selected), ["godot_import", "godot_map_smoke"])
+
+    def test_no_import_when_cached_or_no_godot_tests(self):
+        self.assertEqual(self.ids(run_tests.with_godot_import([self.smoke], self.tests, self.root(True))),
+                         ["godot_map_smoke"])
+        self.assertEqual(self.ids(run_tests.with_godot_import([self.unit], self.tests, self.root(False))),
+                         ["map_factory"])
+        self.assertEqual(self.ids(run_tests.with_godot_import([self.importer], self.tests, self.root(False))),
+                         ["godot_import"])
+
+    def test_repository_map_has_import_entry(self):
+        importer = next(t for t in run_tests.load_map() if t["id"] == run_tests.GODOT_IMPORT)
+        self.assertEqual(importer["kind"], "godot")
+        self.assertIn("--editor", importer["command"])
+
+
 class ChangedPathTests(unittest.TestCase):
     def git(self, repo, *args):
         subprocess.run(["git", *args], cwd=repo, check=True, capture_output=True)
