@@ -62,6 +62,11 @@ def create_layer_stack(snapshot,catalog):
                        record["placement_contract"],*block["grid_placement"]["cell"],
                        block["grid_placement"].get("facing","north"))]}
                    if "grid_placement" in block else {})}
+            # Runtime layer 0 must receive the validated motion contract. Copies
+            # keep compiled snapshots independent of mutable source metadata.
+            for field in ("animation", "scroll"):
+                if field in block:
+                    entry[field] = deepcopy(block[field])
             placed[ident]=entry;raw.append((block,entry))
     resolved={}
     def resolve(ident,trail=()):

@@ -6,6 +6,10 @@ func _initialize() -> void:
     call_deferred("_run_smoke")
 
 func _run_smoke() -> void:
+    var background_ok: bool = _background_runtime_smoke()
+    if "--background-only" in OS.get_cmdline_user_args():
+        quit(0 if background_ok else 1)
+        return
     var file := "res://map_factory/maps/index.json"
     if not FileAccess.file_exists(file):
         push_error("Missing registered maps JSON")
@@ -21,7 +25,7 @@ func _run_smoke() -> void:
         push_error("No maps to validate")
         quit(1)
         return
-    var ok := true
+    var ok := background_ok
     for key in maps.keys():
         var id := String(key)
         var entry: Dictionary = maps[key]
@@ -155,3 +159,92 @@ func _run_smoke() -> void:
     if ok:
         print("All environment-only map builds passed: ", maps.size())
     quit(0 if ok else 1)
+
+
+func _background_check(passed: bool, message: String) -> bool:
+    if not passed:
+        push_error("Background runtime: " + message)
+    return passed
+
+
+func _background_runtime_smoke() -> bool:
+    # The fixture exercises the same compiled-pass builder used by real maps.
+    # Local image-free tests provide PlaceholderTexture2D resources; hosted smoke
+    # uses the registered textures. Neither path synthesizes production graphics.
+    var factory := RoomFactory.new()
+    var host := Node2D.new()
+    get_root().add_child(host)
+    var frames: Array = ["E010", "E011", "E012", "E013", "E014"]
+    var entries: Array = [
+        {"instance_id": "RuntimeSea", "asset_id": "E010", "position": [25, 30],
+            "animation": {"frames": frames, "fps": 4.0}},
+        {"instance_id": "RuntimeCloud", "asset_id": "E018", "position": [10, 20],
+            "scroll": {"vx": -10.0, "vy": 0.0}, "scale": 1.5, "flip_h": true},
+        {"instance_id": "RuntimeFoam", "asset_id": "E009", "position": [40, 50],
+            "animation": {"frames": ["E009", "E009"], "fps": 2.0}},
+        {"instance_id": "StaticBackground", "asset_id": "E015", "position": [75, 80]},
+        {"instance_id": "RuntimeCombined", "asset_id": "E010", "position": [100, 20],
+            "animation": {"frames": frames, "fps": 4.0}, "scroll": {"vx": 0.0, "vy": 3.0}}
+    ]
+    factory._build_five_levels({"canvas_size": [200, 100], "size": [0, 0]},
+        {"passes": {"background": entries}}, host)
+    var background := host.get_node_or_null("Level0_Background") as BackgroundFactory
+    if background == null:
+        host.free()
+        return _background_check(false, "compiled layer-0 controller missing")
+    var sea := background.get_node("RuntimeSea/Visual") as Sprite2D
+    var cloud := background.get_node("RuntimeCloud") as Node2D
+    var foam := background.get_node("RuntimeFoam/Visual") as Sprite2D
+    var combined := background.get_node("RuntimeCombined") as Node2D
+    var still := background.get_node("StaticBackground") as Node2D
+    var cloud_visual := cloud.get_node("Visual") as Sprite2D
+    var ok: bool = _background_check(background.z_index == 0, "wrong background depth")
+    ok = _background_check(background.get_child_count() == entries.size(), "changed pass count") and ok
+    ok = _background_check(sea != null and cloud_visual != null and foam != null,
+        "missing sprite visual") and ok
+    if not ok:
+        host.free()
+        return false
+    ok = _background_check(sea.get_meta("background_frame_id", "") == "E010", "wrong first frame") and ok
+    ok = _background_check(not still.has_meta("background_fps"), "static block was animated") and ok
+    ok = _background_check(cloud.scale == Vector2.ONE * 1.5 and cloud_visual.flip_h,
+        "placement scale/flip lost") and ok
+    background._process(0.25)
+    ok = _background_check(sea.get_meta("background_frame_id", "") == "E011", "JSON fps ignored") and ok
+    var next_origin: Array = factory.catalog.get_asset("E011").get("origin", [0, 0])
+    ok = _background_check(sea.position == -Vector2(float(next_origin[0]), float(next_origin[1])),
+        "animation frame origin ignored") and ok
+    ok = _background_check(cloud.position.is_equal_approx(Vector2(7.5, 20)), "scroll velocity ignored") and ok
+    ok = _background_check(combined.position.is_equal_approx(Vector2(100, 20.75)),
+        "combined animation/scroll lost a stationary axis") and ok
+    ok = _background_check(still.position == Vector2(75, 80), "static placement moved") and ok
+    background._process(1.0)
+    ok = _background_check(sea.get_meta("background_frame_id", "") == "E010", "clip did not loop") and ok
+    ok = _background_check(int(foam.get_meta("background_frame_index", -1)) == 0,
+        "independent foam cadence incorrect") and ok
+    background._process(0.25)
+    ok = _background_check(int(foam.get_meta("background_frame_index", -1)) == 1,
+        "foam frame did not advance") and ok
+    background._process(1000.0)
+    var width: float = cloud_visual.texture.get_width() * cloud.scale.x
+    var left: float = (-cloud_visual.position.x * cloud.scale.x) - width
+    ok = _background_check(cloud.position.x >= left and cloud.position.x < 200.0 + left + width,
+        "negative scroll escaped the canvas wrap range") and ok
+    ok = _background_check(cloud.position.y == 20.0, "wrapping changed stationary Y") and ok
+    cloud.free()
+    background._process(0.25) # A removed placement must not leave a dangling runtime reference.
+    background.configure([], factory.catalog, Vector2(200, 100))
+    ok = _background_check(not background.is_processing(), "empty controller kept processing") and ok
+    ok = _background_check(not combined.has_meta("background_fps"), "reconfigure left stale metadata") and ok
+    # Legacy background groups consume the same JSON fields without a compiled pass.
+    factory._place_group([{"id": "E010", "instance_id": "LegacySea", "x": 5, "y": 6,
+        "animation": {"frames": frames, "fps": 2.0}}], host, "DistantRuins", false, Vector2(200, 100))
+    var legacy := host.get_node("DistantRuins") as BackgroundFactory
+    legacy._process(0.5)
+    var legacy_visual := legacy.get_node("LegacySea/Visual") as Sprite2D
+    ok = _background_check(legacy_visual.get_meta("background_frame_id", "") == "E011",
+        "legacy background animation missing") and ok
+    host.free()
+    if ok:
+        print("Background runtime passed: fps, sea/foam loops, scroll/wrap, origins, static compatibility, removal and legacy JSON")
+    return ok

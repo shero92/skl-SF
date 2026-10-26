@@ -70,7 +70,7 @@ func build_room(path: String, parent: Node2D) -> Node2D:
         _place_effects(data.get("effects", []), root)
         return root
 
-    _place_group(data.get("background_objects", []), root, "DistantRuins", false)
+    _place_group(data.get("background_objects", []), root, "DistantRuins", false, Vector2(float(canvas[0]), float(canvas[1])))
     var ground := Node2D.new()
     ground.name = "Ground"
     root.add_child(ground)
@@ -84,11 +84,13 @@ func build_room(path: String, parent: Node2D) -> Node2D:
 
 func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> void:
     var passes: Dictionary = stack.get("passes", {})
-    var background := Node2D.new()
+    var background := BackgroundFactory.new()
     background.name = "Level0_Background"
     background.z_index = 0
     root.add_child(background)
     _place_compiled_entries(passes.get("background", []), background)
+    var canvas: Array = data.get("canvas_size", [1536, 1024])
+    background.configure(passes.get("background", []), catalog, Vector2(float(canvas[0]), float(canvas[1])))
 
     var floor_level := Node2D.new()
     floor_level.name = "Level1_Ground"
@@ -298,8 +300,8 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
             fallback.position = pos
             target.add_child(fallback)
 
-func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool) -> void:
-    var group := Node2D.new()
+func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool, canvas_size: Vector2 = Vector2.ZERO) -> void:
+    var group: Node2D = BackgroundFactory.new() if name == "DistantRuins" else Node2D.new()
     group.name = name
     group.y_sort_enabled = use_y_sort
     parent.add_child(group)
@@ -337,6 +339,8 @@ func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool
         node.scale = Vector2(s, s)
         node.z_index = int(item.get("z_index", 0))
         group.add_child(node)
+    if group is BackgroundFactory:
+        (group as BackgroundFactory).configure(entries, catalog, canvas_size)
 
 func _place_effects(entries: Array, parent: Node2D) -> void:
     var group := Node2D.new()
