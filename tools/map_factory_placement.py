@@ -39,6 +39,9 @@ def validate_contract(record):
     allow = cfg.get("allowed_floor_tags")
     if not isinstance(allow, list) or not allow or any(not isinstance(x, str) or not x for x in allow):
         raise ValueError(f'{record.get("id")}: allowed_floor_tags is required')
+    ids = cfg.get("allowed_floor_asset_ids")
+    if ids is not None and (not isinstance(ids, list) or not ids or any(not isinstance(v, str) for v in ids)):
+        raise ValueError("allowed_floor_asset_ids must be nonempty asset ID list")
     deny = cfg.get("forbidden_floor_tags", [])
     if not isinstance(deny, list) or any(not isinstance(x, str) for x in deny):
         raise ValueError("forbidden_floor_tags must be a string list")
@@ -150,6 +153,13 @@ def validate_grid_placements(snapshot, catalog):
                 raise ValueError(f"{ident}: use grid_placement.facing, not arbitrary sprite rotation")
             if float(item.get("scale", 1)) != 1.0:
                 raise ValueError(f"{ident}: scaling changes grid footprint; use scale=1 and native-sized sprite art")
+            if facing != "north":
+                if "rug" in record.get("tags", []) and item.get("facing") == facing and item.get("orientation_mode") == "rotate":
+                    pass
+                elif (item.get("facing") != facing or item.get("orientation_mode") != "variants"):
+                    raise ValueError(f"{ident}: upright facing requires separate four-view sprite metadata")
+            elif item.get("facing", "north") != facing:
+                raise ValueError(f"{ident}: grid facing differs from rendered sprite facing")
             actual = world_anchor(snapshot, cfg, *xy, facing)
             if any(not math.isfinite(v) or abs(float(item[k]) - v) > 0.01 for k, v in zip(("x", "y"), actual)):
                 raise ValueError(f"{ident}: x/y must match exact grid bottom-center anchor {actual}")
@@ -159,6 +169,8 @@ def validate_grid_placements(snapshot, catalog):
                     raise ValueError(f"{ident}: furniture outside floor footprint at {cell}")
                 tile = catalog[floor_at(snapshot, *cell)]
                 tags = set(tile.get("tags", []))
+                if cfg.get("allowed_floor_asset_ids") and tile["id"] not in cfg["allowed_floor_asset_ids"]:
+                    raise ValueError(f"{ident}: wrong floor block ID {tile['id']} at {cell}")
                 if not tags.intersection(cfg["allowed_floor_tags"]):
                     raise ValueError(f"{ident}: incompatible ground tile {tile['id']} at {cell}")
                 if tags.intersection(cfg.get("forbidden_floor_tags", [])):
