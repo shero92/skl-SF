@@ -1,0 +1,202 @@
+#!/usr/bin/env python3
+"""Blender part factory for Map Factory environment pieces (owner decision 2026-10-26).
+
+    py -3 tools/blender_factory.py calibrate               # 1x1 tile must render tile_px x tile_px
+    py -3 tools/blender_factory.py render <spec> --out DIR  # raw Blender render (masters, shadows, metadata)
+    py -3 tools/blender_factory.py deliver ART-0004         # render tools/blender/specs/ART-0004.json into
+                                                            # .agents/graphics/deliveries/ART-0004/ + manifest
+
+deliver writes native-scale PNGs at exactly the request's output_paths, 4x masters and separate shadows,
+technical QA (tools/art_qa.py) and a manifest with measured SHA-256. It never changes the ART/TASK status,
+never writes map_factory/parts and never approves art: visual review happens on the final Godot capture.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+
+ROOT = Path(__file__).resolve().parents[1]
+BLENDER_DIR = ROOT / "tools/blender"
+SPECS = BLENDER_DIR / "specs"
+CONFIG = ROOT / ".agents/planner/config.json"
+DELIVERIES = ROOT / ".agents/graphics/deliveries"
+REFERENCE = ROOT / ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png"
+DEFAULT_BLENDER = [r"C:\Program Files\Blender Foundation\Blender 5.2\blender.exe", "blender"]
+
+sys.path.insert(0, str(ROOT / "tools"))
+
+
+def blender_executable(override: str | None = None) -> str | None:
+    """--blender, BLENDER_EXECUTABLE, config blender_executable, then known install paths."""
+    candidates = [override, os.environ.get("BLENDER_EXECUTABLE")]
+    if CONFIG.is_file():
+        candidates.append(json.loads(CONFIG.read_text(encoding="utf-8")).get("blender_executable"))
+    candidates += DEFAULT_BLENDER
+    for c in candidates:
+        if c and (Path(c).is_file() or shutil.which(c)):
+            return c
+    return None
+
+
+def load_spec(path: Path) -> dict:
+    spec = json.loads(Path(path).read_text(encoding="utf-8"))
+    if "builder" not in spec or not isinstance(spec.get("outputs"), list) or not spec["outputs"]:
+        raise ValueError("spec needs a builder and a non-empty outputs list")
+    names = [o.get("name") for o in spec["outputs"]]
+    if any(not isinstance(n, str) or not re.fullmatch(r"[a-z0-9_]+", n) for n in names) or len(set(names)) != len(names):
+        raise ValueError("output names must be unique lowercase snake_case")
+    for o in spec["outputs"]:
+        if o.get("facing", "south") not in ("north", "east", "south", "west"):
+            raise ValueError("unknown facing " + str(o.get("facing")))
+    return spec
+
+
+def render(spec_path: Path, out_dir: Path, blender: str | None = None, timeout: int = 3600) -> list[dict]:
+    exe = blender_executable(blender)
+    if exe is None:
+        raise RuntimeError("Blender not found: set blender_executable in .agents/planner/config.json or BLENDER_EXECUTABLE")
+    load_spec(spec_path)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    proc = subprocess.run([exe, "-b", "--factory-startup", "--python", str(BLENDER_DIR / "render_part.py"), "--",
+                           str(spec_path), str(out_dir)], capture_output=True, text=True, encoding="utf-8",
+                          errors="replace", timeout=timeout)
+    if proc.returncode or "DONE" not in proc.stdout:
+        tail = "\n".join((proc.stdout + proc.stderr).strip().splitlines()[-15:])
+        raise RuntimeError("Blender render failed:\n" + tail)
+    spec = json.loads(spec_path.read_text(encoding="utf-8"))
+    return [json.loads((out_dir / (o["name"] + ".json")).read_text(encoding="utf-8")) for o in spec["outputs"]]
+
+
+def downscale(src: Path, dst: Path, factor: int) -> list[int]:
+    from PIL import Image
+    im = Image.open(src).convert("RGBA")
+    if factor > 1:
+        im = im.resize((max(1, round(im.width / factor)), max(1, round(im.height / factor))), Image.Resampling.LANCZOS)
+    im.save(dst)
+    return list(im.size)
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def request_outputs(art_id: str) -> list[str]:
+    req = next((ROOT / ".agents/graphics/requests").glob(art_id + "_*.md"))
+    m = re.search(r"(?m)^output_paths: (.+)$", req.read_text(encoding="utf-8"))
+    return [p.strip() for p in m.group(1).split(",")] if m else []
+
+
+def git_head() -> str:
+    proc = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True)
+    return proc.stdout.strip() or "unknown"
+
+
+def blender_version(exe: str) -> str:
+    proc = subprocess.run([exe, "-b", "--factory-startup", "--version"], capture_output=True, text=True,
+                          encoding="utf-8", errors="replace")
+    return (proc.stdout.strip().splitlines() or ["unknown"])[0]
+
+
+def deliver(art_id: str, blender: str | None = None, agent: str = "claude") -> dict:
+    import art_qa
+    spec_path = SPECS / (art_id + ".json")
+    spec = load_spec(spec_path)
+    expected = request_outputs(art_id)
+    wanted = [f".agents/graphics/deliveries/{art_id}/{o['name']}.png" for o in spec["outputs"]]
+    if sorted(wanted) != sorted(expected):
+        raise ValueError(f"{art_id}: spec outputs {wanted} differ from request output_paths {expected}")
+    target = DELIVERIES / art_id
+    target.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix="blender-" + art_id + "-") as tmp:
+        metas = render(spec_path, Path(tmp), blender)
+        files, extra = [], []
+        for meta in metas:
+            name, ss = meta["name"], int(meta["supersample"])
+            native = target / (name + ".png")
+            size = downscale(Path(tmp) / meta["color"], native, ss)
+            master = target / (name + "@" + str(ss) + "x.png")
+            shutil.copyfile(Path(tmp) / meta["color"], master)
+            item = {"path": native.relative_to(ROOT).as_posix(), "sha256": sha256(native), "pixel_size": size,
+                    "facing": meta["facing"], "anchors_px": meta["anchors_px"], "builder": meta["builder"],
+                    "params": meta["params"], "master": master.relative_to(ROOT).as_posix(), "master_sha256": sha256(master)}
+            extra.append({"path": item["master"], "sha256": item["master_sha256"], "role": "4x master"})
+            if meta.get("shadow"):
+                shadow = target / (name + "_shadow.png")
+                downscale(Path(tmp) / meta["shadow"], shadow, ss)
+                item["shadow"] = shadow.relative_to(ROOT).as_posix()
+                extra.append({"path": item["shadow"], "sha256": sha256(shadow), "role": "separate cast shadow"})
+            files.append(item)
+        qa = art_qa.check(target, [Path(f["path"]).name for f in files])
+    exe = blender_executable(blender) or "unknown"
+    manifest = {
+        "request_id": art_id, "task_id": spec.get("task"), "status": "rendered_unreviewed",
+        "files": files, "extra_files": extra, "qa": {"problems": qa["problems"], "warnings": qa["warnings"],
+                                                     "pairs": qa["pairs"]},
+        "provenance": {"tool": "blender", "blender": blender_version(exe), "spec": spec_path.relative_to(ROOT).as_posix(),
+                       "toolkit_commit": git_head(), "producing_agent": agent, "ai_image_generation": False},
+        "reference": {"path": REFERENCE.relative_to(ROOT).as_posix(),
+                      "sha256": sha256(REFERENCE) if REFERENCE.is_file() else None, "owner_confirmed": False},
+        "review": {"visual_approval": None, "note": "Checked only on the final Godot capture of the assembled room; "
+                                                    "pieces are improved and re-rendered from the spec, never hand-edited."},
+        "cost": "unknown",
+    }
+    (target / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    return manifest
+
+
+def calibrate(blender: str | None = None) -> dict:
+    """A flat 1x1 tile must cover exactly tile_px x tile_px pixels (square floor grid)."""
+    from PIL import Image
+    proj = json.loads((BLENDER_DIR / "projection.json").read_text(encoding="utf-8"))
+    with tempfile.TemporaryDirectory(prefix="blender-calibrate-") as tmp:
+        spec = Path(tmp) / "spec.json"
+        spec.write_text(json.dumps({"builder": "calibration_tile", "projection": {"supersample": 1, "samples": 8},
+                                    "outputs": [{"name": "calib", "shadow": False}]}), encoding="utf-8", newline="\n")
+        meta = render(spec, Path(tmp) / "out", blender)[0]
+        alpha = Image.open(Path(tmp) / "out" / meta["color"]).getchannel("A")
+        bbox = alpha.point(lambda v: 255 if v > 127 else 0).getbbox()
+    size = [bbox[2] - bbox[0], bbox[3] - bbox[1]] if bbox else None
+    return {"tile_px": proj["tile_px"], "measured": size, "ok": size == [proj["tile_px"]] * 2,
+            "anchor": meta["anchors_px"]["tile_top_left"], "bbox": list(bbox) if bbox else None}
+
+
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    sub = parser.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("calibrate")
+    r = sub.add_parser("render")
+    r.add_argument("spec", type=Path)
+    r.add_argument("--out", type=Path, required=True)
+    d = sub.add_parser("deliver")
+    d.add_argument("art_id")
+    d.add_argument("--agent", choices=("claude", "codex"), default="claude")
+    for p in sub.choices.values():
+        p.add_argument("--blender")
+    args = parser.parse_args(argv)
+    try:
+        if args.cmd == "calibrate":
+            result = calibrate(args.blender)
+            print(json.dumps(result))
+            return 0 if result["ok"] else 1
+        if args.cmd == "render":
+            print(json.dumps(render(args.spec, args.out, args.blender), indent=2))
+            return 0
+        manifest = deliver(args.art_id, args.blender, args.agent)
+        print(json.dumps({k: manifest[k] for k in ("request_id", "status")} | {"files": len(manifest["files"]),
+              "problems": manifest["qa"]["problems"], "warnings": manifest["qa"]["warnings"]}, indent=2))
+        return 1 if manifest["qa"]["problems"] else 0
+    except (OSError, RuntimeError, ValueError) as exc:
+        print("blender factory:", exc, file=sys.stderr)
+        return 2
+
+
+if __name__ == "__main__":
+    sys.exit(main())

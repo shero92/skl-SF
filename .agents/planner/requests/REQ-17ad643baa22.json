@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Blender part factory foundation for Map Factory environment pieces",
+  "problem": "Owner decision 2026-10-26: build every environment piece in Blender, assemble the room in Godot, compare only the final Godot capture with the reference and improve the pieces instead of AI-generating graphics.",
+  "file": "tools/blender_factory.py",
+  "line": null,
+  "done_when": "Blender toolkit renders calibrated RGBA pieces (64 px per tile, configurable 3/4 projection, upper-left light, separate shadow pass, four true facings) with manifest, SHA-256 and technical QA; first builders for ART-0004 wall run and ART-0014 broken floor edge; tests pass",
+  "test": "py -3 tools/run_tests.py --only blender_factory",
+  "priority": "critical",
+  "kind": "feature",
+  "agent": "claude",
+  "task_id": "TASK-0046"
+}
