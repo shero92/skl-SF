@@ -6,7 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`2026-10-26/`](2026-10-26/FILES.md)
 
 ## Files
 
