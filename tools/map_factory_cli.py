@@ -9,7 +9,7 @@ Each revision is based on the verified latest version, not a stale screenshot.
 from __future__ import annotations
 from map_factory_layers import create_layer_stack, validate_layer_stack
 from map_factory_orientation import resolve_orientation
-from map_factory_placement import validate_grid_placements
+from map_factory_placement import validate_grid_placements, validate_contract, world_anchor
 import argparse
 from copy import deepcopy
 from datetime import datetime, timezone
@@ -578,6 +578,23 @@ def clone_map(root, new_map, from_map):
     return copy
 
 
+def populate_grid_anchor(snapshot, block, catalog):
+    """Derive pixel x/y from ground cells when author does not supply them."""
+    placed = block.get("grid_placement")
+    if not isinstance(placed, dict) or "cell" not in placed:
+        raise ValueError("grid_placement.cell is required for automatic snapping")
+    cfg = validate_contract(catalog[block["id"]])
+    if not cfg or cfg.get("mode") != "floor":
+        raise ValueError("Cannot snap a block without a floor placement_contract")
+    cell = placed["cell"]
+    if not isinstance(cell, list) or len(cell) != 2 or any(type(v) is not int for v in cell):
+        raise ValueError("grid_placement.cell requires two integer coordinates")
+    x, y = world_anchor(snapshot, cfg, cell[0], cell[1], placed.get("facing", "north"))
+    block["x"] = x
+    block["y"] = y
+    return block
+
+
 def apply_changes(snapshot, manifest, catalog):
     result = deepcopy(snapshot)
     # Derived layer metadata belongs to the OLD snapshot: rebuild it only after edits.
@@ -604,7 +621,10 @@ def apply_changes(snapshot, manifest, catalog):
             layer = operation["layer"]
             if layer not in LAYERS:
                 raise ValueError("Invalid layer: " + str(layer))
-            result.setdefault(layer, []).append(deepcopy(operation["block"]))
+            block = deepcopy(operation["block"])
+            if "grid_placement" in block and "x" not in block and "y" not in block:
+                populate_grid_anchor(result, block, catalog)
+            result.setdefault(layer, []).append(block)
         elif op in ("update_block","remove_block"):
             name = operation["instance_id"]
             matches = [(layer, index) for layer in LAYERS
@@ -625,9 +645,13 @@ def apply_changes(snapshot, manifest, catalog):
                         raise ValueError("Invalid layer")
                     item=result[layer].pop(i)
                     item.update(updates)
+                    if "grid_placement" in updates and "x" not in updates and "y" not in updates:
+                        populate_grid_anchor(result, item, catalog)
                     result[new_layer].append(item)
                 else:
                     result[layer][i].update(updates)
+                    if "grid_placement" in updates and "x" not in updates and "y" not in updates:
+                        populate_grid_anchor(result, result[layer][i], catalog)
         elif op=="set_property":
             key=operation["key"]
             allowed={"description","background_color","canvas_size","tile_size",
