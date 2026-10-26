@@ -3,31 +3,34 @@
   "five_level_map": {
     "background": 5,
     "ground": 2,
-    "walls": 36,
-    "decorations": 35,
-    "shadows": 28
+    "walls": 40,
+    "decorations": 37,
+    "shadows": 27
   },
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 10,
+  "version": 11,
   "source_image": {
     "path": null,
     "sha256": null,
     "status": "reference_in_chat_not_imported"
   },
-  "block_count": 78,
-  "unique_asset_count": 73,
+  "block_count": 84,
+  "unique_asset_count": 79,
   "reused_asset_ids": [
     "A005",
     "A007",
     "A012",
     "A015",
+    "A017",
+    "A018",
     "D001",
     "D004",
     "D007",
     "D008",
     "D009",
+    "D019",
     "E015",
     "E016",
     "E017",
@@ -48,13 +51,14 @@
     "O019",
     "O021",
     "O028",
-    "P001",
     "P005",
     "P007",
-    "P008",
     "P014",
     "P015",
-    "P017",
+    "P023",
+    "P024",
+    "P025",
+    "P026",
     "ST001",
     "ST002",
     "ST003",
@@ -91,7 +95,9 @@
     "W013",
     "W014",
     "W015",
-    "W020"
+    "W020",
+    "W021",
+    "W022"
   ],
   "placed_blocks": [
     {
@@ -1644,26 +1650,246 @@
       }
     },
     {
-      "instance_id": "HeroBed",
-      "asset_id": "P001",
-      "category": "furniture",
-      "subtype": "hero",
-      "texture_path": "res://map_factory/parts/furniture/P001_Hero_Bed.png",
+      "instance_id": "HeroHDLeftWall",
+      "asset_id": "W021",
+      "category": "walls",
+      "subtype": "wall",
+      "texture_path": "res://map_factory/parts/walls/W021_Vine_Covered_Compass_Ruin_Wall.png",
       "asset_status": "needs_cleanup",
       "pixel_size": [
-        296,
-        339
+        680,
+        843
       ],
       "anchor": [
-        148,
-        339
+        340,
+        843
+      ],
+      "layer": "back_objects",
+      "position": [
+        385,
+        445
+      ],
+      "scale": 0.38,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "wall",
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
+      ],
+      "source": {
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "vine_covered_compass_ruin_wall.png",
+        "sha256": "0de01da3ce590d90eae7c60752ba2082c944a76a00cb594e89aa4a7ca70d5265",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
+      }
+    },
+    {
+      "instance_id": "HeroHDRightWall",
+      "asset_id": "W022",
+      "category": "walls",
+      "subtype": "wall",
+      "texture_path": "res://map_factory/parts/walls/W022_Isometric_Ivy_Fantasy_Wall.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        680,
+        847
+      ],
+      "anchor": [
+        340,
+        847
+      ],
+      "layer": "back_objects",
+      "position": [
+        1165,
+        446
+      ],
+      "scale": 0.38,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "walls",
+        "wall",
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
+      ],
+      "source": {
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "isometric_ivy_covered_fantasy_wall.png",
+        "sha256": "3cab6473ea7d3963e8e0b7f27ecec5d7ecadb0ff5d4845da2a247a2d6b36944c",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
+      }
+    },
+    {
+      "instance_id": "HeroHDPillar",
+      "asset_id": "A017",
+      "category": "architecture",
+      "subtype": "column",
+      "texture_path": "res://map_factory/parts/architecture/A017_Ivy_Covered_Compass_Shrine_Pillar.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        324,
+        694
+      ],
+      "anchor": [
+        162,
+        694
+      ],
+      "layer": "back_objects",
+      "position": [
+        580,
+        416
+      ],
+      "scale": 0.4,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "column",
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
+      ],
+      "source": {
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "ivy_covered_compass_shrine_pillar.png",
+        "sha256": "ee84fc75cf77aeca7f43ec5a4ce30ce9dbd3a8b340654b9d49f997dd3a546f5a",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
+      }
+    },
+    {
+      "instance_id": "HeroHDDoor",
+      "asset_id": "A018",
+      "category": "architecture",
+      "subtype": "doorway",
+      "texture_path": "res://map_factory/parts/architecture/A018_Sapphire_Compass_Doorway.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        520,
+        641
+      ],
+      "anchor": [
+        260,
+        641
+      ],
+      "layer": "back_objects",
+      "position": [
+        773,
+        436
+      ],
+      "scale": 0.43,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "doorway",
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
+      ],
+      "source": {
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "ornate_sapphire_compass_doorway.png",
+        "sha256": "0a6eb324961f916d51368bd3869a1516a72cbc7680b1ba58213928133f254f73",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
+      }
+    },
+    {
+      "instance_id": "HeroBed",
+      "asset_id": "P024",
+      "category": "furniture",
+      "subtype": "bed",
+      "texture_path": "res://map_factory/parts/furniture/P024_Compass_Rose_Fantasy_Bed_Frame.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        679,
+        570
+      ],
+      "anchor": [
+        339,
+        570
       ],
       "layer": "objects",
       "position": [
         410,
         560
       ],
-      "scale": 0.75,
+      "scale": 0.42,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1680,18 +1906,22 @@
       },
       "shadow": {
         "type": "bed",
+        "opacity": 0.35,
         "offset_x": 0,
-        "offset_y": -5,
-        "opacity": 0.5
+        "offset_y": 0
       },
       "tags": [
         "furniture",
-        "hero",
-        "bed"
+        "bed",
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
       ],
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "ornate_compass_rose_fantasy_bed.png",
+        "sha256": "c215ac52ab09d26eb54c4d9eedcaa86cab332a99dc24d89264c4e3c94260e6a8",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
       }
     },
     {
@@ -1853,25 +2083,25 @@
     },
     {
       "instance_id": "WritingTable",
-      "asset_id": "P008",
+      "asset_id": "P026",
       "category": "furniture",
-      "subtype": "wooden",
-      "texture_path": "res://map_factory/parts/furniture/P008_Wooden_Desk.png",
+      "subtype": "desk",
+      "texture_path": "res://map_factory/parts/furniture/P026_Nautical_Compass_Study_Desk.png",
       "asset_status": "needs_cleanup",
       "pixel_size": [
-        392,
-        278
+        760,
+        561
       ],
       "anchor": [
-        196,
-        278
+        380,
+        561
       ],
       "layer": "objects",
       "position": [
         1124,
         606
       ],
-      "scale": 0.64,
+      "scale": 0.46,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1894,12 +2124,16 @@
       },
       "tags": [
         "furniture",
-        "wooden",
-        "desk"
+        "desk",
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
       ],
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "nautical_compass_study_desk.png",
+        "sha256": "ab7e83a626b1a1a31a5c00aac65e0ceb3de63c81de0ab38d5049669aca7cf0f6",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
       }
     },
     {
@@ -2060,25 +2294,25 @@
     },
     {
       "instance_id": "TreasureChest",
-      "asset_id": "P017",
+      "asset_id": "P023",
       "category": "furniture",
-      "subtype": "treasure",
-      "texture_path": "res://map_factory/parts/furniture/P017_Treasure_Chest_Closed.png",
+      "subtype": "chest",
+      "texture_path": "res://map_factory/parts/furniture/P023_Cobalt_Compass_Treasure_Chest.png",
       "asset_status": "needs_cleanup",
       "pixel_size": [
-        191,
-        157
+        649,
+        540
       ],
       "anchor": [
-        95,
-        157
+        324,
+        540
       ],
       "layer": "objects",
       "position": [
         1200,
         780
       ],
-      "scale": 0.61,
+      "scale": 0.31,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2094,20 +2328,23 @@
         ]
       },
       "shadow": {
-        "type": "contact",
+        "type": "none",
         "opacity": 0.25,
         "offset_x": 4,
         "offset_y": 2
       },
       "tags": [
         "furniture",
-        "treasure",
         "chest",
-        "closed"
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
       ],
       "source": {
-        "kind": "ai_sheet_crop",
-        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "ornate_cobalt_compass_treasure_chest.png",
+        "sha256": "90b21b3ab718c6246bffa674766f11d9441598fb6ed37b71ddec48cb4d9fb517",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
       }
     },
     {
@@ -2586,6 +2823,58 @@
         ],
         "sha256": "04d05bfcc23754c37b63d6881ec9b0a486d0a9b7c5a6e2141005f017b411eeff",
         "approved": false
+      }
+    },
+    {
+      "instance_id": "HeroHDBedCover",
+      "asset_id": "P025",
+      "category": "furniture",
+      "subtype": "bedspread",
+      "texture_path": "res://map_factory/parts/furniture/P025_Royal_Blue_Compass_Bedspread.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        760,
+        516
+      ],
+      "anchor": [
+        380,
+        516
+      ],
+      "layer": "objects",
+      "position": [
+        410,
+        550
+      ],
+      "scale": 0.37,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none"
+      },
+      "tags": [
+        "furniture",
+        "bedspread",
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
+      ],
+      "source": {
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "royal_blue_compass_rose_bedspread.png",
+        "sha256": "5a5d5d7cdd0c3d16115ecd77f12314473c25a0237f080dfda2f252f6cbe516ad",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
       }
     },
     {
@@ -4235,6 +4524,61 @@
         ],
         "sha256": "d6bf1bee986a401cffc8593ccf7fc98f1702f16c7a7c1ea1083898b9715e6d03",
         "approved": false
+      }
+    },
+    {
+      "instance_id": "HeroHDBanner",
+      "asset_id": "D019",
+      "category": "decor",
+      "subtype": "wall_hanging",
+      "texture_path": "res://map_factory/parts/decor/D019_Royal_Blue_Compass_Banner.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        491,
+        667
+      ],
+      "anchor": [
+        245,
+        667
+      ],
+      "layer": "front_objects",
+      "position": [
+        985,
+        366
+      ],
+      "scale": 0.31,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "wall_hanging",
+        "compass",
+        "blue_gold",
+        "owner_accepted_hd_style"
+      ],
+      "source": {
+        "kind": "chatgpt_hd_solo_png",
+        "source_file": "ornate_royal_blue_compass_banner.png",
+        "sha256": "fad327b7c185ce29d86ff8257406f9c7a87ec84d528bcdc6c30ed2f987de478a",
+        "art_pack": "hero_room_hd_factory_pack_2026-10-26.zip"
       }
     }
   ],
