@@ -31,3 +31,8 @@ art_request: ART-0001
 - PR: none.
 - Blocked by TASK-0001 + ART-0001.
 - Next: authentic source image; then specialist request.
+
+## Approved recovery priority
+- Original 1448x1086 room composition and owner-accepted nine HD sprites are the targets. The committed goal reference is a candidate until owner identity confirmation; do not assert it is absent or byte-identical.
+- Visible authored views first; deferred additional views remain separate acceptance. Review P024/P025 before commissioning replacement bed/blanket art.
+- Source identity, measured native scale and signed reviewer evidence remain blocked. No asset or map approval implied.

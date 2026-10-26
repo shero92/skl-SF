@@ -1,6 +1,6 @@
 ---
 id: TASK-0033
-status: review
+status: done
 owner: codex
 branch: work/task-0033-background-runtime
 agent: codex
@@ -70,3 +70,8 @@ Outcome: Sea cycles E010-E014 wave frames at the JSON fps, clouds scroll, foam a
 - Reuse existing layer-0 Sprite2D placements for registered-frame animation and velocity-based scrolling, preserving transforms and per-frame origins.
 - Local Godot fixture uses text-only PlaceholderTexture2D resources; production art was never opened or restored. Full asset-backed smoke is delegated to existing hosted CI.
 - Token/cost measurement is unknown when unavailable; completion receipt records actual provenance as codex.
+
+## Merged evidence
+- PR: https://github.com/shero92/skl-SF/pull/31
+- Merge: 850fe77cbabc0f88b2a34520a67b6a76a414d020. Six changed-path suites and hosted Godot map/cardinal smoke passed before merge.
+- Engine behavior delivered; current Hero Room data still requires motion configuration and visual review.

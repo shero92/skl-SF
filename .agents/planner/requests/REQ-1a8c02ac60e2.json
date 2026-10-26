@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Reconcile Hero Room recovery baseline and roadmap",
+  "problem": "Owner approved recovery plan; main has 238 unreviewed assets, Hero Room v0011, merged TASK-0033 and stale task/reference/runner evidence.",
+  "file": "docs/HERO_ROOM_RECOVERY_AUDIT.md",
+  "line": null,
+  "done_when": "Publish verified recovery audit and draft milestone revision; reconcile existing task and ART metadata without approval or policy changes.",
+  "test": "py -3 tools/run_tests.py --only agent_workflow --only goal_task_factory",
+  "priority": "critical",
+  "kind": "investigation",
+  "agent": "codex",
+  "task_id": "TASK-0036"
+}
