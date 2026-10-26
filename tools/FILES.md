@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`blender/`](blender/FILES.md)
 - [`tests/`](tests/FILES.md)
 
 ## Files
@@ -15,10 +16,12 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`agent_runner.py`](agent_runner.py)
 - [`agent_workflow.py`](agent_workflow.py)
 - [`art_delivery.py`](art_delivery.py)
+- [`art_qa.py`](art_qa.py)
 - [`art_requests.py`](art_requests.py)
 - [`audit_assets.py`](audit_assets.py)
 - [`audit_room_assets.py`](audit_room_assets.py)
 - [`blender_export_four_views.py`](blender_export_four_views.py)
+- [`blender_factory.py`](blender_factory.py)
 - [`build_asset_previews.py`](build_asset_previews.py)
 - [`capture_map_previews.gd`](capture_map_previews.gd)
 - [`capture_map_previews.gd.uid`](capture_map_previews.gd.uid)

@@ -47,5 +47,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md`](TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md)
 - [`TASK-0036_reconcile_hero_room_recovery_baseline.md`](TASK-0036_reconcile_hero_room_recovery_baseline.md)
 - [`TASK-0039_preserve_immutable_resolved_map_metadata.md`](TASK-0039_preserve_immutable_resolved_map_metadata.md)
+- [`TASK-0046_blender_part_factory_foundation.md`](TASK-0046_blender_part_factory_foundation.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
