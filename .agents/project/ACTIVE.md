@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| codex | TASK-0033 | map_factory/scripts/background_factory.gd, map_factory/scripts/room_factory.gd | 2026-10-26T14:15:59.747068+00:00 | in_progress | unknown |
+| — | none | — | — | — | — |
