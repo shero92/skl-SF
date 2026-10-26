@@ -3,7 +3,7 @@ id: TASK-0034
 status: todo
 owner: unassigned
 branch: none
-agent: codex
+agent: claude
 touches: tools/map_factory_cli.py,tools/tests/test_map_cardinal.py
 test: py -3 -m unittest discover -s tools/tests -p test_map_cardinal.py
 done_when: CLI rejects rotate mode for upright categories and requires n/e/s/w variant IDs; flat floors and rugs keep rotate mode
@@ -20,7 +20,7 @@ art_request: none
 **Goal:** GOAL-0001
 **Type:** feature
 **Priority:** normal
-**Suggested agent:** codex (routing heuristic, not a performance claim)
+**Suggested agent:** claude (owner reassigned from codex on 2026-10-26 to run in parallel with TASK-0033; routing heuristic, not a performance claim)
 **File:** tools/map_factory_cli.py
 **Line:** unspecified
 **Problem:** Upright walls and furniture may be rotated instead of using north/east/south/west artwork variants

@@ -3,7 +3,7 @@ id: TASK-0035
 status: todo
 owner: unassigned
 branch: none
-agent: codex
+agent: claude
 touches: map_factory/scripts/shadow_factory.gd
 test: py -3 tools/run_tests.py --only godot_map_smoke
 done_when: Every placement with shadow data gets an owner-linked shadow at z 20; lantern/candle glow (D015/D016) and light-shaft entries are supported
@@ -20,7 +20,7 @@ art_request: none
 **Goal:** GOAL-0001
 **Type:** feature
 **Priority:** normal
-**Suggested agent:** codex (routing heuristic, not a performance claim)
+**Suggested agent:** claude (owner reassigned from codex on 2026-10-26 to run in parallel with TASK-0033; routing heuristic, not a performance claim)
 **File:** map_factory/scripts/shadow_factory.gd
 **Line:** unspecified
 **Problem:** Shadows must be linked to their owner and drawn at z 20 under it; light shafts are not supported
