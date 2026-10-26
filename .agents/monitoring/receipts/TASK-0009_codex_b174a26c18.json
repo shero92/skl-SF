@@ -1,0 +1,24 @@
+{
+  "agent": "codex",
+  "cost_usd": null,
+  "coverage": "partial",
+  "ended_at": "2026-10-26T09:54:51.292357+00:00",
+  "models": [
+    "gpt-6.1-sol"
+  ],
+  "schema": 1,
+  "session_count": 1,
+  "source": [
+    "unknown"
+  ],
+  "started_at": "2026-10-26T09:53:11.142363+00:00",
+  "task_id": "TASK-0009",
+  "tokens": {
+    "cache_creation_1h_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cached_input_tokens": 448128,
+    "input_tokens": 491369,
+    "output_tokens": 2993,
+    "reasoning_output_tokens": 65
+  }
+}

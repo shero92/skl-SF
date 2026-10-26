@@ -81,5 +81,72 @@ class FiveLevelMap(unittest.TestCase):
         mf.apply(self.root,patch)
         self.assertEqual(version1,mf.read(self.root,mf.version_file("hero_room_01",1)))
 
+    def _background_patch(self, **metadata):
+        return self._patch([{"op":"add_block","layer":"background_objects",
+            "block":{"id":"P002","instance_id":"MovingBackground",
+                     "x":0,"y":0,**metadata}}])
+
+    def test_background_animation_and_scroll_round_trip(self):
+        animation={"frames":["P002","P002"],"fps":12.5}
+        scroll={"vx":-2.5,"vy":0}
+        result=mf.apply(self.root,self._background_patch(animation=animation,scroll=scroll))
+        block=result["background_objects"][-1]
+        self.assertEqual(block["animation"],animation)
+        self.assertEqual(block["scroll"],scroll)
+        stored=mf.get_latest(self.root,"hero_room_01")
+        self.assertEqual(stored["background_objects"][-1],block)
+        self.assertEqual(mf.validate_repository(self.root),[("hero_room_01",2)])
+
+    def test_background_motion_fields_are_independently_optional(self):
+        for metadata in ({}, {"animation":{"frames":["P002"],"fps":1}},
+                         {"scroll":{"vx":0,"vy":3}}):
+            with self.subTest(metadata=metadata):
+                mf.apply(self.root,self._background_patch(**metadata),dry_run=True)
+
+    def test_reject_unknown_animation_frame(self):
+        path=self._background_patch(animation={"frames":["P002","MissingFrame"],"fps":12})
+        with self.assertRaisesRegex(ValueError,"Unknown asset: MissingFrame"):
+            mf.apply(self.root,path)
+        self.assertEqual(mf.get_latest(self.root,"hero_room_01")["version"],1)
+
+    def test_reject_forbidden_animation_frame_category(self):
+        catalog=mf.asset_catalog(self.root)
+        catalog["ForbiddenFrame"]={"category":"characters"}
+        manifest={"changes":[{"op":"add_block","layer":"background_objects",
+            "block":{"id":"P002","instance_id":"MovingBackground","x":0,"y":0,
+                     "animation":{"frames":["ForbiddenFrame"],"fps":12}}}]}
+        with self.assertRaisesRegex(ValueError,"Forbidden block category"):
+            mf.apply_changes(self.base,manifest,catalog)
+
+    def test_reject_invalid_background_animation(self):
+        invalid=[None, [], {}, {"frames":[],"fps":12},
+                 {"frames":"P002","fps":12}, {"frames":[None],"fps":12},
+                 {"frames":[[]],"fps":12}, {"frames":[""],"fps":12}]
+        invalid += [{"frames":["P002"],"fps":fps}
+                    for fps in (None,True,0,-1,"12",float("inf"),float("nan"))]
+        for animation in invalid:
+            with self.subTest(animation=animation):
+                with self.assertRaisesRegex(ValueError,"animation"):
+                    mf.apply(self.root,self._background_patch(animation=animation),dry_run=True)
+
+    def test_reject_invalid_background_scroll(self):
+        invalid=[None, [], {}, {"vx":0}, {"vy":0}]
+        invalid += [{"vx":value,"vy":0} for value in
+                    (True,None,"1",float("inf"),float("nan"))]
+        invalid += [{"vx":0,"vy":False}]
+        for scroll in invalid:
+            with self.subTest(scroll=scroll):
+                with self.assertRaisesRegex(ValueError,"scroll"):
+                    mf.apply(self.root,self._background_patch(scroll=scroll),dry_run=True)
+
+    def test_reject_motion_on_other_layers(self):
+        for metadata in ({"animation":{"frames":["P002"],"fps":12}},
+                         {"scroll":{"vx":1,"vy":0}}):
+            with self.subTest(metadata=metadata):
+                path=self._patch([{"op":"update_block","instance_id":self.pid,
+                                   "set":metadata}])
+                with self.assertRaisesRegex(ValueError,"require layer 0"):
+                    mf.apply(self.root,path,dry_run=True)
+
 if __name__=="__main__":
     unittest.main()
