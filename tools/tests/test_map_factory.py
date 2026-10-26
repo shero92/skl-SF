@@ -93,5 +93,76 @@ class Maps(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Duplicate tile"):
             mf.validate_room(snap,mf.asset_catalog(self.root))
 
+    def test_strict_furniture_uses_exact_ground_cells_and_no_overlap(self):
+        from copy import deepcopy
+        room=deepcopy(self.base)
+        room.pop("layer_stack",None)
+        room["placement_policy"]="strict_v1"
+        room["floor_ids"]=["F001"]
+        bed={"id":"P001","instance_id":"BedGrid","x":128,"y":256,"scale":1,
+             "grid_placement":{"cell":[1,1],"facing":"north"}}
+        room["objects"]=[bed]
+        room["ground_overlays"]=[]
+        catalog=mf.asset_catalog(self.root)
+        for floor in ("F001","F002"):
+            catalog[floor]["tags"]=["stone","floors"]
+        cfg={"schema_version":1,"mode":"floor",
+             "footprint_cells":[2,3],"occupancy_group":"solid",
+             "allowed_floor_tags":["stone"],"allowed_floor_asset_ids":["F001"],
+             "forbidden_floor_tags":["edge","corner","compass"],
+             "measurement_status":"provisional"}
+        catalog["P001"]["placement_contract"]=cfg
+        self.assertTrue(mf.validate_room(room,catalog))
+        room["objects"][0]["x"]=129
+        with self.assertRaisesRegex(ValueError,"exact grid"):
+            mf.validate_room(room,catalog)
+        room["objects"][0]["x"]=128
+        room["tile_overrides"]=[{"x":2,"y":2,"id":"F002"}]
+        with self.assertRaisesRegex(ValueError,"wrong floor block"):
+            mf.validate_room(room,catalog)
+        room["tile_overrides"]=[]
+        room["objects"].append({"id":"P001","instance_id":"BedOverlap","x":128,
+                                "y":256,"scale":1,"grid_placement":{"cell":[1,1],"facing":"north"}})
+        with self.assertRaisesRegex(ValueError,"occupied block"):
+            mf.validate_room(room,catalog)
+
+    def test_furniture_contract_requires_approved_footprint_for_final_map(self):
+        from copy import deepcopy
+        room=deepcopy(self.base)
+        room.pop("layer_stack",None)
+        room["floor_ids"]=["F001"]
+        room["objects"]=[{"id":"P001","instance_id":"BedGrid","x":128,"y":256,
+                          "grid_placement":{"cell":[1,1],"facing":"north"}}]
+        catalog=mf.asset_catalog(self.root)
+        catalog["F001"]["tags"]=["stone","floors"]
+        catalog["P001"]["placement_contract"]={"schema_version":1,"mode":"floor",
+                 "footprint_cells":[2,3],"occupancy_group":"solid",
+                 "allowed_floor_tags":["stone"],"measurement_status":"provisional"}
+        room["placement_policy"]="strict_v1"
+        room["requires_reviewed_footprints"]=True
+        with self.assertRaisesRegex(ValueError,"not been visually reviewed"):
+            mf.validate_room(room,catalog)
+        catalog["P001"]["placement_contract"]["measurement_status"]="reviewed"
+        self.assertTrue(mf.validate_room(room,catalog))
+        room["objects"][0].pop("grid_placement")
+        with self.assertRaisesRegex(ValueError,"requires grid_placement"):
+            mf.validate_room(room,catalog)
+
+    def test_floor_footprint_rejects_furniture_on_missing_platform_tiles(self):
+        from copy import deepcopy
+        room=deepcopy(self.base)
+        room.pop("layer_stack",None)
+        room["floor_ids"]=["F001"]
+        room["objects"]=[{"id":"P001","instance_id":"BedGrid","x":128,"y":256,
+                          "grid_placement":{"cell":[1,1],"facing":"north"}}]
+        catalog=mf.asset_catalog(self.root)
+        catalog["F001"]["tags"]=["stone","floors"]
+        catalog["P001"]["placement_contract"]={"schema_version":1,"mode":"floor",
+                 "footprint_cells":[2,3],"occupancy_group":"solid",
+                 "allowed_floor_tags":["stone"],"measurement_status":"provisional"}
+        room["floor_footprint"]={"row_spans":[[[0,4]],[[0,4]],[[0,4]],[[0,1]],[[0,4]]]}
+        with self.assertRaisesRegex(ValueError,"outside floor footprint"):
+            mf.validate_room(room,catalog)
+
 if __name__=="__main__":
     unittest.main()
