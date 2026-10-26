@@ -1,0 +1,59 @@
+{
+  "run_id": "20261026-121249-claude",
+  "agent": "claude",
+  "base_sha": "16d335d06e69d8c412f9c17856d423039a2a6cd2",
+  "input_digest": "d008b8adedd5f8d487deea71b3983d8f2cd88a53eece9fc4885140307c22f9c9",
+  "duration_seconds": 8.2,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 18404,
+    "cache_read_input_tokens": 5981,
+    "output_tokens": 196,
+    "output_tokens_details": {
+      "thinking_tokens": 118
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 18404,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 196,
+        "cache_read_input_tokens": 5981,
+        "cache_creation_input_tokens": 18404,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 18404
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "cost_usd_estimate": 0.1523562,
+  "exit": 0,
+  "status": "proposed",
+  "pulse": {
+    "created": [
+      "TASK-0011"
+    ],
+    "ready": [
+      "TASK-0011"
+    ],
+    "completed": []
+  },
+  "applied": {
+    "created": [],
+    "updated": []
+  },
+  "source_sha": "16d335d06e69d8c412f9c17856d423039a2a6cd2",
+  "completed_at": "2026-10-26T12:13:00.490030+01:00"
+}
