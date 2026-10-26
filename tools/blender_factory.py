@@ -56,7 +56,24 @@ def load_spec(path: Path) -> dict:
     for o in spec["outputs"]:
         if o.get("facing", "south") not in ("north", "east", "south", "west"):
             raise ValueError("unknown facing " + str(o.get("facing")))
+    for entry in spec.get("expected_similar", []):
+        pair = entry.get("pair") if isinstance(entry, dict) else None
+        if not (isinstance(pair, list) and len(pair) == 2 and set(pair) <= set(names) and entry.get("reason")):
+            raise ValueError("expected_similar entries need a pair of output names and a reason")
     return spec
+
+
+def split_expected(qa: dict, spec: dict) -> tuple[list[str], list[dict]]:
+    """Owner-accepted look-alike pairs (spec expected_similar) leave the warnings with their reason recorded."""
+    expected = {frozenset(n + ".png" for n in e["pair"]): e["reason"] for e in spec.get("expected_similar", [])}
+    warnings, accepted = [], []
+    for text in qa["warnings"]:
+        pair = frozenset(text.split(":")[0].split(" vs "))
+        if pair in expected:
+            accepted.append({"warning": text, "reason": expected[pair]})
+        else:
+            warnings.append(text)
+    return warnings, accepted
 
 
 def render(spec_path: Path, out_dir: Path, blender: str | None = None, timeout: int = 3600) -> list[dict]:
@@ -136,10 +153,11 @@ def deliver(art_id: str, blender: str | None = None, agent: str = "claude") -> d
             files.append(item)
         qa = art_qa.check(target, [Path(f["path"]).name for f in files])
     exe = blender_executable(blender) or "unknown"
+    warnings, accepted = split_expected(qa, spec)
     manifest = {
         "request_id": art_id, "task_id": spec.get("task"), "status": "rendered_unreviewed",
-        "files": files, "extra_files": extra, "qa": {"problems": qa["problems"], "warnings": qa["warnings"],
-                                                     "pairs": qa["pairs"]},
+        "files": files, "extra_files": extra, "qa": {"problems": qa["problems"], "warnings": warnings,
+                                                     "expected_warnings": accepted, "pairs": qa["pairs"]},
         "provenance": {"tool": "blender", "blender": blender_version(exe), "spec": spec_path.relative_to(ROOT).as_posix(),
                        "toolkit_commit": git_head(), "producing_agent": agent, "ai_image_generation": False},
         "reference": {"path": REFERENCE.relative_to(ROOT).as_posix(),
