@@ -4607,7 +4607,11 @@
         "mount_on_categories": [
           "furniture"
         ],
-        "measurement_status": "provisional"
+        "measurement_status": "provisional",
+        "mount_on_asset_ids": [
+          "P001",
+          "P004"
+        ]
       }
     },
     {
@@ -4661,7 +4665,11 @@
         "mount_on_categories": [
           "furniture"
         ],
-        "measurement_status": "provisional"
+        "measurement_status": "provisional",
+        "mount_on_asset_ids": [
+          "P001",
+          "P004"
+        ]
       }
     },
     {
