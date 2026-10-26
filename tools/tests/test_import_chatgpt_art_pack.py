@@ -15,7 +15,7 @@ SPEC.loader.exec_module(MODULE)
 
 class ChatGPTArtImportTests(unittest.TestCase):
     def make_zip(self, root):
-        art = bytes.fromhex("89504e470d0a1a0a")+b"\\0\\0\\0\\rIHDR"+struct.pack(">IIBBBBB",32,32,8,6,0,0,0)+b"\\0\\0\\0\\0"
+        art = bytes.fromhex("89504e470d0a1a0a")+b"\0\0\0\rIHDR"+struct.pack(">IIBBBBB",32,32,8,6,0,0,0)+b"\0\0\0\0"
         assets = []
         crops = []
         file = root/"art.zip"
