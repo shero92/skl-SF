@@ -48,3 +48,10 @@ issue: 20
 - [ ] Coding agent integrates only reviewed deliveries with provenance, validates metadata and a new map revision/Godot preview, obtains owner approval and records the PR before integrated.
 
 **Handoff:** blocked on verified reference provenance/native-scale review and specialist art. No production graphics have been created, replaced or approved.
+
+## Owner-approved recovery amendment
+- Composition reference: authentic original 1448x1086 scene; target factory canvas 1536x1024. Older contradictory dimension wording is superseded, but source identity/hash still requires owner confirmation.
+- Deliver visible authored facings first; retain remaining named views as deferred, never claim incomplete sets support four-way reuse.
+- All proposed native sizes remain provisional until specialist calibration; provide measured native display size, ground footprint, origin, seam/mount interfaces and separate collision/shadow metadata.
+- Reuse existing approved-quality candidates first. Keep blocked_reference until authenticated reference and calibrated specifications are reviewed. No production art or readiness approval is created by this amendment.
+- Newly registered HD candidates to review before any duplicate production: P025. Style approval alone is not calibrated production approval.

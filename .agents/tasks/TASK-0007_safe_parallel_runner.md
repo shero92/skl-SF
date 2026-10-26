@@ -33,3 +33,7 @@ paths, tests, sequential merge locks and rollback protect main.
 - Tests: CI and supervised Windows E2E outstanding.
 - PR: https://github.com/shero92/skl-SF/pull/8 (CI successful; infrastructure merge pending).
 - Next: supervised Windows end-to-end task and image containment test. Configuration stays disabled until owner accepts actual results.
+
+## Recovery reconciliation (supersedes stale configuration wording)
+- Current config has execution_enabled=true and supervised_e2e_passed=true, with TASK-0009 merge 1bd74a054e698232d00c20f631fb9eab6a054717 at 2026-10-26T09:55:22.840855+00:00.
+- This is recorded historical evidence, not a new containment certification. Remaining image-containment evidence must be independently checked before declaring this broad task complete. No configuration changed here.

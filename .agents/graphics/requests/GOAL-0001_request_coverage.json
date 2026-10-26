@@ -998,5 +998,40 @@
       "ART-0021"
     ],
     "note": "Catalog entries are candidates for reuse, not visual approvals; every ART request remains blocked_reference until true source identity and owner scale decisions. Codex/Claude are implementation agents, not art producers."
+  },
+  "recovery_policy": {
+    "source_dimensions": [
+      1448,
+      1086
+    ],
+    "output_dimensions": [
+      1536,
+      1024
+    ],
+    "visible_views_first": true,
+    "measurements": "blocked_specialist_calibration",
+    "reuse_hd_candidates": {
+      "ART-0001": [
+        "P024",
+        "P025"
+      ],
+      "ART-0004": [
+        "W021",
+        "W022"
+      ],
+      "ART-0005": [
+        "A018"
+      ],
+      "ART-0007": [
+        "P025"
+      ],
+      "ART-0019": [
+        "P026"
+      ],
+      "ART-0021": [
+        "P023"
+      ]
+    },
+    "production_unblocked": false
   }
 }

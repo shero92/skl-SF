@@ -1,3 +1,5 @@
+> Current baseline (2026-10-26): Hero Room v0011, 84 placements, 38 architecture placements with 2 collision-enabled. The narrative below is historical v0010 evidence, not a current visual review. See HERO_ROOM_RECOVERY_AUDIT.md. TASK-0033 is merged; art calibration and map motion configuration remain.
+
 # Hero Room: why the Factory scene does not match the artwork
 
 Inputs supplied by user in conversation: factory build screenshot 1536 x 1024 and desired artistic reference 1448 x 1086. Neither uploaded screenshot is automatically present in the git repository. The latest Hero Room is v0010. Its visual QA remains needs_review.

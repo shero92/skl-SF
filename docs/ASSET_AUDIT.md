@@ -1,28 +1,18 @@
-# Automated asset inventory
+# Asset inventory: metadata-only recovery audit
 
-File presence and metadata only. This does NOT certify visual quality.
+238 registered records; all needs_cleanup, zero ready. 214 environment paths present, no missing environment paths, duplicate IDs or texture paths. 24 protected character/UI records excluded from art inspection. Presence is not artistic approval.
 
-- Registered: 218
-- PNG files present: 218
-- Missing: 0
-- Drafts needing cleanup: 218
-- Reviewed ready: 0
+- architecture: 18
+- characters: 12
+- decor: 19
+- environment: 24
+- floors: 22
+- furniture: 26
+- objects: 28
+- shadows: 17
+- stairs: 14
+- ui: 12
+- vegetation: 24
+- walls: 22
 
-| Category | Present | Missing |
-|---|---:|---:|
-| architecture | 16 | 0 |
-| characters | 12 | 0 |
-| decor | 18 | 0 |
-| environment | 18 | 0 |
-| floors | 22 | 0 |
-| furniture | 22 | 0 |
-| objects | 26 | 0 |
-| shadows | 16 | 0 |
-| stairs | 14 | 0 |
-| ui | 12 | 0 |
-| vegetation | 24 | 0 |
-| walls | 18 | 0 |
-
-## Automatic issues
-See asset_audit.json in map_factory/metadata for per-file details.
-Review image transparency, edges, baked labels, anchors, tile seams and collision before approving.
+Historical 218-image reports and asset_audit.json may be stale. See HERO_ROOM_RECOVERY_AUDIT.md. No PNG decoding, cleanup or visual certification performed.

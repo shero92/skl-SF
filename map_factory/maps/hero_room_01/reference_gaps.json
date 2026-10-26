@@ -147,5 +147,13 @@
       "by_level": {"0": 2, "1": 0, "2": 3, "3": 6, "4": 1},
       "next_step": "g1-m8: create art requests in .agents/graphics/requests/ for each gap after checking .agents/graphics/QUEUE.md for duplicates."
     }
+  },
+  "recovery_metadata_audit": {
+    "evaluated_version": 11,
+    "asset_count": 238,
+    "placements": 84,
+    "reviewed_assets": 0,
+    "method": "metadata only; no image inspection",
+    "note": "Older visual/gap findings remain historical. Current reuse decisions require authorized specialist review."
   }
 }
