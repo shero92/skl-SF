@@ -53,7 +53,19 @@
         ".agents/graphics/deliveries/ART-0002/hero_cloud_02.png",
         ".agents/graphics/deliveries/ART-0002/hero_cloud_03.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "new_specialist_art_after_reference_gate",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "E018"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 3,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "cliff_foam_loop",
@@ -91,7 +103,23 @@
         ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_03.png",
         ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_04.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "new_specialist_art_after_reference_gate",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "E009",
+          "E011",
+          "E012",
+          "E013",
+          "E014"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "side_wall_views",
@@ -131,7 +159,25 @@
         ".agents/graphics/deliveries/ART-0004/hero_wall_run_south.png",
         ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "new_specialist_art_after_reference_gate",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "critical_visual_geometry",
+        "existing_catalog_ids_to_visually_review_first": [
+          "W001",
+          "W006",
+          "W007",
+          "W008",
+          "W009",
+          "W019",
+          "W020"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "compass_wood_door",
@@ -167,7 +213,21 @@
         ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_south.png",
         ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_west.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "new_specialist_art_after_reference_gate",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "critical_visual_geometry",
+        "existing_catalog_ids_to_visually_review_first": [
+          "A015",
+          "A016",
+          "W016"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "sphere_finial",
@@ -196,7 +256,20 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0006/hero_stone_sphere_finial.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "composition_or_new_specialist_art",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "critical_visual_geometry",
+        "existing_catalog_ids_to_visually_review_first": [
+          "ST011",
+          "A013"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "compass_blanket",
@@ -225,7 +298,20 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0007/hero_compass_blanket.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "composition_or_new_specialist_art",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "critical_visual_geometry",
+        "existing_catalog_ids_to_visually_review_first": [
+          "P002",
+          "P004"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "headboard_shelf",
@@ -261,7 +347,21 @@
         ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png",
         ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_west.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "composition_or_new_specialist_art",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "P004",
+          "P014",
+          "P015"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "wall_shelf_views",
@@ -293,7 +393,17 @@
         ".agents/graphics/deliveries/ART-0009/hero_wall_shelf_south.png",
         ".agents/graphics/deliveries/ART-0009/hero_wall_shelf_west.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "composition_or_new_specialist_art",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "brass_globe",
@@ -321,7 +431,19 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0010/hero_brass_globe.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "composition_or_new_specialist_art",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "O019"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "blue_white_planter",
@@ -351,7 +473,21 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0011/hero_blue_white_planter.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "composition_or_new_specialist_art",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "O001",
+          "V017",
+          "V020"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "cliff_palms",
@@ -382,7 +518,20 @@
         ".agents/graphics/deliveries/ART-0012/hero_cliff_palm_01.png",
         ".agents/graphics/deliveries/ART-0012/hero_cliff_palm_02.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "composition_or_new_specialist_art",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "V017",
+          "V023"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 2,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "arch_light_shafts",
@@ -408,7 +557,17 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0013/hero_arch_light_shaft.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "new_specialist_art_after_reference_gate",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "broken_floor_edge",
@@ -449,7 +608,26 @@
         ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left.png",
         ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "conditional_reuse_review",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "critical_visual_geometry",
+        "existing_catalog_ids_to_visually_review_first": [
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F012",
+          "F013"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "study_blue_rug",
@@ -478,7 +656,20 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0015/hero_study_blue_rug.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "conditional_reuse_review",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "P005",
+          "P006"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "arch_ground_shadow",
@@ -509,7 +700,22 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0016/hero_arch_column_shadow.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "conditional_reuse_review",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "S011",
+          "S012",
+          "S016",
+          "S017"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "door_ground_shadow",
@@ -538,7 +744,20 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0017/hero_compass_door_shadow.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "conditional_reuse_review",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "S013",
+          "S016"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "wide_stair_shadow",
@@ -566,7 +785,19 @@
       "output_paths": [
         ".agents/graphics/deliveries/ART-0018/hero_wide_front_stair_shadow.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "conditional_reuse_review",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "normal",
+        "existing_catalog_ids_to_visually_review_first": [
+          "S015"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 1,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "study_table_views",
@@ -600,7 +831,19 @@
         ".agents/graphics/deliveries/ART-0019/hero_study_table_south.png",
         ".agents/graphics/deliveries/ART-0019/hero_study_table_west.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "conditional_reuse_review",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "critical_visual_geometry",
+        "existing_catalog_ids_to_visually_review_first": [
+          "P009"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "study_bookshelf_views",
@@ -634,7 +877,19 @@
         ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_south.png",
         ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_west.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "conditional_reuse_review",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "critical_visual_geometry",
+        "existing_catalog_ids_to_visually_review_first": [
+          "P014"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     },
     {
       "key": "study_chest_views",
@@ -668,11 +923,80 @@
         ".agents/graphics/deliveries/ART-0021/hero_study_chest_south.png",
         ".agents/graphics/deliveries/ART-0021/hero_study_chest_west.png"
       ],
-      "state": "blocked_reference"
+      "state": "blocked_reference",
+      "triage_2026_10_26": {
+        "classification": "conditional_reuse_review",
+        "reference_gate": "blocked_committed_reference_sha256_and_native_dimensions",
+        "priority": "critical_visual_geometry",
+        "existing_catalog_ids_to_visually_review_first": [
+          "P017"
+        ],
+        "owner_decision": "pending_visual_comparison_to_existing_art_and_scale",
+        "specialist_output_count": 4,
+        "codex_or_claude_ready_scope": "Audit catalog metadata, verify reference hash locally, prepare renderer/QA, integrate independently approved delivery ONLY",
+        "production_art_created": false
+      }
     }
   ],
   "production_art_created": false,
   "visual_approval": false,
   "owner_handoff_issue": "https://github.com/shero92/skl-SF/issues/20",
-  "request_record_pr": "https://github.com/shero92/skl-SF/pull/19"
+  "request_record_pr": "https://github.com/shero92/skl-SF/pull/19",
+  "reference_evidence_2026_10_26": {
+    "source": "Chat-uploaded scene reference inspected for source provenance; not a claim about bytes or pixel equality of the separately committed Git image",
+    "observed_scene": {
+      "size_pixels": [
+        1448,
+        1086
+      ],
+      "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+      "git_blob_sha1_of_chat_file": "e359b0783b4e818533eef163643fe93bf840552a",
+      "file_bytes": 3350789
+    },
+    "observed_style_sheet": {
+      "size_pixels": [
+        1312,
+        1199
+      ],
+      "sha256": "9e8201055c26ac468d3bfd4052dc664925dd3bf5b25a9741f6f786fc79734763",
+      "git_blob_sha1_of_chat_file": "2220e4035d6ae8d02f44ed3289cbde453c644f98",
+      "file_bytes": 1678424,
+      "description": "Four individual environment motifs on transparent canvas; style guidance, not a substitute for production sprites"
+    },
+    "committed_reference": {
+      "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+      "git_blob_sha1": "8d9a4c951b169458ceb85f9ad61107b99d59a909",
+      "git_blob_bytes": 4028643,
+      "image_sha256": "unverified",
+      "native_dimensions": "unverified",
+      "byte_identical_to_chat_upload": false,
+      "pixel_equivalent_to_chat_upload": "not_tested"
+    },
+    "gate": "Do not change ART statuses from blocked_reference until actual committed file is locally hashed/measured, owner identifies authoritative reference and confirms native scale; differences in file SHA1/size alone do not prove pixel differences.",
+    "local_preflight": [
+      "python -c \"from pathlib import Path; from PIL import Image; import hashlib; p=Path('.agents/planner/goals/GOAL-0001/references/hero_room_reference.png'); b=p.read_bytes(); print('sha256=',hashlib.sha256(b).hexdigest()); print('size=',Image.open(p).size)\"",
+      "Compare the printed SHA-256/dimensions against the chat-uploaded source above; if SHA differs visually check pixel equality by an authorized reviewer, then record the committed image SHA-256; do not alter the authentic image silently."
+    ]
+  },
+  "audit_2026_10_26": {
+    "scope": "All 20 requests ART-0002 through ART-0021 plus reused ART-0001 tracked by issue #14",
+    "method": "Verified manifest file names, catalog IDs/sizes, issue #20, and user-attached sources; no PNG outputs generated or integrated",
+    "distinct_art_request_count": 21,
+    "new_asset_output_count": 50,
+    "existing_art_request": "ART-0001",
+    "catalog_count_observed": 229,
+    "unapproved_catalog_count_observed": 229,
+    "production_ready_count": 0,
+    "reuse_review_first": [
+      "ART-0014",
+      "ART-0015",
+      "ART-0016",
+      "ART-0017",
+      "ART-0018",
+      "ART-0019",
+      "ART-0020",
+      "ART-0021"
+    ],
+    "note": "Catalog entries are candidates for reuse, not visual approvals; every ART request remains blocked_reference until true source identity and owner scale decisions. Codex/Claude are implementation agents, not art producers."
+  }
 }
