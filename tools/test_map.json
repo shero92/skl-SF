@@ -152,8 +152,8 @@
     {
       "id": "test_index",
       "kind": "python",
-      "covers": "tools/tests/INDEX.md matches tools/test_map.json.",
-      "command": ["{python}", "tools/run_tests.py", "--check-index"],
+      "covers": "tools/test_map.json renders a valid index (INDEX.md itself is regenerated on main; strict check in CI on main).",
+      "command": ["{python}", "tools/run_tests.py", "--check-index", "--sources-only"],
       "paths": ["tools/run_tests.py", "tools/test_map.json", "tools/tests/INDEX.md"]
     },
     {

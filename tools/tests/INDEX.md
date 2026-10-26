@@ -15,7 +15,6 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 | `local_planner` | python | Local-only planning proposals and setup defaults. | `python -m unittest discover -s tools/tests -p test_local_planner.py` |
 | `parallel_safety` | python | Task touch isolation, anti-art boundaries, no-code-run default, rollback guard, goal costs. | `python -m unittest discover -s tools/tests -p test_parallel_safety.py` |
 | `runner_main_clean` | python | Runner leaves main clean: regenerated files committed after merge, stray changes blocked, scheduled worker log. | `python -m unittest discover -s tools/tests -p test_runner_main_clean.py` |
-| `runner_parallel` | python | Parallel runner safety: per-task state files, usage limits release tasks to todo with per-agent cooldown. | `python -m unittest discover -s tools/tests -p test_runner_parallel.py` |
 | `project_indexes` | python | Deterministic FILES.md inventory generation. | `python -m unittest discover -s tools/tests -p test_project_indexes.py` |
 | `map_factory` | python | Baseline map versioning and factory operations. | `python -m unittest discover -s tools/tests -p test_map_factory.py` |
 | `map_cardinal` | python | Four directions, sprite selection and mounted offsets. | `python -m unittest discover -s tools/tests -p test_map_cardinal.py` |
@@ -43,7 +42,6 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 - `local_planner`: `tools/tests/test_local_planner.py`, `tools/local_planner.py`, `tools/goal_task_factory.py`, `tools/run_local_planner.ps1`, `tools/setup_local_planner.ps1`, `.agents/planner/**`
 - `parallel_safety`: `tools/tests/test_parallel_safety.py`, `tools/agent_runner.py`, `tools/runner_safety.py`, `tools/agent_workflow.py`, `tools/goal_costs.py`, `tools/goal_qa.py`, `tools/run_local_agent.ps1`, `.agents/planner/config.json`
 - `runner_main_clean`: `tools/tests/test_runner_main_clean.py`, `tools/agent_runner.py`, `tools/run_local_agent.ps1`
-- `runner_parallel`: `tools/tests/test_runner_parallel.py`, `tools/tests/test_runner_main_clean.py`, `tools/agent_runner.py`
 - `project_indexes`: `tools/tests/test_project_indexes.py`, `tools/generate_project_indexes.py`
 - `map_factory`: `tools/tests/test_map_factory.py`, `tools/map_factory_cli.py`, `map_factory/rooms/**`, `map_factory/metadata/**`, `map_factory/maps/**`, `map_factory/intake/**`
 - `map_cardinal`: `tools/tests/test_map_cardinal.py`, `tools/tests/test_map_factory.py`, `tools/map_factory_cli.py`, `tools/map_factory_orientation.py`, `map_factory/rooms/**`, `map_factory/metadata/**`
