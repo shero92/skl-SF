@@ -52,6 +52,13 @@
       "paths": ["tools/tests/test_runner_main_clean.py", "tools/agent_runner.py", "tools/run_local_agent.ps1"]
     },
     {
+      "id": "runner_parallel",
+      "kind": "python",
+      "covers": "Parallel runner safety: per-task state files, usage limits release tasks to todo with per-agent cooldown.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_runner_parallel.py"],
+      "paths": ["tools/tests/test_runner_parallel.py", "tools/tests/test_runner_main_clean.py", "tools/agent_runner.py"]
+    },
+    {
       "id": "project_indexes",
       "kind": "python",
       "covers": "Deterministic FILES.md inventory generation.",
