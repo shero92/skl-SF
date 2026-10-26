@@ -11,6 +11,12 @@ class FourDirections(unittest.TestCase):
         self.temp=tempfile.TemporaryDirectory()
         self.root=Path(self.temp.name)
         fixture(self.root)
+        if self._testMethodName=="test_rotating_flat_base_turns_mounted_offset":
+            # Mark assets flat before the v1 snapshot so layer_stack matches.
+            records=json.loads((self.root/mf.CATALOG).read_text())
+            for r in records["assets"]:
+                if r["id"] in ("W001","P001"):r["tags"]=["rug"]
+            (self.root/mf.CATALOG).write_text(json.dumps(records))
         self.room=mf.bootstrap(self.root,"demo_01",Path("map_factory/rooms/hero_room.json"))
         self.wall=self.room["back_objects"][0]["instance_id"]
         self.bed=self.room["objects"][0]["instance_id"]
@@ -31,7 +37,17 @@ class FourDirections(unittest.TestCase):
         self.assertEqual(rotate_offset([15,8],1),[-8.0,15.0])
         self.assertEqual(rotate_offset([15,8],2),[-15.0,-8.0])
         self.assertEqual(rotate_offset([15,8],3),[8.0,-15.0])
-    def test_rotating_wall_turns_mounted_lantern_offset(self):
+    def test_upright_rotate_rejected(self):
+        for ident in (self.wall,self.bed):
+            with self.subTest(block=ident):
+                patch=self._patch([{"op":"update_block","instance_id":ident,
+                    "set":{"facing":"east","orientation_mode":"rotate"}}])
+                with self.assertRaisesRegex(ValueError,"cannot use rotate mode"):
+                    mf.apply(self.root,patch)
+        implicit=self._patch([{"op":"update_block","instance_id":self.bed,"set":{"facing":"south"}}])
+        with self.assertRaisesRegex(ValueError,"direction_asset_ids"):
+            mf.apply(self.root,implicit)
+    def test_rotating_flat_base_turns_mounted_offset(self):
         patch=self._patch([
           {"op":"update_block","instance_id":self.wall,
            "set":{"facing":"east","orientation_mode":"rotate","x":140,"y":160}},

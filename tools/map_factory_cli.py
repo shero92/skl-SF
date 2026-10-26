@@ -27,6 +27,15 @@ CATALOG = Path("map_factory/metadata/asset_index.json")
 LAYERS = ("background_objects", "ground_overlays", "back_objects",
           "objects", "front_objects")
 BLOCKED_CATEGORIES = frozenset(("characters", "ui"))
+FLAT_MARKERS = frozenset(("rug", "rugs", "carpet", "flat"))
+
+def _is_flat_asset(record):
+    """Floors and rugs lie on the ground, so a quarter turn stays truthful."""
+    if record.get("category") in ("floors", "rugs"):
+        return True
+    tags = record.get("tags") or []
+    marks = {str(record.get("subtype", "")).lower()} | {str(t).lower() for t in tags}
+    return bool(marks & FLAT_MARKERS)
 EXCLUDED_GAMEPLAY = frozenset(("npcs", "player_spawn", "interactions"))
 SLUG = re.compile(r"^[a-z][a-z0-9_]{1,63}$")
 
@@ -350,7 +359,12 @@ def validate_room(data, catalog, expect_map_id=None):
                     raise ValueError(f"scroll must have finite numeric vx and vy: {ident}")
             # Cardinal facings may either rotate the scene node, or select
             # a complete set of four independently drawn perspective views.
-            resolve_orientation(item,catalog)
+            orientation = resolve_orientation(item,catalog)
+            # Upright art must not be spun; it needs drawn n/e/s/w views.
+            if (orientation and orientation["orientation_mode"] == "rotate"
+                    and not _is_flat_asset(catalog[str(item["id"])])):
+                raise ValueError(f"Upright block {ident} cannot use rotate mode; "
+                                 "use orientation_mode=variants with n/e/s/w direction_asset_ids")
             if "shadow" in item and not isinstance(item["shadow"],dict):
                 raise ValueError(f"Invalid shadow: {ident}")
             if "collision" in item and not isinstance(item["collision"],dict):
