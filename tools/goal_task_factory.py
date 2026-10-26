@@ -11,7 +11,7 @@ import sys
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from runner_safety import normalize_test_text  # noqa: E402
+from runner_safety import is_art, is_binary_path, normalize, normalize_test_text, touches as validate_touches  # noqa: E402
 
 ROOT =Path(os.environ.get("SKL_PLANNER_ROOT", Path(__file__).resolve().parents[1]))
 BASE = ROOT / ".agents/planner"
@@ -32,6 +32,9 @@ def save(path, data):
 def target(path, line=None):
     if not isinstance(path, str) or not path or Path(path).is_absolute():
         raise ValueError("Need repository-relative file path")
+    path = normalize(path)
+    if is_art(path) or is_binary_path(path):
+        raise ValueError("Forbidden artwork/binary target " + path)
     resolved = (ROOT / path).resolve()
     if not resolved.is_relative_to(ROOT.resolve()) or ".git" in Path(path).parts:
         raise ValueError("Unsafe path " + path)
@@ -83,6 +86,9 @@ def sources():
     for goal in goals:
         if goal.get("status") != "active":
             continue
+        state = read(BASE / "goals" / goal["id"] / "state.json", {})
+        if state.get("status") != "active" or state.get("milestones_approved") is not True:
+            continue
         for step in goal.get("steps", []):
             entry = dict(step)
             entry["goal_id"] = goal["id"]
@@ -100,6 +106,8 @@ def create(source, spec, existing, today):
     # Store a test command the runner can execute as written (tools/tests needs discover).
     spec = {**spec, "test": normalize_test_text(spec["test"])}
     path, line = target(spec["file"], spec.get("line"))
+    if "touches" in spec:
+        validate_touches(",".join(spec["touches"]))
     dependencies = deps(spec)
     missing = [d for d in dependencies if d not in existing]
     if missing:
@@ -156,7 +164,9 @@ def goal_done(goal, tasks):
     # success when the daily planner has not generated future steps yet.
     for step in goal.get("steps", []):
         marker = "**Source:** goal:" + goal["id"] + ":" + step["key"]
-        matches = [i for i, row in tasks.items() if marker in row["raw"]]
+        matches = [i for i, row in tasks.items() if marker + "\n" in row["raw"]]
+        if not matches and step.get("task_id") in tasks:
+            matches = [step["task_id"]]
         if len(matches) != 1:
             return False
         ids.extend(matches)
@@ -165,7 +175,7 @@ def goal_done(goal, tasks):
         i in tasks and tasks[i]["status"] == "done" and
         re.search(r"(?m)^- PR: https://", tasks[i]["raw"]) for i in ids)
 
-def pulse(day=None):
+def pulse(day=None, max_new=None):
     now = (datetime.fromisoformat(day).replace(tzinfo=ZONE) if day else datetime.now(ZONE))
     today = now.strftime("%Y-%m-%d")
     tasks = records()
@@ -174,9 +184,25 @@ def pulse(day=None):
     count = sum("**Created:** " + today in x["raw"] for x in tasks.values())
     by_source = {m.group(1): i for i, r in tasks.items()
                  if (m := re.search(r"(?m)^\*\*Source:\*\* (.+)$", r["raw"]))}
+    limit = min(MAX_NEW_PER_DAY, read(BASE / "config.json", {}).get("max_tasks_per_run", 4))
+    if max_new is not None:
+        limit = min(limit, max_new)
+    # Migrate only exact, unambiguous milestone annotations in older AI tasks.
+    for source, spec in sources():
+        if source.startswith("goal:") and source not in by_source:
+            matches = [tid for tid, rec in tasks.items()
+                       if "**Goal:** " + spec["goal_id"] + "\n" in rec["raw"]
+                       and re.search(r"(?m)^\*\*Problem:\*\* .*\(goal step "
+                                     + re.escape(spec["key"]) + r"\)", rec["raw"])]
+            recorded = spec.get("task_id")
+            if recorded in tasks and recorded not in matches:
+                matches.append(recorded)
+            if len(matches) == 1:
+                by_source[source] = matches[0]
+                known.add(source)
     new = []
     for source, spec in sources():
-        if source in known or count >= MAX_NEW_PER_DAY:
+        if source in known or count >= MAX_NEW_PER_DAY or len(new) >= limit:
             continue
         # Milestone order: create a step only after every "after" step has a done task.
         after = ["goal:" + spec["goal_id"] + ":" + k for k in spec.get("after", [])] if "goal_id" in spec else []
@@ -191,6 +217,15 @@ def pulse(day=None):
         count += 1
         known.add(source)
     goals = read(BASE / "goals.json", {"goals": []}).get("goals", [])
+    for goal in goals:
+        for step in goal.get("steps", []):
+            tid = by_source.get("goal:" + goal["id"] + ":" + step["key"])
+            if tid:
+                step["task_id"] = tid
+    if (BASE / "goals.json").is_file():
+        data = read(BASE / "goals.json")
+        data["goals"] = goals
+        save(BASE / "goals.json", json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     active = [g for g in goals if g.get("status") == "active"]
     done = [g for g in active if goal_done(g, tasks)]
     available = [i for i, rec in tasks.items() if rec["status"] == "todo" and all(
@@ -294,9 +329,7 @@ def apply_proposal(payload, run_key):
         touches = t.get("touches", [file])
         if not isinstance(touches, list) or not touches:
             raise ValueError("Missing touches")
-        for p in touches:
-            if not isinstance(p, str) or not p.startswith(("map_factory/", "tools/", ".agents/")) or ".." in Path(p).parts or any(x in p.lower() for x in ("/characters/", "/ui/", "/graphics/", "/parts/", "repaint_")):
-                raise ValueError("Forbidden touches path")
+        validate_touches(",".join(touches))
         fingerprint = hashlib.sha256((file + "|" + t["problem"].strip().casefold()).encode()).hexdigest()[:16]
         source = "ai:" + fingerprint
         if source not in sources_seen:
@@ -316,6 +349,12 @@ def apply_proposal(payload, run_key):
         if u["status"] == "todo" and any(current[d]["status"] != "done" for d in u["depends_on"]):
             raise ValueError("Dependencies not done")
         updates.append(u)
+    today = datetime.now(ZONE).strftime("%Y-%m-%d")
+    count = sum("**Created:** " + today in x["raw"] for x in current.values())
+    cap = min(4, read(BASE / "config.json", {}).get("max_tasks_per_run", 4))
+    # Pulse-created tasks and AI extras share the run and daily budgets.
+    used = read(BASE / "runs" / (run_key + "-pulse.json"), {}).get("created", [])
+    pending = pending[:max(0, min(MAX_NEW_PER_DAY - count, cap - len(used)))]
     created = []
     for source, t, touches in pending:
         task_id = create(source, t, current, datetime.now(ZONE).strftime("%Y-%m-%d"))

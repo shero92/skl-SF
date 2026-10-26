@@ -192,57 +192,74 @@ def run(requested=None, dry_run=False):
         invoke([sys.executable, "tools/art_requests.py", "notify"], timeout=180)
     sha = git("rev-parse", "HEAD")
     before = digest()
-    checkpoint = load(BASE/"checkpoint.json", {})
-    if checkpoint.get("digest") == before:
-        print("No meaningful changes since analysis; skipping AI.")
-        return
-    cooldowns = load(BASE/"cooldowns.json", {})
-    def cooling(a):
-        stamp = cooldowns.get(a, {}).get("retry_after")
-        return bool(stamp and datetime.fromisoformat(stamp) > now)
-    if cooling(agent):
-        agent = "codex" if agent == "claude" else "claude"
-    if cooling(agent):
-        print("Both coding agents are in quota cooldown.")
-        return
-    packet = context()
-    instruction = ("You are a READ-ONLY task analyst. Return ONLY a JSON object matching the given schema "
-                   "with keys tasks[] and updates[]. Do not request/edit files, do not inspect images, "
-                   "never fabricate line numbers or evidence. At most 4 small new tasks, no art/gameplay/"
-                   "character/UI tasks, only existing source file paths. Do not mark any task done or "
-                   "claim in-progress work. Ground tasks in the listed goals, tasks and git log. "
-                   "No useful change => empty arrays. \n\n" + packet)
-    outcome = local_ai(agent, instruction, conf) if not dry_run else {
-        "agent": agent, "exit": 0, "stdout": '{"tasks":[],"updates":[]}',
-        "error": "", "duration_seconds": 0, "usage": None, "api_equivalent_usd": None}
-    if outcome["exit"] and check_quota(outcome["error"] + outcome["stdout"]):
-        cooldowns[agent] = {"retry_after": (now+timedelta(hours=6)).isoformat(),
-                            "reason": "CLI usage/rate limit; no retry loop"}
-        agent2 = "codex" if agent == "claude" else "claude"
-        if not cooling(agent2) and not dry_run:
-            outcome = local_ai(agent2, instruction, conf)  # one fallback to other agent only
-        agent = outcome["agent"]
     run_id = now.strftime("%Y%m%d-%H%M%S") + "-" + agent
-    result = {"run_id": run_id, "agent": agent, "base_sha": sha,
-              "input_digest": before, "duration_seconds": outcome["duration_seconds"],
-              "usage": outcome["usage"], "cost_usd_estimate": outcome["api_equivalent_usd"],
-              "exit": outcome["exit"], "status": "failed"}
-    proposal = None
-    if outcome["exit"] == 0:
-        try:
-            proposal = clean_data(outcome["stdout"], agent)
-            result["status"] = "proposal_valid"
-        except (ValueError, TypeError) as exc:
-            result["reason"] = str(exc)[:300]
-    else:
-        result["reason"] = ("usage_limit" if check_quota(outcome["error"]) else "cli_error")
-        result["stderr_tail"] = stderr_tail(outcome["error"])
-    if dry_run:
-        print(json.dumps(result))
-        return
-    branch = "planning/" + now.strftime("%Y%m%d-%H%M%S") + "-" + agent
-    git("switch", "-c", branch)
+    branch = "planning/" + run_id
     try:
+        if not dry_run:
+            git("switch", "-c", branch)
+            pulse_proc = invoke([sys.executable, "tools/goal_task_factory.py", "pulse"])
+            pulse_result = json.loads(pulse_proc.stdout)
+            save(BASE/"runs"/(run_id+"-pulse.json"), pulse_result)
+            print("Milestone pulse: " + json.dumps(pulse_result))
+        else:
+            pulse_result = {"created": []}
+        checkpoint = load(BASE/"checkpoint.json", {})
+        skip_reason = "unchanged_inputs" if checkpoint.get("digest") == before else None
+        cooldowns = load(BASE/"cooldowns.json", {})
+        def cooling(a):
+            stamp = cooldowns.get(a, {}).get("retry_after")
+            return bool(stamp and datetime.fromisoformat(stamp) > now)
+        if cooling(agent):
+            agent = "codex" if agent == "claude" else "claude"
+        if cooling(agent):
+            skip_reason = "quota_cooldown"
+        packet = context()
+        instruction = ("You are a READ-ONLY task analyst. Return ONLY a JSON object matching the given schema "
+                       "with keys tasks[] and updates[]. Do not request/edit files, do not inspect images, "
+                       "never fabricate line numbers or evidence. At most 4 small new tasks, no art/gameplay/"
+                       "character/UI tasks, only existing source file paths. Do not mark any task done or "
+                       "claim in-progress work. Approved milestones already have deterministic pulse tasks; "
+                       "only propose extra tasks or updates, never duplicate a goal step. "
+                       "Text ART request records (.md/.json) and graphics QUEUE.md are allowed, never images or deliveries. "
+                       "Ground tasks in the listed goals, tasks and git log. "
+                       "No useful change => empty arrays. \n\n" + packet)
+        outcome = {
+            "agent": agent, "exit": 0, "stdout": '{"tasks":[],"updates":[]}',
+            "error": "", "duration_seconds": 0, "usage": None, "api_equivalent_usd": None}
+        if not dry_run and not skip_reason:
+            try:
+                outcome = local_ai(agent, instruction, conf)
+            except (OSError, RuntimeError, subprocess.TimeoutExpired) as exc:
+                outcome.update(exit=1, error=str(exc))
+        if outcome["exit"] and check_quota(outcome["error"] + outcome["stdout"]):
+            cooldowns[agent] = {"retry_after": (now+timedelta(hours=6)).isoformat(),
+                                "reason": "CLI usage/rate limit; no retry loop"}
+            agent2 = "codex" if agent == "claude" else "claude"
+            if not cooling(agent2) and not dry_run:
+                try:
+                    outcome = local_ai(agent2, instruction, conf)  # one fallback only
+                except (OSError, RuntimeError, subprocess.TimeoutExpired) as exc:
+                    outcome.update(exit=1, error=str(exc))
+            agent = outcome["agent"]
+        result = {"run_id": run_id, "agent": agent, "base_sha": sha,
+                  "input_digest": before, "duration_seconds": outcome["duration_seconds"],
+                  "usage": outcome["usage"], "cost_usd_estimate": outcome["api_equivalent_usd"],
+                  "exit": outcome["exit"], "status": "failed", "pulse": pulse_result}
+        proposal = None
+        if skip_reason:
+            result.update(status="ai_skipped", reason=skip_reason)
+        elif outcome["exit"] == 0:
+            try:
+                proposal = clean_data(outcome["stdout"], agent)
+                result["status"] = "proposal_valid"
+            except (ValueError, TypeError) as exc:
+                result["reason"] = str(exc)[:300]
+        else:
+            result["reason"] = ("usage_limit" if check_quota(outcome["error"]) else "cli_error")
+            result["stderr_tail"] = stderr_tail(outcome["error"])
+        if dry_run:
+            print(json.dumps(result))
+            return
         if proposal is not None:
             proposal_path = BASE/"runs"/(run_id+"-proposal.json")
             save(proposal_path, proposal)
@@ -260,8 +277,6 @@ def run(requested=None, dry_run=False):
         save(BASE/"runs"/(run_id+".json"), result)
         save(BASE/"cooldowns.json", cooldowns)
         save(BASE/"checkpoint.json", {"main_sha": sha, "digest": digest(), "last_run": run_id})
-        invoke([sys.executable, "tools/agent_workflow.py", "--write"])
-        invoke([sys.executable, "tools/generate_project_indexes.py", "--write"])
         git("add", "-A", "--", ".agents/planner", ".agents/tasks", ".agents/project/TASKS.md",
             ":(glob)**/FILES.md")
         changed = git("diff", "--cached", "--name-only").splitlines()
@@ -270,6 +285,7 @@ def run(requested=None, dry_run=False):
         if any(not (p.startswith((".agents/planner/", ".agents/tasks/")) or
                     p == ".agents/project/TASKS.md" or p.endswith("/FILES.md")) for p in changed):
             raise RuntimeError("Planning diff outside safe allowlist")
+        invoke([sys.executable, "tools/run_tests.py", "--changed"], timeout=1800)
         git("commit", "-m", "chore: local read-only planner results\n\nAgent: " + agent +
             "\nTask-ID: planning\nCost-USD: unknown")
         git("push", "-u", "origin", branch)
@@ -277,6 +293,7 @@ def run(requested=None, dry_run=False):
                      "--title", "Local plan " + run_id,
                      "--body", "Read-only local subscription planner result; validation and scope gate before merge."], timeout=120)
         print(pr.stdout)
+        print("Created tasks: " + ", ".join(pulse_result["created"] + result.get("applied", {}).get("created", [])))
         if conf.get("auto_merge_planning", False):
             # Real CI must complete successfully. Do not merge if no checks configured,
             # a check fails, or the PR includes any non-planning path.

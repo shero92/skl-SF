@@ -46,6 +46,31 @@ class PlannerSafety(unittest.TestCase):
     def test_reject_art_and_unsafe_file(self):
         self.apply({"tasks":[self.task(file="map_factory/parts/ui/example.png")],"updates":[]},False)
         self.apply({"tasks":[self.task(agent="specialist",kind="art")],"updates":[]},False)
+    def test_request_record_touches_allowed_but_binary_and_deliveries_rejected(self):
+        good=[".agents/graphics/requests/", ".agents/graphics/QUEUE.md"]
+        # goal_id absent is the manual/non-goal proposal form.
+        task=self.task(touches=good)
+        task.pop("goal_id")
+        self.apply({"tasks":[task],"updates":[]},True)
+        bad=[".agents/graphics/deliveries/a.md", ".agents/graphics/requests/a.py", "tools/a.bin"]
+        bad += ["tools/a"+ext for ext in local_planner_safety.IMAGE_EXT]
+        for path in bad:
+            with self.subTest(path=path):
+                self.apply({"tasks":[{**task,"touches":[path]}],"updates":[]},False)
+
+    def test_ai_extras_share_daily_and_run_caps_with_pulse(self):
+        task=self.task()
+        task.pop("goal_id")
+        runs=self.root/".agents/planner/runs"
+        runs.mkdir()
+        (runs/"test-pulse.json").write_text(json.dumps({"created":["TASK-0900"]}))
+        (self.root/".agents/planner/config.json").write_text(json.dumps({"max_tasks_per_run":2}))
+        proposal={"tasks":[{**task,"problem":"extra task "+str(i)} for i in range(3)],"updates":[]}
+        self.assertEqual(len(json.loads(self.apply(proposal,True).stdout)["created"]),1)
+        (runs/"test-pulse.json").unlink()
+        self.assertEqual(len(json.loads(self.apply(proposal,True).stdout)["created"]),2)
+        self.assertEqual(json.loads(self.apply(proposal,True).stdout)["created"],[])
+
     def test_limit_4_per_run(self):
         self.apply({"tasks":[self.task()]*5,"updates":[]},False)
     def test_local_cli_flags_and_no_paid_provider_required(self):
@@ -114,6 +139,49 @@ class CodexStrictSchema(unittest.TestCase):
         for secret in ("abc.def","s3cr3t","sk-proj1234567890abcd","ghp_ABCDEFGH12345"):
             self.assertNotIn(secret,tail)
         self.assertEqual(local_planner.stderr_tail(None),"")
+
+class PlannerPulseRun(unittest.TestCase):
+    def test_pulse_precedes_ai_and_commits_when_ai_skipped_or_rejected(self):
+        from unittest.mock import patch
+        from contextlib import ExitStack
+        from types import SimpleNamespace
+        for mode in ("unchanged", "cooldown", "rejected", "failure", "success"):
+            with self.subTest(mode=mode), tempfile.TemporaryDirectory() as tmp, ExitStack() as stack:
+                base=Path(tmp)
+                config={"planning_enabled":True,"schedule":[],"auto_merge_planning":False}
+                events=[]
+                def load(path, default):
+                    if path == local_planner.CONFIG: return config
+                    if path.name == "checkpoint.json": return {"digest":"same" if mode=="unchanged" else "old"}
+                    if path.name == "cooldowns.json" and mode=="cooldown":
+                        return {a:{"retry_after":"2999-01-01T00:00:00+01:00"} for a in ("claude","codex")}
+                    return default
+                def git(*args):
+                    events.append(("git",args))
+                    if args[:2] == ("branch","--show-current"): return "main"
+                    if args[:3] == ("diff","--cached","--name-only"): return ".agents/tasks/TASK-0011_new.md"
+                    return ""
+                def invoke(argv, **kwargs):
+                    events.append(("invoke",argv))
+                    if "pulse" in argv: return SimpleNamespace(stdout='{"created":["TASK-0011"]}',stderr="",returncode=0)
+                    if "apply-proposal" in argv:
+                        return SimpleNamespace(stdout='{"created":[],"updated":[]}',stderr="rejected",returncode=1 if mode=="rejected" else 0)
+                    return SimpleNamespace(stdout="https://github.com/example/pull/1",stderr="",returncode=0)
+                def ai(*args):
+                    events.append(("ai",args))
+                    self.assertTrue(any(e[0]=="invoke" and "pulse" in e[1] for e in events))
+                    return {"agent":"claude","exit":1 if mode=="failure" else 0,
+                            "stdout":'{"tasks":[],"updates":[]}',"error":"failure",
+                            "duration_seconds":1,"usage":None,"api_equivalent_usd":None}
+                for name,value in (("BASE",base),("load",load),("git",git),("invoke",invoke),
+                                   ("digest",lambda:"same"),("context",lambda:"context"),("local_ai",ai)):
+                    stack.enter_context(patch.object(local_planner,name,value))
+                local_planner.run("claude")
+                self.assertEqual(any(e[0]=="ai" for e in events), mode not in ("unchanged","cooldown"))
+                self.assertTrue(any(e[0]=="git" and e[1][0]=="commit" for e in events))
+                self.assertTrue(any(e[0]=="git" and e[1][0]=="push" for e in events))
+                logs=[p for p in (base/"runs").glob("*.json") if not p.stem.endswith(("-pulse","-proposal"))]
+                self.assertEqual(json.loads(logs[0].read_text())["pulse"]["created"],["TASK-0011"])
 
 if __name__=="__main__":
     unittest.main()

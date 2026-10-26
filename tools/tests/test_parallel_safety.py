@@ -24,6 +24,39 @@ class ParallelSafety(unittest.TestCase):
         self.assertTrue(rs.allowed_changed(["tools/example.py"],["tools/example.py"]))
         with self.assertRaises(ValueError):
             rs.allowed_changed(["tools/other.py"],["tools/example.py"])
+    def test_request_records_only_and_explicit_queue_exception(self):
+        auth=rs.touches(".agents/graphics/requests/,.agents/graphics/QUEUE.md")
+        self.assertTrue(rs.allowed_changed([
+            ".agents/graphics/requests/ART-0003.md",
+            ".agents/graphics/requests/sub/ART-0003.json",
+            ".agents/graphics/QUEUE.md"],auth))
+        bad=[".agents/graphics/deliveries/ART-0003.md",
+             ".agents/graphics/requests/ART-0003.py", ".agents/graphics/OTHER.md",
+             ".agents/graphics/requests/ART-0003.png", "tools/test.exe", "tools/data.bin"]
+        bad += ["tools/image"+ext for ext in rs.IMAGE_EXT]
+        for path in bad:
+            with self.subTest(path=path):
+                with self.assertRaises(ValueError):
+                    rs.allowed_changed([path],[".agents/graphics/", "tools/"])
+                with self.assertRaises(ValueError):
+                    rs.touches(path)
+        with self.assertRaises(ValueError):
+            rs.allowed_changed([".agents/graphics/QUEUE.md"],[".agents/graphics/requests/"])
+
+    def test_goal_smoke_descriptions_normalize_to_safe_router_commands(self):
+        examples={
+            "Godot smoke tools/map_factory_godot_smoke.gd":
+                "py -3 tools/run_tests.py --only godot_map_smoke",
+            "py -3 -m unittest tools.tests.test_map_layers and Godot smoke tools/map_factory_godot_smoke.gd":
+                "py -3 tools/run_tests.py --only map_layers --only godot_map_smoke"}
+        for original,expected in examples.items():
+            self.assertEqual(rs.normalize_test_text(original),expected)
+            self.assertEqual(rs.normalize_test(rs.safe_test(expected.split())),expected.split())
+        for bad in ("py -3 tools/run_tests.py --all", "py -3 tools/run_tests.py --only arbitrary",
+                    "py -3 tools/run_tests.py --only map_layers && echo unsafe"):
+            with self.assertRaises(ValueError):
+                rs.safe_test(bad.split())
+
     def test_strict_touches_and_one_active_task_per_agent(self):
         other={"id":"TASK-1233","status":"in_progress","agent":"codex",
                "touches":"map_factory/scripts"}

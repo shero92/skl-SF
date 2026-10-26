@@ -33,6 +33,9 @@ class GoalFactoryTests(unittest.TestCase):
         data = {"goals": [{"id": "GOAL-0099", "title": "Safe objective",
                 "status": status, "task_ids": [], "final_verified": False,
                 "steps": steps or []}]}
+        state = self.base / "goals/GOAL-0099/state.json"
+        state.parent.mkdir(parents=True, exist_ok=True)
+        state.write_text(json.dumps({"status": status, "milestones_approved": True}))
         (self.base / "goals.json").write_text(json.dumps(data), encoding="utf8")
         return data
 
@@ -145,6 +148,35 @@ class GoalFactoryTests(unittest.TestCase):
     def test_unsafe_file_refused(self):
         self.goals(steps=[{**self.step("bad"), "file": "../secret"}])
         self.run_script("pulse", "--date", "2026-10-25", success=False)
+
+    def test_pulse_approval_run_cap_and_step_receipt(self):
+        self.goals(steps=[{**self.step(str(i)), "agent": "claude",
+                          "touches": ["tools/example.py"],
+                          "test": "py -3 -m unittest tools.tests.test_map_layers"} for i in range(4)])
+        state = self.base / "goals/GOAL-0099/state.json"
+        state.write_text(json.dumps({"status": "active", "milestones_approved": False}))
+        self.assertEqual(json.loads(self.run_script("pulse").stdout)["created"], [])
+        state.write_text(json.dumps({"status": "active", "milestones_approved": True}))
+        (self.base / "config.json").write_text(json.dumps({"max_tasks_per_run": 1}))
+        out = json.loads(self.run_script("pulse").stdout)
+        self.assertEqual(out["created"], ["TASK-0001"])
+        stored = json.loads((self.base / "goals.json").read_text())["goals"][0]["steps"]
+        self.assertEqual(stored[0]["task_id"], "TASK-0001")
+        text = self.task_status("TASK-0001")[0].read_text()
+        self.assertIn("agent: claude", text)
+        self.assertIn("touches: tools/example.py", text)
+        self.assertIn("test: py -3 -m unittest discover -s tools/tests -p test_map_layers.py", text)
+
+    def test_legacy_ai_step_annotation_deduplicates_and_unlocks_after(self):
+        self.goals(steps=[self.step("a"), {**self.step("b"), "after": ["a"]}])
+        p = self.root / ".agents/tasks/TASK-0001_old.md"
+        p.write_text("---\nid: TASK-0001\nstatus: done\n---\n**Source:** ai:old\n"
+                     "**Goal:** GOAL-0099\n**Problem:** observed (goal step a).\n")
+        out = json.loads(self.run_script("pulse").stdout)
+        self.assertEqual(out["created"], ["TASK-0002"])
+        self.assertIn("depends_on: TASK-0001", self.task_status("TASK-0002")[0].read_text())
+        stored = json.loads((self.base / "goals.json").read_text())["goals"][0]["steps"]
+        self.assertEqual([s["task_id"] for s in stored], ["TASK-0001", "TASK-0002"])
 
 if __name__ == "__main__":
     unittest.main()
