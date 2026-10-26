@@ -102,5 +102,68 @@ class ChatGPTArtImportTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,"approval"):
                 MODULE.stage(archive,root/"staging")
 
+
+class HDPackImportGuards(unittest.TestCase):
+    def test_verified_exact_named_pngs_are_registered_without_painting(self):
+        import hashlib
+        import importlib.util
+        import zipfile
+        import unittest.mock
+        spec=importlib.util.spec_from_file_location(
+            "hd_factory_import", TOOLS/"install_hd_factory_pack.py")
+        module=importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        # Synthetic PNG headers stand in for the actual high-quality art:
+        # test validates byte identity, IDs, safe paths and no overwrites.
+        png=(bytes.fromhex("89504e470d0a1a0a")+b"\x00\x00\x00\x0dIHDR"+
+             struct.pack(">IIBBBBB",128,128,8,6,0,0,0)+b"\x00\x00\x00\x00")
+        mapping={
+            "W021":("walls","Vine Covered Compass Ruin Wall"),
+            "W022":("walls","Isometric Ivy Fantasy Wall"),
+            "A017":("architecture","Ivy Covered Compass Shrine Pillar"),
+            "A018":("architecture","Sapphire Compass Doorway"),
+            "D019":("decor","Royal Blue Compass Banner"),
+            "P023":("furniture","Cobalt Compass Treasure Chest"),
+            "P024":("furniture","Compass Rose Fantasy Bed Frame"),
+            "P025":("furniture","Royal Blue Compass Bedspread"),
+            "P026":("furniture","Nautical Compass Study Desk"),
+        }
+        assets=[]
+        for ident,(category,name) in mapping.items():
+            base=ident+"_"+name.replace(" ","_")+".png"
+            assets.append({"id":ident,"name":name,"category":category,
+             "subtype":"test","path":"sprites/"+category+"/"+base,
+             "factory_path":"map_factory/parts/"+category+"/"+base,
+             "source_file":"original.png","pixel_size":[128,128],
+             "origin":[64,128],"sha256":hashlib.sha256(png).hexdigest()})
+        raw=json.dumps({"assets":assets}).encode("utf-8")
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            catalog=root/module.CATALOG
+            catalog.parent.mkdir(parents=True)
+            catalog.write_text(json.dumps({"assets":[{"id":"F001","category":"floors"}],"asset_count":1}))
+            archive=root/"hd.zip"
+            with zipfile.ZipFile(archive,"w") as z:
+                z.writestr("manifest.json",raw)
+                for a in assets:
+                    z.writestr(a["path"],png)
+            with unittest.mock.patch.object(module,"MANIFEST_SHA",hashlib.sha256(raw).hexdigest()):
+                self.assertEqual(len(module.verify(archive)["assets"]),9)
+                module.install(archive,root,integrate=False)
+                result=json.loads(catalog.read_text())
+                self.assertEqual(result["asset_count"],10)
+                self.assertTrue(all(a["status"]=="needs_cleanup" for a in result["assets"][1:]))
+                for a in assets:
+                    self.assertEqual((root/a["factory_path"]).read_bytes(),png)
+                with self.assertRaisesRegex(ValueError,"existing catalog IDs"):
+                    module.install(archive,root,integrate=False)
+                # Refuse a changed payload: hashes are mandatory.
+                with zipfile.ZipFile(archive,"w") as z:
+                    z.writestr("manifest.json",raw)
+                    for a in assets:
+                        z.writestr(a["path"],png+b"tampered" if a["id"]=="P024" else png)
+                with self.assertRaisesRegex(ValueError,"SHA256"):
+                    module.verify(archive)
+
 if __name__=="__main__":
     unittest.main()
