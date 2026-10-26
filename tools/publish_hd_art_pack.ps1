@@ -28,7 +28,7 @@ Run-Git switch -c $branch
 Run-Python tools/install_hd_factory_pack.py $ZipPath
 Run-Python tools/install_hd_factory_pack.py $ZipPath --install --integrate
 Run-Python tools/map_factory_cli.py validate
-Run-Python tools/run_tests.py --changed
+Run-Python tools/run_tests.py --changed --kind python
 # Run Godot if installed: validate real native resources, sprite imports and placement.
 $engine = Get-Command godot -ErrorAction SilentlyContinue
 if (-not $engine) { $engine = Get-Command godot4 -ErrorAction SilentlyContinue }
