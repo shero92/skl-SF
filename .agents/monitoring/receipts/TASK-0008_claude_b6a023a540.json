@@ -1,0 +1,24 @@
+{
+  "agent": "claude",
+  "cost_usd": 0.397005,
+  "coverage": "complete",
+  "ended_at": "2026-10-26T10:30:14.831991+00:00",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "schema": 1,
+  "session_count": 1,
+  "source": [
+    "claude_api_equivalent_estimate"
+  ],
+  "started_at": "2026-10-26T10:28:12.222392+00:00",
+  "task_id": "TASK-0008",
+  "tokens": {
+    "cache_creation_1h_input_tokens": 25581,
+    "cache_creation_input_tokens": 25581,
+    "cached_input_tokens": 201264,
+    "input_tokens": 226871,
+    "output_tokens": 7600,
+    "reasoning_output_tokens": 0
+  }
+}
