@@ -18,6 +18,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`art_requests.py`](art_requests.py)
 - [`audit_assets.py`](audit_assets.py)
 - [`audit_room_assets.py`](audit_room_assets.py)
+- [`blender_export_four_views.py`](blender_export_four_views.py)
 - [`build_asset_previews.py`](build_asset_previews.py)
 - [`capture_map_previews.gd`](capture_map_previews.gd)
 - [`capture_map_previews.gd.uid`](capture_map_previews.gd.uid)

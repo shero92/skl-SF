@@ -5,6 +5,7 @@
 | Create, clone, patch, validate maps | `map_factory_cli.py` |
 | Build five passes and derived layers | `map_factory_layers.py` |
 | Resolve 4 directions, pivots and mounted offsets | `map_factory_orientation.py` |
+| Render four reviewed Blender sprite candidates from a 3D collection | `blender_export_four_views.py` |
 | Ingest source image and prepare draft | `prepare_map_reference.py` |
 | Validate and process pending map edits | `process_map_intake.py`, `import_map_assets.py` |
 | Verify image presence and map quality | `verify_map_assets.py`, `audit_room_assets.py`, `quality_guard.py` |

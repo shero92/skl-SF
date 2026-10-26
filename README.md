@@ -10,6 +10,12 @@ A data-driven 2D Pixel Art RPG with a reusable map factory, movement, companion,
 - Quality review: [asset gallery](docs/ASSET_GALLERY.md) and [audit](docs/ASSET_AUDIT.md).
 - **Never call these all final high-quality assets merely because the files exist.** Some are procedural art or extracted concept-sheet sprites; validate alpha, anchor, seams, lighting, continuity and visual quality before approving.
 
+## PC / QHD display
+- Target output window: **2560x1440** (16:9, 1440p). Godot keeps a **1536x864 logical CanvasItem viewport** and scales its 2D rendering to the real window size, so the existing 64-pixel map grid, saved map coordinates and UI layout are not rewritten.
+- The saved room/map canvas dimensions (e.g. 1536x1024) remain unchanged: they describe world content, **not** the PC output resolution. The gameplay camera may crop the top/bottom of that taller world; the separate map-only preview fits the complete room.
+- Rendering at 1440p does **not** make low-detail PNG source art high-quality. New assets need individually approved native detail and correct Godot-scale review.
+- Four-view Blender candidate exporter, art sizes and manual catalog acceptance: [art pipeline](docs/ART_PIPELINE.md).
+
 ## Run game
 1. Open `project.godot` in Godot 4.4.1 or compatible 4.x.
 2. Press **F5**.

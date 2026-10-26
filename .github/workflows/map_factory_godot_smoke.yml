@@ -2,6 +2,7 @@ name: Test all registered maps in Godot
 on:
   push:
     paths:
+      - "project.godot"
       - "map_factory/maps/**"
       - "map_factory/presets/**"
       - "map_factory/scripts/**"
