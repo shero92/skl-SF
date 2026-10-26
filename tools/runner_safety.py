@@ -1,6 +1,7 @@
 """Safety guards shared by local execution and its tests. No side effects."""
 from pathlib import Path
 import re
+import subprocess
 
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg", ".bmp",
              ".tif", ".tiff", ".ico", ".aseprite", ".ase", ".psd", ".exr", ".avif"}
@@ -11,6 +12,38 @@ GENERATED_NAMES = {"INDEX.md", "FILES.md", "TASKS.md", "ACTIVE.md",
                    "QUEUE.md", "summary.md", "summary.json"}
 FORBIDDEN_PARTS = {"characters", "ui", "portraits", "gameplay"}
 ALLOWED_PREFIXES = ("map_factory/", "tools/", "scenes/map_factory_preview.")
+
+MAIN_GENERATED_PATHS = {
+    ".agents/project/TASKS.md", ".agents/project/ACTIVE.md", ".agents/graphics/QUEUE.md",
+    ".agents/monitoring/summary.json", ".agents/monitoring/summary.md",
+    ".agents/monitoring/goal_summary.json", ".agents/monitoring/goal_summary.md",
+    "tools/tests/INDEX.md"}
+
+
+def main_generated(path):
+    return path in MAIN_GENERATED_PATHS or path == "FILES.md" or path.endswith("/FILES.md")
+
+
+def check_pr_generated(root, base="origin/main"):
+    """Read-only PR gate: inherited stale outputs are expected; editing them is forbidden.
+
+    Compare both the full PR and local edits, without following rename detection or
+    reading any image contents. A missing base is an error, never a skipped check.
+    """
+    if not isinstance(base, str) or not base or base.startswith("-"):
+        raise ValueError("Need an explicit safe base revision")
+    changed = set()
+    commands = [
+        ["git", "diff", "--no-renames", "--name-only", "-z", base + "...HEAD", "--"],
+        ["git", "diff", "--no-renames", "--name-only", "-z", "HEAD", "--"],
+        ["git", "ls-files", "--others", "--exclude-standard", "-z"]]
+    for command in commands:
+        proc = subprocess.run(command, cwd=root, capture_output=True, check=True)
+        changed.update(p.decode("utf-8") for p in proc.stdout.split(b"\0") if p)
+    forbidden = sorted(p for p in changed if main_generated(p))
+    if forbidden:
+        raise ValueError("Generated outputs must be refreshed on main after merge: " + ", ".join(forbidden))
+
 
 def normalize(path):
     if not isinstance(path, str) or not path:

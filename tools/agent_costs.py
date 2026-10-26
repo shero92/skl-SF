@@ -11,6 +11,8 @@ import subprocess
 import sys
 import uuid
 
+from runner_safety import check_pr_generated
+
 ROOT = Path(os.environ.get("SKL_COST_ROOT", Path(__file__).resolve().parents[1]))
 BASE = ROOT / ".agents" / "monitoring"
 LOCAL = BASE / ".local"
@@ -165,7 +167,9 @@ def old_session(start, first):
     except (TypeError, ValueError):
         return False
 
-def report(check=False):
+def report(check=False, sources_only=False, base="origin/main"):
+    if sources_only:
+        check_pr_generated(ROOT, base)
     rows = {}
     for file in sorted((BASE / "receipts").glob("TASK-*.json")):
         r = get(file)
@@ -208,6 +212,9 @@ def report(check=False):
             r["unknown_token_receipts"], r["receipts"]))
     lines += ["", "Missing costs are unknown, not zero. Estimates are not subscription invoices.", ""]
     outputs = [(BASE/"summary.json", json_text), (BASE/"summary.md", "\n".join(lines))]
+    if sources_only:
+        print("PR receipts validated; generated summaries deferred to main.")
+        return
     for path, content in outputs:
         if check:
             if not path.exists() or path.read_text(encoding="utf8") != content:
@@ -319,7 +326,7 @@ def run(args):
             print(active["task_id"] + " | session USD " + str(item.get("cost_usd", "unknown")))
         return
     if args.command == "report":
-        report(args.check)
+        report(args.check, args.sources_only, args.base)
         return
     if args.command == "abort":
         # Stale tracking: discard without a receipt so no cost is attributed.
@@ -440,7 +447,10 @@ def main():
     f = sub.add_parser("finish")
     f.add_argument("--manual-cost-usd", type=float)
     r = sub.add_parser("report")
-    r.add_argument("--check", action="store_true")
+    modes = r.add_mutually_exclusive_group()
+    modes.add_argument("--check", action="store_true")
+    modes.add_argument("--sources-only", action="store_true", help="validate PR receipts without writing main-only summaries")
+    r.add_argument("--base", default="origin/main")
     sub.add_parser("diagnose", help="Show privacy-safe local hook/session health")
     sub.add_parser("abort", help="Discard stale tracking without writing a receipt")
     done = sub.add_parser("complete", help="Commit tracked tokens with staged task code")
@@ -453,7 +463,7 @@ def main():
     try:
         run(p.parse_args())
         return 0
-    except (OSError, ValueError, TypeError, KeyError) as exc:
+    except (OSError, ValueError, TypeError, KeyError, subprocess.CalledProcessError) as exc:
         print("agent costs:", exc, file=sys.stderr)
         return 1
 

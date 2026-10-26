@@ -1,0 +1,12 @@
+{
+  "status": "open",
+  "title": "Reconcile planning PR checks with main-only generated outputs",
+  "problem": "User asked to start the next tasks. PR 17 is blocked because generated task boards and file indexes are stale by design on task branches.",
+  "file": "tools/local_planner.py",
+  "line": null,
+  "done_when": "PR checks validate records without writing generated files; main checks remain strict; successful planner merges regenerate only on main under lock.",
+  "test": "py -3 -m unittest discover -s tools/tests -p test_local_planner.py",
+  "priority": "critical",
+  "kind": "bug",
+  "agent": "codex"
+}

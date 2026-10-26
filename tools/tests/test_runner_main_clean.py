@@ -72,6 +72,22 @@ class MainStaysClean(unittest.TestCase):
         self.assertIn("TASK-0001_codex_1.json", files)
         self.assertIn("Agent: codex", sh(self.root, "log", "-1", "--format=%B"))
 
+    def test_verified_generated_commit_stops_before_commit_when_tests_fail(self):
+        from unittest.mock import patch
+        original=ar.execute
+        before=sh(self.root,"rev-parse","HEAD")
+        def execute(argv,*args,**kwargs):
+            if "tools/run_tests.py" in argv:
+                self.assertEqual(argv[-1],"--changed")
+                raise RuntimeError("generated-output tests failed")
+            return original(argv,*args,**kwargs)
+        self.write(".agents/project/TASKS.md","stale\n")
+        with patch.object(ar,"execute",execute):
+            with self.assertRaisesRegex(RuntimeError,"tests failed"):
+                ar.main_commit("chore: refresh","codex","planning",verify=True)
+        self.assertEqual(sh(self.root,"rev-parse","HEAD"),before)
+        self.assertEqual(self.remote_head(),before.strip())
+
     def test_main_commit_refuses_non_generated_changes(self):
         self.write("tools/x.py", "x = 2\n")
         before = sh(self.root, "rev-parse", "HEAD")

@@ -11,7 +11,10 @@ import hashlib
 import json
 import re
 import sys
+import subprocess
 from pathlib import Path
+
+from runner_safety import check_pr_generated
 
 ROOT = Path(__file__).resolve().parents[1]
 TASK_DIR = Path(".agents/tasks")
@@ -204,12 +207,19 @@ def main() -> int:
     modes = parser.add_mutually_exclusive_group(required=True)
     modes.add_argument("--write", action="store_true")
     modes.add_argument("--check", action="store_true")
+    modes.add_argument("--sources-only", action="store_true", help="validate PR records without writing main-only outputs")
+    parser.add_argument("--base", default="origin/main")
     args = parser.parse_args()
     try:
+        if args.sources_only:
+            check_pr_generated(ROOT, args.base)
         generated_files = generated(ROOT)
-    except (ValueError, KeyError, OSError, json.JSONDecodeError) as exc:
+    except (ValueError, KeyError, OSError, json.JSONDecodeError, subprocess.CalledProcessError) as exc:
         print(f"Invalid agent tracking data: {exc}", file=sys.stderr)
         return 1
+    if args.sources_only:
+        print("PR tracking sources validated; generated outputs deferred to main.")
+        return 0
     stale = [p for p, value in generated_files.items()
              if not (ROOT / p).exists() or (ROOT / p).read_text(encoding="utf-8") != value]
     if args.write:

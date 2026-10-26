@@ -21,7 +21,7 @@ import time
 import uuid
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from runner_safety import allowed_changed, is_art, is_generated, normalize, normalize_test, safe_test, supervised_problems, touches, verify_claim
+from runner_safety import MAIN_GENERATED_PATHS, main_generated, allowed_changed, is_art, is_generated, normalize, normalize_test, safe_test, supervised_problems, touches, verify_claim
 
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=ROOT/".agents/planner/config.json"
@@ -78,9 +78,7 @@ def amend_status(tid,state,*,reason="",branch=None):
         raw += "\n## Runner evidence\n- "+reason[:400].replace("\n"," ")+"\n"
     p.write_text(raw,encoding="utf-8",newline="\n")
 
-MAIN_GENERATED={".agents/project/TASKS.md",".agents/project/ACTIVE.md",".agents/graphics/QUEUE.md",
-    ".agents/monitoring/summary.json",".agents/monitoring/summary.md",
-    ".agents/monitoring/goal_summary.json",".agents/monitoring/goal_summary.md","tools/tests/INDEX.md"}
+MAIN_GENERATED = MAIN_GENERATED_PATHS
 
 def index_main():
     execute([sys.executable,"tools/agent_workflow.py","--write"])
@@ -91,14 +89,14 @@ def index_main():
 
 def regenerated(path):
     """Outputs index_main() rebuilds from the tree; safe for the runner to commit on main."""
-    return path in MAIN_GENERATED or path=="FILES.md" or path.endswith("/FILES.md")
+    return main_generated(path)
 
 def dirty_paths(cwd=None):
     # Parse raw porcelain: git() strips, which would eat the first entry's status column.
     out=execute(["git","status","--porcelain=v1","-z","--untracked-files=all","--no-renames"],cwd).stdout
     return sorted({entry[3:] for entry in out.split("\0") if len(entry)>3})
 
-def main_commit(subject,agent,tid,extra=None):
+def main_commit(subject,agent,tid,extra=None,*,verify=False):
     """Regenerate every generated file and commit it with the task records, leaving main clean."""
     index_main()
     allowed=[".agents/tasks/",*(extra or [])]
@@ -107,6 +105,8 @@ def main_commit(subject,agent,tid,extra=None):
     if stray:
         raise RuntimeError("Main has non-generated changes; refusing to commit: "+", ".join(stray[:10]))
     if changed:
+        if verify:
+            execute([sys.executable,"tools/run_tests.py","--changed"],timeout=1800)
         git("add","-A","--",*changed)
         git("commit","-m",subject,"-m","Task-ID: "+tid+"\nAgent: "+agent+"\nCost-USD: unknown")
         git("push","origin","main")
