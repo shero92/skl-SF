@@ -29,7 +29,7 @@ class ArtDeliveryGuards(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/".agents/planner/goals/GOAL-0001/references/hero_room_reference.png"
             path.parent.mkdir(parents=True)
-            path.write_bytes(b"\\x89PNG\\r\\n\\x1a\\n"+b"\\x00\\x00\\x00\\x0dIHDR"+struct.pack(">II",1448,1086))
+            path.write_bytes(b"\x89PNG\r\n\x1a\n"+b"\x00\x00\x00\x0dIHDR"+struct.pack(">II",1448,1086))
             report=audit_goal_reference(Path(tmp))
             self.assertEqual(report["committed_pixel_size"],[1448,1086])
             self.assertEqual(len(report["committed_sha256"]),64)
