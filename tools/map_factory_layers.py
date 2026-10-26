@@ -4,6 +4,7 @@ Shadows are the fifth DATA pass; they draw between ground and walls at z20.
 from __future__ import annotations
 from copy import deepcopy
 from map_factory_orientation import resolve_orientation, rotate_offset
+from map_factory_placement import resolved_cells
 
 PASS_NAMES=("background","ground","walls","decorations","shadows")
 SOURCE_LAYERS=("background_objects","ground_overlays","back_objects","objects","front_objects")
@@ -54,7 +55,13 @@ def create_layer_stack(snapshot,catalog):
                 "status":record.get("status","planned"),
                 "collision":deepcopy(block.get("collision",resolved.get("collision",{}))),
                 "shadow":deepcopy(block.get("shadow",resolved.get("shadow",{"type":"none"}))),
-                "attachment":None,**({"orientation":orientation} if orientation else {})}
+                "attachment":None,**({"orientation":orientation} if orientation else {}),
+                **({"grid_placement":deepcopy(block["grid_placement"]),
+                    "placement_contract":deepcopy(record["placement_contract"]),
+                    "occupied_floor_cells":[list(x) for x in resolved_cells(
+                       record["placement_contract"],*block["grid_placement"]["cell"],
+                       block["grid_placement"].get("facing","north"))]}
+                   if "grid_placement" in block else {})}
             placed[ident]=entry;raw.append((block,entry))
     resolved={}
     def resolve(ident,trail=()):
