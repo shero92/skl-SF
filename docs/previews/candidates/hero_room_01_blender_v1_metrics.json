@@ -1,0 +1,37 @@
+{
+  "metric": "mean absolute RGB difference to the reference (0-255, lower is closer)",
+  "whole": {
+    "base": 74.68,
+    "candidate": 74.71
+  },
+  "regions": {
+    "ground": {
+      "box": [
+        402,
+        790,
+        1192,
+        950
+      ],
+      "base": 78.28,
+      "candidate": 78.27
+    },
+    "walls": {
+      "box": [
+        181,
+        135,
+        1416,
+        869
+      ],
+      "base": 74.14,
+      "candidate": 74.22
+    }
+  },
+  "reference_resized": false,
+  "candidate_id": "hero_room_01_blender_v1",
+  "layout": "map_factory/candidates/hero_room_01_blender_v1.json",
+  "base": "res://map_factory/maps/hero_room_01/versions/v0011.json",
+  "placements": 27,
+  "godot": "Godot_v4.7.2-stable_win64_console.exe",
+  "status": "candidate_unapproved",
+  "approval": null
+}

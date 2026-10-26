@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Assemble a Hero Room candidate in Godot from the Blender ART-0004 and ART-0014 pieces",
+  "problem": "Owner request 2026-10-26: assemble the next Hero Room with the Blender wall runs and broken floor edges, capture the final Godot image and compare it with the reference. Unapproved art may not enter map_factory/parts or a published map version.",
+  "file": "tools/capture_candidate_room.gd",
+  "line": null,
+  "done_when": "A candidate layout over v0011 is rendered by real Godot into base, candidate and side-by-side comparison PNGs with region metrics against the reference; no published map version or catalog change",
+  "test": "py -3 tools/run_tests.py --only candidate_room",
+  "priority": "critical",
+  "kind": "feature",
+  "agent": "claude",
+  "task_id": "TASK-0047"
+}
