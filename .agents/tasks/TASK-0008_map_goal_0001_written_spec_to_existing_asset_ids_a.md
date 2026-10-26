@@ -1,6 +1,6 @@
 ---
 id: TASK-0008
-status: in_progress
+status: blocked
 owner: claude
 branch: work/task-0008-4149caeb
 agent: claude
@@ -48,3 +48,6 @@ Outcome: map_factory/maps/hero_room_01/reference_gaps.json maps every spec item 
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T10:05:16.620715+00:00
+
+## Runner evidence
+- Runner failed; inspect local runner-state.json
