@@ -1,13 +1,13 @@
 ---
 id: TASK-0009
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: codex
+branch: work/task-0009-55af9186
 agent: codex
 touches: tools/map_factory_cli.py,tools/tests/test_map_layers.py
 test: py -3 -m unittest tools.tests.test_map_layers
 done_when: CLI accepts animation {frames, fps} and scroll {vx, vy} on layer 0 entries and rejects frame IDs missing from the asset catalog, with unit tests covering accept and reject cases
-started_at: unknown
+started_at: 2026-10-26T00:15:04.283738+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -46,3 +46,6 @@ Outcome: CLI accepts animation {frames, fps} and scroll {vx, vy} on layer 0 entr
 ## Allowed touches
 - tools/map_factory_cli.py
 - tools/tests/test_map_layers.py
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T00:15:04.275661+00:00
