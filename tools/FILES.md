@@ -36,6 +36,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`goal_task_factory.py`](goal_task_factory.py)
 - [`import_asset_pack.py`](import_asset_pack.py)
 - [`import_chatgpt_art_pack.py`](import_chatgpt_art_pack.py)
+- [`install_hd_factory_pack.py`](install_hd_factory_pack.py)
 - [`import_map_assets.py`](import_map_assets.py)
 - [`local_planner.py`](local_planner.py)
 - [`map_factory_cli.py`](map_factory_cli.py)
