@@ -53,6 +53,25 @@ class Specs(unittest.TestCase):
         self.assertGreater(proj["sun"]["azimuth_deg"], 90, "light comes from the upper left")
 
 
+class ExpectedSimilar(unittest.TestCase):
+    def test_only_owner_accepted_pairs_leave_the_warnings(self):
+        spec = {"expected_similar": [{"pair": ["wall_east", "wall_west"], "reason": "orthographic side walls"}]}
+        qa = {"warnings": ["wall_east.png vs wall_west.png: nearly identical (score 1.9); fine for variants",
+                           "wall_north.png vs wall_south.png: nearly identical (score 3.3); fine for variants"]}
+        warnings, accepted = bf.split_expected(qa, spec)
+        self.assertEqual(warnings, [qa["warnings"][1]])
+        self.assertEqual(accepted, [{"warning": qa["warnings"][0], "reason": "orthographic side walls"}])
+
+    def test_expected_similar_needs_known_outputs_and_reason(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "spec.json"
+            base = {"builder": "wall_run", "outputs": [{"name": "a"}, {"name": "b"}]}
+            for bad in ([{"pair": ["a", "zz"], "reason": "x"}], [{"pair": ["a", "b"]}], [{"pair": ["a"], "reason": "x"}]):
+                path.write_text(json.dumps({**base, "expected_similar": bad}))
+                with self.subTest(bad=bad), self.assertRaises(ValueError):
+                    bf.load_spec(path)
+
+
 class TechnicalQA(unittest.TestCase):
     def test_clean_pieces_pass_and_copies_are_caught(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -1,0 +1,275 @@
+{
+  "request_id": "ART-0004",
+  "task_id": "TASK-0015",
+  "status": "rendered_unreviewed",
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+      "sha256": "c45ea1a67d236f76e27dbe2c5581582d1ed4258e6771a1df3ea59a871d70e531",
+      "pixel_size": [
+        142,
+        256
+      ],
+      "facing": "north",
+      "anchors_px": {
+        "foot_center_front": [
+          42.5,
+          188.75
+        ],
+        "foot_left": [
+          10.5,
+          188.75
+        ],
+        "foot_right": [
+          74.5,
+          188.75
+        ],
+        "top_center_front": [
+          42.5,
+          44.75
+        ]
+      },
+      "builder": "wall_run",
+      "params": {
+        "length": 1.0,
+        "height": 2.25,
+        "thickness": 0.5,
+        "row_height": 0.28,
+        "seed": 7
+      },
+      "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+      "master_sha256": "7128da5134fbb163ceb7706ab9f58a1ae1d527a44e7d7380efe54fcfead63bf1",
+      "shadow": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north_shadow.png"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+      "sha256": "f068f8073d1c0fabf64e585928fff2780136b7001ab09727e090096af38a8dfd",
+      "pixel_size": [
+        115,
+        286
+      ],
+      "facing": "east",
+      "anchors_px": {
+        "foot_center_front": [
+          12.75,
+          186.0
+        ],
+        "foot_left": [
+          12.75,
+          154.0
+        ],
+        "foot_right": [
+          12.75,
+          218.0
+        ],
+        "top_center_front": [
+          12.75,
+          42.0
+        ]
+      },
+      "builder": "wall_run",
+      "params": {
+        "length": 1.0,
+        "height": 2.25,
+        "thickness": 0.5,
+        "row_height": 0.28,
+        "seed": 7
+      },
+      "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+      "master_sha256": "053af1a8bcda1634073f31d0688abcda21ff91f464c144b7bccb290975d1fc57",
+      "shadow": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east_shadow.png"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south.png",
+      "sha256": "524d96c4cfcf3993f4599871060e88d3f720faa40675adf47f7fcf19c4febb1b",
+      "pixel_size": [
+        142,
+        257
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "foot_center_front": [
+          42.5,
+          156.75
+        ],
+        "foot_left": [
+          74.5,
+          156.75
+        ],
+        "foot_right": [
+          10.5,
+          156.75
+        ],
+        "top_center_front": [
+          42.5,
+          12.75
+        ]
+      },
+      "builder": "wall_run",
+      "params": {
+        "length": 1.0,
+        "height": 2.25,
+        "thickness": 0.5,
+        "row_height": 0.28,
+        "seed": 7
+      },
+      "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south@4x.png",
+      "master_sha256": "014b133490d34b9073a37ead6f9d946808b1da5d1577ff42a104c8248bdaa689",
+      "shadow": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south_shadow.png"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+      "sha256": "08891dc8ce26514ee7eed74b6db778f33321e3cdd500f3d4b64ce9e1be92c019",
+      "pixel_size": [
+        115,
+        286
+      ],
+      "facing": "west",
+      "anchors_px": {
+        "foot_center_front": [
+          44.75,
+          186.0
+        ],
+        "foot_left": [
+          44.75,
+          218.0
+        ],
+        "foot_right": [
+          44.75,
+          154.0
+        ],
+        "top_center_front": [
+          44.75,
+          42.0
+        ]
+      },
+      "builder": "wall_run",
+      "params": {
+        "length": 1.0,
+        "height": 2.25,
+        "thickness": 0.5,
+        "row_height": 0.28,
+        "seed": 7
+      },
+      "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+      "master_sha256": "af4924ddc409037da43ace2b722dd1b86f591ecbfe3eac73a3d2f25648fb0bd3",
+      "shadow": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west_shadow.png"
+    }
+  ],
+  "extra_files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+      "sha256": "7128da5134fbb163ceb7706ab9f58a1ae1d527a44e7d7380efe54fcfead63bf1",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north_shadow.png",
+      "sha256": "56438ac55da297b31e74b04184432cb246c853f18890bc34f065a48e1ddc0124",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+      "sha256": "053af1a8bcda1634073f31d0688abcda21ff91f464c144b7bccb290975d1fc57",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east_shadow.png",
+      "sha256": "42f31099aef89d3b16e422a2a5cad8fac134bd534db9667949c1c511cf6f5bc8",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south@4x.png",
+      "sha256": "014b133490d34b9073a37ead6f9d946808b1da5d1577ff42a104c8248bdaa689",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south_shadow.png",
+      "sha256": "034275806b1097df65e2efaf7c551693f068a33112637d4997424a6d3ed640a8",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+      "sha256": "af4924ddc409037da43ace2b722dd1b86f591ecbfe3eac73a3d2f25648fb0bd3",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west_shadow.png",
+      "sha256": "d83b135b21b945c0fdc0345b829862460fbefc7d3e68a31f7eb24749dfffcc1f",
+      "role": "separate cast shadow"
+    }
+  ],
+  "qa": {
+    "problems": [],
+    "warnings": [
+      "hero_wall_run_north.png vs hero_wall_run_south.png: nearly identical (score 3.35); fine for variants, a defect if they must be distinct facings"
+    ],
+    "expected_warnings": [
+      {
+        "warning": "hero_wall_run_east.png vs hero_wall_run_west.png: nearly identical (score 3.0); fine for variants, a defect if they must be distinct facings",
+        "reason": "Owner decision 2026-10-26: orthographic projection; east/west side walls show only their top and end (classic top-down JRPG rooms), so the two side views are nearly identical by design."
+      }
+    ],
+    "pairs": [
+      {
+        "a": "hero_wall_run_north.png",
+        "b": "hero_wall_run_east.png",
+        "same": 19.62,
+        "mirror": 65.29,
+        "rot90": 52.86
+      },
+      {
+        "a": "hero_wall_run_north.png",
+        "b": "hero_wall_run_south.png",
+        "same": 3.35,
+        "mirror": 67.15,
+        "rot90": 53.92
+      },
+      {
+        "a": "hero_wall_run_north.png",
+        "b": "hero_wall_run_west.png",
+        "same": 19.88,
+        "mirror": 65.36,
+        "rot90": 52.97
+      },
+      {
+        "a": "hero_wall_run_east.png",
+        "b": "hero_wall_run_south.png",
+        "same": 19.52,
+        "mirror": 65.37,
+        "rot90": 52.98
+      },
+      {
+        "a": "hero_wall_run_east.png",
+        "b": "hero_wall_run_west.png",
+        "same": 3.0,
+        "mirror": 56.69,
+        "rot90": 49.41
+      },
+      {
+        "a": "hero_wall_run_south.png",
+        "b": "hero_wall_run_west.png",
+        "same": 19.69,
+        "mirror": 65.44,
+        "rot90": 53.05
+      }
+    ]
+  },
+  "provenance": {
+    "tool": "blender",
+    "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
+    "spec": "tools/blender/specs/ART-0004.json",
+    "toolkit_commit": "0992cd3329608b945896bdb20df96750583c0c3a",
+    "producing_agent": "claude",
+    "ai_image_generation": false
+  },
+  "reference": {
+    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+    "sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+    "owner_confirmed": false
+  },
+  "review": {
+    "visual_approval": null,
+    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
+  },
+  "cost": "unknown"
+}

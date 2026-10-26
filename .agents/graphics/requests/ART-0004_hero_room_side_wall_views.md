@@ -1,6 +1,6 @@
 ---
 id: ART-0004
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0015
 dedupe_key: hero_room_side_wall_views
@@ -58,3 +58,10 @@ issue: 20
 - All proposed native sizes remain provisional until specialist calibration; provide measured native display size, ground footprint, origin, seam/mount interfaces and separate collision/shadow metadata.
 - Reuse existing approved-quality candidates first. Keep blocked_reference until authenticated reference and calibrated specifications are reviewed. No production art or readiness approval is created by this amendment.
 - Newly registered HD candidates to review before any duplicate production: W021,W022. Style approval alone is not calibrated production approval.
+
+## Delivery (Blender, 2026-10-26)
+- Built and rendered by Claude Code with tools/blender_factory.py (spec tools/blender/specs/ART-0004.json, Blender 5.2.3 LTS, Cycles); no AI image generation.
+- Owner decision 2026-10-26: orthographic projection; east/west side walls show only top and end, so their near-identical look is expected.
+- Files (native 64 px/tile, plus @4x masters and separate *_shadow.png): hero_wall_run_north.png 142x256 sha256 c45ea1a67d23, hero_wall_run_east.png 115x286 sha256 f068f8073d1c, hero_wall_run_south.png 142x257 sha256 524d96c4cfcf, hero_wall_run_west.png 115x286 sha256 08891dc8ce26.
+- Technical QA: no problems; expected: east~west; open warning: north~south look nearly identical (symmetric wall seen from the back).
+- Reference SHA-256 01d91889...3119c (1536x1024), not owner-confirmed. Status stays unapproved: visual check happens on the final Godot capture.
