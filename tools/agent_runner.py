@@ -21,7 +21,7 @@ import time
 import uuid
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from runner_safety import allowed_changed, is_art, is_generated, normalize, safe_test, touches, verify_claim
+from runner_safety import allowed_changed, is_art, is_generated, normalize, normalize_test, safe_test, touches, verify_claim
 
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=ROOT/".agents/planner/config.json"
@@ -151,8 +151,7 @@ def changed_paths(workdir):
 
 def tests(workdir,task,scope="--changed"):
     # Only expected unittest arguments; never execute arbitrary task-supplied shell.
-    requested=shlex.split(task["test"],posix=False)
-    safe_test(requested)
+    requested=safe_test(normalize_test(safe_test(shlex.split(task["test"],posix=False))))
     # Use current interpreter and trusted test modules regardless of task-controlled exe.
     step=requested[1:]
     if step[:1]==["-3"]:step=step[1:]

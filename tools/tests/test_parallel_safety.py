@@ -1,6 +1,7 @@
 import importlib.util
 import json
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -79,6 +80,27 @@ class ParallelSafety(unittest.TestCase):
                     ["python","-c","print(42)"],["python","-m","pip","install","bad"]):
             with self.assertRaises(ValueError):
                 rs.safe_test(cmd)
+    def test_dotted_task_test_becomes_runnable_discover(self):
+        # TASK-0009 failed: "-m unittest tools.tests.test_map_layers" cannot import siblings.
+        base=["py","-3","-m","unittest"]
+        disc=base+["discover","-s","tools/tests","-p"]
+        self.assertEqual(rs.normalize_test(base+["tools.tests.test_map_layers"]),disc+["test_map_layers.py"])
+        self.assertEqual(rs.normalize_test(base+["-v","tools/tests/test_map_layers.py"]),disc+["test_map_layers.py","-v"])
+        self.assertEqual(rs.normalize_test(base+["tools.tests.test_map_layers.FiveLevelMap.test_reject_cyclic_mount"]),
+                         disc+["test_map_layers.py","-k","FiveLevelMap.test_reject_cyclic_mount"])
+        for unchanged in (base+["discover","-s","tools/tests","-p","test_map_layers.py"],
+                          base+["tools.tests.test_a","tools.tests.test_b"],base+["other.module"]):
+            self.assertEqual(rs.normalize_test(unchanged),unchanged)
+        self.assertEqual(rs.normalize_test_text("py -3 -m unittest tools.tests.test_map_layers"),
+                         "py -3 -m unittest discover -s tools/tests -p test_map_layers.py")
+        self.assertEqual(rs.normalize_test_text("python tools/map_factory_cli.py validate"),
+                         "python tools/map_factory_cli.py validate")
+    def test_normalized_task_command_runs(self):
+        root=Path(__file__).resolve().parents[2]
+        argv=rs.normalize_test(["py","-3","-m","unittest","tools.tests.test_map_navigation"])
+        x=subprocess.run([sys.executable,*argv[2:]],cwd=root,capture_output=True,text=True)
+        self.assertEqual(x.returncode,0,x.stderr[-800:])
+        self.assertRegex(x.stderr,r"Ran [1-9]\d* tests?")
     def test_costs_aggregate_per_goal_and_preserve_unknown(self):
         summary=rs.receipt_goals([{"task_id":"TASK-0008","cost_usd":None,"tokens":None},
               {"task_id":"TASK-0009","cost_usd":0.42,

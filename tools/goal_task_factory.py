@@ -10,7 +10,10 @@ import re
 import sys
 from zoneinfo import ZoneInfo
 
-ROOT = Path(os.environ.get("SKL_PLANNER_ROOT", Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from runner_safety import normalize_test_text  # noqa: E402
+
+ROOT =Path(os.environ.get("SKL_PLANNER_ROOT", Path(__file__).resolve().parents[1]))
 BASE = ROOT / ".agents/planner"
 TASKS = ROOT / ".agents/tasks"
 ZONE = ZoneInfo("Europe/Berlin")
@@ -94,6 +97,8 @@ def create(source, spec, existing, today):
             raise ValueError(source + " missing " + k)
     if spec.get("kind", "feature") not in KINDS:
         raise ValueError("Unknown task kind")
+    # Store a test command the runner can execute as written (tools/tests needs discover).
+    spec = {**spec, "test": normalize_test_text(spec["test"])}
     path, line = target(spec["file"], spec.get("line"))
     dependencies = deps(spec)
     missing = [d for d in dependencies if d not in existing]

@@ -59,6 +59,13 @@ class PlannerSafety(unittest.TestCase):
         self.assertFalse(cfg["auto_activate"])
         self.assertFalse(cfg["execution_enabled"])
         self.assertEqual([s["agent"] for s in cfg["schedule"]],["claude","codex","claude","codex"])
+    def test_planner_dotted_test_is_stored_runnable(self):
+        state={"status":"active","milestones_approved":True}
+        (self.root/".agents/planner/goals/GOAL-0001/state.json").write_text(json.dumps(state))
+        self.apply({"tasks":[self.task(test="py -3 -m unittest tools.tests.test_map_layers")],"updates":[]},True)
+        text=next((self.root/".agents/tasks").glob("TASK-*.md")).read_text(encoding="utf-8")
+        self.assertIn("test: py -3 -m unittest discover -s tools/tests -p test_map_layers.py",text)
+        self.assertNotIn("tools.tests.test_map_layers",text)
     def test_codex_null_optionals_apply_as_absent(self):
         state={"status":"active","milestones_approved":True}
         (self.root/".agents/planner/goals/GOAL-0001/state.json").write_text(json.dumps(state))

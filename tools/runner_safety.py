@@ -90,6 +90,33 @@ def safe_test(argv):
         raise ValueError("Test command too broad")
     return argv
 
+TEST_MODULE=re.compile(r"tools[./\\]tests[./\\](test_\w+?)(?:\.py)?((?:\.[A-Za-z_]\w*)*)")
+
+def normalize_test(argv):
+    """tools/tests modules import their siblings (from test_map_factory import ...), which
+    only resolves under `discover -s tools/tests`; rewrite a dotted or path module target
+    (tools.tests.test_x[.Class[.method]]) into that form, keeping flags and narrowing via -k."""
+    argv=list(argv)
+    i=argv.index("unittest")+1
+    rest=argv[i:]
+    targets=[a for a in rest if not a.startswith("-")]
+    match=TEST_MODULE.fullmatch(targets[0]) if len(targets)==1 else None
+    if match is None:
+        return argv
+    out=argv[:i]+["discover","-s","tools/tests","-p",match.group(1)+".py"]
+    out+=[a for a in rest if a.startswith("-")]
+    if match.group(2):
+        out+=["-k",match.group(2)[1:]]
+    return out
+
+def normalize_test_text(text):
+    """Stored task form of normalize_test; non-unittest commands are returned unchanged."""
+    try:
+        argv=safe_test(text.split())
+    except (ValueError, IndexError):
+        return text
+    return " ".join(normalize_test(argv))
+
 def receipt_goals(receipts, task_source):
     """Aggregate measured per-goal costs without treating unknown as zero."""
     result={}
