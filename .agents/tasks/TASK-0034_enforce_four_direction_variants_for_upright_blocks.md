@@ -1,13 +1,13 @@
 ---
 id: TASK-0034
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0034-d4862094
 agent: claude
 touches: tools/map_factory_cli.py,tools/tests/test_map_cardinal.py
 test: py -3 -m unittest discover -s tools/tests -p test_map_cardinal.py
 done_when: CLI rejects rotate mode for upright categories and requires n/e/s/w variant IDs; flat floors and rugs keep rotate mode
-started_at: unknown
+started_at: 2026-10-26T13:16:28.905324+00:00
 cost_usd: unknown
 depends_on: TASK-0009
 issue: none
@@ -42,3 +42,6 @@ Outcome: CLI rejects rotate mode for upright categories and requires n/e/s/w var
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T13:16:28.895762+00:00
