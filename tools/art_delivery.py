@@ -175,12 +175,49 @@ def integrate():
     finally:
         lock.unlink(missing_ok=True)
 
+# Owner/reviewer-only reference integrity preflight. This reads bytes to hash the
+# committed source but does NOT decode, display, transform or approve its art.
+# Coding agents must read the reported metadata, not the source image.
+CHAT_SCENE_SHA256 = "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7"
+CHAT_SCENE_SIZE = [1448, 1086]
+GOAL_REFERENCE = Path(".agents/planner/goals/GOAL-0001/references/hero_room_reference.png")
+
+
+def audit_goal_reference(root=ROOT):
+    path = root / GOAL_REFERENCE
+    with path.open("rb") as stream:
+        head = stream.read(24)
+    if len(head) < 24 or head[:8] != PNG_SIG or head[12:16] != b"IHDR":
+        raise ValueError("Committed Hero Room reference is not a PNG")
+    size = list(struct.unpack(">II", head[16:24]))
+    hasher = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            hasher.update(chunk)
+    actual = hasher.hexdigest()
+    return {
+        "reference_path": GOAL_REFERENCE.as_posix(),
+        "committed_sha256": actual,
+        "committed_pixel_size": size,
+        "chat_uploaded_sha256": CHAT_SCENE_SHA256,
+        "chat_uploaded_pixel_size": CHAT_SCENE_SIZE,
+        "byte_identical_to_chat_upload": actual == CHAT_SCENE_SHA256,
+        "pixel_equivalence_when_hash_differs": "not_assessed",
+        "specialist_production_unblocked": False,
+        "next_action": "Owner reviews source identity and sizes, then confirms request-native scales before updating ART status",
+    }
+
+
 def main():
     p=argparse.ArgumentParser()
     g=p.add_mutually_exclusive_group(required=True)
     g.add_argument("--check",action="store_true")
+    g.add_argument("--audit-reference",action="store_true",help="owner/reviewer-only PNG signature, dimensions and SHA-256 preflight")
     g.add_argument("--integrate",action="store_true")
     opts=p.parse_args()
+    if opts.audit_reference:
+        print(json.dumps(audit_goal_reference(),indent=2))
+        return
     if opts.check:
         _,items=collect()
         print(json.dumps({"deliveries_verified":[x[1]["id"] for x in items]}))
