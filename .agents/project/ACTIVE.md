@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| — | none | — | — | — | — |
+| codex | TASK-0049 | tools/local_planner.py | 2026-10-26T23:15:59.835228+00:00 | in_progress | unknown |

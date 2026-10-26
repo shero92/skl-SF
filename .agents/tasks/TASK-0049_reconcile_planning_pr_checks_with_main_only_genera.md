@@ -1,13 +1,13 @@
 ---
 id: TASK-0049
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: codex
+branch: work/task-0049-b50a67a7
 agent: codex
 touches: tools/local_planner.py
 test: py -3 -m unittest discover -s tools/tests -p test_local_planner.py
 done_when: PR checks validate records without writing generated files; main checks remain strict; successful planner merges regenerate only on main under lock.
-started_at: unknown
+started_at: 2026-10-26T23:15:59.835228+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -45,3 +45,6 @@ Outcome: PR checks validate records without writing generated files; main checks
 
 ## Allowed touches
 - tools/local_planner.py
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T23:15:59.823410+00:00
