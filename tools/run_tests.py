@@ -216,7 +216,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.write_index or args.check_index:
         expected = render_index(tests)
         if args.write_index:
-            INDEX.write_text(expected, encoding="utf-8")
+            INDEX.write_text(expected, encoding="utf-8", newline="\n")
             print("Wrote", INDEX.relative_to(ROOT).as_posix())
             return 0
         if not INDEX.is_file() or INDEX.read_text(encoding="utf-8") != expected:

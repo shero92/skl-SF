@@ -106,9 +106,9 @@ def main():
         a["source"]={"kind":"original_procedural_fx","generator":"tools/generate_missing_details.py"}
         created+=1
     data["extracted_count"]=sum((ROOT/a["texture_path"].removeprefix("res://")).is_file() for a in data["assets"])
-    INDEX.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8",newline="\n")
     with QUEUE.open("w",newline="",encoding="utf-8") as f:
-        writer=csv.writer(f);writer.writerow(["id","category","name","status","texture_path"])
+        writer=csv.writer(f,lineterminator="\n");writer.writerow(["id","category","name","status","texture_path"])
         writer.writerows([a["id"],a["category"],a["name"],a["status"],a["texture_path"]] for a in data["assets"])
     print("Created",created,"modular detail PNGs. New assets require art QA.")
 if __name__=="__main__":

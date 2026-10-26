@@ -110,9 +110,9 @@ def import_assets(root: Path, assets: list):
       (root/a["texture_path"].removeprefix("res://")).is_file()
       for a in index["assets"])
     index["extracted_count"]=index["generated_png_count"]
-    source_index.write_text(json.dumps(index,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    source_index.write_text(json.dumps(index,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     with (root/QUEUE).open("w",newline="",encoding="utf-8") as f:
-        writer=csv.writer(f)
+        writer=csv.writer(f,lineterminator="\n")
         writer.writerow(["id","category","name","status","texture_path"])
         writer.writerows((a["id"],a["category"],a.get("name",a["id"]),a.get("status","planned"),a["texture_path"])
                          for a in index["assets"])

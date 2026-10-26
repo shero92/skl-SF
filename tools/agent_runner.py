@@ -74,7 +74,7 @@ def amend_status(tid,state,*,reason="",branch=None):
     if branch:raw=re.sub(r"(?m)^branch: [^\r\n]+$","branch: "+branch,raw,count=1)
     if reason:
         raw += "\n## Runner evidence\n- "+reason[:400].replace("\n"," ")+"\n"
-    p.write_text(raw,encoding="utf-8")
+    p.write_text(raw,encoding="utf-8",newline="\n")
 
 def index_main():
     execute([sys.executable,"tools/agent_workflow.py","--write"])
@@ -104,7 +104,7 @@ def exclusive(label):
     except FileExistsError:
         raise RuntimeError("Another operation has lock "+str(target)+"; do not run concurrently")
     try:
-        with os.fdopen(fd,"w") as handle:handle.write(str(os.getpid())+" "+stamp())
+        with os.fdopen(fd,"w",newline="\n") as handle:handle.write(str(os.getpid())+" "+stamp())
         yield
     finally:
         target.unlink(missing_ok=True)
@@ -131,7 +131,7 @@ def sanitized_session(agent,workdir,tid,timeout):
     args=["codex","exec","--sandbox","workspace-write","--cd",str(workdir),
           "--json","-"]
     proc=execute(args,workdir,input=prompt,timeout=timeout,check=False)
-    log.write_text(proc.stdout,encoding="utf-8")
+    log.write_text(proc.stdout,encoding="utf-8",newline="\n")
     return proc,log
 
 def hide_images(workdir):
@@ -170,7 +170,7 @@ def checkpoint(tid,agent,phase,details):
     p=LOCAL/"runner-state.json"
     p.parent.mkdir(parents=True,exist_ok=True)
     p.write_text(json.dumps({"task":tid,"agent":agent,"phase":phase,"at":stamp(),
-                             "details":details},indent=2)+"\n",encoding="utf-8")
+                             "details":details},indent=2)+"\n",encoding="utf-8", newline="\n")
 
 def run(tid, supervised=False):
     config=read_json(CONFIG,{})
@@ -204,7 +204,7 @@ def run(tid, supervised=False):
         raw=p.read_text(encoding="utf-8")
         raw=re.sub(r"(?m)^owner: [^\r\n]+$","owner: "+agent,raw,count=1)
         raw=re.sub(r"(?m)^started_at: [^\r\n]+$","started_at: "+stamp(),raw,count=1)
-        p.write_text(raw,encoding="utf-8")
+        p.write_text(raw,encoding="utf-8",newline="\n")
         main_commit("chore: claim "+tid,agent,tid)
     WORKTREES.mkdir(parents=True,exist_ok=True)
     workdir=WORKTREES/(tid+"-"+branch.split("-")[-1])

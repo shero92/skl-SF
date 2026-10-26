@@ -177,9 +177,9 @@ def main():
                  origin=[0,0],shadow={'type':'none'},source={'kind':'original_procedural_pixel_art','generator':'tools/generate_character_art.py'},
                  qa_notes='Transparent portrait; visual QA pending.')
         created+=1
-    IX.write_text(json.dumps(catalog,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    IX.write_text(json.dumps(catalog,indent=2,ensure_ascii=False)+'\n',encoding='utf-8',newline="\n")
     with CS.open('w',newline='',encoding='utf-8') as f:
-        writer=csv.writer(f);writer.writerow(['id','category','name','status','texture_path'])
+        writer=csv.writer(f,lineterminator="\n");writer.writerow(['id','category','name','status','texture_path'])
         writer.writerows([a['id'],a['category'],a['name'],a['status'],a['texture_path']] for a in catalog['assets'])
     print('Created',created,'separate transparent PNG sprite/portrait files')
 if __name__=='__main__':main()

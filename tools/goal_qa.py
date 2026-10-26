@@ -91,7 +91,7 @@ def compare(gid):
     image=OUTPUT/gid/"hero_room_final.png"
     if not image.is_file():raise ValueError("Render the actual Godot room before final comparison")
     state["final_comparison_started_at"]=datetime.now(timezone.utc).isoformat()
-    (folder/"state.json").write_text(json.dumps(state,indent=2)+"\n",encoding="utf-8")
+    (folder/"state.json").write_text(json.dumps(state,indent=2)+"\n",encoding="utf-8",newline="\n")
     with tempfile.TemporaryDirectory(prefix="skl-qa-text-") as tmp:
         output=Path(tmp)/"differences.json"
         instr=("Final goal visual verification ONLY. Compare the first attached authentic user "
@@ -116,7 +116,7 @@ def compare(gid):
                  "render":image.relative_to(ROOT).as_posix(),"comparison":obj,
                  "owner_final_signoff":False,"at":datetime.now(timezone.utc).isoformat()}
         RESULTS.mkdir(parents=True,exist_ok=True)
-        (RESULTS/(gid+".json")).write_text(json.dumps(payload,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        (RESULTS/(gid+".json")).write_text(json.dumps(payload,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
         # Reviewable investigation requests: do not guess which code or sprite is at fault.
         requests=ROOT/".agents/planner/requests"
         requests.mkdir(parents=True,exist_ok=True)
@@ -131,10 +131,10 @@ def compare(gid):
             digest=hashlib.sha256((gid+"|"+difference).encode()).hexdigest()[:12]
             dest=requests/("REQ-"+digest+".json")
             if not dest.exists():
-                dest.write_text(json.dumps(request,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+                dest.write_text(json.dumps(request,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
 
         state["final_comparison_run_at"]=payload["at"]
-        (folder/"state.json").write_text(json.dumps(state,indent=2)+"\n",encoding="utf-8")
+        (folder/"state.json").write_text(json.dumps(state,indent=2)+"\n",encoding="utf-8",newline="\n")
         print("Wrote final comparison evidence; owner must review: "+gid)
         print("Visible differences (investigation candidates): "+str(len(obj["differences"])))
         # Owner may turn differences into specific tasks via the canonical request command.

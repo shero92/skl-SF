@@ -68,14 +68,14 @@ def audit():
             by_category.setdefault(a["category"],{"existing":0,"missing":0})["missing"]+=1
     data["extracted_count"]=counts["existing"]
     data["status_note"]="Asset presence verified automatically; no sprites are promoted to ready without visual QA."
-    INDEX.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8",newline="\n")
     with QUEUE.open("w",newline="",encoding="utf-8") as f:
-        wr=csv.writer(f); wr.writerow(["id","category","name","status","texture_path"])
+        wr=csv.writer(f,lineterminator="\n"); wr.writerow(["id","category","name","status","texture_path"])
         wr.writerows((a["id"],a["category"],a["name"],a["status"],a["texture_path"]) for a in data["assets"])
     summary={"total":len(data["assets"]),**counts}
     report={"summary":summary,"by_category":by_category,"assets":rows,
             "notice":"An existing PNG is NOT a high-quality approval. Manual visual QA required."}
-    REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8",newline="\n")
     markdown=["# Automated asset inventory","",
        "File presence and metadata only. This does NOT certify visual quality.","",
        f"- Registered: {summary['total']}",
@@ -89,7 +89,7 @@ def audit():
     markdown.extend(["","## Automatic issues",
                      "See asset_audit.json in map_factory/metadata for per-file details.",
                      "Review image transparency, edges, baked labels, anchors, tile seams and collision before approving.",""])
-    DOC.write_text("\n".join(markdown),encoding="utf-8")
+    DOC.write_text("\n".join(markdown),encoding="utf-8",newline="\n")
     print(json.dumps(summary,indent=2))
 
 if __name__=="__main__":

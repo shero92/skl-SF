@@ -48,9 +48,9 @@ def main():
                      "generator":"tools/curate_high_detail_sprites.py"}
         a["qa_notes"]="Removed "+reason+". High-resolution source content unchanged; art QA still pending."
         updates.append((id,expected,clean.size,reason))
-    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     with (ROOT/"map_factory/metadata/production_queue.csv").open("w",newline="",encoding="utf-8") as f:
-        writer=csv.writer(f)
+        writer=csv.writer(f,lineterminator="\n")
         writer.writerow(["id","category","name","status","texture_path"])
         writer.writerows((a["id"],a["category"],a["name"],a["status"],a["texture_path"])
                          for a in data["assets"])
@@ -60,7 +60,7 @@ def main():
        "\n".join("- **%s** %s → %s: %s. All retained source pixels unchanged." %
                  (ident,old,new,reason) for ident,old,new,reason in updates)+
        "\n\nAll five remain needs_cleanup until manual on-screen comparison.\n",
-       encoding="utf-8")
+       encoding="utf-8",newline="\n")
     print("Curated",len(updates),"sprites:",updates)
 
 if __name__=="__main__":

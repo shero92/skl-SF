@@ -216,7 +216,7 @@ def main() -> int:
         for p, value in generated_files.items():
             dest = ROOT / p
             dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_text(value, encoding="utf-8")
+            dest.write_text(value, encoding="utf-8", newline="\n")
         print(f"Updated {len(generated_files)} generated task/art boards")
         return 0
     if stale:

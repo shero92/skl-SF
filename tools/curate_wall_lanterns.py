@@ -38,9 +38,9 @@ def main():
         record["qa_notes"]="Removed unrelated adjacent lantern or wall from high-detail source; verify at game scale."
         record["status"]="needs_cleanup"
         upgraded.append({"id":id,"new_size":output.size,"crop":rect})
-    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     with (ROOT/"map_factory/metadata/production_queue.csv").open("w",newline="",encoding="utf-8") as f:
-        wr=csv.writer(f);wr.writerow(["id","category","name","status","texture_path"])
+        wr=csv.writer(f,lineterminator="\n");wr.writerow(["id","category","name","status","texture_path"])
         wr.writerows((a["id"],a["category"],a["name"],a["status"],a["texture_path"]) for a in data["assets"])
     doc=ROOT/"docs/ART_QUALITY_REVIEW.md"
     doc.write_text(doc.read_text(encoding="utf-8")+
@@ -48,7 +48,7 @@ def main():
         "D008 and D009 previously contained unrelated neighboring objects from a concept-sheet crop. "
         "The cleaned sprites preserve their actual source pixels; the PNG canvas now tightly fits "
         "each wall-mounted lantern. Metadata pixel_size and bottom-center origin have been updated. "
-        "Art review for shadows and alpha fringing is still pending.\n",encoding="utf-8")
+        "Art review for shadows and alpha fringing is still pending.\n",encoding="utf-8",newline="\n")
     print("Curated individual lantern images:",upgraded)
 
 if __name__=="__main__":main()

@@ -76,7 +76,7 @@ def prepare(root: Path, source: Path, map_id: str, mode: str,
     else:
         shutil.copyfile(source,image_dest)
     manifest["source_image"]["path"]=image_dest.relative_to(root).as_posix()
-    draft.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    draft.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     return draft.relative_to(root).as_posix(),manifest
 
 

@@ -186,11 +186,11 @@ def main():
         "The hero_room.json tile_overrides place F019 F015 F020 / "
         "F018 F014 F017 / F021 F016 F022 in a 3×3 region. "
         "Check direct Godot rendering and palette fidelity before marking ready.\n",
-        encoding="utf-8")
-    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        encoding="utf-8", newline="\n")
+    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     with (ROOT/"map_factory/metadata/production_queue.csv").open(
         "w",newline="",encoding="utf-8") as stream:
-        writer=csv.writer(stream)
+        writer=csv.writer(stream,lineterminator="\n")
         writer.writerow(("id","category","name","status","texture_path"))
         writer.writerows((a["id"],a["category"],a["name"],a["status"],a["texture_path"])
                         for a in data["assets"])

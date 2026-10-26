@@ -132,12 +132,12 @@ def main():
          "changed":len(repaired),"still_unapproved":sum(a["status"]!="ready" for a in data["assets"])}
     OUT.write_text(json.dumps({"summary":summary,"issues":dict(issues),
         "repairs":repaired,"assets":details,"disclaimer":"Automatic geometric quality inspection, not final artistic approval."},
-        indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        indent=2,ensure_ascii=False)+"\n",encoding="utf-8", newline="\n")
     data["quality_audit_path"]="res://map_factory/metadata/quality_review.json"
-    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     import csv
     with (ROOT/"map_factory/metadata/production_queue.csv").open("w",newline="",encoding="utf-8") as f:
-        writer=csv.writer(f);writer.writerow(["id","category","name","status","texture_path"])
+        writer=csv.writer(f,lineterminator="\n");writer.writerow(["id","category","name","status","texture_path"])
         writer.writerows([a["id"],a["category"],a["name"],a["status"],a["texture_path"]] for a in data["assets"])
     lines=["# Pixel-art quality review — compared with Hero Room reference","",
         "A file existing is not proof it matches the detailed 1990s-style seaside JRPG room.",
@@ -158,7 +158,7 @@ def main():
     lines += ["","Machine-readable report: map_factory/metadata/quality_review.json",
         "All assets remain needs_cleanup until manual fidelity review.",
         "Stable IDs, exact image dimensions, pivots and collisions preserved.",""]
-    DOC.write_text("\n".join(lines),encoding="utf-8")
+    DOC.write_text("\n".join(lines),encoding="utf-8",newline="\n")
     print(json.dumps(summary,indent=2))
     print("Repaired IDs:",[x["id"] for x in repaired])
 

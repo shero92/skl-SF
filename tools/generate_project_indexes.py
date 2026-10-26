@@ -81,7 +81,7 @@ def main() -> int:
         for path, data in expected.items():
             target = ROOT / path
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(data, encoding="utf-8")
+            target.write_text(data, encoding="utf-8", newline="\n")
         for path in orphaned:
             (ROOT / path).unlink()
         print(f"Updated {len(expected)} folder inventories; removed {len(orphaned)} stale inventories.")

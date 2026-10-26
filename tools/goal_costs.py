@@ -48,7 +48,7 @@ def main():
         path=ROOT/rel
         if args.write:
             path.parent.mkdir(parents=True,exist_ok=True)
-            path.write_text(body,encoding="utf-8")
+            path.write_text(body,encoding="utf-8",newline="\n")
         elif not path.is_file() or path.read_text(encoding="utf-8")!=body:
             missing.append(rel)
     if missing:

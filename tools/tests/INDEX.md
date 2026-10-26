@@ -24,6 +24,7 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 | `map_navigation` | python | Traversal metadata validation. | `python -m unittest discover -s tools/tests -p test_map_navigation.py` |
 | `map_reference` | python | Source reference images and version checks. | `python -m unittest discover -s tools/tests -p test_map_reference.py` |
 | `map_templates` | python | Map templates and presets. | `python -m unittest discover -s tools/tests -p test_map_templates.py` |
+| `lf_writers` | python | Every tools/*.py writer emits LF (newline="\n", csv lineterminator) so Windows leaves no CRLF diffs. | `python -m unittest discover -s tools/tests -p test_lf_writers.py` |
 | `map_registry_validate` | python | Every published map version and latest registry hash. | `python tools/map_factory_cli.py validate` |
 | `test_router` | python | Test router: glob matching, changed-path selection, unmatched fallback, map coverage. | `python -m unittest discover -s tools/tests -p test_run_tests.py` |
 | `test_index` | python | tools/tests/INDEX.md matches tools/test_map.json. | `python tools/run_tests.py --check-index` |
@@ -49,6 +50,7 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 - `map_navigation`: `tools/tests/test_map_navigation.py`, `tools/tests/test_map_factory.py`, `tools/map_factory_cli.py`, `map_factory/rooms/**`, `map_factory/metadata/**`
 - `map_reference`: `tools/tests/test_map_reference.py`, `tools/tests/test_map_factory.py`, `tools/map_factory_cli.py`, `tools/prepare_map_reference.py`, `tools/process_map_intake.py`, `map_factory/rooms/**`, `map_factory/metadata/**`, `map_factory/presets/**`
 - `map_templates`: `tools/tests/test_map_templates.py`, `tools/tests/test_map_factory.py`, `tools/map_factory_cli.py`, `tools/process_map_intake.py`, `map_factory/rooms/**`, `map_factory/metadata/**`, `map_factory/presets/**`, `map_factory/intake/**`
+- `lf_writers`: `tools/tests/test_lf_writers.py`, `tools/*.py`
 - `map_registry_validate`: `tools/map_factory_cli.py`, `map_factory/maps/**`, `map_factory/metadata/**`
 - `test_router`: `tools/tests/test_run_tests.py`, `tools/run_tests.py`, `tools/test_map.json`
 - `test_index`: `tools/run_tests.py`, `tools/test_map.json`, `tools/tests/INDEX.md`

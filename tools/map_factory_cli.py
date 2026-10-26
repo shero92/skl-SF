@@ -38,7 +38,7 @@ def dump(root: Path, relative: Path, payload):
     dest = root / relative
     dest.parent.mkdir(parents=True, exist_ok=True)
     text = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
-    dest.write_text(text, encoding="utf-8")
+    dest.write_text(text, encoding="utf-8", newline="\n")
 
 
 def asset_catalog(root: Path):

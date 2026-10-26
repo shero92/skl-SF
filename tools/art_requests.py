@@ -63,11 +63,11 @@ def create(args):
         "- Transparent RGBA pixels, four correct perspectives, palette matched to authentic source",
         "- No neighbor sprites, character/gameplay/UI changes or unknown baked shadows",""
     ]) 
-    (REQUESTS/(aid+"_"+args.dedupe_key+".md")).write_text(payload,encoding="utf8")
+    (REQUESTS/(aid+"_"+args.dedupe_key+".md")).write_text(payload,encoding="utf8",newline="\n")
     text=task.read_text(encoding="utf8")
     text=re.sub(r"(?m)^status: .+$","status: blocked_on_art",text,count=1)
     text=re.sub(r"(?m)^art_request: .+$","art_request: "+aid,text,count=1)
-    task.write_text(text,encoding="utf8")
+    task.write_text(text,encoding="utf8",newline="\n")
     print("Created "+aid+"; commit planning changes before issuing owner notification")
 
 def notify():
@@ -98,7 +98,7 @@ def notify():
         if marker in content:content=content.replace(marker,"issue: "+m.group(1),1)
         else:content=content.replace("output_paths: "+data["output_paths"],
                       "output_paths: "+data["output_paths"]+"\nissue: "+m.group(1),1)
-        req.write_text(content,encoding="utf8")
+        req.write_text(content,encoding="utf8",newline="\n")
         updates.append(req.relative_to(ROOT).as_posix())
     if updates:
         git("add","--",*updates)

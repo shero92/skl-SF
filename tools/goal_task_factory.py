@@ -24,7 +24,7 @@ def read(path, default=None):
 def save(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     if not path.is_file() or path.read_text(encoding="utf-8") != data:
-        path.write_text(data, encoding="utf-8")
+        path.write_text(data, encoding="utf-8", newline="\n")
 
 def target(path, line=None):
     if not isinstance(path, str) or not path or Path(path).is_absolute():

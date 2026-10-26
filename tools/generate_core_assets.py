@@ -112,6 +112,6 @@ def main():
         a['status']='ready' if cat=='shadows' else 'needs_cleanup'
         a['source']='procedural_starter_v1'
     obj['note']='Generated floor/UI drafts need art QA; PNGs are real independent textures. Unprocessed items remain planned.'
-    INDEX.write_text(json.dumps(obj,indent=2)+'\n')
+    INDEX.write_text(json.dumps(obj,indent=2)+'\n',encoding="utf-8",newline="\n")
     print('Created',created,'new PNGs')
 if __name__=='__main__':main()

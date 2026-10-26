@@ -91,12 +91,12 @@ def run(archive_path):
             counts["installed"].append({"id": asset_id, "path": member.filename, "size": [width, height]})
     catalog["generated_png_count"] = sum((ROOT / a["texture_path"].removeprefix("res://")).exists() for a in catalog["assets"])
     catalog["asset_status_note"] = "Imported concept crops are needs_cleanup; replacements are staged in candidates/."
-    INDEX.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    INDEX.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     with QUEUE.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f,lineterminator="\n")
         writer.writerow(["id", "category", "name", "status", "texture_path"])
         writer.writerows((a["id"], a["category"], a["name"], a["status"], a["texture_path"]) for a in catalog["assets"])
-    REPORT.write_text(json.dumps(counts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps(counts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"installed": len(counts["installed"]), "candidates": len(counts["candidates"]),
                       "unchanged": len(counts["unchanged"]), "skipped": len(counts["skipped"]),
                       "total_in_parts": catalog["generated_png_count"]}))

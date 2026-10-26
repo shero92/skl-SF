@@ -118,7 +118,7 @@ def integrate():
     lock=ROOT/".agents/monitoring/.local/merge.lock"
     lock.parent.mkdir(parents=True,exist_ok=True)
     try:
-        with lock.open("x",encoding="utf8") as h:h.write("art delivery")
+        with lock.open("x",encoding="utf8",newline="\n") as h:h.write("art delivery")
     except FileExistsError:
         raise RuntimeError("Merge lock held; abort integration")
     try:
@@ -132,7 +132,7 @@ def integrate():
                 catalog["assets"].append(meta)
                 call("git","add","--",str(destination.relative_to(ROOT)).replace("\\","/"))
             fields_before=req.read_text(encoding="utf8")
-            req.write_text(fields_before.replace("status: delivered","status: integrated",1),encoding="utf8")
+            req.write_text(fields_before.replace("status: delivered","status: integrated",1),encoding="utf8",newline="\n")
             call("git","add","--",str(req.relative_to(ROOT)).replace("\\","/"))
             # Only unblock the task when the ART request was its sole blocker.
             related=fields.get("task")
@@ -152,7 +152,7 @@ def integrate():
                             n=re.search(r"(?m)^status: ([a-z_]+)$",current.read_text(encoding="utf8"))
                             if m and n:status_by_id[m.group(1)]=n.group(1)
                         if all(status_by_id.get(dep)=="done" for dep in requirements):
-                            task_file.write_text(text.replace("status: blocked_on_art","status: todo",1),encoding="utf8")
+                            task_file.write_text(text.replace("status: blocked_on_art","status: todo",1),encoding="utf8",newline="\n")
                             call("git","add","--",str(task_file.relative_to(ROOT)).replace("\\","/"))
 
             issue=fields.get("issue")
@@ -160,7 +160,7 @@ def integrate():
                 # Closing issue after commit and successful post-registration validation only.
                 pass
         catalog["asset_count"]=len(catalog["assets"])
-        CATALOG.write_text(json.dumps(catalog,indent=2,ensure_ascii=False)+"\n",encoding="utf8")
+        CATALOG.write_text(json.dumps(catalog,indent=2,ensure_ascii=False)+"\n",encoding="utf8",newline="\n")
         call("git","add","--","map_factory/metadata/asset_index.json")
         call(sys.executable,"tools/agent_workflow.py","--write")
         call(sys.executable,"tools/generate_project_indexes.py","--write")

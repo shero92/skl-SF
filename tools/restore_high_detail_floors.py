@@ -33,9 +33,9 @@ def main():
         a["status"]="needs_cleanup"
         a["qa_notes"]="Restored native high-detail source sprite; visually superior to flat procedural 64px repaint. Needs alpha/seam review."
         print("Restored",a["id"],a["pixel_size"],len(original),"bytes")
-    INDEX.write_text(json.dumps(current,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(current,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     with (ROOT/"map_factory/metadata/production_queue.csv").open("w",newline="",encoding="utf-8") as out:
-        w=csv.writer(out)
+        w=csv.writer(out,lineterminator="\n")
         w.writerow(["id","category","name","status","texture_path"])
         w.writerows((a["id"],a["category"],a["name"],a["status"],a["texture_path"]) for a in current["assets"])
     doc=ROOT/"docs/FLOOR_REPAINT_QA.md"
@@ -48,7 +48,7 @@ def main():
       GOOD_COMMIT+". Their original dimensions/source metadata were restored. "
       "The nine-part compass correction F014–F022 remains installed. "
       "Other plain/edge draft tiles remain for visual review; none are approved "
-      "as a 100% visual match to the reference.\n",encoding="utf-8")
+      "as a 100% visual match to the reference.\n",encoding="utf-8",newline="\n")
     print("Restored original source art in",len(IDS),"files")
 
 if __name__=="__main__":main()

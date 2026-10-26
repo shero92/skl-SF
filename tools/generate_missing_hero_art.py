@@ -331,7 +331,7 @@ def main():
     record["asset_count"]=len(record["assets"])
     record["generated_png_count"]=sum((ROOT/a["texture_path"].removeprefix("res://")).exists() for a in record["assets"])
     record["extracted_count"]=record["generated_png_count"]
-    INDEX.write_text(json.dumps(record,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(record,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
 
 if __name__=="__main__":
     main()

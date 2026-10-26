@@ -440,9 +440,9 @@ def main():
     data["extracted_count"]=count
     data["generated_png_count"]=count
     data["status_note"]="PNG presence completed; all 218 assets need visual review. No new image was automatically approved."
-    INDEX.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8",newline="\n")
     with CSV.open("w",newline="",encoding="utf-8") as f:
-        writer=csv.writer(f);writer.writerow(["id","category","name","status","texture_path"])
+        writer=csv.writer(f,lineterminator="\n");writer.writerow(["id","category","name","status","texture_path"])
         writer.writerows((a["id"],a["category"],a["name"],a["status"],a["texture_path"]) for a in data["assets"])
     print(json.dumps({"new_count":len(created),"new_ids":created,"total_present":count},indent=2))
     if len(created)!=31 or count!=218:

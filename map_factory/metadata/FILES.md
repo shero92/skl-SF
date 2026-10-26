@@ -16,6 +16,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`extraction_manifest.json`](extraction_manifest.json)
 - [`navigation_example.json`](navigation_example.json)
 - [`production_queue.csv`](production_queue.csv)
+- [`production_queue.csv.import`](production_queue.csv.import)
 - [`quality_review.json`](quality_review.json)
 - [`room_block_quality.json`](room_block_quality.json)
 

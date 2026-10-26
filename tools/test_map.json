@@ -115,6 +115,13 @@
       "paths": ["tools/tests/test_map_templates.py", "tools/tests/test_map_factory.py", "tools/map_factory_cli.py", "tools/process_map_intake.py", "map_factory/rooms/**", "map_factory/metadata/**", "map_factory/presets/**", "map_factory/intake/**"]
     },
     {
+      "id": "lf_writers",
+      "kind": "python",
+      "covers": "Every tools/*.py writer emits LF (newline=\"\\n\", csv lineterminator) so Windows leaves no CRLF diffs.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_lf_writers.py"],
+      "paths": ["tools/tests/test_lf_writers.py", "tools/*.py"]
+    },
+    {
       "id": "map_registry_validate",
       "kind": "python",
       "covers": "Every published map version and latest registry hash.",

@@ -114,7 +114,7 @@ def main():
               "artistic_qa":"NOT APPROVED: image file presence and alpha cannot confirm full fidelity.",
               "assets":sorted(inspected.values(),key=lambda a:a["id"])}
     OUT.parent.mkdir(parents=True,exist_ok=True)
-    OUT.write_text(json.dumps(response,indent=2,ensure_ascii=False)+"\n")
+    OUT.write_text(json.dumps(response,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     md=["# Room Map Factory — physical art and layer QA","",
         "This report only certifies file/metadata integrity. It **does not certify that artwork matches the user's reference**.","",
         "| Map | Revision | Background | Ground detail | Walls | Decorations | Independent shadows | Mounted |",
@@ -130,7 +130,7 @@ def main():
            "- Only environment sprites and their independent shadow images are included; no characters/UI are added.",
            "", "Detailed per-ID PNG SHA-256, pixel bounds and paths: map_factory/metadata/room_block_quality.json.",""]
     if errors:md+=["## Errors",""]+["- "+x for x in errors]
-    DOC.write_text("\n".join(md),encoding="utf-8")
+    DOC.write_text("\n".join(md),encoding="utf-8",newline="\n")
     print(json.dumps({k:v for k,v in response.items() if k!="assets"},indent=2))
     return bool(errors)
 

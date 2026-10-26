@@ -98,9 +98,9 @@ def main():
         a["status"]="needs_cleanup"
         a["qa_notes"]="Cobalt/cyan sea with wrap-safe white foam. Validate looping, tint, light direction and visual fidelity before ready."
     data["status_note"]="All 218 PNGs present. Material upgrades remain needs_cleanup until reviewed."
-    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
     with (ROOT/"map_factory/metadata/production_queue.csv").open("w",newline="",encoding="utf-8") as f:
-        writer=csv.writer(f)
+        writer=csv.writer(f,lineterminator="\n")
         writer.writerow(("id","category","name","status","texture_path"))
         writer.writerows((a["id"],a["category"],a["name"],a["status"],a["texture_path"])
                          for a in data["assets"])

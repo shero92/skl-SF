@@ -23,7 +23,7 @@ def get(path, default=None):
 def put(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_name(path.name + ".tmp")
-    tmp.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="utf8")
+    tmp.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="utf8", newline="\n")
     os.replace(tmp, path)
 
 def usage(value, agent="codex"):
@@ -214,7 +214,7 @@ def report(check=False):
                 raise ValueError("Stale report; run python3 tools/agent_costs.py report")
         else:
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(content, encoding="utf8")
+            path.write_text(content, encoding="utf8", newline="\n")
 
 def git(*parts):
     """Run only narrowly scoped git operations from the active project worktree."""

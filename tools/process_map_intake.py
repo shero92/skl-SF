@@ -78,7 +78,7 @@ def process(root=ROOT):
                 if doc.get("source_image"):
                     generated["source_image"]=doc["source_image"]
                 temp=root/"map_factory/intake"/"_created_map_patch.json"
-                temp.write_text(json.dumps(generated,ensure_ascii=False)+"\n")
+                temp.write_text(json.dumps(generated,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
                 try:
                     result=apply(root,temp.relative_to(root))
                 finally:
@@ -101,7 +101,7 @@ def process(root=ROOT):
                     patch["source_image"]=doc["source_image"]
                 # The compiler reads a checked manifest path, not untrusted shell input.
                 temporary=root/"map_factory/intake"/"_generated_patch.json"
-                temporary.write_text(json.dumps(patch,ensure_ascii=False)+"\n")
+                temporary.write_text(json.dumps(patch,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
                 try:
                     result=apply(root,temporary.relative_to(root))
                 finally:
@@ -113,7 +113,7 @@ def process(root=ROOT):
             # validated above and recorded in the checked manifest.
             if source is not None:
                 verified=root/"map_factory/intake"/"_verified_source_patch.json"
-                verified.write_text(json.dumps(doc,ensure_ascii=False)+"\n")
+                verified.write_text(json.dumps(doc,ensure_ascii=False)+"\n",encoding="utf-8",newline="\n")
                 try:
                     result=apply(root,verified.relative_to(root))
                 finally:
@@ -129,7 +129,7 @@ def process(root=ROOT):
           "result_version":result["version"],"imported_assets":assets["installed"],
           "staged_candidates":assets["candidates"],
           "status":"processed","source_image":doc.get("source_image")
-        },indent=2,ensure_ascii=False)+"\n")
+        },indent=2,ensure_ascii=False)+"\n", encoding="utf-8", newline="\n")
         imported.append((file.name,result["map_id"],result["version"]))
     print(json.dumps({"processed":imported},indent=2))
     return imported

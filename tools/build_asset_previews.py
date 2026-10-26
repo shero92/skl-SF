@@ -53,7 +53,7 @@ def main():
         sheet.convert("RGB").save(out,optimize=True)
         md.extend(["## "+category.title(),"",f"![{category} sprites](previews/{category}.png)","",
                    f"**{len(items)} PNGs** | Actual files: [map_factory/parts/{category}](../map_factory/parts/{category})",""])
-    GALLERY.write_text("\n".join(md),encoding="utf-8")
+    GALLERY.write_text("\n".join(md),encoding="utf-8",newline="\n")
     print("Generated",len(groups),"category review sheets.")
 
 if __name__=="__main__":
