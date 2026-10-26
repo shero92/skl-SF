@@ -200,7 +200,8 @@
           "proposed_task_id": "TASK-0039",
           "complexity": "M",
           "token_cost_risk": "Medium",
-          "new_graphics_required": false
+          "new_graphics_required": false,
+          "task_id": "TASK-0039"
         },
         {
           "key": "g1-m6-sort-mount",

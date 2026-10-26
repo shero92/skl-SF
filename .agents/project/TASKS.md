@@ -43,3 +43,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0034](../tasks/TASK-0034_enforce_four_direction_variants_for_upright_blocks.md) | done | claude | TASK-0009 | none |
 | [TASK-0035](../tasks/TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md) | done | claude | none | none |
 | [TASK-0036](../tasks/TASK-0036_reconcile_hero_room_recovery_baseline.md) | review | codex | none | none |
+| [TASK-0039](../tasks/TASK-0039_preserve_immutable_resolved_map_metadata.md) | blocked | unassigned | TASK-0036 | none |
