@@ -1,0 +1,23 @@
+{
+  "tasks": [
+    {
+      "title": "Create ART requests for all missing Hero Room blocks (GOAL-0001 m8)",
+      "problem": "GOAL-0001 step g1-m8-art-requests runs after g1-m1-gap-audit (done as TASK-0008). The missing L0-L4 blocks listed in the goal step and in reference_gaps.json have no graphics requests yet, so art-dependent milestones cannot start.",
+      "file": "tools/art_requests.py",
+      "goal_id": "GOAL-0001",
+      "done_when": "One complete request per gap via tools/art_requests.py request (native size, reference path, palette, 4 filenames where orientation matters, shadow, layer, quality criteria) with a linked blocked_on_art task; no art generated or opened",
+      "test": "py -3 -m unittest tools.tests.test_art_delivery",
+      "priority": "critical",
+      "kind": "investigation",
+      "agent": "claude",
+      "depends_on": [
+        "TASK-0008"
+      ],
+      "touches": [
+        ".agents/graphics/requests/",
+        ".agents/graphics/QUEUE.md"
+      ]
+    }
+  ],
+  "updates": []
+}
