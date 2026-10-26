@@ -1,13 +1,13 @@
 ---
 id: TASK-0033
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: codex
+branch: work/task-0033-6c4049f2
 agent: codex
 touches: map_factory/scripts/background_factory.gd,map_factory/scripts/room_factory.gd
 test: py -3 tools/run_tests.py --only map_layers --only godot_map_smoke
 done_when: Sea cycles E010-E014 wave frames at the JSON fps, clouds scroll, foam animates, all at z 0; Godot smoke asserts animated background nodes exist
-started_at: unknown
+started_at: 2026-10-26T14:15:59.747068+00:00
 cost_usd: unknown
 depends_on: TASK-0009
 issue: none
@@ -51,3 +51,6 @@ Outcome: Sea cycles E010-E014 wave frames at the JSON fps, clouds scroll, foam a
 
 ## Runner evidence
 - Reset to todo: previous attempt (codex, 2026-10-26 14:16) stopped before any code: Codex CLI usage limit ("try again at 3:53 PM"). Not a code failure; retry once Codex usage is available. Error log saved in .agents/monitoring/.local/TASK-0033-e2b138c2/.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T14:15:59.736769+00:00
