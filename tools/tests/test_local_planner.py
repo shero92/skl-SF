@@ -176,6 +176,8 @@ class PlannerPulseRun(unittest.TestCase):
                 for name,value in (("BASE",base),("load",load),("git",git),("invoke",invoke),
                                    ("digest",lambda:"same"),("context",lambda:"context"),("local_ai",ai)):
                     stack.enter_context(patch.object(local_planner,name,value))
+                # This is an isolated Windows-run simulation, also exercised on Linux CI.
+                stack.enter_context(patch.object(local_planner,"os",SimpleNamespace(name="nt")))
                 local_planner.run("claude")
                 self.assertEqual(any(e[0]=="ai" for e in events), mode not in ("unchanged","cooldown"))
                 self.assertTrue(any(e[0]=="git" and e[1][0]=="commit" for e in events))
