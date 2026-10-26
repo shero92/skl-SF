@@ -55,5 +55,13 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`P021_Wooden_Box.png.import`](P021_Wooden_Box.png.import)
 - [`P022_Storage_Chest.png`](P022_Storage_Chest.png)
 - [`P022_Storage_Chest.png.import`](P022_Storage_Chest.png.import)
+- [`P023_Cobalt_Compass_Treasure_Chest.png`](P023_Cobalt_Compass_Treasure_Chest.png)
+- [`P023_Cobalt_Compass_Treasure_Chest.png.import`](P023_Cobalt_Compass_Treasure_Chest.png.import)
+- [`P024_Compass_Rose_Fantasy_Bed_Frame.png`](P024_Compass_Rose_Fantasy_Bed_Frame.png)
+- [`P024_Compass_Rose_Fantasy_Bed_Frame.png.import`](P024_Compass_Rose_Fantasy_Bed_Frame.png.import)
+- [`P025_Royal_Blue_Compass_Bedspread.png`](P025_Royal_Blue_Compass_Bedspread.png)
+- [`P025_Royal_Blue_Compass_Bedspread.png.import`](P025_Royal_Blue_Compass_Bedspread.png.import)
+- [`P026_Nautical_Compass_Study_Desk.png`](P026_Nautical_Compass_Study_Desk.png)
+- [`P026_Nautical_Compass_Study_Desk.png.import`](P026_Nautical_Compass_Study_Desk.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

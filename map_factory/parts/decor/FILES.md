@@ -47,5 +47,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`D017_Rope_Hanging.png.import`](D017_Rope_Hanging.png.import)
 - [`D018_Decorative_Ornament.png`](D018_Decorative_Ornament.png)
 - [`D018_Decorative_Ornament.png.import`](D018_Decorative_Ornament.png.import)
+- [`D019_Royal_Blue_Compass_Banner.png`](D019_Royal_Blue_Compass_Banner.png)
+- [`D019_Royal_Blue_Compass_Banner.png.import`](D019_Royal_Blue_Compass_Banner.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

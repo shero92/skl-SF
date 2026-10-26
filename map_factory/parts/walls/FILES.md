@@ -51,5 +51,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`W019_Deep_Limestone_Parapet_Corner.png.import`](W019_Deep_Limestone_Parapet_Corner.png.import)
 - [`W020_Deep_Limestone_Corner_Without_Sea.png`](W020_Deep_Limestone_Corner_Without_Sea.png)
 - [`W020_Deep_Limestone_Corner_Without_Sea.png.import`](W020_Deep_Limestone_Corner_Without_Sea.png.import)
+- [`W021_Vine_Covered_Compass_Ruin_Wall.png`](W021_Vine_Covered_Compass_Ruin_Wall.png)
+- [`W021_Vine_Covered_Compass_Ruin_Wall.png.import`](W021_Vine_Covered_Compass_Ruin_Wall.png.import)
+- [`W022_Isometric_Ivy_Fantasy_Wall.png`](W022_Isometric_Ivy_Fantasy_Wall.png)
+- [`W022_Isometric_Ivy_Fantasy_Wall.png.import`](W022_Isometric_Ivy_Fantasy_Wall.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
