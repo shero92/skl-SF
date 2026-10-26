@@ -42,5 +42,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0030_hero_room_study_table_views.md`](TASK-0030_hero_room_study_table_views.md)
 - [`TASK-0031_hero_room_study_bookshelf_views.md`](TASK-0031_hero_room_study_bookshelf_views.md)
 - [`TASK-0032_hero_room_study_chest_views.md`](TASK-0032_hero_room_study_chest_views.md)
+- [`TASK-0033_render_the_living_layer_0_background_in_godot.md`](TASK-0033_render_the_living_layer_0_background_in_godot.md)
+- [`TASK-0034_enforce_four_direction_variants_for_upright_blocks.md`](TASK-0034_enforce_four_direction_variants_for_upright_blocks.md)
+- [`TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md`](TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

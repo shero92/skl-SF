@@ -86,7 +86,8 @@
           "depends_on": [],
           "after": [
             "g1-m2-bg-schema"
-          ]
+          ],
+          "task_id": "TASK-0034"
         },
         {
           "key": "g1-m4-bg-render",
@@ -105,7 +106,8 @@
           "depends_on": [],
           "after": [
             "g1-m2-bg-schema"
-          ]
+          ],
+          "task_id": "TASK-0033"
         },
         {
           "key": "g1-m5-shadow-light",
@@ -121,7 +123,8 @@
           "priority": "normal",
           "agent": "codex",
           "depends_on": [],
-          "after": []
+          "after": [],
+          "task_id": "TASK-0035"
         },
         {
           "key": "g1-m6-sort-mount",

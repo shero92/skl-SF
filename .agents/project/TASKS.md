@@ -39,3 +39,6 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0030](../tasks/TASK-0030_hero_room_study_table_views.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0019 |
 | [TASK-0031](../tasks/TASK-0031_hero_room_study_bookshelf_views.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0020 |
 | [TASK-0032](../tasks/TASK-0032_hero_room_study_chest_views.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0021 |
+| [TASK-0033](../tasks/TASK-0033_render_the_living_layer_0_background_in_godot.md) | todo | unassigned | TASK-0009 | none |
+| [TASK-0034](../tasks/TASK-0034_enforce_four_direction_variants_for_upright_blocks.md) | todo | unassigned | TASK-0009 | none |
+| [TASK-0035](../tasks/TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md) | todo | unassigned | none | none |
