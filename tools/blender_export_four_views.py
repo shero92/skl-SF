@@ -103,7 +103,7 @@ def main():
         "note": "Assign four DISTINCT environment catalog IDs after visual approval; never auto-publish to maps."
     }
     (output / f"{args.prefix}_manifest.json").write_text(
-        json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"Rendered four review-only sprites to {output}")
 
 
