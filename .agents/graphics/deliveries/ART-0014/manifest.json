@@ -1,0 +1,266 @@
+{
+  "request_id": "ART-0014",
+  "task_id": "TASK-0025",
+  "status": "rendered_unreviewed",
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01.png",
+      "sha256": "d5d5a5419667e09c2a68b4e5db067e80e225a222ed9ac410dfcf93317968b08d",
+      "pixel_size": [
+        142,
+        155
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          10.0,
+          10.0
+        ],
+        "tile_top_right": [
+          74.0,
+          10.0
+        ],
+        "tile_bottom_left": [
+          10.0,
+          74.0
+        ],
+        "tile_bottom_right": [
+          74.0,
+          74.0
+        ]
+      },
+      "builder": "broken_floor_edge",
+      "params": {
+        "thickness": 0.22,
+        "chips": 3,
+        "kind": "edge",
+        "seed": 11
+      },
+      "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01@4x.png",
+      "master_sha256": "4bdb844a1d347ae103f88e544680cd36242a0597330db831491cdc18f632365d",
+      "shadow": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01_shadow.png"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02.png",
+      "sha256": "9c4c58c29c194c659543350c8f93ade2cb793cda39b0c447a8e438fd8e27fd45",
+      "pixel_size": [
+        142,
+        155
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          10.0,
+          9.75
+        ],
+        "tile_top_right": [
+          74.0,
+          9.75
+        ],
+        "tile_bottom_left": [
+          10.0,
+          73.75
+        ],
+        "tile_bottom_right": [
+          74.0,
+          73.75
+        ]
+      },
+      "builder": "broken_floor_edge",
+      "params": {
+        "thickness": 0.22,
+        "chips": 3,
+        "kind": "edge",
+        "seed": 23
+      },
+      "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02@4x.png",
+      "master_sha256": "ee186ef21e812b198dada1a27f7b5d5b904d9e557d0d8a8245f78a98bb9aec56",
+      "shadow": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02_shadow.png"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left.png",
+      "sha256": "49de69b8bb32503d0e5c326605f1885d1388f92530d0384d4aec676667d14e4d",
+      "pixel_size": [
+        147,
+        160
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          15.5,
+          10.25
+        ],
+        "tile_top_right": [
+          79.5,
+          10.25
+        ],
+        "tile_bottom_left": [
+          15.5,
+          74.25
+        ],
+        "tile_bottom_right": [
+          79.5,
+          74.25
+        ]
+      },
+      "builder": "broken_floor_edge",
+      "params": {
+        "thickness": 0.22,
+        "chips": 3,
+        "kind": "corner_left",
+        "seed": 31
+      },
+      "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left@4x.png",
+      "master_sha256": "5fccfbad616be2f98639727d135418e1ccdbd8ff72b66cc729694fcd9613b519",
+      "shadow": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left_shadow.png"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right.png",
+      "sha256": "45042059ad9852c530ecbdae61484318e662ee99481070c9136ca1aea28f7721",
+      "pixel_size": [
+        144,
+        158
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          10.0,
+          10.0
+        ],
+        "tile_top_right": [
+          74.0,
+          10.0
+        ],
+        "tile_bottom_left": [
+          10.0,
+          74.0
+        ],
+        "tile_bottom_right": [
+          74.0,
+          74.0
+        ]
+      },
+      "builder": "broken_floor_edge",
+      "params": {
+        "thickness": 0.22,
+        "chips": 3,
+        "kind": "corner_right",
+        "seed": 47
+      },
+      "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right@4x.png",
+      "master_sha256": "f709ae1283fca45cf931210dac1d5a39a993f3d2a6de458af1eba95b354ec79d",
+      "shadow": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right_shadow.png"
+    }
+  ],
+  "extra_files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01@4x.png",
+      "sha256": "4bdb844a1d347ae103f88e544680cd36242a0597330db831491cdc18f632365d",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01_shadow.png",
+      "sha256": "7192732d75aef669835de3c8fd83183d31508a73e12405fc6c63b67d882ab230",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02@4x.png",
+      "sha256": "ee186ef21e812b198dada1a27f7b5d5b904d9e557d0d8a8245f78a98bb9aec56",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02_shadow.png",
+      "sha256": "2cc871500b655ee63537992ad259148d11aa393251b82ea4ae9f274fdb08e86b",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left@4x.png",
+      "sha256": "5fccfbad616be2f98639727d135418e1ccdbd8ff72b66cc729694fcd9613b519",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left_shadow.png",
+      "sha256": "4de10b04793931c1cef0cea3bd73b15863a6fba07ce71d1621555f5ef748d4fc",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right@4x.png",
+      "sha256": "f709ae1283fca45cf931210dac1d5a39a993f3d2a6de458af1eba95b354ec79d",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right_shadow.png",
+      "sha256": "034c57b545969836e23e3d4aaa3581d8f7af7b6d729977a336cb724a907c9a7d",
+      "role": "separate cast shadow"
+    }
+  ],
+  "qa": {
+    "problems": [],
+    "warnings": [
+      "hero_broken_floor_edge_01.png vs hero_broken_floor_edge_02.png: nearly identical (score 3.93); fine for variants, a defect if they must be distinct facings"
+    ],
+    "expected_warnings": [],
+    "pairs": [
+      {
+        "a": "hero_broken_floor_edge_01.png",
+        "b": "hero_broken_floor_edge_02.png",
+        "same": 3.93,
+        "mirror": 76.48,
+        "rot90": 79.28
+      },
+      {
+        "a": "hero_broken_floor_edge_01.png",
+        "b": "hero_broken_floor_corner_left.png",
+        "same": 11.25,
+        "mirror": 70.74,
+        "rot90": 74.34
+      },
+      {
+        "a": "hero_broken_floor_edge_01.png",
+        "b": "hero_broken_floor_corner_right.png",
+        "same": 9.38,
+        "mirror": 79.05,
+        "rot90": 77.57
+      },
+      {
+        "a": "hero_broken_floor_edge_02.png",
+        "b": "hero_broken_floor_corner_left.png",
+        "same": 10.87,
+        "mirror": 70.95,
+        "rot90": 74.82
+      },
+      {
+        "a": "hero_broken_floor_edge_02.png",
+        "b": "hero_broken_floor_corner_right.png",
+        "same": 8.04,
+        "mirror": 79.19,
+        "rot90": 78.02
+      },
+      {
+        "a": "hero_broken_floor_corner_left.png",
+        "b": "hero_broken_floor_corner_right.png",
+        "same": 13.86,
+        "mirror": 73.93,
+        "rot90": 72.68
+      }
+    ]
+  },
+  "provenance": {
+    "tool": "blender",
+    "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
+    "spec": "tools/blender/specs/ART-0014.json",
+    "toolkit_commit": "e9aa5fb183035a87b0a16b746c14f1271fc53471",
+    "producing_agent": "claude",
+    "ai_image_generation": false
+  },
+  "reference": {
+    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+    "sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+    "owner_confirmed": false
+  },
+  "review": {
+    "visual_approval": null,
+    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
+  },
+  "cost": "unknown"
+}

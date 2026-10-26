@@ -1,6 +1,6 @@
 ---
 id: ART-0014
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0025
 dedupe_key: hero_room_broken_floor_edge
@@ -57,3 +57,10 @@ issue: 20
 - Deliver visible authored facings first; retain remaining named views as deferred, never claim incomplete sets support four-way reuse.
 - All proposed native sizes remain provisional until specialist calibration; provide measured native display size, ground footprint, origin, seam/mount interfaces and separate collision/shadow metadata.
 - Reuse existing approved-quality candidates first. Keep blocked_reference until authenticated reference and calibrated specifications are reviewed. No production art or readiness approval is created by this amendment.
+
+## Delivery (Blender, 2026-10-26)
+- Built and rendered by Claude Code with tools/blender_factory.py (spec tools/blender/specs/ART-0014.json, Blender 5.2.3 LTS, Cycles); no AI image generation.
+- Files (native 64 px/tile top face plus visible slab thickness below; @4x masters and separate *_shadow.png): hero_broken_floor_edge_01.png 142x155 sha256 d5d5a5419667, hero_broken_floor_edge_02.png 142x155 sha256 9c4c58c29c19, hero_broken_floor_corner_left.png 147x160 sha256 49de69b8bb32, hero_broken_floor_corner_right.png 144x158 sha256 45042059ad98.
+- tile_top_left anchor per file is in manifest.json (anchors_px), for alignment with the 64 px floor grid and F007/F012/F013.
+- Technical QA: no problems; halo 0-0.7% of soft edge pixels. Open warning: edge_01 ~ edge_02 (two intended variants differ only along the broken edge).
+- Reference SHA-256 01d91889...3119c (1536x1024), not owner-confirmed. Unapproved: the visual check happens on the final Godot capture.

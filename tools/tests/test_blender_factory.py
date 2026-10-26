@@ -53,6 +53,39 @@ class Specs(unittest.TestCase):
         self.assertGreater(proj["sun"]["azimuth_deg"], 90, "light comes from the upper left")
 
 
+class Downscale(unittest.TestCase):
+    def test_native_downscale_has_no_dark_halo(self):
+        # Transparent pixels carry black RGB; resampling must not bleed it into anti-aliased edges.
+        with tempfile.TemporaryDirectory() as tmp:
+            master = Image.new("RGBA", (256, 256), (0, 0, 0, 0))
+            ImageDraw.Draw(master).ellipse((30, 30, 226, 226), fill=(230, 190, 120, 255))
+            master.save(Path(tmp) / "m.png")
+            bf.downscale(Path(tmp) / "m.png", Path(tmp) / "n.png", 4)
+            native = Image.open(Path(tmp) / "n.png")
+            self.assertEqual(native.size, (64, 64))
+            soft = [p for p in native.getdata() if 32 <= p[3] < 200]  # below ~32 alpha colour is unrecoverable
+            self.assertTrue(soft, "anti-aliased edge expected")
+            self.assertGreater(min(p[0] for p in soft), 200, "edge pixels keep the shape colour, no dark fringe")
+            self.assertEqual(art_qa.check(tmp, ["n.png"])["files"][0]["halo_fraction"], 0.0)
+
+    def test_halo_means_contrast_with_neighbours_not_dark_geometry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dark = Image.new("RGBA", (40, 40), (0, 0, 0, 0))
+            d = ImageDraw.Draw(dark)
+            d.rectangle((10, 10, 29, 29), fill=(30, 22, 15, 255))   # dark shaded face
+            d.rectangle((9, 9, 30, 30), outline=(5, 4, 3, 120))     # soft edge as dark as its face
+            dark.save(Path(tmp) / "dark.png")
+            halo = Image.new("RGBA", (40, 40), (0, 0, 0, 0))
+            d = ImageDraw.Draw(halo)
+            d.rectangle((10, 10, 29, 29), fill=(220, 180, 110, 255))  # bright stone
+            d.rectangle((9, 9, 30, 30), outline=(0, 0, 0, 120))       # black fringe around it
+            halo.save(Path(tmp) / "halo.png")
+            report = art_qa.check(tmp, ["dark.png", "halo.png"])
+            files = {Path(f["path"]).name: f for f in report["files"]}
+            self.assertEqual(files["dark.png"]["problems"], [])
+            self.assertTrue(any("halo" in p for p in files["halo.png"]["problems"]))
+
+
 class ExpectedSimilar(unittest.TestCase):
     def test_only_owner_accepted_pairs_leave_the_warnings(self):
         spec = {"expected_similar": [{"pair": ["wall_east", "wall_west"], "reason": "orthographic side walls"}]}

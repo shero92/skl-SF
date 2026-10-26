@@ -96,6 +96,7 @@ def downscale(src: Path, dst: Path, factor: int) -> list[int]:
     from PIL import Image
     im = Image.open(src).convert("RGBA")
     if factor > 1:
+        # Pillow premultiplies RGBA while resampling, so transparent black pixels do not bleed into edges.
         im = im.resize((max(1, round(im.width / factor)), max(1, round(im.height / factor))), Image.Resampling.LANCZOS)
     im.save(dst)
     return list(im.size)

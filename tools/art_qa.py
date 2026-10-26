@@ -46,13 +46,24 @@ def stats(path):
         info["problems"].append("content touches/clips the canvas edge")
     if partial > 0.15:
         info["problems"].append("large semi-transparent area (possible halo/fringe)")
-    soft = [p for p, v in zip(_pixels(im.convert("RGB")), alpha) if 0 < v < 200]
-    if soft:
-        light = sum(min(p) > 235 for p in soft) / len(soft)
-        dark = sum(max(p) < 20 for p in soft) / len(soft)
-        info["fringe_white_fraction"], info["fringe_black_fraction"] = round(light, 3), round(dark, 3)
-        if light > 0.3 or dark > 0.3:
-            info["problems"].append("white/black halo on soft edges")
+    # A halo is a soft edge pixel whose brightness contrasts strongly with the opaque pixels it borders;
+    # dark edges next to dark (shaded) geometry are not a halo.
+    rgb = _pixels(im.convert("RGB"))
+    luma = [(r * 299 + g * 587 + b * 114) // 1000 for r, g, b in rgb]
+    soft = halo = 0
+    for y in range(1, h - 1):
+        row = y * w
+        for x in range(1, w - 1):
+            i = row + x
+            if not 32 <= alpha[i] < 200:
+                continue
+            near = [luma[j] for j in (i - w - 1, i - w, i - w + 1, i - 1, i + 1, i + w - 1, i + w, i + w + 1) if alpha[j] >= 250]
+            if near:
+                soft += 1
+                halo += abs(luma[i] - sum(near) / len(near)) > 120
+    info["soft_edge_pixels"], info["halo_fraction"] = soft, round(halo / soft, 3) if soft else 0.0
+    if soft and halo / soft > 0.15:
+        info["problems"].append("halo: soft edge pixels contrast with the opaque pixels they border")
     return info, im
 
 
