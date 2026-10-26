@@ -32,6 +32,20 @@
     },
     {
       "agents": [
+        "claude"
+      ],
+      "cached_input_tokens": 89705,
+      "input_tokens": 100605,
+      "known_usd": 0.171417,
+      "output_tokens": 3317,
+      "reasoning_output_tokens": 0,
+      "receipts": 1,
+      "task_id": "TASK-0035",
+      "unknown_costs": 0,
+      "unknown_token_receipts": 0
+    },
+    {
+      "agents": [
         "codex"
       ],
       "cached_input_tokens": 448128,
@@ -87,5 +101,5 @@
       "unknown_token_receipts": 2
     }
   ],
-  "total_known_usd": 0.7167
+  "total_known_usd": 0.888117
 }

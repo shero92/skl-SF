@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| claude | TASK-0035 | map_factory/scripts/shadow_factory.gd | 2026-10-26T14:00:59.854977+00:00 | in_progress | unknown |
+| — | none | — | — | — | — |

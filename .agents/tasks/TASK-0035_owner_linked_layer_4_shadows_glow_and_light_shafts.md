@@ -1,6 +1,6 @@
 ---
 id: TASK-0035
-status: in_progress
+status: done
 owner: claude
 branch: work/task-0035-6cf6510d
 agent: claude
@@ -45,3 +45,6 @@ Outcome: Every placement with shadow data gets an owner-linked shadow at z 20; l
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T14:00:59.842121+00:00
+
+## Runner evidence
+- Merged 5fd65605bf48c84cca221b9e87794487551e02f1; post-merge validation passed
