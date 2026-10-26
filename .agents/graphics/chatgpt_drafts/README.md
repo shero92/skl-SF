@@ -6,7 +6,7 @@ The user-authorized ChatGPT graphics conversation created a download named
 `hero_room_art_pack_chatgpt_drafts_2026-10-26.zip`, containing 22 draft RGBA PNGs
 and four original, unmodified image crops from the owner's style reference.
 The 22 draft filenames correspond to requests ART-0002, ART-0003, ART-0006,
-ART-0007, ART-0010–ART-0018 (some requests have multiple frames).
+ART-0007, ART-0010, ART-0011, ART-0012, ART-0013, ART-0014,\nART-0015, ART-0016, ART-0017, and ART-0018 (some have multiple frames).
 The ZIP also includes a full manifest with original file SHA-256 checksums,
 pixel sizes, reviews and a contact sheet.
 
