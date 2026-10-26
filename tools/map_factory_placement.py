@@ -28,6 +28,8 @@ def validate_contract(record):
     if cfg.get("mode") == "mounted":
         if cfg.get("mount_on_categories") is None or not isinstance(cfg["mount_on_categories"], list):
             raise ValueError(f'{record.get("id")}: mounted contract needs mount_on_categories')
+        if "mount_on_asset_ids" in cfg and (not isinstance(cfg["mount_on_asset_ids"], list) or not cfg["mount_on_asset_ids"]):
+            raise ValueError("mount_on_asset_ids must be nonempty if set")
         return cfg
     if cfg.get("mode") != "floor":
         raise ValueError(f'{record.get("id")}: placement_contract mode must be floor or mounted')
@@ -192,4 +194,6 @@ def validate_grid_placements(snapshot, catalog):
                     raise ValueError(f'{item["instance_id"]}: mount target missing')
                 if catalog[host["id"]]["category"] not in cfg["mount_on_categories"]:
                     raise ValueError(f'{item["instance_id"]}: accessory cannot mount on host category')
+                if cfg.get("mount_on_asset_ids") and host["id"] not in cfg["mount_on_asset_ids"]:
+                    raise ValueError(f'{item["instance_id"]}: accessory can only mount on allowed asset IDs')
     return resolved
