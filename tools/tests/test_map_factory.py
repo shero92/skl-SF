@@ -164,5 +164,30 @@ class Maps(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"outside floor footprint"):
             mf.validate_room(room,catalog)
 
+    def test_new_and_moved_furniture_snaps_to_grid_without_manual_xy(self):
+        from copy import deepcopy
+        snap=deepcopy(self.base)
+        snap.pop("layer_stack", None)
+        snap["floor_ids"]=["F001"]
+        catalog=mf.asset_catalog(self.root)
+        catalog["F001"]["tags"]=["stone"]
+        catalog["P001"]["placement_contract"]={"schema_version":1,"mode":"floor",
+                "footprint_cells":[2,3],"occupancy_group":"solid",
+                "allowed_floor_tags":["stone"],"measurement_status":"provisional"}
+        snap["objects"]=[]
+        placed=mf.apply_changes(snap,{"changes":[
+            {"op":"add_block","layer":"objects",
+             "block":{"id":"P001","instance_id":"GridBed",
+                      "grid_placement":{"cell":[1,1],"facing":"north"}}}]},catalog)
+        self.assertEqual((placed["objects"][0]["x"],placed["objects"][0]["y"]),(128,256))
+        self.assertTrue(mf.validate_room(placed,catalog))
+        moved=mf.apply_changes(placed,{"changes":[
+            {"op":"update_block","instance_id":"GridBed",
+             "set":{"grid_placement":{"cell":[2,1],"facing":"north"}}}]},catalog)
+        self.assertEqual((moved["objects"][0]["x"],moved["objects"][0]["y"]),(192,256))
+        moved["objects"][0]["x"]=77
+        with self.assertRaisesRegex(ValueError,"exact grid"):
+            mf.validate_room(moved,catalog)
+
 if __name__=="__main__":
     unittest.main()
