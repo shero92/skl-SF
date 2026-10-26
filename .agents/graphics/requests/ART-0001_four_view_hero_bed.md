@@ -6,6 +6,7 @@ task: TASK-0002
 dedupe_key: hero_bed_four_perspective_views
 existing_asset_ids: P001
 output_paths: .agents/graphics/deliveries/ART-0001/hero_bed_north.png, .agents/graphics/deliveries/ART-0001/hero_bed_east.png, .agents/graphics/deliveries/ART-0001/hero_bed_south.png, .agents/graphics/deliveries/ART-0001/hero_bed_west.png
+issue: 14
 ---
 # Hero Bed: four real three-quarter perspective views
 
