@@ -632,7 +632,8 @@ def apply_changes(snapshot, manifest, catalog):
             key=operation["key"]
             allowed={"description","background_color","canvas_size","tile_size",
                      "size","ground_offset","floor_ids","floor_footprint","floor_tile_style","occlusion_mode","ocean","effects",
-                     "source_image","floor_art","composition_reference", "navigation", "visual_qa"}
+                     "source_image","floor_art","composition_reference", "navigation", "visual_qa",
+                      "placement_policy", "requires_reviewed_footprints"}
             if key not in allowed:
                 raise ValueError("Forbidden map-only property: "+str(key))
             result[key]=deepcopy(operation["value"])
