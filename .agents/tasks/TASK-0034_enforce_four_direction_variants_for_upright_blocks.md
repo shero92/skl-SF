@@ -1,6 +1,6 @@
 ---
 id: TASK-0034
-status: in_progress
+status: blocked
 owner: claude
 branch: work/task-0034-d4862094
 agent: claude
@@ -45,3 +45,6 @@ Outcome: CLI rejects rotate mode for upright categories and requires n/e/s/w var
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T13:16:28.895762+00:00
+
+## Runner evidence
+- Runner failed: -m unittest returned 1; tools/run_tests.py --changed returned 1
