@@ -1,6 +1,6 @@
 ---
 id: TASK-0034
-status: in_progress
+status: done
 owner: claude
 branch: work/task-0034-b10ef880
 agent: claude
@@ -54,3 +54,6 @@ Outcome: CLI rejects rotate mode for upright categories and requires n/e/s/w var
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T13:29:49.401223+00:00
+
+## Runner evidence
+- Merged 5e4070ad1d7663d8b7f6230b90afb12e405b3fb2; post-merge validation passed
