@@ -1,13 +1,13 @@
 ---
 id: TASK-0033
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: codex
+branch: work/task-0033-e2b138c2
 agent: codex
 touches: map_factory/scripts/background_factory.gd,map_factory/scripts/room_factory.gd
 test: py -3 tools/run_tests.py --only map_layers --only godot_map_smoke
 done_when: Sea cycles E010-E014 wave frames at the JSON fps, clouds scroll, foam animates, all at z 0; Godot smoke asserts animated background nodes exist
-started_at: unknown
+started_at: 2026-10-26T13:16:00.417845+00:00
 cost_usd: unknown
 depends_on: TASK-0009
 issue: none
@@ -42,3 +42,6 @@ Outcome: Sea cycles E010-E014 wave frames at the JSON fps, clouds scroll, foam a
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T13:16:00.408854+00:00
