@@ -43,6 +43,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`map_factory_godot_smoke.gd.uid`](map_factory_godot_smoke.gd.uid)
 - [`map_factory_layers.py`](map_factory_layers.py)
 - [`map_factory_orientation.py`](map_factory_orientation.py)
+- [`map_factory_placement.py`](map_factory_placement.py)
 - [`prepare_map_reference.py`](prepare_map_reference.py)
 - [`process_map_intake.py`](process_map_intake.py)
 - [`quality_guard.py`](quality_guard.py)

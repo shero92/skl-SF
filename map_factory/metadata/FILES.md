@@ -10,6 +10,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`PLACEMENT_CONTRACT.md`](PLACEMENT_CONTRACT.md)
 - [`asset_audit.json`](asset_audit.json)
 - [`asset_index.json`](asset_index.json)
 - [`asset_schema.json`](asset_schema.json)
