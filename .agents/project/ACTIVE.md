@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| — | none | — | — | — | — |
+| claude | TASK-0034 | tools/map_factory_cli.py, tools/tests/test_map_cardinal.py | 2026-10-26T13:29:49.411346+00:00 | in_progress | unknown |

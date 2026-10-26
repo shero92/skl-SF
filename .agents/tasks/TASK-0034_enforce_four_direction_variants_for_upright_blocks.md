@@ -1,13 +1,13 @@
 ---
 id: TASK-0034
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0034-b10ef880
 agent: claude
 touches: tools/map_factory_cli.py,tools/tests/test_map_cardinal.py
 test: py -3 -m unittest discover -s tools/tests -p test_map_cardinal.py
 done_when: CLI rejects rotate mode for upright categories and requires n/e/s/w variant IDs; flat floors and rugs keep rotate mode
-started_at: unknown
+started_at: 2026-10-26T13:29:49.411346+00:00
 cost_usd: unknown
 depends_on: TASK-0009
 issue: none
@@ -51,3 +51,6 @@ Outcome: CLI rejects rotate mode for upright categories and requires n/e/s/w var
 
 ## Runner evidence
 - Reset to todo: previous attempt (claude, 2026-10-26 14:16) added a correct upright-rotate rejection in tools/map_factory_cli.py, but test_rotating_flat_base_turns_mounted_offset changed W001/P001 categories in the test catalog AFTER the v1 snapshot was built, so loading it failed with "layer_stack differs from actual source blocks". Change catalog categories before the fixture snapshot is created (or use assets that are already flat), keep the existing mounted-offset assertions, and run test_map_cardinal.py. Patch saved in .agents/monitoring/.local/TASK-0034-d4862094/claude-change.patch.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T13:29:49.401223+00:00
