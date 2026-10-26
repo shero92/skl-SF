@@ -36,6 +36,14 @@ class Specs(unittest.TestCase):
                 wanted = [f".agents/graphics/deliveries/{spec['art_id']}/{o['name']}.png" for o in spec["outputs"]]
                 self.assertEqual(sorted(wanted), sorted(bf.request_outputs(spec["art_id"])))
 
+    def test_candidate_specs_load(self):
+        specs = sorted((bf.SPECS / "candidates").glob("*.json"))
+        self.assertTrue(specs)
+        for spec_path in specs:
+            with self.subTest(spec=spec_path.name):
+                spec = bf.load_spec(spec_path)
+                self.assertTrue(spec.get("candidate"))
+
     def test_invalid_specs_are_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "spec.json"
@@ -149,6 +157,23 @@ class BlenderRenders(unittest.TestCase):
             report = art_qa.check(Path(tmp) / "out", ["w.png", "e.png"])
             self.assertEqual(report["problems"], [], report)
             self.assertEqual(report["warnings"], [], "leaning side walls show different inner faces")
+
+    def test_side_wall_path_is_one_mesh_standing_on_every_floor_step(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            spec = Path(tmp) / "spec.json"
+            path = [[1, 0], [1, -1], [0, -1], [0, -2]]
+            spec.write_text(json.dumps({"builder": "side_wall_path", "projection": {"supersample": 1, "samples": 4},
+                                        "params": {"path": path, "inside": "left", "height": 0.8, "thickness": 0.3,
+                                                   "lean": -0.2, "seed": 2, "ivy": False, "rubble": 0},
+                                        "outputs": [{"name": "s", "facing": "west"}]}))
+            meta = bf.render(spec, Path(tmp) / "out")[0]
+            ox, oy = meta["anchors_px"]["grid_origin"]
+            alpha = Image.open(Path(tmp) / "out/s.png").getchannel("A")
+            # Just outside each segment's floor-edge midpoint, a little above the floor, there is wall.
+            for (x0, y0), (x1, y1), out in zip(path, path[1:], ((-1, 0), (0, 1), (-1, 0))):
+                mx, my = (x0 + x1) / 2 + out[0] * 0.15, (y0 + y1) / 2 + out[1] * 0.15
+                px, py = ox + mx * 64 - 0.2 * 0.3 * 64, oy - my * 64 - 0.3 * 64
+                self.assertGreater(alpha.getpixel((round(px), round(py))), 200, (x0, y0, x1, y1))
 
     def test_wall_facings_are_real_renders_not_bitmap_copies(self):
         with tempfile.TemporaryDirectory() as tmp:

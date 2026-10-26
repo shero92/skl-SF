@@ -73,6 +73,18 @@ def add_sun(proj):
     # Direction the light travels: from azimuth (measured from +X counter-clockwise) and elevation, toward the scene.
     toward = -Vector((math.cos(az) * math.cos(el), math.sin(az) * math.cos(el), math.sin(el)))
     sun.rotation_euler = toward.to_track_quat("-Z", "Y").to_euler()
+    f = proj.get("fill")
+    if f:
+        # Warm shadowless fill from the front right so faces turned away from the sun stay golden.
+        fdata = bpy.data.lights.new("fill", "SUN")
+        fdata.energy, fdata.color = f["strength"], f["color"]
+        fdata.angle = math.radians(f.get("angle_deg", 20.0))
+        fdata.use_shadow = False
+        fill = bpy.data.objects.new("fill", fdata)
+        bpy.context.scene.collection.objects.link(fill)
+        faz, fel = math.radians(f["azimuth_deg"]), math.radians(f["elevation_deg"])
+        ftoward = -Vector((math.cos(faz) * math.cos(fel), math.sin(faz) * math.cos(fel), math.sin(fel)))
+        fill.rotation_euler = ftoward.to_track_quat("-Z", "Y").to_euler()
     return sun
 
 
@@ -132,8 +144,8 @@ def to_pixels(frame, point, proj):
             round((frame["vmax"] - v) * frame["px"] / frame["supersample"], 2)]
 
 
-def shadow_catcher(size=12.0):
-    bpy.ops.mesh.primitive_plane_add(size=size, location=(0, 0, 0))
+def shadow_catcher(size=12.0, center=(0.0, 0.0)):
+    bpy.ops.mesh.primitive_plane_add(size=size, location=(center[0], center[1], 0))
     plane = bpy.context.active_object
     plane.name = "shadow_catcher"
     plane.is_shadow_catcher = True
@@ -147,7 +159,11 @@ def render(path):
 
 def render_color_and_shadow(objects, color_path, shadow_path):
     """Color pass (no shadow on the ground) and a separate shadow-only pass on the same canvas."""
-    catcher = shadow_catcher()
+    # Centre the catcher under the pieces: long side walls sit far from the world origin.
+    pts = [obj.matrix_world @ Vector(c) for obj in objects for c in obj.bound_box]
+    center = ((min(p.x for p in pts) + max(p.x for p in pts)) / 2, (min(p.y for p in pts) + max(p.y for p in pts)) / 2)
+    span = max(max(p.x for p in pts) - min(p.x for p in pts), max(p.y for p in pts) - min(p.y for p in pts))
+    catcher = shadow_catcher(size=max(12.0, span + 8.0), center=center)
     catcher.hide_render = True
     render(color_path)
     catcher.hide_render = False
@@ -266,9 +282,22 @@ def lean(objects, k):
         obj.matrix_world = m @ obj.matrix_world
 
 
-def ivy(name, x_range, face_y, z_top, rng_, density=1.0, hang=0.9, flowers=0.12):
+def join(objects, name):
+    """Apply modifiers and merge the objects into one mesh object (materials kept per face)."""
+    bpy.ops.object.select_all(action="DESELECT")
+    for obj in objects:
+        obj.select_set(True)
+    bpy.context.view_layer.objects.active = objects[0]
+    bpy.ops.object.convert(target="MESH")
+    bpy.ops.object.join()
+    merged = bpy.context.view_layer.objects.active
+    merged.name = name
+    return merged
+
+
+def ivy(name, x_range, face_y, z_top, rng_, density=1.0, hang=0.9, flowers=0.12, leaf_scale=1.0):
     """Ivy hanging from z_top down a wall face at y = face_y (front faces -y): leaves and small
-    white flowers as two meshes. Returns the created objects."""
+    white flowers as two meshes; leaf_scale enlarges leaves so they read at 64 px per tile."""
     import bmesh
     leaf_mat = flat(name + "_leaf", (0.10, 0.27, 0.07), roughness=0.55)
     leaf_dark = flat(name + "_leaf_dark", (0.05, 0.16, 0.04), roughness=0.6)
@@ -286,7 +315,7 @@ def ivy(name, x_range, face_y, z_top, rng_, density=1.0, hang=0.9, flowers=0.12)
             z -= 0.045
             x += rng_.uniform(-0.025, 0.025)
             for _ in range(2):
-                size = rng_.uniform(0.035, 0.06) * (1.0 - 0.35 * i / max(1, steps))
+                size = rng_.uniform(0.035, 0.06) * leaf_scale * (1.0 - 0.35 * i / max(1, steps))
                 cx, cz = x + rng_.uniform(-0.03, 0.03), z + rng_.uniform(-0.02, 0.02)
                 cy = face_y - rng_.uniform(0.012, 0.05)
                 tilt = rng_.uniform(-0.6, 0.6)

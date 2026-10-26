@@ -1,0 +1,171 @@
+{
+  "candidate_id": "hero_room_01_blender_v3",
+  "base": {
+    "map_id": "hero_room_01",
+    "version": 11
+  },
+  "status": "candidate_unapproved",
+  "notes": "Review layout only (v3, 2026-10-26): ART-0014 floor edges as in v1/v2; the side walls are now one continuous ruined wall per side (staged candidate render, tools/blender/specs/candidates/hero_room_01_v3_side_walls.json) following the floor steps, low with broken crenellations, lean 0.2, warm fill light, larger denser ivy. Built over the published v0011; nothing enters map_factory/parts or the catalog until the owner approves the capture.",
+  "hide_instances": [
+    "LeftPerimeterWallMid",
+    "LeftPerimeterWallLow",
+    "RightPerimeterWallMid",
+    "RightPerimeterWallLow",
+    "W015_back_objects_006",
+    "W015_back_objects_007"
+  ],
+  "hide_floor_cells": [
+    [
+      3,
+      9
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      9
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      11,
+      9
+    ],
+    [
+      12,
+      9
+    ],
+    [
+      13,
+      9
+    ]
+  ],
+  "pieces": [
+    {
+      "art": "ART-0014",
+      "file": "hero_broken_floor_corner_left",
+      "anchor": "tile_top_left",
+      "point": "top_left",
+      "layer": "ground",
+      "cells": [
+        [
+          3,
+          9
+        ]
+      ]
+    },
+    {
+      "art": "ART-0014",
+      "file": "hero_broken_floor_edge_01",
+      "anchor": "tile_top_left",
+      "point": "top_left",
+      "layer": "ground",
+      "cells": [
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          12,
+          9
+        ]
+      ]
+    },
+    {
+      "art": "ART-0014",
+      "file": "hero_broken_floor_edge_02",
+      "anchor": "tile_top_left",
+      "point": "top_left",
+      "layer": "ground",
+      "cells": [
+        [
+          5,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          11,
+          9
+        ]
+      ]
+    },
+    {
+      "art": "ART-0014",
+      "file": "hero_broken_floor_corner_right",
+      "anchor": "tile_top_left",
+      "point": "top_left",
+      "layer": "ground",
+      "cells": [
+        [
+          13,
+          9
+        ]
+      ]
+    },
+    {
+      "source": "map_factory/candidates/renders/hero_room_01_blender_v3",
+      "file": "hero_side_wall_west",
+      "anchor": "grid_origin",
+      "point": "top_left",
+      "layer": "walls",
+      "cells": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "source": "map_factory/candidates/renders/hero_room_01_blender_v3",
+      "file": "hero_side_wall_east",
+      "anchor": "grid_origin",
+      "point": "top_left",
+      "layer": "walls",
+      "cells": [
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  ]
+}

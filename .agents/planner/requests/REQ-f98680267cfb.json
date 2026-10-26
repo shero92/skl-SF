@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Hero Room candidate v3: continuous ruined side walls with lean 0.2, warm fill light and larger ivy",
+  "problem": "Owner request 2026-10-26 after candidate v2 (walls lean too far, zigzag at floor steps, grey shaded faces, ivy unreadable): lean about 0.2, lower ruined walls with broken crenellated tops, one continuous mesh per side following the floor steps, warm fill light on shaded faces, larger denser ivy; re-capture and compare.",
+  "file": "tools/blender/builders.py",
+  "line": null,
+  "done_when": "side_wall_path builder renders one continuous lower ruined wall per side along the floor steps (lean 0.2, crenellations, warm fill light, larger ivy); staged as unapproved candidate art; candidate v3 captured in Godot and compared with the reference, v1 and v2",
+  "test": "py -3 tools/run_tests.py --only blender_factory --only candidate_room",
+  "priority": "critical",
+  "kind": "feature",
+  "agent": "claude",
+  "task_id": "TASK-0049"
+}

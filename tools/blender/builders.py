@@ -2,9 +2,11 @@
 
 anchors maps names to world points (mathutils.Vector) that render_part converts to pixels.
 """
+import math
+
 import bmesh
 import bpy
-from mathutils import Vector
+from mathutils import Matrix, Vector
 
 import lib
 
@@ -158,4 +160,96 @@ def broken_floor_edge(spec, facing):
     return objs, anchors
 
 
-BUILDERS = {"calibration_tile": calibration_tile, "wall_run": wall_run, "broken_floor_edge": broken_floor_edge}
+def path_segments(path, inside):
+    """Per segment of a floor-edge polyline: (origin, angle, length, outward normal).
+
+    Pieces are built in a local frame (x along 0..length, front face at y = 0 facing -y, body toward +y);
+    origin/angle place that frame so the front faces the room (`inside` = left | right of the path)."""
+    segs = []
+    for (x0, y0), (x1, y1) in zip(path, path[1:]):
+        dx, dy = x1 - x0, y1 - y0
+        length = math.hypot(dx, dy)
+        theta = math.atan2(dy, dx)
+        left = (-dy / length, dx / length)
+        if inside == "left":
+            segs.append(((x1, y1), theta + math.pi, length, (-left[0], -left[1])))
+        else:
+            segs.append(((x0, y0), theta, length, left))
+    return segs
+
+
+def side_wall_path(spec, facing):
+    """One continuous ruined side wall following the floor edge steps (Hero Room v3).
+
+    params.path: floor-edge vertices in tiles (x = column, y = -row, grid top-left = origin);
+    params.inside: which side of the path the room is on; the inner face stands on the edge and the
+    body extends outward. Low masonry body with broken crenellations, corner pillars, foot rubble and
+    ivy, joined into one mesh and leaned (x += lean * z) so the inner face shows."""
+    p = spec.get("params", {})
+    path = [tuple(v) for v in p["path"]]
+    height, thick = p.get("height", 1.1), p.get("thickness", 0.45)
+    row_h, gap = p.get("row_height", 0.26), p.get("joint", 0.022)
+    r = lib.rng(p.get("seed", 5))
+    stone = lib.limestone("wall_stone", base=(0.70, 0.49, 0.25), dark=(0.38, 0.24, 0.10), seed=r.random() * 10)
+    cap_stone = lib.limestone("cap_stone", base=(0.76, 0.57, 0.31), dark=(0.45, 0.30, 0.13), seed=r.random() * 10)
+    mortar = lib.flat("mortar", (0.28, 0.20, 0.12), roughness=1.0)
+    objs = []
+    segs = path_segments(path, p.get("inside", "left"))
+    for origin, angle, length, _out in segs:
+        local = [lib.block("core", (length, thick - 0.06, height - 0.06), (length / 2, thick / 2, (height - 0.06) / 2),
+                           mortar, bevel=0.0)]
+        # Ruined top line: the body top dips in places, so the course count varies along the run.
+        top = []
+        x = 0.0
+        while x < length - 1e-3:
+            w = min(r.uniform(0.3, 0.42), length - x)
+            top.append((x, x + w, height - (r.uniform(0.0, 0.28) if r.random() < 0.3 else 0.0)))
+            x += w
+        rows = max(1, int(height / row_h))
+        for row in range(rows):
+            z = row * row_h
+            x = -(r.uniform(0.1, 0.25) if row % 2 else 0.0)
+            while x < length - 0.02:
+                w = r.uniform(0.3, 0.55)
+                x0, x1 = max(x, 0.0), min(x + w, length)
+                limit = min(h for a, b, h in top if a < x1 and b > x0)
+                if x1 - x0 > 0.05 and z + row_h <= limit + 1e-3:
+                    size = (x1 - x0 - gap, thick + r.uniform(-0.015, 0.012), row_h - gap)
+                    loc = ((x0 + x1) / 2, thick / 2 - r.uniform(-0.008, 0.012), z + row_h / 2)
+                    local.append(lib.block("stone", size, loc, stone, bevel=r.uniform(0.02, 0.038),
+                                           rotation_z=r.uniform(-0.008, 0.008)))
+                x += w
+        body_top = rows * row_h
+        # Broken crenellations: merlons on the intact stretches, some missing or snapped short.
+        for a, b, h in top:
+            if h < height - 1e-3 or r.random() < 0.3:
+                continue
+            mh = r.uniform(0.12, 0.3)
+            local.append(lib.block("merlon", (b - a - gap * 2, thick + 0.05, mh), ((a + b) / 2, thick / 2, body_top + mh / 2),
+                                   cap_stone, bevel=0.03, rotation_z=r.uniform(-0.03, 0.03)))
+        for _ in range(int(length * p.get("rubble", 2))):
+            s = r.uniform(0.07, 0.14)
+            local.append(lib.block("rubble", (s, s * 0.9, s * 0.7), (r.uniform(0.1, length - 0.1), -r.uniform(0.02, 0.1), s * 0.3),
+                                   stone, bevel=0.025, rotation_z=r.uniform(0, 3.1)))
+        if p.get("ivy", True):
+            local += lib.ivy("ivy", (0.0, length), -0.03, body_top, r, density=p.get("ivy_density", 2.0),
+                             hang=p.get("ivy_hang", 0.8), flowers=p.get("ivy_flowers", 0.3),
+                             leaf_scale=p.get("ivy_leaf_scale", 2.0))
+        m = Matrix.Translation(Vector((origin[0], origin[1], 0.0))) @ Matrix.Rotation(angle, 4, "Z")
+        bpy.context.view_layer.update()
+        for obj in local:
+            obj.matrix_world = m @ obj.matrix_world
+        objs += local
+    # Corner pillars fill the joints where the path steps in or out.
+    for i in range(1, len(path) - 1):
+        oa, ob = segs[i - 1][3], segs[i][3]
+        cx, cy = path[i][0] + thick / 2 * (oa[0] + ob[0]), path[i][1] + thick / 2 * (oa[1] + ob[1])
+        ph = height + r.uniform(0.05, 0.25)
+        objs.append(lib.block("pillar", (thick + 0.04, thick + 0.04, ph), (cx, cy, ph / 2), cap_stone, bevel=0.035))
+    lib.lean(objs, p.get("lean", 0.0))
+    joined = lib.join(objs, "side_wall")
+    return [joined], {"grid_origin": Vector((0.0, 0.0, 0.0))}
+
+
+BUILDERS = {"calibration_tile": calibration_tile, "wall_run": wall_run, "broken_floor_edge": broken_floor_edge,
+            "side_wall_path": side_wall_path}

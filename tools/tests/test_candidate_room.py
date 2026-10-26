@@ -65,6 +65,31 @@ class Resolve(unittest.TestCase):
         self.assertTrue(all(Path(p["texture"]).is_file() for p in r["placements"]))
 
 
+    def test_source_pieces_come_from_a_staged_render_folder(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            layout = fake_repo(root)
+            (root / "renders/c1").mkdir(parents=True)
+            (root / "renders/c1/manifest.json").write_text(json.dumps({"files": [
+                {"path": "renders/c1/side_west.png", "sha256": "c" * 64, "pixel_size": [212, 778],
+                 "anchors_px": {"grid_origin": [62.75, 76.75]}}]}))
+            data = json.loads(layout.read_text())
+            data["pieces"].append({"source": "renders/c1", "file": "side_west", "anchor": "grid_origin", "point": "top_left",
+                                   "layer": "walls", "cells": [[0, 0]]})
+            layout.write_text(json.dumps(data))
+            by = {p["name"]: p for p in cr.resolve(layout, root)["placements"]}
+            self.assertEqual(by["side_west_0_0"]["position"], [226, 225])
+            self.assertEqual(by["side_west_0_0"]["anchor_px"], [62.75, 76.75])
+            self.assertEqual(by["side_west_0_0"]["art"], "renders/c1")
+
+    def test_repository_v3_layout_uses_continuous_side_walls(self):
+        r = cr.resolve(TOOLS.parent / "map_factory/candidates/hero_room_01_blender_v3.json")
+        names = [p["name"] for p in r["placements"]]
+        self.assertIn("hero_side_wall_west_0_0", names)
+        self.assertIn("hero_side_wall_east_0_0", names)
+        self.assertTrue(all(Path(p["texture"]).is_file() for p in r["placements"]))
+
+
 class Compare(unittest.TestCase):
     def test_closer_candidate_scores_lower_and_sheet_is_written(self):
         with tempfile.TemporaryDirectory() as tmp:
