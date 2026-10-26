@@ -3,7 +3,10 @@ from pathlib import Path
 import re
 
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg", ".bmp",
-             ".tif", ".tiff", ".ico", ".aseprite", ".psd", ".exr", ".avif"}
+             ".tif", ".tiff", ".ico", ".aseprite", ".ase", ".psd", ".exr", ".avif"}
+TEXT_EXT = {".md", ".json", ".py", ".gd", ".tscn", ".tres", ".godot",
+            ".cfg", ".ini", ".txt", ".yaml", ".yml", ".toml", ".ps1",
+            ".sh", ".uid", ".csv", ".tsv"}
 GENERATED_NAMES = {"INDEX.md", "FILES.md", "TASKS.md", "ACTIVE.md",
                    "QUEUE.md", "summary.md", "summary.json"}
 FORBIDDEN_PARTS = {"characters", "ui", "portraits", "gameplay"}
@@ -22,18 +25,32 @@ def is_generated(path):
     p = normalize(path)
     return p.split("/")[-1] in GENERATED_NAMES or p.startswith(".agents/project/")
 
+def is_request_record(path, *, directory=False):
+    p = normalize(path)
+    if p == ".agents/graphics/QUEUE.md":
+        return True
+    base = ".agents/graphics/requests"
+    return (directory and p == base) or (
+        p.startswith(base + "/") and Path(p).suffix.lower() in {".md", ".json"})
+
+
+def is_binary_path(path):
+    # Fail closed for unknown formats; directory touches are checked on actual changes.
+    return Path(normalize(path)).suffix.lower() not in TEXT_EXT
+
+
 def is_art(path):
     p = normalize(path)
-    return Path(p).suffix.lower() in IMAGE_EXT or p.startswith((".agents/graphics/", ".agents/planner/goals/")) or "/parts/" in p
+    return Path(p).suffix.lower() in IMAGE_EXT or (p.startswith(".agents/graphics/") and not is_request_record(p, directory=True)) or p.startswith(".agents/planner/goals/") or "/parts/" in p
 
 def touches(raw):
     paths = [normalize(x.strip()) for x in raw.split(",") if x.strip()]
     if not paths or len(paths) != len(set(paths)):
         raise ValueError("Explicit nonduplicate touches required")
     for path in paths:
-        if "*" in path or is_art(path) or is_generated(path) or path.startswith(("scenes/ui","tools/generate_character","tools/repaint_")):
+        if any(c in path for c in "*?[]") or is_art(path) or (is_generated(path) and not is_request_record(path)) or (Path(path).suffix and is_binary_path(path)) or path.startswith(("scenes/ui","tools/generate_character","tools/repaint_")):
             raise ValueError("No art or generated boards in coding touches: " + path)
-        if not path.startswith(ALLOWED_PREFIXES):
+        if not path.startswith(ALLOWED_PREFIXES) and not is_request_record(path, directory=True):
             raise ValueError("Outside Map Factory coding scope: " + path)
         if FORBIDDEN_PARTS.intersection(path.lower().split("/")):
             raise ValueError("Character/gameplay/UI path not allowed: " + path)
@@ -50,7 +67,7 @@ def allowed_changed(changed, authorized):
         low=path.lower()
         if FORBIDDEN_PARTS.intersection(low.split("/")) or low.startswith(("scenes/ui", "tools/generate_character", "tools/repaint_", "tools/generate_", "map_factory/parts/")):
             raise ValueError("Forbidden gameplay/art path: "+path)
-        if is_generated(path) or is_art(path) or path in ("AGENTS.md", "project.godot"):
+        if (is_generated(path) and not is_request_record(path)) or is_art(path) or is_binary_path(path) or path in ("AGENTS.md", "project.godot"):
             raise ValueError("No art or generated/policy file edits: " + path)
         if not any(path==a or path.startswith(a.rstrip("/")+"/") for a in auth):
             raise ValueError("Changed path not in task touches: " + path)
@@ -82,6 +99,13 @@ def safe_test(argv):
     i=1
     if executable.startswith("py") and argv[1]=="-3":
         i=2
+    if argv[i:i+1] == ["tools/run_tests.py"]:
+        rest = argv[i+1:]
+        if rest and len(rest) % 2 == 0 and all(
+                rest[n] == "--only" and rest[n+1] in {"map_layers", "map_factory", "godot_map_smoke"}
+                for n in range(0, len(rest), 2)):
+            return argv
+        raise ValueError("Only allowlisted router tests permitted")
     if argv[i:i+2] != ["-m","unittest"]:
         raise ValueError("Only unittest task commands allowed")
     if any(x in argv for x in (";", "&&", "|", ">", "<")):
@@ -97,6 +121,8 @@ def normalize_test(argv):
     only resolves under `discover -s tools/tests`; rewrite a dotted or path module target
     (tools.tests.test_x[.Class[.method]]) into that form, keeping flags and narrowing via -k."""
     argv=list(argv)
+    if "unittest" not in argv:
+        return argv
     i=argv.index("unittest")+1
     rest=argv[i:]
     targets=[a for a in rest if not a.startswith("-")]
@@ -111,6 +137,15 @@ def normalize_test(argv):
 
 def normalize_test_text(text):
     """Stored task form of normalize_test; non-unittest commands are returned unchanged."""
+    smoke = "Godot smoke tools/map_factory_godot_smoke.gd"
+    if text == smoke:
+        return "py -3 tools/run_tests.py --only godot_map_smoke"
+    if text.endswith(" and " + smoke):
+        prefix = text[:-(len(smoke) + 5)]
+        if prefix == "py -3 -m unittest tools.tests.test_map_layers":
+            return "py -3 tools/run_tests.py --only map_layers --only godot_map_smoke"
+        if prefix == "py -3 -m unittest tools.tests.test_map_factory tools.tests.test_map_layers":
+            return "py -3 tools/run_tests.py --only map_factory --only map_layers --only godot_map_smoke"
     try:
         argv=safe_test(text.split())
     except (ValueError, IndexError):

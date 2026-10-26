@@ -16,3 +16,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0007](../tasks/TASK-0007_safe_parallel_runner.md) | blocked | chatgpt | TASK-0006 | none |
 | [TASK-0008](../tasks/TASK-0008_map_goal_0001_written_spec_to_existing_asset_ids_a.md) | done | claude | none | none |
 | [TASK-0009](../tasks/TASK-0009_layer_0_animation_and_scroll_schema_validation_in_.md) | done | codex | none | none |
+| [TASK-0010](../tasks/TASK-0010_planner_milestone_pulse.md) | done | codex | none | none |

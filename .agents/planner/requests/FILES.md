@@ -11,5 +11,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`README.md`](README.md)
+- [`REQ-a9695420d495.json`](REQ-a9695420d495.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

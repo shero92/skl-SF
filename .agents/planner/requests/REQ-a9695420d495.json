@@ -1,0 +1,12 @@
+{
+  "status": "open",
+  "title": "Fix planner request records and deterministic milestone pulse",
+  "problem": "Planner 20261026-120001-claude rejected request-record touches; eligible approved milestones are never created without AI proposals.",
+  "file": "tools/local_planner.py",
+  "line": null,
+  "done_when": "Shared guards permit only text ART requests; approved milestones pulse before AI and persist on skips; full suite passes.",
+  "test": "py -3 tools/run_tests.py --all",
+  "priority": "critical",
+  "kind": "bug",
+  "agent": "codex"
+}
