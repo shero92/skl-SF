@@ -1,6 +1,6 @@
 ---
 id: TASK-0049
-status: in_progress
+status: blocked
 owner: codex
 branch: work/task-0049-b50a67a7
 agent: codex
@@ -48,3 +48,6 @@ Outcome: PR checks validate records without writing generated files; main checks
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T23:15:59.823410+00:00
+
+## Runner evidence
+- Runner failed: Agent did not change any allowed code
