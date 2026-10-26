@@ -93,6 +93,15 @@ class FiveLevelMap(unittest.TestCase):
         block=result["background_objects"][-1]
         self.assertEqual(block["animation"],animation)
         self.assertEqual(block["scroll"],scroll)
+        compiled=next(p for p in result["layer_stack"]["passes"]["background"]
+                      if p["instance_id"]=="MovingBackground")
+        self.assertEqual(compiled["animation"],animation)
+        self.assertEqual(compiled["scroll"],scroll)
+        compiled["animation"]["frames"].append("ChangedCopy")
+        compiled["scroll"]["vx"]=99
+        self.assertEqual(block["animation"],animation)
+        self.assertEqual(block["scroll"],scroll)
+        # Reload the stored graph: mutating a compiled entry cannot alter published input.
         stored=mf.get_latest(self.root,"hero_room_01")
         self.assertEqual(stored["background_objects"][-1],block)
         self.assertEqual(mf.validate_repository(self.root),[("hero_room_01",2)])
@@ -101,7 +110,13 @@ class FiveLevelMap(unittest.TestCase):
         for metadata in ({}, {"animation":{"frames":["P002"],"fps":1}},
                          {"scroll":{"vx":0,"vy":3}}):
             with self.subTest(metadata=metadata):
-                mf.apply(self.root,self._background_patch(**metadata),dry_run=True)
+                result=mf.apply(self.root,self._background_patch(**metadata),dry_run=True)
+                stack=create_layer_stack(result,mf.asset_catalog(self.root))
+                compiled=next(p for p in stack["passes"]["background"]
+                              if p["instance_id"]=="MovingBackground")
+                for field in ("animation","scroll"):
+                    self.assertEqual(field in compiled,field in metadata)
+                    if field in metadata:self.assertEqual(compiled[field],metadata[field])
 
     def test_reject_unknown_animation_frame(self):
         path=self._background_patch(animation={"frames":["P002","MissingFrame"],"fps":12})
