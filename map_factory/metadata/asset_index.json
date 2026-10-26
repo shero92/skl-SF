@@ -4526,7 +4526,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          3
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P002",
@@ -4573,7 +4600,15 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "mounted",
+        "mount_on_categories": [
+          "furniture"
+        ],
+        "measurement_status": "provisional"
+      }
     },
     {
       "id": "P003",
@@ -4619,7 +4654,15 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "mounted",
+        "mount_on_categories": [
+          "furniture"
+        ],
+        "measurement_status": "provisional"
+      }
     },
     {
       "id": "P004",
@@ -4665,7 +4708,34 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          3
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P005",
@@ -4710,7 +4780,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          3,
+          3
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P006",
@@ -4757,7 +4854,34 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          3,
+          3
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P007",
@@ -4802,7 +4926,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection.; stray atlas label/crop debris removed."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.; stray atlas label/crop debris removed.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P008",
@@ -4847,7 +4998,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          3,
+          2
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P009",
@@ -4893,7 +5071,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          3,
+          2
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P010",
@@ -4939,7 +5144,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection.; stray atlas label/crop debris removed."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.; stray atlas label/crop debris removed.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P011",
@@ -4986,7 +5218,34 @@
         "method": "exact_source_pixel_crop",
         "generator": "tools/curate_high_detail_sprites.py"
       },
-      "qa_notes": "Removed remove neighboring sliced sprite at left. High-resolution source content unchanged; art QA still pending."
+      "qa_notes": "Removed remove neighboring sliced sprite at left. High-resolution source content unchanged; art QA still pending.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P012",
@@ -5031,7 +5290,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P013",
@@ -5077,7 +5363,34 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          3,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P014",
@@ -5124,7 +5437,34 @@
         "method": "exact_source_pixel_crop",
         "generator": "tools/curate_high_detail_sprites.py"
       },
-      "qa_notes": "Removed discard disconnected gold label line. High-resolution source content unchanged; art QA still pending."
+      "qa_notes": "Removed discard disconnected gold label line. High-resolution source content unchanged; art QA still pending.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P015",
@@ -5171,7 +5511,34 @@
         "method": "exact_source_pixel_crop",
         "generator": "tools/curate_high_detail_sprites.py"
       },
-      "qa_notes": "Removed remove unrelated hanging banner and label line. High-resolution source content unchanged; art QA still pending."
+      "qa_notes": "Removed remove unrelated hanging banner and label line. High-resolution source content unchanged; art QA still pending.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P016",
@@ -5217,7 +5584,34 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P017",
@@ -5263,7 +5657,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P018",
@@ -5310,7 +5731,34 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P019",
@@ -5356,7 +5804,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P020",
@@ -5402,7 +5877,34 @@
         "kind": "ai_sheet_crop",
         "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       },
-      "qa_notes": "Requires artist approval, transparency and seams inspection."
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P021",
@@ -5448,7 +5950,34 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "P022",
@@ -5494,7 +6023,34 @@
         "generator": "tools/generate_remaining_art.py",
         "reference_style": "hero_room_seaside_pixel_art"
       },
-      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency."
+      "qa_notes": "First-pass art; manual visual QA needed for quality, transparent cropping, anchors and consistency.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
+      }
     },
     {
       "id": "O001",
