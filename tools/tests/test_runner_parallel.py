@@ -88,6 +88,60 @@ class ParallelRunner(unittest.TestCase):
             ar.main()
         self.assertIn("codex usage cooldown until", out.getvalue())
 
+    def test_reset_time_follows_cli_message(self):
+        now = datetime(2026, 10, 26, 13, 20, tzinfo=timezone.utc)
+        zone = now.astimezone().tzinfo
+        codex = ar.reset_time("You've hit your usage limit ... try again at 3:53 PM.", now)
+        assert codex is not None
+        self.assertEqual((codex.astimezone(zone).hour, codex.astimezone(zone).minute), (15, 55))
+        self.assertGreater(codex, now)
+        epoch = int((now + timedelta(hours=2)).timestamp())
+        self.assertEqual(ar.reset_time("Claude AI usage limit reached|%d" % epoch, now),
+                         now + timedelta(hours=2, minutes=2))
+        far = int((now + timedelta(days=3)).timestamp())
+        self.assertIsNone(ar.reset_time("Claude AI usage limit reached|%d" % far, now))
+        self.assertIsNone(ar.reset_time("rate limit exceeded", now))
+
+    def session(self, picks, phases=None, refresh=False, cooldown_after=None, config=None):
+        names = ("execution_gate", "pick_next", "run", "read_state", "refresh_queue", "cooling_until", "read_json")
+        saved = {name: getattr(ar, name) for name in names}
+        self.addCleanup(lambda: [setattr(ar, k, v) for k, v in saved.items()])
+        queue, ran, calls = list(picks), [], {"refresh": 0}
+        ar.execution_gate = lambda cfg: None
+        ar.read_json = lambda path, default: dict(config or {"max_tasks_per_runner_session": 10}) \
+            if path == ar.CONFIG else saved["read_json"](path, default)
+        ar.pick_next = lambda agent: queue.pop(0) if queue else None
+        ar.run = lambda tid, supervised=False: ran.append(tid)
+        ar.read_state = lambda tid: {"phase": (phases or {}).get(tid, "done")}
+        ar.cooling_until = lambda agent: (datetime.now(timezone.utc) + timedelta(hours=1)
+                                          if cooldown_after is not None and len(ran) >= cooldown_after else None)
+
+        def refresh_queue(agent):
+            calls["refresh"] += 1
+            if refresh:
+                queue.append("TASK-0099")
+            return refresh
+        ar.refresh_queue = refresh_queue
+        with contextlib.redirect_stdout(io.StringIO()):
+            finished = ar.run_session("claude")
+        return finished, ran, calls["refresh"]
+
+    def test_session_works_through_every_eligible_task(self):
+        finished, ran, refreshed = self.session(["TASK-0034", "TASK-0035", "TASK-0039"])
+        self.assertEqual(ran, ["TASK-0034", "TASK-0035", "TASK-0039"])
+        self.assertEqual(finished, ran)
+        self.assertEqual(refreshed, 1, "pulse once when the queue runs dry")
+
+    def test_session_pulses_when_idle_and_picks_new_task(self):
+        self.assertEqual(self.session([], refresh=True)[1], ["TASK-0099"])
+
+    def test_session_stops_on_cooldown_limit_revert_or_time_budget(self):
+        self.assertEqual(self.session(["A", "B", "C"], cooldown_after=1)[1], ["A"])
+        self.assertEqual(self.session(["A", "B", "C"], config={"max_tasks_per_runner_session": 2})[1], ["A", "B"])
+        self.assertEqual(self.session(["A", "B"], phases={"A": "auto_reverted"})[1], ["A"])
+        budget = {"max_tasks_per_runner_session": 10, "runner_session_minutes": 30, "execution_timeout_seconds": 1800}
+        self.assertEqual(self.session(["A", "B"], config=budget)[1], ["A"], "no task starts that cannot finish in time")
+
     def test_quota_path_is_handled_before_generic_failure(self):
         text = (TOOLS / "agent_runner.py").read_text(encoding="utf-8")
         body = text[text.index("def _run("):text.index("def pick_next(")]

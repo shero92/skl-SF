@@ -239,9 +239,28 @@ def cooling_until(agent):
         return None
     return until if until>datetime.now(timezone.utc) else None
 
+def reset_time(message,now=None):
+    """When the CLI says the limit resets: Claude's "|<epoch>" or Codex's "try again at 3:53 PM"."""
+    now=now or datetime.now(timezone.utc)
+    when=None
+    epoch=re.search(r"\|(\d{10})\b",message)
+    clock=re.search(r"(?i)\bat\s+(\d{1,2}):(\d{2})\s*([AP]M)\b",message)
+    if epoch:
+        when=datetime.fromtimestamp(int(epoch.group(1)),timezone.utc)
+    elif clock:
+        local=now.astimezone()
+        hour=int(clock.group(1))%12+(12 if clock.group(3).upper()=="PM" else 0)
+        when=local.replace(hour=hour,minute=int(clock.group(2)),second=0,microsecond=0)
+        if when<=local:
+            when+=timedelta(days=1)
+    # Ignore implausible values; a small margin avoids retrying a second too early.
+    if when and now<when<=now+timedelta(hours=24):
+        return when+timedelta(minutes=2)
+    return None
+
 def start_cooldown(agent,message,minutes=COOLDOWN_MINUTES):
     LOCAL.mkdir(parents=True,exist_ok=True)
-    until=datetime.now(timezone.utc)+timedelta(minutes=minutes)
+    until=reset_time(message) or datetime.now(timezone.utc)+timedelta(minutes=minutes)
     cooldown_path(agent).write_text(json.dumps({"agent":agent,"retry_after":until.isoformat(),
         "reason":message},indent=2)+"\n",encoding="utf-8",newline="\n")
     return until
@@ -434,6 +453,54 @@ def pick_next(agent):
         choices.append((rank[priority],t["id"]))
     return min(choices)[1] if choices else None
 
+PULSE_PATHS=[".agents/planner/goals.json",".agents/planner/daily/"]
+
+def refresh_queue(agent):
+    """Idle: run the deterministic milestone pulse (no AI) so new or unblocked steps can be claimed."""
+    if git("branch","--show-current")!="main" or dirty_paths():
+        return False
+    with exclusive("task-claim"):
+        git("pull","--ff-only","origin","main")
+        result=json.loads(execute([sys.executable,"tools/goal_task_factory.py","pulse"]).stdout)
+        fresh=result.get("created",[])+result.get("promoted",[])
+        main_commit("chore: pulse "+(", ".join(fresh) if fresh else "(no new tasks)"),agent,"pulse",PULSE_PATHS)
+    return bool(fresh)
+
+def run_session(agent):
+    """Work through eligible tasks until none is left, the usage limit is hit, or a task fails."""
+    config=read_json(CONFIG,{})
+    execution_gate(config)
+    limit=int(config.get("max_tasks_per_runner_session",1))
+    # Windows Task Scheduler kills the worker after 3 h: start a task only if it can still finish.
+    budget=int(config.get("runner_session_minutes",150))*60
+    per_task=int(config.get("execution_timeout_seconds",1800))+600
+    started=time.monotonic()
+    finished=[]
+    pulsed=False
+    while len(finished)<limit:
+        if finished and time.monotonic()-started+per_task>budget:
+            print(agent+" session time budget reached; remaining tasks wait for the next run")
+            break
+        until=cooling_until(agent)
+        if until:
+            print(agent+" usage cooldown until "+until.isoformat()+"; no task claimed, no AI call made")
+            break
+        selected=pick_next(agent)
+        if selected is None and not pulsed:
+            pulsed=True
+            if refresh_queue(agent):
+                selected=pick_next(agent)
+        if selected is None:
+            print("No eligible task for "+agent+"; no AI call made")
+            break
+        run(selected)  # failures raise and end the session; usage limits raise QuotaExceeded
+        finished.append(selected)
+        if read_state(selected).get("phase")!="done":
+            break  # e.g. auto-reverted after post-merge tests: stop instead of chaining work
+    if finished:
+        print(agent+" session finished "+str(len(finished))+" task(s): "+", ".join(finished))
+    return finished
+
 def main():
     parser=argparse.ArgumentParser()
     mode=parser.add_mutually_exclusive_group(required=True)
@@ -453,16 +520,7 @@ def main():
     if args.supervised:
         run(args.supervised,supervised=True)
     elif args.run_next:
-        execution_gate(read_json(CONFIG,{}))
-        until=cooling_until(args.run_next)
-        if until:
-            print(args.run_next+" usage cooldown until "+until.isoformat()+"; no task claimed, no AI call made")
-            return
-        selected=pick_next(args.run_next)
-        if selected is None:
-            print("No eligible task for "+args.run_next+"; no AI call made")
-            return
-        run(selected)
+        run_session(args.run_next)
     else:
         run(args.run)
 
