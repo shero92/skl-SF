@@ -1,0 +1,676 @@
+{
+  "goal_id": "GOAL-0001",
+  "parent_task": "TASK-0011",
+  "source_audit": "map_factory/maps/hero_room_01/reference_gaps.json#goal_0001_spec_audit",
+  "method": "Catalog names/tags/native dimensions/orientation metadata, current request records and written goal only. No image bytes read or graphics generated.",
+  "reference": {
+    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+    "tracked_git_blob_sha1": "8d9a4c951b169458ceb85f9ad61107b99d59a909",
+    "image_sha256": null,
+    "provenance_status": "owner_confirmation_required"
+  },
+  "reused_requests": [
+    {
+      "request_id": "ART-0001",
+      "task_id": "TASK-0002",
+      "need": "full bed four-perspective views",
+      "new_bed_request_created": false
+    }
+  ],
+  "audited_gap_count": 12,
+  "new_request_count": 20,
+  "specialist_task_count": 20,
+  "new_output_path_count": 50,
+  "conditional_requirements_note": "The m8-specific floor/rug/shadow refinements and west-facing study furniture lack exact confirming metadata. They remain conditional, pending owner reuse/cancel decisions; mapped IDs are not declared missing solely because they need cleanup.",
+  "requests": [
+    {
+      "key": "cloud_drift",
+      "title": "Independent drifting cloud variants",
+      "level": 0,
+      "size": [
+        192,
+        64
+      ],
+      "related_ids": [
+        "E018"
+      ],
+      "filenames": [
+        "hero_cloud_01.png",
+        "hero_cloud_02.png",
+        "hero_cloud_03.png"
+      ],
+      "reason": "E018 is a single Sky Cloud Background; no separate drifting cloud sprites or frames registered.",
+      "detail": "Three distinct translucent cloud silhouettes with clean alpha margins. Horizontal scrolling must repeat without an opaque background strip or edge popping. Keep a consistent warm-daylight palette; motion comes from runtime scrolling, not baked sea/sky.",
+      "mount": "background; proposed origin (0,0); no collider; no cast shadow",
+      "audit_gap": "drifting clouds (animated)",
+      "mode": "three non-directional variants",
+      "request_id": "ART-0002",
+      "task_id": "TASK-0013",
+      "request_record": ".agents/graphics/requests/ART-0002_hero_room_cloud_drift.md",
+      "task_record": ".agents/tasks/TASK-0013_hero_room_cloud_drift.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0002/hero_cloud_01.png",
+        ".agents/graphics/deliveries/ART-0002/hero_cloud_02.png",
+        ".agents/graphics/deliveries/ART-0002/hero_cloud_03.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "cliff_foam_loop",
+      "title": "Four-frame cliff-base foam loop",
+      "level": 0,
+      "size": [
+        96,
+        48
+      ],
+      "related_ids": [
+        "E009",
+        "E011",
+        "E012",
+        "E013",
+        "E014"
+      ],
+      "filenames": [
+        "hero_cliff_foam_01.png",
+        "hero_cliff_foam_02.png",
+        "hero_cliff_foam_03.png",
+        "hero_cliff_foam_04.png"
+      ],
+      "reason": "E009 Cliff Ocean Foam is one frame; animation frames not registered.",
+      "detail": "Four equal-size RGBA animation frames with identical anchor and cliff contact line. The fourth frame must loop cleanly into the first, without shoreline crawl, registration jitter or a hard alpha edge. Document fps/cycle duration consistent with the registered sea-wave cadence; no guessed baked ocean backdrop.",
+      "mount": "cliff-base background strip; proposed origin (0,48); no collider",
+      "audit_gap": "animated foam at cliff base",
+      "mode": "four animation frames, not compass facings",
+      "request_id": "ART-0003",
+      "task_id": "TASK-0014",
+      "request_record": ".agents/graphics/requests/ART-0003_hero_room_cliff_foam_loop.md",
+      "task_record": ".agents/tasks/TASK-0014_hero_room_cliff_foam_loop.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_01.png",
+        ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_02.png",
+        ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_03.png",
+        ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_04.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "side_wall_views",
+      "title": "Four-perspective side-wall run blocks",
+      "level": 2,
+      "size": [
+        48,
+        144
+      ],
+      "related_ids": [
+        "W001",
+        "W006",
+        "W007",
+        "W008",
+        "W009",
+        "W019",
+        "W020"
+      ],
+      "filenames": [
+        "hero_wall_run_north.png",
+        "hero_wall_run_east.png",
+        "hero_wall_run_south.png",
+        "hero_wall_run_west.png"
+      ],
+      "reason": "No assets named as east/west-facing side wall runs; W001 appears front-facing only.",
+      "detail": "Four upright three-quarter views of the same sandstone wall run. East and west must expose the correct side masonry, wall thickness and top surface; north joins the back wall and south supports reuse. Seam interfaces must align with W006-W009 corner metadata. Do not rotate or mirror an upright PNG to invent a facing.",
+      "mount": "ground foot of wall; supply per-view base footprint and wall-local attachment anchors",
+      "audit_gap": "left/right side wall faces (3/4 view)",
+      "mode": "north/east/south/west",
+      "request_id": "ART-0004",
+      "task_id": "TASK-0015",
+      "request_record": ".agents/graphics/requests/ART-0004_hero_room_side_wall_views.md",
+      "task_record": ".agents/tasks/TASK-0015_hero_room_side_wall_views.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        ".agents/graphics/deliveries/ART-0004/hero_wall_run_south.png",
+        ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "compass_wood_door",
+      "title": "Closed arched wooden compass-emblem door",
+      "level": 2,
+      "size": [
+        96,
+        144
+      ],
+      "related_ids": [
+        "A015",
+        "A016",
+        "W016"
+      ],
+      "filenames": [
+        "hero_compass_wood_door_north.png",
+        "hero_compass_wood_door_east.png",
+        "hero_compass_wood_door_south.png",
+        "hero_compass_wood_door_west.png"
+      ],
+      "reason": "A015/A016 are named Stone Door; no wooden door with compass emblem registered.",
+      "detail": "Closed wooden leaves with arched top, readable compass emblem and restrained blue/gold detailing. Match the W016 doorway opening at approved map scale. Four upright wall-facing views must preserve frame thickness and hinge/threshold coherence. Stone-door assets are related references, not substitutes.",
+      "mount": "doorway wall mount; threshold origin and wall opening/footprint recorded per face",
+      "audit_gap": "closed arched wooden door with compass emblem",
+      "mode": "north/east/south/west",
+      "request_id": "ART-0005",
+      "task_id": "TASK-0016",
+      "request_record": ".agents/graphics/requests/ART-0005_hero_room_compass_wood_door.md",
+      "task_record": ".agents/tasks/TASK-0016_hero_room_compass_wood_door.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_north.png",
+        ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_east.png",
+        ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_south.png",
+        ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_west.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "sphere_finial",
+      "title": "Reusable stone sphere stair-post finial",
+      "level": 2,
+      "size": [
+        32,
+        32
+      ],
+      "related_ids": [
+        "ST011",
+        "A013"
+      ],
+      "filenames": [
+        "hero_stone_sphere_finial.png"
+      ],
+      "reason": "No sphere finial registered; unclear whether ST011 includes one.",
+      "detail": "One symmetric carved-stone sphere/seat assembly reusable on both posts. No full new post or staircase. First confirm whether ST011 already includes a suitable sphere; cancel the new output if confirmed. The seating contact must align with the measured ST011 top anchor.",
+      "mount": "mount_on ST011; inherit post collision rather than adding a full-sprite collider",
+      "audit_gap": "stone spheres on posts",
+      "mode": "one symmetric component reused twice",
+      "request_id": "ART-0006",
+      "task_id": "TASK-0017",
+      "request_record": ".agents/graphics/requests/ART-0006_hero_room_sphere_finial.md",
+      "task_record": ".agents/tasks/TASK-0017_hero_room_sphere_finial.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0006/hero_stone_sphere_finial.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "compass_blanket",
+      "title": "Blue/gold compass-pattern bed blanket overlay",
+      "level": 3,
+      "size": [
+        96,
+        96
+      ],
+      "related_ids": [
+        "P002",
+        "P004"
+      ],
+      "filenames": [
+        "hero_compass_blanket.png"
+      ],
+      "reason": "P002 is Bed Blanket Blue; compass/gold pattern not stated in metadata.",
+      "detail": "A separate cloth overlay with a readable blue/gold compass motif, folds and clean alpha. The audit proposes 96x96, while P002 is 186x170 and P004 is 296x339 in catalog metadata: owner must approve the intended native scale and bed attachment offsets before production. No automated resizing or replacement of the existing bed. Coordinate with ART-0001 rather than requesting another bed.",
+      "mount": "mount_on approved bed frame; no independent collision; supplied cloth anchor/offset",
+      "audit_gap": "blue/gold compass-pattern blanket",
+      "mode": "single",
+      "request_id": "ART-0007",
+      "task_id": "TASK-0018",
+      "request_record": ".agents/graphics/requests/ART-0007_hero_room_compass_blanket.md",
+      "task_record": ".agents/tasks/TASK-0018_hero_room_compass_blanket.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0007/hero_compass_blanket.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "headboard_shelf",
+      "title": "Headboard-mounted bookshelf and plant support",
+      "level": 3,
+      "size": [
+        96,
+        48
+      ],
+      "related_ids": [
+        "P004",
+        "P014",
+        "P015"
+      ],
+      "filenames": [
+        "hero_headboard_shelf_north.png",
+        "hero_headboard_shelf_east.png",
+        "hero_headboard_shelf_south.png",
+        "hero_headboard_shelf_west.png"
+      ],
+      "reason": "No headboard-mounted shelf; P014/P015 are freestanding bookshelves.",
+      "detail": "A shallow shelf behind the bed with a coherent set of books and support space for the registered plant/flower decor. It must read as a mounted headboard shelf, not a freestanding bookcase pasted behind furniture. Keep separable plant attachment anchors; reuse approved registered decorations instead of recreating them. The single intended placement in the audit is extended to four real views for reusable upright mounting.",
+      "mount": "mount_on back-wall/bed headboard anchor; no extra ground collider",
+      "audit_gap": "headboard bookshelf with books",
+      "mode": "north/east/south/west",
+      "request_id": "ART-0008",
+      "task_id": "TASK-0019",
+      "request_record": ".agents/graphics/requests/ART-0008_hero_room_headboard_shelf.md",
+      "task_record": ".agents/tasks/TASK-0019_hero_room_headboard_shelf.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_north.png",
+        ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_east.png",
+        ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png",
+        ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_west.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "wall_shelf_views",
+      "title": "Reusable wall-mounted shelf views",
+      "level": 3,
+      "size": [
+        96,
+        48
+      ],
+      "related_ids": [],
+      "filenames": [
+        "hero_wall_shelf_north.png",
+        "hero_wall_shelf_east.png",
+        "hero_wall_shelf_south.png",
+        "hero_wall_shelf_west.png"
+      ],
+      "reason": "No wall-mounted shelf registered.",
+      "detail": "Four upright views of a shallow wooden shelf with proper brackets, top plane and wall contact. Supply item-support anchors for separate registered O* props; no baked unrelated room objects. Preserve wall-local offsets and scale across all four facings.",
+      "mount": "mount_on owning wall; inherits wall collision; local support anchors recorded",
+      "audit_gap": "wall shelf (left back wall)",
+      "mode": "north/east/south/west",
+      "request_id": "ART-0009",
+      "task_id": "TASK-0020",
+      "request_record": ".agents/graphics/requests/ART-0009_hero_room_wall_shelf_views.md",
+      "task_record": ".agents/tasks/TASK-0020_hero_room_wall_shelf_views.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0009/hero_wall_shelf_north.png",
+        ".agents/graphics/deliveries/ART-0009/hero_wall_shelf_east.png",
+        ".agents/graphics/deliveries/ART-0009/hero_wall_shelf_south.png",
+        ".agents/graphics/deliveries/ART-0009/hero_wall_shelf_west.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "brass_globe",
+      "title": "Brass globe on a compact stand",
+      "level": 3,
+      "size": [
+        48,
+        64
+      ],
+      "related_ids": [
+        "O019"
+      ],
+      "filenames": [
+        "hero_brass_globe.png"
+      ],
+      "reason": "O019 is Astrolabe Gold, not a globe; substitution not allowed.",
+      "detail": "A spherical globe with legible globe silhouette, brass meridian/support and compact base, matching the written study-zone specification. An astrolabe is not a globe. Keep contact shadow separate; owner confirms whether the intended placement is tabletop or floor before final origin/collision metadata.",
+      "mount": "table support or floor base; owner resolves mount; base-only collision if floor-standing",
+      "audit_gap": "brass globe",
+      "mode": "single",
+      "request_id": "ART-0010",
+      "task_id": "TASK-0021",
+      "request_record": ".agents/graphics/requests/ART-0010_hero_room_brass_globe.md",
+      "task_record": ".agents/tasks/TASK-0021_hero_room_brass_globe.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0010/hero_brass_globe.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "blue_white_planter",
+      "title": "Large plant in a blue-white ceramic vase",
+      "level": 3,
+      "size": [
+        64,
+        112
+      ],
+      "related_ids": [
+        "O001",
+        "V017",
+        "V020"
+      ],
+      "filenames": [
+        "hero_blue_white_planter.png"
+      ],
+      "reason": "No combined potted plant in blue-white vase; stacking V017 on O001 is unverified.",
+      "detail": "A coherent large plant seated in a blue-white ceramic vase with appropriate opening, stems and leaf spread. First let the owner verify whether O001 plus existing foliage composes correctly; cancel this request if a verified registered combination fits. No unverified pasted stack and no overwriting the separate existing parts.",
+      "mount": "ground-contact base at vase foot; base-only collision, foliage excluded",
+      "audit_gap": "large plant in blue-white vase",
+      "mode": "single",
+      "request_id": "ART-0011",
+      "task_id": "TASK-0022",
+      "request_record": ".agents/graphics/requests/ART-0011_hero_room_blue_white_planter.md",
+      "task_record": ".agents/tasks/TASK-0022_hero_room_blue_white_planter.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0011/hero_blue_white_planter.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "cliff_palms",
+      "title": "Cliff-edge palm plant variants",
+      "level": 3,
+      "size": [
+        96,
+        160
+      ],
+      "related_ids": [
+        "V017",
+        "V023"
+      ],
+      "filenames": [
+        "hero_cliff_palm_01.png",
+        "hero_cliff_palm_02.png"
+      ],
+      "reason": "No asset named palm; Tropical Plant Large may differ.",
+      "detail": "Two reusable palm silhouettes with recognizable fronds and visible cliff-edge roots/contact. No baked cliff, sea or surrounding architecture. Optional sway is outside the initial delivery; do not silently add frame files. Owner may reuse V017 if its identity matches the reference after visual review.",
+      "mount": "cliff-edge ground anchor; trunk/base footprint only, no canopy collider",
+      "audit_gap": "palm plants on cliff edge",
+      "mode": "two non-directional variants",
+      "request_id": "ART-0012",
+      "task_id": "TASK-0023",
+      "request_record": ".agents/graphics/requests/ART-0012_hero_room_cliff_palms.md",
+      "task_record": ".agents/tasks/TASK-0023_hero_room_cliff_palms.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0012/hero_cliff_palm_01.png",
+        ".agents/graphics/deliveries/ART-0012/hero_cliff_palm_02.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "arch_light_shafts",
+      "title": "Transparent sun shafts through the central arch",
+      "level": 4,
+      "size": [
+        96,
+        192
+      ],
+      "related_ids": [],
+      "filenames": [
+        "hero_arch_light_shaft.png"
+      ],
+      "reason": "No light shaft asset registered.",
+      "detail": "One soft transparent light-shaft mask following the reference daylight direction through the arch. Supply alpha/blend intent and arch-local alignment; no opaque cone, baked room floor or contact shadow. Runtime intensity/blend configuration is separate implementation work.",
+      "mount": "owner-linked central arch effect; no collision; supply arch-local origin/offset",
+      "audit_gap": "light shafts",
+      "mode": "single",
+      "request_id": "ART-0013",
+      "task_id": "TASK-0024",
+      "request_record": ".agents/graphics/requests/ART-0013_hero_room_arch_light_shafts.md",
+      "task_record": ".agents/tasks/TASK-0024_hero_room_arch_light_shafts.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0013/hero_arch_light_shaft.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "broken_floor_edge",
+      "title": "Irregular broken front floor-edge pieces",
+      "level": 1,
+      "size": [
+        64,
+        64
+      ],
+      "related_ids": [
+        "F006",
+        "F007",
+        "F008",
+        "F009",
+        "F010",
+        "F011",
+        "F012",
+        "F013"
+      ],
+      "filenames": [
+        "hero_broken_floor_edge_01.png",
+        "hero_broken_floor_edge_02.png",
+        "hero_broken_floor_corner_left.png",
+        "hero_broken_floor_corner_right.png"
+      ],
+      "reason": "The m8 description specifically asks for irregular/broken front edges. The audit maps generic edge/corner IDs, whose names do not establish a broken silhouette.",
+      "detail": "Two irregular front-edge variations and two joining corner pieces, aligned with the existing floor tile system. Flat pieces may use approved floor rotation; no false perspective transforms on wall art. Owner must first check F007/F012/F013 and cancel covered outputs. Do not replace approved edge tiles or infer walkability from alpha.",
+      "mount": "ground grid, proposed origin (0,0); seam and footprint metadata needed",
+      "audit_gap": null,
+      "mode": "four flat edge/corner pieces",
+      "request_id": "ART-0014",
+      "task_id": "TASK-0025",
+      "request_record": ".agents/graphics/requests/ART-0014_hero_room_broken_floor_edge.md",
+      "task_record": ".agents/tasks/TASK-0025_hero_room_broken_floor_edge.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01.png",
+        ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02.png",
+        ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left.png",
+        ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "study_blue_rug",
+      "title": "Second blue rug for the study zone",
+      "level": 1,
+      "size": [
+        238,
+        304
+      ],
+      "related_ids": [
+        "P005",
+        "P006"
+      ],
+      "filenames": [
+        "hero_study_blue_rug.png"
+      ],
+      "reason": "The m8 description asks for a second blue study rug. P006 is named Bedroom Rug Variant with no blue/study tags; its exact match remains unverified even though the gap audit maps it.",
+      "detail": "Flat blue study-zone rug/decal at the catalog rug scale, with coherent gold/nautical accents only where the owner confirms the reference. Owner must inspect P006 first and reuse it if it already fits. This is a conditional gap, not proof that P006 is unusable.",
+      "mount": "ground overlay; no raised collider or baked furniture shadow",
+      "audit_gap": null,
+      "mode": "single",
+      "request_id": "ART-0015",
+      "task_id": "TASK-0026",
+      "request_record": ".agents/graphics/requests/ART-0015_hero_room_study_blue_rug.md",
+      "task_record": ".agents/tasks/TASK-0026_hero_room_study_blue_rug.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0015/hero_study_blue_rug.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "arch_ground_shadow",
+      "title": "Large arch and column cast-shadow mask",
+      "level": 4,
+      "size": [
+        320,
+        158
+      ],
+      "related_ids": [
+        "S011",
+        "S012",
+        "S016",
+        "S017"
+      ],
+      "filenames": [
+        "hero_arch_column_shadow.png"
+      ],
+      "reason": "The m8 description asks for the large arch/column floor shadow; existing IDs describe column or generic diagonal/sun shadows without an explicit complete arch silhouette.",
+      "detail": "Owner-aligned transparent mask for the approved central arch and its two columns. Review S011/S012/S017 first; reuse any verified fit. Final extent and origin follow the delivered arch geometry and written daylight direction, not this provisional canvas alone. No scene painting baked into the mask.",
+      "mount": "owner-linked arch/column shadow, logical layer 4 rendered below its caster at z20",
+      "audit_gap": null,
+      "mode": "single",
+      "request_id": "ART-0016",
+      "task_id": "TASK-0027",
+      "request_record": ".agents/graphics/requests/ART-0016_hero_room_arch_ground_shadow.md",
+      "task_record": ".agents/tasks/TASK-0027_hero_room_arch_ground_shadow.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0016/hero_arch_column_shadow.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "door_ground_shadow",
+      "title": "Wooden doorway cast-shadow mask",
+      "level": 4,
+      "size": [
+        96,
+        64
+      ],
+      "related_ids": [
+        "S013",
+        "S016"
+      ],
+      "filenames": [
+        "hero_compass_door_shadow.png"
+      ],
+      "reason": "The m8 description calls for a door shadow; no explicit wooden-door cast-shadow asset is named in the catalog.",
+      "detail": "Transparent contact/cast mask fitted to the closed compass-emblem wooden door request. Block final shape until ART door geometry is approved. Check existing wall/base masks before painting; no second door image and no double-baked shadow.",
+      "mount": "owner-linked door shadow; align to threshold; logical layer 4 below caster at z20",
+      "audit_gap": null,
+      "mode": "single",
+      "request_id": "ART-0017",
+      "task_id": "TASK-0028",
+      "request_record": ".agents/graphics/requests/ART-0017_hero_room_door_ground_shadow.md",
+      "task_record": ".agents/tasks/TASK-0028_hero_room_door_ground_shadow.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0017/hero_compass_door_shadow.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "wide_stair_shadow",
+      "title": "Wide front-stair cast-shadow mask",
+      "level": 4,
+      "size": [
+        240,
+        128
+      ],
+      "related_ids": [
+        "S015"
+      ],
+      "filenames": [
+        "hero_wide_front_stair_shadow.png"
+      ],
+      "reason": "S015 is named Shadow Stairs but its metadata does not establish the wide front-stair silhouette explicitly requested by m8.",
+      "detail": "Transparent mask matching the approved wide central front stair and its side geometry. The proposed canvas follows S015 metadata; owner must first verify/reuse S015 if suitable. Final width, offsets and contact edges must follow approved stairs without stretching a generic shadow.",
+      "mount": "owner-linked stair shadow; logical layer 4, z20 below stair caster",
+      "audit_gap": null,
+      "mode": "single",
+      "request_id": "ART-0018",
+      "task_id": "TASK-0029",
+      "request_record": ".agents/graphics/requests/ART-0018_hero_room_wide_stair_shadow.md",
+      "task_record": ".agents/tasks/TASK-0029_hero_room_wide_stair_shadow.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0018/hero_wide_front_stair_shadow.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "study_table_views",
+      "title": "Four-perspective study table",
+      "level": 3,
+      "size": [
+        393,
+        275
+      ],
+      "related_ids": [
+        "P009"
+      ],
+      "filenames": [
+        "hero_study_table_north.png",
+        "hero_study_table_east.png",
+        "hero_study_table_south.png",
+        "hero_study_table_west.png"
+      ],
+      "reason": "The m8 description requires west-facing right-wall furniture. P009 has no registered orientation/variant metadata, so a west-facing match cannot be confirmed from names.",
+      "detail": "Four distinct upright views of the registered study table family, with west-facing placement supported. Preserve the existing base asset and its proportions. Native size is the existing catalog canvas as an initial constraint; owner supplies measured per-face dimensions/origins. Check for registered/reviewed facings before painting and cancel covered outputs. No bitmap rotations or mirrored upright views.",
+      "mount": "ground contact base; record per-face footprint and item/mount anchors",
+      "audit_gap": null,
+      "mode": "north/east/south/west",
+      "request_id": "ART-0019",
+      "task_id": "TASK-0030",
+      "request_record": ".agents/graphics/requests/ART-0019_hero_room_study_table_views.md",
+      "task_record": ".agents/tasks/TASK-0030_hero_room_study_table_views.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0019/hero_study_table_north.png",
+        ".agents/graphics/deliveries/ART-0019/hero_study_table_east.png",
+        ".agents/graphics/deliveries/ART-0019/hero_study_table_south.png",
+        ".agents/graphics/deliveries/ART-0019/hero_study_table_west.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "study_bookshelf_views",
+      "title": "Four-perspective right-wall bookshelf",
+      "level": 3,
+      "size": [
+        296,
+        269
+      ],
+      "related_ids": [
+        "P014"
+      ],
+      "filenames": [
+        "hero_study_bookshelf_north.png",
+        "hero_study_bookshelf_east.png",
+        "hero_study_bookshelf_south.png",
+        "hero_study_bookshelf_west.png"
+      ],
+      "reason": "The m8 description requires west-facing right-wall furniture. P014 has no registered orientation/variant metadata, so a west-facing match cannot be confirmed from names.",
+      "detail": "Four distinct upright views of the registered right-wall bookshelf family, with west-facing placement supported. Preserve the existing base asset and its proportions. Native size is the existing catalog canvas as an initial constraint; owner supplies measured per-face dimensions/origins. Check for registered/reviewed facings before painting and cancel covered outputs. No bitmap rotations or mirrored upright views.",
+      "mount": "ground contact base; record per-face footprint and item/mount anchors",
+      "audit_gap": null,
+      "mode": "north/east/south/west",
+      "request_id": "ART-0020",
+      "task_id": "TASK-0031",
+      "request_record": ".agents/graphics/requests/ART-0020_hero_room_study_bookshelf_views.md",
+      "task_record": ".agents/tasks/TASK-0031_hero_room_study_bookshelf_views.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_north.png",
+        ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_east.png",
+        ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_south.png",
+        ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_west.png"
+      ],
+      "state": "blocked_reference"
+    },
+    {
+      "key": "study_chest_views",
+      "title": "Four-perspective study-zone closed chest",
+      "level": 3,
+      "size": [
+        191,
+        157
+      ],
+      "related_ids": [
+        "P017"
+      ],
+      "filenames": [
+        "hero_study_chest_north.png",
+        "hero_study_chest_east.png",
+        "hero_study_chest_south.png",
+        "hero_study_chest_west.png"
+      ],
+      "reason": "The m8 description requires west-facing right-wall furniture. P017 has no registered orientation/variant metadata, so a west-facing match cannot be confirmed from names.",
+      "detail": "Four distinct upright views of the registered study-zone closed chest family, with west-facing placement supported. Preserve the existing base asset and its proportions. Native size is the existing catalog canvas as an initial constraint; owner supplies measured per-face dimensions/origins. Check for registered/reviewed facings before painting and cancel covered outputs. No bitmap rotations or mirrored upright views.",
+      "mount": "ground contact base; record per-face footprint and item/mount anchors",
+      "audit_gap": null,
+      "mode": "north/east/south/west",
+      "request_id": "ART-0021",
+      "task_id": "TASK-0032",
+      "request_record": ".agents/graphics/requests/ART-0021_hero_room_study_chest_views.md",
+      "task_record": ".agents/tasks/TASK-0032_hero_room_study_chest_views.md",
+      "output_paths": [
+        ".agents/graphics/deliveries/ART-0021/hero_study_chest_north.png",
+        ".agents/graphics/deliveries/ART-0021/hero_study_chest_east.png",
+        ".agents/graphics/deliveries/ART-0021/hero_study_chest_south.png",
+        ".agents/graphics/deliveries/ART-0021/hero_study_chest_west.png"
+      ],
+      "state": "blocked_reference"
+    }
+  ],
+  "production_art_created": false,
+  "visual_approval": false
+}
