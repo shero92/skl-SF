@@ -1,6 +1,6 @@
 ---
 id: TASK-0009
-status: in_progress
+status: blocked
 owner: codex
 branch: work/task-0009-55af9186
 agent: codex
@@ -49,3 +49,6 @@ Outcome: CLI accepts animation {frames, fps} and scroll {vx, vy} on layer 0 entr
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T00:15:04.275661+00:00
+
+## Runner evidence
+- Runner failed; inspect local runner-state.json
