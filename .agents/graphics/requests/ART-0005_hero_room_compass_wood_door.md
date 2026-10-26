@@ -6,7 +6,7 @@ task: TASK-0016
 dedupe_key: hero_room_compass_wood_door
 existing_asset_ids: A015,A016,W016
 output_paths: .agents/graphics/deliveries/ART-0005/hero_compass_wood_door_north.png, .agents/graphics/deliveries/ART-0005/hero_compass_wood_door_east.png, .agents/graphics/deliveries/ART-0005/hero_compass_wood_door_south.png, .agents/graphics/deliveries/ART-0005/hero_compass_wood_door_west.png
-issue: none
+issue: 20
 ---
 # Closed arched wooden compass-emblem door
 

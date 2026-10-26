@@ -6,7 +6,7 @@ task: TASK-0027
 dedupe_key: hero_room_arch_ground_shadow
 existing_asset_ids: S011,S012,S016,S017
 output_paths: .agents/graphics/deliveries/ART-0016/hero_arch_column_shadow.png
-issue: none
+issue: 20
 ---
 # Large arch and column cast-shadow mask
 

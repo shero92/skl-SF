@@ -6,7 +6,7 @@ task: TASK-0028
 dedupe_key: hero_room_door_ground_shadow
 existing_asset_ids: S013,S016
 output_paths: .agents/graphics/deliveries/ART-0017/hero_compass_door_shadow.png
-issue: none
+issue: 20
 ---
 # Wooden doorway cast-shadow mask
 

@@ -6,7 +6,7 @@ task: TASK-0031
 dedupe_key: hero_room_study_bookshelf_views
 existing_asset_ids: P014
 output_paths: .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_north.png, .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_east.png, .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_south.png, .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_west.png
-issue: none
+issue: 20
 ---
 # Four-perspective right-wall bookshelf
 

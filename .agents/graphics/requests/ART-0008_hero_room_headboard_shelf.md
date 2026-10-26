@@ -6,7 +6,7 @@ task: TASK-0019
 dedupe_key: hero_room_headboard_shelf
 existing_asset_ids: P004,P014,P015
 output_paths: .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_north.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_east.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_west.png
-issue: none
+issue: 20
 ---
 # Headboard-mounted bookshelf and plant support
 

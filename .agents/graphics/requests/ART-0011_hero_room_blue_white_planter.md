@@ -6,7 +6,7 @@ task: TASK-0022
 dedupe_key: hero_room_blue_white_planter
 existing_asset_ids: O001,V017,V020
 output_paths: .agents/graphics/deliveries/ART-0011/hero_blue_white_planter.png
-issue: none
+issue: 20
 ---
 # Large plant in a blue-white ceramic vase
 

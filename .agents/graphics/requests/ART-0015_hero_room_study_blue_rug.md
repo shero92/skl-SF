@@ -6,7 +6,7 @@ task: TASK-0026
 dedupe_key: hero_room_study_blue_rug
 existing_asset_ids: P005,P006
 output_paths: .agents/graphics/deliveries/ART-0015/hero_study_blue_rug.png
-issue: none
+issue: 20
 ---
 # Second blue rug for the study zone
 

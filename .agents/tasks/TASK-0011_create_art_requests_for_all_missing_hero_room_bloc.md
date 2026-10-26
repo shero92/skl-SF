@@ -10,7 +10,7 @@ done_when: One complete request per gap using canonical GRAPHICS.md request reco
 started_at: 2026-10-26T12:46:00.409046+01:00
 cost_usd: unknown
 depends_on: TASK-0008
-issue: none
+issue: 20
 art_request: none
 ---
 # Create ART requests for all missing Hero Room blocks
@@ -55,3 +55,9 @@ Outcome: One complete request per gap using canonical GRAPHICS.md request record
 - Wrote only Markdown/JSON request/task records. No images were opened, generated, replaced or approved; no catalog/map revisions changed; no generated boards were written on this branch.
 - Tests: py -3 tools/run_tests.py --changed --kind python: 2/2 applicable suites passed; task-specific test_art_delivery.py passed. All three --sources-only checks passed. Read-only coverage validation passed 12/12 audited gaps, 20 unique request/task pairs, 50 unique proposed output paths and Markdown/JSON-only allowed changes.
 - Next: review this request-record PR; owner confirms reference provenance/scale and existing-asset reuse before specialist production.
+
+## Published handoff
+- PR: https://github.com/shero92/skl-SF/pull/19
+- Owner handoff: https://github.com/shero92/skl-SF/issues/20 (one shared review issue for the 20 new requests; existing ART-0001 keeps issue 14).
+- Code/record commit: https://github.com/shero92/skl-SF/commit/e68cb46ffa34c835a81055cff278701fdcf5167b
+- New requests remain blocked_reference, specialist tasks remain blocked_on_art, and no visual approval is implied by the request-record PR.

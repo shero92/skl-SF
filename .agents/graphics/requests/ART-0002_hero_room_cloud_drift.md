@@ -6,7 +6,7 @@ task: TASK-0013
 dedupe_key: hero_room_cloud_drift
 existing_asset_ids: E018
 output_paths: .agents/graphics/deliveries/ART-0002/hero_cloud_01.png, .agents/graphics/deliveries/ART-0002/hero_cloud_02.png, .agents/graphics/deliveries/ART-0002/hero_cloud_03.png
-issue: none
+issue: 20
 ---
 # Independent drifting cloud variants
 

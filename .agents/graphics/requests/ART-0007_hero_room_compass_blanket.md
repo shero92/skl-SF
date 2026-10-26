@@ -6,7 +6,7 @@ task: TASK-0018
 dedupe_key: hero_room_compass_blanket
 existing_asset_ids: P002,P004
 output_paths: .agents/graphics/deliveries/ART-0007/hero_compass_blanket.png
-issue: none
+issue: 20
 ---
 # Blue/gold compass-pattern bed blanket overlay
 

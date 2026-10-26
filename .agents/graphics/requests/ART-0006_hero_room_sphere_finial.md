@@ -6,7 +6,7 @@ task: TASK-0017
 dedupe_key: hero_room_sphere_finial
 existing_asset_ids: ST011,A013
 output_paths: .agents/graphics/deliveries/ART-0006/hero_stone_sphere_finial.png
-issue: none
+issue: 20
 ---
 # Reusable stone sphere stair-post finial
 

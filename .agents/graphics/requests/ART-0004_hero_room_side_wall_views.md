@@ -6,7 +6,7 @@ task: TASK-0015
 dedupe_key: hero_room_side_wall_views
 existing_asset_ids: W001,W006,W007,W008,W009,W019,W020
 output_paths: .agents/graphics/deliveries/ART-0004/hero_wall_run_north.png, .agents/graphics/deliveries/ART-0004/hero_wall_run_east.png, .agents/graphics/deliveries/ART-0004/hero_wall_run_south.png, .agents/graphics/deliveries/ART-0004/hero_wall_run_west.png
-issue: none
+issue: 20
 ---
 # Four-perspective side-wall run blocks
 

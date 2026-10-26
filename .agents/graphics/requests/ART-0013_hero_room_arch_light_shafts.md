@@ -6,7 +6,7 @@ task: TASK-0024
 dedupe_key: hero_room_arch_light_shafts
 existing_asset_ids: none
 output_paths: .agents/graphics/deliveries/ART-0013/hero_arch_light_shaft.png
-issue: none
+issue: 20
 ---
 # Transparent sun shafts through the central arch
 

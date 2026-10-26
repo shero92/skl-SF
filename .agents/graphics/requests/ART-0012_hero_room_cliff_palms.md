@@ -6,7 +6,7 @@ task: TASK-0023
 dedupe_key: hero_room_cliff_palms
 existing_asset_ids: V017,V023
 output_paths: .agents/graphics/deliveries/ART-0012/hero_cliff_palm_01.png, .agents/graphics/deliveries/ART-0012/hero_cliff_palm_02.png
-issue: none
+issue: 20
 ---
 # Cliff-edge palm plant variants
 

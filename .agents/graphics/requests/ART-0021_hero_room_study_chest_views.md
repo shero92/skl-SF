@@ -6,7 +6,7 @@ task: TASK-0032
 dedupe_key: hero_room_study_chest_views
 existing_asset_ids: P017
 output_paths: .agents/graphics/deliveries/ART-0021/hero_study_chest_north.png, .agents/graphics/deliveries/ART-0021/hero_study_chest_east.png, .agents/graphics/deliveries/ART-0021/hero_study_chest_south.png, .agents/graphics/deliveries/ART-0021/hero_study_chest_west.png
-issue: none
+issue: 20
 ---
 # Four-perspective study-zone closed chest
 

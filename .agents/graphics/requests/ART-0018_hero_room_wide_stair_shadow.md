@@ -6,7 +6,7 @@ task: TASK-0029
 dedupe_key: hero_room_wide_stair_shadow
 existing_asset_ids: S015
 output_paths: .agents/graphics/deliveries/ART-0018/hero_wide_front_stair_shadow.png
-issue: none
+issue: 20
 ---
 # Wide front-stair cast-shadow mask
 

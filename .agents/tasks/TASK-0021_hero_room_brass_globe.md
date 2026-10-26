@@ -10,7 +10,7 @@ done_when: Owner-approved specialist delivery for ART-0010 is independently revi
 started_at: unknown
 cost_usd: unknown
 depends_on: TASK-0011
-issue: none
+issue: 20
 art_request: ART-0010
 ---
 # Specialist delivery: Brass globe on a compact stand

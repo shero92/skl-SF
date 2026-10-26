@@ -6,7 +6,7 @@ task: TASK-0014
 dedupe_key: hero_room_cliff_foam_loop
 existing_asset_ids: E009,E011,E012,E013,E014
 output_paths: .agents/graphics/deliveries/ART-0003/hero_cliff_foam_01.png, .agents/graphics/deliveries/ART-0003/hero_cliff_foam_02.png, .agents/graphics/deliveries/ART-0003/hero_cliff_foam_03.png, .agents/graphics/deliveries/ART-0003/hero_cliff_foam_04.png
-issue: none
+issue: 20
 ---
 # Four-frame cliff-base foam loop
 

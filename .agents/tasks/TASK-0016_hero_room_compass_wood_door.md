@@ -10,7 +10,7 @@ done_when: Owner-approved specialist delivery for ART-0005 is independently revi
 started_at: unknown
 cost_usd: unknown
 depends_on: TASK-0011
-issue: none
+issue: 20
 art_request: ART-0005
 ---
 # Specialist delivery: Closed arched wooden compass-emblem door

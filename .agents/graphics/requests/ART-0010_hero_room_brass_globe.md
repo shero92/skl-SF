@@ -6,7 +6,7 @@ task: TASK-0021
 dedupe_key: hero_room_brass_globe
 existing_asset_ids: O019
 output_paths: .agents/graphics/deliveries/ART-0010/hero_brass_globe.png
-issue: none
+issue: 20
 ---
 # Brass globe on a compact stand
 

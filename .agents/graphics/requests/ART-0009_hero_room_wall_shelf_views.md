@@ -6,7 +6,7 @@ task: TASK-0020
 dedupe_key: hero_room_wall_shelf_views
 existing_asset_ids: none
 output_paths: .agents/graphics/deliveries/ART-0009/hero_wall_shelf_north.png, .agents/graphics/deliveries/ART-0009/hero_wall_shelf_east.png, .agents/graphics/deliveries/ART-0009/hero_wall_shelf_south.png, .agents/graphics/deliveries/ART-0009/hero_wall_shelf_west.png
-issue: none
+issue: 20
 ---
 # Reusable wall-mounted shelf views
 

@@ -6,7 +6,7 @@ task: TASK-0025
 dedupe_key: hero_room_broken_floor_edge
 existing_asset_ids: F006,F007,F008,F009,F010,F011,F012,F013
 output_paths: .agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01.png, .agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02.png, .agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left.png, .agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right.png
-issue: none
+issue: 20
 ---
 # Irregular broken front floor-edge pieces
 

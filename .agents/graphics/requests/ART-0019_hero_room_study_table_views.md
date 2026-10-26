@@ -6,7 +6,7 @@ task: TASK-0030
 dedupe_key: hero_room_study_table_views
 existing_asset_ids: P009
 output_paths: .agents/graphics/deliveries/ART-0019/hero_study_table_north.png, .agents/graphics/deliveries/ART-0019/hero_study_table_east.png, .agents/graphics/deliveries/ART-0019/hero_study_table_south.png, .agents/graphics/deliveries/ART-0019/hero_study_table_west.png
-issue: none
+issue: 20
 ---
 # Four-perspective study table
 

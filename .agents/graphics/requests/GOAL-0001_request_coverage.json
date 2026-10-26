@@ -672,5 +672,7 @@
     }
   ],
   "production_art_created": false,
-  "visual_approval": false
+  "visual_approval": false,
+  "owner_handoff_issue": "https://github.com/shero92/skl-SF/issues/20",
+  "request_record_pr": "https://github.com/shero92/skl-SF/pull/19"
 }
