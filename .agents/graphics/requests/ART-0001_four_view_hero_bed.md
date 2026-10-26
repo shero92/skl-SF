@@ -14,7 +14,7 @@ issue: 14
 
 **Duplicate avoidance:** `P001` already exists under `map_factory/parts/furniture/` and MUST NOT be recreated or overwritten. Check current catalog for any newly committed variants and cancel/adjust this request if they already satisfy it. Do not use a flat rotated copy as a "new" view.
 
-**Reference blocker:** the authentic original Hero Room reference from the user's conversation is not yet saved as a file in the repository. Do not invent matching details; wait until `TASK-0001` provides a committed image path and hash, then record them here. Consult `docs/REFERENCE_ART_DIRECTION.md`, existing P001 and its `pixel_size/origin` in `asset_index.json`.
+**Reference provenance blocker (TASK-0011 metadata update):** the genuine goal reference is now tracked at `.agents/planner/goals/GOAL-0001/references/hero_room_reference.png` (Git blob SHA-1 metadata `8d9a4c951b169458ceb85f9ad61107b99d59a909`). Its image SHA-256/native dimensions are not verified in the current request metadata, and legacy dimension/hash descriptions disagree. Do not invent matching details; owner/reviewer must confirm the source and record its SHA-256 before specialist production. Consult `docs/REFERENCE_ART_DIRECTION.md`, existing P001 and its `pixel_size/origin` in `asset_index.json`.
 
 **Exact requested outputs:** 4 separate transparent RGBA PNGs at the output_paths named above. Faces: north/east/south/west, all UPRIGHT and coherent in 3/4 top-down projection. Consistent silhouette, base/ground-contact pivot, original bed materials/colors, shading from upper left, clean alpha, no labels, neighboring objects or pre-baked long shadows. Determine the original native-size scale from the catalog before painting; do not upscale or silently change proportions. Supply a brief per-face dimension/origin suggestion and lighting/shadow note for map integration. New production catalog IDs must be allocated at integration time after checking the latest registry to avoid collision.
 
@@ -42,4 +42,4 @@ issue: 14
 - [ ] Godot four-direction tests and screenshot visual comparison pass.
 - [ ] PR merged and update status `integrated`; never regenerate this request.
 
-**Current status:** BLOCKED until authentic reference exists. No PNGs have been delivered.
+**Current status:** BLOCKED pending confirmed source provenance/SHA-256 and scale. A reference file is tracked; no PNG pixels were opened by this task and no delivered bed views are claimed.
