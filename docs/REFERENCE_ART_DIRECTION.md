@@ -53,6 +53,12 @@ Issue [#20](https://github.com/shero92/skl-SF/issues/20) describes ART-0002..ART
 - **Committed goal reference is not byte-identical:** `.agents/planner/goals/GOAL-0001/references/hero_room_reference.png` has Git blob SHA-1 `8d9a4c951b169458ceb85f9ad61107b99d59a909` and size 4,028,643 bytes. This does NOT establish a visual difference; recompression can change bytes. The committed source SHA-256/native dimensions and visual equivalence remain unverified. Do not copy the chat-source SHA-256 onto the committed file.
 
 On the owner's local clone, an **authorized owner/reviewer** should run this non-destructive command and compare the result:
+
+The following command is also supported by `tools/art_delivery.py`, and is the preferred automated preflight:
+```bash
+python tools/art_delivery.py --audit-reference
+```
+It prints the committed SHA-256 and native dimensions without claiming pixel equivalence or production readiness.
 ```bash
 python -c "from pathlib import Path; import hashlib,struct; p=Path('.agents/planner/goals/GOAL-0001/references/hero_room_reference.png'); b=p.read_bytes(); assert b[:8]==bytes.fromhex('89504e470d0a1a0a'); print('committed_sha256',hashlib.sha256(b).hexdigest()); print('native_dimensions',struct.unpack('>II',b[16:24]))"
 ```
