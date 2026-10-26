@@ -1,13 +1,13 @@
 ---
 id: TASK-0035
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0035-6cf6510d
 agent: claude
 touches: map_factory/scripts/shadow_factory.gd
 test: py -3 tools/run_tests.py --only godot_map_smoke
 done_when: Every placement with shadow data gets an owner-linked shadow at z 20; lantern/candle glow (D015/D016) and light-shaft entries are supported
-started_at: unknown
+started_at: 2026-10-26T14:00:59.854977+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -42,3 +42,6 @@ Outcome: Every placement with shadow data gets an owner-linked shadow at z 20; l
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T14:00:59.842121+00:00
