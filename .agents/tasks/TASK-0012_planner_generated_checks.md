@@ -24,4 +24,7 @@ art_request: none
 - Godot tests: not rerun for this infrastructure-only change; automatic approval review rejected restoring production art into the coding worktree.
 - Changed paths: tools/runner_safety.py, tools/agent_runner.py, tools/local_planner.py, tools/agent_workflow.py, tools/generate_project_indexes.py, tools/agent_costs.py; three GitHub validation workflows and three regression-test files.
 - Generated dashboards/indexes: unchanged in this task worktree.
-- Next: review and merge this infrastructure PR, refresh planning PR 17, then claim TASK-0011 for ART request records.
+- PR: https://github.com/shero92/skl-SF/pull/18
+- Code commit: https://github.com/shero92/skl-SF/commit/31c12b5ec07e9cc33589d0eabb36d9b4ed722e90
+- Hosted CI: all four PR workflows passed on the code commit (map Python tests, handoff/source validation, navigation indexes, cost receipts).
+- Next: review and merge PR 18, refresh planning PR 17, then claim TASK-0011 for ART request records.
