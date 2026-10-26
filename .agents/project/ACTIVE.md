@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| — | none | — | — | — | — |
+| codex | TASK-0009 | tools/map_factory_cli.py, tools/tests/test_map_layers.py | 2026-10-26T09:53:07.753496+00:00 | in_progress | unknown |

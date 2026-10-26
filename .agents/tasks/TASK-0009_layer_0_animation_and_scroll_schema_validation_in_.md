@@ -1,13 +1,13 @@
 ---
 id: TASK-0009
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: codex
+branch: work/task-0009-8f0f0ad5
 agent: codex
 touches: tools/map_factory_cli.py,tools/tests/test_map_layers.py
 test: py -3 -m unittest discover -s tools/tests -p test_map_layers.py
 done_when: CLI accepts animation {frames, fps} and scroll {vx, vy} on layer 0 entries and rejects frame IDs missing from the asset catalog, with unit tests covering accept and reject cases
-started_at: unknown
+started_at: 2026-10-26T09:53:07.753496+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -55,3 +55,6 @@ Outcome: CLI accepts animation {frames, fps} and scroll {vx, vy} on layer 0 entr
 
 ## Runner evidence
 - Reset to todo: previous attempt failed due to runner test-command bug fixed in 11c9a10; Codex patch saved in .local (.agents/monitoring/.local/TASK-0009-55af9186/codex-change.patch).
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T09:53:07.745211+00:00
