@@ -1,13 +1,13 @@
 ---
 id: TASK-0008
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0008-4149caeb
 agent: claude
 touches: map_factory/maps/hero_room_01/reference_gaps.json
 test: py -3 -m unittest tools.tests.test_map_reference
 done_when: map_factory/maps/hero_room_01/reference_gaps.json maps every spec item to an existing asset ID or a gap entry with level (0-4), proposed native size and 4-direction needs; no unrelated substitutes; uncertain matches listed as gaps; no PNGs opened
-started_at: unknown
+started_at: 2026-10-26T10:05:16.630587+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -45,3 +45,6 @@ Outcome: map_factory/maps/hero_room_01/reference_gaps.json maps every spec item 
 
 ## Allowed touches
 - map_factory/maps/hero_room_01/reference_gaps.json
+
+## Runner evidence
+- Claimed by local runner at 2026-10-26T10:05:16.620715+00:00
