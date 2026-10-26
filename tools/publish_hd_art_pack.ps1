@@ -20,11 +20,18 @@ if (-not (Test-Path 'project.godot') -or -not (Test-Path 'tools/map_factory_cli.
 $changes = & git status --porcelain
 if ($LASTEXITCODE -ne 0) { throw "Cannot read git status" }
 if ($changes) { throw "Please commit/stash other changes first. No overwrite allowed." }
-Run-Git switch main
+# Never rebase, reset, merge or push the owner's local main branch.
+# A locally authored commit may exist on main while origin/main has moved.
+# Branch directly from the verified remote tip, preserving local history.
 Run-Git fetch origin main
-Run-Git merge --ff-only origin/main
 $branch = "art/hero-room-hd-pngs-20261026"
-Run-Git switch -c $branch
+$branchExists = & git branch --list $branch
+if ($LASTEXITCODE -ne 0) { throw "Cannot check existing local branches" }
+if ($branchExists) {
+    throw "Art branch $branch already exists locally. Inspect it before retrying; never overwrite it."
+}
+Run-Git switch -c $branch origin/main
+Write-Host "Using clean origin/main for art integration. Local commits on main are untouched."
 Run-Python tools/install_hd_factory_pack.py $ZipPath
 Run-Python tools/install_hd_factory_pack.py $ZipPath --install --integrate
 Run-Python tools/map_factory_cli.py validate
