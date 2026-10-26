@@ -1,6 +1,6 @@
 ---
 id: TASK-0033
-status: in_progress
+status: blocked
 owner: codex
 branch: work/task-0033-e2b138c2
 agent: codex
@@ -45,3 +45,6 @@ Outcome: Sea cycles E010-E014 wave frames at the JSON fps, clouds scroll, foam a
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T13:16:00.408854+00:00
+
+## Runner evidence
+- Runner failed: Agent CLI failed; code not merged
