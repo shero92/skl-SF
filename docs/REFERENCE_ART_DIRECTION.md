@@ -42,3 +42,44 @@ These are *guideline samples*, not rigid global quantization (which would destro
 The automated cleanup pass removed unrelated cutout scraps from 23 PNGs, but **all 218 sprites still need artistic review**. The first-pass procedural hero, fairy and sea assets will require high-fidelity replacement artwork to fully match the reference.
 
 Related: [art cleanup findings](ART_QUALITY_REVIEW.md), [visual preview gallery](ASSET_GALLERY.md) and [asset index](../map_factory/metadata/asset_index.json).
+
+## GOAL-0001 art intake triage (2026-10-26, not visual approval)
+
+Issue [#20](https://github.com/shero92/skl-SF/issues/20) describes ART-0002..ART-0021 (20 requests, 50 named PNG deliverables); [#14](https://github.com/shero92/skl-SF/issues/14) tracks four-view bed ART-0001. All 21 are **blocked_reference**, NOT delivered. Do not create dummy placeholder PNGs, reinterpret existing sprites as approved, or mark art `requested` merely to unblock a coder.
+
+**Reference integrity measured from actual files uploaded in the owner's chat:**
+- Full 3/4 seaside Hero Room source: 1448×1086, SHA-256 `42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7`, file size 3,350,789 bytes, Git blob SHA-1 of these exact bytes `e359b0783b4e818533eef163643fe93bf840552a`.
+- Separate transparent four-object style reference: 1312×1199, SHA-256 `9e8201055c26ac468d3bfd4052dc664925dd3bf5b25a9741f6f786fc79734763`. This style sheet is not the level layout.
+- **Committed goal reference is not byte-identical:** `.agents/planner/goals/GOAL-0001/references/hero_room_reference.png` has Git blob SHA-1 `8d9a4c951b169458ceb85f9ad61107b99d59a909` and size 4,028,643 bytes. This does NOT establish a visual difference; recompression can change bytes. The committed source SHA-256/native dimensions and visual equivalence remain unverified. Do not copy the chat-source SHA-256 onto the committed file.
+
+On the owner's local clone, an **authorized owner/reviewer** should run this non-destructive command and compare the result:
+
+The following command is also supported by `tools/art_delivery.py`, and is the preferred automated preflight:
+```bash
+python tools/art_delivery.py --audit-reference
+```
+It prints the committed SHA-256 and native dimensions without claiming pixel equivalence or production readiness.
+```bash
+python -c "from pathlib import Path; import hashlib,struct; p=Path('.agents/planner/goals/GOAL-0001/references/hero_room_reference.png'); b=p.read_bytes(); assert b[:8]==bytes.fromhex('89504e470d0a1a0a'); print('committed_sha256',hashlib.sha256(b).hexdigest()); print('native_dimensions',struct.unpack('>II',b[16:24]))"
+```
+Resolve which version is canonical, confirm perspective/native scale and amend the exact request records before moving them to `requested`. Record dimensions per delivered file in its manifest, not the estimated canvas alone. The room's **1536×1024 output canvas** is distinct from the observed source-image pixel size.
+
+### Disposition and duplicates: reviewed against catalog metadata only
+
+- **Likely new art/specialist scope:** ART-0002 (clouds), 0003 (cliff foam), 0004 (four-view side walls), 0005 (four-view door), 0006 (sphere finial), 0007 (compass blanket), 0008 (headboard shelf), 0009 (wall shelf), 0010 (brass globe), 0011 (blue/white planter), 0012 (palms), 0013 (light shafts).
+- **Reuse/compose/scale review FIRST:** ART-0014 (F007/F012/F013), ART-0015 (P005/P006 238×304 rug), ART-0016 (S017 320×158 directional shadow), ART-0017 (S013/S016), ART-0018 (S015 240×128), ART-0019 (P009 393×275), ART-0020 (P014 296×269), ART-0021 (P017 191×157). These are not cancelled automatically: metadata does not prove the registered art fits the required silhouette or angle. Narrow/cancel only *individual confirmed covered outputs* after actual specialist review.
+- **Existing tracked bed request:** ART-0001 uses P001 as a reference, not a new P001 replacement; coordinate ART-0007 with it to avoid generating a second whole bed.
+- ART-0008 and ART-0009 share the concept of shelves but have different mount interfaces (headboard versus wall); do not dedupe without checking mounting and proportions. ART-0010 O019 is an astrolabe, **not** an automatically approved brass globe.
+
+### Codex / Claude Code handoff
+
+Coding agents may check **metadata, hashes, JSON, task-state consistency**, implement animation/Y-sort/directional-view integration and validate *only externally delivered, reviewer-approved* sprites. In parallel worktrees, never both edit the same Map Factory files. Do **not** use source-art reading or automated art-generation tools in agent sessions. Start from `AGENTS.md` and `.agents/workflows/GRAPHICS.md`. Good first coding task is blocked `TASK-0033` (living background) when Codex availability returns; verify `TASK-0034` and `TASK-0035` remain passing rather than redoing them.
+
+After a graphics specialist supplies real RGBA deliverables, use:
+```bash
+python tools/agent_workflow.py --check
+python tools/art_delivery.py --check
+python tools/map_factory_cli.py validate
+python tools/run_tests.py --changed
+```
+Then integrate reviewed artwork with new versioned map data, capture a **real Godot image** and request owner visual approval. Preserve the five render levels; do not change characters/UI/gameplay for this goal.
