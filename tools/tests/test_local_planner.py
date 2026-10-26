@@ -145,10 +145,10 @@ class PlannerPulseRun(unittest.TestCase):
         from unittest.mock import patch
         from contextlib import ExitStack
         from types import SimpleNamespace
-        for mode in ("unchanged", "cooldown", "rejected", "failure", "success"):
+        for mode in ("unchanged", "cooldown", "rejected", "failure", "success", "merged", "ci_failed", "unsafe_diff"):
             with self.subTest(mode=mode), tempfile.TemporaryDirectory() as tmp, ExitStack() as stack:
                 base=Path(tmp)
-                config={"planning_enabled":True,"schedule":[],"auto_merge_planning":False}
+                config={"planning_enabled":True,"schedule":[],"auto_merge_planning":mode in ("merged", "ci_failed", "unsafe_diff")}
                 events=[]
                 def load(path, default):
                     if path == local_planner.CONFIG: return config
@@ -163,6 +163,11 @@ class PlannerPulseRun(unittest.TestCase):
                     return ""
                 def invoke(argv, **kwargs):
                     events.append(("invoke",argv))
+                    if argv[:3]==["gh","pr","checks"]:
+                        return SimpleNamespace(stdout="",stderr="",returncode=1 if mode=="ci_failed" else 0)
+                    if argv[:3]==["gh","pr","diff"]:
+                        path="tools/arbitrary.py" if mode=="unsafe_diff" else ".agents/tasks/TASK-0011_new.md"
+                        return SimpleNamespace(stdout=path,stderr="",returncode=0)
                     if "pulse" in argv: return SimpleNamespace(stdout='{"created":["TASK-0011"]}',stderr="",returncode=0)
                     if "apply-proposal" in argv:
                         return SimpleNamespace(stdout='{"created":[],"updated":[]}',stderr="rejected",returncode=1 if mode=="rejected" else 0)
@@ -178,12 +183,45 @@ class PlannerPulseRun(unittest.TestCase):
                     stack.enter_context(patch.object(local_planner,name,value))
                 # This is an isolated Windows-run simulation, also exercised on Linux CI.
                 stack.enter_context(patch.object(local_planner,"os",SimpleNamespace(name="nt")))
-                local_planner.run("claude")
+                with patch.object(local_planner,"refresh_main") as refresh:
+                    local_planner.run("claude")
+                    self.assertEqual(refresh.call_count,1 if mode=="merged" else 0)
                 self.assertEqual(any(e[0]=="ai" for e in events), mode not in ("unchanged","cooldown"))
                 self.assertTrue(any(e[0]=="git" and e[1][0]=="commit" for e in events))
                 self.assertTrue(any(e[0]=="git" and e[1][0]=="push" for e in events))
                 logs=[p for p in (base/"runs").glob("*.json") if not p.stem.endswith(("-pulse","-proposal"))]
                 self.assertEqual(json.loads(logs[0].read_text())["pulse"]["created"],["TASK-0011"])
+
+class PlannerMainRefresh(unittest.TestCase):
+    def test_refresh_requires_lock_clean_main_and_verified_commit(self):
+        from unittest.mock import patch
+        import agent_runner as ar
+        from contextlib import contextmanager
+        events=[]
+        @contextmanager
+        def locked(label):
+            events.append(("lock",label))
+            yield
+            events.append(("unlock",label))
+        def git(*args):
+            events.append(("git",args))
+            return "main" if args[0]=="branch" else ""
+        with patch.object(ar,"exclusive",locked),patch.object(ar,"main_commit") as commit,patch.object(local_planner,"git",git):
+            local_planner.refresh_main("claude")
+            commit.assert_called_once_with("chore: refresh generated outputs after planning","claude","planning",verify=True)
+        self.assertEqual(events[0],("lock","main-merge"))
+        self.assertIn(("git",("pull","--ff-only","origin","main")),events)
+        self.assertEqual(events[-1],("unlock","main-merge"))
+        for branch,dirty in (("task", ""),("main"," M tools/changed.py")):
+            with patch.object(ar,"exclusive",locked),patch.object(ar,"main_commit") as commit,patch.object(local_planner,"git",side_effect=[branch,dirty]):
+                with self.assertRaisesRegex(RuntimeError,"clean main"):local_planner.refresh_main("codex")
+                commit.assert_not_called()
+
+    def test_planning_allowlist_rejects_generated_files_and_code(self):
+        self.assertTrue(local_planner.planning_path(".agents/tasks/TASK-0011_plan.md"))
+        self.assertTrue(local_planner.planning_path(".agents/planner/goals.json"))
+        for bad in ("tools/code.py",".agents/tasks/FILES.md","tools/FILES.md",".agents/project/TASKS.md"):
+            self.assertFalse(local_planner.planning_path(bad))
 
 if __name__=="__main__":
     unittest.main()

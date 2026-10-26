@@ -14,6 +14,8 @@ import tempfile
 import time
 from zoneinfo import ZoneInfo
 
+from runner_safety import main_generated
+
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / ".agents/planner"
 CONFIG = BASE / "config.json"
@@ -168,6 +170,20 @@ def local_ai(agent, prompt, conf):
     finally:
         os.environ.update(env_before)
 
+def planning_path(path):
+    return path.startswith((".agents/planner/", ".agents/tasks/")) and not main_generated(path)
+
+
+def refresh_main(agent):
+    """Local-only follow-up to a successfully merged plan. Never write in a PR branch."""
+    from agent_runner import exclusive, main_commit
+    with exclusive("main-merge"):
+        if git("branch", "--show-current") != "main" or git("status", "--porcelain"):
+            raise RuntimeError("Planner regeneration requires clean main")
+        git("pull", "--ff-only", "origin", "main")
+        main_commit("chore: refresh generated outputs after planning", agent, "planning", verify=True)
+
+
 def run(requested=None, dry_run=False):
     conf = load(CONFIG, {})
     if not conf.get("planning_enabled", False):
@@ -194,6 +210,7 @@ def run(requested=None, dry_run=False):
     before = digest()
     run_id = now.strftime("%Y%m%d-%H%M%S") + "-" + agent
     branch = "planning/" + run_id
+    merged = False
     try:
         if not dry_run:
             git("switch", "-c", branch)
@@ -277,13 +294,11 @@ def run(requested=None, dry_run=False):
         save(BASE/"runs"/(run_id+".json"), result)
         save(BASE/"cooldowns.json", cooldowns)
         save(BASE/"checkpoint.json", {"main_sha": sha, "digest": digest(), "last_run": run_id})
-        git("add", "-A", "--", ".agents/planner", ".agents/tasks", ".agents/project/TASKS.md",
-            ":(glob)**/FILES.md")
+        git("add", "-A", "--", ".agents/planner", ".agents/tasks")
         changed = git("diff", "--cached", "--name-only").splitlines()
         if not changed:
             return
-        if any(not (p.startswith((".agents/planner/", ".agents/tasks/")) or
-                    p == ".agents/project/TASKS.md" or p.endswith("/FILES.md")) for p in changed):
+        if any(not planning_path(p) for p in changed):
             raise RuntimeError("Planning diff outside safe allowlist")
         invoke([sys.executable, "tools/run_tests.py", "--changed"], timeout=1800)
         git("commit", "-m", "chore: local read-only planner results\n\nAgent: " + agent +
@@ -301,15 +316,17 @@ def run(requested=None, dry_run=False):
                            timeout=conf.get("ci_wait_seconds", 600), check=False)
             if check.returncode == 0:
                 names = invoke(["gh", "pr", "diff", branch, "--name-only"]).stdout.splitlines()
-                if names and all(n.startswith((".agents/planner/", ".agents/tasks/")) or
-                                 n == ".agents/project/TASKS.md" or n.endswith("/FILES.md") for n in names):
+                if names and all(planning_path(n) for n in names):
                     latest = git("rev-parse", "HEAD")
                     invoke(["gh", "pr", "merge", branch, "--squash",
                             "--match-head-commit", latest], timeout=120)
+                    merged = True
     finally:
         # Avoid deleting or resetting any uncommitted work on error.
         if not git("status", "--porcelain"):
             git("switch", "main")
+        if merged:
+            refresh_main(agent)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
