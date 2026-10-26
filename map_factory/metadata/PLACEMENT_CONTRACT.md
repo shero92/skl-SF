@@ -49,6 +49,8 @@ This example uses a provisional `P001` 2×3 contract: the occupied floor cells a
 
 Facings are `north/east/south/west`. East/west exchange the width and depth, and the validator rotates any occupied-cell mask. Upright beds, tables, shelves and walls need distinct independently authored art IDs for all four facings (`orientation_mode=variants`) before non-north placement; NEVER substitute a rotated screenshot. Ground-flat rugs can rotate only with truthful `orientation_mode=rotate`. Data `grid_placement.facing` must match the rendered facing.
 
+**Factory auto-placement:** in an `add_block` operation, supply `grid_placement` but omit both `x` and `y`; `tools/map_factory_cli.py` derives their correct pixel values from the current grid size, origin, contract and cardinal facing. Updating `grid_placement` alone in `update_block` recalculates `x/y` automatically. If you explicitly supply pixel coordinates, they must match exactly, otherwise validation fails. Do not leave one coordinate missing. Example: `{"op":"add_block","layer":"objects","block":{"id":"P001","instance_id":"HeroBedNew","grid_placement":{"cell":[2,2],"facing":"north"}}}`.
+
 A free-standing furniture asset with a contract requires a `grid_placement` in `strict_v1`; no arbitrary subcell shifting. Existing immutable Hero Room v0001–v0010 use `legacy` pixel placements and remain readable, but **must not** be advertised as correctly footprint-aligned until migrated and visually checked in a new version. Never silently retag old revisions.
 
 ## Production acceptance
