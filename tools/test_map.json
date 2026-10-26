@@ -31,6 +31,13 @@
       "paths": ["tools/tests/test_goal_task_factory.py", "tools/goal_task_factory.py", ".agents/planner/**", ".agents/tasks/**", ".claude/skills/goal-task-factory/**", ".agents/skills/goal-task-factory/**"]
     },
     {
+      "id": "blender_factory",
+      "kind": "python",
+      "covers": "Blender part factory: spec validation, technical PNG QA, calibrated 64 px tile and real facings (Blender tests skip where Blender is absent).",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_blender_factory.py"],
+      "paths": ["tools/tests/test_blender_factory.py", "tools/blender_factory.py", "tools/art_qa.py", "tools/blender/**"]
+    },
+    {
       "id": "goal_pulse_continuous",
       "kind": "python",
       "covers": "Pulse without a daily cap, reserved plan task IDs, in-flight steps and dependency promotion to todo.",

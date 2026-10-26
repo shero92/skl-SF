@@ -1,0 +1,13 @@
+{
+  "art_id": "ART-0004",
+  "task": "TASK-0015",
+  "builder": "wall_run",
+  "params": {"length": 1.0, "height": 2.25, "thickness": 0.5, "row_height": 0.28, "seed": 7},
+  "outputs": [
+    {"name": "hero_wall_run_north", "facing": "north"},
+    {"name": "hero_wall_run_east", "facing": "east"},
+    {"name": "hero_wall_run_south", "facing": "south"},
+    {"name": "hero_wall_run_west", "facing": "west"}
+  ],
+  "notes": "One modular 1-tile wall run, 2.25 tiles high, 0.5 tile thick. Facing = the wall's position in the room. Height/thickness are proposals awaiting owner calibration against the Godot capture."
+}

@@ -1,0 +1,13 @@
+{
+  "tile_px": 64,
+  "supersample": 4,
+  "camera_elevation_deg": 45,
+  "sun": {"azimuth_deg": 135, "elevation_deg": 50, "strength": 4.5, "angle_deg": 3.0, "color": [1.0, 0.95, 0.86]},
+  "world": {"color": [0.55, 0.62, 0.75], "strength": 0.35},
+  "engine": "CYCLES",
+  "device": "GPU",
+  "samples": 96,
+  "padding_px": 4,
+  "shadow_padding_tiles": 1.0,
+  "notes": "One Blender unit = one 64 px map tile. The orthographic camera looks north (+Y) from above at camera_elevation_deg; pixel aspect correction keeps the floor grid square, so heights appear scaled by cot(elevation). Sun azimuth 135 = light from the upper left of the screen (north-west), shadows fall to the lower right. Calibrate camera_elevation_deg against the final Godot capture."
+}

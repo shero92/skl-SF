@@ -1,0 +1,15 @@
+{
+  "agent": "claude",
+  "cost_usd": null,
+  "coverage": "partial",
+  "ended_at": "2026-10-26T21:29:49.056393+00:00",
+  "models": [],
+  "schema": 1,
+  "session_count": 0,
+  "source": [
+    "unknown"
+  ],
+  "started_at": "2026-10-26T21:18:35.187780+00:00",
+  "task_id": "TASK-0046",
+  "tokens": null
+}
