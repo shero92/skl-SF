@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| — | none | — | — | — | — |
+| claude | TASK-0008 | map_factory/maps/hero_room_01/reference_gaps.json | 2026-10-26T10:28:08.598230+00:00 | in_progress | unknown |
