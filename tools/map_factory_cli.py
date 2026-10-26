@@ -14,6 +14,7 @@ from copy import deepcopy
 from datetime import datetime, timezone
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -325,6 +326,28 @@ def validate_room(data, catalog, expect_map_id=None):
                 raise ValueError(f"Invalid scale: {ident}")
             if "rotation_degrees" in item and not isinstance(item["rotation_degrees"],(int,float)):
                 raise ValueError(f"Invalid rotation: {ident}")
+            if "animation" in item or "scroll" in item:
+                if layer != "background_objects":
+                    raise ValueError("animation and scroll require layer 0 (background_objects)")
+            if "animation" in item:
+                animation = item["animation"]
+                if not isinstance(animation, dict):
+                    raise ValueError(f"animation must be an object: {ident}")
+                frames = animation.get("frames")
+                if (not isinstance(frames, list) or not frames or
+                        any(not isinstance(frame, str) or not frame for frame in frames)):
+                    raise ValueError(f"animation.frames must be a nonempty list of asset IDs: {ident}")
+                for frame in frames:
+                    check_asset(frame)
+                fps = animation.get("fps")
+                if not _number(fps) or not math.isfinite(fps) or fps <= 0:
+                    raise ValueError(f"animation.fps must be a positive finite number: {ident}")
+            if "scroll" in item:
+                scroll = item["scroll"]
+                if (not isinstance(scroll, dict) or
+                        any(not _number(scroll.get(axis)) or not math.isfinite(scroll[axis])
+                            for axis in ("vx", "vy"))):
+                    raise ValueError(f"scroll must have finite numeric vx and vy: {ident}")
             # Cardinal facings may either rotate the scene node, or select
             # a complete set of four independently drawn perspective views.
             resolve_orientation(item,catalog)
