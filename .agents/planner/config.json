@@ -24,10 +24,10 @@
   "timeout_seconds": 180,
   "ci_wait_seconds": 600,
   "max_tasks_per_run": 4,
-  "execution_enabled": false,
-  "supervised_e2e_passed": false,
+  "execution_enabled": true,
+  "supervised_e2e_passed": true,
   "art_integration_enabled": false,
-  "graphics_issue_enabled": false,
+  "graphics_issue_enabled": true,
   "execution_timeout_seconds": 1800,
   "godot_executable": "C:\\Users\\shiya_8v7nrr4\\Documents\\AncientSeal-DevTools\\runtime\\godot\\Godot_v4.7.2-stable_win64_console.exe",
   "godot_qa_headless": true
