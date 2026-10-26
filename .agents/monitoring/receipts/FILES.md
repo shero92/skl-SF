@@ -15,5 +15,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0009_codex_b174a26c18.json`](TASK-0009_codex_b174a26c18.json)
 - [`TASK-0010_codex_d09640f0c9.json`](TASK-0010_codex_d09640f0c9.json)
 - [`TASK-0010_codex_fb05d964b3.json`](TASK-0010_codex_fb05d964b3.json)
+- [`TASK-0012_codex_70ad6cdabb.json`](TASK-0012_codex_70ad6cdabb.json)
+- [`TASK-0012_codex_f9a4ba030f.json`](TASK-0012_codex_f9a4ba030f.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

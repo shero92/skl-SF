@@ -20,5 +20,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0008_map_goal_0001_written_spec_to_existing_asset_ids_a.md`](TASK-0008_map_goal_0001_written_spec_to_existing_asset_ids_a.md)
 - [`TASK-0009_layer_0_animation_and_scroll_schema_validation_in_.md`](TASK-0009_layer_0_animation_and_scroll_schema_validation_in_.md)
 - [`TASK-0010_planner_milestone_pulse.md`](TASK-0010_planner_milestone_pulse.md)
+- [`TASK-0012_planner_generated_checks.md`](TASK-0012_planner_generated_checks.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

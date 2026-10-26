@@ -1,6 +1,6 @@
 ---
 id: TASK-0012
-status: review
+status: done
 owner: codex
 branch: fix/planner-generated-checks
 agent: codex
@@ -28,3 +28,6 @@ art_request: none
 - Code commit: https://github.com/shero92/skl-SF/commit/31c12b5ec07e9cc33589d0eabb36d9b4ed722e90
 - Hosted CI: all four PR workflows passed on the code commit (map Python tests, handoff/source validation, navigation indexes, cost receipts).
 - Next: review and merge PR 18, refresh planning PR 17, then claim TASK-0011 for ART request records.
+
+## Runner evidence
+- PR https://github.com/shero92/skl-SF/pull/18 merged after 21/21 Python checks and four green hosted CI workflows.

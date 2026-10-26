@@ -17,3 +17,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0008](../tasks/TASK-0008_map_goal_0001_written_spec_to_existing_asset_ids_a.md) | done | claude | none | none |
 | [TASK-0009](../tasks/TASK-0009_layer_0_animation_and_scroll_schema_validation_in_.md) | done | codex | none | none |
 | [TASK-0010](../tasks/TASK-0010_planner_milestone_pulse.md) | done | codex | none | none |
+| [TASK-0012](../tasks/TASK-0012_planner_generated_checks.md) | done | codex | TASK-0010 | none |
