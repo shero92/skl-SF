@@ -47,6 +47,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`map_factory_placement.py`](map_factory_placement.py)
 - [`prepare_map_reference.py`](prepare_map_reference.py)
 - [`process_map_intake.py`](process_map_intake.py)
+- [`publish_hd_art_pack.ps1`](publish_hd_art_pack.ps1)
 - [`quality_guard.py`](quality_guard.py)
 - [`quality_review_and_cleanup.py`](quality_review_and_cleanup.py)
 - [`repaint_dialogue_ui.py`](repaint_dialogue_ui.py)
