@@ -10,7 +10,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0001](requests/ART-0001_four_view_hero_bed.md) | blocked_reference | graphics-specialist | TASK-0002 | P001 |
 | [ART-0002](requests/ART-0002_hero_room_cloud_drift.md) | blocked_reference | graphics-specialist | TASK-0013 | E018 |
 | [ART-0003](requests/ART-0003_hero_room_cliff_foam_loop.md) | blocked_reference | graphics-specialist | TASK-0014 | E009,E011,E012,E013,E014 |
-| [ART-0004](requests/ART-0004_hero_room_side_wall_views.md) | blocked_reference | graphics-specialist | TASK-0015 | W001,W006,W007,W008,W009,W019,W020 |
+| [ART-0004](requests/ART-0004_hero_room_side_wall_views.md) | delivered | graphics-specialist | TASK-0015 | W001,W006,W007,W008,W009,W019,W020 |
 | [ART-0005](requests/ART-0005_hero_room_compass_wood_door.md) | blocked_reference | graphics-specialist | TASK-0016 | A015,A016,W016 |
 | [ART-0006](requests/ART-0006_hero_room_sphere_finial.md) | blocked_reference | graphics-specialist | TASK-0017 | ST011,A013 |
 | [ART-0007](requests/ART-0007_hero_room_compass_blanket.md) | blocked_reference | graphics-specialist | TASK-0018 | P002,P004 |

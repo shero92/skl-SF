@@ -6,7 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`ART-0004/`](ART-0004/FILES.md)
 
 ## Files
 

@@ -21,7 +21,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0012](../tasks/TASK-0012_planner_generated_checks.md) | done | codex | TASK-0010 | none |
 | [TASK-0013](../tasks/TASK-0013_hero_room_cloud_drift.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0002 |
 | [TASK-0014](../tasks/TASK-0014_hero_room_cliff_foam_loop.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0003 |
-| [TASK-0015](../tasks/TASK-0015_hero_room_side_wall_views.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0004 |
+| [TASK-0015](../tasks/TASK-0015_hero_room_side_wall_views.md) | review | claude | TASK-0011 | ART-0004 |
 | [TASK-0016](../tasks/TASK-0016_hero_room_compass_wood_door.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0005 |
 | [TASK-0017](../tasks/TASK-0017_hero_room_sphere_finial.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0006 |
 | [TASK-0018](../tasks/TASK-0018_hero_room_compass_blanket.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0007 |
