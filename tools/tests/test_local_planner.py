@@ -59,6 +59,52 @@ class PlannerSafety(unittest.TestCase):
         self.assertFalse(cfg["auto_activate"])
         self.assertFalse(cfg["execution_enabled"])
         self.assertEqual([s["agent"] for s in cfg["schedule"]],["claude","codex","claude","codex"])
+    def test_codex_null_optionals_apply_as_absent(self):
+        state={"status":"active","milestones_approved":True}
+        (self.root/".agents/planner/goals/GOAL-0001/state.json").write_text(json.dumps(state))
+        raw=json.dumps({"tasks":[self.task(line=None,touches=None)],"updates":[]})
+        self.apply(local_planner.clean_data(raw,"codex"),True)
+
+sys.path.insert(0,str(ROOT/"tools"))
+import local_planner  # noqa: E402
+
+class CodexStrictSchema(unittest.TestCase):
+    def test_every_property_required_and_optionals_nullable(self):
+        original=local_planner.schema()
+        strict:dict=local_planner.strict_schema(original)  # type: ignore[assignment]
+        def objects(node):
+            if isinstance(node,dict):
+                if "properties" in node:yield node
+                for v in node.values():yield from objects(v)
+            elif isinstance(node,list):
+                for v in node:yield from objects(v)
+        for obj in objects(strict):
+            self.assertEqual(sorted(obj["required"]),sorted(obj["properties"]))
+            self.assertIs(obj["additionalProperties"],False)
+        task=strict["properties"]["tasks"]["items"]["properties"]
+        self.assertEqual(task["goal_id"]["type"],["string","null"])
+        self.assertEqual(task["touches"]["type"],["array","null"])
+        self.assertEqual(task["line"]["type"],["integer","null"])
+        self.assertEqual(task["title"]["type"],"string")
+        self.assertNotIn("null",str(task["priority"]))
+        self.assertEqual(original,local_planner.schema(),"Claude/validator schema must stay unchanged")
+        self.assertNotIn("line",original["properties"]["tasks"]["items"]["required"])
+    def test_nullable_without_type_uses_any_of(self):
+        self.assertEqual(local_planner.nullable({"enum":["a"]}),{"anyOf":[{"enum":["a"]},{"type":"null"}]})
+    def test_clean_data_drops_null_keys(self):
+        raw=json.dumps({"tasks":[{"title":"t","line":None,"goal_id":None,"touches":["a"]}],
+                        "updates":[{"task_id":"TASK-0001","reason":None}]})
+        data=local_planner.clean_data(raw,"codex")
+        self.assertEqual(data["tasks"],[{"title":"t","touches":["a"]}])
+        self.assertEqual(data["updates"],[{"task_id":"TASK-0001"}])
+    def test_stderr_tail_redacts_and_truncates(self):
+        text="x"*3000+" Authorization: Bearer abc.def token=s3cr3t sk-proj1234567890abcd ghp_ABCDEFGH12345 schema error"
+        tail=local_planner.stderr_tail(text)
+        self.assertLessEqual(len(tail),1200)
+        self.assertTrue(tail.endswith("schema error"))
+        for secret in ("abc.def","s3cr3t","sk-proj1234567890abcd","ghp_ABCDEFGH12345"):
+            self.assertNotIn(secret,tail)
+        self.assertEqual(local_planner.stderr_tail(None),"")
 
 if __name__=="__main__":
     unittest.main()

@@ -87,6 +87,31 @@ def check_quota(stderr):
 def schema():
     return load(BASE/"proposal.schema.json", {})
 
+def nullable(prop):
+    kind = prop.get("type")
+    if isinstance(kind, str):
+        return {**prop, "type": [kind, "null"]}
+    if isinstance(kind, list):
+        return prop if "null" in kind else {**prop, "type": kind + ["null"]}
+    return {"anyOf": [prop, {"type": "null"}]}
+
+def strict_schema(node):
+    """OpenAI strict outputs (codex): every property required, optional ones nullable."""
+    if isinstance(node, list):
+        return [strict_schema(n) for n in node]
+    if not isinstance(node, dict):
+        return node
+    out = {k: strict_schema(v) for k, v in node.items()}
+    if isinstance(out.get("properties"), dict):
+        required = set(node.get("required", []))
+        out["properties"] = {k: v if k in required else nullable(v) for k, v in out["properties"].items()}
+        out["required"] = list(out["properties"])
+        out["additionalProperties"] = False
+    return out
+
+def drop_nulls(items):
+    return [{k: v for k, v in i.items() if v is not None} if isinstance(i, dict) else i for i in items]
+
 def clean_data(raw, agent):
     data = json.loads(raw)
     if agent == "claude":
@@ -96,7 +121,16 @@ def clean_data(raw, agent):
             data = json.loads(data["result"])
     if not isinstance(data, dict) or set(data) != {"tasks", "updates"}:
         raise ValueError("Agent must return ONLY a JSON proposal")
-    return data
+    # Strict schemas send optional fields as null; goal_task_factory expects them absent.
+    return {key: drop_nulls(value) if isinstance(value, list) else value for key, value in data.items()}
+
+SECRET = re.compile(r"(?i)((?:(?:api[_-]?key|token|secret|password|authorization)\s*[:=]\s*)?bearer\s+"
+                    r"|(?:api[_-]?key|token|secret|password|authorization)\s*[:=]\s*)\S+"
+                    r"|\b(?:sk|ghp|gho|ghs|ghu|github_pat|xox[a-z])[-_A-Za-z0-9]{8,}")
+
+def stderr_tail(text, limit=1200):
+    """Last part of CLI stderr for the run log, with credentials redacted."""
+    return SECRET.sub(lambda m: (m.group(1) or "") + "[REDACTED]", text or "")[-limit:].strip()
 
 def local_ai(agent, prompt, conf):
     # Prevent accidental API-key billing; rely on existing logged-in CLI subscriptions.
@@ -105,7 +139,7 @@ def local_ai(agent, prompt, conf):
         with tempfile.TemporaryDirectory(prefix="skl-readonly-plan-") as temp:
             temp = Path(temp)
             schema_path = temp/"schema.json"
-            schema_path.write_text(json.dumps(schema()), encoding="utf-8", newline="\n")
+            schema_path.write_text(json.dumps(strict_schema(schema())), encoding="utf-8", newline="\n")
             cwd = temp  # no production images or repository tools in the agent workspace
             started = time.monotonic()
             if agent == "claude":
@@ -202,6 +236,7 @@ def run(requested=None, dry_run=False):
             result["reason"] = str(exc)[:300]
     else:
         result["reason"] = ("usage_limit" if check_quota(outcome["error"]) else "cli_error")
+        result["stderr_tail"] = stderr_tail(outcome["error"])
     if dry_run:
         print(json.dumps(result))
         return
