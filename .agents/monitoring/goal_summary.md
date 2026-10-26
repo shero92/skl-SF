@@ -4,6 +4,6 @@
 
 | Goal | Known API-equivalent USD | Unknown cost receipts | Input tokens | Output tokens | Receipts |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| GOAL-0001 | 0.888117 | 3 | 1083125 | 18605 | 6 |
+| GOAL-0001 | 0.888117 | 5 | 1083125 | 18605 | 8 |
 
 These are API-equivalent estimates, NOT subscription charges. Unknown costs remain unknown.
