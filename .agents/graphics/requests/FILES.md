@@ -11,5 +11,26 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`ART-0001_four_view_hero_bed.md`](ART-0001_four_view_hero_bed.md)
+- [`ART-0002_hero_room_cloud_drift.md`](ART-0002_hero_room_cloud_drift.md)
+- [`ART-0003_hero_room_cliff_foam_loop.md`](ART-0003_hero_room_cliff_foam_loop.md)
+- [`ART-0004_hero_room_side_wall_views.md`](ART-0004_hero_room_side_wall_views.md)
+- [`ART-0005_hero_room_compass_wood_door.md`](ART-0005_hero_room_compass_wood_door.md)
+- [`ART-0006_hero_room_sphere_finial.md`](ART-0006_hero_room_sphere_finial.md)
+- [`ART-0007_hero_room_compass_blanket.md`](ART-0007_hero_room_compass_blanket.md)
+- [`ART-0008_hero_room_headboard_shelf.md`](ART-0008_hero_room_headboard_shelf.md)
+- [`ART-0009_hero_room_wall_shelf_views.md`](ART-0009_hero_room_wall_shelf_views.md)
+- [`ART-0010_hero_room_brass_globe.md`](ART-0010_hero_room_brass_globe.md)
+- [`ART-0011_hero_room_blue_white_planter.md`](ART-0011_hero_room_blue_white_planter.md)
+- [`ART-0012_hero_room_cliff_palms.md`](ART-0012_hero_room_cliff_palms.md)
+- [`ART-0013_hero_room_arch_light_shafts.md`](ART-0013_hero_room_arch_light_shafts.md)
+- [`ART-0014_hero_room_broken_floor_edge.md`](ART-0014_hero_room_broken_floor_edge.md)
+- [`ART-0015_hero_room_study_blue_rug.md`](ART-0015_hero_room_study_blue_rug.md)
+- [`ART-0016_hero_room_arch_ground_shadow.md`](ART-0016_hero_room_arch_ground_shadow.md)
+- [`ART-0017_hero_room_door_ground_shadow.md`](ART-0017_hero_room_door_ground_shadow.md)
+- [`ART-0018_hero_room_wide_stair_shadow.md`](ART-0018_hero_room_wide_stair_shadow.md)
+- [`ART-0019_hero_room_study_table_views.md`](ART-0019_hero_room_study_table_views.md)
+- [`ART-0020_hero_room_study_bookshelf_views.md`](ART-0020_hero_room_study_bookshelf_views.md)
+- [`ART-0021_hero_room_study_chest_views.md`](ART-0021_hero_room_study_chest_views.md)
+- [`GOAL-0001_request_coverage.json`](GOAL-0001_request_coverage.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
