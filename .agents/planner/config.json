@@ -36,5 +36,8 @@
     "agent": "codex",
     "merge_sha": "1bd74a054e698232d00c20f631fb9eab6a054717",
     "verified_at": "2026-10-26T09:55:22.840855+00:00"
-  }
+  },
+  "max_new_tasks_per_day": null,
+  "max_tasks_per_runner_session": 10,
+  "runner_session_minutes": 150
 }

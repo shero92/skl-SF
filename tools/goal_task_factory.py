@@ -19,10 +19,30 @@ TASKS = ROOT / ".agents/tasks"
 ZONE = ZoneInfo("Europe/Berlin")
 PRIORITIES = {"critical": 0, "high": 1, "normal": 2, "low": 3}
 KINDS = ("bug", "test", "feature", "architecture", "investigation", "refactor", "art")
-MAX_NEW_PER_DAY = 3
+MAX_NEW_PER_DAY = 3  # default when config.json sets no max_new_tasks_per_day
+DEPENDENCY_BLOCK = "**Blocked by:** dependencies (the pulse promotes this task to todo once they are done)"
 
 def read(path, default=None):
     return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else default
+
+def daily_cap():
+    """New tasks per day: config max_new_tasks_per_day, null meaning no daily cap."""
+    cfg = read(BASE / "config.json", {}) or {}
+    if "max_new_tasks_per_day" not in cfg:
+        return MAX_NEW_PER_DAY
+    value = cfg["max_new_tasks_per_day"]
+    return None if value is None else int(value)
+
+def reserved_ids():
+    """Task IDs promised to goal steps (task_id/proposed_task_id), incl. a proposed revision."""
+    out = set()
+    for goal in read(BASE / "goals.json", {"goals": []}).get("goals", []):
+        steps = list(goal.get("steps", [])) + list((goal.get("proposed_revision") or {}).get("steps", []))
+        for step in steps:
+            for key in ("task_id", "proposed_task_id"):
+                if re.fullmatch(r"TASK-\d{4}", str(step.get(key, ""))):
+                    out.add(step[key])
+    return out
 
 def save(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -115,9 +135,13 @@ def create(source, spec, existing, today):
     ready = all(existing[d]["status"] == "done" for d in dependencies)
     agent = route(spec)
     state = "todo" if ready and agent != "specialist" else "blocked"
-    used = {int(x[-4:]) for x in existing}
-    num = next(i for i in range(1, 10000) if i not in used)
-    task_id = "TASK-" + f"{num:04d}"
+    # Keep the ID the plan promised; never hand another step's reserved ID to a new task.
+    wanted = spec.get("proposed_task_id")
+    if isinstance(wanted, str) and re.fullmatch(r"TASK-\d{4}", wanted) and wanted not in existing:
+        task_id = wanted
+    else:
+        used = {int(x[-4:]) for x in existing} | {int(x[-4:]) for x in reserved_ids()}
+        task_id = "TASK-" + f"{next(i for i in range(1, 10000) if i not in used):04d}"
     title = re.sub(r"[\r\n]+", " ", spec["title"]).strip()
     slug = re.sub(r"[^a-z0-9]+", "_", title.lower()).strip("_")[:50] or "work"
     file = TASKS / (task_id + "_" + slug + ".md")
@@ -142,7 +166,9 @@ def create(source, spec, existing, today):
         "**Priority:** " + spec.get("priority", "normal"),
         "**Suggested agent:** " + agent + " (routing heuristic, not a performance claim)",
         "**File:** " + path, "**Line:** " + line,
-        "**Problem:** " + spec["problem"], "", "## Acceptance",
+        "**Problem:** " + spec["problem"],
+        *([DEPENDENCY_BLOCK] if state == "blocked" and agent != "specialist" and not ready else []),
+        "", "## Acceptance",
         "- [ ] " + spec["done_when"], "- [ ] Test: " + spec["test"],
         "- [ ] PR and observed test evidence.", "", "## Agent prompt",
         prompt, "", "## Budget", "- Aim below " + str(limit)
@@ -184,9 +210,22 @@ def pulse(day=None, max_new=None):
     count = sum("**Created:** " + today in x["raw"] for x in tasks.values())
     by_source = {m.group(1): i for i, r in tasks.items()
                  if (m := re.search(r"(?m)^\*\*Source:\*\* (.+)$", r["raw"]))}
-    limit = min(MAX_NEW_PER_DAY, read(BASE / "config.json", {}).get("max_tasks_per_run", 4))
+    cap = daily_cap()
+    limit = read(BASE / "config.json", {}).get("max_tasks_per_run", 4)
+    if cap is not None:
+        limit = min(cap, limit)
     if max_new is not None:
         limit = min(limit, max_new)
+    # Tasks that waited only on dependencies become claimable as soon as those are done.
+    promoted = []
+    for tid, rec in tasks.items():
+        if rec.get("status") == "blocked" and DEPENDENCY_BLOCK in rec["raw"] and all(
+                d in tasks and tasks[d].get("status") == "done" for d in deps(rec)):
+            raw = re.sub(r"(?m)^status: blocked$", "status: todo", rec["raw"], count=1)
+            raw = raw.replace(DEPENDENCY_BLOCK, "**Blocked by:** none (dependencies done; promoted on " + today + ")", 1)
+            save(rec["path"], raw)
+            rec.update(raw=raw, status="todo")
+            promoted.append(tid)
     # Migrate only exact, unambiguous milestone annotations in older AI tasks.
     for source, spec in sources():
         if source.startswith("goal:") and source not in by_source:
@@ -202,8 +241,10 @@ def pulse(day=None, max_new=None):
                 known.add(source)
     new = []
     for source, spec in sources():
-        if source in known or count >= MAX_NEW_PER_DAY or len(new) >= limit:
+        if source in known or (cap is not None and count >= cap) or len(new) >= limit:
             continue
+        if spec.get("task_id") and spec["task_id"] not in tasks:
+            continue  # reserved by a task record on an unmerged branch; it arrives with that merge
         # Milestone order: create a step only after every "after" step has a done task.
         after = ["goal:" + spec["goal_id"] + ":" + k for k in spec.get("after", [])] if "goal_id" in spec else []
         after_ids = [by_source.get(a) for a in after]
@@ -231,12 +272,15 @@ def pulse(day=None, max_new=None):
     available = [i for i, rec in tasks.items() if rec["status"] == "todo" and all(
         d in tasks and tasks[d]["status"] == "done" for d in deps(rec))]
     lines = ["# Task analysis — " + today, "", "No AI/paid tokens used for this scan.",
-             "Four daily checks; only 3 new tasks/day to limit costs.", "",
+             "Daily cap on new tasks: " + ("none (runners work until usage limits)" if cap is None
+                                           else str(cap)) + "; " + str(limit) + " per pulse.", "",
              "## Long-term goals"]
     lines += ["- " + g["id"] + ": " + g["title"] + (" [verified complete]" if g in done else " [in progress]")
               for g in active] or ["- No active long-term goal; configure goals.json."]
     lines += ["", "## Newly generated tasks"]
     lines += ["- " + n for n in new] or ["- None"]
+    lines += ["", "## Promoted to todo (dependencies done)"]
+    lines += ["- " + n for n in promoted] or ["- None"]
     lines += ["", "## Ready tasks (maximum 3 shown)"]
     lines += ["- " + i + ": " + tasks[i]["path"].name for i in sorted(available)[:3]] or ["- None"]
     lines += ["", "## Blocked tasks"]
@@ -246,7 +290,7 @@ def pulse(day=None, max_new=None):
     lines += ["", "Updated: " + now.strftime("%Y-%m-%d %H:%M %Z"),
               "No code or artwork is generated by this planner.", ""]
     save(BASE / "daily" / (today + ".md"), "\n".join(lines))
-    return {"created": new, "ready": sorted(available)[:3], "completed":
+    return {"created": new, "promoted": promoted, "ready": sorted(available)[:3], "completed":
             [{"id": g["id"], "title": g["title"]} for g in done]}
 
 def request(args):
@@ -354,7 +398,9 @@ def apply_proposal(payload, run_key):
     cap = min(4, read(BASE / "config.json", {}).get("max_tasks_per_run", 4))
     # Pulse-created tasks and AI extras share the run and daily budgets.
     used = read(BASE / "runs" / (run_key + "-pulse.json"), {}).get("created", [])
-    pending = pending[:max(0, min(MAX_NEW_PER_DAY - count, cap - len(used)))]
+    daily = daily_cap()
+    room = len(pending) if daily is None else daily - count
+    pending = pending[:max(0, min(room, cap - len(used)))]
     created = []
     for source, t, touches in pending:
         task_id = create(source, t, current, datetime.now(ZONE).strftime("%Y-%m-%d"))

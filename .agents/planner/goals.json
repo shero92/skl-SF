@@ -127,100 +127,228 @@
           "task_id": "TASK-0035"
         },
         {
-          "key": "g1-m6-sort-mount",
-          "title": "Layer 3 sorting, occlusion and wall mounting",
-          "problem": "Floor objects and wall-mounted decor need correct y-sort against walls and must move with their mount_on wall",
-          "file": "map_factory/scripts/room_factory.gd",
+          "key": "recovery-capture",
+          "title": "Current-version QA capture",
+          "file": "tools/goal_qa.py",
           "touches": [
-            "map_factory/scripts/room_factory.gd"
+            "tools/goal_qa.py",
+            "tools/capture_map_previews.gd",
+            "tools/tests/test_goal_qa.py",
+            "tools/test_map.json"
           ],
-          "done_when": "Furniture sorts correctly in front of/behind walls; ivy, lanterns and banners follow their mount_on wall; cyclic or broken mounts are rejected",
-          "test": "py -3 -m unittest tools.tests.test_map_layers and Godot smoke tools/map_factory_godot_smoke.gd",
+          "agent": "codex",
+          "after": [],
+          "depends_on": [
+            "TASK-0036"
+          ],
+          "done_when": "Capture registry-selected immutable revisions without v0010 assumptions; intermediate capture permits unfinished goals, final comparison retains owner gates; stale captures fail",
+          "test": "py -3 tools/run_tests.py --only goal_qa",
           "kind": "feature",
           "priority": "high",
-          "agent": "codex",
+          "problem": "Owner-approved recovery audit: Current-version QA capture",
+          "proposed_task_id": "TASK-0037",
+          "complexity": "M",
+          "token_cost_risk": "Medium",
+          "new_graphics_required": false,
+          "task_id": "TASK-0037"
+        },
+        {
+          "key": "recovery-calibration",
+          "title": "Calibrate visible HD art and modular geometry",
+          "file": "docs/HERO_ROOM_CALIBRATION.md",
+          "touches": [
+            "docs/HERO_ROOM_CALIBRATION.md",
+            ".agents/graphics/requests/"
+          ],
+          "agent": "specialist",
+          "after": [
+            "recovery-capture"
+          ],
           "depends_on": [
             "TASK-0001"
           ],
-          "after": [
-            "g1-m4-bg-render"
+          "done_when": "Signed source identity and source-versus-render measurements classify reuse/repair/new/deferred views with exact native size, ground/mount/seam/collision contacts",
+          "test": "py -3 tools/agent_workflow.py --check",
+          "kind": "investigation",
+          "priority": "high",
+          "problem": "Owner-approved recovery audit: Calibrate visible HD art and modular geometry",
+          "proposed_task_id": "TASK-0038",
+          "complexity": "M",
+          "token_cost_risk": "Medium",
+          "new_graphics_required": true
+        },
+        {
+          "key": "recovery-immutable",
+          "title": "Preserve immutable resolved map metadata",
+          "file": "tools/map_factory_cli.py",
+          "touches": [
+            "tools/map_factory_cli.py",
+            "tools/map_factory_layers.py",
+            "tools/tests/test_map_factory.py",
+            "tools/tests/test_map_layers.py"
           ],
-          "recovery_gate": "Existing source identity/comparison task remains blocked; revised prerequisites are in proposed_revision pending review. No automatic acceptance."
+          "agent": "codex",
+          "after": [],
+          "depends_on": [
+            "TASK-0036"
+          ],
+          "done_when": "Catalog measurement corrections do not rewrite or invalidate historical resolved graphs; new revisions use corrected measurements; corruption remains rejected",
+          "test": "py -3 tools/run_tests.py --only map_factory --only map_layers --only map_registry_validate",
+          "kind": "feature",
+          "priority": "high",
+          "problem": "Owner-approved recovery audit: Preserve immutable resolved map metadata",
+          "proposed_task_id": "TASK-0039",
+          "complexity": "M",
+          "token_cost_risk": "Medium",
+          "new_graphics_required": false
+        },
+        {
+          "key": "g1-m6-sort-mount",
+          "title": "Complete depth sorting mounts and owner-linked shadows",
+          "file": "map_factory/scripts/room_factory.gd",
+          "touches": [
+            "map_factory/scripts/room_factory.gd",
+            "map_factory/scripts/shadow_factory.gd",
+            "tools/map_factory_layers.py",
+            "tools/map_factory_godot_smoke.gd",
+            "tools/tests/test_map_layers.py"
+          ],
+          "agent": "codex",
+          "after": [
+            "recovery-calibration"
+          ],
+          "depends_on": [
+            "TASK-0033"
+          ],
+          "done_when": "Image-free runtime tests prove host move/remove, mounted offsets, independent owner shadows and front/back occlusion; no production fallback artwork",
+          "test": "py -3 tools/run_tests.py --only map_layers --only godot_map_smoke",
+          "kind": "feature",
+          "priority": "high",
+          "problem": "Owner-approved recovery audit: Complete depth sorting mounts and owner-linked shadows",
+          "proposed_task_id": "TASK-0040",
+          "complexity": "M",
+          "token_cost_risk": "Medium",
+          "new_graphics_required": false
+        },
+        {
+          "key": "recovery-integrate",
+          "title": "Integrate reviewed artwork and measured contracts",
+          "file": "tools/art_delivery.py",
+          "touches": [
+            "tools/art_delivery.py",
+            "tools/tests/test_art_delivery.py",
+            "map_factory/metadata/asset_index.json"
+          ],
+          "agent": "codex",
+          "after": [
+            "recovery-calibration",
+            "recovery-immutable"
+          ],
+          "depends_on": [],
+          "done_when": "Only signed reviewed delivery bytes integrated by authorized integrator; stable IDs/provenance preserved and measured contracts recorded; no HD reinstallation",
+          "test": "py -3 tools/run_tests.py --only art_delivery --only map_registry_validate",
+          "kind": "feature",
+          "priority": "high",
+          "problem": "Owner-approved recovery audit: Integrate reviewed artwork and measured contracts",
+          "proposed_task_id": "TASK-0041",
+          "complexity": "M",
+          "token_cost_risk": "Medium",
+          "new_graphics_required": true
         },
         {
           "key": "g1-m7-hero-room-v0011",
-          "title": "Reconstruct the next immutable Hero Room revision",
-          "problem": "Earlier revisions do not match the spec's functional zones and architecture",
+          "title": "Reconstruct next immutable Hero Room from approved blocks",
           "file": "map_factory/maps/hero_room_01/latest.json",
           "touches": [
             "map_factory/maps/hero_room_01/"
           ],
-          "done_when": "New version via CLI only (no historical snapshot edits): floor with central compass, back arch, right-back door, low front wall with stairs, sleeping zone left, study zone right; every missing block is an empty marker node with no drawn, generated or substitute art, linked to its ART request, and its task is blocked_on_art; visual_qa stays needs_review",
-          "test": "py -3 -m unittest tools.tests.test_map_factory tools.tests.test_map_layers and Godot smoke tools/map_factory_godot_smoke.gd",
+          "agent": "codex",
+          "after": [
+            "g1-m6-sort-mount",
+            "recovery-integrate"
+          ],
+          "depends_on": [],
+          "done_when": "New latest-based revision has faithful silhouette, arch, compass, entrance, sleeping/study zones, reviewed strict placements, mounts and configured background motion; historical snapshots untouched",
+          "test": "py -3 tools/run_tests.py --only map_factory --only map_layers --only godot_map_smoke",
           "kind": "feature",
           "priority": "high",
-          "agent": "claude",
-          "depends_on": [
-            "TASK-0001"
+          "problem": "Owner-approved recovery audit: Reconstruct next immutable Hero Room from approved blocks",
+          "proposed_task_id": "TASK-0042",
+          "complexity": "L",
+          "token_cost_risk": "High",
+          "new_graphics_required": true
+        },
+        {
+          "key": "recovery-navigation",
+          "title": "Complete environment collision and navigation",
+          "file": "map_factory/maps/hero_room_01/latest.json",
+          "touches": [
+            "map_factory/maps/hero_room_01/",
+            "tools/tests/test_map_navigation.py",
+            "tools/tests/test_map_factory.py"
           ],
+          "agent": "codex",
           "after": [
-            "g1-m1-gap-audit",
-            "g1-m8-art-requests",
-            "g1-m3-four-direction-enforce",
-            "g1-m4-bg-render",
-            "g1-m5-shadow-light",
-            "g1-m6-sort-mount"
+            "g1-m7-hero-room-v0011"
           ],
-          "recovery_gate": "Existing source identity/comparison task remains blocked; revised prerequisites are in proposed_revision pending review. No automatic acceptance."
+          "depends_on": [],
+          "done_when": "All solid architecture/furniture and intentional openings have reviewed physical treatment; stair links and navigation agree with geometry and blocked defaults; no actor code",
+          "test": "py -3 tools/run_tests.py --only map_navigation --only map_factory --only godot_map_smoke",
+          "kind": "feature",
+          "priority": "high",
+          "problem": "Owner-approved recovery audit: Complete environment collision and navigation",
+          "proposed_task_id": "TASK-0043",
+          "complexity": "M",
+          "token_cost_risk": "Medium",
+          "new_graphics_required": false
+        },
+        {
+          "key": "g1-m10-final-qa",
+          "title": "Record first-room acceptance dossier",
+          "file": "tools/goal_qa.py",
+          "touches": [
+            ".agents/qa/results/"
+          ],
+          "agent": "claude",
+          "after": [
+            "recovery-navigation"
+          ],
+          "depends_on": [],
+          "done_when": "Authorized real capture and source comparison identify map commit/version and camera; owner signs zero unresolved critical defects; broader goal remains unverified while deferred work remains",
+          "test": "py -3 tools/run_tests.py --only goal_qa --only map_registry_validate",
+          "kind": "feature",
+          "priority": "high",
+          "problem": "Owner-approved recovery audit: Record first-room acceptance dossier",
+          "proposed_task_id": "TASK-0044",
+          "complexity": "M",
+          "token_cost_risk": "Medium",
+          "new_graphics_required": false
         },
         {
           "key": "g1-m9-second-map",
-          "title": "Build a second room purely from data",
-          "problem": "Reuse of the five-level factory for other rooms is not proven",
+          "title": "Prove reusable factory on second room after Hero Room approval",
           "file": "map_factory/maps/courtyard_demo_01/latest.json",
           "touches": [
             "map_factory/maps/courtyard_demo_01/"
           ],
-          "done_when": "New courtyard_demo_01 version with five levels, four-direction blocks, mounts and shadows; multi-map Godot smoke passes",
-          "test": "py -3 -m unittest tools.tests.test_map_templates and Godot smoke tools/map_factory_godot_smoke.gd",
-          "kind": "feature",
-          "priority": "normal",
           "agent": "codex",
-          "depends_on": [
-            "TASK-0001"
-          ],
           "after": [
-            "g1-m6-sort-mount"
+            "g1-m10-final-qa"
           ],
-          "recovery_gate": "Existing source identity/comparison task remains blocked; revised prerequisites are in proposed_revision pending review. No automatic acceptance."
-        },
-        {
-          "key": "g1-m10-final-qa",
-          "title": "Integrate delivered art and run final GOAL-0001 QA",
-          "problem": "Final comparison of the real factory render with the reference needs delivered art and owner review",
-          "file": "tools/goal_qa.py",
-          "touches": [
-            ".agents/qa/renders/GOAL-0001/",
-            ".agents/qa/results/"
-          ],
-          "done_when": "Delivered art passes tools/art_delivery.py --check and is integrated; py -3 tools/goal_qa.py render/compare/notify GOAL-0001 produce a real render and recorded differences; owner gives visual approval (final_verified never set automatically)",
-          "test": "py -3 tools/goal_qa.py render GOAL-0001",
-          "kind": "investigation",
-          "priority": "low",
-          "agent": "claude",
-          "depends_on": [
-            "TASK-0001"
-          ],
-          "after": [
-            "g1-m7-hero-room-v0011",
-            "g1-m8-art-requests",
-            "g1-m9-second-map"
-          ],
-          "recovery_gate": "Existing source identity/comparison task remains blocked; revised prerequisites are in proposed_revision pending review. No automatic acceptance."
+          "depends_on": [],
+          "done_when": "New immutable courtyard reuses approved five-level data, mounts, shadows and available authored facings without bespoke renderer code",
+          "test": "py -3 tools/run_tests.py --only map_templates --only godot_map_smoke",
+          "kind": "feature",
+          "priority": "high",
+          "problem": "Owner-approved recovery audit: Prove reusable factory on second room after Hero Room approval",
+          "proposed_task_id": "TASK-0045",
+          "complexity": "M",
+          "token_cost_risk": "Low",
+          "new_graphics_required": false
         }
       ],
       "proposed_revision": {
-        "status": "draft",
+        "status": "active",
         "source_request": "REQ-1a8c02ac60e2",
         "owner_plan_authorized": true,
         "note": "Review package only. Allocate/claim one bounded task at a time; do not bulk-create executable records or bypass daily pulse caps. Keep source keys; first-room acceptance precedes second-room proof.",
@@ -444,7 +572,8 @@
             "token_cost_risk": "Low",
             "new_graphics_required": false
           }
-        ]
+        ],
+        "activated": "2026-10-26 by owner: automation creates tasks from these steps; no daily cap"
       }
     }
   ]

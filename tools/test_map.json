@@ -31,6 +31,13 @@
       "paths": ["tools/tests/test_goal_task_factory.py", "tools/goal_task_factory.py", ".agents/planner/**", ".agents/tasks/**", ".claude/skills/goal-task-factory/**", ".agents/skills/goal-task-factory/**"]
     },
     {
+      "id": "goal_pulse_continuous",
+      "kind": "python",
+      "covers": "Pulse without a daily cap, reserved plan task IDs, in-flight steps and dependency promotion to todo.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_goal_pulse_continuous.py"],
+      "paths": ["tools/tests/test_goal_pulse_continuous.py", "tools/goal_task_factory.py", ".agents/planner/config.json", ".agents/planner/goals.json"]
+    },
+    {
       "id": "local_planner",
       "kind": "python",
       "covers": "Local-only planning proposals and setup defaults.",
