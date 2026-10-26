@@ -11,6 +11,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`.gitkeep`](.gitkeep)
+- [`TASK-0008_claude_b6a023a540.json`](TASK-0008_claude_b6a023a540.json)
 - [`TASK-0009_codex_b174a26c18.json`](TASK-0009_codex_b174a26c18.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

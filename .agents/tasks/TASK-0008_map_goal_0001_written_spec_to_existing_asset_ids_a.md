@@ -1,6 +1,6 @@
 ---
 id: TASK-0008
-status: in_progress
+status: done
 owner: claude
 branch: work/task-0008-2c3d4393
 agent: claude
@@ -57,3 +57,6 @@ Outcome: map_factory/maps/hero_room_01/reference_gaps.json maps every spec item 
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-26T10:28:08.588990+00:00
+
+## Runner evidence
+- Merged 32c05c3dc7a65c73ffe18eb9de269dd99479e35a; post-merge validation passed
