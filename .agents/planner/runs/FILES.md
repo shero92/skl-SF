@@ -23,5 +23,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`20261026-180001-codex-proposal.json`](20261026-180001-codex-proposal.json)
 - [`20261026-180001-codex-pulse.json`](20261026-180001-codex-pulse.json)
 - [`20261026-180001-codex.json`](20261026-180001-codex.json)
+- [`20261027-000002-claude-proposal.json`](20261027-000002-claude-proposal.json)
+- [`20261027-000002-claude-pulse.json`](20261027-000002-claude-pulse.json)
+- [`20261027-000002-claude.json`](20261027-000002-claude.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
