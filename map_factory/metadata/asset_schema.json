@@ -33,5 +33,35 @@
     "ui"
   ],
   "origin_description": "Origin is in pixel coordinates from source image top-left; bottom-center for taller assets.",
-  "shadow_description": "Shadow is positioned near ground contact; values are defaults and should be reviewed by artists."
+  "shadow_description": "Shadow is positioned near ground contact; values are defaults and should be reviewed by artists.",
+  "placement_contract": {
+    "schema_version": 1,
+    "modes": [
+      "floor",
+      "mounted"
+    ],
+    "floor_required_fields": [
+      "footprint_cells",
+      "occupancy_group",
+      "allowed_floor_tags",
+      "allowed_floor_asset_ids",
+      "forbidden_floor_tags",
+      "measurement_status"
+    ],
+    "facings": [
+      "north",
+      "east",
+      "south",
+      "west"
+    ],
+    "footprint_cells": "Number of real ground tile columns and rows; separate from PNG pixel size and physics collision.",
+    "occupied_cells": "Optional exact local mask inside footprint_cells; order irrelevant.",
+    "ground_anchor": "bottom_center",
+    "measurement_statuses": [
+      "provisional",
+      "reviewed"
+    ],
+    "strict_map_policy": "strict_v1 requires grid_placement.cell on standalone furniture; existing legacy revisions unchanged",
+    "owner_quality_gate": "No style approval without native Godot visual comparison."
+  }
 }
