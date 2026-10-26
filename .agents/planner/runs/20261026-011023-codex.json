@@ -1,0 +1,17 @@
+{
+  "run_id": "20261026-011023-codex",
+  "agent": "codex",
+  "base_sha": "98341d3e313df43c9b42b901825d0735b837d2fb",
+  "input_digest": "cf777993d97f625dde81c3e5e6aefe03b085ff97afb4b3a87cf9aa245cf9b60f",
+  "duration_seconds": 7.3,
+  "usage": null,
+  "cost_usd_estimate": null,
+  "exit": 0,
+  "status": "proposed",
+  "applied": {
+    "created": [],
+    "updated": []
+  },
+  "source_sha": "98341d3e313df43c9b42b901825d0735b837d2fb",
+  "completed_at": "2026-10-26T01:10:31.565421+01:00"
+}
