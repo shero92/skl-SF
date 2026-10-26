@@ -57,7 +57,8 @@ class PlannerSafety(unittest.TestCase):
     def test_automation_disabled_by_default(self):
         cfg=json.loads((ROOT/".agents/planner/config.json").read_text())
         self.assertFalse(cfg["auto_activate"])
-        self.assertFalse(cfg["execution_enabled"])
+        # Execution may only be on with runner-recorded supervised evidence.
+        self.assertEqual(local_planner_safety.supervised_problems(cfg,ROOT),[])
         self.assertEqual([s["agent"] for s in cfg["schedule"]],["claude","codex","claude","codex"])
     def test_planner_dotted_test_is_stored_runnable(self):
         state={"status":"active","milestones_approved":True}
@@ -74,6 +75,7 @@ class PlannerSafety(unittest.TestCase):
 
 sys.path.insert(0,str(ROOT/"tools"))
 import local_planner  # noqa: E402
+import runner_safety as local_planner_safety  # noqa: E402
 
 class CodexStrictSchema(unittest.TestCase):
     def test_every_property_required_and_optionals_nullable(self):

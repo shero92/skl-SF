@@ -36,10 +36,52 @@ class ParallelSafety(unittest.TestCase):
         current["agent"]="codex"
         with self.assertRaisesRegex(ValueError,"one active"):
             rs.verify_claim(current,{"TASK-1233":other})
-    def test_execution_disabled_by_default(self):
+    def test_execution_only_with_supervised_evidence(self):
+        # Invariant, not a default: a real supervised run may enable execution.
         cfg=json.loads((TOOLS.parent/".agents/planner/config.json").read_text())
-        self.assertFalse(cfg["execution_enabled"])
-        self.assertFalse(cfg["supervised_e2e_passed"])
+        self.assertEqual(rs.supervised_problems(cfg,TOOLS.parent),[])
+    def evidence_root(self,status):
+        tmp=tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        root=Path(tmp.name)
+        (root/".agents/tasks").mkdir(parents=True)
+        (root/".agents/tasks/TASK-0009_x.md").write_text("---\nid: TASK-0009\nstatus: "+status+"\n---\n")
+        return root
+    def test_supervised_invariant_rejects_hand_set_flags(self):
+        root=self.evidence_root("done")
+        good={"task":"TASK-0009","agent":"codex","merge_sha":"a"*40,"verified_at":"2026-10-26T00:00:00+00:00"}
+        self.assertEqual(rs.supervised_problems({"execution_enabled":False,"supervised_e2e_passed":False},root),[])
+        self.assertEqual(rs.supervised_problems({"execution_enabled":True,"supervised_e2e_passed":True,
+                                                 "supervised_e2e":good},root),[])
+        bad=[({"execution_enabled":True,"supervised_e2e_passed":False},"requires supervised_e2e_passed"),
+             ({"supervised_e2e_passed":True},"runner evidence"),
+             ({"supervised_e2e_passed":True,"supervised_e2e":{**good,"merge_sha":"92b89a6"}},"full commit SHA"),
+             ({"supervised_e2e_passed":True,"supervised_e2e":{**good,"task":"TASK-9"}},"TASK-####"),
+             ({"supervised_e2e_passed":True,"supervised_e2e":{**good,"agent":"owner"}},"claude or codex"),
+             ({"supervised_e2e_passed":True,"supervised_e2e":{**good,"task":"TASK-0010"}},"not done")]
+        for cfg,message in bad:
+            with self.subTest(message=message):
+                self.assertTrue(any(message in p for p in rs.supervised_problems(cfg,root)),cfg)
+        blocked=self.evidence_root("blocked")
+        self.assertIn("supervised_e2e.task TASK-0009 is not done",
+                      rs.supervised_problems({"supervised_e2e_passed":True,"supervised_e2e":good},blocked))
+    def test_supervised_success_writes_evidence(self):
+        import agent_runner
+        root=self.evidence_root("done")
+        path=root/"config.json"
+        path.write_text(json.dumps({"execution_enabled":False,"supervised_e2e_passed":False,"graphics_issue_enabled":True}))
+        cfg=agent_runner.record_supervised(path,"TASK-0009","codex","b"*40)
+        self.assertEqual(json.loads(path.read_text()),cfg)
+        self.assertFalse(cfg["execution_enabled"],"enabling execution stays an owner decision")
+        self.assertTrue(cfg["graphics_issue_enabled"])
+        self.assertEqual(rs.supervised_problems(cfg,root),[])
+        self.assertEqual(rs.supervised_problems({**cfg,"execution_enabled":True},root),[])
+        with self.assertRaisesRegex(RuntimeError,"Execution disabled"):
+            agent_runner.execution_gate(cfg)
+        with self.assertRaisesRegex(RuntimeError,"evidence invalid"):
+            agent_runner.execution_gate({"execution_enabled":True,"supervised_e2e_passed":True})
+        text=(TOOLS/"agent_runner.py").read_text()
+        self.assertIn("if supervised:\n                # Only a real, fully validated supervised run",text)
     def test_runner_never_bypasses_sandbox(self):
         text=(TOOLS/"agent_runner.py").read_text()
         self.assertIn('"workspace-write"',text)

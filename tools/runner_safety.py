@@ -117,6 +117,36 @@ def normalize_test_text(text):
         return text
     return " ".join(normalize_test(argv))
 
+def supervised_problems(cfg, root):
+    """Why this planner config may not enable execution. Empty list means consistent.
+
+    execution_enabled needs supervised_e2e_passed, which needs runner-written evidence
+    (agent_runner.py --supervised records it after post-merge validation) naming a task
+    whose canonical file is done. Owners should never set supervised_e2e_passed by hand."""
+    problems=[]
+    if cfg.get("execution_enabled") and not cfg.get("supervised_e2e_passed"):
+        problems.append("execution_enabled requires supervised_e2e_passed")
+    if not cfg.get("supervised_e2e_passed"):
+        return problems
+    evidence=cfg.get("supervised_e2e")
+    if not isinstance(evidence,dict):
+        return problems+["supervised_e2e_passed requires runner evidence in supervised_e2e"]
+    task=str(evidence.get("task",""))
+    if not re.fullmatch(r"TASK-\d{4}",task):
+        problems.append("supervised_e2e.task must be TASK-####")
+    if not re.fullmatch(r"[0-9a-f]{40}",str(evidence.get("merge_sha",""))):
+        problems.append("supervised_e2e.merge_sha must be a full commit SHA")
+    if evidence.get("agent") not in ("claude","codex"):
+        problems.append("supervised_e2e.agent must be claude or codex")
+    if not evidence.get("verified_at"):
+        problems.append("supervised_e2e.verified_at missing")
+    if re.fullmatch(r"TASK-\d{4}",task):
+        files=sorted((Path(root)/".agents/tasks").glob(task+"_*.md"))
+        text=files[0].read_text(encoding="utf-8") if files else ""
+        if not re.search(r"(?m)^status: done$",text):
+            problems.append("supervised_e2e.task "+task+" is not done")
+    return problems
+
 def receipt_goals(receipts, task_source):
     """Aggregate measured per-goal costs without treating unknown as zero."""
     result={}

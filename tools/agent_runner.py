@@ -21,7 +21,7 @@ import time
 import uuid
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from runner_safety import allowed_changed, is_art, is_generated, normalize, normalize_test, safe_test, touches, verify_claim
+from runner_safety import allowed_changed, is_art, is_generated, normalize, normalize_test, safe_test, supervised_problems, touches, verify_claim
 
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=ROOT/".agents/planner/config.json"
@@ -171,6 +171,21 @@ def checkpoint(tid,agent,phase,details):
     p.write_text(json.dumps({"task":tid,"agent":agent,"phase":phase,"at":stamp(),
                              "details":details},indent=2)+"\n",encoding="utf-8", newline="\n")
 
+def execution_gate(config):
+    if not config.get("execution_enabled",False):
+        raise RuntimeError("Execution disabled: supervised end-to-end verification required")
+    problems=supervised_problems(config,ROOT)
+    if problems:
+        raise RuntimeError("Supervised E2E evidence invalid: "+"; ".join(problems))
+
+def record_supervised(path,tid,agent,merge_sha):
+    """Write the evidence supervised_problems() requires; execution_enabled stays owner-controlled."""
+    config=read_json(path,{})
+    config["supervised_e2e_passed"]=True
+    config["supervised_e2e"]={"task":tid,"agent":agent,"merge_sha":merge_sha,"verified_at":stamp()}
+    path.write_text(json.dumps(config,indent=2)+"\n",encoding="utf-8",newline="\n")
+    return config
+
 def run(tid, supervised=False):
     config=read_json(CONFIG,{})
     if supervised:
@@ -182,10 +197,7 @@ def run(tid, supervised=False):
         if typed != "SUPERVISE "+tid:
             raise RuntimeError("Supervised consent not given")
     else:
-        if not config.get("execution_enabled",False):
-            raise RuntimeError("Execution disabled: supervised end-to-end verification required")
-        if not config.get("supervised_e2e_passed",False):
-            raise RuntimeError("Must explicitly record supervised_e2e_passed before enabling")
+        execution_gate(config)
     if os.name!="nt":
         raise RuntimeError("Run coding agents only on the owner's Windows host")
     if git("branch","--show-current")!="main" or git("status","--porcelain"):
@@ -249,7 +261,12 @@ def run(tid, supervised=False):
                 checkpoint(tid,agent,"auto_reverted",merge_sha)
                 return
             amend_status(tid,"done",reason="Merged "+merge_sha+"; post-merge validation passed")
-            main_commit("chore: record validated "+tid,agent,tid)
+            extra=None
+            if supervised:
+                # Only a real, fully validated supervised run may mark E2E as passed.
+                record_supervised(CONFIG,tid,agent,merge_sha)
+                extra=[CONFIG.relative_to(ROOT).as_posix()]
+            main_commit("chore: record validated "+tid,agent,tid,extra)
             checkpoint(tid,agent,"done",merge_sha)
     except Exception as exc:
         # Fail closed; do not delete any evidence or guess that a merge succeeded.
@@ -298,13 +315,14 @@ def main():
         cfg=read_json(CONFIG,{})
         print(json.dumps({"execution_enabled":cfg.get("execution_enabled",False),
           "supervised_e2e_passed":cfg.get("supervised_e2e_passed",False),
+          "supervised_e2e":cfg.get("supervised_e2e"),
+          "problems":supervised_problems(cfg,ROOT),
           "mode":"Windows only; no API keys; default disabled"},indent=2))
         return
     if args.supervised:
         run(args.supervised,supervised=True)
     elif args.run_next:
-        if not read_json(CONFIG,{}).get("execution_enabled",False) or not read_json(CONFIG,{}).get("supervised_e2e_passed",False):
-            raise RuntimeError("Scheduled execution is disabled until supervised E2E owner signoff")
+        execution_gate(read_json(CONFIG,{}))
         selected=pick_next(args.run_next)
         if selected is None:
             print("No eligible task for "+args.run_next+"; no AI call made")
