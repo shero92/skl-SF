@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Hero Room candidate v2: side walls with visible inner face, warmer stone, lower sun and ivy",
+  "problem": "Owner request 2026-10-26 after candidate v1 (worse than v0011: pale thin side walls): render east/west side walls showing their inner masonry face like the reference, with warmer darker limestone, a lower sun and ivy; re-capture and compare.",
+  "file": "tools/blender/builders.py",
+  "line": null,
+  "done_when": "Blender side walls show their inner face (lean shear keeps the foot on the floor grid), warmer darker limestone, lower sun, ivy and flowers; ART-0004 and ART-0014 re-delivered; candidate v2 captured in Godot and compared with the reference and v1; still unapproved",
+  "test": "py -3 tools/run_tests.py --only blender_factory --only candidate_room",
+  "priority": "critical",
+  "kind": "feature",
+  "agent": "claude",
+  "task_id": "TASK-0048"
+}

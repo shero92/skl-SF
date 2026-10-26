@@ -49,7 +49,7 @@ def wall_run(spec, facing):
     gap = p.get("joint", 0.022)
     r = lib.rng(p.get("seed", 7))
     stone = lib.limestone("wall_stone", seed=r.random() * 10)
-    cap_stone = lib.limestone("cap_stone", base=(0.86, 0.70, 0.46), dark=(0.60, 0.45, 0.25), seed=r.random() * 10)
+    cap_stone = lib.limestone("cap_stone", base=(0.74, 0.56, 0.32), dark=(0.44, 0.30, 0.14), seed=r.random() * 10)
     mortar = lib.flat("mortar", (0.30, 0.22, 0.14), roughness=1.0)
     gold = lib.flat("gold_trim", (0.83, 0.62, 0.22), roughness=0.32, metallic=1.0)
     objs = [lib.block("core", (length - 0.002, thick - 0.06, height - 0.04), (0, thick / 2, (height - 0.04) / 2), mortar, bevel=0.0)]
@@ -78,6 +78,9 @@ def wall_run(spec, facing):
         objs.append(lib.block("cap", (x1 - x0 - gap * 0.6, thick + 0.07, cap_h), ((x0 + x1) / 2, thick / 2, z + cap_h / 2),
                               cap_stone, bevel=0.03))
         x += w
+    if p.get("ivy", True):
+        objs += lib.ivy("ivy", (-length / 2, length / 2), -0.03, height, r, density=p.get("ivy_density", 1.0),
+                        hang=p.get("ivy_hang", 0.9), flowers=p.get("ivy_flowers", 0.12))
     anchors = {"foot_center_front": Vector((0.0, 0.0, 0.0)), "foot_left": Vector((-length / 2, 0.0, 0.0)),
                "foot_right": Vector((length / 2, 0.0, 0.0)), "top_center_front": Vector((0.0, 0.0, height))}
     lib.rotate_group(objs, WALL_FRONT[facing], pivot=(0.0, thick / 2))
@@ -85,7 +88,12 @@ def wall_run(spec, facing):
     import math
     rot = (Matrix.Translation(Vector((0, thick / 2, 0))) @ Matrix.Rotation(math.radians(lib.FRONT_ROTATION[WALL_FRONT[facing]]), 4, "Z")
            @ Matrix.Translation(Vector((0, -thick / 2, 0))))
-    return objs, {k: rot @ v for k, v in anchors.items()}
+    # Side walls lean (foot fixed on the floor edge, top shifted outward) so their inner face shows.
+    k = p.get("lean", 0.0)
+    if k:
+        lib.lean(objs, k)
+        rot = lib.lean_matrix(k) @ rot
+    return objs, {k_: rot @ v for k_, v in anchors.items()}
 
 
 def broken_floor_edge(spec, facing):
@@ -95,8 +103,8 @@ def broken_floor_edge(spec, facing):
     p = spec.get("params", {})
     kind, depth = p.get("kind", "edge"), p.get("thickness", 0.22)
     r = lib.rng(p.get("seed", 3))
-    stone = lib.limestone("floor_stone", base=(0.82, 0.66, 0.42), dark=(0.55, 0.40, 0.22), seed=r.random() * 10)
-    rubble = lib.limestone("rubble", base=(0.70, 0.54, 0.32), dark=(0.42, 0.30, 0.16), seed=r.random() * 10)
+    stone = lib.limestone("floor_stone", base=(0.70, 0.52, 0.30), dark=(0.42, 0.28, 0.13), seed=r.random() * 10)
+    rubble = lib.limestone("rubble", base=(0.58, 0.42, 0.24), dark=(0.32, 0.21, 0.10), seed=r.random() * 10)
     gap, n = 0.02, 2
     size = 1.0 / n
     broken_front = True

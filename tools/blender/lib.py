@@ -169,8 +169,8 @@ def _node(nt, kind, loc, **inputs):
     return n
 
 
-def limestone(name="limestone", base=(0.80, 0.62, 0.38), dark=(0.52, 0.36, 0.18), seed=1.0):
-    """Warm golden limestone: per-object tint, mottled colour, pitted bump."""
+def limestone(name="limestone", base=(0.68, 0.48, 0.26), dark=(0.36, 0.23, 0.10), seed=1.0):
+    """Warm golden limestone: per-object tint, mottled colour, pitted bump (v2: warmer and darker)."""
     mat = bpy.data.materials.new(name)
     mat.use_nodes = True
     nt = mat.node_tree
@@ -249,6 +249,83 @@ def rotate_group(objects, facing, pivot=(0.0, 0.0)):
     rot = Matrix.Translation(pivot) @ Matrix.Rotation(angle, 4, "Z") @ Matrix.Translation(-pivot)
     for obj in objects:
         obj.matrix_world = rot @ obj.matrix_world
+
+
+def lean_matrix(k):
+    """Horizontal shear x += k * z: the foot (z = 0) stays on the floor grid while the top shifts,
+    so a side wall's inner face, edge-on in the plain orthographic view, becomes visible."""
+    from mathutils import Matrix
+    m = Matrix.Identity(4)
+    m[0][2] = k
+    return m
+
+
+def lean(objects, k):
+    m = lean_matrix(k)
+    for obj in objects:
+        obj.matrix_world = m @ obj.matrix_world
+
+
+def ivy(name, x_range, face_y, z_top, rng_, density=1.0, hang=0.9, flowers=0.12):
+    """Ivy hanging from z_top down a wall face at y = face_y (front faces -y): leaves and small
+    white flowers as two meshes. Returns the created objects."""
+    import bmesh
+    leaf_mat = flat(name + "_leaf", (0.10, 0.27, 0.07), roughness=0.55)
+    leaf_dark = flat(name + "_leaf_dark", (0.05, 0.16, 0.04), roughness=0.6)
+    petal = flat(name + "_flower", (0.93, 0.92, 0.86), roughness=0.45)
+    meshes = {"leaves": (bpy.data.meshes.new(name + "_leaves"), bmesh.new()),
+              "flowers": (bpy.data.meshes.new(name + "_flowers"), bmesh.new())}
+    x0, x1 = x_range
+    strands = max(2, int((x1 - x0) * 7 * density))
+    for s in range(strands):
+        x = rng_.uniform(x0 + 0.03, x1 - 0.03)
+        length = rng_.uniform(0.25, hang)
+        z = z_top + rng_.uniform(-0.02, 0.06)
+        steps = int(length / 0.045)
+        for i in range(steps):
+            z -= 0.045
+            x += rng_.uniform(-0.025, 0.025)
+            for _ in range(2):
+                size = rng_.uniform(0.035, 0.06) * (1.0 - 0.35 * i / max(1, steps))
+                cx, cz = x + rng_.uniform(-0.03, 0.03), z + rng_.uniform(-0.02, 0.02)
+                cy = face_y - rng_.uniform(0.012, 0.05)
+                tilt = rng_.uniform(-0.6, 0.6)
+                bm = meshes["leaves"][1]
+                pts = [(0.0, 0.0, 0.5), (0.42, 0.0, 0.0), (0.0, 0.0, -0.6), (-0.42, 0.0, 0.0)]
+                verts = []
+                for px, py, pz in pts:
+                    rx = px * math.cos(tilt) - pz * math.sin(tilt)
+                    rz = px * math.sin(tilt) + pz * math.cos(tilt)
+                    verts.append(bm.verts.new((cx + rx * size, cy - abs(rx) * size * 0.4, cz + rz * size)))
+                face = bm.faces.new(verts)
+                face.material_index = rng_.random() < 0.35
+            if rng_.random() < flowers:
+                bm = meshes["flowers"][1]
+                bmesh.ops.create_icosphere(bm, subdivisions=1, radius=rng_.uniform(0.012, 0.02),
+                                           matrix=Matrix_translation((x, face_y - 0.055, z)))
+    created = []
+    for key, (mesh, bm) in meshes.items():
+        if not bm.faces:
+            bm.free()
+            continue
+        bm.to_mesh(mesh)
+        bm.free()
+        obj = bpy.data.objects.new(mesh.name, mesh)
+        bpy.context.scene.collection.objects.link(obj)
+        if key == "leaves":
+            obj.data.materials.append(leaf_mat)
+            obj.data.materials.append(leaf_dark)
+        else:
+            obj.data.materials.append(petal)
+        for poly in obj.data.polygons:
+            poly.use_smooth = True
+        created.append(obj)
+    return created
+
+
+def Matrix_translation(xyz):
+    from mathutils import Matrix
+    return Matrix.Translation(Vector(xyz))
 
 
 def rng(seed):
