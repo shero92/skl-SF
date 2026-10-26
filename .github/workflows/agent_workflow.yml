@@ -10,8 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Validate tracking records and generated dashboards
+        if: github.event_name != 'pull_request'
         run: python3 tools/agent_workflow.py --check
+      - name: Validate pull request sources without changing generated outputs
+        if: github.event_name == 'pull_request'
+        run: python3 tools/agent_workflow.py --sources-only --base origin/main
       - name: Verify code/graphics boundary and deduplication rules
         run: python3 -m unittest discover -s tools/tests -p 'test_agent_workflow.py' -v
       - name: Verify goal planner, prompt and claim safeguards

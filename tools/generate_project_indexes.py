@@ -11,6 +11,8 @@ from pathlib import Path
 import subprocess
 import sys
 
+from runner_safety import check_pr_generated
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = "FILES.md"
 SKIP = {OUT, "INDEX.md"}
@@ -70,7 +72,18 @@ def main() -> int:
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--write", action="store_true", help="regenerate all inventories")
     group.add_argument("--check", action="store_true", help="fail if inventories are stale")
+    group.add_argument("--sources-only", action="store_true", help="validate PR inventory inputs without writing main-only outputs")
+    parser.add_argument("--base", default="origin/main")
     args = parser.parse_args()
+    if args.sources_only:
+        try:
+            check_pr_generated(ROOT, args.base)
+        except (ValueError, subprocess.CalledProcessError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+        expected = render(list_paths(ROOT))
+        print(f"PR inventory sources validated ({len(expected)} directories); outputs deferred to main.")
+        return 0
     expected = render(list_paths(ROOT))
     stale = [path for path, data in expected.items()
              if not (ROOT / path).is_file() or (ROOT / path).read_text(encoding="utf-8") != data]
