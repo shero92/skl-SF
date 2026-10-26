@@ -20,7 +20,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0011](requests/ART-0011_hero_room_blue_white_planter.md) | blocked_reference | graphics-specialist | TASK-0022 | O001,V017,V020 |
 | [ART-0012](requests/ART-0012_hero_room_cliff_palms.md) | blocked_reference | graphics-specialist | TASK-0023 | V017,V023 |
 | [ART-0013](requests/ART-0013_hero_room_arch_light_shafts.md) | blocked_reference | graphics-specialist | TASK-0024 | none |
-| [ART-0014](requests/ART-0014_hero_room_broken_floor_edge.md) | blocked_reference | graphics-specialist | TASK-0025 | F006,F007,F008,F009,F010,F011,F012,F013 |
+| [ART-0014](requests/ART-0014_hero_room_broken_floor_edge.md) | delivered | graphics-specialist | TASK-0025 | F006,F007,F008,F009,F010,F011,F012,F013 |
 | [ART-0015](requests/ART-0015_hero_room_study_blue_rug.md) | blocked_reference | graphics-specialist | TASK-0026 | P005,P006 |
 | [ART-0016](requests/ART-0016_hero_room_arch_ground_shadow.md) | blocked_reference | graphics-specialist | TASK-0027 | S011,S012,S016,S017 |
 | [ART-0017](requests/ART-0017_hero_room_door_ground_shadow.md) | blocked_reference | graphics-specialist | TASK-0028 | S013,S016 |

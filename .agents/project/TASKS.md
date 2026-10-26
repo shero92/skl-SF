@@ -31,7 +31,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0022](../tasks/TASK-0022_hero_room_blue_white_planter.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0011 |
 | [TASK-0023](../tasks/TASK-0023_hero_room_cliff_palms.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0012 |
 | [TASK-0024](../tasks/TASK-0024_hero_room_arch_light_shafts.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0013 |
-| [TASK-0025](../tasks/TASK-0025_hero_room_broken_floor_edge.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0014 |
+| [TASK-0025](../tasks/TASK-0025_hero_room_broken_floor_edge.md) | review | claude | TASK-0011 | ART-0014 |
 | [TASK-0026](../tasks/TASK-0026_hero_room_study_blue_rug.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0015 |
 | [TASK-0027](../tasks/TASK-0027_hero_room_arch_ground_shadow.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0016 |
 | [TASK-0028](../tasks/TASK-0028_hero_room_door_ground_shadow.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0017 |
