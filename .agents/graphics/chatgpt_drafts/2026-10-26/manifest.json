@@ -1,0 +1,335 @@
+{
+  "project": "skl-SF",
+  "scope": "GOAL-0001",
+  "created_by": "ChatGPT graphics-authoring conversation (not Codex/Claude Code)",
+  "source_reference": "061782c7-9e23-43a8-8c8a-fdd0a7c7ba6d.png",
+  "source_reference_sha256": "9e8201055c26ac468d3bfd4052dc664925dd3bf5b25a9741f6f786fc79734763",
+  "status": "DRAFT_REVIEW_REQUIRED",
+  "draft_png_count": 22,
+  "assets": [
+    {
+      "request_id": "ART-0002",
+      "path": "draft_specialist/ART-0002/hero_cloud_01.png",
+      "file_name": "hero_cloud_01.png",
+      "pixel_size": [
+        192,
+        64
+      ],
+      "sha256": "2d035fe367b36b12ded5a725726cd353f686c606a5ca1c50df223ffd5427b4f2",
+      "source": "ChatGPT ImageGen atlas crop + color-based transparency",
+      "status": "draft_unreviewed",
+      "notes": ""
+    },
+    {
+      "request_id": "ART-0002",
+      "path": "draft_specialist/ART-0002/hero_cloud_02.png",
+      "file_name": "hero_cloud_02.png",
+      "pixel_size": [
+        192,
+        64
+      ],
+      "sha256": "ca9d432802be2906eea4d8abb6228179596d98ccc4b4ec22b7abd573bef62f6a",
+      "source": "ChatGPT ImageGen atlas crop + color-based transparency",
+      "status": "draft_unreviewed",
+      "notes": ""
+    },
+    {
+      "request_id": "ART-0002",
+      "path": "draft_specialist/ART-0002/hero_cloud_03.png",
+      "file_name": "hero_cloud_03.png",
+      "pixel_size": [
+        192,
+        64
+      ],
+      "sha256": "fbb6546dec001497de4e851deb36c7f4a5726d70f76892f8df5719d8e41d95c4",
+      "source": "Composite of two ImageGen cloud silhouettes",
+      "status": "draft_unreviewed",
+      "notes": "Composition; needs repetition/seam QA"
+    },
+    {
+      "request_id": "ART-0003",
+      "path": "draft_specialist/ART-0003/hero_cliff_foam_01.png",
+      "file_name": "hero_cliff_foam_01.png",
+      "pixel_size": [
+        96,
+        48
+      ],
+      "sha256": "6fd5d43cc123552168e3028a56f25f1587670a34c677de063d6141cda65fffc5",
+      "source": "ChatGPT ImageGen atlas, single lower shoreline foam region isolated to RGBA",
+      "status": "draft_unreviewed",
+      "notes": "Native wave-crest candidate; in-engine four-frame motion and seams must be visually approved"
+    },
+    {
+      "request_id": "ART-0003",
+      "path": "draft_specialist/ART-0003/hero_cliff_foam_02.png",
+      "file_name": "hero_cliff_foam_02.png",
+      "pixel_size": [
+        96,
+        48
+      ],
+      "sha256": "64d297ae1efbe7797c37bbb2993ff2dfc60f0faf35c46f6f1b4db76fe014f088",
+      "source": "ChatGPT ImageGen atlas, single lower shoreline foam region isolated to RGBA",
+      "status": "draft_unreviewed",
+      "notes": "Native wave-crest candidate; in-engine four-frame motion and seams must be visually approved"
+    },
+    {
+      "request_id": "ART-0003",
+      "path": "draft_specialist/ART-0003/hero_cliff_foam_03.png",
+      "file_name": "hero_cliff_foam_03.png",
+      "pixel_size": [
+        96,
+        48
+      ],
+      "sha256": "bf9321e9ac29b9c479b82ec4473db13dc2fa79b46566c96e508a113ff39d72af",
+      "source": "ChatGPT ImageGen atlas, single lower shoreline foam region isolated to RGBA",
+      "status": "draft_unreviewed",
+      "notes": "Native wave-crest candidate; in-engine four-frame motion and seams must be visually approved"
+    },
+    {
+      "request_id": "ART-0003",
+      "path": "draft_specialist/ART-0003/hero_cliff_foam_04.png",
+      "file_name": "hero_cliff_foam_04.png",
+      "pixel_size": [
+        96,
+        48
+      ],
+      "sha256": "b003f1ff8967dbf942b12f0eff70f366b2d4d915765313597109a34447b1c3f4",
+      "source": "ChatGPT ImageGen atlas, single lower shoreline foam region isolated to RGBA",
+      "status": "draft_unreviewed",
+      "notes": "Native wave-crest candidate; in-engine four-frame motion and seams must be visually approved"
+    },
+    {
+      "request_id": "ART-0006",
+      "path": "draft_specialist/ART-0006/hero_stone_sphere_finial.png",
+      "file_name": "hero_stone_sphere_finial.png",
+      "pixel_size": [
+        32,
+        32
+      ],
+      "sha256": "2e0b5f5305c7d5bc0e1069437fcc7bf9ec4d89bfd80113c1edb06da4aa20733d",
+      "source": "ChatGPT-native sprite painting",
+      "status": "draft_unreviewed",
+      "notes": "Symmetrical reuse; owner reviews scale and anchor"
+    },
+    {
+      "request_id": "ART-0007",
+      "path": "draft_specialist/ART-0007/hero_compass_blanket.png",
+      "file_name": "hero_compass_blanket.png",
+      "pixel_size": [
+        96,
+        96
+      ],
+      "sha256": "f2b6ab1c1148d279620467e32c56719fcfecb5d83d24fcad18fbfc08e79772d0",
+      "source": "Adaptation from owner-supplied authentic blue-gold banner",
+      "status": "draft_unreviewed",
+      "notes": "Texture reuse, NOT approved bed fit/anchor; reviewer decides"
+    },
+    {
+      "request_id": "ART-0016",
+      "path": "draft_specialist/ART-0016/hero_arch_column_shadow.png",
+      "file_name": "hero_arch_column_shadow.png",
+      "pixel_size": [
+        320,
+        158
+      ],
+      "sha256": "d666605b149c717e322976f60d5318e830607c8e62c0db02b3a02698a8252950",
+      "source": "ChatGPT-painted independent transparent directional shadow",
+      "status": "draft_unreviewed",
+      "notes": "Shadow lengths/direction require Godot light verification"
+    },
+    {
+      "request_id": "ART-0017",
+      "path": "draft_specialist/ART-0017/hero_compass_door_shadow.png",
+      "file_name": "hero_compass_door_shadow.png",
+      "pixel_size": [
+        96,
+        64
+      ],
+      "sha256": "4c8ccb223b685956b44e09f6fbc2684869ea475f53f45fb802242a00fefc7e31",
+      "source": "ChatGPT-painted independent transparent directional shadow",
+      "status": "draft_unreviewed",
+      "notes": ""
+    },
+    {
+      "request_id": "ART-0018",
+      "path": "draft_specialist/ART-0018/hero_wide_front_stair_shadow.png",
+      "file_name": "hero_wide_front_stair_shadow.png",
+      "pixel_size": [
+        240,
+        128
+      ],
+      "sha256": "0cf1d1db81acb2c04d1c5b18b0884c36ff1e2fd8611106e6946ec654b3fc091f",
+      "source": "ChatGPT-painted independent transparent directional shadow",
+      "status": "draft_unreviewed",
+      "notes": "Artwork should be linked to stair owner and verified at real scale"
+    },
+    {
+      "request_id": "ART-0013",
+      "path": "draft_specialist/ART-0013/hero_arch_light_shaft.png",
+      "file_name": "hero_arch_light_shaft.png",
+      "pixel_size": [
+        96,
+        192
+      ],
+      "sha256": "066adb0b6f287cd55e0ccdd2fd50bfbeb1e09a5012e39bb762c5c8677bab1045",
+      "source": "ChatGPT-painted warm light rays",
+      "status": "draft_unreviewed",
+      "notes": "Requires transparent compositor/additive blending review"
+    },
+    {
+      "request_id": "ART-0014",
+      "path": "draft_specialist/ART-0014/hero_broken_floor_edge_01.png",
+      "file_name": "hero_broken_floor_edge_01.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "sha256": "210e4205e0b130bbaa34e2e962c7ede932afe3b7371a43ea8c6c77dd22e0b17a",
+      "source": "ChatGPT ImageGen limestone-paver atlas, warm graded, jagged edge silhouette",
+      "status": "draft_unreviewed",
+      "notes": "Flat floor overlay (not wood); seam continuity and junctions require review"
+    },
+    {
+      "request_id": "ART-0014",
+      "path": "draft_specialist/ART-0014/hero_broken_floor_edge_02.png",
+      "file_name": "hero_broken_floor_edge_02.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "sha256": "0b969f3ef7ca81a81c7ce5422251d776fc89fef0e60e64d141923b78a4f9de52",
+      "source": "ChatGPT ImageGen limestone-paver atlas, warm graded, jagged edge silhouette",
+      "status": "draft_unreviewed",
+      "notes": "Flat floor overlay (not wood); seam continuity and junctions require review"
+    },
+    {
+      "request_id": "ART-0014",
+      "path": "draft_specialist/ART-0014/hero_broken_floor_corner_left.png",
+      "file_name": "hero_broken_floor_corner_left.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "sha256": "889445cae26b62c86a2630c72228bc20ed00d662470b69a06a59800dabd91cef",
+      "source": "ChatGPT ImageGen limestone-paver atlas, warm graded, jagged edge silhouette",
+      "status": "draft_unreviewed",
+      "notes": "Flat floor overlay (not wood); seam continuity and junctions require review"
+    },
+    {
+      "request_id": "ART-0014",
+      "path": "draft_specialist/ART-0014/hero_broken_floor_corner_right.png",
+      "file_name": "hero_broken_floor_corner_right.png",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "sha256": "63e4e005c4f10a750c06522bd11f2aefa53e2cf0f951455ab15568737c70e252",
+      "source": "ChatGPT ImageGen limestone-paver atlas, warm graded, jagged edge silhouette",
+      "status": "draft_unreviewed",
+      "notes": "Flat floor overlay (not wood); seam continuity and junctions require review"
+    },
+    {
+      "request_id": "ART-0012",
+      "path": "draft_specialist/ART-0012/hero_cliff_palm_01.png",
+      "file_name": "hero_cliff_palm_01.png",
+      "pixel_size": [
+        96,
+        160
+      ],
+      "sha256": "3eba8ac7832cceaf1382f831ca65deb3610f573b9df36f9b15d734e8e7cb05c7",
+      "source": "ChatGPT ImageGen foliage isolated into RGBA",
+      "status": "draft_unreviewed",
+      "notes": "Visual draft: source shows potted palms; reference cliff-edge mount needs specialist review"
+    },
+    {
+      "request_id": "ART-0012",
+      "path": "draft_specialist/ART-0012/hero_cliff_palm_02.png",
+      "file_name": "hero_cliff_palm_02.png",
+      "pixel_size": [
+        96,
+        160
+      ],
+      "sha256": "6d8da642376fd24a13ab3aec220cbe2fed46940722a9d2b9dea3a70d8653c1cd",
+      "source": "ChatGPT ImageGen foliage isolated into RGBA",
+      "status": "draft_unreviewed",
+      "notes": "Visual draft: source shows potted palms; reference cliff-edge mount needs specialist review"
+    },
+    {
+      "request_id": "ART-0010",
+      "path": "draft_specialist/ART-0010/hero_brass_globe.png",
+      "file_name": "hero_brass_globe.png",
+      "pixel_size": [
+        48,
+        64
+      ],
+      "sha256": "26707291cc22eeca43e5c8d708f04d63778d67e71e63f8ca8c13d8ca8e6dccf9",
+      "source": "ChatGPT custom pixel-illustration based on user authentic style references",
+      "status": "draft_unreviewed",
+      "notes": "Separate armillary/globe silhouette; specialist must validate floor-contact pivot and reference detail"
+    },
+    {
+      "request_id": "ART-0011",
+      "path": "draft_specialist/ART-0011/hero_blue_white_planter.png",
+      "file_name": "hero_blue_white_planter.png",
+      "pixel_size": [
+        64,
+        112
+      ],
+      "sha256": "8a5443794c29dbe2c8862ed3cbd51b0dc90a06a8239fd238022548c32ddc8338",
+      "source": "ChatGPT custom pixel-illustration based on user authentic style references",
+      "status": "draft_unreviewed",
+      "notes": "Blue/gold-white glazed planter and detailed leaves; requires independently approved reference palette and mount origin"
+    },
+    {
+      "request_id": "ART-0015",
+      "path": "draft_specialist/ART-0015/hero_study_blue_rug.png",
+      "file_name": "hero_study_blue_rug.png",
+      "pixel_size": [
+        238,
+        304
+      ],
+      "sha256": "8093ec5a7242ef3d17e1f2279d4b3ee69d7cf4fe60d4b60436f69a6da9474fd4",
+      "source": "Adapted from user-provided authentic blue-and-gold compass banner crop; ChatGPT textile/rug composition",
+      "status": "draft_unreviewed",
+      "notes": "Flat-textile approximation, MUST inspect at Godot scale and verify footprint/projection; source is a hanging banner, not an already approved rug"
+    }
+  ],
+  "original_source_crops": [
+    {
+      "path": "source_reference_crops/blue_compass_banner_reference.png",
+      "pixel_size": [
+        456,
+        606
+      ],
+      "sha256": "3c44d199609dd4948af152bcce52eeae126314b4bc7d39be27b6a61cb694c956",
+      "status": "source_crop_unreviewed"
+    },
+    {
+      "path": "source_reference_crops/blue_compass_chest_reference.png",
+      "pixel_size": [
+        510,
+        434
+      ],
+      "sha256": "91b51bff41680d285da8ab2e32b1b1426b4a4faf3821834152fc92073e9b3e02",
+      "status": "source_crop_unreviewed"
+    },
+    {
+      "path": "source_reference_crops/compass_pillar_reference.png",
+      "pixel_size": [
+        280,
+        602
+      ],
+      "sha256": "934df4a50736aef618946d658387ae9ffd9eac3dd18b5c7776198276fa2245ed",
+      "status": "source_crop_unreviewed"
+    },
+    {
+      "path": "source_reference_crops/stone_flower_wall_reference.png",
+      "pixel_size": [
+        470,
+        568
+      ],
+      "sha256": "f3d95f136b2234d4bdbe9a240a9c40010412e35565cb17c46b6365c84ff47f13",
+      "status": "source_crop_unreviewed"
+    }
+  ]
+}
