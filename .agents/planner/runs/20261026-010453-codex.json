@@ -1,0 +1,14 @@
+{
+  "run_id": "20261026-010453-codex",
+  "agent": "codex",
+  "base_sha": "8fc38585c27cf7589a80f06fe9efb0d4c83d3308",
+  "input_digest": "19ebd64f02cba06b6e42ced2622ed07e99459846a3485d46a71ce11609634280",
+  "duration_seconds": 3.1,
+  "usage": null,
+  "cost_usd_estimate": null,
+  "exit": 1,
+  "status": "failed",
+  "reason": "cli_error",
+  "source_sha": "8fc38585c27cf7589a80f06fe9efb0d4c83d3308",
+  "completed_at": "2026-10-26T01:04:57.739260+01:00"
+}
