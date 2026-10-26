@@ -80,8 +80,18 @@ class MapTests(unittest.TestCase):
                 with self.subTest(tests=tests), self.assertRaises(ValueError):
                     run_tests.load_map(bad)
 
-    def test_index_is_up_to_date(self):
-        self.assertEqual(run_tests.INDEX.read_text(encoding="utf-8"), run_tests.render_index(run_tests.load_map()))
+    def test_check_index_strict_on_main_tolerant_for_sources(self):
+        # INDEX.md is main-only (ADR-006): PRs and task worktrees change test_map.json, not INDEX.md.
+        saved = run_tests.INDEX
+        self.addCleanup(setattr, run_tests, "INDEX", saved)
+        with tempfile.TemporaryDirectory() as tmp:
+            run_tests.INDEX = Path(tmp) / "INDEX.md"
+            run_tests.INDEX.write_text("stale\n", encoding="utf-8")
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(run_tests.main(["--check-index"]), 1)
+                self.assertEqual(run_tests.main(["--check-index", "--sources-only"]), 0)
+                run_tests.INDEX.write_text(run_tests.render_index(run_tests.load_map()), encoding="utf-8")
+                self.assertEqual(run_tests.main(["--check-index"]), 0)
 
     def test_godot_placeholder_resolves(self):
         argv = run_tests.resolve(entry("g", ["x"], ["{godot}", "--headless"], "godot"), "/opt/godot")

@@ -217,6 +217,9 @@ def main(argv: list[str] | None = None) -> int:
     mode.add_argument("--list", action="store_true", help="list tests and exit")
     mode.add_argument("--write-index", action="store_true", help="regenerate tools/tests/INDEX.md")
     mode.add_argument("--check-index", action="store_true", help="fail if tools/tests/INDEX.md is stale")
+    parser.add_argument("--sources-only", action="store_true",
+                        help="with --check-index: validate test_map.json but allow an INDEX.md not yet regenerated "
+                             "(pull requests and task worktrees; INDEX.md is regenerated on main only)")
     parser.add_argument("--dry-run", action="store_true", help="print selected commands without running them")
     parser.add_argument("--base", default="origin/main", help="git ref to diff against (default origin/main)")
     parser.add_argument("--kind", choices=KINDS, help="only run tests of this kind")
@@ -238,6 +241,9 @@ def main(argv: list[str] | None = None) -> int:
             print("Wrote", INDEX.relative_to(ROOT).as_posix())
             return 0
         if not INDEX.is_file() or INDEX.read_text(encoding="utf-8") != expected:
+            if args.sources_only:
+                print("tools/test_map.json is valid; tools/tests/INDEX.md is regenerated on main after merge")
+                return 0
             print("tools/tests/INDEX.md is stale. Run: py -3 tools/run_tests.py --write-index")
             return 1
         print("tools/tests/INDEX.md matches tools/test_map.json")

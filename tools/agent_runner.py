@@ -7,7 +7,7 @@ The local owner's authenticated Claude/Codex CLI is used only when enabled.
 from __future__ import annotations
 import argparse
 from contextlib import contextmanager
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import json
 import os
 from pathlib import Path
@@ -199,11 +199,62 @@ def tests(workdir,task,scope="--changed"):
         if proc.returncode:failures.append(" ".join(str(x) for x in command[1:3])+" returned "+str(proc.returncode))
     if failures:raise RuntimeError("; ".join(failures))
 
+def state_path(tid):
+    return LOCAL/("runner-state-"+tid+".json")
+
+def read_state(tid):
+    return read_json(state_path(tid),{})
+
 def checkpoint(tid,agent,phase,details):
-    p=LOCAL/"runner-state.json"
-    p.parent.mkdir(parents=True,exist_ok=True)
-    p.write_text(json.dumps({"task":tid,"agent":agent,"phase":phase,"at":stamp(),
-                             "details":details},indent=2)+"\n",encoding="utf-8", newline="\n")
+    """Per-task state, so parallel claude/codex runs never read each other's phase;
+    runner-state.json only mirrors the latest event for humans."""
+    LOCAL.mkdir(parents=True,exist_ok=True)
+    body=json.dumps({"task":tid,"agent":agent,"phase":phase,"at":stamp(),
+                     "details":details},indent=2)+"\n"
+    for p in (state_path(tid),LOCAL/"runner-state.json"):
+        p.write_text(body,encoding="utf-8",newline="\n")
+
+QUOTA=re.compile(r"usage.?limit|rate.?limit|quota.?exceed|too many requests|purchase more credits",re.I)
+COOLDOWN_MINUTES=60
+
+class QuotaExceeded(RuntimeError):
+    """The agent CLI refused to work (subscription usage/rate limit): not a task failure."""
+
+def quota_message(proc):
+    """The limit line from a failed agent CLI run, or None for ordinary failures."""
+    if not proc.returncode:
+        return None
+    text=(proc.stderr or "")+"\n"+(proc.stdout or "")
+    line=next((l for l in text.splitlines() if QUOTA.search(l)),None)
+    return line.strip()[:240] if line else None
+
+def cooldown_path(agent):
+    return LOCAL/("cooldown-"+agent+".json")
+
+def cooling_until(agent):
+    info=read_json(cooldown_path(agent),{})
+    try:
+        until=datetime.fromisoformat(str(info.get("retry_after","")))
+    except ValueError:
+        return None
+    return until if until>datetime.now(timezone.utc) else None
+
+def start_cooldown(agent,message,minutes=COOLDOWN_MINUTES):
+    LOCAL.mkdir(parents=True,exist_ok=True)
+    until=datetime.now(timezone.utc)+timedelta(minutes=minutes)
+    cooldown_path(agent).write_text(json.dumps({"agent":agent,"retry_after":until.isoformat(),
+        "reason":message},indent=2)+"\n",encoding="utf-8",newline="\n")
+    return until
+
+def release_for_quota(tid,agent,message):
+    """Return a claimed task to todo (not blocked) after a usage limit and record why."""
+    p=next((ROOT/".agents/tasks").glob(tid+"_*.md"))
+    raw=p.read_text(encoding="utf-8")
+    for key,value in (("status","todo"),("owner","unassigned"),("branch","none"),("started_at","unknown")):
+        raw=re.sub(r"(?m)^"+key+r": [^\r\n]+$",key+": "+value,raw,count=1)
+    raw+="\n## Runner evidence\n- Released to todo: "+agent+" CLI usage limit, no code merged ("+message[:200].replace("\n"," ")+").\n"
+    p.write_text(raw,encoding="utf-8",newline="\n")
+    main_commit("chore: release "+tid+" after "+agent+" usage limit",agent,tid)
 
 def execution_gate(config):
     if not config.get("execution_enabled",False):
@@ -235,8 +286,8 @@ def run(tid, supervised=False):
         problem=settle_main(tid,agent) if agent else (
             "Main left dirty: "+", ".join(dirty_paths()[:10]) if dirty_paths() else None)
         if problem:
-            info=read_json(LOCAL/"runner-state.json",{})
-            details=(str(info.get("details",""))+" | " if not finished and info.get("task")==tid else "")+problem
+            info=read_state(tid)
+            details=(str(info.get("details",""))+" | " if not finished and info else "")+problem
             checkpoint(tid,agent or "unknown","blocked_dirty_main",details[:400])
             print("agent runner: "+problem,file=sys.stderr)
             if finished:
@@ -290,6 +341,9 @@ def _run(tid, supervised=False):
         # restore original art only AFTER model session has fully exited
         git("sparse-checkout","disable",cwd=workdir)
         if outcome.returncode:
+            message=quota_message(outcome)
+            if message:
+                raise QuotaExceeded(message)
             raise RuntimeError("Agent CLI failed; code not merged")
         changed=changed_paths(workdir)
         allowed_changed(changed,paths)
@@ -330,6 +384,16 @@ def _run(tid, supervised=False):
                 extra=[CONFIG.relative_to(ROOT).as_posix()]
             main_commit("chore: record validated "+tid,agent,tid,extra)
             checkpoint(tid,agent,"done",merge_sha)
+    except QuotaExceeded as exc:
+        # Usage limits are not task failures: release to todo and pause this agent.
+        checkpoint(tid,agent,"released_quota",str(exc)[:200])
+        start_cooldown(agent,str(exc))
+        try:
+            with exclusive("main-merge"):
+                release_for_quota(tid,agent,str(exc))
+        except Exception as record_exc:
+            print("agent runner: could not release task: "+str(record_exc),file=sys.stderr)
+        raise
     except Exception as exc:
         # Fail closed; do not delete any evidence or guess that a merge succeeded.
         checkpoint(tid,agent,"blocked_pending_review",str(exc)[:200])
@@ -345,8 +409,9 @@ def _run(tid, supervised=False):
     finally:
         # Preserve worktree on failure for human debugging; remove only successful
         # worktrees after runner confirms post-merge tests.
-        info=read_json(LOCAL/"runner-state.json",{})
-        if info.get("phase")=="done":
+        info=read_state(tid)
+        released=info.get("phase")=="released_quota" and not changed_paths(workdir)
+        if info.get("phase")=="done" or released:
             git("worktree","remove","--force",str(workdir))
             git("branch","-d",branch)
 
@@ -389,6 +454,10 @@ def main():
         run(args.supervised,supervised=True)
     elif args.run_next:
         execution_gate(read_json(CONFIG,{}))
+        until=cooling_until(args.run_next)
+        if until:
+            print(args.run_next+" usage cooldown until "+until.isoformat()+"; no task claimed, no AI call made")
+            return
         selected=pick_next(args.run_next)
         if selected is None:
             print("No eligible task for "+args.run_next+"; no AI call made")
@@ -399,6 +468,9 @@ def main():
 
 if __name__=="__main__":
     try:main()
+    except QuotaExceeded as exc:
+        # Deferred, not failed: the task is back to todo and this agent cools down.
+        print("agent runner: usage limit, task released for retry: "+str(exc))
     except (OSError,RuntimeError,ValueError,subprocess.TimeoutExpired) as exc:
         print("agent runner: "+str(exc),file=sys.stderr)
         sys.exit(1)

@@ -19,6 +19,10 @@ jobs:
         if: github.event_name == 'pull_request'
         run: python3 tools/generate_project_indexes.py --sources-only --base origin/main
       - name: Verify tools/tests/INDEX.md matches the test router map
+        if: github.event_name != 'pull_request'
         run: python3 tools/run_tests.py --check-index
+      - name: Validate the test router map without changing its generated index
+        if: github.event_name == 'pull_request'
+        run: python3 tools/run_tests.py --check-index --sources-only
       - name: Test deterministic index generation
         run: python3 -m unittest discover -s tools/tests -p 'test_project_indexes.py' -v
