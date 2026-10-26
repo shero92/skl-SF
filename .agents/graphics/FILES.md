@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`chatgpt_drafts/`](chatgpt_drafts/FILES.md)
 - [`deliveries/`](deliveries/FILES.md)
 - [`requests/`](requests/FILES.md)
 
