@@ -135,6 +135,21 @@ class BlenderRenders(unittest.TestCase):
         result = bf.calibrate()
         self.assertTrue(result["ok"], result)
 
+    def test_side_wall_lean_keeps_the_foot_and_shifts_the_top_outward(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            spec = Path(tmp) / "spec.json"
+            spec.write_text(json.dumps({"builder": "wall_run", "projection": {"supersample": 1, "samples": 4},
+                                        "params": {"length": 1.0, "height": 2.0, "thickness": 0.5, "seed": 3, "ivy": False},
+                                        "outputs": [{"name": "w", "facing": "west", "params": {"lean": -0.4}},
+                                                    {"name": "e", "facing": "east", "params": {"lean": 0.4}}]}))
+            west, east = bf.render(spec, Path(tmp) / "out")
+            for meta, sign in ((west, -1), (east, 1)):
+                foot, top = meta["anchors_px"]["foot_center_front"], meta["anchors_px"]["top_center_front"]
+                self.assertAlmostEqual((top[0] - foot[0]) * sign, 0.4 * 2.0 * 64, delta=2.0, msg=meta["name"])
+            report = art_qa.check(Path(tmp) / "out", ["w.png", "e.png"])
+            self.assertEqual(report["problems"], [], report)
+            self.assertEqual(report["warnings"], [], "leaning side walls show different inner faces")
+
     def test_wall_facings_are_real_renders_not_bitmap_copies(self):
         with tempfile.TemporaryDirectory() as tmp:
             spec = Path(tmp) / "spec.json"

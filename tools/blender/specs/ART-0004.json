@@ -7,7 +7,11 @@
     "height": 2.25,
     "thickness": 0.5,
     "row_height": 0.28,
-    "seed": 7
+    "seed": 7,
+    "ivy": true,
+    "ivy_density": 1.0,
+    "ivy_hang": 0.9,
+    "ivy_flowers": 0.12
   },
   "outputs": [
     {
@@ -16,7 +20,10 @@
     },
     {
       "name": "hero_wall_run_east",
-      "facing": "east"
+      "facing": "east",
+      "params": {
+        "lean": 0.45
+      }
     },
     {
       "name": "hero_wall_run_south",
@@ -24,17 +31,11 @@
     },
     {
       "name": "hero_wall_run_west",
-      "facing": "west"
+      "facing": "west",
+      "params": {
+        "lean": -0.45
+      }
     }
   ],
-  "notes": "One modular 1-tile wall run, 2.25 tiles high, 0.5 tile thick. Facing = the wall's position in the room. Orthographic projection (owner decision 2026-10-26): side walls show only top and end. Height/thickness await calibration against the Godot capture.",
-  "expected_similar": [
-    {
-      "pair": [
-        "hero_wall_run_east",
-        "hero_wall_run_west"
-      ],
-      "reason": "Owner decision 2026-10-26: orthographic projection; east/west side walls show only their top and end (classic top-down JRPG rooms), so the two side views are nearly identical by design."
-    }
-  ]
+  "notes": "One modular 1-tile wall run, 2.25 tiles high, 0.5 tile thick, warm limestone with ivy (v2, 2026-10-26). Facing = the wall's position in the room. East/west side walls lean outward (x += lean * z) with the foot fixed on the floor edge, so their inner masonry face shows like the reference (owner request 2026-10-26, replacing the earlier top-only decision)."
 }

@@ -64,3 +64,8 @@ issue: 20
 - tile_top_left anchor per file is in manifest.json (anchors_px), for alignment with the 64 px floor grid and F007/F012/F013.
 - Technical QA: no problems; halo 0-0.7% of soft edge pixels. Open warning: edge_01 ~ edge_02 (two intended variants differ only along the broken edge).
 - Reference SHA-256 01d91889...3119c (1536x1024), not owner-confirmed. Unapproved: the visual check happens on the final Godot capture.
+
+## Delivery v2 (Blender, 2026-10-26, TASK-0048)
+- Re-rendered with warmer, darker limestone and a lower sun; still status delivered and unapproved.
+- Files: hero_broken_floor_edge_01.png 142x155 sha256 09a9e82e62c4, hero_broken_floor_edge_02.png 142x155 sha256 5ec4aabea541, hero_broken_floor_corner_left.png 147x160 sha256 c7c712db7e39, hero_broken_floor_corner_right.png 144x158 sha256 28b45f769449.
+- QA: problems none; warnings: hero_broken_floor_edge_01.png vs hero_broken_floor_edge_02.png.

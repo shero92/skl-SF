@@ -65,3 +65,8 @@ issue: 20
 - Files (native 64 px/tile, plus @4x masters and separate *_shadow.png): hero_wall_run_north.png 142x256 sha256 c45ea1a67d23, hero_wall_run_east.png 115x286 sha256 f068f8073d1c, hero_wall_run_south.png 142x257 sha256 524d96c4cfcf, hero_wall_run_west.png 115x286 sha256 08891dc8ce26.
 - Technical QA: no problems; expected: east~west; open warning: north~south look nearly identical (symmetric wall seen from the back).
 - Reference SHA-256 01d91889...3119c (1536x1024), not owner-confirmed. Status stays unapproved: visual check happens on the final Godot capture.
+
+## Delivery v2 (Blender, 2026-10-26, TASK-0048)
+- Re-rendered with warmer, darker limestone and a lower sun; ivy and white flowers on the inner face; east/west side walls lean outward (lean +/-0.45) so their inner face shows (owner request, replacing the top-only decision); still status delivered and unapproved.
+- Files: hero_wall_run_north.png 142x256 sha256 02efdffd65e3, hero_wall_run_east.png 175x334 sha256 b3eee5198846, hero_wall_run_south.png 142x262 sha256 ff12ba453924, hero_wall_run_west.png 175x294 sha256 d82b080605ed.
+- QA: problems none; warnings: hero_wall_run_north.png vs hero_wall_run_south.png.

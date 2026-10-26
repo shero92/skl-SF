@@ -5,7 +5,7 @@
   "files": [
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01.png",
-      "sha256": "d5d5a5419667e09c2a68b4e5db067e80e225a222ed9ac410dfcf93317968b08d",
+      "sha256": "09a9e82e62c4ebb95e0dc8d2adf362e7c20c57c92b1d01c09da791bb58ebf928",
       "pixel_size": [
         142,
         155
@@ -37,12 +37,12 @@
         "seed": 11
       },
       "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01@4x.png",
-      "master_sha256": "4bdb844a1d347ae103f88e544680cd36242a0597330db831491cdc18f632365d",
+      "master_sha256": "f98b0e1eec3262d8e661a40baf3439c34792feffff8ddb364962584fbbc9442b",
       "shadow": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01_shadow.png"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02.png",
-      "sha256": "9c4c58c29c194c659543350c8f93ade2cb793cda39b0c447a8e438fd8e27fd45",
+      "sha256": "5ec4aabea54187583283d1e5a1c8d4f44430cb59f547fa123cd888dd19afb337",
       "pixel_size": [
         142,
         155
@@ -74,12 +74,12 @@
         "seed": 23
       },
       "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02@4x.png",
-      "master_sha256": "ee186ef21e812b198dada1a27f7b5d5b904d9e557d0d8a8245f78a98bb9aec56",
+      "master_sha256": "87f06eb18e5365b380c22a99c2ebe98c8dd9196d4d92864aaedcbb80ffdd99d4",
       "shadow": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02_shadow.png"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left.png",
-      "sha256": "49de69b8bb32503d0e5c326605f1885d1388f92530d0384d4aec676667d14e4d",
+      "sha256": "c7c712db7e39246d25c2698e52777608db78dda0097ded023ccdf2d5ccfead9b",
       "pixel_size": [
         147,
         160
@@ -111,12 +111,12 @@
         "seed": 31
       },
       "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left@4x.png",
-      "master_sha256": "5fccfbad616be2f98639727d135418e1ccdbd8ff72b66cc729694fcd9613b519",
+      "master_sha256": "a3936aa599bbb991e8f5cfeb77c8d01770103ef38deb4185dc9bbc98400d0262",
       "shadow": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left_shadow.png"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right.png",
-      "sha256": "45042059ad9852c530ecbdae61484318e662ee99481070c9136ca1aea28f7721",
+      "sha256": "28b45f769449f328aaf3802ce1d48c86ead9e64c620bbed8666a79848d8b4173",
       "pixel_size": [
         144,
         158
@@ -148,100 +148,100 @@
         "seed": 47
       },
       "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right@4x.png",
-      "master_sha256": "f709ae1283fca45cf931210dac1d5a39a993f3d2a6de458af1eba95b354ec79d",
+      "master_sha256": "f25a79b56876656f87b7b064119055575df8473448dd07e4048126b34d6644bf",
       "shadow": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right_shadow.png"
     }
   ],
   "extra_files": [
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01@4x.png",
-      "sha256": "4bdb844a1d347ae103f88e544680cd36242a0597330db831491cdc18f632365d",
+      "sha256": "f98b0e1eec3262d8e661a40baf3439c34792feffff8ddb364962584fbbc9442b",
       "role": "4x master"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01_shadow.png",
-      "sha256": "7192732d75aef669835de3c8fd83183d31508a73e12405fc6c63b67d882ab230",
+      "sha256": "d9b7fa7a16b04ae680273f8e73da9779b6d2c9683941406d1842fa590ca66ec4",
       "role": "separate cast shadow"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02@4x.png",
-      "sha256": "ee186ef21e812b198dada1a27f7b5d5b904d9e557d0d8a8245f78a98bb9aec56",
+      "sha256": "87f06eb18e5365b380c22a99c2ebe98c8dd9196d4d92864aaedcbb80ffdd99d4",
       "role": "4x master"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02_shadow.png",
-      "sha256": "2cc871500b655ee63537992ad259148d11aa393251b82ea4ae9f274fdb08e86b",
+      "sha256": "47370cbcb99b6df4a26e8d1d38adb79e7fe876cf3d8b6225d9b7a6d4f0041a06",
       "role": "separate cast shadow"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left@4x.png",
-      "sha256": "5fccfbad616be2f98639727d135418e1ccdbd8ff72b66cc729694fcd9613b519",
+      "sha256": "a3936aa599bbb991e8f5cfeb77c8d01770103ef38deb4185dc9bbc98400d0262",
       "role": "4x master"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left_shadow.png",
-      "sha256": "4de10b04793931c1cef0cea3bd73b15863a6fba07ce71d1621555f5ef748d4fc",
+      "sha256": "3f21dcd71368a37d9d2455dd1f614d9ea48f847c6e736afa8cda4c1c18bfa167",
       "role": "separate cast shadow"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right@4x.png",
-      "sha256": "f709ae1283fca45cf931210dac1d5a39a993f3d2a6de458af1eba95b354ec79d",
+      "sha256": "f25a79b56876656f87b7b064119055575df8473448dd07e4048126b34d6644bf",
       "role": "4x master"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right_shadow.png",
-      "sha256": "034c57b545969836e23e3d4aaa3581d8f7af7b6d729977a336cb724a907c9a7d",
+      "sha256": "67024ce70ab519a2360f694dd7dd7b0491712d7174d5c65090b22a4fed6007f3",
       "role": "separate cast shadow"
     }
   ],
   "qa": {
     "problems": [],
     "warnings": [
-      "hero_broken_floor_edge_01.png vs hero_broken_floor_edge_02.png: nearly identical (score 3.93); fine for variants, a defect if they must be distinct facings"
+      "hero_broken_floor_edge_01.png vs hero_broken_floor_edge_02.png: nearly identical (score 2.7); fine for variants, a defect if they must be distinct facings"
     ],
     "expected_warnings": [],
     "pairs": [
       {
         "a": "hero_broken_floor_edge_01.png",
         "b": "hero_broken_floor_edge_02.png",
-        "same": 3.93,
-        "mirror": 76.48,
-        "rot90": 79.28
+        "same": 2.7,
+        "mirror": 54.32,
+        "rot90": 56.2
       },
       {
         "a": "hero_broken_floor_edge_01.png",
         "b": "hero_broken_floor_corner_left.png",
-        "same": 11.25,
-        "mirror": 70.74,
-        "rot90": 74.34
+        "same": 8.57,
+        "mirror": 50.32,
+        "rot90": 52.86
       },
       {
         "a": "hero_broken_floor_edge_01.png",
         "b": "hero_broken_floor_corner_right.png",
-        "same": 9.38,
-        "mirror": 79.05,
-        "rot90": 77.57
+        "same": 7.29,
+        "mirror": 56.24,
+        "rot90": 55.19
       },
       {
         "a": "hero_broken_floor_edge_02.png",
         "b": "hero_broken_floor_corner_left.png",
-        "same": 10.87,
-        "mirror": 70.95,
-        "rot90": 74.82
+        "same": 8.05,
+        "mirror": 50.24,
+        "rot90": 53.02
       },
       {
         "a": "hero_broken_floor_edge_02.png",
         "b": "hero_broken_floor_corner_right.png",
-        "same": 8.04,
-        "mirror": 79.19,
-        "rot90": 78.02
+        "same": 6.57,
+        "mirror": 56.21,
+        "rot90": 55.32
       },
       {
         "a": "hero_broken_floor_corner_left.png",
         "b": "hero_broken_floor_corner_right.png",
-        "same": 13.86,
-        "mirror": 73.93,
-        "rot90": 72.68
+        "same": 10.43,
+        "mirror": 52.48,
+        "rot90": 51.7
       }
     ]
   },
@@ -249,7 +249,7 @@
     "tool": "blender",
     "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
     "spec": "tools/blender/specs/ART-0014.json",
-    "toolkit_commit": "e9aa5fb183035a87b0a16b746c14f1271fc53471",
+    "toolkit_commit": "72fe111a0fa5a4bc0405ce1e05b6e024846e4694",
     "producing_agent": "claude",
     "ai_image_generation": false
   },

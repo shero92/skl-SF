@@ -5,7 +5,7 @@
   "files": [
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
-      "sha256": "c45ea1a67d236f76e27dbe2c5581582d1ed4258e6771a1df3ea59a871d70e531",
+      "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a",
       "pixel_size": [
         142,
         256
@@ -35,36 +35,40 @@
         "height": 2.25,
         "thickness": 0.5,
         "row_height": 0.28,
-        "seed": 7
+        "seed": 7,
+        "ivy": true,
+        "ivy_density": 1.0,
+        "ivy_hang": 0.9,
+        "ivy_flowers": 0.12
       },
       "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
-      "master_sha256": "7128da5134fbb163ceb7706ab9f58a1ae1d527a44e7d7380efe54fcfead63bf1",
+      "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
       "shadow": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north_shadow.png"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
-      "sha256": "f068f8073d1c0fabf64e585928fff2780136b7001ab09727e090096af38a8dfd",
+      "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9",
       "pixel_size": [
-        115,
-        286
+        175,
+        334
       ],
       "facing": "east",
       "anchors_px": {
         "foot_center_front": [
-          12.75,
-          186.0
+          8.5,
+          219.25
         ],
         "foot_left": [
-          12.75,
-          154.0
+          8.5,
+          187.25
         ],
         "foot_right": [
-          12.75,
-          218.0
+          8.5,
+          251.25
         ],
         "top_center_front": [
-          12.75,
-          42.0
+          73.3,
+          75.25
         ]
       },
       "builder": "wall_run",
@@ -73,36 +77,41 @@
         "height": 2.25,
         "thickness": 0.5,
         "row_height": 0.28,
-        "seed": 7
+        "seed": 7,
+        "ivy": true,
+        "ivy_density": 1.0,
+        "ivy_hang": 0.9,
+        "ivy_flowers": 0.12,
+        "lean": 0.45
       },
       "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
-      "master_sha256": "053af1a8bcda1634073f31d0688abcda21ff91f464c144b7bccb290975d1fc57",
+      "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
       "shadow": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east_shadow.png"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south.png",
-      "sha256": "524d96c4cfcf3993f4599871060e88d3f720faa40675adf47f7fcf19c4febb1b",
+      "sha256": "ff12ba453924493b40089e4a30a2e161fba47faa52753bb4d41427ad01854adb",
       "pixel_size": [
         142,
-        257
+        262
       ],
       "facing": "south",
       "anchors_px": {
         "foot_center_front": [
           42.5,
-          156.75
+          162.25
         ],
         "foot_left": [
           74.5,
-          156.75
+          162.25
         ],
         "foot_right": [
           10.5,
-          156.75
+          162.25
         ],
         "top_center_front": [
           42.5,
-          12.75
+          18.25
         ]
       },
       "builder": "wall_run",
@@ -111,36 +120,40 @@
         "height": 2.25,
         "thickness": 0.5,
         "row_height": 0.28,
-        "seed": 7
+        "seed": 7,
+        "ivy": true,
+        "ivy_density": 1.0,
+        "ivy_hang": 0.9,
+        "ivy_flowers": 0.12
       },
       "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south@4x.png",
-      "master_sha256": "014b133490d34b9073a37ead6f9d946808b1da5d1577ff42a104c8248bdaa689",
+      "master_sha256": "12aff0f0b145fa69ec02509ab80589bf9901d2bc35b909aca27f626489834412",
       "shadow": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south_shadow.png"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
-      "sha256": "08891dc8ce26514ee7eed74b6db778f33321e3cdd500f3d4b64ce9e1be92c019",
+      "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e",
       "pixel_size": [
-        115,
-        286
+        175,
+        294
       ],
       "facing": "west",
       "anchors_px": {
         "foot_center_front": [
-          44.75,
-          186.0
+          108.75,
+          190.5
         ],
         "foot_left": [
-          44.75,
-          218.0
+          108.75,
+          222.5
         ],
         "foot_right": [
-          44.75,
-          154.0
+          108.75,
+          158.5
         ],
         "top_center_front": [
-          44.75,
-          42.0
+          43.95,
+          46.5
         ]
       },
       "builder": "wall_run",
@@ -149,108 +162,108 @@
         "height": 2.25,
         "thickness": 0.5,
         "row_height": 0.28,
-        "seed": 7
+        "seed": 7,
+        "ivy": true,
+        "ivy_density": 1.0,
+        "ivy_hang": 0.9,
+        "ivy_flowers": 0.12,
+        "lean": -0.45
       },
       "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
-      "master_sha256": "af4924ddc409037da43ace2b722dd1b86f591ecbfe3eac73a3d2f25648fb0bd3",
+      "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
       "shadow": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west_shadow.png"
     }
   ],
   "extra_files": [
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
-      "sha256": "7128da5134fbb163ceb7706ab9f58a1ae1d527a44e7d7380efe54fcfead63bf1",
+      "sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
       "role": "4x master"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north_shadow.png",
-      "sha256": "56438ac55da297b31e74b04184432cb246c853f18890bc34f065a48e1ddc0124",
+      "sha256": "eb2024ce07f3e90c0e458ea7e6b6ce48b555fb4c3e1f67cb7fbdcdfd0f6772a2",
       "role": "separate cast shadow"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
-      "sha256": "053af1a8bcda1634073f31d0688abcda21ff91f464c144b7bccb290975d1fc57",
+      "sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
       "role": "4x master"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east_shadow.png",
-      "sha256": "42f31099aef89d3b16e422a2a5cad8fac134bd534db9667949c1c511cf6f5bc8",
+      "sha256": "006ed03db24b7ea976f9b3afdb6d57a00a2986371fa4580c9052e59f347214c0",
       "role": "separate cast shadow"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south@4x.png",
-      "sha256": "014b133490d34b9073a37ead6f9d946808b1da5d1577ff42a104c8248bdaa689",
+      "sha256": "12aff0f0b145fa69ec02509ab80589bf9901d2bc35b909aca27f626489834412",
       "role": "4x master"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south_shadow.png",
-      "sha256": "034275806b1097df65e2efaf7c551693f068a33112637d4997424a6d3ed640a8",
+      "sha256": "4a66bbc106e37e1548d2a982278bfc0b4f119419a04517801b697d3db6ec150f",
       "role": "separate cast shadow"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
-      "sha256": "af4924ddc409037da43ace2b722dd1b86f591ecbfe3eac73a3d2f25648fb0bd3",
+      "sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
       "role": "4x master"
     },
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west_shadow.png",
-      "sha256": "d83b135b21b945c0fdc0345b829862460fbefc7d3e68a31f7eb24749dfffcc1f",
+      "sha256": "73b0532987ed1a41a641a3128cd830dd6c403ddc570aef021451c95a6d0b7045",
       "role": "separate cast shadow"
     }
   ],
   "qa": {
     "problems": [],
     "warnings": [
-      "hero_wall_run_north.png vs hero_wall_run_south.png: nearly identical (score 3.35); fine for variants, a defect if they must be distinct facings"
+      "hero_wall_run_north.png vs hero_wall_run_south.png: nearly identical (score 5.41); fine for variants, a defect if they must be distinct facings"
     ],
-    "expected_warnings": [
-      {
-        "warning": "hero_wall_run_east.png vs hero_wall_run_west.png: nearly identical (score 3.0); fine for variants, a defect if they must be distinct facings",
-        "reason": "Owner decision 2026-10-26: orthographic projection; east/west side walls show only their top and end (classic top-down JRPG rooms), so the two side views are nearly identical by design."
-      }
-    ],
+    "expected_warnings": [],
     "pairs": [
       {
         "a": "hero_wall_run_north.png",
         "b": "hero_wall_run_east.png",
-        "same": 19.62,
-        "mirror": 65.29,
-        "rot90": 52.86
+        "same": 21.6,
+        "mirror": 41.95,
+        "rot90": 32.78
       },
       {
         "a": "hero_wall_run_north.png",
         "b": "hero_wall_run_south.png",
-        "same": 3.35,
-        "mirror": 67.15,
-        "rot90": 53.92
+        "same": 5.41,
+        "mirror": 45.89,
+        "rot90": 36.64
       },
       {
         "a": "hero_wall_run_north.png",
         "b": "hero_wall_run_west.png",
-        "same": 19.88,
-        "mirror": 65.36,
-        "rot90": 52.97
+        "same": 16.06,
+        "mirror": 39.03,
+        "rot90": 34.28
       },
       {
         "a": "hero_wall_run_east.png",
         "b": "hero_wall_run_south.png",
-        "same": 19.52,
-        "mirror": 65.37,
-        "rot90": 52.98
+        "same": 19.73,
+        "mirror": 41.39,
+        "rot90": 32.04
       },
       {
         "a": "hero_wall_run_east.png",
         "b": "hero_wall_run_west.png",
-        "same": 3.0,
-        "mirror": 56.69,
-        "rot90": 49.41
+        "same": 25.95,
+        "mirror": 37.49,
+        "rot90": 31.1
       },
       {
         "a": "hero_wall_run_south.png",
         "b": "hero_wall_run_west.png",
-        "same": 19.69,
-        "mirror": 65.44,
-        "rot90": 53.05
+        "same": 15.3,
+        "mirror": 38.74,
+        "rot90": 33.56
       }
     ]
   },
@@ -258,7 +271,7 @@
     "tool": "blender",
     "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
     "spec": "tools/blender/specs/ART-0004.json",
-    "toolkit_commit": "0992cd3329608b945896bdb20df96750583c0c3a",
+    "toolkit_commit": "72fe111a0fa5a4bc0405ce1e05b6e024846e4694",
     "producing_agent": "claude",
     "ai_image_generation": false
   },
