@@ -15,6 +15,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`asset_factory.gd`](asset_factory.gd)
 - [`asset_factory.gd.uid`](asset_factory.gd.uid)
 - [`background_factory.gd`](background_factory.gd)
+- [`background_factory.gd.uid`](background_factory.gd.uid)
 - [`room_factory.gd`](room_factory.gd)
 - [`room_factory.gd.uid`](room_factory.gd.uid)
 - [`shadow_factory.gd`](shadow_factory.gd)
