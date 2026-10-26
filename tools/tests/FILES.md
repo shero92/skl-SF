@@ -28,5 +28,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_parallel_safety.py`](test_parallel_safety.py)
 - [`test_project_indexes.py`](test_project_indexes.py)
 - [`test_run_tests.py`](test_run_tests.py)
+- [`test_runner_main_clean.py`](test_runner_main_clean.py)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

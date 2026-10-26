@@ -32,17 +32,18 @@ IMAGE_GLOBS=["*.[pP][nN][gG]","*.[jJ][pP][gG]","*.[jJ][pP][eE][gG]",
  "*.[bB][mM][pP]","*.[pP][sS][dD]","*.[aA][sS][eE][pP][rR][iI][tT][eE]"]
 NO_KEYS=("OPENAI_API_KEY","ANTHROPIC_API_KEY")
 
-def execute(argv,cwd=ROOT,*,input=None,timeout=600,check=True):
+def execute(argv,cwd=None,*,input=None,timeout=600,check=True):
     clean=os.environ.copy()
     for key in NO_KEYS:clean.pop(key,None)
-    proc=subprocess.run([str(x) for x in argv],cwd=str(cwd),input=input,
+    proc=subprocess.run([str(x) for x in argv],cwd=str(cwd or ROOT),input=input,
         capture_output=True,text=True,encoding="utf-8",errors="replace",
         env=clean,timeout=timeout,shell=False)
     if check and proc.returncode:
-        raise RuntimeError("command failed: "+str(argv[0])+" ("+str(proc.returncode)+")")
+        raise RuntimeError("command failed: "+" ".join(str(x) for x in argv[:3])+" ("+str(proc.returncode)+"): "
+                           +(proc.stderr or "").strip()[-300:])
     return proc
 
-def git(*args,cwd=ROOT):
+def git(*args,cwd=None):
     return execute(["git",*args],cwd).stdout.strip()
 
 def stamp():
@@ -51,7 +52,8 @@ def stamp():
 def read_json(path,default):
     return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else default
 
-def records(root=ROOT):
+def records(root=None):
+    root=root or ROOT
     out={}
     for p in (root/".agents/tasks").glob("TASK-*.md"):
         text=p.read_text(encoding="utf-8")
@@ -76,23 +78,55 @@ def amend_status(tid,state,*,reason="",branch=None):
         raw += "\n## Runner evidence\n- "+reason[:400].replace("\n"," ")+"\n"
     p.write_text(raw,encoding="utf-8",newline="\n")
 
+MAIN_GENERATED={".agents/project/TASKS.md",".agents/project/ACTIVE.md",".agents/graphics/QUEUE.md",
+    ".agents/monitoring/summary.json",".agents/monitoring/summary.md",
+    ".agents/monitoring/goal_summary.json",".agents/monitoring/goal_summary.md","tools/tests/INDEX.md"}
+
 def index_main():
     execute([sys.executable,"tools/agent_workflow.py","--write"])
     execute([sys.executable,"tools/generate_project_indexes.py","--write"])
     execute([sys.executable,"tools/agent_costs.py","report"])
     execute([sys.executable,"tools/goal_costs.py","--write"])
+    execute([sys.executable,"tools/run_tests.py","--write-index"])
+
+def regenerated(path):
+    """Outputs index_main() rebuilds from the tree; safe for the runner to commit on main."""
+    return path in MAIN_GENERATED or path=="FILES.md" or path.endswith("/FILES.md")
+
+def dirty_paths(cwd=None):
+    # Parse raw porcelain: git() strips, which would eat the first entry's status column.
+    out=execute(["git","status","--porcelain=v1","-z","--untracked-files=all","--no-renames"],cwd).stdout
+    return sorted({entry[3:] for entry in out.split("\0") if len(entry)>3})
 
 def main_commit(subject,agent,tid,extra=None):
+    """Regenerate every generated file and commit it with the task records, leaving main clean."""
     index_main()
-    paths=[".agents/tasks",".agents/project/TASKS.md",".agents/project/ACTIVE.md",
-           ".agents/monitoring/summary.json",".agents/monitoring/summary.md",
-           ".agents/monitoring/goal_summary.json",".agents/monitoring/goal_summary.md"]
-    if extra:paths+=extra
-    git("add","-A","--",*paths)
-    changed=git("diff","--cached","--name-only")
+    allowed=[".agents/tasks/",*(extra or [])]
+    changed=dirty_paths()
+    stray=[p for p in changed if not (regenerated(p) or any(p==a or p.startswith(a) for a in allowed))]
+    if stray:
+        raise RuntimeError("Main has non-generated changes; refusing to commit: "+", ".join(stray[:10]))
     if changed:
+        git("add","-A","--",*changed)
         git("commit","-m",subject,"-m","Task-ID: "+tid+"\nAgent: "+agent+"\nCost-USD: unknown")
         git("push","origin","main")
+    if dirty_paths():
+        raise RuntimeError("Main still dirty after "+subject)
+
+def settle_main(tid,agent):
+    """Leave main clean: commit regenerated-only drift, otherwise report what blocks it."""
+    if git("branch","--show-current")!="main":
+        return "Runner finished off main; check the checkout"
+    changed=dirty_paths()
+    if not changed:
+        return None
+    if all(regenerated(p) for p in changed):
+        try:
+            main_commit("chore: regenerate indexes after "+tid,agent,tid)
+            return None
+        except RuntimeError as exc:
+            return str(exc)
+    return "Main left dirty with non-generated changes: "+", ".join(changed[:10])
 
 @contextmanager
 def exclusive(label):
@@ -186,7 +220,29 @@ def record_supervised(path,tid,agent,merge_sha):
     path.write_text(json.dumps(config,indent=2)+"\n",encoding="utf-8",newline="\n")
     return config
 
+def task_agent(tid):
+    agent=records().get(tid,{}).get("agent")
+    return agent if agent in ("claude","codex") else None
+
 def run(tid, supervised=False):
+    """Run one task; on every exit (success, failure, revert) main must end clean."""
+    finished=False
+    try:
+        _run(tid,supervised)
+        finished=True
+    finally:
+        agent=task_agent(tid)
+        problem=settle_main(tid,agent) if agent else (
+            "Main left dirty: "+", ".join(dirty_paths()[:10]) if dirty_paths() else None)
+        if problem:
+            info=read_json(LOCAL/"runner-state.json",{})
+            details=(str(info.get("details",""))+" | " if not finished and info.get("task")==tid else "")+problem
+            checkpoint(tid,agent or "unknown","blocked_dirty_main",details[:400])
+            print("agent runner: "+problem,file=sys.stderr)
+            if finished:
+                raise RuntimeError(problem)
+
+def _run(tid, supervised=False):
     config=read_json(CONFIG,{})
     if supervised:
         if not sys.stdin.isatty():
@@ -200,8 +256,14 @@ def run(tid, supervised=False):
         execution_gate(config)
     if os.name!="nt":
         raise RuntimeError("Run coding agents only on the owner's Windows host")
-    if git("branch","--show-current")!="main" or git("status","--porcelain"):
+    if git("branch","--show-current")!="main":
         raise RuntimeError("Start from a clean main branch")
+    if dirty_paths():
+        # Heal regenerated-only drift (e.g. an index missed by an older runner) before claiming.
+        agent=task_agent(tid)
+        problem=settle_main(tid,agent) if agent else "unknown task agent"
+        if problem:
+            raise RuntimeError("Start from a clean main branch: "+problem)
     with exclusive("task-claim"):
         git("pull","--ff-only","origin","main")
         all_tasks=records()
@@ -271,10 +333,14 @@ def run(tid, supervised=False):
     except Exception as exc:
         # Fail closed; do not delete any evidence or guess that a merge succeeded.
         checkpoint(tid,agent,"blocked_pending_review",str(exc)[:200])
-        if git("branch","--show-current")=="main" and not git("status","--porcelain"):
-            with exclusive("main-merge"):
-                amend_status(tid,"blocked",reason="Runner failed; inspect local runner-state.json")
-                main_commit("chore: block failed "+tid,agent,tid)
+        if git("branch","--show-current")=="main":
+            try:
+                with exclusive("main-merge"):
+                    amend_status(tid,"blocked",reason="Runner failed: "+str(exc)[:300])
+                    main_commit("chore: block failed "+tid,agent,tid)
+            except Exception as record_exc:
+                # Keep the original failure; run() reports any leftover dirt on main.
+                print("agent runner: could not record block: "+str(record_exc),file=sys.stderr)
         raise
     finally:
         # Preserve worktree on failure for human debugging; remove only successful

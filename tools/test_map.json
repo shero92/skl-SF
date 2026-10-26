@@ -45,6 +45,13 @@
       "paths": ["tools/tests/test_parallel_safety.py", "tools/agent_runner.py", "tools/runner_safety.py", "tools/agent_workflow.py", "tools/goal_costs.py", "tools/goal_qa.py", "tools/run_local_agent.ps1", ".agents/planner/config.json"]
     },
     {
+      "id": "runner_main_clean",
+      "kind": "python",
+      "covers": "Runner leaves main clean: regenerated files committed after merge, stray changes blocked, scheduled worker log.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_runner_main_clean.py"],
+      "paths": ["tools/tests/test_runner_main_clean.py", "tools/agent_runner.py", "tools/run_local_agent.ps1"]
+    },
+    {
       "id": "project_indexes",
       "kind": "python",
       "covers": "Deterministic FILES.md inventory generation.",

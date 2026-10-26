@@ -3,9 +3,18 @@ param(
 )
 $ErrorActionPreference = "Stop"
 $repo = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+# Scheduled runs only report LastTaskResult; keep the runner's own stdout/stderr here.
+$log = Join-Path $repo ".agents\monitoring\.local\runner-$Agent.log"
+New-Item -ItemType Directory -Force (Split-Path $log) | Out-Null
+if ((Test-Path $log) -and (Get-Item $log).Length -gt 1MB) { Move-Item $log "$log.1" -Force }
 Push-Location $repo
 try {
-  & py -3 (Join-Path $repo "tools\agent_runner.py") --run-next $Agent
-  if ($LASTEXITCODE -ne 0) { throw "Local agent runner failed ($LASTEXITCODE); review task evidence and locks." }
+  Add-Content -Path $log -Encoding utf8 -Value "=== $(Get-Date -Format o) run-next $Agent ==="
+  $env:PYTHONIOENCODING = "utf-8"
+  # cmd redirection keeps native stderr out of PowerShell error records.
+  & cmd /c "py -3 `"$(Join-Path $repo 'tools\agent_runner.py')`" --run-next $Agent >> `"$log`" 2>&1"
+  $code = $LASTEXITCODE
+  Add-Content -Path $log -Encoding utf8 -Value "=== exit $code ==="
+  if ($code -ne 0) { throw "Local agent runner failed ($code); see $log" }
 }
 finally { Pop-Location }
