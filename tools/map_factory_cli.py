@@ -9,6 +9,7 @@ Each revision is based on the verified latest version, not a stale screenshot.
 from __future__ import annotations
 from map_factory_layers import create_layer_stack, validate_layer_stack
 from map_factory_orientation import resolve_orientation
+from map_factory_placement import validate_grid_placements
 import argparse
 from copy import deepcopy
 from datetime import datetime, timezone
@@ -369,6 +370,7 @@ def validate_room(data, catalog, expect_map_id=None):
                 raise ValueError(f"Invalid shadow: {ident}")
             if "collision" in item and not isinstance(item["collision"],dict):
                 raise ValueError(f"Invalid collision: {ident}")
+    validate_grid_placements(data, catalog)
     for item in data.get("effects", []):
         if not isinstance(item, dict) or not all(k in item for k in ("instance_id", "x", "y", "kind")):
             raise ValueError("Invalid map lighting effect")
@@ -428,6 +430,9 @@ def build_block_manifest(snapshot, catalog):
                 "anchor": resolved.get("origin", [0, 0]),
                 "layer": layer,
                 "position": [part["x"], part["y"]],
+                **({"grid_placement": part["grid_placement"],
+                    "placement_contract": record["placement_contract"]}
+                   if "grid_placement" in part else {}),
                 "scale": part.get("scale", 1.0),
                 "rotation_degrees": part.get("rotation_degrees", 0),
                 **({"orientation":orientation} if orientation else {}),
