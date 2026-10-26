@@ -13,6 +13,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_agent_costs.py`](test_agent_costs.py)
 - [`test_agent_workflow.py`](test_agent_workflow.py)
 - [`test_art_delivery.py`](test_art_delivery.py)
+- [`test_goal_pulse_continuous.py`](test_goal_pulse_continuous.py)
 - [`test_goal_task_factory.py`](test_goal_task_factory.py)
 - [`test_lf_writers.py`](test_lf_writers.py)
 - [`test_local_planner.py`](test_local_planner.py)
