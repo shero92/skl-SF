@@ -12,6 +12,7 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 | `agent_workflow` | python | Task/art tracking records, generated dashboards, code/graphics boundary and deduplication. | `python -m unittest discover -s tools/tests -p test_agent_workflow.py` |
 | `art_delivery` | python | Alpha-capable PNG headers without image decoding and QA signoff guard. | `python -m unittest discover -s tools/tests -p test_art_delivery.py` |
 | `goal_task_factory` | python | Goal planner evidence, deduplication, manual requests, agent routing and claim safeguards. | `python -m unittest discover -s tools/tests -p test_goal_task_factory.py` |
+| `candidate_room` | python | Review-only Hero Room candidates: cell to pixel placement from delivery anchors, regions and reference comparison sheet. | `python -m unittest discover -s tools/tests -p test_candidate_room.py` |
 | `blender_factory` | python | Blender part factory: spec validation, technical PNG QA, calibrated 64 px tile and real facings (Blender tests skip where Blender is absent). | `python -m unittest discover -s tools/tests -p test_blender_factory.py` |
 | `goal_pulse_continuous` | python | Pulse without a daily cap, reserved plan task IDs, in-flight steps and dependency promotion to todo. | `python -m unittest discover -s tools/tests -p test_goal_pulse_continuous.py` |
 | `local_planner` | python | Local-only planning proposals and setup defaults. | `python -m unittest discover -s tools/tests -p test_local_planner.py` |
@@ -42,6 +43,7 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 - `agent_workflow`: `tools/tests/test_agent_workflow.py`, `tools/agent_workflow.py`, `.agents/tasks/**`, `.agents/graphics/**`, `.agents/workflows/**`, `.agents/project/**`, `map_factory/metadata/asset_index.json`
 - `art_delivery`: `tools/tests/test_art_delivery.py`, `tools/art_delivery.py`, `tools/art_requests.py`, `.agents/graphics/deliveries/**`
 - `goal_task_factory`: `tools/tests/test_goal_task_factory.py`, `tools/goal_task_factory.py`, `.agents/planner/**`, `.agents/tasks/**`, `.claude/skills/goal-task-factory/**`, `.agents/skills/goal-task-factory/**`
+- `candidate_room`: `tools/tests/test_candidate_room.py`, `tools/candidate_room.py`, `tools/capture_candidate_room.gd`, `map_factory/candidates/**`
 - `blender_factory`: `tools/tests/test_blender_factory.py`, `tools/blender_factory.py`, `tools/art_qa.py`, `tools/blender/**`
 - `goal_pulse_continuous`: `tools/tests/test_goal_pulse_continuous.py`, `tools/goal_task_factory.py`, `.agents/planner/config.json`, `.agents/planner/goals.json`
 - `local_planner`: `tools/tests/test_local_planner.py`, `tools/local_planner.py`, `tools/goal_task_factory.py`, `tools/run_local_planner.ps1`, `tools/setup_local_planner.ps1`, `.agents/planner/**`

@@ -14,6 +14,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`REQ-17ad643baa22.json`](REQ-17ad643baa22.json)
 - [`REQ-1a8c02ac60e2.json`](REQ-1a8c02ac60e2.json)
 - [`REQ-7175675bbea0.json`](REQ-7175675bbea0.json)
+- [`REQ-77d767bdc508.json`](REQ-77d767bdc508.json)
 - [`REQ-a9695420d495.json`](REQ-a9695420d495.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

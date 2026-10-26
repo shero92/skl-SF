@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`candidates/`](candidates/FILES.md)
 - [`map_factory_renders/`](map_factory_renders/FILES.md)
 
 ## Files

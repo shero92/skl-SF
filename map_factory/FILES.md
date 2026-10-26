@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`candidates/`](candidates/FILES.md)
 - [`incoming/`](incoming/FILES.md)
 - [`intake/`](intake/FILES.md)
 - [`maps/`](maps/FILES.md)

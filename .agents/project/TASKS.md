@@ -45,3 +45,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0036](../tasks/TASK-0036_reconcile_hero_room_recovery_baseline.md) | review | codex | none | none |
 | [TASK-0039](../tasks/TASK-0039_preserve_immutable_resolved_map_metadata.md) | blocked | unassigned | TASK-0036 | none |
 | [TASK-0046](../tasks/TASK-0046_blender_part_factory_foundation.md) | review | claude | none | none |
+| [TASK-0047](../tasks/TASK-0047_hero_room_blender_candidate.md) | review | claude | TASK-0046 | none |
