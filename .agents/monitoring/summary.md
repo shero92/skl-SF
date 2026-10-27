@@ -28,5 +28,6 @@
 | TASK-0053 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 | TASK-0054 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 | TASK-0055 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
+| TASK-0056 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 
 Missing costs are unknown, not zero. Estimates are not subscription invoices.
