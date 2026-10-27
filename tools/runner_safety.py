@@ -124,6 +124,10 @@ def verify_claim(task, tasks):
             raise ValueError("Touch conflict with active "+other["id"])
     return selected
 
+# Exact suite ids registered in tools/test_map.json; literal names only, never patterns or commands.
+TRUSTED_ROUTER_SUITES = frozenset({"map_layers", "map_factory", "map_registry_validate",
+                                   "godot_map_smoke", "art_delivery"})
+
 def safe_test(argv):
     """Prevent task-controlled shell injection and arbitrary test commands."""
     if not isinstance(argv, list) or len(argv)<3:
@@ -137,7 +141,7 @@ def safe_test(argv):
     if argv[i:i+1] == ["tools/run_tests.py"]:
         rest = argv[i+1:]
         if rest and len(rest) % 2 == 0 and all(
-                rest[n] == "--only" and rest[n+1] in {"map_layers", "map_factory", "map_registry_validate", "godot_map_smoke"}
+                rest[n] == "--only" and rest[n+1] in TRUSTED_ROUTER_SUITES
                 for n in range(0, len(rest), 2)):
             return argv
         raise ValueError("Only allowlisted router tests permitted")

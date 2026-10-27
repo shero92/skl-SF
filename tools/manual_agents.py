@@ -29,6 +29,8 @@ from task_evidence import check_task
 class CoordinatorError(RuntimeError):pass
 class Busy(CoordinatorError):pass
 
+MIN_START_SECONDS=300
+
 
 def git(root,*args):
     return subprocess.run(["git",*args],cwd=root,check=True,capture_output=True,text=True).stdout.strip()
@@ -361,8 +363,10 @@ def run_batch(root,agents,max_tasks=10,max_minutes=150,include_art=False,*,execu
     deadline=clock()+max_minutes*60
     config=ar.read_json(ar.CONFIG,{})
     ar.execution_gate(config)
-    per_task=int(config.get("execution_timeout_seconds",1800))
-    attempted=set();results=[];running={};pulsed=False
+    # A task may start with less than its full timeout left: the global deadline budget still
+    # bounds it. Only refuse starts in the final minutes so short sessions are not silently idle.
+    per_task=min(int(config.get("execution_timeout_seconds",1800)),MIN_START_SECONDS)
+    attempted=set();results=[];running={};pulsed=False;stop_reason=None
     cancelled=threading.Event()
     executor=executor or (lambda task,limit:execute_task(task,limit,cancelled))
     with ar.execution_budget(deadline,repair_attempts=0,cancel_event=cancelled):
@@ -372,20 +376,27 @@ def run_batch(root,agents,max_tasks=10,max_minutes=150,include_art=False,*,execu
             if clock()>=deadline:
                 cancelled.set()
                 ar.cancel_budget(cancelled)
+                stop_reason=stop_reason or "deadline"
                 break
+            short=False
             with ar.coordination_lock():
                 tasks=records(root)
                 available=choose(tasks,agents,{t["id"] for t in running.values()},attempted,root,include_art,ar.cooling_until)
                 for task in available:
                     if len(attempted)>=max_tasks:break
-                    if deadline-clock()<per_task:break
+                    if deadline-clock()<per_task:short=True;break
                     attempted.add(task["id"])
                     running[pool.submit(executor,task,deadline)]=task
             if not running:
-                if not pulsed and len(attempted)<max_tasks and deadline-clock()>=per_task:
+                if len(attempted)>=max_tasks:stop_reason="task_limit"
+                elif short:stop_reason="insufficient_time"
+                # The queue pulse only plans tasks; it is bounded by the global deadline, not the task timeout.
+                elif not pulsed and clock()<deadline:
                     pulsed=True
                     with ar.execution_budget(deadline,repair_attempts=0,cancel_event=cancelled):
                         if ar.refresh_queue(agents[0]):continue
+                    stop_reason="no_ready_tasks"
+                else:stop_reason="no_ready_tasks"
                 break
             done,_=wait(running,timeout=min(0.25,max(0,deadline-clock())),return_when=FIRST_COMPLETED)
             for future in done:
@@ -412,7 +423,9 @@ def run_batch(root,agents,max_tasks=10,max_minutes=150,include_art=False,*,execu
             except Exception as exc:phase="interrupted";state={"details":str(exc)[:300]}
             results.append({"task":task["id"],"agent":task["agent"],"phase":phase,"canonical_status":records(root).get(task["id"],{}).get("status"),"details":state.get("details","")})
     return {"attempted":len(attempted),"prerequisite_blocks":prerequisite_blocks,"results":results,"remaining":queue_snapshot(root,agents,include_art),
-            "limit_reached":len(attempted)>=max_tasks,"deadline_reached":clock()>=deadline}
+            "limit_reached":len(attempted)>=max_tasks,"deadline_reached":clock()>=deadline,
+            "stop_reason":stop_reason or ("deadline" if clock()>=deadline else "no_ready_tasks"),
+            "quota_released":sum(r["phase"]=="released_quota" for r in results)}
 
 
 def preflight(root,agents):
