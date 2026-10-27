@@ -5,6 +5,7 @@
     py -3 tools/blender_factory.py render <spec> --out DIR  # raw Blender render (masters, shadows, metadata)
     py -3 tools/blender_factory.py deliver ART-0004         # render tools/blender/specs/ART-0004.json into
                                                             # .agents/graphics/deliveries/ART-0004/ + manifest
+    py -3 tools/blender_factory.py stage <spec> --out DIR   # same outputs for candidate-only pieces (no ART id)
 
 deliver writes native-scale PNGs at exactly the request's output_paths, 4x masters and separate shadows,
 technical QA (tools/art_qa.py) and a manifest with measured SHA-256. It never changes the ART/TASK status,
@@ -124,16 +125,26 @@ def blender_version(exe: str) -> str:
 
 
 def deliver(art_id: str, blender: str | None = None, agent: str = "claude") -> dict:
-    import art_qa
     spec_path = SPECS / (art_id + ".json")
     spec = load_spec(spec_path)
     expected = request_outputs(art_id)
     wanted = [f".agents/graphics/deliveries/{art_id}/{o['name']}.png" for o in spec["outputs"]]
     if sorted(wanted) != sorted(expected):
         raise ValueError(f"{art_id}: spec outputs {wanted} differ from request output_paths {expected}")
-    target = DELIVERIES / art_id
+    return produce(spec_path, spec, DELIVERIES / art_id, art_id, blender, agent)
+
+
+def stage(spec_path: Path, out_dir: Path, blender: str | None = None, agent: str = "claude") -> dict:
+    """Render a candidate-only spec (pieces built for one map candidate, no ART request) into out_dir."""
+    spec = load_spec(spec_path)
+    return produce(spec_path, spec, out_dir, spec.get("candidate", spec_path.stem), blender, agent)
+
+
+def produce(spec_path: Path, spec: dict, target: Path, request_id: str, blender: str | None, agent: str) -> dict:
+    """Render, downscale to native, keep masters and shadows, run QA and write manifest.json into target."""
+    import art_qa
     target.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix="blender-" + art_id + "-") as tmp:
+    with tempfile.TemporaryDirectory(prefix="blender-" + request_id + "-") as tmp:
         metas = render(spec_path, Path(tmp), blender)
         files, extra = [], []
         for meta in metas:
@@ -156,10 +167,10 @@ def deliver(art_id: str, blender: str | None = None, agent: str = "claude") -> d
     exe = blender_executable(blender) or "unknown"
     warnings, accepted = split_expected(qa, spec)
     manifest = {
-        "request_id": art_id, "task_id": spec.get("task"), "status": "rendered_unreviewed",
+        "request_id": request_id, "task_id": spec.get("task"), "status": "rendered_unreviewed",
         "files": files, "extra_files": extra, "qa": {"problems": qa["problems"], "warnings": warnings,
                                                      "expected_warnings": accepted, "pairs": qa["pairs"]},
-        "provenance": {"tool": "blender", "blender": blender_version(exe), "spec": spec_path.relative_to(ROOT).as_posix(),
+        "provenance": {"tool": "blender", "blender": blender_version(exe), "spec": spec_path.resolve().relative_to(ROOT).as_posix(),
                        "toolkit_commit": git_head(), "producing_agent": agent, "ai_image_generation": False},
         "reference": {"path": REFERENCE.relative_to(ROOT).as_posix(),
                       "sha256": sha256(REFERENCE) if REFERENCE.is_file() else None, "owner_confirmed": False},
@@ -197,6 +208,10 @@ def main(argv=None) -> int:
     d = sub.add_parser("deliver")
     d.add_argument("art_id")
     d.add_argument("--agent", choices=("claude", "codex"), default="claude")
+    st = sub.add_parser("stage")
+    st.add_argument("spec", type=Path)
+    st.add_argument("--out", type=Path, required=True)
+    st.add_argument("--agent", choices=("claude", "codex"), default="claude")
     for p in sub.choices.values():
         p.add_argument("--blender")
     args = parser.parse_args(argv)
@@ -208,7 +223,10 @@ def main(argv=None) -> int:
         if args.cmd == "render":
             print(json.dumps(render(args.spec, args.out, args.blender), indent=2))
             return 0
-        manifest = deliver(args.art_id, args.blender, args.agent)
+        if args.cmd == "stage":
+            manifest = stage(args.spec, args.out.resolve(), args.blender, args.agent)
+        else:
+            manifest = deliver(args.art_id, args.blender, args.agent)
         print(json.dumps({k: manifest[k] for k in ("request_id", "status")} | {"files": len(manifest["files"]),
               "problems": manifest["qa"]["problems"], "warnings": manifest["qa"]["warnings"]}, indent=2))
         return 1 if manifest["qa"]["problems"] else 0

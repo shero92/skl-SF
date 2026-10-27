@@ -40,7 +40,7 @@ def godot_executable(override: str | None = None) -> str | None:
 
 
 def resolve(layout_path: Path, root: Path = ROOT) -> dict:
-    """Expand grid cells into exact pixel placements using each delivery manifest's measured anchors."""
+    """Expand grid cells into exact pixel placements using each delivery (or staged render) manifest's anchors."""
     layout = json.loads(Path(layout_path).read_text(encoding="utf-8"))
     base = layout["base"]
     rel = f"map_factory/maps/{base['map_id']}/versions/v{int(base['version']):04d}.json"
@@ -50,9 +50,11 @@ def resolve(layout_path: Path, root: Path = ROOT) -> dict:
     manifests: dict[str, dict] = {}
     placements = []
     for piece in layout["pieces"]:
-        art = piece["art"]
+        # "art": an ART delivery; "source": a staged candidate-only render folder (blender_factory stage).
+        art = piece.get("art") or piece["source"]
         if art not in manifests:
-            manifests[art] = json.loads((root / ".agents/graphics/deliveries" / art / "manifest.json").read_text(encoding="utf-8"))
+            folder = root / ".agents/graphics/deliveries" / art if "art" in piece else root / art
+            manifests[art] = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
         item = next((f for f in manifests[art]["files"] if Path(f["path"]).stem == piece["file"]), None)
         if item is None:
             raise ValueError(f"{art} delivers no {piece['file']}")

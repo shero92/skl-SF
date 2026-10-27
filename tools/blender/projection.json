@@ -3,6 +3,7 @@
   "supersample": 4,
   "camera_elevation_deg": 45,
   "sun": {"azimuth_deg": 135, "elevation_deg": 50, "strength": 2.8, "angle_deg": 3.0, "color": [1.0, 0.9, 0.74]},
+  "fill": {"azimuth_deg": -45, "elevation_deg": 30, "strength": 1.1, "angle_deg": 20.0, "color": [1.0, 0.82, 0.6]},
   "world": {"color": [0.55, 0.6, 0.72], "strength": 0.22},
   "engine": "CYCLES",
   "device": "GPU",
