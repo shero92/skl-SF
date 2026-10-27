@@ -1,6 +1,6 @@
 ---
 id: TASK-0040
-status: review
+status: done
 owner: claude
 branch: work/task-0040-48a1ae7a
 agent: claude
@@ -26,9 +26,9 @@ art_request: none
 **Problem:** Owner-approved recovery audit: Complete depth sorting mounts and owner-linked shadows
 
 ## Acceptance
-- [ ] Image-free runtime tests prove host move/remove, mounted offsets, independent owner shadows and front/back occlusion; no production fallback artwork
-- [ ] Test: py -3 tools/run_tests.py --only map_layers --only godot_map_smoke
-- [ ] PR and observed test evidence.
+- [x] Image-free runtime tests prove host move/remove, mounted offsets, independent owner shadows and front/back occlusion; no production fallback artwork
+- [x] Test: py -3 tools/run_tests.py --only map_layers --only godot_map_smoke
+- [x] PR and observed test evidence.
 
 ## Agent prompt
 Outcome: Image-free runtime tests prove host move/remove, mounted offsets, independent owner shadows and front/back occlusion; no production fallback artwork. Evidence: Owner-approved recovery audit: Complete depth sorting mounts and owner-linked shadows. Target: map_factory/scripts/room_factory.gd (line unspecified). Verify with: py -3 tools/run_tests.py --only map_layers --only godot_map_smoke. Read AGENTS.md and this task, then only the target file. Verify the issue and location before changing code. Work only within Map Factory. Never generate artwork. Stop when evidence is missing. Commit the task, token receipt and summary on a PR branch, never main.
@@ -38,9 +38,9 @@ Outcome: Image-free runtime tests prove host move/remove, mounted offsets, indep
 - Read only targeted files, then expand if necessary.
 
 ## Evidence / handoff
-- Changed files: none.
-- Tests: not run.
-- PR: none.
+- Changed files: map_factory/scripts/room_factory.gd, tools/map_factory_godot_smoke.gd, tools/tests/test_map_layers.py (+ receipt).
+- Tests: reviewed by claude 2026-10-27 on PR head e7d7c6e: run_tests --changed 5/5, --all 30/30, Godot smoke printed "Depth/mount runtime passed"; CI 7/7 green.
+- PR: https://github.com/shero92/skl-SF/pull/50 (merged ddbab1f after owner-requested review)
 - Next: claim task after checking blockers.
 
 ## Runner evidence

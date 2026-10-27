@@ -4,6 +4,7 @@
 
 | Task | Agents | Known USD | Missing costs | Input tokens | Cached input | Output tokens | Reasoning | Missing tokens | Receipts |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| TASK-0040 | claude | 0.818635 | 0 | 594136 | 544236 | 15537 | 0 | 0 | 1 |
 | TASK-0008 | claude | 0.397005 | 0 | 226871 | 201264 | 7600 | 0 | 0 | 1 |
 | TASK-0034 | claude | 0.319695 | 0 | 264280 | 242095 | 4695 | 0 | 0 | 1 |
 | TASK-0035 | claude | 0.171417 | 0 | 100605 | 89705 | 3317 | 0 | 0 | 1 |

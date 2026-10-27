@@ -6,6 +6,20 @@
       "agents": [
         "claude"
       ],
+      "cached_input_tokens": 544236,
+      "input_tokens": 594136,
+      "known_usd": 0.818635,
+      "output_tokens": 15537,
+      "reasoning_output_tokens": 0,
+      "receipts": 1,
+      "task_id": "TASK-0040",
+      "unknown_costs": 0,
+      "unknown_token_receipts": 0
+    },
+    {
+      "agents": [
+        "claude"
+      ],
       "cached_input_tokens": 201264,
       "input_tokens": 226871,
       "known_usd": 0.397005,
@@ -297,5 +311,5 @@
       "unknown_token_receipts": 1
     }
   ],
-  "total_known_usd": 0.888117
+  "total_known_usd": 1.706752
 }
