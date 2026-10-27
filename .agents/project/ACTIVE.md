@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| — | none | — | — | — | — |
+| claude | TASK-0040 | map_factory/scripts/room_factory.gd, map_factory/scripts/shadow_factory.gd, tools/map_factory_layers.py, tools/map_factory_godot_smoke.gd, tools/tests/test_map_layers.py | 2026-10-27T12:23:49.819851+00:00 | in_progress | unknown |

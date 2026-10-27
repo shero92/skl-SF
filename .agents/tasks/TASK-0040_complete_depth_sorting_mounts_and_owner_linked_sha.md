@@ -1,13 +1,13 @@
 ---
 id: TASK-0040
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0040-48a1ae7a
 agent: claude
 touches: map_factory/scripts/room_factory.gd,map_factory/scripts/shadow_factory.gd,tools/map_factory_layers.py,tools/map_factory_godot_smoke.gd,tools/tests/test_map_layers.py
 test: py -3 tools/run_tests.py --only map_layers --only godot_map_smoke
 done_when: Image-free runtime tests prove host move/remove, mounted offsets, independent owner shadows and front/back occlusion; no production fallback artwork
-started_at: unknown
+started_at: 2026-10-27T12:23:49.819851+00:00
 cost_usd: unknown
 depends_on: TASK-0033,TASK-0038
 issue: none
@@ -48,3 +48,6 @@ Outcome: Image-free runtime tests prove host move/remove, mounted offsets, indep
 
 ## Runner evidence
 - Released to todo: codex CLI usage limit, no code merged ({"type":"error","message":"You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/settings/usage to purchase more credits or try again at 4:01 PM."}).
+
+## Runner evidence
+- Claimed by local runner at 2026-10-27T12:23:49.810313+00:00
