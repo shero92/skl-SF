@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0026
 dedupe_key: hero_room_study_blue_rug
 existing_asset_ids: P005,P006
-output_paths: .agents/graphics/deliveries/ART-0015/hero_study_blue_rug.png
+output_paths: .agents/graphics/deliveries/ART-0015/hero_study_blue_rug.png,.agents/graphics/deliveries/ART-0015/hero_bedroom_blue_rug.png
 issue: 20
 ---
 # Second blue rug for the study zone
@@ -37,6 +37,7 @@ issue: 20
 
 ## Exact specialist outputs
 - .agents/graphics/deliveries/ART-0015/hero_study_blue_rug.png
+- .agents/graphics/deliveries/ART-0015/hero_bedroom_blue_rug.png
 - Manifest: .agents/graphics/deliveries/ART-0015/manifest.json with request_id, each actual path and measured SHA-256, pixel_size, origin, facing/frame order, collision footprint, shadow/mount metadata and owner_delivery provenance.
 - Production catalog IDs are allocated only when reviewed delivered files are integrated; do not invent registered IDs in this request.
 
@@ -60,3 +61,7 @@ issue: 20
 - SHA256: 42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7.
 - Identity/provenance: map_factory/references/hero_room_01_original.reference.json; prior 1536x1024 goal image is preserved historical material.
 - Source identity gate is resolved by owner-provided bytes. Native output measurements, reuse review and artistic approval remain separate requirements; this amendment does not change production/review status.
+
+## Calibrated measurements (TASK-0038, 2026-10-27)
+- Source: docs/HERO_ROOM_CALIBRATION.md (reference SHA-256 verified; native = source px x 0.971; ground depth per D1).
+- Needed: study rug source 995,450-1315,580 (320x130) -> native 311x160 (D1-a 311x126); bedroom rug source 215,365-528,548 (313x183) -> native 304x225 (D1-a 304x178). P005 is portrait (w ratio 0.54). Output hero_bedroom_blue_rug.png added.

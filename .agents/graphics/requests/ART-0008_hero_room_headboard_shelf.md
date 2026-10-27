@@ -63,3 +63,7 @@ issue: 20
 - SHA256: 42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7.
 - Identity/provenance: map_factory/references/hero_room_01_original.reference.json; prior 1536x1024 goal image is preserved historical material.
 - Source identity gate is resolved by owner-provided bytes. Native output measurements, reuse review and artistic approval remain separate requirements; this amendment does not change production/review status.
+
+## Calibrated measurements (TASK-0038, 2026-10-27)
+- Source: docs/HERO_ROOM_CALIBRATION.md (reference SHA-256 verified; native = source px x 0.971; ground depth per D1).
+- Needed: low headboard shelf with books/coral, source 310,245-485,300 (175x55) -> native 170x53, rendered contact (427,249); P014 is a tall free-standing case (height ratio 3.17).
