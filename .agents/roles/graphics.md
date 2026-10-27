@@ -1,10 +1,7 @@
-# Graphics specialist — separate production role
+# Graphics producer â€” Codex / Claude Code / specialist
 
-The graphics producer role may be filled by Codex, Claude Code (owner decision 2026-10-26, environment art only) or an external specialist. It does not own gameplay/map logic, and the producing session never reviews its own work.
+Both coding agents may claim the graphics role for an assigned environment TASK + ART request. Owner authorization dated 2026-10-28 permits local Blender build/render/regeneration and saving editable sources and generated assets to `H:\shining force\pixel-art` in task/request/revision subfolders.
 
-1. Read the **single assigned** `.agents/graphics/requests/ART-*.md` file, the referenced source image, and the relevant art-direction policy. Do not preload all assets.
-2. Before rendering, check `map_factory/metadata/asset_index.json`, the existing target PNG and `.agents/graphics/QUEUE.md` to avoid duplicates and regressions.
-3. Refuse to invent unavailable reference details: a `blocked_reference` request must wait for the authentic source asset to be committed; with an unconfirmed SHA-256 the delivery stays unapproved.
-4. Produce independently editable high-quality RGBA PNGs in the request-specific delivery folder; no baked-in adjacent props, labels, cropping artifacts or fake upscales. Respect dimensions/facing/anchors.
-5. Create a delivery `manifest.json` listing each expected output and its SHA-256. Update the art request checklist/status to delivered; never overwrite `map_factory/parts` directly.
-6. A separate reviewer validates screenshot-scale quality, all directions and metadata. Only coding/integration work may import approved art, preserving stable asset IDs and map version history.
+Follow `.agents/workflows/GRAPHICS.md`: reuse registered assets first; edit reproducible scripts/specs; run Blender/Python technical QA; retain `.blend`, native/master PNGs, shadows and SHA-256 provenance. Existing repo-relative helper staging may be used with explicit links to the external canonical asset copy.
+
+Individual pieces are checked programmatically; the agent reviews only the assembled room comparison sheet. Keep new outputs delivered/unapproved, preserve accepted originals, and require owner room approval before production integration. Do not change characters/UI/gameplay or unrelated permissions. Missing local executable/launcher capability is a specific blocker, not a prohibition against either agent doing graphics.

@@ -1,37 +1,24 @@
-# Graphics production workflow — reviewed, AI-assisted environment art
+# Graphics production workflow â€” local Blender environment blocks
 
-## Separation of responsibility
-**Producers (owner decision 2026-10-26):** Codex, Claude Code or an external graphics specialist create original **environment** art for one assigned ART request with authorized image tools (e.g. Codex `image_generation`). Never characters, UI or gameplay art; never a procedural or low-detail stand-in. **Reviewer:** approves visual quality and must not be the producing session; **owner:** final approval; **coder:** imports only reviewed deliveries and tests Godot.
+## Owner authorization (2026-10-28)
+Codex and Claude Code may both perform assigned environment graphics tasks on the owner's PC. Use local scripted Blender modeling/rendering to produce reusable pixel-art blocks, tiles, furniture, foliage and separate shadows. This is an authorized producer role, not a requirement to wait for an external artist. Character, portrait, UI and gameplay work is excluded.
 
-## Before drafting an ART request (mandatory duplicate check)
-1. Check latest `map_factory/metadata/asset_index.json` for identical ID/name, native size, source, status, art variants.
-2. Check the current map placement and actual existing PNG. Don't assume `needs_cleanup` means missing.
-3. Check `../graphics/QUEUE.md` plus all active request deliverable paths. Reuse/update an existing request rather than creating duplicates.
-4. If the genuine reference image is not committed, create a `blocked_reference` specification; do not generate art from a guess. If it is committed but its SHA-256/dimensions are not yet confirmed, production may start, but the delivery cannot be reviewed or approved until the owner confirms the source.
+The authorized workspace and canonical generated asset destination is `H:\shining force\pixel-art`. Use `<TASK-ID>/<ART-ID-or-candidate>/<revision>/` with separate `source/`, `renders/` and `qa/` folders. Save editable `.blend` projects, PNG masters/native sprites, shadows and SHA-256 manifests there. Never overwrite a prior revision or another agent's files.
 
-## Art request contract
-Copy `../templates/ART_REQUEST.md` to `../graphics/requests/ART-####_short_name.md`. Include a unique stable `dedupe_key` describing the art need (used by CI to prevent duplicate requests), plus:
-- Purpose/location/layer and *why existing registered parts cannot be reused*.
-- Current reference file and hash or explicit missing reference, screenshot comparison, relevant existing asset IDs.
-- Exact independent output paths, desired facing(s), visual scale/dimensions or measurable criteria, RGBA/seams, anchors, shadow/light, collision context and no duplicate/repaint rule.
-- Acceptance checklist split into request, specialist delivery, reviewer QA and final integration.
-- Related TASK ID, owner, state and evidence links.
+## Required workflow
+1. Claim one TASK and reference its deduplicated ART request. Read only relevant text records/catalog and compare existing IDs before creating replacements. A request is not completed art.
+2. Verify the authenticated reference path/hash. Preserve the original and the nine accepted HD assets; do not infer authenticity from dimensions alone.
+3. Write/edit reproducible Blender builders/specs, run Blender locally and regenerate outputs. Python may orchestrate builds, process alpha/alignment, calculate hashes and run technical QA. Godot may assemble/capture an unapproved candidate. No AI image service or API key is required; use one only if the owner explicitly asks.
+4. Run scripted checks of every output's dimensions, alpha, clipping, palette, footprint, anchors, facing and shadow direction. Render upright facings independently from the Blender model; never mirror/rotate a bitmap to invent a perspective view. Visible required facings come first; defer unused views explicitly.
+5. Save `.blend` sources, rendered assets and `manifest.json` in the external workspace. Keep portable script/spec changes under version control. Record tool versions, exact source/spec paths, task/ART, reference hash, output hashes/dimensions/anchors/footprint/facing and actual cost or `unknown`.
+6. Existing helpers may require repo-relative `--out` or texture paths. In that case use a new request/candidate staging directory in the repo for that helper, preserve the canonical generated assets in the external workspace, and record both paths/hashes. Do not claim that permissions alone add external-path support to a helper.
+7. Build the actual room and produce a genuine Godot comparison sheet. Individual parts are checked by scripted QA; agent image viewing is limited to the assembled comparison. Numerical similarity and technical QA never count as visual approval.
+8. Set produced work to `delivered`/`review`, not `ready`/approved. Owner approval of the final assembled-room comparison remains mandatory. Integration uses a reviewed manifest, stable IDs and a new immutable map revision; never write directly over `map_factory/parts` or old maps.
 
-## State machine
-`blocked_reference` → `requested` → `in_progress` → `delivered` → `reviewed` → `integrated`; `cancelled` if unnecessary. No jumping to integrated. The art request is authoritative; `QUEUE.md` is generated from it.
+## States and handoff
+Requests follow `blocked_reference -> requested -> in_progress -> delivered -> reviewed -> integrated`, or `cancelled` with evidence. Missing reference, measurement, executable or host permission blocks only its affected task. Do not call Blender unsupported solely because the agent is Codex or Claude. Producer, independent review and owner acceptance remain distinct; no self-approval or automatic art merge.
 
-## Deliver / integrate
-- The producer stages PNGs under `../graphics/deliveries/<ART-ID>/` and writes a JSON `manifest.json` with output paths and actual SHA-256 values.
-- Once output exists, `python tools/agent_workflow.py --check` checks filenames/manifest/hashes for statuses `delivered`, `reviewed` and `integrated`.
-- Reviewer compares new images with **genuine** source at game scale, marks `reviewed` only after approval and records evidence.
-- Coding agent imports approved art with stable ID/provenance/anchors/collision/shadows, updates map revision, runs Godot preview, then marks `integrated`.
-- Completed requests are never regenerated: check request status, actual files and catalog before any new graphics task.
+A handoff names the external workspace revision, repo staging path (if any), source/spec commit, manifest and capture paths, observed QA and unresolved defects. A PR containing scripts is not proof that its PNG outputs or full-room capture were produced.
 
-## Producing with image tools (Codex / Claude Code)
-1. Claim the ART request's TASK in its own branch/worktree (`art/<ART-ID>`); never touch another agent's files.
-2. Read the ART request, the goal reference and the accepted HD style references (W021, W022, A017, A018, D019, P023-P026); record the reference SHA-256 you actually measured.
-3. Check reuse first (catalog IDs named in the request); cancel or narrow covered outputs instead of duplicating them.
-4. Generate each asset and facing as a separate original image. Upright 3/4 objects need four distinct drawn views; never rotate or mirror a bitmap to invent a facing.
-5. Use Python only for alpha cleanup, cropping, alignment and technical QA, never to paint content.
-6. Write `manifest.json`: request_id, each path, measured SHA-256, pixel_size, origin/anchor, facing or frame order, footprint/mount/shadow notes, tool and model, prompt summary, producing agent, reference SHA-256, real cost or `unknown`.
-7. Set the request to `delivered` only; keep the TASK `review`. Never write `map_factory/parts/`, never mark `reviewed`/`ready` yourself, never overwrite existing files.
+## Permission boundary
+Project settings add only the owner-named external workspace. Keep normal sandbox/approval mode, existing hooks, credentials and protected character/UI paths. Do not use `danger-full-access`, skip-permissions switches or unrestricted shell allow rules. A manually launched graphics-capable session can use its scoped tools; a launcher that explicitly removes Bash or hides assets still needs a separate reviewed implementation change. Report that distinction instead of silently changing launcher code in a rules-only task.

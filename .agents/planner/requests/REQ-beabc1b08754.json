@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Authorize local Blender environment graphics in the external pixel-art workspace",
+  "problem": "Owner explicitly requests rules and permissions only: Codex and Claude may build pixel-art environment blocks with local Blender and save assets under H:/shining force/pixel-art; conflicting instructions and blanket image denies currently block assigned graphics work.",
+  "file": "AGENTS.md",
+  "line": null,
+  "done_when": "Consistent owner-authorized environment graphics rules and scoped workspace permissions; protected character/UI scope and human approval retained; no renderer/runner logic or image changes.",
+  "test": "py -3 tools/run_tests.py --changed",
+  "priority": "critical",
+  "kind": "architecture",
+  "agent": "codex",
+  "task_id": "TASK-0066"
+}

@@ -1,6 +1,11 @@
-# Blender part factory — build guide (TASK-0046, TASK-0054)
+# Blender part factory â€” build guide (TASK-0046, TASK-0054)
 
 Owner decisions 2026-10-26/27 (AGENTS.md rules 4 and 11): environment pieces are **built by scripts in Blender**, the room is assembled in Godot from those pieces, and only the **final room comparison sheet** is looked at. Pieces are checked by scripted QA only (`tools/art_qa.py`, palette check, manifests, measured anchors); agents never open piece PNGs. Defects are fixed by changing a builder, spec or projection and re-rendering, never by hand-painting or AI image generation. The nine accepted HD sprites (W021, W022, A017, A018, D019, P023-P026) are never changed or replaced.
+
+## External graphics workspace (owner decision 2026-10-28)
+Both Codex and Claude Code may run these local Blender builds for assigned environment TASK/ART work. The canonical generated asset folder is `H:\shining force\pixel-art\<TASK-ID>\<ART-ID-or-candidate>\<revision>\` (editable sources, renders, QA/manifest). Keep reproducible builders/specs versioned here; follow `.agents/workflows/GRAPHICS.md`.
+
+Current `blender_factory.py` manifests use `relative_to(ROOT)`, and room layouts resolve repo-relative textures. This rules change does not alter those helpers: render into a fresh supported repo staging folder when required, retain the exact asset copy in the external folder, and record both paths and SHA-256. Do not pass an unsupported external `--out` then claim success. Output transfer preserves bytes and never overwrites an existing revision.
 
 ## 1. Setup (owner's Windows host)
 - Blender 5.2 LTS. Found through `--blender`, `BLENDER_EXECUTABLE`, `blender_executable` in `.agents/planner/config.json`, then the default install path.
@@ -10,7 +15,7 @@ Owner decisions 2026-10-26/27 (AGENTS.md rules 4 and 11): environment pieces are
 ## 2. Files
 | File | Runs in | Role |
 | --- | --- | --- |
-| `projection.json` | config | 64 px per tile, supersample 4, camera elevation 45°, sun (upper left), warm fill, world, Cycles samples, padding |
+| `projection.json` | config | 64 px per tile, supersample 4, camera elevation 45Â°, sun (upper left), warm fill, world, Cycles samples, padding |
 | `lib.py` | Blender | scene, orthographic camera with square-floor pixel aspect, sun + fill, materials (`limestone`, `wood`, `rope`, `gold`, `sapphire`, `flat`), `block`, lean, join, ivy, colour pass + separate shadow pass (optional floor-only catcher polygon) |
 | `builders.py` | Blender | parametric pieces; each returns `(objects, anchors)` |
 | `render_part.py` | Blender | renders every output of one spec: `<name>.png` master, `<name>_shadow.png`, `<name>.json` (frame, anchors) |
@@ -22,7 +27,7 @@ Owner decisions 2026-10-26/27 (AGENTS.md rules 4 and 11): environment pieces are
 
 ## 3. Projection (`projection.json`)
 - 1 Blender unit = 1 map tile = `tile_px` (64) pixels. +X east (screen right), +Y north (into the screen), +Z up.
-- The camera is orthographic, looks north, tilted down by `camera_elevation_deg`. Pixel aspect keeps the floor grid square, so a 1x1 floor tile is exactly 64x64 and a height `h` appears as `h · cot(elevation) · 64` px (at 45°: 64 px per tile of height).
+- The camera is orthographic, looks north, tilted down by `camera_elevation_deg`. Pixel aspect keeps the floor grid square, so a 1x1 floor tile is exactly 64x64 and a height `h` appears as `h Â· cot(elevation) Â· 64` px (at 45Â°: 64 px per tile of height).
 - Sun azimuth 135 = light from the upper left; shadows fall to the lower right. The warm `fill` (shadowless, from the front right) keeps faces turned away from the sun golden.
 - A spec may override any key with `"projection": {...}` (e.g. a warmer `world` for the v4 side walls). Keep the shared file stable: changing it changes every future re-render.
 - Calibrate after any projection change: `py -3 tools/blender_factory.py calibrate` must print `"ok": true`.
@@ -32,10 +37,10 @@ Builders model the front facing south (toward the camera). A facing rotates the 
 
 | Builder | Used by | Key params | Anchors |
 | --- | --- | --- | --- |
-| `calibration_tile` | `calibrate` | — | `tile_top_left` |
+| `calibration_tile` | `calibrate` | â€” | `tile_top_left` |
 | `wall_run` | ART-0004 | `length`, `height`, `thickness`, `row_height`, `lean`, `ivy*` | `foot_center_front`, `foot_left`, `foot_right`, `top_center_front` |
 | `broken_floor_edge` | ART-0014 | `kind` edge/corner_left/corner_right, `thickness`, `chips` | tile corners |
-| `side_wall_path` | candidate side walls | `path` (floor-edge vertices, y = −row), `inside` left/right, `height`, `lean`, palette (`stone_base/dark`, `cap_base/dark`, `mortar`, `specular`), `shadow_inside` (tiles of floor that receive the shadow), `ivy*` | `grid_origin` (floor cell 0,0 top-left) |
+| `side_wall_path` | candidate side walls | `path` (floor-edge vertices, y = âˆ’row), `inside` left/right, `height`, `lean`, palette (`stone_base/dark`, `cap_base/dark`, `mortar`, `specular`), `shadow_inside` (tiles of floor that receive the shadow), `ivy*` | `grid_origin` (floor cell 0,0 top-left) |
 | `entrance_stairs` | ART-0025 | `steps`, `tread_width`, `run`, `rise`, `cheek_width`, `cheek_height`, `foundation` | `top_center` (middle of the floor front edge), `top_left`, `top_right` |
 | `compass_inlay` | ART-0022 | `half_x`, `half_y` (half diagonals), `field`, `ring`, `long_point`, `short_point` | `center`, `north/south/east/west` |
 | `rope_fence` | ART-0024 | `posts` (feet relative to the first), `height`, `radius`, `sag`, `rope` | `foot`/`front_post_foot`, `back_post_foot` |
@@ -81,14 +86,14 @@ py -3 tools/blender_factory.py stage tools/blender/specs/candidates/hero_room_01
              "point": "top_left|left_center|right_center|center|bottom_center", "cells": [[x, y]],
              "offset_px": [dx, dy], "layer": "ground|walls|props"}]}
 ```
-Position = map `ground_offset` + (cell + point) · 64 + `offset_px`; the piece's anchor pixel lands there. Layers: `ground` (z 11, above the floor), `walls` (z 30, candidate wall pass, under the furniture), `props` (inside the base `Level3_Decorations`, y-sorted with the furniture by the anchor's y — use for fences and free-standing pieces). Calibrated contacts come from `docs/HERO_ROOM_CALIBRATION.md` (64 px grid kept while decision D1 is open).
+Position = map `ground_offset` + (cell + point) Â· 64 + `offset_px`; the piece's anchor pixel lands there. Layers: `ground` (z 11, above the floor), `walls` (z 30, candidate wall pass, under the furniture), `props` (inside the base `Level3_Decorations`, y-sorted with the furniture by the anchor's y â€” use for fences and free-standing pieces). Calibrated contacts come from `docs/HERO_ROOM_CALIBRATION.md` (64 px grid kept while decision D1 is open).
 
 ## 8. Capture and compare
 ```text
 py -3 tools/candidate_room.py resolve map_factory/candidates/hero_room_01_blender_v4.json   # check placements, no Godot
 py -3 tools/candidate_room.py capture map_factory/candidates/hero_room_01_blender_v4.json
 ```
-Writes `docs/previews/candidates/<id>_base.png`, `_candidate.png`, `_compare.png` (reference | base | candidate) and `_metrics.json`: mean absolute RGB difference to the goal reference (lower is closer) for the whole image, per layer region and **per placed piece** (`pieces`). The reference contains characters and UI, so absolute numbers stay high. Compare pieces by their base→candidate delta, not across regions.
+Writes `docs/previews/candidates/<id>_base.png`, `_candidate.png`, `_compare.png` (reference | base | candidate) and `_metrics.json`: mean absolute RGB difference to the goal reference (lower is closer) for the whole image, per layer region and **per placed piece** (`pieces`). The reference contains characters and UI, so absolute numbers stay high. Compare pieces by their baseâ†’candidate delta, not across regions.
 
 ## 9. Iterate
 1. Read the per-piece metrics and the manifest QA/palette numbers. The only image an agent may view is `<id>_compare.png`, when the owner's permission settings allow it.
@@ -97,9 +102,9 @@ Writes `docs/previews/candidates/<id>_base.png`, `_candidate.png`, `_compare.png
 4. Tests: `py -3 tools/run_tests.py --only blender_factory --only candidate_room` (the Blender render tests run only where Blender is installed).
 
 ## Hero Room history
-| Candidate | Change | Whole-image diff (base → candidate) |
+| Candidate | Change | Whole-image diff (base â†’ candidate) |
 | --- | --- | --- |
-| v1 (TASK-0047) | ART-0004 wall runs, ART-0014 edges | 74.68 → 74.71 |
-| v2 (TASK-0048) | leaning side walls, warmer stone, ivy | 74.68 → 73.59 |
-| v3 (TASK-0050) | continuous low ruined side walls | 74.68 → 74.23 |
-| v4 (TASK-0054) | golden walls ending at row 7, floor-only wall shadows, ART-0025 stairs, ART-0022 inlay, ART-0024 fences | 74.72 → 73.89 |
+| v1 (TASK-0047) | ART-0004 wall runs, ART-0014 edges | 74.68 â†’ 74.71 |
+| v2 (TASK-0048) | leaning side walls, warmer stone, ivy | 74.68 â†’ 73.59 |
+| v3 (TASK-0050) | continuous low ruined side walls | 74.68 â†’ 74.23 |
+| v4 (TASK-0054) | golden walls ending at row 7, floor-only wall shadows, ART-0025 stairs, ART-0022 inlay, ART-0024 fences | 74.72 â†’ 73.89 |

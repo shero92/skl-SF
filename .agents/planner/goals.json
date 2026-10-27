@@ -6,7 +6,7 @@
       "status": "active",
       "outcome": "Map Factory builds the Hero Room from owner art blocks in five levels (0 living background, 1 ground, 2 walls, 3 objects/mounts, 4 shadows) and builds other rooms from JSON with the same levels, 4-direction blocks, mounting, sorting and shadows",
       "verification": "Map unit tests and Godot smoke pass; real factory Godot render compared once with the reference via tools/goal_qa.py; owner gives final visual approval",
-      "constraints": "Map Factory only; coding agents do not create, substitute or open production art; missing art goes through .agents/graphics/requests/; no character, gameplay or UI changes",
+      "constraints": "Environment / Map Factory only. Owner decision 2026-10-28 authorizes Codex and Claude local Blender graphics tasks and generated assets under H:/shining force/pixel-art. Use deduplicated ART records, reproducible scripts/specs and hash manifests; preserve accepted originals. Individual pieces use scripted QA; agent visual review is final assembled room comparison only. No character/gameplay/UI work; owner visual approval required before production integration.",
       "task_ids": [
         "TASK-0001",
         "TASK-0002"

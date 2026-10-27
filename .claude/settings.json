@@ -29,16 +29,31 @@
   },
   "permissions": {
     "deny": [
-      "Read(./map_factory/parts/**)",
-      "Read(./map_factory/references/**)",
-      "Read(./docs/previews/**)",
-      "Read(./.agents/graphics/deliveries/**)",
-      "Read(./.agents/planner/goals/**/references/**)",
-      "Read(./map_factory/**/*.png)",
-      "Read(./map_factory/**/*.jpg)",
-      "Read(./map_factory/**/*.jpeg)",
-      "Read(./map_factory/**/*.svg)",
-      "Read(./map_factory/**/*.webp)"
+      "Read(./map_factory/parts/characters/**)",
+      "Edit(./map_factory/parts/characters/**)",
+      "Read(./map_factory/parts/ui/**)",
+      "Edit(./map_factory/parts/ui/**)",
+      "Read(./map_factory/parts/portraits/**)",
+      "Edit(./map_factory/parts/portraits/**)",
+      "Read(./scenes/ui/**)",
+      "Edit(./scenes/ui/**)",
+      "Read(//h/shining force/pixel-art/characters/**)",
+      "Edit(//h/shining force/pixel-art/characters/**)",
+      "Read(//h/shining force/pixel-art/ui/**)",
+      "Edit(//h/shining force/pixel-art/ui/**)",
+      "Read(//h/shining force/pixel-art/portraits/**)",
+      "Edit(//h/shining force/pixel-art/portraits/**)"
+    ],
+    "additionalDirectories": [
+      "H:\\shining force\\pixel-art"
+    ],
+    "allow": [
+      "Read(//h/shining force/pixel-art/**)",
+      "Edit(//h/shining force/pixel-art/**)",
+      "Bash(py -3 tools/blender_factory.py *)",
+      "Bash(python tools/blender_factory.py *)",
+      "Bash(py -3 tools/art_qa.py *)",
+      "Bash(py -3 tools/candidate_room.py *)"
     ]
   }
 }
