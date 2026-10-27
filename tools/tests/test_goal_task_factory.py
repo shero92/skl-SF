@@ -147,7 +147,69 @@ class GoalFactoryTests(unittest.TestCase):
 
     def test_unsafe_file_refused(self):
         self.goals(steps=[{**self.step("bad"), "file": "../secret"}])
-        self.run_script("pulse", "--date", "2026-10-25", success=False)
+        out = json.loads(self.run_script("pulse", "--date", "2026-10-25").stdout)
+        self.assertEqual(out["created"], [])
+        self.assertEqual([r["source"] for r in out["refused"]], ["goal:GOAL-0099:bad"])
+        self.assertIn("Unsafe path", out["refused"][0]["error"])
+        self.assertEqual(list((self.root / ".agents/tasks").glob("TASK-*.md")), [])
+
+    def done_task(self, task_id, status="done"):
+        (self.root / ".agents/tasks" / (task_id + "_fixture.md")).write_text(
+            "---\nid: " + task_id + "\nstatus: " + status + "\nowner: codex\nbranch: none\n"
+            "depends_on: none\nissue: none\nart_request: none\n---\n# Fixture\n")
+
+    def by_source(self):
+        out = {}
+        for p in (self.root / ".agents/tasks").glob("TASK-*.md"):
+            m = re.search(r"(?m)^\*\*Source:\*\* (.+)$", p.read_text())
+            if m:
+                out[m.group(1)] = p.read_text()
+        return out
+
+    def calibration_step(self, **extra):
+        return {**self.step("recovery-calibration", "investigation"), "agent": "specialist",
+                "file": "docs/HERO_ROOM_CALIBRATION.md",
+                "touches": ["docs/HERO_ROOM_CALIBRATION.md", ".agents/graphics/requests/"],
+                "new_graphics_required": True,
+                "source_gate_note": "TASK-0001 proves source identity.", **extra}
+
+    def test_calibration_doc_specialist_step_is_blocked_with_requirements(self):
+        # Regression: pulse exited 1 with "Outside Map Factory coding scope: docs/HERO_ROOM_CALIBRATION.md".
+        self.done_task("TASK-0001")
+        self.done_task("TASK-0002", status="review")
+        self.goals(steps=[self.calibration_step(depends_on=["TASK-0001", "TASK-0002"]), self.step("independent")])
+        out = json.loads(self.run_script("pulse", "--date", "2026-10-27").stdout)
+        self.assertEqual(out["refused"], [])
+        self.assertEqual(len(out["created"]), 2)
+        texts = self.by_source()
+        calib = texts["goal:GOAL-0099:recovery-calibration"]
+        self.assertIn("status: blocked", calib)
+        self.assertIn("agent: graphics", calib)
+        self.assertIn("touches: docs/HERO_ROOM_CALIBRATION.md,.agents/graphics/requests/", calib)
+        blocker = re.search(r"(?m)^\*\*Blocked by:\*\* specialist step .+$", calib).group(0)
+        self.assertIn("TASK-0002 is review", blocker)
+        self.assertNotIn("TASK-0001 is", blocker)
+        self.assertIn("art request", blocker)
+        self.assertIn("TASK-0001 proves source identity.", blocker)
+        self.assertIn("status: todo", texts["goal:GOAL-0099:independent"])
+        # Even once its dependencies are done, the pulse never promotes a specialist step to todo.
+        self.set_done("TASK-0002")
+        self.run_script("pulse", "--date", "2026-10-28")
+        self.assertIn("status: blocked", self.by_source()["goal:GOAL-0099:recovery-calibration"])
+
+    def test_only_the_exact_calibration_doc_leaves_the_coding_scope(self):
+        sys.path.insert(0, str(SCRIPT.parent))
+        import runner_safety
+        self.assertEqual(runner_safety.touches("docs/HERO_ROOM_CALIBRATION.md"), ["docs/HERO_ROOM_CALIBRATION.md"])
+        for path in ("docs/", "docs/OTHER.md", "docs/HERO_ROOM_CALIBRATION.png", "docs/hero_room_calibration.md"):
+            with self.subTest(path=path), self.assertRaises(ValueError):
+                runner_safety.touches(path)
+        self.goals(steps=[self.calibration_step(touches=["docs/OTHER.md"]), self.step("independent")])
+        out = json.loads(self.run_script("pulse", "--date", "2026-10-27").stdout)
+        self.assertEqual(len(out["created"]), 1)
+        self.assertIn("Outside Map Factory coding scope: docs/OTHER.md", out["refused"][0]["error"])
+        daily = (self.base / "daily/2026-10-27.md").read_text(encoding="utf-8")
+        self.assertIn("goal:GOAL-0099:recovery-calibration: Outside Map Factory coding scope", daily)
 
     def test_pulse_approval_run_cap_and_step_receipt(self):
         self.goals(steps=[{**self.step(str(i)), "agent": "claude",
