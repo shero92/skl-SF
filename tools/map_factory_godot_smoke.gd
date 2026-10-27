@@ -25,7 +25,7 @@ func _run_smoke() -> void:
         push_error("No maps to validate")
         quit(1)
         return
-    var ok := background_ok
+    var ok := _depth_link_smoke() and background_ok
     for key in maps.keys():
         var id := String(key)
         var entry: Dictionary = maps[key]
@@ -95,13 +95,19 @@ func _run_smoke() -> void:
             for pass_id in layer_nodes:
                 var section := built.get_node_or_null(String(layer_nodes[pass_id]))
                 var records: Array = passes.get(String(pass_id), [])
-                if section == null or section.get_child_count() != records.size():
+                var mounted := 0
+                for record in records:
+                    if typeof(record.get("attachment")) == TYPE_DICTIONARY:
+                        mounted += 1
+                if section == null or section.get_child_count() != records.size() - mounted:
                     push_error("Five-pass wrong size: " + id + "/" + String(pass_id))
                     ok = false
                     continue
                 for record in records:
                     var label: String = String(record.get("instance_id",""))
-                    var node := section.get_node_or_null(label)
+                    var node := section.get_node_or_null(label) as Node2D
+                    if node == null:
+                        node = built.find_child(label, true, false) as Node2D
                     if node == null:
                         push_error("Five-pass missing block "+ id + "/" +label)
                         ok=false
@@ -124,8 +130,12 @@ func _run_smoke() -> void:
                             if node.get_meta("mount_on","") != attach.get("parent_instance_id",""):
                                 push_error("Mount lost: "+label)
                                 ok=false
+                            if String(node.get_parent().name) != String(attach.get("parent_instance_id","")):
+                                push_error("Mount not parented to host: "+label)
+                                ok=false
                     var p: Array = record.get("position",[0,0])
-                    if node.position.distance_to(Vector2(float(p[0]),float(p[1]))) > 0.5:
+                    var world := RoomFactory.room_transform(node, built).origin
+                    if world.distance_to(Vector2(float(p[0]),float(p[1]))) > 0.5:
                         push_error("Wrong block/shadow world position: "+label)
                         ok=false
         else:
@@ -165,6 +175,98 @@ func _background_check(passed: bool, message: String) -> bool:
     if not passed:
         push_error("Background runtime: " + message)
     return passed
+
+
+func _link_check(passed: bool, message: String) -> bool:
+    if not passed:
+        push_error("Depth/mount runtime: " + message)
+    return passed
+
+
+func _shadow_for(shadows: Node, owner_id: String) -> Node2D:
+    return shadows.get_node_or_null(owner_id + "__shadow") as Node2D
+
+
+func _depth_link_smoke() -> bool:
+    # Registered catalog IDs only; textures come from the same image-free
+    # placeholders as the background fixture. No fallback art is synthesized.
+    var factory := RoomFactory.new()
+    var host := Node2D.new()
+    get_root().add_child(host)
+    var contact := {"type": "contact", "opacity": 0.3}
+    var walls: Array = [{"instance_id": "LinkWall", "asset_id": "W021", "position": [100, 200], "shadow": contact}]
+    var decorations: Array = [
+        {"instance_id": "HungDecor", "asset_id": "D019", "position": [110, 150], "shadow": contact,
+            "attachment": {"parent_instance_id": "LinkWall", "mount_offset": [10, -50]}},
+        {"instance_id": "FrontDecor", "asset_id": "D019", "position": [100, 260], "shadow": contact},
+        {"instance_id": "BackDecor", "asset_id": "D019", "position": [100, 120]}
+    ]
+    var shadow_records: Array = []
+    for owner in ["LinkWall", "HungDecor", "FrontDecor"]:
+        var source: Dictionary = (walls + decorations).filter(func(e): return e["instance_id"] == owner)[0]
+        shadow_records.append({"instance_id": owner + "__shadow", "owner_instance_id": owner,
+            "position": source["position"], "scale": 1.0, "sprite_pixel_size": [64, 64], "settings": contact})
+    factory._build_five_levels({"canvas_size": [400, 400], "size": [0, 0], "occlusion_mode": "world_y_sort"},
+        {"passes": {"walls": walls, "decorations": decorations, "shadows": shadow_records}}, host)
+    var depth := host.get_node_or_null("WorldDepthSort") as Node2D
+    var wall := host.get_node_or_null("WorldDepthSort/Level2_Walls/LinkWall") as Node2D
+    var decor := host.get_node_or_null("WorldDepthSort/Level3_Decorations") as Node2D
+    var shadows := host.get_node_or_null("Level4_Shadows") as Node2D
+    var ok := _link_check(depth != null and wall != null and decor != null and shadows != null, "missing pass nodes")
+    if not ok:
+        host.free()
+        return false
+    var hung := wall.get_node_or_null("HungDecor") as Node2D
+    var front := decor.get_node_or_null("FrontDecor") as Node2D
+    var back := decor.get_node_or_null("BackDecor") as Node2D
+    ok = _link_check(hung != null and front != null and back != null, "mounted/free decor missing")
+    if not ok:
+        host.free()
+        return false
+    # Mounted offsets: child of its host at the compiled local offset.
+    ok = _link_check(decor.get_child_count() == 2, "mounted decor still in free decor pass") and ok
+    ok = _link_check(hung.position.is_equal_approx(Vector2(10, -50)), "wrong mounted offset") and ok
+    # Front/back occlusion: walls and decor share one Y-sort at equal z, so the
+    # contact Y alone decides order; the mount draws after (in front of) its host.
+    var levels := [depth.get_node("Level2_Walls"), decor]
+    ok = _link_check(depth.y_sort_enabled and levels.all(func(n): return n.y_sort_enabled and n.z_index == 0),
+        "walls/decor not in one world Y-sort") and ok
+    ok = _link_check(back.position.y < wall.position.y and wall.position.y < front.position.y
+        and back.z_index == wall.z_index and front.z_index == wall.z_index, "front/back sort keys wrong") and ok
+    ok = _link_check(hung.get_index() > wall.get_node("Visual").get_index(), "mount drawn behind host") and ok
+    ok = _link_check(shadows.z_index < depth.z_index, "shadows above casting objects") and ok
+    for owner in ["LinkWall", "HungDecor", "FrontDecor"]:
+        var shadow := _shadow_for(shadows, owner)
+        ok = _link_check(shadow != null and shadow.get_node_or_null("AlphaShadow") != null
+            and shadow.get_node_or_null("Polygon2D") == null, "missing registered shadow for " + owner) and ok
+    if not ok:
+        host.free()
+        return false
+    # Host move: the mount follows and each shadow tracks only its own owner.
+    wall.position = Vector2(300, 200)
+    RoomFactory.sync_links(host)
+    ok = _link_check(RoomFactory.room_transform(hung, host).origin.is_equal_approx(Vector2(310, 150)),
+        "mount did not follow host") and ok
+    ok = _link_check(_shadow_for(shadows, "LinkWall").position.is_equal_approx(Vector2(300, 200)), "host shadow stale") and ok
+    ok = _link_check(_shadow_for(shadows, "HungDecor").position.is_equal_approx(Vector2(310, 150)), "mount shadow stale") and ok
+    ok = _link_check(_shadow_for(shadows, "FrontDecor").position.is_equal_approx(Vector2(100, 260)),
+        "independent shadow moved with another owner") and ok
+    front.position = Vector2(50, 270)
+    RoomFactory.sync_links(host)
+    ok = _link_check(_shadow_for(shadows, "FrontDecor").position.is_equal_approx(Vector2(50, 270))
+        and _shadow_for(shadows, "LinkWall").position.is_equal_approx(Vector2(300, 200)), "owner shadows not independent") and ok
+    # Host remove: mount and both linked shadows go; unrelated owners stay.
+    wall.free()
+    RoomFactory.sync_links(host)
+    ok = _link_check(not is_instance_valid(hung), "mount survived host removal") and ok
+    ok = _link_check(_shadow_for(shadows, "LinkWall") == null and _shadow_for(shadows, "HungDecor") == null,
+        "removed owner left a shadow") and ok
+    ok = _link_check(_shadow_for(shadows, "FrontDecor") != null and shadows.get_child_count() == 1,
+        "unrelated shadow removed") and ok
+    host.free()
+    if ok:
+        print("Depth/mount runtime passed: host move/remove, mounted offsets, owner shadows, front/back occlusion")
+    return ok
 
 
 func _background_runtime_smoke() -> bool:
