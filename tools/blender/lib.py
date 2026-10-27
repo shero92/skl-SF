@@ -94,27 +94,31 @@ def projected(point, proj):
     return point.x, point.y + point.z * cot
 
 
-def frame_camera(objects, proj, extra_tiles=(0.0, 0.0, 0.0, 0.0)):
+def frame_camera(objects, proj, extra_tiles=(0.0, 0.0, 0.0, 0.0), fixed=None):
     """Place an orthographic camera that frames the objects; returns frame metadata in pixels.
 
-    extra_tiles = (left, right, bottom, top) margin in tiles (used to fit cast shadows)."""
+    extra_tiles = (left, right, bottom, top) margin in tiles (used to fit cast shadows).
+    fixed = (umin, umax, vmin, vmax) image-plane window in tiles (map tiles: exactly the cell, no padding)."""
     scene = bpy.context.scene
-    deps = bpy.context.evaluated_depsgraph_get()
-    us, vs = [], []
-    for obj in objects:
-        ev = obj.evaluated_get(deps)
-        for corner in ev.bound_box:
-            u, v = projected(ev.matrix_world @ Vector(corner), proj)
-            us.append(u)
-            vs.append(v)
     ss = int(proj.get("supersample", 1))
     px = proj["tile_px"] * ss
-    pad = proj.get("padding_px", 4) * ss
-    # Snap the frame to the pixel grid so tile edges (integer world units) land on whole pixels.
-    umin = (math.floor((min(us) - extra_tiles[0]) * px) - pad) / px
-    umax = (math.ceil((max(us) + extra_tiles[1]) * px) + pad) / px
-    vmin = (math.floor((min(vs) - extra_tiles[2]) * px) - pad) / px
-    vmax = (math.ceil((max(vs) + extra_tiles[3]) * px) + pad) / px
+    if fixed is not None:
+        umin, umax, vmin, vmax = fixed
+    else:
+        deps = bpy.context.evaluated_depsgraph_get()
+        us, vs = [], []
+        for obj in objects:
+            ev = obj.evaluated_get(deps)
+            for corner in ev.bound_box:
+                u, v = projected(ev.matrix_world @ Vector(corner), proj)
+                us.append(u)
+                vs.append(v)
+        pad = proj.get("padding_px", 4) * ss
+        # Snap the frame to the pixel grid so tile edges (integer world units) land on whole pixels.
+        umin = (math.floor((min(us) - extra_tiles[0]) * px) - pad) / px
+        umax = (math.ceil((max(us) + extra_tiles[1]) * px) + pad) / px
+        vmin = (math.floor((min(vs) - extra_tiles[2]) * px) - pad) / px
+        vmax = (math.ceil((max(vs) + extra_tiles[3]) * px) + pad) / px
     width = max(1, round((umax - umin) * px))
     height = max(1, round((vmax - vmin) * px))
     el = math.radians(proj["camera_elevation_deg"])
@@ -319,6 +323,99 @@ def gold(name="gold"):
 def sapphire(name="sapphire", color=(0.02, 0.10, 0.42)):
     """Deep blue enamel inlay: glossy dielectric so it keeps its colour under the warm sun."""
     return flat(name, color, roughness=0.25)
+
+
+def _math(nt, op, a, b=None, loc=(0, 0)):
+    n = nt.nodes.new("ShaderNodeMath")
+    n.operation, n.location = op, loc
+    for i, x in enumerate((a, b)):
+        if x is None:
+            continue
+        if isinstance(x, (int, float)):
+            n.inputs[i].default_value = x
+        else:
+            nt.links.new(x, n.inputs[i])
+    return n.outputs[0]
+
+
+def periodic_material(name, stops, scale=4.0, detail=6.0, roughness=0.8, bump=0.3, specular=None, seed=0.0,
+                      distortion=0.0, edge=None, plane="xy"):
+    """Map-tile material whose pattern repeats exactly every world unit along `plane` (seamless tiles).
+
+    plane is "xy" for ground tiles, "xz" for wall/cliff faces. Both axes are wrapped onto circles of circumference 1 and fed to a 4D noise
+    (cos a, sin a, cos b; W = sin b), so neighbouring tiles continue each other.
+    stops: colour-ramp [(position, linear RGB)], scale ~ features per tile.
+    edge: optional (axis 'y'|'z', from, to, linear RGB): blends a noisy band toward `to`
+    (e.g. shore foam toward the cliff); that axis is then not periodic."""
+    mat = bpy.data.materials.new(name)
+    mat.use_nodes = True
+    nt = mat.node_tree
+    bsdf = nt.nodes["Principled BSDF"]
+    bsdf.inputs["Roughness"].default_value = roughness
+    if specular is not None:
+        _soft_specular(bsdf, specular)
+    geo = _node(nt, "ShaderNodeNewGeometry", (-1400, 0))
+    sep = _node(nt, "ShaderNodeSeparateXYZ", (-1200, 0))
+    nt.links.new(geo.outputs["Position"], sep.inputs[0])
+    r = scale / (2 * math.pi)
+    parts = []
+    for axis in plane.upper():
+        ang = _math(nt, "MULTIPLY", sep.outputs[axis], 2 * math.pi)
+        parts.append(_math(nt, "MULTIPLY", _math(nt, "COSINE", ang), r))
+        parts.append(_math(nt, "MULTIPLY", _math(nt, "SINE", ang), r))
+    comb = _node(nt, "ShaderNodeCombineXYZ", (-700, 0))
+    for i in range(3):
+        nt.links.new(parts[i], comb.inputs[i])
+    w = _math(nt, "ADD", parts[3], seed)
+    noise = _node(nt, "ShaderNodeTexNoise", (-500, 0), Scale=1.0, Detail=detail, Roughness=0.6, Distortion=distortion)
+    noise.noise_dimensions = "4D"
+    nt.links.new(comb.outputs[0], noise.inputs["Vector"])
+    nt.links.new(w, noise.inputs["W"])
+    ramp = _node(nt, "ShaderNodeValToRGB", (-300, 0))
+    elements = ramp.color_ramp.elements
+    while len(elements) < len(stops):
+        elements.new(0.5)
+    for el, (pos, col) in zip(elements, stops):
+        el.position, el.color = pos, (*col, 1.0)
+    nt.links.new(noise.outputs["Fac"], ramp.inputs["Fac"])
+    color = ramp.outputs["Color"]
+    if edge:
+        axis, a, b, to = edge
+        band = _node(nt, "ShaderNodeMapRange", (-500, -300))
+        nt.links.new(sep.outputs[axis.upper()], band.inputs["Value"])
+        band.inputs["From Min"].default_value, band.inputs["From Max"].default_value = a, b
+        wobble = _math(nt, "ADD", band.outputs[0], _math(nt, "MULTIPLY", noise.outputs["Fac"], 0.7))
+        cut = _node(nt, "ShaderNodeMapRange", (-300, -300))
+        nt.links.new(wobble, cut.inputs["Value"])
+        cut.inputs["From Min"].default_value, cut.inputs["From Max"].default_value = 0.75, 0.95
+        mix = _node(nt, "ShaderNodeMix", (-100, -100))
+        mix.data_type = "RGBA"
+        nt.links.new(cut.outputs[0], mix.inputs["Factor"])
+        nt.links.new(color, mix.inputs["A"])
+        mix.inputs["B"].default_value = (*to, 1.0)
+        color = mix.outputs["Result"]
+    nt.links.new(color, bsdf.inputs["Base Color"])
+    if bump:
+        bn = _node(nt, "ShaderNodeBump", (-200, -400), Strength=bump, Distance=0.02)
+        nt.links.new(noise.outputs["Fac"], bn.inputs["Height"])
+        nt.links.new(bn.outputs["Normal"], bsdf.inputs["Normal"])
+    return mat
+
+
+def wrap_copies(obj, axes="xy"):
+    """Linked copies one tile away in every direction of `axes` ('xy' ground, 'xz' wall faces), so
+    geometry and shadows crossing a tile edge reappear on the opposite edge (seamless tiles)."""
+    copies = []
+    for i in (-1, 0, 1):
+        for j in (-1, 0, 1):
+            if i == 0 and j == 0:
+                continue
+            c = obj.copy()
+            bpy.context.scene.collection.objects.link(c)
+            off = Vector((i, j, 0.0)) if axes == "xy" else Vector((i, 0.0, j))
+            c.location = obj.location + off
+            copies.append(c)
+    return copies
 
 
 # ---------------------------------------------------------------- geometry helpers

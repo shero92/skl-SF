@@ -160,6 +160,42 @@ def blender_version(exe: str) -> str:
     return (proc.stdout.strip().splitlines() or ["unknown"])[0]
 
 
+def pixel_art(paths: list[Path], colors: int) -> list[list[int]]:
+    """Reduce the native PNGs to one shared palette of `colors` (median cut, no dithering) so a tile set
+    reads as pixel art with consistent colours; alpha becomes 0/255. Returns the palette (RGB)."""
+    from PIL import Image
+    ims = [Image.open(p).convert("RGBA") for p in paths]
+    sheet = Image.new("RGB", (sum(im.width for im in ims), max(im.height for im in ims)))
+    x = 0
+    for im in ims:
+        sheet.paste(im.convert("RGB"), (x, 0))
+        x += im.width
+    pal = sheet.quantize(colors, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+    for path, im in zip(paths, ims):
+        q = im.convert("RGB").quantize(palette=pal, dither=Image.Dither.NONE).convert("RGBA")
+        q.putalpha(im.getchannel("A").point(lambda v: 255 if v >= 128 else 0))
+        q.save(path)
+    flat = pal.getpalette()[:colors * 3]
+    return [flat[i:i + 3] for i in range(0, len(flat), 3)]
+
+
+def atlas(target: Path, request_id: str, files: list[dict], columns: int) -> dict:
+    """Pack equal-size tiles row by row into <request_id>_atlas.png (Godot TileSet atlas source).
+    Each file records its atlas cell; the atlas is listed with its SHA-256 as an extra file."""
+    from PIL import Image
+    ims = [Image.open(ROOT / f["path"]) for f in files]
+    w, h = ims[0].size
+    rows = -(-len(ims) // columns)
+    sheet = Image.new("RGBA", (w * columns, h * rows))
+    for i, (f, im) in enumerate(zip(files, ims)):
+        sheet.paste(im, ((i % columns) * w, (i // columns) * h))
+        f["atlas_cell"] = [i % columns, i // columns]
+    path = target / (request_id + "_atlas.png")
+    sheet.save(path)
+    return {"path": path.relative_to(ROOT).as_posix(), "sha256": sha256(path), "role": "tile atlas",
+            "pixel_size": list(sheet.size), "tile_px": [w, h]}
+
+
 def deliver(art_id: str, blender: str | None = None, agent: str = "claude") -> dict:
     spec_path = SPECS / (art_id + ".json")
     spec = load_spec(spec_path)
@@ -199,8 +235,25 @@ def produce(spec_path: Path, spec: dict, target: Path, request_id: str, blender:
                 downscale(Path(tmp) / meta["shadow"], shadow, ss)
                 item["shadow"] = shadow.relative_to(ROOT).as_posix()
                 extra.append({"path": item["shadow"], "sha256": sha256(shadow), "role": "separate cast shadow"})
+            item["tile"] = bool(meta.get("tile"))
             files.append(item)
-        qa = art_qa.check(target, [Path(f["path"]).name for f in files])
+        pixel = spec.get("pixel_art")
+        if pixel:
+            palette_rgb = pixel_art([ROOT / f["path"] for f in files], int(pixel.get("colors", 48)))
+            for f in files:
+                f.update(sha256=sha256(ROOT / f["path"]), palette=palette(ROOT / f["path"]),
+                         pixel_art={"colors": len(palette_rgb), "shared_palette": True})
+        tiles = {Path(f["path"]).name for f in files if f["tile"]}
+        if spec.get("atlas") and len(tiles) == len(files):
+            extra.append(atlas(target, request_id, files, int(spec["atlas"].get("columns", 8))))
+        qa = art_qa.check(target, [Path(f["path"]).name for f in files], tiles=tiles)
+        wraps = {o["name"] + ".png": o.get("wrap", "xy") for o in spec["outputs"]}
+        for info in qa["files"]:
+            name = Path(info["path"]).name
+            for axis in wraps.get(name, "") if name in tiles else "":
+                # Measured seam (wrap-edge step / mean neighbour step); a visible seam is a warning, not a failure.
+                if info.get("seam_" + axis, 0) > spec.get("seam_limit", 2.5):
+                    qa["warnings"].append(f"{name}: seam along {axis} ({info['seam_' + axis]}x the interior step)")
         for f in files:
             qa["problems"] += palette_problems(Path(f["path"]).name, f["palette"], spec.get("palette_check"))
     exe = blender_executable(blender) or "unknown"
@@ -208,7 +261,9 @@ def produce(spec_path: Path, spec: dict, target: Path, request_id: str, blender:
     manifest = {
         "request_id": request_id, "task_id": spec.get("task"), "status": "rendered_unreviewed",
         "files": files, "extra_files": extra, "qa": {"problems": qa["problems"], "warnings": warnings,
-                                                     "expected_warnings": accepted, "pairs": qa["pairs"]},
+                                                     "expected_warnings": accepted, "pairs": qa["pairs"],
+                                                     "seams": {Path(i["path"]).name: [i["seam_x"], i["seam_y"]]
+                                                               for i in qa["files"] if "seam_x" in i}},
         "provenance": {"tool": "blender", "blender": blender_version(exe), "spec": spec_path.resolve().relative_to(ROOT).as_posix(),
                        "toolkit_commit": git_head(), "producing_agent": agent, "ai_image_generation": False},
         "reference": {"path": REFERENCE.relative_to(ROOT).as_posix(),

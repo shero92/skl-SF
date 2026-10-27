@@ -38,6 +38,7 @@ Builders model the front facing south (toward the camera). A facing rotates the 
 | `side_wall_path` | candidate side walls | `path` (floor-edge vertices, y = −row), `inside` left/right, `height`, `lean`, palette (`stone_base/dark`, `cap_base/dark`, `mortar`, `specular`), `shadow_inside` (tiles of floor that receive the shadow), `ivy*` | `grid_origin` (floor cell 0,0 top-left) |
 | `entrance_stairs` | ART-0025 | `steps`, `tread_width`, `run`, `rise`, `cheek_width`, `cheek_height`, `foundation` | `top_center` (middle of the floor front edge), `top_left`, `top_right` |
 | `compass_inlay` | ART-0022 | `half_x`, `half_y` (half diagonals), `field`, `ring`, `long_point`, `short_point` | `center`, `north/south/east/west` |
+| `terrain_tile` | candidate `hero_room_01_tileset` (TASK-0066) | `kind` floor/wall_top/wall_face/cliff_face/grass/sea/sea_foam, `seed`, `rows`, `row_offsets`, `row_shift`, `wear`, `moss`, `ivy`, `flowers`, stone colours | `tile_top_left` |
 | `rope_fence` | ART-0024 | `posts` (feet relative to the first), `height`, `radius`, `sag`, `rope` | `foot`/`front_post_foot`, `back_post_foot` |
 
 Colours are **linear RGB**. Golden limestone for v4 is `lib.GOLDEN_STONE` (0.66, 0.40, 0.14 / dark 0.33, 0.17, 0.05) with `specular` 0.2; the older (0.70, 0.49, 0.25) reads pale grey once converted to sRGB under the warm sun. Avoid fully metallic flat faces: in an orthographic view they mirror the dim world and read grey (`lib.gold` is mostly dielectric).
@@ -59,6 +60,7 @@ Adding a builder: write `def name(spec, facing) -> (objects, anchors)`, register
   "notes": "calibration source and decisions"
 }
 ```
+Map tiles (TASK-0066): `"tile": true` frames every output as exactly one cell (`params.tiles` [w, h], default 1x1), opaque, shadows baked in. `lib.periodic_material` (world position wrapped onto circles, 4D noise) and `lib.wrap_copies` (linked copies one tile away) make tiles continue across every edge; keep stone joints off the cell edges (`row_offsets`, `row_shift`). `"pixel_art": {"colors": N}` reduces all native PNGs to one shared palette without dithering (masters stay untouched); `"atlas": {"columns": N}` packs the tiles into `<id>_atlas.png` and records each file's `atlas_cell`. Per-output `"wrap": "x"` limits the seam check (e.g. foam at a cliff foot). QA for tiles: fully opaque, plus `seam_x`/`seam_y` (wrap-edge step / mean neighbour step, warning above `seam_limit`, default 2.5) in `manifest.json` `qa.seams`.
 Output names must be unique snake_case; for ART specs `.agents/graphics/deliveries/<ART>/<name>.png` must equal the request's `output_paths` exactly.
 
 ## 6. Commands

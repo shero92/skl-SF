@@ -18,7 +18,21 @@ def _pixels(im):
     return list(flat() if flat else im.getdata())
 
 
-def stats(path):
+def _seam(px, w, h, axis):
+    """Mean RGB step across the wrap edge divided by the mean step between neighbouring
+    columns (axis x) or rows (axis y): about 1 for a seamless tile, much more for a visible seam."""
+    def diff(a, b):
+        return sum(abs(px[a][c] - px[b][c]) for c in range(3))
+    if axis == "x":
+        edge = sum(diff(y * w, y * w + w - 1) for y in range(h)) / h
+        inner = sum(diff(y * w + x, y * w + x + 1) for y in range(h) for x in range(w - 1)) / (h * (w - 1))
+    else:
+        edge = sum(diff(x, (h - 1) * w + x) for x in range(w)) / w
+        inner = sum(diff(y * w + x, (y + 1) * w + x) for y in range(h - 1) for x in range(w)) / ((h - 1) * w)
+    return round(edge / max(inner, 1e-6), 2)
+
+
+def stats(path, tile=False):
     im = Image.open(path)
     info = {"path": Path(path).as_posix(), "mode": im.mode, "pixel_size": list(im.size),
             "sha256": hashlib.sha256(Path(path).read_bytes()).hexdigest(), "problems": []}
@@ -35,6 +49,13 @@ def stats(path):
                 partial_alpha_fraction=round(partial, 4))
     bbox = a.point(lambda v: 255 if v > 16 else 0).getbbox()
     info["content_bbox"] = list(bbox) if bbox else None
+    if tile:
+        # Map tiles fill the whole cell: opaque everywhere, measured for seams instead of edges.
+        if opaque < 1.0:
+            info["problems"].append("tile not fully opaque")
+        px = _pixels(im.convert("RGB"))
+        info["seam_x"], info["seam_y"] = _seam(px, w, h, "x"), _seam(px, w, h, "y")
+        return info, im
     corners = [a.getpixel(p) for p in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1))]
     if max(int(c) for c in corners) > 16:
         info["problems"].append("corners not transparent (backing or full-frame image)")
@@ -74,7 +95,7 @@ def similarity(a, b):
     return round(sum(_pixels(diff)) / (size[0] * size[1]), 2)
 
 
-def check(folder, names):
+def check(folder, names, tiles=()):
     """QA report for files in folder: per-file stats, pairwise comparison, problems and warnings."""
     report, images = {"files": [], "problems": [], "warnings": []}, {}
     for name in names:
@@ -82,7 +103,7 @@ def check(folder, names):
         if not path.is_file():
             report["files"].append({"path": path.as_posix(), "problems": ["missing"]})
             continue
-        info, im = stats(path)
+        info, im = stats(path, tile=name in tiles)
         report["files"].append(info)
         images[name] = im
     keys = list(images)

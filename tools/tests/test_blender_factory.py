@@ -161,6 +161,58 @@ class PaletteQA(unittest.TestCase):
             self.assertEqual(stats["opaque_size"], [8, 8])
 
 
+class TileQA(unittest.TestCase):
+    def test_opaque_periodic_tile_passes_and_seam_is_measured(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            smooth = Image.new("RGBA", (64, 64))
+            for x in range(64):
+                for y in range(64):
+                    # Periodic gradient: column 63 continues into column 0.
+                    v = 120 + abs(32 - x) * 2
+                    smooth.putpixel((x, y), (v, v - 30, 60, 255))
+            smooth.save(Path(tmp) / "smooth.png")
+            seam = Image.new("RGBA", (64, 64), (90, 60, 30, 255))
+            ImageDraw.Draw(seam).rectangle((0, 0, 31, 63), fill=(200, 150, 80, 255))
+            seam.save(Path(tmp) / "seam.png")
+            hole = seam.copy()
+            hole.putpixel((5, 5), (0, 0, 0, 0))
+            hole.save(Path(tmp) / "hole.png")
+            names = ["smooth.png", "seam.png", "hole.png"]
+            report = art_qa.check(tmp, names, tiles=set(names))
+            info = {Path(f["path"]).name: f for f in report["files"]}
+            self.assertLess(info["smooth.png"]["seam_x"], 2.5)
+            self.assertGreater(info["seam.png"]["seam_x"], 2.5)
+            self.assertEqual(report["problems"], [Path(tmp, "hole.png").as_posix() + ": tile not fully opaque"])
+
+    def test_pixel_art_shares_one_palette_and_atlas_records_cells(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            target = bf.ROOT / "tools" / "tests" / ".tmp_tiles"
+            target.mkdir(exist_ok=True)
+            try:
+                paths = []
+                for i in range(3):
+                    im = Image.new("RGBA", (64, 64))
+                    for x in range(64):
+                        for y in range(64):
+                            im.putpixel((x, y), (x * 4, y * 4, i * 80, 255))
+                    paths.append(target / ("t%d.png" % i))
+                    im.save(paths[-1])
+                pal = bf.pixel_art(paths, 16)
+                colours = set()
+                for path in paths:
+                    colours |= {c[:3] for _, c in Image.open(path).convert("RGBA").getcolors(4096)}
+                self.assertLessEqual(len(colours), 16)
+                self.assertLessEqual(len(pal), 16)
+                files = [{"path": p.relative_to(bf.ROOT).as_posix()} for p in paths]
+                entry = bf.atlas(target, "set", files, 2)
+                self.assertEqual(entry["pixel_size"], [128, 128])
+                self.assertEqual([f["atlas_cell"] for f in files], [[0, 0], [1, 0], [0, 1]])
+            finally:
+                for f in target.iterdir():
+                    f.unlink()
+                target.rmdir()
+
+
 @unittest.skipUnless(BLENDER, "Blender not installed (CI); runs on the owner's Windows host")
 class BlenderRenders(unittest.TestCase):
     def test_calibration_tile_is_exactly_one_tile(self):
@@ -233,6 +285,22 @@ class BlenderRenders(unittest.TestCase):
             report = art_qa.check(Path(tmp) / "out", ["n.png", "w.png"])
             self.assertEqual(report["problems"], [], report)
             self.assertNotEqual(metas[0]["frame_px"], metas[1]["frame_px"], "a side wall frames differently")
+
+    def test_terrain_tiles_are_exact_opaque_and_seamless(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            spec = Path(tmp) / "spec.json"
+            spec.write_text(json.dumps({"builder": "terrain_tile", "tile": True, "projection": {"supersample": 1, "samples": 4},
+                                        "outputs": [{"name": "floor", "params": {"kind": "floor", "seed": 1}},
+                                                    {"name": "face", "params": {"kind": "wall_face", "seed": 2}},
+                                                    {"name": "grass", "params": {"kind": "grass", "seed": 3, "flowers": 3}}]}))
+            metas = bf.render(spec, Path(tmp) / "out")
+            self.assertEqual([m["frame_px"] for m in metas], [[64, 64]] * 3)
+            self.assertTrue(all(m["tile"] and m["shadow"] is None for m in metas))
+            names = [m["name"] + ".png" for m in metas]
+            report = art_qa.check(Path(tmp) / "out", names, tiles=set(names))
+            self.assertEqual(report["problems"], [], report)
+            for f in report["files"]:
+                self.assertLess(max(f["seam_x"], f["seam_y"]), 2.5, f)
 
 
 if __name__ == "__main__":

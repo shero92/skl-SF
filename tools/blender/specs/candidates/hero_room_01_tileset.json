@@ -1,0 +1,30 @@
+{
+  "candidate": "hero_room_01_tileset",
+  "task": "TASK-0066",
+  "builder": "terrain_tile",
+  "tile": true,
+  "projection": {"world": {"color": [0.72, 0.58, 0.42], "strength": 0.25}},
+  "pixel_art": {"colors": 64},
+  "atlas": {"columns": 4},
+  "params": {"tiles": [1, 1]},
+  "outputs": [
+    {"name": "tile_floor_a", "params": {"kind": "floor", "seed": 11}},
+    {"name": "tile_floor_b", "params": {"kind": "floor", "seed": 12, "row_offsets": [0.25, 0.75]}},
+    {"name": "tile_floor_worn", "params": {"kind": "floor", "seed": 13, "wear": 0.6, "moss": 14}},
+    {"name": "tile_wall_top", "params": {"kind": "wall_top", "seed": 21, "rows": 2, "row_offsets": [0.08, 0.56], "min_w": 0.3, "max_w": 0.42, "joint": 0.05, "bevel": 0.035, "stone_base": [0.76, 0.49, 0.19], "stone_dark": [0.40, 0.22, 0.07]}},
+    {"name": "tile_wall_face", "params": {"kind": "wall_face", "seed": 22}},
+    {"name": "tile_cliff_face", "params": {"kind": "cliff_face", "seed": 31}},
+    {"name": "tile_cliff_face_ivy", "params": {"kind": "cliff_face", "seed": 32, "ivy": 4}},
+    {"name": "tile_grass", "params": {"kind": "grass", "seed": 41}},
+    {"name": "tile_grass_flowers", "params": {"kind": "grass", "seed": 42, "flowers": 5}},
+    {"name": "tile_sea", "params": {"kind": "sea", "seed": 51}},
+    {"name": "tile_sea_foam", "wrap": "x", "params": {"kind": "sea_foam", "seed": 52}}
+  ],
+  "expected_similar": [
+    {"pair": ["tile_floor_a", "tile_floor_b"], "reason": "two variants of the same sandstone floor, meant to alternate"},
+    {"pair": ["tile_cliff_face", "tile_cliff_face_ivy"], "reason": "same rock, one with ivy"},
+    {"pair": ["tile_grass", "tile_grass_flowers"], "reason": "same greenery, one with flowers"},
+    {"pair": ["tile_sea", "tile_sea_foam"], "reason": "same water, one with foam at the cliff foot"}
+  ],
+  "notes": "TASK-0066 first tranche: 64x64 terrain tiles from the Hero Room reference (sandstone floor, wall cap and face, cliff rock, cliff-top greenery, sea). Every tile is periodic on both axes (periodic world-space materials + wrapped geometry copies) except tile_sea_foam (x only: its north edge meets the cliff foot). Shared 64-colour palette for a pixel-art read."
+}

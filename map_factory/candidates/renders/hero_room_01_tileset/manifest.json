@@ -1,0 +1,1121 @@
+{
+  "request_id": "hero_room_01_tileset",
+  "task_id": "TASK-0066",
+  "status": "rendered_unreviewed",
+  "files": [
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_a.png",
+      "sha256": "5b72a691aa1ac89954b5764fa02e94deb693475a67573b41787ca01684270148",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "floor",
+        "seed": 11
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_a@4x.png",
+      "master_sha256": "4174ab0e93d32bf3172f5e28df593de5f6df3de9d31ad373cc2b0bb4e2dabcda",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          172,
+          126,
+          68
+        ],
+        "hue_deg": 33,
+        "lightness": 0.471,
+        "saturation": 0.433,
+        "pixel_saturation": 0.455,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_b.png",
+      "sha256": "7ac316a15875352ac6277674385e28849b740a390555ccfb6df8332928e8ea45",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "floor",
+        "seed": 12,
+        "row_offsets": [
+          0.25,
+          0.75
+        ]
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_b@4x.png",
+      "master_sha256": "0510b96cadfbdb5897ca880348ba4c5520e39468eea977962085155b14d37dcc",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          172,
+          126,
+          69
+        ],
+        "hue_deg": 33,
+        "lightness": 0.473,
+        "saturation": 0.427,
+        "pixel_saturation": 0.456,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_worn.png",
+      "sha256": "4f86b0e073bbcd8a6c8a1b12608d7b6a710d2dc9303ddb17c27019bde9b962fa",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "floor",
+        "seed": 13,
+        "wear": 0.6,
+        "moss": 14
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_worn@4x.png",
+      "master_sha256": "eb94c23daf95a6a9f83885e3f6b4a0b2b3582c1f8fd6079f7238191642a614d6",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          169,
+          124,
+          68
+        ],
+        "hue_deg": 33,
+        "lightness": 0.465,
+        "saturation": 0.426,
+        "pixel_saturation": 0.452,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_wall_top.png",
+      "sha256": "4c6ff5e1b1a765db9a91ec2d25e26fefb243afa2cd1bee2daafa37141f194bc3",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "wall_top",
+        "seed": 21,
+        "rows": 2,
+        "row_offsets": [
+          0.08,
+          0.56
+        ],
+        "min_w": 0.3,
+        "max_w": 0.42,
+        "joint": 0.05,
+        "bevel": 0.035,
+        "stone_base": [
+          0.76,
+          0.49,
+          0.19
+        ],
+        "stone_dark": [
+          0.4,
+          0.22,
+          0.07
+        ]
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_wall_top@4x.png",
+      "master_sha256": "57040d67909b36fc6f93a297e3382ef0eee77d0467b1673d1eb1f349c77bb4c4",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          172,
+          128,
+          71
+        ],
+        "hue_deg": 34,
+        "lightness": 0.476,
+        "saturation": 0.416,
+        "pixel_saturation": 0.489,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_wall_face.png",
+      "sha256": "28e1b999c8bc6a85653ed2cfd6a8c0dc4a2b385e3c23852589c427cbd1c2bf3a",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          -0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "wall_face",
+        "seed": 22
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_wall_face@4x.png",
+      "master_sha256": "959e131a10e2e104f7cf63d7580d6a4f8c1bcbb68de518ed24119273fe9e9f22",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          111,
+          76,
+          38
+        ],
+        "hue_deg": 31,
+        "lightness": 0.292,
+        "saturation": 0.49,
+        "pixel_saturation": 0.483,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_cliff_face.png",
+      "sha256": "c65f1d3d47cd7371da3a07a30f091fb18f9b5c0b1762ea9d958897648190978d",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          -0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "cliff_face",
+        "seed": 31
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_cliff_face@4x.png",
+      "master_sha256": "2f8fd95145f853b9bd5d813031a5d8d2a75b1a942fec51cb164db2314e6a9b51",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          84,
+          64,
+          39
+        ],
+        "hue_deg": 33,
+        "lightness": 0.241,
+        "saturation": 0.366,
+        "pixel_saturation": 0.368,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_cliff_face_ivy.png",
+      "sha256": "a2e6e1f403bc20b9d67adc639ddc9b85fd4f01efa12d46b5b9be4a25fd6a9d01",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          -0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "cliff_face",
+        "seed": 32,
+        "ivy": 4
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_cliff_face_ivy@4x.png",
+      "master_sha256": "ada443928951fe77ac5cb677ca4f8e761d37a4289e4bd0208a3290f10247b163",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          85,
+          66,
+          40
+        ],
+        "hue_deg": 35,
+        "lightness": 0.245,
+        "saturation": 0.36,
+        "pixel_saturation": 0.364,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_grass.png",
+      "sha256": "01a2f63542f0ccb7a1b210f09f4725de999acda31294c3361e0fad0f3eae65e3",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "grass",
+        "seed": 41
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_grass@4x.png",
+      "master_sha256": "3f5cd704838cde239811aef9c9dcc1e1a69c6c10c8c2d1e1b4e6a8e87356993d",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          81,
+          103,
+          52
+        ],
+        "hue_deg": 86,
+        "lightness": 0.304,
+        "saturation": 0.329,
+        "pixel_saturation": 0.34,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_grass_flowers.png",
+      "sha256": "e19fd8d6905aa5192dc93b49b79dabe61f6ddc43cc88cde0964f22daf235902f",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "grass",
+        "seed": 42,
+        "flowers": 5
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_grass_flowers@4x.png",
+      "master_sha256": "c763d35c0087d399b8dd39468e0622d787b93afedd3254f57d57b23ac62b80c9",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          83,
+          104,
+          53
+        ],
+        "hue_deg": 85,
+        "lightness": 0.308,
+        "saturation": 0.325,
+        "pixel_saturation": 0.34,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_sea.png",
+      "sha256": "f2848ee9d09872274ba6847b9795bc56ab1d86af3049aeea220237d011b92735",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "sea",
+        "seed": 51
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_sea@4x.png",
+      "master_sha256": "1e3a7fe23cb8132aa889fcae8baaa97a3366eab263dd82cdbd9996f6a1a3e4d5",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          50,
+          116,
+          150
+        ],
+        "hue_deg": 200,
+        "lightness": 0.392,
+        "saturation": 0.5,
+        "pixel_saturation": 0.543,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_sea_foam.png",
+      "sha256": "1cd97e5c41d35e29f40b3719a478fac84cdc823c0a8371d378dcd4a3b2f72832",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "tile_top_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "builder": "terrain_tile",
+      "params": {
+        "tiles": [
+          1,
+          1
+        ],
+        "kind": "sea_foam",
+        "seed": 52
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_tileset/tile_sea_foam@4x.png",
+      "master_sha256": "3eabe12f948869547b36f6e5b6e736ebab18de31ed65017ba5d20d4bc3c7854c",
+      "palette": {
+        "opaque_px": 4096,
+        "mean_rgb": [
+          93,
+          143,
+          164
+        ],
+        "hue_deg": 198,
+        "lightness": 0.504,
+        "saturation": 0.281,
+        "pixel_saturation": 0.501,
+        "opaque_size": [
+          64,
+          64
+        ]
+      },
+      "tile": true,
+      "pixel_art": {
+        "colors": 64,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        2,
+        2
+      ]
+    }
+  ],
+  "extra_files": [
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_a@4x.png",
+      "sha256": "4174ab0e93d32bf3172f5e28df593de5f6df3de9d31ad373cc2b0bb4e2dabcda",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_b@4x.png",
+      "sha256": "0510b96cadfbdb5897ca880348ba4c5520e39468eea977962085155b14d37dcc",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_floor_worn@4x.png",
+      "sha256": "eb94c23daf95a6a9f83885e3f6b4a0b2b3582c1f8fd6079f7238191642a614d6",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_wall_top@4x.png",
+      "sha256": "57040d67909b36fc6f93a297e3382ef0eee77d0467b1673d1eb1f349c77bb4c4",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_wall_face@4x.png",
+      "sha256": "959e131a10e2e104f7cf63d7580d6a4f8c1bcbb68de518ed24119273fe9e9f22",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_cliff_face@4x.png",
+      "sha256": "2f8fd95145f853b9bd5d813031a5d8d2a75b1a942fec51cb164db2314e6a9b51",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_cliff_face_ivy@4x.png",
+      "sha256": "ada443928951fe77ac5cb677ca4f8e761d37a4289e4bd0208a3290f10247b163",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_grass@4x.png",
+      "sha256": "3f5cd704838cde239811aef9c9dcc1e1a69c6c10c8c2d1e1b4e6a8e87356993d",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_grass_flowers@4x.png",
+      "sha256": "c763d35c0087d399b8dd39468e0622d787b93afedd3254f57d57b23ac62b80c9",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_sea@4x.png",
+      "sha256": "1e3a7fe23cb8132aa889fcae8baaa97a3366eab263dd82cdbd9996f6a1a3e4d5",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/tile_sea_foam@4x.png",
+      "sha256": "3eabe12f948869547b36f6e5b6e736ebab18de31ed65017ba5d20d4bc3c7854c",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_tileset/hero_room_01_tileset_atlas.png",
+      "sha256": "59285a3b6dc24aada355ad9fd44a7deaeab54e6f3fd0e558723a3d0501e0236a",
+      "role": "tile atlas",
+      "pixel_size": [
+        256,
+        192
+      ],
+      "tile_px": [
+        64,
+        64
+      ]
+    }
+  ],
+  "qa": {
+    "problems": [],
+    "warnings": [],
+    "expected_warnings": [],
+    "pairs": [
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_floor_b.png",
+        "same": 15.62,
+        "mirror": 16.82,
+        "rot90": 22.02
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_floor_worn.png",
+        "same": 8.13,
+        "mirror": 17.64,
+        "rot90": 22.82
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_wall_top.png",
+        "same": 26.66,
+        "mirror": 26.05,
+        "rot90": 29.3
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_wall_face.png",
+        "same": 52.86,
+        "mirror": 53.53,
+        "rot90": 52.21
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_cliff_face.png",
+        "same": 66.39,
+        "mirror": 66.46,
+        "rot90": 66.39
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_cliff_face_ivy.png",
+        "same": 65.21,
+        "mirror": 65.01,
+        "rot90": 65.09
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_grass.png",
+        "same": 48.75,
+        "mirror": 49.4,
+        "rot90": 48.51
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_grass_flowers.png",
+        "same": 47.74,
+        "mirror": 48.42,
+        "rot90": 48.09
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_sea.png",
+        "same": 63.54,
+        "mirror": 63.87,
+        "rot90": 63.56
+      },
+      {
+        "a": "tile_floor_a.png",
+        "b": "tile_sea_foam.png",
+        "same": 69.47,
+        "mirror": 69.76,
+        "rot90": 69.55
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_floor_worn.png",
+        "same": 17.47,
+        "mirror": 18.37,
+        "rot90": 24.18
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_wall_top.png",
+        "same": 24.67,
+        "mirror": 23.64,
+        "rot90": 31.4
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_wall_face.png",
+        "same": 53.45,
+        "mirror": 53.5,
+        "rot90": 53.23
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_cliff_face.png",
+        "same": 66.44,
+        "mirror": 66.38,
+        "rot90": 66.4
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_cliff_face_ivy.png",
+        "same": 64.98,
+        "mirror": 65.04,
+        "rot90": 64.89
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_grass.png",
+        "same": 48.94,
+        "mirror": 48.86,
+        "rot90": 48.79
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_grass_flowers.png",
+        "same": 48.27,
+        "mirror": 48.25,
+        "rot90": 48.28
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_sea.png",
+        "same": 64.07,
+        "mirror": 63.85,
+        "rot90": 64.01
+      },
+      {
+        "a": "tile_floor_b.png",
+        "b": "tile_sea_foam.png",
+        "same": 69.56,
+        "mirror": 69.38,
+        "rot90": 71.21
+      },
+      {
+        "a": "tile_floor_worn.png",
+        "b": "tile_wall_top.png",
+        "same": 26.81,
+        "mirror": 25.3,
+        "rot90": 31.72
+      },
+      {
+        "a": "tile_floor_worn.png",
+        "b": "tile_wall_face.png",
+        "same": 51.31,
+        "mirror": 51.99,
+        "rot90": 51.15
+      },
+      {
+        "a": "tile_floor_worn.png",
+        "b": "tile_cliff_face.png",
+        "same": 64.5,
+        "mirror": 64.55,
+        "rot90": 64.58
+      },
+      {
+        "a": "tile_floor_worn.png",
+        "b": "tile_cliff_face_ivy.png",
+        "same": 63.42,
+        "mirror": 63.16,
+        "rot90": 63.25
+      },
+      {
+        "a": "tile_floor_worn.png",
+        "b": "tile_grass.png",
+        "same": 47.93,
+        "mirror": 48.13,
+        "rot90": 47.27
+      },
+      {
+        "a": "tile_floor_worn.png",
+        "b": "tile_grass_flowers.png",
+        "same": 46.5,
+        "mirror": 47.04,
+        "rot90": 46.86
+      },
+      {
+        "a": "tile_floor_worn.png",
+        "b": "tile_sea.png",
+        "same": 63.02,
+        "mirror": 62.83,
+        "rot90": 62.62
+      },
+      {
+        "a": "tile_floor_worn.png",
+        "b": "tile_sea_foam.png",
+        "same": 69.68,
+        "mirror": 69.43,
+        "rot90": 68.84
+      },
+      {
+        "a": "tile_wall_top.png",
+        "b": "tile_wall_face.png",
+        "same": 57.08,
+        "mirror": 56.8,
+        "rot90": 56.92
+      },
+      {
+        "a": "tile_wall_top.png",
+        "b": "tile_cliff_face.png",
+        "same": 68.82,
+        "mirror": 68.92,
+        "rot90": 68.51
+      },
+      {
+        "a": "tile_wall_top.png",
+        "b": "tile_cliff_face_ivy.png",
+        "same": 67.5,
+        "mirror": 67.48,
+        "rot90": 67.31
+      },
+      {
+        "a": "tile_wall_top.png",
+        "b": "tile_grass.png",
+        "same": 54.8,
+        "mirror": 55.15,
+        "rot90": 54.71
+      },
+      {
+        "a": "tile_wall_top.png",
+        "b": "tile_grass_flowers.png",
+        "same": 53.95,
+        "mirror": 53.83,
+        "rot90": 53.84
+      },
+      {
+        "a": "tile_wall_top.png",
+        "b": "tile_sea.png",
+        "same": 67.32,
+        "mirror": 67.65,
+        "rot90": 67.3
+      },
+      {
+        "a": "tile_wall_top.png",
+        "b": "tile_sea_foam.png",
+        "same": 70.75,
+        "mirror": 71.07,
+        "rot90": 73.15
+      },
+      {
+        "a": "tile_wall_face.png",
+        "b": "tile_cliff_face.png",
+        "same": 19.91,
+        "mirror": 20.54,
+        "rot90": 19.21
+      },
+      {
+        "a": "tile_wall_face.png",
+        "b": "tile_cliff_face_ivy.png",
+        "same": 18.81,
+        "mirror": 19.27,
+        "rot90": 18.64
+      },
+      {
+        "a": "tile_wall_face.png",
+        "b": "tile_grass.png",
+        "same": 30.46,
+        "mirror": 30.35,
+        "rot90": 29.96
+      },
+      {
+        "a": "tile_wall_face.png",
+        "b": "tile_grass_flowers.png",
+        "same": 30.83,
+        "mirror": 31.43,
+        "rot90": 31.43
+      },
+      {
+        "a": "tile_wall_face.png",
+        "b": "tile_sea.png",
+        "same": 55.54,
+        "mirror": 55.82,
+        "rot90": 55.42
+      },
+      {
+        "a": "tile_wall_face.png",
+        "b": "tile_sea_foam.png",
+        "same": 76.23,
+        "mirror": 76.27,
+        "rot90": 76.28
+      },
+      {
+        "a": "tile_cliff_face.png",
+        "b": "tile_cliff_face_ivy.png",
+        "same": 8.96,
+        "mirror": 8.71,
+        "rot90": 8.46
+      },
+      {
+        "a": "tile_cliff_face.png",
+        "b": "tile_grass.png",
+        "same": 30.24,
+        "mirror": 30.13,
+        "rot90": 29.92
+      },
+      {
+        "a": "tile_cliff_face.png",
+        "b": "tile_grass_flowers.png",
+        "same": 31.6,
+        "mirror": 31.47,
+        "rot90": 30.93
+      },
+      {
+        "a": "tile_cliff_face.png",
+        "b": "tile_sea.png",
+        "same": 56.58,
+        "mirror": 56.58,
+        "rot90": 56.49
+      },
+      {
+        "a": "tile_cliff_face.png",
+        "b": "tile_sea_foam.png",
+        "same": 80.64,
+        "mirror": 80.67,
+        "rot90": 80.48
+      },
+      {
+        "a": "tile_cliff_face_ivy.png",
+        "b": "tile_grass.png",
+        "same": 29.29,
+        "mirror": 29.19,
+        "rot90": 28.91
+      },
+      {
+        "a": "tile_cliff_face_ivy.png",
+        "b": "tile_grass_flowers.png",
+        "same": 30.26,
+        "mirror": 30.02,
+        "rot90": 29.94
+      },
+      {
+        "a": "tile_cliff_face_ivy.png",
+        "b": "tile_sea.png",
+        "same": 55.7,
+        "mirror": 55.7,
+        "rot90": 55.57
+      },
+      {
+        "a": "tile_cliff_face_ivy.png",
+        "b": "tile_sea_foam.png",
+        "same": 79.81,
+        "mirror": 80.01,
+        "rot90": 79.77
+      },
+      {
+        "a": "tile_grass.png",
+        "b": "tile_grass_flowers.png",
+        "same": 19.06,
+        "mirror": 19.23,
+        "rot90": 19.19
+      },
+      {
+        "a": "tile_grass.png",
+        "b": "tile_sea.png",
+        "same": 38.35,
+        "mirror": 37.91,
+        "rot90": 38.28
+      },
+      {
+        "a": "tile_grass.png",
+        "b": "tile_sea_foam.png",
+        "same": 61.65,
+        "mirror": 61.68,
+        "rot90": 61.44
+      },
+      {
+        "a": "tile_grass_flowers.png",
+        "b": "tile_sea.png",
+        "same": 38.75,
+        "mirror": 37.6,
+        "rot90": 37.42
+      },
+      {
+        "a": "tile_grass_flowers.png",
+        "b": "tile_sea_foam.png",
+        "same": 61.39,
+        "mirror": 60.43,
+        "rot90": 60.47
+      },
+      {
+        "a": "tile_sea.png",
+        "b": "tile_sea_foam.png",
+        "same": 29.98,
+        "mirror": 47.01,
+        "rot90": 46.95
+      }
+    ],
+    "seams": {
+      "tile_floor_a.png": [
+        0.32,
+        0.26
+      ],
+      "tile_floor_b.png": [
+        0.37,
+        0.3
+      ],
+      "tile_floor_worn.png": [
+        0.3,
+        0.32
+      ],
+      "tile_wall_top.png": [
+        0.28,
+        0.32
+      ],
+      "tile_wall_face.png": [
+        0.46,
+        0.35
+      ],
+      "tile_cliff_face.png": [
+        1.94,
+        1.52
+      ],
+      "tile_cliff_face_ivy.png": [
+        0.7,
+        1.34
+      ],
+      "tile_grass.png": [
+        0.65,
+        1.05
+      ],
+      "tile_grass_flowers.png": [
+        1.07,
+        1.71
+      ],
+      "tile_sea.png": [
+        1.4,
+        1.35
+      ],
+      "tile_sea_foam.png": [
+        1.59,
+        13.85
+      ]
+    }
+  },
+  "provenance": {
+    "tool": "blender",
+    "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
+    "spec": "tools/blender/specs/candidates/hero_room_01_tileset.json",
+    "toolkit_commit": "2dcec7ea92c5e7b2c9a2ca0f13c432b508c9ba72",
+    "producing_agent": "claude",
+    "ai_image_generation": false
+  },
+  "reference": {
+    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+    "sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+    "owner_confirmed": false
+  },
+  "review": {
+    "visual_approval": null,
+    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
+  },
+  "cost": "unknown"
+}

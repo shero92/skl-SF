@@ -455,6 +455,208 @@ def rope_fence(spec, facing):
     return objs, anchors
 
 
+# ---------------------------------------------------------------- map tiles (TASK-0066)
+# Each tile fills exactly one map cell (render_part frames it with "tile": true). Ground pieces use
+# lib.periodic_material and lib.wrap_copies, so a tile continues across every edge into its copies.
+
+def _periodic_rows(rows, offsets, r, min_w=0.3, max_w=0.6):
+    """Running-bond rows over [0, 1]: (x0, x1, row index) whose widths sum to 1 per row, starting
+    at the row's offset; rects crossing x = 1 are completed by the wrapped copies."""
+    rects = []
+    for i in range(rows):
+        widths = []
+        while sum(widths) < 1.0 - min_w:
+            widths.append(r.uniform(min_w, max_w))
+        widths.append(max(0.0, 1.0 - sum(widths)))
+        widths = [w for w in widths if w > 0.05]
+        k = 1.0 / sum(widths)
+        x = offsets[i % len(offsets)]
+        for w in widths:
+            rects.append((x, x + w * k, i))
+            x += w * k
+    return rects
+
+
+def _leaf_mesh(name, leaves, materials):
+    """One mesh of small diamond leaves (x, y, z, angle, length, width, lift, material index)."""
+    mesh = bpy.data.meshes.new(name)
+    bm = bmesh.new()
+    for x, y, z, a, length, width, lift, mi in leaves:
+        ca, sa = math.cos(a), math.sin(a)
+        pts = [(0.0, 0.0, 0.0), (length * 0.45, width, lift * 0.6), (length, 0.0, lift), (length * 0.45, -width, lift * 0.6)]
+        face = bm.faces.new([bm.verts.new((x + px * ca - py * sa, y + px * sa + py * ca, z + pz)) for px, py, pz in pts])
+        face.material_index = int(mi)
+    bm.to_mesh(mesh)
+    bm.free()
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.scene.collection.objects.link(obj)
+    for m in materials:
+        obj.data.materials.append(m)
+    for poly in obj.data.polygons:
+        poly.use_smooth = True
+    return obj
+
+
+def _flowers(name, spots, petal, heart):
+    """Five-petal flowers lying on the ground: (x, y, z, radius) each."""
+    mesh = bpy.data.meshes.new(name)
+    bm = bmesh.new()
+    for x, y, z, rad in spots:
+        for k in range(5):
+            a = k * 2 * math.pi / 5
+            tip = (x + math.cos(a) * rad, y + math.sin(a) * rad, z + rad * 0.2)
+            left = (x + math.cos(a - 0.5) * rad * 0.55, y + math.sin(a - 0.5) * rad * 0.55, z + rad * 0.1)
+            right = (x + math.cos(a + 0.5) * rad * 0.55, y + math.sin(a + 0.5) * rad * 0.55, z + rad * 0.1)
+            bm.faces.new([bm.verts.new((x, y, z)), bm.verts.new(left), bm.verts.new(tip), bm.verts.new(right)])
+        c = rad * 0.25
+        f = bm.faces.new([bm.verts.new((x - c, y - c, z + 0.012)), bm.verts.new((x + c, y - c, z + 0.012)),
+                          bm.verts.new((x + c, y + c, z + 0.012)), bm.verts.new((x - c, y + c, z + 0.012))])
+        f.material_index = 1
+    bm.to_mesh(mesh)
+    bm.free()
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.scene.collection.objects.link(obj)
+    obj.data.materials.append(petal)
+    obj.data.materials.append(heart)
+    return obj
+
+
+def _ground(name, mat, z=0.0, plane="xy"):
+    """A plane of 3x3 tiles behind the cell so the periodic texture fills every edge.
+    plane "xz" stands upright at y = z (backing of wall and cliff faces)."""
+    bpy.ops.mesh.primitive_plane_add(size=3.0, location=(0.5, 0.5, z) if plane == "xy" else (0.5, z, 0.5))
+    g = bpy.context.active_object
+    g.name = name
+    if plane == "xz":
+        g.rotation_euler.x = math.pi / 2
+    g.data.materials.append(mat)
+    return g
+
+
+def _pavers(p, r, objs):
+    """Floor / wall-top stones: running-bond rows of bevelled prisms (wrapped by the caller)."""
+    rows = p.get("rows", 2)
+    base, dark = p.get("stone_base", lib.GOLDEN_STONE[0]), p.get("stone_dark", lib.GOLDEN_STONE[1])
+    stones = [lib.periodic_material("paver_%d" % i, [(0.25, dark), (0.8, base)], scale=p.get("grain", 6.0),
+                                    seed=i * 3.1, bump=0.25, specular=p.get("specular", 0.2), roughness=0.85)
+              for i in range(3)]
+    mortar = lib.flat("mortar", p.get("mortar", (0.16, 0.09, 0.035)), roughness=1.0)
+    objs.append(_ground("mortar_bed", mortar, z=-0.05))
+    gap, h = p.get("joint", 0.035), 1.0 / rows
+    # Joints kept off the cell edges on both axes (row_offsets in x, row_shift in y), so the map
+    # grid does not show as a grout line around every tile; overhanging stones wrap to the far edge.
+    shift = p.get("row_shift", 0.2)
+    pieces = []
+    for x0, x1, i in _periodic_rows(rows, p.get("row_offsets", [0.15, 0.65]), r, p.get("min_w", 0.45), p.get("max_w", 0.55)):
+        y0, y1 = shift + i * h + gap / 2, shift + (i + 1) * h - gap / 2
+        a, b = x0 + gap / 2, x1 - gap / 2
+        outline = [(a, y0), (b, y0), (b, y1), (a, y1)]
+        if r.random() < p.get("wear", 0.0):
+            # A broken corner (counter-clockwise order kept) shows the mortar bed below.
+            c = r.randrange(4)
+            prev, cur, nxt = outline[c - 1], outline[c], outline[(c + 1) % 4]
+            d = r.uniform(0.07, 0.14)
+
+            def toward(q, t):
+                return (cur[0] + (q[0] - cur[0]) / max(1e-6, abs(q[0] - cur[0]) + abs(q[1] - cur[1])) * t,
+                        cur[1] + (q[1] - cur[1]) / max(1e-6, abs(q[0] - cur[0]) + abs(q[1] - cur[1])) * t)
+            a_, b_ = toward(prev, d), toward(nxt, d * r.uniform(0.6, 1.0))
+            jag = ((a_[0] + b_[0] + cur[0]) / 3, (a_[1] + b_[1] + cur[1]) / 3)
+            outline[c:c + 1] = [a_, jag, b_]
+        top = p.get("top", 0.0) + r.uniform(-0.008, 0.008)
+        pc = _prism("paver", outline, top, -0.06, stones[r.randrange(3)])
+        pc.modifiers["bevel"].width = p.get("bevel", 0.02)
+        pieces.append(pc)
+    return pieces
+
+
+def terrain_tile(spec, facing):
+    """One seamless 1x1 map tile of the Hero Room terrain. params.kind:
+    floor (sandstone pavers), wall_top (cap stones seen from above), wall_face (stone courses,
+    front facing south, z 0..1), cliff_face (rough rock, optional ivy), grass (cliff-top greenery,
+    optional flowers), sea (open water), sea_foam (water with foam toward the north edge; that
+    edge meets the cliff foot, so it is not periodic in y)."""
+    p = spec.get("params", {})
+    kind = p.get("kind", "floor")
+    r = lib.rng(p.get("seed", 1))
+    face = kind in ("wall_face", "cliff_face")
+    objs, wrapped = [], []
+    if kind in ("floor", "wall_top"):
+        wrapped = _pavers(p, r, objs)
+        if p.get("moss", 0):
+            green = lib.flat("moss", (0.07, 0.20, 0.04), roughness=0.7)
+            leaves = [(r.random(), r.random(), p.get("top", 0.0) + 0.005, r.uniform(0, 6.3), 0.05, 0.02, 0.02, 0)
+                      for _ in range(int(p["moss"]))]
+            wrapped.append(_leaf_mesh("moss", leaves, [green]))
+    elif kind == "wall_face":
+        base, dark = p.get("stone_base", lib.GOLDEN_STONE[0]), p.get("stone_dark", lib.GOLDEN_STONE[1])
+        stones = [lib.periodic_material("course_%d" % i, [(0.25, dark), (0.8, base)], scale=6.0, seed=i * 2.3,
+                                        bump=0.3, specular=0.2, plane="xz") for i in range(3)]
+        mortar = lib.flat("mortar", p.get("mortar", (0.16, 0.09, 0.035)), roughness=1.0)
+        objs.append(_ground("mortar_back", mortar, z=0.04, plane="xz"))
+        rows, gap = p.get("rows", 4), p.get("joint", 0.03)
+        h = 1.0 / rows
+        for x0, x1, i in _periodic_rows(rows, [0.0, 0.3, 0.6, 0.15], r, 0.3, 0.55):
+            size = (x1 - x0 - gap, 0.4, h - gap)
+            loc = ((x0 + x1) / 2, 0.2 + r.uniform(-0.012, 0.012), p.get("row_shift", 0.12) + i * h + h / 2)
+            wrapped.append(lib.block("course", size, loc, stones[r.randrange(3)], bevel=r.uniform(0.02, 0.035)))
+    elif kind == "cliff_face":
+        dark, base = p.get("rock_dark", (0.12, 0.08, 0.04)), p.get("rock_base", (0.42, 0.30, 0.16))
+        rock = lib.periodic_material("rock", [(0.2, dark), (0.85, base)], scale=5.0, seed=4.0, bump=0.5, plane="xz")
+        rocks = [lib.periodic_material("rock_%d" % i, [(0.2, dark), (0.85, base)], scale=7.0, seed=i * 1.7,
+                                       bump=0.6, plane="xz") for i in range(3)]
+        objs.append(_ground("rock_back", rock, z=0.08, plane="xz"))
+        for _ in range(p.get("boulders", 9)):
+            w, hgt = r.uniform(0.22, 0.42), r.uniform(0.18, 0.34)
+            b = lib.block("boulder", (w, 0.3, hgt), (r.random(), 0.05 + r.uniform(-0.03, 0.03), r.random()),
+                          rocks[r.randrange(3)], bevel=r.uniform(0.04, 0.08))
+            b.rotation_euler = (r.uniform(-0.25, 0.25), r.uniform(-0.3, 0.3), r.uniform(-0.15, 0.15))
+            wrapped.append(b)
+        if p.get("ivy", 0):
+            greens = [lib.flat("ivy", (0.10, 0.27, 0.07), roughness=0.55), lib.flat("ivy_dark", (0.05, 0.16, 0.04), roughness=0.6)]
+            leaves = []
+            for _ in range(int(p["ivy"])):
+                x, z = r.random(), r.random()
+                for k in range(r.randint(5, 10)):
+                    # Built flat in x/y (y standing for height), then stood up into the face below.
+                    leaves.append((x + r.uniform(-0.04, 0.04), z - k * 0.04, 0.0, r.uniform(0, 6.3), 0.06, 0.025, 0.0,
+                                   r.random() < 0.35))
+            ivy = _leaf_mesh("ivy", leaves, greens)
+            for v in ivy.data.vertices:
+                v.co = (v.co.x, -0.14 - r.uniform(0.0, 0.03), v.co.y)
+            wrapped.append(ivy)
+    elif kind == "grass":
+        ground = lib.periodic_material("soil", [(0.25, (0.04, 0.10, 0.02)), (0.8, (0.10, 0.22, 0.04))], scale=6.0, bump=0.4)
+        objs.append(_ground("soil", ground))
+        greens = [lib.flat("leaf_a", (0.10, 0.27, 0.06), roughness=0.55), lib.flat("leaf_b", (0.05, 0.16, 0.03), roughness=0.6),
+                  lib.flat("leaf_c", (0.22, 0.40, 0.08), roughness=0.5)]
+        leaves = []
+        for _ in range(p.get("clumps", 22)):
+            cx, cy = r.random(), r.random()
+            for _ in range(r.randint(5, 9)):
+                leaves.append((cx + r.uniform(-0.03, 0.03), cy + r.uniform(-0.03, 0.03), 0.0, r.uniform(0, 6.3),
+                               r.uniform(0.07, 0.13), r.uniform(0.02, 0.035), r.uniform(0.02, 0.08), r.randrange(3)))
+        wrapped.append(_leaf_mesh("leaves", leaves, greens))
+        if p.get("flowers", 0):
+            petal = lib.flat("petal", p.get("petal", (0.92, 0.90, 0.82)), roughness=0.45)
+            heart = lib.flat("heart", (0.85, 0.55, 0.08), roughness=0.5)
+            spots = [(r.random(), r.random(), 0.07, r.uniform(0.022, 0.035)) for _ in range(int(p["flowers"]))]
+            wrapped.append(_flowers("flowers", spots, petal, heart))
+    elif kind in ("sea", "sea_foam"):
+        stops = [(0.3, (0.0, 0.05, 0.22)), (0.55, (0.01, 0.20, 0.50)), (0.62, (0.25, 0.62, 0.85)), (0.66, (0.02, 0.24, 0.55))]
+        edge = ("y", 0.55, 1.0, (0.85, 0.92, 0.95)) if kind == "sea_foam" else None
+        water = lib.periodic_material("water", stops, scale=p.get("waves", 5.0), distortion=1.2, roughness=0.12,
+                                      bump=0.15, specular=0.5, edge=edge)
+        objs.append(_ground("water", water))
+    else:
+        raise ValueError("unknown terrain kind " + kind)
+    for w in wrapped:
+        objs += lib.wrap_copies(w, "xz" if face else "xy")
+    objs += wrapped
+    anchors = {"tile_top_left": Vector((0.0, 0.0, 1.0)) if face else Vector((0.0, 1.0, 0.0))}
+    return objs, anchors
+
+
 BUILDERS = {"calibration_tile": calibration_tile, "wall_run": wall_run, "broken_floor_edge": broken_floor_edge,
             "side_wall_path": side_wall_path, "entrance_stairs": entrance_stairs, "compass_inlay": compass_inlay,
-            "rope_fence": rope_fence}
+            "rope_fence": rope_fence, "terrain_tile": terrain_tile}
