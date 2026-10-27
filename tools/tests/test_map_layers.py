@@ -54,6 +54,25 @@ class FiveLevelMap(unittest.TestCase):
          {"op":"update_block","instance_id":self.wid,"set":{"x":300,"y":230}}]}))
         v3=mf.apply(self.root,link.relative_to(self.root))
         self.assertEqual(v3["layer_stack"]["passes"]["decorations"][0]["position"],[305.0,220.0])
+    def test_owner_shadows_track_mount_and_reject_host_removal(self):
+        contact={"type":"contact_medium"}
+        mf.apply(self.root,self._patch([
+         {"op":"update_block","instance_id":self.wid,"set":{"x":100,"y":200,"shadow":contact}},
+         {"op":"update_block","instance_id":self.pid,"set":{
+            "mount_on":self.wid,"mount_offset":[10,-50],"shadow":contact}}]))
+        stack=mf.get_latest(self.root,"hero_room_01")["layer_stack"]
+        shadows={s["owner_instance_id"]:s for s in stack["passes"]["shadows"]}
+        self.assertEqual(shadows[self.wid]["position"],[100.0,200.0])
+        self.assertEqual(shadows[self.pid]["position"],[110.0,150.0])
+        self.assertEqual(stack["passes"]["decorations"][0]["attachment"]["host_render_layer"],"walls")
+        self.assertLess(stack["display_z"]["shadows"],stack["display_z"]["walls"])
+        import json
+        removal=self.root/"map_factory/intake/pending/remove.json"
+        removal.write_text(json.dumps({"map_id":"hero_room_01","base_version":2,"changes":[
+         {"op":"remove_block","instance_id":self.wid}]}))
+        with self.assertRaisesRegex(ValueError,"Mount target not found"):
+            mf.apply(self.root,removal.relative_to(self.root))
+        self.assertEqual(mf.get_latest(self.root,"hero_room_01")["version"],2)
     def test_reject_unknown_mount(self):
         p=self._patch([{"op":"update_block","instance_id":self.pid,"set":{
             "mount_on":"NoSuchWall","mount_offset":[4,4]}}])

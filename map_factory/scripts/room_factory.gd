@@ -131,6 +131,8 @@ func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> vo
     decor.y_sort_enabled = true
     world_parent.add_child(decor)
     _place_compiled_entries(passes.get("decorations", []), decor)
+    var placed := _index_placements([background, overlays, walls, decor])
+    _mount_on_hosts(decor, placed, root)
 
     # Pass five: separate shadow instances, composited above floor but below
     # walls and decor. Processing last must NOT obscure their casting objects.
@@ -150,8 +152,87 @@ func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> vo
         layer_shadow.position = Vector2(float(xy[0]), float(xy[1]))
         var scale_value := float(record.get("scale", 1))
         layer_shadow.scale = Vector2.ONE * scale_value
-        layer_shadow.set_meta("owner_instance_id", String(record.get("owner_instance_id", "")))
+        var owner_id := String(record.get("owner_instance_id", ""))
+        layer_shadow.set_meta("owner_instance_id", owner_id)
         shadows.add_child(layer_shadow)
+        var owner: Node2D = placed.get(owner_id)
+        if owner != null:
+            layer_shadow.set_meta("owner_ref", owner.get_instance_id())
+            layer_shadow.set_meta("owner_offset", layer_shadow.position - room_transform(owner, root).origin)
+    _watch_links(root)
+
+# Instance-id lookup captured before mounting changes the hierarchy.
+func _index_placements(groups: Array) -> Dictionary:
+    var placed: Dictionary = {}
+    for group in groups:
+        for child in (group as Node).get_children():
+            if child is Node2D:
+                placed[String(child.name)] = child
+    return placed
+
+# A mounted decoration becomes a child of its host: it moves and is removed
+# with the host, and draws directly in front of the host inside its Y-sort slot
+# (a wall-hung item must not sort behind its wall by its higher anchor).
+func _mount_on_hosts(decor: Node2D, placed: Dictionary, room: Node2D) -> void:
+    for child in decor.get_children():
+        var node := child as Node2D
+        if node == null or not node.has_meta("mount_on"):
+            continue
+        var host: Node2D = placed.get(String(node.get_meta("mount_on")))
+        if host == null or host == node:
+            push_error("Mount host missing: " + String(node.name))
+            continue
+        var local := room_transform(host, room).affine_inverse() * room_transform(node, room)
+        decor.remove_child(node)
+        host.add_child(node)
+        node.transform = local
+        node.set_meta("mount_local_offset", local.origin)
+
+# Transform of a placement in room space; every pass group sits at the origin
+# but walking the chain keeps nested mounts exact.
+static func room_transform(node: Node2D, room: Node) -> Transform2D:
+    var xf := Transform2D.IDENTITY
+    var current: Node = node
+    while current != null and current != room:
+        if current is Node2D:
+            xf = (current as Node2D).transform * xf
+        current = current.get_parent()
+    return xf
+
+# Owner-linked shadows follow their owner and disappear when it is removed.
+static func sync_links(room: Node2D) -> void:
+    if not is_instance_valid(room):
+        return
+    var shadows := room.get_node_or_null("Level4_Shadows")
+    if shadows == null:
+        return
+    for child in shadows.get_children():
+        var shadow := child as Node2D
+        if shadow == null or not shadow.has_meta("owner_ref"):
+            continue
+        var owner := instance_from_id(int(shadow.get_meta("owner_ref"))) as Node2D
+        if owner == null or not is_instance_valid(owner) or owner.is_queued_for_deletion() \
+                or not room.is_ancestor_of(owner):
+            shadows.remove_child(shadow)
+            shadow.queue_free()
+            continue
+        shadow.position = room_transform(owner, room).origin + Vector2(shadow.get_meta("owner_offset", Vector2.ZERO))
+        shadow.visible = owner.is_visible_in_tree() if owner.is_inside_tree() else owner.visible
+
+static func _watch_links(room: Node2D) -> void:
+    var sync := RoomFactory.sync_links.bind(room)
+    var start := func() -> void:
+        var tree := room.get_tree()
+        if tree != null and not tree.process_frame.is_connected(sync):
+            tree.process_frame.connect(sync)
+    var stop := func() -> void:
+        var tree := room.get_tree()
+        if tree != null and tree.process_frame.is_connected(sync):
+            tree.process_frame.disconnect(sync)
+    room.tree_entered.connect(start)
+    room.tree_exiting.connect(stop)
+    if room.is_inside_tree():
+        start.call()
 
 func _place_compiled_entries(entries: Array, group: Node2D) -> void:
     for record in entries:
