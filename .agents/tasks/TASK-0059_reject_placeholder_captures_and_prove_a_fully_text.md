@@ -1,13 +1,13 @@
 ---
 id: TASK-0059
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: codex
+branch: work/task-0059-1b0566f0
 agent: codex
 touches: tools/goal_qa.py,tools/capture_map_previews.gd,tools/tests/test_art_delivery.py
 test: py -3 -m unittest discover -s tools/tests -p test_art_delivery.py
 done_when: Keep coding checkout image-free. Give only isolated deterministic renderer its required committed environment textures, including inherited sparse settings; verify actual loads for every rendered texture and fail before publishing if fallback/draft or resource missing. Receipt records texture inventory hashes and missing/fallback count, map commit/version/camera. Unit-test missing resources and real-render integration; capture v0011 or latest without viewing restricted art. Preserve historical files and final owner gate.
-started_at: unknown
+started_at: 2026-10-27T16:08:18.854251+00:00
 cost_usd: unknown
 depends_on: TASK-0037
 issue: none
@@ -42,3 +42,6 @@ Outcome: Keep coding checkout image-free. Give only isolated deterministic rende
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-27T16:08:18.843184+00:00
