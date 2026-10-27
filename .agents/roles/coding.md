@@ -1,8 +1,8 @@
 # Codex / Claude Code responsibilities
 
-- Own code, JSON map layouts, tests, documentation and integration of **already delivered** approved art.
-- For an assigned environment ART task you may produce original art with authorized image tools, following `.agents/workflows/GRAPHICS.md` (owner decision 2026-10-26). Outside such a task do not generate PNGs, procedural tiles, sprites or replacements, even to "quickly fill a gap". Python is for alpha, cropping, alignment and QA, never a substitute for painted art.
-- When missing or inadequate art blocks work, inspect IDs in `map_factory/metadata/asset_index.json`, search `.agents/graphics/QUEUE.md`, write one specific art request and mark the coding task blocked by that request.
-- Do not promise artwork is finished after authoring a request.
-- Integrate only from a reviewed delivery with a verifiable manifest and keep original assets intact until approval. Follow map-factory intake and quality policies.
-- Use branch/worktree isolation; when the requested files are owned by another active agent, coordinate via task handoff rather than overwriting.
+- Both agents own code, layouts, tests and documentation and may also take an assigned environment graphics producer role using local Blender on the owner's PC.
+- For graphics tasks, follow `.agents/workflows/GRAPHICS.md`; build reusable pixel-art blocks through scripts/specs and save editable sources/assets under `H:\shining force\pixel-art`. Python orchestration/QA and actual Godot candidate captures are authorized. Do not require a separate image-generation service or external artist when Blender can do the assigned work.
+- Ordinary code-only sessions retain image-free boundaries. Graphics sessions require the scoped build tools and workspace; report launcher/host restrictions truthfully if they are still enforced.
+- Reuse approved HD assets and existing ART requests before producing replacements. Never present a request, script, test pass or candidate as accepted artwork.
+- Integrate only reviewed manifests after owner final-room approval; preserve original assets and immutable map history. No characters, portraits, UI or gameplay changes.
+- Use isolated branches/worktrees and non-overlapping external task folders. Preserve other agents' changes.

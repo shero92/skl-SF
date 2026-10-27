@@ -1,0 +1,5 @@
+# Owner-requested local Blender graphics workspace (2026-10-28).
+# Project config applies after workspace trust; managed host policy still takes precedence.
+# Keep existing sandbox/approval/network behavior. Add only this named asset workspace.
+[sandbox_workspace_write]
+writable_roots = ['H:\shining force\pixel-art']
