@@ -179,21 +179,26 @@ def pixel_art(paths: list[Path], colors: int) -> list[list[int]]:
     return [flat[i:i + 3] for i in range(0, len(flat), 3)]
 
 
-def atlas(target: Path, request_id: str, files: list[dict], columns: int) -> dict:
-    """Pack equal-size tiles row by row into <request_id>_atlas.png (Godot TileSet atlas source).
-    Each file records its atlas cell; the atlas is listed with its SHA-256 as an extra file."""
+def atlas(target: Path, request_id: str, files: list[dict], columns: int, tile_px: int = 64) -> dict:
+    """Shelf-pack whole-cell tiles and props into <request_id>_atlas.png (Godot TileSet atlas source),
+    at most `columns` cells wide. Each file records atlas_cell (top-left, cells) and atlas_size (cells)."""
     from PIL import Image
     ims = [Image.open(ROOT / f["path"]) for f in files]
-    w, h = ims[0].size
-    rows = -(-len(ims) // columns)
-    sheet = Image.new("RGBA", (w * columns, h * rows))
-    for i, (f, im) in enumerate(zip(files, ims)):
-        sheet.paste(im, ((i % columns) * w, (i // columns) * h))
-        f["atlas_cell"] = [i % columns, i // columns]
+    x = y = row_h = 0
+    for f, im in zip(files, ims):
+        cw, ch = -(-im.width // tile_px), -(-im.height // tile_px)
+        if x and x + cw > columns:
+            x, y, row_h = 0, y + row_h, 0
+        f["atlas_cell"], f["atlas_size"] = [x, y], [cw, ch]
+        x, row_h = x + cw, max(row_h, ch)
+    width = max(f["atlas_cell"][0] + f["atlas_size"][0] for f in files)
+    sheet = Image.new("RGBA", (width * tile_px, (y + row_h) * tile_px))
+    for f, im in zip(files, ims):
+        sheet.paste(im, (f["atlas_cell"][0] * tile_px, f["atlas_cell"][1] * tile_px))
     path = target / (request_id + "_atlas.png")
     sheet.save(path)
     return {"path": path.relative_to(ROOT).as_posix(), "sha256": sha256(path), "role": "tile atlas",
-            "pixel_size": list(sheet.size), "tile_px": [w, h]}
+            "pixel_size": list(sheet.size), "tile_px": [tile_px, tile_px]}
 
 
 def deliver(art_id: str, blender: str | None = None, agent: str = "claude") -> dict:
@@ -235,7 +240,7 @@ def produce(spec_path: Path, spec: dict, target: Path, request_id: str, blender:
                 downscale(Path(tmp) / meta["shadow"], shadow, ss)
                 item["shadow"] = shadow.relative_to(ROOT).as_posix()
                 extra.append({"path": item["shadow"], "sha256": sha256(shadow), "role": "separate cast shadow"})
-            item["tile"] = bool(meta.get("tile"))
+            item["tile"], item["grid"] = bool(meta.get("tile")), meta.get("grid")
             files.append(item)
         pixel = spec.get("pixel_art")
         if pixel:
@@ -244,9 +249,10 @@ def produce(spec_path: Path, spec: dict, target: Path, request_id: str, blender:
                 f.update(sha256=sha256(ROOT / f["path"]), palette=palette(ROOT / f["path"]),
                          pixel_art={"colors": len(palette_rgb), "shared_palette": True})
         tiles = {Path(f["path"]).name for f in files if f["tile"]}
-        if spec.get("atlas") and len(tiles) == len(files):
+        grid = {Path(f["path"]).name for f in files if f["grid"]}
+        if spec.get("atlas") and len(tiles | grid) == len(files):
             extra.append(atlas(target, request_id, files, int(spec["atlas"].get("columns", 8))))
-        qa = art_qa.check(target, [Path(f["path"]).name for f in files], tiles=tiles)
+        qa = art_qa.check(target, [Path(f["path"]).name for f in files], tiles=tiles, grid=grid)
         wraps = {o["name"] + ".png": o.get("wrap", "xy") for o in spec["outputs"]}
         for info in qa["files"]:
             name = Path(info["path"]).name

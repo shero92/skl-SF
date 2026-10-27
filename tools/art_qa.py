@@ -32,7 +32,7 @@ def _seam(px, w, h, axis):
     return round(edge / max(inner, 1e-6), 2)
 
 
-def stats(path, tile=False):
+def stats(path, tile=False, grid=False):
     im = Image.open(path)
     info = {"path": Path(path).as_posix(), "mode": im.mode, "pixel_size": list(im.size),
             "sha256": hashlib.sha256(Path(path).read_bytes()).hexdigest(), "problems": []}
@@ -57,13 +57,16 @@ def stats(path, tile=False):
         info["seam_x"], info["seam_y"] = _seam(px, w, h, "x"), _seam(px, w, h, "y")
         return info, im
     corners = [a.getpixel(p) for p in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1))]
-    if max(int(c) for c in corners) > 16:
+    if grid:
+        # Grid-aligned props fill their cells: corners and edges may be covered by the footprint.
+        corners = []
+    if corners and max(int(c) for c in corners) > 16:
         info["problems"].append("corners not transparent (backing or full-frame image)")
     if transparent < 0.05:
         info["problems"].append("almost no transparency")
     alpha = _pixels(a)
     edge = alpha[:w] + alpha[-w:] + alpha[::w] + alpha[w - 1::w]
-    if sum(v > 200 for v in edge) / len(edge) > 0.25:
+    if not grid and sum(v > 200 for v in edge) / len(edge) > 0.25:
         info["problems"].append("content touches/clips the canvas edge")
     if partial > 0.15:
         info["problems"].append("large semi-transparent area (possible halo/fringe)")
@@ -95,7 +98,7 @@ def similarity(a, b):
     return round(sum(_pixels(diff)) / (size[0] * size[1]), 2)
 
 
-def check(folder, names, tiles=()):
+def check(folder, names, tiles=(), grid=()):
     """QA report for files in folder: per-file stats, pairwise comparison, problems and warnings."""
     report, images = {"files": [], "problems": [], "warnings": []}, {}
     for name in names:
@@ -103,7 +106,7 @@ def check(folder, names, tiles=()):
         if not path.is_file():
             report["files"].append({"path": path.as_posix(), "problems": ["missing"]})
             continue
-        info, im = stats(path, tile=name in tiles)
+        info, im = stats(path, tile=name in tiles, grid=name in grid)
         report["files"].append(info)
         images[name] = im
     keys = list(images)

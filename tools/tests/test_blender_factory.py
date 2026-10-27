@@ -207,6 +207,12 @@ class TileQA(unittest.TestCase):
                 entry = bf.atlas(target, "set", files, 2)
                 self.assertEqual(entry["pixel_size"], [128, 128])
                 self.assertEqual([f["atlas_cell"] for f in files], [[0, 0], [1, 0], [0, 1]])
+                Image.new("RGBA", (128, 192)).save(target / "big.png")
+                files = [{"path": p.relative_to(bf.ROOT).as_posix()} for p in paths[:2] + [target / "big.png"] + paths[2:]]
+                entry = bf.atlas(target, "set", files, 3)
+                self.assertEqual([(f["atlas_cell"], f["atlas_size"]) for f in files],
+                                 [([0, 0], [1, 1]), ([1, 0], [1, 1]), ([0, 1], [2, 3]), ([2, 1], [1, 1])])
+                self.assertEqual(entry["pixel_size"], [192, 256])
             finally:
                 for f in target.iterdir():
                     f.unlink()
@@ -301,6 +307,24 @@ class BlenderRenders(unittest.TestCase):
             self.assertEqual(report["problems"], [], report)
             for f in report["files"]:
                 self.assertLess(max(f["seam_x"], f["seam_y"]), 2.5, f)
+
+    def test_props_frame_whole_cells_with_the_footprint_at_the_bottom(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            spec = Path(tmp) / "spec.json"
+            spec.write_text(json.dumps({"builder": "chest", "projection": {"supersample": 1, "samples": 4},
+                                        "outputs": [{"name": "chest", "grid": [1, 1]},
+                                                    {"name": "bed", "builder": "bed", "grid": [2, 3]},
+                                                    {"name": "arch", "builder": "arch", "grid": [3, 1], "params": {"ivy": False}}]}))
+            metas = bf.render(spec, Path(tmp) / "out")
+            for meta in metas:
+                w, h = meta["frame_px"]
+                self.assertEqual((w % 64, h % 64), (0, 0), meta["name"])
+                self.assertEqual(w, meta["grid"][0] * 64, meta["name"])
+                self.assertEqual(meta["anchors_px"]["footprint_front_left"], [0.0, float(h)], meta["name"])
+            self.assertEqual([m["frame_px"][1] // 64 for m in metas], [2, 5, 5], "chest 1+1, bed 3+2, arch 1+4 rows")
+            names = [m["name"] + ".png" for m in metas]
+            report = art_qa.check(Path(tmp) / "out", names, grid=set(names))
+            self.assertEqual(report["problems"], [], report)
 
 
 if __name__ == "__main__":

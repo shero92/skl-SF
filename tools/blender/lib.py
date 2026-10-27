@@ -142,6 +142,22 @@ def frame_camera(objects, proj, extra_tiles=(0.0, 0.0, 0.0, 0.0), fixed=None):
     return {"umin": umin, "vmax": vmax, "px": px, "size": [width, height], "supersample": ss}
 
 
+def grid_window(objects, proj, grid):
+    """Image-plane window of whole map cells for a prop standing on a w x d footprint at the origin:
+    footprint in the bottom d rows, the rows above hold its height (fixed= of frame_camera)."""
+    deps = bpy.context.evaluated_depsgraph_get()
+    us, vs = [], []
+    for obj in objects:
+        ev = obj.evaluated_get(deps)
+        for corner in ev.bound_box:
+            u, v = projected(ev.matrix_world @ Vector(corner), proj)
+            us.append(u)
+            vs.append(v)
+    w, d = grid
+    return (min(0, math.floor(min(us) + 0.02)), max(w, math.ceil(max(us) - 0.02)),
+            min(0, math.floor(min(vs) + 0.02)), max(d, math.ceil(max(vs) - 0.02)))
+
+
 def to_pixels(frame, point, proj):
     u, v = projected(point, proj)
     return [round((u - frame["umin"]) * frame["px"] / frame["supersample"], 2),

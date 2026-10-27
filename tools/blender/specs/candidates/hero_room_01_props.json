@@ -1,0 +1,23 @@
+{
+  "candidate": "hero_room_01_props",
+  "task": "TASK-0067",
+  "builder": "bed",
+  "projection": {"world": {"color": [0.72, 0.58, 0.42], "strength": 0.25}},
+  "pixel_art": {"colors": 96},
+  "atlas": {"columns": 8},
+  "outputs": [
+    {"name": "prop_arch", "builder": "arch", "grid": [3, 1], "params": {"seed": 10}},
+    {"name": "prop_bed", "builder": "bed", "grid": [2, 3], "params": {"seed": 1}},
+    {"name": "prop_rug", "builder": "rug", "grid": [3, 2], "shadow": false},
+    {"name": "prop_study_table", "builder": "study_table", "grid": [2, 2], "params": {"seed": 2}},
+    {"name": "prop_bookshelf", "builder": "bookshelf", "grid": [2, 1], "params": {"seed": 3}},
+    {"name": "prop_column", "builder": "column", "grid": [1, 1], "params": {"seed": 9}},
+    {"name": "prop_banner", "builder": "banner", "grid": [1, 1]},
+    {"name": "prop_lantern", "builder": "lantern", "grid": [1, 1]},
+    {"name": "prop_chest", "builder": "chest", "grid": [1, 1], "params": {"seed": 4}},
+    {"name": "prop_vase", "builder": "vase", "grid": [1, 1]},
+    {"name": "prop_planter", "builder": "planter", "grid": [1, 1], "params": {"seed": 6}},
+    {"name": "prop_globe", "builder": "globe", "grid": [1, 1]}
+  ],
+  "notes": "TASK-0067 second tranche: grid-aligned 64 px props from the Hero Room reference. Each output frames whole cells with its footprint (grid w x d, front-left at the origin) in the bottom rows; transparent background, separate shadow, shared 96-colour palette, atlas_rect per prop for a Godot TileSet. Candidate pieces only; they do not fulfil ART-0001/0010/0011/0015/0019/0020/0021."
+}

@@ -35,6 +35,9 @@ def main():
             tw, th = piece["params"].get("tiles", [1, 1])
             out = {**out, "shadow": False}
             frame = lib.frame_camera(objects, proj, fixed=(0.0, tw, 0.0, th))
+        elif out.get("grid", spec.get("grid")):
+            # Map prop: whole 64 px cells, footprint (w x d cells from the origin) in the bottom rows.
+            frame = lib.frame_camera(objects, proj, fixed=lib.grid_window(objects, proj, out.get("grid", spec.get("grid"))))
         else:
             st = proj.get("shadow_padding_tiles", 1.0) if out.get("shadow", True) else 0.0
             frame = lib.frame_camera(objects, proj, extra_tiles=(0.1, st, st, 0.1))
@@ -46,7 +49,7 @@ def main():
         else:
             lib.render(color)
             shadow = None
-        meta = {"name": out["name"], "facing": out.get("facing", "south"), "tile": bool(tile), "builder": out.get("builder", spec["builder"]),
+        meta = {"name": out["name"], "facing": out.get("facing", "south"), "tile": bool(tile), "grid": out.get("grid", spec.get("grid")), "builder": out.get("builder", spec["builder"]),
                 "params": piece["params"], "frame_px": frame["size"], "supersample": frame["supersample"],
                 "anchors_px": {k: lib.to_pixels(frame, v, proj) for k, v in anchors.items()},
                 "color": os.path.basename(color), "shadow": os.path.basename(shadow) if shadow else None,

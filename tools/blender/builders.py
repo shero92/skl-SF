@@ -660,3 +660,7 @@ def terrain_tile(spec, facing):
 BUILDERS = {"calibration_tile": calibration_tile, "wall_run": wall_run, "broken_floor_edge": broken_floor_edge,
             "side_wall_path": side_wall_path, "entrance_stairs": entrance_stairs, "compass_inlay": compass_inlay,
             "rope_fence": rope_fence, "terrain_tile": terrain_tile}
+
+import props  # noqa: E402  (Hero Room props, TASK-0067; imports this module back)
+
+BUILDERS.update(props.BUILDERS)

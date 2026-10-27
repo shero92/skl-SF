@@ -35,5 +35,6 @@
 | TASK-0064 | codex | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 | TASK-0065 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 | TASK-0066 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
+| TASK-0067 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 
 Missing costs are unknown, not zero. Estimates are not subscription invoices.

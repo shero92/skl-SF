@@ -1,0 +1,1274 @@
+{
+  "request_id": "hero_room_01_props",
+  "task_id": "TASK-0067",
+  "status": "rendered_unreviewed",
+  "files": [
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_arch.png",
+      "sha256": "d6eccb057109f033602ac8a579c44e754ff3ba3b4ba3922f45c140cce640bdc3",
+      "pixel_size": [
+        192,
+        320
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          320.0
+        ]
+      },
+      "builder": "arch",
+      "params": {
+        "seed": 10
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_arch@4x.png",
+      "master_sha256": "438266a5eacf5f10be6b3c19884ca3977a462e6e5e39a35d198b5d13e03b8630",
+      "palette": {
+        "opaque_px": 28784,
+        "mean_rgb": [
+          129,
+          94,
+          48
+        ],
+        "hue_deg": 34,
+        "lightness": 0.347,
+        "saturation": 0.458,
+        "pixel_saturation": 0.476,
+        "opaque_size": [
+          172,
+          287
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_arch_shadow.png",
+      "tile": false,
+      "grid": [
+        3,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        0,
+        0
+      ],
+      "atlas_size": [
+        3,
+        5
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_bed.png",
+      "sha256": "5fae544df6f56cd1f51edce62d41a78e5e52af19cfc64d8e59fd2afb9f798cea",
+      "pixel_size": [
+        128,
+        320
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          320.0
+        ]
+      },
+      "builder": "bed",
+      "params": {
+        "seed": 1
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_bed@4x.png",
+      "master_sha256": "a552df09d479790c276a78e820f6fc92b2a3fb3f7f9778f3021952dbe03418d5",
+      "palette": {
+        "opaque_px": 30124,
+        "mean_rgb": [
+          104,
+          101,
+          105
+        ],
+        "hue_deg": 285,
+        "lightness": 0.404,
+        "saturation": 0.019,
+        "pixel_saturation": 0.452,
+        "opaque_size": [
+          124,
+          271
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_bed_shadow.png",
+      "tile": false,
+      "grid": [
+        2,
+        3
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        3,
+        0
+      ],
+      "atlas_size": [
+        2,
+        5
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_rug.png",
+      "sha256": "e3b91bc665082d5e049fdeaaa7bc995934e6ba4645b36d523e76eef6a9fdfc79",
+      "pixel_size": [
+        192,
+        128
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          128.0
+        ]
+      },
+      "builder": "rug",
+      "params": {},
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_rug@4x.png",
+      "master_sha256": "9432686b3e715715edb697d3fa2c5d64d061e7c0ebd17a98c7fb8ce69be43736",
+      "palette": {
+        "opaque_px": 20188,
+        "mean_rgb": [
+          86,
+          99,
+          130
+        ],
+        "hue_deg": 222,
+        "lightness": 0.424,
+        "saturation": 0.204,
+        "pixel_saturation": 0.412,
+        "opaque_size": [
+          184,
+          116
+        ]
+      },
+      "tile": false,
+      "grid": [
+        3,
+        2
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        5,
+        0
+      ],
+      "atlas_size": [
+        3,
+        2
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_study_table.png",
+      "sha256": "18273d40ef84c347a6bfd2057f3b59574238faeb558d45579743e050829ba5d3",
+      "pixel_size": [
+        128,
+        192
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          192.0
+        ]
+      },
+      "builder": "study_table",
+      "params": {
+        "seed": 2
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_study_table@4x.png",
+      "master_sha256": "4e3687ea5543ceedcb4df75fae7baf59f81c1d9a531c21b821ccac1373e12b57",
+      "palette": {
+        "opaque_px": 10773,
+        "mean_rgb": [
+          113,
+          90,
+          67
+        ],
+        "hue_deg": 30,
+        "lightness": 0.353,
+        "saturation": 0.256,
+        "pixel_saturation": 0.414,
+        "opaque_size": [
+          118,
+          153
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_study_table_shadow.png",
+      "tile": false,
+      "grid": [
+        2,
+        2
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        0,
+        5
+      ],
+      "atlas_size": [
+        2,
+        3
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_bookshelf.png",
+      "sha256": "2c0ba25401e30d1fa76ee92bc47cffda10ff9121c0a208eeaea7777c42fc491d",
+      "pixel_size": [
+        128,
+        192
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          192.0
+        ]
+      },
+      "builder": "bookshelf",
+      "params": {
+        "seed": 3
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_bookshelf@4x.png",
+      "master_sha256": "c089b3fe467a726a36d44bebad059f686b04159613c9394a5d77b6c560670db3",
+      "palette": {
+        "opaque_px": 16229,
+        "mean_rgb": [
+          91,
+          66,
+          41
+        ],
+        "hue_deg": 30,
+        "lightness": 0.259,
+        "saturation": 0.379,
+        "pixel_saturation": 0.432,
+        "opaque_size": [
+          128,
+          133
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_bookshelf_shadow.png",
+      "tile": false,
+      "grid": [
+        2,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        2,
+        5
+      ],
+      "atlas_size": [
+        2,
+        3
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_column.png",
+      "sha256": "2d683dca9f8daa53a97dbf027ec0c54d65b7bdf7bedbd6e7a40f13af94a48827",
+      "pixel_size": [
+        64,
+        256
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          256.0
+        ]
+      },
+      "builder": "column",
+      "params": {
+        "seed": 9
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_column@4x.png",
+      "master_sha256": "d1a0cbb9040ffdee9c5ea8a8e4021ddf60b7e34c66163a7faf03aef42f3c7b4c",
+      "palette": {
+        "opaque_px": 6760,
+        "mean_rgb": [
+          137,
+          98,
+          51
+        ],
+        "hue_deg": 33,
+        "lightness": 0.369,
+        "saturation": 0.457,
+        "pixel_saturation": 0.467,
+        "opaque_size": [
+          40,
+          204
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_column_shadow.png",
+      "tile": false,
+      "grid": [
+        1,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        4,
+        5
+      ],
+      "atlas_size": [
+        1,
+        4
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_banner.png",
+      "sha256": "ef2b9b1ee94a715f0aa6f1e768a4e199c23e637d5978bd59b5487fe8fe36a40f",
+      "pixel_size": [
+        64,
+        192
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          192.0
+        ]
+      },
+      "builder": "banner",
+      "params": {},
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_banner@4x.png",
+      "master_sha256": "93960b100c438f86bff6ae59a146b3690edf741f89a192daa3efbdf163f14528",
+      "palette": {
+        "opaque_px": 2974,
+        "mean_rgb": [
+          59,
+          63,
+          78
+        ],
+        "hue_deg": 227,
+        "lightness": 0.269,
+        "saturation": 0.139,
+        "pixel_saturation": 0.412,
+        "opaque_size": [
+          46,
+          82
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_banner_shadow.png",
+      "tile": false,
+      "grid": [
+        1,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        5,
+        5
+      ],
+      "atlas_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_lantern.png",
+      "sha256": "153630677236b188552d9501ee90b016349aaedd44ef448c355869a36bee4709",
+      "pixel_size": [
+        64,
+        192
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          192.0
+        ]
+      },
+      "builder": "lantern",
+      "params": {},
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_lantern@4x.png",
+      "master_sha256": "c177a2cd800bceb27353254b4802465c1d34234de766e94c67347ed0dec74b92",
+      "palette": {
+        "opaque_px": 590,
+        "mean_rgb": [
+          157,
+          126,
+          82
+        ],
+        "hue_deg": 35,
+        "lightness": 0.469,
+        "saturation": 0.314,
+        "pixel_saturation": 0.507,
+        "opaque_size": [
+          16,
+          51
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_lantern_shadow.png",
+      "tile": false,
+      "grid": [
+        1,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        6,
+        5
+      ],
+      "atlas_size": [
+        1,
+        3
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_chest.png",
+      "sha256": "362c0f077c8dbe722af706e48d1f123b788c15fc6d66510f31de7c75992f8705",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          128.0
+        ]
+      },
+      "builder": "chest",
+      "params": {
+        "seed": 4
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_chest@4x.png",
+      "master_sha256": "17fecbf7df9f46151222c058fbd7e34c33b2d10c1245bc619b6ffd977342c50a",
+      "palette": {
+        "opaque_px": 3690,
+        "mean_rgb": [
+          114,
+          80,
+          41
+        ],
+        "hue_deg": 32,
+        "lightness": 0.304,
+        "saturation": 0.471,
+        "pixel_saturation": 0.489,
+        "opaque_size": [
+          54,
+          74
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_chest_shadow.png",
+      "tile": false,
+      "grid": [
+        1,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        7,
+        5
+      ],
+      "atlas_size": [
+        1,
+        2
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_vase.png",
+      "sha256": "a4085d6427f6698aec8bab5e258f60e1cc5f1b828523e44b5b20f333ea28928c",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          128.0
+        ]
+      },
+      "builder": "vase",
+      "params": {},
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_vase@4x.png",
+      "master_sha256": "2119a3564a10bbc44e2d3696298d48c63153108c4cf7262c503d61c83dbea112",
+      "palette": {
+        "opaque_px": 889,
+        "mean_rgb": [
+          103,
+          104,
+          97
+        ],
+        "hue_deg": 69,
+        "lightness": 0.394,
+        "saturation": 0.035,
+        "pixel_saturation": 0.271,
+        "opaque_size": [
+          26,
+          49
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_vase_shadow.png",
+      "tile": false,
+      "grid": [
+        1,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        0,
+        9
+      ],
+      "atlas_size": [
+        1,
+        2
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_planter.png",
+      "sha256": "a8290b5d8109792132cde74e4895afbf53d9bf803d34512c0211e860b126a439",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          128.0
+        ]
+      },
+      "builder": "planter",
+      "params": {
+        "seed": 6
+      },
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_planter@4x.png",
+      "master_sha256": "f2e1e315570e6ef9c7d9fd8f36a891ecfc9d48ad3162c801f3d3240f71d532de",
+      "palette": {
+        "opaque_px": 2553,
+        "mean_rgb": [
+          93,
+          90,
+          64
+        ],
+        "hue_deg": 54,
+        "lightness": 0.308,
+        "saturation": 0.185,
+        "pixel_saturation": 0.285,
+        "opaque_size": [
+          58,
+          86
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_planter_shadow.png",
+      "tile": false,
+      "grid": [
+        1,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        1,
+        9
+      ],
+      "atlas_size": [
+        1,
+        2
+      ]
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_globe.png",
+      "sha256": "77799a7f03b91b646aa28693fa4a466148152e33be017774aba0e21e3fa394b0",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "footprint_front_left": [
+          0.0,
+          128.0
+        ]
+      },
+      "builder": "globe",
+      "params": {},
+      "master": "map_factory/candidates/renders/hero_room_01_props/prop_globe@4x.png",
+      "master_sha256": "f4e4633307c88a342efdbb9b117270781ed9b75088dee477319352bc26786dfa",
+      "palette": {
+        "opaque_px": 1709,
+        "mean_rgb": [
+          100,
+          83,
+          67
+        ],
+        "hue_deg": 29,
+        "lightness": 0.327,
+        "saturation": 0.198,
+        "pixel_saturation": 0.41,
+        "opaque_size": [
+          36,
+          76
+        ]
+      },
+      "shadow": "map_factory/candidates/renders/hero_room_01_props/prop_globe_shadow.png",
+      "tile": false,
+      "grid": [
+        1,
+        1
+      ],
+      "pixel_art": {
+        "colors": 96,
+        "shared_palette": true
+      },
+      "atlas_cell": [
+        2,
+        9
+      ],
+      "atlas_size": [
+        1,
+        2
+      ]
+    }
+  ],
+  "extra_files": [
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_arch@4x.png",
+      "sha256": "438266a5eacf5f10be6b3c19884ca3977a462e6e5e39a35d198b5d13e03b8630",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_arch_shadow.png",
+      "sha256": "b587fdc3c6dfaab6fe4dfd4238177ef1b7f18a8f52c48f237d965768c36039c3",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_bed@4x.png",
+      "sha256": "a552df09d479790c276a78e820f6fc92b2a3fb3f7f9778f3021952dbe03418d5",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_bed_shadow.png",
+      "sha256": "f2da3fd4706395f2f62fd3e406159ccdbcc98497b1d209d1526b9467ad0273ab",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_rug@4x.png",
+      "sha256": "9432686b3e715715edb697d3fa2c5d64d061e7c0ebd17a98c7fb8ce69be43736",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_study_table@4x.png",
+      "sha256": "4e3687ea5543ceedcb4df75fae7baf59f81c1d9a531c21b821ccac1373e12b57",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_study_table_shadow.png",
+      "sha256": "f94d43f0ae06dd6fbd145e6310687646e1b208b7a89de44114b0cb9aef577eb4",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_bookshelf@4x.png",
+      "sha256": "c089b3fe467a726a36d44bebad059f686b04159613c9394a5d77b6c560670db3",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_bookshelf_shadow.png",
+      "sha256": "68383ed71c103a0f1cf6348b5b5cf6ffbd3eb1d4ec773e16360c44992a244edb",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_column@4x.png",
+      "sha256": "d1a0cbb9040ffdee9c5ea8a8e4021ddf60b7e34c66163a7faf03aef42f3c7b4c",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_column_shadow.png",
+      "sha256": "4c3be7d8c417ee03cf5a43d76cc39ce98deb2bbc042c4ad590a0ceb4afa2c60a",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_banner@4x.png",
+      "sha256": "93960b100c438f86bff6ae59a146b3690edf741f89a192daa3efbdf163f14528",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_banner_shadow.png",
+      "sha256": "bae486afa09812e47ca0937c9f4aba2835900f5357bcf8e20ec7002a38d13880",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_lantern@4x.png",
+      "sha256": "c177a2cd800bceb27353254b4802465c1d34234de766e94c67347ed0dec74b92",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_lantern_shadow.png",
+      "sha256": "7d2218e9212b4e06c6acdadab53fe9903fa3671089e1875c2649e8932ced98e9",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_chest@4x.png",
+      "sha256": "17fecbf7df9f46151222c058fbd7e34c33b2d10c1245bc619b6ffd977342c50a",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_chest_shadow.png",
+      "sha256": "217884bc88ab77f48ed92299c21b99097074df5ed4e98633f7c88dd601006324",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_vase@4x.png",
+      "sha256": "2119a3564a10bbc44e2d3696298d48c63153108c4cf7262c503d61c83dbea112",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_vase_shadow.png",
+      "sha256": "3e9883e1e4717e8745eaea2fc838d24ae2a9b06f9ed2030730523a5cf4101119",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_planter@4x.png",
+      "sha256": "f2e1e315570e6ef9c7d9fd8f36a891ecfc9d48ad3162c801f3d3240f71d532de",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_planter_shadow.png",
+      "sha256": "1ab92c8d24d1eb50df99b3ec7b8592fac4b4e31a00fd433ca33ef501b73068c2",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_globe@4x.png",
+      "sha256": "f4e4633307c88a342efdbb9b117270781ed9b75088dee477319352bc26786dfa",
+      "role": "4x master"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/prop_globe_shadow.png",
+      "sha256": "d7c1ac9043ec29d9380223914902ab295f622c2854592384149d3a5194ebddc5",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": "map_factory/candidates/renders/hero_room_01_props/hero_room_01_props_atlas.png",
+      "sha256": "0af2056eac553b18a91d64279371bf2553abc4e71343a56b59f63fc8c54cfeb7",
+      "role": "tile atlas",
+      "pixel_size": [
+        512,
+        704
+      ],
+      "tile_px": [
+        64,
+        64
+      ]
+    }
+  ],
+  "qa": {
+    "problems": [],
+    "warnings": [],
+    "expected_warnings": [],
+    "pairs": [
+      {
+        "a": "prop_arch.png",
+        "b": "prop_bed.png",
+        "same": 69.33,
+        "mirror": 69.34,
+        "rot90": 63.05
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_rug.png",
+        "same": 56.11,
+        "mirror": 56.0,
+        "rot90": 55.8
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_study_table.png",
+        "same": 45.58,
+        "mirror": 45.76,
+        "rot90": 53.65
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_bookshelf.png",
+        "same": 48.47,
+        "mirror": 48.48,
+        "rot90": 52.22
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_column.png",
+        "same": 66.75,
+        "mirror": 66.59,
+        "rot90": 55.71
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_banner.png",
+        "same": 43.22,
+        "mirror": 43.18,
+        "rot90": 50.94
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_lantern.png",
+        "same": 52.33,
+        "mirror": 52.33,
+        "rot90": 55.39
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_chest.png",
+        "same": 57.84,
+        "mirror": 57.93,
+        "rot90": 42.15
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_vase.png",
+        "same": 62.07,
+        "mirror": 62.07,
+        "rot90": 54.27
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_planter.png",
+        "same": 61.55,
+        "mirror": 61.58,
+        "rot90": 60.33
+      },
+      {
+        "a": "prop_arch.png",
+        "b": "prop_globe.png",
+        "same": 60.69,
+        "mirror": 60.4,
+        "rot90": 58.9
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_rug.png",
+        "same": 48.38,
+        "mirror": 48.53,
+        "rot90": 48.67
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_study_table.png",
+        "same": 48.17,
+        "mirror": 48.3,
+        "rot90": 54.35
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_bookshelf.png",
+        "same": 47.94,
+        "mirror": 47.89,
+        "rot90": 44.66
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_column.png",
+        "same": 59.84,
+        "mirror": 59.84,
+        "rot90": 50.48
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_banner.png",
+        "same": 70.47,
+        "mirror": 70.47,
+        "rot90": 63.44
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_lantern.png",
+        "same": 74.29,
+        "mirror": 74.34,
+        "rot90": 72.86
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_chest.png",
+        "same": 49.39,
+        "mirror": 49.42,
+        "rot90": 55.06
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_vase.png",
+        "same": 69.44,
+        "mirror": 69.42,
+        "rot90": 68.54
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_planter.png",
+        "same": 56.29,
+        "mirror": 56.29,
+        "rot90": 57.56
+      },
+      {
+        "a": "prop_bed.png",
+        "b": "prop_globe.png",
+        "same": 62.12,
+        "mirror": 62.18,
+        "rot90": 63.05
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_study_table.png",
+        "same": 59.16,
+        "mirror": 59.17,
+        "rot90": 59.16
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_bookshelf.png",
+        "same": 53.56,
+        "mirror": 53.53,
+        "rot90": 52.99
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_column.png",
+        "same": 62.27,
+        "mirror": 62.24,
+        "rot90": 60.95
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_banner.png",
+        "same": 70.27,
+        "mirror": 70.27,
+        "rot90": 69.29
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_lantern.png",
+        "same": 81.21,
+        "mirror": 81.21,
+        "rot90": 81.18
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_chest.png",
+        "same": 59.03,
+        "mirror": 59.07,
+        "rot90": 58.63
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_vase.png",
+        "same": 77.08,
+        "mirror": 77.08,
+        "rot90": 77.15
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_planter.png",
+        "same": 65.93,
+        "mirror": 65.91,
+        "rot90": 65.9
+      },
+      {
+        "a": "prop_rug.png",
+        "b": "prop_globe.png",
+        "same": 71.69,
+        "mirror": 71.72,
+        "rot90": 71.61
+      },
+      {
+        "a": "prop_study_table.png",
+        "b": "prop_bookshelf.png",
+        "same": 32.84,
+        "mirror": 32.91,
+        "rot90": 36.06
+      },
+      {
+        "a": "prop_study_table.png",
+        "b": "prop_column.png",
+        "same": 43.91,
+        "mirror": 43.62,
+        "rot90": 36.16
+      },
+      {
+        "a": "prop_study_table.png",
+        "b": "prop_banner.png",
+        "same": 35.82,
+        "mirror": 35.82,
+        "rot90": 38.46
+      },
+      {
+        "a": "prop_study_table.png",
+        "b": "prop_lantern.png",
+        "same": 41.87,
+        "mirror": 41.73,
+        "rot90": 42.79
+      },
+      {
+        "a": "prop_study_table.png",
+        "b": "prop_chest.png",
+        "same": 43.99,
+        "mirror": 44.03,
+        "rot90": 33.58
+      },
+      {
+        "a": "prop_study_table.png",
+        "b": "prop_vase.png",
+        "same": 48.9,
+        "mirror": 48.9,
+        "rot90": 37.64
+      },
+      {
+        "a": "prop_study_table.png",
+        "b": "prop_planter.png",
+        "same": 37.39,
+        "mirror": 38.08,
+        "rot90": 40.68
+      },
+      {
+        "a": "prop_study_table.png",
+        "b": "prop_globe.png",
+        "same": 38.27,
+        "mirror": 37.62,
+        "rot90": 40.52
+      },
+      {
+        "a": "prop_bookshelf.png",
+        "b": "prop_column.png",
+        "same": 41.14,
+        "mirror": 41.35,
+        "rot90": 36.23
+      },
+      {
+        "a": "prop_bookshelf.png",
+        "b": "prop_banner.png",
+        "same": 42.48,
+        "mirror": 42.48,
+        "rot90": 38.7
+      },
+      {
+        "a": "prop_bookshelf.png",
+        "b": "prop_lantern.png",
+        "same": 46.88,
+        "mirror": 46.82,
+        "rot90": 47.87
+      },
+      {
+        "a": "prop_bookshelf.png",
+        "b": "prop_chest.png",
+        "same": 41.93,
+        "mirror": 41.73,
+        "rot90": 36.9
+      },
+      {
+        "a": "prop_bookshelf.png",
+        "b": "prop_vase.png",
+        "same": 46.25,
+        "mirror": 46.28,
+        "rot90": 44.93
+      },
+      {
+        "a": "prop_bookshelf.png",
+        "b": "prop_planter.png",
+        "same": 37.69,
+        "mirror": 37.81,
+        "rot90": 37.84
+      },
+      {
+        "a": "prop_bookshelf.png",
+        "b": "prop_globe.png",
+        "same": 41.26,
+        "mirror": 41.65,
+        "rot90": 40.15
+      },
+      {
+        "a": "prop_column.png",
+        "b": "prop_banner.png",
+        "same": 40.77,
+        "mirror": 40.77,
+        "rot90": 38.32
+      },
+      {
+        "a": "prop_column.png",
+        "b": "prop_lantern.png",
+        "same": 43.32,
+        "mirror": 43.34,
+        "rot90": 43.74
+      },
+      {
+        "a": "prop_column.png",
+        "b": "prop_chest.png",
+        "same": 42.85,
+        "mirror": 42.83,
+        "rot90": 32.03
+      },
+      {
+        "a": "prop_column.png",
+        "b": "prop_vase.png",
+        "same": 40.4,
+        "mirror": 40.46,
+        "rot90": 38.8
+      },
+      {
+        "a": "prop_column.png",
+        "b": "prop_planter.png",
+        "same": 34.73,
+        "mirror": 35.09,
+        "rot90": 34.41
+      },
+      {
+        "a": "prop_column.png",
+        "b": "prop_globe.png",
+        "same": 34.53,
+        "mirror": 34.1,
+        "rot90": 35.24
+      },
+      {
+        "a": "prop_banner.png",
+        "b": "prop_lantern.png",
+        "same": 17.95,
+        "mirror": 17.95,
+        "rot90": 21.41
+      },
+      {
+        "a": "prop_banner.png",
+        "b": "prop_chest.png",
+        "same": 46.55,
+        "mirror": 46.53,
+        "rot90": 29.18
+      },
+      {
+        "a": "prop_banner.png",
+        "b": "prop_vase.png",
+        "same": 27.02,
+        "mirror": 27.02,
+        "rot90": 17.6
+      },
+      {
+        "a": "prop_banner.png",
+        "b": "prop_planter.png",
+        "same": 29.76,
+        "mirror": 29.75,
+        "rot90": 28.9
+      },
+      {
+        "a": "prop_banner.png",
+        "b": "prop_globe.png",
+        "same": 23.15,
+        "mirror": 23.17,
+        "rot90": 24.79
+      },
+      {
+        "a": "prop_lantern.png",
+        "b": "prop_chest.png",
+        "same": 43.22,
+        "mirror": 43.22,
+        "rot90": 37.03
+      },
+      {
+        "a": "prop_lantern.png",
+        "b": "prop_vase.png",
+        "same": 18.57,
+        "mirror": 18.57,
+        "rot90": 10.42
+      },
+      {
+        "a": "prop_lantern.png",
+        "b": "prop_planter.png",
+        "same": 27.22,
+        "mirror": 27.14,
+        "rot90": 29.22
+      },
+      {
+        "a": "prop_lantern.png",
+        "b": "prop_globe.png",
+        "same": 19.64,
+        "mirror": 19.84,
+        "rot90": 20.52
+      },
+      {
+        "a": "prop_chest.png",
+        "b": "prop_vase.png",
+        "same": 35.44,
+        "mirror": 35.44,
+        "rot90": 35.44
+      },
+      {
+        "a": "prop_chest.png",
+        "b": "prop_planter.png",
+        "same": 33.9,
+        "mirror": 33.95,
+        "rot90": 32.8
+      },
+      {
+        "a": "prop_chest.png",
+        "b": "prop_globe.png",
+        "same": 33.2,
+        "mirror": 33.17,
+        "rot90": 32.98
+      },
+      {
+        "a": "prop_vase.png",
+        "b": "prop_planter.png",
+        "same": 25.69,
+        "mirror": 25.85,
+        "rot90": 24.4
+      },
+      {
+        "a": "prop_vase.png",
+        "b": "prop_globe.png",
+        "same": 19.83,
+        "mirror": 19.77,
+        "rot90": 17.51
+      },
+      {
+        "a": "prop_planter.png",
+        "b": "prop_globe.png",
+        "same": 20.17,
+        "mirror": 20.05,
+        "rot90": 21.76
+      }
+    ],
+    "seams": {}
+  },
+  "provenance": {
+    "tool": "blender",
+    "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
+    "spec": "tools/blender/specs/candidates/hero_room_01_props.json",
+    "toolkit_commit": "7f10affe90818cdb650b7d15f5badb7f2aba850b",
+    "producing_agent": "claude",
+    "ai_image_generation": false
+  },
+  "reference": {
+    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+    "sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+    "owner_confirmed": false
+  },
+  "review": {
+    "visual_approval": null,
+    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
+  },
+  "cost": "unknown"
+}

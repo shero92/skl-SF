@@ -1,0 +1,17 @@
+{
+  "agent": "claude",
+  "cost_usd": null,
+  "coverage": "partial",
+  "ended_at": "2026-10-27T22:46:32.931747+00:00",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "schema": 1,
+  "session_count": 1,
+  "source": [
+    "old_session_unattributable"
+  ],
+  "started_at": "2026-10-27T22:40:21.077092+00:00",
+  "task_id": "TASK-0067",
+  "tokens": null
+}
