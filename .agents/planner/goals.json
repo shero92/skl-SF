@@ -15,6 +15,110 @@
       "milestone_notes": "Step depends_on accepts only existing TASK-#### IDs, so milestone order is recorded in 'after' (step keys) and must be translated to TASK dependencies when tasks are created. Run order: m1 -> m8 -> {m2, m5} -> {m3, m4} -> m6 -> {m7, m9} -> m10.",
       "steps": [
         {
+          "key": "recovery-runner-readiness",
+          "title": "Fix safe test routing and bounded manual session readiness",
+          "file": "tools/runner_safety.py",
+          "touches": [
+            "tools/runner_safety.py",
+            "tools/manual_agents.py",
+            "tools/tests/test_manual_agents.py",
+            "tools/tests/test_runner_parallel.py"
+          ],
+          "agent": "claude",
+          "problem": "TASK-0041 was blocked with Only allowlisted router tests permitted: art_delivery is a registered suite but safe_test excludes it. A 30-minute session silently skips pulse/start because per-task timeout is also 1800 seconds.",
+          "done_when": "Accept explicitly trusted existing router suite names including art_delivery without shell/arbitrary command expansion; regression-test TASK-0041 command. Pulse independent of task execution budget. Explain no-ready/quota/time outcomes; respect global deadline and preserve work. One ordinary repair only; no security changes. Infrastructure PR required.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_manual_agents.py",
+          "after": [],
+          "depends_on": [],
+          "priority": "critical",
+          "kind": "bug",
+          "new_graphics_required": false,
+          "task_id": "TASK-0058"
+        },
+        {
+          "key": "recovery-textured-capture",
+          "title": "Reject placeholder captures and prove a fully textured isolated Godot render",
+          "file": "tools/goal_qa.py",
+          "touches": [
+            "tools/goal_qa.py",
+            "tools/capture_map_previews.gd",
+            "tools/tests/test_art_delivery.py"
+          ],
+          "agent": "codex",
+          "problem": "HERO_ROOM_CALIBRATION section 1 identifies capture c8558d87 as labelled draft placeholders; goal_qa creates a renderer worktree without explicitly clearing inherited sparse checkout. Existing receipt authenticates PNG bytes but not successful texture loads.",
+          "done_when": "Keep coding checkout image-free. Give only isolated deterministic renderer its required committed environment textures, including inherited sparse settings; verify actual loads for every rendered texture and fail before publishing if fallback/draft or resource missing. Receipt records texture inventory hashes and missing/fallback count, map commit/version/camera. Unit-test missing resources and real-render integration; capture v0011 or latest without viewing restricted art. Preserve historical files and final owner gate.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_art_delivery.py",
+          "after": [],
+          "depends_on": [
+            "TASK-0037"
+          ],
+          "priority": "critical",
+          "kind": "bug",
+          "new_graphics_required": false,
+          "task_id": "TASK-0059"
+        },
+        {
+          "key": "recovery-queue-evidence-audit",
+          "title": "Audit stale recovery review records against merged evidence",
+          "file": "map_factory/maps/hero_room_01/recovery_queue_audit.json",
+          "touches": [
+            "map_factory/maps/hero_room_01/recovery_queue_audit.json"
+          ],
+          "agent": "claude",
+          "problem": "TASK-0053 and TASK-0054..0057 remain review while main log includes subsequent merged PRs. Blender candidate delivery or numerical similarity is not art approval. TASK-0007 operating evidence also needs documentary reconciliation.",
+          "done_when": "Write bounded text-only JSON audit for review/blocked tasks: canonical ID, branch/PR/merge SHA, observed test evidence or unknown, proposed state and exact outstanding blocker. Never mark visual work approved; distinguish infrastructure merge from art acceptance. Only propose canonical updates for main-side coordinator; no duplicate implementation or changes to art/security.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_agent_workflow.py",
+          "after": [],
+          "depends_on": [],
+          "priority": "high",
+          "kind": "investigation",
+          "new_graphics_required": false,
+          "task_id": "TASK-0060"
+        },
+        {
+          "key": "recovery-depth-comparison",
+          "title": "Prepare genuine eight-versus-ten-row Hero Room comparison",
+          "file": "tools/capture_map_previews.gd",
+          "touches": [
+            "tools/capture_map_previews.gd",
+            "tools/goal_qa.py",
+            "tools/tests/test_art_delivery.py",
+            "map_factory/candidates/"
+          ],
+          "agent": "codex",
+          "problem": "Calibration decision D1 is open: source tile about 104x62 while logical grid is 64x64. Owner selected visual comparison first, not automatic eight-row adoption.",
+          "done_when": "Produce two isolated unapproved candidate captures using same real textures, camera, source hash and upright scale; only floor-depth/layout variant differs (8 versus 10 rows). Keep registered maps immutable and characters/UI excluded. Record reproducible candidate specs and metadata, local PNG evidence, known limitations. Compare v0011 composition, do not adopt projection or fabricate owner choice.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_art_delivery.py",
+          "after": [
+            "recovery-runner-readiness",
+            "recovery-textured-capture"
+          ],
+          "depends_on": [],
+          "priority": "high",
+          "kind": "feature",
+          "new_graphics_required": false
+        },
+        {
+          "key": "recovery-art-disposition",
+          "title": "Review depth comparison and existing art before production or integration",
+          "file": "docs/HERO_ROOM_CALIBRATION.md",
+          "touches": [
+            "docs/HERO_ROOM_CALIBRATION.md",
+            ".agents/graphics/requests/"
+          ],
+          "agent": "specialist",
+          "problem": "Owner requested visual comparison before D1 decision; ART-0004/0014 and Blender v4 remain visually unapproved; ART-0022..0025 are requested and existing HD reuse decisions need independent evidence.",
+          "done_when": "Independent authorized reviewer inspects actual textured candidates and native assets; owner selects floor depth and explicitly decides omissions/substitutions. Amend existing ART specs with final dimensions and reuse/repair/new/deferred decisions, not duplicate requests. Keep procedural candidates unapproved until real review; missing approved image tool blocks production only. Require producer/reviewer separation and owner art approval; never infer room approval.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_agent_workflow.py",
+          "after": [
+            "recovery-depth-comparison"
+          ],
+          "depends_on": [],
+          "priority": "high",
+          "kind": "feature",
+          "new_graphics_required": false
+        },
+        {
           "key": "g1-m1-gap-audit",
           "title": "Map the GOAL-0001 written spec to existing asset IDs and gaps",
           "problem": "No table links each item of the goal.md spec to an existing asset ID or a missing-art gap per level 0-4",
@@ -246,7 +350,9 @@
           "agent": "codex",
           "after": [
             "recovery-calibration",
-            "recovery-immutable"
+            "recovery-immutable",
+            "recovery-art-disposition",
+            "recovery-runner-readiness"
           ],
           "depends_on": [],
           "done_when": "Only signed reviewed delivery bytes integrated by authorized integrator; stable IDs/provenance preserved and measured contracts recorded; no HD reinstallation",
@@ -312,7 +418,7 @@
           "title": "Record first-room acceptance dossier",
           "file": "tools/goal_qa.py",
           "touches": [
-            ".agents/qa/results/"
+            "map_factory/maps/hero_room_01/acceptance.json"
           ],
           "agent": "claude",
           "after": [
@@ -320,7 +426,7 @@
           ],
           "depends_on": [],
           "done_when": "Authorized real capture and source comparison identify map commit/version and camera; owner signs zero unresolved critical defects; broader goal remains unverified while deferred work remains",
-          "test": "py -3 tools/run_tests.py --only goal_qa --only map_registry_validate",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_art_delivery.py",
           "kind": "feature",
           "priority": "high",
           "problem": "Owner-approved recovery audit: Record first-room acceptance dossier",
@@ -594,7 +700,14 @@
         ],
         "activated": "2026-10-26 by owner: automation creates tasks from these steps; no daily cap"
       },
-      "reference_manifest": "map_factory/references/hero_room_01_original.reference.json"
+      "reference_manifest": "map_factory/references/hero_room_01_original.reference.json",
+      "recovery_execution_decision": {
+        "date": "2026-10-27",
+        "source": "Owner asked to register approved plan tasks and run both agents manually",
+        "floor_depth": "Compare genuine eight-row and ten-row candidates before owner decision",
+        "final_verified": false,
+        "execution": "Existing manual PowerShell launcher; no new schedule or privilege changes"
+      }
     }
   ]
 }
