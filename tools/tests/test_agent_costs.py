@@ -222,5 +222,67 @@ class CostTests(unittest.TestCase):
         self.assertEqual(doc["missing_cost_receipts"], 1)
         self.assertEqual(doc["tasks"][0]["known_usd"], 0)
 
+    def claude_prices(self):
+        pricing = self.root / ".agents/monitoring/pricing.json"
+        pricing.parent.mkdir(parents=True, exist_ok=True)
+        pricing.write_text(json.dumps({"models": {"claude-opus-5-5": {
+            "input_per_million": 4, "cached_input_per_million": 0.2,
+            "output_per_million": 20, "cache_creation_5m_per_million": 5,
+            "cache_creation_1h_per_million": 8}}}))
+
+    def assistant(self, stamp, msg_id, tokens, out):
+        row = {"type": "assistant", "message": {"id": msg_id, "model": "claude-opus-5-5",
+               "usage": {"input_tokens": tokens, "output_tokens": out}}}
+        if stamp:
+            row["timestamp"] = stamp
+        return row
+
+    def test_session_opened_before_start_counts_only_later_usage(self):
+        # Regression: `start` run inside an open claude -p session used to drop the
+        # whole session (old_session_unattributable) and record unknown tokens/cost.
+        log = self.root / "claude.jsonl"
+        log.write_text("\n".join(json.dumps(x) for x in [
+            self.assistant("2000-01-01T00:00:00Z", "before", 900000, 9000),
+            self.assistant("2999-01-01T00:00:00Z", "after", 1000, 100)]) + "\n")
+        self.claude_prices()
+        self.invoke("start", "TASK-0094", "--agent", "claude")
+        # The statusline total covers the whole session, so it must not be billed to the task.
+        self.invoke("hook", "--agent", "claude",
+                    event={"session_id": "late", "transcript_path": str(log), "cost": {"total_cost_usd": 9.5}})
+        self.invoke("finish")
+        receipt = json.loads(self.receipts()[0].read_text())
+        self.assertEqual(receipt["tokens"]["input_tokens"], 1000)
+        self.assertEqual(receipt["tokens"]["output_tokens"], 100)
+        self.assertEqual(receipt["cost_usd"], 0.006)
+        self.assertEqual(receipt["source"], ["usage_after_start_only"])
+        self.assertEqual(receipt["coverage"], "complete")
+
+    def test_late_codex_session_subtracts_cumulative_total_before_start(self):
+        log = self.root / "codex.jsonl"
+        total = lambda stamp, n: {"timestamp": stamp, "type": "event_msg", "payload": {"type": "token_count",
+            "info": {"total_token_usage": {"input_tokens": n, "cached_input_tokens": 0, "output_tokens": n // 10}}}}
+        log.write_text("\n".join(json.dumps(x) for x in [
+            total("2000-01-01T00:00:00Z", 1000), total("2999-01-01T00:00:00Z", 1600)]) + "\n")
+        self.invoke("start", "TASK-0093", "--agent", "codex")
+        self.invoke("hook", "--agent", "codex", event={"session_id": "late-codex", "transcript_path": str(log)})
+        self.invoke("finish")
+        receipt = json.loads(self.receipts()[0].read_text())
+        self.assertEqual(receipt["tokens"]["input_tokens"], 600)
+        self.assertEqual(receipt["tokens"]["output_tokens"], 60)
+
+    def test_late_session_with_undated_usage_stays_unknown(self):
+        log = self.root / "claude.jsonl"
+        log.write_text("\n".join(json.dumps(x) for x in [
+            self.assistant("2000-01-01T00:00:00Z", "before", 900, 90),
+            self.assistant(None, "undated", 1000, 100)]) + "\n")
+        self.claude_prices()
+        self.invoke("start", "TASK-0092", "--agent", "claude")
+        self.invoke("hook", "--agent", "claude", event={"session_id": "undated", "transcript_path": str(log)})
+        self.invoke("finish")
+        receipt = json.loads(self.receipts()[0].read_text())
+        self.assertIsNone(receipt["tokens"])
+        self.assertIsNone(receipt["cost_usd"])
+        self.assertIn("old_session_unattributable", receipt["source"])
+
 if __name__ == "__main__":
     unittest.main()

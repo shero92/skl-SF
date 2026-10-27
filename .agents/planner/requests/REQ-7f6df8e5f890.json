@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "agent_costs: count usage after started_at for sessions opened before start",
+  "problem": "Prompt-driven runs (claude -p) and interactive sessions run agent_costs start inside an already-open session; finish drops the whole session as old_session_unattributable, so receipts record unknown tokens/cost (19 of 23 tasks, e.g. TASK-0038, TASK-0054)",
+  "file": "tools/agent_costs.py",
+  "line": null,
+  "done_when": "A session that started before start contributes only the usage of transcript messages timestamped at or after started_at; untimestamped usage in such a session stays unknown; fresh sessions are unchanged; regression tests cover Claude and Codex transcripts",
+  "test": "py -3 tools/run_tests.py --only agent_costs",
+  "priority": "high",
+  "kind": "bug",
+  "agent": "claude",
+  "task_id": "TASK-0055"
+}
