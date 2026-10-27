@@ -419,6 +419,13 @@ def preflight(root,agents):
     missing=[name for name in ["git","gh",*agents] if shutil.which(name) is None]
     if missing:raise CoordinatorError("Missing required CLI: "+", ".join(missing))
     with bind_runner(root):ar.execution_gate(ar.read_json(ar.CONFIG,{}))
+    probes=[["gh","auth","status","--active"]]
+    probes.extend(["codex","login","status"] if name=="codex" else ["claude","auth","status"] for name in agents)
+    for command in probes:
+        result=ar.execute(command,root,timeout=30,check=False)
+        if result.returncode:
+            # Never echo authentication output, accounts, keys or tokens.
+            raise CoordinatorError(command[0]+" authentication is unavailable; sign in before starting model tasks")
 
 
 def main(argv=None):
@@ -437,7 +444,8 @@ def main(argv=None):
         print(json.dumps({"dry_run":True,"tasks":queue_snapshot(source,args.agents,args.include_art)},indent=2))
         return 0
     started=time.monotonic();deadline=started+args.max_minutes*60
-    preflight(source,args.agents)
+    with ar.execution_budget(deadline,repair_attempts=0):
+        preflight(source,args.agents)
     with repository_lease(source):
         root=coordinator(source,deadline)
         remaining=(deadline-time.monotonic())/60

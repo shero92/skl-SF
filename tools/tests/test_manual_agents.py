@@ -186,5 +186,19 @@ class ManualSessionTests(unittest.TestCase):
         result=manual.run_batch(self.root,["codex","claude"],max_tasks=1,executor=execute)
         self.assertEqual(result["attempted"],1)
 
+    def test_failed_cli_auth_stops_before_coordinator_or_model(self):
+        with patch.object(manual.shutil,"which",return_value="installed"), \
+             patch.object(ar,"execute",return_value=subprocess.CompletedProcess([],1,"secret-output","secret-error")):
+            with self.assertRaisesRegex(manual.CoordinatorError,"gh authentication") as error:
+                manual.preflight(self.root,["codex","claude"])
+        self.assertNotIn("secret",str(error.exception))
+
+    def test_auth_probes_do_not_invoke_models(self):
+        with patch.object(manual.shutil,"which",return_value="installed"), \
+             patch.object(ar,"execute",return_value=subprocess.CompletedProcess([],0,"","")) as execute:
+            manual.preflight(self.root,["codex","claude"])
+        self.assertEqual([c.args[0]for c in execute.call_args_list],
+            [["gh","auth","status","--active"],["codex","login","status"],["claude","auth","status"]])
+
 
 if __name__=="__main__":unittest.main()
