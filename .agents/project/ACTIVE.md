@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| claude | TASK-0058 | tools/runner_safety.py, tools/manual_agents.py, tools/tests/test_manual_agents.py, tools/tests/test_runner_parallel.py | 2026-10-27T16:08:22.621530+00:00 | in_progress | unknown |
+| — | none | — | — | — | — |
