@@ -12,6 +12,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`2026-10-26.md`](2026-10-26.md)
 - [`2026-10-27.md`](2026-10-27.md)
+- [`2026-10-28.md`](2026-10-28.md)
 - [`README.md`](README.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
