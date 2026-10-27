@@ -9,7 +9,7 @@ test: py -3 -m unittest discover -s tools/tests -p test_art_delivery.py
 done_when: Keep coding checkout image-free. Give only isolated deterministic renderer its required committed environment textures, including inherited sparse settings; verify actual loads for every rendered texture and fail before publishing if fallback/draft or resource missing. Receipt records texture inventory hashes and missing/fallback count, map commit/version/camera. Unit-test missing resources and real-render integration; capture v0011 or latest without viewing restricted art. Preserve historical files and final owner gate.
 started_at: 2026-10-27T16:08:18.854251+00:00
 cost_usd: unknown
-depends_on: TASK-0037
+depends_on: TASK-0037,TASK-0061
 issue: none
 art_request: none
 ---
@@ -48,3 +48,8 @@ Outcome: Keep coding checkout image-free. Give only isolated deterministic rende
 
 ## Runner evidence
 - Runner failed: Agent did not change any allowed code
+
+## Confirmed worker failure and retry gate
+- Codex JSONL final response: no local file reader available without shell; shell is prohibited by runner prompt. No allowed code changed. This was a capability failure, not a successful capture.
+- Retry only after TASK-0061 is merged/done; preserve failed worktree and transcript.
+**Blocked by:** dependencies (the pulse promotes this task to todo once they are done)
