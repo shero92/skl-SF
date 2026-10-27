@@ -60,5 +60,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0052_original_hero_room_reference.md`](TASK-0052_original_hero_room_reference.md)
 - [`TASK-0053_pulse_specialist_scope.md`](TASK-0053_pulse_specialist_scope.md)
 - [`TASK-0054_hero_room_blender_v4.md`](TASK-0054_hero_room_blender_v4.md)
+- [`TASK-0055_agent_costs_started_at.md`](TASK-0055_agent_costs_started_at.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
