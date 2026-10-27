@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Authenticate and preserve original Hero Room source reference",
+  "problem": "Owner-provided 1448x1086 PNG matches recorded original SHA256; existing committed goal reference is a different 1536x1024 file and must remain historical.",
+  "file": "map_factory/references/hero_room_01_original.reference.json",
+  "line": null,
+  "done_when": "Preserve exact owner source bytes and reference-only provenance; link goal and ART records without asset readiness or room visual approval.",
+  "test": "py -3 tools/run_tests.py --only map_reference --only task_evidence",
+  "priority": "critical",
+  "kind": "investigation",
+  "agent": "codex",
+  "task_id": "TASK-0052"
+}

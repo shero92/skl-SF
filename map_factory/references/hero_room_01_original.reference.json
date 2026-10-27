@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "scope": "reference identity only; not artistic or room approval",
+  "requirements": [
+    {
+      "kind": "reference",
+      "status": "approved",
+      "approved_by": "owner: supplied original image and approved recovery plan",
+      "approved_at": "2026-10-27",
+      "path": "map_factory/references/hero_room_01_original.png",
+      "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "provenance": {
+        "kind": "owner_supplied_original",
+        "source": "Owner attachment 1433755b-2026-44d1-a38a-4418793af74c.png; bytes matched previously recorded original-upload SHA256"
+      }
+    }
+  ],
+  "historical_reference": {
+    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+    "sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "status": "preserved historical alternative, not original source"
+  },
+  "visual_approval": false
+}

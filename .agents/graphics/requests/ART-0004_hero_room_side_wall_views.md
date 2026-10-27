@@ -70,3 +70,9 @@ issue: 20
 - Re-rendered with warmer, darker limestone and a lower sun; ivy and white flowers on the inner face; east/west side walls lean outward (lean +/-0.45) so their inner face shows (owner request, replacing the top-only decision); still status delivered and unapproved.
 - Files: hero_wall_run_north.png 142x256 sha256 02efdffd65e3, hero_wall_run_east.png 175x334 sha256 b3eee5198846, hero_wall_run_south.png 142x262 sha256 ff12ba453924, hero_wall_run_west.png 175x294 sha256 d82b080605ed.
 - QA: problems none; warnings: hero_wall_run_north.png vs hero_wall_run_south.png.
+
+## Verified original reference
+- Active source: map_factory/references/hero_room_01_original.png (1448x1086).
+- SHA256: 42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7.
+- Identity/provenance: map_factory/references/hero_room_01_original.reference.json; prior 1536x1024 goal image is preserved historical material.
+- Source identity gate is resolved by owner-provided bytes. Native output measurements, reuse review and artistic approval remain separate requirements; this amendment does not change production/review status.

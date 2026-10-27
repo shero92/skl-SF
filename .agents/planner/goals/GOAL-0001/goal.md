@@ -1,9 +1,9 @@
-# GOAL-0001 — Hero Room from reference + production-quality Map Factory
+# GOAL-0001 â€” Hero Room from reference + production-quality Map Factory
 
 ## Owner's goal (original words)
 > My first goal is to build a room like this reference image and upgrade the map factory to build maps and rooms for the game in the same quality and details, using the blocks I produce. It must be in 4 or 5 levels: background alive, ground blocks, then walls, then stuff like bed etc. on the blocks and stuff on walls, and then shadows etc.
 
-Reference image: `references/hero_room_reference.png`. The original scene image supplied in chat is **1448×1086**, SHA-256 `42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7`. The separately committed reference has a different Git blob SHA-1 and file size; its native dimensions/hash and pixel equivalence still require explicit local verification. **1536×1024 is the target Map Factory output canvas, not the verified source-image size.** See `docs/REFERENCE_ART_DIRECTION.md` and `.agents/graphics/requests/GOAL-0001_request_coverage.json`.
+Reference image: `map_factory/references/hero_room_01_original.png`; identity manifest: `map_factory/references/hero_room_01_original.reference.json`. The original scene image supplied in chat is **1448Ã—1086**, SHA-256 `42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7`. The separately committed reference has a different Git blob SHA-1 and file size; its native dimensions/hash and pixel equivalence still require explicit local verification. **1536Ã—1024 is the target Map Factory output canvas, not the verified source-image size.** See `docs/REFERENCE_ART_DIRECTION.md` and `.agents/graphics/requests/GOAL-0001_request_coverage.json`.
 Agents: do NOT open the reference during routine runs. Use the written spec below. Only the explicit final QA step may compare the Godot render with the reference.
 
 ## Written spec of the reference (derived once, so agents never need to view the image)
@@ -35,3 +35,6 @@ Agents: do NOT open the reference during routine runs. Use the written spec belo
 - Agents never generate, repaint or upscale art. Missing blocks -> ART request.
 - Identify existing assets only via asset_index.json, file names and metadata; never by opening PNGs.
 - No character, gameplay or UI changes.
+
+## Verified original source (2026-10-27)
+The owner re-supplied the actual 1448x1086 PNG, whose measured SHA256 equals the documented original upload. Bytes are preserved unchanged. The previous 1536x1024 goal reference remains historical and is not the authentic original. Source identity is verified; placement measurements, art quality and final room approval are not.

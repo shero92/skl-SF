@@ -69,3 +69,9 @@ issue: 20
 - Re-rendered with warmer, darker limestone and a lower sun; still status delivered and unapproved.
 - Files: hero_broken_floor_edge_01.png 142x155 sha256 09a9e82e62c4, hero_broken_floor_edge_02.png 142x155 sha256 5ec4aabea541, hero_broken_floor_corner_left.png 147x160 sha256 c7c712db7e39, hero_broken_floor_corner_right.png 144x158 sha256 28b45f769449.
 - QA: problems none; warnings: hero_broken_floor_edge_01.png vs hero_broken_floor_edge_02.png.
+
+## Verified original reference
+- Active source: map_factory/references/hero_room_01_original.png (1448x1086).
+- SHA256: 42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7.
+- Identity/provenance: map_factory/references/hero_room_01_original.reference.json; prior 1536x1024 goal image is preserved historical material.
+- Source identity gate is resolved by owner-provided bytes. Native output measurements, reuse review and artistic approval remain separate requirements; this amendment does not change production/review status.
