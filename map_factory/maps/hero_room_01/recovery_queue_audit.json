@@ -1,0 +1,119 @@
+{
+  "schema": "recovery_queue_audit/v1",
+  "task": "TASK-0060",
+  "goal": "GOAL-0001",
+  "audited_at": "2026-10-27",
+  "agent": "claude",
+  "method": "Text-only read of canonical .agents/tasks/*.md front matter and evidence sections in the TASK-0060 worktree. No git log, GitHub API or shell access was used, so merge SHAs and PR merge states are recorded as unknown rather than inferred.",
+  "rules": {
+    "visual_approval": "No entry is marked visually approved. Blender candidate delivery, scripted QA or numerical similarity is not art acceptance; only the owner approves the final room capture.",
+    "infrastructure_vs_art": "infrastructure_merge means code/tooling merged to main; art_acceptance is a separate owner decision and stays false/pending here.",
+    "authority": "Proposals only. The main-side coordinator verifies merge SHAs on main and applies canonical status updates; this file changes no task, art or security record."
+  },
+  "entries": [
+    {
+      "id": "TASK-0007",
+      "kind": "infrastructure",
+      "canonical_status": "blocked",
+      "branch": "feat/safe-parallel-agent-runner",
+      "pr": "https://github.com/shero92/skl-SF/pull/8",
+      "merge_sha": "unknown",
+      "test_evidence": "Task file: 'CI successful; infrastructure merge pending' and 'CI and supervised Windows E2E outstanding'. Same file also records config execution_enabled=true, supervised_e2e_passed=true with TASK-0009 merge 1bd74a054e698232d00c20f631fb9eab6a054717 at 2026-10-26T09:55:22Z.",
+      "infrastructure_merge": "unknown",
+      "art_acceptance": "not_applicable",
+      "proposed_state": "done_if_verified",
+      "outstanding_blocker": "Documentary contradiction: evidence says supervised E2E outstanding while config records supervised_e2e_passed=true via TASK-0009 merge 1bd74a05. Coordinator must confirm PR #8 merge SHA on main and that 1bd74a05 is on main, then update the Tests line; otherwise keep blocked."
+    },
+    {
+      "id": "TASK-0053",
+      "kind": "infrastructure",
+      "canonical_status": "review",
+      "branch": "fix/pulse-specialist-scope",
+      "pr": "https://github.com/shero92/skl-SF/pull/48",
+      "merge_sha": "unknown",
+      "test_evidence": "Agent-reported: test_goal_task_factory 13/13; run_tests --changed 6/6; test_manual_agents OK; regression tests fail without fix.",
+      "infrastructure_merge": "unknown",
+      "art_acceptance": "not_applicable",
+      "proposed_state": "done_if_merged",
+      "outstanding_blocker": "Merge of PR #48 not recorded in task file; coordinator must confirm merge SHA on main and rerun py -3 tools/run_tests.py --only goal_task_factory on main."
+    },
+    {
+      "id": "TASK-0054",
+      "kind": "art_candidate",
+      "canonical_status": "review",
+      "branch": "feat/hero-room-blender-v4",
+      "pr": "https://github.com/shero92/skl-SF/pull/52",
+      "merge_sha": "unknown",
+      "test_evidence": "Agent-reported: run_tests --only blender_factory --only candidate_room 2/2; run_tests --changed 30/30; scripted QA 0 problems for ART-0022/0024/0025. Compare sheet not viewed.",
+      "infrastructure_merge": "unknown",
+      "art_acceptance": "pending_owner",
+      "proposed_state": "review",
+      "outstanding_blocker": "Owner visual review of docs/previews/candidates/hero_room_01_blender_v4_compare.png and decision D1 (64x64 floor grid); ART-0021 chest size pending. Even if PR #52 is merged, candidate hero_room_01_blender_v4 stays candidate_unapproved."
+    },
+    {
+      "id": "TASK-0055",
+      "kind": "infrastructure",
+      "canonical_status": "review",
+      "branch": "fix/agent-costs-started-at",
+      "pr": "https://github.com/shero92/skl-SF/pull/53",
+      "merge_sha": "unknown",
+      "test_evidence": "Agent-reported: test_agent_costs 13/13; new attribution tests fail on old code; run_tests --changed 5/5.",
+      "infrastructure_merge": "unknown",
+      "art_acceptance": "not_applicable",
+      "proposed_state": "done_if_merged",
+      "outstanding_blocker": "Merge of PR #53 not recorded; coordinator must confirm merge SHA and rerun py -3 tools/run_tests.py --only agent_costs on main."
+    },
+    {
+      "id": "TASK-0056",
+      "kind": "infrastructure",
+      "canonical_status": "review",
+      "branch": "fix/agent-costs-hook-worktrees",
+      "pr": "none",
+      "merge_sha": "unknown",
+      "test_evidence": "Agent-reported: test_agent_costs 15/15; main-checkout hook test fails on old code; run_tests --changed passed. Own receipt expected unknown until merged.",
+      "infrastructure_merge": "unknown",
+      "art_acceptance": "not_applicable",
+      "proposed_state": "review",
+      "outstanding_blocker": "No PR recorded. Coordinator must locate a PR or main commit for branch fix/agent-costs-hook-worktrees; if absent, open an infrastructure PR. Depends on TASK-0055 touching the same agent_costs code."
+    },
+    {
+      "id": "TASK-0057",
+      "kind": "infrastructure",
+      "canonical_status": "review",
+      "branch": "fix/codex-pricing-gitignore",
+      "pr": "none",
+      "merge_sha": "unknown",
+      "test_evidence": "Agent-reported: run_tests --changed 30/30; cost_from_tokens on TASK-0009 tokens = 0.161225 USD.",
+      "infrastructure_merge": "unknown",
+      "art_acceptance": "not_applicable",
+      "proposed_state": "review",
+      "outstanding_blocker": "No PR recorded. Coordinator must locate a PR or main commit for branch fix/codex-pricing-gitignore and confirm .agents/monitoring/pricing.json on main has gpt-6.1-sol 2.00/0.10/10.00."
+    },
+    {
+      "id": "TASK-0058",
+      "kind": "infrastructure",
+      "canonical_status": "review",
+      "branch": "work/task-0058-0baf0d83",
+      "pr": "https://github.com/shero92/skl-SF/pull/57",
+      "merge_sha": "unknown",
+      "test_evidence": "Evidence section says 'Tests: not run'; runner notes a validated infrastructure PR #57. No observed test counts in task file.",
+      "infrastructure_merge": "unknown",
+      "art_acceptance": "not_applicable",
+      "proposed_state": "review",
+      "outstanding_blocker": "Infrastructure PR #57 requires owner review/merge per ADR-006; record observed py -3 -m unittest discover -s tools/tests -p test_manual_agents.py result in task evidence."
+    },
+    {
+      "id": "TASK-0059",
+      "kind": "infrastructure",
+      "canonical_status": "blocked",
+      "branch": "work/task-0059-1b0566f0",
+      "pr": "none",
+      "merge_sha": "unknown",
+      "test_evidence": "unknown (task file: 'Tests: not run').",
+      "infrastructure_merge": "no",
+      "art_acceptance": "not_applicable",
+      "proposed_state": "blocked",
+      "outstanding_blocker": "Runner recorded failure (commit 59f437e 'block failed TASK-0059'); placeholder capture c8558d87 rejection and sparse-checkout-cleared renderer worktree remain unimplemented. Needs a fresh claim with failure cause attached."
+    }
+  ]
+}
