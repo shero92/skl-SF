@@ -80,22 +80,35 @@ def cost_from_tokens(u, agent, model):
     except (KeyError, TypeError):
         return None
 
-def read_transcript(path, agent):
+def parse_time(value):
+    try:
+        stamp = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        return None
+    return stamp if stamp.tzinfo else stamp.replace(tzinfo=timezone.utc)
+
+def read_transcript(path, agent, since=None):
+    """Sum a session's usage. With since (the task start), only usage timestamped at or
+    after it counts; usage without a timestamp then makes the session unattributable."""
     if not path or not Path(path).is_file():
         return None, None, None
-    items, turns, last = {}, [], None
-    model, first = None, None
+    cutoff = parse_time(since) if since else None
+    items, turns, last, baseline = {}, [], None, None
+    model, first, undated = None, None, False
     for i, line in enumerate(Path(path).open(encoding="utf8")):
         try:
             row = json.loads(line)
         except json.JSONDecodeError:
             continue
         first = first or row.get("timestamp")
+        stamp = parse_time(row.get("timestamp")) if cutoff else None
+        before = stamp is not None and stamp < cutoff
         payload = row.get("payload") or {}
         if agent == "claude" and row.get("type") == "assistant":
             msg = row.get("message") or {}
             u = usage(msg.get("usage"), "claude")
-            if u is not None:
+            if u is not None and not before:
+                undated = undated or (cutoff is not None and stamp is None)
                 key = msg.get("id") or str(i)
                 items[key] = u
             model = msg.get("model") or model
@@ -104,12 +117,22 @@ def read_transcript(path, agent):
                 model = payload.get("model") or model
             if row.get("type") == "turn.completed":
                 u = usage(row.get("usage"))
-                if u is not None:
+                if u is not None and not before:
+                    undated = undated or (cutoff is not None and stamp is None)
                     turns.append(u)
             if row.get("type") == "event_msg" and payload.get("type") == "token_count":
                 u = usage((payload.get("info") or {}).get("total_token_usage"))
-                if u is not None:
+                if u is not None and before:
+                    baseline = u  # cumulative total reached before the task started
+                elif u is not None:
+                    undated = undated or (cutoff is not None and stamp is None)
                     last = u
+    if undated:
+        return None, model, first
+    if last is not None and baseline is not None:
+        last = {k: last[k] - baseline[k] for k in FIELDS}
+        if any(v < 0 for v in last.values()):
+            return None, model, first
     parts = list(items.values()) if agent == "claude" else ([last] if last is not None else turns)
     return ({k: sum(part[k] for part in parts) for k in FIELDS} if parts else None), model, first
 
@@ -377,11 +400,19 @@ def run(args):
         else:
             u, model, first = read_transcript(item.get("transcript_path"), agent)
             model = item.get("model") or model
+        late = old_session(active["started_at"], first)
+        if late:
+            # Opened before start (e.g. start run inside a claude -p session): count only
+            # usage timestamped after started_at; the whole-session statusline cost is not used.
+            u = read_transcript(item.get("transcript_path"), agent, since=active["started_at"])[0]
         if model:
             models.add(model)
-        if old_session(active["started_at"], first):
-            u, cost = None, None
+        if late and u is None:
+            cost = None
             sources.add("old_session_unattributable")
+        elif late:
+            cost = cost_from_tokens(u, agent, model)
+            sources.add("usage_after_start_only")
         elif agent == "claude":
             cost = item.get("cost_usd")
             if cost is not None:
