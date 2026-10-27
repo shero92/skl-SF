@@ -484,6 +484,14 @@ def write_revision(root, map_id, snapshot, reg, patch=None):
         raise ValueError("Revision already exists; refusing to overwrite history")
     cat=asset_catalog(root)
     snapshot["layer_stack"]=create_layer_stack(snapshot,cat)
+    used = set(snapshot["layer_stack"]["unique_asset_ids"])
+    for layer in LAYERS:
+        for block in snapshot.get(layer, []):
+            used.update(block.get("animation", {}).get("frames", []))
+            orientation = resolve_orientation(block, cat)
+            if orientation and "direction_asset_ids" in orientation:
+                used.update(orientation["direction_asset_ids"].values())
+    snapshot["resolved_assets"] = {ident: deepcopy(cat[ident]) for ident in sorted(used)}
     validate_room(snapshot,cat,map_id)
     dump(root, dest, snapshot)
     dump(root, base / "latest.json", snapshot)
@@ -528,7 +536,8 @@ def get_latest(root, map_id, reg=None):
     snap = read(root, Path(item["latest"]))
     if snap["version"] != item["version"] or digest_json(snap) != item["snapshot_sha256"]:
         raise ValueError("Map registry/latest snapshot mismatch — refusing stale update")
-    validate_room(snap, asset_catalog(root), map_id)
+    catalog = asset_catalog(root)
+    validate_room(snap, revision_catalog(root, snap, catalog), map_id)
     return snap
 
 
@@ -566,6 +575,8 @@ def clone_map(root, new_map, from_map):
     source = get_latest(root, from_map, reg)
     copy = deepcopy(source)
     copy.pop("layer_stack", None)  # Recompile derived graph under the new map identity.
+    copy.pop("resolved_assets", None)
+    copy.pop("parent_snapshot_sha256", None)
     copy["map_id"] = new_map
     copy["version"] = 1
     copy["parent_version"] = None
@@ -599,6 +610,7 @@ def apply_changes(snapshot, manifest, catalog):
     result = deepcopy(snapshot)
     # Derived layer metadata belongs to the OLD snapshot: rebuild it only after edits.
     result.pop("layer_stack", None)
+    result.pop("resolved_assets", None)
     ops = manifest.get("changes")
     if not isinstance(ops, list) or not ops:
         raise ValueError("Patch manifest needs nonempty changes array")
@@ -663,6 +675,7 @@ def apply_changes(snapshot, manifest, catalog):
             result[key]=deepcopy(operation["value"])
         else:
             raise ValueError("Unknown patch op: "+str(op))
+    result["parent_snapshot_sha256"]=digest_json(snapshot)
     result["parent_version"]=snapshot["version"]
     result["version"]=snapshot["version"]+1
     result["created_at"]=now()
@@ -690,6 +703,69 @@ def apply(root, manifest_path, dry_run=False):
     return candidate
 
 
+def revision_catalog(root, snapshot, catalog):
+    """Recover publication-time metadata without modifying any archived file.
+
+    New snapshots carry their catalog inputs. Legacy snapshots use their resolved
+    block manifest as the measurement record; source placements are still rebuilt
+    and compared with BOTH independent derived artifacts below.
+    """
+    frozen = snapshot.get("resolved_assets")
+    if frozen is not None:
+        if not isinstance(frozen, dict) or not frozen:
+            raise ValueError("Invalid resolved_assets catalog")
+        for ident, record in frozen.items():
+            if (ident not in catalog or not isinstance(record, dict)
+                    or record.get("id") != ident
+                    or record.get("category") != catalog[ident]["category"]):
+                raise ValueError("Invalid resolved asset identity: " + str(ident))
+        return deepcopy(frozen)
+    restored = deepcopy(catalog)
+    manifest_path = (map_base(snapshot["map_id"]) / "blocks"
+                     / f"v{snapshot['version']:04d}.json")
+    if not (root/manifest_path).exists():
+        raise ValueError("Legacy revision lacks archived measurements: " + str(manifest_path))
+    manifest = read(root, manifest_path)
+    raw = {p["instance_id"]: p for layer in LAYERS for p in snapshot.get(layer, [])}
+    measurements = {}
+    for part in manifest.get("placed_blocks", []):
+        ident = part.get("render_asset_id", part.get("asset_id"))
+        if ident not in restored or part.get("instance_id") not in raw:
+            raise ValueError("Invalid archived block identity")
+        block = raw[part["instance_id"]]
+        if part.get("asset_id") != block["id"]:
+            raise ValueError("Archived block asset differs from source")
+        fields = {"origin": part["anchor"]}
+        # Old manifests default unknown pixel sizes to zero; the layer compiler
+        # defaults them to 64. Do not turn unknown legacy values into measurements.
+        fields["pixel_size"] = (part["pixel_size"]
+                                if part.get("pixel_size") != [0, 0] else None)
+        if "placement_contract" in part:
+            fields["placement_contract"] = part["placement_contract"]
+        for key in ("collision", "shadow"):
+            if key not in block:
+                fields[key] = part[key] or None
+        for key, value in fields.items():
+            pair = (ident, key)
+            if pair in measurements and measurements[pair] != value:
+                raise ValueError("Inconsistent archived asset measurement")
+            measurements[pair] = deepcopy(value)
+    for (ident, key), value in measurements.items():
+        if value is None:
+            restored[ident].pop(key, None)
+        else:
+            restored[ident][key] = value
+    for tile in manifest.get("floor_overrides", []):
+        ident = tile.get("render_asset_id", tile.get("asset_id"))
+        if ident not in restored:
+            raise ValueError("Invalid archived floor identity")
+        if tile.get("pixel_size") is None:
+            restored[ident].pop("pixel_size", None)
+        else:
+            restored[ident]["pixel_size"] = deepcopy(tile["pixel_size"])
+    return restored
+
+
 def validate_repository(root):
     catalog=asset_catalog(root)
     reg=registry(root)
@@ -699,48 +775,66 @@ def validate_repository(root):
         n=current["version"]
         for version in range(1,n+1):
             snap=read(root,version_file(map_id,version))
-            validate_room(snap,catalog,map_id)
+            historical=revision_catalog(root,snap,catalog)
+            validate_room(snap,historical,map_id)
             if snap["version"]!=version:
                 raise ValueError("Broken version chain "+map_id)
             if version>1 and snap.get("parent_version")!=version-1:
                 raise ValueError("Broken parent revision "+map_id)
+            if "parent_snapshot_sha256" in snap:
+                if version == 1:
+                    raise ValueError("Initial revision cannot have a parent snapshot hash")
+                parent=read(root,version_file(map_id,version-1))
+                if digest_json(parent)!=snap["parent_snapshot_sha256"]:
+                    raise ValueError("Parent snapshot hash mismatch")
+            expected=create_layer_stack(snap,historical)
+            layer_file=map_base(map_id)/"layers"/f"v{version:04d}.json"
+            if not (root/layer_file).exists() or read(root,layer_file)!=expected:
+                raise ValueError("Versioned layer stack does not match map "+map_id)
+            expected_blocks=build_block_manifest(snap,historical)
+            block_file=map_base(map_id)/"blocks"/f"v{version:04d}.json"
+            if read(root,block_file)!=expected_blocks:
+                raise ValueError("Versioned blocks metadata mismatch")
+            if version==n:
+                latest_layer=map_base(map_id)/"layers"/"latest.json"
+                if not (root/latest_layer).exists() or read(root,latest_layer)!=expected:
+                    raise ValueError("Latest five-level layer stack metadata mismatch")
+                if read(root,map_base(map_id)/"blocks"/"latest.json")!=expected_blocks:
+                    raise ValueError("Resolved latest blocks metadata mismatch")
         if read(root,version_file(map_id,n))!=current:
             raise ValueError("Latest snapshot does not match immutable version")
-        layer_path=map_base(map_id)/"layers"/"latest.json"
-        if (root/layer_path).exists():
-            if read(root,layer_path)!=create_layer_stack(current,catalog):
-                raise ValueError("Latest five-level layer stack metadata mismatch")
-            for version in range(1,n+1):
-                source=read(root,version_file(map_id,version))
-                expected=create_layer_stack(source,catalog)
-                if read(root,map_base(map_id)/"layers"/f"v{version:04d}.json")!=expected:
-                    raise ValueError("Versioned layer stack does not match map "+map_id)
-        expected_blocks=build_block_manifest(current,catalog)
-        if read(root,map_base(map_id)/"blocks"/"latest.json")!=expected_blocks:
-            raise ValueError("Resolved latest blocks metadata mismatch")
-        if read(root,map_base(map_id)/"blocks"/f"v{n:04d}.json")!=expected_blocks:
-            raise ValueError("Versioned blocks metadata mismatch")
         validated.append((map_id,n))
     return validated
 
 
 def sync_block_metadata(root):
-    """Backfill derived block indices without changing immutable scene revisions."""
-    reg=registry(root)
-    cat=asset_catalog(root)
-    rebuilt=[]
-    for map_id,item in sorted(reg["maps"].items()):
-        for version in range(1,item["version"]+1):
-            snapshot=read(root,version_file(map_id,version))
-            metadata=build_block_manifest(snapshot,cat)
-            dump(root,map_base(map_id)/"blocks"/f"v{version:04d}.json",metadata)
-            stack=create_layer_stack(snapshot,cat)
-            dump(root,map_base(map_id)/"layers"/f"v{version:04d}.json",stack)
-            if version==item["version"]:
-                dump(root,map_base(map_id)/"layers"/"latest.json",stack)
-            if version==item["version"]:
-                dump(root,map_base(map_id)/"blocks"/"latest.json",metadata)
+    """Backfill missing indices, never rewrite already published artifacts."""
+    reg = registry(root)
+    catalog = asset_catalog(root)
+    rebuilt = []
+    pending = []
+    for map_id, item in sorted(reg["maps"].items()):
+        for version in range(1, item["version"] + 1):
+            snapshot = read(root, version_file(map_id, version))
+            historical = revision_catalog(root, snapshot, catalog)
+            validate_room(snapshot, historical, map_id)
+            metadata = build_block_manifest(snapshot, historical)
+            stack = create_layer_stack(snapshot, historical)
+            outputs = [(map_base(map_id)/"blocks"/f"v{version:04d}.json", metadata),
+                       (map_base(map_id)/"layers"/f"v{version:04d}.json", stack)]
+            if version == item["version"]:
+                outputs += [(map_base(map_id)/"blocks"/"latest.json", metadata),
+                            (map_base(map_id)/"layers"/"latest.json", stack)]
+            for path, payload in outputs:
+                if (root/path).exists():
+                    if read(root, path) != payload:
+                        raise ValueError("Refusing to rewrite published metadata: " + str(path))
+                else:
+                    pending.append((path, payload))
             rebuilt.append(f"{map_id}@v{version:04d}")
+    # Check every existing artifact before writing any missing index.
+    for path, payload in pending:
+        dump(root, path, payload)
     return rebuilt
 
 

@@ -1,13 +1,13 @@
 ---
 id: TASK-0039
-status: todo
-owner: unassigned
-branch: none
+status: review
+owner: codex
+branch: codex/immutable-resolved-metadata
 agent: codex
 touches: tools/map_factory_cli.py,tools/map_factory_layers.py,tools/tests/test_map_factory.py,tools/tests/test_map_layers.py
 test: py -3 tools/run_tests.py --only map_factory --only map_layers --only map_registry_validate
 done_when: Catalog measurement corrections do not rewrite or invalidate historical resolved graphs; new revisions use corrected measurements; corruption remains rejected
-started_at: unknown
+started_at: 2026-10-27T11:14:10.315214+01:00
 cost_usd: unknown
 depends_on: TASK-0036
 issue: none
@@ -24,11 +24,11 @@ art_request: none
 **File:** tools/map_factory_cli.py
 **Line:** unspecified
 **Problem:** Owner-approved recovery audit: Preserve immutable resolved map metadata
-**Blocked by:** dependencies (the pulse promotes this task to todo once they are done)
+**Dependency:** TASK-0036 reconciled with merged evidence.
 
 ## Acceptance
-- [ ] Catalog measurement corrections do not rewrite or invalidate historical resolved graphs; new revisions use corrected measurements; corruption remains rejected
-- [ ] Test: py -3 tools/run_tests.py --only map_factory --only map_layers --only map_registry_validate
+- [x] Catalog measurement corrections do not rewrite or invalidate historical resolved graphs; new revisions use corrected measurements; corruption remains rejected
+- [x] Test: py -3 tools/run_tests.py --only map_factory --only map_layers --only map_registry_validate
 - [ ] PR and observed test evidence.
 
 ## Agent prompt
@@ -39,9 +39,17 @@ Outcome: Catalog measurement corrections do not rewrite or invalidate historical
 - Read only targeted files, then expand if necessary.
 
 ## Evidence / handoff
-- Changed files: none.
-- Tests: not run.
+- Changed files: `tools/map_factory_cli.py`, `tools/tests/test_map_factory.py`, this task record.
+- Tests: `py -3 tools/run_tests.py --only map_factory --only map_layers --only map_registry_validate` passed 3/3. Full Python validation passed 26/27 groups; candidate_room cannot find excluded production delivery files in this image-free worktree (existing containment limitation, no assets restored).
 - PR: none.
-- Next: claim task after checking blockers.
+- Next: complete independent review, receipt and PR; no commit/push performed by the implementation subagent.
 
-- Dependency TASK-0036 now has confirmed merged evidence. Eligible for isolated implementation; no code completed yet.
+- Dependency TASK-0036 now has confirmed merged evidence. Implemented on the isolated branch; awaiting PR review.
+
+### TASK-0039 implementation evidence
+- New revisions capture only referenced `resolved_assets` (including animation frames, directional variants and shadow assets), and patches link `parent_snapshot_sha256`. New revisions compile against current catalog measurements.
+- Legacy validation recovers measured origins/sizes/contracts and default physical settings from the archived block manifest, then compares source-derived layer and block manifests for every version. Existing archives are never regenerated or edited.
+- `sync-blocks` only fills missing indices, refuses mismatched published artifacts, and checks all existing outputs before writing. A legacy revision lacking its measurement manifest is an explicit blocker; frozen revisions can backfill it.
+- Added synthetic coverage for changed pivots/pixel sizes/collision/shadows, archive byte stability, next-revision measurements, corrupted positions/IDs/anchors/layers, missing artifacts, source changes, identity changes, animation dependencies and parent-chain tampering.
+- Limitation: legacy files have no cryptographic hash chain; coordinated edits to all mutually consistent legacy records cannot be authenticated retroactively. New parent links protect their published ancestors without inventing old evidence.
+- Final verification: `--all --kind python` and `--changed --kind python` each passed 26/27 groups; both only fail `candidate_room` because excluded production delivery artifacts are absent. `git diff --check` passed. The focused acceptance command passed 3/3 after the final code change. No art was restored, opened or changed.
