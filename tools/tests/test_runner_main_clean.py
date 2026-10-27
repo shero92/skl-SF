@@ -141,8 +141,133 @@ class MainStaysClean(unittest.TestCase):
     def test_scheduled_worker_logs_output(self):
         text = (TOOLS / "run_local_agent.ps1").read_text(encoding="utf-8")
         self.assertIn(r".agents\monitoring\.local\runner-$Agent.log", text)
-        self.assertIn('2>&1', text)
-        self.assertIn("--run-next $Agent", text)
+        self.assertIn('*>> $log', text)
+        self.assertIn('run_agents_manual.ps1', text)
+        self.assertIn('-Agents @($Agent)', text)
+
+
+class CoordinatedBudgetTests(unittest.TestCase):
+    def test_deadline_caps_commands_and_resets_context(self):
+        import time
+        from unittest.mock import patch
+        with patch.object(ar.time, "monotonic", return_value=100):
+            with ar.execution_budget(105):
+                self.assertEqual(ar.remaining_timeout(1800), 5)
+            self.assertEqual(ar.remaining_timeout(1800), 1800)
+            with ar.execution_budget(99):
+                with self.assertRaises(subprocess.TimeoutExpired):
+                    ar.execute([sys.executable, "-c", "pass"])
+
+    def test_timeout_kills_process_tree(self):
+        import time
+        from unittest.mock import patch
+        with ar.execution_budget(time.monotonic() + .3):
+            with patch.object(ar, "terminate_tree", wraps=ar.terminate_tree) as kill:
+                with self.assertRaises(subprocess.TimeoutExpired):
+                    ar.execute([sys.executable, "-c", "import time; time.sleep(20)"])
+                self.assertEqual(kill.call_count, 1)
+
+    def test_cancellation_prevents_any_new_subprocess(self):
+        import threading
+        import time
+        from unittest.mock import patch
+        cancelled = threading.Event()
+        ar.cancel_budget(cancelled)
+        with ar.execution_budget(time.monotonic()+10, cancel_event=cancelled), \
+             patch.object(ar.subprocess,"Popen") as launch:
+            with self.assertRaisesRegex(RuntimeError,"cancelled"):
+                ar.execute(["fake-cli"])
+            launch.assert_not_called()
+
+    def test_cancellation_kills_registered_child_and_unregisters(self):
+        import threading
+        import time
+        from unittest.mock import Mock, patch
+        cancelled = threading.Event()
+        started = threading.Event()
+        killed = threading.Event()
+        child = Mock(returncode=-1)
+        def communicate(**kwargs):
+            started.set()
+            if not killed.wait(3):
+                raise AssertionError("child was not terminated")
+            return "", ""
+        child.communicate.side_effect = communicate
+        errors=[]
+        def worker():
+            try:
+                with ar.execution_budget(time.monotonic()+10, cancel_event=cancelled):
+                    ar.execute(["fake-cli"])
+            except Exception as exc:
+                errors.append(str(exc))
+        with patch.object(ar.subprocess,"Popen",return_value=child), \
+             patch.object(ar,"terminate_tree",side_effect=lambda proc:killed.set()) as kill:
+            thread=threading.Thread(target=worker)
+            thread.start()
+            self.assertTrue(started.wait(3))
+            self.assertEqual(ar.cancel_budget(cancelled), [])
+            thread.join(3)
+            self.assertFalse(thread.is_alive())
+            kill.assert_called_once_with(child)
+        self.assertEqual(errors,["Coordinated execution cancelled"])
+        self.assertNotIn(cancelled,ar._CHILDREN)
+
+    def test_infrastructure_requires_review_even_in_mixed_task(self):
+        self.assertTrue(ar.requires_pr(["tools/new.py"]))
+        self.assertTrue(ar.requires_pr(["map_factory/scripts/x.gd", ".github/workflows/tests.yml"]))
+        self.assertFalse(ar.requires_pr(["map_factory/scripts/room_factory.gd"]))
+
+    def test_repair_rehides_images_and_revalidates_touches_once(self):
+        import time
+        from unittest.mock import patch, Mock
+        calls=[]
+        def tests(*args):
+            calls.append("tests")
+            if calls.count("tests") == 1:
+                raise RuntimeError("tools/run_tests.py returned 1")
+        def hide(*args):calls.append("hide")
+        def session(*args, **kwargs):
+            calls.append("repair")
+            self.assertIn("returned 1",kwargs["repair_context"])
+            return subprocess.CompletedProcess([],0,"",""), None
+        with ar.execution_budget(time.monotonic()+10), \
+             patch.object(ar,"tests",tests), patch.object(ar,"hide_images",hide), \
+             patch.object(ar,"sanitized_session",session), patch.object(ar,"git"), \
+             patch.object(ar,"changed_paths",return_value=["tools/x.py"]), \
+             patch.object(ar,"allowed_changed") as allowed:
+            ar.validate_with_repair(Path("."),{},["tools/x.py"],"codex","TASK-0001",100)
+            self.assertEqual(calls,["tests","hide","repair","tests"])
+            allowed.assert_called_once()
+
+    def test_coordination_is_reentrant_and_serializes_workers(self):
+        import threading
+        import time
+        from unittest.mock import patch
+        from contextlib import contextmanager
+        events=[]
+        @contextmanager
+        def lease(label):
+            events.append("lease")
+            yield
+        def worker():
+            with ar.coordination_lock():
+                events.append("enter")
+                with ar.coordination_lock():
+                    time.sleep(.02)
+                events.append("exit")
+        with patch.object(ar,"_exclusive_file",lease):
+            threads=[threading.Thread(target=worker) for _ in range(2)]
+            for thread in threads:thread.start()
+            for thread in threads:thread.join()
+        self.assertEqual(events,["lease","enter","exit","lease","enter","exit"])
+
+    def test_no_repair_outside_manual_budget(self):
+        from unittest.mock import patch
+        with patch.object(ar,"tests",side_effect=RuntimeError("test failed")), \
+             patch.object(ar,"sanitized_session") as session:
+            with self.assertRaisesRegex(RuntimeError,"test failed"):
+                ar.validate_with_repair(Path("."),{},[],"codex","TASK-0001",100)
+            session.assert_not_called()
 
 
 if __name__ == "__main__":

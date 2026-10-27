@@ -11,8 +11,8 @@ Push-Location $repo
 try {
   Add-Content -Path $log -Encoding utf8 -Value "=== $(Get-Date -Format o) run-next $Agent ==="
   $env:PYTHONIOENCODING = "utf-8"
-  # cmd redirection keeps native stderr out of PowerShell error records.
-  & cmd /c "py -3 `"$(Join-Path $repo 'tools\agent_runner.py')`" --run-next $Agent >> `"$log`" 2>&1"
+  # Shared entrypoint uses the same repository lease as manual sessions.
+  & (Join-Path $PSScriptRoot "run_agents_manual.ps1") -Agents @($Agent) *>> $log
   $code = $LASTEXITCODE
   Add-Content -Path $log -Encoding utf8 -Value "=== exit $code ==="
   if ($code -ne 0) { throw "Local agent runner failed ($code); see $log" }

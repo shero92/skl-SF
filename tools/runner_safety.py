@@ -109,7 +109,7 @@ def allowed_changed(changed, authorized):
 def verify_claim(task, tasks):
     if task["status"] != "todo" or task["agent"] not in ("claude","codex"):
         raise ValueError("Unclaimable task")
-    dependency = [d for d in task["depends_on"].split(",") if d.strip() and d.strip()!="none"]
+    dependency = [d.strip() for d in task["depends_on"].split(",") if d.strip() and d.strip()!="none"]
     if any(d not in tasks or tasks[d]["status"]!="done" for d in dependency):
         raise ValueError("Unfinished task dependency")
     selected=touches(task["touches"])
@@ -135,7 +135,7 @@ def safe_test(argv):
     if argv[i:i+1] == ["tools/run_tests.py"]:
         rest = argv[i+1:]
         if rest and len(rest) % 2 == 0 and all(
-                rest[n] == "--only" and rest[n+1] in {"map_layers", "map_factory", "godot_map_smoke"}
+                rest[n] == "--only" and rest[n+1] in {"map_layers", "map_factory", "map_registry_validate", "godot_map_smoke"}
                 for n in range(0, len(rest), 2)):
             return argv
         raise ValueError("Only allowlisted router tests permitted")

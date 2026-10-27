@@ -19,6 +19,67 @@ import sys
 import tempfile
 import time
 import uuid
+import threading
+
+_BUDGET = threading.local()
+_MAIN_STATE = threading.RLock()
+_MAIN_DEPTH = threading.local()
+_CHILDREN_LOCK = threading.Lock()
+_CHILDREN = {}
+
+@contextmanager
+def execution_budget(deadline, repair_attempts=1, cancel_event=None):
+    """Thread-local absolute monotonic deadline for one coordinated task."""
+    previous = getattr(_BUDGET, "value", None)
+    _BUDGET.value = (float(deadline), min(1, max(0, int(repair_attempts))), cancel_event)
+    try:
+        yield
+    finally:
+        _BUDGET.value = previous
+
+def remaining_timeout(timeout):
+    budget = getattr(_BUDGET, "value", None)
+    if budget is None:
+        return timeout
+    if len(budget) > 2 and budget[2] is not None and budget[2].is_set():
+        raise RuntimeError("Coordinated execution cancelled")
+    left = budget[0] - time.monotonic()
+    if left <= 0:
+        raise subprocess.TimeoutExpired("session deadline", 0)
+    return min(timeout, left)
+
+def cancel_budget(cancel_event):
+    """Atomically stop new launches and terminate all trees sharing this cancellation."""
+    with _CHILDREN_LOCK:
+        cancel_event.set()
+        children = list(_CHILDREN.get(cancel_event, ()))
+    failures = []
+    for child in children:
+        try:
+            terminate_tree(child)
+        except (OSError, subprocess.SubprocessError) as exc:
+            failures.append(str(exc))
+    return failures
+
+
+def terminate_tree(proc):
+    """Terminate descendants before collecting a timed-out CLI process."""
+    if os.name == "nt":
+        subprocess.run(["taskkill", "/PID", str(proc.pid), "/T", "/F"],
+                       capture_output=True, timeout=15, check=False)
+    else:
+        import signal
+        try:
+            os.killpg(proc.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+    if proc.poll() is None:
+        proc.kill()
+
+def requires_pr(paths):
+    """Infrastructure always needs reviewed PRs, including mixed code tasks."""
+    return any(normalize(p).startswith(("tools/", ".github/", ".agents/"))
+               or normalize(p) in ("AGENTS.md", "project.godot") for p in paths)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from runner_safety import MAIN_GENERATED_PATHS, main_generated, allowed_changed, is_art, is_generated, normalize, normalize_test, safe_test, supervised_problems, touches, verify_claim
@@ -35,9 +96,41 @@ NO_KEYS=("OPENAI_API_KEY","ANTHROPIC_API_KEY")
 def execute(argv,cwd=None,*,input=None,timeout=600,check=True):
     clean=os.environ.copy()
     for key in NO_KEYS:clean.pop(key,None)
-    proc=subprocess.run([str(x) for x in argv],cwd=str(cwd or ROOT),input=input,
-        capture_output=True,text=True,encoding="utf-8",errors="replace",
-        env=clean,timeout=timeout,shell=False)
+    timeout = remaining_timeout(timeout)
+    options = dict(cwd=str(cwd or ROOT), text=True, encoding="utf-8",
+                   errors="replace", env=clean, shell=False)
+    if getattr(_BUDGET, "value", None) is None:
+        proc=subprocess.run([str(x) for x in argv], input=input,
+                            capture_output=True, timeout=timeout, **options)
+    else:
+        group = {"creationflags": subprocess.CREATE_NEW_PROCESS_GROUP} if os.name == "nt" else {"start_new_session": True}
+        budget = _BUDGET.value
+        cancel_event = budget[2] if len(budget) > 2 else None
+        # Cancellation and launch/register share a lock: no process escapes the snapshot.
+        with _CHILDREN_LOCK:
+            timeout = remaining_timeout(timeout)
+            child = subprocess.Popen([str(x) for x in argv], stdin=subprocess.PIPE if input is not None else subprocess.DEVNULL,
+                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE, **options, **group)
+            if cancel_event is not None:
+                _CHILDREN.setdefault(cancel_event, set()).add(child)
+        try:
+            try:
+                stdout, stderr = child.communicate(input=input, timeout=timeout)
+            except subprocess.TimeoutExpired:
+                terminate_tree(child)
+                child.communicate()
+                raise
+            if cancel_event is not None and cancel_event.is_set():
+                raise RuntimeError("Coordinated execution cancelled")
+            proc = subprocess.CompletedProcess(argv, child.returncode, stdout, stderr)
+        finally:
+            if cancel_event is not None:
+                with _CHILDREN_LOCK:
+                    children = _CHILDREN.get(cancel_event)
+                    if children is not None:
+                        children.discard(child)
+                        if not children:
+                            _CHILDREN.pop(cancel_event, None)
     if check and proc.returncode:
         raise RuntimeError("command failed: "+" ".join(str(x) for x in argv[:3])+" ("+str(proc.returncode)+"): "
                            +(proc.stderr or "").strip()[-300:])
@@ -129,7 +222,27 @@ def settle_main(tid,agent):
     return "Main left dirty with non-generated changes: "+", ".join(changed[:10])
 
 @contextmanager
+def coordination_lock():
+    """Serialize canonical main reads and mutations across worker threads/processes."""
+    with _MAIN_STATE:
+        depth = getattr(_MAIN_DEPTH, "value", 0)
+        _MAIN_DEPTH.value = depth + 1
+        try:
+            if depth:
+                yield
+            else:
+                with _exclusive_file("main-state"):
+                    yield
+        finally:
+            _MAIN_DEPTH.value = depth
+
+@contextmanager
 def exclusive(label):
+    with coordination_lock():
+        yield
+
+@contextmanager
+def _exclusive_file(label):
     LOCAL.mkdir(parents=True,exist_ok=True)
     target=LOCAL/(label+".lock")
     # Exclusive create: fail closed on stale lock; owner must examine and clear.
@@ -143,7 +256,7 @@ def exclusive(label):
     finally:
         target.unlink(missing_ok=True)
 
-def sanitized_session(agent,workdir,tid,timeout):
+def sanitized_session(agent,workdir,tid,timeout,repair_context=None):
     prompt=(
         "Implement "+tid+". Read AGENTS.md and the canonical task. "
         "Modify ONLY its touches paths; no characters, UI, gameplay or art. "
@@ -153,6 +266,8 @@ def sanitized_session(agent,workdir,tid,timeout):
         "Leave code changes in the worktree and describe code changes briefly. "
         "Stop if a file outside touches is needed. The runner handles tests, "
         "tokens, merge and rollback.")
+    if repair_context:
+        prompt += " Fix only the ordinary test failure within existing touches. Diagnostic: " + repair_context[:1200]
     if agent=="claude":
         args=["claude","-p","--permission-mode","acceptEdits","--tools",
               "Read,Edit,Write,Glob,Grep","--disallowedTools","Bash",
@@ -165,7 +280,8 @@ def sanitized_session(agent,workdir,tid,timeout):
     args=["codex","exec","--sandbox","workspace-write","--cd",str(workdir),
           "--json","-"]
     proc=execute(args,workdir,input=prompt,timeout=timeout,check=False)
-    log.write_text(proc.stdout,encoding="utf-8",newline="\n")
+    with log.open("a" if repair_context else "w",encoding="utf-8",newline="\n") as handle:
+        handle.write(proc.stdout)
     return proc,log
 
 def hide_images(workdir):
@@ -198,6 +314,30 @@ def tests(workdir,task,scope="--changed"):
         proc=execute(command,workdir,timeout=1800,check=False)
         if proc.returncode:failures.append(" ".join(str(x) for x in command[1:3])+" returned "+str(proc.returncode))
     if failures:raise RuntimeError("; ".join(failures))
+
+def validate_with_repair(workdir, task, paths, agent, tid, timeout):
+    """One bounded repair only for ordinary pre-commit test failures in manual mode."""
+    try:
+        tests(workdir, task)
+        return None
+    except RuntimeError as exc:
+        budget = getattr(_BUDGET, "value", None)
+        if budget is None or not budget[1]:
+            raise
+        # tests() emits only trusted command names and integer exit codes, no test output.
+        diagnostic = re.sub(r"[^A-Za-z0-9 ._/:;=()\-]", "?", str(exc))[:1200]
+    hide_images(workdir)
+    outcome, log = sanitized_session(agent, workdir, tid, timeout, repair_context=diagnostic)
+    git("sparse-checkout", "disable", cwd=workdir)
+    if outcome.returncode:
+        message = quota_message(outcome)
+        if message:
+            raise QuotaExceeded(message)
+        raise RuntimeError("Repair CLI failed; code not merged")
+    allowed_changed(changed_paths(workdir), paths)
+    tests(workdir, task)
+    return log
+
 
 def state_path(tid):
     return LOCAL/("runner-state-"+tid+".json")
@@ -301,9 +441,10 @@ def run(tid, supervised=False):
         _run(tid,supervised)
         finished=True
     finally:
-        agent=task_agent(tid)
-        problem=settle_main(tid,agent) if agent else (
-            "Main left dirty: "+", ".join(dirty_paths()[:10]) if dirty_paths() else None)
+        with exclusive("main-merge"):
+            agent=task_agent(tid)
+            problem=settle_main(tid,agent) if agent else (
+                "Main left dirty: "+", ".join(dirty_paths()[:10]) if dirty_paths() else None)
         if problem:
             info=read_state(tid)
             details=(str(info.get("details",""))+" | " if not finished and info else "")+problem
@@ -326,15 +467,15 @@ def _run(tid, supervised=False):
         execution_gate(config)
     if os.name!="nt":
         raise RuntimeError("Run coding agents only on the owner's Windows host")
-    if git("branch","--show-current")!="main":
-        raise RuntimeError("Start from a clean main branch")
-    if dirty_paths():
-        # Heal regenerated-only drift (e.g. an index missed by an older runner) before claiming.
-        agent=task_agent(tid)
-        problem=settle_main(tid,agent) if agent else "unknown task agent"
-        if problem:
-            raise RuntimeError("Start from a clean main branch: "+problem)
     with exclusive("task-claim"):
+        if git("branch","--show-current")!="main":
+            raise RuntimeError("Start from a clean main branch")
+        if dirty_paths():
+            # Heal regenerated-only drift (e.g. an index missed by an older runner) before claiming.
+            agent=task_agent(tid)
+            problem=settle_main(tid,agent) if agent else "unknown task agent"
+            if problem:
+                raise RuntimeError("Start from a clean main branch: "+problem)
         git("pull","--ff-only","origin","main")
         all_tasks=records()
         task=all_tasks.get(tid)
@@ -367,13 +508,31 @@ def _run(tid, supervised=False):
         changed=changed_paths(workdir)
         allowed_changed(changed,paths)
         if not changed:raise RuntimeError("Agent did not change any allowed code")
-        tests(workdir,task)
+        repair_log=validate_with_repair(workdir,task,paths,agent,tid,config.get("execution_timeout_seconds",1800))
+        if repair_log is not None:log=repair_log
+        changed=changed_paths(workdir)
+        allowed_changed(changed,paths)
         git("add","--",*changed,cwd=workdir)
         if log is not None:
             execute([sys.executable,"tools/agent_costs.py","import-codex",str(log)],workdir,check=False)
         execute([sys.executable,"tools/agent_costs.py","complete","--message",
                  "feat: implement "+tid,"--no-summary"],workdir)
         checkpoint(tid,agent,"ready_to_merge",git("rev-parse","HEAD",cwd=workdir))
+        if requires_pr(changed):
+            git("push", "-u", "origin", branch, cwd=workdir)
+            with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", suffix=".md", delete=False) as body:
+                body.write("Implements " + tid + ". Task tests and changed-path validation passed.\n\nInfrastructure requires review before merge.\n")
+                body_path = body.name
+            try:
+                url=execute(["gh", "pr", "create", "--base", "main", "--head", branch,
+                             "--title", "feat: implement " + tid, "--body-file", body_path], workdir).stdout.strip()
+            finally:
+                Path(body_path).unlink(missing_ok=True)
+            with exclusive("main-merge"):
+                amend_status(tid,"review",branch=branch,reason="Validated infrastructure PR: "+url)
+                main_commit("chore: record review "+tid,agent,tid)
+            checkpoint(tid,agent,"review",url)
+            return
         with exclusive("main-merge"):
             if git("status","--porcelain"):
                 raise RuntimeError("Main became dirty; refusing merge")
@@ -519,10 +678,14 @@ def main():
         return
     if args.supervised:
         run(args.supervised,supervised=True)
-    elif args.run_next:
-        run_session(args.run_next)
     else:
-        run(args.run)
+        # All direct/scheduled/manual entrypoints share a cross-clone lease.
+        from manual_agents import repository_lease
+        with repository_lease(ROOT):
+            if args.run_next:
+                run_session(args.run_next)
+            else:
+                run(args.run)
 
 if __name__=="__main__":
     try:main()

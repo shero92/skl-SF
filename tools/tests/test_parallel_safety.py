@@ -186,3 +186,10 @@ class ParallelSafety(unittest.TestCase):
 
 if __name__=="__main__":
     unittest.main()
+
+
+class WhitespaceDependencies(unittest.TestCase):
+    def test_dependencies_are_trimmed_before_claim(self):
+        task={"id":"TASK-1000","status":"todo","agent":"codex","depends_on":" TASK-0001 , TASK-0002 ","touches":"tools/example.py"}
+        records={"TASK-0001":{"status":"done"},"TASK-0002":{"status":"done"},task["id"]:task}
+        self.assertEqual(rs.verify_claim(task,records),["tools/example.py"])

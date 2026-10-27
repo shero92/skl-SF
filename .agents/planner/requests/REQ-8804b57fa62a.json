@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Manual bounded parallel Codex and Claude launcher",
+  "problem": "Owner approved manual PowerShell launcher; existing scheduled worker has per-agent budgets, stops on task failure, and cannot coordinate a shared global session or ART capability gates.",
+  "file": "tools/run_agents_manual.ps1",
+  "line": null,
+  "done_when": "Manual launcher isolates user changes, dispatches independent eligible tasks with shared count/deadline, safe per-task failures, tested evidence gates, and never auto-integrates art.",
+  "test": "py -3 -m unittest discover -s tools/tests -p test_manual_agents.py",
+  "priority": "critical",
+  "kind": "feature",
+  "agent": "codex",
+  "task_id": "TASK-0051"
+}
