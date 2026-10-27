@@ -103,6 +103,42 @@ def downscale(src: Path, dst: Path, factor: int) -> list[int]:
     return list(im.size)
 
 
+def palette(path: Path) -> dict:
+    """Mean colour of the opaque pixels (alpha > 200): RGB, hue in degrees, HLS lightness and saturation.
+
+    Scripted colour QA: agents never open piece images, so 'reads grey' is measured, not looked at."""
+    import colorsys
+    from PIL import Image
+    im = Image.open(path).convert("RGBA")
+    px = [p for p in getattr(im, "get_flattened_data", im.getdata)() if p[3] > 200]  # getdata: Pillow < 12
+    if not px:
+        return {"opaque_px": 0}
+    mean = [round(sum(p[i] for p in px) / len(px)) for i in range(3)]
+    h, l, s = colorsys.rgb_to_hls(*(v / 255 for v in mean))
+    # Multi-colour pieces (blue + gold) can average to grey; the mean per-pixel saturation does not.
+    pixel_sat = sum(colorsys.rgb_to_hls(*(v / 255 for v in p[:3]))[2] for p in px) / len(px)
+    box = im.getchannel("A").point(lambda v: 255 if v > 24 else 0).getbbox()
+    return {"opaque_px": len(px), "mean_rgb": mean, "hue_deg": round(h * 360), "lightness": round(l, 3),
+            "saturation": round(s, 3), "pixel_saturation": round(pixel_sat, 3),
+            "opaque_size": [box[2] - box[0], box[3] - box[1]] if box else None}
+
+
+def palette_problems(name: str, stats: dict, check: dict | None) -> list[str]:
+    """spec palette_check {min_saturation, min_pixel_saturation, hue_deg: [lo, hi]} turns a grey or off-hue
+    piece into a QA problem."""
+    if not check or not stats.get("opaque_px"):
+        return []
+    problems = []
+    for key, label in (("saturation", "mean colour saturation"), ("pixel_saturation", "mean pixel saturation")):
+        floor = check.get("min_" + key)
+        if floor is not None and stats[key] < floor:
+            problems.append(f"{name}: {label} {stats[key]} < {floor} (reads grey)")
+    lo, hi = check.get("hue_deg", [0, 360])
+    if not lo <= stats["hue_deg"] <= hi:
+        problems.append(f"{name}: mean hue {stats['hue_deg']} outside {lo}-{hi} degrees")
+    return problems
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -155,7 +191,8 @@ def produce(spec_path: Path, spec: dict, target: Path, request_id: str, blender:
             shutil.copyfile(Path(tmp) / meta["color"], master)
             item = {"path": native.relative_to(ROOT).as_posix(), "sha256": sha256(native), "pixel_size": size,
                     "facing": meta["facing"], "anchors_px": meta["anchors_px"], "builder": meta["builder"],
-                    "params": meta["params"], "master": master.relative_to(ROOT).as_posix(), "master_sha256": sha256(master)}
+                    "params": meta["params"], "master": master.relative_to(ROOT).as_posix(), "master_sha256": sha256(master),
+                    "palette": palette(native)}
             extra.append({"path": item["master"], "sha256": item["master_sha256"], "role": "4x master"})
             if meta.get("shadow"):
                 shadow = target / (name + "_shadow.png")
@@ -164,6 +201,8 @@ def produce(spec_path: Path, spec: dict, target: Path, request_id: str, blender:
                 extra.append({"path": item["shadow"], "sha256": sha256(shadow), "role": "separate cast shadow"})
             files.append(item)
         qa = art_qa.check(target, [Path(f["path"]).name for f in files])
+        for f in files:
+            qa["problems"] += palette_problems(Path(f["path"]).name, f["palette"], spec.get("palette_check"))
     exe = blender_executable(blender) or "unknown"
     warnings, accepted = split_expected(qa, spec)
     manifest = {

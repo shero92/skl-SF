@@ -80,9 +80,32 @@ func _apply(room: Node, spec: Dictionary) -> int:
         if not found:
             push_error("No floor sprite for candidate cell " + prefix)
             missing += 1
+    # Re-floor: a cell shows the plain tile of another cell (texture, rotation), offset by whole cells.
+    var tile := float(spec.get("tile_size", 64))
+    for cell in spec.get("refloor_cells", []):
+        var targets := room.find_children("Floor_%d_%d_*" % [int(cell[0]), int(cell[1])], "", true, false)
+        var sources := room.find_children("Floor_%d_%d_*" % [int(cell[2]), int(cell[3])], "", true, false)
+        if targets.is_empty() or sources.is_empty():
+            push_error("Cannot re-floor candidate cell " + str(cell))
+            missing += 1
+            continue
+        var src := sources[0] as Sprite2D
+        var dst := targets[0] as Sprite2D
+        dst.texture = src.texture
+        dst.centered = src.centered
+        dst.rotation = src.rotation
+        dst.scale = src.scale
+        dst.offset = src.offset
+        dst.region_enabled = src.region_enabled
+        dst.region_rect = src.region_rect
+        dst.position = src.position + Vector2(float(int(cell[0]) - int(cell[2])), float(int(cell[1]) - int(cell[3]))) * tile
     var layers := {"ground": _group(room, "CandidateGround", 11), "walls": _group(room, "CandidateWalls", 30),
         "shadows": _group(room, "CandidateShadows", 20)}
     (layers["walls"] as Node2D).y_sort_enabled = true
+    # "props": y-sorted together with the base furniture by ground contact (e.g. a fence in front of a chest).
+    var decor := room.find_child("Level3_Decorations", true, false) as Node2D
+    layers["props"] = decor if decor != null else _group(room, "CandidateProps", 40)
+    (layers["props"] as Node2D).y_sort_enabled = true
     for piece in spec.get("placements", []):
         var at := Vector2(float(piece["position"][0]), float(piece["position"][1]))
         var anchor := Vector2(float(piece["anchor_px"][0]), float(piece["anchor_px"][1]))

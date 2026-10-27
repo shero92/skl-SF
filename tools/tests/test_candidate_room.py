@@ -89,6 +89,34 @@ class Resolve(unittest.TestCase):
         self.assertIn("hero_side_wall_east_0_0", names)
         self.assertTrue(all(Path(p["texture"]).is_file() for p in r["placements"]))
 
+    def test_offsets_props_layer_and_refloor_cells(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            layout = fake_repo(root)
+            data = json.loads(layout.read_text())
+            data["pieces"][0].update(offset_px=[24, -4], layer="props")
+            data["refloor_cells"] = [[7, 4, 4, 4]]
+            layout.write_text(json.dumps(data))
+            r = cr.resolve(layout, root)
+            by = {p["name"]: p for p in r["placements"]}
+            self.assertEqual(by["edge_3_9"]["position"], [226 + 3 * 64 + 24, 225 + 9 * 64 - 4])
+            self.assertEqual(by["edge_3_9"]["layer"], "props")
+            self.assertEqual(r["refloor_cells"], [[7, 4, 4, 4]])
+            data["refloor_cells"] = [[7, 4]]
+            layout.write_text(json.dumps(data))
+            with self.assertRaises(ValueError):
+                cr.resolve(layout, root)
+
+    def test_repository_v4_layout_places_the_new_pieces(self):
+        r = cr.resolve(TOOLS.parent / "map_factory/candidates/hero_room_01_blender_v4.json")
+        by = {p["name"]: p for p in r["placements"]}
+        self.assertTrue(all(Path(p["texture"]).is_file() for p in r["placements"]))
+        self.assertEqual(by["hero_entrance_stairs_south_8_10"]["position"], [762, 865], "stairs hang from the floor front edge")
+        self.assertEqual(by["hero_compass_floor_inlay_8_6"]["position"], [738, 609], "inlay centred on a flagstone joint")
+        self.assertEqual({by[n]["layer"] for n in ("hero_rope_swag_west_rail_2_8", "hero_rope_swag_east_rail_15_8")}, {"props"})
+        self.assertEqual(len(r["refloor_cells"]), 9, "the nine procedural F014-F022 tiles are re-floored")
+        self.assertIn("EntryStairUpper", r["hide_instances"])
+
 
 class Compare(unittest.TestCase):
     def test_closer_candidate_scores_lower_and_sheet_is_written(self):
@@ -106,6 +134,7 @@ class Compare(unittest.TestCase):
             m = cr.compare(t / "base.png", t / "cand.png", t / "ref.png", resolved, t / "sheet.png")
             self.assertLess(m["regions"]["walls"]["candidate"], m["regions"]["walls"]["base"])
             self.assertLess(m["whole"]["candidate"], m["whole"]["base"])
+            self.assertLess(m["pieces"]["0"]["candidate"], m["pieces"]["0"]["base"], "per-piece metrics")
             self.assertEqual(Image.open(t / "sheet.png").size, (200 * 3 + 40, 150 + 40))
 
 

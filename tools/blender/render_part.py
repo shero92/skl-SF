@@ -34,7 +34,8 @@ def main():
         color = os.path.join(out_dir, out["name"] + ".png")
         shadow = os.path.join(out_dir, out["name"] + "_shadow.png")
         if out.get("shadow", True):
-            lib.render_color_and_shadow(objects, color, shadow)
+            # A builder may limit the shadow-receiving ground (piece["shadow_region"], tiles), e.g. to the floor.
+            lib.render_color_and_shadow(objects, color, shadow, piece.get("shadow_region"))
         else:
             lib.render(color)
             shadow = None

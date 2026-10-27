@@ -25,6 +25,8 @@ OUT = ROOT / "docs/previews/candidates"
 REFERENCE = ROOT / ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png"
 POINTS = {"top_left": (0.0, 0.0), "left_center": (0.0, 0.5), "right_center": (1.0, 0.5),
           "center": (0.5, 0.5), "bottom_center": (0.5, 1.0)}
+# ground: above the floor; walls: candidate wall pass (z 30); props: y-sorted with the base furniture (z 40).
+LAYERS = ("ground", "walls", "props")
 
 
 def godot_executable(override: str | None = None) -> str | None:
@@ -58,21 +60,28 @@ def resolve(layout_path: Path, root: Path = ROOT) -> dict:
         item = next((f for f in manifests[art]["files"] if Path(f["path"]).stem == piece["file"]), None)
         if item is None:
             raise ValueError(f"{art} delivers no {piece['file']}")
-        if piece["layer"] not in ("ground", "walls"):
-            raise ValueError("layer must be ground or walls")
+        if piece["layer"] not in LAYERS:
+            raise ValueError("layer must be one of " + ", ".join(LAYERS))
         anchor = item["anchors_px"][piece["anchor"]]
         fx, fy = POINTS[piece.get("point", "top_left")]
+        # offset_px: calibrated contacts that do not sit on a grid point (docs/HERO_ROOM_CALIBRATION.md).
+        dx, dy = piece.get("offset_px", [0, 0])
         for n, (cx, cy) in enumerate(piece["cells"]):
             placements.append({
                 "name": f"{piece['file']}_{cx}_{cy}", "layer": piece["layer"], "art": art,
                 "texture": str((root / item["path"]).resolve()).replace("\\", "/"),
                 "shadow": str((root / item["shadow"]).resolve()).replace("\\", "/") if item.get("shadow") else "",
                 "anchor_px": anchor, "pixel_size": item["pixel_size"], "sha256": item["sha256"],
-                "position": [ox + (cx + fx) * tile, oy + (cy + fy) * tile]})
+                "position": [ox + (cx + fx) * tile + dx, oy + (cy + fy) * tile + dy]})
+    # refloor_cells [x, y, from_x, from_y]: show a plain neighbouring floor tile instead of an override
+    # (e.g. under an inlay that replaces procedural tiles); review-only, the map snapshot is unchanged.
+    for cell in layout.get("refloor_cells", []):
+        if len(cell) != 4:
+            raise ValueError("refloor_cells entries are [x, y, from_x, from_y]")
     return {"candidate_id": layout["candidate_id"], "base_path": "res://" + rel,
             "canvas_size": snapshot.get("canvas_size", [1536, 1024]), "tile_size": tile,
             "hide_instances": layout.get("hide_instances", []), "hide_floor_cells": layout.get("hide_floor_cells", []),
-            "placements": placements}
+            "refloor_cells": layout.get("refloor_cells", []), "placements": placements}
 
 
 def piece_boxes(resolved: dict) -> list[list[int]]:
@@ -103,14 +112,19 @@ def compare(base_png: Path, candidate_png: Path, reference_png: Path, resolved: 
     w, h = base.size
     boxes = [[max(0, b[0]), max(0, b[1]), min(w, b[2]), min(h, b[3])] for b in piece_boxes(resolved)]
     regions = {}
-    for layer in ("ground", "walls"):
+    for layer in LAYERS:
         sel = [b for b, p in zip(boxes, resolved["placements"]) if p["layer"] == layer]
         if sel:
             box = [min(b[0] for b in sel), min(b[1] for b in sel), max(b[2] for b in sel), max(b[3] for b in sel)]
             regions[layer] = {"box": box, "base": mean_abs_diff(base, ref, box), "candidate": mean_abs_diff(cand, ref, box)}
+    # Per placement box: which piece moves the capture toward (or away from) the reference.
+    pieces = {}
+    for i, (b, p) in enumerate(zip(boxes, resolved["placements"])):
+        if b[2] > b[0] and b[3] > b[1]:
+            pieces[p.get("name", str(i))] ={"box": b, "base": mean_abs_diff(base, ref, b), "candidate": mean_abs_diff(cand, ref, b)}
     metrics = {"metric": "mean absolute RGB difference to the reference (0-255, lower is closer)",
                "whole": {"base": mean_abs_diff(base, ref), "candidate": mean_abs_diff(cand, ref)},
-               "regions": regions, "reference_resized": ref.size != Image.open(reference_png).size}
+               "regions": regions, "pieces": pieces, "reference_resized": ref.size != Image.open(reference_png).size}
     # Side-by-side sheet for the owner: reference | base | candidate, half size, regions outlined.
     half = (w // 2, h // 2)
     sheet = Image.new("RGB", (half[0] * 3 + 40, half[1] + 40), (24, 24, 28))

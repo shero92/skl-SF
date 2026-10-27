@@ -1,6 +1,6 @@
 ---
 id: ART-0025
-status: blocked_reference
+status: requested
 owner: graphics-specialist
 task: TASK-0038
 dedupe_key: hero_room_entrance_stairs
@@ -18,7 +18,7 @@ output_paths: .agents/graphics/deliveries/ART-0025/hero_entrance_stairs_south.pn
 ## Request checklist
 - [x] Duplicate scan against asset IDs, active requests (ART-0001..ART-0021) and deliveries (ART-0004, ART-0014).
 - [x] Original reference path and hash attached.
-- [ ] Specifications reviewed by owner; mark `requested`.
+- [x] Specifications reviewed by owner; mark `requested` (owner decision 2026-10-27, TASK-0054; D1 still open, 64x64 grid kept).
 
 ## Graphics specialist checklist
 - [ ] All required clean PNGs produced.
