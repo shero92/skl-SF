@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "agent_costs breakdown: cost share per receipt (input, cache read, cache write, output)",
+  "problem": "Cost analysis needed an ad-hoc script to see that about half of each Claude task's cost is 1h cache writes and a third is output; there is no built-in command",
+  "file": "tools/agent_costs.py",
+  "line": null,
+  "done_when": "py -3 tools/agent_costs.py breakdown prints per receipt the API-equivalent USD and its split into uncached input, cache read, cache write and output from receipts and pricing.json, lists receipts without tokens or price as unknown, and --json gives the same data; read-only",
+  "test": "py -3 tools/run_tests.py --only agent_costs",
+  "priority": "normal",
+  "kind": "feature",
+  "agent": "claude",
+  "task_id": "TASK-0065"
+}
