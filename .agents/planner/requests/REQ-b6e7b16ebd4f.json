@@ -1,0 +1,20 @@
+{
+  "status": "accepted",
+  "title": "Register approved Hero Room recovery execution tasks",
+  "problem": "Owner explicitly requested canonical tasks and dependencies for manual Codex and Claude PowerShell execution",
+  "file": "tools/manual_agents.py",
+  "done_when": "Approved recovery steps recorded with source keys; ready tasks produced under normal pulse cap; dependent specialist work remains gated",
+  "test": "py -3 -m unittest discover -s tools/tests -p test_goal_task_factory.py",
+  "agent": "claude",
+  "priority": "critical",
+  "kind": "investigation",
+  "goal_id": "GOAL-0001",
+  "step_keys": [
+    "recovery-runner-readiness",
+    "recovery-textured-capture",
+    "recovery-queue-evidence-audit",
+    "recovery-depth-comparison",
+    "recovery-art-disposition"
+  ],
+  "source": "Owner implementation request 2026-10-27"
+}
