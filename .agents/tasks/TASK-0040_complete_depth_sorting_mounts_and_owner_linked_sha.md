@@ -1,13 +1,13 @@
 ---
 id: TASK-0040
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: codex
+branch: work/task-0040-af340111
 agent: codex
 touches: map_factory/scripts/room_factory.gd,map_factory/scripts/shadow_factory.gd,tools/map_factory_layers.py,tools/map_factory_godot_smoke.gd,tools/tests/test_map_layers.py
 test: py -3 tools/run_tests.py --only map_layers --only godot_map_smoke
 done_when: Image-free runtime tests prove host move/remove, mounted offsets, independent owner shadows and front/back occlusion; no production fallback artwork
-started_at: unknown
+started_at: 2026-10-27T12:10:38.501499+00:00
 cost_usd: unknown
 depends_on: TASK-0033,TASK-0038
 issue: none
@@ -42,3 +42,6 @@ Outcome: Image-free runtime tests prove host move/remove, mounted offsets, indep
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-27T12:10:38.489525+00:00
