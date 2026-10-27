@@ -3,7 +3,7 @@ id: TASK-0040
 status: todo
 owner: unassigned
 branch: none
-agent: codex
+agent: claude
 touches: map_factory/scripts/room_factory.gd,map_factory/scripts/shadow_factory.gd,tools/map_factory_layers.py,tools/map_factory_godot_smoke.gd,tools/tests/test_map_layers.py
 test: py -3 tools/run_tests.py --only map_layers --only godot_map_smoke
 done_when: Image-free runtime tests prove host move/remove, mounted offsets, independent owner shadows and front/back occlusion; no production fallback artwork
@@ -20,7 +20,7 @@ art_request: none
 **Goal:** GOAL-0001
 **Type:** feature
 **Priority:** high
-**Suggested agent:** codex (routing heuristic, not a performance claim)
+**Suggested agent:** claude (owner reassigned 2026-10-27: Codex usage limit; was codex) (routing heuristic, not a performance claim)
 **File:** map_factory/scripts/room_factory.gd
 **Line:** unspecified
 **Problem:** Owner-approved recovery audit: Complete depth sorting mounts and owner-linked shadows

@@ -3,7 +3,7 @@ id: TASK-0041
 status: todo
 owner: unassigned
 branch: none
-agent: codex
+agent: claude
 touches: tools/art_delivery.py,tools/tests/test_art_delivery.py,map_factory/metadata/asset_index.json
 test: py -3 tools/run_tests.py --only art_delivery --only map_registry_validate
 done_when: Only signed reviewed delivery bytes integrated by authorized integrator; stable IDs/provenance preserved and measured contracts recorded; no HD reinstallation
@@ -20,7 +20,7 @@ art_request: none
 **Goal:** GOAL-0001
 **Type:** feature
 **Priority:** high
-**Suggested agent:** codex (routing heuristic, not a performance claim)
+**Suggested agent:** claude (owner reassigned 2026-10-27: Codex usage limit; was codex) (routing heuristic, not a performance claim)
 **File:** tools/art_delivery.py
 **Line:** unspecified
 **Problem:** Owner-approved recovery audit: Integrate reviewed artwork and measured contracts
