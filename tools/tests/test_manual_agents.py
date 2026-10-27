@@ -89,6 +89,35 @@ class ManualSessionTests(unittest.TestCase):
         called=[]
         result=manual.run_batch(self.root,["codex"],max_minutes=.001,executor=lambda *x:called.append(x))
         self.assertEqual(result["attempted"],0);self.assertEqual(called,[])
+        self.assertEqual(result["stop_reason"],"insufficient_time")
+
+    def test_short_session_starts_and_pulses_despite_long_task_timeout(self):
+        pulses=[]
+        def refresh(agent):pulses.append(agent);return False
+        with patch.object(ar,"read_json",lambda path,default:{"execution_timeout_seconds":1800}),patch.object(ar,"refresh_queue",refresh):
+            result=manual.run_batch(self.root,["codex"],max_minutes=29,executor=self.finish)
+        self.assertEqual(result["attempted"],1);self.assertEqual(pulses,["codex"])
+        self.assertEqual(result["stop_reason"],"no_ready_tasks")
+
+    def test_idle_session_pulses_and_explains_no_ready(self):
+        self.task("TASK-0001","codex","tools/a.py",status="done")
+        pulses=[]
+        def refresh(agent):pulses.append(agent);return False
+        with patch.object(ar,"refresh_queue",refresh):
+            result=manual.run_batch(self.root,["codex"],max_minutes=1)
+        self.assertEqual(pulses,["codex"]);self.assertEqual(result["stop_reason"],"no_ready_tasks")
+
+    def test_quota_release_is_reported(self):
+        def execute(task,deadline):raise ar.QuotaExceeded("limit")
+        result=manual.run_batch(self.root,["codex"],executor=execute)
+        self.assertEqual(result["quota_released"],1)
+
+    def test_task_0041_router_command_is_trusted(self):
+        import runner_safety
+        command="py -3 tools/run_tests.py --only art_delivery --only map_registry_validate".split()
+        self.assertEqual(runner_safety.safe_test(command),command)
+        for bad in (["--only","art_delivery;rm"],["--only","*"],["--only","art_delivery","--only"]):
+            with self.assertRaises(ValueError):runner_safety.safe_test(["py","-3","tools/run_tests.py",*bad])
 
     def test_cooldown_stops_only_that_agent(self):
         self.task("TASK-0002","claude","tools/b.py")
