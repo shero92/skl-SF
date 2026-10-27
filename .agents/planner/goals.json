@@ -176,7 +176,8 @@
           "complexity": "M",
           "token_cost_risk": "Medium",
           "new_graphics_required": true,
-          "source_gate_note": "TASK-0052 proves source identity; TASK-0001 retains whole-room comparison acceptance and must not create a calibration cycle."
+          "source_gate_note": "TASK-0052 proves source identity; TASK-0001 retains whole-room comparison acceptance and must not create a calibration cycle.",
+          "task_id": "TASK-0038"
         },
         {
           "key": "recovery-immutable",

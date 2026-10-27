@@ -44,6 +44,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0035](../tasks/TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md) | done | claude | none | none |
 | [TASK-0036](../tasks/TASK-0036_reconcile_hero_room_recovery_baseline.md) | done | codex | none | none |
 | [TASK-0037](../tasks/TASK-0037_current_version_qa_capture.md) | done | codex | TASK-0036 | none |
+| [TASK-0038](../tasks/TASK-0038_calibrate_visible_hd_art_and_modular_geometry.md) | blocked | unassigned | TASK-0052,TASK-0037 | none |
 | [TASK-0039](../tasks/TASK-0039_preserve_immutable_resolved_map_metadata.md) | done | codex | TASK-0036 | none |
 | [TASK-0046](../tasks/TASK-0046_blender_part_factory_foundation.md) | review | claude | none | none |
 | [TASK-0047](../tasks/TASK-0047_hero_room_blender_candidate.md) | review | claude | TASK-0046 | none |
