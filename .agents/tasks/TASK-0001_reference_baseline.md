@@ -35,3 +35,7 @@ art_request: none
 - Original 1448x1086 room composition and owner-accepted nine HD sprites are the targets. The committed goal reference is a candidate until owner identity confirmation; do not assert it is absent or byte-identical.
 - Visible authored views first; deferred additional views remain separate acceptance. Review P024/P025 before commissioning replacement bed/blanket art.
 - Source identity, measured native scale and signed reviewer evidence remain blocked. No asset or map approval implied.
+
+## Source-only prerequisite resolved
+- TASK-0052 preserves the actual owner original and hash/provenance evidence.
+- This task still requires reproducible Godot comparison and reviewer approval; it is not done merely because source bytes exist. Calibration depends on TASK-0052, avoiding a circular dependency on final room acceptance.

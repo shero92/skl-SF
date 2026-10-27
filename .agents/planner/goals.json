@@ -165,7 +165,7 @@
             "recovery-capture"
           ],
           "depends_on": [
-            "TASK-0001"
+            "TASK-0052"
           ],
           "done_when": "Signed source identity and source-versus-render measurements classify reuse/repair/new/deferred views with exact native size, ground/mount/seam/collision contacts",
           "test": "py -3 tools/agent_workflow.py --check",
@@ -175,7 +175,8 @@
           "proposed_task_id": "TASK-0038",
           "complexity": "M",
           "token_cost_risk": "Medium",
-          "new_graphics_required": true
+          "new_graphics_required": true,
+          "source_gate_note": "TASK-0052 proves source identity; TASK-0001 retains whole-room comparison acceptance and must not create a calibration cycle."
         },
         {
           "key": "recovery-immutable",
@@ -346,6 +347,20 @@
           "complexity": "M",
           "token_cost_risk": "Low",
           "new_graphics_required": false
+        },
+        {
+          "key": "recovery-reference",
+          "title": "Preserve original owner Hero Room reference",
+          "problem": "Committed goal reference differs from original upload",
+          "file": "map_factory/references/hero_room_01_original.reference.json",
+          "done_when": "Exact owner source bytes, dimensions and provenance preserved separately from artistic approval",
+          "test": "py -3 tools/run_tests.py --only map_reference --only task_evidence",
+          "kind": "investigation",
+          "priority": "critical",
+          "agent": "codex",
+          "after": [],
+          "depends_on": [],
+          "task_id": "TASK-0052"
         }
       ],
       "proposed_revision": {
@@ -575,7 +590,8 @@
           }
         ],
         "activated": "2026-10-26 by owner: automation creates tasks from these steps; no daily cap"
-      }
+      },
+      "reference_manifest": "map_factory/references/hero_room_01_original.reference.json"
     }
   ]
 }
