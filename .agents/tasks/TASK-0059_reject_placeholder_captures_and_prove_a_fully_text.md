@@ -1,6 +1,6 @@
 ---
 id: TASK-0059
-status: in_progress
+status: blocked
 owner: codex
 branch: work/task-0059-1b0566f0
 agent: codex
@@ -45,3 +45,6 @@ Outcome: Keep coding checkout image-free. Give only isolated deterministic rende
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-27T16:08:18.843184+00:00
+
+## Runner evidence
+- Runner failed: Agent did not change any allowed code
