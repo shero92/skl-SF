@@ -1,0 +1,18 @@
+{
+  "status": "accepted",
+  "title": "Prioritize visible Hero Room deliverables and repair confirmed worker capability failure",
+  "problem": "Owner supplied two images after session attempted 3 tasks but no room graphics improved; TASK0059 lacks file tools; source report remains placeholders.",
+  "file": "tools/candidate_room.py",
+  "done_when": "Executable bounded source tasks produce real textured assembled candidates and scripted reusable shell/furnishings with explicit visual review gates",
+  "test": "py -3 -m unittest discover -s tools/tests -p test_goal_task_factory.py",
+  "agent": "claude",
+  "kind": "feature",
+  "priority": "critical",
+  "goal_id": "GOAL-0001",
+  "step_keys": [
+    "recovery-agent-file-capability",
+    "recovery-depth-comparison",
+    "recovery-visible-shell",
+    "recovery-visible-furnishings"
+  ]
+}

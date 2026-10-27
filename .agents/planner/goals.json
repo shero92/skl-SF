@@ -50,7 +50,8 @@
           "test": "py -3 -m unittest discover -s tools/tests -p test_art_delivery.py",
           "after": [],
           "depends_on": [
-            "TASK-0037"
+            "TASK-0037",
+            "TASK-0061"
           ],
           "priority": "critical",
           "kind": "bug",
@@ -77,26 +78,27 @@
         },
         {
           "key": "recovery-depth-comparison",
-          "title": "Prepare genuine eight-versus-ten-row Hero Room comparison",
-          "file": "tools/capture_map_previews.gd",
+          "title": "Build a calibrated full-room candidate and genuine eight-versus-ten-row comparison",
+          "file": "tools/candidate_room.py",
           "touches": [
-            "tools/capture_map_previews.gd",
-            "tools/goal_qa.py",
-            "tools/tests/test_art_delivery.py",
+            "tools/candidate_room.py",
+            "tools/capture_candidate_room.gd",
+            "tools/tests/test_candidate_room.py",
             "map_factory/candidates/"
           ],
           "agent": "codex",
-          "problem": "Calibration decision D1 is open: source tile about 104x62 while logical grid is 64x64. Owner selected visual comparison first, not automatic eight-row adoption.",
-          "done_when": "Produce two isolated unapproved candidate captures using same real textures, camera, source hash and upright scale; only floor-depth/layout variant differs (8 versus 10 rows). Keep registered maps immutable and characters/UI excluded. Record reproducible candidate specs and metadata, local PNG evidence, known limitations. Compare v0011 composition, do not adopt projection or fabricate owner choice.",
-          "test": "py -3 -m unittest discover -s tools/tests -p test_art_delivery.py",
-          "after": [
-            "recovery-runner-readiness",
-            "recovery-textured-capture"
-          ],
-          "depends_on": [],
-          "priority": "high",
+          "problem": "Current v4 overlays shell pieces but keeps oversized/misplaced base furniture; comparison pipeline hardcodes the former reference. Owner wants both supplied room images and chose visual depth comparison, not automatic row adoption.",
+          "done_when": "Add tested candidate-only overrides for existing instance position/scale/visibility/mount adjustments, with unchanged registered snapshots/catalog. Reuse accepted HD bed/cover/desk/chest. Compose sleeping left, study right, centered open arch and compass, front stairs, continuous shell. Build 8/10-row unapproved candidate specs under same camera and textures; retain primary authenticated 1448 reference and use existing 1536 goal image as supplementary owner-supplied environment reference. Require real loaded textures, output local full-room comparison plus JSON hashes/camera/version and separate environment-only regions excluding characters/UI. No final signoff or projection change.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_candidate_room.py",
           "kind": "feature",
-          "new_graphics_required": false
+          "priority": "high",
+          "after": [],
+          "depends_on": [
+            "TASK-0059"
+          ],
+          "proposed_task_id": "TASK-0062",
+          "new_graphics_required": false,
+          "task_id": "TASK-0062"
         },
         {
           "key": "recovery-art-disposition",
@@ -108,10 +110,12 @@
           ],
           "agent": "specialist",
           "problem": "Owner requested visual comparison before D1 decision; ART-0004/0014 and Blender v4 remain visually unapproved; ART-0022..0025 are requested and existing HD reuse decisions need independent evidence.",
-          "done_when": "Independent authorized reviewer inspects actual textured candidates and native assets; owner selects floor depth and explicitly decides omissions/substitutions. Amend existing ART specs with final dimensions and reuse/repair/new/deferred decisions, not duplicate requests. Keep procedural candidates unapproved until real review; missing approved image tool blocks production only. Require producer/reviewer separation and owner art approval; never infer room approval.",
+          "done_when": "Owner reviews actual assembled comparison (not individual pieces), selects D1 floor depth and accepts/rejects omissions/substitutions and candidate art. Record defects per room region with capture/source hashes; numeric metrics and technical QA alone never approve visuals. Respect current scripted Blender workflow; independent review where required. Integration remains blocked until explicit owner approval.",
           "test": "py -3 -m unittest discover -s tools/tests -p test_agent_workflow.py",
           "after": [
-            "recovery-depth-comparison"
+            "recovery-depth-comparison",
+            "recovery-visible-shell",
+            "recovery-visible-furnishings"
           ],
           "depends_on": [],
           "priority": "high",
@@ -470,6 +474,76 @@
           "after": [],
           "depends_on": [],
           "task_id": "TASK-0052"
+        },
+        {
+          "key": "recovery-agent-file-capability",
+          "title": "Give the Codex worker scoped text file tools and honest failure evidence",
+          "file": "tools/agent_runner.py",
+          "touches": [
+            "tools/agent_runner.py",
+            "tools/agent_file_bridge.py",
+            "tools/tests/test_agent_file_bridge.py",
+            "tools/tests/test_runner_main_clean.py"
+          ],
+          "agent": "claude",
+          "problem": "TASK-0059 codex-exec final message states no local file read tool is available without shell, which runner forbids; it made no changes. Existing generic error hid the actual capability failure.",
+          "done_when": "Provide a task-scoped text read/edit tool bridge to Codex while retaining shell/git/image restrictions, existing permission settings and workspace isolation. Limit normalized symlink-resolved paths to authorized text touches plus minimal read-only instructions/dependencies; reject traversal, outside writes, binaries and arbitrary execution. Preflight actual capability and expose sanitized terminal reason instead of generic no-code only. Fake CLI regression must read and edit a synthetic allowed file through the bridge; reject out-of-scope/image access. No model calls in tests. Infra PR; do not pretend this completes TASK-0059.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_runner_main_clean.py",
+          "kind": "feature",
+          "priority": "critical",
+          "after": [],
+          "depends_on": [],
+          "proposed_task_id": "TASK-0061",
+          "new_graphics_required": false,
+          "task_id": "TASK-0061"
+        },
+        {
+          "key": "recovery-visible-shell",
+          "title": "Improve reusable architectural pieces for an assembled Hero Room shell",
+          "file": "tools/blender/builders.py",
+          "touches": [
+            "tools/blender/builders.py",
+            "tools/blender/lib.py",
+            "tools/blender/specs/",
+            "tools/tests/test_blender_factory.py"
+          ],
+          "agent": "claude",
+          "problem": "Blender v4 and ART-0004/0014/0022/0024/0025 exist but are unapproved; main still publishes v0011. Owner asks for detailed warm limestone connected architecture seen in both supplied images, rather than further reporting.",
+          "done_when": "Reuse existing builders/specs and ART IDs. Deliver code/spec improvements for connected wall courses and caps, corners/broken terrace cliff contacts, front stairs/rope posts and cobalt-gold compass; preserve open central arch and accepted HD originals. Stage only unapproved versioned candidate outputs through existing deterministic tools, never overwrite deliveries or parts. Run Blender scripted QA for seam anchor agreement, size/alpha/shadow direction and hashes; retain separate 8/10 depth variants where needed. No character/UI work. A production piece is not accepted by numeric image difference. Full assembled candidate is the only agent visual review artifact; no individual piece reads or permission edits. Infra/source PR only, final art needs owner room review.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_blender_factory.py",
+          "kind": "feature",
+          "priority": "high",
+          "after": [],
+          "depends_on": [],
+          "proposed_task_id": "TASK-0063",
+          "new_graphics_required": false,
+          "task_id": "TASK-0063"
+        },
+        {
+          "key": "recovery-visible-furnishings",
+          "title": "Complete reference-driven furnishings and decoration in the assembled candidate",
+          "file": "tools/blender/builders.py",
+          "touches": [
+            "tools/blender/builders.py",
+            "tools/blender/lib.py",
+            "tools/blender/specs/",
+            "tools/tests/test_blender_factory.py",
+            "map_factory/candidates/"
+          ],
+          "agent": "claude",
+          "problem": "Calibrated gaps persist in headboard shelf, study bookshelf, blue rugs, planter/foliage, wall fixtures and centerpiece. Accepted HD assets already cover several furniture requirements; wholesale regeneration would duplicate work.",
+          "done_when": "Use candidate comparison and calibration to repair or author only confirmed gaps under existing ART requests (0008,0011,0015,0020,0021,0023). Reuse bed/cover/desk/chest at calibrated contacts; remove unrequested duplicates only in candidate visibility, never delete originals. Script reproducible limestone/wood/cobalt-gold/flowers details, contacts and host anchors; rebuild candidate and produce a full-room review sheet with texture inventory. Exclude characters/treant-like actor from environment unless owner explicitly classifies it as scenery; do not silently substitute O028. Keep new outputs unapproved; no automatic import, visual approval or misleading error-score success claim.",
+          "test": "py -3 -m unittest discover -s tools/tests -p test_blender_factory.py",
+          "kind": "feature",
+          "priority": "normal",
+          "after": [],
+          "depends_on": [
+            "TASK-0062",
+            "TASK-0063"
+          ],
+          "proposed_task_id": "TASK-0064",
+          "new_graphics_required": false,
+          "task_id": "TASK-0064"
         }
       ],
       "proposed_revision": {
@@ -707,6 +781,13 @@
         "floor_depth": "Compare genuine eight-row and ten-row candidates before owner decision",
         "final_verified": false,
         "execution": "Existing manual PowerShell launcher; no new schedule or privilege changes"
+      },
+      "visible_delivery_priority": {
+        "owner_request": "Actual reusable environment matching both supplied images, not further infrastructure-only reports",
+        "primary_reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+        "supplementary_reference_sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+        "supplementary_existing_path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+        "note": "Second supplied image matches existing 1536x1024 reference; do not replace primary identity or mix coordinate systems. User images contain excluded characters/UI. Compare assembled environment only. No new image-generation authorization inferred."
       }
     }
   ]
