@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Price the Codex model gpt-6.1-sol and ignore local Claude worktrees",
+  "problem": "Codex receipts record model gpt-6.1-sol, which is missing from .agents/monitoring/pricing.json, so their cost stays unknown even with tokens (TASK-0009); claude -p runs leave untracked .claude/worktrees/ in the main checkout",
+  "file": ".agents/monitoring/pricing.json",
+  "line": null,
+  "done_when": "pricing.json carries the official OpenAI standard short-context rates for gpt-6.1-sol (input 2.00, cached 0.10, output 10.00 per 1M) and .gitignore ignores .claude/worktrees/; agent_costs tests pass",
+  "test": "py -3 tools/run_tests.py --only agent_costs",
+  "priority": "normal",
+  "kind": "bug",
+  "agent": "claude",
+  "task_id": "TASK-0057"
+}

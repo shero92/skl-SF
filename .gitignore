@@ -18,6 +18,9 @@ __pycache__/
 .venv/
 venv/
 
+# Local Claude Code worktrees (claude -p runs); task worktrees live outside the repo
+.claude/worktrees/
+
 # Temporary editor and operating system files
 *.tmp
 *.bak
