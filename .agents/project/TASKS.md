@@ -59,3 +59,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0054](../tasks/TASK-0054_hero_room_blender_v4.md) | review | claude | TASK-0050 | none |
 | [TASK-0055](../tasks/TASK-0055_agent_costs_started_at.md) | review | claude | none | none |
 | [TASK-0056](../tasks/TASK-0056_agent_costs_hook_worktrees.md) | review | claude | none | none |
+| [TASK-0057](../tasks/TASK-0057_codex_pricing_gitignore.md) | review | claude | none | none |

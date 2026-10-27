@@ -62,5 +62,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0054_hero_room_blender_v4.md`](TASK-0054_hero_room_blender_v4.md)
 - [`TASK-0055_agent_costs_started_at.md`](TASK-0055_agent_costs_started_at.md)
 - [`TASK-0056_agent_costs_hook_worktrees.md`](TASK-0056_agent_costs_hook_worktrees.md)
+- [`TASK-0057_codex_pricing_gitignore.md`](TASK-0057_codex_pricing_gitignore.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
