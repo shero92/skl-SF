@@ -1,13 +1,13 @@
 ---
 id: TASK-0058
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0058-0baf0d83
 agent: claude
 touches: tools/runner_safety.py,tools/manual_agents.py,tools/tests/test_manual_agents.py,tools/tests/test_runner_parallel.py
 test: py -3 -m unittest discover -s tools/tests -p test_manual_agents.py
 done_when: Accept explicitly trusted existing router suite names including art_delivery without shell/arbitrary command expansion; regression-test TASK-0041 command. Pulse independent of task execution budget. Explain no-ready/quota/time outcomes; respect global deadline and preserve work. One ordinary repair only; no security changes. Infrastructure PR required.
-started_at: unknown
+started_at: 2026-10-27T16:08:22.621530+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -42,3 +42,6 @@ Outcome: Accept explicitly trusted existing router suite names including art_del
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-27T16:08:22.610356+00:00
