@@ -231,7 +231,8 @@
           "proposed_task_id": "TASK-0040",
           "complexity": "M",
           "token_cost_risk": "Medium",
-          "new_graphics_required": false
+          "new_graphics_required": false,
+          "task_id": "TASK-0040"
         },
         {
           "key": "recovery-integrate",
@@ -256,7 +257,8 @@
           "proposed_task_id": "TASK-0041",
           "complexity": "M",
           "token_cost_risk": "Medium",
-          "new_graphics_required": true
+          "new_graphics_required": true,
+          "task_id": "TASK-0041"
         },
         {
           "key": "g1-m7-hero-room-v0011",

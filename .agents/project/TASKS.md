@@ -44,8 +44,10 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0035](../tasks/TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md) | done | claude | none | none |
 | [TASK-0036](../tasks/TASK-0036_reconcile_hero_room_recovery_baseline.md) | done | codex | none | none |
 | [TASK-0037](../tasks/TASK-0037_current_version_qa_capture.md) | done | codex | TASK-0036 | none |
-| [TASK-0038](../tasks/TASK-0038_calibrate_visible_hd_art_and_modular_geometry.md) | review | claude | TASK-0052,TASK-0037 | ART-0022 |
+| [TASK-0038](../tasks/TASK-0038_calibrate_visible_hd_art_and_modular_geometry.md) | done | claude | TASK-0052,TASK-0037 | ART-0022 |
 | [TASK-0039](../tasks/TASK-0039_preserve_immutable_resolved_map_metadata.md) | done | codex | TASK-0036 | none |
+| [TASK-0040](../tasks/TASK-0040_complete_depth_sorting_mounts_and_owner_linked_sha.md) | todo | unassigned | TASK-0033,TASK-0038 | none |
+| [TASK-0041](../tasks/TASK-0041_integrate_reviewed_artwork_and_measured_contracts.md) | todo | unassigned | TASK-0038,TASK-0039 | none |
 | [TASK-0046](../tasks/TASK-0046_blender_part_factory_foundation.md) | review | claude | none | none |
 | [TASK-0047](../tasks/TASK-0047_hero_room_blender_candidate.md) | review | claude | TASK-0046 | none |
 | [TASK-0048](../tasks/TASK-0048_hero_room_blender_v2.md) | review | claude | TASK-0047 | none |

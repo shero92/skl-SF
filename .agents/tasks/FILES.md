@@ -49,6 +49,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0037_current_version_qa_capture.md`](TASK-0037_current_version_qa_capture.md)
 - [`TASK-0038_calibrate_visible_hd_art_and_modular_geometry.md`](TASK-0038_calibrate_visible_hd_art_and_modular_geometry.md)
 - [`TASK-0039_preserve_immutable_resolved_map_metadata.md`](TASK-0039_preserve_immutable_resolved_map_metadata.md)
+- [`TASK-0040_complete_depth_sorting_mounts_and_owner_linked_sha.md`](TASK-0040_complete_depth_sorting_mounts_and_owner_linked_sha.md)
+- [`TASK-0041_integrate_reviewed_artwork_and_measured_contracts.md`](TASK-0041_integrate_reviewed_artwork_and_measured_contracts.md)
 - [`TASK-0046_blender_part_factory_foundation.md`](TASK-0046_blender_part_factory_foundation.md)
 - [`TASK-0047_hero_room_blender_candidate.md`](TASK-0047_hero_room_blender_candidate.md)
 - [`TASK-0048_hero_room_blender_v2.md`](TASK-0048_hero_room_blender_v2.md)
