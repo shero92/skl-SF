@@ -51,5 +51,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0047_hero_room_blender_candidate.md`](TASK-0047_hero_room_blender_candidate.md)
 - [`TASK-0048_hero_room_blender_v2.md`](TASK-0048_hero_room_blender_v2.md)
 - [`TASK-0049_reconcile_planning_pr_checks_with_main_only_genera.md`](TASK-0049_reconcile_planning_pr_checks_with_main_only_genera.md)
+- [`TASK-0050_hero_room_blender_v3.md`](TASK-0050_hero_room_blender_v3.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

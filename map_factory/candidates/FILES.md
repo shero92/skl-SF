@@ -6,11 +6,12 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`renders/`](renders/FILES.md)
 
 ## Files
 
 - [`hero_room_01_blender_v1.json`](hero_room_01_blender_v1.json)
 - [`hero_room_01_blender_v2.json`](hero_room_01_blender_v2.json)
+- [`hero_room_01_blender_v3.json`](hero_room_01_blender_v3.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

@@ -28,5 +28,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0046_claude_063936e3dc.json`](TASK-0046_claude_063936e3dc.json)
 - [`TASK-0047_claude_b27fc85bf2.json`](TASK-0047_claude_b27fc85bf2.json)
 - [`TASK-0048_claude_cb8c320430.json`](TASK-0048_claude_cb8c320430.json)
+- [`TASK-0050_claude_5bef6454fe.json`](TASK-0050_claude_5bef6454fe.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

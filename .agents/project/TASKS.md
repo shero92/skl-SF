@@ -48,3 +48,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0047](../tasks/TASK-0047_hero_room_blender_candidate.md) | review | claude | TASK-0046 | none |
 | [TASK-0048](../tasks/TASK-0048_hero_room_blender_v2.md) | review | claude | TASK-0047 | none |
 | [TASK-0049](../tasks/TASK-0049_reconcile_planning_pr_checks_with_main_only_genera.md) | blocked | codex | none | none |
+| [TASK-0050](../tasks/TASK-0050_hero_room_blender_v3.md) | review | claude | TASK-0048 | none |
