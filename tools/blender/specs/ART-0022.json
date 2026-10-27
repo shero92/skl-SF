@@ -2,7 +2,7 @@
   "art_id": "ART-0022",
   "task": "TASK-0054",
   "builder": "compass_inlay",
-  "params": {"half_x": 2.086, "half_y": 2.023, "ring": 0.62, "long_point": 0.84, "short_point": 0.5, "seed": 22, "field": [0.07, 0.24, 0.62]},
+  "params": {"half_x": 2.086, "half_y": 2.023, "ring": 0.62, "long_point": 0.84, "short_point": 0.5, "seed": 22, "cobalt_ticks": true,"field": [0.07, 0.24, 0.62]},
   "palette_check": {"min_pixel_saturation": 0.35},
   "outputs": [
     {"name": "hero_compass_floor_inlay", "facing": "south", "shadow": false}

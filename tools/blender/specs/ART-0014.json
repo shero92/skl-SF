@@ -2,12 +2,12 @@
   "art_id": "ART-0014",
   "task": "TASK-0025",
   "builder": "broken_floor_edge",
-  "params": {"thickness": 0.22, "chips": 3},
+  "params": {"thickness": 0.22, "chips": 3, "cliff": 0.8},
   "outputs": [
     {"name": "hero_broken_floor_edge_01", "params": {"kind": "edge", "seed": 11}},
     {"name": "hero_broken_floor_edge_02", "params": {"kind": "edge", "seed": 23}},
     {"name": "hero_broken_floor_corner_left", "params": {"kind": "corner_left", "seed": 31}},
     {"name": "hero_broken_floor_corner_right", "params": {"kind": "corner_right", "seed": 47}}
   ],
-  "notes": "Flat 1x1 floor tiles (2x2 pavers) whose front edge breaks off above the cliff; corners also break on the left or right side. The visible slab thickness is drawn below the 64x64 top face."
+  "notes": "Flat 1x1 floor tiles (2x2 pavers) whose front edge breaks off above the cliff; corners also break on the left or right side. The visible slab thickness is drawn below the 64x64 top face. TASK-0063: cliff 0.8 adds ragged terrace-cliff rock courses below every broken edge (corners on both sides); the 10-deep variant is the same spec with an output override cliff 1.0, kept separate from the 8-deep pieces."
 }
