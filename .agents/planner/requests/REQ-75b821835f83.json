@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "Pulse: allow approved calibration doc and record specialist blockers",
+  "problem": "manual_agents session interrupted: goal_task_factory.py pulse exits 1 with 'Outside Map Factory coding scope: docs/HERO_ROOM_CALIBRATION.md' because create() applies coding touches rules to the specialist recovery-calibration step, and one failing step aborts the whole pulse",
+  "file": "tools/goal_task_factory.py",
+  "line": null,
+  "done_when": "Pulse accepts exactly docs/HERO_ROOM_CALIBRATION.md (not docs/), records specialist steps blocked with their real requirements, and a refused step no longer stops updates to independent tasks; regression test reproduces the original failure",
+  "test": "py -3 tools/run_tests.py --only goal_task_factory",
+  "priority": "critical",
+  "kind": "bug",
+  "agent": "claude",
+  "task_id": "TASK-0053"
+}

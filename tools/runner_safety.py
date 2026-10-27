@@ -12,6 +12,8 @@ GENERATED_NAMES = {"INDEX.md", "FILES.md", "TASKS.md", "ACTIVE.md",
                    "QUEUE.md", "summary.md", "summary.json"}
 FORBIDDEN_PARTS = {"characters", "ui", "portraits", "gameplay"}
 ALLOWED_PREFIXES = ("map_factory/", "tools/", "scenes/map_factory_preview.")
+# Owner-approved Map Factory documents outside the coding prefixes: exact paths only, never their folder.
+APPROVED_DOCS = {"docs/HERO_ROOM_CALIBRATION.md"}
 
 MAIN_GENERATED_PATHS = {
     ".agents/project/TASKS.md", ".agents/project/ACTIVE.md", ".agents/graphics/QUEUE.md",
@@ -83,7 +85,7 @@ def touches(raw):
     for path in paths:
         if any(c in path for c in "*?[]") or is_art(path) or (is_generated(path) and not is_request_record(path)) or (Path(path).suffix and is_binary_path(path)) or path.startswith(("scenes/ui","tools/generate_character","tools/repaint_")):
             raise ValueError("No art or generated boards in coding touches: " + path)
-        if not path.startswith(ALLOWED_PREFIXES) and not is_request_record(path, directory=True):
+        if not path.startswith(ALLOWED_PREFIXES) and path not in APPROVED_DOCS and not is_request_record(path, directory=True):
             raise ValueError("Outside Map Factory coding scope: " + path)
         if FORBIDDEN_PARTS.intersection(path.lower().split("/")):
             raise ValueError("Character/gameplay/UI path not allowed: " + path)
