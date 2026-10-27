@@ -1,13 +1,13 @@
 ---
 id: TASK-0063
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0063-00ca7e6f
 agent: claude
 touches: tools/blender/builders.py,tools/blender/lib.py,tools/blender/specs/,tools/tests/test_blender_factory.py
 test: py -3 -m unittest discover -s tools/tests -p test_blender_factory.py
 done_when: Reuse existing builders/specs and ART IDs. Deliver code/spec improvements for connected wall courses and caps, corners/broken terrace cliff contacts, front stairs/rope posts and cobalt-gold compass; preserve open central arch and accepted HD originals. Stage only unapproved versioned candidate outputs through existing deterministic tools, never overwrite deliveries or parts. Run Blender scripted QA for seam anchor agreement, size/alpha/shadow direction and hashes; retain separate 8/10 depth variants where needed. No character/UI work. A production piece is not accepted by numeric image difference. Full assembled candidate is the only agent visual review artifact; no individual piece reads or permission edits. Infra/source PR only, final art needs owner room review.
-started_at: unknown
+started_at: 2026-10-27T16:45:13.199770+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -42,3 +42,6 @@ Outcome: Reuse existing builders/specs and ART IDs. Deliver code/spec improvemen
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-27T16:45:13.189837+00:00
