@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| claude | TASK-0063 | tools/blender/builders.py, tools/blender/lib.py, tools/blender/specs/, tools/tests/test_blender_factory.py | 2026-10-27T16:45:13.199770+00:00 | in_progress | unknown |
+| — | none | — | — | — | — |
