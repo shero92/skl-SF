@@ -57,3 +57,12 @@ Outcome: Capture registry-selected immutable revisions without v0010 assumptions
 - No owner visual approval or room completion claimed. Next: PR review and genuine isolated current-version capture.
 
 - Final changed-path run: 26/27 Python suites passed; candidate_room fails only on unavailable delivery manifests/assets in this intentionally sparse worktree. Targeted rerun after committed-tree guard: 3/3 passed.
+
+## Genuine isolated Godot capture
+- Command: py -3 tools/goal_qa.py capture GOAL-0001 (exit 0).
+- Rendered hero_room_01 v0011 at 1536x1024 from commit c4f93d76a04a728e22cb28b1212edd3d7b135463.
+- Snapshot SHA-256: e5dc4ebc34fcbce693957c22fe65d072b640cf35ea7b53046dde83e2a35cd3b2.
+- PNG SHA-256: c8558d87da0ce61b978b2801f4d8885a6742a58b61a883a8bd6335e4a0a2ebb5.
+- Camera center [768,512], zoom [1,1], run 43e6d5492f754057bc4981e3119edb69.
+- PNG and receipt preserved locally under .agents/monitoring/.local/qa-evidence/GOAL-0001 (not committed). Intermediate evidence only; owner_final_signoff=false.
+- PR: https://github.com/shero92/skl-SF/pull/46
