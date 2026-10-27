@@ -1,6 +1,6 @@
 {
   "candidate": "hero_room_01_blender_v3",
-  "task": "TASK-0049",
+  "task": "TASK-0050",
   "builder": "side_wall_path",
   "params": {
     "height": 1.1,
