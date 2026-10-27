@@ -46,6 +46,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0034_enforce_four_direction_variants_for_upright_blocks.md`](TASK-0034_enforce_four_direction_variants_for_upright_blocks.md)
 - [`TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md`](TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md)
 - [`TASK-0036_reconcile_hero_room_recovery_baseline.md`](TASK-0036_reconcile_hero_room_recovery_baseline.md)
+- [`TASK-0037_current_version_qa_capture.md`](TASK-0037_current_version_qa_capture.md)
 - [`TASK-0039_preserve_immutable_resolved_map_metadata.md`](TASK-0039_preserve_immutable_resolved_map_metadata.md)
 - [`TASK-0046_blender_part_factory_foundation.md`](TASK-0046_blender_part_factory_foundation.md)
 - [`TASK-0047_hero_room_blender_candidate.md`](TASK-0047_hero_room_blender_candidate.md)
@@ -53,5 +54,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0049_reconcile_planning_pr_checks_with_main_only_genera.md`](TASK-0049_reconcile_planning_pr_checks_with_main_only_genera.md)
 - [`TASK-0050_hero_room_blender_v3.md`](TASK-0050_hero_room_blender_v3.md)
 - [`TASK-0051_manual_bounded_parallel_codex_and_claude_launcher.md`](TASK-0051_manual_bounded_parallel_codex_and_claude_launcher.md)
+- [`TASK-0052_original_hero_room_reference.md`](TASK-0052_original_hero_room_reference.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

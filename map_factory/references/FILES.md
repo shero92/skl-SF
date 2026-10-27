@@ -11,5 +11,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`README.md`](README.md)
+- [`hero_room_01_original.png`](hero_room_01_original.png)
+- [`hero_room_01_original.reference.json`](hero_room_01_original.reference.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

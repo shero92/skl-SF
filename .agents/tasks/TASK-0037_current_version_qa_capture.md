@@ -1,6 +1,6 @@
 ---
 id: TASK-0037
-status: review
+status: done
 owner: codex
 branch: codex/current-map-qa-final
 agent: codex
@@ -66,3 +66,9 @@ Outcome: Capture registry-selected immutable revisions without v0010 assumptions
 - Camera center [768,512], zoom [1,1], run 43e6d5492f754057bc4981e3119edb69.
 - PNG and receipt preserved locally under .agents/monitoring/.local/qa-evidence/GOAL-0001 (not committed). Intermediate evidence only; owner_final_signoff=false.
 - PR: https://github.com/shero92/skl-SF/pull/46
+
+## Approved merge and main verification
+- Owner explicitly approved sequential merge: https://github.com/shero92/skl-SF/pull/46
+- Merge commit: b81796be88bf6fe1fd57b4eb7a06ea6fcc50d768.
+- Combined main 97b85f6: py -3 tools/run_tests.py --all passed 30/30 (27 Python, 3 Godot). Both registered maps validated; original reference SHA-256 matches the approved manifest. Historical map files unchanged; final_verified=false.
+- Completed technical scope only. Next: specialist calibration using authenticated source and genuine current capture; no visual approval fabricated.

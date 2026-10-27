@@ -1,6 +1,6 @@
 ---
 id: TASK-0039
-status: review
+status: done
 owner: codex
 branch: codex/immutable-resolved-metadata
 agent: codex
@@ -53,3 +53,9 @@ Outcome: Catalog measurement corrections do not rewrite or invalidate historical
 - Added synthetic coverage for changed pivots/pixel sizes/collision/shadows, archive byte stability, next-revision measurements, corrupted positions/IDs/anchors/layers, missing artifacts, source changes, identity changes, animation dependencies and parent-chain tampering.
 - Limitation: legacy files have no cryptographic hash chain; coordinated edits to all mutually consistent legacy records cannot be authenticated retroactively. New parent links protect their published ancestors without inventing old evidence.
 - Final verification: `--all --kind python` and `--changed --kind python` each passed 26/27 groups; both only fail `candidate_room` because excluded production delivery artifacts are absent. `git diff --check` passed. The focused acceptance command passed 3/3 after the final code change. No art was restored, opened or changed.
+
+## Approved merge and main verification
+- Owner explicitly approved sequential merge: https://github.com/shero92/skl-SF/pull/47
+- Merge commit: 97b85f62400e353df4b9c87b07522516bd866b76.
+- Combined main 97b85f6: py -3 tools/run_tests.py --all passed 30/30 (27 Python, 3 Godot). Both registered maps validated; original reference SHA-256 matches the approved manifest. Historical map files unchanged; final_verified=false.
+- Completed technical scope only. Next: specialist calibration using authenticated source and genuine current capture; no visual approval fabricated.

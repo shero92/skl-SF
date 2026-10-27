@@ -43,10 +43,12 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0034](../tasks/TASK-0034_enforce_four_direction_variants_for_upright_blocks.md) | done | claude | TASK-0009 | none |
 | [TASK-0035](../tasks/TASK-0035_owner_linked_layer_4_shadows_glow_and_light_shafts.md) | done | claude | none | none |
 | [TASK-0036](../tasks/TASK-0036_reconcile_hero_room_recovery_baseline.md) | done | codex | none | none |
-| [TASK-0039](../tasks/TASK-0039_preserve_immutable_resolved_map_metadata.md) | todo | unassigned | TASK-0036 | none |
+| [TASK-0037](../tasks/TASK-0037_current_version_qa_capture.md) | done | codex | TASK-0036 | none |
+| [TASK-0039](../tasks/TASK-0039_preserve_immutable_resolved_map_metadata.md) | done | codex | TASK-0036 | none |
 | [TASK-0046](../tasks/TASK-0046_blender_part_factory_foundation.md) | review | claude | none | none |
 | [TASK-0047](../tasks/TASK-0047_hero_room_blender_candidate.md) | review | claude | TASK-0046 | none |
 | [TASK-0048](../tasks/TASK-0048_hero_room_blender_v2.md) | review | claude | TASK-0047 | none |
 | [TASK-0049](../tasks/TASK-0049_reconcile_planning_pr_checks_with_main_only_genera.md) | blocked | codex | none | none |
 | [TASK-0050](../tasks/TASK-0050_hero_room_blender_v3.md) | review | claude | TASK-0048 | none |
 | [TASK-0051](../tasks/TASK-0051_manual_bounded_parallel_codex_and_claude_launcher.md) | done | codex | none | none |
+| [TASK-0052](../tasks/TASK-0052_original_hero_room_reference.md) | done | codex | none | none |

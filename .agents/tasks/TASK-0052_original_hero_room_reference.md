@@ -1,6 +1,6 @@
 ---
 id: TASK-0052
-status: review
+status: done
 owner: codex
 branch: codex/hero-original-reference
 agent: codex
@@ -32,3 +32,9 @@ Owner explicitly supplied the reference and approved exact-byte preservation. Th
 - No production sprite, map version or approval changed. Next: current-version Godot capture and calibration.
 
 - Validation: reference evidence check passed; Python run 26/27 suites passed, with candidate_room requiring omitted production images in the sparse checkout. Hosted full-checkout validation remains required.
+
+## Approved merge and main verification
+- Owner explicitly approved sequential merge: https://github.com/shero92/skl-SF/pull/45
+- Merge commit: d3294f16760251ad1e1a6dbb09bd412525279d9e.
+- Combined main 97b85f6: py -3 tools/run_tests.py --all passed 30/30 (27 Python, 3 Godot). Both registered maps validated; original reference SHA-256 matches the approved manifest. Historical map files unchanged; final_verified=false.
+- Completed technical scope only. Next: specialist calibration using authenticated source and genuine current capture; no visual approval fabricated.

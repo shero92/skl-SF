@@ -5,9 +5,9 @@
       "input_tokens": 1083125,
       "output_tokens": 18605,
       "known_usd": 0.888117,
-      "unknown_cost_receipts": 9,
-      "unknown_token_receipts": 8,
-      "receipts": 12
+      "unknown_cost_receipts": 13,
+      "unknown_token_receipts": 12,
+      "receipts": 16
     }
   ]
 }
