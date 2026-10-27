@@ -58,7 +58,8 @@ def usage(value, agent="codex"):
         return None
     return nums
 
-def cost_from_tokens(u, agent, model):
+def cost_parts(u, agent, model):
+    """API-equivalent USD per bucket (input, cache_read, cache_write, output), or None."""
     if u is None or not isinstance(model, str):
         return None
     prices = get(BASE / "pricing.json", {}).get("models", {})
@@ -69,16 +70,58 @@ def cost_from_tokens(u, agent, model):
         return None
     uncached = u["input_tokens"] - u["cached_input_tokens"] - u["cache_creation_input_tokens"]
     try:
-        total = (uncached * rates["input_per_million"]
-                 + u["cached_input_tokens"] * rates["cached_input_per_million"]
-                 + u["output_tokens"] * rates["output_per_million"])
+        parts = {"input": uncached * rates["input_per_million"],
+                 "cache_read": u["cached_input_tokens"] * rates["cached_input_per_million"],
+                 "cache_write": 0.0,
+                 "output": u["output_tokens"] * rates["output_per_million"]}
         if agent == "claude":
-            total += ((u["cache_creation_input_tokens"] - u["cache_creation_1h_input_tokens"])
-                      * rates["cache_creation_5m_per_million"])
-            total += u["cache_creation_1h_input_tokens"] * rates["cache_creation_1h_per_million"]
-        return round(total / 1000000, 6)
+            parts["cache_write"] = ((u["cache_creation_input_tokens"] - u["cache_creation_1h_input_tokens"])
+                                    * rates["cache_creation_5m_per_million"]
+                                    + u["cache_creation_1h_input_tokens"] * rates["cache_creation_1h_per_million"])
     except (KeyError, TypeError):
         return None
+    return {k: v / 1000000 for k, v in parts.items()}
+
+def cost_from_tokens(u, agent, model):
+    parts = cost_parts(u, agent, model)
+    return None if parts is None else round(sum(parts.values()), 6)
+
+def breakdown(as_json=False):
+    """Read-only: where each receipt's API-equivalent cost goes. Unknown stays unknown."""
+    rows = []
+    for file in sorted((BASE / "receipts").glob("TASK-*.json")):
+        r = get(file)
+        models = r.get("models") or []
+        parts = cost_parts(r.get("tokens"), r.get("agent"), models[0]) if len(models) == 1 else None
+        row = {"task_id": r.get("task_id"), "agent": r.get("agent"), "models": models,
+               "receipt": file.name, "usd": None, "parts_usd": None}
+        if parts is not None:
+            row["usd"] = round(sum(parts.values()), 6)
+            row["parts_usd"] = {k: round(v, 6) for k, v in parts.items()}
+        else:
+            row["unknown"] = ("no tokens" if not r.get("tokens") else
+                              "several models" if len(models) > 1 else "no price for " + (models[0] if models else "model"))
+        rows.append(row)
+    if as_json:
+        print(json.dumps(rows, indent=2))
+        return rows
+    known = [x for x in rows if x["usd"] is not None]
+    print("| Task | Agent | USD | Input | Cache read | Cache write | Output |")
+    print("| --- | --- | ---: | ---: | ---: | ---: | ---: |")
+    for x in sorted(known, key=lambda x: -x["usd"]):
+        share = lambda k: "%d%%" % round(100 * x["parts_usd"][k] / x["usd"]) if x["usd"] else "0%"
+        print("| %s | %s | %.3f | %s | %s | %s | %s |" % (x["task_id"], x["agent"], x["usd"], share("input"),
+              share("cache_read"), share("cache_write"), share("output")))
+    total = sum(x["usd"] for x in known)
+    print("")
+    print("Known API-equivalent USD: %.3f over %d of %d receipts (estimates, not invoices)." % (total, len(known), len(rows)))
+    if total:
+        print("Overall: " + ", ".join("%s %d%%" % (k, round(100 * sum(x["parts_usd"][k] for x in known) / total))
+                                      for k in ("input", "cache_read", "cache_write", "output")))
+    unknown = [x for x in rows if x["usd"] is None]
+    if unknown:
+        print("Unknown: " + ", ".join(x["task_id"] + " (" + x["unknown"] + ")" for x in unknown))
+    return rows
 
 def parse_time(value):
     try:
@@ -381,6 +424,9 @@ def run(args):
     if args.command == "report":
         report(args.check, args.sources_only, args.base)
         return
+    if args.command == "breakdown":
+        breakdown(args.json)
+        return
     if args.command == "abort":
         # Stale tracking: discard without a receipt so no cost is attributed.
         active = get(active_path)
@@ -512,6 +558,8 @@ def main():
     modes.add_argument("--check", action="store_true")
     modes.add_argument("--sources-only", action="store_true", help="validate PR receipts without writing main-only summaries")
     r.add_argument("--base", default="origin/main")
+    b = sub.add_parser("breakdown", help="Read-only cost split per receipt (input, cache read/write, output)")
+    b.add_argument("--json", action="store_true")
     sub.add_parser("diagnose", help="Show privacy-safe local hook/session health")
     sub.add_parser("abort", help="Discard stale tracking without writing a receipt")
     done = sub.add_parser("complete", help="Commit tracked tokens with staged task code")

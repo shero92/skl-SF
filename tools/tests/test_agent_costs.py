@@ -222,6 +222,33 @@ class CostTests(unittest.TestCase):
         self.assertEqual(doc["missing_cost_receipts"], 1)
         self.assertEqual(doc["tasks"][0]["known_usd"], 0)
 
+    def test_breakdown_splits_cost_and_keeps_unknown(self):
+        self.claude_prices()
+        receipts = self.root / ".agents/monitoring/receipts"
+        receipts.mkdir(parents=True, exist_ok=True)
+        tokens = {"input_tokens": 1800, "cached_input_tokens": 500, "output_tokens": 100,
+                  "reasoning_output_tokens": 0, "cache_creation_input_tokens": 300,
+                  "cache_creation_1h_input_tokens": 100}
+        (receipts / "TASK-0087_claude_a.json").write_text(json.dumps(
+            {"task_id": "TASK-0087", "agent": "claude", "models": ["claude-opus-5-5-20261001"], "tokens": tokens}))
+        (receipts / "TASK-0086_codex_b.json").write_text(json.dumps(
+            {"task_id": "TASK-0086", "agent": "codex", "models": ["unpriced-model"], "tokens": tokens}))
+        (receipts / "TASK-0085_claude_c.json").write_text(json.dumps(
+            {"task_id": "TASK-0085", "agent": "claude", "models": [], "tokens": None}))
+        rows = {r["task_id"]: r for r in json.loads(self.invoke("breakdown", "--json"))}
+        # Same total as the receipt pricing (test_claude_transcript_fallback_with_cache_prices).
+        self.assertEqual(rows["TASK-0087"]["usd"], 0.0079)
+        self.assertEqual(rows["TASK-0087"]["parts_usd"], {"input": 0.004, "cache_read": 0.0001,
+                                                         "cache_write": 0.0018, "output": 0.002})
+        self.assertIsNone(rows["TASK-0086"]["usd"])
+        self.assertEqual(rows["TASK-0086"]["unknown"], "no price for unpriced-model")
+        self.assertEqual(rows["TASK-0085"]["unknown"], "no tokens")
+        text = self.invoke("breakdown")
+        self.assertIn("| TASK-0087 | claude | 0.008 | 51% | 1% | 23% | 25% |", text)
+        self.assertIn("over 1 of 3 receipts", text)
+        self.assertIn("TASK-0085 (no tokens)", text)
+        self.assertFalse((self.root / ".agents/monitoring/summary.json").exists(), "breakdown is read-only")
+
     def cost_cli(self, root, *args, event=None):
         proc = subprocess.run([sys.executable, str(SCRIPT), *args], env={**self.env, "SKL_COST_ROOT": str(root)},
                               input=json.dumps(event) if event is not None else None, capture_output=True, text=True)
