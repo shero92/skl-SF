@@ -246,6 +246,35 @@ def report(check=False, sources_only=False, base="origin/main"):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(content, encoding="utf8", newline="\n")
 
+def hook_local(agent):
+    """Tracking folder for a hook event: this checkout's when it tracks `agent`, otherwise the
+    single other worktree of this repository that does (a session opened in the main checkout
+    while `start` ran in the task worktree). Zero or several candidates record nothing."""
+    own = get(LOCAL / "active.json")
+    if own and own.get("agent") == agent:
+        return LOCAL
+    try:
+        proc = subprocess.run(["git", "-C", str(ROOT), "worktree", "list", "--porcelain"],
+                              capture_output=True, text=True, encoding="utf-8", timeout=10)
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if proc.returncode:
+        return None
+    found = []
+    for line in proc.stdout.splitlines():
+        if not line.startswith("worktree "):
+            continue
+        local = Path(line[len("worktree "):]) / ".agents" / "monitoring" / ".local"
+        if local.resolve() == LOCAL.resolve():
+            continue
+        try:
+            active = get(local / "active.json")
+        except (OSError, ValueError):
+            continue
+        if active and active.get("agent") == agent:
+            found.append(local)
+    return found[0] if len(found) == 1 else None
+
 def git(*parts):
     """Run only narrowly scoped git operations from the active project worktree."""
     result = subprocess.run(["git", "-C", str(ROOT), *parts],
@@ -324,7 +353,8 @@ def run(args):
             event = json.load(sys.stdin)
         except ValueError:
             return
-        active = get(active_path)
+        local = hook_local(args.agent)
+        active = get(local / "active.json") if local else None
         if not active or active["agent"] != args.agent:
             if args.statusline:
                 print("Task: inactive")
@@ -332,7 +362,7 @@ def run(args):
         sid = event.get("session_id") or event.get("thread-id")
         if not sid:
             return
-        file = LOCAL / ("session_" + hashlib.sha256(str(sid).encode()).hexdigest()[:16] + ".json")
+        file = local / ("session_" + hashlib.sha256(str(sid).encode()).hexdigest()[:16] + ".json")
         item = get(file, {})
         item["transcript_path"] = event.get("transcript_path") or item.get("transcript_path")
         item["agent"] = args.agent
