@@ -1,6 +1,6 @@
 ---
 id: TASK-0060
-status: in_progress
+status: done
 owner: claude
 branch: work/task-0060-cc965c25
 agent: claude
@@ -45,3 +45,6 @@ Outcome: Write bounded text-only JSON audit for review/blocked tasks: canonical 
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-27T16:10:15.320560+00:00
+
+## Runner evidence
+- Merged 00c5c47e94c8c4731d38f3a5574000a880bfa9e7; post-merge validation passed

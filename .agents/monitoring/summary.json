@@ -46,6 +46,21 @@
     },
     {
       "agents": [
+        "claude",
+        "codex"
+      ],
+      "cached_input_tokens": 81799,
+      "input_tokens": 100694,
+      "known_usd": 0.256392,
+      "output_tokens": 4446,
+      "reasoning_output_tokens": 0,
+      "receipts": 2,
+      "task_id": "TASK-0060",
+      "unknown_costs": 1,
+      "unknown_token_receipts": 1
+    },
+    {
+      "agents": [
         "claude"
       ],
       "cached_input_tokens": 89705,
@@ -365,21 +380,7 @@
       "task_id": "TASK-0057",
       "unknown_costs": 1,
       "unknown_token_receipts": 1
-    },
-    {
-      "agents": [
-        "codex"
-      ],
-      "cached_input_tokens": 0,
-      "input_tokens": 0,
-      "known_usd": 0.0,
-      "output_tokens": 0,
-      "reasoning_output_tokens": 0,
-      "receipts": 1,
-      "task_id": "TASK-0060",
-      "unknown_costs": 1,
-      "unknown_token_receipts": 1
     }
   ],
-  "total_known_usd": 1.706752
+  "total_known_usd": 1.963144
 }

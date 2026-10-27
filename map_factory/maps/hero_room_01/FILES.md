@@ -14,6 +14,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`latest.json`](latest.json)
+- [`recovery_queue_audit.json`](recovery_queue_audit.json)
 - [`reference_gaps.json`](reference_gaps.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
