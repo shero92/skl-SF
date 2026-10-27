@@ -1,13 +1,13 @@
 ---
 id: TASK-0041
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0041-cf8add5a
 agent: claude
 touches: tools/art_delivery.py,tools/tests/test_art_delivery.py,map_factory/metadata/asset_index.json
 test: py -3 tools/run_tests.py --only art_delivery --only map_registry_validate
 done_when: Only signed reviewed delivery bytes integrated by authorized integrator; stable IDs/provenance preserved and measured contracts recorded; no HD reinstallation
-started_at: unknown
+started_at: 2026-10-27T12:27:41.914575+00:00
 cost_usd: unknown
 depends_on: TASK-0038,TASK-0039
 issue: none
@@ -42,3 +42,6 @@ Outcome: Only signed reviewed delivery bytes integrated by authorized integrator
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-27T12:27:41.902299+00:00
