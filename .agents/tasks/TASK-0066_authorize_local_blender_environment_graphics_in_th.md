@@ -1,6 +1,6 @@
 ---
 id: TASK-0066
-status: review
+status: done
 owner: codex
 branch: codex/graphics-rules-external-workspace
 agent: codex
@@ -53,3 +53,9 @@ Outcome: Consistent owner-authorized environment graphics rules and scoped works
 - Rules/config only: no .py/.ps1/.gd implementation changed and no assets or external folder contents edited. Original dirty primary checkout and TASK-0061 implementation worktree preserved.
 - Current helper relative-path requirements and explicit launcher tool restrictions remain documented limitations; this PR does not claim runtime support was implemented.
 - Next: review/merge this owner-authorized project policy PR, trust/restart agent sessions to load settings; graphics producers follow the scoped workspace rules.
+
+## Approved merge verification
+- Owner explicitly approved PR #61; all five CI checks passed at 74feb802a286ae8790b05e9baed543e28df5f82c.
+- Merge: 0e85b7dfe8103e2b01fb4241db6ce81385265c69. Rules/config only; premerge changed-path validation passed 30/30.
+- Main JSON/TOML assertions confirm exact external directory, no sandbox/approval-mode overrides and protected character/UI denies; workflow sources validated.
+- Host/project trust and old launcher/helper limitations remain applicable. This does not claim any graphics production or pipeline implementation completed.

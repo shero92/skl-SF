@@ -71,5 +71,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0063_improve_reusable_architectural_pieces_for_an_assem.md`](TASK-0063_improve_reusable_architectural_pieces_for_an_assem.md)
 - [`TASK-0064_complete_reference_driven_furnishings_and_decorati.md`](TASK-0064_complete_reference_driven_furnishings_and_decorati.md)
 - [`TASK-0065_agent_costs_breakdown.md`](TASK-0065_agent_costs_breakdown.md)
+- [`TASK-0066_authorize_local_blender_environment_graphics_in_th.md`](TASK-0066_authorize_local_blender_environment_graphics_in_th.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

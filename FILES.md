@@ -20,6 +20,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`.gitattributes`](.gitattributes)
 - [`.gitignore`](.gitignore)
 - [`AGENTS.md`](AGENTS.md)
+- [`CLAUDE.md`](CLAUDE.md)
 - [`README.md`](README.md)
 - [`README_IMPORT.md`](README_IMPORT.md)
 - [`project.godot`](project.godot)
