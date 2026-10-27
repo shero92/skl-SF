@@ -55,5 +55,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0050_hero_room_blender_v3.md`](TASK-0050_hero_room_blender_v3.md)
 - [`TASK-0051_manual_bounded_parallel_codex_and_claude_launcher.md`](TASK-0051_manual_bounded_parallel_codex_and_claude_launcher.md)
 - [`TASK-0052_original_hero_room_reference.md`](TASK-0052_original_hero_room_reference.md)
+- [`TASK-0053_pulse_specialist_scope.md`](TASK-0053_pulse_specialist_scope.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
