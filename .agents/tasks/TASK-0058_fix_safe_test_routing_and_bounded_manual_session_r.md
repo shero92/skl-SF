@@ -1,6 +1,6 @@
 ---
 id: TASK-0058
-status: review
+status: done
 owner: claude
 branch: work/task-0058-0baf0d83
 agent: claude
@@ -48,3 +48,8 @@ Outcome: Accept explicitly trusted existing router suite names including art_del
 
 ## Runner evidence
 - Validated infrastructure PR: https://github.com/shero92/skl-SF/pull/57
+
+## Approved merge verification
+- PR #57 merged f538b4533df1cc63697735dc6ec55278eaf32a2e after explicit owner approval and successful CI.
+- Combined main abf6dd1: manual_agents, goal_task_factory, parallel_safety, runner_parallel passed 4/4; both registered maps validated. No worker launched.
+- New task records arrived via owner-approved PR #58 (abf6dd1f9247e8aad75fcda1a42252a4100283ad). Codex file-capability repair remains TASK-0061; it is not solved by this budget/test-routing task.

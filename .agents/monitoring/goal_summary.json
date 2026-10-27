@@ -2,12 +2,12 @@
   "goals": [
     {
       "goal": "GOAL-0001",
-      "input_tokens": 1777955,
-      "output_tokens": 38588,
-      "known_usd": 1.963144,
-      "unknown_cost_receipts": 16,
-      "unknown_token_receipts": 15,
-      "receipts": 21
+      "input_tokens": 2105562,
+      "output_tokens": 46418,
+      "known_usd": 2.415347,
+      "unknown_cost_receipts": 17,
+      "unknown_token_receipts": 16,
+      "receipts": 23
     }
   ]
 }

@@ -66,5 +66,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0058_fix_safe_test_routing_and_bounded_manual_session_r.md`](TASK-0058_fix_safe_test_routing_and_bounded_manual_session_r.md)
 - [`TASK-0059_reject_placeholder_captures_and_prove_a_fully_text.md`](TASK-0059_reject_placeholder_captures_and_prove_a_fully_text.md)
 - [`TASK-0060_audit_stale_recovery_review_records_against_merged.md`](TASK-0060_audit_stale_recovery_review_records_against_merged.md)
+- [`TASK-0061_give_the_codex_worker_scoped_text_file_tools_and_h.md`](TASK-0061_give_the_codex_worker_scoped_text_file_tools_and_h.md)
+- [`TASK-0062_build_a_calibrated_full_room_candidate_and_genuine.md`](TASK-0062_build_a_calibrated_full_room_candidate_and_genuine.md)
+- [`TASK-0063_improve_reusable_architectural_pieces_for_an_assem.md`](TASK-0063_improve_reusable_architectural_pieces_for_an_assem.md)
+- [`TASK-0064_complete_reference_driven_furnishings_and_decorati.md`](TASK-0064_complete_reference_driven_furnishings_and_decorati.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

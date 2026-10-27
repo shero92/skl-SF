@@ -60,6 +60,10 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0055](../tasks/TASK-0055_agent_costs_started_at.md) | review | claude | none | none |
 | [TASK-0056](../tasks/TASK-0056_agent_costs_hook_worktrees.md) | review | claude | none | none |
 | [TASK-0057](../tasks/TASK-0057_codex_pricing_gitignore.md) | review | claude | none | none |
-| [TASK-0058](../tasks/TASK-0058_fix_safe_test_routing_and_bounded_manual_session_r.md) | review | claude | none | none |
-| [TASK-0059](../tasks/TASK-0059_reject_placeholder_captures_and_prove_a_fully_text.md) | blocked | codex | TASK-0037 | none |
+| [TASK-0058](../tasks/TASK-0058_fix_safe_test_routing_and_bounded_manual_session_r.md) | done | claude | none | none |
+| [TASK-0059](../tasks/TASK-0059_reject_placeholder_captures_and_prove_a_fully_text.md) | blocked | codex | TASK-0037,TASK-0061 | none |
 | [TASK-0060](../tasks/TASK-0060_audit_stale_recovery_review_records_against_merged.md) | done | claude | none | none |
+| [TASK-0061](../tasks/TASK-0061_give_the_codex_worker_scoped_text_file_tools_and_h.md) | todo | unassigned | none | none |
+| [TASK-0062](../tasks/TASK-0062_build_a_calibrated_full_room_candidate_and_genuine.md) | blocked | unassigned | TASK-0059 | none |
+| [TASK-0063](../tasks/TASK-0063_improve_reusable_architectural_pieces_for_an_assem.md) | todo | unassigned | none | none |
+| [TASK-0064](../tasks/TASK-0064_complete_reference_driven_furnishings_and_decorati.md) | blocked | unassigned | TASK-0062,TASK-0063 | none |

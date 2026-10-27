@@ -5,6 +5,7 @@
 | Task | Agents | Known USD | Missing costs | Input tokens | Cached input | Output tokens | Reasoning | Missing tokens | Receipts |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | TASK-0040 | claude | 0.818635 | 0 | 594136 | 544236 | 15537 | 0 | 0 | 1 |
+| TASK-0058 | claude | 0.452203 | 0 | 327607 | 298094 | 7830 | 0 | 0 | 1 |
 | TASK-0008 | claude | 0.397005 | 0 | 226871 | 201264 | 7600 | 0 | 0 | 1 |
 | TASK-0034 | claude | 0.319695 | 0 | 264280 | 242095 | 4695 | 0 | 0 | 1 |
 | TASK-0060 | claude, codex | 0.256392 | 1 | 100694 | 81799 | 4446 | 0 | 1 | 2 |
@@ -31,5 +32,6 @@
 | TASK-0055 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 | TASK-0056 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 | TASK-0057 | claude | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
+| TASK-0064 | codex | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 
 Missing costs are unknown, not zero. Estimates are not subscription invoices.
