@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| claude | TASK-0061 | tools/agent_runner.py, tools/agent_file_bridge.py, tools/tests/test_agent_file_bridge.py, tools/tests/test_runner_main_clean.py | 2026-10-27T16:36:53.623197+00:00 | in_progress | unknown |
+| — | none | — | — | — | — |

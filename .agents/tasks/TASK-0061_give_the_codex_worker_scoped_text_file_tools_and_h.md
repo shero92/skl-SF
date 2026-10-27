@@ -1,6 +1,6 @@
 ---
 id: TASK-0061
-status: in_progress
+status: blocked
 owner: claude
 branch: work/task-0061-4a2f1cb9
 agent: claude
@@ -45,3 +45,6 @@ Outcome: Provide a task-scoped text read/edit tool bridge to Codex while retaini
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-27T16:36:53.612172+00:00
+
+## Runner evidence
+- Runner failed: tools/run_tests.py --changed returned 1
