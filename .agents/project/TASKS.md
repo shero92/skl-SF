@@ -56,3 +56,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0051](../tasks/TASK-0051_manual_bounded_parallel_codex_and_claude_launcher.md) | done | codex | none | none |
 | [TASK-0052](../tasks/TASK-0052_original_hero_room_reference.md) | done | codex | none | none |
 | [TASK-0053](../tasks/TASK-0053_pulse_specialist_scope.md) | review | claude | none | none |
+| [TASK-0054](../tasks/TASK-0054_hero_room_blender_v4.md) | review | claude | TASK-0050 | none |

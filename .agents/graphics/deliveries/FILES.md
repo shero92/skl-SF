@@ -8,6 +8,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`ART-0004/`](ART-0004/FILES.md)
 - [`ART-0014/`](ART-0014/FILES.md)
+- [`ART-0022/`](ART-0022/FILES.md)
+- [`ART-0024/`](ART-0024/FILES.md)
+- [`ART-0025/`](ART-0025/FILES.md)
 
 ## Files
 

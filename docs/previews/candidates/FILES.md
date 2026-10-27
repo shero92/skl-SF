@@ -23,5 +23,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`hero_room_01_blender_v3_candidate.png`](hero_room_01_blender_v3_candidate.png)
 - [`hero_room_01_blender_v3_compare.png`](hero_room_01_blender_v3_compare.png)
 - [`hero_room_01_blender_v3_metrics.json`](hero_room_01_blender_v3_metrics.json)
+- [`hero_room_01_blender_v4_base.png`](hero_room_01_blender_v4_base.png)
+- [`hero_room_01_blender_v4_candidate.png`](hero_room_01_blender_v4_candidate.png)
+- [`hero_room_01_blender_v4_compare.png`](hero_room_01_blender_v4_compare.png)
+- [`hero_room_01_blender_v4_metrics.json`](hero_room_01_blender_v4_metrics.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`hero_room_01_blender_v3/`](hero_room_01_blender_v3/FILES.md)
+- [`hero_room_01_blender_v4/`](hero_room_01_blender_v4/FILES.md)
 
 ## Files
 

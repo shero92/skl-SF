@@ -12,5 +12,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`ART-0004.json`](ART-0004.json)
 - [`ART-0014.json`](ART-0014.json)
+- [`ART-0022.json`](ART-0022.json)
+- [`ART-0024.json`](ART-0024.json)
+- [`ART-0025.json`](ART-0025.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

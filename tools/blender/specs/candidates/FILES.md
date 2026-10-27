@@ -11,5 +11,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`hero_room_01_v3_side_walls.json`](hero_room_01_v3_side_walls.json)
+- [`hero_room_01_v4_side_walls.json`](hero_room_01_v4_side_walls.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
