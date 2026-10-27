@@ -1,5 +1,5 @@
 {
-  "planning_enabled": true,
+  "planning_enabled": false,
   "timezone": "Europe/Berlin",
   "schedule": [
     {
@@ -24,7 +24,7 @@
   "timeout_seconds": 180,
   "ci_wait_seconds": 600,
   "max_tasks_per_run": 4,
-  "execution_enabled": true,
+  "execution_enabled": false,
   "supervised_e2e_passed": true,
   "art_integration_enabled": false,
   "graphics_issue_enabled": true,
