@@ -63,5 +63,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0055_agent_costs_started_at.md`](TASK-0055_agent_costs_started_at.md)
 - [`TASK-0056_agent_costs_hook_worktrees.md`](TASK-0056_agent_costs_hook_worktrees.md)
 - [`TASK-0057_codex_pricing_gitignore.md`](TASK-0057_codex_pricing_gitignore.md)
+- [`TASK-0058_fix_safe_test_routing_and_bounded_manual_session_r.md`](TASK-0058_fix_safe_test_routing_and_bounded_manual_session_r.md)
+- [`TASK-0059_reject_placeholder_captures_and_prove_a_fully_text.md`](TASK-0059_reject_placeholder_captures_and_prove_a_fully_text.md)
+- [`TASK-0060_audit_stale_recovery_review_records_against_merged.md`](TASK-0060_audit_stale_recovery_review_records_against_merged.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

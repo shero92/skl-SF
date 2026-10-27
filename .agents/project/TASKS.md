@@ -60,3 +60,6 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0055](../tasks/TASK-0055_agent_costs_started_at.md) | review | claude | none | none |
 | [TASK-0056](../tasks/TASK-0056_agent_costs_hook_worktrees.md) | review | claude | none | none |
 | [TASK-0057](../tasks/TASK-0057_codex_pricing_gitignore.md) | review | claude | none | none |
+| [TASK-0058](../tasks/TASK-0058_fix_safe_test_routing_and_bounded_manual_session_r.md) | todo | unassigned | none | none |
+| [TASK-0059](../tasks/TASK-0059_reject_placeholder_captures_and_prove_a_fully_text.md) | todo | unassigned | TASK-0037 | none |
+| [TASK-0060](../tasks/TASK-0060_audit_stale_recovery_review_records_against_merged.md) | todo | unassigned | none | none |
