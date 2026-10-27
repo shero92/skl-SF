@@ -2,6 +2,8 @@
   "version": 1,
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
+    {"id": "manual_agents", "kind": "python", "covers": "Manual global budgets, independent parallel dispatch, evidence blockers and dry-run isolation.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_manual_agents.py"], "paths": ["tools/manual_agents.py", "tools/run_agents_manual.ps1", "tools/run_local_agent.ps1", "tools/agent_runner.py", "tools/tests/test_manual_agents.py"]},
+    {"id": "task_evidence", "kind": "python", "covers": "Approved reference hashes and provenance; independent measurement/visual evidence gates.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_task_evidence.py"], "paths": ["tools/task_evidence.py", "tools/tests/test_task_evidence.py", "tools/manual_agents.py"]},
     {
       "id": "agent_costs",
       "kind": "python",

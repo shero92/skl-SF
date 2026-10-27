@@ -1,6 +1,6 @@
 ---
 id: TASK-0039
-status: blocked
+status: todo
 owner: unassigned
 branch: none
 agent: codex
@@ -43,3 +43,5 @@ Outcome: Catalog measurement corrections do not rewrite or invalidate historical
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+- Dependency TASK-0036 now has confirmed merged evidence. Eligible for isolated implementation; no code completed yet.
