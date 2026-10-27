@@ -19,6 +19,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_goal_task_factory.py`](test_goal_task_factory.py)
 - [`test_lf_writers.py`](test_lf_writers.py)
 - [`test_local_planner.py`](test_local_planner.py)
+- [`test_manual_agents.py`](test_manual_agents.py)
 - [`test_map_cardinal.py`](test_map_cardinal.py)
 - [`test_map_factory.py`](test_map_factory.py)
 - [`test_map_floor_geometry.py`](test_map_floor_geometry.py)
@@ -33,5 +34,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_run_tests.py`](test_run_tests.py)
 - [`test_runner_main_clean.py`](test_runner_main_clean.py)
 - [`test_runner_parallel.py`](test_runner_parallel.py)
+- [`test_task_evidence.py`](test_task_evidence.py)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

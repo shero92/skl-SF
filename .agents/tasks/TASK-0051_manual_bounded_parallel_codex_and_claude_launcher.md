@@ -1,6 +1,6 @@
 ---
 id: TASK-0051
-status: review
+status: done
 owner: codex
 branch: codex/manual-agent-launcher
 agent: codex
@@ -53,3 +53,9 @@ Outcome: Manual launcher isolates user changes, dispatches independent eligible 
 
 - Final validation: 18 manual coordinator tests, 12 evidence tests, 15 cleanup/cancellation tests and 17 runner-parallel tests passed. Expanded Python run: 26/27 suites pass in image-free worktree; candidate_room requires omitted production PNG presence. The unchanged candidate_room suite passes on the complete primary checkout. Hosted CI must validate full checkout.
 - No image assets, historical snapshots, generated dashboards or user-owned working files modified.
+
+## Approved merge verification
+- Owner explicitly approved PR #44; merged as 4baa4f4394556194a52e17976b76faf96fa08d9f.
+- Main verification: 26 Python groups passed; candidate_room passed after restoring deterministic validator resources (27/27 combined). Godot checks passed 3/3; both registered maps validated.
+- Code workers remain image-free; renderer resources were only available in the isolated deterministic validator.
+- gh CLI authentication remains an operational blocker; no production model task launched.

@@ -11,6 +11,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`MANUAL_AGENTS.md`](MANUAL_AGENTS.md)
 - [`agent_costs.py`](agent_costs.py)
 - [`agent_costs_hook.sh`](agent_costs_hook.sh)
 - [`agent_runner.py`](agent_runner.py)
@@ -46,6 +47,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`import_map_assets.py`](import_map_assets.py)
 - [`install_hd_factory_pack.py`](install_hd_factory_pack.py)
 - [`local_planner.py`](local_planner.py)
+- [`manual_agents.py`](manual_agents.py)
 - [`map_factory_cli.py`](map_factory_cli.py)
 - [`map_factory_godot_smoke.gd`](map_factory_godot_smoke.gd)
 - [`map_factory_godot_smoke.gd.uid`](map_factory_godot_smoke.gd.uid)
@@ -61,11 +63,13 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`repaint_ocean.py`](repaint_ocean.py)
 - [`repaint_sandstone_floor.py`](repaint_sandstone_floor.py)
 - [`restore_high_detail_floors.py`](restore_high_detail_floors.py)
+- [`run_agents_manual.ps1`](run_agents_manual.ps1)
 - [`run_local_agent.ps1`](run_local_agent.ps1)
 - [`run_local_planner.ps1`](run_local_planner.ps1)
 - [`run_tests.py`](run_tests.py)
 - [`runner_safety.py`](runner_safety.py)
 - [`setup_local_planner.ps1`](setup_local_planner.ps1)
+- [`task_evidence.py`](task_evidence.py)
 - [`test_cardinal_map_blocks.gd`](test_cardinal_map_blocks.gd)
 - [`test_cardinal_map_blocks.gd.uid`](test_cardinal_map_blocks.gd.uid)
 - [`test_map.json`](test_map.json)

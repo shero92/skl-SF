@@ -8,6 +8,8 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 
 | Test | Kind | Covers | Command |
 | --- | --- | --- | --- |
+| `manual_agents` | python | Manual global budgets, independent parallel dispatch, evidence blockers and dry-run isolation. | `python -m unittest discover -s tools/tests -p test_manual_agents.py` |
+| `task_evidence` | python | Approved reference hashes and provenance; independent measurement/visual evidence gates. | `python -m unittest discover -s tools/tests -p test_task_evidence.py` |
 | `agent_costs` | python | Claude/Codex token and cost receipts, leaderboard and hooks. | `python -m unittest discover -s tools/tests -p test_agent_costs.py` |
 | `agent_workflow` | python | Task/art tracking records, generated dashboards, code/graphics boundary and deduplication. | `python -m unittest discover -s tools/tests -p test_agent_workflow.py` |
 | `art_delivery` | python | Alpha-capable PNG headers without image decoding and QA signoff guard. | `python -m unittest discover -s tools/tests -p test_art_delivery.py` |
@@ -39,6 +41,8 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 
 ## Paths per test
 
+- `manual_agents`: `tools/manual_agents.py`, `tools/run_agents_manual.ps1`, `tools/run_local_agent.ps1`, `tools/agent_runner.py`, `tools/tests/test_manual_agents.py`
+- `task_evidence`: `tools/task_evidence.py`, `tools/tests/test_task_evidence.py`, `tools/manual_agents.py`
 - `agent_costs`: `tools/tests/test_agent_costs.py`, `tools/agent_costs.py`, `tools/agent_costs_hook.sh`, `.agents/monitoring/**`
 - `agent_workflow`: `tools/tests/test_agent_workflow.py`, `tools/agent_workflow.py`, `.agents/tasks/**`, `.agents/graphics/**`, `.agents/workflows/**`, `.agents/project/**`, `map_factory/metadata/asset_index.json`
 - `art_delivery`: `tools/tests/test_art_delivery.py`, `tools/art_delivery.py`, `tools/art_requests.py`, `.agents/graphics/deliveries/**`
