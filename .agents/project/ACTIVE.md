@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| — | none | — | — | — | — |
+| claude | TASK-0060 | map_factory/maps/hero_room_01/recovery_queue_audit.json | 2026-10-27T16:10:15.329915+00:00 | in_progress | unknown |

@@ -1,13 +1,13 @@
 ---
 id: TASK-0060
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0060-cc965c25
 agent: claude
 touches: map_factory/maps/hero_room_01/recovery_queue_audit.json
 test: py -3 -m unittest discover -s tools/tests -p test_agent_workflow.py
 done_when: Write bounded text-only JSON audit for review/blocked tasks: canonical ID, branch/PR/merge SHA, observed test evidence or unknown, proposed state and exact outstanding blocker. Never mark visual work approved; distinguish infrastructure merge from art acceptance. Only propose canonical updates for main-side coordinator; no duplicate implementation or changes to art/security.
-started_at: unknown
+started_at: 2026-10-27T16:10:15.329915+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -42,3 +42,6 @@ Outcome: Write bounded text-only JSON audit for review/blocked tasks: canonical 
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-27T16:10:15.320560+00:00
