@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| claude | TASK-0041 | tools/art_delivery.py, tools/tests/test_art_delivery.py, map_factory/metadata/asset_index.json | 2026-10-27T12:27:41.914575+00:00 | in_progress | unknown |
+| — | none | — | — | — | — |

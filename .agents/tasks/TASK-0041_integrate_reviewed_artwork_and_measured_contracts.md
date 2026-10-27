@@ -1,6 +1,6 @@
 ---
 id: TASK-0041
-status: in_progress
+status: blocked
 owner: claude
 branch: work/task-0041-cf8add5a
 agent: claude
@@ -45,3 +45,6 @@ Outcome: Only signed reviewed delivery bytes integrated by authorized integrator
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-27T12:27:41.902299+00:00
+
+## Runner evidence
+- Runner failed: Only allowlisted router tests permitted
