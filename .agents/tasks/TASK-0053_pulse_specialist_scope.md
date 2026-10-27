@@ -36,4 +36,4 @@ art_request: none
 - Tests: test_goal_task_factory 13/13; py -3 tools/run_tests.py --changed 6/6 (agent_workflow, goal_task_factory, goal_pulse_continuous, local_planner, parallel_safety, lf_writers); test_manual_agents OK.
 - Dry run on a copy of the main records: exit 0, creates TASK-0038 (recovery-calibration) as blocked graphics/specialist with its requirements; no real pulse was run.
 - Not done: the calibration itself (TASK-0038 stays blocked); no review task changed to done.
-- PR: pending.
+- PR: https://github.com/shero92/skl-SF/pull/48
