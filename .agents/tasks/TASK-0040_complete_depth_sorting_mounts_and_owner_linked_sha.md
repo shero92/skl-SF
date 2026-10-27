@@ -1,6 +1,6 @@
 ---
 id: TASK-0040
-status: in_progress
+status: review
 owner: claude
 branch: work/task-0040-48a1ae7a
 agent: claude
@@ -51,3 +51,6 @@ Outcome: Image-free runtime tests prove host move/remove, mounted offsets, indep
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-27T12:23:49.810313+00:00
+
+## Runner evidence
+- Validated infrastructure PR: https://github.com/shero92/skl-SF/pull/50
