@@ -28,3 +28,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0019](requests/ART-0019_hero_room_study_table_views.md) | blocked_reference | graphics-specialist | TASK-0030 | P009 |
 | [ART-0020](requests/ART-0020_hero_room_study_bookshelf_views.md) | blocked_reference | graphics-specialist | TASK-0031 | P014 |
 | [ART-0021](requests/ART-0021_hero_room_study_chest_views.md) | blocked_reference | graphics-specialist | TASK-0032 | P017 |
+| [ART-0022](requests/ART-0022_hero_room_compass_floor_inlay.md) | blocked_reference | graphics-specialist | TASK-0038 | F014,O020 |
+| [ART-0023](requests/ART-0023_hero_room_side_wall_fixture_views.md) | blocked_reference | graphics-specialist | TASK-0038 | D001,D004,D009,W015 |
+| [ART-0024](requests/ART-0024_hero_room_rope_post_fence.md) | blocked_reference | graphics-specialist | TASK-0038 | D017 |
+| [ART-0025](requests/ART-0025_hero_room_entrance_stairs.md) | blocked_reference | graphics-specialist | TASK-0038 | ST001,ST002,ST003,ST006 |

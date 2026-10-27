@@ -31,6 +31,10 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0019_hero_room_study_table_views.md`](ART-0019_hero_room_study_table_views.md)
 - [`ART-0020_hero_room_study_bookshelf_views.md`](ART-0020_hero_room_study_bookshelf_views.md)
 - [`ART-0021_hero_room_study_chest_views.md`](ART-0021_hero_room_study_chest_views.md)
+- [`ART-0022_hero_room_compass_floor_inlay.md`](ART-0022_hero_room_compass_floor_inlay.md)
+- [`ART-0023_hero_room_side_wall_fixture_views.md`](ART-0023_hero_room_side_wall_fixture_views.md)
+- [`ART-0024_hero_room_rope_post_fence.md`](ART-0024_hero_room_rope_post_fence.md)
+- [`ART-0025_hero_room_entrance_stairs.md`](ART-0025_hero_room_entrance_stairs.md)
 - [`GOAL-0001_request_coverage.json`](GOAL-0001_request_coverage.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
