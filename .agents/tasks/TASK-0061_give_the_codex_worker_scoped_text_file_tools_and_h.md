@@ -1,13 +1,13 @@
 ---
 id: TASK-0061
-status: todo
-owner: unassigned
-branch: none
+status: in_progress
+owner: claude
+branch: work/task-0061-4a2f1cb9
 agent: claude
 touches: tools/agent_runner.py,tools/agent_file_bridge.py,tools/tests/test_agent_file_bridge.py,tools/tests/test_runner_main_clean.py
 test: py -3 -m unittest discover -s tools/tests -p test_runner_main_clean.py
 done_when: Provide a task-scoped text read/edit tool bridge to Codex while retaining shell/git/image restrictions, existing permission settings and workspace isolation. Limit normalized symlink-resolved paths to authorized text touches plus minimal read-only instructions/dependencies; reject traversal, outside writes, binaries and arbitrary execution. Preflight actual capability and expose sanitized terminal reason instead of generic no-code only. Fake CLI regression must read and edit a synthetic allowed file through the bridge; reject out-of-scope/image access. No model calls in tests. Infra PR; do not pretend this completes TASK-0059.
-started_at: unknown
+started_at: 2026-10-27T16:36:53.623197+00:00
 cost_usd: unknown
 depends_on: none
 issue: none
@@ -42,3 +42,6 @@ Outcome: Provide a task-scoped text read/edit tool bridge to Codex while retaini
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Runner evidence
+- Claimed by local runner at 2026-10-27T16:36:53.612172+00:00
