@@ -1,0 +1,12 @@
+{
+  "status": "open",
+  "title": "Hero Room Blender v4: golden side walls, stairs, compass inlay, rope fence",
+  "problem": "Owner decision 2026-10-27 (AGENTS.md 4/11): v3 side-wall stone reads pale grey and its east shadow falls on the sea; ART-0025 entrance stairs, ART-0022 compass inlay and ART-0024 rope-post fence are missing. Build them with scripted Blender (tools/blender), document the full build guide in tools/blender/README.md, assemble candidate v4 and compare with base/v1-v3. Keep the 64x64 floor grid (D1 open).",
+  "file": "tools/blender/builders.py",
+  "line": null,
+  "done_when": "golden limestone side walls, ART-0025/0022/0024 delivered via blender_factory deliver with clean scripted QA, README build guide for Codex, candidate hero_room_01_blender_v4 captured and compared with base/v1/v2/v3, stays unapproved",
+  "test": "py -3 tools/run_tests.py --only blender_factory --only candidate_room",
+  "priority": "critical",
+  "kind": "feature",
+  "agent": "claude"
+}

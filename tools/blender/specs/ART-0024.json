@@ -1,0 +1,14 @@
+{
+  "art_id": "ART-0024",
+  "task": "TASK-0054",
+  "builder": "rope_fence",
+  "params": {"height": 0.82, "radius": 0.17, "sag": 0.22, "rope": 0.028},
+  "palette_check": {"min_saturation": 0.3, "hue_deg": [15, 45]},
+  "expected_similar": [{"pair": ["hero_rope_swag_west_rail", "hero_rope_swag_east_rail"], "reason": "same post-and-rope design on opposite terrace edges; separately modelled runs with different post offsets, never a mirrored bitmap"}],
+  "outputs": [
+    {"name": "hero_rope_post", "facing": "south", "params": {"posts": [[0, 0]], "seed": 61}},
+    {"name": "hero_rope_swag_west_rail", "facing": "south", "params": {"posts": [[0, 0], [-1.03, 1.54]], "seed": 62}},
+    {"name": "hero_rope_swag_east_rail", "facing": "south", "params": {"posts": [[0, 0], [0.94, 1.05]], "seed": 63}}
+  ],
+  "notes": "Calibrated: post 29x78 px (radius 0.17, height 0.82 + knob); runs follow T(source contacts): west back post 1.03 tiles left / 1.54 north of the front post, east 0.94 right / 1.05 north. Anchors foot / front_post_foot / back_post_foot. Separate shadow pass; collision about 20x12 px per post base (data, not art)."
+}

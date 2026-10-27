@@ -157,13 +157,30 @@ def render(path):
     bpy.ops.render.render(write_still=True)
 
 
-def render_color_and_shadow(objects, color_path, shadow_path):
-    """Color pass (no shadow on the ground) and a separate shadow-only pass on the same canvas."""
+def polygon_catcher(points):
+    """Shadow catcher limited to a ground polygon (tiles), e.g. the floor beside a side wall,
+    so shadows that would fall outside the room (on the sea) are not rendered at all."""
+    import bmesh
+    mesh = bpy.data.meshes.new("shadow_catcher")
+    bm = bmesh.new()
+    bm.faces.new([bm.verts.new((x, y, 0.0)) for x, y in points])
+    bm.to_mesh(mesh)
+    bm.free()
+    plane = bpy.data.objects.new("shadow_catcher", mesh)
+    bpy.context.scene.collection.objects.link(plane)
+    plane.is_shadow_catcher = True
+    return plane
+
+
+def render_color_and_shadow(objects, color_path, shadow_path, region=None):
+    """Color pass (no shadow on the ground) and a separate shadow-only pass on the same canvas.
+
+    region: optional ground polygon (tiles) that receives the shadow; default = everything around the piece."""
     # Centre the catcher under the pieces: long side walls sit far from the world origin.
     pts = [obj.matrix_world @ Vector(c) for obj in objects for c in obj.bound_box]
     center = ((min(p.x for p in pts) + max(p.x for p in pts)) / 2, (min(p.y for p in pts) + max(p.y for p in pts)) / 2)
     span = max(max(p.x for p in pts) - min(p.x for p in pts), max(p.y for p in pts) - min(p.y for p in pts))
-    catcher = shadow_catcher(size=max(12.0, span + 8.0), center=center)
+    catcher = polygon_catcher(region) if region else shadow_catcher(size=max(12.0, span + 8.0), center=center)
     catcher.hide_render = True
     render(color_path)
     catcher.hide_render = False
@@ -185,13 +202,27 @@ def _node(nt, kind, loc, **inputs):
     return n
 
 
-def limestone(name="limestone", base=(0.68, 0.48, 0.26), dark=(0.36, 0.23, 0.10), seed=1.0):
-    """Warm golden limestone: per-object tint, mottled colour, pitted bump (v2: warmer and darker)."""
+def _soft_specular(bsdf, level=0.2):
+    # Blender 4+ name; a weak dielectric highlight keeps matte stone and wood from washing out grey.
+    if "Specular IOR Level" in bsdf.inputs:
+        bsdf.inputs["Specular IOR Level"].default_value = level
+
+
+GOLDEN_STONE = ((0.66, 0.40, 0.14), (0.33, 0.17, 0.05))   # v4 golden limestone (linear RGB): base, dark
+GOLDEN_CAP = ((0.76, 0.49, 0.19), (0.40, 0.22, 0.07))
+
+
+def limestone(name="limestone", base=(0.68, 0.48, 0.26), dark=(0.36, 0.23, 0.10), seed=1.0, specular=None):
+    """Warm golden limestone: per-object tint, mottled colour, pitted bump (v2: warmer and darker).
+
+    Colours are linear RGB; v4 pieces pass GOLDEN_STONE / GOLDEN_CAP and specular=0.2 (see README)."""
     mat = bpy.data.materials.new(name)
     mat.use_nodes = True
     nt = mat.node_tree
     bsdf = nt.nodes["Principled BSDF"]
     bsdf.inputs["Roughness"].default_value = 0.82
+    if specular is not None:
+        _soft_specular(bsdf, specular)
     coord = _node(nt, "ShaderNodeTexCoord", (-900, 0))
     info = _node(nt, "ShaderNodeObjectInfo", (-900, -250))
     noise = _node(nt, "ShaderNodeTexNoise", (-650, 100), Scale=7.0, Detail=9.0, Roughness=0.62)
@@ -232,6 +263,62 @@ def flat(name, color, roughness=0.5, metallic=0.0):
     bsdf.inputs["Roughness"].default_value = roughness
     bsdf.inputs["Metallic"].default_value = metallic
     return mat
+
+
+def wood(name="wood", light=(0.36, 0.19, 0.07), dark=(0.13, 0.06, 0.02), seed=1.0):
+    """Weathered wood: grain stretched along the object's Z axis (posts stand upright), soft bump."""
+    mat = bpy.data.materials.new(name)
+    mat.use_nodes = True
+    nt = mat.node_tree
+    bsdf = nt.nodes["Principled BSDF"]
+    bsdf.inputs["Roughness"].default_value = 0.7
+    _soft_specular(bsdf, 0.25)
+    coord = _node(nt, "ShaderNodeTexCoord", (-900, 0))
+    stretch = _node(nt, "ShaderNodeMapping", (-700, 0))
+    stretch.inputs["Scale"].default_value = (9.0, 9.0, 1.2)
+    nt.links.new(coord.outputs["Object"], stretch.inputs["Vector"])
+    grain = _node(nt, "ShaderNodeTexNoise", (-500, 0), Scale=6.0, Detail=12.0, Roughness=0.7)
+    grain.noise_dimensions = "4D"
+    grain.inputs["W"].default_value = seed
+    nt.links.new(stretch.outputs["Vector"], grain.inputs["Vector"])
+    ramp = _node(nt, "ShaderNodeValToRGB", (-300, 0))
+    ramp.color_ramp.elements[0].position, ramp.color_ramp.elements[0].color = 0.3, (*dark, 1.0)
+    ramp.color_ramp.elements[1].position, ramp.color_ramp.elements[1].color = 0.75, (*light, 1.0)
+    nt.links.new(grain.outputs["Fac"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], bsdf.inputs["Base Color"])
+    bump = _node(nt, "ShaderNodeBump", (-200, -300), Strength=0.4, Distance=0.02)
+    nt.links.new(grain.outputs["Fac"], bump.inputs["Height"])
+    nt.links.new(bump.outputs["Normal"], bsdf.inputs["Normal"])
+    return mat
+
+
+def rope(name="rope", color=(0.55, 0.40, 0.20), dark=(0.24, 0.15, 0.06)):
+    """Twisted hemp: diagonal wave bands along the strand read as twist at 64 px per tile."""
+    mat = bpy.data.materials.new(name)
+    mat.use_nodes = True
+    nt = mat.node_tree
+    bsdf = nt.nodes["Principled BSDF"]
+    bsdf.inputs["Roughness"].default_value = 0.9
+    _soft_specular(bsdf, 0.15)
+    coord = _node(nt, "ShaderNodeTexCoord", (-700, 0))
+    wave = _node(nt, "ShaderNodeTexWave", (-500, 0), Scale=40.0, Distortion=1.5)
+    wave.bands_direction = "DIAGONAL"
+    nt.links.new(coord.outputs["Object"], wave.inputs["Vector"])
+    ramp = _node(nt, "ShaderNodeValToRGB", (-300, 0))
+    ramp.color_ramp.elements[0].color, ramp.color_ramp.elements[1].color = (*dark, 1.0), (*color, 1.0)
+    nt.links.new(wave.outputs["Color"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], bsdf.inputs["Base Color"])
+    return mat
+
+
+def gold(name="gold"):
+    # Mostly dielectric: a fully metallic flat face only mirrors the dim world in an ortho view and reads grey.
+    return flat(name, (0.80, 0.50, 0.11), roughness=0.42, metallic=0.35)
+
+
+def sapphire(name="sapphire", color=(0.02, 0.10, 0.42)):
+    """Deep blue enamel inlay: glossy dielectric so it keeps its colour under the warm sun."""
+    return flat(name, color, roughness=0.25)
 
 
 # ---------------------------------------------------------------- geometry helpers

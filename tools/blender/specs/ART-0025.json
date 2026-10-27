@@ -1,0 +1,12 @@
+{
+  "art_id": "ART-0025",
+  "task": "TASK-0054",
+  "builder": "entrance_stairs",
+  "params": {"steps": 3, "tread_width": 2.42, "run": 0.34, "rise": 0.2, "cheek_width": 0.5, "cheek_height": 0.22,
+             "foundation": 0.35, "chips": 4, "seed": 25},
+  "palette_check": {"min_saturation": 0.3, "hue_deg": [20, 50]},
+  "outputs": [
+    {"name": "hero_entrance_stairs_south", "facing": "south", "shadow": false}
+  ],
+  "notes": "Calibrated (docs/HERO_ROOM_CALIBRATION.md): visible treads 155 px wide (2.42 tiles), 3 steps of 0.34 run + 0.2 rise = 105 px tall below the floor front edge (64 px grid, D1 open). Cheeks 0.5 tile each reach the ST011 pedestals. Anchor top_center = middle of the floor front edge (render y 865). Ground piece below the last floor row; no cast shadow."
+}

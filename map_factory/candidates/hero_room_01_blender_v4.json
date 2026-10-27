@@ -1,0 +1,29 @@
+{
+  "candidate_id": "hero_room_01_blender_v4",
+  "base": {"map_id": "hero_room_01", "version": 11},
+  "status": "candidate_unapproved",
+  "notes": "Review layout only (v4, 2026-10-27, TASK-0054): golden side walls ending at row 7 (staged, tools/blender/specs/candidates/hero_room_01_v4_side_walls.json) with floor-only shadows; ART-0024 rope-post fences continue along the terrace edges to the front (y-sorted with the furniture); ART-0025 stairs hang below the floor front edge between the pedestals (old ST001-ST006 hidden, floor row 9 cells 7-9 stay whole); ART-0022 compass inlay centred on the joint (738,609), the nine procedural F014-F022 tiles re-floored with plain neighbours. 64 px grid kept (D1 open). Built over the published v0011; nothing enters map_factory/parts or the catalog until the owner approves the capture.",
+  "hide_instances": [
+    "LeftPerimeterWallMid", "LeftPerimeterWallLow", "RightPerimeterWallMid", "RightPerimeterWallLow",
+    "W015_back_objects_006", "W015_back_objects_007",
+    "LandingCenter", "EntryStairUpper", "EntryStairMiddle", "EntryStairLower", "EntryStairLeftEdge", "EntryStairRightEdge"
+  ],
+  "hide_floor_cells": [[3, 9], [4, 9], [5, 9], [6, 9], [10, 9], [11, 9], [12, 9], [13, 9]],
+  "refloor_cells": [
+    [7, 4, 4, 4], [8, 4, 5, 4], [9, 4, 6, 4],
+    [7, 5, 4, 5], [8, 5, 5, 5], [9, 5, 6, 5],
+    [7, 6, 4, 6], [8, 6, 5, 6], [9, 6, 6, 6]
+  ],
+  "pieces": [
+    {"art": "ART-0014", "file": "hero_broken_floor_corner_left", "anchor": "tile_top_left", "point": "top_left", "layer": "ground", "cells": [[3, 9]]},
+    {"art": "ART-0014", "file": "hero_broken_floor_edge_01", "anchor": "tile_top_left", "point": "top_left", "layer": "ground", "cells": [[4, 9], [6, 9], [10, 9], [12, 9]]},
+    {"art": "ART-0014", "file": "hero_broken_floor_edge_02", "anchor": "tile_top_left", "point": "top_left", "layer": "ground", "cells": [[5, 9], [11, 9]]},
+    {"art": "ART-0014", "file": "hero_broken_floor_corner_right", "anchor": "tile_top_left", "point": "top_left", "layer": "ground", "cells": [[13, 9]]},
+    {"art": "ART-0022", "file": "hero_compass_floor_inlay", "anchor": "center", "point": "top_left", "layer": "ground", "cells": [[8, 6]]},
+    {"art": "ART-0025", "file": "hero_entrance_stairs_south", "anchor": "top_center", "point": "top_left", "layer": "ground", "cells": [[8, 10]], "offset_px": [24, 0]},
+    {"source": "map_factory/candidates/renders/hero_room_01_blender_v4", "file": "hero_side_wall_west", "anchor": "grid_origin", "point": "top_left", "layer": "walls", "cells": [[0, 0]]},
+    {"source": "map_factory/candidates/renders/hero_room_01_blender_v4", "file": "hero_side_wall_east", "anchor": "grid_origin", "point": "top_left", "layer": "walls", "cells": [[0, 0]]},
+    {"art": "ART-0024", "file": "hero_rope_swag_west_rail", "anchor": "front_post_foot", "point": "top_left", "layer": "props", "cells": [[2, 8]], "offset_px": [18, 47]},
+    {"art": "ART-0024", "file": "hero_rope_swag_east_rail", "anchor": "front_post_foot", "point": "top_left", "layer": "props", "cells": [[15, 8]], "offset_px": [0, 58]}
+  ]
+}

@@ -137,6 +137,30 @@ class TechnicalQA(unittest.TestCase):
             self.assertIn("missing", text)
 
 
+class PaletteQA(unittest.TestCase):
+    def test_grey_stone_is_a_problem_and_golden_stone_passes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            check = {"min_saturation": 0.3, "hue_deg": [20, 50]}
+            for colour, bad in (((150, 146, 140), True), ((176, 128, 62), False), ((60, 90, 170), True)):
+                path = Path(tmp) / "p.png"
+                Image.new("RGBA", (8, 8), (*colour, 255)).save(path)
+                stats = bf.palette(path)
+                with self.subTest(colour=colour):
+                    self.assertEqual(bool(bf.palette_problems("p.png", stats, check)), bad, stats)
+            self.assertEqual(bf.palette_problems("p.png", stats, None), [])
+
+    def test_two_colour_piece_uses_pixel_saturation(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "inlay.png"
+            im = Image.new("RGBA", (8, 8), (40, 60, 200, 255))
+            ImageDraw.Draw(im).rectangle((0, 0, 7, 3), fill=(200, 160, 40, 255))
+            im.save(path)
+            stats = bf.palette(path)
+            self.assertLess(stats["saturation"], stats["pixel_saturation"], "blue + gold average toward grey")
+            self.assertEqual(bf.palette_problems("inlay.png", stats, {"min_pixel_saturation": 0.35}), [])
+            self.assertEqual(stats["opaque_size"], [8, 8])
+
+
 @unittest.skipUnless(BLENDER, "Blender not installed (CI); runs on the owner's Windows host")
 class BlenderRenders(unittest.TestCase):
     def test_calibration_tile_is_exactly_one_tile(self):
@@ -174,6 +198,28 @@ class BlenderRenders(unittest.TestCase):
                 mx, my = (x0 + x1) / 2 + out[0] * 0.15, (y0 + y1) / 2 + out[1] * 0.15
                 px, py = ox + mx * 64 - 0.2 * 0.3 * 64, oy - my * 64 - 0.3 * 64
                 self.assertGreater(alpha.getpixel((round(px), round(py))), 200, (x0, y0, x1, y1))
+
+    def test_v4_pieces_match_their_calibrated_sizes_and_anchors(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            spec = Path(tmp) / "spec.json"
+            spec.write_text(json.dumps({"builder": "compass_inlay", "projection": {"supersample": 1, "samples": 4},
+                                        "outputs": [{"name": "inlay", "shadow": False},
+                                                    {"name": "stairs", "builder": "entrance_stairs", "shadow": False},
+                                                    {"name": "fence", "builder": "rope_fence",
+                                                     "params": {"posts": [[0, 0], [-1.0, 1.5]]}}]}))
+            inlay, stairs, fence = bf.render(spec, Path(tmp) / "out")
+            box = Image.open(Path(tmp) / "out/inlay.png").getchannel("A").point(lambda v: 255 if v > 24 else 0).getbbox()
+            self.assertAlmostEqual(box[2] - box[0], 267, delta=4, msg="ART-0022 rhombus width")
+            self.assertAlmostEqual(box[3] - box[1], 259, delta=4, msg="ART-0022 rhombus height")
+            cx, cy = inlay["anchors_px"]["center"]
+            self.assertAlmostEqual(cx, (box[0] + box[2]) / 2, delta=2)
+            alpha = Image.open(Path(tmp) / "out/stairs.png").getchannel("A")
+            top = stairs["anchors_px"]["top_center"]
+            self.assertGreater(alpha.getpixel((round(top[0]), round(top[1]) + 100)), 200, "3 steps reach ~105 px below the edge")
+            front, back = fence["anchors_px"]["front_post_foot"], fence["anchors_px"]["back_post_foot"]
+            self.assertAlmostEqual(front[0] - back[0], 64, delta=1)
+            self.assertAlmostEqual(front[1] - back[1], 96, delta=1)
+            self.assertLess(fence["frame_px"][0], 200, "rope curve bounds do not bloat the frame")
 
     def test_wall_facings_are_real_renders_not_bitmap_copies(self):
         with tempfile.TemporaryDirectory() as tmp:

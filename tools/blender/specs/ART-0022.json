@@ -1,0 +1,11 @@
+{
+  "art_id": "ART-0022",
+  "task": "TASK-0054",
+  "builder": "compass_inlay",
+  "params": {"half_x": 2.086, "half_y": 2.023, "ring": 0.62, "long_point": 0.84, "short_point": 0.5, "seed": 22, "field": [0.07, 0.24, 0.62]},
+  "palette_check": {"min_pixel_saturation": 0.35},
+  "outputs": [
+    {"name": "hero_compass_floor_inlay", "facing": "south", "shadow": false}
+  ],
+  "notes": "Calibrated: 45-degree rhombus 267x259 px on the current 64 px grid (D1 open; 267x204 if D1 adopts the uniform scale: set half_y 1.594). Sapphire field, gold rim and studs, ivory/gold faceted 8-point rose, anchor center. Flat ground overlay, no collision, no cast shadow."
+}

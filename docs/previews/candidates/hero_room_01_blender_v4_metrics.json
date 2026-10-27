@@ -1,0 +1,189 @@
+{
+  "metric": "mean absolute RGB difference to the reference (0-255, lower is closer)",
+  "whole": {
+    "base": 74.72,
+    "candidate": 73.89
+  },
+  "regions": {
+    "ground": {
+      "box": [
+        402,
+        468,
+        1192,
+        997
+      ],
+      "base": 70.37,
+      "candidate": 68.89
+    },
+    "walls": {
+      "box": [
+        164,
+        155,
+        1434,
+        815
+      ],
+      "base": 74.67,
+      "candidate": 73.95
+    },
+    "props": {
+      "box": [
+        281,
+        604,
+        1327,
+        877
+      ],
+      "base": 65.27,
+      "candidate": 64.99
+    }
+  },
+  "pieces": {
+    "hero_broken_floor_corner_left_3_9": {
+      "box": [
+        402,
+        790,
+        549,
+        950
+      ],
+      "base": 76.65,
+      "candidate": 75.66
+    },
+    "hero_broken_floor_edge_01_4_9": {
+      "box": [
+        472,
+        791,
+        614,
+        946
+      ],
+      "base": 86.61,
+      "candidate": 83.41
+    },
+    "hero_broken_floor_edge_01_6_9": {
+      "box": [
+        600,
+        791,
+        742,
+        946
+      ],
+      "base": 74.34,
+      "candidate": 73.02
+    },
+    "hero_broken_floor_edge_01_10_9": {
+      "box": [
+        856,
+        791,
+        998,
+        946
+      ],
+      "base": 87.13,
+      "candidate": 84.32
+    },
+    "hero_broken_floor_edge_01_12_9": {
+      "box": [
+        984,
+        791,
+        1126,
+        946
+      ],
+      "base": 77.54,
+      "candidate": 76.36
+    },
+    "hero_broken_floor_edge_02_5_9": {
+      "box": [
+        536,
+        791,
+        678,
+        946
+      ],
+      "base": 85.88,
+      "candidate": 83.74
+    },
+    "hero_broken_floor_edge_02_11_9": {
+      "box": [
+        920,
+        791,
+        1062,
+        946
+      ],
+      "base": 85.23,
+      "candidate": 83.59
+    },
+    "hero_broken_floor_corner_right_13_9": {
+      "box": [
+        1048,
+        791,
+        1192,
+        949
+      ],
+      "base": 73.76,
+      "candidate": 73.83
+    },
+    "hero_compass_floor_inlay_8_6": {
+      "box": [
+        594,
+        468,
+        876,
+        742
+      ],
+      "base": 54.39,
+      "candidate": 55.75
+    },
+    "hero_entrance_stairs_south_8_10": {
+      "box": [
+        640,
+        835,
+        877,
+        997
+      ],
+      "base": 80.58,
+      "candidate": 64.25
+    },
+    "hero_side_wall_west_0_0": {
+      "box": [
+        164,
+        156,
+        374,
+        815
+      ],
+      "base": 77.77,
+      "candidate": 73.92
+    },
+    "hero_side_wall_east_0_0": {
+      "box": [
+        1223,
+        155,
+        1434,
+        815
+      ],
+      "base": 79.22,
+      "candidate": 78.17
+    },
+    "hero_rope_swag_west_rail_2_8": {
+      "box": [
+        281,
+        604,
+        454,
+        866
+      ],
+      "base": 75.04,
+      "candidate": 73.36
+    },
+    "hero_rope_swag_east_rail_15_8": {
+      "box": [
+        1160,
+        645,
+        1327,
+        877
+      ],
+      "base": 74.1,
+      "candidate": 73.05
+    }
+  },
+  "reference_resized": false,
+  "candidate_id": "hero_room_01_blender_v4",
+  "layout": "map_factory/candidates/hero_room_01_blender_v4.json",
+  "base": "res://map_factory/maps/hero_room_01/versions/v0011.json",
+  "placements": 14,
+  "godot": "Godot_v4.7.2-stable_win64_console.exe",
+  "status": "candidate_unapproved",
+  "approval": null
+}
