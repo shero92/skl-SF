@@ -222,6 +222,51 @@ class CostTests(unittest.TestCase):
         self.assertEqual(doc["missing_cost_receipts"], 1)
         self.assertEqual(doc["tasks"][0]["known_usd"], 0)
 
+    def cost_cli(self, root, *args, event=None):
+        proc = subprocess.run([sys.executable, str(SCRIPT), *args], env={**self.env, "SKL_COST_ROOT": str(root)},
+                              input=json.dumps(event) if event is not None else None, capture_output=True, text=True)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        return proc.stdout
+
+    def repo_with_worktrees(self, *names):
+        main = self.root / "main"
+        main.mkdir()
+        git = lambda *a: subprocess.run(["git", "-C", str(main), "-c", "user.name=t", "-c", "user.email=t@t", *a],
+                                        check=True, capture_output=True)
+        git("init", "-q")
+        (main / "README.md").write_text("x\n")
+        git("add", "README.md")
+        git("commit", "-q", "-m", "init")
+        trees = []
+        for name in names:
+            git("worktree", "add", "-q", "-b", name, str(self.root / name))
+            trees.append(self.root / name)
+        return main, trees
+
+    def test_hook_in_main_checkout_records_session_for_worktree_task(self):
+        # Regression: the session ran in the main checkout while `start` ran in the task
+        # worktree, so the hook found no active task and the receipt stayed unknown (TASK-0055).
+        main, (task_tree,) = self.repo_with_worktrees("task")
+        log = self.root / "claude.jsonl"
+        log.write_text(json.dumps(self.assistant("2999-01-01T00:00:00Z", "m1", 1000, 100)) + "\n")
+        self.cost_cli(task_tree, "start", "TASK-0091", "--agent", "claude")
+        self.cost_cli(main, "hook", "--agent", "claude", event={"session_id": "s1", "transcript_path": str(log)})
+        self.assertEqual(list((main / ".agents/monitoring/.local").glob("session_*.json")), [])
+        self.assertEqual(len(list((task_tree / ".agents/monitoring/.local").glob("session_*.json"))), 1)
+        self.cost_cli(task_tree, "finish")
+        receipt = json.loads(next((task_tree / ".agents/monitoring/receipts").glob("TASK-0091_*.json")).read_text())
+        self.assertEqual(receipt["tokens"]["input_tokens"], 1000)
+
+    def test_hook_records_nothing_when_several_worktrees_track_the_agent(self):
+        main, (a, b) = self.repo_with_worktrees("a", "b")
+        self.cost_cli(a, "start", "TASK-0089", "--agent", "claude")
+        self.cost_cli(b, "start", "TASK-0088", "--agent", "claude")
+        out = self.cost_cli(main, "hook", "--agent", "claude", "--statusline",
+                            event={"session_id": "s2", "transcript_path": str(self.root / "none.jsonl")})
+        self.assertIn("Task: inactive", out)
+        for tree in (main, a, b):
+            self.assertEqual(list((tree / ".agents/monitoring/.local").glob("session_*.json")), [], str(tree))
+
     def claude_prices(self):
         pricing = self.root / ".agents/monitoring/pricing.json"
         pricing.parent.mkdir(parents=True, exist_ok=True)

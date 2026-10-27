@@ -1,0 +1,13 @@
+{
+  "status": "accepted",
+  "title": "agent_costs hook: record sessions for a task started in another worktree",
+  "problem": "The hook writes session files only into its own checkout's .agents/monitoring/.local; when a session runs in the main checkout (or another worktree) and agent_costs start runs in the task worktree, no session is recorded and the receipt stays unknown (TASK-0055)",
+  "file": "tools/agent_costs.py",
+  "line": null,
+  "done_when": "When its own checkout has no active task for the agent, the hook records the session in the single other worktree of the same repository that has one; zero or several candidates record nothing; regression test with a real git worktree",
+  "test": "py -3 tools/run_tests.py --only agent_costs",
+  "priority": "high",
+  "kind": "bug",
+  "agent": "claude",
+  "task_id": "TASK-0056"
+}
