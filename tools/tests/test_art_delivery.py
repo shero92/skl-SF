@@ -167,3 +167,151 @@ class HDPackImportGuards(unittest.TestCase):
 
 if __name__=="__main__":
     unittest.main()
+
+
+from unittest.mock import patch
+import goal_qa as qa
+
+class GoalCaptureTests(unittest.TestCase):
+    def setUp(self):
+        self.temp=tempfile.TemporaryDirectory()
+        self.root=Path(self.temp.name)
+        self.addCleanup(self.temp.cleanup)
+        for name,value in {"ROOT":self.root,"GOALS":self.root/".agents/planner/goals"}.items():
+            context=patch.object(qa,name,value);context.start();self.addCleanup(context.stop)
+        self.write(".agents/planner/goals/GOAL-0001/state.json",{"status":"active","milestones_approved":True,"final_verified":False})
+        self.snapshot={"map_id":"hero_room_01","version":11,"canvas_size":[1536,1024]}
+        digest=hashlib.sha256(json.dumps(self.snapshot,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()).hexdigest()
+        self.write("map_factory/maps/hero_room_01/versions/v0011.json",self.snapshot)
+        self.write("map_factory/maps/index.json",{"maps":{"hero_room_01":{"version":11,"snapshot_sha256":digest}}})
+
+    def write(self,name,value):
+        p=self.root/name;p.parent.mkdir(parents=True,exist_ok=True)
+        p.write_text(json.dumps(value),encoding="utf-8",newline="\n")
+        return p
+
+    def test_registry_resolves_current_immutable_revision(self):
+        spec=qa.capture_spec()
+        self.assertEqual(spec["version"],11)
+        self.assertEqual(spec["file"],"hero_room_01_v0011.png")
+        self.assertEqual(spec["snapshot"],"map_factory/maps/hero_room_01/versions/v0011.json")
+
+    def test_later_revision_does_not_need_code_change(self):
+        spec=qa.capture_spec()
+        self.snapshot["version"]=12
+        digest=hashlib.sha256(json.dumps(self.snapshot,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()).hexdigest()
+        self.write("map_factory/maps/hero_room_01/versions/v0012.json",self.snapshot)
+        self.write("map_factory/maps/index.json",{"maps":{"hero_room_01":{"version":12,"snapshot_sha256":digest}}})
+        self.assertEqual(qa.capture_spec()["version"],12)
+        self.assertNotEqual(qa.capture_spec()["file"],spec["file"])
+
+    def test_mismatched_snapshot_fails(self):
+        self.snapshot["canvas_size"]=[64,64]
+        self.write("map_factory/maps/hero_room_01/versions/v0011.json",self.snapshot)
+        with self.assertRaisesRegex(ValueError,"identity/hash"):
+            qa.capture_spec()
+
+    def test_invalid_map_path_fails_before_access(self):
+        with self.assertRaisesRegex(ValueError,"Invalid map"):
+            qa.capture_spec("../escape")
+
+    def test_intermediate_goal_gate_allows_unfinished_tasks(self):
+        self.write(".agents/tasks/TASK-0001_fixture.md",{})
+        (self.root/".agents/tasks/TASK-0001_fixture.md").write_text("**Goal:** GOAL-0001\nstatus: blocked\n",newline="\n")
+        self.assertFalse(qa.goal_state("GOAL-0001")[1]["final_verified"])
+        with self.assertRaisesRegex(ValueError,"unfinished"):
+            qa.eligible("GOAL-0001")
+
+    def test_inactive_goal_still_blocks_capture(self):
+        self.write(".agents/planner/goals/GOAL-0001/state.json",{"status":"draft","milestones_approved":False})
+        with self.assertRaisesRegex(ValueError,"not approved"):
+            qa.goal_state("GOAL-0001")
+
+    def test_approved_explicit_prerequisites_do_not_include_the_qa_task_itself(self):
+        self.write(".agents/planner/goals/GOAL-0001/state.json",{"status":"active","milestones_approved":True,
+            "qa_required_tasks":["TASK-0001"],"qa_required_tasks_approved":True})
+        path=self.write(".agents/tasks/TASK-0001_fixture.md",{})
+        path.write_text("status: done\n",newline="\n")
+        other=self.write(".agents/tasks/TASK-0044_fixture.md",{})
+        other.write_text("**Goal:** GOAL-0001\nstatus: in_progress\n",newline="\n")
+        self.assertEqual(qa.eligible("GOAL-0001")[1]["qa_required_tasks"],["TASK-0001"])
+
+    def test_unapproved_empty_or_missing_prerequisites_fail_closed(self):
+        for required,approved in [([],True),(["TASK-0001"],False),(["TASK-0001"],True)]:
+            self.write(".agents/planner/goals/GOAL-0001/state.json",{"status":"active","milestones_approved":True,
+                "qa_required_tasks":required,"qa_required_tasks_approved":approved})
+            with self.assertRaises(ValueError):qa.eligible("GOAL-0001")
+
+    def capture_fixture(self):
+        spec=qa.capture_spec();source=self.root/"capture.png"
+        source.write_bytes(b"\x89PNG\r\n\x1a\n"+b"\x00\x00\x00\x0dIHDR"+struct.pack(">II",1536,1024))
+        proof={"capture_id":"nonce","map_id":spec["id"],"version":11,
+               "snapshot_sha256":spec["snapshot_sha256"],"canvas_size":[1536,1024],
+               "camera_position":[768,512],"camera_zoom":[1,1],
+               "render_sha256":hashlib.sha256(source.read_bytes()).hexdigest()}
+        receipt=self.write("capture.json",proof)
+        return spec,source,receipt,proof
+
+    def test_capture_receipt_binds_exact_run_version_hash_and_viewport(self):
+        spec,source,receipt,proof=self.capture_fixture()
+        self.assertEqual(qa.verify_capture(source,receipt,spec,"nonce"),proof)
+
+    def test_stale_capture_rejected(self):
+        spec,source,receipt,_=self.capture_fixture()
+        with self.assertRaisesRegex(ValueError,"Stale/mismatched"):
+            qa.verify_capture(source,receipt,spec,"other-run")
+
+    def test_changed_capture_rejected(self):
+        spec,source,receipt,_=self.capture_fixture()
+        source.write_bytes(source.read_bytes()+b"changed")
+        with self.assertRaisesRegex(ValueError,"hash"):
+            qa.verify_capture(source,receipt,spec,"nonce")
+
+    def test_wrong_viewport_rejected(self):
+        spec,source,receipt,_=self.capture_fixture()
+        source.write_bytes(source.read_bytes()[:16]+struct.pack(">II",64,64))
+        with self.assertRaisesRegex(ValueError,"dimensions"):
+            qa.verify_capture(source,receipt,spec,"nonce")
+
+    def test_missing_receipt_never_accepts_existing_image(self):
+        spec,source,receipt,_=self.capture_fixture();receipt.unlink()
+        with self.assertRaisesRegex(RuntimeError,"receipt missing"):
+            qa.verify_capture(source,receipt,spec,"nonce")
+
+
+
+    def test_reference_manifest_required_before_any_comparison(self):
+        with self.assertRaisesRegex(ValueError,"manifest required"):
+            qa.authenticated_reference("GOAL-0001")
+
+    def test_authenticated_source_selected_instead_of_historical_goal_image(self):
+        source=self.root/"map_factory/references/original.png";source.parent.mkdir(parents=True)
+        source.write_bytes(b"\x89PNG\r\n\x1a\n"+b"\0\0\0\rIHDR"+struct.pack(">II",1448,1086))
+        manifest={"requirements":[{"kind":"reference","status":"approved","approved_at":"2026-10-27",
+            "approved_by":"owner","provenance":{"source":"owner attachment","kind":"owner_supplied_original"},
+            "path":"map_factory/references/original.png","sha256":hashlib.sha256(source.read_bytes()).hexdigest(),"pixel_size":[1448,1086]}]}
+        self.write("map_factory/references/original.reference.json",manifest)
+        self.write(".agents/planner/goals/GOAL-0001/state.json",{"status":"active","milestones_approved":True,
+            "reference_manifest":"map_factory/references/original.reference.json"})
+        self.assertEqual(qa.authenticated_reference("GOAL-0001").resolve(),source.resolve())
+        source.write_bytes(source.read_bytes()+b"different")
+        with self.assertRaisesRegex(ValueError,"SHA-256"):
+            qa.authenticated_reference("GOAL-0001")
+
+    def test_capture_rejects_camera_mismatch_and_missing_run_id(self):
+        spec,source,receipt,proof=self.capture_fixture()
+        proof["camera_zoom"]=[2,2];receipt.write_text(json.dumps(proof),newline="\n")
+        with self.assertRaisesRegex(ValueError,"Stale/mismatched"):
+            qa.verify_capture(source,receipt,spec,"nonce")
+        with self.assertRaisesRegex(ValueError,"identity required"):
+            qa.verify_capture(source,receipt,spec,None)
+
+    def test_isolated_renderer_tree_must_have_matching_committed_snapshot(self):
+        other=self.root/"isolated"
+        with self.assertRaises(FileNotFoundError):
+            qa.capture_spec(root=other)
+        self.write("isolated/map_factory/maps/index.json",json.loads((self.root/"map_factory/maps/index.json").read_text()))
+        changed=dict(self.snapshot,canvas_size=[64,64])
+        self.write("isolated/map_factory/maps/hero_room_01/versions/v0011.json",changed)
+        with self.assertRaisesRegex(ValueError,"identity/hash"):
+            qa.capture_spec(root=other)

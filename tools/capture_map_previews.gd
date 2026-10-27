@@ -1,8 +1,7 @@
 extends SceneTree
 
 ## Create REAL Godot screenshots: no AI simulation, no characters or HUD.
-## v0004 now published: screenshot the five-level environment renderer for visual QA.
-## The revised Hero Room captures the fixed integer tile override mapping.
+## Resolve immutable map revisions from the registry or an explicit capture manifest.
 ## Use a virtual X11 display and OpenGL3 in CI; headless dummy rendering cannot screenshot.
 const OUTPUT: String = "res://docs/previews/map_factory_renders/"
 
@@ -11,24 +10,48 @@ func _initialize() -> void:
 
 func _capture_all() -> void:
     DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(OUTPUT))
-    var cases := [
-        {"id": "courtyard_demo_01", "version": 1, "file": "courtyard_demo_01_v0001.png"},
-        {"id": "courtyard_demo_01", "version": 2, "file": "courtyard_demo_01_v0002.png"},
-        {"id": "hero_room_01", "version": 1, "file": "hero_room_01_v0001.png"},
-        {"id": "hero_room_01", "version": 2, "file": "hero_room_01_v0002.png"},
-        {"id": "hero_room_01", "version": 3, "file": "hero_room_01_v0003.png"},
-        {"id": "hero_room_01", "version": 4, "file": "hero_room_01_v0004.png"},
-        {"id": "hero_room_01", "version": 5, "file": "hero_room_01_v0005.png"},
-        {"id": "hero_room_01", "version": 6, "file": "hero_room_01_v0006.png"},
-        {"id": "hero_room_01", "version": 7, "file": "hero_room_01_v0007.png"},
-        {"id": "hero_room_01", "version": 8, "file": "hero_room_01_v0008.png"},
-        {"id": "hero_room_01", "version": 9, "file": "hero_room_01_v0009.png"},
-        {"id": "hero_room_01", "version": 10, "file": "hero_room_01_v0010.png"}
-    ]
+    var cases: Array = []
+    var capture_id: String = ""
+    var args: PackedStringArray = OS.get_cmdline_user_args()
+    var manifest_index: int = args.find("--capture-manifest")
+    if manifest_index >= 0:
+        if manifest_index + 1 >= args.size():
+            push_error("Missing capture manifest path")
+            quit(1)
+            return
+        var request: Variant = JSON.parse_string(FileAccess.get_file_as_string(args[manifest_index + 1]))
+        if not request is Dictionary or not request.get("cases", []) is Array:
+            push_error("Invalid capture manifest")
+            quit(1)
+            return
+        cases = request["cases"]
+        capture_id = String(request.get("capture_id", ""))
+    else:
+        var registry: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://map_factory/maps/index.json"))
+        if not registry is Dictionary:
+            quit(1)
+            return
+        for map_id: String in registry.get("maps", {}):
+            var version: int = int(registry["maps"][map_id]["version"])
+            cases.append({"id": map_id, "version": version,
+                "file": "%s_v%04d.png" % [map_id, version]})
+    if cases.is_empty():
+        push_error("No capture cases requested")
+        quit(1)
+        return
+    var valid_id := RegEx.new()
+    valid_id.compile("^[a-z][a-z0-9_]{2,63}$")
     var failures := 0
     for case in cases:
+        if not case is Dictionary:
+            failures += 1
+            continue
         var map_id: String = case["id"]
-        var version: int = case["version"]
+        var version: int = int(case.get("version", 0))
+        if valid_id.search(map_id) == null or version < 1 or String(case.get("file", "")) != "%s_v%04d.png" % [map_id, version]:
+            push_error("Unsafe capture case identity or filename")
+            failures += 1
+            continue
         var path := "res://map_factory/maps/%s/versions/v%04d.json" % [map_id, version]
         if not FileAccess.file_exists(path):
             push_error("Cannot render missing snapshot " + path)
@@ -78,7 +101,18 @@ func _capture_all() -> void:
         else:
             var error := picture.save_png(target)
             if error == OK:
-                print("MAP_SCREENSHOT_OK: ", target, " ", size)
+                var proof: Dictionary = {"capture_id": capture_id, "map_id": map_id,
+                    "version": version, "snapshot_sha256": case.get("snapshot_sha256", ""),
+                    "canvas_size": [size.x, size.y], "camera_position": [size.x * 0.5, size.y * 0.5],
+                    "camera_zoom": [1, 1], "render_sha256": FileAccess.get_sha256(target)}
+                var receipt := FileAccess.open(target.get_basename() + ".json", FileAccess.WRITE)
+                if receipt == null:
+                    push_error("Cannot write capture receipt")
+                    failures += 1
+                else:
+                    receipt.store_string(JSON.stringify(proof))
+                    receipt.close()
+                    print("MAP_SCREENSHOT_OK: ", target, " ", size)
             else:
                 push_error("Screenshot save failed " + target + ": " + str(error))
                 failures += 1
