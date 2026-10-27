@@ -73,13 +73,21 @@ def wall_run(spec, facing):
     objs.append(lib.block("gold_band", (length, 0.03, band_h), (0, -0.012, z + band_h / 2), gold, bevel=0.006))
     z += band_h
     cap_h = height - z
+    # connect_caps: the coping is cut at fixed half-tile joints so adjacent runs share one continuous course.
+    connect = p.get("connect_caps", False)
     x = -length / 2
     while x < length / 2 - 0.02:
-        w = r.uniform(0.45, 0.7)
+        w = 0.5 if connect else r.uniform(0.45, 0.7)
         x0, x1 = x, min(x + w, length / 2)
         objs.append(lib.block("cap", (x1 - x0 - gap * 0.6, thick + 0.07, cap_h), ((x0 + x1) / 2, thick / 2, z + cap_h / 2),
                               cap_stone, bevel=0.03))
         x += w
+    # Corner quoins: alternating long/short blocks at the run ends, flush with the coping.
+    for end in (-1, 1) if p.get("quoins", False) else ():
+        for row in range(rows):
+            qw = 0.26 if row % 2 else 0.18
+            objs.append(lib.block("quoin", (qw, thick + 0.03, row_h - gap), (end * (length / 2 - qw / 2), thick / 2,
+                                  row * row_h + row_h / 2), cap_stone, bevel=0.03))
     if p.get("ivy", True):
         objs += lib.ivy("ivy", (-length / 2, length / 2), -0.03, height, r, density=p.get("ivy_density", 1.0),
                         hang=p.get("ivy_hang", 0.9), flowers=p.get("ivy_flowers", 0.12))
@@ -155,6 +163,24 @@ def broken_floor_edge(spec, facing):
         s = r.uniform(0.05, 0.1)
         chip = [(cx - s, cy - s * 0.6), (cx + s * 0.9, cy - s * 0.7), (cx + s, cy + s * 0.5), (cx - s * 0.7, cy + s * 0.8)]
         objs.append(_prism("chip", chip, 0.03 + r.uniform(0, 0.02), -0.02, rubble))
+    # Terrace cliff contact: ragged rock courses below the broken edge(s), `cliff` tiles deep (0.8 / 1.0 variants).
+    cliff = p.get("cliff", 0.0)
+    sides = ["south"] + (["west"] if broken_left else []) + (["east"] if broken_right else [])
+    for side in sides if cliff else []:
+        z = -depth
+        while z > -depth - cliff + 1e-3:
+            h = min(r.uniform(0.14, 0.24), z + depth + cliff)
+            t = 0.0
+            while t < 1.0 - 1e-3:
+                w = min(r.uniform(0.18, 0.34), 1.0 - t)
+                inset = 0.04 + (-z - depth) * 0.12 + r.uniform(0.0, 0.05)
+                c = t + w / 2
+                loc = {"south": (c, inset + 0.08), "west": (inset + 0.08, c), "east": (1.0 - inset - 0.08, c)}[side]
+                size = (w - 0.015, 0.16, h - 0.015) if side == "south" else (0.16, w - 0.015, h - 0.015)
+                objs.append(lib.block("cliff", size, (*loc, z - h / 2), rubble, bevel=r.uniform(0.02, 0.04),
+                                      rotation_z=r.uniform(-0.05, 0.05)))
+                t += w
+            z -= h
     anchors = {"tile_top_left": Vector((0.0, 1.0, 0.0)), "tile_top_right": Vector((1.0, 1.0, 0.0)),
                "tile_bottom_left": Vector((0.0, 0.0, 0.0)), "tile_bottom_right": Vector((1.0, 0.0, 0.0))}
     return objs, anchors
@@ -237,6 +263,13 @@ def side_wall_path(spec, facing):
                                            rotation_z=r.uniform(-0.008, 0.008)))
                 x += w
         body_top = rows * row_h
+        if p.get("coping", False):
+            # Continuous coping course over the intact stretches, so the segments read as one connected wall.
+            for a, b, h in top:
+                if h >= height - 1e-3:
+                    local.append(lib.block("coping", (b - a + 0.01, thick + 0.06, 0.07), ((a + b) / 2, thick / 2, body_top + 0.035),
+                                           cap_stone, bevel=0.025))
+            body_top += 0.07
         # Broken crenellations: merlons on the intact stretches, some missing or snapped short.
         for a, b, h in top:
             if h < height - 1e-3 or r.random() < 0.3:
@@ -263,6 +296,8 @@ def side_wall_path(spec, facing):
         cx, cy = path[i][0] + thick / 2 * (oa[0] + ob[0]), path[i][1] + thick / 2 * (oa[1] + ob[1])
         ph = height + r.uniform(0.05, 0.25)
         objs.append(lib.block("pillar", (thick + 0.04, thick + 0.04, ph), (cx, cy, ph / 2), cap_stone, bevel=0.035))
+        if p.get("coping", False):
+            objs.append(lib.block("pillar_cap", (thick + 0.1, thick + 0.1, 0.06), (cx, cy, ph + 0.03), cap_stone, bevel=0.02))
     lib.lean(objs, p.get("lean", 0.0))
     joined = lib.join(objs, "side_wall")
     return [joined], {"grid_origin": Vector((0.0, 0.0, 0.0))}
@@ -317,8 +352,15 @@ def entrance_stairs(spec, facing):
         objs.append(lib.block("chip", (s, s * 0.8, s * 0.6), (r.uniform(-width / 2 + 0.1, width / 2 - 0.1),
                               -i * run + r.uniform(0.03, 0.1), -i * rise + s * 0.3), stone, bevel=0.02, rotation_z=r.uniform(0, 3)))
     total = width / 2 + cheek
-    return objs, {"top_center": Vector((0.0, 0.0, 0.0)), "top_left": Vector((-total, 0.0, 0.0)),
-                  "top_right": Vector((total, 0.0, 0.0))}
+    anchors = {"top_center": Vector((0.0, 0.0, 0.0)), "top_left": Vector((-total, 0.0, 0.0)),
+               "top_right": Vector((total, 0.0, 0.0))}
+    # Newel plinths on the bottom cheek caps: the rope posts (ART-0024) stand on these anchors.
+    newel = p.get("newel", 0.0)
+    for side, key in ((-1, "post_left"), (1, "post_right")) if newel else ():
+        cx, cy, ct = side * (width / 2 + cheek / 2), -(n - 0.5) * run, -(n - 1) * rise + cheek_h + 0.07
+        objs.append(lib.block("newel", (newel, newel, 0.1), (cx, cy, ct + 0.05), cap, bevel=0.03))
+        anchors[key] = Vector((cx, cy, ct + 0.1))
+    return objs, anchors
 
 
 def _flat_poly(name, pts, z, material, depth=0.004):
@@ -373,6 +415,16 @@ def compass_inlay(spec, facing):
         objs += point(math.pi / 4 + k * math.pi / 2, p.get("short_point", 0.5), 0.09, 0.016, ivory, ivory_dark)
     for k in range(4):   # cardinal points aim at the rhombus vertices
         objs += point(k * math.pi / 2, p.get("long_point", 0.84), 0.12, 0.018, gold, gold_dark)
+    if p.get("cobalt_ticks", False):
+        # Cobalt-gold dial: 16 gold ticks on the ring, cardinal ones longer, over a cobalt band inset.
+        objs.append(_flat_poly("cobalt_band", [(x * 0.93, y * 0.93) for x, y in circle], 0.0135, deep))
+        for i in range(16):
+            a = i * math.tau / 16
+            l0, l1, w = (0.80, 0.96, 0.03) if i % 4 == 0 else (0.86, 0.95, 0.018)
+            ux, uy, vx, vy = math.cos(a), math.sin(a), -math.sin(a) * w, math.cos(a) * w
+            pts = [(ux * l0 * ring * hx + vx, uy * l0 * ring * hy + vy), (ux * l0 * ring * hx - vx, uy * l0 * ring * hy - vy),
+                   (ux * l1 * ring * hx - vx, uy * l1 * ring * hy - vy), (ux * l1 * ring * hx + vx, uy * l1 * ring * hy + vy)]
+            objs.append(_flat_poly("tick", pts, 0.0145, gold))
     hub = [(math.cos(a) * 0.16, math.sin(a) * 0.16) for a in (i * math.tau / 24 for i in range(24))]
     objs += [_flat_poly("hub", hub, 0.020, gold), _flat_poly("gem", [(x * 0.55, y * 0.55) for x, y in hub], 0.022, field)]
     return objs, {"center": Vector((0.0, 0.0, 0.0)), "north": Vector((0.0, hy, 0.0)), "south": Vector((0.0, -hy, 0.0)),
@@ -438,8 +490,12 @@ def rope_fence(spec, facing):
     iron = lib.flat("iron", (0.10, 0.09, 0.08), roughness=0.5, metallic=0.8)
     hemp = lib.rope("rope")
     objs = []
+    plinth = p.get("plinth", 0.0)
+    stone = _golden(p, r, cap=True) if plinth else None
     for i, at in enumerate(posts):
         objs += _post("post", at, height + r.uniform(-0.04, 0.04), radius, wood, iron, r)
+        if plinth:   # low limestone footing so the post seats on the terrace instead of floating
+            objs.append(lib.block("plinth", (plinth, plinth, 0.08), (at[0], at[1], 0.04), stone, bevel=0.025))
     for (ax, ay), (bx, by) in zip(posts, posts[1:]):
         za = zb = height * 0.8
         objs.append(_swag("rope", Vector((ax, ay, za)), Vector((bx, by, zb)), p.get("sag", 0.22), p.get("rope", 0.028), hemp))
