@@ -1,11 +1,11 @@
 ---
 id: TASK-0061
-status: blocked
-owner: claude
-branch: work/task-0061-4a2f1cb9
-agent: claude
-touches: tools/agent_runner.py,tools/agent_file_bridge.py,tools/tests/test_agent_file_bridge.py,tools/tests/test_runner_main_clean.py
-test: py -3 -m unittest discover -s tools/tests -p test_runner_main_clean.py
+status: in_progress
+owner: codex
+branch: task-0061-token-preflight
+agent: codex
+touches: tools/agent_runner.py,tools/agent_file_bridge.py,tools/tests/test_agent_file_bridge.py,tools/tests/test_runner_main_clean.py,tools/test_map.json
+test: py -3 tools/run_tests.py --changed
 done_when: Provide a task-scoped text read/edit tool bridge to Codex while retaining shell/git/image restrictions, existing permission settings and workspace isolation. Limit normalized symlink-resolved paths to authorized text touches plus minimal read-only instructions/dependencies; reject traversal, outside writes, binaries and arbitrary execution. Preflight actual capability and expose sanitized terminal reason instead of generic no-code only. Fake CLI regression must read and edit a synthetic allowed file through the bridge; reject out-of-scope/image access. No model calls in tests. Infra PR; do not pretend this completes TASK-0059.
 started_at: 2026-10-27T16:36:53.623197+00:00
 cost_usd: unknown
@@ -38,10 +38,10 @@ Outcome: Provide a task-scoped text read/edit tool bridge to Codex while retaini
 - Read only targeted files, then expand if necessary.
 
 ## Evidence / handoff
-- Changed files: none.
-- Tests: not run.
-- PR: none.
-- Next: claim task after checking blockers.
+- Changed files: `tools/agent_runner.py`, `tools/agent_file_bridge.py`, `tools/tests/test_agent_file_bridge.py`, `tools/tests/test_runner_main_clean.py`, `tools/test_map.json`.
+- Tests: targeted bridge (11 passed) and runner (18 passed); `tools/run_tests.py --changed` found missing router coverage and failed only `test_router`.
+- PR: pending.
+- Next: add the bridge test route, rerun changed and full validation, then open the infrastructure PR.
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-27T16:36:53.612172+00:00

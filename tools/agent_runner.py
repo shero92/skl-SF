@@ -83,6 +83,7 @@ def requires_pr(paths):
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from runner_safety import MAIN_GENERATED_PATHS, main_generated, allowed_changed, is_art, is_generated, normalize, normalize_test, safe_test, supervised_problems, touches, verify_claim
+import agent_file_bridge
 
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=ROOT/".agents/planner/config.json"
@@ -277,12 +278,54 @@ def sanitized_session(agent,workdir,tid,timeout,repair_context=None):
         return proc,None
     log=workdir/".agents/monitoring/.local/codex-exec.jsonl"
     log.parent.mkdir(parents=True,exist_ok=True)
+    bridge=codex_bridge(workdir,tid)
+    prompt+=(" Use ONLY the task_files MCP tools (read_file, write_file, replace_in_file) "
+             "with repo-relative paths; reads: "+", ".join(bridge["reads"])+
+             "; writes: "+", ".join(bridge["touches"])+".")
     args=["codex","exec","--sandbox","workspace-write","--cd",str(workdir),
-          "--json","-"]
+          *bridge["config"],"--json","-"]
     proc=execute(args,workdir,input=prompt,timeout=timeout,check=False)
     with log.open("a" if repair_context else "w",encoding="utf-8",newline="\n") as handle:
         handle.write(proc.stdout)
     return proc,log
+
+def codex_bridge(workdir,tid):
+    """Preflight the scoped text bridge before launching a Codex worker."""
+    task_file=next((Path(workdir)/".agents/tasks").glob(tid+"_*.md"),None)
+    if task_file is None:
+        raise RuntimeError("Codex file bridge unavailable: task file missing")
+    match=re.search(r"(?m)^touches:\s*([^\r\n]*)$",task_file.read_text(encoding="utf-8"))
+    allowed=[p.strip() for p in (match.group(1) if match else "").split(",")
+             if p.strip() and p.strip()!="none"]
+    reads=["AGENTS.md",task_file.relative_to(workdir).as_posix()]
+    instruction_paths=("INDEX.md","tools/INDEX.md",".agents/INDEX.md",
+                       ".agents/workflows/TASKS.md","map_factory/INDEX.md",
+                       "map_factory/MAP_FACTORY_RULES.md")
+    reads += [p for p in instruction_paths if (Path(workdir)/p).is_file()]
+    problem=agent_file_bridge.preflight(workdir,allowed,reads,"AGENTS.md",timeout=remaining_timeout(30))
+    if problem:
+        raise RuntimeError("Codex file bridge unavailable: "+problem)
+    argv=agent_file_bridge.command(workdir,allowed,reads)
+    config=["-c","mcp_servers.task_files.command="+json.dumps(argv[0]),
+            "-c","mcp_servers.task_files.args="+json.dumps(argv[1:])]
+    return {"touches":allowed,"reads":reads,"config":config}
+
+def codex_reason(log):
+    """Return a short sanitized final Codex message for failure evidence."""
+    try:
+        lines=Path(log).read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return ""
+    message=""
+    for line in lines:
+        try:
+            item=json.loads(line).get("item") or {}
+        except (ValueError,AttributeError):
+            continue
+        if item.get("type")=="agent_message" and isinstance(item.get("text"),str):
+            message=item["text"]
+    message=re.sub(r"(sk-[A-Za-z0-9_-]{8,}|[A-Za-z]:[\\/][^\s'\"]*)","[redacted]",message)
+    return " ".join("".join(c if c.isprintable() else " " for c in message).split())[:300]
 
 def hide_images(workdir):
     # Agent sees a sparse checkout WITHOUT production or reference images.
@@ -310,9 +353,28 @@ def tests(workdir,task,scope="--changed"):
         [sys.executable,*step],
         [sys.executable,"tools/run_tests.py",scope]]
     failures=[]
-    for command in commands:
+    logs=[]
+    for index,command in enumerate(commands):
         proc=execute(command,workdir,timeout=1800,check=False)
-        if proc.returncode:failures.append(" ".join(str(x) for x in command[1:3])+" returned "+str(proc.returncode))
+        if proc.returncode:
+            stamp_text=datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+            log=Path(workdir)/".agents/monitoring/.local/test-logs"/(task.get("id","task")+"_"+str(index)+"_"+stamp_text+".log")
+            log.parent.mkdir(parents=True,exist_ok=True)
+            combined=(proc.stdout or "")+(("\n" if proc.stdout and proc.stderr else "")+(proc.stderr or ""))
+            log.write_text("command: "+" ".join(str(x) for x in command)+"\nexit code: "+str(proc.returncode)+"\n\n"+combined,encoding="utf-8",newline="\n")
+            lines=combined.splitlines()
+            details=[]
+            for line in lines:
+                value=line.strip()
+                if (re.search(r"\b(?:FAIL|ERROR):\s+",value) or
+                    re.search(r'File ".+", line \d+',value) or
+                    re.match(r"(?:AssertionError|Error|Exception|RuntimeError):",value)):
+                    if value not in details:details.append(value)
+            label=" ".join(str(x) for x in command[1:3])
+            suffix="; ".join(details[:5]) or "see full log"
+            rel=log.relative_to(workdir).as_posix()
+            failures.append(label+" exit "+str(proc.returncode)+": "+suffix+"; log: "+rel)
+            logs.append(rel)
     if failures:raise RuntimeError("; ".join(failures))
 
 def validate_with_repair(workdir, task, paths, agent, tid, timeout):
