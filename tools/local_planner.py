@@ -24,6 +24,10 @@ BANNED_ENV = ("OPENAI_API_KEY", "ANTHROPIC_API_KEY")
 SKIP = (".agents/planner/runs/", ".agents/planner/checkpoint.json",
         ".agents/planner/cooldowns.json", ".agents/planner/daily/",
         ".agents/project/TASKS.md")
+CONTEXT_LIMIT = 12000
+DONE_TASK_STATES = {"done", "cancelled"}
+TERMINAL_REQUEST_STATES = {"done", "closed", "cancelled", "rejected"}
+PRIORITY_RANK = {"critical": 0, "high": 1, "normal": 2, "medium": 2, "low": 3}
 
 def invoke(argv, *, cwd=ROOT, stdin=None, timeout=120, check=True):
     proc = subprocess.run(argv, input=stdin, text=True, encoding="utf-8",
@@ -66,22 +70,166 @@ def digest():
     h.update(last.encode())
     return h.hexdigest()
 
-def context():
+def task_fields(path):
+    """Read compact task state and selected evidence for planner decisions."""
+    raw = path.read_text(encoding="utf-8")
+    if not raw.startswith("---\n"):
+        return {}
+    header = raw.split("---", 2)[1]
+    fields = {}
+    for line in header.splitlines():
+        if ":" in line:
+            key, value = line.split(":", 1)
+            fields[key.strip()] = value.strip()
+    evidence = []
+    for line in raw.splitlines():
+        value = line.strip()
+        if value.startswith("-") and re.match(r"-\s*(?:PR:|Tests?:|Blocker:|Next:|Commit:)", value, re.I):
+            evidence.append(value[2:].strip())
+    return {"id": fields.get("id", ""), "status": fields.get("status", "unknown"),
+            "branch": fields.get("branch", "none"),
+            "depends_on": [x.strip() for x in fields.get("depends_on", "none").split(",") if x.strip() != "none"],
+            "evidence": evidence[-4:]}
+
+
+def task_state_index(root, task_ids):
+    """Resolve only task records referenced by approved goals and open requests."""
+    wanted = {str(value) for value in task_ids if re.fullmatch(r"TASK-\d{4}", str(value))}
+    if not wanted:
+        return {}
+    files = {}
+    for path in (root/".agents/tasks").glob("TASK-*.md"):
+        match = re.match(r"(TASK-\d{4})_", path.name)
+        if match and match.group(1) in wanted:
+            files[match.group(1)] = path
+    return {tid: task_fields(files[tid]) if tid in files else
+            {"id": tid, "status": "missing", "branch": "none", "depends_on": [], "evidence": []}
+            for tid in sorted(wanted)}
+
+
+def _json_section(label, data):
+    return "--- " + label + " ---\n" + json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+
+
+def _priority(value):
+    return PRIORITY_RANK.get(str(value or "").lower(), 4)
+
+
+def planner_sections(root=None, limit=CONTEXT_LIMIT):
+    """Return prioritized whole records; never truncate the middle of a record."""
+    root = Path(root or ROOT)
+    planner = root/".agents/planner"
+    goals = load(planner/"goals.json", {"goals": []}).get("goals", [])
+    requests = []
+    referenced = set()
+    for path in sorted((planner/"requests").glob("REQ-*.json")):
+        try:
+            request = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if request.get("task_id"):
+            referenced.add(request["task_id"])
+        if str(request.get("status", "open")).lower() not in TERMINAL_REQUEST_STATES:
+            requests.append((path, request))
+
+    active_goals = []
+    for goal in goals:
+        state_path = planner/"goals"/str(goal.get("id", ""))/"state.json"
+        state = load(state_path, {})
+        if goal.get("status") == "active" and state.get("milestones_approved") is True:
+            active_goals.append((goal, state))
+            for step in goal.get("steps", []):
+                if step.get("task_id"):
+                    referenced.add(step["task_id"])
+                referenced.update(step.get("depends_on", []))
+    tasks = task_state_index(root, referenced)
+
     parts = []
-    paths = [ROOT/"AGENTS.md", ROOT/"INDEX.md", BASE/"PROMPT_RULES.md",
-             BASE/"goals.json", ROOT/".agents/project/TASKS.md"]
-    paths += sorted((BASE/"goals").glob("GOAL-*/goal.md"))
-    paths += sorted((BASE/"goals").glob("GOAL-*/state.json"))
-    paths += sorted((BASE/"requests").glob("REQ-*.json"))
-    # Read only text, never reference files or production images.
-    paths += sorted((ROOT/".agents/tasks").glob("TASK-*.md"))
-    for path in paths:
+    for path in (root/"AGENTS.md", planner/"PROMPT_RULES.md"):
         if path.is_file():
-            rel = path.relative_to(ROOT).as_posix()
-            body = path.read_text(encoding="utf-8")[:4500]
-            parts.append("--- " + rel + " ---\n" + body)
-    parts.append("--- recent git log ---\n" + git("log", "-5", "--format=%h %s"))
-    return "\n\n".join(parts)[:28000]
+            parts.append("--- " + path.relative_to(root).as_posix() + " ---\n" + path.read_text(encoding="utf-8"))
+    for goal, state in active_goals:
+        parts.append(_json_section("approved goal " + goal.get("id", ""), {
+            "title": goal.get("title"), "outcome": goal.get("outcome"),
+            "verification": goal.get("verification"), "constraints": goal.get("constraints"),
+            "reference_sha256": state.get("reference_sha256")}))
+    size = len("\n\n".join(parts))
+    if size > limit:
+        raise ValueError("Planner's required instructions exceed context limit")
+
+    candidates = []
+    for path, request in requests:
+        tid = request.get("task_id")
+        linked = tasks.get(tid) if tid else None
+        if linked and linked["status"] in DONE_TASK_STATES:
+            continue
+        # Accepted requests with an existing task are represented by the richer goal/task
+        # record below; only genuinely open or not-yet-tasked requests get their own entry.
+        status = str(request.get("status", "open")).lower()
+        if linked and status != "open":
+            continue
+        if linked:
+            record = {"status": request.get("status"), "priority": request.get("priority"),
+                      "title": request.get("title"), "task_id": tid,
+                      "task_status": linked["status"], "task_evidence": linked["evidence"]}
+        else:
+            fields = ("status", "priority", "title", "problem", "file", "line", "done_when",
+                      "test", "kind", "agent", "goal_id", "task_id", "touches")
+            record = {key: request[key] for key in fields if key in request and request[key] is not None}
+        section = _json_section("open request " + path.stem, record)
+        category = 0 if status == "open" else 1
+        candidates.append(((category, _priority(request.get("priority")), len(section), path.name), section))
+
+    by_key = {step.get("key"): step for goal, _ in active_goals for step in goal.get("steps", [])}
+    for goal, _ in active_goals:
+        for step in goal.get("steps", []):
+            tid = step.get("task_id")
+            linked = tasks.get(tid) if tid else None
+            if linked and linked["status"] in DONE_TASK_STATES:
+                continue
+            blocked_by = []
+            for key in step.get("after", []):
+                prior_id = by_key.get(key, {}).get("task_id")
+                state = tasks.get(prior_id, {}).get("status", "missing") if prior_id else "unassigned"
+                if state != "done":
+                    blocked_by.append(key + " (" + state + ")")
+            for dependency in step.get("depends_on", []):
+                state = tasks.get(dependency, {}).get("status", "missing")
+                if state != "done":
+                    blocked_by.append(dependency + " (" + state + ")")
+            ready = not blocked_by
+            if not tid and not ready:
+                continue
+            record = {"goal_id": goal.get("id"), "key": step.get("key"), "title": step.get("title"),
+                      "task_id": tid, "task_status": linked["status"] if linked else "unassigned",
+                      "ready": ready, "blocked_by": blocked_by, "agent": step.get("agent"),
+                      "priority": step.get("priority"), "kind": step.get("kind"),
+                      "file": step.get("file"), "touches": step.get("touches"),
+                      "test": step.get("test"), "task_branch": linked["branch"] if linked else None,
+                      "task_evidence": linked["evidence"] if linked else []}
+            if not tid:
+                record.update(problem=step.get("problem"), done_when=step.get("done_when"))
+            section = _json_section("approved goal step " + str(step.get("key")), record)
+            rank = 0 if ready else _priority(step.get("priority")) + 1
+            candidates.append(((2, rank, len(section), str(step.get("key"))), section))
+
+    try:
+        recent = git("log", "-5", "--format=%h %s") if root == ROOT else invoke(
+            ["git", "log", "-5", "--format=%h %s"], cwd=root).stdout.strip()
+    except (OSError, RuntimeError):
+        recent = "unavailable"
+    candidates.append(((3, 0, len(recent), "recent git log"), "--- recent git log ---\n" + recent))
+
+    for _, section in sorted(candidates, key=lambda item: item[0]):
+        if size + len(section) + 2 > limit:
+            continue
+        parts.append(section)
+        size += len(section) + 2
+    return parts
+
+
+def context():
+    return "\n\n".join(planner_sections(ROOT, CONTEXT_LIMIT))
 
 def check_quota(stderr):
     return bool(re.search(r"rate.?limit|usage.?limit|quota.?exceed|429|too many requests|resets in", stderr, re.I))

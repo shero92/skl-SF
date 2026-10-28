@@ -212,6 +212,29 @@ class RunTests(unittest.TestCase):
         self.assertIn("FAIL bad", out)
         self.assertIn("1/2 passed: failed bad", out)
 
+    def test_failure_prints_test_location_and_saves_complete_raw_output(self):
+        script = ("print('FAIL: test_bad_case (suite.Sample)'); "
+                  "print('  File \\\"tools/tests/test_sample.py\\\", line 42'); "
+                  "print('AssertionError: expected 1'); "
+                  "[print('raw detail '+str(i)) for i in range(40)]; raise SystemExit(2)")
+        with tempfile.TemporaryDirectory() as tmp:
+            log_dir = Path(tmp) / "test-logs"
+            test = entry("diagnostic", ["x"], [sys.executable, "-c", script])
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                code = run_tests.run([test], "godot", 10, log_dir=log_dir)
+            rendered = out.getvalue()
+            logs = list(log_dir.glob("diagnostic_*.log"))
+            self.assertEqual(code, 1)
+            self.assertIn("FAIL: test_bad_case (suite.Sample)", rendered)
+            self.assertIn('File "tools/tests/test_sample.py", line 42', rendered)
+            self.assertIn("AssertionError: expected 1", rendered)
+            self.assertIn("Full log:", rendered)
+            self.assertEqual(len(logs), 1)
+            saved = logs[0].read_text(encoding="utf-8")
+            self.assertIn("raw detail 0", saved)
+            self.assertIn("raw detail 39", saved)
+
     def test_dry_run_executes_nothing(self):
         marker = Path(tempfile.gettempdir()) / "run_tests_dry_run_marker"
         marker.unlink(missing_ok=True)
