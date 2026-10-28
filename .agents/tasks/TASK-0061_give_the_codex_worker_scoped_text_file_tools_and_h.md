@@ -1,6 +1,6 @@
 ---
 id: TASK-0061
-status: in_progress
+status: review
 owner: codex
 branch: task-0061-token-preflight
 agent: codex
@@ -40,8 +40,8 @@ Outcome: Provide a task-scoped text read/edit tool bridge to Codex while retaini
 ## Evidence / handoff
 - Changed files: `tools/agent_runner.py`, `tools/agent_file_bridge.py`, `tools/tests/test_agent_file_bridge.py`, `tools/tests/test_runner_main_clean.py`, `tools/test_map.json`.
 - Tests: targeted bridge (11 passed) and runner (18 passed); `tools/run_tests.py --changed` found missing router coverage and failed only `test_router`.
-- PR: pending.
-- Next: add the bridge test route, rerun changed and full validation, then open the infrastructure PR.
+- PR: https://github.com/shero92/skl-SF/pull/63 (open; checks pending).
+- Next: review PR #63 checks and merge through the approved repository workflow.
 
 ## Runner evidence
 - Claimed by local runner at 2026-10-27T16:36:53.612172+00:00
