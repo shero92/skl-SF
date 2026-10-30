@@ -1,0 +1,20 @@
+Produce exactly ONE standalone PNG of ONE environment asset.
+Asset W03: Broken Stone Wall Block; category wall; identity W03.
+Specific shape/material instructions: Broken Stone Wall Block. Match the corresponding element in the original room reference; isolate only this named part..
+Native game canvas 64x128 pixels. Ground footprint
+1x1 square tiles, 64x64 pixels per tile.
+Anchor (pixel coordinates from top-left): 0, 128.
+Facing: default. Square-grid player-facing top-down / three-quarter RPG
+camera; match the original room reference. Never diamond 2:1 isometric.
+Reference priority: original room for camera/materials; approved floor for scale,
+palette and pixel density; approved same-identity view for proportions only.
+Independently redraw the facing; do not rotate or mirror another sprite.
+Warm upper-left sunlight, subtle lower-right shading. Golden sandstone, pale worn
+stone, warm polished wood, blue and gold textiles, lush readable foliage as relevant.
+Premium handcrafted crisp pixel art, controlled detail and palette, hard pixel edges.
+Fill the specified canvas without clipping; keep ground contact at the anchor.
+Layer: wall_base. Transparency required: True.
+Single isolated object; no detached cast shadow outside its sprite.
+No collage, contact sheet, atlas, text, labels, checkerboard, watermark, UI, characters,
+unrelated objects, multiple assets, background scene, blur, smoothing, anti-aliasing,
+soft painting, photorealism or 3D render appearance. Return one image only.
