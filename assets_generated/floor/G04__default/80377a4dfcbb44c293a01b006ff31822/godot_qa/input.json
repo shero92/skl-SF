@@ -1,0 +1,23 @@
+{
+  "sprite": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\floor\\G04__default\\80377a4dfcbb44c293a01b006ff31822\\G04__floor__naturally_textured_sandstone_floor_tile__default__1x1__64x64.png",
+  "floor": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\map_factory\\references\\approved\\G01_clean_sandstone_64.png",
+  "width": 64,
+  "height": 64,
+  "anchor": [
+    0,
+    0
+  ],
+  "output": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\floor\\G04__default\\80377a4dfcbb44c293a01b006ff31822\\godot_qa",
+  "base_path": "res://map_factory/maps/hero_room_01/latest.json",
+  "is_floor": true,
+  "candidates": [
+    {
+      "path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\floor\\G04__default\\80377a4dfcbb44c293a01b006ff31822\\G04__floor__naturally_textured_sandstone_floor_tile__default__1x1__64x64.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "id": "G04__default"
+    }
+  ]
+}
