@@ -1,0 +1,30 @@
+{
+  "character_id": "CHAR001",
+  "animation_name": "attack_execute",
+  "frame_index": 4,
+  "hand_anchor_x": 182.318,
+  "hand_anchor_y": 160.176,
+  "hand_rotation_degrees": 125,
+  "weapon_scale": 1.0,
+  "weapon_render_order": "front",
+  "grip_type": "one_hand_sword",
+  "hand_occlusion_rect": [
+    177,
+    155,
+    10,
+    10
+  ],
+  "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v2.png",
+  "body_sha256": "a36156c6d0a567bd46dccd7eb537349bc8b52cf388beca1f2c5993d888f16695",
+  "source_grip": [
+    979,
+    686
+  ],
+  "annotation_method": "individual visual source grip measurement transformed through native normalization",
+  "body_ground_anchor": [
+    128,
+    240
+  ],
+  "weaponless_visual_check": "agent_source_review_passed",
+  "status": "needs_review"
+}

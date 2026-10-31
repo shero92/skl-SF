@@ -1,0 +1,87 @@
+{
+  "id": "CHAR001_map_down_walk_02",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "walk",
+  "direction": "down",
+  "frame": 2,
+  "output": "assets/characters/hero/map/down/hero_map_down_walk_02_aligned_v004.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: stylized-concept. ONE isolated production pixel-art map image, CHAR001 Hero, walk, frame 02. Input 1 is the STRICT original character identity poster: extract design identity only, do not copy poster composition, captions or other views. Preserve brown tousled hair, blue eyes, blue and cream layered coastal clothes, shell necklace, coral ornaments, blue arm markings, decorated sword, sandals. front facing viewer toward bottom edge. left foot supporting, right foot passing. Premium handcrafted crisp pixel clusters, restrained coherent palette, clean outlines, no blur, antialiasing or painterly rendering. Square-grid player-facing elevated 3/4 RPG map camera; readable compact proportions and silhouette compatible with 64x64 floor grid. Target native canvas 96x96, transparent RGBA. Design the pixels at native scale; if larger renderer output is needed use integer-enlarged native pixel blocks. Preserve full silhouette, head, weapon, feet with no clipping. Ground contact anchor [48, 90]; leave margins. Warm upper-left light. Additional reference is same-character prior frame for identical scale/costume only; CHANGE limbs and secondary motion as requested, never duplicate a static pose. No floor, cast shadow, background, poster, border, text, labels, collage, sprite sheet, multiple poses, extra character, or checkerboard. Exactly ONE image of this single asset/frame. CRITICAL NATIVE SPRITE DESIGN: use the compact MAP SPRITES at the TOP RIGHT of the original reference as proportion guide, NOT the tall key art. This is a small RPG MAP sprite with a large readable head, exactly 3 heads tall overall, short stout torso, short legs, unmistakable blue eyes and chunky hair clusters. NOT realistic adult proportions, not a full illustration shrunk down. Design on an underlying 96x96 logical pixel grid, individual clusters 1-3 native pixels; enlarge those exact pixel blocks if renderer outputs larger. Occupied character body height about 78 native pixels, head about 25 native pixels. Head and feet both readable. Camera elevated 3/4, show top of head. The requested facing MUST be unambiguous.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "needs_review",
+  "attempts": 1,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T03:06:08.949858+00:00",
+  "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_02__attempt_01.png",
+  "sha256": "ba4a3881dd86a1f1b0e86faaad71b0b420061e0eabba137c25b33a4568d035bc",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "down",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      242,
+      99,
+      940,
+      1182
+    ],
+    "source_contact_x": 628.9968152866242,
+    "scale": 0.07294332723948811,
+    "native_bounds": [
+      20,
+      11,
+      71,
+      90
+    ],
+    "paste_position": [
+      20,
+      11
+    ]
+  },
+  "previous_native_candidates": [
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_02.png",
+      "sha256": "c04d0583fa78ff56ae14ebe520f9316e0b60dec01320e180fcce20f2df3382da",
+      "reason": "Previous bounding-box center anchor replaced by measured foot contact"
+    },
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_02_aligned_v001.png",
+      "sha256": "f20e60969ca6dfc8a1f1308d39faf82e920aba71d85e71c7cd228d11e1785bbf",
+      "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
+    }
+  ]
+}

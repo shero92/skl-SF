@@ -1,0 +1,616 @@
+{
+  "references": [
+    {
+      "proportions": {
+        "blue": 0.16268,
+        "red": 0.07609,
+        "cream_white": 0.13554
+      },
+      "nearest_locked_material_proportions": {
+        "hair": 0.09835,
+        "skin": 0.05234,
+        "scarf_blue": 0.07676,
+        "feather_blue": 0.06946,
+        "feather_red": 0.05065,
+        "feather_cream": 0.07717,
+        "feather_white": 0.04959,
+        "feather_olive": 0.03067,
+        "pants_brown": 0.05564,
+        "leather": 0.07257,
+        "rope": 0.07653,
+        "gold_ornaments": 0.05204,
+        "shell_accessories": 0.08635,
+        "outlines": 0.15189
+      },
+      "mean_saturation": {
+        "blue": 0.61329,
+        "red": 0.74542
+      }
+    },
+    {
+      "proportions": {
+        "blue": 0.16958,
+        "red": 0.09475,
+        "cream_white": 0.14948
+      },
+      "nearest_locked_material_proportions": {
+        "hair": 0.09581,
+        "skin": 0.04803,
+        "scarf_blue": 0.07483,
+        "feather_blue": 0.0781,
+        "feather_red": 0.06657,
+        "feather_cream": 0.09826,
+        "feather_white": 0.04333,
+        "feather_olive": 0.02524,
+        "pants_brown": 0.05958,
+        "leather": 0.06611,
+        "rope": 0.06031,
+        "gold_ornaments": 0.04,
+        "shell_accessories": 0.09301,
+        "outlines": 0.15083
+      },
+      "mean_saturation": {
+        "blue": 0.65738,
+        "red": 0.77544
+      }
+    }
+  ],
+  "frames": [
+    {
+      "id": "CHAR001_weaponless_attack_windup_01",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png",
+      "sha256": "8c4ae6a245c340d7b0e6b66980bd4f0d25dc5767629f7d2bcf44e91c9d38ad01",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        56,
+        61,
+        209,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.16684,
+          "red": 0.0962,
+          "cream_white": 0.16438
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.09991,
+          "skin": 0.06332,
+          "scarf_blue": 0.06065,
+          "feather_blue": 0.08832,
+          "feather_red": 0.05813,
+          "feather_cream": 0.08368,
+          "feather_white": 0.04038,
+          "feather_olive": 0.04531,
+          "pants_brown": 0.0583,
+          "leather": 0.0651,
+          "rope": 0.06211,
+          "gold_ornaments": 0.02972,
+          "shell_accessories": 0.09216,
+          "outlines": 0.15292
+        },
+        "mean_saturation": {
+          "blue": 0.63101,
+          "red": 0.75853
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_windup_02",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png",
+      "sha256": "b482db9b86f7979daaf879ee88dbba7fde2d8f46f98f363b157ed2c15d3d6d1d",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        45,
+        65,
+        215,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.158,
+          "red": 0.092,
+          "cream_white": 0.14843
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.11545,
+          "skin": 0.05512,
+          "scarf_blue": 0.0726,
+          "feather_blue": 0.05809,
+          "feather_red": 0.06307,
+          "feather_cream": 0.08563,
+          "feather_white": 0.02694,
+          "feather_olive": 0.03242,
+          "pants_brown": 0.06201,
+          "leather": 0.07894,
+          "rope": 0.05972,
+          "gold_ornaments": 0.03403,
+          "shell_accessories": 0.09166,
+          "outlines": 0.16432
+        },
+        "mean_saturation": {
+          "blue": 0.58956,
+          "red": 0.74546
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_windup_03",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png",
+      "sha256": "c7a8d72eba29fc0d41839b3e41f84a132ae103b465a432f93cd67443f962fd22",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        49,
+        71,
+        210,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.16381,
+          "red": 0.10765,
+          "cream_white": 0.16586
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.12375,
+          "skin": 0.05259,
+          "scarf_blue": 0.08463,
+          "feather_blue": 0.06483,
+          "feather_red": 0.07471,
+          "feather_cream": 0.0926,
+          "feather_white": 0.03092,
+          "feather_olive": 0.03678,
+          "pants_brown": 0.06033,
+          "leather": 0.07857,
+          "rope": 0.05141,
+          "gold_ornaments": 0.03732,
+          "shell_accessories": 0.0954,
+          "outlines": 0.11615
+        },
+        "mean_saturation": {
+          "blue": 0.56447,
+          "red": 0.73395
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_windup_04",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png",
+      "sha256": "38945cb653416cbcfb7a1c1436ab1bf61d3525718c92d5d1807a5eb4aad19fc2",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        46,
+        64,
+        217,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.14304,
+          "red": 0.10471,
+          "cream_white": 0.19753
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.10866,
+          "skin": 0.0634,
+          "scarf_blue": 0.06669,
+          "feather_blue": 0.05522,
+          "feather_red": 0.07484,
+          "feather_cream": 0.10067,
+          "feather_white": 0.04267,
+          "feather_olive": 0.04585,
+          "pants_brown": 0.0605,
+          "leather": 0.06764,
+          "rope": 0.03759,
+          "gold_ornaments": 0.0184,
+          "shell_accessories": 0.11095,
+          "outlines": 0.14691
+        },
+        "mean_saturation": {
+          "blue": 0.55801,
+          "red": 0.75593
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_execute_01",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png",
+      "sha256": "ee91565970ee830769c2cb952528ef39b334de688e2f8a4d0c75c2c698a10577",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        45,
+        64,
+        211,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.14053,
+          "red": 0.13461,
+          "cream_white": 0.16039
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.13029,
+          "skin": 0.06792,
+          "scarf_blue": 0.05031,
+          "feather_blue": 0.06185,
+          "feather_red": 0.07348,
+          "feather_cream": 0.09673,
+          "feather_white": 0.03286,
+          "feather_olive": 0.03178,
+          "pants_brown": 0.06924,
+          "leather": 0.074,
+          "rope": 0.02406,
+          "gold_ornaments": 0.02161,
+          "shell_accessories": 0.09759,
+          "outlines": 0.16828
+        },
+        "mean_saturation": {
+          "blue": 0.66055,
+          "red": 0.70787
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_execute_02",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png",
+      "sha256": "edee71c47b0a9b2cef303dce12a14ae335602895f42b589b652c44936672e712",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        41,
+        82,
+        215,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.17038,
+          "red": 0.13957,
+          "cream_white": 0.18309
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.11097,
+          "skin": 0.04625,
+          "scarf_blue": 0.07372,
+          "feather_blue": 0.06925,
+          "feather_red": 0.08223,
+          "feather_cream": 0.08985,
+          "feather_white": 0.0417,
+          "feather_olive": 0.0463,
+          "pants_brown": 0.06652,
+          "leather": 0.07524,
+          "rope": 0.02736,
+          "gold_ornaments": 0.01925,
+          "shell_accessories": 0.09857,
+          "outlines": 0.1528
+        },
+        "mean_saturation": {
+          "blue": 0.60325,
+          "red": 0.71901
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_execute_03",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png",
+      "sha256": "22c5971947d84c215c3a92f153468c9e39e0ecbc5b96dd42cf4f0ef063ed78fa",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        40,
+        79,
+        220,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.16147,
+          "red": 0.11864,
+          "cream_white": 0.18331
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.11539,
+          "skin": 0.06249,
+          "scarf_blue": 0.06735,
+          "feather_blue": 0.06184,
+          "feather_red": 0.06214,
+          "feather_cream": 0.08071,
+          "feather_white": 0.05657,
+          "feather_olive": 0.06417,
+          "pants_brown": 0.05178,
+          "leather": 0.07726,
+          "rope": 0.03433,
+          "gold_ornaments": 0.02235,
+          "shell_accessories": 0.08462,
+          "outlines": 0.15899
+        },
+        "mean_saturation": {
+          "blue": 0.59831,
+          "red": 0.69671
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_execute_04",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png",
+      "sha256": "9438a9c099cb6c1e78b4784d4d8852d206fce824096277ba5b96ef15b7a6b516",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        35,
+        78,
+        221,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.12837,
+          "red": 0.13209,
+          "cream_white": 0.17537
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.12997,
+          "skin": 0.07232,
+          "scarf_blue": 0.06321,
+          "feather_blue": 0.04413,
+          "feather_red": 0.08238,
+          "feather_cream": 0.10277,
+          "feather_white": 0.03399,
+          "feather_olive": 0.04398,
+          "pants_brown": 0.05838,
+          "leather": 0.08442,
+          "rope": 0.01798,
+          "gold_ornaments": 0.02286,
+          "shell_accessories": 0.08655,
+          "outlines": 0.15705
+        },
+        "mean_saturation": {
+          "blue": 0.58846,
+          "red": 0.70229
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_execute_05",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png",
+      "sha256": "10aa6eedabf8d62f8226a4b93aa2690013fe0a2fc937288d32a4086acab69acf",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        34,
+        74,
+        223,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.1326,
+          "red": 0.12587,
+          "cream_white": 0.18409
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.12284,
+          "skin": 0.07126,
+          "scarf_blue": 0.05106,
+          "feather_blue": 0.05654,
+          "feather_red": 0.07025,
+          "feather_cream": 0.09367,
+          "feather_white": 0.02709,
+          "feather_olive": 0.0468,
+          "pants_brown": 0.07719,
+          "leather": 0.07928,
+          "rope": 0.02928,
+          "gold_ornaments": 0.01963,
+          "shell_accessories": 0.10764,
+          "outlines": 0.14746
+        },
+        "mean_saturation": {
+          "blue": 0.63617,
+          "red": 0.68113
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_attack_execute_06",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png",
+      "sha256": "f3938f266721490f5b19bfd079ac1a0934734886d825da62ee89872cb6355b70",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        56,
+        61,
+        199,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.15293,
+          "red": 0.09638,
+          "cream_white": 0.16779
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.10029,
+          "skin": 0.05597,
+          "scarf_blue": 0.09109,
+          "feather_blue": 0.04499,
+          "feather_red": 0.06023,
+          "feather_cream": 0.09335,
+          "feather_white": 0.03894,
+          "feather_olive": 0.03656,
+          "pants_brown": 0.06019,
+          "leather": 0.06948,
+          "rope": 0.0663,
+          "gold_ornaments": 0.03418,
+          "shell_accessories": 0.09454,
+          "outlines": 0.15389
+        },
+        "mean_saturation": {
+          "blue": 0.53834,
+          "red": 0.77394
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_idle_ready_01",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_idle_ready_01__weaponless_v2.png",
+      "sha256": "35a03a2bb896f79a0985f4e17dd1cd0d1e65f34b5aea208972ec7eefadcaac2a",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        56,
+        60,
+        198,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.15205,
+          "red": 0.09261,
+          "cream_white": 0.17299
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.09639,
+          "skin": 0.05318,
+          "scarf_blue": 0.07268,
+          "feather_blue": 0.06159,
+          "feather_red": 0.05716,
+          "feather_cream": 0.11384,
+          "feather_white": 0.04182,
+          "feather_olive": 0.04099,
+          "pants_brown": 0.06353,
+          "leather": 0.06833,
+          "rope": 0.0638,
+          "gold_ornaments": 0.03246,
+          "shell_accessories": 0.08811,
+          "outlines": 0.14613
+        },
+        "mean_saturation": {
+          "blue": 0.55037,
+          "red": 0.74384
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    },
+    {
+      "id": "CHAR001_weaponless_step_01",
+      "path": "assets/characters/hero/battle/weaponless_v2/hero_battle_step_01__weaponless_v2.png",
+      "sha256": "c1af6d35ac532555be7da1b051a35d07e42c859f08e5cba1d42e2eaf811562d6",
+      "native_dimensions": [
+        256,
+        256
+      ],
+      "alpha": true,
+      "native_bounds": [
+        52,
+        65,
+        204,
+        240
+      ],
+      "color_metrics": {
+        "proportions": {
+          "blue": 0.15263,
+          "red": 0.10289,
+          "cream_white": 0.15363
+        },
+        "nearest_locked_material_proportions": {
+          "hair": 0.10187,
+          "skin": 0.05379,
+          "scarf_blue": 0.08218,
+          "feather_blue": 0.05271,
+          "feather_red": 0.06914,
+          "feather_cream": 0.11138,
+          "feather_white": 0.03757,
+          "feather_olive": 0.02455,
+          "pants_brown": 0.06323,
+          "leather": 0.07341,
+          "rope": 0.06017,
+          "gold_ornaments": 0.03513,
+          "shell_accessories": 0.08676,
+          "outlines": 0.14812
+        },
+        "mean_saturation": {
+          "blue": 0.53026,
+          "red": 0.76287
+        }
+      },
+      "diagnostic_warnings": [],
+      "visual_weaponless_review": "requires_individual_source_review",
+      "identity_and_motion_approval": "pending_owner_review"
+    }
+  ],
+  "method": "nearest locked material-ramp proportions plus hue/saturation; hair/pants are separate material ramps, not red feathers. This is a diagnostic, not semantic segmentation or visual approval.",
+  "warning_policy": "review pose-dependent proportions visually before accepting or regenerating",
+  "original_sources_preserved": true,
+  "production_approval": false
+}

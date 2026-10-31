@@ -1,0 +1,10 @@
+{
+  "id": "CHAR001_battle__idle_ready_01",
+  "arguments": {
+    "prompt": "Use case: stylized-concept. ONE isolated production pixel-art battle image, CHAR001 Hero, idle_ready, frame 01. Input 1 is the STRICT original character identity poster: extract design identity only, do not copy poster composition, captions or other views. Preserve brown tousled hair, blue eyes, blue and cream layered coastal clothes, shell necklace, coral ornaments, blue arm markings, decorated sword, sandals. . idle_ready action frame 1 of 4: neutral combat guard. No slash trail, airborne projectile or magic VFX baked into body.. Premium handcrafted crisp pixel clusters, restrained coherent palette, clean outlines, no blur, antialiasing or painterly rendering. Independent detailed combat representation, substantially more anatomical detail than map chibi. Target native canvas 256x256, transparent RGBA. Design the pixels at native scale; if larger renderer output is needed use integer-enlarged native pixel blocks. Preserve full silhouette, head, weapon, feet with no clipping. Ground contact anchor [128, 240]; leave margins. Warm upper-left light. Additional reference is same-character prior frame for identical scale/costume only; CHANGE limbs and secondary motion as requested, never duplicate a static pose. No floor, cast shadow, background, poster, border, text, labels, collage, sprite sheet, multiple poses, extra character, or checkerboard. Exactly ONE image of this single asset/frame. Battle stage camera: character stands on left, facing RIGHT in a clear side/three-quarter combat view. Same camera, body scale and weapon hand throughout all states. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+    "referenced_image_paths": [
+      "H:\\shining force\\skl-SF\\.worktrees\\TASK-0070-game-factory\\map_factory\\references\\characters\\hero.png.png"
+    ],
+    "transparent_background": true
+  }
+}

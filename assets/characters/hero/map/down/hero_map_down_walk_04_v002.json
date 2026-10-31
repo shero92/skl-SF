@@ -1,0 +1,96 @@
+{
+  "id": "CHAR001_map_down_walk_04",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "walk",
+  "direction": "down",
+  "frame": 4,
+  "output": "assets/characters/hero/map/down/hero_map_down_walk_04_v002.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: precise-object-edit. Edit the ONE supplied transparent hero sprite to produce exactly one new animation frame: CHAR001_map_down_walk_04, down facing, walk frame 04. The edit target already embodies the original poster identity. Preserve exact canvas, camera, face, hair silhouette, head position, torso, costume patterns, ornaments, palette, weapon hand and body proportions. Do not redraw or redesign these protected regions. Change only limbs and secondary cloth motion as necessary: CHANGE THE LEG POSE for the mandatory gait instruction below; make the anatomical stride change clearly visible. Keep full sprite and weapon visible; preserve real transparency. Original handcrafted pixel style and native 96x96 logical grid. No text, floor, shadow, extra limbs, extra figure, sheet or collage. ONE sprite only. FINAL GAIT POSE OVERRIDE: SCREEN-RIGHT foot supports LOWER toward bottom edge; SCREEN-LEFT heel raised behind HIGHER toward top edge. Foot alternation and changing leg silhouette are mandatory; do not return another standing pose or repeat the same forward leg across every frame. Keep face, torso and costume identity unchanged. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "needs_review",
+  "attempts": 2,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T12:46:38.822061+00:00",
+  "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_04_v002__attempt_02.png",
+  "sha256": "d996a78091601464bf601be712b8600ab76d13fdcc912c5f8f69cfcd5b07f12b",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "down",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      193,
+      78,
+      927,
+      1207
+    ],
+    "source_contact_x": 704.875796178344,
+    "scale": 0.07294332723948811,
+    "native_bounds": [
+      11,
+      8,
+      65,
+      90
+    ],
+    "paste_position": [
+      11,
+      8
+    ]
+  },
+  "previous_native_candidates": [
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_04.png",
+      "sha256": "adc22fd1dcda7da686acd4a609ba9391a408b8a92508dddbc426f9bc7da5750c",
+      "reason": "Previous bounding-box center anchor replaced by measured foot contact"
+    },
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_04_aligned_v001.png",
+      "sha256": "0c093baecf01f3e4645f205575068ae6e21404ffeb5c88aade700cf749e8996f",
+      "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_04_aligned_v004.png",
+      "sha256": "04563a03b380f858a61c0e1c4327eeaf7282573f80b3d7bedc20b2d6f2886a51",
+      "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_04__attempt_01.png",
+      "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+    }
+  ],
+  "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+}

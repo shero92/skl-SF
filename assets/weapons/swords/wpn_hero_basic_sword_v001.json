@@ -1,0 +1,46 @@
+{
+  "asset_id": "WPN_HERO_BASIC_SWORD",
+  "category": "swords",
+  "texture_path": "res://assets/weapons/swords/wpn_hero_basic_sword_v001.png",
+  "pixel_dimensions": [
+    128,
+    192
+  ],
+  "grip_pivot": [
+    63.816,
+    158.166
+  ],
+  "blade_axis": "negative_y",
+  "display_scale": 0.9,
+  "compatible_profiles": [
+    "sword"
+  ],
+  "status": "needs_review",
+  "approval_status": "pending",
+  "sha256": "a49bd079bba18671abb8f8ab0fcec3fcb273785bd26f0989e8610e06b66b8a48",
+  "source_png": "assets/weapons/swords/sources/wpn_hero_basic_sword_v001__source.png",
+  "source_sha256": "7c7629263d2a2095cabdf3d93364568a3fc760b65bb3e95b03312758ad77118e",
+  "grip_source": [
+    512.0,
+    1260.0
+  ],
+  "grip_annotation": "manual visual source measurement",
+  "layer": "equipment",
+  "anchor": [
+    63.816,
+    158.166
+  ],
+  "normalization": {
+    "scale": 0.1272595806218366,
+    "source_bbox": [
+      317,
+      80,
+      706,
+      1463
+    ],
+    "paste_position": [
+      39,
+      8
+    ]
+  }
+}

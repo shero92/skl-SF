@@ -1,0 +1,72 @@
+{
+  "id": "CHAR001_battle__step_04",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "battle",
+  "state": "step",
+  "direction": "",
+  "frame": 4,
+  "output": "assets/characters/hero/battle/step/hero_battle_step_04.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: precise-object-edit. Create exactly ONE new combat animation frame by editing the supplied hero battle sprite: CHAR001_battle__step_04, step, frame 4 of 4. Preserve this exact character identity, face, hair, outfit construction, ornaments, colors, weapon, pixel density, canvas, camera and body scale. Same right-facing three-quarter combat camera throughout. Change the anatomy and action pose as required for THIS phase: settle into combat stance after the step. Make the progression visible, not a duplicate static pose. Preserve proper anatomy and stable ground baseline. Do not zoom or reframe the character. Keep full head, limbs and original weapon visible with margins. Native canvas 256x256, crisp detailed handcrafted pixels; no blur or painterly smoothing. ONE character only. True transparent RGBA, no floor, cast shadow, captions, collage or additional poses. No baked slash arc, airborne projectile, magic particles or battle background; effects are separate assets. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+  "target_dimensions": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "transparent_background": true,
+  "status": "needs_review",
+  "attempts": 1,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      256,
+      256
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T13:16:24.429235+00:00",
+  "source_png": "assets/characters/hero/battle/step/sources/hero_battle_step_04__attempt_01.png",
+  "sha256": "7b96da809266a93def05861ad20192f4b6a5f594c668beac31295893f2fe4164",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    256,
+    256
+  ],
+  "footprint": null,
+  "orientation": "right",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      55,
+      106,
+      1247,
+      1174
+    ],
+    "source_contact_x": 802.71974522293,
+    "scale": 0.15812148847418286,
+    "native_bounds": [
+      10,
+      71,
+      198,
+      240
+    ],
+    "paste_position": [
+      10,
+      71
+    ]
+  }
+}
