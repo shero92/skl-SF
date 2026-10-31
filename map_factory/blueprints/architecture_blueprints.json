@@ -1,0 +1,1000 @@
+{
+  "schema": "skl.architecture_blueprints.v1",
+  "notes": [
+    "Offsets are from the blueprint anchor. kind=px: ground-anchor offset in px (anchor = bottom-centre of the opening/stairs). kind=cell: footprint top-left cell offset.",
+    "bias is the render-order nudge added to the ground-contact Y (higher draws in front among equal Y).",
+    "Only ONE complete arch (A05) exists per blueprint. A04/A06 are one-sided halves with their own column and are NOT stacked on A05.",
+    "Reference arch spans ~5 cells and ~4.6 cells high; the approved pieces give ~3.6 x 2 cells. See reports for the scale gap."
+  ],
+  "blueprints": {
+    "central_arch": {
+      "kind": "px",
+      "structural_root": "arch",
+      "components": [
+        {
+          "id": "arch",
+          "asset": "A05",
+          "dx": 0,
+          "dy": 0,
+          "bias": 0,
+          "connection": {
+            "root": true
+          }
+        },
+        {
+          "id": "support_left",
+          "asset": "A03",
+          "dx": -86,
+          "dy": 4,
+          "bias": 2,
+          "connection": {
+            "parent": "arch",
+            "side": "left"
+          }
+        },
+        {
+          "id": "support_right",
+          "asset": "A03",
+          "dx": 86,
+          "dy": 4,
+          "bias": 2,
+          "connection": {
+            "parent": "arch",
+            "side": "right"
+          }
+        },
+        {
+          "id": "support_left_rear",
+          "asset": "A01",
+          "dx": -68,
+          "dy": -8,
+          "bias": -1,
+          "connection": {
+            "parent": "support_left",
+            "side": "behind"
+          },
+          "collision": false
+        },
+        {
+          "id": "support_right_rear",
+          "asset": "A01",
+          "dx": 68,
+          "dy": -8,
+          "bias": -1,
+          "connection": {
+            "parent": "support_right",
+            "side": "behind"
+          },
+          "collision": false
+        },
+        {
+          "id": "outer_left",
+          "asset": "A03",
+          "dx": -142,
+          "dy": 8,
+          "bias": 3,
+          "connection": {
+            "parent": "support_left",
+            "side": "left"
+          }
+        },
+        {
+          "id": "outer_right",
+          "asset": "A03",
+          "dx": 142,
+          "dy": 8,
+          "bias": 3,
+          "connection": {
+            "parent": "support_right",
+            "side": "right"
+          }
+        }
+      ],
+      "decoration_anchors": {
+        "ivy_left": {
+          "component": "arch",
+          "point": "arch_drape_left"
+        },
+        "ivy_right": {
+          "component": "arch",
+          "point": "arch_drape_right"
+        },
+        "flowers_top": {
+          "component": "arch",
+          "point": "top_center"
+        }
+      }
+    },
+    "entrance_stairs": {
+      "kind": "px",
+      "structural_root": "step_1",
+      "components": [
+        {
+          "id": "step_1",
+          "asset": "A10",
+          "dx": 0,
+          "dy": 0,
+          "bias": 0,
+          "connection": {
+            "root": true
+          }
+        },
+        {
+          "id": "step_2",
+          "asset": "A10",
+          "dx": 0,
+          "dy": 24,
+          "bias": 1,
+          "connection": {
+            "parent": "step_1",
+            "side": "front"
+          }
+        },
+        {
+          "id": "step_3",
+          "asset": "A10",
+          "dx": 0,
+          "dy": 48,
+          "bias": 2,
+          "connection": {
+            "parent": "step_2",
+            "side": "front"
+          }
+        },
+        {
+          "id": "step_4",
+          "asset": "A10",
+          "dx": 0,
+          "dy": 72,
+          "bias": 3,
+          "connection": {
+            "parent": "step_3",
+            "side": "front"
+          }
+        },
+        {
+          "id": "support_left",
+          "asset": "A11",
+          "dx": -106,
+          "dy": 6,
+          "bias": 4,
+          "connection": {
+            "parent": "step_1",
+            "side": "left"
+          }
+        },
+        {
+          "id": "support_right",
+          "asset": "A12",
+          "dx": 108,
+          "dy": 6,
+          "bias": 4,
+          "connection": {
+            "parent": "step_1",
+            "side": "right"
+          }
+        }
+      ],
+      "decoration_anchors": {}
+    },
+    "doorway_decorative": {
+      "kind": "px",
+      "structural_root": "door",
+      "components": [
+        {
+          "id": "door",
+          "asset": "A09",
+          "dx": 0,
+          "dy": 0,
+          "bias": 0,
+          "connection": {
+            "root": true
+          }
+        }
+      ],
+      "decoration_anchors": {
+        "lantern_left": {
+          "component": "door",
+          "point": "lantern_hang_left"
+        },
+        "lantern_right": {
+          "component": "door",
+          "point": "lantern_hang_right"
+        },
+        "ivy_right": {
+          "component": "door",
+          "point": "ivy_hang_right"
+        }
+      }
+    },
+    "rear_wall_left": {
+      "kind": "cell",
+      "structural_root": "w0",
+      "components": [
+        {
+          "id": "w0",
+          "asset": "W09",
+          "cell": [
+            0,
+            0
+          ],
+          "connection": {
+            "root": true,
+            "corner": "outer"
+          }
+        },
+        {
+          "id": "w1",
+          "asset": "W05",
+          "cell": [
+            1,
+            0
+          ],
+          "connection": {
+            "parent": "w0",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w2",
+          "asset": "W03",
+          "cell": [
+            2,
+            0
+          ],
+          "connection": {
+            "parent": "w1",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w3",
+          "asset": "W10",
+          "cell": [
+            3,
+            0
+          ],
+          "connection": {
+            "parent": "w2",
+            "side": "right",
+            "note": "low piece = window gap"
+          }
+        },
+        {
+          "id": "w4",
+          "asset": "W02",
+          "cell": [
+            4,
+            0
+          ],
+          "connection": {
+            "parent": "w3",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w5",
+          "asset": "W13",
+          "cell": [
+            5,
+            0
+          ],
+          "connection": {
+            "parent": "w4",
+            "side": "right",
+            "meets": "central_arch"
+          }
+        },
+        {
+          "id": "back0",
+          "asset": "W02",
+          "cell": [
+            0,
+            -1
+          ],
+          "offset": [
+            32,
+            0
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w0",
+            "side": "behind"
+          }
+        },
+        {
+          "id": "back2",
+          "asset": "W01",
+          "cell": [
+            2,
+            -1
+          ],
+          "offset": [
+            32,
+            0
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w2",
+            "side": "behind"
+          }
+        },
+        {
+          "id": "back5",
+          "asset": "W06",
+          "cell": [
+            5,
+            -1
+          ],
+          "offset": [
+            32,
+            0
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w5",
+            "side": "behind"
+          }
+        },
+        {
+          "id": "base_w0",
+          "asset": "W10",
+          "cell": [
+            0,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w0",
+            "side": "between"
+          }
+        },
+        {
+          "id": "base_w1",
+          "asset": "W10",
+          "cell": [
+            1,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w1",
+            "side": "between"
+          }
+        },
+        {
+          "id": "base_w2",
+          "asset": "W10",
+          "cell": [
+            2,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w2",
+            "side": "between"
+          }
+        },
+        {
+          "id": "base_w4",
+          "asset": "W10",
+          "cell": [
+            4,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w4",
+            "side": "between"
+          }
+        },
+        {
+          "id": "base_w5",
+          "asset": "W10",
+          "cell": [
+            5,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w5",
+            "side": "between"
+          }
+        }
+      ]
+    },
+    "rear_wall_right": {
+      "kind": "cell",
+      "structural_root": "w0",
+      "components": [
+        {
+          "id": "w0",
+          "asset": "W14",
+          "cell": [
+            0,
+            0
+          ],
+          "connection": {
+            "root": true,
+            "meets": "central_arch"
+          }
+        },
+        {
+          "id": "w1",
+          "asset": "W04",
+          "cell": [
+            1,
+            0
+          ],
+          "connection": {
+            "parent": "w0",
+            "side": "right"
+          }
+        },
+        {
+          "id": "door",
+          "asset": "A09",
+          "cell": [
+            2,
+            0
+          ],
+          "connection": {
+            "parent": "w1",
+            "side": "right",
+            "blueprint": "doorway_decorative"
+          }
+        },
+        {
+          "id": "w4",
+          "asset": "W03",
+          "cell": [
+            4,
+            0
+          ],
+          "connection": {
+            "parent": "door",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w5",
+          "asset": "W09",
+          "cell": [
+            5,
+            0
+          ],
+          "connection": {
+            "parent": "w4",
+            "side": "right",
+            "corner": "outer"
+          }
+        },
+        {
+          "id": "back1",
+          "asset": "W05",
+          "cell": [
+            1,
+            -1
+          ],
+          "offset": [
+            32,
+            0
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w1",
+            "side": "behind"
+          }
+        },
+        {
+          "id": "back4",
+          "asset": "W04",
+          "cell": [
+            4,
+            -1
+          ],
+          "offset": [
+            32,
+            0
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w4",
+            "side": "behind"
+          }
+        },
+        {
+          "id": "base_w0",
+          "asset": "W10",
+          "cell": [
+            0,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w0",
+            "side": "between"
+          }
+        },
+        {
+          "id": "base_w1",
+          "asset": "W10",
+          "cell": [
+            1,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w1",
+            "side": "between"
+          }
+        },
+        {
+          "id": "base_w4",
+          "asset": "W10",
+          "cell": [
+            4,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w4",
+            "side": "between"
+          }
+        },
+        {
+          "id": "base_w5",
+          "asset": "W10",
+          "cell": [
+            5,
+            0
+          ],
+          "offset": [
+            30,
+            -4
+          ],
+          "bias": -1,
+          "collision": false,
+          "connection": {
+            "parent": "w5",
+            "side": "between"
+          }
+        }
+      ]
+    },
+    "side_wall_left": {
+      "kind": "cell",
+      "structural_root": "w0",
+      "components": [
+        {
+          "id": "w0",
+          "asset": "W01",
+          "cell": [
+            0,
+            0
+          ],
+          "connection": {
+            "root": true
+          }
+        },
+        {
+          "id": "w1",
+          "asset": "W05",
+          "cell": [
+            0,
+            1
+          ],
+          "connection": {
+            "parent": "w0",
+            "side": "front"
+          }
+        },
+        {
+          "id": "w2",
+          "asset": "W02",
+          "cell": [
+            0,
+            2
+          ],
+          "connection": {
+            "parent": "w1",
+            "side": "front"
+          }
+        },
+        {
+          "id": "w3",
+          "asset": "W06",
+          "cell": [
+            0,
+            3
+          ],
+          "connection": {
+            "parent": "w2",
+            "side": "front"
+          }
+        },
+        {
+          "id": "w4",
+          "asset": "W04",
+          "cell": [
+            0,
+            4
+          ],
+          "connection": {
+            "parent": "w3",
+            "side": "front"
+          }
+        },
+        {
+          "id": "w5",
+          "asset": "W03",
+          "cell": [
+            0,
+            5
+          ],
+          "connection": {
+            "parent": "w4",
+            "side": "front"
+          }
+        }
+      ]
+    },
+    "side_wall_right": {
+      "kind": "cell",
+      "structural_root": "w0",
+      "components": [
+        {
+          "id": "w0",
+          "asset": "W02",
+          "cell": [
+            0,
+            0
+          ],
+          "connection": {
+            "root": true
+          }
+        },
+        {
+          "id": "w1",
+          "asset": "W06",
+          "cell": [
+            0,
+            1
+          ],
+          "connection": {
+            "parent": "w0",
+            "side": "front"
+          }
+        },
+        {
+          "id": "w2",
+          "asset": "W01",
+          "cell": [
+            0,
+            2
+          ],
+          "connection": {
+            "parent": "w1",
+            "side": "front"
+          }
+        },
+        {
+          "id": "w3",
+          "asset": "W05",
+          "cell": [
+            0,
+            3
+          ],
+          "connection": {
+            "parent": "w2",
+            "side": "front"
+          }
+        },
+        {
+          "id": "w4",
+          "asset": "W03",
+          "cell": [
+            0,
+            4
+          ],
+          "connection": {
+            "parent": "w3",
+            "side": "front"
+          }
+        },
+        {
+          "id": "w5",
+          "asset": "W04",
+          "cell": [
+            0,
+            5
+          ],
+          "connection": {
+            "parent": "w4",
+            "side": "front"
+          }
+        }
+      ]
+    },
+    "front_wall_left": {
+      "kind": "cell",
+      "structural_root": "w0",
+      "components": [
+        {
+          "id": "w0",
+          "asset": "W09",
+          "cell": [
+            0,
+            0
+          ],
+          "connection": {
+            "root": true,
+            "corner": "outer"
+          }
+        },
+        {
+          "id": "w1",
+          "asset": "W10",
+          "cell": [
+            1,
+            0
+          ],
+          "connection": {
+            "parent": "w0",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w2",
+          "asset": "W03",
+          "cell": [
+            2,
+            0
+          ],
+          "connection": {
+            "parent": "w1",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w3",
+          "asset": "W10",
+          "cell": [
+            3,
+            0
+          ],
+          "connection": {
+            "parent": "w2",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w4",
+          "asset": "W10",
+          "cell": [
+            4,
+            0
+          ],
+          "connection": {
+            "parent": "w3",
+            "side": "right"
+          }
+        },
+        {
+          "id": "fill_w1",
+          "asset": "W10",
+          "cell": [
+            1,
+            0
+          ],
+          "offset": [
+            32,
+            -6
+          ],
+          "collision": false,
+          "connection": {
+            "parent": "w1",
+            "side": "between"
+          }
+        },
+        {
+          "id": "fill_w3",
+          "asset": "W10",
+          "cell": [
+            3,
+            0
+          ],
+          "offset": [
+            32,
+            -6
+          ],
+          "collision": false,
+          "connection": {
+            "parent": "w3",
+            "side": "between"
+          }
+        },
+        {
+          "id": "fill_w4",
+          "asset": "W10",
+          "cell": [
+            4,
+            0
+          ],
+          "offset": [
+            32,
+            -6
+          ],
+          "collision": false,
+          "connection": {
+            "parent": "w4",
+            "side": "between"
+          }
+        }
+      ]
+    },
+    "front_wall_right": {
+      "kind": "cell",
+      "structural_root": "w0",
+      "components": [
+        {
+          "id": "w1",
+          "asset": "W10",
+          "cell": [
+            1,
+            0
+          ],
+          "connection": {
+            "parent": "w0",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w2",
+          "asset": "W10",
+          "cell": [
+            2,
+            0
+          ],
+          "connection": {
+            "parent": "w1",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w3",
+          "asset": "W03",
+          "cell": [
+            3,
+            0
+          ],
+          "connection": {
+            "parent": "w2",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w4",
+          "asset": "W10",
+          "cell": [
+            4,
+            0
+          ],
+          "connection": {
+            "parent": "w3",
+            "side": "right"
+          }
+        },
+        {
+          "id": "w5",
+          "asset": "W09",
+          "cell": [
+            5,
+            0
+          ],
+          "connection": {
+            "parent": "w4",
+            "side": "right",
+            "corner": "outer"
+          }
+        },
+        {
+          "id": "fill_w1",
+          "asset": "W10",
+          "cell": [
+            1,
+            0
+          ],
+          "offset": [
+            32,
+            -6
+          ],
+          "collision": false,
+          "connection": {
+            "parent": "w1",
+            "side": "between"
+          }
+        },
+        {
+          "id": "fill_w2",
+          "asset": "W10",
+          "cell": [
+            2,
+            0
+          ],
+          "offset": [
+            32,
+            -6
+          ],
+          "collision": false,
+          "connection": {
+            "parent": "w2",
+            "side": "between"
+          }
+        },
+        {
+          "id": "fill_w4",
+          "asset": "W10",
+          "cell": [
+            4,
+            0
+          ],
+          "offset": [
+            32,
+            -6
+          ],
+          "collision": false,
+          "connection": {
+            "parent": "w4",
+            "side": "between"
+          }
+        }
+      ]
+    }
+  }
+}

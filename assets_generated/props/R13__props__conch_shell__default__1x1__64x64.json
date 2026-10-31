@@ -1,0 +1,89 @@
+{
+  "asset_id": "R13",
+  "asset_name": "conch_shell",
+  "title": "Conch Shell",
+  "category": "props",
+  "layer_type": "prop_overlay",
+  "identity": "R13",
+  "native_width": 64,
+  "native_height": 64,
+  "footprint_tiles_x": 1,
+  "footprint_tiles_y": 1,
+  "orientation": "default",
+  "anchor_x": 0,
+  "anchor_y": 64,
+  "transparent_background": true,
+  "details": "Conch Shell. Match the corresponding element in the original room reference; isolate only this named part.",
+  "specification_status": "inferred_dimensions_review_required",
+  "prompt_used": "Produce exactly ONE standalone PNG of ONE environment asset.\nAsset R13: Conch Shell; category props; identity R13.\nSpecific shape/material instructions: Conch Shell. Match the corresponding element in the original room reference; isolate only this named part..\nNative game canvas 64x64 pixels. Ground footprint\n1x1 square tiles, 64x64 pixels per tile.\nAnchor (pixel coordinates from top-left): 0, 64.\nFacing: default. Square-grid player-facing top-down / three-quarter RPG\ncamera; match the original room reference. Never diamond 2:1 isometric.\nReference priority: original room for camera/materials; approved floor for scale,\npalette and pixel density; approved same-identity view for proportions only.\nIndependently redraw the facing; do not rotate or mirror another sprite.\nWarm upper-left sunlight, subtle lower-right shading. Golden sandstone, pale worn\nstone, warm polished wood, blue and gold textiles, lush readable foliage as relevant.\nPremium handcrafted crisp pixel art, controlled detail and palette, hard pixel edges.\nFill the specified canvas without clipping; keep ground contact at the anchor.\nLayer: prop_overlay. Transparency required: True.\nSingle isolated object; no detached cast shadow outside its sprite.\nNo collage, contact sheet, atlas, text, labels, checkerboard, watermark, UI, characters,\nunrelated objects, multiple assets, background scene, blur, smoothing, anti-aliasing,\nsoft painting, photorealism or 3D render appearance. Return one image only.\n\nSTRICT MODULAR SUBJECT BOUNDARY (overrides filling the canvas):  ONLY the named small prop (a named bundle/stack is one cohesive asset). No table, shelf, wall, floor, plants, lanterns or contextual scene objects. Genuine transparency. Never add another asset to fill empty space. Transparent padding is preferable to unrelated parts.",
+  "reference_assets_used": [
+    {
+      "role": "original_room",
+      "path": "map_factory/references/hero_room_01_original.png",
+      "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G01",
+      "path": "map_factory/references/approved/G01_clean_sandstone_64.png",
+      "sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G02",
+      "path": "map_factory/references/approved/G02_lightly_weathered_sandstone_64.png",
+      "sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G03",
+      "path": "map_factory/references/approved/G03_fine_cracked_sandstone_64.png",
+      "sha256": "98cfbec750f847aba7b1794dec9df88663dbfcf6242422c8f9ec21060eecd288",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    }
+  ],
+  "tool": "image_gen",
+  "execution_id": "exec-aac9d3f0-816f-44a6-8c84-11a4946b3f48",
+  "approval_status": "approved",
+  "generation_status": "validated_pending_review",
+  "created_at": "2026-10-30T21:10:26.569907+00:00",
+  "cost_usd": null,
+  "notes": "",
+  "normalization": {
+    "source_size": [
+      1254,
+      1254
+    ],
+    "target_size": [
+      64,
+      64
+    ],
+    "filter": "NEAREST_CONTAIN"
+  },
+  "validation": {
+    "passed": true,
+    "errors": [],
+    "metrics": {
+      "unique_colors": 1092,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "native_size": [
+        64,
+        64
+      ],
+      "pixel_style_review_required": true
+    },
+    "visual_checks": "pending_owner: silhouette, labels, single-object, perspective, palette, seams"
+  },
+  "filename": "props/R13__props__conch_shell__default__1x1__64x64.png",
+  "sha256": "afbd6bd838b4669dd23cc1efe83f46b9fd134c1c6688c277a0067396d400dfa4",
+  "source_metadata_path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\metadata\\R13__default.json",
+  "source_native_path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\props\\R13__default\\cee5c9059bd3460bbf625992912c5221\\R13__props__conch_shell__default__1x1__64x64.png",
+  "approval": {
+    "approved_by": "owner",
+    "approved_on": "2026-10-31",
+    "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms"
+  }
+}

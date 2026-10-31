@@ -1,0 +1,208 @@
+{
+  "schema": "skl.furniture_composites.v1",
+  "notes": [
+    "Origin = footprint top-left cell of the main piece. cell offsets are in 64px cells; centre_cell places a flat overlay by its centre.",
+    "Props attach to a named attachment point of the host (registry attachment_points) so they rest on the real surface; they are children of the host and draw after it.",
+    "Facing is the screen-facing: 'south' = front toward the player, as verified on the PNGs."
+  ],
+  "composites": {
+    "bed_area": {
+      "parts": [
+        {
+          "id": "rug",
+          "asset": "D01",
+          "centre_cell": [
+            1.5,
+            2.2
+          ],
+          "logical_level": 1
+        },
+        {
+          "id": "bed",
+          "asset": "F01",
+          "facing": "south",
+          "cell": [
+            0,
+            0
+          ],
+          "logical_level": 2
+        },
+        {
+          "id": "bedside_head",
+          "asset": "F05",
+          "facing": "east",
+          "cell": [
+            -1,
+            1
+          ],
+          "logical_level": 2
+        },
+        {
+          "id": "bedside_foot",
+          "asset": "F05",
+          "facing": "east",
+          "cell": [
+            -1,
+            3
+          ],
+          "logical_level": 2
+        }
+      ],
+      "props": [
+        {
+          "id": "candles",
+          "asset": "L03",
+          "parent": "bedside_head",
+          "point": "surface_center"
+        },
+        {
+          "id": "conch",
+          "asset": "R13",
+          "parent": "bedside_foot",
+          "point": "surface_center"
+        }
+      ]
+    },
+    "table_area": {
+      "parts": [
+        {
+          "id": "rug",
+          "asset": "D02",
+          "centre_cell": [
+            2.0,
+            1.7
+          ],
+          "logical_level": 1
+        },
+        {
+          "id": "table",
+          "asset": "F08",
+          "facing": "south",
+          "cell": [
+            0,
+            0
+          ],
+          "logical_level": 2
+        },
+        {
+          "id": "bench_left",
+          "asset": "F10",
+          "facing": "west",
+          "cell": [
+            -1,
+            0
+          ],
+          "logical_level": 2
+        },
+        {
+          "id": "bench_right",
+          "asset": "F10",
+          "facing": "east",
+          "cell": [
+            4,
+            0
+          ],
+          "logical_level": 2
+        },
+        {
+          "id": "stool",
+          "asset": "F09",
+          "facing": "south",
+          "cell": [
+            1,
+            2
+          ],
+          "logical_level": 2
+        }
+      ],
+      "props": [
+        {
+          "id": "jug",
+          "asset": "R11",
+          "parent": "table",
+          "point": "surface_left"
+        },
+        {
+          "id": "map",
+          "asset": "R09",
+          "parent": "table",
+          "point": "surface_mid_left"
+        },
+        {
+          "id": "fruit",
+          "asset": "R10",
+          "parent": "table",
+          "point": "surface_mid_right"
+        },
+        {
+          "id": "lantern",
+          "asset": "L04",
+          "parent": "table",
+          "point": "surface_right"
+        }
+      ]
+    },
+    "bookcase_left_area": {
+      "parts": [
+        {
+          "id": "bookcase",
+          "asset": "F06",
+          "facing": "south",
+          "cell": [
+            0,
+            0
+          ],
+          "logical_level": 2
+        }
+      ],
+      "props": [
+        {
+          "id": "plant",
+          "asset": "P11",
+          "parent": "bookcase",
+          "point": "shelf_top_left"
+        },
+        {
+          "id": "books",
+          "asset": "R07",
+          "parent": "bookcase",
+          "point": "shelf_top_right"
+        }
+      ]
+    },
+    "bookcase_right_area": {
+      "parts": [
+        {
+          "id": "bookcase",
+          "asset": "F07",
+          "facing": "south",
+          "cell": [
+            0,
+            0
+          ],
+          "logical_level": 2
+        }
+      ],
+      "props": [
+        {
+          "id": "pot",
+          "asset": "R03",
+          "parent": "bookcase",
+          "point": "shelf_top_left"
+        },
+        {
+          "id": "candles",
+          "asset": "L03",
+          "parent": "bookcase",
+          "point": "shelf_top_center"
+        },
+        {
+          "id": "armillary",
+          "asset": "R12",
+          "parent": "bookcase",
+          "point": "shelf_top_right"
+        }
+      ]
+    }
+  }
+}

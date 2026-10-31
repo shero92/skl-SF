@@ -1,0 +1,89 @@
+{
+  "asset_id": "W13",
+  "asset_name": "arch_adjacent_wall_block_left",
+  "title": "Arch-Adjacent Wall Block Left",
+  "category": "wall",
+  "layer_type": "wall_base",
+  "identity": "W13",
+  "native_width": 64,
+  "native_height": 128,
+  "footprint_tiles_x": 1,
+  "footprint_tiles_y": 1,
+  "orientation": "default",
+  "anchor_x": 0,
+  "anchor_y": 128,
+  "transparent_background": true,
+  "details": "Arch-Adjacent Wall Block Left. Match the corresponding element in the original room reference; isolate only this named part.",
+  "specification_status": "inferred_dimensions_review_required",
+  "prompt_used": "Produce exactly ONE standalone PNG of ONE environment asset.\nAsset W13: Arch-Adjacent Wall Block Left; category wall; identity W13.\nSpecific shape/material instructions: Arch-Adjacent Wall Block Left. Match the corresponding element in the original room reference; isolate only this named part..\nNative game canvas 64x128 pixels. Ground footprint\n1x1 square tiles, 64x64 pixels per tile.\nAnchor (pixel coordinates from top-left): 0, 128.\nFacing: default. Square-grid player-facing top-down / three-quarter RPG\ncamera; match the original room reference. Never diamond 2:1 isometric.\nReference priority: original room for camera/materials; approved floor for scale,\npalette and pixel density; approved same-identity view for proportions only.\nIndependently redraw the facing; do not rotate or mirror another sprite.\nWarm upper-left sunlight, subtle lower-right shading. Golden sandstone, pale worn\nstone, warm polished wood, blue and gold textiles, lush readable foliage as relevant.\nPremium handcrafted crisp pixel art, controlled detail and palette, hard pixel edges.\nFill the specified canvas without clipping; keep ground contact at the anchor.\nLayer: wall_base. Transparency required: True.\nSingle isolated object; no detached cast shadow outside its sprite.\nNo collage, contact sheet, atlas, text, labels, checkerboard, watermark, UI, characters,\nunrelated objects, multiple assets, background scene, blur, smoothing, anti-aliasing,\nsoft painting, photorealism or 3D render appearance. Return one image only.\n",
+  "reference_assets_used": [
+    {
+      "role": "original_room",
+      "path": "map_factory/references/hero_room_01_original.png",
+      "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G01",
+      "path": "map_factory/references/approved/G01_clean_sandstone_64.png",
+      "sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G02",
+      "path": "map_factory/references/approved/G02_lightly_weathered_sandstone_64.png",
+      "sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G03",
+      "path": "map_factory/references/approved/G03_fine_cracked_sandstone_64.png",
+      "sha256": "98cfbec750f847aba7b1794dec9df88663dbfcf6242422c8f9ec21060eecd288",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    }
+  ],
+  "tool": "image_gen",
+  "execution_id": "exec-b6f833a7-7ae2-4b94-aa88-1431dca4d587",
+  "approval_status": "approved",
+  "generation_status": "validated_pending_review",
+  "created_at": "2026-10-30T19:51:46.641786+00:00",
+  "cost_usd": null,
+  "notes": "",
+  "normalization": {
+    "source_size": [
+      887,
+      1774
+    ],
+    "target_size": [
+      64,
+      128
+    ],
+    "filter": "NEAREST_CONTAIN"
+  },
+  "validation": {
+    "passed": true,
+    "errors": [],
+    "metrics": {
+      "unique_colors": 5077,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "native_size": [
+        64,
+        128
+      ],
+      "pixel_style_review_required": true
+    },
+    "visual_checks": "pending_owner: silhouette, labels, single-object, perspective, palette, seams"
+  },
+  "filename": "wall/W13__wall__arch_adjacent_wall_block_left__default__1x1__64x128.png",
+  "sha256": "4f4e877810b8aad048ec2752295bf5b89b9419dd016176f140a868cc11841bff",
+  "source_metadata_path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\metadata\\W13__default.json",
+  "source_native_path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\wall\\W13__default\\01e6353c50ee4bb1ac4afa2624516c16\\W13__wall__arch_adjacent_wall_block_left__default__1x1__64x128.png",
+  "approval": {
+    "approved_by": "owner",
+    "approved_on": "2026-10-31",
+    "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms"
+  }
+}

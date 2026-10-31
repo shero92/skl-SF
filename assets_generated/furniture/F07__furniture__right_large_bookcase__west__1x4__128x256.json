@@ -1,0 +1,89 @@
+{
+  "asset_id": "F07",
+  "asset_name": "right_large_bookcase",
+  "title": "Right Large Bookcase",
+  "category": "furniture",
+  "layer_type": "furniture",
+  "identity": "F07",
+  "native_width": 128,
+  "native_height": 256,
+  "footprint_tiles_x": 1,
+  "footprint_tiles_y": 4,
+  "orientation": "west",
+  "anchor_x": 0,
+  "anchor_y": 256,
+  "transparent_background": true,
+  "details": "Right Large Bookcase. Match the corresponding element in the original room reference; isolate only this named part.",
+  "specification_status": "inferred_dimensions_review_required",
+  "prompt_used": "Produce exactly ONE standalone PNG of ONE environment asset.\nAsset F07: Right Large Bookcase; category furniture; identity F07.\nSpecific shape/material instructions: Right Large Bookcase. Match the corresponding element in the original room reference; isolate only this named part..\nNative game canvas 128x256 pixels. Ground footprint\n1x4 square tiles, 64x64 pixels per tile.\nAnchor (pixel coordinates from top-left): 0, 256.\nFacing: west. Square-grid player-facing top-down / three-quarter RPG\ncamera; match the original room reference. Never diamond 2:1 isometric.\nReference priority: original room for camera/materials; approved floor for scale,\npalette and pixel density; approved same-identity view for proportions only.\nIndependently redraw the facing; do not rotate or mirror another sprite.\nWarm upper-left sunlight, subtle lower-right shading. Golden sandstone, pale worn\nstone, warm polished wood, blue and gold textiles, lush readable foliage as relevant.\nPremium handcrafted crisp pixel art, controlled detail and palette, hard pixel edges.\nFill the specified canvas without clipping; keep ground contact at the anchor.\nLayer: furniture. Transparency required: True.\nSingle isolated object; no detached cast shadow outside its sprite.\nNo collage, contact sheet, atlas, text, labels, checkerboard, watermark, UI, characters,\nunrelated objects, multiple assets, background scene, blur, smoothing, anti-aliasing,\nsoft painting, photorealism or 3D render appearance. Return one image only.\n\nSTRICT MODULAR SUBJECT BOUNDARY (takes priority over filling the canvas):  ONLY the named furniture item. No floor, rug, wall, plants, lanterns or unrelated loose objects. Books within a bookcase and bedding on the bed are integral parts only. Keep the ground axes horizontal/vertical; no diamond-isometric camera. The functional FRONT faces LEFT. For a bed: footboard at left, headboard at right. This is a fresh independent drawing, not a rotated or mirrored bitmap. Final input image is an existing same-identity candidate, used ONLY to preserve materials and proportions; independently redraw the requested facing. Never add another asset to fill empty space. Transparent empty padding is preferable to adding unrelated parts.",
+  "reference_assets_used": [
+    {
+      "role": "original_room",
+      "path": "map_factory/references/hero_room_01_original.png",
+      "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G01",
+      "path": "map_factory/references/approved/G01_clean_sandstone_64.png",
+      "sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G02",
+      "path": "map_factory/references/approved/G02_lightly_weathered_sandstone_64.png",
+      "sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G03",
+      "path": "map_factory/references/approved/G03_fine_cracked_sandstone_64.png",
+      "sha256": "98cfbec750f847aba7b1794dec9df88663dbfcf6242422c8f9ec21060eecd288",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    }
+  ],
+  "tool": "image_gen",
+  "execution_id": "exec-fe68d41a-3ed5-4ee0-a244-138bfe4449ac",
+  "approval_status": "approved",
+  "generation_status": "validated_pending_review",
+  "created_at": "2026-10-30T20:17:00.646018+00:00",
+  "cost_usd": null,
+  "notes": "",
+  "normalization": {
+    "source_size": [
+      1774,
+      887
+    ],
+    "target_size": [
+      128,
+      256
+    ],
+    "filter": "NEAREST_CONTAIN"
+  },
+  "validation": {
+    "passed": true,
+    "errors": [],
+    "metrics": {
+      "unique_colors": 3654,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "native_size": [
+        128,
+        256
+      ],
+      "pixel_style_review_required": true
+    },
+    "visual_checks": "pending_owner: silhouette, labels, single-object, perspective, palette, seams"
+  },
+  "filename": "furniture/F07__furniture__right_large_bookcase__west__1x4__128x256.png",
+  "sha256": "882cf76f7593e6fbc2d54faf26677d62d24d1a7ca716be8dc0a8fba40eb548d1",
+  "source_metadata_path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\metadata\\F07__west.json",
+  "source_native_path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\furniture\\F07__west\\cf0be6b28649467fa4064e896fb45bfb\\F07__furniture__right_large_bookcase__west__1x4__128x256.png",
+  "approval": {
+    "approved_by": "owner",
+    "approved_on": "2026-10-31",
+    "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms"
+  }
+}

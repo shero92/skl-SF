@@ -1,0 +1,3468 @@
+{
+ "schema": "skl.environment_assets.v1",
+ "tile_size": 64,
+ "count": 128,
+ "approval": {
+  "approved_by": "owner",
+  "approved_on": "2026-10-31",
+  "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms"
+ },
+ "assets": {
+  "A01": {
+   "asset_id": "A01",
+   "name": "main_stone_column",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A01__architecture__main_stone_column__default__1x1__64x128.png",
+   "sha256": "39beb53e6123f37ebf8de8946b9657efecb408217530dcea80eaf1f2c2b70317",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "A02": {
+   "asset_id": "A02",
+   "name": "column_top_capital",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A02__architecture__column_top_capital__default__1x1__64x128.png",
+   "sha256": "e5db5ba623c3b482070d0e56fc0b453be846f8a470ef4b8235974170a46b75f7",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "A03": {
+   "asset_id": "A03",
+   "name": "column_base",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A03__architecture__column_base__default__1x1__64x128.png",
+   "sha256": "9a1921685937826ede52bbb37c4fade5a590207b67af41572e794e5efa637afb",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "A04": {
+   "asset_id": "A04",
+   "name": "arch_segment_left",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A04__architecture__arch_segment_left__default__1x1__128x128.png",
+   "sha256": "2dba4576e3d4acc51b869e4b67469f3c9b1ac4fa11a5f3bdb2dc77065e222e2a",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "A05": {
+   "asset_id": "A05",
+   "name": "arch_segment_center",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A05__architecture__arch_segment_center__default__1x1__128x128.png",
+   "sha256": "647106515f7de8d94a5402b0c4d459c323c6ed046ca99d5e7feb02afd4d3cc56",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "A06": {
+   "asset_id": "A06",
+   "name": "arch_segment_right",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A06__architecture__arch_segment_right__default__1x1__128x128.png",
+   "sha256": "6639c1307ea694c90a85582796a6284292bb28f59ebd3b677d1e4150dba32ae8",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "A07": {
+   "asset_id": "A07",
+   "name": "complete_doorway_arch_keystone_piece",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A07__architecture__complete_doorway_arch_keystone_piece__default__1x1__128x128.png",
+   "sha256": "19c7caf7e55191bd20c1b9f995f0d8754f3b2e14d9b48999bfe314dbb4b01b2b",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "A08": {
+   "asset_id": "A08",
+   "name": "rear_door_frame",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A08__architecture__rear_door_frame__default__1x1__128x128.png",
+   "sha256": "1839bd9ed366d6430b99ada5919607b6c4374de7d69f5c146b155eeebf5fc18a",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "A09": {
+   "asset_id": "A09",
+   "name": "decorative_ruined_stone_door",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png",
+   "sha256": "5c330931ff03960ef3f719f5e0711b77cebadf4f69f3973f2bc1146e6b0ecae4",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "A10": {
+   "asset_id": "A10",
+   "name": "front_stair_step_tile",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
+   "sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "A11": {
+   "asset_id": "A11",
+   "name": "stair_side_support_left",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.png",
+   "sha256": "b0af7f8cadd617782426306f7b27cb5bcc032861fd0e43906f3d83f7f46b91c0",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "A12": {
+   "asset_id": "A12",
+   "name": "stair_side_support_right",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.png",
+   "sha256": "aef40f45c3eecf1bc21ebe18880bfe68e03da271dc12e67dcfd8ac08b7ee9d21",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "A13": {
+   "asset_id": "A13",
+   "name": "entrance_pillar_post",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png",
+   "sha256": "70c78ebf57e5f87c4c7d1ebfb82c44b56f935f3c04f4a9281c6908d1b41d6637",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "B01": {
+   "asset_id": "B01",
+   "name": "ocean_water_tile_segment",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B01__background__ocean_water_tile_segment__default__4x4__256x256.png",
+   "sha256": "8757471acf192c0ae02451b0e4dbaa0e8c8daae7eb67515c9b95fa112643881e",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B02": {
+   "asset_id": "B02",
+   "name": "foam_edge_overlay",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B02__background__foam_edge_overlay__default__4x4__256x256.png",
+   "sha256": "58ed77e82641e02607f63b9de0bf447cfe76dd00a607fbf45b0312795e5bcbda",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B03": {
+   "asset_id": "B03",
+   "name": "near_cliff_rock_segment",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B03__background__near_cliff_rock_segment__default__4x4__256x256.png",
+   "sha256": "83886ced006aaa1c7c6c97ab055afaf54b165b5992ceae331d7abeb54e594aa3",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B04": {
+   "asset_id": "B04",
+   "name": "far_cliff_rock_segment",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B04__background__far_cliff_rock_segment__default__4x4__256x256.png",
+   "sha256": "35962079d58aad6b7b43be7770a94b6d239a86bf26fa6765165bd3701ec15aee",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B05": {
+   "asset_id": "B05",
+   "name": "sea_stack_island_small",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B05__background__sea_stack_island_small__default__4x4__256x256.png",
+   "sha256": "ba454688534d5ace252ac208ab71fdbd8a5f1018ac95f261dc2f10325bc7cb54",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B06": {
+   "asset_id": "B06",
+   "name": "sea_stack_island_medium",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B06__background__sea_stack_island_medium__default__4x4__256x256.png",
+   "sha256": "dcefd91b3fc343d234e4a99bba44adf59f7c34048d880d481a0a18dcadda8a53",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B07": {
+   "asset_id": "B07",
+   "name": "horizon_ocean_strip",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B07__background__horizon_ocean_strip__default__4x4__256x256.png",
+   "sha256": "5c642170bc95313a70cc9d92c867a6e03cf8008dc433ee126cc75f91c69eb08f",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B08": {
+   "asset_id": "B08",
+   "name": "bright_cloud_small",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B08__background__bright_cloud_small__default__4x4__256x256.png",
+   "sha256": "ab4cfa6e36fb304774c162906f2439289608b2cb5ada9e668a30a47f66dad71d",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B09": {
+   "asset_id": "B09",
+   "name": "bright_cloud_medium",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B09__background__bright_cloud_medium__default__4x4__256x256.png",
+   "sha256": "e37d1b68dafb4df8d0a315f41ec670cf8d2b2ed97de8e38c1432b8090b778a03",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B10": {
+   "asset_id": "B10",
+   "name": "clear_sky_gradient_segment",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B10__background__clear_sky_gradient_segment__default__4x4__256x256.png",
+   "sha256": "108ee1f0ff346a98142d79eea36dd185bcbdfd63ce6a55a801c632d52c649fad",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "B11": {
+   "asset_id": "B11",
+   "name": "distant_rock_arch_formation",
+   "facing": "default",
+   "level": "background",
+   "texture": "res://assets_generated/background/B11__background__distant_rock_arch_formation__default__4x4__256x256.png",
+   "sha256": "168ff1910c9f1d73f1185423731237d8a3211d0ff414da47d908bb1e783bf9c4",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "D01": {
+   "asset_id": "D01",
+   "name": "bed_rug",
+   "facing": "default",
+   "level": "ground_overlay",
+   "texture": "res://assets_generated/decor/D01__decor__bed_rug__default__3x4__192x256.png",
+   "sha256": "25ae4f28afa7d69942a1a9756dd646f1ea5e1aea8be29362ecd1a1d7beaac500",
+   "sprite_size": [
+    192,
+    256
+   ],
+   "footprint_cells": [
+    3,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    96,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "D02": {
+   "asset_id": "D02",
+   "name": "table_rug",
+   "facing": "default",
+   "level": "ground_overlay",
+   "texture": "res://assets_generated/decor/D02__decor__table_rug__default__4x4__256x256.png",
+   "sha256": "4931a99f30ca5982dc38ec95c950cea36b2717a02d78c1f248edd08006b77cb6",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "D03": {
+   "asset_id": "D03",
+   "name": "central_compass_floor_emblem_overlay",
+   "facing": "default",
+   "level": "ground_overlay",
+   "texture": "res://assets_generated/decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.png",
+   "sha256": "d617cd660b9aca8e3a097780e0fa393f4ca07ad1bc0e2152bdc1d50db65ba00a",
+   "sprite_size": [
+    256,
+    256
+   ],
+   "footprint_cells": [
+    4,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    256
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "D04": {
+   "asset_id": "D04",
+   "name": "long_blue_wall_banner",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.png",
+   "sha256": "bb374378e3db8181cefb85ef40a4da65d8a661a6d975ffcdd144959266d4c310",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "D05": {
+   "asset_id": "D05",
+   "name": "short_blue_wall_banner",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.png",
+   "sha256": "174b8d5e6a89e9c611bde55c34f5f334a6c05c9fa09cb62f3bf3c19dbef9f080",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "D06": {
+   "asset_id": "D06",
+   "name": "banner_pole_hanging_support",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/decor/D06__decor__banner_pole_hanging_support__default__1x1__64x64.png",
+   "sha256": "cf2c9ec270ab0d7018d6273599340bb33b24e46820e0c286ee780d493b3a18ec",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "D07": {
+   "asset_id": "D07",
+   "name": "small_decorative_cloth_fold",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/decor/D07__decor__small_decorative_cloth_fold__default__1x1__64x64.png",
+   "sha256": "2634d0c3277989cdf52c16dfd7f13394b807b1d6abb8d6d01a67ddf757bcbc6d",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "D08": {
+   "asset_id": "D08",
+   "name": "ornamental_gold_trim_overlay",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/decor/D08__decor__ornamental_gold_trim_overlay__default__1x1__64x64.png",
+   "sha256": "dca8d40f5e9923d1d0d2313263a2a04e5bbe0fdfb717f7fbf6287cb52a79f419",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "F01@south": {
+   "asset_id": "F01",
+   "name": "royal_wooden_bed",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F01__furniture__royal_wooden_bed__south__3x4__192x256.png",
+   "sha256": "0761f56d7729dd253a05273942865b93c8736d1808b1ca29527f4e0284b3dc4d",
+   "sprite_size": [
+    192,
+    256
+   ],
+   "footprint_cells": [
+    3,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    96,
+    256
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F02@west": {
+   "asset_id": "F02",
+   "name": "royal_wooden_bed",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F02__furniture__royal_wooden_bed__west__4x3__256x192.png",
+   "sha256": "f54d10a3140f9c0a4bd11009c51822831d7fd9f1a9664f96b1e3bd7b3b5763c9",
+   "sprite_size": [
+    256,
+    192
+   ],
+   "footprint_cells": [
+    4,
+    3
+   ],
+   "anchor": [
+    0,
+    192
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    192
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F03@north": {
+   "asset_id": "F03",
+   "name": "royal_wooden_bed",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F03__furniture__royal_wooden_bed__north__3x4__192x256.png",
+   "sha256": "358fefd14e7f2f2ffa9b50393bf36238ce5a52e771a0eb4a6c9d44d54f449d33",
+   "sprite_size": [
+    192,
+    256
+   ],
+   "footprint_cells": [
+    3,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    96,
+    256
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F04@east": {
+   "asset_id": "F04",
+   "name": "royal_wooden_bed",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F04__furniture__royal_wooden_bed__east__4x3__256x192.png",
+   "sha256": "1e0eeb325eafd852067bf65d461addf87020733ba0050eba2d1a8ccf7bde443a",
+   "sprite_size": [
+    256,
+    192
+   ],
+   "footprint_cells": [
+    4,
+    3
+   ],
+   "anchor": [
+    0,
+    192
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    192
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F05@east": {
+   "asset_id": "F05",
+   "name": "bedside_table",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F05__furniture__bedside_table__east__2x2__128x128.png",
+   "sha256": "5bb7e489003a14bf41bac2b46798ec8ecbef289e21f6b9874445d11671d1c7ce",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    2,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F05@north": {
+   "asset_id": "F05",
+   "name": "bedside_table",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F05__furniture__bedside_table__north__2x2__128x128.png",
+   "sha256": "7c4235dcd595faa310308357cfed0210317b8d34088e8fbd705e2c1983f1c0d9",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    2,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F05@south": {
+   "asset_id": "F05",
+   "name": "bedside_table",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F05__furniture__bedside_table__south__2x2__128x128.png",
+   "sha256": "e8619aa5c6fb51b3236876597f783ffb0f36d46ebe9e292c1c6dbdb3c1168e88",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    2,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F05@west": {
+   "asset_id": "F05",
+   "name": "bedside_table",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F05__furniture__bedside_table__west__2x2__128x128.png",
+   "sha256": "075b418d79400ae936221b87b9e42c8308944c87b0b9b210350a9798137aba8c",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    2,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F06@east": {
+   "asset_id": "F06",
+   "name": "left_large_bookcase",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F06__furniture__left_large_bookcase__east__1x4__128x256.png",
+   "sha256": "028b2221f6addf9ce752451044fdf22f6318691be49503e3d6caf9ae076c8d57",
+   "sprite_size": [
+    128,
+    256
+   ],
+   "footprint_cells": [
+    1,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    256
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F06@north": {
+   "asset_id": "F06",
+   "name": "left_large_bookcase",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F06__furniture__left_large_bookcase__north__4x1__256x128.png",
+   "sha256": "23de9d8bbb88dd45e3afabc3cd5ed9e993f4c79990e474d69f6893deb35c4e36",
+   "sprite_size": [
+    256,
+    128
+   ],
+   "footprint_cells": [
+    4,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F06@south": {
+   "asset_id": "F06",
+   "name": "left_large_bookcase",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F06__furniture__left_large_bookcase__south__4x1__256x128.png",
+   "sha256": "270e7b542d8d825a34b480d710c88acb9f0330fd758f51c832636a99bee72f29",
+   "sprite_size": [
+    256,
+    128
+   ],
+   "footprint_cells": [
+    4,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F06@west": {
+   "asset_id": "F06",
+   "name": "left_large_bookcase",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F06__furniture__left_large_bookcase__west__1x4__128x256.png",
+   "sha256": "d67aa0f288da5fd73ca7e2be5308fb0c6feccfb83fa832d91886b95166063603",
+   "sprite_size": [
+    128,
+    256
+   ],
+   "footprint_cells": [
+    1,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    256
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F07@east": {
+   "asset_id": "F07",
+   "name": "right_large_bookcase",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__east__1x4__128x256.png",
+   "sha256": "95a30e4deb366ee07b84ec0594028dabf962e5f9e6e56b11989a2a8aa9203f1a",
+   "sprite_size": [
+    128,
+    256
+   ],
+   "footprint_cells": [
+    1,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    256
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F07@north": {
+   "asset_id": "F07",
+   "name": "right_large_bookcase",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.png",
+   "sha256": "258ad610d4ff2dfbc478f28b01649cdce8369d76c23b61ea949a9a5361222b1b",
+   "sprite_size": [
+    256,
+    128
+   ],
+   "footprint_cells": [
+    4,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F07@south": {
+   "asset_id": "F07",
+   "name": "right_large_bookcase",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__south__4x1__256x128.png",
+   "sha256": "7f6bce1e7768306051face4bb228f1fee2d0383611b23fd71f2c4608abef429d",
+   "sprite_size": [
+    256,
+    128
+   ],
+   "footprint_cells": [
+    4,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F07@west": {
+   "asset_id": "F07",
+   "name": "right_large_bookcase",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__west__1x4__128x256.png",
+   "sha256": "882cf76f7593e6fbc2d54faf26677d62d24d1a7ca716be8dc0a8fba40eb548d1",
+   "sprite_size": [
+    128,
+    256
+   ],
+   "footprint_cells": [
+    1,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    256
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F08@east": {
+   "asset_id": "F08",
+   "name": "large_dining_work_table",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__east__3x4__192x256.png",
+   "sha256": "1e18780749633db821c9905e20b2036076f5e486b77b6fe377fa5c9cb063dab9",
+   "sprite_size": [
+    192,
+    256
+   ],
+   "footprint_cells": [
+    3,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    96,
+    256
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F08@north": {
+   "asset_id": "F08",
+   "name": "large_dining_work_table",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.png",
+   "sha256": "491d33be2ac817abaac701013b7192a25ccbeb0d1e86b8de64a552db2c8031e2",
+   "sprite_size": [
+    256,
+    192
+   ],
+   "footprint_cells": [
+    4,
+    3
+   ],
+   "anchor": [
+    0,
+    192
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    192
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F08@south": {
+   "asset_id": "F08",
+   "name": "large_dining_work_table",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__south__4x3__256x192.png",
+   "sha256": "48ffb92f014f9639fc38e68b38e3ecd0d65e993a09a39bbe635a5a8edcfd6015",
+   "sprite_size": [
+    256,
+    192
+   ],
+   "footprint_cells": [
+    4,
+    3
+   ],
+   "anchor": [
+    0,
+    192
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    128,
+    192
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F08@west": {
+   "asset_id": "F08",
+   "name": "large_dining_work_table",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__west__3x4__192x256.png",
+   "sha256": "fc8184303b14fcc0a3a3145b5b5a0b4ff55b329d8d79570924c5e403fe000081",
+   "sprite_size": [
+    192,
+    256
+   ],
+   "footprint_cells": [
+    3,
+    4
+   ],
+   "anchor": [
+    0,
+    256
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    96,
+    256
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F09@east": {
+   "asset_id": "F09",
+   "name": "bench_horizontal",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F09__furniture__bench_horizontal__east__1x2__64x128.png",
+   "sha256": "18b72bba1e05d3739118912515487552c2099b9fbe1669de8fc310a16eccf03b",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F09@north": {
+   "asset_id": "F09",
+   "name": "bench_horizontal",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F09__furniture__bench_horizontal__north__2x1__128x64.png",
+   "sha256": "6147b6a043aea352fb3e47ccf6caaf3c3e4f8ce194c8849eb3f712c3a76e4f18",
+   "sprite_size": [
+    128,
+    64
+   ],
+   "footprint_cells": [
+    2,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    64
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F09@south": {
+   "asset_id": "F09",
+   "name": "bench_horizontal",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F09__furniture__bench_horizontal__south__2x1__128x64.png",
+   "sha256": "cb5356114018c7b372aefe9ccf19bb596b70567a84d6bd0f6fa31f3dcc2ec1f3",
+   "sprite_size": [
+    128,
+    64
+   ],
+   "footprint_cells": [
+    2,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    64
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F09@west": {
+   "asset_id": "F09",
+   "name": "bench_horizontal",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F09__furniture__bench_horizontal__west__1x2__64x128.png",
+   "sha256": "4cbbd04b510b28b03acd2dd20f69945d66e51110cb6b65332fc96bb32d3e4e06",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F10@east": {
+   "asset_id": "F10",
+   "name": "bench_vertical",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F10__furniture__bench_vertical__east__1x2__64x128.png",
+   "sha256": "33b7821f36fc661e908338996c20f82fb4aa4acbbdfa10506e276921ee01452e",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F10@north": {
+   "asset_id": "F10",
+   "name": "bench_vertical",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F10__furniture__bench_vertical__north__2x1__128x64.png",
+   "sha256": "56262cac0b5e5e83f8a37ce8ffebdf884f4767e8d3b61041241721cf875b51b1",
+   "sprite_size": [
+    128,
+    64
+   ],
+   "footprint_cells": [
+    2,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    64
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F10@south": {
+   "asset_id": "F10",
+   "name": "bench_vertical",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F10__furniture__bench_vertical__south__2x1__128x64.png",
+   "sha256": "c91f80150f860cb2bad6125e428a1d922bdb436951f5bdaef82b609bd41967f4",
+   "sprite_size": [
+    128,
+    64
+   ],
+   "footprint_cells": [
+    2,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    64
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F10@west": {
+   "asset_id": "F10",
+   "name": "bench_vertical",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F10__furniture__bench_vertical__west__1x2__64x128.png",
+   "sha256": "1848d99d2376c55e0c5bef424646fa2b7c101d6fb87cac6afdf7bd6c4a5ee4aa",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F11@east": {
+   "asset_id": "F11",
+   "name": "small_wooden_crate",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F11__furniture__small_wooden_crate__east__1x1__64x64.png",
+   "sha256": "abfe334281dee74b80987a36d7b97b6c02733e81d7103ffbeb263f4506cb043e",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F11@north": {
+   "asset_id": "F11",
+   "name": "small_wooden_crate",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F11__furniture__small_wooden_crate__north__1x1__64x64.png",
+   "sha256": "ebf57866a195e1e9298a86c9667e0db183923e324dfc4fa3487b202650c7fa44",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F11@south": {
+   "asset_id": "F11",
+   "name": "small_wooden_crate",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F11__furniture__small_wooden_crate__south__1x1__64x64.png",
+   "sha256": "0b5a50890696c99c3e0f268128c8a7dcfca3b5537e0dbc83c04a93f51e842376",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F11@west": {
+   "asset_id": "F11",
+   "name": "small_wooden_crate",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F11__furniture__small_wooden_crate__west__1x1__64x64.png",
+   "sha256": "3533ae0da48a149877285ceac8eff6da8269fae90e31bf5708571874e3c5ff2e",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F12@east": {
+   "asset_id": "F12",
+   "name": "medium_wooden_crate",
+   "facing": "east",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__east__2x2__128x128.png",
+   "sha256": "9e9f0a30ed1a562c4b2b3a3a05ac02376ff87e8982383e4e7f06d0986c5070e7",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    2,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F12@north": {
+   "asset_id": "F12",
+   "name": "medium_wooden_crate",
+   "facing": "north",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__north__2x2__128x128.png",
+   "sha256": "ef83f0fec380787e6630bac7fd0cffa55a2211745eebbc5b350a9b0b99841dfb",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    2,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F12@south": {
+   "asset_id": "F12",
+   "name": "medium_wooden_crate",
+   "facing": "south",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__south__2x2__128x128.png",
+   "sha256": "ccf7d89a4cf06e8355241a4ac4d628d989a14e3785855aaee5c050f5d1fbd691",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    2,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "F12@west": {
+   "asset_id": "F12",
+   "name": "medium_wooden_crate",
+   "facing": "west",
+   "level": "structure",
+   "texture": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__west__2x2__128x128.png",
+   "sha256": "9054efcd3ad65bd812968fbe32793c6ff17b343fdb7ce893550770084900e018",
+   "sprite_size": [
+    128,
+    128
+   ],
+   "footprint_cells": [
+    2,
+    2
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    64,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "G01": {
+   "asset_id": "G01",
+   "name": "clean_sandstone_floor_tile",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G01__floor__clean_sandstone_floor_tile__default__1x1__64x64.png",
+   "sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G02": {
+   "asset_id": "G02",
+   "name": "lightly_weathered_sandstone_floor_tile",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G02__floor__lightly_weathered_sandstone_floor_tile__default__1x1__64x64.png",
+   "sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G03": {
+   "asset_id": "G03",
+   "name": "fine_cracked_sandstone_floor_tile",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G03__floor__fine_cracked_sandstone_floor_tile__default__1x1__64x64.png",
+   "sha256": "98cfbec750f847aba7b1794dec9df88663dbfcf6242422c8f9ec21060eecd288",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G04": {
+   "asset_id": "G04",
+   "name": "naturally_textured_sandstone_floor_tile",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G04__floor__naturally_textured_sandstone_floor_tile__default__1x1__64x64.png",
+   "sha256": "a10ea4f41aa5e3dcb9263486ab9f6149bb3afd56a8ff7de92546b638da7abd02",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G05": {
+   "asset_id": "G05",
+   "name": "sandstone_tile_with_slight_edge_wear",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G05__floor__sandstone_tile_with_slight_edge_wear__default__1x1__64x64.png",
+   "sha256": "730ab5d5cd7b7b8a708dc9eec3375ca6b952ce6ca0fcf08d6f314dfc2d3c2a73",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G06": {
+   "asset_id": "G06",
+   "name": "sandstone_tile_with_small_chipped_corner",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G06__floor__sandstone_tile_with_small_chipped_corner__default__1x1__64x64.png",
+   "sha256": "7610f278fa2cd7a44f79444f3155ad93672fc17b34e2d9f761086396ca463ff8",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G07": {
+   "asset_id": "G07",
+   "name": "sandstone_tile_with_dusty_patch",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G07__floor__sandstone_tile_with_dusty_patch__default__1x1__64x64.png",
+   "sha256": "b64cfd91f42d62f4ba30ed3b66354aac7c105bb0e3fb75bc379e19bfbb038bfb",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G08": {
+   "asset_id": "G08",
+   "name": "sandstone_tile_with_subtle_mineral_spots",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G08__floor__sandstone_tile_with_subtle_mineral_spots__default__1x1__64x64.png",
+   "sha256": "68f537a5c3301bd0a0f7f20923580e2d23b21f131443c2c96281938ec89cb60f",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G09": {
+   "asset_id": "G09",
+   "name": "sandstone_tile_with_tiny_surface_pits",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G09__floor__sandstone_tile_with_tiny_surface_pits__default__1x1__64x64.png",
+   "sha256": "7d83a39fa2f1900703ad695564d4ccc1eeebe9ce4d0394d7ae258ea319ebf4b6",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G10": {
+   "asset_id": "G10",
+   "name": "sandstone_tile_with_soft_discoloration",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G10__floor__sandstone_tile_with_soft_discoloration__default__1x1__64x64.png",
+   "sha256": "79dc7ec3c390bdfe8ab856f2e60f378e739eecd77441117b97f82ef9aaa3937d",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G11": {
+   "asset_id": "G11",
+   "name": "sandstone_tile_with_faint_hairline_cracks",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G11__floor__sandstone_tile_with_faint_hairline_cracks__default__1x1__64x64.png",
+   "sha256": "2bcf319aed97cb1dd67749a7b4b988bcfaf0f7adc596cd49a7e15113013e090f",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "G12": {
+   "asset_id": "G12",
+   "name": "sandstone_tile_with_slightly_darker_weathering",
+   "facing": "default",
+   "level": "ground",
+   "texture": "res://assets_generated/floor/G12__floor__sandstone_tile_with_slightly_darker_weathering__default__1x1__64x64.png",
+   "sha256": "6ca4406809419e07cde9cf16ad9f90c16cafc2e74527343f673367706e8d4e23",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "L01": {
+   "asset_id": "L01",
+   "name": "hanging_wall_lantern",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.png",
+   "sha256": "1723f825b9ddc39daefdce69199ca4a875a0f5576049515ccad0f846a778aecd",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "L02": {
+   "asset_id": "L02",
+   "name": "lit_wall_lantern_glowless_base",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+   "sha256": "37804dde9d359f26d63bc8a78d1ff3d666bfcff39101bb2b025fffeeb4726a73",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "L03": {
+   "asset_id": "L03",
+   "name": "candle_cluster",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/lighting/L03__lighting__candle_cluster__default__1x1__64x64.png",
+   "sha256": "3630e7125d81eb58bbf82cffacabbec31374232cb2f05076347efc2c2af8fa49",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "L04": {
+   "asset_id": "L04",
+   "name": "table_lantern",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/lighting/L04__lighting__table_lantern__default__1x1__64x64.png",
+   "sha256": "078975c5a608b16e904572aaace990996eefe3a35b82d9707cbea0e9ceefb186",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "L05": {
+   "asset_id": "L05",
+   "name": "small_flame_glow_overlay",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/lighting/L05__lighting__small_flame_glow_overlay__default__1x1__64x64.png",
+   "sha256": "7ded2268505d3689248e198af01b78f50b06903fe3c639e6afa3114a1af00681",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P01": {
+   "asset_id": "P01",
+   "name": "ivy_hanging_short",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P01__plants__ivy_hanging_short__default__1x1__64x64.png",
+   "sha256": "90935cf79c1dc6156c93bc3c4ae4ba6d6fd2a4fdd973802c5f2599ca58f957c7",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P02": {
+   "asset_id": "P02",
+   "name": "ivy_hanging_medium",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P02__plants__ivy_hanging_medium__default__1x1__64x64.png",
+   "sha256": "50b482bfc24da74b56fc6723cae5cda937892925e8e9181139bee1a8326ddd27",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P03": {
+   "asset_id": "P03",
+   "name": "ivy_hanging_long",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P03__plants__ivy_hanging_long__default__1x1__64x128.png",
+   "sha256": "d1f5b540829d43ddebb100adbe6146fb2294aabf3751d05dc3c565443ec680eb",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P04": {
+   "asset_id": "P04",
+   "name": "white_flower_cluster_small",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
+   "sha256": "7e258c57bd993d24686a0a16dab5ff2790cd5e160813d4aaff4144ea726c837d",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P05": {
+   "asset_id": "P05",
+   "name": "white_flower_cluster_medium",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
+   "sha256": "2e41bd0f3e91848b976f95976cd1cec0e5aabcb8b202c18c0999d708b642b95a",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P06": {
+   "asset_id": "P06",
+   "name": "blue_flower_cluster_small",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P06__plants__blue_flower_cluster_small__default__1x1__64x64.png",
+   "sha256": "16129d9c33498b7017f960011249633ae2afc8fce98df1bba501a208339b2cda",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P07": {
+   "asset_id": "P07",
+   "name": "green_bush_small",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P07__plants__green_bush_small__default__1x1__64x64.png",
+   "sha256": "96f8913e7eae51222e2bc91f636c04e332c38626f354fa268d1b71f7ac71f834",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P08": {
+   "asset_id": "P08",
+   "name": "green_bush_medium",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P08__plants__green_bush_medium__default__1x1__64x64.png",
+   "sha256": "227524bf2ce2bed53445dc4122aa844bbd3092532e3bd75c4110736e3e89c409",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P09": {
+   "asset_id": "P09",
+   "name": "tropical_leaf_plant_small",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P09__plants__tropical_leaf_plant_small__default__1x1__64x64.png",
+   "sha256": "483d27b23a9f0d438f8bc4e3ef51609e27f1e99189cf57d6ee37c36e500ea258",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P10": {
+   "asset_id": "P10",
+   "name": "tropical_leaf_plant_medium",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P10__plants__tropical_leaf_plant_medium__default__1x1__64x64.png",
+   "sha256": "e35531fa0a0ba8ea30837ccabf8b36985f2c9e05ab2c0dd0b9822ea703a0dd7f",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P11": {
+   "asset_id": "P11",
+   "name": "potted_blue_gold_ceramic_plant",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P11__plants__potted_blue_gold_ceramic_plant__default__1x1__64x64.png",
+   "sha256": "0d8ff9d8f98f2135f92cb1baacfb7596cec39b83b0d714a691a777f2c63afb74",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P12": {
+   "asset_id": "P12",
+   "name": "floral_wall_growth_left",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P12__plants__floral_wall_growth_left__default__1x1__64x64.png",
+   "sha256": "0c538b4094f57bec01a7bc3250fe96980081abe9c7fee83bfbb1a215a586105f",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P13": {
+   "asset_id": "P13",
+   "name": "floral_wall_growth_right",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P13__plants__floral_wall_growth_right__default__1x1__64x64.png",
+   "sha256": "68cfe78ac5941fbf0b622dd5b6ad54ab816840e4435479cb57ad50fd65a51dfc",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    0
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "P14": {
+   "asset_id": "P14",
+   "name": "ground_flower_patch_mixed",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/plants/P14__plants__ground_flower_patch_mixed__default__1x1__64x64.png",
+   "sha256": "c10840c0a5dba5c34432e4ef778bda09e5c1130ade69d5c6db52fe52b31cefd7",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R01": {
+   "asset_id": "R01",
+   "name": "blue_gold_ceramic_vase_small",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R01__props__blue_gold_ceramic_vase_small__default__1x1__64x64.png",
+   "sha256": "e53ffc794f0de090312951fd5d2fc186350362e08bf545b21338f6431ed2ff90",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R02": {
+   "asset_id": "R02",
+   "name": "blue_gold_ceramic_vase_large",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R02__props__blue_gold_ceramic_vase_large__default__1x1__64x64.png",
+   "sha256": "4687c6a4b70a88af3c61cfc841dc17f8312b4e19cec9aba8223bc9872e09b776",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R03": {
+   "asset_id": "R03",
+   "name": "decorative_pot_small",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R03__props__decorative_pot_small__default__1x1__64x64.png",
+   "sha256": "3fa31f1aebc003cdb846c41859d643ce6a671e0139df60cb2d6e1045f3b6245d",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R04": {
+   "asset_id": "R04",
+   "name": "decorative_pot_medium",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R04__props__decorative_pot_medium__default__1x1__64x64.png",
+   "sha256": "2f90f1cfa2e81fd565e8910d412bb03f79852523026a110be4ea398cd2d8f73c",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R05": {
+   "asset_id": "R05",
+   "name": "scroll_bundle",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R05__props__scroll_bundle__default__1x1__64x64.png",
+   "sha256": "77fac0ef3d69ad4d9505c0cbb7e0d0078ca4109a03fda0d1c6dea648436ef198",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R06": {
+   "asset_id": "R06",
+   "name": "open_book",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R06__props__open_book__default__1x1__64x64.png",
+   "sha256": "3a3c3eb2d5e7a09c262aa8c5fd8d4969aa69f78af301391cdc567d380b1618d9",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R07": {
+   "asset_id": "R07",
+   "name": "closed_book_stack",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R07__props__closed_book_stack__default__1x1__64x64.png",
+   "sha256": "f7e74dcb45ad0e6ad342d6f980250e144384c6ea3bfb67b32ade3e1bf726a089",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R08": {
+   "asset_id": "R08",
+   "name": "rolled_map",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R08__props__rolled_map__default__1x1__64x64.png",
+   "sha256": "07d1cb7b456e09d2fbd17e72217f3b1eedc4f92839da5608711a96d27dbfe8af",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R09": {
+   "asset_id": "R09",
+   "name": "open_map_on_table",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R09__props__open_map_on_table__default__1x1__64x64.png",
+   "sha256": "31ee831e62d4dcfdb175ee25daa248946fb90a2dabefdc82138ede7973b4607c",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R10": {
+   "asset_id": "R10",
+   "name": "fruit_bowl",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R10__props__fruit_bowl__default__1x1__64x64.png",
+   "sha256": "96b7e3274da23228a216dae58bc552a4e301766feb87783c0ce212c1a842331e",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R11": {
+   "asset_id": "R11",
+   "name": "white_jug",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R11__props__white_jug__default__1x1__64x64.png",
+   "sha256": "f70a7cf0d288739146f82b7fbbd1d9b741250303d822cef883202ddae7803089",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R12": {
+   "asset_id": "R12",
+   "name": "brass_armillary_astronomical_object",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png",
+   "sha256": "add6b424eb28f3fa10fc0f987891c282359164033182a196d46d498b3fd3a731",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R13": {
+   "asset_id": "R13",
+   "name": "conch_shell",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R13__props__conch_shell__default__1x1__64x64.png",
+   "sha256": "afbd6bd838b4669dd23cc1efe83f46b9fd134c1c6688c277a0067396d400dfa4",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "R14": {
+   "asset_id": "R14",
+   "name": "starfish_coral_decorative_piece",
+   "facing": "default",
+   "level": "decoration",
+   "texture": "res://assets_generated/props/R14__props__starfish_coral_decorative_piece__default__1x1__64x64.png",
+   "sha256": "023ef39f963e6f34462b22ce3ba32047d7d58a6ad8084a7e8854d6cf7eea6563",
+   "sprite_size": [
+    64,
+    64
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    64
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    64
+   ],
+   "collision": false,
+   "approval_status": "approved"
+  },
+  "W01": {
+   "asset_id": "W01",
+   "name": "clean_pale_stone_wall_block",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+   "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W02": {
+   "asset_id": "W02",
+   "name": "lightly_weathered_stone_wall_block",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
+   "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W03": {
+   "asset_id": "W03",
+   "name": "broken_stone_wall_block",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.png",
+   "sha256": "5e35c9d7bb7dbf1e74d17ff8a525cc1c21313c66277b6b16a3980b04ea3c282e",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W04": {
+   "asset_id": "W04",
+   "name": "cracked_stone_wall_block",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.png",
+   "sha256": "48497b476a14603dcc24a99b3c0fca9241d8d20c0d52b1fcaa72e3c3d12ae7c5",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W05": {
+   "asset_id": "W05",
+   "name": "wall_block_with_ivy_base",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.png",
+   "sha256": "9795a76879b20a18027014b172947ff8146043351f2843cd852deff1b53978e4",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W06": {
+   "asset_id": "W06",
+   "name": "wall_block_with_flower_growth",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.png",
+   "sha256": "9bce22c7f2725f53e2766c0de1652e058552f088d57a719495d928028fdc1c98",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W07": {
+   "asset_id": "W07",
+   "name": "wall_cap_top_edge_stone",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+   "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W08": {
+   "asset_id": "W08",
+   "name": "inner_corner_wall_block",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W08__wall__inner_corner_wall_block__default__1x1__64x128.png",
+   "sha256": "3ddfa365ff3bd5ca69e9a1629baf8b5fb46de2eec3c2133c03477193a9060316",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W09": {
+   "asset_id": "W09",
+   "name": "outer_corner_wall_block",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png",
+   "sha256": "777a289eb4b5ed5adaa13b7f615e54be83d25059b6aa986e8b2810fca4892be8",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W10": {
+   "asset_id": "W10",
+   "name": "low_broken_wall_segment",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+   "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W11": {
+   "asset_id": "W11",
+   "name": "wall_end_piece_left",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W11__wall__wall_end_piece_left__default__1x1__64x128.png",
+   "sha256": "02e18df29e4a2c0d77a7cb39dc7b6cb0df6f8d210b7333160fd2f0f8fd24caaf",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W12": {
+   "asset_id": "W12",
+   "name": "wall_end_piece_right",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W12__wall__wall_end_piece_right__default__1x1__64x128.png",
+   "sha256": "0c5b15c8fe371151ed85d04878039b91abbf7542354b2c5d0b76ddf32c0d78a5",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W13": {
+   "asset_id": "W13",
+   "name": "arch_adjacent_wall_block_left",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W13__wall__arch_adjacent_wall_block_left__default__1x1__64x128.png",
+   "sha256": "4f4e877810b8aad048ec2752295bf5b89b9419dd016176f140a868cc11841bff",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W14": {
+   "asset_id": "W14",
+   "name": "arch_adjacent_wall_block_right",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W14__wall__arch_adjacent_wall_block_right__default__1x1__64x128.png",
+   "sha256": "dfd5b8a171cef90ee20e8daa584678fec6ac282bd9763ead3dcea655f0322caf",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  },
+  "W15": {
+   "asset_id": "W15",
+   "name": "decorative_banner_wall_mount_block",
+   "facing": "default",
+   "level": "structure",
+   "texture": "res://assets_generated/wall/W15__wall__decorative_banner_wall_mount_block__default__1x1__64x128.png",
+   "sha256": "b9ae2049dabe65bba771a905d9068de6faf7ad194682e254d6b37d938e59cbdb",
+   "sprite_size": [
+    64,
+    128
+   ],
+   "footprint_cells": [
+    1,
+    1
+   ],
+   "anchor": [
+    0,
+    128
+   ],
+   "anchor_note": "sprite bottom-left sits on the footprint's bottom-left ground corner",
+   "attach_pivot": [
+    32,
+    128
+   ],
+   "collision": true,
+   "approval_status": "approved"
+  }
+ }
+}

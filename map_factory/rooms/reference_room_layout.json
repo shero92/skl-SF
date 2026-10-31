@@ -1,0 +1,3521 @@
+{
+ "schema": "skl.reference_room_layout.v1",
+ "map_id": "reference_room_01",
+ "title": "Original hero room - exact reference reconstruction",
+ "grid": {
+  "tile_size": 64,
+  "canvas_cells": [
+   20,
+   13
+  ],
+  "origin": "top-left",
+  "units": "grid_x/grid_y = footprint top-left cell"
+ },
+ "reference_image": "map_factory/references/hero_room_01_original.png",
+ "registry": "map_factory/metadata/environment_assets_v2.json",
+ "seed": 7,
+ "walkable_check": {
+  "entrance_cells": [
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    10
+   ]
+  ],
+  "clear_zones": {
+   "compass": [
+    8,
+    7,
+    3,
+    3
+   ]
+  }
+ },
+ "ground": {
+  "floor_rect": [
+   3,
+   4,
+   14,
+   6
+  ],
+  "extra_floor_cells": [
+   [
+    8,
+    10
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    10,
+    12
+   ]
+  ],
+  "tiles": [
+   "G01",
+   "G02",
+   "G03",
+   "G04",
+   "G05",
+   "G06",
+   "G07",
+   "G08",
+   "G09",
+   "G10",
+   "G11",
+   "G12"
+  ],
+  "weights": [
+   4,
+   3,
+   1,
+   3,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2,
+   1,
+   1
+  ]
+ },
+ "background": [
+  {
+   "asset": "B10",
+   "px": [
+    0,
+    0
+   ],
+   "tile": [
+    5,
+    4
+   ]
+  },
+  {
+   "asset": "B07",
+   "px": [
+    0,
+    -64
+   ],
+   "tile": [
+    5,
+    1
+   ]
+  },
+  {
+   "asset": "B01",
+   "px": [
+    0,
+    192
+   ],
+   "tile": [
+    5,
+    3
+   ]
+  },
+  {
+   "asset": "B11",
+   "px": [
+    30,
+    30
+   ]
+  },
+  {
+   "asset": "B06",
+   "px": [
+    260,
+    20
+   ]
+  },
+  {
+   "asset": "B05",
+   "px": [
+    900,
+    30
+   ]
+  },
+  {
+   "asset": "B06",
+   "px": [
+    1020,
+    10
+   ]
+  },
+  {
+   "asset": "B04",
+   "px": [
+    520,
+    10
+   ]
+  },
+  {
+   "asset": "B08",
+   "px": [
+    150,
+    0
+   ]
+  },
+  {
+   "asset": "B09",
+   "px": [
+    700,
+    -50
+   ]
+  },
+  {
+   "asset": "B03",
+   "px": [
+    -120,
+    220
+   ]
+  },
+  {
+   "asset": "B03",
+   "px": [
+    -120,
+    420
+   ]
+  },
+  {
+   "asset": "B03",
+   "px": [
+    1140,
+    200
+   ]
+  },
+  {
+   "asset": "B03",
+   "px": [
+    1140,
+    420
+   ]
+  },
+  {
+   "asset": "B04",
+   "px": [
+    40,
+    600
+   ]
+  },
+  {
+   "asset": "B03",
+   "px": [
+    260,
+    640
+   ]
+  },
+  {
+   "asset": "B04",
+   "px": [
+    480,
+    700
+   ]
+  },
+  {
+   "asset": "B03",
+   "px": [
+    760,
+    660
+   ]
+  },
+  {
+   "asset": "B04",
+   "px": [
+    1000,
+    620
+   ]
+  },
+  {
+   "asset": "B02",
+   "px": [
+    -30,
+    700
+   ]
+  },
+  {
+   "asset": "B02",
+   "px": [
+    1050,
+    700
+   ]
+  }
+ ],
+ "shadows": {
+  "contact": {
+   "color": "#1a0f2a",
+   "alpha": 0.3
+  },
+  "cast": {
+   "color": "#1a0f2a",
+   "alpha": 0.18,
+   "length_per_height": 0.5,
+   "direction": [
+    0.7,
+    0.5
+   ]
+  },
+  "glow_owners": [
+   "tbl.lantern",
+   "lantern_door",
+   "lantern_left",
+   "lantern_right",
+   "bed.candles",
+   "bcr.candles"
+  ],
+  "sun_bands": [
+   [
+    [
+     400,
+     300
+    ],
+    [
+     480,
+     300
+    ],
+    [
+     700,
+     700
+    ],
+    [
+     610,
+     700
+    ]
+   ],
+   [
+    [
+     540,
+     300
+    ],
+    [
+     580,
+     300
+    ],
+    [
+     800,
+     700
+    ],
+    [
+     760,
+     700
+    ]
+   ]
+  ]
+ },
+ "objects": [
+  {
+   "object_id": "rwl.w0",
+   "asset_id": "W09",
+   "grid_x": 2,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left"
+  },
+  {
+   "object_id": "rwl.w1",
+   "asset_id": "W05",
+   "grid_x": 3,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left"
+  },
+  {
+   "object_id": "rwl.w2",
+   "asset_id": "W03",
+   "grid_x": 4,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left"
+  },
+  {
+   "object_id": "rwl.w3",
+   "asset_id": "W10",
+   "grid_x": 5,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left"
+  },
+  {
+   "object_id": "rwl.w4",
+   "asset_id": "W02",
+   "grid_x": 6,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left"
+  },
+  {
+   "object_id": "rwl.w5",
+   "asset_id": "W13",
+   "grid_x": 7,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left"
+  },
+  {
+   "object_id": "rwl.back0",
+   "asset_id": "W02",
+   "grid_x": 2,
+   "grid_y": 2,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwl.back2",
+   "asset_id": "W01",
+   "grid_x": 4,
+   "grid_y": 2,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwl.back5",
+   "asset_id": "W06",
+   "grid_x": 7,
+   "grid_y": 2,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwl.base_w0",
+   "asset_id": "W10",
+   "grid_x": 2,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwl.base_w1",
+   "asset_id": "W10",
+   "grid_x": 3,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwl.base_w2",
+   "asset_id": "W10",
+   "grid_x": 4,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwl.base_w4",
+   "asset_id": "W10",
+   "grid_x": 6,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwl.base_w5",
+   "asset_id": "W10",
+   "grid_x": 7,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwr.w0",
+   "asset_id": "W14",
+   "grid_x": 12,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right"
+  },
+  {
+   "object_id": "rwr.w1",
+   "asset_id": "W04",
+   "grid_x": 13,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right"
+  },
+  {
+   "object_id": "rwr.door",
+   "asset_id": "A09",
+   "grid_x": 14,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right"
+  },
+  {
+   "object_id": "rwr.w4",
+   "asset_id": "W03",
+   "grid_x": 16,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right"
+  },
+  {
+   "object_id": "rwr.w5",
+   "asset_id": "W09",
+   "grid_x": 17,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right"
+  },
+  {
+   "object_id": "rwr.back1",
+   "asset_id": "W05",
+   "grid_x": 13,
+   "grid_y": 2,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwr.back4",
+   "asset_id": "W04",
+   "grid_x": 16,
+   "grid_y": 2,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwr.base_w0",
+   "asset_id": "W10",
+   "grid_x": 12,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwr.base_w1",
+   "asset_id": "W10",
+   "grid_x": 13,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwr.base_w4",
+   "asset_id": "W10",
+   "grid_x": 16,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "rwr.base_w5",
+   "asset_id": "W10",
+   "grid_x": 17,
+   "grid_y": 3,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    30,
+    -4
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "rear_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "arch.arch",
+   "asset_id": "A05",
+   "grid_x": 9,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "central_arch"
+  },
+  {
+   "object_id": "arch.support_left",
+   "asset_id": "A03",
+   "grid_x": 8,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    10,
+    4
+   ],
+   "logical_level": 2,
+   "render_order": 2,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "central_arch"
+  },
+  {
+   "object_id": "arch.support_right",
+   "asset_id": "A03",
+   "grid_x": 11,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    -10,
+    4
+   ],
+   "logical_level": 2,
+   "render_order": 2,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "central_arch"
+  },
+  {
+   "object_id": "arch.support_left_rear",
+   "asset_id": "A01",
+   "grid_x": 8,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    28,
+    -8
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "central_arch",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "arch.support_right_rear",
+   "asset_id": "A01",
+   "grid_x": 11,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    -28,
+    -8
+   ],
+   "logical_level": 2,
+   "render_order": -1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "central_arch",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "arch.outer_left",
+   "asset_id": "A03",
+   "grid_x": 7,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    18,
+    8
+   ],
+   "logical_level": 2,
+   "render_order": 3,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "central_arch"
+  },
+  {
+   "object_id": "arch.outer_right",
+   "asset_id": "A03",
+   "grid_x": 12,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    -18,
+    8
+   ],
+   "logical_level": 2,
+   "render_order": 3,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "central_arch"
+  },
+  {
+   "object_id": "swl.w0",
+   "asset_id": "W01",
+   "grid_x": 2,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_left"
+  },
+  {
+   "object_id": "swl.w1",
+   "asset_id": "W05",
+   "grid_x": 2,
+   "grid_y": 5,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_left"
+  },
+  {
+   "object_id": "swl.w2",
+   "asset_id": "W02",
+   "grid_x": 2,
+   "grid_y": 6,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_left"
+  },
+  {
+   "object_id": "swl.w3",
+   "asset_id": "W06",
+   "grid_x": 2,
+   "grid_y": 7,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_left"
+  },
+  {
+   "object_id": "swl.w4",
+   "asset_id": "W04",
+   "grid_x": 2,
+   "grid_y": 8,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_left"
+  },
+  {
+   "object_id": "swl.w5",
+   "asset_id": "W03",
+   "grid_x": 2,
+   "grid_y": 9,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_left"
+  },
+  {
+   "object_id": "swr.w0",
+   "asset_id": "W02",
+   "grid_x": 17,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_right"
+  },
+  {
+   "object_id": "swr.w1",
+   "asset_id": "W06",
+   "grid_x": 17,
+   "grid_y": 5,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_right"
+  },
+  {
+   "object_id": "swr.w2",
+   "asset_id": "W01",
+   "grid_x": 17,
+   "grid_y": 6,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_right"
+  },
+  {
+   "object_id": "swr.w3",
+   "asset_id": "W05",
+   "grid_x": 17,
+   "grid_y": 7,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_right"
+  },
+  {
+   "object_id": "swr.w4",
+   "asset_id": "W03",
+   "grid_x": 17,
+   "grid_y": 8,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_right"
+  },
+  {
+   "object_id": "swr.w5",
+   "asset_id": "W04",
+   "grid_x": 17,
+   "grid_y": 9,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "side_wall_right"
+  },
+  {
+   "object_id": "fwl.w0",
+   "asset_id": "W09",
+   "grid_x": 2,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_left"
+  },
+  {
+   "object_id": "fwl.w1",
+   "asset_id": "W10",
+   "grid_x": 3,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_left"
+  },
+  {
+   "object_id": "fwl.w2",
+   "asset_id": "W03",
+   "grid_x": 4,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_left"
+  },
+  {
+   "object_id": "fwl.w3",
+   "asset_id": "W10",
+   "grid_x": 5,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_left"
+  },
+  {
+   "object_id": "fwl.w4",
+   "asset_id": "W10",
+   "grid_x": 6,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_left"
+  },
+  {
+   "object_id": "fwl.fill_w1",
+   "asset_id": "W10",
+   "grid_x": 3,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    -6
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "fwl.fill_w3",
+   "asset_id": "W10",
+   "grid_x": 5,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    -6
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "fwl.fill_w4",
+   "asset_id": "W10",
+   "grid_x": 6,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    -6
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_left",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "fwr.w1",
+   "asset_id": "W10",
+   "grid_x": 13,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_right"
+  },
+  {
+   "object_id": "fwr.w2",
+   "asset_id": "W10",
+   "grid_x": 14,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_right"
+  },
+  {
+   "object_id": "fwr.w3",
+   "asset_id": "W03",
+   "grid_x": 15,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_right"
+  },
+  {
+   "object_id": "fwr.w4",
+   "asset_id": "W10",
+   "grid_x": 16,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_right"
+  },
+  {
+   "object_id": "fwr.w5",
+   "asset_id": "W09",
+   "grid_x": 17,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_right"
+  },
+  {
+   "object_id": "fwr.fill_w1",
+   "asset_id": "W10",
+   "grid_x": 13,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    -6
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "fwr.fill_w2",
+   "asset_id": "W10",
+   "grid_x": 14,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    -6
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "fwr.fill_w4",
+   "asset_id": "W10",
+   "grid_x": 16,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    32,
+    -6
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "front_wall_right",
+   "collision_override": "none"
+  },
+  {
+   "object_id": "stairs.step_1",
+   "asset_id": "A10",
+   "grid_x": 9,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "entrance_stairs"
+  },
+  {
+   "object_id": "stairs.step_2",
+   "asset_id": "A10",
+   "grid_x": 9,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    24
+   ],
+   "logical_level": 2,
+   "render_order": 1,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "entrance_stairs"
+  },
+  {
+   "object_id": "stairs.step_3",
+   "asset_id": "A10",
+   "grid_x": 9,
+   "grid_y": 11,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    -16
+   ],
+   "logical_level": 2,
+   "render_order": 2,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "entrance_stairs"
+  },
+  {
+   "object_id": "stairs.step_4",
+   "asset_id": "A10",
+   "grid_x": 9,
+   "grid_y": 11,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    8
+   ],
+   "logical_level": 2,
+   "render_order": 3,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "entrance_stairs"
+  },
+  {
+   "object_id": "stairs.support_left",
+   "asset_id": "A11",
+   "grid_x": 7,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    22,
+    6
+   ],
+   "logical_level": 2,
+   "render_order": 4,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "entrance_stairs"
+  },
+  {
+   "object_id": "stairs.support_right",
+   "asset_id": "A12",
+   "grid_x": 11,
+   "grid_y": 10,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    -20,
+    6
+   ],
+   "logical_level": 2,
+   "render_order": 4,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "entrance_stairs"
+  },
+  {
+   "object_id": "bcl.bookcase",
+   "asset_id": "F06@south",
+   "grid_x": 3,
+   "grid_y": 4,
+   "facing": "south",
+   "ground_footprint": [
+    4,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bookcase_left_area"
+  },
+  {
+   "object_id": "bcl.plant",
+   "asset_id": "P11",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "bcl.bookcase",
+   "attach_point": "shelf_top_left",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bookcase_left_area"
+  },
+  {
+   "object_id": "bcl.books",
+   "asset_id": "R07",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "bcl.bookcase",
+   "attach_point": "shelf_top_right",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bookcase_left_area"
+  },
+  {
+   "object_id": "bed.rug",
+   "asset_id": "D01",
+   "grid_x": 6,
+   "grid_y": 6,
+   "facing": "default",
+   "ground_footprint": [
+    2,
+    2
+   ],
+   "anchor_offset": [
+    -32,
+    13
+   ],
+   "logical_level": 1,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bed_area"
+  },
+  {
+   "object_id": "bed.bed",
+   "asset_id": "F01@south",
+   "grid_x": 5,
+   "grid_y": 5,
+   "facing": "south",
+   "ground_footprint": [
+    3,
+    3
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bed_area"
+  },
+  {
+   "object_id": "bed.bedside_head",
+   "asset_id": "F05@east",
+   "grid_x": 4,
+   "grid_y": 6,
+   "facing": "east",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bed_area"
+  },
+  {
+   "object_id": "bed.bedside_foot",
+   "asset_id": "F05@east",
+   "grid_x": 4,
+   "grid_y": 8,
+   "facing": "east",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bed_area"
+  },
+  {
+   "object_id": "bed.candles",
+   "asset_id": "L03",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "bed.bedside_head",
+   "attach_point": "surface_center",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bed_area"
+  },
+  {
+   "object_id": "bed.conch",
+   "asset_id": "R13",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "bed.bedside_foot",
+   "attach_point": "surface_center",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bed_area"
+  },
+  {
+   "object_id": "bcr.bookcase",
+   "asset_id": "F07@south",
+   "grid_x": 13,
+   "grid_y": 4,
+   "facing": "south",
+   "ground_footprint": [
+    4,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bookcase_right_area"
+  },
+  {
+   "object_id": "bcr.pot",
+   "asset_id": "R03",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "bcr.bookcase",
+   "attach_point": "shelf_top_left",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bookcase_right_area"
+  },
+  {
+   "object_id": "bcr.candles",
+   "asset_id": "L03",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "bcr.bookcase",
+   "attach_point": "shelf_top_center",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bookcase_right_area"
+  },
+  {
+   "object_id": "bcr.armillary",
+   "asset_id": "R12",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "bcr.bookcase",
+   "attach_point": "shelf_top_right",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "bookcase_right_area"
+  },
+  {
+   "object_id": "tbl.rug",
+   "asset_id": "D02",
+   "grid_x": 12,
+   "grid_y": 6,
+   "facing": "default",
+   "ground_footprint": [
+    3,
+    3
+   ],
+   "anchor_offset": [
+    32,
+    13
+   ],
+   "logical_level": 1,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "tbl.table",
+   "asset_id": "F08@south",
+   "grid_x": 12,
+   "grid_y": 6,
+   "facing": "south",
+   "ground_footprint": [
+    4,
+    2
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "tbl.bench_left",
+   "asset_id": "F10@west",
+   "grid_x": 11,
+   "grid_y": 6,
+   "facing": "west",
+   "ground_footprint": [
+    1,
+    2
+   ],
+   "anchor_offset": [
+    12,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "tbl.bench_right",
+   "asset_id": "F10@east",
+   "grid_x": 16,
+   "grid_y": 6,
+   "facing": "east",
+   "ground_footprint": [
+    1,
+    2
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "tbl.stool",
+   "asset_id": "F09@south",
+   "grid_x": 13,
+   "grid_y": 8,
+   "facing": "south",
+   "ground_footprint": [
+    2,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "tbl.jug",
+   "asset_id": "R11",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "tbl.table",
+   "attach_point": "surface_left",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "tbl.map",
+   "asset_id": "R09",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "tbl.table",
+   "attach_point": "surface_mid_left",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "tbl.fruit",
+   "asset_id": "R10",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "tbl.table",
+   "attach_point": "surface_mid_right",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "tbl.lantern",
+   "asset_id": "L04",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "tbl.table",
+   "attach_point": "surface_right",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": "table_area"
+  },
+  {
+   "object_id": "compass",
+   "asset_id": "D03",
+   "grid_x": 8,
+   "grid_y": 7,
+   "facing": "default",
+   "ground_footprint": [
+    3,
+    3
+   ],
+   "anchor_offset": [
+    16,
+    -26
+   ],
+   "logical_level": 1,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "banner_left_a",
+   "asset_id": "D04",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "swl.w2",
+   "attach_point": "banner_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "banner_left_b",
+   "asset_id": "D04",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "swl.w5",
+   "attach_point": "banner_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "banner_right_a",
+   "asset_id": "D04",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "swr.w4",
+   "attach_point": "banner_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "banner_right_b",
+   "asset_id": "D04",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "swr.w0",
+   "attach_point": "banner_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "lantern_rear_left_a",
+   "asset_id": "L02",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwl.w2",
+   "attach_point": "lantern_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "lantern_rear_left_b",
+   "asset_id": "L02",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwl.w4",
+   "attach_point": "lantern_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "lantern_rear_right",
+   "asset_id": "L02",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwr.w4",
+   "attach_point": "lantern_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "lantern_door",
+   "asset_id": "L01",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwr.door",
+   "attach_point": "lantern_hang_left",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "lantern_left",
+   "asset_id": "L01",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "swl.w1",
+   "attach_point": "lantern_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "lantern_right",
+   "asset_id": "L01",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "swr.w2",
+   "attach_point": "lantern_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flame_lantern_rear_left_a",
+   "asset_id": "L05",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "lantern_rear_left_a",
+   "attach_point": "flame_base",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flame_lantern_rear_left_b",
+   "asset_id": "L05",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "lantern_rear_left_b",
+   "attach_point": "flame_base",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flame_lantern_rear_right",
+   "asset_id": "L05",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "lantern_rear_right",
+   "attach_point": "flame_base",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "ivy_arch_left",
+   "asset_id": "P03",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "arch.arch",
+   "attach_point": "arch_drape_left",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "ivy_arch_right",
+   "asset_id": "P03",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "arch.arch",
+   "attach_point": "arch_drape_right",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flowers_arch_top",
+   "asset_id": "P05",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "arch.arch",
+   "attach_point": "top_center",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "ivy_rear_left_a",
+   "asset_id": "P02",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwl.w1",
+   "attach_point": "ivy_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "ivy_rear_left_b",
+   "asset_id": "P01",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwl.w4",
+   "attach_point": "ivy_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "ivy_door",
+   "asset_id": "P03",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwr.door",
+   "attach_point": "ivy_hang_right",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "ivy_rear_right",
+   "asset_id": "P02",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwr.w4",
+   "attach_point": "ivy_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "growth_left",
+   "asset_id": "P12",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "swl.w3",
+   "attach_point": "ivy_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "growth_right",
+   "asset_id": "P13",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "swr.w3",
+   "attach_point": "ivy_hang",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flowers_rwl_up",
+   "asset_id": "P04",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwl.up2",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flowers_rwr_up",
+   "asset_id": "P05",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwr.up2",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flowers_rwl_1",
+   "asset_id": "P06",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "rwl.up1",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "fl_fwl_1",
+   "asset_id": "P05",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwl.w2",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "bush_fwl_2",
+   "asset_id": "P08",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwl.w4",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "fl_fwl_3",
+   "asset_id": "P06",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwl.w1",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "bush_fwl_4",
+   "asset_id": "P07",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwl.w5",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "fl_fwr_1",
+   "asset_id": "P05",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwr.w3",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "bush_fwr_2",
+   "asset_id": "P08",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwr.w1",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "fl_fwr_3",
+   "asset_id": "P06",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwr.w4",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "bush_fwr_4",
+   "asset_id": "P07",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwr.w0",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "leaf_fwl",
+   "asset_id": "P10",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwl.w3",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "leaf_fwr",
+   "asset_id": "P09",
+   "grid_x": 0,
+   "grid_y": 0,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": "fwr.w2",
+   "attach_point": "wall_top_stand",
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "vase_left",
+   "asset_id": "R02",
+   "grid_x": 3,
+   "grid_y": 5,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "vase_right",
+   "asset_id": "R02",
+   "grid_x": 12,
+   "grid_y": 5,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "plant_right",
+   "asset_id": "P11",
+   "grid_x": 16,
+   "grid_y": 5,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "crate",
+   "asset_id": "F11@south",
+   "grid_x": 16,
+   "grid_y": 9,
+   "facing": "south",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 2,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "conch_floor",
+   "asset_id": "R13",
+   "grid_x": 14,
+   "grid_y": 9,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "pot_floor",
+   "asset_id": "R04",
+   "grid_x": 15,
+   "grid_y": 9,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flowers_floor_l",
+   "asset_id": "P14",
+   "grid_x": 3,
+   "grid_y": 9,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  },
+  {
+   "object_id": "flowers_floor_r",
+   "asset_id": "P14",
+   "grid_x": 15,
+   "grid_y": 4,
+   "facing": "default",
+   "ground_footprint": [
+    1,
+    1
+   ],
+   "anchor_offset": [
+    0,
+    0
+   ],
+   "logical_level": 3,
+   "render_order": 0,
+   "parent": null,
+   "attach_point": null,
+   "attach_offset": [
+    0,
+    0
+   ],
+   "blueprint": null
+  }
+ ]
+}
