@@ -8,7 +8,7 @@ branch: none
 depends_on: TASK-0075,TASK-0076
 issue: none
 art_request: none
-touches: scenes/battle/hit_timing_bridge.gd,tools/verify_hit_timing.gd,tools/tests/test_battle_hit_timing.py
+touches: scenes/battle/hit_timing_bridge.gd,tools/verify_hit_timing.gd,tools/tests/test_battle_hit_timing.py,tools/test_map.json
 test: python -m unittest discover -s tools/tests -p test_battle_hit_timing.py
 done_when: Expose the timeline hit as a single signal so existing damage code can subscribe; do not change the damage system.
 estimate_minutes: 45
@@ -22,6 +22,8 @@ Expose the timeline hit as a single signal so existing damage code can subscribe
 hit_timing_bridge.gd connects the controller hit signal to hit_confirmed(attacker, defender, attack_id, hit_index). Guarantees one emission per hit even with pause, frame step, restart and cancel.
 
 Scope: new battle-only files under scenes/battle/, tools/ and game_factory/battle/. Do not modify existing scenes, characters, UI, damage code or any image. Aider must not generate or edit images.
+
+Router registration: add ONE entry for your new test file to tools/test_map.json (id, kind python, covers, command, paths) so test_router (every test file must be routed) passes. Edit only that entry; do not touch other entries or tools/tests/INDEX.md.
 
 ## Acceptance criteria
 - [ ] One emission per hit across pause/step/restart/cancel scenarios
