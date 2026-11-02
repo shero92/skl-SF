@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 11,
+  "version": 12,
   "processing_passes": [
     "background",
     "ground",
@@ -227,32 +227,116 @@
           "offset_y": 2
         },
         "attachment": null
+      },
+      {
+        "instance_id": "SeaStackLeft",
+        "asset_id": "B05",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          40.0,
+          100.0
+        ],
+        "scale": 0.6,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/background/B05__background__sea_stack_island_small__default__4x4__256x256.png",
+        "pixel_size": [
+          256,
+          256
+        ],
+        "origin": [
+          0,
+          0
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.0,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "SeaStackRight",
+        "asset_id": "B06",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1350.0,
+          120.0
+        ],
+        "scale": 0.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/background/B06__background__sea_stack_island_medium__default__4x4__256x256.png",
+        "pixel_size": [
+          256,
+          256
+        ],
+        "origin": [
+          0,
+          0
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.0,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        "attachment": null
       }
     ],
     "ground": [
       {
         "instance_id": "BedRug",
-        "asset_id": "P005",
+        "asset_id": "D01",
         "source_layer": "ground_overlays",
         "render_layer": "ground",
         "position": [
-          410.0,
-          594.0
+          450.0,
+          609.0
         ],
-        "scale": 0.69,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P005_Bedroom_Rug.png",
+        "texture_path": "res://assets_generated/decor/D01__decor__bed_rug__default__3x4__192x256.png",
         "pixel_size": [
-          238,
-          304
+          192,
+          256
         ],
         "origin": [
-          119,
-          304
+          96,
+          256
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -265,36 +349,107 @@
           ]
         },
         "shadow": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
         },
-        "attachment": null
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            2,
+            2
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            3,
+            4
+          ],
+          "occupancy_group": "overlay",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ]
       },
       {
-        "instance_id": "DeskRug",
-        "asset_id": "P005",
+        "instance_id": "TableRug",
+        "asset_id": "D02",
         "source_layer": "ground_overlays",
         "render_layer": "ground",
         "position": [
-          1126.0,
-          631.0
+          1122.0,
+          673.0
         ],
-        "scale": 0.68,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P005_Bedroom_Rug.png",
+        "texture_path": "res://assets_generated/decor/D02__decor__table_rug__default__4x4__256x256.png",
         "pixel_size": [
-          238,
-          304
+          256,
+          256
         ],
         "origin": [
-          119,
-          304
+          128,
+          256
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -307,38 +462,254 @@
           ]
         },
         "shadow": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
         },
-        "attachment": null
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            12,
+            3
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            4,
+            4
+          ],
+          "occupancy_group": "overlay",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            12,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            12,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            14,
+            4
+          ],
+          [
+            15,
+            4
+          ],
+          [
+            12,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            14,
+            5
+          ],
+          [
+            15,
+            5
+          ],
+          [
+            12,
+            6
+          ],
+          [
+            13,
+            6
+          ],
+          [
+            14,
+            6
+          ],
+          [
+            15,
+            6
+          ]
+        ]
+      },
+      {
+        "instance_id": "CompassFloorEmblem",
+        "asset_id": "D03",
+        "source_layer": "ground_overlays",
+        "render_layer": "ground",
+        "position": [
+          738.0,
+          737.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.png",
+        "pixel_size": [
+          256,
+          256
+        ],
+        "origin": [
+          128,
+          256
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.2,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            6,
+            4
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            4,
+            4
+          ],
+          "occupancy_group": "overlay",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            8,
+            5
+          ],
+          [
+            9,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            8,
+            6
+          ],
+          [
+            9,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            9,
+            7
+          ]
+        ]
       }
     ],
     "walls": [
       {
-        "instance_id": "ArchMain",
-        "asset_id": "A005",
+        "instance_id": "RearArch",
+        "asset_id": "A05",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          759.0,
-          346.0
+          701.0,
+          298.6
         ],
-        "scale": 1.03,
+        "scale": 2.4,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/architecture/A005_Stone_Arch_With_Ivy.png",
+        "texture_path": "res://assets_generated/architecture/A05__architecture__arch_segment_center__default__1x1__128x128.png",
         "pixel_size": [
-          328,
-          283
+          128,
+          128
         ],
         "origin": [
-          164,
-          283
+          64,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -352,35 +723,35 @@
         },
         "shadow": {
           "type": "soft_cast",
-          "opacity": 0.22,
-          "offset_x": 9,
-          "offset_y": 8
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "W001_back_objects_002",
-        "asset_id": "W001",
+        "instance_id": "ArchColumnLeft",
+        "asset_id": "A01",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          277.0,
-          405.0
+          530.5,
+          294.0
         ],
-        "scale": 0.98,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W001_Stone_Wall_Straight.png",
+        "texture_path": "res://assets_generated/architecture/A01__architecture__main_stone_column__default__1x1__64x128.png",
         "pixel_size": [
-          179,
-          239
+          64,
+          128
         ],
         "origin": [
-          89,
-          239
+          32,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -393,36 +764,36 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "type": "column_long",
+          "opacity": 0.24,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 4
         },
         "attachment": null
       },
       {
-        "instance_id": "W003_back_objects_003",
-        "asset_id": "W003",
+        "instance_id": "ArchColumnRight",
+        "asset_id": "A01",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          464.0,
-          359.0
+          888.5,
+          294.0
         ],
-        "scale": 0.87,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W003_Stone_Wall_Broken.png",
+        "texture_path": "res://assets_generated/architecture/A01__architecture__main_stone_column__default__1x1__64x128.png",
         "pixel_size": [
-          134,
-          153
+          64,
+          128
         ],
         "origin": [
-          67,
-          153
+          32,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -435,36 +806,36 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "type": "column_long",
+          "opacity": 0.24,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 4
         },
         "attachment": null
       },
       {
-        "instance_id": "W002_back_objects_004",
-        "asset_id": "W002",
+        "instance_id": "RearRightDoor",
+        "asset_id": "A09",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          1148.0,
-          349.0
+          1105.875,
+          297.75
         ],
-        "scale": 0.93,
+        "scale": 1.75,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W002_Stone_Wall_Short.png",
+        "texture_path": "res://assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png",
         "pixel_size": [
-          165,
-          189
+          128,
+          128
         ],
         "origin": [
-          82,
-          189
+          64,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -477,750 +848,36 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "soft_cast",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "W014_back_objects_005",
-        "asset_id": "W014",
+        "instance_id": "BackWallR00",
+        "asset_id": "W01",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          1324.0,
-          414.0
+          258.0,
+          289.0
         ],
-        "scale": 0.93,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W014_Stone_Wall_With_Lantern.png",
+        "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
         "pixel_size": [
-          178,
-          245
+          64,
+          128
         ],
         "origin": [
-          89,
-          245
+          32,
+          128
         ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "W015_back_objects_006",
-        "asset_id": "W015",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          233.0,
-          541.0
-        ],
-        "scale": 0.89,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W015_Stone_Wall_With_Banner.png",
-        "pixel_size": [
-          146,
-          157
-        ],
-        "origin": [
-          73,
-          157
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "W015_back_objects_007",
-        "asset_id": "W015",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1328.0,
-          539.0
-        ],
-        "scale": 0.89,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W015_Stone_Wall_With_Banner.png",
-        "pixel_size": [
-          146,
-          157
-        ],
-        "origin": [
-          73,
-          157
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "A007_back_objects_008",
-        "asset_id": "A007",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          629.0,
-          360.0
-        ],
-        "scale": 0.82,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/architecture/A007_Stone_Column_Full.png",
-        "pixel_size": [
-          104,
-          271
-        ],
-        "origin": [
-          52,
-          271
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "A012_back_objects_009",
-        "asset_id": "A012",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          906.0,
-          360.0
-        ],
-        "scale": 0.84,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/architecture/A012_Stone_Column_With_Flowers.png",
-        "pixel_size": [
-          103,
-          272
-        ],
-        "origin": [
-          51,
-          272
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "RearLeftFlowerWall",
-        "asset_id": "W012",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          484.0,
-          372.0
-        ],
-        "scale": 0.76,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
-        "pixel_size": [
-          169,
-          91
-        ],
-        "origin": [
-          84,
-          91
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "RearRightFlowerWall",
-        "asset_id": "W013",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1066.0,
-          373.0
-        ],
-        "scale": 0.79,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
-        "pixel_size": [
-          146,
-          92
-        ],
-        "origin": [
-          73,
-          92
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "DecoratedDoorRight",
-        "asset_id": "A015",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1249.0,
-          355.0
-        ],
-        "scale": 0.68,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/architecture/A015_Stone_Door_Arched.png",
-        "pixel_size": [
-          196,
-          233
-        ],
-        "origin": [
-          98,
-          233
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "LeftDeepRuinCorner",
-        "asset_id": "W020",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          237.0,
-          697.0
-        ],
-        "scale": 0.73,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": -1,
-        "texture_path": "res://map_factory/parts/walls/W020_Deep_Limestone_Corner_Without_Sea.png",
-        "pixel_size": [
-          246,
-          238
-        ],
-        "origin": [
-          123,
-          235
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": true,
-          "size": [
-            126,
-            42
-          ],
-          "offset": [
-            0,
-            -28
-          ]
-        },
-        "shadow": {
-          "type": "wall_corner",
-          "opacity": 0.28,
-          "offset_x": 5,
-          "offset_y": 7
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "RightDeepRuinCorner",
-        "asset_id": "W020",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1316.0,
-          698.0
-        ],
-        "scale": 0.73,
-        "rotation_degrees": 0.0,
-        "flip_h": true,
-        "z_index": -1,
-        "texture_path": "res://map_factory/parts/walls/W020_Deep_Limestone_Corner_Without_Sea.png",
-        "pixel_size": [
-          246,
-          238
-        ],
-        "origin": [
-          123,
-          235
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": true,
-          "size": [
-            126,
-            42
-          ],
-          "offset": [
-            0,
-            -28
-          ]
-        },
-        "shadow": {
-          "type": "wall_corner",
-          "opacity": 0.28,
-          "offset_x": 5,
-          "offset_y": 7
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "HeroHDLeftWall",
-        "asset_id": "W021",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          385.0,
-          445.0
-        ],
-        "scale": 0.38,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W021_Vine_Covered_Compass_Ruin_Wall.png",
-        "pixel_size": [
-          680,
-          843
-        ],
-        "origin": [
-          340,
-          843
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "HeroHDRightWall",
-        "asset_id": "W022",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1165.0,
-          446.0
-        ],
-        "scale": 0.38,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W022_Isometric_Ivy_Fantasy_Wall.png",
-        "pixel_size": [
-          680,
-          847
-        ],
-        "origin": [
-          340,
-          847
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "HeroHDPillar",
-        "asset_id": "A017",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          580.0,
-          416.0
-        ],
-        "scale": 0.4,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/architecture/A017_Ivy_Covered_Compass_Shrine_Pillar.png",
-        "pixel_size": [
-          324,
-          694
-        ],
-        "origin": [
-          162,
-          694
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "HeroHDDoor",
-        "asset_id": "A018",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          773.0,
-          436.0
-        ],
-        "scale": 0.43,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/architecture/A018_Sapphire_Compass_Doorway.png",
-        "pixel_size": [
-          520,
-          641
-        ],
-        "origin": [
-          260,
-          641
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "EntrancePillarLeft",
-        "asset_id": "ST011",
-        "source_layer": "objects",
-        "render_layer": "walls",
-        "position": [
-          642.0,
-          856.0
-        ],
-        "scale": 0.74,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/stairs/ST011_Stone_Railing_Post.png",
-        "pixel_size": [
-          72,
-          110
-        ],
-        "origin": [
-          36,
-          110
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "EntrancePillarRight",
-        "asset_id": "ST012",
-        "source_layer": "objects",
-        "render_layer": "walls",
-        "position": [
-          882.0,
-          856.0
-        ],
-        "scale": 0.74,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/stairs/ST012_Stone_Railing_Corner.png",
-        "pixel_size": [
-          90,
-          117
-        ],
-        "origin": [
-          45,
-          117
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "FrontParapetLeft",
-        "asset_id": "ST013",
-        "source_layer": "objects",
-        "render_layer": "walls",
-        "position": [
-          365.0,
-          874.0
-        ],
-        "scale": 0.88,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png",
-        "pixel_size": [
-          185,
-          123
-        ],
-        "origin": [
-          92,
-          123
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "LeftPerimeterWallMid",
-        "asset_id": "W005",
-        "source_layer": "front_objects",
-        "render_layer": "walls",
-        "position": [
-          238.0,
-          655.0
-        ],
-        "scale": 0.75,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/walls/W005_Stone_Wall_Low.png",
-        "pixel_size": [
-          197,
-          229
-        ],
-        "origin": [
-          98,
-          229
-        ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1235,76 +892,34 @@
         "shadow": {
           "type": "wall_base",
           "opacity": 0.24,
-          "offset_x": 9,
-          "offset_y": 7
+          "offset_x": 6,
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "LeftPerimeterWallLow",
-        "asset_id": "W012",
-        "source_layer": "front_objects",
+        "instance_id": "BackWallR11",
+        "asset_id": "W01",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          239.0,
-          778.0
+          962.0,
+          289.0
         ],
-        "scale": 0.75,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
         "pixel_size": [
-          169,
-          91
+          64,
+          128
         ],
         "origin": [
-          84,
-          91
+          32,
+          128
         ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "RightPerimeterWallMid",
-        "asset_id": "W005",
-        "source_layer": "front_objects",
-        "render_layer": "walls",
-        "position": [
-          1308.0,
-          655.0
-        ],
-        "scale": 0.77,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/walls/W005_Stone_Wall_Low.png",
-        "pixel_size": [
-          197,
-          229
-        ],
-        "origin": [
-          98,
-          229
-        ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1319,76 +934,34 @@
         "shadow": {
           "type": "wall_base",
           "opacity": 0.24,
-          "offset_x": 9,
-          "offset_y": 7
+          "offset_x": 6,
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "RightPerimeterWallLow",
-        "asset_id": "W013",
-        "source_layer": "front_objects",
+        "instance_id": "BackWallR12",
+        "asset_id": "W01",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          1294.0,
-          786.0
+          1026.0,
+          289.0
         ],
-        "scale": 0.75,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
         "pixel_size": [
-          146,
-          92
+          64,
+          128
         ],
         "origin": [
-          73,
-          92
+          32,
+          128
         ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "FrontWallUpperLeft",
-        "asset_id": "W012",
-        "source_layer": "front_objects",
-        "render_layer": "walls",
-        "position": [
-          437.0,
-          841.0
-        ],
-        "scale": 0.96,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/walls/W012_Stone_Wall_With_Ivy.png",
-        "pixel_size": [
-          169,
-          91
-        ],
-        "origin": [
-          84,
-          91
-        ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1402,35 +975,35 @@
         },
         "shadow": {
           "type": "wall_base",
-          "opacity": 0.18,
-          "offset_x": 4,
-          "offset_y": 8
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "FrontWallUpperRight",
-        "asset_id": "W013",
-        "source_layer": "front_objects",
+        "instance_id": "BackWallR16",
+        "asset_id": "W01",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          1085.0,
-          846.0
+          1282.0,
+          289.0
         ],
-        "scale": 0.95,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/walls/W013_Stone_Wall_With_Flowers.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
         "pixel_size": [
-          146,
-          92
+          64,
+          128
         ],
         "origin": [
-          73,
-          92
+          32,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1444,203 +1017,35 @@
         },
         "shadow": {
           "type": "wall_base",
-          "opacity": 0.18,
-          "offset_x": 4,
-          "offset_y": 8
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "FrontWallCenterLeft",
-        "asset_id": "W010",
-        "source_layer": "front_objects",
+        "instance_id": "StairStep1",
+        "asset_id": "A10",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          552.0,
-          861.0
+          750.0,
+          910.4
         ],
-        "scale": 0.92,
+        "scale": 1.6,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/walls/W010_Stone_Wall_End_Left.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
         "pixel_size": [
-          166,
-          87
+          128,
+          128
         ],
         "origin": [
-          83,
-          87
+          64,
+          128
         ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.22,
-          "offset_x": 8,
-          "offset_y": 9
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "FrontWallCenterRight",
-        "asset_id": "W011",
-        "source_layer": "front_objects",
-        "render_layer": "walls",
-        "position": [
-          978.0,
-          858.0
-        ],
-        "scale": 0.92,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/walls/W011_Stone_Wall_End_Right.png",
-        "pixel_size": [
-          126,
-          99
-        ],
-        "origin": [
-          63,
-          99
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.22,
-          "offset_x": 8,
-          "offset_y": 9
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "FrontWallLeftWide",
-        "asset_id": "ST013",
-        "source_layer": "front_objects",
-        "render_layer": "walls",
-        "position": [
-          527.0,
-          881.0
-        ],
-        "scale": 0.92,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/stairs/ST013_Stone_Parapet_Short.png",
-        "pixel_size": [
-          185,
-          123
-        ],
-        "origin": [
-          92,
-          123
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "LandingCenter",
-        "asset_id": "ST006",
-        "source_layer": "front_objects",
-        "render_layer": "walls",
-        "position": [
-          776.0,
-          865.0
-        ],
-        "scale": 0.91,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 3,
-        "texture_path": "res://map_factory/parts/stairs/ST006_Stone_Stair_Landing.png",
-        "pixel_size": [
-          192,
-          76
-        ],
-        "origin": [
-          0,
-          0
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "EntryStairUpper",
-        "asset_id": "ST001",
-        "source_layer": "front_objects",
-        "render_layer": "walls",
-        "position": [
-          776.0,
-          895.0
-        ],
-        "scale": 1.03,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 3,
-        "texture_path": "res://map_factory/parts/stairs/ST001_Stone_Stair_Top.png",
-        "pixel_size": [
-          192,
-          76
-        ],
-        "origin": [
-          96,
-          76
-        ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1661,28 +1066,28 @@
         "attachment": null
       },
       {
-        "instance_id": "EntryStairMiddle",
-        "asset_id": "ST002",
-        "source_layer": "front_objects",
+        "instance_id": "StairStep2",
+        "asset_id": "A10",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          776.0,
-          918.0
+          750.0,
+          946.4
         ],
-        "scale": 1.04,
+        "scale": 1.6,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 3,
-        "texture_path": "res://map_factory/parts/stairs/ST002_Stone_Stair_Middle.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
         "pixel_size": [
-          192,
-          76
+          128,
+          128
         ],
         "origin": [
-          96,
-          76
+          64,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1695,36 +1100,36 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "type": "stairs",
+          "opacity": 0.24,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "EntryStairLower",
-        "asset_id": "ST003",
-        "source_layer": "front_objects",
+        "instance_id": "StairStep3",
+        "asset_id": "A10",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          776.0,
-          942.0
+          750.0,
+          982.4
         ],
-        "scale": 1.05,
+        "scale": 1.6,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 3,
-        "texture_path": "res://map_factory/parts/stairs/ST003_Stone_Stair_Bottom.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
         "pixel_size": [
-          192,
-          76
+          128,
+          128
         ],
         "origin": [
-          96,
-          76
+          64,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1737,36 +1142,36 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "type": "stairs",
+          "opacity": 0.24,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "EntryStairLeftEdge",
-        "asset_id": "ST004",
-        "source_layer": "front_objects",
+        "instance_id": "StairStep4",
+        "asset_id": "A10",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          654.0,
-          929.0
+          750.0,
+          1018.4
         ],
-        "scale": 0.7,
+        "scale": 1.6,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 3,
-        "texture_path": "res://map_factory/parts/stairs/ST004_Stone_Stair_Left_Edge.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
         "pixel_size": [
-          115,
-          105
+          128,
+          128
         ],
         "origin": [
-          57,
-          105
+          64,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1779,78 +1184,36 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "type": "stairs",
+          "opacity": 0.24,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 5
         },
         "attachment": null
       },
       {
-        "instance_id": "EntryStairRightEdge",
-        "asset_id": "ST005",
-        "source_layer": "front_objects",
+        "instance_id": "EntrancePillarLeft",
+        "asset_id": "A13",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          904.0,
-          929.0
+          602.0,
+          868.3
         ],
-        "scale": 0.7,
+        "scale": 1.1,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 3,
-        "texture_path": "res://map_factory/parts/stairs/ST005_Stone_Stair_Right_Edge.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png",
         "pixel_size": [
-          117,
-          105
+          64,
+          128
         ],
         "origin": [
-          58,
-          105
+          32,
+          128
         ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "EntranceGuardLeft",
-        "asset_id": "ST007",
-        "source_layer": "front_objects",
-        "render_layer": "walls",
-        "position": [
-          670.0,
-          836.0
-        ],
-        "scale": 0.68,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 3,
-        "texture_path": "res://map_factory/parts/stairs/ST007_Stair_Entrance_Left.png",
-        "pixel_size": [
-          73,
-          145
-        ],
-        "origin": [
-          36,
-          145
-        ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1864,35 +1227,35 @@
         },
         "shadow": {
           "type": "column_short",
-          "opacity": 0.28,
-          "offset_x": 7,
+          "opacity": 0.26,
+          "offset_x": 4,
           "offset_y": 4
         },
         "attachment": null
       },
       {
-        "instance_id": "EntranceGuardRight",
-        "asset_id": "ST008",
-        "source_layer": "front_objects",
+        "instance_id": "EntrancePillarRight",
+        "asset_id": "A13",
+        "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          873.0,
-          836.0
+          894.0,
+          868.3
         ],
-        "scale": 0.68,
+        "scale": 1.1,
         "rotation_degrees": 0.0,
         "flip_h": false,
-        "z_index": 3,
-        "texture_path": "res://map_factory/parts/stairs/ST008_Stair_Entrance_Right.png",
+        "z_index": 0,
+        "texture_path": "res://assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png",
         "pixel_size": [
-          88,
-          146
+          64,
+          128
         ],
         "origin": [
-          44,
-          146
+          32,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -1906,9 +1269,471 @@
         },
         "shadow": {
           "type": "column_short",
-          "opacity": 0.28,
-          "offset_x": 7,
+          "opacity": 0.26,
+          "offset_x": 4,
           "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallL01",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          322.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallL02",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          386.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallL03",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          450.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallL04",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          514.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallR11",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          962.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallR12",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          1026.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallR13",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          1090.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallR14",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          1154.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontLowWallR15",
+        "asset_id": "W10",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          1218.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "StairSupportLeft",
+        "asset_id": "A11",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          630.0,
+          928.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.png",
+        "pixel_size": [
+          128,
+          128
+        ],
+        "origin": [
+          64,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "StairSupportRight",
+        "asset_id": "A12",
+        "source_layer": "back_objects",
+        "render_layer": "walls",
+        "position": [
+          864.0,
+          932.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.png",
+        "pixel_size": [
+          128,
+          128
+        ],
+        "origin": [
+          64,
+          128
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "attachment": null
       },
@@ -1999,28 +1824,28 @@
     ],
     "decorations": [
       {
-        "instance_id": "V001_back_objects_010",
-        "asset_id": "V001",
+        "instance_id": "ArchIvyLeft",
+        "asset_id": "P03",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          609.0,
-          197.0
+          596.0,
+          128.60000000000002
         ],
-        "scale": 0.56,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/vegetation/V001_Ivy_Hanging_Long.png",
+        "texture_path": "res://assets_generated/plants/P03__plants__ivy_hanging_long__default__1x1__64x128.png",
         "pixel_size": [
-          310,
-          249
+          64,
+          128
         ],
         "origin": [
-          155,
-          249
+          32,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -2033,127 +1858,43 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "V007_back_objects_011",
-        "asset_id": "V007",
-        "source_layer": "back_objects",
-        "render_layer": "decorations",
-        "position": [
-          978.0,
-          222.0
-        ],
-        "scale": 0.6,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png",
-        "pixel_size": [
-          160,
-          173
-        ],
-        "origin": [
-          80,
-          173
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "D007_back_objects_012",
-        "asset_id": "D007",
-        "source_layer": "back_objects",
-        "render_layer": "decorations",
-        "position": [
-          325.0,
-          426.0
-        ],
-        "scale": 0.63,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/decor/D007_Lantern_Hanging.png",
-        "pixel_size": [
-          73,
-          141
-        ],
-        "origin": [
-          36,
-          141
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "attachment": {
-          "parent_instance_id": "W001_back_objects_002",
+          "parent_instance_id": "RearArch",
           "host_render_layer": "walls",
           "mount_offset": [
-            48.0,
-            21.0
+            -105.0,
+            -170.0
           ]
         }
       },
       {
-        "instance_id": "D007_back_objects_013",
-        "asset_id": "D007",
+        "instance_id": "ArchIvyRight",
+        "asset_id": "P03",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1235.0,
-          433.0
+          806.0,
+          128.60000000000002
         ],
-        "scale": 0.63,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/decor/D007_Lantern_Hanging.png",
+        "texture_path": "res://assets_generated/plants/P03__plants__ivy_hanging_long__default__1x1__64x128.png",
         "pixel_size": [
-          73,
-          141
+          64,
+          128
         ],
         "origin": [
-          36,
-          141
+          32,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -2166,43 +1907,43 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "attachment": {
-          "parent_instance_id": "W014_back_objects_005",
+          "parent_instance_id": "RearArch",
           "host_render_layer": "walls",
           "mount_offset": [
-            -89.0,
-            19.0
+            105.0,
+            -170.0
           ]
         }
       },
       {
-        "instance_id": "CompassBannerArchRight",
-        "asset_id": "D004",
+        "instance_id": "ArchFloralLeft",
+        "asset_id": "P12",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1020.0,
-          291.0
+          587.0,
+          289.6
         ],
-        "scale": 0.79,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/decor/D004_Banner_Compass.png",
+        "texture_path": "res://assets_generated/plants/P12__plants__floral_wall_growth_left__default__1x1__64x64.png",
         "pixel_size": [
-          84,
-          152
+          64,
+          64
         ],
         "origin": [
-          42,
-          152
+          32,
+          64
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -2215,43 +1956,43 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "attachment": {
-          "parent_instance_id": "A012_back_objects_009",
+          "parent_instance_id": "RearArch",
           "host_render_layer": "walls",
           "mount_offset": [
-            114.0,
-            -69.0
+            -114.0,
+            -9.0
           ]
         }
       },
       {
-        "instance_id": "FlowerClusterArch",
-        "asset_id": "V009",
+        "instance_id": "ArchFloralRight",
+        "asset_id": "P13",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          775.0,
-          184.0
+          825.0,
+          289.6
         ],
-        "scale": 0.62,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/vegetation/V009_Ivy_Arch_Cluster.png",
+        "texture_path": "res://assets_generated/plants/P13__plants__floral_wall_growth_right__default__1x1__64x64.png",
         "pixel_size": [
-          169,
-          160
+          64,
+          64
         ],
         "origin": [
-          84,
-          160
+          32,
+          64
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -2264,43 +2005,43 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "attachment": {
-          "parent_instance_id": "ArchMain",
+          "parent_instance_id": "RearArch",
           "host_render_layer": "walls",
           "mount_offset": [
-            16.0,
-            -162.0
+            124.0,
+            -9.0
           ]
         }
       },
       {
         "instance_id": "LeftWallLantern",
-        "asset_id": "D008",
+        "asset_id": "L01",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          256.0,
-          463.0
+          244.0,
+          234.0
         ],
-        "scale": 0.59,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/decor/D008_Lantern_Wall_Left.png",
+        "texture_path": "res://assets_generated/lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.png",
         "pixel_size": [
-          94,
-          175
+          64,
+          64
         ],
         "origin": [
-          47,
-          175
+          32,
+          64
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -2313,43 +2054,92 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
           "offset_y": 2
         },
         "attachment": {
-          "parent_instance_id": "W001_back_objects_002",
+          "parent_instance_id": "BackWallR00",
           "host_render_layer": "walls",
           "mount_offset": [
-            -21.0,
-            58.0
+            -14.0,
+            -55.0
           ]
         }
       },
       {
         "instance_id": "RightWallLantern",
-        "asset_id": "D009",
+        "asset_id": "L01",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1332.0,
-          481.0
+          1296.0,
+          234.0
         ],
-        "scale": 0.59,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/decor/D009_Lantern_Wall_Right.png",
+        "texture_path": "res://assets_generated/lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.png",
         "pixel_size": [
-          116,
-          166
+          64,
+          64
         ],
         "origin": [
-          58,
-          166
+          32,
+          64
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "attachment": {
+          "parent_instance_id": "BackWallR16",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            14.0,
+            -55.0
+          ]
+        }
+      },
+      {
+        "instance_id": "ArchBannerRight",
+        "asset_id": "D04",
+        "source_layer": "back_objects",
+        "render_layer": "decorations",
+        "position": [
+          763.0,
+          208.60000000000002
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.png",
+        "pixel_size": [
+          64,
+          128
+        ],
+        "origin": [
+          32,
+          128
+        ],
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -2363,672 +2153,754 @@
         },
         "shadow": {
           "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "opacity": 0.0,
+          "offset_x": 0,
+          "offset_y": 0
         },
         "attachment": {
-          "parent_instance_id": "W014_back_objects_005",
+          "parent_instance_id": "RearArch",
           "host_render_layer": "walls",
           "mount_offset": [
-            8.0,
-            67.0
+            62.0,
+            -90.0
           ]
         }
       },
       {
-        "instance_id": "HeroBed",
-        "asset_id": "P024",
-        "source_layer": "objects",
+        "instance_id": "ArchBannerLeft",
+        "asset_id": "D05",
+        "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          410.0,
-          560.0
+          639.0,
+          208.60000000000002
         ],
-        "scale": 0.42,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P024_Compass_Rose_Fantasy_Bed_Frame.png",
+        "texture_path": "res://assets_generated/decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.png",
         "pixel_size": [
-          679,
-          570
+          64,
+          128
         ],
         "origin": [
-          339,
-          570
+          32,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
-          "enabled": true,
+          "enabled": false,
           "size": [
-            184,
-            58
+            32,
+            16
           ],
           "offset": [
             0,
-            -31
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.0,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        "attachment": {
+          "parent_instance_id": "RearArch",
+          "host_render_layer": "walls",
+          "mount_offset": [
+            -62.0,
+            -90.0
+          ]
+        }
+      },
+      {
+        "instance_id": "RoyalBed",
+        "asset_id": "F01",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          450.0,
+          545.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/furniture/F01__furniture__royal_wooden_bed__south__3x4__192x256.png",
+        "pixel_size": [
+          192,
+          256
+        ],
+        "origin": [
+          96,
+          256
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": true,
+          "size": [
+            192,
+            256
+          ],
+          "offset": [
+            0,
+            -128
           ]
         },
         "shadow": {
           "type": "bed",
-          "opacity": 0.35,
+          "opacity": 0.3,
           "offset_x": 0,
           "offset_y": 0
         },
-        "attachment": null
+        "attachment": null,
+        "orientation": {
+          "facing": "south",
+          "orientation_mode": "variants",
+          "turn_quarters": 2,
+          "resolved_asset_id": "F01",
+          "direction_asset_ids": {
+            "north": "F03",
+            "east": "F04",
+            "south": "F01",
+            "west": "F02"
+          }
+        },
+        "grid_placement": {
+          "cell": [
+            2,
+            1
+          ],
+          "facing": "south"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            3,
+            4
+          ],
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
       },
       {
-        "instance_id": "SideTable",
-        "asset_id": "P007",
+        "instance_id": "BedsideTable",
+        "asset_id": "F05",
         "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          276.0,
-          567.0
+          290.0,
+          481.0
         ],
-        "scale": 0.58,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P007_Bedside_Table.png",
+        "texture_path": "res://assets_generated/furniture/F05__furniture__bedside_table__south__2x2__128x128.png",
         "pixel_size": [
-          151,
-          243
+          128,
+          128
         ],
         "origin": [
-          75,
-          243
+          64,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": true,
           "size": [
-            64,
-            36
+            128,
+            128
           ],
           "offset": [
             0,
-            -20
+            -64
           ]
         },
         "shadow": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "contact_medium",
+          "opacity": 0.26,
+          "offset_x": 0,
+          "offset_y": 0
         },
-        "attachment": null
+        "attachment": null,
+        "orientation": {
+          "facing": "south",
+          "orientation_mode": "variants",
+          "turn_quarters": 2,
+          "resolved_asset_id": "F05_south",
+          "direction_asset_ids": {
+            "north": "F05_north",
+            "east": "F05_east",
+            "south": "F05_south",
+            "west": "F05_west"
+          }
+        },
+        "grid_placement": {
+          "cell": [
+            0,
+            2
+          ],
+          "facing": "south"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            2,
+            2
+          ],
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
       },
       {
-        "instance_id": "LeftBookshelf",
-        "asset_id": "P014",
+        "instance_id": "LeftBookcase",
+        "asset_id": "F06",
         "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          407.0,
-          424.0
+          418.0,
+          289.0
         ],
-        "scale": 0.63,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P014_Bookshelf_Large.png",
+        "texture_path": "res://assets_generated/furniture/F06__furniture__left_large_bookcase__north__4x1__256x128.png",
         "pixel_size": [
-          296,
-          269
+          256,
+          128
         ],
         "origin": [
-          148,
-          269
+          128,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": true,
           "size": [
-            138,
-            46
+            256,
+            64
           ],
           "offset": [
             0,
-            -23
+            -32
           ]
         },
         "shadow": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "bookshelf",
+          "opacity": 0.28,
+          "offset_x": 0,
+          "offset_y": 0
         },
-        "attachment": null
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            1,
+            0
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            4,
+            1
+          ],
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ]
       },
       {
-        "instance_id": "RightBookshelf",
-        "asset_id": "P015",
+        "instance_id": "RightBookcase",
+        "asset_id": "F07",
         "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          1132.0,
-          413.0
+          994.0,
+          353.0
         ],
-        "scale": 0.63,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P015_Bookshelf_Small.png",
+        "texture_path": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.png",
         "pixel_size": [
-          210,
-          232
+          256,
+          128
         ],
         "origin": [
-          105,
-          232
+          128,
+          128
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": true,
           "size": [
-            118,
-            42
+            256,
+            64
           ],
           "offset": [
             0,
-            -22
+            -32
           ]
         },
         "shadow": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "bookshelf",
+          "opacity": 0.28,
+          "offset_x": 0,
+          "offset_y": 0
         },
-        "attachment": null
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            10,
+            1
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            4,
+            1
+          ],
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            10,
+            1
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            13,
+            1
+          ]
+        ]
       },
       {
-        "instance_id": "WritingTable",
-        "asset_id": "P026",
+        "instance_id": "DiningTable",
+        "asset_id": "F08",
         "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          1124.0,
-          606.0
+          1122.0,
+          609.0
         ],
-        "scale": 0.46,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P026_Nautical_Compass_Study_Desk.png",
+        "texture_path": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.png",
         "pixel_size": [
-          760,
-          561
+          256,
+          192
         ],
         "origin": [
-          380,
-          561
+          128,
+          192
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": true,
           "size": [
-            205,
-            57
+            256,
+            192
           ],
           "offset": [
             0,
-            -26
+            -96
           ]
         },
         "shadow": {
           "type": "table",
-          "offset_x": 8,
-          "offset_y": 0,
-          "opacity": 0.35
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "VaseByArch",
-        "asset_id": "O001",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          1062.0,
-          484.0
-        ],
-        "scale": 0.43,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
-        "pixel_size": [
-          117,
-          165
-        ],
-        "origin": [
-          58,
-          165
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
+          "opacity": 0.3,
           "offset_x": 4,
-          "offset_y": 2
+          "offset_y": 0
         },
-        "attachment": null
-      },
-      {
-        "instance_id": "Astrolabe",
-        "asset_id": "O019",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          1226.0,
-          512.0
-        ],
-        "scale": 0.57,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/objects/O019_Astrolabe_Gold.png",
-        "pixel_size": [
-          151,
-          141
-        ],
-        "origin": [
-          75,
-          141
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            12,
+            3
           ],
-          "offset": [
-            0,
-            0
-          ]
+          "facing": "north"
         },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "Shell",
-        "asset_id": "O021",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          1320.0,
-          760.0
-        ],
-        "scale": 0.35,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/objects/O021_Seashell_Large.png",
-        "pixel_size": [
-          123,
-          114
-        ],
-        "origin": [
-          61,
-          114
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            4,
+            3
           ],
-          "offset": [
-            0,
-            0
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            12,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            12,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            14,
+            4
+          ],
+          [
+            15,
+            4
+          ],
+          [
+            12,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            14,
+            5
+          ],
+          [
+            15,
+            5
           ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
+        ]
       },
       {
-        "instance_id": "TreasureChest",
-        "asset_id": "P023",
+        "instance_id": "TableBenchLeft",
+        "asset_id": "F09",
         "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          1200.0,
-          780.0
+          1058.0,
+          673.0
         ],
-        "scale": 0.31,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P023_Cobalt_Compass_Treasure_Chest.png",
+        "texture_path": "res://assets_generated/furniture/F09__furniture__bench_horizontal__south__2x1__128x64.png",
         "pixel_size": [
-          649,
-          540
+          128,
+          64
         ],
         "origin": [
-          324,
-          540
+          64,
+          64
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": true,
           "size": [
-            74,
-            40
+            128,
+            64
           ],
           "offset": [
             0,
-            -15
+            -32
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "chair",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
         },
-        "attachment": null
+        "attachment": null,
+        "orientation": {
+          "facing": "south",
+          "orientation_mode": "variants",
+          "turn_quarters": 2,
+          "resolved_asset_id": "F09_south",
+          "direction_asset_ids": {
+            "north": "F09_north",
+            "east": "F09_east",
+            "south": "F09_south",
+            "west": "F09_west"
+          }
+        },
+        "grid_placement": {
+          "cell": [
+            12,
+            6
+          ],
+          "facing": "south"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            2,
+            1
+          ],
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            13,
+            6
+          ],
+          [
+            12,
+            6
+          ]
+        ]
       },
       {
-        "instance_id": "V017_objects_010",
-        "asset_id": "V017",
+        "instance_id": "TableBenchRight",
+        "asset_id": "F09",
         "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          1353.0,
-          623.0
+          1186.0,
+          673.0
         ],
-        "scale": 0.6,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/vegetation/V017_Tropical_Plant_Large.png",
+        "texture_path": "res://assets_generated/furniture/F09__furniture__bench_horizontal__south__2x1__128x64.png",
         "pixel_size": [
-          142,
-          171
+          128,
+          64
         ],
         "origin": [
-          71,
-          171
+          64,
+          64
         ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "plant",
-          "opacity": 0.16,
-          "offset_x": 3,
-          "offset_y": 3
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "V013_objects_011",
-        "asset_id": "V013",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          322.0,
-          777.0
-        ],
-        "scale": 0.62,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/vegetation/V013_Blue_Flowers_Large.png",
-        "pixel_size": [
-          187,
-          182
-        ],
-        "origin": [
-          93,
-          182
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "plant",
-          "opacity": 0.16,
-          "offset_x": 3,
-          "offset_y": 3
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "V020_objects_012",
-        "asset_id": "V020",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          1138.0,
-          834.0
-        ],
-        "scale": 0.49,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/vegetation/V020_Flower_Pot_Large.png",
-        "pixel_size": [
-          107,
-          108
-        ],
-        "origin": [
-          53,
-          108
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "plant",
-          "opacity": 0.16,
-          "offset_x": 3,
-          "offset_y": 3
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "V004_objects_017",
-        "asset_id": "V004",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          300.0,
-          830.0
-        ],
-        "scale": 0.66,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
-        "pixel_size": [
-          241,
-          168
-        ],
-        "origin": [
-          120,
-          168
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "V021_objects_018",
-        "asset_id": "V021",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          1037.0,
-          827.0
-        ],
-        "scale": 0.6,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://map_factory/parts/vegetation/V021_Flower_Pot_Small.png",
-        "pixel_size": [
-          174,
-          161
-        ],
-        "origin": [
-          87,
-          161
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "AntleredFlowerShrine",
-        "asset_id": "O028",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          892.0,
-          543.0
-        ],
-        "scale": 0.73,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 1,
-        "texture_path": "res://map_factory/parts/objects/O028_Antlered_Skull_Flower_Shrine_Refined.png",
-        "pixel_size": [
-          268,
-          276
-        ],
-        "origin": [
-          134,
-          266
-        ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": true,
           "size": [
-            80,
-            45
+            128,
+            64
           ],
           "offset": [
             0,
-            -22
+            -32
           ]
         },
         "shadow": {
-          "type": "directional_sun",
-          "opacity": 0.34,
-          "offset_x": -19,
-          "offset_y": 18
+          "type": "chair",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
         },
-        "attachment": null
+        "attachment": null,
+        "orientation": {
+          "facing": "south",
+          "orientation_mode": "variants",
+          "turn_quarters": 2,
+          "resolved_asset_id": "F09_south",
+          "direction_asset_ids": {
+            "north": "F09_north",
+            "east": "F09_east",
+            "south": "F09_south",
+            "west": "F09_west"
+          }
+        },
+        "grid_placement": {
+          "cell": [
+            14,
+            6
+          ],
+          "facing": "south"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            2,
+            1
+          ],
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            15,
+            6
+          ],
+          [
+            14,
+            6
+          ]
+        ]
       },
       {
-        "instance_id": "HeroHDBedCover",
-        "asset_id": "P025",
+        "instance_id": "ArchFlowersLeft",
+        "asset_id": "P05",
         "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          410.0,
-          535.0
+          578.0,
+          353.0
         ],
-        "scale": 0.37,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/furniture/P025_Royal_Blue_Compass_Bedspread.png",
+        "texture_path": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
         "pixel_size": [
-          760,
-          516
+          64,
+          64
         ],
         "origin": [
-          380,
-          516
+          32,
+          64
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -3041,600 +2913,250 @@
           ]
         },
         "shadow": {
-          "type": "none"
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 2,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            5,
+            1
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            1,
+            1
+          ],
+          "occupancy_group": "overlay",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "instance_id": "ArchFlowersRight",
+        "asset_id": "P06",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          770.0,
+          353.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/plants/P06__plants__blue_flower_cluster_small__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 2,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            8,
+            1
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            1,
+            1
+          ],
+          "occupancy_group": "overlay",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            8,
+            1
+          ]
+        ]
+      },
+      {
+        "instance_id": "ArchFlowersCenter",
+        "asset_id": "P04",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          642.0,
+          417.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 2,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            6,
+            2
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            1,
+            1
+          ],
+          "occupancy_group": "overlay",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            6,
+            2
+          ]
+        ]
+      },
+      {
+        "instance_id": "TableScroll",
+        "asset_id": "R05",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1030.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R05__props__scroll_bundle__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
         },
         "attachment": {
-          "parent_instance_id": "HeroBed",
+          "parent_instance_id": "DiningTable",
           "host_render_layer": "decorations",
           "mount_offset": [
-            0.0,
-            -25.0
+            -92.0,
+            -151.0
           ]
         }
       },
       {
-        "instance_id": "LowerLeftVines",
-        "asset_id": "V023",
-        "source_layer": "front_objects",
+        "instance_id": "TableMap",
+        "asset_id": "R09",
+        "source_layer": "objects",
         "render_layer": "decorations",
         "position": [
-          331.0,
-          852.0
+          1080.0,
+          458.0
         ],
-        "scale": 0.7,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V023_Cliff_Vegetation.png",
-        "pixel_size": [
-          163,
-          95
-        ],
-        "origin": [
-          81,
-          95
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "plant",
-          "opacity": 0.13,
-          "offset_x": 2,
-          "offset_y": 3
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "LowerRightVines",
-        "asset_id": "V024",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          1220.0,
-          854.0
-        ],
-        "scale": 0.76,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V024_Ground_Grass_Cluster.png",
-        "pixel_size": [
-          165,
-          102
-        ],
-        "origin": [
-          82,
-          102
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "plant",
-          "opacity": 0.13,
-          "offset_x": 2,
-          "offset_y": 3
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "FrontIvyLeft",
-        "asset_id": "V005",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          438.0,
-          829.0
-        ],
-        "scale": 0.6,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V005_Ivy_Horizontal_Short.png",
-        "pixel_size": [
-          199,
-          154
-        ],
-        "origin": [
-          99,
-          154
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": {
-          "parent_instance_id": "FrontWallUpperLeft",
-          "host_render_layer": "walls",
-          "mount_offset": [
-            1.0,
-            -12.0
-          ]
-        }
-      },
-      {
-        "instance_id": "FrontIvyRight",
-        "asset_id": "V004",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          1114.0,
-          828.0
-        ],
-        "scale": 0.56,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V004_Ivy_Horizontal_Long.png",
-        "pixel_size": [
-          241,
-          168
-        ],
-        "origin": [
-          120,
-          168
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": {
-          "parent_instance_id": "FrontWallUpperRight",
-          "host_render_layer": "walls",
-          "mount_offset": [
-            29.0,
-            -18.0
-          ]
-        }
-      },
-      {
-        "instance_id": "LeftFlowerFence",
-        "asset_id": "V010",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          240.0,
-          826.0
-        ],
-        "scale": 0.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V010_White_Flowers_Large.png",
-        "pixel_size": [
-          160,
-          176
-        ],
-        "origin": [
-          80,
-          176
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "RightFlowerFence",
-        "asset_id": "V011",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          1338.0,
-          815.0
-        ],
-        "scale": 0.53,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V011_White_Flowers_Medium.png",
-        "pixel_size": [
-          155,
-          146
-        ],
-        "origin": [
-          77,
-          146
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "ArchLeftFlowers",
-        "asset_id": "V012",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          513.0,
-          318.0
-        ],
-        "scale": 0.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V012_White_Flowers_Small.png",
-        "pixel_size": [
-          105,
-          115
-        ],
-        "origin": [
-          52,
-          115
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": {
-          "parent_instance_id": "W003_back_objects_003",
-          "host_render_layer": "walls",
-          "mount_offset": [
-            49.0,
-            -41.0
-          ]
-        }
-      },
-      {
-        "instance_id": "ArchRightFlowers",
-        "asset_id": "V012",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          1054.0,
-          320.0
-        ],
-        "scale": 0.48,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V012_White_Flowers_Small.png",
-        "pixel_size": [
-          105,
-          115
-        ],
-        "origin": [
-          52,
-          115
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": {
-          "parent_instance_id": "W002_back_objects_004",
-          "host_render_layer": "walls",
-          "mount_offset": [
-            -94.0,
-            -29.0
-          ]
-        }
-      },
-      {
-        "instance_id": "BlueBannerLeft",
-        "asset_id": "D001",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          205.0,
-          643.0
-        ],
-        "scale": 0.59,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/decor/D001_Banner_Blue_Long.png",
-        "pixel_size": [
-          154,
-          260
-        ],
-        "origin": [
-          77,
-          260
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": {
-          "parent_instance_id": "LeftPerimeterWallMid",
-          "host_render_layer": "walls",
-          "mount_offset": [
-            -33.0,
-            -12.0
-          ]
-        }
-      },
-      {
-        "instance_id": "BlueBannerRight",
-        "asset_id": "D001",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          1366.0,
-          651.0
-        ],
-        "scale": 0.62,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/decor/D001_Banner_Blue_Long.png",
-        "pixel_size": [
-          154,
-          260
-        ],
-        "origin": [
-          77,
-          260
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": {
-          "parent_instance_id": "RightPerimeterWallMid",
-          "host_render_layer": "walls",
-          "mount_offset": [
-            58.0,
-            -4.0
-          ]
-        }
-      },
-      {
-        "instance_id": "UpperLeftClimbingIvy",
-        "asset_id": "V006",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          225.0,
-          434.0
-        ],
-        "scale": 0.55,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V006_Ivy_Corner_Left.png",
-        "pixel_size": [
-          179,
-          233
-        ],
-        "origin": [
-          89,
-          233
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": {
-          "parent_instance_id": "W001_back_objects_002",
-          "host_render_layer": "walls",
-          "mount_offset": [
-            -52.0,
-            29.0
-          ]
-        }
-      },
-      {
-        "instance_id": "UpperRightClimbingIvy",
-        "asset_id": "V007",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          1305.0,
-          440.0
-        ],
-        "scale": 0.55,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 2,
-        "texture_path": "res://map_factory/parts/vegetation/V007_Ivy_Corner_Right.png",
-        "pixel_size": [
-          160,
-          173
-        ],
-        "origin": [
-          80,
-          173
-        ],
-        "status": "needs_cleanup",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
-        },
-        "attachment": {
-          "parent_instance_id": "W014_back_objects_005",
-          "host_render_layer": "walls",
-          "mount_offset": [
-            -19.0,
-            26.0
-          ]
-        }
-      },
-      {
-        "instance_id": "HeroHDBanner",
-        "asset_id": "D019",
-        "source_layer": "front_objects",
-        "render_layer": "decorations",
-        "position": [
-          985.0,
-          366.0
-        ],
-        "scale": 0.31,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/decor/D019_Royal_Blue_Compass_Banner.png",
+        "texture_path": "res://assets_generated/props/R09__props__open_map_on_table__default__1x1__64x64.png",
         "pixel_size": [
-          491,
-          667
+          64,
+          64
         ],
         "origin": [
-          245,
-          667
+          32,
+          64
         ],
-        "status": "needs_cleanup",
+        "status": "ready",
         "collision": {
           "enabled": false,
           "size": [
@@ -3647,293 +3169,585 @@
           ]
         },
         "shadow": {
-          "type": "none",
-          "opacity": 0.25,
-          "offset_x": 4,
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
           "offset_y": 2
         },
-        "attachment": null
+        "attachment": {
+          "parent_instance_id": "DiningTable",
+          "host_render_layer": "decorations",
+          "mount_offset": [
+            -42.0,
+            -151.0
+          ]
+        }
+      },
+      {
+        "instance_id": "TableBook",
+        "asset_id": "R06",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1120.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R06__props__open_book__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "attachment": {
+          "parent_instance_id": "DiningTable",
+          "host_render_layer": "decorations",
+          "mount_offset": [
+            -2.0,
+            -151.0
+          ]
+        }
+      },
+      {
+        "instance_id": "TableFruitBowl",
+        "asset_id": "R10",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1160.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R10__props__fruit_bowl__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "attachment": {
+          "parent_instance_id": "DiningTable",
+          "host_render_layer": "decorations",
+          "mount_offset": [
+            38.0,
+            -151.0
+          ]
+        }
+      },
+      {
+        "instance_id": "TableJug",
+        "asset_id": "R11",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1210.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R11__props__white_jug__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "attachment": {
+          "parent_instance_id": "DiningTable",
+          "host_render_layer": "decorations",
+          "mount_offset": [
+            88.0,
+            -151.0
+          ]
+        }
+      },
+      {
+        "instance_id": "ArchVaseLeft",
+        "asset_id": "R01",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          258.0,
+          353.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R01__props__blue_gold_ceramic_vase_small__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": true,
+          "size": [
+            64,
+            64
+          ],
+          "offset": [
+            0,
+            -32
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 2,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            0,
+            1
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            1,
+            1
+          ],
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "instance_id": "ArchVaseRight",
+        "asset_id": "R02",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          834.0,
+          353.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R02__props__blue_gold_ceramic_vase_large__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": true,
+          "size": [
+            64,
+            64
+          ],
+          "offset": [
+            0,
+            -32
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 2,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "grid_placement": {
+          "cell": [
+            9,
+            1
+          ],
+          "facing": "north"
+        },
+        "placement_contract": {
+          "schema_version": 1,
+          "mode": "floor",
+          "footprint_cells": [
+            1,
+            1
+          ],
+          "occupancy_group": "solid",
+          "allowed_floor_tags": [
+            "stone"
+          ],
+          "forbidden_floor_tags": [],
+          "measurement_status": "provisional"
+        },
+        "occupied_floor_cells": [
+          [
+            9,
+            1
+          ]
+        ]
       }
     ],
     "shadows": [
       {
         "instance_id": "BedRug__shadow",
         "owner_instance_id": "BedRug",
-        "owner_asset_id": "P005",
+        "owner_asset_id": "D01",
         "asset_id": "S002",
         "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
         "position": [
-          410.0,
-          594.0
+          450.0,
+          609.0
         ],
-        "scale": 0.69,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          238,
-          304
+          192,
+          256
         ],
         "settings": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "DeskRug__shadow",
-        "owner_instance_id": "DeskRug",
-        "owner_asset_id": "P005",
+        "instance_id": "TableRug__shadow",
+        "owner_instance_id": "TableRug",
+        "owner_asset_id": "D02",
         "asset_id": "S002",
         "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
         "position": [
-          1126.0,
-          631.0
+          1122.0,
+          673.0
         ],
-        "scale": 0.68,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          238,
-          304
+          256,
+          256
         ],
         "settings": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "ArchMain__shadow",
-        "owner_instance_id": "ArchMain",
-        "owner_asset_id": "A005",
+        "instance_id": "CompassFloorEmblem__shadow",
+        "owner_instance_id": "CompassFloorEmblem",
+        "owner_asset_id": "D03",
+        "asset_id": "S002",
+        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
+        "position": [
+          738.0,
+          737.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          256,
+          256
+        ],
+        "settings": {
+          "type": "contact_medium",
+          "opacity": 0.2,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "RearArch__shadow",
+        "owner_instance_id": "RearArch",
+        "owner_asset_id": "A05",
         "asset_id": "S016",
         "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
         "position": [
-          759.0,
-          346.0
+          701.0,
+          298.6
         ],
-        "scale": 1.03,
+        "scale": 2.4,
         "sprite_pixel_size": [
-          328,
-          283
+          128,
+          128
         ],
         "settings": {
           "type": "soft_cast",
-          "opacity": 0.22,
-          "offset_x": 9,
-          "offset_y": 8
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "LeftDeepRuinCorner__shadow",
-        "owner_instance_id": "LeftDeepRuinCorner",
-        "owner_asset_id": "W020",
-        "asset_id": "S014",
-        "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
+        "instance_id": "ArchColumnLeft__shadow",
+        "owner_instance_id": "ArchColumnLeft",
+        "owner_asset_id": "A01",
+        "asset_id": "S012",
+        "texture_path": "res://map_factory/parts/shadows/S012_Shadow_Column_Long.png",
         "position": [
-          237.0,
-          697.0
+          530.5,
+          294.0
         ],
-        "scale": 0.73,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          246,
-          238
+          64,
+          128
         ],
         "settings": {
-          "type": "wall_corner",
-          "opacity": 0.28,
-          "offset_x": 5,
-          "offset_y": 7
+          "type": "column_long",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "RightDeepRuinCorner__shadow",
-        "owner_instance_id": "RightDeepRuinCorner",
-        "owner_asset_id": "W020",
-        "asset_id": "S014",
-        "texture_path": "res://map_factory/parts/shadows/S014_Shadow_Wall_Corner.png",
+        "instance_id": "ArchColumnRight__shadow",
+        "owner_instance_id": "ArchColumnRight",
+        "owner_asset_id": "A01",
+        "asset_id": "S012",
+        "texture_path": "res://map_factory/parts/shadows/S012_Shadow_Column_Long.png",
         "position": [
-          1316.0,
-          698.0
+          888.5,
+          294.0
         ],
-        "scale": 0.73,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          246,
-          238
+          64,
+          128
         ],
         "settings": {
-          "type": "wall_corner",
-          "opacity": 0.28,
-          "offset_x": 5,
-          "offset_y": 7
+          "type": "column_long",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "LeftPerimeterWallMid__shadow",
-        "owner_instance_id": "LeftPerimeterWallMid",
-        "owner_asset_id": "W005",
+        "instance_id": "RearRightDoor__shadow",
+        "owner_instance_id": "RearRightDoor",
+        "owner_asset_id": "A09",
+        "asset_id": "S016",
+        "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
+        "position": [
+          1105.875,
+          297.75
+        ],
+        "scale": 1.75,
+        "sprite_pixel_size": [
+          128,
+          128
+        ],
+        "settings": {
+          "type": "soft_cast",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "BackWallR00__shadow",
+        "owner_instance_id": "BackWallR00",
+        "owner_asset_id": "W01",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          238.0,
-          655.0
+          258.0,
+          289.0
         ],
-        "scale": 0.75,
+        "scale": 1.5,
         "sprite_pixel_size": [
-          197,
-          229
+          64,
+          128
         ],
         "settings": {
           "type": "wall_base",
           "opacity": 0.24,
-          "offset_x": 9,
-          "offset_y": 7
+          "offset_x": 6,
+          "offset_y": 5
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "RightPerimeterWallMid__shadow",
-        "owner_instance_id": "RightPerimeterWallMid",
-        "owner_asset_id": "W005",
+        "instance_id": "BackWallR11__shadow",
+        "owner_instance_id": "BackWallR11",
+        "owner_asset_id": "W01",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          1308.0,
-          655.0
+          962.0,
+          289.0
         ],
-        "scale": 0.77,
+        "scale": 1.5,
         "sprite_pixel_size": [
-          197,
-          229
+          64,
+          128
         ],
         "settings": {
           "type": "wall_base",
           "opacity": 0.24,
-          "offset_x": 9,
-          "offset_y": 7
+          "offset_x": 6,
+          "offset_y": 5
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "FrontWallUpperLeft__shadow",
-        "owner_instance_id": "FrontWallUpperLeft",
-        "owner_asset_id": "W012",
+        "instance_id": "BackWallR12__shadow",
+        "owner_instance_id": "BackWallR12",
+        "owner_asset_id": "W01",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          437.0,
-          841.0
+          1026.0,
+          289.0
         ],
-        "scale": 0.96,
+        "scale": 1.5,
         "sprite_pixel_size": [
-          169,
-          91
+          64,
+          128
         ],
         "settings": {
           "type": "wall_base",
-          "opacity": 0.18,
-          "offset_x": 4,
-          "offset_y": 8
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "FrontWallUpperRight__shadow",
-        "owner_instance_id": "FrontWallUpperRight",
-        "owner_asset_id": "W013",
+        "instance_id": "BackWallR16__shadow",
+        "owner_instance_id": "BackWallR16",
+        "owner_asset_id": "W01",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          1085.0,
-          846.0
+          1282.0,
+          289.0
         ],
-        "scale": 0.95,
+        "scale": 1.5,
         "sprite_pixel_size": [
-          146,
-          92
+          64,
+          128
         ],
         "settings": {
           "type": "wall_base",
-          "opacity": 0.18,
-          "offset_x": 4,
-          "offset_y": 8
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "FrontWallCenterLeft__shadow",
-        "owner_instance_id": "FrontWallCenterLeft",
-        "owner_asset_id": "W010",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          552.0,
-          861.0
-        ],
-        "scale": 0.92,
-        "sprite_pixel_size": [
-          166,
-          87
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.22,
-          "offset_x": 8,
-          "offset_y": 9
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "FrontWallCenterRight__shadow",
-        "owner_instance_id": "FrontWallCenterRight",
-        "owner_asset_id": "W011",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          978.0,
-          858.0
-        ],
-        "scale": 0.92,
-        "sprite_pixel_size": [
-          126,
-          99
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.22,
-          "offset_x": 8,
-          "offset_y": 9
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "EntryStairUpper__shadow",
-        "owner_instance_id": "EntryStairUpper",
-        "owner_asset_id": "ST001",
+        "instance_id": "StairStep1__shadow",
+        "owner_instance_id": "StairStep1",
+        "owner_asset_id": "A10",
         "asset_id": "S015",
         "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
         "position": [
-          776.0,
-          895.0
+          750.0,
+          910.4
         ],
-        "scale": 1.03,
+        "scale": 1.6,
         "sprite_pixel_size": [
-          192,
-          76
+          128,
+          128
         ],
         "settings": {
           "type": "stairs",
@@ -3945,49 +3759,385 @@
         "display_z": 20
       },
       {
-        "instance_id": "EntranceGuardLeft__shadow",
-        "owner_instance_id": "EntranceGuardLeft",
-        "owner_asset_id": "ST007",
+        "instance_id": "StairStep2__shadow",
+        "owner_instance_id": "StairStep2",
+        "owner_asset_id": "A10",
+        "asset_id": "S015",
+        "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
+        "position": [
+          750.0,
+          946.4
+        ],
+        "scale": 1.6,
+        "sprite_pixel_size": [
+          128,
+          128
+        ],
+        "settings": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "StairStep3__shadow",
+        "owner_instance_id": "StairStep3",
+        "owner_asset_id": "A10",
+        "asset_id": "S015",
+        "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
+        "position": [
+          750.0,
+          982.4
+        ],
+        "scale": 1.6,
+        "sprite_pixel_size": [
+          128,
+          128
+        ],
+        "settings": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "StairStep4__shadow",
+        "owner_instance_id": "StairStep4",
+        "owner_asset_id": "A10",
+        "asset_id": "S015",
+        "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
+        "position": [
+          750.0,
+          1018.4
+        ],
+        "scale": 1.6,
+        "sprite_pixel_size": [
+          128,
+          128
+        ],
+        "settings": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "EntrancePillarLeft__shadow",
+        "owner_instance_id": "EntrancePillarLeft",
+        "owner_asset_id": "A13",
         "asset_id": "S011",
         "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
         "position": [
-          670.0,
-          836.0
+          602.0,
+          868.3
         ],
-        "scale": 0.68,
+        "scale": 1.1,
         "sprite_pixel_size": [
-          73,
-          145
+          64,
+          128
         ],
         "settings": {
           "type": "column_short",
-          "opacity": 0.28,
-          "offset_x": 7,
+          "opacity": 0.26,
+          "offset_x": 4,
           "offset_y": 4
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "EntranceGuardRight__shadow",
-        "owner_instance_id": "EntranceGuardRight",
-        "owner_asset_id": "ST008",
+        "instance_id": "EntrancePillarRight__shadow",
+        "owner_instance_id": "EntrancePillarRight",
+        "owner_asset_id": "A13",
         "asset_id": "S011",
         "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
         "position": [
-          873.0,
-          836.0
+          894.0,
+          868.3
         ],
-        "scale": 0.68,
+        "scale": 1.1,
         "sprite_pixel_size": [
-          88,
-          146
+          64,
+          128
         ],
         "settings": {
           "type": "column_short",
-          "opacity": 0.28,
-          "offset_x": 7,
+          "opacity": 0.26,
+          "offset_x": 4,
           "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallL01__shadow",
+        "owner_instance_id": "FrontLowWallL01",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          322.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallL02__shadow",
+        "owner_instance_id": "FrontLowWallL02",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          386.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallL03__shadow",
+        "owner_instance_id": "FrontLowWallL03",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          450.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallL04__shadow",
+        "owner_instance_id": "FrontLowWallL04",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          514.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallR11__shadow",
+        "owner_instance_id": "FrontLowWallR11",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          962.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallR12__shadow",
+        "owner_instance_id": "FrontLowWallR12",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          1026.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallR13__shadow",
+        "owner_instance_id": "FrontLowWallR13",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          1090.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallR14__shadow",
+        "owner_instance_id": "FrontLowWallR14",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          1154.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontLowWallR15__shadow",
+        "owner_instance_id": "FrontLowWallR15",
+        "owner_asset_id": "W10",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          1218.0,
+          893.5
+        ],
+        "scale": 1.5,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "StairSupportLeft__shadow",
+        "owner_instance_id": "StairSupportLeft",
+        "owner_asset_id": "A11",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          630.0,
+          928.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          128,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "StairSupportRight__shadow",
+        "owner_instance_id": "StairSupportRight",
+        "owner_asset_id": "A12",
+        "asset_id": "S013",
+        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
+        "position": [
+          864.0,
+          932.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          128,
+          128
+        ],
+        "settings": {
+          "type": "wall_base",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 3
         },
         "render_layer": "shadows",
         "display_z": 20
@@ -4041,23 +4191,167 @@
         "display_z": 20
       },
       {
-        "instance_id": "HeroBed__shadow",
-        "owner_instance_id": "HeroBed",
-        "owner_asset_id": "P024",
+        "instance_id": "ArchIvyLeft__shadow",
+        "owner_instance_id": "ArchIvyLeft",
+        "owner_asset_id": "P03",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          596.0,
+          128.60000000000002
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "ArchIvyRight__shadow",
+        "owner_instance_id": "ArchIvyRight",
+        "owner_asset_id": "P03",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          806.0,
+          128.60000000000002
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          128
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "ArchFloralLeft__shadow",
+        "owner_instance_id": "ArchFloralLeft",
+        "owner_asset_id": "P12",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          587.0,
+          289.6
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "ArchFloralRight__shadow",
+        "owner_instance_id": "ArchFloralRight",
+        "owner_asset_id": "P13",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          825.0,
+          289.6
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "LeftWallLantern__shadow",
+        "owner_instance_id": "LeftWallLantern",
+        "owner_asset_id": "L01",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          244.0,
+          234.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "RightWallLantern__shadow",
+        "owner_instance_id": "RightWallLantern",
+        "owner_asset_id": "L01",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          1296.0,
+          234.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "RoyalBed__shadow",
+        "owner_instance_id": "RoyalBed",
+        "owner_asset_id": "F01",
         "asset_id": "S005",
         "texture_path": "res://map_factory/parts/shadows/S005_Shadow_Bed.png",
         "position": [
-          410.0,
-          560.0
+          450.0,
+          545.0
         ],
-        "scale": 0.42,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          679,
-          570
+          192,
+          256
         ],
         "settings": {
           "type": "bed",
-          "opacity": 0.35,
+          "opacity": 0.3,
           "offset_x": 0,
           "offset_y": 0
         },
@@ -4065,241 +4359,385 @@
         "display_z": 20
       },
       {
-        "instance_id": "SideTable__shadow",
-        "owner_instance_id": "SideTable",
-        "owner_asset_id": "P007",
+        "instance_id": "BedsideTable__shadow",
+        "owner_instance_id": "BedsideTable",
+        "owner_asset_id": "F05",
         "asset_id": "S002",
         "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
         "position": [
-          276.0,
-          567.0
+          290.0,
+          481.0
         ],
-        "scale": 0.58,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          151,
-          243
+          128,
+          128
         ],
         "settings": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "contact_medium",
+          "opacity": 0.26,
+          "offset_x": 0,
+          "offset_y": 0
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "LeftBookshelf__shadow",
-        "owner_instance_id": "LeftBookshelf",
-        "owner_asset_id": "P014",
-        "asset_id": "S002",
-        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
+        "instance_id": "LeftBookcase__shadow",
+        "owner_instance_id": "LeftBookcase",
+        "owner_asset_id": "F06",
+        "asset_id": "S008",
+        "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png",
         "position": [
-          407.0,
-          424.0
+          418.0,
+          289.0
         ],
-        "scale": 0.63,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          296,
-          269
+          256,
+          128
         ],
         "settings": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "bookshelf",
+          "opacity": 0.28,
+          "offset_x": 0,
+          "offset_y": 0
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "RightBookshelf__shadow",
-        "owner_instance_id": "RightBookshelf",
-        "owner_asset_id": "P015",
-        "asset_id": "S002",
-        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
+        "instance_id": "RightBookcase__shadow",
+        "owner_instance_id": "RightBookcase",
+        "owner_asset_id": "F07",
+        "asset_id": "S008",
+        "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png",
         "position": [
-          1132.0,
-          413.0
+          994.0,
+          353.0
         ],
-        "scale": 0.63,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          210,
-          232
+          256,
+          128
         ],
         "settings": {
-          "type": "contact",
-          "opacity": 0.25,
-          "offset_x": 4,
-          "offset_y": 2
+          "type": "bookshelf",
+          "opacity": 0.28,
+          "offset_x": 0,
+          "offset_y": 0
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "WritingTable__shadow",
-        "owner_instance_id": "WritingTable",
-        "owner_asset_id": "P026",
+        "instance_id": "DiningTable__shadow",
+        "owner_instance_id": "DiningTable",
+        "owner_asset_id": "F08",
         "asset_id": "S006",
         "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
         "position": [
-          1124.0,
-          606.0
+          1122.0,
+          609.0
         ],
-        "scale": 0.46,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          760,
-          561
+          256,
+          192
         ],
         "settings": {
           "type": "table",
-          "offset_x": 8,
-          "offset_y": 0,
-          "opacity": 0.35
+          "opacity": 0.3,
+          "offset_x": 4,
+          "offset_y": 0
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "V017_objects_010__shadow",
-        "owner_instance_id": "V017_objects_010",
-        "owner_asset_id": "V017",
+        "instance_id": "TableBenchLeft__shadow",
+        "owner_instance_id": "TableBenchLeft",
+        "owner_asset_id": "F09",
+        "asset_id": "S007",
+        "texture_path": "res://map_factory/parts/shadows/S007_Shadow_Chair.png",
+        "position": [
+          1058.0,
+          673.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          128,
+          64
+        ],
+        "settings": {
+          "type": "chair",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "TableBenchRight__shadow",
+        "owner_instance_id": "TableBenchRight",
+        "owner_asset_id": "F09",
+        "asset_id": "S007",
+        "texture_path": "res://map_factory/parts/shadows/S007_Shadow_Chair.png",
+        "position": [
+          1186.0,
+          673.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          128,
+          64
+        ],
+        "settings": {
+          "type": "chair",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "ArchFlowersLeft__shadow",
+        "owner_instance_id": "ArchFlowersLeft",
+        "owner_asset_id": "P05",
         "asset_id": "S010",
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
-          1353.0,
-          623.0
+          578.0,
+          353.0
         ],
-        "scale": 0.6,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          142,
-          171
+          64,
+          64
         ],
         "settings": {
           "type": "plant",
           "opacity": 0.16,
-          "offset_x": 3,
-          "offset_y": 3
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "V013_objects_011__shadow",
-        "owner_instance_id": "V013_objects_011",
-        "owner_asset_id": "V013",
-        "asset_id": "S010",
-        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
-        "position": [
-          322.0,
-          777.0
-        ],
-        "scale": 0.62,
-        "sprite_pixel_size": [
-          187,
-          182
-        ],
-        "settings": {
-          "type": "plant",
-          "opacity": 0.16,
-          "offset_x": 3,
-          "offset_y": 3
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "V020_objects_012__shadow",
-        "owner_instance_id": "V020_objects_012",
-        "owner_asset_id": "V020",
-        "asset_id": "S010",
-        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
-        "position": [
-          1138.0,
-          834.0
-        ],
-        "scale": 0.49,
-        "sprite_pixel_size": [
-          107,
-          108
-        ],
-        "settings": {
-          "type": "plant",
-          "opacity": 0.16,
-          "offset_x": 3,
-          "offset_y": 3
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "AntleredFlowerShrine__shadow",
-        "owner_instance_id": "AntleredFlowerShrine",
-        "owner_asset_id": "O028",
-        "asset_id": "S017",
-        "texture_path": "res://map_factory/parts/shadows/S017_Directional_Sun_Cast_Shadow.png",
-        "position": [
-          892.0,
-          543.0
-        ],
-        "scale": 0.73,
-        "sprite_pixel_size": [
-          268,
-          276
-        ],
-        "settings": {
-          "type": "directional_sun",
-          "opacity": 0.34,
-          "offset_x": -19,
-          "offset_y": 18
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "LowerLeftVines__shadow",
-        "owner_instance_id": "LowerLeftVines",
-        "owner_asset_id": "V023",
-        "asset_id": "S010",
-        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
-        "position": [
-          331.0,
-          852.0
-        ],
-        "scale": 0.7,
-        "sprite_pixel_size": [
-          163,
-          95
-        ],
-        "settings": {
-          "type": "plant",
-          "opacity": 0.13,
           "offset_x": 2,
-          "offset_y": 3
+          "offset_y": 2
         },
         "render_layer": "shadows",
         "display_z": 20
       },
       {
-        "instance_id": "LowerRightVines__shadow",
-        "owner_instance_id": "LowerRightVines",
-        "owner_asset_id": "V024",
+        "instance_id": "ArchFlowersRight__shadow",
+        "owner_instance_id": "ArchFlowersRight",
+        "owner_asset_id": "P06",
         "asset_id": "S010",
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
-          1220.0,
-          854.0
+          770.0,
+          353.0
         ],
-        "scale": 0.76,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          165,
-          102
+          64,
+          64
         ],
         "settings": {
           "type": "plant",
-          "opacity": 0.13,
+          "opacity": 0.16,
           "offset_x": 2,
-          "offset_y": 3
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "ArchFlowersCenter__shadow",
+        "owner_instance_id": "ArchFlowersCenter",
+        "owner_asset_id": "P04",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          642.0,
+          417.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 2,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "TableScroll__shadow",
+        "owner_instance_id": "TableScroll",
+        "owner_asset_id": "R05",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          1030.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "TableMap__shadow",
+        "owner_instance_id": "TableMap",
+        "owner_asset_id": "R09",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          1080.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "TableBook__shadow",
+        "owner_instance_id": "TableBook",
+        "owner_asset_id": "R06",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          1120.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "TableFruitBowl__shadow",
+        "owner_instance_id": "TableFruitBowl",
+        "owner_asset_id": "R10",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          1160.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "TableJug__shadow",
+        "owner_instance_id": "TableJug",
+        "owner_asset_id": "R11",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          1210.0,
+          458.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "ArchVaseLeft__shadow",
+        "owner_instance_id": "ArchVaseLeft",
+        "owner_asset_id": "R01",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          258.0,
+          353.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 2,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "ArchVaseRight__shadow",
+        "owner_instance_id": "ArchVaseRight",
+        "owner_asset_id": "R02",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          834.0,
+          353.0
+        ],
+        "scale": 1.0,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 2,
+          "offset_y": 2
         },
         "render_layer": "shadows",
         "display_z": 20
@@ -4341,75 +4779,35 @@
       "joint_opacity": 0.27,
       "joint_width": 1.15
     },
-    "overrides": [
-      {
-        "x": 7,
-        "y": 4,
-        "id": "F019"
-      },
-      {
-        "x": 7,
-        "y": 5,
-        "id": "F018"
-      },
-      {
-        "x": 7,
-        "y": 6,
-        "id": "F021"
-      },
-      {
-        "x": 8,
-        "y": 4,
-        "id": "F015"
-      },
-      {
-        "x": 8,
-        "y": 5,
-        "id": "F014"
-      },
-      {
-        "x": 8,
-        "y": 6,
-        "id": "F016"
-      },
-      {
-        "x": 9,
-        "y": 4,
-        "id": "F020"
-      },
-      {
-        "x": 9,
-        "y": 5,
-        "id": "F017"
-      },
-      {
-        "x": 9,
-        "y": 6,
-        "id": "F022"
-      }
-    ],
+    "overrides": [],
     "footprint": {
       "row_spans": [
         [
           [
-            2,
-            5
+            0,
+            4
           ],
           [
             11,
-            14
+            16
           ]
         ],
         [
           [
-            1,
-            15
+            0,
+            16
           ]
         ],
         [
           [
-            1,
-            15
+            0,
+            16
+          ]
+        ],
+        [
+          [
+            0,
+            16
           ]
         ],
         [
@@ -4444,41 +4842,37 @@
         ],
         [
           [
-            1,
-            15
-          ]
-        ],
-        [
-          [
-            3,
-            13
+            6,
+            10
           ]
         ]
       ],
-      "shape": "stepped_ruined_sanctuary",
-      "notes": "Only listed world cells receive floor sprites; omitted cells show the actual ocean beneath. Floor grid 17x10."
+      "shape": "hero_room_reference_v1",
+      "notes": "Row 0 leaves cells 5-10 open so the rear arch opening reveals the ocean behind it."
     }
   },
   "counts": {
-    "background": 5,
-    "ground": 2,
-    "walls": 40,
-    "decorations": 37,
-    "shadows": 27
+    "background": 7,
+    "ground": 3,
+    "walls": 27,
+    "decorations": 25,
+    "shadows": 53
   },
   "unique_asset_ids": [
-    "A005",
-    "A007",
-    "A012",
-    "A015",
-    "A017",
-    "A018",
-    "D001",
-    "D004",
-    "D007",
-    "D008",
-    "D009",
-    "D019",
+    "A01",
+    "A05",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "B05",
+    "B06",
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
     "E015",
     "E016",
     "E017",
@@ -4486,100 +4880,66 @@
     "E024",
     "F001",
     "F002",
-    "F014",
-    "F015",
-    "F016",
-    "F017",
-    "F018",
-    "F019",
-    "F020",
-    "F021",
-    "F022",
-    "O001",
-    "O019",
-    "O021",
-    "O028",
-    "P005",
-    "P007",
-    "P014",
-    "P015",
-    "P023",
-    "P024",
-    "P025",
-    "P026",
+    "F01",
+    "F05",
+    "F05_south",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F09_south",
+    "L01",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P12",
+    "P13",
+    "R01",
+    "R02",
+    "R05",
+    "R06",
+    "R09",
+    "R10",
+    "R11",
+    "S001",
     "S002",
     "S005",
     "S006",
+    "S007",
+    "S008",
     "S010",
     "S011",
+    "S012",
     "S013",
-    "S014",
     "S015",
     "S016",
-    "S017",
-    "ST001",
-    "ST002",
-    "ST003",
-    "ST004",
-    "ST005",
-    "ST006",
-    "ST007",
-    "ST008",
-    "ST011",
-    "ST012",
-    "ST013",
-    "V001",
-    "V004",
-    "V005",
-    "V006",
-    "V007",
-    "V009",
-    "V010",
-    "V011",
-    "V012",
-    "V013",
-    "V017",
-    "V020",
-    "V021",
-    "V023",
-    "V024",
-    "W001",
-    "W002",
-    "W003",
-    "W005",
-    "W010",
-    "W011",
-    "W012",
-    "W013",
-    "W014",
-    "W015",
-    "W020",
-    "W021",
-    "W022"
+    "W01",
+    "W10"
   ],
   "lighting_effects": [
     {
       "instance_id": "LanternLeftGlow",
       "kind": "lantern",
-      "x": 327,
-      "y": 382,
-      "scale": 0.48,
+      "x": 258,
+      "y": 420,
+      "scale": 0.45,
       "glow_alpha": 0.38
     },
     {
       "instance_id": "LanternRightGlow",
       "kind": "lantern",
-      "x": 1245,
-      "y": 384,
-      "scale": 0.5,
+      "x": 1282,
+      "y": 420,
+      "scale": 0.45,
       "glow_alpha": 0.38
     },
     {
       "instance_id": "TableCandleGlow",
       "kind": "candle",
-      "x": 1172,
-      "y": 542,
-      "scale": 0.42,
+      "x": 1122,
+      "y": 440,
+      "scale": 0.4,
       "glow_alpha": 0.34
     }
   ],

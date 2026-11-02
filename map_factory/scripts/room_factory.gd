@@ -42,6 +42,10 @@ func build_room(path: String, parent: Node2D) -> Node2D:
         push_error("Room JSON malformed: " + path)
         return root
     var data: Dictionary = value
+    var projection_y := float(data.get("projection_y", 1.0))
+    if not is_finite(projection_y) or projection_y <= 0.0:
+        projection_y = 1.0
+    root.set_meta("projection_y", projection_y)
     root.set_meta("map_id", String(data.get("map_id", "legacy_room")))
     root.set_meta("map_version", int(data.get("version", 0)))
     var backdrop := Polygon2D.new()
@@ -67,28 +71,32 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     var stack: Dictionary = data.get("layer_stack", {})
     if not stack.is_empty() and int(stack.get("schema_version", 0)) == 1:
         _build_five_levels(data, stack, root)
-        _place_effects(data.get("effects", []), root)
+        _place_effects(data.get("effects", []), root, projection_y)
         return root
 
     _place_group(data.get("background_objects", []), root, "DistantRuins", false, Vector2(float(canvas[0]), float(canvas[1])))
     var ground := Node2D.new()
     ground.name = "Ground"
     root.add_child(ground)
-    _paint_ground(data, ground)
+    _paint_ground(data, ground, projection_y)
     _place_group(data.get("ground_overlays", []), root, "GroundOverlays", false)
     _place_group(data.get("back_objects", []), root, "RearArchitecture", false)
     _place_group(data.get("objects", []), root, "Entities", true)
     _place_group(data.get("front_objects", []), root, "FrontDecorations", false)
-    _place_effects(data.get("effects", []), root)
+    _place_effects(data.get("effects", []), root, projection_y)
     return root
 
 func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> void:
     var passes: Dictionary = stack.get("passes", {})
+    var projection_y := float(data.get("projection_y", 1.0))
+    if not is_finite(projection_y) or projection_y <= 0.0:
+        projection_y = 1.0
+    root.set_meta("projection_y", projection_y)
     var background := BackgroundFactory.new()
     background.name = "Level0_Background"
     background.z_index = 0
     root.add_child(background)
-    _place_compiled_entries(passes.get("background", []), background)
+    _place_compiled_entries(passes.get("background", []), background, 1.0)
     var canvas: Array = data.get("canvas_size", [1536, 1024])
     background.configure(passes.get("background", []), catalog, Vector2(float(canvas[0]), float(canvas[1])))
 
@@ -99,11 +107,11 @@ func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> vo
     var tiles := Node2D.new()
     tiles.name = "Ground"
     floor_level.add_child(tiles)
-    _paint_ground(data, tiles)
+    _paint_ground(data, tiles, projection_y)
     var overlays := Node2D.new()
     overlays.name = "GroundOverlays"
     floor_level.add_child(overlays)
-    _place_compiled_entries(passes.get("ground", []), overlays)
+    _place_compiled_entries(passes.get("ground", []), overlays, projection_y)
 
     # The old fixed z=30/40 hierarchy ALWAYS drew furniture in front of
     # every wall, even walls physically closer to the camera. Optional unified
@@ -123,14 +131,14 @@ func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> vo
     walls.z_index = 0 if unified_sort else 30
     walls.y_sort_enabled = true
     world_parent.add_child(walls)
-    _place_compiled_entries(passes.get("walls", []), walls)
+    _place_compiled_entries(passes.get("walls", []), walls, projection_y)
 
     var decor := Node2D.new()
     decor.name = "Level3_Decorations"
     decor.z_index = 0 if unified_sort else 40
     decor.y_sort_enabled = true
     world_parent.add_child(decor)
-    _place_compiled_entries(passes.get("decorations", []), decor)
+    _place_compiled_entries(passes.get("decorations", []), decor, projection_y)
     var placed := _index_placements([background, overlays, walls, decor])
     _mount_on_hosts(decor, placed, root)
 
@@ -234,7 +242,7 @@ static func _watch_links(room: Node2D) -> void:
     if room.is_inside_tree():
         start.call()
 
-func _place_compiled_entries(entries: Array, group: Node2D) -> void:
+func _place_compiled_entries(entries: Array, group: Node2D, projection_y: float = 1.0) -> void:
     for record in entries:
         if typeof(record) != TYPE_DICTIONARY:
             continue
@@ -271,7 +279,7 @@ func _place_compiled_entries(entries: Array, group: Node2D) -> void:
             node.set_meta("orientation_mode", String(orientation.get("orientation_mode", "rotate")))
             node.set_meta("source_asset_id", asset_id)
         var xy: Array = record.get("position", [0, 0])
-        node.position = Vector2(float(xy[0]), float(xy[1]))
+        node.position = Vector2(float(xy[0]), float(xy[1]) * projection_y)
         if orientation.is_empty():
             node.rotation_degrees = float(record.get("rotation_degrees", 0))
         var scale_value := float(record.get("scale", 1))
@@ -284,7 +292,7 @@ func _place_compiled_entries(entries: Array, group: Node2D) -> void:
             node.set_meta("mount_offset", attachment.get("mount_offset", [0,0]))
         group.add_child(node)
 
-func _paint_ground(data: Dictionary, target: Node2D) -> void:
+func _paint_ground(data: Dictionary, target: Node2D, projection_y: float = 1.0) -> void:
     var size: Array = data.get("size", [17, 10])
     var offset: Array = data.get("ground_offset", [220, 225])
     var tile_size := int(data.get("tile_size", 64))
@@ -326,7 +334,7 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
                         asset_id = String(ids.get(facing, asset_id))
             var record: Dictionary = catalog.get_asset(asset_id)
             var path := String(record.get("texture_path", ""))
-            var pos := Vector2(float(offset[0]) + x * tile_size, float(offset[1]) + y * tile_size)
+            var pos := Vector2(float(offset[0]) + x * tile_size, float(offset[1]) + y * tile_size * projection_y)
             if path != "" and ResourceLoader.exists(path):
                 var texture := load(path) as Texture2D
                 if texture != null:
@@ -350,12 +358,12 @@ func _paint_ground(data: Dictionary, target: Node2D) -> void:
                         # Rotate around the TILE CENTER, not its upper-left:
                         # a 90-degree top-left rotation displaces the whole floor.
                         sprite.centered = true
-                        sprite.position = pos + Vector2(float(tile_size), float(tile_size)) * 0.5
+                        sprite.position = pos + Vector2(float(tile_size), float(tile_size) * projection_y) * 0.5
                         if mode == "rotate":
                             sprite.rotation_degrees = 90.0 * float(["north","east","south","west"].find(facing))
                     else:
                         sprite.position = pos
-                    sprite.scale = Vector2(float(tile_size) / texture.get_width(), float(tile_size) / texture.get_height())
+                    sprite.scale = Vector2(float(tile_size) / texture.get_width(), float(tile_size) * projection_y / texture.get_height())
                     if styled_tile:
                         var mortar := Line2D.new()
                         mortar.name = "WarmStoneJoint"
@@ -423,7 +431,7 @@ func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool
     if group is BackgroundFactory:
         (group as BackgroundFactory).configure(entries, catalog, canvas_size)
 
-func _place_effects(entries: Array, parent: Node2D) -> void:
+func _place_effects(entries: Array, parent: Node2D, projection_y: float = 1.0) -> void:
     var group := Node2D.new()
     group.name = "AnimatedLighting"
     parent.add_child(group)
@@ -433,4 +441,7 @@ func _place_effects(entries: Array, parent: Node2D) -> void:
         var light := RoomLightFX.new()
         light.name = String(info.get("instance_id", "LightFX"))
         group.add_child(light)
-        light.configure(info, catalog)
+        var info_copy: Dictionary = info.duplicate(true)
+        if info_copy.has("y"):
+            info_copy["y"] = float(info_copy["y"]) * projection_y
+        light.configure(info_copy, catalog)

@@ -1,0 +1,1911 @@
+{
+  "schema_version": 1,
+  "map_id": "hero_room_01",
+  "mode": "reference_reconstruction",
+  "description": "Deterministic reference-room blueprint for hero_room_01. Recreates the fantasy seaside bedroom using only the approved 128-piece environment pack (assets_generated); no new artwork and no PNG bytes modified.",
+  "canvas_size": [
+    1536,
+    1024
+  ],
+  "tile_size": 64,
+  "size": [
+    17,
+    10
+  ],
+  "ground_offset": [
+    226,
+    225
+  ],
+  "floor_footprint": {
+    "row_0": [
+      [
+        0,
+        4
+      ],
+      [
+        11,
+        16
+      ]
+    ],
+    "rows_1_7": [
+      [
+        0,
+        16
+      ]
+    ],
+    "row_8": [
+      [
+        1,
+        15
+      ]
+    ],
+    "row_9": [
+      [
+        6,
+        10
+      ]
+    ],
+    "notes": "Row 0 leaves cells 5-10 open so the rear arch opening reveals the ocean behind it; cells 0-4 and 11-16 keep floor at the edges."
+  },
+  "instances": [
+    {
+      "instance_id": "DistantIsleLeft",
+      "asset_id": "E015",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        288,
+        130
+      ],
+      "scale": 0.32,
+      "pixel_size": [
+        320,
+        260
+      ],
+      "content_bbox": [
+        20,
+        40,
+        278,
+        193
+      ],
+      "layer": "background_objects"
+    },
+    {
+      "instance_id": "DistantIsleRight",
+      "asset_id": "E016",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        1120,
+        145
+      ],
+      "scale": 0.25,
+      "pixel_size": [
+        465,
+        310
+      ],
+      "content_bbox": [
+        30,
+        85,
+        404,
+        198
+      ],
+      "layer": "background_objects"
+    },
+    {
+      "instance_id": "DistantIsleArch",
+      "asset_id": "E017",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        1012,
+        106
+      ],
+      "scale": 0.14,
+      "pixel_size": [
+        600,
+        370
+      ],
+      "content_bbox": [
+        76,
+        48,
+        467,
+        296
+      ],
+      "layer": "background_objects"
+    },
+    {
+      "instance_id": "LeftIslandDistantExtra",
+      "asset_id": "E015",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        90,
+        110
+      ],
+      "scale": 0.27,
+      "pixel_size": [
+        320,
+        260
+      ],
+      "content_bbox": [
+        20,
+        40,
+        278,
+        193
+      ],
+      "layer": "background_objects"
+    },
+    {
+      "instance_id": "RightIslandDistantExtra",
+      "asset_id": "E016",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        1452,
+        126
+      ],
+      "scale": 0.19,
+      "pixel_size": [
+        465,
+        310
+      ],
+      "content_bbox": [
+        30,
+        85,
+        404,
+        198
+      ],
+      "layer": "background_objects"
+    },
+    {
+      "instance_id": "SeaStackLeft",
+      "asset_id": "B05",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        40,
+        100
+      ],
+      "scale": 0.6,
+      "pixel_size": [
+        256,
+        256
+      ],
+      "content_bbox": [
+        21,
+        18,
+        215,
+        226
+      ],
+      "layer": "background_objects"
+    },
+    {
+      "instance_id": "SeaStackRight",
+      "asset_id": "B06",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        1350,
+        120
+      ],
+      "scale": 0.5,
+      "pixel_size": [
+        256,
+        256
+      ],
+      "content_bbox": [
+        2,
+        11,
+        253,
+        233
+      ],
+      "layer": "background_objects"
+    },
+    {
+      "instance_id": "RoyalBed",
+      "asset_id": "F01",
+      "category": "furniture",
+      "kind": "grid",
+      "position": [
+        450.0,
+        545
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        192,
+        256
+      ],
+      "content_bbox": [
+        16,
+        39,
+        160,
+        197
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          2,
+          1
+        ],
+        "facing": "south"
+      },
+      "footprint_cells": [
+        3,
+        4
+      ],
+      "facing": "south",
+      "shadow": {
+        "type": "bed",
+        "opacity": 0.3,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "BedsideTable",
+      "asset_id": "F05",
+      "category": "furniture",
+      "kind": "grid",
+      "position": [
+        290.0,
+        481
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        31,
+        32,
+        66,
+        67
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          0,
+          2
+        ],
+        "facing": "south"
+      },
+      "footprint_cells": [
+        2,
+        2
+      ],
+      "facing": "south",
+      "shadow": {
+        "type": "contact_medium",
+        "opacity": 0.26,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "LeftBookcase",
+      "asset_id": "F06",
+      "category": "furniture",
+      "kind": "grid",
+      "position": [
+        418.0,
+        289
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        256,
+        128
+      ],
+      "content_bbox": [
+        9,
+        23,
+        238,
+        93
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          1,
+          0
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        4,
+        1
+      ],
+      "facing": "north",
+      "shadow": {
+        "type": "bookshelf",
+        "opacity": 0.28,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "RightBookcase",
+      "asset_id": "F07",
+      "category": "furniture",
+      "kind": "grid",
+      "position": [
+        994.0,
+        353
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        256,
+        128
+      ],
+      "content_bbox": [
+        13,
+        27,
+        230,
+        85
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          10,
+          1
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        4,
+        1
+      ],
+      "facing": "north",
+      "shadow": {
+        "type": "bookshelf",
+        "opacity": 0.28,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "DiningTable",
+      "asset_id": "F08",
+      "category": "furniture",
+      "kind": "grid",
+      "position": [
+        1122.0,
+        609
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        256,
+        192
+      ],
+      "content_bbox": [
+        7,
+        33,
+        243,
+        146
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          12,
+          3
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        4,
+        3
+      ],
+      "facing": "north",
+      "shadow": {
+        "type": "table",
+        "opacity": 0.3,
+        "offset_x": 4,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "TableBenchLeft",
+      "asset_id": "F09",
+      "category": "furniture",
+      "kind": "grid",
+      "position": [
+        1058.0,
+        673
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        128,
+        64
+      ],
+      "content_bbox": [
+        16,
+        24,
+        96,
+        29
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          12,
+          6
+        ],
+        "facing": "south"
+      },
+      "footprint_cells": [
+        2,
+        1
+      ],
+      "facing": "south",
+      "shadow": {
+        "type": "chair",
+        "opacity": 0.22,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "TableBenchRight",
+      "asset_id": "F09",
+      "category": "furniture",
+      "kind": "grid",
+      "position": [
+        1186.0,
+        673
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        128,
+        64
+      ],
+      "content_bbox": [
+        16,
+        24,
+        96,
+        29
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          14,
+          6
+        ],
+        "facing": "south"
+      },
+      "footprint_cells": [
+        2,
+        1
+      ],
+      "facing": "south",
+      "shadow": {
+        "type": "chair",
+        "opacity": 0.22,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "BedRug",
+      "asset_id": "D01",
+      "category": "decor",
+      "kind": "overlay",
+      "position": [
+        450.0,
+        609
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        192,
+        256
+      ],
+      "content_bbox": [
+        31,
+        91,
+        130,
+        132
+      ],
+      "layer": "ground_overlays",
+      "grid_placement": {
+        "cell": [
+          2,
+          2
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        3,
+        4
+      ],
+      "shadow": {
+        "type": "contact_medium",
+        "opacity": 0.22,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "TableRug",
+      "asset_id": "D02",
+      "category": "decor",
+      "kind": "overlay",
+      "position": [
+        1122.0,
+        673
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        256,
+        256
+      ],
+      "content_bbox": [
+        20,
+        42,
+        216,
+        195
+      ],
+      "layer": "ground_overlays",
+      "grid_placement": {
+        "cell": [
+          12,
+          3
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        4,
+        4
+      ],
+      "shadow": {
+        "type": "contact_medium",
+        "opacity": 0.22,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "CompassFloorEmblem",
+      "asset_id": "D03",
+      "category": "decor",
+      "kind": "overlay",
+      "position": [
+        738.0,
+        737
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        256,
+        256
+      ],
+      "content_bbox": [
+        29,
+        35,
+        198,
+        195
+      ],
+      "layer": "ground_overlays",
+      "grid_placement": {
+        "cell": [
+          6,
+          4
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        4,
+        4
+      ],
+      "shadow": {
+        "type": "contact_medium",
+        "opacity": 0.2,
+        "offset_x": 0,
+        "offset_y": 0
+      }
+    },
+    {
+      "instance_id": "RearArch",
+      "asset_id": "A05",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        701.0,
+        298.6
+      ],
+      "scale": 2.4,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        7,
+        6,
+        119,
+        118
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "soft_cast",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "ArchColumnLeft",
+      "asset_id": "A01",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        530.5,
+        294.0
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        14,
+        7,
+        39,
+        116
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "column_long",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "ArchColumnRight",
+      "asset_id": "A01",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        888.5,
+        294.0
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        14,
+        7,
+        39,
+        116
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "column_long",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "RearRightDoor",
+      "asset_id": "A09",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        1105.875,
+        297.75
+      ],
+      "scale": 1.75,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        30,
+        15,
+        75,
+        108
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "soft_cast",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "BackWallR00",
+      "asset_id": "W01",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        258.0,
+        289.0
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        39,
+        60,
+        89
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "BackWallR11",
+      "asset_id": "W01",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        962.0,
+        289.0
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        39,
+        60,
+        89
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "BackWallR12",
+      "asset_id": "W01",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        1026.0,
+        289.0
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        39,
+        60,
+        89
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "BackWallR16",
+      "asset_id": "W01",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        1282.0,
+        289.0
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        39,
+        60,
+        89
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "StairStep1",
+      "asset_id": "A10",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        750.0,
+        910.4
+      ],
+      "scale": 1.6,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        20,
+        75,
+        88,
+        34
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "stairs",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "StairStep2",
+      "asset_id": "A10",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        750.0,
+        946.4
+      ],
+      "scale": 1.6,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        20,
+        75,
+        88,
+        34
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "stairs",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "StairStep3",
+      "asset_id": "A10",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        750.0,
+        982.4
+      ],
+      "scale": 1.6,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        20,
+        75,
+        88,
+        34
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "stairs",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "StairStep4",
+      "asset_id": "A10",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        750.0,
+        1018.4
+      ],
+      "scale": 1.6,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        20,
+        75,
+        88,
+        34
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "stairs",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 5
+      }
+    },
+    {
+      "instance_id": "EntrancePillarLeft",
+      "asset_id": "A13",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        602.0,
+        868.3
+      ],
+      "scale": 1.1,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        12,
+        34,
+        40,
+        91
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "column_short",
+        "opacity": 0.26,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "EntrancePillarRight",
+      "asset_id": "A13",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        894.0,
+        868.3
+      ],
+      "scale": 1.1,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        12,
+        34,
+        40,
+        91
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "column_short",
+        "opacity": 0.26,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallL01",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        322.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallL02",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        386.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallL03",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        450.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallL04",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        514.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR11",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        962.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR12",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        1026.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR13",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        1090.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR14",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        1154.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR15",
+      "asset_id": "W10",
+      "category": "walls",
+      "kind": "explicit",
+      "position": [
+        1218.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        2,
+        55,
+        60,
+        54
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      }
+    },
+    {
+      "instance_id": "StairSupportLeft",
+      "asset_id": "A11",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        630.0,
+        928.0
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        27,
+        16,
+        74,
+        100
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 3
+      }
+    },
+    {
+      "instance_id": "StairSupportRight",
+      "asset_id": "A12",
+      "category": "architecture",
+      "kind": "explicit",
+      "position": [
+        864.0,
+        932.0
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        128,
+        128
+      ],
+      "content_bbox": [
+        32,
+        12,
+        76,
+        100
+      ],
+      "layer": "back_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 3
+      }
+    },
+    {
+      "instance_id": "TerraceRockFrontLeft",
+      "asset_id": "E023",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        394,
+        941
+      ],
+      "scale": 0.88,
+      "pixel_size": [
+        340,
+        248
+      ],
+      "content_bbox": [
+        5,
+        18,
+        330,
+        220
+      ],
+      "layer": "front_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.18,
+        "offset_x": 5,
+        "offset_y": 8
+      }
+    },
+    {
+      "instance_id": "TerraceRockFrontRight",
+      "asset_id": "E024",
+      "category": "environment",
+      "kind": "background",
+      "position": [
+        1145,
+        941
+      ],
+      "scale": 0.88,
+      "pixel_size": [
+        340,
+        248
+      ],
+      "content_bbox": [
+        5,
+        18,
+        330,
+        220
+      ],
+      "layer": "front_objects",
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.18,
+        "offset_x": 5,
+        "offset_y": 8
+      }
+    },
+    {
+      "instance_id": "ArchFlowersLeft",
+      "asset_id": "P05",
+      "category": "vegetation",
+      "kind": "grid",
+      "position": [
+        578.0,
+        353
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        3,
+        15,
+        58,
+        41
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          5,
+          1
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "facing": "north",
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 2,
+        "offset_y": 2
+      }
+    },
+    {
+      "instance_id": "ArchFlowersRight",
+      "asset_id": "P06",
+      "category": "vegetation",
+      "kind": "grid",
+      "position": [
+        770.0,
+        353
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        4,
+        28,
+        56,
+        33
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          8,
+          1
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "facing": "north",
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 2,
+        "offset_y": 2
+      }
+    },
+    {
+      "instance_id": "ArchFlowersCenter",
+      "asset_id": "P04",
+      "category": "vegetation",
+      "kind": "grid",
+      "position": [
+        642.0,
+        417
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        8,
+        19,
+        50,
+        33
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          6,
+          2
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "facing": "north",
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 2,
+        "offset_y": 2
+      }
+    },
+    {
+      "instance_id": "ArchIvyLeft",
+      "asset_id": "P03",
+      "category": "vegetation",
+      "kind": "mount",
+      "position": [
+        596.0,
+        128.6
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        12,
+        7,
+        42,
+        117
+      ],
+      "layer": "back_objects",
+      "mount_on": "RearArch",
+      "mount_offset": [
+        -105,
+        -170
+      ]
+    },
+    {
+      "instance_id": "ArchIvyRight",
+      "asset_id": "P03",
+      "category": "vegetation",
+      "kind": "mount",
+      "position": [
+        806.0,
+        128.6
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        12,
+        7,
+        42,
+        117
+      ],
+      "layer": "back_objects",
+      "mount_on": "RearArch",
+      "mount_offset": [
+        105,
+        -170
+      ]
+    },
+    {
+      "instance_id": "ArchFloralLeft",
+      "asset_id": "P12",
+      "category": "vegetation",
+      "kind": "mount",
+      "position": [
+        587.0,
+        289.6
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        5,
+        6,
+        45,
+        57
+      ],
+      "layer": "back_objects",
+      "mount_on": "RearArch",
+      "mount_offset": [
+        -114,
+        -9
+      ]
+    },
+    {
+      "instance_id": "ArchFloralRight",
+      "asset_id": "P13",
+      "category": "vegetation",
+      "kind": "mount",
+      "position": [
+        825.0,
+        289.6
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        9,
+        0,
+        48,
+        63
+      ],
+      "layer": "back_objects",
+      "mount_on": "RearArch",
+      "mount_offset": [
+        124,
+        -9
+      ]
+    },
+    {
+      "instance_id": "LeftWallLantern",
+      "asset_id": "L01",
+      "category": "objects",
+      "kind": "mount",
+      "position": [
+        244.0,
+        234.0
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        17,
+        7,
+        28,
+        50
+      ],
+      "layer": "back_objects",
+      "mount_on": "BackWallR00",
+      "mount_offset": [
+        -14,
+        -55
+      ]
+    },
+    {
+      "instance_id": "RightWallLantern",
+      "asset_id": "L01",
+      "category": "objects",
+      "kind": "mount",
+      "position": [
+        1296.0,
+        234.0
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        17,
+        7,
+        28,
+        50
+      ],
+      "layer": "back_objects",
+      "mount_on": "BackWallR16",
+      "mount_offset": [
+        14,
+        -55
+      ]
+    },
+    {
+      "instance_id": "ArchBannerRight",
+      "asset_id": "D04",
+      "category": "decor",
+      "kind": "mount",
+      "position": [
+        763.0,
+        208.6
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        15,
+        9,
+        34,
+        110
+      ],
+      "layer": "back_objects",
+      "mount_on": "RearArch",
+      "mount_offset": [
+        62,
+        -90
+      ]
+    },
+    {
+      "instance_id": "ArchBannerLeft",
+      "asset_id": "D05",
+      "category": "decor",
+      "kind": "mount",
+      "position": [
+        639.0,
+        208.6
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        128
+      ],
+      "content_bbox": [
+        9,
+        17,
+        46,
+        94
+      ],
+      "layer": "back_objects",
+      "mount_on": "RearArch",
+      "mount_offset": [
+        -62,
+        -90
+      ]
+    },
+    {
+      "instance_id": "TableScroll",
+      "asset_id": "R05",
+      "category": "objects",
+      "kind": "mount",
+      "position": [
+        1030.0,
+        458
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        7,
+        17,
+        51,
+        35
+      ],
+      "layer": "objects",
+      "mount_on": "DiningTable",
+      "mount_offset": [
+        -92,
+        -151
+      ]
+    },
+    {
+      "instance_id": "TableMap",
+      "asset_id": "R09",
+      "category": "objects",
+      "kind": "mount",
+      "position": [
+        1080.0,
+        458
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        5,
+        25,
+        57,
+        36
+      ],
+      "layer": "objects",
+      "mount_on": "DiningTable",
+      "mount_offset": [
+        -42,
+        -151
+      ]
+    },
+    {
+      "instance_id": "TableBook",
+      "asset_id": "R06",
+      "category": "objects",
+      "kind": "mount",
+      "position": [
+        1120.0,
+        458
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        7,
+        30,
+        51,
+        31
+      ],
+      "layer": "objects",
+      "mount_on": "DiningTable",
+      "mount_offset": [
+        -2,
+        -151
+      ]
+    },
+    {
+      "instance_id": "TableFruitBowl",
+      "asset_id": "R10",
+      "category": "objects",
+      "kind": "mount",
+      "position": [
+        1160.0,
+        458
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        5,
+        12,
+        54,
+        48
+      ],
+      "layer": "objects",
+      "mount_on": "DiningTable",
+      "mount_offset": [
+        38,
+        -151
+      ]
+    },
+    {
+      "instance_id": "TableJug",
+      "asset_id": "R11",
+      "category": "objects",
+      "kind": "mount",
+      "position": [
+        1210.0,
+        458
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        16,
+        12,
+        38,
+        43
+      ],
+      "layer": "objects",
+      "mount_on": "DiningTable",
+      "mount_offset": [
+        88,
+        -151
+      ]
+    },
+    {
+      "instance_id": "ArchVaseLeft",
+      "asset_id": "R01",
+      "category": "objects",
+      "kind": "grid",
+      "position": [
+        258.0,
+        353
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        17,
+        17,
+        30,
+        42
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          0,
+          1
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "facing": "north",
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 2,
+        "offset_y": 2
+      }
+    },
+    {
+      "instance_id": "ArchVaseRight",
+      "asset_id": "R02",
+      "category": "objects",
+      "kind": "grid",
+      "position": [
+        834.0,
+        353
+      ],
+      "scale": 1.0,
+      "pixel_size": [
+        64,
+        64
+      ],
+      "content_bbox": [
+        14,
+        10,
+        36,
+        48
+      ],
+      "layer": "objects",
+      "grid_placement": {
+        "cell": [
+          9,
+          1
+        ],
+        "facing": "north"
+      },
+      "footprint_cells": [
+        1,
+        1
+      ],
+      "facing": "north",
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 2,
+        "offset_y": 2
+      }
+    }
+  ],
+  "notes": "Documented pack limitations (not worked around by stretching): arch opening ~84px wide at scale 2.4; bed rug D01 and table rug D02 are compact portrait/square assets vs the reference's landscape rugs; bookcases are low/wide vs the reference's tall shelves; no side-wall banner art exists in the pack; the 64x64 square grid cannot reproduce the reference's oblique floor projection."
+}
