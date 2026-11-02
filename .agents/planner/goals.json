@@ -1,6 +1,42 @@
 {
   "goals": [
     {
+      "id": "GOAL-0002",
+      "title": "أسلوب هجوم Hero: phantom_dash ثم skybreaker_combo",
+      "status": "active",
+      "outcome": "هجوم عادي خلفي مائل 1050ms ومعاينة مستقلة؛ الخاص 2400ms بعد اعتماد العادي",
+      "verification": "فحص الإطارات والسيفين والأحداث والزمن، تشغيل Godot والتقاط GIF فعلي وموافقة المالك البصرية",
+      "constraints": "تفويض المالك الصريح في هذه المحادثة يقتصر على Hero ومشهد معاينته؛ Codex للرسوم والتحليل وAider للكود. لا Claude أو أتمتة أو تغيير للنموذج أو دمج تلقائي للرسوم. المواصفة docs/HERO_ATTACK_STYLE.md.",
+      "task_ids": ["TASK-0072", "TASK-0073"],
+      "final_verified": false,
+      "milestone_notes": "خطوة الخاصة مؤجلة حتى موافقة المالك على العادي؛ إتمام المهام الحالية وحده لا يعني إتمام الهدف كله. لا إنشاء مهمة خاصة تلقائيًا قبل الموافقة.",
+      "steps": [
+        {
+          "key": "hero-phantom-art",
+          "title": "إنتاج مرشح رسوم phantom_dash",
+          "problem": "الأصول الحالية ليست تسلسلًا خلفيًا مائلًا مكتملًا للحركة الجديدة",
+          "file": "game_factory/character_manifest.json",
+          "done_when": "مصدر شفاف وبيانات موثقة وفحص فعلي؛ الرسوم needs_review حتى اعتماد المالك",
+          "test": "python tools/run_tests.py --changed",
+          "kind": "art",
+          "priority": "high",
+          "agent": "codex",
+          "task_id": "TASK-0072"
+        },
+        {
+          "key": "hero-preview-runtime",
+          "title": "مشغّل المعاينة والتصدير المستقل عبر Aider",
+          "problem": "العرض الحالي يشغل شخصية واحدة ويفترض الاصطدام عند إطار ثابت؛ Aider يتعذر تشغيله دون المصادقة",
+          "file": "scenes/game_factory_demo.gd",
+          "done_when": "معاينة مستقلة واختبارات الزمن وأدوات استخراج وفحص؛ لا جاهزية نهائية بلا أصول سليمة والتقاط Godot",
+          "test": "python tools/run_tests.py --changed",
+          "kind": "feature",
+          "priority": "high",
+          "task_id": "TASK-0073"
+        }
+      ]
+    },
+    {
       "id": "GOAL-0001",
       "title": "Bring the Hero Room Map Factory toward reference-faithful output",
       "status": "active",

@@ -1,0 +1,12 @@
+{
+  "status": "open",
+  "title": "TASK-0072 Hero attack art and TASK-0073 Aider preview runtime",
+  "problem": "Owner request: PLEASE IMPLEMENT THIS PLAN: phantom_dash 1050ms first, skybreaker_combo 2400ms after approval. Codex produces art and reviews; Aider writes all code and tests. Full accepted specification: docs/HERO_ATTACK_STYLE.md on codex/hero-attack-art. Reuse canonical TASK-0072/TASK-0073; do not create duplicates or dispatch Claude.",
+  "file": "scenes/game_factory_demo.gd",
+  "line": null,
+  "done_when": "Rear-view hero attack art, independent preview runtime and real Godot capture pass technical checks and owner visual review; no completion claim for missing art.",
+  "test": "python tools/run_tests.py --changed",
+  "priority": "high",
+  "kind": "art",
+  "agent": "specialist"
+}
