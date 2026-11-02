@@ -11986,7 +11986,14 @@
         "identity": "A01"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "39beb53e6123f37ebf8de8946b9657efecb408217530dcea80eaf1f2c2b70317"
+      }
     },
     {
       "id": "A02",
@@ -12047,7 +12054,14 @@
         "identity": "A02"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "e5db5ba623c3b482070d0e56fc0b453be846f8a470ef4b8235974170a46b75f7"
+      }
     },
     {
       "id": "A03",
@@ -12107,7 +12121,14 @@
         "identity": "A03"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "9a1921685937826ede52bbb37c4fade5a590207b67af41572e794e5efa637afb"
+      }
     },
     {
       "id": "A04",
@@ -12169,7 +12190,14 @@
         "identity": "A04"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "2dba4576e3d4acc51b869e4b67469f3c9b1ac4fa11a5f3bdb2dc77065e222e2a"
+      }
     },
     {
       "id": "A05",
@@ -12231,7 +12259,14 @@
         "identity": "A05"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "647106515f7de8d94a5402b0c4d459c323c6ed046ca99d5e7feb02afd4d3cc56"
+      }
     },
     {
       "id": "A06",
@@ -12293,7 +12328,14 @@
         "identity": "A06"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "6639c1307ea694c90a85582796a6284292bb28f59ebd3b677d1e4150dba32ae8"
+      }
     },
     {
       "id": "A07",
@@ -12355,7 +12397,14 @@
         "identity": "A07"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "19c7caf7e55191bd20c1b9f995f0d8754f3b2e14d9b48999bfe314dbb4b01b2b"
+      }
     },
     {
       "id": "A08",
@@ -12416,7 +12465,14 @@
         "identity": "A08"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "1839bd9ed366d6430b99ada5919607b6c4374de7d69f5c146b155eeebf5fc18a"
+      }
     },
     {
       "id": "A09",
@@ -12477,7 +12533,14 @@
         "identity": "A09"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "5c330931ff03960ef3f719f5e0711b77cebadf4f69f3973f2bc1146e6b0ecae4"
+      }
     },
     {
       "id": "A10",
@@ -12540,7 +12603,14 @@
         "identity": "A10"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0"
+      }
     },
     {
       "id": "A11",
@@ -12604,7 +12674,14 @@
         "identity": "A11"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "b0af7f8cadd617782426306f7b27cb5bcc032861fd0e43906f3d83f7f46b91c0"
+      }
     },
     {
       "id": "A12",
@@ -12668,7 +12745,14 @@
         "identity": "A12"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "aef40f45c3eecf1bc21ebe18880bfe68e03da271dc12e67dcfd8ac08b7ee9d21"
+      }
     },
     {
       "id": "A13",
@@ -12729,7 +12813,14 @@
         "identity": "A13"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "70c78ebf57e5f87c4c7d1ebfb82c44b56f935f3c04f4a9281c6908d1b41d6637"
+      }
     },
     {
       "id": "B01",
@@ -12791,7 +12882,14 @@
         "identity": "B01"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "8757471acf192c0ae02451b0e4dbaa0e8c8daae7eb67515c9b95fa112643881e"
+      }
     },
     {
       "id": "B02",
@@ -12853,7 +12951,14 @@
         "identity": "B02"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "58ed77e82641e02607f63b9de0bf447cfe76dd00a607fbf45b0312795e5bcbda"
+      }
     },
     {
       "id": "B03",
@@ -12916,7 +13021,14 @@
         "identity": "B03"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "83886ced006aaa1c7c6c97ab055afaf54b165b5992ceae331d7abeb54e594aa3"
+      }
     },
     {
       "id": "B04",
@@ -12979,7 +13091,14 @@
         "identity": "B04"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "35962079d58aad6b7b43be7770a94b6d239a86bf26fa6765165bd3701ec15aee"
+      }
     },
     {
       "id": "B05",
@@ -13042,7 +13161,14 @@
         "identity": "B05"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "ba454688534d5ace252ac208ab71fdbd8a5f1018ac95f261dc2f10325bc7cb54"
+      }
     },
     {
       "id": "B06",
@@ -13105,7 +13231,14 @@
         "identity": "B06"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "dcefd91b3fc343d234e4a99bba44adf59f7c34048d880d481a0a18dcadda8a53"
+      }
     },
     {
       "id": "B07",
@@ -13166,7 +13299,14 @@
         "identity": "B07"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "5c642170bc95313a70cc9d92c867a6e03cf8008dc433ee126cc75f91c69eb08f"
+      }
     },
     {
       "id": "B08",
@@ -13228,7 +13368,14 @@
         "identity": "B08"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "ab4cfa6e36fb304774c162906f2439289608b2cb5ada9e668a30a47f66dad71d"
+      }
     },
     {
       "id": "B09",
@@ -13290,7 +13437,14 @@
         "identity": "B09"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "e37d1b68dafb4df8d0a315f41ec670cf8d2b2ed97de8e38c1432b8090b778a03"
+      }
     },
     {
       "id": "B10",
@@ -13353,7 +13507,14 @@
         "identity": "B10"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "108ee1f0ff346a98142d79eea36dd185bcbdfd63ce6a55a801c632d52c649fad"
+      }
     },
     {
       "id": "B11",
@@ -13416,7 +13577,14 @@
         "identity": "B11"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "168ff1910c9f1d73f1185423731237d8a3211d0ff414da47d908bb1e783bf9c4"
+      }
     },
     {
       "id": "D01",
@@ -13490,6 +13658,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "25ae4f28afa7d69942a1a9756dd646f1ea5e1aea8be29362ecd1a1d7beaac500"
       }
     },
     {
@@ -13564,6 +13739,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "4931a99f30ca5982dc38ec95c950cea36b2717a02d78c1f248edd08006b77cb6"
       }
     },
     {
@@ -13640,6 +13822,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "d617cd660b9aca8e3a097780e0fa393f4ca07ad1bc0e2152bdc1d50db65ba00a"
       }
     },
     {
@@ -13712,6 +13901,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "bb374378e3db8181cefb85ef40a4da65d8a661a6d975ffcdd144959266d4c310"
       }
     },
     {
@@ -13784,6 +13980,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "174b8d5e6a89e9c611bde55c34f5f334a6c05c9fa09cb62f3bf3c19dbef9f080"
       }
     },
     {
@@ -13856,6 +14059,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "cf2c9ec270ab0d7018d6273599340bb33b24e46820e0c286ee780d493b3a18ec"
       }
     },
     {
@@ -13928,6 +14138,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "2634d0c3277989cdf52c16dfd7f13394b807b1d6abb8d6d01a67ddf757bcbc6d"
       }
     },
     {
@@ -14000,6 +14217,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "dca8d40f5e9923d1d0d2313263a2a04e5bbe0fdfb717f7fbf6287cb52a79f419"
       }
     },
     {
@@ -14082,6 +14306,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "0761f56d7729dd253a05273942865b93c8736d1808b1ca29527f4e0284b3dc4d"
       }
     },
     {
@@ -14164,6 +14395,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "f54d10a3140f9c0a4bd11009c51822831d7fd9f1a9664f96b1e3bd7b3b5763c9"
       }
     },
     {
@@ -14246,6 +14484,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "358fefd14e7f2f2ffa9b50393bf36238ce5a52e771a0eb4a6c9d44d54f449d33"
       }
     },
     {
@@ -14328,6 +14573,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "1e0eeb325eafd852067bf65d461addf87020733ba0050eba2d1a8ccf7bde443a"
       }
     },
     {
@@ -14410,7 +14662,14 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "record_role": "canonical"
+      "record_role": "canonical",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "7c4235dcd595faa310308357cfed0210317b8d34088e8fbd705e2c1983f1c0d9"
+      }
     },
     {
       "id": "F05_east",
@@ -14491,6 +14750,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "5bb7e489003a14bf41bac2b46798ec8ecbef289e21f6b9874445d11671d1c7ce"
       }
     },
     {
@@ -14572,6 +14838,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "7c4235dcd595faa310308357cfed0210317b8d34088e8fbd705e2c1983f1c0d9"
       }
     },
     {
@@ -14653,6 +14926,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "e8619aa5c6fb51b3236876597f783ffb0f36d46ebe9e292c1c6dbdb3c1168e88"
       }
     },
     {
@@ -14734,6 +15014,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "075b418d79400ae936221b87b9e42c8308944c87b0b9b210350a9798137aba8c"
       }
     },
     {
@@ -14817,7 +15104,14 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "record_role": "canonical"
+      "record_role": "canonical",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "23de9d8bbb88dd45e3afabc3cd5ed9e993f4c79990e474d69f6893deb35c4e36"
+      }
     },
     {
       "id": "F06_east",
@@ -14899,6 +15193,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "028b2221f6addf9ce752451044fdf22f6318691be49503e3d6caf9ae076c8d57"
       }
     },
     {
@@ -14981,6 +15282,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "23de9d8bbb88dd45e3afabc3cd5ed9e993f4c79990e474d69f6893deb35c4e36"
       }
     },
     {
@@ -15063,6 +15371,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "270e7b542d8d825a34b480d710c88acb9f0330fd758f51c832636a99bee72f29"
       }
     },
     {
@@ -15145,6 +15460,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "d67aa0f288da5fd73ca7e2be5308fb0c6feccfb83fa832d91886b95166063603"
       }
     },
     {
@@ -15228,7 +15550,14 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "record_role": "canonical"
+      "record_role": "canonical",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "258ad610d4ff2dfbc478f28b01649cdce8369d76c23b61ea949a9a5361222b1b"
+      }
     },
     {
       "id": "F07_east",
@@ -15310,6 +15639,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "95a30e4deb366ee07b84ec0594028dabf962e5f9e6e56b11989a2a8aa9203f1a"
       }
     },
     {
@@ -15392,6 +15728,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "258ad610d4ff2dfbc478f28b01649cdce8369d76c23b61ea949a9a5361222b1b"
       }
     },
     {
@@ -15474,6 +15817,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "7f6bce1e7768306051face4bb228f1fee2d0383611b23fd71f2c4608abef429d"
       }
     },
     {
@@ -15556,6 +15906,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "882cf76f7593e6fbc2d54faf26677d62d24d1a7ca716be8dc0a8fba40eb548d1"
       }
     },
     {
@@ -15640,7 +15997,14 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "record_role": "canonical"
+      "record_role": "canonical",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "491d33be2ac817abaac701013b7192a25ccbeb0d1e86b8de64a552db2c8031e2"
+      }
     },
     {
       "id": "F08_east",
@@ -15723,6 +16087,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "1e18780749633db821c9905e20b2036076f5e486b77b6fe377fa5c9cb063dab9"
       }
     },
     {
@@ -15806,6 +16177,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "491d33be2ac817abaac701013b7192a25ccbeb0d1e86b8de64a552db2c8031e2"
       }
     },
     {
@@ -15889,6 +16267,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "48ffb92f014f9639fc38e68b38e3ecd0d65e993a09a39bbe635a5a8edcfd6015"
       }
     },
     {
@@ -15972,6 +16357,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "fc8184303b14fcc0a3a3145b5b5a0b4ff55b329d8d79570924c5e403fe000081"
       }
     },
     {
@@ -16054,7 +16446,14 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "record_role": "canonical"
+      "record_role": "canonical",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "6147b6a043aea352fb3e47ccf6caaf3c3e4f8ce194c8849eb3f712c3a76e4f18"
+      }
     },
     {
       "id": "F09_east",
@@ -16135,6 +16534,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "18b72bba1e05d3739118912515487552c2099b9fbe1669de8fc310a16eccf03b"
       }
     },
     {
@@ -16216,6 +16622,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "6147b6a043aea352fb3e47ccf6caaf3c3e4f8ce194c8849eb3f712c3a76e4f18"
       }
     },
     {
@@ -16297,6 +16710,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "cb5356114018c7b372aefe9ccf19bb596b70567a84d6bd0f6fa31f3dcc2ec1f3"
       }
     },
     {
@@ -16378,6 +16798,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "4cbbd04b510b28b03acd2dd20f69945d66e51110cb6b65332fc96bb32d3e4e06"
       }
     },
     {
@@ -16460,7 +16887,14 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "record_role": "canonical"
+      "record_role": "canonical",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "56262cac0b5e5e83f8a37ce8ffebdf884f4767e8d3b61041241721cf875b51b1"
+      }
     },
     {
       "id": "F10_east",
@@ -16541,6 +16975,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "33b7821f36fc661e908338996c20f82fb4aa4acbbdfa10506e276921ee01452e"
       }
     },
     {
@@ -16622,6 +17063,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "56262cac0b5e5e83f8a37ce8ffebdf884f4767e8d3b61041241721cf875b51b1"
       }
     },
     {
@@ -16703,6 +17151,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "c91f80150f860cb2bad6125e428a1d922bdb436951f5bdaef82b609bd41967f4"
       }
     },
     {
@@ -16784,6 +17239,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "1848d99d2376c55e0c5bef424646fa2b7c101d6fb87cac6afdf7bd6c4a5ee4aa"
       }
     },
     {
@@ -16867,7 +17329,14 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "record_role": "canonical"
+      "record_role": "canonical",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "ebf57866a195e1e9298a86c9667e0db183923e324dfc4fa3487b202650c7fa44"
+      }
     },
     {
       "id": "F11_east",
@@ -16949,6 +17418,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "abfe334281dee74b80987a36d7b97b6c02733e81d7103ffbeb263f4506cb043e"
       }
     },
     {
@@ -17031,6 +17507,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "ebf57866a195e1e9298a86c9667e0db183923e324dfc4fa3487b202650c7fa44"
       }
     },
     {
@@ -17113,6 +17596,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "0b5a50890696c99c3e0f268128c8a7dcfca3b5537e0dbc83c04a93f51e842376"
       }
     },
     {
@@ -17195,6 +17685,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "3533ae0da48a149877285ceac8eff6da8269fae90e31bf5708571874e3c5ff2e"
       }
     },
     {
@@ -17278,7 +17775,14 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "record_role": "canonical"
+      "record_role": "canonical",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "ef83f0fec380787e6630bac7fd0cffa55a2211745eebbc5b350a9b0b99841dfb"
+      }
     },
     {
       "id": "F12_east",
@@ -17360,6 +17864,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "9e9f0a30ed1a562c4b2b3a3a05ac02376ff87e8982383e4e7f06d0986c5070e7"
       }
     },
     {
@@ -17442,6 +17953,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "ef83f0fec380787e6630bac7fd0cffa55a2211745eebbc5b350a9b0b99841dfb"
       }
     },
     {
@@ -17524,6 +18042,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "ccf7d89a4cf06e8355241a4ac4d628d989a14e3785855aaee5c050f5d1fbd691"
       }
     },
     {
@@ -17606,6 +18131,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "9054efcd3ad65bd812968fbe32793c6ff17b343fdb7ce893550770084900e018"
       }
     },
     {
@@ -17667,7 +18199,14 @@
         "identity": "G01"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6"
+      }
     },
     {
       "id": "G02",
@@ -17728,7 +18267,14 @@
         "identity": "G02"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca"
+      }
     },
     {
       "id": "G03",
@@ -17789,7 +18335,14 @@
         "identity": "G03"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "98cfbec750f847aba7b1794dec9df88663dbfcf6242422c8f9ec21060eecd288"
+      }
     },
     {
       "id": "G04",
@@ -17850,7 +18403,14 @@
         "identity": "G04"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "a10ea4f41aa5e3dcb9263486ab9f6149bb3afd56a8ff7de92546b638da7abd02"
+      }
     },
     {
       "id": "G05",
@@ -17912,7 +18472,14 @@
         "identity": "G05"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "730ab5d5cd7b7b8a708dc9eec3375ca6b952ce6ca0fcf08d6f314dfc2d3c2a73"
+      }
     },
     {
       "id": "G06",
@@ -17974,7 +18541,14 @@
         "identity": "G06"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "7610f278fa2cd7a44f79444f3155ad93672fc17b34e2d9f761086396ca463ff8"
+      }
     },
     {
       "id": "G07",
@@ -18036,7 +18610,14 @@
         "identity": "G07"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "b64cfd91f42d62f4ba30ed3b66354aac7c105bb0e3fb75bc379e19bfbb038bfb"
+      }
     },
     {
       "id": "G08",
@@ -18098,7 +18679,14 @@
         "identity": "G08"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "68f537a5c3301bd0a0f7f20923580e2d23b21f131443c2c96281938ec89cb60f"
+      }
     },
     {
       "id": "G09",
@@ -18160,7 +18748,14 @@
         "identity": "G09"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "7d83a39fa2f1900703ad695564d4ccc1eeebe9ce4d0394d7ae258ea319ebf4b6"
+      }
     },
     {
       "id": "G10",
@@ -18222,7 +18817,14 @@
         "identity": "G10"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "79dc7ec3c390bdfe8ab856f2e60f378e739eecd77441117b97f82ef9aaa3937d"
+      }
     },
     {
       "id": "G11",
@@ -18284,7 +18886,14 @@
         "identity": "G11"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "2bcf319aed97cb1dd67749a7b4b988bcfaf0f7adc596cd49a7e15113013e090f"
+      }
     },
     {
       "id": "G12",
@@ -18346,7 +18955,14 @@
         "identity": "G12"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "6ca4406809419e07cde9cf16ad9f90c16cafc2e74527343f673367706e8d4e23"
+      }
     },
     {
       "id": "L01",
@@ -18417,6 +19033,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "1723f825b9ddc39daefdce69199ca4a875a0f5576049515ccad0f846a778aecd"
       }
     },
     {
@@ -18489,6 +19112,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "37804dde9d359f26d63bc8a78d1ff3d666bfcff39101bb2b025fffeeb4726a73"
       }
     },
     {
@@ -18560,6 +19190,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "3630e7125d81eb58bbf82cffacabbec31374232cb2f05076347efc2c2af8fa49"
       }
     },
     {
@@ -18630,6 +19267,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "078975c5a608b16e904572aaace990996eefe3a35b82d9707cbea0e9ceefb186"
       }
     },
     {
@@ -18703,6 +19347,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "7ded2268505d3689248e198af01b78f50b06903fe3c639e6afa3114a1af00681"
       }
     },
     {
@@ -18774,6 +19425,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "90935cf79c1dc6156c93bc3c4ae4ba6d6fd2a4fdd973802c5f2599ca58f957c7"
       }
     },
     {
@@ -18845,6 +19503,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "50b482bfc24da74b56fc6723cae5cda937892925e8e9181139bee1a8326ddd27"
       }
     },
     {
@@ -18916,6 +19581,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "d1f5b540829d43ddebb100adbe6146fb2294aabf3751d05dc3c565443ec680eb"
       }
     },
     {
@@ -18992,6 +19664,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "7e258c57bd993d24686a0a16dab5ff2790cd5e160813d4aaff4144ea726c837d"
       }
     },
     {
@@ -19068,6 +19747,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "2e41bd0f3e91848b976f95976cd1cec0e5aabcb8b202c18c0999d708b642b95a"
       }
     },
     {
@@ -19144,6 +19830,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "16129d9c33498b7017f960011249633ae2afc8fce98df1bba501a208339b2cda"
       }
     },
     {
@@ -19219,6 +19912,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "96f8913e7eae51222e2bc91f636c04e332c38626f354fa268d1b71f7ac71f834"
       }
     },
     {
@@ -19294,6 +19994,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "227524bf2ce2bed53445dc4122aa844bbd3092532e3bd75c4110736e3e89c409"
       }
     },
     {
@@ -19370,6 +20077,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "483d27b23a9f0d438f8bc4e3ef51609e27f1e99189cf57d6ee37c36e500ea258"
       }
     },
     {
@@ -19446,6 +20160,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "e35531fa0a0ba8ea30837ccabf8b36985f2c9e05ab2c0dd0b9822ea703a0dd7f"
       }
     },
     {
@@ -19522,6 +20243,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "0d8ff9d8f98f2135f92cb1baacfb7596cec39b83b0d714a691a777f2c63afb74"
       }
     },
     {
@@ -19594,6 +20322,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "0c538b4094f57bec01a7bc3250fe96980081abe9c7fee83bfbb1a215a586105f"
       }
     },
     {
@@ -19666,6 +20401,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "68cfe78ac5941fbf0b622dd5b6ad54ab816840e4435479cb57ad50fd65a51dfc"
       }
     },
     {
@@ -19742,6 +20484,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "c10840c0a5dba5c34432e4ef778bda09e5c1130ade69d5c6db52fe52b31cefd7"
       }
     },
     {
@@ -19818,6 +20567,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "e53ffc794f0de090312951fd5d2fc186350362e08bf545b21338f6431ed2ff90"
       }
     },
     {
@@ -19894,6 +20650,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "4687c6a4b70a88af3c61cfc841dc17f8312b4e19cec9aba8223bc9872e09b776"
       }
     },
     {
@@ -19969,6 +20732,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "3fa31f1aebc003cdb846c41859d643ce6a671e0139df60cb2d6e1045f3b6245d"
       }
     },
     {
@@ -20044,6 +20814,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "2f90f1cfa2e81fd565e8910d412bb03f79852523026a110be4ea398cd2d8f73c"
       }
     },
     {
@@ -20114,6 +20891,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "77fac0ef3d69ad4d9505c0cbb7e0d0078ca4109a03fda0d1c6dea648436ef198"
       }
     },
     {
@@ -20184,6 +20968,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "3a3c3eb2d5e7a09c262aa8c5fd8d4969aa69f78af301391cdc567d380b1618d9"
       }
     },
     {
@@ -20255,6 +21046,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "f7e74dcb45ad0e6ad342d6f980250e144384c6ea3bfb67b32ade3e1bf726a089"
       }
     },
     {
@@ -20325,6 +21123,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "07d1cb7b456e09d2fbd17e72217f3b1eedc4f92839da5608711a96d27dbfe8af"
       }
     },
     {
@@ -20397,6 +21202,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "31ee831e62d4dcfdb175ee25daa248946fb90a2dabefdc82138ede7973b4607c"
       }
     },
     {
@@ -20467,6 +21279,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "96b7e3274da23228a216dae58bc552a4e301766feb87783c0ce212c1a842331e"
       }
     },
     {
@@ -20537,6 +21356,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "f70a7cf0d288739146f82b7fbbd1d9b741250303d822cef883202ddae7803089"
       }
     },
     {
@@ -20609,6 +21435,13 @@
           "architecture"
         ],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "add6b424eb28f3fa10fc0f987891c282359164033182a196d46d498b3fd3a731"
       }
     },
     {
@@ -20683,6 +21516,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "afbd6bd838b4669dd23cc1efe83f46b9fd134c1c6688c277a0067396d400dfa4"
       }
     },
     {
@@ -20759,6 +21599,13 @@
         ],
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "023ef39f963e6f34462b22ce3ba32047d7d58a6ad8084a7e8854d6cf7eea6563"
       }
     },
     {
@@ -20821,7 +21668,14 @@
         "identity": "W01"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895"
+      }
     },
     {
       "id": "W02",
@@ -20883,7 +21737,14 @@
         "identity": "W02"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989"
+      }
     },
     {
       "id": "W03",
@@ -20945,7 +21806,14 @@
         "identity": "W03"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "5e35c9d7bb7dbf1e74d17ff8a525cc1c21313c66277b6b16a3980b04ea3c282e"
+      }
     },
     {
       "id": "W04",
@@ -21007,7 +21875,14 @@
         "identity": "W04"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "48497b476a14603dcc24a99b3c0fca9241d8d20c0d52b1fcaa72e3c3d12ae7c5"
+      }
     },
     {
       "id": "W05",
@@ -21070,7 +21945,14 @@
         "identity": "W05"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "9795a76879b20a18027014b172947ff8146043351f2843cd852deff1b53978e4"
+      }
     },
     {
       "id": "W06",
@@ -21133,7 +22015,14 @@
         "identity": "W06"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "9bce22c7f2725f53e2766c0de1652e058552f088d57a719495d928028fdc1c98"
+      }
     },
     {
       "id": "W07",
@@ -21196,7 +22085,14 @@
         "identity": "W07"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c"
+      }
     },
     {
       "id": "W08",
@@ -21259,7 +22155,14 @@
         "identity": "W08"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "3ddfa365ff3bd5ca69e9a1629baf8b5fb46de2eec3c2133c03477193a9060316"
+      }
     },
     {
       "id": "W09",
@@ -21322,7 +22225,14 @@
         "identity": "W09"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "777a289eb4b5ed5adaa13b7f615e54be83d25059b6aa986e8b2810fca4892be8"
+      }
     },
     {
       "id": "W10",
@@ -21385,7 +22295,14 @@
         "identity": "W10"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2"
+      }
     },
     {
       "id": "W11",
@@ -21448,7 +22365,14 @@
         "identity": "W11"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "02e18df29e4a2c0d77a7cb39dc7b6cb0df6f8d210b7333160fd2f0f8fd24caaf"
+      }
     },
     {
       "id": "W12",
@@ -21511,7 +22435,14 @@
         "identity": "W12"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "0c5b15c8fe371151ed85d04878039b91abbf7542354b2c5d0b76ddf32c0d78a5"
+      }
     },
     {
       "id": "W13",
@@ -21574,7 +22505,14 @@
         "identity": "W13"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "4f4e877810b8aad048ec2752295bf5b89b9419dd016176f140a868cc11841bff"
+      }
     },
     {
       "id": "W14",
@@ -21637,7 +22575,14 @@
         "identity": "W14"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "dfd5b8a171cef90ee20e8daa584678fec6ac282bd9763ead3dcea655f0322caf"
+      }
     },
     {
       "id": "W15",
@@ -21700,7 +22645,14 @@
         "identity": "W15"
       },
       "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved"
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "b9ae2049dabe65bba771a905d9068de6faf7ad194682e254d6b37d938e59cbdb"
+      }
     }
   ],
   "generated_png_count": 229,
