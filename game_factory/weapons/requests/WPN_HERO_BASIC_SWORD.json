@@ -1,0 +1,10 @@
+{
+  "id": "WPN_HERO_BASIC_SWORD",
+  "arguments": {
+    "prompt": "Use case: stylized-concept. Exactly ONE isolated pixel-art sword equipment PNG. Reproduce the exact original Hero sword in the reference: pale blue steel blade with subtle gold ornamental engraving, warm bronze-gold crossguard and pommel, brown wrapped grip. Reference only for THIS SWORD, no hand or character. Full weapon only, blade straight UP vertically, handle and pommel below, frontal/flat battle sprite view. Symmetrical centerline, centered on transparent canvas. Native target128x192, sharp native pixel clusters, no smoothing. Blade tip around y=12, crossguard around y=140, grip center around y=158, pommel around y=180 on native design. Warm upper-left light matching reference, rich but controlled shading. Leave transparent margins around the whole sword. No hand, character, body, floor, cast shadow, effects, label, border, collage or multiple weapons. One sword only, true transparent RGBA.",
+    "referenced_image_paths": [
+      "H:\\shining force\\skl-SF\\.worktrees\\TASK-0070-game-factory\\assets\\characters\\hero\\battle\\idle_ready\\sources\\hero_battle_idle_ready_01__attempt_01.png"
+    ],
+    "transparent_background": true
+  }
+}

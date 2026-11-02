@@ -1,0 +1,805 @@
+{
+  "characters": [
+    {
+      "character_id": "CHAR001",
+      "slug": "hero",
+      "display_name": "Hero",
+      "source_reference_images": [
+        {
+          "path": "map_factory/references/characters/hero.png.png",
+          "sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f"
+        }
+      ],
+      "reference_status": "available",
+      "map_sprite_canvas_size": [
+        96,
+        96
+      ],
+      "battle_sprite_canvas_size": [
+        256,
+        256
+      ],
+      "map_ground_footprint": [
+        1,
+        1
+      ],
+      "map_anchor": [
+        48,
+        90
+      ],
+      "battle_anchor": [
+        128,
+        240
+      ],
+      "supported_directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "movement_speed": 180,
+      "collision_shape": {
+        "size": [
+          24,
+          18
+        ],
+        "offset": [
+          0,
+          -9
+        ]
+      },
+      "animations": {
+        "map_down_idle": {
+          "frames": [
+            "res://assets/characters/hero/map/down/hero_map_down_idle_01_v002_aligned_v004.png",
+            "res://assets/characters/hero/map/down/hero_map_down_idle_02_aligned_v004.png",
+            "res://assets/characters/hero/map/down/hero_map_down_idle_03_aligned_v004.png",
+            "res://assets/characters/hero/map/down/hero_map_down_idle_04_aligned_v004.png"
+          ],
+          "duration": 0.2,
+          "loop": true,
+          "complete": true
+        },
+        "map_down_walk": {
+          "frames": [
+            "res://assets/characters/hero/map/down/hero_map_down_walk_01_aligned_v004.png",
+            "res://assets/characters/hero/map/down/hero_map_down_walk_02_aligned_v004.png",
+            "res://assets/characters/hero/map/down/hero_map_down_walk_03_v002.png",
+            "res://assets/characters/hero/map/down/hero_map_down_walk_04_v002.png",
+            "res://assets/characters/hero/map/down/hero_map_down_walk_05_v002.png",
+            "res://assets/characters/hero/map/down/hero_map_down_walk_06_aligned_v004.png"
+          ],
+          "duration": 0.12,
+          "loop": true,
+          "complete": true
+        },
+        "map_left_idle": {
+          "frames": [
+            "res://assets/characters/hero/map/left/hero_map_left_idle_01_aligned_v004.png",
+            "res://assets/characters/hero/map/left/hero_map_left_idle_02_aligned_v004.png",
+            "res://assets/characters/hero/map/left/hero_map_left_idle_03_aligned_v004.png",
+            "res://assets/characters/hero/map/left/hero_map_left_idle_04_aligned_v004.png"
+          ],
+          "duration": 0.2,
+          "loop": true,
+          "complete": true
+        },
+        "map_left_walk": {
+          "frames": [
+            "res://assets/characters/hero/map/left/hero_map_left_walk_01.png",
+            "res://assets/characters/hero/map/left/hero_map_left_walk_02.png",
+            "res://assets/characters/hero/map/left/hero_map_left_walk_03_v002.png",
+            "res://assets/characters/hero/map/left/hero_map_left_walk_04_v002.png",
+            "res://assets/characters/hero/map/left/hero_map_left_walk_05_v002.png",
+            "res://assets/characters/hero/map/left/hero_map_left_walk_06.png"
+          ],
+          "duration": 0.12,
+          "loop": true,
+          "complete": true
+        },
+        "map_right_idle": {
+          "frames": [
+            "res://assets/characters/hero/map/right/hero_map_right_idle_01.png",
+            "res://assets/characters/hero/map/right/hero_map_right_idle_02.png",
+            "res://assets/characters/hero/map/right/hero_map_right_idle_03.png",
+            "res://assets/characters/hero/map/right/hero_map_right_idle_04.png"
+          ],
+          "duration": 0.2,
+          "loop": true,
+          "complete": true
+        },
+        "map_right_walk": {
+          "frames": [
+            "res://assets/characters/hero/map/right/hero_map_right_walk_01.png",
+            "res://assets/characters/hero/map/right/hero_map_right_walk_02.png",
+            "res://assets/characters/hero/map/right/hero_map_right_walk_03.png",
+            "res://assets/characters/hero/map/right/hero_map_right_walk_04.png",
+            "res://assets/characters/hero/map/right/hero_map_right_walk_05.png",
+            "res://assets/characters/hero/map/right/hero_map_right_walk_06.png"
+          ],
+          "duration": 0.12,
+          "loop": true,
+          "complete": true
+        },
+        "map_up_idle": {
+          "frames": [
+            "res://assets/characters/hero/map/up/hero_map_up_idle_01_v004.png",
+            "res://assets/characters/hero/map/up/hero_map_up_idle_02_v003.png",
+            "res://assets/characters/hero/map/up/hero_map_up_idle_03_v003.png",
+            "res://assets/characters/hero/map/up/hero_map_up_idle_04_v003.png"
+          ],
+          "duration": 0.2,
+          "loop": true,
+          "complete": true
+        },
+        "map_up_walk": {
+          "frames": [
+            "res://assets/characters/hero/map/up/hero_map_up_walk_01_v002.png",
+            "res://assets/characters/hero/map/up/hero_map_up_walk_02.png",
+            "res://assets/characters/hero/map/up/hero_map_up_walk_03.png",
+            "res://assets/characters/hero/map/up/hero_map_up_walk_04.png",
+            "res://assets/characters/hero/map/up/hero_map_up_walk_05.png",
+            "res://assets/characters/hero/map/up/hero_map_up_walk_06.png"
+          ],
+          "duration": 0.12,
+          "loop": true,
+          "complete": true
+        },
+        "battle_idle_ready": {
+          "frames": [
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_idle_ready_01__weaponless_v2.png"
+          ],
+          "duration": 0.12,
+          "loop": true,
+          "complete": false
+        },
+        "battle_step": {
+          "frames": [
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_step_01__weaponless_v2.png"
+          ],
+          "duration": 0.12,
+          "loop": false,
+          "complete": false
+        },
+        "battle_attack_windup": {
+          "frames": [
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png",
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png",
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png",
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png"
+          ],
+          "duration": 0.12,
+          "loop": false,
+          "complete": true
+        },
+        "battle_attack_execute": {
+          "frames": [
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png",
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png",
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png",
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png",
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png",
+            "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png"
+          ],
+          "duration": 0.12,
+          "loop": false,
+          "complete": true
+        }
+      },
+      "portraits": {},
+      "turnaround": {},
+      "details": {},
+      "approval_status": "pending",
+      "production_complete": false,
+      "character_role": "swordsman",
+      "ui": {},
+      "key_art": {},
+      "weapons": {
+        "sword": "res://assets/weapons/swords/wpn_hero_basic_sword_v001.png"
+      },
+      "effects": {},
+      "map_idle_frames": {
+        "down": [
+          "res://assets/characters/hero/map/down/hero_map_down_idle_01_v002_aligned_v004.png",
+          "res://assets/characters/hero/map/down/hero_map_down_idle_02_aligned_v004.png",
+          "res://assets/characters/hero/map/down/hero_map_down_idle_03_aligned_v004.png",
+          "res://assets/characters/hero/map/down/hero_map_down_idle_04_aligned_v004.png"
+        ],
+        "left": [
+          "res://assets/characters/hero/map/left/hero_map_left_idle_01_aligned_v004.png",
+          "res://assets/characters/hero/map/left/hero_map_left_idle_02_aligned_v004.png",
+          "res://assets/characters/hero/map/left/hero_map_left_idle_03_aligned_v004.png",
+          "res://assets/characters/hero/map/left/hero_map_left_idle_04_aligned_v004.png"
+        ],
+        "right": [
+          "res://assets/characters/hero/map/right/hero_map_right_idle_01.png",
+          "res://assets/characters/hero/map/right/hero_map_right_idle_02.png",
+          "res://assets/characters/hero/map/right/hero_map_right_idle_03.png",
+          "res://assets/characters/hero/map/right/hero_map_right_idle_04.png"
+        ],
+        "up": [
+          "res://assets/characters/hero/map/up/hero_map_up_idle_01_v004.png",
+          "res://assets/characters/hero/map/up/hero_map_up_idle_02_v003.png",
+          "res://assets/characters/hero/map/up/hero_map_up_idle_03_v003.png",
+          "res://assets/characters/hero/map/up/hero_map_up_idle_04_v003.png"
+        ]
+      },
+      "map_walk_frames": {
+        "down": [
+          "res://assets/characters/hero/map/down/hero_map_down_walk_01_aligned_v004.png",
+          "res://assets/characters/hero/map/down/hero_map_down_walk_02_aligned_v004.png",
+          "res://assets/characters/hero/map/down/hero_map_down_walk_03_v002.png",
+          "res://assets/characters/hero/map/down/hero_map_down_walk_04_v002.png",
+          "res://assets/characters/hero/map/down/hero_map_down_walk_05_v002.png",
+          "res://assets/characters/hero/map/down/hero_map_down_walk_06_aligned_v004.png"
+        ],
+        "left": [
+          "res://assets/characters/hero/map/left/hero_map_left_walk_01.png",
+          "res://assets/characters/hero/map/left/hero_map_left_walk_02.png",
+          "res://assets/characters/hero/map/left/hero_map_left_walk_03_v002.png",
+          "res://assets/characters/hero/map/left/hero_map_left_walk_04_v002.png",
+          "res://assets/characters/hero/map/left/hero_map_left_walk_05_v002.png",
+          "res://assets/characters/hero/map/left/hero_map_left_walk_06.png"
+        ],
+        "right": [
+          "res://assets/characters/hero/map/right/hero_map_right_walk_01.png",
+          "res://assets/characters/hero/map/right/hero_map_right_walk_02.png",
+          "res://assets/characters/hero/map/right/hero_map_right_walk_03.png",
+          "res://assets/characters/hero/map/right/hero_map_right_walk_04.png",
+          "res://assets/characters/hero/map/right/hero_map_right_walk_05.png",
+          "res://assets/characters/hero/map/right/hero_map_right_walk_06.png"
+        ],
+        "up": [
+          "res://assets/characters/hero/map/up/hero_map_up_walk_01_v002.png",
+          "res://assets/characters/hero/map/up/hero_map_up_walk_02.png",
+          "res://assets/characters/hero/map/up/hero_map_up_walk_03.png",
+          "res://assets/characters/hero/map/up/hero_map_up_walk_04.png",
+          "res://assets/characters/hero/map/up/hero_map_up_walk_05.png",
+          "res://assets/characters/hero/map/up/hero_map_up_walk_06.png"
+        ]
+      },
+      "battle_animation_frames": {
+        "idle_ready": [
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_idle_ready_01__weaponless_v2.png"
+        ],
+        "step": [
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_step_01__weaponless_v2.png"
+        ],
+        "attack_windup": [
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png",
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png",
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png",
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png"
+        ],
+        "attack_execute": [
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png",
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png",
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png",
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png",
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png",
+          "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png"
+        ],
+        "cast_magic": [],
+        "use_item": [],
+        "hurt": [],
+        "defend": [],
+        "victory": []
+      },
+      "available_battle_actions": [
+        "attack_windup",
+        "attack_execute"
+      ],
+      "animation_frame_durations": {
+        "map_down_idle": 0.2,
+        "map_down_walk": 0.12,
+        "map_left_idle": 0.2,
+        "map_left_walk": 0.12,
+        "map_right_idle": 0.2,
+        "map_right_walk": 0.12,
+        "map_up_idle": 0.2,
+        "map_up_walk": 0.12,
+        "battle_idle_ready": 0.12,
+        "battle_step": 0.12,
+        "battle_attack_windup": 0.12,
+        "battle_attack_execute": 0.12
+      },
+      "animation_loop_modes": {
+        "map_down_idle": true,
+        "map_down_walk": true,
+        "map_left_idle": true,
+        "map_left_walk": true,
+        "map_right_idle": true,
+        "map_right_walk": true,
+        "map_up_idle": true,
+        "map_up_walk": true,
+        "battle_idle_ready": true,
+        "battle_step": false,
+        "battle_attack_windup": false,
+        "battle_attack_execute": false
+      },
+      "animation_quality_approval": "pending_visual_sequence_review",
+      "color_palette": [
+        "#f8b878",
+        "#180808",
+        "#080808",
+        "#f8d8a8",
+        "#582818",
+        "#884828",
+        "#b86838",
+        "#683828",
+        "#f8e8b8",
+        "#482818",
+        "#281818",
+        "#483838",
+        "#f8f8f8",
+        "#583828",
+        "#181818",
+        "#783828"
+      ],
+      "equipment_profile": "sword",
+      "battle_body_policy": "no_embedded_equipment",
+      "weapon_attachment_metadata": "res://game_factory/hero_correction/hero_weapon_anchors.json",
+      "battle_palette_reference": "res://game_factory/hero_correction/hero_battle_palette.json"
+    },
+    {
+      "character_id": "CHAR002",
+      "slug": "cely",
+      "display_name": "Cely",
+      "source_reference_images": [
+        {
+          "path": "map_factory/references/characters/cely.png.png",
+          "sha256": "8e844ab1b4ecaa6f072d0940fd60758aec66c6ff342c780dbec7325311b2ac3c"
+        }
+      ],
+      "reference_status": "available",
+      "map_sprite_canvas_size": [
+        128,
+        128
+      ],
+      "battle_sprite_canvas_size": [
+        320,
+        320
+      ],
+      "map_ground_footprint": [
+        2,
+        2
+      ],
+      "map_anchor": [
+        64,
+        122
+      ],
+      "battle_anchor": [
+        160,
+        304
+      ],
+      "supported_directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "movement_speed": 180,
+      "collision_shape": {
+        "size": [
+          24,
+          18
+        ],
+        "offset": [
+          0,
+          -9
+        ]
+      },
+      "animations": {},
+      "portraits": {},
+      "turnaround": {},
+      "details": {},
+      "approval_status": "pending",
+      "production_complete": false,
+      "character_role": "mounted_lancer",
+      "ui": {},
+      "key_art": {},
+      "weapons": {},
+      "effects": {},
+      "map_idle_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "map_walk_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "battle_animation_frames": {
+        "idle_ready": [],
+        "step": [],
+        "attack_windup": [],
+        "attack_execute": [],
+        "cast_magic": [],
+        "use_item": [],
+        "hurt": [],
+        "defend": [],
+        "victory": []
+      },
+      "available_battle_actions": [],
+      "animation_frame_durations": {},
+      "animation_loop_modes": {},
+      "animation_quality_approval": "pending_visual_sequence_review",
+      "color_palette": [],
+      "equipment_profile": "spear",
+      "battle_body_policy": "no_embedded_equipment",
+      "weapon_attachment_metadata": null,
+      "battle_palette_reference": null
+    },
+    {
+      "character_id": "CHAR003",
+      "slug": "neru",
+      "display_name": "Neru",
+      "source_reference_images": [
+        {
+          "path": "map_factory/references/characters/neru.png.png",
+          "sha256": "7db1d75aef6c9b6501d0e2f51870e5e54c7bc824eace383d457532e5cfdba236"
+        }
+      ],
+      "reference_status": "available",
+      "map_sprite_canvas_size": [
+        96,
+        96
+      ],
+      "battle_sprite_canvas_size": [
+        256,
+        256
+      ],
+      "map_ground_footprint": [
+        1,
+        1
+      ],
+      "map_anchor": [
+        48,
+        90
+      ],
+      "battle_anchor": [
+        128,
+        240
+      ],
+      "supported_directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "movement_speed": 180,
+      "collision_shape": {
+        "size": [
+          24,
+          18
+        ],
+        "offset": [
+          0,
+          -9
+        ]
+      },
+      "animations": {},
+      "portraits": {},
+      "turnaround": {},
+      "details": {},
+      "approval_status": "pending",
+      "production_complete": false,
+      "character_role": "creature_companion",
+      "ui": {},
+      "key_art": {},
+      "weapons": {},
+      "effects": {},
+      "map_idle_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "map_walk_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "battle_animation_frames": {
+        "idle_ready": [],
+        "step": [],
+        "attack_windup": [],
+        "attack_execute": [],
+        "cast_magic": [],
+        "use_item": [],
+        "hurt": [],
+        "defend": [],
+        "victory": []
+      },
+      "available_battle_actions": [],
+      "animation_frame_durations": {},
+      "animation_loop_modes": {},
+      "animation_quality_approval": "pending_visual_sequence_review",
+      "color_palette": [],
+      "equipment_profile": "natural",
+      "battle_body_policy": "no_embedded_equipment",
+      "weapon_attachment_metadata": null,
+      "battle_palette_reference": null
+    },
+    {
+      "character_id": "CHAR004",
+      "slug": "reef_friend",
+      "display_name": "Reef Friend",
+      "source_reference_images": [
+        {
+          "path": "map_factory/references/characters/reef_friend.png.png",
+          "sha256": "9449947b74f018690003a89fd00c2472ab32bee14248b618c843d610db5205db"
+        }
+      ],
+      "reference_status": "available",
+      "map_sprite_canvas_size": [
+        96,
+        96
+      ],
+      "battle_sprite_canvas_size": [
+        256,
+        256
+      ],
+      "map_ground_footprint": [
+        1,
+        1
+      ],
+      "map_anchor": [
+        48,
+        90
+      ],
+      "battle_anchor": [
+        128,
+        240
+      ],
+      "supported_directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "movement_speed": 180,
+      "collision_shape": {
+        "size": [
+          24,
+          18
+        ],
+        "offset": [
+          0,
+          -9
+        ]
+      },
+      "animations": {},
+      "portraits": {},
+      "turnaround": {},
+      "details": {},
+      "approval_status": "pending",
+      "production_complete": false,
+      "character_role": "sea_melee_fighter",
+      "ui": {},
+      "key_art": {},
+      "weapons": {},
+      "effects": {},
+      "map_idle_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "map_walk_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "battle_animation_frames": {
+        "idle_ready": [],
+        "step": [],
+        "attack_windup": [],
+        "attack_execute": [],
+        "cast_magic": [],
+        "use_item": [],
+        "hurt": [],
+        "defend": [],
+        "victory": []
+      },
+      "available_battle_actions": [],
+      "animation_frame_durations": {},
+      "animation_loop_modes": {},
+      "animation_quality_approval": "pending_visual_sequence_review",
+      "color_palette": [],
+      "equipment_profile": "melee_reference_pending",
+      "battle_body_policy": "no_embedded_equipment",
+      "weapon_attachment_metadata": null,
+      "battle_palette_reference": null
+    },
+    {
+      "character_id": "CHAR005",
+      "slug": "old_father",
+      "display_name": "The Old Father",
+      "source_reference_images": [
+        {
+          "path": "map_factory/references/characters/old_father.png.png",
+          "sha256": "cee08d629c77db1b70b8548eb28850fe59c56b7b1635e5b10f3c451f00429716"
+        }
+      ],
+      "reference_status": "available",
+      "map_sprite_canvas_size": [
+        128,
+        128
+      ],
+      "battle_sprite_canvas_size": [
+        320,
+        320
+      ],
+      "map_ground_footprint": [
+        1,
+        1
+      ],
+      "map_anchor": [
+        64,
+        122
+      ],
+      "battle_anchor": [
+        160,
+        304
+      ],
+      "supported_directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "movement_speed": 180,
+      "collision_shape": {
+        "size": [
+          24,
+          18
+        ],
+        "offset": [
+          0,
+          -9
+        ]
+      },
+      "animations": {},
+      "portraits": {},
+      "turnaround": {},
+      "details": {},
+      "approval_status": "pending",
+      "production_complete": false,
+      "character_role": "nature_caster",
+      "ui": {},
+      "key_art": {},
+      "weapons": {},
+      "effects": {},
+      "map_idle_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "map_walk_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "battle_animation_frames": {
+        "idle_ready": [],
+        "step": [],
+        "attack_windup": [],
+        "attack_execute": [],
+        "cast_magic": [],
+        "use_item": [],
+        "hurt": [],
+        "defend": [],
+        "victory": []
+      },
+      "available_battle_actions": [],
+      "animation_frame_durations": {},
+      "animation_loop_modes": {},
+      "animation_quality_approval": "pending_visual_sequence_review",
+      "color_palette": [],
+      "equipment_profile": "staff",
+      "battle_body_policy": "no_embedded_equipment",
+      "weapon_attachment_metadata": null,
+      "battle_palette_reference": null
+    },
+    {
+      "character_id": "CHAR006",
+      "slug": "temple_archer",
+      "display_name": "Temple Archer",
+      "source_reference_images": [
+        {
+          "path": "map_factory/references/characters/temple_archer.png.png",
+          "sha256": "05c5b048022a83715b6bdc7fd05080c4f62b83c4ba9c710b7b79aaf8a2442691"
+        }
+      ],
+      "reference_status": "available",
+      "map_sprite_canvas_size": [
+        96,
+        96
+      ],
+      "battle_sprite_canvas_size": [
+        256,
+        256
+      ],
+      "map_ground_footprint": [
+        1,
+        1
+      ],
+      "map_anchor": [
+        48,
+        90
+      ],
+      "battle_anchor": [
+        128,
+        240
+      ],
+      "supported_directions": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "movement_speed": 180,
+      "collision_shape": {
+        "size": [
+          24,
+          18
+        ],
+        "offset": [
+          0,
+          -9
+        ]
+      },
+      "animations": {},
+      "portraits": {},
+      "turnaround": {},
+      "details": {},
+      "approval_status": "pending",
+      "production_complete": false,
+      "character_role": "archer",
+      "ui": {},
+      "key_art": {},
+      "weapons": {},
+      "effects": {},
+      "map_idle_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "map_walk_frames": {
+        "down": [],
+        "left": [],
+        "right": [],
+        "up": []
+      },
+      "battle_animation_frames": {
+        "idle_ready": [],
+        "step": [],
+        "attack_windup": [],
+        "attack_execute": [],
+        "cast_magic": [],
+        "use_item": [],
+        "hurt": [],
+        "defend": [],
+        "victory": []
+      },
+      "available_battle_actions": [],
+      "animation_frame_durations": {},
+      "animation_loop_modes": {},
+      "animation_quality_approval": "pending_visual_sequence_review",
+      "color_palette": [],
+      "equipment_profile": "bow",
+      "battle_body_policy": "no_embedded_equipment",
+      "weapon_attachment_metadata": null,
+      "battle_palette_reference": null
+    }
+  ]
+}

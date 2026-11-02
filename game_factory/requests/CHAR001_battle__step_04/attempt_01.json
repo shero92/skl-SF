@@ -1,0 +1,10 @@
+{
+  "id": "CHAR001_battle__step_04",
+  "arguments": {
+    "prompt": "Use case: precise-object-edit. Create exactly ONE new combat animation frame by editing the supplied hero battle sprite: CHAR001_battle__step_04, step, frame 4 of 4. Preserve this exact character identity, face, hair, outfit construction, ornaments, colors, weapon, pixel density, canvas, camera and body scale. Same right-facing three-quarter combat camera throughout. Change the anatomy and action pose as required for THIS phase: settle into combat stance after the step. Make the progression visible, not a duplicate static pose. Preserve proper anatomy and stable ground baseline. Do not zoom or reframe the character. Keep full head, limbs and original weapon visible with margins. Native canvas 256x256, crisp detailed handcrafted pixels; no blur or painterly smoothing. ONE character only. True transparent RGBA, no floor, cast shadow, captions, collage or additional poses. No baked slash arc, airborne projectile, magic particles or battle background; effects are separate assets. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+    "referenced_image_paths": [
+      "H:\\shining force\\skl-SF\\.worktrees\\TASK-0070-game-factory\\assets\\characters\\hero\\battle\\step\\sources\\hero_battle_step_03__attempt_01.png"
+    ],
+    "transparent_background": true
+  }
+}

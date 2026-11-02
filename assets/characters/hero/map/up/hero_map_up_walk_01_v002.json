@@ -1,0 +1,84 @@
+{
+  "id": "CHAR001_map_up_walk_01",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "walk",
+  "direction": "up",
+  "frame": 1,
+  "output": "assets/characters/hero/map/up/hero_map_up_walk_01_v002.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: precise-object-edit. Edit the ONE supplied transparent hero sprite to produce exactly one new animation frame: CHAR001_map_up_walk_01, up facing, walk frame 01. The edit target already embodies the original poster identity. Preserve exact canvas, camera, face, hair silhouette, head position, torso, costume patterns, ornaments, palette, weapon hand and body proportions. Do not redraw or redesign these protected regions. Change only limbs and secondary cloth motion as necessary: CHANGE THE LEG POSE for the mandatory gait instruction below; make the anatomical stride change clearly visible. Keep full sprite and weapon visible; preserve real transparency. Original handcrafted pixel style and native 96x96 logical grid. No text, floor, shadow, extra limbs, extra figure, sheet or collage. ONE sprite only. FINAL GAIT POSE OVERRIDE: SCREEN-LEFT boot leads HIGHER toward top edge; SCREEN-RIGHT boot trails LOWER toward bottom edge. Foot alternation and changing leg silhouette are mandatory; do not return another standing pose or repeat the same forward leg across every frame. Keep face, torso and costume identity unchanged. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "needs_review",
+  "attempts": 2,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T03:59:32.557829+00:00",
+  "source_png": "assets/characters/hero/map/up/sources/hero_map_up_walk_01_v002__attempt_02.png",
+  "sha256": "5bdfe91b8d77fc076d86cb2813632e3c75b181ea0ad3744e75f95ae8a1241407",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "up",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1247,
+      1261
+    ],
+    "source_bbox": [
+      334,
+      30,
+      1088,
+      1230
+    ],
+    "source_contact_x": 641.4855769230769,
+    "scale": 0.07039294306335203,
+    "native_bounds": [
+      26,
+      6,
+      79,
+      90
+    ],
+    "paste_position": [
+      26,
+      6
+    ]
+  },
+  "rejected_candidates": [
+    {
+      "output": "assets/characters/hero/map/up/hero_map_up_walk_01.png",
+      "sha256": "3f90cd14d2ecc83af5405ebe0ce4057c05aace6bc266ce75799a94d0e49c1cd0",
+      "source_png": "assets/characters/hero/map/up/sources/hero_map_up_walk_01__attempt_01.png",
+      "reason": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
+    }
+  ],
+  "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
+}

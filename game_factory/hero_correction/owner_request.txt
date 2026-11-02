@@ -1,0 +1,509 @@
+# SKL-SF — HERO BATTLE SPRITE CORRECTION
+# STRICT COLOR CONSISTENCY + WEAPONLESS ANIMATIONS + WEAPON FACTORY INTEGRATION
+
+## MAIN OBJECTIVE
+
+Review and regenerate the Hero battle animation frames in the existing skl-SF project.
+
+The current generated battle sprites have two major problems:
+
+1. Hero's outfit colors are inconsistent between animation frames.
+2. The sword is permanently drawn into the character sprites.
+
+Both problems must be corrected.
+
+Do not redesign the character.
+
+Do not change the existing combat movement style unnecessarily.
+
+Preserve all original files and save corrected images as new versions.
+
+---
+
+## 1. MASTER VISUAL REFERENCES — VERY IMPORTANT
+
+Use these existing generated images as the primary visual references:
+
+PRIMARY STYLE AND COLOR REFERENCE:
+`hero_battle_idle_ready_01__attempt_01.png`
+
+SECONDARY COLOR AND CHARACTER REFERENCE:
+`hero_battle_step_01__attempt_01.png`
+
+These two images define the APPROVED Hero appearance.
+
+Locate the actual files in the existing project before generating anything.
+
+Study their:
+
+- Hair colors and highlights
+- Skin tone
+- Blue scarf
+- Feather cloak colors
+- White and cream feather proportions
+- Red feather accents
+- Brown pants
+- Gold ornaments
+- Rope belt
+- Shell accessories
+- Sandals
+- Pixel-art rendering style
+- Outline thickness
+- Lighting and contrast
+
+The visual appearance of these two references must remain consistent throughout every Hero battle frame.
+
+IMPORTANT:
+
+Some existing attack frames contain too much saturated blue and bright red.
+
+Correct this.
+
+Do not make the Hero more blue or more red during attacks.
+
+Keep the original balanced colors from the approved Idle Ready and Step references.
+
+Treat these two files as the MASTER CHARACTER DESIGN.
+
+---
+
+## 2. CREATE A LOCKED HERO COLOR PALETTE
+
+Before regenerating battle animations:
+
+Analyze the actual pixel colors of the two approved references.
+
+Extract representative colors for:
+
+- Hair shadows
+- Hair midtones
+- Hair highlights
+- Skin
+- Scarf blue
+- Feather blue
+- Feather red
+- Feather cream
+- Feather white
+- Feather olive
+- Pants brown
+- Leather
+- Rope
+- Gold ornaments
+- Shell accessories
+- Outlines
+
+Create:
+
+`hero_battle_palette.json`
+
+Also create a visual palette reference.
+
+Use this palette as the consistent standard for every battle frame.
+
+Do not simply copy individual RGB values without understanding shading and material relationships.
+
+Maintain the same perceived balance of colors.
+
+Avoid:
+- Oversaturated red feathers
+- Excessively dominant blue
+- Random costume color changes
+- Different skin tones
+- Different hair colors
+- Different gold ornament colors
+- Random lighting changes between frames
+
+All frames must look like the SAME Hero under the SAME lighting conditions.
+
+---
+
+## 3. REMOVE WEAPONS FROM ALL CHARACTER FRAMES
+
+CRITICAL ARCHITECTURE CHANGE:
+
+NO WEAPONS MAY BE PERMANENTLY DRAWN INTO CHARACTER BATTLE SPRITES.
+
+This includes:
+
+- Sword blades
+- Sword handles
+- Sword guards
+- Sword pommels
+- Spears
+- Axes
+- Bows
+- Staffs
+- Shields when independently equipped
+
+The Hero's hand must be empty.
+
+However, the attack pose must still look like he is gripping and swinging a weapon.
+
+Generate natural hands and fingers in weapon-holding positions.
+
+Do not create an open, flat palm when the pose requires a firm grip.
+
+Do not replace the sword with a fake or invisible-looking blade.
+
+The character sprite contains ONLY:
+
+- Character body
+- Hair
+- Costume
+- Armor and accessories
+- Hands
+- Legs
+- Feet
+
+No equipped weapon.
+
+Weapons are produced and managed by the separate Weapon Factory.
+
+---
+
+## 4. PRESERVE THE EXISTING ATTACK MOTIONS
+
+Use the existing battle animation frames as pose references:
+
+`hero_battle_attack_windup_01__attempt_01.png`
+`hero_battle_attack_windup_02__attempt_01.png`
+`hero_battle_attack_windup_03__attempt_01.png`
+`hero_battle_attack_windup_04__attempt_01.png`
+
+And:
+
+`hero_battle_attack_execute_01__attempt_01.png`
+`hero_battle_attack_execute_02__attempt_01.png`
+`hero_battle_attack_execute_03__attempt_01.png`
+`hero_battle_attack_execute_04__attempt_01.png`
+`hero_battle_attack_execute_05__attempt_01.png`
+
+Preserve the intended motion sequence:
+
+1. Prepare attack
+2. Raise weapon hand
+3. Rotate torso
+4. Begin strike
+5. Perform strike
+6. Follow-through
+7. Recover stance
+
+Only correct:
+- Weapon removal
+- Color inconsistency
+- Character identity inconsistencies
+- Hand grip and positioning
+- Animation alignment
+- Incorrect frame scale
+
+Do not replace the dynamic sword-combat motions with generic punching animations.
+
+The Hero must still move like a swordsman, even when the actual sword is not included in the body image.
+
+---
+
+## 5. WEAPON FACTORY — MODULAR EQUIPMENT
+
+Implement a separate Weapon Factory integrated with the Character Factory.
+
+Each weapon must exist as an independent PNG asset.
+
+Example structure:
+
+assets/weapons/
+    swords/
+    axes/
+    spears/
+    bows/
+    staffs/
+    shields/
+
+The Hero may equip different weapons without regenerating his battle animations.
+
+Examples:
+
+- Basic Sword
+- Iron Sword
+- Steel Sword
+- Royal Sword
+- Fire Sword
+- Ice Sword
+
+The same compatible attack animation should work with different equipped swords.
+
+Do not assume one animation works correctly for every weapon category.
+
+Allow different animation profiles for swords, axes, spears, bows, and staffs.
+
+Weapon images must be separate from character body images.
+
+---
+
+## 6. WEAPON ATTACHMENT POINTS
+
+For EVERY battle animation frame, create weapon attachment metadata.
+
+Required:
+
+- character_id
+- animation_name
+- frame_index
+- hand_anchor_x
+- hand_anchor_y
+- hand_rotation_degrees
+- weapon_scale
+- weapon_render_order
+- grip_type
+
+Create:
+
+`hero_weapon_anchors.json`
+
+The hand anchor must correspond to the actual grip location in each individual frame.
+
+The weapon must move naturally with the Hero's hand throughout the animation.
+
+Do not use one fixed attachment position for every frame.
+
+The attachment must support:
+
+- Translation
+- Rotation
+- Optional scale adjustment
+- Front/behind-body rendering
+
+Use appropriate pivot positions so the weapon grip remains aligned to the hand.
+
+Where necessary, split character rendering into front and back components to support correct weapon occlusion.
+
+Do not place weapons randomly over the character image.
+
+---
+
+## 7. GODOT BATTLE RENDERING
+
+The battle character should use separate rendering components.
+
+Suggested structure:
+
+BattleCharacter
+    BodySprite
+    WeaponBack
+    WeaponFront
+    Effects
+
+Use data-driven animation frame metadata to update the equipped weapon transform.
+
+For each frame:
+
+1. Load the Hero's weaponless body image.
+2. Read the hand anchor.
+3. Load the equipped weapon PNG.
+4. Position its grip pivot at the hand anchor.
+5. Rotate it according to the attack pose.
+6. Render the weapon at the correct depth.
+7. Display attack effects independently.
+
+The same Hero body animation must support changing swords at runtime.
+
+Changing the equipped sword must NOT require generating a new Hero sprite.
+
+---
+
+## 8. PIXEL ART QUALITY
+
+Every corrected battle frame must:
+
+- Be one independent PNG
+- Use a transparent background
+- Preserve the approved character identity
+- Match the locked palette
+- Keep consistent anatomy
+- Maintain consistent body proportions
+- Preserve the same overall sprite scale
+- Maintain stable feet and ground anchoring
+- Use crisp pixel-art edges
+- Avoid blur and unwanted smoothing
+- Avoid inconsistent red/blue saturation
+- Contain no embedded weapons
+- Contain no text or labels
+
+Preserve the original high-resolution generated images separately.
+
+Do not simply erase the sword and leave damaged hands or transparent holes.
+
+Regenerate or carefully reconstruct hands naturally where required.
+
+---
+
+## 9. GENERATION RULE — ONE FRAME PER IMAGE
+
+Generate exactly ONE character animation frame per image-generation request.
+
+Do not generate:
+
+- Six poses in one picture
+- Sprite sheet collages
+- Multiple frames in one PNG
+- Character posters instead of usable animation frames
+
+Each generated frame must be saved separately.
+
+Example output:
+
+hero_battle_attack_windup_01__weaponless_v2.png
+hero_battle_attack_windup_02__weaponless_v2.png
+hero_battle_attack_windup_03__weaponless_v2.png
+hero_battle_attack_windup_04__weaponless_v2.png
+
+hero_battle_attack_execute_01__weaponless_v2.png
+hero_battle_attack_execute_02__weaponless_v2.png
+hero_battle_attack_execute_03__weaponless_v2.png
+hero_battle_attack_execute_04__weaponless_v2.png
+hero_battle_attack_execute_05__weaponless_v2.png
+
+Use the actual project naming convention if it differs.
+
+Never overwrite the original attempt_01 images.
+
+---
+
+## 10. COLOR AND ANIMATION VALIDATION
+
+After generation, compare every new frame against:
+
+`hero_battle_idle_ready_01__attempt_01.png`
+
+and:
+
+`hero_battle_step_01__attempt_01.png`
+
+Check:
+
+- Feather color proportions
+- Blue saturation
+- Red saturation
+- Skin tone
+- Hair colors
+- Brown pants
+- Gold accessories
+- Costume patterns
+- Silhouette
+- Character identity
+- Transparent background
+- Weapon-free hands
+
+Validate the frames as a complete sequence.
+
+Do not accept an animation merely because individual images look attractive.
+
+Check whether frames work together without:
+
+- Costume flicker
+- Sudden color changes
+- Unexpected size changes
+- Shifting ground anchors
+- Jumping weapon grips
+- Inconsistent hand anatomy
+
+Create an animation preview from the individual PNG files.
+
+---
+
+## 11. REAL WEAPON SWAP TEST
+
+Create a small Godot demonstration.
+
+Use the same Hero attack animation and test it with:
+
+1. Basic Sword
+2. A second sword with visibly different appearance
+
+Both weapons must be separate PNG files.
+
+Switching between the two weapons must not modify the Hero body animation.
+
+The weapon must follow the correct hand anchors during wind-up, attack, and recovery.
+
+Verify the result visually in Godot.
+
+If a suitable second sword does not exist, use another approved compatible sword if available, or report the missing weapon rather than embedding a sword in the character sprite.
+
+---
+
+## 12. APPLY THIS ARCHITECTURE TO ALL SIX CHARACTERS
+
+This modular weapon system must become a standard feature of the Character Factory.
+
+Approved characters:
+
+- Hero
+- Cely
+- Neru
+- Reef Friend
+- The Old Father
+- Temple Archer
+
+Every character who equips a weapon must support external weapon assets and appropriate grip attachment points.
+
+Do not regenerate all six characters immediately.
+
+FIRST validate the corrected Hero pipeline.
+
+Once it works, reuse the system for the other characters.
+
+Characters with non-equippable natural attacks can use body-only animations.
+
+---
+
+## 13. EXECUTION PRIORITY
+
+PHASE 1:
+Inspect the approved Hero references and extract the locked color palette.
+
+PHASE 2:
+Review current wind-up and attack frames and identify color inconsistencies and embedded weapons.
+
+PHASE 3:
+Regenerate the nine attack frames as weaponless, color-consistent versions.
+
+PHASE 4:
+Generate or correct per-frame hand anchors.
+
+PHASE 5:
+Connect the weapon attachment system to the existing Godot Battle Factory.
+
+PHASE 6:
+Test two different swords with the same Hero battle animation.
+
+PHASE 7:
+Create a real animation preview and review color consistency.
+
+PHASE 8:
+Register the new versions without deleting the originals.
+
+---
+
+## 14. DEFINITION OF DONE
+
+This task is complete only when:
+
+- Hero's battle colors match the two approved reference images.
+- Red and blue saturation remain consistent across the animation.
+- All attack body frames contain no embedded weapons.
+- Attack motions still look natural for a swordsman.
+- Weapon grip anchors exist for every frame.
+- A separate sword PNG can be attached correctly.
+- The same animation works with two different swords.
+- Godot renders the weapon correctly throughout the attack.
+- Original character images are preserved.
+- Every new animation frame is saved independently.
+- A genuine animation preview is available.
+
+Do not claim completion based only on generated images.
+
+The weapon-swapping system must actually work in Godot.
+
+START NOW.
+
+Focus first on Hero's approved colors, weaponless attack frames, and modular weapon attachment.
