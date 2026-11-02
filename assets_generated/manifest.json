@@ -2138,7 +2138,7 @@
       "orientation": "default",
       "anchor_x": 0,
       "anchor_y": 0,
-      "transparent_background": false,
+      "transparent_background": true,
       "details": "Foam Edge Overlay. Match the corresponding element in the original room reference; isolate only this named part.",
       "specification_status": "inferred_dimensions_review_required"
     },
@@ -2156,7 +2156,7 @@
       "orientation": "default",
       "anchor_x": 0,
       "anchor_y": 0,
-      "transparent_background": false,
+      "transparent_background": true,
       "details": "Near Cliff Rock Segment. Match the corresponding element in the original room reference; isolate only this named part.",
       "specification_status": "inferred_dimensions_review_required"
     },
@@ -2174,7 +2174,7 @@
       "orientation": "default",
       "anchor_x": 0,
       "anchor_y": 0,
-      "transparent_background": false,
+      "transparent_background": true,
       "details": "Far Cliff Rock Segment. Match the corresponding element in the original room reference; isolate only this named part.",
       "specification_status": "inferred_dimensions_review_required"
     },
@@ -2192,7 +2192,7 @@
       "orientation": "default",
       "anchor_x": 0,
       "anchor_y": 0,
-      "transparent_background": false,
+      "transparent_background": true,
       "details": "Sea Stack Island Small. Match the corresponding element in the original room reference; isolate only this named part.",
       "specification_status": "inferred_dimensions_review_required"
     },
@@ -2210,7 +2210,7 @@
       "orientation": "default",
       "anchor_x": 0,
       "anchor_y": 0,
-      "transparent_background": false,
+      "transparent_background": true,
       "details": "Sea Stack Island Medium. Match the corresponding element in the original room reference; isolate only this named part.",
       "specification_status": "inferred_dimensions_review_required"
     },
@@ -2246,7 +2246,7 @@
       "orientation": "default",
       "anchor_x": 0,
       "anchor_y": 0,
-      "transparent_background": false,
+      "transparent_background": true,
       "details": "Bright Cloud Small. Match the corresponding element in the original room reference; isolate only this named part.",
       "specification_status": "inferred_dimensions_review_required"
     },
@@ -2264,7 +2264,7 @@
       "orientation": "default",
       "anchor_x": 0,
       "anchor_y": 0,
-      "transparent_background": false,
+      "transparent_background": true,
       "details": "Bright Cloud Medium. Match the corresponding element in the original room reference; isolate only this named part.",
       "specification_status": "inferred_dimensions_review_required"
     },
@@ -2300,11 +2300,11 @@
       "orientation": "default",
       "anchor_x": 0,
       "anchor_y": 0,
-      "transparent_background": false,
+      "transparent_background": true,
       "details": "Distant Rock Arch Formation. Match the corresponding element in the original room reference; isolate only this named part.",
       "specification_status": "inferred_dimensions_review_required"
     }
   ],
   "count": 128,
-  "fingerprint": "a1c98b5a7846276b7d97c51c251d3121fd3660894cd71fa4948cdd1b3828a763"
+  "fingerprint": "a3b8d61b35ba44cb99d5e96818ec33ccb56857c432e466409810680e49b4de2e"
 }
