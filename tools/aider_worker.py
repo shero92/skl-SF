@@ -77,6 +77,9 @@ def settings() -> dict:
     cfg = read_json(CONFIG, {})
     out = dict(DEFAULTS)
     out.update(cfg.get("aider") or {})
+    # Owner-local overrides (executable path, spend limit...). Git-ignored; cannot switch execution on.
+    local = read_json(STATE_DIR / "config.local.json", {})
+    out.update({k: v for k, v in local.items() if k in DEFAULTS})
     out["enabled"] = bool(cfg.get("aider_execution_enabled", False))
     return out
 

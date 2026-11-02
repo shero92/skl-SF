@@ -106,6 +106,16 @@ class BattleScope(unittest.TestCase):
                 w.task_touches(t)
 
 
+class LocalConfig(Base):
+    def test_local_override_sets_limits_but_never_enables(self):
+        w.write_json(self.state / "config.local.json",
+                     {"max_spend_usd": 7.5, "aider_executable": "X:/aider.exe", "enabled": True, "evil": 1})
+        with mock.patch.object(w, "CONFIG", Path(self.tmp.name) / "none.json"):
+            cfg = w.settings()
+        self.assertEqual((cfg["max_spend_usd"], cfg["aider_executable"], cfg["enabled"]), (7.5, "X:/aider.exe", False))
+        self.assertNotIn("evil", cfg)
+
+
 class Locks(Base):
     def test_double_claim_is_refused(self):
         self.assertTrue(w.acquire_lock("task-TASK-0001"))

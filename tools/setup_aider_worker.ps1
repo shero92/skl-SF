@@ -4,7 +4,7 @@
 .EXAMPLE   powershell.exe -NoProfile -File tools\setup_aider_worker.ps1 -Install
 Never touches the 'SyncAISkills' task. Never stores or reads the API key.
 #>
-param([switch]$Install, [switch]$Uninstall, [switch]$WhatIfOnly)
+param([switch]$Install, [switch]$Uninstall, [switch]$WhatIfOnly, [int]$DelayMinutes = 0)
 $ErrorActionPreference = 'Stop'
 $TaskName = 'SklSfAiderWorker'
 if ($TaskName -eq 'SyncAISkills') { throw 'refusing to touch SyncAISkills' }
@@ -17,6 +17,7 @@ if (-not $Install) { "Dry description only. Would register '$TaskName' at user l
 $args = "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File `"$Runner`" run"
 $action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $args -WorkingDirectory (Split-Path -Parent $PSScriptRoot)
 $trigger = New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
+if ($DelayMinutes -gt 0) { $trigger.Delay = 'PT' + $DelayMinutes + 'M' }
 $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries `
     -RestartCount 999 -RestartInterval (New-TimeSpan -Minutes 1) -MultipleInstances IgnoreNew -ExecutionTimeLimit ([TimeSpan]::Zero)
 $principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType Interactive -RunLevel Limited
