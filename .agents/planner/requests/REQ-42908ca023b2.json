@@ -1,0 +1,13 @@
+{
+  "status": "open",
+  "title": "TASK-0071: bootstrap automatic Aider task worker on Windows",
+  "problem": "Owner explicitly assigns this task to Aider this time. Codex must only create records, never implement code. Existing runner supports only claude/codex, planning and execution are disabled, and owner requests ready explicitly assigned Aider tasks to run automatically with conditional merges. Bootstrap this existing task manually; do not create a duplicate or route it to Codex or Claude.",
+  "file": "tools/agent_runner.py",
+  "line": null,
+  "done_when": "Aider support and Windows watcher implemented in an isolated branch; supervised end-to-end task passes before enabling continuous execution; user dirty files and approved art unchanged.",
+  "test": "python tools/run_tests.py --changed; supervised Windows Aider queue-to-merge and restart/failure verification",
+  "priority": "high",
+  "kind": "architecture",
+  "agent": "aider"
+}
+

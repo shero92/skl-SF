@@ -2,10 +2,12 @@
 
 Read this file before creating, importing, replacing or approving any game texture.
 
+قواعد المصدر والتوليد والتحقق الملزمة لجميع المصانع: [سياسة إنتاج الرسوم الموحدة](GRAPHICS_PRODUCTION_POLICY.md)، قرار المالك 2026-11-01. تعلو على طرق اقتطاع المصادر المجمعة القديمة؛ التنفيذ الآلي لا يُدّعى دون دليل كود واختبار.
+
 1. Always prefer the best verified visual quality: clean pixel art, correct native resolution, accurate shapes, consistent palette, no visible crop artifacts or baked-in labels. A larger image alone is not necessarily better.
 2. Store each part as an individual PNG at `map_factory/parts/<category>/<ID>_<Name>.png`. Reuse stable IDs in every map.
 3. All objects need transparent RGBA backgrounds and clean edges; floor textures must tile seamlessly. Verify sprite anchors, collision footprints, shadows and pixel scale in Godot.
-4. When a new texture is demonstrably superior, replace the old PNG at the same stable path, then update `map_factory/metadata/asset_index.json` and `production_queue.csv`. Git history preserves the old revision.
+4. التحسين إصدار جديد مستقل؛ لا تستبدل PNG معتمدة. احفظ المصدر والإصدار السابق، ولا تحدث active manifest أو خرائط الإنتاج قبل التحقق وموافقة المالك.
 5. When unsure whether a replacement is better, stage it in `map_factory/candidates/` and review visually before overwriting. Never silently downgrade a production-ready file.
 6. Metadata must honestly reflect `planned` (missing), `needs_cleanup` (draft/unreviewed) or `ready` (reviewed and usable). No empty placeholder records may count as completed art.
 7. Keep shadows independently editable when appropriate, including light direction, opacity and offsets.

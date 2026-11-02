@@ -38,3 +38,4 @@ Thumbs.db
 
 # Never commit agent conversations, raw JSONL transcripts or local usage snapshots
 .agents/monitoring/.local/
+.aider*

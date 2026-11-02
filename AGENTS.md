@@ -2,6 +2,23 @@
 
 **Applies to Codex, Claude Code and all coding agents.** These are the only auto-loaded project instructions; open supporting files on demand.
 
+## سياسة الرسوم الدائمة — قرار المالك 2026-11-01
+
+قبل أي عمل رسومي اقرأ [السياسة الموحدة](docs/GRAPHICS_PRODUCTION_POLICY.md). كل إطار أو عنصر قابل لإعادة الاستخدام يولد مستقلاً في ملفه؛ يمنع توليد عدة وضعيات في صورة واقتطاعها كأصول إنتاجية. Sprite Sheets مخرجات تجميع من الملفات الفردية فقط. تحفظ المصادر عالية الجودة والأصول المعتمدة وتراجع النسخ الجديدة قبل التفعيل. هذه السياسة تعلو على أي نص قديم متعارض، ولا تجيز كتابة الكود لـCodex أو تغيير نطاق العمل دون طلب المالك.
+
+طلب المالك الحالي يجيز إنتاج رسوم Hero Golden Cyclone ومراجعة أسلوب الهجوم. Codex للرسوم والتحليل والتقارير فقط، دون كود أو اختبارات أو إعدادات أتمتة؛ لا تشغيل Aider أو Claude أو خدمات صور خارجية في هذه المهمة.
+
+## Owner responsibility amendment — 2026-10-31
+
+This amendment supersedes older producer/coding permissions wherever they conflict.
+- Codex must NOT write or modify code, scripts, tests, or automation configuration. Its role is analysis, reports, task records, image/asset generation and visual review. Creating task/report documents does not authorize implementing their code.
+- Ordinary coding tasks belong to Aider. Only ready tasks explicitly assigned to Aider may be picked up automatically, after dependency checks.
+- Claude Code handles complex coding only after the owner explicitly asks Codex to create a Claude Code task. Codex may recommend Claude with a reason, but must not create, dispatch or escalate a task to Claude implicitly.
+- Aider must not generate images or modify approved image assets. Different implementers' changes must not be attributed to Codex.
+- The requested Aider watcher is NOT implemented or enabled by this amendment. Existing disabled automation stays disabled until the responsible coding agent implements and verifies the integration with a supervised end-to-end test.
+- Keep the existing Aider model selection (`openai/gpt-4o`, weak model `gpt-4o-mini`). The owner wants continuous processing of eligible tasks, not automatic provider/model changes. Never copy credentials into task files or reports.
+- See `docs/PROJECT_STATUS_2026-10-31_AND_AIDER_PLAN.md` for the dated evidence and pending implementation. No Claude task is authorized merely by this reference.
+
 1. **Scope:** environment / Map Factory only. Do NOT alter characters, NPC/player gameplay, portraits, dialogue or UI without a separate explicit new scope approval.
 2. **Locate first:** `INDEX.md` â†’ relevant folder `INDEX.md` â†’ exact file/range. Read `.agents/INDEX.md` only when coordinating work or delegating graphics; never bulk-read all inventories.
 3. **Track tasks:** follow `.agents/workflows/TASKS.md`. Check `.agents/project/TASKS.md` for current ownership/status before editing; claim one task and branch/worktree, avoid parallel edits to the same file. Update the task's own status and evidence, then regenerate dashboards.
@@ -23,3 +40,19 @@
 Before any commit/merge run: py -3 tools/run_tests.py --changed
 
 Details only when needed: `.agents/roles/`, `.agents/workflows/`, `.agents/project/`, `.agents/graphics/`. Keep context concise.
+
+## Aider execution authorization — 2026-11-02
+
+Owner authorization:
+- Codex Pro may continue producing approved graphics, plans,
+  reports, and task definitions.
+- Codex CLI remains restricted from general coding tasks.
+- Coding tasks explicitly assigned to Aider may be implemented
+  through Aider CLI using openai/gpt-6-sol.
+- This authorization applies to TASK-0071.
+- The execution tool must be recorded truthfully as Aider CLI;
+  the underlying model must also be recorded truthfully.
+- Preserve existing uncommitted changes and approved artwork.
+- Use isolated Git worktrees for coding tasks.
+- Keep unattended execution, startup registration and automatic
+  merging disabled until supervised testing succeeds.
