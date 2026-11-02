@@ -8,7 +8,7 @@ branch: none
 depends_on: TASK-0075
 issue: none
 art_request: none
-touches: scenes/battle/battle_perspective.gd,tools/verify_battle_perspective.gd,tools/tests/test_battle_perspective.py
+touches: scenes/battle/battle_perspective.gd,tools/verify_battle_perspective.gd,tools/tests/test_battle_perspective.py,tools/test_map.json
 test: python -m unittest discover -s tools/tests -p test_battle_perspective.py
 done_when: Pick the correct view per attacker: hero attacking = HERO_REAR_3Q, monster attacking = HERO_FRONT, with MONSTER_REAR available.
 estimate_minutes: 45
@@ -22,6 +22,8 @@ Pick the correct view per attacker: hero attacking = HERO_REAR_3Q, monster attac
 Data-driven table mapping (attacker_kind, phase) to view id and required asset keys. Missing rear/front assets yield warning MISSING_REAR_ART / MISSING_FRONT_ART; never fabricate a rear view by flipping a side frame.
 
 Scope: new battle-only files under scenes/battle/, tools/ and game_factory/battle/. Do not modify existing scenes, characters, UI, damage code or any image. Aider must not generate or edit images.
+
+Router registration: add ONE entry for your new test file to tools/test_map.json (id, kind python, covers, command, paths) so test_router (every test file must be routed) passes. Edit only that entry; do not touch other entries or tools/tests/INDEX.md.
 
 ## Acceptance criteria
 - [ ] Resolver returns the documented view for every (attacker, phase)
