@@ -145,6 +145,36 @@ class Classification(unittest.TestCase):
             self.assertEqual((cm.exception.kind, len(calls)), (kind, 1))
 
 
+class Gate(Base):
+    def test_no_limit_means_no_paid_runs(self):
+        cfg = dict(w.DEFAULTS)
+        w.start_window(cfg)
+        self.assertEqual(w.run_gate(cfg)[0], "budget")
+
+    def test_window_expiry_and_restart_keeps_window(self):
+        cfg = dict(w.DEFAULTS, max_spend_usd=1.0)
+        s = w.start_window(cfg, at=1000.0)
+        self.assertEqual(s["ends_at"], 1000.0 + 24 * 3600)
+        self.assertEqual(w.start_window(cfg, at=5000.0)["started_at"], 1000.0)  # restart resumes
+        self.assertIsNone(w.run_gate(cfg, at=2000.0))
+        self.assertEqual(w.run_gate(cfg, at=1000.0 + 24 * 3600 + 1)[0], "window")
+        self.assertEqual(w.start_window(cfg, at=10 ** 9)["started_at"], 1000.0)  # expired stays expired
+        self.assertGreater(w.new_window(cfg)["started_at"], 1000.0)
+
+    def test_spend_and_run_limits(self):
+        cfg = dict(w.DEFAULTS, max_spend_usd=1.0, max_aider_runs=2)
+        w.start_window(cfg)
+        costs = self.state / "costs.jsonl"
+        row = {"at": w.now(), "cost_session_usd": 0.4}
+        line = json.dumps(row) + "\n"
+        costs.write_text(line, newline="\n")
+        self.assertIsNone(w.run_gate(cfg))
+        costs.write_text(line * 2, newline="\n")
+        self.assertIn("max_aider_runs", w.run_gate(cfg)[1])
+        costs.write_text(json.dumps(dict(row, cost_session_usd=1.5)) + "\n", newline="\n")
+        self.assertIn("max_spend_usd", w.run_gate(cfg)[1])
+
+
 class EndToEnd(Base):
     """Real temp git repo + fake Aider process: claim, worktree, edit, tests, commit, no repeat."""
 
@@ -166,7 +196,8 @@ class EndToEnd(Base):
             n="0042", status="todo", agent="aider", dep="none", touches="tools/example_0042.py"))
         g("add", "-A")
         g("commit", "-q", "-m", "init")
-        cfg = dict(w.DEFAULTS, enabled=True, worktree_root=str(Path(self.tmp.name) / "wt"))
+        cfg = dict(w.DEFAULTS, enabled=True, max_spend_usd=5.0, worktree_root=str(Path(self.tmp.name) / "wt"))
+        w.start_window(cfg)
         for target, val in (("ROOT", self.repo), ("settings", lambda: cfg), ("find_aider", lambda c: "aider"),
                             ("run_tests", lambda t, wt, to: (True, "ok"))):
             p = mock.patch.object(w, target, val)
@@ -210,6 +241,14 @@ class EndToEnd(Base):
         self.assertEqual(len(self.aider_calls), 1)
         w.clear_pause()
         self.assertEqual(w.cycle(runner=self.fake()), "done")
+
+    def test_expired_window_pauses_before_any_call(self):
+        sess = w.read_json(w.session_file(), {})
+        sess["ends_at"] = 1.0
+        w.write_json(w.session_file(), sess)
+        self.assertEqual(w.cycle(runner=self.fake()), "paused")
+        self.assertEqual(w.pause_info()["kind"], "window")
+        self.assertEqual(self.aider_calls, [])
 
     def test_balance_failure_pauses(self):
         self.assertEqual(w.cycle(runner=self.fake(out="insufficient_quota", code=1)), "paused")

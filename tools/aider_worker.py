@@ -46,6 +46,9 @@ DEFAULTS = {
     "aider_executable": None,
     "transient_delays": [30, 60, 120],
     "defer_seconds": 600,
+    "run_window_hours": 24,
+    "max_spend_usd": None,
+    "max_aider_runs": None,
 }
 TERMINAL = {"done", "blocked"}
 TEST_PYTHON = {"python", "python3", "py"}
@@ -195,7 +198,7 @@ def acquire_lock(name: str, state_dir: Path = None, pid: int = None) -> bool:
             except OSError:
                 return False
             continue
-        with os.fdopen(fd, "w", encoding="utf-8") as f:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as f:
             json.dump({"pid": pid, "at": now()}, f)
         return True
     return False
@@ -360,7 +363,7 @@ def hide_images(wt: Path) -> None:
     marker = "# aider-worker: images hidden"
     text = exclude.read_text(encoding="utf-8") if exclude.exists() else ""
     if marker not in text:
-        exclude.write_text(text + "\n" + marker + "\n*.png\n*.jpg\n*.jpeg\n*.webp\n*.gif\n*.exr\n", encoding="utf-8")
+        exclude.write_text(text + "\n" + marker + "\n*.png\n*.jpg\n*.jpeg\n*.webp\n*.gif\n*.exr\n", encoding="utf-8", newline="\n")
 
 
 def input_files(wt: Path, touches: list) -> list:
@@ -440,6 +443,68 @@ def run_tests(task: dict, wt: Path, timeout: int) -> tuple:
     return True, tail
 
 
+# ---------------------------------------------------------------- run window / budget
+def session_file(state_dir: Path = None) -> Path:
+    return (state_dir or STATE_DIR) / "session.json"
+
+
+def start_window(cfg: dict, state_dir: Path = None, at: float = None) -> dict:
+    """Begin (or keep, after a restart) the bounded run window. Wall-clock based, so Sleep counts."""
+    cur = read_json(session_file(state_dir), {})
+    at = at if at is not None else time.time()
+    if cur and cur.get("ends_at", 0) > at:
+        return cur
+    if cur:
+        return cur  # expired: the owner must run `new-window`
+    cur = {"started_at": at, "ends_at": at + cfg["run_window_hours"] * 3600}
+    write_json(session_file(state_dir), cur)
+    return cur
+
+
+def new_window(cfg: dict, state_dir: Path = None) -> dict:
+    try:
+        session_file(state_dir).unlink()
+    except OSError:
+        pass
+    return start_window(cfg, state_dir)
+
+
+def window_usage(since: float, state_dir: Path = None) -> tuple:
+    runs, spend = 0, 0.0
+    try:
+        lines = ((state_dir or STATE_DIR) / "costs.jsonl").read_text(encoding="utf-8").splitlines()
+    except OSError:
+        lines = []
+    for line in lines:
+        try:
+            row = json.loads(line)
+            ts = datetime.fromisoformat(row["at"]).timestamp()
+        except (ValueError, KeyError):
+            continue
+        if ts >= since:
+            runs += 1
+            spend += row.get("cost_session_usd") or 0.0
+    return runs, spend
+
+
+def run_gate(cfg: dict, state_dir: Path = None, at: float = None) -> tuple | None:
+    """(kind, reason) when paid model calls must not start; None when allowed."""
+    at = at if at is not None else time.time()
+    if cfg.get("max_spend_usd") is None and cfg.get("max_aider_runs") is None:
+        return "budget", "no explicit spend limit (max_spend_usd or max_aider_runs) is configured"
+    sess = read_json(session_file(state_dir), {})
+    if not sess:
+        return "window", "no run window started"
+    if sess.get("ends_at", 0) <= at:
+        return "window", "run window ended; start a new one with new-window"
+    runs, spend = window_usage(sess["started_at"], state_dir)
+    if cfg.get("max_aider_runs") is not None and runs >= cfg["max_aider_runs"]:
+        return "budget", "max_aider_runs reached (%d)" % runs
+    if cfg.get("max_spend_usd") is not None and spend >= cfg["max_spend_usd"]:
+        return "budget", "max_spend_usd reached (%.2f)" % spend
+    return None
+
+
 # ---------------------------------------------------------------- main task execution
 class Pause(Exception):
     def __init__(self, kind, reason):
@@ -512,7 +577,7 @@ def _execute(task, cfg, sleep, runner):
     repair = ""
     usage_total = {}
     try:
-        with open(rundir / "execution.log", "a", encoding="utf-8") as log:
+        with open(rundir / "execution.log", "a", encoding="utf-8", newline="\n") as log:
             for repair_round in range(cfg["max_repair_attempts"] + 1):
                 msgfile = rundir / "message.md"
                 msgfile.write_text(build_message(task, repair), encoding="utf-8", newline="\n")
@@ -521,7 +586,7 @@ def _execute(task, cfg, sleep, runner):
                 code, out = aider_with_retry(cmd, wt, cfg, env, log, sleep, runner)
                 usage = parse_usage(out)
                 usage_total = usage
-                with open(STATE_DIR / "costs.jsonl", "a", encoding="utf-8") as f:
+                with open(STATE_DIR / "costs.jsonl", "a", encoding="utf-8", newline="\n") as f:
                     f.write(json.dumps({"task": tid, "at": now(), "model": cfg["main_model"], **usage}) + "\n")
                 if code:
                     raise RuntimeError("aider exited with code %s" % code)
@@ -570,6 +635,10 @@ def cycle(dry_run=False, sleep=time.sleep, runner=run) -> str:
         return "idle"
     if dry_run:
         return "would-run " + task["id"]
+    blocked = run_gate(settings())
+    if blocked:
+        set_pause(*blocked)
+        return "paused"
     return run_task(task, sleep, runner)["result"]
 
 
@@ -584,6 +653,9 @@ def loop(once=False, dry_run=False) -> int:
     try:
         if not dry_run:
             (STATE_DIR / "stop.flag").unlink(missing_ok=True)
+            start_window(cfg)
+            if run_gate(cfg):
+                print("gate: %s - %s" % run_gate(cfg))
         while True:
             if stop_requested():
                 print("stop requested; exiting")
@@ -603,7 +675,8 @@ def status() -> dict:
     tasks = load_tasks()
     states = {t: read_state(t) for t in tasks if read_state(t)}
     return {"enabled": settings()["enabled"], "worker_running": lock_live("worker"),
-            "pause": pause_info() or None, "stop_requested": stop_requested(),
+            "pause": pause_info() or None, "window": read_json(session_file(), None),
+            "gate": run_gate(settings()), "stop_requested": stop_requested(),
             "heartbeat": read_json(STATE_DIR / "heartbeat.json", None),
             "tasks": {t: {"phase": s.get("phase"), "reason": s.get("reason"), "commit": s.get("commit")}
                       for t, s in states.items()}}
@@ -615,7 +688,7 @@ def main(argv=None) -> int:
     r = sub.add_parser("run")
     r.add_argument("--once", action="store_true")
     r.add_argument("--dry-run", action="store_true")
-    for name in ("status", "stop", "resume"):
+    for name in ("status", "stop", "resume", "new-window"):
         sub.add_parser(name)
     a = ap.parse_args(argv)
     if a.cmd == "run":
@@ -624,8 +697,10 @@ def main(argv=None) -> int:
         print(json.dumps(status(), indent=2, default=str))
     elif a.cmd == "stop":
         STATE_DIR.mkdir(parents=True, exist_ok=True)
-        (STATE_DIR / "stop.flag").write_text(now(), encoding="utf-8")
+        (STATE_DIR / "stop.flag").write_text(now(), encoding="utf-8", newline="\n")
         print("stop requested: no new claims; the current task finishes first")
+    elif a.cmd == "new-window":
+        print(json.dumps(new_window(settings())))
     else:
         clear_pause()
         print("pause cleared")

@@ -49,6 +49,9 @@
     "api_key_env": "OPENAI_API_KEY",
     "poll_seconds": 10,
     "task_timeout_seconds": 1800,
-    "max_repair_attempts": 2
+    "max_repair_attempts": 2,
+    "run_window_hours": 24,
+    "max_spend_usd": null,
+    "max_aider_runs": null
   }
 }
