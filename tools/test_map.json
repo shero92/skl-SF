@@ -2,6 +2,7 @@
   "version": 1,
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
+    {"id": "battle_controller", "kind": "python", "covers": "Attacker/defender battle controller lifecycle, busy and missing-asset rejection, cancellation, reset and reentrant signal safety.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_controller.py"], "paths": ["scenes/battle/battle_animation_controller.gd", "scenes/battle/battle_timeline.gd", "tools/verify_battle_controller.gd", "tools/tests/test_battle_controller.py", "tools/battle_godot_harness.py", ".agents/planner/config.json"]},
     {"id": "battle_timeline", "kind": "python", "covers": "Deterministic battle timeline, silent preview controls, hitstop timing and shared headless Godot harness failure handling.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_timeline.py"], "paths": ["scenes/battle/battle_timeline.gd", "tools/verify_battle_timeline.gd", "tools/battle_godot_harness.py", "tools/tests/test_battle_timeline.py", ".agents/planner/config.json"]},
     {
       "id": "weapon_sockets",
