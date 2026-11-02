@@ -1,5 +1,7 @@
 # Game Factory
 
+قواعد الإنتاج الملزمة: [السياسة الرسومية الموحدة](../docs/GRAPHICS_PRODUCTION_POLICY.md). كل إطار شخصية يولد مستقلاً بمصدر كامل الجودة؛ الأوراق تُجمع من الملفات الفردية بعد التحقق فقط. لا مصادر collage ولا تغيير active manifest قبل الموافقة.
+
 Authoritative scope amendment: exactly SIX characters: Hero, Cely, Neru,
 Reef Friend, The Old Father, Temple Archer. The original supplied master request
 is preserved as provenance; its seventh-character requirement is superseded.

@@ -1,5 +1,7 @@
 # Hero weaponless battle revision
 
+قواعد Battle Animation Factory الملزمة: [السياسة الرسومية الموحدة](../../docs/GRAPHICS_PRODUCTION_POLICY.md). المصادر إطار مستقل لكل طلب، والجسم خالٍ من السلاح، والـSprite Sheet تصدير مشتق فقط. التحقق عند الحجم المعروض وموافقة المالك شرطان منفصلان عن نجاح الأدوات.
+
 The owner selected the original `idle_ready_01__attempt_01` and
 `step_01__attempt_01` sources as approved DESIGN/COLOR references. Their hashes
 are locked in `hero_battle_palette.json`. This does not approve new revisions.

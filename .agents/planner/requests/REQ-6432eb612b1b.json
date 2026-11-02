@@ -1,0 +1,12 @@
+{
+  "status": "open",
+  "title": "TASK-0074 Golden Cyclone independent frames and permanent graphics policy",
+  "problem": "Exact owner directive preserved in game_factory/golden_cyclone/v001/owner_request.txt. One frame = one generation request = one PNG. Generate 22 Golden Cyclone body frames sequentially, never crop storyboard production assets; preserve existing references. Canonical TASK-0074 already exists; no duplicate task. Codex images and documents only; no Aider or external image APIs.",
+  "file": "scenes/modular_battle_character.gd",
+  "line": null,
+  "done_when": "Permanent shared policy, honest source audit and regeneration queue, 22 validated individual source PNGs and separate VFX, measured metadata, exports and actual Godot validation; record missing work without false completion.",
+  "test": "python tools/run_tests.py --changed",
+  "priority": "high",
+  "kind": "art",
+  "agent": "specialist"
+}

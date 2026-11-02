@@ -2,6 +2,12 @@
 
 **Applies to Codex, Claude Code and all coding agents.** These are the only auto-loaded project instructions; open supporting files on demand.
 
+## سياسة الرسوم الدائمة — قرار المالك 2026-11-01
+
+قبل أي عمل رسومي اقرأ [السياسة الموحدة](docs/GRAPHICS_PRODUCTION_POLICY.md). كل إطار أو عنصر قابل لإعادة الاستخدام يولد مستقلاً في ملفه؛ يمنع توليد عدة وضعيات في صورة واقتطاعها كأصول إنتاجية. Sprite Sheets مخرجات تجميع من الملفات الفردية فقط. تحفظ المصادر عالية الجودة والأصول المعتمدة وتراجع النسخ الجديدة قبل التفعيل. هذه السياسة تعلو على أي نص قديم متعارض، ولا تجيز كتابة الكود لـCodex أو تغيير نطاق العمل دون طلب المالك.
+
+طلب المالك الحالي يجيز إنتاج رسوم Hero Golden Cyclone ومراجعة أسلوب الهجوم. Codex للرسوم والتحليل والتقارير فقط، دون كود أو اختبارات أو إعدادات أتمتة؛ لا تشغيل Aider أو Claude أو خدمات صور خارجية في هذه المهمة.
+
 1. **Scope:** environment / Map Factory only. Do NOT alter characters, NPC/player gameplay, portraits, dialogue or UI without a separate explicit new scope approval.
 2. **Locate first:** `INDEX.md` â†’ relevant folder `INDEX.md` â†’ exact file/range. Read `.agents/INDEX.md` only when coordinating work or delegating graphics; never bulk-read all inventories.
 3. **Track tasks:** follow `.agents/workflows/TASKS.md`. Check `.agents/project/TASKS.md` for current ownership/status before editing; claim one task and branch/worktree, avoid parallel edits to the same file. Update the task's own status and evidence, then regenerate dashboards.
