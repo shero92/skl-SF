@@ -1,0 +1,1861 @@
+{
+  "manifest_version": 1,
+  "map_id": "hero_room_01",
+  "base_version": 11,
+  "base_sha256": "e5dc4ebc34fcbce693957c22fe65d072b640cf35ea7b53046dde83e2a35cd3b2",
+  "note": "hero_room_01 reference reconstruction v0012: replace v0011 layout with deterministic reference-reconstruction blueprint using the approved 128-piece environment pack; PNG bytes unchanged.",
+  "source_image": {
+    "path": "map_factory/references/hero_room_01_original.png",
+    "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+    "status": "reference_imported"
+  },
+  "changes": [
+    {
+      "op": "remove_block",
+      "instance_id": "A007_back_objects_008"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "A012_back_objects_009"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "AntleredFlowerShrine"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchLeftFlowers"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchMain"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchRightFlowers"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "Astrolabe"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BedRug"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BlueBannerLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BlueBannerRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "CompassBannerArchRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "D007_back_objects_012"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "D007_back_objects_013"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DecoratedDoorRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DeskRug"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DistantIsleArch"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DistantIsleLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DistantIsleRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntranceGuardLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntranceGuardRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntrancePillarLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntrancePillarRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntryStairLeftEdge"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntryStairLower"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntryStairMiddle"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntryStairRightEdge"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntryStairUpper"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FlowerClusterArch"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontIvyLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontIvyRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontParapetLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontWallCenterLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontWallCenterRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontWallLeftWide"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontWallUpperLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontWallUpperRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "HeroBed"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "HeroHDBanner"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "HeroHDBedCover"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "HeroHDDoor"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "HeroHDLeftWall"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "HeroHDPillar"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "HeroHDRightWall"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LandingCenter"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftBookshelf"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftDeepRuinCorner"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftFlowerFence"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftIslandDistantExtra"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftPerimeterWallLow"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftPerimeterWallMid"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftWallLantern"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LowerLeftVines"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LowerRightVines"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RearLeftFlowerWall"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RearRightFlowerWall"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightBookshelf"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightDeepRuinCorner"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightFlowerFence"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightIslandDistantExtra"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightPerimeterWallLow"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightPerimeterWallMid"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightWallLantern"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "Shell"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "SideTable"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TerraceRockFrontLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TerraceRockFrontRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TreasureChest"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "UpperLeftClimbingIvy"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "UpperRightClimbingIvy"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "V001_back_objects_010"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "V004_objects_017"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "V007_back_objects_011"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "V013_objects_011"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "V017_objects_010"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "V020_objects_012"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "V021_objects_018"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "VaseByArch"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "W001_back_objects_002"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "W002_back_objects_004"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "W003_back_objects_003"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "W014_back_objects_005"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "W015_back_objects_006"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "W015_back_objects_007"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "WritingTable"
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "E015",
+        "instance_id": "DistantIsleLeft",
+        "x": 288,
+        "y": 130,
+        "scale": 0.32
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "E016",
+        "instance_id": "DistantIsleRight",
+        "x": 1120,
+        "y": 145,
+        "scale": 0.25
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "E017",
+        "instance_id": "DistantIsleArch",
+        "x": 1012,
+        "y": 106,
+        "scale": 0.14
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "E015",
+        "instance_id": "LeftIslandDistantExtra",
+        "x": 90,
+        "y": 110,
+        "scale": 0.27
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "E016",
+        "instance_id": "RightIslandDistantExtra",
+        "x": 1452,
+        "y": 126,
+        "scale": 0.19
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B05",
+        "instance_id": "SeaStackLeft",
+        "x": 40,
+        "y": 100,
+        "scale": 0.6
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B06",
+        "instance_id": "SeaStackRight",
+        "x": 1350,
+        "y": 120,
+        "scale": 0.5
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F01",
+        "instance_id": "RoyalBed",
+        "x": 450.0,
+        "y": 545,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            2,
+            1
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F03",
+          "east": "F04",
+          "south": "F01",
+          "west": "F02"
+        },
+        "shadow": {
+          "type": "bed",
+          "opacity": 0.3,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F05",
+        "instance_id": "BedsideTable",
+        "x": 290.0,
+        "y": 481,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            0,
+            2
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F05_north",
+          "east": "F05_east",
+          "south": "F05_south",
+          "west": "F05_west"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.26,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F06",
+        "instance_id": "LeftBookcase",
+        "x": 418.0,
+        "y": 289,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            1,
+            0
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "bookshelf",
+          "opacity": 0.28,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F07",
+        "instance_id": "RightBookcase",
+        "x": 994.0,
+        "y": 353,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            10,
+            1
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "bookshelf",
+          "opacity": 0.28,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F08",
+        "instance_id": "DiningTable",
+        "x": 1122.0,
+        "y": 609,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            12,
+            3
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "table",
+          "opacity": 0.3,
+          "offset_x": 4,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F09",
+        "instance_id": "TableBenchLeft",
+        "x": 1058.0,
+        "y": 673,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            12,
+            6
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F09_north",
+          "east": "F09_east",
+          "south": "F09_south",
+          "west": "F09_west"
+        },
+        "shadow": {
+          "type": "chair",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F09",
+        "instance_id": "TableBenchRight",
+        "x": 1186.0,
+        "y": 673,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            14,
+            6
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F09_north",
+          "east": "F09_east",
+          "south": "F09_south",
+          "west": "F09_west"
+        },
+        "shadow": {
+          "type": "chair",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "ground_overlays",
+      "block": {
+        "id": "D01",
+        "instance_id": "BedRug",
+        "x": 450.0,
+        "y": 609,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            2,
+            2
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "ground_overlays",
+      "block": {
+        "id": "D02",
+        "instance_id": "TableRug",
+        "x": 1122.0,
+        "y": 673,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            12,
+            3
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "ground_overlays",
+      "block": {
+        "id": "D03",
+        "instance_id": "CompassFloorEmblem",
+        "x": 738.0,
+        "y": 737,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            6,
+            4
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.2,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A05",
+        "instance_id": "RearArch",
+        "x": 701.0,
+        "y": 298.6,
+        "scale": 2.4,
+        "shadow": {
+          "type": "soft_cast",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A01",
+        "instance_id": "ArchColumnLeft",
+        "x": 530.5,
+        "y": 294.0,
+        "scale": 1.0,
+        "shadow": {
+          "type": "column_long",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A01",
+        "instance_id": "ArchColumnRight",
+        "x": 888.5,
+        "y": 294.0,
+        "scale": 1.0,
+        "shadow": {
+          "type": "column_long",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A09",
+        "instance_id": "RearRightDoor",
+        "x": 1105.875,
+        "y": 297.75,
+        "scale": 1.75,
+        "shadow": {
+          "type": "soft_cast",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "BackWallR00",
+        "x": 258.0,
+        "y": 289.0,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "BackWallR11",
+        "x": 962.0,
+        "y": 289.0,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "BackWallR12",
+        "x": 1026.0,
+        "y": 289.0,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "BackWallR16",
+        "x": 1282.0,
+        "y": 289.0,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A10",
+        "instance_id": "StairStep1",
+        "x": 750.0,
+        "y": 910.4,
+        "scale": 1.6,
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A10",
+        "instance_id": "StairStep2",
+        "x": 750.0,
+        "y": 946.4,
+        "scale": 1.6,
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A10",
+        "instance_id": "StairStep3",
+        "x": 750.0,
+        "y": 982.4,
+        "scale": 1.6,
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A10",
+        "instance_id": "StairStep4",
+        "x": 750.0,
+        "y": 1018.4,
+        "scale": 1.6,
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A13",
+        "instance_id": "EntrancePillarLeft",
+        "x": 602.0,
+        "y": 868.3,
+        "scale": 1.1,
+        "shadow": {
+          "type": "column_short",
+          "opacity": 0.26,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A13",
+        "instance_id": "EntrancePillarRight",
+        "x": 894.0,
+        "y": 868.3,
+        "scale": 1.1,
+        "shadow": {
+          "type": "column_short",
+          "opacity": 0.26,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallL01",
+        "x": 322.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallL02",
+        "x": 386.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallL03",
+        "x": 450.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallL04",
+        "x": 514.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR11",
+        "x": 962.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR12",
+        "x": 1026.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR13",
+        "x": 1090.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR14",
+        "x": 1154.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR15",
+        "x": 1218.0,
+        "y": 893.5,
+        "scale": 1.5,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.22,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A11",
+        "instance_id": "StairSupportLeft",
+        "x": 630.0,
+        "y": 928.0,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A12",
+        "instance_id": "StairSupportRight",
+        "x": 864.0,
+        "y": 932.0,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "E023",
+        "instance_id": "TerraceRockFrontLeft",
+        "x": 394,
+        "y": 941,
+        "scale": 0.88,
+        "render_layer": "walls",
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 5,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "E024",
+        "instance_id": "TerraceRockFrontRight",
+        "x": 1145,
+        "y": 941,
+        "scale": 0.88,
+        "render_layer": "walls",
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 5,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P05",
+        "instance_id": "ArchFlowersLeft",
+        "x": 578.0,
+        "y": 353,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            5,
+            1
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 2,
+          "offset_y": 2
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P06",
+        "instance_id": "ArchFlowersRight",
+        "x": 770.0,
+        "y": 353,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            8,
+            1
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 2,
+          "offset_y": 2
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P04",
+        "instance_id": "ArchFlowersCenter",
+        "x": 642.0,
+        "y": 417,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            6,
+            2
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 2,
+          "offset_y": 2
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P03",
+        "instance_id": "ArchIvyLeft",
+        "x": 596.0,
+        "y": 128.6,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "RearArch",
+        "mount_offset": [
+          -105,
+          -170
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P03",
+        "instance_id": "ArchIvyRight",
+        "x": 806.0,
+        "y": 128.6,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "RearArch",
+        "mount_offset": [
+          105,
+          -170
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P12",
+        "instance_id": "ArchFloralLeft",
+        "x": 587.0,
+        "y": 289.6,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "RearArch",
+        "mount_offset": [
+          -114,
+          -9
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P13",
+        "instance_id": "ArchFloralRight",
+        "x": 825.0,
+        "y": 289.6,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "RearArch",
+        "mount_offset": [
+          124,
+          -9
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L01",
+        "instance_id": "LeftWallLantern",
+        "x": 244.0,
+        "y": 234.0,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "BackWallR00",
+        "mount_offset": [
+          -14,
+          -55
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L01",
+        "instance_id": "RightWallLantern",
+        "x": 1296.0,
+        "y": 234.0,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "BackWallR16",
+        "mount_offset": [
+          14,
+          -55
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "D04",
+        "instance_id": "ArchBannerRight",
+        "x": 763.0,
+        "y": 208.6,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "RearArch",
+        "mount_offset": [
+          62,
+          -90
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "D05",
+        "instance_id": "ArchBannerLeft",
+        "x": 639.0,
+        "y": 208.6,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "RearArch",
+        "mount_offset": [
+          -62,
+          -90
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R05",
+        "instance_id": "TableScroll",
+        "x": 1030.0,
+        "y": 458,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          -92,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R09",
+        "instance_id": "TableMap",
+        "x": 1080.0,
+        "y": 458,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          -42,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R06",
+        "instance_id": "TableBook",
+        "x": 1120.0,
+        "y": 458,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          -2,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R10",
+        "instance_id": "TableFruitBowl",
+        "x": 1160.0,
+        "y": 458,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          38,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R11",
+        "instance_id": "TableJug",
+        "x": 1210.0,
+        "y": 458,
+        "scale": 1.0,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          88,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R01",
+        "instance_id": "ArchVaseLeft",
+        "x": 258.0,
+        "y": 353,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            0,
+            1
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 2,
+          "offset_y": 2
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R02",
+        "instance_id": "ArchVaseRight",
+        "x": 834.0,
+        "y": 353,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            9,
+            1
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 2,
+          "offset_y": 2
+        }
+      }
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 4,
+      "id": null
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 5,
+      "id": null
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 6,
+      "id": null
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 4,
+      "id": null
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 5,
+      "id": null
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 6,
+      "id": null
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 4,
+      "id": null
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 5,
+      "id": null
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 6,
+      "id": null
+    },
+    {
+      "op": "set_property",
+      "key": "floor_footprint",
+      "value": {
+        "row_spans": [
+          [
+            [
+              0,
+              4
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              1,
+              15
+            ]
+          ],
+          [
+            [
+              6,
+              10
+            ]
+          ]
+        ],
+        "shape": "hero_room_reference_v1",
+        "notes": "Row 0 leaves cells 5-10 open so the rear arch opening reveals the ocean behind it."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "ocean",
+      "value": {
+        "tile_size": 512,
+        "fps": 4,
+        "sky_height": 68,
+        "notes": "Horizon lowered to reference, original water sprites retained. No giant pasted cliff sprites."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "effects",
+      "value": [
+        {
+          "instance_id": "LanternLeftGlow",
+          "kind": "lantern",
+          "x": 258,
+          "y": 420,
+          "scale": 0.45,
+          "glow_alpha": 0.38
+        },
+        {
+          "instance_id": "LanternRightGlow",
+          "kind": "lantern",
+          "x": 1282,
+          "y": 420,
+          "scale": 0.45,
+          "glow_alpha": 0.38
+        },
+        {
+          "instance_id": "TableCandleGlow",
+          "kind": "candle",
+          "x": 1122,
+          "y": 440,
+          "scale": 0.4,
+          "glow_alpha": 0.34
+        }
+      ]
+    },
+    {
+      "op": "set_property",
+      "key": "navigation",
+      "value": {
+        "schema_version": 1,
+        "origin": [
+          226,
+          225
+        ],
+        "cell_size": 64,
+        "grid_size": [
+          17,
+          10
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "inner_terrace_safe_walk",
+            "rect": [
+              1,
+              2,
+              15,
+              7
+            ],
+            "surface": "stone",
+            "allow": [
+              "walk",
+              "fly"
+            ],
+            "requires": {
+              "walk": [],
+              "fly": []
+            },
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "stairs_to_ocean_entrance",
+            "rect": [
+              7,
+              9,
+              3,
+              1
+            ],
+            "surface": "stairs",
+            "allow": [
+              "walk",
+              "fly"
+            ],
+            "requires": {
+              "walk": [],
+              "fly": []
+            },
+            "floor_height": -24,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [
+          {
+            "instance_id": "RoyalBed",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 75
+          },
+          {
+            "instance_id": "DiningTable",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 80
+          },
+          {
+            "instance_id": "EntrancePillarLeft",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 78
+          },
+          {
+            "instance_id": "EntrancePillarRight",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 78
+          },
+          {
+            "instance_id": "LeftBookcase",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 110
+          },
+          {
+            "instance_id": "RightBookcase",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 110
+          }
+        ],
+        "links": [
+          {
+            "id": "coastal_stair_exit",
+            "from": [
+              8,
+              8
+            ],
+            "to": [
+              8,
+              9
+            ],
+            "modes": [
+              "walk",
+              "fly"
+            ],
+            "requires": []
+          }
+        ],
+        "note": "Navigation provisional, unreviewed; no character or weapon factory changes."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "description",
+      "value": "Hero's Seaside Sanctuary — reference reconstruction v0012. Rebuilt from the approved 128-piece environment pack: open rear arch to ocean, royal bed left on its rug, dining table right on its rug, centred compass emblem, front staircase, four-level assembly (background/ground/walls-decorations/shadows). Visual approval pending."
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "Native Godot render v0012; compare against reference and v0011."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "composition_reference",
+      "value": {
+        "image": "map_factory/references/hero_room_01_original.png",
+        "reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+        "reference_dimensions": [
+          1448,
+          1086
+        ],
+        "qa": "pending visual comparison",
+        "status": "needs_visual_review"
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "source_image",
+      "value": {
+        "path": "map_factory/references/hero_room_01_original.png",
+        "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+        "status": "reference_imported"
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "floor_art",
+      "value": {
+        "design": "central compass emblem as D03 ground overlay at grid cell (6,4)",
+        "tile_size": 64,
+        "ids": [
+          "D03"
+        ],
+        "top_left_grid": [
+          6,
+          4
+        ],
+        "qa": "needs_review"
+      }
+    }
+  ]
+}

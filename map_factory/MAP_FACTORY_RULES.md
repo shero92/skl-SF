@@ -1,5 +1,7 @@
 # Mandatory Map Factory Rules — Image to Reusable Playable Environment (v1)
 
+قواعد مصادر الرسوم لجميع عناصر البيئة: [السياسة الموحدة](../docs/GRAPHICS_PRODUCTION_POLICY.md). كل قطعة قابلة لإعادة الاستخدام مصدر مستقل؛ يمنع اعتماد قصاصات collage أو استبدال الأصول المعتمدة. الأوراق تجميع لاحق للمراجعة أو التصدير فقط.
+
 This is the standing rulebook for ALL future map/room work. It is a production target, not a claim that fully automatic screenshot decomposition or flying gameplay exists today.
 
 ## Scope is environment only

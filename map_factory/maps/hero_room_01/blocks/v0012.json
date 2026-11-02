@@ -1,0 +1,4547 @@
+{
+  "layer_schema_version": 1,
+  "five_level_map": {
+    "background": 7,
+    "ground": 3,
+    "walls": 27,
+    "decorations": 25,
+    "shadows": 53
+  },
+  "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
+  "schema_version": 1,
+  "map_id": "hero_room_01",
+  "version": 12,
+  "source_image": {
+    "path": "map_factory/references/hero_room_01_original.png",
+    "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+    "status": "reference_imported"
+  },
+  "block_count": 62,
+  "unique_asset_count": 45,
+  "reused_asset_ids": [
+    "A01",
+    "A05",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "B05",
+    "B06",
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "E015",
+    "E016",
+    "E017",
+    "E023",
+    "E024",
+    "F001",
+    "F002",
+    "F01",
+    "F05",
+    "F05_south",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F09_south",
+    "L01",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P12",
+    "P13",
+    "R01",
+    "R02",
+    "R05",
+    "R06",
+    "R09",
+    "R10",
+    "R11",
+    "W01",
+    "W10"
+  ],
+  "placed_blocks": [
+    {
+      "instance_id": "DistantIsleLeft",
+      "asset_id": "E015",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        320,
+        260
+      ],
+      "anchor": [
+        160,
+        260
+      ],
+      "layer": "background_objects",
+      "position": [
+        288,
+        130
+      ],
+      "scale": 0.32,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "small"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "DistantIsleRight",
+      "asset_id": "E016",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        465,
+        310
+      ],
+      "anchor": [
+        232,
+        310
+      ],
+      "layer": "background_objects",
+      "position": [
+        1120,
+        145
+      ],
+      "scale": 0.25,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "large"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "DistantIsleArch",
+      "asset_id": "E017",
+      "category": "environment",
+      "subtype": "distant",
+      "texture_path": "res://map_factory/parts/environment/E017_Distant_Island_Arch.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        600,
+        370
+      ],
+      "anchor": [
+        300,
+        370
+      ],
+      "layer": "background_objects",
+      "position": [
+        1012,
+        106
+      ],
+      "scale": 0.14,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "distant",
+        "island",
+        "arch"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "LeftIslandDistantExtra",
+      "asset_id": "E015",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E015_Ocean_Rock_Island_Small.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        320,
+        260
+      ],
+      "anchor": [
+        160,
+        260
+      ],
+      "layer": "background_objects",
+      "position": [
+        90,
+        110
+      ],
+      "scale": 0.27,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "small"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "RightIslandDistantExtra",
+      "asset_id": "E016",
+      "category": "environment",
+      "subtype": "ocean",
+      "texture_path": "res://map_factory/parts/environment/E016_Ocean_Rock_Island_Large.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        465,
+        310
+      ],
+      "anchor": [
+        232,
+        310
+      ],
+      "layer": "background_objects",
+      "position": [
+        1452,
+        126
+      ],
+      "scale": 0.19,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "ocean",
+        "rock",
+        "island",
+        "large"
+      ],
+      "source": {
+        "kind": "original_procedural_or_derived_sprite",
+        "generator": "tools/generate_remaining_art.py",
+        "reference_style": "hero_room_seaside_pixel_art"
+      }
+    },
+    {
+      "instance_id": "SeaStackLeft",
+      "asset_id": "B05",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://assets_generated/background/B05__background__sea_stack_island_small__default__4x4__256x256.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "layer": "background_objects",
+      "position": [
+        40,
+        100
+      ],
+      "scale": 0.6,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.0,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "environment",
+        "island",
+        "ocean",
+        "sea",
+        "seascape",
+        "small",
+        "stack"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "B05",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/background/B05__background__sea_stack_island_small__default__4x4__256x256.json",
+        "sha256": "ba454688534d5ace252ac208ab71fdbd8a5f1018ac95f261dc2f10325bc7cb54",
+        "anchor_declared": [
+          0,
+          0
+        ],
+        "anchor_registered": [
+          0,
+          0
+        ],
+        "identity": "B05"
+      }
+    },
+    {
+      "instance_id": "SeaStackRight",
+      "asset_id": "B06",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://assets_generated/background/B06__background__sea_stack_island_medium__default__4x4__256x256.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "layer": "background_objects",
+      "position": [
+        1350,
+        120
+      ],
+      "scale": 0.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.0,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "environment",
+        "island",
+        "medium",
+        "ocean",
+        "sea",
+        "seascape",
+        "stack"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "B06",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/background/B06__background__sea_stack_island_medium__default__4x4__256x256.json",
+        "sha256": "dcefd91b3fc343d234e4a99bba44adf59f7c34048d880d481a0a18dcadda8a53",
+        "anchor_declared": [
+          0,
+          0
+        ],
+        "anchor_registered": [
+          0,
+          0
+        ],
+        "identity": "B06"
+      }
+    },
+    {
+      "instance_id": "BedRug",
+      "asset_id": "D01",
+      "category": "decor",
+      "subtype": "rug",
+      "texture_path": "res://assets_generated/decor/D01__decor__bed_rug__default__3x4__192x256.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        192,
+        256
+      ],
+      "anchor": [
+        96,
+        256
+      ],
+      "layer": "ground_overlays",
+      "position": [
+        450.0,
+        609
+      ],
+      "grid_placement": {
+        "cell": [
+          2,
+          2
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          3,
+          4
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_medium",
+        "opacity": 0.22,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "bed",
+        "decal",
+        "decor",
+        "rug"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "D01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/decor/D01__decor__bed_rug__default__3x4__192x256.json",
+        "sha256": "25ae4f28afa7d69942a1a9756dd646f1ea5e1aea8be29362ecd1a1d7beaac500",
+        "anchor_declared": [
+          0,
+          256
+        ],
+        "anchor_registered": [
+          96,
+          256
+        ],
+        "identity": "D01"
+      }
+    },
+    {
+      "instance_id": "TableRug",
+      "asset_id": "D02",
+      "category": "decor",
+      "subtype": "rug",
+      "texture_path": "res://assets_generated/decor/D02__decor__table_rug__default__4x4__256x256.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        256
+      ],
+      "layer": "ground_overlays",
+      "position": [
+        1122.0,
+        673
+      ],
+      "grid_placement": {
+        "cell": [
+          12,
+          3
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          4,
+          4
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_medium",
+        "opacity": 0.22,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "decal",
+        "decor",
+        "rug",
+        "table"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "D02",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/decor/D02__decor__table_rug__default__4x4__256x256.json",
+        "sha256": "4931a99f30ca5982dc38ec95c950cea36b2717a02d78c1f248edd08006b77cb6",
+        "anchor_declared": [
+          0,
+          256
+        ],
+        "anchor_registered": [
+          128,
+          256
+        ],
+        "identity": "D02"
+      }
+    },
+    {
+      "instance_id": "CompassFloorEmblem",
+      "asset_id": "D03",
+      "category": "decor",
+      "subtype": "decal",
+      "texture_path": "res://assets_generated/decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        256
+      ],
+      "layer": "ground_overlays",
+      "position": [
+        738.0,
+        737
+      ],
+      "grid_placement": {
+        "cell": [
+          6,
+          4
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          4,
+          4
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_medium",
+        "opacity": 0.2,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "central",
+        "compass",
+        "decal",
+        "decor",
+        "emblem",
+        "floor"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "D03",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.json",
+        "sha256": "d617cd660b9aca8e3a097780e0fa393f4ca07ad1bc0e2152bdc1d50db65ba00a",
+        "anchor_declared": [
+          0,
+          256
+        ],
+        "anchor_registered": [
+          128,
+          256
+        ],
+        "identity": "D03"
+      }
+    },
+    {
+      "instance_id": "RearArch",
+      "asset_id": "A05",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A05__architecture__arch_segment_center__default__1x1__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        701.0,
+        298.6
+      ],
+      "scale": 2.4,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "soft_cast",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      },
+      "tags": [
+        "arch",
+        "architecture",
+        "center",
+        "open_span",
+        "segment",
+        "stone"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A05",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A05__architecture__arch_segment_center__default__1x1__128x128.json",
+        "sha256": "647106515f7de8d94a5402b0c4d459c323c6ed046ca99d5e7feb02afd4d3cc56",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "A05"
+      }
+    },
+    {
+      "instance_id": "ArchColumnLeft",
+      "asset_id": "A01",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A01__architecture__main_stone_column__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        530.5,
+        294.0
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "column_long",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "column",
+        "main",
+        "main_stone_column",
+        "stone"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A01__architecture__main_stone_column__default__1x1__64x128.json",
+        "sha256": "39beb53e6123f37ebf8de8946b9657efecb408217530dcea80eaf1f2c2b70317",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "A01"
+      }
+    },
+    {
+      "instance_id": "ArchColumnRight",
+      "asset_id": "A01",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A01__architecture__main_stone_column__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        888.5,
+        294.0
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "column_long",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "column",
+        "main",
+        "main_stone_column",
+        "stone"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A01__architecture__main_stone_column__default__1x1__64x128.json",
+        "sha256": "39beb53e6123f37ebf8de8946b9657efecb408217530dcea80eaf1f2c2b70317",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "A01"
+      }
+    },
+    {
+      "instance_id": "RearRightDoor",
+      "asset_id": "A09",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        1105.875,
+        297.75
+      ],
+      "scale": 1.75,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "soft_cast",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "decorative",
+        "door",
+        "ruined",
+        "stone"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A09",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.json",
+        "sha256": "5c330931ff03960ef3f719f5e0711b77cebadf4f69f3973f2bc1146e6b0ecae4",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "A09"
+      }
+    },
+    {
+      "instance_id": "BackWallR00",
+      "asset_id": "W01",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        258.0,
+        289.0
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "clean",
+        "pale",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
+        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W01"
+      }
+    },
+    {
+      "instance_id": "BackWallR11",
+      "asset_id": "W01",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        962.0,
+        289.0
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "clean",
+        "pale",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
+        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W01"
+      }
+    },
+    {
+      "instance_id": "BackWallR12",
+      "asset_id": "W01",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        1026.0,
+        289.0
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "clean",
+        "pale",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
+        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W01"
+      }
+    },
+    {
+      "instance_id": "BackWallR16",
+      "asset_id": "W01",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        1282.0,
+        289.0
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 6,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "clean",
+        "pale",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
+        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W01"
+      }
+    },
+    {
+      "instance_id": "StairStep1",
+      "asset_id": "A10",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        750.0,
+        910.4
+      ],
+      "scale": 1.6,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "stairs",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "front",
+        "stair",
+        "stairs",
+        "step",
+        "stone",
+        "tile"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.json",
+        "sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "A10"
+      }
+    },
+    {
+      "instance_id": "StairStep2",
+      "asset_id": "A10",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        750.0,
+        946.4
+      ],
+      "scale": 1.6,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "stairs",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "front",
+        "stair",
+        "stairs",
+        "step",
+        "stone",
+        "tile"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.json",
+        "sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "A10"
+      }
+    },
+    {
+      "instance_id": "StairStep3",
+      "asset_id": "A10",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        750.0,
+        982.4
+      ],
+      "scale": 1.6,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "stairs",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "front",
+        "stair",
+        "stairs",
+        "step",
+        "stone",
+        "tile"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.json",
+        "sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "A10"
+      }
+    },
+    {
+      "instance_id": "StairStep4",
+      "asset_id": "A10",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        750.0,
+        1018.4
+      ],
+      "scale": 1.6,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "stairs",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 5
+      },
+      "tags": [
+        "architecture",
+        "front",
+        "stair",
+        "stairs",
+        "step",
+        "stone",
+        "tile"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.json",
+        "sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "A10"
+      }
+    },
+    {
+      "instance_id": "EntrancePillarLeft",
+      "asset_id": "A13",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        602.0,
+        868.3
+      ],
+      "scale": 1.1,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "column_short",
+        "opacity": 0.26,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "entrance",
+        "pillar",
+        "post",
+        "stone"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A13",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.json",
+        "sha256": "70c78ebf57e5f87c4c7d1ebfb82c44b56f935f3c04f4a9281c6908d1b41d6637",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "A13"
+      }
+    },
+    {
+      "instance_id": "EntrancePillarRight",
+      "asset_id": "A13",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        894.0,
+        868.3
+      ],
+      "scale": 1.1,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "column_short",
+        "opacity": 0.26,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "entrance",
+        "pillar",
+        "post",
+        "stone"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A13",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.json",
+        "sha256": "70c78ebf57e5f87c4c7d1ebfb82c44b56f935f3c04f4a9281c6908d1b41d6637",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "A13"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallL01",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        322.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallL02",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        386.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallL03",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        450.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallL04",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        514.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR11",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        962.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR12",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        1026.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR13",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        1090.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR14",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        1154.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "FrontLowWallR15",
+      "asset_id": "W10",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        1218.0,
+        893.5
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.22,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "architecture",
+        "broken",
+        "low",
+        "segment",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "W10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.json",
+        "sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "W10"
+      }
+    },
+    {
+      "instance_id": "StairSupportLeft",
+      "asset_id": "A11",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        630.0,
+        928.0
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 3
+      },
+      "tags": [
+        "architecture",
+        "left",
+        "left_support",
+        "side",
+        "stair",
+        "stairs",
+        "stone",
+        "support"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A11",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.json",
+        "sha256": "b0af7f8cadd617782426306f7b27cb5bcc032861fd0e43906f3d83f7f46b91c0",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "A11"
+      }
+    },
+    {
+      "instance_id": "StairSupportRight",
+      "asset_id": "A12",
+      "category": "architecture",
+      "subtype": "stone",
+      "texture_path": "res://assets_generated/architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        864.0,
+        932.0
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 3
+      },
+      "tags": [
+        "architecture",
+        "right",
+        "right_support",
+        "side",
+        "stair",
+        "stairs",
+        "stone",
+        "support"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "A12",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.json",
+        "sha256": "aef40f45c3eecf1bc21ebe18880bfe68e03da271dc12e67dcfd8ac08b7ee9d21",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "A12"
+      }
+    },
+    {
+      "instance_id": "ArchIvyLeft",
+      "asset_id": "P03",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://assets_generated/plants/P03__plants__ivy_hanging_long__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        596.0,
+        128.6
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 3,
+        "offset_y": 3
+      },
+      "tags": [
+        "foliage",
+        "hanging",
+        "ivy",
+        "long",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "P03",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/plants/P03__plants__ivy_hanging_long__default__1x1__64x128.json",
+        "sha256": "d1f5b540829d43ddebb100adbe6146fb2294aabf3751d05dc3c565443ec680eb",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "P03"
+      }
+    },
+    {
+      "instance_id": "ArchIvyRight",
+      "asset_id": "P03",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://assets_generated/plants/P03__plants__ivy_hanging_long__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        806.0,
+        128.6
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 3,
+        "offset_y": 3
+      },
+      "tags": [
+        "foliage",
+        "hanging",
+        "ivy",
+        "long",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "P03",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/plants/P03__plants__ivy_hanging_long__default__1x1__64x128.json",
+        "sha256": "d1f5b540829d43ddebb100adbe6146fb2294aabf3751d05dc3c565443ec680eb",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "P03"
+      }
+    },
+    {
+      "instance_id": "ArchFloralLeft",
+      "asset_id": "P12",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://assets_generated/plants/P12__plants__floral_wall_growth_left__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "back_objects",
+      "position": [
+        587.0,
+        289.6
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 3,
+        "offset_y": 3
+      },
+      "tags": [
+        "floral",
+        "foliage",
+        "growth",
+        "left",
+        "vegetation",
+        "wall"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "P12",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/plants/P12__plants__floral_wall_growth_left__default__1x1__64x64.json",
+        "sha256": "0c538b4094f57bec01a7bc3250fe96980081abe9c7fee83bfbb1a215a586105f",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "P12"
+      }
+    },
+    {
+      "instance_id": "ArchFloralRight",
+      "asset_id": "P13",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://assets_generated/plants/P13__plants__floral_wall_growth_right__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "back_objects",
+      "position": [
+        825.0,
+        289.6
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 3,
+        "offset_y": 3
+      },
+      "tags": [
+        "floral",
+        "foliage",
+        "growth",
+        "right",
+        "vegetation",
+        "wall"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "P13",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/plants/P13__plants__floral_wall_growth_right__default__1x1__64x64.json",
+        "sha256": "68cfe78ac5941fbf0b622dd5b6ad54ab816840e4435479cb57ad50fd65a51dfc",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "P13"
+      }
+    },
+    {
+      "instance_id": "LeftWallLantern",
+      "asset_id": "L01",
+      "category": "objects",
+      "subtype": "lantern",
+      "texture_path": "res://assets_generated/lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "back_objects",
+      "position": [
+        244.0,
+        234.0
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "hanging",
+        "lantern",
+        "lighting",
+        "objects",
+        "wall"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "L01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.json",
+        "sha256": "1723f825b9ddc39daefdce69199ca4a875a0f5576049515ccad0f846a778aecd",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "L01"
+      }
+    },
+    {
+      "instance_id": "RightWallLantern",
+      "asset_id": "L01",
+      "category": "objects",
+      "subtype": "lantern",
+      "texture_path": "res://assets_generated/lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "back_objects",
+      "position": [
+        1296.0,
+        234.0
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "hanging",
+        "lantern",
+        "lighting",
+        "objects",
+        "wall"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "L01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.json",
+        "sha256": "1723f825b9ddc39daefdce69199ca4a875a0f5576049515ccad0f846a778aecd",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "L01"
+      }
+    },
+    {
+      "instance_id": "ArchBannerRight",
+      "asset_id": "D04",
+      "category": "decor",
+      "subtype": "decal",
+      "texture_path": "res://assets_generated/decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        763.0,
+        208.6
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.0,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "banner",
+        "blue",
+        "decal",
+        "decor",
+        "long",
+        "wall"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "D04",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.json",
+        "sha256": "bb374378e3db8181cefb85ef40a4da65d8a661a6d975ffcdd144959266d4c310",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "D04"
+      }
+    },
+    {
+      "instance_id": "ArchBannerLeft",
+      "asset_id": "D05",
+      "category": "decor",
+      "subtype": "decal",
+      "texture_path": "res://assets_generated/decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        128
+      ],
+      "anchor": [
+        32,
+        128
+      ],
+      "layer": "back_objects",
+      "position": [
+        639.0,
+        208.6
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.0,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "banner",
+        "blue",
+        "decal",
+        "decor",
+        "short",
+        "wall"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "D05",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.json",
+        "sha256": "174b8d5e6a89e9c611bde55c34f5f334a6c05c9fa09cb62f3bf3c19dbef9f080",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          32,
+          128
+        ],
+        "identity": "D05"
+      }
+    },
+    {
+      "instance_id": "RoyalBed",
+      "asset_id": "F01",
+      "render_asset_id": "F01",
+      "category": "furniture",
+      "subtype": "furniture",
+      "texture_path": "res://assets_generated/furniture/F01__furniture__royal_wooden_bed__south__3x4__192x256.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        192,
+        256
+      ],
+      "anchor": [
+        96,
+        256
+      ],
+      "layer": "objects",
+      "position": [
+        450.0,
+        545
+      ],
+      "grid_placement": {
+        "cell": [
+          2,
+          1
+        ],
+        "facing": "south"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          3,
+          4
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "orientation": {
+        "facing": "south",
+        "orientation_mode": "variants",
+        "turn_quarters": 2,
+        "resolved_asset_id": "F01",
+        "direction_asset_ids": {
+          "north": "F03",
+          "east": "F04",
+          "south": "F01",
+          "west": "F02"
+        }
+      },
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          192,
+          256
+        ],
+        "offset": [
+          0,
+          -128
+        ]
+      },
+      "shadow": {
+        "type": "bed",
+        "opacity": 0.3,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "bed",
+        "furniture",
+        "interior",
+        "royal",
+        "wooden"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "F01",
+        "pack_orientation": "south",
+        "sidecar": "assets_generated/furniture/F01__furniture__royal_wooden_bed__south__3x4__192x256.json",
+        "sha256": "0761f56d7729dd253a05273942865b93c8736d1808b1ca29527f4e0284b3dc4d",
+        "anchor_declared": [
+          0,
+          256
+        ],
+        "anchor_registered": [
+          96,
+          256
+        ],
+        "identity": "royal_wooden_bed"
+      }
+    },
+    {
+      "instance_id": "BedsideTable",
+      "asset_id": "F05",
+      "render_asset_id": "F05_south",
+      "category": "furniture",
+      "subtype": "furniture",
+      "texture_path": "res://assets_generated/furniture/F05__furniture__bedside_table__south__2x2__128x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        128
+      ],
+      "layer": "objects",
+      "position": [
+        290.0,
+        481
+      ],
+      "grid_placement": {
+        "cell": [
+          0,
+          2
+        ],
+        "facing": "south"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          2
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "orientation": {
+        "facing": "south",
+        "orientation_mode": "variants",
+        "turn_quarters": 2,
+        "resolved_asset_id": "F05_south",
+        "direction_asset_ids": {
+          "north": "F05_north",
+          "east": "F05_east",
+          "south": "F05_south",
+          "west": "F05_west"
+        }
+      },
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          128,
+          128
+        ],
+        "offset": [
+          0,
+          -64
+        ]
+      },
+      "shadow": {
+        "type": "contact_medium",
+        "opacity": 0.26,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "bedside",
+        "furniture",
+        "interior",
+        "table"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "F05",
+        "pack_orientation": "north",
+        "sidecar": "assets_generated/furniture/F05__furniture__bedside_table__north__2x2__128x128.json",
+        "sha256": "7c4235dcd595faa310308357cfed0210317b8d34088e8fbd705e2c1983f1c0d9",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          64,
+          128
+        ],
+        "identity": "F05"
+      }
+    },
+    {
+      "instance_id": "LeftBookcase",
+      "asset_id": "F06",
+      "category": "furniture",
+      "subtype": "furniture",
+      "texture_path": "res://assets_generated/furniture/F06__furniture__left_large_bookcase__north__4x1__256x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        128
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "layer": "objects",
+      "position": [
+        418.0,
+        289
+      ],
+      "grid_placement": {
+        "cell": [
+          1,
+          0
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          4,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          256,
+          64
+        ],
+        "offset": [
+          0,
+          -32
+        ]
+      },
+      "shadow": {
+        "type": "bookshelf",
+        "opacity": 0.28,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "bookcase",
+        "furniture",
+        "interior",
+        "large",
+        "left"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "F06",
+        "pack_orientation": "north",
+        "sidecar": "assets_generated/furniture/F06__furniture__left_large_bookcase__north__4x1__256x128.json",
+        "sha256": "23de9d8bbb88dd45e3afabc3cd5ed9e993f4c79990e474d69f6893deb35c4e36",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          128,
+          128
+        ],
+        "identity": "F06"
+      }
+    },
+    {
+      "instance_id": "RightBookcase",
+      "asset_id": "F07",
+      "category": "furniture",
+      "subtype": "furniture",
+      "texture_path": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        128
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "layer": "objects",
+      "position": [
+        994.0,
+        353
+      ],
+      "grid_placement": {
+        "cell": [
+          10,
+          1
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          4,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          256,
+          64
+        ],
+        "offset": [
+          0,
+          -32
+        ]
+      },
+      "shadow": {
+        "type": "bookshelf",
+        "opacity": 0.28,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "bookcase",
+        "furniture",
+        "interior",
+        "large",
+        "right"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "F07",
+        "pack_orientation": "north",
+        "sidecar": "assets_generated/furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.json",
+        "sha256": "258ad610d4ff2dfbc478f28b01649cdce8369d76c23b61ea949a9a5361222b1b",
+        "anchor_declared": [
+          0,
+          128
+        ],
+        "anchor_registered": [
+          128,
+          128
+        ],
+        "identity": "F07"
+      }
+    },
+    {
+      "instance_id": "DiningTable",
+      "asset_id": "F08",
+      "category": "furniture",
+      "subtype": "furniture",
+      "texture_path": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        192
+      ],
+      "anchor": [
+        128,
+        192
+      ],
+      "layer": "objects",
+      "position": [
+        1122.0,
+        609
+      ],
+      "grid_placement": {
+        "cell": [
+          12,
+          3
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          4,
+          3
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          256,
+          192
+        ],
+        "offset": [
+          0,
+          -96
+        ]
+      },
+      "shadow": {
+        "type": "table",
+        "opacity": 0.3,
+        "offset_x": 4,
+        "offset_y": 0
+      },
+      "tags": [
+        "dining",
+        "furniture",
+        "interior",
+        "large",
+        "table",
+        "work"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "F08",
+        "pack_orientation": "north",
+        "sidecar": "assets_generated/furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.json",
+        "sha256": "491d33be2ac817abaac701013b7192a25ccbeb0d1e86b8de64a552db2c8031e2",
+        "anchor_declared": [
+          0,
+          192
+        ],
+        "anchor_registered": [
+          128,
+          192
+        ],
+        "identity": "F08"
+      }
+    },
+    {
+      "instance_id": "TableBenchLeft",
+      "asset_id": "F09",
+      "render_asset_id": "F09_south",
+      "category": "furniture",
+      "subtype": "furniture",
+      "texture_path": "res://assets_generated/furniture/F09__furniture__bench_horizontal__south__2x1__128x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        64
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1058.0,
+        673
+      ],
+      "grid_placement": {
+        "cell": [
+          12,
+          6
+        ],
+        "facing": "south"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "orientation": {
+        "facing": "south",
+        "orientation_mode": "variants",
+        "turn_quarters": 2,
+        "resolved_asset_id": "F09_south",
+        "direction_asset_ids": {
+          "north": "F09_north",
+          "east": "F09_east",
+          "south": "F09_south",
+          "west": "F09_west"
+        }
+      },
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          128,
+          64
+        ],
+        "offset": [
+          0,
+          -32
+        ]
+      },
+      "shadow": {
+        "type": "chair",
+        "opacity": 0.22,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "bench",
+        "furniture",
+        "horizontal",
+        "interior"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "F09",
+        "pack_orientation": "north",
+        "sidecar": "assets_generated/furniture/F09__furniture__bench_horizontal__north__2x1__128x64.json",
+        "sha256": "6147b6a043aea352fb3e47ccf6caaf3c3e4f8ce194c8849eb3f712c3a76e4f18",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          64,
+          64
+        ],
+        "identity": "F09"
+      }
+    },
+    {
+      "instance_id": "TableBenchRight",
+      "asset_id": "F09",
+      "render_asset_id": "F09_south",
+      "category": "furniture",
+      "subtype": "furniture",
+      "texture_path": "res://assets_generated/furniture/F09__furniture__bench_horizontal__south__2x1__128x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        64
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1186.0,
+        673
+      ],
+      "grid_placement": {
+        "cell": [
+          14,
+          6
+        ],
+        "facing": "south"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          2,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "orientation": {
+        "facing": "south",
+        "orientation_mode": "variants",
+        "turn_quarters": 2,
+        "resolved_asset_id": "F09_south",
+        "direction_asset_ids": {
+          "north": "F09_north",
+          "east": "F09_east",
+          "south": "F09_south",
+          "west": "F09_west"
+        }
+      },
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          128,
+          64
+        ],
+        "offset": [
+          0,
+          -32
+        ]
+      },
+      "shadow": {
+        "type": "chair",
+        "opacity": 0.22,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "bench",
+        "furniture",
+        "horizontal",
+        "interior"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "F09",
+        "pack_orientation": "north",
+        "sidecar": "assets_generated/furniture/F09__furniture__bench_horizontal__north__2x1__128x64.json",
+        "sha256": "6147b6a043aea352fb3e47ccf6caaf3c3e4f8ce194c8849eb3f712c3a76e4f18",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          64,
+          64
+        ],
+        "identity": "F09"
+      }
+    },
+    {
+      "instance_id": "ArchFlowersLeft",
+      "asset_id": "P05",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        578.0,
+        353
+      ],
+      "grid_placement": {
+        "cell": [
+          5,
+          1
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 2,
+        "offset_y": 2
+      },
+      "tags": [
+        "cluster",
+        "flower",
+        "foliage",
+        "medium",
+        "vegetation",
+        "white"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "P05",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.json",
+        "sha256": "2e41bd0f3e91848b976f95976cd1cec0e5aabcb8b202c18c0999d708b642b95a",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "P05"
+      }
+    },
+    {
+      "instance_id": "ArchFlowersRight",
+      "asset_id": "P06",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://assets_generated/plants/P06__plants__blue_flower_cluster_small__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        770.0,
+        353
+      ],
+      "grid_placement": {
+        "cell": [
+          8,
+          1
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 2,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue",
+        "cluster",
+        "flower",
+        "foliage",
+        "small",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "P06",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/plants/P06__plants__blue_flower_cluster_small__default__1x1__64x64.json",
+        "sha256": "16129d9c33498b7017f960011249633ae2afc8fce98df1bba501a208339b2cda",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "P06"
+      }
+    },
+    {
+      "instance_id": "ArchFlowersCenter",
+      "asset_id": "P04",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        642.0,
+        417
+      ],
+      "grid_placement": {
+        "cell": [
+          6,
+          2
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 2,
+        "offset_y": 2
+      },
+      "tags": [
+        "cluster",
+        "flower",
+        "foliage",
+        "small",
+        "vegetation",
+        "white"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "P04",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.json",
+        "sha256": "7e258c57bd993d24686a0a16dab5ff2790cd5e160813d4aaff4144ea726c837d",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "P04"
+      }
+    },
+    {
+      "instance_id": "TableScroll",
+      "asset_id": "R05",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R05__props__scroll_bundle__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1030.0,
+        458
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "bundle",
+        "objects",
+        "prop",
+        "scroll"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R05",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R05__props__scroll_bundle__default__1x1__64x64.json",
+        "sha256": "77fac0ef3d69ad4d9505c0cbb7e0d0078ca4109a03fda0d1c6dea648436ef198",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R05"
+      }
+    },
+    {
+      "instance_id": "TableMap",
+      "asset_id": "R09",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R09__props__open_map_on_table__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1080.0,
+        458
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "map",
+        "objects",
+        "on",
+        "open",
+        "prop",
+        "table"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R09",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R09__props__open_map_on_table__default__1x1__64x64.json",
+        "sha256": "31ee831e62d4dcfdb175ee25daa248946fb90a2dabefdc82138ede7973b4607c",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R09"
+      }
+    },
+    {
+      "instance_id": "TableBook",
+      "asset_id": "R06",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R06__props__open_book__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1120.0,
+        458
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "book",
+        "objects",
+        "open",
+        "prop"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R06",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R06__props__open_book__default__1x1__64x64.json",
+        "sha256": "3a3c3eb2d5e7a09c262aa8c5fd8d4969aa69f78af301391cdc567d380b1618d9",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R06"
+      }
+    },
+    {
+      "instance_id": "TableFruitBowl",
+      "asset_id": "R10",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R10__props__fruit_bowl__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1160.0,
+        458
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "bowl",
+        "fruit",
+        "objects",
+        "prop"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R10",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R10__props__fruit_bowl__default__1x1__64x64.json",
+        "sha256": "96b7e3274da23228a216dae58bc552a4e301766feb87783c0ce212c1a842331e",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R10"
+      }
+    },
+    {
+      "instance_id": "TableJug",
+      "asset_id": "R11",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R11__props__white_jug__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1210.0,
+        458
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "jug",
+        "objects",
+        "prop",
+        "white"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R11",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R11__props__white_jug__default__1x1__64x64.json",
+        "sha256": "f70a7cf0d288739146f82b7fbbd1d9b741250303d822cef883202ddae7803089",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R11"
+      }
+    },
+    {
+      "instance_id": "ArchVaseLeft",
+      "asset_id": "R01",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R01__props__blue_gold_ceramic_vase_small__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        258.0,
+        353
+      ],
+      "grid_placement": {
+        "cell": [
+          0,
+          1
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          64,
+          64
+        ],
+        "offset": [
+          0,
+          -32
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 2,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue",
+        "ceramic",
+        "gold",
+        "objects",
+        "prop",
+        "vase"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R01",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R01__props__blue_gold_ceramic_vase_small__default__1x1__64x64.json",
+        "sha256": "e53ffc794f0de090312951fd5d2fc186350362e08bf545b21338f6431ed2ff90",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R01"
+      }
+    },
+    {
+      "instance_id": "ArchVaseRight",
+      "asset_id": "R02",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R02__props__blue_gold_ceramic_vase_large__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        834.0,
+        353
+      ],
+      "grid_placement": {
+        "cell": [
+          9,
+          1
+        ],
+        "facing": "north"
+      },
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          64,
+          64
+        ],
+        "offset": [
+          0,
+          -32
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 2,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue",
+        "ceramic",
+        "gold",
+        "objects",
+        "prop",
+        "vase"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R02",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R02__props__blue_gold_ceramic_vase_large__default__1x1__64x64.json",
+        "sha256": "4687c6a4b70a88af3c61cfc841dc17f8312b4e19cec9aba8223bc9872e09b776",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R02"
+      }
+    },
+    {
+      "instance_id": "TerraceRockFrontLeft",
+      "asset_id": "E023",
+      "category": "environment",
+      "subtype": "limestone_cliff_facing",
+      "texture_path": "res://map_factory/parts/environment/E023_Coastal_Foundation_No_Water_Left.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        340,
+        248
+      ],
+      "anchor": [
+        170,
+        242
+      ],
+      "layer": "front_objects",
+      "position": [
+        394,
+        941
+      ],
+      "scale": 0.88,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          216,
+          48
+        ],
+        "offset": [
+          0,
+          -36
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.18,
+        "offset_x": 5,
+        "offset_y": 8
+      },
+      "tags": [
+        "stone",
+        "coast",
+        "dry_sprite",
+        "sea_layer_separate",
+        "ivy"
+      ],
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "W005",
+          "W012",
+          "W017",
+          "ST010",
+          "V023",
+          "V005",
+          "V012",
+          "V011"
+        ],
+        "sha256": "df220726ccadd4cf41f9221d0f85983b58598eb1cd8bce733c25a1275627428c",
+        "approved": false
+      }
+    },
+    {
+      "instance_id": "TerraceRockFrontRight",
+      "asset_id": "E024",
+      "category": "environment",
+      "subtype": "limestone_cliff_facing",
+      "texture_path": "res://map_factory/parts/environment/E024_Coastal_Foundation_No_Water_Right.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        340,
+        248
+      ],
+      "anchor": [
+        170,
+        242
+      ],
+      "layer": "front_objects",
+      "position": [
+        1145,
+        941
+      ],
+      "scale": 0.88,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": true,
+        "size": [
+          216,
+          48
+        ],
+        "offset": [
+          0,
+          -36
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.18,
+        "offset_x": 5,
+        "offset_y": 8
+      },
+      "tags": [
+        "stone",
+        "coast",
+        "dry_sprite",
+        "sea_layer_separate",
+        "ivy"
+      ],
+      "source": {
+        "kind": "procedural_pixel_art_and_registered_asset_composite",
+        "tool": "tools/generate_missing_hero_art.py",
+        "reused_asset_ids": [
+          "W005",
+          "W012",
+          "W017",
+          "ST010",
+          "V023",
+          "V005",
+          "V012",
+          "V011"
+        ],
+        "sha256": "d6bf1bee986a401cffc8593ccf7fc98f1702f16c7a7c1ea1083898b9715e6d03",
+        "approved": false
+      }
+    }
+  ],
+  "floor_pattern_ids": [
+    "F001",
+    "F001",
+    "F001",
+    "F002",
+    "F001",
+    "F002",
+    "F001"
+  ],
+  "floor_overrides": [],
+  "effects": [
+    {
+      "instance_id": "LanternLeftGlow",
+      "kind": "lantern",
+      "x": 258,
+      "y": 420,
+      "scale": 0.45,
+      "glow_alpha": 0.38
+    },
+    {
+      "instance_id": "LanternRightGlow",
+      "kind": "lantern",
+      "x": 1282,
+      "y": 420,
+      "scale": 0.45,
+      "glow_alpha": 0.38
+    },
+    {
+      "instance_id": "TableCandleGlow",
+      "kind": "candle",
+      "x": 1122,
+      "y": 440,
+      "scale": 0.4,
+      "glow_alpha": 0.34
+    }
+  ],
+  "note": "Resolved read-only map metadata. Edit map manifests, not this generated index."
+}
