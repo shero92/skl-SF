@@ -1,0 +1,846 @@
+{
+  "body_png_hashes": {
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png": "ee91565970ee830769c2cb952528ef39b334de688e2f8a4d0c75c2c698a10577",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png": "edee71c47b0a9b2cef303dce12a14ae335602895f42b589b652c44936672e712",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png": "22c5971947d84c215c3a92f153468c9e39e0ecbc5b96dd42cf4f0ef063ed78fa",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png": "9438a9c099cb6c1e78b4784d4d8852d206fce824096277ba5b96ef15b7a6b516",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png": "10aa6eedabf8d62f8226a4b93aa2690013fe0a2fc937288d32a4086acab69acf",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png": "f3938f266721490f5b19bfd079ac1a0934734886d825da62ee89872cb6355b70",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png": "8c4ae6a245c340d7b0e6b66980bd4f0d25dc5767629f7d2bcf44e91c9d38ad01",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png": "b482db9b86f7979daaf879ee88dbba7fde2d8f46f98f363b157ed2c15d3d6d1d",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png": "c7a8d72eba29fc0d41839b3e41f84a132ae103b465a432f93cd67443f962fd22",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png": "38945cb653416cbcfb7a1c1436ab1bf61d3525718c92d5d1807a5eb4aad19fc2",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_idle_ready_01__weaponless_v2.png": "35a03a2bb896f79a0985f4e17dd1cd0d1e65f34b5aea208972ec7eefadcaac2a",
+    "res://assets/characters/hero/battle/weaponless_v2/hero_battle_step_01__weaponless_v2.png": "c1af6d35ac532555be7da1b051a35d07e42c859f08e5cba1d42e2eaf811562d6"
+  },
+  "body_png_hashes_unchanged": true,
+  "checked_frames": [
+    {
+      "animation": "battle_attack_windup",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 0,
+      "hand_anchor": {
+        "animation_name": "attack_windup",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png",
+        "body_sha256": "8c4ae6a245c340d7b0e6b66980bd4f0d25dc5767629f7d2bcf44e91c9d38ad01",
+        "character_id": "CHAR001",
+        "frame_index": 0.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 117.351,
+        "hand_anchor_y": 138.48,
+        "hand_occlusion_rect": [
+          112.0,
+          133.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 58.0,
+        "source_grip": [
+          633.0,
+          554.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_windup",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 1,
+      "hand_anchor": {
+        "animation_name": "attack_windup",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png",
+        "body_sha256": "b482db9b86f7979daaf879ee88dbba7fde2d8f46f98f363b157ed2c15d3d6d1d",
+        "character_id": "CHAR001",
+        "frame_index": 1.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 77.257,
+        "hand_anchor_y": 87.611,
+        "hand_occlusion_rect": [
+          72.0,
+          83.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": -63.0,
+        "source_grip": [
+          364.0,
+          229.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_windup",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png",
+      "body_resource_unchanged": true,
+      "frame": 2,
+      "hand_anchor": {
+        "animation_name": "attack_windup",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png",
+        "body_sha256": "c7a8d72eba29fc0d41839b3e41f84a132ae103b465a432f93cd67443f962fd22",
+        "character_id": "CHAR001",
+        "frame_index": 2.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 118.257,
+        "hand_anchor_y": 77.641,
+        "hand_occlusion_rect": [
+          113.0,
+          73.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": -72.0,
+        "source_grip": [
+          656.0,
+          171.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "behind",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_windup",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png",
+      "body_resource_unchanged": true,
+      "frame": 3,
+      "hand_anchor": {
+        "animation_name": "attack_windup",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png",
+        "body_sha256": "38945cb653416cbcfb7a1c1436ab1bf61d3525718c92d5d1807a5eb4aad19fc2",
+        "character_id": "CHAR001",
+        "frame_index": 3.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 113.834,
+        "hand_anchor_y": 74.91,
+        "hand_occlusion_rect": [
+          109.0,
+          70.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": -70.0,
+        "source_grip": [
+          567.0,
+          153.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "behind",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png",
+      "body_resource_unchanged": true,
+      "frame": 0,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png",
+        "body_sha256": "ee91565970ee830769c2cb952528ef39b334de688e2f8a4d0c75c2c698a10577",
+        "character_id": "CHAR001",
+        "frame_index": 0.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 116.471,
+        "hand_anchor_y": 70.799,
+        "hand_occlusion_rect": [
+          111.0,
+          66.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 112.0,
+        "source_grip": [
+          615.0,
+          135.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 1,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png",
+        "body_sha256": "edee71c47b0a9b2cef303dce12a14ae335602895f42b589b652c44936672e712",
+        "character_id": "CHAR001",
+        "frame_index": 1.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 141.249,
+        "hand_anchor_y": 162.749,
+        "hand_occlusion_rect": [
+          136.0,
+          158.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 126.0,
+        "source_grip": [
+          759.0,
+          672.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 2,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png",
+        "body_sha256": "22c5971947d84c215c3a92f153468c9e39e0ecbc5b96dd42cf4f0ef063ed78fa",
+        "character_id": "CHAR001",
+        "frame_index": 2.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 164.758,
+        "hand_anchor_y": 150.155,
+        "hand_occlusion_rect": [
+          160.0,
+          145.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 98.0,
+        "source_grip": [
+          828.0,
+          618.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 3,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png",
+        "body_sha256": "9438a9c099cb6c1e78b4784d4d8852d206fce824096277ba5b96ef15b7a6b516",
+        "character_id": "CHAR001",
+        "frame_index": 3.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 203.241,
+        "hand_anchor_y": 133.924,
+        "hand_occlusion_rect": [
+          198.0,
+          129.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 90.0,
+        "source_grip": [
+          1132.0,
+          493.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 4,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png",
+        "body_sha256": "10aa6eedabf8d62f8226a4b93aa2690013fe0a2fc937288d32a4086acab69acf",
+        "character_id": "CHAR001",
+        "frame_index": 4.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 182.318,
+        "hand_anchor_y": 160.492,
+        "hand_occlusion_rect": [
+          177.0,
+          155.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 125.0,
+        "source_grip": [
+          979.0,
+          686.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png",
+      "body_resource_unchanged": true,
+      "frame": 5,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png",
+        "body_sha256": "f3938f266721490f5b19bfd079ac1a0934734886d825da62ee89872cb6355b70",
+        "character_id": "CHAR001",
+        "frame_index": 5.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 69.124,
+        "hand_anchor_y": 152.236,
+        "hand_occlusion_rect": [
+          64.0,
+          147.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": -140.0,
+        "source_grip": [
+          371.0,
+          642.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 0,
+      "weapon_ids": [
+        "WPN_HERO_BASIC_SWORD",
+        "WPN_IRON_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_windup",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 0,
+      "hand_anchor": {
+        "animation_name": "attack_windup",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png",
+        "body_sha256": "8c4ae6a245c340d7b0e6b66980bd4f0d25dc5767629f7d2bcf44e91c9d38ad01",
+        "character_id": "CHAR001",
+        "frame_index": 0.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 117.351,
+        "hand_anchor_y": 138.48,
+        "hand_occlusion_rect": [
+          112.0,
+          133.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 58.0,
+        "source_grip": [
+          633.0,
+          554.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_windup",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 1,
+      "hand_anchor": {
+        "animation_name": "attack_windup",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png",
+        "body_sha256": "b482db9b86f7979daaf879ee88dbba7fde2d8f46f98f363b157ed2c15d3d6d1d",
+        "character_id": "CHAR001",
+        "frame_index": 1.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 77.257,
+        "hand_anchor_y": 87.611,
+        "hand_occlusion_rect": [
+          72.0,
+          83.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": -63.0,
+        "source_grip": [
+          364.0,
+          229.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_windup",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png",
+      "body_resource_unchanged": true,
+      "frame": 2,
+      "hand_anchor": {
+        "animation_name": "attack_windup",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png",
+        "body_sha256": "c7a8d72eba29fc0d41839b3e41f84a132ae103b465a432f93cd67443f962fd22",
+        "character_id": "CHAR001",
+        "frame_index": 2.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 118.257,
+        "hand_anchor_y": 77.641,
+        "hand_occlusion_rect": [
+          113.0,
+          73.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": -72.0,
+        "source_grip": [
+          656.0,
+          171.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "behind",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_windup",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png",
+      "body_resource_unchanged": true,
+      "frame": 3,
+      "hand_anchor": {
+        "animation_name": "attack_windup",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png",
+        "body_sha256": "38945cb653416cbcfb7a1c1436ab1bf61d3525718c92d5d1807a5eb4aad19fc2",
+        "character_id": "CHAR001",
+        "frame_index": 3.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 113.834,
+        "hand_anchor_y": 74.91,
+        "hand_occlusion_rect": [
+          109.0,
+          70.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": -70.0,
+        "source_grip": [
+          567.0,
+          153.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "behind",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png",
+      "body_resource_unchanged": true,
+      "frame": 0,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png",
+        "body_sha256": "ee91565970ee830769c2cb952528ef39b334de688e2f8a4d0c75c2c698a10577",
+        "character_id": "CHAR001",
+        "frame_index": 0.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 116.471,
+        "hand_anchor_y": 70.799,
+        "hand_occlusion_rect": [
+          111.0,
+          66.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 112.0,
+        "source_grip": [
+          615.0,
+          135.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 1,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png",
+        "body_sha256": "edee71c47b0a9b2cef303dce12a14ae335602895f42b589b652c44936672e712",
+        "character_id": "CHAR001",
+        "frame_index": 1.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 141.249,
+        "hand_anchor_y": 162.749,
+        "hand_occlusion_rect": [
+          136.0,
+          158.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 126.0,
+        "source_grip": [
+          759.0,
+          672.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 2,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png",
+        "body_sha256": "22c5971947d84c215c3a92f153468c9e39e0ecbc5b96dd42cf4f0ef063ed78fa",
+        "character_id": "CHAR001",
+        "frame_index": 2.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 164.758,
+        "hand_anchor_y": 150.155,
+        "hand_occlusion_rect": [
+          160.0,
+          145.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 98.0,
+        "source_grip": [
+          828.0,
+          618.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 3,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png",
+        "body_sha256": "9438a9c099cb6c1e78b4784d4d8852d206fce824096277ba5b96ef15b7a6b516",
+        "character_id": "CHAR001",
+        "frame_index": 3.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 203.241,
+        "hand_anchor_y": 133.924,
+        "hand_occlusion_rect": [
+          198.0,
+          129.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 90.0,
+        "source_grip": [
+          1132.0,
+          493.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png",
+      "body_resource_unchanged": true,
+      "frame": 4,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png",
+        "body_sha256": "10aa6eedabf8d62f8226a4b93aa2690013fe0a2fc937288d32a4086acab69acf",
+        "character_id": "CHAR001",
+        "frame_index": 4.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 182.318,
+        "hand_anchor_y": 160.492,
+        "hand_occlusion_rect": [
+          177.0,
+          155.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": 125.0,
+        "source_grip": [
+          979.0,
+          686.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    },
+    {
+      "animation": "battle_attack_execute",
+      "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png",
+      "body_resource_unchanged": true,
+      "frame": 5,
+      "hand_anchor": {
+        "animation_name": "attack_execute",
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128.0,
+          240.0
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png",
+        "body_sha256": "f3938f266721490f5b19bfd079ac1a0934734886d825da62ee89872cb6355b70",
+        "character_id": "CHAR001",
+        "frame_index": 5.0,
+        "grip_type": "one_hand_sword",
+        "hand_anchor_x": 69.124,
+        "hand_anchor_y": 152.236,
+        "hand_occlusion_rect": [
+          64.0,
+          147.0,
+          10.0,
+          10.0
+        ],
+        "hand_rotation_degrees": -140.0,
+        "source_grip": [
+          371.0,
+          642.0
+        ],
+        "status": "needs_review",
+        "weapon_render_order": "front",
+        "weapon_scale": 0.666666666666667,
+        "weaponless_visual_check": "agent_source_review_passed"
+      },
+      "swap_pass": 1,
+      "weapon_ids": [
+        "WPN_IRON_SWORD",
+        "WPN_HERO_BASIC_SWORD"
+      ]
+    }
+  ],
+  "godot_capture": true,
+  "passed": true,
+  "per_frame_translation_rotation_depth": true,
+  "real_frame_events": 20,
+  "shared_unchanged_body_resource": true,
+  "two_independent_weapon_pngs": true,
+  "visual_approval": false
+}

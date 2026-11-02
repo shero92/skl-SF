@@ -789,6 +789,32 @@
         "supplementary_existing_path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
         "note": "Second supplied image matches existing 1536x1024 reference; do not replace primary identity or mix coordinate systems. User images contain excluded characters/UI. Compare assembled environment only. No new image-generation authorization inferred."
       }
+    },
+    {
+      "id": "GOAL-0002",
+      "title": "Complete six-character Game Factory",
+      "status": "active",
+      "outcome": "Reusable four-level environment factory with separate background, original room, six original character production sets, map movement and independent battle presentations.",
+      "verification": "Actual PNG files, sequence previews, Godot movement/collision/battle tests and genuine scene screenshots; owner visual approval.",
+      "constraints": "Owner master_request.txt scope amendment: exactly six characters; no Forest Fairy Archer. Built-in image_gen only, one asset/frame per request, preserve approved assets and sources.",
+      "task_ids": [
+        "TASK-0070"
+      ],
+      "final_verified": false,
+      "steps": [
+        {
+          "key": "game-factory-foundation",
+          "title": "Register environment, reconstruct room and implement persistent six-character frame production",
+          "problem": "Existing environment library has no six-character per-frame production registry or shared independent battle pipeline.",
+          "file": "tools/game_factory.py",
+          "line": 1,
+          "done_when": "Environment scene and durable actual-file-only character registry validated; production progress and blockers recorded.",
+          "test": "python -m unittest tools.tests.test_game_factory",
+          "kind": "architecture",
+          "priority": "high",
+          "agent": "codex"
+        }
+      ]
     }
   ]
 }

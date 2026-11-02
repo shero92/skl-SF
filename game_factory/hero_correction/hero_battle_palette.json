@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "character_id": "CHAR001",
+  "locked": true,
+  "owner_approved_design_references": [
+    {
+      "path": "assets/characters/hero/battle/idle_ready/sources/hero_battle_idle_ready_01__attempt_01.png",
+      "sha256": "95e7246dcd2370db7704854ccac033563c4b109cc4d209d1a6648f7b0d99f098"
+    },
+    {
+      "path": "assets/characters/hero/battle/step/sources/hero_battle_step_01__attempt_01.png",
+      "sha256": "f3fc5ef8e888f384410b19bb30b85fcc4c12fdc2805b7988273df30675edc2e9"
+    }
+  ],
+  "lighting": "warm upper left, unchanged exposure and contrast",
+  "materials": {
+    "hair": {
+      "shadow": "#65311e",
+      "midtone": "#924925",
+      "highlight": "#e38d4d",
+      "source_region": [
+        680,
+        120,
+        925,
+        280
+      ],
+      "sample_count": 26238
+    },
+    "skin": {
+      "shadow": "#faa965",
+      "midtone": "#fbab66",
+      "highlight": "#fcae6a",
+      "source_region": [
+        770,
+        258,
+        850,
+        325
+      ],
+      "sample_count": 3937
+    },
+    "scarf_blue": {
+      "shadow": "#17374a",
+      "midtone": "#295267",
+      "highlight": "#3f7282",
+      "source_region": [
+        655,
+        320,
+        812,
+        399
+      ],
+      "sample_count": 4646
+    },
+    "feather_blue": {
+      "shadow": "#19374d",
+      "midtone": "#234c66",
+      "highlight": "#316480",
+      "source_region": [
+        420,
+        360,
+        580,
+        550
+      ],
+      "sample_count": 4927
+    },
+    "feather_red": {
+      "shadow": "#7e2618",
+      "midtone": "#b84326",
+      "highlight": "#d47238",
+      "source_region": [
+        350,
+        390,
+        610,
+        590
+      ],
+      "sample_count": 5041
+    },
+    "feather_cream": {
+      "shadow": "#9a7c59",
+      "midtone": "#c79d71",
+      "highlight": "#f1c99c",
+      "source_region": [
+        420,
+        338,
+        680,
+        540
+      ],
+      "sample_count": 9067
+    },
+    "feather_white": {
+      "shadow": "#424340",
+      "midtone": "#70756c",
+      "highlight": "#fdfcf3",
+      "source_region": [
+        420,
+        338,
+        680,
+        540
+      ],
+      "sample_count": 609
+    },
+    "feather_olive": {
+      "shadow": "#686548",
+      "midtone": "#a6a371",
+      "highlight": "#d9d487",
+      "source_region": [
+        930,
+        730,
+        1080,
+        920
+      ],
+      "sample_count": 1235
+    },
+    "pants_brown": {
+      "shadow": "#4b362d",
+      "midtone": "#8b5e42",
+      "highlight": "#dba578",
+      "source_region": [
+        495,
+        880,
+        627,
+        1010
+      ],
+      "sample_count": 10190
+    },
+    "leather": {
+      "shadow": "#4b3329",
+      "midtone": "#815535",
+      "highlight": "#d19354",
+      "source_region": [
+        400,
+        520,
+        485,
+        610
+      ],
+      "sample_count": 2903
+    },
+    "rope": {
+      "shadow": "#9e6032",
+      "midtone": "#c98342",
+      "highlight": "#efb165",
+      "source_region": [
+        654,
+        570,
+        840,
+        624
+      ],
+      "sample_count": 3887
+    },
+    "gold_ornaments": {
+      "shadow": "#85542d",
+      "midtone": "#c3884c",
+      "highlight": "#f4c787",
+      "source_region": [
+        808,
+        423,
+        878,
+        493
+      ],
+      "sample_count": 2261
+    },
+    "shell_accessories": {
+      "shadow": "#eabd96",
+      "midtone": "#fad4aa",
+      "highlight": "#fdedd2",
+      "source_region": [
+        720,
+        446,
+        763,
+        500
+      ],
+      "sample_count": 726
+    },
+    "outlines": {
+      "shadow": "#0b0607",
+      "midtone": "#1a1313",
+      "highlight": "#282120",
+      "source_region": [
+        338,
+        300,
+        1125,
+        1190
+      ],
+      "sample_count": 48150
+    }
+  },
+  "reference_cloak_balance": [
+    {
+      "blue": 0.18275,
+      "cream_white": 0.15508,
+      "red": 0.14228
+    },
+    {
+      "blue": 0.19613,
+      "cream_white": 0.1737,
+      "red": 0.16609
+    }
+  ],
+  "relationships": [
+    "cream/white feather bands remain broad between blue bands",
+    "red feathers are sparse coral accents, not a dominant red mantle",
+    "blue is muted teal/navy cloth, not electric blue",
+    "hair warm chestnut, pants/leather dark brown, gold warm ochre",
+    "shadows, midtones and highlights belong to their material ramps"
+  ],
+  "validation": "semantic reference standard; metrics do not grant visual approval"
+}

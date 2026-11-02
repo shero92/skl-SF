@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "sword": {
+      "grip_type": "one_hand_sword",
+      "compatible_categories": [
+        "swords"
+      ],
+      "animations": [
+        "idle_ready",
+        "step",
+        "attack_windup",
+        "attack_execute",
+        "defend",
+        "victory"
+      ]
+    },
+    "axe": {
+      "grip_type": "axe",
+      "compatible_categories": [
+        "axes"
+      ],
+      "requires_own_anchors": true
+    },
+    "spear": {
+      "grip_type": "polearm",
+      "compatible_categories": [
+        "spears"
+      ],
+      "requires_own_anchors": true
+    },
+    "bow": {
+      "grip_type": "bow_draw",
+      "compatible_categories": [
+        "bows"
+      ],
+      "requires_own_anchors": true
+    },
+    "staff": {
+      "grip_type": "staff",
+      "compatible_categories": [
+        "staffs"
+      ],
+      "requires_own_anchors": true
+    },
+    "natural": {
+      "grip_type": "none",
+      "compatible_categories": [],
+      "body_only": true
+    }
+  },
+  "character_profiles": {
+    "CHAR001": "sword",
+    "CHAR002": "spear",
+    "CHAR003": "natural",
+    "CHAR004": "melee_reference_pending",
+    "CHAR005": "staff",
+    "CHAR006": "bow"
+  },
+  "cross_category_reuse": false
+}

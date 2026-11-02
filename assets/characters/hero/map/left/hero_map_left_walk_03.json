@@ -1,0 +1,76 @@
+{
+  "id": "CHAR001_map_left_walk_03",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "walk",
+  "direction": "left",
+  "frame": 3,
+  "output": "assets/characters/hero/map/left/hero_map_left_walk_03.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: identity-preserve. Input 1 is the EDIT TARGET: the established first frame of this exact direction. Input 2 is the original identity poster. Input 3 is the native scale reference. EDIT the target to create the requested NEXT animation frame. Preserve exact canvas, camera, head silhouette, face, hair pixels, accessory placement, palette, body proportions and ground-contact baseline. For IDLE change only tiny breathing/cloth movement, keep both feet and head fixed. For WALK change only the legs/arms and secondary cloth motion for the requested gait phase, keep the same face/head/body design. Do not redesign or change costume, face or ornaments. Use case: stylized-concept. ONE isolated production pixel-art map image, CHAR001 Hero, walk, frame 03. Input 2 is the STRICT original character identity poster: extract design identity only, do not copy poster composition, captions or other views. Preserve brown tousled hair, blue eyes, blue and cream layered coastal clothes, shell necklace, coral ornaments, blue arm markings, decorated sword, sandals. true left facing profile, nose and toes toward left edge. right foot forward contact, left behind. Premium handcrafted crisp pixel clusters, restrained coherent palette, clean outlines, no blur, antialiasing or painterly rendering. Square-grid player-facing elevated 3/4 RPG map camera; readable compact proportions and silhouette compatible with 64x64 floor grid. Target native canvas 96x96, transparent RGBA. Design the pixels at native scale; if larger renderer output is needed use integer-enlarged native pixel blocks. Preserve full silhouette, head, weapon, feet with no clipping. Ground contact anchor [48, 90]; leave margins. Warm upper-left light. Additional reference is same-character prior frame for identical scale/costume only; CHANGE limbs and secondary motion as requested, never duplicate a static pose. No floor, cast shadow, background, poster, border, text, labels, collage, sprite sheet, multiple poses, extra character, or checkerboard. Exactly ONE image of this single asset/frame. CRITICAL NATIVE SPRITE DESIGN: compact MAP SPRITES of original poster define proportions, NOT tall key art. Design on underlying 96x96 logical pixel grid, 1-3 native pixel clusters. Elevated 3/4 camera shows top of head. NOT a detailed illustration shrunk down. Large readable head, exactly 3 heads tall overall, short stout torso and legs. Head about 25 native pixels; body height about 78. No realistic adult proportions. FINAL GAIT POSE OVERRIDE: REVERSE the contact legs: near visible leg stretched RIGHT, far leg stretched LEFT, opposite wide stride. Foot alternation and changing leg silhouette are mandatory; do not return another standing pose or repeat the same forward leg across every frame. Keep face, torso and costume identity unchanged. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "failed",
+  "attempts": 1,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T03:22:51.651216+00:00",
+  "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_03__attempt_01.png",
+  "sha256": "0215e782f92f896a88c13817bcb7ac5fa4c314b0536a3e4e32aa19ceeb09b656",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "left",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      120,
+      45,
+      1141,
+      1177
+    ],
+    "source_contact_x": 668.9331210191083,
+    "scale": 0.06849785407725321,
+    "native_bounds": [
+      10,
+      12,
+      80,
+      90
+    ],
+    "paste_position": [
+      10,
+      12
+    ]
+  },
+  "rejection_reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+}

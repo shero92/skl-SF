@@ -1,0 +1,12 @@
+{
+  "status": "open",
+  "title": "Complete Game Factory master implementation",
+  "problem": "Owner supplied full environment, six-character and battle production specification; preserve assets and extend existing Godot systems.",
+  "file": "game_factory/master_request.txt",
+  "line": null,
+  "done_when": "Real room, independent character frames, movement and battle demos validated; blocked missing references remain explicit.",
+  "test": "python -m unittest tools.tests.test_game_factory",
+  "priority": "high",
+  "kind": "architecture",
+  "agent": "codex"
+}

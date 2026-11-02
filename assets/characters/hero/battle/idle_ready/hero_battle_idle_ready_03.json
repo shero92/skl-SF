@@ -1,0 +1,72 @@
+{
+  "id": "CHAR001_battle__idle_ready_03",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "battle",
+  "state": "idle_ready",
+  "direction": "",
+  "frame": 3,
+  "output": "assets/characters/hero/battle/idle_ready/hero_battle_idle_ready_03.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: precise-object-edit. Create exactly ONE new combat animation frame by editing the supplied hero battle sprite: CHAR001_battle__idle_ready_03, idle_ready, frame 3 of 4. Preserve this exact character identity, face, hair, outfit construction, ornaments, colors, weapon, pixel density, canvas, camera and body scale. Same right-facing three-quarter combat camera throughout. Change the anatomy and action pose as required for THIS phase: breathing peak, tiny cloth movement. Make the progression visible, not a duplicate static pose. Preserve proper anatomy and stable ground baseline. Do not zoom or reframe the character. Keep full head, limbs and original weapon visible with margins. Native canvas 256x256, crisp detailed handcrafted pixels; no blur or painterly smoothing. ONE character only. True transparent RGBA, no floor, cast shadow, captions, collage or additional poses. No baked slash arc, airborne projectile, magic particles or battle background; effects are separate assets. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+  "target_dimensions": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "transparent_background": true,
+  "status": "needs_review",
+  "attempts": 1,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      256,
+      256
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T13:11:17.097665+00:00",
+  "source_png": "assets/characters/hero/battle/idle_ready/sources/hero_battle_idle_ready_03__attempt_01.png",
+  "sha256": "c3719b8a1809f884c870ac402bc73dbb91271b33100cb21fd450f756079e2836",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    256,
+    256
+  ],
+  "footprint": null,
+  "orientation": "right",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      74,
+      54,
+      1190,
+      1190
+    ],
+    "source_contact_x": 750.8025477707006,
+    "scale": 0.15812148847418286,
+    "native_bounds": [
+      21,
+      60,
+      197,
+      240
+    ],
+    "paste_position": [
+      21,
+      60
+    ]
+  }
+}
