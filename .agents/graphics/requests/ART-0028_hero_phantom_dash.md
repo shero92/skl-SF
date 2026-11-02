@@ -1,9 +1,9 @@
 ---
-id: ART-0026
-status: needs_regeneration
+id: ART-0028
+status: in_progress
 owner: codex
 task: TASK-0072
-dedupe_key: CHAR001_phantom_dash_rear_body_v001
+dedupe_key: char001_phantom_dash_rear_body_v001
 existing_asset_ids: CHAR001,WPN_HERO_BASIC_SWORD,WPN_IRON_SWORD
 output_paths: game_factory/hero_attack_style/v001/phantom_dash_body_source.png
 ---
@@ -25,5 +25,5 @@ output_paths: game_factory/hero_attack_style/v001/phantom_dash_body_source.png
 
 التسلسل: استعداد، تحميل، دفع، اندفاع، غرس قدم، لف الجذع، ضربة قطرية، نهاية ضربة، متابعة، استقرار، تراجع خطوتين، استعداد. اللحظة 430 ms هي الاصطدام؛ توقف 50 ms؛ الزمن الكلي 1050 ms.
 
-المصدر الدائم: H:/shining force/pixel-art/TASK-0072/ART-0026/v001/.
+المصدر الدائم: H:/shining force/pixel-art/TASK-0072/ART-0028/v001/.
 الحالة needs_review حتى فحص Godot وموافقة المالك. لا اعتماد ذاتي.

@@ -7,7 +7,7 @@ priority: high
 branch: codex/aider-hero-attack-runtime
 depends_on: none
 issue: none
-art_request: ART-0026
+art_request: ART-0028
 touches: scenes/hero_attack_preview.gd,scenes/hero_attack_preview.tscn,scenes/hero_attack_timeline.gd,tools/hero_attack_assets.py,tools/tests/test_hero_attack_assets.py,tools/verify_hero_attack.gd,docs/HERO_ATTACK_RUNTIME.md,.agents/tasks/TASK-0073_hero_attack_runtime.md
 test: python tools/run_tests.py --changed
 done_when: مشغّل معاينة مستقل واختبارات زمن وأداة استخراج وفحص sheet؛ الأصول الناقصة تمنع الادعاء بجاهزية الحركة النهائية.

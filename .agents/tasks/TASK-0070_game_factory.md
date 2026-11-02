@@ -1,11 +1,16 @@
 ---
 id: TASK-0070
-status: in_progress
+status: review
 owner: codex
 branch: codex/game-factory
 depends_on: TASK-0069
 issue: none
 art_request: ART-0027
+agent: codex
+touches: game_factory,tools/game_factory.py,tools/tests/test_game_factory.py,scenes/game_factory_demo.tscn,assets/characters,assets_generated
+test: python tools/run_tests.py --changed
+done_when: Reusable Game Factory with durable queue, six-character registry, independent PNG outputs and Godot demos; missing outputs are never marked complete.
+scope_approval: owner explicit scope expansion 2026-11-01/02 (Game Factory characters, weapons, factory output roots)
 ---
 # Complete reusable Game Factory
 

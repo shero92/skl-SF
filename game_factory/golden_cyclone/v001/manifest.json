@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "task_id": "TASK-0074",
-  "art_request": "ART-0027",
+  "art_request": "ART-0029",
   "attack_id": "hero_golden_cyclone",
   "runtime_alias": "golden_cyclone",
   "production_source_mode": "INDIVIDUAL_FRAME",

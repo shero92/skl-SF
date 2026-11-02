@@ -12,7 +12,7 @@
 
 SHA-256: 3784bdc287f928981eaf17d26565bf4ec81b82c36e413cbc6bcb27d9e8599da3. مصدر واحد يجمع 16 وضعية، أبعاده 1254×1254 وRGBA. يرفض كمصدر إنتاجي وفق السياسة الجديدة: needs_regeneration. الأبعاد لا تقبل القسمة على 4، وحدود بعض الوضعيات تعبر الخلايا التقريبية. اختلاف بصمات الخلايا لا يثبت جودة أو صحة الحركة. لم تنشأ منه ملفات إطار مستقلة أو game-ready sprites، ولا توجد derivatives صغيرة يلزم حذفها.
 
-حُفظ المصدر والبرومبت في worktree TASK-0072 والنسخة الدائمة في H:/shining force/pixel-art/TASK-0072/ART-0026/v001/source/phantom_dash_body_source.png. لا حذف أو اقتطاع أو تكبير له.
+حُفظ المصدر والبرومبت في worktree TASK-0072 والنسخة الدائمة في H:/shining force/pixel-art/TASK-0072/ART-0028/v001/source/phantom_dash_body_source.png. لا حذف أو اقتطاع أو تكبير له.
 
 طابور الإصلاح: game_factory/golden_cyclone/v001/regeneration_queue.json، ست عشرة حاجة لمصادر Phantom Dash فردية مفقودة؛ أولوية وضعيات الاصطدام واللف والاندفاع الأعلى فقدًا للتفاصيل. لا يعيد إدراج مصادر Hero المقفلة أو الإطارات المستقلة السابقة.
 

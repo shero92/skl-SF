@@ -6,7 +6,7 @@
 
 - الجسم: assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_NNN.png؛ كل ملف طلب توليد مستقل كامل الجودة، بلا تقطيع ورقة أو تكبير قصاصة.
 - المرشحات المرفوضة: assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/؛ تحفظ أسباب الرفض في manifest.json ولا تحذف.
-- النسخة الدائمة: H:/shining force/pixel-art/TASK-0074/ART-0027/v001/.
+- النسخة الدائمة: H:/shining force/pixel-art/TASK-0074/ART-0029/v001/.
 - الطلبات الفعلية: requests/؛ بيانات الملفات الفعلية: manifest.json؛ تخطيط الوضعيات والتوقيت: motion_spec.json؛ إصلاح Phantom Dash: regeneration_queue.json.
 - نتيجة فحوص المشروع وحدودها: qa/verification_summary.md. يثبت generated_frame_count عدد الملفات التي حُفظت وفُحصت، ولا يعني اعتمادها.
 

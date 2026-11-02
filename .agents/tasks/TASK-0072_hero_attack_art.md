@@ -6,10 +6,11 @@ agent: codex
 branch: codex/hero-attack-art
 depends_on: none
 issue: none
-art_request: ART-0026
-touches: docs/HERO_ATTACK_STYLE.md,.agents/tasks/TASK-0072_hero_attack_art.md,.agents/graphics/requests/ART-0026_hero_phantom_dash.md,game_factory/hero_attack_style
+art_request: ART-0028
+touches: docs/HERO_ATTACK_STYLE.md,.agents/tasks/TASK-0072_hero_attack_art.md,.agents/graphics/requests/ART-0028_hero_phantom_dash.md,game_factory/hero_attack_style
 test: python tools/run_tests.py --changed
 done_when: يتم تسليم رسوم phantom_dash المرشحة ومراجعها وبصماتها وتقرير الفحص دون ادعاء اعتمادها أو اكتمال تكامل Godot.
+scope_approval: owner explicit scope expansion 2026-11-01/02 (Game Factory characters, weapons, factory output roots)
 ---
 # رسوم هجوم البطل — المرحلة الأولى
 
@@ -27,7 +28,7 @@ done_when: يتم تسليم رسوم phantom_dash المرشحة ومراجعه
 
 - المصدر: codex/game-factory عند 936b1ca9d68d53829eb44393ac373e0a140591bf.
 - الرسوم الحالية والأسلحة تبقى دون استبدال.
-- ART-0026 يحدد الأصول الجديدة؛ TASK-0073 مسؤول عن أدوات الفحص والتقطيع والتشغيل.
+- ART-0028 يحدد الأصول الجديدة؛ TASK-0073 مسؤول عن أدوات الفحص والتقطيع والتشغيل.
 - لا تعد sheet مولدة وحدها دليل حركة مكتملة؛ يلزم فحص الإطارات والتوقيت ولقطة Godot.
 - الحالة البصرية الافتراضية: needs_review.
 - التكلفة والاستهلاك: unknown حتى يتوفر قياس فعلي.

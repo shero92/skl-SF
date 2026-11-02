@@ -36,7 +36,7 @@ Router registration: add ONE entry for your new test file to tools/test_map.json
 90 minutes.
 
 ## Blocked
-- Needs approved hero rear frames (ART-0026 / TASK-0072, needs_review) and TASK-0085. Do not move to todo until this is resolved.
+- Needs approved hero rear frames (ART-0028 / TASK-0072, needs_review) and TASK-0085. Do not move to todo until this is resolved.
 
 ## Provenance
 Planned by Claude Code on 2026-11-02 (docs/AUTONOMOUS_24H_PLAN.md). Record the real execution tool and model when run.

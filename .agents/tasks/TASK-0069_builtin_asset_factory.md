@@ -6,6 +6,11 @@ branch: codex/pixel-asset-factory
 depends_on: none
 issue: none
 art_request: ART-0026
+agent: codex
+touches: tools/pixel_asset_factory.py,tools/pixel_factory,tools/tests/test_pixel_asset_factory.py,tools/test_map.json,docs/PIXEL_ASSET_FACTORY.md,assets_generated,.agents/tasks/TASK-0069_builtin_asset_factory.md
+test: python tools/run_tests.py --changed
+done_when: Built-in image_gen environment factory with per-request isolation, immutable attempts, reservations, review gates and Godot placement QA; no approval is claimed without owner review.
+scope_approval: owner explicit scope expansion 2026-11-01/02 (Game Factory characters, weapons, factory output roots)
 ---
 # Built-in image_gen environment asset factory
 
