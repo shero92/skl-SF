@@ -199,6 +199,13 @@
       "covers": "Four 90-degree rotations, collision transforms and drawn directional variants.",
       "command": ["{godot}", "--headless", "--path", ".", "--script", "res://tools/test_cardinal_map_blocks.gd"],
       "paths": ["tools/test_cardinal_map_blocks.gd", "map_factory/scripts/**", "map_factory/maps/**", "map_factory/metadata/**", "tools/map_factory_orientation.py"]
+    },
+    {
+      "id": "aider_worker",
+      "kind": "python",
+      "covers": "Aider worker eligibility, atomic claim, touches/dependency checks, no duplicate execution, retry, auth/balance pause and isolated commit.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_aider_worker.py"],
+      "paths": ["tools/aider_worker.py", "tools/run_aider_worker.ps1", "tools/setup_aider_worker.ps1", "tools/tests/test_aider_worker.py"]
     }
   ]
 }

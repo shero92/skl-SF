@@ -1,0 +1,11 @@
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.exr
+*.blend
+*.import
+assets/
+assets_generated/
+.env*

@@ -40,5 +40,15 @@
   "max_new_tasks_per_day": null,
   "max_tasks_per_runner_session": 10,
   "runner_session_minutes": 150,
-  "blender_executable": "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe"
+  "blender_executable": "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe",
+  "aider_execution_enabled": false,
+  "aider": {
+    "main_model": "openai/gpt-6.1-sol",
+    "weak_model": "openai/gpt-6-sol",
+    "api_base": "https://apimaster.ai/v1",
+    "api_key_env": "OPENAI_API_KEY",
+    "poll_seconds": 10,
+    "task_timeout_seconds": 1800,
+    "max_repair_attempts": 2
+  }
 }
