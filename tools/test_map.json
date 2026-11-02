@@ -2,6 +2,13 @@
   "version": 1,
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
+    {
+      "id": "battle_combo",
+      "kind": "python",
+      "covers": "Deterministic combo order, bounded gaps, recovery to Idle, unavailable attack reporting, cancellation, interruption and reentrant signal safety.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_combo.py"],
+      "paths": ["scenes/battle/combo_sequence.gd", "tools/verify_battle_combo.gd", "tools/tests/test_battle_combo.py", ".agents/planner/config.json"]
+    },
     {"id": "battle_controller", "kind": "python", "covers": "Attacker/defender battle controller lifecycle, busy and missing-asset rejection, cancellation, reset and reentrant signal safety.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_controller.py"], "paths": ["scenes/battle/battle_animation_controller.gd", "scenes/battle/battle_timeline.gd", "tools/verify_battle_controller.gd", "tools/tests/test_battle_controller.py", "tools/battle_godot_harness.py", ".agents/planner/config.json"]},
     {
       "id": "battle_perspective",
