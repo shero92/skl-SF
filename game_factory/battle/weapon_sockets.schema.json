@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Battle weapon sockets",
+  "description": "Measured per-frame sockets. Coordinates are sprite-local pixels; rotation is in degrees from -180 to 180 inclusive. Provenance records a source reference; validation does not independently verify that evidence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["attack_id", "frames"],
+  "properties": {
+    "attack_id": {"$ref": "#/$defs/nonblank"},
+    "frames": {
+      "type": "array",
+      "minItems": 1,
+      "description": "One entry per attack frame; frame_name must be unique within this attack.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["frame_name", "socket", "layer", "weapon_ids", "provenance"],
+        "properties": {
+          "frame_name": {"$ref": "#/$defs/nonblank"},
+          "socket": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["x", "y", "rotation_deg"],
+            "properties": {
+              "x": {"type": "number"},
+              "y": {"type": "number"},
+              "rotation_deg": {"type": "number", "minimum": -180, "maximum": 180}
+            }
+          },
+          "layer": {"enum": ["behind_hand", "in_hand", "front"]},
+          "weapon_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {"enum": ["WPN_HERO_BASIC_SWORD", "WPN_IRON_SWORD"]}
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["method", "reference"],
+            "properties": {
+              "method": {"enum": ["annotation", "measurement"]},
+              "reference": {"$ref": "#/$defs/nonblank"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "pattern": "\\S"}
+  }
+}

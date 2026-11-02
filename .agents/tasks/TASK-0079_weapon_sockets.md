@@ -1,6 +1,6 @@
 ---
 id: TASK-0079
-status: todo
+status: done
 owner: aider
 agent: aider
 priority: normal
