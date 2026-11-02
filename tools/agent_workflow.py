@@ -112,13 +112,13 @@ def generated(root: Path) -> dict[Path, str]:
     def collide(a, b):
         return a == b or a.rstrip("/") + "/" == b[:len(a.rstrip("/"))+1] or b.rstrip("/") + "/" == a[:len(b.rstrip("/"))+1]
     for task in tasks:
-        if task["agent"] not in {"claude", "codex", "graphics"}:
-            raise ValueError(task["id"] + ": agent must be claude|codex|graphics")
+        if task["agent"] not in {"claude", "codex", "aider", "graphics"}:
+            raise ValueError(task["id"] + ": agent must be claude|codex|aider|graphics")
         if task["test"] in ("none", "") or task["done_when"] in ("none", ""):
             raise ValueError(task["id"] + ": missing test/done_when")
         touch_list(task)
     for i, a in enumerate(active):
-        if a["agent"] in ("claude", "codex") and any(
+        if a["agent"] in ("claude", "codex", "aider") and any(
                 b["agent"] == a["agent"] for b in active[i+1:]):
             raise ValueError("Agent has more than one active task: " + a["agent"])
         for other in active[i+1:]:
