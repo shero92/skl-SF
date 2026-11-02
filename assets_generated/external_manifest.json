@@ -1,0 +1,47 @@
+{
+  "task": "TASK-0069",
+  "art_request": "ART-0026",
+  "status": "delivered_pending_owner_review",
+  "files": [
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\G04__floor__naturally_textured_sandstone_floor_tile__default__1x1__64x64.json",
+      "sha256": "61ad3a5f4270148d0233355939c2501b1ab2f2aee6b6dcd3129ac94fba9fa32f"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\G04__floor__naturally_textured_sandstone_floor_tile__default__1x1__64x64.png",
+      "sha256": "a10ea4f41aa5e3dcb9263486ab9f6149bb3afd56a8ff7de92546b638da7abd02"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\request.json",
+      "sha256": "55a16d38f0804ba575a20b1154a08055c3cff895bf468bd319dccc3f4da2e528"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\source.png",
+      "sha256": "981044cfbb6791a66ae208427307e6a00d51ef0dcc2a966c28119f541c69520e"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\godot_qa\\capture.txt",
+      "sha256": "9eb5dad3821aad9161542f3d64cb4cf5891bae513e2e39616edab35689208278"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\godot_qa\\input.json",
+      "sha256": "5e35cdc101f656285bfae6fe82d264778c1310dc9079a396c4885da4e9a92121"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\godot_qa\\receipt.json",
+      "sha256": "e068681fa52dc0e2dcb170ee658acabba5a240872f16467b872008d13666aa8b"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\godot_qa\\room.png",
+      "sha256": "6d3413671c36da0f0cfbeab3ba4e24518ae557a018e3c5d473e7b317ab41569b"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\godot_qa\\source_vs_godot.png",
+      "sha256": "fa44e29f36a37cc6895f9343b9f95bee97ac7c78e3a6f50124e6d97314219460"
+    },
+    {
+      "path": "H:\\shining force\\pixel-art\\TASK-0069\\ART-0026\\v002\\godot_qa\\stdout.txt",
+      "sha256": "6d1c065383a27c36804949b6ffa4b09714470b112e5dacc0bd5aeb7b9c147c4e"
+    }
+  ]
+}

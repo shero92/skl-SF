@@ -1,0 +1,670 @@
+# SKL-SF — PERMANENT GRAPHICS PRODUCTION RULES
+# FIX LOW-QUALITY ATTACK FRAMES + GENERATE GOLDEN CYCLONE
+
+## MAIN OBJECTIVE
+
+Improve the existing skl-SF Character Factory and Battle Animation Factory.
+
+The recently produced attack animations are not acceptable as final production artwork because multiple poses were generated together in one image, resulting in small sprites and reduced detail.
+
+I want EVERY individual animation frame generated independently at full quality.
+
+This is a permanent production rule for ALL future graphics in the project.
+
+Do not replace the original Hero design.
+
+Do not remove existing approved assets.
+
+Do not use Gemini, Aider, external OpenAI APIs, or paid third-party image services.
+
+Use the image-generation capability available directly in the current Codex environment.
+
+If image generation is unavailable, report that limitation. Do not replace high-quality artwork with procedural low-detail placeholders.
+
+---
+
+# PART 1 — PERMANENT GRAPHICS FACTORY RULES
+
+## RULE 001 — ONE FRAME PER IMAGE
+
+Every production animation frame MUST be created as one independent image-generation output.
+
+Absolutely forbidden:
+
+- Generating 6 poses inside one image
+- Generating 12 poses inside one image
+- Using a collage as the source of production frames
+- Cropping tiny characters from a storyboard and calling them full-quality sprites
+- Dividing a 1024x1024 collage into low-resolution character frames
+- Upscaling those small cropped sprites to pretend they are high-resolution assets
+
+Required:
+
+ONE FRAME = ONE GENERATION REQUEST = ONE PNG FILE.
+
+Example:
+
+hero_battle_golden_cyclone_001.png
+hero_battle_golden_cyclone_002.png
+hero_battle_golden_cyclone_003.png
+hero_battle_golden_cyclone_004.png
+
+Each image must contain exactly ONE complete character in ONE specific animation pose.
+
+No additional character.
+
+No other poses.
+
+No labels.
+
+No borders.
+
+No storyboard panels.
+
+No sprite-sheet layouts during the generation stage.
+
+## RULE 002 — FULL-QUALITY NATIVE SOURCE
+
+For battle characters, use a large, detailed source image.
+
+Preferred source canvas:
+1024x1024 pixels or higher when supported.
+
+The original character should occupy most of the useful canvas while leaving enough room for movement.
+
+Do not sacrifice character detail to fit multiple poses into one image.
+
+All frames must preserve:
+
+- Face details
+- Hair strands and silhouette
+- Feather structure
+- Costume patterns
+- Gold ornaments
+- Rope belt
+- Leather details
+- Consistent anatomy
+- Original color palette
+
+Keep the original high-resolution PNG.
+
+If Godot requires smaller native pixel-art sprites, create a separately validated game-resolution derivative from each original frame.
+
+Do not assume that downscaling automatically produces high-quality pixel art.
+
+Review each derivative at its actual displayed size.
+
+Never overwrite the high-resolution master.
+
+## RULE 003 — TRANSPARENT BACKGROUND
+
+All character body frames must have genuine transparency.
+
+Required:
+RGBA PNG.
+
+No:
+- black painted background
+- white background
+- checkerboard background
+- battlefield background
+- floor
+- environment
+- baked character shadow
+
+Keep character shadows as separate assets.
+
+## RULE 004 — NO BUILT-IN WEAPONS
+
+All character body animation frames must remain weaponless.
+
+The Hero can pose as though gripping a sword, but the sword itself must not be rendered into the character body PNG.
+
+Do not include:
+
+- Blade
+- Hilt
+- Guard
+- Pommel
+- Permanent weapon
+- Weapon trails baked into body sprites
+
+Weapons come from Weapon Factory.
+
+Separate:
+- Hero Body
+- Weapon
+- Weapon Trail
+- Attack VFX
+- Ground Effects
+- Shadow
+
+Use per-frame weapon attachment anchors.
+
+Support changing the sword without regenerating Hero's body.
+
+## RULE 005 — LOCKED HERO DESIGN AND COLORS
+
+Use these approved references:
+
+PRIMARY STYLE REFERENCE:
+hero_battle_idle_ready_01__attempt_01.png
+
+SECONDARY REFERENCE:
+hero_battle_step_01__attempt_01.png
+
+Preserve their character identity, rendering quality, proportions, and color balance.
+
+Pay special attention to:
+- Brown hair
+- Natural skin color
+- Blue scarf
+- Controlled blue feathers
+- Controlled red accents
+- White and cream feathers
+- Brown pants
+- Gold ornaments
+- Leather bindings
+- Shell accessories
+
+Do not make every new attack pose more saturated blue or red.
+
+Do not randomly alter costume details between frames.
+
+Use the approved Hero battle palette.
+
+The Hero must look like the SAME person in every frame.
+
+## RULE 006 — ONE FILE PER GRAPHICAL ELEMENT
+
+This applies to EVERY graphics request in skl-SF.
+
+Examples:
+
+Characters:
+One animation frame per PNG.
+
+Weapons:
+One weapon asset per PNG.
+
+Effects:
+One VFX frame per PNG.
+
+Environment:
+One floor tile or individual modular asset per PNG.
+
+Architecture:
+One independently reusable architectural piece per PNG.
+
+Furniture:
+One furniture asset and direction per PNG.
+
+Decorations:
+One isolated decorative object per PNG.
+
+UI:
+One independent icon or graphical component per PNG.
+
+Do not merge unrelated production assets into one image.
+
+Exceptions are permitted only for explicitly approved final flattened artwork, never for reusable source assets.
+
+## RULE 007 — SPRITE SHEETS ARE EXPORTS ONLY
+
+The production workflow must be:
+
+1. Generate individual high-quality PNGs.
+2. Validate each PNG.
+3. Align individual frame canvases.
+4. Create animation metadata.
+5. Assemble Sprite Sheets automatically.
+6. Create GIF or video previews.
+7. Import frames or generated atlases into Godot.
+
+Sprite Sheets must be generated FROM the independent PNG frames.
+
+Never produce the individual production PNGs by cropping a low-resolution generated sprite sheet.
+
+Keep the original PNGs permanently.
+
+## RULE 008 — PRESERVE APPROVED GRAPHICS
+
+Never overwrite approved assets.
+
+When improving an existing frame, create a new version.
+
+Example:
+
+hero_battle_attack_001_v2.png
+
+Keep the previous version available.
+
+Update the active asset manifest only after validation and approval.
+
+Never claim generated images exist unless the actual PNG files have been verified.
+
+---
+
+# PART 2 — SAVE THESE RULES PERMANENTLY
+
+Inspect the existing project instructions and asset-generation pipeline.
+
+Add the rules above to:
+
+- The appropriate AGENTS.md instructions
+- Character Factory generation guidelines
+- Battle Animation Factory guidelines
+- Weapon Factory guidelines
+- Environment Asset Factory guidelines
+- Shared asset validation rules
+
+Do not create conflicting duplicate instructions.
+
+Use one authoritative shared graphics policy with references from the relevant factories.
+
+Make these rules apply to every future Codex graphics task.
+
+Required policy:
+
+PRODUCTION_SOURCE_MODE = INDIVIDUAL_FRAME
+
+MULTI_POSE_IMAGE_GENERATION = FORBIDDEN
+
+STORYBOARD_CROPPING_AS_FINAL_ASSET = FORBIDDEN
+
+SOURCE_QUALITY_PRESERVATION = REQUIRED
+
+WEAPON_BODY_SEPARATION = REQUIRED
+
+FRAME_VALIDATION = REQUIRED
+
+SPRITESHEET_EXPORT_FROM_INDIVIDUAL_FILES = REQUIRED
+
+Do not enforce an arbitrary fixed source dimension when the asset type requires a different size.
+
+Enforce suitable resolution and minimum usable detail for each asset category.
+
+---
+
+# PART 3 — REPAIR PREVIOUS ATTACK OUTPUTS
+
+Inspect the existing Hero attack project.
+
+Locate the previous outputs for:
+
+- Phantom Dash
+- Cinematic Combo
+- Critical Leap
+
+Also inspect:
+- existing GIF previews
+- sprite sheets
+- individual PNG frames
+- generation prompts
+- frame manifests
+- source images
+
+Determine which frames are genuinely independently generated and which were cropped from combined images.
+
+Mark low-quality cropped frames as:
+
+needs_regeneration
+
+Do not delete them.
+
+Preserve old GIF previews for comparison.
+
+Do not mark cropped or enlarged frames as final approved images.
+
+Create a regeneration queue containing only the missing or insufficient-quality individual frames.
+
+Prioritize the frames that show the greatest loss of character detail.
+
+Do not repeat already approved high-quality individual frames unnecessarily.
+
+---
+
+# PART 4 — NEW ATTACK STYLE: GOLDEN CYCLONE
+
+Now create a new special Hero attack:
+
+ATTACK ID:
+hero_golden_cyclone
+
+ATTACK NAME:
+Golden Cyclone
+
+This is an elegant high-speed spinning sword attack.
+
+The animation must feel like a premium tactical JRPG special attack.
+
+The Hero rotates his entire body, builds momentum, and performs a powerful spinning strike.
+
+Golden energy surrounds the attack.
+
+Maintain the Hero's original costume and color palette.
+
+The gold-colored energy must come from separate VFX assets.
+
+Do NOT recolor Hero's outfit gold.
+
+Do NOT add a permanent sword into Hero's body images.
+
+## ATTACK MOTION PHASES
+
+PHASE A — ANTICIPATION
+
+Frames 001–004
+
+- Hero lowers his center of gravity.
+- His shoulders begin rotating.
+- Feet adjust into a stable fighting stance.
+- His gripping hand prepares for the spin.
+- Feathers and cloth begin following the movement.
+
+PHASE B — ROTATION BUILDUP
+
+Frames 005–008
+
+- Hero rotates his hips and shoulders.
+- His footwork visibly drives the rotation.
+- His clothing and feathers lag naturally behind.
+- His hand follows an arc around his body.
+- The pose becomes more dynamic.
+
+PHASE C — FULL SPIN
+
+Frames 009–014
+
+- Hero performs a controlled full-body rotation.
+- Use genuine different body orientations.
+- Show rear, side, and front-facing transitional views as needed.
+- Do not mirror a single image to simulate a 360-degree spin.
+- Maintain consistent anatomy and costume design.
+- The rotation must make physical sense.
+
+PHASE D — POWERFUL STRIKE
+
+Frames 015–018
+
+- Hero completes the spin.
+- Weapon-holding hand accelerates toward the opponent.
+- Torso and hips transfer momentum.
+- The final strike has strong visual impact.
+- Golden strike effects are handled separately.
+
+PHASE E — RECOVERY
+
+Frames 019–022
+
+- Hero slows down.
+- Feet regain stable contact.
+- Cloth and feathers settle naturally.
+- Hero returns smoothly to battle idle position.
+
+TOTAL:
+22 independent high-quality Hero body PNG files.
+
+Every frame must be generated individually.
+
+Do not create a 22-pose image.
+
+Do not create a 6-pose image.
+
+Do not generate small characters and crop them afterwards.
+
+---
+
+# PART 5 — GOLDEN CYCLONE VFX
+
+Create independent VFX frames for:
+
+- Golden spinning arc
+- Golden energy ring
+- Motion trails
+- Impact sparks
+- Final strike flash
+- Dust and ground impact
+
+Save each VFX frame separately.
+
+Do not bake effects into Hero's body.
+
+Ensure the VFX can be reused with other compatible characters and weapons.
+
+Use a clear attachment or world-space reference for every effect.
+
+---
+
+# PART 6 — WEAPON SOCKETS AND DEPTH
+
+For every generated frame, record:
+
+- frame_id
+- body_canvas_size
+- character_ground_anchor
+- weapon_hand_anchor
+- hand_rotation
+- weapon_scale
+- weapon_render_order
+- attack_phase
+- frame_duration
+- source_image_path
+- quality_status
+
+Weapons must follow the actual hand motion.
+
+Allow weapon rendering in front of or behind body layers as the spin rotates.
+
+Do not embed the sword into the body image.
+
+Test with:
+WPN_HERO_BASIC_SWORD
+WPN_IRON_SWORD
+
+Use existing weapon assets if available.
+
+Do not invent placeholder assets and mark the weapon test as successful.
+
+---
+
+# PART 7 — TWO BATTLE CAMERA PERSPECTIVES
+
+Retain the previously requested battle camera rules.
+
+VIEW A — HERO ATTACKS:
+Hero appears in the foreground from a 3/4 rear angle.
+
+The enemy is visible ahead.
+
+VIEW B — ENEMY ATTACKS:
+Enemy appears in the foreground.
+
+Hero is visible from the front.
+
+Use appropriate genuine directional Hero sprite assets.
+
+Do not create the front-facing model by flipping a rear-facing sprite.
+
+The Golden Cyclone animation must remain visually coherent with View A.
+
+For full spin motions, use appropriate independently illustrated directional frames.
+
+---
+
+# PART 8 — ANIMATION QUALITY CONTROL
+
+After creating each image, validate:
+
+1. Exactly one character is present.
+2. Character is complete and not cropped.
+3. Transparent background is genuine.
+4. Image resolution meets source-quality requirements.
+5. Hair and face match the approved references.
+6. Clothing patterns are consistent.
+7. Blue and red saturation remain consistent.
+8. Hands and feet are anatomically correct.
+9. No equipped weapon is baked in.
+10. The frame differs meaningfully from neighboring frames.
+11. The pose matches its animation phase.
+12. Ground anchor is consistent.
+13. No unexpected costume redesign.
+14. File is stored in the correct folder.
+
+Automate checks for:
+- PNG validity
+- Dimensions
+- Alpha channel
+- Filename
+- Duplicate frames
+- Manifest completeness
+- Animation frame order
+
+Use visual review for identity, artistic quality, and animation coherence.
+
+Do not rely only on automatic tests to claim visual quality.
+
+---
+
+# PART 9 — GODOT INTEGRATION
+
+Integrate the Golden Cyclone attack into the existing battle animation system.
+
+Do not create a duplicate combat framework if one already exists.
+
+The existing system should support:
+
+play_attack("golden_cyclone", attacker, defender)
+
+Use:
+- Independent body frames
+- Independent weapon sprite
+- Independent VFX
+- Ground anchor metadata
+- Weapon attachment metadata
+- Animation timing
+- Camera movement
+- Hitstop
+- Impact timing
+- Recovery timing
+
+The enemy must react to the actual hit event.
+
+Do not trigger damage at the beginning of the animation.
+
+Do not use simple scaling or rotation of one static body image as a substitute for independently illustrated poses.
+
+---
+
+# PART 10 — OUTPUT ORGANIZATION
+
+Use the existing project folder conventions where possible.
+
+Suggested structure:
+
+assets/battle/hero/golden_cyclone/
+    source_frames/
+        hero_golden_cyclone_001.png
+        hero_golden_cyclone_002.png
+        ...
+        hero_golden_cyclone_022.png
+
+    game_frames/
+    vfx/
+    metadata/
+    previews/
+    sprite_sheets/
+
+Every source frame must remain individually accessible.
+
+Generate a sprite sheet only AFTER the source frames are complete.
+
+Generate a GIF preview only AFTER the frames are assembled into the correct motion sequence.
+
+The GIF may show the battlefield and opponent.
+
+The GIF is not a replacement for the separated body PNG files.
+
+---
+
+# PART 11 — REQUIRED PREVIEWS
+
+Create:
+
+hero_golden_cyclone.gif
+
+hero_golden_cyclone_sprite_sheet.png
+
+hero_golden_cyclone_godot_preview.png
+
+These are secondary outputs.
+
+The primary deliverables are the 22 independent Hero body PNG frames and any necessary separate VFX files.
+
+The GIF must use the actual generated frames.
+
+Do not create a fake GIF by moving one still image around.
+
+Do not use frames cropped from a low-quality storyboard.
+
+---
+
+# PART 12 — PRODUCTION EXECUTION
+
+Follow this exact order:
+
+1. Inspect the repository and existing approved artwork.
+2. Add permanent graphics production rules.
+3. Audit the existing attack frame assets.
+4. Identify low-quality cropped frames.
+5. Preserve existing outputs and create a regeneration queue.
+6. Inspect the locked Hero design references.
+7. Generate Golden Cyclone frame 001 as one full-quality image.
+8. Validate character identity and palette.
+9. Generate frame 002 independently.
+10. Continue sequentially through frame 022.
+11. Validate the full animation sequence.
+12. Create separate VFX.
+13. Create weapon attachment metadata.
+14. Generate Sprite Sheet and GIF exports.
+15. Integrate and test in Godot.
+16. Report completed frames, actual file paths, tests, and missing work.
+
+Respect tool availability and session limits.
+
+Do not claim completion if actual PNG frames have not been generated.
+
+Do not substitute procedural mockups for final production artwork.
+
+Do not use external paid image-generation APIs.
+
+---
+
+# FINAL ACCEPTANCE CRITERIA
+
+This task is NOT complete if:
+
+- Only one image containing six poses exists.
+- Frames are tiny crops from a large sheet.
+- High-resolution frames are merely enlarged low-quality crops.
+- The Hero changes colors between frames.
+- Different body frames contain different costume details.
+- A sword is permanently drawn into the character body.
+- The Sprite Sheet exists but individual source frames do not.
+- GIF previews exist but the underlying animations are not real.
+- The Godot scene uses placeholders and claims production completion.
+
+This task IS complete only when:
+
+- The permanent one-frame-per-file production policy is enforced.
+- All 22 Golden Cyclone frames exist as individually generated PNGs.
+- Every frame has appropriate quality and consistency.
+- The character body contains no weapon.
+- Independent weapons follow the hand anchors.
+- VFX are separate.
+- Godot plays the complete attack correctly.
+- The original high-quality references remain preserved.
+- The animation has been visually reviewed.
+- Sprite Sheets and GIFs are created from the independent frames.
+
+BEGIN BY ADDING THE PERMANENT GRAPHICS RULES AND GENERATING THE FIRST FULL-QUALITY GOLDEN CYCLONE FRAME.

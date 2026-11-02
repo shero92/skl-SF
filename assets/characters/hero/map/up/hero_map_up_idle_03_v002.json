@@ -1,0 +1,85 @@
+{
+  "id": "CHAR001_map_up_idle_03",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "idle",
+  "direction": "up",
+  "frame": 3,
+  "output": "assets/characters/hero/map/up/hero_map_up_idle_03_v002.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: precise-object-edit. Edit the ONE supplied transparent hero sprite to produce exactly one new animation frame: CHAR001_map_up_idle_03, up facing, idle frame 03. The edit target already embodies the original poster identity. Preserve exact canvas, camera, face, hair silhouette, head position, torso, costume patterns, ornaments, palette, weapon hand and body proportions. Do not redraw or redesign these protected regions. Change only limbs and secondary cloth motion as necessary: small secondary scarf and mantle movement, both feet and head stay fixed. Keep full sprite and weapon visible; preserve real transparency. Original handcrafted pixel style and native 96x96 logical grid. No text, floor, shadow, extra limbs, extra figure, sheet or collage. ONE sprite only. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "failed",
+  "attempts": 2,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T03:48:08.291331+00:00",
+  "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_03_v002__attempt_02.png",
+  "sha256": "046159c91c276221d2d041bdc08e595b833c7c2a1251891a33fb5fce923dde8b",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "up",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1247,
+      1261
+    ],
+    "source_bbox": [
+      303,
+      74,
+      1087,
+      1206
+    ],
+    "source_contact_x": 623.5,
+    "scale": 0.07039294306335203,
+    "native_bounds": [
+      25,
+      10,
+      80,
+      90
+    ],
+    "paste_position": [
+      25,
+      10
+    ]
+  },
+  "rejected_candidates": [
+    {
+      "output": "assets/characters/hero/map/up/hero_map_up_idle_03.png",
+      "sha256": "f037256278132fa51b93cc84d98b86478b31ae50c0f6dfce6e836005d4bdbcda",
+      "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_03__attempt_01.png",
+      "reason": "Source comparison: rear mantle missing, front necklace shown on back, tattoo on wrong arm and front-facing toes in up view"
+    }
+  ],
+  "last_error": "Source comparison: rear mantle missing, front necklace shown on back, tattoo on wrong arm and front-facing toes in up view",
+  "rejection_reason": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
+}

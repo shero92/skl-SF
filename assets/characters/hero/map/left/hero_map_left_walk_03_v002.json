@@ -1,0 +1,84 @@
+{
+  "id": "CHAR001_map_left_walk_03",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "walk",
+  "direction": "left",
+  "frame": 3,
+  "output": "assets/characters/hero/map/left/hero_map_left_walk_03_v002.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: precise-object-edit. Edit the ONE supplied transparent hero sprite to produce exactly one new animation frame: CHAR001_map_left_walk_03, left facing, walk frame 03. The edit target already embodies the original poster identity. Preserve exact canvas, camera, face, hair silhouette, head position, torso, costume patterns, ornaments, palette, weapon hand and body proportions. Do not redraw or redesign these protected regions. Change only limbs and secondary cloth motion as necessary: CHANGE THE LEG POSE for the mandatory gait instruction below; make the anatomical stride change clearly visible. Keep full sprite and weapon visible; preserve real transparency. Original handcrafted pixel style and native 96x96 logical grid. No text, floor, shadow, extra limbs, extra figure, sheet or collage. ONE sprite only. FINAL GAIT POSE OVERRIDE: REVERSE the contact legs: near visible leg stretched RIGHT, far leg stretched LEFT, opposite wide stride. Foot alternation and changing leg silhouette are mandatory; do not return another standing pose or repeat the same forward leg across every frame. Keep face, torso and costume identity unchanged. Foreground knee moves RIGHT of the hip; foreground boot goes to approximately x=70%, y=90% of canvas. Far boot goes to x=36%, y=90%. Reverse the legs from the input image. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "needs_review",
+  "attempts": 2,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T12:48:34.823466+00:00",
+  "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_03_v002__attempt_02.png",
+  "sha256": "39adcc0ffe95e844acc28bcc4e98af1dc20d70e5ef03ac4e0c88ca34bc2d992e",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "left",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      89,
+      63,
+      1195,
+      1174
+    ],
+    "source_contact_x": 672.9267515923567,
+    "scale": 0.06849785407725321,
+    "native_bounds": [
+      8,
+      14,
+      84,
+      90
+    ],
+    "paste_position": [
+      8,
+      14
+    ]
+  },
+  "rejected_candidates": [
+    {
+      "output": "assets/characters/hero/map/left/hero_map_left_walk_03.png",
+      "sha256": "0215e782f92f896a88c13817bcb7ac5fa4c314b0536a3e4e32aa19ceeb09b656",
+      "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_03__attempt_01.png",
+      "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+    }
+  ],
+  "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+}

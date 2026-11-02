@@ -1,0 +1,184 @@
+{
+  "attack_id": "hero_golden_cyclone",
+  "runtime_alias": "golden_cyclone",
+  "status": "planned_unverified",
+  "camera": "HERO_REAR_3Q fixed camera; orientations change through independently illustrated body poses",
+  "rotation": "Clockwise body rotation through 005–014; validate angular continuity from actual frames before export",
+  "timing_ms": 1500,
+  "impact_frame": 17,
+  "impact_ms": 930,
+  "hitstop_ms": 70,
+  "hitstop_included": true,
+  "frames": [
+    {
+      "frame_id": "hero_golden_cyclone_001",
+      "phase": "anticipation",
+      "duration_ms": 100,
+      "description": "Three-quarter rear to upper-left, slight knee bend and subtle clockwise coil; empty right fist by right waist."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_002",
+      "phase": "anticipation",
+      "duration_ms": 80,
+      "description": "Same rear camera, pelvis lowers by four percent of body height, deeper knee flex and right fist draws inward."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_003",
+      "phase": "anticipation",
+      "duration_ms": 70,
+      "description": "Same rear camera; hips load right leg, shoulders wind further opposite forthcoming clockwise spin, left hand crosses nearer center."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_004",
+      "phase": "anticipation",
+      "duration_ms": 90,
+      "description": "Lowest coiled anticipation, left heel begins lifting, right leg loaded; cloth has delayed countertwist."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_005",
+      "phase": "rotation_buildup",
+      "duration_ms": 65,
+      "description": "Rear-right rotation buildup, empty right grip outward, plain right upper arm; corrected independent candidate."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_006",
+      "phase": "rotation_buildup",
+      "duration_ms": 55,
+      "description": "Further clockwise toward right side, pivot foot drives motion, plain right arm and left arm mostly occluded."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_007",
+      "phase": "rotation_buildup",
+      "duration_ms": 50,
+      "description": "Right profile, waist-height empty-grip arc, left foot crossing around right pivot, cape lagging."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_008",
+      "phase": "rotation_buildup",
+      "duration_ms": 50,
+      "description": "Front-right three-quarter transition, shell necklace and chest become visible, original face and costume."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_009",
+      "phase": "full_spin",
+      "duration_ms": 45,
+      "description": "Front facing during full spin, clear face and chest, marked anatomical left arm on screen-right."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_010",
+      "phase": "full_spin",
+      "duration_ms": 45,
+      "description": "Front-left three-quarter, shoulders follow hips, right empty grip sweeps across body."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_011",
+      "phase": "full_spin",
+      "duration_ms": 45,
+      "description": "Left profile, left marked upper arm near side, right gripping arm on far side."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_012",
+      "phase": "full_spin",
+      "duration_ms": 45,
+      "description": "Rear-left transition approaching original target direction, cape trailing."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_013",
+      "phase": "full_spin",
+      "duration_ms": 45,
+      "description": "Rear-left three-quarter, nearly aligned with upper-left target, stabilizing pivot."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_014",
+      "phase": "full_spin",
+      "duration_ms": 45,
+      "description": "Original rear-three-quarter target-facing restored, foot ready to plant for strike."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_015",
+      "phase": "powerful_strike",
+      "duration_ms": 55,
+      "description": "Return to three-quarter rear target-facing, plant forward foot firmly, hips transfer spin momentum into diagonal strike."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_016",
+      "phase": "powerful_strike",
+      "duration_ms": 45,
+      "description": "Accelerating diagonal empty-grip arm sweep toward upper-left, front knee bent, rear leg braced, shoulders unwind."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_017",
+      "phase": "powerful_strike",
+      "duration_ms": 80,
+      "description": "Maximum strike-contact silhouette: right empty fist extended in credible sword-grip trajectory, not punch; hips and shoulder lead."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_018",
+      "phase": "powerful_strike",
+      "duration_ms": 70,
+      "description": "Follow-through with right hand continuing downward across torso, torso rotation decelerates, feathers trail."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_019",
+      "phase": "recovery",
+      "duration_ms": 90,
+      "description": "Low stable recovery, knee absorbs torque, right fist lowers safely, left arm balances."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_020",
+      "phase": "recovery",
+      "duration_ms": 100,
+      "description": "First settling step toward original stance, opposite foot visibly lifted, no teleport or slide."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_021",
+      "phase": "recovery",
+      "duration_ms": 110,
+      "description": "Second settling step, shoulders square toward upper-left, scarf and cape settle, right fist returns to guard."
+    },
+    {
+      "frame_id": "hero_golden_cyclone_022",
+      "phase": "recovery",
+      "duration_ms": 120,
+      "description": "Recovered three-quarter rear guard closely matches frame 001 in anatomy, ground contact and facing; newly drawn independent output."
+    }
+  ],
+  "vfx": [
+    {
+      "id": "golden_spinning_arc",
+      "space": "weapon_socket",
+      "anchor": "measured weapon trajectory"
+    },
+    {
+      "id": "golden_energy_ring",
+      "space": "world",
+      "anchor": "character_ground_anchor"
+    },
+    {
+      "id": "golden_motion_trail",
+      "space": "world",
+      "anchor": "previous sword-tip world positions"
+    },
+    {
+      "id": "golden_impact_sparks",
+      "space": "world",
+      "anchor": "defender contact point"
+    },
+    {
+      "id": "golden_final_flash",
+      "space": "world",
+      "anchor": "defender contact point"
+    },
+    {
+      "id": "cyclone_ground_dust",
+      "space": "world",
+      "anchor": "planted foot / ground anchor"
+    }
+  ],
+  "constraints": [
+    "No embedded weapons or VFX in body sources",
+    "No generated sheet cropping",
+    "No per-pose auto-fit scaling",
+    "Weapon anchors require actual measurement and Godot validation"
+  ]
+}

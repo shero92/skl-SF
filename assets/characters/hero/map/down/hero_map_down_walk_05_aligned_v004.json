@@ -1,0 +1,88 @@
+{
+  "id": "CHAR001_map_down_walk_05",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "walk",
+  "direction": "down",
+  "frame": 5,
+  "output": "assets/characters/hero/map/down/hero_map_down_walk_05_aligned_v004.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: identity-preserve. Input 1 is the EDIT TARGET: the established first frame of this exact direction. Input 2 is the original identity poster. Input 3 is the native scale reference. EDIT the target to create the requested NEXT animation frame. Preserve exact canvas, camera, head silhouette, face, hair pixels, accessory placement, palette, body proportions and ground-contact baseline. For IDLE change only tiny breathing/cloth movement, keep both feet and head fixed. For WALK change only the legs/arms and secondary cloth motion for the requested gait phase, keep the same face/head/body design. Do not redesign or change costume, face or ornaments. Use case: stylized-concept. ONE isolated production pixel-art map image, CHAR001 Hero, walk, frame 05. Input 2 is the STRICT original character identity poster: extract design identity only, do not copy poster composition, captions or other views. Preserve brown tousled hair, blue eyes, blue and cream layered coastal clothes, shell necklace, coral ornaments, blue arm markings, decorated sword, sandals. front facing viewer toward bottom edge. right supporting, left foot passing. Premium handcrafted crisp pixel clusters, restrained coherent palette, clean outlines, no blur, antialiasing or painterly rendering. Square-grid player-facing elevated 3/4 RPG map camera; readable compact proportions and silhouette compatible with 64x64 floor grid. Target native canvas 96x96, transparent RGBA. Design the pixels at native scale; if larger renderer output is needed use integer-enlarged native pixel blocks. Preserve full silhouette, head, weapon, feet with no clipping. Ground contact anchor [48, 90]; leave margins. Warm upper-left light. Additional reference is same-character prior frame for identical scale/costume only; CHANGE limbs and secondary motion as requested, never duplicate a static pose. No floor, cast shadow, background, poster, border, text, labels, collage, sprite sheet, multiple poses, extra character, or checkerboard. Exactly ONE image of this single asset/frame. CRITICAL NATIVE SPRITE DESIGN: use the compact MAP SPRITES at the TOP RIGHT of the original reference as proportion guide, NOT the tall key art. This is a small RPG MAP sprite with a large readable head, exactly 3 heads tall overall, short stout torso, short legs, unmistakable blue eyes and chunky hair clusters. NOT realistic adult proportions, not a full illustration shrunk down. Design on an underlying 96x96 logical pixel grid, individual clusters 1-3 native pixels; enlarge those exact pixel blocks if renderer outputs larger. Occupied character body height about 78 native pixels, head about 25 native pixels. Head and feet both readable. Camera elevated 3/4, show top of head. The requested facing MUST be unambiguous.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "failed",
+  "attempts": 1,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T03:09:12.391376+00:00",
+  "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_05__attempt_01.png",
+  "sha256": "42adae1302ba3fa54a4fa535d4f4787273f716c2c1383640fb0b43217aecaae5",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "down",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      204,
+      81,
+      967,
+      1177
+    ],
+    "source_contact_x": 660.9458598726114,
+    "scale": 0.07294332723948811,
+    "native_bounds": [
+      15,
+      10,
+      71,
+      90
+    ],
+    "paste_position": [
+      15,
+      10
+    ]
+  },
+  "previous_native_candidates": [
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_05.png",
+      "sha256": "adc289b1f8cbc100ddc42069c5aab6f9e6724487c16c8b7a633d01f56c66d80a",
+      "reason": "Previous bounding-box center anchor replaced by measured foot contact"
+    },
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_05_aligned_v001.png",
+      "sha256": "0d34500bf90dab7a523cec14a61d1d5286c75485248312555add2ea5c2a6a2cb",
+      "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
+    }
+  ],
+  "rejection_reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+}

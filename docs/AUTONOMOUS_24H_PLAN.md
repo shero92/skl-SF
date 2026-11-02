@@ -32,8 +32,8 @@ First runnable tasks: **0075, 0079** (no dependencies, no shared files). The run
 Scope note: `tools/runner_safety.py` now also allows `scenes/battle/` and `game_factory/battle/` (battle-only new files). Characters, UI, portraits and gameplay folders stay forbidden, and so do images/art.
 
 ## Art still missing (owned by Codex / graphics pipeline, not Aider)
-- Hero rear 3/4 attack frames (ART-0026, TASK-0072) - needs_review.
-- Golden Cyclone body frames 014-022 and separate effects (ART-0027, TASK-0074); weapon anchors and final GIF unconfirmed.
+- Hero rear 3/4 attack frames (ART-0028, TASK-0072) - needs_review.
+- Golden Cyclone body frames 014-022 and separate effects (ART-0029, TASK-0074); weapon anchors and final GIF unconfirmed.
 - Hero front-view hit/block frames and monster rear/attack frames: no request found; open one before TASK-0082 can show final visuals (it only reports MISSING_*_ART until then).
 
 ## Prerequisites before unattended execution (checked 2026-11-02)

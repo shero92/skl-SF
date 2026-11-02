@@ -1,0 +1,62 @@
+{
+  "id": "CHAR001_weaponless_attack_execute_01",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "battle",
+  "state": "attack_execute",
+  "frame": 1,
+  "direction": "",
+  "status": "needs_review",
+  "attempts": 1,
+  "pose_reference": "assets/characters/hero/battle/attack_execute/sources/hero_battle_attack_execute_01__attempt_01.png",
+  "output": "assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v2.png",
+  "target_dimensions": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "approval_status": "pending",
+  "prompt": "Use case: precise-object-edit. Output exactly ONE transparent pixel-art Hero battle body frame: CHAR001_weaponless_attack_execute_01. Input 1 is the POSE EDIT TARGET: preserve its exact dynamic swordsman anatomy, torso rotation, limb positions, ground baseline, head size and camera. Inputs 2 and 3 are OWNER-APPROVED MASTER DESIGN/COLOR references; their balanced subdued colors and detailed pixel rendering override the pose target's oversaturated colors. Input 4 is the locked material palette. Do not copy the pose target's excess electric blue or scarlet feathers. Preserve broad CREAM/WHITE feather bands, muted teal/navy bands, only sparse coral-red accents, olive accents, warm brown pants, chestnut hair, warm skin, rope belt and ochre gold. Same warm upper-left lighting. Material ramps: hair: #65311e,#924925,#e38d4d; skin: #faa965,#fbab66,#fcae6a; scarf_blue: #17374a,#295267,#3f7282; feather_blue: #19374d,#234c66,#316480; feather_red: #7e2618,#b84326,#d47238; feather_cream: #9a7c59,#c79d71,#f1c99c; feather_white: #424340,#70756c,#fdfcf3; feather_olive: #686548,#a6a371,#d9d487; pants_brown: #4b362d,#8b5e42,#dba578; leather: #4b3329,#815535,#d19354; rope: #9e6032,#c98342,#efb165; gold_ornaments: #85542d,#c3884c,#f4c787; shell_accessories: #eabd96,#fad4aa,#fdedd2; outlines: #0b0607,#1a1313,#282120. Correct the pose target WITHOUT redesigning the costume or face.\nCRITICAL: REMOVE THE ENTIRE EQUIPPED WEAPON from the CHARACTER BODY. No blade, hilt, guard, handle, pommel, shield or fake translucent weapon. The anatomical RIGHT hand is EMPTY but naturally curled in a firm cylindrical SWORD GRIP, thumb and fingers reconstructed cleanly. Preserve the original wrist and arm trajectory of a swordsman swinging a separately attached sword, not punching. No open flat right palm, damaged fingers or erased holes through the body. Left balancing hand follows the original pose. Blue arm marking stays on anatomical LEFT arm, never mirrored.\nAction phase: begin forward swing of original decorated sword. If this phase lacks an original target, use the master identity and draw that recovery pose in the same camera. ONE frame only, full body, right-facing three-quarter combat view. Keep body placement and size identical to input pose; stable two-foot baseline. At least 3 percent transparent margins; all fingers and feet fully visible. Native design 256x256, crisp pixel clusters, no smoothing. True transparent RGBA. No floor/shadow, text, poster, collage, effects, extra poses or extra characters. No weapon of any kind embedded in this body image. ABSOLUTE EMPTY-HAND CHECK: remove ALL remaining brown or gold objects protruding from either side of the gripping hand, including wooden handle remnants. Do not mistake the old sword handle for a belt strap. A clean curled hand with a small empty grip aperture is required. No object crosses the fist. FRAMING OVERRIDE: if the pose reference touches an edge, translate the WHOLE figure horizontally to center the complete silhouette at unchanged body size, and reconstruct the complete fingertips. Never crop a balancing hand. Leave at least 5 percent transparent margin on both sides.",
+  "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_execute_01__weaponless_v2__attempt_01.png",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      165,
+      110,
+      1205,
+      1206
+    ],
+    "source_contact_x": 686.904458598726,
+    "scale": 0.15812148847418286,
+    "native_bounds": [
+      45,
+      67,
+      209,
+      240
+    ],
+    "paste_position": [
+      45,
+      67
+    ]
+  },
+  "sha256": "865fbc18e75a757e6ecd638d411cae28060c459e99c7335237c928598a363706",
+  "pixel_dimensions": [
+    256,
+    256
+  ],
+  "orientation": "right",
+  "layer": "body",
+  "weapon_embedded": false,
+  "weaponless_visual_check": "pending",
+  "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
+  "pose_reference_sha256": "da4da5844b99b0b4e5f9beb51f189fbbfec5319feb496c23d986dad014a71ce3",
+  "anchor_review": "pending_manual_grip_annotation"
+}
