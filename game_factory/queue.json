@@ -27,7 +27,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 2,
       "validation_result": {
         "png": true,
@@ -41,7 +41,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:00:43.060097+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_idle_01_v002__attempt_02.png",
       "sha256": "221e63ac06804245797e5674dd549cd74d3326d346a6d9bef33f4f94dcccca78",
@@ -94,7 +94,12 @@
         96,
         96
       ],
-      "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f"
+      "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_idle_02",
@@ -116,7 +121,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -130,7 +135,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:02:24.333283+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_idle_02__attempt_01.png",
       "sha256": "b7786834f157e7df5f4b213dae416b79f7670df811c46979da667559507ba0f9",
@@ -176,7 +181,12 @@
         96,
         96
       ],
-      "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f"
+      "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_idle_03",
@@ -198,7 +208,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -212,7 +222,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:03:09.545309+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_idle_03__attempt_01.png",
       "sha256": "8ca8cb7860481c9ff0f83ee3a29d99bb1b491eafce55917348214fa32fb8a4cd",
@@ -263,7 +273,12 @@
           "sha256": "e17fc7c08f9fb69e76ad31353f7c2e213f33f1453081286a712f7613001ea359",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_idle_04",
@@ -285,7 +300,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -299,7 +314,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:04:34.298984+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_idle_04__attempt_01.png",
       "sha256": "96d138e76678b8606f54ec6d164373cda684f362c527038b2cbfd120cfdd966d",
@@ -350,7 +365,12 @@
           "sha256": "45be96f9e79a8f4dcf1cb4c32396962659792ed68614db2a9decfdead6d4d18e",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_walk_01",
@@ -372,7 +392,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -386,7 +406,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:05:22.208574+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_01__attempt_01.png",
       "sha256": "ca38d1c5aee46a3b060fb872ad217a215a8bc332aaabe46cb963fe4a875c6945",
@@ -437,7 +457,12 @@
           "sha256": "ef4d069b609cbed8dd2c324e1401fd784b1e4e2cd5097e8166ce0a5666192a44",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_walk_02",
@@ -459,7 +484,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -473,7 +498,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:06:08.949858+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_02__attempt_01.png",
       "sha256": "ba4a3881dd86a1f1b0e86faaad71b0b420061e0eabba137c25b33a4568d035bc",
@@ -524,7 +549,12 @@
           "sha256": "f20e60969ca6dfc8a1f1308d39faf82e920aba71d85e71c7cd228d11e1785bbf",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_walk_03",
@@ -546,7 +576,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 2,
       "validation_result": {
         "png": true,
@@ -560,7 +590,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T12:45:32.418182+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_03_v002__attempt_02.png",
       "sha256": "dd93d0bbdfc18f562ad71cc762b4b2464640e8ca85c43de88a5d798a3fc3e351",
@@ -620,7 +650,12 @@
           "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
         }
       ],
-      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_walk_04",
@@ -642,7 +677,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 2,
       "validation_result": {
         "png": true,
@@ -656,7 +691,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T12:46:38.822061+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_04_v002__attempt_02.png",
       "sha256": "d996a78091601464bf601be712b8600ab76d13fdcc912c5f8f69cfcd5b07f12b",
@@ -716,7 +751,12 @@
           "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
         }
       ],
-      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_walk_05",
@@ -738,7 +778,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 2,
       "validation_result": {
         "png": true,
@@ -752,7 +792,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T12:47:28.449393+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_05_v002__attempt_02.png",
       "sha256": "6006022861a2bd47a5d6c3e041712ecbc6473e5938fdcd9e899916049678c1ab",
@@ -812,7 +852,12 @@
           "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
         }
       ],
-      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_down_walk_06",
@@ -834,7 +879,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -848,7 +893,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:10:55.280331+00:00",
       "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_06__attempt_01.png",
       "sha256": "01d926c91deec16b73d5867d987b0249ec96a76507ac680cb7f195bb7d1e4b86",
@@ -894,7 +939,12 @@
           "sha256": "52552e5b4e4d2515ee9920a2a9cfeff8a16a424b8769da28b2b88427c2203c44",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_left_idle_01",
@@ -916,7 +966,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -930,7 +980,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:11:47.168483+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_idle_01__attempt_01.png",
       "sha256": "f4aa104c5f9283c9ef2c8d6e6fec26d46c9ae27b1dd012c29d43c96f85d0bb1a",
@@ -976,7 +1026,12 @@
           "sha256": "2d782e857a471a96bc19be1e644b32a1dbbd0e626f02ef73eda848d3cd7a976a",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_left_idle_02",
@@ -998,7 +1053,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1012,7 +1067,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:13:14.832907+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_idle_02__attempt_01.png",
       "sha256": "afddb876918082107ba024d299a16983bf95adba89a1f78925a16aecee8f66f6",
@@ -1058,7 +1113,12 @@
           "sha256": "36f6b27ac39f62ed04455f88f045cae250688d4ff937c403675b995ba1865732",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_left_idle_03",
@@ -1080,7 +1140,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1094,7 +1154,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:14:23.127176+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_idle_03__attempt_01.png",
       "sha256": "358489bf92c8b7c9e531ba32ceb45187d9f5f78b3210bbea74ef01a68f7e4faf",
@@ -1140,7 +1200,12 @@
           "sha256": "8c28209fee9ab11d15c25d5f39605df27b7efa318b588e07dec00e391180afe6",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_left_idle_04",
@@ -1162,7 +1227,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1176,7 +1241,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:15:13.166318+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_idle_04__attempt_01.png",
       "sha256": "86357b1dfde02b5d6157a459b29baea84b03fd6e742ae9a2268b1d0ace5e0646",
@@ -1222,7 +1287,12 @@
           "sha256": "e8807ba741b096c674ffabfce64a947e85b698e663d89f513dff72b059f9fffb",
           "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
         }
-      ]
+      ],
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_left_walk_01",
@@ -1244,7 +1314,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1258,7 +1328,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:16:19.916318+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_01__attempt_01.png",
       "sha256": "a217dc3092abc5eed52fe2d02116c35d32c1aa2530654c1fcfd71c3b08b906b5",
@@ -1297,6 +1367,11 @@
           9,
           13
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -1319,7 +1394,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1333,7 +1408,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:22:05.555559+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_02__attempt_01.png",
       "sha256": "c7a6f552e9b21c7a8bb58510f0334d6714273898161d874596b0515cff27f4bc",
@@ -1372,6 +1447,11 @@
           13,
           11
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -1394,7 +1474,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 2,
       "validation_result": {
         "png": true,
@@ -1408,7 +1488,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T12:48:34.823466+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_03_v002__attempt_02.png",
       "sha256": "39adcc0ffe95e844acc28bcc4e98af1dc20d70e5ef03ac4e0c88ca34bc2d992e",
@@ -1456,7 +1536,12 @@
           "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
         }
       ],
-      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_left_walk_04",
@@ -1478,7 +1563,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 2,
       "validation_result": {
         "png": true,
@@ -1492,7 +1577,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T12:49:45.468115+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_04_v002__attempt_02.png",
       "sha256": "67a186c53a47785349a7a8a5da94fb76580a07f3921d2ac63359d0ee7ffd7457",
@@ -1540,7 +1625,12 @@
           "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
         }
       ],
-      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_left_walk_05",
@@ -1562,7 +1652,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 2,
       "validation_result": {
         "png": true,
@@ -1576,7 +1666,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T12:50:36.162021+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_05_v002__attempt_02.png",
       "sha256": "8e3cf58ffdf464d6a7640ddd07185465fc9952b94c859b4cbc3eea0fa918fc92",
@@ -1624,7 +1714,12 @@
           "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
         }
       ],
-      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+      "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_left_walk_06",
@@ -1646,7 +1741,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1660,7 +1755,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:26:19.178956+00:00",
       "source_png": "assets/characters/hero/map/left/sources/hero_map_left_walk_06__attempt_01.png",
       "sha256": "ee4d11c1390cdcbaff81f128a97f2d99365870850f0fae43013f1d6eecb73b2c",
@@ -1699,6 +1794,11 @@
           10,
           13
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -1721,7 +1821,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1735,7 +1835,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:26:52.205916+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_idle_01__attempt_01.png",
       "sha256": "9bceab7f9c142a3a8061eac53f842776aad031d8f4699519fba8480358b07c12",
@@ -1774,6 +1874,11 @@
           25,
           10
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -1796,7 +1901,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1810,7 +1915,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:27:40.715578+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_idle_02__attempt_01.png",
       "sha256": "99614ff4f759673a188a4588d8c549c100f96372537a237d1511e18da03525ac",
@@ -1849,6 +1954,11 @@
           25,
           10
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -1871,7 +1981,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1885,7 +1995,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:28:30.070919+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_idle_03__attempt_01.png",
       "sha256": "b2ab72f58a1fd2541676f068cd65b9a2ec9067e7abd32c81ce711401633ff0e1",
@@ -1924,6 +2034,11 @@
           25,
           10
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -1946,7 +2061,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -1960,7 +2075,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:29:32.895795+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_idle_04__attempt_01.png",
       "sha256": "2ebced99849daa80d28f3787a5819e97d5f0a6b1dd2136e6492fe28dc17f6ec5",
@@ -1999,6 +2114,11 @@
           25,
           10
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -2021,7 +2141,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -2035,7 +2155,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:31:01.190997+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_walk_01__attempt_01.png",
       "sha256": "21b7c2e285c344e6f6460c1c9bc877811815ff38f4b1ec1fa9c2611ec7b72b73",
@@ -2074,6 +2194,11 @@
           23,
           11
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -2096,7 +2221,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -2110,7 +2235,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:31:51.243687+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_walk_02__attempt_01.png",
       "sha256": "8030460c30bc76612e86c2afe2008958cd313c3f943fe7d9104b4ded5a203e82",
@@ -2149,6 +2274,11 @@
           25,
           11
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -2171,7 +2301,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -2185,7 +2315,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:32:57.701098+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_walk_03__attempt_01.png",
       "sha256": "b0faf96295dbe7cb9cf6d92e17d955029bed09c803d2c336b8c7ca37d5245433",
@@ -2224,6 +2354,11 @@
           23,
           11
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -2246,7 +2381,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -2260,7 +2395,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:33:46.434124+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_walk_04__attempt_01.png",
       "sha256": "0cd8b1f20aa43c2adac31bb22d8121eabeb71beb36abbf0c51513c7046a18de7",
@@ -2299,6 +2434,11 @@
           20,
           11
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -2321,7 +2461,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -2335,7 +2475,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:34:33.845156+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_walk_05__attempt_01.png",
       "sha256": "0a87e868d8a37a98a9e7a88211c8f642e6b74ca804356c2cab38fc2b7df4faf2",
@@ -2374,6 +2514,11 @@
           29,
           11
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -2396,7 +2541,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -2410,7 +2555,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:35:41.278178+00:00",
       "source_png": "assets/characters/hero/map/right/sources/hero_map_right_walk_06__attempt_01.png",
       "sha256": "3af20e087abe62cd9602884d961b6902b5c6b826d62c816d0f099bf47da1a7df",
@@ -2449,6 +2594,11 @@
           21,
           12
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -2471,7 +2621,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 4,
       "validation_result": {
         "png": true,
@@ -2485,7 +2635,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:52:45.826729+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_01_v004__attempt_04.png",
       "sha256": "cce13c5739d523938a2589b4a87fd9eddb8c9bbe0219a9740c1cbeb0adf8f89e",
@@ -2547,7 +2697,12 @@
       ],
       "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume",
       "max_attempts": 4,
-      "retry_limit_note": "Codex configuration: one bounded additional base-pose proportion refinement after native directional comparison; global default remains 3."
+      "retry_limit_note": "Codex configuration: one bounded additional base-pose proportion refinement after native directional comparison; global default remains 3.",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_up_idle_02",
@@ -2569,7 +2724,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 3,
       "validation_result": {
         "png": true,
@@ -2583,7 +2738,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:56:47.723774+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_02_v003__attempt_03.png",
       "sha256": "aa3e965edfe16e2e6b4fe3ae6879ad7572ddc66a040170f82a6274cd75b1b1f9",
@@ -2637,7 +2792,12 @@
           "reason": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
         }
       ],
-      "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
+      "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_up_idle_03",
@@ -2659,7 +2819,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 3,
       "validation_result": {
         "png": true,
@@ -2673,7 +2833,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:57:47.206573+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_03_v003__attempt_03.png",
       "sha256": "4bcc79a1f1150b5d7bceb82ee57770f5e77d586fc9bbd19ba23f40441d641f26",
@@ -2727,7 +2887,12 @@
           "reason": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
         }
       ],
-      "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
+      "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_up_idle_04",
@@ -2749,7 +2914,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 3,
       "validation_result": {
         "png": true,
@@ -2763,7 +2928,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:58:47.835180+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_04_v003__attempt_03.png",
       "sha256": "ec28e8afc27f57fbebe05470333cab02bca22999a5b61eb086348dcde96d776b",
@@ -2817,7 +2982,12 @@
           "reason": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
         }
       ],
-      "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
+      "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_up_walk_01",
@@ -2839,7 +3009,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 2,
       "validation_result": {
         "png": true,
@@ -2853,7 +3023,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T03:59:32.557829+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_walk_01_v002__attempt_02.png",
       "sha256": "5bdfe91b8d77fc076d86cb2813632e3c75b181ea0ad3744e75f95ae8a1241407",
@@ -2901,7 +3071,12 @@
           "reason": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
         }
       ],
-      "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
+      "last_error": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_map_up_walk_02",
@@ -2923,7 +3098,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -2937,7 +3112,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T04:00:35.511168+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_walk_02__attempt_01.png",
       "sha256": "e45250e5bfd393d6c825ac23f4d1ea1f4cf2cc96eaad5cfa2c7104a559950687",
@@ -2976,6 +3151,11 @@
           28,
           7
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -2998,7 +3178,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -3012,7 +3192,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T04:01:55.740664+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_walk_03__attempt_01.png",
       "sha256": "5762fe0b23eabaaf09e4744c374d22aa554854f9cd531416f97274a342a383b1",
@@ -3051,6 +3231,11 @@
           30,
           6
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -3073,7 +3258,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -3087,7 +3272,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T04:03:10.300365+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_walk_04__attempt_01.png",
       "sha256": "232a52355db66991ade78c034321ba8453a5a60571cb94519e111d010bdcb9ff",
@@ -3126,6 +3311,11 @@
           26,
           5
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -3148,7 +3338,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -3162,7 +3352,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T04:04:05.207456+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_walk_05__attempt_01.png",
       "sha256": "849553c2f735e079008f8927332f2a1bf810be17070d6a8418384166057143d8",
@@ -3201,6 +3391,11 @@
           25,
           7
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -3223,7 +3418,7 @@
         90
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -3237,7 +3432,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T12:43:11.717427+00:00",
       "source_png": "assets/characters/hero/map/up/sources/hero_map_up_walk_06__attempt_01.png",
       "sha256": "926284656fc9f0b85c7543334f8e74875ae66b63a7a008dfeec0ac3be3f4ff62",
@@ -3276,6 +3471,11 @@
           23,
           6
         ]
+      },
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
       }
     },
     {
@@ -3298,7 +3498,7 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -3312,7 +3512,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:00:47.518437+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_idle_ready_01__weaponless_v2__attempt_01.png",
       "sha256": "35a03a2bb896f79a0985f4e17dd1cd0d1e65f34b5aea208972ec7eefadcaac2a",
@@ -3368,7 +3568,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_idle_ready_01/attempt_01.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_idle_ready_01/attempt_01.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__idle_ready_02",
@@ -3516,7 +3721,7 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -3530,7 +3735,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:13:22.993654+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_step_01__weaponless_v2__attempt_01.png",
       "sha256": "c1af6d35ac532555be7da1b051a35d07e42c859f08e5cba1d42e2eaf811562d6",
@@ -3579,7 +3784,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_step_01/attempt_01.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_step_01/attempt_01.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__step_02",
@@ -3757,7 +3967,7 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -3771,7 +3981,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:17:36.432600+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_windup_01__weaponless_v3__attempt_02.png",
       "sha256": "8c4ae6a245c340d7b0e6b66980bd4f0d25dc5767629f7d2bcf44e91c9d38ad01",
@@ -3820,7 +4030,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_windup_01/attempt_02.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_windup_01/attempt_02.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_windup_02",
@@ -3842,10 +4057,10 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": null,
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:19:39.579900+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_windup_02__weaponless_v3__attempt_02.png",
       "sha256": "b482db9b86f7979daaf879ee88dbba7fde2d8f46f98f363b157ed2c15d3d6d1d",
@@ -3903,7 +4118,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_windup_02/attempt_02.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_windup_02/attempt_02.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_windup_03",
@@ -3925,7 +4145,7 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -3939,7 +4159,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:20:56.166329+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_windup_03__weaponless_v2__attempt_01.png",
       "sha256": "c7a8d72eba29fc0d41839b3e41f84a132ae103b465a432f93cd67443f962fd22",
@@ -3988,7 +4208,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_windup_03/attempt_01.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_windup_03/attempt_01.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_windup_04",
@@ -4010,10 +4235,10 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": null,
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:21:49.873501+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_windup_04__weaponless_v4__attempt_03.png",
       "sha256": "38945cb653416cbcfb7a1c1436ab1bf61d3525718c92d5d1807a5eb4aad19fc2",
@@ -4077,7 +4302,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_windup_04/attempt_03.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_windup_04/attempt_03.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_execute_01",
@@ -4099,7 +4329,7 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -4113,7 +4343,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:22:44.690610+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_execute_01__weaponless_v4__attempt_03.png",
       "sha256": "ee91565970ee830769c2cb952528ef39b334de688e2f8a4d0c75c2c698a10577",
@@ -4168,7 +4398,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_01/attempt_03.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_01/attempt_03.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_execute_02",
@@ -4190,10 +4425,10 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": null,
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:23:51.782414+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_execute_02__weaponless_v3__attempt_02.png",
       "sha256": "edee71c47b0a9b2cef303dce12a14ae335602895f42b589b652c44936672e712",
@@ -4257,7 +4492,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_02/attempt_02.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_02/attempt_02.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_execute_03",
@@ -4279,10 +4519,10 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": null,
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:24:47.258240+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_execute_03__weaponless_v3__attempt_02.png",
       "sha256": "22c5971947d84c215c3a92f153468c9e39e0ecbc5b96dd42cf4f0ef063ed78fa",
@@ -4346,7 +4586,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_03/attempt_02.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_03/attempt_02.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_execute_04",
@@ -4368,10 +4613,10 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": null,
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:25:39.389198+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_execute_04__weaponless_v3__attempt_02.png",
       "sha256": "9438a9c099cb6c1e78b4784d4d8852d206fce824096277ba5b96ef15b7a6b516",
@@ -4435,7 +4680,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_04/attempt_02.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_04/attempt_02.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_execute_05",
@@ -4457,7 +4707,7 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 1,
       "validation_result": {
         "png": true,
@@ -4471,7 +4721,7 @@
         "identity": "unapproved",
         "sequence": "unapproved"
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "started_at": "2026-10-31T13:26:32.722228+00:00",
       "source_png": "assets/characters/hero/battle/weaponless_v2/sources/hero_battle_attack_execute_05__weaponless_v3__attempt_02.png",
       "sha256": "10aa6eedabf8d62f8226a4b93aa2690013fe0a2fc937288d32a4086acab69acf",
@@ -4526,7 +4776,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_05/attempt_02.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_05/attempt_02.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__attack_execute_06",
@@ -4548,10 +4803,10 @@
         240
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 0,
       "validation_result": null,
-      "approval_status": "pending",
+      "approval_status": "approved",
       "superseded_body_candidates": [
         {
           "output": "assets/characters/hero/battle/attack_execute/hero_battle_attack_execute_06.png",
@@ -4597,7 +4852,12 @@
       "weapon_anchors": "game_factory/hero_correction/hero_weapon_anchors.json",
       "palette_reference": "game_factory/hero_correction/hero_battle_palette.json",
       "revision_provider": "builtin_image_gen",
-      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_06/attempt_01.json"
+      "generation_request": "game_factory/hero_correction/requests/CHAR001_weaponless_attack_execute_06/attempt_01.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_battle__cast_magic_01",
@@ -5484,7 +5744,7 @@
         158.166
       ],
       "transparent_background": true,
-      "status": "needs_review",
+      "status": "approved",
       "attempts": 0,
       "validation_result": {
         "png": true,
@@ -5492,7 +5752,7 @@
         "weapon_pivot": "manually_measured",
         "visual_approval": false
       },
-      "approval_status": "pending",
+      "approval_status": "approved",
       "source_png": "assets/weapons/swords/sources/wpn_hero_basic_sword_v001__source.png",
       "sha256": "a49bd079bba18671abb8f8ab0fcec3fcb273785bd26f0989e8610e06b66b8a48",
       "pixel_dimensions": [
@@ -5500,7 +5760,12 @@
         192
       ],
       "equipment_asset_id": "WPN_HERO_BASIC_SWORD",
-      "orientation": "up"
+      "orientation": "up",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+      }
     },
     {
       "id": "CHAR001_details__shell_pendant_01",

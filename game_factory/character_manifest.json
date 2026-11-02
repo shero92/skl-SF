@@ -189,7 +189,7 @@
       "portraits": {},
       "turnaround": {},
       "details": {},
-      "approval_status": "pending",
+      "approval_status": "approved",
       "production_complete": false,
       "character_role": "swordsman",
       "ui": {},
@@ -317,7 +317,7 @@
         "battle_attack_windup": false,
         "battle_attack_execute": false
       },
-      "animation_quality_approval": "pending_visual_sequence_review",
+      "animation_quality_approval": "owner_approved_existing_frames_2026-11-02",
       "color_palette": [
         "#f8b878",
         "#180808",
@@ -339,7 +339,13 @@
       "equipment_profile": "sword",
       "battle_body_policy": "no_embedded_equipment",
       "weapon_attachment_metadata": "res://game_factory/hero_correction/hero_weapon_anchors.json",
-      "battle_palette_reference": "res://game_factory/hero_correction/hero_battle_palette.json"
+      "battle_palette_reference": "res://game_factory/hero_correction/hero_battle_palette.json",
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing images only (no new generation); frames not yet produced stay pending"
+      },
+      "map_frame_equipment_note": "map sprites carry the sword as drawn; battle bodies are weaponless (battle_body_policy)"
     },
     {
       "character_id": "CHAR002",
@@ -393,7 +399,7 @@
       "portraits": {},
       "turnaround": {},
       "details": {},
-      "approval_status": "pending",
+      "approval_status": "reference_only",
       "production_complete": false,
       "character_role": "mounted_lancer",
       "ui": {},
@@ -431,7 +437,13 @@
       "equipment_profile": "spear",
       "battle_body_policy": "no_embedded_equipment",
       "weapon_attachment_metadata": null,
-      "battle_palette_reference": null
+      "battle_palette_reference": null,
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing images only (no new generation); frames not yet produced stay pending",
+        "note": "only design reference images exist for this character; no sprite frames"
+      }
     },
     {
       "character_id": "CHAR003",
@@ -485,7 +497,7 @@
       "portraits": {},
       "turnaround": {},
       "details": {},
-      "approval_status": "pending",
+      "approval_status": "reference_only",
       "production_complete": false,
       "character_role": "creature_companion",
       "ui": {},
@@ -523,7 +535,13 @@
       "equipment_profile": "natural",
       "battle_body_policy": "no_embedded_equipment",
       "weapon_attachment_metadata": null,
-      "battle_palette_reference": null
+      "battle_palette_reference": null,
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing images only (no new generation); frames not yet produced stay pending",
+        "note": "only design reference images exist for this character; no sprite frames"
+      }
     },
     {
       "character_id": "CHAR004",
@@ -577,7 +595,7 @@
       "portraits": {},
       "turnaround": {},
       "details": {},
-      "approval_status": "pending",
+      "approval_status": "reference_only",
       "production_complete": false,
       "character_role": "sea_melee_fighter",
       "ui": {},
@@ -615,7 +633,13 @@
       "equipment_profile": "melee_reference_pending",
       "battle_body_policy": "no_embedded_equipment",
       "weapon_attachment_metadata": null,
-      "battle_palette_reference": null
+      "battle_palette_reference": null,
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing images only (no new generation); frames not yet produced stay pending",
+        "note": "only design reference images exist for this character; no sprite frames"
+      }
     },
     {
       "character_id": "CHAR005",
@@ -669,7 +693,7 @@
       "portraits": {},
       "turnaround": {},
       "details": {},
-      "approval_status": "pending",
+      "approval_status": "reference_only",
       "production_complete": false,
       "character_role": "nature_caster",
       "ui": {},
@@ -707,7 +731,13 @@
       "equipment_profile": "staff",
       "battle_body_policy": "no_embedded_equipment",
       "weapon_attachment_metadata": null,
-      "battle_palette_reference": null
+      "battle_palette_reference": null,
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing images only (no new generation); frames not yet produced stay pending",
+        "note": "only design reference images exist for this character; no sprite frames"
+      }
     },
     {
       "character_id": "CHAR006",
@@ -761,7 +791,7 @@
       "portraits": {},
       "turnaround": {},
       "details": {},
-      "approval_status": "pending",
+      "approval_status": "reference_only",
       "production_complete": false,
       "character_role": "archer",
       "ui": {},
@@ -799,7 +829,13 @@
       "equipment_profile": "bow",
       "battle_body_policy": "no_embedded_equipment",
       "weapon_attachment_metadata": null,
-      "battle_palette_reference": null
+      "battle_palette_reference": null,
+      "owner_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-02",
+        "scope": "existing images only (no new generation); frames not yet produced stay pending",
+        "note": "only design reference images exist for this character; no sprite frames"
+      }
     }
   ]
 }
