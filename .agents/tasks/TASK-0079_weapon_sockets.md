@@ -4,7 +4,7 @@ status: done
 owner: aider
 agent: aider
 priority: normal
-branch: none
+branch: aider/task-0079
 depends_on: none
 issue: none
 art_request: none
