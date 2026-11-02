@@ -40,5 +40,5 @@ ref = json.loads((ROOT / "map_factory/rooms/reference_room_layout.json").read_te
 ref.update({"map_id": f"procedural_room_{seed}", "title": f"Procedural room seed {seed}", "seed": seed, "objects": objs})
 ref["shadows"]["glow_owners"] = [o["object_id"] for o in objs if o["asset_id"] in ("L01", "L04", "L03")]
 out = ROOT / f"map_factory/rooms/procedural_room_{seed}.json"
-out.write_text(json.dumps(ref, indent=1) + "\n", encoding="utf-8")
+out.write_text(json.dumps(ref, indent=1) + "\n", encoding="utf-8", newline="\n")
 print("wrote", out, len(objs), "objects")

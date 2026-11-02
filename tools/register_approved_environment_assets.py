@@ -73,9 +73,9 @@ def main() -> None:
         rec["approval"] = APPROVAL
         meta["approval_status"] = "approved"
         meta["approval"] = APPROVAL
-        side.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        side.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     manifest["new_asset_status"] = "approved_by_owner_2026-10-31"
-    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     out = ROOT / "map_factory" / "metadata" / "environment_assets_approved.json"
     out.write_text(json.dumps({
         "schema": "skl.environment_assets.v1",
@@ -83,7 +83,7 @@ def main() -> None:
         "count": len(registry),
         "approval": APPROVAL,
         "assets": registry,
-    }, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    }, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     print(f"registered {len(registry)} assets -> {out}")
 
 

@@ -245,7 +245,7 @@ def main():
         "approval": V1["approval"],
         "visual_bounds_note": "[x0,y0,x1,y1] alpha>40 bounding box in sprite pixels",
         "assets": out,
-    }, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    }, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     flagged = [k for k, e in out.items() if "art_mismatch" in e]
     print(f"registry v2: {len(out)} assets; art mismatches: {flagged}")
 

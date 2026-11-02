@@ -121,5 +121,5 @@ layout = {
     "objects": objs,
 }
 out = ROOT / "map_factory/rooms/reference_room_layout.json"
-out.write_text(json.dumps(layout, indent=1) + "\n", encoding="utf-8")
+out.write_text(json.dumps(layout, indent=1) + "\n", encoding="utf-8", newline="\n")
 print("wrote", out, len(objs), "objects")
