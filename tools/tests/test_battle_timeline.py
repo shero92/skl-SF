@@ -16,7 +16,19 @@ if str(TOOLS) not in sys.path:
 from battle_godot_harness import run_godot
 
 
+def _configured_godot_exists() -> bool:
+    config = TOOLS.parent / ".agents/planner/config.json"
+    try:
+        path = json.loads(config.read_text(encoding="utf-8")).get("godot_executable")
+    except (OSError, ValueError):
+        return False
+    return isinstance(path, str) and Path(path).is_file()
+
+
 class BattleTimelineTests(unittest.TestCase):
+    # The Python-only CI job has no Godot at the owner's configured path; the harness
+    # contracts below still run everywhere, and this check runs wherever Godot exists.
+    @unittest.skipUnless(_configured_godot_exists(), "configured godot_executable is not installed here")
     def test_headless_timeline(self):
         code, output = run_godot("res://tools/verify_battle_timeline.gd")
         self.assertEqual(code, 0, output)
