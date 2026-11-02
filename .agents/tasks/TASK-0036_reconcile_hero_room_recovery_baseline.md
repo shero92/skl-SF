@@ -1,6 +1,6 @@
 ---
 id: TASK-0036
-status: review
+status: done
 owner: codex
 branch: codex/hero-recovery-baseline
 agent: codex
@@ -39,3 +39,5 @@ Owner explicitly authorized the recovery plan in this session. This is a supervi
 - Next: PR checks, then current-version capture implementation.
 
 - Validation: `py -3 tools/run_tests.py --changed --kind python`: 21/21 suites passed, including registry/workflow/planner checks.
+
+- Merged PR #32: 3b787b14945e1c7f087d4f79a6d893db6ddf039b; all PR checks passed.
