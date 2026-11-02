@@ -1,0 +1,41 @@
+{
+  "asset_id": "G02",
+  "asset_name": "lightly_weathered_sandstone_floor_tile",
+  "title": "Lightly Weathered Sandstone Floor Tile",
+  "category": "floor",
+  "layer_type": "ground",
+  "identity": "G02",
+  "native_width": 64,
+  "native_height": 64,
+  "footprint_tiles_x": 1,
+  "footprint_tiles_y": 1,
+  "orientation": "default",
+  "anchor_x": 0,
+  "anchor_y": 0,
+  "transparent_background": false,
+  "details": "Lightly Weathered Sandstone Floor Tile. Match the corresponding element in the original room reference; isolate only this named part.",
+  "specification_status": "owner_size",
+  "filename": "floor/G02__floor__lightly_weathered_sandstone_floor_tile__default__1x1__64x64.png",
+  "sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca",
+  "generation_status": "completed",
+  "approval_status": "approved",
+  "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request",
+  "reference_assets_used": [
+    {
+      "role": "approved_floor",
+      "asset_id": "G02",
+      "path": "map_factory/references/approved/G02_lightly_weathered_sandstone_64.png",
+      "sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    }
+  ],
+  "prompt_used": "Existing owner-approved asset; no generation",
+  "notes": "Imported byte-for-byte",
+  "source_metadata_path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\metadata\\G02__default.json",
+  "source_native_path": "H:\\shining force\\skl-SF\\.worktrees\\TASK-0069-asset-factory\\assets_generated\\approved\\G02__floor__lightly_weathered_sandstone_floor_tile__default__1x1__64x64.png",
+  "approval": {
+    "approved_by": "owner",
+    "approved_on": "2026-10-31",
+    "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms"
+  }
+}

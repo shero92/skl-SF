@@ -269,6 +269,59 @@ class CoordinatedBudgetTests(unittest.TestCase):
                 ar.validate_with_repair(Path("."),{},[],"codex","TASK-0001",100)
             session.assert_not_called()
 
+    def test_codex_session_preflights_and_configures_scoped_file_bridge(self):
+        import json
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp:
+            work=Path(tmp)
+            task=work/".agents/tasks/TASK-0001_task.md"
+            task.parent.mkdir(parents=True)
+            task.write_text(TASK.format(status="in_progress"),encoding="utf-8")
+            (work/"AGENTS.md").write_text("contract\n",encoding="utf-8")
+            seen={}
+            def fake_cli(argv,cwd=None,**kwargs):
+                seen["argv"],seen["prompt"]=argv,kwargs["input"]
+                return subprocess.CompletedProcess(argv,0,""," ")
+            with patch.object(ar,"execute",fake_cli):
+                ar.sanitized_session("codex",work,"TASK-0001",10)
+            argv=seen["argv"]
+            self.assertEqual(argv[:3],["codex","exec","--sandbox"])
+            self.assertNotIn("danger-full-access",argv)
+            args=json.loads(next(a for a in argv if a.startswith("mcp_servers.task_files.args=")).split("=",1)[1])
+            self.assertIn("tools/x.py",args[args.index("--touches")+1])
+            self.assertIn("task_files MCP tools",seen["prompt"])
+            self.assertIn("No shell commands",seen["prompt"])
+            (work/"AGENTS.md").unlink()
+            with patch.object(ar,"execute") as launch:
+                with self.assertRaisesRegex(RuntimeError,"file bridge unavailable: .*could not read"):
+                    ar.sanitized_session("codex",work,"TASK-0001",10)
+                launch.assert_not_called()
+
+    def test_codex_reason_is_last_sanitized_agent_message(self):
+        import json
+        with tempfile.TemporaryDirectory() as tmp:
+            log=Path(tmp)/"codex.jsonl"
+            events=[{"type":"item.completed","item":{"type":"agent_message","text":"first"}},
+                    {"type":"item.completed","item":{"type":"agent_message",
+                     "text":"No file tool\nat C:\\Users\\me\\x key sk-abcdefghijklmnop"}}]
+            log.write_text("garbage\n"+"".join(json.dumps(e)+"\n" for e in events),encoding="utf-8")
+            reason=ar.codex_reason(log)
+        self.assertEqual(reason,"No file tool at [redacted] key [redacted]")
+        self.assertEqual(ar.codex_reason(Path("missing.jsonl")),"")
+
+    def test_test_failure_keeps_full_log_and_reports_location_and_reason(self):
+        from unittest.mock import patch
+        proc=subprocess.CompletedProcess([],1,"FAIL: test_bad_case (suite.TestCase)\n  File \"tools/tests/test_bad.py\", line 42\nAssertionError: expected value\nfull diagnostic tail\n","")
+        ok=subprocess.CompletedProcess([],0,"all passed\n","")
+        task={"id":"TASK-0001","test":"py -3 -m unittest"}
+        with tempfile.TemporaryDirectory() as tmp, patch.object(ar,"execute",side_effect=[proc,ok]):
+            with self.assertRaisesRegex(RuntimeError,r"FAIL: test_bad_case.*tools/tests/test_bad.py.*line 42.*AssertionError: expected value.*test-logs") as caught:
+                ar.tests(Path(tmp),task)
+            self.assertIn("exit 1",str(caught.exception))
+            logs=list((Path(tmp)/".agents/monitoring/.local/test-logs").glob("*.log"))
+            self.assertEqual(len(logs),1)
+            self.assertIn("full diagnostic tail",logs[0].read_text(encoding="utf-8"))
+
 
 if __name__ == "__main__":
     unittest.main()

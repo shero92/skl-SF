@@ -91,6 +91,31 @@ class Diff(unittest.TestCase):
         self.assertTrue(w.validate_changed(["tools/a.py"], ["tools/a.py"]))
 
 
+class BattleScope(unittest.TestCase):
+    def test_battle_paths_allowed_but_characters_and_art_still_rejected(self):
+        self.assertEqual(w.runner_safety.touches("scenes/battle/a.gd,game_factory/battle/s.json"),
+                         ["scenes/battle/a.gd", "game_factory/battle/s.json"])
+        for bad in ("scenes/battle/characters/a.gd", "scenes/battle/a.png", "scenes/ui/a.gd", "scenes/main.gd"):
+            with self.assertRaises(ValueError):
+                w.runner_safety.touches(bad)
+
+    def test_backlog_tasks_have_valid_scope(self):
+        tasks = w.load_tasks()
+        for tid, t in tasks.items():
+            if t.get("agent") == "aider" and int(tid[5:]) >= 75:
+                w.task_touches(t)
+
+
+class LocalConfig(Base):
+    def test_local_override_sets_limits_but_never_enables(self):
+        w.write_json(self.state / "config.local.json",
+                     {"max_spend_usd": 7.5, "aider_executable": "X:/aider.exe", "enabled": True, "evil": 1})
+        with mock.patch.object(w, "CONFIG", Path(self.tmp.name) / "none.json"):
+            cfg = w.settings()
+        self.assertEqual((cfg["max_spend_usd"], cfg["aider_executable"], cfg["enabled"]), (7.5, "X:/aider.exe", False))
+        self.assertNotIn("evil", cfg)
+
+
 class Locks(Base):
     def test_double_claim_is_refused(self):
         self.assertTrue(w.acquire_lock("task-TASK-0001"))

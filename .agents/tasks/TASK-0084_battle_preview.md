@@ -1,0 +1,38 @@
+---
+id: TASK-0084
+status: todo
+owner: aider
+agent: aider
+priority: normal
+branch: none
+depends_on: TASK-0076,TASK-0077,TASK-0078,TASK-0080
+issue: none
+art_request: none
+touches: scenes/battle/battle_preview.gd,scenes/battle/battle_preview.tscn,tools/verify_battle_preview.gd,tools/tests/test_battle_preview.py
+test: python -m unittest discover -s tools/tests -p test_battle_preview.py
+done_when: Standalone preview: attack, view and weapon selectors, play/pause/restart, frame step, 0.25x speed, camera and VFX toggles.
+estimate_minutes: 120
+---
+# Battle animation preview scene with selectors
+
+## Goal
+Standalone preview: attack, view and weapon selectors, play/pause/restart, frame step, 0.25x speed, camera and VFX toggles.
+
+## Implementation
+Uses stub actors implementing the controller actor interface so it works before Game Factory merges. Pixel-snapped nearest-neighbour presentation. Exposes a headless capture hook that saves the viewport to a path given on the command line.
+
+Scope: new battle-only files under scenes/battle/, tools/ and game_factory/battle/. Do not modify existing scenes, characters, UI, damage code or any image. Aider must not generate or edit images.
+
+## Acceptance criteria
+- [ ] All controls change state as documented in headless verification
+- [ ] Capture hook writes a real viewport image only when given a path
+- [ ] No gameplay or damage code touched
+
+## Test
+`python -m unittest discover -s tools/tests -p test_battle_preview.py`, then `python tools/run_tests.py --changed`.
+
+## Estimate
+120 minutes.
+
+## Provenance
+Planned by Claude Code on 2026-11-02 (docs/AUTONOMOUS_24H_PLAN.md). Record the real execution tool and model when run.
