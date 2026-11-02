@@ -102,6 +102,102 @@ sys.path.insert(0,str(ROOT/"tools"))
 import local_planner  # noqa: E402
 import runner_safety as local_planner_safety  # noqa: E402
 
+class PlannerContext(unittest.TestCase):
+    def setUp(self):
+        tmp=tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        self.root=Path(tmp.name)
+        (self.root/".agents/planner/goals/GOAL-0001").mkdir(parents=True)
+        (self.root/".agents/planner/requests").mkdir(parents=True)
+        (self.root/".agents/tasks").mkdir(parents=True)
+        (self.root/"AGENTS.md").write_text("shared rules\n",encoding="utf-8")
+        (self.root/".agents/planner/PROMPT_RULES.md").write_text("proposal rules\n",encoding="utf-8")
+        (self.root/".agents/planner/goals/GOAL-0001/state.json").write_text(
+            json.dumps({"milestones_approved":True}),encoding="utf-8")
+        (self.root/".agents/planner/goals.json").write_text(json.dumps({"goals":[
+            {"id":"GOAL-0001","title":"Approved","status":"active","outcome":"room",
+             "verification":"owner signoff","constraints":"keep history",
+             "steps":[
+                 {"key":"finished","title":"Finished prerequisite","task_id":"TASK-0001","after":[],
+                  "depends_on":[],"agent":"codex","priority":"critical","kind":"bug"},
+                 {"key":"blocked-task","title":"Blocked assigned work","task_id":"TASK-0002","after":[],
+                  "depends_on":[],"agent":"claude","priority":"high","kind":"feature","file":"tools/x.py",
+                  "touches":["tools/x.py"],"test":"py -3 -m unittest","problem":"blocked evidence",
+                  "done_when":"finish after prerequisite"},
+                 {"key":"ready-next","title":"Ready unassigned work","after":["finished"],
+                  "depends_on":[],"agent":"codex","priority":"high","kind":"feature","file":"tools/y.py",
+                  "touches":["tools/y.py"],"test":"py -3 -m unittest","problem":"next work",
+                  "done_when":"complete it"},
+                 {"key":"waits-on-blocked","title":"Not ready","after":["blocked-task"],"depends_on":[],
+                  "agent":"codex","priority":"low","kind":"feature"}]},
+            {"id":"GOAL-0002","title":"Draft goal","status":"draft","steps":[{"key":"draft-step"}]}
+        ]}),encoding="utf-8")
+        self.write_task("TASK-0001","done",body="- Tests: passed")
+        self.write_task("TASK-0002","blocked",body="- Blocker: waiting for reviewed measurements\n- Next: calibrate")
+        self.write_task("TASK-0003","done",body="")
+        self.write_request("REQ-open.json",{"status":"open","priority":"critical","title":"Open request",
+            "problem":"observed issue","file":"tools/a.py","done_when":"fix it","test":"py -3 -m unittest",
+            "kind":"bug","agent":"codex"})
+        self.write_request("REQ-linked.json",{"status":"accepted","priority":"high","title":"Already tasked",
+            "task_id":"TASK-0002","problem":"duplicate details"})
+        self.write_request("REQ-finished.json",{"status":"accepted","priority":"high","title":"Finished request",
+            "task_id":"TASK-0003"})
+
+    def write_task(self,tid,status,body):
+        path=self.root/".agents/tasks"/(tid+"_sample.md")
+        path.write_text(f"---\nid: {tid}\nstatus: {status}\nbranch: test-branch\ndepends_on: none\n---\n## Evidence / handoff\n{body}\n",encoding="utf-8")
+
+    def write_request(self,name,data):
+        (self.root/".agents/planner/requests"/name).write_text(json.dumps(data),encoding="utf-8")
+
+    def test_context_selects_open_requests_and_approved_current_goal_with_blockers(self):
+        sections=local_planner.planner_sections(self.root)
+        context="\n\n".join(sections)
+        self.assertLessEqual(len(context),local_planner.CONTEXT_LIMIT)
+        self.assertIn("open request REQ-open",context)
+        self.assertNotIn("REQ-finished",context)
+        self.assertIn("approved goal GOAL-0001",context)
+        self.assertNotIn("draft-step",context)
+        step=next(s for s in sections if s.startswith("--- approved goal step blocked-task"))
+        data=json.loads(step.split("\n",1)[1])
+        self.assertEqual(data["task_status"],"blocked")
+        self.assertIn("waiting for reviewed measurements"," ".join(data["task_evidence"]))
+        ready=next(s for s in sections if s.startswith("--- approved goal step ready-next"))
+        self.assertTrue(json.loads(ready.split("\n",1)[1])["ready"])
+        self.assertFalse(any("waits-on-blocked" in s for s in sections))
+        self.assertEqual(sections,local_planner.planner_sections(self.root),"selection must be deterministic")
+
+    def test_context_limit_drops_complete_low_priority_records(self):
+        self.write_request("REQ-open-small.json",{"status":"open","priority":"low","title":"Small request"})
+        full=local_planner.planner_sections(self.root)
+        mandatory=full[:3]  # shared instructions and the approved goal summary
+        first=next(s for s in full if s.startswith("--- open request REQ-open ---"))
+        limit=len("\n\n".join(mandatory))+len(first)+2
+        limited=local_planner.planner_sections(self.root,limit)
+        rendered="\n\n".join(limited)
+        self.assertLessEqual(len(rendered),limit)
+        self.assertIn(first,limited)
+        self.assertNotIn("Small request",rendered)
+        for section in limited[3:]:
+            if section.startswith("--- ") and " ---\n{" in section:
+                json.loads(section.split("\n",1)[1])
+
+    def test_task_state_index_reads_only_referenced_task_files(self):
+        for tid in ("TASK-0004","TASK-0005","TASK-0006"):
+            self.write_task(tid,"todo","")
+        from unittest.mock import patch
+        with patch.object(local_planner,"task_fields",wraps=local_planner.task_fields) as read_task:
+            result=local_planner.task_state_index(self.root,["TASK-0004"])
+        self.assertEqual(set(result),{"TASK-0004"})
+        read_task.assert_called_once()
+
+    def test_project_instruction_size_and_shared_skill_pointer(self):
+        repo=Path(__file__).resolve().parents[2]
+        self.assertLessEqual(len((repo/"AGENTS.md").read_text(encoding="utf-8")),3500)
+        wrapper=(repo/".claude/skills/goal-task-factory/SKILL.md").read_text(encoding="utf-8")
+        self.assertIn(".agents/skills/goal-task-factory/SKILL.md",wrapper)
+        self.assertLess(len(wrapper),500)
+
 class CodexStrictSchema(unittest.TestCase):
     def test_every_property_required_and_optionals_nullable(self):
         original=local_planner.schema()
