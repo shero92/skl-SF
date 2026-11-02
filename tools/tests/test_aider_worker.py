@@ -91,6 +91,21 @@ class Diff(unittest.TestCase):
         self.assertTrue(w.validate_changed(["tools/a.py"], ["tools/a.py"]))
 
 
+class BattleScope(unittest.TestCase):
+    def test_battle_paths_allowed_but_characters_and_art_still_rejected(self):
+        self.assertEqual(w.runner_safety.touches("scenes/battle/a.gd,game_factory/battle/s.json"),
+                         ["scenes/battle/a.gd", "game_factory/battle/s.json"])
+        for bad in ("scenes/battle/characters/a.gd", "scenes/battle/a.png", "scenes/ui/a.gd", "scenes/main.gd"):
+            with self.assertRaises(ValueError):
+                w.runner_safety.touches(bad)
+
+    def test_backlog_tasks_have_valid_scope(self):
+        tasks = w.load_tasks()
+        for tid, t in tasks.items():
+            if t.get("agent") == "aider" and int(tid[5:]) >= 75:
+                w.task_touches(t)
+
+
 class Locks(Base):
     def test_double_claim_is_refused(self):
         self.assertTrue(w.acquire_lock("task-TASK-0001"))
