@@ -8,9 +8,6 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 
 | Test | Kind | Covers | Command |
 | --- | --- | --- | --- |
-| `agent_file_bridge` | python | Scoped Codex text read/edit bridge, capability preflight and access denials. | `python -m unittest discover -s tools/tests -p test_agent_file_bridge.py` |
-| `game_factory` | python | Six-character registry, durable one-image reservations, source preservation and native anchors. | `python -m unittest discover -s tools/tests -p test_game_factory.py` |
-| `pixel_asset_factory` | python | Built-in image_gen environment queue, immutable approval, request limits, alpha/grid QA and test gate. | `python -m unittest discover -s tools/tests -p test_pixel_asset_factory.py` |
 | `manual_agents` | python | Manual global budgets, independent parallel dispatch, evidence blockers and dry-run isolation. | `python -m unittest discover -s tools/tests -p test_manual_agents.py` |
 | `task_evidence` | python | Approved reference hashes and provenance; independent measurement/visual evidence gates. | `python -m unittest discover -s tools/tests -p test_task_evidence.py` |
 | `agent_costs` | python | Claude/Codex token and cost receipts, leaderboard and hooks. | `python -m unittest discover -s tools/tests -p test_agent_costs.py` |
@@ -41,13 +38,9 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 | `godot_import` | godot | Godot headless resource import and script parse. | `<godot> --headless --path . --editor --quit` |
 | `godot_map_smoke` | godot | Builds every registered map in Godot including ocean and block counts. | `<godot> --headless --path . --script res://tools/map_factory_godot_smoke.gd` |
 | `godot_cardinal_blocks` | godot | Four 90-degree rotations, collision transforms and drawn directional variants. | `<godot> --headless --path . --script res://tools/test_cardinal_map_blocks.gd` |
-| `aider_worker` | python | Aider worker eligibility, atomic claim, touches/dependency checks, no duplicate execution, retry, auth/balance pause and isolated commit. | `python -m unittest discover -s tools/tests -p test_aider_worker.py` |
 
 ## Paths per test
 
-- `agent_file_bridge`: `tools/agent_file_bridge.py`, `tools/tests/test_agent_file_bridge.py`
-- `game_factory`: `tools/game_factory.py`, `tools/hero_battle_correction.py`, `tools/weapon_factory.py`, `tools/tests/test_game_factory.py`, `game_factory/**`, `assets/characters/**`, `assets/weapons/**`, `scenes/game_factory*`, `scenes/modular_battle*`, `map_factory/references/characters/**`
-- `pixel_asset_factory`: `tools/pixel_asset_factory.py`, `tools/pixel_factory/**`, `tools/tests/test_pixel_asset_factory.py`, `assets_generated/**`, `docs/PIXEL_ASSET_FACTORY.md`, `map_factory/references/approved/**`
 - `manual_agents`: `tools/manual_agents.py`, `tools/run_agents_manual.ps1`, `tools/run_local_agent.ps1`, `tools/agent_runner.py`, `tools/tests/test_manual_agents.py`
 - `task_evidence`: `tools/task_evidence.py`, `tools/tests/test_task_evidence.py`, `tools/manual_agents.py`
 - `agent_costs`: `tools/tests/test_agent_costs.py`, `tools/agent_costs.py`, `tools/agent_costs_hook.sh`, `.agents/monitoring/**`
@@ -78,4 +71,3 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 - `godot_import`: `project.godot`, `**/*.gd`, `**/*.tscn`, `**/*.tres`, `map_factory/parts/**`
 - `godot_map_smoke`: `tools/map_factory_godot_smoke.gd`, `map_factory/maps/**`, `map_factory/presets/**`, `map_factory/scripts/**`, `map_factory/metadata/**`, `map_factory/parts/**`, `scenes/map_factory_preview.*`, `scenes/ocean_background.gd`, `scenes/room_light_fx.gd`, `tools/map_factory_orientation.py`
 - `godot_cardinal_blocks`: `tools/test_cardinal_map_blocks.gd`, `map_factory/scripts/**`, `map_factory/maps/**`, `map_factory/metadata/**`, `tools/map_factory_orientation.py`
-- `aider_worker`: `tools/aider_worker.py`, `tools/run_aider_worker.ps1`, `tools/setup_aider_worker.ps1`, `tools/tests/test_aider_worker.py`

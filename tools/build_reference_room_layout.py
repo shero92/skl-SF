@@ -65,12 +65,12 @@ deco("ivy_door", "P03", "rwr.door", "ivy_hang_right")
 deco("ivy_rear_right", "P02", "rwr.w4", "ivy_hang")
 deco("growth_left", "P12", "swl.w3", "ivy_hang")
 deco("growth_right", "P13", "swr.w3", "ivy_hang")
-deco("flowers_rwl_up", "P04", "rwl.up2", "wall_top_stand")
-deco("flowers_rwr_up", "P05", "rwr.up2", "wall_top_stand")
-deco("flowers_rwl_1", "P06", "rwl.up1", "wall_top_stand")
+deco("flowers_rwl_up", "P04", "rwl.back2", "wall_top_stand")
+deco("flowers_rwr_up", "P05", "rwr.back4", "wall_top_stand")
+deco("flowers_rwl_1", "P06", "rwl.back0", "wall_top_stand")
 for oid, a, par in [("fl_fwl_1", "P05", "fwl.w2"), ("bush_fwl_2", "P08", "fwl.w4"), ("fl_fwl_3", "P06", "fwl.w1"),
-                    ("bush_fwl_4", "P07", "fwl.w5"), ("fl_fwr_1", "P05", "fwr.w3"), ("bush_fwr_2", "P08", "fwr.w1"),
-                    ("fl_fwr_3", "P06", "fwr.w4"), ("bush_fwr_4", "P07", "fwr.w0"), ("leaf_fwl", "P10", "fwl.w3"),
+                    ("bush_fwl_4", "P07", "fwl.w4"), ("fl_fwr_1", "P05", "fwr.w3"), ("bush_fwr_2", "P08", "fwr.w1"),
+                    ("fl_fwr_3", "P06", "fwr.w4"), ("bush_fwr_4", "P07", "fwr.w1"), ("leaf_fwl", "P10", "fwl.w3"),
                     ("leaf_fwr", "P09", "fwr.w2")]:
     deco(oid, a, par, "wall_top_stand")
 

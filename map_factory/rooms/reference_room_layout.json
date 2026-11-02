@@ -3029,7 +3029,7 @@
    ],
    "logical_level": 3,
    "render_order": 0,
-   "parent": "rwl.up2",
+   "parent": "rwl.back2",
    "attach_point": "wall_top_stand",
    "attach_offset": [
     0,
@@ -3053,7 +3053,7 @@
    ],
    "logical_level": 3,
    "render_order": 0,
-   "parent": "rwr.up2",
+   "parent": "rwr.back4",
    "attach_point": "wall_top_stand",
    "attach_offset": [
     0,
@@ -3077,7 +3077,7 @@
    ],
    "logical_level": 3,
    "render_order": 0,
-   "parent": "rwl.up1",
+   "parent": "rwl.back0",
    "attach_point": "wall_top_stand",
    "attach_offset": [
     0,
@@ -3173,7 +3173,7 @@
    ],
    "logical_level": 3,
    "render_order": 0,
-   "parent": "fwl.w5",
+   "parent": "fwl.w4",
    "attach_point": "wall_top_stand",
    "attach_offset": [
     0,
@@ -3269,7 +3269,7 @@
    ],
    "logical_level": 3,
    "render_order": 0,
-   "parent": "fwr.w0",
+   "parent": "fwr.w1",
    "attach_point": "wall_top_stand",
    "attach_offset": [
     0,

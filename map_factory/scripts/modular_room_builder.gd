@@ -97,7 +97,10 @@ func build(layout_path: String, parent: Node, stage: int = 5) -> Node2D:
             progress = true
         pending = rest
     for o in pending:
-        if _admitted(o, stage) and String(o["parent"]) in objects_by_id and _admitted(objects_by_id[String(o["parent"])], stage):
+        var parent_id := String(o["parent"])
+        if not objects_by_id.has(parent_id):
+            issues.append("attachment parent missing for %s: %s" % [o["object_id"], parent_id])
+        elif _admitted(objects_by_id[parent_id], stage):
             issues.append("attachment parent not built for " + String(o["object_id"]))
     if stage >= 2:
         _validate()
