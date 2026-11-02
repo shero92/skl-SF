@@ -10,13 +10,16 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`.claude/`](.claude/FILES.md)
 - [`.codex/`](.codex/FILES.md)
 - [`.github/`](.github/FILES.md)
+- [`assets_generated/`](assets_generated/FILES.md)
 - [`docs/`](docs/FILES.md)
 - [`map_factory/`](map_factory/FILES.md)
+- [`room_previews/`](room_previews/FILES.md)
 - [`scenes/`](scenes/FILES.md)
 - [`tools/`](tools/FILES.md)
 
 ## Files
 
+- [`.aiderignore`](.aiderignore)
 - [`.gitattributes`](.gitattributes)
 - [`.gitignore`](.gitignore)
 - [`AGENTS.md`](AGENTS.md)

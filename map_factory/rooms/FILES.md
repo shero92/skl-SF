@@ -12,6 +12,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`HERO_ROOM_NOTES.md`](HERO_ROOM_NOTES.md)
 - [`hero_room.json`](hero_room.json)
+- [`procedural_room_3.json`](procedural_room_3.json)
+- [`reference_room_layout.json`](reference_room_layout.json)
 - [`room_template.json`](room_template.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

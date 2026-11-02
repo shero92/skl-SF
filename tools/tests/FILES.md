@@ -11,7 +11,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`test_agent_costs.py`](test_agent_costs.py)
+- [`test_agent_file_bridge.py`](test_agent_file_bridge.py)
 - [`test_agent_workflow.py`](test_agent_workflow.py)
+- [`test_aider_worker.py`](test_aider_worker.py)
 - [`test_art_delivery.py`](test_art_delivery.py)
 - [`test_blender_factory.py`](test_blender_factory.py)
 - [`test_candidate_room.py`](test_candidate_room.py)

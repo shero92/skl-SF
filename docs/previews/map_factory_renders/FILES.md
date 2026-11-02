@@ -23,6 +23,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`hero_room_01_v0008.png`](hero_room_01_v0008.png)
 - [`hero_room_01_v0009.png`](hero_room_01_v0009.png)
 - [`hero_room_01_v0010.png`](hero_room_01_v0010.png)
+- [`hero_room_01_v0011.json`](hero_room_01_v0011.json)
+- [`hero_room_01_v0011.png`](hero_room_01_v0011.png)
 - [`new_hero_parts_v10.png`](new_hero_parts_v10.png)
 - [`new_hero_parts_v8.png`](new_hero_parts_v8.png)
 - [`new_hero_parts_v9.png`](new_hero_parts_v9.png)

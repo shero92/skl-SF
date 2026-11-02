@@ -47,6 +47,7 @@ Merged through `integration/consolidation-20261102` (PR #68) (clean worktree cut
 - TASK-0070 is `in_progress` and TASK-0069 is in `review` by Codex; TASK-0072..0074 are running in live worktrees on the same commit, with hundreds of uncommitted character/weapon frames. Merging a half-finished snapshot would conflict with their continuing work.
 - The PR source checks that every PR must pass reject Codex's task/art records: `TASK-0069`/`TASK-0070` lack the required `agent`, `touches`, `test`, `done_when` fields; `touches` may not contain wildcards or a `characters` path (no per-task scope-approval marker exists); `ART-0026`/`ART-0027` list outputs under `assets_generated/` and `assets/`, while `agent_workflow.py` only allows `.agents/graphics/deliveries/<ART>/*.png` plus a hash manifest. PR #65 is still a draft for the same reason.
 - Resolution needs an owner/Codex decision on how factory outputs fit the delivery workflow (e.g. a `scope_approval` field for owner-expanded scope and an allowed factory output root). The merge itself is conflict-free apart from the approval fields noted below, so it can be re-applied later by reverting `f9302ce`.
+- **GitHub shows PR #65 as merged**, because its head commit `206e4d1` became an ancestor of `main` through the merge-then-revert. Its content is NOT in `main`. To land it, first run `git revert f9302ce` (revert the revert) and then merge any newer Codex commits; merging `codex/game-factory` without that step would bring only later commits without the base.
 - Nothing is lost: the code and art are on `origin/codex/game-factory`, plus the uncommitted work on the `preserve/*` branches.
 
 Not merged, kept on their branches (stale Oct-27 candidates, conflicts only in generated monitoring/planner files):
@@ -68,6 +69,10 @@ These need an owner decision; they are not lost.
 - CI rules for PRs (ADR-006): `.agents/monitoring/summary.*` and `tools/tests/INDEX.md` are restored to `main` and must be regenerated on `main` after merge. `agent_workflow.py --sources-only` and `generate_project_indexes.py --sources-only` pass locally.
 - Godot render of the rebuilt room in the integration worktree: 0 validation issues, 52/52 free floor cells reachable.
 - Aider compatibility: worker, `TASK-0071` and `TASK-0075..0089` present; models `openai/gpt-6.1-sol` / `openai/gpt-6-sol`, base `https://apimaster.ai/v1`; `aider_execution_enabled` and `execution_enabled` still `false`; no paid run was started. The $10 cap lives in the git-ignored local config of the main checkout (tracked `config.json` has `max_spend_usd: null`).
+
+## 5b. Post-merge generated outputs
+
+After merging PR #68, `.agents/monitoring/summary.*`, `.agents/project/TASKS.md`, `tools/tests/INDEX.md` and the folder `FILES.md` inventories were regenerated on `main` (ADR-006); `run_tests.py --all` 32/32, `--check-index`, `generate_project_indexes.py --check` and `agent_workflow.py --check` all pass.
 
 ## 6. Still needs review / action
 
