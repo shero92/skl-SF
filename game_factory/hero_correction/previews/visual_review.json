@@ -1,0 +1,21 @@
+{
+  "reviewer": "codex",
+  "review_type": "source versus genuine Godot sequence review",
+  "body_frames": 12,
+  "independent_weapons": 2,
+  "source_weaponless_check": "all selected sources individually inspected; no blade/hilt/guard/pommel embedded",
+  "color_diagnostics": "12 checked, no current warnings",
+  "godot_checks": {
+    "frame_swap_cases": 20,
+    "actual_frame_events": 20,
+    "body_png_hashes_unchanged": true
+  },
+  "visual_notes": [
+    "blade scale calibrated to original reference",
+    "raised swings render equipment behind body; original hand region occludes front weapon grip",
+    "ground anchors stable; each grip measured separately"
+  ],
+  "status": "needs_review",
+  "owner_approval": false,
+  "full_library_complete": false
+}

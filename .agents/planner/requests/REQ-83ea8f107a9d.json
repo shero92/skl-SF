@@ -1,0 +1,12 @@
+{
+  "status": "open",
+  "title": "Built-in image_gen environment asset factory",
+  "problem": "Owner superseded initial provider request: use Codex imagegen skill and image_gen only; no external image APIs or keys. Process 104-item environment plan serially with immutable approval and Godot QA.",
+  "file": "tools/INDEX.md",
+  "line": null,
+  "done_when": "Local pipeline, 128 unique prompts, one real built-in test, PNG QA and Godot Map Factory capture; remaining art stays pending owner review.",
+  "test": "python -m unittest discover -s tools/tests -p test_pixel_asset_factory.py",
+  "priority": "high",
+  "kind": "feature",
+  "agent": "codex"
+}

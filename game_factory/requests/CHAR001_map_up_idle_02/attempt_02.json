@@ -1,0 +1,10 @@
+{
+  "id": "CHAR001_map_up_idle_02",
+  "arguments": {
+    "prompt": "Use case: precise-object-edit. Edit the ONE supplied transparent hero sprite to produce exactly one new animation frame: CHAR001_map_up_idle_02, up facing, idle frame 02. The edit target already embodies the original poster identity. Preserve exact canvas, camera, face, hair silhouette, head position, torso, costume patterns, ornaments, palette, weapon hand and body proportions. Do not redraw or redesign these protected regions. Change only limbs and secondary cloth motion as necessary: tiny inhale: lift chest cloth by one native pixel, both feet and head stay fixed. Keep full sprite and weapon visible; preserve real transparency. Original handcrafted pixel style and native 96x96 logical grid. No text, floor, shadow, extra limbs, extra figure, sheet or collage. ONE sprite only. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+    "referenced_image_paths": [
+      "H:\\shining force\\skl-SF\\.worktrees\\TASK-0070-game-factory\\assets\\characters\\hero\\map\\up\\sources\\hero_map_up_idle_01_v003__attempt_03.png"
+    ],
+    "transparent_background": true
+  }
+}

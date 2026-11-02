@@ -1,0 +1,38 @@
+{
+  "plan": "tools/pixel_factory/plan.json",
+  "output": "assets_generated",
+  "provider": "builtin_image_gen",
+  "references": [
+    {
+      "role": "original_room",
+      "path": "map_factory/references/hero_room_01_original.png",
+      "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G01",
+      "path": "map_factory/references/approved/G01_clean_sandstone_64.png",
+      "sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G02",
+      "path": "map_factory/references/approved/G02_lightly_weathered_sandstone_64.png",
+      "sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    },
+    {
+      "role": "approved_floor",
+      "asset_id": "G03",
+      "path": "map_factory/references/approved/G03_fine_cracked_sandstone_64.png",
+      "sha256": "98cfbec750f847aba7b1794dec9df88663dbfcf6242422c8f9ec21060eecd288",
+      "approved_by": "owner: explicitly designated approved G01/G02/G03 in current request"
+    }
+  ],
+  "max_requests": 128,
+  "normalize_nearest": true,
+  "godot_executable": "Godot_v4.7.2-stable_win64.exe",
+  "base_map": "res://map_factory/maps/hero_room_01/latest.json",
+  "cost_note": "Built-in usage/cost unknown; no external API clients, keys or billing estimates."
+}

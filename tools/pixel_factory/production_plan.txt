@@ -1,0 +1,525 @@
+Build a complete automated pixel-art asset production pipeline for my local Godot project "skl-SF".
+
+GOAL:
+Generate a full high-quality modular asset library from the fantasy room reference, with every tile and every object produced as a separate individual image file, properly named and organized into folders, ready for direct use in Godot Map Factory.
+
+IMPORTANT OVERALL RULE:
+- Every asset must be generated as a separate standalone PNG.
+- Never generate multiple different assets inside one image.
+- Never generate a collage, contact sheet, sprite atlas, comparison sheet, or labeled overview image.
+- One asset = one prompt = one PNG file.
+
+PROJECT CONTEXT:
+This project is a fantasy tactical RPG inspired by classic Shining Force style.
+The room reference defines the visual target:
+- warm golden sandstone floor
+- ruined pale stone walls
+- blue-and-gold cloth decorations
+- wooden fantasy furniture
+- lush flowers, vines, and plants
+- bright ocean-cliff environment
+- premium hand-crafted pixel-art quality
+
+VISUAL STYLE REQUIREMENTS:
+- Premium high-quality 2D pixel art.
+- Crisp pixel edges.
+- No blur.
+- No smoothing.
+- No anti-aliasing.
+- No modern vector look.
+- No painterly soft rendering.
+- No 3D model appearance.
+- No photorealism.
+- Strong readability at game scale.
+- Rich but controlled detail.
+- Consistent materials, colors, and lighting across all assets.
+
+CAMERA / PERSPECTIVE REQUIREMENTS:
+- Use the room reference as the strict perspective guide.
+- The floor is a square grid facing the player.
+- This is NOT a diamond isometric 2:1 map.
+- Use a square-grid, player-facing, top-down / 3/4 RPG room perspective.
+- All floor tiles must align to a square grid.
+- All furniture must sit correctly on this square floor grid.
+- All assets must match the same camera direction.
+
+LIGHTING REQUIREMENTS:
+- Warm sunlight / ambient light from upper-left.
+- Subtle shadowing toward lower-right.
+- Consistent lighting direction across all assets.
+- No dramatic inconsistent lighting.
+- No detached cast shadows outside the intended sprite area unless explicitly required.
+
+BASE SCALE RULES:
+- Standard floor tile size = 64x64 pixels.
+- Standard wall block footprint = 1x1 tile unless otherwise specified.
+- Large objects can occupy multiple tiles.
+- Every asset must explicitly define:
+  1. asset ID
+  2. asset name
+  3. category
+  4. native art resolution
+  5. ground footprint in tiles
+  6. orientation
+  7. anchor point
+  8. whether transparency is required
+  9. whether it is floor / wall / overlay / furniture / decor / background
+
+CRITICAL FILE OUTPUT RULES:
+- Save every asset as an individual PNG.
+- Use transparent background for objects, props, walls, decor, furniture, plants, banners, lamps, architecture pieces, and overlays.
+- Floor tiles may be opaque or transparent depending on pipeline preference, but individual tile files are required.
+- Do not include labels, text, checkerboards, watermarks, borders, or UI.
+- Do not embed multiple assets in one image.
+- Do not crop important parts.
+- Do not leave excessive empty padding.
+
+NAMING RULES:
+Use the following output naming convention:
+
+[ASSET_ID]__[CATEGORY]__[ASSET_NAME]__[ORIENTATION]__[FOOTPRINT]__[SIZE].png
+
+Examples:
+G01__floor__clean_sandstone__south__1x1__64x64.png
+F01__furniture__royal_bed__south__3x4__192x256.png
+W03__wall__broken_stone_wall__south__1x1__64x64.png
+A05__architecture__central_arch_column_left__south__1x1__64x128.png
+
+If the asset has no meaningful orientation, use:
+__default__
+
+If the object has directional variants, generate each direction as a separate asset:
+__south__
+__west__
+__north__
+__east__
+
+FOLDER STRUCTURE:
+Organize outputs exactly like this:
+
+/assets_generated/
+  /floor/
+  /wall/
+  /architecture/
+  /furniture/
+  /decor/
+  /lighting/
+  /plants/
+  /props/
+  /background/
+  /metadata/
+  /previews/
+  /failed/
+  /approved/
+
+METADATA REQUIREMENTS:
+For every generated PNG, also create a JSON metadata file with the same base filename.
+
+Each metadata file must contain:
+- asset_id
+- asset_name
+- category
+- filename
+- native_width
+- native_height
+- footprint_tiles_x
+- footprint_tiles_y
+- orientation
+- anchor_x
+- anchor_y
+- layer_type
+- transparent_background
+- prompt_used
+- reference_assets_used
+- generation_status
+- approval_status
+- notes
+
+ASSET QUALITY RULES:
+Each asset must:
+- be readable at intended game scale
+- preserve pixel-art integrity at native size
+- maintain stylistic consistency with reference
+- fit correctly on the square floor grid
+- respect the specified footprint
+- avoid excessive noise
+- avoid muddy texture
+- avoid repeated visible artifacts unless intentionally designed
+- look like a real premium game asset
+
+NO CHARACTER RULE:
+Do not generate player characters, NPCs, monsters, or pets yet.
+Focus only on environment assets and modular room-building assets.
+
+ROOM-BUILDING / MAP FACTORY RULES:
+All assets must be suitable for procedural or factory-based room assembly in Godot.
+That means:
+- clear modularity
+- clean footprint logic
+- consistent anchor positions
+- correct layering
+- separable objects
+- reusable blocks
+- directional consistency
+- repeatable floor tiles
+- wall blocks that connect naturally
+- architecture pieces that can be assembled into larger structures
+
+LAYERING RULES:
+Every asset must belong to one of these layers:
+- background
+- ground
+- wall_base
+- wall_overlay
+- furniture
+- decor
+- lighting
+- foliage
+- prop_overlay
+
+Use layering logic that allows Godot Map Factory to assemble the room correctly.
+
+FOOTPRINT LOGIC:
+The image size and the object footprint are not the same thing.
+For example:
+- a floor tile may be 64x64 and footprint 1x1
+- a bed may visually be 192x256 with footprint 3x4
+- a bookcase may visually be 256x128 with footprint 4x1
+- an arch pillar may visually be 64x128 with footprint 1x1
+
+Always preserve both:
+1. visual sprite size
+2. logical footprint
+
+DIRECTIONAL RULES:
+For all furniture and relevant objects that need rotation:
+- generate four real directional redraws
+- do not just rotate the same image mechanically
+- keep material, color, proportions, and identity identical
+- each direction must be a separate file
+Directions:
+- south
+- west
+- north
+- east
+
+REFERENCE PRIORITY:
+Use the original room image as the primary style, composition, material, and color reference.
+Use approved individual assets as secondary references for consistency.
+If an approved tile exists, new similar assets must match it closely.
+
+PRODUCTION WORKFLOW:
+1. Read the asset list.
+2. Generate one asset at a time.
+3. Save PNG and JSON metadata.
+4. Validate dimensions.
+5. Validate transparency when required.
+6. Validate filename and folder placement.
+7. Generate preview tests when needed.
+8. Mark asset as approved or failed.
+9. Never overwrite an approved asset unless explicitly instructed.
+
+AUTOMATED VALIDATION RULES:
+After generation, validate:
+- correct file dimensions
+- correct naming format
+- correct folder placement
+- presence of transparency where required
+- correct footprint metadata
+- no labels or collage layout
+- one asset only per file
+
+Additionally:
+- For floor tiles: create repeat preview tests (5x5 and 10x10)
+- For wall tiles: create adjacency preview tests
+- For furniture: create placement preview test on a floor grid
+- For multi-direction assets: create direction consistency preview
+
+APPROVAL RULE:
+Only approved assets move to /approved/.
+Rejected or problematic assets go to /failed/ with notes.
+
+MASTER STYLE SUMMARY:
+The world style is:
+- golden sandstone
+- pale worn stone architecture
+- blue-and-gold embroidered fantasy textiles
+- polished warm brown wood furniture
+- bright ocean sunlight
+- decorative floral ruins
+- classic premium pixel-art RPG visuals
+
+================================================================================
+ASSET LIST TO PRODUCE
+================================================================================
+
+CATEGORY A — FLOOR TILES
+
+Generate these as separate single-tile assets, each 64x64, each with footprint 1x1:
+
+G01 — Clean Sandstone Floor Tile
+G02 — Lightly Weathered Sandstone Floor Tile
+G03 — Fine Cracked Sandstone Floor Tile
+G04 — Naturally Textured Sandstone Floor Tile
+G05 — Sandstone Tile with Slight Edge Wear
+G06 — Sandstone Tile with Small Chipped Corner
+G07 — Sandstone Tile with Dusty Patch
+G08 — Sandstone Tile with Subtle Mineral Spots
+G09 — Sandstone Tile with Tiny Surface Pits
+G10 — Sandstone Tile with Soft Discoloration
+G11 — Sandstone Tile with Faint Hairline Cracks
+G12 — Sandstone Tile with Slightly Darker Weathering
+
+Important floor rules:
+- all 12 must align perfectly together
+- same perspective
+- same brightness family
+- no thick borders
+- no heavy bevel
+- no diamond isometric shape
+- subtle seam behavior only
+- avoid obvious repeated patterns across variants
+
+CATEGORY B — WALL BLOCKS
+
+Generate each as a separate PNG:
+
+W01 — Clean Pale Stone Wall Block
+W02 — Lightly Weathered Stone Wall Block
+W03 — Broken Stone Wall Block
+W04 — Cracked Stone Wall Block
+W05 — Wall Block with Ivy Base
+W06 — Wall Block with Flower Growth
+W07 — Wall Cap / Top Edge Stone
+W08 — Inner Corner Wall Block
+W09 — Outer Corner Wall Block
+W10 — Low Broken Wall Segment
+W11 — Wall End Piece Left
+W12 — Wall End Piece Right
+W13 — Arch-Adjacent Wall Block Left
+W14 — Arch-Adjacent Wall Block Right
+W15 — Decorative Banner Wall Mount Block
+
+Wall requirements:
+- must connect naturally with neighboring wall blocks
+- preserve same stone material as room reference
+- support ruined ancient seaside sanctuary feel
+- maintain modularity
+- separate base structure from heavy overlays when useful
+
+CATEGORY C — ARCHITECTURE
+
+A01 — Main Stone Column
+A02 — Column Top Capital
+A03 — Column Base
+A04 — Arch Segment Left
+A05 — Arch Segment Center
+A06 — Arch Segment Right
+A07 — Complete Doorway Arch Keystone Piece
+A08 — Rear Door Frame
+A09 — Decorative Ruined Stone Door
+A10 — Front Stair Step Tile
+A11 — Stair Side Support Left
+A12 — Stair Side Support Right
+A13 — Entrance Pillar Post
+
+Architecture requirements:
+- pieces must be modular where sensible
+- preserve central grand ruin look
+- match wall style
+- support assembly into the same room layout
+
+CATEGORY D — FURNITURE
+
+F01 — Royal Wooden Bed, south
+F02 — Royal Wooden Bed, west
+F03 — Royal Wooden Bed, north
+F04 — Royal Wooden Bed, east
+
+Bed rules:
+- same bed identity in all 4 directions
+- carved wood headboard and footboard
+- blue blanket with gold embroidery
+- cream sheets and matching pillow
+- approximate footprint 3x4 tiles
+- visual sprite may be around 192x256 depending on final composition
+- transparent background
+
+F05 — Bedside Table
+F06 — Left Large Bookcase
+F07 — Right Large Bookcase
+F08 — Large Dining / Work Table
+F09 — Bench Horizontal
+F10 — Bench Vertical
+F11 — Small Wooden Crate
+F12 — Medium Wooden Crate
+
+Furniture requirements:
+- match room style
+- warm brown wood
+- readable silhouettes
+- proper footprint metadata
+- no background
+
+CATEGORY E — DECOR / TEXTILES
+
+D01 — Bed Rug
+D02 — Table Rug
+D03 — Central Compass Floor Emblem Overlay
+D04 — Long Blue Wall Banner
+D05 — Short Blue Wall Banner
+D06 — Banner Pole / Hanging Support
+D07 — Small Decorative Cloth Fold
+D08 — Ornamental Gold Trim Overlay
+
+Decor requirements:
+- rich blue with gold embroidery
+- same emblem language as room reference
+- overlays separated when useful
+- central compass emblem should be usable as floor overlay
+
+CATEGORY F — LIGHTING
+
+L01 — Hanging Wall Lantern
+L02 — Lit Wall Lantern Glowless Base
+L03 — Candle Cluster
+L04 — Table Lantern
+L05 — Small Flame / Glow Overlay
+
+Lighting requirements:
+- create base assets and glow overlays separately when helpful
+- do not bake huge environment lighting into every asset
+- keep reusable
+
+CATEGORY G — PLANTS / FOLIAGE
+
+P01 — Ivy Hanging Short
+P02 — Ivy Hanging Medium
+P03 — Ivy Hanging Long
+P04 — White Flower Cluster Small
+P05 — White Flower Cluster Medium
+P06 — Blue Flower Cluster Small
+P07 — Green Bush Small
+P08 — Green Bush Medium
+P09 — Tropical Leaf Plant Small
+P10 — Tropical Leaf Plant Medium
+P11 — Potted Blue-Gold Ceramic Plant
+P12 — Floral Wall Growth Left
+P13 — Floral Wall Growth Right
+P14 — Ground Flower Patch Mixed
+
+Plant requirements:
+- lush but readable
+- not too noisy
+- separate clusters to enable varied placement
+- preserve bright healthy colors matching room
+
+CATEGORY H — PROPS / SMALL OBJECTS
+
+R01 — Blue-Gold Ceramic Vase Small
+R02 — Blue-Gold Ceramic Vase Large
+R03 — Decorative Pot Small
+R04 — Decorative Pot Medium
+R05 — Scroll Bundle
+R06 — Open Book
+R07 — Closed Book Stack
+R08 — Rolled Map
+R09 — Open Map on Table
+R10 — Fruit Bowl
+R11 — White Jug
+R12 — Brass Armillary / Astronomical Object
+R13 — Conch Shell
+R14 — Starfish / Coral Decorative Piece
+
+Prop requirements:
+- each as isolated individual object
+- transparent background
+- suitable for placement on tables, shelves, or floor
+
+CATEGORY I — BACKGROUND / SCENIC ELEMENTS
+
+B01 — Ocean Water Tile / Segment
+B02 — Foam Edge Overlay
+B03 — Near Cliff Rock Segment
+B04 — Far Cliff Rock Segment
+B05 — Sea Stack Island Small
+B06 — Sea Stack Island Medium
+B07 — Horizon Ocean Strip
+B08 — Bright Cloud Small
+B09 — Bright Cloud Medium
+B10 — Clear Sky Gradient Segment
+B11 — Distant Rock Arch Formation
+
+Background requirements:
+- intended for background scene assembly
+- do not force into 64x64 if not appropriate
+- still preserve modularity where possible
+- must match bright seaside environment
+
+================================================================================
+GENERATION EXECUTION RULES
+================================================================================
+
+EXECUTION MODE:
+- Work through the asset list in order.
+- Generate one asset at a time.
+- Never batch multiple distinct assets into one output image.
+- Save each result immediately.
+- Save prompt text used for each asset.
+- Save metadata JSON.
+- Save validation result.
+
+APPROVAL PRIORITY:
+Start in this order:
+1. Floor tiles G01–G12
+2. Wall blocks W01–W15
+3. Architecture A01–A13
+4. Furniture F01–F12
+5. Decor D01–D08
+6. Lighting L01–L05
+7. Plants P01–P14
+8. Props R01–R14
+9. Background B01–B11
+
+PROMPT CREATION RULE:
+For each asset, automatically create a dedicated high-detail generation prompt containing:
+- asset ID
+- asset name
+- category
+- exact size
+- footprint
+- material
+- camera direction
+- lighting
+- style constraints
+- negative constraints
+- output requirements
+
+PROMPT NEGATIVE CONSTRAINTS:
+Always include these restrictions where relevant:
+- no collage
+- no text
+- no labels
+- no checkerboard
+- no watermark
+- no background scene
+- no multiple assets in one image
+- no blur
+- no anti-aliasing
+- no soft painting
+- no photorealism
+- no 3D render look
+- no unrelated objects
+- no character
+- no UI
+
+PREVIEW TESTS:
+Automatically create:
+- 5x5 and 10x10 repeat tests for floor tiles
+- wall adjacency previews
+- object-on-grid placement previews
+- directional comparison previews for rotated furniture
+- room assembly previews after major asset groups are completed
+
+FINAL GOAL:
+Produce a complete, organized, reusable, high-quality modular pixel-art asset library from the reference room, with every tile separated, correctly named, high quality, and ready for Godot Map Factory use.

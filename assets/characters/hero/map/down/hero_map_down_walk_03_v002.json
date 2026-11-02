@@ -1,0 +1,96 @@
+{
+  "id": "CHAR001_map_down_walk_03",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "walk",
+  "direction": "down",
+  "frame": 3,
+  "output": "assets/characters/hero/map/down/hero_map_down_walk_03_v002.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: precise-object-edit. Edit the ONE supplied transparent hero sprite to produce exactly one new animation frame: CHAR001_map_down_walk_03, down facing, walk frame 03. The edit target already embodies the original poster identity. Preserve exact canvas, camera, face, hair silhouette, head position, torso, costume patterns, ornaments, palette, weapon hand and body proportions. Do not redraw or redesign these protected regions. Change only limbs and secondary cloth motion as necessary: CHANGE THE LEG POSE for the mandatory gait instruction below; make the anatomical stride change clearly visible. Keep full sprite and weapon visible; preserve real transparency. Original handcrafted pixel style and native 96x96 logical grid. No text, floor, shadow, extra limbs, extra figure, sheet or collage. ONE sprite only. FINAL GAIT POSE OVERRIDE: OPPOSITE CONTACT: SCREEN-RIGHT boot must lead LOWER toward bottom edge; SCREEN-LEFT boot must trail HIGHER toward top edge. CLEARLY REVERSE BOTH LEGS from frame 01, never repeat its stance. Foot alternation and changing leg silhouette are mandatory; do not return another standing pose or repeat the same forward leg across every frame. Keep face, torso and costume identity unchanged. Boot on SCREEN RIGHT must be the LOWEST foot (about y=94%); boot on SCREEN LEFT is lifted behind (about y=83%). Reverse which foot leads. Preserve anatomical asymmetry: blue marking stays on the CHARACTER LEFT upper arm; sword stays in the CHARACTER RIGHT hand. Do not mirror the costume or move the marking to the other arm to make it visible. In right-facing profile the marking is on the far shoulder and may be occluded.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "needs_review",
+  "attempts": 2,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T12:45:32.418182+00:00",
+  "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_03_v002__attempt_02.png",
+  "sha256": "dd93d0bbdfc18f562ad71cc762b4b2464640e8ca85c43de88a5d798a3fc3e351",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "down",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_bbox": [
+      195,
+      81,
+      930,
+      1205
+    ],
+    "source_contact_x": 700.8821656050956,
+    "scale": 0.07294332723948811,
+    "native_bounds": [
+      11,
+      8,
+      65,
+      90
+    ],
+    "paste_position": [
+      11,
+      8
+    ]
+  },
+  "previous_native_candidates": [
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_03.png",
+      "sha256": "4207b08f660be0b01d2c86de5bc4bbac7220990fdd0f23807b01accb9302299a",
+      "reason": "Previous bounding-box center anchor replaced by measured foot contact"
+    },
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_03_aligned_v001.png",
+      "sha256": "fb3a075d92dc073ba94b4baef194ef206718df7df5ff29227a7acd06918ebf40",
+      "reason": "Two-foot anchor, invisible alpha noise cleanup, common scale with pose margin"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "output": "assets/characters/hero/map/down/hero_map_down_walk_03_aligned_v004.png",
+      "sha256": "adff4602babe70e11803df8d18ac5666f6f5c8ba542d525c7705c6e3c7ce25d4",
+      "source_png": "assets/characters/hero/map/down/sources/hero_map_down_walk_03__attempt_01.png",
+      "reason": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+    }
+  ],
+  "last_error": "Sequence review: repeated leading leg or incorrect facing; redraw explicit opposite-contact/transfer/passing phase while preserving direction and identity"
+}

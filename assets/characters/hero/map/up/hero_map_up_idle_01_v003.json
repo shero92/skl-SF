@@ -1,0 +1,91 @@
+{
+  "id": "CHAR001_map_up_idle_01",
+  "character_id": "CHAR001",
+  "slug": "hero",
+  "kind": "map",
+  "state": "idle",
+  "direction": "up",
+  "frame": 1,
+  "output": "assets/characters/hero/map/up/hero_map_up_idle_01_v003.png",
+  "source_reference": "map_factory/references/characters/hero.png.png",
+  "prompt": "Use case: stylized-concept. Generate ONE standalone native pixel-art RPG MAP sprite of Hero, cardinal UP direction, neutral idle, CHAR001_map_up_idle_01 attempt 3. The sole supplied reference is an authentic crop of the original poster's BACK TURNAROUND. It is a DESIGN REFERENCE ONLY, not a finished game sprite. Redraw this exact BACK design as a compact 3-head-tall map character, body about 78 native pixels high with a readable large 25-pixel head, on a logical 96x96 transparent canvas, ground contact [48,90]. Copy BACK costume construction accurately: tousled brown hair seen from behind; broad blue cowl with gold edging across shoulders; layered LONG blue/cream feathered and shredded cloth mantle hanging over the back from shoulders to hips and backs of knees; cream feather trim, blue cloth and gold geometric details, small coral-red accents, brown rope belt, forearm wraps and strapped sandals from behind. The mantle is the dominant rear silhouette, NOT a bare back wearing the front necklace. There is NO chest necklace or round chest medallion painted on the back. Upper arms mostly concealed by rear mantle; do NOT invent blue tattoos on either visible back arm. Head looks directly away toward top edge, no eyes, nose, front face or side profile. Rear heels and calf straps face viewer; toes point away. Original decorated sword in anatomical RIGHT hand, on SCREEN RIGHT, angled down, full weapon visible. Warm upper-left coastal light. Carefully designed crisp 1-3 native-pixel clusters and clean outline. If output resolution is larger, use enlarged native pixel blocks, not a high-resolution illustration to be shrunk. Preserve original brown, coastal blue, cream, muted gold and coral palette. ONE complete character and ONE pose only. No text (omit BACK caption), no poster background, no border, no adjacent figure fragments, no extra character, no sprite sheet, no collage, no floor or cast shadow. True transparent RGBA background. Keep margins and full silhouette.",
+  "target_dimensions": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "transparent_background": true,
+  "status": "failed",
+  "attempts": 3,
+  "validation_result": {
+    "png": true,
+    "dimensions": [
+      96,
+      96
+    ],
+    "alpha": true,
+    "normalization": "NEAREST uniform fit alpha bounds; ground anchor; source preserved",
+    "native_visual_review": "required",
+    "identity": "unapproved",
+    "sequence": "unapproved"
+  },
+  "approval_status": "pending",
+  "started_at": "2026-10-31T03:44:44.342867+00:00",
+  "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_01_v003__attempt_03.png",
+  "sha256": "96e9881bf0fea1d58064ee4bbeabdd4bc5ac685a293a0f95a2428cde2c9e0916",
+  "source_reference_sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+  "pixel_dimensions": [
+    96,
+    96
+  ],
+  "footprint": [
+    1,
+    1
+  ],
+  "orientation": "up",
+  "normalization": {
+    "kind": "fixed_ground_contact",
+    "alpha_noise_cutoff": 1,
+    "source_size": [
+      1247,
+      1261
+    ],
+    "source_bbox": [
+      341,
+      79,
+      1086,
+      1213
+    ],
+    "source_contact_x": 633.4919871794872,
+    "scale": 0.07039294306335203,
+    "native_bounds": [
+      27,
+      10,
+      79,
+      90
+    ],
+    "paste_position": [
+      27,
+      10
+    ]
+  },
+  "rejected_candidates": [
+    {
+      "output": "assets/characters/hero/map/up/hero_map_up_idle_01.png",
+      "sha256": "321d4bd0d02ef9d669e574d27efd74106bc453b1470f91d19c9c821aefadaeda",
+      "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_01__attempt_01.png",
+      "reason": "Source comparison: rear mantle missing, front necklace shown on back, tattoo on wrong arm and front-facing toes in up view"
+    },
+    {
+      "output": "assets/characters/hero/map/up/hero_map_up_idle_01_v002.png",
+      "sha256": "b29a4ec4dfd1efb9efb20f998cfa3f5773809855dcb374a38ed10cb972a61a6d",
+      "source_png": "assets/characters/hero/map/up/sources/hero_map_up_idle_01_v002__attempt_02.png",
+      "reason": "Back design still mismatches original: front chest medallion remains and tattoos duplicated on both arms; regenerate from isolated original back design reference"
+    }
+  ],
+  "last_error": "Back design still mismatches original: front chest medallion remains and tattoos duplicated on both arms; regenerate from isolated original back design reference",
+  "rejection_reason": "Native directional comparison: rear head/body ratio is smaller than other baselines; refine base head proportion and preserve correct rear costume"
+}
