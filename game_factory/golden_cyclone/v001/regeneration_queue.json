@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "task_id": "TASK-0074",
+  "policy": "docs/GRAPHICS_PRODUCTION_POLICY.md",
+  "scope": "فقط إطارات Phantom Dash المفقودة كمصادر مستقلة؛ لا إعادة توليد للمراجع أو إطارات TASK-0070 المستقلة دون عيب مثبت.",
+  "rejected_source": {
+    "path": "H:/shining force/skl-SF/.worktrees/TASK-0072-hero-attack-art/game_factory/hero_attack_style/v001/phantom_dash_body_source.png",
+    "sha256": "3784bdc287f928981eaf17d26565bf4ec81b82c36e413cbc6bcb27d9e8599da3",
+    "status": "needs_regeneration",
+    "reason": "مصدر متعدد الوضعيات 1254×1254؛ كل وضعية محدودة بخلايا نحو 313px مع تجاوزات حدود؛ لا توجد PNGs مستقلة مشتقة منه."
+  },
+  "frames": [
+    {
+      "frame_id": "hero_phantom_dash_010",
+      "priority_order": 1,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_009",
+      "priority_order": 2,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_011",
+      "priority_order": 3,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_005",
+      "priority_order": 4,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_006",
+      "priority_order": 5,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_007",
+      "priority_order": 6,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_008",
+      "priority_order": 7,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_012",
+      "priority_order": 8,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_004",
+      "priority_order": 9,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_003",
+      "priority_order": 10,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_002",
+      "priority_order": 11,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_013",
+      "priority_order": 12,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_014",
+      "priority_order": 13,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_015",
+      "priority_order": 14,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_001",
+      "priority_order": 15,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    },
+    {
+      "frame_id": "hero_phantom_dash_016",
+      "priority_order": 16,
+      "status": "needs_regeneration",
+      "reason": "missing_individually_generated_source",
+      "source_image_path": null
+    }
+  ],
+  "excluded_existing_frames": {
+    "count": 12,
+    "reason": "توجد مصادر مستقلة 1254×1254 وطلبات منفصلة؛ يبقى تقييم الجودة needs_review دون إعادة توليد جماعية."
+  },
+  "unverified_studies": [
+    {
+      "name": "hero_attack_critical_leap.gif",
+      "status": "reference_only",
+      "production_frame_provenance": "unverified",
+      "regeneration_frames": []
+    },
+    {
+      "name": "hero_attack_smooth_dash.gif",
+      "status": "reference_only",
+      "production_frame_provenance": "unverified",
+      "regeneration_frames": []
+    },
+    {
+      "name": "hero_attack_cinematic_combo.gif",
+      "status": "reference_only",
+      "production_frame_provenance": "unverified",
+      "regeneration_frames": []
+    }
+  ]
+}
