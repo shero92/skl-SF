@@ -11,7 +11,9 @@ TEXT_EXT = {".md", ".json", ".py", ".gd", ".tscn", ".tres", ".godot",
 GENERATED_NAMES = {"INDEX.md", "FILES.md", "TASKS.md", "ACTIVE.md",
                    "QUEUE.md", "summary.md", "summary.json"}
 FORBIDDEN_PARTS = {"characters", "ui", "portraits", "gameplay"}
-ALLOWED_PREFIXES = ("map_factory/", "tools/", "scenes/map_factory_preview.")
+# scenes/battle/ and game_factory/battle/: Battle Animation System scope requested by the owner on 2026-11-02
+# (new battle-only files; characters, UI, portraits and gameplay folders stay forbidden below).
+ALLOWED_PREFIXES = ("map_factory/", "tools/", "scenes/map_factory_preview.", "scenes/battle/", "game_factory/battle/")
 # Owner-approved Map Factory documents outside the coding prefixes: exact paths only, never their folder.
 APPROVED_DOCS = {"docs/HERO_ROOM_CALIBRATION.md"}
 
