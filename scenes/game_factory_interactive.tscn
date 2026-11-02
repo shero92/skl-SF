@@ -1,4 +1,0 @@
-[gd_scene load_steps=2 format=3]
-[ext_resource type="PackedScene" path="res://scenes/game_factory_demo.tscn" id="1"]
-[node name="InteractiveRoom" instance=ExtResource("1")]
-mode = "interactive"

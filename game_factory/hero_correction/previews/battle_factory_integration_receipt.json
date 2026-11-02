@@ -1,8 +1,0 @@
-{
-  "damage_not_overwritten": true,
-  "map_position_and_facing_restored": true,
-  "modular_equipment_in_existing_factory": true,
-  "movement_restored": true,
-  "passed": true,
-  "runtime_swap_during_attack": true
-}
