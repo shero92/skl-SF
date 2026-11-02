@@ -1,10 +1,10 @@
 ---
 id: TASK-0083
-status: todo
+status: done
 owner: aider
 agent: aider
 priority: normal
-branch: none
+branch: aider/task-0083
 depends_on: TASK-0075,TASK-0079
 issue: none
 art_request: none

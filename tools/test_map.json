@@ -2,6 +2,22 @@
   "version": 1,
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
+    {"id": "battle_controller", "kind": "python", "covers": "Attacker/defender battle controller lifecycle, busy and missing-asset rejection, cancellation, reset and reentrant signal safety.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_controller.py"], "paths": ["scenes/battle/battle_animation_controller.gd", "scenes/battle/battle_timeline.gd", "tools/verify_battle_controller.gd", "tools/tests/test_battle_controller.py", "tools/battle_godot_harness.py", ".agents/planner/config.json"]},
+    {
+      "id": "battle_perspective",
+      "kind": "python",
+      "covers": "Battle perspective table, authored front/rear asset requirements, missing-art warnings and rejection of fabricated substitutes.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_perspective.py"],
+      "paths": ["scenes/battle/battle_perspective.gd", "tools/verify_battle_perspective.gd", "tools/tests/test_battle_perspective.py", ".agents/planner/config.json"]
+    },
+    {"id": "battle_camera", "kind": "python", "covers": "Headless battle camera focus, zoom, follow, presets, hitstop, bounded shake, frame-rate independence and exact restore.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_camera.py"], "paths": ["scenes/battle/dynamic_battle_camera.gd", "tools/verify_battle_camera.gd", "tools/tests/test_battle_camera.py", ".agents/planner/config.json"]},
+    {
+      "id": "battle_vfx",
+      "kind": "python",
+      "covers": "Isolated named VFX slots, existing effect asset IDs, per-frame socket trail samples, safe toggling and immediate clear.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_vfx.py"],
+      "paths": ["scenes/battle/battle_vfx_layer.gd", "tools/verify_battle_vfx.gd", "tools/tests/test_battle_vfx.py", ".agents/planner/config.json"]
+    },
     {"id": "battle_timeline", "kind": "python", "covers": "Deterministic battle timeline, silent preview controls, hitstop timing and shared headless Godot harness failure handling.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_timeline.py"], "paths": ["scenes/battle/battle_timeline.gd", "tools/verify_battle_timeline.gd", "tools/battle_godot_harness.py", "tools/tests/test_battle_timeline.py", ".agents/planner/config.json"]},
     {
       "id": "weapon_sockets",
