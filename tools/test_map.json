@@ -217,7 +217,7 @@
       "id": "godot_import",
       "kind": "godot",
       "covers": "Godot headless resource import and script parse.",
-      "command": ["{godot}", "--headless", "--path", ".", "--editor", "--quit"],
+      "command": ["{godot}", "--headless", "--path", ".", "--editor", "--import"],
       "paths": ["project.godot", "**/*.gd", "**/*.tscn", "**/*.tres", "map_factory/parts/**"]
     },
     {
