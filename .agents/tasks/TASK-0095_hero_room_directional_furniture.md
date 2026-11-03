@@ -32,6 +32,9 @@ Do not write the path or file name of any file that is not in `touches` anywhere
 
 Router registration: add ONE entry for test_directional_furniture.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; leave every other entry untouched.
 
+## Facts from the first run (the generator failed with: Missing canonical directional art for north)
+In the legacy catalog the bed uses four plain ids, not suffixed ones: north=F03, east=F04, south=F01, west=F02 (no F01_north exists). Every other furniture item X from F05 to F12 has X_north, X_east, X_south and X_west plus plain X, all present. So the direction lookup must special-case the bed group and use the X_dir pattern for the others; never raise for a facing that has a registered id. Keep the existing direction_asset_ids that the F01, F05 and F09 entries already carry working, and keep every previously merged test passing.
+
 ## Acceptance criteria
 - [ ] All furniture resolves facing to the right image; four directions covered by test
 - [ ] No PNG or generated asset changed
