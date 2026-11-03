@@ -4,11 +4,21 @@ var player: HeroPlayer
 var dialogue: DialogueUI
 var interactions: Array = []
 
+const MAP_ID := "hero_room_01"
+# Gameplay data (spawn, NPCs, interaction spots) stays in the legacy room JSON.
+const GAMEPLAY_PATH := "res://map_factory/rooms/hero_room.json"
+
 func _ready() -> void:
-    var map_path := "res://map_factory/rooms/hero_room.json"
+    # Always render the newest Map Factory version through the registry.
     var factory := RoomFactory.new()
-    var room := factory.build_room(map_path, self)
-    var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(map_path))
+    var room := factory.build_latest(MAP_ID, self)
+    if not room.has_node("Entities"):
+        var entities := Node2D.new()
+        entities.name = "Entities"
+        entities.y_sort_enabled = true
+        entities.z_index = 35
+        room.add_child(entities)
+    var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(GAMEPLAY_PATH))
     if typeof(data) != TYPE_DICTIONARY:
         push_error("Cannot load room interactions")
         return
