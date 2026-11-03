@@ -34,6 +34,11 @@ except ImportError:
         canonical_asset_id, furniture_direction_ids, resolve_orientation,
     )
 
+try:
+    from .room_assembly import content_bounds, fit_registered_block
+except ImportError:
+    from room_assembly import content_bounds, fit_registered_block
+
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / "assets_generated"
 CATALOG_PATH = ROOT / "map_factory" / "metadata" / "asset_index.json"
@@ -952,6 +957,154 @@ def canonical_blocks(catalog, blocks):
     return result
 
 
+REFERENCE_ZONES = {
+    "RearArch": (555, 0, 990, 390),
+    "ArchColumnLeft": (535, 150, 610, 390),
+    "ArchColumnRight": (935, 150, 1010, 390),
+    "RearRightDoor": (1210, 100, 1390, 340),
+    "RoyalBed": (250, 335, 550, 625),
+    "BedRug": (220, 430, 580, 665),
+    "BedsideTable": (195, 430, 265, 530),
+    "LeftBookcase": (275, 240, 510, 345),
+    "RightBookcase": (1050, 245, 1275, 350),
+    "DiningTable": (1030, 430, 1320, 625),
+    "TableRug": (1000, 490, 1350, 675),
+    "CompassFloorEmblem": (635, 545, 890, 730),
+    "EntrancePillarLeft": (600, 725, 655, 850),
+    "EntrancePillarRight": (875, 725, 930, 850),
+    "StairSupportLeft": (610, 835, 655, 970),
+    "StairSupportRight": (875, 835, 920, 970),
+}
+
+
+def reference_relayout_blocks(catalog):
+    """Build explicit environment placements; retain the established wall run."""
+    entries = [
+        entry for entry in layout_entries()
+        if not entry["instance_id"].startswith(("Crate", "TableBench"))
+    ]
+    blocks, _ = resolve_entries(catalog, entries)
+    blocks = canonical_blocks(catalog, blocks)
+    by_id = {block["instance_id"]: block for block in blocks}
+    original = deepcopy(by_id)
+
+    def fit(name, zone, maximum=1.0):
+        block = by_id[name]
+        asset = record(catalog, block["id"])
+        fitted = fit_registered_block(
+            asset, measurement(catalog, block["id"]), block, zone, maximum,
+        )
+        fitted.pop("grid_placement", None)
+        by_id[name] = fitted
+
+    for name, zone in REFERENCE_ZONES.items():
+        fit(name, zone, 2.4 if name == "RearArch" else 1.0)
+    for index in range(4):
+        fit(f"StairStep{index + 1}",
+            (655, 755 + index * 58, 875, 850 + index * 58), 1.6)
+
+    # Keep attached props on the resized host using the same uniform transform.
+    for block in blocks:
+        name = block["instance_id"]
+        host = block.get("mount_on")
+        if host:
+            before, after = original[host], by_id[host]
+            ratio = after["scale"] / before["scale"]
+            dx, dy = block["mount_offset"]
+            by_id[name] = {
+                **block, "x": after["x"] + dx * ratio,
+                "y": after["y"] + dy * ratio,
+                "scale": block["scale"] * ratio,
+                "mount_offset": [dx * ratio, dy * ratio],
+            }
+
+    # Flower mounts flank the opening rather than covering the ocean aperture.
+    for name, asset_id, dx in (
+        ("RearArchFlowersLeft", "P12", -165),
+        ("RearArchFlowersRight", "P13", 165),
+    ):
+        host = by_id["RearArch"]
+        asset_id = canonical_asset_id(
+            asset_id, {asset["id"]: asset for asset in catalog["assets"]},
+        )
+        by_id[name] = {
+            "id": asset_id, "instance_id": name,
+            "x": host["x"] + dx, "y": host["y"],
+            "scale": 0.4, "_layer": "back_objects",
+            "render_layer": "decorations", "mount_on": "RearArch",
+            "mount_offset": [dx, 0],
+        }
+    result = list(by_id.values())
+    validate_reference_relayout(catalog, result)
+    return result
+
+
+def validate_reference_relayout(catalog, blocks):
+    """Reject missing textures, misplaced focal features and blocked circulation."""
+    from math import isfinite
+
+    by_id = {block["instance_id"]: block for block in blocks}
+    if len(by_id) != len(blocks):
+        raise ValueError("Duplicate placement identity")
+    bounds = {}
+    for block in blocks:
+        asset = record(catalog, block["id"])
+        if not sidecar_png(catalog, block["id"]).is_file():
+            raise ValueError("Missing registered texture")
+        if (not all(isfinite(block[key]) for key in ("x", "y", "scale"))
+                or block["scale"] <= 0
+                or block.get("rotation", 0) != 0
+                or block.get("flip_h") or block.get("flip_v")):
+            raise ValueError("Invalid sprite transform")
+        bounds[block["instance_id"]] = content_bounds(
+            asset, measurement(catalog, block["id"]), block,
+        )
+        if block.get("mount_on") and block["mount_on"] not in by_id:
+            raise ValueError("Missing mount host")
+        if "direction_asset_ids" in block:
+            variants = block["direction_asset_ids"]
+            if set(variants) != {"north", "east", "south", "west"}:
+                raise ValueError("Incomplete directional furniture")
+            textures = {sidecar_png(catalog, value) for value in variants.values()}
+            if len(textures) != 4 or not all(path.is_file() for path in textures):
+                raise ValueError("Directional furniture requires four textures")
+            if block["id"] != variants[block["facing"]]:
+                raise ValueError("Incorrect directional texture")
+    for name, zone in REFERENCE_ZONES.items():
+        left, top, right, bottom = bounds[name]
+        if (left < zone[0] - 0.001 or top < zone[1] - 0.001
+                or right > zone[2] + 0.001 or bottom > zone[3] + 0.001):
+            raise ValueError(f"Feature outside target zone: {name}")
+
+    # Rugs and mounted props intentionally overlap their hosts. Solid furniture
+    # must remain separate and leave a two-cell central route to the stairs.
+    solids = ("RoyalBed", "BedsideTable", "LeftBookcase",
+              "RightBookcase", "DiningTable")
+    def overlaps(a, b):
+        return a[0] < b[2] and b[0] < a[2] and a[1] < b[3] and b[1] < a[3]
+
+    for index, name in enumerate(solids):
+        if overlaps(bounds[name], (700, 390, 828, 850)):
+            raise ValueError("Furniture blocks central circulation")
+        for other in solids[index + 1:]:
+            if overlaps(bounds[name], bounds[other]):
+                raise ValueError("Solid furniture overlap")
+    floor = {(cell["x"], cell["y"]) for cell in floor_layout()}
+    if not all((x, y) in floor for x in (7, 8, 9) for y in range(2, 10)):
+        raise ValueError("Central route lacks floor coverage")
+
+
+def next_reference_version():
+    """Choose the immediate successor; never skip an existing patch."""
+    with open(LATEST, encoding="utf-8") as stream:
+        version = json.load(stream)["version"] + 1
+    if version <= 13:
+        raise ValueError("Reference relayout requires a post-v0013 parent")
+    if (PATCH_DIR / f"v{version:04d}.json").exists():
+        raise FileExistsError("Next patch already exists")
+    return version
+
+
 def build_patch(version):
     """Return a deterministic patch from read-only inputs; never write outputs."""
     if type(version) is not int or version < 2:
@@ -971,6 +1124,8 @@ def build_patch(version):
             raise ValueError(f"Mount host missing for {block['instance_id']}")
     if version != 12:
         blocks = canonical_blocks(catalog, blocks)
+    if version > 13:
+        blocks = reference_relayout_blocks(catalog)
     manifest = patch_manifest(catalog, blocks, latest)
     if version != 12:
         assets = {asset["id"]: asset for asset in catalog["assets"]}
@@ -1006,6 +1161,30 @@ def build_patch(version):
             f"replace v{version - 1:04d} layout using approved v2 assets; "
             "PNG bytes unchanged. Visual approval pending."
         )
+    if version > 13:
+        # Historical source metadata does not identify the new owner target.
+        manifest.pop("source_image", None)
+        manifest["changes"] = [
+            change for change in manifest["changes"]
+            if change.get("key") not in ("source_image", "composition_reference")
+        ]
+        for change in manifest["changes"]:
+            if change.get("key") == "visual_qa":
+                change["value"].update({
+                    "visual_approval": False,
+                    "target_dimensions": [1536, 1024],
+                    "target_sha256": (
+                        "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4"
+                        "da5bcaea948668b"
+                    ),
+                    "limitations": [
+                        "Target intake and machine contract require operator verification.",
+                        "Square floor tiles cannot reproduce oblique perspective.",
+                        "Compact rugs and low shelves differ from the target.",
+                        "Directional side-wall banners require an art audit.",
+                        "Arch aperture and coastal foam require rendered comparison.",
+                    ],
+                })
     return manifest
 
 
@@ -1018,7 +1197,8 @@ def write_patch(catalog, blocks, version=12):
         manifest = build_patch(version)
     destination = PATCH_DIR / f"v{version:04d}.json"
     PATCH_DIR.mkdir(parents=True, exist_ok=True)
-    with open(destination, "w", encoding="utf-8", newline="\n") as f:
+    with open(destination, "w" if version == 12 else "x",
+              encoding="utf-8", newline="\n") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
         f.write("\n")
     print(f"wrote patch: {destination} ({len(manifest['changes'])} changes)")
@@ -1032,15 +1212,19 @@ def write_patch(catalog, blocks, version=12):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Build the hero room patch.")
-    parser.add_argument("--patch-version", type=int, default=12)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--patch-version", type=int, default=12)
+    mode.add_argument("--reference-relayout", action="store_true")
     args = parser.parse_args(argv)
+    if args.reference_relayout:
+        args.patch_version = next_reference_version()
     if args.patch_version < 2:
         parser.error("--patch-version must be at least 2")
     if args.patch_version != 12:
         manifest = build_patch(args.patch_version)
         destination = PATCH_DIR / f"v{args.patch_version:04d}.json"
         PATCH_DIR.mkdir(parents=True, exist_ok=True)
-        with open(destination, "w", encoding="utf-8", newline="\n") as f:
+        with open(destination, "x", encoding="utf-8", newline="\n") as f:
             json.dump(manifest, f, ensure_ascii=False, indent=2)
             f.write("\n")
         print(f"wrote patch: {destination} ({len(manifest['changes'])} changes)")
