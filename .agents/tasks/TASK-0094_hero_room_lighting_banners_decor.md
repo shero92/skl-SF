@@ -28,6 +28,8 @@ Scope: only the files in touches. Never create, edit, move or delete any PNG or 
 
 Use plain ASCII characters only in every reply, comment, string and file you write (no arrows, typographic quotes or dashes): the Windows console used by the worker crashes on other characters before your edits are applied.
 
+Do not write the path or file name of any file that is not in `touches` anywhere in your reply or in the files you edit (not in prose, not in the `paths` list of the tools/test_map.json entry, not in comments): Aider treats such a mention as a request to add the file, discards your edits and asks again. In the test_map.json entry list in `paths` only files from `touches`; read other data files at runtime inside the test by constructing the path from parts.
+
 Router registration: add ONE entry for test_hero_room_lighting_decor.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; leave every other entry untouched.
 
 ## Acceptance criteria

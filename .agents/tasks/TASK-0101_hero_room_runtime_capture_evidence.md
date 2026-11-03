@@ -28,3 +28,6 @@ Reference: `docs/HERO_ROOM_20261103_VISUAL_TARGET.md`. Depends on the audited co
 ## Acceptance
 - Tests and `python tools/run_tests.py --changed` pass; no PNG or character assets changed by Aider.
 - Operator can generate a real capture and structured discrepancy report without undocumented manual steps.
+
+## Reply rules
+Do not write the path or file name of any file that is not in `touches` anywhere in your reply or in the files you edit (not in prose, not in the `paths` list of the tools/test_map.json entry, not in comments): Aider treats such a mention as a request to add the file, discards your edits and asks again. In the test_map.json entry list in `paths` only files from `touches`; read other data files at runtime inside the test by constructing the path from parts. Use plain ASCII characters only in every reply, comment, string and file you write.
