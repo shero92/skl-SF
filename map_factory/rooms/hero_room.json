@@ -476,8 +476,8 @@
     {
       "instance_id": "ForestGuardianB",
       "name": "Forest Guardian",
-      "x": 1057,
-      "y": 698,
+      "x": 1010,
+      "y": 745,
       "radius": 92,
       "lines": [
         "The old stone arch holds many memories.",
