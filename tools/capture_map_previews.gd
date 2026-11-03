@@ -5,6 +5,37 @@ extends SceneTree
 ## Use a virtual X11 display and OpenGL3 in CI; headless dummy rendering cannot screenshot.
 const OUTPUT: String = "res://docs/previews/map_factory_renders/"
 
+var capture_request: Dictionary = {}
+var resolved_assets: Array = []
+var source_errors: Array = []
+
+func _collect_sources(node: Node, allowed: Array) -> void:
+    if node is Sprite2D and node.texture != null:
+        var texture_path: String = node.texture.resource_path
+        var relative := texture_path.trim_prefix("res://")
+        if not relative in allowed or not FileAccess.file_exists(texture_path):
+            source_errors.append(texture_path)
+        else:
+            var transform: Transform2D = node.get_global_transform_with_canvas()
+            var rect: Rect2 = node.get_rect()
+            var corners := [
+                transform * rect.position,
+                transform * Vector2(rect.end.x, rect.position.y),
+                transform * rect.end,
+                transform * Vector2(rect.position.x, rect.end.y)]
+            var bounds := Rect2(corners[0], Vector2.ZERO)
+            for corner in corners:
+                bounds = bounds.expand(corner)
+            resolved_assets.append({
+                "node": String(node.get_path()),
+                "texture_path": texture_path,
+                "texture_sha256": FileAccess.get_sha256(texture_path),
+                "bounds": [bounds.position.x, bounds.position.y, bounds.size.x, bounds.size.y]})
+    elif node is CanvasItem and not node is Node2D:
+        source_errors.append("Unsupported drawable: " + String(node.get_class()))
+    for child in node.get_children():
+        _collect_sources(child, allowed)
+
 func _initialize() -> void:
     call_deferred("_capture_all")
 
@@ -24,6 +55,7 @@ func _capture_all() -> void:
             push_error("Invalid capture manifest")
             quit(1)
             return
+        capture_request = request
         cases = request["cases"]
         capture_id = String(request.get("capture_id", ""))
     else:
@@ -46,7 +78,7 @@ func _capture_all() -> void:
         if not case is Dictionary:
             failures += 1
             continue
-        var map_id: String = case["id"]
+        var map_id: String = String(case.get("id", ""))
         var version: int = int(case.get("version", 0))
         if valid_id.search(map_id) == null or version < 1 or String(case.get("file", "")) != "%s_v%04d.png" % [map_id, version]:
             push_error("Unsafe capture case identity or filename")
@@ -63,6 +95,28 @@ func _capture_all() -> void:
             failures += 1
             continue
         var map_data: Dictionary = record
+        var output_dir: String = OUTPUT
+        if not capture_request.is_empty():
+            output_dir = String(capture_request.get("output_dir", ""))
+            if valid_id.search(capture_id) == null or output_dir != OUTPUT + capture_id + "/" or version <= 13:
+                push_error("Unsafe evidence output directory or historic version")
+                failures += 1
+                continue
+            if FileAccess.get_sha256(path) != String(case.get("snapshot_sha256", "")):
+                push_error("Snapshot hash mismatch")
+                failures += 1
+                continue
+            if map_data.get("canvas_size", [1536, 1024]) != [1536, 1024]:
+                push_error("Evidence capture requires the reference canvas")
+                failures += 1
+                continue
+        var target: String = output_dir + String(case["file"])
+        var receipt_path: String = target.get_basename() + ".json"
+        if FileAccess.file_exists(target) or FileAccess.file_exists(receipt_path):
+            push_error("Refusing to overwrite an existing capture")
+            failures += 1
+            continue
+        DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(output_dir))
         var dim: Array = map_data.get("canvas_size", [1536, 1024])
         var size := Vector2i(int(dim[0]), int(dim[1]))
         if size.x < 100 or size.y < 100 or size.x > 4096 or size.y > 4096:
@@ -82,6 +136,11 @@ func _capture_all() -> void:
         viewport.add_child(parent)
         var factory := RoomFactory.new()
         var room := factory.build_room(path, parent)
+        if room == null:
+            push_error("Room Factory did not build the snapshot")
+            failures += 1
+            viewport.queue_free()
+            continue
         room.name = map_id + "_built_from_blocks"
         var camera := Camera2D.new()
         camera.name = "CaptureCamera"
@@ -93,8 +152,18 @@ func _capture_all() -> void:
             await process_frame
         await RenderingServer.frame_post_draw
 
+        resolved_assets = []
+        source_errors = []
+        if not capture_request.is_empty():
+            _collect_sources(room, capture_request.get("allowed_textures", []))
+            if not source_errors.is_empty() or resolved_assets.is_empty():
+                push_error("Unregistered, missing or unsupported environment sources: " + str(source_errors))
+                failures += 1
+                viewport.queue_free()
+                for _frame in range(3):
+                    await process_frame
+                continue
         var picture := viewport.get_texture().get_image()
-        var target: String = OUTPUT + String(case["file"])
         if picture == null or picture.get_width() != size.x or picture.get_height() != size.y:
             push_error("Actual viewport screenshot unavailable: " + target)
             failures += 1
@@ -102,10 +171,15 @@ func _capture_all() -> void:
             var error := picture.save_png(target)
             if error == OK:
                 var proof: Dictionary = {"capture_id": capture_id, "map_id": map_id,
-                    "version": version, "snapshot_sha256": case.get("snapshot_sha256", ""),
+                    "version": version, "snapshot_sha256": FileAccess.get_sha256(path),
                     "canvas_size": [size.x, size.y], "camera_position": [size.x * 0.5, size.y * 0.5],
                     "camera_zoom": [1, 1], "render_sha256": FileAccess.get_sha256(target)}
-                var receipt := FileAccess.open(target.get_basename() + ".json", FileAccess.WRITE)
+                proof["commit"] = capture_request.get("commit", "")
+                proof["target_sha256"] = capture_request.get("target_sha256", "")
+                proof["resolved_assets"] = resolved_assets
+                proof["environment_only"] = not capture_request.is_empty()
+                proof["visual_approval"] = false
+                var receipt := FileAccess.open(receipt_path, FileAccess.WRITE)
                 if receipt == null:
                     push_error("Cannot write capture receipt")
                     failures += 1
