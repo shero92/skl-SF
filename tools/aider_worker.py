@@ -577,6 +577,8 @@ def _execute(task, cfg, sleep, runner):
     taskcopy.write_text(task["text"], encoding="utf-8", newline="\n")
     reads.append(taskcopy)
     env = dict(os.environ)
+    env.setdefault("PYTHONUTF8", "1")  # Aider crashes on non-cp1252 characters in its console output
+    env.setdefault("PYTHONIOENCODING", "utf-8")
     repair = ""
     usage_total = {}
     try:
