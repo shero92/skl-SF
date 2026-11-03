@@ -3,6 +3,7 @@ Shadows are the fifth DATA pass; they draw between ground and walls at z20.
 """
 from __future__ import annotations
 from copy import deepcopy
+from math import isfinite
 from map_factory_orientation import resolve_orientation, rotate_offset
 from map_factory_placement import resolved_cells
 
@@ -140,6 +141,161 @@ def create_layer_stack(snapshot,catalog):
       "lighting_effects":deepcopy(snapshot.get("effects",[])),
       "quality_status":"needs_review",
       "note":"Shadows are last DATA pass, rendered z20 below walls z30 and props z40."}
+
+VERIFY_LEVELS = (
+    "background", "ground", "walls", "furniture_decor", "shadows_overlays"
+)
+VERIFY_ALIASES = {
+    "decorations": "furniture_decor",
+    "shadows": "shadows_overlays",
+}
+
+
+def verify_layers(map_json, v2):
+    """Return an independent validation report without modifying either input.
+
+    Anchors use pixel coordinates. Scale exceptions must be declared by the
+    registry's allowed_scales list. Legacy compiled pass names are accepted,
+    but their display depths must still follow the five-level rule.
+    """
+    violations = []
+    counts = {"objects": 0, **dict.fromkeys(VERIFY_LEVELS, 0)}
+
+    def fail(code, ident, message):
+        violations.append({"code": code, "instance_id": ident, "message": message})
+
+    def number(value):
+        return (
+            isinstance(value, (int, float))
+            and not isinstance(value, bool)
+            and isfinite(value)
+        )
+
+    def pair(value):
+        if isinstance(value, dict):
+            value = [value.get("x"), value.get("y")]
+        if (isinstance(value, (list, tuple)) and len(value) == 2
+                and all(number(item) for item in value)):
+            return list(value)
+        return None
+
+    records = v2.get("assets", v2)
+    if isinstance(records, list):
+        records = {
+            record.get("id", record.get("asset_id")): record
+            for record in records if isinstance(record, dict)
+        }
+    if not isinstance(records, dict):
+        raise ValueError("Registry must contain keyed records or an assets list")
+
+    stack = map_json.get("layer_stack", map_json)
+    groups = []
+    depths = {}
+    if isinstance(stack, dict) and isinstance(stack.get("passes"), dict):
+        depths = stack.get("display_z", {})
+        groups = list(stack["passes"].items())
+    elif isinstance(stack, list):
+        for entry in stack:
+            if not isinstance(entry, dict):
+                fail("layer", None, "Layer stack entry must be an object")
+                continue
+            children = entry.get("objects", entry.get("entries"))
+            if children is not None:
+                layer = entry.get("render_layer", entry.get("name", entry.get("layer")))
+                groups.append((layer, children))
+                if "z_index" in entry:
+                    depths[layer] = entry["z_index"]
+            else:
+                groups.append((None, [entry]))
+    elif isinstance(stack, dict) and isinstance(stack.get("objects"), list):
+        groups = [(None, stack["objects"])]
+    else:
+        # Source maps can be checked without compiling or changing a snapshot.
+        for source, layer in zip(
+            SOURCE_LAYERS,
+            ("background", "ground", "walls", "furniture_decor", "shadows_overlays"),
+        ):
+            if source in map_json:
+                groups.append((layer, map_json[source]))
+        if not groups:
+            fail("layer", None, "No object collection found")
+
+    previous_rank = -1
+    previous_y = {}
+    layer_depths = {}
+    for group_layer, objects in groups:
+        if not isinstance(objects, list):
+            fail("layer", None, "Layer objects must be a list")
+            continue
+        for obj in objects:
+            counts["objects"] += 1
+            if not isinstance(obj, dict):
+                fail("layer", None, "Placed object must be an object")
+                continue
+            ident = obj.get("instance_id", obj.get("id"))
+            raw_layer = obj.get("render_layer", obj.get("layer", group_layer))
+            layer = VERIFY_ALIASES.get(raw_layer, raw_layer)
+            group = VERIFY_ALIASES.get(group_layer, group_layer)
+            if layer not in VERIFY_LEVELS:
+                fail("layer", ident, "Unknown render layer: " + str(raw_layer))
+            else:
+                counts[layer] += 1
+                if group is not None and layer != group:
+                    fail("layer", ident, "Object does not belong to its containing layer")
+                rank = VERIFY_LEVELS.index(layer)
+                if rank < previous_rank:
+                    fail("layer_order", ident, "Layers are not in five-level order")
+                previous_rank = max(previous_rank, rank)
+                position = pair(obj.get("position"))
+                base_y = obj.get("base_y", position[1] if position else obj.get("y"))
+                if not number(base_y):
+                    fail("y_sort", ident, "Missing or invalid base y")
+                else:
+                    if layer in previous_y and base_y < previous_y[layer]:
+                        fail("y_sort", ident, "Objects must be ordered by base y")
+                    previous_y[layer] = base_y
+                depth = obj.get("display_z", depths.get(raw_layer))
+                if depth is not None:
+                    if not number(depth):
+                        fail("z_order", ident, "Display depth must be finite")
+                    else:
+                        layer_depths.setdefault(layer, []).append(depth)
+
+            orientation = obj.get("orientation") or {}
+            asset_id = orientation.get(
+                "resolved_asset_id", obj.get("asset_id", obj.get("id"))
+            )
+            record = records.get(asset_id)
+            if not isinstance(record, dict):
+                fail("registry", ident, "Asset has no registry record")
+                continue
+            expected = pair(record.get("render_pivot_px"))
+            anchor = pair(obj.get("anchor_px", obj.get("anchor", obj.get("origin"))))
+            if expected is None or anchor != expected:
+                fail("anchor", ident, "Anchor must match registered render_pivot_px")
+
+            scale = obj.get("scale", 1.0)
+            scale_pair = [scale, scale] if number(scale) else pair(scale)
+            allowed = [[1.0, 1.0]]
+            declarations = record.get("allowed_scales", [])
+            if isinstance(declarations, list):
+                for declared in declarations:
+                    candidate = [declared, declared] if number(declared) else pair(declared)
+                    if candidate is not None:
+                        allowed.append(candidate)
+            if (scale_pair is None or any(value <= 0 for value in scale_pair)
+                    or scale_pair not in allowed):
+                fail("scale", ident, "Scale must be 1.0 or registered in allowed_scales")
+
+    for lower_index, lower in enumerate(VERIFY_LEVELS):
+        for upper in VERIFY_LEVELS[lower_index + 1:]:
+            if (lower in layer_depths and upper in layer_depths
+                    and max(layer_depths[lower]) >= min(layer_depths[upper])):
+                fail("z_order", None, lower + " must draw below " + upper)
+
+    counts["violations"] = len(violations)
+    return {"ok": not violations, "counts": counts, "violations": violations}
+
 
 def validate_layer_stack(snapshot,catalog):
     current=snapshot.get("layer_stack")
