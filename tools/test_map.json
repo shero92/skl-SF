@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "directional_furniture",
+      "kind": "python",
+      "covers": "Canonical furniture aliases, four distinct existing directional images, facing selection, bed footprints, bench axes and rejection of missing art or sprite rotation.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_directional_furniture.py"],
+      "paths": ["tools/build_hero_room_blueprint.py", "tools/map_factory_orientation.py", "tools/tests/test_directional_furniture.py", "tools/test_map.json"]
+    },
+    {
       "id": "hero_room_lighting_decor",
       "kind": "python",
       "covers": "Perimeter wall and furniture decor mounts, v2 IDs, spaced lanterns, front glow overlays, banner layers and deterministic resolved offsets.",

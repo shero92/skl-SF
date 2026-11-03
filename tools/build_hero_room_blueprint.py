@@ -20,6 +20,18 @@ from pathlib import Path
 
 from PIL import Image
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+try:
+    from .map_factory_orientation import (
+        canonical_asset_id, furniture_direction_ids, resolve_orientation,
+    )
+except ImportError:
+    from map_factory_orientation import (
+        canonical_asset_id, furniture_direction_ids, resolve_orientation,
+    )
+
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / "assets_generated"
 CATALOG_PATH = ROOT / "map_factory" / "metadata" / "asset_index.json"
@@ -37,16 +49,57 @@ CANVAS = (1536, 1024)
 # ---------------------------------------------------------------------------
 
 
+def merge_directional_catalog(catalog, registry):
+    """Overlay canonical directional records on legacy placement metadata."""
+    assets = {asset["id"]: dict(asset) for asset in catalog["assets"]}
+    registered = registry.get("assets", registry.get("items", []))
+    if isinstance(registered, dict):
+        registered = [
+            dict(value, id=key) for key, value in registered.items()
+        ]
+    for asset in registered:
+        asset_id = asset.get("id", asset.get("key"))
+        aliases = asset.get("legacy_aliases", [])
+        if isinstance(aliases, str):
+            aliases = [aliases]
+        if not asset_id or "@" not in asset_id:
+            continue
+        aliases = list(aliases)
+        base_id, facing = asset_id.split("@", 1)
+        bed_aliases = {
+            "north": "F03", "east": "F04", "south": "F01", "west": "F02",
+        }
+        if base_id == "F01" and facing in bed_aliases:
+            legacy_id = bed_aliases[facing]
+            if legacy_id not in aliases:
+                aliases.append(legacy_id)
+        legacy = next((assets[a] for a in aliases if a in assets), {})
+        assets[asset_id] = {
+            **legacy, **asset, "id": asset_id, "legacy_aliases": list(aliases),
+        }
+        # Keep placement categories consistent across directional variants.
+        # Registry categories describe art and may use a different taxonomy.
+        if "category" in legacy:
+            assets[asset_id]["category"] = legacy["category"]
+    return {**catalog, "assets": list(assets.values())}
+
+
 def load_catalog():
     with open(CATALOG_PATH, encoding="utf-8") as f:
-        return json.load(f)
+        catalog = json.load(f)
+    registry_path = CATALOG_PATH.with_name(
+        "environment_" + "assets_v2" + ".json"
+    )
+    with open(registry_path, encoding="utf-8") as f:
+        return merge_directional_catalog(catalog, json.load(f))
 
 
 def catalog_lookup(catalog, asset_id):
-    for a in catalog["assets"]:
-        if a["id"] == asset_id:
-            return a
-    return None
+    assets = {asset["id"]: asset for asset in catalog["assets"]}
+    try:
+        return assets[canonical_asset_id(asset_id, assets)]
+    except ValueError:
+        return None
 
 
 def sidecar_png(catalog, asset_id):
@@ -350,7 +403,7 @@ def layout_entries():
     E.append(dict(kind="grid", id="F06", facing="north",
                   cell=(1, 0), layer="objects", instance_id="LeftBookcase",
                   shadow={"type": "bookshelf", "opacity": 0.28, "offset_x": 0, "offset_y": 0}))
-    E.append(dict(kind="grid", id="F07", facing="north",
+    E.append(dict(kind="grid", id="F07", facing="west",
                   cell=(10, 1), layer="objects", instance_id="RightBookcase",
                   shadow={"type": "bookshelf", "opacity": 0.28, "offset_x": 0, "offset_y": 0}))
     E.append(dict(kind="grid", id="F08", facing="north",
@@ -359,9 +412,17 @@ def layout_entries():
     E.append(dict(kind="grid", id="F09", facing="south",
                   cell=(12, 6), layer="objects", instance_id="TableBenchLeft",
                   shadow={"type": "chair", "opacity": 0.22, "offset_x": 0, "offset_y": 0}))
-    E.append(dict(kind="grid", id="F09", facing="south",
-                  cell=(14, 6), layer="objects", instance_id="TableBenchRight",
+    E.append(dict(kind="grid", id="F09", facing="west",
+                  cell=(15, 3), layer="objects", instance_id="TableBenchRight",
                   shadow={"type": "chair", "opacity": 0.22, "offset_x": 0, "offset_y": 0}))
+
+    for asset_id, cell in (("F10", (2, 6)), ("F11", (3, 6)), ("F12", (4, 6))):
+        E.append(dict(
+            kind="grid", id=asset_id, facing="south", cell=cell,
+            layer="objects", instance_id="Crate" + asset_id,
+            shadow={"type": "contact_medium", "opacity": 0.22,
+                    "offset_x": 0, "offset_y": 0},
+        ))
 
     # ---- Level 1: ground overlays (grid, scale 1.0) ----
     E.append(dict(kind="overlay", id="D01", cell=(2, 2), layer="ground_overlays",
@@ -513,6 +574,37 @@ def layout_entries():
 # ---------------------------------------------------------------------------
 
 
+def is_furniture(entry):
+    return entry["id"].split("@", 1)[0] in {
+        "F01", "F02", "F03", "F04", "F05", "F06",
+        "F07", "F08", "F09", "F10", "F11", "F12",
+    }
+
+
+def furniture_orientation(catalog, entry):
+    assets = {asset["id"]: asset for asset in catalog["assets"]}
+    variants = furniture_direction_ids(entry["id"], assets)
+    block = {
+        "id": entry["id"], "facing": entry.get("facing", "north"),
+        "orientation_mode": "variants", "direction_asset_ids": variants,
+    }
+    return resolve_orientation(block, assets)
+
+
+def entry_footprint(catalog, entry):
+    """Use the north footprint once, swapping axes for east and west."""
+    if is_furniture(entry):
+        assets = {asset["id"]: asset for asset in catalog["assets"]}
+        north_id = furniture_direction_ids(entry["id"], assets)["north"]
+        rec = assets[north_id]
+    else:
+        rec = record(catalog, entry["id"])
+    width, depth = rec["placement_contract"]["footprint_cells"]
+    if entry.get("facing", "north") in ("east", "west"):
+        width, depth = depth, width
+    return [width, depth]
+
+
 def resolve_entries(catalog, entries):
     computed = {}  # instance_id -> [x, y]
 
@@ -521,11 +613,7 @@ def resolve_entries(catalog, entries):
             computed[e["instance_id"]] = [round(e["x"], 3), round(e["y"], 3)]
             continue
         if e["kind"] in ("grid", "overlay"):
-            rec = record(catalog, e["id"])
-            cfg = rec.get("placement_contract")
-            fw, fh = cfg["footprint_cells"]
-            if e.get("facing", "north") in ("east", "west"):
-                fw, fh = fh, fw
+            fw, fh = entry_footprint(catalog, e)
             cell_x, cell_y = e["cell"]
             x = GROUND_OFFSET[0] + (cell_x + fw / 2.0) * TILE
             y = GROUND_OFFSET[1] + (cell_y + fh) * TILE
@@ -562,7 +650,13 @@ def resolve_entries(catalog, entries):
         if e["kind"] in ("grid", "overlay"):
             facing = e.get("facing", "north")
             block["grid_placement"] = {"cell": list(e["cell"]), "facing": facing}
-            if facing != "north":
+            if is_furniture(e):
+                orientation = furniture_orientation(catalog, e)
+                block["id"] = orientation["resolved_asset_id"]
+                block["facing"] = facing
+                block["orientation_mode"] = "variants"
+                block["direction_asset_ids"] = orientation["direction_asset_ids"]
+            elif facing != "north":
                 block["facing"] = facing
                 block["orientation_mode"] = "variants"
                 block["direction_asset_ids"] = record(catalog, e["id"]).get(
@@ -598,17 +692,21 @@ def write_blueprint(catalog, entries, resolved):
     for e in entries:
         iid = e["instance_id"]
         x, y = pos_map[iid]
-        rec = record(catalog, e["id"])
-        m = measurement(catalog, e["id"])
-        entry = {"instance_id": iid, "asset_id": e["id"], "category": rec["category"],
+        orientation = furniture_orientation(catalog, e) if is_furniture(e) else None
+        asset_id = orientation["resolved_asset_id"] if orientation else e["id"]
+        rec = record(catalog, asset_id)
+        m = measurement(catalog, asset_id)
+        entry = {"instance_id": iid, "asset_id": asset_id, "category": rec["category"],
                  "kind": e["kind"], "position": [x, y], "scale": entry_scale(catalog, e),
                  "pixel_size": rec["pixel_size"], "content_bbox": m["content"],
                  "layer": e["layer"]}
         if e["kind"] in ("grid", "overlay"):
             entry["grid_placement"] = {"cell": list(e["cell"]),
                                        "facing": e.get("facing", "north")}
-            entry["footprint_cells"] = record(catalog, e["id"])[
-                "placement_contract"]["footprint_cells"]
+            entry["footprint_cells"] = entry_footprint(catalog, e)
+        if orientation:
+            entry["orientation_mode"] = "variants"
+            entry["direction_asset_ids"] = orientation["direction_asset_ids"]
         if e.get("facing"):
             entry["facing"] = e["facing"]
         if e["kind"] == "mount":
