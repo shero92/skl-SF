@@ -1,0 +1,902 @@
+{
+ "scale": 2,
+ "note": "low asset (relative to assets_generated/) -> HD master (relative to the masters dir; masters are kept locally, not in git)",
+ "map": {
+  "architecture/A01__architecture__main_stone_column__default__1x1__64x128.png": {
+   "master": "architecture/column_ivy_05.png",
+   "master_sha256": "fbb9d4e391290bc36eb402e178766067ed8a7adc558bf81dc6b4ec5f4fbfa1bc",
+   "master_source": "exec-6d042b14-eb88-4707-80c9-fa00d052346d.png",
+   "flip_h": false,
+   "match_distance": 10.4
+  },
+  "architecture/A02__architecture__column_top_capital__default__1x1__64x128.png": {
+   "master": "architecture/column_ivy_06.png",
+   "master_sha256": "722be70f4d726174010e4b71521f883f8f19c588de526e4f02ad509802d4f6fd",
+   "master_source": "exec-9f042a95-913d-4e19-b2e8-0607250d4244.png",
+   "flip_h": false,
+   "match_distance": 6.8
+  },
+  "architecture/A03__architecture__column_base__default__1x1__64x128.png": {
+   "master": "architecture/column_ivy_07.png",
+   "master_sha256": "da5684751623d723df54c20ce341b1e0b2292d023ba5af80482a37864d1166ba",
+   "master_source": "exec-e0f6161f-847b-4632-ad96-01c2cf165294.png",
+   "flip_h": false,
+   "match_distance": 7.1
+  },
+  "architecture/A04__architecture__arch_segment_left__default__1x1__128x128.png": {
+   "master": "architecture/arch_02.png",
+   "master_sha256": "1d8d47586b405726f0148a80f87a0240ffe69a2063996a00a2bd8b89a3ab130a",
+   "master_source": "exec-9c5c6753-68e9-469e-8519-87abd92c828a.png",
+   "flip_h": false,
+   "match_distance": 4.7
+  },
+  "architecture/A05__architecture__arch_segment_center__default__1x1__128x128.png": {
+   "master": "architecture/arch_01.png",
+   "master_sha256": "9114ef58ecee7f776e51323ed70b1a6671c13ef712da7011844159e74092fad8",
+   "master_source": "exec-638a8f3d-f556-4573-bbc3-2268672fd2ad.png",
+   "flip_h": false,
+   "match_distance": 4.7
+  },
+  "architecture/A06__architecture__arch_segment_right__default__1x1__128x128.png": {
+   "master": "architecture/arch_03.png",
+   "master_sha256": "ec1e7cb4d0bf0a515f13c46d303a8d6ae6f3a496962f4b8caabb4e542077297a",
+   "master_source": "exec-be7bd808-f6e5-4cf8-bace-1420a3f6bc10.png",
+   "flip_h": false,
+   "match_distance": 3.5
+  },
+  "architecture/A07__architecture__complete_doorway_arch_keystone_piece__default__1x1__128x128.png": {
+   "master": "architecture/stone_block_03.png",
+   "master_sha256": "93d7e5418f6ca0f526f5e04a325697dd672883fe09dddf36672ce8d85c840bcb",
+   "master_source": "exec-8b54dc91-0217-421c-9f78-ff763bc78d2b.png",
+   "flip_h": false,
+   "match_distance": 9.1
+  },
+  "architecture/A08__architecture__rear_door_frame__default__1x1__128x128.png": {
+   "master": "architecture/arch_04.png",
+   "master_sha256": "77835bbb2f8307e9ca8d4de6e0d786aa16c41ea1a0c0d48a829b6ef46ca4bda1",
+   "master_source": "exec-fe26eeca-2d20-4ab0-9b65-0fbbfaedd7c5.png",
+   "flip_h": false,
+   "match_distance": 4.6
+  },
+  "architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png": {
+   "master": "architecture/ruined_door_01.png",
+   "master_sha256": "449d2b0722214e8dab12abad13f282f80f628e7ec179617123b1d8719c959d6a",
+   "master_source": "exec-98d72776-4d59-4707-8d99-1bc92c670304.png",
+   "flip_h": false,
+   "match_distance": 6.4
+  },
+  "architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png": {
+   "master": "architecture/stone_block_01.png",
+   "master_sha256": "82d4b0107ad7375f605b9e9608e38edeea40a1270d8b21fc453fd998b057694c",
+   "master_source": "exec-127510b7-e378-40b8-8373-c1a1315898ec.png",
+   "flip_h": false,
+   "match_distance": 8.1
+  },
+  "architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.png": {
+   "master": "architecture/stone_post_02.png",
+   "master_sha256": "9215f5487d2d1e58e4355d138b6523719f9e6e2eb60f52e18389a9b88aa89ae9",
+   "master_source": "exec-556d85f4-4e71-4eaa-9b03-2e11d4abea6f.png",
+   "flip_h": false,
+   "match_distance": 5.9
+  },
+  "architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.png": {
+   "master": "architecture/stone_post_03.png",
+   "master_sha256": "e61e1622180bc0e869f0a279e13e811bd6d15677aa3465a575441aed86be4b96",
+   "master_source": "exec-57d1ebc9-0bf1-46b9-852d-a9e8401a5336.png",
+   "flip_h": false,
+   "match_distance": 3.8
+  },
+  "architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png": {
+   "master": "architecture/stone_post_01.png",
+   "master_sha256": "545f98903e4d389cab383e6858d034b7c5ed773c96bbe5a9c276e02074542d3b",
+   "master_source": "exec-4c1d515a-0d72-44bf-944a-c20ddf9c2233.png",
+   "flip_h": false,
+   "match_distance": 7.0
+  },
+  "background/B01__background__ocean_water_tile_segment__default__4x4__256x256.png": {
+   "master": "background/sea_02.png",
+   "master_sha256": "bd2873c8abf249e64ed8b259396cd7f4a1d448a0890e32b73c0de1e6bca657ff",
+   "master_source": "exec-c516e78f-b520-4f6a-a4a2-5dbf1ec7e5f8.png",
+   "flip_h": false,
+   "match_distance": 1.3
+  },
+  "background/B02__background__foam_edge_overlay__default__4x4__256x256.png": {
+   "master": "background/wave_foam_01.png",
+   "master_sha256": "760259d4bdc98e61147e8988312bde67e847b39103b2eb4cb7576b43ddac952f",
+   "master_source": "exec-62d0b9e0-c9d8-4659-8891-12db8efd1836.png",
+   "flip_h": false,
+   "match_distance": 0.9
+  },
+  "background/B03__background__near_cliff_rock_segment__default__4x4__256x256.png": {
+   "master": "background/cliff_base_01.png",
+   "master_sha256": "9f2aa3b31fce2c93a500abead8679d2dafe4010ef0d7a4d7400b48de1642c96e",
+   "master_source": "exec-284ff640-e0f3-4500-a779-0322e4a6bf1e.png",
+   "flip_h": false,
+   "match_distance": 1.7
+  },
+  "background/B04__background__far_cliff_rock_segment__default__4x4__256x256.png": {
+   "master": "background/rock_island_04.png",
+   "master_sha256": "28bfb2d7b0b959e67bcfc1c8baf5587b481cdb2e0c3da2d92962d86c07de90c0",
+   "master_source": "exec-d3a9376a-1555-478a-a253-0e5b66e651aa.png",
+   "flip_h": false,
+   "match_distance": 1.7
+  },
+  "background/B05__background__sea_stack_island_small__default__4x4__256x256.png": {
+   "master": "background/rock_island_03.png",
+   "master_sha256": "5b74a307d2a6712e57ed49ddfb6ef18dac783d848f9f6b4ecfb7e9299349d05e",
+   "master_source": "exec-d39960d9-752d-4563-8751-13bacc3aab8f.png",
+   "flip_h": false,
+   "match_distance": 2.1
+  },
+  "background/B06__background__sea_stack_island_medium__default__4x4__256x256.png": {
+   "master": "background/rock_island_01.png",
+   "master_sha256": "83d45d8d9bcd5db5f4801a2f6501e4f9bbd775cc825a3c3a24eb3c7d6a057cbe",
+   "master_source": "exec-231846cd-a540-4fbc-beec-141becf5c846.png",
+   "flip_h": false,
+   "match_distance": 1.6
+  },
+  "background/B07__background__horizon_ocean_strip__default__4x4__256x256.png": {
+   "master": "background/sea_01.png",
+   "master_sha256": "bfbd4e1d9173e285b5e5ee435992e66bd60105594621ca854984360afced9245",
+   "master_source": "exec-53651b07-700b-483e-9529-251d4a48ef17.png",
+   "flip_h": false,
+   "match_distance": 1.0
+  },
+  "background/B08__background__bright_cloud_small__default__4x4__256x256.png": {
+   "master": "background/cloud_01.png",
+   "master_sha256": "1c73db2bbc95465afc699a806ad2c63fd734721948d895a5a602c2bf2495eedf",
+   "master_source": "exec-80af96db-21a5-48b9-b3cc-d3c5de51c4e0.png",
+   "flip_h": false,
+   "match_distance": 1.5
+  },
+  "background/B09__background__bright_cloud_medium__default__4x4__256x256.png": {
+   "master": "background/cloud_02.png",
+   "master_sha256": "467e9f67e88ff758458ebf7f5b878417e78dc151bd6eca27a7c95b537c592407",
+   "master_source": "exec-9417cb10-ee04-45d7-a5a4-0ee9df2165f0.png",
+   "flip_h": false,
+   "match_distance": 1.2
+  },
+  "background/B10__background__clear_sky_gradient_segment__default__4x4__256x256.png": {
+   "master": "background/sky_gradient_01.png",
+   "master_sha256": "46e2a75996da36d8072926ee9f2173c636650242fca4d027e03d9f29ab91b9ed",
+   "master_source": "exec-b2efc34c-24e7-4c90-9aab-ab07bcd7e52e.png",
+   "flip_h": false,
+   "match_distance": 0.1
+  },
+  "background/B11__background__distant_rock_arch_formation__default__4x4__256x256.png": {
+   "master": "background/rock_island_02.png",
+   "master_sha256": "9695e9b6f090740f56d29ce5489d566f0deb38b28f9e94164d1a4ff52065c609",
+   "master_source": "exec-b95c9f04-daeb-464a-b51b-691f1711e99b.png",
+   "flip_h": false,
+   "match_distance": 1.9
+  },
+  "decor/D01__decor__bed_rug__default__3x4__192x256.png": {
+   "master": "decor/rug_rect_compass_01.png",
+   "master_sha256": "42ed843f7480fbd6a9ca64d67d7574c54f616b2ddcd37b7eb0b4c8225834cf3f",
+   "master_source": "exec-dec5afc4-1429-4765-af32-b53a010b5568.png",
+   "flip_h": false,
+   "match_distance": 4.5
+  },
+  "decor/D02__decor__table_rug__default__4x4__256x256.png": {
+   "master": "decor/rug_square_compass_01.png",
+   "master_sha256": "3ab19b8d1e67762029689e733d396ab459dfac385393a9fb2ad47b0943e22bad",
+   "master_source": "exec-5b1ebfe1-8766-449b-8548-028c64a125c0.png",
+   "flip_h": false,
+   "match_distance": 4.9
+  },
+  "decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.png": {
+   "master": "floor/compass_emblem_01.png",
+   "master_sha256": "1d85f2b9cb064fe2fed2648a375890d9e8fbc006a9f1140b602911a33ddebefd",
+   "master_source": "exec-82555493-4479-456b-ae9d-753b999cd6cb.png",
+   "flip_h": false,
+   "match_distance": 2.5
+  },
+  "decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.png": {
+   "master": "decor/banner_blue_long_02.png",
+   "master_sha256": "c24b8aebbdae7f184dadd8424f4603ca15c32f080a8d6da2c89ebd74beabed6c",
+   "master_source": "exec-8acf0547-e8c5-4d11-a088-5610973ef734.png",
+   "flip_h": false,
+   "match_distance": 15.5
+  },
+  "decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.png": {
+   "master": "decor/banner_blue_long_01.png",
+   "master_sha256": "d439c254283aced1d23234cd918391dc4190ad00f6c71222d7a12bb65e6d1b6d",
+   "master_source": "exec-5c2dcdf6-dd2a-4e47-bf4b-ca881d4ea13d.png",
+   "flip_h": false,
+   "match_distance": 7.0
+  },
+  "decor/D06__decor__banner_pole_hanging_support__default__1x1__64x64.png": {
+   "master": "lighting/lantern_bracket_01.png",
+   "master_sha256": "444a7e26a04a76b6bac8aab7d3b582d83ae4c2c4dccc683856950e7dce47668a",
+   "master_source": "exec-f0f2c285-5e5e-43d0-84f6-9ec18d0a6e60.png",
+   "flip_h": false,
+   "match_distance": 9.5
+  },
+  "decor/D07__decor__small_decorative_cloth_fold__default__1x1__64x64.png": {
+   "master": "decor/rug_folded_blue_01.png",
+   "master_sha256": "6c8d1b94600dc4063db076f5b7611bdeb83fbd7d5c68415f5cc10dd3677f15b9",
+   "master_source": "exec-8e222cd4-fe2a-4822-8aa6-3bf48df2a1e6.png",
+   "flip_h": false,
+   "match_distance": 21.5
+  },
+  "decor/D08__decor__ornamental_gold_trim_overlay__default__1x1__64x64.png": {
+   "master": "decor/gold_corner_ornament_01.png",
+   "master_sha256": "41557ddc55331d0ef2162d353326534d78e998ce21b62478c297bdcb2479e0b5",
+   "master_source": "exec-6eaaf8d4-ab93-42d8-bb5c-822470c2e89e.png",
+   "flip_h": false,
+   "match_distance": 5.2
+  },
+  "floor/G01__floor__clean_sandstone_floor_tile__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_03.png",
+   "master_sha256": "555279b4fd2dbed4cb80a5e7415ffbc4d2e8365a0247074a56b5a36c995f37c8",
+   "master_source": "exec-2501aac4-9001-4402-bf62-27af4cd902e7.png",
+   "flip_h": false,
+   "match_distance": 5.3
+  },
+  "floor/G02__floor__lightly_weathered_sandstone_floor_tile__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_09.png",
+   "master_sha256": "981044cfbb6791a66ae208427307e6a00d51ef0dcc2a966c28119f541c69520e",
+   "master_source": "exec-d87d8b8a-ade8-4559-9324-e887ff416f71.png",
+   "flip_h": false,
+   "match_distance": 3.9
+  },
+  "floor/G03__floor__fine_cracked_sandstone_floor_tile__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_08.png",
+   "master_sha256": "f6d53518d0fffda6394246c132bc61d5cdfdb0404d4c4a7aa59f3b1c31c5423f",
+   "master_source": "exec-d4346952-0d08-4c13-8e51-538cd3330e69.png",
+   "flip_h": false,
+   "match_distance": 4.0
+  },
+  "floor/G04__floor__naturally_textured_sandstone_floor_tile__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_09.png",
+   "master_sha256": "981044cfbb6791a66ae208427307e6a00d51ef0dcc2a966c28119f541c69520e",
+   "master_source": "exec-d87d8b8a-ade8-4559-9324-e887ff416f71.png",
+   "flip_h": false,
+   "match_distance": 0.5
+  },
+  "floor/G05__floor__sandstone_tile_with_slight_edge_wear__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_02.png",
+   "master_sha256": "e409c22eed5a8ef1dd421e95a0eafc572ce2edf49e0b4c29d29227cf9029a3dd",
+   "master_source": "exec-1912a7cb-c661-4ad5-8d9e-e41f947802bb.png",
+   "flip_h": false,
+   "match_distance": 1.3
+  },
+  "floor/G06__floor__sandstone_tile_with_small_chipped_corner__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_06.png",
+   "master_sha256": "021bfe98a1d03ae58e4ef4e543a638d39f98c50c43f2db10d1d3fead7243ed53",
+   "master_source": "exec-9525fae3-dd5e-4e0d-a1cb-c0c318721ead.png",
+   "flip_h": false,
+   "match_distance": 0.7
+  },
+  "floor/G07__floor__sandstone_tile_with_dusty_patch__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_04.png",
+   "master_sha256": "6fe03f6fd50f9def2ae17b3c40cfbd8f3963a1eca30ffc83af8385f7130cc182",
+   "master_source": "exec-43fcdc33-1d3b-4509-8115-8730c8a87f09.png",
+   "flip_h": false,
+   "match_distance": 2.7
+  },
+  "floor/G08__floor__sandstone_tile_with_subtle_mineral_spots__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_01.png",
+   "master_sha256": "e7afdbca63c97c1d7bbc3e14ea287dcb9bcca42926aa761df209153fd9a4c197",
+   "master_source": "exec-095e69c7-6dd4-4cd2-aedd-ba3abac3588d.png",
+   "flip_h": false,
+   "match_distance": 0.8
+  },
+  "floor/G09__floor__sandstone_tile_with_tiny_surface_pits__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_03.png",
+   "master_sha256": "555279b4fd2dbed4cb80a5e7415ffbc4d2e8365a0247074a56b5a36c995f37c8",
+   "master_source": "exec-2501aac4-9001-4402-bf62-27af4cd902e7.png",
+   "flip_h": false,
+   "match_distance": 0.9
+  },
+  "floor/G10__floor__sandstone_tile_with_soft_discoloration__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_05.png",
+   "master_sha256": "8248be99d37d69cff38fb9fd2bd198a50287931c61e263f4051371da8123f61c",
+   "master_source": "exec-4d759d48-93d0-4b20-9efd-9c4b08b6e89d.png",
+   "flip_h": false,
+   "match_distance": 0.6
+  },
+  "floor/G11__floor__sandstone_tile_with_faint_hairline_cracks__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_07.png",
+   "master_sha256": "0a1486acf8e72031b3dcb9f0f051326b62184f54ea9e90b0fd6c26142fdd8167",
+   "master_source": "exec-bb01b5b2-9b9d-4798-8227-0bd072fbded9.png",
+   "flip_h": false,
+   "match_distance": 1.9
+  },
+  "floor/G12__floor__sandstone_tile_with_slightly_darker_weathering__default__1x1__64x64.png": {
+   "master": "floor/sandstone_tile_08.png",
+   "master_sha256": "f6d53518d0fffda6394246c132bc61d5cdfdb0404d4c4a7aa59f3b1c31c5423f",
+   "master_source": "exec-d4346952-0d08-4c13-8e51-538cd3330e69.png",
+   "flip_h": false,
+   "match_distance": 1.2
+  },
+  "furniture/F01__furniture__royal_wooden_bed__south__3x4__192x256.png": {
+   "master": "furniture/bed_front_view_02.png",
+   "master_sha256": "02f0e2cf5b6de6a8884d69049c53e3845147691210f66d501cb2c54ade00a8a2",
+   "master_source": "exec-eb8d27b9-4fdd-40f7-ae93-d38cb5be34cd.png",
+   "flip_h": false,
+   "match_distance": 2.8
+  },
+  "furniture/F02__furniture__royal_wooden_bed__west__4x3__256x192.png": {
+   "master": "furniture/bed_side_view_02.png",
+   "master_sha256": "e54362d4978d7d83f87b6b0f9e40a44c868c306d1ebf0ebcc8345ce32f6bdc72",
+   "master_source": "exec-c790246b-2b8e-4184-8bb9-1194eeb9ea0e.png",
+   "flip_h": false,
+   "match_distance": 2.4
+  },
+  "furniture/F03__furniture__royal_wooden_bed__north__3x4__192x256.png": {
+   "master": "furniture/bed_front_view_01.png",
+   "master_sha256": "9da6d921aed82be8232dd949cfd592ba52e34e65c5657096487f6677fce3749d",
+   "master_source": "exec-c5158b94-a0cd-4f23-acfb-441bb18cfd9b.png",
+   "flip_h": false,
+   "match_distance": 4.5
+  },
+  "furniture/F04__furniture__royal_wooden_bed__east__4x3__256x192.png": {
+   "master": "furniture/bed_side_view_01.png",
+   "master_sha256": "f0ea4d4a7aa4b20511b074248c2c1ec80580dbb4065eaacdacee46c4850de1be",
+   "master_source": "exec-293dfa97-d276-4b73-9c80-53ba32cc9077.png",
+   "flip_h": false,
+   "match_distance": 3.2
+  },
+  "furniture/F05__furniture__bedside_table__east__2x2__128x128.png": {
+   "master": "furniture/bedside_chest_drawer_01.png",
+   "master_sha256": "26224dc9b8d392d73ab28137679dc6fe05c8843d3b5e461c364690136bb217a6",
+   "master_source": "exec-0a8ef8ba-a9a2-4e5d-8254-e9896fd62c46.png",
+   "flip_h": false,
+   "match_distance": 2.4
+  },
+  "furniture/F05__furniture__bedside_table__north__2x2__128x128.png": {
+   "master": "furniture/bedside_chest_drawer_03.png",
+   "master_sha256": "7f2032f7d7d2fa43f186a606793f73749ec22b7c12b8a49eea106e1401a5b5ad",
+   "master_source": "exec-3d67a125-a8fe-447f-96de-d84b92fe18ba.png",
+   "flip_h": false,
+   "match_distance": 8.6
+  },
+  "furniture/F05__furniture__bedside_table__south__2x2__128x128.png": {
+   "master": "furniture/bedside_chest_drawer_04.png",
+   "master_sha256": "99db912c08838df5f99efbf1e8c59258722d473e7e24efeba89abb31a4377418",
+   "master_source": "exec-d7ecf6cf-6cdd-4e72-b09a-9309771126dd.png",
+   "flip_h": false,
+   "match_distance": 7.1
+  },
+  "furniture/F05__furniture__bedside_table__west__2x2__128x128.png": {
+   "master": "furniture/bedside_chest_drawer_02.png",
+   "master_sha256": "7ca2cdc0a381bc8b6655447271eb3689d91ea78490d12251721dac59f3c741ec",
+   "master_source": "exec-373b965e-00a8-4290-9757-d2ca854f1c6c.png",
+   "flip_h": false,
+   "match_distance": 4.4
+  },
+  "furniture/F06__furniture__left_large_bookcase__east__1x4__128x256.png": {
+   "master": "furniture/bookcase_small_02.png",
+   "master_sha256": "8b8d50963f89011c4ac06a498226778d7afa6ba7d47aeaf5c05f16fec98285fd",
+   "master_source": "exec-dacc41ea-c66a-4b83-9a69-9c931e158c1a.png",
+   "flip_h": false,
+   "match_distance": 10.5
+  },
+  "furniture/F06__furniture__left_large_bookcase__north__4x1__256x128.png": {
+   "master": "furniture/bookcase_large_03.png",
+   "master_sha256": "c1a6c3077d853cebe6a88dd29a55bc75a4937da7c1f8cdfd5137dee40432aefc",
+   "master_source": "exec-d912db1e-e188-4fc7-a1d7-70cb114e28b2.png",
+   "flip_h": false,
+   "match_distance": 4.7
+  },
+  "furniture/F06__furniture__left_large_bookcase__south__4x1__256x128.png": {
+   "master": "furniture/bookcase_large_01.png",
+   "master_sha256": "82c280cb7ab4fa7b58686434d255102e63f8a907aff602bb8404e4d58a5506a7",
+   "master_source": "exec-4cd45f15-4ff2-45d6-b6d2-2f6966a86e46.png",
+   "flip_h": false,
+   "match_distance": 6.2
+  },
+  "furniture/F06__furniture__left_large_bookcase__west__1x4__128x256.png": {
+   "master": "furniture/bookcase_small_03.png",
+   "master_sha256": "f5237cb61e4c7464f0aae6b961f0f3a19971e9783531535dbc77e2644bc9313b",
+   "master_source": "exec-f24cf10b-e25f-44bb-aaa5-ec5d4d498bb6.png",
+   "flip_h": false,
+   "match_distance": 10.2
+  },
+  "furniture/F07__furniture__right_large_bookcase__east__1x4__128x256.png": {
+   "master": "furniture/bookcase_small_01.png",
+   "master_sha256": "a1552b9acaf7d287fbf728cb7249c29b726f0a20de836021ef9e98461e0f1b5c",
+   "master_source": "exec-b946ac45-95b7-4073-bc32-39a1aebd80eb.png",
+   "flip_h": false,
+   "match_distance": 13.3
+  },
+  "furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.png": {
+   "master": "furniture/bookcase_large_02.png",
+   "master_sha256": "9feb1a0e9806ccaa2d8d88c825c6aa52e216dea33d32058c18cf9926fff2598b",
+   "master_source": "exec-a2fe8af9-b2ba-46a0-9211-114e3ce5bd50.png",
+   "flip_h": false,
+   "match_distance": 4.3
+  },
+  "furniture/F07__furniture__right_large_bookcase__south__4x1__256x128.png": {
+   "master": "furniture/bookcase_armillary_01.png",
+   "master_sha256": "3696d717bc2658dcb3db9f01f8394cfea185613e291b09381f40c6347b102c28",
+   "master_source": "exec-4028c54f-02f1-4f51-a064-4d9224aac528.png",
+   "flip_h": false,
+   "match_distance": 3.7
+  },
+  "furniture/F07__furniture__right_large_bookcase__west__1x4__128x256.png": {
+   "master": "furniture/bookcase_armillary_02.png",
+   "master_sha256": "d4a798bdc10b20ead79943c2570ac8018dbc7304f5a3cf6900ee4557046d2c02",
+   "master_source": "exec-fe68d41a-3ed5-4ee0-a244-138bfe4449ac.png",
+   "flip_h": false,
+   "match_distance": 10.5
+  },
+  "furniture/F08__furniture__large_dining_work_table__east__3x4__192x256.png": {
+   "master": "furniture/table_small_02.png",
+   "master_sha256": "44c70fbae4683d921a9d421aea3d79e842fe3c4b0593a6177e97bf5fa35c0a11",
+   "master_source": "exec-fcd5074c-6006-433a-aa50-4948b803dfb0.png",
+   "flip_h": false,
+   "match_distance": 3.0
+  },
+  "furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.png": {
+   "master": "furniture/table_large_02.png",
+   "master_sha256": "5c75cd1c6eb9f513ccc306c2d97e67a6f38c6bd37e27d392a4144c2b74e70308",
+   "master_source": "exec-ad3ae4fa-6bd6-40c5-bcb5-78eb9d3d2bdb.png",
+   "flip_h": false,
+   "match_distance": 2.8
+  },
+  "furniture/F08__furniture__large_dining_work_table__south__4x3__256x192.png": {
+   "master": "furniture/table_large_01.png",
+   "master_sha256": "5fc0c1cc51b6f54684e23cb584ef4b3c9cb21004f83e389c14aa3f1294589576",
+   "master_source": "exec-644433ac-018e-4b7a-996c-018d044b62a2.png",
+   "flip_h": false,
+   "match_distance": 2.3
+  },
+  "furniture/F08__furniture__large_dining_work_table__west__3x4__192x256.png": {
+   "master": "furniture/table_small_01.png",
+   "master_sha256": "bd0021526cd2f2dc1f73e1b78175681f0e2b404b6341fa9e1c093733d6915d81",
+   "master_source": "exec-1801b2d0-261b-4e88-8a0d-4590c1cd19f3.png",
+   "flip_h": false,
+   "match_distance": 2.9
+  },
+  "furniture/F09__furniture__bench_horizontal__east__1x2__64x128.png": {
+   "master": "furniture/bench_blue_runner_02.png",
+   "master_sha256": "fb03699156389f3a93cc2bdd678a80021741253ce902caa866bde38c2cace07c",
+   "master_source": "exec-467937df-b728-43a3-9eb2-a9b3496f3deb.png",
+   "flip_h": false,
+   "match_distance": 17.8
+  },
+  "furniture/F09__furniture__bench_horizontal__north__2x1__128x64.png": {
+   "master": "furniture/bench_blue_runner_03.png",
+   "master_sha256": "d5553c9f86f8d0001191589378165be38a8744340c44851cfe852d2167065d57",
+   "master_source": "exec-694aceac-7583-4cc0-b3a0-412155d4e765.png",
+   "flip_h": false,
+   "match_distance": 11.3
+  },
+  "furniture/F09__furniture__bench_horizontal__south__2x1__128x64.png": {
+   "master": "furniture/bench_plain_01.png",
+   "master_sha256": "079bfcb16dedfe449abb91fa78b380af26051373f411b34d7caa04e466e0b126",
+   "master_source": "exec-d5d04737-05bf-4341-a633-f76ba55d98be.png",
+   "flip_h": false,
+   "match_distance": 13.8
+  },
+  "furniture/F09__furniture__bench_horizontal__west__1x2__64x128.png": {
+   "master": "furniture/bench_blue_runner_01.png",
+   "master_sha256": "9355364c7315867ff79e72ac572d30e7b70c50d34da8142910944f1855f51671",
+   "master_source": "exec-031b52a9-50a9-4145-9be1-82f7b9c5f065.png",
+   "flip_h": false,
+   "match_distance": 16.8
+  },
+  "furniture/F10__furniture__bench_vertical__east__1x2__64x128.png": {
+   "master": "furniture/bench_side_blue_01.png",
+   "master_sha256": "7ae56194e6b6050b20ab8383f9cec298c51e6309fbdb6b4bf4d85c90349ccbb6",
+   "master_source": "exec-95486928-e39b-43fc-a493-5ac844bae4a4.png",
+   "flip_h": false,
+   "match_distance": 13.4
+  },
+  "furniture/F10__furniture__bench_vertical__north__2x1__128x64.png": {
+   "master": "furniture/bench_vertical_01.png",
+   "master_sha256": "267bf570e65405537c1b35ca4a7bdffaaa7892920cd91ceea03acd4fa780c1d2",
+   "master_source": "exec-0aac3a82-836b-46de-826d-9bc2e2703b6e.png",
+   "flip_h": false,
+   "match_distance": 17.7
+  },
+  "furniture/F10__furniture__bench_vertical__south__2x1__128x64.png": {
+   "master": "furniture/bench_blue_runner_04.png",
+   "master_sha256": "f04db853684a95031886e2fee69e543422e44674d91fb439dccced94adfd44d1",
+   "master_source": "exec-d1e2c5bc-cdd7-4fdd-b6db-1f15645cc7b7.png",
+   "flip_h": false,
+   "match_distance": 12.5
+  },
+  "furniture/F10__furniture__bench_vertical__west__1x2__64x128.png": {
+   "master": "furniture/bench_side_wood_01.png",
+   "master_sha256": "24baeaa4818d3c34fba22e39ff461de0c4e350aab398d6348b198c017764a2b1",
+   "master_source": "exec-c786a643-e185-4b25-b1c1-e7d827fd6828.png",
+   "flip_h": false,
+   "match_distance": 8.1
+  },
+  "furniture/F11__furniture__small_wooden_crate__east__1x1__64x64.png": {
+   "master": "furniture/crate_06.png",
+   "master_sha256": "86c6755757fbb711e86148c3339727fbcb6e052c94f9667429c22a9955fc2bdc",
+   "master_source": "exec-e8f9fa5d-48ea-420d-8389-a2768d3d2c70.png",
+   "flip_h": false,
+   "match_distance": 22.4
+  },
+  "furniture/F11__furniture__small_wooden_crate__north__1x1__64x64.png": {
+   "master": "furniture/crate_03.png",
+   "master_sha256": "d0296e106dee16e88a355ce2b372ac598f2ae6ade519c340ef51fe640e1e1664",
+   "master_source": "exec-68b87a51-e8ca-4475-b120-a6a38b65abc5.png",
+   "flip_h": false,
+   "match_distance": 23.0
+  },
+  "furniture/F11__furniture__small_wooden_crate__south__1x1__64x64.png": {
+   "master": "furniture/crate_08.png",
+   "master_sha256": "ee7894e040644205e08656858a5106c613303a89ba93cc63cdd03dfd4719cefa",
+   "master_source": "exec-fa42b3d5-ea17-4480-8596-4c3b914505e3.png",
+   "flip_h": false,
+   "match_distance": 21.4
+  },
+  "furniture/F11__furniture__small_wooden_crate__west__1x1__64x64.png": {
+   "master": "furniture/crate_05.png",
+   "master_sha256": "b828c5e3def25f0f0dddeba87663610e2c3c799ecdf2c811c9cdf877294e5830",
+   "master_source": "exec-a4b1099a-6377-4293-9d63-89b23925963e.png",
+   "flip_h": false,
+   "match_distance": 18.4
+  },
+  "furniture/F12__furniture__medium_wooden_crate__east__2x2__128x128.png": {
+   "master": "furniture/crate_04.png",
+   "master_sha256": "8b48ab855248c436444829d1ec8c7d579795f35b29f35e0cb0fd8863fb65d784",
+   "master_source": "exec-8e1a9432-0fc8-416c-9030-ad9430896c2b.png",
+   "flip_h": false,
+   "match_distance": 3.6
+  },
+  "furniture/F12__furniture__medium_wooden_crate__north__2x2__128x128.png": {
+   "master": "furniture/crate_02.png",
+   "master_sha256": "bd8ed61e6fa3daa4834291c24eda828315a9056fbe714860c7bbeab89ab77f24",
+   "master_source": "exec-56a7839d-bcc1-4f4b-af2f-9e5430b5f957.png",
+   "flip_h": false,
+   "match_distance": 4.9
+  },
+  "furniture/F12__furniture__medium_wooden_crate__south__2x2__128x128.png": {
+   "master": "furniture/crate_01.png",
+   "master_sha256": "9e8a896fa20f86665597e1557ace10a9ba05bcd9152b81e1e332035efa5b8098",
+   "master_source": "exec-1defb2a4-51e5-456c-911c-b6ecdaed3da9.png",
+   "flip_h": false,
+   "match_distance": 7.7
+  },
+  "furniture/F12__furniture__medium_wooden_crate__west__2x2__128x128.png": {
+   "master": "furniture/crate_07.png",
+   "master_sha256": "2a6f49c42b4d3cdebbbb070efbc9eeb9295439e94e8b612beadddc83d2fa1168",
+   "master_source": "exec-f2c4249a-dd66-4b6f-9638-3e12e2255704.png",
+   "flip_h": false,
+   "match_distance": 6.2
+  },
+  "lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.png": {
+   "master": "lighting/wall_lantern_01.png",
+   "master_sha256": "f54d8eeba8c9ebfadf1af546c1e5c424752db0fff62fde86ee34c4287dd77a8a",
+   "master_source": "exec-0a020c78-0537-4635-adde-3e6ea2002a25.png",
+   "flip_h": false,
+   "match_distance": 17.8
+  },
+  "lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png": {
+   "master": "lighting/wall_lantern_02.png",
+   "master_sha256": "8d3e1d681efa3fe200ebef0d243a9df3c80564a770e5b65fb8422a31b730631b",
+   "master_source": "exec-32632f93-8dc2-4d4a-b47b-46a870a30342.png",
+   "flip_h": false,
+   "match_distance": 13.1
+  },
+  "lighting/L03__lighting__candle_cluster__default__1x1__64x64.png": {
+   "master": "lighting/candle_cluster_01.png",
+   "master_sha256": "8ce1380b7d50db9140eb328ad26f1248af1ccbb4524678cd610551f938897f19",
+   "master_source": "exec-1bfef93e-557a-45cf-be7b-b9da111895c1.png",
+   "flip_h": false,
+   "match_distance": 14.1
+  },
+  "lighting/L04__lighting__table_lantern__default__1x1__64x64.png": {
+   "master": "lighting/wall_lantern_03.png",
+   "master_sha256": "c5065468c2e63c0d19d32ff5463d2726771a40070e2e06c2a3fadb5685a3b468",
+   "master_source": "exec-58ef9a86-bbb2-4656-a734-e0d9235afcc4.png",
+   "flip_h": false,
+   "match_distance": 15.3
+  },
+  "lighting/L05__lighting__small_flame_glow_overlay__default__1x1__64x64.png": {
+   "master": "lighting/flame_01.png",
+   "master_sha256": "19a0b1b6873f5ecb54d363e29c2ea3da5a382aebb07d9ee8404548777cb368a3",
+   "master_source": "exec-bb9f74e0-eaee-47d6-93db-b980df5102e1.png",
+   "flip_h": false,
+   "match_distance": 6.3
+  },
+  "plants/P01__plants__ivy_hanging_short__default__1x1__64x64.png": {
+   "master": "plants/ivy_hanging_05.png",
+   "master_sha256": "9333457dc461a23e57b80fb8a3407388b07c4aec24fe1ae712c05587b498badb",
+   "master_source": "exec-b9b8c34c-8b3a-4f27-bd2b-4dd8b14bef0f.png",
+   "flip_h": false,
+   "match_distance": 8.1
+  },
+  "plants/P02__plants__ivy_hanging_medium__default__1x1__64x64.png": {
+   "master": "plants/ivy_hanging_01.png",
+   "master_sha256": "50fb7be8b65ae948ac3a2ba2f6bb8946ff3a31520a6ea52d353ecba4d7166aa2",
+   "master_source": "exec-15d78d47-b4d1-4aa0-8945-6fce14df6c61.png",
+   "flip_h": false,
+   "match_distance": 10.9
+  },
+  "plants/P03__plants__ivy_hanging_long__default__1x1__64x128.png": {
+   "master": "plants/ivy_hanging_03.png",
+   "master_sha256": "58bb48c252b7b3399b89f1bd0eeb74af1ecba750a98704d027c3c19e5a5c9eae",
+   "master_source": "exec-a7bc62a9-2ed3-452d-aa01-54670825b7a9.png",
+   "flip_h": false,
+   "match_distance": 7.6
+  },
+  "plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png": {
+   "master": "plants/flowers_white_02.png",
+   "master_sha256": "ff260e4d8e20fb08f0d0c1ff63850ad9b16fdbcd838045461e42415419e7dfe7",
+   "master_source": "exec-1719a859-b016-4baa-ac51-b8039eea5154.png",
+   "flip_h": false,
+   "match_distance": 17.1
+  },
+  "plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png": {
+   "master": "plants/flowers_white_01.png",
+   "master_sha256": "98a2b1ed4d455c6b4c1bb3d41f62010fc51bd6c2a610794253dac07094ca3ba0",
+   "master_source": "exec-155da9ed-712b-4e11-bedf-cf0dc4f66b17.png",
+   "flip_h": false,
+   "match_distance": 12.9
+  },
+  "plants/P06__plants__blue_flower_cluster_small__default__1x1__64x64.png": {
+   "master": "plants/flowers_blue_01.png",
+   "master_sha256": "02e8548b797b0a5496122ce318b65b545a8c612a0077e0f9bcb3f21ec7ed84c5",
+   "master_source": "exec-384478bf-513f-49f7-915d-a66baa1f2388.png",
+   "flip_h": false,
+   "match_distance": 13.3
+  },
+  "plants/P07__plants__green_bush_small__default__1x1__64x64.png": {
+   "master": "plants/flowers_white_04.png",
+   "master_sha256": "1db91d5ed42841c355c6a9506b9b7129abb52fb2a56b8eb02e989e09fbcdb6a2",
+   "master_source": "exec-68fa3861-6a81-4cb1-8f67-f6cd7f69a1c6.png",
+   "flip_h": false,
+   "match_distance": 13.9
+  },
+  "plants/P08__plants__green_bush_medium__default__1x1__64x64.png": {
+   "master": "plants/flowers_white_08.png",
+   "master_sha256": "3e04d802f86ccfbb1ce88398caa33f770cce4300656cc050ddacbd5a79788682",
+   "master_source": "exec-ac03dbdf-985d-495c-bae6-9dca9b629cb5.png",
+   "flip_h": false,
+   "match_distance": 16.0
+  },
+  "plants/P09__plants__tropical_leaf_plant_small__default__1x1__64x64.png": {
+   "master": "plants/flowers_white_07.png",
+   "master_sha256": "01cfeed0506ec0e35d201b405c3525f858e98ef4e66aebb6d89ead845f541d81",
+   "master_source": "exec-a7e22ed8-3c45-418e-8e47-19dd521d7450.png",
+   "flip_h": false,
+   "match_distance": 10.9
+  },
+  "plants/P10__plants__tropical_leaf_plant_medium__default__1x1__64x64.png": {
+   "master": "plants/flowers_white_05.png",
+   "master_sha256": "0d843add2b9ad47becdcf0846d39939834156a1060895a5bcbed5a328e563ae6",
+   "master_source": "exec-8ac3c62e-f1c2-442c-99e8-6dcf414aeb1e.png",
+   "flip_h": false,
+   "match_distance": 12.0
+  },
+  "plants/P11__plants__potted_blue_gold_ceramic_plant__default__1x1__64x64.png": {
+   "master": "plants/flowers_white_06.png",
+   "master_sha256": "59ac3e467a9d3593037e0b78963cdb3ba2f2c01b136a08d148418d031621c78b",
+   "master_source": "exec-93927f1f-6731-4d4a-a2a7-14ad170f0699.png",
+   "flip_h": false,
+   "match_distance": 9.5
+  },
+  "plants/P12__plants__floral_wall_growth_left__default__1x1__64x64.png": {
+   "master": "plants/ivy_hanging_02.png",
+   "master_sha256": "4f4e2b67afc1d51d0bf4810d6c6d52ff9c7463e2164daf613b2caf13fa75c41a",
+   "master_source": "exec-29c6aabf-8124-4a5d-8e1b-39c43b01f6d4.png",
+   "flip_h": false,
+   "match_distance": 9.7
+  },
+  "plants/P13__plants__floral_wall_growth_right__default__1x1__64x64.png": {
+   "master": "plants/ivy_hanging_04.png",
+   "master_sha256": "90857108d748633e3920c3855f81b9370fdcae0b68999e749bfbd8d231da5aa0",
+   "master_source": "exec-ad48de50-1238-4269-8d70-9d20457bd72c.png",
+   "flip_h": false,
+   "match_distance": 9.2
+  },
+  "plants/P14__plants__ground_flower_patch_mixed__default__1x1__64x64.png": {
+   "master": "plants/flowers_white_03.png",
+   "master_sha256": "c93e0fd8a419a88173c51ce025dd708b12793641e1c5c219649d4307b4ad1fd3",
+   "master_source": "exec-4b8ca93c-4447-4a32-8827-eaf99ccc1c21.png",
+   "flip_h": false,
+   "match_distance": 12.0
+  },
+  "props/R01__props__blue_gold_ceramic_vase_small__default__1x1__64x64.png": {
+   "master": "props/vase_blue_04.png",
+   "master_sha256": "2922126b17d0e573169a596457034ecf3535e80132a4b6d0eb276d943243880c",
+   "master_source": "exec-8aa4b35c-eed0-4528-b28e-95bc7355d64d.png",
+   "flip_h": false,
+   "match_distance": 17.4
+  },
+  "props/R02__props__blue_gold_ceramic_vase_large__default__1x1__64x64.png": {
+   "master": "props/vase_blue_03.png",
+   "master_sha256": "3e8083f3554a0f5d80f4972cde8c389f18ac732ea91c347d20e2c199cc199150",
+   "master_source": "exec-5bf1fa33-c33c-400a-83dd-25740bcce9aa.png",
+   "flip_h": false,
+   "match_distance": 14.0
+  },
+  "props/R03__props__decorative_pot_small__default__1x1__64x64.png": {
+   "master": "props/vase_blue_02.png",
+   "master_sha256": "7233f6bfed55cf5f24af91532ddf02da3123558e85c09290596c2dc94175103b",
+   "master_source": "exec-588936e1-70fd-455a-bd38-cd804df229e6.png",
+   "flip_h": false,
+   "match_distance": 34.5
+  },
+  "props/R04__props__decorative_pot_medium__default__1x1__64x64.png": {
+   "master": "props/vase_blue_01.png",
+   "master_sha256": "83573d82c8e627561b28511c4348469333689df126cd05928232d63af99fbf3a",
+   "master_source": "exec-14227ef2-634e-4eb6-9f01-f2c731ee4d48.png",
+   "flip_h": false,
+   "match_distance": 21.4
+  },
+  "props/R05__props__scroll_bundle__default__1x1__64x64.png": {
+   "master": "props/scroll_01.png",
+   "master_sha256": "4b78d6a0e9575aecee4d0550b84af6c780609936a0f2e62153cf6d6963a4fa29",
+   "master_source": "exec-362f7b5f-9b47-41c3-a00d-ed365db3e8c9.png",
+   "flip_h": false,
+   "match_distance": 16.2
+  },
+  "props/R06__props__open_book__default__1x1__64x64.png": {
+   "master": "props/open_book_01.png",
+   "master_sha256": "b42e8379ff75ce9a16d96b68f4bf0d304e9b4ed6b4730db7b837684b0d3b5ad3",
+   "master_source": "exec-074ed3d2-f09a-4b7f-af9b-e2a606ec3984.png",
+   "flip_h": false,
+   "match_distance": 18.5
+  },
+  "props/R07__props__closed_book_stack__default__1x1__64x64.png": {
+   "master": "props/books_stack_blue_01.png",
+   "master_sha256": "664043c11a0fd440d65ab26086df0c471dd4b9131a29d39d8414e6b19d9e31d3",
+   "master_source": "exec-7f0274d6-8c73-4460-99a1-2628043ed4e2.png",
+   "flip_h": false,
+   "match_distance": 16.4
+  },
+  "props/R08__props__rolled_map__default__1x1__64x64.png": {
+   "master": "props/scroll_02.png",
+   "master_sha256": "b2c2ebee4f5d6e384ee5794d3c8f098b10f7e3ffaacf567acdeef65fa4f91e34",
+   "master_source": "exec-98115270-f51f-4c4b-89ba-2cee963dccfd.png",
+   "flip_h": false,
+   "match_distance": 16.0
+  },
+  "props/R09__props__open_map_on_table__default__1x1__64x64.png": {
+   "master": "props/open_map_01.png",
+   "master_sha256": "6e8904d79ea7bfed46b68fbb26aeeff2cb3db876f33f80099e248dd5ed59f9ad",
+   "master_source": "exec-22196225-a9f2-412b-bbf2-b4b6cac37a71.png",
+   "flip_h": false,
+   "match_distance": 15.6
+  },
+  "props/R10__props__fruit_bowl__default__1x1__64x64.png": {
+   "master": "props/fruit_bowl_01.png",
+   "master_sha256": "bdefbe5c7ab37c76aa8c1721206081a332d7e2f9f910f1fa9ff741748c1ea23e",
+   "master_source": "exec-c70caf62-c3a4-4a0f-be65-49f0393e4f42.png",
+   "flip_h": false,
+   "match_distance": 11.6
+  },
+  "props/R11__props__white_jug__default__1x1__64x64.png": {
+   "master": "props/jug_white_01.png",
+   "master_sha256": "5c2a4bd2c1a1bb36bb31c2947593163e2ee7ba76c34c4d6e16b0ef313abe694d",
+   "master_source": "exec-46d85f18-4ee9-4a7f-a16e-111a146dd868.png",
+   "flip_h": false,
+   "match_distance": 10.6
+  },
+  "props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png": {
+   "master": "props/armillary_sphere_01.png",
+   "master_sha256": "8134e594597d60b0c984dcd9338e04583f68a3bc9f1146f61b90ae7f1aa3eb11",
+   "master_source": "exec-9e38b936-df04-4a35-bb19-a4c3a99ddeea.png",
+   "flip_h": false,
+   "match_distance": 11.0
+  },
+  "props/R13__props__conch_shell__default__1x1__64x64.png": {
+   "master": "props/shell_conch_01.png",
+   "master_sha256": "6bcd49058145625e9ed40ec50658f55ff4717535eddf2c5e3d7e1f4a79365ed0",
+   "master_source": "exec-aac9d3f0-816f-44a6-8c84-11a4946b3f48.png",
+   "flip_h": false,
+   "match_distance": 9.2
+  },
+  "props/R14__props__starfish_coral_decorative_piece__default__1x1__64x64.png": {
+   "master": "props/starfish_coral_01.png",
+   "master_sha256": "63ce3120728a732380c8461217e3d0c428b04d6eeb240ed3f6e91d8e6248417e",
+   "master_source": "exec-f307d865-6052-49e9-9fad-43194a2b1ef5.png",
+   "flip_h": false,
+   "match_distance": 10.1
+  },
+  "wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png": {
+   "master": "architecture/stone_block_02.png",
+   "master_sha256": "92b2e723159983e2c674d2bf746445c6299826d22aca9242e45f3991b2da8168",
+   "master_source": "exec-14958d53-23c6-463b-88eb-042175bd7f16.png",
+   "flip_h": false,
+   "match_distance": 2.8
+  },
+  "wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png": {
+   "master": "architecture/stone_block_05.png",
+   "master_sha256": "9ca84822ee2e64c4c5c4aea8f2867a2b73ac34ad77d2f1c8673300148994e799",
+   "master_source": "exec-ee2aea30-816e-4eac-bc39-13ec4b00e4b6.png",
+   "flip_h": false,
+   "match_distance": 4.8
+  },
+  "wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.png": {
+   "master": "architecture/column_ivy_03.png",
+   "master_sha256": "af46f022217b1d1596bb5fbbc3c61e8a8a0631a15a0070372f3eae671fab557f",
+   "master_source": "exec-32c1e5ad-a38d-417f-b68b-a0edd5578af8.png",
+   "flip_h": false,
+   "match_distance": 7.3
+  },
+  "wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.png": {
+   "master": "architecture/column_ivy_01.png",
+   "master_sha256": "b43398d00a996c8ea4a2c03bdcfc8a83cacfb9e89f2120cd6b039e6423a5019c",
+   "master_source": "exec-1baf7f4c-26fa-41d7-a7e9-150da2049afc.png",
+   "flip_h": false,
+   "match_distance": 7.3
+  },
+  "wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.png": {
+   "master": "architecture/column_ivy_04.png",
+   "master_sha256": "c6834fe436d0ada5044d095474ec49ab0a349af5785c7f3e939cc4ebbba3d36f",
+   "master_source": "exec-46c7f62c-682a-4bc4-aca5-999a36851c0e.png",
+   "flip_h": false,
+   "match_distance": 5.5
+  },
+  "wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.png": {
+   "master": "architecture/wall_ivy_block_02.png",
+   "master_sha256": "d27fbebaeec3bfdd0ec38bb5957174bc9a0fdcc3706842ed50152114de3c3cfd",
+   "master_source": "exec-be9a4bb8-4fb1-4361-888a-eb9172d36698.png",
+   "flip_h": false,
+   "match_distance": 7.0
+  },
+  "wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png": {
+   "master": "architecture/stone_block_04.png",
+   "master_sha256": "f9ef46ddd67cb7cee3818ff3789623b616f4f7527f03969efca3cc170fd1aa77",
+   "master_source": "exec-b9acd6d9-2aeb-47ac-bdad-dea823c45550.png",
+   "flip_h": false,
+   "match_distance": 6.1
+  },
+  "wall/W08__wall__inner_corner_wall_block__default__1x1__64x128.png": {
+   "master": "architecture/wall_ivy_banner_06.png",
+   "master_sha256": "ab05f73205c440b3ce682ecf35115c31a40eebdf96a39b60a292acc0f0281316",
+   "master_source": "exec-fe1bde58-c44f-43f4-b552-4fdad6d524e8.png",
+   "flip_h": false,
+   "match_distance": 8.3
+  },
+  "wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png": {
+   "master": "architecture/wall_ivy_banner_05.png",
+   "master_sha256": "8077fb91e98a52a100cb4d3139f42c170a607d558ed6d4cc60460771259fdb48",
+   "master_source": "exec-dafd44e1-3c74-475a-b170-4bb89d1f57de.png",
+   "flip_h": false,
+   "match_distance": 7.7
+  },
+  "wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png": {
+   "master": "architecture/wall_ivy_block_01.png",
+   "master_sha256": "5190e135a59e08af1617b36d006d5d4534f2d06cffef182aaae5efddd1b90120",
+   "master_source": "exec-aa85a93c-b7bd-4ad3-ab18-0029a60ef191.png",
+   "flip_h": false,
+   "match_distance": 9.6
+  },
+  "wall/W11__wall__wall_end_piece_left__default__1x1__64x128.png": {
+   "master": "architecture/wall_ivy_banner_01.png",
+   "master_sha256": "ab4a660afa540c4bed2cf1c16676ebd60aa240fba68c4708c99b428ac0b4b101",
+   "master_source": "exec-282e7526-4357-404a-a629-b710fbe7781a.png",
+   "flip_h": false,
+   "match_distance": 8.4
+  },
+  "wall/W12__wall__wall_end_piece_right__default__1x1__64x128.png": {
+   "master": "architecture/wall_ivy_banner_02.png",
+   "master_sha256": "b5077f073b028c4c38a8e65dff172f329128eb520ff65b1229fbe43df220adc6",
+   "master_source": "exec-63d7c660-9817-4419-977f-d0ad3e7b0018.png",
+   "flip_h": false,
+   "match_distance": 8.3
+  },
+  "wall/W13__wall__arch_adjacent_wall_block_left__default__1x1__64x128.png": {
+   "master": "architecture/wall_ivy_banner_04.png",
+   "master_sha256": "c9fbe511af7aefcdae74ca6a78083d6777175d46e71f65eb84626f14f3d3cb2f",
+   "master_source": "exec-b6f833a7-7ae2-4b94-aa88-1431dca4d587.png",
+   "flip_h": false,
+   "match_distance": 9.9
+  },
+  "wall/W14__wall__arch_adjacent_wall_block_right__default__1x1__64x128.png": {
+   "master": "architecture/column_ivy_02.png",
+   "master_sha256": "0f5b33d9b6e5b1c3cabf3c9128c49f714cecb7deeccbec9018abac992e606dcd",
+   "master_source": "exec-256cd605-97fd-4e88-bae2-e0fa61bc3207.png",
+   "flip_h": false,
+   "match_distance": 8.0
+  },
+  "wall/W15__wall__decorative_banner_wall_mount_block__default__1x1__64x128.png": {
+   "master": "architecture/wall_ivy_banner_03.png",
+   "master_sha256": "c6d4190e77da92bfa622f36f10e2d36a4f28f24dbccb4b660483607195e89cea",
+   "master_source": "exec-970b2f7c-b04c-41ae-9514-cd9369e76076.png",
+   "flip_h": false,
+   "match_distance": 11.6
+  }
+ }
+}

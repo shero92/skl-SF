@@ -336,11 +336,14 @@ func _paint_ground(data: Dictionary, target: Node2D, projection_y: float = 1.0) 
             var path := String(record.get("texture_path", ""))
             var pos := Vector2(float(offset[0]) + x * tile_size, float(offset[1]) + y * tile_size * projection_y)
             if path != "" and ResourceLoader.exists(path):
-                var texture := load(path) as Texture2D
+                var texture := load(HdAssets.resolve(path)) as Texture2D
                 if texture != null:
                     var styled_tile := bool(tile_style.get("enabled", false)) and style_tile_ids.has(asset_id)
                     if styled_tile:
-                        var edges: Array = tile_style.get("crop_insets", [0, 0, 0, 0])
+                        var edges: Array = tile_style.get("crop_insets", [0, 0, 0, 0]).duplicate()
+                        var hd_factor := float(texture.get_width()) / 64.0 # insets are authored for 64 px tiles
+                        for edge_index in edges.size():
+                            edges[edge_index] = float(edges[edge_index]) * hd_factor
                         var cut := AtlasTexture.new()
                         cut.atlas = texture
                         cut.region = Rect2(
