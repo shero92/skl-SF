@@ -1,10 +1,10 @@
 ---
 id: TASK-0098
-status: todo
+status: done
 owner: claude
 agent: claude
 priority: high
-branch: none
+branch: task/0098-target-reference
 depends_on: none
 issue: none
 art_request: none

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "scope": "design reference only; not approval of any generated room, not a background or sprite",
+  "requirements": [
+    {
+      "kind": "design_target_reference",
+      "status": "reference_only",
+      "path": "map_factory/references/hero_room_01_target_20261103.png",
+      "sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "pixel_size": [1536, 1024],
+      "owner_supplied_on": "2026-11-03",
+      "provenance": {
+        "kind": "owner_supplied_original",
+        "chat_attachment_name": "3adba40a-8d9a-49fe-961b-7a900457d5e0(5).png",
+        "local_source": "Documents/ChatGPT/skl-the-acnient-seal/builds/qa/tas_home_restore_03/source/reference/tidewatch_reference_extraction_v1/reference/original_unmodified.png",
+        "verification": "bytes copied unchanged; SHA256 and 1536x1024 size match the owner-supplied identity; visually checked"
+      },
+      "contains_characters": "two small characters near x=710-830,y=440-540 are NOT part of the room and must not be baked into it"
+    }
+  ],
+  "preserved_references": [
+    "map_factory/references/hero_room_01_original.png",
+    "map_factory/references/hero_room_reference_v2.png"
+  ],
+  "visual_approval": false
+}
