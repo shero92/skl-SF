@@ -31,6 +31,13 @@
       "paths": ["tools/build_hero_room_blueprint.py", "tools/tests/test_hero_room_v0013_patch.py", "tools/test_map.json"]
     },
     {
+      "id": "camera_light_shafts",
+      "kind": "python",
+      "covers": "Map Factory camera (x, y, zoom) and light_shafts snapshot fields: validation rules.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_camera_light_shafts.py"],
+      "paths": ["tools/map_factory_cli.py", "tools/tests/test_camera_light_shafts.py", "tools/test_map.json"]
+    },
+    {
       "id": "layer_zorder_anchor",
       "kind": "python",
       "covers": "Five-level layer and display-depth order, base-y sorting, registered pixel anchors, declared scale exceptions and latest room diagnostic counts.",
