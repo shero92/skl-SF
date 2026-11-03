@@ -8,7 +8,7 @@ branch: none
 depends_on: TASK-0092
 issue: none
 art_request: none
-touches: tools/build_hero_room_blueprint.py,tools/map_factory_placement.py,tools/tests/test_enclosing_walls.py,tools/test_map.json
+touches: tools/build_hero_room_blueprint.py,tools/map_factory_placement.py,tools/tests/test_enclosing_walls.py,tools/tests/test_hero_room_scenery.py,tools/test_map.json
 test: python -m unittest discover -s tools/tests -p test_enclosing_walls.py
 done_when: A wall run follows the floor_footprint perimeter on top, left, right and bottom, with a gap at the rear arch and at the front stairs, using corner, cap, end and arch-adjacent blocks.
 estimate_minutes: 90
@@ -31,6 +31,9 @@ Use plain ASCII characters only in every reply, comment, string and file you wri
 Do not write the path or file name of any file that is not in `touches` anywhere in your reply or in the files you edit (not in prose, not in the `paths` list of the tools/test_map.json entry, not in comments): Aider treats such a mention as a request to add the file, discards your edits and asks again. In the test_map.json entry list in `paths` only files from `touches`; read other data files at runtime inside the test by constructing the path from parts.
 
 Router registration: add ONE entry for test_enclosing_walls.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; leave every other entry untouched.
+
+## Known conflict with an existing test (found in the first run)
+The merged scenery test asserts exactly nine layout entries whose instance_id starts with FrontLowWall and whose id is W10, and that the two TerraceRockFront cliffs do not overlap them. Keep those nine entries (same instance_id prefix and id) as the front wall run and make the new perimeter generator skip their cells; if that is impossible, edit that scenery test (now in touches) so it selects the front wall entries by the FrontLowWall instance_id prefix and requires at least one, keeping the no-overlap assertion. Both the enclosing-wall test and the scenery test must pass.
 
 ## Acceptance criteria
 - [ ] Perimeter fully walled except two gaps; corner and cap ids used; no illegal overlap
