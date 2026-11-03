@@ -250,6 +250,77 @@ def entry_scale(catalog, entry):
                TILE / asset["pixel_size"][0])
 
 
+def lighting_decor_entries(walls):
+    """Build decor on perimeter walls and furniture, followed by front glows."""
+    entries = []
+    wall_hosts = {
+        tuple(wall["perimeter_cell"]): wall["instance_id"] for wall in walls
+    }
+
+    def mount(asset_id, host, offset, layer, name, scale=1.0):
+        entries.append(dict(
+            kind="mount", id=asset_id, mount_on=host,
+            mount_offset=offset, layer=layer, instance_id=name, scale=scale,
+        ))
+
+    # Side-wall spacing leaves the rear and stair openings clear.
+    for side, x in (("Left", 0), ("Right", 16)):
+        for y in (0, 2, 4, 6):
+            host = wall_hosts[(x, y)]
+            name = f"{side}WallLantern{y}"
+            mount("L01" if y % 4 == 0 else "L02", host, (0, -40),
+                  "back_objects", name, 0.5)
+            mount("L05", name, (0, -12), "front_objects",
+                  f"{name}Glow", 0.5)
+
+    for asset_id, cell, name in (
+        ("D04", (3, 0), "LeftWallBanner"),
+        ("D05", (13, 0), "RightWallBanner"),
+    ):
+        mount(asset_id, wall_hosts[cell], (0, -42),
+              "back_objects", name, 0.65)
+
+    for index, cell in enumerate(((0, 1), (16, 1), (0, 5), (16, 5))):
+        host = wall_hosts[cell]
+        mount(("P01", "P02", "P03")[index % 3], host, (0, -64),
+              "back_objects", f"WallTopIvy{index}", 0.5)
+        mount("P04", host, (12, -64), "back_objects",
+              f"WallTopFlowers{index}", 0.4)
+        mount("P05" if index % 2 == 0 else "P06", host, (0, 0),
+              "objects", f"WallBasePlants{index}", 0.5)
+
+    for host, offset, name in (
+        ("BedsideTable", (0, -48), "BedsideLantern"),
+        ("DiningTable", (65, -151), "DiningLantern"),
+    ):
+        mount("L04", host, offset, "objects", name, 0.5)
+        mount("L05", name, (0, -12), "front_objects",
+              f"{name}Glow", 0.5)
+
+    for host, offset, name in (
+        ("LeftBookcase", (-24, -64), "LeftShelfCandles"),
+        ("RightBookcase", (24, -64), "RightShelfCandles"),
+        ("DiningTable", (-65, -151), "DiningCandles"),
+    ):
+        mount("L03", host, offset, "objects", name, 0.5)
+        mount("L05", name, (0, -10), "front_objects",
+              f"{name}Glow", 0.4)
+
+    for asset_id, host, offset, name in (
+        ("R01", "BedsideTable", (24, -48), "BedsideVase"),
+        ("R02", "RightBookcase", (-24, -64), "ShelfVase"),
+        ("R06", "LeftBookcase", (24, -64), "ShelfBooks"),
+        ("R05", "DiningTable", (-90, -151), "TableScroll"),
+        ("R09", "DiningTable", (-30, -151), "TableMap"),
+        ("R06", "DiningTable", (0, -151), "TableBook"),
+        ("R10", "DiningTable", (30, -151), "TableFruitBowl"),
+        ("R11", "DiningTable", (95, -151), "TableJug"),
+    ):
+        mount(asset_id, host, offset, "objects", name, 0.4)
+
+    return entries
+
+
 def layout_entries():
     E = []
 
@@ -425,6 +496,15 @@ def layout_entries():
                   cell=(9, 1), layer="objects", instance_id="ArchVaseRight",
                   shadow={"type": "contact_small", "opacity": 0.20, "offset_x": 2, "offset_y": 2}))
 
+    # Replace legacy decor with mounts on perimeter walls or parent furniture.
+    E = [
+        entry for entry in E
+        if not entry["id"].startswith(("L", "P", "R"))
+        and entry["id"] not in ("D04", "D05")
+    ]
+    E.extend(lighting_decor_entries(
+        [entry for entry in E if "perimeter_cell" in entry]
+    ))
     return E
 
 
@@ -466,10 +546,10 @@ def resolve_entries(catalog, entries):
                 computed[e["instance_id"]] = wall_position(
                     catalog, e["id"], e["scale"], e["cell_x"], e["content_base_y"])
 
-    host_pos = dict(computed)
+    # Mounts follow their hosts, including lantern-mounted glow overlays.
     for e in entries:
         if e["kind"] == "mount":
-            hx, hy = host_pos[e["mount_on"]]
+            hx, hy = computed[e["mount_on"]]
             ox, oy = e["mount_offset"]
             computed[e["instance_id"]] = [round(hx + ox, 3), round(hy + oy, 3)]
 
