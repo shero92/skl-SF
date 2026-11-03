@@ -2,6 +2,13 @@
   "version": 1,
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
+    {
+      "id": "registry_verification",
+      "kind": "python",
+      "covers": "Map v2 and legacy ID classification, directional aliases, all 128 PNG hashes and dimensions, and complete cardinal groups.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_registry_verification.py"],
+      "paths": ["tools/audit_room_assets.py", "map_factory/metadata/environment_assets_v2.json", "map_factory/metadata/asset_index.json", "map_factory/maps/**", "tools/tests/test_registry_verification.py"]
+    },
     {"id": "battle_controller", "kind": "python", "covers": "Attacker/defender battle controller lifecycle, busy and missing-asset rejection, cancellation, reset and reentrant signal safety.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_controller.py"], "paths": ["scenes/battle/battle_animation_controller.gd", "scenes/battle/battle_timeline.gd", "tools/verify_battle_controller.gd", "tools/tests/test_battle_controller.py", "tools/battle_godot_harness.py", ".agents/planner/config.json"]},
     {
       "id": "battle_perspective",

@@ -13,14 +13,100 @@ from map_factory_layers import create_layer_stack
 OUT=ROOT/"map_factory/metadata/room_block_quality.json"
 DOC=ROOT/"docs/ROOM_BLOCK_QA.md"
 
+def audit_map_ids(map_json, v2, legacy):
+    """Classify resolved_assets IDs without changing maps or registries.
+
+    Direct registry keys and asset_id values resolve through v2. Legacy
+    spellings remain in legacy_only, with an explicit v2_target when bridged.
+    A bridge does not promote the legacy record's status or QA approval.
+    """
+    assets = v2["assets"]
+    direct_ids = set(assets)
+    direct_ids.update(record["asset_id"] for record in assets.values())
+    aliases = v2.get("legacy_aliases", {})
+    legacy_assets = legacy.get("assets", legacy)
+    if isinstance(legacy_assets, list):
+        legacy_assets = {record["id"]: record for record in legacy_assets}
+    result = {"v2_resolved": [], "legacy_only": {}, "unresolved": []}
+    for asset_id in sorted(map_json["resolved_assets"]):
+        if asset_id in direct_ids:
+            result["v2_resolved"].append(asset_id)
+            continue
+        target = aliases.get(asset_id)
+        if asset_id in legacy_assets:
+            record = legacy_assets[asset_id]
+            result["legacy_only"][asset_id] = {
+                "status": record.get("status", "unknown"),
+                "qa_approval": bool(record.get("qa_approval")),
+                "v2_target": target if target in assets else None,
+            }
+        elif target in assets:
+            result["v2_resolved"].append(asset_id)
+        else:
+            result["unresolved"].append(asset_id)
+    return result
+
+
+def verify_v2_assets(v2, root):
+    """Read every v2 PNG and validate hashes, dimensions and bridge targets."""
+    root = Path(root)
+    assets = v2["assets"]
+    errors = []
+    verified = []
+    groups = collections.defaultdict(list)
+    directions = {"north", "east", "south", "west"}
+    if len(assets) != 128 or v2.get("count") != len(assets):
+        errors.append("Expected exactly 128 v2 entries and a matching count")
+    for alias, target in sorted(v2.get("legacy_aliases", {}).items()):
+        if target not in assets:
+            errors.append("Missing alias target " + alias + ": " + str(target))
+    for key, record in sorted(assets.items()):
+        direction = record.get("facing_direction", "default")
+        if direction != "default":
+            groups[record["category"]].append(direction)
+        if record.get("registry_key") != key:
+            errors.append("Registry key mismatch " + key)
+        file = root / record["source_texture_path"].removeprefix("res://")
+        if not file.is_file():
+            errors.append("Missing v2 PNG " + key)
+            continue
+        entry_errors = []
+        try:
+            digest = hashlib.sha256(file.read_bytes()).hexdigest()
+            if digest != record["sha256"]:
+                entry_errors.append("SHA-256 mismatch " + key)
+            with Image.open(file) as image:
+                image.load()
+                if image.format != "PNG":
+                    entry_errors.append("Non-PNG v2 sprite " + key)
+                if list(image.size) != record["sprite_dimensions"]:
+                    entry_errors.append("Sprite dimensions mismatch " + key)
+        except (OSError, ValueError) as exc:
+            entry_errors.append("Unreadable v2 PNG " + key + ": " + str(exc))
+        errors.extend(entry_errors)
+        if not entry_errors:
+            verified.append(key)
+    for category, facings in sorted(groups.items()):
+        if len(facings) != 4 or set(facings) != directions:
+            errors.append("Incomplete directional group " + category)
+    return {"verified": verified, "errors": errors}
+
+
 def main():
     catalog=asset_catalog(ROOT)
+    with (ROOT / "map_factory/metadata/environment_assets_v2.json").open(
+            encoding="utf-8") as handle:
+        v2 = json.load(handle)
+    v2_verification = verify_v2_assets(v2, ROOT)
     state=registry(ROOT)
     inspected={}
     summaries=[]
-    errors=[]
+    errors=list(v2_verification["errors"])
     for map_id in sorted(state["maps"]):
         current=get_latest(ROOT,map_id,state)
+        id_audit = audit_map_ids(current, v2, catalog)
+        errors.extend("Unresolved map asset " + map_id + ": " + asset_id
+                      for asset_id in id_audit["unresolved"])
         stack=create_layer_stack(current,catalog)
         used=stack["unique_asset_ids"]
         for asset_id in used:
@@ -66,6 +152,7 @@ def main():
                  "unique_asset_ids":len(used),
                  "visual_qa_status":current.get("visual_qa",{}).get("status","needs_review"),
                  "reference_sha256":current.get("composition_reference",{}).get("reference_sha256")}
+        summary["registry_ids"] = id_audit
         summaries.append(summary)
         if count["shadows"] != sum(
               x["shadow"].get("type","none")!="none" for key in ("background","ground","walls","decorations") for x in stack["passes"][key]):
@@ -107,7 +194,8 @@ def main():
         errors.append("Map catalog incomplete: %d/%d PNGs verified"%(len(inspected),len(all_map_ids)))
 
     by_status=collections.Counter(x["status"] for x in inspected.values())
-    response={"maps":summaries,"verified_environment_png_files":len(inspected),
+    response={"maps":summaries,"v2_verification":v2_verification,
+              "verified_environment_png_files":len(inspected),
               "environment_catalog_count":len(all_map_ids),
               "catalog_total":len(catalog),"catalog_status":dict(collections.Counter(x.get("status","planned") for x in catalog.values())),
               "referenced_status":dict(by_status),"errors":errors,
