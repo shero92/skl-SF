@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "layer_zorder_anchor",
+      "kind": "python",
+      "covers": "Five-level layer and display-depth order, base-y sorting, registered pixel anchors, declared scale exceptions and latest room diagnostic counts.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_layer_zorder_anchor.py"],
+      "paths": ["tools/map_factory_layers.py", "tools/tests/test_layer_zorder_anchor.py", "tools/test_map.json"]
+    },
+    {
       "id": "directional_furniture",
       "kind": "python",
       "covers": "Canonical furniture aliases, four distinct existing directional images, facing selection, bed footprints, bench axes and rejection of missing art or sprite rotation.",
