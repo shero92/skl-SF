@@ -24,20 +24,20 @@ Background islands and corner foundations come from approved v2 assets (sea stac
 ## Implementation
 In tools/build_hero_room_blueprint.py replace E015-E017 with approved sea_stack_island_small/medium and distant_rock_arch_formation ids, and E023/E024 with approved near_cliff_rock_segment placements positioned so they do not overlap the lower wall run. Use v2 ids by registry key; keep canvas and floor untouched. Test: no id from the E, F00x or S0xx families in the layout; every id is in v2; cliff boxes do not overlap lower wall boxes.
 
-Scope: only the files in touches. Never create, edit, move or delete any PNG or anything under assets_generated/, assets/ or map_factory/parts/. Do not touch battle files (scenes/battle/, tools/verify_battle_*). Do NOT call main() of tools/build_hero_room_blueprint.py from tests or code you add: it rewrites committed v0012 patch files; import and call only layout_entries()/resolve_entries()/helper functions. Do not generate map versions; the operator applies the patch and captures the Godot screenshot after merge.
+Scope: only the files in touches. Never create, edit, move or delete any PNG or anything under assets_generated/, assets/ or map_factory/parts/. Do not touch battle files. Never call the blueprint script main() from tests or code you add (it rewrites committed patch files); import and call only pure helper functions. Reply ONLY with edits to the files listed in touches; do not mention, request or ask to add any other file. Do not generate map versions; the operator applies the patch and captures the Godot screenshot after merge.
 
-Router registration: add ONE entry for test_hero_room_scenery.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; do not touch other entries or tools/tests/INDEX.md.
+Router registration: add ONE entry for test_hero_room_scenery.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; leave every other entry untouched.
 
 ## Acceptance criteria
 - [ ] No legacy scenery ids in layout; cliffs do not hide the lower wall
 - [ ] No PNG or generated asset changed
-- [ ] `python tools/run_tests.py --changed` passes
+- [ ] The task test passes with at least one test collected
 
 ## Expected result in Godot
 Ocean islands and bottom corner cliffs appear from approved art and the lower wall stays visible. (verified by the operator with a real Godot capture, not by this task's tests).
 
 ## Test
-`python -m unittest discover -s tools/tests -p test_hero_room_scenery.py`, then `python tools/run_tests.py --changed`.
+`python -m unittest discover -s tools/tests -p test_hero_room_scenery.py` (the worker also runs the project router). The test file must define a unittest.TestCase subclass with test_* methods so at least one test is collected.
 
 ## Estimate
 90 minutes.
