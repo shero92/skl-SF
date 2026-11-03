@@ -18,6 +18,9 @@ import build_hero_room_blueprint as blueprint
 class HeroRoomV0013PatchTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        # v0013 is applied on main; build against its recorded parent snapshot.
+        cls._latest = blueprint.LATEST
+        blueprint.LATEST = blueprint.LATEST.parent / "versions" / "v0012.json"
         cls.catalog = blueprint.load_catalog()
         cls.assets = {item["id"]: item for item in cls.catalog["assets"]}
         registry_path = blueprint.CATALOG_PATH.with_name(
@@ -42,6 +45,10 @@ class HeroRoomV0013PatchTests(unittest.TestCase):
             for change in cls.manifest["changes"]
             if change["op"] == "set_property"
         }
+
+    @classmethod
+    def tearDownClass(cls):
+        blueprint.LATEST = cls._latest
 
     def assert_v2(self, asset_id):
         # Legacy directional ids (F08_north) map to v2 keys (F08@north).
