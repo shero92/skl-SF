@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "hero_room_v0013_patch",
+      "kind": "python",
+      "covers": "Read-only deterministic version 13 patch, parent hash, complete replacement, approved v2 PNG diversity, G-only floor, perimeter walls, lighting, banners, furniture directions and sprite bounds.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_hero_room_v0013_patch.py"],
+      "paths": ["tools/build_hero_room_blueprint.py", "tools/tests/test_hero_room_v0013_patch.py", "tools/test_map.json"]
+    },
+    {
       "id": "layer_zorder_anchor",
       "kind": "python",
       "covers": "Five-level layer and display-depth order, base-y sorting, registered pixel anchors, declared scale exceptions and latest room diagnostic counts.",

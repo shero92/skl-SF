@@ -14,6 +14,8 @@ Run:  py -3 tools/build_hero_room_blueprint.py
 """
 from __future__ import annotations
 
+import argparse
+from copy import deepcopy
 import hashlib
 import json
 from pathlib import Path
@@ -329,6 +331,13 @@ def lighting_decor_entries(walls):
     for asset_id, cell, name in (
         ("D04", (3, 0), "LeftWallBanner"),
         ("D05", (13, 0), "RightWallBanner"),
+    ):
+        mount(asset_id, wall_hosts[cell], (0, -42),
+              "back_objects", name, 0.65)
+
+    for asset_id, cell, name in (
+        ("D04", (0, 3), "LeftSideWallBanner"),
+        ("D05", (16, 3), "RightSideWallBanner"),
     ):
         mount(asset_id, wall_hosts[cell], (0, -42),
               "back_objects", name, 0.65)
@@ -771,9 +780,8 @@ def digest_json(data):
     return hashlib.sha256(packed).hexdigest()
 
 
-def write_patch(catalog, blocks):
-    with open(LATEST, encoding="utf-8") as f:
-        latest = json.load(f)
+def patch_manifest(catalog, blocks, latest):
+    """Build a manifest without mutating inputs or writing files."""
     base_version = latest["version"]
     base_sha = digest_json(latest)
 
@@ -787,8 +795,8 @@ def write_patch(catalog, blocks):
     for iid in sorted(set(v0011_ids)):
         changes.append({"op": "remove_block", "instance_id": iid})
     for b in blocks:
-        layer = b.pop("_layer", "objects")
-        op_block = {k: v for k, v in b.items()}
+        layer = b.get("_layer", "objects")
+        op_block = deepcopy({k: v for k, v in b.items() if k != "_layer"})
         changes.append({"op": "add_block", "layer": layer, "block": op_block})
 
     # Clear every v0011 tile override via set_tile (id=None removes a tile).
@@ -900,12 +908,120 @@ def write_patch(catalog, blocks):
         },
         "changes": changes,
     }
+    return manifest
+
+
+def canonical_blocks(catalog, blocks):
+    """Resolve registered v2 identities and keep full sprites inside the canvas."""
+    assets = {asset["id"]: asset for asset in catalog["assets"]}
+    result = deepcopy(blocks)
+    positions = {}
+    for block in result:
+        block["id"] = canonical_asset_id(block["id"], assets)
+        if "direction_asset_ids" in block:
+            block["direction_asset_ids"] = {
+                facing: canonical_asset_id(asset_id, assets)
+                for facing, asset_id in block["direction_asset_ids"].items()
+            }
+        asset = assets[block["id"]]
+        width, height = asset["pixel_size"]
+        ox, oy = asset["origin"]
+        scale = min(block.get("scale", 1.0),
+                    CANVAS[0] / width, CANVAS[1] / height)
+        if "grid_placement" in block:
+            # Grid anchors remain authoritative; reduce uniformly if necessary.
+            limits = (
+                (block["x"], ox), (CANVAS[0] - block["x"], width - ox),
+                (block["y"], oy), (CANVAS[1] - block["y"], height - oy),
+            )
+            scale = min(scale, *(space / extent for space, extent in limits
+                                 if extent > 0))
+            if scale <= 0:
+                raise ValueError(f"Grid anchor outside canvas: {block['instance_id']}")
+        block["scale"] = scale
+        block["x"] = min(max(block["x"], scale * ox),
+                         CANVAS[0] - scale * (width - ox))
+        block["y"] = min(max(block["y"], scale * oy),
+                         CANVAS[1] - scale * (height - oy))
+        positions[block["instance_id"]] = (block["x"], block["y"])
+
+    for block in result:
+        if block.get("mount_on"):
+            hx, hy = positions[block["mount_on"]]
+            block["mount_offset"] = [block["x"] - hx, block["y"] - hy]
+    return result
+
+
+def build_patch(version):
+    """Return a deterministic patch from read-only inputs; never write outputs."""
+    if type(version) is not int or version < 2:
+        raise ValueError("Patch version must be an integer of at least 2")
+    with open(LATEST, encoding="utf-8") as f:
+        latest = json.load(f)
+    if version != 12 and latest["version"] != version - 1:
+        raise ValueError(
+            f"Patch version {version} requires parent {version - 1}; "
+            f"latest is {latest['version']}"
+        )
+    catalog = load_catalog()
+    blocks, _ = resolve_entries(catalog, layout_entries())
+    hosts = {block["instance_id"] for block in blocks}
+    for block in blocks:
+        if block.get("mount_on") and block["mount_on"] not in hosts:
+            raise ValueError(f"Mount host missing for {block['instance_id']}")
+    if version != 12:
+        blocks = canonical_blocks(catalog, blocks)
+    manifest = patch_manifest(catalog, blocks, latest)
+    if version != 12:
+        assets = {asset["id"]: asset for asset in catalog["assets"]}
+
+        def canonical_ids(value):
+            if isinstance(value, list):
+                return [canonical_ids(item) for item in value]
+            if isinstance(value, dict):
+                return {key: canonical_ids(item) for key, item in value.items()}
+            if isinstance(value, str) and value in assets:
+                return canonical_asset_id(value, assets)
+            return value
+
+        manifest = canonical_ids(manifest)
+        for change in manifest["changes"]:
+            if change["op"] == "set_property":
+                if change["key"] == "description":
+                    change["value"] = (
+                        f"Hero's Seaside Sanctuary - reference reconstruction "
+                        f"v{version:04d}. Approved environment assets; "
+                        "visual approval pending."
+                    )
+                elif change["key"] == "visual_qa":
+                    change["value"] = {
+                        "status": "needs_review",
+                        "notes": (
+                            f"Native render v{version:04d} pending; compare "
+                            f"against reference and v{version - 1:04d}."
+                        ),
+                    }
+        manifest["note"] = (
+            f"hero_room_01 reference reconstruction v{version:04d}: "
+            f"replace v{version - 1:04d} layout using approved v2 assets; "
+            "PNG bytes unchanged. Visual approval pending."
+        )
+    return manifest
+
+
+def write_patch(catalog, blocks, version=12):
+    """Write only the requested patch; preserve the default legacy behaviour."""
+    if version == 12:
+        with open(LATEST, encoding="utf-8") as f:
+            manifest = patch_manifest(catalog, blocks, json.load(f))
+    else:
+        manifest = build_patch(version)
+    destination = PATCH_DIR / f"v{version:04d}.json"
     PATCH_DIR.mkdir(parents=True, exist_ok=True)
-    with open(PATCH, "w", encoding="utf-8", newline="\n") as f:
+    with open(destination, "w", encoding="utf-8", newline="\n") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print(f"wrote patch: {PATCH} ({len(changes)} changes; {len(blocks)} blocks added, "
-          f"{len(set(v0011_ids))} v0011 blocks removed)")
+    print(f"wrote patch: {destination} ({len(manifest['changes'])} changes)")
     return manifest
 
 
@@ -914,7 +1030,21 @@ def write_patch(catalog, blocks):
 # ---------------------------------------------------------------------------
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Build the hero room patch.")
+    parser.add_argument("--patch-version", type=int, default=12)
+    args = parser.parse_args(argv)
+    if args.patch_version < 2:
+        parser.error("--patch-version must be at least 2")
+    if args.patch_version != 12:
+        manifest = build_patch(args.patch_version)
+        destination = PATCH_DIR / f"v{args.patch_version:04d}.json"
+        PATCH_DIR.mkdir(parents=True, exist_ok=True)
+        with open(destination, "w", encoding="utf-8", newline="\n") as f:
+            json.dump(manifest, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        print(f"wrote patch: {destination} ({len(manifest['changes'])} changes)")
+        return
     catalog = load_catalog()
     entries = layout_entries()
     blocks, computed = resolve_entries(catalog, entries)
