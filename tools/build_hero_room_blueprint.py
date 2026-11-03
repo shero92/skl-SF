@@ -164,6 +164,92 @@ def floor_settings():
     }
 
 
+def wall_perimeter():
+    """Return boundary cells, including the cells at reentrant corners."""
+    floor = {(cell["x"], cell["y"]) for cell in floor_layout()}
+    return {
+        (x, y) for x, y in floor
+        if any(
+            (x + dx, y + dy) not in floor
+            for dx, dy in (
+                (-1, 0), (1, 0), (0, -1), (0, 1),
+                (-1, -1), (-1, 1), (1, -1), (1, 1),
+            )
+        )
+    }
+
+
+def wall_gaps():
+    """The rear opening borders row 1; the stair exit crosses row 9."""
+    return {
+        "arch": {(x, 1) for x in range(5, 11)},
+        "stairs": {(x, 9) for x in range(7, 10)},
+    }
+
+
+def perimeter_wall_entries():
+    """Build one unrotated wall per boundary cell outside the two openings."""
+    floor = {(cell["x"], cell["y"]) for cell in floor_layout()}
+    gaps = set().union(*wall_gaps().values())
+    front = {(x, 8) for x in (1, 2, 3, 4, 11, 12, 13, 14, 15)}
+    entries = []
+    body_index = 0
+    for x, y in sorted(wall_perimeter() - gaps, key=lambda cell: (cell[1], cell[0])):
+        exposed = {
+            direction for direction in ((-1, 0), (1, 0), (0, -1), (0, 1))
+            if (x + direction[0], y + direction[1]) not in floor
+        }
+        instance_id = f"PerimeterWall_{x:02d}_{y:02d}"
+        if (x, y) in front:
+            asset_id = "W10"
+            side = "L" if x < 6 else "R"
+            instance_id = f"FrontLowWall{side}{x:02d}"
+        elif (x, y) == (4, 0):
+            asset_id = "W13"
+        elif (x, y) == (11, 0):
+            asset_id = "W14"
+        elif (x, y) == (6, 9):
+            asset_id = "W11"
+        elif (x, y) == (10, 9):
+            asset_id = "W12"
+        elif len(exposed) >= 2:
+            asset_id = "W09"
+        elif not exposed:
+            asset_id = "W08"
+        elif (0, -1) in exposed:
+            asset_id = "W07"
+        else:
+            # Cycle only eligible body cells so every variant is represented.
+            # Each accent appears once per sixteen bodies.
+            slot = body_index % 16
+            asset_id = {
+                2: "W03", 5: "W04", 8: "W05", 11: "W06",
+            }.get(slot, "W01" if body_index % 2 == 0 else "W02")
+            body_index += 1
+        if (x, y) in ((0, 0), (16, 0)):
+            instance_id = f"BackWallR{x:02d}"
+        entries.append(dict(
+            kind="explicit", id=asset_id, scale=1.0,
+            perimeter_cell=(x, y), cell_x=x,
+            content_base_y=GROUND_OFFSET[1] + (y + 1) * TILE,
+            layer="back_objects", instance_id=instance_id,
+            shadow={"type": "wall_base", "opacity": 0.24,
+                    "offset_x": 4, "offset_y": 4},
+        ))
+    return entries
+
+
+def entry_scale(catalog, entry):
+    """Uniformly fit walls to one cell using their registered dimensions."""
+    if "perimeter_cell" not in entry:
+        return entry.get("scale", 1.0)
+    asset = record(catalog, entry["id"])
+    contract = asset.get("placement_contract") or {}
+    width, depth = contract.get("footprint_cells", (1, 1))
+    return min(1.0, 1.0 / width, 1.0 / depth,
+               TILE / asset["pixel_size"][0])
+
+
 def layout_entries():
     E = []
 
@@ -237,13 +323,8 @@ def layout_entries():
                   content_center_x=1112, content_base_y=289, layer="back_objects",
                   instance_id="RearRightDoor",
                   shadow={"type": "soft_cast", "opacity": 0.24, "offset_x": 6, "offset_y": 5}))
-    # Back wall blocks (clean pale stone), content base y=289, scale 1.5.
-    # Left edge cell 0; right run cells 11, 12 (left of door) and cell 16 (right of door).
-    for cell_x in (0, 11, 12, 16):
-        E.append(dict(kind="explicit", id="W01", scale=1.5,
-                      cell_x=cell_x, content_base_y=289, layer="back_objects",
-                      instance_id="BackWallR%02d" % cell_x,
-                      shadow={"type": "wall_base", "opacity": 0.24, "offset_x": 6, "offset_y": 5}))
+    # Includes the nine named front low walls; no duplicate legacy wall run.
+    E.extend(perimeter_wall_entries())
     # Front staircase: 4 step tiles descending toward camera, centre x=750.
     for i, base_y in enumerate([880, 916, 952, 988]):
         E.append(dict(kind="explicit", id="A10", scale=1.6,
@@ -259,17 +340,6 @@ def layout_entries():
                   content_center_x=894, content_base_y=865, layer="back_objects",
                   instance_id="EntrancePillarRight",
                   shadow={"type": "column_short", "opacity": 0.26, "offset_x": 4, "offset_y": 4}))
-    # Front low broken walls along terrace edge, base y=865, scale 1.5.
-    for cell_x in (1, 2, 3, 4):
-        E.append(dict(kind="explicit", id="W10", scale=1.5,
-                      cell_x=cell_x, content_base_y=865, layer="back_objects",
-                      instance_id="FrontLowWallL%02d" % cell_x,
-                      shadow={"type": "wall_base", "opacity": 0.22, "offset_x": 4, "offset_y": 4}))
-    for cell_x in (11, 12, 13, 14, 15):
-        E.append(dict(kind="explicit", id="W10", scale=1.5,
-                      cell_x=cell_x, content_base_y=865, layer="back_objects",
-                      instance_id="FrontLowWallR%02d" % cell_x,
-                      shadow={"type": "wall_base", "opacity": 0.22, "offset_x": 4, "offset_y": 4}))
     # Stair side supports flanking the stringers.
     E.append(dict(kind="explicit", id="A11", scale=1.0,
                   content_center_x=630, content_base_y=916, layer="back_objects",
@@ -381,7 +451,14 @@ def resolve_entries(catalog, entries):
             y = GROUND_OFFSET[1] + (cell_y + fh) * TILE
             computed[e["instance_id"]] = [round(x, 3), round(y, 3)]
         elif e["kind"] == "explicit":
-            if e.get("content_center_x") is not None:
+            if "perimeter_cell" in e:
+                # Use the registered bottom-centre pivot, without sprite rotation.
+                cell_x, cell_y = e["perimeter_cell"]
+                computed[e["instance_id"]] = [
+                    GROUND_OFFSET[0] + (cell_x + 0.5) * TILE,
+                    GROUND_OFFSET[1] + (cell_y + 1) * TILE,
+                ]
+            elif e.get("content_center_x") is not None:
                 computed[e["instance_id"]] = position_from_target(
                     catalog, e["id"], e["scale"], e["content_center_x"],
                     e["content_base_y"])
@@ -401,7 +478,7 @@ def resolve_entries(catalog, entries):
         iid = e["instance_id"]
         x, y = computed[iid]
         block = {"id": e["id"], "instance_id": iid, "x": x, "y": y,
-                 "scale": e.get("scale", 1.0), "_layer": e["layer"]}
+                 "scale": entry_scale(catalog, e), "_layer": e["layer"]}
         if e["kind"] in ("grid", "overlay"):
             facing = e.get("facing", "north")
             block["grid_placement"] = {"cell": list(e["cell"]), "facing": facing}
@@ -444,7 +521,7 @@ def write_blueprint(catalog, entries, resolved):
         rec = record(catalog, e["id"])
         m = measurement(catalog, e["id"])
         entry = {"instance_id": iid, "asset_id": e["id"], "category": rec["category"],
-                 "kind": e["kind"], "position": [x, y], "scale": e.get("scale", 1.0),
+                 "kind": e["kind"], "position": [x, y], "scale": entry_scale(catalog, e),
                  "pixel_size": rec["pixel_size"], "content_bbox": m["content"],
                  "layer": e["layer"]}
         if e["kind"] in ("grid", "overlay"):
