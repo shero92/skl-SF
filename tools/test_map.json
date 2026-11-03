@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "hero_room_scenery",
+      "kind": "python",
+      "covers": "Approved v2 scenery registry keys, legacy ID rejection and cliff canvas bounds clear of lower walls.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_hero_room_scenery.py"],
+      "paths": ["tools/build_hero_room_blueprint.py", "tools/tests/test_hero_room_scenery.py", "map_factory/metadata/environment_assets_v2.json", "map_factory/metadata/asset_index.json"]
+    },
+    {
       "id": "hero_room_floor",
       "kind": "python",
       "covers": "Approved G01-G12 floor palette, unchanged footprint coverage, clean tile majority and deterministic pure layout.",

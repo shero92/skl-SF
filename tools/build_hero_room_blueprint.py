@@ -168,15 +168,15 @@ def layout_entries():
     E = []
 
     # ---- Level 0: background (distant isles, sea stacks) ----
-    E.append(dict(kind="background", id="E015", x=288, y=130, scale=0.32,
+    E.append(dict(kind="background", id="B05", x=288, y=130, scale=0.32,
                   layer="background_objects", instance_id="DistantIsleLeft"))
-    E.append(dict(kind="background", id="E016", x=1120, y=145, scale=0.25,
+    E.append(dict(kind="background", id="B06", x=1120, y=145, scale=0.25,
                   layer="background_objects", instance_id="DistantIsleRight"))
-    E.append(dict(kind="background", id="E017", x=1012, y=106, scale=0.14,
+    E.append(dict(kind="background", id="B11", x=1012, y=106, scale=0.14,
                   layer="background_objects", instance_id="DistantIsleArch"))
-    E.append(dict(kind="background", id="E015", x=90, y=110, scale=0.27,
+    E.append(dict(kind="background", id="B05", x=90, y=110, scale=0.27,
                   layer="background_objects", instance_id="LeftIslandDistantExtra"))
-    E.append(dict(kind="background", id="E016", x=1452, y=126, scale=0.19,
+    E.append(dict(kind="background", id="B06", x=1452, y=126, scale=0.19,
                   layer="background_objects", instance_id="RightIslandDistantExtra"))
     E.append(dict(kind="background", id="B05", x=40, y=100, scale=0.60,
                   layer="background_objects", instance_id="SeaStackLeft"))
@@ -281,11 +281,12 @@ def layout_entries():
                   shadow={"type": "wall_base", "opacity": 0.20, "offset_x": 3, "offset_y": 3}))
 
     # ---- Level 2: front coastal foundations (environment, rendered as walls) ----
-    E.append(dict(kind="background", id="E023", x=394, y=941, scale=0.88,
+    # Allow for the registered origin so full canvases fit below the lower walls.
+    E.append(dict(kind="background", id="B03", x=394, y=970, scale=0.20,
                   layer="front_objects", render_layer="walls",
                   instance_id="TerraceRockFrontLeft",
                   shadow={"type": "wall_base", "opacity": 0.18, "offset_x": 5, "offset_y": 8}))
-    E.append(dict(kind="background", id="E024", x=1145, y=941, scale=0.88,
+    E.append(dict(kind="background", id="B03", x=1145, y=970, scale=0.20,
                   layer="front_objects", render_layer="walls",
                   instance_id="TerraceRockFrontRight",
                   shadow={"type": "wall_base", "opacity": 0.18, "offset_x": 5, "offset_y": 8}))
