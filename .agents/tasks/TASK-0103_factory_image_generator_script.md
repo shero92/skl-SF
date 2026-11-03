@@ -1,10 +1,10 @@
 ---
 id: TASK-0103
-status: todo
-owner: aider
-agent: aider
+status: done
+owner: claude
+agent: claude
 priority: normal
-branch: aider/task-0103
+branch: tools/factory-image-generator-impl
 depends_on: none
 issue: none
 art_request: none
@@ -46,3 +46,7 @@ The file currently only prints that its implementation is missing. Replace it wi
 
 ## Reply rules
 Do not write the path or file name of any file that is not in `touches` anywhere in your reply or in the files you edit (not in prose, not in the `paths` list of the tools/test_map.json entry, not in comments): Aider treats such a mention as a request to add the file, discards your edits and asks again. In the test_map.json entry list in `paths` only files from `touches`; read other data files at runtime inside the test by constructing the path from parts. Use plain ASCII characters only in every reply, comment, string and file you write.
+
+
+## Outcome
+Aider could not take this task: the runner safety rule forbids paths starting with tools/generate_ (art generation scripts). Implemented by Claude Code instead, as the owner decided. No paid call was made.
