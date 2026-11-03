@@ -20,6 +20,37 @@ def load_composites():
     return json.loads((ROOT / "map_factory/blueprints/furniture_composites.json").read_text(encoding="utf-8"))["composites"]
 
 
+def content_bounds(asset, measurement, block):
+    """Return visible bounds using the registered pivot and uniform scale."""
+    ox, oy = asset["origin"]
+    left, top, width, height = measurement["content"]
+    scale = block.get("scale", 1.0)
+    x = block["x"] + (left - ox) * scale
+    y = block["y"] + (top - oy) * scale
+    return (x, y, x + width * scale, y + height * scale)
+
+
+def fit_registered_block(asset, measurement, block, zone, max_scale=1.0):
+    """Fit visible content into a review zone without rotation or distortion."""
+    from math import isfinite
+
+    left, top, right, bottom = zone
+    _, _, width, height = measurement["content"]
+    if (not all(isfinite(value) for value in zone)
+            or right <= left or bottom <= top or width <= 0 or height <= 0
+            or not isfinite(max_scale) or max_scale <= 0):
+        raise ValueError("Invalid content or placement zone")
+    scale = min(max_scale, (right - left) / width, (bottom - top) / height)
+    ox, oy = asset["origin"]
+    cx, cy, _, _ = measurement["content"]
+    return {
+        **block,
+        "scale": scale,
+        "x": (left + right) / 2 - (cx + width / 2 - ox) * scale,
+        "y": bottom - (cy + height - oy) * scale,
+    }
+
+
 def key_of(asset, facing=None):
     return asset if not facing else f"{asset}@{facing}"
 

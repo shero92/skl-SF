@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "hero_room_reference_relayout",
+      "kind": "python",
+      "covers": "Post-v0013 explicit target placements, registered anchors, exact asset identities, retained enclosing walls, intentional rug overlap, central floor coverage and deterministic read-only generation.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_hero_room_reference_relayout.py"],
+      "paths": ["tools/build_hero_room_blueprint.py", "tools/room_assembly.py", "tools/tests/test_hero_room_reference_relayout.py", "tools/test_map.json"]
+    },
+    {
       "id": "hero_room_visual_contract",
       "kind": "python",
       "covers": "Eleven image-space zones, strict contract validation, source existence, required IDs, verified render geometry, coverage and explicit potential missing-art requests.",
