@@ -1,0 +1,249 @@
+{
+ "manifest_version": 1,
+ "map_id": "hero_room_01",
+ "base_version": 13,
+ "base_sha256": "f32c8cd27e3703567130dddfb78c9a8fe9a1905e5f3f4e104f0e9da7117e4c37",
+ "note": "hero_room_01 v0014: adds per-map camera and slanted sunlight/shade bands clipped to the floor (new Map Factory features); layout unchanged. Visual approval pending.",
+ "source_image": {
+  "path": "map_factory/references/hero_room_01_original.png",
+  "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+  "status": "reference_imported"
+ },
+ "changes": [
+  {
+   "op": "set_property",
+   "key": "camera",
+   "value": {
+    "x": 768,
+    "y": 512,
+    "zoom": 1.0
+   }
+  },
+  {
+   "op": "set_property",
+   "key": "light_shafts",
+   "value": [
+    {
+     "instance_id": "SunShaft1",
+     "points": [
+      [
+       560,
+       235
+      ],
+      [
+       680,
+       235
+      ],
+      [
+       390,
+       790
+      ],
+      [
+       270,
+       790
+      ]
+     ],
+     "color": "#fff0b0",
+     "opacity": 0.12,
+     "blend": "add"
+    },
+    {
+     "instance_id": "SunShaft2",
+     "points": [
+      [
+       770,
+       235
+      ],
+      [
+       890,
+       235
+      ],
+      [
+       600,
+       790
+      ],
+      [
+       480,
+       790
+      ]
+     ],
+     "color": "#fff0b0",
+     "opacity": 0.12,
+     "blend": "add"
+    },
+    {
+     "instance_id": "SunShaft3",
+     "points": [
+      [
+       980,
+       235
+      ],
+      [
+       1100,
+       235
+      ],
+      [
+       810,
+       790
+      ],
+      [
+       690,
+       790
+      ]
+     ],
+     "color": "#fff0b0",
+     "opacity": 0.12,
+     "blend": "add"
+    },
+    {
+     "instance_id": "SunShaft4",
+     "points": [
+      [
+       1190,
+       235
+      ],
+      [
+       1308,
+       235
+      ],
+      [
+       1308,
+       239
+      ],
+      [
+       1020,
+       790
+      ],
+      [
+       900,
+       790
+      ]
+     ],
+     "color": "#fff0b0",
+     "opacity": 0.12,
+     "blend": "add"
+    },
+    {
+     "instance_id": "SunShaft5",
+     "points": [
+      [
+       1308,
+       411
+      ],
+      [
+       1308,
+       641
+      ],
+      [
+       1230,
+       790
+      ],
+      [
+       1110,
+       790
+      ]
+     ],
+     "color": "#fff0b0",
+     "opacity": 0.12,
+     "blend": "add"
+    },
+    {
+     "instance_id": "ShadeBand1",
+     "points": [
+      [
+       710,
+       235
+      ],
+      [
+       800,
+       235
+      ],
+      [
+       510,
+       790
+      ],
+      [
+       420,
+       790
+      ]
+     ],
+     "color": "#5a4630",
+     "opacity": 0.1,
+     "blend": "mix"
+    },
+    {
+     "instance_id": "ShadeBand2",
+     "points": [
+      [
+       920,
+       235
+      ],
+      [
+       1010,
+       235
+      ],
+      [
+       720,
+       790
+      ],
+      [
+       630,
+       790
+      ]
+     ],
+     "color": "#5a4630",
+     "opacity": 0.1,
+     "blend": "mix"
+    },
+    {
+     "instance_id": "ShadeBand3",
+     "points": [
+      [
+       1130,
+       235
+      ],
+      [
+       1220,
+       235
+      ],
+      [
+       930,
+       790
+      ],
+      [
+       840,
+       790
+      ]
+     ],
+     "color": "#5a4630",
+     "opacity": 0.1,
+     "blend": "mix"
+    },
+    {
+     "instance_id": "ShadeBand4",
+     "points": [
+      [
+       1308,
+       296
+      ],
+      [
+       1308,
+       468
+      ],
+      [
+       1140,
+       790
+      ],
+      [
+       1050,
+       790
+      ]
+     ],
+     "color": "#5a4630",
+     "opacity": 0.1,
+     "blend": "mix"
+    }
+   ]
+  }
+ ]
+}

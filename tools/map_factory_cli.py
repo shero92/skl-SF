@@ -119,6 +119,40 @@ def _modes(value, require_nonempty=True):
         isinstance(mode, str) and mode in TRAVERSAL_MODES for mode in value)
 
 
+def validate_camera(cam):
+    if not isinstance(cam, dict):
+        raise ValueError("camera must be an object")
+    for key in ("x", "y"):
+        if not isinstance(cam.get(key), (int, float)) or isinstance(cam.get(key), bool):
+            raise ValueError("camera needs numeric x and y (canvas pixels, view centre)")
+    zoom = cam.get("zoom", 1.0)
+    if not isinstance(zoom, (int, float)) or isinstance(zoom, bool) or not 0.25 <= zoom <= 4.0:
+        raise ValueError("camera zoom must be between 0.25 and 4.0")
+
+
+def validate_light_shafts(shafts, seen):
+    if not isinstance(shafts, list):
+        raise ValueError("light_shafts must be a list")
+    for item in shafts:
+        if not isinstance(item, dict) or not all(k in item for k in ("instance_id", "points", "color")):
+            raise ValueError("Invalid light shaft: needs instance_id, points, color")
+        if item["instance_id"] in seen:
+            raise ValueError("Duplicate light shaft instance")
+        seen.add(item["instance_id"])
+        pts = item["points"]
+        if not isinstance(pts, list) or len(pts) < 3 or not all(
+                isinstance(p, list) and len(p) == 2 and all(isinstance(v, (int, float)) for v in p) for p in pts):
+            raise ValueError("Light shaft points must be 3+ [x, y] pairs")
+        if not isinstance(item["color"], str) or not item["color"].startswith("#"):
+            raise ValueError("Light shaft color must be a #hex string")
+        opacity = item.get("opacity", 0.2)
+        if not isinstance(opacity, (int, float)) or not 0.0 <= opacity <= 1.0:
+            raise ValueError("Light shaft opacity must be 0..1")
+        if item.get("blend", "mix") not in ("mix", "add", "multiply"):
+            raise ValueError("Light shaft blend must be mix, add or multiply")
+
+
+
 def validate_navigation(nav: dict, placed_instance_ids):
     """Validate map-side traversability metadata only; do not control characters."""
     if not isinstance(nav, dict) or nav.get("schema_version") != 1:
@@ -377,6 +411,10 @@ def validate_room(data, catalog, expect_map_id=None):
         if item["instance_id"] in seen:
             raise ValueError("Duplicate effect instance")
         seen.add(item["instance_id"])
+    if "camera" in data:
+        validate_camera(data["camera"])
+    if "light_shafts" in data:
+        validate_light_shafts(data["light_shafts"], seen)
     if "navigation" in data:
         validate_navigation(data["navigation"], seen)
     if "visual_qa" in data:
@@ -668,6 +706,7 @@ def apply_changes(snapshot, manifest, catalog):
             key=operation["key"]
             allowed={"description","background_color","canvas_size","tile_size",
                      "size","ground_offset","floor_ids","floor_footprint","floor_tile_style","occlusion_mode","ocean","effects",
+                     "camera","light_shafts",
                      "source_image","floor_art","composition_reference", "navigation", "visual_qa",
                       "placement_policy", "requires_reviewed_footprints"}
             if key not in allowed:

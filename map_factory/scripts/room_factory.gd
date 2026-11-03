@@ -48,6 +48,8 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     root.set_meta("projection_y", projection_y)
     root.set_meta("map_id", String(data.get("map_id", "legacy_room")))
     root.set_meta("map_version", int(data.get("version", 0)))
+    if typeof(data.get("camera")) == TYPE_DICTIONARY:
+        root.set_meta("camera", data["camera"])
     var backdrop := Polygon2D.new()
     backdrop.name = "MapBackdrop"
     var canvas: Array = data.get("canvas_size", [1536, 1024])
@@ -71,6 +73,7 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     var stack: Dictionary = data.get("layer_stack", {})
     if not stack.is_empty() and int(stack.get("schema_version", 0)) == 1:
         _build_five_levels(data, stack, root)
+        _place_light_shafts(data.get("light_shafts", []), root)
         _place_effects(data.get("effects", []), root, projection_y)
         return root
 
@@ -83,6 +86,7 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     _place_group(data.get("back_objects", []), root, "RearArchitecture", false)
     _place_group(data.get("objects", []), root, "Entities", true)
     _place_group(data.get("front_objects", []), root, "FrontDecorations", false)
+    _place_light_shafts(data.get("light_shafts", []), root)
     _place_effects(data.get("effects", []), root, projection_y)
     return root
 
@@ -433,6 +437,35 @@ func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool
         group.add_child(node)
     if group is BackgroundFactory:
         (group as BackgroundFactory).configure(entries, catalog, canvas_size)
+
+func _place_light_shafts(entries: Array, parent: Node2D) -> void:
+    # Slanted sunlight/shade bands: flat polygons above the floor, below walls and decor.
+    if entries.is_empty():
+        return
+    var group := Node2D.new()
+    group.name = "Level4b_LightShafts"
+    group.z_index = 22
+    parent.add_child(group)
+    for info in entries:
+        if typeof(info) != TYPE_DICTIONARY:
+            continue
+        var points := PackedVector2Array()
+        for point in info.get("points", []):
+            points.append(Vector2(float(point[0]), float(point[1])))
+        if points.size() < 3:
+            continue
+        var poly := Polygon2D.new()
+        poly.name = String(info.get("instance_id", "LightShaft"))
+        poly.polygon = points
+        var tint := Color(String(info.get("color", "#ffe8a0")))
+        tint.a = clampf(float(info.get("opacity", 0.2)), 0.0, 1.0)
+        poly.color = tint
+        var blend := String(info.get("blend", "mix"))
+        if blend != "mix":
+            var material := CanvasItemMaterial.new()
+            material.blend_mode = CanvasItemMaterial.BLEND_MODE_ADD if blend == "add" else CanvasItemMaterial.BLEND_MODE_MUL
+            poly.material = material
+        group.add_child(poly)
 
 func _place_effects(entries: Array, parent: Node2D, projection_y: float = 1.0) -> void:
     var group := Node2D.new()

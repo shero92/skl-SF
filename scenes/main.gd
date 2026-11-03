@@ -36,6 +36,11 @@ func _ready() -> void:
 
     var camera := Camera2D.new()
     camera.position = Vector2(768, 512)
+    if room.has_meta("camera"):
+        # Per-map view from the Map Factory snapshot: centre in canvas pixels plus zoom.
+        var view: Dictionary = room.get_meta("camera")
+        camera.position = Vector2(float(view.get("x", 768)), float(view.get("y", 512)))
+        camera.zoom = Vector2.ONE * float(view.get("zoom", 1.0))
     camera.enabled = true
     add_child(camera)
 
