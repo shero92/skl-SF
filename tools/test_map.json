@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "enclosing_walls",
+      "kind": "python",
+      "covers": "Deterministic perimeter walls, exact arch and stair gaps, approved wall variants, corners, caps, ends and non-overlapping registered footprints.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_enclosing_walls.py"],
+      "paths": ["tools/build_hero_room_blueprint.py", "tools/map_factory_placement.py", "tools/tests/test_enclosing_walls.py", "tools/tests/test_hero_room_scenery.py", "tools/test_map.json"]
+    },
+    {
       "id": "hero_room_scenery",
       "kind": "python",
       "covers": "Approved v2 scenery registry keys, legacy ID rejection and cliff canvas bounds clear of lower walls.",
