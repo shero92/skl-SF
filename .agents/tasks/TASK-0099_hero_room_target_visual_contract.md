@@ -27,3 +27,6 @@ Reference: `docs/HERO_ROOM_20261103_VISUAL_TARGET.md`. Use imported `map_factory
 - No PNG, map snapshots, Battle scenes or character sources edited. Only exact `touches` files.
 - Successful `test_hero_room_visual_contract.py`, `python tools/run_tests.py --changed`, and documented real missing-art gaps.
 - Use short Aider context with only relevant files and read-only visual target; do not consume tokens dumping unrelated JSON history.
+
+## Reply rules
+Do not write the path or file name of any file that is not in `touches` anywhere in your reply or in the files you edit (not in prose, not in the `paths` list of the tools/test_map.json entry, not in comments): Aider treats such a mention as a request to add the file, discards your edits and asks again. In the test_map.json entry list in `paths` only files from `touches`; read other data files at runtime inside the test by constructing the path from parts. Use plain ASCII characters only in every reply, comment, string and file you write.

@@ -28,3 +28,6 @@ Reference: `docs/HERO_ROOM_20261103_VISUAL_TARGET.md` and machine contract from 
 - Unit tests actually discover tests and check key feature placements, allowed overlap, walkable space and exact asset references.
 - `python tools/run_tests.py --changed` passes, no PNG changes, old v0012/v0013 snapshots retained.
 - Provide deterministic command for operator to generate the new version after merge.
+
+## Reply rules
+Do not write the path or file name of any file that is not in `touches` anywhere in your reply or in the files you edit (not in prose, not in the `paths` list of the tools/test_map.json entry, not in comments): Aider treats such a mention as a request to add the file, discards your edits and asks again. In the test_map.json entry list in `paths` only files from `touches`; read other data files at runtime inside the test by constructing the path from parts. Use plain ASCII characters only in every reply, comment, string and file you write.
