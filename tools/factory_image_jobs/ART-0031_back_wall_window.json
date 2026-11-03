@@ -1,0 +1,24 @@
+{
+ "schema_version": 1,
+ "provider": "apimaster",
+ "model": "gpt-image-2",
+ "note": "Candidate only. Output is never auto-approved; owner visual review required.",
+ "items": [
+  {
+   "id": "ART-0031",
+   "title": "back_wall_window",
+   "output": "ART-0031/candidate_api_1/hero_back_wall_window.png",
+   "prompt": "Produce exactly ONE standalone PNG of ONE environment asset.\nAsset ART-0031: Back Wall Window Block; category wall; identity back_wall_window.\nSpecific shape/material instructions: one sandstone wall block, same masonry, colors and thickness as the reference stone wall block, with a small square window opening cut through the front face. The opening must be fully transparent so the sea can show through, with visible stone thickness on the inner sides of the opening, a light stone sill, and a small cluster of white flowers with green leaves growing on the sill.\nNative game canvas 64x128 pixels. Ground footprint 1x1 square tile, 64x64 pixels. Anchor (pixel coordinates from top-left): 0, 128.\nFacing: default. Square-grid player-facing top-down / three-quarter RPG camera; match the reference stone wall block. Never diamond 2:1 isometric.\nReference priority: the provided stone wall block image for camera, materials, pixel density and palette.\nWarm upper-left sunlight, subtle lower-right shading. Golden sandstone, pale worn stone, lush readable foliage.\nPremium handcrafted crisp pixel art, controlled detail and palette, hard pixel edges.\nFill the specified canvas without clipping; keep ground contact at the anchor.\nLayer: wall. Transparency required: True.\nSingle isolated object; no detached cast shadow outside its sprite.\nNo collage, contact sheet, atlas, text, labels, checkerboard, watermark, UI, characters, unrelated objects, multiple assets, background scene, blur, smoothing, anti-aliasing, soft painting, photorealism or 3D render appearance. Return one image only.",
+   "references": [
+    "assets_hd/architecture/stone_block_02.png"
+   ],
+   "size": "1024x1024",
+   "background": "transparent",
+   "native_size": [
+    64,
+    128
+   ],
+   "protected": false
+  }
+ ]
+}
