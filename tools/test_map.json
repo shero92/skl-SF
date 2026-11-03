@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "hero_room_visual_contract",
+      "kind": "python",
+      "covers": "Eleven image-space zones, strict contract validation, source existence, required IDs, verified render geometry, coverage and explicit potential missing-art requests.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_hero_room_visual_contract.py"],
+      "paths": ["tools/hero_room_visual_contract.py", "map_factory/blueprints/hero_room_01_visual_targets_20261103.json", "tools/tests/test_hero_room_visual_contract.py", "tools/test_map.json"]
+    },
+    {
       "id": "hero_room_v0013_patch",
       "kind": "python",
       "covers": "Read-only deterministic version 13 patch, parent hash, complete replacement, approved v2 PNG diversity, G-only floor, perimeter walls, lighting, banners, furniture directions and sprite bounds.",

@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "coordinate_space": "image",
+  "image_size": [1536, 1024],
+  "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+  "visual_approval": false,
+  "characters": "optional_separate_actors",
+  "asset_binding_status": "Required IDs await verified registry and render review; empty lists do not prove completeness.",
+  "zones": [
+    {
+      "id": "sea_cliffs",
+      "box": [0, 0, 1536, 360],
+      "features": ["azure_ocean", "foam", "sea_stacks", "coastal_arches", "sunlit_clouds"],
+      "required_asset_ids": [],
+      "notes": "Open water and sky without rectangular cutout borders."
+    },
+    {
+      "id": "rear_arch",
+      "box": [555, 0, 990, 390],
+      "features": ["open_stone_arch", "columns", "heavy_ivy", "white_orange_flowers"],
+      "required_asset_ids": [],
+      "notes": "Central opening must leave the sea visible."
+    },
+    {
+      "id": "left_walls",
+      "box": [100, 130, 640, 700],
+      "features": ["connected_left_limestone_wall", "broken_parapet", "blue_gold_banners", "climbing_vines", "hanging_lanterns"],
+      "required_asset_ids": [],
+      "notes": "Connected rear and side architecture with warm practical lights."
+    },
+    {
+      "id": "right_walls",
+      "box": [965, 100, 1510, 710],
+      "features": ["connected_right_wall", "arched_wooden_door", "blue_gold_banners", "hanging_lanterns", "upper_shelves"],
+      "required_asset_ids": [],
+      "notes": "Connected back and right wall, with shelf details."
+    },
+    {
+      "id": "floor",
+      "box": [190, 315, 1390, 800],
+      "features": ["continuous_sandstone_grid", "irregular_terrace_perimeter"],
+      "required_asset_ids": [],
+      "notes": "Perspective-aware warm tiles, visually distinct from water."
+    },
+    {
+      "id": "bed_rug",
+      "box": [220, 335, 580, 665],
+      "features": ["royal_wooden_bed", "blue_gold_blanket", "white_pillows", "ornate_blue_rug", "bookshelf", "shells", "flowers"],
+      "required_asset_ids": [],
+      "notes": "Bed on rug, with shelves, shells and flowers behind."
+    },
+    {
+      "id": "desk_rug",
+      "box": [1000, 430, 1350, 675],
+      "features": ["wooden_desk", "blue_gold_rug", "books", "map", "fruit", "jug", "tabletop_light", "shelves", "pots"],
+      "required_asset_ids": [],
+      "notes": "Right work and dining group, with shelves and pots behind."
+    },
+    {
+      "id": "compass",
+      "box": [635, 545, 890, 730],
+      "features": ["blue_gold_compass_rose"],
+      "required_asset_ids": [],
+      "notes": "Embedded in the floor and unobstructed by furniture."
+    },
+    {
+      "id": "front_parapet",
+      "box": [90, 640, 1460, 950],
+      "features": ["low_broken_parapet", "flower_planters", "ivy", "cliff_depth", "corner_posts", "coastal_rocks", "sea_foam"],
+      "required_asset_ids": [],
+      "notes": "Coastal terrace depth below a low broken stone perimeter."
+    },
+    {
+      "id": "stairs",
+      "box": [655, 755, 875, 1024],
+      "features": ["central_stair_opening", "paired_stone_posts", "descending_stone_steps"],
+      "required_asset_ids": [],
+      "notes": "Straight stairs descend towards the image bottom."
+    },
+    {
+      "id": "lighting",
+      "box": [0, 0, 1536, 1024],
+      "features": ["upper_left_daylight", "practical_warm_glow", "cast_shadows", "contact_shadows"],
+      "required_asset_ids": [],
+      "notes": "Lighting spans all zones; bounds alone cannot verify light direction or grounding."
+    }
+  ]
+}
