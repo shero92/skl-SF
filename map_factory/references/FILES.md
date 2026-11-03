@@ -6,7 +6,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`approved/`](approved/FILES.md)
+- [`characters/`](characters/FILES.md)
 
 ## Files
 
@@ -14,6 +15,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`hero_room_01_original.png`](hero_room_01_original.png)
 - [`hero_room_01_original.png.import`](hero_room_01_original.png.import)
 - [`hero_room_01_original.reference.json`](hero_room_01_original.reference.json)
+- [`hero_room_01_target_20261103.png`](hero_room_01_target_20261103.png)
+- [`hero_room_01_target_20261103.reference.json`](hero_room_01_target_20261103.reference.json)
 - [`hero_room_reference_v2.png`](hero_room_reference_v2.png)
+- [`hero_room_reference_v2.png.import`](hero_room_reference_v2.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

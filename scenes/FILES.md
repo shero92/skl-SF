@@ -6,18 +6,32 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`battle/`](battle/FILES.md)
 
 ## Files
 
 - [`dialogue_ui.gd`](dialogue_ui.gd)
 - [`dialogue_ui.gd.uid`](dialogue_ui.gd.uid)
+- [`game_factory_actor.gd`](game_factory_actor.gd)
+- [`game_factory_actor.gd.uid`](game_factory_actor.gd.uid)
+- [`game_factory_animation_viewer.tscn`](game_factory_animation_viewer.tscn)
+- [`game_factory_battle.tscn`](game_factory_battle.tscn)
+- [`game_factory_demo.gd`](game_factory_demo.gd)
+- [`game_factory_demo.gd.uid`](game_factory_demo.gd.uid)
+- [`game_factory_demo.tscn`](game_factory_demo.tscn)
+- [`game_factory_interactive.tscn`](game_factory_interactive.tscn)
+- [`game_factory_original_room.tscn`](game_factory_original_room.tscn)
 - [`main.gd`](main.gd)
 - [`main.gd.uid`](main.gd.uid)
 - [`main.tscn`](main.tscn)
 - [`map_factory_preview.gd`](map_factory_preview.gd)
 - [`map_factory_preview.gd.uid`](map_factory_preview.gd.uid)
 - [`map_factory_preview.tscn`](map_factory_preview.tscn)
+- [`modular_battle_character.gd`](modular_battle_character.gd)
+- [`modular_battle_character.gd.uid`](modular_battle_character.gd.uid)
+- [`modular_battle_demo.gd`](modular_battle_demo.gd)
+- [`modular_battle_demo.gd.uid`](modular_battle_demo.gd.uid)
+- [`modular_battle_demo.tscn`](modular_battle_demo.tscn)
 - [`ocean_background.gd`](ocean_background.gd)
 - [`ocean_background.gd.uid`](ocean_background.gd.uid)
 - [`original_room_rebuilt.gd`](original_room_rebuilt.gd)

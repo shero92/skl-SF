@@ -12,12 +12,20 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`floor/`](floor/FILES.md)
 - [`furniture/`](furniture/FILES.md)
 - [`lighting/`](lighting/FILES.md)
+- [`logs/`](logs/FILES.md)
+- [`metadata/`](metadata/FILES.md)
 - [`plants/`](plants/FILES.md)
+- [`previews/`](previews/FILES.md)
+- [`prompts/`](prompts/FILES.md)
 - [`props/`](props/FILES.md)
 - [`wall/`](wall/FILES.md)
 
 ## Files
 
+- [`.gitignore`](.gitignore)
+- [`external_manifest.json`](external_manifest.json)
 - [`library_manifest.json`](library_manifest.json)
+- [`manifest.json`](manifest.json)
+- [`test_gate.json`](test_gate.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

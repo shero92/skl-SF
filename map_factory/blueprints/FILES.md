@@ -12,5 +12,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`architecture_blueprints.json`](architecture_blueprints.json)
 - [`furniture_composites.json`](furniture_composites.json)
+- [`hero_room_01_reference_v1.json`](hero_room_01_reference_v1.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

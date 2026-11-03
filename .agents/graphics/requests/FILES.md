@@ -35,6 +35,10 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0023_hero_room_side_wall_fixture_views.md`](ART-0023_hero_room_side_wall_fixture_views.md)
 - [`ART-0024_hero_room_rope_post_fence.md`](ART-0024_hero_room_rope_post_fence.md)
 - [`ART-0025_hero_room_entrance_stairs.md`](ART-0025_hero_room_entrance_stairs.md)
+- [`ART-0026_builtin_factory_g04_test.md`](ART-0026_builtin_factory_g04_test.md)
+- [`ART-0027_six_character_factory.md`](ART-0027_six_character_factory.md)
+- [`ART-0028_hero_phantom_dash.md`](ART-0028_hero_phantom_dash.md)
+- [`ART-0029_golden_cyclone.md`](ART-0029_golden_cyclone.md)
 - [`GOAL-0001_request_coverage.json`](GOAL-0001_request_coverage.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
