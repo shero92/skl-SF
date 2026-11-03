@@ -126,6 +126,44 @@ def wall_position(catalog, asset_id, scale, cell_x, content_base_y):
 # ---------------------------------------------------------------------------
 
 
+FLOOR_TILE_IDS = tuple(f"G{i:02d}" for i in range(1, 13))
+FLOOR_ROW_SPANS = (
+    ((0, 4), (11, 16)),
+    *(((0, 16),) for _ in range(7)),
+    ((1, 15),),
+    ((6, 10),),
+)
+
+
+def floor_footprint_rows():
+    """Return fresh copies of the existing 17x10 floor row spans."""
+    return [[list(span) for span in row] for row in FLOOR_ROW_SPANS]
+
+
+def floor_layout():
+    """Cover the footprint with 80 percent G01/G02 and sparse accent tiles."""
+    cells = []
+    for y, spans in enumerate(FLOOR_ROW_SPANS):
+        for start, end in spans:
+            for x in range(start, end + 1):
+                # Spread ten accent variants across each fifty floor cells.
+                slot = (len(cells) * 17) % 50
+                tile_id = (
+                    FLOOR_TILE_IDS[slot + 2]
+                    if slot < 10 else FLOOR_TILE_IDS[(x + y) % 2]
+                )
+                cells.append({"x": x, "y": y, "id": tile_id})
+    return cells
+
+
+def floor_settings():
+    """Return the approved floor palette without sharing mutable state."""
+    return {
+        "floor_ids": list(FLOOR_TILE_IDS),
+        "floor_tile_style": {"tile_ids": list(FLOOR_TILE_IDS)},
+    }
+
+
 def layout_entries():
     E = []
 
@@ -503,12 +541,16 @@ def write_patch(catalog, blocks):
         changes.append({"op": "set_tile", "x": int(ov["x"]), "y": int(ov["y"]),
                         "id": None})
 
+    # Apply explicit deterministic tiles after clearing the previous overrides.
+    for cell in floor_layout():
+        changes.append({"op": "set_tile", **cell})
+    for key, value in floor_settings().items():
+        if key == "floor_tile_style":
+            value = {**latest.get(key, {}), **value}
+        changes.append({"op": "set_property", "key": key, "value": value})
+
     changes.append({"op": "set_property", "key": "floor_footprint",
-                    "value": {"row_spans": [[[0, 4], [11, 16]],
-                                            [[0, 16]], [[0, 16]], [[0, 16]],
-                                            [[0, 16]], [[0, 16]], [[0, 16]],
-                                            [[0, 16]],
-                                            [[1, 15]], [[6, 10]]],
+                    "value": {"row_spans": floor_footprint_rows(),
                               "shape": "hero_room_reference_v1",
                               "notes": ("Row 0 leaves cells 5-10 open so the rear arch "
                                         "opening reveals the ocean behind it.")}})
