@@ -22,3 +22,6 @@ A handoff names the external workspace revision, repo staging path (if any), sou
 
 ## Permission boundary
 Project settings add only the owner-named external workspace. Keep normal sandbox/approval mode, existing hooks, credentials and protected character/UI paths. Do not use `danger-full-access`, skip-permissions switches or unrestricted shell allow rules. A manually launched graphics-capable session can use its scoped tools; a launcher that explicitly removes Bash or hides assets still needs a separate reviewed implementation change. Report that distinction instead of silently changing launcher code in a rules-only task.
+
+## HD masters
+Owner high-quality art lives in `assets_hd/` (see `assets_hd/RULES.md`). New or regenerated art must match it; never overwrite masters.

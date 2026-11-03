@@ -20,8 +20,14 @@ func create_asset(asset_id: String, options: Dictionary = {}) -> Node2D:
     if path != "" and ResourceLoader.exists(path):
         var sprite := Sprite2D.new()
         sprite.name = "Visual"
-        sprite.texture = load(path) as Texture2D
-        sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+        var hd_path := HdAssets.resolve(path)
+        sprite.texture = load(hd_path) as Texture2D
+        if hd_path != path and sprite.texture != null:
+            # HD texture covers the same native canvas at higher resolution.
+            sprite.scale = size / sprite.texture.get_size()
+            sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+        else:
+            sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
         sprite.centered = false
         var origin: Array = record.get("origin", [0, 0])
         sprite.position = -Vector2(float(origin[0]), float(origin[1]))
