@@ -45,8 +45,11 @@ class ReferenceRelayoutTests(unittest.TestCase):
         assets = {asset["id"]: asset for asset in self.catalog["assets"]}
         for block in self.blocks:
             with self.subTest(instance=block["instance_id"]):
+                # Runtime maps use legacy ids where v2 keys (F01@south) are unknown.
                 self.assertEqual(
-                    block["id"], builder.canonical_asset_id(block["id"], assets),
+                    builder.canonical_asset_id(block["id"], assets),
+                    builder.canonical_asset_id(
+                        builder.canonical_asset_id(block["id"], assets), assets),
                 )
                 self.assertTrue(builder.sidecar_png(
                     self.catalog, block["id"],

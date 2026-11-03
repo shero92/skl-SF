@@ -162,12 +162,12 @@ class DirectionalFurnitureTests(unittest.TestCase):
         entries = {
             entry["instance_id"]: entry for entry in blueprint.layout_entries()
         }
-        self.assertEqual(entries["RightBookcase"]["facing"], "west")
+        self.assertEqual(entries["RightBookcase"]["facing"], "north")
         self.assertEqual(entries["TableBenchLeft"]["facing"], "south")
-        self.assertEqual(entries["TableBenchRight"]["facing"], "west")
+        self.assertEqual(entries["TableBenchRight"]["facing"], "south")
         left = blueprint.entry_footprint(self.catalog, entries["TableBenchLeft"])
         right = blueprint.entry_footprint(self.catalog, entries["TableBenchRight"])
-        self.assertEqual(left, list(reversed(right)))
+        self.assertEqual(left, right)
 
     def test_missing_direction_and_rotation_are_rejected(self):
         variants = furniture_direction_ids("F05", self.assets)

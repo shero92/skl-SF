@@ -330,7 +330,8 @@ def lighting_decor_entries(walls):
             name = f"{side}WallLantern{y}"
             mount("L01" if y % 4 == 0 else "L02", host, (0, -40),
                   "back_objects", name, 0.5)
-            mount("L05", name, (0, -12), "front_objects",
+            # Glow mounts on the wall host (lanterns are not valid hosts).
+            mount("L05", host, (0, -52), "front_objects",
                   f"{name}Glow", 0.5)
 
     for asset_id, cell, name in (
@@ -361,7 +362,7 @@ def lighting_decor_entries(walls):
         ("DiningTable", (65, -151), "DiningLantern"),
     ):
         mount("L04", host, offset, "objects", name, 0.5)
-        mount("L05", name, (0, -12), "front_objects",
+        mount("L05", host, (offset[0], offset[1] - 12), "front_objects",
               f"{name}Glow", 0.5)
 
     for host, offset, name in (
@@ -370,7 +371,7 @@ def lighting_decor_entries(walls):
         ("DiningTable", (-65, -151), "DiningCandles"),
     ):
         mount("L03", host, offset, "objects", name, 0.5)
-        mount("L05", name, (0, -10), "front_objects",
+        mount("L05", host, (offset[0], offset[1] - 10), "front_objects",
               f"{name}Glow", 0.4)
 
     for asset_id, host, offset, name in (
@@ -417,7 +418,7 @@ def layout_entries():
     E.append(dict(kind="grid", id="F06", facing="north",
                   cell=(1, 0), layer="objects", instance_id="LeftBookcase",
                   shadow={"type": "bookshelf", "opacity": 0.28, "offset_x": 0, "offset_y": 0}))
-    E.append(dict(kind="grid", id="F07", facing="west",
+    E.append(dict(kind="grid", id="F07", facing="north",
                   cell=(10, 1), layer="objects", instance_id="RightBookcase",
                   shadow={"type": "bookshelf", "opacity": 0.28, "offset_x": 0, "offset_y": 0}))
     E.append(dict(kind="grid", id="F08", facing="north",
@@ -426,11 +427,11 @@ def layout_entries():
     E.append(dict(kind="grid", id="F09", facing="south",
                   cell=(12, 6), layer="objects", instance_id="TableBenchLeft",
                   shadow={"type": "chair", "opacity": 0.22, "offset_x": 0, "offset_y": 0}))
-    E.append(dict(kind="grid", id="F09", facing="west",
-                  cell=(15, 3), layer="objects", instance_id="TableBenchRight",
+    E.append(dict(kind="grid", id="F09", facing="south",
+                  cell=(14, 6), layer="objects", instance_id="TableBenchRight",
                   shadow={"type": "chair", "opacity": 0.22, "offset_x": 0, "offset_y": 0}))
 
-    for asset_id, cell in (("F10", (2, 6)), ("F11", (3, 6)), ("F12", (4, 6))):
+    for asset_id, cell in (("F10", (15, 7)), ("F11", (1, 7)), ("F12", (3, 7))):
         E.append(dict(
             kind="grid", id=asset_id, facing="south", cell=cell,
             layer="objects", instance_id="Crate" + asset_id,
@@ -916,12 +917,30 @@ def patch_manifest(catalog, blocks, latest):
     return manifest
 
 
+def legacy_catalog_ids():
+    data = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))["assets"]
+    return set(data) if isinstance(data, dict) else {a["id"] for a in data}
+
+
+def legacy_form(asset_id, legacy_ids):
+    """Map a v2 key (X@facing) to the id the legacy runtime catalog knows."""
+    if "@" not in asset_id or asset_id in legacy_ids:
+        return asset_id
+    base, facing = asset_id.split("@", 1)
+    for candidate in (base + "_" + facing, base):
+        if candidate in legacy_ids:
+            return candidate
+    return asset_id
+
+
 def canonical_blocks(catalog, blocks):
     """Resolve registered v2 identities and keep full sprites inside the canvas."""
     assets = {asset["id"]: asset for asset in catalog["assets"]}
     result = deepcopy(blocks)
     positions = {}
+    legacy_ids = legacy_catalog_ids()
     for block in result:
+        original_id = block["id"]
         block["id"] = canonical_asset_id(block["id"], assets)
         if "direction_asset_ids" in block:
             block["direction_asset_ids"] = {
@@ -949,9 +968,26 @@ def canonical_blocks(catalog, blocks):
         block["y"] = min(max(block["y"], scale * oy),
                          CANVAS[1] - scale * (height - oy))
         positions[block["instance_id"]] = (block["x"], block["y"])
+        # The runtime catalog is the legacy asset index: ids that only exist as
+        # v2 keys (F01@south, F05@north) stay in their legacy form in the map.
+        block["id"] = legacy_form(block["id"], legacy_ids)
+        if "direction_asset_ids" in block:
+            block["direction_asset_ids"] = {
+                facing: legacy_form(asset_id, legacy_ids)
+                for facing, asset_id in block["direction_asset_ids"].items()
+            }
 
     for block in result:
         if block.get("mount_on"):
+            record = assets.get(block["id"]) or assets.get(
+                legacy_form(block["id"], legacy_ids), {})
+            contract = record.get("placement_contract") or {}
+            if contract.get("mode") == "floor":
+                # Floor-contract props (plants, rugs) cannot be mounted; keep
+                # their absolute position instead of a host attachment.
+                block.pop("mount_on")
+                block.pop("mount_offset", None)
+                continue
             hx, hy = positions[block["mount_on"]]
             block["mount_offset"] = [block["x"] - hx, block["y"] - hy]
     return result
@@ -1140,6 +1176,20 @@ def build_patch(version):
             return value
 
         manifest = canonical_ids(manifest)
+        legacy_ids = legacy_catalog_ids()
+
+        def runtime_ids(value):
+            if isinstance(value, list):
+                return [runtime_ids(item) for item in value]
+            if isinstance(value, dict):
+                return {key: runtime_ids(item) for key, item in value.items()}
+            if isinstance(value, str):
+                return legacy_form(value, legacy_ids)
+            return value
+
+        # Maps are resolved by the legacy asset index at runtime, which does not
+        # know v2-only keys such as F01@south.
+        manifest["changes"] = runtime_ids(manifest["changes"])
         for change in manifest["changes"]:
             if change["op"] == "set_property":
                 if change["key"] == "description":

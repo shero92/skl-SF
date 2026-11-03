@@ -1,0 +1,3756 @@
+{
+  "manifest_version": 1,
+  "map_id": "hero_room_01",
+  "base_version": 12,
+  "base_sha256": "eeda399bf0de14de1dcab720b471efd15e6ba0678d85286120dc9bc36ab73392",
+  "note": "hero_room_01 reference reconstruction v0013: replace v0012 layout using approved v2 assets; PNG bytes unchanged. Visual approval pending.",
+  "source_image": {
+    "path": "map_factory/references/hero_room_01_original.png",
+    "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+    "status": "reference_imported"
+  },
+  "changes": [
+    {
+      "op": "remove_block",
+      "instance_id": "ArchBannerLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchBannerRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchColumnLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchColumnRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchFloralLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchFloralRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchFlowersCenter"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchFlowersLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchFlowersRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchIvyLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchIvyRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchVaseLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "ArchVaseRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BackWallR00"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BackWallR11"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BackWallR12"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BackWallR16"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BedRug"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "BedsideTable"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "CompassFloorEmblem"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DiningTable"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DistantIsleArch"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DistantIsleLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "DistantIsleRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntrancePillarLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "EntrancePillarRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallL01"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallL02"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallL03"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallL04"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallR11"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallR12"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallR13"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallR14"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "FrontLowWallR15"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftBookcase"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftIslandDistantExtra"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "LeftWallLantern"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RearArch"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RearRightDoor"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightBookcase"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightIslandDistantExtra"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RightWallLantern"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "RoyalBed"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "SeaStackLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "SeaStackRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "StairStep1"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "StairStep2"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "StairStep3"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "StairStep4"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "StairSupportLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "StairSupportRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TableBenchLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TableBenchRight"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TableBook"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TableFruitBowl"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TableJug"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TableMap"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TableRug"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TableScroll"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TerraceRockFrontLeft"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "TerraceRockFrontRight"
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B05",
+        "instance_id": "DistantIsleLeft",
+        "x": 288,
+        "y": 130,
+        "scale": 0.32
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B06",
+        "instance_id": "DistantIsleRight",
+        "x": 1120,
+        "y": 145,
+        "scale": 0.25
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B11",
+        "instance_id": "DistantIsleArch",
+        "x": 1012,
+        "y": 106,
+        "scale": 0.14
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B05",
+        "instance_id": "LeftIslandDistantExtra",
+        "x": 90,
+        "y": 110,
+        "scale": 0.27
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B06",
+        "instance_id": "RightIslandDistantExtra",
+        "x": 1452,
+        "y": 126,
+        "scale": 0.19
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B05",
+        "instance_id": "SeaStackLeft",
+        "x": 40,
+        "y": 100,
+        "scale": 0.6
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "background_objects",
+      "block": {
+        "id": "B06",
+        "instance_id": "SeaStackRight",
+        "x": 1350,
+        "y": 120,
+        "scale": 0.5
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F01",
+        "instance_id": "RoyalBed",
+        "x": 450.0,
+        "y": 545,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            2,
+            1
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F03",
+          "east": "F04",
+          "south": "F01",
+          "west": "F02"
+        },
+        "shadow": {
+          "type": "bed",
+          "opacity": 0.3,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F05_south",
+        "instance_id": "BedsideTable",
+        "x": 290.0,
+        "y": 481,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            0,
+            2
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F05_north",
+          "east": "F05_east",
+          "south": "F05_south",
+          "west": "F05_west"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.26,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F06_north",
+        "instance_id": "LeftBookcase",
+        "x": 418.0,
+        "y": 289,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            1,
+            0
+          ],
+          "facing": "north"
+        },
+        "facing": "north",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F06_north",
+          "east": "F06_east",
+          "south": "F06_south",
+          "west": "F06_west"
+        },
+        "shadow": {
+          "type": "bookshelf",
+          "opacity": 0.28,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F07_north",
+        "instance_id": "RightBookcase",
+        "x": 994.0,
+        "y": 353,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            10,
+            1
+          ],
+          "facing": "north"
+        },
+        "facing": "north",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F07_north",
+          "east": "F07_east",
+          "south": "F07_south",
+          "west": "F07_west"
+        },
+        "shadow": {
+          "type": "bookshelf",
+          "opacity": 0.28,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F08_north",
+        "instance_id": "DiningTable",
+        "x": 1122.0,
+        "y": 609,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            12,
+            3
+          ],
+          "facing": "north"
+        },
+        "facing": "north",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F08_north",
+          "east": "F08_east",
+          "south": "F08_south",
+          "west": "F08_west"
+        },
+        "shadow": {
+          "type": "table",
+          "opacity": 0.3,
+          "offset_x": 4,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F09_south",
+        "instance_id": "TableBenchLeft",
+        "x": 1058.0,
+        "y": 673,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            12,
+            6
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F09_north",
+          "east": "F09_east",
+          "south": "F09_south",
+          "west": "F09_west"
+        },
+        "shadow": {
+          "type": "chair",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F09_south",
+        "instance_id": "TableBenchRight",
+        "x": 1186.0,
+        "y": 673,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            14,
+            6
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F09_north",
+          "east": "F09_east",
+          "south": "F09_south",
+          "west": "F09_west"
+        },
+        "shadow": {
+          "type": "chair",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F10_south",
+        "instance_id": "CrateF10",
+        "x": 1250.0,
+        "y": 737,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            15,
+            7
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F10_north",
+          "east": "F10_east",
+          "south": "F10_south",
+          "west": "F10_west"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F11_south",
+        "instance_id": "CrateF11",
+        "x": 322.0,
+        "y": 737,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            1,
+            7
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F11_north",
+          "east": "F11_east",
+          "south": "F11_south",
+          "west": "F11_west"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "F12_south",
+        "instance_id": "CrateF12",
+        "x": 482.0,
+        "y": 801,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            3,
+            7
+          ],
+          "facing": "south"
+        },
+        "facing": "south",
+        "orientation_mode": "variants",
+        "direction_asset_ids": {
+          "north": "F12_north",
+          "east": "F12_east",
+          "south": "F12_south",
+          "west": "F12_west"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "ground_overlays",
+      "block": {
+        "id": "D01",
+        "instance_id": "BedRug",
+        "x": 450.0,
+        "y": 609,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            2,
+            2
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "ground_overlays",
+      "block": {
+        "id": "D02",
+        "instance_id": "TableRug",
+        "x": 1122.0,
+        "y": 673,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            12,
+            3
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.22,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "ground_overlays",
+      "block": {
+        "id": "D03",
+        "instance_id": "CompassFloorEmblem",
+        "x": 738.0,
+        "y": 737,
+        "scale": 1.0,
+        "grid_placement": {
+          "cell": [
+            6,
+            4
+          ],
+          "facing": "north"
+        },
+        "shadow": {
+          "type": "contact_medium",
+          "opacity": 0.2,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A05",
+        "instance_id": "RearArch",
+        "x": 701.0,
+        "y": 307.2,
+        "scale": 2.4,
+        "shadow": {
+          "type": "soft_cast",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A01",
+        "instance_id": "ArchColumnLeft",
+        "x": 530.5,
+        "y": 294.0,
+        "scale": 1.0,
+        "shadow": {
+          "type": "column_long",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A01",
+        "instance_id": "ArchColumnRight",
+        "x": 888.5,
+        "y": 294.0,
+        "scale": 1.0,
+        "shadow": {
+          "type": "column_long",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A09",
+        "instance_id": "RearRightDoor",
+        "x": 1105.875,
+        "y": 297.75,
+        "scale": 1.75,
+        "shadow": {
+          "type": "soft_cast",
+          "opacity": 0.24,
+          "offset_x": 6,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W09",
+        "instance_id": "BackWallR00",
+        "x": 258.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W07",
+        "instance_id": "PerimeterWall_01_00",
+        "x": 322.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W07",
+        "instance_id": "PerimeterWall_02_00",
+        "x": 386.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W07",
+        "instance_id": "PerimeterWall_03_00",
+        "x": 450.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W13",
+        "instance_id": "PerimeterWall_04_00",
+        "x": 514.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W14",
+        "instance_id": "PerimeterWall_11_00",
+        "x": 962.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W07",
+        "instance_id": "PerimeterWall_12_00",
+        "x": 1026.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W07",
+        "instance_id": "PerimeterWall_13_00",
+        "x": 1090.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W07",
+        "instance_id": "PerimeterWall_14_00",
+        "x": 1154.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W07",
+        "instance_id": "PerimeterWall_15_00",
+        "x": 1218.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W09",
+        "instance_id": "BackWallR16",
+        "x": 1282.0,
+        "y": 289,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "PerimeterWall_00_01",
+        "x": 258.0,
+        "y": 353,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W08",
+        "instance_id": "PerimeterWall_04_01",
+        "x": 514.0,
+        "y": 353,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W08",
+        "instance_id": "PerimeterWall_11_01",
+        "x": 962.0,
+        "y": 353,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W02",
+        "instance_id": "PerimeterWall_16_01",
+        "x": 1282.0,
+        "y": 353,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W03",
+        "instance_id": "PerimeterWall_00_02",
+        "x": 258.0,
+        "y": 417,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W02",
+        "instance_id": "PerimeterWall_16_02",
+        "x": 1282.0,
+        "y": 417,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "PerimeterWall_00_03",
+        "x": 258.0,
+        "y": 481,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W04",
+        "instance_id": "PerimeterWall_16_03",
+        "x": 1282.0,
+        "y": 481,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "PerimeterWall_00_04",
+        "x": 258.0,
+        "y": 545,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W02",
+        "instance_id": "PerimeterWall_16_04",
+        "x": 1282.0,
+        "y": 545,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W05",
+        "instance_id": "PerimeterWall_00_05",
+        "x": 258.0,
+        "y": 609,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W02",
+        "instance_id": "PerimeterWall_16_05",
+        "x": 1282.0,
+        "y": 609,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "PerimeterWall_00_06",
+        "x": 258.0,
+        "y": 673,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W06",
+        "instance_id": "PerimeterWall_16_06",
+        "x": 1282.0,
+        "y": 673,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W09",
+        "instance_id": "PerimeterWall_00_07",
+        "x": 258.0,
+        "y": 737,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W08",
+        "instance_id": "PerimeterWall_01_07",
+        "x": 322.0,
+        "y": 737,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W08",
+        "instance_id": "PerimeterWall_15_07",
+        "x": 1218.0,
+        "y": 737,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W09",
+        "instance_id": "PerimeterWall_16_07",
+        "x": 1282.0,
+        "y": 737,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallL01",
+        "x": 322.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallL02",
+        "x": 386.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallL03",
+        "x": 450.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallL04",
+        "x": 514.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W01",
+        "instance_id": "PerimeterWall_05_08",
+        "x": 578.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W08",
+        "instance_id": "PerimeterWall_06_08",
+        "x": 642.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W08",
+        "instance_id": "PerimeterWall_10_08",
+        "x": 898.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR11",
+        "x": 962.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR12",
+        "x": 1026.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR13",
+        "x": 1090.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR14",
+        "x": 1154.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W10",
+        "instance_id": "FrontLowWallR15",
+        "x": 1218.0,
+        "y": 801,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W11",
+        "instance_id": "PerimeterWall_06_09",
+        "x": 642.0,
+        "y": 865,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "W12",
+        "instance_id": "PerimeterWall_10_09",
+        "x": 898.0,
+        "y": 865,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A10",
+        "instance_id": "StairStep1",
+        "x": 750.0,
+        "y": 910.4,
+        "scale": 1.6,
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A10",
+        "instance_id": "StairStep2",
+        "x": 750.0,
+        "y": 946.4,
+        "scale": 1.6,
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A10",
+        "instance_id": "StairStep3",
+        "x": 750.0,
+        "y": 982.4,
+        "scale": 1.6,
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A10",
+        "instance_id": "StairStep4",
+        "x": 750.0,
+        "y": 1018.4,
+        "scale": 1.6,
+        "shadow": {
+          "type": "stairs",
+          "opacity": 0.24,
+          "offset_x": 4,
+          "offset_y": 5
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A13",
+        "instance_id": "EntrancePillarLeft",
+        "x": 602.0,
+        "y": 868.3,
+        "scale": 1.1,
+        "shadow": {
+          "type": "column_short",
+          "opacity": 0.26,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A13",
+        "instance_id": "EntrancePillarRight",
+        "x": 894.0,
+        "y": 868.3,
+        "scale": 1.1,
+        "shadow": {
+          "type": "column_short",
+          "opacity": 0.26,
+          "offset_x": 4,
+          "offset_y": 4
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A11",
+        "instance_id": "StairSupportLeft",
+        "x": 630.0,
+        "y": 928.0,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "A12",
+        "instance_id": "StairSupportRight",
+        "x": 864.0,
+        "y": 932.0,
+        "scale": 1.0,
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 3
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "B03",
+        "instance_id": "TerraceRockFrontLeft",
+        "x": 394,
+        "y": 970,
+        "scale": 0.2,
+        "render_layer": "walls",
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 5,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "B03",
+        "instance_id": "TerraceRockFrontRight",
+        "x": 1145,
+        "y": 970,
+        "scale": 0.2,
+        "render_layer": "walls",
+        "shadow": {
+          "type": "wall_base",
+          "opacity": 0.18,
+          "offset_x": 5,
+          "offset_y": 8
+        }
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L01",
+        "instance_id": "LeftWallLantern0",
+        "x": 258.0,
+        "y": 249,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "BackWallR00",
+        "mount_offset": [
+          0.0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "LeftWallLantern0Glow",
+        "x": 258.0,
+        "y": 237,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "BackWallR00",
+        "mount_offset": [
+          0.0,
+          -52
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L02",
+        "instance_id": "LeftWallLantern2",
+        "x": 258.0,
+        "y": 377,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_02",
+        "mount_offset": [
+          0.0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "LeftWallLantern2Glow",
+        "x": 258.0,
+        "y": 365,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_02",
+        "mount_offset": [
+          0.0,
+          -52
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L01",
+        "instance_id": "LeftWallLantern4",
+        "x": 258.0,
+        "y": 505,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_04",
+        "mount_offset": [
+          0.0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "LeftWallLantern4Glow",
+        "x": 258.0,
+        "y": 493,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_04",
+        "mount_offset": [
+          0.0,
+          -52
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L02",
+        "instance_id": "LeftWallLantern6",
+        "x": 258.0,
+        "y": 633,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_06",
+        "mount_offset": [
+          0.0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "LeftWallLantern6Glow",
+        "x": 258.0,
+        "y": 621,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_06",
+        "mount_offset": [
+          0.0,
+          -52
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L01",
+        "instance_id": "RightWallLantern0",
+        "x": 1282.0,
+        "y": 249,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "BackWallR16",
+        "mount_offset": [
+          0.0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "RightWallLantern0Glow",
+        "x": 1282.0,
+        "y": 237,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "BackWallR16",
+        "mount_offset": [
+          0.0,
+          -52
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L02",
+        "instance_id": "RightWallLantern2",
+        "x": 1282.0,
+        "y": 377,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_02",
+        "mount_offset": [
+          0.0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "RightWallLantern2Glow",
+        "x": 1282.0,
+        "y": 365,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_02",
+        "mount_offset": [
+          0.0,
+          -52
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L01",
+        "instance_id": "RightWallLantern4",
+        "x": 1282.0,
+        "y": 505,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_04",
+        "mount_offset": [
+          0.0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "RightWallLantern4Glow",
+        "x": 1282.0,
+        "y": 493,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_04",
+        "mount_offset": [
+          0.0,
+          -52
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "L02",
+        "instance_id": "RightWallLantern6",
+        "x": 1282.0,
+        "y": 633,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_06",
+        "mount_offset": [
+          0.0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "RightWallLantern6Glow",
+        "x": 1282.0,
+        "y": 621,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_06",
+        "mount_offset": [
+          0.0,
+          -52
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "D04",
+        "instance_id": "LeftWallBanner",
+        "x": 450.0,
+        "y": 247,
+        "scale": 0.65,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_03_00",
+        "mount_offset": [
+          0.0,
+          -42
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "D05",
+        "instance_id": "RightWallBanner",
+        "x": 1090.0,
+        "y": 247,
+        "scale": 0.65,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_13_00",
+        "mount_offset": [
+          0.0,
+          -42
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "D04",
+        "instance_id": "LeftSideWallBanner",
+        "x": 258.0,
+        "y": 439,
+        "scale": 0.65,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_03",
+        "mount_offset": [
+          0.0,
+          -42
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "D05",
+        "instance_id": "RightSideWallBanner",
+        "x": 1282.0,
+        "y": 439,
+        "scale": 0.65,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_03",
+        "mount_offset": [
+          0.0,
+          -42
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P01",
+        "instance_id": "WallTopIvy0",
+        "x": 258.0,
+        "y": 289,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_01",
+        "mount_offset": [
+          0.0,
+          -64
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P04",
+        "instance_id": "WallTopFlowers0",
+        "x": 270.0,
+        "y": 289,
+        "scale": 0.4,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P05",
+        "instance_id": "WallBasePlants0",
+        "x": 258.0,
+        "y": 353,
+        "scale": 0.5,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P02",
+        "instance_id": "WallTopIvy1",
+        "x": 1282.0,
+        "y": 289,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_01",
+        "mount_offset": [
+          0.0,
+          -64
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P04",
+        "instance_id": "WallTopFlowers1",
+        "x": 1294.0,
+        "y": 289,
+        "scale": 0.4,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P06",
+        "instance_id": "WallBasePlants1",
+        "x": 1282.0,
+        "y": 353,
+        "scale": 0.5,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P03",
+        "instance_id": "WallTopIvy2",
+        "x": 258.0,
+        "y": 545,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_00_05",
+        "mount_offset": [
+          0.0,
+          -64
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P04",
+        "instance_id": "WallTopFlowers2",
+        "x": 270.0,
+        "y": 545,
+        "scale": 0.4,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P05",
+        "instance_id": "WallBasePlants2",
+        "x": 258.0,
+        "y": 609,
+        "scale": 0.5,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P01",
+        "instance_id": "WallTopIvy3",
+        "x": 1282.0,
+        "y": 545,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "PerimeterWall_16_05",
+        "mount_offset": [
+          0.0,
+          -64
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "back_objects",
+      "block": {
+        "id": "P04",
+        "instance_id": "WallTopFlowers3",
+        "x": 1294.0,
+        "y": 545,
+        "scale": 0.4,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P06",
+        "instance_id": "WallBasePlants3",
+        "x": 1282.0,
+        "y": 609,
+        "scale": 0.5,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "L04",
+        "instance_id": "BedsideLantern",
+        "x": 290.0,
+        "y": 433,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "BedsideTable",
+        "mount_offset": [
+          0.0,
+          -48
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "BedsideLanternGlow",
+        "x": 290.0,
+        "y": 421,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "BedsideTable",
+        "mount_offset": [
+          0.0,
+          -60
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "L04",
+        "instance_id": "DiningLantern",
+        "x": 1187.0,
+        "y": 458,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          65.0,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "DiningLanternGlow",
+        "x": 1187.0,
+        "y": 446,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          65.0,
+          -163
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "L03",
+        "instance_id": "LeftShelfCandles",
+        "x": 394.0,
+        "y": 225,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "LeftBookcase",
+        "mount_offset": [
+          -24.0,
+          -64
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "LeftShelfCandlesGlow",
+        "x": 394.0,
+        "y": 215,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "LeftBookcase",
+        "mount_offset": [
+          -24.0,
+          -74
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "L03",
+        "instance_id": "RightShelfCandles",
+        "x": 1018.0,
+        "y": 289,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "RightBookcase",
+        "mount_offset": [
+          24.0,
+          -64
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "RightShelfCandlesGlow",
+        "x": 1018.0,
+        "y": 279,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "RightBookcase",
+        "mount_offset": [
+          24.0,
+          -74
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "L03",
+        "instance_id": "DiningCandles",
+        "x": 1057.0,
+        "y": 458,
+        "scale": 0.5,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          -65.0,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "front_objects",
+      "block": {
+        "id": "L05",
+        "instance_id": "DiningCandlesGlow",
+        "x": 1057.0,
+        "y": 448,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          -65.0,
+          -161
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R01",
+        "instance_id": "BedsideVase",
+        "x": 314.0,
+        "y": 433,
+        "scale": 0.4,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R02",
+        "instance_id": "ShelfVase",
+        "x": 970.0,
+        "y": 289,
+        "scale": 0.4,
+        "render_layer": "decorations"
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R06",
+        "instance_id": "ShelfBooks",
+        "x": 442.0,
+        "y": 225,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "LeftBookcase",
+        "mount_offset": [
+          24.0,
+          -64
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R05",
+        "instance_id": "TableScroll",
+        "x": 1032.0,
+        "y": 458,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          -90.0,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R09",
+        "instance_id": "TableMap",
+        "x": 1092.0,
+        "y": 458,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          -30.0,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R06",
+        "instance_id": "TableBook",
+        "x": 1122.0,
+        "y": 458,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          0.0,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R10",
+        "instance_id": "TableFruitBowl",
+        "x": 1152.0,
+        "y": 458,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          30.0,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "R11",
+        "instance_id": "TableJug",
+        "x": 1217.0,
+        "y": 458,
+        "scale": 0.4,
+        "render_layer": "decorations",
+        "mount_on": "DiningTable",
+        "mount_offset": [
+          95.0,
+          -151
+        ]
+      }
+    },
+    {
+      "op": "set_tile",
+      "x": 0,
+      "y": 0,
+      "id": "G03"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 0,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 0,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 0,
+      "id": "G04"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 0,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 0,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 0,
+      "id": "G05"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 0,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 0,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 0,
+      "id": "G06"
+    },
+    {
+      "op": "set_tile",
+      "x": 16,
+      "y": 0,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 0,
+      "y": 1,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 1,
+      "id": "G07"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 1,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 1,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 1,
+      "id": "G08"
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 1,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 1,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 1,
+      "id": "G09"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 1,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 1,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 1,
+      "id": "G10"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 1,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 1,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 1,
+      "id": "G11"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 1,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 1,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 16,
+      "y": 1,
+      "id": "G12"
+    },
+    {
+      "op": "set_tile",
+      "x": 0,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 2,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 2,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 2,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 2,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 2,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 2,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 2,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 2,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 16,
+      "y": 2,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 0,
+      "y": 3,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 3,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 3,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 3,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 3,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 3,
+      "id": "G03"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 3,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 3,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 3,
+      "id": "G04"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 3,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 3,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 3,
+      "id": "G05"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 3,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 3,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 3,
+      "id": "G06"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 3,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 16,
+      "y": 3,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 0,
+      "y": 4,
+      "id": "G07"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 4,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 4,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 4,
+      "id": "G08"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 4,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 4,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 4,
+      "id": "G09"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 4,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 4,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 4,
+      "id": "G10"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 4,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 4,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 4,
+      "id": "G11"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 4,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 4,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 4,
+      "id": "G12"
+    },
+    {
+      "op": "set_tile",
+      "x": 16,
+      "y": 4,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 0,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 5,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 5,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 5,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 5,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 5,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 5,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 5,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 5,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 16,
+      "y": 5,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 0,
+      "y": 6,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 6,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 6,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 6,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 6,
+      "id": "G03"
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 6,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 6,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 6,
+      "id": "G04"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 6,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 6,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 6,
+      "id": "G05"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 6,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 6,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 6,
+      "id": "G06"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 6,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 6,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 16,
+      "y": 6,
+      "id": "G07"
+    },
+    {
+      "op": "set_tile",
+      "x": 0,
+      "y": 7,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 7,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 7,
+      "id": "G08"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 7,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 7,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 7,
+      "id": "G09"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 7,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 7,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 7,
+      "id": "G10"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 7,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 7,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 7,
+      "id": "G11"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 7,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 7,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 7,
+      "id": "G12"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 7,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 16,
+      "y": 7,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 1,
+      "y": 8,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 2,
+      "y": 8,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 3,
+      "y": 8,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 4,
+      "y": 8,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 5,
+      "y": 8,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 8,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 8,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 8,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 8,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 8,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 11,
+      "y": 8,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 12,
+      "y": 8,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 13,
+      "y": 8,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 14,
+      "y": 8,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 15,
+      "y": 8,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 6,
+      "y": 9,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 7,
+      "y": 9,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 8,
+      "y": 9,
+      "id": "G02"
+    },
+    {
+      "op": "set_tile",
+      "x": 9,
+      "y": 9,
+      "id": "G01"
+    },
+    {
+      "op": "set_tile",
+      "x": 10,
+      "y": 9,
+      "id": "G02"
+    },
+    {
+      "op": "set_property",
+      "key": "floor_ids",
+      "value": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12"
+      ]
+    },
+    {
+      "op": "set_property",
+      "key": "floor_tile_style",
+      "value": {
+        "enabled": true,
+        "tile_ids": [
+          "G01",
+          "G02",
+          "G03",
+          "G04",
+          "G05",
+          "G06",
+          "G07",
+          "G08",
+          "G09",
+          "G10",
+          "G11",
+          "G12"
+        ],
+        "crop_insets": [
+          9,
+          8,
+          9,
+          16
+        ],
+        "joint_color": "#776957",
+        "joint_opacity": 0.27,
+        "joint_width": 1.15
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "floor_footprint",
+      "value": {
+        "row_spans": [
+          [
+            [
+              0,
+              4
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              1,
+              15
+            ]
+          ],
+          [
+            [
+              6,
+              10
+            ]
+          ]
+        ],
+        "shape": "hero_room_reference_v1",
+        "notes": "Row 0 leaves cells 5-10 open so the rear arch opening reveals the ocean behind it."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "ocean",
+      "value": {
+        "tile_size": 512,
+        "fps": 4,
+        "sky_height": 68,
+        "notes": "Horizon lowered to reference, original water sprites retained. No giant pasted cliff sprites."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "effects",
+      "value": [
+        {
+          "instance_id": "LanternLeftGlow",
+          "kind": "lantern",
+          "x": 258,
+          "y": 420,
+          "scale": 0.45,
+          "glow_alpha": 0.38
+        },
+        {
+          "instance_id": "LanternRightGlow",
+          "kind": "lantern",
+          "x": 1282,
+          "y": 420,
+          "scale": 0.45,
+          "glow_alpha": 0.38
+        },
+        {
+          "instance_id": "TableCandleGlow",
+          "kind": "candle",
+          "x": 1122,
+          "y": 440,
+          "scale": 0.4,
+          "glow_alpha": 0.34
+        }
+      ]
+    },
+    {
+      "op": "set_property",
+      "key": "navigation",
+      "value": {
+        "schema_version": 1,
+        "origin": [
+          226,
+          225
+        ],
+        "cell_size": 64,
+        "grid_size": [
+          17,
+          10
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "inner_terrace_safe_walk",
+            "rect": [
+              1,
+              2,
+              15,
+              7
+            ],
+            "surface": "stone",
+            "allow": [
+              "walk",
+              "fly"
+            ],
+            "requires": {
+              "walk": [],
+              "fly": []
+            },
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "stairs_to_ocean_entrance",
+            "rect": [
+              7,
+              9,
+              3,
+              1
+            ],
+            "surface": "stairs",
+            "allow": [
+              "walk",
+              "fly"
+            ],
+            "requires": {
+              "walk": [],
+              "fly": []
+            },
+            "floor_height": -24,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [
+          {
+            "instance_id": "RoyalBed",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 75
+          },
+          {
+            "instance_id": "DiningTable",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 80
+          },
+          {
+            "instance_id": "EntrancePillarLeft",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 78
+          },
+          {
+            "instance_id": "EntrancePillarRight",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 78
+          },
+          {
+            "instance_id": "LeftBookcase",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 110
+          },
+          {
+            "instance_id": "RightBookcase",
+            "blocks": [
+              "walk",
+              "fly"
+            ],
+            "min_altitude": 0,
+            "max_altitude": 110
+          }
+        ],
+        "links": [
+          {
+            "id": "coastal_stair_exit",
+            "from": [
+              8,
+              8
+            ],
+            "to": [
+              8,
+              9
+            ],
+            "modes": [
+              "walk",
+              "fly"
+            ],
+            "requires": []
+          }
+        ],
+        "note": "Navigation provisional, unreviewed; no character or weapon factory changes."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "description",
+      "value": "Hero's Seaside Sanctuary - reference reconstruction v0013. Approved environment assets; visual approval pending."
+    },
+    {
+      "op": "set_property",
+      "key": "visual_qa",
+      "value": {
+        "status": "needs_review",
+        "notes": "Native render v0013 pending; compare against reference and v0012."
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "composition_reference",
+      "value": {
+        "image": "map_factory/references/hero_room_01_original.png",
+        "reference_sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+        "reference_dimensions": [
+          1448,
+          1086
+        ],
+        "qa": "pending visual comparison",
+        "status": "needs_visual_review"
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "source_image",
+      "value": {
+        "path": "map_factory/references/hero_room_01_original.png",
+        "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+        "status": "reference_imported"
+      }
+    },
+    {
+      "op": "set_property",
+      "key": "floor_art",
+      "value": {
+        "design": "central compass emblem as D03 ground overlay at grid cell (6,4)",
+        "tile_size": 64,
+        "ids": [
+          "D03"
+        ],
+        "top_left_grid": [
+          6,
+          4
+        ],
+        "qa": "needs_review"
+      }
+    }
+  ]
+}

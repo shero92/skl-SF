@@ -44,7 +44,8 @@ class HeroRoomLightingDecorTests(unittest.TestCase):
                     self.assertIn(host_name, seen)
                     host = self.by_name[host_name]
                     if entry["id"] == "L05":
-                        self.assertIn(host["id"], ("L01", "L02", "L03", "L04"))
+                        # Glow mounts on a wall/furniture host (lanterns are not valid hosts).
+                        self.assertNotIn(host["id"], ("L01", "L02", "L03", "L04", "L05"))
                     elif host_name in walls:
                         cell = tuple(walls[host_name]["perimeter_cell"])
                         self.assertIn(cell, blueprint.wall_perimeter())
@@ -64,7 +65,7 @@ class HeroRoomLightingDecorTests(unittest.TestCase):
         for light in lights:
             matching = [
                 glow for glow in glows
-                if glow["mount_on"] == light["instance_id"]
+                if glow["instance_id"] == light["instance_id"] + "Glow"
             ]
             self.assertEqual(len(matching), 1)
             self.assertEqual(matching[0]["layer"], "front_objects")
