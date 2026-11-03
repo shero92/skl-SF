@@ -24,20 +24,20 @@ Every id a map uses has a defined v2 target or an explicit documented legacy sta
 ## Implementation
 Extend tools/audit_room_assets.py with a function audit_map_ids(map_json, v2, legacy) returning: ids resolved by v2, ids resolved only by legacy (with legacy status and qa_approval flag), ids resolved by neither. Add a top-level `legacy_aliases` object to environment_assets_v2.json mapping each legacy directional alias (for example F05_north) to its v2 key (F05@north); do not change any existing asset entry, sha256 or path. Also verify all 128 v2 entries: file exists, sha256 matches, PNG size equals sprite_dimensions, directional groups have exactly north/east/south/west.
 
-Scope: only the files in touches. Never create, edit, move or delete any PNG or anything under assets_generated/, assets/ or map_factory/parts/. Do not touch battle files (scenes/battle/, tools/verify_battle_*). Do NOT call main() of tools/build_hero_room_blueprint.py from tests or code you add: it rewrites committed v0012 patch files; import and call only layout_entries()/resolve_entries()/helper functions. Do not generate map versions; the operator applies the patch and captures the Godot screenshot after merge.
+Scope: only the files in touches. Never create, edit, move or delete any PNG or anything under assets_generated/, assets/ or map_factory/parts/. Do not touch battle files. Never call the blueprint script main() from tests or code you add (it rewrites committed patch files); import and call only pure helper functions. Reply ONLY with edits to the files listed in touches; do not mention, request or ask to add any other file. Do not generate map versions; the operator applies the patch and captures the Godot screenshot after merge.
 
-Router registration: add ONE entry for test_registry_verification.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; do not touch other entries or tools/tests/INDEX.md.
+Router registration: add ONE entry for test_registry_verification.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; leave every other entry untouched.
 
 ## Acceptance criteria
 - [ ] For v0012 the report lists the exact legacy-only ids; all 128 v2 entries verify; every alias target exists
 - [ ] No PNG or generated asset changed
-- [ ] `python tools/run_tests.py --changed` passes
+- [ ] The task test passes with at least one test collected
 
 ## Expected result in Godot
 Audit output is the reference list the later tasks use; no visual change in Godot. (verified by the operator with a real Godot capture, not by this task's tests).
 
 ## Test
-`python -m unittest discover -s tools/tests -p test_registry_verification.py`, then `python tools/run_tests.py --changed`.
+`python -m unittest discover -s tools/tests -p test_registry_verification.py` (the worker also runs the project router). The test file must define a unittest.TestCase subclass with test_* methods so at least one test is collected.
 
 ## Estimate
 90 minutes.

@@ -24,20 +24,20 @@ A verifier fails a map whose layer order, y-sort, anchor or scale violates the f
 ## Implementation
 Extend tools/map_factory_layers.py with verify_layers(map_json, v2): checks each object's layer belongs to one of background, ground, walls, furniture_decor, shadows_overlays, that within a layer objects are ordered by base y, that anchor equals registry render_pivot_px mapping, that scale is 1.0 unless declared. Test builds a small synthetic map with valid and invalid cases, then runs the verifier over hero_room_01 latest and asserts it runs and reports counts (it must not require zero violations on latest).
 
-Scope: only the files in touches. Never create, edit, move or delete any PNG or anything under assets_generated/, assets/ or map_factory/parts/. Do not touch battle files (scenes/battle/, tools/verify_battle_*). Do NOT call main() of tools/build_hero_room_blueprint.py from tests or code you add: it rewrites committed v0012 patch files; import and call only layout_entries()/resolve_entries()/helper functions. Do not generate map versions; the operator applies the patch and captures the Godot screenshot after merge.
+Scope: only the files in touches. Never create, edit, move or delete any PNG or anything under assets_generated/, assets/ or map_factory/parts/. Do not touch battle files. Never call the blueprint script main() from tests or code you add (it rewrites committed patch files); import and call only pure helper functions. Reply ONLY with edits to the files listed in touches; do not mention, request or ask to add any other file. Do not generate map versions; the operator applies the patch and captures the Godot screenshot after merge.
 
-Router registration: add ONE entry for test_layer_zorder_anchor.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; do not touch other entries or tools/tests/INDEX.md.
+Router registration: add ONE entry for test_layer_zorder_anchor.py to tools/test_map.json (id, kind python, covers, command, paths). Edit only that entry; leave every other entry untouched.
 
 ## Acceptance criteria
 - [ ] Verifier catches each synthetic violation type
 - [ ] No PNG or generated asset changed
-- [ ] `python tools/run_tests.py --changed` passes
+- [ ] The task test passes with at least one test collected
 
 ## Expected result in Godot
 Gives a measurable pass/fail for layers before the Godot visual check. (verified by the operator with a real Godot capture, not by this task's tests).
 
 ## Test
-`python -m unittest discover -s tools/tests -p test_layer_zorder_anchor.py`, then `python tools/run_tests.py --changed`.
+`python -m unittest discover -s tools/tests -p test_layer_zorder_anchor.py` (the worker also runs the project router). The test file must define a unittest.TestCase subclass with test_* methods so at least one test is collected.
 
 ## Estimate
 90 minutes.
