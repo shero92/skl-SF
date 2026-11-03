@@ -1,6 +1,6 @@
 ---
 id: ART-0008
-status: blocked_reference
+status: requested
 owner: graphics-specialist
 task: TASK-0019
 dedupe_key: hero_room_headboard_shelf
@@ -22,8 +22,8 @@ issue: 20
 ## Authentic reference / readiness
 - Committed source path: .agents/planner/goals/GOAL-0001/references/hero_room_reference.png
 - Git index blob identity (SHA-1 metadata, NOT an image SHA-256): 8d9a4c951b169458ceb85f9ad61107b99d59a909
-- Source SHA-256: unrecorded for this committed file. Owner/reviewer must record and confirm it before changing blocked_reference to requested.
-- Provenance mismatch to resolve: goal.md describes 1536x1024, while the legacy reference_gaps.json source describes 1448x1086 and an older hash. That legacy hash is not asserted to identify this file.
+- Reference identity (recorded 2026-11-03, owner-approved original): map_factory/references/hero_room_01_original.png, SHA-256 42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7, 1448x1086; the owner re-supplied this same image on 2026-11-03. This replaces the unrecorded goal file for production reference.
+- Provenance resolved: the committed goal file hero_room_reference.png is a different image (1536x1024, SHA-256 01d918892ae29899f827...); it is not used as the production reference. Native canvas/scale proposals in this record still need owner confirmation per the HD rules in assets_hd/RULES.md.
 - No routine source-image inspection, production work, visual signoff or integration has occurred.
 
 ## Native specification / runtime contract
@@ -56,7 +56,7 @@ issue: 20
 - Composition reference: authentic original 1448x1086 scene; target factory canvas 1536x1024. Older contradictory dimension wording is superseded, but source identity/hash still requires owner confirmation.
 - Deliver visible authored facings first; retain remaining named views as deferred, never claim incomplete sets support four-way reuse.
 - All proposed native sizes remain provisional until specialist calibration; provide measured native display size, ground footprint, origin, seam/mount interfaces and separate collision/shadow metadata.
-- Reuse existing approved-quality candidates first. Keep blocked_reference until authenticated reference and calibrated specifications are reviewed. No production art or readiness approval is created by this amendment.
+- Reuse existing approved-quality candidates first. Reference authenticated 2026-11-03; calibrated specifications still need owner review before delivery is accepted. No production art or readiness approval is created by this amendment.
 
 ## Verified original reference
 - Active source: map_factory/references/hero_room_01_original.png (1448x1086).
