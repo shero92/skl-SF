@@ -53,7 +53,8 @@ class HeroRoomSceneryTests(unittest.TestCase):
             for entry in self.entries
             if entry["layer"] in ("background_objects", "front_objects")
         }
-        self.assertEqual(set(scenery), set(expected))
+        # Later layout tasks add more background/front objects (glow overlays, decor).
+        self.assertLessEqual(set(expected), set(scenery))
         for instance_id, category in expected.items():
             with self.subTest(instance=instance_id):
                 entry = scenery[instance_id]
