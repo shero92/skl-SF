@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "hero_room_lighting_decor",
+      "kind": "python",
+      "covers": "Perimeter wall and furniture decor mounts, v2 IDs, spaced lanterns, front glow overlays, banner layers and deterministic resolved offsets.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_hero_room_lighting_decor.py"],
+      "paths": ["tools/build_hero_room_blueprint.py", "tools/tests/test_hero_room_lighting_decor.py", "tools/test_map.json"]
+    },
+    {
       "id": "enclosing_walls",
       "kind": "python",
       "covers": "Deterministic perimeter walls, exact arch and stair gaps, approved wall variants, corners, caps, ends and non-overlapping registered footprints.",
