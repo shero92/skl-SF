@@ -419,6 +419,13 @@
       "covers": "Evidence captures refuse draft or fallback placeholders (TASK-0059).",
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_capture_checks.py"],
       "paths": ["tools/capture_checks.gd", "tools/capture_map_previews.gd", "tools/verify_capture_checks.gd", "tools/tests/test_capture_checks.py", "map_factory/scripts/asset_factory.gd", "tools/battle_godot_harness.py"]
+    },
+    {
+      "id": "blender_catalog",
+      "kind": "python",
+      "covers": "Owner-accepted Blender deliveries: catalog records from measured data, working-tree staging with exact bytes, and the integrated ART-0004 and ART-0014 assets.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_blender_catalog.py"],
+      "paths": ["tools/blender_catalog.py", "tools/art_delivery.py", "tools/tests/test_blender_catalog.py", "map_factory/metadata/asset_index.json"]
     }
   ]
 }

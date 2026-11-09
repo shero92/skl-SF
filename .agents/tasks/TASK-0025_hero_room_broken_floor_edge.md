@@ -1,8 +1,8 @@
 ---
 id: TASK-0025
-status: review
+status: done
 owner: claude
-branch: art/ART-0014
+branch: claude/integrate-art-0004-0014
 agent: claude
 touches: .agents/graphics/deliveries/ART-0014/
 test: py -3 -m unittest discover -s tools/tests -p test_art_delivery.py
@@ -38,3 +38,6 @@ art_request: ART-0014
 - Command: py -3 tools/blender_factory.py deliver ART-0014 --agent claude (about 24 s).
 - QA fix found during this task: the halo rule flagged dark shaded geometry; it now compares each soft edge pixel with its opaque neighbours (tools/art_qa.py, with tests).
 - Not yet in map_factory/parts or any map; needs Godot assembly and the owner's check of the final capture.
+
+## Closure (Claude, 2026-11-09)
+Owner accepted the delivery in chat (2026-11-09: "I ACCEPT THEM CONTINUE"). ART-0014 is integrated: catalog IDs F023 to F026 (two floor edges and two corners), PNGs in map_factory/parts, request status integrated, exact delivered bytes (SHA-256 verified by tools/art_delivery.py). Tests: tools/tests/test_blender_catalog.py. The pieces are registered and available; hero_room_01 v0017 does not place them yet (it uses the owner HD walls), so the room render is unchanged. Next step: place them in a new room version if the owner wants them in the room.
