@@ -17,7 +17,7 @@ func create_asset(asset_id: String, options: Dictionary = {}) -> Node2D:
     var pixel_size: Array = record.get("pixel_size", [64, 64])
     var size := Vector2(float(pixel_size[0]), float(pixel_size[1]))
     var path := String(record.get("texture_path", ""))
-    if path != "" and ResourceLoader.exists(path):
+    if HdAssets.exists(path):
         var sprite := Sprite2D.new()
         sprite.name = "Visual"
         var hd_path := HdAssets.resolve(path)

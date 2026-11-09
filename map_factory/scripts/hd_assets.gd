@@ -10,3 +10,8 @@ static func resolve(path: String) -> String:
     if path.begins_with("res://assets_generated/") and ResourceLoader.exists(candidate):
         return candidate
     return path
+
+## True when the texture can be loaded: the HD runtime twin (preferred) or the original file.
+## Retired low-quality originals under assets_generated/ no longer exist; their runtime twins do.
+static func exists(path: String) -> bool:
+    return path != "" and ResourceLoader.exists(resolve(path))

@@ -47,6 +47,39 @@ def audit_map_ids(map_json, v2, legacy):
     return result
 
 
+def retired_entry(root, file):
+    """hd_map.json entry of a retired low-quality PNG (path under assets_generated/), or None."""
+    try:
+        relative = file.resolve().relative_to((root / "assets_generated").resolve()).as_posix()
+    except ValueError:
+        return None
+    path = root / "assets_hd" / "hd_map.json"
+    if not path.is_file():
+        return None
+    entry = json.loads(path.read_text(encoding="utf-8"))["map"].get(relative)
+    return None if entry is None or "low_sha256" not in entry else {**entry, "_relative": relative,
+                                                                     "_scale": json.loads(path.read_text(encoding="utf-8"))["scale"]}
+
+
+def verify_retired(root, entry, record, key):
+    """The retired original is proven by its recorded hash and size plus an HD runtime twin of SCALE x size."""
+    problems = []
+    if entry["low_sha256"] != record["sha256"]:
+        problems.append("SHA-256 mismatch " + key)
+    if list(entry["native_size"]) != list(record["sprite_dimensions"]):
+        problems.append("Sprite dimensions mismatch " + key)
+    twin = root / "assets_hd" / "runtime" / Path(entry["_relative"]).name
+    try:
+        with Image.open(twin) as image:
+            image.load()
+            expected = [value * int(entry["_scale"]) for value in entry["native_size"]]
+            if list(image.size) != expected:
+                problems.append("HD runtime twin size mismatch " + key)
+    except (OSError, ValueError):
+        problems.append("Missing HD runtime twin " + key)
+    return problems
+
+
 def verify_v2_assets(v2, root):
     """Read every v2 PNG and validate hashes, dimensions and bridge targets."""
     root = Path(root)
@@ -68,7 +101,14 @@ def verify_v2_assets(v2, root):
             errors.append("Registry key mismatch " + key)
         file = root / record["source_texture_path"].removeprefix("res://")
         if not file.is_file():
-            errors.append("Missing v2 PNG " + key)
+            retired = retired_entry(root, file)
+            if retired is None:
+                errors.append("Missing v2 PNG " + key)
+                continue
+            retired_errors = verify_retired(root, retired, record, key)
+            errors.extend(retired_errors)
+            if not retired_errors:
+                verified.append(key)
             continue
         entry_errors = []
         try:

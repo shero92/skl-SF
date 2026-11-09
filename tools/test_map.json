@@ -405,6 +405,13 @@
       "covers": "Poster character map sprites (extraction, NPC and companion use in the game scene), HD master folder layout and NPC data.",
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_poster_characters.py"],
       "paths": ["scenes/poster_character.gd", "scenes/room_npc.gd", "scenes/room_companion.gd", "scenes/main.gd", "tools/extract_poster_sprites.py", "tools/organize_hd_masters.py", "tools/verify_poster_characters.gd", "tools/tests/test_poster_characters.py", "map_factory/rooms/hero_room.json", "assets_hd/manifest.json", "assets_hd/hd_map.json", "tools/battle_godot_harness.py"]
+    },
+    {
+      "id": "hd_migration",
+      "kind": "python",
+      "covers": "Retired low-quality twins: layout data in hd_map.json, HD runtime twin size, blueprint measurements and texture availability without the original PNG.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_hd_migration.py"],
+      "paths": ["tools/migrate_low_to_hd.py", "tools/build_hd_runtime_textures.py", "tools/build_hero_room_blueprint.py", "tools/audit_room_assets.py", "tools/tests/test_hd_migration.py", "assets_hd/hd_map.json", "map_factory/scripts/hd_assets.gd", "map_factory/scripts/asset_factory.gd", "map_factory/scripts/room_factory.gd"]
     }
   ]
 }

@@ -16,3 +16,7 @@ Names are descriptive only. Mapping to catalog ids (G01, F01, W01, ...) is a sep
 
 ## Runtime (implemented)
 `assets_hd/hd_map.json` maps every assets_generated PNG to its master. `tools/build_hd_runtime_textures.py --masters <dir>` writes aligned 2x textures to `assets_hd/runtime/` (same file names). `HdAssets.resolve()` makes AssetFactory and the floor painter use them automatically; masters themselves stay local (not in git, 230 MB).
+
+## Retired low-quality twins (TASK-0117)
+
+The 128 low-quality `assets_generated/<category>/<file>.png` images that used to sit next to the HD runtime textures are removed. Their layout numbers live in `hd_map.json` (`native_size`, `visible_bbox`, `low_sha256`, `measure`), so the runtime texture, the blueprint measurements and the registry check (`tools/audit_room_assets.py`) work without them. Old texture paths in immutable map snapshots keep working: `HdAssets.resolve` maps them to `assets_hd/runtime/<same file name>`. Run `python tools/migrate_low_to_hd.py` to verify every twin; `python tools/build_hd_runtime_textures.py --masters assets_hd` rebuilds the runtime textures from the sorted masters.

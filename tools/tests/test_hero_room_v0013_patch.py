@@ -113,7 +113,7 @@ class HeroRoomV0013PatchTests(unittest.TestCase):
                 if "status" in registered:
                     self.assertIn(registered["status"], ("ready", "approved"))
                 texture = blueprint.sidecar_png(self.catalog, asset_id)
-                self.assertTrue(texture.is_file())
+                self.assertTrue(blueprint.texture_available(texture), str(texture))
                 self.assertEqual(texture.suffix.lower(), ".png")
                 textures.add(texture.resolve())
         self.assertGreaterEqual(len(textures), 60)

@@ -51,9 +51,9 @@ class ReferenceRelayoutTests(unittest.TestCase):
                     builder.canonical_asset_id(
                         builder.canonical_asset_id(block["id"], assets), assets),
                 )
-                self.assertTrue(builder.sidecar_png(
+                self.assertTrue(builder.texture_available(builder.sidecar_png(
                     self.catalog, block["id"],
-                ).is_file())
+                )))
         names = {block["instance_id"] for block in self.blocks}
         self.assertTrue(set(builder.REFERENCE_ZONES) <= names)
         self.assertTrue({

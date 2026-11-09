@@ -117,8 +117,34 @@ def sidecar_png(catalog, asset_id):
     return ROOT / rel
 
 
+def retired_measure(png_path):
+    """Layout numbers of a retired low-quality PNG, recorded in assets_hd/hd_map.json."""
+    try:
+        relative = Path(png_path).resolve().relative_to((ROOT / "assets_generated").resolve()).as_posix()
+    except ValueError:
+        return None
+    hd_map = json.loads((ROOT / "assets_hd" / "hd_map.json").read_text(encoding="utf-8"))["map"]
+    return hd_map.get(relative, {}).get("measure")
+
+
+def texture_available(png_path):
+    """The registered PNG exists, or it was retired and its HD runtime twin exists (assets_hd/hd_map.json)."""
+    if Path(png_path).is_file():
+        return True
+    if retired_measure(png_path) is None:
+        return False
+    return (ROOT / "assets_hd" / "runtime" / Path(png_path).name).is_file()
+
+
 def measure_png(png_path):
-    im = Image.open(png_path).convert("RGBA")
+    if not Path(png_path).is_file():
+        recorded = retired_measure(png_path)
+        if recorded is not None:
+            return recorded
+    return measure_png_image(Image.open(png_path).convert("RGBA"))
+
+
+def measure_png_image(im):
     alpha = im.split()[3]
     mask = alpha.point(lambda v: 255 if v > 24 else 0)
     bb = mask.getbbox()
@@ -1085,7 +1111,7 @@ def validate_reference_relayout(catalog, blocks):
     bounds = {}
     for block in blocks:
         asset = record(catalog, block["id"])
-        if not sidecar_png(catalog, block["id"]).is_file():
+        if not texture_available(sidecar_png(catalog, block["id"])):
             raise ValueError("Missing registered texture")
         if (not all(isfinite(block[key]) for key in ("x", "y", "scale"))
                 or block["scale"] <= 0
@@ -1102,7 +1128,7 @@ def validate_reference_relayout(catalog, blocks):
             if set(variants) != {"north", "east", "south", "west"}:
                 raise ValueError("Incomplete directional furniture")
             textures = {sidecar_png(catalog, value) for value in variants.values()}
-            if len(textures) != 4 or not all(path.is_file() for path in textures):
+            if len(textures) != 4 or not all(texture_available(path) for path in textures):
                 raise ValueError("Directional furniture requires four textures")
             if block["id"] != variants[block["facing"]]:
                 raise ValueError("Incorrect directional texture")

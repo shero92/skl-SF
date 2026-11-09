@@ -1,6 +1,6 @@
 """Build aligned HD runtime textures from the owner's HD masters.
 
-For each assets_generated PNG listed in assets_hd/hd_map.json the matching master is cropped to its
+For each entry of assets_hd/hd_map.json (a retired assets_generated PNG) the matching master is cropped to its
 visible bounds, fitted onto the low asset's visible bounds, and written at SCALE x the native size to
 assets_hd/runtime/<same file name>. The loader scales them back to native size, so placements, anchors
 and footprints are unchanged. Masters are not stored in git: pass --masters <dir containing the category folders>.
@@ -25,9 +25,13 @@ def build(masters: Path, only=None):
     for rel, rec in cfg["map"].items():
         if only and not rel.startswith(only):
             continue
-        low = Image.open(ROOT / "assets_generated" / rel).convert("RGBA")
         hd = Image.open(masters / rec["master"]).convert("RGBA")
-        lb, hb = bbox(low), bbox(hd)
+        if "native_size" in rec:  # layout numbers recorded by tools/migrate_low_to_hd.py
+            lb, native = tuple(rec["visible_bbox"]), tuple(rec["native_size"])
+        else:
+            low = Image.open(ROOT / "assets_generated" / rel).convert("RGBA")
+            lb, native = bbox(low), low.size
+        hb = bbox(hd)
         if lb is None or hb is None:
             raise SystemExit(f"empty alpha: {rel}")
         hd = hd.crop(hb)
@@ -35,7 +39,7 @@ def build(masters: Path, only=None):
             hd = ImageOps.mirror(hd)
         tw, th = (lb[2] - lb[0]) * scale, (lb[3] - lb[1]) * scale
         hd = hd.resize((tw, th), Image.LANCZOS)
-        canvas = Image.new("RGBA", (low.width * scale, low.height * scale), (0, 0, 0, 0))
+        canvas = Image.new("RGBA", (native[0] * scale, native[1] * scale), (0, 0, 0, 0))
         canvas.paste(hd, (lb[0] * scale, lb[1] * scale))
         canvas.save(out_dir / Path(rel).name, optimize=True)
         built.append(Path(rel).name)

@@ -1,902 +1,4102 @@
 {
  "scale": 2,
- "note": "low asset (relative to assets_generated/) -> HD master (relative to the masters dir; masters are kept locally, not in git)",
+ "note": "low asset (relative to assets_generated/) -> HD master (relative to the masters dir; masters are local, not in git). native_size, visible_bbox, low_sha256 and measure are the layout numbers of the retired low image.",
  "map": {
   "architecture/A01__architecture__main_stone_column__default__1x1__64x128.png": {
    "master": "architecture/column_ivy/column_ivy_05.png",
    "master_sha256": "fbb9d4e391290bc36eb402e178766067ed8a7adc558bf81dc6b4ec5f4fbfa1bc",
    "master_source": "exec-6d042b14-eb88-4707-80c9-fa00d052346d.png",
    "flip_h": false,
-   "match_distance": 10.4
+   "match_distance": 10.4,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    14,
+    7,
+    53,
+    123
+   ],
+   "low_sha256": "39beb53e6123f37ebf8de8946b9657efecb408217530dcea80eaf1f2c2b70317",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     14,
+     7,
+     39,
+     116
+    ],
+    "bottom_gap": 5,
+    "content_cx": 33.5
+   }
   },
   "architecture/A02__architecture__column_top_capital__default__1x1__64x128.png": {
    "master": "architecture/column_ivy/column_ivy_06.png",
    "master_sha256": "722be70f4d726174010e4b71521f883f8f19c588de526e4f02ad509802d4f6fd",
    "master_source": "exec-9f042a95-913d-4e19-b2e8-0607250d4244.png",
    "flip_h": false,
-   "match_distance": 6.8
+   "match_distance": 6.8,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    10,
+    10,
+    54,
+    123
+   ],
+   "low_sha256": "e5db5ba623c3b482070d0e56fc0b453be846f8a470ef4b8235974170a46b75f7",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     10,
+     10,
+     44,
+     113
+    ],
+    "bottom_gap": 5,
+    "content_cx": 32.0
+   }
   },
   "architecture/A03__architecture__column_base__default__1x1__64x128.png": {
    "master": "architecture/column_ivy/column_ivy_07.png",
    "master_sha256": "da5684751623d723df54c20ce341b1e0b2292d023ba5af80482a37864d1166ba",
    "master_source": "exec-e0f6161f-847b-4632-ad96-01c2cf165294.png",
    "flip_h": false,
-   "match_distance": 7.1
+   "match_distance": 7.1,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    5,
+    0,
+    61,
+    127
+   ],
+   "low_sha256": "9a1921685937826ede52bbb37c4fade5a590207b67af41572e794e5efa637afb",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     5,
+     0,
+     56,
+     127
+    ],
+    "bottom_gap": 1,
+    "content_cx": 33.0
+   }
   },
   "architecture/A04__architecture__arch_segment_left__default__1x1__128x128.png": {
    "master": "architecture/arch/arch_02.png",
    "master_sha256": "1d8d47586b405726f0148a80f87a0240ffe69a2063996a00a2bd8b89a3ab130a",
    "master_source": "exec-9c5c6753-68e9-469e-8519-87abd92c828a.png",
    "flip_h": false,
-   "match_distance": 4.7
+   "match_distance": 4.7,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    19,
+    2,
+    106,
+    124
+   ],
+   "low_sha256": "2dba4576e3d4acc51b869e4b67469f3c9b1ac4fa11a5f3bdb2dc77065e222e2a",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     19,
+     2,
+     87,
+     122
+    ],
+    "bottom_gap": 4,
+    "content_cx": 62.5
+   }
   },
   "architecture/A05__architecture__arch_segment_center__default__1x1__128x128.png": {
    "master": "architecture/arch/arch_01.png",
    "master_sha256": "9114ef58ecee7f776e51323ed70b1a6671c13ef712da7011844159e74092fad8",
    "master_source": "exec-638a8f3d-f556-4573-bbc3-2268672fd2ad.png",
    "flip_h": false,
-   "match_distance": 4.7
+   "match_distance": 4.7,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    7,
+    6,
+    126,
+    124
+   ],
+   "low_sha256": "647106515f7de8d94a5402b0c4d459c323c6ed046ca99d5e7feb02afd4d3cc56",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     7,
+     6,
+     119,
+     118
+    ],
+    "bottom_gap": 4,
+    "content_cx": 66.5
+   }
   },
   "architecture/A06__architecture__arch_segment_right__default__1x1__128x128.png": {
    "master": "architecture/arch/arch_03.png",
    "master_sha256": "ec1e7cb4d0bf0a515f13c46d303a8d6ae6f3a496962f4b8caabb4e542077297a",
    "master_source": "exec-be7bd808-f6e5-4cf8-bace-1420a3f6bc10.png",
    "flip_h": false,
-   "match_distance": 3.5
+   "match_distance": 3.5,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    23,
+    1,
+    118,
+    126
+   ],
+   "low_sha256": "6639c1307ea694c90a85582796a6284292bb28f59ebd3b677d1e4150dba32ae8",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     23,
+     1,
+     95,
+     125
+    ],
+    "bottom_gap": 2,
+    "content_cx": 70.5
+   }
   },
   "architecture/A07__architecture__complete_doorway_arch_keystone_piece__default__1x1__128x128.png": {
    "master": "architecture/stone_block/stone_block_03.png",
    "master_sha256": "93d7e5418f6ca0f526f5e04a325697dd672883fe09dddf36672ce8d85c840bcb",
    "master_source": "exec-8b54dc91-0217-421c-9f78-ff763bc78d2b.png",
    "flip_h": false,
-   "match_distance": 9.1
+   "match_distance": 9.1,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    38,
+    51,
+    90,
+    104
+   ],
+   "low_sha256": "19c7caf7e55191bd20c1b9f995f0d8754f3b2e14d9b48999bfe314dbb4b01b2b",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     38,
+     51,
+     52,
+     53
+    ],
+    "bottom_gap": 24,
+    "content_cx": 64.0
+   }
   },
   "architecture/A08__architecture__rear_door_frame__default__1x1__128x128.png": {
    "master": "architecture/arch/arch_04.png",
    "master_sha256": "77835bbb2f8307e9ca8d4de6e0d786aa16c41ea1a0c0d48a829b6ef46ca4bda1",
    "master_source": "exec-fe26eeca-2d20-4ab0-9b65-0fbbfaedd7c5.png",
    "flip_h": false,
-   "match_distance": 4.6
+   "match_distance": 4.6,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    12,
+    6,
+    116,
+    121
+   ],
+   "low_sha256": "1839bd9ed366d6430b99ada5919607b6c4374de7d69f5c146b155eeebf5fc18a",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     12,
+     6,
+     104,
+     115
+    ],
+    "bottom_gap": 7,
+    "content_cx": 64.0
+   }
   },
   "architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png": {
    "master": "architecture/ruined_door/ruined_door_01.png",
    "master_sha256": "449d2b0722214e8dab12abad13f282f80f628e7ec179617123b1d8719c959d6a",
    "master_source": "exec-98d72776-4d59-4707-8d99-1bc92c670304.png",
    "flip_h": false,
-   "match_distance": 6.4
+   "match_distance": 6.4,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    30,
+    15,
+    105,
+    123
+   ],
+   "low_sha256": "5c330931ff03960ef3f719f5e0711b77cebadf4f69f3973f2bc1146e6b0ecae4",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     30,
+     15,
+     75,
+     108
+    ],
+    "bottom_gap": 5,
+    "content_cx": 67.5
+   }
   },
   "architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png": {
    "master": "architecture/stone_block/stone_block_01.png",
    "master_sha256": "82d4b0107ad7375f605b9e9608e38edeea40a1270d8b21fc453fd998b057694c",
    "master_source": "exec-127510b7-e378-40b8-8373-c1a1315898ec.png",
    "flip_h": false,
-   "match_distance": 8.1
+   "match_distance": 8.1,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    20,
+    75,
+    108,
+    109
+   ],
+   "low_sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     20,
+     75,
+     88,
+     34
+    ],
+    "bottom_gap": 19,
+    "content_cx": 64.0
+   }
   },
   "architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.png": {
    "master": "architecture/stone_post/stone_post_02.png",
    "master_sha256": "9215f5487d2d1e58e4355d138b6523719f9e6e2eb60f52e18389a9b88aa89ae9",
    "master_source": "exec-556d85f4-4e71-4eaa-9b03-2e11d4abea6f.png",
    "flip_h": false,
-   "match_distance": 5.9
+   "match_distance": 5.9,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    27,
+    16,
+    101,
+    116
+   ],
+   "low_sha256": "b0af7f8cadd617782426306f7b27cb5bcc032861fd0e43906f3d83f7f46b91c0",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     27,
+     16,
+     74,
+     100
+    ],
+    "bottom_gap": 12,
+    "content_cx": 64.0
+   }
   },
   "architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.png": {
    "master": "architecture/stone_post/stone_post_03.png",
    "master_sha256": "e61e1622180bc0e869f0a279e13e811bd6d15677aa3465a575441aed86be4b96",
    "master_source": "exec-57d1ebc9-0bf1-46b9-852d-a9e8401a5336.png",
    "flip_h": false,
-   "match_distance": 3.8
+   "match_distance": 3.8,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    32,
+    12,
+    108,
+    112
+   ],
+   "low_sha256": "aef40f45c3eecf1bc21ebe18880bfe68e03da271dc12e67dcfd8ac08b7ee9d21",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     32,
+     12,
+     76,
+     100
+    ],
+    "bottom_gap": 16,
+    "content_cx": 70.0
+   }
   },
   "architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png": {
    "master": "architecture/stone_post/stone_post_01.png",
    "master_sha256": "545f98903e4d389cab383e6858d034b7c5ed773c96bbe5a9c276e02074542d3b",
    "master_source": "exec-4c1d515a-0d72-44bf-944a-c20ddf9c2233.png",
    "flip_h": false,
-   "match_distance": 7.0
+   "match_distance": 7.0,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    12,
+    34,
+    52,
+    125
+   ],
+   "low_sha256": "70c78ebf57e5f87c4c7d1ebfb82c44b56f935f3c04f4a9281c6908d1b41d6637",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     12,
+     34,
+     40,
+     91
+    ],
+    "bottom_gap": 3,
+    "content_cx": 32.0
+   }
   },
   "background/B01__background__ocean_water_tile_segment__default__4x4__256x256.png": {
    "master": "background/sea/sea_02.png",
    "master_sha256": "bd2873c8abf249e64ed8b259396cd7f4a1d448a0890e32b73c0de1e6bca657ff",
    "master_source": "exec-c516e78f-b520-4f6a-a4a2-5dbf1ec7e5f8.png",
    "flip_h": false,
-   "match_distance": 1.3
+   "match_distance": 1.3,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    256,
+    256
+   ],
+   "low_sha256": "8757471acf192c0ae02451b0e4dbaa0e8c8daae7eb67515c9b95fa112643881e",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     0,
+     0,
+     256,
+     256
+    ],
+    "bottom_gap": 0,
+    "content_cx": 128.0
+   }
   },
   "background/B02__background__foam_edge_overlay__default__4x4__256x256.png": {
    "master": "background/wave_foam/wave_foam_01.png",
    "master_sha256": "760259d4bdc98e61147e8988312bde67e847b39103b2eb4cb7576b43ddac952f",
    "master_source": "exec-62d0b9e0-c9d8-4659-8891-12db8efd1836.png",
    "flip_h": false,
-   "match_distance": 0.9
+   "match_distance": 0.9,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    1,
+    8,
+    254,
+    253
+   ],
+   "low_sha256": "58ed77e82641e02607f63b9de0bf447cfe76dd00a607fbf45b0312795e5bcbda",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     1,
+     8,
+     253,
+     245
+    ],
+    "bottom_gap": 3,
+    "content_cx": 127.5
+   }
   },
   "background/B03__background__near_cliff_rock_segment__default__4x4__256x256.png": {
    "master": "background/cliff_base/cliff_base_01.png",
    "master_sha256": "9f2aa3b31fce2c93a500abead8679d2dafe4010ef0d7a4d7400b48de1642c96e",
    "master_source": "exec-284ff640-e0f3-4500-a779-0322e4a6bf1e.png",
    "flip_h": false,
-   "match_distance": 1.7
+   "match_distance": 1.7,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    6,
+    7,
+    252,
+    253
+   ],
+   "low_sha256": "83886ced006aaa1c7c6c97ab055afaf54b165b5992ceae331d7abeb54e594aa3",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     6,
+     7,
+     246,
+     246
+    ],
+    "bottom_gap": 3,
+    "content_cx": 129.0
+   }
   },
   "background/B04__background__far_cliff_rock_segment__default__4x4__256x256.png": {
    "master": "background/rock_island/rock_island_04.png",
    "master_sha256": "28bfb2d7b0b959e67bcfc1c8baf5587b481cdb2e0c3da2d92962d86c07de90c0",
    "master_source": "exec-d3a9376a-1555-478a-a253-0e5b66e651aa.png",
    "flip_h": false,
-   "match_distance": 1.7
+   "match_distance": 1.7,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    10,
+    21,
+    250,
+    245
+   ],
+   "low_sha256": "35962079d58aad6b7b43be7770a94b6d239a86bf26fa6765165bd3701ec15aee",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     10,
+     21,
+     240,
+     224
+    ],
+    "bottom_gap": 11,
+    "content_cx": 130.0
+   }
   },
   "background/B05__background__sea_stack_island_small__default__4x4__256x256.png": {
    "master": "background/rock_island/rock_island_03.png",
    "master_sha256": "5b74a307d2a6712e57ed49ddfb6ef18dac783d848f9f6b4ecfb7e9299349d05e",
    "master_source": "exec-d39960d9-752d-4563-8751-13bacc3aab8f.png",
    "flip_h": false,
-   "match_distance": 2.1
+   "match_distance": 2.1,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    21,
+    18,
+    236,
+    244
+   ],
+   "low_sha256": "ba454688534d5ace252ac208ab71fdbd8a5f1018ac95f261dc2f10325bc7cb54",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     21,
+     18,
+     215,
+     226
+    ],
+    "bottom_gap": 12,
+    "content_cx": 128.5
+   }
   },
   "background/B06__background__sea_stack_island_medium__default__4x4__256x256.png": {
    "master": "background/rock_island/rock_island_01.png",
    "master_sha256": "83d45d8d9bcd5db5f4801a2f6501e4f9bbd775cc825a3c3a24eb3c7d6a057cbe",
    "master_source": "exec-231846cd-a540-4fbc-beec-141becf5c846.png",
    "flip_h": false,
-   "match_distance": 1.6
+   "match_distance": 1.6,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    2,
+    11,
+    255,
+    244
+   ],
+   "low_sha256": "dcefd91b3fc343d234e4a99bba44adf59f7c34048d880d481a0a18dcadda8a53",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     2,
+     11,
+     253,
+     233
+    ],
+    "bottom_gap": 12,
+    "content_cx": 128.5
+   }
   },
   "background/B07__background__horizon_ocean_strip__default__4x4__256x256.png": {
    "master": "background/sea/sea_01.png",
    "master_sha256": "bfbd4e1d9173e285b5e5ee435992e66bd60105594621ca854984360afced9245",
    "master_source": "exec-53651b07-700b-483e-9529-251d4a48ef17.png",
    "flip_h": false,
-   "match_distance": 1.0
+   "match_distance": 1.0,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    256,
+    256
+   ],
+   "low_sha256": "5c642170bc95313a70cc9d92c867a6e03cf8008dc433ee126cc75f91c69eb08f",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     0,
+     0,
+     256,
+     256
+    ],
+    "bottom_gap": 0,
+    "content_cx": 128.0
+   }
   },
   "background/B08__background__bright_cloud_small__default__4x4__256x256.png": {
    "master": "background/cloud/cloud_01.png",
    "master_sha256": "1c73db2bbc95465afc699a806ad2c63fd734721948d895a5a602c2bf2495eedf",
    "master_source": "exec-80af96db-21a5-48b9-b3cc-d3c5de51c4e0.png",
    "flip_h": false,
-   "match_distance": 1.5
+   "match_distance": 1.5,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    24,
+    162,
+    235,
+    252
+   ],
+   "low_sha256": "ab4cfa6e36fb304774c162906f2439289608b2cb5ada9e668a30a47f66dad71d",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     24,
+     162,
+     211,
+     90
+    ],
+    "bottom_gap": 4,
+    "content_cx": 129.5
+   }
   },
   "background/B09__background__bright_cloud_medium__default__4x4__256x256.png": {
    "master": "background/cloud/cloud_02.png",
    "master_sha256": "467e9f67e88ff758458ebf7f5b878417e78dc151bd6eca27a7c95b537c592407",
    "master_source": "exec-9417cb10-ee04-45d7-a5a4-0ee9df2165f0.png",
    "flip_h": false,
-   "match_distance": 1.2
+   "match_distance": 1.2,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    4,
+    53,
+    251,
+    222
+   ],
+   "low_sha256": "e37d1b68dafb4df8d0a315f41ec670cf8d2b2ed97de8e38c1432b8090b778a03",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     4,
+     53,
+     247,
+     169
+    ],
+    "bottom_gap": 34,
+    "content_cx": 127.5
+   }
   },
   "background/B10__background__clear_sky_gradient_segment__default__4x4__256x256.png": {
    "master": "background/sky_gradient/sky_gradient_01.png",
    "master_sha256": "46e2a75996da36d8072926ee9f2173c636650242fca4d027e03d9f29ab91b9ed",
    "master_source": "exec-b2efc34c-24e7-4c90-9aab-ab07bcd7e52e.png",
    "flip_h": false,
-   "match_distance": 0.1
+   "match_distance": 0.1,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    256,
+    256
+   ],
+   "low_sha256": "108ee1f0ff346a98142d79eea36dd185bcbdfd63ce6a55a801c632d52c649fad",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     0,
+     0,
+     256,
+     256
+    ],
+    "bottom_gap": 0,
+    "content_cx": 128.0
+   }
   },
   "background/B11__background__distant_rock_arch_formation__default__4x4__256x256.png": {
    "master": "background/rock_island/rock_island_02.png",
    "master_sha256": "9695e9b6f090740f56d29ce5489d566f0deb38b28f9e94164d1a4ff52065c609",
    "master_source": "exec-b95c9f04-daeb-464a-b51b-691f1711e99b.png",
    "flip_h": false,
-   "match_distance": 1.9
+   "match_distance": 1.9,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    1,
+    56,
+    256,
+    217
+   ],
+   "low_sha256": "168ff1910c9f1d73f1185423731237d8a3211d0ff414da47d908bb1e783bf9c4",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     1,
+     56,
+     255,
+     161
+    ],
+    "bottom_gap": 39,
+    "content_cx": 128.5
+   }
   },
   "decor/D01__decor__bed_rug__default__3x4__192x256.png": {
    "master": "decor/rug_rect_compass/rug_rect_compass_01.png",
    "master_sha256": "42ed843f7480fbd6a9ca64d67d7574c54f616b2ddcd37b7eb0b4c8225834cf3f",
    "master_source": "exec-dec5afc4-1429-4765-af32-b53a010b5568.png",
    "flip_h": false,
-   "match_distance": 4.5
+   "match_distance": 4.5,
+   "native_size": [
+    192,
+    256
+   ],
+   "visible_bbox": [
+    31,
+    91,
+    161,
+    223
+   ],
+   "low_sha256": "25ae4f28afa7d69942a1a9756dd646f1ea5e1aea8be29362ecd1a1d7beaac500",
+   "measure": {
+    "size": [
+     192,
+     256
+    ],
+    "content": [
+     31,
+     91,
+     130,
+     132
+    ],
+    "bottom_gap": 33,
+    "content_cx": 96.0
+   }
   },
   "decor/D02__decor__table_rug__default__4x4__256x256.png": {
    "master": "decor/rug_square_compass/rug_square_compass_01.png",
    "master_sha256": "3ab19b8d1e67762029689e733d396ab459dfac385393a9fb2ad47b0943e22bad",
    "master_source": "exec-5b1ebfe1-8766-449b-8548-028c64a125c0.png",
    "flip_h": false,
-   "match_distance": 4.9
+   "match_distance": 4.9,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    20,
+    42,
+    236,
+    237
+   ],
+   "low_sha256": "4931a99f30ca5982dc38ec95c950cea36b2717a02d78c1f248edd08006b77cb6",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     20,
+     42,
+     216,
+     195
+    ],
+    "bottom_gap": 19,
+    "content_cx": 128.0
+   }
   },
   "decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.png": {
    "master": "floor/compass_emblem/compass_emblem_01.png",
    "master_sha256": "1d85f2b9cb064fe2fed2648a375890d9e8fbc006a9f1140b602911a33ddebefd",
    "master_source": "exec-82555493-4479-456b-ae9d-753b999cd6cb.png",
    "flip_h": false,
-   "match_distance": 2.5
+   "match_distance": 2.5,
+   "native_size": [
+    256,
+    256
+   ],
+   "visible_bbox": [
+    29,
+    35,
+    227,
+    230
+   ],
+   "low_sha256": "d617cd660b9aca8e3a097780e0fa393f4ca07ad1bc0e2152bdc1d50db65ba00a",
+   "measure": {
+    "size": [
+     256,
+     256
+    ],
+    "content": [
+     29,
+     35,
+     198,
+     195
+    ],
+    "bottom_gap": 26,
+    "content_cx": 128.0
+   }
   },
   "decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.png": {
    "master": "decor/banner_blue_long/banner_blue_long_02.png",
    "master_sha256": "c24b8aebbdae7f184dadd8424f4603ca15c32f080a8d6da2c89ebd74beabed6c",
    "master_source": "exec-8acf0547-e8c5-4d11-a088-5610973ef734.png",
    "flip_h": false,
-   "match_distance": 15.5
+   "match_distance": 15.5,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    15,
+    9,
+    49,
+    119
+   ],
+   "low_sha256": "bb374378e3db8181cefb85ef40a4da65d8a661a6d975ffcdd144959266d4c310",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     15,
+     9,
+     34,
+     110
+    ],
+    "bottom_gap": 9,
+    "content_cx": 32.0
+   }
   },
   "decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.png": {
    "master": "decor/banner_blue_long/banner_blue_long_01.png",
    "master_sha256": "d439c254283aced1d23234cd918391dc4190ad00f6c71222d7a12bb65e6d1b6d",
    "master_source": "exec-5c2dcdf6-dd2a-4e47-bf4b-ca881d4ea13d.png",
    "flip_h": false,
-   "match_distance": 7.0
+   "match_distance": 7.0,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    9,
+    17,
+    55,
+    111
+   ],
+   "low_sha256": "174b8d5e6a89e9c611bde55c34f5f334a6c05c9fa09cb62f3bf3c19dbef9f080",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     9,
+     17,
+     46,
+     94
+    ],
+    "bottom_gap": 17,
+    "content_cx": 32.0
+   }
   },
   "decor/D06__decor__banner_pole_hanging_support__default__1x1__64x64.png": {
    "master": "lighting/lantern_bracket/lantern_bracket_01.png",
    "master_sha256": "444a7e26a04a76b6bac8aab7d3b582d83ae4c2c4dccc683856950e7dce47668a",
    "master_source": "exec-f0f2c285-5e5e-43d0-84f6-9ec18d0a6e60.png",
    "flip_h": false,
-   "match_distance": 9.5
+   "match_distance": 9.5,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    15,
+    1,
+    53,
+    62
+   ],
+   "low_sha256": "cf2c9ec270ab0d7018d6273599340bb33b24e46820e0c286ee780d493b3a18ec",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     15,
+     1,
+     38,
+     61
+    ],
+    "bottom_gap": 2,
+    "content_cx": 34.0
+   }
   },
   "decor/D07__decor__small_decorative_cloth_fold__default__1x1__64x64.png": {
    "master": "decor/rug_folded_blue/rug_folded_blue_01.png",
    "master_sha256": "6c8d1b94600dc4063db076f5b7611bdeb83fbd7d5c68415f5cc10dd3677f15b9",
    "master_source": "exec-8e222cd4-fe2a-4822-8aa6-3bf48df2a1e6.png",
    "flip_h": false,
-   "match_distance": 21.5
+   "match_distance": 21.5,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    13,
+    22,
+    52,
+    50
+   ],
+   "low_sha256": "2634d0c3277989cdf52c16dfd7f13394b807b1d6abb8d6d01a67ddf757bcbc6d",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     13,
+     22,
+     39,
+     28
+    ],
+    "bottom_gap": 14,
+    "content_cx": 32.5
+   }
   },
   "decor/D08__decor__ornamental_gold_trim_overlay__default__1x1__64x64.png": {
    "master": "decor/gold_corner_ornament/gold_corner_ornament_01.png",
    "master_sha256": "41557ddc55331d0ef2162d353326534d78e998ce21b62478c297bdcb2479e0b5",
    "master_source": "exec-6eaaf8d4-ab93-42d8-bb5c-822470c2e89e.png",
    "flip_h": false,
-   "match_distance": 5.2
+   "match_distance": 5.2,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    2,
+    2,
+    62,
+    63
+   ],
+   "low_sha256": "dca8d40f5e9923d1d0d2313263a2a04e5bbe0fdfb717f7fbf6287cb52a79f419",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     2,
+     2,
+     60,
+     61
+    ],
+    "bottom_gap": 1,
+    "content_cx": 32.0
+   }
   },
   "floor/G01__floor__clean_sandstone_floor_tile__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_03.png",
    "master_sha256": "555279b4fd2dbed4cb80a5e7415ffbc4d2e8365a0247074a56b5a36c995f37c8",
    "master_source": "exec-2501aac4-9001-4402-bf62-27af4cd902e7.png",
    "flip_h": false,
-   "match_distance": 5.3
+   "match_distance": 5.3,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G02__floor__lightly_weathered_sandstone_floor_tile__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_09.png",
    "master_sha256": "981044cfbb6791a66ae208427307e6a00d51ef0dcc2a966c28119f541c69520e",
    "master_source": "exec-d87d8b8a-ade8-4559-9324-e887ff416f71.png",
    "flip_h": false,
-   "match_distance": 3.9
+   "match_distance": 3.9,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "834edaa0701313fb8b22d81a62811d69641fd01bbc638249fae50867463c4dca",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G03__floor__fine_cracked_sandstone_floor_tile__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_08.png",
    "master_sha256": "f6d53518d0fffda6394246c132bc61d5cdfdb0404d4c4a7aa59f3b1c31c5423f",
    "master_source": "exec-d4346952-0d08-4c13-8e51-538cd3330e69.png",
    "flip_h": false,
-   "match_distance": 4.0
+   "match_distance": 4.0,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "98cfbec750f847aba7b1794dec9df88663dbfcf6242422c8f9ec21060eecd288",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G04__floor__naturally_textured_sandstone_floor_tile__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_09.png",
    "master_sha256": "981044cfbb6791a66ae208427307e6a00d51ef0dcc2a966c28119f541c69520e",
    "master_source": "exec-d87d8b8a-ade8-4559-9324-e887ff416f71.png",
    "flip_h": false,
-   "match_distance": 0.5
+   "match_distance": 0.5,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "a10ea4f41aa5e3dcb9263486ab9f6149bb3afd56a8ff7de92546b638da7abd02",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G05__floor__sandstone_tile_with_slight_edge_wear__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_02.png",
    "master_sha256": "e409c22eed5a8ef1dd421e95a0eafc572ce2edf49e0b4c29d29227cf9029a3dd",
    "master_source": "exec-1912a7cb-c661-4ad5-8d9e-e41f947802bb.png",
    "flip_h": false,
-   "match_distance": 1.3
+   "match_distance": 1.3,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "730ab5d5cd7b7b8a708dc9eec3375ca6b952ce6ca0fcf08d6f314dfc2d3c2a73",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G06__floor__sandstone_tile_with_small_chipped_corner__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_06.png",
    "master_sha256": "021bfe98a1d03ae58e4ef4e543a638d39f98c50c43f2db10d1d3fead7243ed53",
    "master_source": "exec-9525fae3-dd5e-4e0d-a1cb-c0c318721ead.png",
    "flip_h": false,
-   "match_distance": 0.7
+   "match_distance": 0.7,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "7610f278fa2cd7a44f79444f3155ad93672fc17b34e2d9f761086396ca463ff8",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G07__floor__sandstone_tile_with_dusty_patch__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_04.png",
    "master_sha256": "6fe03f6fd50f9def2ae17b3c40cfbd8f3963a1eca30ffc83af8385f7130cc182",
    "master_source": "exec-43fcdc33-1d3b-4509-8115-8730c8a87f09.png",
    "flip_h": false,
-   "match_distance": 2.7
+   "match_distance": 2.7,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "b64cfd91f42d62f4ba30ed3b66354aac7c105bb0e3fb75bc379e19bfbb038bfb",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G08__floor__sandstone_tile_with_subtle_mineral_spots__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_01.png",
    "master_sha256": "e7afdbca63c97c1d7bbc3e14ea287dcb9bcca42926aa761df209153fd9a4c197",
    "master_source": "exec-095e69c7-6dd4-4cd2-aedd-ba3abac3588d.png",
    "flip_h": false,
-   "match_distance": 0.8
+   "match_distance": 0.8,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "68f537a5c3301bd0a0f7f20923580e2d23b21f131443c2c96281938ec89cb60f",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G09__floor__sandstone_tile_with_tiny_surface_pits__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_03.png",
    "master_sha256": "555279b4fd2dbed4cb80a5e7415ffbc4d2e8365a0247074a56b5a36c995f37c8",
    "master_source": "exec-2501aac4-9001-4402-bf62-27af4cd902e7.png",
    "flip_h": false,
-   "match_distance": 0.9
+   "match_distance": 0.9,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "7d83a39fa2f1900703ad695564d4ccc1eeebe9ce4d0394d7ae258ea319ebf4b6",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G10__floor__sandstone_tile_with_soft_discoloration__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_05.png",
    "master_sha256": "8248be99d37d69cff38fb9fd2bd198a50287931c61e263f4051371da8123f61c",
    "master_source": "exec-4d759d48-93d0-4b20-9efd-9c4b08b6e89d.png",
    "flip_h": false,
-   "match_distance": 0.6
+   "match_distance": 0.6,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "79dc7ec3c390bdfe8ab856f2e60f378e739eecd77441117b97f82ef9aaa3937d",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G11__floor__sandstone_tile_with_faint_hairline_cracks__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_07.png",
    "master_sha256": "0a1486acf8e72031b3dcb9f0f051326b62184f54ea9e90b0fd6c26142fdd8167",
    "master_source": "exec-bb01b5b2-9b9d-4798-8227-0bd072fbded9.png",
    "flip_h": false,
-   "match_distance": 1.9
+   "match_distance": 1.9,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "2bcf319aed97cb1dd67749a7b4b988bcfaf0f7adc596cd49a7e15113013e090f",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "floor/G12__floor__sandstone_tile_with_slightly_darker_weathering__default__1x1__64x64.png": {
    "master": "floor/sandstone_tile/sandstone_tile_08.png",
    "master_sha256": "f6d53518d0fffda6394246c132bc61d5cdfdb0404d4c4a7aa59f3b1c31c5423f",
    "master_source": "exec-d4346952-0d08-4c13-8e51-538cd3330e69.png",
    "flip_h": false,
-   "match_distance": 1.2
+   "match_distance": 1.2,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "low_sha256": "6ca4406809419e07cde9cf16ad9f90c16cafc2e74527343f673367706e8d4e23",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     0,
+     0,
+     64,
+     64
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "furniture/F01__furniture__royal_wooden_bed__south__3x4__192x256.png": {
    "master": "furniture/bed_front_view/bed_front_view_02.png",
    "master_sha256": "02f0e2cf5b6de6a8884d69049c53e3845147691210f66d501cb2c54ade00a8a2",
    "master_source": "exec-eb8d27b9-4fdd-40f7-ae93-d38cb5be34cd.png",
    "flip_h": false,
-   "match_distance": 2.8
+   "match_distance": 2.8,
+   "native_size": [
+    192,
+    256
+   ],
+   "visible_bbox": [
+    16,
+    39,
+    176,
+    236
+   ],
+   "low_sha256": "0761f56d7729dd253a05273942865b93c8736d1808b1ca29527f4e0284b3dc4d",
+   "measure": {
+    "size": [
+     192,
+     256
+    ],
+    "content": [
+     16,
+     39,
+     160,
+     197
+    ],
+    "bottom_gap": 20,
+    "content_cx": 96.0
+   }
   },
   "furniture/F02__furniture__royal_wooden_bed__west__4x3__256x192.png": {
    "master": "furniture/bed_side_view/bed_side_view_02.png",
    "master_sha256": "e54362d4978d7d83f87b6b0f9e40a44c868c306d1ebf0ebcc8345ce32f6bdc72",
    "master_source": "exec-c790246b-2b8e-4184-8bb9-1194eeb9ea0e.png",
    "flip_h": false,
-   "match_distance": 2.4
+   "match_distance": 2.4,
+   "native_size": [
+    256,
+    192
+   ],
+   "visible_bbox": [
+    12,
+    14,
+    251,
+    176
+   ],
+   "low_sha256": "f54d10a3140f9c0a4bd11009c51822831d7fd9f1a9664f96b1e3bd7b3b5763c9",
+   "measure": {
+    "size": [
+     256,
+     192
+    ],
+    "content": [
+     12,
+     14,
+     239,
+     162
+    ],
+    "bottom_gap": 16,
+    "content_cx": 131.5
+   }
   },
   "furniture/F03__furniture__royal_wooden_bed__north__3x4__192x256.png": {
    "master": "furniture/bed_front_view/bed_front_view_01.png",
    "master_sha256": "9da6d921aed82be8232dd949cfd592ba52e34e65c5657096487f6677fce3749d",
    "master_source": "exec-c5158b94-a0cd-4f23-acfb-441bb18cfd9b.png",
    "flip_h": false,
-   "match_distance": 4.5
+   "match_distance": 4.5,
+   "native_size": [
+    192,
+    256
+   ],
+   "visible_bbox": [
+    13,
+    40,
+    180,
+    241
+   ],
+   "low_sha256": "358fefd14e7f2f2ffa9b50393bf36238ce5a52e771a0eb4a6c9d44d54f449d33",
+   "measure": {
+    "size": [
+     192,
+     256
+    ],
+    "content": [
+     13,
+     40,
+     166,
+     201
+    ],
+    "bottom_gap": 15,
+    "content_cx": 96.0
+   }
   },
   "furniture/F04__furniture__royal_wooden_bed__east__4x3__256x192.png": {
    "master": "furniture/bed_side_view/bed_side_view_01.png",
    "master_sha256": "f0ea4d4a7aa4b20511b074248c2c1ec80580dbb4065eaacdacee46c4850de1be",
    "master_source": "exec-293dfa97-d276-4b73-9c80-53ba32cc9077.png",
    "flip_h": false,
-   "match_distance": 3.2
+   "match_distance": 3.2,
+   "native_size": [
+    256,
+    192
+   ],
+   "visible_bbox": [
+    19,
+    24,
+    237,
+    169
+   ],
+   "low_sha256": "1e0eeb325eafd852067bf65d461addf87020733ba0050eba2d1a8ccf7bde443a",
+   "measure": {
+    "size": [
+     256,
+     192
+    ],
+    "content": [
+     19,
+     24,
+     218,
+     145
+    ],
+    "bottom_gap": 23,
+    "content_cx": 128.0
+   }
   },
   "furniture/F05__furniture__bedside_table__east__2x2__128x128.png": {
    "master": "furniture/bedside_chest_drawer/bedside_chest_drawer_01.png",
    "master_sha256": "26224dc9b8d392d73ab28137679dc6fe05c8843d3b5e461c364690136bb217a6",
    "master_source": "exec-0a8ef8ba-a9a2-4e5d-8254-e9896fd62c46.png",
    "flip_h": false,
-   "match_distance": 2.4
+   "match_distance": 2.4,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    25,
+    28,
+    108,
+    103
+   ],
+   "low_sha256": "5bb7e489003a14bf41bac2b46798ec8ecbef289e21f6b9874445d11671d1c7ce",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     25,
+     28,
+     83,
+     75
+    ],
+    "bottom_gap": 25,
+    "content_cx": 66.5
+   }
   },
   "furniture/F05__furniture__bedside_table__north__2x2__128x128.png": {
    "master": "furniture/bedside_chest_drawer/bedside_chest_drawer_03.png",
    "master_sha256": "7f2032f7d7d2fa43f186a606793f73749ec22b7c12b8a49eea106e1401a5b5ad",
    "master_source": "exec-3d67a125-a8fe-447f-96de-d84b92fe18ba.png",
    "flip_h": false,
-   "match_distance": 8.6
+   "match_distance": 8.6,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    31,
+    32,
+    97,
+    99
+   ],
+   "low_sha256": "7c4235dcd595faa310308357cfed0210317b8d34088e8fbd705e2c1983f1c0d9",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     31,
+     32,
+     66,
+     67
+    ],
+    "bottom_gap": 29,
+    "content_cx": 64.0
+   }
   },
   "furniture/F05__furniture__bedside_table__south__2x2__128x128.png": {
    "master": "furniture/bedside_chest_drawer/bedside_chest_drawer_04.png",
    "master_sha256": "99db912c08838df5f99efbf1e8c59258722d473e7e24efeba89abb31a4377418",
    "master_source": "exec-d7ecf6cf-6cdd-4e72-b09a-9309771126dd.png",
    "flip_h": false,
-   "match_distance": 7.1
+   "match_distance": 7.1,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    31,
+    31,
+    97,
+    103
+   ],
+   "low_sha256": "e8619aa5c6fb51b3236876597f783ffb0f36d46ebe9e292c1c6dbdb3c1168e88",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     31,
+     31,
+     66,
+     72
+    ],
+    "bottom_gap": 25,
+    "content_cx": 64.0
+   }
   },
   "furniture/F05__furniture__bedside_table__west__2x2__128x128.png": {
    "master": "furniture/bedside_chest_drawer/bedside_chest_drawer_02.png",
    "master_sha256": "7ca2cdc0a381bc8b6655447271eb3689d91ea78490d12251721dac59f3c741ec",
    "master_source": "exec-373b965e-00a8-4290-9757-d2ca854f1c6c.png",
    "flip_h": false,
-   "match_distance": 4.4
+   "match_distance": 4.4,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    22,
+    21,
+    110,
+    110
+   ],
+   "low_sha256": "075b418d79400ae936221b87b9e42c8308944c87b0b9b210350a9798137aba8c",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     22,
+     21,
+     88,
+     89
+    ],
+    "bottom_gap": 18,
+    "content_cx": 66.0
+   }
   },
   "furniture/F06__furniture__left_large_bookcase__east__1x4__128x256.png": {
    "master": "furniture/bookcase_small/bookcase_small_02.png",
    "master_sha256": "8b8d50963f89011c4ac06a498226778d7afa6ba7d47aeaf5c05f16fec98285fd",
    "master_source": "exec-dacc41ea-c66a-4b83-9a69-9c931e158c1a.png",
    "flip_h": false,
-   "match_distance": 10.5
+   "match_distance": 10.5,
+   "native_size": [
+    128,
+    256
+   ],
+   "visible_bbox": [
+    3,
+    163,
+    125,
+    213
+   ],
+   "low_sha256": "028b2221f6addf9ce752451044fdf22f6318691be49503e3d6caf9ae076c8d57",
+   "measure": {
+    "size": [
+     128,
+     256
+    ],
+    "content": [
+     3,
+     163,
+     122,
+     50
+    ],
+    "bottom_gap": 43,
+    "content_cx": 64.0
+   }
   },
   "furniture/F06__furniture__left_large_bookcase__north__4x1__256x128.png": {
    "master": "furniture/bookcase_large/bookcase_large_03.png",
    "master_sha256": "c1a6c3077d853cebe6a88dd29a55bc75a4937da7c1f8cdfd5137dee40432aefc",
    "master_source": "exec-d912db1e-e188-4fc7-a1d7-70cb114e28b2.png",
    "flip_h": false,
-   "match_distance": 4.7
+   "match_distance": 4.7,
+   "native_size": [
+    256,
+    128
+   ],
+   "visible_bbox": [
+    9,
+    23,
+    247,
+    116
+   ],
+   "low_sha256": "23de9d8bbb88dd45e3afabc3cd5ed9e993f4c79990e474d69f6893deb35c4e36",
+   "measure": {
+    "size": [
+     256,
+     128
+    ],
+    "content": [
+     9,
+     23,
+     238,
+     93
+    ],
+    "bottom_gap": 12,
+    "content_cx": 128.0
+   }
   },
   "furniture/F06__furniture__left_large_bookcase__south__4x1__256x128.png": {
    "master": "furniture/bookcase_large/bookcase_large_01.png",
    "master_sha256": "82c280cb7ab4fa7b58686434d255102e63f8a907aff602bb8404e4d58a5506a7",
    "master_source": "exec-4cd45f15-4ff2-45d6-b6d2-2f6966a86e46.png",
    "flip_h": false,
-   "match_distance": 6.2
+   "match_distance": 6.2,
+   "native_size": [
+    256,
+    128
+   ],
+   "visible_bbox": [
+    19,
+    19,
+    237,
+    108
+   ],
+   "low_sha256": "270e7b542d8d825a34b480d710c88acb9f0330fd758f51c832636a99bee72f29",
+   "measure": {
+    "size": [
+     256,
+     128
+    ],
+    "content": [
+     19,
+     19,
+     218,
+     89
+    ],
+    "bottom_gap": 20,
+    "content_cx": 128.0
+   }
   },
   "furniture/F06__furniture__left_large_bookcase__west__1x4__128x256.png": {
    "master": "furniture/bookcase_small/bookcase_small_03.png",
    "master_sha256": "f5237cb61e4c7464f0aae6b961f0f3a19971e9783531535dbc77e2644bc9313b",
    "master_source": "exec-f24cf10b-e25f-44bb-aaa5-ec5d4d498bb6.png",
    "flip_h": false,
-   "match_distance": 10.2
+   "match_distance": 10.2,
+   "native_size": [
+    128,
+    256
+   ],
+   "visible_bbox": [
+    5,
+    132,
+    123,
+    186
+   ],
+   "low_sha256": "d67aa0f288da5fd73ca7e2be5308fb0c6feccfb83fa832d91886b95166063603",
+   "measure": {
+    "size": [
+     128,
+     256
+    ],
+    "content": [
+     5,
+     132,
+     118,
+     54
+    ],
+    "bottom_gap": 70,
+    "content_cx": 64.0
+   }
   },
   "furniture/F07__furniture__right_large_bookcase__east__1x4__128x256.png": {
    "master": "furniture/bookcase_small/bookcase_small_01.png",
    "master_sha256": "a1552b9acaf7d287fbf728cb7249c29b726f0a20de836021ef9e98461e0f1b5c",
    "master_source": "exec-b946ac45-95b7-4073-bc32-39a1aebd80eb.png",
    "flip_h": false,
-   "match_distance": 13.3
+   "match_distance": 13.3,
+   "native_size": [
+    128,
+    256
+   ],
+   "visible_bbox": [
+    2,
+    112,
+    126,
+    163
+   ],
+   "low_sha256": "95a30e4deb366ee07b84ec0594028dabf962e5f9e6e56b11989a2a8aa9203f1a",
+   "measure": {
+    "size": [
+     128,
+     256
+    ],
+    "content": [
+     2,
+     112,
+     124,
+     51
+    ],
+    "bottom_gap": 93,
+    "content_cx": 64.0
+   }
   },
   "furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.png": {
    "master": "furniture/bookcase_large/bookcase_large_02.png",
    "master_sha256": "9feb1a0e9806ccaa2d8d88c825c6aa52e216dea33d32058c18cf9926fff2598b",
    "master_source": "exec-a2fe8af9-b2ba-46a0-9211-114e3ce5bd50.png",
    "flip_h": false,
-   "match_distance": 4.3
+   "match_distance": 4.3,
+   "native_size": [
+    256,
+    128
+   ],
+   "visible_bbox": [
+    13,
+    27,
+    243,
+    113
+   ],
+   "low_sha256": "258ad610d4ff2dfbc478f28b01649cdce8369d76c23b61ea949a9a5361222b1b",
+   "measure": {
+    "size": [
+     256,
+     128
+    ],
+    "content": [
+     13,
+     27,
+     230,
+     85
+    ],
+    "bottom_gap": 16,
+    "content_cx": 128.0
+   }
   },
   "furniture/F07__furniture__right_large_bookcase__south__4x1__256x128.png": {
    "master": "furniture/bookcase_armillary/bookcase_armillary_01.png",
    "master_sha256": "3696d717bc2658dcb3db9f01f8394cfea185613e291b09381f40c6347b102c28",
    "master_source": "exec-4028c54f-02f1-4f51-a064-4d9224aac528.png",
    "flip_h": false,
-   "match_distance": 3.7
+   "match_distance": 3.7,
+   "native_size": [
+    256,
+    128
+   ],
+   "visible_bbox": [
+    30,
+    10,
+    226,
+    117
+   ],
+   "low_sha256": "7f6bce1e7768306051face4bb228f1fee2d0383611b23fd71f2c4608abef429d",
+   "measure": {
+    "size": [
+     256,
+     128
+    ],
+    "content": [
+     30,
+     10,
+     196,
+     107
+    ],
+    "bottom_gap": 11,
+    "content_cx": 128.0
+   }
   },
   "furniture/F07__furniture__right_large_bookcase__west__1x4__128x256.png": {
    "master": "furniture/bookcase_armillary/bookcase_armillary_02.png",
    "master_sha256": "d4a798bdc10b20ead79943c2570ac8018dbc7304f5a3cf6900ee4557046d2c02",
    "master_source": "exec-fe68d41a-3ed5-4ee0-a244-138bfe4449ac.png",
    "flip_h": false,
-   "match_distance": 10.5
+   "match_distance": 10.5,
+   "native_size": [
+    128,
+    256
+   ],
+   "visible_bbox": [
+    9,
+    197,
+    121,
+    253
+   ],
+   "low_sha256": "882cf76f7593e6fbc2d54faf26677d62d24d1a7ca716be8dc0a8fba40eb548d1",
+   "measure": {
+    "size": [
+     128,
+     256
+    ],
+    "content": [
+     9,
+     197,
+     112,
+     56
+    ],
+    "bottom_gap": 3,
+    "content_cx": 65.0
+   }
   },
   "furniture/F08__furniture__large_dining_work_table__east__3x4__192x256.png": {
    "master": "furniture/table_small/table_small_02.png",
    "master_sha256": "44c70fbae4683d921a9d421aea3d79e842fe3c4b0593a6177e97bf5fa35c0a11",
    "master_source": "exec-fcd5074c-6006-433a-aa50-4948b803dfb0.png",
    "flip_h": false,
-   "match_distance": 3.0
+   "match_distance": 3.0,
+   "native_size": [
+    192,
+    256
+   ],
+   "visible_bbox": [
+    11,
+    129,
+    184,
+    223
+   ],
+   "low_sha256": "1e18780749633db821c9905e20b2036076f5e486b77b6fe377fa5c9cb063dab9",
+   "measure": {
+    "size": [
+     192,
+     256
+    ],
+    "content": [
+     11,
+     129,
+     173,
+     94
+    ],
+    "bottom_gap": 33,
+    "content_cx": 97.5
+   }
   },
   "furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.png": {
    "master": "furniture/table_large/table_large_02.png",
    "master_sha256": "5c75cd1c6eb9f513ccc306c2d97e67a6f38c6bd37e27d392a4144c2b74e70308",
    "master_source": "exec-ad3ae4fa-6bd6-40c5-bcb5-78eb9d3d2bdb.png",
    "flip_h": false,
-   "match_distance": 2.8
+   "match_distance": 2.8,
+   "native_size": [
+    256,
+    192
+   ],
+   "visible_bbox": [
+    7,
+    33,
+    250,
+    179
+   ],
+   "low_sha256": "491d33be2ac817abaac701013b7192a25ccbeb0d1e86b8de64a552db2c8031e2",
+   "measure": {
+    "size": [
+     256,
+     192
+    ],
+    "content": [
+     7,
+     33,
+     243,
+     146
+    ],
+    "bottom_gap": 13,
+    "content_cx": 128.5
+   }
   },
   "furniture/F08__furniture__large_dining_work_table__south__4x3__256x192.png": {
    "master": "furniture/table_large/table_large_01.png",
    "master_sha256": "5fc0c1cc51b6f54684e23cb584ef4b3c9cb21004f83e389c14aa3f1294589576",
    "master_source": "exec-644433ac-018e-4b7a-996c-018d044b62a2.png",
    "flip_h": false,
-   "match_distance": 2.3
+   "match_distance": 2.3,
+   "native_size": [
+    256,
+    192
+   ],
+   "visible_bbox": [
+    9,
+    51,
+    247,
+    173
+   ],
+   "low_sha256": "48ffb92f014f9639fc38e68b38e3ecd0d65e993a09a39bbe635a5a8edcfd6015",
+   "measure": {
+    "size": [
+     256,
+     192
+    ],
+    "content": [
+     9,
+     51,
+     238,
+     122
+    ],
+    "bottom_gap": 19,
+    "content_cx": 128.0
+   }
   },
   "furniture/F08__furniture__large_dining_work_table__west__3x4__192x256.png": {
    "master": "furniture/table_small/table_small_01.png",
    "master_sha256": "bd0021526cd2f2dc1f73e1b78175681f0e2b404b6341fa9e1c093733d6915d81",
    "master_source": "exec-1801b2d0-261b-4e88-8a0d-4590c1cd19f3.png",
    "flip_h": false,
-   "match_distance": 2.9
+   "match_distance": 2.9,
+   "native_size": [
+    192,
+    256
+   ],
+   "visible_bbox": [
+    3,
+    95,
+    189,
+    188
+   ],
+   "low_sha256": "fc8184303b14fcc0a3a3145b5b5a0b4ff55b329d8d79570924c5e403fe000081",
+   "measure": {
+    "size": [
+     192,
+     256
+    ],
+    "content": [
+     3,
+     95,
+     186,
+     93
+    ],
+    "bottom_gap": 68,
+    "content_cx": 96.0
+   }
   },
   "furniture/F09__furniture__bench_horizontal__east__1x2__64x128.png": {
    "master": "furniture/bench_blue_runner/bench_blue_runner_02.png",
    "master_sha256": "fb03699156389f3a93cc2bdd678a80021741253ce902caa866bde38c2cace07c",
    "master_source": "exec-467937df-b728-43a3-9eb2-a9b3496f3deb.png",
    "flip_h": false,
-   "match_distance": 17.8
+   "match_distance": 17.8,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    2,
+    55,
+    62,
+    85
+   ],
+   "low_sha256": "18b72bba1e05d3739118912515487552c2099b9fbe1669de8fc310a16eccf03b",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     2,
+     55,
+     60,
+     30
+    ],
+    "bottom_gap": 43,
+    "content_cx": 32.0
+   }
   },
   "furniture/F09__furniture__bench_horizontal__north__2x1__128x64.png": {
    "master": "furniture/bench_blue_runner/bench_blue_runner_03.png",
    "master_sha256": "d5553c9f86f8d0001191589378165be38a8744340c44851cfe852d2167065d57",
    "master_source": "exec-694aceac-7583-4cc0-b3a0-412155d4e765.png",
    "flip_h": false,
-   "match_distance": 11.3
+   "match_distance": 11.3,
+   "native_size": [
+    128,
+    64
+   ],
+   "visible_bbox": [
+    16,
+    24,
+    112,
+    53
+   ],
+   "low_sha256": "6147b6a043aea352fb3e47ccf6caaf3c3e4f8ce194c8849eb3f712c3a76e4f18",
+   "measure": {
+    "size": [
+     128,
+     64
+    ],
+    "content": [
+     16,
+     24,
+     96,
+     29
+    ],
+    "bottom_gap": 11,
+    "content_cx": 64.0
+   }
   },
   "furniture/F09__furniture__bench_horizontal__south__2x1__128x64.png": {
    "master": "furniture/bench_plain/bench_plain_01.png",
    "master_sha256": "079bfcb16dedfe449abb91fa78b380af26051373f411b34d7caa04e466e0b126",
    "master_source": "exec-d5d04737-05bf-4341-a633-f76ba55d98be.png",
    "flip_h": false,
-   "match_distance": 13.8
+   "match_distance": 13.8,
+   "native_size": [
+    128,
+    64
+   ],
+   "visible_bbox": [
+    16,
+    17,
+    112,
+    53
+   ],
+   "low_sha256": "cb5356114018c7b372aefe9ccf19bb596b70567a84d6bd0f6fa31f3dcc2ec1f3",
+   "measure": {
+    "size": [
+     128,
+     64
+    ],
+    "content": [
+     16,
+     17,
+     96,
+     36
+    ],
+    "bottom_gap": 11,
+    "content_cx": 64.0
+   }
   },
   "furniture/F09__furniture__bench_horizontal__west__1x2__64x128.png": {
    "master": "furniture/bench_blue_runner/bench_blue_runner_01.png",
    "master_sha256": "9355364c7315867ff79e72ac572d30e7b70c50d34da8142910944f1855f51671",
    "master_source": "exec-031b52a9-50a9-4145-9be1-82f7b9c5f065.png",
    "flip_h": false,
-   "match_distance": 16.8
+   "match_distance": 16.8,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    1,
+    79,
+    63,
+    108
+   ],
+   "low_sha256": "4cbbd04b510b28b03acd2dd20f69945d66e51110cb6b65332fc96bb32d3e4e06",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     1,
+     79,
+     62,
+     29
+    ],
+    "bottom_gap": 20,
+    "content_cx": 32.0
+   }
   },
   "furniture/F10__furniture__bench_vertical__east__1x2__64x128.png": {
    "master": "furniture/bench_side_blue/bench_side_blue_01.png",
    "master_sha256": "7ae56194e6b6050b20ab8383f9cec298c51e6309fbdb6b4bf4d85c90349ccbb6",
    "master_source": "exec-95486928-e39b-43fc-a493-5ac844bae4a4.png",
    "flip_h": false,
-   "match_distance": 13.4
+   "match_distance": 13.4,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    14,
+    16,
+    50,
+    121
+   ],
+   "low_sha256": "33b7821f36fc661e908338996c20f82fb4aa4acbbdfa10506e276921ee01452e",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     14,
+     16,
+     36,
+     105
+    ],
+    "bottom_gap": 7,
+    "content_cx": 32.0
+   }
   },
   "furniture/F10__furniture__bench_vertical__north__2x1__128x64.png": {
    "master": "furniture/bench_vertical/bench_vertical_01.png",
    "master_sha256": "267bf570e65405537c1b35ca4a7bdffaaa7892920cd91ceea03acd4fa780c1d2",
    "master_source": "exec-0aac3a82-836b-46de-826d-9bc2e2703b6e.png",
    "flip_h": false,
-   "match_distance": 17.7
+   "match_distance": 17.7,
+   "native_size": [
+    128,
+    64
+   ],
+   "visible_bbox": [
+    51,
+    6,
+    77,
+    59
+   ],
+   "low_sha256": "56262cac0b5e5e83f8a37ce8ffebdf884f4767e8d3b61041241721cf875b51b1",
+   "measure": {
+    "size": [
+     128,
+     64
+    ],
+    "content": [
+     51,
+     6,
+     26,
+     53
+    ],
+    "bottom_gap": 5,
+    "content_cx": 64.0
+   }
   },
   "furniture/F10__furniture__bench_vertical__south__2x1__128x64.png": {
    "master": "furniture/bench_blue_runner/bench_blue_runner_04.png",
    "master_sha256": "f04db853684a95031886e2fee69e543422e44674d91fb439dccced94adfd44d1",
    "master_source": "exec-d1e2c5bc-cdd7-4fdd-b6db-1f15645cc7b7.png",
    "flip_h": false,
-   "match_distance": 12.5
+   "match_distance": 12.5,
+   "native_size": [
+    128,
+    64
+   ],
+   "visible_bbox": [
+    12,
+    20,
+    116,
+    59
+   ],
+   "low_sha256": "c91f80150f860cb2bad6125e428a1d922bdb436951f5bdaef82b609bd41967f4",
+   "measure": {
+    "size": [
+     128,
+     64
+    ],
+    "content": [
+     12,
+     20,
+     104,
+     39
+    ],
+    "bottom_gap": 5,
+    "content_cx": 64.0
+   }
   },
   "furniture/F10__furniture__bench_vertical__west__1x2__64x128.png": {
    "master": "furniture/bench_side_wood/bench_side_wood_01.png",
    "master_sha256": "24baeaa4818d3c34fba22e39ff461de0c4e350aab398d6348b198c017764a2b1",
    "master_source": "exec-c786a643-e185-4b25-b1c1-e7d827fd6828.png",
    "flip_h": false,
-   "match_distance": 8.1
+   "match_distance": 8.1,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    13,
+    11,
+    51,
+    117
+   ],
+   "low_sha256": "1848d99d2376c55e0c5bef424646fa2b7c101d6fb87cac6afdf7bd6c4a5ee4aa",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     13,
+     11,
+     38,
+     106
+    ],
+    "bottom_gap": 11,
+    "content_cx": 32.0
+   }
   },
   "furniture/F11__furniture__small_wooden_crate__east__1x1__64x64.png": {
    "master": "furniture/crate/crate_06.png",
    "master_sha256": "86c6755757fbb711e86148c3339727fbcb6e052c94f9667429c22a9955fc2bdc",
    "master_source": "exec-e8f9fa5d-48ea-420d-8389-a2768d3d2c70.png",
    "flip_h": false,
-   "match_distance": 22.4
+   "match_distance": 22.4,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    16,
+    20,
+    48,
+    52
+   ],
+   "low_sha256": "abfe334281dee74b80987a36d7b97b6c02733e81d7103ffbeb263f4506cb043e",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     16,
+     20,
+     32,
+     32
+    ],
+    "bottom_gap": 12,
+    "content_cx": 32.0
+   }
   },
   "furniture/F11__furniture__small_wooden_crate__north__1x1__64x64.png": {
    "master": "furniture/crate/crate_03.png",
    "master_sha256": "d0296e106dee16e88a355ce2b372ac598f2ae6ade519c340ef51fe640e1e1664",
    "master_source": "exec-68b87a51-e8ca-4475-b120-a6a38b65abc5.png",
    "flip_h": false,
-   "match_distance": 23.0
+   "match_distance": 23.0,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    19,
+    21,
+    45,
+    48
+   ],
+   "low_sha256": "ebf57866a195e1e9298a86c9667e0db183923e324dfc4fa3487b202650c7fa44",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     19,
+     21,
+     26,
+     27
+    ],
+    "bottom_gap": 16,
+    "content_cx": 32.0
+   }
   },
   "furniture/F11__furniture__small_wooden_crate__south__1x1__64x64.png": {
    "master": "furniture/crate/crate_08.png",
    "master_sha256": "ee7894e040644205e08656858a5106c613303a89ba93cc63cdd03dfd4719cefa",
    "master_source": "exec-fa42b3d5-ea17-4480-8596-4c3b914505e3.png",
    "flip_h": false,
-   "match_distance": 21.4
+   "match_distance": 21.4,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    16,
+    17,
+    48,
+    50
+   ],
+   "low_sha256": "0b5a50890696c99c3e0f268128c8a7dcfca3b5537e0dbc83c04a93f51e842376",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     16,
+     17,
+     32,
+     33
+    ],
+    "bottom_gap": 14,
+    "content_cx": 32.0
+   }
   },
   "furniture/F11__furniture__small_wooden_crate__west__1x1__64x64.png": {
    "master": "furniture/crate/crate_05.png",
    "master_sha256": "b828c5e3def25f0f0dddeba87663610e2c3c799ecdf2c811c9cdf877294e5830",
    "master_source": "exec-a4b1099a-6377-4293-9d63-89b23925963e.png",
    "flip_h": false,
-   "match_distance": 18.4
+   "match_distance": 18.4,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    15,
+    18,
+    50,
+    50
+   ],
+   "low_sha256": "3533ae0da48a149877285ceac8eff6da8269fae90e31bf5708571874e3c5ff2e",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     15,
+     18,
+     35,
+     32
+    ],
+    "bottom_gap": 14,
+    "content_cx": 32.5
+   }
   },
   "furniture/F12__furniture__medium_wooden_crate__east__2x2__128x128.png": {
    "master": "furniture/crate/crate_04.png",
    "master_sha256": "8b48ab855248c436444829d1ec8c7d579795f35b29f35e0cb0fd8863fb65d784",
    "master_source": "exec-8e1a9432-0fc8-416c-9030-ad9430896c2b.png",
    "flip_h": false,
-   "match_distance": 3.6
+   "match_distance": 3.6,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    15,
+    27,
+    113,
+    122
+   ],
+   "low_sha256": "9e9f0a30ed1a562c4b2b3a3a05ac02376ff87e8982383e4e7f06d0986c5070e7",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     15,
+     27,
+     98,
+     95
+    ],
+    "bottom_gap": 6,
+    "content_cx": 64.0
+   }
   },
   "furniture/F12__furniture__medium_wooden_crate__north__2x2__128x128.png": {
    "master": "furniture/crate/crate_02.png",
    "master_sha256": "bd8ed61e6fa3daa4834291c24eda828315a9056fbe714860c7bbeab89ab77f24",
    "master_source": "exec-56a7839d-bcc1-4f4b-af2f-9e5430b5f957.png",
    "flip_h": false,
-   "match_distance": 4.9
+   "match_distance": 4.9,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    22,
+    25,
+    106,
+    120
+   ],
+   "low_sha256": "ef83f0fec380787e6630bac7fd0cffa55a2211745eebbc5b350a9b0b99841dfb",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     22,
+     25,
+     84,
+     95
+    ],
+    "bottom_gap": 8,
+    "content_cx": 64.0
+   }
   },
   "furniture/F12__furniture__medium_wooden_crate__south__2x2__128x128.png": {
    "master": "furniture/crate/crate_01.png",
    "master_sha256": "9e8a896fa20f86665597e1557ace10a9ba05bcd9152b81e1e332035efa5b8098",
    "master_source": "exec-1defb2a4-51e5-456c-911c-b6ecdaed3da9.png",
    "flip_h": false,
-   "match_distance": 7.7
+   "match_distance": 7.7,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    31,
+    33,
+    97,
+    107
+   ],
+   "low_sha256": "ccf7d89a4cf06e8355241a4ac4d628d989a14e3785855aaee5c050f5d1fbd691",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     31,
+     33,
+     66,
+     74
+    ],
+    "bottom_gap": 21,
+    "content_cx": 64.0
+   }
   },
   "furniture/F12__furniture__medium_wooden_crate__west__2x2__128x128.png": {
    "master": "furniture/crate/crate_07.png",
    "master_sha256": "2a6f49c42b4d3cdebbbb070efbc9eeb9295439e94e8b612beadddc83d2fa1168",
    "master_source": "exec-f2c4249a-dd66-4b6f-9638-3e12e2255704.png",
    "flip_h": false,
-   "match_distance": 6.2
+   "match_distance": 6.2,
+   "native_size": [
+    128,
+    128
+   ],
+   "visible_bbox": [
+    22,
+    40,
+    106,
+    122
+   ],
+   "low_sha256": "9054efcd3ad65bd812968fbe32793c6ff17b343fdb7ce893550770084900e018",
+   "measure": {
+    "size": [
+     128,
+     128
+    ],
+    "content": [
+     22,
+     40,
+     84,
+     82
+    ],
+    "bottom_gap": 6,
+    "content_cx": 64.0
+   }
   },
   "lighting/L01__lighting__hanging_wall_lantern__default__1x1__64x64.png": {
    "master": "lighting/wall_lantern/wall_lantern_01.png",
    "master_sha256": "f54d8eeba8c9ebfadf1af546c1e5c424752db0fff62fde86ee34c4287dd77a8a",
    "master_source": "exec-0a020c78-0537-4635-adde-3e6ea2002a25.png",
    "flip_h": false,
-   "match_distance": 17.8
+   "match_distance": 17.8,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    17,
+    7,
+    45,
+    57
+   ],
+   "low_sha256": "1723f825b9ddc39daefdce69199ca4a875a0f5576049515ccad0f846a778aecd",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     17,
+     7,
+     28,
+     50
+    ],
+    "bottom_gap": 7,
+    "content_cx": 31.0
+   }
   },
   "lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png": {
    "master": "lighting/wall_lantern/wall_lantern_02.png",
    "master_sha256": "8d3e1d681efa3fe200ebef0d243a9df3c80564a770e5b65fb8422a31b730631b",
    "master_source": "exec-32632f93-8dc2-4d4a-b47b-46a870a30342.png",
    "flip_h": false,
-   "match_distance": 13.1
+   "match_distance": 13.1,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    18,
+    7,
+    45,
+    57
+   ],
+   "low_sha256": "37804dde9d359f26d63bc8a78d1ff3d666bfcff39101bb2b025fffeeb4726a73",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     18,
+     7,
+     27,
+     50
+    ],
+    "bottom_gap": 7,
+    "content_cx": 31.5
+   }
   },
   "lighting/L03__lighting__candle_cluster__default__1x1__64x64.png": {
    "master": "lighting/candle_cluster/candle_cluster_01.png",
    "master_sha256": "8ce1380b7d50db9140eb328ad26f1248af1ccbb4524678cd610551f938897f19",
    "master_source": "exec-1bfef93e-557a-45cf-be7b-b9da111895c1.png",
    "flip_h": false,
-   "match_distance": 14.1
+   "match_distance": 14.1,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    12,
+    11,
+    52,
+    54
+   ],
+   "low_sha256": "3630e7125d81eb58bbf82cffacabbec31374232cb2f05076347efc2c2af8fa49",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     12,
+     11,
+     40,
+     43
+    ],
+    "bottom_gap": 10,
+    "content_cx": 32.0
+   }
   },
   "lighting/L04__lighting__table_lantern__default__1x1__64x64.png": {
    "master": "lighting/wall_lantern/wall_lantern_03.png",
    "master_sha256": "c5065468c2e63c0d19d32ff5463d2726771a40070e2e06c2a3fadb5685a3b468",
    "master_source": "exec-58ef9a86-bbb2-4656-a734-e0d9235afcc4.png",
    "flip_h": false,
-   "match_distance": 15.3
+   "match_distance": 15.3,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    19,
+    7,
+    45,
+    59
+   ],
+   "low_sha256": "078975c5a608b16e904572aaace990996eefe3a35b82d9707cbea0e9ceefb186",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     19,
+     7,
+     26,
+     52
+    ],
+    "bottom_gap": 5,
+    "content_cx": 32.0
+   }
   },
   "lighting/L05__lighting__small_flame_glow_overlay__default__1x1__64x64.png": {
    "master": "lighting/flame/flame_01.png",
    "master_sha256": "19a0b1b6873f5ecb54d363e29c2ea3da5a382aebb07d9ee8404548777cb368a3",
    "master_source": "exec-bb9f74e0-eaee-47d6-93db-b980df5102e1.png",
    "flip_h": false,
-   "match_distance": 6.3
+   "match_distance": 6.3,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    22,
+    15,
+    44,
+    53
+   ],
+   "low_sha256": "7ded2268505d3689248e198af01b78f50b06903fe3c639e6afa3114a1af00681",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     22,
+     15,
+     22,
+     38
+    ],
+    "bottom_gap": 11,
+    "content_cx": 33.0
+   }
   },
   "plants/P01__plants__ivy_hanging_short__default__1x1__64x64.png": {
    "master": "plants/ivy_hanging/ivy_hanging_05.png",
    "master_sha256": "9333457dc461a23e57b80fb8a3407388b07c4aec24fe1ae712c05587b498badb",
    "master_source": "exec-b9b8c34c-8b3a-4f27-bd2b-4dd8b14bef0f.png",
    "flip_h": false,
-   "match_distance": 8.1
+   "match_distance": 8.1,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    10,
+    5,
+    54,
+    62
+   ],
+   "low_sha256": "90935cf79c1dc6156c93bc3c4ae4ba6d6fd2a4fdd973802c5f2599ca58f957c7",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     10,
+     5,
+     44,
+     57
+    ],
+    "bottom_gap": 2,
+    "content_cx": 32.0
+   }
   },
   "plants/P02__plants__ivy_hanging_medium__default__1x1__64x64.png": {
    "master": "plants/ivy_hanging/ivy_hanging_01.png",
    "master_sha256": "50fb7be8b65ae948ac3a2ba2f6bb8946ff3a31520a6ea52d353ecba4d7166aa2",
    "master_source": "exec-15d78d47-b4d1-4aa0-8945-6fce14df6c61.png",
    "flip_h": false,
-   "match_distance": 10.9
+   "match_distance": 10.9,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    13,
+    6,
+    51,
+    58
+   ],
+   "low_sha256": "50b482bfc24da74b56fc6723cae5cda937892925e8e9181139bee1a8326ddd27",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     13,
+     6,
+     38,
+     52
+    ],
+    "bottom_gap": 6,
+    "content_cx": 32.0
+   }
   },
   "plants/P03__plants__ivy_hanging_long__default__1x1__64x128.png": {
    "master": "plants/ivy_hanging/ivy_hanging_03.png",
    "master_sha256": "58bb48c252b7b3399b89f1bd0eeb74af1ecba750a98704d027c3c19e5a5c9eae",
    "master_source": "exec-a7bc62a9-2ed3-452d-aa01-54670825b7a9.png",
    "flip_h": false,
-   "match_distance": 7.6
+   "match_distance": 7.6,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    12,
+    7,
+    54,
+    124
+   ],
+   "low_sha256": "d1f5b540829d43ddebb100adbe6146fb2294aabf3751d05dc3c565443ec680eb",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     12,
+     7,
+     42,
+     117
+    ],
+    "bottom_gap": 4,
+    "content_cx": 33.0
+   }
   },
   "plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png": {
    "master": "plants/flowers_white/flowers_white_02.png",
    "master_sha256": "ff260e4d8e20fb08f0d0c1ff63850ad9b16fdbcd838045461e42415419e7dfe7",
    "master_source": "exec-1719a859-b016-4baa-ac51-b8039eea5154.png",
    "flip_h": false,
-   "match_distance": 17.1
+   "match_distance": 17.1,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    8,
+    19,
+    58,
+    52
+   ],
+   "low_sha256": "7e258c57bd993d24686a0a16dab5ff2790cd5e160813d4aaff4144ea726c837d",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     8,
+     19,
+     50,
+     33
+    ],
+    "bottom_gap": 12,
+    "content_cx": 33.0
+   }
   },
   "plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png": {
    "master": "plants/flowers_white/flowers_white_01.png",
    "master_sha256": "98a2b1ed4d455c6b4c1bb3d41f62010fc51bd6c2a610794253dac07094ca3ba0",
    "master_source": "exec-155da9ed-712b-4e11-bedf-cf0dc4f66b17.png",
    "flip_h": false,
-   "match_distance": 12.9
+   "match_distance": 12.9,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    3,
+    15,
+    61,
+    56
+   ],
+   "low_sha256": "2e41bd0f3e91848b976f95976cd1cec0e5aabcb8b202c18c0999d708b642b95a",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     3,
+     15,
+     58,
+     41
+    ],
+    "bottom_gap": 8,
+    "content_cx": 32.0
+   }
   },
   "plants/P06__plants__blue_flower_cluster_small__default__1x1__64x64.png": {
    "master": "plants/flowers_blue/flowers_blue_01.png",
    "master_sha256": "02e8548b797b0a5496122ce318b65b545a8c612a0077e0f9bcb3f21ec7ed84c5",
    "master_source": "exec-384478bf-513f-49f7-915d-a66baa1f2388.png",
    "flip_h": false,
-   "match_distance": 13.3
+   "match_distance": 13.3,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    4,
+    28,
+    60,
+    61
+   ],
+   "low_sha256": "16129d9c33498b7017f960011249633ae2afc8fce98df1bba501a208339b2cda",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     4,
+     28,
+     56,
+     33
+    ],
+    "bottom_gap": 3,
+    "content_cx": 32.0
+   }
   },
   "plants/P07__plants__green_bush_small__default__1x1__64x64.png": {
    "master": "plants/flowers_white/flowers_white_04.png",
    "master_sha256": "1db91d5ed42841c355c6a9506b9b7129abb52fb2a56b8eb02e989e09fbcdb6a2",
    "master_source": "exec-68fa3861-6a81-4cb1-8f67-f6cd7f69a1c6.png",
    "flip_h": false,
-   "match_distance": 13.9
+   "match_distance": 13.9,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    6,
+    15,
+    57,
+    54
+   ],
+   "low_sha256": "96f8913e7eae51222e2bc91f636c04e332c38626f354fa268d1b71f7ac71f834",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     6,
+     15,
+     51,
+     39
+    ],
+    "bottom_gap": 10,
+    "content_cx": 31.5
+   }
   },
   "plants/P08__plants__green_bush_medium__default__1x1__64x64.png": {
    "master": "plants/flowers_white/flowers_white_08.png",
    "master_sha256": "3e04d802f86ccfbb1ce88398caa33f770cce4300656cc050ddacbd5a79788682",
    "master_source": "exec-ac03dbdf-985d-495c-bae6-9dca9b629cb5.png",
    "flip_h": false,
-   "match_distance": 16.0
+   "match_distance": 16.0,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    11,
+    12,
+    55,
+    53
+   ],
+   "low_sha256": "227524bf2ce2bed53445dc4122aa844bbd3092532e3bd75c4110736e3e89c409",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     11,
+     12,
+     44,
+     41
+    ],
+    "bottom_gap": 11,
+    "content_cx": 33.0
+   }
   },
   "plants/P09__plants__tropical_leaf_plant_small__default__1x1__64x64.png": {
    "master": "plants/flowers_white/flowers_white_07.png",
    "master_sha256": "01cfeed0506ec0e35d201b405c3525f858e98ef4e66aebb6d89ead845f541d81",
    "master_source": "exec-a7e22ed8-3c45-418e-8e47-19dd521d7450.png",
    "flip_h": false,
-   "match_distance": 10.9
+   "match_distance": 10.9,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    7,
+    15,
+    59,
+    62
+   ],
+   "low_sha256": "483d27b23a9f0d438f8bc4e3ef51609e27f1e99189cf57d6ee37c36e500ea258",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     7,
+     15,
+     52,
+     47
+    ],
+    "bottom_gap": 2,
+    "content_cx": 33.0
+   }
   },
   "plants/P10__plants__tropical_leaf_plant_medium__default__1x1__64x64.png": {
    "master": "plants/flowers_white/flowers_white_05.png",
    "master_sha256": "0d843add2b9ad47becdcf0846d39939834156a1060895a5bcbed5a328e563ae6",
    "master_source": "exec-8ac3c62e-f1c2-442c-99e8-6dcf414aeb1e.png",
    "flip_h": false,
-   "match_distance": 12.0
+   "match_distance": 12.0,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    4,
+    6,
+    61,
+    59
+   ],
+   "low_sha256": "e35531fa0a0ba8ea30837ccabf8b36985f2c9e05ab2c0dd0b9822ea703a0dd7f",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     4,
+     6,
+     57,
+     53
+    ],
+    "bottom_gap": 5,
+    "content_cx": 32.5
+   }
   },
   "plants/P11__plants__potted_blue_gold_ceramic_plant__default__1x1__64x64.png": {
    "master": "plants/flowers_white/flowers_white_06.png",
    "master_sha256": "59ac3e467a9d3593037e0b78963cdb3ba2f2c01b136a08d148418d031621c78b",
    "master_source": "exec-93927f1f-6731-4d4a-a2a7-14ad170f0699.png",
    "flip_h": false,
-   "match_distance": 9.5
+   "match_distance": 9.5,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    3,
+    3,
+    63,
+    62
+   ],
+   "low_sha256": "0d8ff9d8f98f2135f92cb1baacfb7596cec39b83b0d714a691a777f2c63afb74",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     3,
+     3,
+     60,
+     59
+    ],
+    "bottom_gap": 2,
+    "content_cx": 33.0
+   }
   },
   "plants/P12__plants__floral_wall_growth_left__default__1x1__64x64.png": {
    "master": "plants/ivy_hanging/ivy_hanging_02.png",
    "master_sha256": "4f4e2b67afc1d51d0bf4810d6c6d52ff9c7463e2164daf613b2caf13fa75c41a",
    "master_source": "exec-29c6aabf-8124-4a5d-8e1b-39c43b01f6d4.png",
    "flip_h": false,
-   "match_distance": 9.7
+   "match_distance": 9.7,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    5,
+    6,
+    50,
+    63
+   ],
+   "low_sha256": "0c538b4094f57bec01a7bc3250fe96980081abe9c7fee83bfbb1a215a586105f",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     5,
+     6,
+     45,
+     57
+    ],
+    "bottom_gap": 1,
+    "content_cx": 27.5
+   }
   },
   "plants/P13__plants__floral_wall_growth_right__default__1x1__64x64.png": {
    "master": "plants/ivy_hanging/ivy_hanging_04.png",
    "master_sha256": "90857108d748633e3920c3855f81b9370fdcae0b68999e749bfbd8d231da5aa0",
    "master_source": "exec-ad48de50-1238-4269-8d70-9d20457bd72c.png",
    "flip_h": false,
-   "match_distance": 9.2
+   "match_distance": 9.2,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    9,
+    0,
+    57,
+    63
+   ],
+   "low_sha256": "68cfe78ac5941fbf0b622dd5b6ad54ab816840e4435479cb57ad50fd65a51dfc",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     9,
+     0,
+     48,
+     63
+    ],
+    "bottom_gap": 1,
+    "content_cx": 33.0
+   }
   },
   "plants/P14__plants__ground_flower_patch_mixed__default__1x1__64x64.png": {
    "master": "plants/flowers_white/flowers_white_03.png",
    "master_sha256": "c93e0fd8a419a88173c51ce025dd708b12793641e1c5c219649d4307b4ad1fd3",
    "master_source": "exec-4b8ca93c-4447-4a32-8827-eaf99ccc1c21.png",
    "flip_h": false,
-   "match_distance": 12.0
+   "match_distance": 12.0,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    2,
+    18,
+    62,
+    58
+   ],
+   "low_sha256": "c10840c0a5dba5c34432e4ef778bda09e5c1130ade69d5c6db52fe52b31cefd7",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     3,
+     18,
+     59,
+     40
+    ],
+    "bottom_gap": 6,
+    "content_cx": 32.5
+   }
   },
   "props/R01__props__blue_gold_ceramic_vase_small__default__1x1__64x64.png": {
    "master": "props/vase_blue/vase_blue_04.png",
    "master_sha256": "2922126b17d0e573169a596457034ecf3535e80132a4b6d0eb276d943243880c",
    "master_source": "exec-8aa4b35c-eed0-4528-b28e-95bc7355d64d.png",
    "flip_h": false,
-   "match_distance": 17.4
+   "match_distance": 17.4,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    17,
+    17,
+    47,
+    59
+   ],
+   "low_sha256": "e53ffc794f0de090312951fd5d2fc186350362e08bf545b21338f6431ed2ff90",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     17,
+     17,
+     30,
+     42
+    ],
+    "bottom_gap": 5,
+    "content_cx": 32.0
+   }
   },
   "props/R02__props__blue_gold_ceramic_vase_large__default__1x1__64x64.png": {
    "master": "props/vase_blue/vase_blue_03.png",
    "master_sha256": "3e8083f3554a0f5d80f4972cde8c389f18ac732ea91c347d20e2c199cc199150",
    "master_source": "exec-5bf1fa33-c33c-400a-83dd-25740bcce9aa.png",
    "flip_h": false,
-   "match_distance": 14.0
+   "match_distance": 14.0,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    14,
+    10,
+    50,
+    58
+   ],
+   "low_sha256": "4687c6a4b70a88af3c61cfc841dc17f8312b4e19cec9aba8223bc9872e09b776",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     14,
+     10,
+     36,
+     48
+    ],
+    "bottom_gap": 6,
+    "content_cx": 32.0
+   }
   },
   "props/R03__props__decorative_pot_small__default__1x1__64x64.png": {
    "master": "props/vase_blue/vase_blue_02.png",
    "master_sha256": "7233f6bfed55cf5f24af91532ddf02da3123558e85c09290596c2dc94175103b",
    "master_source": "exec-588936e1-70fd-455a-bd38-cd804df229e6.png",
    "flip_h": false,
-   "match_distance": 34.5
+   "match_distance": 34.5,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    21,
+    22,
+    43,
+    49
+   ],
+   "low_sha256": "3fa31f1aebc003cdb846c41859d643ce6a671e0139df60cb2d6e1045f3b6245d",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     21,
+     22,
+     22,
+     27
+    ],
+    "bottom_gap": 15,
+    "content_cx": 32.0
+   }
   },
   "props/R04__props__decorative_pot_medium__default__1x1__64x64.png": {
    "master": "props/vase_blue/vase_blue_01.png",
    "master_sha256": "83573d82c8e627561b28511c4348469333689df126cd05928232d63af99fbf3a",
    "master_source": "exec-14227ef2-634e-4eb6-9f01-f2c731ee4d48.png",
    "flip_h": false,
-   "match_distance": 21.4
+   "match_distance": 21.4,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    17,
+    14,
+    47,
+    54
+   ],
+   "low_sha256": "2f90f1cfa2e81fd565e8910d412bb03f79852523026a110be4ea398cd2d8f73c",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     17,
+     14,
+     30,
+     40
+    ],
+    "bottom_gap": 10,
+    "content_cx": 32.0
+   }
   },
   "props/R05__props__scroll_bundle__default__1x1__64x64.png": {
    "master": "props/scroll/scroll_01.png",
    "master_sha256": "4b78d6a0e9575aecee4d0550b84af6c780609936a0f2e62153cf6d6963a4fa29",
    "master_source": "exec-362f7b5f-9b47-41c3-a00d-ed365db3e8c9.png",
    "flip_h": false,
-   "match_distance": 16.2
+   "match_distance": 16.2,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    7,
+    17,
+    58,
+    52
+   ],
+   "low_sha256": "77fac0ef3d69ad4d9505c0cbb7e0d0078ca4109a03fda0d1c6dea648436ef198",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     7,
+     17,
+     51,
+     35
+    ],
+    "bottom_gap": 12,
+    "content_cx": 32.5
+   }
   },
   "props/R06__props__open_book__default__1x1__64x64.png": {
    "master": "props/open_book/open_book_01.png",
    "master_sha256": "b42e8379ff75ce9a16d96b68f4bf0d304e9b4ed6b4730db7b837684b0d3b5ad3",
    "master_source": "exec-074ed3d2-f09a-4b7f-af9b-e2a606ec3984.png",
    "flip_h": false,
-   "match_distance": 18.5
+   "match_distance": 18.5,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    7,
+    30,
+    58,
+    61
+   ],
+   "low_sha256": "3a3c3eb2d5e7a09c262aa8c5fd8d4969aa69f78af301391cdc567d380b1618d9",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     7,
+     30,
+     51,
+     31
+    ],
+    "bottom_gap": 3,
+    "content_cx": 32.5
+   }
   },
   "props/R07__props__closed_book_stack__default__1x1__64x64.png": {
    "master": "props/books_stack_blue/books_stack_blue_01.png",
    "master_sha256": "664043c11a0fd440d65ab26086df0c471dd4b9131a29d39d8414e6b19d9e31d3",
    "master_source": "exec-7f0274d6-8c73-4460-99a1-2628043ed4e2.png",
    "flip_h": false,
-   "match_distance": 16.4
+   "match_distance": 16.4,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    11,
+    15,
+    54,
+    59
+   ],
+   "low_sha256": "f7e74dcb45ad0e6ad342d6f980250e144384c6ea3bfb67b32ade3e1bf726a089",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     11,
+     15,
+     43,
+     44
+    ],
+    "bottom_gap": 5,
+    "content_cx": 32.5
+   }
   },
   "props/R08__props__rolled_map__default__1x1__64x64.png": {
    "master": "props/scroll/scroll_02.png",
    "master_sha256": "b2c2ebee4f5d6e384ee5794d3c8f098b10f7e3ffaacf567acdeef65fa4f91e34",
    "master_source": "exec-98115270-f51f-4c4b-89ba-2cee963dccfd.png",
    "flip_h": false,
-   "match_distance": 16.0
+   "match_distance": 16.0,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    7,
+    20,
+    57,
+    49
+   ],
+   "low_sha256": "07d1cb7b456e09d2fbd17e72217f3b1eedc4f92839da5608711a96d27dbfe8af",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     7,
+     20,
+     50,
+     29
+    ],
+    "bottom_gap": 15,
+    "content_cx": 32.0
+   }
   },
   "props/R09__props__open_map_on_table__default__1x1__64x64.png": {
    "master": "props/open_map/open_map_01.png",
    "master_sha256": "6e8904d79ea7bfed46b68fbb26aeeff2cb3db876f33f80099e248dd5ed59f9ad",
    "master_source": "exec-22196225-a9f2-412b-bbf2-b4b6cac37a71.png",
    "flip_h": false,
-   "match_distance": 15.6
+   "match_distance": 15.6,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    5,
+    25,
+    62,
+    61
+   ],
+   "low_sha256": "31ee831e62d4dcfdb175ee25daa248946fb90a2dabefdc82138ede7973b4607c",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     5,
+     25,
+     57,
+     36
+    ],
+    "bottom_gap": 3,
+    "content_cx": 33.5
+   }
   },
   "props/R10__props__fruit_bowl__default__1x1__64x64.png": {
    "master": "props/fruit_bowl/fruit_bowl_01.png",
    "master_sha256": "bdefbe5c7ab37c76aa8c1721206081a332d7e2f9f910f1fa9ff741748c1ea23e",
    "master_source": "exec-c70caf62-c3a4-4a0f-be65-49f0393e4f42.png",
    "flip_h": false,
-   "match_distance": 11.6
+   "match_distance": 11.6,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    5,
+    12,
+    59,
+    60
+   ],
+   "low_sha256": "96b7e3274da23228a216dae58bc552a4e301766feb87783c0ce212c1a842331e",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     5,
+     12,
+     54,
+     48
+    ],
+    "bottom_gap": 4,
+    "content_cx": 32.0
+   }
   },
   "props/R11__props__white_jug__default__1x1__64x64.png": {
    "master": "props/jug_white/jug_white_01.png",
    "master_sha256": "5c2a4bd2c1a1bb36bb31c2947593163e2ee7ba76c34c4d6e16b0ef313abe694d",
    "master_source": "exec-46d85f18-4ee9-4a7f-a16e-111a146dd868.png",
    "flip_h": false,
-   "match_distance": 10.6
+   "match_distance": 10.6,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    16,
+    12,
+    54,
+    55
+   ],
+   "low_sha256": "f70a7cf0d288739146f82b7fbbd1d9b741250303d822cef883202ddae7803089",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     16,
+     12,
+     38,
+     43
+    ],
+    "bottom_gap": 9,
+    "content_cx": 35.0
+   }
   },
   "props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png": {
    "master": "props/armillary_sphere/armillary_sphere_01.png",
    "master_sha256": "8134e594597d60b0c984dcd9338e04583f68a3bc9f1146f61b90ae7f1aa3eb11",
    "master_source": "exec-9e38b936-df04-4a35-bb19-a4c3a99ddeea.png",
    "flip_h": false,
-   "match_distance": 11.0
+   "match_distance": 11.0,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    10,
+    2,
+    54,
+    62
+   ],
+   "low_sha256": "add6b424eb28f3fa10fc0f987891c282359164033182a196d46d498b3fd3a731",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     10,
+     2,
+     44,
+     60
+    ],
+    "bottom_gap": 2,
+    "content_cx": 32.0
+   }
   },
   "props/R13__props__conch_shell__default__1x1__64x64.png": {
    "master": "props/shell_conch/shell_conch_01.png",
    "master_sha256": "6bcd49058145625e9ed40ec50658f55ff4717535eddf2c5e3d7e1f4a79365ed0",
    "master_source": "exec-aac9d3f0-816f-44a6-8c84-11a4946b3f48.png",
    "flip_h": false,
-   "match_distance": 9.2
+   "match_distance": 9.2,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    8,
+    14,
+    57,
+    53
+   ],
+   "low_sha256": "afbd6bd838b4669dd23cc1efe83f46b9fd134c1c6688c277a0067396d400dfa4",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     8,
+     14,
+     49,
+     39
+    ],
+    "bottom_gap": 11,
+    "content_cx": 32.5
+   }
   },
   "props/R14__props__starfish_coral_decorative_piece__default__1x1__64x64.png": {
    "master": "props/starfish_coral/starfish_coral_01.png",
    "master_sha256": "63ce3120728a732380c8461217e3d0c428b04d6eeb240ed3f6e91d8e6248417e",
    "master_source": "exec-f307d865-6052-49e9-9fad-43194a2b1ef5.png",
    "flip_h": false,
-   "match_distance": 10.1
+   "match_distance": 10.1,
+   "native_size": [
+    64,
+    64
+   ],
+   "visible_bbox": [
+    7,
+    11,
+    59,
+    57
+   ],
+   "low_sha256": "023ef39f963e6f34462b22ce3ba32047d7d58a6ad8084a7e8854d6cf7eea6563",
+   "measure": {
+    "size": [
+     64,
+     64
+    ],
+    "content": [
+     7,
+     11,
+     52,
+     46
+    ],
+    "bottom_gap": 7,
+    "content_cx": 33.0
+   }
   },
   "wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png": {
    "master": "architecture/stone_block/stone_block_02.png",
    "master_sha256": "92b2e723159983e2c674d2bf746445c6299826d22aca9242e45f3991b2da8168",
    "master_source": "exec-14958d53-23c6-463b-88eb-042175bd7f16.png",
    "flip_h": false,
-   "match_distance": 2.8
+   "match_distance": 2.8,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    2,
+    39,
+    62,
+    128
+   ],
+   "low_sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     2,
+     39,
+     60,
+     89
+    ],
+    "bottom_gap": 0,
+    "content_cx": 32.0
+   }
   },
   "wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png": {
    "master": "architecture/stone_block/stone_block_05.png",
    "master_sha256": "9ca84822ee2e64c4c5c4aea8f2867a2b73ac34ad77d2f1c8673300148994e799",
    "master_source": "exec-ee2aea30-816e-4eac-bc39-13ec4b00e4b6.png",
    "flip_h": false,
-   "match_distance": 4.8
+   "match_distance": 4.8,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    5,
+    20,
+    59,
+    125
+   ],
+   "low_sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     5,
+     20,
+     54,
+     105
+    ],
+    "bottom_gap": 3,
+    "content_cx": 32.0
+   }
   },
   "wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.png": {
    "master": "architecture/column_ivy/column_ivy_03.png",
    "master_sha256": "af46f022217b1d1596bb5fbbc3c61e8a8a0631a15a0070372f3eae671fab557f",
    "master_source": "exec-32c1e5ad-a38d-417f-b68b-a0edd5578af8.png",
    "flip_h": false,
-   "match_distance": 7.3
+   "match_distance": 7.3,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    4,
+    16,
+    61,
+    120
+   ],
+   "low_sha256": "5e35c9d7bb7dbf1e74d17ff8a525cc1c21313c66277b6b16a3980b04ea3c282e",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     4,
+     16,
+     57,
+     104
+    ],
+    "bottom_gap": 8,
+    "content_cx": 32.5
+   }
   },
   "wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.png": {
    "master": "architecture/column_ivy/column_ivy_01.png",
    "master_sha256": "b43398d00a996c8ea4a2c03bdcfc8a83cacfb9e89f2120cd6b039e6423a5019c",
    "master_source": "exec-1baf7f4c-26fa-41d7-a7e9-150da2049afc.png",
    "flip_h": false,
-   "match_distance": 7.3
+   "match_distance": 7.3,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    2,
+    20,
+    63,
+    120
+   ],
+   "low_sha256": "48497b476a14603dcc24a99b3c0fca9241d8d20c0d52b1fcaa72e3c3d12ae7c5",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     2,
+     20,
+     61,
+     100
+    ],
+    "bottom_gap": 8,
+    "content_cx": 32.5
+   }
   },
   "wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.png": {
    "master": "architecture/column_ivy/column_ivy_04.png",
    "master_sha256": "c6834fe436d0ada5044d095474ec49ab0a349af5785c7f3e939cc4ebbba3d36f",
    "master_source": "exec-46c7f62c-682a-4bc4-aca5-999a36851c0e.png",
    "flip_h": false,
-   "match_distance": 5.5
+   "match_distance": 5.5,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    1,
+    6,
+    64,
+    125
+   ],
+   "low_sha256": "9795a76879b20a18027014b172947ff8146043351f2843cd852deff1b53978e4",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     1,
+     6,
+     63,
+     119
+    ],
+    "bottom_gap": 3,
+    "content_cx": 32.5
+   }
   },
   "wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.png": {
    "master": "architecture/wall_ivy_block/wall_ivy_block_02.png",
    "master_sha256": "d27fbebaeec3bfdd0ec38bb5957174bc9a0fdcc3706842ed50152114de3c3cfd",
    "master_source": "exec-be9a4bb8-4fb1-4361-888a-eb9172d36698.png",
    "flip_h": false,
-   "match_distance": 7.0
+   "match_distance": 7.0,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    3,
+    14,
+    62,
+    117
+   ],
+   "low_sha256": "9bce22c7f2725f53e2766c0de1652e058552f088d57a719495d928028fdc1c98",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     3,
+     14,
+     59,
+     103
+    ],
+    "bottom_gap": 11,
+    "content_cx": 32.5
+   }
   },
   "wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png": {
    "master": "architecture/stone_block/stone_block_04.png",
    "master_sha256": "f9ef46ddd67cb7cee3818ff3789623b616f4f7527f03969efca3cc170fd1aa77",
    "master_source": "exec-b9acd6d9-2aeb-47ac-bdad-dea823c45550.png",
    "flip_h": false,
-   "match_distance": 6.1
+   "match_distance": 6.1,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    7,
+    67,
+    57,
+    121
+   ],
+   "low_sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     7,
+     67,
+     50,
+     54
+    ],
+    "bottom_gap": 7,
+    "content_cx": 32.0
+   }
   },
   "wall/W08__wall__inner_corner_wall_block__default__1x1__64x128.png": {
    "master": "architecture/wall_ivy_banner/wall_ivy_banner_06.png",
    "master_sha256": "ab05f73205c440b3ce682ecf35115c31a40eebdf96a39b60a292acc0f0281316",
    "master_source": "exec-fe1bde58-c44f-43f4-b552-4fdad6d524e8.png",
    "flip_h": false,
-   "match_distance": 8.3
+   "match_distance": 8.3,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    3,
+    18,
+    62,
+    110
+   ],
+   "low_sha256": "3ddfa365ff3bd5ca69e9a1629baf8b5fb46de2eec3c2133c03477193a9060316",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     3,
+     18,
+     59,
+     92
+    ],
+    "bottom_gap": 18,
+    "content_cx": 32.5
+   }
   },
   "wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png": {
    "master": "architecture/wall_ivy_banner/wall_ivy_banner_05.png",
    "master_sha256": "8077fb91e98a52a100cb4d3139f42c170a607d558ed6d4cc60460771259fdb48",
    "master_source": "exec-dafd44e1-3c74-475a-b170-4bb89d1f57de.png",
    "flip_h": false,
-   "match_distance": 7.7
+   "match_distance": 7.7,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    4,
+    12,
+    62,
+    120
+   ],
+   "low_sha256": "777a289eb4b5ed5adaa13b7f615e54be83d25059b6aa986e8b2810fca4892be8",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     4,
+     12,
+     58,
+     108
+    ],
+    "bottom_gap": 8,
+    "content_cx": 33.0
+   }
   },
   "wall/W10__wall__low_broken_wall_segment__default__1x1__64x128.png": {
    "master": "architecture/wall_ivy_block/wall_ivy_block_01.png",
    "master_sha256": "5190e135a59e08af1617b36d006d5d4534f2d06cffef182aaae5efddd1b90120",
    "master_source": "exec-aa85a93c-b7bd-4ad3-ab18-0029a60ef191.png",
    "flip_h": false,
-   "match_distance": 9.6
+   "match_distance": 9.6,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    2,
+    55,
+    62,
+    109
+   ],
+   "low_sha256": "32c9e046870f63687f70abf19a2958f89952d7d7851a9b3f6c20db41aab80fc2",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     2,
+     55,
+     60,
+     54
+    ],
+    "bottom_gap": 19,
+    "content_cx": 32.0
+   }
   },
   "wall/W11__wall__wall_end_piece_left__default__1x1__64x128.png": {
    "master": "architecture/wall_ivy_banner/wall_ivy_banner_01.png",
    "master_sha256": "ab4a660afa540c4bed2cf1c16676ebd60aa240fba68c4708c99b428ac0b4b101",
    "master_source": "exec-282e7526-4357-404a-a629-b710fbe7781a.png",
    "flip_h": false,
-   "match_distance": 8.4
+   "match_distance": 8.4,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    4,
+    5,
+    64,
+    125
+   ],
+   "low_sha256": "02e18df29e4a2c0d77a7cb39dc7b6cb0df6f8d210b7333160fd2f0f8fd24caaf",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     4,
+     5,
+     60,
+     120
+    ],
+    "bottom_gap": 3,
+    "content_cx": 34.0
+   }
   },
   "wall/W12__wall__wall_end_piece_right__default__1x1__64x128.png": {
    "master": "architecture/wall_ivy_banner/wall_ivy_banner_02.png",
    "master_sha256": "b5077f073b028c4c38a8e65dff172f329128eb520ff65b1229fbe43df220adc6",
    "master_source": "exec-63d7c660-9817-4419-977f-d0ad3e7b0018.png",
    "flip_h": false,
-   "match_distance": 8.3
+   "match_distance": 8.3,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    8,
+    8,
+    60,
+    120
+   ],
+   "low_sha256": "0c5b15c8fe371151ed85d04878039b91abbf7542354b2c5d0b76ddf32c0d78a5",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     8,
+     8,
+     52,
+     112
+    ],
+    "bottom_gap": 8,
+    "content_cx": 34.0
+   }
   },
   "wall/W13__wall__arch_adjacent_wall_block_left__default__1x1__64x128.png": {
    "master": "architecture/wall_ivy_banner/wall_ivy_banner_04.png",
    "master_sha256": "c9fbe511af7aefcdae74ca6a78083d6777175d46e71f65eb84626f14f3d3cb2f",
    "master_source": "exec-b6f833a7-7ae2-4b94-aa88-1431dca4d587.png",
    "flip_h": false,
-   "match_distance": 9.9
+   "match_distance": 9.9,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    2,
+    4,
+    62,
+    125
+   ],
+   "low_sha256": "4f4e877810b8aad048ec2752295bf5b89b9419dd016176f140a868cc11841bff",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     2,
+     4,
+     60,
+     121
+    ],
+    "bottom_gap": 3,
+    "content_cx": 32.0
+   }
   },
   "wall/W14__wall__arch_adjacent_wall_block_right__default__1x1__64x128.png": {
    "master": "architecture/column_ivy/column_ivy_02.png",
    "master_sha256": "0f5b33d9b6e5b1c3cabf3c9128c49f714cecb7deeccbec9018abac992e606dcd",
    "master_source": "exec-256cd605-97fd-4e88-bae2-e0fa61bc3207.png",
    "flip_h": false,
-   "match_distance": 8.0
+   "match_distance": 8.0,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    3,
+    4,
+    62,
+    123
+   ],
+   "low_sha256": "dfd5b8a171cef90ee20e8daa584678fec6ac282bd9763ead3dcea655f0322caf",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     3,
+     4,
+     59,
+     119
+    ],
+    "bottom_gap": 5,
+    "content_cx": 32.5
+   }
   },
   "wall/W15__wall__decorative_banner_wall_mount_block__default__1x1__64x128.png": {
    "master": "architecture/wall_ivy_banner/wall_ivy_banner_03.png",
    "master_sha256": "c6d4190e77da92bfa622f36f10e2d36a4f28f24dbccb4b660483607195e89cea",
    "master_source": "exec-970b2f7c-b04c-41ae-9514-cd9369e76076.png",
    "flip_h": false,
-   "match_distance": 11.6
+   "match_distance": 11.6,
+   "native_size": [
+    64,
+    128
+   ],
+   "visible_bbox": [
+    10,
+    6,
+    59,
+    124
+   ],
+   "low_sha256": "b9ae2049dabe65bba771a905d9068de6faf7ad194682e254d6b37d938e59cbdb",
+   "measure": {
+    "size": [
+     64,
+     128
+    ],
+    "content": [
+     10,
+     6,
+     49,
+     118
+    ],
+    "bottom_gap": 4,
+    "content_cx": 34.5
+   }
   }
  }
 }
