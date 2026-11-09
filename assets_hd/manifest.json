@@ -1,0 +1,2706 @@
+{
+ "note": "High-quality masters. Names are descriptive only; map to catalog ids in a later step. visual_approval pending owner.",
+ "count": 225,
+ "items": [
+  {
+   "index": 0,
+   "source": "exec-00373f02-6fb8-43a3-aa37-1856f0930664.png",
+   "path": "assets_hd/hero/hero_pose_01.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "949d14da8689adc90300aa4106fedd90e0ca45b422a030f05eaa6cc3757a1937"
+  },
+  {
+   "index": 1,
+   "source": "exec-01ed02bb-19c3-433f-9ffd-c3ce15b49d9f.png",
+   "path": "assets_hd/hero/hero_pose_02.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "b161976a64861c83af4d847bebdc701aad841ba33b4143277e4b13db9d3f1bce"
+  },
+  {
+   "index": 2,
+   "source": "exec-02dd1e9a-018f-4dd2-aeac-3b20dacf710f.png",
+   "path": "assets_hd/hero/hero_pose_03.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "5c22ef6990a7c1eb34b76b2403c2a36d059db3e588369bf4531710a1fac59fad"
+  },
+  {
+   "index": 3,
+   "source": "exec-031b52a9-50a9-4145-9be1-82f7b9c5f065.png",
+   "path": "assets_hd/furniture/bench_blue_runner_01.png",
+   "category": "furniture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "9355364c7315867ff79e72ac572d30e7b70c50d34da8142910944f1855f51671"
+  },
+  {
+   "index": 4,
+   "source": "exec-039bda54-bc65-4f0c-8f88-c3efd9b7eb43.png",
+   "path": "assets_hd/hero/hero_pose_04.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "a219ddd06b087405604b7145d961fcbdb6f4a5cd7e9c152f29727b90b0c33911"
+  },
+  {
+   "index": 5,
+   "source": "exec-06d00c78-d721-48bd-99d4-4b569bda4a29.png",
+   "path": "assets_hd/hero/hero_pose_05.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "096beffe61d763e884ca534b8a327b4dbaf59a2b302ff42698a4e404c45afc42"
+  },
+  {
+   "index": 6,
+   "source": "exec-074ed3d2-f09a-4b7f-af9b-e2a606ec3984.png",
+   "path": "assets_hd/props/open_book_01.png",
+   "category": "props",
+   "size": [
+    1536,
+    1024
+   ],
+   "mode": "RGBA",
+   "sha256": "b42e8379ff75ce9a16d96b68f4bf0d304e9b4ed6b4730db7b837684b0d3b5ad3"
+  },
+  {
+   "index": 7,
+   "source": "exec-077c60fd-906b-40d4-88b5-0deac6676b28.png",
+   "path": "assets_hd/hero/hero_pose_06.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "940d06dc8efe7b6ad24bac96b1d73ca3212732d57a1861fdea96d903e1d9329a"
+  },
+  {
+   "index": 8,
+   "source": "exec-09146a45-dc0d-4c3e-939c-646eabc6fa30.png",
+   "path": "assets_hd/hero/hero_pose_07.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "214b50bc63bed1d165be1bfc02924f8c4ec345fce77821930e4cbdbf7c5a0c13"
+  },
+  {
+   "index": 9,
+   "source": "exec-095e69c7-6dd4-4cd2-aedd-ba3abac3588d.png",
+   "path": "assets_hd/floor/sandstone_tile_01.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "e7afdbca63c97c1d7bbc3e14ea287dcb9bcca42926aa761df209153fd9a4c197"
+  },
+  {
+   "index": 10,
+   "source": "exec-0a020c78-0537-4635-adde-3e6ea2002a25.png",
+   "path": "assets_hd/lighting/wall_lantern_01.png",
+   "category": "lighting",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f54d8eeba8c9ebfadf1af546c1e5c424752db0fff62fde86ee34c4287dd77a8a"
+  },
+  {
+   "index": 11,
+   "source": "exec-0a8ef8ba-a9a2-4e5d-8254-e9896fd62c46.png",
+   "path": "assets_hd/furniture/bedside_chest_drawer_01.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "26224dc9b8d392d73ab28137679dc6fe05c8843d3b5e461c364690136bb217a6"
+  },
+  {
+   "index": 12,
+   "source": "exec-0aac3a82-836b-46de-826d-9bc2e2703b6e.png",
+   "path": "assets_hd/furniture/bench_vertical_01.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "267bf570e65405537c1b35ca4a7bdffaaa7892920cd91ceea03acd4fa780c1d2"
+  },
+  {
+   "index": 13,
+   "source": "exec-0eeb4ec0-c3bc-4c07-b45e-55e24897ea19.png",
+   "path": "assets_hd/hero/hero_pose_08.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f10cb7f460fdcc7137820de8c1f7bb373378b7523b7e73cb85c5e6f4978ae3f0"
+  },
+  {
+   "index": 14,
+   "source": "exec-0f32429c-eb0c-4113-af9c-55356604bfe7.png",
+   "path": "assets_hd/hero/hero_pose_09.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f3fc5ef8e888f384410b19bb30b85fcc4c12fdc2805b7988273df30675edc2e9"
+  },
+  {
+   "index": 15,
+   "source": "exec-127510b7-e378-40b8-8373-c1a1315898ec.png",
+   "path": "assets_hd/architecture/stone_block_01.png",
+   "category": "architecture",
+   "size": [
+    1402,
+    1122
+   ],
+   "mode": "RGBA",
+   "sha256": "82d4b0107ad7375f605b9e9608e38edeea40a1270d8b21fc453fd998b057694c"
+  },
+  {
+   "index": 16,
+   "source": "exec-12aaad3d-3d18-4a6b-bce1-5429c9f3cf55.png",
+   "path": "assets_hd/hero/hero_pose_10.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "3504d6cd42f9ab5a3a455d9ef605fc0726078103c1c1ad5bb8d0d348959eaa1a"
+  },
+  {
+   "index": 17,
+   "source": "exec-14227ef2-634e-4eb6-9f01-f2c731ee4d48.png",
+   "path": "assets_hd/props/vase_blue_01.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "83573d82c8e627561b28511c4348469333689df126cd05928232d63af99fbf3a"
+  },
+  {
+   "index": 18,
+   "source": "exec-14958d53-23c6-463b-88eb-042175bd7f16.png",
+   "path": "assets_hd/architecture/stone_block_02.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "92b2e723159983e2c674d2bf746445c6299826d22aca9242e45f3991b2da8168"
+  },
+  {
+   "index": 19,
+   "source": "exec-155da9ed-712b-4e11-bedf-cf0dc4f66b17.png",
+   "path": "assets_hd/plants/flowers_white_01.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "98a2b1ed4d455c6b4c1bb3d41f62010fc51bd6c2a610794253dac07094ca3ba0"
+  },
+  {
+   "index": 20,
+   "source": "exec-15d78d47-b4d1-4aa0-8945-6fce14df6c61.png",
+   "path": "assets_hd/plants/ivy_hanging_01.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "50fb7be8b65ae948ac3a2ba2f6bb8946ff3a31520a6ea52d353ecba4d7166aa2"
+  },
+  {
+   "index": 21,
+   "source": "exec-1719a859-b016-4baa-ac51-b8039eea5154.png",
+   "path": "assets_hd/plants/flowers_white_02.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "ff260e4d8e20fb08f0d0c1ff63850ad9b16fdbcd838045461e42415419e7dfe7"
+  },
+  {
+   "index": 22,
+   "source": "exec-1801b2d0-261b-4e88-8a0d-4590c1cd19f3.png",
+   "path": "assets_hd/furniture/table_small_01.png",
+   "category": "furniture",
+   "size": [
+    1086,
+    1448
+   ],
+   "mode": "RGBA",
+   "sha256": "bd0021526cd2f2dc1f73e1b78175681f0e2b404b6341fa9e1c093733d6915d81"
+  },
+  {
+   "index": 23,
+   "source": "exec-1912a7cb-c661-4ad5-8d9e-e41f947802bb.png",
+   "path": "assets_hd/floor/sandstone_tile_02.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "e409c22eed5a8ef1dd421e95a0eafc572ce2edf49e0b4c29d29227cf9029a3dd"
+  },
+  {
+   "index": 24,
+   "source": "exec-1b5c5100-dfc4-4026-9f30-ee87ef7a36a1.png",
+   "path": "assets_hd/hero/hero_pose_11.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "3c1f1620b1446ee8d6c7db13474ce947b624daf347cc2bb6d49fd95246149796"
+  },
+  {
+   "index": 25,
+   "source": "exec-1baf7f4c-26fa-41d7-a7e9-150da2049afc.png",
+   "path": "assets_hd/architecture/column_ivy_01.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "b43398d00a996c8ea4a2c03bdcfc8a83cacfb9e89f2120cd6b039e6423a5019c"
+  },
+  {
+   "index": 26,
+   "source": "exec-1bfef93e-557a-45cf-be7b-b9da111895c1.png",
+   "path": "assets_hd/lighting/candle_cluster_01.png",
+   "category": "lighting",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "8ce1380b7d50db9140eb328ad26f1248af1ccbb4524678cd610551f938897f19"
+  },
+  {
+   "index": 27,
+   "source": "exec-1cdc5073-1b61-414c-bc04-860ed0fe4dc5.png",
+   "path": "assets_hd/hero/hero_pose_12.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "5aae7f8bfe187dcf558f2dca7bd50d48071acd0035bb6fea4e6ea622029fb8c3"
+  },
+  {
+   "index": 28,
+   "source": "exec-1defb2a4-51e5-456c-911c-b6ecdaed3da9.png",
+   "path": "assets_hd/furniture/crate_01.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "9e8a896fa20f86665597e1557ace10a9ba05bcd9152b81e1e332035efa5b8098"
+  },
+  {
+   "index": 29,
+   "source": "exec-22196225-a9f2-412b-bbf2-b4b6cac37a71.png",
+   "path": "assets_hd/props/open_map_01.png",
+   "category": "props",
+   "size": [
+    1447,
+    1087
+   ],
+   "mode": "RGBA",
+   "sha256": "6e8904d79ea7bfed46b68fbb26aeeff2cb3db876f33f80099e248dd5ed59f9ad"
+  },
+  {
+   "index": 30,
+   "source": "exec-231846cd-a540-4fbc-beec-141becf5c846.png",
+   "path": "assets_hd/background/rock_island_01.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "83d45d8d9bcd5db5f4801a2f6501e4f9bbd775cc825a3c3a24eb3c7d6a057cbe"
+  },
+  {
+   "index": 31,
+   "source": "exec-23ae8a7a-bed6-4f14-871e-b4866aacde0a.png",
+   "path": "assets_hd/hero/hero_pose_13.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "2426c08d907c28eeb8c9e975d9938c43c3cdf148cd73a52c360072861389ed51"
+  },
+  {
+   "index": 32,
+   "source": "exec-241210cf-ef89-4685-9cb5-9fb10edccccb.png",
+   "path": "assets_hd/hero/hero_pose_14.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "83205a59b236d13d9e3913a0b8cba4ff47d30ff3eda44e51027177681c60e450"
+  },
+  {
+   "index": 33,
+   "source": "exec-2501aac4-9001-4402-bf62-27af4cd902e7.png",
+   "path": "assets_hd/floor/sandstone_tile_03.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "555279b4fd2dbed4cb80a5e7415ffbc4d2e8365a0247074a56b5a36c995f37c8"
+  },
+  {
+   "index": 34,
+   "source": "exec-256cd605-97fd-4e88-bae2-e0fa61bc3207.png",
+   "path": "assets_hd/architecture/column_ivy_02.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "0f5b33d9b6e5b1c3cabf3c9128c49f714cecb7deeccbec9018abac992e606dcd"
+  },
+  {
+   "index": 35,
+   "source": "exec-25746c6f-ca7c-4f50-9cf1-dfa7e4ebe52d.png",
+   "path": "assets_hd/hero/hero_pose_15.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "b029e05dc71914f2a083b2f56dcffc1d903db751e23c2dff60f07860119b3430"
+  },
+  {
+   "index": 36,
+   "source": "exec-282e7526-4357-404a-a629-b710fbe7781a.png",
+   "path": "assets_hd/architecture/wall_ivy_banner_01.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "ab4a660afa540c4bed2cf1c16676ebd60aa240fba68c4708c99b428ac0b4b101"
+  },
+  {
+   "index": 37,
+   "source": "exec-284ff640-e0f3-4500-a779-0322e4a6bf1e.png",
+   "path": "assets_hd/background/cliff_base_01.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "9f2aa3b31fce2c93a500abead8679d2dafe4010ef0d7a4d7400b48de1642c96e"
+  },
+  {
+   "index": 38,
+   "source": "exec-293dfa97-d276-4b73-9c80-53ba32cc9077.png",
+   "path": "assets_hd/furniture/bed_side_view_01.png",
+   "category": "furniture",
+   "size": [
+    1448,
+    1086
+   ],
+   "mode": "RGBA",
+   "sha256": "f0ea4d4a7aa4b20511b074248c2c1ec80580dbb4065eaacdacee46c4850de1be"
+  },
+  {
+   "index": 39,
+   "source": "exec-29c6aabf-8124-4a5d-8e1b-39c43b01f6d4.png",
+   "path": "assets_hd/plants/ivy_hanging_02.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "4f4e2b67afc1d51d0bf4810d6c6d52ff9c7463e2164daf613b2caf13fa75c41a"
+  },
+  {
+   "index": 40,
+   "source": "exec-2bde0a8f-4f95-491d-b8d5-8dd33c104735.png",
+   "path": "assets_hd/hero/hero_pose_16.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "d923690e3ad25deb1f77dd0360cdce5547487e785d6e1c3cf19a0ec7b5369050"
+  },
+  {
+   "index": 41,
+   "source": "exec-3187999c-826f-41a0-86f9-509f7c9c3bc3.png",
+   "path": "assets_hd/hero/hero_pose_17.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "2ca08758f64a6d2e1fdd36cbe6a046107d0aaf474b238fe11fb5cee119624b60"
+  },
+  {
+   "index": 42,
+   "source": "exec-32632f93-8dc2-4d4a-b47b-46a870a30342.png",
+   "path": "assets_hd/lighting/wall_lantern_02.png",
+   "category": "lighting",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "8d3e1d681efa3fe200ebef0d243a9df3c80564a770e5b65fb8422a31b730631b"
+  },
+  {
+   "index": 43,
+   "source": "exec-32c1e5ad-a38d-417f-b68b-a0edd5578af8.png",
+   "path": "assets_hd/architecture/column_ivy_03.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "af46f022217b1d1596bb5fbbc3c61e8a8a0631a15a0070372f3eae671fab557f"
+  },
+  {
+   "index": 44,
+   "source": "exec-34898a06-f6ad-4636-826f-cb4faa4a2314.png",
+   "path": "assets_hd/hero/hero_pose_18.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "edd2d51c2fb1616529b11c63ae54a3fbd38be8557d84a293042703e017c93b17"
+  },
+  {
+   "index": 45,
+   "source": "exec-3545ff63-a22c-4199-9adf-146fda43b896.png",
+   "path": "assets_hd/weapons/sword_01.png",
+   "category": "weapons",
+   "size": [
+    1024,
+    1536
+   ],
+   "mode": "RGBA",
+   "sha256": "7bbef6c4161c52fdd06c8a6635f27b91b307c1a563d7f1c0a3e4b2c0a873e694"
+  },
+  {
+   "index": 46,
+   "source": "exec-362f7b5f-9b47-41c3-a00d-ed365db3e8c9.png",
+   "path": "assets_hd/props/scroll_01.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "4b78d6a0e9575aecee4d0550b84af6c780609936a0f2e62153cf6d6963a4fa29"
+  },
+  {
+   "index": 47,
+   "source": "exec-373b965e-00a8-4290-9757-d2ca854f1c6c.png",
+   "path": "assets_hd/furniture/bedside_chest_drawer_02.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "7ca2cdc0a381bc8b6655447271eb3689d91ea78490d12251721dac59f3c741ec"
+  },
+  {
+   "index": 48,
+   "source": "exec-384478bf-513f-49f7-915d-a66baa1f2388.png",
+   "path": "assets_hd/plants/flowers_blue_01.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "02e8548b797b0a5496122ce318b65b545a8c612a0077e0f9bcb3f21ec7ed84c5"
+  },
+  {
+   "index": 49,
+   "source": "exec-3c78578c-4ded-48c6-bf7a-911312d289ff.png",
+   "path": "assets_hd/hero/hero_pose_19.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f60c2aa17160a0cf05eb2d28ee4fcbbd893527e5b426c26d98c5215a54c18784"
+  },
+  {
+   "index": 50,
+   "source": "exec-3d67a125-a8fe-447f-96de-d84b92fe18ba.png",
+   "path": "assets_hd/furniture/bedside_chest_drawer_03.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "7f2032f7d7d2fa43f186a606793f73749ec22b7c12b8a49eea106e1401a5b5ad"
+  },
+  {
+   "index": 51,
+   "source": "exec-3de14633-2c00-40c8-9f76-c6df7d25309c.png",
+   "path": "assets_hd/hero/hero_pose_20.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "da4da5844b99b0b4e5f9beb51f189fbbfec5319feb496c23d986dad014a71ce3"
+  },
+  {
+   "index": 52,
+   "source": "exec-3f4c1a76-b56c-40a0-bba3-cd6bdf5fef72.png",
+   "path": "assets_hd/hero/hero_pose_21.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "08d52ee20b1dda789ed411b922dfc36bd4fbcd1262d979e66df5d7d73fdd3e03"
+  },
+  {
+   "index": 53,
+   "source": "exec-3faa093f-5694-41a8-b699-51709d73d5a9.png",
+   "path": "assets_hd/hero/hero_pose_22.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "eadf04d85295325ed7f3a04bb43661b686b40d689dcf2cdd7d6f31a56a93845b"
+  },
+  {
+   "index": 54,
+   "source": "exec-4028c54f-02f1-4f51-a064-4d9224aac528.png",
+   "path": "assets_hd/furniture/bookcase_armillary_01.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "3696d717bc2658dcb3db9f01f8394cfea185613e291b09381f40c6347b102c28"
+  },
+  {
+   "index": 55,
+   "source": "exec-404069d8-e902-4861-99d3-aad90b7b6c04.png",
+   "path": "assets_hd/hero/hero_pose_23.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "875e496ccb90f97da80152dd7929a3f23af88f5f30a23678839eb96955d823ad"
+  },
+  {
+   "index": 56,
+   "source": "exec-4129bdf6-df70-4a8b-b6f0-6fdeeb32b128.png",
+   "path": "assets_hd/hero/hero_pose_24.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "1b64f982e255dbcac0d248c50569a6a1768d78ebb2195d210fe4a908b62827f1"
+  },
+  {
+   "index": 57,
+   "source": "exec-43fcdc33-1d3b-4509-8115-8730c8a87f09.png",
+   "path": "assets_hd/floor/sandstone_tile_04.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "6fe03f6fd50f9def2ae17b3c40cfbd8f3963a1eca30ffc83af8385f7130cc182"
+  },
+  {
+   "index": 58,
+   "source": "exec-4493a6d5-a920-4c4f-a35a-c3b751d94f7e.png",
+   "path": "assets_hd/hero/hero_pose_25.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "91683291b3443b3e684728aac3b2c2e950206f5f4a4f9c46cc5f82de8669aaad"
+  },
+  {
+   "index": 59,
+   "source": "exec-467937df-b728-43a3-9eb2-a9b3496f3deb.png",
+   "path": "assets_hd/furniture/bench_blue_runner_02.png",
+   "category": "furniture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "fb03699156389f3a93cc2bdd678a80021741253ce902caa866bde38c2cace07c"
+  },
+  {
+   "index": 60,
+   "source": "exec-46c7f62c-682a-4bc4-aca5-999a36851c0e.png",
+   "path": "assets_hd/architecture/column_ivy_04.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "c6834fe436d0ada5044d095474ec49ab0a349af5785c7f3e939cc4ebbba3d36f"
+  },
+  {
+   "index": 61,
+   "source": "exec-46d85f18-4ee9-4a7f-a16e-111a146dd868.png",
+   "path": "assets_hd/props/jug_white_01.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "5c2a4bd2c1a1bb36bb31c2947593163e2ee7ba76c34c4d6e16b0ef313abe694d"
+  },
+  {
+   "index": 62,
+   "source": "exec-48af4850-d6ec-4515-b2ed-3237e91e54ea.png",
+   "path": "assets_hd/hero/hero_pose_26.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f3fed3fe695ee7cc0b7413079ecf8aae3232206577f215750a715a2d94e5de44"
+  },
+  {
+   "index": 63,
+   "source": "exec-49ee77bc-0b27-443c-93f2-abeda71a1a23.png",
+   "path": "assets_hd/hero/hero_pose_27.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "d6f82225296dea5d9e65b574aa3671cbd109bef155eb2b22efcce2116c9da614"
+  },
+  {
+   "index": 64,
+   "source": "exec-49f971fe-e256-4786-9579-60e3522f364b.png",
+   "path": "assets_hd/hero/hero_pose_28.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "5ef927d1a8a24ac2001b8ffee7688a9fbc72171ed5cf30abcf2783bf74a62cf2"
+  },
+  {
+   "index": 65,
+   "source": "exec-4b8ca93c-4447-4a32-8827-eaf99ccc1c21.png",
+   "path": "assets_hd/plants/flowers_white_03.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "c93e0fd8a419a88173c51ce025dd708b12793641e1c5c219649d4307b4ad1fd3"
+  },
+  {
+   "index": 66,
+   "source": "exec-4c1d515a-0d72-44bf-944a-c20ddf9c2233.png",
+   "path": "assets_hd/architecture/stone_post_01.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "545f98903e4d389cab383e6858d034b7c5ed773c96bbe5a9c276e02074542d3b"
+  },
+  {
+   "index": 67,
+   "source": "exec-4cd45f15-4ff2-45d6-b6d2-2f6966a86e46.png",
+   "path": "assets_hd/furniture/bookcase_large_01.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "82c280cb7ab4fa7b58686434d255102e63f8a907aff602bb8404e4d58a5506a7"
+  },
+  {
+   "index": 68,
+   "source": "exec-4d759d48-93d0-4b20-9efd-9c4b08b6e89d.png",
+   "path": "assets_hd/floor/sandstone_tile_05.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "8248be99d37d69cff38fb9fd2bd198a50287931c61e263f4051371da8123f61c"
+  },
+  {
+   "index": 69,
+   "source": "exec-4ed93f80-b6ab-4aa7-b0ee-f5e7c09e8ff1.png",
+   "path": "assets_hd/hero/hero_pose_29.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "483c02cffdb65562687b274991ff0a7a6e8ec427b47eecf4c348998fd1029912"
+  },
+  {
+   "index": 70,
+   "source": "exec-53651b07-700b-483e-9529-251d4a48ef17.png",
+   "path": "assets_hd/background/sea_01.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "bfbd4e1d9173e285b5e5ee435992e66bd60105594621ca854984360afced9245"
+  },
+  {
+   "index": 71,
+   "source": "exec-537b9737-ef1e-422e-8910-a29231bf55d8.png",
+   "path": "assets_hd/hero/hero_pose_30.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "95e7246dcd2370db7704854ccac033563c4b109cc4d209d1a6648f7b0d99f098"
+  },
+  {
+   "index": 72,
+   "source": "exec-556d85f4-4e71-4eaa-9b03-2e11d4abea6f.png",
+   "path": "assets_hd/architecture/stone_post_02.png",
+   "category": "architecture",
+   "size": [
+    1241,
+    1267
+   ],
+   "mode": "RGBA",
+   "sha256": "9215f5487d2d1e58e4355d138b6523719f9e6e2eb60f52e18389a9b88aa89ae9"
+  },
+  {
+   "index": 73,
+   "source": "exec-56a7839d-bcc1-4f4b-af2f-9e5430b5f957.png",
+   "path": "assets_hd/furniture/crate_02.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "bd8ed61e6fa3daa4834291c24eda828315a9056fbe714860c7bbeab89ab77f24"
+  },
+  {
+   "index": 74,
+   "source": "exec-57d1ebc9-0bf1-46b9-852d-a9e8401a5336.png",
+   "path": "assets_hd/architecture/stone_post_03.png",
+   "category": "architecture",
+   "size": [
+    1234,
+    1274
+   ],
+   "mode": "RGBA",
+   "sha256": "e61e1622180bc0e869f0a279e13e811bd6d15677aa3465a575441aed86be4b96"
+  },
+  {
+   "index": 75,
+   "source": "exec-588936e1-70fd-455a-bd38-cd804df229e6.png",
+   "path": "assets_hd/props/vase_blue_02.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "7233f6bfed55cf5f24af91532ddf02da3123558e85c09290596c2dc94175103b"
+  },
+  {
+   "index": 76,
+   "source": "exec-58ef9a86-bbb2-4656-a734-e0d9235afcc4.png",
+   "path": "assets_hd/lighting/wall_lantern_03.png",
+   "category": "lighting",
+   "size": [
+    1278,
+    1230
+   ],
+   "mode": "RGBA",
+   "sha256": "c5065468c2e63c0d19d32ff5463d2726771a40070e2e06c2a3fadb5685a3b468"
+  },
+  {
+   "index": 77,
+   "source": "exec-591fa251-c1de-4e7e-8c40-8da586819edf.png",
+   "path": "assets_hd/hero/hero_pose_31.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "d9f9e67c961c55f78740f72e82faa8d0f1ec3bbbb5668923893e9663f8d52094"
+  },
+  {
+   "index": 78,
+   "source": "exec-5b1ebfe1-8766-449b-8548-028c64a125c0.png",
+   "path": "assets_hd/decor/rug_square_compass_01.png",
+   "category": "decor",
+   "size": [
+    1278,
+    1230
+   ],
+   "mode": "RGBA",
+   "sha256": "3ab19b8d1e67762029689e733d396ab459dfac385393a9fb2ad47b0943e22bad"
+  },
+  {
+   "index": 79,
+   "source": "exec-5bf1fa33-c33c-400a-83dd-25740bcce9aa.png",
+   "path": "assets_hd/props/vase_blue_03.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "3e8083f3554a0f5d80f4972cde8c389f18ac732ea91c347d20e2c199cc199150"
+  },
+  {
+   "index": 80,
+   "source": "exec-5c2dcdf6-dd2a-4e47-bf4b-ca881d4ea13d.png",
+   "path": "assets_hd/decor/banner_blue_long_01.png",
+   "category": "decor",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "d439c254283aced1d23234cd918391dc4190ad00f6c71222d7a12bb65e6d1b6d"
+  },
+  {
+   "index": 81,
+   "source": "exec-5d36b4a9-55c8-4fce-9cf1-05f950776fec.png",
+   "path": "assets_hd/hero/hero_pose_32.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "22e8f55009bd0b5993a87d25ab92311d2fdaecedb54e57de9a794600fa3e2bf0"
+  },
+  {
+   "index": 82,
+   "source": "exec-5d6cbef2-12ef-4038-875b-28e1b9b3e8da.png",
+   "path": "assets_hd/concept/concept_art_action_scene_01.png",
+   "category": "concept",
+   "size": [
+    1672,
+    941
+   ],
+   "mode": "RGB",
+   "sha256": "2f729d01275604c887f9a32f2ef11a4cd1192a6bd0a096bb413e8c1b73aa9746"
+  },
+  {
+   "index": 83,
+   "source": "exec-5da81867-e831-4ec5-95bc-22389a6f8b76.png",
+   "path": "assets_hd/hero/hero_pose_33.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "2f87515c71ae0f9befc2eb1232bcb33082cca2530e00ae6a126807edede512e3"
+  },
+  {
+   "index": 84,
+   "source": "exec-604a18fa-03c2-4436-811c-3e440bba60de.png",
+   "path": "assets_hd/hero/hero_pose_34.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "b6f6658a9154e10b428a0420a74107ddaf08d988b28f2b5bc9ae6c45c2dc0104"
+  },
+  {
+   "index": 85,
+   "source": "exec-610294cc-779b-4263-916b-adb17807a007.png",
+   "path": "assets_hd/hero/hero_pose_35.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "596bc16ff822f8fdd2ec8ad2efce884eef0c47500c429710831c95e09a107706"
+  },
+  {
+   "index": 86,
+   "source": "exec-62d0b9e0-c9d8-4659-8891-12db8efd1836.png",
+   "path": "assets_hd/background/wave_foam_01.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "760259d4bdc98e61147e8988312bde67e847b39103b2eb4cb7576b43ddac952f"
+  },
+  {
+   "index": 87,
+   "source": "exec-638a8f3d-f556-4573-bbc3-2268672fd2ad.png",
+   "path": "assets_hd/architecture/arch_01.png",
+   "category": "architecture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "9114ef58ecee7f776e51323ed70b1a6671c13ef712da7011844159e74092fad8"
+  },
+  {
+   "index": 88,
+   "source": "exec-63d7c660-9817-4419-977f-d0ad3e7b0018.png",
+   "path": "assets_hd/architecture/wall_ivy_banner_02.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "b5077f073b028c4c38a8e65dff172f329128eb520ff65b1229fbe43df220adc6"
+  },
+  {
+   "index": 89,
+   "source": "exec-644433ac-018e-4b7a-996c-018d044b62a2.png",
+   "path": "assets_hd/furniture/table_large_01.png",
+   "category": "furniture",
+   "size": [
+    1448,
+    1086
+   ],
+   "mode": "RGBA",
+   "sha256": "5fc0c1cc51b6f54684e23cb584ef4b3c9cb21004f83e389c14aa3f1294589576"
+  },
+  {
+   "index": 90,
+   "source": "exec-649fa9b7-377d-4e09-9bd2-abc28e157f3c.png",
+   "path": "assets_hd/hero/hero_pose_36.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "4db2e679dabb21b549700b3cb2fd5a8792fae6e8cb2f7273dea294e87739b4b1"
+  },
+  {
+   "index": 91,
+   "source": "exec-66c8b914-dd4c-44a9-8af5-78c6fb9293ee.png",
+   "path": "assets_hd/hero/hero_pose_37.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "362936fc28e856190dd8d041e071381ab49d95b370df674cd01466b2f960d720"
+  },
+  {
+   "index": 92,
+   "source": "exec-66f63d63-76ba-420d-b1ea-baed247ae7f5.png",
+   "path": "assets_hd/hero/hero_pose_38.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "cdaed0ea6d71b24ba6c81f70d32d467531ee463bfc8199a2966abf95dee95163"
+  },
+  {
+   "index": 93,
+   "source": "exec-68b87a51-e8ca-4475-b120-a6a38b65abc5.png",
+   "path": "assets_hd/furniture/crate_03.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "d0296e106dee16e88a355ce2b372ac598f2ae6ade519c340ef51fe640e1e1664"
+  },
+  {
+   "index": 94,
+   "source": "exec-68fa3861-6a81-4cb1-8f67-f6cd7f69a1c6.png",
+   "path": "assets_hd/plants/flowers_white_04.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "1db91d5ed42841c355c6a9506b9b7129abb52fb2a56b8eb02e989e09fbcdb6a2"
+  },
+  {
+   "index": 95,
+   "source": "exec-694aceac-7583-4cc0-b3a0-412155d4e765.png",
+   "path": "assets_hd/furniture/bench_blue_runner_03.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "d5553c9f86f8d0001191589378165be38a8744340c44851cfe852d2167065d57"
+  },
+  {
+   "index": 96,
+   "source": "exec-698f951a-89f1-45b0-b090-b0852b0a800e.png",
+   "path": "assets_hd/hero/hero_pose_39.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "54ae33cf5cdfa5f24941561e8c59f1c218ce60da8cb2765cb61dd62f93e85d31"
+  },
+  {
+   "index": 97,
+   "source": "exec-6b045765-32bf-43da-91ae-a55544d61241.png",
+   "path": "assets_hd/hero/hero_pose_40.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f561557fdd2ff809eba89ba940ddb2f5ac9f6fb1da3261f4fdcfbd76df8607be"
+  },
+  {
+   "index": 98,
+   "source": "exec-6b5710d4-26c5-429d-b67a-16881381e884.png",
+   "path": "assets_hd/hero/hero_pose_41.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "6f1162a8406d4a98c0533febd397314422f924598f65b49a9b4412a7b541a9e5"
+  },
+  {
+   "index": 99,
+   "source": "exec-6d042b14-eb88-4707-80c9-fa00d052346d.png",
+   "path": "assets_hd/architecture/column_ivy_05.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "fbb9d4e391290bc36eb402e178766067ed8a7adc558bf81dc6b4ec5f4fbfa1bc"
+  },
+  {
+   "index": 100,
+   "source": "exec-6d57f274-c2d7-491e-bb23-c968f5efb3c9.png",
+   "path": "assets_hd/hero/hero_pose_42.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "2f6cbbf3c5926b3fa3750deff91d21b5eefffd85e181e580d737afb19c844476"
+  },
+  {
+   "index": 101,
+   "source": "exec-6eaaf8d4-ab93-42d8-bb5c-822470c2e89e.png",
+   "path": "assets_hd/decor/gold_corner_ornament_01.png",
+   "category": "decor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "41557ddc55331d0ef2162d353326534d78e998ce21b62478c297bdcb2479e0b5"
+  },
+  {
+   "index": 102,
+   "source": "exec-6f7b6ad8-ea46-4133-9327-68e1d2f5117a.png",
+   "path": "assets_hd/hero/hero_pose_43.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f57f1232dc6c94076b2b79922976ceb7ddbea0a79efe75bf61ae9a4079f4292e"
+  },
+  {
+   "index": 103,
+   "source": "exec-705afaae-a138-4cce-b04f-110456dd1f9e.png",
+   "path": "assets_hd/hero/hero_pose_44.png",
+   "category": "hero",
+   "size": [
+    1240,
+    1269
+   ],
+   "mode": "RGBA",
+   "sha256": "c4d57eedc032f9e53056235b1a0f1e5139e625b93d0776af83a6e682e86aaf39"
+  },
+  {
+   "index": 104,
+   "source": "exec-706f5d4a-3fe2-495f-8d14-a42eedbe921b.png",
+   "path": "assets_hd/hero/hero_pose_45.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "2234d4c5c9efc1d5b6be4f5c294c439b273a5a7d32cc137b7ed95ac40de62a77"
+  },
+  {
+   "index": 105,
+   "source": "exec-70db5aaf-eb03-4fa9-b708-e16ea85e2e67.png",
+   "path": "assets_hd/hero/hero_pose_46.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "3c88f3482c952cd31459bac4c07d15d34ad593879b0c641cd5c9cdc91b1db635"
+  },
+  {
+   "index": 106,
+   "source": "exec-74689966-ca82-412c-94cd-66464e5792cb.png",
+   "path": "assets_hd/hero/hero_pose_47.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "cb13dc145e90096c281314092df39524e57eb039b7364da639fc25a35fa694d3"
+  },
+  {
+   "index": 107,
+   "source": "exec-7a06ec7b-6256-4dac-a8ff-9ae804a7b6d6.png",
+   "path": "assets_hd/hero/hero_pose_48.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "678467458bef08739cd46f3cde69214695244fa79224f45eaddbe22820bacd72"
+  },
+  {
+   "index": 108,
+   "source": "exec-7a27afb9-aa2a-4561-b56a-74076a60dcfc.png",
+   "path": "assets_hd/hero/hero_pose_49.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f3bad73b3398d7cfd133eca0ea221835bf05f5d9b5245386f720666920d904ef"
+  },
+  {
+   "index": 109,
+   "source": "exec-7b2edef3-5f07-4d4b-85c8-b6fd4f9d1f7d.png",
+   "path": "assets_hd/hero/hero_pose_50.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "9a5b111a268feb3db79cbb70482a16c8bb1a4b72bbf8294e333eaa990ae0a4a0"
+  },
+  {
+   "index": 110,
+   "source": "exec-7f0274d6-8c73-4460-99a1-2628043ed4e2.png",
+   "path": "assets_hd/props/books_stack_blue_01.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "664043c11a0fd440d65ab26086df0c471dd4b9131a29d39d8414e6b19d9e31d3"
+  },
+  {
+   "index": 111,
+   "source": "exec-80af96db-21a5-48b9-b3cc-d3c5de51c4e0.png",
+   "path": "assets_hd/background/cloud_01.png",
+   "category": "background",
+   "size": [
+    1983,
+    793
+   ],
+   "mode": "RGBA",
+   "sha256": "1c73db2bbc95465afc699a806ad2c63fd734721948d895a5a602c2bf2495eedf"
+  },
+  {
+   "index": 112,
+   "source": "exec-82555493-4479-456b-ae9d-753b999cd6cb.png",
+   "path": "assets_hd/floor/compass_emblem_01.png",
+   "category": "floor",
+   "size": [
+    1278,
+    1230
+   ],
+   "mode": "RGBA",
+   "sha256": "1d85f2b9cb064fe2fed2648a375890d9e8fbc006a9f1140b602911a33ddebefd"
+  },
+  {
+   "index": 113,
+   "source": "exec-845cbce6-37a9-46ef-9d7c-f512dcef7711.png",
+   "path": "assets_hd/furniture/table_with_benches_01.png",
+   "category": "furniture",
+   "size": [
+    1448,
+    1086
+   ],
+   "mode": "RGBA",
+   "sha256": "ec27fa64986228b1e3d04fca0ae05f0abaf7538bb4fb3eaca21118b29cc73969"
+  },
+  {
+   "index": 114,
+   "source": "exec-851bb963-dc06-4382-b837-536b6db60f92.png",
+   "path": "assets_hd/hero/hero_pose_51.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "d6d4f2a18f1cf3a02078069c642be9036b1ec4388ff9efbf3230889600bf515d"
+  },
+  {
+   "index": 115,
+   "source": "exec-8aa4b35c-eed0-4528-b28e-95bc7355d64d.png",
+   "path": "assets_hd/props/vase_blue_04.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "2922126b17d0e573169a596457034ecf3535e80132a4b6d0eb276d943243880c"
+  },
+  {
+   "index": 116,
+   "source": "exec-8ac3c62e-f1c2-442c-99e8-6dcf414aeb1e.png",
+   "path": "assets_hd/plants/flowers_white_05.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "0d843add2b9ad47becdcf0846d39939834156a1060895a5bcbed5a328e563ae6"
+  },
+  {
+   "index": 117,
+   "source": "exec-8acf0547-e8c5-4d11-a088-5610973ef734.png",
+   "path": "assets_hd/decor/banner_blue_long_02.png",
+   "category": "decor",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "c24b8aebbdae7f184dadd8424f4603ca15c32f080a8d6da2c89ebd74beabed6c"
+  },
+  {
+   "index": 118,
+   "source": "exec-8b54dc91-0217-421c-9f78-ff763bc78d2b.png",
+   "path": "assets_hd/architecture/stone_block_03.png",
+   "category": "architecture",
+   "size": [
+    1402,
+    1122
+   ],
+   "mode": "RGBA",
+   "sha256": "93d7e5418f6ca0f526f5e04a325697dd672883fe09dddf36672ce8d85c840bcb"
+  },
+  {
+   "index": 119,
+   "source": "exec-8bad329a-bdbb-45e8-bc48-52537fbd4fa6.png",
+   "path": "assets_hd/hero/hero_pose_52.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "01dbb50118b989c427567371f48496194f359fdabbdf1d04687780fa4b50441f"
+  },
+  {
+   "index": 120,
+   "source": "exec-8ca63a7b-fec0-4e17-bf88-849fb0b313bb.png",
+   "path": "assets_hd/hero/hero_pose_53.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "b77ae64fee3b6f199ef128c5baffbac193b721479290e25c14f1f97c94fd7d06"
+  },
+  {
+   "index": 121,
+   "source": "exec-8cbd0745-c149-4480-9f2c-5f6522926430.png",
+   "path": "assets_hd/hero/hero_pose_54.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "ebde59abc3fdfeee9743935893f2fba6f38d96d599718eb901e301307b5f6995"
+  },
+  {
+   "index": 122,
+   "source": "exec-8e1a9432-0fc8-416c-9030-ad9430896c2b.png",
+   "path": "assets_hd/furniture/crate_04.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "8b48ab855248c436444829d1ec8c7d579795f35b29f35e0cb0fd8863fb65d784"
+  },
+  {
+   "index": 123,
+   "source": "exec-8e222cd4-fe2a-4822-8aa6-3bf48df2a1e6.png",
+   "path": "assets_hd/decor/rug_folded_blue_01.png",
+   "category": "decor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "6c8d1b94600dc4063db076f5b7611bdeb83fbd7d5c68415f5cc10dd3677f15b9"
+  },
+  {
+   "index": 124,
+   "source": "exec-93927f1f-6731-4d4a-a2a7-14ad170f0699.png",
+   "path": "assets_hd/plants/flowers_white_06.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "59ac3e467a9d3593037e0b78963cdb3ba2f2c01b136a08d148418d031621c78b"
+  },
+  {
+   "index": 125,
+   "source": "exec-9400d6fc-007c-46e0-9aed-e3c5ef661c55.png",
+   "path": "assets_hd/hero/hero_pose_55.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "2688f37dda9f83918a40cf78efa2ee2d44a132baf95f5dcf1eae092f4b4664c1"
+  },
+  {
+   "index": 126,
+   "source": "exec-9417cb10-ee04-45d7-a5a4-0ee9df2165f0.png",
+   "path": "assets_hd/background/cloud_02.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "467e9f67e88ff758458ebf7f5b878417e78dc151bd6eca27a7c95b537c592407"
+  },
+  {
+   "index": 127,
+   "source": "exec-9525fae3-dd5e-4e0d-a1cb-c0c318721ead.png",
+   "path": "assets_hd/floor/sandstone_tile_06.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "021bfe98a1d03ae58e4ef4e543a638d39f98c50c43f2db10d1d3fead7243ed53"
+  },
+  {
+   "index": 128,
+   "source": "exec-95486928-e39b-43fc-a493-5ac844bae4a4.png",
+   "path": "assets_hd/furniture/bench_side_blue_01.png",
+   "category": "furniture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "7ae56194e6b6050b20ab8383f9cec298c51e6309fbdb6b4bf4d85c90349ccbb6"
+  },
+  {
+   "index": 129,
+   "source": "exec-970b2f7c-b04c-41ae-9514-cd9369e76076.png",
+   "path": "assets_hd/architecture/wall_ivy_banner_03.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "c6d4190e77da92bfa622f36f10e2d36a4f28f24dbccb4b660483607195e89cea"
+  },
+  {
+   "index": 130,
+   "source": "exec-97191a11-175a-4b78-96b2-d9ca4238d49f.png",
+   "path": "assets_hd/hero/hero_pose_56.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "8cd793f3f23871bb5728d040415eb37f62ee155f7bd1fffa04b2cc93b99c5435"
+  },
+  {
+   "index": 131,
+   "source": "exec-98115270-f51f-4c4b-89ba-2cee963dccfd.png",
+   "path": "assets_hd/props/scroll_02.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "b2c2ebee4f5d6e384ee5794d3c8f098b10f7e3ffaacf567acdeef65fa4f91e34"
+  },
+  {
+   "index": 132,
+   "source": "exec-98d72776-4d59-4707-8d99-1bc92c670304.png",
+   "path": "assets_hd/architecture/ruined_door_01.png",
+   "category": "architecture",
+   "size": [
+    1299,
+    1211
+   ],
+   "mode": "RGBA",
+   "sha256": "449d2b0722214e8dab12abad13f282f80f628e7ec179617123b1d8719c959d6a"
+  },
+  {
+   "index": 133,
+   "source": "exec-99ae8d10-91c9-494e-a80b-224934664733.png",
+   "path": "assets_hd/hero/hero_pose_57.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "f4c307c2417e0783c36d75459e0480f85b05a2f2c2fc082a1ae6ef65ced49913"
+  },
+  {
+   "index": 134,
+   "source": "exec-9a4198c1-7dac-413c-a9ab-faad8d3aeee6.png",
+   "path": "assets_hd/hero/hero_pose_58.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "2fbc72f4650c3bdd553399bba05397e02eea493979188e48b1b93d90bb8fba4d"
+  },
+  {
+   "index": 135,
+   "source": "exec-9c5c6753-68e9-469e-8519-87abd92c828a.png",
+   "path": "assets_hd/architecture/arch_02.png",
+   "category": "architecture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "1d8d47586b405726f0148a80f87a0240ffe69a2063996a00a2bd8b89a3ab130a"
+  },
+  {
+   "index": 136,
+   "source": "exec-9dd209d8-55e1-40f7-b401-3f4aa9245b9d.png",
+   "path": "assets_hd/hero/hero_pose_59.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "761cf4942ef59d46d7491348a706bc40d3d1de9324ab8e0e8f611e039e63374c"
+  },
+  {
+   "index": 137,
+   "source": "exec-9e38b936-df04-4a35-bb19-a4c3a99ddeea.png",
+   "path": "assets_hd/props/armillary_sphere_01.png",
+   "category": "props",
+   "size": [
+    1261,
+    1247
+   ],
+   "mode": "RGBA",
+   "sha256": "8134e594597d60b0c984dcd9338e04583f68a3bc9f1146f61b90ae7f1aa3eb11"
+  },
+  {
+   "index": 138,
+   "source": "exec-9e862a47-2f99-4b6d-b67b-dca2d3345d8a.png",
+   "path": "assets_hd/hero/hero_pose_60.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "d8e94918824ae514e76891d3395da74c8bcb77c700a31ae251448a80b40fb9c6"
+  },
+  {
+   "index": 139,
+   "source": "exec-9f042a95-913d-4e19-b2e8-0607250d4244.png",
+   "path": "assets_hd/architecture/column_ivy_06.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "722be70f4d726174010e4b71521f883f8f19c588de526e4f02ad509802d4f6fd"
+  },
+  {
+   "index": 140,
+   "source": "exec-a121732d-1eed-4194-92d3-46e92c7a8c28.png",
+   "path": "assets_hd/hero/hero_pose_61.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "49da721de84df872db0eb4725f38228c1bcc6321e3b8beb0d37d3b2a71a166f3"
+  },
+  {
+   "index": 141,
+   "source": "exec-a2f37493-e351-4cb1-9d89-27110782294f.png",
+   "path": "assets_hd/hero/hero_pose_62.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "7d34dcae3bb7b1aaa77810657b884e4f3a6c13d8f97504a2fc7a1bec618d41fb"
+  },
+  {
+   "index": 142,
+   "source": "exec-a2fe8af9-b2ba-46a0-9211-114e3ce5bd50.png",
+   "path": "assets_hd/furniture/bookcase_large_02.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "9feb1a0e9806ccaa2d8d88c825c6aa52e216dea33d32058c18cf9926fff2598b"
+  },
+  {
+   "index": 143,
+   "source": "exec-a3eef662-4446-45ad-9bf9-fe46d4f7fcce.png",
+   "path": "assets_hd/hero/hero_pose_63.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "1a052b50a99fdfbb3a84be79f6142ef05e51db0fb74bbcb9aac04a23c7023cca"
+  },
+  {
+   "index": 144,
+   "source": "exec-a4b1099a-6377-4293-9d63-89b23925963e.png",
+   "path": "assets_hd/furniture/crate_05.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "b828c5e3def25f0f0dddeba87663610e2c3c799ecdf2c811c9cdf877294e5830"
+  },
+  {
+   "index": 145,
+   "source": "exec-a4c42500-20ee-4807-ba9a-cf51ea36eb1c.png",
+   "path": "assets_hd/hero/hero_pose_64.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "a78b444235b541743d1fb3659365d72f907fc48abfa605d46c70164ebcac03d2"
+  },
+  {
+   "index": 146,
+   "source": "exec-a5a78ecf-c1cb-48a9-b7d4-6a5cda79fc63.png",
+   "path": "assets_hd/hero/hero_pose_65.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "7ba150e8e79cdecd236f46b10275b834081f09fd1309734feec9438db6041383"
+  },
+  {
+   "index": 147,
+   "source": "exec-a7bc62a9-2ed3-452d-aa01-54670825b7a9.png",
+   "path": "assets_hd/plants/ivy_hanging_03.png",
+   "category": "plants",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "58bb48c252b7b3399b89f1bd0eeb74af1ecba750a98704d027c3c19e5a5c9eae"
+  },
+  {
+   "index": 148,
+   "source": "exec-a7e22ed8-3c45-418e-8e47-19dd521d7450.png",
+   "path": "assets_hd/plants/flowers_white_07.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "01cfeed0506ec0e35d201b405c3525f858e98ef4e66aebb6d89ead845f541d81"
+  },
+  {
+   "index": 149,
+   "source": "exec-a7eedf4c-e301-4f54-bb37-6ad455b64385.png",
+   "path": "assets_hd/hero/hero_pose_66.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "1f3da95fd3c99f40f37219355c1895e7bf4268b3f46fd3ef519d51008fd539fc"
+  },
+  {
+   "index": 150,
+   "source": "exec-a9460213-e3f9-4126-9112-ef2f8991b86f.png",
+   "path": "assets_hd/hero/hero_pose_67.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "bd421aba2c95c2fcd0cf3868be505e9ff398b883debca9164e5c4a780944e0f6"
+  },
+  {
+   "index": 151,
+   "source": "exec-aa85a93c-b7bd-4ad3-ab18-0029a60ef191.png",
+   "path": "assets_hd/architecture/wall_ivy_block_01.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "5190e135a59e08af1617b36d006d5d4534f2d06cffef182aaae5efddd1b90120"
+  },
+  {
+   "index": 152,
+   "source": "exec-aac9d3f0-816f-44a6-8c84-11a4946b3f48.png",
+   "path": "assets_hd/props/shell_conch_01.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "6bcd49058145625e9ed40ec50658f55ff4717535eddf2c5e3d7e1f4a79365ed0"
+  },
+  {
+   "index": 153,
+   "source": "exec-ac03dbdf-985d-495c-bae6-9dca9b629cb5.png",
+   "path": "assets_hd/plants/flowers_white_08.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "3e04d802f86ccfbb1ce88398caa33f770cce4300656cc050ddacbd5a79788682"
+  },
+  {
+   "index": 154,
+   "source": "exec-ac6e33ce-1b27-4901-b836-597e31cfcaf9.png",
+   "path": "assets_hd/hero/hero_pose_68.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "b8871635b794728d4802d11a98193666fcd460e87eb92f7a83b48f6cbba5f617"
+  },
+  {
+   "index": 155,
+   "source": "exec-ad3ae4fa-6bd6-40c5-bcb5-78eb9d3d2bdb.png",
+   "path": "assets_hd/furniture/table_large_02.png",
+   "category": "furniture",
+   "size": [
+    1448,
+    1086
+   ],
+   "mode": "RGBA",
+   "sha256": "5c75cd1c6eb9f513ccc306c2d97e67a6f38c6bd37e27d392a4144c2b74e70308"
+  },
+  {
+   "index": 156,
+   "source": "exec-ad48de50-1238-4269-8d70-9d20457bd72c.png",
+   "path": "assets_hd/plants/ivy_hanging_04.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "90857108d748633e3920c3855f81b9370fdcae0b68999e749bfbd8d231da5aa0"
+  },
+  {
+   "index": 157,
+   "source": "exec-b21ebd17-9a12-464f-9229-0f476f6aa811.png",
+   "path": "assets_hd/hero/hero_pose_69.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "f10f86f0321c388a21d4915d70ae937069bd04230f19ad34210de5c02d690113"
+  },
+  {
+   "index": 158,
+   "source": "exec-b2efc34c-24e7-4c90-9aab-ab07bcd7e52e.png",
+   "path": "assets_hd/background/sky_gradient_01.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "46e2a75996da36d8072926ee9f2173c636650242fca4d027e03d9f29ab91b9ed"
+  },
+  {
+   "index": 159,
+   "source": "exec-b4299e64-a282-425b-936b-d70e3369da49.png",
+   "path": "assets_hd/hero/hero_pose_70.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "e9cf88f1aa3fd79bbaf7128250889a457165b41f3403d2b9f47401d74a6dbc7d"
+  },
+  {
+   "index": 160,
+   "source": "exec-b6f833a7-7ae2-4b94-aa88-1431dca4d587.png",
+   "path": "assets_hd/architecture/wall_ivy_banner_04.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "c9fbe511af7aefcdae74ca6a78083d6777175d46e71f65eb84626f14f3d3cb2f"
+  },
+  {
+   "index": 161,
+   "source": "exec-b946ac45-95b7-4073-bc32-39a1aebd80eb.png",
+   "path": "assets_hd/furniture/bookcase_small_01.png",
+   "category": "furniture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "a1552b9acaf7d287fbf728cb7249c29b726f0a20de836021ef9e98461e0f1b5c"
+  },
+  {
+   "index": 162,
+   "source": "exec-b95c9f04-daeb-464a-b51b-691f1711e99b.png",
+   "path": "assets_hd/background/rock_island_02.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "9695e9b6f090740f56d29ce5489d566f0deb38b28f9e94164d1a4ff52065c609"
+  },
+  {
+   "index": 163,
+   "source": "exec-b9acd6d9-2aeb-47ac-bdad-dea823c45550.png",
+   "path": "assets_hd/architecture/stone_block_04.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "f9ef46ddd67cb7cee3818ff3789623b616f4f7527f03969efca3cc170fd1aa77"
+  },
+  {
+   "index": 164,
+   "source": "exec-b9b8c34c-8b3a-4f27-bd2b-4dd8b14bef0f.png",
+   "path": "assets_hd/plants/ivy_hanging_05.png",
+   "category": "plants",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "9333457dc461a23e57b80fb8a3407388b07c4aec24fe1ae712c05587b498badb"
+  },
+  {
+   "index": 165,
+   "source": "exec-bb01b5b2-9b9d-4798-8227-0bd072fbded9.png",
+   "path": "assets_hd/floor/sandstone_tile_07.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "0a1486acf8e72031b3dcb9f0f051326b62184f54ea9e90b0fd6c26142fdd8167"
+  },
+  {
+   "index": 166,
+   "source": "exec-bb9f74e0-eaee-47d6-93db-b980df5102e1.png",
+   "path": "assets_hd/lighting/flame_01.png",
+   "category": "lighting",
+   "size": [
+    1294,
+    1216
+   ],
+   "mode": "RGBA",
+   "sha256": "19a0b1b6873f5ecb54d363e29c2ea3da5a382aebb07d9ee8404548777cb368a3"
+  },
+  {
+   "index": 167,
+   "source": "exec-be7bd808-f6e5-4cf8-bace-1420a3f6bc10.png",
+   "path": "assets_hd/architecture/arch_03.png",
+   "category": "architecture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "ec1e7cb4d0bf0a515f13c46d303a8d6ae6f3a496962f4b8caabb4e542077297a"
+  },
+  {
+   "index": 168,
+   "source": "exec-be9a4bb8-4fb1-4361-888a-eb9172d36698.png",
+   "path": "assets_hd/architecture/wall_ivy_block_02.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "d27fbebaeec3bfdd0ec38bb5957174bc9a0fdcc3706842ed50152114de3c3cfd"
+  },
+  {
+   "index": 169,
+   "source": "exec-c084c54f-136f-4380-8fb7-e1bce45bde22.png",
+   "path": "assets_hd/hero/hero_pose_71.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "f13a8b56c27134cc06cafcc6a6bb594f62e44b6288157e7435107fab24b5a680"
+  },
+  {
+   "index": 170,
+   "source": "exec-c5158b94-a0cd-4f23-acfb-441bb18cfd9b.png",
+   "path": "assets_hd/furniture/bed_front_view_01.png",
+   "category": "furniture",
+   "size": [
+    1086,
+    1448
+   ],
+   "mode": "RGBA",
+   "sha256": "9da6d921aed82be8232dd949cfd592ba52e34e65c5657096487f6677fce3749d"
+  },
+  {
+   "index": 171,
+   "source": "exec-c516e78f-b520-4f6a-a4a2-5dbf1ec7e5f8.png",
+   "path": "assets_hd/background/sea_02.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "bd2873c8abf249e64ed8b259396cd7f4a1d448a0890e32b73c0de1e6bca657ff"
+  },
+  {
+   "index": 172,
+   "source": "exec-c70caf62-c3a4-4a0f-be65-49f0393e4f42.png",
+   "path": "assets_hd/props/fruit_bowl_01.png",
+   "category": "props",
+   "size": [
+    1263,
+    1246
+   ],
+   "mode": "RGBA",
+   "sha256": "bdefbe5c7ab37c76aa8c1721206081a332d7e2f9f910f1fa9ff741748c1ea23e"
+  },
+  {
+   "index": 173,
+   "source": "exec-c786a643-e185-4b25-b1c1-e7d827fd6828.png",
+   "path": "assets_hd/furniture/bench_side_wood_01.png",
+   "category": "furniture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "24baeaa4818d3c34fba22e39ff461de0c4e350aab398d6348b198c017764a2b1"
+  },
+  {
+   "index": 174,
+   "source": "exec-c790246b-2b8e-4184-8bb9-1194eeb9ea0e.png",
+   "path": "assets_hd/furniture/bed_side_view_02.png",
+   "category": "furniture",
+   "size": [
+    1448,
+    1086
+   ],
+   "mode": "RGBA",
+   "sha256": "e54362d4978d7d83f87b6b0f9e40a44c868c306d1ebf0ebcc8345ce32f6bdc72"
+  },
+  {
+   "index": 175,
+   "source": "exec-c852ea00-c932-4b8c-8f2c-ead4f2562b1d.png",
+   "path": "assets_hd/hero/hero_pose_72.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "a43456ac1dcc676770639674ef451632557d511f17808ff20094b1e7cb1de0aa"
+  },
+  {
+   "index": 176,
+   "source": "exec-c8b57b03-f169-4cf7-adde-342eab55f2ec.png",
+   "path": "assets_hd/hero/hero_pose_73.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "db7b96f628a7e01b8626fb1b1a15b5e9e045febd5c2e832c0f40ecee6efda941"
+  },
+  {
+   "index": 177,
+   "source": "exec-c8b81b18-0763-4319-b575-e39e1464bb6c.png",
+   "path": "assets_hd/hero/hero_pose_74.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "ee978f65f6aeffe1f0979b5033d4be95a487adece3f8bef6f9e4fd34f9b936f6"
+  },
+  {
+   "index": 178,
+   "source": "exec-c8ef490c-4707-40a8-ba8b-6a7745e511ef.png",
+   "path": "assets_hd/hero/hero_pose_75.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "058f8fe2728b127fbf850fd75acef1a4b5f532a85932fb0f49230e6e131e96a2"
+  },
+  {
+   "index": 179,
+   "source": "exec-ccee56de-7cb7-47ce-b061-216358aed7cb.png",
+   "path": "assets_hd/hero/hero_pose_76.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "11d9698c251f19df10ef0aaf5379df16e89e303ec2de8a4e8abc9fd466b65f92"
+  },
+  {
+   "index": 180,
+   "source": "exec-d12fc510-aa81-436d-b2c3-997ecf2fefdb.png",
+   "path": "assets_hd/hero/hero_pose_77.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "903d1ebb0c5f1466fbc998c8184cc383de6f9ebecfd5caaa694f4b6202260170"
+  },
+  {
+   "index": 181,
+   "source": "exec-d1e2c5bc-cdd7-4fdd-b6db-1f15645cc7b7.png",
+   "path": "assets_hd/furniture/bench_blue_runner_04.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "f04db853684a95031886e2fee69e543422e44674d91fb439dccced94adfd44d1"
+  },
+  {
+   "index": 182,
+   "source": "exec-d39960d9-752d-4563-8751-13bacc3aab8f.png",
+   "path": "assets_hd/background/rock_island_03.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "5b74a307d2a6712e57ed49ddfb6ef18dac783d848f9f6b4ecfb7e9299349d05e"
+  },
+  {
+   "index": 183,
+   "source": "exec-d3a9376a-1555-478a-a253-0e5b66e651aa.png",
+   "path": "assets_hd/background/rock_island_04.png",
+   "category": "background",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "28bfb2d7b0b959e67bcfc1c8baf5587b481cdb2e0c3da2d92962d86c07de90c0"
+  },
+  {
+   "index": 184,
+   "source": "exec-d4346952-0d08-4c13-8e51-538cd3330e69.png",
+   "path": "assets_hd/floor/sandstone_tile_08.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "f6d53518d0fffda6394246c132bc61d5cdfdb0404d4c4a7aa59f3b1c31c5423f"
+  },
+  {
+   "index": 185,
+   "source": "exec-d53c33f4-167e-41be-b612-ff562b725da7.png",
+   "path": "assets_hd/hero/hero_pose_78.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "892f1680a0c4f72b466f4e4c1125d2ee6ab502663613ae4e8530ed4bbd42d4ac"
+  },
+  {
+   "index": 186,
+   "source": "exec-d5d04737-05bf-4341-a633-f76ba55d98be.png",
+   "path": "assets_hd/furniture/bench_plain_01.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "079bfcb16dedfe449abb91fa78b380af26051373f411b34d7caa04e466e0b126"
+  },
+  {
+   "index": 187,
+   "source": "exec-d7ecf6cf-6cdd-4e72-b09a-9309771126dd.png",
+   "path": "assets_hd/furniture/bedside_chest_drawer_04.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "99db912c08838df5f99efbf1e8c59258722d473e7e24efeba89abb31a4377418"
+  },
+  {
+   "index": 188,
+   "source": "exec-d87d8b8a-ade8-4559-9324-e887ff416f71.png",
+   "path": "assets_hd/floor/sandstone_tile_09.png",
+   "category": "floor",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGB",
+   "sha256": "981044cfbb6791a66ae208427307e6a00d51ef0dcc2a966c28119f541c69520e"
+  },
+  {
+   "index": 189,
+   "source": "exec-d912db1e-e188-4fc7-a1d7-70cb114e28b2.png",
+   "path": "assets_hd/furniture/bookcase_large_03.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "c1a6c3077d853cebe6a88dd29a55bc75a4937da7c1f8cdfd5137dee40432aefc"
+  },
+  {
+   "index": 190,
+   "source": "exec-dacc41ea-c66a-4b83-9a69-9c931e158c1a.png",
+   "path": "assets_hd/furniture/bookcase_small_02.png",
+   "category": "furniture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "8b8d50963f89011c4ac06a498226778d7afa6ba7d47aeaf5c05f16fec98285fd"
+  },
+  {
+   "index": 191,
+   "source": "exec-dafd44e1-3c74-475a-b170-4bb89d1f57de.png",
+   "path": "assets_hd/architecture/wall_ivy_banner_05.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "8077fb91e98a52a100cb4d3139f42c170a607d558ed6d4cc60460771259fdb48"
+  },
+  {
+   "index": 192,
+   "source": "exec-db2e3263-f1db-415c-bc38-c5527c644920.png",
+   "path": "assets_hd/hero/hero_pose_79.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "56271458ad37393c1907a0247c173996a07efd9f34c42e76e155df1f4befc279"
+  },
+  {
+   "index": 193,
+   "source": "exec-de6b9db3-5efe-4d9f-aa76-77696f925347.png",
+   "path": "assets_hd/hero/hero_pose_80.png",
+   "category": "hero",
+   "size": [
+    1239,
+    1269
+   ],
+   "mode": "RGBA",
+   "sha256": "a8d25d2592e103d39c43685be94a81824ccdc79353ecb39931d57e3e7a626a3a"
+  },
+  {
+   "index": 194,
+   "source": "exec-dec5afc4-1429-4765-af32-b53a010b5568.png",
+   "path": "assets_hd/decor/rug_rect_compass_01.png",
+   "category": "decor",
+   "size": [
+    1086,
+    1448
+   ],
+   "mode": "RGBA",
+   "sha256": "42ed843f7480fbd6a9ca64d67d7574c54f616b2ddcd37b7eb0b4c8225834cf3f"
+  },
+  {
+   "index": 195,
+   "source": "exec-ded1bd3d-ed7e-4b46-a966-25370043bf24.png",
+   "path": "assets_hd/hero/hero_pose_81.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "49a9e6b9dd33f552045feb4fdb85b34285202eb264dd7f4fe23719f0a09c069d"
+  },
+  {
+   "index": 196,
+   "source": "exec-e0f6161f-847b-4632-ad96-01c2cf165294.png",
+   "path": "assets_hd/architecture/column_ivy_07.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "da5684751623d723df54c20ce341b1e0b2292d023ba5af80482a37864d1166ba"
+  },
+  {
+   "index": 197,
+   "source": "exec-e114838f-56a0-4213-8cd6-cb26f81430a4.png",
+   "path": "assets_hd/hero/hero_pose_82.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "826653ba4b606c9d11b15e28affb21bc772b043bc705400b01f15c059643e139"
+  },
+  {
+   "index": 198,
+   "source": "exec-e2139f31-b22a-4779-ae3e-eb52d53ad4c3.png",
+   "path": "assets_hd/hero/hero_pose_83.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "14b8070429808715a9e0d2913e6854340c7ef92bcb5c6ad9426bade8f33cb1d2"
+  },
+  {
+   "index": 199,
+   "source": "exec-e4cfa178-5856-4805-bb3d-e86612134f13.png",
+   "path": "assets_hd/hero/hero_pose_84.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "87820330da0a675cbb46b484cd926a6764efd444c33dc62495ea932c5d86a6a7"
+  },
+  {
+   "index": 200,
+   "source": "exec-e534a7d7-92e9-479c-8ec7-e0fa1b05ec4c.png",
+   "path": "assets_hd/hero/hero_pose_85.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "02f5f96717e88d8bcb5f46bcae82cfb3a91fbca1c8c898a2994ab41f88b98378"
+  },
+  {
+   "index": 201,
+   "source": "exec-e57a3228-b9e7-4675-a9c0-8053a17cf633.png",
+   "path": "assets_hd/hero/hero_pose_86.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "9a4592ef42754f8533c14fa59ab870180ae41bac85ab408015dc18230dfd3fc0"
+  },
+  {
+   "index": 202,
+   "source": "exec-e7484f4b-72b1-4316-9b27-37404fe69b7c.png",
+   "path": "assets_hd/hero/hero_pose_87.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "6f0aa24c676a5614b6fa2b3dd9b71ba6bb1901fb01ec870fb67bd62adfe965be"
+  },
+  {
+   "index": 203,
+   "source": "exec-e80c8d42-e3e5-4922-b235-b8042deeca1a.png",
+   "path": "assets_hd/hero/hero_pose_88.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "affb4df26eba33240e3aaff4d747b4073451da3406bd7fce9b0db0d32c6a981b"
+  },
+  {
+   "index": 204,
+   "source": "exec-e8321005-2bc6-4de2-b36b-0687a2a5d933.png",
+   "path": "assets_hd/hero/hero_pose_89.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "05dbff3dda61ac4c1ad3b71284e3d3feec63fdbb7b8f4c853c02b44ea20323c4"
+  },
+  {
+   "index": 205,
+   "source": "exec-e8f9fa5d-48ea-420d-8389-a2768d3d2c70.png",
+   "path": "assets_hd/furniture/crate_06.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "86c6755757fbb711e86148c3339727fbcb6e052c94f9667429c22a9955fc2bdc"
+  },
+  {
+   "index": 206,
+   "source": "exec-eb8d27b9-4fdd-40f7-ae93-d38cb5be34cd.png",
+   "path": "assets_hd/furniture/bed_front_view_02.png",
+   "category": "furniture",
+   "size": [
+    1086,
+    1448
+   ],
+   "mode": "RGBA",
+   "sha256": "02f0e2cf5b6de6a8884d69049c53e3845147691210f66d501cb2c54ade00a8a2"
+  },
+  {
+   "index": 207,
+   "source": "exec-ebe63809-dcab-447d-abfb-1004acacd67a.png",
+   "path": "assets_hd/hero/hero_pose_90.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "d21da628d18ad1aaddebf461ceb0f7f1cb9b1594d381eed1a92cd814224bd40c"
+  },
+  {
+   "index": 208,
+   "source": "exec-ed101424-15b4-4878-ad8d-f3b05ed2cdba.png",
+   "path": "assets_hd/hero/hero_pose_91.png",
+   "category": "hero",
+   "size": [
+    1247,
+    1261
+   ],
+   "mode": "RGBA",
+   "sha256": "40e8e3abedd99fb8ac38bd49d54e254fdcc209ae613516abc92e5e086371dcc2"
+  },
+  {
+   "index": 209,
+   "source": "exec-ee2aea30-816e-4eac-bc39-13ec4b00e4b6.png",
+   "path": "assets_hd/architecture/stone_block_05.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "9ca84822ee2e64c4c5c4aea8f2867a2b73ac34ad77d2f1c8673300148994e799"
+  },
+  {
+   "index": 210,
+   "source": "exec-f0f2c285-5e5e-43d0-84f6-9ec18d0a6e60.png",
+   "path": "assets_hd/lighting/lantern_bracket_01.png",
+   "category": "lighting",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "444a7e26a04a76b6bac8aab7d3b582d83ae4c2c4dccc683856950e7dce47668a"
+  },
+  {
+   "index": 211,
+   "source": "exec-f11ff8bb-6a1b-42fe-b062-57f8ca8bae9c.png",
+   "path": "assets_hd/hero/hero_pose_92.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "d2365f609e51093aabf20e44367e2d3fdf9b9319f3aee4373260ac7fe355b764"
+  },
+  {
+   "index": 212,
+   "source": "exec-f150f3dd-5de0-4566-88eb-7ff5fb8257e7.png",
+   "path": "assets_hd/hero/hero_pose_93.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "89b8a4778ffbfe7e3068b9a448b24da1113a339e2a26729ae61f96d0b2e908e3"
+  },
+  {
+   "index": 213,
+   "source": "exec-f24cf10b-e25f-44bb-aaa5-ec5d4d498bb6.png",
+   "path": "assets_hd/furniture/bookcase_small_03.png",
+   "category": "furniture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "f5237cb61e4c7464f0aae6b961f0f3a19971e9783531535dbc77e2644bc9313b"
+  },
+  {
+   "index": 214,
+   "source": "exec-f2c4249a-dd66-4b6f-9638-3e12e2255704.png",
+   "path": "assets_hd/furniture/crate_07.png",
+   "category": "furniture",
+   "size": [
+    1402,
+    1122
+   ],
+   "mode": "RGBA",
+   "sha256": "2a6f49c42b4d3cdebbbb070efbc9eeb9295439e94e8b612beadddc83d2fa1168"
+  },
+  {
+   "index": 215,
+   "source": "exec-f307d865-6052-49e9-9fad-43194a2b1ef5.png",
+   "path": "assets_hd/props/starfish_coral_01.png",
+   "category": "props",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "63ce3120728a732380c8461217e3d0c428b04d6eeb240ed3f6e91d8e6248417e"
+  },
+  {
+   "index": 216,
+   "source": "exec-f5fadfaa-c43a-4778-bd68-e84cab60d53b.png",
+   "path": "assets_hd/hero/hero_pose_94.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "a08fc3b3a3e96e95b10aba366aa3907d5c2a5c3d4d0c6a465618f6b9f5091178"
+  },
+  {
+   "index": 217,
+   "source": "exec-f74c117e-9fd0-422e-a3f2-8e782faa0448.png",
+   "path": "assets_hd/hero/hero_pose_95.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "078b0cd5a088db31cff0bd61c7e6fbd169a7daa34380b4b5c1103cb435660266"
+  },
+  {
+   "index": 218,
+   "source": "exec-f760d370-94db-4f8d-90cb-34a09ff17638.png",
+   "path": "assets_hd/hero/hero_pose_96.png",
+   "category": "hero",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "cbcd8d63f865e97a2e6b974a1e39f1af6f0c832cadb52b14c9596c38634f6d9d"
+  },
+  {
+   "index": 219,
+   "source": "exec-fa42b3d5-ea17-4480-8596-4c3b914505e3.png",
+   "path": "assets_hd/furniture/crate_08.png",
+   "category": "furniture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "ee7894e040644205e08656858a5106c613303a89ba93cc63cdd03dfd4719cefa"
+  },
+  {
+   "index": 220,
+   "source": "exec-fcd5074c-6006-433a-aa50-4948b803dfb0.png",
+   "path": "assets_hd/furniture/table_small_02.png",
+   "category": "furniture",
+   "size": [
+    1086,
+    1448
+   ],
+   "mode": "RGBA",
+   "sha256": "44c70fbae4683d921a9d421aea3d79e842fe3c4b0593a6177e97bf5fa35c0a11"
+  },
+  {
+   "index": 221,
+   "source": "exec-fe1bde58-c44f-43f4-b552-4fdad6d524e8.png",
+   "path": "assets_hd/architecture/wall_ivy_banner_06.png",
+   "category": "architecture",
+   "size": [
+    887,
+    1774
+   ],
+   "mode": "RGBA",
+   "sha256": "ab05f73205c440b3ce682ecf35115c31a40eebdf96a39b60a292acc0f0281316"
+  },
+  {
+   "index": 222,
+   "source": "exec-fe26eeca-2d20-4ab0-9b65-0fbbfaedd7c5.png",
+   "path": "assets_hd/architecture/arch_04.png",
+   "category": "architecture",
+   "size": [
+    1254,
+    1254
+   ],
+   "mode": "RGBA",
+   "sha256": "77835bbb2f8307e9ca8d4de6e0d786aa16c41ea1a0c0d48a829b6ef46ca4bda1"
+  },
+  {
+   "index": 223,
+   "source": "exec-fe68d41a-3ed5-4ee0-a244-138bfe4449ac.png",
+   "path": "assets_hd/furniture/bookcase_armillary_02.png",
+   "category": "furniture",
+   "size": [
+    1774,
+    887
+   ],
+   "mode": "RGBA",
+   "sha256": "d4a798bdc10b20ead79943c2570ac8018dbc7304f5a3cf6900ee4557046d2c02"
+  },
+  {
+   "index": 224,
+   "source": "exec-ffb05857-3a98-4302-9feb-8b79e7fc4c03.png",
+   "path": "assets_hd/weapons/sword_02.png",
+   "category": "weapons",
+   "size": [
+    1024,
+    1536
+   ],
+   "mode": "RGBA",
+   "sha256": "7c7629263d2a2095cabdf3d93364568a3fc760b65bb3e95b03312758ad77118e"
+  }
+ ]
+}

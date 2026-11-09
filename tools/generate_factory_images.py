@@ -162,12 +162,14 @@ class Generator:
 
     def call(self, method, path, **kwargs):
         status, body = self.t.request(method, path, **kwargs)
-        if status == 402 or b"insufficient" in body.lower()[:400] and b"credit" in body.lower()[:400]:
+        head = body.lower()[:400]
+        if status == 402 or b"insufficient_user_quota" in head or b"insufficient balance" in head or (
+                b"insufficient" in head and b"credit" in head):
             raise CreditsExhausted("insufficient credits")
         if status == 429 or status >= 500:
             raise ApiError("HTTP %d" % status, retryable=True)
         if status >= 400:
-            raise ApiError("HTTP %d" % status)
+            raise ApiError("HTTP %d: %s" % (status, body[:200].decode("utf-8", "replace")))
         return body
 
     def request_image(self, item):

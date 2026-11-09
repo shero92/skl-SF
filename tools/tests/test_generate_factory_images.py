@@ -108,6 +108,12 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(saved["items"]["A1"]["status"], "stopped_no_credits")
         self.assertNotIn("A2", saved["items"])
 
+    def test_403_insufficient_quota_is_treated_as_no_credits(self):
+        body = b'{"error":{"message":"Insufficient balance","code":"insufficient_user_quota"}}'
+        made, transport = self.generator([(403, body)])
+        self.assertEqual(made.run([self.item], False, False), gen.EXIT_CREDITS)
+        self.assertEqual(len(transport.calls), 1)
+
     def test_429_is_retried_then_succeeds(self):
         made, transport = self.generator([(429, b"{}"), sync_response(png_bytes())])
         self.assertEqual(made.run([self.item], False, False), 0)
