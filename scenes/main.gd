@@ -51,6 +51,9 @@ func _ready() -> void:
         var npc := RoomNpc.new()
         npc.display_name = String(info.get("name", "NPC"))
         npc.flip_sprite = bool(info.get("flip_h", false))
+        npc.character = String(info.get("character", ""))
+        npc.facing = String(info.get("facing", "down"))
+        npc.sprite_scale = float(info.get("scale", 0.8))
         npc.position = Vector2(float(info.get("x", 0)), float(info.get("y", 0)))
         room.get_node("Entities").add_child(npc)
         interactions.append({

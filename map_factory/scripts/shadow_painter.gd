@@ -135,7 +135,10 @@ static func paint(source: Image, light_config: Dictionary = {}) -> Dictionary:
 			if a > 0.003:
 				result.set_pixel(ox, oy, Color(tint.r, tint.g, tint.b, clampf(a, 0.0, 1.0)))
 	var used_longest := maxi(width, height)
-	return {"image": result, "offset": origin, "source_scale": float(original_longest) / float(used_longest)}
+	# Rows of transparent padding below the lowest opaque pixel: the shadow must start at the
+	# object's real base, not at the bottom edge of the texture (objects looked like they hovered).
+	var foot_gap := float(height) - float(foot_y) - 0.5
+	return {"image": result, "offset": origin, "source_scale": float(original_longest) / float(used_longest), "foot_gap": foot_gap}
 
 
 static func _row_bounds(image: Image) -> Dictionary:
@@ -225,10 +228,12 @@ static func build_layer(room: Node2D, light_config: Dictionary = {}) -> Node2D:
 		# The painted image is in (possibly down-sampled) source pixels: scale it back up.
 		var down := float(painted.get("source_scale", 1.0))
 		shadow.scale = scale * down
-		shadow.position = foot + Vector2(painted["offset"]) * shadow.scale
+		var base := foot - Vector2(0.0, float(painted.get("foot_gap", 0.0)) * shadow.scale.y)
+		shadow.position = base + Vector2(painted["offset"]) * shadow.scale
 		shadow.set_meta("owner_ref", sprite.get_instance_id())
 		shadow.set_meta("owner_offset", shadow.position - foot)
 		shadow.set_meta("layer", 4)
+		shadow.set_meta("foot_y", base.y)
 		layer.add_child(shadow)
 	return layer
 

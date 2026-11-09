@@ -5,7 +5,7 @@
   {
    "index": 0,
    "source": "exec-00373f02-6fb8-43a3-aa37-1856f0930664.png",
-   "path": "assets_hd/hero/hero_pose_01.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_01.png",
    "category": "hero",
    "size": [
     1254,
@@ -17,7 +17,7 @@
   {
    "index": 1,
    "source": "exec-01ed02bb-19c3-433f-9ffd-c3ce15b49d9f.png",
-   "path": "assets_hd/hero/hero_pose_02.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_02.png",
    "category": "hero",
    "size": [
     1254,
@@ -29,7 +29,7 @@
   {
    "index": 2,
    "source": "exec-02dd1e9a-018f-4dd2-aeac-3b20dacf710f.png",
-   "path": "assets_hd/hero/hero_pose_03.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_03.png",
    "category": "hero",
    "size": [
     1254,
@@ -41,7 +41,7 @@
   {
    "index": 3,
    "source": "exec-031b52a9-50a9-4145-9be1-82f7b9c5f065.png",
-   "path": "assets_hd/furniture/bench_blue_runner_01.png",
+   "path": "assets_hd/furniture/bench_blue_runner/bench_blue_runner_01.png",
    "category": "furniture",
    "size": [
     887,
@@ -53,7 +53,7 @@
   {
    "index": 4,
    "source": "exec-039bda54-bc65-4f0c-8f88-c3efd9b7eb43.png",
-   "path": "assets_hd/hero/hero_pose_04.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_04.png",
    "category": "hero",
    "size": [
     1254,
@@ -65,7 +65,7 @@
   {
    "index": 5,
    "source": "exec-06d00c78-d721-48bd-99d4-4b569bda4a29.png",
-   "path": "assets_hd/hero/hero_pose_05.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_05.png",
    "category": "hero",
    "size": [
     1254,
@@ -77,7 +77,7 @@
   {
    "index": 6,
    "source": "exec-074ed3d2-f09a-4b7f-af9b-e2a606ec3984.png",
-   "path": "assets_hd/props/open_book_01.png",
+   "path": "assets_hd/props/open_book/open_book_01.png",
    "category": "props",
    "size": [
     1536,
@@ -89,7 +89,7 @@
   {
    "index": 7,
    "source": "exec-077c60fd-906b-40d4-88b5-0deac6676b28.png",
-   "path": "assets_hd/hero/hero_pose_06.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_06.png",
    "category": "hero",
    "size": [
     1254,
@@ -101,7 +101,7 @@
   {
    "index": 8,
    "source": "exec-09146a45-dc0d-4c3e-939c-646eabc6fa30.png",
-   "path": "assets_hd/hero/hero_pose_07.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_07.png",
    "category": "hero",
    "size": [
     1254,
@@ -113,7 +113,7 @@
   {
    "index": 9,
    "source": "exec-095e69c7-6dd4-4cd2-aedd-ba3abac3588d.png",
-   "path": "assets_hd/floor/sandstone_tile_01.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_01.png",
    "category": "floor",
    "size": [
     1254,
@@ -125,7 +125,7 @@
   {
    "index": 10,
    "source": "exec-0a020c78-0537-4635-adde-3e6ea2002a25.png",
-   "path": "assets_hd/lighting/wall_lantern_01.png",
+   "path": "assets_hd/lighting/wall_lantern/wall_lantern_01.png",
    "category": "lighting",
    "size": [
     1254,
@@ -137,7 +137,7 @@
   {
    "index": 11,
    "source": "exec-0a8ef8ba-a9a2-4e5d-8254-e9896fd62c46.png",
-   "path": "assets_hd/furniture/bedside_chest_drawer_01.png",
+   "path": "assets_hd/furniture/bedside_chest_drawer/bedside_chest_drawer_01.png",
    "category": "furniture",
    "size": [
     1254,
@@ -149,7 +149,7 @@
   {
    "index": 12,
    "source": "exec-0aac3a82-836b-46de-826d-9bc2e2703b6e.png",
-   "path": "assets_hd/furniture/bench_vertical_01.png",
+   "path": "assets_hd/furniture/bench_vertical/bench_vertical_01.png",
    "category": "furniture",
    "size": [
     1774,
@@ -161,7 +161,7 @@
   {
    "index": 13,
    "source": "exec-0eeb4ec0-c3bc-4c07-b45e-55e24897ea19.png",
-   "path": "assets_hd/hero/hero_pose_08.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_08.png",
    "category": "hero",
    "size": [
     1254,
@@ -173,7 +173,7 @@
   {
    "index": 14,
    "source": "exec-0f32429c-eb0c-4113-af9c-55356604bfe7.png",
-   "path": "assets_hd/hero/hero_pose_09.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_09.png",
    "category": "hero",
    "size": [
     1254,
@@ -185,7 +185,7 @@
   {
    "index": 15,
    "source": "exec-127510b7-e378-40b8-8373-c1a1315898ec.png",
-   "path": "assets_hd/architecture/stone_block_01.png",
+   "path": "assets_hd/architecture/stone_block/stone_block_01.png",
    "category": "architecture",
    "size": [
     1402,
@@ -197,7 +197,7 @@
   {
    "index": 16,
    "source": "exec-12aaad3d-3d18-4a6b-bce1-5429c9f3cf55.png",
-   "path": "assets_hd/hero/hero_pose_10.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_10.png",
    "category": "hero",
    "size": [
     1254,
@@ -209,7 +209,7 @@
   {
    "index": 17,
    "source": "exec-14227ef2-634e-4eb6-9f01-f2c731ee4d48.png",
-   "path": "assets_hd/props/vase_blue_01.png",
+   "path": "assets_hd/props/vase_blue/vase_blue_01.png",
    "category": "props",
    "size": [
     1254,
@@ -221,7 +221,7 @@
   {
    "index": 18,
    "source": "exec-14958d53-23c6-463b-88eb-042175bd7f16.png",
-   "path": "assets_hd/architecture/stone_block_02.png",
+   "path": "assets_hd/architecture/stone_block/stone_block_02.png",
    "category": "architecture",
    "size": [
     887,
@@ -233,7 +233,7 @@
   {
    "index": 19,
    "source": "exec-155da9ed-712b-4e11-bedf-cf0dc4f66b17.png",
-   "path": "assets_hd/plants/flowers_white_01.png",
+   "path": "assets_hd/plants/flowers_white/flowers_white_01.png",
    "category": "plants",
    "size": [
     1254,
@@ -245,7 +245,7 @@
   {
    "index": 20,
    "source": "exec-15d78d47-b4d1-4aa0-8945-6fce14df6c61.png",
-   "path": "assets_hd/plants/ivy_hanging_01.png",
+   "path": "assets_hd/plants/ivy_hanging/ivy_hanging_01.png",
    "category": "plants",
    "size": [
     1254,
@@ -257,7 +257,7 @@
   {
    "index": 21,
    "source": "exec-1719a859-b016-4baa-ac51-b8039eea5154.png",
-   "path": "assets_hd/plants/flowers_white_02.png",
+   "path": "assets_hd/plants/flowers_white/flowers_white_02.png",
    "category": "plants",
    "size": [
     1254,
@@ -269,7 +269,7 @@
   {
    "index": 22,
    "source": "exec-1801b2d0-261b-4e88-8a0d-4590c1cd19f3.png",
-   "path": "assets_hd/furniture/table_small_01.png",
+   "path": "assets_hd/furniture/table_small/table_small_01.png",
    "category": "furniture",
    "size": [
     1086,
@@ -281,7 +281,7 @@
   {
    "index": 23,
    "source": "exec-1912a7cb-c661-4ad5-8d9e-e41f947802bb.png",
-   "path": "assets_hd/floor/sandstone_tile_02.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_02.png",
    "category": "floor",
    "size": [
     1254,
@@ -293,7 +293,7 @@
   {
    "index": 24,
    "source": "exec-1b5c5100-dfc4-4026-9f30-ee87ef7a36a1.png",
-   "path": "assets_hd/hero/hero_pose_11.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_11.png",
    "category": "hero",
    "size": [
     1247,
@@ -305,7 +305,7 @@
   {
    "index": 25,
    "source": "exec-1baf7f4c-26fa-41d7-a7e9-150da2049afc.png",
-   "path": "assets_hd/architecture/column_ivy_01.png",
+   "path": "assets_hd/architecture/column_ivy/column_ivy_01.png",
    "category": "architecture",
    "size": [
     887,
@@ -317,7 +317,7 @@
   {
    "index": 26,
    "source": "exec-1bfef93e-557a-45cf-be7b-b9da111895c1.png",
-   "path": "assets_hd/lighting/candle_cluster_01.png",
+   "path": "assets_hd/lighting/candle_cluster/candle_cluster_01.png",
    "category": "lighting",
    "size": [
     1254,
@@ -329,7 +329,7 @@
   {
    "index": 27,
    "source": "exec-1cdc5073-1b61-414c-bc04-860ed0fe4dc5.png",
-   "path": "assets_hd/hero/hero_pose_12.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_12.png",
    "category": "hero",
    "size": [
     1254,
@@ -341,7 +341,7 @@
   {
    "index": 28,
    "source": "exec-1defb2a4-51e5-456c-911c-b6ecdaed3da9.png",
-   "path": "assets_hd/furniture/crate_01.png",
+   "path": "assets_hd/furniture/crate/crate_01.png",
    "category": "furniture",
    "size": [
     1254,
@@ -353,7 +353,7 @@
   {
    "index": 29,
    "source": "exec-22196225-a9f2-412b-bbf2-b4b6cac37a71.png",
-   "path": "assets_hd/props/open_map_01.png",
+   "path": "assets_hd/props/open_map/open_map_01.png",
    "category": "props",
    "size": [
     1447,
@@ -365,7 +365,7 @@
   {
    "index": 30,
    "source": "exec-231846cd-a540-4fbc-beec-141becf5c846.png",
-   "path": "assets_hd/background/rock_island_01.png",
+   "path": "assets_hd/background/rock_island/rock_island_01.png",
    "category": "background",
    "size": [
     1254,
@@ -377,7 +377,7 @@
   {
    "index": 31,
    "source": "exec-23ae8a7a-bed6-4f14-871e-b4866aacde0a.png",
-   "path": "assets_hd/hero/hero_pose_13.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_13.png",
    "category": "hero",
    "size": [
     1254,
@@ -389,7 +389,7 @@
   {
    "index": 32,
    "source": "exec-241210cf-ef89-4685-9cb5-9fb10edccccb.png",
-   "path": "assets_hd/hero/hero_pose_14.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_14.png",
    "category": "hero",
    "size": [
     1254,
@@ -401,7 +401,7 @@
   {
    "index": 33,
    "source": "exec-2501aac4-9001-4402-bf62-27af4cd902e7.png",
-   "path": "assets_hd/floor/sandstone_tile_03.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_03.png",
    "category": "floor",
    "size": [
     1254,
@@ -413,7 +413,7 @@
   {
    "index": 34,
    "source": "exec-256cd605-97fd-4e88-bae2-e0fa61bc3207.png",
-   "path": "assets_hd/architecture/column_ivy_02.png",
+   "path": "assets_hd/architecture/column_ivy/column_ivy_02.png",
    "category": "architecture",
    "size": [
     887,
@@ -425,7 +425,7 @@
   {
    "index": 35,
    "source": "exec-25746c6f-ca7c-4f50-9cf1-dfa7e4ebe52d.png",
-   "path": "assets_hd/hero/hero_pose_15.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_15.png",
    "category": "hero",
    "size": [
     1254,
@@ -437,7 +437,7 @@
   {
    "index": 36,
    "source": "exec-282e7526-4357-404a-a629-b710fbe7781a.png",
-   "path": "assets_hd/architecture/wall_ivy_banner_01.png",
+   "path": "assets_hd/architecture/wall_ivy_banner/wall_ivy_banner_01.png",
    "category": "architecture",
    "size": [
     887,
@@ -449,7 +449,7 @@
   {
    "index": 37,
    "source": "exec-284ff640-e0f3-4500-a779-0322e4a6bf1e.png",
-   "path": "assets_hd/background/cliff_base_01.png",
+   "path": "assets_hd/background/cliff_base/cliff_base_01.png",
    "category": "background",
    "size": [
     1254,
@@ -461,7 +461,7 @@
   {
    "index": 38,
    "source": "exec-293dfa97-d276-4b73-9c80-53ba32cc9077.png",
-   "path": "assets_hd/furniture/bed_side_view_01.png",
+   "path": "assets_hd/furniture/bed_side_view/bed_side_view_01.png",
    "category": "furniture",
    "size": [
     1448,
@@ -473,7 +473,7 @@
   {
    "index": 39,
    "source": "exec-29c6aabf-8124-4a5d-8e1b-39c43b01f6d4.png",
-   "path": "assets_hd/plants/ivy_hanging_02.png",
+   "path": "assets_hd/plants/ivy_hanging/ivy_hanging_02.png",
    "category": "plants",
    "size": [
     1254,
@@ -485,7 +485,7 @@
   {
    "index": 40,
    "source": "exec-2bde0a8f-4f95-491d-b8d5-8dd33c104735.png",
-   "path": "assets_hd/hero/hero_pose_16.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_16.png",
    "category": "hero",
    "size": [
     1254,
@@ -497,7 +497,7 @@
   {
    "index": 41,
    "source": "exec-3187999c-826f-41a0-86f9-509f7c9c3bc3.png",
-   "path": "assets_hd/hero/hero_pose_17.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_17.png",
    "category": "hero",
    "size": [
     1254,
@@ -509,7 +509,7 @@
   {
    "index": 42,
    "source": "exec-32632f93-8dc2-4d4a-b47b-46a870a30342.png",
-   "path": "assets_hd/lighting/wall_lantern_02.png",
+   "path": "assets_hd/lighting/wall_lantern/wall_lantern_02.png",
    "category": "lighting",
    "size": [
     1254,
@@ -521,7 +521,7 @@
   {
    "index": 43,
    "source": "exec-32c1e5ad-a38d-417f-b68b-a0edd5578af8.png",
-   "path": "assets_hd/architecture/column_ivy_03.png",
+   "path": "assets_hd/architecture/column_ivy/column_ivy_03.png",
    "category": "architecture",
    "size": [
     887,
@@ -533,7 +533,7 @@
   {
    "index": 44,
    "source": "exec-34898a06-f6ad-4636-826f-cb4faa4a2314.png",
-   "path": "assets_hd/hero/hero_pose_18.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_18.png",
    "category": "hero",
    "size": [
     1254,
@@ -545,7 +545,7 @@
   {
    "index": 45,
    "source": "exec-3545ff63-a22c-4199-9adf-146fda43b896.png",
-   "path": "assets_hd/weapons/sword_01.png",
+   "path": "assets_hd/weapons/sword/sword_01.png",
    "category": "weapons",
    "size": [
     1024,
@@ -557,7 +557,7 @@
   {
    "index": 46,
    "source": "exec-362f7b5f-9b47-41c3-a00d-ed365db3e8c9.png",
-   "path": "assets_hd/props/scroll_01.png",
+   "path": "assets_hd/props/scroll/scroll_01.png",
    "category": "props",
    "size": [
     1254,
@@ -569,7 +569,7 @@
   {
    "index": 47,
    "source": "exec-373b965e-00a8-4290-9757-d2ca854f1c6c.png",
-   "path": "assets_hd/furniture/bedside_chest_drawer_02.png",
+   "path": "assets_hd/furniture/bedside_chest_drawer/bedside_chest_drawer_02.png",
    "category": "furniture",
    "size": [
     1254,
@@ -581,7 +581,7 @@
   {
    "index": 48,
    "source": "exec-384478bf-513f-49f7-915d-a66baa1f2388.png",
-   "path": "assets_hd/plants/flowers_blue_01.png",
+   "path": "assets_hd/plants/flowers_blue/flowers_blue_01.png",
    "category": "plants",
    "size": [
     1254,
@@ -593,7 +593,7 @@
   {
    "index": 49,
    "source": "exec-3c78578c-4ded-48c6-bf7a-911312d289ff.png",
-   "path": "assets_hd/hero/hero_pose_19.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_19.png",
    "category": "hero",
    "size": [
     1254,
@@ -605,7 +605,7 @@
   {
    "index": 50,
    "source": "exec-3d67a125-a8fe-447f-96de-d84b92fe18ba.png",
-   "path": "assets_hd/furniture/bedside_chest_drawer_03.png",
+   "path": "assets_hd/furniture/bedside_chest_drawer/bedside_chest_drawer_03.png",
    "category": "furniture",
    "size": [
     1254,
@@ -617,7 +617,7 @@
   {
    "index": 51,
    "source": "exec-3de14633-2c00-40c8-9f76-c6df7d25309c.png",
-   "path": "assets_hd/hero/hero_pose_20.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_20.png",
    "category": "hero",
    "size": [
     1254,
@@ -629,7 +629,7 @@
   {
    "index": 52,
    "source": "exec-3f4c1a76-b56c-40a0-bba3-cd6bdf5fef72.png",
-   "path": "assets_hd/hero/hero_pose_21.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_21.png",
    "category": "hero",
    "size": [
     1254,
@@ -641,7 +641,7 @@
   {
    "index": 53,
    "source": "exec-3faa093f-5694-41a8-b699-51709d73d5a9.png",
-   "path": "assets_hd/hero/hero_pose_22.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_22.png",
    "category": "hero",
    "size": [
     1247,
@@ -653,7 +653,7 @@
   {
    "index": 54,
    "source": "exec-4028c54f-02f1-4f51-a064-4d9224aac528.png",
-   "path": "assets_hd/furniture/bookcase_armillary_01.png",
+   "path": "assets_hd/furniture/bookcase_armillary/bookcase_armillary_01.png",
    "category": "furniture",
    "size": [
     1774,
@@ -665,7 +665,7 @@
   {
    "index": 55,
    "source": "exec-404069d8-e902-4861-99d3-aad90b7b6c04.png",
-   "path": "assets_hd/hero/hero_pose_23.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_23.png",
    "category": "hero",
    "size": [
     1254,
@@ -677,7 +677,7 @@
   {
    "index": 56,
    "source": "exec-4129bdf6-df70-4a8b-b6f0-6fdeeb32b128.png",
-   "path": "assets_hd/hero/hero_pose_24.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_24.png",
    "category": "hero",
    "size": [
     1254,
@@ -689,7 +689,7 @@
   {
    "index": 57,
    "source": "exec-43fcdc33-1d3b-4509-8115-8730c8a87f09.png",
-   "path": "assets_hd/floor/sandstone_tile_04.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_04.png",
    "category": "floor",
    "size": [
     1254,
@@ -701,7 +701,7 @@
   {
    "index": 58,
    "source": "exec-4493a6d5-a920-4c4f-a35a-c3b751d94f7e.png",
-   "path": "assets_hd/hero/hero_pose_25.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_25.png",
    "category": "hero",
    "size": [
     1247,
@@ -713,7 +713,7 @@
   {
    "index": 59,
    "source": "exec-467937df-b728-43a3-9eb2-a9b3496f3deb.png",
-   "path": "assets_hd/furniture/bench_blue_runner_02.png",
+   "path": "assets_hd/furniture/bench_blue_runner/bench_blue_runner_02.png",
    "category": "furniture",
    "size": [
     887,
@@ -725,7 +725,7 @@
   {
    "index": 60,
    "source": "exec-46c7f62c-682a-4bc4-aca5-999a36851c0e.png",
-   "path": "assets_hd/architecture/column_ivy_04.png",
+   "path": "assets_hd/architecture/column_ivy/column_ivy_04.png",
    "category": "architecture",
    "size": [
     887,
@@ -737,7 +737,7 @@
   {
    "index": 61,
    "source": "exec-46d85f18-4ee9-4a7f-a16e-111a146dd868.png",
-   "path": "assets_hd/props/jug_white_01.png",
+   "path": "assets_hd/props/jug_white/jug_white_01.png",
    "category": "props",
    "size": [
     1254,
@@ -749,7 +749,7 @@
   {
    "index": 62,
    "source": "exec-48af4850-d6ec-4515-b2ed-3237e91e54ea.png",
-   "path": "assets_hd/hero/hero_pose_26.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_26.png",
    "category": "hero",
    "size": [
     1254,
@@ -761,7 +761,7 @@
   {
    "index": 63,
    "source": "exec-49ee77bc-0b27-443c-93f2-abeda71a1a23.png",
-   "path": "assets_hd/hero/hero_pose_27.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_27.png",
    "category": "hero",
    "size": [
     1254,
@@ -773,7 +773,7 @@
   {
    "index": 64,
    "source": "exec-49f971fe-e256-4786-9579-60e3522f364b.png",
-   "path": "assets_hd/hero/hero_pose_28.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_28.png",
    "category": "hero",
    "size": [
     1254,
@@ -785,7 +785,7 @@
   {
    "index": 65,
    "source": "exec-4b8ca93c-4447-4a32-8827-eaf99ccc1c21.png",
-   "path": "assets_hd/plants/flowers_white_03.png",
+   "path": "assets_hd/plants/flowers_white/flowers_white_03.png",
    "category": "plants",
    "size": [
     1254,
@@ -797,7 +797,7 @@
   {
    "index": 66,
    "source": "exec-4c1d515a-0d72-44bf-944a-c20ddf9c2233.png",
-   "path": "assets_hd/architecture/stone_post_01.png",
+   "path": "assets_hd/architecture/stone_post/stone_post_01.png",
    "category": "architecture",
    "size": [
     887,
@@ -809,7 +809,7 @@
   {
    "index": 67,
    "source": "exec-4cd45f15-4ff2-45d6-b6d2-2f6966a86e46.png",
-   "path": "assets_hd/furniture/bookcase_large_01.png",
+   "path": "assets_hd/furniture/bookcase_large/bookcase_large_01.png",
    "category": "furniture",
    "size": [
     1774,
@@ -821,7 +821,7 @@
   {
    "index": 68,
    "source": "exec-4d759d48-93d0-4b20-9efd-9c4b08b6e89d.png",
-   "path": "assets_hd/floor/sandstone_tile_05.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_05.png",
    "category": "floor",
    "size": [
     1254,
@@ -833,7 +833,7 @@
   {
    "index": 69,
    "source": "exec-4ed93f80-b6ab-4aa7-b0ee-f5e7c09e8ff1.png",
-   "path": "assets_hd/hero/hero_pose_29.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_29.png",
    "category": "hero",
    "size": [
     1254,
@@ -845,7 +845,7 @@
   {
    "index": 70,
    "source": "exec-53651b07-700b-483e-9529-251d4a48ef17.png",
-   "path": "assets_hd/background/sea_01.png",
+   "path": "assets_hd/background/sea/sea_01.png",
    "category": "background",
    "size": [
     1254,
@@ -857,7 +857,7 @@
   {
    "index": 71,
    "source": "exec-537b9737-ef1e-422e-8910-a29231bf55d8.png",
-   "path": "assets_hd/hero/hero_pose_30.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_30.png",
    "category": "hero",
    "size": [
     1254,
@@ -869,7 +869,7 @@
   {
    "index": 72,
    "source": "exec-556d85f4-4e71-4eaa-9b03-2e11d4abea6f.png",
-   "path": "assets_hd/architecture/stone_post_02.png",
+   "path": "assets_hd/architecture/stone_post/stone_post_02.png",
    "category": "architecture",
    "size": [
     1241,
@@ -881,7 +881,7 @@
   {
    "index": 73,
    "source": "exec-56a7839d-bcc1-4f4b-af2f-9e5430b5f957.png",
-   "path": "assets_hd/furniture/crate_02.png",
+   "path": "assets_hd/furniture/crate/crate_02.png",
    "category": "furniture",
    "size": [
     1254,
@@ -893,7 +893,7 @@
   {
    "index": 74,
    "source": "exec-57d1ebc9-0bf1-46b9-852d-a9e8401a5336.png",
-   "path": "assets_hd/architecture/stone_post_03.png",
+   "path": "assets_hd/architecture/stone_post/stone_post_03.png",
    "category": "architecture",
    "size": [
     1234,
@@ -905,7 +905,7 @@
   {
    "index": 75,
    "source": "exec-588936e1-70fd-455a-bd38-cd804df229e6.png",
-   "path": "assets_hd/props/vase_blue_02.png",
+   "path": "assets_hd/props/vase_blue/vase_blue_02.png",
    "category": "props",
    "size": [
     1254,
@@ -917,7 +917,7 @@
   {
    "index": 76,
    "source": "exec-58ef9a86-bbb2-4656-a734-e0d9235afcc4.png",
-   "path": "assets_hd/lighting/wall_lantern_03.png",
+   "path": "assets_hd/lighting/wall_lantern/wall_lantern_03.png",
    "category": "lighting",
    "size": [
     1278,
@@ -929,7 +929,7 @@
   {
    "index": 77,
    "source": "exec-591fa251-c1de-4e7e-8c40-8da586819edf.png",
-   "path": "assets_hd/hero/hero_pose_31.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_31.png",
    "category": "hero",
    "size": [
     1247,
@@ -941,7 +941,7 @@
   {
    "index": 78,
    "source": "exec-5b1ebfe1-8766-449b-8548-028c64a125c0.png",
-   "path": "assets_hd/decor/rug_square_compass_01.png",
+   "path": "assets_hd/decor/rug_square_compass/rug_square_compass_01.png",
    "category": "decor",
    "size": [
     1278,
@@ -953,7 +953,7 @@
   {
    "index": 79,
    "source": "exec-5bf1fa33-c33c-400a-83dd-25740bcce9aa.png",
-   "path": "assets_hd/props/vase_blue_03.png",
+   "path": "assets_hd/props/vase_blue/vase_blue_03.png",
    "category": "props",
    "size": [
     1254,
@@ -965,7 +965,7 @@
   {
    "index": 80,
    "source": "exec-5c2dcdf6-dd2a-4e47-bf4b-ca881d4ea13d.png",
-   "path": "assets_hd/decor/banner_blue_long_01.png",
+   "path": "assets_hd/decor/banner_blue_long/banner_blue_long_01.png",
    "category": "decor",
    "size": [
     887,
@@ -977,7 +977,7 @@
   {
    "index": 81,
    "source": "exec-5d36b4a9-55c8-4fce-9cf1-05f950776fec.png",
-   "path": "assets_hd/hero/hero_pose_32.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_32.png",
    "category": "hero",
    "size": [
     1247,
@@ -989,7 +989,7 @@
   {
    "index": 82,
    "source": "exec-5d6cbef2-12ef-4038-875b-28e1b9b3e8da.png",
-   "path": "assets_hd/concept/concept_art_action_scene_01.png",
+   "path": "assets_hd/concept/concept_art_action_scene/concept_art_action_scene_01.png",
    "category": "concept",
    "size": [
     1672,
@@ -1001,7 +1001,7 @@
   {
    "index": 83,
    "source": "exec-5da81867-e831-4ec5-95bc-22389a6f8b76.png",
-   "path": "assets_hd/hero/hero_pose_33.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_33.png",
    "category": "hero",
    "size": [
     1254,
@@ -1013,7 +1013,7 @@
   {
    "index": 84,
    "source": "exec-604a18fa-03c2-4436-811c-3e440bba60de.png",
-   "path": "assets_hd/hero/hero_pose_34.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_34.png",
    "category": "hero",
    "size": [
     1254,
@@ -1025,7 +1025,7 @@
   {
    "index": 85,
    "source": "exec-610294cc-779b-4263-916b-adb17807a007.png",
-   "path": "assets_hd/hero/hero_pose_35.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_35.png",
    "category": "hero",
    "size": [
     1254,
@@ -1037,7 +1037,7 @@
   {
    "index": 86,
    "source": "exec-62d0b9e0-c9d8-4659-8891-12db8efd1836.png",
-   "path": "assets_hd/background/wave_foam_01.png",
+   "path": "assets_hd/background/wave_foam/wave_foam_01.png",
    "category": "background",
    "size": [
     1254,
@@ -1049,7 +1049,7 @@
   {
    "index": 87,
    "source": "exec-638a8f3d-f556-4573-bbc3-2268672fd2ad.png",
-   "path": "assets_hd/architecture/arch_01.png",
+   "path": "assets_hd/architecture/arch/arch_01.png",
    "category": "architecture",
    "size": [
     1254,
@@ -1061,7 +1061,7 @@
   {
    "index": 88,
    "source": "exec-63d7c660-9817-4419-977f-d0ad3e7b0018.png",
-   "path": "assets_hd/architecture/wall_ivy_banner_02.png",
+   "path": "assets_hd/architecture/wall_ivy_banner/wall_ivy_banner_02.png",
    "category": "architecture",
    "size": [
     887,
@@ -1073,7 +1073,7 @@
   {
    "index": 89,
    "source": "exec-644433ac-018e-4b7a-996c-018d044b62a2.png",
-   "path": "assets_hd/furniture/table_large_01.png",
+   "path": "assets_hd/furniture/table_large/table_large_01.png",
    "category": "furniture",
    "size": [
     1448,
@@ -1085,7 +1085,7 @@
   {
    "index": 90,
    "source": "exec-649fa9b7-377d-4e09-9bd2-abc28e157f3c.png",
-   "path": "assets_hd/hero/hero_pose_36.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_36.png",
    "category": "hero",
    "size": [
     1254,
@@ -1097,7 +1097,7 @@
   {
    "index": 91,
    "source": "exec-66c8b914-dd4c-44a9-8af5-78c6fb9293ee.png",
-   "path": "assets_hd/hero/hero_pose_37.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_37.png",
    "category": "hero",
    "size": [
     1254,
@@ -1109,7 +1109,7 @@
   {
    "index": 92,
    "source": "exec-66f63d63-76ba-420d-b1ea-baed247ae7f5.png",
-   "path": "assets_hd/hero/hero_pose_38.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_38.png",
    "category": "hero",
    "size": [
     1254,
@@ -1121,7 +1121,7 @@
   {
    "index": 93,
    "source": "exec-68b87a51-e8ca-4475-b120-a6a38b65abc5.png",
-   "path": "assets_hd/furniture/crate_03.png",
+   "path": "assets_hd/furniture/crate/crate_03.png",
    "category": "furniture",
    "size": [
     1254,
@@ -1133,7 +1133,7 @@
   {
    "index": 94,
    "source": "exec-68fa3861-6a81-4cb1-8f67-f6cd7f69a1c6.png",
-   "path": "assets_hd/plants/flowers_white_04.png",
+   "path": "assets_hd/plants/flowers_white/flowers_white_04.png",
    "category": "plants",
    "size": [
     1254,
@@ -1145,7 +1145,7 @@
   {
    "index": 95,
    "source": "exec-694aceac-7583-4cc0-b3a0-412155d4e765.png",
-   "path": "assets_hd/furniture/bench_blue_runner_03.png",
+   "path": "assets_hd/furniture/bench_blue_runner/bench_blue_runner_03.png",
    "category": "furniture",
    "size": [
     1774,
@@ -1157,7 +1157,7 @@
   {
    "index": 96,
    "source": "exec-698f951a-89f1-45b0-b090-b0852b0a800e.png",
-   "path": "assets_hd/hero/hero_pose_39.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_39.png",
    "category": "hero",
    "size": [
     1254,
@@ -1169,7 +1169,7 @@
   {
    "index": 97,
    "source": "exec-6b045765-32bf-43da-91ae-a55544d61241.png",
-   "path": "assets_hd/hero/hero_pose_40.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_40.png",
    "category": "hero",
    "size": [
     1254,
@@ -1181,7 +1181,7 @@
   {
    "index": 98,
    "source": "exec-6b5710d4-26c5-429d-b67a-16881381e884.png",
-   "path": "assets_hd/hero/hero_pose_41.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_41.png",
    "category": "hero",
    "size": [
     1254,
@@ -1193,7 +1193,7 @@
   {
    "index": 99,
    "source": "exec-6d042b14-eb88-4707-80c9-fa00d052346d.png",
-   "path": "assets_hd/architecture/column_ivy_05.png",
+   "path": "assets_hd/architecture/column_ivy/column_ivy_05.png",
    "category": "architecture",
    "size": [
     887,
@@ -1205,7 +1205,7 @@
   {
    "index": 100,
    "source": "exec-6d57f274-c2d7-491e-bb23-c968f5efb3c9.png",
-   "path": "assets_hd/hero/hero_pose_42.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_42.png",
    "category": "hero",
    "size": [
     1254,
@@ -1217,7 +1217,7 @@
   {
    "index": 101,
    "source": "exec-6eaaf8d4-ab93-42d8-bb5c-822470c2e89e.png",
-   "path": "assets_hd/decor/gold_corner_ornament_01.png",
+   "path": "assets_hd/decor/gold_corner_ornament/gold_corner_ornament_01.png",
    "category": "decor",
    "size": [
     1254,
@@ -1229,7 +1229,7 @@
   {
    "index": 102,
    "source": "exec-6f7b6ad8-ea46-4133-9327-68e1d2f5117a.png",
-   "path": "assets_hd/hero/hero_pose_43.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_43.png",
    "category": "hero",
    "size": [
     1254,
@@ -1241,7 +1241,7 @@
   {
    "index": 103,
    "source": "exec-705afaae-a138-4cce-b04f-110456dd1f9e.png",
-   "path": "assets_hd/hero/hero_pose_44.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_44.png",
    "category": "hero",
    "size": [
     1240,
@@ -1253,7 +1253,7 @@
   {
    "index": 104,
    "source": "exec-706f5d4a-3fe2-495f-8d14-a42eedbe921b.png",
-   "path": "assets_hd/hero/hero_pose_45.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_45.png",
    "category": "hero",
    "size": [
     1254,
@@ -1265,7 +1265,7 @@
   {
    "index": 105,
    "source": "exec-70db5aaf-eb03-4fa9-b708-e16ea85e2e67.png",
-   "path": "assets_hd/hero/hero_pose_46.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_46.png",
    "category": "hero",
    "size": [
     1254,
@@ -1277,7 +1277,7 @@
   {
    "index": 106,
    "source": "exec-74689966-ca82-412c-94cd-66464e5792cb.png",
-   "path": "assets_hd/hero/hero_pose_47.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_47.png",
    "category": "hero",
    "size": [
     1254,
@@ -1289,7 +1289,7 @@
   {
    "index": 107,
    "source": "exec-7a06ec7b-6256-4dac-a8ff-9ae804a7b6d6.png",
-   "path": "assets_hd/hero/hero_pose_48.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_48.png",
    "category": "hero",
    "size": [
     1254,
@@ -1301,7 +1301,7 @@
   {
    "index": 108,
    "source": "exec-7a27afb9-aa2a-4561-b56a-74076a60dcfc.png",
-   "path": "assets_hd/hero/hero_pose_49.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_49.png",
    "category": "hero",
    "size": [
     1254,
@@ -1313,7 +1313,7 @@
   {
    "index": 109,
    "source": "exec-7b2edef3-5f07-4d4b-85c8-b6fd4f9d1f7d.png",
-   "path": "assets_hd/hero/hero_pose_50.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_50.png",
    "category": "hero",
    "size": [
     1254,
@@ -1325,7 +1325,7 @@
   {
    "index": 110,
    "source": "exec-7f0274d6-8c73-4460-99a1-2628043ed4e2.png",
-   "path": "assets_hd/props/books_stack_blue_01.png",
+   "path": "assets_hd/props/books_stack_blue/books_stack_blue_01.png",
    "category": "props",
    "size": [
     1254,
@@ -1337,7 +1337,7 @@
   {
    "index": 111,
    "source": "exec-80af96db-21a5-48b9-b3cc-d3c5de51c4e0.png",
-   "path": "assets_hd/background/cloud_01.png",
+   "path": "assets_hd/background/cloud/cloud_01.png",
    "category": "background",
    "size": [
     1983,
@@ -1349,7 +1349,7 @@
   {
    "index": 112,
    "source": "exec-82555493-4479-456b-ae9d-753b999cd6cb.png",
-   "path": "assets_hd/floor/compass_emblem_01.png",
+   "path": "assets_hd/floor/compass_emblem/compass_emblem_01.png",
    "category": "floor",
    "size": [
     1278,
@@ -1361,7 +1361,7 @@
   {
    "index": 113,
    "source": "exec-845cbce6-37a9-46ef-9d7c-f512dcef7711.png",
-   "path": "assets_hd/furniture/table_with_benches_01.png",
+   "path": "assets_hd/furniture/table_with_benches/table_with_benches_01.png",
    "category": "furniture",
    "size": [
     1448,
@@ -1373,7 +1373,7 @@
   {
    "index": 114,
    "source": "exec-851bb963-dc06-4382-b837-536b6db60f92.png",
-   "path": "assets_hd/hero/hero_pose_51.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_51.png",
    "category": "hero",
    "size": [
     1254,
@@ -1385,7 +1385,7 @@
   {
    "index": 115,
    "source": "exec-8aa4b35c-eed0-4528-b28e-95bc7355d64d.png",
-   "path": "assets_hd/props/vase_blue_04.png",
+   "path": "assets_hd/props/vase_blue/vase_blue_04.png",
    "category": "props",
    "size": [
     1254,
@@ -1397,7 +1397,7 @@
   {
    "index": 116,
    "source": "exec-8ac3c62e-f1c2-442c-99e8-6dcf414aeb1e.png",
-   "path": "assets_hd/plants/flowers_white_05.png",
+   "path": "assets_hd/plants/flowers_white/flowers_white_05.png",
    "category": "plants",
    "size": [
     1254,
@@ -1409,7 +1409,7 @@
   {
    "index": 117,
    "source": "exec-8acf0547-e8c5-4d11-a088-5610973ef734.png",
-   "path": "assets_hd/decor/banner_blue_long_02.png",
+   "path": "assets_hd/decor/banner_blue_long/banner_blue_long_02.png",
    "category": "decor",
    "size": [
     887,
@@ -1421,7 +1421,7 @@
   {
    "index": 118,
    "source": "exec-8b54dc91-0217-421c-9f78-ff763bc78d2b.png",
-   "path": "assets_hd/architecture/stone_block_03.png",
+   "path": "assets_hd/architecture/stone_block/stone_block_03.png",
    "category": "architecture",
    "size": [
     1402,
@@ -1433,7 +1433,7 @@
   {
    "index": 119,
    "source": "exec-8bad329a-bdbb-45e8-bc48-52537fbd4fa6.png",
-   "path": "assets_hd/hero/hero_pose_52.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_52.png",
    "category": "hero",
    "size": [
     1254,
@@ -1445,7 +1445,7 @@
   {
    "index": 120,
    "source": "exec-8ca63a7b-fec0-4e17-bf88-849fb0b313bb.png",
-   "path": "assets_hd/hero/hero_pose_53.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_53.png",
    "category": "hero",
    "size": [
     1254,
@@ -1457,7 +1457,7 @@
   {
    "index": 121,
    "source": "exec-8cbd0745-c149-4480-9f2c-5f6522926430.png",
-   "path": "assets_hd/hero/hero_pose_54.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_54.png",
    "category": "hero",
    "size": [
     1254,
@@ -1469,7 +1469,7 @@
   {
    "index": 122,
    "source": "exec-8e1a9432-0fc8-416c-9030-ad9430896c2b.png",
-   "path": "assets_hd/furniture/crate_04.png",
+   "path": "assets_hd/furniture/crate/crate_04.png",
    "category": "furniture",
    "size": [
     1254,
@@ -1481,7 +1481,7 @@
   {
    "index": 123,
    "source": "exec-8e222cd4-fe2a-4822-8aa6-3bf48df2a1e6.png",
-   "path": "assets_hd/decor/rug_folded_blue_01.png",
+   "path": "assets_hd/decor/rug_folded_blue/rug_folded_blue_01.png",
    "category": "decor",
    "size": [
     1254,
@@ -1493,7 +1493,7 @@
   {
    "index": 124,
    "source": "exec-93927f1f-6731-4d4a-a2a7-14ad170f0699.png",
-   "path": "assets_hd/plants/flowers_white_06.png",
+   "path": "assets_hd/plants/flowers_white/flowers_white_06.png",
    "category": "plants",
    "size": [
     1254,
@@ -1505,7 +1505,7 @@
   {
    "index": 125,
    "source": "exec-9400d6fc-007c-46e0-9aed-e3c5ef661c55.png",
-   "path": "assets_hd/hero/hero_pose_55.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_55.png",
    "category": "hero",
    "size": [
     1254,
@@ -1517,7 +1517,7 @@
   {
    "index": 126,
    "source": "exec-9417cb10-ee04-45d7-a5a4-0ee9df2165f0.png",
-   "path": "assets_hd/background/cloud_02.png",
+   "path": "assets_hd/background/cloud/cloud_02.png",
    "category": "background",
    "size": [
     1254,
@@ -1529,7 +1529,7 @@
   {
    "index": 127,
    "source": "exec-9525fae3-dd5e-4e0d-a1cb-c0c318721ead.png",
-   "path": "assets_hd/floor/sandstone_tile_06.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_06.png",
    "category": "floor",
    "size": [
     1254,
@@ -1541,7 +1541,7 @@
   {
    "index": 128,
    "source": "exec-95486928-e39b-43fc-a493-5ac844bae4a4.png",
-   "path": "assets_hd/furniture/bench_side_blue_01.png",
+   "path": "assets_hd/furniture/bench_side_blue/bench_side_blue_01.png",
    "category": "furniture",
    "size": [
     887,
@@ -1553,7 +1553,7 @@
   {
    "index": 129,
    "source": "exec-970b2f7c-b04c-41ae-9514-cd9369e76076.png",
-   "path": "assets_hd/architecture/wall_ivy_banner_03.png",
+   "path": "assets_hd/architecture/wall_ivy_banner/wall_ivy_banner_03.png",
    "category": "architecture",
    "size": [
     887,
@@ -1565,7 +1565,7 @@
   {
    "index": 130,
    "source": "exec-97191a11-175a-4b78-96b2-d9ca4238d49f.png",
-   "path": "assets_hd/hero/hero_pose_56.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_56.png",
    "category": "hero",
    "size": [
     1254,
@@ -1577,7 +1577,7 @@
   {
    "index": 131,
    "source": "exec-98115270-f51f-4c4b-89ba-2cee963dccfd.png",
-   "path": "assets_hd/props/scroll_02.png",
+   "path": "assets_hd/props/scroll/scroll_02.png",
    "category": "props",
    "size": [
     1254,
@@ -1589,7 +1589,7 @@
   {
    "index": 132,
    "source": "exec-98d72776-4d59-4707-8d99-1bc92c670304.png",
-   "path": "assets_hd/architecture/ruined_door_01.png",
+   "path": "assets_hd/architecture/ruined_door/ruined_door_01.png",
    "category": "architecture",
    "size": [
     1299,
@@ -1601,7 +1601,7 @@
   {
    "index": 133,
    "source": "exec-99ae8d10-91c9-494e-a80b-224934664733.png",
-   "path": "assets_hd/hero/hero_pose_57.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_57.png",
    "category": "hero",
    "size": [
     1254,
@@ -1613,7 +1613,7 @@
   {
    "index": 134,
    "source": "exec-9a4198c1-7dac-413c-a9ab-faad8d3aeee6.png",
-   "path": "assets_hd/hero/hero_pose_58.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_58.png",
    "category": "hero",
    "size": [
     1254,
@@ -1625,7 +1625,7 @@
   {
    "index": 135,
    "source": "exec-9c5c6753-68e9-469e-8519-87abd92c828a.png",
-   "path": "assets_hd/architecture/arch_02.png",
+   "path": "assets_hd/architecture/arch/arch_02.png",
    "category": "architecture",
    "size": [
     1254,
@@ -1637,7 +1637,7 @@
   {
    "index": 136,
    "source": "exec-9dd209d8-55e1-40f7-b401-3f4aa9245b9d.png",
-   "path": "assets_hd/hero/hero_pose_59.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_59.png",
    "category": "hero",
    "size": [
     1254,
@@ -1649,7 +1649,7 @@
   {
    "index": 137,
    "source": "exec-9e38b936-df04-4a35-bb19-a4c3a99ddeea.png",
-   "path": "assets_hd/props/armillary_sphere_01.png",
+   "path": "assets_hd/props/armillary_sphere/armillary_sphere_01.png",
    "category": "props",
    "size": [
     1261,
@@ -1661,7 +1661,7 @@
   {
    "index": 138,
    "source": "exec-9e862a47-2f99-4b6d-b67b-dca2d3345d8a.png",
-   "path": "assets_hd/hero/hero_pose_60.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_60.png",
    "category": "hero",
    "size": [
     1254,
@@ -1673,7 +1673,7 @@
   {
    "index": 139,
    "source": "exec-9f042a95-913d-4e19-b2e8-0607250d4244.png",
-   "path": "assets_hd/architecture/column_ivy_06.png",
+   "path": "assets_hd/architecture/column_ivy/column_ivy_06.png",
    "category": "architecture",
    "size": [
     887,
@@ -1685,7 +1685,7 @@
   {
    "index": 140,
    "source": "exec-a121732d-1eed-4194-92d3-46e92c7a8c28.png",
-   "path": "assets_hd/hero/hero_pose_61.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_61.png",
    "category": "hero",
    "size": [
     1254,
@@ -1697,7 +1697,7 @@
   {
    "index": 141,
    "source": "exec-a2f37493-e351-4cb1-9d89-27110782294f.png",
-   "path": "assets_hd/hero/hero_pose_62.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_62.png",
    "category": "hero",
    "size": [
     1247,
@@ -1709,7 +1709,7 @@
   {
    "index": 142,
    "source": "exec-a2fe8af9-b2ba-46a0-9211-114e3ce5bd50.png",
-   "path": "assets_hd/furniture/bookcase_large_02.png",
+   "path": "assets_hd/furniture/bookcase_large/bookcase_large_02.png",
    "category": "furniture",
    "size": [
     1774,
@@ -1721,7 +1721,7 @@
   {
    "index": 143,
    "source": "exec-a3eef662-4446-45ad-9bf9-fe46d4f7fcce.png",
-   "path": "assets_hd/hero/hero_pose_63.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_63.png",
    "category": "hero",
    "size": [
     1254,
@@ -1733,7 +1733,7 @@
   {
    "index": 144,
    "source": "exec-a4b1099a-6377-4293-9d63-89b23925963e.png",
-   "path": "assets_hd/furniture/crate_05.png",
+   "path": "assets_hd/furniture/crate/crate_05.png",
    "category": "furniture",
    "size": [
     1254,
@@ -1745,7 +1745,7 @@
   {
    "index": 145,
    "source": "exec-a4c42500-20ee-4807-ba9a-cf51ea36eb1c.png",
-   "path": "assets_hd/hero/hero_pose_64.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_64.png",
    "category": "hero",
    "size": [
     1247,
@@ -1757,7 +1757,7 @@
   {
    "index": 146,
    "source": "exec-a5a78ecf-c1cb-48a9-b7d4-6a5cda79fc63.png",
-   "path": "assets_hd/hero/hero_pose_65.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_65.png",
    "category": "hero",
    "size": [
     1254,
@@ -1769,7 +1769,7 @@
   {
    "index": 147,
    "source": "exec-a7bc62a9-2ed3-452d-aa01-54670825b7a9.png",
-   "path": "assets_hd/plants/ivy_hanging_03.png",
+   "path": "assets_hd/plants/ivy_hanging/ivy_hanging_03.png",
    "category": "plants",
    "size": [
     887,
@@ -1781,7 +1781,7 @@
   {
    "index": 148,
    "source": "exec-a7e22ed8-3c45-418e-8e47-19dd521d7450.png",
-   "path": "assets_hd/plants/flowers_white_07.png",
+   "path": "assets_hd/plants/flowers_white/flowers_white_07.png",
    "category": "plants",
    "size": [
     1254,
@@ -1793,7 +1793,7 @@
   {
    "index": 149,
    "source": "exec-a7eedf4c-e301-4f54-bb37-6ad455b64385.png",
-   "path": "assets_hd/hero/hero_pose_66.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_66.png",
    "category": "hero",
    "size": [
     1247,
@@ -1805,7 +1805,7 @@
   {
    "index": 150,
    "source": "exec-a9460213-e3f9-4126-9112-ef2f8991b86f.png",
-   "path": "assets_hd/hero/hero_pose_67.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_67.png",
    "category": "hero",
    "size": [
     1247,
@@ -1817,7 +1817,7 @@
   {
    "index": 151,
    "source": "exec-aa85a93c-b7bd-4ad3-ab18-0029a60ef191.png",
-   "path": "assets_hd/architecture/wall_ivy_block_01.png",
+   "path": "assets_hd/architecture/wall_ivy_block/wall_ivy_block_01.png",
    "category": "architecture",
    "size": [
     887,
@@ -1829,7 +1829,7 @@
   {
    "index": 152,
    "source": "exec-aac9d3f0-816f-44a6-8c84-11a4946b3f48.png",
-   "path": "assets_hd/props/shell_conch_01.png",
+   "path": "assets_hd/props/shell_conch/shell_conch_01.png",
    "category": "props",
    "size": [
     1254,
@@ -1841,7 +1841,7 @@
   {
    "index": 153,
    "source": "exec-ac03dbdf-985d-495c-bae6-9dca9b629cb5.png",
-   "path": "assets_hd/plants/flowers_white_08.png",
+   "path": "assets_hd/plants/flowers_white/flowers_white_08.png",
    "category": "plants",
    "size": [
     1254,
@@ -1853,7 +1853,7 @@
   {
    "index": 154,
    "source": "exec-ac6e33ce-1b27-4901-b836-597e31cfcaf9.png",
-   "path": "assets_hd/hero/hero_pose_68.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_68.png",
    "category": "hero",
    "size": [
     1254,
@@ -1865,7 +1865,7 @@
   {
    "index": 155,
    "source": "exec-ad3ae4fa-6bd6-40c5-bcb5-78eb9d3d2bdb.png",
-   "path": "assets_hd/furniture/table_large_02.png",
+   "path": "assets_hd/furniture/table_large/table_large_02.png",
    "category": "furniture",
    "size": [
     1448,
@@ -1877,7 +1877,7 @@
   {
    "index": 156,
    "source": "exec-ad48de50-1238-4269-8d70-9d20457bd72c.png",
-   "path": "assets_hd/plants/ivy_hanging_04.png",
+   "path": "assets_hd/plants/ivy_hanging/ivy_hanging_04.png",
    "category": "plants",
    "size": [
     1254,
@@ -1889,7 +1889,7 @@
   {
    "index": 157,
    "source": "exec-b21ebd17-9a12-464f-9229-0f476f6aa811.png",
-   "path": "assets_hd/hero/hero_pose_69.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_69.png",
    "category": "hero",
    "size": [
     1247,
@@ -1901,7 +1901,7 @@
   {
    "index": 158,
    "source": "exec-b2efc34c-24e7-4c90-9aab-ab07bcd7e52e.png",
-   "path": "assets_hd/background/sky_gradient_01.png",
+   "path": "assets_hd/background/sky_gradient/sky_gradient_01.png",
    "category": "background",
    "size": [
     1254,
@@ -1913,7 +1913,7 @@
   {
    "index": 159,
    "source": "exec-b4299e64-a282-425b-936b-d70e3369da49.png",
-   "path": "assets_hd/hero/hero_pose_70.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_70.png",
    "category": "hero",
    "size": [
     1254,
@@ -1925,7 +1925,7 @@
   {
    "index": 160,
    "source": "exec-b6f833a7-7ae2-4b94-aa88-1431dca4d587.png",
-   "path": "assets_hd/architecture/wall_ivy_banner_04.png",
+   "path": "assets_hd/architecture/wall_ivy_banner/wall_ivy_banner_04.png",
    "category": "architecture",
    "size": [
     887,
@@ -1937,7 +1937,7 @@
   {
    "index": 161,
    "source": "exec-b946ac45-95b7-4073-bc32-39a1aebd80eb.png",
-   "path": "assets_hd/furniture/bookcase_small_01.png",
+   "path": "assets_hd/furniture/bookcase_small/bookcase_small_01.png",
    "category": "furniture",
    "size": [
     887,
@@ -1949,7 +1949,7 @@
   {
    "index": 162,
    "source": "exec-b95c9f04-daeb-464a-b51b-691f1711e99b.png",
-   "path": "assets_hd/background/rock_island_02.png",
+   "path": "assets_hd/background/rock_island/rock_island_02.png",
    "category": "background",
    "size": [
     1254,
@@ -1961,7 +1961,7 @@
   {
    "index": 163,
    "source": "exec-b9acd6d9-2aeb-47ac-bdad-dea823c45550.png",
-   "path": "assets_hd/architecture/stone_block_04.png",
+   "path": "assets_hd/architecture/stone_block/stone_block_04.png",
    "category": "architecture",
    "size": [
     887,
@@ -1973,7 +1973,7 @@
   {
    "index": 164,
    "source": "exec-b9b8c34c-8b3a-4f27-bd2b-4dd8b14bef0f.png",
-   "path": "assets_hd/plants/ivy_hanging_05.png",
+   "path": "assets_hd/plants/ivy_hanging/ivy_hanging_05.png",
    "category": "plants",
    "size": [
     1254,
@@ -1985,7 +1985,7 @@
   {
    "index": 165,
    "source": "exec-bb01b5b2-9b9d-4798-8227-0bd072fbded9.png",
-   "path": "assets_hd/floor/sandstone_tile_07.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_07.png",
    "category": "floor",
    "size": [
     1254,
@@ -1997,7 +1997,7 @@
   {
    "index": 166,
    "source": "exec-bb9f74e0-eaee-47d6-93db-b980df5102e1.png",
-   "path": "assets_hd/lighting/flame_01.png",
+   "path": "assets_hd/lighting/flame/flame_01.png",
    "category": "lighting",
    "size": [
     1294,
@@ -2009,7 +2009,7 @@
   {
    "index": 167,
    "source": "exec-be7bd808-f6e5-4cf8-bace-1420a3f6bc10.png",
-   "path": "assets_hd/architecture/arch_03.png",
+   "path": "assets_hd/architecture/arch/arch_03.png",
    "category": "architecture",
    "size": [
     1254,
@@ -2021,7 +2021,7 @@
   {
    "index": 168,
    "source": "exec-be9a4bb8-4fb1-4361-888a-eb9172d36698.png",
-   "path": "assets_hd/architecture/wall_ivy_block_02.png",
+   "path": "assets_hd/architecture/wall_ivy_block/wall_ivy_block_02.png",
    "category": "architecture",
    "size": [
     887,
@@ -2033,7 +2033,7 @@
   {
    "index": 169,
    "source": "exec-c084c54f-136f-4380-8fb7-e1bce45bde22.png",
-   "path": "assets_hd/hero/hero_pose_71.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_71.png",
    "category": "hero",
    "size": [
     1247,
@@ -2045,7 +2045,7 @@
   {
    "index": 170,
    "source": "exec-c5158b94-a0cd-4f23-acfb-441bb18cfd9b.png",
-   "path": "assets_hd/furniture/bed_front_view_01.png",
+   "path": "assets_hd/furniture/bed_front_view/bed_front_view_01.png",
    "category": "furniture",
    "size": [
     1086,
@@ -2057,7 +2057,7 @@
   {
    "index": 171,
    "source": "exec-c516e78f-b520-4f6a-a4a2-5dbf1ec7e5f8.png",
-   "path": "assets_hd/background/sea_02.png",
+   "path": "assets_hd/background/sea/sea_02.png",
    "category": "background",
    "size": [
     1254,
@@ -2069,7 +2069,7 @@
   {
    "index": 172,
    "source": "exec-c70caf62-c3a4-4a0f-be65-49f0393e4f42.png",
-   "path": "assets_hd/props/fruit_bowl_01.png",
+   "path": "assets_hd/props/fruit_bowl/fruit_bowl_01.png",
    "category": "props",
    "size": [
     1263,
@@ -2081,7 +2081,7 @@
   {
    "index": 173,
    "source": "exec-c786a643-e185-4b25-b1c1-e7d827fd6828.png",
-   "path": "assets_hd/furniture/bench_side_wood_01.png",
+   "path": "assets_hd/furniture/bench_side_wood/bench_side_wood_01.png",
    "category": "furniture",
    "size": [
     887,
@@ -2093,7 +2093,7 @@
   {
    "index": 174,
    "source": "exec-c790246b-2b8e-4184-8bb9-1194eeb9ea0e.png",
-   "path": "assets_hd/furniture/bed_side_view_02.png",
+   "path": "assets_hd/furniture/bed_side_view/bed_side_view_02.png",
    "category": "furniture",
    "size": [
     1448,
@@ -2105,7 +2105,7 @@
   {
    "index": 175,
    "source": "exec-c852ea00-c932-4b8c-8f2c-ead4f2562b1d.png",
-   "path": "assets_hd/hero/hero_pose_72.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_72.png",
    "category": "hero",
    "size": [
     1254,
@@ -2117,7 +2117,7 @@
   {
    "index": 176,
    "source": "exec-c8b57b03-f169-4cf7-adde-342eab55f2ec.png",
-   "path": "assets_hd/hero/hero_pose_73.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_73.png",
    "category": "hero",
    "size": [
     1254,
@@ -2129,7 +2129,7 @@
   {
    "index": 177,
    "source": "exec-c8b81b18-0763-4319-b575-e39e1464bb6c.png",
-   "path": "assets_hd/hero/hero_pose_74.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_74.png",
    "category": "hero",
    "size": [
     1254,
@@ -2141,7 +2141,7 @@
   {
    "index": 178,
    "source": "exec-c8ef490c-4707-40a8-ba8b-6a7745e511ef.png",
-   "path": "assets_hd/hero/hero_pose_75.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_75.png",
    "category": "hero",
    "size": [
     1254,
@@ -2153,7 +2153,7 @@
   {
    "index": 179,
    "source": "exec-ccee56de-7cb7-47ce-b061-216358aed7cb.png",
-   "path": "assets_hd/hero/hero_pose_76.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_76.png",
    "category": "hero",
    "size": [
     1254,
@@ -2165,7 +2165,7 @@
   {
    "index": 180,
    "source": "exec-d12fc510-aa81-436d-b2c3-997ecf2fefdb.png",
-   "path": "assets_hd/hero/hero_pose_77.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_77.png",
    "category": "hero",
    "size": [
     1254,
@@ -2177,7 +2177,7 @@
   {
    "index": 181,
    "source": "exec-d1e2c5bc-cdd7-4fdd-b6db-1f15645cc7b7.png",
-   "path": "assets_hd/furniture/bench_blue_runner_04.png",
+   "path": "assets_hd/furniture/bench_blue_runner/bench_blue_runner_04.png",
    "category": "furniture",
    "size": [
     1774,
@@ -2189,7 +2189,7 @@
   {
    "index": 182,
    "source": "exec-d39960d9-752d-4563-8751-13bacc3aab8f.png",
-   "path": "assets_hd/background/rock_island_03.png",
+   "path": "assets_hd/background/rock_island/rock_island_03.png",
    "category": "background",
    "size": [
     1254,
@@ -2201,7 +2201,7 @@
   {
    "index": 183,
    "source": "exec-d3a9376a-1555-478a-a253-0e5b66e651aa.png",
-   "path": "assets_hd/background/rock_island_04.png",
+   "path": "assets_hd/background/rock_island/rock_island_04.png",
    "category": "background",
    "size": [
     1254,
@@ -2213,7 +2213,7 @@
   {
    "index": 184,
    "source": "exec-d4346952-0d08-4c13-8e51-538cd3330e69.png",
-   "path": "assets_hd/floor/sandstone_tile_08.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_08.png",
    "category": "floor",
    "size": [
     1254,
@@ -2225,7 +2225,7 @@
   {
    "index": 185,
    "source": "exec-d53c33f4-167e-41be-b612-ff562b725da7.png",
-   "path": "assets_hd/hero/hero_pose_78.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_78.png",
    "category": "hero",
    "size": [
     1254,
@@ -2237,7 +2237,7 @@
   {
    "index": 186,
    "source": "exec-d5d04737-05bf-4341-a633-f76ba55d98be.png",
-   "path": "assets_hd/furniture/bench_plain_01.png",
+   "path": "assets_hd/furniture/bench_plain/bench_plain_01.png",
    "category": "furniture",
    "size": [
     1774,
@@ -2249,7 +2249,7 @@
   {
    "index": 187,
    "source": "exec-d7ecf6cf-6cdd-4e72-b09a-9309771126dd.png",
-   "path": "assets_hd/furniture/bedside_chest_drawer_04.png",
+   "path": "assets_hd/furniture/bedside_chest_drawer/bedside_chest_drawer_04.png",
    "category": "furniture",
    "size": [
     1254,
@@ -2261,7 +2261,7 @@
   {
    "index": 188,
    "source": "exec-d87d8b8a-ade8-4559-9324-e887ff416f71.png",
-   "path": "assets_hd/floor/sandstone_tile_09.png",
+   "path": "assets_hd/floor/sandstone_tile/sandstone_tile_09.png",
    "category": "floor",
    "size": [
     1254,
@@ -2273,7 +2273,7 @@
   {
    "index": 189,
    "source": "exec-d912db1e-e188-4fc7-a1d7-70cb114e28b2.png",
-   "path": "assets_hd/furniture/bookcase_large_03.png",
+   "path": "assets_hd/furniture/bookcase_large/bookcase_large_03.png",
    "category": "furniture",
    "size": [
     1774,
@@ -2285,7 +2285,7 @@
   {
    "index": 190,
    "source": "exec-dacc41ea-c66a-4b83-9a69-9c931e158c1a.png",
-   "path": "assets_hd/furniture/bookcase_small_02.png",
+   "path": "assets_hd/furniture/bookcase_small/bookcase_small_02.png",
    "category": "furniture",
    "size": [
     887,
@@ -2297,7 +2297,7 @@
   {
    "index": 191,
    "source": "exec-dafd44e1-3c74-475a-b170-4bb89d1f57de.png",
-   "path": "assets_hd/architecture/wall_ivy_banner_05.png",
+   "path": "assets_hd/architecture/wall_ivy_banner/wall_ivy_banner_05.png",
    "category": "architecture",
    "size": [
     887,
@@ -2309,7 +2309,7 @@
   {
    "index": 192,
    "source": "exec-db2e3263-f1db-415c-bc38-c5527c644920.png",
-   "path": "assets_hd/hero/hero_pose_79.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_79.png",
    "category": "hero",
    "size": [
     1254,
@@ -2321,7 +2321,7 @@
   {
    "index": 193,
    "source": "exec-de6b9db3-5efe-4d9f-aa76-77696f925347.png",
-   "path": "assets_hd/hero/hero_pose_80.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_80.png",
    "category": "hero",
    "size": [
     1239,
@@ -2333,7 +2333,7 @@
   {
    "index": 194,
    "source": "exec-dec5afc4-1429-4765-af32-b53a010b5568.png",
-   "path": "assets_hd/decor/rug_rect_compass_01.png",
+   "path": "assets_hd/decor/rug_rect_compass/rug_rect_compass_01.png",
    "category": "decor",
    "size": [
     1086,
@@ -2345,7 +2345,7 @@
   {
    "index": 195,
    "source": "exec-ded1bd3d-ed7e-4b46-a966-25370043bf24.png",
-   "path": "assets_hd/hero/hero_pose_81.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_81.png",
    "category": "hero",
    "size": [
     1254,
@@ -2357,7 +2357,7 @@
   {
    "index": 196,
    "source": "exec-e0f6161f-847b-4632-ad96-01c2cf165294.png",
-   "path": "assets_hd/architecture/column_ivy_07.png",
+   "path": "assets_hd/architecture/column_ivy/column_ivy_07.png",
    "category": "architecture",
    "size": [
     887,
@@ -2369,7 +2369,7 @@
   {
    "index": 197,
    "source": "exec-e114838f-56a0-4213-8cd6-cb26f81430a4.png",
-   "path": "assets_hd/hero/hero_pose_82.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_82.png",
    "category": "hero",
    "size": [
     1254,
@@ -2381,7 +2381,7 @@
   {
    "index": 198,
    "source": "exec-e2139f31-b22a-4779-ae3e-eb52d53ad4c3.png",
-   "path": "assets_hd/hero/hero_pose_83.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_83.png",
    "category": "hero",
    "size": [
     1247,
@@ -2393,7 +2393,7 @@
   {
    "index": 199,
    "source": "exec-e4cfa178-5856-4805-bb3d-e86612134f13.png",
-   "path": "assets_hd/hero/hero_pose_84.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_84.png",
    "category": "hero",
    "size": [
     1254,
@@ -2405,7 +2405,7 @@
   {
    "index": 200,
    "source": "exec-e534a7d7-92e9-479c-8ec7-e0fa1b05ec4c.png",
-   "path": "assets_hd/hero/hero_pose_85.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_85.png",
    "category": "hero",
    "size": [
     1254,
@@ -2417,7 +2417,7 @@
   {
    "index": 201,
    "source": "exec-e57a3228-b9e7-4675-a9c0-8053a17cf633.png",
-   "path": "assets_hd/hero/hero_pose_86.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_86.png",
    "category": "hero",
    "size": [
     1254,
@@ -2429,7 +2429,7 @@
   {
    "index": 202,
    "source": "exec-e7484f4b-72b1-4316-9b27-37404fe69b7c.png",
-   "path": "assets_hd/hero/hero_pose_87.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_87.png",
    "category": "hero",
    "size": [
     1254,
@@ -2441,7 +2441,7 @@
   {
    "index": 203,
    "source": "exec-e80c8d42-e3e5-4922-b235-b8042deeca1a.png",
-   "path": "assets_hd/hero/hero_pose_88.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_88.png",
    "category": "hero",
    "size": [
     1254,
@@ -2453,7 +2453,7 @@
   {
    "index": 204,
    "source": "exec-e8321005-2bc6-4de2-b36b-0687a2a5d933.png",
-   "path": "assets_hd/hero/hero_pose_89.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_89.png",
    "category": "hero",
    "size": [
     1254,
@@ -2465,7 +2465,7 @@
   {
    "index": 205,
    "source": "exec-e8f9fa5d-48ea-420d-8389-a2768d3d2c70.png",
-   "path": "assets_hd/furniture/crate_06.png",
+   "path": "assets_hd/furniture/crate/crate_06.png",
    "category": "furniture",
    "size": [
     1254,
@@ -2477,7 +2477,7 @@
   {
    "index": 206,
    "source": "exec-eb8d27b9-4fdd-40f7-ae93-d38cb5be34cd.png",
-   "path": "assets_hd/furniture/bed_front_view_02.png",
+   "path": "assets_hd/furniture/bed_front_view/bed_front_view_02.png",
    "category": "furniture",
    "size": [
     1086,
@@ -2489,7 +2489,7 @@
   {
    "index": 207,
    "source": "exec-ebe63809-dcab-447d-abfb-1004acacd67a.png",
-   "path": "assets_hd/hero/hero_pose_90.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_90.png",
    "category": "hero",
    "size": [
     1254,
@@ -2501,7 +2501,7 @@
   {
    "index": 208,
    "source": "exec-ed101424-15b4-4878-ad8d-f3b05ed2cdba.png",
-   "path": "assets_hd/hero/hero_pose_91.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_91.png",
    "category": "hero",
    "size": [
     1247,
@@ -2513,7 +2513,7 @@
   {
    "index": 209,
    "source": "exec-ee2aea30-816e-4eac-bc39-13ec4b00e4b6.png",
-   "path": "assets_hd/architecture/stone_block_05.png",
+   "path": "assets_hd/architecture/stone_block/stone_block_05.png",
    "category": "architecture",
    "size": [
     887,
@@ -2525,7 +2525,7 @@
   {
    "index": 210,
    "source": "exec-f0f2c285-5e5e-43d0-84f6-9ec18d0a6e60.png",
-   "path": "assets_hd/lighting/lantern_bracket_01.png",
+   "path": "assets_hd/lighting/lantern_bracket/lantern_bracket_01.png",
    "category": "lighting",
    "size": [
     1254,
@@ -2537,7 +2537,7 @@
   {
    "index": 211,
    "source": "exec-f11ff8bb-6a1b-42fe-b062-57f8ca8bae9c.png",
-   "path": "assets_hd/hero/hero_pose_92.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_92.png",
    "category": "hero",
    "size": [
     1254,
@@ -2549,7 +2549,7 @@
   {
    "index": 212,
    "source": "exec-f150f3dd-5de0-4566-88eb-7ff5fb8257e7.png",
-   "path": "assets_hd/hero/hero_pose_93.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_93.png",
    "category": "hero",
    "size": [
     1254,
@@ -2561,7 +2561,7 @@
   {
    "index": 213,
    "source": "exec-f24cf10b-e25f-44bb-aaa5-ec5d4d498bb6.png",
-   "path": "assets_hd/furniture/bookcase_small_03.png",
+   "path": "assets_hd/furniture/bookcase_small/bookcase_small_03.png",
    "category": "furniture",
    "size": [
     887,
@@ -2573,7 +2573,7 @@
   {
    "index": 214,
    "source": "exec-f2c4249a-dd66-4b6f-9638-3e12e2255704.png",
-   "path": "assets_hd/furniture/crate_07.png",
+   "path": "assets_hd/furniture/crate/crate_07.png",
    "category": "furniture",
    "size": [
     1402,
@@ -2585,7 +2585,7 @@
   {
    "index": 215,
    "source": "exec-f307d865-6052-49e9-9fad-43194a2b1ef5.png",
-   "path": "assets_hd/props/starfish_coral_01.png",
+   "path": "assets_hd/props/starfish_coral/starfish_coral_01.png",
    "category": "props",
    "size": [
     1254,
@@ -2597,7 +2597,7 @@
   {
    "index": 216,
    "source": "exec-f5fadfaa-c43a-4778-bd68-e84cab60d53b.png",
-   "path": "assets_hd/hero/hero_pose_94.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_94.png",
    "category": "hero",
    "size": [
     1254,
@@ -2609,7 +2609,7 @@
   {
    "index": 217,
    "source": "exec-f74c117e-9fd0-422e-a3f2-8e782faa0448.png",
-   "path": "assets_hd/hero/hero_pose_95.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_95.png",
    "category": "hero",
    "size": [
     1254,
@@ -2621,7 +2621,7 @@
   {
    "index": 218,
    "source": "exec-f760d370-94db-4f8d-90cb-34a09ff17638.png",
-   "path": "assets_hd/hero/hero_pose_96.png",
+   "path": "assets_hd/hero/hero_pose/hero_pose_96.png",
    "category": "hero",
    "size": [
     1254,
@@ -2633,7 +2633,7 @@
   {
    "index": 219,
    "source": "exec-fa42b3d5-ea17-4480-8596-4c3b914505e3.png",
-   "path": "assets_hd/furniture/crate_08.png",
+   "path": "assets_hd/furniture/crate/crate_08.png",
    "category": "furniture",
    "size": [
     1254,
@@ -2645,7 +2645,7 @@
   {
    "index": 220,
    "source": "exec-fcd5074c-6006-433a-aa50-4948b803dfb0.png",
-   "path": "assets_hd/furniture/table_small_02.png",
+   "path": "assets_hd/furniture/table_small/table_small_02.png",
    "category": "furniture",
    "size": [
     1086,
@@ -2657,7 +2657,7 @@
   {
    "index": 221,
    "source": "exec-fe1bde58-c44f-43f4-b552-4fdad6d524e8.png",
-   "path": "assets_hd/architecture/wall_ivy_banner_06.png",
+   "path": "assets_hd/architecture/wall_ivy_banner/wall_ivy_banner_06.png",
    "category": "architecture",
    "size": [
     887,
@@ -2669,7 +2669,7 @@
   {
    "index": 222,
    "source": "exec-fe26eeca-2d20-4ab0-9b65-0fbbfaedd7c5.png",
-   "path": "assets_hd/architecture/arch_04.png",
+   "path": "assets_hd/architecture/arch/arch_04.png",
    "category": "architecture",
    "size": [
     1254,
@@ -2681,7 +2681,7 @@
   {
    "index": 223,
    "source": "exec-fe68d41a-3ed5-4ee0-a244-138bfe4449ac.png",
-   "path": "assets_hd/furniture/bookcase_armillary_02.png",
+   "path": "assets_hd/furniture/bookcase_armillary/bookcase_armillary_02.png",
    "category": "furniture",
    "size": [
     1774,
@@ -2693,7 +2693,7 @@
   {
    "index": 224,
    "source": "exec-ffb05857-3a98-4302-9feb-8b79e7fc4c03.png",
-   "path": "assets_hd/weapons/sword_02.png",
+   "path": "assets_hd/weapons/sword/sword_02.png",
    "category": "weapons",
    "size": [
     1024,
