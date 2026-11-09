@@ -130,6 +130,41 @@ def validate_camera(cam):
         raise ValueError("camera zoom must be between 0.25 and 4.0")
 
 
+LIGHTING_NUMBERS = {"length": (0.05, 2.0), "opacity": (0.0, 1.0), "height_fade": (0.0, 1.0),
+                    "blur": (0, 4), "contact_opacity": (0.0, 1.0), "contact_height": (0.02, 0.5)}
+
+
+def validate_shadow_mode(mode):
+    if mode not in ("strips", "painted"):
+        raise ValueError("shadow_mode must be 'strips' or 'painted'")
+
+
+def validate_lighting(light):
+    """Painted shadow and light level settings (see map_factory/LAYER_SCHEMA.md)."""
+    if not isinstance(light, dict):
+        raise ValueError("lighting must be an object")
+    known = set(LIGHTING_NUMBERS) | {"direction", "color", "light_pools"}
+    unknown = set(light) - known
+    if unknown:
+        raise ValueError("Unknown lighting keys: " + ", ".join(sorted(unknown)))
+    for key, (low, high) in LIGHTING_NUMBERS.items():
+        if key in light:
+            value = light[key]
+            if not isinstance(value, (int, float)) or isinstance(value, bool) or not low <= value <= high:
+                raise ValueError(f"lighting {key} must be a number between {low} and {high}")
+    if "direction" in light:
+        d = light["direction"]
+        if (not isinstance(d, list) or len(d) != 2 or not all(isinstance(v, (int, float)) and not isinstance(v, bool) for v in d)
+                or (d[0] == 0 and d[1] == 0)):
+            raise ValueError("lighting direction must be a non-zero [x, y]")
+    if "color" in light:
+        c = light["color"]
+        if not isinstance(c, list) or len(c) != 3 or not all(isinstance(v, (int, float)) and not isinstance(v, bool) and 0 <= v <= 1 for v in c):
+            raise ValueError("lighting color must be [r, g, b] in 0..1")
+    if "light_pools" in light and not isinstance(light["light_pools"], bool):
+        raise ValueError("lighting light_pools must be true or false")
+
+
 def validate_light_shafts(shafts, seen):
     if not isinstance(shafts, list):
         raise ValueError("light_shafts must be a list")
@@ -415,6 +450,10 @@ def validate_room(data, catalog, expect_map_id=None):
         validate_camera(data["camera"])
     if "light_shafts" in data:
         validate_light_shafts(data["light_shafts"], seen)
+    if "shadow_mode" in data:
+        validate_shadow_mode(data["shadow_mode"])
+    if "lighting" in data:
+        validate_lighting(data["lighting"])
     if "navigation" in data:
         validate_navigation(data["navigation"], seen)
     if "visual_qa" in data:
@@ -706,7 +745,7 @@ def apply_changes(snapshot, manifest, catalog):
             key=operation["key"]
             allowed={"description","background_color","canvas_size","tile_size",
                      "size","ground_offset","floor_ids","floor_footprint","floor_tile_style","occlusion_mode","ocean","effects",
-                     "camera","light_shafts",
+                     "camera","light_shafts","shadow_mode","lighting",
                      "source_image","floor_art","composition_reference", "navigation", "visual_qa",
                       "placement_policy", "requires_reviewed_footprints"}
             if key not in allowed:

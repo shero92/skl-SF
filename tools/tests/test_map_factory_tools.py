@@ -49,10 +49,19 @@ class AuditTests(unittest.TestCase):
         self.assertEqual(report["unused_registered_assets"], ["UNUSED"])
         self.assertEqual(report["asset_counts"]["B"], 2)
 
+    def test_directional_variants_resolve_to_their_base_asset(self):
+        data = small_map()
+        data["objects"] = [{"id": "A_south", "instance_id": "v1", "x": 0, "y": 100, "scale": 1.0}]
+        data["ground_overlays"] = []
+        report = map_audit.audit(data, CATALOG)
+        self.assertEqual(report["problems"]["unknown_assets"], [])
+        self.assertEqual(report["asset_counts"], {"A": 1})
+
     def test_real_latest_map_loads(self):
         report = map_audit.audit(load_map("hero_room_01"), load_catalog())
         self.assertGreater(report["instances"], 100)
         self.assertEqual(report["problems"]["duplicate_instance_ids"], [])
+        self.assertEqual(report["problems"]["unknown_assets"], [], "directional variants are not unknown")
 
 
 class VersionDiffTests(unittest.TestCase):
