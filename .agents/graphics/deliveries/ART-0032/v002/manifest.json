@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "task_id": "TASK-0136",
+  "art_request": "ART-0032",
+  "producer": "codex",
+  "generation_tool": "image_gen built-in",
+  "model": "unknown",
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "active_manifest_updated": false,
+  "request_complete": false,
+  "reference_sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+  "style_reference": "assets_hd/architecture/arch/arch_01.png",
+  "external_source": "H:\\shining force\\pixel-art\\TASK-0136\\ART-0032\\v002\\source\\wall_straight_long_a__source.png",
+  "assets": [
+    {
+      "name": "wall_straight_long_a",
+      "path": ".agents/graphics/deliveries/ART-0032/v002/renders/wall_straight_long_a.png",
+      "source_image_path": ".agents/graphics/deliveries/ART-0032/v002/source/wall_straight_long_a__source.png",
+      "sha256": "baa348f78b4654b343d98f7b4e50f1f4bb83d97b4c54beb30b9ce08e5b36b7f7",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "facing": "south",
+      "usage": "Rear wall front face looking into room; orientation must be confirmed against map convention",
+      "native_size": null,
+      "ground_anchor": null,
+      "footprint": null,
+      "annotation_status": "needs_annotation",
+      "quality_status": "needs_review"
+    }
+  ],
+  "technical_checks": {
+    "mode": "RGBA",
+    "dimensions": [
+      2172,
+      724
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      2156,
+      700
+    ],
+    "opaque_bbox": [
+      98,
+      117,
+      2072,
+      617
+    ],
+    "touches_canvas_edge": true,
+    "transparent_margin_pixels": [
+      0,
+      0,
+      16,
+      24
+    ]
+  },
+  "visual_review": {
+    "status": "needs_review",
+    "observations": [
+      "عنصر جدار واحد متصل، بلا أرضية أو شخصيات أو ظل ساقط ظاهر.",
+      "تحسين وضوح مجموعات اللون والهوامش عن v001؛ ما زال يحتاج مراجعة فنية بحجم اللعبة.",
+      "نقطة القدم والfootprint وحجم اللعبة لم تقاس بعد؛ لا تفعيل في الخريطة.",
+      "توجد بكسلات alpha ضعيفة عند حدود اللوحة؛ غير جاهز كأصل إنتاجي. opaque_bbox في v002 داخل الهوامش، لكن التنظيف ومراجعة حواف alpha ما زالا مطلوبين."
+    ],
+    "runtime_review": "not_performed",
+    "owner_approval": "pending"
+  },
+  "cost_usd": null,
+  "tokens": null,
+  "revision": "v002",
+  "supersedes_candidate": "v001 retained; edge artifacts flagged",
+  "technical_status": "needs_cleanup"
+}

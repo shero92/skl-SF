@@ -1,0 +1,10 @@
+{
+  "selected_candidate": "v002",
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "request_complete": false,
+  "remaining_task": "TASK-0137",
+  "active_manifest_updated": false,
+  "technical_status": "needs_cleanup",
+  "blocking_issue": "Low-alpha edge artifacts; anchors, footprint and native-scale review still pending."
+}

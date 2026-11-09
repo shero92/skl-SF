@@ -24,3 +24,7 @@ Milestones are not a second task-status board. Active tasks: [TASKS.md](TASKS.md
 - Run unit, Godot and artistic reviews before declaring a room approved.
 
 **No gameplay-character/UI development in current scope.**
+
+## تعديل نطاق المالك — 2026-11-09
+- التكليف الحالي يوسع النطاق إلى نسخة تدريب متكاملة بعد الغرفة: الشخصيات الست، الاستكشاف، تدريب 3 ضد 3، العودة والحفظ؛ يتقدم على قيد environment-only التاريخي أعلاه.
+- الكود Claude Code؛ الرسوم Codex عبر image_gen. التسليم docs/CLAUDE_ROOM_GAME_HANDOFF_20261109.md، والحالة الرسمية في ملفات TASK. لا حملة نهائية ولا شخصية سابعة.

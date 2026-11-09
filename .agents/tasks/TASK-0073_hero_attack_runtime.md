@@ -1,18 +1,22 @@
 ---
 id: TASK-0073
 status: blocked
-owner: aider
-agent: aider
+owner: unassigned
+agent: claude
 priority: high
-branch: codex/aider-hero-attack-runtime
-depends_on: none
+branch: none
+depends_on: TASK-0085
 issue: none
 art_request: ART-0028
 touches: scenes/hero_attack_preview.gd,scenes/hero_attack_preview.tscn,scenes/hero_attack_timeline.gd,tools/hero_attack_assets.py,tools/tests/test_hero_attack_assets.py,tools/verify_hero_attack.gd,docs/HERO_ATTACK_RUNTIME.md,.agents/tasks/TASK-0073_hero_attack_runtime.md
 test: python tools/run_tests.py --changed
 done_when: مشغّل معاينة مستقل واختبارات زمن وأداة استخراج وفحص sheet؛ الأصول الناقصة تمنع الادعاء بجاهزية الحركة النهائية.
 ---
-# تكامل معاينة هجوم Hero — تنفيذ Aider فقط
+# تكامل معاينة هجوم Hero — تنفيذ Claude Code
+
+## تعديل تكليف المالك — 2026-11-09
+
+التكليف الحالي يتقدم على أي منع قديم أدناه: Claude Code ينفذ الكود والاختبارات والتكامل، وCodex ينتج الصور. لا تشغيل Aider أو تغيير نموذج/خدمة مفروضة من النص التاريخي. افحص تداخل TASK-0073 مع TASK-0086: المعاينة والمصدر المشترك يعاد استخدامهما ولا يعاد بناء timeline الحالية. المراجع القديمة عن الاستخراج لا تسمح بتحويل storyboard إلى أصول إنتاجية؛ سياسة GRAPHICS_PRODUCTION_POLICY الحالية تحكمها. TASK-0087 يقرأ تسليم Golden Cyclone الجاري ولا يستبدله؛ الجاهزية تتطلب actual frames/sockets/approval.
 
 ## التفويض
 
