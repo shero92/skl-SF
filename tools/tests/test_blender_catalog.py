@@ -7,6 +7,7 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -62,6 +63,7 @@ class BlenderCatalogTests(unittest.TestCase):
             self.assertEqual(first["origin"], [20, 56])
             self.assertTrue(first["texture_path"].startswith("res://map_factory/parts/walls/W023_"))
             self.assertEqual(first["source"]["kind"], "owner_delivery")
+            self.assertEqual(first["qa_approval"]["approved_by"], "owner")
             manifest = json.loads((root / ".agents/graphics/deliveries/ART-9001/manifest.json").read_text(encoding="utf-8"))
             self.assertEqual(manifest["status"], "owner_accepted")
             self.assertEqual(manifest["review"]["accepted_by"], "owner")
@@ -99,6 +101,18 @@ class BlenderCatalogTests(unittest.TestCase):
         ids = {a["id"] for a in catalog["assets"]}
         for expected in ("W023", "W024", "W025", "W026", "F023", "F024", "F025", "F026"):
             self.assertIn(expected, ids)
+
+    def test_quality_guard_accepts_the_catalog_with_retired_twins_and_new_parts(self):
+        result = subprocess.run([sys.executable, str(TOOLS / "quality_guard.py")], cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout[-800:] + result.stderr[-400:])
+        report = json.loads(result.stdout[result.stdout.index("{"):])
+        self.assertEqual(report["errors"], [])
+
+    def test_ready_blender_parts_document_their_approval(self):
+        catalog = json.loads((ROOT / "map_factory/metadata/asset_index.json").read_text(encoding="utf-8"))
+        for asset in catalog["assets"]:
+            if asset["id"] in ("W023", "W024", "W025", "W026", "F023", "F024", "F025", "F026"):
+                self.assertTrue(asset.get("qa_approval"), asset["id"])
 
 
 if __name__ == "__main__":

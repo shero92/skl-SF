@@ -21,6 +21,40 @@ def fail(message,errors):
     print("ERROR:",message)
     errors.append(message)
 
+def retired_record(path):
+    """hd_map.json entry of a low-quality original retired by TASK-0117 (path under assets_generated/)."""
+    try:
+        relative = path.resolve().relative_to((ROOT / "assets_generated").resolve()).as_posix()
+    except ValueError:
+        return None
+    hd_map = ROOT / "assets_hd" / "hd_map.json"
+    if not hd_map.is_file():
+        return None
+    config = json.loads(hd_map.read_text(encoding="utf-8"))
+    entry = config["map"].get(relative)
+    if entry is None or "native_size" not in entry:
+        return None
+    return {**entry, "scale": int(config["scale"]), "name": Path(relative).name}
+
+
+def verify_retired(entry, ident, pixel_size, errors):
+    """The HD runtime twin must be exactly scale x the recorded native size, and the catalog size must match."""
+    twin = ROOT / "assets_hd" / "runtime" / entry["name"]
+    try:
+        with Image.open(twin) as image:
+            image.load()
+            expected = [value * entry["scale"] for value in entry["native_size"]]
+            if list(image.size) != expected:
+                fail("HD runtime twin size mismatch "+ident,errors)
+            if not image.convert("RGBA").getchannel("A").getbbox():
+                fail("Empty alpha sprite "+ident,errors)
+    except (ValueError,OSError,UnidentifiedImageError):
+        fail("Missing or unreadable HD runtime twin "+ident,errors)
+        return
+    if list(entry["native_size"]) != pixel_size:
+        fail("Metadata pixel size mismatch "+ident,errors)
+
+
 def main():
     curr=json.loads((ROOT/INDEX).read_text())
     oldraw=previous(INDEX)
@@ -42,6 +76,12 @@ def main():
         ids.add(ident)
         path=ROOT/a["texture_path"].removeprefix("res://")
         if not path.is_file():
+            retired = retired_record(path)
+            if retired is not None:
+                verify_retired(retired, ident, a.get("pixel_size"), errors)
+                if a.get("status")=="ready" and not a.get("qa_approval"):
+                    fail("Ready requires documented qa_approval: "+ident,errors)
+                continue
             fail("Missing "+ident+" at "+str(path),errors)
             continue
         try:

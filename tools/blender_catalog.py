@@ -70,6 +70,8 @@ def build_assets(manifest: dict, catalog_assets: list[dict], accepted_by: str, n
                        "master": record.get("master"), "master_sha256": record.get("master_sha256"),
                        "sha256": record["sha256"]},
             "qa_notes": f"Built with tools/blender_factory.py (no AI image generation). Accepted by {accepted_by}: {note}",
+            "qa_approval": {"approved_by": accepted_by, "evidence": note,
+                            "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"},
         })
     return assets
 

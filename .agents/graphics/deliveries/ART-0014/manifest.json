@@ -315,7 +315,13 @@
         "master_sha256": "f98b0e1eec3262d8e661a40baf3439c34792feffff8ddb364962584fbbc9442b",
         "sha256": "09a9e82e62c4ebb95e0dc8d2adf362e7c20c57c92b1d01c09da791bb58ebf928"
       },
-      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
     },
     {
       "id": "F024",
@@ -367,7 +373,13 @@
         "master_sha256": "87f06eb18e5365b380c22a99c2ebe98c8dd9196d4d92864aaedcbb80ffdd99d4",
         "sha256": "5ec4aabea54187583283d1e5a1c8d4f44430cb59f547fa123cd888dd19afb337"
       },
-      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
     },
     {
       "id": "F025",
@@ -419,7 +431,13 @@
         "master_sha256": "a3936aa599bbb991e8f5cfeb77c8d01770103ef38deb4185dc9bbc98400d0262",
         "sha256": "c7c712db7e39246d25c2698e52777608db78dda0097ded023ccdf2d5ccfead9b"
       },
-      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
     },
     {
       "id": "F026",
@@ -471,7 +489,13 @@
         "master_sha256": "f25a79b56876656f87b7b064119055575df8473448dd07e4048126b34d6644bf",
         "sha256": "28b45f769449f328aaf3802ce1d48c86ead9e64c620bbed8666a79848d8b4173"
       },
-      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
     }
   ]
 }
