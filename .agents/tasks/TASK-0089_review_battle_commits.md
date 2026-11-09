@@ -1,10 +1,10 @@
 ---
 id: TASK-0089
-status: todo
+status: done
 owner: claude
 agent: claude
 priority: normal
-branch: none
+branch: claude/task-0084
 depends_on: TASK-0076
 issue: none
 art_request: none
