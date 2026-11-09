@@ -1,6 +1,6 @@
 ---
 id: TASK-0109
-status: review
+status: done
 owner: claude
 agent: claude
 priority: high
@@ -21,3 +21,6 @@ No art is generated; existing registered PNGs and runtime-painted textures only.
 ## Result (Claude, 2026-11-09)
 Implemented on branch claude/map-factory-upgrade; tests: test_shadow_painter.py pass. Opt in with shadow_mode painted. Scratch render of hero_room_01 v0014: 79 owner-linked painted shadows.
 Next step: review and merge the PR, then use the tools on a new room version (v0015).
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #111 (shadow base alignment fixed in PR #119); painted shadow level is on in hero_room_01 since v0015.

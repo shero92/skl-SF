@@ -1,6 +1,6 @@
 ---
 id: TASK-0116
-status: review
+status: done
 owner: claude
 agent: claude
 priority: medium
@@ -19,3 +19,6 @@ Only the scale of 29 existing wall pieces (W01 to W14 except the low front wall 
 
 ## Result (Claude, 2026-11-09)
 v0017 published with tools/map_factory_cli.py apply; v0014 to v0016 untouched. Evidence capture passed (docs/previews/map_factory_renders/t0116_v0017/). Next step: owner review of the render, then relayout with ART-0032..0035 art.
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #114; v0017 published (visual_approval of the room stays false).

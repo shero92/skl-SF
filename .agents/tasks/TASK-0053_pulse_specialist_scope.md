@@ -1,6 +1,6 @@
 ---
 id: TASK-0053
-status: review
+status: done
 owner: claude
 branch: fix/pulse-specialist-scope
 agent: claude
@@ -37,3 +37,6 @@ art_request: none
 - Dry run on a copy of the main records: exit 0, creates TASK-0038 (recovery-calibration) as blocked graphics/specialist with its requirements; no real pulse was run.
 - Not done: the calibration itself (TASK-0038 stays blocked); no review task changed to done.
 - PR: https://github.com/shero92/skl-SF/pull/48
+
+## Closure (Claude, 2026-11-09)
+Branch fix/pulse-specialist-scope merged (PR #48); tests are part of the suite that passes (python tools/run_tests.py --all, 66/66 on 2026-11-09).
