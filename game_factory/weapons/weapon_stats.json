@@ -1,0 +1,553 @@
+{
+  "schema_version": 1,
+  "notes": "Shining Force style weapon rules. attack_total = class/char base attack + weapon attack (+ stat_bonus effects). Range is [min,max] tiles (Manhattan); a bow cannot hit adjacent targets. Effects: stat_bonus{stat,value}, range_bonus{value} (extends max range), crit_bonus{value}, status_on_hit{status,chance}. asset_id links to game_factory/weapons/catalog.json when art exists; null means icon/sprite pending (see .agents/graphics/requests/).",
+  "inventory_capacity": 4,
+  "weapon_types": {
+    "sword": {
+      "name": "Sword",
+      "kind": "melee",
+      "range": [
+        1,
+        1
+      ],
+      "profile": "sword",
+      "icon": "weapon_icon_sword"
+    },
+    "spear": {
+      "name": "Spear",
+      "kind": "melee",
+      "range": [
+        1,
+        2
+      ],
+      "profile": "spear",
+      "icon": "weapon_icon_spear"
+    },
+    "axe": {
+      "name": "Axe",
+      "kind": "melee",
+      "range": [
+        1,
+        1
+      ],
+      "profile": "axe",
+      "icon": "weapon_icon_axe"
+    },
+    "mace": {
+      "name": "Mace",
+      "kind": "melee",
+      "range": [
+        1,
+        1
+      ],
+      "profile": "axe",
+      "icon": "weapon_icon_mace"
+    },
+    "dagger": {
+      "name": "Dagger",
+      "kind": "melee",
+      "range": [
+        1,
+        1
+      ],
+      "profile": "sword",
+      "icon": "weapon_icon_dagger"
+    },
+    "bow": {
+      "name": "Bow",
+      "kind": "ranged",
+      "range": [
+        2,
+        3
+      ],
+      "profile": "bow",
+      "icon": "weapon_icon_bow"
+    },
+    "staff": {
+      "name": "Staff",
+      "kind": "magic",
+      "range": [
+        1,
+        2
+      ],
+      "profile": "staff",
+      "icon": "weapon_icon_staff"
+    },
+    "natural": {
+      "name": "Natural weapon",
+      "kind": "melee",
+      "range": [
+        1,
+        1
+      ],
+      "profile": "natural",
+      "icon": null
+    }
+  },
+  "classes": {
+    "swordsman": {
+      "name": "Swordsman",
+      "weapon_types": [
+        "sword",
+        "dagger"
+      ],
+      "base_stats": {
+        "hp": 18,
+        "mp": 0,
+        "attack": 8,
+        "defense": 6,
+        "agility": 7,
+        "move": 5
+      },
+      "unarmed": "WPN_FISTS"
+    },
+    "knight": {
+      "name": "Knight",
+      "weapon_types": [
+        "sword",
+        "spear"
+      ],
+      "base_stats": {
+        "hp": 22,
+        "mp": 0,
+        "attack": 9,
+        "defense": 9,
+        "agility": 5,
+        "move": 6
+      },
+      "unarmed": "WPN_FISTS"
+    },
+    "lancer": {
+      "name": "Lancer",
+      "weapon_types": [
+        "spear",
+        "sword"
+      ],
+      "base_stats": {
+        "hp": 19,
+        "mp": 0,
+        "attack": 8,
+        "defense": 7,
+        "agility": 6,
+        "move": 6
+      },
+      "unarmed": "WPN_FISTS"
+    },
+    "warrior": {
+      "name": "Warrior",
+      "weapon_types": [
+        "axe",
+        "mace"
+      ],
+      "base_stats": {
+        "hp": 24,
+        "mp": 0,
+        "attack": 10,
+        "defense": 6,
+        "agility": 4,
+        "move": 5
+      },
+      "unarmed": "WPN_FISTS"
+    },
+    "archer": {
+      "name": "Archer",
+      "weapon_types": [
+        "bow",
+        "dagger"
+      ],
+      "base_stats": {
+        "hp": 16,
+        "mp": 0,
+        "attack": 7,
+        "defense": 4,
+        "agility": 8,
+        "move": 5
+      },
+      "unarmed": "WPN_FISTS"
+    },
+    "mage": {
+      "name": "Mage",
+      "weapon_types": [
+        "staff",
+        "dagger"
+      ],
+      "base_stats": {
+        "hp": 12,
+        "mp": 12,
+        "attack": 4,
+        "defense": 3,
+        "agility": 6,
+        "move": 4
+      },
+      "unarmed": "WPN_FISTS"
+    },
+    "healer": {
+      "name": "Healer",
+      "weapon_types": [
+        "staff",
+        "mace"
+      ],
+      "base_stats": {
+        "hp": 14,
+        "mp": 10,
+        "attack": 4,
+        "defense": 4,
+        "agility": 5,
+        "move": 4
+      },
+      "unarmed": "WPN_FISTS"
+    },
+    "thief": {
+      "name": "Thief",
+      "weapon_types": [
+        "dagger",
+        "sword"
+      ],
+      "base_stats": {
+        "hp": 15,
+        "mp": 0,
+        "attack": 6,
+        "defense": 4,
+        "agility": 10,
+        "move": 6
+      },
+      "unarmed": "WPN_FISTS"
+    },
+    "brawler": {
+      "name": "Brawler",
+      "weapon_types": [
+        "natural"
+      ],
+      "base_stats": {
+        "hp": 26,
+        "mp": 0,
+        "attack": 11,
+        "defense": 5,
+        "agility": 6,
+        "move": 5
+      },
+      "unarmed": "WPN_NATURAL_CLAWS"
+    }
+  },
+  "characters": {
+    "CHAR001": {
+      "name": "Hero",
+      "class": "swordsman",
+      "stat_offsets": {
+        "attack": 1,
+        "hp": 2
+      }
+    },
+    "CHAR002": {
+      "name": "Cely",
+      "class": "lancer",
+      "stat_offsets": {}
+    },
+    "CHAR003": {
+      "name": "Neru",
+      "class": "brawler",
+      "stat_offsets": {}
+    },
+    "CHAR004": {
+      "name": "Reef Friend",
+      "class": "warrior",
+      "stat_offsets": {}
+    },
+    "CHAR005": {
+      "name": "The Old Father",
+      "class": "mage",
+      "stat_offsets": {}
+    },
+    "CHAR006": {
+      "name": "Temple Archer",
+      "class": "archer",
+      "stat_offsets": {}
+    }
+  },
+  "weapons": {
+    "WPN_HERO_BASIC_SWORD": {
+      "name": "Hero's Basic Sword",
+      "type": "sword",
+      "attack": 5,
+      "accuracy": 95,
+      "crit": 3,
+      "price": 0,
+      "effects": [],
+      "asset_id": "WPN_HERO_BASIC_SWORD",
+      "tier": 0,
+      "sellable": false,
+      "builtin": false
+    },
+    "WPN_IRON_SWORD": {
+      "name": "Iron Sword",
+      "type": "sword",
+      "attack": 7,
+      "accuracy": 95,
+      "crit": 3,
+      "price": 120,
+      "effects": [],
+      "asset_id": "WPN_IRON_SWORD",
+      "tier": 1,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_STEEL_SWORD": {
+      "name": "Steel Sword",
+      "type": "sword",
+      "attack": 11,
+      "accuracy": 95,
+      "crit": 4,
+      "price": 420,
+      "effects": [],
+      "tier": 2,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_MITHRIL_SWORD": {
+      "name": "Mithril Sword",
+      "type": "sword",
+      "attack": 16,
+      "accuracy": 97,
+      "crit": 6,
+      "price": 1500,
+      "effects": [
+        {
+          "kind": "stat_bonus",
+          "stat": "agility",
+          "value": 2
+        }
+      ],
+      "tier": 3,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_BRONZE_SPEAR": {
+      "name": "Bronze Spear",
+      "type": "spear",
+      "attack": 6,
+      "accuracy": 92,
+      "crit": 3,
+      "price": 100,
+      "effects": [],
+      "tier": 1,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_STEEL_SPEAR": {
+      "name": "Steel Spear",
+      "type": "spear",
+      "attack": 11,
+      "accuracy": 92,
+      "crit": 4,
+      "price": 400,
+      "effects": [],
+      "tier": 2,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_HALBERD": {
+      "name": "Halberd",
+      "type": "spear",
+      "attack": 15,
+      "accuracy": 88,
+      "crit": 5,
+      "price": 1100,
+      "effects": [],
+      "tier": 3,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_HAND_AXE": {
+      "name": "Hand Axe",
+      "type": "axe",
+      "attack": 8,
+      "accuracy": 85,
+      "crit": 5,
+      "price": 130,
+      "effects": [],
+      "tier": 1,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_BATTLE_AXE": {
+      "name": "Battle Axe",
+      "type": "axe",
+      "attack": 14,
+      "accuracy": 82,
+      "crit": 8,
+      "price": 560,
+      "effects": [
+        {
+          "kind": "crit_bonus",
+          "value": 4
+        }
+      ],
+      "tier": 2,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_WOOD_MACE": {
+      "name": "Wooden Mace",
+      "type": "mace",
+      "attack": 5,
+      "accuracy": 95,
+      "crit": 2,
+      "price": 70,
+      "effects": [],
+      "tier": 1,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_IRON_MACE": {
+      "name": "Iron Mace",
+      "type": "mace",
+      "attack": 9,
+      "accuracy": 92,
+      "crit": 3,
+      "price": 300,
+      "effects": [
+        {
+          "kind": "stat_bonus",
+          "stat": "defense",
+          "value": 1
+        }
+      ],
+      "tier": 2,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_KNIFE": {
+      "name": "Knife",
+      "type": "dagger",
+      "attack": 3,
+      "accuracy": 98,
+      "crit": 6,
+      "price": 40,
+      "effects": [],
+      "tier": 1,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_ASSASSIN_DAGGER": {
+      "name": "Assassin Dagger",
+      "type": "dagger",
+      "attack": 7,
+      "accuracy": 98,
+      "crit": 12,
+      "price": 450,
+      "effects": [
+        {
+          "kind": "status_on_hit",
+          "status": "poison",
+          "chance": 25
+        }
+      ],
+      "tier": 2,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_SHORT_BOW": {
+      "name": "Short Bow",
+      "type": "bow",
+      "attack": 6,
+      "accuracy": 90,
+      "crit": 4,
+      "price": 110,
+      "effects": [],
+      "tier": 1,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_LONG_BOW": {
+      "name": "Long Bow",
+      "type": "bow",
+      "attack": 11,
+      "accuracy": 88,
+      "crit": 5,
+      "price": 480,
+      "effects": [
+        {
+          "kind": "range_bonus",
+          "value": 1
+        }
+      ],
+      "tier": 2,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_WOOD_STAFF": {
+      "name": "Wooden Staff",
+      "type": "staff",
+      "attack": 3,
+      "accuracy": 95,
+      "crit": 2,
+      "price": 60,
+      "effects": [],
+      "tier": 1,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_SAGE_STAFF": {
+      "name": "Sage Staff",
+      "type": "staff",
+      "attack": 6,
+      "accuracy": 95,
+      "crit": 3,
+      "price": 520,
+      "effects": [
+        {
+          "kind": "stat_bonus",
+          "stat": "mp",
+          "value": 6
+        }
+      ],
+      "tier": 2,
+      "asset_id": null,
+      "sellable": true,
+      "builtin": false
+    },
+    "WPN_FISTS": {
+      "name": "Bare Fists",
+      "type": "natural",
+      "attack": 2,
+      "accuracy": 95,
+      "crit": 2,
+      "price": 0,
+      "effects": [],
+      "tier": 0,
+      "sellable": false,
+      "builtin": true,
+      "asset_id": null
+    },
+    "WPN_NATURAL_CLAWS": {
+      "name": "Natural Claws",
+      "type": "natural",
+      "attack": 9,
+      "accuracy": 92,
+      "crit": 6,
+      "price": 0,
+      "effects": [],
+      "tier": 0,
+      "sellable": false,
+      "builtin": true,
+      "equip_classes": [
+        "brawler"
+      ],
+      "asset_id": null
+    }
+  }
+}
