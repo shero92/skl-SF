@@ -106,7 +106,9 @@ func _capture_all() -> void:
                 push_error("Snapshot hash mismatch")
                 failures += 1
                 continue
-            if map_data.get("canvas_size", [1536, 1024]) != [1536, 1024]:
+            var evidence_canvas: Array = map_data.get("canvas_size", [1536, 1024])
+            # JSON numbers parse as floats; compare as ints (Array == is type-strict).
+            if evidence_canvas.size() != 2 or int(evidence_canvas[0]) != 1536 or int(evidence_canvas[1]) != 1024:
                 push_error("Evidence capture requires the reference canvas")
                 failures += 1
                 continue
