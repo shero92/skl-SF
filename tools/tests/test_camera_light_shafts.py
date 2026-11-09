@@ -22,6 +22,18 @@ class CameraLightShaftTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             cli.validate_light_shafts([good], {"S1"})
 
+    def test_shadow_mode_and_lighting_rules(self):
+        cli.validate_shadow_mode("painted")
+        cli.validate_shadow_mode("strips")
+        with self.assertRaises(ValueError):
+            cli.validate_shadow_mode("fancy")
+        cli.validate_lighting({"direction": [0.9, 0.3], "length": 0.5, "opacity": 0.4, "blur": 1,
+                               "color": [0.1, 0.1, 0.3], "light_pools": True})
+        for bad in ([], {"nope": 1}, {"opacity": 2}, {"blur": 9}, {"direction": [0, 0]},
+                    {"direction": [1]}, {"color": [2, 0, 0]}, {"light_pools": "yes"}, {"length": True}):
+            with self.assertRaises(ValueError):
+                cli.validate_lighting(bad)
+
 
 if __name__ == "__main__":
     unittest.main()

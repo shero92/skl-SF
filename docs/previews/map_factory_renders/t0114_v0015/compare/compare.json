@@ -1,0 +1,164 @@
+{
+  "canvas": [
+    1536,
+    1024
+  ],
+  "zones": {
+    "sea": {
+      "box": [
+        0,
+        0,
+        1536,
+        360
+      ],
+      "score": 0.2304,
+      "status_hint": "partial",
+      "mean_colour_diff": 0.0665,
+      "histogram_distance": 0.1983,
+      "edge_density_render": 0.1173,
+      "edge_density_target": 0.1454
+    },
+    "rear_arch": {
+      "box": [
+        555,
+        0,
+        990,
+        390
+      ],
+      "score": 0.262,
+      "status_hint": "partial",
+      "mean_colour_diff": 0.0764,
+      "histogram_distance": 0.2104,
+      "edge_density_render": 0.1184,
+      "edge_density_target": 0.1597
+    },
+    "left_architecture": {
+      "box": [
+        100,
+        130,
+        640,
+        700
+      ],
+      "score": 0.2923,
+      "status_hint": "missing",
+      "mean_colour_diff": 0.0981,
+      "histogram_distance": 0.2386,
+      "edge_density_render": 0.1389,
+      "edge_density_target": 0.179
+    },
+    "right_architecture": {
+      "box": [
+        965,
+        100,
+        1510,
+        710
+      ],
+      "score": 0.3567,
+      "status_hint": "missing",
+      "mean_colour_diff": 0.1302,
+      "histogram_distance": 0.3357,
+      "edge_density_render": 0.1302,
+      "edge_density_target": 0.1693
+    },
+    "floor": {
+      "box": [
+        190,
+        315,
+        1390,
+        800
+      ],
+      "score": 0.3358,
+      "status_hint": "missing",
+      "mean_colour_diff": 0.1271,
+      "histogram_distance": 0.2869,
+      "edge_density_render": 0.1279,
+      "edge_density_target": 0.1682
+    },
+    "bed": {
+      "box": [
+        220,
+        335,
+        580,
+        665
+      ],
+      "score": 0.3805,
+      "status_hint": "missing",
+      "mean_colour_diff": 0.164,
+      "histogram_distance": 0.3303,
+      "edge_density_render": 0.1554,
+      "edge_density_target": 0.1783
+    },
+    "study": {
+      "box": [
+        1000,
+        430,
+        1350,
+        675
+      ],
+      "score": 0.3143,
+      "status_hint": "missing",
+      "mean_colour_diff": 0.146,
+      "histogram_distance": 0.2596,
+      "edge_density_render": 0.1906,
+      "edge_density_target": 0.182
+    },
+    "compass": {
+      "box": [
+        635,
+        545,
+        890,
+        730
+      ],
+      "score": 0.1733,
+      "status_hint": "partial",
+      "mean_colour_diff": 0.0345,
+      "histogram_distance": 0.2142,
+      "edge_density_render": 0.1522,
+      "edge_density_target": 0.1664
+    },
+    "vegetation_and_perimeter": {
+      "box": [
+        90,
+        640,
+        1460,
+        950
+      ],
+      "score": 0.4225,
+      "status_hint": "missing",
+      "mean_colour_diff": 0.163,
+      "histogram_distance": 0.4104,
+      "edge_density_render": 0.1108,
+      "edge_density_target": 0.1682
+    },
+    "stairs": {
+      "box": [
+        655,
+        755,
+        875,
+        1024
+      ],
+      "score": 0.3078,
+      "status_hint": "missing",
+      "mean_colour_diff": 0.0813,
+      "histogram_distance": 0.3238,
+      "edge_density_render": 0.1095,
+      "edge_density_target": 0.1563
+    },
+    "lighting_and_shadows": {
+      "box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "score": 0.3479,
+      "status_hint": "missing",
+      "mean_colour_diff": 0.1176,
+      "histogram_distance": 0.3167,
+      "edge_density_render": 0.1055,
+      "edge_density_target": 0.1562
+    }
+  },
+  "visual_approval": false,
+  "note": "Automatic hints only; a human visual review is required."
+}

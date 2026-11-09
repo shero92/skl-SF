@@ -14,6 +14,7 @@ import argparse
 from collections import Counter
 import json
 from pathlib import Path
+import re
 import sys
 
 TOOLS = Path(__file__).resolve().parent
@@ -23,10 +24,16 @@ if str(TOOLS) not in sys.path:
 from map_data import ROOT, iter_instances, load_catalog, load_map
 
 FURNITURE_LIST = "objects"
+DIRECTION_SUFFIX = re.compile(r"_(north|south|east|west)$")
+
+
+def base_id(asset: str) -> str:
+    """Directional variants (F05_south) belong to their base catalog asset (F05)."""
+    return DIRECTION_SUFFIX.sub("", asset)
 
 
 def footprint(record: dict, catalog: dict, tile: int) -> tuple[float, float, float, float] | None:
-    info = catalog.get(str(record.get("id")))
+    info = catalog.get(base_id(str(record.get("id"))))
     if not info:
         return None
     scale = float(record.get("scale", 1.0))
@@ -50,7 +57,7 @@ def audit(data: dict, catalog: dict, min_overlap: float = 64.0) -> dict:
     furniture = []
     for list_name, record in iter_instances(data):
         instance = record.get("instance_id")
-        asset = str(record.get("id", ""))
+        asset = base_id(str(record.get("id", "")))
         asset_counts[asset] += 1
         if not instance:
             problems["missing_instance_ids"].append({"list": list_name, "asset": asset})

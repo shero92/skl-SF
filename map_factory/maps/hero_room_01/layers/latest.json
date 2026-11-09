@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 14,
+  "version": 15,
   "processing_passes": [
     "background",
     "ground",
