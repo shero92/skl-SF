@@ -6,7 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`G04__default/`](G04__default/FILES.md)
 
 ## Files
 

@@ -9,6 +9,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`blocks/`](blocks/FILES.md)
 - [`changes/`](changes/FILES.md)
 - [`layers/`](layers/FILES.md)
+- [`patches/`](patches/FILES.md)
 - [`versions/`](versions/FILES.md)
 
 ## Files

@@ -32,3 +32,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0023](requests/ART-0023_hero_room_side_wall_fixture_views.md) | requested | graphics-specialist | TASK-0038 | D001,D004,D009,W015 |
 | [ART-0024](requests/ART-0024_hero_room_rope_post_fence.md) | requested | graphics-specialist | TASK-0038 | D017 |
 | [ART-0025](requests/ART-0025_hero_room_entrance_stairs.md) | requested | graphics-specialist | TASK-0038 | ST001,ST002,ST003,ST006 |
+| [ART-0026](requests/ART-0026_builtin_factory_g04_test.md) | delivered | codex | TASK-0069 | none |
+| [ART-0027](requests/ART-0027_six_character_factory.md) | in_progress | codex | TASK-0070 | CHAR001,CHAR002,CHAR003,CHAR004,CHAR005,CHAR006 |
+| [ART-0028](requests/ART-0028_hero_phantom_dash.md) | in_progress | codex | TASK-0072 | CHAR001,WPN_HERO_BASIC_SWORD,WPN_IRON_SWORD |
+| [ART-0029](requests/ART-0029_golden_cyclone.md) | in_progress | codex | TASK-0074 | CHAR001,WPN_HERO_BASIC_SWORD,WPN_IRON_SWORD |
