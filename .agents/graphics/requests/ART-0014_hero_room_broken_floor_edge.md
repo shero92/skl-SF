@@ -1,6 +1,6 @@
 ---
 id: ART-0014
-status: delivered
+status: integrated
 owner: graphics-specialist
 task: TASK-0025
 dedupe_key: hero_room_broken_floor_edge

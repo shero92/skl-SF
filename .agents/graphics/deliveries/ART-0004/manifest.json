@@ -1,7 +1,7 @@
 {
   "request_id": "ART-0004",
   "task_id": "TASK-0015",
-  "status": "rendered_unreviewed",
+  "status": "owner_accepted",
   "files": [
     {
       "path": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
@@ -281,8 +281,219 @@
     "owner_confirmed": false
   },
   "review": {
-    "visual_approval": null,
-    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
+    "visual_approval": "owner_accepted",
+    "note": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+    "accepted_by": "owner"
   },
-  "cost": "unknown"
+  "cost": "unknown",
+  "assets": [
+    {
+      "id": "W023",
+      "name": "Hero Wall Run North",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        256
+      ],
+      "origin": [
+        42,
+        189
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "north",
+        "run",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+    },
+    {
+      "id": "W024",
+      "name": "Hero Wall Run East",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W024_Hero_Wall_Run_East.png",
+      "status": "ready",
+      "pixel_size": [
+        175,
+        334
+      ],
+      "origin": [
+        8,
+        219
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "east",
+        "ivy",
+        "run",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+        "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
+        "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+    },
+    {
+      "id": "W025",
+      "name": "Hero Wall Run South",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W025_Hero_Wall_Run_South.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        262
+      ],
+      "origin": [
+        42,
+        162
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "run",
+        "south",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south@4x.png",
+        "master_sha256": "12aff0f0b145fa69ec02509ab80589bf9901d2bc35b909aca27f626489834412",
+        "sha256": "ff12ba453924493b40089e4a30a2e161fba47faa52753bb4d41427ad01854adb"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+    },
+    {
+      "id": "W026",
+      "name": "Hero Wall Run West",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W026_Hero_Wall_Run_West.png",
+      "status": "ready",
+      "pixel_size": [
+        175,
+        294
+      ],
+      "origin": [
+        109,
+        190
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "run",
+        "stone",
+        "wall",
+        "walls",
+        "west"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+        "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
+        "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+    }
+  ]
 }

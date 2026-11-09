@@ -1,7 +1,7 @@
 {
   "request_id": "ART-0014",
   "task_id": "TASK-0025",
-  "status": "rendered_unreviewed",
+  "status": "owner_accepted",
   "files": [
     {
       "path": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01.png",
@@ -259,8 +259,219 @@
     "owner_confirmed": false
   },
   "review": {
-    "visual_approval": null,
-    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
+    "visual_approval": "owner_accepted",
+    "note": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+    "accepted_by": "owner"
   },
-  "cost": "unknown"
+  "cost": "unknown",
+  "assets": [
+    {
+      "id": "F023",
+      "name": "Hero Broken Floor Edge 01",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F023_Hero_Broken_Floor_Edge_01.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        155
+      ],
+      "origin": [
+        71,
+        155
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "broken",
+        "edge",
+        "floors",
+        "south",
+        "stone",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01.png",
+        "builder": "broken_floor_edge",
+        "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01@4x.png",
+        "master_sha256": "f98b0e1eec3262d8e661a40baf3439c34792feffff8ddb364962584fbbc9442b",
+        "sha256": "09a9e82e62c4ebb95e0dc8d2adf362e7c20c57c92b1d01c09da791bb58ebf928"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+    },
+    {
+      "id": "F024",
+      "name": "Hero Broken Floor Edge 02",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F024_Hero_Broken_Floor_Edge_02.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        155
+      ],
+      "origin": [
+        71,
+        155
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "broken",
+        "edge",
+        "floors",
+        "south",
+        "stone",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02.png",
+        "builder": "broken_floor_edge",
+        "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02@4x.png",
+        "master_sha256": "87f06eb18e5365b380c22a99c2ebe98c8dd9196d4d92864aaedcbb80ffdd99d4",
+        "sha256": "5ec4aabea54187583283d1e5a1c8d4f44430cb59f547fa123cd888dd19afb337"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+    },
+    {
+      "id": "F025",
+      "name": "Hero Broken Floor Corner Left",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F025_Hero_Broken_Floor_Corner_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        147,
+        160
+      ],
+      "origin": [
+        74,
+        160
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "broken",
+        "edge",
+        "floors",
+        "south",
+        "stone",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left.png",
+        "builder": "broken_floor_edge",
+        "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left@4x.png",
+        "master_sha256": "a3936aa599bbb991e8f5cfeb77c8d01770103ef38deb4185dc9bbc98400d0262",
+        "sha256": "c7c712db7e39246d25c2698e52777608db78dda0097ded023ccdf2d5ccfead9b"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+    },
+    {
+      "id": "F026",
+      "name": "Hero Broken Floor Corner Right",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F026_Hero_Broken_Floor_Corner_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        144,
+        158
+      ],
+      "origin": [
+        72,
+        158
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "broken",
+        "edge",
+        "floors",
+        "south",
+        "stone",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right.png",
+        "builder": "broken_floor_edge",
+        "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right@4x.png",
+        "master_sha256": "f25a79b56876656f87b7b064119055575df8473448dd07e4048126b34d6644bf",
+        "sha256": "28b45f769449f328aaf3802ce1d48c86ead9e64c620bbed8666a79848d8b4173"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)"
+    }
+  ]
 }
