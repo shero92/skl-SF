@@ -1,6 +1,6 @@
 ---
 id: TASK-0105
-status: review
+status: done
 owner: claude
 agent: claude
 priority: high
@@ -21,3 +21,6 @@ No art is generated; existing registered PNGs and runtime-painted textures only.
 ## Result (Claude, 2026-11-09)
 Implemented on branch claude/map-factory-upgrade; tests: test_prepare_map_workspace.py pass. Ran on this fresh worktree: copied 229 ignored PNGs, Godot import ok, capture then worked.
 Next step: review and merge the PR, then use the tools on a new room version (v0015).
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #111; prepare_map_workspace.py used on every new worktree since.

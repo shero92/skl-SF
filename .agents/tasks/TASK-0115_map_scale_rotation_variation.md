@@ -1,6 +1,6 @@
 ---
 id: TASK-0115
-status: review
+status: done
 owner: claude
 agent: claude
 priority: medium
@@ -19,3 +19,6 @@ Owner question 2026-11-09: can parts be turned 360 degrees or scaled. Free rotat
 
 ## Result (Claude, 2026-11-09)
 Rules file, CLI validation, tools/map_variation.py and v0016 (flower clusters tilted and rescaled with seed 7) added. visual_approval stays false. Next step: review the render, then list more rotation-safe ids as new art (rubble, leaves) arrives.
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #113; v0016 published.

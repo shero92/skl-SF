@@ -1,6 +1,6 @@
 ---
 id: TASK-0104
-status: review
+status: done
 owner: claude
 agent: claude
 priority: high
@@ -21,3 +21,6 @@ No art is generated; existing registered PNGs and runtime-painted textures only.
 ## Result (Claude, 2026-11-09)
 Implemented on branch claude/map-factory-upgrade; tests: test_hero_room_capture_evidence.py pass. Real v0014 capture passes the evidence gate: 84 distinct textures, 412 placements, 150 runtime-generated, no missing or unregistered paths (docs/previews/map_factory_renders/t0104_v0014/).
 Next step: review and merge the PR, then use the tools on a new room version (v0015).
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #111; real v0014 capture passed the evidence gate (84 textures, no missing or unregistered paths).

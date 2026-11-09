@@ -1,6 +1,6 @@
 ---
 id: TASK-0055
-status: review
+status: done
 owner: claude
 branch: fix/agent-costs-started-at
 agent: claude
@@ -35,3 +35,6 @@ art_request: none
 - Tests: test_agent_costs 13/13; the two new attribution tests fail on the old code (2 errors) and pass with the fix; py -3 tools/run_tests.py --changed 5/5.
 - Known gap (not in scope): the hook records sessions in the checkout it runs in, so a session whose cwd is the main checkout while start runs in a worktree still has no session file (diagnose shows none for this task); this receipt therefore stays unknown.
 - PR: https://github.com/shero92/skl-SF/pull/53
+
+## Closure (Claude, 2026-11-09)
+Branch fix/agent-costs-started-at merged (PRs #53, #54); suite passes 66/66.

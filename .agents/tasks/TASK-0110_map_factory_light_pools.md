@@ -1,6 +1,6 @@
 ---
 id: TASK-0110
-status: review
+status: done
 owner: claude
 agent: claude
 priority: high
@@ -21,3 +21,6 @@ No art is generated; existing registered PNGs and runtime-painted textures only.
 ## Result (Claude, 2026-11-09)
 Implemented on branch claude/map-factory-upgrade; tests: test_shadow_painter.py pass. Level5_Light is enabled by lighting.light_pools in the map.
 Next step: review and merge the PR, then use the tools on a new room version (v0015).
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #111; Level5_Light is enabled by lighting.light_pools in v0015 and later.

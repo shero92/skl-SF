@@ -1,6 +1,6 @@
 ---
 id: TASK-0107
-status: review
+status: done
 owner: claude
 agent: claude
 priority: high
@@ -21,3 +21,6 @@ No art is generated; existing registered PNGs and runtime-painted textures only.
 ## Result (Claude, 2026-11-09)
 Implemented on branch claude/map-factory-upgrade; tests: test_map_factory_tools.py pass. Generator only; no map version uses it yet (needs the wall art of ART-0032 to look right).
 Next step: review and merge the PR, then use the tools on a new room version (v0015).
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #111; generator ready, waiting for the wall art of ART-0032 before use in a room version.

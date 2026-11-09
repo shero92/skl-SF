@@ -412,6 +412,13 @@
       "covers": "Retired low-quality twins: layout data in hd_map.json, HD runtime twin size, blueprint measurements and texture availability without the original PNG.",
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_hd_migration.py"],
       "paths": ["tools/migrate_low_to_hd.py", "tools/build_hd_runtime_textures.py", "tools/build_hero_room_blueprint.py", "tools/audit_room_assets.py", "tools/tests/test_hd_migration.py", "assets_hd/hd_map.json", "map_factory/scripts/hd_assets.gd", "map_factory/scripts/asset_factory.gd", "map_factory/scripts/room_factory.gd"]
+    },
+    {
+      "id": "capture_checks",
+      "kind": "python",
+      "covers": "Evidence captures refuse draft or fallback placeholders (TASK-0059).",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_capture_checks.py"],
+      "paths": ["tools/capture_checks.gd", "tools/capture_map_previews.gd", "tools/verify_capture_checks.gd", "tools/tests/test_capture_checks.py", "map_factory/scripts/asset_factory.gd", "tools/battle_godot_harness.py"]
     }
   ]
 }

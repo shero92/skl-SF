@@ -1,6 +1,6 @@
 ---
 id: TASK-0057
-status: review
+status: done
 owner: claude
 branch: fix/codex-pricing-gitignore
 agent: claude
@@ -34,3 +34,6 @@ art_request: none
 - Changed files: .agents/monitoring/pricing.json (gpt-6.1-sol 2.00/0.10/10.00 per 1M, official OpenAI page checked 2026-10-27, short-context tier), .gitignore (.claude/worktrees/).
 - Tests: py -3 tools/run_tests.py --changed 30/30; cost_from_tokens on TASK-0009's recorded tokens gives 0.161225 USD. Existing receipts are not repriced (records stay as written).
 - PR: none.
+
+## Closure (Claude, 2026-11-09)
+Branch fix/codex-pricing-gitignore merged (PR #55); suite passes 66/66.

@@ -1,6 +1,6 @@
 ---
 id: TASK-0049
-status: blocked
+status: done
 owner: codex
 branch: work/task-0049-b50a67a7
 agent: codex
@@ -51,3 +51,6 @@ Outcome: PR checks validate records without writing generated files; main checks
 
 ## Runner evidence
 - Runner failed: Agent did not change any allowed code
+
+## Closure (Claude, 2026-11-09)
+Already solved by main-only generation: the PR workflows (agent_workflow.yml, agent_costs.yml, project_indexes.yml) run `--sources-only --base origin/main`, which validates records without writing generated files, while pushes to main run the strict generators. test_agent_workflow.py and test_local_planner.py pass. Every PR since #105 passed these checks without regenerated boards.

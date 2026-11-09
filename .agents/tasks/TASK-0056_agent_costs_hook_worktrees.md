@@ -1,6 +1,6 @@
 ---
 id: TASK-0056
-status: review
+status: done
 owner: claude
 branch: fix/agent-costs-hook-worktrees
 agent: claude
@@ -35,3 +35,6 @@ art_request: none
 - Tests: test_agent_costs 15/15; the main-checkout hook test fails on the old code and passes with the fix; py -3 tools/run_tests.py --changed passed.
 - Note: this session's hook still runs main's old agent_costs.py until this merges, so TASK-0056's own receipt stays unknown.
 - PR: none.
+
+## Closure (Claude, 2026-11-09)
+Branch fix/agent-costs-hook-worktrees merged (PR #54); suite passes 66/66.

@@ -1,6 +1,6 @@
 ---
 id: TASK-0065
-status: review
+status: done
 owner: claude
 branch: feat/agent-costs-breakdown
 agent: claude
@@ -35,3 +35,6 @@ art_request: none
 - Tests: test_agent_costs 16/16; py -3 tools/run_tests.py --changed 5/5.
 - Real run on main receipts: 2.577 USD known over 7 of 35 receipts; overall input 3%, cache read 13%, cache write 49%, output 35%.
 - PR: none.
+
+## Closure (Claude, 2026-11-09)
+Branch feat/agent-costs-breakdown merged (PR #60); suite passes 66/66.
