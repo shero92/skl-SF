@@ -37,4 +37,10 @@ def iter_instances(data: dict):
 def load_catalog(root: Path = ROOT) -> dict[str, dict]:
     """Catalog of placeable assets keyed by asset id (assets_generated manifest)."""
     manifest = load_json(root / "assets_generated" / "manifest.json")
-    return {item["asset_id"]: item for item in manifest.get("assets", []) if "asset_id" in item}
+    catalog = {item["asset_id"]: item for item in manifest.get("assets", []) if "asset_id" in item}
+    # Parts registered later (Blender and HD pack deliveries) live only in the asset index.
+    index = root / "map_factory" / "metadata" / "asset_index.json"
+    if index.is_file():
+        for item in load_json(index).get("assets", []):
+            catalog.setdefault(item["id"], {"asset_id": item["id"], "footprint_tiles_x": 1, "footprint_tiles_y": 1})
+    return catalog
