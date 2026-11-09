@@ -171,6 +171,13 @@ func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> vo
         if owner != null:
             layer_shadow.set_meta("owner_ref", owner.get_instance_id())
             layer_shadow.set_meta("owner_offset", layer_shadow.position - room_transform(owner, root).origin)
+    # Painted shadow level (TASK-0109): opt-in per map, replaces the strip shadows when on.
+    if String(data.get("shadow_mode", "")) == "painted":
+        shadows.visible = false
+        var lighting: Dictionary = data.get("lighting", {})
+        ShadowPainter.build_layer(root, lighting)
+        if bool(lighting.get("light_pools", false)):
+            ShadowPainter.build_light_layer(root)
     _watch_links(root)
 
 # Instance-id lookup captured before mounting changes the hierarchy.
@@ -215,6 +222,7 @@ static func room_transform(node: Node2D, room: Node) -> Transform2D:
 static func sync_links(room: Node2D) -> void:
     if not is_instance_valid(room):
         return
+    ShadowPainter.sync(room)
     var shadows := room.get_node_or_null("Level4_Shadows")
     if shadows == null:
         return

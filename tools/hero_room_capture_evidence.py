@@ -77,6 +77,27 @@ def texture_paths(value) -> set[str]:
     return found
 
 
+def hd_runtime_paths(root: Path, base: set[str]) -> set[str]:
+    """HD runtime twins of registered assets_generated textures (assets_hd/hd_map.json)."""
+    hd_map = root / "assets_hd" / "hd_map.json"
+    if not hd_map.is_file():
+        return set()
+    mapped = read_json(hd_map).get("map", {})
+    found = set()
+    for name in base:
+        if name.startswith("assets_generated/") and name.removeprefix("assets_generated/") in mapped:
+            found.add("assets_hd/runtime/" + Path(name).name)
+    return found
+
+
+def parts_library_paths(root: Path) -> set[str]:
+    """Registered Map Factory part textures (map_factory/metadata/asset_index.json)."""
+    index = root / "map_factory" / "metadata" / "asset_index.json"
+    if not index.is_file():
+        return set()
+    return {p for p in texture_paths(read_json(index)) if p.startswith("map_factory/parts/")}
+
+
 def resource(root: Path, name: str) -> Path:
     path = (root / name.removeprefix("res://")).resolve()
     if not path.is_relative_to(root.resolve()):
@@ -111,7 +132,8 @@ def prepare(root: Path, version: int, target: Path, capture_id: str) -> tuple[Pa
         raise ValueError("Snapshot must use the reference canvas")
     assets = read_json(root / "map_factory" / "metadata" /
                        ("environment_assets_v2" + ".json"))
-    allowed = sorted(texture_paths(assets))
+    base = texture_paths(assets)
+    allowed = sorted(base | hd_runtime_paths(root, base) | parts_library_paths(root))
     if not allowed:
         raise ValueError("Environment registry contains no texture paths")
     for name in allowed:
@@ -169,13 +191,18 @@ def verify(root: Path, output: Path, expected: dict) -> dict:
         name = placement["texture_path"].removeprefix("res://")
         if forbidden_texture(name):
             raise ValueError("Non-environment texture rejected")
-        if name not in allowed:
-            unregistered.append(name)
-        path = resource(root, name)
-        if not path.is_file():
-            missing.append(name)
-        elif placement.get("texture_sha256") != digest(path):
-            raise ValueError("Source texture hash mismatch")
+        if placement.get("runtime_generated") is True:
+            # Painted shadows and light pools have no source file: require a content hash.
+            if not name.startswith("runtime:") or not re.fullmatch(r"[0-9a-f]{64}", str(placement.get("texture_sha256", ""))):
+                raise ValueError("Invalid runtime generated texture provenance")
+        else:
+            if name not in allowed:
+                unregistered.append(name)
+            path = resource(root, name)
+            if not path.is_file():
+                missing.append(name)
+            elif placement.get("texture_sha256") != digest(path):
+                raise ValueError("Source texture hash mismatch")
         bounds = placement.get("bounds")
         if (not isinstance(bounds, list) or len(bounds) != 4
                 or any(type(v) not in (int, float) for v in bounds)
@@ -210,6 +237,7 @@ def verify(root: Path, output: Path, expected: dict) -> dict:
         "asset_registry_sha256": expected["asset_registry_sha256"],
         "resolved_assets": placements, "texture_paths": paths,
         "distinct_texture_count": len(paths), "placement_count": len(placements),
+        "runtime_generated_count": sum(1 for p in placements if p.get("runtime_generated") is True),
         "missing_paths": missing, "unregistered_paths": unregistered,
         "structural_zones": findings,
         "visual_approval": False,

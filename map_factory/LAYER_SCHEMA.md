@@ -17,3 +17,11 @@ The compiler saves each version's five-pass graph under map_factory/maps/MAP_ID/
 Wall-mounted detail example: set mount_on to a placed wall instance ID and mount_offset to [dx,dy]. The world position is recomputed from the wall location. This allows the wall and its ivy/lantern/banner to move together. Broken/cyclic mounts are rejected.
 
 Never guess 100 percent artistic quality from available PNGs; validate image files, metadata, pixel fidelity, occlusion and a real Godot render before approval. See MAP_FACTORY_RULES.md. Unknown sprite shapes require individual PNG reconstruction and human review.
+
+## Painted shadow level and light level (TASK-0109, TASK-0110)
+
+Shadows are a **separate level**, not only static shadow strips. `ShadowPainter.build_layer(room, light)` (map_factory/scripts/shadow_painter.gd) creates `Level4_PaintedShadows` (z 20, below walls and decor, so it never darkens the object that casts it). For every ground-standing Sprite2D it paints the shadow from the sprite's real alpha silhouette: the silhouette is projected along the light direction onto the ground plane, fades with height, is softened, and gets a contact occlusion ellipse under the footprint. Flat or wall-hung pieces (rugs, emblems, banners, lanterns, glow, mounted decor) are skipped. Each shadow records `owner_ref`, follows its owner via `ShadowPainter.sync(room)` and is removed with it. `ShadowPainter.set_shadows_visible(room, false)` hides the level. Nothing is generated as art; it is deterministic runtime painting.
+
+Light parameters (all optional, defaults in `default_light()`): `direction` [x,y] (shadow falls toward it), `length`, `opacity`, `height_fade`, `blur`, `color` [r,g,b], `contact_opacity`, `contact_height`. Maps opt in with `"shadow_mode": "painted"` and an optional `"lighting"` object with those keys.
+
+`ShadowPainter.build_light_layer(room)` creates `Level5_Light` (z 60): a soft additive warm pool around each lantern or candle, toggled with `set_light_visible`.

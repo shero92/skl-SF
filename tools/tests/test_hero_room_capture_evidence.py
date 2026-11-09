@@ -72,5 +72,34 @@ class CaptureEvidenceTests(unittest.TestCase):
         self.assertIn("test_hero_room_capture_evidence.py", entry["command"])
 
 
+class AllowlistExtensionTests(unittest.TestCase):
+    def test_hd_runtime_twins_follow_the_hd_map(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "assets_hd").mkdir()
+            (root / "assets_hd" / "hd_map.json").write_text(
+                '{"map": {"floor/G01__floor.png": {"master": "x"}}}', encoding="utf-8")
+            base = {"assets_generated/floor/G01__floor.png", "assets_generated/floor/G02__floor.png",
+                    "map_factory/parts/shadows/S1.png"}
+            self.assertEqual(capture.hd_runtime_paths(root, base), {"assets_hd/runtime/G01__floor.png"})
+            self.assertEqual(capture.hd_runtime_paths(root / "nowhere", base), set())
+
+    def test_parts_library_paths_only_registered_parts(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "map_factory" / "metadata").mkdir(parents=True)
+            (root / "map_factory" / "metadata" / "asset_index.json").write_text(
+                '{"assets": [{"texture_path": "res://map_factory/parts/shadows/S1.png"},'
+                ' {"texture_path": "res://elsewhere/X.png"}]}', encoding="utf-8")
+            self.assertEqual(capture.parts_library_paths(root), {"map_factory/parts/shadows/S1.png"})
+
+    def test_real_registry_allows_hd_and_parts(self):
+        assets = capture.read_json(ROOT / "map_factory" / "metadata" / "environment_assets_v2.json")
+        base = capture.texture_paths(assets)
+        self.assertGreater(len(capture.parts_library_paths(ROOT)), 50)
+        if (ROOT / "assets_hd" / "hd_map.json").is_file():
+            self.assertTrue(capture.hd_runtime_paths(ROOT, base))
+
+
 if __name__ == "__main__":
     unittest.main()
