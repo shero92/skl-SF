@@ -348,6 +348,49 @@
       "covers": "Aider worker eligibility, atomic claim, touches/dependency checks, no duplicate execution, retry, auth/balance pause and isolated commit.",
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_aider_worker.py"],
       "paths": ["tools/aider_worker.py", "tools/run_aider_worker.ps1", "tools/setup_aider_worker.ps1", "tools/tests/test_aider_worker.py"]
+    },
+    {
+      "id": "shadow_painter",
+      "kind": "python",
+      "covers": "Painted shadow level from object silhouettes and the separate light level: projection, height fade, contact ellipse, owner links, toggles.",
+      "command": [
+        "{python}",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-p",
+        "test_shadow_painter.py"
+      ],
+      "paths": [
+        "map_factory/scripts/shadow_painter.gd",
+        "map_factory/LAYER_SCHEMA.md",
+        "tools/verify_shadow_painter.gd",
+        "tools/tests/test_shadow_painter.py",
+        "tools/battle_godot_harness.py"
+      ]
+    },
+    {
+      "id": "map_factory_tools",
+      "kind": "python",
+      "covers": "Map Factory data tools: audit, version diff, reference compare, wall runs and terrace edge generators.",
+      "command": ["{python}","-m","unittest","discover","-s","tools/tests","-p","test_map_factory_tools.py"],
+      "paths": ["tools/map_data.py", "tools/map_audit.py", "tools/map_version_diff.py", "tools/map_reference_compare.py", "tools/map_wall_generator.py", "tools/map_terrace_edge.py", "tools/tests/test_map_factory_tools.py"]
+    },
+    {
+      "id": "prepare_map_workspace",
+      "kind": "python",
+      "covers": "Workspace preparation: missing ignored PNG report/copy and Godot import.",
+      "command": ["{python}","-m","unittest","discover","-s","tools/tests","-p","test_prepare_map_workspace.py"],
+      "paths": ["tools/prepare_map_workspace.py", "tools/tests/test_prepare_map_workspace.py"]
+    },
+    {
+      "id": "map_factory_viewer",
+      "kind": "python",
+      "covers": "Live Map Factory viewer: level toggles, shadow style switch and reload on file change.",
+      "command": ["{python}","-m","unittest","discover","-s","tools/tests","-p","test_map_factory_viewer.py"],
+      "paths": ["scenes/map_factory_viewer.gd", "scenes/map_factory_viewer.tscn", "tools/verify_map_factory_viewer.gd", "tools/tests/test_map_factory_viewer.py", "tools/battle_godot_harness.py"]
     }
   ]
 }

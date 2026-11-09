@@ -9,28 +9,52 @@ var capture_request: Dictionary = {}
 var resolved_assets: Array = []
 var source_errors: Array = []
 
+func _sprite_bounds(node: Sprite2D) -> Array:
+    var transform: Transform2D = node.get_global_transform_with_canvas()
+    var rect: Rect2 = node.get_rect()
+    var corners := [
+        transform * rect.position,
+        transform * Vector2(rect.end.x, rect.position.y),
+        transform * rect.end,
+        transform * Vector2(rect.position.x, rect.end.y)]
+    var bounds := Rect2(corners[0], Vector2.ZERO)
+    for corner in corners:
+        bounds = bounds.expand(corner)
+    return [bounds.position.x, bounds.position.y, bounds.size.x, bounds.size.y]
+
+func _runtime_texture_hash(texture: Texture2D) -> String:
+    var image: Image = texture.get_image()
+    if image == null:
+        return ""
+    var hashing := HashingContext.new()
+    hashing.start(HashingContext.HASH_SHA256)
+    hashing.update(image.get_data())
+    return hashing.finish().hex_encode()
+
 func _collect_sources(node: Node, allowed: Array) -> void:
     if node is Sprite2D and node.texture != null:
         var texture_path: String = node.texture.resource_path
         var relative := texture_path.trim_prefix("res://")
-        if not relative in allowed or not FileAccess.file_exists(texture_path):
+        if texture_path == "":
+            # Painted shadows and light pools are generated at runtime from registered sprites.
+            var digest := _runtime_texture_hash(node.texture)
+            if digest == "":
+                source_errors.append("Unreadable runtime texture on " + String(node.name))
+            else:
+                resolved_assets.append({
+                    "node": String(node.get_path()),
+                    "texture_path": "runtime:" + digest,
+                    "texture_sha256": digest,
+                    "runtime_generated": true,
+                    "bounds": _sprite_bounds(node)})
+        elif not relative in allowed or not FileAccess.file_exists(texture_path):
             source_errors.append(texture_path)
         else:
-            var transform: Transform2D = node.get_global_transform_with_canvas()
-            var rect: Rect2 = node.get_rect()
-            var corners := [
-                transform * rect.position,
-                transform * Vector2(rect.end.x, rect.position.y),
-                transform * rect.end,
-                transform * Vector2(rect.position.x, rect.end.y)]
-            var bounds := Rect2(corners[0], Vector2.ZERO)
-            for corner in corners:
-                bounds = bounds.expand(corner)
             resolved_assets.append({
                 "node": String(node.get_path()),
                 "texture_path": texture_path,
                 "texture_sha256": FileAccess.get_sha256(texture_path),
-                "bounds": [bounds.position.x, bounds.position.y, bounds.size.x, bounds.size.y]})
+                "bounds": _sprite_bounds(node)})
     elif node is CanvasItem and not node is Node2D:
         source_errors.append("Unsupported drawable: " + String(node.get_class()))
     for child in node.get_children():
