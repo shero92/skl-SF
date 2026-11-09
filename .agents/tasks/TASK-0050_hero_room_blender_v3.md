@@ -1,6 +1,6 @@
 ---
 id: TASK-0050
-status: review
+status: done
 owner: claude
 branch: feat/hero-room-blender-v3
 agent: claude
@@ -36,3 +36,6 @@ art_request: none
 - Capture: whole-image difference to reference base 74.68 / v1 74.71 / v2 73.59 / v3 74.23 (lower is closer). Visual: walls are continuous along the steps and much lower; stone still reads pale grey, mostly hidden behind HD props, ivy barely visible, east wall shadow falls on the sea. Not approved (candidate_unapproved).
 - PR: https://github.com/shero92/skl-SF/pull/41
 - Note: first recorded as TASK-0049 (commit 867e40d trailer); renumbered to TASK-0050 because the planner created another TASK-0049 on main (PR #42).
+
+## Closure (Claude, 2026-11-09)
+Deliverable met: candidate v3 captured and compared; not approvable (recorded above). The Blender candidate line is closed: the owner supplied high quality HD masters (assets_hd, approved 2026-11-09) and the room is now built from them (hero_room_01 v0014 to v0017); remaining gaps go to Codex requests ART-0032..0035. Reopen only if the owner wants Blender pieces again.

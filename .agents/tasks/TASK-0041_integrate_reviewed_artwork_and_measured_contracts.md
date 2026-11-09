@@ -1,6 +1,6 @@
 ---
 id: TASK-0041
-status: blocked
+status: cancelled
 owner: claude
 branch: work/task-0041-cf8add5a
 agent: claude
@@ -48,3 +48,6 @@ Outcome: Only signed reviewed delivery bytes integrated by authorized integrator
 
 ## Runner evidence
 - Runner failed: Only allowlisted router tests permitted
+
+## Closure (Claude, 2026-11-09)
+Integration of reviewed Blender deliveries is not needed: the HD runtime pipeline (assets_hd) replaced them; the runner failure (allowlist) is moot. Reopen if the owner wants the Blender line back.

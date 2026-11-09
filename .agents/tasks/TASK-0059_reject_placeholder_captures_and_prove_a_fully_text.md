@@ -1,6 +1,6 @@
 ---
 id: TASK-0059
-status: review
+status: done
 owner: codex
 branch: work/task-0059-1b0566f0
 agent: codex
@@ -56,3 +56,6 @@ Outcome: Keep coding checkout image-free. Give only isolated deterministic rende
 
 ## Closure (Claude, 2026-11-09)
 Receipts already record texture inventory hashes, missing and unregistered paths, commit, version and camera (hero_room_capture_evidence.py, TASK-0104). Added the missing guard: tools/capture_checks.gd makes an evidence capture fail when AssetFactory drew a draft placeholder (magenta polygon or '(draft)' label); the receipt now has draft_placeholder_count. Tests: tools/tests/test_capture_checks.py. Real v0017 capture passes with 0 drafts. Next step: review, then TASK-0062 can start.
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #123 with its test (capture_checks); every capture since passes with draft_placeholder_count 0.

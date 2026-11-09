@@ -1,6 +1,6 @@
 ---
 id: TASK-0063
-status: review
+status: cancelled
 owner: claude
 branch: work/task-0063-00ca7e6f
 agent: claude
@@ -48,3 +48,6 @@ Outcome: Reuse existing builders/specs and ART IDs. Deliver code/spec improvemen
 
 ## Runner evidence
 - Validated infrastructure PR: https://github.com/shero92/skl-SF/pull/59
+
+## Closure (Claude, 2026-11-09)
+Never started (no changes); it improves Blender builders that are no longer on the path. Reopen if the owner wants the Blender line back.

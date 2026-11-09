@@ -1,6 +1,6 @@
 ---
 id: TASK-0047
-status: review
+status: done
 owner: claude
 branch: feat/hero-room-blender-candidate
 agent: claude
@@ -37,3 +37,6 @@ art_request: none
 - Visual check by Claude of the comparison sheet: candidate v1 is WORSE than v0011. The orthographic side walls read as thin, pale, almost white vertical strips with dark gaps at the floor steps: overexposed light limestone, no ivy, far less detail than the HD style; the reference shows the side walls' inner faces. The broken front edge is almost entirely hidden behind the front wall pieces and stairs.
 - Not approved and not published: no map version, catalog or map_factory/parts change.
 - Next (v2 loop): fix exposure/material (warmer, darker golden limestone, lower sun), add ivy/flowers, revisit side-wall presentation with the owner, place the broken edge where the reference shows it (or drop it), then re-capture.
+
+## Closure (Claude, 2026-11-09)
+Deliverable met: a candidate was rendered by real Godot with region metrics and judged worse than v0011 (recorded above); nothing published. The Blender candidate line is closed: the owner supplied high quality HD masters (assets_hd, approved 2026-11-09) and the room is now built from them (hero_room_01 v0014 to v0017); remaining gaps go to Codex requests ART-0032..0035. Reopen only if the owner wants Blender pieces again.
