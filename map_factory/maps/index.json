@@ -3,11 +3,11 @@
   "maps": {
     "hero_room_01": {
       "map_id": "hero_room_01",
-      "version": 17,
+      "version": 18,
       "latest": "map_factory/maps/hero_room_01/latest.json",
-      "immutable_snapshot": "map_factory/maps/hero_room_01/versions/v0017.json",
-      "snapshot_sha256": "8a15da1bdcdd14f8239992bb0da633785b2d8bf649dc4b58c7e5d4b7347c13f5",
-      "updated_at": "2026-11-09T17:27:09+00:00",
+      "immutable_snapshot": "map_factory/maps/hero_room_01/versions/v0018.json",
+      "snapshot_sha256": "af4bfedd1c2a205b611a4cc33888cb75a845ed993b2b4434bd8a50d2839c3c35",
+      "updated_at": "2026-11-09T21:25:40+00:00",
       "parent_map": null
     },
     "courtyard_demo_01": {

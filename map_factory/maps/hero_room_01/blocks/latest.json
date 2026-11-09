@@ -10,14 +10,14 @@
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 17,
+  "version": 18,
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
   "block_count": 127,
-  "unique_asset_count": 69,
+  "unique_asset_count": 66,
   "reused_asset_ids": [
     "A01",
     "A05",
@@ -75,12 +75,9 @@
     "R10",
     "R11",
     "W01",
-    "W02",
-    "W03",
-    "W04",
-    "W05",
-    "W06",
-    "W07",
+    "W023",
+    "W024",
+    "W026",
     "W08",
     "W09",
     "W10",
@@ -1161,18 +1158,18 @@
     },
     {
       "instance_id": "PerimeterWall_01_00",
-      "asset_id": "W07",
+      "asset_id": "W023",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        142,
+        256
       ],
       "anchor": [
-        32,
-        128
+        42,
+        189
       ],
       "layer": "back_objects",
       "position": [
@@ -1201,46 +1198,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "cap",
-        "edge",
+        "ivy",
+        "north",
+        "run",
         "stone",
-        "top",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W07",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.json",
-        "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W07"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
       }
     },
     {
       "instance_id": "PerimeterWall_02_00",
-      "asset_id": "W07",
+      "asset_id": "W023",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        142,
+        256
       ],
       "anchor": [
-        32,
-        128
+        42,
+        189
       ],
       "layer": "back_objects",
       "position": [
@@ -1269,46 +1256,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "cap",
-        "edge",
+        "ivy",
+        "north",
+        "run",
         "stone",
-        "top",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W07",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.json",
-        "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W07"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
       }
     },
     {
       "instance_id": "PerimeterWall_03_00",
-      "asset_id": "W07",
+      "asset_id": "W023",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        142,
+        256
       ],
       "anchor": [
-        32,
-        128
+        42,
+        189
       ],
       "layer": "back_objects",
       "position": [
@@ -1337,30 +1314,20 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "cap",
-        "edge",
+        "ivy",
+        "north",
+        "run",
         "stone",
-        "top",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W07",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.json",
-        "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W07"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
       }
     },
     {
@@ -1501,18 +1468,18 @@
     },
     {
       "instance_id": "PerimeterWall_12_00",
-      "asset_id": "W07",
+      "asset_id": "W023",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        142,
+        256
       ],
       "anchor": [
-        32,
-        128
+        42,
+        189
       ],
       "layer": "back_objects",
       "position": [
@@ -1541,46 +1508,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "cap",
-        "edge",
+        "ivy",
+        "north",
+        "run",
         "stone",
-        "top",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W07",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.json",
-        "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W07"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
       }
     },
     {
       "instance_id": "PerimeterWall_13_00",
-      "asset_id": "W07",
+      "asset_id": "W023",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        142,
+        256
       ],
       "anchor": [
-        32,
-        128
+        42,
+        189
       ],
       "layer": "back_objects",
       "position": [
@@ -1609,46 +1566,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "cap",
-        "edge",
+        "ivy",
+        "north",
+        "run",
         "stone",
-        "top",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W07",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.json",
-        "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W07"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
       }
     },
     {
       "instance_id": "PerimeterWall_14_00",
-      "asset_id": "W07",
+      "asset_id": "W023",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        142,
+        256
       ],
       "anchor": [
-        32,
-        128
+        42,
+        189
       ],
       "layer": "back_objects",
       "position": [
@@ -1677,46 +1624,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "cap",
-        "edge",
+        "ivy",
+        "north",
+        "run",
         "stone",
-        "top",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W07",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.json",
-        "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W07"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
       }
     },
     {
       "instance_id": "PerimeterWall_15_00",
-      "asset_id": "W07",
+      "asset_id": "W023",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        142,
+        256
       ],
       "anchor": [
-        32,
-        128
+        42,
+        189
       ],
       "layer": "back_objects",
       "position": [
@@ -1745,30 +1682,20 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "cap",
-        "edge",
+        "ivy",
+        "north",
+        "run",
         "stone",
-        "top",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W07",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.json",
-        "sha256": "08232bb5bb30e2fce2db46a17af3ae4776ce769155dc1ef2d446017709b68f9c",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W07"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
       }
     },
     {
@@ -1841,18 +1768,18 @@
     },
     {
       "instance_id": "PerimeterWall_00_01",
-      "asset_id": "W01",
+      "asset_id": "W026",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W026_Hero_Wall_Run_West.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        294
       ],
       "anchor": [
-        32,
-        128
+        109,
+        190
       ],
       "layer": "back_objects",
       "position": [
@@ -1881,29 +1808,20 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "clean",
-        "pale",
+        "ivy",
+        "run",
         "stone",
         "wall",
-        "walls"
+        "walls",
+        "west"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W01"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+        "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
+        "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e"
       }
     },
     {
@@ -2044,18 +1962,18 @@
     },
     {
       "instance_id": "PerimeterWall_16_01",
-      "asset_id": "W02",
+      "asset_id": "W024",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W024_Hero_Wall_Run_East.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        334
       ],
       "anchor": [
-        32,
-        128
+        8,
+        219
       ],
       "layer": "back_objects",
       "position": [
@@ -2084,45 +2002,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "lightly",
+        "east",
+        "ivy",
+        "run",
         "stone",
         "wall",
-        "walls",
-        "weathered"
+        "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+        "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
+        "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9"
       }
     },
     {
       "instance_id": "PerimeterWall_00_02",
-      "asset_id": "W03",
+      "asset_id": "W026",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W026_Hero_Wall_Run_West.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        294
       ],
       "anchor": [
-        32,
-        128
+        109,
+        190
       ],
       "layer": "back_objects",
       "position": [
@@ -2151,45 +2060,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "block",
-        "broken",
+        "ivy",
+        "run",
         "stone",
         "wall",
-        "walls"
+        "walls",
+        "west"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W03",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "5e35c9d7bb7dbf1e74d17ff8a525cc1c21313c66277b6b16a3980b04ea3c282e",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W03"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+        "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
+        "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e"
       }
     },
     {
       "instance_id": "PerimeterWall_16_02",
-      "asset_id": "W02",
+      "asset_id": "W024",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W024_Hero_Wall_Run_East.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        334
       ],
       "anchor": [
-        32,
-        128
+        8,
+        219
       ],
       "layer": "back_objects",
       "position": [
@@ -2218,45 +2118,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "lightly",
+        "east",
+        "ivy",
+        "run",
         "stone",
         "wall",
-        "walls",
-        "weathered"
+        "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+        "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
+        "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9"
       }
     },
     {
       "instance_id": "PerimeterWall_00_03",
-      "asset_id": "W01",
+      "asset_id": "W026",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W026_Hero_Wall_Run_West.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        294
       ],
       "anchor": [
-        32,
-        128
+        109,
+        190
       ],
       "layer": "back_objects",
       "position": [
@@ -2285,45 +2176,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "clean",
-        "pale",
+        "ivy",
+        "run",
         "stone",
         "wall",
-        "walls"
+        "walls",
+        "west"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W01"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+        "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
+        "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e"
       }
     },
     {
       "instance_id": "PerimeterWall_16_03",
-      "asset_id": "W04",
+      "asset_id": "W024",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W024_Hero_Wall_Run_East.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        334
       ],
       "anchor": [
-        32,
-        128
+        8,
+        219
       ],
       "layer": "back_objects",
       "position": [
@@ -2352,45 +2234,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "block",
-        "cracked",
+        "east",
+        "ivy",
+        "run",
         "stone",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W04",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "48497b476a14603dcc24a99b3c0fca9241d8d20c0d52b1fcaa72e3c3d12ae7c5",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W04"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+        "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
+        "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9"
       }
     },
     {
       "instance_id": "PerimeterWall_00_04",
-      "asset_id": "W01",
+      "asset_id": "W026",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W026_Hero_Wall_Run_West.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        294
       ],
       "anchor": [
-        32,
-        128
+        109,
+        190
       ],
       "layer": "back_objects",
       "position": [
@@ -2419,45 +2292,36 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "clean",
-        "pale",
+        "ivy",
+        "run",
         "stone",
         "wall",
-        "walls"
+        "walls",
+        "west"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W01"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+        "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
+        "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e"
       }
     },
     {
       "instance_id": "PerimeterWall_16_04",
-      "asset_id": "W02",
+      "asset_id": "W024",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W024_Hero_Wall_Run_East.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        334
       ],
       "anchor": [
-        32,
-        128
+        8,
+        219
       ],
       "layer": "back_objects",
       "position": [
@@ -2486,247 +2350,210 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "lightly",
-        "stone",
-        "wall",
-        "walls",
-        "weathered"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_00_05",
-      "asset_id": "W05",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        258.0,
-        609
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "block",
+        "east",
         "ivy",
-        "stone",
-        "wall",
-        "walls",
-        "with"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W05",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.json",
-        "sha256": "9795a76879b20a18027014b172947ff8146043351f2843cd852deff1b53978e4",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W05"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_16_05",
-      "asset_id": "W02",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        1282.0,
-        609
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "lightly",
-        "stone",
-        "wall",
-        "walls",
-        "weathered"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_00_06",
-      "asset_id": "W01",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        258.0,
-        673
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "clean",
-        "pale",
+        "run",
         "stone",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+        "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
+        "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9"
+      }
+    },
+    {
+      "instance_id": "PerimeterWall_00_05",
+      "asset_id": "W026",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W026_Hero_Wall_Run_West.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        175,
+        294
+      ],
+      "anchor": [
+        109,
+        190
+      ],
+      "layer": "back_objects",
+      "position": [
+        258.0,
+        609
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
           32,
-          128
+          16
         ],
-        "identity": "W01"
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "ivy",
+        "run",
+        "stone",
+        "wall",
+        "walls",
+        "west"
+      ],
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+        "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
+        "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e"
+      }
+    },
+    {
+      "instance_id": "PerimeterWall_16_05",
+      "asset_id": "W024",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W024_Hero_Wall_Run_East.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        175,
+        334
+      ],
+      "anchor": [
+        8,
+        219
+      ],
+      "layer": "back_objects",
+      "position": [
+        1282.0,
+        609
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "east",
+        "ivy",
+        "run",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+        "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
+        "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9"
+      }
+    },
+    {
+      "instance_id": "PerimeterWall_00_06",
+      "asset_id": "W026",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W026_Hero_Wall_Run_West.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        175,
+        294
+      ],
+      "anchor": [
+        109,
+        190
+      ],
+      "layer": "back_objects",
+      "position": [
+        258.0,
+        673
+      ],
+      "scale": 1.5,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "wall_base",
+        "opacity": 0.24,
+        "offset_x": 4,
+        "offset_y": 4
+      },
+      "tags": [
+        "ivy",
+        "run",
+        "stone",
+        "wall",
+        "walls",
+        "west"
+      ],
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+        "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
+        "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e"
       }
     },
     {
       "instance_id": "PerimeterWall_16_06",
-      "asset_id": "W06",
+      "asset_id": "W024",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W024_Hero_Wall_Run_East.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        175,
+        334
       ],
       "anchor": [
-        32,
-        128
+        8,
+        219
       ],
       "layer": "back_objects",
       "position": [
@@ -2755,30 +2582,20 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "block",
-        "flower",
+        "east",
+        "ivy",
+        "run",
         "stone",
         "wall",
-        "walls",
-        "with"
+        "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W06",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.json",
-        "sha256": "9bce22c7f2725f53e2766c0de1652e058552f088d57a719495d928028fdc1c98",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W06"
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+        "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
+        "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9"
       }
     },
     {
