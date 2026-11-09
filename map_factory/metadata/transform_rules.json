@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "note": "Which placed blocks may be turned to any angle, and the scale limits. Upright perspective pieces (walls, furniture, columns, trees with a fixed viewpoint) are NOT rotation safe: use their four facing variants instead. Flat pieces (floors, rugs, decals) already allow free rotation.",
+  "rotation_safe": ["P04", "P05", "P06"],
+  "rotation_range_degrees": {"P04": 50, "P05": 50, "P06": 50},
+  "scale_min": 0.1,
+  "scale_max": 4.0,
+  "scale_snap": 0.05,
+  "rotation_snap_degrees": 15
+}

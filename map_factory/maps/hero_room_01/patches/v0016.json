@@ -1,0 +1,66 @@
+{
+ "manifest_version": 1,
+ "map_id": "hero_room_01",
+ "base_version": 15,
+ "base_sha256": "7410fcc63dc03a655e5f0bf90f67b3e8ad19b678e0cb5d812c225693d13d5846",
+ "note": "Seeded scale and rotation variation (seed 7) on rotation-safe pieces.",
+ "source_image": {
+  "path": "map_factory/references/hero_room_01_original.png",
+  "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+  "status": "reference_imported"
+ },
+ "changes": [
+  {
+   "op": "update_block",
+   "instance_id": "WallTopFlowers0",
+   "set": {
+    "rotation_degrees": 345.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallTopFlowers2",
+   "set": {
+    "scale": 0.35,
+    "rotation_degrees": 15.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallTopFlowers3",
+   "set": {
+    "scale": 0.35,
+    "rotation_degrees": 15.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallBasePlants0",
+   "set": {
+    "scale": 0.55,
+    "rotation_degrees": 15.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallBasePlants1",
+   "set": {
+    "rotation_degrees": 15.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallBasePlants2",
+   "set": {
+    "rotation_degrees": 15.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallBasePlants3",
+   "set": {
+    "scale": 0.45
+   }
+  }
+ ]
+}

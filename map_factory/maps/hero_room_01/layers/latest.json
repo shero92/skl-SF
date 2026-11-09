@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 15,
+  "version": 16,
   "processing_passes": [
     "background",
     "ground",
@@ -3730,7 +3730,7 @@
           289.0
         ],
         "scale": 0.4,
-        "rotation_degrees": 0.0,
+        "rotation_degrees": 345.0,
         "flip_h": false,
         "z_index": 0,
         "texture_path": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
@@ -3911,8 +3911,8 @@
           270.0,
           545.0
         ],
-        "scale": 0.4,
-        "rotation_degrees": 0.0,
+        "scale": 0.35,
+        "rotation_degrees": 15.0,
         "flip_h": false,
         "z_index": 0,
         "texture_path": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
@@ -4002,8 +4002,8 @@
           1294.0,
           545.0
         ],
-        "scale": 0.4,
-        "rotation_degrees": 0.0,
+        "scale": 0.35,
+        "rotation_degrees": 15.0,
         "flip_h": false,
         "z_index": 0,
         "texture_path": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
@@ -5002,8 +5002,8 @@
           258.0,
           353.0
         ],
-        "scale": 0.5,
-        "rotation_degrees": 0.0,
+        "scale": 0.55,
+        "rotation_degrees": 15.0,
         "flip_h": false,
         "z_index": 0,
         "texture_path": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
@@ -5045,7 +5045,7 @@
           353.0
         ],
         "scale": 0.5,
-        "rotation_degrees": 0.0,
+        "rotation_degrees": 15.0,
         "flip_h": false,
         "z_index": 0,
         "texture_path": "res://assets_generated/plants/P06__plants__blue_flower_cluster_small__default__1x1__64x64.png",
@@ -5087,7 +5087,7 @@
           609.0
         ],
         "scale": 0.5,
-        "rotation_degrees": 0.0,
+        "rotation_degrees": 15.0,
         "flip_h": false,
         "z_index": 0,
         "texture_path": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
@@ -5128,7 +5128,7 @@
           1282.0,
           609.0
         ],
-        "scale": 0.5,
+        "scale": 0.45,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -8185,7 +8185,7 @@
           270.0,
           545.0
         ],
-        "scale": 0.4,
+        "scale": 0.35,
         "sprite_pixel_size": [
           64,
           64
@@ -8233,7 +8233,7 @@
           1294.0,
           545.0
         ],
-        "scale": 0.4,
+        "scale": 0.35,
         "sprite_pixel_size": [
           64,
           64
@@ -8497,7 +8497,7 @@
           258.0,
           353.0
         ],
-        "scale": 0.5,
+        "scale": 0.55,
         "sprite_pixel_size": [
           64,
           64
@@ -8569,7 +8569,7 @@
           1282.0,
           609.0
         ],
-        "scale": 0.5,
+        "scale": 0.45,
         "sprite_pixel_size": [
           64,
           64

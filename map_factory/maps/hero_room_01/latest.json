@@ -1784,7 +1784,8 @@
       "x": 270.0,
       "y": 289,
       "scale": 0.4,
-      "render_layer": "decorations"
+      "render_layer": "decorations",
+      "rotation_degrees": 345.0
     },
     {
       "id": "P02",
@@ -1825,8 +1826,9 @@
       "instance_id": "WallTopFlowers2",
       "x": 270.0,
       "y": 545,
-      "scale": 0.4,
-      "render_layer": "decorations"
+      "scale": 0.35,
+      "render_layer": "decorations",
+      "rotation_degrees": 15.0
     },
     {
       "id": "P01",
@@ -1846,8 +1848,9 @@
       "instance_id": "WallTopFlowers3",
       "x": 1294.0,
       "y": 545,
-      "scale": 0.4,
-      "render_layer": "decorations"
+      "scale": 0.35,
+      "render_layer": "decorations",
+      "rotation_degrees": 15.0
     }
   ],
   "objects": [
@@ -2136,8 +2139,9 @@
       "instance_id": "WallBasePlants0",
       "x": 258.0,
       "y": 353,
-      "scale": 0.5,
-      "render_layer": "decorations"
+      "scale": 0.55,
+      "render_layer": "decorations",
+      "rotation_degrees": 15.0
     },
     {
       "id": "P06",
@@ -2145,7 +2149,8 @@
       "x": 1282.0,
       "y": 353,
       "scale": 0.5,
-      "render_layer": "decorations"
+      "render_layer": "decorations",
+      "rotation_degrees": 15.0
     },
     {
       "id": "P05",
@@ -2153,14 +2158,15 @@
       "x": 258.0,
       "y": 609,
       "scale": 0.5,
-      "render_layer": "decorations"
+      "render_layer": "decorations",
+      "rotation_degrees": 15.0
     },
     {
       "id": "P06",
       "instance_id": "WallBasePlants3",
       "x": 1282.0,
       "y": 609,
-      "scale": 0.5,
+      "scale": 0.45,
       "render_layer": "decorations"
     },
     {
@@ -2584,15 +2590,15 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 15,
-  "parent_version": 14,
-  "created_at": "2026-11-09T16:52:05+00:00",
+  "version": 16,
+  "parent_version": 15,
+  "created_at": "2026-11-09T17:02:03+00:00",
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "change_note": "hero_room_01 v0015: turns on the painted shadow level (silhouette-projected shadows with contact occlusion) and the lantern/candle light level; layout unchanged. Visual approval pending.",
+  "change_note": "Seeded scale and rotation variation (seed 7) on rotation-safe pieces.",
   "visual_qa": {
     "status": "needs_review",
     "notes": "Native render v0013 pending; compare against reference and v0012."
@@ -2829,7 +2835,7 @@
     "joint_opacity": 0.27,
     "joint_width": 1.15
   },
-  "parent_snapshot_sha256": "9c2cc1ff09f0c1907af2ab2368b4793f665bad94197ae1e20bff3bf64c146680",
+  "parent_snapshot_sha256": "7410fcc63dc03a655e5f0bf90f67b3e8ad19b678e0cb5d812c225693d13d5846",
   "camera": {
     "x": 768,
     "y": 512,
@@ -3078,7 +3084,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 15,
+    "version": 16,
     "processing_passes": [
       "background",
       "ground",
@@ -6807,7 +6813,7 @@
             289.0
           ],
           "scale": 0.4,
-          "rotation_degrees": 0.0,
+          "rotation_degrees": 345.0,
           "flip_h": false,
           "z_index": 0,
           "texture_path": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
@@ -6988,8 +6994,8 @@
             270.0,
             545.0
           ],
-          "scale": 0.4,
-          "rotation_degrees": 0.0,
+          "scale": 0.35,
+          "rotation_degrees": 15.0,
           "flip_h": false,
           "z_index": 0,
           "texture_path": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
@@ -7079,8 +7085,8 @@
             1294.0,
             545.0
           ],
-          "scale": 0.4,
-          "rotation_degrees": 0.0,
+          "scale": 0.35,
+          "rotation_degrees": 15.0,
           "flip_h": false,
           "z_index": 0,
           "texture_path": "res://assets_generated/plants/P04__plants__white_flower_cluster_small__default__1x1__64x64.png",
@@ -8079,8 +8085,8 @@
             258.0,
             353.0
           ],
-          "scale": 0.5,
-          "rotation_degrees": 0.0,
+          "scale": 0.55,
+          "rotation_degrees": 15.0,
           "flip_h": false,
           "z_index": 0,
           "texture_path": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
@@ -8122,7 +8128,7 @@
             353.0
           ],
           "scale": 0.5,
-          "rotation_degrees": 0.0,
+          "rotation_degrees": 15.0,
           "flip_h": false,
           "z_index": 0,
           "texture_path": "res://assets_generated/plants/P06__plants__blue_flower_cluster_small__default__1x1__64x64.png",
@@ -8164,7 +8170,7 @@
             609.0
           ],
           "scale": 0.5,
-          "rotation_degrees": 0.0,
+          "rotation_degrees": 15.0,
           "flip_h": false,
           "z_index": 0,
           "texture_path": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
@@ -8205,7 +8211,7 @@
             1282.0,
             609.0
           ],
-          "scale": 0.5,
+          "scale": 0.45,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
@@ -11262,7 +11268,7 @@
             270.0,
             545.0
           ],
-          "scale": 0.4,
+          "scale": 0.35,
           "sprite_pixel_size": [
             64,
             64
@@ -11310,7 +11316,7 @@
             1294.0,
             545.0
           ],
-          "scale": 0.4,
+          "scale": 0.35,
           "sprite_pixel_size": [
             64,
             64
@@ -11574,7 +11580,7 @@
             258.0,
             353.0
           ],
-          "scale": 0.5,
+          "scale": 0.55,
           "sprite_pixel_size": [
             64,
             64
@@ -11646,7 +11652,7 @@
             1282.0,
             609.0
           ],
-          "scale": 0.5,
+          "scale": 0.45,
           "sprite_pixel_size": [
             64,
             64
