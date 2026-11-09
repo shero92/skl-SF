@@ -463,8 +463,10 @@
   ],
   "npcs": [
     {
-      "instance_id": "ForestGuardianA",
-      "name": "Forest Guardian",
+      "instance_id": "TempleArcher",
+      "name": "Temple Archer",
+      "character": "temple_archer",
+      "facing": "down",
       "x": 507,
       "y": 693,
       "radius": 92,
@@ -474,14 +476,42 @@
       ]
     },
     {
-      "instance_id": "ForestGuardianB",
-      "name": "Forest Guardian",
+      "instance_id": "ReefFriend",
+      "name": "Reef Friend",
+      "character": "reef_friend",
+      "facing": "left",
       "x": 1010,
       "y": 745,
       "radius": 92,
       "lines": [
-        "The old stone arch holds many memories.",
+        "The tide brought news from the reef.",
         "We should prepare before the next journey."
+      ]
+    },
+    {
+      "instance_id": "Cely",
+      "name": "Cely",
+      "character": "cely",
+      "facing": "down",
+      "x": 640,
+      "y": 430,
+      "radius": 96,
+      "lines": [
+        "The old stone arch holds many memories.",
+        "Stay close, the road ahead is long."
+      ]
+    },
+    {
+      "instance_id": "OldFather",
+      "name": "The Old Father",
+      "character": "old_father",
+      "facing": "down",
+      "x": 860,
+      "y": 470,
+      "radius": 96,
+      "lines": [
+        "The roots remember every traveler.",
+        "Rest here, then follow the lantern light."
       ]
     }
   ],

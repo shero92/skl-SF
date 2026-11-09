@@ -11,6 +11,7 @@ func _initialize() -> void:
 	_test_silhouette()
 	_test_shape_follows_alpha()
 	_test_determinism()
+	_test_padded_base()
 	_test_layer()
 	_test_light_layer()
 	if _failures == 0:
@@ -78,6 +79,31 @@ func _test_determinism() -> void:
 	var a: Dictionary = Painter.paint(_box(32, 64))
 	var b: Dictionary = Painter.paint(_box(32, 64))
 	_check(a["image"].get_data() == b["image"].get_data() and a["offset"] == b["offset"], "painting is deterministic")
+
+
+func _test_padded_base() -> void:
+	# Opaque rows 0..47 of a 64 row texture: 16 rows of transparent padding below the object.
+	var image := Image.create(32, 64, false, Image.FORMAT_RGBA8)
+	for y in 48:
+		for x in 32:
+			image.set_pixel(x, y, Color(0.5, 0.4, 0.2, 1.0))
+	var room := Node2D.new()
+	root.add_child(room)
+	var walls := Node2D.new()
+	walls.name = "Level2_Walls"
+	room.add_child(walls)
+	var sprite := Sprite2D.new()
+	sprite.name = "Padded"
+	sprite.texture = ImageTexture.create_from_image(image)
+	sprite.position = Vector2(100, 200)
+	walls.add_child(sprite)
+	var layer: Node2D = Painter.build_layer(room)
+	var shadow := layer.get_node_or_null("Shadow_Padded") as Sprite2D
+	_check(shadow != null, "padded sprite has a shadow")
+	if shadow != null:
+		# Texture bottom is y=232; the lowest opaque pixel row ends at y=216.
+		_check(absf(float(shadow.get_meta("foot_y")) - 216.0) <= 1.0, "shadow starts at the object's base, not the texture bottom (%s)" % str(shadow.get_meta("foot_y")))
+	room.queue_free()
 
 
 func _sprite(name: String, size: Vector2i, position: Vector2) -> Sprite2D:

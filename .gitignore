@@ -40,9 +40,10 @@ Thumbs.db
 .agents/monitoring/.local/
 .aider*
 
-# Owner HD masters stay local (about 230 MB, see assets_hd/RULES.md); only assets_hd/runtime is tracked.
-assets_hd/*/
-!assets_hd/runtime/
+# Owner HD master images stay local (about 230 MB, see assets_hd/RULES.md); their CATALOG.md indexes and assets_hd/runtime are tracked.
+assets_hd/*/**/*.png
+assets_hd/*/**/*.png.import
+!assets_hd/runtime/**
 
 # Duplicate preview copies of the character design posters (same files live in assets/characters)
 game_factory/characters/*/previews/
@@ -52,6 +53,6 @@ game_factory/characters/*/previews/
 /map_factory/references/original_room.png.png.import
 
 # Local duplicates of tracked map_factory/references/characters/*.png.png
-/assets/characters/cely/
-/assets/characters/neru/
-/assets/characters/old_father/
+/assets/characters/cely/references/
+/assets/characters/neru/references/
+/assets/characters/old_father/references/

@@ -398,6 +398,13 @@
       "covers": "Seeded scale and rotation variation for rotation-safe pieces and the CLI transform rules (free rotation only for safe or flat pieces, scale limits).",
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_map_variation.py"],
       "paths": ["tools/map_variation.py", "tools/map_factory_cli.py", "map_factory/metadata/transform_rules.json", "tools/tests/test_map_variation.py"]
+    },
+    {
+      "id": "poster_characters",
+      "kind": "python",
+      "covers": "Poster character map sprites (extraction, NPC and companion use in the game scene), HD master folder layout and NPC data.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_poster_characters.py"],
+      "paths": ["scenes/poster_character.gd", "scenes/room_npc.gd", "scenes/room_companion.gd", "scenes/main.gd", "tools/extract_poster_sprites.py", "tools/organize_hd_masters.py", "tools/verify_poster_characters.gd", "tools/tests/test_poster_characters.py", "map_factory/rooms/hero_room.json", "assets_hd/manifest.json", "assets_hd/hd_map.json", "tools/battle_godot_harness.py"]
     }
   ]
 }

@@ -3,6 +3,10 @@ class_name RoomCompanion
 
 var follow_target: Node2D
 @export var walk_speed: float = 152.0
+@export var character_slug: String = "neru"
+@export var sprite_scale: float = 0.7
+var facing: String = "down"
+var poster_mode: bool = false
 var sprite: Sprite2D
 var catalog: AssetCatalog
 var current_animation: String = ""
@@ -20,6 +24,10 @@ func _ready() -> void:
     sprite.position = Vector2(-72, -188) * 0.46
     add_child(sprite)
     add_child(ShadowFactory.create_shadow({"type": "contact_small", "opacity": 0.42}, Vector2(54, 30)))
+    if PosterCharacter.available(character_slug):
+        poster_mode = true
+        PosterCharacter.apply(sprite, character_slug, facing, sprite_scale)
+        return
     _play("CH009")
 
 func _physics_process(delta: float) -> void:
@@ -27,7 +35,16 @@ func _physics_process(delta: float) -> void:
         return
     var desired: Vector2 = follow_target.position + Vector2(56, 16)
     var distance := position.distance_to(desired)
-    if distance > 70:
+    var moving := distance > 70
+    if poster_mode:
+        if moving:
+            facing = PosterCharacter.direction_for(desired - position, facing)
+            position = position.move_toward(desired, walk_speed * delta)
+            PosterCharacter.apply(sprite, character_slug, facing, sprite_scale)
+        animation_time += delta
+        sprite.frame = [0, 1, 2, 1][int(animation_time * (6.0 if moving else 2.0)) % 4]
+        return
+    if moving:
         position = position.move_toward(desired, walk_speed * delta)
         _play("CH010")
     else:
