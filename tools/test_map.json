@@ -93,6 +93,13 @@
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_registry_verification.py"],
       "paths": ["tools/audit_room_assets.py", "map_factory/metadata/environment_assets_v2.json", "map_factory/metadata/asset_index.json", "map_factory/maps/**", "tools/tests/test_registry_verification.py"]
     },
+    {
+      "id": "battle_hit_timing",
+      "kind": "python",
+      "covers": "Signal-only battle hit bridge, actor identity, zero-based hit indices, pause, silent frame previews, cancellation, replay and reentrant restart.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_hit_timing.py"],
+      "paths": ["scenes/battle/hit_timing_bridge.gd", "scenes/battle/battle_animation_controller.gd", "scenes/battle/battle_timeline.gd", "tools/verify_hit_timing.gd", "tools/tests/test_battle_hit_timing.py", "tools/battle_godot_harness.py", ".agents/planner/config.json"]
+    },
     {"id": "battle_controller", "kind": "python", "covers": "Attacker/defender battle controller lifecycle, busy and missing-asset rejection, cancellation, reset and reentrant signal safety.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_controller.py"], "paths": ["scenes/battle/battle_animation_controller.gd", "scenes/battle/battle_timeline.gd", "tools/verify_battle_controller.gd", "tools/tests/test_battle_controller.py", "tools/battle_godot_harness.py", ".agents/planner/config.json"]},
     {
       "id": "battle_perspective",
