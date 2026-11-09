@@ -84,5 +84,5 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0085](../tasks/TASK-0085_modular_actor_adapter.md) | blocked | unassigned | TASK-0084 | none |
 | [TASK-0086](../tasks/TASK-0086_phantom_dash.md) | blocked | unassigned | TASK-0085 | none |
 | [TASK-0087](../tasks/TASK-0087_golden_cyclone.md) | blocked | unassigned | TASK-0085 | none |
-| [TASK-0088](../tasks/TASK-0088_register_battle_tests.md) | todo | aider | TASK-0071,TASK-0075,TASK-0076,TASK-0077,TASK-0078,TASK-0080 | none |
-| [TASK-0089](../tasks/TASK-0089_review_battle_commits.md) | todo | claude | TASK-0076 | none |
+| [TASK-0088](../tasks/TASK-0088_register_battle_tests.md) | done | claude | TASK-0071,TASK-0075,TASK-0076,TASK-0077,TASK-0078,TASK-0080 | none |
+| [TASK-0089](../tasks/TASK-0089_review_battle_commits.md) | done | claude | TASK-0076 | none |
