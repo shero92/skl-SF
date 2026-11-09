@@ -50,5 +50,7 @@
     "environment_recheck_total": 10,
     "combined_test_suites_passed": 65,
     "production_art_approved": false
-  }
+  },
+  "pull_request": "https://github.com/shero92/skl-SF/pull/121",
+  "delivery_commit": "1741e47c5509f40cb4f3f205032e4fcea3633d58"
 }
