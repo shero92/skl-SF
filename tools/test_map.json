@@ -426,6 +426,13 @@
       "covers": "Owner-accepted Blender deliveries: catalog records from measured data, working-tree staging with exact bytes, and the integrated ART-0004 and ART-0014 assets.",
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_blender_catalog.py"],
       "paths": ["tools/blender_catalog.py", "tools/art_delivery.py", "tools/tests/test_blender_catalog.py", "map_factory/metadata/asset_index.json"]
+    },
+    {
+      "id": "project_settings",
+      "kind": "python",
+      "covers": "Windows ANGLE driver, windowed 1280x720 mode and main scene so the game starts.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_project_settings.py"],
+      "paths": ["project.godot", "tools/tests/test_project_settings.py", "scenes/main.tscn"]
     }
   ]
 }
