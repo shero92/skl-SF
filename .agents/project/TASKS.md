@@ -80,7 +80,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0081](../tasks/TASK-0081_combo_sequence.md) | done | aider | TASK-0076,TASK-0077 | none |
 | [TASK-0082](../tasks/TASK-0082_battle_reactions.md) | done | aider | TASK-0076,TASK-0077 | none |
 | [TASK-0083](../tasks/TASK-0083_battle_vfx_layer.md) | todo | aider | TASK-0075,TASK-0079 | none |
-| [TASK-0084](../tasks/TASK-0084_battle_preview.md) | todo | aider | TASK-0076,TASK-0077,TASK-0078,TASK-0080 | none |
+| [TASK-0084](../tasks/TASK-0084_battle_preview.md) | done | claude | TASK-0076,TASK-0077,TASK-0078,TASK-0080 | none |
 | [TASK-0085](../tasks/TASK-0085_modular_actor_adapter.md) | blocked | unassigned | TASK-0084 | none |
 | [TASK-0086](../tasks/TASK-0086_phantom_dash.md) | blocked | unassigned | TASK-0085 | none |
 | [TASK-0087](../tasks/TASK-0087_golden_cyclone.md) | blocked | unassigned | TASK-0085 | none |

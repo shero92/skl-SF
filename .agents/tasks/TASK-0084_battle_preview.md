@@ -1,10 +1,10 @@
 ---
 id: TASK-0084
-status: todo
-owner: aider
+status: done
+owner: claude
 agent: aider
 priority: normal
-branch: none
+branch: claude/task-0084
 depends_on: TASK-0076,TASK-0077,TASK-0078,TASK-0080
 issue: none
 art_request: none
@@ -38,3 +38,4 @@ Router registration: add ONE entry for your new test file to tools/test_map.json
 
 ## Provenance
 Planned by Claude Code on 2026-11-02 (docs/AUTONOMOUS_24H_PLAN.md). Record the real execution tool and model when run.
+Executed by Claude Code (Sonnet 5.5) on 2026-11-09 because Aider is paused (zero API balance); stacked on integrate/claude-0080-0082.
