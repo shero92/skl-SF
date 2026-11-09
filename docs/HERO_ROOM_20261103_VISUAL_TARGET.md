@@ -45,3 +45,28 @@ Two small characters appear near x=710–830, y=440–540 in the reference. **Do
 2. Real 1536×1024 Godot render generated with Map Factory, plus `resolved_assets`/render manifest and count of distinct texture paths and placed instances.
 3. Separate reference-versus-render side-by-side and a region-based gap report: architecture, bed, study area, compass, sea, stairs, vegetation, lighting, shadows and optional character overlay.
 4. Explicit `visual_approval: false` until the owner reviews the result. A deterministic render hash alone does not prove similarity.
+
+## TASK-0102 review: v0014 real Godot render vs target (Claude, 2026-11-09)
+
+Render: `docs/previews/map_factory_renders/hero_room_01_v0014.png` (1536x1024, real Godot gl_compatibility capture, environment only).
+Side by side (target left, render right): `docs/previews/map_factory_renders/hero_room_01_v0014_vs_target.png`.
+`visual_approval: false`. This is a gap review, not an approval.
+
+Evidence gate finding: `tools/hero_room_capture_evidence.py` cannot pass on v0014. Its allowlist holds only the 128 `assets_generated` textures, but the room now uses HD runtime textures, `map_factory/parts` ocean/shadow/glow sprites and in-memory textures (empty resource path). So no `resolved_assets` manifest exists yet. A decision is needed: extend the allowlist through `assets_hd/hd_map.json` and the registered parts, or keep the gate strict. Also fixed: the canvas check compared a float array with an int array and always failed.
+
+| Zone | Status | Gap and next step |
+|---|---|---|
+| Ocean and sky | partial | Flat tiled water with hard horizon, no coastal arches, few sea stacks. Needs a perspective-correct sea with distant rocks and arches (art request). |
+| Rear arch | partial | Arch, ivy and flowers match well; it is a single piece over open water, with no connected walls on both sides. |
+| Left architecture | missing | Only a bookshelf and a thin side column strip. Target has a connected broken limestone wall with banners and lanterns. |
+| Right architecture | partial | Door piece and a bookshelf are present; no connected wall, no upper shelf details. |
+| Main floor | partial | Warm tile grid matches in colour. Perimeter is a clean rectangle; target has an irregular terrace edge and cliff depth. |
+| Bed zone | partial | Bed, blanket, rug present. Bed is smaller and rear-facing parts (shelf, shells, flowers) are missing. |
+| Work and dining zone | partial | Table and rug present, but table is viewed from the wrong angle and misses chairs, jug, map, fruit at target scale. |
+| Compass | matched | Present and centred. Size and colour close. |
+| Front perimeter | partial | Low wall pieces present; planters, vines, posts and cliff rock below are mostly missing. |
+| Stairs | partial | Straight central stair with side posts present; target steps are narrower and descend into a rock cliff. |
+| Vegetation | missing | Almost no flowers, palms or ivy outside the arch. |
+| Light and shadow | partial | Diagonal light bands exist; no lantern glow pools or grounded cast shadows at target strength. |
+
+Next steps: (1) decide the evidence-gate allowlist question; (2) specific ART requests for the connected wall set, cliff terrace edge, sea stacks/arches and large planters (Codex image_gen); (3) a v0015 relayout once those exist. No character was inserted.
