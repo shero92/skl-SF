@@ -37,6 +37,29 @@ def _is_flat_asset(record):
     tags = record.get("tags") or []
     marks = {str(record.get("subtype", "")).lower()} | {str(t).lower() for t in tags}
     return bool(marks & FLAT_MARKERS)
+TRANSFORM_RULES = Path("map_factory/metadata/transform_rules.json")
+
+
+def transform_rules(root: Path = ROOT):
+    """Rotation-safe ids and scale limits (map_factory/metadata/transform_rules.json)."""
+    rules = read(root, TRANSFORM_RULES)
+    return {"rotation_safe": frozenset(rules.get("rotation_safe", [])),
+            "scale_min": float(rules.get("scale_min", 0.1)),
+            "scale_max": float(rules.get("scale_max", 4.0))}
+
+
+def validate_transform(item, record, rules, ident):
+    """Scale limits, and free (non-quarter-turn) rotation only for rotation-safe or flat pieces."""
+    scale = item.get("scale", 1)
+    if isinstance(scale, bool) or not rules["scale_min"] <= scale <= rules["scale_max"]:
+        raise ValueError(f"Scale of {ident} must be between {rules['scale_min']} and {rules['scale_max']}")
+    rotation = item.get("rotation_degrees", 0)
+    if isinstance(rotation, bool):
+        raise ValueError(f"Invalid rotation: {ident}")
+    if rotation % 90 != 0 and str(item.get("id")) not in rules["rotation_safe"] and not _is_flat_asset(record):
+        raise ValueError(f"{ident}: free rotation needs a rotation_safe or flat asset; use the four facing variants for upright pieces")
+
+
 EXCLUDED_GAMEPLAY = frozenset(("npcs", "player_spawn", "interactions"))
 SLUG = re.compile(r"^[a-z][a-z0-9_]{1,63}$")
 
@@ -385,6 +408,7 @@ def validate_room(data, catalog, expect_map_id=None):
     validate_floor_tile_style(data,catalog)
     if "occlusion_mode" in data and data["occlusion_mode"] not in ("fixed_layers","world_y_sort"):
         raise ValueError("occlusion_mode must be fixed_layers or world_y_sort")
+    rules = transform_rules()
     for layer in LAYERS:
         blocks = data.get(layer, [])
         if not isinstance(blocks, list):
@@ -405,6 +429,7 @@ def validate_room(data, catalog, expect_map_id=None):
                 raise ValueError(f"Invalid scale: {ident}")
             if "rotation_degrees" in item and not isinstance(item["rotation_degrees"],(int,float)):
                 raise ValueError(f"Invalid rotation: {ident}")
+            validate_transform(item, catalog[str(item["id"])], rules, ident)
             if "animation" in item or "scroll" in item:
                 if layer != "background_objects":
                     raise ValueError("animation and scroll require layer 0 (background_objects)")

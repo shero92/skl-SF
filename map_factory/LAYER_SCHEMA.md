@@ -25,3 +25,7 @@ Shadows are a **separate level**, not only static shadow strips. `ShadowPainter.
 Light parameters (all optional, defaults in `default_light()`): `direction` [x,y] (shadow falls toward it), `length`, `opacity`, `height_fade`, `blur`, `color` [r,g,b], `contact_opacity`, `contact_height`. Maps opt in with `"shadow_mode": "painted"` and an optional `"lighting"` object with those keys.
 
 `ShadowPainter.build_light_layer(room)` creates `Level5_Light` (z 60): a soft additive warm pool around each lantern or candle, toggled with `set_light_visible`.
+
+## Scale and rotation rules (TASK-0115)
+
+Every placed block has `scale` (limits in map_factory/metadata/transform_rules.json, default 0.1 to 4.0) and optional `rotation_degrees`. Free rotation (any angle that is not a quarter turn) is only valid for pieces listed in `rotation_safe` or flat pieces (floors, rugs, decals); the CLI rejects it for upright perspective pieces, which must use their four facing variants. `rotation_range_degrees` can limit the tilt per id (flower clusters tilt about 50 degrees in total, so they stay upright). `tools/map_variation.py` creates a seeded patch of scale and rotation changes; scale and rotation snap to `scale_snap` and `rotation_snap_degrees` so pixel density stays consistent. The map camera `zoom` (0.25 to 4.0) zooms the whole view.
