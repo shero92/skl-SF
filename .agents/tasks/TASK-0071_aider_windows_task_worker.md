@@ -1,6 +1,6 @@
 ---
 id: TASK-0071
-status: todo
+status: done
 owner: claude
 agent: aider
 priority: high
@@ -110,3 +110,13 @@ Deviations from the contract: the worker commits on the task branch and never me
 `agent_runner.py`/`goal_task_factory.py` were not extended (standalone worker over the same TASK records).
 NOT done: Scheduled Task registration, any real Aider/API run, supervised end-to-end test (acceptance items 7, 9 unchecked).
 Automation stays disabled until the owner approves.
+
+## Closure (2026-11-09, Claude Code)
+
+Evidence: the merged worker produced real Aider commits (trailers `Agent: aider`, `Model: openai/gpt-6.1-sol`, tokens and cost)
+for TASK-0075..0083, 0090..0101 on `aider/task-*` branches, each in an isolated worktree, with the owner merging them
+(the worker never merges by design). Unit tests (24, fake Aider) cover the failure, scope, lock, restart and pause states.
+Aider 0.86.2 is configured via the git-ignored local config; spend cap USD 10.
+Not done and left to the owner: Scheduled Task registration (`setup_aider_worker.ps1 -Install`), merge/regression-revert automation
+(items 7-8, deliberately manual), and `agent_runner.py`/`goal_task_factory.py` extension (standalone worker instead).
+Aider is paused by the owner for about a week (API balance exhausted); no further Aider run was made in this closure.

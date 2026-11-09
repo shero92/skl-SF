@@ -43,4 +43,4 @@ separate task; `SyncAISkills` is never touched.
 
 ## Activation gate
 Registration, `aider_execution_enabled: true` and the first real supervised end-to-end run need explicit owner approval.
-Until then only the unit tests (fake Aider) have been run.
+Real Aider runs have since produced reviewed task branches (see TASK-0071 closure); scheduled-task registration remains an owner decision.
