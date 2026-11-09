@@ -347,7 +347,7 @@ func _paint_ground(data: Dictionary, target: Node2D, projection_y: float = 1.0) 
             var record: Dictionary = catalog.get_asset(asset_id)
             var path := String(record.get("texture_path", ""))
             var pos := Vector2(float(offset[0]) + x * tile_size, float(offset[1]) + y * tile_size * projection_y)
-            if path != "" and ResourceLoader.exists(path):
+            if HdAssets.exists(path):
                 var texture := load(HdAssets.resolve(path)) as Texture2D
                 if texture != null:
                     var styled_tile := bool(tile_style.get("enabled", false)) and style_tile_ids.has(asset_id)

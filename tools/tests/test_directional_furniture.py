@@ -51,7 +51,7 @@ class DirectionalFurnitureTests(unittest.TestCase):
                     self.assertEqual(resolved["resolved_asset_id"], block["id"])
                     self.assertEqual(block.get("rotation_degrees", 0), 0)
                     path = blueprint.sidecar_png(self.catalog, block["id"])
-                    self.assertTrue(path.is_file(), str(path))
+                    self.assertTrue(blueprint.texture_available(path), str(path))
                     images.append(path.resolve())
             self.assertEqual(len(set(images)), 4)
 
