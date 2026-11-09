@@ -10,7 +10,7 @@
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 16,
+  "version": 17,
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
@@ -1111,7 +1111,7 @@
         258.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1179,7 +1179,7 @@
         322.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1247,7 +1247,7 @@
         386.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1315,7 +1315,7 @@
         450.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1383,7 +1383,7 @@
         514.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1451,7 +1451,7 @@
         962.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1519,7 +1519,7 @@
         1026.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1587,7 +1587,7 @@
         1090.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1655,7 +1655,7 @@
         1154.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1723,7 +1723,7 @@
         1218.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1791,7 +1791,7 @@
         1282.0,
         289
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1859,7 +1859,7 @@
         258.0,
         353
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1926,7 +1926,7 @@
         514.0,
         353
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -1994,7 +1994,7 @@
         962.0,
         353
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2062,7 +2062,7 @@
         1282.0,
         353
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2129,7 +2129,7 @@
         258.0,
         417
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2196,7 +2196,7 @@
         1282.0,
         417
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2263,7 +2263,7 @@
         258.0,
         481
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2330,7 +2330,7 @@
         1282.0,
         481
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2397,7 +2397,7 @@
         258.0,
         545
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2464,7 +2464,7 @@
         1282.0,
         545
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2531,7 +2531,7 @@
         258.0,
         609
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2599,7 +2599,7 @@
         1282.0,
         609
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2666,7 +2666,7 @@
         258.0,
         673
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2733,7 +2733,7 @@
         1282.0,
         673
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2801,7 +2801,7 @@
         258.0,
         737
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2869,7 +2869,7 @@
         322.0,
         737
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2937,7 +2937,7 @@
         1218.0,
         737
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -3005,7 +3005,7 @@
         1282.0,
         737
       ],
-      "scale": 1.0,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
