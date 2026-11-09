@@ -1,10 +1,10 @@
 ---
 id: TASK-0085
-status: blocked
-owner: unassigned
+status: done
+owner: claude
 agent: aider
 priority: normal
-branch: none
+branch: claude/task-0085
 depends_on: TASK-0084
 issue: none
 art_request: none
@@ -36,7 +36,8 @@ Router registration: add ONE entry for your new test file to tools/test_map.json
 60 minutes.
 
 ## Blocked
-- TASK-0070 Game Factory (branch codex/game-factory; task record not on main yet) is not merged into main, so scenes/modular_battle_character.gd does not exist on the base branch. Do not move to todo until this is resolved.
+Resolved: TASK-0070 (codex/game-factory) is merged into main; scenes/modular_battle_character.gd exists.
 
 ## Provenance
 Planned by Claude Code on 2026-11-02 (docs/AUTONOMOUS_24H_PLAN.md). Record the real execution tool and model when run.
+Executed by Claude Code (Sonnet 5.5) on 2026-11-09 because Aider is paused.
