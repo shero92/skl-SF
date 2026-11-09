@@ -50,3 +50,8 @@ game_factory/characters/*/previews/
 # Godot import metadata of untracked local reference images
 /map_factory/references/approved/G0?.png.png.import
 /map_factory/references/original_room.png.png.import
+
+# Local duplicates of tracked map_factory/references/characters/*.png.png
+/assets/characters/cely/
+/assets/characters/neru/
+/assets/characters/old_father/
