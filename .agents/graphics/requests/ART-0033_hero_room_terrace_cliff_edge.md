@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0102
 dedupe_key: hero_room_terrace_cliff_edge
 existing_asset_ids: none
-output_paths: .agents/graphics/deliveries/ART-0033/
+output_paths: .agents/graphics/deliveries/ART-0033/terrace_edge_straight.png,.agents/graphics/deliveries/ART-0033/terrace_edge_corner_left.png,.agents/graphics/deliveries/ART-0033/terrace_edge_corner_right.png,.agents/graphics/deliveries/ART-0033/cliff_face_front_a.png,.agents/graphics/deliveries/ART-0033/cliff_face_front_b.png,.agents/graphics/deliveries/ART-0033/cliff_face_front_c.png,.agents/graphics/deliveries/ART-0033/cliff_rubble_cluster.png,.agents/graphics/deliveries/ART-0033/foam_at_cliff_base.png
 ---
 # Irregular terrace perimeter and cliff depth
 

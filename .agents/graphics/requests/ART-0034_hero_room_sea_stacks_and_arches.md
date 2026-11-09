@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0102
 dedupe_key: hero_room_sea_stacks_and_arches
 existing_asset_ids: none
-output_paths: .agents/graphics/deliveries/ART-0034/
+output_paths: .agents/graphics/deliveries/ART-0034/sea_stack_tall_a.png,.agents/graphics/deliveries/ART-0034/sea_stack_tall_b.png,.agents/graphics/deliveries/ART-0034/sea_stack_tall_c.png,.agents/graphics/deliveries/ART-0034/rock_arch_far_left.png,.agents/graphics/deliveries/ART-0034/rock_arch_far_right.png,.agents/graphics/deliveries/ART-0034/horizon_haze_strip.png,.agents/graphics/deliveries/ART-0034/foam_patch_a.png,.agents/graphics/deliveries/ART-0034/foam_patch_b.png
 ---
 # Open sea backdrop pieces: sea stacks, rock arches, distant coast
 

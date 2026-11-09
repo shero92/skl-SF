@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0102
 dedupe_key: hero_room_planters_flowers_palms
 existing_asset_ids: none
-output_paths: .agents/graphics/deliveries/ART-0035/
+output_paths: .agents/graphics/deliveries/ART-0035/planter_stone_flowers_large.png,.agents/graphics/deliveries/ART-0035/planter_stone_flowers_medium.png,.agents/graphics/deliveries/ART-0035/palm_clump_front_left.png,.agents/graphics/deliveries/ART-0035/palm_clump_front_right.png,.agents/graphics/deliveries/ART-0035/flower_mound_white.png,.agents/graphics/deliveries/ART-0035/flower_mound_blue.png,.agents/graphics/deliveries/ART-0035/ivy_tuft_wall_a.png,.agents/graphics/deliveries/ART-0035/ivy_tuft_wall_b.png,.agents/graphics/deliveries/ART-0035/hanging_vine_long.png
 ---
 # Planters, flower beds, palms and hanging vines
 

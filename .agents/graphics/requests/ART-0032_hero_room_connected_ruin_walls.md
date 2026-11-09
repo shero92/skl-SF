@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0102
 dedupe_key: hero_room_connected_ruin_walls
 existing_asset_ids: none
-output_paths: .agents/graphics/deliveries/ART-0032/
+output_paths: .agents/graphics/deliveries/ART-0032/wall_straight_long_a.png,.agents/graphics/deliveries/ART-0032/wall_straight_long_b.png,.agents/graphics/deliveries/ART-0032/wall_corner_outer_left.png,.agents/graphics/deliveries/ART-0032/wall_corner_outer_right.png,.agents/graphics/deliveries/ART-0032/wall_corner_inner_left.png,.agents/graphics/deliveries/ART-0032/wall_corner_inner_right.png,.agents/graphics/deliveries/ART-0032/wall_side_left_run.png,.agents/graphics/deliveries/ART-0032/wall_side_right_run.png,.agents/graphics/deliveries/ART-0032/parapet_cap_run.png
 ---
 # Connected broken limestone wall set (rear and sides)
 
