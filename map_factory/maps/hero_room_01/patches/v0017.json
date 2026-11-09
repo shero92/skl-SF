@@ -1,0 +1,217 @@
+{
+ "manifest_version": 1,
+ "map_id": "hero_room_01",
+ "base_version": 16,
+ "base_sha256": "d8c08dce32242de805607f9c7357d20efa6a2e984a81ce18279996724bac9339",
+ "note": "hero_room_01 v0017: taller wall pieces (scale 1.5) so the side and rear walls read as massive ruins like the target; layout otherwise unchanged. Visual approval pending.",
+ "source_image": {
+  "path": "map_factory/references/hero_room_01_original.png",
+  "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+  "status": "reference_imported"
+ },
+ "changes": [
+  {
+   "op": "update_block",
+   "instance_id": "BackWallR00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_01_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_02_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_03_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_04_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_11_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_12_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_13_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_14_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_15_00",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "BackWallR16",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_01",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_04_01",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_11_01",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_01",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_02",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_02",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_03",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_03",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_04",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_04",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_05",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_05",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_06",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_06",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_07",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_01_07",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_15_07",
+   "set": {
+    "scale": 1.5
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_07",
+   "set": {
+    "scale": 1.5
+   }
+  }
+ ]
+}

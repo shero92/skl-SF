@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 16,
+  "version": 17,
   "processing_passes": [
     "background",
     "ground",
@@ -864,7 +864,7 @@
           258.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -906,7 +906,7 @@
           322.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -948,7 +948,7 @@
           386.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -990,7 +990,7 @@
           450.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1032,7 +1032,7 @@
           514.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1074,7 +1074,7 @@
           962.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1116,7 +1116,7 @@
           1026.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1158,7 +1158,7 @@
           1090.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1200,7 +1200,7 @@
           1154.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1242,7 +1242,7 @@
           1218.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1284,7 +1284,7 @@
           1282.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1326,7 +1326,7 @@
           258.0,
           353.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1368,7 +1368,7 @@
           514.0,
           353.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1410,7 +1410,7 @@
           962.0,
           353.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1452,7 +1452,7 @@
           1282.0,
           353.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1494,7 +1494,7 @@
           258.0,
           417.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1536,7 +1536,7 @@
           1282.0,
           417.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1578,7 +1578,7 @@
           258.0,
           481.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1620,7 +1620,7 @@
           1282.0,
           481.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1662,7 +1662,7 @@
           258.0,
           545.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1704,7 +1704,7 @@
           1282.0,
           545.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1746,7 +1746,7 @@
           258.0,
           609.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1788,7 +1788,7 @@
           1282.0,
           609.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1830,7 +1830,7 @@
           258.0,
           673.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1872,7 +1872,7 @@
           1282.0,
           673.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1914,7 +1914,7 @@
           258.0,
           737.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1956,7 +1956,7 @@
           322.0,
           737.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -1998,7 +1998,7 @@
           1218.0,
           737.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -2040,7 +2040,7 @@
           1282.0,
           737.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -6601,7 +6601,7 @@
           258.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6625,7 +6625,7 @@
           322.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6649,7 +6649,7 @@
           386.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6673,7 +6673,7 @@
           450.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6697,7 +6697,7 @@
           514.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6721,7 +6721,7 @@
           962.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6745,7 +6745,7 @@
           1026.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6769,7 +6769,7 @@
           1090.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6793,7 +6793,7 @@
           1154.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6817,7 +6817,7 @@
           1218.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6841,7 +6841,7 @@
           1282.0,
           289.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6865,7 +6865,7 @@
           258.0,
           353.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6889,7 +6889,7 @@
           514.0,
           353.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6913,7 +6913,7 @@
           962.0,
           353.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6937,7 +6937,7 @@
           1282.0,
           353.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6961,7 +6961,7 @@
           258.0,
           417.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -6985,7 +6985,7 @@
           1282.0,
           417.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7009,7 +7009,7 @@
           258.0,
           481.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7033,7 +7033,7 @@
           1282.0,
           481.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7057,7 +7057,7 @@
           258.0,
           545.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7081,7 +7081,7 @@
           1282.0,
           545.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7105,7 +7105,7 @@
           258.0,
           609.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7129,7 +7129,7 @@
           1282.0,
           609.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7153,7 +7153,7 @@
           258.0,
           673.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7177,7 +7177,7 @@
           1282.0,
           673.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7201,7 +7201,7 @@
           258.0,
           737.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7225,7 +7225,7 @@
           322.0,
           737.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7249,7 +7249,7 @@
           1218.0,
           737.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
@@ -7273,7 +7273,7 @@
           1282.0,
           737.0
         ],
-        "scale": 1.0,
+        "scale": 1.5,
         "sprite_pixel_size": [
           64,
           128
