@@ -1,0 +1,326 @@
+{
+  "task_id": "TASK-0074",
+  "method": "manual_source_review",
+  "status": "candidate_annotations_pending_render_review",
+  "uniform_source_scale": 0.22,
+  "game_canvas_size": [
+    384,
+    384
+  ],
+  "game_ground_anchor": [
+    192,
+    352
+  ],
+  "coordinate_space": "original source PNG pixels; blade points up at zero, clockwise positive",
+  "note": "Socket centers selected visually from individual masters; geometry is verified separately in Godot. No owner approval implied.",
+  "frames": {
+    "hero_golden_cyclone_001": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        620,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        1030,
+        625
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_002": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        650,
+        1170
+      ],
+      "weapon_hand_anchor": [
+        800,
+        570
+      ],
+      "hand_rotation": 125,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind"
+    },
+    "hero_golden_cyclone_003": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        650,
+        1168
+      ],
+      "weapon_hand_anchor": [
+        465,
+        580
+      ],
+      "hand_rotation": 110,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind"
+    },
+    "hero_golden_cyclone_004": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        680,
+        1150
+      ],
+      "weapon_hand_anchor": [
+        805,
+        565
+      ],
+      "hand_rotation": 90,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind"
+    },
+    "hero_golden_cyclone_005": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        690,
+        1175
+      ],
+      "weapon_hand_anchor": [
+        1190,
+        565
+      ],
+      "hand_rotation": 60,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_006": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        650,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        1210,
+        580
+      ],
+      "hand_rotation": 20,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_007": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        650,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        725,
+        630
+      ],
+      "hand_rotation": -30,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_008": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        630,
+        1195
+      ],
+      "weapon_hand_anchor": [
+        665,
+        620
+      ],
+      "hand_rotation": -70,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_009": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        750,
+        1125
+      ],
+      "weapon_hand_anchor": [
+        290,
+        450
+      ],
+      "hand_rotation": -110,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_010": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        635,
+        1150
+      ],
+      "weapon_hand_anchor": [
+        235,
+        550
+      ],
+      "hand_rotation": -150,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_011": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        625,
+        1150
+      ],
+      "weapon_hand_anchor": [
+        185,
+        550
+      ],
+      "hand_rotation": -200,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_012": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        645,
+        1155
+      ],
+      "weapon_hand_anchor": [
+        1050,
+        525
+      ],
+      "hand_rotation": -245,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind"
+    },
+    "hero_golden_cyclone_013": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        650,
+        1165
+      ],
+      "weapon_hand_anchor": [
+        960,
+        585
+      ],
+      "hand_rotation": -270,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind"
+    },
+    "hero_golden_cyclone_014": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        670,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        725,
+        155
+      ],
+      "hand_rotation": 20,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind"
+    },
+    "hero_golden_cyclone_015": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        660,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        690,
+        160
+      ],
+      "hand_rotation": 0,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind"
+    },
+    "hero_golden_cyclone_016": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        670,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        425,
+        55
+      ],
+      "hand_rotation": -35,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_017": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        665,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        75,
+        275
+      ],
+      "hand_rotation": -65,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_018": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        660,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        320,
+        580
+      ],
+      "hand_rotation": -145,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind"
+    },
+    "hero_golden_cyclone_019": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        650,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        705,
+        605
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_020": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        680,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        715,
+        580
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_021": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        600,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        730,
+        585
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    },
+    "hero_golden_cyclone_022": {
+      "method": "manual_source_review",
+      "character_ground_anchor": [
+        620,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        1030,
+        625
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front"
+    }
+  }
+}

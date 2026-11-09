@@ -5,9 +5,9 @@
   "attack_id": "hero_golden_cyclone",
   "runtime_alias": "golden_cyclone",
   "production_source_mode": "INDIVIDUAL_FRAME",
-  "generated_frame_count": 14,
+  "generated_frame_count": 22,
   "expected_frame_count": 22,
-  "quality_status": "in_progress",
+  "quality_status": "needs_review",
   "owner_approved": false,
   "active_manifest_updated": false,
   "planned_timeline": {
@@ -16,7 +16,7 @@
     "hitstop_ms": 70,
     "hitstop_included_in_frame_duration": true,
     "damaging_hits": 1,
-    "status": "proposed_unverified"
+    "status": "verified_in_isolated_godot_preview"
   },
   "frames": [
     {
@@ -25,17 +25,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        620,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        1030,
+        625
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "anticipation",
       "frame_duration": 100,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_001.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_001.txt",
       "sha256": "3c8c8ed4339609b8de52e2eb7b9e84b0359eada740a2bcbfd83953656f82c5a1",
       "png_validation": "passed",
@@ -57,7 +63,8 @@
         "native_size_review": "not_run"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_002",
@@ -65,17 +72,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        650,
+        1170
+      ],
+      "weapon_hand_anchor": [
+        800,
+        570
+      ],
+      "hand_rotation": 125,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind",
       "attack_phase": "anticipation",
       "frame_duration": 80,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_002.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_002.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -97,7 +110,8 @@
         "notes": "الريش قريب من الحد الأيمن؛ يحتاج فحص هامش ومحاذاة قبل مشتق اللعب"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_003",
@@ -105,17 +119,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        650,
+        1168
+      ],
+      "weapon_hand_anchor": [
+        465,
+        580
+      ],
+      "hand_rotation": 110,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind",
       "attack_phase": "anticipation",
       "frame_duration": 70,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_003.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_003.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -137,7 +157,8 @@
         "notes": "هامش الريش الأيمن يحتاج فحصًا قبل المحاذاة"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_004",
@@ -145,17 +166,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        680,
+        1150
+      ],
+      "weapon_hand_anchor": [
+        805,
+        565
+      ],
+      "hand_rotation": 90,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind",
       "attack_phase": "anticipation",
       "frame_duration": 90,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_004.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_004.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -177,7 +204,8 @@
         "notes": "هامش الريش الأيمن ضيق ويحتاج محاذاة وفحص العرض"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_005",
@@ -185,17 +213,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        690,
+        1175
+      ],
+      "weapon_hand_anchor": [
+        1190,
+        565
+      ],
+      "hand_rotation": 60,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "rotation_buildup",
       "frame_duration": 65,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_005.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_005_correction_02.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -224,7 +258,8 @@
           "quality_status": "needs_regeneration",
           "reason": "blue marking incorrectly on anatomical right arm"
         }
-      ]
+      ],
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_006",
@@ -232,17 +267,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        650,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        1210,
+        580
+      ],
+      "hand_rotation": 20,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "rotation_buildup",
       "frame_duration": 55,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_006.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_006.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -264,7 +305,8 @@
         "notes": "هامش اليد اليمنى 15px تقريبًا؛ alpha على الحد الأيمن صفر، بلا قص مثبت"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_007",
@@ -272,17 +314,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        650,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        725,
+        630
+      ],
+      "hand_rotation": -30,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "rotation_buildup",
       "frame_duration": 50,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_007.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_007.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -304,7 +352,8 @@
         "notes": "الانتقال الزاوي أسرع من المخطط؛ يلزم فحص الاستمرارية، وهامش اليد اليسرى ضيق"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_008",
@@ -312,17 +361,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        630,
+        1195
+      ],
+      "weapon_hand_anchor": [
+        665,
+        620
+      ],
+      "hand_rotation": -70,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "rotation_buildup",
       "frame_duration": 50,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_008.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_008.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -344,7 +399,8 @@
         "notes": "يلزم فحص ثبات تفاصيل الزخارف والاستمرارية في التسلسل الكامل"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_009",
@@ -352,17 +408,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        750,
+        1125
+      ],
+      "weapon_hand_anchor": [
+        290,
+        450
+      ],
+      "hand_rotation": -110,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "full_spin",
       "frame_duration": 45,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_009.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_009.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -384,7 +446,8 @@
         "notes": "استمرارية القدمين وقوس السلاح لم تختبرا داخل المحرك"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_010",
@@ -392,17 +455,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        635,
+        1150
+      ],
+      "weapon_hand_anchor": [
+        235,
+        550
+      ],
+      "hand_rotation": -150,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "full_spin",
       "frame_duration": 45,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_010.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_010.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -424,7 +493,8 @@
         "notes": "مقياس الرأس وتفاصيل الحزام تحتاج مقارنة تسلسل قبل الاعتماد"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_011",
@@ -432,17 +502,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        625,
+        1150
+      ],
+      "weapon_hand_anchor": [
+        185,
+        550
+      ],
+      "hand_rotation": -200,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "full_spin",
       "frame_duration": 45,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_011.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_011.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -464,7 +540,8 @@
         "notes": "زاوية الجذع أقرب لثلاثة أرباع من profile كامل؛ مراجعة التسلسل مطلوبة"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_012",
@@ -472,17 +549,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        645,
+        1155
+      ],
+      "weapon_hand_anchor": [
+        1050,
+        525
+      ],
+      "hand_rotation": -245,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind",
       "attack_phase": "full_spin",
       "frame_duration": 45,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_012.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_012.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -504,7 +587,8 @@
         "notes": "مراجعة هدوء الريش وتفاصيل الظهر مقابل بداية الحركة مطلوبة"
       },
       "source_generation_mode": "individual_request",
-      "source_generation_tool": "builtin_image_gen"
+      "source_generation_tool": "builtin_image_gen",
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_013",
@@ -512,17 +596,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        650,
+        1165
+      ],
+      "weapon_hand_anchor": [
+        960,
+        585
+      ],
+      "hand_rotation": -270,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind",
       "attack_phase": "full_spin",
       "frame_duration": 45,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_013.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_013.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -545,7 +635,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "reference_inputs_count": 4
+      "reference_inputs_count": 4,
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_014",
@@ -553,17 +644,23 @@
         1254,
         1254
       ],
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "character_ground_anchor": [
+        670,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        725,
+        155
+      ],
+      "hand_rotation": 20,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind",
       "attack_phase": "full_spin",
       "frame_duration": 45,
       "duration_unit": "ms",
       "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_014.png",
       "quality_status": "needs_review",
-      "annotation_status": "needs_annotation",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
       "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_014.txt",
       "mode": "RGBA",
       "alpha_extrema": [
@@ -586,146 +683,422 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "reference_inputs_count": 4
+      "reference_inputs_count": 4,
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_015",
-      "body_canvas_size": null,
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        660,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        690,
+        160
+      ],
+      "hand_rotation": 0,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind",
       "attack_phase": "powerful_strike",
       "frame_duration": 55,
       "duration_unit": "ms",
-      "source_image_path": null,
-      "quality_status": "pending",
-      "annotation_status": "needs_annotation",
-      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_015.txt"
+      "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_015.png",
+      "quality_status": "needs_review",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_015_correction_02.txt",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        25,
+        37,
+        1231,
+        1227
+      ],
+      "sha256": "e13d48f086d05e2ebd16f4bcc9623c802ddd710ba2cb4067378666aa64f50bdb",
+      "png_validation": "passed",
+      "source_generation_mode": "individual_request",
+      "source_generation_tool": "builtin_image_gen",
+      "visual_review": {
+        "one_complete_character": true,
+        "no_visible_weapon": true,
+        "pose_change": "بدء تقدم القبضة اليمنى؛ تصحيح تبديل دور الذراعين"
+      },
+      "rejected_attempts": [
+        {
+          "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/hero_golden_cyclone_015_attempt_01.png",
+          "quality_status": "needs_regeneration",
+          "reason": "gripping and balancing arm roles swapped"
+        }
+      ],
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_016",
-      "body_canvas_size": null,
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        670,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        425,
+        55
+      ],
+      "hand_rotation": -35,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "powerful_strike",
       "frame_duration": 45,
       "duration_unit": "ms",
-      "source_image_path": null,
-      "quality_status": "pending",
-      "annotation_status": "needs_annotation",
-      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_016.txt"
+      "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_016.png",
+      "quality_status": "needs_review",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_016.txt",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        16,
+        9,
+        1242,
+        1230
+      ],
+      "sha256": "bc978ef9e512608302dd14f7b0e5723ac52c859dba23583de02cc7a46d17b8d1",
+      "png_validation": "passed",
+      "source_generation_mode": "individual_request",
+      "source_generation_tool": "builtin_image_gen",
+      "visual_review": {
+        "one_complete_character": true,
+        "no_visible_weapon": true,
+        "pose_change": "تقدم القبضة اليمنى فوق الرأس وبدء القوس؛ الذراع اليسرى المعلّمة مفتوحة"
+      },
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_017",
-      "body_canvas_size": null,
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        665,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        75,
+        275
+      ],
+      "hand_rotation": -65,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "powerful_strike",
       "frame_duration": 80,
       "duration_unit": "ms",
-      "source_image_path": null,
-      "quality_status": "pending",
-      "annotation_status": "needs_annotation",
-      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_017.txt"
+      "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_017.png",
+      "quality_status": "needs_review",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_017.txt",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        33,
+        93,
+        1233,
+        1233
+      ],
+      "sha256": "13b1206b308aff9b734d5b9b6003c5339adcd3bbc53c9e742c446dff9c98b4c5",
+      "png_validation": "passed",
+      "source_generation_mode": "individual_request",
+      "source_generation_tool": "builtin_image_gen",
+      "visual_review": {
+        "one_complete_character": true,
+        "no_visible_weapon": true,
+        "pose_change": "امتداد القبضة اليمنى نحو لحظة الاصطدام؛ اليسرى مفتوحة أدنى منها"
+      },
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_018",
-      "body_canvas_size": null,
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        660,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        320,
+        580
+      ],
+      "hand_rotation": -145,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "behind",
       "attack_phase": "powerful_strike",
       "frame_duration": 70,
       "duration_unit": "ms",
-      "source_image_path": null,
-      "quality_status": "pending",
-      "annotation_status": "needs_annotation",
-      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_018.txt"
+      "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_018.png",
+      "quality_status": "needs_review",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_018.txt",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        98,
+        86,
+        1225,
+        1227
+      ],
+      "sha256": "95d9d03e48d9b1b427a39b07657feb0f655e43b06e1342859025f524817bde42",
+      "png_validation": "passed",
+      "source_generation_mode": "individual_request",
+      "source_generation_tool": "builtin_image_gen",
+      "visual_review": {
+        "one_complete_character": true,
+        "no_visible_weapon": true,
+        "pose_change": "متابعة القوس إلى أسفل مع حجب القبضة جزئيًا خلف ذراع الموازنة"
+      },
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_019",
-      "body_canvas_size": null,
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        650,
+        1185
+      ],
+      "weapon_hand_anchor": [
+        705,
+        605
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "recovery",
       "frame_duration": 90,
       "duration_unit": "ms",
-      "source_image_path": null,
-      "quality_status": "pending",
-      "annotation_status": "needs_annotation",
-      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_019.txt"
+      "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_019.png",
+      "quality_status": "needs_review",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_019.txt",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        112,
+        65,
+        1142,
+        1229
+      ],
+      "sha256": "12b63c6647a5b2b03e3a7163a1a26f60ca320c132bb7e21f0b6ebf1912b354f6",
+      "png_validation": "passed",
+      "source_generation_mode": "individual_request",
+      "source_generation_tool": "builtin_image_gen",
+      "visual_review": {
+        "one_complete_character": true,
+        "no_visible_weapon": true,
+        "pose_change": "تهدئة الالتواء وسحب القبضة إلى الخصر"
+      },
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_020",
-      "body_canvas_size": null,
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        680,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        715,
+        580
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "recovery",
       "frame_duration": 100,
       "duration_unit": "ms",
-      "source_image_path": null,
-      "quality_status": "pending",
-      "annotation_status": "needs_annotation",
-      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_020.txt"
+      "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_020.png",
+      "quality_status": "needs_review",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_020.txt",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        197,
+        26,
+        1056,
+        1227
+      ],
+      "sha256": "793c5e9573fd85c9a7420860a8f2548799f0baf7c5617980033cb1841113e7f1",
+      "png_validation": "passed",
+      "source_generation_mode": "individual_request",
+      "source_generation_tool": "builtin_image_gen",
+      "visual_review": {
+        "one_complete_character": true,
+        "no_visible_weapon": true,
+        "pose_change": "رفع القدم الأمامية وسحبها في خطوة تعافٍ فعلية"
+      },
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_021",
-      "body_canvas_size": null,
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        600,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        730,
+        585
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "recovery",
       "frame_duration": 110,
       "duration_unit": "ms",
-      "source_image_path": null,
-      "quality_status": "pending",
-      "annotation_status": "needs_annotation",
-      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_021.txt"
+      "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_021.png",
+      "quality_status": "needs_review",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_021.txt",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        204,
+        30,
+        1056,
+        1198
+      ],
+      "sha256": "5e3e5b89d523055f5a1d92a64f11f84ab3a1939b78cf4166f2e98ab4b2be0b57",
+      "png_validation": "passed",
+      "source_generation_mode": "individual_request",
+      "source_generation_tool": "builtin_image_gen",
+      "visual_review": {
+        "one_complete_character": true,
+        "no_visible_weapon": true,
+        "pose_change": "خطوة تعافٍ ثانية مع رفع القدم اليمنى وتثبيت اليسرى"
+      },
+      "generation_cache_required": false
     },
     {
       "frame_id": "hero_golden_cyclone_022",
-      "body_canvas_size": null,
-      "character_ground_anchor": null,
-      "weapon_hand_anchor": null,
-      "hand_rotation": null,
-      "weapon_scale": null,
-      "weapon_render_order": null,
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        620,
+        1180
+      ],
+      "weapon_hand_anchor": [
+        1030,
+        625
+      ],
+      "hand_rotation": 135,
+      "weapon_scale": 0.9,
+      "weapon_render_order": "front",
       "attack_phase": "recovery",
       "frame_duration": 120,
       "duration_unit": "ms",
-      "source_image_path": null,
-      "quality_status": "pending",
-      "annotation_status": "needs_annotation",
-      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_022.txt"
+      "source_image_path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_022.png",
+      "quality_status": "needs_review",
+      "annotation_status": "manual_source_review; godot_grip_geometry_verified_both_swords; visual_owner_review_required",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/hero_golden_cyclone_022_correction_02.txt",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        92,
+        36,
+        1159,
+        1201
+      ],
+      "sha256": "01be7cd3ff5a7089f29248c17cd0d9ea7bed818ec7a91a8009307f70842c23ee",
+      "png_validation": "passed",
+      "source_generation_mode": "individual_request",
+      "source_generation_tool": "builtin_image_gen",
+      "visual_review": {
+        "one_complete_character": true,
+        "no_visible_weapon": true,
+        "reviewer": "codex",
+        "owner_approved": false
+      },
+      "generation_cache_required": false
     }
   ],
   "exports": {
-    "sprite_sheet": null,
-    "gif": null,
-    "godot_preview": null
+    "sprite_sheet": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_sprite_sheet.png",
+    "gif": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone.gif",
+    "slow_no_effects_gif": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_slow_no_effects.gif",
+    "godot_preview": "scenes/battle/golden_cyclone_preview.tscn"
   },
   "weapon_tests": {
-    "WPN_HERO_BASIC_SWORD": "not_run",
-    "WPN_IRON_SWORD": "not_run"
+    "WPN_HERO_BASIC_SWORD": "passed_22_frame_geometry; visual_owner_review_required",
+    "WPN_IRON_SWORD": "passed_22_frame_geometry; visual_owner_review_required"
   },
   "cost_usd": null,
-  "tokens": null
+  "tokens": null,
+  "rejected_sources": [
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/hero_golden_cyclone_005_attempt_01.png",
+      "sha256": "9de0e262f038bd32f743e730e678f60fd271e9262a3382420075ec7b09540da7",
+      "quality_status": "needs_regeneration",
+      "reason": "blue_marking_on_wrong_arm"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/hero_golden_cyclone_015_attempt_01.png",
+      "sha256": "d9d519c49693df63d41e767783384756e7d1e954e44ebbf2672433c63b7210ad",
+      "quality_status": "needs_regeneration",
+      "reason": "gripping_and_balancing_arm_roles_swapped"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/hero_golden_cyclone_022_attempt_01.png",
+      "sha256": "ae0f03f77f7ff4f06fdcd55ed27b9badd9c71fe716b374054de2a8b2aefabf8e",
+      "quality_status": "needs_regeneration",
+      "reason": "end_guard_does_not_match_start_loop_pose"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/phantom_dash_multi_pose_rejected.png",
+      "sha256": "3784bdc287f928981eaf17d26565bf4ec81b82c36e413cbc6bcb27d9e8599da3",
+      "quality_status": "needs_regeneration",
+      "reason": "multi_pose_generation_forbidden"
+    }
+  ]
 }

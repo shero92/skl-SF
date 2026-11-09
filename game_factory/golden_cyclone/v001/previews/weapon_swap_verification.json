@@ -1,0 +1,19 @@
+{
+	"engine": "4.7.2-stable (official)",
+	"owner_approved": false,
+	"render_quality_review_required": true,
+	"weapons": {
+		"WPN_HERO_BASIC_SWORD": {
+			"body_resource_shared": true,
+			"frames_checked": 22,
+			"impact_tip_error_px": 0.0000152587890625,
+			"maximum_grip_error_px": 0.0
+		},
+		"WPN_IRON_SWORD": {
+			"body_resource_shared": true,
+			"frames_checked": 22,
+			"impact_tip_error_px": 0.00006103515625,
+			"maximum_grip_error_px": 0.0
+		}
+	}
+}

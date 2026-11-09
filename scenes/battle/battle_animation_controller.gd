@@ -102,11 +102,53 @@ func play_attack(attack_id: StringName, attacker, defender) -> Dictionary:
 func advance(delta_seconds: float) -> void:
 	if state == State.IDLE or _resetting:
 		return
+	if not _timeline.playing:
+		return
 	var generation := _generation
 	var timeline = _timeline
 	timeline.advance(delta_seconds)
-	if generation == _generation and not timeline.playing:
+	if generation == _generation and timeline.position_ms >= timeline.duration_ms:
 		_end(false)
+
+
+func pause() -> void:
+	if _timeline != null:
+		_timeline.pause()
+
+
+func resume() -> void:
+	if _timeline != null:
+		_timeline.resume()
+
+
+func set_speed(value: float) -> bool:
+	return _timeline.set_speed(value) if _timeline != null else false
+
+
+func seek(time_ms: float) -> void:
+	if _timeline == null or not is_finite(time_ms):
+		return
+	_timeline.seek(time_ms)
+	# Scrubbing updates poses but never dispatches a gameplay hit.
+	_on_frame(_timeline.frame_index, _generation, false)
+
+
+func step_frame() -> void:
+	if _timeline != null:
+		_timeline.step_frame()
+		_on_frame(_timeline.frame_index, _generation, false)
+
+
+func get_position_ms() -> float:
+	return _timeline.position_ms if _timeline != null else 0.0
+
+
+func get_frame_index() -> int:
+	return _timeline.frame_index if _timeline != null else 0
+
+
+func is_playing() -> bool:
+	return _timeline != null and _timeline.playing
 
 
 func cancel() -> void:
