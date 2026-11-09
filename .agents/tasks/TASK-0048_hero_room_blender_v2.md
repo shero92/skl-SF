@@ -1,6 +1,6 @@
 ---
 id: TASK-0048
-status: review
+status: done
 owner: claude
 branch: feat/hero-room-blender-v2
 agent: claude
@@ -38,3 +38,6 @@ art_request: none
 - Tests: test_blender_factory.py 12/12 (new lean test), test_candidate_room.py 4/4.
 - Not approved and not published: no map version, catalog or map_factory/parts change.
 - Next (v3): lean ~0.2, lower ruined walls with broken crenellated tops, one continuous mesh per side following the steps, warm fill light on shaded faces, larger and denser ivy and flowers, and a decision on the front edge.
+
+## Closure (Claude, 2026-11-09)
+Deliverable met: candidate v2 captured and compared; better than v1 but not approvable (recorded above). The Blender candidate line is closed: the owner supplied high quality HD masters (assets_hd, approved 2026-11-09) and the room is now built from them (hero_room_01 v0014 to v0017); remaining gaps go to Codex requests ART-0032..0035. Reopen only if the owner wants Blender pieces again.

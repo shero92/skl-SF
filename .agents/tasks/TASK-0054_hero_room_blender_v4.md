@@ -1,6 +1,6 @@
 ---
 id: TASK-0054
-status: review
+status: done
 owner: claude
 branch: feat/hero-room-blender-v4
 agent: claude
@@ -42,3 +42,6 @@ art_request: none
 - Tests: py -3 tools/run_tests.py --only blender_factory --only candidate_room 2/2 (Blender render tests included); py -3 tools/run_tests.py --changed 30/30; source checks agent_costs report / agent_workflow / generate_project_indexes (--sources-only --base origin/main) and run_tests --check-index --sources-only all rc=0.
 - PR: https://github.com/shero92/skl-SF/pull/52
 - Next: owner views docs/previews/candidates/hero_room_01_blender_v4_compare.png (or allows Claude to read *_compare.png only) and decides on D1; then tune the inlay from that review.
+
+## Closure (Claude, 2026-11-09)
+Deliverable met: candidate v4 captured and compared; not approvable (recorded above). The Blender candidate line is closed: the owner supplied high quality HD masters (assets_hd, approved 2026-11-09) and the room is now built from them (hero_room_01 v0014 to v0017); remaining gaps go to Codex requests ART-0032..0035. Reopen only if the owner wants Blender pieces again.
