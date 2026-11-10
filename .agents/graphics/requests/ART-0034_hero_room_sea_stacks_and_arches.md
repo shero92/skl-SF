@@ -1,8 +1,8 @@
 ---
 id: ART-0034
 status: requested
-owner: graphics-specialist
-task: TASK-0102
+owner: codex
+task: TASK-0139
 dedupe_key: hero_room_sea_stacks_and_arches
 existing_asset_ids: none
 output_paths: .agents/graphics/deliveries/ART-0034/sea_stack_tall_a.png,.agents/graphics/deliveries/ART-0034/sea_stack_tall_b.png,.agents/graphics/deliveries/ART-0034/sea_stack_tall_c.png,.agents/graphics/deliveries/ART-0034/rock_arch_far_left.png,.agents/graphics/deliveries/ART-0034/rock_arch_far_right.png,.agents/graphics/deliveries/ART-0034/horizon_haze_strip.png,.agents/graphics/deliveries/ART-0034/foam_patch_a.png,.agents/graphics/deliveries/ART-0034/foam_patch_b.png
@@ -31,3 +31,7 @@ output_paths: .agents/graphics/deliveries/ART-0034/sea_stack_tall_a.png,.agents/
 
 ## Integration checklist
 - [ ] Registered assets and room relayout (v0015) tested; PR merged; mark `integrated`.
+
+## تكليف المالك والمرجع الحالي — 2026-11-09
+
+المالك كلف Codex بالرسوم عبر image_gen المدمج وClaude Code بالكود والتكامل. هذا التفويض يسمح بإنتاج مرشحات الطلب الآن؛ لا يعتمدها للإنتاج. المرجع الحالي .agents/planner/goals/GOAL-0001/references/hero_room_reference.png، SHA256 01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c. المرجع السابق محفوظ ولا يستبدل. المهمة المرتبطة أعلاه تخص إكمال المجموعة؛ TASK-0102 يبقى سجل المراجعة العام.

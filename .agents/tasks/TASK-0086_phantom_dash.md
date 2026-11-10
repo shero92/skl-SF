@@ -2,7 +2,7 @@
 id: TASK-0086
 status: blocked
 owner: unassigned
-agent: aider
+agent: claude
 priority: high
 branch: none
 depends_on: TASK-0085
@@ -14,6 +14,10 @@ done_when: Phantom Dash attack (1050 ms, hit at 430, hitstop 50) driven by appro
 estimate_minutes: 90
 ---
 # Phantom Dash controller
+
+## تعديل تكليف المالك — 2026-11-09
+
+التكليف الحالي يتقدم على أي منع قديم أدناه: Claude Code ينفذ الكود والاختبارات والتكامل، وCodex ينتج الصور. لا تشغيل Aider أو تغيير نموذج/خدمة مفروضة من النص التاريخي. افحص تداخل TASK-0073 مع TASK-0086: المعاينة والمصدر المشترك يعاد استخدامهما ولا يعاد بناء timeline الحالية. المراجع القديمة عن الاستخراج لا تسمح بتحويل storyboard إلى أصول إنتاجية؛ سياسة GRAPHICS_PRODUCTION_POLICY الحالية تحكمها. TASK-0087 يقرأ تسليم Golden Cyclone الجاري ولا يستبدله؛ الجاهزية تتطلب actual frames/sockets/approval.
 
 ## Goal
 Phantom Dash attack (1050 ms, hit at 430, hitstop 50) driven by approved rear frames.

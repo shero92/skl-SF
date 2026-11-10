@@ -1,8 +1,8 @@
 ---
 id: ART-0033
 status: requested
-owner: graphics-specialist
-task: TASK-0102
+owner: codex
+task: TASK-0138
 dedupe_key: hero_room_terrace_cliff_edge
 existing_asset_ids: none
 output_paths: .agents/graphics/deliveries/ART-0033/terrace_edge_straight.png,.agents/graphics/deliveries/ART-0033/terrace_edge_corner_left.png,.agents/graphics/deliveries/ART-0033/terrace_edge_corner_right.png,.agents/graphics/deliveries/ART-0033/cliff_face_front_a.png,.agents/graphics/deliveries/ART-0033/cliff_face_front_b.png,.agents/graphics/deliveries/ART-0033/cliff_face_front_c.png,.agents/graphics/deliveries/ART-0033/cliff_rubble_cluster.png,.agents/graphics/deliveries/ART-0033/foam_at_cliff_base.png
@@ -31,3 +31,7 @@ output_paths: .agents/graphics/deliveries/ART-0033/terrace_edge_straight.png,.ag
 
 ## Integration checklist
 - [ ] Registered assets and room relayout (v0015) tested; PR merged; mark `integrated`.
+
+## تكليف المالك والمرجع الحالي — 2026-11-09
+
+المالك كلف Codex بالرسوم عبر image_gen المدمج وClaude Code بالكود والتكامل. هذا التفويض يسمح بإنتاج مرشحات الطلب الآن؛ لا يعتمدها للإنتاج. المرجع الحالي .agents/planner/goals/GOAL-0001/references/hero_room_reference.png، SHA256 01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c. المرجع السابق محفوظ ولا يستبدل. المهمة المرتبطة أعلاه تخص إكمال المجموعة؛ TASK-0102 يبقى سجل المراجعة العام.

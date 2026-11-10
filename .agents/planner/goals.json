@@ -9,7 +9,20 @@
       "constraints": "Environment / Map Factory only. Owner decision 2026-10-28 authorizes Codex and Claude local Blender graphics tasks and generated assets under H:/shining force/pixel-art. Use deduplicated ART records, reproducible scripts/specs and hash manifests; preserve accepted originals. Individual pieces use scripted QA; agent visual review is final assembled room comparison only. No character/gameplay/UI work; owner visual approval required before production integration.",
       "task_ids": [
         "TASK-0001",
-        "TASK-0002"
+        "TASK-0002",
+        "TASK-0117",
+        "TASK-0118",
+        "TASK-0119",
+        "TASK-0120",
+        "TASK-0121",
+        "TASK-0122",
+        "TASK-0123",
+        "TASK-0124",
+        "TASK-0136",
+        "TASK-0137",
+        "TASK-0138",
+        "TASK-0139",
+        "TASK-0140"
       ],
       "final_verified": false,
       "milestone_notes": "Step depends_on accepts only existing TASK-#### IDs, so milestone order is recorded in 'after' (step keys) and must be translated to TASK dependencies when tasks are created. Run order: m1 -> m8 -> {m2, m5} -> {m3, m4} -> m6 -> {m7, m9} -> m10.",
@@ -120,7 +133,9 @@
           "depends_on": [],
           "priority": "high",
           "kind": "feature",
-          "new_graphics_required": false
+          "new_graphics_required": false,
+          "task_id": "TASK-0119",
+          "owner_20261109_note": "يرتبط بالمهمة الحالية لمنع توليد تكليف مكرر؛ الوصف التاريخي محفوظ، وسجل المهمة المرتبطة يحكم التنفيذ."
         },
         {
           "key": "g1-m1-gap-audit",
@@ -391,7 +406,9 @@
           "proposed_task_id": "TASK-0042",
           "complexity": "L",
           "token_cost_risk": "High",
-          "new_graphics_required": true
+          "new_graphics_required": true,
+          "task_id": "TASK-0121",
+          "owner_20261109_note": "يرتبط بالمهمة الحالية لمنع توليد تكليف مكرر؛ الوصف التاريخي محفوظ، وسجل المهمة المرتبطة يحكم التنفيذ."
         },
         {
           "key": "recovery-navigation",
@@ -415,7 +432,9 @@
           "proposed_task_id": "TASK-0043",
           "complexity": "M",
           "token_cost_risk": "Medium",
-          "new_graphics_required": false
+          "new_graphics_required": false,
+          "task_id": "TASK-0126",
+          "owner_20261109_note": "يرتبط بالمهمة الحالية لمنع توليد تكليف مكرر؛ الوصف التاريخي محفوظ، وسجل المهمة المرتبطة يحكم التنفيذ."
         },
         {
           "key": "g1-m10-final-qa",
@@ -437,7 +456,9 @@
           "proposed_task_id": "TASK-0044",
           "complexity": "M",
           "token_cost_risk": "Medium",
-          "new_graphics_required": false
+          "new_graphics_required": false,
+          "task_id": "TASK-0124",
+          "owner_20261109_note": "يرتبط بالمهمة الحالية لمنع توليد تكليف مكرر؛ الوصف التاريخي محفوظ، وسجل المهمة المرتبطة يحكم التنفيذ."
         },
         {
           "key": "g1-m9-second-map",
@@ -544,6 +565,174 @@
           "proposed_task_id": "TASK-0064",
           "new_graphics_required": false,
           "task_id": "TASK-0064"
+        },
+        {
+          "key": "owner-20261109-audit-current-state",
+          "title": "تدقيق حالة المشروع والمهام الحالية",
+          "problem": "اللوحات القديمة تتوقف عند TASK-0103 بينما الكود وصل إلى v0017 وTASK-0116؛ توجد بيانات تاريخية غير محدثة.",
+          "file": "map_factory/maps/hero_room_01/recovery_queue_audit.json",
+          "touches": [
+            "map_factory/maps/hero_room_01/recovery_queue_audit.json",
+            "docs/CLAUDE_ROOM_GAME_STATUS_20261109.md"
+          ],
+          "done_when": "تقرير بأدلة commits لكل حالة وحدود التحقق وخطوة تالية واحدة لكل عائق.",
+          "test": "python -m unittest discover -s tools/tests -p test_agent_workflow.py",
+          "kind": "investigation",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [],
+          "task_id": "TASK-0117",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-map-registry-integrity",
+          "title": "توضيح عقد بصمات JSON والملف في الأدلة",
+          "problem": "السجل سليم؛ canonical digest مختلف مشروعًا عن بصمة بايتات الملف. لا عيب فساد مثبت.",
+          "file": "tools/map_factory_cli.py",
+          "touches": [
+            "tools/map_factory_cli.py",
+            "tools/hero_room_capture_evidence.py",
+            "tools/tests/test_hero_room_capture_evidence.py",
+            "docs/CLAUDE_ROOM_GAME_STATUS_20261109.md"
+          ],
+          "done_when": "البصمتان موثقتان ومختبرتان، بلا إصلاح وهمي أو كسر توافق أو تغيير التاريخ.",
+          "test": "python -m unittest discover -s tools/tests -p test_hero_room_capture_evidence.py",
+          "kind": "test",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0117"
+          ],
+          "task_id": "TASK-0118",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-current-reference-contract",
+          "title": "اعتماد الصورة الحالية كمرجع وعقد ميزات",
+          "problem": "المرجع المرفق الآن بصمته 01d91889…73119c، ويختلف عن مرجع 47a7855c… المستخدم في العقد الحالي. كل required_asset_ids في العقد الحالي فارغة.",
+          "file": "map_factory/blueprints/hero_room_01_visual_targets_20261103.json",
+          "touches": [
+            "map_factory/blueprints/hero_room_01_visual_targets_20261103.json",
+            "tools/hero_room_visual_contract.py",
+            "tools/tests/test_hero_room_visual_contract.py"
+          ],
+          "done_when": "بصمة المرجع مثبتة، وكل ميزة ممثلة بأصل موثوق أو ART معلوم، مع رفض مراجع خاطئة وعدم إعلان تغطية وهمية.",
+          "test": "python -m unittest discover -s tools/tests -p test_hero_room_visual_contract.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0117"
+          ],
+          "task_id": "TASK-0119",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-reviewed-art-intake",
+          "title": "تجهيز إدخال رسوم Codex المعتمدة",
+          "problem": "ART-0032..0035 مطلوبة؛ أول مرشح جدار تحت TASK-0136 لا يعني اكتمال أو اعتماد المجموعة.",
+          "file": "tools/art_delivery.py",
+          "touches": [
+            "tools/art_delivery.py",
+            "tools/tests/test_art_delivery.py",
+            "tools/test_map.json"
+          ],
+          "done_when": "الأصول الناقصة أو غير المعتمدة أو ذات البصمة الخاطئة ترفض، والمصادر محفوظة، ولا تتغير active manifests تلقائيًا.",
+          "test": "python -m unittest discover -s tools/tests -p test_art_delivery.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0119"
+          ],
+          "task_id": "TASK-0120",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-connected-room-shell",
+          "title": "تركيب الجدران والشرفة والجرف والدرج",
+          "problem": "لقطة v0017 تظهر قطع جدران منفصلة وأرضية عائمة؛ مولدا map_wall_generator وmap_terrace_edge موجودان.",
+          "file": "tools/build_hero_room_blueprint.py",
+          "touches": [
+            "tools/build_hero_room_blueprint.py",
+            "tools/room_assembly.py",
+            "tools/tests/test_hero_room_reference_relayout.py",
+            "map_factory/maps/hero_room_01/"
+          ],
+          "done_when": "غرفة ذات silhouette متصل وقوس مفتوح ودرج يصل الشرفة بصريًا وفيزيائيًا؛ نسخة جديدة فقط؛ report لكل عائق فني.",
+          "test": "python -m unittest discover -s tools/tests -p test_hero_room_reference_relayout.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0118",
+            "TASK-0120"
+          ],
+          "task_id": "TASK-0121",
+          "new_graphics_required": true
+        },
+        {
+          "key": "owner-20261109-room-furniture-dressing",
+          "title": "ضبط الأثاث والزينة حسب المرجع",
+          "problem": "حجم السرير والسجاد واتجاه الطاولة والرفوف والتفاصيل الصغيرة في v0017 لا يطابق التكوين.",
+          "file": "tools/build_hero_room_blueprint.py",
+          "touches": [
+            "tools/build_hero_room_blueprint.py",
+            "tools/room_assembly.py",
+            "tools/tests/test_hero_room_reference_relayout.py"
+          ],
+          "done_when": "الأثاث مؤرض وذو اتجاه صحيح، الزينة مثبتة على مضيفها، وكل نقص مرئي مرتبط بطلب فني محدد.",
+          "test": "python -m unittest discover -s tools/tests -p test_hero_room_reference_relayout.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0121"
+          ],
+          "task_id": "TASK-0122",
+          "new_graphics_required": true
+        },
+        {
+          "key": "owner-20261109-sea-light-shadow-calibration",
+          "title": "معايرة البحر والإضاءة والظلال",
+          "problem": "أفق البحر متكرر وحاد، وخطوط الضوء والظلال في v0017 قوية ومتكررة. أدوات الظلال ومسابح الضوء موجودة.",
+          "file": "scenes/ocean_background.gd",
+          "touches": [
+            "scenes/ocean_background.gd",
+            "map_factory/scripts/shadow_painter.gd",
+            "tools/tests/test_map_factory_tools.py"
+          ],
+          "done_when": "خلفية متصلة بلا حدود قطع واضحة، وظلال منفصلة لا تتكرر ولا تطمس الأرض، مع لقطة مقارنة حقيقية.",
+          "test": "python -m unittest discover -s tools/tests -p test_map_factory_tools.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0122"
+          ],
+          "task_id": "TASK-0123",
+          "new_graphics_required": true
+        },
+        {
+          "key": "owner-20261109-room-visual-acceptance",
+          "title": "تسليم دليل مطابقة الغرفة",
+          "problem": "إيصال v0017 مرتبط بشجرة dirty؛ الاختبار الآلي والمقارنة اللونية لا يثبتان التشابه أو الاعتماد.",
+          "file": "tools/hero_room_capture_evidence.py",
+          "touches": [
+            "tools/hero_room_capture_evidence.py",
+            "docs/previews/map_factory_renders/",
+            "docs/CLAUDE_ROOM_GAME_STATUS_20261109.md"
+          ],
+          "done_when": "لقطة بيئة فقط وإيصال قابلان لإعادة الإنتاج دون موارد مفقودة؛ كل فرق موثق؛ الاعتماد لا يتغير إلا بإذن المالك.",
+          "test": "python -m unittest discover -s tools/tests -p test_hero_room_capture_evidence.py",
+          "kind": "test",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0123"
+          ],
+          "task_id": "TASK-0124",
+          "new_graphics_required": false
         }
       ],
       "proposed_revision": {
@@ -788,6 +977,18 @@
         "supplementary_reference_sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
         "supplementary_existing_path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
         "note": "Second supplied image matches existing 1536x1024 reference; do not replace primary identity or mix coordinate systems. User images contain excluded characters/UI. Compare assembled environment only. No new image-generation authorization inferred."
+      },
+      "owner_scope_amendment_20261109": {
+        "code_agent": "claude",
+        "graphics_agent": "codex",
+        "graphics_tool": "image_gen built-in",
+        "scope": "غرفة مرجعية أولًا ثم نسخة تدريب متكاملة بست شخصيات ومعركة 3 ضد 3 وحفظ؛ بلا حملة نهائية أو شخصية سابعة.",
+        "reference_path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+        "reference_sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+        "handoff": "docs/CLAUDE_ROOM_GAME_HANDOFF_20261109.md",
+        "request": "i want you to create the tasks so the claude could do the cods and u generate the grafphic",
+        "approved_by": "owner in this chat; selections and try now",
+        "status": "active"
       }
     },
     {
@@ -798,7 +999,18 @@
       "verification": "Actual PNG files, sequence previews, Godot movement/collision/battle tests and genuine scene screenshots; owner visual approval.",
       "constraints": "Owner master_request.txt scope amendment: exactly six characters; no Forest Fairy Archer. Built-in image_gen only, one asset/frame per request, preserve approved assets and sources.",
       "task_ids": [
-        "TASK-0070"
+        "TASK-0070",
+        "TASK-0125",
+        "TASK-0126",
+        "TASK-0127",
+        "TASK-0128",
+        "TASK-0129",
+        "TASK-0130",
+        "TASK-0131",
+        "TASK-0132",
+        "TASK-0133",
+        "TASK-0134",
+        "TASK-0135"
       ],
       "final_verified": false,
       "steps": [
@@ -812,9 +1024,271 @@
           "test": "python -m unittest tools.tests.test_game_factory",
           "kind": "architecture",
           "priority": "high",
-          "agent": "codex"
+          "agent": "codex",
+          "task_id": "TASK-0070",
+          "owner_20261109_note": "يرتبط بالمهمة الحالية لمنع توليد تكليف مكرر؛ الوصف التاريخي محفوظ، وسجل المهمة المرتبطة يحكم التنفيذ."
+        },
+        {
+          "key": "owner-20261109-unified-playable-room",
+          "title": "توحيد الخريطة ومشهد اللعب والكاميرا",
+          "problem": "main يقرأ أحدث غرفة، بينما Game Factory demo يقرأ game_factory/environment/room.json؛ viewport الافتراضي 1536x864 مقابل مرجع 1536x1024.",
+          "file": "scenes/main.gd",
+          "touches": [
+            "scenes/main.gd",
+            "scenes/game_factory_demo.gd",
+            "tools/verify_room_gameplay.gd",
+            "tools/test_map.json"
+          ],
+          "done_when": "المعاينة واللعب يعرضان نفس النسخة؛ لا قص عند 1536x1024 و1280x720، وحجب الشخصية يتبع العمق.",
+          "test": "python tools/run_tests.py --only godot_map_smoke --only game_factory",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0124"
+          ],
+          "task_id": "TASK-0125",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-room-navigation-collision",
+          "title": "إكمال الحركة والتصادم والمرافق",
+          "problem": "بيانات التنقل في v0017 needs_review وتشمل ستة عوائق فقط، ومسارا الحركة الحاليان لا يضمنان تطبيق obstacles والlinks معًا.",
+          "file": "scenes/game_factory_actor.gd",
+          "touches": [
+            "scenes/game_factory_actor.gd",
+            "scenes/room_companion.gd",
+            "tools/verify_room_navigation.gd",
+            "tools/tests/test_map_navigation.py",
+            "tools/test_map.json"
+          ],
+          "done_when": "لا عبور للجدران أو الطاولة أو السرير ولا خروج للبحر؛ المدخل والممرات قابلة للوصول والمرافق لا يقطع العوائق.",
+          "test": "python -m unittest discover -s tools/tests -p test_map_navigation.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0125"
+          ],
+          "task_id": "TASK-0126",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-character-readiness-contract",
+          "title": "توحيد حالة الأصول والتحريكات للشخصيات",
+          "problem": "manifest يسجل تحريكات Hero فقط؛ PosterCharacter يعرض مسارًا آخر من قصاصات ملصقات. complete وحدها لا تثبت اعتماد الأصل.",
+          "file": "tools/game_factory.py",
+          "touches": [
+            "tools/game_factory.py",
+            "scenes/game_factory_actor.gd",
+            "tools/tests/test_game_factory.py"
+          ],
+          "done_when": "تقرير للشخصيات الست يذكر الأطر المفقودة وغير المعتمدة؛ readiness ترفض الملفات المفقودة والتسلسلات الجزئية والمراجع غير الصالحة.",
+          "test": "python -m unittest discover -s tools/tests -p test_game_factory.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0119"
+          ],
+          "task_id": "TASK-0127",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-six-character-runtime",
+          "title": "دمج الشخصيات الست من سجل موحد",
+          "problem": "الملفات المتاحة لا تساوي مجموعات تحريك معتمدة؛ بقية الشخصيات مرتبطة بطلب ART-0027 والتسليمات السابقة.",
+          "file": "scenes/game_factory_actor.gd",
+          "touches": [
+            "scenes/game_factory_actor.gd",
+            "scenes/game_factory_demo.gd",
+            "game_factory/character_manifest.json",
+            "tools/verify_six_character_runtime.gd",
+            "tools/test_map.json"
+          ],
+          "done_when": "كل شخصية قابلة للاختيار وتتحرك وتعرض الحالات المعتمدة دون fallback يخفي النقص؛ تقرير Godot لكل حالة.",
+          "test": "python -m unittest discover -s tools/tests -p test_game_factory.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0126",
+            "TASK-0127"
+          ],
+          "task_id": "TASK-0128",
+          "new_graphics_required": true
+        },
+        {
+          "key": "owner-20261109-game-session-transition",
+          "title": "حالة جلسة مشتركة وانتقال التدريب",
+          "problem": "توجد context محلية داخل demo، لكن لا جلسة موحدة للغرفة والفريق والمعركة التدريبية.",
+          "file": "scenes/game_session.gd",
+          "touches": [
+            "scenes/game_session.gd",
+            "scenes/main.gd",
+            "tools/verify_game_session.gd",
+            "tools/test_map.json"
+          ],
+          "done_when": "دخول وخروج وإلغاء متكررة دون تكرار عقد أو فقد بيانات أو إدخال نشط في المشهد المخفي.",
+          "test": "python tools/run_tests.py --changed",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0128"
+          ],
+          "task_id": "TASK-0129",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-tactical-grid-turns",
+          "title": "الشبكة التكتيكية والحركة والأدوار",
+          "problem": "الموجود محرك عرض حركات ومعاينة؛ لم توجد وحدة شبكة وأدوار تكتيكية في الفحص.",
+          "file": "scenes/battle/tactical_state.gd",
+          "touches": [
+            "scenes/battle/tactical_state.gd",
+            "scenes/battle/tactical_grid.gd",
+            "tools/verify_tactical_turns.gd",
+            "tools/test_map.json"
+          ],
+          "done_when": "اختبارات حتمية للحركة والمدى والاحتلال وإلغاء الاختيار وإتمام الجولة ومنع التصرف المزدوج.",
+          "test": "python tools/run_tests.py --changed",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0129"
+          ],
+          "task_id": "TASK-0130",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-tactical-damage-ai",
+          "title": "ضرر حتمي وخصم تدريب آلي",
+          "problem": "بنية hit timing موجودة، لكن العرض لا يساوي قواعد HP أو منطق خصم قابل للعب.",
+          "file": "scenes/battle/tactical_state.gd",
+          "touches": [
+            "scenes/battle/tactical_state.gd",
+            "scenes/battle/training_ai.gd",
+            "tools/verify_training_ai.gd",
+            "tools/test_map.json"
+          ],
+          "done_when": "نفس الأوامر تنتج نفس الحالة، لا هجوم خارج المدى ولا ضرر مزدوج، والفوز/الخسارة يتحققان مرة واحدة.",
+          "test": "python tools/run_tests.py --changed",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0130"
+          ],
+          "task_id": "TASK-0131",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-tactical-battle-presentation",
+          "title": "ربط القتال التكتيكي بالعرض الحقيقي",
+          "problem": "TASK-0085 موجود؛ preview ما زال StubActor. حركتا Hero موثقتان في TASK-0086/0087 ولا ينبغي تكرارهما.",
+          "file": "scenes/battle/modular_actor_adapter.gd",
+          "touches": [
+            "scenes/battle/modular_actor_adapter.gd",
+            "scenes/battle/hit_timing_bridge.gd",
+            "scenes/battle/tactical_presentation.gd",
+            "tools/verify_tactical_presentation.gd",
+            "tools/test_map.json"
+          ],
+          "done_when": "نفس الضرر عند معدلات إطارات مختلفة، وإيقاف/إلغاء/إعادة لا يكرر الضربة؛ مشهد المنتج يستخدم أصولًا حقيقية.",
+          "test": "python -m unittest discover -s tools/tests -p test_battle_hit_timing.py",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0131"
+          ],
+          "task_id": "TASK-0132",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-training-player-ui",
+          "title": "واجهة التدريب والتفاعل مع حلقة اللعب",
+          "problem": "واجهة battle_preview تشخيصية وليست واجهة اختيار حركة ووحدة ونتيجة تكتيكية.",
+          "file": "scenes/battle/training_ui.gd",
+          "touches": [
+            "scenes/battle/training_ui.gd",
+            "scenes/battle/training.tscn",
+            "tools/verify_training_ui.gd",
+            "tools/test_map.json"
+          ],
+          "done_when": "لا يقبل زرًا غير قانوني أو إدخال الاستكشاف أثناء القتال؛ يستطيع اللاعب إكمال تدريب ثم العودة للغرفة.",
+          "test": "python tools/run_tests.py --changed",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0130",
+            "TASK-0132"
+          ],
+          "task_id": "TASK-0133",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-save-load-demo",
+          "title": "حفظ وتحميل النسخة التجريبية",
+          "problem": "لم يُعثر على خدمة حفظ في مشاهد اللعبة المفحوصة.",
+          "file": "scenes/save_game.gd",
+          "touches": [
+            "scenes/save_game.gd",
+            "scenes/game_session.gd",
+            "tools/verify_save_game.gd",
+            "tools/test_map.json"
+          ],
+          "done_when": "إعادة تشغيل تستعيد الفريق والمعدات والموقع والتقدم؛ اختبارات تلف الملف وكتابة مقطوعة ومعرف مفقود دون خسارة حفظ سليم.",
+          "test": "python tools/run_tests.py --changed",
+          "kind": "feature",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0133"
+          ],
+          "task_id": "TASK-0134",
+          "new_graphics_required": false
+        },
+        {
+          "key": "owner-20261109-windows-demo-release",
+          "title": "التحقق الشامل وبناء Windows قابل للتجربة",
+          "problem": "لا دليل حالي على نسخة متكاملة تضم الاستكشاف والشخصيات الست والتدريب والحفظ بعد إعادة التشغيل.",
+          "file": "export_presets.cfg",
+          "touches": [
+            "export_presets.cfg",
+            "tools/verify_demo_e2e.gd",
+            "docs/DEMO_RELEASE_20261109.md",
+            "tools/test_map.json"
+          ],
+          "done_when": "بناء Windows يعمل من مسار نظيف بلا موارد مفقودة أو placeholders؛ تقرير نجاح وفشل واقعي وروابط PR/captures.",
+          "test": "python tools/run_tests.py --all",
+          "kind": "test",
+          "priority": "high",
+          "agent": "claude",
+          "depends_on": [
+            "TASK-0134",
+            "TASK-0086",
+            "TASK-0087"
+          ],
+          "task_id": "TASK-0135",
+          "new_graphics_required": false
         }
-      ]
+      ],
+      "owner_scope_amendment_20261109": {
+        "code_agent": "claude",
+        "graphics_agent": "codex",
+        "graphics_tool": "image_gen built-in",
+        "scope": "غرفة مرجعية أولًا ثم نسخة تدريب متكاملة بست شخصيات ومعركة 3 ضد 3 وحفظ؛ بلا حملة نهائية أو شخصية سابعة.",
+        "reference_path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+        "reference_sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+        "handoff": "docs/CLAUDE_ROOM_GAME_HANDOFF_20261109.md",
+        "request": "i want you to create the tasks so the claude could do the cods and u generate the grafphic",
+        "approved_by": "owner in this chat; selections and try now",
+        "status": "active"
+      }
     }
   ]
 }

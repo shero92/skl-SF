@@ -1,0 +1,30 @@
+{
+  "mode": "RGBA",
+  "dimensions": [
+    2172,
+    724
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    0,
+    0,
+    2156,
+    700
+  ],
+  "opaque_bbox": [
+    98,
+    117,
+    2072,
+    617
+  ],
+  "touches_canvas_edge": true,
+  "transparent_margin_pixels": [
+    0,
+    0,
+    16,
+    24
+  ]
+}
