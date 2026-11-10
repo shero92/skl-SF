@@ -1,0 +1,20 @@
+{
+  "task_id": "TASK-0031",
+  "batch": "B2",
+  "independent_masters": 8,
+  "rejected_attempts": 4,
+  "all_rgba": true,
+  "all_real_alpha": true,
+  "all_visible_bounds_inside": true,
+  "all_over_4x": true,
+  "unique_master_hashes": 8,
+  "exact_master_minimum_met": false,
+  "owner_approved": false,
+  "manifests": [
+    "game_factory/environment/ART-0020/v001/manifest.json",
+    "game_factory/environment/ART-0008/v001/manifest.json",
+    "game_factory/environment/ART-0006/v001/manifest.json",
+    "game_factory/environment/ART-0024/v001/manifest.json",
+    "game_factory/environment/ART-0022/v001/manifest.json"
+  ]
+}

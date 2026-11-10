@@ -1,6 +1,6 @@
 ---
 id: ART-0006
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0017
 dedupe_key: hero_room_sphere_finial
@@ -64,3 +64,9 @@ issue: 20
 ## Calibrated measurements (TASK-0038, 2026-10-27)
 - Source: docs/HERO_ROOM_CALIBRATION.md (reference SHA-256 verified; native = source px x 0.971; ground depth per D1).
 - Cancel candidate: ST011 already has a sphere finial; use two ST011 instances at s0.62 (source pedestals 45x80/45x85).
+
+## B2 target delivery — TASK-0031
+- Owner explicitly assigned image_gen production against `hero_room_01_target_20261110.webp`, SHA-256 `4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323`. New target spec supersedes legacy reference/size/scope proposals for these candidates.
+- Exact delivery paths and source hashes: `.agents/graphics/deliveries/ART-0006/manifest.json` (new images under `items`; compatibility `files` for ART-0022/0024 points to archived previous candidates).
+- Review: `game_factory/environment/ART-0006/v001/`. Sources and attempts retained. Literal master size deviations and unannotated footprints/mounts disclosed. No upscaling, no owner approval or integration.
+- Full sphere-topped post follows latest owner target; previous cap-only scope superseded by explicit assignment.

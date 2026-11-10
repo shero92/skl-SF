@@ -1,0 +1,101 @@
+{
+  "request_id": "ART-0022",
+  "task_id": "TASK-0054",
+  "status": "rendered_unreviewed",
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay.png",
+      "sha256": "ff329b2078be9aedb546ebab746b11ba4b6f033165f079a336bd45c76d35c76c",
+      "pixel_size": [
+        282,
+        274
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "center": [
+          144.0,
+          140.25
+        ],
+        "north": [
+          144.0,
+          10.78
+        ],
+        "south": [
+          144.0,
+          269.72
+        ],
+        "west": [
+          10.5,
+          140.25
+        ],
+        "east": [
+          277.5,
+          140.25
+        ]
+      },
+      "builder": "compass_inlay",
+      "params": {
+        "half_x": 2.086,
+        "half_y": 2.023,
+        "ring": 0.62,
+        "long_point": 0.84,
+        "short_point": 0.5,
+        "seed": 22,
+        "field": [
+          0.07,
+          0.24,
+          0.62
+        ]
+      },
+      "master": ".agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay@4x.png",
+      "master_sha256": "6de659aef74ccea69c57f931a95f2197b809596e7e264b5937d3d51e43401356",
+      "palette": {
+        "opaque_px": 34486,
+        "mean_rgb": [
+          117,
+          112,
+          106
+        ],
+        "hue_deg": 33,
+        "lightness": 0.437,
+        "saturation": 0.049,
+        "pixel_saturation": 0.492,
+        "opaque_size": [
+          268,
+          260
+        ]
+      }
+    }
+  ],
+  "extra_files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay@4x.png",
+      "sha256": "6de659aef74ccea69c57f931a95f2197b809596e7e264b5937d3d51e43401356",
+      "role": "4x master"
+    }
+  ],
+  "qa": {
+    "problems": [],
+    "warnings": [],
+    "expected_warnings": [],
+    "pairs": []
+  },
+  "provenance": {
+    "tool": "blender",
+    "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
+    "spec": "tools/blender/specs/ART-0022.json",
+    "toolkit_commit": "2a412e7ac7450cb4f8650b073eaa78fae102a58a",
+    "producing_agent": "claude",
+    "ai_image_generation": false
+  },
+  "reference": {
+    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+    "sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+    "owner_confirmed": false
+  },
+  "review": {
+    "visual_approval": null,
+    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
+  },
+  "cost": "unknown"
+}
