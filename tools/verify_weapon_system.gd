@@ -67,6 +67,7 @@ func _test_equip(ws) -> void:
 	var swap: Dictionary = ws.equip(hero, "WPN_IRON_SWORD")
 	_check(swap.ok and swap.previous == "WPN_HERO_BASIC_SWORD", "swap result")
 	_check(hero.inventory.has("WPN_HERO_BASIC_SWORD") and not hero.inventory.has("WPN_IRON_SWORD"), "swap inventory")
+	_check(hero.inventory[0] == "WPN_HERO_BASIC_SWORD", "the old weapon takes the new weapon's slot")
 	_check(ws.equippable_in_inventory(hero) == ["WPN_HERO_BASIC_SWORD"], "equippable list")
 	_check(ws.unequip(hero).ok and hero.weapon_id == "", "unequip")
 	_check(ws.unequip(hero).reason == "nothing_equipped", "double unequip")
