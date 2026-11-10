@@ -20,6 +20,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`hd_assets.gd.uid`](hd_assets.gd.uid)
 - [`modular_room_builder.gd`](modular_room_builder.gd)
 - [`modular_room_builder.gd.uid`](modular_room_builder.gd.uid)
+- [`navigation_grid.gd`](navigation_grid.gd)
 - [`room_factory.gd`](room_factory.gd)
 - [`room_factory.gd.uid`](room_factory.gd.uid)
 - [`shadow_factory.gd`](shadow_factory.gd)

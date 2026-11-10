@@ -128,3 +128,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0124](../tasks/TASK-0124_hero_room_v0020_rear_wall.md) | review | claude | TASK-0123 | none |
 | [TASK-0125](../tasks/TASK-0125_regenerate_main_outputs.md) | review | claude | none | none |
 | [TASK-0126](../tasks/TASK-0126_regen_skip_workflow_dir.md) | review | claude | TASK-0125 | none |
+| [TASK-0127](../tasks/TASK-0127_navigation_player_movement.md) | review | claude | none | none |

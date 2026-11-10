@@ -63,6 +63,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_map_reference.py`](test_map_reference.py)
 - [`test_map_templates.py`](test_map_templates.py)
 - [`test_map_variation.py`](test_map_variation.py)
+- [`test_navigation_grid.py`](test_navigation_grid.py)
 - [`test_parallel_safety.py`](test_parallel_safety.py)
 - [`test_pixel_asset_factory.py`](test_pixel_asset_factory.py)
 - [`test_poster_characters.py`](test_poster_characters.py)

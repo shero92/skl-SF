@@ -145,6 +145,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`verify_map_assets.py`](verify_map_assets.py)
 - [`verify_map_factory_viewer.gd`](verify_map_factory_viewer.gd)
 - [`verify_map_factory_viewer.gd.uid`](verify_map_factory_viewer.gd.uid)
+- [`verify_navigation_grid.gd`](verify_navigation_grid.gd)
 - [`verify_poster_characters.gd`](verify_poster_characters.gd)
 - [`verify_poster_characters.gd.uid`](verify_poster_characters.gd.uid)
 - [`verify_shadow_painter.gd`](verify_shadow_painter.gd)
