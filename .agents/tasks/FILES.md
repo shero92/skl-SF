@@ -135,5 +135,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0128_world_depth_sorting.md`](TASK-0128_world_depth_sorting.md)
 - [`TASK-0129_graphics_validation.md`](TASK-0129_graphics_validation.md)
 - [`TASK-0130_character_runtime_cache.md`](TASK-0130_character_runtime_cache.md)
+- [`TASK-0131_painted_shadow_speed.md`](TASK-0131_painted_shadow_speed.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

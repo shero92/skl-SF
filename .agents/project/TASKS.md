@@ -132,3 +132,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0128](../tasks/TASK-0128_world_depth_sorting.md) | review | claude | TASK-0127 | none |
 | [TASK-0129](../tasks/TASK-0129_graphics_validation.md) | review | claude | none | none |
 | [TASK-0130](../tasks/TASK-0130_character_runtime_cache.md) | review | claude | TASK-0127 | none |
+| [TASK-0131](../tasks/TASK-0131_painted_shadow_speed.md) | review | claude | none | none |
