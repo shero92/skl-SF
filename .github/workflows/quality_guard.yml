@@ -1,10 +1,29 @@
 name: Prevent art quality regressions
 on:
   push:
+    branches: [main]
     paths:
       - "map_factory/parts/**/*.png"
       - "map_factory/metadata/asset_index.json"
+      - "assets/characters/**"
+      - "assets_generated/**"
+      - "assets_hd/runtime/**"
+      - "assets_hd/hd_map.json"
+      - "game_factory/character_manifest.json"
       - "tools/quality_guard.py"
+      - "tools/graphics_validation.py"
+      - ".github/workflows/quality_guard.yml"
+  pull_request:
+    paths:
+      - "map_factory/parts/**/*.png"
+      - "map_factory/metadata/asset_index.json"
+      - "assets/characters/**"
+      - "assets_generated/**"
+      - "assets_hd/runtime/**"
+      - "assets_hd/hd_map.json"
+      - "game_factory/character_manifest.json"
+      - "tools/quality_guard.py"
+      - "tools/graphics_validation.py"
       - ".github/workflows/quality_guard.yml"
   workflow_dispatch:
 jobs:
@@ -20,4 +39,11 @@ jobs:
       - name: Install PNG reader
         run: python -m pip install "Pillow>=10,<13"
       - name: Enforce stable assets and stop unreviewed loss of detail
+        if: github.event_name != 'pull_request'
         run: python tools/quality_guard.py
+      - name: Validate only the graphics this pull request changed
+        if: github.event_name == 'pull_request'
+        run: python tools/graphics_validation.py --changed --base origin/main
+      - name: Validate every production PNG and its metadata
+        if: github.event_name != 'pull_request'
+        run: python tools/graphics_validation.py --all
