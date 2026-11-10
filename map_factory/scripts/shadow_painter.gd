@@ -57,7 +57,8 @@ static func paint(source: Image, light_config: Dictionary = {}) -> Dictionary:
 		image.resize(maxi(1, int(image.get_width() * factor)), maxi(1, int(image.get_height() * factor)), Image.INTERPOLATE_NEAREST)
 	var width := image.get_width()
 	var height := image.get_height()
-	var rows := _row_bounds(image)
+	var pixels := image.get_data() # RGBA8 bytes; reading them directly avoids a get_pixel call per sample
+	var rows := _row_bounds(pixels, width, height)
 	if rows.is_empty():
 		return {}
 	var foot_y: int = rows["bottom"]
@@ -80,7 +81,7 @@ static func paint(source: Image, light_config: Dictionary = {}) -> Dictionary:
 	var contact_x1 := -1
 	for y in range(maxi(top_y, foot_y - band_rows + 1), foot_y + 1):
 		for x in width:
-			if image.get_pixel(x, y).a > 0.3:
+			if pixels[(y * width + x) * 4 + 3] > CONTACT_ALPHA_BYTE: # byte/255 > 0.3
 				contact_x0 = mini(contact_x0, x)
 				contact_x1 = maxi(contact_x1, x)
 	var contact_center := (contact_x0 + contact_x1 + 1) * 0.5
@@ -99,6 +100,10 @@ static func paint(source: Image, light_config: Dictionary = {}) -> Dictionary:
 	var origin := Vector2(floor(min_x) - pad, floor(min_y) - pad)
 	var alpha := PackedFloat32Array()
 	alpha.resize(out_w * out_h)
+	var alpha_lut := _alpha_lut()
+	var contact_opacity := float(light["contact_opacity"]) # hoisted: a Dictionary lookup per pixel was measurable
+	var has_contact := contact_x1 >= contact_x0
+	var contact_shift := contact_center - foot_x
 
 	for oy in out_h:
 		var sy := origin.y + oy + 0.5
@@ -112,28 +117,38 @@ static func paint(source: Image, light_config: Dictionary = {}) -> Dictionary:
 			if inside_cast and src_y >= 0 and src_y < height:
 				var src_x := int(round(sx + foot_x - dx * h))
 				if src_x >= 0 and src_x < width:
-					value = image.get_pixel(src_x, src_y).a
+					value = alpha_lut[pixels[(src_y * width + src_x) * 4 + 3]]
 					value *= 1.0 - fade * clampf(h / object_height, 0.0, 1.0)
 					value *= opacity
 			# Contact occlusion ellipse under the footprint.
-			if contact_x1 >= contact_x0:
-				var ex := (sx - (contact_center - foot_x)) / contact_rx
+			if has_contact:
+				var ex := (sx - contact_shift) / contact_rx
 				var ey := sy / contact_ry
 				var radius := ex * ex + ey * ey
 				if radius < 1.0:
 					var soft := 1.0 - radius
-					value = maxf(value, soft * float(light["contact_opacity"]))
+					value = maxf(value, soft * contact_opacity)
 			alpha[oy * out_w + ox] = value
 
 	for _pass in blur:
 		alpha = _box_blur(alpha, out_w, out_h)
 
-	var result := Image.create(out_w, out_h, false, Image.FORMAT_RGBA8)
-	for oy in out_h:
-		for ox in out_w:
-			var a := alpha[oy * out_w + ox]
-			if a > 0.003:
-				result.set_pixel(ox, oy, Color(tint.r, tint.g, tint.b, clampf(a, 0.0, 1.0)))
+	# Same 8-bit conversion Image.set_pixel uses (truncation), written straight into the byte buffer.
+	var tint8 := Color(tint.r, tint.g, tint.b, 1.0)
+	var red := int(tint8.r * 255.0)
+	var green := int(tint8.g * 255.0)
+	var blue := int(tint8.b * 255.0)
+	var bytes := PackedByteArray()
+	bytes.resize(out_w * out_h * 4)
+	for i in out_w * out_h:
+		var a := alpha[i]
+		if a > 0.003:
+			var o := i * 4
+			bytes[o] = red
+			bytes[o + 1] = green
+			bytes[o + 2] = blue
+			bytes[o + 3] = int(clampf(a, 0.0, 1.0) * 255.0)
+	var result := Image.create_from_data(out_w, out_h, false, Image.FORMAT_RGBA8, bytes)
 	var used_longest := maxi(width, height)
 	# Rows of transparent padding below the lowest opaque pixel: the shadow must start at the
 	# object's real base, not at the bottom edge of the texture (objects looked like they hovered).
@@ -141,12 +156,27 @@ static func paint(source: Image, light_config: Dictionary = {}) -> Dictionary:
 	return {"image": result, "offset": origin, "source_scale": float(original_longest) / float(used_longest), "foot_gap": foot_gap}
 
 
-static func _row_bounds(image: Image) -> Dictionary:
+const CONTACT_ALPHA_BYTE := 76 # byte/255 > 0.3
+const ROW_ALPHA_BYTE := 25 # byte/255 > 0.1
+static var _lut: PackedFloat32Array
+
+
+## byte -> float32 alpha exactly as a per-pixel Image read returns it.
+static func _alpha_lut() -> PackedFloat32Array:
+	if _lut.is_empty():
+		_lut.resize(256)
+		for b in 256:
+			_lut[b] = Color(0.0, 0.0, 0.0, b / 255.0).a
+	return _lut
+
+
+static func _row_bounds(pixels: PackedByteArray, width: int, height: int) -> Dictionary:
 	var top := -1
 	var bottom := -1
-	for y in image.get_height():
-		for x in image.get_width():
-			if image.get_pixel(x, y).a > 0.1:
+	for y in height:
+		var row := y * width * 4 + 3
+		for x in width:
+			if pixels[row + x * 4] > ROW_ALPHA_BYTE:
 				if top < 0:
 					top = y
 				bottom = y
@@ -156,18 +186,37 @@ static func _row_bounds(image: Image) -> Dictionary:
 	return {"top": top, "bottom": bottom}
 
 
+## 3x3 box average with edge clamping. Interior pixels sum their nine neighbours in the original
+## order (bit-identical result); only the border uses the generic loop.
 static func _box_blur(values: PackedFloat32Array, w: int, h: int) -> PackedFloat32Array:
 	var out := PackedFloat32Array()
 	out.resize(values.size())
 	for y in h:
+		var border_row := y == 0 or y == h - 1
 		for x in w:
-			var total := 0.0
+			var index := y * w + x
+			if not border_row and x > 0 and x < w - 1:
+				var up := index - w
+				var down := index + w
+				var total := 0.0
+				total += values[up - 1]
+				total += values[up]
+				total += values[up + 1]
+				total += values[index - 1]
+				total += values[index]
+				total += values[index + 1]
+				total += values[down - 1]
+				total += values[down]
+				total += values[down + 1]
+				out[index] = total / 9.0
+				continue
+			var edge_total := 0.0
 			var count := 0
 			for yy in range(maxi(0, y - 1), mini(h, y + 2)):
 				for xx in range(maxi(0, x - 1), mini(w, x + 2)):
-					total += values[yy * w + xx]
+					edge_total += values[yy * w + xx]
 					count += 1
-			out[y * w + x] = total / float(count)
+			out[index] = edge_total / float(count)
 	return out
 
 
