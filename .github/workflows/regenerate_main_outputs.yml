@@ -1,0 +1,35 @@
+name: Regenerate main-only outputs
+# ADR-006: task branches carry no generated files, so main goes stale after every merge.
+# This job refreshes task boards, folder indexes, the cost report and the test index on main.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: regenerate-main-outputs
+  cancel-in-progress: false
+jobs:
+  regenerate:
+    # A commit pushed with GITHUB_TOKEN does not start new runs, but stay explicit about not looping.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Regenerate and verify generated files
+        run: python3 tools/regenerate_main_outputs.py
+      - name: Commit refreshed files when they changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "generated outputs already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: regenerate main-only indexes, task boards and cost reports"
+          git pull --rebase origin main
+          git push origin HEAD:main
