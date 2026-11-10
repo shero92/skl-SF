@@ -39,6 +39,14 @@ class RegenerateTests(unittest.TestCase):
         self.assertNotIn("--force", text)
         self.assertNotIn("pull_request", re.sub(r"#.*", "", text))
 
+    def test_strict_main_checks_run_after_regeneration(self):
+        for workflow in STRICT_CHECKS:
+            text = (ROOT / workflow).read_text(encoding="utf-8")
+            self.assertIn("workflow_run:", text, workflow)
+            self.assertIn('workflows: ["Regenerate main-only outputs"]', text, workflow)
+            self.assertNotRegex(text, r"(?m)^  push:", workflow + " must not check the stale merge commit")
+            self.assertIn("if: github.event_name != 'pull_request'", text, workflow)
+
     def test_writers_and_checks_exist(self):
         for step in regen.STEPS:
             for command in step:
