@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0006",
+  "task_id": "TASK-0136",
+  "batch": "B2",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 1,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_review",
+  "items": [
+    {
+      "id": "hero_stone_sphere_finial",
+      "request_id": "ART-0006",
+      "master_path": "assets_hd/architecture/sphere_stair_post/v001/hero_stone_sphere_finial.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0006/hero_stone_sphere_finial.png",
+      "sha256": "7480fde019f3e1cf63059109e1f08a7deaaa29ded16851eb550e5d62a548d475",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        234,
+        77,
+        765,
+        1458
+      ],
+      "origin": [
+        499.5,
+        1457
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "intended_native_canvas": [
+        56,
+        120
+      ],
+      "requested_master_minimum": [
+        450,
+        960
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 9.482142857142858,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0006/v001/native_review/hero_stone_sphere_finial.png",
+      "native_review_sha256": "86bf3d038458685290f32dd81130673c62b54b8467903d8b7ad387e67dadc358",
+      "native_review_region_alpha128_plus_8px": [
+        226,
+        69,
+        773,
+        1466
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        47,
+        120
+      ],
+      "native_offset": [
+        4,
+        0,
+        51,
+        120
+      ],
+      "native_uniform_scale": 0.08589835361488905,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "not applicable",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/architecture/stone_post",
+        "assets_hd/architecture/connected_ruin_walls/v001"
+      ],
+      "prompt_path": "game_factory/environment/ART-0006/v001/requests/hero_stone_sphere_finial.txt",
+      "prompt_text": "ART-0006 attempt03 NEW INDEPENDENT DRAWING, do not reuse preceding failed glowing image. Create a clean pixel-art GAME SPRITE cutout: one complete square limestone stair pillar topped by a small smooth stone BALL, stepped base with a few ivy leaves. Hero Room warm sandstone cream, upper-left SURFACE highlights only, dark crisp pixel outline, hard pixel clusters matching SKL-SF stone_post masters. SOUTH front tactical RPG30deg above. Canvas1024x1536, whole post with4%EMPTY margin. Output MUST be RGBA with ZERO ALPHA outside the exact object silhouette. Transparent background. Do not paint a backdrop at all. NO bloom, NO aura, NO halo, NO drop shadow, NO rim glow, NO shadow beneath, NO studio lighting backdrop, NO floor, NO ground, NO vignette. Only the object, every surrounding pixel fully transparent. Single pillar, not cap-only, not multiple views. No text, watermark, frame or characters.",
+      "source_attempt_name": "exec-829f9302-eb46-4636-a9b1-928afeb52f17.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": []
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "path": "assets_hd/architecture/sphere_stair_post/v001/rejected/hero_stone_sphere_finial_attempt_01.png",
+      "sha256": "500933ab5099c87c51b30058c3558d2276a77c8218d3526a7bdb884dd9deadb1",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "reason": "See rejected/rejections.json for measured and visual rejection reasons",
+      "quality_status": "needs_regeneration"
+    },
+    {
+      "path": "assets_hd/architecture/sphere_stair_post/v001/rejected/hero_stone_sphere_finial_attempt_02.png",
+      "sha256": "c757ed10e95957ae3135fa8b4db88082606c88495813e25bb632cd31424d5b0b",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "reason": "See rejected/rejections.json for measured and visual rejection reasons",
+      "quality_status": "needs_regeneration"
+    }
+  ]
+}

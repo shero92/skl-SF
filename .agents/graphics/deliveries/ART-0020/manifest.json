@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0020",
+  "task_id": "TASK-0136",
+  "batch": "B2",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 2,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_review",
+  "items": [
+    {
+      "id": "hero_study_bookshelf_south",
+      "request_id": "ART-0020",
+      "master_path": "assets_hd/furniture/study_bookshelf_views/v001/hero_study_bookshelf_south.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_south.png",
+      "sha256": "116feab55c4a93c208f2c360e42f5f9e05dbd0d7ab072c02edd61641f45372b4",
+      "pixel_size": [
+        1616,
+        973
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        14,
+        32,
+        1572,
+        942
+      ],
+      "origin": [
+        793.0,
+        941
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "intended_native_canvas": [
+        212,
+        144
+      ],
+      "requested_master_minimum": [
+        1700,
+        1150
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 6.319444444444445,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0020/v001/native_review/hero_study_bookshelf_south.png",
+      "native_review_sha256": "87905e83fd2e4333ae849a4be427fc4a9f4fd91f0c594c91ebe67204aa5092eb",
+      "native_review_region_alpha128_plus_8px": [
+        6,
+        24,
+        1580,
+        950
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        212,
+        125
+      ],
+      "native_offset": [
+        0,
+        19,
+        212,
+        144
+      ],
+      "native_uniform_scale": 0.13468869123252858,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "not applicable",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/furniture/bookcase_armillary/bookcase_armillary_01.png",
+        "assets_hd/furniture/bench_plain/bench_plain_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0020/v001/requests/hero_study_bookshelf_south.txt",
+      "prompt_text": "ART-0020 hero_study_bookshelf_south. ONE independent transparent RGBA sprite, whole low wide OPEN oak bookshelf with many blue/brown books, brass armillary sphere on TOP RIGHT, THREE small lit ivory candles on TOP LEFT with compact flames, two small oak crates stacked immediately beside LEFT end; all form this one authored shelf furniture assembly as specified. South/front view, long horizontal shelves face viewer, tabletop and book tops clearly visible from 30deg above tactical RPG camera. High detail hard pixel clusters matching viewed SKL-SF assets_hd/furniture/bookcase_armillary/bookcase_armillary_01.png, warm dark oak, cobalt spines/gold bands, upper-left light, crisp dark1-2nativepixel outlines, no blur. Master2048x1408 or larger; desiredminimum1700x1150, native212x144. Keep entire sphere rings, flames, all feet and crates within4%transparent margin. No wall, no floor, no loose ground, no baked cast or contact shadow, no halo around candle flames beyond tiny flame silhouette, no characters, readable text, watermark, frame, multi-view sheet. Real alpha=0 in all empty space including sphere ring holes; no white or semiopaque backdrop. One low shelf assembly only, no other furniture.",
+      "source_attempt_name": "exec-a0927329-39c6-4f78-b626-f54250294142.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Actual built-in output is below the literal per-asset master minimum; original preserved without upscaling. Regeneration/owner decision required.",
+        "Visible pixels are inside canvas but some margins are less than the approximately 3 percent target."
+      ]
+    },
+    {
+      "id": "hero_study_bookshelf_north",
+      "request_id": "ART-0020",
+      "master_path": "assets_hd/furniture/study_bookshelf_views/v001/hero_study_bookshelf_north.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_north.png",
+      "sha256": "fcb3079d48951276a1e245fa1bffdad591a5176282b6b002d66813b8733196c7",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        108,
+        8,
+        1455,
+        992
+      ],
+      "origin": [
+        781.5,
+        991
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "north",
+      "intended_native_canvas": [
+        212,
+        144
+      ],
+      "requested_master_minimum": [
+        1700,
+        1150
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 6.35377358490566,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0020/v001/native_review/hero_study_bookshelf_north.png",
+      "native_review_sha256": "54f93902b099c8cb5e0768bd5e1c778cfdf44998360f0a4ec921f86049129906",
+      "native_review_region_alpha128_plus_8px": [
+        100,
+        0,
+        1463,
+        1000
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        196,
+        144
+      ],
+      "native_offset": [
+        8,
+        0,
+        204,
+        144
+      ],
+      "native_uniform_scale": 0.144,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "not applicable",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/furniture/bookcase_armillary/bookcase_armillary_01.png",
+        "assets_hd/furniture/bench_plain/bench_plain_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0020/v001/requests/hero_study_bookshelf_north.txt",
+      "prompt_text": "ART-0020 north correction02. Keep this ONE rear-facing low oak cabinet assembly and its solid plank BACK facing viewer, armillary on image LEFT, three candles on image RIGHT, two crates beside RIGHT. Remove ALL brown/yellow glowing backdrop and ALL external shadows/halos, including glow behind candles, sphere and feet. Empty background must be genuinelyalpha=0, object crisp and opaque. To match the south family, armillary is plain BRASS: replace blue decorated central orb/base with plain brass sphere and plain brass pedestal; keep ring geometry rear perspective. Crates are simple diagonally braced oak crates like south family, not handle-slot boxes. Upper-left surface lighting. Whole assembly within4%transparent margins on all sides, RGBA PNG at least1700x1150 if possible, high detailed hard pixel clusters. No floor, wall, ground, shadow, text, watermark, frame, people or other objects. Do not change rear to front, no flip.",
+      "source_attempt_name": "exec-84b67cf0-7041-433e-90f9-903f57404453.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Actual built-in output is below the literal per-asset master minimum; original preserved without upscaling. Regeneration/owner decision required.",
+        "Visible pixels are inside canvas but some margins are less than the approximately 3 percent target."
+      ]
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "path": "assets_hd/furniture/study_bookshelf_views/v001/rejected/hero_study_bookshelf_north_attempt_01.png",
+      "sha256": "4c9f7aabbc55321b6389fcb5a630d605c483bc0157f4e04eaac30719111d72e5",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "reason": "See rejected/rejections.json for measured and visual rejection reasons",
+      "quality_status": "needs_regeneration"
+    }
+  ]
+}

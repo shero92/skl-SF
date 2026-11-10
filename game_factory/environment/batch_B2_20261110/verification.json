@@ -1,0 +1,19 @@
+{
+  "task_id": "TASK-0136",
+  "tests": {
+    "command": "python -u tools/run_tests.py --changed --timeout 120",
+    "passed": 80,
+    "total": 80,
+    "exit_code": 0
+  },
+  "graphics_validation": {
+    "command": "python tools/graphics_validation.py --changed",
+    "exit_code": 0,
+    "png_checked": 0,
+    "note": "Candidate masters excluded from production validator scope; technical_qa.json validates eight sources"
+  },
+  "godot_captures": 5,
+  "owner_approved": false,
+  "scene_calibration_verified": false,
+  "literal_master_size_spec_complete": false
+}

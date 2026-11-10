@@ -1,10 +1,108 @@
 {
+  "schema_version": 1,
   "request_id": "ART-0022",
-  "task_id": "TASK-0054",
-  "status": "rendered_unreviewed",
+  "task_id": "TASK-0136",
+  "batch": "B2",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 1,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_review",
+  "items": [
+    {
+      "id": "hero_compass_floor_inlay",
+      "request_id": "ART-0022",
+      "master_path": "assets_hd/decor/compass_inlay/v001/hero_compass_floor_inlay.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay.png",
+      "sha256": "4af0f23f62758cf2ba5baee1e8bf69af628689b827a1aef40d2465e37f69b955",
+      "pixel_size": [
+        1465,
+        1073
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        69,
+        53,
+        1391,
+        992
+      ],
+      "origin": [
+        730.0,
+        991
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south_ground",
+      "intended_native_canvas": [
+        252,
+        185
+      ],
+      "requested_master_minimum": [
+        1100,
+        800
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 5.075675675675676,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0022/v001/native_review/hero_compass_floor_inlay.png",
+      "native_review_sha256": "f16949992e1448336837579ad409b1eafee33b0ef177837be4d6c95a304a0df6",
+      "native_review_region_alpha128_plus_8px": [
+        61,
+        45,
+        1399,
+        1000
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        252,
+        180
+      ],
+      "native_offset": [
+        0,
+        5,
+        252,
+        185
+      ],
+      "native_uniform_scale": 0.18834080717488788,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "not applicable",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/decor/compass_inlay",
+        "assets_hd/props/vase_blue/vase_blue_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0022/v001/requests/hero_compass_floor_inlay.txt",
+      "prompt_text": "ART-0022 hero_compass_floor_inlay. ONE independent flat floor inlay sprite on true transparent RGBA background, a diamond/rhombus cobalt-blue enamel stone compass rose with gold eight-point nautical star and narrow gold ornamental border, matching Hero Room target. Draw the oblique floor projection directly, not rotate an existing bitmap. Four diamond corners pointing image up,right,down,left; width252 height185 native, vertically foreshortened as tactical RPG floor30deg above. One thin flat inlay, NO thickness, raised base, stone slab or cast shadow. Deep cobalt #2f5bb7, restrained warm gold #e0b04a, ivory accents, hard high-detail pixel clusters and crisp1nativepixel outline, upper-left light. Master1536x1152 or larger, minimum1100x800, all four tips within4%empty transparent margin. No letters N/S/E/W or ANY text, no compass needle mounted above surface, ground, square background, floor tiles, people, UI, watermark, frame, glow or sheet. Opaque coloured inlay interior, alpha=0 outside diamond. Single compass diamond only; reference room style/composition only, no tracing/cropping.",
+      "source_attempt_name": "exec-0f6f9fc8-e844-4358-b20a-ca065ac47d4e.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": []
+    }
+  ],
+  "rejected_attempts": [],
   "files": [
     {
-      "path": ".agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay.png",
+      "path": ".agents/graphics/deliveries/ART-0022/archive_pre_B2_20261110/hero_compass_floor_inlay.png",
       "sha256": "ff329b2078be9aedb546ebab746b11ba4b6f033165f079a336bd45c76d35c76c",
       "pixel_size": [
         282,
@@ -67,35 +165,5 @@
       }
     }
   ],
-  "extra_files": [
-    {
-      "path": ".agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay@4x.png",
-      "sha256": "6de659aef74ccea69c57f931a95f2197b809596e7e264b5937d3d51e43401356",
-      "role": "4x master"
-    }
-  ],
-  "qa": {
-    "problems": [],
-    "warnings": [],
-    "expected_warnings": [],
-    "pairs": []
-  },
-  "provenance": {
-    "tool": "blender",
-    "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
-    "spec": "tools/blender/specs/ART-0022.json",
-    "toolkit_commit": "2a412e7ac7450cb4f8650b073eaa78fae102a58a",
-    "producing_agent": "claude",
-    "ai_image_generation": false
-  },
-  "reference": {
-    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
-    "sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
-    "owner_confirmed": false
-  },
-  "review": {
-    "visual_approval": null,
-    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
-  },
-  "cost": "unknown"
+  "legacy_candidate_compatibility": "files retains archived Blender candidates for historical reviews; items contains the new unapproved image_gen delivery. Do not substitute old anchors onto new art."
 }

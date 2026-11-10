@@ -1,0 +1,18 @@
+{
+	"actual_viewport": true,
+	"candidate_count": 2,
+	"canvas_size": [
+		1536,
+		1024
+	],
+	"engine": "4.7.2-stable (official)",
+	"manifest_sha256": "f46ce8f043e79cc4ec7e92d2414c205c73dbb973c0f5777289a743cdd11d8a03",
+	"owner_approved": false,
+	"render_sha256": "9095915faf76ed32d9c3e6e1cfc57b2e9cde745220b2b120670af3a8abc2b35a",
+	"review_script_sha256": "05ef7c9fe149ce994c2d4cc2d9c2328360b4ccc8b62704215dbedcd6c517d7c1",
+	"review_zoom": [
+		1,
+		2
+	],
+	"scene_calibration_verified": false
+}
