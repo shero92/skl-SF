@@ -1,6 +1,6 @@
 ---
 id: TASK-0087
-status: blocked
+status: todo
 owner: unassigned
 agent: aider
 priority: normal
@@ -36,7 +36,7 @@ Router registration: add ONE entry for your new test file to tools/test_map.json
 90 minutes.
 
 ## Blocked
-- TASK-0074 frames are candidates (001-013, 014 started), not approved; weapon anchors and final GIF unconfirmed. Do not move to todo until this is resolved.
+- Resolved 2026-11-10: owner accepted delivered TASK-0074 frames/VFX and merge; all 22 sources, measured anchors, actual Godot GIF and both-sword checks delivered in PR #120. TASK-0085 is done. Production wiring is now eligible; it is not implemented by this approval.
 
 ## Provenance
 Planned by Claude Code on 2026-11-02 (docs/AUTONOMOUS_24H_PLAN.md). Record the real execution tool and model when run.
