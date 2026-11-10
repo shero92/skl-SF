@@ -83,6 +83,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_shadow_cache.py`](test_shadow_cache.py)
 - [`test_shadow_painter.py`](test_shadow_painter.py)
 - [`test_shadow_speed.py`](test_shadow_speed.py)
+- [`test_simulate_battles.py`](test_simulate_battles.py)
 - [`test_task_evidence.py`](test_task_evidence.py)
 - [`test_turn_manager.py`](test_turn_manager.py)
 - [`test_weapon_battle.py`](test_weapon_battle.py)

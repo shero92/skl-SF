@@ -44,5 +44,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`REPOSITORY_CONSOLIDATION_REPORT.md`](REPOSITORY_CONSOLIDATION_REPORT.md)
 - [`ROOM_BLOCK_QA.md`](ROOM_BLOCK_QA.md)
 - [`RUNTIME_INTEGRATION.md`](RUNTIME_INTEGRATION.md)
+- [`WEAPON_BALANCE_REPORT_20261110.md`](WEAPON_BALANCE_REPORT_20261110.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
