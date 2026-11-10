@@ -40,6 +40,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_goal_pulse_continuous.py`](test_goal_pulse_continuous.py)
 - [`test_goal_task_factory.py`](test_goal_task_factory.py)
 - [`test_golden_cyclone_assets.py`](test_golden_cyclone_assets.py)
+- [`test_graphics_validation.py`](test_graphics_validation.py)
 - [`test_hd_migration.py`](test_hd_migration.py)
 - [`test_hero_room_capture_evidence.py`](test_hero_room_capture_evidence.py)
 - [`test_hero_room_floor.py`](test_hero_room_floor.py)

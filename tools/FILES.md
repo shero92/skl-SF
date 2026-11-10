@@ -65,6 +65,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`goal_qa.py`](goal_qa.py)
 - [`goal_task_factory.py`](goal_task_factory.py)
 - [`golden_cyclone_assets.py`](golden_cyclone_assets.py)
+- [`graphics_validation.py`](graphics_validation.py)
 - [`hero_battle_correction.py`](hero_battle_correction.py)
 - [`hero_room_capture_evidence.py`](hero_room_capture_evidence.py)
 - [`hero_room_visual_contract.py`](hero_room_visual_contract.py)

@@ -130,3 +130,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0126](../tasks/TASK-0126_regen_skip_workflow_dir.md) | review | claude | TASK-0125 | none |
 | [TASK-0127](../tasks/TASK-0127_navigation_player_movement.md) | review | claude | none | none |
 | [TASK-0128](../tasks/TASK-0128_world_depth_sorting.md) | review | claude | TASK-0127 | none |
+| [TASK-0129](../tasks/TASK-0129_graphics_validation.md) | review | claude | none | none |
