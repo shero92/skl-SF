@@ -95,4 +95,4 @@ func _test_controller_hit() -> void:
 	_check(started.ok, "attack started")
 	controller.advance(1.0)
 	_check(log.size() == 1, "hit fired once, got %d" % log.size())
-	_check(log.size() == 1 and (not log[0].hit or foe.hp < 24), "damage landed on hit frame")
+	_check(log.size() == 1 and (not log[0].hit or log[0].damage > 0 and log[0].defender_hp == r.current_hp(foe)), "damage landed on hit frame")
