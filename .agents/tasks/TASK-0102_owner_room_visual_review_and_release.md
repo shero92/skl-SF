@@ -8,7 +8,7 @@ branch: codex/task-0102-room-review
 depends_on: TASK-0101
 issue: none
 art_request: none
-touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review
+touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review,.agents/graphics/requests/ART-0033_hero_room_terrace_cliff_edge.md,.agents/graphics/deliveries/ART-0033,assets_hd/background/terrace_cliff/v001,game_factory/environment/ART-0033/v001
 test: python tools/run_tests.py --all
 done_when: Claude merges tested Aider results, publishes a new immutable version after v0013, performs a real Godot capture and side-by-side reference review, reports exact remaining visual gaps, and only marks the room visually approved with explicit owner approval.
 estimate_minutes: 120
@@ -40,3 +40,11 @@ Reference: `docs/HERO_ROOM_20261103_VISUAL_TARGET.md`. Do not overwrite existing
 ## اعتماد المالك 2026-11-10
 
 وافق المالك صراحة على التسليم والدمج. مراجعة Claude السابقة محفوظة؛ مراجعة Codex لـv0017 في PR #128 تكملها. لا يعني قبول التقرير أن الفجوات المرئية اختفت.
+
+## متابعة رسومية ART-0033 — 2026-11-10
+
+Agent: codex. Branch: codex/art-0033-terrace-cliff. معالجة فجوة الشرفة والجرف عبر ثمانية أصول مستقلة؛ صور المصدر والطلبات والبصمات ونسخ المراجعة تحفظ داخل المشروع. نطاق الملفات الإضافي: .agents/graphics/requests/ART-0033_hero_room_terrace_cliff_edge.md، .agents/graphics/deliveries/ART-0033، assets_hd/background/terrace_cliff/v001، game_factory/environment/ART-0033/v001. لا تفعيل تلقائي للرسوم الجديدة.
+
+تسليم ART-0033: 8 مصادر مستقلة و8 مشتقات مراجعة، مع فحص PNG/RGBA والشفافية وعدم قص silhouette عند alpha128، ولقطة Godot فعلية موثقة. معايرة النهايات والارتكاز داخل الغرفة واعتماد المالك للصور الجديدة ما زالا معلقين.
+
+فحوص ART-0033: 73/73 مجموعة مشروع نجحت؛ تحقق 8/8 مصادر و8/8 مشتقات وبصمات لقطة Godot. التفاصيل game_factory/environment/ART-0033/v001/qa/verification.json. التالي مراجعة الصور ثم معايرة نقاط الوصل داخل المشهد.

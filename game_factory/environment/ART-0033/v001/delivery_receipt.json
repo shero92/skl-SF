@@ -1,0 +1,140 @@
+{
+  "task": "TASK-0102",
+  "art_request": "ART-0033",
+  "destination": "H:/shining force/skl-SF",
+  "generation_cache_required": false,
+  "files": [
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/.gdignore",
+      "sha256": "e1724eb5da99ab1e5c3e7148f42e98faacddde4bb98c302d09286bd04d10239f"
+    },
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_a.png",
+      "sha256": "ca5208627b47277d4701855f4cc6a9687536827cfae6779a342a21f40d68f888"
+    },
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
+      "sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84"
+    },
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_c.png",
+      "sha256": "00afb4586c6cc8ef202139db006fed79afd08fb7523c307932fc672d1d27e0c9"
+    },
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/cliff_rubble_cluster.png",
+      "sha256": "862b79ccfbecc3a7948b56b8a23747dea05bf0589d74b5b476f41c3606cd3e78"
+    },
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
+      "sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384"
+    },
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_left.png",
+      "sha256": "dc6c131321c6a8c0f4dcfd461b8e327403c834c2eb8895421785f23c7df0983a"
+    },
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_right.png",
+      "sha256": "872b71b30ba704a44f482611e0bb04c673fb413d1b6de5c7081bae0726d8a1cd"
+    },
+    {
+      "path": "assets_hd/background/terrace_cliff/v001/terrace_edge_straight.png",
+      "sha256": "4af62152cc0a0c5448b23f936d21733e5fd0b44879ecf65b1bd573799fe2b310"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/.gdignore",
+      "sha256": "4e1d0a0d4bfbc55fb7e6cd00b0f3d90de8516a79dd788b56b2ed90485294d503"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/godot_native_review.png",
+      "sha256": "571a19c8ab0578485b1adb9e8d52727484e1e66bca00dc814565ed0a5c214f1c"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/godot_review_receipt.json",
+      "sha256": "ad2c64307495a073371d3025e42e8603c493b71367f321fcb7a9ce1fb034fdae"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/manifest.json",
+      "sha256": "9959e1f24d5ea4dd19c8969c51dde9ce48583c9ff45f7058de3534391ae2a5b1"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/native_review/cliff_face_front_a.png",
+      "sha256": "60c93b41bbcff7f5c5f5fe0ef340e2e08bcdc4378e2d29edadb885e84e76c385"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/native_review/cliff_face_front_b.png",
+      "sha256": "003fba049d14d6d133078fefaf14c598ee8b9905fc0deed2cdcd0c91cdac3c44"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/native_review/cliff_face_front_c.png",
+      "sha256": "8b5cb9b924c1ab0463275207f82ba1febe5952b7efefb155644eacd5025ca179"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/native_review/cliff_rubble_cluster.png",
+      "sha256": "a409d362d26bb609c6e5b08ace7a98b235e133ba83d4bd657373680194003225"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/native_review/foam_at_cliff_base.png",
+      "sha256": "890b9c73d32c715fd2369ba487e439d791ddfb6018e9f52909cc779583cbb24b"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/native_review/terrace_edge_corner_left.png",
+      "sha256": "a1b078e553205c9cc0a130658928e2ba35fdc461d549063110cbe1ad18657a56"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/native_review/terrace_edge_corner_right.png",
+      "sha256": "09fa0737f92dcaefb48154e9577e0233fe646f673c5ccd7e00b60fb477082c36"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/native_review/terrace_edge_straight.png",
+      "sha256": "59ed90d941a052c2573e6e0330573a2e9ea1d8041ae782cfe658b740212132d1"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/qa/verification.json",
+      "sha256": "33bca92511b1b578a00d8e2647231fbe9714c1db035246f28510bff5cf761ac9"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/qa/verification.md",
+      "sha256": "f4c08a414ff2e0a5d2c9c5a9306d98b18f9bdac9ab253c16a69a2028f094f044"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/README.md",
+      "sha256": "3f882f64d69979784b1ced06f3fc1fdf98fda31ba51d3c9abc6cc87fd2046a8e"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/requests/cliff_face_front_a.txt",
+      "sha256": "514f4a8e6096cbfd97bfbdd15df98f31df47117f07ec4ad0e62cf921119ea791"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/requests/cliff_face_front_b.txt",
+      "sha256": "5bb14f6f09f9b9e8e21b7bf5f9a7dd0d53197cda4991c778958cfc32ff081aa0"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/requests/cliff_face_front_c.txt",
+      "sha256": "06723f0adcf3fefc1405f1a30070d14a063851a7fbfcae9be6fd7f62e300a4a9"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/requests/cliff_rubble_cluster.txt",
+      "sha256": "9eb1c0153e6b1fd30857e3452ccd0cecf9b6f9dcb4e11167e65863cc0744c2ed"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/requests/foam_at_cliff_base.txt",
+      "sha256": "f7ae69431b6354f2ea1cfd877253be2f2fdd88243c94f6671355e43231612219"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/requests/terrace_edge_corner_left.txt",
+      "sha256": "fbc077a3a669c603e754e2cf4ffa369459684a5465ccb7357e7385018a833c18"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/requests/terrace_edge_corner_right.txt",
+      "sha256": "fbb5fb88ca095bca35be7d433d3d24a59fb4e8a512ab21fe523781ed0d12fa60"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/requests/terrace_edge_straight.txt",
+      "sha256": "2d39c4ab4ba60ef208bd61828128639419ae92fedfe84e29f19f2338919b1575"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/review.gd",
+      "sha256": "36329c42aaf86c106eeeafddb26d0166867d785b43565afc5749f7d89b55a275"
+    }
+  ]
+}
