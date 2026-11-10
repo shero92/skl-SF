@@ -42,3 +42,5 @@ art_request: ART-0005
 - Five real Godot captures (door, window primary, window alternative, sea attempts1/2); receipts/hashes verified. Ten independent source outputs including attempts saved to project root with metadata; no cache dependency.
 - Incomplete: sea tile generation size/alpha; window end join calibration / alternative aperture height; door decoration consistency; footprint/mount/collision annotation. No visual approval or integration.
 - Next: owner reviews delivered candidates; regenerate failed sea and refine window/door limitations before declaring full target compliance.
+
+- Review PR: https://github.com/shero92/skl-SF/pull/163 (draft; owner approval/integration pending).
