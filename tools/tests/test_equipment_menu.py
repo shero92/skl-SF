@@ -27,6 +27,15 @@ def _configured_godot_exists() -> bool:
 
 class EquipmentMenuTests(unittest.TestCase):
     @unittest.skipUnless(_configured_godot_exists(), "configured godot_executable is not installed here")
+    def test_main_scene_opens_the_menu_with_i(self):
+        code, output = run_godot("res://tools/verify_main_equipment.gd")
+        self.assertEqual(code, 0, output)
+        self.assertIn("MAIN_EQUIPMENT_OK", output)
+        self.assertNotIn("SCRIPT ERROR:", output)
+        self.assertNotIn("FAIL:", output)
+
+
+    @unittest.skipUnless(_configured_godot_exists(), "configured godot_executable is not installed here")
     def test_headless_menu(self):
         code, output = run_godot("res://tools/verify_equipment_menu.gd")
         self.assertEqual(code, 0, output)
