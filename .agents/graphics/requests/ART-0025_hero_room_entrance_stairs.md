@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0038
 dedupe_key: hero_room_entrance_stairs
 existing_asset_ids: ST001,ST002,ST003,ST006
-output_paths: .agents/graphics/deliveries/ART-0025/hero_entrance_stairs_south.png
+output_paths: .agents/graphics/deliveries/ART-0025/archive_pre_B1_20261110/hero_entrance_stairs_south.png
 ---
 # Front entrance stairs (visible south view)
 

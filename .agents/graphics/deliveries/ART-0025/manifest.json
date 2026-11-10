@@ -104,8 +104,57 @@
   "rejected_attempts": [],
   "files": [
     {
-      "path": ".agents/graphics/deliveries/ART-0025/hero_entrance_stairs_south.png",
-      "sha256": "1ad183f2a4054081d747003c1c377bd0557a1d50f83fa56953c2a88949881adc"
+      "path": ".agents/graphics/deliveries/ART-0025/archive_pre_B1_20261110/hero_entrance_stairs_south.png",
+      "sha256": "cf88c03adbc2b0e20877e9ee3db9133e07542cad8b8aaee916d811eb4c4e1cbf",
+      "pixel_size": [
+        237,
+        162
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "top_center": [
+          121.5,
+          30.0
+        ],
+        "top_left": [
+          12.06,
+          30.0
+        ],
+        "top_right": [
+          230.94,
+          30.0
+        ]
+      },
+      "builder": "entrance_stairs",
+      "params": {
+        "steps": 3,
+        "tread_width": 2.42,
+        "run": 0.34,
+        "rise": 0.2,
+        "cheek_width": 0.5,
+        "cheek_height": 0.22,
+        "foundation": 0.35,
+        "chips": 4,
+        "seed": 25
+      },
+      "master": ".agents/graphics/deliveries/ART-0025/hero_entrance_stairs_south@4x.png",
+      "master_sha256": "92d9d454f70b92064c75597c6bec6f93ea8f45a6055bad9153f011f470510539",
+      "palette": {
+        "opaque_px": 27633,
+        "mean_rgb": [
+          130,
+          96,
+          55
+        ],
+        "hue_deg": 33,
+        "lightness": 0.363,
+        "saturation": 0.405,
+        "pixel_saturation": 0.435,
+        "opaque_size": [
+          223,
+          146
+        ]
+      }
     }
   ],
   "legacy_candidate_compatibility": "files retains archived Blender candidate for immutable v4 review; items contains the new unapproved image_gen delivery. Do not substitute old anchors onto new art."
