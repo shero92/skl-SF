@@ -1,5 +1,5 @@
 {
-  "task_id": "TASK-0136",
+  "task_id": "TASK-0031",
   "batch": "B2",
   "destination": "H:\\shining force\\skl-SF",
   "cache_required": false,
@@ -94,7 +94,7 @@
     },
     {
       "path": "game_factory/environment/batch_B2_20261110/prepare_review.py",
-      "sha256": "f382888e9a02a3f8b4afbf83a06cd302b55f7514c9394f87e53527f4124b1826"
+      "sha256": "f84dcfd4474d52a336eaa2805514cb52d1c93013db7ee421fa908da7ae33211b"
     },
     {
       "path": "game_factory/environment/batch_B2_20261110/production_spec.json",
@@ -110,11 +110,11 @@
     },
     {
       "path": "game_factory/environment/batch_B2_20261110/technical_qa.json",
-      "sha256": "4678cfb82868ffcd190b112c966f7799e46ab105dbfa723be3e1ee776e0944f7"
+      "sha256": "95ae9bddc910cc43b6b5a712f8934d35519fb9bda5598cb1564381bceab09c88"
     },
     {
       "path": "game_factory/environment/batch_B2_20261110/verification.json",
-      "sha256": "f8e60756a7965539ad4c38c0b4fe751800391afafe3f18e881641cb2daa7ec7e"
+      "sha256": "a4bd9541b39e2914956f960f9f963ce591cc4366b06c0ad4be4a754caaaf6c99"
     },
     {
       "path": "game_factory/environment/ART-0020/v001/.gdignore",
@@ -126,11 +126,11 @@
     },
     {
       "path": "game_factory/environment/ART-0020/v001/godot_review_receipt.json",
-      "sha256": "0af6d9836a2b8540d18104a2c6ab2ce1fe1a0d5a26a5cd7ca6f8a9ca205b67dc"
+      "sha256": "24f13aa5b29df26ada55294891ed6ef5d103e87b1d8450f27a24af242dff0db7"
     },
     {
       "path": "game_factory/environment/ART-0020/v001/manifest.json",
-      "sha256": "f46ce8f043e79cc4ec7e92d2414c205c73dbb973c0f5777289a743cdd11d8a03"
+      "sha256": "abc98e761cca5f2dd7c178b0df1dfd085ce8f107826b0f455204096e5b53076b"
     },
     {
       "path": "game_factory/environment/ART-0020/v001/native_review/hero_study_bookshelf_north.png",
@@ -166,11 +166,11 @@
     },
     {
       "path": "game_factory/environment/ART-0008/v001/godot_review_receipt.json",
-      "sha256": "22f23e0604f03ded295cb2810d167ea583d5ddaba2fd72e005df992691393f84"
+      "sha256": "0c113998d258e7d16df6867e3130ab84622ade3a95c592314f27651cc5b7f355"
     },
     {
       "path": "game_factory/environment/ART-0008/v001/manifest.json",
-      "sha256": "0994fa8b422bcb044ac3f0bc001e40542eeae880ee4786ac6df996cd2ae110f3"
+      "sha256": "c37d41a11f1ea36a3aa8cae82ee68ef5253bc9fb3eabcd318c50573166927fe3"
     },
     {
       "path": "game_factory/environment/ART-0008/v001/native_review/hero_headboard_shelf_south.png",
@@ -198,11 +198,11 @@
     },
     {
       "path": "game_factory/environment/ART-0006/v001/godot_review_receipt.json",
-      "sha256": "f829aabe55e9f960d54c828c77f2e7712473866a1fb0d29b4d459d7c6c9a1fed"
+      "sha256": "b09f7be9967f0f16f17270c9a8fdae4dff467120646c5a7045665bb573799b2a"
     },
     {
       "path": "game_factory/environment/ART-0006/v001/manifest.json",
-      "sha256": "c2465db771fc04c5184e0508f291119500cd7eb8f3601175f8ab388deb94186e"
+      "sha256": "0827037cc87c5c9c6d249f0cbe843cf417ceff348ad1c38914c1d95e7d193b26"
     },
     {
       "path": "game_factory/environment/ART-0006/v001/native_review/hero_stone_sphere_finial.png",
@@ -230,11 +230,11 @@
     },
     {
       "path": "game_factory/environment/ART-0024/v001/godot_review_receipt.json",
-      "sha256": "19d1ef7814e0e3a0ad3690294f369ceb27b00fa48362f176eec7997c2e52fe01"
+      "sha256": "f7215e39dd3eaaafa4de03fcce00d7ab9cd1ab32a9fd8ef3ad135ac2d35e15f0"
     },
     {
       "path": "game_factory/environment/ART-0024/v001/manifest.json",
-      "sha256": "75195737e37b098cb7b6b933afc974dac10dfda635143133bc5ec3e20e99b071"
+      "sha256": "725d46066416b86f253b1e96dab444717225f3d8f66351eab1d1833942d10c05"
     },
     {
       "path": "game_factory/environment/ART-0024/v001/native_review/hero_rope_post.png",
@@ -274,11 +274,11 @@
     },
     {
       "path": "game_factory/environment/ART-0022/v001/godot_review_receipt.json",
-      "sha256": "7874cf5c42ed24f03bccfb55f4ad221f2ae12ed6b7a55496ebcf8c01ffe634d4"
+      "sha256": "c8bd458cdccea09de622c9c3fe5e2f11eaf897d82a1e8f26abfb0e757a2659e9"
     },
     {
       "path": "game_factory/environment/ART-0022/v001/manifest.json",
-      "sha256": "11c292c020a09afd4cbd6ea7ba76f70336886a7c3ed97b8ca690b6022d6b92b7"
+      "sha256": "db7dba1c7c50e4a2d9322d2dac5c381cfd09e0e8cca35a0fa31b5d01d49e37cd"
     },
     {
       "path": "game_factory/environment/ART-0022/v001/native_review/hero_compass_floor_inlay.png",
