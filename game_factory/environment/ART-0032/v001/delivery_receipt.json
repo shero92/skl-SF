@@ -5,62 +5,6 @@
   "generation_cache_required": false,
   "files": [
     {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/.gdignore",
-      "sha256": "1e8f4b3bdd292bbd87b50f8239c1d18c79c8ccbbd7ad8971e0090a195d10c2f0"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/parapet_cap_run.png",
-      "sha256": "fd0a8a676918ed0e780a4275eda906bdca6705990badb2b0c39769dd59cc679d"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_corner_outer_left_attempt_01.png",
-      "sha256": "f61f91087e6f0d030b739c2bd4e5ecbf1b82ffe1752c98bc44480553b829b254"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_corner_outer_right_attempt_01.png",
-      "sha256": "d45987036e8a15dc4e6719559442817e3266ced0a49ea1c020c72a51d20b9694"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_side_left_run_attempt_01.png",
-      "sha256": "7994a1cc82e66deb14a976755c817cf5080f11114bfb709b0122d349f64fe2f9"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_side_right_run_attempt_01.png",
-      "sha256": "e4425a164f8ded095a58a38919372377d7f43aa0c9c9d89da3eb92fc02ba2b34"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_inner_left.png",
-      "sha256": "097ba3ead8898484a9299c2c6570b604db193edba778afd5fb2c411110ddf341"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_inner_right.png",
-      "sha256": "a7f853a84f588af63c8f00c790cfaa3fd7cd551eaee17ef5201c37c344b19226"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_outer_left.png",
-      "sha256": "435d0261df0add6e64d933339506ca31010e7f7fe32dad1e8dde4e4ab1f72948"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_outer_right.png",
-      "sha256": "1329c5509b9ff490b440793af4a414ce4654fc3e167a563d4e4e11c69571c0ae"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_left_run.png",
-      "sha256": "82f03a03961895846d44d968cacacd1327e1df82ab30c9f930cb6336631daca8"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_right_run.png",
-      "sha256": "1a1491d24bea94e6865d5d621e3a3a50195c32130a9efe941a7aa3c11f091160"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png",
-      "sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4"
-    },
-    {
-      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_b.png",
-      "sha256": "b550d8c9746cab86a96c2e1d272338291b1b2cf75f1958cd032026ec3163ede5"
-    },
-    {
       "path": "game_factory/environment/ART-0032/v001/.gdignore",
       "sha256": "d48311353c478553d69b2f6c499f3a3e53c07d6a7d541bd9eb52c92b4f208b04"
     },
@@ -186,7 +130,63 @@
     },
     {
       "path": "game_factory/environment/ART-0032/v001/review.gd",
-      "sha256": "1706a715f071b4628ac6e7711fa5bd6bd6b42c9e19b80dda71bdc9b8484de3da"
+      "sha256": "37f7fdc353e1364919cf95bb197a0a06065c7e2081fa3433643ed7fe2ab5665b"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/.gdignore",
+      "sha256": "1e8f4b3bdd292bbd87b50f8239c1d18c79c8ccbbd7ad8971e0090a195d10c2f0"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/parapet_cap_run.png",
+      "sha256": "fd0a8a676918ed0e780a4275eda906bdca6705990badb2b0c39769dd59cc679d"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_corner_outer_left_attempt_01.png",
+      "sha256": "f61f91087e6f0d030b739c2bd4e5ecbf1b82ffe1752c98bc44480553b829b254"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_corner_outer_right_attempt_01.png",
+      "sha256": "d45987036e8a15dc4e6719559442817e3266ced0a49ea1c020c72a51d20b9694"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_side_left_run_attempt_01.png",
+      "sha256": "7994a1cc82e66deb14a976755c817cf5080f11114bfb709b0122d349f64fe2f9"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_side_right_run_attempt_01.png",
+      "sha256": "e4425a164f8ded095a58a38919372377d7f43aa0c9c9d89da3eb92fc02ba2b34"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_inner_left.png",
+      "sha256": "097ba3ead8898484a9299c2c6570b604db193edba778afd5fb2c411110ddf341"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_inner_right.png",
+      "sha256": "a7f853a84f588af63c8f00c790cfaa3fd7cd551eaee17ef5201c37c344b19226"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_outer_left.png",
+      "sha256": "435d0261df0add6e64d933339506ca31010e7f7fe32dad1e8dde4e4ab1f72948"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_outer_right.png",
+      "sha256": "1329c5509b9ff490b440793af4a414ce4654fc3e167a563d4e4e11c69571c0ae"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_left_run.png",
+      "sha256": "82f03a03961895846d44d968cacacd1327e1df82ab30c9f930cb6336631daca8"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_right_run.png",
+      "sha256": "1a1491d24bea94e6865d5d621e3a3a50195c32130a9efe941a7aa3c11f091160"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png",
+      "sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_b.png",
+      "sha256": "b550d8c9746cab86a96c2e1d272338291b1b2cf75f1958cd032026ec3163ede5"
     }
   ]
 }

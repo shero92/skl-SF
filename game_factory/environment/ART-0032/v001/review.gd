@@ -53,4 +53,3 @@ func _capture() -> void:
 	receipt.close()
 	print("ART0032_GODOT_REVIEW_OK")
 	quit(0)
-
