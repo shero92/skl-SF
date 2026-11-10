@@ -137,5 +137,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0130_character_runtime_cache.md`](TASK-0130_character_runtime_cache.md)
 - [`TASK-0131_painted_shadow_speed.md`](TASK-0131_painted_shadow_speed.md)
 - [`TASK-0132_runtime_docs.md`](TASK-0132_runtime_docs.md)
+- [`TASK-0133_strict_checks_after_regeneration.md`](TASK-0133_strict_checks_after_regeneration.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
