@@ -1,6 +1,6 @@
 ---
 id: TASK-0074
-status: review
+status: done
 owner: codex
 agent: codex
 branch: codex/golden-cyclone-resume
@@ -31,3 +31,5 @@ scope_approval: owner explicit scope expansion 2026-11-01/02 (Game Factory chara
 اكتملت 22 PNG جسم مستقلة و6 VFX مع مشتقات اللعبة والارتكاز والتوقيت والفهرس والطلبات، وGIFين من Godot الفعلي. فحص أدوات التصدير والمشهد 8/8؛ السيفان 44 حالة إطار. دليل الاستخدام game_factory/golden_cyclone/v001/README.md ونتائج الفحص qa/verification_summary.md. كل الأصل الجديد needs_review ولا تفعيل تلقائي. التالي مراجعة المالك للحركة والهوية واليد ثم تحديد تصحيحات الإصدار.
 
 فحص التغييرات الشامل: 53/54 أولًا؛ أصلح newline صريح في أداة المهمة، ثم نجح lf_writers وgolden_cyclone_assets مجددًا 2/2. جميع المجموعات الـ54 اجتازت عبر التشغيلين. الفرع مخصص لتسليم مرشح للمراجعة؛ لا merge أو push إلى main. الصور وبياناتها منسوخة كذلك إلى جذر المشروع دون تفعيل. التكلفة والاستهلاك غير المقاسين unknown في إيصال المهمة.
+
+اعتماد المالك 2026-11-10؛ دُمج PR #120 عند 118e43db8dc4c9b2722dcfbf74d083af7daee511. اكتمل تسليم الرسوم؛ TASK-0087 مسؤول عن تكامل الإنتاج.

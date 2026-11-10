@@ -1,14 +1,14 @@
 ---
 id: TASK-0102
 status: review
-owner: claude
-agent: claude
+owner: codex
+agent: codex
 priority: high
-branch: claude/task-hygiene
+branch: codex/task-0102-room-review
 depends_on: TASK-0101
 issue: none
 art_request: none
-touches: map_factory/maps/hero_room_01/latest.json,map_factory/maps/hero_room_01/versions/v0014.json,map_factory/maps/hero_room_01/patches/v0014.json,map_factory/maps/index.json,docs/previews/map_factory_renders/hero_room_01_v0014.png,docs/previews/map_factory_renders/hero_room_01_v0014.json,docs/HERO_ROOM_20261103_VISUAL_TARGET.md
+touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review
 test: python tools/run_tests.py --all
 done_when: Claude merges tested Aider results, publishes a new immutable version after v0013, performs a real Godot capture and side-by-side reference review, reports exact remaining visual gaps, and only marks the room visually approved with explicit owner approval.
 estimate_minutes: 120
@@ -31,5 +31,12 @@ Reference: `docs/HERO_ROOM_20261103_VISUAL_TARGET.md`. Do not overwrite existing
 - User can clone `main` and reproduce the room in Godot with all registered assets present.
 - Target composition is reviewed visually; passing test hashes or automatic checks is not called visual approval.
 
-## Closure (Claude, 2026-11-09)
-Real Godot captures exist for v0014 to v0017 with passing evidence gates (docs/previews/map_factory_renders/t0104_v0014, t0114_v0015, t0115_v0016, t0116_v0017, t0117_v0017). The gap table in docs/HERO_ROOM_20261103_VISUAL_TARGET.md was written for v0014; v0017 improves the walls, shadows and light but the connected walls, terrace edge, sea stacks and planters still need ART-0032..0035. visual_approval stays false until the owner reviews a render. Not marked done: only the owner can approve.
+## استئناف Codex 2026-11-10
+
+المراجعة على v0017 الموجود؛ لا إعادة نشر v0014 أو تعديل التاريخ. التقاط Godot فعلي 1536×1024 عبر أدوات TASK-0101 نجح وتحقق evidence.json. visual_approval: false. عائق allowlist القديم المذكور في تقرير v0014 لم يتكرر.
+
+التحقق: python -u tools/run_tests.py --all --timeout 120 نجح 66/66. لا تعديل للخرائط أو مصادر الصور. التسليم تقرير مراجعة v0017 والتقاطه وإثباته؛ اعتماد الغرفة ونشر إعادة تكوين جديدة ينتظران معالجة الفجوات والرسوم.
+
+## اعتماد المالك 2026-11-10
+
+وافق المالك صراحة على التسليم والدمج. مراجعة Claude السابقة محفوظة؛ مراجعة Codex لـv0017 في PR #128 تكملها. لا يعني قبول التقرير أن الفجوات المرئية اختفت.

@@ -8,7 +8,7 @@
   "generated_frame_count": 22,
   "expected_frame_count": 22,
   "quality_status": "needs_review",
-  "owner_approved": false,
+  "owner_approved": true,
   "active_manifest_updated": false,
   "planned_timeline": {
     "duration_ms": 1500,
@@ -64,7 +64,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_002",
@@ -111,7 +112,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_003",
@@ -158,7 +160,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_004",
@@ -205,7 +208,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_005",
@@ -259,7 +263,8 @@
           "reason": "blue marking incorrectly on anatomical right arm"
         }
       ],
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_006",
@@ -306,7 +311,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_007",
@@ -353,7 +359,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_008",
@@ -400,7 +407,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_009",
@@ -447,7 +455,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_010",
@@ -494,7 +503,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_011",
@@ -541,7 +551,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_012",
@@ -588,7 +599,8 @@
       },
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_013",
@@ -636,7 +648,8 @@
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
       "reference_inputs_count": 4,
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_014",
@@ -684,7 +697,8 @@
       "source_generation_mode": "individual_request",
       "source_generation_tool": "builtin_image_gen",
       "reference_inputs_count": 4,
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_015",
@@ -737,7 +751,8 @@
           "reason": "gripping and balancing arm roles swapped"
         }
       ],
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_016",
@@ -783,7 +798,8 @@
         "no_visible_weapon": true,
         "pose_change": "تقدم القبضة اليمنى فوق الرأس وبدء القوس؛ الذراع اليسرى المعلّمة مفتوحة"
       },
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_017",
@@ -829,7 +845,8 @@
         "no_visible_weapon": true,
         "pose_change": "امتداد القبضة اليمنى نحو لحظة الاصطدام؛ اليسرى مفتوحة أدنى منها"
       },
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_018",
@@ -875,7 +892,8 @@
         "no_visible_weapon": true,
         "pose_change": "متابعة القوس إلى أسفل مع حجب القبضة جزئيًا خلف ذراع الموازنة"
       },
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_019",
@@ -921,7 +939,8 @@
         "no_visible_weapon": true,
         "pose_change": "تهدئة الالتواء وسحب القبضة إلى الخصر"
       },
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_020",
@@ -967,7 +986,8 @@
         "no_visible_weapon": true,
         "pose_change": "رفع القدم الأمامية وسحبها في خطوة تعافٍ فعلية"
       },
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_021",
@@ -1013,7 +1033,8 @@
         "no_visible_weapon": true,
         "pose_change": "خطوة تعافٍ ثانية مع رفع القدم اليمنى وتثبيت اليسرى"
       },
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     },
     {
       "frame_id": "hero_golden_cyclone_022",
@@ -1060,7 +1081,8 @@
         "reviewer": "codex",
         "owner_approved": false
       },
-      "generation_cache_required": false
+      "generation_cache_required": false,
+      "owner_approved": true
     }
   ],
   "exports": {
@@ -1100,5 +1122,10 @@
       "quality_status": "needs_regeneration",
       "reason": "multi_pose_generation_forbidden"
     }
-  ]
+  ],
+  "owner_approval": {
+    "date": "2026-11-10",
+    "evidence": "Owner chat: i accept them all, so merg if needed",
+    "scope": "delivered candidate body frames and VFX; production wiring remains TASK-0087"
+  }
 }
