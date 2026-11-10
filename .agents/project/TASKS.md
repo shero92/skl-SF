@@ -136,3 +136,10 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0132](../tasks/TASK-0132_runtime_docs.md) | review | claude | TASK-0131 | none |
 | [TASK-0133](../tasks/TASK-0133_strict_checks_after_regeneration.md) | review | claude | TASK-0126 | none |
 | [TASK-0134](../tasks/TASK-0134_hero_room_target_art_spec.md) | review | claude | none | none |
+| [TASK-0135](../tasks/TASK-0135_hero_room_v0022_props.md) | review | claude | TASK-0128 | none |
+| [TASK-0136](../tasks/TASK-0136_equipment_menu.md) | review | claude | TASK-0118 | none |
+| [TASK-0137](../tasks/TASK-0137_shadow_cache.md) | review | claude | TASK-0131 | none |
+| [TASK-0138](../tasks/TASK-0138_battle_director.md) | review | claude | TASK-0121 | none |
+| [TASK-0139](../tasks/TASK-0139_weapon_balance_simulation.md) | review | claude | TASK-0121 | none |
+| [TASK-0140](../tasks/TASK-0140_balance_pass_one.md) | review | claude | TASK-0139 | none |
+| [TASK-0141](../tasks/TASK-0141_staff_magic.md) | review | claude | TASK-0140 | none |

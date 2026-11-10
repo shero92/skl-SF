@@ -1,6 +1,6 @@
 ---
 id: ART-0019
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0030
 dedupe_key: hero_room_study_table_views
@@ -68,3 +68,10 @@ issue: 20
 ## Calibrated measurements (TASK-0038, 2026-10-27)
 - Source: docs/HERO_ROOM_CALIBRATION.md (reference SHA-256 verified; native = source px x 0.971; ground depth per D1).
 - Defer candidate: accepted HD P026 (with stool) fits the south view at s0.35, contact (1155,588).
+
+## B1 owner target delivery (TASK-0030)
+- Owner explicitly assigned production against `map_factory/references/hero_room_01_target_20261110.webp`, SHA-256 `4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323`; supersedes older blocked reference/native proposals for this candidate.
+- Independent sources and exact delivery filenames: `.agents/graphics/deliveries/ART-0019/manifest.json`.
+- Actual native review and Godot capture: `game_factory/environment/ART-0019/v001/`.
+- Status delivered means candidate files supplied, not visual approval or complete spec compliance. Actual output size shortfalls and margins are recorded in the manifest. No source upscaling. Footprint/collider and scene calibration remain integration work.
+- Owner review pending; Claude integrates after review. No map/catalog or earlier asset was changed.

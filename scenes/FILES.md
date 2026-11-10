@@ -12,6 +12,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`dialogue_ui.gd`](dialogue_ui.gd)
 - [`dialogue_ui.gd.uid`](dialogue_ui.gd.uid)
+- [`equipment_menu.gd`](equipment_menu.gd)
+- [`equipment_menu.gd.uid`](equipment_menu.gd.uid)
 - [`game_factory_actor.gd`](game_factory_actor.gd)
 - [`game_factory_actor.gd.uid`](game_factory_actor.gd.uid)
 - [`game_factory_animation_viewer.tscn`](game_factory_animation_viewer.tscn)
@@ -28,6 +30,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`map_factory_preview.gd.uid`](map_factory_preview.gd.uid)
 - [`map_factory_preview.tscn`](map_factory_preview.tscn)
 - [`map_factory_viewer.gd`](map_factory_viewer.gd)
+- [`map_factory_viewer.gd.uid`](map_factory_viewer.gd.uid)
 - [`map_factory_viewer.tscn`](map_factory_viewer.tscn)
 - [`modular_battle_character.gd`](modular_battle_character.gd)
 - [`modular_battle_character.gd.uid`](modular_battle_character.gd.uid)

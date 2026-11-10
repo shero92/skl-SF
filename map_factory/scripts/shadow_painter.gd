@@ -18,6 +18,85 @@ const MAX_SOURCE_SIDE := 256
 # Pieces that are flat on the ground, hang on a wall or are light effects cast no floor shadow.
 const SKIP_TOKENS := ["rug", "emblem", "overlay", "glow", "flame", "banner", "lantern", "ivy_hanging", "light", "shadow", "foam", "water", "cloud"]
 const LIGHT_TOKENS := ["lantern", "candle"]
+## Painted shadows are a pure function of (source pixels, light, algorithm), so they are cached: in memory for
+## rebuilds inside one run and on disk (user://, never in the repo) across runs. Bump CACHE_VERSION when paint() changes.
+const CACHE_VERSION := 1
+static var cache_dir := "user://shadow_cache/"
+static var cache_enabled := true
+static var cache_hits: int = 0
+static var cache_misses: int = 0
+static var _memory_cache: Dictionary = {}
+
+
+static func clear_cache(disk: bool = true) -> void:
+	_memory_cache.clear()
+	cache_hits = 0
+	cache_misses = 0
+	if disk and DirAccess.dir_exists_absolute(cache_dir):
+		for file_name in DirAccess.get_files_at(cache_dir):
+			DirAccess.remove_absolute(cache_dir.path_join(file_name))
+
+
+static func cache_key(source: Image, light_config: Dictionary) -> String:
+	var hashing := HashingContext.new()
+	hashing.start(HashingContext.HASH_SHA256)
+	hashing.update(source.get_data())
+	var light_text := JSON.stringify(merged_light(light_config), "", true)
+	hashing.update(("v%d|%d|%d|%s" % [CACHE_VERSION, source.get_width(), source.get_height(), light_text]).to_utf8_buffer())
+	return hashing.finish().hex_encode()
+
+
+## paint() with the in-memory and disk cache. Same result as paint(); a corrupt or missing entry is repainted.
+static func paint_cached(source: Image, light_config: Dictionary = {}) -> Dictionary:
+	if not cache_enabled:
+		return paint(source, light_config)
+	var key := cache_key(source, light_config)
+	if _memory_cache.has(key):
+		cache_hits += 1
+		return _memory_cache[key]
+	var loaded := _load_cached(key)
+	if loaded.has("hit"):
+		cache_hits += 1
+		_memory_cache[key] = loaded["value"]
+		return loaded["value"]
+	cache_misses += 1
+	var painted := paint(source, light_config)
+	_memory_cache[key] = painted
+	_store_cached(key, painted)
+	return painted
+
+
+static func _load_cached(key: String) -> Dictionary:
+	var meta_path := cache_dir.path_join(key + ".json")
+	if not FileAccess.file_exists(meta_path):
+		return {}
+	var meta: Variant = JSON.parse_string(FileAccess.get_file_as_string(meta_path))
+	if typeof(meta) != TYPE_DICTIONARY or int(meta.get("version", -1)) != CACHE_VERSION:
+		return {}
+	if bool(meta.get("empty", false)):
+		return {"hit": true, "value": {}}
+	var image := Image.load_from_file(ProjectSettings.globalize_path(cache_dir.path_join(key + ".png")))
+	if image == null or image.is_empty():
+		return {}
+	image.convert(Image.FORMAT_RGBA8)
+	var offset: Array = meta.get("offset", [0, 0])
+	return {"hit": true, "value": {"image": image, "offset": Vector2(float(offset[0]), float(offset[1])),
+		"source_scale": float(meta.get("source_scale", 1.0)), "foot_gap": float(meta.get("foot_gap", 0.0))}}
+
+
+static func _store_cached(key: String, painted: Dictionary) -> void:
+	DirAccess.make_dir_recursive_absolute(cache_dir)
+	var meta := {"version": CACHE_VERSION, "empty": painted.is_empty()}
+	if not painted.is_empty():
+		var offset: Vector2 = painted["offset"]
+		meta["offset"] = [offset.x, offset.y]
+		meta["source_scale"] = painted["source_scale"]
+		meta["foot_gap"] = painted["foot_gap"]
+		if (painted["image"] as Image).save_png(cache_dir.path_join(key + ".png")) != OK:
+			return
+	var file := FileAccess.open(cache_dir.path_join(key + ".json"), FileAccess.WRITE) # written last: marks a complete entry
+	if file != null:
+		file.store_string(JSON.stringify(meta))
 
 
 static func default_light() -> Dictionary:
@@ -258,7 +337,7 @@ static func build_layer(room: Node2D, light_config: Dictionary = {}) -> Node2D:
 				if sprite.flip_h:
 					source = source.duplicate()
 					source.flip_x()
-				var painted := paint(source, light)
+				var painted := paint_cached(source, light)
 				if not painted.is_empty():
 					painted["texture"] = ImageTexture.create_from_image(painted["image"])
 				cache[key] = painted

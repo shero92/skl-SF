@@ -1,0 +1,98 @@
+{
+ "manifest_version": 1,
+ "map_id": "hero_room_01",
+ "base_version": 21,
+ "base_sha256": "f94a6e92898e9b2a30a12cd3057a2216c8421e502efc3c5eba435a4de049556a",
+ "note": "hero_room_01 v0022: occlusion_mode world_y_sort. Walls, decor and characters share one Y-sort so the hero is drawn in front of or behind furniture and walls by ground contact. No block, asset or position changed.",
+ "source_image": {
+  "path": "map_factory/references/hero_room_01_original.png",
+  "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+  "status": "reference_imported"
+ },
+ "changes": [
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "O001",
+    "instance_id": "ArchUrnLeft",
+    "x": 572,
+    "y": 350,
+    "scale": 0.42,
+    "render_layer": "decorations"
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "O001",
+    "instance_id": "ArchUrnRight",
+    "x": 1057,
+    "y": 410,
+    "scale": 0.42,
+    "render_layer": "decorations"
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "R13",
+    "instance_id": "BedsideConch",
+    "x": 262,
+    "y": 462,
+    "scale": 0.42,
+    "render_layer": "decorations"
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "R13",
+    "instance_id": "FrontConch",
+    "x": 1113,
+    "y": 746,
+    "scale": 0.42,
+    "render_layer": "decorations"
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "O003",
+    "instance_id": "FrontBlueVase",
+    "x": 1177,
+    "y": 746,
+    "scale": 0.36,
+    "render_layer": "decorations"
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "R12",
+    "instance_id": "BookshelfArmillary",
+    "x": 1052,
+    "y": 262,
+    "scale": 0.55,
+    "render_layer": "decorations"
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "P012",
+    "instance_id": "StudyStool",
+    "x": 1157,
+    "y": 655,
+    "scale": 0.33,
+    "render_layer": "decorations"
+   }
+  }
+ ]
+}

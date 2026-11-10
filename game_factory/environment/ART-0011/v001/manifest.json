@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0011",
+  "task_id": "TASK-0030",
+  "batch": "B1",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 1,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_review",
+  "items": [
+    {
+      "id": "hero_blue_white_planter",
+      "request_id": "ART-0011",
+      "master_path": "assets_hd/plants/blue_white_planter/v001/hero_blue_white_planter.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0011/hero_blue_white_planter.png",
+      "sha256": "7a4194588eaada83f4e210d6d76701cf2c6c6ab65bc6ea200b1955923f9f2a6d",
+      "pixel_size": [
+        948,
+        1659
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        30,
+        191,
+        916,
+        1414
+      ],
+      "origin": [
+        473.0,
+        1413
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "intended_native_canvas": [
+        130,
+        150
+      ],
+      "requested_master_minimum": [
+        1100,
+        1300
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 6.815384615384615,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0011/v001/native_review/hero_blue_white_planter.png",
+      "native_review_sha256": "29ac5f9e55c07cae92387d639b49513dd753b1fc32b654360cb5110eb0fe55dc",
+      "native_source_region_all_nonzero_alpha": [
+        0,
+        21,
+        919,
+        1659
+      ],
+      "native_resize_size": [
+        84,
+        150
+      ],
+      "native_offset": [
+        23,
+        0,
+        107,
+        150
+      ],
+      "native_uniform_scale": 0.09157509157509157,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "not applicable",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/props/vase_blue/vase_blue_01.png",
+        "assets_hd/plants/flowers_white/flowers_white_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0011/v001/requests/hero_blue_white_planter.txt",
+      "prompt_text": "ART-0011 correction02. Preserve this ONE coherent potted plumeria in the cobalt-and-ivory gold-rim ceramic urn, same design, material, palette and direction. Fix FRAMING: draw ALL leaf tips completely inside the canvas, especially the leftmost leaves presently cut by the left edge. Leave real transparent empty margin at least4% on all four sides including the plant crown and vase foot. Keep original plant proportions and high detail; expand canvas if necessary, output at least1100x1300 preferably1536x1792. True transparent RGBA PNG, all empty pixels alpha=0, no haze or background. Use crisp hard pixel clusters matching the SKL-SF masters, no smoothed painting. No ground, shadow, stand, text or additional objects. This is one plant, not a sheet.",
+      "source_attempt_name": "exec-d0c731c9-10f1-4b9d-91e2-4f335fd6a760.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Actual built-in output is below the literal per-asset master minimum; original preserved without upscaling. Regeneration/owner decision required."
+      ]
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "path": "assets_hd/plants/blue_white_planter/v001/rejected/hero_blue_white_planter_attempt_01.png",
+      "sha256": "3393626b700fcd4ce518f500e240c38988fc7bfa6a064e13270de6a0eeb3ac7f",
+      "pixel_size": [
+        1164,
+        1351
+      ],
+      "reason": "Leaf tips too near left boundary; reframed by separate edit request",
+      "quality_status": "needs_regeneration"
+    }
+  ]
+}
