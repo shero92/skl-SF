@@ -1,0 +1,15 @@
+{
+  "agent": "codex",
+  "cost_usd": null,
+  "coverage": "partial",
+  "ended_at": "2026-11-10T21:08:11.746325+00:00",
+  "models": [],
+  "schema": 1,
+  "session_count": 0,
+  "source": [
+    "unknown"
+  ],
+  "started_at": "2026-11-10T21:07:38.457543+00:00",
+  "task_id": "TASK-0030",
+  "tokens": null
+}

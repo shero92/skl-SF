@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0025",
+  "task_id": "TASK-0030",
+  "batch": "B1",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 1,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_review",
+  "items": [
+    {
+      "id": "hero_entrance_stairs_south",
+      "request_id": "ART-0025",
+      "master_path": "assets_hd/architecture/entrance_stairs/v001/hero_entrance_stairs_south.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0025/hero_entrance_stairs_south.png",
+      "sha256": "1ad183f2a4054081d747003c1c377bd0557a1d50f83fa56953c2a88949881adc",
+      "pixel_size": [
+        1320,
+        1192
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        23,
+        84,
+        1296,
+        1166
+      ],
+      "origin": [
+        659.5,
+        1165
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "intended_native_canvas": [
+        274,
+        246
+      ],
+      "requested_master_minimum": [
+        2200,
+        1960
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 4.3983739837398375,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0025/v001/native_review/hero_entrance_stairs_south.png",
+      "native_review_sha256": "763028cf537c4284d796599f88c3ef7969439b5b85099fb026ab963d446f24d5",
+      "native_source_region_all_nonzero_alpha": [
+        0,
+        17,
+        1317,
+        1192
+      ],
+      "native_resize_size": [
+        274,
+        244
+      ],
+      "native_offset": [
+        0,
+        2,
+        274,
+        246
+      ],
+      "native_uniform_scale": 0.20804859529233105,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "stairs top sockets require scene annotation",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/architecture/stone_block",
+        "assets_hd/architecture/connected_ruin_walls/v001"
+      ],
+      "prompt_path": "game_factory/environment/ART-0025/v001/requests/hero_entrance_stairs_south.txt",
+      "prompt_text": "ART-0025 hero_entrance_stairs_south â€” one independent complete limestone stairway sprite for SKL-SF, transparent RGBA PNG. High-resolution canvas at least2200x1960, preferably2560x2304, the source must genuinely be this large, no tiny sprite. Six straight warm limestone steps descending toward viewer/south, top landing at upper centre, wide shallow treads and visible risers. Tactical RPG front three-quarter top-down view approximately30deg, same projection as viewed Hero Room target, staircase centreline vertical and tread front edges horizontal. Thick LOW stone side cheek walls with flat worn caps flanking stairs, some broken cap corners and restrained ivy on outer faces, two small flat mounting sockets at TOP for separate sphere posts (do NOT draw spheres/posts). Warm honey ivory limestone #e8c48a, aged block joints, restrained cracks, upper-left light, high-detail hard pixel clusters with dark1-2native pixel silhouette outline at274x246 native display. All outer stone and ivy uncut,3% transparent margin. Match assets_hd/architecture/stone_block and connected_ruin_walls family. No architecture beyond stair assembly: NO water, cliff, ground slab, floor tiles outside stairs, distant room, ground shadow, cast shadow, characters, lanterns, text, frame, watermark or sheet. True alpha=0 empty pixels, no white backdrop or haze. One unified straight stair with its two low cheeks only.",
+      "source_attempt_name": "exec-a7af1923-b9cd-41c1-9434-304ce5424be2.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Actual built-in output is below the literal per-asset master minimum; original preserved without upscaling. Regeneration/owner decision required.",
+        "Visible pixels are inside canvas but some margins are less than the approximately 3 percent target."
+      ]
+    }
+  ],
+  "rejected_attempts": [],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0025/archive_pre_B1_20261110/hero_entrance_stairs_south.png",
+      "sha256": "cf88c03adbc2b0e20877e9ee3db9133e07542cad8b8aaee916d811eb4c4e1cbf",
+      "pixel_size": [
+        237,
+        162
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "top_center": [
+          121.5,
+          30.0
+        ],
+        "top_left": [
+          12.06,
+          30.0
+        ],
+        "top_right": [
+          230.94,
+          30.0
+        ]
+      },
+      "builder": "entrance_stairs",
+      "params": {
+        "steps": 3,
+        "tread_width": 2.42,
+        "run": 0.34,
+        "rise": 0.2,
+        "cheek_width": 0.5,
+        "cheek_height": 0.22,
+        "foundation": 0.35,
+        "chips": 4,
+        "seed": 25
+      },
+      "master": ".agents/graphics/deliveries/ART-0025/hero_entrance_stairs_south@4x.png",
+      "master_sha256": "92d9d454f70b92064c75597c6bec6f93ea8f45a6055bad9153f011f470510539",
+      "palette": {
+        "opaque_px": 27633,
+        "mean_rgb": [
+          130,
+          96,
+          55
+        ],
+        "hue_deg": 33,
+        "lightness": 0.363,
+        "saturation": 0.405,
+        "pixel_saturation": 0.435,
+        "opaque_size": [
+          223,
+          146
+        ]
+      }
+    }
+  ],
+  "legacy_candidate_compatibility": "files retains archived Blender candidate for immutable v4 review; items contains the new unapproved image_gen delivery. Do not substitute old anchors onto new art."
+}
