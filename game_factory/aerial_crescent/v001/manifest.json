@@ -1,0 +1,35 @@
+{
+  "attack_id": "hero_aerial_crescent",
+  "state": "needs_review",
+  "planned_frames": 32,
+  "active": false,
+  "source_canvas_size": [
+    1254,
+    1254
+  ],
+  "runtime_canvas_size": [
+    256,
+    256
+  ],
+  "runtime_ground_anchor": [
+    128,
+    240
+  ],
+  "frames": [
+    {
+      "frame_id": "hero_aerial_crescent_001",
+      "phase": "idle_preparation",
+      "source_image_path": "game_factory/aerial_crescent/v001/candidates/hero_aerial_crescent_001_source_needs_review.png",
+      "status": "needs_review",
+      "source_issues": [
+        "alpha_edge_requires_cleanup",
+        "pending_visual_review",
+        "hand_anchor_not_measured"
+      ],
+      "weapon_hand_anchor": null,
+      "character_ground_anchor": null,
+      "frame_duration_ms": 100
+    }
+  ],
+  "notes": "Do not treat render as an approved ready-to-import asset."
+}
