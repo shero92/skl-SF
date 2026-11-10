@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0038
 dedupe_key: hero_room_rope_post_fence
 existing_asset_ids: D017
-output_paths: .agents/graphics/deliveries/ART-0024/hero_rope_post.png,.agents/graphics/deliveries/ART-0024/hero_rope_swag_west_rail.png,.agents/graphics/deliveries/ART-0024/hero_rope_swag_east_rail.png
+output_paths: .agents/graphics/deliveries/ART-0024/archive_pre_B2_20261110/hero_rope_post.png,.agents/graphics/deliveries/ART-0024/archive_pre_B2_20261110/hero_rope_swag_west_rail.png,.agents/graphics/deliveries/ART-0024/archive_pre_B2_20261110/hero_rope_swag_east_rail.png
 ---
 # Wooden rope-and-post terrace fence
 

@@ -102,8 +102,67 @@
   "rejected_attempts": [],
   "files": [
     {
-      "path": ".agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay.png",
-      "sha256": "4af0f23f62758cf2ba5baee1e8bf69af628689b827a1aef40d2465e37f69b955"
+      "path": ".agents/graphics/deliveries/ART-0022/archive_pre_B2_20261110/hero_compass_floor_inlay.png",
+      "sha256": "ff329b2078be9aedb546ebab746b11ba4b6f033165f079a336bd45c76d35c76c",
+      "pixel_size": [
+        282,
+        274
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "center": [
+          144.0,
+          140.25
+        ],
+        "north": [
+          144.0,
+          10.78
+        ],
+        "south": [
+          144.0,
+          269.72
+        ],
+        "west": [
+          10.5,
+          140.25
+        ],
+        "east": [
+          277.5,
+          140.25
+        ]
+      },
+      "builder": "compass_inlay",
+      "params": {
+        "half_x": 2.086,
+        "half_y": 2.023,
+        "ring": 0.62,
+        "long_point": 0.84,
+        "short_point": 0.5,
+        "seed": 22,
+        "field": [
+          0.07,
+          0.24,
+          0.62
+        ]
+      },
+      "master": ".agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay@4x.png",
+      "master_sha256": "6de659aef74ccea69c57f931a95f2197b809596e7e264b5937d3d51e43401356",
+      "palette": {
+        "opaque_px": 34486,
+        "mean_rgb": [
+          117,
+          112,
+          106
+        ],
+        "hue_deg": 33,
+        "lightness": 0.437,
+        "saturation": 0.049,
+        "pixel_saturation": 0.492,
+        "opaque_size": [
+          268,
+          260
+        ]
+      }
     }
   ],
   "legacy_candidate_compatibility": "files retains archived Blender candidates for historical reviews; items contains the new unapproved image_gen delivery. Do not substitute old anchors onto new art."

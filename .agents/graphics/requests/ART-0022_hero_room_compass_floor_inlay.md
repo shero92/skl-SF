@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0038
 dedupe_key: hero_room_compass_floor_inlay
 existing_asset_ids: F014,O020
-output_paths: .agents/graphics/deliveries/ART-0022/hero_compass_floor_inlay.png
+output_paths: .agents/graphics/deliveries/ART-0022/archive_pre_B2_20261110/hero_compass_floor_inlay.png
 ---
 # Oblique compass-rose floor inlay
 
