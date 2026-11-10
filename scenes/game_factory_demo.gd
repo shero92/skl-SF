@@ -93,15 +93,7 @@ func _spawn_actor() -> void:
 			world.add_child(companion)
 
 func _configure_floor(unit: CharacterBody2D) -> void:
-	var navigation: Dictionary = room_data.get("navigation",{})
-	var origin: Array = navigation.get("origin",[0,0])
-	unit.grid_origin = room.global_position+Vector2(float(origin[0]),float(origin[1]))
-	unit.tile_size = float(navigation.get("cell_size",64))
-	for region: Dictionary in navigation.get("regions",[]):
-		var rect: Array = region.get("rect",[0,0,0,0])
-		for y in range(int(rect[1]),int(rect[1])+int(rect[3])):
-			for x in range(int(rect[0]),int(rect[0])+int(rect[2])):
-				unit.walkable_cells[Vector2i(x,y)] = "walk" in region.get("allow",[])
+	unit.navigation = NavigationGrid.from_navigation(room_data.get("navigation",{}),room.global_position)
 
 func _has_complete_map(record: Dictionary) -> bool:
 	var animations: Dictionary = record.get("animations",{})

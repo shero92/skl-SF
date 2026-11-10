@@ -4,6 +4,7 @@ class_name HeroPlayer
 @export var move_speed: float = 210.0
 @export var sprite_scale: float = 0.56
 var movement_enabled: bool = true
+var navigation: NavigationGrid # optional Map Factory walk validator; null keeps movement unrestricted
 var facing: Vector2 = Vector2.DOWN
 var art: Sprite2D
 var _anim_id: String = ""
@@ -50,6 +51,9 @@ func _physics_process(delta: float) -> void:
         if Input.is_key_pressed(KEY_S) or Input.is_action_pressed("ui_down"):
             movement.y += 1
     velocity = movement.normalized() * move_speed
+    if navigation != null and delta > 0.0 and velocity != Vector2.ZERO:
+        # Only apply the part of the step whose footprint stays on open cells (slides along edges).
+        velocity = navigation.allowed_motion(global_position, velocity * delta) / delta
     move_and_slide()
     if movement.length_squared() > 0:
         facing = movement.normalized()
