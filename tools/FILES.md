@@ -140,6 +140,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`verify_battle_vfx.gd.uid`](verify_battle_vfx.gd.uid)
 - [`verify_capture_checks.gd`](verify_capture_checks.gd)
 - [`verify_capture_checks.gd.uid`](verify_capture_checks.gd.uid)
+- [`verify_character_runtime.gd`](verify_character_runtime.gd)
 - [`verify_depth_sorting.gd`](verify_depth_sorting.gd)
 - [`verify_enemy_ai.gd`](verify_enemy_ai.gd)
 - [`verify_golden_cyclone_preview.gd`](verify_golden_cyclone_preview.gd)

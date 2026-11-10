@@ -31,6 +31,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_camera_light_shafts.py`](test_camera_light_shafts.py)
 - [`test_candidate_room.py`](test_candidate_room.py)
 - [`test_capture_checks.py`](test_capture_checks.py)
+- [`test_character_runtime.py`](test_character_runtime.py)
 - [`test_depth_sorting.py`](test_depth_sorting.py)
 - [`test_directional_furniture.py`](test_directional_furniture.py)
 - [`test_enclosing_walls.py`](test_enclosing_walls.py)
