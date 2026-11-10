@@ -1,6 +1,6 @@
 ---
 id: ART-0034
-status: delivered
+status: reviewed
 owner: codex
 task: TASK-0102
 dedupe_key: hero_room_sea_stacks_and_arches
@@ -37,3 +37,5 @@ output_paths: .agents/graphics/deliveries/ART-0034/sea_stack_tall_a.png,.agents/
 طلب المالك متابعة الرسوم المطلوبة بعد دمج الحزم المعتمدة. Agent: codex؛ الفرع codex/art-0034-0035-coast-plants. كل عنصر PNG مستقل عبر builtin_image_gen. لا تفعيل تلقائي للأصول الجديدة، ولا إعادة توليد لأساس الماء القائم.
 
 تسليم الصور المستقلة ونسخ المراجعة والطلبات والبصمات ولقطة Godot فعلية اكتمل. الحالة needs_review، وتركيب الخريطة لم ينفذ.
+
+اعتماد المالك الصريح 2026-11-10 مسجل؛ PR #136 دُمج عند c161727cae2ade773517680822c4b405f593b217. معايرة الخريطة لم تنفذ بعد.

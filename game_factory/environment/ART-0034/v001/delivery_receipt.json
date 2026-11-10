@@ -2,64 +2,24 @@
   "task": "TASK-0102",
   "art_request": "ART-0034",
   "destination": "H:/shining force/skl-SF",
+  "owner_approved": true,
   "generation_cache_required": false,
-  "owner_approved": false,
   "files": [
-    {
-      "path": "assets_hd/background/sea_coast/v001/.gdignore",
-      "sha256": "a6da9ef1b54395385e77668edc6c8ca5b50f83bd720f6c1e3704fb367937c8c7"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/foam_patch_a.png",
-      "sha256": "fd7bde47fc2cdb692243fef021008cf58a00eae1a8bc90c5cf244f1d3dcc05f2"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/foam_patch_b.png",
-      "sha256": "d3238aeebf41cb0f303718e10de3979abf6845614bdf0f0378f0cb72435d5fb1"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/horizon_haze_strip.png",
-      "sha256": "e97ffd57edf39c2c89d0531da82b13ec283807baa351595c9b4f5ca1cf44be3c"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/rejected/sea_stack_tall_b_attempt_01.png",
-      "sha256": "9fae25ee9b2590b1c5068242a0da414c23c35ddfe2cc1c5bc7322f896142782e"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/rock_arch_far_left.png",
-      "sha256": "8a0812ebc3f53efc137940ff7b08d5e980b3fbdc51687d11748385ee5c8973d9"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/rock_arch_far_right.png",
-      "sha256": "8ff4b19b5809acf3027cea1c56ba54322ce989271c77181843032e9704a87255"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/sea_stack_tall_a.png",
-      "sha256": "506de1a1ec5988535ce01d24c3360412bf77a93275e255c1bc8e3309f06cd691"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/sea_stack_tall_b.png",
-      "sha256": "985a11930ecb8a43b171fdd6b268082178048a982d66084ec7768c14c19340b0"
-    },
-    {
-      "path": "assets_hd/background/sea_coast/v001/sea_stack_tall_c.png",
-      "sha256": "9ad23cb1d0269565af20967a18cdb55828847b2987aeecf8ec99894ad7a5d715"
-    },
     {
       "path": "game_factory/environment/ART-0034/v001/.gdignore",
       "sha256": "cde82b0290cbf95202c6611123df9565e0be2d493f657b54c7764142b8f9b250"
     },
     {
       "path": "game_factory/environment/ART-0034/v001/godot_native_review.png",
-      "sha256": "3da3a62c4d4642e702a46843f1e4a3589f2633df150891d3da323069379ea0fa"
+      "sha256": "35efbc18d424df316ca9996816e83082b7fadaf3a06c5f56c49c3c58ae572e0f"
     },
     {
       "path": "game_factory/environment/ART-0034/v001/godot_review_receipt.json",
-      "sha256": "c71ce2749cd2278cc9d98d4580d4132bda3c93e2cd2f88c4f139ddb4eeef6655"
+      "sha256": "14410aeb855d0d9cd4091b1e1b9b1a2bb648e1b6a511bd14bc14bdd582200843"
     },
     {
       "path": "game_factory/environment/ART-0034/v001/manifest.json",
-      "sha256": "cec573538e3fc23843253d2a723b3cec98e770100d48d12166b1d5df2bd3236e"
+      "sha256": "37ee832bf2837824fc157898f94234b49ea664968c2ee535ae9331892e6cd866"
     },
     {
       "path": "game_factory/environment/ART-0034/v001/native_review/foam_patch_a.png",
@@ -94,6 +54,18 @@
       "sha256": "31ee0fbfc150bbb36679b5c9a1ad433f6878053150ec686e0687f1076f9c921a"
     },
     {
+      "path": "game_factory/environment/ART-0034/v001/qa/before_owner_approval/godot_native_review.png",
+      "sha256": "3da3a62c4d4642e702a46843f1e4a3589f2633df150891d3da323069379ea0fa"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/qa/before_owner_approval/godot_review_receipt.json",
+      "sha256": "c71ce2749cd2278cc9d98d4580d4132bda3c93e2cd2f88c4f139ddb4eeef6655"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/qa/before_owner_approval/manifest.json",
+      "sha256": "cec573538e3fc23843253d2a723b3cec98e770100d48d12166b1d5df2bd3236e"
+    },
+    {
       "path": "game_factory/environment/ART-0034/v001/qa/before_stack_b_correction/godot_native_review.png",
       "sha256": "1e250af5ab715379b0fc8d9abe02f2ef39108df3defb584b8e284ebead7b992a"
     },
@@ -106,6 +78,10 @@
       "sha256": "940945223cec5e0a68bf6184543eecaefcb0112d1af473783690622bbc73e1f9"
     },
     {
+      "path": "game_factory/environment/ART-0034/v001/qa/owner_approval_verification.json",
+      "sha256": "4c7300dff3abe131da5c85a917b0d8f59f7cb04314f3116f0ec59e95295f8f5e"
+    },
+    {
       "path": "game_factory/environment/ART-0034/v001/qa/verification.json",
       "sha256": "d2269caaa8b7e9cc70ef601b8b6e3e6df5958c9851f319b55dd540df9d0af5ab"
     },
@@ -115,7 +91,7 @@
     },
     {
       "path": "game_factory/environment/ART-0034/v001/README.md",
-      "sha256": "956c2527eb3ab517e5aebd85d9e28536a60dff0d5b3348f53915a7628dfcae90"
+      "sha256": "4b5ddee43bd18faff8fcc2bbc46f4cb7cb96df8e08bdf8e5ff472394c4f7f157"
     },
     {
       "path": "game_factory/environment/ART-0034/v001/requests/foam_patch_a.txt",
@@ -155,7 +131,7 @@
     },
     {
       "path": "game_factory/environment/ART-0034/v001/review.gd",
-      "sha256": "5c1deaaa63b00f72a4958ab2b8b959602874d61fd66c38dc55561a8218163428"
+      "sha256": "25bfe59b13182f4f5edaaebe9bfc675ff650bd89c06383ff21d7d6aa564342db"
     }
   ]
 }
