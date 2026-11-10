@@ -3,6 +3,12 @@ extends Node2D
 var player: HeroPlayer
 var dialogue: DialogueUI
 var interactions: Array = []
+# Equipment: the hero's weapon data lives in WeaponSystem units; the menu opens with the I key.
+const WeaponSystemScript = preload("res://scenes/battle/weapon_system.gd")
+var weapons
+var hero_unit: Dictionary = {}
+var equipment_layer: CanvasLayer
+var equipment_menu: EquipmentMenu
 
 const MAP_ID := "hero_room_01"
 # Gameplay data (spawn, NPCs, interaction spots) stays in the legacy room JSON.
@@ -45,6 +51,8 @@ func _ready() -> void:
 
     dialogue = DialogueUI.new()
     add_child(dialogue)
+    weapons = WeaponSystemScript.load_default()
+    hero_unit = weapons.make_unit("CHAR001", ["WPN_IRON_SWORD"], "WPN_HERO_BASIC_SWORD")
     interactions = data.get("interactions", []).duplicate(true)
     for info in data.get("npcs", []):
         var npc := RoomNpc.new()
@@ -63,11 +71,39 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
     if player != null and dialogue != null:
-        player.movement_enabled = not dialogue.is_open
+        player.movement_enabled = not dialogue.is_open and not is_equipment_open()
+
+
+func is_equipment_open() -> bool:
+    return equipment_layer != null and equipment_layer.visible
+
+
+func toggle_equipment() -> void:
+    if equipment_layer == null:
+        equipment_layer = CanvasLayer.new()
+        equipment_layer.name = "EquipmentLayer"
+        equipment_layer.layer = 11
+        add_child(equipment_layer)
+        equipment_menu = EquipmentMenu.new()
+        equipment_menu.position = Vector2(24, 96)
+        equipment_menu.closed.connect(func(): equipment_layer.visible = false)
+        equipment_layer.add_child(equipment_menu)
+        equipment_layer.visible = false
+    if equipment_layer.visible:
+        equipment_layer.visible = false
+        return
+    equipment_menu.setup(weapons, hero_unit)
+    equipment_layer.visible = true
 
 func _unhandled_input(event: InputEvent) -> void:
     if player == null or dialogue == null or dialogue.is_open:
         return
+    if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_I:
+        toggle_equipment()
+        get_viewport().set_input_as_handled()
+        return
+    if is_equipment_open():
+        return # no interactions while the menu is open
     if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_E:
         var closest: Dictionary = {}
         var best := INF
