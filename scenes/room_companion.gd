@@ -14,8 +14,7 @@ var animation_time: float = 0.0
 var fps: float = 2.0
 
 func _ready() -> void:
-    catalog = AssetCatalog.new()
-    catalog.load_index()
+    catalog = AssetCatalog.shared()
     sprite = Sprite2D.new()
     sprite.name = "CrystalCompanion"
     sprite.centered = false
