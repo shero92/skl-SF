@@ -2,59 +2,24 @@
   "task": "TASK-0102",
   "art_request": "ART-0033",
   "destination": "H:/shining force/skl-SF",
+  "owner_approved": true,
   "generation_cache_required": false,
   "files": [
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/.gdignore",
-      "sha256": "e1724eb5da99ab1e5c3e7148f42e98faacddde4bb98c302d09286bd04d10239f"
-    },
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_a.png",
-      "sha256": "ca5208627b47277d4701855f4cc6a9687536827cfae6779a342a21f40d68f888"
-    },
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
-      "sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84"
-    },
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_c.png",
-      "sha256": "00afb4586c6cc8ef202139db006fed79afd08fb7523c307932fc672d1d27e0c9"
-    },
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/cliff_rubble_cluster.png",
-      "sha256": "862b79ccfbecc3a7948b56b8a23747dea05bf0589d74b5b476f41c3606cd3e78"
-    },
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
-      "sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384"
-    },
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_left.png",
-      "sha256": "dc6c131321c6a8c0f4dcfd461b8e327403c834c2eb8895421785f23c7df0983a"
-    },
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_right.png",
-      "sha256": "872b71b30ba704a44f482611e0bb04c673fb413d1b6de5c7081bae0726d8a1cd"
-    },
-    {
-      "path": "assets_hd/background/terrace_cliff/v001/terrace_edge_straight.png",
-      "sha256": "4af62152cc0a0c5448b23f936d21733e5fd0b44879ecf65b1bd573799fe2b310"
-    },
     {
       "path": "game_factory/environment/ART-0033/v001/.gdignore",
       "sha256": "4e1d0a0d4bfbc55fb7e6cd00b0f3d90de8516a79dd788b56b2ed90485294d503"
     },
     {
       "path": "game_factory/environment/ART-0033/v001/godot_native_review.png",
-      "sha256": "571a19c8ab0578485b1adb9e8d52727484e1e66bca00dc814565ed0a5c214f1c"
+      "sha256": "1eb3aff9130e8841366a77e51a76ac6586bf5b9f3ed0a4a5ecbe7c889cd8e3a3"
     },
     {
       "path": "game_factory/environment/ART-0033/v001/godot_review_receipt.json",
-      "sha256": "ad2c64307495a073371d3025e42e8603c493b71367f321fcb7a9ce1fb034fdae"
+      "sha256": "569a73f90f4bf36d62d4119cd4143187218527cdd0800cba390ebbd292a44bc0"
     },
     {
       "path": "game_factory/environment/ART-0033/v001/manifest.json",
-      "sha256": "9959e1f24d5ea4dd19c8969c51dde9ce48583c9ff45f7058de3534391ae2a5b1"
+      "sha256": "da194673e7500e1489a30b32c3da157a51d4f6fd6dd84ba2e751834b49ab0b4c"
     },
     {
       "path": "game_factory/environment/ART-0033/v001/native_review/cliff_face_front_a.png",
@@ -89,6 +54,18 @@
       "sha256": "59ed90d941a052c2573e6e0330573a2e9ea1d8041ae782cfe658b740212132d1"
     },
     {
+      "path": "game_factory/environment/ART-0033/v001/qa/before_owner_approval/godot_native_review.png",
+      "sha256": "571a19c8ab0578485b1adb9e8d52727484e1e66bca00dc814565ed0a5c214f1c"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/qa/before_owner_approval/godot_review_receipt.json",
+      "sha256": "ad2c64307495a073371d3025e42e8603c493b71367f321fcb7a9ce1fb034fdae"
+    },
+    {
+      "path": "game_factory/environment/ART-0033/v001/qa/before_owner_approval/manifest.json",
+      "sha256": "9959e1f24d5ea4dd19c8969c51dde9ce48583c9ff45f7058de3534391ae2a5b1"
+    },
+    {
       "path": "game_factory/environment/ART-0033/v001/qa/verification.json",
       "sha256": "33bca92511b1b578a00d8e2647231fbe9714c1db035246f28510bff5cf761ac9"
     },
@@ -98,7 +75,7 @@
     },
     {
       "path": "game_factory/environment/ART-0033/v001/README.md",
-      "sha256": "3f882f64d69979784b1ced06f3fc1fdf98fda31ba51d3c9abc6cc87fd2046a8e"
+      "sha256": "ab9b56786b872144c4ebe55fc225f10119cb0008bd57ffba24531cb208ea1207"
     },
     {
       "path": "game_factory/environment/ART-0033/v001/requests/cliff_face_front_a.txt",
@@ -134,7 +111,7 @@
     },
     {
       "path": "game_factory/environment/ART-0033/v001/review.gd",
-      "sha256": "36329c42aaf86c106eeeafddb26d0166867d785b43565afc5749f7d89b55a275"
+      "sha256": "a487cf9bcc01f9d69814be22a003375dcf1e7ddea6b0936376bc91ad8ed68738"
     }
   ]
 }

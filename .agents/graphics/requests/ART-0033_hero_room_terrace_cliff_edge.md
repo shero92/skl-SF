@@ -1,6 +1,6 @@
 ---
 id: ART-0033
-status: delivered
+status: reviewed
 owner: codex
 task: TASK-0102
 dedupe_key: hero_room_terrace_cliff_edge
@@ -37,3 +37,5 @@ output_paths: .agents/graphics/deliveries/ART-0033/terrace_edge_straight.png,.ag
 طلب المالك الانتقال للمهمة الرسومية التالية بعد ART-0032. Agent: codex؛ الفرع codex/art-0033-terrace-cliff. ثمانية طلبات builtin_image_gen مستقلة؛ المصادر assets_hd/background/terrace_cliff/v001 والبيانات game_factory/environment/ART-0033/v001. لا تعديل للخريطة أو الأصول القديمة؛ المخرجات الجديدة needs_review.
 
 التسليم: ثمانية masters مستقلة ونسخ مراجعة منفصلة ولقطة Godot فعلية. دليل الاستخدام: game_factory/environment/ART-0033/v001/README.md. المصادر assets_hd/background/terrace_cliff/v001؛ الحالة needs_review، ولا تعديل للخريطة أو السجل النشط.
+
+اعتماد المالك 2026-11-10: جميع الصور المختارة المسلمة مقبولة. يبقى تركيب الخريطة ومعايرة نقاط الوصل منفصلين؛ لا يشمل الاعتماد rejected/.

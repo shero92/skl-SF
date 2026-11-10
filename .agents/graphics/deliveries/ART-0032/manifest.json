@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "art_request": "ART-0032",
+  "task_id": "TASK-0102",
+  "agent": "codex",
+  "quality_status": "needs_review",
+  "owner_approved": true,
+  "production_active": false,
+  "generation_cache_required": false,
+  "source_count": 9,
+  "references": [
+    {
+      "path": "assets_hd/architecture/wall_ivy_banner/wall_ivy_banner_01.png",
+      "sha256": "ab4a660afa540c4bed2cf1c16676ebd60aa240fba68c4708c99b428ac0b4b101",
+      "role": "material_style"
+    },
+    {
+      "path": "map_factory/references/hero_room_01_target_20261103.png",
+      "sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "role": "room_projection_composition"
+    }
+  ],
+  "items": [
+    {
+      "id": "wall_straight_long_a",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png",
+      "sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        98,
+        66,
+        2063,
+        647
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          1080.5,
+          647
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "straight_long_a",
+      "footprint_proposed_px": [
+        256,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/wall_straight_long_a.png",
+      "native_review_canvas": [
+        256,
+        128
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/wall_straight_long_a.txt",
+      "native_review_sha256": "2f25387d0d24e0a0a21a950053a2be671592daccbabbb82ff4459aadaaeb30bf"
+    },
+    {
+      "id": "wall_straight_long_b",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_b.png",
+      "sha256": "b550d8c9746cab86a96c2e1d272338291b1b2cf75f1958cd032026ec3163ede5",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        65,
+        49,
+        2110,
+        653
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          1087.5,
+          653
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "straight_long_b",
+      "footprint_proposed_px": [
+        256,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/wall_straight_long_b.png",
+      "native_review_canvas": [
+        256,
+        128
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/wall_straight_long_b.txt",
+      "native_review_sha256": "6ca80f5f5e33ba670a4f6477c6ba8df0a4c65400484b17e8d9b99233cabcf769"
+    },
+    {
+      "id": "wall_corner_outer_left",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_outer_left.png",
+      "sha256": "435d0261df0add6e64d933339506ca31010e7f7fe32dad1e8dde4e4ab1f72948",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        61,
+        50,
+        1713,
+        828
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          887.0,
+          828
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "corner_outer_left",
+      "footprint_proposed_px": [
+        128,
+        128
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/wall_corner_outer_left.png",
+      "native_review_canvas": [
+        192,
+        192
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/wall_corner_outer_left.txt",
+      "native_review_sha256": "a47f5274d42c13077dad7ead91223aa6b1b21fff4391890ce68c5be573c29c42"
+    },
+    {
+      "id": "wall_corner_outer_right",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_outer_right.png",
+      "sha256": "1329c5509b9ff490b440793af4a414ce4654fc3e167a563d4e4e11c69571c0ae",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        55,
+        89,
+        1709,
+        806
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          882.0,
+          806
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "corner_outer_right",
+      "footprint_proposed_px": [
+        128,
+        128
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/wall_corner_outer_right.png",
+      "native_review_canvas": [
+        192,
+        192
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/wall_corner_outer_right.txt",
+      "native_review_sha256": "2e046dc6b3c263ffd561110d33ec160eed5e03e666b7cba2c243aeec00d8cba2"
+    },
+    {
+      "id": "wall_corner_inner_left",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_inner_left.png",
+      "sha256": "097ba3ead8898484a9299c2c6570b604db193edba778afd5fb2c411110ddf341",
+      "pixel_size": [
+        1721,
+        914
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        40,
+        30,
+        1684,
+        887
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          862.0,
+          887
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "corner_inner_left",
+      "footprint_proposed_px": [
+        128,
+        128
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/wall_corner_inner_left.png",
+      "native_review_canvas": [
+        192,
+        192
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/wall_corner_inner_left.txt",
+      "native_review_sha256": "c63cf8910d13cd6a588f3bfdcd01ba8e2581c06feccc1ce868700d9b1423c5f6"
+    },
+    {
+      "id": "wall_corner_inner_right",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_inner_right.png",
+      "sha256": "a7f853a84f588af63c8f00c790cfaa3fd7cd551eaee17ef5201c37c344b19226",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        61,
+        54,
+        1712,
+        857
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          886.5,
+          857
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "corner_inner_right",
+      "footprint_proposed_px": [
+        128,
+        128
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/wall_corner_inner_right.png",
+      "native_review_canvas": [
+        192,
+        192
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/wall_corner_inner_right.txt",
+      "native_review_sha256": "9c92ea76b02379030fe79c9f25590529ff1e7a65610e6842635fa0ffd7c3aef6"
+    },
+    {
+      "id": "wall_side_left_run",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_left_run.png",
+      "sha256": "82f03a03961895846d44d968cacacd1327e1df82ab30c9f930cb6336631daca8",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        133,
+        56,
+        893,
+        1476
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          513.0,
+          1476
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "side_left_run",
+      "footprint_proposed_px": [
+        64,
+        256
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/wall_side_left_run.png",
+      "native_review_canvas": [
+        128,
+        256
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/wall_side_left_run.txt",
+      "native_review_sha256": "9706beb1d11678241d008c8cc2f61b135f6a584a0797d066f63dbf7a87c73b3b"
+    },
+    {
+      "id": "wall_side_right_run",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_right_run.png",
+      "sha256": "1a1491d24bea94e6865d5d621e3a3a50195c32130a9efe941a7aa3c11f091160",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        141,
+        29,
+        891,
+        1518
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          516.0,
+          1518
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "side_right_run",
+      "footprint_proposed_px": [
+        64,
+        256
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/wall_side_right_run.png",
+      "native_review_canvas": [
+        128,
+        256
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/wall_side_right_run.txt",
+      "native_review_sha256": "cd0633d803f7df3574991de4124bbb6cbe92a029dbeedd8bd809f3111532b0a8"
+    },
+    {
+      "id": "parapet_cap_run",
+      "master_path": "assets_hd/architecture/connected_ruin_walls/v001/parapet_cap_run.png",
+      "sha256": "fd0a8a676918ed0e780a4275eda906bdca6705990badb2b0c39769dd59cc679d",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        75,
+        158,
+        2093,
+        564
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          1084.0,
+          564
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "parapet_cap_run",
+      "footprint_proposed_px": [
+        256,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0032/v001/native_review/parapet_cap_run.png",
+      "native_review_canvas": [
+        256,
+        64
+      ],
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": true,
+      "generation_tool": "builtin_image_gen",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0032/v001/requests/parapet_cap_run.txt",
+      "native_review_sha256": "67b44e11c66626b7e62165414daebfe588f867a1f0e22b461ec0bf4c32bdcc12"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "wall_corner_outer_left_attempt_01",
+      "reason": "concave geometry instead of requested convex exterior corner",
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_corner_outer_left_attempt_01.png",
+      "sha256": "f61f91087e6f0d030b739c2bd4e5ecbf1b82ffe1752c98bc44480553b829b254"
+    },
+    {
+      "name": "wall_corner_outer_right_attempt_01",
+      "reason": "concave geometry instead of requested convex exterior corner",
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_corner_outer_right_attempt_01.png",
+      "sha256": "d45987036e8a15dc4e6719559442817e3266ced0a49ea1c020c72a51d20b9694"
+    },
+    {
+      "name": "wall_side_left_run_attempt_01",
+      "reason": "side baseline too shallow for room depth projection",
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_side_left_run_attempt_01.png",
+      "sha256": "7994a1cc82e66deb14a976755c817cf5080f11114bfb709b0122d349f64fe2f9"
+    },
+    {
+      "name": "wall_side_right_run_attempt_01",
+      "reason": "side baseline too shallow for room depth projection",
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/rejected/wall_side_right_run_attempt_01.png",
+      "sha256": "e4425a164f8ded095a58a38919372377d7f43aa0c9c9d89da3eb92fc02ba2b34"
+    }
+  ],
+  "cost_usd": null,
+  "tokens": null,
+  "owner_approval": {
+    "date": "2026-11-10",
+    "evidence": "Owner: all what u created i agree, so push and merge",
+    "scope": "delivered selected assets only; map calibration remains pending"
+  }
+}

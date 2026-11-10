@@ -1,0 +1,14 @@
+{
+	"actual_viewport": true,
+	"candidate_count": 9,
+	"canvas_size": [
+		1024,
+		1024
+	],
+	"engine": "4.7.2-stable (official)",
+	"manifest_sha256": "c05f90db69d8a76ff542094e3d1af6e05f9535f411522306073ad06fee9667e9",
+	"map_integration_verified": false,
+	"native_review_only": true,
+	"owner_approved": true,
+	"render_sha256": "c309b1f42436fb1d4f0c7076c32313c206ab07c065dec5efb36c592938ce28ca"
+}
