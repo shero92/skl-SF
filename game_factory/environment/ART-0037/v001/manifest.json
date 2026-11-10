@@ -1,0 +1,138 @@
+{
+  "request_id": "ART-0037",
+  "task_id": "TASK-0016",
+  "batch": "B3",
+  "status": "requested",
+  "quality_status": "needs_regeneration",
+  "source_count": 0,
+  "candidate_count": 2,
+  "items": [],
+  "rejected_attempts": [
+    {
+      "request_id": "ART-0037",
+      "id": "sea_light_lattice_tile_attempt_01",
+      "source_path": "assets_hd/background/sea_light_lattice/v001/rejected/sea_light_lattice_tile_attempt_01.png",
+      "sha256": "1f680568fa846eb377b3a345905d83ef845ec48d1bcb44ca216b320ebb432e75",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        1,
+        246
+      ],
+      "bounds_alpha_128": [
+        0,
+        22,
+        1254,
+        1254
+      ],
+      "origin": [
+        627.0,
+        1253
+      ],
+      "origin_rule": "tile canvas bottom centre; tile edges intentionally continue",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "prompt_text": "ART-0037 sea_light_lattice_tile. ONE seamless repeating water LIGHT OVERLAY only, transparent RGBA PNG, square2048x2048 or larger genuinely native resolution (not upscaled). Flat top-down texture tile, fine white and pale-cyan glint lines forming a loose irregular square/diamond lattice like sunlight on blue sea. Lines1-2pixels at512x512native (4-8px at2048master), sparse tiny brighter sparkle nodes at crossings. Transparent gaps alpha0, light-line alpha only60-170/255 maximum178 (70%); no opaque pixels, no solid blue fill. Critical SEAMLESS periodicity: every line that exits LEFT must continue at corresponding RIGHT coordinate and same tangent; TOP matches BOTTOM. Texture fills square to edge with no margin or border and no vignette; 2x2 repetition must have no join line. Hard pixel clusters, no blurry photographic water, match viewed SKL-SF sea_01 and wave_foam palette as STYLE ONLY, do not copy/crop reference. No land, rock, foam clumps, horizon, sky, ground, shadow, characters, text, watermark, frame, panels or sheet. Only one tile of semitransparent light lattice with real transparency.",
+      "prompt_path": "game_factory/environment/ART-0037/v001/requests/sea_light_lattice_tile_attempt_01.txt",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "footprint_64px_cells": null,
+      "footprint_status": "not annotated; candidate rejected",
+      "collision": false,
+      "shadow": false,
+      "requested_native_size": [
+        512,
+        512
+      ],
+      "source_pixels_per_native_pixel": 2.44921875,
+      "native_review_path": "game_factory/environment/ART-0037/v001/native_review/sea_light_lattice_tile_attempt_01.png",
+      "native_review_sha256": "3c628f27cb018404df469d4b15599a97cecd48c5f67b0de37cb9a6181f546226",
+      "boundary_metrics": {
+        "left_right_premult_rgb_abs_mean": 5.14979829252275,
+        "top_bottom_premult_rgb_abs_mean": 8.739119784011425,
+        "local_horizontal_abs_mean": 1.6933126349301522,
+        "local_vertical_abs_mean": 1.926717681985164,
+        "alpha_above_178_fraction": 0.008496574915612941,
+        "alpha_zero_fraction": 0.0
+      },
+      "quality_status": "needs_regeneration",
+      "failures": [
+        "Master below required 2048x2048 and below 4x the 512x512 display tile.",
+        "Alpha exceeds specified 70 percent maximum (178/255).",
+        "No fully transparent gap pixels.",
+        "Seamless continuity is not verified; 2x2 actual Godot capture and boundary-jump metrics are evidence, not approval."
+      ],
+      "owner_approved": false,
+      "production_active": false
+    },
+    {
+      "request_id": "ART-0037",
+      "id": "sea_light_lattice_tile_attempt_02",
+      "source_path": "assets_hd/background/sea_light_lattice/v001/rejected/sea_light_lattice_tile_attempt_02.png",
+      "sha256": "ecf86d0fccc322711483686f69f6dfd5de1074515807cc4e51e563e7755e0d1e",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        234
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1190,
+        1182
+      ],
+      "origin": [
+        627.0,
+        1253
+      ],
+      "origin_rule": "tile canvas bottom centre; tile edges intentionally continue",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "prompt_text": "ART-0037 attempt02. NEW clean graphic overlay sprite, not a photograph or filled water texture. Render ONLY a sparse network of VERY THIN icy-white and pale-cyan LINES, like an irregular square mesh of sunlight on sea. Most of tile is COMPLETELY EMPTY TRANSPARENT (alpha=0), including all large spaces between lines, no white/cyan haze or fill. At512px native tile the lines are1px, tiny crossing glints2px, about12 loose squares across tile. All visible line pixels at60%opacity max70%; no opaque fill. Square MASTER2048x2048 minimum, preserve genuine high resolution. Perfectly seamless periodic tile, matching path endpoints and slopes on left/right and top/bottom, no edge margin. Hard crisp pixel-art line clusters. Output transparent RGBA PNG. Avoid thick foam, clouds, rings, photographic caustic blobs, gradient backdrop, blue background, sand, land, rocks, horizon, shadow, characters, letters, labels, watermark, frame or sheet. One tile only.",
+      "prompt_path": "game_factory/environment/ART-0037/v001/requests/sea_light_lattice_tile_attempt_02.txt",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "footprint_64px_cells": null,
+      "footprint_status": "not annotated; candidate rejected",
+      "collision": false,
+      "shadow": false,
+      "requested_native_size": [
+        512,
+        512
+      ],
+      "source_pixels_per_native_pixel": 2.44921875,
+      "native_review_path": "game_factory/environment/ART-0037/v001/native_review/sea_light_lattice_tile_attempt_02.png",
+      "native_review_sha256": "2142a6da2652b3221c20e692c172c44a67675fe286a97b9f0462a743260a4030",
+      "boundary_metrics": {
+        "left_right_premult_rgb_abs_mean": 1.7743586536156193,
+        "top_bottom_premult_rgb_abs_mean": 1.4486610167724718,
+        "local_horizontal_abs_mean": 0.5138024276443772,
+        "local_vertical_abs_mean": 0.6093678556189581,
+        "alpha_above_178_fraction": 0.0012171577268530176,
+        "alpha_zero_fraction": 0.06689280109073611
+      },
+      "quality_status": "needs_regeneration",
+      "failures": [
+        "Master below required 2048x2048 and below 4x the 512x512 display tile.",
+        "Alpha exceeds specified 70 percent maximum (178/255).",
+        "Seamless continuity is not verified; 2x2 actual Godot capture and boundary-jump metrics are evidence, not approval."
+      ],
+      "owner_approved": false,
+      "production_active": false
+    }
+  ],
+  "owner_approved": false,
+  "production_active": false,
+  "exact_requested_delivery_png": null,
+  "generation_cache_required": false,
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "note": "Neither attempt satisfies the hard size/alpha requirements. No delivered production tile, no upscaling or procedural substitute."
+}

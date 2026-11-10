@@ -1,0 +1,6 @@
+{
+  "source": "assets_hd/architecture/window_wall/v001/wall_straight_window_opening.png",
+  "capture": "game_factory/environment/ART-0038/v001/godot_native_review.png",
+  "finding": "Primary opening approximately58x76 matches target60x75, but wall courses/cap taller than low neighboring run; requires choice of matching-height neighbor or junction refinement. Low-profile v002 retained as alternative with undersized opening height.",
+  "selected": true
+}

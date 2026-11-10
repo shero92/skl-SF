@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0038",
+  "task_id": "TASK-0016",
+  "batch": "B3",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 1,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_regeneration",
+  "items": [
+    {
+      "id": "wall_straight_window_opening",
+      "request_id": "ART-0038",
+      "master_path": "assets_hd/architecture/window_wall/v002/wall_straight_window_opening.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0038/wall_straight_window_opening.png",
+      "sha256": "32b5f8bf358a4f803d946f43751d873935bbac19aa91ed936c95be4eb713b503",
+      "pixel_size": [
+        2086,
+        754
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        10,
+        97,
+        2082,
+        658
+      ],
+      "origin": [
+        1046.0,
+        657
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "intended_native_canvas": [
+        320,
+        190
+      ],
+      "requested_master_minimum": [
+        1280,
+        760
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 6.5125,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0038/v002/native_review/wall_straight_window_opening.png",
+      "native_review_sha256": "7b486be9fb588957681f131fb7135dfb5e79437390a7749efd8a0bf386e4eab5",
+      "native_review_region_alpha128_plus_8px": [
+        2,
+        89,
+        2086,
+        666
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        320,
+        89
+      ],
+      "native_offset": [
+        0,
+        101,
+        320,
+        190
+      ],
+      "native_uniform_scale": 0.15355086372360843,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "wall opening / door threshold and end joins require scene annotation",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0038/v002/requests/wall_straight_window_opening.txt",
+      "prompt_text": "ART-0038 attempt04, precisely enlarge ONLY the window in this low four-course wall; keep overall low wall size, clean end joins, limestone courses, ivy and flowers unchanged. At source2172x724, make the actual transparent EMPTY hole about410pixels wide by510pixels high, around x650..1060 and y115..625. Current hole is only about225x280 and too small. Draw a thin lintel above and thin sill below the larger opening, move jambs outward; preserve masonry at both ends, full base and top caps. Fully transparent alpha0 through entire hole, no colour spots inside. Keep entire wall visible withtransparentmargin, RGBA PNG. Upper-left light, same hard pixel clusters. No floor, ground, cast/contact shadow, sea, glass, text, watermark, frame or extra subject. If possible export wider source canvas2304x832 or larger (minimum1280x760), preserving object proportions and genuine detail, no stretch/upscale. One corrected low wall, not sheet.",
+      "source_attempt_name": "exec-b5032c65-90e0-4416-a3fd-ebb8c31a5ae8.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_regeneration",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Actual built-in output is below the literal per-asset master minimum; original preserved without upscaling. Regeneration/owner decision required.",
+        "Visible pixels are inside canvas but some margins are less than the approximately 3 percent target.",
+        "End joins/course heights need comparison and scene calibration against existing wall; not certified seamless.",
+        "Low-profile alternative opening measures 65.41x52.82 native px versus requested approximately60x75; retains better wall join height but does not satisfy opening geometry. Primary delivery remains v001 with taller opening."
+      ],
+      "window_opening_zero_alpha_component": {
+        "seed": [
+          850,
+          350
+        ],
+        "bounds": [
+          580,
+          193,
+          1006,
+          537
+        ],
+        "pixels": 143223,
+        "enclosed": true,
+        "native_projected_size": [
+          65.41,
+          52.82
+        ]
+      }
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "path": "assets_hd/architecture/window_wall/v002/rejected/wall_straight_window_opening_attempt_03.png",
+      "sha256": "1af8f93c40dc634e2edcc7b2ab5136c00b7132dc3ec29b0ca3e0444296f98521",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "reason": "See rejected/rejections.json for measured and visual rejection reasons",
+      "quality_status": "needs_regeneration"
+    }
+  ]
+}

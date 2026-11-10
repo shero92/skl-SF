@@ -1,0 +1,32 @@
+{
+  "request_id": "ART-0023",
+  "reused_from_pr": "https://github.com/shero92/skl-SF/pull/151",
+  "commit": "07fc039a41db26af8f42ff4e31de5d22d4f0240a",
+  "regenerated": false,
+  "owner_approved": false,
+  "production_active": false,
+  "source_manifest_sha256": "db68dbab4e282af0e44a8e0d8f9eaeda7fc82356e63312b676aac3a2ac14a9f3",
+  "items": [
+    {
+      "id": "hero_side_banner_east_facing_short",
+      "master_path": "assets_hd/decor/side_banners/v001/hero_side_banner_east_facing_short.png",
+      "sha256": "23ba50b75e1800dcfe23225a72161ee322f62b8ec7c961e076f35bf514f9b0ab"
+    },
+    {
+      "id": "hero_side_banner_east_facing_long",
+      "master_path": "assets_hd/decor/side_banners/v001/hero_side_banner_east_facing_long.png",
+      "sha256": "dc261e1f2bf9e33db2e55525b399b2866d38a8c1fe930d0879290f600434d522"
+    },
+    {
+      "id": "hero_side_banner_west_facing_long",
+      "master_path": "assets_hd/decor/side_banners/v001/hero_side_banner_west_facing_long.png",
+      "sha256": "5f37ff69fae6ec23adf22f1b77e568cdeaedc8bb1f4662907e70414e1fff0be6"
+    },
+    {
+      "id": "hero_wall_lantern_west",
+      "master_path": "assets_hd/lighting/west_wall_lantern/v001/hero_wall_lantern_west.png",
+      "sha256": "e1beb2284d9804e1ae51480c63af498d916f6d0aa992e2d8622fb0a361a6c623"
+    }
+  ],
+  "note": "Existing four independent source files already delivered; PR151 remains separate dependency. No duplicate generation, no changes to that request or sources."
+}

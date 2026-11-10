@@ -1,6 +1,6 @@
 ---
 id: ART-0038
-status: requested
+status: delivered
 owner: graphics-specialist
 task: TASK-0102
 dedupe_key: hero_room_rear_left_window_wall_piece
@@ -32,3 +32,9 @@ output_paths: .agents/graphics/deliveries/ART-0038/wall_straight_window_opening.
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## B3 delivery — TASK-0016
+- Owner explicitly assigned generation against authenticated target SHA-256 `4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323`.
+- Exact outputs and independent source hashes in `.agents/graphics/deliveries/ART-0038/manifest.json`; native review and actual Godot captures in `game_factory/environment/ART-0038/v001`.
+- Delivered candidates only. No owner approval, integration or map edits. See batch_B3_20261110/README.md for measured limitations.
+- Primary v001 opening approximately58x76; neighboring low wall join requires calibration. Low-profile alternative v002 is retained separately and needs regeneration (opening65.41x52.82 instead60x75).

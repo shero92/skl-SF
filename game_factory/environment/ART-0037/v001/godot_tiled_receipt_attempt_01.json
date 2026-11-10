@@ -1,0 +1,18 @@
+{
+	"actual_viewport": true,
+	"attempt": 1,
+	"engine": "4.7.2-stable (official)",
+	"grid": [
+		2,
+		2
+	],
+	"manifest_sha256": "d77f7bf1fe9af3176e9db4d3c7fcbd887686ffbccca91ff12dcc5b93e490651d",
+	"owner_approved": false,
+	"production_active": false,
+	"render_sha256": "0db6843df7e162e3c5320d053b37685876265a813eb928ca56c2b84c316bcb35",
+	"review_script_sha256": "57cfa431c4cb96caa708c79b427d4dcd830a3f23da1103ae8a413f07af4f5e60",
+	"tile_size": [
+		512,
+		512
+	]
+}

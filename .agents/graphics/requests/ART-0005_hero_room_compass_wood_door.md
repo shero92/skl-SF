@@ -1,6 +1,6 @@
 ---
 id: ART-0005
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0016
 dedupe_key: hero_room_compass_wood_door
@@ -68,3 +68,9 @@ issue: 20
 ## Calibrated measurements (TASK-0038, 2026-10-27)
 - Source: docs/HERO_ROOM_CALIBRATION.md (reference SHA-256 verified; native = source px x 0.971; ground depth per D1).
 - Cancel candidate: A015 already contains the right door and lantern (source 1060,170-1145,280; native 82x107) at s0.42.
+
+## B3 delivery — TASK-0016
+- Owner explicitly assigned generation against authenticated target SHA-256 `4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323`.
+- Exact outputs and independent source hashes in `.agents/graphics/deliveries/ART-0005/manifest.json`; native review and actual Godot captures in `game_factory/environment/ART-0005/v001`.
+- Delivered candidates only. No owner approval, integration or map edits. See batch_B3_20261110/README.md for measured limitations.
+- Four independently generated views delivered; rear is a functional back face. Decorative inset lengths vary between views; refinement remains required.
