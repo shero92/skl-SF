@@ -29,7 +29,39 @@
       "weapon_hand_anchor": null,
       "character_ground_anchor": null,
       "frame_duration_ms": 100
+    },
+    {
+      "frame_id": "hero_aerial_crescent_002",
+      "phase": "preparation_shift",
+      "status": "needs_review",
+      "source_image_path": null,
+      "review_preview_path": "game_factory/aerial_crescent/v001/candidates/previews/hero_aerial_crescent_002_128_preview.png",
+      "preview_only": true,
+      "game_canvas_target": [
+        256,
+        256
+      ],
+      "original_source_not_in_repo": true,
+      "weapon_hand_anchor": null,
+      "character_ground_anchor": null,
+      "frame_duration_ms": null
+    },
+    {
+      "frame_id": "hero_aerial_crescent_003",
+      "phase": "windup_preload",
+      "status": "needs_review",
+      "source_image_path": null,
+      "review_preview_path": "game_factory/aerial_crescent/v001/candidates/previews/hero_aerial_crescent_003_128_preview.png",
+      "preview_only": true,
+      "game_canvas_target": [
+        256,
+        256
+      ],
+      "original_source_not_in_repo": true,
+      "weapon_hand_anchor": null,
+      "character_ground_anchor": null,
+      "frame_duration_ms": null
     }
   ],
-  "notes": "Do not treat render as an approved ready-to-import asset."
+  "notes": "Frame 001 full-res source, frames 002–003 review previews only (128px). Game-size 256px candidates are in the ChatGPT conversation but not uploaded; do not activate until full-res source, anatomy, alignment, alpha, hand anchors and Godot tests pass."
 }
