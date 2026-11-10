@@ -829,6 +829,153 @@
       "x": 1350,
       "y": 120,
       "scale": 0.5
+    },
+    {
+      "id": "E036",
+      "instance_id": "CoastArchFarLeft",
+      "x": 170,
+      "y": 300,
+      "scale": 1.0
+    },
+    {
+      "id": "E037",
+      "instance_id": "CoastArchFarRight",
+      "x": 1380,
+      "y": 300,
+      "scale": 1.0
+    },
+    {
+      "id": "E039",
+      "instance_id": "CoastStackTallLeft",
+      "x": 70,
+      "y": 640,
+      "scale": 1.0
+    },
+    {
+      "id": "E038",
+      "instance_id": "CoastStackTallRight",
+      "x": 1470,
+      "y": 600,
+      "scale": 1.0
+    },
+    {
+      "id": "E040",
+      "instance_id": "CoastStackLow",
+      "x": 1400,
+      "y": 740,
+      "scale": 1.0
+    },
+    {
+      "id": "E033",
+      "instance_id": "SeaFoamLeft",
+      "x": 140,
+      "y": 760,
+      "scale": 1.0
+    },
+    {
+      "id": "E034",
+      "instance_id": "SeaFoamRight",
+      "x": 1380,
+      "y": 800,
+      "scale": 1.0
+    },
+    {
+      "id": "E026",
+      "instance_id": "CliffFrontLeftOuter",
+      "x": 300,
+      "y": 985,
+      "scale": 1.0
+    },
+    {
+      "id": "E025",
+      "instance_id": "CliffFrontLeftInner",
+      "x": 520,
+      "y": 930,
+      "scale": 1.0
+    },
+    {
+      "id": "E027",
+      "instance_id": "CliffFrontRightInner",
+      "x": 1060,
+      "y": 1010,
+      "scale": 1.0
+    },
+    {
+      "id": "E026",
+      "instance_id": "CliffFrontRightOuter",
+      "x": 1270,
+      "y": 985,
+      "scale": 1.0
+    },
+    {
+      "id": "E029",
+      "instance_id": "CliffFoamLeftOuter",
+      "x": 300,
+      "y": 1000,
+      "scale": 1.0
+    },
+    {
+      "id": "E029",
+      "instance_id": "CliffFoamLeftInner",
+      "x": 520,
+      "y": 960,
+      "scale": 1.0
+    },
+    {
+      "id": "E029",
+      "instance_id": "CliffFoamRightInner",
+      "x": 1060,
+      "y": 1015,
+      "scale": 1.0
+    },
+    {
+      "id": "E029",
+      "instance_id": "CliffFoamRightOuter",
+      "x": 1270,
+      "y": 1000,
+      "scale": 1.0
+    },
+    {
+      "id": "E028",
+      "instance_id": "CliffRubbleLeft",
+      "x": 200,
+      "y": 1005,
+      "scale": 1.0
+    },
+    {
+      "id": "E028",
+      "instance_id": "CliffRubbleRight",
+      "x": 1340,
+      "y": 1005,
+      "scale": 1.0
+    },
+    {
+      "id": "E027",
+      "instance_id": "CliffSideLeftUpper",
+      "x": 215,
+      "y": 520,
+      "scale": 1.0
+    },
+    {
+      "id": "E026",
+      "instance_id": "CliffSideLeftLower",
+      "x": 215,
+      "y": 760,
+      "scale": 1.0
+    },
+    {
+      "id": "E026",
+      "instance_id": "CliffSideRightUpper",
+      "x": 1325,
+      "y": 520,
+      "scale": 1.0
+    },
+    {
+      "id": "E027",
+      "instance_id": "CliffSideRightLower",
+      "x": 1325,
+      "y": 760,
+      "scale": 1.0
     }
   ],
   "ground_overlays": [
@@ -1090,19 +1237,6 @@
       }
     },
     {
-      "id": "W01",
-      "instance_id": "PerimeterWall_00_01",
-      "x": 258.0,
-      "y": 353,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
       "id": "W08",
       "instance_id": "PerimeterWall_04_01",
       "x": 514.0,
@@ -1129,24 +1263,11 @@
       }
     },
     {
-      "id": "W02",
-      "instance_id": "PerimeterWall_16_01",
-      "x": 1282.0,
-      "y": 353,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W03",
+      "id": "W033",
       "instance_id": "PerimeterWall_00_02",
-      "x": 258.0,
-      "y": 417,
-      "scale": 1.5,
+      "x": 262,
+      "y": 480,
+      "scale": 1.0,
       "shadow": {
         "type": "wall_base",
         "opacity": 0.24,
@@ -1155,11 +1276,11 @@
       }
     },
     {
-      "id": "W02",
+      "id": "W034",
       "instance_id": "PerimeterWall_16_02",
-      "x": 1282.0,
-      "y": 417,
-      "scale": 1.5,
+      "x": 1282,
+      "y": 480,
+      "scale": 1.0,
       "shadow": {
         "type": "wall_base",
         "opacity": 0.24,
@@ -1168,89 +1289,11 @@
       }
     },
     {
-      "id": "W01",
-      "instance_id": "PerimeterWall_00_03",
-      "x": 258.0,
-      "y": 481,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W04",
-      "instance_id": "PerimeterWall_16_03",
-      "x": 1282.0,
-      "y": 481,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W01",
-      "instance_id": "PerimeterWall_00_04",
-      "x": 258.0,
-      "y": 545,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W02",
-      "instance_id": "PerimeterWall_16_04",
-      "x": 1282.0,
-      "y": 545,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W05",
-      "instance_id": "PerimeterWall_00_05",
-      "x": 258.0,
-      "y": 609,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W02",
-      "instance_id": "PerimeterWall_16_05",
-      "x": 1282.0,
-      "y": 609,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W01",
+      "id": "W033",
       "instance_id": "PerimeterWall_00_06",
-      "x": 258.0,
-      "y": 673,
-      "scale": 1.5,
+      "x": 262,
+      "y": 740,
+      "scale": 1.0,
       "shadow": {
         "type": "wall_base",
         "opacity": 0.24,
@@ -1259,24 +1302,11 @@
       }
     },
     {
-      "id": "W06",
+      "id": "W034",
       "instance_id": "PerimeterWall_16_06",
-      "x": 1282.0,
-      "y": 673,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W09",
-      "instance_id": "PerimeterWall_00_07",
-      "x": 258.0,
-      "y": 737,
-      "scale": 1.5,
+      "x": 1282,
+      "y": 740,
+      "scale": 1.0,
       "shadow": {
         "type": "wall_base",
         "opacity": 0.24,
@@ -1301,19 +1331,6 @@
       "id": "W08",
       "instance_id": "PerimeterWall_15_07",
       "x": 1218.0,
-      "y": 737,
-      "scale": 1.5,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "W09",
-      "instance_id": "PerimeterWall_16_07",
-      "x": 1282.0,
       "y": 737,
       "scale": 1.5,
       "shadow": {
@@ -1642,7 +1659,7 @@
       "y": 505,
       "scale": 0.5,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_00_04",
+      "mount_on": "PerimeterWall_00_06",
       "mount_offset": [
         0.0,
         -40
@@ -1694,7 +1711,7 @@
       "y": 505,
       "scale": 0.5,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_16_04",
+      "mount_on": "PerimeterWall_16_06",
       "mount_offset": [
         0.0,
         -40
@@ -1746,7 +1763,7 @@
       "y": 439,
       "scale": 0.65,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_00_03",
+      "mount_on": "PerimeterWall_00_02",
       "mount_offset": [
         0.0,
         -42
@@ -1759,7 +1776,7 @@
       "y": 439,
       "scale": 0.65,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_16_03",
+      "mount_on": "PerimeterWall_16_02",
       "mount_offset": [
         0.0,
         -42
@@ -1772,7 +1789,7 @@
       "y": 289,
       "scale": 0.5,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_00_01",
+      "mount_on": "PerimeterWall_00_02",
       "mount_offset": [
         0.0,
         -64
@@ -1794,7 +1811,7 @@
       "y": 289,
       "scale": 0.5,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_16_01",
+      "mount_on": "PerimeterWall_16_02",
       "mount_offset": [
         0.0,
         -64
@@ -1815,7 +1832,7 @@
       "y": 545,
       "scale": 0.5,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_00_05",
+      "mount_on": "PerimeterWall_00_06",
       "mount_offset": [
         0.0,
         -64
@@ -1837,7 +1854,7 @@
       "y": 545,
       "scale": 0.5,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_16_05",
+      "mount_on": "PerimeterWall_16_06",
       "mount_offset": [
         0.0,
         -64
@@ -2327,6 +2344,62 @@
         95.0,
         -151
       ]
+    },
+    {
+      "id": "V032",
+      "instance_id": "FrontPlanterLeft",
+      "x": 310,
+      "y": 800,
+      "scale": 1.0
+    },
+    {
+      "id": "V032",
+      "instance_id": "FrontPlanterRight",
+      "x": 1240,
+      "y": 800,
+      "scale": 1.0
+    },
+    {
+      "id": "V033",
+      "instance_id": "FrontPlanterLeftInner",
+      "x": 560,
+      "y": 830,
+      "scale": 1.0
+    },
+    {
+      "id": "V033",
+      "instance_id": "FrontPlanterRightInner",
+      "x": 980,
+      "y": 830,
+      "scale": 1.0
+    },
+    {
+      "id": "V025",
+      "instance_id": "FrontMoundBlue",
+      "x": 440,
+      "y": 815,
+      "scale": 1.0
+    },
+    {
+      "id": "V026",
+      "instance_id": "FrontMoundWhite",
+      "x": 1110,
+      "y": 815,
+      "scale": 1.0
+    },
+    {
+      "id": "V030",
+      "instance_id": "FrontPalmLeft",
+      "x": 258,
+      "y": 770,
+      "scale": 1.0
+    },
+    {
+      "id": "V031",
+      "instance_id": "FrontPalmRight",
+      "x": 1285,
+      "y": 770,
+      "scale": 1.0
     }
   ],
   "front_objects": [
@@ -2391,7 +2464,7 @@
       "y": 493,
       "scale": 0.5,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_00_04",
+      "mount_on": "PerimeterWall_00_06",
       "mount_offset": [
         0.0,
         -52
@@ -2443,7 +2516,7 @@
       "y": 493,
       "scale": 0.5,
       "render_layer": "decorations",
-      "mount_on": "PerimeterWall_16_04",
+      "mount_on": "PerimeterWall_16_06",
       "mount_offset": [
         0.0,
         -52
@@ -2526,6 +2599,48 @@
         -65.0,
         -161
       ]
+    },
+    {
+      "id": "E030",
+      "instance_id": "TerraceCornerLeft",
+      "x": 262,
+      "y": 905,
+      "scale": 1.0
+    },
+    {
+      "id": "E031",
+      "instance_id": "TerraceCornerRight",
+      "x": 1280,
+      "y": 905,
+      "scale": 1.0
+    },
+    {
+      "id": "V027",
+      "instance_id": "BackWallVineLeft",
+      "x": 322,
+      "y": 300,
+      "scale": 1.0
+    },
+    {
+      "id": "V027",
+      "instance_id": "BackWallVineRight",
+      "x": 1154,
+      "y": 300,
+      "scale": 1.0
+    },
+    {
+      "id": "V028",
+      "instance_id": "BackWallIvyLeft",
+      "x": 420,
+      "y": 210,
+      "scale": 1.0
+    },
+    {
+      "id": "V029",
+      "instance_id": "BackWallIvyRight",
+      "x": 1060,
+      "y": 210,
+      "scale": 1.0
     }
   ],
   "effects": [
@@ -2590,15 +2705,15 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 17,
-  "parent_version": 16,
-  "created_at": "2026-11-09T17:27:09+00:00",
+  "version": 18,
+  "parent_version": 17,
+  "created_at": "2026-11-10T11:10:38+00:00",
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "change_note": "hero_room_01 v0017: taller wall pieces (scale 1.5) so the side and rear walls read as massive ruins like the target; layout otherwise unchanged. Visual approval pending.",
+  "change_note": "hero_room_01 v0018: the owner-agreed ART-0032..0035 parts (cliff base, coast stacks and arches, foam, planters, palms, vines) added around the terrace; existing pieces untouched. Visual approval pending.",
   "visual_qa": {
     "status": "needs_review",
     "notes": "Native render v0013 pending; compare against reference and v0012."
@@ -2835,7 +2950,7 @@
     "joint_opacity": 0.27,
     "joint_width": 1.15
   },
-  "parent_snapshot_sha256": "d8c08dce32242de805607f9c7357d20efa6a2e984a81ce18279996724bac9339",
+  "parent_snapshot_sha256": "8a15da1bdcdd14f8239992bb0da633785b2d8bf649dc4b58c7e5d4b7347c13f5",
   "camera": {
     "x": 768,
     "y": 512,
@@ -3084,7 +3199,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 17,
+    "version": 18,
     "processing_passes": [
       "background",
       "ground",
@@ -3392,6 +3507,972 @@
             "opacity": 0.0,
             "offset_x": 0,
             "offset_y": 0
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CoastArchFarLeft",
+          "asset_id": "E036",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            170.0,
+            300.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E036_Rock_Arch_Far_Left.png",
+          "pixel_size": [
+            160,
+            75
+          ],
+          "origin": [
+            80,
+            75
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CoastArchFarRight",
+          "asset_id": "E037",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1380.0,
+            300.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E037_Rock_Arch_Far_Right.png",
+          "pixel_size": [
+            160,
+            74
+          ],
+          "origin": [
+            80,
+            74
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CoastStackTallLeft",
+          "asset_id": "E039",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            70.0,
+            640.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E039_Sea_Stack_Tall_B.png",
+          "pixel_size": [
+            128,
+            547
+          ],
+          "origin": [
+            64,
+            547
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CoastStackTallRight",
+          "asset_id": "E038",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1470.0,
+            600.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E038_Sea_Stack_Tall_A.png",
+          "pixel_size": [
+            128,
+            310
+          ],
+          "origin": [
+            64,
+            310
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CoastStackLow",
+          "asset_id": "E040",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1400.0,
+            740.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E040_Sea_Stack_Tall_C.png",
+          "pixel_size": [
+            128,
+            209
+          ],
+          "origin": [
+            64,
+            209
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "SeaFoamLeft",
+          "asset_id": "E033",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            140.0,
+            760.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E033_Foam_Patch_A.png",
+          "pixel_size": [
+            192,
+            91
+          ],
+          "origin": [
+            96,
+            91
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "SeaFoamRight",
+          "asset_id": "E034",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1380.0,
+            800.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E034_Foam_Patch_B.png",
+          "pixel_size": [
+            192,
+            58
+          ],
+          "origin": [
+            96,
+            58
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffFrontLeftOuter",
+          "asset_id": "E026",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            300.0,
+            985.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+          "pixel_size": [
+            320,
+            212
+          ],
+          "origin": [
+            160,
+            212
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffFrontLeftInner",
+          "asset_id": "E025",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            520.0,
+            930.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E025_Cliff_Face_Front_A.png",
+          "pixel_size": [
+            320,
+            155
+          ],
+          "origin": [
+            160,
+            155
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffFrontRightInner",
+          "asset_id": "E027",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1060.0,
+            1010.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+          "pixel_size": [
+            320,
+            210
+          ],
+          "origin": [
+            160,
+            210
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffFrontRightOuter",
+          "asset_id": "E026",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1270.0,
+            985.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+          "pixel_size": [
+            320,
+            212
+          ],
+          "origin": [
+            160,
+            212
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffFoamLeftOuter",
+          "asset_id": "E029",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            300.0,
+            1000.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+          "pixel_size": [
+            320,
+            60
+          ],
+          "origin": [
+            160,
+            60
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffFoamLeftInner",
+          "asset_id": "E029",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            520.0,
+            960.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+          "pixel_size": [
+            320,
+            60
+          ],
+          "origin": [
+            160,
+            60
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffFoamRightInner",
+          "asset_id": "E029",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1060.0,
+            1015.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+          "pixel_size": [
+            320,
+            60
+          ],
+          "origin": [
+            160,
+            60
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffFoamRightOuter",
+          "asset_id": "E029",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1270.0,
+            1000.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+          "pixel_size": [
+            320,
+            60
+          ],
+          "origin": [
+            160,
+            60
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffRubbleLeft",
+          "asset_id": "E028",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            200.0,
+            1005.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E028_Cliff_Rubble_Cluster.png",
+          "pixel_size": [
+            128,
+            56
+          ],
+          "origin": [
+            64,
+            56
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffRubbleRight",
+          "asset_id": "E028",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1340.0,
+            1005.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E028_Cliff_Rubble_Cluster.png",
+          "pixel_size": [
+            128,
+            56
+          ],
+          "origin": [
+            64,
+            56
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffSideLeftUpper",
+          "asset_id": "E027",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            215.0,
+            520.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+          "pixel_size": [
+            320,
+            210
+          ],
+          "origin": [
+            160,
+            210
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffSideLeftLower",
+          "asset_id": "E026",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            215.0,
+            760.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+          "pixel_size": [
+            320,
+            212
+          ],
+          "origin": [
+            160,
+            212
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffSideRightUpper",
+          "asset_id": "E026",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1325.0,
+            520.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+          "pixel_size": [
+            320,
+            212
+          ],
+          "origin": [
+            160,
+            212
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "CliffSideRightLower",
+          "asset_id": "E027",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1325.0,
+            760.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+          "pixel_size": [
+            320,
+            210
+          ],
+          "origin": [
+            160,
+            210
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "TerraceCornerLeft",
+          "asset_id": "E030",
+          "source_layer": "front_objects",
+          "render_layer": "background",
+          "position": [
+            262.0,
+            905.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E030_Terrace_Edge_Corner_Left.png",
+          "pixel_size": [
+            256,
+            119
+          ],
+          "origin": [
+            128,
+            119
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "TerraceCornerRight",
+          "asset_id": "E031",
+          "source_layer": "front_objects",
+          "render_layer": "background",
+          "position": [
+            1280.0,
+            905.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/E031_Terrace_Edge_Corner_Right.png",
+          "pixel_size": [
+            256,
+            109
+          ],
+          "origin": [
+            128,
+            109
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
           },
           "attachment": null
         }
@@ -4401,48 +5482,6 @@
           "attachment": null
         },
         {
-          "instance_id": "PerimeterWall_00_01",
-          "asset_id": "W01",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            258.0,
-            353.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
           "instance_id": "PerimeterWall_04_01",
           "asset_id": "W08",
           "source_layer": "back_objects",
@@ -4527,68 +5566,26 @@
           "attachment": null
         },
         {
-          "instance_id": "PerimeterWall_16_01",
-          "asset_id": "W02",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            1282.0,
-            353.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
           "instance_id": "PerimeterWall_00_02",
-          "asset_id": "W03",
+          "asset_id": "W033",
           "source_layer": "back_objects",
           "render_layer": "walls",
           "position": [
-            258.0,
-            417.0
+            262.0,
+            480.0
           ],
-          "scale": 1.5,
+          "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.png",
+          "texture_path": "res://map_factory/parts/walls/W033_Wall_Side_Left_Run.png",
           "pixel_size": [
-            64,
-            128
+            160,
+            299
           ],
           "origin": [
-            32,
-            128
+            80,
+            299
           ],
           "status": "ready",
           "collision": {
@@ -4612,277 +5609,25 @@
         },
         {
           "instance_id": "PerimeterWall_16_02",
-          "asset_id": "W02",
+          "asset_id": "W034",
           "source_layer": "back_objects",
           "render_layer": "walls",
           "position": [
             1282.0,
-            417.0
+            480.0
           ],
-          "scale": 1.5,
+          "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
+          "texture_path": "res://map_factory/parts/walls/W034_Wall_Side_Right_Run.png",
           "pixel_size": [
-            64,
-            128
+            160,
+            318
           ],
           "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "PerimeterWall_00_03",
-          "asset_id": "W01",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            258.0,
-            481.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "PerimeterWall_16_03",
-          "asset_id": "W04",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            1282.0,
-            481.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "PerimeterWall_00_04",
-          "asset_id": "W01",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            258.0,
-            545.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "PerimeterWall_16_04",
-          "asset_id": "W02",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            1282.0,
-            545.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "PerimeterWall_00_05",
-          "asset_id": "W05",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            258.0,
-            609.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "PerimeterWall_16_05",
-          "asset_id": "W02",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            1282.0,
-            609.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
+            80,
+            318
           ],
           "status": "ready",
           "collision": {
@@ -4906,25 +5651,25 @@
         },
         {
           "instance_id": "PerimeterWall_00_06",
-          "asset_id": "W01",
+          "asset_id": "W033",
           "source_layer": "back_objects",
           "render_layer": "walls",
           "position": [
-            258.0,
-            673.0
+            262.0,
+            740.0
           ],
-          "scale": 1.5,
+          "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+          "texture_path": "res://map_factory/parts/walls/W033_Wall_Side_Left_Run.png",
           "pixel_size": [
-            64,
-            128
+            160,
+            299
           ],
           "origin": [
-            32,
-            128
+            80,
+            299
           ],
           "status": "ready",
           "collision": {
@@ -4948,67 +5693,25 @@
         },
         {
           "instance_id": "PerimeterWall_16_06",
-          "asset_id": "W06",
+          "asset_id": "W034",
           "source_layer": "back_objects",
           "render_layer": "walls",
           "position": [
             1282.0,
-            673.0
+            740.0
           ],
-          "scale": 1.5,
+          "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.png",
+          "texture_path": "res://map_factory/parts/walls/W034_Wall_Side_Right_Run.png",
           "pixel_size": [
-            64,
-            128
+            160,
+            318
           ],
           "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "PerimeterWall_00_07",
-          "asset_id": "W09",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            258.0,
-            737.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
+            80,
+            318
           ],
           "status": "ready",
           "collision": {
@@ -5086,48 +5789,6 @@
           "flip_h": false,
           "z_index": 0,
           "texture_path": "res://assets_generated/wall/W08__wall__inner_corner_wall_block__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "PerimeterWall_16_07",
-          "asset_id": "W09",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            1282.0,
-            737.0
-          ],
-          "scale": 1.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png",
           "pixel_size": [
             64,
             128
@@ -6221,8 +6882,8 @@
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            377.0
+            262.0,
+            440.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6270,8 +6931,8 @@
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            505.0
+            262.0,
+            700.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6305,7 +6966,7 @@
             "offset_y": 2
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_00_04",
+            "parent_instance_id": "PerimeterWall_00_06",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -6319,8 +6980,8 @@
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            633.0
+            262.0,
+            700.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6418,7 +7079,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            377.0
+            440.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6467,7 +7128,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            505.0
+            700.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6501,7 +7162,7 @@
             "offset_y": 2
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_16_04",
+            "parent_instance_id": "PerimeterWall_16_06",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -6516,7 +7177,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            633.0
+            700.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6662,8 +7323,8 @@
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            439.0
+            262.0,
+            438.0
           ],
           "scale": 0.65,
           "rotation_degrees": 0.0,
@@ -6697,7 +7358,7 @@
             "offset_y": 0
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_00_03",
+            "parent_instance_id": "PerimeterWall_00_02",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -6712,7 +7373,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            439.0
+            438.0
           ],
           "scale": 0.65,
           "rotation_degrees": 0.0,
@@ -6746,7 +7407,7 @@
             "offset_y": 0
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_16_03",
+            "parent_instance_id": "PerimeterWall_16_02",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -6760,8 +7421,8 @@
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            289.0
+            262.0,
+            416.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6795,7 +7456,7 @@
             "offset_y": 3
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_00_01",
+            "parent_instance_id": "PerimeterWall_00_02",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -6852,7 +7513,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            289.0
+            416.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6886,7 +7547,7 @@
             "offset_y": 3
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_16_01",
+            "parent_instance_id": "PerimeterWall_16_02",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -6942,8 +7603,8 @@
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            545.0
+            262.0,
+            676.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -6977,7 +7638,7 @@
             "offset_y": 3
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_00_05",
+            "parent_instance_id": "PerimeterWall_00_06",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -7034,7 +7695,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            545.0
+            676.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -7068,7 +7729,7 @@
             "offset_y": 3
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_16_05",
+            "parent_instance_id": "PerimeterWall_16_06",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -8868,6 +9529,342 @@
           }
         },
         {
+          "instance_id": "FrontPlanterLeft",
+          "asset_id": "V032",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            310.0,
+            800.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V032_Planter_Stone_Flowers_Large.png",
+          "pixel_size": [
+            128,
+            70
+          ],
+          "origin": [
+            64,
+            70
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontPlanterRight",
+          "asset_id": "V032",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1240.0,
+            800.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V032_Planter_Stone_Flowers_Large.png",
+          "pixel_size": [
+            128,
+            70
+          ],
+          "origin": [
+            64,
+            70
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontPlanterLeftInner",
+          "asset_id": "V033",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            560.0,
+            830.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V033_Planter_Stone_Flowers_Medium.png",
+          "pixel_size": [
+            96,
+            70
+          ],
+          "origin": [
+            48,
+            70
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontPlanterRightInner",
+          "asset_id": "V033",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            980.0,
+            830.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V033_Planter_Stone_Flowers_Medium.png",
+          "pixel_size": [
+            96,
+            70
+          ],
+          "origin": [
+            48,
+            70
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontMoundBlue",
+          "asset_id": "V025",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            440.0,
+            815.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V025_Flower_Mound_Blue.png",
+          "pixel_size": [
+            96,
+            64
+          ],
+          "origin": [
+            48,
+            64
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontMoundWhite",
+          "asset_id": "V026",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1110.0,
+            815.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V026_Flower_Mound_White.png",
+          "pixel_size": [
+            96,
+            60
+          ],
+          "origin": [
+            48,
+            60
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontPalmLeft",
+          "asset_id": "V030",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            258.0,
+            770.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V030_Palm_Clump_Front_Left.png",
+          "pixel_size": [
+            128,
+            97
+          ],
+          "origin": [
+            64,
+            97
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontPalmRight",
+          "asset_id": "V031",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1285.0,
+            770.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V031_Palm_Clump_Front_Right.png",
+          "pixel_size": [
+            128,
+            80
+          ],
+          "origin": [
+            64,
+            80
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
           "instance_id": "LeftWallLantern0Glow",
           "asset_id": "L05",
           "source_layer": "front_objects",
@@ -8922,8 +9919,8 @@
           "source_layer": "front_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            365.0
+            262.0,
+            428.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -8971,8 +9968,8 @@
           "source_layer": "front_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            493.0
+            262.0,
+            688.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -9006,7 +10003,7 @@
             "offset_y": 2
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_00_04",
+            "parent_instance_id": "PerimeterWall_00_06",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -9020,8 +10017,8 @@
           "source_layer": "front_objects",
           "render_layer": "decorations",
           "position": [
-            258.0,
-            621.0
+            262.0,
+            688.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -9119,7 +10116,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            365.0
+            428.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -9168,7 +10165,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            493.0
+            688.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -9202,7 +10199,7 @@
             "offset_y": 2
           },
           "attachment": {
-            "parent_instance_id": "PerimeterWall_16_04",
+            "parent_instance_id": "PerimeterWall_16_06",
             "host_render_layer": "walls",
             "mount_offset": [
               0.0,
@@ -9217,7 +10214,7 @@
           "render_layer": "decorations",
           "position": [
             1282.0,
-            621.0
+            688.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -9503,6 +10500,174 @@
               -161.0
             ]
           }
+        },
+        {
+          "instance_id": "BackWallVineLeft",
+          "asset_id": "V027",
+          "source_layer": "front_objects",
+          "render_layer": "decorations",
+          "position": [
+            322.0,
+            300.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V027_Hanging_Vine_Long.png",
+          "pixel_size": [
+            40,
+            159
+          ],
+          "origin": [
+            20,
+            159
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "BackWallVineRight",
+          "asset_id": "V027",
+          "source_layer": "front_objects",
+          "render_layer": "decorations",
+          "position": [
+            1154.0,
+            300.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V027_Hanging_Vine_Long.png",
+          "pixel_size": [
+            40,
+            159
+          ],
+          "origin": [
+            20,
+            159
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "BackWallIvyLeft",
+          "asset_id": "V028",
+          "source_layer": "front_objects",
+          "render_layer": "decorations",
+          "position": [
+            420.0,
+            210.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V028_Ivy_Tuft_Wall_A.png",
+          "pixel_size": [
+            96,
+            106
+          ],
+          "origin": [
+            48,
+            106
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "BackWallIvyRight",
+          "asset_id": "V029",
+          "source_layer": "front_objects",
+          "render_layer": "decorations",
+          "position": [
+            1060.0,
+            210.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V029_Ivy_Tuft_Wall_B.png",
+          "pixel_size": [
+            96,
+            103
+          ],
+          "origin": [
+            48,
+            103
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
         }
       ],
       "shadows": [
@@ -9939,30 +11104,6 @@
           "display_z": 20
         },
         {
-          "instance_id": "PerimeterWall_00_01__shadow",
-          "owner_instance_id": "PerimeterWall_00_01",
-          "owner_asset_id": "W01",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            258.0,
-            353.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
           "instance_id": "PerimeterWall_04_01__shadow",
           "owner_instance_id": "PerimeterWall_04_01",
           "owner_asset_id": "W08",
@@ -10011,43 +11152,19 @@
           "display_z": 20
         },
         {
-          "instance_id": "PerimeterWall_16_01__shadow",
-          "owner_instance_id": "PerimeterWall_16_01",
-          "owner_asset_id": "W02",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            1282.0,
-            353.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
           "instance_id": "PerimeterWall_00_02__shadow",
           "owner_instance_id": "PerimeterWall_00_02",
-          "owner_asset_id": "W03",
+          "owner_asset_id": "W033",
           "asset_id": "S013",
           "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
           "position": [
-            258.0,
-            417.0
+            262.0,
+            480.0
           ],
-          "scale": 1.5,
+          "scale": 1.0,
           "sprite_pixel_size": [
-            64,
-            128
+            160,
+            299
           ],
           "settings": {
             "type": "wall_base",
@@ -10061,161 +11178,17 @@
         {
           "instance_id": "PerimeterWall_16_02__shadow",
           "owner_instance_id": "PerimeterWall_16_02",
-          "owner_asset_id": "W02",
+          "owner_asset_id": "W034",
           "asset_id": "S013",
           "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
           "position": [
             1282.0,
-            417.0
+            480.0
           ],
-          "scale": 1.5,
+          "scale": 1.0,
           "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "PerimeterWall_00_03__shadow",
-          "owner_instance_id": "PerimeterWall_00_03",
-          "owner_asset_id": "W01",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            258.0,
-            481.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "PerimeterWall_16_03__shadow",
-          "owner_instance_id": "PerimeterWall_16_03",
-          "owner_asset_id": "W04",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            1282.0,
-            481.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "PerimeterWall_00_04__shadow",
-          "owner_instance_id": "PerimeterWall_00_04",
-          "owner_asset_id": "W01",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            258.0,
-            545.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "PerimeterWall_16_04__shadow",
-          "owner_instance_id": "PerimeterWall_16_04",
-          "owner_asset_id": "W02",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            1282.0,
-            545.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "PerimeterWall_00_05__shadow",
-          "owner_instance_id": "PerimeterWall_00_05",
-          "owner_asset_id": "W05",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            258.0,
-            609.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "PerimeterWall_16_05__shadow",
-          "owner_instance_id": "PerimeterWall_16_05",
-          "owner_asset_id": "W02",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            1282.0,
-            609.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
+            160,
+            318
           ],
           "settings": {
             "type": "wall_base",
@@ -10229,17 +11202,17 @@
         {
           "instance_id": "PerimeterWall_00_06__shadow",
           "owner_instance_id": "PerimeterWall_00_06",
-          "owner_asset_id": "W01",
+          "owner_asset_id": "W033",
           "asset_id": "S013",
           "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
           "position": [
-            258.0,
-            673.0
+            262.0,
+            740.0
           ],
-          "scale": 1.5,
+          "scale": 1.0,
           "sprite_pixel_size": [
-            64,
-            128
+            160,
+            299
           ],
           "settings": {
             "type": "wall_base",
@@ -10253,41 +11226,17 @@
         {
           "instance_id": "PerimeterWall_16_06__shadow",
           "owner_instance_id": "PerimeterWall_16_06",
-          "owner_asset_id": "W06",
+          "owner_asset_id": "W034",
           "asset_id": "S013",
           "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
           "position": [
             1282.0,
-            673.0
+            740.0
           ],
-          "scale": 1.5,
+          "scale": 1.0,
           "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "PerimeterWall_00_07__shadow",
-          "owner_instance_id": "PerimeterWall_00_07",
-          "owner_asset_id": "W09",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            258.0,
-            737.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
+            160,
+            318
           ],
           "settings": {
             "type": "wall_base",
@@ -10330,30 +11279,6 @@
           "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
           "position": [
             1218.0,
-            737.0
-          ],
-          "scale": 1.5,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "PerimeterWall_16_07__shadow",
-          "owner_instance_id": "PerimeterWall_16_07",
-          "owner_asset_id": "W09",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            1282.0,
             737.0
           ],
           "scale": 1.5,
@@ -10977,8 +11902,8 @@
           "asset_id": "S001",
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
-            258.0,
-            377.0
+            262.0,
+            440.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11001,8 +11926,8 @@
           "asset_id": "S001",
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
-            258.0,
-            505.0
+            262.0,
+            700.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11025,8 +11950,8 @@
           "asset_id": "S001",
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
-            258.0,
-            633.0
+            262.0,
+            700.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11074,7 +11999,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1282.0,
-            377.0
+            440.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11098,7 +12023,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1282.0,
-            505.0
+            700.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11122,7 +12047,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1282.0,
-            633.0
+            700.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11145,8 +12070,8 @@
           "asset_id": "S010",
           "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
           "position": [
-            258.0,
-            289.0
+            262.0,
+            416.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11194,7 +12119,7 @@
           "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
           "position": [
             1282.0,
-            289.0
+            416.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11241,8 +12166,8 @@
           "asset_id": "S010",
           "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
           "position": [
-            258.0,
-            545.0
+            262.0,
+            676.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -11290,7 +12215,7 @@
           "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
           "position": [
             1282.0,
-            545.0
+            676.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -12009,8 +12934,8 @@
           "asset_id": "S001",
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
-            258.0,
-            365.0
+            262.0,
+            428.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -12033,8 +12958,8 @@
           "asset_id": "S001",
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
-            258.0,
-            493.0
+            262.0,
+            688.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -12057,8 +12982,8 @@
           "asset_id": "S001",
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
-            258.0,
-            621.0
+            262.0,
+            688.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -12106,7 +13031,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1282.0,
-            365.0
+            428.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -12130,7 +13055,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1282.0,
-            493.0
+            688.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -12154,7 +13079,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1282.0,
-            621.0
+            688.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -13166,11 +14091,11 @@
       }
     },
     "counts": {
-      "background": 7,
+      "background": 30,
       "ground": 3,
-      "walls": 57,
-      "decorations": 60,
-      "shadows": 116
+      "walls": 47,
+      "decorations": 72,
+      "shadows": 106
     },
     "unique_asset_ids": [
       "A01",
@@ -13189,6 +14114,20 @@
       "D03",
       "D04",
       "D05",
+      "E025",
+      "E026",
+      "E027",
+      "E028",
+      "E029",
+      "E030",
+      "E031",
+      "E033",
+      "E034",
+      "E036",
+      "E037",
+      "E038",
+      "E039",
+      "E040",
       "F01",
       "F05_south",
       "F06_north",
@@ -13240,12 +14179,18 @@
       "S013",
       "S015",
       "S016",
+      "V025",
+      "V026",
+      "V027",
+      "V028",
+      "V029",
+      "V030",
+      "V031",
+      "V032",
+      "V033",
       "W01",
-      "W02",
-      "W03",
-      "W04",
-      "W05",
-      "W06",
+      "W033",
+      "W034",
       "W07",
       "W08",
       "W09",
@@ -14451,6 +15396,750 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "174b8d5e6a89e9c611bde55c34f5f334a6c05c9fa09cb62f3bf3c19dbef9f080"
+      }
+    },
+    "E025": {
+      "id": "E025",
+      "name": "Cliff Face Front A",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E025_Cliff_Face_Front_A.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        155
+      ],
+      "origin": [
+        160,
+        155
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_a.png",
+        "master_sha256": "ca5208627b47277d4701855f4cc6a9687536827cfae6779a342a21f40d68f888"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E026": {
+      "id": "E026",
+      "name": "Cliff Face Front B",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        212
+      ],
+      "origin": [
+        160,
+        212
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
+        "master_sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E027": {
+      "id": "E027",
+      "name": "Cliff Face Front C",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        210
+      ],
+      "origin": [
+        160,
+        210
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_c.png",
+        "master_sha256": "00afb4586c6cc8ef202139db006fed79afd08fb7523c307932fc672d1d27e0c9"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E028": {
+      "id": "E028",
+      "name": "Cliff Rubble Cluster",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E028_Cliff_Rubble_Cluster.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        56
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "rock",
+        "rubble"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_rubble_cluster.png",
+        "master_sha256": "862b79ccfbecc3a7948b56b8a23747dea05bf0589d74b5b476f41c3606cd3e78"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E029": {
+      "id": "E029",
+      "name": "Foam At Cliff Base",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        60
+      ],
+      "origin": [
+        160,
+        60
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
+        "master_sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E030": {
+      "id": "E030",
+      "name": "Terrace Edge Corner Left",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E030_Terrace_Edge_Corner_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        256,
+        119
+      ],
+      "origin": [
+        128,
+        119
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "edge",
+        "environment",
+        "left",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_left.png",
+        "master_sha256": "dc6c131321c6a8c0f4dcfd461b8e327403c834c2eb8895421785f23c7df0983a"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E031": {
+      "id": "E031",
+      "name": "Terrace Edge Corner Right",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E031_Terrace_Edge_Corner_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        256,
+        109
+      ],
+      "origin": [
+        128,
+        109
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "edge",
+        "environment",
+        "right",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_right.png",
+        "master_sha256": "872b71b30ba704a44f482611e0bb04c673fb413d1b6de5c7081bae0726d8a1cd"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E033": {
+      "id": "E033",
+      "name": "Foam Patch A",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E033_Foam_Patch_A.png",
+      "status": "ready",
+      "pixel_size": [
+        192,
+        91
+      ],
+      "origin": [
+        96,
+        91
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/foam_patch_a.png",
+        "master_sha256": "fd7bde47fc2cdb692243fef021008cf58a00eae1a8bc90c5cf244f1d3dcc05f2"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E034": {
+      "id": "E034",
+      "name": "Foam Patch B",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E034_Foam_Patch_B.png",
+      "status": "ready",
+      "pixel_size": [
+        192,
+        58
+      ],
+      "origin": [
+        96,
+        58
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/foam_patch_b.png",
+        "master_sha256": "d3238aeebf41cb0f303718e10de3979abf6845614bdf0f0378f0cb72435d5fb1"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E036": {
+      "id": "E036",
+      "name": "Rock Arch Far Left",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E036_Rock_Arch_Far_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        160,
+        75
+      ],
+      "origin": [
+        80,
+        75
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "arch",
+        "environment",
+        "far",
+        "left",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/rock_arch_far_left.png",
+        "master_sha256": "8a0812ebc3f53efc137940ff7b08d5e980b3fbdc51687d11748385ee5c8973d9"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E037": {
+      "id": "E037",
+      "name": "Rock Arch Far Right",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E037_Rock_Arch_Far_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        160,
+        74
+      ],
+      "origin": [
+        80,
+        74
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "arch",
+        "environment",
+        "far",
+        "right",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/rock_arch_far_right.png",
+        "master_sha256": "8ff4b19b5809acf3027cea1c56ba54322ce989271c77181843032e9704a87255"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E038": {
+      "id": "E038",
+      "name": "Sea Stack Tall A",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E038_Sea_Stack_Tall_A.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        310
+      ],
+      "origin": [
+        64,
+        310
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_a.png",
+        "master_sha256": "506de1a1ec5988535ce01d24c3360412bf77a93275e255c1bc8e3309f06cd691"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E039": {
+      "id": "E039",
+      "name": "Sea Stack Tall B",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E039_Sea_Stack_Tall_B.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        547
+      ],
+      "origin": [
+        64,
+        547
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_b.png",
+        "master_sha256": "985a11930ecb8a43b171fdd6b268082178048a982d66084ec7768c14c19340b0"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "E040": {
+      "id": "E040",
+      "name": "Sea Stack Tall C",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E040_Sea_Stack_Tall_C.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        209
+      ],
+      "origin": [
+        64,
+        209
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_c.png",
+        "master_sha256": "9ad23cb1d0269565af20967a18cdb55828847b2987aeecf8ec99894ad7a5d715"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
     "F01": {
@@ -20447,6 +22136,480 @@
       },
       "qa_notes": "Procedural asset; inspect in Godot."
     },
+    "V025": {
+      "id": "V025",
+      "name": "Flower Mound Blue",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V025_Flower_Mound_Blue.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        64
+      ],
+      "origin": [
+        48,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue",
+        "flower",
+        "mound",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/flower_mound_blue.png",
+        "master_sha256": "c303c9d4e12f571a53a7899c90a84e3295edaf95893ac60b7a6922c3f43b387a"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V026": {
+      "id": "V026",
+      "name": "Flower Mound White",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V026_Flower_Mound_White.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        60
+      ],
+      "origin": [
+        48,
+        60
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flower",
+        "mound",
+        "vegetation",
+        "white"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/flower_mound_white.png",
+        "master_sha256": "504e7dec761646bd547dc1e75b21c0e22f4ad2f96cd1624ac4301cb8d8934ae2"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V027": {
+      "id": "V027",
+      "name": "Hanging Vine Long",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V027_Hanging_Vine_Long.png",
+      "status": "ready",
+      "pixel_size": [
+        40,
+        159
+      ],
+      "origin": [
+        20,
+        159
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "hanging",
+        "vegetation",
+        "vine"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/hanging_vine_long.png",
+        "master_sha256": "7467570e5a66d12c1555dad1d8c2cf6703839ad2c540fd22510d7bdf03e99953"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V028": {
+      "id": "V028",
+      "name": "Ivy Tuft Wall A",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V028_Ivy_Tuft_Wall_A.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        106
+      ],
+      "origin": [
+        48,
+        106
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "vegetation",
+        "wall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_a.png",
+        "master_sha256": "29d0ff1c7c5057d8c97aa6f5e2a17bf3a0b3b61154159ad04ef13c38eaf6c9a9"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V029": {
+      "id": "V029",
+      "name": "Ivy Tuft Wall B",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V029_Ivy_Tuft_Wall_B.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        103
+      ],
+      "origin": [
+        48,
+        103
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "vegetation",
+        "wall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_b.png",
+        "master_sha256": "9627183ff97e9a31b82b8dc061fa842136cbd3bb35e7609e8445e5dc8f42be41"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V030": {
+      "id": "V030",
+      "name": "Palm Clump Front Left",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V030_Palm_Clump_Front_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        97
+      ],
+      "origin": [
+        64,
+        97
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "front",
+        "left",
+        "palm",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/palm_clump_front_left.png",
+        "master_sha256": "703b289b91da084d9434578538259d15b2c79639233c3b20e4529145bd59f934"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V031": {
+      "id": "V031",
+      "name": "Palm Clump Front Right",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V031_Palm_Clump_Front_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        80
+      ],
+      "origin": [
+        64,
+        80
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "front",
+        "palm",
+        "right",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/palm_clump_front_right.png",
+        "master_sha256": "155470fe06297ed35106e7249497318d199c92b52950b849d4caa0db00a2eb63"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V032": {
+      "id": "V032",
+      "name": "Planter Stone Flowers Large",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V032_Planter_Stone_Flowers_Large.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        70
+      ],
+      "origin": [
+        64,
+        70
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flowers",
+        "planter",
+        "stone",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_large.png",
+        "master_sha256": "e489868e43b8e8e736a91b04d07190a5d11f9296534c955120eb4bdcee06b389"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V033": {
+      "id": "V033",
+      "name": "Planter Stone Flowers Medium",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V033_Planter_Stone_Flowers_Medium.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        70
+      ],
+      "origin": [
+        48,
+        70
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flowers",
+        "planter",
+        "stone",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_medium.png",
+        "master_sha256": "d2c654d4753941571bda27e633f0d5eea496e55753fbf80fada2bfd18fbaf9eb"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
     "W01": {
       "id": "W01",
       "name": "Clean Pale Stone Wall Block",
@@ -20516,20 +22679,20 @@
         "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895"
       }
     },
-    "W02": {
-      "id": "W02",
-      "name": "Lightly Weathered Stone Wall Block",
+    "W033": {
+      "id": "W033",
+      "name": "Wall Side Left Run",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W033_Wall_Side_Left_Run.png",
       "status": "ready",
       "pixel_size": [
-        64,
-        128
+        160,
+        299
       ],
       "origin": [
-        32,
-        128
+        80,
+        299
       ],
       "collision": {
         "enabled": false,
@@ -20544,130 +22707,45 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 8,
-        "offset_y": 6
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
       },
       "tags": [
-        "architecture",
-        "lightly",
-        "stone",
-        "wall",
-        "walls",
-        "weathered"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989"
-      }
-    },
-    "W03": {
-      "id": "W03",
-      "name": "Broken Stone Wall Block",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.png",
-      "status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "origin": [
-        32,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 8,
-        "offset_y": 6
-      },
-      "tags": [
-        "architecture",
-        "block",
-        "broken",
-        "stone",
+        "left",
+        "side",
         "wall",
         "walls"
       ],
       "reusable": true,
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W03",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "5e35c9d7bb7dbf1e74d17ff8a525cc1c21313c66277b6b16a3980b04ea3c282e",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W03"
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_left_run.png",
+        "master_sha256": "82f03a03961895846d44d968cacacd1327e1df82ab30c9f930cb6336631daca8"
       },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
       "qa_approval": {
         "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "5e35c9d7bb7dbf1e74d17ff8a525cc1c21313c66277b6b16a3980b04ea3c282e"
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
-    "W04": {
-      "id": "W04",
-      "name": "Cracked Stone Wall Block",
+    "W034": {
+      "id": "W034",
+      "name": "Wall Side Right Run",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W034_Wall_Side_Right_Run.png",
       "status": "ready",
       "pixel_size": [
-        64,
-        128
+        160,
+        318
       ],
       "origin": [
-        32,
-        128
+        80,
+        318
       ],
       "collision": {
         "enabled": false,
@@ -20682,185 +22760,29 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 8,
-        "offset_y": 6
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
       },
       "tags": [
-        "architecture",
-        "block",
-        "cracked",
-        "stone",
+        "right",
+        "side",
         "wall",
         "walls"
       ],
       "reusable": true,
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W04",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "48497b476a14603dcc24a99b3c0fca9241d8d20c0d52b1fcaa72e3c3d12ae7c5",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W04"
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_right_run.png",
+        "master_sha256": "1a1491d24bea94e6865d5d621e3a3a50195c32130a9efe941a7aa3c11f091160"
       },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
       "qa_approval": {
         "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "48497b476a14603dcc24a99b3c0fca9241d8d20c0d52b1fcaa72e3c3d12ae7c5"
-      }
-    },
-    "W05": {
-      "id": "W05",
-      "name": "Wall Block with Ivy Base",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.png",
-      "status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "origin": [
-        32,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 8,
-        "offset_y": 6
-      },
-      "tags": [
-        "architecture",
-        "block",
-        "ivy",
-        "stone",
-        "wall",
-        "walls",
-        "with"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W05",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.json",
-        "sha256": "9795a76879b20a18027014b172947ff8146043351f2843cd852deff1b53978e4",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W05"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "9795a76879b20a18027014b172947ff8146043351f2843cd852deff1b53978e4"
-      }
-    },
-    "W06": {
-      "id": "W06",
-      "name": "Wall Block with Flower Growth",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.png",
-      "status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "origin": [
-        32,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 8,
-        "offset_y": 6
-      },
-      "tags": [
-        "architecture",
-        "block",
-        "flower",
-        "stone",
-        "wall",
-        "walls",
-        "with"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W06",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.json",
-        "sha256": "9bce22c7f2725f53e2766c0de1652e058552f088d57a719495d928028fdc1c98",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W06"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "9bce22c7f2725f53e2766c0de1652e058552f088d57a719495d928028fdc1c98"
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
     "W07": {

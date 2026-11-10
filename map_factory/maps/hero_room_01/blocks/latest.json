@@ -1,23 +1,23 @@
 {
   "layer_schema_version": 1,
   "five_level_map": {
-    "background": 7,
+    "background": 30,
     "ground": 3,
-    "walls": 57,
-    "decorations": 60,
-    "shadows": 116
+    "walls": 47,
+    "decorations": 72,
+    "shadows": 106
   },
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 17,
+  "version": 18,
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "block_count": 127,
-  "unique_asset_count": 69,
+  "block_count": 152,
+  "unique_asset_count": 89,
   "reused_asset_ids": [
     "A01",
     "A05",
@@ -35,6 +35,20 @@
     "D03",
     "D04",
     "D05",
+    "E025",
+    "E026",
+    "E027",
+    "E028",
+    "E029",
+    "E030",
+    "E031",
+    "E033",
+    "E034",
+    "E036",
+    "E037",
+    "E038",
+    "E039",
+    "E040",
     "F01",
     "F05_south",
     "F06_north",
@@ -74,12 +88,18 @@
     "R09",
     "R10",
     "R11",
+    "V025",
+    "V026",
+    "V027",
+    "V028",
+    "V029",
+    "V030",
+    "V031",
+    "V032",
+    "V033",
     "W01",
-    "W02",
-    "W03",
-    "W04",
-    "W05",
-    "W06",
+    "W033",
+    "W034",
     "W07",
     "W08",
     "W09",
@@ -564,6 +584,1119 @@
           0
         ],
         "identity": "B06"
+      }
+    },
+    {
+      "instance_id": "CoastArchFarLeft",
+      "asset_id": "E036",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E036_Rock_Arch_Far_Left.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        160,
+        75
+      ],
+      "anchor": [
+        80,
+        75
+      ],
+      "layer": "background_objects",
+      "position": [
+        170,
+        300
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "arch",
+        "environment",
+        "far",
+        "left",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/rock_arch_far_left.png",
+        "master_sha256": "8a0812ebc3f53efc137940ff7b08d5e980b3fbdc51687d11748385ee5c8973d9"
+      }
+    },
+    {
+      "instance_id": "CoastArchFarRight",
+      "asset_id": "E037",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E037_Rock_Arch_Far_Right.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        160,
+        74
+      ],
+      "anchor": [
+        80,
+        74
+      ],
+      "layer": "background_objects",
+      "position": [
+        1380,
+        300
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "arch",
+        "environment",
+        "far",
+        "right",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/rock_arch_far_right.png",
+        "master_sha256": "8ff4b19b5809acf3027cea1c56ba54322ce989271c77181843032e9704a87255"
+      }
+    },
+    {
+      "instance_id": "CoastStackTallLeft",
+      "asset_id": "E039",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E039_Sea_Stack_Tall_B.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        547
+      ],
+      "anchor": [
+        64,
+        547
+      ],
+      "layer": "background_objects",
+      "position": [
+        70,
+        640
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_b.png",
+        "master_sha256": "985a11930ecb8a43b171fdd6b268082178048a982d66084ec7768c14c19340b0"
+      }
+    },
+    {
+      "instance_id": "CoastStackTallRight",
+      "asset_id": "E038",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E038_Sea_Stack_Tall_A.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        310
+      ],
+      "anchor": [
+        64,
+        310
+      ],
+      "layer": "background_objects",
+      "position": [
+        1470,
+        600
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_a.png",
+        "master_sha256": "506de1a1ec5988535ce01d24c3360412bf77a93275e255c1bc8e3309f06cd691"
+      }
+    },
+    {
+      "instance_id": "CoastStackLow",
+      "asset_id": "E040",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E040_Sea_Stack_Tall_C.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        209
+      ],
+      "anchor": [
+        64,
+        209
+      ],
+      "layer": "background_objects",
+      "position": [
+        1400,
+        740
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_c.png",
+        "master_sha256": "9ad23cb1d0269565af20967a18cdb55828847b2987aeecf8ec99894ad7a5d715"
+      }
+    },
+    {
+      "instance_id": "SeaFoamLeft",
+      "asset_id": "E033",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E033_Foam_Patch_A.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        192,
+        91
+      ],
+      "anchor": [
+        96,
+        91
+      ],
+      "layer": "background_objects",
+      "position": [
+        140,
+        760
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "foam",
+        "water"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/foam_patch_a.png",
+        "master_sha256": "fd7bde47fc2cdb692243fef021008cf58a00eae1a8bc90c5cf244f1d3dcc05f2"
+      }
+    },
+    {
+      "instance_id": "SeaFoamRight",
+      "asset_id": "E034",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E034_Foam_Patch_B.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        192,
+        58
+      ],
+      "anchor": [
+        96,
+        58
+      ],
+      "layer": "background_objects",
+      "position": [
+        1380,
+        800
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "foam",
+        "water"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/foam_patch_b.png",
+        "master_sha256": "d3238aeebf41cb0f303718e10de3979abf6845614bdf0f0378f0cb72435d5fb1"
+      }
+    },
+    {
+      "instance_id": "CliffFrontLeftOuter",
+      "asset_id": "E026",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        212
+      ],
+      "anchor": [
+        160,
+        212
+      ],
+      "layer": "background_objects",
+      "position": [
+        300,
+        985
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
+        "master_sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84"
+      }
+    },
+    {
+      "instance_id": "CliffFrontLeftInner",
+      "asset_id": "E025",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E025_Cliff_Face_Front_A.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        155
+      ],
+      "anchor": [
+        160,
+        155
+      ],
+      "layer": "background_objects",
+      "position": [
+        520,
+        930
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_a.png",
+        "master_sha256": "ca5208627b47277d4701855f4cc6a9687536827cfae6779a342a21f40d68f888"
+      }
+    },
+    {
+      "instance_id": "CliffFrontRightInner",
+      "asset_id": "E027",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        210
+      ],
+      "anchor": [
+        160,
+        210
+      ],
+      "layer": "background_objects",
+      "position": [
+        1060,
+        1010
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_c.png",
+        "master_sha256": "00afb4586c6cc8ef202139db006fed79afd08fb7523c307932fc672d1d27e0c9"
+      }
+    },
+    {
+      "instance_id": "CliffFrontRightOuter",
+      "asset_id": "E026",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        212
+      ],
+      "anchor": [
+        160,
+        212
+      ],
+      "layer": "background_objects",
+      "position": [
+        1270,
+        985
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
+        "master_sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84"
+      }
+    },
+    {
+      "instance_id": "CliffFoamLeftOuter",
+      "asset_id": "E029",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        60
+      ],
+      "anchor": [
+        160,
+        60
+      ],
+      "layer": "background_objects",
+      "position": [
+        300,
+        1000
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
+        "master_sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384"
+      }
+    },
+    {
+      "instance_id": "CliffFoamLeftInner",
+      "asset_id": "E029",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        60
+      ],
+      "anchor": [
+        160,
+        60
+      ],
+      "layer": "background_objects",
+      "position": [
+        520,
+        960
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
+        "master_sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384"
+      }
+    },
+    {
+      "instance_id": "CliffFoamRightInner",
+      "asset_id": "E029",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        60
+      ],
+      "anchor": [
+        160,
+        60
+      ],
+      "layer": "background_objects",
+      "position": [
+        1060,
+        1015
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
+        "master_sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384"
+      }
+    },
+    {
+      "instance_id": "CliffFoamRightOuter",
+      "asset_id": "E029",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        60
+      ],
+      "anchor": [
+        160,
+        60
+      ],
+      "layer": "background_objects",
+      "position": [
+        1270,
+        1000
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
+        "master_sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384"
+      }
+    },
+    {
+      "instance_id": "CliffRubbleLeft",
+      "asset_id": "E028",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E028_Cliff_Rubble_Cluster.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        56
+      ],
+      "anchor": [
+        64,
+        56
+      ],
+      "layer": "background_objects",
+      "position": [
+        200,
+        1005
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "rock",
+        "rubble"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_rubble_cluster.png",
+        "master_sha256": "862b79ccfbecc3a7948b56b8a23747dea05bf0589d74b5b476f41c3606cd3e78"
+      }
+    },
+    {
+      "instance_id": "CliffRubbleRight",
+      "asset_id": "E028",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E028_Cliff_Rubble_Cluster.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        56
+      ],
+      "anchor": [
+        64,
+        56
+      ],
+      "layer": "background_objects",
+      "position": [
+        1340,
+        1005
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "rock",
+        "rubble"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_rubble_cluster.png",
+        "master_sha256": "862b79ccfbecc3a7948b56b8a23747dea05bf0589d74b5b476f41c3606cd3e78"
+      }
+    },
+    {
+      "instance_id": "CliffSideLeftUpper",
+      "asset_id": "E027",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        210
+      ],
+      "anchor": [
+        160,
+        210
+      ],
+      "layer": "background_objects",
+      "position": [
+        215,
+        520
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_c.png",
+        "master_sha256": "00afb4586c6cc8ef202139db006fed79afd08fb7523c307932fc672d1d27e0c9"
+      }
+    },
+    {
+      "instance_id": "CliffSideLeftLower",
+      "asset_id": "E026",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        212
+      ],
+      "anchor": [
+        160,
+        212
+      ],
+      "layer": "background_objects",
+      "position": [
+        215,
+        760
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
+        "master_sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84"
+      }
+    },
+    {
+      "instance_id": "CliffSideRightUpper",
+      "asset_id": "E026",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        212
+      ],
+      "anchor": [
+        160,
+        212
+      ],
+      "layer": "background_objects",
+      "position": [
+        1325,
+        520
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
+        "master_sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84"
+      }
+    },
+    {
+      "instance_id": "CliffSideRightLower",
+      "asset_id": "E027",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        210
+      ],
+      "anchor": [
+        160,
+        210
+      ],
+      "layer": "background_objects",
+      "position": [
+        1325,
+        760
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_c.png",
+        "master_sha256": "00afb4586c6cc8ef202139db006fed79afd08fb7523c307932fc672d1d27e0c9"
       }
     },
     {
@@ -1840,73 +2973,6 @@
       }
     },
     {
-      "instance_id": "PerimeterWall_00_01",
-      "asset_id": "W01",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        258.0,
-        353
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "clean",
-        "pale",
-        "stone",
-        "wall",
-        "walls"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W01"
-      }
-    },
-    {
       "instance_id": "PerimeterWall_04_01",
       "asset_id": "W08",
       "category": "walls",
@@ -2043,93 +3109,26 @@
       }
     },
     {
-      "instance_id": "PerimeterWall_16_01",
-      "asset_id": "W02",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        1282.0,
-        353
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "lightly",
-        "stone",
-        "wall",
-        "walls",
-        "weathered"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
-      }
-    },
-    {
       "instance_id": "PerimeterWall_00_02",
-      "asset_id": "W03",
+      "asset_id": "W033",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W033_Wall_Side_Left_Run.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        160,
+        299
       ],
       "anchor": [
-        32,
-        128
+        80,
+        299
       ],
       "layer": "back_objects",
       "position": [
-        258.0,
-        417
+        262,
+        480
       ],
-      "scale": 1.5,
+      "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2151,52 +3150,38 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "block",
-        "broken",
-        "stone",
+        "left",
+        "side",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W03",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "5e35c9d7bb7dbf1e74d17ff8a525cc1c21313c66277b6b16a3980b04ea3c282e",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W03"
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_left_run.png",
+        "master_sha256": "82f03a03961895846d44d968cacacd1327e1df82ab30c9f930cb6336631daca8"
       }
     },
     {
       "instance_id": "PerimeterWall_16_02",
-      "asset_id": "W02",
+      "asset_id": "W034",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W034_Wall_Side_Right_Run.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        160,
+        318
       ],
       "anchor": [
-        32,
-        128
+        80,
+        318
       ],
       "layer": "back_objects",
       "position": [
-        1282.0,
-        417
+        1282,
+        480
       ],
-      "scale": 1.5,
+      "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2218,455 +3203,38 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "lightly",
-        "stone",
-        "wall",
-        "walls",
-        "weathered"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_00_03",
-      "asset_id": "W01",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        258.0,
-        481
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "clean",
-        "pale",
-        "stone",
+        "right",
+        "side",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W01"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_16_03",
-      "asset_id": "W04",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        1282.0,
-        481
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "block",
-        "cracked",
-        "stone",
-        "wall",
-        "walls"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W04",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "48497b476a14603dcc24a99b3c0fca9241d8d20c0d52b1fcaa72e3c3d12ae7c5",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W04"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_00_04",
-      "asset_id": "W01",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        258.0,
-        545
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "clean",
-        "pale",
-        "stone",
-        "wall",
-        "walls"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W01"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_16_04",
-      "asset_id": "W02",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        1282.0,
-        545
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "lightly",
-        "stone",
-        "wall",
-        "walls",
-        "weathered"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_00_05",
-      "asset_id": "W05",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        258.0,
-        609
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "block",
-        "ivy",
-        "stone",
-        "wall",
-        "walls",
-        "with"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W05",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.json",
-        "sha256": "9795a76879b20a18027014b172947ff8146043351f2843cd852deff1b53978e4",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W05"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_16_05",
-      "asset_id": "W02",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        1282.0,
-        609
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "lightly",
-        "stone",
-        "wall",
-        "walls",
-        "weathered"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "253a06e3c83788ce56610c902d40cccc6543a33bf6d07f410f57a47216c85989",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W02"
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_right_run.png",
+        "master_sha256": "1a1491d24bea94e6865d5d621e3a3a50195c32130a9efe941a7aa3c11f091160"
       }
     },
     {
       "instance_id": "PerimeterWall_00_06",
-      "asset_id": "W01",
+      "asset_id": "W033",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W033_Wall_Side_Left_Run.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        160,
+        299
       ],
       "anchor": [
-        32,
-        128
+        80,
+        299
       ],
       "layer": "back_objects",
       "position": [
-        258.0,
-        673
+        262,
+        740
       ],
-      "scale": 1.5,
+      "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2688,52 +3256,38 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "clean",
-        "pale",
-        "stone",
+        "left",
+        "side",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.json",
-        "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W01"
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_left_run.png",
+        "master_sha256": "82f03a03961895846d44d968cacacd1327e1df82ab30c9f930cb6336631daca8"
       }
     },
     {
       "instance_id": "PerimeterWall_16_06",
-      "asset_id": "W06",
+      "asset_id": "W034",
       "category": "walls",
       "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.png",
+      "texture_path": "res://map_factory/parts/walls/W034_Wall_Side_Right_Run.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        160,
+        318
       ],
       "anchor": [
-        32,
-        128
+        80,
+        318
       ],
       "layer": "back_objects",
       "position": [
-        1282.0,
-        673
+        1282,
+        740
       ],
-      "scale": 1.5,
+      "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2755,98 +3309,15 @@
         "offset_y": 4
       },
       "tags": [
-        "architecture",
-        "block",
-        "flower",
-        "stone",
-        "wall",
-        "walls",
-        "with"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W06",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.json",
-        "sha256": "9bce22c7f2725f53e2766c0de1652e058552f088d57a719495d928028fdc1c98",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W06"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_00_07",
-      "asset_id": "W09",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        258.0,
-        737
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "block",
-        "corner",
-        "outer",
-        "stone",
+        "right",
+        "side",
         "wall",
         "walls"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W09",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.json",
-        "sha256": "777a289eb4b5ed5adaa13b7f615e54be83d25059b6aa986e8b2810fca4892be8",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W09"
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_right_run.png",
+        "master_sha256": "1a1491d24bea94e6865d5d621e3a3a50195c32130a9efe941a7aa3c11f091160"
       }
     },
     {
@@ -2983,74 +3454,6 @@
           128
         ],
         "identity": "W08"
-      }
-    },
-    {
-      "instance_id": "PerimeterWall_16_07",
-      "asset_id": "W09",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png",
-      "asset_status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "anchor": [
-        32,
-        128
-      ],
-      "layer": "back_objects",
-      "position": [
-        1282.0,
-        737
-      ],
-      "scale": 1.5,
-      "rotation_degrees": 0,
-      "flip_h": false,
-      "z_index": 0,
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 4
-      },
-      "tags": [
-        "architecture",
-        "block",
-        "corner",
-        "outer",
-        "stone",
-        "wall",
-        "walls"
-      ],
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "W09",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.json",
-        "sha256": "777a289eb4b5ed5adaa13b7f615e54be83d25059b6aa986e8b2810fca4892be8",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "W09"
       }
     },
     {
@@ -7998,6 +8401,430 @@
       }
     },
     {
+      "instance_id": "FrontPlanterLeft",
+      "asset_id": "V032",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V032_Planter_Stone_Flowers_Large.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        70
+      ],
+      "anchor": [
+        64,
+        70
+      ],
+      "layer": "objects",
+      "position": [
+        310,
+        800
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flowers",
+        "planter",
+        "stone",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_large.png",
+        "master_sha256": "e489868e43b8e8e736a91b04d07190a5d11f9296534c955120eb4bdcee06b389"
+      }
+    },
+    {
+      "instance_id": "FrontPlanterRight",
+      "asset_id": "V032",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V032_Planter_Stone_Flowers_Large.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        70
+      ],
+      "anchor": [
+        64,
+        70
+      ],
+      "layer": "objects",
+      "position": [
+        1240,
+        800
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flowers",
+        "planter",
+        "stone",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_large.png",
+        "master_sha256": "e489868e43b8e8e736a91b04d07190a5d11f9296534c955120eb4bdcee06b389"
+      }
+    },
+    {
+      "instance_id": "FrontPlanterLeftInner",
+      "asset_id": "V033",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V033_Planter_Stone_Flowers_Medium.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        96,
+        70
+      ],
+      "anchor": [
+        48,
+        70
+      ],
+      "layer": "objects",
+      "position": [
+        560,
+        830
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flowers",
+        "planter",
+        "stone",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_medium.png",
+        "master_sha256": "d2c654d4753941571bda27e633f0d5eea496e55753fbf80fada2bfd18fbaf9eb"
+      }
+    },
+    {
+      "instance_id": "FrontPlanterRightInner",
+      "asset_id": "V033",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V033_Planter_Stone_Flowers_Medium.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        96,
+        70
+      ],
+      "anchor": [
+        48,
+        70
+      ],
+      "layer": "objects",
+      "position": [
+        980,
+        830
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flowers",
+        "planter",
+        "stone",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_medium.png",
+        "master_sha256": "d2c654d4753941571bda27e633f0d5eea496e55753fbf80fada2bfd18fbaf9eb"
+      }
+    },
+    {
+      "instance_id": "FrontMoundBlue",
+      "asset_id": "V025",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V025_Flower_Mound_Blue.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        96,
+        64
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        440,
+        815
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue",
+        "flower",
+        "mound",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/flower_mound_blue.png",
+        "master_sha256": "c303c9d4e12f571a53a7899c90a84e3295edaf95893ac60b7a6922c3f43b387a"
+      }
+    },
+    {
+      "instance_id": "FrontMoundWhite",
+      "asset_id": "V026",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V026_Flower_Mound_White.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        96,
+        60
+      ],
+      "anchor": [
+        48,
+        60
+      ],
+      "layer": "objects",
+      "position": [
+        1110,
+        815
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flower",
+        "mound",
+        "vegetation",
+        "white"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/flower_mound_white.png",
+        "master_sha256": "504e7dec761646bd547dc1e75b21c0e22f4ad2f96cd1624ac4301cb8d8934ae2"
+      }
+    },
+    {
+      "instance_id": "FrontPalmLeft",
+      "asset_id": "V030",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V030_Palm_Clump_Front_Left.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        97
+      ],
+      "anchor": [
+        64,
+        97
+      ],
+      "layer": "objects",
+      "position": [
+        258,
+        770
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "front",
+        "left",
+        "palm",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/palm_clump_front_left.png",
+        "master_sha256": "703b289b91da084d9434578538259d15b2c79639233c3b20e4529145bd59f934"
+      }
+    },
+    {
+      "instance_id": "FrontPalmRight",
+      "asset_id": "V031",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V031_Palm_Clump_Front_Right.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        128,
+        80
+      ],
+      "anchor": [
+        64,
+        80
+      ],
+      "layer": "objects",
+      "position": [
+        1285,
+        770
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "front",
+        "palm",
+        "right",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/palm_clump_front_right.png",
+        "master_sha256": "155470fe06297ed35106e7249497318d199c92b52950b849d4caa0db00a2eb63"
+      }
+    },
+    {
       "instance_id": "TerraceRockFrontLeft",
       "asset_id": "B03",
       "category": "environment",
@@ -9015,6 +9842,322 @@
           64
         ],
         "identity": "L05"
+      }
+    },
+    {
+      "instance_id": "TerraceCornerLeft",
+      "asset_id": "E030",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E030_Terrace_Edge_Corner_Left.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        119
+      ],
+      "anchor": [
+        128,
+        119
+      ],
+      "layer": "front_objects",
+      "position": [
+        262,
+        905
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "edge",
+        "environment",
+        "left",
+        "terrace"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_left.png",
+        "master_sha256": "dc6c131321c6a8c0f4dcfd461b8e327403c834c2eb8895421785f23c7df0983a"
+      }
+    },
+    {
+      "instance_id": "TerraceCornerRight",
+      "asset_id": "E031",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E031_Terrace_Edge_Corner_Right.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        256,
+        109
+      ],
+      "anchor": [
+        128,
+        109
+      ],
+      "layer": "front_objects",
+      "position": [
+        1280,
+        905
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "edge",
+        "environment",
+        "right",
+        "terrace"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_right.png",
+        "master_sha256": "872b71b30ba704a44f482611e0bb04c673fb413d1b6de5c7081bae0726d8a1cd"
+      }
+    },
+    {
+      "instance_id": "BackWallVineLeft",
+      "asset_id": "V027",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V027_Hanging_Vine_Long.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        40,
+        159
+      ],
+      "anchor": [
+        20,
+        159
+      ],
+      "layer": "front_objects",
+      "position": [
+        322,
+        300
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "hanging",
+        "vegetation",
+        "vine"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/hanging_vine_long.png",
+        "master_sha256": "7467570e5a66d12c1555dad1d8c2cf6703839ad2c540fd22510d7bdf03e99953"
+      }
+    },
+    {
+      "instance_id": "BackWallVineRight",
+      "asset_id": "V027",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V027_Hanging_Vine_Long.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        40,
+        159
+      ],
+      "anchor": [
+        20,
+        159
+      ],
+      "layer": "front_objects",
+      "position": [
+        1154,
+        300
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "hanging",
+        "vegetation",
+        "vine"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/hanging_vine_long.png",
+        "master_sha256": "7467570e5a66d12c1555dad1d8c2cf6703839ad2c540fd22510d7bdf03e99953"
+      }
+    },
+    {
+      "instance_id": "BackWallIvyLeft",
+      "asset_id": "V028",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V028_Ivy_Tuft_Wall_A.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        96,
+        106
+      ],
+      "anchor": [
+        48,
+        106
+      ],
+      "layer": "front_objects",
+      "position": [
+        420,
+        210
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "vegetation",
+        "wall"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_a.png",
+        "master_sha256": "29d0ff1c7c5057d8c97aa6f5e2a17bf3a0b3b61154159ad04ef13c38eaf6c9a9"
+      }
+    },
+    {
+      "instance_id": "BackWallIvyRight",
+      "asset_id": "V029",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V029_Ivy_Tuft_Wall_B.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        96,
+        103
+      ],
+      "anchor": [
+        48,
+        103
+      ],
+      "layer": "front_objects",
+      "position": [
+        1060,
+        210
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "vegetation",
+        "wall"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_b.png",
+        "master_sha256": "9627183ff97e9a31b82b8dc061fa842136cbd3bb35e7609e8445e5dc8f42be41"
       }
     }
   ],
