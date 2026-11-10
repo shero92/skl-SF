@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0039",
+  "task_id": "TASK-0135",
+  "batch": "B1",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 1,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_review",
+  "items": [
+    {
+      "id": "study_wooden_stool",
+      "request_id": "ART-0039",
+      "master_path": "assets_hd/furniture/study_stool/v001/study_wooden_stool.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0039/study_wooden_stool.png",
+      "sha256": "4d0b2936583ff4abd81cf57ae2648d7d186f98701e2da72cb67a09d93bf9b86f",
+      "pixel_size": [
+        1190,
+        1322
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        150,
+        82,
+        1020,
+        1243
+      ],
+      "origin": [
+        585.0,
+        1242
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "intended_native_canvas": [
+        36,
+        40
+      ],
+      "requested_master_minimum": [
+        500,
+        560
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 24.166666666666668,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0039/v001/native_review/study_wooden_stool.png",
+      "native_review_sha256": "46b22f401a8eb1052ef5b2b1fefb4947227c59cbd278a497a8987959ad1cb5ce",
+      "native_source_region_all_nonzero_alpha": [
+        0,
+        19,
+        1180,
+        1322
+      ],
+      "native_resize_size": [
+        36,
+        40
+      ],
+      "native_offset": [
+        0,
+        0,
+        36,
+        40
+      ],
+      "native_uniform_scale": 0.030508474576271188,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "not applicable",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/furniture/table_large/table_large_01.png",
+        "assets_hd/furniture/bench_plain/bench_plain_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0039/v001/requests/study_wooden_stool.txt",
+      "prompt_text": "ART-0039 study_wooden_stool â€” one independent transparent RGBA PNG environment sprite, a single complete small round-seat warm dark-oak wooden stool, south-facing three-quarter tactical RPG view from above at about 30 degrees, matching SKL-SF assets_hd/furniture/bench_plain/bench_plain_01.png viewed earlier. Round thick plank seat with lighter top visible, three clearly visible turned legs and a wooden cross-rail, rich oak grain in hard high-detail pixel clusters, 1-2 native pixel dark brown silhouette outline, warm upper-left lighting. Native target 36x40, master canvas 1024x1152 or higher with 3% transparent margins, entire stool visible. No cushion, no cloth, no floor, no ground, no contact shadow or cast shadow, no other furniture, no frame, text, watermark or characters. Not a sheet, exactly one stool.",
+      "source_attempt_name": "exec-b2ae0ba5-a049-4c66-bbb5-99da24294b6e.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": []
+    }
+  ],
+  "rejected_attempts": []
+}

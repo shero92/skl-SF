@@ -1,0 +1,240 @@
+{
+  "task_id": "TASK-0135",
+  "batch": "B1",
+  "destination": "H:\\shining force\\skl-SF",
+  "cache_required": false,
+  "files": [
+    {
+      "path": "assets_hd/furniture/study_table_views/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/furniture/study_table_views/v001/hero_study_table_east.png",
+      "sha256": "36c47434340e3f1cd52c78e074907b30aff653596b08e784a6479ce33ca00b7b"
+    },
+    {
+      "path": "assets_hd/furniture/study_table_views/v001/hero_study_table_north.png",
+      "sha256": "15c67a248c310c1feb3754eeebb0572e3152090d9c1f94ea71be3202f86fedbc"
+    },
+    {
+      "path": "assets_hd/furniture/study_table_views/v001/hero_study_table_south.png",
+      "sha256": "1b3ea8a1ee93dcbb6d01747ec70462f0664422e32b23b37a68badb7a0cbb6ff3"
+    },
+    {
+      "path": "assets_hd/furniture/study_table_views/v001/hero_study_table_west.png",
+      "sha256": "a33878c952c3dcb9790cbbc6a69c34c47bfd2b10e201730bb4591f79affa0acb"
+    },
+    {
+      "path": "assets_hd/furniture/study_table_views/v001/rejected/hero_study_table_south_attempt_01.png",
+      "sha256": "2d6528ce09a371bd656d7c06274112874b1d434a8aab12a9b1416d0308982674"
+    },
+    {
+      "path": "assets_hd/furniture/study_stool/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/furniture/study_stool/v001/study_wooden_stool.png",
+      "sha256": "4d0b2936583ff4abd81cf57ae2648d7d186f98701e2da72cb67a09d93bf9b86f"
+    },
+    {
+      "path": "assets_hd/plants/blue_white_planter/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/plants/blue_white_planter/v001/hero_blue_white_planter.png",
+      "sha256": "7a4194588eaada83f4e210d6d76701cf2c6c6ab65bc6ea200b1955923f9f2a6d"
+    },
+    {
+      "path": "assets_hd/plants/blue_white_planter/v001/rejected/hero_blue_white_planter_attempt_01.png",
+      "sha256": "3393626b700fcd4ce518f500e240c38988fc7bfa6a064e13270de6a0eeb3ac7f"
+    },
+    {
+      "path": "assets_hd/architecture/entrance_stairs/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/architecture/entrance_stairs/v001/hero_entrance_stairs_south.png",
+      "sha256": "1ad183f2a4054081d747003c1c377bd0557a1d50f83fa56953c2a88949881adc"
+    },
+    {
+      "path": "game_factory/environment/batch_B1_20261110/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/batch_B1_20261110/generation_records.json",
+      "sha256": "b7db26c689b5efd2c2200a20c634ebb8f0e6394aef71d969e44eeff3b06d9937"
+    },
+    {
+      "path": "game_factory/environment/batch_B1_20261110/prepare_review.py",
+      "sha256": "c267ce6bd9e77a96f5e33c9aafe53c5d21c155b86688f042b145a65f0bde0f52"
+    },
+    {
+      "path": "game_factory/environment/batch_B1_20261110/production_spec.json",
+      "sha256": "5846c63d00ec99260d3d02db5646b5ea870f065c08dd0beb0140cdfe9cbe55f3"
+    },
+    {
+      "path": "game_factory/environment/batch_B1_20261110/README.md",
+      "sha256": "a83ab8c03823522a147356cf6c4427f176b24d68fb1fd30b99f04bd070f59d5c"
+    },
+    {
+      "path": "game_factory/environment/batch_B1_20261110/review.gd",
+      "sha256": "e6bbf859324e412ea01f5bcc23f807f43968acc4df14dc82a7fa54f66fb907be"
+    },
+    {
+      "path": "game_factory/environment/batch_B1_20261110/technical_qa.json",
+      "sha256": "6b1424f80c8419c10c8c69185d1f9d7a1fb800a1340f02472b5c1cb630c83ad9"
+    },
+    {
+      "path": "game_factory/environment/batch_B1_20261110/verification.json",
+      "sha256": "8c6b06166374baae1168bb2a1dbd1446f34d587f3fd813b111f5ac7c167341db"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/godot_native_review.png",
+      "sha256": "c8a404cda37bfcb0d75135225abcc9cbe1655780aef8005a1eb8baf762fa60d3"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/godot_review_receipt.json",
+      "sha256": "550dee473c3595b1482a044f0147fdc2e59837386c46d7d539f5a91aaaaa84ad"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/manifest.json",
+      "sha256": "20cf11ad2b995a42b74da766239d35013c76c83bb7ee5792b97a73bc85bacd42"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/native_review/hero_study_table_east.png",
+      "sha256": "f332a1aa9345e9f6d7195a1b9797ba58b7aa0ad97bfded07953f926a470fafa2"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/native_review/hero_study_table_north.png",
+      "sha256": "d8168041f32b3f41f360f2c9619e1f753ce3e38e7b9f061bc1c3c9d4a4cdfe43"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/native_review/hero_study_table_south.png",
+      "sha256": "9b164c349fa7dcdc0ce74c4cb882af537ae354b36d666c51812263f7c5f17772"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/native_review/hero_study_table_west.png",
+      "sha256": "f0410521a28389c3331078e177d453c1b52afda49ef38c1b42a49b79ed77e11a"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/README.md",
+      "sha256": "7dfd8d40ae1878f68b37b7668c1bb97bf71e2b851f071ad9b2f3be2e5c5a93dd"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/requests/hero_study_table_east.txt",
+      "sha256": "8d31c4dcfa912f79e550022c49ec274917690daf92db50a50bf667757544b9dd"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/requests/hero_study_table_north.txt",
+      "sha256": "5d85f5738a40724a48aeddc284320a051578dbfc9286bf6eadf63599fb00f28f"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/requests/hero_study_table_south.txt",
+      "sha256": "7c91907cc38099eab5cb2111c10584f67b42370227905b09d94809475c1de628"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/requests/hero_study_table_south_attempt_01.txt",
+      "sha256": "be9dfd312d72a24d4f976858a8682264993524058092455ef6a4b0500523fa75"
+    },
+    {
+      "path": "game_factory/environment/ART-0019/v001/requests/hero_study_table_west.txt",
+      "sha256": "2ba3ff16365f5cf211eee2dd95d9d326025930cfe5c9b504808847eb2a44577a"
+    },
+    {
+      "path": "game_factory/environment/ART-0039/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0039/v001/godot_native_review.png",
+      "sha256": "964106adcb5b9e1a2cd3d96d9ddefa5835ce6d38aa505e35a9b6f256595fb101"
+    },
+    {
+      "path": "game_factory/environment/ART-0039/v001/godot_review_receipt.json",
+      "sha256": "5530ecbb19a2301c2cd60a5c681e69dce2849211f659d34947395a5e8aaa683f"
+    },
+    {
+      "path": "game_factory/environment/ART-0039/v001/manifest.json",
+      "sha256": "6fca773c978b54a1299b2dae94c5bbcfe95d28f5c4b7c3d5b088bbc934927919"
+    },
+    {
+      "path": "game_factory/environment/ART-0039/v001/native_review/study_wooden_stool.png",
+      "sha256": "46b22f401a8eb1052ef5b2b1fefb4947227c59cbd278a497a8987959ad1cb5ce"
+    },
+    {
+      "path": "game_factory/environment/ART-0039/v001/README.md",
+      "sha256": "ae11b269f8cb2b7facda044fef272db626715199e47a941e1b5344fd7128bcf8"
+    },
+    {
+      "path": "game_factory/environment/ART-0039/v001/requests/study_wooden_stool.txt",
+      "sha256": "3a3e465916d50be210535c6a1c0aae66c6bd47be1c41aadb67009180472cfc29"
+    },
+    {
+      "path": "game_factory/environment/ART-0011/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0011/v001/godot_native_review.png",
+      "sha256": "8f4bb64d6908c69c3ded68051948241c758b01c07ae8ab6ddff60f668f59690c"
+    },
+    {
+      "path": "game_factory/environment/ART-0011/v001/godot_review_receipt.json",
+      "sha256": "048fb32dbf79675e4f07dec78f28392da54c809edb62570f530883a8c7f50171"
+    },
+    {
+      "path": "game_factory/environment/ART-0011/v001/manifest.json",
+      "sha256": "a21ee641c1661f265807c4712ae1cdc7e0ad9e11f01fb6d88678f02cd34ce26f"
+    },
+    {
+      "path": "game_factory/environment/ART-0011/v001/native_review/hero_blue_white_planter.png",
+      "sha256": "29ac5f9e55c07cae92387d639b49513dd753b1fc32b654360cb5110eb0fe55dc"
+    },
+    {
+      "path": "game_factory/environment/ART-0011/v001/README.md",
+      "sha256": "0eab90315953c16fd1ddc8c68e543efbf5f4958b524e5edcd03c4229b577cf9f"
+    },
+    {
+      "path": "game_factory/environment/ART-0011/v001/requests/hero_blue_white_planter.txt",
+      "sha256": "827476cd1213d9f48c238e7e6ad4bbabe75e4398f6de291e9c465732bf822c66"
+    },
+    {
+      "path": "game_factory/environment/ART-0011/v001/requests/hero_blue_white_planter_attempt_01.txt",
+      "sha256": "e21e5eb974037617a4db1878281775653c89fe5984f808d608dfe9e60f1e2f8e"
+    },
+    {
+      "path": "game_factory/environment/ART-0025/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0025/v001/godot_native_review.png",
+      "sha256": "8e1a2193771ba55c39aabe3848eae3ed285b289ef735f379370f2a5e28cd88e4"
+    },
+    {
+      "path": "game_factory/environment/ART-0025/v001/godot_review_receipt.json",
+      "sha256": "79b1df4e55310bec2ae3a5c858924cea137e89014bb2aa396fd7c6d7a9dd5791"
+    },
+    {
+      "path": "game_factory/environment/ART-0025/v001/history.md",
+      "sha256": "383d1c9962b85238297edaa01743776f28f4dba4f34263c261cffdd10634413b"
+    },
+    {
+      "path": "game_factory/environment/ART-0025/v001/manifest.json",
+      "sha256": "7cf1c09a0f6fe902b5c0c5f06284075fcd89444e0eb8cb004b8420757fdc6d89"
+    },
+    {
+      "path": "game_factory/environment/ART-0025/v001/native_review/hero_entrance_stairs_south.png",
+      "sha256": "763028cf537c4284d796599f88c3ef7969439b5b85099fb026ab963d446f24d5"
+    },
+    {
+      "path": "game_factory/environment/ART-0025/v001/README.md",
+      "sha256": "85e927083b858be91e32057052fe327cee7a664b9fcba4f9f14b9c6b8d67c647"
+    },
+    {
+      "path": "game_factory/environment/ART-0025/v001/requests/hero_entrance_stairs_south.txt",
+      "sha256": "7a6b93b521c7861744129fbc1272e972ea5b44d07fa6985efe3146484e564bfd"
+    }
+  ]
+}

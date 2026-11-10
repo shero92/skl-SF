@@ -1,6 +1,6 @@
 ---
 id: ART-0039
-status: requested
+status: delivered
 owner: graphics-specialist
 task: TASK-0102
 dedupe_key: hero_room_study_wooden_stool
@@ -31,3 +31,10 @@ output_paths: .agents/graphics/deliveries/ART-0039/study_wooden_stool.png
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## B1 owner target delivery (TASK-0135)
+- Owner explicitly assigned production against `map_factory/references/hero_room_01_target_20261110.webp`, SHA-256 `4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323`; supersedes older blocked reference/native proposals for this candidate.
+- Independent sources and exact delivery filenames: `.agents/graphics/deliveries/ART-0039/manifest.json`.
+- Actual native review and Godot capture: `game_factory/environment/ART-0039/v001/`.
+- Status delivered means candidate files supplied, not visual approval or complete spec compliance. Actual output size shortfalls and margins are recorded in the manifest. No source upscaling. Footprint/collider and scene calibration remain integration work.
+- Owner review pending; Claude integrates after review. No map/catalog or earlier asset was changed.

@@ -1,0 +1,32 @@
+{
+  "task_id": "TASK-0135",
+  "graphics_validation": {
+    "command": "python tools/graphics_validation.py --changed",
+    "exit_code": 0,
+    "png_checked": 0,
+    "scope_note": "Candidate masters outside production validator scope; independent technical_qa covers seven sources"
+  },
+  "tests": {
+    "initial_command": "python -u tools/run_tests.py --changed",
+    "initial_passed": 74,
+    "total": 80,
+    "initial_failed": [
+      "golden_cyclone_assets",
+      "navigation_grid",
+      "depth_sorting",
+      "character_runtime",
+      "shadow_speed",
+      "candidate_room"
+    ],
+    "recovery": "Godot editor import populated local global class cache; legacy stairs files schema now points to archived original candidate",
+    "rerun_command": "python -u tools/run_tests.py --only golden_cyclone_assets --only navigation_grid --only depth_sorting --only character_runtime --only shadow_speed --only candidate_room --timeout 120",
+    "rerun_passed": 6,
+    "rerun_total": 6,
+    "rerun_exit_code": 0,
+    "all_80_groups_passed_after_recovery": true
+  },
+  "source_quality_status": "needs_review",
+  "literal_master_size_spec_complete": false,
+  "owner_approved": false,
+  "scene_integration_complete": false
+}
