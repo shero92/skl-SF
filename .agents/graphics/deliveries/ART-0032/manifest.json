@@ -1,4 +1,5 @@
 {
+  "request_id": "ART-0032",
   "schema_version": 1,
   "art_request": "ART-0032",
   "task_id": "TASK-0102",
@@ -486,5 +487,43 @@
     "date": "2026-11-10",
     "evidence": "Owner: all what u created i agree, so push and merge",
     "scope": "delivered selected assets only; map calibration remains pending"
-  }
+  },
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/wall_straight_long_a.png",
+      "sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/wall_straight_long_b.png",
+      "sha256": "b550d8c9746cab86a96c2e1d272338291b1b2cf75f1958cd032026ec3163ede5"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/wall_corner_outer_left.png",
+      "sha256": "435d0261df0add6e64d933339506ca31010e7f7fe32dad1e8dde4e4ab1f72948"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/wall_corner_outer_right.png",
+      "sha256": "1329c5509b9ff490b440793af4a414ce4654fc3e167a563d4e4e11c69571c0ae"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/wall_corner_inner_left.png",
+      "sha256": "097ba3ead8898484a9299c2c6570b604db193edba778afd5fb2c411110ddf341"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/wall_corner_inner_right.png",
+      "sha256": "a7f853a84f588af63c8f00c790cfaa3fd7cd551eaee17ef5201c37c344b19226"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/wall_side_left_run.png",
+      "sha256": "82f03a03961895846d44d968cacacd1327e1df82ab30c9f930cb6336631daca8"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/wall_side_right_run.png",
+      "sha256": "1a1491d24bea94e6865d5d621e3a3a50195c32130a9efe941a7aa3c11f091160"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0032/parapet_cap_run.png",
+      "sha256": "fd0a8a676918ed0e780a4275eda906bdca6705990badb2b0c39769dd59cc679d"
+    }
+  ]
 }
