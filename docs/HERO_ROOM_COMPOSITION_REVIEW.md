@@ -29,3 +29,5 @@ Earlier screenshots looked like a **floating rectangular tile grid** with nice i
 The current layout is closer but **not identical to the source**: the illustrated sanctuary has a more organic broken-stone perimeter, richer asymmetrical sky/rock background, stronger sunlight and shadow gradients, and some unique props not yet modeled as separate independent assets. Floor repetition is more apparent than in the source. These require further art and composition iterations, not character changes.
 
 **Current state:** visual_qa=needs_review; do not claim 100% match or human artistic approval yet.
+
+**Update 2026-11-10:** navigation is now connected to player movement (`NavigationGrid`, TASK-0127); see [RUNTIME_INTEGRATION.md](RUNTIME_INTEGRATION.md). The visual statements above are historical.
