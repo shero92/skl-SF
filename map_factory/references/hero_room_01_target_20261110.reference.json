@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "reference identity only; not artistic or room approval",
+  "requirements": [
+    {
+      "kind": "reference",
+      "status": "owner_supplied",
+      "path": "map_factory/references/hero_room_01_target_20261110.webp",
+      "sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+      "pixel_size": [1125, 750],
+      "provenance": {
+        "kind": "owner_chat_attachment",
+        "source": "Owner chat 2026-11-10, attachment 1.webp (WebP RGBA, 488938 bytes)",
+        "relation": "Same composition as map_factory/references/hero_room_01_target_20261103.png (1536x1024, sha256 47a7855c...); mean absolute pixel difference 6.5/255 at 768x512, so it is a re-encoded/scaled copy of the same design, not a new design and not byte-identical. Scale factor to the 1536x1024 canvas: 1.3653."
+      }
+    }
+  ]
+}
