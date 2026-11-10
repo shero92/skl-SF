@@ -75,10 +75,11 @@ func equip(unit: Dictionary, weapon_id: String) -> Dictionary:
 	if reason != "":
 		return {"ok": false, "reason": reason, "previous": unit.get("weapon_id", "")}
 	var previous: String = unit.get("weapon_id", "")
+	var slot: int = unit.inventory.find(weapon_id)
 	unit.inventory.erase(weapon_id)
 	unit.weapon_id = weapon_id
 	if previous != "":
-		unit.inventory.append(previous)
+		unit.inventory.insert(slot, previous) # swap in place, like Shining Force
 	return {"ok": true, "reason": "", "previous": previous}
 
 

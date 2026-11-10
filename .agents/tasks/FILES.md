@@ -139,5 +139,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0132_runtime_docs.md`](TASK-0132_runtime_docs.md)
 - [`TASK-0133_strict_checks_after_regeneration.md`](TASK-0133_strict_checks_after_regeneration.md)
 - [`TASK-0134_hero_room_target_art_spec.md`](TASK-0134_hero_room_target_art_spec.md)
+- [`TASK-0135_hero_room_v0022_props.md`](TASK-0135_hero_room_v0022_props.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

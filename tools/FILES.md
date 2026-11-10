@@ -39,6 +39,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`build_v0019_patch.py`](build_v0019_patch.py)
 - [`build_v0020_patch.py`](build_v0020_patch.py)
 - [`build_v0021_patch.py`](build_v0021_patch.py)
+- [`build_v0022_patch.py`](build_v0022_patch.py)
 - [`candidate_room.py`](candidate_room.py)
 - [`capture_candidate_room.gd`](capture_candidate_room.gd)
 - [`capture_candidate_room.gd.uid`](capture_candidate_room.gd.uid)
