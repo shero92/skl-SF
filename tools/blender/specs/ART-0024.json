@@ -2,7 +2,7 @@
   "art_id": "ART-0024",
   "task": "TASK-0054",
   "builder": "rope_fence",
-  "params": {"height": 0.82, "radius": 0.17, "sag": 0.22, "rope": 0.028},
+  "params": {"height": 0.82, "radius": 0.17, "sag": 0.22, "rope": 0.028, "plinth": 0.3},
   "palette_check": {"min_saturation": 0.3, "hue_deg": [15, 45]},
   "expected_similar": [{"pair": ["hero_rope_swag_west_rail", "hero_rope_swag_east_rail"], "reason": "same post-and-rope design on opposite terrace edges; separately modelled runs with different post offsets, never a mirrored bitmap"}],
   "outputs": [

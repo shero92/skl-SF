@@ -44,6 +44,19 @@ class Specs(unittest.TestCase):
                 spec = bf.load_spec(spec_path)
                 self.assertTrue(spec.get("candidate"))
 
+    def test_connected_shell_options_are_enabled(self):
+        # TASK-0063: connected caps/quoins, cliff contacts, stair newels, cobalt-gold dial and post plinths.
+        wanted = {"ART-0004": ("connect_caps", "quoins"), "ART-0014": ("cliff",), "ART-0022": ("cobalt_ticks",),
+                  "ART-0024": ("plinth",), "ART-0025": ("newel",)}
+        for art_id, keys in wanted.items():
+            params = bf.load_spec(bf.SPECS / f"{art_id}.json")["params"]
+            for key in keys:
+                with self.subTest(art=art_id, key=key):
+                    self.assertTrue(params.get(key), key)
+        v5 = bf.load_spec(bf.SPECS / "candidates/hero_room_01_v5_side_walls.json")
+        self.assertTrue(v5["params"]["coping"])
+        self.assertTrue((bf.SPECS / "candidates/hero_room_01_v4_side_walls.json").exists(), "previous version kept")
+
     def test_invalid_specs_are_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "spec.json"
@@ -220,6 +233,23 @@ class BlenderRenders(unittest.TestCase):
             self.assertAlmostEqual(front[0] - back[0], 64, delta=1)
             self.assertAlmostEqual(front[1] - back[1], 96, delta=1)
             self.assertLess(fence["frame_px"][0], 200, "rope curve bounds do not bloat the frame")
+
+    def test_cliff_depth_variants_and_stair_newel_anchors(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            spec = Path(tmp) / "spec.json"
+            spec.write_text(json.dumps({"builder": "broken_floor_edge", "projection": {"supersample": 1, "samples": 4},
+                                        "params": {"kind": "edge", "seed": 11},
+                                        "outputs": [{"name": "c8", "params": {"cliff": 0.8}},
+                                                    {"name": "c10", "params": {"cliff": 1.0}},
+                                                    {"name": "stairs", "builder": "entrance_stairs", "shadow": False,
+                                                     "params": {"newel": 0.36}}]}))
+            c8, c10, stairs = bf.render(spec, Path(tmp) / "out")
+            h8 = Image.open(Path(tmp) / "out/c8.png").getchannel("A").getbbox()
+            h10 = Image.open(Path(tmp) / "out/c10.png").getchannel("A").getbbox()
+            self.assertGreater(h10[3] - h10[1], h8[3] - h8[1], "10-deep cliff is taller than the 8-deep one")
+            left, right = stairs["anchors_px"]["post_left"], stairs["anchors_px"]["post_right"]
+            self.assertAlmostEqual(left[1], right[1], delta=1, msg="newels share one seam row")
+            self.assertGreater(right[0] - left[0], 150)
 
     def test_wall_facings_are_real_renders_not_bitmap_copies(self):
         with tempfile.TemporaryDirectory() as tmp:

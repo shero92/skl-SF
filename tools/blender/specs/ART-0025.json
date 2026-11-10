@@ -3,7 +3,7 @@
   "task": "TASK-0054",
   "builder": "entrance_stairs",
   "params": {"steps": 3, "tread_width": 2.42, "run": 0.34, "rise": 0.2, "cheek_width": 0.5, "cheek_height": 0.22,
-             "foundation": 0.35, "chips": 4, "seed": 25},
+             "foundation": 0.35, "chips": 4, "seed": 25, "newel": 0.36},
   "palette_check": {"min_saturation": 0.3, "hue_deg": [20, 50]},
   "outputs": [
     {"name": "hero_entrance_stairs_south", "facing": "south", "shadow": false}

@@ -1,0 +1,39 @@
+{
+  "candidate": "hero_room_01_blender_v5",
+  "task": "TASK-0063",
+  "builder": "side_wall_path",
+  "projection": {"world": {"color": [0.72, 0.58, 0.42], "strength": 0.25}},
+  "params": {
+    "height": 1.1,
+    "thickness": 0.45,
+    "row_height": 0.26,
+    "rubble": 2,
+    "stone_base": [0.66, 0.40, 0.14],
+    "stone_dark": [0.33, 0.17, 0.05],
+    "cap_base": [0.76, 0.49, 0.19],
+    "cap_dark": [0.40, 0.22, 0.07],
+    "mortar": [0.16, 0.09, 0.035],
+    "specular": 0.2,
+    "shadow_inside": 4,
+    "coping": true,
+    "ivy": true,
+    "ivy_density": 2.0,
+    "ivy_hang": 0.8,
+    "ivy_flowers": 0.3,
+    "ivy_leaf_scale": 2.0
+  },
+  "palette_check": {"min_saturation": 0.3, "hue_deg": [20, 50]},
+  "outputs": [
+    {
+      "name": "hero_side_wall_west",
+      "facing": "west",
+      "params": {"path": [[1, -1], [1, -3], [0, -3], [0, -7], [1, -7]], "inside": "left", "lean": -0.2, "seed": 41}
+    },
+    {
+      "name": "hero_side_wall_east",
+      "facing": "east",
+      "params": {"path": [[16, -1], [16, -3], [17, -3], [17, -7], [16, -7]], "inside": "right", "lean": 0.2, "seed": 53}
+    }
+  ],
+  "notes": "Hero Room v5 side walls (TASK-0063): v4 unchanged except coping = true, a continuous cap course over the intact stretches plus capped corner pillars so the stepped segments read as one connected wall. v4 stays as the previous version. Unapproved candidate; owner room review required."
+}
