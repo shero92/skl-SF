@@ -132,5 +132,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0125_regenerate_main_outputs.md`](TASK-0125_regenerate_main_outputs.md)
 - [`TASK-0126_regen_skip_workflow_dir.md`](TASK-0126_regen_skip_workflow_dir.md)
 - [`TASK-0127_navigation_player_movement.md`](TASK-0127_navigation_player_movement.md)
+- [`TASK-0128_world_depth_sorting.md`](TASK-0128_world_depth_sorting.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
