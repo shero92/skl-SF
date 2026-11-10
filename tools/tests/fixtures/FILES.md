@@ -11,5 +11,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`shadow_painter_reference.gd`](shadow_painter_reference.gd)
+- [`shadow_painter_reference.gd.uid`](shadow_painter_reference.gd.uid)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

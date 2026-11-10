@@ -142,3 +142,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0138](../tasks/TASK-0138_battle_director.md) | review | claude | TASK-0121 | none |
 | [TASK-0139](../tasks/TASK-0139_weapon_balance_simulation.md) | review | claude | TASK-0121 | none |
 | [TASK-0140](../tasks/TASK-0140_balance_pass_one.md) | review | claude | TASK-0139 | none |
+| [TASK-0141](../tasks/TASK-0141_staff_magic.md) | review | claude | TASK-0140 | none |

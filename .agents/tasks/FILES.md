@@ -145,5 +145,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0138_battle_director.md`](TASK-0138_battle_director.md)
 - [`TASK-0139_weapon_balance_simulation.md`](TASK-0139_weapon_balance_simulation.md)
 - [`TASK-0140_balance_pass_one.md`](TASK-0140_balance_pass_one.md)
+- [`TASK-0141_staff_magic.md`](TASK-0141_staff_magic.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
