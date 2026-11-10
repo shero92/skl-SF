@@ -41,3 +41,5 @@ Owner explicitly assigned this batch and authenticated target. New images only; 
 
 ## Tracking reconciliation
 - Concurrent main allocation used TASK-0136 for Claude equipment menu. This graphics batch uses existing ART-0020 parent TASK-0031. Historical receipt TASK-0136_codex_ae80068bd2.json belongs to commit8fba1dbc703ae76f51ee51b285589a8fc85f551f, not Claude equipment work and not a second bill.
+
+- Review PR: https://github.com/shero92/skl-SF/pull/161 (draft; owner approval/integration pending).
