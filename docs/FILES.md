@@ -42,5 +42,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`REFERENCE_ART_DIRECTION.md`](REFERENCE_ART_DIRECTION.md)
 - [`REPOSITORY_CONSOLIDATION_REPORT.md`](REPOSITORY_CONSOLIDATION_REPORT.md)
 - [`ROOM_BLOCK_QA.md`](ROOM_BLOCK_QA.md)
+- [`RUNTIME_INTEGRATION.md`](RUNTIME_INTEGRATION.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
