@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`connected_ruin_walls/`](connected_ruin_walls/FILES.md)
+- [`entrance_stairs/`](entrance_stairs/FILES.md)
 
 ## Files
 

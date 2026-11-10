@@ -36,7 +36,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0027](../tasks/TASK-0027_hero_room_arch_ground_shadow.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0016 |
 | [TASK-0028](../tasks/TASK-0028_hero_room_door_ground_shadow.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0017 |
 | [TASK-0029](../tasks/TASK-0029_hero_room_wide_stair_shadow.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0018 |
-| [TASK-0030](../tasks/TASK-0030_hero_room_study_table_views.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0019 |
+| [TASK-0030](../tasks/TASK-0030_hero_room_study_table_views.md) | review | codex | TASK-0134 | ART-0019 |
 | [TASK-0031](../tasks/TASK-0031_hero_room_study_bookshelf_views.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0020 |
 | [TASK-0032](../tasks/TASK-0032_hero_room_study_chest_views.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0021 |
 | [TASK-0033](../tasks/TASK-0033_render_the_living_layer_0_background_in_godot.md) | done | codex | TASK-0009 | none |
@@ -143,3 +143,5 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0139](../tasks/TASK-0139_weapon_balance_simulation.md) | review | claude | TASK-0121 | none |
 | [TASK-0140](../tasks/TASK-0140_balance_pass_one.md) | review | claude | TASK-0139 | none |
 | [TASK-0141](../tasks/TASK-0141_staff_magic.md) | review | claude | TASK-0140 | none |
+| [TASK-0142](../tasks/TASK-0142_balance_pass_two.md) | review | claude | TASK-0141 | none |
+| [TASK-0143](../tasks/TASK-0143_hero_save.md) | review | claude | TASK-0136 | none |

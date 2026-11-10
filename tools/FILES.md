@@ -157,6 +157,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`verify_equipment_menu.gd.uid`](verify_equipment_menu.gd.uid)
 - [`verify_golden_cyclone_preview.gd`](verify_golden_cyclone_preview.gd)
 - [`verify_golden_cyclone_preview.gd.uid`](verify_golden_cyclone_preview.gd.uid)
+- [`verify_hero_save.gd`](verify_hero_save.gd)
 - [`verify_hit_timing.gd`](verify_hit_timing.gd)
 - [`verify_hit_timing.gd.uid`](verify_hit_timing.gd.uid)
 - [`verify_main_equipment.gd`](verify_main_equipment.gd)

@@ -23,6 +23,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`game_factory_demo.tscn`](game_factory_demo.tscn)
 - [`game_factory_interactive.tscn`](game_factory_interactive.tscn)
 - [`game_factory_original_room.tscn`](game_factory_original_room.tscn)
+- [`hero_save.gd`](hero_save.gd)
 - [`main.gd`](main.gd)
 - [`main.gd.uid`](main.gd.uid)
 - [`main.tscn`](main.tscn)
