@@ -3,7 +3,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from generate_project_indexes import render
+from generate_project_indexes import WORKFLOW_DIR, list_paths, render
 
 
 class IndexGenerationTests(unittest.TestCase):
@@ -20,6 +20,13 @@ class IndexGenerationTests(unittest.TestCase):
         self.assertNotIn("test_me.py", generated["tools/FILES.md"])
         self.assertIn("F001_Stone_Floor.png", generated["map_factory/parts/floors/FILES.md"])
         self.assertNotIn("build.py", generated["map_factory/parts/floors/FILES.md"])
+
+    def test_workflow_folder_is_not_inventoried(self):
+        # The Actions token may not write .github/workflows, so no generated file may live there.
+        self.assertTrue(WORKFLOW_DIR.startswith(".github/workflows"))
+        root = Path(__file__).resolve().parents[2]
+        self.assertFalse([p for p in list_paths(root) if p.startswith(WORKFLOW_DIR)])
+        self.assertNotIn(".github/workflows/FILES.md", render(list_paths(root)))
 
     def test_order_independent(self):
         paths = ["docs/b.md", "docs/a.md", "project.godot"]
