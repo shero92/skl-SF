@@ -14,7 +14,7 @@ func _capture() -> void:
 	background.size = Vector2(1024, 1024)
 	board.add_child(background)
 	var title := Label.new()
-	title.text = "ART-0034 | CANDIDATES / needs_review | native review prototypes"
+	title.text = "ART-0034 | OWNER APPROVED / scene calibration pending | native review prototypes"
 	title.position = Vector2(16, 12)
 	board.add_child(title)
 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(BASE + "manifest.json"))

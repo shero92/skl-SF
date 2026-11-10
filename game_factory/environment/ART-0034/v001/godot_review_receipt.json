@@ -6,9 +6,9 @@
 		1024
 	],
 	"engine": "4.7.2-stable (official)",
-	"manifest_sha256": "cec573538e3fc23843253d2a723b3cec98e770100d48d12166b1d5df2bd3236e",
+	"manifest_sha256": "37ee832bf2837824fc157898f94234b49ea664968c2ee535ae9331892e6cd866",
 	"map_integration_verified": false,
 	"native_review_only": true,
-	"owner_approved": false,
-	"render_sha256": "3da3a62c4d4642e702a46843f1e4a3589f2633df150891d3da323069379ea0fa"
+	"owner_approved": true,
+	"render_sha256": "35efbc18d424df316ca9996816e83082b7fadaf3a06c5f56c49c3c58ae572e0f"
 }

@@ -2,64 +2,24 @@
   "task": "TASK-0102",
   "art_request": "ART-0035",
   "destination": "H:/shining force/skl-SF",
+  "owner_approved": true,
   "generation_cache_required": false,
-  "owner_approved": false,
   "files": [
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/.gdignore",
-      "sha256": "a6da9ef1b54395385e77668edc6c8ca5b50f83bd720f6c1e3704fb367937c8c7"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/flower_mound_blue.png",
-      "sha256": "c303c9d4e12f571a53a7899c90a84e3295edaf95893ac60b7a6922c3f43b387a"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/flower_mound_white.png",
-      "sha256": "504e7dec761646bd547dc1e75b21c0e22f4ad2f96cd1624ac4301cb8d8934ae2"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/hanging_vine_long.png",
-      "sha256": "7467570e5a66d12c1555dad1d8c2cf6703839ad2c540fd22510d7bdf03e99953"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_a.png",
-      "sha256": "29d0ff1c7c5057d8c97aa6f5e2a17bf3a0b3b61154159ad04ef13c38eaf6c9a9"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_b.png",
-      "sha256": "9627183ff97e9a31b82b8dc061fa842136cbd3bb35e7609e8445e5dc8f42be41"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/palm_clump_front_left.png",
-      "sha256": "703b289b91da084d9434578538259d15b2c79639233c3b20e4529145bd59f934"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/palm_clump_front_right.png",
-      "sha256": "155470fe06297ed35106e7249497318d199c92b52950b849d4caa0db00a2eb63"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_large.png",
-      "sha256": "e489868e43b8e8e736a91b04d07190a5d11f9296534c955120eb4bdcee06b389"
-    },
-    {
-      "path": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_medium.png",
-      "sha256": "d2c654d4753941571bda27e633f0d5eea496e55753fbf80fada2bfd18fbaf9eb"
-    },
     {
       "path": "game_factory/environment/ART-0035/v001/.gdignore",
       "sha256": "cde82b0290cbf95202c6611123df9565e0be2d493f657b54c7764142b8f9b250"
     },
     {
       "path": "game_factory/environment/ART-0035/v001/godot_native_review.png",
-      "sha256": "9c3d252b63894778d58fbdf6f37b6839a213811a0549372562b05f2597e7fe22"
+      "sha256": "95cdadb0521513334995d672ff5253c36e3ee235715d258228284aed229c49d6"
     },
     {
       "path": "game_factory/environment/ART-0035/v001/godot_review_receipt.json",
-      "sha256": "7600834d02c3343938b8d258e19a6dcfc14f24fdb2203c8d2e60ea8b0bbb2b98"
+      "sha256": "54d5ad242579494bcce6bac9a28999ab89c1ea371d3b6d6cdeea60bf4ac98bbb"
     },
     {
       "path": "game_factory/environment/ART-0035/v001/manifest.json",
-      "sha256": "c7cb116fa68b51160250efbfbf6d5612a991b36769c6f5bd7728e48958365446"
+      "sha256": "24e1e61e9a49a25464b6839826133e0965d2fbacb3f6f2bf51857f05858c81f1"
     },
     {
       "path": "game_factory/environment/ART-0035/v001/native_review/flower_mound_blue.png",
@@ -98,6 +58,22 @@
       "sha256": "88cf6ba8bb05c84916906b478f35a50e774ae3305696242614830a98e2e2ccbd"
     },
     {
+      "path": "game_factory/environment/ART-0035/v001/qa/before_owner_approval/godot_native_review.png",
+      "sha256": "9c3d252b63894778d58fbdf6f37b6839a213811a0549372562b05f2597e7fe22"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/qa/before_owner_approval/godot_review_receipt.json",
+      "sha256": "7600834d02c3343938b8d258e19a6dcfc14f24fdb2203c8d2e60ea8b0bbb2b98"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/qa/before_owner_approval/manifest.json",
+      "sha256": "c7cb116fa68b51160250efbfbf6d5612a991b36769c6f5bd7728e48958365446"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/qa/owner_approval_verification.json",
+      "sha256": "b5935156499d153a90c2c8433d98b3a1c63c8bf5aff0a31afd1cf261ac95bca0"
+    },
+    {
       "path": "game_factory/environment/ART-0035/v001/qa/verification.json",
       "sha256": "bca32d7564c8730e489832c83b1deef74d734d04801b7e003cf7a8cf6710fa8f"
     },
@@ -107,7 +83,7 @@
     },
     {
       "path": "game_factory/environment/ART-0035/v001/README.md",
-      "sha256": "fbb5faf40df29005e10e55cad8be4b9519e667639a836bc1064165fbe088721f"
+      "sha256": "153c2b7862316773999794f532c71719eb63fa7b37548b4141c4007c11ba200e"
     },
     {
       "path": "game_factory/environment/ART-0035/v001/requests/flower_mound_blue.txt",
@@ -147,7 +123,7 @@
     },
     {
       "path": "game_factory/environment/ART-0035/v001/review.gd",
-      "sha256": "942b076a78cf0c22d63447bb0d0cb987c50205a946867498886bcce88c0bb0fe"
+      "sha256": "0dab4e71768192e5281f057c0e7626dbc32d9a0a6e05140b71ff74f3e6343176"
     }
   ]
 }

@@ -25,3 +25,7 @@ Godot --path . --rendering-method gl_compatibility --script res://game_factory/e
 الحالة needs_review، owner_approved=false، production_active=false. موافقة المالك على ART-0032/0033 لا تعتمد هذه الصور الأحدث تلقائيًا. لا تعديل لخريطة أو سجل إنتاج أو أصل معتمد. catalog IDs والتصادمات ومواضع العمق والقياس مرحلة منفصلة بعد المراجعة.
 
 نموذج الصور غير مكشوف من الأداة؛ التكلفة والاستهلاك غير المقاسين unknown وليسا صفرًا. الفحص التقني لا يعوض اعتماد المالك. تفاصيل الفحص والقيود في qa/verification.md وqa/verification.json.
+
+## اعتماد المالك 2026-11-10
+
+اعتمد المالك جميع الصور المختارة المسلمة وطلب الدمج. owner_approved=true في manifest. المصدر المرفوض B لا يشمله الاعتماد. حُفظت لقطة وmanifest وreceipt السابقة في qa/before_owner_approval؛ المعايرة والتركيب منفصلان. أوصاف needs_review السابقة تسجل مرحلة التسليم.
