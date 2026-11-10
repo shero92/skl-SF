@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 19,
+  "version": 20,
   "processing_passes": [
     "background",
     "ground",
@@ -2074,236 +2074,26 @@
         "attachment": null
       },
       {
-        "instance_id": "PerimeterWall_01_00",
-        "asset_id": "W07",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          322.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_02_00",
-        "asset_id": "W07",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          386.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
         "instance_id": "PerimeterWall_03_00",
-        "asset_id": "W07",
+        "asset_id": "W027",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          450.0,
+          402.0,
           289.0
         ],
-        "scale": 1.5,
+        "scale": 1.05,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+        "texture_path": "res://map_factory/parts/walls/W027_Wall_Straight_Long_A.png",
         "pixel_size": [
-          64,
-          128
+          320,
+          95
         ],
         "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_04_00",
-        "asset_id": "W13",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          514.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W13__wall__arch_adjacent_wall_block_left__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_11_00",
-        "asset_id": "W14",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          962.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W14__wall__arch_adjacent_wall_block_right__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_12_00",
-        "asset_id": "W07",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1026.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
+          160,
+          95
         ],
         "status": "ready",
         "collision": {
@@ -2327,109 +2117,25 @@
       },
       {
         "instance_id": "PerimeterWall_13_00",
-        "asset_id": "W07",
+        "asset_id": "W028",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          1090.0,
+          1122.0,
           289.0
         ],
-        "scale": 1.5,
+        "scale": 1.2,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
+        "texture_path": "res://map_factory/parts/walls/W028_Wall_Straight_Long_B.png",
         "pixel_size": [
-          64,
-          128
+          320,
+          95
         ],
         "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_14_00",
-        "asset_id": "W07",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1154.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_15_00",
-        "asset_id": "W07",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1218.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W07__wall__wall_cap_top_edge_stone__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
+          160,
+          95
         ],
         "status": "ready",
         "collision": {
@@ -4237,7 +3943,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          450.0,
+          402.0,
           247.0
         ],
         "scale": 0.65,
@@ -4286,7 +3992,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1090.0,
+          1122.0,
           247.0
         ],
         "scale": 0.65,
@@ -7876,139 +7582,19 @@
         "display_z": 20
       },
       {
-        "instance_id": "PerimeterWall_01_00__shadow",
-        "owner_instance_id": "PerimeterWall_01_00",
-        "owner_asset_id": "W07",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          322.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_02_00__shadow",
-        "owner_instance_id": "PerimeterWall_02_00",
-        "owner_asset_id": "W07",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          386.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
         "instance_id": "PerimeterWall_03_00__shadow",
         "owner_instance_id": "PerimeterWall_03_00",
-        "owner_asset_id": "W07",
+        "owner_asset_id": "W027",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          450.0,
+          402.0,
           289.0
         ],
-        "scale": 1.5,
+        "scale": 1.05,
         "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_04_00__shadow",
-        "owner_instance_id": "PerimeterWall_04_00",
-        "owner_asset_id": "W13",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          514.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_11_00__shadow",
-        "owner_instance_id": "PerimeterWall_11_00",
-        "owner_asset_id": "W14",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          962.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_12_00__shadow",
-        "owner_instance_id": "PerimeterWall_12_00",
-        "owner_asset_id": "W07",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          1026.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
+          320,
+          95
         ],
         "settings": {
           "type": "wall_base",
@@ -8022,65 +7608,17 @@
       {
         "instance_id": "PerimeterWall_13_00__shadow",
         "owner_instance_id": "PerimeterWall_13_00",
-        "owner_asset_id": "W07",
+        "owner_asset_id": "W028",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          1090.0,
+          1122.0,
           289.0
         ],
-        "scale": 1.5,
+        "scale": 1.2,
         "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_14_00__shadow",
-        "owner_instance_id": "PerimeterWall_14_00",
-        "owner_asset_id": "W07",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          1154.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_15_00__shadow",
-        "owner_instance_id": "PerimeterWall_15_00",
-        "owner_asset_id": "W07",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          1218.0,
-          289.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
+          320,
+          95
         ],
         "settings": {
           "type": "wall_base",
@@ -11105,9 +10643,9 @@
   "counts": {
     "background": 35,
     "ground": 3,
-    "walls": 47,
+    "walls": 40,
     "decorations": 72,
-    "shadows": 106
+    "shadows": 99
   },
   "unique_asset_ids": [
     "A01",
@@ -11203,16 +10741,15 @@
     "V032",
     "V033",
     "W01",
+    "W027",
+    "W028",
     "W033",
     "W034",
-    "W07",
     "W08",
     "W09",
     "W10",
     "W11",
-    "W12",
-    "W13",
-    "W14"
+    "W12"
   ],
   "lighting_effects": [
     {
