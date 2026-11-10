@@ -4,20 +4,20 @@
     "background": 35,
     "ground": 3,
     "walls": 40,
-    "decorations": 72,
-    "shadows": 99
+    "decorations": 79,
+    "shadows": 103
   },
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 21,
+  "version": 22,
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "block_count": 150,
-  "unique_asset_count": 90,
+  "block_count": 157,
+  "unique_asset_count": 95,
   "reused_asset_ids": [
     "A01",
     "A05",
@@ -77,7 +77,10 @@
     "L03",
     "L04",
     "L05",
+    "O001",
+    "O003",
     "P01",
+    "P012",
     "P02",
     "P03",
     "P04",
@@ -90,6 +93,8 @@
     "R09",
     "R10",
     "R11",
+    "R12",
+    "R13",
     "V025",
     "V026",
     "V027",
@@ -8370,6 +8375,414 @@
         "kind": "image_gen_master",
         "master": "assets_hd/plants/coastal_garden/v001/palm_clump_front_right.png",
         "master_sha256": "155470fe06297ed35106e7249497318d199c92b52950b849d4caa0db00a2eb63"
+      }
+    },
+    {
+      "instance_id": "ArchUrnLeft",
+      "asset_id": "O001",
+      "category": "objects",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        117,
+        165
+      ],
+      "anchor": [
+        58,
+        165
+      ],
+      "layer": "objects",
+      "position": [
+        572,
+        350
+      ],
+      "scale": 0.42,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "blue",
+        "vase",
+        "large"
+      ],
+      "source": {
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
+      }
+    },
+    {
+      "instance_id": "ArchUrnRight",
+      "asset_id": "O001",
+      "category": "objects",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        117,
+        165
+      ],
+      "anchor": [
+        58,
+        165
+      ],
+      "layer": "objects",
+      "position": [
+        1057,
+        410
+      ],
+      "scale": 0.42,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "blue",
+        "vase",
+        "large"
+      ],
+      "source": {
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
+      }
+    },
+    {
+      "instance_id": "BedsideConch",
+      "asset_id": "R13",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R13__props__conch_shell__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        262,
+        462
+      ],
+      "scale": 0.42,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "conch",
+        "objects",
+        "prop",
+        "shell"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R13",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R13__props__conch_shell__default__1x1__64x64.json",
+        "sha256": "afbd6bd838b4669dd23cc1efe83f46b9fd134c1c6688c277a0067396d400dfa4",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R13"
+      }
+    },
+    {
+      "instance_id": "FrontConch",
+      "asset_id": "R13",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R13__props__conch_shell__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1113,
+        746
+      ],
+      "scale": 0.42,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "conch",
+        "objects",
+        "prop",
+        "shell"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R13",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R13__props__conch_shell__default__1x1__64x64.json",
+        "sha256": "afbd6bd838b4669dd23cc1efe83f46b9fd134c1c6688c277a0067396d400dfa4",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R13"
+      }
+    },
+    {
+      "instance_id": "FrontBlueVase",
+      "asset_id": "O003",
+      "category": "objects",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/objects/O003_Blue_Vase_Small.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        85,
+        110
+      ],
+      "anchor": [
+        42,
+        110
+      ],
+      "layer": "objects",
+      "position": [
+        1177,
+        746
+      ],
+      "scale": 0.36,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "blue",
+        "vase",
+        "small"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      }
+    },
+    {
+      "instance_id": "BookshelfArmillary",
+      "asset_id": "R12",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        1052,
+        262
+      ],
+      "scale": 0.55,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "armillary",
+        "astronomical",
+        "brass",
+        "object",
+        "objects",
+        "prop"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R12",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.json",
+        "sha256": "add6b424eb28f3fa10fc0f987891c282359164033182a196d46d498b3fd3a731",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R12"
+      }
+    },
+    {
+      "instance_id": "StudyStool",
+      "asset_id": "P012",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
+      "asset_status": "needs_cleanup",
+      "pixel_size": [
+        119,
+        115
+      ],
+      "anchor": [
+        59,
+        115
+      ],
+      "layer": "objects",
+      "position": [
+        1157,
+        655
+      ],
+      "scale": 0.33,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "stool"
+      ],
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
       }
     },
     {
