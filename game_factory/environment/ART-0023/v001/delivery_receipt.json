@@ -1,0 +1,115 @@
+{
+  "task_id": "TASK-0102",
+  "project_root": "H:\\shining force\\skl-SF",
+  "cache_required": false,
+  "files": [
+    {
+      "path": "assets_hd/decor/side_banners/v001/.gdignore",
+      "sha256": "3654d446a34df3b558565febd6d91f7f794260660a52ace321cc693fa4d3420a"
+    },
+    {
+      "path": "assets_hd/decor/side_banners/v001/hero_side_banner_east_facing_long.png",
+      "sha256": "dc261e1f2bf9e33db2e55525b399b2866d38a8c1fe930d0879290f600434d522"
+    },
+    {
+      "path": "assets_hd/decor/side_banners/v001/hero_side_banner_east_facing_short.png",
+      "sha256": "23ba50b75e1800dcfe23225a72161ee322f62b8ec7c961e076f35bf514f9b0ab"
+    },
+    {
+      "path": "assets_hd/decor/side_banners/v001/hero_side_banner_west_facing_long.png",
+      "sha256": "5f37ff69fae6ec23adf22f1b77e568cdeaedc8bb1f4662907e70414e1fff0be6"
+    },
+    {
+      "path": "assets_hd/decor/side_banners/v001/rejected/hero_side_banner_east_facing_long_attempt_01.png",
+      "sha256": "61089dca0e86a4f0a025e9a5501a752a9aa71c62951df1132f28e6fe2d41e817"
+    },
+    {
+      "path": "assets_hd/decor/side_banners/v001/rejected/hero_side_banner_east_facing_short_attempt_01.png",
+      "sha256": "7a6f413c7568a17581bc6e7a8e0b584e9b02dd27508d87147efb1c2ecfcb6957"
+    },
+    {
+      "path": "assets_hd/lighting/west_wall_lantern/v001/.gdignore",
+      "sha256": "3654d446a34df3b558565febd6d91f7f794260660a52ace321cc693fa4d3420a"
+    },
+    {
+      "path": "assets_hd/lighting/west_wall_lantern/v001/hero_wall_lantern_west.png",
+      "sha256": "e1beb2284d9804e1ae51480c63af498d916f6d0aa992e2d8622fb0a361a6c623"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/.gdignore",
+      "sha256": "3654d446a34df3b558565febd6d91f7f794260660a52ace321cc693fa4d3420a"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/godot_native_review.png",
+      "sha256": "016fe4f045f35703ec78089e1028913f7dc7063a1188e8b4bb3fc65689afcc0a"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/godot_review_receipt.json",
+      "sha256": "03848c4066181a724a442169c6501b13d44e234957123ae0c484283cb87ea2b8"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/manifest.json",
+      "sha256": "db68dbab4e282af0e44a8e0d8f9eaeda7fc82356e63312b676aac3a2ac14a9f3"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/native_review/hero_side_banner_east_facing_long.png",
+      "sha256": "542e5eb7e9b913770df75b8ec5d091b2412cf60842b4e8f3df250989d9800750"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/native_review/hero_side_banner_east_facing_short.png",
+      "sha256": "6475f8443ec5c65bb4a7f26927364ab0506c54a3a084b51b659817a0e690dc6f"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/native_review/hero_side_banner_west_facing_long.png",
+      "sha256": "e7cd8a9279da9e761dd3fdde5bd3909f2c5c0029cc3f40a810496a46512dfdeb"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/native_review/hero_wall_lantern_west.png",
+      "sha256": "ed5add3bb39df6fb7983d3c700e643c6ac3c267f5c4b8ea48dca3d3461bd1901"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/qa/mount_source_review.png",
+      "sha256": "c7fc379d76dff2678cdd4d767db281eb3a9bde0d91c380b7a6fc8a91eb1671dd"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/qa/verification.json",
+      "sha256": "b2abc192f2b9244b84fce2d311828d720b977c398cf3b79e1b6b762b49a429a6"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/qa/verification.md",
+      "sha256": "438bdc0d9ee3345111743705eeeae69469a425840afc52f4c66f4608fea82311"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/README.md",
+      "sha256": "3232cb88a97e04528a0f385b2c6dc4bd8a8502023d21b2a3569f69744a10acfe"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/requests/hero_side_banner_east_facing_long_initial_request.txt",
+      "sha256": "5a08616e57657ec7ba200f600ca105a48facefc0e9a31a77463a548161c3339d"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/requests/hero_side_banner_east_facing_short_correction_02.txt",
+      "sha256": "f3d89c42cd35151b53ec4a2a532c1b6d856359f3e86686254c4457353bca76b8"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/requests/hero_side_banner_east_facing_short_initial_request.txt",
+      "sha256": "95bbbb3699c517255c2d91c90b9292f6fcacc4739ba03756f2bc011c9cf08170"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/requests/hero_side_banner_west_facing_long_correction_02.txt",
+      "sha256": "e8874cdb049e21cf4bc5a696f995f516367637a0b2b96ef462090030622fedec"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/requests/hero_side_banner_west_facing_long_initial_request.txt",
+      "sha256": "443150467db69750e0db923d954d8550c04c2f2898a314f716d264a0a52614c6"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/requests/hero_wall_lantern_west_initial_request.txt",
+      "sha256": "c25d13b14158b191d888eac026eeeab9780dd700769ad685332f1b2ec5c5deef"
+    },
+    {
+      "path": "game_factory/environment/ART-0023/v001/review.gd",
+      "sha256": "b2f857b4c2852c9f3e16313fc25466c1caed04c7f729ac8ef6a23b6da69a3988"
+    }
+  ]
+}

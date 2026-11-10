@@ -1,0 +1,24 @@
+{
+  "task_id": "TASK-0102",
+  "art_request": "ART-0023",
+  "agent": "codex",
+  "tests": {
+    "command": "python -u tools/run_tests.py --changed --base origin/main --timeout 120",
+    "passed": 80,
+    "total": 80,
+    "exit_code": 0
+  },
+  "unique_selected_masters": 4,
+  "rejected_attempts": 2,
+  "godot_receipt_integrity": true,
+  "source_hashes_verified": true,
+  "owner_approved": false,
+  "scene_calibration_verified": false,
+  "limitations": [
+    "Native canvas sizes and mount anchors require scene calibration.",
+    "Cloth ratios are heuristic image measurements, not world-space validation.",
+    "East long source assigned by observed geometry, without mirroring.",
+    "Weak alpha tails may be excluded only in QA derivatives; full masters preserved.",
+    "Godot emitted nonfatal sandbox user log and shader cache warnings."
+  ]
+}
