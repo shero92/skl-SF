@@ -7,9 +7,7 @@ var facing: String = "down"
 var movement_enabled: bool = true
 var hp: int = 100
 var follow_target: Node2D
-var walkable_cells: Dictionary = {}
-var grid_origin: Vector2 = Vector2.ZERO
-var tile_size: float = 64.0
+var navigation: NavigationGrid # shared Map Factory validator; null means unrestricted
 var _foot_offsets: Array[Vector2] = []
 
 func _ready() -> void:
@@ -78,12 +76,8 @@ func _physics_process(delta: float) -> void:
 		move.x = float(Input.is_key_pressed(KEY_D) or Input.is_key_pressed(KEY_RIGHT)) - float(Input.is_key_pressed(KEY_A) or Input.is_key_pressed(KEY_LEFT))
 		move.y = float(Input.is_key_pressed(KEY_S) or Input.is_key_pressed(KEY_DOWN)) - float(Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_UP))
 	velocity = move.normalized() * float(definition.get("movement_speed",180))
-	for offset: Vector2 in _foot_offsets:
-		var point := global_position+velocity*delta+offset-grid_origin
-		var cell := Vector2i(floori(point.x/tile_size),floori(point.y/tile_size))
-		if not bool(walkable_cells.get(cell,false)):
-			velocity = Vector2.ZERO
-			break
+	if navigation != null and delta > 0.0 and velocity != Vector2.ZERO:
+		velocity = navigation.allowed_motion(global_position,velocity*delta,_foot_offsets)/delta
 	var previous_position := global_position
 	move_and_slide()
 	if move != Vector2.ZERO:

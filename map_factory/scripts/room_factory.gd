@@ -50,6 +50,8 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     root.set_meta("map_version", int(data.get("version", 0)))
     if typeof(data.get("camera")) == TYPE_DICTIONARY:
         root.set_meta("camera", data["camera"])
+    if typeof(data.get("navigation")) == TYPE_DICTIONARY:
+        root.set_meta("navigation", data["navigation"])
     var backdrop := Polygon2D.new()
     backdrop.name = "MapBackdrop"
     var canvas: Array = data.get("canvas_size", [1536, 1024])

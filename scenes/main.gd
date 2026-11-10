@@ -27,6 +27,10 @@ func _ready() -> void:
     player.name = "Hero"
     player.position = Vector2(float(spawn[0]), float(spawn[1]))
     room.get_node("Entities").add_child(player)
+    if room.has_meta("navigation"):
+        player.navigation = NavigationGrid.from_navigation(room.get_meta("navigation"), room.global_position)
+        if player.navigation != null and not player.navigation.footprint_open(player.position):
+            push_warning("Player spawn is outside the walkable navigation area")
 
     var companion := RoomCompanion.new()
     companion.name = "CrystalCompanion"
