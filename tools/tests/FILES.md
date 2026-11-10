@@ -19,6 +19,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_battle_camera.py`](test_battle_camera.py)
 - [`test_battle_combo.py`](test_battle_combo.py)
 - [`test_battle_controller.py`](test_battle_controller.py)
+- [`test_battle_director.py`](test_battle_director.py)
 - [`test_battle_hit_timing.py`](test_battle_hit_timing.py)
 - [`test_battle_perspective.py`](test_battle_perspective.py)
 - [`test_battle_preview.py`](test_battle_preview.py)

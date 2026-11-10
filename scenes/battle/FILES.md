@@ -12,6 +12,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`battle_animation_controller.gd`](battle_animation_controller.gd)
 - [`battle_animation_controller.gd.uid`](battle_animation_controller.gd.uid)
+- [`battle_director.gd`](battle_director.gd)
 - [`battle_perspective.gd`](battle_perspective.gd)
 - [`battle_perspective.gd.uid`](battle_perspective.gd.uid)
 - [`battle_preview.gd`](battle_preview.gd)

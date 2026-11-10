@@ -130,6 +130,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`verify_battle_combo.gd.uid`](verify_battle_combo.gd.uid)
 - [`verify_battle_controller.gd`](verify_battle_controller.gd)
 - [`verify_battle_controller.gd.uid`](verify_battle_controller.gd.uid)
+- [`verify_battle_director.gd`](verify_battle_director.gd)
 - [`verify_battle_perspective.gd`](verify_battle_perspective.gd)
 - [`verify_battle_perspective.gd.uid`](verify_battle_perspective.gd.uid)
 - [`verify_battle_preview.gd`](verify_battle_preview.gd)
