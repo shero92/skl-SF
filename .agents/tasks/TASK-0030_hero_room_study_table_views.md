@@ -46,3 +46,5 @@ Owner explicitly assigned built-in image_gen production. Target SHA-256 verified
 
 ## Tracking reconciliation
 - Concurrent main allocation used TASK-0135 for Claude room v0022 props. This graphics batch now uses its existing ART-0019 parent TASK-0030. Prior receipt TASK-0135_codex_7dc92e3234.json is immutable historical evidence for commit9e2f8d873a6eb8030d18d85bc7cec29c0d3ba30f; it is not the Claude task and not a second bill.
+
+- Review PR: https://github.com/shero92/skl-SF/pull/155 (draft; owner approval/integration pending).
