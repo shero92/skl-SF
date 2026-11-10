@@ -1,4 +1,5 @@
 """Blender part factory: spec validation, technical QA and (where Blender exists) calibrated renders."""
+import re
 import json
 from pathlib import Path
 import sys
@@ -34,7 +35,10 @@ class Specs(unittest.TestCase):
             with self.subTest(spec=spec_path.name):
                 spec = bf.load_spec(spec_path)
                 wanted = [f".agents/graphics/deliveries/{spec['art_id']}/{o['name']}.png" for o in spec["outputs"]]
-                self.assertEqual(sorted(wanted), sorted(bf.request_outputs(spec["art_id"])))
+                # A request may point at an archived earlier delivery (.../archive_pre_<batch>/<file>) once a newer
+                # candidate batch supersedes it; the file name still has to match the spec output.
+                got = [re.sub(r"/archive_pre_[^/]+/", "/", p) for p in bf.request_outputs(spec["art_id"])]
+                self.assertEqual(sorted(wanted), sorted(got))
 
     def test_candidate_specs_load(self):
         specs = sorted((bf.SPECS / "candidates").glob("*.json"))
