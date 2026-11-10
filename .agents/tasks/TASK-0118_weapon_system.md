@@ -1,6 +1,6 @@
 ---
 id: TASK-0118
-status: review
+status: done
 owner: claude
 agent: claude
 priority: medium
@@ -26,3 +26,6 @@ Owner request 2026-11-10: a weapon system for all character types.
 - Tests: `tools/verify_weapon_system.gd` + `tools/tests/test_weapon_system.py` (id weapon_system).
 - PR: see branch claude/weapon-system.
 - Next: owner reviews numbers; then wire WeaponSystem into the battle controller.
+
+## Closure (Claude, 2026-11-10)
+Merged in PR #127; weapon_system test passes on main. Next step: wire WeaponSystem into the battle controller.
