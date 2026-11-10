@@ -20,8 +20,7 @@ func _ready() -> void:
         add_child(sprite)
         add_child(ShadowFactory.create_shadow({"type": "contact_small", "opacity": 0.4}, Vector2(70, 26)))
         return
-    var catalog := AssetCatalog.new()
-    catalog.load_index()
+    var catalog := AssetCatalog.shared()
     var record: Dictionary = catalog.get_asset("CH011")
     var path := String(record.get("texture_path", ""))
     if not ResourceLoader.exists(path):
