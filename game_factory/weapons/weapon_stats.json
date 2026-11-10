@@ -339,7 +339,7 @@
     "WPN_STEEL_SPEAR": {
       "name": "Steel Spear",
       "type": "spear",
-      "attack": 11,
+      "attack": 8,
       "accuracy": 92,
       "crit": 4,
       "price": 400,
@@ -441,7 +441,7 @@
     "WPN_ASSASSIN_DAGGER": {
       "name": "Assassin Dagger",
       "type": "dagger",
-      "attack": 7,
+      "attack": 12,
       "accuracy": 98,
       "crit": 12,
       "price": 450,

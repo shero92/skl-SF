@@ -45,3 +45,6 @@ Class base HP x2.5 and natural claws attack 9 to 6. Result (20 seeds): average 2
 
 ## Staff magic applied (TASK-0141)
 Staffs (`kind: magic`) ignore target defense; the simulation uses each class's first weapon type. Win rates: lancer 92, warrior 80, knight 75, brawler 59, swordsman 44, archer 38, healer 38, mage 19, thief 9. Open: tune steel spear down and thief up.
+
+## Pass two (TASK-0142)
+Steel spear attack 11 to 8, assassin dagger 7 to 12. Win rates: knight 84, warrior 83, lancer 77, brawler 59, swordsman 44, healer 36, thief 32, archer 30, mage 10.
