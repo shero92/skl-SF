@@ -32,5 +32,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`v0019.json`](v0019.json)
 - [`v0020.json`](v0020.json)
 - [`v0021.json`](v0021.json)
+- [`v0022.json`](v0022.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

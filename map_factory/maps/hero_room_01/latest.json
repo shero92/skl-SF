@@ -2316,6 +2316,62 @@
       "x": 1285,
       "y": 770,
       "scale": 1.0
+    },
+    {
+      "id": "O001",
+      "instance_id": "ArchUrnLeft",
+      "x": 572,
+      "y": 350,
+      "scale": 0.42,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "O001",
+      "instance_id": "ArchUrnRight",
+      "x": 1057,
+      "y": 410,
+      "scale": 0.42,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "R13",
+      "instance_id": "BedsideConch",
+      "x": 262,
+      "y": 462,
+      "scale": 0.42,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "R13",
+      "instance_id": "FrontConch",
+      "x": 1113,
+      "y": 746,
+      "scale": 0.42,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "O003",
+      "instance_id": "FrontBlueVase",
+      "x": 1177,
+      "y": 746,
+      "scale": 0.36,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "R12",
+      "instance_id": "BookshelfArmillary",
+      "x": 1052,
+      "y": 262,
+      "scale": 0.55,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "P012",
+      "instance_id": "StudyStool",
+      "x": 1157,
+      "y": 655,
+      "scale": 0.33,
+      "render_layer": "decorations"
     }
   ],
   "front_objects": [
@@ -2649,15 +2705,15 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 21,
-  "parent_version": 20,
-  "created_at": "2026-11-10T13:39:59+00:00",
+  "version": 22,
+  "parent_version": 21,
+  "created_at": "2026-11-10T15:40:26+00:00",
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "change_note": "hero_room_01 v0021: occlusion_mode world_y_sort. Walls, decor and characters share one Y-sort so the hero is drawn in front of or behind furniture and walls by ground contact. No block, asset or position changed.",
+  "change_note": "hero_room_01 v0022: occlusion_mode world_y_sort. Walls, decor and characters share one Y-sort so the hero is drawn in front of or behind furniture and walls by ground contact. No block, asset or position changed.",
   "visual_qa": {
     "status": "needs_review",
     "notes": "Native render v0013 pending; compare against reference and v0012."
@@ -2894,7 +2950,7 @@
     "joint_opacity": 0.27,
     "joint_width": 1.15
   },
-  "parent_snapshot_sha256": "7aebeb79427cee6757c7c219263adf88c701f45e99e3f10873933d215ce00114",
+  "parent_snapshot_sha256": "f94a6e92898e9b2a30a12cd3057a2216c8421e502efc3c5eba435a4de049556a",
   "camera": {
     "x": 768,
     "y": 512,
@@ -3144,7 +3200,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 21,
+    "version": 22,
     "processing_passes": [
       "background",
       "ground",
@@ -9727,6 +9783,300 @@
           "attachment": null
         },
         {
+          "instance_id": "ArchUrnLeft",
+          "asset_id": "O001",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            572.0,
+            350.0
+          ],
+          "scale": 0.42,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+          "pixel_size": [
+            117,
+            165
+          ],
+          "origin": [
+            58,
+            165
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "ArchUrnRight",
+          "asset_id": "O001",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1057.0,
+            410.0
+          ],
+          "scale": 0.42,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+          "pixel_size": [
+            117,
+            165
+          ],
+          "origin": [
+            58,
+            165
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "BedsideConch",
+          "asset_id": "R13",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            262.0,
+            462.0
+          ],
+          "scale": 0.42,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://assets_generated/props/R13__props__conch_shell__default__1x1__64x64.png",
+          "pixel_size": [
+            64,
+            64
+          ],
+          "origin": [
+            32,
+            64
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "contact_small",
+            "opacity": 0.2,
+            "offset_x": 3,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontConch",
+          "asset_id": "R13",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1113.0,
+            746.0
+          ],
+          "scale": 0.42,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://assets_generated/props/R13__props__conch_shell__default__1x1__64x64.png",
+          "pixel_size": [
+            64,
+            64
+          ],
+          "origin": [
+            32,
+            64
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "contact_small",
+            "opacity": 0.2,
+            "offset_x": 3,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontBlueVase",
+          "asset_id": "O003",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1177.0,
+            746.0
+          ],
+          "scale": 0.36,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/objects/O003_Blue_Vase_Small.png",
+          "pixel_size": [
+            85,
+            110
+          ],
+          "origin": [
+            42,
+            110
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "BookshelfArmillary",
+          "asset_id": "R12",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1052.0,
+            262.0
+          ],
+          "scale": 0.55,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png",
+          "pixel_size": [
+            64,
+            64
+          ],
+          "origin": [
+            32,
+            64
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "contact_small",
+            "opacity": 0.2,
+            "offset_x": 3,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "StudyStool",
+          "asset_id": "P012",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1157.0,
+            655.0
+          ],
+          "scale": 0.33,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
+          "pixel_size": [
+            119,
+            115
+          ],
+          "origin": [
+            59,
+            115
+          ],
+          "status": "needs_cleanup",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "contact",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
           "instance_id": "LeftWallLantern0Glow",
           "asset_id": "L05",
           "source_layer": "front_objects",
@@ -12598,6 +12948,102 @@
           "display_z": 20
         },
         {
+          "instance_id": "BedsideConch__shadow",
+          "owner_instance_id": "BedsideConch",
+          "owner_asset_id": "R13",
+          "asset_id": "S001",
+          "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+          "position": [
+            262.0,
+            462.0
+          ],
+          "scale": 0.42,
+          "sprite_pixel_size": [
+            64,
+            64
+          ],
+          "settings": {
+            "type": "contact_small",
+            "opacity": 0.2,
+            "offset_x": 3,
+            "offset_y": 2
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
+          "instance_id": "FrontConch__shadow",
+          "owner_instance_id": "FrontConch",
+          "owner_asset_id": "R13",
+          "asset_id": "S001",
+          "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+          "position": [
+            1113.0,
+            746.0
+          ],
+          "scale": 0.42,
+          "sprite_pixel_size": [
+            64,
+            64
+          ],
+          "settings": {
+            "type": "contact_small",
+            "opacity": 0.2,
+            "offset_x": 3,
+            "offset_y": 2
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
+          "instance_id": "BookshelfArmillary__shadow",
+          "owner_instance_id": "BookshelfArmillary",
+          "owner_asset_id": "R12",
+          "asset_id": "S001",
+          "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+          "position": [
+            1052.0,
+            262.0
+          ],
+          "scale": 0.55,
+          "sprite_pixel_size": [
+            64,
+            64
+          ],
+          "settings": {
+            "type": "contact_small",
+            "opacity": 0.2,
+            "offset_x": 3,
+            "offset_y": 2
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
+          "instance_id": "StudyStool__shadow",
+          "owner_instance_id": "StudyStool",
+          "owner_asset_id": "P012",
+          "asset_id": "S002",
+          "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
+          "position": [
+            1157.0,
+            655.0
+          ],
+          "scale": 0.33,
+          "sprite_pixel_size": [
+            119,
+            115
+          ],
+          "settings": {
+            "type": "contact",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "render_layer": "shadows",
+          "display_z": 20
+        },
+        {
           "instance_id": "LeftWallLantern0Glow__shadow",
           "owner_instance_id": "LeftWallLantern0Glow",
           "owner_asset_id": "L05",
@@ -13788,8 +14234,8 @@
       "background": 35,
       "ground": 3,
       "walls": 40,
-      "decorations": 72,
-      "shadows": 99
+      "decorations": 79,
+      "shadows": 103
     },
     "unique_asset_ids": [
       "A01",
@@ -13850,7 +14296,10 @@
       "L03",
       "L04",
       "L05",
+      "O001",
+      "O003",
       "P01",
+      "P012",
       "P02",
       "P03",
       "P04",
@@ -13863,6 +14312,8 @@
       "R09",
       "R10",
       "R11",
+      "R12",
+      "R13",
       "S001",
       "S002",
       "S005",
@@ -20355,6 +20806,100 @@
         "sha256": "7ded2268505d3689248e198af01b78f50b06903fe3c639e6afa3114a1af00681"
       }
     },
+    "O001": {
+      "id": "O001",
+      "name": "Blue Vase Large",
+      "category": "objects",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        117,
+        165
+      ],
+      "origin": [
+        58,
+        165
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "blue",
+        "vase",
+        "large"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "curated_individual_crop",
+        "revision": 3,
+        "method": "exact_source_pixel_crop",
+        "generator": "tools/curate_high_detail_sprites.py"
+      },
+      "qa_notes": "Removed remove adjacent black strip. High-resolution source content unchanged; art QA still pending."
+    },
+    "O003": {
+      "id": "O003",
+      "name": "Blue Vase Small",
+      "category": "objects",
+      "subtype": "blue",
+      "texture_path": "res://map_factory/parts/objects/O003_Blue_Vase_Small.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        85,
+        110
+      ],
+      "origin": [
+        42,
+        110
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "objects",
+        "blue",
+        "vase",
+        "small"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection."
+    },
     "P01": {
       "id": "P01",
       "name": "Ivy Hanging Short",
@@ -20431,6 +20976,78 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "90935cf79c1dc6156c93bc3c4ae4ba6d6fd2a4fdd973802c5f2599ca58f957c7"
+      }
+    },
+    "P012": {
+      "id": "P012",
+      "name": "Wooden Stool",
+      "category": "furniture",
+      "subtype": "wooden",
+      "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
+      "status": "needs_cleanup",
+      "pixel_size": [
+        119,
+        115
+      ],
+      "origin": [
+        59,
+        115
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "wooden",
+        "stool"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "ai_sheet_crop",
+        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
+      },
+      "qa_notes": "Requires artist approval, transparency and seams inspection.",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "solid",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "allowed_floor_asset_ids": [
+          "F001",
+          "F002",
+          "F003",
+          "F004",
+          "F005"
+        ],
+        "forbidden_floor_tags": [
+          "edge",
+          "corner",
+          "compass"
+        ],
+        "ground_anchor": "bottom_center",
+        "measurement_status": "provisional",
+        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
       }
     },
     "P02": {
@@ -21389,6 +22006,166 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "f70a7cf0d288739146f82b7fbbd1d9b741250303d822cef883202ddae7803089"
+      }
+    },
+    "R12": {
+      "id": "R12",
+      "name": "Brass Armillary / Astronomical Object",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png",
+      "status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "armillary",
+        "astronomical",
+        "brass",
+        "object",
+        "objects",
+        "prop"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R12",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.json",
+        "sha256": "add6b424eb28f3fa10fc0f987891c282359164033182a196d46d498b3fd3a731",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R12"
+      },
+      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
+      "approval_status": "approved",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "mounted",
+        "mount_on_categories": [
+          "furniture",
+          "walls",
+          "architecture"
+        ],
+        "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "add6b424eb28f3fa10fc0f987891c282359164033182a196d46d498b3fd3a731"
+      }
+    },
+    "R13": {
+      "id": "R13",
+      "name": "Conch Shell",
+      "category": "objects",
+      "subtype": "prop",
+      "texture_path": "res://assets_generated/props/R13__props__conch_shell__default__1x1__64x64.png",
+      "status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        32,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "contact_small",
+        "opacity": 0.2,
+        "offset_x": 3,
+        "offset_y": 2
+      },
+      "tags": [
+        "conch",
+        "objects",
+        "prop",
+        "shell"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "R13",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/props/R13__props__conch_shell__default__1x1__64x64.json",
+        "sha256": "afbd6bd838b4669dd23cc1efe83f46b9fd134c1c6688c277a0067396d400dfa4",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "R13"
+      },
+      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
+      "approval_status": "approved",
+      "placement_contract": {
+        "schema_version": 1,
+        "mode": "floor",
+        "footprint_cells": [
+          1,
+          1
+        ],
+        "occupancy_group": "overlay",
+        "allowed_floor_tags": [
+          "stone"
+        ],
+        "forbidden_floor_tags": [],
+        "measurement_status": "provisional"
+      },
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-10-31",
+        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
+        "record": "assets_generated/library_manifest.json",
+        "sha256": "afbd6bd838b4669dd23cc1efe83f46b9fd134c1c6688c277a0067396d400dfa4"
       }
     },
     "S001": {

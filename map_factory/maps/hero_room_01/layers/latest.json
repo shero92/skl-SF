@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 21,
+  "version": 22,
   "processing_passes": [
     "background",
     "ground",
@@ -6584,6 +6584,300 @@
         "attachment": null
       },
       {
+        "instance_id": "ArchUrnLeft",
+        "asset_id": "O001",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          572.0,
+          350.0
+        ],
+        "scale": 0.42,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+        "pixel_size": [
+          117,
+          165
+        ],
+        "origin": [
+          58,
+          165
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "ArchUrnRight",
+        "asset_id": "O001",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1057.0,
+          410.0
+        ],
+        "scale": 0.42,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/objects/O001_Blue_Vase_Large.png",
+        "pixel_size": [
+          117,
+          165
+        ],
+        "origin": [
+          58,
+          165
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "BedsideConch",
+        "asset_id": "R13",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          262.0,
+          462.0
+        ],
+        "scale": 0.42,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R13__props__conch_shell__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontConch",
+        "asset_id": "R13",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1113.0,
+          746.0
+        ],
+        "scale": 0.42,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R13__props__conch_shell__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontBlueVase",
+        "asset_id": "O003",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1177.0,
+          746.0
+        ],
+        "scale": 0.36,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/objects/O003_Blue_Vase_Small.png",
+        "pixel_size": [
+          85,
+          110
+        ],
+        "origin": [
+          42,
+          110
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "BookshelfArmillary",
+        "asset_id": "R12",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1052.0,
+          262.0
+        ],
+        "scale": 0.55,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "StudyStool",
+        "asset_id": "P012",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1157.0,
+          655.0
+        ],
+        "scale": 0.33,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
+        "pixel_size": [
+          119,
+          115
+        ],
+        "origin": [
+          59,
+          115
+        ],
+        "status": "needs_cleanup",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "contact",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
         "instance_id": "LeftWallLantern0Glow",
         "asset_id": "L05",
         "source_layer": "front_objects",
@@ -9455,6 +9749,102 @@
         "display_z": 20
       },
       {
+        "instance_id": "BedsideConch__shadow",
+        "owner_instance_id": "BedsideConch",
+        "owner_asset_id": "R13",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          262.0,
+          462.0
+        ],
+        "scale": 0.42,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "FrontConch__shadow",
+        "owner_instance_id": "FrontConch",
+        "owner_asset_id": "R13",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          1113.0,
+          746.0
+        ],
+        "scale": 0.42,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "BookshelfArmillary__shadow",
+        "owner_instance_id": "BookshelfArmillary",
+        "owner_asset_id": "R12",
+        "asset_id": "S001",
+        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+        "position": [
+          1052.0,
+          262.0
+        ],
+        "scale": 0.55,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "contact_small",
+          "opacity": 0.2,
+          "offset_x": 3,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
+        "instance_id": "StudyStool__shadow",
+        "owner_instance_id": "StudyStool",
+        "owner_asset_id": "P012",
+        "asset_id": "S002",
+        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
+        "position": [
+          1157.0,
+          655.0
+        ],
+        "scale": 0.33,
+        "sprite_pixel_size": [
+          119,
+          115
+        ],
+        "settings": {
+          "type": "contact",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
         "instance_id": "LeftWallLantern0Glow__shadow",
         "owner_instance_id": "LeftWallLantern0Glow",
         "owner_asset_id": "L05",
@@ -10645,8 +11035,8 @@
     "background": 35,
     "ground": 3,
     "walls": 40,
-    "decorations": 72,
-    "shadows": 99
+    "decorations": 79,
+    "shadows": 103
   },
   "unique_asset_ids": [
     "A01",
@@ -10707,7 +11097,10 @@
     "L03",
     "L04",
     "L05",
+    "O001",
+    "O003",
     "P01",
+    "P012",
     "P02",
     "P03",
     "P04",
@@ -10720,6 +11113,8 @@
     "R09",
     "R10",
     "R11",
+    "R12",
+    "R13",
     "S001",
     "S002",
     "S005",
