@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "asset_count": 382,
+  "asset_count": 416,
   "extracted_count": 229,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
@@ -23116,6 +23116,1811 @@
         "date": "2026-11-09",
         "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
         "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
+    },
+    {
+      "id": "W027",
+      "name": "Wall Straight Long A",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W027_Wall_Straight_Long_A.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        95
+      ],
+      "origin": [
+        160,
+        95
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "straight",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png",
+        "master_sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "W028",
+      "name": "Wall Straight Long B",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W028_Wall_Straight_Long_B.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        95
+      ],
+      "origin": [
+        160,
+        95
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "straight",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_b.png",
+        "master_sha256": "b550d8c9746cab86a96c2e1d272338291b1b2cf75f1958cd032026ec3163ede5"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "W029",
+      "name": "Wall Corner Outer Left",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W029_Wall_Corner_Outer_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        256,
+        121
+      ],
+      "origin": [
+        128,
+        121
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "left",
+        "outer",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_outer_left.png",
+        "master_sha256": "435d0261df0add6e64d933339506ca31010e7f7fe32dad1e8dde4e4ab1f72948"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "W030",
+      "name": "Wall Corner Outer Right",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W030_Wall_Corner_Outer_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        256,
+        111
+      ],
+      "origin": [
+        128,
+        111
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "outer",
+        "right",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_outer_right.png",
+        "master_sha256": "1329c5509b9ff490b440793af4a414ce4654fc3e167a563d4e4e11c69571c0ae"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "W031",
+      "name": "Wall Corner Inner Left",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W031_Wall_Corner_Inner_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        256,
+        133
+      ],
+      "origin": [
+        128,
+        133
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "inner",
+        "left",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_inner_left.png",
+        "master_sha256": "097ba3ead8898484a9299c2c6570b604db193edba778afd5fb2c411110ddf341"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "W032",
+      "name": "Wall Corner Inner Right",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W032_Wall_Corner_Inner_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        256,
+        125
+      ],
+      "origin": [
+        128,
+        125
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "inner",
+        "right",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_corner_inner_right.png",
+        "master_sha256": "a7f853a84f588af63c8f00c790cfaa3fd7cd551eaee17ef5201c37c344b19226"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "W033",
+      "name": "Wall Side Left Run",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W033_Wall_Side_Left_Run.png",
+      "status": "ready",
+      "pixel_size": [
+        160,
+        299
+      ],
+      "origin": [
+        80,
+        299
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "left",
+        "side",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_left_run.png",
+        "master_sha256": "82f03a03961895846d44d968cacacd1327e1df82ab30c9f930cb6336631daca8"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "W034",
+      "name": "Wall Side Right Run",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W034_Wall_Side_Right_Run.png",
+      "status": "ready",
+      "pixel_size": [
+        160,
+        318
+      ],
+      "origin": [
+        80,
+        318
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "right",
+        "side",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_side_right_run.png",
+        "master_sha256": "1a1491d24bea94e6865d5d621e3a3a50195c32130a9efe941a7aa3c11f091160"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "W035",
+      "name": "Parapet Cap Run",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W035_Parapet_Cap_Run.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        64
+      ],
+      "origin": [
+        160,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cap",
+        "parapet",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/connected_ruin_walls/v001/parapet_cap_run.png",
+        "master_sha256": "fd0a8a676918ed0e780a4275eda906bdca6705990badb2b0c39769dd59cc679d"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E025",
+      "name": "Cliff Face Front A",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E025_Cliff_Face_Front_A.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        155
+      ],
+      "origin": [
+        160,
+        155
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_a.png",
+        "master_sha256": "ca5208627b47277d4701855f4cc6a9687536827cfae6779a342a21f40d68f888"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E026",
+      "name": "Cliff Face Front B",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        212
+      ],
+      "origin": [
+        160,
+        212
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
+        "master_sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E027",
+      "name": "Cliff Face Front C",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        210
+      ],
+      "origin": [
+        160,
+        210
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "front",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_face_front_c.png",
+        "master_sha256": "00afb4586c6cc8ef202139db006fed79afd08fb7523c307932fc672d1d27e0c9"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E028",
+      "name": "Cliff Rubble Cluster",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E028_Cliff_Rubble_Cluster.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        56
+      ],
+      "origin": [
+        64,
+        56
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "rock",
+        "rubble"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/cliff_rubble_cluster.png",
+        "master_sha256": "862b79ccfbecc3a7948b56b8a23747dea05bf0589d74b5b476f41c3606cd3e78"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E029",
+      "name": "Foam At Cliff Base",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        60
+      ],
+      "origin": [
+        160,
+        60
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
+        "master_sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E030",
+      "name": "Terrace Edge Corner Left",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E030_Terrace_Edge_Corner_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        256,
+        119
+      ],
+      "origin": [
+        128,
+        119
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "edge",
+        "environment",
+        "left",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_left.png",
+        "master_sha256": "dc6c131321c6a8c0f4dcfd461b8e327403c834c2eb8895421785f23c7df0983a"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E031",
+      "name": "Terrace Edge Corner Right",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E031_Terrace_Edge_Corner_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        256,
+        109
+      ],
+      "origin": [
+        128,
+        109
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "corner",
+        "edge",
+        "environment",
+        "right",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_right.png",
+        "master_sha256": "872b71b30ba704a44f482611e0bb04c673fb413d1b6de5c7081bae0726d8a1cd"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E032",
+      "name": "Terrace Edge Straight",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        32
+      ],
+      "origin": [
+        160,
+        32
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "edge",
+        "environment",
+        "straight",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_straight.png",
+        "master_sha256": "4af62152cc0a0c5448b23f936d21733e5fd0b44879ecf65b1bd573799fe2b310"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E033",
+      "name": "Foam Patch A",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E033_Foam_Patch_A.png",
+      "status": "ready",
+      "pixel_size": [
+        192,
+        91
+      ],
+      "origin": [
+        96,
+        91
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/foam_patch_a.png",
+        "master_sha256": "fd7bde47fc2cdb692243fef021008cf58a00eae1a8bc90c5cf244f1d3dcc05f2"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E034",
+      "name": "Foam Patch B",
+      "category": "environment",
+      "subtype": "water",
+      "texture_path": "res://map_factory/parts/environment/E034_Foam_Patch_B.png",
+      "status": "ready",
+      "pixel_size": [
+        192,
+        58
+      ],
+      "origin": [
+        96,
+        58
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/foam_patch_b.png",
+        "master_sha256": "d3238aeebf41cb0f303718e10de3979abf6845614bdf0f0378f0cb72435d5fb1"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E035",
+      "name": "Horizon Haze Strip",
+      "category": "environment",
+      "subtype": "sky",
+      "texture_path": "res://map_factory/parts/environment/E035_Horizon_Haze_Strip.png",
+      "status": "ready",
+      "pixel_size": [
+        768,
+        20
+      ],
+      "origin": [
+        384,
+        20
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "haze",
+        "horizon",
+        "sky"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/horizon_haze_strip.png",
+        "master_sha256": "e97ffd57edf39c2c89d0531da82b13ec283807baa351595c9b4f5ca1cf44be3c"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E036",
+      "name": "Rock Arch Far Left",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E036_Rock_Arch_Far_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        160,
+        75
+      ],
+      "origin": [
+        80,
+        75
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "arch",
+        "environment",
+        "far",
+        "left",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/rock_arch_far_left.png",
+        "master_sha256": "8a0812ebc3f53efc137940ff7b08d5e980b3fbdc51687d11748385ee5c8973d9"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E037",
+      "name": "Rock Arch Far Right",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E037_Rock_Arch_Far_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        160,
+        74
+      ],
+      "origin": [
+        80,
+        74
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "arch",
+        "environment",
+        "far",
+        "right",
+        "rock"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/rock_arch_far_right.png",
+        "master_sha256": "8ff4b19b5809acf3027cea1c56ba54322ce989271c77181843032e9704a87255"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E038",
+      "name": "Sea Stack Tall A",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E038_Sea_Stack_Tall_A.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        310
+      ],
+      "origin": [
+        64,
+        310
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_a.png",
+        "master_sha256": "506de1a1ec5988535ce01d24c3360412bf77a93275e255c1bc8e3309f06cd691"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E039",
+      "name": "Sea Stack Tall B",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E039_Sea_Stack_Tall_B.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        547
+      ],
+      "origin": [
+        64,
+        547
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_b.png",
+        "master_sha256": "985a11930ecb8a43b171fdd6b268082178048a982d66084ec7768c14c19340b0"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "E040",
+      "name": "Sea Stack Tall C",
+      "category": "environment",
+      "subtype": "rock",
+      "texture_path": "res://map_factory/parts/environment/E040_Sea_Stack_Tall_C.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        209
+      ],
+      "origin": [
+        64,
+        209
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "rock",
+        "sea_stack",
+        "tall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/sea_stack_tall_c.png",
+        "master_sha256": "9ad23cb1d0269565af20967a18cdb55828847b2987aeecf8ec99894ad7a5d715"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V025",
+      "name": "Flower Mound Blue",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V025_Flower_Mound_Blue.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        64
+      ],
+      "origin": [
+        48,
+        64
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue",
+        "flower",
+        "mound",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/flower_mound_blue.png",
+        "master_sha256": "c303c9d4e12f571a53a7899c90a84e3295edaf95893ac60b7a6922c3f43b387a"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V026",
+      "name": "Flower Mound White",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V026_Flower_Mound_White.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        60
+      ],
+      "origin": [
+        48,
+        60
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flower",
+        "mound",
+        "vegetation",
+        "white"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/flower_mound_white.png",
+        "master_sha256": "504e7dec761646bd547dc1e75b21c0e22f4ad2f96cd1624ac4301cb8d8934ae2"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V027",
+      "name": "Hanging Vine Long",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V027_Hanging_Vine_Long.png",
+      "status": "ready",
+      "pixel_size": [
+        40,
+        159
+      ],
+      "origin": [
+        20,
+        159
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "hanging",
+        "vegetation",
+        "vine"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/hanging_vine_long.png",
+        "master_sha256": "7467570e5a66d12c1555dad1d8c2cf6703839ad2c540fd22510d7bdf03e99953"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V028",
+      "name": "Ivy Tuft Wall A",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V028_Ivy_Tuft_Wall_A.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        106
+      ],
+      "origin": [
+        48,
+        106
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "vegetation",
+        "wall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_a.png",
+        "master_sha256": "29d0ff1c7c5057d8c97aa6f5e2a17bf3a0b3b61154159ad04ef13c38eaf6c9a9"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V029",
+      "name": "Ivy Tuft Wall B",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V029_Ivy_Tuft_Wall_B.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        103
+      ],
+      "origin": [
+        48,
+        103
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "vegetation",
+        "wall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_b.png",
+        "master_sha256": "9627183ff97e9a31b82b8dc061fa842136cbd3bb35e7609e8445e5dc8f42be41"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V030",
+      "name": "Palm Clump Front Left",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V030_Palm_Clump_Front_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        97
+      ],
+      "origin": [
+        64,
+        97
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "front",
+        "left",
+        "palm",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/palm_clump_front_left.png",
+        "master_sha256": "703b289b91da084d9434578538259d15b2c79639233c3b20e4529145bd59f934"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V031",
+      "name": "Palm Clump Front Right",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V031_Palm_Clump_Front_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        80
+      ],
+      "origin": [
+        64,
+        80
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "front",
+        "palm",
+        "right",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/palm_clump_front_right.png",
+        "master_sha256": "155470fe06297ed35106e7249497318d199c92b52950b849d4caa0db00a2eb63"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V032",
+      "name": "Planter Stone Flowers Large",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V032_Planter_Stone_Flowers_Large.png",
+      "status": "ready",
+      "pixel_size": [
+        128,
+        70
+      ],
+      "origin": [
+        64,
+        70
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flowers",
+        "planter",
+        "stone",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_large.png",
+        "master_sha256": "e489868e43b8e8e736a91b04d07190a5d11f9296534c955120eb4bdcee06b389"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V033",
+      "name": "Planter Stone Flowers Medium",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V033_Planter_Stone_Flowers_Medium.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        70
+      ],
+      "origin": [
+        48,
+        70
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "flowers",
+        "planter",
+        "stone",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_medium.png",
+        "master_sha256": "d2c654d4753941571bda27e633f0d5eea496e55753fbf80fada2bfd18fbaf9eb"
+      },
+      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     }
   ],

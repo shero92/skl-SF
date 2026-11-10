@@ -1,4 +1,5 @@
 {
+  "request_id": "ART-0035",
   "schema_version": 1,
   "art_request": "ART-0035",
   "task_id": "TASK-0102",
@@ -445,5 +446,43 @@
     "date": "2026-11-10",
     "evidence": "Owner: i agree all what u produced",
     "scope": "delivered selected ART-0034/0035 assets only; rejected attempts excluded; scene calibration pending"
-  }
+  },
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/planter_stone_flowers_large.png",
+      "sha256": "e489868e43b8e8e736a91b04d07190a5d11f9296534c955120eb4bdcee06b389"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/planter_stone_flowers_medium.png",
+      "sha256": "d2c654d4753941571bda27e633f0d5eea496e55753fbf80fada2bfd18fbaf9eb"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/palm_clump_front_left.png",
+      "sha256": "703b289b91da084d9434578538259d15b2c79639233c3b20e4529145bd59f934"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/palm_clump_front_right.png",
+      "sha256": "155470fe06297ed35106e7249497318d199c92b52950b849d4caa0db00a2eb63"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/flower_mound_white.png",
+      "sha256": "504e7dec761646bd547dc1e75b21c0e22f4ad2f96cd1624ac4301cb8d8934ae2"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/flower_mound_blue.png",
+      "sha256": "c303c9d4e12f571a53a7899c90a84e3295edaf95893ac60b7a6922c3f43b387a"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/ivy_tuft_wall_a.png",
+      "sha256": "29d0ff1c7c5057d8c97aa6f5e2a17bf3a0b3b61154159ad04ef13c38eaf6c9a9"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/ivy_tuft_wall_b.png",
+      "sha256": "9627183ff97e9a31b82b8dc061fa842136cbd3bb35e7609e8445e5dc8f42be41"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0035/hanging_vine_long.png",
+      "sha256": "7467570e5a66d12c1555dad1d8c2cf6703839ad2c540fd22510d7bdf03e99953"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 17,
+  "version": 18,
   "processing_passes": [
     "background",
     "ground",
@@ -309,6 +309,972 @@
           "opacity": 0.0,
           "offset_x": 0,
           "offset_y": 0
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CoastArchFarLeft",
+        "asset_id": "E036",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          170.0,
+          300.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E036_Rock_Arch_Far_Left.png",
+        "pixel_size": [
+          160,
+          75
+        ],
+        "origin": [
+          80,
+          75
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CoastArchFarRight",
+        "asset_id": "E037",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1380.0,
+          300.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E037_Rock_Arch_Far_Right.png",
+        "pixel_size": [
+          160,
+          74
+        ],
+        "origin": [
+          80,
+          74
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CoastStackTallLeft",
+        "asset_id": "E039",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          70.0,
+          640.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E039_Sea_Stack_Tall_B.png",
+        "pixel_size": [
+          128,
+          547
+        ],
+        "origin": [
+          64,
+          547
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CoastStackTallRight",
+        "asset_id": "E038",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1470.0,
+          600.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E038_Sea_Stack_Tall_A.png",
+        "pixel_size": [
+          128,
+          310
+        ],
+        "origin": [
+          64,
+          310
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CoastStackLow",
+        "asset_id": "E040",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1400.0,
+          740.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E040_Sea_Stack_Tall_C.png",
+        "pixel_size": [
+          128,
+          209
+        ],
+        "origin": [
+          64,
+          209
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "SeaFoamLeft",
+        "asset_id": "E033",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          140.0,
+          760.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E033_Foam_Patch_A.png",
+        "pixel_size": [
+          192,
+          91
+        ],
+        "origin": [
+          96,
+          91
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "SeaFoamRight",
+        "asset_id": "E034",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1380.0,
+          800.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E034_Foam_Patch_B.png",
+        "pixel_size": [
+          192,
+          58
+        ],
+        "origin": [
+          96,
+          58
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffFrontLeftOuter",
+        "asset_id": "E026",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          300.0,
+          985.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+        "pixel_size": [
+          320,
+          212
+        ],
+        "origin": [
+          160,
+          212
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffFrontLeftInner",
+        "asset_id": "E025",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          520.0,
+          930.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E025_Cliff_Face_Front_A.png",
+        "pixel_size": [
+          320,
+          155
+        ],
+        "origin": [
+          160,
+          155
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffFrontRightInner",
+        "asset_id": "E027",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1060.0,
+          1010.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+        "pixel_size": [
+          320,
+          210
+        ],
+        "origin": [
+          160,
+          210
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffFrontRightOuter",
+        "asset_id": "E026",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1270.0,
+          985.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+        "pixel_size": [
+          320,
+          212
+        ],
+        "origin": [
+          160,
+          212
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffFoamLeftOuter",
+        "asset_id": "E029",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          300.0,
+          1000.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+        "pixel_size": [
+          320,
+          60
+        ],
+        "origin": [
+          160,
+          60
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffFoamLeftInner",
+        "asset_id": "E029",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          520.0,
+          960.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+        "pixel_size": [
+          320,
+          60
+        ],
+        "origin": [
+          160,
+          60
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffFoamRightInner",
+        "asset_id": "E029",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1060.0,
+          1015.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+        "pixel_size": [
+          320,
+          60
+        ],
+        "origin": [
+          160,
+          60
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffFoamRightOuter",
+        "asset_id": "E029",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1270.0,
+          1000.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E029_Foam_At_Cliff_Base.png",
+        "pixel_size": [
+          320,
+          60
+        ],
+        "origin": [
+          160,
+          60
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffRubbleLeft",
+        "asset_id": "E028",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          200.0,
+          1005.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E028_Cliff_Rubble_Cluster.png",
+        "pixel_size": [
+          128,
+          56
+        ],
+        "origin": [
+          64,
+          56
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffRubbleRight",
+        "asset_id": "E028",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1340.0,
+          1005.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E028_Cliff_Rubble_Cluster.png",
+        "pixel_size": [
+          128,
+          56
+        ],
+        "origin": [
+          64,
+          56
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffSideLeftUpper",
+        "asset_id": "E027",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          215.0,
+          520.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+        "pixel_size": [
+          320,
+          210
+        ],
+        "origin": [
+          160,
+          210
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffSideLeftLower",
+        "asset_id": "E026",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          215.0,
+          760.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+        "pixel_size": [
+          320,
+          212
+        ],
+        "origin": [
+          160,
+          212
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffSideRightUpper",
+        "asset_id": "E026",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1325.0,
+          520.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E026_Cliff_Face_Front_B.png",
+        "pixel_size": [
+          320,
+          212
+        ],
+        "origin": [
+          160,
+          212
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "CliffSideRightLower",
+        "asset_id": "E027",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1325.0,
+          760.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E027_Cliff_Face_Front_C.png",
+        "pixel_size": [
+          320,
+          210
+        ],
+        "origin": [
+          160,
+          210
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "TerraceCornerLeft",
+        "asset_id": "E030",
+        "source_layer": "front_objects",
+        "render_layer": "background",
+        "position": [
+          262.0,
+          905.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E030_Terrace_Edge_Corner_Left.png",
+        "pixel_size": [
+          256,
+          119
+        ],
+        "origin": [
+          128,
+          119
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "TerraceCornerRight",
+        "asset_id": "E031",
+        "source_layer": "front_objects",
+        "render_layer": "background",
+        "position": [
+          1280.0,
+          905.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E031_Terrace_Edge_Corner_Right.png",
+        "pixel_size": [
+          256,
+          109
+        ],
+        "origin": [
+          128,
+          109
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
         },
         "attachment": null
       }
@@ -1318,48 +2284,6 @@
         "attachment": null
       },
       {
-        "instance_id": "PerimeterWall_00_01",
-        "asset_id": "W01",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          258.0,
-          353.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
         "instance_id": "PerimeterWall_04_01",
         "asset_id": "W08",
         "source_layer": "back_objects",
@@ -1444,68 +2368,26 @@
         "attachment": null
       },
       {
-        "instance_id": "PerimeterWall_16_01",
-        "asset_id": "W02",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1282.0,
-          353.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
         "instance_id": "PerimeterWall_00_02",
-        "asset_id": "W03",
+        "asset_id": "W033",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          258.0,
-          417.0
+          262.0,
+          480.0
         ],
-        "scale": 1.5,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W03__wall__broken_stone_wall_block__default__1x1__64x128.png",
+        "texture_path": "res://map_factory/parts/walls/W033_Wall_Side_Left_Run.png",
         "pixel_size": [
-          64,
-          128
+          160,
+          299
         ],
         "origin": [
-          32,
-          128
+          80,
+          299
         ],
         "status": "ready",
         "collision": {
@@ -1529,277 +2411,25 @@
       },
       {
         "instance_id": "PerimeterWall_16_02",
-        "asset_id": "W02",
+        "asset_id": "W034",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
           1282.0,
-          417.0
+          480.0
         ],
-        "scale": 1.5,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
+        "texture_path": "res://map_factory/parts/walls/W034_Wall_Side_Right_Run.png",
         "pixel_size": [
-          64,
-          128
+          160,
+          318
         ],
         "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_00_03",
-        "asset_id": "W01",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          258.0,
-          481.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_16_03",
-        "asset_id": "W04",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1282.0,
-          481.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W04__wall__cracked_stone_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_00_04",
-        "asset_id": "W01",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          258.0,
-          545.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_16_04",
-        "asset_id": "W02",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1282.0,
-          545.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_00_05",
-        "asset_id": "W05",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          258.0,
-          609.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W05__wall__wall_block_with_ivy_base__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_16_05",
-        "asset_id": "W02",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1282.0,
-          609.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W02__wall__lightly_weathered_stone_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
+          80,
+          318
         ],
         "status": "ready",
         "collision": {
@@ -1823,25 +2453,25 @@
       },
       {
         "instance_id": "PerimeterWall_00_06",
-        "asset_id": "W01",
+        "asset_id": "W033",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          258.0,
-          673.0
+          262.0,
+          740.0
         ],
-        "scale": 1.5,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W01__wall__clean_pale_stone_wall_block__default__1x1__64x128.png",
+        "texture_path": "res://map_factory/parts/walls/W033_Wall_Side_Left_Run.png",
         "pixel_size": [
-          64,
-          128
+          160,
+          299
         ],
         "origin": [
-          32,
-          128
+          80,
+          299
         ],
         "status": "ready",
         "collision": {
@@ -1865,67 +2495,25 @@
       },
       {
         "instance_id": "PerimeterWall_16_06",
-        "asset_id": "W06",
+        "asset_id": "W034",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
           1282.0,
-          673.0
+          740.0
         ],
-        "scale": 1.5,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W06__wall__wall_block_with_flower_growth__default__1x1__64x128.png",
+        "texture_path": "res://map_factory/parts/walls/W034_Wall_Side_Right_Run.png",
         "pixel_size": [
-          64,
-          128
+          160,
+          318
         ],
         "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_00_07",
-        "asset_id": "W09",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          258.0,
-          737.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
+          80,
+          318
         ],
         "status": "ready",
         "collision": {
@@ -2003,48 +2591,6 @@
         "flip_h": false,
         "z_index": 0,
         "texture_path": "res://assets_generated/wall/W08__wall__inner_corner_wall_block__default__1x1__64x128.png",
-        "pixel_size": [
-          64,
-          128
-        ],
-        "origin": [
-          32,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "attachment": null
-      },
-      {
-        "instance_id": "PerimeterWall_16_07",
-        "asset_id": "W09",
-        "source_layer": "back_objects",
-        "render_layer": "walls",
-        "position": [
-          1282.0,
-          737.0
-        ],
-        "scale": 1.5,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/wall/W09__wall__outer_corner_wall_block__default__1x1__64x128.png",
         "pixel_size": [
           64,
           128
@@ -3138,8 +3684,8 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          377.0
+          262.0,
+          440.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3187,8 +3733,8 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          505.0
+          262.0,
+          700.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3222,7 +3768,7 @@
           "offset_y": 2
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_00_04",
+          "parent_instance_id": "PerimeterWall_00_06",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -3236,8 +3782,8 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          633.0
+          262.0,
+          700.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3335,7 +3881,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          377.0
+          440.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3384,7 +3930,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          505.0
+          700.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3418,7 +3964,7 @@
           "offset_y": 2
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_16_04",
+          "parent_instance_id": "PerimeterWall_16_06",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -3433,7 +3979,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          633.0
+          700.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3579,8 +4125,8 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          439.0
+          262.0,
+          438.0
         ],
         "scale": 0.65,
         "rotation_degrees": 0.0,
@@ -3614,7 +4160,7 @@
           "offset_y": 0
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_00_03",
+          "parent_instance_id": "PerimeterWall_00_02",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -3629,7 +4175,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          439.0
+          438.0
         ],
         "scale": 0.65,
         "rotation_degrees": 0.0,
@@ -3663,7 +4209,7 @@
           "offset_y": 0
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_16_03",
+          "parent_instance_id": "PerimeterWall_16_02",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -3677,8 +4223,8 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          289.0
+          262.0,
+          416.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3712,7 +4258,7 @@
           "offset_y": 3
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_00_01",
+          "parent_instance_id": "PerimeterWall_00_02",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -3769,7 +4315,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          289.0
+          416.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3803,7 +4349,7 @@
           "offset_y": 3
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_16_01",
+          "parent_instance_id": "PerimeterWall_16_02",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -3859,8 +4405,8 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          545.0
+          262.0,
+          676.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3894,7 +4440,7 @@
           "offset_y": 3
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_00_05",
+          "parent_instance_id": "PerimeterWall_00_06",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -3951,7 +4497,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          545.0
+          676.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -3985,7 +4531,7 @@
           "offset_y": 3
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_16_05",
+          "parent_instance_id": "PerimeterWall_16_06",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -5785,6 +6331,342 @@
         }
       },
       {
+        "instance_id": "FrontPlanterLeft",
+        "asset_id": "V032",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          310.0,
+          800.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V032_Planter_Stone_Flowers_Large.png",
+        "pixel_size": [
+          128,
+          70
+        ],
+        "origin": [
+          64,
+          70
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontPlanterRight",
+        "asset_id": "V032",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1240.0,
+          800.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V032_Planter_Stone_Flowers_Large.png",
+        "pixel_size": [
+          128,
+          70
+        ],
+        "origin": [
+          64,
+          70
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontPlanterLeftInner",
+        "asset_id": "V033",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          560.0,
+          830.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V033_Planter_Stone_Flowers_Medium.png",
+        "pixel_size": [
+          96,
+          70
+        ],
+        "origin": [
+          48,
+          70
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontPlanterRightInner",
+        "asset_id": "V033",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          980.0,
+          830.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V033_Planter_Stone_Flowers_Medium.png",
+        "pixel_size": [
+          96,
+          70
+        ],
+        "origin": [
+          48,
+          70
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontMoundBlue",
+        "asset_id": "V025",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          440.0,
+          815.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V025_Flower_Mound_Blue.png",
+        "pixel_size": [
+          96,
+          64
+        ],
+        "origin": [
+          48,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontMoundWhite",
+        "asset_id": "V026",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1110.0,
+          815.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V026_Flower_Mound_White.png",
+        "pixel_size": [
+          96,
+          60
+        ],
+        "origin": [
+          48,
+          60
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontPalmLeft",
+        "asset_id": "V030",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          258.0,
+          770.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V030_Palm_Clump_Front_Left.png",
+        "pixel_size": [
+          128,
+          97
+        ],
+        "origin": [
+          64,
+          97
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontPalmRight",
+        "asset_id": "V031",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1285.0,
+          770.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V031_Palm_Clump_Front_Right.png",
+        "pixel_size": [
+          128,
+          80
+        ],
+        "origin": [
+          64,
+          80
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
         "instance_id": "LeftWallLantern0Glow",
         "asset_id": "L05",
         "source_layer": "front_objects",
@@ -5839,8 +6721,8 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          365.0
+          262.0,
+          428.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -5888,8 +6770,8 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          493.0
+          262.0,
+          688.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -5923,7 +6805,7 @@
           "offset_y": 2
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_00_04",
+          "parent_instance_id": "PerimeterWall_00_06",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -5937,8 +6819,8 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          258.0,
-          621.0
+          262.0,
+          688.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -6036,7 +6918,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          365.0
+          428.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -6085,7 +6967,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          493.0
+          688.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -6119,7 +7001,7 @@
           "offset_y": 2
         },
         "attachment": {
-          "parent_instance_id": "PerimeterWall_16_04",
+          "parent_instance_id": "PerimeterWall_16_06",
           "host_render_layer": "walls",
           "mount_offset": [
             0.0,
@@ -6134,7 +7016,7 @@
         "render_layer": "decorations",
         "position": [
           1282.0,
-          621.0
+          688.0
         ],
         "scale": 0.5,
         "rotation_degrees": 0.0,
@@ -6420,6 +7302,174 @@
             -161.0
           ]
         }
+      },
+      {
+        "instance_id": "BackWallVineLeft",
+        "asset_id": "V027",
+        "source_layer": "front_objects",
+        "render_layer": "decorations",
+        "position": [
+          322.0,
+          300.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V027_Hanging_Vine_Long.png",
+        "pixel_size": [
+          40,
+          159
+        ],
+        "origin": [
+          20,
+          159
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "BackWallVineRight",
+        "asset_id": "V027",
+        "source_layer": "front_objects",
+        "render_layer": "decorations",
+        "position": [
+          1154.0,
+          300.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V027_Hanging_Vine_Long.png",
+        "pixel_size": [
+          40,
+          159
+        ],
+        "origin": [
+          20,
+          159
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "BackWallIvyLeft",
+        "asset_id": "V028",
+        "source_layer": "front_objects",
+        "render_layer": "decorations",
+        "position": [
+          420.0,
+          210.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V028_Ivy_Tuft_Wall_A.png",
+        "pixel_size": [
+          96,
+          106
+        ],
+        "origin": [
+          48,
+          106
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "BackWallIvyRight",
+        "asset_id": "V029",
+        "source_layer": "front_objects",
+        "render_layer": "decorations",
+        "position": [
+          1060.0,
+          210.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V029_Ivy_Tuft_Wall_B.png",
+        "pixel_size": [
+          96,
+          103
+        ],
+        "origin": [
+          48,
+          103
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
       }
     ],
     "shadows": [
@@ -6856,30 +7906,6 @@
         "display_z": 20
       },
       {
-        "instance_id": "PerimeterWall_00_01__shadow",
-        "owner_instance_id": "PerimeterWall_00_01",
-        "owner_asset_id": "W01",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          258.0,
-          353.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
         "instance_id": "PerimeterWall_04_01__shadow",
         "owner_instance_id": "PerimeterWall_04_01",
         "owner_asset_id": "W08",
@@ -6928,43 +7954,19 @@
         "display_z": 20
       },
       {
-        "instance_id": "PerimeterWall_16_01__shadow",
-        "owner_instance_id": "PerimeterWall_16_01",
-        "owner_asset_id": "W02",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          1282.0,
-          353.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
         "instance_id": "PerimeterWall_00_02__shadow",
         "owner_instance_id": "PerimeterWall_00_02",
-        "owner_asset_id": "W03",
+        "owner_asset_id": "W033",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          258.0,
-          417.0
+          262.0,
+          480.0
         ],
-        "scale": 1.5,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          64,
-          128
+          160,
+          299
         ],
         "settings": {
           "type": "wall_base",
@@ -6978,161 +7980,17 @@
       {
         "instance_id": "PerimeterWall_16_02__shadow",
         "owner_instance_id": "PerimeterWall_16_02",
-        "owner_asset_id": "W02",
+        "owner_asset_id": "W034",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
           1282.0,
-          417.0
+          480.0
         ],
-        "scale": 1.5,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_00_03__shadow",
-        "owner_instance_id": "PerimeterWall_00_03",
-        "owner_asset_id": "W01",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          258.0,
-          481.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_16_03__shadow",
-        "owner_instance_id": "PerimeterWall_16_03",
-        "owner_asset_id": "W04",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          1282.0,
-          481.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_00_04__shadow",
-        "owner_instance_id": "PerimeterWall_00_04",
-        "owner_asset_id": "W01",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          258.0,
-          545.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_16_04__shadow",
-        "owner_instance_id": "PerimeterWall_16_04",
-        "owner_asset_id": "W02",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          1282.0,
-          545.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_00_05__shadow",
-        "owner_instance_id": "PerimeterWall_00_05",
-        "owner_asset_id": "W05",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          258.0,
-          609.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_16_05__shadow",
-        "owner_instance_id": "PerimeterWall_16_05",
-        "owner_asset_id": "W02",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          1282.0,
-          609.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
+          160,
+          318
         ],
         "settings": {
           "type": "wall_base",
@@ -7146,17 +8004,17 @@
       {
         "instance_id": "PerimeterWall_00_06__shadow",
         "owner_instance_id": "PerimeterWall_00_06",
-        "owner_asset_id": "W01",
+        "owner_asset_id": "W033",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          258.0,
-          673.0
+          262.0,
+          740.0
         ],
-        "scale": 1.5,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          64,
-          128
+          160,
+          299
         ],
         "settings": {
           "type": "wall_base",
@@ -7170,41 +8028,17 @@
       {
         "instance_id": "PerimeterWall_16_06__shadow",
         "owner_instance_id": "PerimeterWall_16_06",
-        "owner_asset_id": "W06",
+        "owner_asset_id": "W034",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
           1282.0,
-          673.0
+          740.0
         ],
-        "scale": 1.5,
+        "scale": 1.0,
         "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_00_07__shadow",
-        "owner_instance_id": "PerimeterWall_00_07",
-        "owner_asset_id": "W09",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          258.0,
-          737.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
+          160,
+          318
         ],
         "settings": {
           "type": "wall_base",
@@ -7247,30 +8081,6 @@
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
           1218.0,
-          737.0
-        ],
-        "scale": 1.5,
-        "sprite_pixel_size": [
-          64,
-          128
-        ],
-        "settings": {
-          "type": "wall_base",
-          "opacity": 0.24,
-          "offset_x": 4,
-          "offset_y": 4
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "PerimeterWall_16_07__shadow",
-        "owner_instance_id": "PerimeterWall_16_07",
-        "owner_asset_id": "W09",
-        "asset_id": "S013",
-        "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-        "position": [
-          1282.0,
           737.0
         ],
         "scale": 1.5,
@@ -7894,8 +8704,8 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          258.0,
-          377.0
+          262.0,
+          440.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -7918,8 +8728,8 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          258.0,
-          505.0
+          262.0,
+          700.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -7942,8 +8752,8 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          258.0,
-          633.0
+          262.0,
+          700.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -7991,7 +8801,7 @@
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
           1282.0,
-          377.0
+          440.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8015,7 +8825,7 @@
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
           1282.0,
-          505.0
+          700.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8039,7 +8849,7 @@
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
           1282.0,
-          633.0
+          700.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8062,8 +8872,8 @@
         "asset_id": "S010",
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
-          258.0,
-          289.0
+          262.0,
+          416.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8111,7 +8921,7 @@
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
           1282.0,
-          289.0
+          416.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8158,8 +8968,8 @@
         "asset_id": "S010",
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
-          258.0,
-          545.0
+          262.0,
+          676.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8207,7 +9017,7 @@
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
           1282.0,
-          545.0
+          676.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8926,8 +9736,8 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          258.0,
-          365.0
+          262.0,
+          428.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8950,8 +9760,8 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          258.0,
-          493.0
+          262.0,
+          688.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -8974,8 +9784,8 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          258.0,
-          621.0
+          262.0,
+          688.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -9023,7 +9833,7 @@
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
           1282.0,
-          365.0
+          428.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -9047,7 +9857,7 @@
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
           1282.0,
-          493.0
+          688.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -9071,7 +9881,7 @@
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
           1282.0,
-          621.0
+          688.0
         ],
         "scale": 0.5,
         "sprite_pixel_size": [
@@ -10083,11 +10893,11 @@
     }
   },
   "counts": {
-    "background": 7,
+    "background": 30,
     "ground": 3,
-    "walls": 57,
-    "decorations": 60,
-    "shadows": 116
+    "walls": 47,
+    "decorations": 72,
+    "shadows": 106
   },
   "unique_asset_ids": [
     "A01",
@@ -10106,6 +10916,20 @@
     "D03",
     "D04",
     "D05",
+    "E025",
+    "E026",
+    "E027",
+    "E028",
+    "E029",
+    "E030",
+    "E031",
+    "E033",
+    "E034",
+    "E036",
+    "E037",
+    "E038",
+    "E039",
+    "E040",
     "F01",
     "F05_south",
     "F06_north",
@@ -10157,12 +10981,18 @@
     "S013",
     "S015",
     "S016",
+    "V025",
+    "V026",
+    "V027",
+    "V028",
+    "V029",
+    "V030",
+    "V031",
+    "V032",
+    "V033",
     "W01",
-    "W02",
-    "W03",
-    "W04",
-    "W05",
-    "W06",
+    "W033",
+    "W034",
     "W07",
     "W08",
     "W09",

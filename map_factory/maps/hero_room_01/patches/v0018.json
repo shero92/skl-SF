@@ -1,0 +1,549 @@
+{
+ "manifest_version": 1,
+ "map_id": "hero_room_01",
+ "base_version": 17,
+ "base_sha256": "8a15da1bdcdd14f8239992bb0da633785b2d8bf649dc4b58c7e5d4b7347c13f5",
+ "note": "hero_room_01 v0018: the owner-agreed ART-0032..0035 parts (cliff base, coast stacks and arches, foam, planters, palms, vines) added around the terrace; existing pieces untouched. Visual approval pending.",
+ "source_image": {
+  "path": "map_factory/references/hero_room_01_original.png",
+  "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+  "status": "reference_imported"
+ },
+ "changes": [
+  {
+   "op": "update_block",
+   "instance_id": "WallTopIvy0",
+   "set": {
+    "mount_on": "PerimeterWall_00_02"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "LeftSideWallBanner",
+   "set": {
+    "mount_on": "PerimeterWall_00_02"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "LeftWallLantern4",
+   "set": {
+    "mount_on": "PerimeterWall_00_06"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "LeftWallLantern4Glow",
+   "set": {
+    "mount_on": "PerimeterWall_00_06"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallTopIvy2",
+   "set": {
+    "mount_on": "PerimeterWall_00_06"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallTopIvy1",
+   "set": {
+    "mount_on": "PerimeterWall_16_02"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "RightSideWallBanner",
+   "set": {
+    "mount_on": "PerimeterWall_16_02"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "RightWallLantern4",
+   "set": {
+    "mount_on": "PerimeterWall_16_06"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "RightWallLantern4Glow",
+   "set": {
+    "mount_on": "PerimeterWall_16_06"
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "WallTopIvy3",
+   "set": {
+    "mount_on": "PerimeterWall_16_06"
+   }
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_00_01"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_00_03"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_00_04"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_00_05"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_00_07"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_16_01"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_16_03"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_16_04"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_16_05"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "PerimeterWall_16_07"
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_02",
+   "set": {
+    "id": "W033",
+    "x": 262,
+    "y": 480,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_06",
+   "set": {
+    "id": "W033",
+    "x": 262,
+    "y": 740,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_02",
+   "set": {
+    "id": "W034",
+    "x": 1282,
+    "y": 480,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_06",
+   "set": {
+    "id": "W034",
+    "x": 1282,
+    "y": 740,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E036",
+    "instance_id": "CoastArchFarLeft",
+    "x": 170,
+    "y": 300,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E037",
+    "instance_id": "CoastArchFarRight",
+    "x": 1380,
+    "y": 300,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E039",
+    "instance_id": "CoastStackTallLeft",
+    "x": 70,
+    "y": 640,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E038",
+    "instance_id": "CoastStackTallRight",
+    "x": 1470,
+    "y": 600,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E040",
+    "instance_id": "CoastStackLow",
+    "x": 1400,
+    "y": 740,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E033",
+    "instance_id": "SeaFoamLeft",
+    "x": 140,
+    "y": 760,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E034",
+    "instance_id": "SeaFoamRight",
+    "x": 1380,
+    "y": 800,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E026",
+    "instance_id": "CliffFrontLeftOuter",
+    "x": 300,
+    "y": 985,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E025",
+    "instance_id": "CliffFrontLeftInner",
+    "x": 520,
+    "y": 930,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E027",
+    "instance_id": "CliffFrontRightInner",
+    "x": 1060,
+    "y": 1010,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E026",
+    "instance_id": "CliffFrontRightOuter",
+    "x": 1270,
+    "y": 985,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E029",
+    "instance_id": "CliffFoamLeftOuter",
+    "x": 300,
+    "y": 1000,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E029",
+    "instance_id": "CliffFoamLeftInner",
+    "x": 520,
+    "y": 960,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E029",
+    "instance_id": "CliffFoamRightInner",
+    "x": 1060,
+    "y": 1015,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E029",
+    "instance_id": "CliffFoamRightOuter",
+    "x": 1270,
+    "y": 1000,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E028",
+    "instance_id": "CliffRubbleLeft",
+    "x": 200,
+    "y": 1005,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E028",
+    "instance_id": "CliffRubbleRight",
+    "x": 1340,
+    "y": 1005,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "E030",
+    "instance_id": "TerraceCornerLeft",
+    "x": 262,
+    "y": 905,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "E031",
+    "instance_id": "TerraceCornerRight",
+    "x": 1280,
+    "y": 905,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "V027",
+    "instance_id": "BackWallVineLeft",
+    "x": 322,
+    "y": 300,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "V027",
+    "instance_id": "BackWallVineRight",
+    "x": 1154,
+    "y": 300,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "V028",
+    "instance_id": "BackWallIvyLeft",
+    "x": 420,
+    "y": 210,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "V029",
+    "instance_id": "BackWallIvyRight",
+    "x": 1060,
+    "y": 210,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "V032",
+    "instance_id": "FrontPlanterLeft",
+    "x": 310,
+    "y": 800,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "V032",
+    "instance_id": "FrontPlanterRight",
+    "x": 1240,
+    "y": 800,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "V033",
+    "instance_id": "FrontPlanterLeftInner",
+    "x": 560,
+    "y": 830,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "V033",
+    "instance_id": "FrontPlanterRightInner",
+    "x": 980,
+    "y": 830,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "V025",
+    "instance_id": "FrontMoundBlue",
+    "x": 440,
+    "y": 815,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "V026",
+    "instance_id": "FrontMoundWhite",
+    "x": 1110,
+    "y": 815,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "V030",
+    "instance_id": "FrontPalmLeft",
+    "x": 258,
+    "y": 770,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "V031",
+    "instance_id": "FrontPalmRight",
+    "x": 1285,
+    "y": 770,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E027",
+    "instance_id": "CliffSideLeftUpper",
+    "x": 215,
+    "y": 520,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E026",
+    "instance_id": "CliffSideLeftLower",
+    "x": 215,
+    "y": 760,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E026",
+    "instance_id": "CliffSideRightUpper",
+    "x": 1325,
+    "y": 520,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E027",
+    "instance_id": "CliffSideRightLower",
+    "x": 1325,
+    "y": 760,
+    "scale": 1.0
+   }
+  }
+ ]
+}

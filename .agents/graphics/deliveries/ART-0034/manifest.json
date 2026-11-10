@@ -1,4 +1,5 @@
 {
+  "request_id": "ART-0034",
   "schema_version": 1,
   "art_request": "ART-0034",
   "task_id": "TASK-0102",
@@ -427,5 +428,39 @@
     "date": "2026-11-10",
     "evidence": "Owner: i agree all what u produced",
     "scope": "delivered selected ART-0034/0035 assets only; rejected attempts excluded; scene calibration pending"
-  }
+  },
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0034/sea_stack_tall_a.png",
+      "sha256": "506de1a1ec5988535ce01d24c3360412bf77a93275e255c1bc8e3309f06cd691"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0034/sea_stack_tall_b.png",
+      "sha256": "985a11930ecb8a43b171fdd6b268082178048a982d66084ec7768c14c19340b0"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0034/sea_stack_tall_c.png",
+      "sha256": "9ad23cb1d0269565af20967a18cdb55828847b2987aeecf8ec99894ad7a5d715"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0034/rock_arch_far_left.png",
+      "sha256": "8a0812ebc3f53efc137940ff7b08d5e980b3fbdc51687d11748385ee5c8973d9"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0034/rock_arch_far_right.png",
+      "sha256": "8ff4b19b5809acf3027cea1c56ba54322ce989271c77181843032e9704a87255"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0034/horizon_haze_strip.png",
+      "sha256": "e97ffd57edf39c2c89d0531da82b13ec283807baa351595c9b4f5ca1cf44be3c"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0034/foam_patch_a.png",
+      "sha256": "fd7bde47fc2cdb692243fef021008cf58a00eae1a8bc90c5cf244f1d3dcc05f2"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0034/foam_patch_b.png",
+      "sha256": "d3238aeebf41cb0f303718e10de3979abf6845614bdf0f0378f0cb72435d5fb1"
+    }
+  ]
 }
