@@ -1027,24 +1027,12 @@
       }
     },
     {
-      "id": "D03",
-      "instance_id": "CompassFloorEmblem",
-      "x": 738.0,
-      "y": 737,
+      "id": "D20",
+      "instance_id": "CompassInlay",
+      "x": 761,
+      "y": 724,
       "scale": 1.0,
-      "grid_placement": {
-        "cell": [
-          6,
-          4
-        ],
-        "facing": "north"
-      },
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.2,
-        "offset_x": 0,
-        "offset_y": 0
-      }
+      "render_layer": "ground"
     }
   ],
   "back_objects": [
@@ -1439,110 +1427,6 @@
       }
     },
     {
-      "id": "A10",
-      "instance_id": "StairStep1",
-      "x": 750.0,
-      "y": 910.4,
-      "scale": 1.6,
-      "shadow": {
-        "type": "stairs",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 5
-      }
-    },
-    {
-      "id": "A10",
-      "instance_id": "StairStep2",
-      "x": 750.0,
-      "y": 946.4,
-      "scale": 1.6,
-      "shadow": {
-        "type": "stairs",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 5
-      }
-    },
-    {
-      "id": "A10",
-      "instance_id": "StairStep3",
-      "x": 750.0,
-      "y": 982.4,
-      "scale": 1.6,
-      "shadow": {
-        "type": "stairs",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 5
-      }
-    },
-    {
-      "id": "A10",
-      "instance_id": "StairStep4",
-      "x": 750.0,
-      "y": 1018.4,
-      "scale": 1.6,
-      "shadow": {
-        "type": "stairs",
-        "opacity": 0.24,
-        "offset_x": 4,
-        "offset_y": 5
-      }
-    },
-    {
-      "id": "A13",
-      "instance_id": "EntrancePillarLeft",
-      "x": 602.0,
-      "y": 868.3,
-      "scale": 1.1,
-      "shadow": {
-        "type": "column_short",
-        "opacity": 0.26,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "A13",
-      "instance_id": "EntrancePillarRight",
-      "x": 894.0,
-      "y": 868.3,
-      "scale": 1.1,
-      "shadow": {
-        "type": "column_short",
-        "opacity": 0.26,
-        "offset_x": 4,
-        "offset_y": 4
-      }
-    },
-    {
-      "id": "A11",
-      "instance_id": "StairSupportLeft",
-      "x": 630.0,
-      "y": 928.0,
-      "scale": 1.0,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.2,
-        "offset_x": 3,
-        "offset_y": 3
-      }
-    },
-    {
-      "id": "A12",
-      "instance_id": "StairSupportRight",
-      "x": 864.0,
-      "y": 932.0,
-      "scale": 1.0,
-      "shadow": {
-        "type": "wall_base",
-        "opacity": 0.2,
-        "offset_x": 3,
-        "offset_y": 3
-      }
-    },
-    {
       "id": "L01",
       "instance_id": "LeftWallLantern0",
       "x": 258.0,
@@ -1784,6 +1668,14 @@
       "scale": 0.35,
       "render_layer": "decorations",
       "rotation_degrees": 15.0
+    },
+    {
+      "id": "A19",
+      "instance_id": "EntranceStair",
+      "x": 737,
+      "y": 1024,
+      "scale": 1.0,
+      "render_layer": "walls"
     }
   ],
   "objects": [
@@ -1868,62 +1760,6 @@
         "type": "bookshelf",
         "opacity": 0.28,
         "offset_x": 0,
-        "offset_y": 0
-      }
-    },
-    {
-      "id": "F07_north",
-      "instance_id": "RightBookcase",
-      "x": 994.0,
-      "y": 353,
-      "scale": 1.0,
-      "grid_placement": {
-        "cell": [
-          10,
-          1
-        ],
-        "facing": "north"
-      },
-      "facing": "north",
-      "orientation_mode": "variants",
-      "direction_asset_ids": {
-        "north": "F07_north",
-        "east": "F07_east",
-        "south": "F07_south",
-        "west": "F07_west"
-      },
-      "shadow": {
-        "type": "bookshelf",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      }
-    },
-    {
-      "id": "F08_north",
-      "instance_id": "DiningTable",
-      "x": 1122.0,
-      "y": 609,
-      "scale": 1.0,
-      "grid_placement": {
-        "cell": [
-          12,
-          3
-        ],
-        "facing": "north"
-      },
-      "facing": "north",
-      "orientation_mode": "variants",
-      "direction_asset_ids": {
-        "north": "F08_north",
-        "east": "F08_east",
-        "south": "F08_south",
-        "west": "F08_west"
-      },
-      "shadow": {
-        "type": "table",
-        "opacity": 0.3,
-        "offset_x": 4,
         "offset_y": 0
       }
     },
@@ -2124,8 +1960,8 @@
       "render_layer": "decorations",
       "mount_on": "DiningTable",
       "mount_offset": [
-        65.0,
-        -151
+        -65.0,
+        80
       ]
     },
     {
@@ -2143,19 +1979,6 @@
     },
     {
       "id": "L03",
-      "instance_id": "RightShelfCandles",
-      "x": 1018.0,
-      "y": 289,
-      "scale": 0.5,
-      "render_layer": "decorations",
-      "mount_on": "RightBookcase",
-      "mount_offset": [
-        24.0,
-        -64
-      ]
-    },
-    {
-      "id": "L03",
       "instance_id": "DiningCandles",
       "x": 1057.0,
       "y": 458,
@@ -2163,8 +1986,8 @@
       "render_layer": "decorations",
       "mount_on": "DiningTable",
       "mount_offset": [
-        -65.0,
-        -151
+        65.0,
+        80
       ]
     },
     {
@@ -2205,8 +2028,8 @@
       "render_layer": "decorations",
       "mount_on": "DiningTable",
       "mount_offset": [
-        -90.0,
-        -151
+        90.0,
+        80
       ]
     },
     {
@@ -2218,8 +2041,8 @@
       "render_layer": "decorations",
       "mount_on": "DiningTable",
       "mount_offset": [
-        -30.0,
-        -151
+        30.0,
+        80
       ]
     },
     {
@@ -2232,7 +2055,7 @@
       "mount_on": "DiningTable",
       "mount_offset": [
         0.0,
-        -151
+        80
       ]
     },
     {
@@ -2244,8 +2067,8 @@
       "render_layer": "decorations",
       "mount_on": "DiningTable",
       "mount_offset": [
-        30.0,
-        -151
+        -30.0,
+        80
       ]
     },
     {
@@ -2257,8 +2080,8 @@
       "render_layer": "decorations",
       "mount_on": "DiningTable",
       "mount_offset": [
-        95.0,
-        -151
+        -95.0,
+        80
       ]
     },
     {
@@ -2358,19 +2181,121 @@
       "render_layer": "decorations"
     },
     {
-      "id": "R12",
-      "instance_id": "BookshelfArmillary",
-      "x": 1052,
-      "y": 262,
-      "scale": 0.55,
-      "render_layer": "decorations"
-    },
-    {
-      "id": "P012",
+      "id": "P31",
       "instance_id": "StudyStool",
       "x": 1157,
       "y": 655,
-      "scale": 0.33,
+      "scale": 1.2,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "P27",
+      "instance_id": "DiningTable",
+      "x": 1122.0,
+      "y": 609,
+      "scale": 1.55,
+      "render_layer": "decorations",
+      "facing": "south",
+      "orientation_mode": "variants",
+      "direction_asset_ids": {
+        "north": "P28",
+        "east": "P29",
+        "south": "P27",
+        "west": "P30"
+      },
+      "shadow": {
+        "type": "table",
+        "opacity": 0.3,
+        "offset_x": 4,
+        "offset_y": 0
+      }
+    },
+    {
+      "id": "P32",
+      "instance_id": "RightBookshelf",
+      "x": 1191,
+      "y": 437,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "P34",
+      "instance_id": "HeadboardShelf",
+      "x": 315,
+      "y": 300,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "V034",
+      "instance_id": "BluePlanter",
+      "x": 1335,
+      "y": 498,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "A20",
+      "instance_id": "FinialPostLeft",
+      "x": 622,
+      "y": 812,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "A20",
+      "instance_id": "FinialPostRight",
+      "x": 852,
+      "y": 812,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "D21",
+      "instance_id": "RopePostWestFar",
+      "x": 214,
+      "y": 660,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "D21",
+      "instance_id": "RopePostWestNear",
+      "x": 286,
+      "y": 742,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "D22",
+      "instance_id": "RopeWest",
+      "x": 250,
+      "y": 700,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "D21",
+      "instance_id": "RopePostEastFar",
+      "x": 1214,
+      "y": 660,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "D21",
+      "instance_id": "RopePostEastNear",
+      "x": 1286,
+      "y": 742,
+      "scale": 1.0,
+      "render_layer": "decorations"
+    },
+    {
+      "id": "D23",
+      "instance_id": "RopeEast",
+      "x": 1250,
+      "y": 700,
+      "scale": 1.0,
       "render_layer": "decorations"
     }
   ],
@@ -2529,8 +2454,8 @@
       "render_layer": "decorations",
       "mount_on": "DiningTable",
       "mount_offset": [
-        65.0,
-        -163
+        -65.0,
+        92
       ]
     },
     {
@@ -2548,19 +2473,6 @@
     },
     {
       "id": "L05",
-      "instance_id": "RightShelfCandlesGlow",
-      "x": 1018.0,
-      "y": 279,
-      "scale": 0.4,
-      "render_layer": "decorations",
-      "mount_on": "RightBookcase",
-      "mount_offset": [
-        24.0,
-        -74
-      ]
-    },
-    {
-      "id": "L05",
       "instance_id": "DiningCandlesGlow",
       "x": 1057.0,
       "y": 448,
@@ -2568,8 +2480,8 @@
       "render_layer": "decorations",
       "mount_on": "DiningTable",
       "mount_offset": [
-        -65.0,
-        -161
+        65.0,
+        90
       ]
     },
     {
@@ -2705,15 +2617,15 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 22,
-  "parent_version": 21,
-  "created_at": "2026-11-10T15:40:26+00:00",
+  "version": 23,
+  "parent_version": 22,
+  "created_at": "2026-11-10T21:51:16+00:00",
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "change_note": "hero_room_01 v0022: occlusion_mode world_y_sort. Walls, decor and characters share one Y-sort so the hero is drawn in front of or behind furniture and walls by ground contact. No block, asset or position changed.",
+  "change_note": "hero_room_01 v0023: integrate the Codex B1/B2 candidates (study table, stool, bookshelf with armillary, headboard shelf, blue-white plant, entrance stair with finial posts, rope fences, compass inlay). Positions follow the owner target; visual approval is still pending.",
   "visual_qa": {
     "status": "needs_review",
     "notes": "Native render v0013 pending; compare against reference and v0012."
@@ -2798,7 +2710,7 @@
         "max_altitude": 80
       },
       {
-        "instance_id": "EntrancePillarLeft",
+        "instance_id": "FinialPostLeft",
         "blocks": [
           "walk",
           "fly"
@@ -2807,7 +2719,7 @@
         "max_altitude": 78
       },
       {
-        "instance_id": "EntrancePillarRight",
+        "instance_id": "FinialPostRight",
         "blocks": [
           "walk",
           "fly"
@@ -2825,7 +2737,7 @@
         "max_altitude": 110
       },
       {
-        "instance_id": "RightBookcase",
+        "instance_id": "RightBookshelf",
         "blocks": [
           "walk",
           "fly"
@@ -2950,7 +2862,7 @@
     "joint_opacity": 0.27,
     "joint_width": 1.15
   },
-  "parent_snapshot_sha256": "f94a6e92898e9b2a30a12cd3057a2216c8421e502efc3c5eba435a4de049556a",
+  "parent_snapshot_sha256": "0fcb275270ea7b2363f11b40ea9f5efeedb23e079025d45362418e7166b7dcac",
   "camera": {
     "x": 768,
     "y": 512,
@@ -3200,7 +3112,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 22,
+    "version": 23,
     "processing_passes": [
       "background",
       "ground",
@@ -4933,26 +4845,26 @@
           ]
         },
         {
-          "instance_id": "CompassFloorEmblem",
-          "asset_id": "D03",
+          "instance_id": "CompassInlay",
+          "asset_id": "D20",
           "source_layer": "ground_overlays",
           "render_layer": "ground",
           "position": [
-            738.0,
-            737.0
+            761.0,
+            724.0
           ],
           "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.png",
+          "texture_path": "res://map_factory/parts/decor/D20_Compass_Floor_Inlay.png",
           "pixel_size": [
-            256,
-            256
+            252,
+            179
           ],
           "origin": [
-            128,
-            256
+            126,
+            179
           ],
           "status": "ready",
           "collision": {
@@ -4967,99 +4879,12 @@
             ]
           },
           "shadow": {
-            "type": "contact_medium",
-            "opacity": 0.2,
-            "offset_x": 0,
-            "offset_y": 0
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
           },
-          "attachment": null,
-          "grid_placement": {
-            "cell": [
-              6,
-              4
-            ],
-            "facing": "north"
-          },
-          "placement_contract": {
-            "schema_version": 1,
-            "mode": "floor",
-            "footprint_cells": [
-              4,
-              4
-            ],
-            "occupancy_group": "overlay",
-            "allowed_floor_tags": [
-              "stone"
-            ],
-            "forbidden_floor_tags": [],
-            "measurement_status": "provisional"
-          },
-          "occupied_floor_cells": [
-            [
-              6,
-              4
-            ],
-            [
-              7,
-              4
-            ],
-            [
-              8,
-              4
-            ],
-            [
-              9,
-              4
-            ],
-            [
-              6,
-              5
-            ],
-            [
-              7,
-              5
-            ],
-            [
-              8,
-              5
-            ],
-            [
-              9,
-              5
-            ],
-            [
-              6,
-              6
-            ],
-            [
-              7,
-              6
-            ],
-            [
-              8,
-              6
-            ],
-            [
-              9,
-              6
-            ],
-            [
-              6,
-              7
-            ],
-            [
-              7,
-              7
-            ],
-            [
-              8,
-              7
-            ],
-            [
-              9,
-              7
-            ]
-          ]
+          "attachment": null
         }
       ],
       "walls": [
@@ -6324,278 +6149,26 @@
           "attachment": null
         },
         {
-          "instance_id": "StairStep1",
-          "asset_id": "A10",
+          "instance_id": "EntranceStair",
+          "asset_id": "A19",
           "source_layer": "back_objects",
           "render_layer": "walls",
           "position": [
-            750.0,
-            910.4
-          ],
-          "scale": 1.6,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
-          "pixel_size": [
-            128,
-            128
-          ],
-          "origin": [
-            64,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "stairs",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 5
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "StairStep2",
-          "asset_id": "A10",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            750.0,
-            946.4
-          ],
-          "scale": 1.6,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
-          "pixel_size": [
-            128,
-            128
-          ],
-          "origin": [
-            64,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "stairs",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 5
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "StairStep3",
-          "asset_id": "A10",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            750.0,
-            982.4
-          ],
-          "scale": 1.6,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
-          "pixel_size": [
-            128,
-            128
-          ],
-          "origin": [
-            64,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "stairs",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 5
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "StairStep4",
-          "asset_id": "A10",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            750.0,
-            1018.4
-          ],
-          "scale": 1.6,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
-          "pixel_size": [
-            128,
-            128
-          ],
-          "origin": [
-            64,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "stairs",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 5
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "EntrancePillarLeft",
-          "asset_id": "A13",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            602.0,
-            868.3
-          ],
-          "scale": 1.1,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "column_short",
-            "opacity": 0.26,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "EntrancePillarRight",
-          "asset_id": "A13",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            894.0,
-            868.3
-          ],
-          "scale": 1.1,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png",
-          "pixel_size": [
-            64,
-            128
-          ],
-          "origin": [
-            32,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "column_short",
-            "opacity": 0.26,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "StairSupportLeft",
-          "asset_id": "A11",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            630.0,
-            928.0
+            737.0,
+            1024.0
           ],
           "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.png",
+          "texture_path": "res://map_factory/parts/architecture/A19_Entrance_Stairs_South.png",
           "pixel_size": [
-            128,
-            128
+            274,
+            233
           ],
           "origin": [
-            64,
-            128
+            137,
+            233
           ],
           "status": "ready",
           "collision": {
@@ -6610,52 +6183,10 @@
             ]
           },
           "shadow": {
-            "type": "wall_base",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 3
-          },
-          "attachment": null
-        },
-        {
-          "instance_id": "StairSupportRight",
-          "asset_id": "A12",
-          "source_layer": "back_objects",
-          "render_layer": "walls",
-          "position": [
-            864.0,
-            932.0
-          ],
-          "scale": 1.0,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.png",
-          "pixel_size": [
-            128,
-            128
-          ],
-          "origin": [
-            64,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "wall_base",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 3
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
           },
           "attachment": null
         },
@@ -8009,224 +7540,6 @@
           ]
         },
         {
-          "instance_id": "RightBookcase",
-          "asset_id": "F07_north",
-          "source_layer": "objects",
-          "render_layer": "decorations",
-          "position": [
-            994.0,
-            353.0
-          ],
-          "scale": 1.0,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.png",
-          "pixel_size": [
-            256,
-            128
-          ],
-          "origin": [
-            128,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": true,
-            "size": [
-              256,
-              64
-            ],
-            "offset": [
-              0,
-              -32
-            ]
-          },
-          "shadow": {
-            "type": "bookshelf",
-            "opacity": 0.28,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "attachment": null,
-          "orientation": {
-            "facing": "north",
-            "orientation_mode": "variants",
-            "turn_quarters": 0,
-            "resolved_asset_id": "F07_north",
-            "direction_asset_ids": {
-              "north": "F07_north",
-              "east": "F07_east",
-              "south": "F07_south",
-              "west": "F07_west"
-            }
-          },
-          "grid_placement": {
-            "cell": [
-              10,
-              1
-            ],
-            "facing": "north"
-          },
-          "placement_contract": {
-            "schema_version": 1,
-            "mode": "floor",
-            "footprint_cells": [
-              4,
-              1
-            ],
-            "occupancy_group": "solid",
-            "allowed_floor_tags": [
-              "stone"
-            ],
-            "forbidden_floor_tags": [],
-            "measurement_status": "provisional"
-          },
-          "occupied_floor_cells": [
-            [
-              10,
-              1
-            ],
-            [
-              11,
-              1
-            ],
-            [
-              12,
-              1
-            ],
-            [
-              13,
-              1
-            ]
-          ]
-        },
-        {
-          "instance_id": "DiningTable",
-          "asset_id": "F08_north",
-          "source_layer": "objects",
-          "render_layer": "decorations",
-          "position": [
-            1122.0,
-            609.0
-          ],
-          "scale": 1.0,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.png",
-          "pixel_size": [
-            256,
-            192
-          ],
-          "origin": [
-            128,
-            192
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": true,
-            "size": [
-              256,
-              192
-            ],
-            "offset": [
-              0,
-              -96
-            ]
-          },
-          "shadow": {
-            "type": "table",
-            "opacity": 0.3,
-            "offset_x": 4,
-            "offset_y": 0
-          },
-          "attachment": null,
-          "orientation": {
-            "facing": "north",
-            "orientation_mode": "variants",
-            "turn_quarters": 0,
-            "resolved_asset_id": "F08_north",
-            "direction_asset_ids": {
-              "north": "F08_north",
-              "east": "F08_east",
-              "south": "F08_south",
-              "west": "F08_west"
-            }
-          },
-          "grid_placement": {
-            "cell": [
-              12,
-              3
-            ],
-            "facing": "north"
-          },
-          "placement_contract": {
-            "schema_version": 1,
-            "mode": "floor",
-            "footprint_cells": [
-              4,
-              3
-            ],
-            "occupancy_group": "solid",
-            "allowed_floor_tags": [
-              "stone"
-            ],
-            "forbidden_floor_tags": [],
-            "measurement_status": "provisional"
-          },
-          "occupied_floor_cells": [
-            [
-              12,
-              3
-            ],
-            [
-              13,
-              3
-            ],
-            [
-              14,
-              3
-            ],
-            [
-              15,
-              3
-            ],
-            [
-              12,
-              4
-            ],
-            [
-              13,
-              4
-            ],
-            [
-              14,
-              4
-            ],
-            [
-              15,
-              4
-            ],
-            [
-              12,
-              5
-            ],
-            [
-              13,
-              5
-            ],
-            [
-              14,
-              5
-            ],
-            [
-              15,
-              5
-            ]
-          ]
-        },
-        {
           "instance_id": "TableBenchLeft",
           "asset_id": "F09_south",
           "source_layer": "objects",
@@ -8879,7 +8192,7 @@
           "render_layer": "decorations",
           "position": [
             1187.0,
-            458.0
+            529.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -8916,8 +8229,8 @@
             "parent_instance_id": "DiningTable",
             "host_render_layer": "decorations",
             "mount_offset": [
-              65.0,
-              -151.0
+              -65.0,
+              80.0
             ]
           }
         },
@@ -8971,62 +8284,13 @@
           }
         },
         {
-          "instance_id": "RightShelfCandles",
-          "asset_id": "L03",
-          "source_layer": "objects",
-          "render_layer": "decorations",
-          "position": [
-            1018.0,
-            289.0
-          ],
-          "scale": 0.5,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/lighting/L03__lighting__candle_cluster__default__1x1__64x64.png",
-          "pixel_size": [
-            64,
-            64
-          ],
-          "origin": [
-            32,
-            64
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 2
-          },
-          "attachment": {
-            "parent_instance_id": "RightBookcase",
-            "host_render_layer": "decorations",
-            "mount_offset": [
-              24.0,
-              -64.0
-            ]
-          }
-        },
-        {
           "instance_id": "DiningCandles",
           "asset_id": "L03",
           "source_layer": "objects",
           "render_layer": "decorations",
           "position": [
             1057.0,
-            458.0
+            529.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -9063,8 +8327,8 @@
             "parent_instance_id": "DiningTable",
             "host_render_layer": "decorations",
             "mount_offset": [
-              -65.0,
-              -151.0
+              65.0,
+              80.0
             ]
           }
         },
@@ -9208,7 +8472,7 @@
           "render_layer": "decorations",
           "position": [
             1032.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "rotation_degrees": 0.0,
@@ -9245,8 +8509,8 @@
             "parent_instance_id": "DiningTable",
             "host_render_layer": "decorations",
             "mount_offset": [
-              -90.0,
-              -151.0
+              90.0,
+              80.0
             ]
           }
         },
@@ -9257,7 +8521,7 @@
           "render_layer": "decorations",
           "position": [
             1092.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "rotation_degrees": 0.0,
@@ -9294,8 +8558,8 @@
             "parent_instance_id": "DiningTable",
             "host_render_layer": "decorations",
             "mount_offset": [
-              -30.0,
-              -151.0
+              30.0,
+              80.0
             ]
           }
         },
@@ -9306,7 +8570,7 @@
           "render_layer": "decorations",
           "position": [
             1122.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "rotation_degrees": 0.0,
@@ -9344,7 +8608,7 @@
             "host_render_layer": "decorations",
             "mount_offset": [
               0.0,
-              -151.0
+              80.0
             ]
           }
         },
@@ -9355,7 +8619,7 @@
           "render_layer": "decorations",
           "position": [
             1152.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "rotation_degrees": 0.0,
@@ -9392,8 +8656,8 @@
             "parent_instance_id": "DiningTable",
             "host_render_layer": "decorations",
             "mount_offset": [
-              30.0,
-              -151.0
+              -30.0,
+              80.0
             ]
           }
         },
@@ -9404,7 +8668,7 @@
           "render_layer": "decorations",
           "position": [
             1217.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "rotation_degrees": 0.0,
@@ -9441,8 +8705,8 @@
             "parent_instance_id": "DiningTable",
             "host_render_layer": "decorations",
             "mount_offset": [
-              95.0,
-              -151.0
+              -95.0,
+              80.0
             ]
           }
         },
@@ -9993,26 +9257,26 @@
           "attachment": null
         },
         {
-          "instance_id": "BookshelfArmillary",
-          "asset_id": "R12",
+          "instance_id": "StudyStool",
+          "asset_id": "P31",
           "source_layer": "objects",
           "render_layer": "decorations",
           "position": [
-            1052.0,
-            262.0
+            1157.0,
+            655.0
           ],
-          "scale": 0.55,
+          "scale": 1.2,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png",
+          "texture_path": "res://map_factory/parts/furniture/P31_Study_Wooden_Stool.png",
           "pixel_size": [
-            64,
-            64
+            30,
+            40
           ],
           "origin": [
-            32,
-            64
+            15,
+            40
           ],
           "status": "ready",
           "collision": {
@@ -10027,36 +9291,36 @@
             ]
           },
           "shadow": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
             "offset_y": 2
           },
           "attachment": null
         },
         {
-          "instance_id": "StudyStool",
-          "asset_id": "P012",
+          "instance_id": "DiningTable",
+          "asset_id": "P27",
           "source_layer": "objects",
           "render_layer": "decorations",
           "position": [
-            1157.0,
-            655.0
+            1122.0,
+            609.0
           ],
-          "scale": 0.33,
+          "scale": 1.55,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
+          "texture_path": "res://map_factory/parts/furniture/P27_Study_Table_South.png",
           "pixel_size": [
-            119,
-            115
+            150,
+            100
           ],
           "origin": [
-            59,
-            115
+            75,
+            100
           ],
-          "status": "needs_cleanup",
+          "status": "ready",
           "collision": {
             "enabled": false,
             "size": [
@@ -10069,7 +9333,481 @@
             ]
           },
           "shadow": {
-            "type": "contact",
+            "type": "table",
+            "opacity": 0.3,
+            "offset_x": 4,
+            "offset_y": 0
+          },
+          "attachment": null,
+          "orientation": {
+            "facing": "south",
+            "orientation_mode": "variants",
+            "turn_quarters": 2,
+            "resolved_asset_id": "P27",
+            "direction_asset_ids": {
+              "north": "P28",
+              "east": "P29",
+              "south": "P27",
+              "west": "P30"
+            }
+          }
+        },
+        {
+          "instance_id": "RightBookshelf",
+          "asset_id": "P32",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1191.0,
+            437.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/furniture/P32_Study_Bookshelf_South.png",
+          "pixel_size": [
+            212,
+            124
+          ],
+          "origin": [
+            106,
+            124
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "HeadboardShelf",
+          "asset_id": "P34",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            315.0,
+            300.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/furniture/P34_Headboard_Shelf_South.png",
+          "pixel_size": [
+            138,
+            85
+          ],
+          "origin": [
+            69,
+            85
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "BluePlanter",
+          "asset_id": "V034",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1335.0,
+            498.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/vegetation/V034_Blue_White_Planter.png",
+          "pixel_size": [
+            109,
+            150
+          ],
+          "origin": [
+            54,
+            150
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FinialPostLeft",
+          "asset_id": "A20",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            622.0,
+            812.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/architecture/A20_Stone_Sphere_Finial.png",
+          "pixel_size": [
+            46,
+            120
+          ],
+          "origin": [
+            23,
+            120
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FinialPostRight",
+          "asset_id": "A20",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            852.0,
+            812.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/architecture/A20_Stone_Sphere_Finial.png",
+          "pixel_size": [
+            46,
+            120
+          ],
+          "origin": [
+            23,
+            120
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "RopePostWestFar",
+          "asset_id": "D21",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            214.0,
+            660.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D21_Rope_Post.png",
+          "pixel_size": [
+            23,
+            90
+          ],
+          "origin": [
+            11,
+            90
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "RopePostWestNear",
+          "asset_id": "D21",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            286.0,
+            742.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D21_Rope_Post.png",
+          "pixel_size": [
+            23,
+            90
+          ],
+          "origin": [
+            11,
+            90
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "RopeWest",
+          "asset_id": "D22",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            250.0,
+            700.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D22_Rope_Swag_West_Rail.png",
+          "pixel_size": [
+            110,
+            30
+          ],
+          "origin": [
+            55,
+            30
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "RopePostEastFar",
+          "asset_id": "D21",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1214.0,
+            660.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D21_Rope_Post.png",
+          "pixel_size": [
+            23,
+            90
+          ],
+          "origin": [
+            11,
+            90
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "RopePostEastNear",
+          "asset_id": "D21",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1286.0,
+            742.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D21_Rope_Post.png",
+          "pixel_size": [
+            23,
+            90
+          ],
+          "origin": [
+            11,
+            90
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "RopeEast",
+          "asset_id": "D23",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1250.0,
+            700.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D23_Rope_Swag_East_Rail.png",
+          "pixel_size": [
+            110,
+            37
+          ],
+          "origin": [
+            55,
+            37
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
             "opacity": 0.25,
             "offset_x": 4,
             "offset_y": 2
@@ -10524,7 +10262,7 @@
           "render_layer": "decorations",
           "position": [
             1187.0,
-            446.0
+            517.0
           ],
           "scale": 0.5,
           "rotation_degrees": 0.0,
@@ -10561,8 +10299,8 @@
             "parent_instance_id": "DiningTable",
             "host_render_layer": "decorations",
             "mount_offset": [
-              65.0,
-              -163.0
+              -65.0,
+              92.0
             ]
           }
         },
@@ -10616,62 +10354,13 @@
           }
         },
         {
-          "instance_id": "RightShelfCandlesGlow",
-          "asset_id": "L05",
-          "source_layer": "front_objects",
-          "render_layer": "decorations",
-          "position": [
-            1018.0,
-            279.0
-          ],
-          "scale": 0.4,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/lighting/L05__lighting__small_flame_glow_overlay__default__1x1__64x64.png",
-          "pixel_size": [
-            64,
-            64
-          ],
-          "origin": [
-            32,
-            64
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 2
-          },
-          "attachment": {
-            "parent_instance_id": "RightBookcase",
-            "host_render_layer": "decorations",
-            "mount_offset": [
-              24.0,
-              -74.0
-            ]
-          }
-        },
-        {
           "instance_id": "DiningCandlesGlow",
           "asset_id": "L05",
           "source_layer": "front_objects",
           "render_layer": "decorations",
           "position": [
             1057.0,
-            448.0
+            519.0
           ],
           "scale": 0.4,
           "rotation_degrees": 0.0,
@@ -10708,8 +10397,8 @@
             "parent_instance_id": "DiningTable",
             "host_render_layer": "decorations",
             "mount_offset": [
-              -65.0,
-              -161.0
+              65.0,
+              90.0
             ]
           }
         },
@@ -10925,30 +10614,6 @@
           "settings": {
             "type": "contact_medium",
             "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "CompassFloorEmblem__shadow",
-          "owner_instance_id": "CompassFloorEmblem",
-          "owner_asset_id": "D03",
-          "asset_id": "S002",
-          "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-          "position": [
-            738.0,
-            737.0
-          ],
-          "scale": 1.0,
-          "sprite_pixel_size": [
-            256,
-            256
-          ],
-          "settings": {
-            "type": "contact_medium",
-            "opacity": 0.2,
             "offset_x": 0,
             "offset_y": 0
           },
@@ -11676,198 +11341,6 @@
           "display_z": 20
         },
         {
-          "instance_id": "StairStep1__shadow",
-          "owner_instance_id": "StairStep1",
-          "owner_asset_id": "A10",
-          "asset_id": "S015",
-          "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
-          "position": [
-            750.0,
-            910.4
-          ],
-          "scale": 1.6,
-          "sprite_pixel_size": [
-            128,
-            128
-          ],
-          "settings": {
-            "type": "stairs",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 5
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "StairStep2__shadow",
-          "owner_instance_id": "StairStep2",
-          "owner_asset_id": "A10",
-          "asset_id": "S015",
-          "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
-          "position": [
-            750.0,
-            946.4
-          ],
-          "scale": 1.6,
-          "sprite_pixel_size": [
-            128,
-            128
-          ],
-          "settings": {
-            "type": "stairs",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 5
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "StairStep3__shadow",
-          "owner_instance_id": "StairStep3",
-          "owner_asset_id": "A10",
-          "asset_id": "S015",
-          "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
-          "position": [
-            750.0,
-            982.4
-          ],
-          "scale": 1.6,
-          "sprite_pixel_size": [
-            128,
-            128
-          ],
-          "settings": {
-            "type": "stairs",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 5
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "StairStep4__shadow",
-          "owner_instance_id": "StairStep4",
-          "owner_asset_id": "A10",
-          "asset_id": "S015",
-          "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
-          "position": [
-            750.0,
-            1018.4
-          ],
-          "scale": 1.6,
-          "sprite_pixel_size": [
-            128,
-            128
-          ],
-          "settings": {
-            "type": "stairs",
-            "opacity": 0.24,
-            "offset_x": 4,
-            "offset_y": 5
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "EntrancePillarLeft__shadow",
-          "owner_instance_id": "EntrancePillarLeft",
-          "owner_asset_id": "A13",
-          "asset_id": "S011",
-          "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
-          "position": [
-            602.0,
-            868.3
-          ],
-          "scale": 1.1,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "column_short",
-            "opacity": 0.26,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "EntrancePillarRight__shadow",
-          "owner_instance_id": "EntrancePillarRight",
-          "owner_asset_id": "A13",
-          "asset_id": "S011",
-          "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
-          "position": [
-            894.0,
-            868.3
-          ],
-          "scale": 1.1,
-          "sprite_pixel_size": [
-            64,
-            128
-          ],
-          "settings": {
-            "type": "column_short",
-            "opacity": 0.26,
-            "offset_x": 4,
-            "offset_y": 4
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "StairSupportLeft__shadow",
-          "owner_instance_id": "StairSupportLeft",
-          "owner_asset_id": "A11",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            630.0,
-            928.0
-          ],
-          "scale": 1.0,
-          "sprite_pixel_size": [
-            128,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 3
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "StairSupportRight__shadow",
-          "owner_instance_id": "StairSupportRight",
-          "owner_asset_id": "A12",
-          "asset_id": "S013",
-          "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
-          "position": [
-            864.0,
-            932.0
-          ],
-          "scale": 1.0,
-          "sprite_pixel_size": [
-            128,
-            128
-          ],
-          "settings": {
-            "type": "wall_base",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 3
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
           "instance_id": "TerraceRockFrontLeft__shadow",
           "owner_instance_id": "TerraceRockFrontLeft",
           "owner_asset_id": "B03",
@@ -12372,54 +11845,6 @@
           "display_z": 20
         },
         {
-          "instance_id": "RightBookcase__shadow",
-          "owner_instance_id": "RightBookcase",
-          "owner_asset_id": "F07_north",
-          "asset_id": "S008",
-          "texture_path": "res://map_factory/parts/shadows/S008_Shadow_Bookshelf.png",
-          "position": [
-            994.0,
-            353.0
-          ],
-          "scale": 1.0,
-          "sprite_pixel_size": [
-            256,
-            128
-          ],
-          "settings": {
-            "type": "bookshelf",
-            "opacity": 0.28,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "DiningTable__shadow",
-          "owner_instance_id": "DiningTable",
-          "owner_asset_id": "F08_north",
-          "asset_id": "S006",
-          "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
-          "position": [
-            1122.0,
-            609.0
-          ],
-          "scale": 1.0,
-          "sprite_pixel_size": [
-            256,
-            192
-          ],
-          "settings": {
-            "type": "table",
-            "opacity": 0.3,
-            "offset_x": 4,
-            "offset_y": 0
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
           "instance_id": "TableBenchLeft__shadow",
           "owner_instance_id": "TableBenchLeft",
           "owner_asset_id": "F09_south",
@@ -12667,7 +12092,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1187.0,
-            458.0
+            529.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -12708,30 +12133,6 @@
           "display_z": 20
         },
         {
-          "instance_id": "RightShelfCandles__shadow",
-          "owner_instance_id": "RightShelfCandles",
-          "owner_asset_id": "L03",
-          "asset_id": "S001",
-          "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-          "position": [
-            1018.0,
-            289.0
-          ],
-          "scale": 0.5,
-          "sprite_pixel_size": [
-            64,
-            64
-          ],
-          "settings": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 2
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
           "instance_id": "DiningCandles__shadow",
           "owner_instance_id": "DiningCandles",
           "owner_asset_id": "L03",
@@ -12739,7 +12140,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1057.0,
-            458.0
+            529.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -12835,7 +12236,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1032.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "sprite_pixel_size": [
@@ -12859,7 +12260,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1092.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "sprite_pixel_size": [
@@ -12883,7 +12284,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1122.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "sprite_pixel_size": [
@@ -12907,7 +12308,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1152.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "sprite_pixel_size": [
@@ -12931,7 +12332,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1217.0,
-            458.0
+            529.0
           ],
           "scale": 0.4,
           "sprite_pixel_size": [
@@ -12996,49 +12397,25 @@
           "display_z": 20
         },
         {
-          "instance_id": "BookshelfArmillary__shadow",
-          "owner_instance_id": "BookshelfArmillary",
-          "owner_asset_id": "R12",
-          "asset_id": "S001",
-          "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
+          "instance_id": "DiningTable__shadow",
+          "owner_instance_id": "DiningTable",
+          "owner_asset_id": "P27",
+          "asset_id": "S006",
+          "texture_path": "res://map_factory/parts/shadows/S006_Shadow_Table.png",
           "position": [
-            1052.0,
-            262.0
+            1122.0,
+            609.0
           ],
-          "scale": 0.55,
+          "scale": 1.55,
           "sprite_pixel_size": [
-            64,
-            64
+            150,
+            100
           ],
           "settings": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 2
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "StudyStool__shadow",
-          "owner_instance_id": "StudyStool",
-          "owner_asset_id": "P012",
-          "asset_id": "S002",
-          "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-          "position": [
-            1157.0,
-            655.0
-          ],
-          "scale": 0.33,
-          "sprite_pixel_size": [
-            119,
-            115
-          ],
-          "settings": {
-            "type": "contact",
-            "opacity": 0.25,
+            "type": "table",
+            "opacity": 0.3,
             "offset_x": 4,
-            "offset_y": 2
+            "offset_y": 0
           },
           "render_layer": "shadows",
           "display_z": 20
@@ -13267,7 +12644,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1187.0,
-            446.0
+            517.0
           ],
           "scale": 0.5,
           "sprite_pixel_size": [
@@ -13308,30 +12685,6 @@
           "display_z": 20
         },
         {
-          "instance_id": "RightShelfCandlesGlow__shadow",
-          "owner_instance_id": "RightShelfCandlesGlow",
-          "owner_asset_id": "L05",
-          "asset_id": "S001",
-          "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-          "position": [
-            1018.0,
-            279.0
-          ],
-          "scale": 0.4,
-          "sprite_pixel_size": [
-            64,
-            64
-          ],
-          "settings": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 2
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
           "instance_id": "DiningCandlesGlow__shadow",
           "owner_instance_id": "DiningCandlesGlow",
           "owner_asset_id": "L05",
@@ -13339,7 +12692,7 @@
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
             1057.0,
-            448.0
+            519.0
           ],
           "scale": 0.4,
           "sprite_pixel_size": [
@@ -14233,27 +13586,28 @@
     "counts": {
       "background": 35,
       "ground": 3,
-      "walls": 40,
-      "decorations": 79,
-      "shadows": 103
+      "walls": 33,
+      "decorations": 86,
+      "shadows": 89
     },
     "unique_asset_ids": [
       "A01",
       "A05",
       "A09",
-      "A10",
-      "A11",
-      "A12",
-      "A13",
+      "A19",
+      "A20",
       "B03",
       "B05",
       "B06",
       "B11",
       "D01",
       "D02",
-      "D03",
       "D04",
       "D05",
+      "D20",
+      "D21",
+      "D22",
+      "D23",
       "E025",
       "E026",
       "E027",
@@ -14273,8 +13627,6 @@
       "F01",
       "F05_south",
       "F06_north",
-      "F07_north",
-      "F08_north",
       "F09_south",
       "F10_south",
       "F11_south",
@@ -14299,12 +13651,15 @@
       "O001",
       "O003",
       "P01",
-      "P012",
       "P02",
       "P03",
       "P04",
       "P05",
       "P06",
+      "P27",
+      "P31",
+      "P32",
+      "P34",
       "R01",
       "R02",
       "R05",
@@ -14312,7 +13667,6 @@
       "R09",
       "R10",
       "R11",
-      "R12",
       "R13",
       "S001",
       "S002",
@@ -14321,10 +13675,8 @@
       "S007",
       "S008",
       "S010",
-      "S011",
       "S012",
       "S013",
-      "S015",
       "S016",
       "V025",
       "V026",
@@ -14335,6 +13687,7 @@
       "V031",
       "V032",
       "V033",
+      "V034",
       "W01",
       "W027",
       "W028",
@@ -14581,20 +13934,20 @@
         "sha256": "5c330931ff03960ef3f719f5e0711b77cebadf4f69f3973f2bc1146e6b0ecae4"
       }
     },
-    "A10": {
-      "id": "A10",
-      "name": "Front Stair Step Tile",
+    "A19": {
+      "id": "A19",
+      "name": "Entrance Stairs South",
       "category": "architecture",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.png",
+      "subtype": "stairs",
+      "texture_path": "res://map_factory/parts/architecture/A19_Entrance_Stairs_South.png",
       "status": "ready",
       "pixel_size": [
-        128,
-        128
+        274,
+        233
       ],
       "origin": [
-        64,
-        128
+        137,
+        233
       ],
       "collision": {
         "enabled": false,
@@ -14609,256 +13962,84 @@
       },
       "y_sort": true,
       "shadow": {
-        "type": "soft_cast",
-        "opacity": 0.22,
-        "offset_x": 8,
-        "offset_y": 6
-      },
-      "tags": [
-        "architecture",
-        "front",
-        "stair",
-        "stairs",
-        "step",
-        "stone",
-        "tile"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "A10",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/architecture/A10__architecture__front_stair_step_tile__default__1x1__128x128.json",
-        "sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "A10"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "ecdf1f3a0206a434f35ebd7a03bc7c90fa503f1d4d85ffbdf916b0e8d87a1bf0"
-      }
-    },
-    "A11": {
-      "id": "A11",
-      "name": "Stair Side Support Left",
-      "category": "architecture",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        128
-      ],
-      "origin": [
-        64,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "soft_cast",
-        "opacity": 0.22,
-        "offset_x": 8,
-        "offset_y": 6
-      },
-      "tags": [
-        "architecture",
-        "left",
-        "left_support",
-        "side",
-        "stair",
-        "stairs",
-        "stone",
-        "support"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "A11",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/architecture/A11__architecture__stair_side_support_left__default__1x1__128x128.json",
-        "sha256": "b0af7f8cadd617782426306f7b27cb5bcc032861fd0e43906f3d83f7f46b91c0",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "A11"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "b0af7f8cadd617782426306f7b27cb5bcc032861fd0e43906f3d83f7f46b91c0"
-      }
-    },
-    "A12": {
-      "id": "A12",
-      "name": "Stair Side Support Right",
-      "category": "architecture",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        128
-      ],
-      "origin": [
-        64,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "soft_cast",
-        "opacity": 0.22,
-        "offset_x": 8,
-        "offset_y": 6
-      },
-      "tags": [
-        "architecture",
-        "right",
-        "right_support",
-        "side",
-        "stair",
-        "stairs",
-        "stone",
-        "support"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "A12",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/architecture/A12__architecture__stair_side_support_right__default__1x1__128x128.json",
-        "sha256": "aef40f45c3eecf1bc21ebe18880bfe68e03da271dc12e67dcfd8ac08b7ee9d21",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "A12"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "aef40f45c3eecf1bc21ebe18880bfe68e03da271dc12e67dcfd8ac08b7ee9d21"
-      }
-    },
-    "A13": {
-      "id": "A13",
-      "name": "Entrance Pillar Post",
-      "category": "architecture",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.png",
-      "status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "origin": [
-        32,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "soft_cast",
-        "opacity": 0.22,
-        "offset_x": 8,
-        "offset_y": 6
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
       },
       "tags": [
         "architecture",
         "entrance",
-        "pillar",
-        "post",
-        "stone"
+        "ivy",
+        "stairs"
       ],
       "reusable": true,
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "A13",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/architecture/A13__architecture__entrance_pillar_post__default__1x1__64x128.json",
-        "sha256": "70c78ebf57e5f87c4c7d1ebfb82c44b56f935f3c04f4a9281c6908d1b41d6637",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "A13"
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/entrance_stairs/v001/hero_entrance_stairs_south.png",
+        "master_sha256": "1ad183f2a4054081d747003c1c377bd0557a1d50f83fa56953c2a88949881adc",
+        "request_id": "ART-0025"
       },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
       "qa_approval": {
         "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "70c78ebf57e5f87c4c7d1ebfb82c44b56f935f3c04f4a9281c6908d1b41d6637"
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "A20": {
+      "id": "A20",
+      "name": "Stone Sphere Finial",
+      "category": "architecture",
+      "subtype": "post",
+      "texture_path": "res://map_factory/parts/architecture/A20_Stone_Sphere_Finial.png",
+      "status": "ready",
+      "pixel_size": [
+        46,
+        120
+      ],
+      "origin": [
+        23,
+        120
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "finial",
+        "post",
+        "sphere"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/sphere_stair_post/v001/hero_stone_sphere_finial.png",
+        "master_sha256": "7480fde019f3e1cf63059109e1f08a7deaaa29ded16851eb550e5d62a548d475",
+        "request_id": "ART-0006"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
     "B03": {
@@ -15303,89 +14484,6 @@
         "sha256": "4931a99f30ca5982dc38ec95c950cea36b2717a02d78c1f248edd08006b77cb6"
       }
     },
-    "D03": {
-      "id": "D03",
-      "name": "Central Compass Floor Emblem Overlay",
-      "category": "decor",
-      "subtype": "decal",
-      "texture_path": "res://assets_generated/decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.png",
-      "status": "ready",
-      "pixel_size": [
-        256,
-        256
-      ],
-      "origin": [
-        128,
-        256
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "none",
-        "opacity": 0.0,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "central",
-        "compass",
-        "decal",
-        "decor",
-        "emblem",
-        "floor"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "D03",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/decor/D03__decor__central_compass_floor_emblem_overlay__default__4x4__256x256.json",
-        "sha256": "d617cd660b9aca8e3a097780e0fa393f4ca07ad1bc0e2152bdc1d50db65ba00a",
-        "anchor_declared": [
-          0,
-          256
-        ],
-        "anchor_registered": [
-          128,
-          256
-        ],
-        "identity": "D03"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          4,
-          4
-        ],
-        "occupancy_group": "overlay",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "d617cd660b9aca8e3a097780e0fa393f4ca07ad1bc0e2152bdc1d50db65ba00a"
-      }
-    },
     "D04": {
       "id": "D04",
       "name": "Long Blue Wall Banner",
@@ -15542,6 +14640,222 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "174b8d5e6a89e9c611bde55c34f5f334a6c05c9fa09cb62f3bf3c19dbef9f080"
+      }
+    },
+    "D20": {
+      "id": "D20",
+      "name": "Compass Floor Inlay",
+      "category": "decor",
+      "subtype": "inlay",
+      "texture_path": "res://map_factory/parts/decor/D20_Compass_Floor_Inlay.png",
+      "status": "ready",
+      "pixel_size": [
+        252,
+        179
+      ],
+      "origin": [
+        126,
+        179
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "compass",
+        "decor",
+        "floor",
+        "inlay"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/compass_inlay/v001/hero_compass_floor_inlay.png",
+        "master_sha256": "4af0f23f62758cf2ba5baee1e8bf69af628689b827a1aef40d2465e37f69b955",
+        "request_id": "ART-0022"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "D21": {
+      "id": "D21",
+      "name": "Rope Post",
+      "category": "decor",
+      "subtype": "fence",
+      "texture_path": "res://map_factory/parts/decor/D21_Rope_Post.png",
+      "status": "ready",
+      "pixel_size": [
+        23,
+        90
+      ],
+      "origin": [
+        11,
+        90
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "fence",
+        "post",
+        "rope"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/rope_post_fence/v001/hero_rope_post.png",
+        "master_sha256": "f8622227f1085197dc47bd1ef96f29f03fb69d61302647de0e39e1392ab5c15e",
+        "request_id": "ART-0024"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "D22": {
+      "id": "D22",
+      "name": "Rope Swag West Rail",
+      "category": "decor",
+      "subtype": "fence",
+      "texture_path": "res://map_factory/parts/decor/D22_Rope_Swag_West_Rail.png",
+      "status": "ready",
+      "pixel_size": [
+        110,
+        30
+      ],
+      "origin": [
+        55,
+        30
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "rail",
+        "rope",
+        "west"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/rope_post_fence/v001/hero_rope_swag_west_rail.png",
+        "master_sha256": "56dd9716f6b29d46726fef5d1784fa233acb2c7cb6491a3ce3ba46d5698850a8",
+        "request_id": "ART-0024"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "D23": {
+      "id": "D23",
+      "name": "Rope Swag East Rail",
+      "category": "decor",
+      "subtype": "fence",
+      "texture_path": "res://map_factory/parts/decor/D23_Rope_Swag_East_Rail.png",
+      "status": "ready",
+      "pixel_size": [
+        110,
+        37
+      ],
+      "origin": [
+        55,
+        37
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "east",
+        "rail",
+        "rope"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/rope_post_fence/v001/hero_rope_swag_east_rail.png",
+        "master_sha256": "429ce3027fb3d7ed47655ae60f2a2181ad195ccf89c8b39ef834032526b8365c",
+        "request_id": "ART-0024"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
     "E025": {
@@ -17456,722 +16770,6 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "d67aa0f288da5fd73ca7e2be5308fb0c6feccfb83fa832d91886b95166063603"
-      }
-    },
-    "F07_east": {
-      "id": "F07_east",
-      "name": "Right Large Bookcase",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__east__1x4__128x256.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        256
-      ],
-      "origin": [
-        64,
-        256
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          64,
-          256
-        ],
-        "offset": [
-          0,
-          -128
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "bookshelf",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "bookcase",
-        "furniture",
-        "interior",
-        "large",
-        "right"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F07",
-        "pack_orientation": "east",
-        "sidecar": "assets_generated/furniture/F07__furniture__right_large_bookcase__east__1x4__128x256.json",
-        "sha256": "95a30e4deb366ee07b84ec0594028dabf962e5f9e6e56b11989a2a8aa9203f1a",
-        "anchor_declared": [
-          0,
-          256
-        ],
-        "anchor_registered": [
-          64,
-          256
-        ],
-        "identity": "F07"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F07_north",
-        "east": "F07_east",
-        "south": "F07_south",
-        "west": "F07_west"
-      },
-      "canonical_view": "east",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          1,
-          4
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "95a30e4deb366ee07b84ec0594028dabf962e5f9e6e56b11989a2a8aa9203f1a"
-      }
-    },
-    "F07_north": {
-      "id": "F07_north",
-      "name": "Right Large Bookcase",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.png",
-      "status": "ready",
-      "pixel_size": [
-        256,
-        128
-      ],
-      "origin": [
-        128,
-        128
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          256,
-          64
-        ],
-        "offset": [
-          0,
-          -32
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "bookshelf",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "bookcase",
-        "furniture",
-        "interior",
-        "large",
-        "right"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F07",
-        "pack_orientation": "north",
-        "sidecar": "assets_generated/furniture/F07__furniture__right_large_bookcase__north__4x1__256x128.json",
-        "sha256": "258ad610d4ff2dfbc478f28b01649cdce8369d76c23b61ea949a9a5361222b1b",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          128,
-          128
-        ],
-        "identity": "F07"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F07_north",
-        "east": "F07_east",
-        "south": "F07_south",
-        "west": "F07_west"
-      },
-      "canonical_view": "north",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          4,
-          1
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "258ad610d4ff2dfbc478f28b01649cdce8369d76c23b61ea949a9a5361222b1b"
-      }
-    },
-    "F07_south": {
-      "id": "F07_south",
-      "name": "Right Large Bookcase",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__south__4x1__256x128.png",
-      "status": "ready",
-      "pixel_size": [
-        256,
-        128
-      ],
-      "origin": [
-        128,
-        128
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          256,
-          64
-        ],
-        "offset": [
-          0,
-          -32
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "bookshelf",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "bookcase",
-        "furniture",
-        "interior",
-        "large",
-        "right"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F07",
-        "pack_orientation": "south",
-        "sidecar": "assets_generated/furniture/F07__furniture__right_large_bookcase__south__4x1__256x128.json",
-        "sha256": "7f6bce1e7768306051face4bb228f1fee2d0383611b23fd71f2c4608abef429d",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          128,
-          128
-        ],
-        "identity": "F07"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F07_north",
-        "east": "F07_east",
-        "south": "F07_south",
-        "west": "F07_west"
-      },
-      "canonical_view": "south",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          4,
-          1
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "7f6bce1e7768306051face4bb228f1fee2d0383611b23fd71f2c4608abef429d"
-      }
-    },
-    "F07_west": {
-      "id": "F07_west",
-      "name": "Right Large Bookcase",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F07__furniture__right_large_bookcase__west__1x4__128x256.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        256
-      ],
-      "origin": [
-        64,
-        256
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          64,
-          256
-        ],
-        "offset": [
-          0,
-          -128
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "bookshelf",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "bookcase",
-        "furniture",
-        "interior",
-        "large",
-        "right"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F07",
-        "pack_orientation": "west",
-        "sidecar": "assets_generated/furniture/F07__furniture__right_large_bookcase__west__1x4__128x256.json",
-        "sha256": "882cf76f7593e6fbc2d54faf26677d62d24d1a7ca716be8dc0a8fba40eb548d1",
-        "anchor_declared": [
-          0,
-          256
-        ],
-        "anchor_registered": [
-          64,
-          256
-        ],
-        "identity": "F07"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F07_north",
-        "east": "F07_east",
-        "south": "F07_south",
-        "west": "F07_west"
-      },
-      "canonical_view": "west",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          1,
-          4
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "882cf76f7593e6fbc2d54faf26677d62d24d1a7ca716be8dc0a8fba40eb548d1"
-      }
-    },
-    "F08_east": {
-      "id": "F08_east",
-      "name": "Large Dining / Work Table",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__east__3x4__192x256.png",
-      "status": "ready",
-      "pixel_size": [
-        192,
-        256
-      ],
-      "origin": [
-        96,
-        256
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          192,
-          256
-        ],
-        "offset": [
-          0,
-          -128
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "table",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "dining",
-        "furniture",
-        "interior",
-        "large",
-        "table",
-        "work"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F08",
-        "pack_orientation": "east",
-        "sidecar": "assets_generated/furniture/F08__furniture__large_dining_work_table__east__3x4__192x256.json",
-        "sha256": "1e18780749633db821c9905e20b2036076f5e486b77b6fe377fa5c9cb063dab9",
-        "anchor_declared": [
-          0,
-          256
-        ],
-        "anchor_registered": [
-          96,
-          256
-        ],
-        "identity": "F08"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F08_north",
-        "east": "F08_east",
-        "south": "F08_south",
-        "west": "F08_west"
-      },
-      "canonical_view": "east",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          3,
-          4
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "1e18780749633db821c9905e20b2036076f5e486b77b6fe377fa5c9cb063dab9"
-      }
-    },
-    "F08_north": {
-      "id": "F08_north",
-      "name": "Large Dining / Work Table",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.png",
-      "status": "ready",
-      "pixel_size": [
-        256,
-        192
-      ],
-      "origin": [
-        128,
-        192
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          256,
-          192
-        ],
-        "offset": [
-          0,
-          -96
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "table",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "dining",
-        "furniture",
-        "interior",
-        "large",
-        "table",
-        "work"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F08",
-        "pack_orientation": "north",
-        "sidecar": "assets_generated/furniture/F08__furniture__large_dining_work_table__north__4x3__256x192.json",
-        "sha256": "491d33be2ac817abaac701013b7192a25ccbeb0d1e86b8de64a552db2c8031e2",
-        "anchor_declared": [
-          0,
-          192
-        ],
-        "anchor_registered": [
-          128,
-          192
-        ],
-        "identity": "F08"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F08_north",
-        "east": "F08_east",
-        "south": "F08_south",
-        "west": "F08_west"
-      },
-      "canonical_view": "north",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          4,
-          3
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "491d33be2ac817abaac701013b7192a25ccbeb0d1e86b8de64a552db2c8031e2"
-      }
-    },
-    "F08_south": {
-      "id": "F08_south",
-      "name": "Large Dining / Work Table",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__south__4x3__256x192.png",
-      "status": "ready",
-      "pixel_size": [
-        256,
-        192
-      ],
-      "origin": [
-        128,
-        192
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          256,
-          192
-        ],
-        "offset": [
-          0,
-          -96
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "table",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "dining",
-        "furniture",
-        "interior",
-        "large",
-        "table",
-        "work"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F08",
-        "pack_orientation": "south",
-        "sidecar": "assets_generated/furniture/F08__furniture__large_dining_work_table__south__4x3__256x192.json",
-        "sha256": "48ffb92f014f9639fc38e68b38e3ecd0d65e993a09a39bbe635a5a8edcfd6015",
-        "anchor_declared": [
-          0,
-          192
-        ],
-        "anchor_registered": [
-          128,
-          192
-        ],
-        "identity": "F08"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F08_north",
-        "east": "F08_east",
-        "south": "F08_south",
-        "west": "F08_west"
-      },
-      "canonical_view": "south",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          4,
-          3
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "48ffb92f014f9639fc38e68b38e3ecd0d65e993a09a39bbe635a5a8edcfd6015"
-      }
-    },
-    "F08_west": {
-      "id": "F08_west",
-      "name": "Large Dining / Work Table",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F08__furniture__large_dining_work_table__west__3x4__192x256.png",
-      "status": "ready",
-      "pixel_size": [
-        192,
-        256
-      ],
-      "origin": [
-        96,
-        256
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          192,
-          256
-        ],
-        "offset": [
-          0,
-          -128
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "table",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "dining",
-        "furniture",
-        "interior",
-        "large",
-        "table",
-        "work"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F08",
-        "pack_orientation": "west",
-        "sidecar": "assets_generated/furniture/F08__furniture__large_dining_work_table__west__3x4__192x256.json",
-        "sha256": "fc8184303b14fcc0a3a3145b5b5a0b4ff55b329d8d79570924c5e403fe000081",
-        "anchor_declared": [
-          0,
-          256
-        ],
-        "anchor_registered": [
-          96,
-          256
-        ],
-        "identity": "F08"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F08_north",
-        "east": "F08_east",
-        "south": "F08_south",
-        "west": "F08_west"
-      },
-      "canonical_view": "west",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          3,
-          4
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "fc8184303b14fcc0a3a3145b5b5a0b4ff55b329d8d79570924c5e403fe000081"
       }
     },
     "F09_east": {
@@ -20978,78 +19576,6 @@
         "sha256": "90935cf79c1dc6156c93bc3c4ae4ba6d6fd2a4fdd973802c5f2599ca58f957c7"
       }
     },
-    "P012": {
-      "id": "P012",
-      "name": "Wooden Stool",
-      "category": "furniture",
-      "subtype": "wooden",
-      "texture_path": "res://map_factory/parts/furniture/P012_Wooden_Stool.png",
-      "status": "needs_cleanup",
-      "pixel_size": [
-        119,
-        115
-      ],
-      "origin": [
-        59,
-        115
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "contact",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "furniture",
-        "wooden",
-        "stool"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "ai_sheet_crop",
-        "file": "blue_and_gold_nautical_rpg_prop_sheet.png"
-      },
-      "qa_notes": "Requires artist approval, transparency and seams inspection.",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          1,
-          1
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "allowed_floor_asset_ids": [
-          "F001",
-          "F002",
-          "F003",
-          "F004",
-          "F005"
-        ],
-        "forbidden_floor_tags": [
-          "edge",
-          "corner",
-          "compass"
-        ],
-        "ground_anchor": "bottom_center",
-        "measurement_status": "provisional",
-        "visual_qa": "footprint estimated from art family; measure contact surface in Godot before approved production placement"
-      }
-    },
     "P02": {
       "id": "P02",
       "name": "Ivy Hanging Medium",
@@ -21453,6 +19979,383 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "16129d9c33498b7017f960011249633ae2afc8fce98df1bba501a208339b2cda"
+      }
+    },
+    "P27": {
+      "id": "P27",
+      "name": "Study Table South",
+      "category": "furniture",
+      "subtype": "table",
+      "texture_path": "res://map_factory/parts/furniture/P27_Study_Table_South.png",
+      "status": "ready",
+      "pixel_size": [
+        150,
+        100
+      ],
+      "origin": [
+        75,
+        100
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "south",
+        "study",
+        "table"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_table_views/v001/hero_study_table_south.png",
+        "master_sha256": "1b3ea8a1ee93dcbb6d01747ec70462f0664422e32b23b37a68badb7a0cbb6ff3",
+        "request_id": "ART-0019"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "P28": {
+      "id": "P28",
+      "name": "Study Table North",
+      "category": "furniture",
+      "subtype": "table",
+      "texture_path": "res://map_factory/parts/furniture/P28_Study_Table_North.png",
+      "status": "ready",
+      "pixel_size": [
+        150,
+        107
+      ],
+      "origin": [
+        75,
+        107
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "north",
+        "study",
+        "table"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_table_views/v001/hero_study_table_north.png",
+        "master_sha256": "15c67a248c310c1feb3754eeebb0572e3152090d9c1f94ea71be3202f86fedbc",
+        "request_id": "ART-0019"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "P29": {
+      "id": "P29",
+      "name": "Study Table East",
+      "category": "furniture",
+      "subtype": "table",
+      "texture_path": "res://map_factory/parts/furniture/P29_Study_Table_East.png",
+      "status": "ready",
+      "pixel_size": [
+        133,
+        110
+      ],
+      "origin": [
+        66,
+        110
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "east",
+        "furniture",
+        "study",
+        "table"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_table_views/v001/hero_study_table_east.png",
+        "master_sha256": "36c47434340e3f1cd52c78e074907b30aff653596b08e784a6479ce33ca00b7b",
+        "request_id": "ART-0019"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "P30": {
+      "id": "P30",
+      "name": "Study Table West",
+      "category": "furniture",
+      "subtype": "table",
+      "texture_path": "res://map_factory/parts/furniture/P30_Study_Table_West.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        110
+      ],
+      "origin": [
+        71,
+        110
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "study",
+        "table",
+        "west"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_table_views/v001/hero_study_table_west.png",
+        "master_sha256": "a33878c952c3dcb9790cbbc6a69c34c47bfd2b10e201730bb4591f79affa0acb",
+        "request_id": "ART-0019"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "P31": {
+      "id": "P31",
+      "name": "Study Wooden Stool",
+      "category": "furniture",
+      "subtype": "stool",
+      "texture_path": "res://map_factory/parts/furniture/P31_Study_Wooden_Stool.png",
+      "status": "ready",
+      "pixel_size": [
+        30,
+        40
+      ],
+      "origin": [
+        15,
+        40
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "stool",
+        "study"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_stool/v001/study_wooden_stool.png",
+        "master_sha256": "4d0b2936583ff4abd81cf57ae2648d7d186f98701e2da72cb67a09d93bf9b86f",
+        "request_id": "ART-0039"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "P32": {
+      "id": "P32",
+      "name": "Study Bookshelf South",
+      "category": "furniture",
+      "subtype": "bookshelf",
+      "texture_path": "res://map_factory/parts/furniture/P32_Study_Bookshelf_South.png",
+      "status": "ready",
+      "pixel_size": [
+        212,
+        124
+      ],
+      "origin": [
+        106,
+        124
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "armillary",
+        "bookshelf",
+        "furniture",
+        "south"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_bookshelf_views/v001/hero_study_bookshelf_south.png",
+        "master_sha256": "116feab55c4a93c208f2c360e42f5f9e05dbd0d7ab072c02edd61641f45372b4",
+        "request_id": "ART-0020"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "P34": {
+      "id": "P34",
+      "name": "Headboard Shelf South",
+      "category": "furniture",
+      "subtype": "shelf",
+      "texture_path": "res://map_factory/parts/furniture/P34_Headboard_Shelf_South.png",
+      "status": "ready",
+      "pixel_size": [
+        138,
+        85
+      ],
+      "origin": [
+        69,
+        85
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "headboard",
+        "shelf",
+        "south"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/headboard_shelf/v001/hero_headboard_shelf_south.png",
+        "master_sha256": "eaf81250b1acb7893ad977767d973a879c48cc3491389e1550c15027d7083f22",
+        "request_id": "ART-0008"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
     "R01": {
@@ -22008,85 +20911,6 @@
         "sha256": "f70a7cf0d288739146f82b7fbbd1d9b741250303d822cef883202ddae7803089"
       }
     },
-    "R12": {
-      "id": "R12",
-      "name": "Brass Armillary / Astronomical Object",
-      "category": "objects",
-      "subtype": "prop",
-      "texture_path": "res://assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.png",
-      "status": "ready",
-      "pixel_size": [
-        64,
-        64
-      ],
-      "origin": [
-        32,
-        64
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "contact_small",
-        "opacity": 0.2,
-        "offset_x": 3,
-        "offset_y": 2
-      },
-      "tags": [
-        "armillary",
-        "astronomical",
-        "brass",
-        "object",
-        "objects",
-        "prop"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "R12",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/props/R12__props__brass_armillary_astronomical_object__default__1x1__64x64.json",
-        "sha256": "add6b424eb28f3fa10fc0f987891c282359164033182a196d46d498b3fd3a731",
-        "anchor_declared": [
-          0,
-          64
-        ],
-        "anchor_registered": [
-          32,
-          64
-        ],
-        "identity": "R12"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "mounted",
-        "mount_on_categories": [
-          "furniture",
-          "walls",
-          "architecture"
-        ],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "add6b424eb28f3fa10fc0f987891c282359164033182a196d46d498b3fd3a731"
-      }
-    },
     "R13": {
       "id": "R13",
       "name": "Conch Shell",
@@ -22485,52 +21309,6 @@
       },
       "qa_notes": "Procedural asset; inspect in Godot."
     },
-    "S011": {
-      "id": "S011",
-      "name": "Shadow Column Short",
-      "category": "shadows",
-      "subtype": "shadow",
-      "texture_path": "res://map_factory/parts/shadows/S011_Shadow_Column_Short.png",
-      "status": "needs_cleanup",
-      "pixel_size": [
-        240,
-        128
-      ],
-      "origin": [
-        120,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": false,
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "shadows",
-        "shadow",
-        "column",
-        "short"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "procedural",
-        "file": "procedural"
-      },
-      "qa_notes": "Procedural asset; inspect in Godot."
-    },
     "S012": {
       "id": "S012",
       "name": "Shadow Column Long",
@@ -22615,51 +21393,6 @@
         "shadow",
         "wall",
         "base"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "procedural",
-        "file": "procedural"
-      },
-      "qa_notes": "Procedural asset; inspect in Godot."
-    },
-    "S015": {
-      "id": "S015",
-      "name": "Shadow Stairs",
-      "category": "shadows",
-      "subtype": "shadow",
-      "texture_path": "res://map_factory/parts/shadows/S015_Shadow_Stairs.png",
-      "status": "needs_cleanup",
-      "pixel_size": [
-        240,
-        128
-      ],
-      "origin": [
-        120,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": false,
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "shadows",
-        "shadow",
-        "stairs"
       ],
       "reusable": true,
       "source": {
@@ -23185,6 +21918,60 @@
         "approved_by": "owner",
         "date": "2026-11-10",
         "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "V034": {
+      "id": "V034",
+      "name": "Blue White Planter",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V034_Blue_White_Planter.png",
+      "status": "ready",
+      "pixel_size": [
+        109,
+        150
+      ],
+      "origin": [
+        54,
+        150
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue_white",
+        "flowers",
+        "planter",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/blue_white_planter/v001/hero_blue_white_planter.png",
+        "master_sha256": "7a4194588eaada83f4e210d6d76701cf2c6c6ab65bc6ea200b1955923f9f2a6d",
+        "request_id": "ART-0011"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
         "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
