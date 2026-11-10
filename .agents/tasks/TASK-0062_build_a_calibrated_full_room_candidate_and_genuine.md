@@ -1,6 +1,6 @@
 ---
 id: TASK-0062
-status: blocked
+status: cancelled
 owner: unassigned
 branch: none
 agent: codex
@@ -43,3 +43,6 @@ Outcome: Add tested candidate-only overrides for existing instance position/scal
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Closure (Claude, 2026-11-09)
+A calibrated full-room candidate is superseded by the published, evidence-captured versions v0014 to v0017. Reopen if the owner wants the Blender line back.

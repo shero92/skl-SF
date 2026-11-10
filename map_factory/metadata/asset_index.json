@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "asset_count": 374,
+  "asset_count": 382,
   "extracted_count": 229,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
@@ -22652,6 +22652,470 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "b9ae2049dabe65bba771a905d9068de6faf7ad194682e254d6b37d938e59cbdb"
+      }
+    },
+    {
+      "id": "W023",
+      "name": "Hero Wall Run North",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W023_Hero_Wall_Run_North.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        256
+      ],
+      "origin": [
+        42,
+        189
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "north",
+        "run",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_north@4x.png",
+        "master_sha256": "1e63635ed6283818ad791c0888fbc523217e81595dcdb1deeb4638ce7764a141",
+        "sha256": "02efdffd65e34b738aa0d7883972cecba1656aa9a4cf396fb21117be203fd12a"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
+    },
+    {
+      "id": "W024",
+      "name": "Hero Wall Run East",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W024_Hero_Wall_Run_East.png",
+      "status": "ready",
+      "pixel_size": [
+        175,
+        334
+      ],
+      "origin": [
+        8,
+        219
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "east",
+        "ivy",
+        "run",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_east@4x.png",
+        "master_sha256": "a145c5d5454a25d7e6603981ed5c2b2a06d8936d54950c41dcfc40ff604cd2a9",
+        "sha256": "b3eee51988460607fc4de8e13a23ea81271ded65855eb664355bebfd678f42b9"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
+    },
+    {
+      "id": "W025",
+      "name": "Hero Wall Run South",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W025_Hero_Wall_Run_South.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        262
+      ],
+      "origin": [
+        42,
+        162
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "run",
+        "south",
+        "stone",
+        "wall",
+        "walls"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_south@4x.png",
+        "master_sha256": "12aff0f0b145fa69ec02509ab80589bf9901d2bc35b909aca27f626489834412",
+        "sha256": "ff12ba453924493b40089e4a30a2e161fba47faa52753bb4d41427ad01854adb"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
+    },
+    {
+      "id": "W026",
+      "name": "Hero Wall Run West",
+      "category": "walls",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/walls/W026_Hero_Wall_Run_West.png",
+      "status": "ready",
+      "pixel_size": [
+        175,
+        294
+      ],
+      "origin": [
+        109,
+        190
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "ivy",
+        "run",
+        "stone",
+        "wall",
+        "walls",
+        "west"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west.png",
+        "builder": "wall_run",
+        "master": ".agents/graphics/deliveries/ART-0004/hero_wall_run_west@4x.png",
+        "master_sha256": "dacf2c6df248226b2e8e59a90bba35acf51328712e4550fc97738157b89b2c19",
+        "sha256": "d82b080605ed05ebb794991a2d3c73a87923fcfede678d488737e5070e692c3e"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
+    },
+    {
+      "id": "F023",
+      "name": "Hero Broken Floor Edge 01",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F023_Hero_Broken_Floor_Edge_01.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        155
+      ],
+      "origin": [
+        71,
+        155
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "broken",
+        "edge",
+        "floors",
+        "south",
+        "stone",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01.png",
+        "builder": "broken_floor_edge",
+        "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_01@4x.png",
+        "master_sha256": "f98b0e1eec3262d8e661a40baf3439c34792feffff8ddb364962584fbbc9442b",
+        "sha256": "09a9e82e62c4ebb95e0dc8d2adf362e7c20c57c92b1d01c09da791bb58ebf928"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
+    },
+    {
+      "id": "F024",
+      "name": "Hero Broken Floor Edge 02",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F024_Hero_Broken_Floor_Edge_02.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        155
+      ],
+      "origin": [
+        71,
+        155
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "broken",
+        "edge",
+        "floors",
+        "south",
+        "stone",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02.png",
+        "builder": "broken_floor_edge",
+        "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_edge_02@4x.png",
+        "master_sha256": "87f06eb18e5365b380c22a99c2ebe98c8dd9196d4d92864aaedcbb80ffdd99d4",
+        "sha256": "5ec4aabea54187583283d1e5a1c8d4f44430cb59f547fa123cd888dd19afb337"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
+    },
+    {
+      "id": "F025",
+      "name": "Hero Broken Floor Corner Left",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F025_Hero_Broken_Floor_Corner_Left.png",
+      "status": "ready",
+      "pixel_size": [
+        147,
+        160
+      ],
+      "origin": [
+        74,
+        160
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "broken",
+        "edge",
+        "floors",
+        "south",
+        "stone",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left.png",
+        "builder": "broken_floor_edge",
+        "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_left@4x.png",
+        "master_sha256": "a3936aa599bbb991e8f5cfeb77c8d01770103ef38deb4185dc9bbc98400d0262",
+        "sha256": "c7c712db7e39246d25c2698e52777608db78dda0097ded023ccdf2d5ccfead9b"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
+      }
+    },
+    {
+      "id": "F026",
+      "name": "Hero Broken Floor Corner Right",
+      "category": "floors",
+      "subtype": "stone",
+      "texture_path": "res://map_factory/parts/floors/F026_Hero_Broken_Floor_Corner_Right.png",
+      "status": "ready",
+      "pixel_size": [
+        144,
+        158
+      ],
+      "origin": [
+        72,
+        158
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "broken",
+        "edge",
+        "floors",
+        "south",
+        "stone",
+        "terrace"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "owner_delivery",
+        "file": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right.png",
+        "builder": "broken_floor_edge",
+        "master": ".agents/graphics/deliveries/ART-0014/hero_broken_floor_corner_right@4x.png",
+        "master_sha256": "f25a79b56876656f87b7b064119055575df8473448dd07e4048126b34d6644bf",
+        "sha256": "28b45f769449f328aaf3802ce1d48c86ead9e64c620bbed8666a79848d8b4173"
+      },
+      "qa_notes": "Built with tools/blender_factory.py (no AI image generation). Accepted by owner: Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 / TASK-0025 Blender deliveries)",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-09",
+        "evidence": "Owner chat 2026-11-09: I ACCEPT THEM CONTINUE (TASK-0015 and TASK-0025 Blender deliveries)",
+        "method": "built with tools/blender_factory.py, scripted QA clean, accepted by the owner"
       }
     }
   ],

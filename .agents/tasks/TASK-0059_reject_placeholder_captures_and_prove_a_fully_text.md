@@ -1,11 +1,11 @@
 ---
 id: TASK-0059
-status: blocked
+status: done
 owner: codex
 branch: work/task-0059-1b0566f0
 agent: codex
-touches: tools/goal_qa.py,tools/capture_map_previews.gd,tools/tests/test_art_delivery.py
-test: py -3 -m unittest discover -s tools/tests -p test_art_delivery.py
+touches: tools/goal_qa.py,tools/capture_map_previews.gd,tools/capture_checks.gd,tools/verify_capture_checks.gd,tools/tests/test_art_delivery.py,tools/tests/test_capture_checks.py,tools/test_map.json
+test: python -m unittest discover -s tools/tests -p test_capture_checks.py
 done_when: Keep coding checkout image-free. Give only isolated deterministic renderer its required committed environment textures, including inherited sparse settings; verify actual loads for every rendered texture and fail before publishing if fallback/draft or resource missing. Receipt records texture inventory hashes and missing/fallback count, map commit/version/camera. Unit-test missing resources and real-render integration; capture v0011 or latest without viewing restricted art. Preserve historical files and final owner gate.
 started_at: 2026-10-27T16:08:18.854251+00:00
 cost_usd: unknown
@@ -53,3 +53,9 @@ Outcome: Keep coding checkout image-free. Give only isolated deterministic rende
 - Codex JSONL final response: no local file reader available without shell; shell is prohibited by runner prompt. No allowed code changed. This was a capability failure, not a successful capture.
 - Retry only after TASK-0061 is merged/done; preserve failed worktree and transcript.
 **Blocked by:** dependencies (the pulse promotes this task to todo once they are done)
+
+## Closure (Claude, 2026-11-09)
+Receipts already record texture inventory hashes, missing and unregistered paths, commit, version and camera (hero_room_capture_evidence.py, TASK-0104). Added the missing guard: tools/capture_checks.gd makes an evidence capture fail when AssetFactory drew a draft placeholder (magenta polygon or '(draft)' label); the receipt now has draft_placeholder_count. Tests: tools/tests/test_capture_checks.py. Real v0017 capture passes with 0 drafts. Next step: review, then TASK-0062 can start.
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #123 with its test (capture_checks); every capture since passes with draft_placeholder_count 0.

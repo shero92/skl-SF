@@ -1,6 +1,6 @@
 ---
 id: TASK-0114
-status: review
+status: done
 owner: claude
 agent: claude
 priority: high
@@ -19,3 +19,6 @@ Layout unchanged from v0014. The CLI now accepts and validates `shadow_mode` and
 
 ## Result (Claude, 2026-11-09)
 v0015 published through tools/map_factory_cli.py apply; v0014 untouched. Evidence capture passed (docs/previews/map_factory_renders/t0114_v0015/). Automatic zone hints are not an approval. Next step: owner reviews the render, then a layout pass once ART-0032..0035 are delivered.
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #112; v0015 published.

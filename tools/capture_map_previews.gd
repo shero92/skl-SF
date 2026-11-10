@@ -4,6 +4,7 @@ extends SceneTree
 ## Resolve immutable map revisions from the registry or an explicit capture manifest.
 ## Use a virtual X11 display and OpenGL3 in CI; headless dummy rendering cannot screenshot.
 const OUTPUT: String = "res://docs/previews/map_factory_renders/"
+const CaptureChecks = preload("res://tools/capture_checks.gd")
 
 var capture_request: Dictionary = {}
 var resolved_assets: Array = []
@@ -182,6 +183,8 @@ func _capture_all() -> void:
         source_errors = []
         if not capture_request.is_empty():
             _collect_sources(room, capture_request.get("allowed_textures", []))
+            for draft in CaptureChecks.find_drafts(room):
+                source_errors.append("Draft placeholder: " + String(draft))
             if not source_errors.is_empty() or resolved_assets.is_empty():
                 push_error("Unregistered, missing or unsupported environment sources: " + str(source_errors))
                 failures += 1
@@ -203,6 +206,7 @@ func _capture_all() -> void:
                 proof["commit"] = capture_request.get("commit", "")
                 proof["target_sha256"] = capture_request.get("target_sha256", "")
                 proof["resolved_assets"] = resolved_assets
+                proof["draft_placeholder_count"] = 0
                 proof["environment_only"] = not capture_request.is_empty()
                 proof["visual_approval"] = false
                 var receipt := FileAccess.open(receipt_path, FileAccess.WRITE)

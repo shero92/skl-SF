@@ -1,6 +1,6 @@
 ---
 id: TASK-0117
-status: review
+status: done
 owner: claude
 agent: claude
 priority: medium
@@ -19,3 +19,6 @@ Owner request 2026-11-09: delete the old low-quality images now that the HD art 
 
 ## Result (Claude, 2026-11-09)
 128 low PNGs (and their .import files) removed; loaders resolve the HD twin; blueprint, registry check and tests read the recorded data. 65/65 tests pass. v0017 renders the same (two captures of the same state differ by at most 1 level in a thin band, the same as the capture noise). Not touched: map_factory/parts (no HD source exists), eight non-twin images in assets_generated, immutable map snapshots (paths unchanged). Next step: HD art for the parts that still have none (ocean tiles, shadows, glows).
+
+## Closure (Claude, 2026-11-09)
+Merged in PR #122; the 128 low-quality twins are retired and every tool and test works without them.

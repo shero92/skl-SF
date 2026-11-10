@@ -1,6 +1,6 @@
 ---
 id: ART-0004
-status: delivered
+status: integrated
 owner: graphics-specialist
 task: TASK-0015
 dedupe_key: hero_room_side_wall_views

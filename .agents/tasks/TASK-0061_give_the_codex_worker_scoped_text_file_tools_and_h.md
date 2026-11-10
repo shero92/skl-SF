@@ -1,6 +1,6 @@
 ---
 id: TASK-0061
-status: review
+status: done
 owner: codex
 branch: task-0061-token-preflight
 agent: codex
@@ -48,3 +48,6 @@ Outcome: Provide a task-scoped text read/edit tool bridge to Codex while retaini
 
 ## Runner evidence
 - Runner failed: tools/run_tests.py --changed returned 1
+
+## Closure (Claude, 2026-11-09)
+Branch task-0061-token-preflight merged (PRs #58, #61, #63); suite passes 66/66.

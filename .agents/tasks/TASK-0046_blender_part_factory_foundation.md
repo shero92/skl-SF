@@ -1,6 +1,6 @@
 ---
 id: TASK-0046
-status: review
+status: done
 owner: claude
 branch: feat/blender-part-factory
 agent: claude
@@ -43,3 +43,6 @@ art_request: none
 - Tests: py -3 -m unittest discover -s tools/tests -p test_blender_factory.py 7/7 (incl. 2 real Blender renders); run_tests.py --changed 9/9; --all --kind python 24/24.
 - No delivery, ART/TASK status change, map_factory/parts write or visual approval in this task.
 - Next: owner decides the side-wall projection, then `deliver ART-0004` / `deliver ART-0014` PRs and Godot assembly + capture comparison.
+
+## Closure (Claude, 2026-11-09)
+Toolkit merged (PR #36), tests pass in the suite (67/67 on 2026-11-09). The Blender candidate line is closed: the owner supplied high quality HD masters (assets_hd, approved 2026-11-09) and the room is now built from them (hero_room_01 v0014 to v0017); remaining gaps go to Codex requests ART-0032..0035. Reopen only if the owner wants Blender pieces again.

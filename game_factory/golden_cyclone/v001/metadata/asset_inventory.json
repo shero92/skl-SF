@@ -1,0 +1,2630 @@
+{
+  "schema_version": 1,
+  "task_id": "TASK-0074",
+  "agent": "codex",
+  "project_root": "H:/shining force/skl-SF",
+  "paths_relative_to_project": true,
+  "generation_cache_required": false,
+  "generated_images_accounted_for": 32,
+  "owner_approved": false,
+  "entries": [
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_001.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "8a886da9f2beee8c4d231085b7e60e320572cfa366d32b270789817a482ad86b",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_002.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "de561998f1775a6b0ed108b5a282ace40b5270e4b490433d8734a62d9ab737e7",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_003.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "80a5d376e0ad9eb89b050dcdc974e1e137cd1c0567db78e1946824bc798715a1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_004.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "8af8bb547d6056646df69d3256a00590c8e7fc97d5737d00d100fc280a504b06",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_005.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "91b4ebf917b412f2d3a7cfa2cf1e9750099425f4570892fc4e084955ab9d688a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_006.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "f643f9390c1cd9e195bf0561918029dd4bedd2d81312f3b89fc3d9b971f3dd5e",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_007.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "12a6251d993656dd177fa0a0f60b0efdc342ad1d67dad82ea43beece0f6fd42a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_008.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "7c02010dcc8c7e92ef10f66ed145fa4e69e3eb201c565cc72e1efb0f363a4ec0",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_009.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "4125f2674bdcbbb05a8f7196ae19becd4910211788bc0ec771995c8418d36c78",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_010.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "3f45acd5d36f9e5f2a4a973928f54e0fa00e5b7fa6c86055b92fc0d42f8dc9a4",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_011.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "bcf27b53c12673d11d0aa17bb08f2581217e72954bed56349b8e42f9275ca4d6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_012.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "921e577e14e5837f267e89b496dddd5cb047b42f676a83f4ccce4d0dfef60cd5",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_013.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "98a683315530fe816025aeaedcc9f224623d42aad4382a9a8137dd1af20856d3",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_014.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "26caf04dad94c7f37879160d1cf3a13f4853a8435213b74e6c24275b28b02c1b",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_015.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "e68391a65c9730e333d28dfbd5b53c6472f6de60c7d08cac17ada5a3bd3f590e",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_016.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "97c1b6a41d9df1c7e229a4d26e5f096568ab4842f2783e24a31792eb48516b31",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_017.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "5e19b04e1a938368f9ed8a263a4433fbcedcd0e75567b5f67356e50d07206cf4",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_018.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "bd22480d40226d32b4f5eb02b80a7714e01ff670eb80d31b49b0b5cbc78d3733",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_019.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "2629900103e6b60848ecbf09ec697c0ec0d885df280619f2dc1469881b80bd4d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_020.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "14e010bcc76823a78cabf2afe705fa770c3be109a4e40e18328159b38cdba979",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_021.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "e30ef2cb338ea6c426ce9ddefd68b3f0574ba8fdd027f797338be161322ed1c6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_022.png",
+      "role": "body_game_derivative",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "2af1213ae93497579f9ff7469c6b68d636fc963b10111d8e3cfac2d37321eeb9",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/cliff.png",
+      "role": "approved_preview_dependency",
+      "canvas_size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "35962079d58aad6b7b43be7770a94b6d239a86bf26fa6765165bd3701ec15aee",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/cloud.png",
+      "role": "approved_preview_dependency",
+      "canvas_size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "ab4cfa6e36fb304774c162906f2439289608b2cb5ada9e668a30a47f66dad71d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/existing_hero_target.png",
+      "role": "approved_preview_dependency",
+      "canvas_size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "35a03a2bb896f79a0985f4e17dd1cd0d1e65f34b5aea208972ec7eefadcaac2a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/floor.png",
+      "role": "approved_preview_dependency",
+      "canvas_size": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/sky.png",
+      "role": "approved_preview_dependency",
+      "canvas_size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "sha256": "108ee1f0ff346a98142d79eea36dd185bcbdfd63ce6a55a801c632d52c649fad",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/wpn_hero_basic_sword_v001.png",
+      "role": "approved_preview_dependency",
+      "canvas_size": [
+        128,
+        192
+      ],
+      "mode": "RGBA",
+      "sha256": "a49bd079bba18671abb8f8ab0fcec3fcb273785bd26f0989e8610e06b66b8a48",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/wpn_iron_sword_v001.png",
+      "role": "approved_preview_dependency",
+      "canvas_size": [
+        128,
+        192
+      ],
+      "mode": "RGBA",
+      "sha256": "8ca6058fefcecb3f584d64d03daae1e7cd35e9366d63b56dd6b905d3930caae4",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/hero_golden_cyclone_005_attempt_01.png",
+      "role": "rejected_archive",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "9de0e262f038bd32f743e730e678f60fd271e9262a3382420075ec7b09540da7",
+      "quality_status": "needs_regeneration"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/hero_golden_cyclone_015_attempt_01.png",
+      "role": "rejected_archive",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "d9d519c49693df63d41e767783384756e7d1e954e44ebbf2672433c63b7210ad",
+      "quality_status": "needs_regeneration"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/hero_golden_cyclone_022_attempt_01.png",
+      "role": "rejected_archive",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "ae0f03f77f7ff4f06fdcd55ed27b9badd9c71fe716b374054de2a8b2aefabf8e",
+      "quality_status": "needs_regeneration"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/phantom_dash_multi_pose_rejected.png",
+      "role": "rejected_archive",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "3784bdc287f928981eaf17d26565bf4ec81b82c36e413cbc6bcb27d9e8599da3",
+      "quality_status": "needs_regeneration"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_001.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "3c8c8ed4339609b8de52e2eb7b9e84b0359eada740a2bcbfd83953656f82c5a1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_002.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "44bbdad83c3afa030f8bc719238c13a421632c8c54e6e667f179b648fd9b3ade",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_003.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "d20f74a355e17822f4576c48912d96d49f756bcf3205ebb86c04aebdfeb31015",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_004.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "e83c0eba6506ad169dfa60f30e734dcdada72ceb84be2b5d024b8b173059b07c",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_005.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "e461589bd3df623bc035ab000e7fc9db9468b0f3239438fa4171bf730c87566d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_006.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "e920aa74513bca9127dd1f1a5d1406785e75b6992488f2491187b4ae9bfaa5ab",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_007.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "8c5a6ee340c7623d2bf7af6ec3a3caaef7e44bfc4e4ff795c005547c543ec8f8",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_008.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "61e749702b73f22dfd9afce2ea708f986c000ddc0e781acc0395ccd920896ae3",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_009.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "0862535a4fca772993fa329beec926b83be540a1721eb58c31797c501b516fa5",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_010.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "a67a7657dd2379a791ff21cb1acd95bc12a0aaf71b4470f56da4d294c8d20203",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_011.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "73edd3b13ebce4428842a3039c1685d1b2f2b9e79fedb470d4bcdf2a435ae148",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_012.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "a4755bf87c04e6933d05524dc0ca28b4f6f9c6c7d1d24a7949293511889b2f65",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_013.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "fd6bbde0b8e37fd0a22407b51ed96e8d1ea97d994e8ea5bdc0c30bb0ba8966e7",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_014.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "5d146f4c2bf224f570699fad05af75e9b8049c26b4d5db004684f56ccb25e603",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_015.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "e13d48f086d05e2ebd16f4bcc9623c802ddd710ba2cb4067378666aa64f50bdb",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_016.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "bc978ef9e512608302dd14f7b0e5723ac52c859dba23583de02cc7a46d17b8d1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_017.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "13b1206b308aff9b734d5b9b6003c5339adcd3bbc53c9e742c446dff9c98b4c5",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_018.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "95d9d03e48d9b1b427a39b07657feb0f655e43b06e1342859025f524817bde42",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_019.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "12b63c6647a5b2b03e3a7163a1a26f60ca320c132bb7e21f0b6ebf1912b354f6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_020.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "793c5e9573fd85c9a7420860a8f2548799f0baf7c5617980033cb1841113e7f1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_021.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "5e3e5b89d523055f5a1d92a64f11f84ab3a1939b78cf4166f2e98ab4b2be0b57",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_022.png",
+      "role": "body_master",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "01be7cd3ff5a7089f29248c17cd0d9ea7bed818ec7a91a8009307f70842c23ee",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/cyclone_ground_dust_001.png",
+      "role": "vfx_source",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "a2ee17ebbfd2b38115b2c0d8bd3d4c11a8e26d356f7c0d33b493ff648959c44b",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_energy_ring_001.png",
+      "role": "vfx_source",
+      "canvas_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "sha256": "cb9a56fc1d54f7f643e60e8b6baeb3beb0bf2c54b229877a6948c8eec2b3766f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_final_flash_001.png",
+      "role": "vfx_source",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "74140ea302baf5f7acac6f12bb7b529c74b202f8eb3edf04af77265407dc67ce",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_impact_sparks_001.png",
+      "role": "vfx_source",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "a5f03c96cbbbf8510424aa219aaa2a5ab9665489ea546aedc9665bc1953eff99",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_motion_trail_001.png",
+      "role": "vfx_source",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "75a1e6a7761fb7439998134a299afd88a5e174b6b352c7d963dd067932d14f1f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_spinning_arc_001.png",
+      "role": "vfx_source",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "f7995b5e679ebacb2cd7cfb9176d140378f4a3ee26bbbab43bb72a42f6cfcc43",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_000.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "225cb43ee5a5cb3aad150a7cfca7f518b191b23af8e074a491418341879d735d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_001.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "c7eae69f37e68a40e92aa44e468efbc73caee8fe0215dc5250eaebbb87951a51",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_002.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "5798140f180b3f320297041eff076249fd4174747f039da9445e15be193e1b29",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_003.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "4d94c6ff6fbe0a43dc457911f4a96dfd6e78505973e5eda672653d380ffa08b7",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_004.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "dc2303a22778bd2a2aa884cd2a90b37039e8a42911ed0d7a0ea8524ea0d77d82",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_005.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "266f158f4fb8788580bc3d1d31f2b5570bef0956a3cc85db18718ecc8c0a78c3",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_006.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "2e2abd4d4b829a69211b3c74df15a6352e2b8e56b3943061b3d59ca638c57654",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_007.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "72028e92cda02f63495f6efacd64f4f373e964c99d3dd6ce3269a0d5aa565af8",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_008.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "a6db5450cd9996f37fbcfdbf05783a6347d3287f454b6763340f43ec3f096b0d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_009.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "0aa36cfe66f53b0376296b1f675b688aed1ecf2cf9a6d1ecb9960fb8bc9b5c58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_010.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "349ed8a966f3a86c8e6d1e417a8275fe4e9cd3595ac363f3e122030e99c71fcc",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_011.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "54411658d316827104d1b9487b3f76405c98ac5f3073aa14c246dbec1beccddd",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_012.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "e61c5b1a589c1312d3fcf5c2a56bffc935d05153015f93d5ac44b96b8d6ed7b7",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_013.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "ec73bc82d4c1858c7c9f8f89c428ba881e4e6a69f088e9badf430394f8faa8b7",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_014.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "5cf10e393d42d35ecc5f99c2ed394353413ac0615ce61df94f8147d9f73ff528",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_015.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "7acbbb17304a9657d94a50f4e2ff00f7162b8ac71da40ee1079733db05d9517c",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_016.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "f223a0503a20bc62dc4de1ca8fa1d47deae8ab53ece3d25e6f6b0b75dd8b0b4a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_017.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "06285e3b2cee4041c6c1a4bced7fff9aa3370422485466f4a2374cc198503dd6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_018.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8dffde20d306b8173e55a9444c5805ddc8bb563ad6d4b65ea7c8a0f12e8a4cd2",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_019.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "04338be27e38cef46dc2dbdc7dd6ac8c68d5268c326c4c3f526de66857b44abc",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_020.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "b51b45523adbb1c0b249d104d6898c39721844f377c4722db28a737b96928759",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_021.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "c1079b7475603cd2d6b871d068d9de78958d25cdde2bfdcdf5fbc760c4413826",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_022.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "f328f8dfa819c6e3d1d387ce8d182d3816eab5a82d1f2d5426ba22dc98c3204e",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_023.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "d0016b4e01042bf6672ba421bf5dc266048975941363d0183670844b6658c520",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_024.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "05ca02b64af52395281394d85bdfaba58940bc6e2e00f2898be6b8c7daafc1b2",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_025.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "3015e6131944bf6ce3f04d41e7e608b2e9770400758e7ac1f3b38afc0def4370",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_026.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "024378a3bdc57aea5b2e244b759fd852f48e530f33874c01d4d574ac4538aac9",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_027.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "5f7f723dc2ff6887c079b43052367a74a343b0463a17085ecc50f911788bc933",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_028.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8a4dd1b30acf16e3f3ab423ff56876c4855fc1e8a25d4d291b9ccf2c934dac0a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_029.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "7569dba3e429e08f1e73814ee73dfbefb188f33a790da30f719ab9c32077c7a7",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_030.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "39a8d87e9630748b98fb096620858d3536c6aeb0d6d88edb87e41348e08a8179",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_031.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "d6ed1921046f556c850422c51499395fdd85cedaa001cef51fe5df30d66a6e34",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_032.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "24212b5e558de8df61b45d9f343b7b51b60f05302f1542d114e804487492b5c7",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_033.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "7a7ebea6547b21d15d08491afb777861f37841c56883218cf919ee83b438f931",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_034.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "478d7b4673c41966f99eec9c06817d3e0be0744df262719f07b15f8236a4910b",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_035.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "96dc1cfb4e1a2a4483dcd44c787e670c64485bd73f0f0e9e0c17ac862cdede89",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_036.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "6cffe3b30b4640a6fb2cb8dc03c57ad802f63fd8eadfb085be5cbb4f9c9bc36a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_037.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "51d8915af49bf0c2d21e6a0eddc08ab3810a3350cc35d8b0912fcfa857701f2e",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_038.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8ad8c5347752b473f53399a7a62df0c8eeef0a9ec7827ad7a6e6d566a115b92c",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_039.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "81b7d80d47726df190e02ba6eeaa7beb427684375cbd153e529b0ec60a0059d3",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_040.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "f701b645d2f74bb8d9dfd6819ac2773126f55bce65ef0537e28076ae988cd768",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_041.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "1a1eab1e903fdf07833ec3cc4c2c2cdb842e394d64a3c8fc5b0b4984efdf4b23",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_042.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "54d698430ad637531d1020af60e6d7d07666dc8633ea111c7660bac233ca0ebd",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_043.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "27313fa0d9c754a2d7932854ccc28baf8af225db4eac7228c138f486d82d05c5",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_044.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "43646aa478a3feb8b5ff01f4013eb303282c3b76de40636ae3aae80e4d760dcd",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_045.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "e51e67856c5eb77ce383b95dc79b4cf6f23a748ea4809fc8ea240760d68dd4b6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_046.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "a6c76f4eb84c7ff26817b54de382ec229f4a00f3af4510f570c51e34d6513c90",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_047.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "bacfb248d59a97419b2088b6d63d7f01a816a7195a7309aba42d88afe671dc56",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_048.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "5b8fb672ab12bb81a09fea537567caaf40e7a620578d702726919c6aa2fca13b",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_049.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "5fa1db805bec2e3a3c5a5086c8bed4509140c52fa31bf6b6a71e37b4e58c69d2",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_050.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "417e473892468726eece6fdd0e27d860c8cd901fa2d81b7e3d9efb6b628204ef",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_051.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "6d991e57a05fd4a605f6812919a9bbb9d79e644ae16cca5bf70eb9d9f3023ac0",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_052.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "433133a94f4711030ca3d5da441f86591b6df1ae3a5060066f1167917b7b6e82",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_053.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "c5f84f4dc49df5ea6877e5bc2177908ba19affdd62602965881aca8d3a7a4212",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_054.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "79372dd356dcb8f0ac0147bff151480a0117e9e1cbf9a103c6e9d08dda03f4d1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_055.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "ba00706525f4486644549fc3c8763cfbc5f5779ec1fb52d2780bb9a1c1516a3a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_056.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "fdb1043dcd856313eb41325d8b38e70d770e23e5b4ae216965985cf9e650e59f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_057.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "876072c517415ae4b2fc312943159d7398a501f03d3d8a614f88b8c7ce09dc27",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_058.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "5f94928f0ac6cfc4615549675365f5afb46030ebc2bc5b83a9d74ea816aeb847",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_059.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "1dabfc4c7aa9beabc6a9a87dd6f0860fa4b24bc456dc85d6d50bdf6832e1e9c1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_060.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "719f646065daf539962182d3b2000501faee9e8ca2ab3a64d4cfb8164e7f590f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_061.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "0f6d183bc195b20f289246de45e0f5371f4bbdf7fa055cfbee256a681ba01277",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_062.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "bf0e39a4e991a66c30e6380654ab2d7da652305294809a986bb2dc78c4bc3a0f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_063.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "133b154b85be1a8d3de7d83cf92d904233fe275f6e41259e0060931b487a75a6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_064.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "f7cac543cb4cf7ed1ba0d2bd6880c40a6cface6c24e5751ff9cfade032beb256",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_065.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8d7bfa6b82ea8f4110dd23f8401464603dc26baccb39a4fc5de3e8bc0d66162f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_066.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "181e2c73de3a13acc5ccf581a05f017b689cc4f2b5c36fd79c84c007249d4f86",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_067.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "a8b696ba103d3ccd427a37c3538bb4dedc77c76692f475c21d0ee2f39499c439",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_068.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "6698dd24d9e98cbe4cb056b37de2db39364e88c34492c296d623367b4acafaee",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_069.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "3eda78e008d18d470c3b6d1217c8429200b5a6f24285ca47305ea5b282648978",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_070.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "567ee876cf7606cae6dfb4f96e375fd33aa026ed9755a2b775ecf88ee7bd0197",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_071.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "f8ba32e524b38823ac3e47d6250da461670fd7ec9763dc0a6a147053cdcd8a42",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_072.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8640ad77d514cb1cf28641ae0c48375363377f7d1ff8a7116d8a93701f55dd8c",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_073.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "74c56d6021fd67f096decafa935b4de8610b08a349d6bca006169f4d5f131b75",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_074.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8f5ccb08e8d2c475b50a368b9e8532da84e92e868c999067d93501c5d654e7c1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_075.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_076.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_077.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_078.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_079.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_080.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_081.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_082.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_083.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_normal/godot_084.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "75f8131fde0a188f690a06d0d85ccfe9f6cdde3f0361994ab0bc01f9701bfa58",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_000.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "76c990e605e6e0d06d98c5326664b7c06314debdd7a54101e5cf72a45295863f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_001.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9fa9fcc7a599d79295a976a58a12236c6910e7eddd5fafabcc20389899f531bc",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_002.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "7df05bc677521ba3f7fdf4bb04188b2e907e131ae79ef192263ae2e522462c53",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_003.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "24721d26f2ac37affed10fd916450236d58ac33b8ca0700df63db90bbfdf7a25",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_004.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "dc8c352105973d93efd57ef91985c75c6ab4ec8f0e6bf16ae696a79b3200c338",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_005.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "aefcc51bf4366ca48c2c4d5f902a906536a150210361119f29b0794fe95ed0ec",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_006.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "7649287e03d262f07f47669ffcafefa6b11e6fb6ab7da358467765764a0718ac",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_007.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "a0a1c8bd9aff7044179904b25aba4b54992da7407973c1b579221067972aae85",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_008.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "b27a8da299dfbcdaa6c28dabb8e474827ce35b22d953e09aa0a60d90c2537833",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_009.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "444734a3c7f3ade9ca60fda15b5cf959ea8a325604df1a57c6033efdbbad99ca",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_010.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8c76657fc5736250889bfa0cf0bb931426ef86a496ff5d41b02135eee631c5d5",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_011.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "3aa126ef4a8e37df8aaf994058df52019ead6ebcef6d9c09800ea0ebb0fb8d1f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_012.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "91f27ed5774c1b1803fe91a6240cb3d2695df680dd60b1fd210544e3ce712462",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_013.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "b6f25c5a7638fe41c50d3795873a5388a0d2ad81bca03429f9c2ea4324f95f33",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_014.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "4f5e346f7540e941b68c1ff0758378d5a85e5840afcacbc5ced2a33f7e2ea2ae",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_015.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "d502f6156aa2c0053d17a62b356f3f12bcb5e7d57eb4c892d98bf689b550f24c",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_016.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "fde8fbb2280284a410187f114dce4c52e3bdd602c38272c529a6ec203dcdd61a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_017.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "be5a1b43d06d6ae65f613b6d2acf774e35d9145f2d4487d3d9b5a8ecfdf4b08b",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_018.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "e2114deb217f3d8ba4563a541d45f7a1ef4ea89c81ec971e7e57a459056132ba",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_019.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "607006a4d313d38bdbf3c110dfdcdca27fcf58e4af84ca46036b843efd7ef89a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_020.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "b4b2b255a92b75069399b24bb84050a525c10b618bf06f74ec163e22b2ee8a25",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_021.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "5ca8d944dc091dbd6c4469a024d1173e39564f0bae5487b2b83e87791556dc71",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_022.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "072c22610d87cfff6a774efe2b9c572b48e5f0508d1c2e06ccd98bc5162d1b47",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_023.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "27513a2bfc0cf0a0a1457e4058fee1bf334fd612a15f4329bad5dc7bba3482d1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_024.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "69e898de289b88f25344d6565cdf1140a7a2d56371cbe99a4ed289a71523dd33",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_025.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "f7a2358cec8cd372fab3eb6544aebf2e354195c2797478bcfcd5e4d6c940bbc9",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_026.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "4d02170fa0ebe724298ca0457eed5b3304a528c2c0728c935945f0fe69446e5a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_027.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "e69e304c6a034b70e5a7494d03c1cc1ff6242a24d7095dcd48a8c8b6cffb34fe",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_028.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "a9608c2558d449324ea0441636a866c796ed70662f348e150cd9c6cc3c4c1f60",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_029.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "bf2ac94d7039387603f8735710c43dcff8d3a7deba3f7e1a7cd82a711f4a9d92",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_030.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "6f38084412ed337d718648ff1d41c10159fce2a7c14b74bd7074b77cacfaf0e6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_031.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "d966a5903f7bce199ff58330bd9716f3db5eaec32a9093109b245afbe5401120",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_032.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "371582c6170f05dc9c9cddcd4b12b3ff81f7e6c673a64a784bc63fe5b751e9dc",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_033.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "eeededd495c81b73e75a6f230e300e17eb9f4336b83cab5ac1b0c6585cdf49b3",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_034.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8bce5f4eac55e22b5ab3e880477df6ef90f86ffdc9f0bd10267c58a848d14d3d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_035.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8e58570e02cbea1d4bc58dbbf8f14e26342d18986de44355e98235b955ff6f34",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_036.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8ddf5ba904d0275bc25d67b0c26a03518ce5ec516762b1d1b14116a72786f47a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_037.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "b81882d22f1ccc7f6c951f989d0fd4fa9f802407313f89375e8e3356a3e64534",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_038.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "cd0f126a18beb31faab319b21acd7f121fe1bdb8b9fa5b1bf0fd80fd76688900",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_039.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "b240a51581fba2b5e7cac70229fb0feaa80c222af26371207cd71c8b7f070510",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_040.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "774f38784bd89c5cff8edd5f2355ae98d1d85171f50c67b6e38bc208a535d7aa",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_041.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "434e4186008491355fa5f3eb1d9b9e2a0ac436cff5fbf1b5af8b47c5383b0e03",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_042.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "caf91cac80893926c2172c77e5f3f312c58c88b154774b1297c2ec9bde644625",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_043.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "7a0d4822595fe1ba46a9871b5202c1a6b735ed5ab38bec9c353bb8278a70059c",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_044.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "07c6d6546026b84d060aeef1d1b2e0685130968e1d0616a178ee608557db9b1e",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_045.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "56f2ea44d2118a8f0cf540da3f596623737ef82628f6f01ff9ad3d22571f851d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_046.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "1786209d41e7d5c4e6f694719f44dbcca248670b712658e85506dc3a557059e8",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_047.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "7b69f1c3e7629d924ee86c3732a329457cfeb4d5a75d528ea8dc7fba7c3679c2",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_048.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "97dd345b85561a2b18ad38f3e4a2a688e3dde835e237dc08677462230578b01f",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_049.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "1194c68ad274facb09de95e29b599cbc14dd48cbb6ccba528d49ffa283d09c91",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_050.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "8d8b34b085603c45e7a7ed7d4f78aca5bf1d429b79b1eb24790430bf587fd352",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_051.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "a8850ef73d4a383e1db09f83ae6b1fd89969bb24a752aae99d1b44166f7a6256",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_052.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "09fa8bc1672fc08aa593496b64cdc40d8c332ce2003cda94eac3548bed2e1221",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_053.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "f8a55af9b9cd2e8390a2b35c8183516d14ced4d26dd1bdcfbeeb32d074e8bde9",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_054.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "fbe792e0e6014514bd58ae3dc3ac2ce50d727d98d1becfdd1a710488fa046a7c",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_055.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "6d77376235dc6609e745cfd25065a57890b2a6c93a1291fe5b8ba4ad38bbb645",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_056.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "cce4f6a6b3ea3b9559c889bc9d92d5fddde05b7ec061152c46b7227c220d99f7",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_057.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "195119491bb7ac18c4603440175381884dce60e636540372832b39911c9f8f19",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_058.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "b96c0851df7dfe9ee4a4bd76d96bb8fd6f0325d3b9a94de5e34eed041d229e24",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_059.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "a9856acc90c9bc6d51d5f7cbea6165eb60a9c85400bf615c7042ed01d4356403",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_060.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "177f784aaef659983e44a2bf2c6a29f3f2da28a71d2613e7897a8386436021cf",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_061.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "c68e5702cd92e89eba0efd64f4d62f62269b0f6e3ddc9d7a859acb6ca10324d6",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_062.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "50affb0b44e3dcf63e574ead18a29bca773e103136b79178b566a19495ed9068",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_063.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "58f77d1ea42472d0e935947d5d47fed989f1ff073c95de5e3ee2603691df3ea3",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_064.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "4158fe30e4affe1feb8998b154436a673e56f2f324c0ac6bdad647cc602d8a66",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_065.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "47ee78b566d8e1d0c2ebcddd9fa89a421a349d43152050d380e926eae46fa64d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_066.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "0a41a6c494f8a264f5f13ceb6df95f35f652decef59e25e5538614da2520a87d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_067.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "0637ddefc6d29c6c00ec91837c1f21d6e3e62a0e82c26b18b2e188191e383eac",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_068.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "42891ee89d5fdccef3a5f420cf571a24f0b14a97bfb000d58cbd1faf3a728b57",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_069.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "a27a138355c515ce737d72ddcb6717991ecc07913fa3a3911622f7e133f435e1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_070.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "da0f773dc98518122b25dd06112a8d9ad8b0b12cb7b4f5762a29d6b69e5158f1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_071.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "02ef8da690aa53f54013b86999cdcb09ca9a1ae67a25df6497ae196094a3e84a",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_072.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "be5225996c36fcbf92f6451ddfaed17d0d799c8f474bdebe0bcd0e28ccdaf5a8",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_073.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "5b1fb002e2d48f97b865c5f14e7a65d8314c113142c4f6ed24339a1a8e913d63",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_074.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "61d3af955d0dfc7c5f6af803fa94e14ceb16c78408fc689279192bdd97509337",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_075.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_076.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_077.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_078.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_079.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_080.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_081.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_082.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_083.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/godot_frames_slow_no_effects/godot_084.png",
+      "role": "actual_godot_capture_frame",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9385e70bff05d4fbd106f071b00c4dd8590ec54dc35f6b0f97fb52d1b60df310",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone.gif",
+      "role": "review_export",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "P",
+      "sha256": "e75716d4bf1fccfbdf218da8652b660bbe3322e85e34f7a7834f09bc21b990a9",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_body_review.gif",
+      "role": "review_export",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "P",
+      "sha256": "18c31942386da780678229c43d4b981b0c2cc55ce58a2437a60476f2a67e188b",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_body_slow.gif",
+      "role": "review_export",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "mode": "P",
+      "sha256": "a1a6b19c09c280985b5bfa691334ef3c1514883621fa609a057f2b258926a8b1",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_godot_preview.png",
+      "role": "review_export",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "bacfb248d59a97419b2088b6d63d7f01a816a7195a7309aba42d88afe671dc56",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_slow_no_effects.gif",
+      "role": "review_export",
+      "canvas_size": [
+        1024,
+        576
+      ],
+      "mode": "P",
+      "sha256": "cc3604a4ab796c041e06c3e6785916272ec7b9c81112d2237c1646836d64e45d",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_sprite_sheet.png",
+      "role": "review_export",
+      "canvas_size": [
+        2304,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "ea4829769034c28c01b9e1b8746d6a47ea7e4fef7e5ced95a75abce98c638e88",
+      "quality_status": "needs_review"
+    },
+    {
+      "path": "game_factory/golden_cyclone/v001/previews/weapon_socket_source_review.png",
+      "role": "review_export",
+      "canvas_size": [
+        1248,
+        896
+      ],
+      "mode": "RGB",
+      "sha256": "1eb87523a488e3e0f558f47efe7d26032699534179152ca2fed3865a8da3adf1",
+      "quality_status": "needs_review"
+    }
+  ]
+}

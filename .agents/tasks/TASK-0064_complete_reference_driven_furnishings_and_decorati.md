@@ -1,6 +1,6 @@
 ---
 id: TASK-0064
-status: blocked
+status: cancelled
 owner: unassigned
 branch: none
 agent: claude
@@ -43,3 +43,6 @@ Outcome: Use candidate comparison and calibration to repair or author only confi
 - Tests: not run.
 - PR: none.
 - Next: claim task after checking blockers.
+
+## Closure (Claude, 2026-11-09)
+Depends on the cancelled Blender candidate line; gaps are tracked as ART-0032..0035. Reopen if the owner wants the Blender line back.

@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "golden_cyclone_assets",
+      "kind": "python",
+      "covers": "Individual Hero source provenance, immutable masters, measured sockets, atlas/GIF timing and candidate-only Godot playback with both swords.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_golden_cyclone_assets.py"],
+      "paths": ["tools/golden_cyclone_assets.py", "tools/tests/test_golden_cyclone_assets.py", "tools/verify_golden_cyclone_preview.gd", "scenes/battle/golden_cyclone_preview.*", "scenes/battle/battle_animation_controller.gd", "game_factory/golden_cyclone/**", "assets/characters/hero/battle/golden_cyclone/**"]
+    },
+    {
       "id": "hero_room_capture_evidence",
       "kind": "python",
       "covers": "Real Godot capture evidence validation, invalid versions, missing PNGs, provenance, immutable output and environment source guards.",
@@ -116,6 +123,8 @@
     },
     {"id": "battle_preview", "kind": "python", "covers": "Standalone battle preview: attack, view and weapon selectors, play/pause/restart/frame step, 0.25x speed, camera and VFX toggles, and path-gated capture.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_preview.py"], "paths": ["scenes/battle/battle_preview.gd", "scenes/battle/battle_preview.tscn", "tools/verify_battle_preview.gd", "tools/tests/test_battle_preview.py", "scenes/battle/battle_animation_controller.gd", "scenes/battle/hit_timing_bridge.gd", "scenes/battle/dynamic_battle_camera.gd", "scenes/battle/battle_vfx_layer.gd", "scenes/battle/battle_perspective.gd", "tools/battle_godot_harness.py"]},
     {"id": "battle_registry", "kind": "python", "covers": "Every battle test file is routed exactly once, ids are unique and each entry routes its own file.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_registry.py"], "paths": ["tools/test_map.json", "tools/tests/test_battle_registry.py", "tools/tests/test_battle_*.py"]},
+    {"id": "weapon_battle", "kind": "python", "covers": "BattleResolver: range checks, seeded hit/crit/damage, defeat, poison on hit, art asset id and damage landing on the animation controller hit signal.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_weapon_battle.py"], "paths": ["scenes/battle/battle_resolver.gd", "scenes/battle/weapon_system.gd", "game_factory/weapons/weapon_stats.json", "tools/verify_weapon_battle.gd", "tools/tests/test_weapon_battle.py", "scenes/battle/battle_animation_controller.gd", "tools/battle_godot_harness.py"]},
+    {"id": "weapon_system", "kind": "python", "covers": "Weapon system: class/weapon-type equip rules, inventory-aware equip/unequip, attack = base + weapon, melee/bow/staff ranges, hit/crit/damage and data consistency with the weapon art catalog.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_weapon_system.py"], "paths": ["scenes/battle/weapon_system.gd", "game_factory/weapons/weapon_stats.json", "game_factory/weapons/profiles.json", "tools/verify_weapon_system.gd", "tools/tests/test_weapon_system.py", "tools/battle_godot_harness.py"]},
     {"id": "battle_adapter", "kind": "python", "covers": "ModularBattleCharacter actor adapter: interface, sword swapping, frame and missing-pose reporting, controller playback, and unchanged original character scripts.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_adapter.py"], "paths": ["scenes/battle/modular_actor_adapter.gd", "tools/verify_battle_adapter.gd", "tools/tests/test_battle_adapter.py", "scenes/modular_battle_character.gd", "scenes/battle/battle_animation_controller.gd", "tools/battle_godot_harness.py"]},
     {"id": "battle_controller", "kind": "python", "covers": "Attacker/defender battle controller lifecycle, busy and missing-asset rejection, cancellation, reset and reentrant signal safety.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_battle_controller.py"], "paths": ["scenes/battle/battle_animation_controller.gd", "scenes/battle/battle_timeline.gd", "tools/verify_battle_controller.gd", "tools/tests/test_battle_controller.py", "tools/battle_godot_harness.py", ".agents/planner/config.json"]},
     {
@@ -412,6 +421,27 @@
       "covers": "Retired low-quality twins: layout data in hd_map.json, HD runtime twin size, blueprint measurements and texture availability without the original PNG.",
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_hd_migration.py"],
       "paths": ["tools/migrate_low_to_hd.py", "tools/build_hd_runtime_textures.py", "tools/build_hero_room_blueprint.py", "tools/audit_room_assets.py", "tools/tests/test_hd_migration.py", "assets_hd/hd_map.json", "map_factory/scripts/hd_assets.gd", "map_factory/scripts/asset_factory.gd", "map_factory/scripts/room_factory.gd"]
+    },
+    {
+      "id": "capture_checks",
+      "kind": "python",
+      "covers": "Evidence captures refuse draft or fallback placeholders (TASK-0059).",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_capture_checks.py"],
+      "paths": ["tools/capture_checks.gd", "tools/capture_map_previews.gd", "tools/verify_capture_checks.gd", "tools/tests/test_capture_checks.py", "map_factory/scripts/asset_factory.gd", "tools/battle_godot_harness.py"]
+    },
+    {
+      "id": "blender_catalog",
+      "kind": "python",
+      "covers": "Owner-accepted Blender deliveries: catalog records from measured data, working-tree staging with exact bytes, and the integrated ART-0004 and ART-0014 assets.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_blender_catalog.py"],
+      "paths": ["tools/blender_catalog.py", "tools/art_delivery.py", "tools/tests/test_blender_catalog.py", "map_factory/metadata/asset_index.json"]
+    },
+    {
+      "id": "project_settings",
+      "kind": "python",
+      "covers": "Windows ANGLE driver, windowed 1280x720 mode and main scene so the game starts.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_project_settings.py"],
+      "paths": ["project.godot", "tools/tests/test_project_settings.py", "scenes/main.tscn"]
     }
   ]
 }

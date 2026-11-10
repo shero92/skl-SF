@@ -1,8 +1,8 @@
 ---
 id: TASK-0015
-status: review
+status: done
 owner: claude
-branch: art/ART-0004
+branch: claude/integrate-art-0004-0014
 agent: claude
 touches: .agents/graphics/deliveries/ART-0004/
 test: py -3 -m unittest discover -s tools/tests -p test_art_delivery.py
@@ -38,3 +38,6 @@ art_request: ART-0004
 - Delivery: .agents/graphics/deliveries/ART-0004/ (4 native PNGs, 4 masters, 4 shadows, manifest.json with measured SHA-256).
 - Command: py -3 tools/blender_factory.py deliver ART-0004 --agent claude (34 s).
 - Not yet in map_factory/parts or any map; needs Godot assembly and the owner's check of the final capture.
+
+## Closure (Claude, 2026-11-09)
+Owner accepted the delivery in chat (2026-11-09: "I ACCEPT THEM CONTINUE"). ART-0004 is integrated: catalog IDs W023 to W026 (north, east, south, west wall runs), PNGs in map_factory/parts, request status integrated, exact delivered bytes (SHA-256 verified by tools/art_delivery.py). Tests: tools/tests/test_blender_catalog.py. The pieces are registered and available; hero_room_01 v0017 does not place them yet (it uses the owner HD walls), so the room render is unchanged. Next step: place them in a new room version if the owner wants them in the room.

@@ -43,13 +43,15 @@ def request_fields(path):
             fields[key.strip()]=val.strip()
     return fields,data
 
-def collect(root=ROOT):
+def collect(root=ROOT,only=None):
     catalog=json.loads((root/"map_factory/metadata/asset_index.json").read_text(encoding="utf-8"))
     current={a["id"] for a in catalog["assets"]}
     outputs=[]
     for req in sorted((root/".agents/graphics/requests").glob("ART-*.md")):
         fields,raw=request_fields(req)
         if fields.get("status")!="delivered":
+            continue
+        if only is not None and fields.get("id") not in only:
             continue
         ident=fields["id"]
         folder=root/".agents/graphics/deliveries"/ident
@@ -98,6 +100,33 @@ def collect(root=ROOT):
             group.append((source_path,dest,asset))
         outputs.append((req,fields,m,group))
     return catalog,outputs
+
+def stage(ids,root=ROOT):
+    """Register the named delivered requests in the working tree only (no git, no push).
+
+    Same validation as integrate(): exact delivered bytes, hashes, metadata and IDs. The PNGs are
+    copied to map_factory/parts, the catalog gains the assets and each request becomes `integrated`.
+    Meant for a reviewed pull request; integrate() remains the owner-run main-only path.
+    """
+    ids=set(ids)
+    catalog,batches=collect(root,only=ids)
+    found={fields["id"] for _,fields,_,_ in batches}
+    if found!=ids:
+        raise ValueError("Not delivered or not valid: "+", ".join(sorted(ids-found)))
+    count=0
+    for req,fields,manifest,group in batches:
+        for source,dest,meta in group:
+            destination=root/dest.removeprefix("res://")
+            destination.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(root/source,destination)
+            catalog["assets"].append(meta)
+            count+=1
+        text=req.read_text(encoding="utf8")
+        req.write_text(text.replace("status: delivered","status: integrated",1),encoding="utf8",newline="\n")
+    catalog["asset_count"]=len(catalog["assets"])
+    (root/"map_factory/metadata/asset_index.json").write_text(
+        json.dumps(catalog,indent=2,ensure_ascii=False)+"\n",encoding="utf8",newline="\n")
+    return count
 
 def integrate():
     cfg=json.loads(CONFIG.read_text(encoding="utf-8"))
@@ -214,7 +243,11 @@ def main():
     g.add_argument("--check",action="store_true")
     g.add_argument("--audit-reference",action="store_true",help="owner/reviewer-only PNG signature, dimensions and SHA-256 preflight")
     g.add_argument("--integrate",action="store_true")
+    g.add_argument("--stage",metavar="ART-IDS",help="comma separated delivered request IDs to register in the working tree (no git)")
     opts=p.parse_args()
+    if opts.stage:
+        print("staged",stage([x.strip() for x in opts.stage.split(",") if x.strip()]),"assets")
+        return
     if opts.audit_reference:
         print(json.dumps(audit_goal_reference(),indent=2))
         return
