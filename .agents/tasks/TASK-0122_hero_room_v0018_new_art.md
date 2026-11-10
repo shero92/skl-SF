@@ -7,7 +7,7 @@ priority: high
 branch: claude/room-art-0032-0035
 depends_on: TASK-0116
 issue: none
-art_request: ART-0032,ART-0033,ART-0034,ART-0035
+art_request: ART-0032
 touches: tools/register_environment_art.py,tools/build_v0018_patch.py,map_factory/metadata/asset_index.json,map_factory/parts/**,map_factory/maps/hero_room_01/**,map_factory/maps/index.json,docs/previews/map_factory_renders/t0122_v0018/**
 test: python tools/run_tests.py --changed
 done_when: The owner-agreed ART-0032..0035 masters are registered as runtime parts and hero_room_01 v0018 is published with them; a real Godot capture passes the evidence gate; visual_approval stays false.
