@@ -115,6 +115,12 @@ func _test_combat(ws) -> void:
 	_check(ws.damage(hero, foe, true) == int(10 * 1.5), "crit damage")
 	var weak = ws.make_unit("CHAR005")
 	_check(ws.damage(weak, ws.make_unit("CHAR004")) == 1, "minimum damage 1")
+	var mage_unit = ws.make_unit("CHAR001")
+	mage_unit.class_id = "mage"
+	mage_unit.inventory = ["WPN_WOOD_STAFF"]
+	ws.equip(mage_unit, "WPN_WOOD_STAFF")
+	var armored = ws.make_unit("CHAR004")
+	_check(ws.damage(mage_unit, armored) == maxi(1, int(ws.effective_stats(mage_unit).attack)), "staff (magic) ignores target defense")
 	_check(ws.hit_chance(hero, foe) == 95 + (7 - 4), "hit chance uses agility")
 	var thief = ws.make_unit("CHAR001", ["WPN_ASSASSIN_DAGGER"], "WPN_ASSASSIN_DAGGER")
 	_check(ws.crit_chance(thief) == 12, "crit chance")

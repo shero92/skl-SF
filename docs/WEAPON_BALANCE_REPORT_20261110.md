@@ -42,3 +42,6 @@ Tool: `tools/simulate_battles.gd` (`godot --headless --path . --script res://too
 
 ## Pass one applied (TASK-0140)
 Class base HP x2.5 and natural claws attack 9 to 6. Result (20 seeds): average 2.5 rounds, 0% draws. Win rates: warrior 88, knight 86, swordsman 64, brawler 63, lancer 62, archer 36, thief 31, healer 16, mage 5. Still open: a magic stat or minimum damage for staffs so mage and healer have a role.
+
+## Staff magic applied (TASK-0141)
+Staffs (`kind: magic`) ignore target defense; the simulation uses each class's first weapon type. Win rates: lancer 92, warrior 80, knight 75, brawler 59, swordsman 44, archer 38, healer 38, mage 19, thief 9. Open: tune steel spear down and thief up.
