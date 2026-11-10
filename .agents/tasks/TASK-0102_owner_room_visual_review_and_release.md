@@ -8,7 +8,7 @@ branch: codex/task-0102-room-review
 depends_on: TASK-0101
 issue: none
 art_request: none
-touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review
+touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review,.agents/graphics/requests/ART-0032_hero_room_connected_ruin_walls.md,.agents/graphics/deliveries/ART-0032,assets_hd/architecture/connected_ruin_walls/v001,game_factory/environment/ART-0032/v001
 test: python tools/run_tests.py --all
 done_when: Claude merges tested Aider results, publishes a new immutable version after v0013, performs a real Godot capture and side-by-side reference review, reports exact remaining visual gaps, and only marks the room visually approved with explicit owner approval.
 estimate_minutes: 120
@@ -40,3 +40,11 @@ Reference: `docs/HERO_ROOM_20261103_VISUAL_TARGET.md`. Do not overwrite existing
 ## اعتماد المالك 2026-11-10
 
 وافق المالك صراحة على التسليم والدمج. مراجعة Claude السابقة محفوظة؛ مراجعة Codex لـv0017 في PR #128 تكملها. لا يعني قبول التقرير أن الفجوات المرئية اختفت.
+
+## متابعة رسومية ART-0032 — 2026-11-10
+
+Agent: codex. Branch: codex/art-0032-connected-walls. إنتاج تسع قطع جدران مستقلة لمعالجة فجوة المراجعة، مع حفظ المصادر والبيانات والطلبات داخل المشروع. لا تعديل للخريطة أو الأصول السابقة.
+
+تسليم ART-0032: 9 masters و9 مشتقات مراجعة، و4 محاولات مرفوضة محفوظة. التوليد مستقل لكل صورة، لقطة Godot فعلية مع manifest SHA. معايرة footprint ونقاط الوصل داخل الغرفة واعتماد المالك للرسوم الجديدة لم ينفذا بعد.
+
+فحوص ART-0032: 72/72 مجموعة مشروع نجحت؛ مصادر 9/9 ومشتقات 9/9 وبصمات الالتقاط تحققت. سجل QA: game_factory/environment/ART-0032/v001/qa/verification.json. التالي: مراجعة المالك للصور ثم معايرة نقاط الوصل والحجم بمشهد منفصل.

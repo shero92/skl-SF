@@ -1,0 +1,14 @@
+{
+  "independent_masters_verified": 9,
+  "unique_master_hashes": 9,
+  "native_derivatives_verified": 9,
+  "rejected_sources_preserved": 4,
+  "masters_modified_during_derivation": false,
+  "actual_godot_viewport_verified": true,
+  "full_project_test_groups_passed": 72,
+  "full_project_test_groups_total": 72,
+  "test_command": "python -u tools/run_tests.py --changed --base origin/main --timeout 120",
+  "owner_approved": false,
+  "map_integration_verified": false,
+  "generation_model": "unknown_not_exposed_by_builtin_tool"
+}

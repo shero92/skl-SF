@@ -1,7 +1,7 @@
 ---
 id: ART-0032
-status: requested
-owner: graphics-specialist
+status: delivered
+owner: codex
 task: TASK-0102
 dedupe_key: hero_room_connected_ruin_walls
 existing_asset_ids: none
@@ -23,11 +23,17 @@ output_paths: .agents/graphics/deliveries/ART-0032/wall_straight_long_a.png,.age
 - [ ] Owner reviews the specification; keep `requested` until then.
 
 ## Graphics specialist checklist
-- [ ] All required clean PNGs produced.
-- [ ] SHA-256 manifest written (pixel_size, origin, facing, footprint); mark `delivered`.
+- [x] All required clean PNGs produced.
+- [x] SHA-256 manifest written; geometric origins measured, footprint proposed and map calibration explicitly pending.
 
 ## QA checklist
 - [ ] Independent visual review at Godot native scale; mark `reviewed`.
 
 ## Integration checklist
 - [ ] Registered assets and room relayout (v0015) tested; PR merged; mark `integrated`.
+
+## تفويض التنفيذ 2026-11-10
+
+طلب المالك تنفيذ المهمة الرسومية التالية بعد قبول التسليمات السابقة. الإنتاج عبر builtin_image_gen؛ كل قطعة PNG مستقلة. لا تفعيل إنتاجي قبل مراجعة القطع الجديدة. المسار الأساسي assets_hd/architecture/connected_ruin_walls/v001؛ نسخ طلب التسليم في .agents/graphics/deliveries/ART-0032؛ البيانات والطلبات في game_factory/environment/ART-0032/v001.
+
+تسليم: تسعة masters مستقلة وأربع محاولات محفوظة، ولقطة Godot فعلية للنسخ الصغيرة. دليل الاستخدام والبيانات: game_factory/environment/ART-0032/v001/README.md وmanifest.json. حالة الأصول needs_review؛ لم تعدل الخرائط أو السجل النشط.
