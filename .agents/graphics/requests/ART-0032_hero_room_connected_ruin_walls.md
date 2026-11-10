@@ -1,6 +1,6 @@
 ---
 id: ART-0032
-status: delivered
+status: reviewed
 owner: codex
 task: TASK-0102
 dedupe_key: hero_room_connected_ruin_walls
@@ -37,3 +37,5 @@ output_paths: .agents/graphics/deliveries/ART-0032/wall_straight_long_a.png,.age
 طلب المالك تنفيذ المهمة الرسومية التالية بعد قبول التسليمات السابقة. الإنتاج عبر builtin_image_gen؛ كل قطعة PNG مستقلة. لا تفعيل إنتاجي قبل مراجعة القطع الجديدة. المسار الأساسي assets_hd/architecture/connected_ruin_walls/v001؛ نسخ طلب التسليم في .agents/graphics/deliveries/ART-0032؛ البيانات والطلبات في game_factory/environment/ART-0032/v001.
 
 تسليم: تسعة masters مستقلة وأربع محاولات محفوظة، ولقطة Godot فعلية للنسخ الصغيرة. دليل الاستخدام والبيانات: game_factory/environment/ART-0032/v001/README.md وmanifest.json. حالة الأصول needs_review؛ لم تعدل الخرائط أو السجل النشط.
+
+اعتماد المالك 2026-11-10: جميع الصور المختارة المسلمة مقبولة. يبقى تركيب الخريطة ومعايرة نقاط الوصل منفصلين؛ لا يشمل الاعتماد rejected/.

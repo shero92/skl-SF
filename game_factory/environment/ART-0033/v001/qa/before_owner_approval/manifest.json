@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "art_request": "ART-0033",
+  "task_id": "TASK-0102",
+  "agent": "codex",
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "production_active": false,
+  "generation_cache_required": false,
+  "source_count": 8,
+  "references": [
+    {
+      "path": "assets_hd/background/cliff_base/cliff_base_01.png",
+      "sha256": "9f2aa3b31fce2c93a500abead8679d2dafe4010ef0d7a4d7400b48de1642c96e",
+      "role": "material_style"
+    },
+    {
+      "path": "map_factory/references/hero_room_01_target_20261103.png",
+      "sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "role": "projection_composition"
+    }
+  ],
+  "items": [
+    {
+      "id": "terrace_edge_straight",
+      "master_path": "assets_hd/background/terrace_cliff/v001/terrace_edge_straight.png",
+      "sha256": "4af62152cc0a0c5448b23f936d21733e5fd0b44879ecf65b1bd573799fe2b310",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        40,
+        262,
+        2132,
+        468
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          1086.0,
+          468
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "terrace_edge_straight",
+      "footprint_proposed_px": [
+        256,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0033/v001/native_review/terrace_edge_straight.png",
+      "native_review_canvas": [
+        256,
+        96
+      ],
+      "native_review_sha256": "59ed90d941a052c2573e6e0330573a2e9ea1d8041ae782cfe658b740212132d1",
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0033/v001/requests/terrace_edge_straight.txt"
+    },
+    {
+      "id": "terrace_edge_corner_left",
+      "master_path": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_left.png",
+      "sha256": "dc6c131321c6a8c0f4dcfd461b8e327403c834c2eb8895421785f23c7df0983a",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        74,
+        72,
+        1683,
+        820
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          878.5,
+          820
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "terrace_edge_corner_left",
+      "footprint_proposed_px": [
+        128,
+        128
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0033/v001/native_review/terrace_edge_corner_left.png",
+      "native_review_canvas": [
+        192,
+        192
+      ],
+      "native_review_sha256": "a1b078e553205c9cc0a130658928e2ba35fdc461d549063110cbe1ad18657a56",
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0033/v001/requests/terrace_edge_corner_left.txt"
+    },
+    {
+      "id": "terrace_edge_corner_right",
+      "master_path": "assets_hd/background/terrace_cliff/v001/terrace_edge_corner_right.png",
+      "sha256": "872b71b30ba704a44f482611e0bb04c673fb413d1b6de5c7081bae0726d8a1cd",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        49,
+        91,
+        1709,
+        796
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          879.0,
+          796
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "terrace_edge_corner_right",
+      "footprint_proposed_px": [
+        128,
+        128
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0033/v001/native_review/terrace_edge_corner_right.png",
+      "native_review_canvas": [
+        192,
+        192
+      ],
+      "native_review_sha256": "09fa0737f92dcaefb48154e9577e0233fe646f673c5ccd7e00b60fb477082c36",
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0033/v001/requests/terrace_edge_corner_right.txt"
+    },
+    {
+      "id": "cliff_face_front_a",
+      "master_path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_a.png",
+      "sha256": "ca5208627b47277d4701855f4cc6a9687536827cfae6779a342a21f40d68f888",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        29,
+        29,
+        1746,
+        859
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          887.5,
+          859
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "front",
+      "footprint_proposed_px": [
+        256,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0033/v001/native_review/cliff_face_front_a.png",
+      "native_review_canvas": [
+        256,
+        192
+      ],
+      "native_review_sha256": "60c93b41bbcff7f5c5f5fe0ef340e2e08bcdc4378e2d29edadb885e84e76c385",
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0033/v001/requests/cliff_face_front_a.txt"
+    },
+    {
+      "id": "cliff_face_front_b",
+      "master_path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_b.png",
+      "sha256": "412382b8908f3fc62b6cca0c6040fb7cffd635f7aff6ecaa23315a19b2254a84",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        31,
+        29,
+        1505,
+        1005
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          768.0,
+          1005
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "front",
+      "footprint_proposed_px": [
+        256,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0033/v001/native_review/cliff_face_front_b.png",
+      "native_review_canvas": [
+        256,
+        192
+      ],
+      "native_review_sha256": "003fba049d14d6d133078fefaf14c598ee8b9905fc0deed2cdcd0c91cdac3c44",
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0033/v001/requests/cliff_face_front_b.txt"
+    },
+    {
+      "id": "cliff_face_front_c",
+      "master_path": "assets_hd/background/terrace_cliff/v001/cliff_face_front_c.png",
+      "sha256": "00afb4586c6cc8ef202139db006fed79afd08fb7523c307932fc672d1d27e0c9",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        77,
+        79,
+        1462,
+        988
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          769.5,
+          988
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "front",
+      "footprint_proposed_px": [
+        256,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0033/v001/native_review/cliff_face_front_c.png",
+      "native_review_canvas": [
+        256,
+        192
+      ],
+      "native_review_sha256": "8b5cb9b924c1ab0463275207f82ba1febe5952b7efefb155644eacd5025ca179",
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0033/v001/requests/cliff_face_front_c.txt"
+    },
+    {
+      "id": "cliff_rubble_cluster",
+      "master_path": "assets_hd/background/terrace_cliff/v001/cliff_rubble_cluster.png",
+      "sha256": "862b79ccfbecc3a7948b56b8a23747dea05bf0589d74b5b476f41c3606cd3e78",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        53,
+        203,
+        1484,
+        824
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          768.5,
+          824
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "cliff_rubble_cluster",
+      "footprint_proposed_px": [
+        128,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0033/v001/native_review/cliff_rubble_cluster.png",
+      "native_review_canvas": [
+        192,
+        128
+      ],
+      "native_review_sha256": "a409d362d26bb609c6e5b08ace7a98b235e133ba83d4bd657373680194003225",
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0033/v001/requests/cliff_rubble_cluster.txt"
+    },
+    {
+      "id": "foam_at_cliff_base",
+      "master_path": "assets_hd/background/terrace_cliff/v001/foam_at_cliff_base.png",
+      "sha256": "0edff2db84c079bee88a97c209cc4273915d9c5af6b233c64a2e8af6db48b384",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        19,
+        122,
+        2154,
+        521
+      ],
+      "origin": {
+        "method": "alpha_bbox_bottom_center",
+        "pixels": [
+          1086.5,
+          521
+        ],
+        "status": "geometric_review_anchor_not_map_calibration"
+      },
+      "facing": "contact_waterline",
+      "footprint_proposed_px": [
+        256,
+        64
+      ],
+      "footprint_status": "proposed_64px_grid_not_calibrated",
+      "native_review_path": "game_factory/environment/ART-0033/v001/native_review/foam_at_cliff_base.png",
+      "native_review_canvas": [
+        256,
+        64
+      ],
+      "native_review_sha256": "890b9c73d32c715fd2369ba487e439d791ddfb6018e9f52909cc779583cbb24b",
+      "runtime_scale": null,
+      "connection_sockets": null,
+      "integration_status": "needs_map_calibration_and_owner_review",
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0033/v001/requests/foam_at_cliff_base.txt"
+    }
+  ],
+  "cost_usd": null,
+  "tokens": null
+}

@@ -1,7 +1,7 @@
 ---
 id: ART-0033
-status: requested
-owner: graphics-specialist
+status: reviewed
+owner: codex
 task: TASK-0102
 dedupe_key: hero_room_terrace_cliff_edge
 existing_asset_ids: none
@@ -23,11 +23,19 @@ output_paths: .agents/graphics/deliveries/ART-0033/terrace_edge_straight.png,.ag
 - [ ] Owner reviews the specification; keep `requested` until then.
 
 ## Graphics specialist checklist
-- [ ] All required clean PNGs produced.
-- [ ] SHA-256 manifest written (pixel_size, origin, facing, footprint); mark `delivered`.
+- [x] All required clean PNGs produced.
+- [x] SHA-256 manifest written; geometric origins measured; proposed footprints and map calibration explicitly pending.
 
 ## QA checklist
 - [ ] Independent visual review at Godot native scale; mark `reviewed`.
 
 ## Integration checklist
 - [ ] Registered assets and room relayout (v0015) tested; PR merged; mark `integrated`.
+
+## تنفيذ المالك 2026-11-10
+
+طلب المالك الانتقال للمهمة الرسومية التالية بعد ART-0032. Agent: codex؛ الفرع codex/art-0033-terrace-cliff. ثمانية طلبات builtin_image_gen مستقلة؛ المصادر assets_hd/background/terrace_cliff/v001 والبيانات game_factory/environment/ART-0033/v001. لا تعديل للخريطة أو الأصول القديمة؛ المخرجات الجديدة needs_review.
+
+التسليم: ثمانية masters مستقلة ونسخ مراجعة منفصلة ولقطة Godot فعلية. دليل الاستخدام: game_factory/environment/ART-0033/v001/README.md. المصادر assets_hd/background/terrace_cliff/v001؛ الحالة needs_review، ولا تعديل للخريطة أو السجل النشط.
+
+اعتماد المالك 2026-11-10: جميع الصور المختارة المسلمة مقبولة. يبقى تركيب الخريطة ومعايرة نقاط الوصل منفصلين؛ لا يشمل الاعتماد rejected/.

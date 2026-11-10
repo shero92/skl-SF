@@ -8,7 +8,7 @@ branch: codex/task-0102-room-review
 depends_on: TASK-0101
 issue: none
 art_request: none
-touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review,.agents/graphics/requests/ART-0032_hero_room_connected_ruin_walls.md,.agents/graphics/deliveries/ART-0032,assets_hd/architecture/connected_ruin_walls/v001,game_factory/environment/ART-0032/v001
+touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review,.agents/graphics/requests/ART-0033_hero_room_terrace_cliff_edge.md,.agents/graphics/deliveries/ART-0033,assets_hd/background/terrace_cliff/v001,game_factory/environment/ART-0033/v001,.agents/graphics/requests/ART-0032_hero_room_connected_ruin_walls.md,.agents/graphics/deliveries/ART-0032,assets_hd/architecture/connected_ruin_walls/v001,game_factory/environment/ART-0032/v001
 test: python tools/run_tests.py --all
 done_when: Claude merges tested Aider results, publishes a new immutable version after v0013, performs a real Godot capture and side-by-side reference review, reports exact remaining visual gaps, and only marks the room visually approved with explicit owner approval.
 estimate_minutes: 120
@@ -48,3 +48,17 @@ Agent: codex. Branch: codex/art-0032-connected-walls. إنتاج تسع قطع �
 تسليم ART-0032: 9 masters و9 مشتقات مراجعة، و4 محاولات مرفوضة محفوظة. التوليد مستقل لكل صورة، لقطة Godot فعلية مع manifest SHA. معايرة footprint ونقاط الوصل داخل الغرفة واعتماد المالك للرسوم الجديدة لم ينفذا بعد.
 
 فحوص ART-0032: 72/72 مجموعة مشروع نجحت؛ مصادر 9/9 ومشتقات 9/9 وبصمات الالتقاط تحققت. سجل QA: game_factory/environment/ART-0032/v001/qa/verification.json. التالي: مراجعة المالك للصور ثم معايرة نقاط الوصل والحجم بمشهد منفصل.
+
+## متابعة رسومية ART-0033 — 2026-11-10
+
+Agent: codex. Branch: codex/art-0033-terrace-cliff. معالجة فجوة الشرفة والجرف عبر ثمانية أصول مستقلة؛ صور المصدر والطلبات والبصمات ونسخ المراجعة تحفظ داخل المشروع. نطاق الملفات الإضافي: .agents/graphics/requests/ART-0033_hero_room_terrace_cliff_edge.md، .agents/graphics/deliveries/ART-0033، assets_hd/background/terrace_cliff/v001، game_factory/environment/ART-0033/v001. لا تفعيل تلقائي للرسوم الجديدة.
+
+تسليم ART-0033: 8 مصادر مستقلة و8 مشتقات مراجعة، مع فحص PNG/RGBA والشفافية وعدم قص silhouette عند alpha128، ولقطة Godot فعلية موثقة. معايرة النهايات والارتكاز داخل الغرفة واعتماد المالك للصور الجديدة ما زالا معلقين.
+
+فحوص ART-0033: 73/73 مجموعة مشروع نجحت؛ تحقق 8/8 مصادر و8/8 مشتقات وبصمات لقطة Godot. التفاصيل game_factory/environment/ART-0033/v001/qa/verification.json. التالي مراجعة الصور ثم معايرة نقاط الوصل داخل المشهد.
+
+## اعتماد ART-0032 وART-0033 — 2026-11-10
+
+وافق المالك صراحة على جميع المخرجات المسلمة وطلب دفعها ودمجها ثم متابعة الرسوم المطلوبة. الاعتماد يشمل 9 مصادر جدران و8 مصادر شرفة/جرف، ولا يشمل المحاولات المرفوضة أو صورًا مستقبلية لم تعرض بعد. معايرة الخريطة منفصلة.
+
+فحص جمع التسليمات بعد اعتماد المالك: 74/74 مجموعة نجحت. أُعيد التقاط لوحتي Godot بحالة owner_approved=true، مع حفظ اللقطات وmanifest السابقة للموافقة. المصادر لم تتغير.

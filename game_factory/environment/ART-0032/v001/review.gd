@@ -14,7 +14,7 @@ func _capture() -> void:
 	background.size = Vector2(1024, 1024)
 	board.add_child(background)
 	var title := Label.new()
-	title.text = "ART-0032 | CANDIDATES / needs_review | native review prototypes"
+	title.text = "ART-0032 | OWNER APPROVED / map calibration pending | native review prototypes"
 	title.position = Vector2(16, 12)
 	board.add_child(title)
 	var manifest: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(BASE + "manifest.json"))
@@ -46,7 +46,7 @@ func _capture() -> void:
 		return
 	var receipt := FileAccess.open(BASE + "godot_review_receipt.json", FileAccess.WRITE)
 	receipt.store_string(JSON.stringify({"actual_viewport": true, "engine": Engine.get_version_info().string,
-		"canvas_size": [1024,1024], "candidate_count": manifest.items.size(), "owner_approved": false,
+		"canvas_size": [1024,1024], "candidate_count": manifest.items.size(), "owner_approved": manifest.get("owner_approved", false),
 		"native_review_only": true, "map_integration_verified": false,
 		"manifest_sha256": FileAccess.get_sha256(BASE + "manifest.json"),
 		"render_sha256": FileAccess.get_sha256(output)}, "\t"))
