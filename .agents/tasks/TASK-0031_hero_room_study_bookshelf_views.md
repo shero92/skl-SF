@@ -6,7 +6,7 @@ agent: codex
 branch: codex/hero-room-b2-target
 depends_on: TASK-0134
 issue: none
-art_request: ART-0020,ART-0008,ART-0006,ART-0024,ART-0022
+art_request: ART-0020
 touches: assets_hd/furniture/study_bookshelf_views/v001,assets_hd/furniture/headboard_shelf/v001,assets_hd/architecture/sphere_stair_post/v001,assets_hd/decor/rope_post_fence/v001,assets_hd/decor/compass_inlay/v001,game_factory/environment/batch_B2_20261110,game_factory/environment/ART-0020/v001,.agents/graphics/deliveries/ART-0020,.agents/graphics/requests/ART-0020_hero_room_study_bookshelf_views.md,game_factory/environment/ART-0008/v001,.agents/graphics/deliveries/ART-0008,.agents/graphics/requests/ART-0008_hero_room_headboard_shelf.md,game_factory/environment/ART-0006/v001,.agents/graphics/deliveries/ART-0006,.agents/graphics/requests/ART-0006_hero_room_sphere_finial.md,game_factory/environment/ART-0024/v001,.agents/graphics/deliveries/ART-0024,.agents/graphics/requests/ART-0024_hero_room_rope_post_fence.md,game_factory/environment/ART-0022/v001,.agents/graphics/deliveries/ART-0022,.agents/graphics/requests/ART-0022_hero_room_compass_floor_inlay.md,.agents/tasks/TASK-0031_hero_room_study_bookshelf_views.md
 test: python tools/graphics_validation.py --changed; python tools/run_tests.py --changed
 done_when: Eight independent B2 sources with measured manifests, native reviews, real Godot captures and one draft PR; other bookshelf/headboard views explicitly deferred per target spec.

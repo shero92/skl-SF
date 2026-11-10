@@ -199,5 +199,15 @@
       "reason": "See rejected/rejections.json for measured and visual rejection reasons",
       "quality_status": "needs_regeneration"
     }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_south.png",
+      "sha256": "116feab55c4a93c208f2c360e42f5f9e05dbd0d7ab072c02edd61641f45372b4"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0020/hero_study_bookshelf_north.png",
+      "sha256": "fcb3079d48951276a1e245fa1bffdad591a5176282b6b002d66813b8733196c7"
+    }
   ]
 }

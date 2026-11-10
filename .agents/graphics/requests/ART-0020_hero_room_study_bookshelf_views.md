@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0031
 dedupe_key: hero_room_study_bookshelf_views
 existing_asset_ids: P014
-output_paths: .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_north.png, .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_east.png, .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_south.png, .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_west.png
+output_paths: .agents/graphics/deliveries/ART-0020/hero_study_bookshelf_south.png,.agents/graphics/deliveries/ART-0020/hero_study_bookshelf_north.png
 issue: 20
 ---
 # Four-perspective right-wall bookshelf
@@ -73,3 +73,6 @@ issue: 20
 - Exact delivery paths and source hashes: `.agents/graphics/deliveries/ART-0020/manifest.json` (new images under `items`; compatibility `files` for ART-0022/0024 points to archived previous candidates).
 - Review: `game_factory/environment/ART-0020/v001/`. Sources and attempts retained. Literal master size deviations and unannotated footprints/mounts disclosed. No upscaling, no owner approval or integration.
 - Delivered south/north only per current target spec; east/west explicitly deferred, not a complete four-view set.
+
+
+> Scope note (Claude, integration of B2): output_paths narrowed to the views Codex delivered in B2. The other views of the original request were deferred by the latest target spec and need a new request if wanted.

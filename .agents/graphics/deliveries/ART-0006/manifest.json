@@ -120,5 +120,11 @@
       "reason": "See rejected/rejections.json for measured and visual rejection reasons",
       "quality_status": "needs_regeneration"
     }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0006/hero_stone_sphere_finial.png",
+      "sha256": "7480fde019f3e1cf63059109e1f08a7deaaa29ded16851eb550e5d62a548d475"
+    }
   ]
 }

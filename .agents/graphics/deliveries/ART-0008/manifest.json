@@ -110,5 +110,11 @@
       "reason": "See rejected/rejections.json for measured and visual rejection reasons",
       "quality_status": "needs_regeneration"
     }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png",
+      "sha256": "eaf81250b1acb7893ad977767d973a879c48cc3491389e1550c15027d7083f22"
+    }
   ]
 }

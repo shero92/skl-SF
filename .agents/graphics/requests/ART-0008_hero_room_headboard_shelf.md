@@ -5,7 +5,7 @@ owner: graphics-specialist
 task: TASK-0019
 dedupe_key: hero_room_headboard_shelf
 existing_asset_ids: P004,P014,P015
-output_paths: .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_north.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_east.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_west.png
+output_paths: .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png
 issue: 20
 ---
 # Headboard-mounted bookshelf and plant support
@@ -73,3 +73,6 @@ issue: 20
 - Exact delivery paths and source hashes: `.agents/graphics/deliveries/ART-0008/manifest.json` (new images under `items`; compatibility `files` for ART-0022/0024 points to archived previous candidates).
 - Review: `game_factory/environment/ART-0008/v001/`. Sources and attempts retained. Literal master size deviations and unannotated footprints/mounts disclosed. No upscaling, no owner approval or integration.
 - Delivered south only per current target spec; north/east/west explicitly deferred.
+
+
+> Scope note (Claude, integration of B2): output_paths narrowed to the views Codex delivered in B2. The other views of the original request were deferred by the latest target spec and need a new request if wanted.
