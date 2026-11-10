@@ -94,6 +94,9 @@ func _run_smoke() -> void:
             }
             for pass_id in layer_nodes:
                 var section := built.get_node_or_null(String(layer_nodes[pass_id]))
+                if section == null:
+                    # Unified-sort maps (occlusion_mode world_y_sort) nest walls and decor under WorldDepthSort.
+                    section = built.get_node_or_null("WorldDepthSort/" + String(layer_nodes[pass_id]))
                 var records: Array = passes.get(String(pass_id), [])
                 var mounted := 0
                 for record in records:

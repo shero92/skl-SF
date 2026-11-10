@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 20,
+  "version": 21,
   "processing_passes": [
     "background",
     "ground",
@@ -9,6 +9,7 @@
     "decorations",
     "shadows"
   ],
+  "occlusion_mode": "world_y_sort",
   "display_z": {
     "background": 0,
     "ground": 10,
