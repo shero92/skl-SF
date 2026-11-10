@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 18,
+  "version": 19,
   "processing_passes": [
     "background",
     "ground",
@@ -1195,6 +1195,48 @@
         "attachment": null
       },
       {
+        "instance_id": "HorizonHaze",
+        "asset_id": "E035",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          768.0,
+          88.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E035_Horizon_Haze_Strip.png",
+        "pixel_size": [
+          768,
+          20
+        ],
+        "origin": [
+          384,
+          20
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
         "instance_id": "TerraceCornerLeft",
         "asset_id": "E030",
         "source_layer": "front_objects",
@@ -1257,6 +1299,174 @@
         "origin": [
           128,
           109
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontEdgeStripLeftA",
+        "asset_id": "E032",
+        "source_layer": "front_objects",
+        "render_layer": "background",
+        "position": [
+          450.0,
+          814.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+        "pixel_size": [
+          320,
+          32
+        ],
+        "origin": [
+          160,
+          32
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontEdgeStripLeftB",
+        "asset_id": "E032",
+        "source_layer": "front_objects",
+        "render_layer": "background",
+        "position": [
+          740.0,
+          806.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+        "pixel_size": [
+          320,
+          32
+        ],
+        "origin": [
+          160,
+          32
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontEdgeStripRightA",
+        "asset_id": "E032",
+        "source_layer": "front_objects",
+        "render_layer": "background",
+        "position": [
+          1050.0,
+          814.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+        "pixel_size": [
+          320,
+          32
+        ],
+        "origin": [
+          160,
+          32
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontEdgeStripRightB",
+        "asset_id": "E032",
+        "source_layer": "front_objects",
+        "render_layer": "background",
+        "position": [
+          1290.0,
+          806.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+        "pixel_size": [
+          320,
+          32
+        ],
+        "origin": [
+          160,
+          32
         ],
         "status": "ready",
         "collision": {
@@ -2373,7 +2583,7 @@
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          262.0,
+          243.0,
           480.0
         ],
         "scale": 1.0,
@@ -2415,7 +2625,7 @@
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          1282.0,
+          1300.0,
           480.0
         ],
         "scale": 1.0,
@@ -2457,7 +2667,7 @@
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          262.0,
+          243.0,
           740.0
         ],
         "scale": 1.0,
@@ -2499,7 +2709,7 @@
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
-          1282.0,
+          1300.0,
           740.0
         ],
         "scale": 1.0,
@@ -3684,7 +3894,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           440.0
         ],
         "scale": 0.5,
@@ -3733,7 +3943,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           700.0
         ],
         "scale": 0.5,
@@ -3782,7 +3992,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           700.0
         ],
         "scale": 0.5,
@@ -3880,7 +4090,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           440.0
         ],
         "scale": 0.5,
@@ -3929,7 +4139,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           700.0
         ],
         "scale": 0.5,
@@ -3978,7 +4188,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           700.0
         ],
         "scale": 0.5,
@@ -4125,7 +4335,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           438.0
         ],
         "scale": 0.65,
@@ -4174,7 +4384,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           438.0
         ],
         "scale": 0.65,
@@ -4223,7 +4433,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           416.0
         ],
         "scale": 0.5,
@@ -4314,7 +4524,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           416.0
         ],
         "scale": 0.5,
@@ -4405,7 +4615,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           676.0
         ],
         "scale": 0.5,
@@ -4496,7 +4706,7 @@
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           676.0
         ],
         "scale": 0.5,
@@ -6721,7 +6931,7 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           428.0
         ],
         "scale": 0.5,
@@ -6770,7 +6980,7 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           688.0
         ],
         "scale": 0.5,
@@ -6819,7 +7029,7 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          262.0,
+          243.0,
           688.0
         ],
         "scale": 0.5,
@@ -6917,7 +7127,7 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           428.0
         ],
         "scale": 0.5,
@@ -6966,7 +7176,7 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           688.0
         ],
         "scale": 0.5,
@@ -7015,7 +7225,7 @@
         "source_layer": "front_objects",
         "render_layer": "decorations",
         "position": [
-          1282.0,
+          1300.0,
           688.0
         ],
         "scale": 0.5,
@@ -7960,7 +8170,7 @@
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          262.0,
+          243.0,
           480.0
         ],
         "scale": 1.0,
@@ -7984,7 +8194,7 @@
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          1282.0,
+          1300.0,
           480.0
         ],
         "scale": 1.0,
@@ -8008,7 +8218,7 @@
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          262.0,
+          243.0,
           740.0
         ],
         "scale": 1.0,
@@ -8032,7 +8242,7 @@
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
-          1282.0,
+          1300.0,
           740.0
         ],
         "scale": 1.0,
@@ -8704,7 +8914,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          262.0,
+          243.0,
           440.0
         ],
         "scale": 0.5,
@@ -8728,7 +8938,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          262.0,
+          243.0,
           700.0
         ],
         "scale": 0.5,
@@ -8752,7 +8962,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          262.0,
+          243.0,
           700.0
         ],
         "scale": 0.5,
@@ -8800,7 +9010,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          1282.0,
+          1300.0,
           440.0
         ],
         "scale": 0.5,
@@ -8824,7 +9034,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          1282.0,
+          1300.0,
           700.0
         ],
         "scale": 0.5,
@@ -8848,7 +9058,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          1282.0,
+          1300.0,
           700.0
         ],
         "scale": 0.5,
@@ -8872,7 +9082,7 @@
         "asset_id": "S010",
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
-          262.0,
+          243.0,
           416.0
         ],
         "scale": 0.5,
@@ -8920,7 +9130,7 @@
         "asset_id": "S010",
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
-          1282.0,
+          1300.0,
           416.0
         ],
         "scale": 0.5,
@@ -8968,7 +9178,7 @@
         "asset_id": "S010",
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
-          262.0,
+          243.0,
           676.0
         ],
         "scale": 0.5,
@@ -9016,7 +9226,7 @@
         "asset_id": "S010",
         "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
         "position": [
-          1282.0,
+          1300.0,
           676.0
         ],
         "scale": 0.5,
@@ -9736,7 +9946,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          262.0,
+          243.0,
           428.0
         ],
         "scale": 0.5,
@@ -9760,7 +9970,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          262.0,
+          243.0,
           688.0
         ],
         "scale": 0.5,
@@ -9784,7 +9994,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          262.0,
+          243.0,
           688.0
         ],
         "scale": 0.5,
@@ -9832,7 +10042,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          1282.0,
+          1300.0,
           428.0
         ],
         "scale": 0.5,
@@ -9856,7 +10066,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          1282.0,
+          1300.0,
           688.0
         ],
         "scale": 0.5,
@@ -9880,7 +10090,7 @@
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
-          1282.0,
+          1300.0,
           688.0
         ],
         "scale": 0.5,
@@ -10893,7 +11103,7 @@
     }
   },
   "counts": {
-    "background": 30,
+    "background": 35,
     "ground": 3,
     "walls": 47,
     "decorations": 72,
@@ -10923,8 +11133,10 @@
     "E029",
     "E030",
     "E031",
+    "E032",
     "E033",
     "E034",
+    "E035",
     "E036",
     "E037",
     "E038",

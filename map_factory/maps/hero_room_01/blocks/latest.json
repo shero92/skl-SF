@@ -1,7 +1,7 @@
 {
   "layer_schema_version": 1,
   "five_level_map": {
-    "background": 30,
+    "background": 35,
     "ground": 3,
     "walls": 47,
     "decorations": 72,
@@ -10,14 +10,14 @@
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 18,
+  "version": 19,
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "block_count": 152,
-  "unique_asset_count": 89,
+  "block_count": 157,
+  "unique_asset_count": 91,
   "reused_asset_ids": [
     "A01",
     "A05",
@@ -42,8 +42,10 @@
     "E029",
     "E030",
     "E031",
+    "E032",
     "E033",
     "E034",
+    "E035",
     "E036",
     "E037",
     "E038",
@@ -1700,6 +1702,59 @@
       }
     },
     {
+      "instance_id": "HorizonHaze",
+      "asset_id": "E035",
+      "category": "environment",
+      "subtype": "sky",
+      "texture_path": "res://map_factory/parts/environment/E035_Horizon_Haze_Strip.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        768,
+        20
+      ],
+      "anchor": [
+        384,
+        20
+      ],
+      "layer": "background_objects",
+      "position": [
+        768,
+        88
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "environment",
+        "haze",
+        "horizon",
+        "sky"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/sea_coast/v001/horizon_haze_strip.png",
+        "master_sha256": "e97ffd57edf39c2c89d0531da82b13ec283807baa351595c9b4f5ca1cf44be3c"
+      }
+    },
+    {
       "instance_id": "BedRug",
       "asset_id": "D01",
       "category": "decor",
@@ -3125,7 +3180,7 @@
       ],
       "layer": "back_objects",
       "position": [
-        262,
+        243,
         480
       ],
       "scale": 1.0,
@@ -3178,7 +3233,7 @@
       ],
       "layer": "back_objects",
       "position": [
-        1282,
+        1300,
         480
       ],
       "scale": 1.0,
@@ -3231,7 +3286,7 @@
       ],
       "layer": "back_objects",
       "position": [
-        262,
+        243,
         740
       ],
       "scale": 1.0,
@@ -3284,7 +3339,7 @@
       ],
       "layer": "back_objects",
       "position": [
-        1282,
+        1300,
         740
       ],
       "scale": 1.0,
@@ -10158,6 +10213,218 @@
         "kind": "image_gen_master",
         "master": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_b.png",
         "master_sha256": "9627183ff97e9a31b82b8dc061fa842136cbd3bb35e7609e8445e5dc8f42be41"
+      }
+    },
+    {
+      "instance_id": "FrontEdgeStripLeftA",
+      "asset_id": "E032",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        32
+      ],
+      "anchor": [
+        160,
+        32
+      ],
+      "layer": "front_objects",
+      "position": [
+        450,
+        814
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "edge",
+        "environment",
+        "straight",
+        "terrace"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_straight.png",
+        "master_sha256": "4af62152cc0a0c5448b23f936d21733e5fd0b44879ecf65b1bd573799fe2b310"
+      }
+    },
+    {
+      "instance_id": "FrontEdgeStripLeftB",
+      "asset_id": "E032",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        32
+      ],
+      "anchor": [
+        160,
+        32
+      ],
+      "layer": "front_objects",
+      "position": [
+        740,
+        806
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "edge",
+        "environment",
+        "straight",
+        "terrace"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_straight.png",
+        "master_sha256": "4af62152cc0a0c5448b23f936d21733e5fd0b44879ecf65b1bd573799fe2b310"
+      }
+    },
+    {
+      "instance_id": "FrontEdgeStripRightA",
+      "asset_id": "E032",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        32
+      ],
+      "anchor": [
+        160,
+        32
+      ],
+      "layer": "front_objects",
+      "position": [
+        1050,
+        814
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "edge",
+        "environment",
+        "straight",
+        "terrace"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_straight.png",
+        "master_sha256": "4af62152cc0a0c5448b23f936d21733e5fd0b44879ecf65b1bd573799fe2b310"
+      }
+    },
+    {
+      "instance_id": "FrontEdgeStripRightB",
+      "asset_id": "E032",
+      "category": "environment",
+      "subtype": "cliff",
+      "texture_path": "res://map_factory/parts/environment/E032_Terrace_Edge_Straight.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        320,
+        32
+      ],
+      "anchor": [
+        160,
+        32
+      ],
+      "layer": "front_objects",
+      "position": [
+        1290,
+        806
+      ],
+      "scale": 1.0,
+      "rotation_degrees": 0,
+      "flip_h": false,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "edge",
+        "environment",
+        "straight",
+        "terrace"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/terrace_cliff/v001/terrace_edge_straight.png",
+        "master_sha256": "4af62152cc0a0c5448b23f936d21733e5fd0b44879ecf65b1bd573799fe2b310"
       }
     }
   ],

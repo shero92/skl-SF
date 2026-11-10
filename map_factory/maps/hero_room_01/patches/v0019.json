@@ -1,0 +1,97 @@
+{
+ "manifest_version": 1,
+ "map_id": "hero_room_01",
+ "base_version": 18,
+ "base_sha256": "4d3d6675afdd08655577216ed918bf817cef9b77e4f26e4cc122d7e683bc5023",
+ "note": "hero_room_01 v0019: side wall runs moved outward, terrace edge strips on the front edge and the horizon haze strip (ART-0033/0034 parts). Visual approval pending.",
+ "source_image": {
+  "path": "map_factory/references/hero_room_01_original.png",
+  "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+  "status": "reference_imported"
+ },
+ "changes": [
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_02",
+   "set": {
+    "x": 243
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_00_06",
+   "set": {
+    "x": 243
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_02",
+   "set": {
+    "x": 1300
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "PerimeterWall_16_06",
+   "set": {
+    "x": 1300
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "E032",
+    "instance_id": "FrontEdgeStripLeftA",
+    "x": 450,
+    "y": 814,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "E032",
+    "instance_id": "FrontEdgeStripLeftB",
+    "x": 740,
+    "y": 806,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "E032",
+    "instance_id": "FrontEdgeStripRightA",
+    "x": 1050,
+    "y": 814,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "front_objects",
+   "block": {
+    "id": "E032",
+    "instance_id": "FrontEdgeStripRightB",
+    "x": 1290,
+    "y": 806,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "E035",
+    "instance_id": "HorizonHaze",
+    "x": 768,
+    "y": 88,
+    "scale": 1.0
+   }
+  }
+ ]
+}
