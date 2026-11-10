@@ -15,6 +15,14 @@ import golden_cyclone_assets as assets
 from battle_godot_harness import run_godot
 
 
+def _configured_godot_exists() -> bool:
+    try:
+        path = json.loads((Path(__file__).resolve().parents[2] / ".agents/planner/config.json").read_text(encoding="utf-8")).get("godot_executable")
+    except (OSError, ValueError):
+        return False
+    return isinstance(path, str) and Path(path).is_file()
+
+
 class ExportContracts(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -106,6 +114,8 @@ class ExportContracts(unittest.TestCase):
 
 
 class PreviewContracts(unittest.TestCase):
+    # Python-only CI has no Godot at the owner's path; runs wherever it is installed.
+    @unittest.skipUnless(_configured_godot_exists(), "configured godot_executable is not installed here")
     def test_headless_candidate_preview(self):
         code, output = run_godot("res://tools/verify_golden_cyclone_preview.gd", timeout=90)
         self.assertEqual(code, 0, output)
