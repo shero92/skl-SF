@@ -1,5 +1,5 @@
 {
-  "task_id": "TASK-0135",
+  "task_id": "TASK-0030",
   "batch": "B1",
   "destination": "H:\\shining force\\skl-SF",
   "cache_required": false,
@@ -66,7 +66,7 @@
     },
     {
       "path": "game_factory/environment/batch_B1_20261110/prepare_review.py",
-      "sha256": "c267ce6bd9e77a96f5e33c9aafe53c5d21c155b86688f042b145a65f0bde0f52"
+      "sha256": "c4a706afd992ebea4d2cdc87b82623d9a3f10d3d600d93ff5d8f160802ac126f"
     },
     {
       "path": "game_factory/environment/batch_B1_20261110/production_spec.json",
@@ -82,11 +82,11 @@
     },
     {
       "path": "game_factory/environment/batch_B1_20261110/technical_qa.json",
-      "sha256": "6b1424f80c8419c10c8c69185d1f9d7a1fb800a1340f02472b5c1cb630c83ad9"
+      "sha256": "4770cd34080c53069339d44895a5bdaeb64ec104b5d2d9e68fc6456a119576a1"
     },
     {
       "path": "game_factory/environment/batch_B1_20261110/verification.json",
-      "sha256": "8c6b06166374baae1168bb2a1dbd1446f34d587f3fd813b111f5ac7c167341db"
+      "sha256": "37c84a7409b0e71f19a2cf624ff6fb728a97035e86da8d3987d5551380432e17"
     },
     {
       "path": "game_factory/environment/ART-0019/v001/.gdignore",
@@ -98,11 +98,11 @@
     },
     {
       "path": "game_factory/environment/ART-0019/v001/godot_review_receipt.json",
-      "sha256": "550dee473c3595b1482a044f0147fdc2e59837386c46d7d539f5a91aaaaa84ad"
+      "sha256": "e2a77e8b42efe4644597b49717b7c6563aa5571791141941223e065d281cdd94"
     },
     {
       "path": "game_factory/environment/ART-0019/v001/manifest.json",
-      "sha256": "20cf11ad2b995a42b74da766239d35013c76c83bb7ee5792b97a73bc85bacd42"
+      "sha256": "d0ad1462bf652ce3e3a18f26cf6d2474c05ed5ad4392197907f387556c7aedba"
     },
     {
       "path": "game_factory/environment/ART-0019/v001/native_review/hero_study_table_east.png",
@@ -154,11 +154,11 @@
     },
     {
       "path": "game_factory/environment/ART-0039/v001/godot_review_receipt.json",
-      "sha256": "5530ecbb19a2301c2cd60a5c681e69dce2849211f659d34947395a5e8aaa683f"
+      "sha256": "828424e2f4514aa27cc1bb1f13ff8e9b8f16d9019712fde09029b5b702e1720d"
     },
     {
       "path": "game_factory/environment/ART-0039/v001/manifest.json",
-      "sha256": "6fca773c978b54a1299b2dae94c5bbcfe95d28f5c4b7c3d5b088bbc934927919"
+      "sha256": "34b85e38c9917b5e6ad02a14250bbdf033d36a337993cd9c26f2c2ebb1f5beeb"
     },
     {
       "path": "game_factory/environment/ART-0039/v001/native_review/study_wooden_stool.png",
@@ -182,11 +182,11 @@
     },
     {
       "path": "game_factory/environment/ART-0011/v001/godot_review_receipt.json",
-      "sha256": "048fb32dbf79675e4f07dec78f28392da54c809edb62570f530883a8c7f50171"
+      "sha256": "ee4180699cf6ea9e7d94fc36af187b6482cf52ec52af131ee5c2766896f3c3e8"
     },
     {
       "path": "game_factory/environment/ART-0011/v001/manifest.json",
-      "sha256": "a21ee641c1661f265807c4712ae1cdc7e0ad9e11f01fb6d88678f02cd34ce26f"
+      "sha256": "8cb32ef30fa18d85512e212339af7c3d2b0804d0b00135e0c82ea406ca018ac9"
     },
     {
       "path": "game_factory/environment/ART-0011/v001/native_review/hero_blue_white_planter.png",
@@ -214,7 +214,7 @@
     },
     {
       "path": "game_factory/environment/ART-0025/v001/godot_review_receipt.json",
-      "sha256": "79b1df4e55310bec2ae3a5c858924cea137e89014bb2aa396fd7c6d7a9dd5791"
+      "sha256": "18e5fd183954db83c0907d1ec5768ed60c4fe5b8e4f4fef5a53c86e53f33a84b"
     },
     {
       "path": "game_factory/environment/ART-0025/v001/history.md",
@@ -222,7 +222,7 @@
     },
     {
       "path": "game_factory/environment/ART-0025/v001/manifest.json",
-      "sha256": "7cf1c09a0f6fe902b5c0c5f06284075fcd89444e0eb8cb004b8420757fdc6d89"
+      "sha256": "8d5fdacf601a05fafdf4bfa73d4071614a9aad91bd8cecd263d6c8521b2a0816"
     },
     {
       "path": "game_factory/environment/ART-0025/v001/native_review/hero_entrance_stairs_south.png",

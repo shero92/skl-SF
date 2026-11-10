@@ -6,7 +6,7 @@
 		1024
 	],
 	"engine": "4.7.2-stable (official)",
-	"manifest_sha256": "a21ee641c1661f265807c4712ae1cdc7e0ad9e11f01fb6d88678f02cd34ce26f",
+	"manifest_sha256": "8cb32ef30fa18d85512e212339af7c3d2b0804d0b00135e0c82ea406ca018ac9",
 	"owner_approved": false,
 	"render_sha256": "8f4bb64d6908c69c3ded68051948241c758b01c07ae8ab6ddff60f668f59690c",
 	"review_script_sha256": "e6bbf859324e412ea01f5bcc23f807f43968acc4df14dc82a7fa54f66fb907be",

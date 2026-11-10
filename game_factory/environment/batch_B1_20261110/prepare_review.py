@@ -83,7 +83,7 @@ for art, items in groups.items():
             im = Image.open(p)
             rejected.append(dict(path=p.relative_to(ROOT).as_posix(), sha256=SHA(p), pixel_size=list(im.size),
                 reason='Nonzero pale backdrop alpha and missing transparent cutout' if art=='ART-0019' else 'Leaf tips too near left boundary; reframed by separate edit request', quality_status='needs_regeneration'))
-    manifest = dict(schema_version=1, request_id=art, task_id='TASK-0135', batch='B1', agent='codex',
+    manifest = dict(schema_version=1, request_id=art, task_id='TASK-0030', batch='B1', agent='codex',
         tool='built-in image_gen', model='unknown', reference_path=target, reference_sha256=SHA(ROOT/target),
         reference_use='style/composition only; no crop/paste/trace', source_count=len(items),
         generation_cache_required=False, owner_approved=False, production_active=False, quality_status='needs_review',
@@ -110,7 +110,7 @@ for art, items in groups.items():
     lines += ['', 'لكل مصدر نسبة تفاصيل أكبر من 4x لحجم Canvas المقترح، لكن بعض الأبعاد المطلقة أقل من حد المواصفة. لم يُخفَ ذلك بتكبير المصدر. يلزم قرار المالك أو إعادة توليد بدقة أعلى قبل إعلان استيفاء المواصفة بالكامل.', '', 'التقاط Godot: godot_native_review.png وإيصال godot_review_receipt.json بعد تشغيل سكربت المعاينة المسجل. الأشكال على لوح مراجعة فقط؛ لم تتغير أي خريطة.']
     (review/'README.md').write_text('\n'.join(lines)+'\n', encoding='utf-8', newline='\n')
 
-summary = dict(task_id='TASK-0135', batch='B1', independent_masters=len(specs), rejected_attempts=2,
+summary = dict(task_id='TASK-0030', batch='B1', independent_masters=len(specs), rejected_attempts=2,
     all_rgba=True, all_real_alpha=True, all_visible_bounds_inside=True, all_over_4x=True,
     unique_master_hashes=len({i['sha256'] for items in groups.values() for i in items}),
     exact_master_minimum_met=False, owner_approved=False,

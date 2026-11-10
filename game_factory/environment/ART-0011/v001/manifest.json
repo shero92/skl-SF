@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "request_id": "ART-0011",
-  "task_id": "TASK-0135",
+  "task_id": "TASK-0030",
   "batch": "B1",
   "agent": "codex",
   "tool": "built-in image_gen",
