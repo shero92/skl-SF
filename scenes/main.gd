@@ -12,12 +12,7 @@ func _ready() -> void:
     # Always render the newest Map Factory version through the registry.
     var factory := RoomFactory.new()
     var room := factory.build_latest(MAP_ID, self)
-    if not room.has_node("Entities"):
-        var entities := Node2D.new()
-        entities.name = "Entities"
-        entities.y_sort_enabled = true
-        entities.z_index = 35
-        room.add_child(entities)
+    var entities := RoomFactory.entities_parent(room)
     var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(GAMEPLAY_PATH))
     if typeof(data) != TYPE_DICTIONARY:
         push_error("Cannot load room interactions")
@@ -26,7 +21,7 @@ func _ready() -> void:
     player = HeroPlayer.new()
     player.name = "Hero"
     player.position = Vector2(float(spawn[0]), float(spawn[1]))
-    room.get_node("Entities").add_child(player)
+    entities.add_child(player)
     if room.has_meta("navigation"):
         player.navigation = NavigationGrid.from_navigation(room.get_meta("navigation"), room.global_position)
         if player.navigation != null and not player.navigation.footprint_open(player.position):
@@ -36,7 +31,7 @@ func _ready() -> void:
     companion.name = "CrystalCompanion"
     companion.position = player.position + Vector2(55, 30)
     companion.follow_target = player
-    room.get_node("Entities").add_child(companion)
+    entities.add_child(companion)
 
     var camera := Camera2D.new()
     camera.position = Vector2(768, 512)
@@ -59,7 +54,7 @@ func _ready() -> void:
         npc.facing = String(info.get("facing", "down"))
         npc.sprite_scale = float(info.get("scale", 0.8))
         npc.position = Vector2(float(info.get("x", 0)), float(info.get("y", 0)))
-        room.get_node("Entities").add_child(npc)
+        entities.add_child(npc)
         interactions.append({
             "x": info.get("x", 0), "y": info.get("y", 0),
             "radius": info.get("radius", 100),

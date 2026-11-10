@@ -92,6 +92,25 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     _place_effects(data.get("effects", []), root, projection_y)
     return root
 
+## Parent for characters and NPCs. Unified-sort maps (occlusion_mode world_y_sort) put them inside
+## WorldDepthSort at the same effective z as walls and decor, so only the contact Y orders them (in front
+## of and behind furniture and walls). Other maps keep the legacy fixed layer between walls and decor.
+static func entities_parent(room: Node2D) -> Node2D:
+    var existing := room.find_child("Entities", true, false) as Node2D
+    if existing != null:
+        return existing
+    var entities := Node2D.new()
+    entities.name = "Entities"
+    entities.y_sort_enabled = true
+    var depth := room.get_node_or_null("WorldDepthSort") as Node2D
+    if depth != null:
+        depth.add_child(entities)
+    else:
+        entities.z_index = 35
+        room.add_child(entities)
+    return entities
+
+
 func _build_five_levels(data: Dictionary, stack: Dictionary, root: Node2D) -> void:
     var passes: Dictionary = stack.get("passes", {})
     var projection_y := float(data.get("projection_y", 1.0))
