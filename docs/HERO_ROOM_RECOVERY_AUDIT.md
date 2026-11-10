@@ -45,3 +45,5 @@ Existing Claude API-equivalent receipt estimates: TASK-0008 $0.397005; TASK-0034
 
 ## Explicit blockers
 Owner/specialist must authenticate the source and supply reviewed calibration/delivery records. No production asset is promoted or map rewritten by this audit. New milestones are stored as a draft proposed_revision in goals.json; existing source keys are retained.
+
+**Update 2026-11-10:** `world_y_sort` is used by hero_room_01 since v0021 and characters sort with walls and decor (TASK-0128); navigation drives player movement (TASK-0127). See [RUNTIME_INTEGRATION.md](RUNTIME_INTEGRATION.md).

@@ -65,3 +65,5 @@ Creates the WorldDepthSort node with y-sorted wall and prop containers at shared
 Current Hero Room v0010 has ZERO facing assignments and no four-direction variant sets for its architecture. It is not artistically 360-degree ready even though the Factory NOW implements both rendering modes. Generating 4-view art belongs to Map Creator, not the rendering factory.
 
 See docs/MAP_FACTORY_REFERENCE_DIAGNOSIS.md for why the user screenshot still differs from the reference.
+
+**Note (2026-11-10):** hero_room_01 uses `world_y_sort` since v0021. Characters are added to `WorldDepthSort` by `RoomFactory.entities_parent(room)` so they sort with walls and decor by contact Y; maps without it keep the legacy z 35 character layer.

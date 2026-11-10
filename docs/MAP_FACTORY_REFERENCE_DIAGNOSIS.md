@@ -34,3 +34,5 @@ Inputs supplied by user in conversation: factory build screenshot 1536 x 1024 an
 - Tune contact/long sunlight shadows using the actual reference. Compare a real Godot screenshot against it and fix the largest deviations before approving quality.
 
 Status: technical block rotation delivered, but visual reference matching and complete collision/navigation are not finished. Character assets, gameplay scripts, NPCs, UI and dialogue were not changed.
+
+**Update 2026-11-10:** the fixed z30/z40 ordering described here is replaced on hero_room_01 by `world_y_sort` (v0021) and characters join it; navigation now drives movement. See [RUNTIME_INTEGRATION.md](RUNTIME_INTEGRATION.md).
