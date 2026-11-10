@@ -1,0 +1,189 @@
+{
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "effects": [
+    {
+      "id": "golden_spinning_arc_001",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_spinning_arc_001.png",
+      "space": "weapon_socket",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "sha256": "f7995b5e679ebacb2cd7cfb9176d140378f4a3ee26bbbab43bb72a42f6cfcc43",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        40,
+        68,
+        1237,
+        1119
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "quality_status": "needs_review",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/golden_spinning_arc_001.txt",
+      "source_generation_mode": "individual_request",
+      "review_scale": 0.19
+    },
+    {
+      "id": "golden_energy_ring_001",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_energy_ring_001.png",
+      "space": "world_ground",
+      "canvas_size": [
+        1774,
+        887
+      ],
+      "sha256": "cb9a56fc1d54f7f643e60e8b6baeb3beb0bf2c54b229877a6948c8eec2b3766f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        134,
+        263,
+        1640,
+        617
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "quality_status": "needs_review",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/golden_energy_ring_001.txt",
+      "source_generation_mode": "individual_request",
+      "review_scale": 0.18
+    },
+    {
+      "id": "golden_motion_trail_001",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_motion_trail_001.png",
+      "space": "weapon_socket",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "sha256": "75a1e6a7761fb7439998134a299afd88a5e174b6b352c7d963dd067932d14f1f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        41,
+        188,
+        1227,
+        1058
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "quality_status": "needs_review",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/golden_motion_trail_001.txt",
+      "source_generation_mode": "individual_request",
+      "review_scale": 0.14
+    },
+    {
+      "id": "golden_impact_sparks_001",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_impact_sparks_001.png",
+      "space": "world_contact",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "sha256": "a5f03c96cbbbf8510424aa219aaa2a5ab9665489ea546aedc9665bc1953eff99",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        264,
+        168,
+        1145,
+        947
+      ],
+      "anchor_normalized": [
+        0.4585326953748006,
+        0.5933014354066986
+      ],
+      "anchor_source_pixels": [
+        575,
+        744
+      ],
+      "anchor_method": "manual_source_review: observed spark origin",
+      "quality_status": "needs_review",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/golden_impact_sparks_001.txt",
+      "source_generation_mode": "individual_request",
+      "review_scale": 0.11
+    },
+    {
+      "id": "golden_final_flash_001",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/golden_final_flash_001.png",
+      "space": "world_contact",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "sha256": "74140ea302baf5f7acac6f12bb7b529c74b202f8eb3edf04af77265407dc67ce",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        124,
+        108,
+        1137,
+        1126
+      ],
+      "anchor_normalized": [
+        0.4904306220095694,
+        0.518341307814992
+      ],
+      "anchor_source_pixels": [
+        615,
+        650
+      ],
+      "anchor_method": "manual_source_review: observed flash origin",
+      "quality_status": "needs_review",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/golden_final_flash_001.txt",
+      "source_generation_mode": "individual_request",
+      "review_scale": 0.1
+    },
+    {
+      "id": "cyclone_ground_dust_001",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/vfx/cyclone_ground_dust_001.png",
+      "space": "world_ground",
+      "canvas_size": [
+        1254,
+        1254
+      ],
+      "sha256": "a2ee17ebbfd2b38115b2c0d8bd3d4c11a8e26d356f7c0d33b493ff648959c44b",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        46,
+        331,
+        1200,
+        943
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.7
+      ],
+      "anchor_source_pixels": [
+        627,
+        878
+      ],
+      "anchor_method": "manual_source_review: base of low crescent puff",
+      "quality_status": "needs_review",
+      "generation_request_path": "game_factory/golden_cyclone/v001/requests/cyclone_ground_dust_001.txt",
+      "source_generation_mode": "individual_request",
+      "review_scale": 0.13
+    }
+  ]
+}

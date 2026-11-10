@@ -3,6 +3,13 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "golden_cyclone_assets",
+      "kind": "python",
+      "covers": "Individual Hero source provenance, immutable masters, measured sockets, atlas/GIF timing and candidate-only Godot playback with both swords.",
+      "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_golden_cyclone_assets.py"],
+      "paths": ["tools/golden_cyclone_assets.py", "tools/tests/test_golden_cyclone_assets.py", "tools/verify_golden_cyclone_preview.gd", "scenes/battle/golden_cyclone_preview.*", "scenes/battle/battle_animation_controller.gd", "game_factory/golden_cyclone/**", "assets/characters/hero/battle/golden_cyclone/**"]
+    },
+    {
       "id": "hero_room_capture_evidence",
       "kind": "python",
       "covers": "Real Godot capture evidence validation, invalid versions, missing PNGs, provenance, immutable output and environment source guards.",

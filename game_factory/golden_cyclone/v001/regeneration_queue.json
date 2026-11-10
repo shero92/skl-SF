@@ -4,7 +4,7 @@
   "policy": "docs/GRAPHICS_PRODUCTION_POLICY.md",
   "scope": "فقط إطارات Phantom Dash المفقودة كمصادر مستقلة؛ لا إعادة توليد للمراجع أو إطارات TASK-0070 المستقلة دون عيب مثبت.",
   "rejected_source": {
-    "path": "H:/shining force/skl-SF/.worktrees/TASK-0072-hero-attack-art/game_factory/hero_attack_style/v001/phantom_dash_body_source.png",
+    "path": "assets/characters/hero/battle/golden_cyclone/v001/rejected_sources/phantom_dash_multi_pose_rejected.png",
     "sha256": "3784bdc287f928981eaf17d26565bf4ec81b82c36e413cbc6bcb27d9e8599da3",
     "status": "needs_regeneration",
     "reason": "مصدر متعدد الوضعيات 1254×1254؛ كل وضعية محدودة بخلايا نحو 313px مع تجاوزات حدود؛ لا توجد PNGs مستقلة مشتقة منه."

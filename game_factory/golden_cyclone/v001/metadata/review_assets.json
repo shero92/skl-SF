@@ -1,0 +1,838 @@
+{
+  "attack_id": "golden_cyclone",
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "source_validation": {
+    "verified_source_count": 22,
+    "unique_hashes": 22,
+    "art_approval": "not_granted_by_technical_validation"
+  },
+  "uniform_source_scale": 0.22,
+  "canvas_size": [
+    384,
+    384
+  ],
+  "ground_anchor": [
+    192,
+    352
+  ],
+  "frames": [
+    {
+      "frame_id": "hero_golden_cyclone_001",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_001.png",
+      "sha256": "8a886da9f2beee8c4d231085b7e60e320572cfa366d32b270789817a482ad86b",
+      "duration_ms": 100,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        282.6,
+        229.5
+      ],
+      "source_offset": [
+        56,
+        92
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_002",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_002.png",
+      "sha256": "de561998f1775a6b0ed108b5a282ace40b5270e4b490433d8734a62d9ab737e7",
+      "duration_ms": 80,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        225.0,
+        220.4
+      ],
+      "source_offset": [
+        49,
+        95
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_003",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_003.png",
+      "sha256": "80a5d376e0ad9eb89b050dcdc974e1e137cd1c0567db78e1946824bc798715a1",
+      "duration_ms": 70,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        151.3,
+        222.6
+      ],
+      "source_offset": [
+        49,
+        95
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_004",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_004.png",
+      "sha256": "8af8bb547d6056646df69d3256a00590c8e7fc97d5737d00d100fc280a504b06",
+      "duration_ms": 90,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        219.1,
+        223.3
+      ],
+      "source_offset": [
+        42,
+        99
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_005",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_005.png",
+      "sha256": "91b4ebf917b412f2d3a7cfa2cf1e9750099425f4570892fc4e084955ab9d688a",
+      "duration_ms": 65,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        301.8,
+        218.3
+      ],
+      "source_offset": [
+        40,
+        94
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_006",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_006.png",
+      "sha256": "f643f9390c1cd9e195bf0561918029dd4bedd2d81312f3b89fc3d9b971f3dd5e",
+      "duration_ms": 55,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        315.2,
+        218.6
+      ],
+      "source_offset": [
+        49,
+        91
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_007",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_007.png",
+      "sha256": "12a6251d993656dd177fa0a0f60b0efdc342ad1d67dad82ea43beece0f6fd42a",
+      "duration_ms": 50,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        208.5,
+        230.6
+      ],
+      "source_offset": [
+        49,
+        92
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_008",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_008.png",
+      "sha256": "7c02010dcc8c7e92ef10f66ed145fa4e69e3eb201c565cc72e1efb0f363a4ec0",
+      "duration_ms": 50,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        199.3,
+        225.4
+      ],
+      "source_offset": [
+        53,
+        89
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_009",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_009.png",
+      "sha256": "4125f2674bdcbbb05a8f7196ae19becd4910211788bc0ec771995c8418d36c78",
+      "duration_ms": 45,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        90.8,
+        203.0
+      ],
+      "source_offset": [
+        27,
+        104
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_010",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_010.png",
+      "sha256": "3f45acd5d36f9e5f2a4a973928f54e0fa00e5b7fa6c86055b92fc0d42f8dc9a4",
+      "duration_ms": 45,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        103.7,
+        220.0
+      ],
+      "source_offset": [
+        52,
+        99
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_011",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_011.png",
+      "sha256": "bcf27b53c12673d11d0aa17bb08f2581217e72954bed56349b8e42f9275ca4d6",
+      "duration_ms": 45,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        94.7,
+        220.0
+      ],
+      "source_offset": [
+        54,
+        99
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_012",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_012.png",
+      "sha256": "921e577e14e5837f267e89b496dddd5cb047b42f676a83f4ccce4d0dfef60cd5",
+      "duration_ms": 45,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        281.0,
+        213.5
+      ],
+      "source_offset": [
+        50,
+        98
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_013",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_013.png",
+      "sha256": "98a683315530fe816025aeaedcc9f224623d42aad4382a9a8137dd1af20856d3",
+      "duration_ms": 45,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        260.2,
+        224.7
+      ],
+      "source_offset": [
+        49,
+        96
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_014",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_014.png",
+      "sha256": "26caf04dad94c7f37879160d1cf3a13f4853a8435213b74e6c24275b28b02c1b",
+      "duration_ms": 45,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        204.5,
+        126.1
+      ],
+      "source_offset": [
+        45,
+        92
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_015",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_015.png",
+      "sha256": "e68391a65c9730e333d28dfbd5b53c6472f6de60c7d08cac17ada5a3bd3f590e",
+      "duration_ms": 55,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        198.8,
+        126.2
+      ],
+      "source_offset": [
+        47,
+        91
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_016",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_016.png",
+      "sha256": "97c1b6a41d9df1c7e229a4d26e5f096568ab4842f2783e24a31792eb48516b31",
+      "duration_ms": 45,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        138.5,
+        103.1
+      ],
+      "source_offset": [
+        45,
+        91
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_017",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_017.png",
+      "sha256": "5e19b04e1a938368f9ed8a263a4433fbcedcd0e75567b5f67356e50d07206cf4",
+      "duration_ms": 80,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        62.5,
+        152.5
+      ],
+      "source_offset": [
+        46,
+        92
+      ],
+      "source_scale": 0.22,
+      "hit": true,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_018",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_018.png",
+      "sha256": "bd22480d40226d32b4f5eb02b80a7714e01ff670eb80d31b49b0b5cbc78d3733",
+      "duration_ms": 70,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        117.4,
+        218.6
+      ],
+      "source_offset": [
+        47,
+        91
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Attack"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_019",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_019.png",
+      "sha256": "2629900103e6b60848ecbf09ec697c0ec0d885df280619f2dc1469881b80bd4d",
+      "duration_ms": 90,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        204.1,
+        224.1
+      ],
+      "source_offset": [
+        49,
+        91
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Recovery"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_020",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_020.png",
+      "sha256": "14e010bcc76823a78cabf2afe705fa770c3be109a4e40e18328159b38cdba979",
+      "duration_ms": 100,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        199.3,
+        219.6
+      ],
+      "source_offset": [
+        42,
+        92
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Recovery"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_021",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_021.png",
+      "sha256": "e30ef2cb338ea6c426ce9ddefd68b3f0574ba8fdd027f797338be161322ed1c6",
+      "duration_ms": 110,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        220.6,
+        220.7
+      ],
+      "source_offset": [
+        60,
+        92
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Recovery"
+    },
+    {
+      "frame_id": "hero_golden_cyclone_022",
+      "path": "assets/characters/hero/battle/golden_cyclone/v001/game_frames/hero_golden_cyclone_022.png",
+      "sha256": "2af1213ae93497579f9ff7469c6b68d636fc963b10111d8e3cfac2d37321eeb9",
+      "duration_ms": 120,
+      "ground_anchor": [
+        192,
+        352
+      ],
+      "hand_anchor": [
+        282.6,
+        229.5
+      ],
+      "source_offset": [
+        56,
+        92
+      ],
+      "source_scale": 0.22,
+      "hit": false,
+      "phase": "Recovery"
+    }
+  ],
+  "weapon_attachment_data": {
+    "frames": {
+      "golden_cyclone:0": {
+        "hand_anchor_x": 282.6,
+        "hand_anchor_y": 229.5,
+        "hand_rotation_degrees": 135,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          279,
+          226,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:1": {
+        "hand_anchor_x": 225.0,
+        "hand_anchor_y": 220.4,
+        "hand_rotation_degrees": 125,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "behind",
+        "hand_occlusion_rect": [
+          221,
+          216,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:2": {
+        "hand_anchor_x": 151.3,
+        "hand_anchor_y": 222.6,
+        "hand_rotation_degrees": 110,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "behind",
+        "hand_occlusion_rect": [
+          147,
+          219,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:3": {
+        "hand_anchor_x": 219.1,
+        "hand_anchor_y": 223.3,
+        "hand_rotation_degrees": 90,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "behind",
+        "hand_occlusion_rect": [
+          215,
+          219,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:4": {
+        "hand_anchor_x": 301.8,
+        "hand_anchor_y": 218.3,
+        "hand_rotation_degrees": 60,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          298,
+          214,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:5": {
+        "hand_anchor_x": 315.2,
+        "hand_anchor_y": 218.6,
+        "hand_rotation_degrees": 20,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          311,
+          215,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:6": {
+        "hand_anchor_x": 208.5,
+        "hand_anchor_y": 230.6,
+        "hand_rotation_degrees": -30,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          204,
+          227,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:7": {
+        "hand_anchor_x": 199.3,
+        "hand_anchor_y": 225.4,
+        "hand_rotation_degrees": -70,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          195,
+          221,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:8": {
+        "hand_anchor_x": 90.8,
+        "hand_anchor_y": 203.0,
+        "hand_rotation_degrees": -110,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          87,
+          199,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:9": {
+        "hand_anchor_x": 103.7,
+        "hand_anchor_y": 220.0,
+        "hand_rotation_degrees": -150,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          100,
+          216,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:10": {
+        "hand_anchor_x": 94.7,
+        "hand_anchor_y": 220.0,
+        "hand_rotation_degrees": -200,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          91,
+          216,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:11": {
+        "hand_anchor_x": 281.0,
+        "hand_anchor_y": 213.5,
+        "hand_rotation_degrees": -245,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "behind",
+        "hand_occlusion_rect": [
+          277,
+          210,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:12": {
+        "hand_anchor_x": 260.2,
+        "hand_anchor_y": 224.7,
+        "hand_rotation_degrees": -270,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "behind",
+        "hand_occlusion_rect": [
+          256,
+          221,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:13": {
+        "hand_anchor_x": 204.5,
+        "hand_anchor_y": 126.1,
+        "hand_rotation_degrees": 20,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "behind",
+        "hand_occlusion_rect": [
+          200,
+          122,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:14": {
+        "hand_anchor_x": 198.8,
+        "hand_anchor_y": 126.2,
+        "hand_rotation_degrees": 0,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "behind",
+        "hand_occlusion_rect": [
+          195,
+          122,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:15": {
+        "hand_anchor_x": 138.5,
+        "hand_anchor_y": 103.1,
+        "hand_rotation_degrees": -35,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          134,
+          99,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:16": {
+        "hand_anchor_x": 62.5,
+        "hand_anchor_y": 152.5,
+        "hand_rotation_degrees": -65,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          58,
+          148,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:17": {
+        "hand_anchor_x": 117.4,
+        "hand_anchor_y": 218.6,
+        "hand_rotation_degrees": -145,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "behind",
+        "hand_occlusion_rect": [
+          113,
+          215,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:18": {
+        "hand_anchor_x": 204.1,
+        "hand_anchor_y": 224.1,
+        "hand_rotation_degrees": 135,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          200,
+          220,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:19": {
+        "hand_anchor_x": 199.3,
+        "hand_anchor_y": 219.6,
+        "hand_rotation_degrees": 135,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          195,
+          216,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:20": {
+        "hand_anchor_x": 220.6,
+        "hand_anchor_y": 220.7,
+        "hand_rotation_degrees": 135,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          217,
+          217,
+          8,
+          8
+        ]
+      },
+      "golden_cyclone:21": {
+        "hand_anchor_x": 282.6,
+        "hand_anchor_y": 229.5,
+        "hand_rotation_degrees": 135,
+        "weapon_scale": 0.9,
+        "weapon_render_order": "front",
+        "hand_occlusion_rect": [
+          279,
+          226,
+          8,
+          8
+        ]
+      }
+    }
+  },
+  "body_review_gif": {
+    "path": "H:/shining force/skl-SF/.worktrees/TASK-0074-resume/game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_body_review.gif",
+    "frames": 22,
+    "duration_ms": 1850,
+    "requested_duration_ms": 1850,
+    "quantized_frame_durations_ms": [
+      100,
+      80,
+      70,
+      90,
+      70,
+      50,
+      50,
+      50,
+      50,
+      40,
+      50,
+      40,
+      50,
+      40,
+      60,
+      40,
+      80,
+      70,
+      90,
+      100,
+      110,
+      470
+    ]
+  },
+  "body_slow_gif": {
+    "path": "H:/shining force/skl-SF/.worktrees/TASK-0074-resume/game_factory/golden_cyclone/v001/previews/hero_golden_cyclone_body_slow.gif",
+    "frames": 22,
+    "duration_ms": 7400,
+    "requested_duration_ms": 7400,
+    "quantized_frame_durations_ms": [
+      400,
+      320,
+      280,
+      360,
+      260,
+      220,
+      200,
+      200,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      220,
+      180,
+      320,
+      280,
+      360,
+      400,
+      440,
+      1880
+    ]
+  },
+  "duration_ms": 1500,
+  "impact_ms": 930,
+  "hitstop_ms": 70,
+  "hitstop_included": true,
+  "production_activation": false
+}

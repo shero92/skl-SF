@@ -1,0 +1,531 @@
+{
+  "weapons": {
+    "weapons": {
+      "WPN_HERO_BASIC_SWORD": {
+        "asset_id": "WPN_HERO_BASIC_SWORD",
+        "category": "swords",
+        "texture_path": "res://assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/wpn_hero_basic_sword_v001.png",
+        "pixel_dimensions": [
+          128,
+          192
+        ],
+        "grip_pivot": [
+          63.816,
+          158.166
+        ],
+        "blade_axis": "negative_y",
+        "display_scale": 0.9,
+        "compatible_profiles": [
+          "sword"
+        ],
+        "status": "approved",
+        "approval_status": "approved",
+        "sha256": "a49bd079bba18671abb8f8ab0fcec3fcb273785bd26f0989e8610e06b66b8a48",
+        "source_png": "assets/weapons/swords/sources/wpn_hero_basic_sword_v001__source.png",
+        "source_sha256": "7c7629263d2a2095cabdf3d93364568a3fc760b65bb3e95b03312758ad77118e",
+        "grip_source": [
+          512.0,
+          1260.0
+        ],
+        "grip_annotation": "manual visual source measurement",
+        "layer": "equipment",
+        "anchor": [
+          63.816,
+          158.166
+        ],
+        "normalization": {
+          "scale": 0.1272595806218366,
+          "source_bbox": [
+            317,
+            80,
+            706,
+            1463
+          ],
+          "paste_position": [
+            39,
+            8
+          ]
+        },
+        "owner_approval": {
+          "approved_by": "owner",
+          "approved_on": "2026-11-02",
+          "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+        },
+        "review_blade_tip": [
+          63.5,
+          8
+        ]
+      },
+      "WPN_IRON_SWORD": {
+        "asset_id": "WPN_IRON_SWORD",
+        "category": "swords",
+        "texture_path": "res://assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/wpn_iron_sword_v001.png",
+        "pixel_dimensions": [
+          128,
+          192
+        ],
+        "grip_pivot": [
+          63.262,
+          159.147
+        ],
+        "blade_axis": "negative_y",
+        "display_scale": 0.9,
+        "compatible_profiles": [
+          "sword"
+        ],
+        "status": "approved",
+        "approval_status": "approved",
+        "sha256": "8ca6058fefcecb3f584d64d03daae1e7cd35e9366d63b56dd6b905d3930caae4",
+        "source_png": "assets/weapons/swords/sources/wpn_iron_sword_v001__source.png",
+        "source_sha256": "7bbef6c4161c52fdd06c8a6635f27b91b307c1a563d7f1c0a3e4b2c0a873e694",
+        "grip_source": [
+          512.0,
+          1280.0
+        ],
+        "grip_annotation": "manual visual source measurement",
+        "layer": "equipment",
+        "anchor": [
+          63.262,
+          159.147
+        ],
+        "normalization": {
+          "scale": 0.12680115273775217,
+          "source_bbox": [
+            297,
+            88,
+            732,
+            1476
+          ],
+          "paste_position": [
+            36,
+            8
+          ]
+        },
+        "owner_approval": {
+          "approved_by": "owner",
+          "approved_on": "2026-11-02",
+          "scope": "existing local character/weapon image, owner decision in chat; technical validation passed before approval"
+        },
+        "review_blade_tip": [
+          63.0,
+          8
+        ]
+      }
+    }
+  },
+  "background": {
+    "sky": "res://assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/sky.png",
+    "cliff": "res://assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/cliff.png",
+    "cloud": "res://assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/cloud.png",
+    "floor": "res://assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/floor.png"
+  },
+  "sources": [
+    {
+      "source": "assets/weapons/swords/wpn_hero_basic_sword_v001.png",
+      "copy": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/wpn_hero_basic_sword_v001.png",
+      "sha256": "a49bd079bba18671abb8f8ab0fcec3fcb273785bd26f0989e8610e06b66b8a48"
+    },
+    {
+      "source": "assets/weapons/swords/wpn_iron_sword_v001.png",
+      "copy": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/wpn_iron_sword_v001.png",
+      "sha256": "8ca6058fefcecb3f584d64d03daae1e7cd35e9366d63b56dd6b905d3930caae4"
+    },
+    {
+      "source": "assets/characters/hero/battle/weaponless_v2/hero_battle_idle_ready_01__weaponless_v2.png",
+      "copy": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/existing_hero_target.png",
+      "sha256": "35a03a2bb896f79a0985f4e17dd1cd0d1e65f34b5aea208972ec7eefadcaac2a"
+    },
+    {
+      "source": "assets_generated/background/B10__background__clear_sky_gradient_segment__default__4x4__256x256.png",
+      "copy": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/sky.png",
+      "sha256": "108ee1f0ff346a98142d79eea36dd185bcbdfd63ce6a55a801c632d52c649fad"
+    },
+    {
+      "source": "assets_generated/background/B04__background__far_cliff_rock_segment__default__4x4__256x256.png",
+      "copy": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/cliff.png",
+      "sha256": "35962079d58aad6b7b43be7770a94b6d239a86bf26fa6765165bd3701ec15aee"
+    },
+    {
+      "source": "assets_generated/background/B08__background__bright_cloud_small__default__4x4__256x256.png",
+      "copy": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/cloud.png",
+      "sha256": "ab4cfa6e36fb304774c162906f2439289608b2cb5ada9e668a30a47f66dad71d"
+    },
+    {
+      "source": "assets_generated/floor/G01__floor__clean_sandstone_floor_tile__default__1x1__64x64.png",
+      "copy": "assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/floor.png",
+      "sha256": "bc8438dfd2b0513e7e18b460c953c6187bae3089454816392137143829a6c0a6"
+    }
+  ],
+  "target_role": "Existing Hero body used as a review sparring target, not a new monster",
+  "target_body": "res://assets/characters/hero/battle/golden_cyclone/v001/preview_dependencies/existing_hero_target.png",
+  "target_attachments": {
+    "schema_version": 1,
+    "character_id": "CHAR001",
+    "frame_index_base": 0,
+    "coordinate_space": "native body PNG pixels; rotation from weapon blade pointing up, clockwise positive",
+    "equipment_profile": "sword",
+    "frames": {
+      "attack_windup:0": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_windup",
+        "frame_index": 0,
+        "hand_anchor_x": 117.351,
+        "hand_anchor_y": 138.48,
+        "hand_rotation_degrees": 58,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          112,
+          133,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_01__weaponless_v3.png",
+        "body_sha256": "8c4ae6a245c340d7b0e6b66980bd4f0d25dc5767629f7d2bcf44e91c9d38ad01",
+        "source_grip": [
+          633,
+          554
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_windup:1": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_windup",
+        "frame_index": 1,
+        "hand_anchor_x": 77.257,
+        "hand_anchor_y": 87.611,
+        "hand_rotation_degrees": -63,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          72,
+          83,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_02__weaponless_v3.png",
+        "body_sha256": "b482db9b86f7979daaf879ee88dbba7fde2d8f46f98f363b157ed2c15d3d6d1d",
+        "source_grip": [
+          364,
+          229
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_windup:2": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_windup",
+        "frame_index": 2,
+        "hand_anchor_x": 118.257,
+        "hand_anchor_y": 77.641,
+        "hand_rotation_degrees": -72,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "behind",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          113,
+          73,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_03__weaponless_v2.png",
+        "body_sha256": "c7a8d72eba29fc0d41839b3e41f84a132ae103b465a432f93cd67443f962fd22",
+        "source_grip": [
+          656,
+          171
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_windup:3": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_windup",
+        "frame_index": 3,
+        "hand_anchor_x": 113.834,
+        "hand_anchor_y": 74.91,
+        "hand_rotation_degrees": -70,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "behind",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          109,
+          70,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_windup_04__weaponless_v4.png",
+        "body_sha256": "38945cb653416cbcfb7a1c1436ab1bf61d3525718c92d5d1807a5eb4aad19fc2",
+        "source_grip": [
+          567,
+          153
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_execute:0": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_execute",
+        "frame_index": 0,
+        "hand_anchor_x": 116.471,
+        "hand_anchor_y": 70.799,
+        "hand_rotation_degrees": 112,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          111,
+          66,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_01__weaponless_v4.png",
+        "body_sha256": "ee91565970ee830769c2cb952528ef39b334de688e2f8a4d0c75c2c698a10577",
+        "source_grip": [
+          615,
+          135
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_execute:1": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_execute",
+        "frame_index": 1,
+        "hand_anchor_x": 141.249,
+        "hand_anchor_y": 162.749,
+        "hand_rotation_degrees": 126,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          136,
+          158,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_02__weaponless_v3.png",
+        "body_sha256": "edee71c47b0a9b2cef303dce12a14ae335602895f42b589b652c44936672e712",
+        "source_grip": [
+          759,
+          672
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_execute:2": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_execute",
+        "frame_index": 2,
+        "hand_anchor_x": 164.758,
+        "hand_anchor_y": 150.155,
+        "hand_rotation_degrees": 98,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          160,
+          145,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_03__weaponless_v3.png",
+        "body_sha256": "22c5971947d84c215c3a92f153468c9e39e0ecbc5b96dd42cf4f0ef063ed78fa",
+        "source_grip": [
+          828,
+          618
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_execute:3": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_execute",
+        "frame_index": 3,
+        "hand_anchor_x": 203.241,
+        "hand_anchor_y": 133.924,
+        "hand_rotation_degrees": 90,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          198,
+          129,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_04__weaponless_v3.png",
+        "body_sha256": "9438a9c099cb6c1e78b4784d4d8852d206fce824096277ba5b96ef15b7a6b516",
+        "source_grip": [
+          1132,
+          493
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_execute:4": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_execute",
+        "frame_index": 4,
+        "hand_anchor_x": 182.318,
+        "hand_anchor_y": 160.492,
+        "hand_rotation_degrees": 125,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          177,
+          155,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_05__weaponless_v3.png",
+        "body_sha256": "10aa6eedabf8d62f8226a4b93aa2690013fe0a2fc937288d32a4086acab69acf",
+        "source_grip": [
+          979,
+          686
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "attack_execute:5": {
+        "character_id": "CHAR001",
+        "animation_name": "attack_execute",
+        "frame_index": 5,
+        "hand_anchor_x": 69.124,
+        "hand_anchor_y": 152.236,
+        "hand_rotation_degrees": -140,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          64,
+          147,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_attack_execute_06__weaponless_v2.png",
+        "body_sha256": "f3938f266721490f5b19bfd079ac1a0934734886d825da62ee89872cb6355b70",
+        "source_grip": [
+          371,
+          642
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "idle_ready:0": {
+        "character_id": "CHAR001",
+        "animation_name": "idle_ready",
+        "frame_index": 0,
+        "hand_anchor_x": 71.18,
+        "hand_anchor_y": 153.292,
+        "hand_rotation_degrees": -140,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          66,
+          148,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_idle_ready_01__weaponless_v2.png",
+        "body_sha256": "35a03a2bb896f79a0985f4e17dd1cd0d1e65f34b5aea208972ec7eefadcaac2a",
+        "source_grip": [
+          372,
+          649
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      },
+      "step:0": {
+        "character_id": "CHAR001",
+        "animation_name": "step",
+        "frame_index": 0,
+        "hand_anchor_x": 69.868,
+        "hand_anchor_y": 153.706,
+        "hand_rotation_degrees": -140,
+        "weapon_scale": 0.6666666666666666,
+        "weapon_render_order": "front",
+        "grip_type": "one_hand_sword",
+        "hand_occlusion_rect": [
+          65,
+          149,
+          10,
+          10
+        ],
+        "body_path": "res://assets/characters/hero/battle/weaponless_v2/hero_battle_step_01__weaponless_v2.png",
+        "body_sha256": "c1af6d35ac532555be7da1b051a35d07e42c859f08e5cba1d42e2eaf811562d6",
+        "source_grip": [
+          373,
+          638
+        ],
+        "annotation_method": "individual visual source grip measurement transformed through native normalization",
+        "body_ground_anchor": [
+          128,
+          240
+        ],
+        "weaponless_visual_check": "agent_source_review_passed",
+        "status": "needs_review"
+      }
+    },
+    "approval_status": "pending_owner_visual_review"
+  }
+}
