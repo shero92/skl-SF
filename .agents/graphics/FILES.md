@@ -12,6 +12,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`CODEX_PROMPT_HERO_ROOM_TARGET.md`](CODEX_PROMPT_HERO_ROOM_TARGET.md)
 - [`QUEUE.md`](QUEUE.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

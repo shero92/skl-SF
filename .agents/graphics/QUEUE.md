@@ -41,3 +41,6 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0034](requests/ART-0034_hero_room_sea_stacks_and_arches.md) | reviewed | codex | TASK-0102 | none |
 | [ART-0035](requests/ART-0035_hero_room_planters_flowers_palms.md) | reviewed | codex | TASK-0102 | none |
 | [ART-0036](requests/ART-0036_weapon_icons_and_type_sprites.md) | blocked_reference | graphics-specialist | TASK-0118 | none |
+| [ART-0037](requests/ART-0037_hero_room_sea_light_lattice.md) | requested | graphics-specialist | TASK-0102 | none |
+| [ART-0038](requests/ART-0038_hero_room_window_wall_piece.md) | requested | graphics-specialist | TASK-0102 | none |
+| [ART-0039](requests/ART-0039_hero_room_wooden_stool.md) | requested | graphics-specialist | TASK-0102 | none |

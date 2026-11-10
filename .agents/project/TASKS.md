@@ -135,3 +135,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0131](../tasks/TASK-0131_painted_shadow_speed.md) | review | claude | none | none |
 | [TASK-0132](../tasks/TASK-0132_runtime_docs.md) | review | claude | TASK-0131 | none |
 | [TASK-0133](../tasks/TASK-0133_strict_checks_after_regeneration.md) | review | claude | TASK-0126 | none |
+| [TASK-0134](../tasks/TASK-0134_hero_room_target_art_spec.md) | review | claude | none | none |
