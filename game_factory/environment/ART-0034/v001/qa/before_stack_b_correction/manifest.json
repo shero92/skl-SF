@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "art_request": "ART-0034",
+  "task_id": "TASK-0102",
+  "agent": "codex",
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "production_active": false,
+  "generation_cache_required": false,
+  "source_count": 8,
+  "items": [
+    {
+      "id": "sea_stack_tall_a",
+      "master_path": "assets_hd/background/sea_coast/v001/sea_stack_tall_a.png",
+      "sha256": "506de1a1ec5988535ce01d24c3360412bf77a93275e255c1bc8e3309f06cd691",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        212,
+        54,
+        812,
+        1505
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          512.0,
+          1505
+        ],
+        "status": "review_anchor_not_scene_calibration"
+      },
+      "facing": "distant_coast",
+      "footprint": null,
+      "footprint_status": "background_non_collision; screen placement pending",
+      "native_review_path": "game_factory/environment/ART-0034/v001/native_review/sea_stack_tall_a.png",
+      "native_review_canvas": [
+        128,
+        192
+      ],
+      "native_review_sha256": "8b6d33fe25d98dadead04e5f88d22bd42c1e1e91ea1b088484a5d9766e04fe73",
+      "review_opacity": 1.0,
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0034/v001/requests/sea_stack_tall_a.txt"
+    },
+    {
+      "id": "sea_stack_tall_b",
+      "master_path": "assets_hd/background/sea_coast/v001/sea_stack_tall_b.png",
+      "sha256": "9fae25ee9b2590b1c5068242a0da414c23c35ddfe2cc1c5bc7322f896142782e",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        236,
+        18,
+        1298,
+        984
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          767.0,
+          984
+        ],
+        "status": "review_anchor_not_scene_calibration"
+      },
+      "facing": "distant_coast",
+      "footprint": null,
+      "footprint_status": "background_non_collision; screen placement pending",
+      "native_review_path": "game_factory/environment/ART-0034/v001/native_review/sea_stack_tall_b.png",
+      "native_review_canvas": [
+        128,
+        192
+      ],
+      "native_review_sha256": "aa246377f4bc5a2e86e33d8b63b973398f1b846ae1d87f3ebc0e024c9e95b763",
+      "review_opacity": 1.0,
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0034/v001/requests/sea_stack_tall_b.txt"
+    },
+    {
+      "id": "sea_stack_tall_c",
+      "master_path": "assets_hd/background/sea_coast/v001/sea_stack_tall_c.png",
+      "sha256": "9ad23cb1d0269565af20967a18cdb55828847b2987aeecf8ec99894ad7a5d715",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        68,
+        73,
+        922,
+        1468
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          495.0,
+          1468
+        ],
+        "status": "review_anchor_not_scene_calibration"
+      },
+      "facing": "distant_coast",
+      "footprint": null,
+      "footprint_status": "background_non_collision; screen placement pending",
+      "native_review_path": "game_factory/environment/ART-0034/v001/native_review/sea_stack_tall_c.png",
+      "native_review_canvas": [
+        128,
+        192
+      ],
+      "native_review_sha256": "31ee0fbfc150bbb36679b5c9a1ad433f6878053150ec686e0687f1076f9c921a",
+      "review_opacity": 1.0,
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0034/v001/requests/sea_stack_tall_c.txt"
+    },
+    {
+      "id": "rock_arch_far_left",
+      "master_path": "assets_hd/background/sea_coast/v001/rock_arch_far_left.png",
+      "sha256": "8a0812ebc3f53efc137940ff7b08d5e980b3fbdc51687d11748385ee5c8973d9",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        26,
+        30,
+        1692,
+        810
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          859.0,
+          810
+        ],
+        "status": "review_anchor_not_scene_calibration"
+      },
+      "facing": "distant_coast",
+      "footprint": null,
+      "footprint_status": "background_non_collision; screen placement pending",
+      "native_review_path": "game_factory/environment/ART-0034/v001/native_review/rock_arch_far_left.png",
+      "native_review_canvas": [
+        256,
+        160
+      ],
+      "native_review_sha256": "312ba3b7d72a53096303f85f612f092fc5515fbc02017652deb4a0e14216bdbb",
+      "review_opacity": 1.0,
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0034/v001/requests/rock_arch_far_left.txt",
+      "arch_hole_transparency_probe": {
+        "pixels": [
+          887,
+          576
+        ],
+        "alpha": 0,
+        "visual_review_required": true
+      }
+    },
+    {
+      "id": "rock_arch_far_right",
+      "master_path": "assets_hd/background/sea_coast/v001/rock_arch_far_right.png",
+      "sha256": "8ff4b19b5809acf3027cea1c56ba54322ce989271c77181843032e9704a87255",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        17,
+        29,
+        1758,
+        833
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          887.5,
+          833
+        ],
+        "status": "review_anchor_not_scene_calibration"
+      },
+      "facing": "distant_coast",
+      "footprint": null,
+      "footprint_status": "background_non_collision; screen placement pending",
+      "native_review_path": "game_factory/environment/ART-0034/v001/native_review/rock_arch_far_right.png",
+      "native_review_canvas": [
+        256,
+        160
+      ],
+      "native_review_sha256": "35b24cc8fc84ffec919c5cf4101711265d5ca433147203e39fc460422938a75a",
+      "review_opacity": 1.0,
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0034/v001/requests/rock_arch_far_right.txt",
+      "arch_hole_transparency_probe": {
+        "pixels": [
+          887,
+          576
+        ],
+        "alpha": 0,
+        "visual_review_required": true
+      }
+    },
+    {
+      "id": "horizon_haze_strip",
+      "master_path": "assets_hd/background/sea_coast/v001/horizon_haze_strip.png",
+      "sha256": "e97ffd57edf39c2c89d0531da82b13ec283807baa351595c9b4f5ca1cf44be3c",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        236
+      ],
+      "bounds_alpha_128": [
+        214,
+        337,
+        1936,
+        382
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          1075.0,
+          382
+        ],
+        "status": "review_anchor_not_scene_calibration"
+      },
+      "facing": "distant_coast",
+      "footprint": null,
+      "footprint_status": "background_non_collision; screen placement pending",
+      "native_review_path": "game_factory/environment/ART-0034/v001/native_review/horizon_haze_strip.png",
+      "native_review_canvas": [
+        320,
+        64
+      ],
+      "native_review_sha256": "8e6a5d3cb2549dcd8e7c71b5d6ed1ea9866e54ce0bd624d74fe92dc09d63668e",
+      "review_opacity": 0.25,
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0034/v001/requests/horizon_haze_strip.txt",
+      "edge_alpha_note": "outermost columns alpha <=1; soft overlay tails, no opaque clipping"
+    },
+    {
+      "id": "foam_patch_a",
+      "master_path": "assets_hd/background/sea_coast/v001/foam_patch_a.png",
+      "sha256": "fd7bde47fc2cdb692243fef021008cf58a00eae1a8bc90c5cf244f1d3dcc05f2",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        219,
+        231,
+        1328,
+        756
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          773.5,
+          756
+        ],
+        "status": "review_anchor_not_scene_calibration"
+      },
+      "facing": "distant_coast",
+      "footprint": null,
+      "footprint_status": "background_non_collision; screen placement pending",
+      "native_review_path": "game_factory/environment/ART-0034/v001/native_review/foam_patch_a.png",
+      "native_review_canvas": [
+        160,
+        96
+      ],
+      "native_review_sha256": "49f76bdbda18e37414a3e86104593f7a88179f2a59c7b08179dd17c6cf7f119f",
+      "review_opacity": 1.0,
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0034/v001/requests/foam_patch_a.txt"
+    },
+    {
+      "id": "foam_patch_b",
+      "master_path": "assets_hd/background/sea_coast/v001/foam_patch_b.png",
+      "sha256": "d3238aeebf41cb0f303718e10de3979abf6845614bdf0f0378f0cb72435d5fb1",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        277,
+        258,
+        1480,
+        619
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          878.5,
+          619
+        ],
+        "status": "review_anchor_not_scene_calibration"
+      },
+      "facing": "distant_coast",
+      "footprint": null,
+      "footprint_status": "background_non_collision; screen placement pending",
+      "native_review_path": "game_factory/environment/ART-0034/v001/native_review/foam_patch_b.png",
+      "native_review_canvas": [
+        192,
+        96
+      ],
+      "native_review_sha256": "91153668df38eb18a9ad5e8d576c6712fb938014a9bea7accfb315c4c8490594",
+      "review_opacity": 1.0,
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0034/v001/requests/foam_patch_b.txt"
+    }
+  ],
+  "references": [
+    {
+      "path": "assets_hd/background/cliff_base/cliff_base_01.png",
+      "sha256": "9f2aa3b31fce2c93a500abead8679d2dafe4010ef0d7a4d7400b48de1642c96e",
+      "role": "material_style"
+    },
+    {
+      "path": "map_factory/references/hero_room_01_target_20261103.png",
+      "sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "role": "distant_composition"
+    }
+  ],
+  "cost_usd": null,
+  "tokens": null
+}

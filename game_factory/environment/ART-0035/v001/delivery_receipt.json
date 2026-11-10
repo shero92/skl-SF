@@ -1,0 +1,153 @@
+{
+  "task": "TASK-0102",
+  "art_request": "ART-0035",
+  "destination": "H:/shining force/skl-SF",
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "files": [
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/.gdignore",
+      "sha256": "a6da9ef1b54395385e77668edc6c8ca5b50f83bd720f6c1e3704fb367937c8c7"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/flower_mound_blue.png",
+      "sha256": "c303c9d4e12f571a53a7899c90a84e3295edaf95893ac60b7a6922c3f43b387a"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/flower_mound_white.png",
+      "sha256": "504e7dec761646bd547dc1e75b21c0e22f4ad2f96cd1624ac4301cb8d8934ae2"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/hanging_vine_long.png",
+      "sha256": "7467570e5a66d12c1555dad1d8c2cf6703839ad2c540fd22510d7bdf03e99953"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_a.png",
+      "sha256": "29d0ff1c7c5057d8c97aa6f5e2a17bf3a0b3b61154159ad04ef13c38eaf6c9a9"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_b.png",
+      "sha256": "9627183ff97e9a31b82b8dc061fa842136cbd3bb35e7609e8445e5dc8f42be41"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/palm_clump_front_left.png",
+      "sha256": "703b289b91da084d9434578538259d15b2c79639233c3b20e4529145bd59f934"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/palm_clump_front_right.png",
+      "sha256": "155470fe06297ed35106e7249497318d199c92b52950b849d4caa0db00a2eb63"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_large.png",
+      "sha256": "e489868e43b8e8e736a91b04d07190a5d11f9296534c955120eb4bdcee06b389"
+    },
+    {
+      "path": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_medium.png",
+      "sha256": "d2c654d4753941571bda27e633f0d5eea496e55753fbf80fada2bfd18fbaf9eb"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/.gdignore",
+      "sha256": "cde82b0290cbf95202c6611123df9565e0be2d493f657b54c7764142b8f9b250"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/godot_native_review.png",
+      "sha256": "9c3d252b63894778d58fbdf6f37b6839a213811a0549372562b05f2597e7fe22"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/godot_review_receipt.json",
+      "sha256": "7600834d02c3343938b8d258e19a6dcfc14f24fdb2203c8d2e60ea8b0bbb2b98"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/manifest.json",
+      "sha256": "c7cb116fa68b51160250efbfbf6d5612a991b36769c6f5bd7728e48958365446"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/flower_mound_blue.png",
+      "sha256": "38eec294bd5b4ebf01686055d31ebdaaf2180d28aeacee38316192bc0c7e1a94"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/flower_mound_white.png",
+      "sha256": "2dd6cbd74f2bf2db6e0e114f986f9cbe9804e1c4c27f7e4fe552b239565ce978"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/hanging_vine_long.png",
+      "sha256": "1d5a8373b7bded35062ad9805593d13e479490a66c3b36c4553ff81d27b5d043"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/ivy_tuft_wall_a.png",
+      "sha256": "4bbf2ff044b963446e4399fe15f33c12832b596011f7d7dc6b5cb6a1f8122dd0"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/ivy_tuft_wall_b.png",
+      "sha256": "74454c9712331ed05012273b1fee5ca842f663a1b939b872523c1efabd90b540"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/palm_clump_front_left.png",
+      "sha256": "a5167cb2e7a017cb26a0d98149fcfbfa75c6d0d1310e51073b1b97b928afaa03"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/palm_clump_front_right.png",
+      "sha256": "218dd9942101a1d07be143cc70917a472b0fbb26d72dffaf7ab6061597eb99f0"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/planter_stone_flowers_large.png",
+      "sha256": "c80331bdfbb1f410bd95ea9eb106b284167a9718ec1b322ec77e818ec0c77ea8"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/native_review/planter_stone_flowers_medium.png",
+      "sha256": "88cf6ba8bb05c84916906b478f35a50e774ae3305696242614830a98e2e2ccbd"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/qa/verification.json",
+      "sha256": "bca32d7564c8730e489832c83b1deef74d734d04801b7e003cf7a8cf6710fa8f"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/qa/verification.md",
+      "sha256": "4a18079167c84e0a62584ab85f431efe3677a019727181fa48e627bf9156f63a"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/README.md",
+      "sha256": "fbb5faf40df29005e10e55cad8be4b9519e667639a836bc1064165fbe088721f"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/flower_mound_blue.txt",
+      "sha256": "4ba727fc00e9bbf08f733791cc1676086b642b61e68fedb3ccdc16bf23c1a06d"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/flower_mound_white.txt",
+      "sha256": "8e80265f03cabb52352acd8c88ed8d361bdfca16c76d06604eba667d32ac3a3a"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/hanging_vine_long.txt",
+      "sha256": "289e09ee60ffeb8e1ab9cca5de5d5645b0eabacb8ceade4b90cff5074fab9753"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/ivy_tuft_wall_a.txt",
+      "sha256": "936c751b449ae5c7ff8ba8890fd3283ec1be8c34aaf0e300d5c5d7b957eb6da9"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/ivy_tuft_wall_b.txt",
+      "sha256": "d1e7583a64b255c0d4637bc24ea01c6af76f41378b6e998bfbc3173bc582e367"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/palm_clump_front_left.txt",
+      "sha256": "418cc532c2f089cb129ba88f0390e5d209092bb4eb9dc973e12359a7fa80bf24"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/palm_clump_front_right.txt",
+      "sha256": "14d64bf1d658e028c411a3d8b6bf4b613510ebaa4811c595522512a37f6b4f32"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/planter_stone_flowers_large.txt",
+      "sha256": "fc5208d8dc0460de9256da20ffdbf193fa24d7527b3aafe8fb970a7f33066740"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/requests/planter_stone_flowers_medium.txt",
+      "sha256": "ac35e13a7623f0bf1273f93ae07ee304c643bffd91e77e6c9af4671441d5afd2"
+    },
+    {
+      "path": "game_factory/environment/ART-0035/v001/review.gd",
+      "sha256": "942b076a78cf0c22d63447bb0d0cb987c50205a946867498886bcce88c0bb0fe"
+    }
+  ]
+}
