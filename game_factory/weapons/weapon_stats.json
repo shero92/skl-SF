@@ -92,7 +92,7 @@
         "dagger"
       ],
       "base_stats": {
-        "hp": 18,
+        "hp": 45,
         "mp": 0,
         "attack": 8,
         "defense": 6,
@@ -108,7 +108,7 @@
         "spear"
       ],
       "base_stats": {
-        "hp": 22,
+        "hp": 55,
         "mp": 0,
         "attack": 9,
         "defense": 9,
@@ -124,7 +124,7 @@
         "sword"
       ],
       "base_stats": {
-        "hp": 19,
+        "hp": 48,
         "mp": 0,
         "attack": 8,
         "defense": 7,
@@ -140,7 +140,7 @@
         "mace"
       ],
       "base_stats": {
-        "hp": 24,
+        "hp": 60,
         "mp": 0,
         "attack": 10,
         "defense": 6,
@@ -156,7 +156,7 @@
         "dagger"
       ],
       "base_stats": {
-        "hp": 16,
+        "hp": 40,
         "mp": 0,
         "attack": 7,
         "defense": 4,
@@ -172,7 +172,7 @@
         "dagger"
       ],
       "base_stats": {
-        "hp": 12,
+        "hp": 30,
         "mp": 12,
         "attack": 4,
         "defense": 3,
@@ -188,7 +188,7 @@
         "mace"
       ],
       "base_stats": {
-        "hp": 14,
+        "hp": 35,
         "mp": 10,
         "attack": 4,
         "defense": 4,
@@ -204,7 +204,7 @@
         "sword"
       ],
       "base_stats": {
-        "hp": 15,
+        "hp": 38,
         "mp": 0,
         "attack": 6,
         "defense": 4,
@@ -219,7 +219,7 @@
         "natural"
       ],
       "base_stats": {
-        "hp": 26,
+        "hp": 65,
         "mp": 0,
         "attack": 11,
         "defense": 5,
@@ -536,7 +536,7 @@
     "WPN_NATURAL_CLAWS": {
       "name": "Natural Claws",
       "type": "natural",
-      "attack": 9,
+      "attack": 6,
       "accuracy": 92,
       "crit": 6,
       "price": 0,
