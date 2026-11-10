@@ -23,6 +23,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0025_claude_5cf3023bfb.json`](TASK-0025_claude_5cf3023bfb.json)
 - [`TASK-0030_codex_063e6b7709.json`](TASK-0030_codex_063e6b7709.json)
 - [`TASK-0030_codex_d709626508.json`](TASK-0030_codex_d709626508.json)
+- [`TASK-0031_codex_b8d07481c5.json`](TASK-0031_codex_b8d07481c5.json)
+- [`TASK-0031_codex_dea7066af0.json`](TASK-0031_codex_dea7066af0.json)
 - [`TASK-0033_codex_96b5a2aa4c.json`](TASK-0033_codex_96b5a2aa4c.json)
 - [`TASK-0034_claude_4f7bf34547.json`](TASK-0034_claude_4f7bf34547.json)
 - [`TASK-0035_claude_79a8a9095a.json`](TASK-0035_claude_79a8a9095a.json)
@@ -65,5 +67,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0102_codex_d080f82afb.json`](TASK-0102_codex_d080f82afb.json)
 - [`TASK-0102_codex_fc586b1fba.json`](TASK-0102_codex_fc586b1fba.json)
 - [`TASK-0135_codex_7dc92e3234.json`](TASK-0135_codex_7dc92e3234.json)
+- [`TASK-0136_codex_ae80068bd2.json`](TASK-0136_codex_ae80068bd2.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
