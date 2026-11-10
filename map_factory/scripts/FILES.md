@@ -24,5 +24,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`room_factory.gd.uid`](room_factory.gd.uid)
 - [`shadow_factory.gd`](shadow_factory.gd)
 - [`shadow_factory.gd.uid`](shadow_factory.gd.uid)
+- [`shadow_painter.gd`](shadow_painter.gd)
+- [`shadow_painter.gd.uid`](shadow_painter.gd.uid)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

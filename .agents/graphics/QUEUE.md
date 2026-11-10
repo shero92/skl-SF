@@ -10,7 +10,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0001](requests/ART-0001_four_view_hero_bed.md) | blocked_reference | graphics-specialist | TASK-0002 | P001 |
 | [ART-0002](requests/ART-0002_hero_room_cloud_drift.md) | blocked_reference | graphics-specialist | TASK-0013 | E018 |
 | [ART-0003](requests/ART-0003_hero_room_cliff_foam_loop.md) | blocked_reference | graphics-specialist | TASK-0014 | E009,E011,E012,E013,E014 |
-| [ART-0004](requests/ART-0004_hero_room_side_wall_views.md) | delivered | graphics-specialist | TASK-0015 | W001,W006,W007,W008,W009,W019,W020 |
+| [ART-0004](requests/ART-0004_hero_room_side_wall_views.md) | integrated | graphics-specialist | TASK-0015 | W001,W006,W007,W008,W009,W019,W020 |
 | [ART-0005](requests/ART-0005_hero_room_compass_wood_door.md) | blocked_reference | graphics-specialist | TASK-0016 | A015,A016,W016 |
 | [ART-0006](requests/ART-0006_hero_room_sphere_finial.md) | blocked_reference | graphics-specialist | TASK-0017 | ST011,A013 |
 | [ART-0007](requests/ART-0007_hero_room_compass_blanket.md) | blocked_reference | graphics-specialist | TASK-0018 | P002,P004 |
@@ -20,7 +20,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0011](requests/ART-0011_hero_room_blue_white_planter.md) | blocked_reference | graphics-specialist | TASK-0022 | O001,V017,V020 |
 | [ART-0012](requests/ART-0012_hero_room_cliff_palms.md) | blocked_reference | graphics-specialist | TASK-0023 | V017,V023 |
 | [ART-0013](requests/ART-0013_hero_room_arch_light_shafts.md) | blocked_reference | graphics-specialist | TASK-0024 | none |
-| [ART-0014](requests/ART-0014_hero_room_broken_floor_edge.md) | delivered | graphics-specialist | TASK-0025 | F006,F007,F008,F009,F010,F011,F012,F013 |
+| [ART-0014](requests/ART-0014_hero_room_broken_floor_edge.md) | integrated | graphics-specialist | TASK-0025 | F006,F007,F008,F009,F010,F011,F012,F013 |
 | [ART-0015](requests/ART-0015_hero_room_study_blue_rug.md) | blocked_reference | graphics-specialist | TASK-0026 | P005,P006 |
 | [ART-0016](requests/ART-0016_hero_room_arch_ground_shadow.md) | blocked_reference | graphics-specialist | TASK-0027 | S011,S012,S016,S017 |
 | [ART-0017](requests/ART-0017_hero_room_door_ground_shadow.md) | blocked_reference | graphics-specialist | TASK-0028 | S013,S016 |
@@ -36,3 +36,8 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0027](requests/ART-0027_six_character_factory.md) | in_progress | codex | TASK-0070 | CHAR001,CHAR002,CHAR003,CHAR004,CHAR005,CHAR006 |
 | [ART-0028](requests/ART-0028_hero_phantom_dash.md) | in_progress | codex | TASK-0072 | CHAR001,WPN_HERO_BASIC_SWORD,WPN_IRON_SWORD |
 | [ART-0029](requests/ART-0029_golden_cyclone.md) | in_progress | codex | TASK-0074 | CHAR001,WPN_HERO_BASIC_SWORD,WPN_IRON_SWORD |
+| [ART-0032](requests/ART-0032_hero_room_connected_ruin_walls.md) | reviewed | codex | TASK-0102 | none |
+| [ART-0033](requests/ART-0033_hero_room_terrace_cliff_edge.md) | reviewed | codex | TASK-0102 | none |
+| [ART-0034](requests/ART-0034_hero_room_sea_stacks_and_arches.md) | reviewed | codex | TASK-0102 | none |
+| [ART-0035](requests/ART-0035_hero_room_planters_flowers_palms.md) | reviewed | codex | TASK-0102 | none |
+| [ART-0036](requests/ART-0036_weapon_icons_and_type_sprites.md) | blocked_reference | graphics-specialist | TASK-0118 | none |

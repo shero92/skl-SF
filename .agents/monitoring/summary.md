@@ -39,5 +39,7 @@
 | TASK-0068 | codex | 0.000000 | 2 | 0 | 0 | 0 | 0 | 2 | 2 |
 | TASK-0069 | codex | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 | TASK-0070 | codex | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
+| TASK-0074 | codex | 0.000000 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
+| TASK-0102 | codex | 0.000000 | 8 | 0 | 0 | 0 | 0 | 8 | 8 |
 
 Missing costs are unknown, not zero. Estimates are not subscription invoices.

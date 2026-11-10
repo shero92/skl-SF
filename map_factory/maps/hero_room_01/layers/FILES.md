@@ -25,5 +25,11 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`v0012.json`](v0012.json)
 - [`v0013.json`](v0013.json)
 - [`v0014.json`](v0014.json)
+- [`v0015.json`](v0015.json)
+- [`v0016.json`](v0016.json)
+- [`v0017.json`](v0017.json)
+- [`v0018.json`](v0018.json)
+- [`v0019.json`](v0019.json)
+- [`v0020.json`](v0020.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

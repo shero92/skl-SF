@@ -6,7 +6,10 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`ART-0032/`](ART-0032/FILES.md)
+- [`ART-0033/`](ART-0033/FILES.md)
+- [`ART-0034/`](ART-0034/FILES.md)
+- [`ART-0035/`](ART-0035/FILES.md)
 
 ## Files
 

@@ -6,11 +6,24 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`architecture/`](architecture/FILES.md)
+- [`background/`](background/FILES.md)
+- [`concept/`](concept/FILES.md)
+- [`decor/`](decor/FILES.md)
+- [`floor/`](floor/FILES.md)
+- [`furniture/`](furniture/FILES.md)
+- [`hero/`](hero/FILES.md)
+- [`lighting/`](lighting/FILES.md)
+- [`plants/`](plants/FILES.md)
+- [`props/`](props/FILES.md)
 - [`runtime/`](runtime/FILES.md)
+- [`weapons/`](weapons/FILES.md)
 
 ## Files
 
+- [`CATALOG.md`](CATALOG.md)
 - [`RULES.md`](RULES.md)
 - [`hd_map.json`](hd_map.json)
+- [`manifest.json`](manifest.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

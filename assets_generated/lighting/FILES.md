@@ -11,19 +11,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`L01__lighting__hanging_wall_lantern__default__1x1__64x64.json`](L01__lighting__hanging_wall_lantern__default__1x1__64x64.json)
-- [`L01__lighting__hanging_wall_lantern__default__1x1__64x64.png`](L01__lighting__hanging_wall_lantern__default__1x1__64x64.png)
-- [`L01__lighting__hanging_wall_lantern__default__1x1__64x64.png.import`](L01__lighting__hanging_wall_lantern__default__1x1__64x64.png.import)
 - [`L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.json`](L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.json)
-- [`L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png`](L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png)
-- [`L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png.import`](L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png.import)
 - [`L03__lighting__candle_cluster__default__1x1__64x64.json`](L03__lighting__candle_cluster__default__1x1__64x64.json)
-- [`L03__lighting__candle_cluster__default__1x1__64x64.png`](L03__lighting__candle_cluster__default__1x1__64x64.png)
-- [`L03__lighting__candle_cluster__default__1x1__64x64.png.import`](L03__lighting__candle_cluster__default__1x1__64x64.png.import)
 - [`L04__lighting__table_lantern__default__1x1__64x64.json`](L04__lighting__table_lantern__default__1x1__64x64.json)
-- [`L04__lighting__table_lantern__default__1x1__64x64.png`](L04__lighting__table_lantern__default__1x1__64x64.png)
-- [`L04__lighting__table_lantern__default__1x1__64x64.png.import`](L04__lighting__table_lantern__default__1x1__64x64.png.import)
 - [`L05__lighting__small_flame_glow_overlay__default__1x1__64x64.json`](L05__lighting__small_flame_glow_overlay__default__1x1__64x64.json)
-- [`L05__lighting__small_flame_glow_overlay__default__1x1__64x64.png`](L05__lighting__small_flame_glow_overlay__default__1x1__64x64.png)
-- [`L05__lighting__small_flame_glow_overlay__default__1x1__64x64.png.import`](L05__lighting__small_flame_glow_overlay__default__1x1__64x64.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

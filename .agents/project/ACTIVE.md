@@ -6,4 +6,4 @@ Generated only on main after claims/merges. Unknown cost is not zero.
 
 | Agent | Task | Touches | Started | Status | USD so far |
 | --- | --- | --- | --- | --- | --- |
-| codex | TASK-0074 | AGENTS.md, docs/GRAPHICS_PRODUCTION_POLICY.md, docs/ASSET_QUALITY_POLICY.md, docs/HERO_ATTACK_SOURCE_AUDIT.md, game_factory/README.md, game_factory/hero_correction/README.md, game_factory/weapons/README.md, map_factory/MAP_FACTORY_RULES.md, game_factory/golden_cyclone, assets/characters/hero/battle/golden_cyclone, .agents/tasks/TASK-0074_golden_cyclone_individual_frames.md, .agents/graphics/requests/ART-0029_golden_cyclone.md | unknown | in_progress | unknown |
+| — | none | — | — | — | — |

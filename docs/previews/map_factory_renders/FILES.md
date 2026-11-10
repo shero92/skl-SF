@@ -6,7 +6,16 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`t0059_v0017/`](t0059_v0017/FILES.md)
+- [`t0104_v0014/`](t0104_v0014/FILES.md)
+- [`t0114_v0015/`](t0114_v0015/FILES.md)
+- [`t0115_v0016/`](t0115_v0016/FILES.md)
+- [`t0116_v0017/`](t0116_v0017/FILES.md)
+- [`t0117_v0017/`](t0117_v0017/FILES.md)
+- [`t0122_v0018/`](t0122_v0018/FILES.md)
+- [`t0123_v0019/`](t0123_v0019/FILES.md)
+- [`t0124_v0020/`](t0124_v0020/FILES.md)
+- [`task0102_v17_review/`](task0102_v17_review/FILES.md)
 
 ## Files
 
@@ -32,6 +41,10 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`hero_room_01_v0013.json`](hero_room_01_v0013.json)
 - [`hero_room_01_v0013.png`](hero_room_01_v0013.png)
 - [`hero_room_01_v0013_vs_target.png`](hero_room_01_v0013_vs_target.png)
+- [`hero_room_01_v0014.json`](hero_room_01_v0014.json)
+- [`hero_room_01_v0014.png`](hero_room_01_v0014.png)
+- [`hero_room_01_v0014_strip_vs_painted_shadows.png`](hero_room_01_v0014_strip_vs_painted_shadows.png)
+- [`hero_room_01_v0014_vs_target.png`](hero_room_01_v0014_vs_target.png)
 - [`hero_room_proj_poc_v0001.json`](hero_room_proj_poc_v0001.json)
 - [`hero_room_proj_poc_v0001.png`](hero_room_proj_poc_v0001.png)
 - [`new_hero_parts_v10.png`](new_hero_parts_v10.png)

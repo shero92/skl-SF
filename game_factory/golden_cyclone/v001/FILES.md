@@ -6,6 +6,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`metadata/`](metadata/FILES.md)
+- [`previews/`](previews/FILES.md)
 - [`qa/`](qa/FILES.md)
 - [`requests/`](requests/FILES.md)
 

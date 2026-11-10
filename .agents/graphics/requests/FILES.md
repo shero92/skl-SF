@@ -39,6 +39,11 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0027_six_character_factory.md`](ART-0027_six_character_factory.md)
 - [`ART-0028_hero_phantom_dash.md`](ART-0028_hero_phantom_dash.md)
 - [`ART-0029_golden_cyclone.md`](ART-0029_golden_cyclone.md)
+- [`ART-0032_hero_room_connected_ruin_walls.md`](ART-0032_hero_room_connected_ruin_walls.md)
+- [`ART-0033_hero_room_terrace_cliff_edge.md`](ART-0033_hero_room_terrace_cliff_edge.md)
+- [`ART-0034_hero_room_sea_stacks_and_arches.md`](ART-0034_hero_room_sea_stacks_and_arches.md)
+- [`ART-0035_hero_room_planters_flowers_palms.md`](ART-0035_hero_room_planters_flowers_palms.md)
+- [`ART-0036_weapon_icons_and_type_sprites.md`](ART-0036_weapon_icons_and_type_sprites.md)
 - [`GOAL-0001_request_coverage.json`](GOAL-0001_request_coverage.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

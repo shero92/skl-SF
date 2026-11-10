@@ -10,6 +10,12 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`cyclone_ground_dust_001.txt`](cyclone_ground_dust_001.txt)
+- [`golden_energy_ring_001.txt`](golden_energy_ring_001.txt)
+- [`golden_final_flash_001.txt`](golden_final_flash_001.txt)
+- [`golden_impact_sparks_001.txt`](golden_impact_sparks_001.txt)
+- [`golden_motion_trail_001.txt`](golden_motion_trail_001.txt)
+- [`golden_spinning_arc_001.txt`](golden_spinning_arc_001.txt)
 - [`hero_golden_cyclone_001.txt`](hero_golden_cyclone_001.txt)
 - [`hero_golden_cyclone_002.txt`](hero_golden_cyclone_002.txt)
 - [`hero_golden_cyclone_003.txt`](hero_golden_cyclone_003.txt)
@@ -26,5 +32,14 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`hero_golden_cyclone_013.txt`](hero_golden_cyclone_013.txt)
 - [`hero_golden_cyclone_014.txt`](hero_golden_cyclone_014.txt)
 - [`hero_golden_cyclone_015.txt`](hero_golden_cyclone_015.txt)
+- [`hero_golden_cyclone_015_correction_02.txt`](hero_golden_cyclone_015_correction_02.txt)
+- [`hero_golden_cyclone_016.txt`](hero_golden_cyclone_016.txt)
+- [`hero_golden_cyclone_017.txt`](hero_golden_cyclone_017.txt)
+- [`hero_golden_cyclone_018.txt`](hero_golden_cyclone_018.txt)
+- [`hero_golden_cyclone_019.txt`](hero_golden_cyclone_019.txt)
+- [`hero_golden_cyclone_020.txt`](hero_golden_cyclone_020.txt)
+- [`hero_golden_cyclone_021.txt`](hero_golden_cyclone_021.txt)
+- [`hero_golden_cyclone_022.txt`](hero_golden_cyclone_022.txt)
+- [`hero_golden_cyclone_022_correction_02.txt`](hero_golden_cyclone_022_correction_02.txt)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

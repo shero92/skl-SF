@@ -10,6 +10,11 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Files
 
+- [`.gdignore`](.gdignore)
+- [`hero_golden_cyclone_005_attempt_01.png`](hero_golden_cyclone_005_attempt_01.png)
 - [`hero_golden_cyclone_005_attempt_01.png.import`](hero_golden_cyclone_005_attempt_01.png.import)
+- [`hero_golden_cyclone_015_attempt_01.png`](hero_golden_cyclone_015_attempt_01.png)
+- [`hero_golden_cyclone_022_attempt_01.png`](hero_golden_cyclone_022_attempt_01.png)
+- [`phantom_dash_multi_pose_rejected.png`](phantom_dash_multi_pose_rejected.png)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

@@ -55,5 +55,13 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`F021_Compass_Floor_Corner_SW.png.import`](F021_Compass_Floor_Corner_SW.png.import)
 - [`F022_Compass_Floor_Corner_SE.png`](F022_Compass_Floor_Corner_SE.png)
 - [`F022_Compass_Floor_Corner_SE.png.import`](F022_Compass_Floor_Corner_SE.png.import)
+- [`F023_Hero_Broken_Floor_Edge_01.png`](F023_Hero_Broken_Floor_Edge_01.png)
+- [`F023_Hero_Broken_Floor_Edge_01.png.import`](F023_Hero_Broken_Floor_Edge_01.png.import)
+- [`F024_Hero_Broken_Floor_Edge_02.png`](F024_Hero_Broken_Floor_Edge_02.png)
+- [`F024_Hero_Broken_Floor_Edge_02.png.import`](F024_Hero_Broken_Floor_Edge_02.png.import)
+- [`F025_Hero_Broken_Floor_Corner_Left.png`](F025_Hero_Broken_Floor_Corner_Left.png)
+- [`F025_Hero_Broken_Floor_Corner_Left.png.import`](F025_Hero_Broken_Floor_Corner_Left.png.import)
+- [`F026_Hero_Broken_Floor_Corner_Right.png`](F026_Hero_Broken_Floor_Corner_Right.png)
+- [`F026_Hero_Broken_Floor_Corner_Right.png.import`](F026_Hero_Broken_Floor_Corner_Right.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

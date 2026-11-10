@@ -6,7 +6,12 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`cely/`](cely/FILES.md)
 - [`hero/`](hero/FILES.md)
+- [`neru/`](neru/FILES.md)
+- [`old_father/`](old_father/FILES.md)
+- [`reef_friend/`](reef_friend/FILES.md)
+- [`temple_archer/`](temple_archer/FILES.md)
 
 ## Files
 

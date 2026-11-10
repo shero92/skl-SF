@@ -6,11 +6,14 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`game_frames/`](game_frames/FILES.md)
+- [`preview_dependencies/`](preview_dependencies/FILES.md)
 - [`rejected_sources/`](rejected_sources/FILES.md)
 - [`source_frames/`](source_frames/FILES.md)
+- [`vfx/`](vfx/FILES.md)
 
 ## Files
 
-- None (folder contains subfolders)
+- [`README.md`](README.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

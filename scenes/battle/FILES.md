@@ -11,15 +11,26 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`battle_animation_controller.gd`](battle_animation_controller.gd)
+- [`battle_animation_controller.gd.uid`](battle_animation_controller.gd.uid)
 - [`battle_perspective.gd`](battle_perspective.gd)
+- [`battle_perspective.gd.uid`](battle_perspective.gd.uid)
 - [`battle_preview.gd`](battle_preview.gd)
 - [`battle_preview.tscn`](battle_preview.tscn)
 - [`battle_reactions.gd`](battle_reactions.gd)
+- [`battle_resolver.gd`](battle_resolver.gd)
 - [`battle_timeline.gd`](battle_timeline.gd)
 - [`battle_timeline.gd.uid`](battle_timeline.gd.uid)
 - [`battle_vfx_layer.gd`](battle_vfx_layer.gd)
+- [`battle_vfx_layer.gd.uid`](battle_vfx_layer.gd.uid)
 - [`combo_sequence.gd`](combo_sequence.gd)
 - [`dynamic_battle_camera.gd`](dynamic_battle_camera.gd)
+- [`dynamic_battle_camera.gd.uid`](dynamic_battle_camera.gd.uid)
+- [`enemy_ai.gd`](enemy_ai.gd)
+- [`golden_cyclone_preview.gd`](golden_cyclone_preview.gd)
+- [`golden_cyclone_preview.tscn`](golden_cyclone_preview.tscn)
 - [`hit_timing_bridge.gd`](hit_timing_bridge.gd)
+- [`modular_actor_adapter.gd`](modular_actor_adapter.gd)
+- [`turn_manager.gd`](turn_manager.gd)
+- [`weapon_system.gd`](weapon_system.gd)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

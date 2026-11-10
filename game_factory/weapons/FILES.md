@@ -14,5 +14,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`README.md`](README.md)
 - [`catalog.json`](catalog.json)
 - [`profiles.json`](profiles.json)
+- [`weapon_stats.json`](weapon_stats.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
