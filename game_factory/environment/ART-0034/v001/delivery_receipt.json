@@ -1,0 +1,161 @@
+{
+  "task": "TASK-0102",
+  "art_request": "ART-0034",
+  "destination": "H:/shining force/skl-SF",
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "files": [
+    {
+      "path": "assets_hd/background/sea_coast/v001/.gdignore",
+      "sha256": "a6da9ef1b54395385e77668edc6c8ca5b50f83bd720f6c1e3704fb367937c8c7"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/foam_patch_a.png",
+      "sha256": "fd7bde47fc2cdb692243fef021008cf58a00eae1a8bc90c5cf244f1d3dcc05f2"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/foam_patch_b.png",
+      "sha256": "d3238aeebf41cb0f303718e10de3979abf6845614bdf0f0378f0cb72435d5fb1"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/horizon_haze_strip.png",
+      "sha256": "e97ffd57edf39c2c89d0531da82b13ec283807baa351595c9b4f5ca1cf44be3c"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/rejected/sea_stack_tall_b_attempt_01.png",
+      "sha256": "9fae25ee9b2590b1c5068242a0da414c23c35ddfe2cc1c5bc7322f896142782e"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/rock_arch_far_left.png",
+      "sha256": "8a0812ebc3f53efc137940ff7b08d5e980b3fbdc51687d11748385ee5c8973d9"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/rock_arch_far_right.png",
+      "sha256": "8ff4b19b5809acf3027cea1c56ba54322ce989271c77181843032e9704a87255"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/sea_stack_tall_a.png",
+      "sha256": "506de1a1ec5988535ce01d24c3360412bf77a93275e255c1bc8e3309f06cd691"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/sea_stack_tall_b.png",
+      "sha256": "985a11930ecb8a43b171fdd6b268082178048a982d66084ec7768c14c19340b0"
+    },
+    {
+      "path": "assets_hd/background/sea_coast/v001/sea_stack_tall_c.png",
+      "sha256": "9ad23cb1d0269565af20967a18cdb55828847b2987aeecf8ec99894ad7a5d715"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/.gdignore",
+      "sha256": "cde82b0290cbf95202c6611123df9565e0be2d493f657b54c7764142b8f9b250"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/godot_native_review.png",
+      "sha256": "3da3a62c4d4642e702a46843f1e4a3589f2633df150891d3da323069379ea0fa"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/godot_review_receipt.json",
+      "sha256": "c71ce2749cd2278cc9d98d4580d4132bda3c93e2cd2f88c4f139ddb4eeef6655"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/manifest.json",
+      "sha256": "cec573538e3fc23843253d2a723b3cec98e770100d48d12166b1d5df2bd3236e"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/native_review/foam_patch_a.png",
+      "sha256": "49f76bdbda18e37414a3e86104593f7a88179f2a59c7b08179dd17c6cf7f119f"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/native_review/foam_patch_b.png",
+      "sha256": "91153668df38eb18a9ad5e8d576c6712fb938014a9bea7accfb315c4c8490594"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/native_review/horizon_haze_strip.png",
+      "sha256": "8e6a5d3cb2549dcd8e7c71b5d6ed1ea9866e54ce0bd624d74fe92dc09d63668e"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/native_review/rock_arch_far_left.png",
+      "sha256": "312ba3b7d72a53096303f85f612f092fc5515fbc02017652deb4a0e14216bdbb"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/native_review/rock_arch_far_right.png",
+      "sha256": "35b24cc8fc84ffec919c5cf4101711265d5ca433147203e39fc460422938a75a"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/native_review/sea_stack_tall_a.png",
+      "sha256": "8b6d33fe25d98dadead04e5f88d22bd42c1e1e91ea1b088484a5d9766e04fe73"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/native_review/sea_stack_tall_b.png",
+      "sha256": "75de2719a799acf7ba49346fe939fb21ecedcc9b1f601fa6d2aa4007bb71eec5"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/native_review/sea_stack_tall_c.png",
+      "sha256": "31ee0fbfc150bbb36679b5c9a1ad433f6878053150ec686e0687f1076f9c921a"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/qa/before_stack_b_correction/godot_native_review.png",
+      "sha256": "1e250af5ab715379b0fc8d9abe02f2ef39108df3defb584b8e284ebead7b992a"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/qa/before_stack_b_correction/godot_review_receipt.json",
+      "sha256": "7f1b4868a7d4f420092bfd5f17085c1c238b23a0356a81ab626d773f4671a1ad"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/qa/before_stack_b_correction/manifest.json",
+      "sha256": "940945223cec5e0a68bf6184543eecaefcb0112d1af473783690622bbc73e1f9"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/qa/verification.json",
+      "sha256": "d2269caaa8b7e9cc70ef601b8b6e3e6df5958c9851f319b55dd540df9d0af5ab"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/qa/verification.md",
+      "sha256": "4a18079167c84e0a62584ab85f431efe3677a019727181fa48e627bf9156f63a"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/README.md",
+      "sha256": "956c2527eb3ab517e5aebd85d9e28536a60dff0d5b3348f53915a7628dfcae90"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/foam_patch_a.txt",
+      "sha256": "733d5061cf2af5466541cd7cbc3ecf6a15bc367b0d387447426e5419b69556d5"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/foam_patch_b.txt",
+      "sha256": "49f213421e423c969586ef2a270dd6b6d928dfd47596348639c6cbdc1bbe6fc6"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/horizon_haze_strip.txt",
+      "sha256": "df4f4e1fe6ed2afd42b133e940afc9286ad5a52051520f6c02e99c514390f691"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/rock_arch_far_left.txt",
+      "sha256": "452ae71e53385fffb43e820c5b4c273741cbbe3c20dd2e2e6fcddfbae83b7d14"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/rock_arch_far_right.txt",
+      "sha256": "c6e6b70458c871914376e443bb21f0cda9c10f76bf5ebfa56fe81519d60bde64"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/sea_stack_tall_a.txt",
+      "sha256": "afef972570f12488e38058b70112152d58bccb6a14691a20ac30fd69ee7c0d82"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/sea_stack_tall_b.txt",
+      "sha256": "7a69d4334585d710ea499b30605b94166197412e5e410427770b26431b69f009"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/sea_stack_tall_b_attempt_02.txt",
+      "sha256": "5e014f530b1b52fa16d02c0295690ce4b1f0a524a49f8b33c036491e1122ba32"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/requests/sea_stack_tall_c.txt",
+      "sha256": "351206801f868f382155c41a5500a42adac8d792d75a179d65c82d4083f91d25"
+    },
+    {
+      "path": "game_factory/environment/ART-0034/v001/review.gd",
+      "sha256": "5c1deaaa63b00f72a4958ab2b8b959602874d61fd66c38dc55561a8218163428"
+    }
+  ]
+}

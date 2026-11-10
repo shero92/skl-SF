@@ -1,7 +1,7 @@
 ---
 id: ART-0035
-status: requested
-owner: graphics-specialist
+status: delivered
+owner: codex
 task: TASK-0102
 dedupe_key: hero_room_planters_flowers_palms
 existing_asset_ids: none
@@ -23,11 +23,17 @@ output_paths: .agents/graphics/deliveries/ART-0035/planter_stone_flowers_large.p
 - [ ] Owner reviews the specification; keep `requested` until then.
 
 ## Graphics specialist checklist
-- [ ] All required clean PNGs produced.
-- [ ] SHA-256 manifest written (pixel_size, origin, facing, footprint); mark `delivered`.
+- [x] All required clean PNGs produced.
+- [x] SHA-256 manifest written; review anchors measured, scene footprint/calibration explicitly pending.
 
 ## QA checklist
 - [ ] Independent visual review at Godot native scale; mark `reviewed`.
 
 ## Integration checklist
 - [ ] Registered assets and room relayout (v0015) tested; PR merged; mark `integrated`.
+
+## تفويض التنفيذ 2026-11-10
+
+طلب المالك متابعة الرسوم المطلوبة بعد دمج الحزم المعتمدة. Agent: codex؛ الفرع codex/art-0034-0035-coast-plants. كل عنصر PNG مستقل عبر builtin_image_gen. لا تفعيل تلقائي للأصول الجديدة، ولا إعادة توليد لأساس الماء القائم.
+
+تسليم الصور المستقلة ونسخ المراجعة والطلبات والبصمات ولقطة Godot فعلية اكتمل. الحالة needs_review، وتركيب الخريطة لم ينفذ.

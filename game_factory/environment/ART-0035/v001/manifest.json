@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "art_request": "ART-0035",
+  "task_id": "TASK-0102",
+  "agent": "codex",
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "production_active": false,
+  "generation_cache_required": false,
+  "source_count": 9,
+  "items": [
+    {
+      "id": "planter_stone_flowers_large",
+      "master_path": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_large.png",
+      "sha256": "e489868e43b8e8e736a91b04d07190a5d11f9296534c955120eb4bdcee06b389",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        66,
+        110,
+        1456,
+        871
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          761.0,
+          871
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "planter_stone_flowers_large",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/planter_stone_flowers_large.png",
+      "native_review_canvas": [
+        192,
+        160
+      ],
+      "native_review_sha256": "c80331bdfbb1f410bd95ea9eb106b284167a9718ec1b322ec77e818ec0c77ea8",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/planter_stone_flowers_large.txt"
+    },
+    {
+      "id": "planter_stone_flowers_medium",
+      "master_path": "assets_hd/plants/coastal_garden/v001/planter_stone_flowers_medium.png",
+      "sha256": "d2c654d4753941571bda27e633f0d5eea496e55753fbf80fada2bfd18fbaf9eb",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        252,
+        111,
+        1268,
+        856
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          760.0,
+          856
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "planter_stone_flowers_medium",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/planter_stone_flowers_medium.png",
+      "native_review_canvas": [
+        160,
+        128
+      ],
+      "native_review_sha256": "88cf6ba8bb05c84916906b478f35a50e774ae3305696242614830a98e2e2ccbd",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/planter_stone_flowers_medium.txt"
+    },
+    {
+      "id": "palm_clump_front_left",
+      "master_path": "assets_hd/plants/coastal_garden/v001/palm_clump_front_left.png",
+      "sha256": "703b289b91da084d9434578538259d15b2c79639233c3b20e4529145bd59f934",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "bounds_alpha_128": [
+        127,
+        59,
+        1292,
+        945
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          709.5,
+          945
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "palm_clump_front_left",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/palm_clump_front_left.png",
+      "native_review_canvas": [
+        160,
+        192
+      ],
+      "native_review_sha256": "a5167cb2e7a017cb26a0d98149fcfbfa75c6d0d1310e51073b1b97b928afaa03",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/palm_clump_front_left.txt"
+    },
+    {
+      "id": "palm_clump_front_right",
+      "master_path": "assets_hd/plants/coastal_garden/v001/palm_clump_front_right.png",
+      "sha256": "155470fe06297ed35106e7249497318d199c92b52950b849d4caa0db00a2eb63",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        188,
+        119,
+        1355,
+        847
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          771.5,
+          847
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "palm_clump_front_right",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/palm_clump_front_right.png",
+      "native_review_canvas": [
+        160,
+        192
+      ],
+      "native_review_sha256": "218dd9942101a1d07be143cc70917a472b0fbb26d72dffaf7ab6061597eb99f0",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/palm_clump_front_right.txt"
+    },
+    {
+      "id": "flower_mound_white",
+      "master_path": "assets_hd/plants/coastal_garden/v001/flower_mound_white.png",
+      "sha256": "504e7dec761646bd547dc1e75b21c0e22f4ad2f96cd1624ac4301cb8d8934ae2",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        155,
+        130,
+        1385,
+        893
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          770.0,
+          893
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "flower_mound_white",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/flower_mound_white.png",
+      "native_review_canvas": [
+        160,
+        112
+      ],
+      "native_review_sha256": "2dd6cbd74f2bf2db6e0e114f986f9cbe9804e1c4c27f7e4fe552b239565ce978",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/flower_mound_white.txt"
+    },
+    {
+      "id": "flower_mound_blue",
+      "master_path": "assets_hd/plants/coastal_garden/v001/flower_mound_blue.png",
+      "sha256": "c303c9d4e12f571a53a7899c90a84e3295edaf95893ac60b7a6922c3f43b387a",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        107,
+        309,
+        1147,
+        1003
+      ],
+      "origin": {
+        "method": "alpha128_bbox_bottom_center",
+        "pixels": [
+          627.0,
+          1003
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "flower_mound_blue",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/flower_mound_blue.png",
+      "native_review_canvas": [
+        160,
+        112
+      ],
+      "native_review_sha256": "38eec294bd5b4ebf01686055d31ebdaaf2180d28aeacee38316192bc0c7e1a94",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/flower_mound_blue.txt"
+    },
+    {
+      "id": "ivy_tuft_wall_a",
+      "master_path": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_a.png",
+      "sha256": "29d0ff1c7c5057d8c97aa6f5e2a17bf3a0b3b61154159ad04ef13c38eaf6c9a9",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        130,
+        107,
+        1088,
+        1165
+      ],
+      "origin": {
+        "method": "alpha128_bbox_top_center",
+        "pixels": [
+          609.0,
+          107
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "ivy_tuft_wall_a",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/ivy_tuft_wall_a.png",
+      "native_review_canvas": [
+        128,
+        160
+      ],
+      "native_review_sha256": "4bbf2ff044b963446e4399fe15f33c12832b596011f7d7dc6b5cb6a1f8122dd0",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/ivy_tuft_wall_a.txt"
+    },
+    {
+      "id": "ivy_tuft_wall_b",
+      "master_path": "assets_hd/plants/coastal_garden/v001/ivy_tuft_wall_b.png",
+      "sha256": "9627183ff97e9a31b82b8dc061fa842136cbd3bb35e7609e8445e5dc8f42be41",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        82,
+        41,
+        1160,
+        1195
+      ],
+      "origin": {
+        "method": "alpha128_bbox_top_center",
+        "pixels": [
+          621.0,
+          41
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "ivy_tuft_wall_b",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/ivy_tuft_wall_b.png",
+      "native_review_canvas": [
+        128,
+        160
+      ],
+      "native_review_sha256": "74454c9712331ed05012273b1fee5ca842f663a1b939b872523c1efabd90b540",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/ivy_tuft_wall_b.txt"
+    },
+    {
+      "id": "hanging_vine_long",
+      "master_path": "assets_hd/plants/coastal_garden/v001/hanging_vine_long.png",
+      "sha256": "7467570e5a66d12c1555dad1d8c2cf6703839ad2c540fd22510d7bdf03e99953",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        330,
+        24,
+        697,
+        1481
+      ],
+      "origin": {
+        "method": "alpha128_bbox_top_center",
+        "pixels": [
+          513.5,
+          24
+        ],
+        "status": "geometric_review_anchor_not_scene_calibration"
+      },
+      "facing": "hanging_vine_long",
+      "footprint": null,
+      "footprint_status": "needs_scene_measurement",
+      "native_review_path": "game_factory/environment/ART-0035/v001/native_review/hanging_vine_long.png",
+      "native_review_canvas": [
+        160,
+        256
+      ],
+      "native_review_sha256": "1d5a8373b7bded35062ad9805593d13e479490a66c3b36c4553ff81d27b5d043",
+      "runtime_scale": null,
+      "placement": null,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "generation_tool": "builtin_image_gen",
+      "generation_model": "unknown_not_exposed_by_tool",
+      "source_generation_mode": "individual_request",
+      "request_path": "game_factory/environment/ART-0035/v001/requests/hanging_vine_long.txt",
+      "native_review_source_region": [
+        35,
+        17,
+        962,
+        1536
+      ],
+      "native_review_derivation": "crop transparent outer margin of this individual master, retain all nonzero alpha, then nearest-neighbor fit; master unchanged"
+    }
+  ],
+  "references": [
+    {
+      "path": "assets_hd/plants/flowers_white/flowers_white_01.png",
+      "sha256": "98a2b1ed4d455c6b4c1bb3d41f62010fc51bd6c2a610794253dac07094ca3ba0",
+      "role": "plant_style"
+    },
+    {
+      "path": "map_factory/references/hero_room_01_target_20261103.png",
+      "sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "role": "composition"
+    },
+    {
+      "path": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png",
+      "sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4",
+      "role": "planter_limestone_material"
+    }
+  ],
+  "cost_usd": null,
+  "tokens": null
+}
