@@ -6,7 +6,7 @@ agent: codex
 branch: codex/hero-room-b1-target
 depends_on: TASK-0134
 issue: none
-art_request: ART-0019,ART-0039,ART-0011,ART-0025
+art_request: ART-0019
 touches: game_factory/environment/batch_B1_20261110,.agents/tasks/TASK-0030_hero_room_study_table_views.md,.agents/graphics/requests/ART-0019_hero_room_study_table_views.md,.agents/graphics/requests/ART-0011_hero_room_blue_white_planter.md,.agents/graphics/requests/ART-0025_hero_room_entrance_stairs.md,.agents/graphics/requests/ART-0039_hero_room_wooden_stool.md,.agents/graphics/deliveries/ART-0019,.agents/graphics/deliveries/ART-0039,.agents/graphics/deliveries/ART-0011,.agents/graphics/deliveries/ART-0025,assets_hd/furniture/study_table_views/v001,assets_hd/furniture/study_stool/v001,assets_hd/plants/blue_white_planter/v001,assets_hd/architecture/entrance_stairs/v001,game_factory/environment/ART-0019/v001,game_factory/environment/ART-0039/v001,game_factory/environment/ART-0011/v001,game_factory/environment/ART-0025/v001
 test: python tools/graphics_validation.py --changed; python tools/run_tests.py --changed
 done_when: Seven independent B1 RGBA masters and request copies have measured metadata, native reviews, real Godot captures, tests and one draft PR; owner review and integration remain separate.

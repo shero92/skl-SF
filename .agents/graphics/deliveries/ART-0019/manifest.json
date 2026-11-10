@@ -365,5 +365,23 @@
       "reason": "Nonzero pale backdrop alpha and missing transparent cutout",
       "quality_status": "needs_regeneration"
     }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0019/hero_study_table_south.png",
+      "sha256": "1b3ea8a1ee93dcbb6d01747ec70462f0664422e32b23b37a68badb7a0cbb6ff3"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0019/hero_study_table_north.png",
+      "sha256": "15c67a248c310c1feb3754eeebb0572e3152090d9c1f94ea71be3202f86fedbc"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0019/hero_study_table_east.png",
+      "sha256": "36c47434340e3f1cd52c78e074907b30aff653596b08e784a6479ce33ca00b7b"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0019/hero_study_table_west.png",
+      "sha256": "a33878c952c3dcb9790cbbc6a69c34c47bfd2b10e201730bb4591f79affa0acb"
+    }
   ]
 }
