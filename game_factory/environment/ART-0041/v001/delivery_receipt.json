@@ -1,0 +1,192 @@
+{
+  "task_id": "TASK-0161",
+  "request_id": "ART-0041",
+  "destination": "H:\\shining force\\skl-SF\\.worktrees\\art-skirmish-field",
+  "cache_required": false,
+  "owner_main_checkout_written": false,
+  "selected_assets": 6,
+  "generation_calls": 7,
+  "RGB_originals_preserved": 2,
+  "files": [
+    {
+      "path": "assets_hd/floor/skirmish_field/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/floor/skirmish_field/v001/field_grass_a.png",
+      "sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf"
+    },
+    {
+      "path": "assets_hd/floor/skirmish_field/v001/field_grass_b.png",
+      "sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1"
+    },
+    {
+      "path": "assets_hd/props/skirmish_rock/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/props/skirmish_rock/v001/field_rock_block.png",
+      "sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24"
+    },
+    {
+      "path": "assets_hd/decor/skirmish_markers/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/decor/skirmish_markers/v001/marker_active.png",
+      "sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc"
+    },
+    {
+      "path": "assets_hd/decor/skirmish_markers/v001/marker_move.png",
+      "sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935"
+    },
+    {
+      "path": "assets_hd/decor/skirmish_markers/v001/marker_target.png",
+      "sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205"
+    },
+    {
+      "path": "assets_hd/decor/skirmish_markers/v001/rejected/marker_active_attempt_01.png",
+      "sha256": "2f294f0129355d532bbc5b7115a2ab78d5cc7207a9ea62b40120dc5ccf1fa46f"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/active_fix_prompt.txt",
+      "sha256": "5b6cb7514bc87891ca52b7636f109fb50ea03ff3f48ba3887e18ed3c3867ab5d"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/generation_records.json",
+      "sha256": "5e9fcf3178a1e85783ade2b87bb4afb1fda61782c0b33061de811d1d440a94cb"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/generation_sources/field_grass_a_rgb.png",
+      "sha256": "5f3c01ef47a2603ace8e423dc59c7699829fc85d0eee65fe8c6d7f221f3764a0"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/generation_sources/field_grass_b_rgb.png",
+      "sha256": "ee17d14947cc7e2112a1a52ee31433f813901f2f61edd91a3a73ed69f1e46d24"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/godot_asset_review.png",
+      "sha256": "2b25b55287b6cb7f76440d2bd5f18c2872e00e4fc564656798210bd26b2d4edd"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/godot_review_receipt.json",
+      "sha256": "d910e0ae0ead994b324a8c8a46ec64ad86d74370636f533df2862937a3995f7b"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/godot_skirmish_review.png",
+      "sha256": "b62232edee2d30c2381a2c86d9cceb91c616ee7a9ac096cd333a688a8ad4733c"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/native_review/field_grass_a.png",
+      "sha256": "77a7ca9d2d06d9ff4bd5a570d19d9bc45b050f7614e56e458642d515031c84d5"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/native_review/field_grass_b.png",
+      "sha256": "019292af834c58b5d13a0e3267971e1010b9b8e468b8bd812d31f2eb8bc09ec4"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/native_review/field_rock_block.png",
+      "sha256": "75b0331279f1c0e3e8aa420690d0829e9d812e27bbeeccdc807b346155400db2"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/native_review/marker_active.png",
+      "sha256": "6846545bb9302f0f5212e7ca3c0ecad7f982bf13242ca86666be07e33e43961a"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/native_review/marker_move.png",
+      "sha256": "fbe9c2e66b4ccf4135eab05183da7263a60c1151e645d7759e2e41cdf3aa99dc"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/native_review/marker_target.png",
+      "sha256": "3380667b38416bbaa805b37deda8826891a1bde8ade0dc07aeb76d3b375acd3f"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/prepare_review.py",
+      "sha256": "c71adff29cc3ed29f8e7566bd04e171dee50328e7dd6870a8e4c703412bfd1b1"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/qa_battle.gd",
+      "sha256": "35c52b1966db3aefdc7067664f7503e56c21dbf7310fad934816cc94613ffec5"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/README.md",
+      "sha256": "8eca5ffb687bc92f3c81431c4dc111c81a27bcc2733b6d4e40c8fa99d3f7e25f"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/requests/field_grass_a.txt",
+      "sha256": "6afac0836db8cfaaca0a10bbc89827bfee35316ca9cb33799d8b667d278a7b87"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/requests/field_grass_b.txt",
+      "sha256": "7790a10a5e814dc2a97e15e90ae39e8daa5649fba43e7473b1758f639d8e5ce8"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/requests/field_rock_block.txt",
+      "sha256": "3c4789dafed21ed4d1b99e3f01c56091d7ad78db6aa3e94e3008887d20338be0"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/requests/marker_active.txt",
+      "sha256": "ca2a2b75c5efd4f3ee3aa5e34aa638adb91ba4881e32ff45cfffefedece03c16"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/requests/marker_active_initial.txt",
+      "sha256": "b032495716e5931dc89517d69f9b66e13f51d5603b4c2ada0f09d80c247c461c"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/requests/marker_move.txt",
+      "sha256": "a4518b7b51b98a7a0aafb0eafc69ddb1ba9f93646fa25b1aed92f530458b255b"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/requests/marker_target.txt",
+      "sha256": "35b3833f0759c23dec4e5b8d351b206871307f852a8ad882c18a1a2db1a4f9d6"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/review.gd",
+      "sha256": "64319823c2aa3b0082c5f10d280c832c096b48bbb1f315c2b20cdf2231c9c5fa"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/technical_qa.json",
+      "sha256": "cb3e756daef0e024f7216ee701e7ec898de1a3fe1fd0caf5b14fec11961337d6"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/verification.json",
+      "sha256": "bed1156a9b98a6f817aee07bd9a6f7e2a837504884308357dff0cba35ff729f1"
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/verify_delivery.py",
+      "sha256": "15482697836e957b54bc14a9fc4761c4e0b1e3ec37a7f1c9420da06a405ffdb7"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/field_grass_a.png",
+      "sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/field_grass_b.png",
+      "sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/field_rock_block.png",
+      "sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/manifest.json",
+      "sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/marker_active.png",
+      "sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/marker_move.png",
+      "sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/marker_target.png",
+      "sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205"
+    }
+  ]
+}

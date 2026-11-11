@@ -1,0 +1,45 @@
+{
+  "minimum_master_sizes_passed": true,
+  "all_native_density_at_least4x": true,
+  "unique_selected_masters": 6,
+  "RGB_floor_exports_exact": true,
+  "floors_alpha255": true,
+  "markers_cardinal_strokes_2px": true,
+  "markers_centre_alpha0": true,
+  "seam_metrics": [
+    {
+      "first": "field_grass_a",
+      "second": "field_grass_a",
+      "seam_x_mean_abs": 6.651041666666667,
+      "seam_y_mean_abs": 4.791666666666667,
+      "interior_mean_abs": 9.104456018518519,
+      "note": "numeric evidence only; native checkerboard still reviewed in Godot"
+    },
+    {
+      "first": "field_grass_a",
+      "second": "field_grass_b",
+      "seam_x_mean_abs": 6.625,
+      "seam_y_mean_abs": 4.96875,
+      "interior_mean_abs": 9.104456018518519,
+      "note": "numeric evidence only; native checkerboard still reviewed in Godot"
+    },
+    {
+      "first": "field_grass_b",
+      "second": "field_grass_a",
+      "seam_x_mean_abs": 7.109375,
+      "seam_y_mean_abs": 5.036458333333333,
+      "interior_mean_abs": 8.441426917989418,
+      "note": "numeric evidence only; native checkerboard still reviewed in Godot"
+    },
+    {
+      "first": "field_grass_b",
+      "second": "field_grass_b",
+      "seam_x_mean_abs": 5.875,
+      "seam_y_mean_abs": 4.380208333333333,
+      "interior_mean_abs": 8.441426917989418,
+      "note": "numeric evidence only; native checkerboard still reviewed in Godot"
+    }
+  ],
+  "owner_approved": true,
+  "production_active": false
+}
