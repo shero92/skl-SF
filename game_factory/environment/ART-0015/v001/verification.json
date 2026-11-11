@@ -1,0 +1,26 @@
+{
+  "task_id": "TASK-0026",
+  "request_id": "ART-0015",
+  "tests": {
+    "command": "python -u tools/run_tests.py --changed --timeout 120",
+    "passed": 85,
+    "total": 85,
+    "exit_code": 0
+  },
+  "graphics_validation": {
+    "command": "python tools/graphics_validation.py --changed",
+    "exit_code": 0,
+    "png_checked": 0,
+    "scope_note": "Candidate masters excluded from production validator; prepare_review validates two sources separately"
+  },
+  "independent_sources": 2,
+  "nonselected_attempts": 4,
+  "actual_godot_capture": true,
+  "owner_approved": false,
+  "production_active": false,
+  "floor_depth_decision": "D1 unresolved; source aspects closer to D1-a proposals; no map/camera changes",
+  "remaining": [
+    "Owner visual review",
+    "Exact floor projection/footprint and placement calibration"
+  ]
+}
