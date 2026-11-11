@@ -1,0 +1,87 @@
+{
+  "task_id": "TASK-0013",
+  "request_id": "ART-0002",
+  "cache_required": false,
+  "files": [
+    {
+      "path": "assets_hd/background/drifting_clouds/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/background/drifting_clouds/v001/hero_cloud_01.png",
+      "sha256": "d6e7b63a8b39126ebaad8325c6cb6d2f47bbfbffee8c10f21388855cf3305248"
+    },
+    {
+      "path": "assets_hd/background/drifting_clouds/v001/hero_cloud_02.png",
+      "sha256": "6872ac111c374e98ebcb280c7713288d3e1e4b01a3c1045e1b7492ea8327d497"
+    },
+    {
+      "path": "assets_hd/background/drifting_clouds/v001/hero_cloud_03.png",
+      "sha256": "63d281c077808a3345340dafc1073bad60808c6d883ac01ab5d08a1858b13d00"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/generation_records.json",
+      "sha256": "9df66689d677cd42d4ae351c5e9b69b521baa6618e22626a5a2729d54cf671e2"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/godot_native_review.png",
+      "sha256": "8f66c94f89bf115ade6381be25ab9929442698646c663171dfefb33757ead728"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/godot_review_receipt.json",
+      "sha256": "487a06f5c10e1f61df5b9060db4ad6cd0c798e274d0068c2f793e128c7513743"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/manifest.json",
+      "sha256": "0bbee75a0f3ef53addb1de618c9c5efe948d6d7f68065d01bf64f1d13dca888f"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/prepare_review.py",
+      "sha256": "915a2c877001c8e50d2a2917e25f22406ba828b243fc516df931ab85cd5a68dd"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/README.md",
+      "sha256": "9a014f27d6078ac6b180231e5b3a964ac0590d0cbc7964383b11a10ec5fb805c"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/review.gd",
+      "sha256": "20c673346d73434b250296a797827a6858a59fefd1cdf4d7f52ad89badb5c794"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/technical_qa.json",
+      "sha256": "fd19c04ccbb6967279a90f26afb8588c6305c568b98f63da3b2b8651e8ef8e23"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/verification.json",
+      "sha256": "0273e7bf44d8468a5fcf84a751a9e2a2f6d13f787e41d12c49a42c3273cbc5af"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/native_review/hero_cloud_01.png",
+      "sha256": "4902fc37ea6965ef15adaf77de27091043a7cbdd157b4e432a916e20bb4be691"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/native_review/hero_cloud_02.png",
+      "sha256": "378165ea8176f909b9c8271c87d2477f83fa27d053771b56a56318c7129795fa"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/native_review/hero_cloud_03.png",
+      "sha256": "bfedaec78a94de61984487e8eb4184d79ec8f53df67582e89978d02379719c17"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/requests/hero_cloud_01.txt",
+      "sha256": "02f6afd9f35de415f5e8e9e8fd17e5638d863a75fea5ca902dfcd2fe577e6cf3"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/requests/hero_cloud_02.txt",
+      "sha256": "ae00e707e4b76a434c5f3d7c980c130a96816dece5bfeab6d39a378a57b94124"
+    },
+    {
+      "path": "game_factory/environment/ART-0002/v001/requests/hero_cloud_03.txt",
+      "sha256": "034b5e7f160a604a4f9f249912b1f24eafc832bf610acdc4b4b41ab6e3f8fe1e"
+    }
+  ]
+}

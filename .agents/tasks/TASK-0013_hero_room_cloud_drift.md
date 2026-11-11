@@ -1,6 +1,6 @@
 ---
 id: TASK-0013
-status: in_progress
+status: review
 owner: codex
 branch: codex/hero-room-cloud-variants
 agent: codex
@@ -31,3 +31,5 @@ art_request: ART-0002
 - Next: owner reviews the linked request, confirms reference provenance/scale and supplies specialist art.
 
 Owner next graphics assignment: three independent cloud silhouettes per authenticated current Hero Room target; sources, metadata and real Godot review. No runtime scrolling implementation or approval.
+
+Delivered3 independent cloud PNGs, native192x64 review and real Godot capture. Tests86/86 passed; graphics_validation exit0/png0 (candidate scope excluded), independent source QA3/3. Owner review and runtime scrolling/wrap integration pending. Next: review candidate density/alpha and integrate scrolling.

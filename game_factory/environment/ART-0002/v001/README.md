@@ -15,3 +15,5 @@
 المرجع الحالي موثق ببصمته في manifest؛ للأسلوب والتكوين فقط دون قص/لصق/تتبع. الأصل cloud_01 موثق ببصمته في generation_records.
 
 إعادة المعاينة: python game_factory/environment/ART-0002/v001/prepare_review.py ثم Godot --script res://game_factory/environment/ART-0002/v001/review.gd.
+
+الفحوص86/86 ناجحة؛ graphics_validation خرج0 ويغطي0PNG لأن Masters خارج نطاقه، وفحص مستقل يتحقق من المصادر الثلاثة. لا اعتماد بصري أو اختبار التفاف الحركة.

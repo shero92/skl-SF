@@ -1,0 +1,20 @@
+{
+  "task_id": "TASK-0013",
+  "tests": {
+    "command": "python tools/run_tests.py --changed --timeout 120",
+    "passed": 86,
+    "total": 86,
+    "exit_code": 0
+  },
+  "graphics_validation": {
+    "exit_code": 0,
+    "png_checked": 0,
+    "note": "Candidate masters outside production validator scope; independent prepare_review validates3 sources"
+  },
+  "owner_approved": false,
+  "runtime_scrolling_verified": false,
+  "remaining": [
+    "Owner density/palette review",
+    "Runtime scrolling and wrap spacing integration"
+  ]
+}
