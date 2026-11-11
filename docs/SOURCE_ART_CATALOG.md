@@ -12,7 +12,7 @@
 
 بعد كل تسليم: شغّل `python tools/source_art_catalog.py --root . --write` في مجلد المشروع الجامع، ثم `python tools/source_art_catalog.py --root . --check`. تحفظ الأداة فقط هذا الفهرس ودليله؛ لا تعدّل PNG أو manifests تاريخية. فهارس INDEX.md الآلية تُحدّث على main وفق سير المشروع.
 
-العدد: 100 مصادر مختارة و26 محاولات مرفوضة في 24 manifests.
+العدد: 103 مصادر مختارة و33 محاولات مرفوضة في 29 manifests.
 
 | ART | القطعة | الفئة | الاختيار | المصدر |
 | --- | --- | --- | --- | --- |
@@ -110,6 +110,16 @@
 | ART-0038 | wall_straight_window_opening | architecture | selected | [wall_straight_window_opening.png](../assets_hd/architecture/window_wall/v002/wall_straight_window_opening.png) |
 | ART-0038 | wall_straight_window_opening_attempt_03 | architecture | rejected | [wall_straight_window_opening_attempt_03.png](../assets_hd/architecture/window_wall/v002/rejected/wall_straight_window_opening_attempt_03.png) |
 | ART-0039 | study_wooden_stool | furniture | selected | [study_wooden_stool.png](../assets_hd/furniture/study_stool/v001/study_wooden_stool.png) |
+| ART-0040 | hero_wall_lantern_east | lighting | selected | [hero_wall_lantern_east.png](../assets_hd/lighting/east_wall_lantern/v001/hero_wall_lantern_east.png) |
+| ART-0040 | hero_wall_lantern_east_attempt_01 | lighting | rejected | [hero_wall_lantern_east_attempt_01.png](../assets_hd/lighting/east_wall_lantern/v001/rejected/hero_wall_lantern_east_attempt_01.png) |
+| ART-0042 | hero_rear_left_ruined_wall_window | architecture | selected | [hero_rear_left_ruined_wall_window.png](../assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png) |
+| ART-0042 | hero_rear_left_ruined_wall_window_attempt_01 | architecture | rejected | [hero_rear_left_ruined_wall_window_attempt_01.png](../assets_hd/architecture/rear_left_window_wall/v001/rejected/hero_rear_left_ruined_wall_window_attempt_01.png) |
+| ART-0043 | hero_rear_right_wall_arched_door_niche | architecture | selected | [hero_rear_right_wall_arched_door_niche.png](../assets_hd/architecture/rear_right_door_niche/v001/hero_rear_right_wall_arched_door_niche.png) |
+| ART-0043 | hero_rear_right_wall_arched_door_niche_attempt_01 | architecture | rejected | [hero_rear_right_wall_arched_door_niche_attempt_01.png](../assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_01.png) |
+| ART-0043 | hero_rear_right_wall_arched_door_niche_attempt_02 | architecture | rejected | [hero_rear_right_wall_arched_door_niche_attempt_02.png](../assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_02.png) |
+| ART-0044 | hero_west_curved_side_wall_attempt_01 | architecture | rejected | [hero_west_curved_side_wall_attempt_01.png](../assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_01.png) |
+| ART-0044 | hero_west_curved_side_wall_attempt_02 | architecture | rejected | [hero_west_curved_side_wall_attempt_02.png](../assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_02.png) |
+| ART-0045 | hero_east_curved_side_wall_attempt_01 | architecture | rejected | [hero_east_curved_side_wall_attempt_01.png](../assets_hd/architecture/curved_east_side_wall/v001/rejected/hero_east_curved_side_wall_attempt_01.png) |
 | ART-0029 | hero_golden_cyclone_001 | character | selected | [hero_golden_cyclone_001.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_001.png) |
 | ART-0029 | hero_golden_cyclone_002 | character | selected | [hero_golden_cyclone_002.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_002.png) |
 | ART-0029 | hero_golden_cyclone_003 | character | selected | [hero_golden_cyclone_003.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_003.png) |

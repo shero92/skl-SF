@@ -1,0 +1,146 @@
+{
+  "task_id": "TASK-0157",
+  "destination": "H:\\shining force\\skl-SF\\.worktrees\\art-curved-side-walls",
+  "qualified_production_count": 0,
+  "candidate_count": 3,
+  "cache_required": false,
+  "owner_main_checkout_written": false,
+  "files": [
+    {
+      "path": "assets_hd/architecture/curved_west_side_wall/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_01.png",
+      "sha256": "8ba1f9ffe11509a62ab89cb16abb8db71a9960220f5179a54b23d73334d0ef19"
+    },
+    {
+      "path": "assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_02.png",
+      "sha256": "69a3e8d903e7371f666ff965a6d19e35de6d87517ebb2916a7581251b20e29c6"
+    },
+    {
+      "path": "assets_hd/architecture/curved_east_side_wall/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/architecture/curved_east_side_wall/v001/rejected/hero_east_curved_side_wall_attempt_01.png",
+      "sha256": "36aad081a47245286b761f297ee2281f58e7f4da2c818c0c7b1a38f0c48cadd1"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/godot_candidate_review.png",
+      "sha256": "3a70037553c7269e5772b079a87a7f7074d15a64a8d44ae3539d440d5e029512"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/godot_review_receipt.json",
+      "sha256": "eb4fd381c4b4ed45e7603297fc373a8abc537fb6e26bb05291c1ba3cc8414a04"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/manifest.json",
+      "sha256": "b4732ce1148a8c4829f525f5d6e050f70423d1fe08d8edb7d9e989acc8e8319e"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/native_review/hero_west_curved_side_wall_attempt_01.png",
+      "sha256": "8dc069cb0637d387bf28419839b8bff7783506630806b25e24dcaefd40c709cd"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/native_review/hero_west_curved_side_wall_attempt_02.png",
+      "sha256": "c3172a6b3e8b0a5530457758e4f3fa91645b4b6340f188033fd2a6299af27ffd"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/README.md",
+      "sha256": "b0fe3da9d4b5284aef735f8a7b5c8206bf5ab1e53a2d45e94c2bb9b6e078d804"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/requests/hero_west_curved_side_wall_attempt_01.txt",
+      "sha256": "c9b14f1eb80b563c128e968b7f7edf0b12443ac9512996d7b94c921da1973026"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/requests/hero_west_curved_side_wall_attempt_02.txt",
+      "sha256": "0b0b2c2d0233a7ed2cbedee306ebe304e472ff015d6b0fb346e862d77fabdf35"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/technical_qa.json",
+      "sha256": "1639166bc6da3b82f0829a4b720ddb3bbc1f9a6a1f2bb95d4639e54cdf07796d"
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/verification.json",
+      "sha256": "5560d26b5384758d0d795f4c8f6c43e9a478a4744b098711f225b8744efadf70"
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/godot_candidate_review.png",
+      "sha256": "e4b75f6e719ee3ba707abb36b87c829868f8a37427c4b5a96dabe6ed83c62369"
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/godot_review_receipt.json",
+      "sha256": "39c774237f469fb33732148210a524912ac6ce11bcf310f21ef8b84a98d10fb3"
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/manifest.json",
+      "sha256": "69dba03e2d93bd9f399ae58254e78632b1dea9611c12b3930d8e1f44580e7866"
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/native_review/hero_east_curved_side_wall_attempt_01.png",
+      "sha256": "e4cae8dad0cee091e9f484e598fa0a64b7582a1d499d3cd5266015b1510b6dc7"
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/README.md",
+      "sha256": "ed3ac903d8c1ca7a8edf8c0476ccc5365027d36dd3d8e63d95e1dac68ed10a59"
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/requests/hero_east_curved_side_wall_attempt_01.txt",
+      "sha256": "9578891220acb448ed888632a413066da0b07de60e0146a8e4653efc5588555b"
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/technical_qa.json",
+      "sha256": "00d3301da3d1b49d87ca7a98abe423731023d47cdf25716580b5a58141387bfa"
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/verification.json",
+      "sha256": "5560d26b5384758d0d795f4c8f6c43e9a478a4744b098711f225b8744efadf70"
+    },
+    {
+      "path": "game_factory/environment/curved_side_walls_20261111/batch_manifest.json",
+      "sha256": "68eed8cfff88fc7b452eea6ddb51a5528ba2ff12f8171b6be91d36d3381d7a3a"
+    },
+    {
+      "path": "game_factory/environment/curved_side_walls_20261111/generation_records.json",
+      "sha256": "254af0575b8766121888b1aa72af5d7f8dd5d390f39fac7e933888e098f152d8"
+    },
+    {
+      "path": "game_factory/environment/curved_side_walls_20261111/prepare_review.py",
+      "sha256": "dfc401fd28cb072ac32c09643c24cf0d3dc8cf5759ff183162a7b1e105599a1a"
+    },
+    {
+      "path": "game_factory/environment/curved_side_walls_20261111/README.md",
+      "sha256": "82a8b6599e1cebd71eb67b353488f38d371715dd854ce9328383188215629f68"
+    },
+    {
+      "path": "game_factory/environment/curved_side_walls_20261111/review.gd",
+      "sha256": "a7ba697d509f3c2970bad15cdf9db047da91c325351c8f11c168ab64700dfc44"
+    },
+    {
+      "path": "game_factory/environment/curved_side_walls_20261111/verify_candidates.py",
+      "sha256": "150cc34f9180f361c5a77ab0cab11ea411cec3fc0354c007f169f45e76613ed9"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0044/manifest.json",
+      "sha256": "b4732ce1148a8c4829f525f5d6e050f70423d1fe08d8edb7d9e989acc8e8319e"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0044/rejected/hero_west_curved_side_wall_attempt_01.png",
+      "sha256": "8ba1f9ffe11509a62ab89cb16abb8db71a9960220f5179a54b23d73334d0ef19"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0044/rejected/hero_west_curved_side_wall_attempt_02.png",
+      "sha256": "69a3e8d903e7371f666ff965a6d19e35de6d87517ebb2916a7581251b20e29c6"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0045/manifest.json",
+      "sha256": "69dba03e2d93bd9f399ae58254e78632b1dea9611c12b3930d8e1f44580e7866"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0045/rejected/hero_east_curved_side_wall_attempt_01.png",
+      "sha256": "36aad081a47245286b761f297ee2281f58e7f4da2c818c0c7b1a38f0c48cadd1"
+    }
+  ]
+}

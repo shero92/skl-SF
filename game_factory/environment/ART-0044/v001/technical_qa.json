@@ -1,0 +1,23 @@
+{
+  "candidate_count": 2,
+  "rgba": true,
+  "unique_candidate_hashes": 2,
+  "master_4x_gate_passed": false,
+  "qualified_production_count": 0,
+  "owner_approved": true,
+  "production_active": false,
+  "actual_sizes": [
+    [
+      877,
+      1794
+    ],
+    [
+      878,
+      1792
+    ]
+  ],
+  "required_minimum": [
+    920,
+    1880
+  ]
+}
