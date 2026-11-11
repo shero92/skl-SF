@@ -24993,14 +24993,14 @@
         120
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          40,
+          20
         ],
         "offset": [
           0,
-          0
+          -10
         ]
       },
       "y_sort": true,
@@ -25023,7 +25023,7 @@
         "master_sha256": "7480fde019f3e1cf63059109e1f08a7deaaa29ded16851eb550e5d62a548d475",
         "request_id": "ART-0006"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25101,14 +25101,14 @@
         90
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          16,
+          10
         ],
         "offset": [
           0,
-          0
+          -5
         ]
       },
       "y_sort": true,
@@ -25131,7 +25131,7 @@
         "master_sha256": "f8622227f1085197dc47bd1ef96f29f03fb69d61302647de0e39e1392ab5c15e",
         "request_id": "ART-0024"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25263,14 +25263,14 @@
         100
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          140,
+          40
         ],
         "offset": [
           0,
-          0
+          -20
         ]
       },
       "y_sort": true,
@@ -25293,7 +25293,7 @@
         "master_sha256": "1b3ea8a1ee93dcbb6d01747ec70462f0664422e32b23b37a68badb7a0cbb6ff3",
         "request_id": "ART-0019"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25317,14 +25317,14 @@
         107
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          140,
+          40
         ],
         "offset": [
           0,
-          0
+          -20
         ]
       },
       "y_sort": true,
@@ -25347,7 +25347,7 @@
         "master_sha256": "15c67a248c310c1feb3754eeebb0572e3152090d9c1f94ea71be3202f86fedbc",
         "request_id": "ART-0019"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25371,14 +25371,14 @@
         110
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          100,
+          60
         ],
         "offset": [
           0,
-          0
+          -30
         ]
       },
       "y_sort": true,
@@ -25401,7 +25401,7 @@
         "master_sha256": "36c47434340e3f1cd52c78e074907b30aff653596b08e784a6479ce33ca00b7b",
         "request_id": "ART-0019"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25425,14 +25425,14 @@
         110
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          100,
+          60
         ],
         "offset": [
           0,
-          0
+          -30
         ]
       },
       "y_sort": true,
@@ -25455,7 +25455,7 @@
         "master_sha256": "a33878c952c3dcb9790cbbc6a69c34c47bfd2b10e201730bb4591f79affa0acb",
         "request_id": "ART-0019"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25479,14 +25479,14 @@
         40
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          24,
+          12
         ],
         "offset": [
           0,
-          0
+          -6
         ]
       },
       "y_sort": true,
@@ -25508,7 +25508,7 @@
         "master_sha256": "4d0b2936583ff4abd81cf57ae2648d7d186f98701e2da72cb67a09d93bf9b86f",
         "request_id": "ART-0039"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25532,14 +25532,14 @@
         124
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          200,
+          36
         ],
         "offset": [
           0,
-          0
+          -18
         ]
       },
       "y_sort": true,
@@ -25562,7 +25562,7 @@
         "master_sha256": "116feab55c4a93c208f2c360e42f5f9e05dbd0d7ab072c02edd61641f45372b4",
         "request_id": "ART-0020"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25586,14 +25586,14 @@
         144
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          200,
+          36
         ],
         "offset": [
           0,
-          0
+          -18
         ]
       },
       "y_sort": true,
@@ -25616,7 +25616,7 @@
         "master_sha256": "fcb3079d48951276a1e245fa1bffdad591a5176282b6b002d66813b8733196c7",
         "request_id": "ART-0020"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25640,14 +25640,14 @@
         85
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          130,
+          24
         ],
         "offset": [
           0,
-          0
+          -12
         ]
       },
       "y_sort": true,
@@ -25670,7 +25670,7 @@
         "master_sha256": "eaf81250b1acb7893ad977767d973a879c48cc3491389e1550c15027d7083f22",
         "request_id": "ART-0008"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25694,14 +25694,14 @@
         150
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          50,
+          24
         ],
         "offset": [
           0,
-          0
+          -12
         ]
       },
       "y_sort": true,
@@ -25724,7 +25724,7 @@
         "master_sha256": "7a4194588eaada83f4e210d6d76701cf2c6c6ab65bc6ea200b1955923f9f2a6d",
         "request_id": "ART-0011"
       },
-      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-10",
@@ -25748,14 +25748,14 @@
         143
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
+          90,
           16
         ],
         "offset": [
           0,
-          0
+          -8
         ]
       },
       "y_sort": true,
@@ -25779,7 +25779,7 @@
         "master_sha256": "b9988dfa32702f3ff61dd07efe88d4fcbbb71b489639af3a41c6c87a7b01bbb3",
         "request_id": "ART-0005"
       },
-      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-11",
@@ -25803,14 +25803,14 @@
         144
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          30,
+          60
         ],
         "offset": [
           0,
-          0
+          -30
         ]
       },
       "y_sort": true,
@@ -25834,7 +25834,7 @@
         "master_sha256": "8b7f3c16b988e807a2e13bcc21e61b0778ef9db83c7bb870589b5c3b9d1c7044",
         "request_id": "ART-0005"
       },
-      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-11",
@@ -25858,14 +25858,14 @@
         144
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
+          90,
           16
         ],
         "offset": [
           0,
-          0
+          -8
         ]
       },
       "y_sort": true,
@@ -25889,7 +25889,7 @@
         "master_sha256": "34acf2630af2711a24973a5be029e7f9e61a7d2f011485a217a7667a9f99e6b3",
         "request_id": "ART-0005"
       },
-      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-11",
@@ -25913,14 +25913,14 @@
         144
       ],
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          30,
+          60
         ],
         "offset": [
           0,
-          0
+          -30
         ]
       },
       "y_sort": true,
@@ -25944,7 +25944,7 @@
         "master_sha256": "1c31d20f14e94579775a99195394fb1299572bbfb7dd03193ebb7d7891c1b827",
         "request_id": "ART-0005"
       },
-      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Collision is a provisional base footprint (TASK-0146), not owner-reviewed.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-11",
