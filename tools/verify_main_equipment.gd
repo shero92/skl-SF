@@ -46,6 +46,13 @@ func _run() -> void:
 	_check(not _main.is_equipment_open(), "I closes the menu")
 	_main._physics_process(0.016)
 	_check(_main.player.movement_enabled, "hero can move again")
+	# F3: the target painting as one backdrop (owner test); the map pieces hide, characters stay.
+	_main._unhandled_input(_key(KEY_F3))
+	var photo: Node = _main._room.get_node_or_null("PhotoBackdrop")
+	_check(_main.photo_mode and photo != null and photo.visible, "F3 shows the painting backdrop")
+	_check(not _main._room.get_node("Level1_Ground").visible and _main.player.is_visible_in_tree(), "map pieces hide, the hero stays")
+	_main._unhandled_input(_key(KEY_F3))
+	_check(not _main.photo_mode and not photo.visible and _main._room.get_node("Level1_Ground").visible, "F3 again brings the map pieces back")
 	_main.dialogue.open_dialogue("Test", ["hello"])
 	_main._unhandled_input(_key(KEY_I))
 	_check(not _main.is_equipment_open(), "I is ignored while a dialogue is open")

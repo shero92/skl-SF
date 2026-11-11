@@ -14,6 +14,13 @@ var equipment_menu: EquipmentMenu
 const MAP_ID := "hero_room_01"
 const BATTLE_SCENE := "res://scenes/battle/tactical_battle.tscn"
 const EDITOR_SCENE := "res://scenes/map_factory_editor.tscn"
+# Owner test (F3): show the target painting as one backdrop instead of the Map Factory pieces. Walking, NPCs
+# and blocked squares still come from the map. The painting is the reference file, used unchanged.
+const PHOTO_PATH := "res://map_factory/references/hero_room_01_target_20261103.png"
+static var keep_photo_mode: bool = false  # survives a visit to the editor or a battle
+var photo_mode: bool = false
+var _room: Node2D
+var _photo: Sprite2D
 # Gameplay data (spawn, NPCs, interaction spots) stays in the legacy room JSON.
 const GAMEPLAY_PATH := "res://map_factory/rooms/hero_room.json"
 
@@ -21,6 +28,7 @@ func _ready() -> void:
     # Always render the newest Map Factory version through the registry.
     var factory := RoomFactory.new()
     var room := factory.build_latest(MAP_ID, self)
+    _room = room
     var entities := RoomFactory.entities_parent(room)
     var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(GAMEPLAY_PATH))
     if typeof(data) != TYPE_DICTIONARY:
@@ -55,6 +63,9 @@ func _ready() -> void:
     camera.enabled = true
     add_child(camera)
 
+    if photo_mode or keep_photo_mode:
+        set_photo_mode(true)
+
     dialogue = DialogueUI.new()
     add_child(dialogue)
     weapons = WeaponSystemScript.load_default()
@@ -75,6 +86,36 @@ func _ready() -> void:
             "radius": info.get("radius", 100),
             "speaker": info.get("name", "NPC"), "lines": info.get("lines", [])
         })
+
+## Shows the target painting as the whole room picture (true) or the Map Factory pieces (false).
+func set_photo_mode(on: bool) -> bool:
+    if _room == null:
+        return false
+    if on and _photo == null:
+        var texture := load(PHOTO_PATH) as Texture2D
+        if texture == null:
+            push_warning("Photo backdrop not found: " + PHOTO_PATH)
+            return false
+        _photo = Sprite2D.new()
+        _photo.name = "PhotoBackdrop"
+        _photo.texture = texture
+        _photo.centered = false
+        _photo.z_index = 25  # above the hidden map levels, below characters
+        _room.add_child(_photo)
+    photo_mode = on
+    keep_photo_mode = on
+    var entities := RoomFactory.entities_parent(_room)
+    for child in _room.get_children():
+        if child == _photo:
+            child.visible = on
+        elif child.is_ancestor_of(entities):
+            for inner in child.get_children():
+                if inner != entities and inner is CanvasItem:
+                    inner.visible = not on
+        elif child != entities and child is CanvasItem:
+            child.visible = not on
+    return true
+
 
 func _physics_process(_delta: float) -> void:
     if player != null and dialogue != null:
@@ -115,6 +156,10 @@ func _unhandled_input(event: InputEvent) -> void:
     if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F2:
         get_viewport().set_input_as_handled()
         get_tree().change_scene_to_file(EDITOR_SCENE)  # hands-on room editor; Esc there returns to the room
+        return
+    if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F3:
+        get_viewport().set_input_as_handled()
+        set_photo_mode(not photo_mode)
         return
     if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_B:
         get_viewport().set_input_as_handled()
