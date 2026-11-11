@@ -12,3 +12,7 @@ These images may be used in the game. Rules that still apply: HD masters stay lo
 ## Not changed by this note
 - The Hero Room composition (`visual_approval` in the map snapshots) is a separate review of the whole room and stays false until the owner reviews a render of that room.
 - Catalog entries keep their own QA status fields; this note does not edit them.
+
+## قرار المالك الأحدث — 2026-11-11
+
+الاعتماد البصري لجميع الصور المولدة الحالية والمستقبلية تلقائي حتى يرفض المالك صورة بعينها. يتقدم ذلك على اشتراط انتظار موافقة منفصلة أعلاه. اقرأ `docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md` لمعرفة نطاق القرار ومسارات الصور وكيفية تفسير حقول الموافقة التاريخية. الفحوص التقنية وحفظ المصادر ومعايرة التكامل تبقى واجبة، ولا تتحول الصور الفاشلة تقنيًا إلى ready تلقائيًا.

@@ -78,3 +78,7 @@ Agent: codex. Branch: codex/art-0023-side-fixtures. سُجل اعتماد الع
 تسليم ART-0023: أربعة مصادر مستقلة ومشتقات مراجعة، مع قياسات نقاط التعليق ولقطة Godot 1x/2x. محاولتان مرفوضتان محفوظتان. بقيت معايرة المقاس والجدار واعتماد الصور الجديدة منفصلين؛ لا تغيير لخرائط الإصدارات الأحدث التي أضيفت أثناء توقف الجلسة.
 
 - ART-0023 verification: `python -u tools/run_tests.py --changed --base origin/main --timeout 120`: **80/80 passed**, exit 0. Source and Godot receipt hashes verified; scene calibration remains pending.
+
+## Owner automatic source-art approval — 2026-11-11
+Owner grants automatic visual approval for all current/future generated images until individually rejected. Recorded in docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md and linked from mandatory graphics policy. Existing capture manifests remain immutable; technical failure states remain honest. Source paths and agent handoff documented. This documentation-only follow-up uses branch codex/owner-automatic-art-approval.
+`nValidation: python -u tools/run_tests.py --changed --timeout 120: 85/86 passed initially; golden_cyclone_assets timed out because the fresh worktree lacked the Godot class cache. After editor import, python -u tools/run_tests.py --only golden_cyclone_assets --timeout 120 passed 1/1. All 86 groups therefore passed across the run and targeted recovery. py -3 is unavailable; used python. No image bytes or historical manifests changed. Next step: apply this approval basis to subsequent art delivery/integration records.
