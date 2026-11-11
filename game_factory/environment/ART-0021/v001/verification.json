@@ -1,0 +1,28 @@
+{
+  "task_id": "TASK-0032",
+  "request_id": "ART-0021",
+  "tests": {
+    "command": "python -u tools/run_tests.py --changed --timeout 120",
+    "passed": 85,
+    "total": 85,
+    "exit_code": 0
+  },
+  "graphics_validation": {
+    "command": "python tools/graphics_validation.py --changed",
+    "exit_code": 0,
+    "png_checked": 0,
+    "scope_note": "Candidate masters outside production validator scope; prepare_review.py validates four independent sources and eight review derivatives"
+  },
+  "independent_sources": 4,
+  "rejected_attempts": 1,
+  "actual_godot_capture": true,
+  "owner_approved": false,
+  "scene_calibration_verified": false,
+  "warnings": [
+    "Nonfatal sandbox user log and shader cache warnings during viewport capture"
+  ],
+  "remaining": [
+    "Owner visual review",
+    "Physical footprint/collider/depth and placement calibration by integration agent"
+  ]
+}

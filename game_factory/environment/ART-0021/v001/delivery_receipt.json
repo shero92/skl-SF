@@ -1,0 +1,124 @@
+{
+  "task_id": "TASK-0032",
+  "request_id": "ART-0021",
+  "destination": "H:\\shining force\\skl-SF",
+  "cache_required": false,
+  "files": [
+    {
+      "path": "assets_hd/furniture/study_chest_views/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_east.png",
+      "sha256": "9c811c843ec5b247c5947f151bc98fc9903e4b4542767a3033c98fe55641922a"
+    },
+    {
+      "path": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_north.png",
+      "sha256": "6827e5bddc01c34332475d70e060b4bbe5d3a9eab3b3d9999b587103f645b993"
+    },
+    {
+      "path": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_south.png",
+      "sha256": "b846edba4585f76fa5df8803fb077b9d506a9e731f2e95692f834da46e436d2d"
+    },
+    {
+      "path": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_west.png",
+      "sha256": "8fb9271ba9d6434ce663eb9b3eb2a77259f6f3068881e8944b63cc37c733a839"
+    },
+    {
+      "path": "assets_hd/furniture/study_chest_views/v001/rejected/hero_study_chest_west_attempt_01.png",
+      "sha256": "c3c6141ea647253e7dda1a56166f8f5b5f04f2f8baa45a2dd08b75bb18aec31a"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/generation_records.json",
+      "sha256": "8b744ecca6b3a1d145ea056ec44fbf00ba3ef9fc5b6d52092f411ea0b6e95be3"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/godot_native_review.png",
+      "sha256": "f99f34a2bc0602e87d96900e34d5abadefb93fa3008db5bf68d0ef8731f95a06"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/godot_review_receipt.json",
+      "sha256": "323a652189bbc1ae2829ceefd6d58277721c5f7de2aba1ede20ca4b93f367d7f"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/manifest.json",
+      "sha256": "c67238693534a352cd18abbb395a946bef6daacc91afce18f3864d3c9b251bb0"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_east_catalog.png",
+      "sha256": "632bfee196e629a83c3c7e25b7f43a0d953f53533187b72a10afb2f0d6fbd31b"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_east_placement.png",
+      "sha256": "c2a96205e271491915e6e8d79561b1eeac01e1d6201cb437496493a40c646188"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_north_catalog.png",
+      "sha256": "8c73efd6f898c1dbb625ff68fda4cfccf792e22ab329c7357d68bb7d79887694"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_north_placement.png",
+      "sha256": "02101760d27477555c5bb465044fbb4f2f3d4117eb2bc7b7f6c20188bcc3eaeb"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_south_catalog.png",
+      "sha256": "521764c72619a9e11cf1385e69ae91c9aa408641426a55d6bd6ba7b459a5fd8d"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_south_placement.png",
+      "sha256": "cc0f16baf838de32e554591d4db5235ba93f10ca4115c9f21a79c7c86d38bb1e"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_west_catalog.png",
+      "sha256": "2a530dfc234118133cc5aaa7fce938cc0bb7c6ed73bc99ad54b6f4c5c0983905"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_west_placement.png",
+      "sha256": "28b08bc2246ce5dcc472b95db217db6425cdbc1ba2569358ea0822e1b373dc3e"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/prepare_review.py",
+      "sha256": "9b7a58d329b41af260eef8c16f3a3ab544e43347dde9280f022454575630504a"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/README.md",
+      "sha256": "d5f8257dc21ce640d0e518a8071ae773e0f3ccb9e6caca40a91b8a1e2759fa2e"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_east.txt",
+      "sha256": "b952f9b57f59f0b410d190ba2df0ce8770a9a3204f44699d178114cdae840090"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_north.txt",
+      "sha256": "0e753337b14bd6da926b867db42b29823e4ffc480feebe81021cc8e5c1963323"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_south.txt",
+      "sha256": "c36d93e59c037db39b143366aaf0e5f48f21017a0cc003bfbf7571531f5b651b"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_west.txt",
+      "sha256": "ea83307c727ecc2df6afb002f75f51edc655f2bc413d2efbc1ba1eec33016567"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_west_attempt_01.txt",
+      "sha256": "fb056fed36e09aa58e985bc2f7d817a998f0533ea51a869ad1b8c9a8672a9f32"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/review.gd",
+      "sha256": "d6501c1141b70e0ed7ca03b1800fe9120281a7be165ae67dbf470892d5255d95"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/technical_qa.json",
+      "sha256": "03117695d6f85cd0d06265d60de3dc0112a1c8c222114884a177300a2999530d"
+    },
+    {
+      "path": "game_factory/environment/ART-0021/v001/verification.json",
+      "sha256": "0759a206c109b60a799c79e17ed0fc913fb700fd006afa326d639047494c1a9b"
+    }
+  ]
+}
