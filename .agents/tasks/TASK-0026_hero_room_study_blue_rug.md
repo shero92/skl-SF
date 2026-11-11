@@ -40,3 +40,5 @@ Two independently generated oblique floor rug candidates, study and bedroom, per
 - `python tools/run_tests.py --changed --timeout120`: **85/85 passed**, exit0.
 - Sources and metadata copied to project root with SHA receipt; generation cache not required.
 - Next: owner reviews candidates; Claude resolves floor depth/projection, annotates logical footprint and places accepted assets.
+
+- Review PR: https://github.com/shero92/skl-SF/pull/168 (draft; owner review and scene calibration pending).
