@@ -89,6 +89,53 @@ func _initialize() -> void:
 	var latest: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://map_factory/maps/%s/latest.json" % editor.map_id))
 	_check(int(latest["version"]) == version_before, "a dry run publishes nothing")
 
+	# ---- Stage two: ground, levels, copies, redo, maps.
+	editor.load_map()
+	_check(editor.pending_changes().is_empty(), "reloading clears pending edits")
+	var floor_cell := Vector2i(3, 3)
+	_check(editor.cell_at(editor.cell_rect(floor_cell).get_center()) == floor_cell, "a point maps back to its square")
+	_check(editor.paint_tile(floor_cell, "G05") or String(editor.tiles.get("3:3", "")) == "G05", "painting a floor square works")
+	editor.paint_tile(floor_cell, "G09")
+	_check(String(editor.tiles["3:3"]) == "G09", "the square carries the painted tile")
+	_check(not editor.paint_tile(floor_cell, "P05"), "a non-floor part cannot be painted as ground")
+	_check(not editor.paint_tile(Vector2i(-1, 0), "G05"), "painting outside the grid is refused")
+	_check(editor.pending_changes().any(func(c): return c["op"] == "tile" and c["x"] == 3 and c["y"] == 3 and c["id"] == "G09"), "the tile edit is recorded")
+	var hole := Vector2i(0, 5)
+	_check(editor.cells.has("0:5") and editor.erase_cell(hole), "erasing a floor square works")
+	_check(editor.pending_changes().any(func(c): return c["op"] == "property" and c["key"] == "floor_footprint"), "the floor shape edit is recorded")
+	var spans: Array = editor._row_spans()
+	_check(spans.size() == int(editor.map_data["size"][1]) and int(spans[5][0][0]) == 1, "row 5 now starts at square 1")
+	var ground_save: Dictionary = editor.save()
+	_check(ground_save["ok"], "the factory accepts the ground edit: " + String(ground_save["message"]))
+	_check(editor.undo() and editor.cells.has("0:5"), "undo restores the erased square")
+	_check(editor.redo() and not editor.cells.has("0:5"), "redo erases it again")
+	editor.load_map()
+
+	editor.selected = "FrontBlueVase"
+	var copy: String = editor.duplicate_selected()
+	_check(copy != "" and editor.blocks[copy]["id"] == editor.blocks["FrontBlueVase"]["id"], "duplicate copies the part")
+	_check(is_equal_approx(editor.blocks[copy]["scale"], editor.blocks["FrontBlueVase"]["scale"]), "the copy keeps the size")
+	_check(editor.blocks[copy]["x"] == editor.blocks["FrontBlueVase"]["x"] + 24.0, "the copy sits beside the source")
+	editor.selected = "FrontBlueVase"
+	_check(editor.move_selected_to_layer("front_objects"), "a piece can change level")
+	_check(editor.pending_changes().any(func(c): return c["op"] == "update" and c["set"].get("layer") == "front_objects"), "the level change is recorded")
+	editor.set_layer_hidden("objects", true)
+	_check(not editor.nodes[bed].visible, "hiding a level hides its pieces")
+	editor.set_layer_hidden("objects", false)
+	_check(editor.nodes[bed].visible, "showing a level shows them again")
+	var level_save: Dictionary = editor.save()
+	_check(level_save["ok"], "the factory accepts the copy and level change: " + String(level_save["message"]))
+
+	var ids: Array[String] = editor.map_ids()
+	_check(ids.has("hero_room_01") and ids.size() >= 2, "the registry lists the maps")
+	var other: String = ids[0] if ids[0] != "hero_room_01" else ids[1]
+	_check(editor.open_map(other) and editor.map_id == other and editor.room != null, "another map opens")
+	_check(not editor.open_map("no_such_map"), "an unknown map is refused")
+	_check(editor.create_map("editor_test_map", "courtyard")["ok"], "a new map name and preset are accepted (dry run)")
+	_check(not editor.create_map("hero_room_01", "courtyard")["ok"], "an existing map name is refused")
+	_check(not editor.create_map("Bad Name", "courtyard")["ok"], "an invalid map name is refused")
+	_check(not editor.map_ids().has("editor_test_map"), "a dry run creates nothing")
+
 	editor.queue_free()
 	if _failures == 0:
 		print("ROOM_EDITOR_OK")
