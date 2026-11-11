@@ -150,5 +150,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0143_hero_save.md`](TASK-0143_hero_save.md)
 - [`TASK-0144_room_v0023_b1_b2.md`](TASK-0144_room_v0023_b1_b2.md)
 - [`TASK-0145_room_v0024_b3_art0023.md`](TASK-0145_room_v0024_b3_art0023.md)
+- [`TASK-0146_room_v0025_fences_colliders.md`](TASK-0146_room_v0025_fences_colliders.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

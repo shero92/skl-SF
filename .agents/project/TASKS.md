@@ -147,3 +147,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0143](../tasks/TASK-0143_hero_save.md) | review | claude | TASK-0136 | none |
 | [TASK-0144](../tasks/TASK-0144_room_v0023_b1_b2.md) | review | claude | TASK-0135 | none |
 | [TASK-0145](../tasks/TASK-0145_room_v0024_b3_art0023.md) | review | claude | TASK-0144 | none |
+| [TASK-0146](../tasks/TASK-0146_room_v0025_fences_colliders.md) | review | claude | TASK-0145 | none |
