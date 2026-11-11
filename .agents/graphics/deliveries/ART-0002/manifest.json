@@ -234,5 +234,19 @@
   "limitations": [
     "Native192x64 is a provisional QA canvas; uniform fit preserves cloud proportions.",
     "Runtime scrolling, wrap spacing/edge popping and owner approval remain pending. No collider/shadow."
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0002/hero_cloud_01.png",
+      "sha256": "d6e7b63a8b39126ebaad8325c6cb6d2f47bbfbffee8c10f21388855cf3305248"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0002/hero_cloud_02.png",
+      "sha256": "6872ac111c374e98ebcb280c7713288d3e1e4b01a3c1045e1b7492ea8327d497"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0002/hero_cloud_03.png",
+      "sha256": "63d281c077808a3345340dafc1073bad60808c6d883ac01ab5d08a1858b13d00"
+    }
   ]
 }
