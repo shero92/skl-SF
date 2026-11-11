@@ -1,0 +1,143 @@
+{
+  "request_id": "ART-0042",
+  "task_id": "TASK-0156",
+  "delivery_branch": "codex/art-0042-0043-rear-walls",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 1,
+  "generation_count": 2,
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "quality_status": "needs_map_calibration",
+  "production_active": false,
+  "generation_cache_required": false,
+  "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+  "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+  "reference_use": "style/composition only; no reference crop pasted/traced as art",
+  "items": [
+    {
+      "id": "hero_rear_left_ruined_wall_window",
+      "request_id": "ART-0042",
+      "master_path": "assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0042/hero_rear_left_ruined_wall_window.png",
+      "sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667",
+      "pixel_size": [
+        1921,
+        819
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        35,
+        34,
+        1876,
+        770
+      ],
+      "origin": [
+        955.5,
+        769
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "facing": "south-facing wall; camera south looking north/down",
+      "native_canvas": [
+        470,
+        200
+      ],
+      "native_width": 470,
+      "native_height": 200,
+      "native_review_path": "game_factory/environment/ART-0042/v001/native_review/hero_rear_left_ruined_wall_window.png",
+      "native_review_sha256": "6d7047c512332a34f676c1d4d5e6b46bd5363848bf0e7a5a37b3a7e476e605e4",
+      "native_source_region": [
+        0,
+        0,
+        1921,
+        819
+      ],
+      "source_pixels_per_native_pixel": [
+        4.087234042553192,
+        4.095
+      ],
+      "native_method": "whole canvas nearest-neighbour; no crop/flip/rotation/upscale; pixel dimensions rounded",
+      "prompt_text": "ART-0042 attempt2. Edit ONLY the rectangular window aperture so it becomes SQUARE. Preserve EXACT1922x818transparent RGBAcanvas and all wall outline, step heights, stone texture, lighting, all other pixels/structure. Current clear opening is approximately x569..734 and y404..597 (165x193sourcepx). Required clear hole approximately164x164px, equivalent40x40native at470x200. Keep the upper lintel and opening LEFT/RIGHT borders fixed; raise the lower sill by about29sourcepixels so the alpha0 aperture runs y404..568. Fill the removed lower slit with matching sandstone/sill, maintaining a thin neat sill and consistent mortar. The hole must remain fully transparent alpha0, no blue/glass/background. Do not shrink/move/rotate the wall or resize canvas. No ivy, plants, decoration, shadow, labels, backdrop, floor or extra objects. One isolated independently edited wall, full margins intact, hard pixel-art clusters, same warm tan stones and upper-left light.",
+      "prompt_path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window.txt",
+      "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0042_target.png",
+      "reference_crop_sha256": "c8d7a4005736fa1748cc78d108cd00291f790059ae812229772353e2d448bdaa",
+      "comparison_path": ".agents/graphics/requests/reference_crops/ART-0042_compare.png",
+      "comparison_sha256": "dcf2692382fc9ce2ae53b634138d809e15e760c1e2e8d3d63c50bc5217c50d56",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "collision": null,
+      "collision_status": "needs wall navigation annotation at integration",
+      "footprint_64px_cells": null,
+      "connection_sockets": null,
+      "connection_status": "wall endpoint/arch join calibration not measured",
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_map_calibration",
+      "production_active": false,
+      "window_aperture_bounds_alpha_le8": [
+        564,
+        403,
+        741,
+        583
+      ],
+      "window_aperture_native_extent": [
+        43.305570015616865,
+        43.956043956043956
+      ],
+      "window_alpha0_sample": [
+        650,
+        490
+      ],
+      "window_proof": "enclosed alpha<=8 flood component; alpha0 centre",
+      "aperture_note": "Approximately square44x44 maximum low-alpha extent; request about40x40. Do not report exact40x40.",
+      "initial_prompt_path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window_initial.txt"
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "id": "hero_rear_left_ruined_wall_window_attempt_01",
+      "path": "assets_hd/architecture/rear_left_window_wall/v001/rejected/hero_rear_left_ruined_wall_window_attempt_01.png",
+      "sha256": "8c4ec564a74a1a15d2b91518ca670448be1104dd0b288cd4f6c87828aaf80f3e",
+      "pixel_size": [
+        1922,
+        818
+      ],
+      "reason": "Window aperture too tall for the requested square; superseded by independently requested square-window edit.",
+      "quality_status": "not_selected",
+      "prompt_path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window_initial.txt",
+      "prompt_text": "ART-0042 hero_rear_left_ruined_wall_window. Generate ONE independently drawn reusable SOUTH-FACING rear limestone wall segment, transparent RGBA. Attached crop is STYLE/COMPOSITION reference ONLY: do not paste, trace or crop it. Remove all scenery and decoration conceptually; draw a fresh isolated connected wall. Wide landscape canvas aspect EXACT47:20 (for example 2256x960), master MUST be at least1880px wide AND800px high genuinely native, not upscaled. On-canvas review470x200. Camera south looking north/down50degrees, orthographic tactical RPG; see front/south face and shallow horizontal upper stone surfaces. Baseline horizontal. Wall silhouette lowest on LEFT/west (roughly3stone courses), rises in BROKEN IRREGULAR STEPS toward RIGHT/east (roughly6courses); tallest end joins an arch elsewhere, but DO NOT draw any arch/column. No symmetrical castle battlements. Warm golden tan sandstone large rectangular blocks with staggered mortar, chipped corners, fine weathering, dark warm-brown1-2px outlines at native scale, hard detailed pixel clusters matching reference. Upper-left sunlight, darker right side faces. ONE clear SQUARE OPEN WINDOW in the WESTERN THIRD at x~32% of wall width; aperture40x40native relative to470pxwide wall. Straight stone lintel and thin stone sill, no arch over window. Aperture is genuinely alpha0 transparent; absolutely no blue sky/water/glass/wood inside. Wall is physically connected around all four sides of window. Entire wall intact within ~3% transparent safety margin; show full endpoints and lower stone feet. No ivy/leaves/flowers/moss clumps, lanterns, shelves, books, banners, bed, vases, floor, ocean, rocks beneath it, cast shadow, characters, text, label, frame or watermark. One wall at one angle, not a sheet or paired view.",
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        34,
+        33,
+        1876,
+        771
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0042/hero_rear_left_ruined_wall_window.png",
+      "sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667"
+    }
+  ],
+  "limitations": [
+    "No room placement, collisions, endpoint joins or occlusion verified; source-only Godot review.",
+    "Course counts/block widths are approximate authored geometry; native canvas includes transparent margins.",
+    "Owner main checkout unchanged; files live in isolated task worktree until branch integration."
+  ]
+}

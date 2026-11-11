@@ -1,7 +1,7 @@
 ---
 id: ART-0042
-status: requested
-owner: graphics-specialist
+status: delivered
+owner: codex
 task: TASK-0148
 dedupe_key: hero_room_rear_left_ruined_wall_window
 existing_asset_ids: W09
@@ -43,3 +43,9 @@ output_paths: .agents/graphics/deliveries/ART-0042/hero_rear_left_ruined_wall_wi
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## Active production — 2026-11-11
+Agent: codex; TASK-0156; branch codex/art-0042-0043-rear-walls. Independent built-in image_gen source with full metadata and Godot native review. Automatic owner visual approval recorded per current policy. No existing art or map revision replaced.
+
+## Delivered — TASK-0156 / 2026-11-11
+Independent clean RGBA source [1921, 819], master assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png, SHA256 a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667. Exact requested delivery PNG and files-list manifest populated. Native[470, 200] whole-canvas nearest review and real Godot1x/2x capture under game_factory/environment/ART-0042/v001. All source/native/delivery/reference/capture hashes verified. 1 earlier nonselected attempts preserved with reasons. Owner automatic visual approval recorded; request delivered only. Room placement, join sockets, collisions and occlusion remain uncalibrated. Produced in isolated branch codex/art-0042-0043-rear-walls; no writes to owner main checkout.

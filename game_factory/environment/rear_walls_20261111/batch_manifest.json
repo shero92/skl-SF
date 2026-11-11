@@ -1,0 +1,180 @@
+{
+  "task_id": "TASK-0156",
+  "delivery_branch": "codex/art-0042-0043-rear-walls",
+  "sources": [
+    {
+      "id": "hero_rear_left_ruined_wall_window",
+      "request_id": "ART-0042",
+      "master_path": "assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0042/hero_rear_left_ruined_wall_window.png",
+      "sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667",
+      "pixel_size": [
+        1921,
+        819
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        35,
+        34,
+        1876,
+        770
+      ],
+      "origin": [
+        955.5,
+        769
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "facing": "south-facing wall; camera south looking north/down",
+      "native_canvas": [
+        470,
+        200
+      ],
+      "native_width": 470,
+      "native_height": 200,
+      "native_review_path": "game_factory/environment/ART-0042/v001/native_review/hero_rear_left_ruined_wall_window.png",
+      "native_review_sha256": "6d7047c512332a34f676c1d4d5e6b46bd5363848bf0e7a5a37b3a7e476e605e4",
+      "native_source_region": [
+        0,
+        0,
+        1921,
+        819
+      ],
+      "source_pixels_per_native_pixel": [
+        4.087234042553192,
+        4.095
+      ],
+      "native_method": "whole canvas nearest-neighbour; no crop/flip/rotation/upscale; pixel dimensions rounded",
+      "prompt_text": "ART-0042 attempt2. Edit ONLY the rectangular window aperture so it becomes SQUARE. Preserve EXACT1922x818transparent RGBAcanvas and all wall outline, step heights, stone texture, lighting, all other pixels/structure. Current clear opening is approximately x569..734 and y404..597 (165x193sourcepx). Required clear hole approximately164x164px, equivalent40x40native at470x200. Keep the upper lintel and opening LEFT/RIGHT borders fixed; raise the lower sill by about29sourcepixels so the alpha0 aperture runs y404..568. Fill the removed lower slit with matching sandstone/sill, maintaining a thin neat sill and consistent mortar. The hole must remain fully transparent alpha0, no blue/glass/background. Do not shrink/move/rotate the wall or resize canvas. No ivy, plants, decoration, shadow, labels, backdrop, floor or extra objects. One isolated independently edited wall, full margins intact, hard pixel-art clusters, same warm tan stones and upper-left light.",
+      "prompt_path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window.txt",
+      "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0042_target.png",
+      "reference_crop_sha256": "c8d7a4005736fa1748cc78d108cd00291f790059ae812229772353e2d448bdaa",
+      "comparison_path": ".agents/graphics/requests/reference_crops/ART-0042_compare.png",
+      "comparison_sha256": "dcf2692382fc9ce2ae53b634138d809e15e760c1e2e8d3d63c50bc5217c50d56",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "collision": null,
+      "collision_status": "needs wall navigation annotation at integration",
+      "footprint_64px_cells": null,
+      "connection_sockets": null,
+      "connection_status": "wall endpoint/arch join calibration not measured",
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_map_calibration",
+      "production_active": false,
+      "window_aperture_bounds_alpha_le8": [
+        564,
+        403,
+        741,
+        583
+      ],
+      "window_aperture_native_extent": [
+        43.305570015616865,
+        43.956043956043956
+      ],
+      "window_alpha0_sample": [
+        650,
+        490
+      ],
+      "window_proof": "enclosed alpha<=8 flood component; alpha0 centre",
+      "aperture_note": "Approximately square44x44 maximum low-alpha extent; request about40x40. Do not report exact40x40.",
+      "initial_prompt_path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window_initial.txt"
+    },
+    {
+      "id": "hero_rear_right_wall_arched_door_niche",
+      "request_id": "ART-0043",
+      "master_path": "assets_hd/architecture/rear_right_door_niche/v001/hero_rear_right_wall_arched_door_niche.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0043/hero_rear_right_wall_arched_door_niche.png",
+      "sha256": "e4c179693e6f56575cf0384b7e00aa00a7c8ea9905db34df323677e659a31735",
+      "pixel_size": [
+        1397,
+        1126
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        32,
+        33,
+        1366,
+        1103
+      ],
+      "origin": [
+        699.0,
+        1102
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "facing": "south-facing wall; camera south looking north/down",
+      "native_canvas": [
+        310,
+        250
+      ],
+      "native_width": 310,
+      "native_height": 250,
+      "native_review_path": "game_factory/environment/ART-0043/v001/native_review/hero_rear_right_wall_arched_door_niche.png",
+      "native_review_sha256": "fb4a763967d963693ea4e5431736c8aeff0a7ebf7113fa6081b552e35616a688",
+      "native_source_region": [
+        0,
+        0,
+        1397,
+        1126
+      ],
+      "source_pixels_per_native_pixel": [
+        4.506451612903226,
+        4.504
+      ],
+      "native_method": "whole canvas nearest-neighbour; no crop/flip/rotation/upscale; pixel dimensions rounded",
+      "prompt_text": "ART-0043 final masonry correction. Preserve this single wall's exact silhouette, EIGHT horizontal stone courses, current closed small door/niche/emblem/latch and its1397x1126transparent canvas. Change ONLY the overlong sandstone blocks by drawing extra staggered VERTICAL mortar joints. Each ordinary block should be about120-180sourcepixels wide (about27-40native pixels at310x250). NO giant600pxlong blocks: subdivide every block wider than220sourcepixels into two/three/four separate blocks as needed, with chipped corners and visible narrow warm-brown joints. Aim8-10blocks across a full-width course rather than2-4. Keep existing horizontal course lines and course heights unchanged; do not add/remove courses or change any door/arch stone. Avoid perfectly aligned vertical seams from row to row. Same warm tan color, fine hard pixel clusters, upper-left light, matching prior left window wall. No new floor/ground, plants, vines, lanterns, shadows, sea, backdrop, text or frame. True RGBA transparency outside intact; no crop, flip, rotation, rescale or sheet. Only repaint the missing masonry divisions.",
+      "prompt_path": "game_factory/environment/ART-0043/v001/requests/hero_rear_right_wall_arched_door_niche.txt",
+      "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0043_target.png",
+      "reference_crop_sha256": "1117757e38d75899519e6e62600937c12761fa269543c93d92e69ee323f97d74",
+      "comparison_path": ".agents/graphics/requests/reference_crops/ART-0043_compare.png",
+      "comparison_sha256": "4e72cf88b2d4fb8f34966b8b12011b59f92ad04765865196595c0d879a26cebd",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "collision": null,
+      "collision_status": "needs wall navigation annotation at integration",
+      "footprint_64px_cells": null,
+      "connection_sockets": null,
+      "connection_status": "wall endpoint/arch join calibration not measured",
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_map_calibration",
+      "production_active": false,
+      "door_niche_bounds_manual": [
+        524,
+        584,
+        858,
+        1057
+      ],
+      "door_niche_bounds_status": "manual visual bounding estimate, not collision/interaction geometry",
+      "door_niche_native_extent": [
+        74.1159627773801,
+        105.0177619893428
+      ],
+      "door_closed": true,
+      "material_reference_path": "assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png",
+      "material_reference_sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667"
+    }
+  ],
+  "generation_count": 5,
+  "selected_source_count": 2,
+  "earlier_nonselected_attempts": 3,
+  "owner_approved": true,
+  "production_active": false
+}
