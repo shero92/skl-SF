@@ -880,7 +880,7 @@ func _build_ui() -> void:
 		battle_button.pressed.connect(pair[1])
 		play_row.add_child(battle_button)
 	var help := Label.new()
-	help.text = "Click: select / place   Drag: move   Ctrl+drag: move while placing\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
+	help.text = "Click: select / place (Shift keeps placing)   Drag or Ctrl+drag: move\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
 	help.add_theme_font_size_override("font_size", 12)
 	column.add_child(help)
 	_status_label = Label.new()
@@ -962,7 +962,11 @@ func _unhandled_input(event: InputEvent) -> void:
 					_stroke_open = true
 					_ground_stroke(point, true)
 				elif placing_part != "":
-					place(placing_part, point)
+					var placed := place(placing_part, point)
+					if placed != "" and not event.shift_pressed:
+						placing_part = ""  # one piece per pick; it stays selected so it can be dragged at once
+						selected = placed
+						_refresh()
 				elif select_at(point) != "":
 					_dragging = true
 					_drag_moved = false
