@@ -30,3 +30,14 @@ output_paths: .agents/graphics/deliveries/ART-0040/hero_wall_lantern_east.png
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## Codex source-provenance supplement — 2026-11-11
+Master generation and measured source annotations: game_factory/environment/ART-0040/v001/manifest.json, requests/, README.md and actual Godot capture. Complete additive delivery sidecar: .agents/graphics/deliveries/ART-0040/codex_source_manifest.json. The existing TASK-0163 packaging manifest and registered L07 stay unchanged. PR178 already uses the byte-identical master in room v0028; wall mount calibration remains provisional. Source mount [232,330] maps to [4.1734,15.6605] in the padded29x53 nearest QA; L07 is a different trimmed29x47 BOX derivative with a bottom-centre origin, so the QA pivot must not be copied directly without conversion.
+
+Reference crop: original1536x1024 target map_factory/references/hero_room_01_target_20261103.png, SHA25647a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b; box[208,326,265,411]. Crop reference only, never a production asset.
+- .agents/graphics/requests/reference_crops/ART-0040_target.png; SHA256 bea0299e74ee64272b849a9cd7f357043d058f69357f571c03ddf1e3dba0ad42
+- .agents/graphics/requests/reference_crops/ART-0040_compare.png; SHA256 a4c15238213e1d18d34b3004ec89d97f8f1d48de6e6847f3134135fcf8d43bde
+
+Exact view: one brass hanging lantern, wall plate on LEFT, arm projects EAST/right, front and top planes visible from the room camera looking north/down; upper-left daylight, light inside glass. Provisional native29x53, master minimum400x720. No wall, banners, plants, floor, cast shadow, external glow, text, frame, characters or additional lanterns. Two independent image_gen calls; earlier attempt is nonselected, not owner-rejected. Actual alpha compositing disproved the apparent halo in the tool RGB preview. Owner automatic approval recorded.
+
+Comparison provenance: ART-0040_compare.png uses docs/previews/map_factory_renders/t0149_v0027/hero_room_01_v0027.png as its historical game-side baseline (before PR178), not room v0028. Current integration evidence is the separate TASK-0163 / PR178 capture.

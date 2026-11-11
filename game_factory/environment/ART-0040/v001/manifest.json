@@ -1,0 +1,144 @@
+{
+  "request_id": "ART-0040",
+  "task_id": "TASK-0102",
+  "delivery_branch": "codex/art-0040-provenance-review",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 1,
+  "generation_count": 2,
+  "integration_evidence": {
+    "asset_id": "L07",
+    "first_room_version": 28,
+    "pull_request": "https://github.com/shero92/skl-SF/pull/178",
+    "mount_calibration_provisional": true
+  },
+  "quality_status": "needs_map_calibration",
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "production_active": true,
+  "generation_cache_required": false,
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; crop/comparison are reference documentation, never a game asset",
+  "style_references": [
+    {
+      "path": "assets_hd/lighting/west_wall_lantern/v001/hero_wall_lantern_west.png",
+      "sha256": "e1beb2284d9804e1ae51480c63af498d916f6d0aa992e2d8622fb0a361a6c623",
+      "role": "material/design reference only; no flip/mirror/rotation/paste"
+    }
+  ],
+  "items": [
+    {
+      "id": "hero_wall_lantern_east",
+      "request_id": "ART-0040",
+      "master_path": "assets_hd/lighting/east_wall_lantern/v001/hero_wall_lantern_east.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0040/hero_wall_lantern_east.png",
+      "sha256": "5607125059ca9c72d501f740bf28a87621305c4500a84cb703adab5102f7aef5",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        123,
+        94,
+        920,
+        1374
+      ],
+      "origin": [
+        232,
+        330
+      ],
+      "origin_rule": "manual measured wall-mount point on backplate at arm root, not ground pivot",
+      "bottom_center_origin": [
+        521.5,
+        1373
+      ],
+      "mount_points": {
+        "wall": [
+          232,
+          330
+        ]
+      },
+      "native_origin": [
+        4.173431734317343,
+        15.660493827160494
+      ],
+      "native_canvas": [
+        29,
+        53
+      ],
+      "native_width": 29,
+      "native_height": 53,
+      "native_review_path": "game_factory/environment/ART-0040/v001/native_review/hero_wall_lantern_east.png",
+      "native_review_sha256": "bd9ab15264120cdfd4bffcb2511c34a9136b86f51af74f1882976a55c7f16b67",
+      "native_source_region": [
+        115,
+        86,
+        928,
+        1382
+      ],
+      "resized_size": [
+        29,
+        46
+      ],
+      "offset": [
+        0,
+        7,
+        29,
+        53
+      ],
+      "uniform_scale": 0.03567035670356704,
+      "source_pixels_per_native_pixel": 28.034482758620687,
+      "facing": "east-pointing; wall mount on left and hanging lamp to right",
+      "mount_status": "source pixel manually annotated; wall-local integration offset uncalibrated",
+      "collision": false,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "external_halo": false,
+      "alpha_note": "Tool preview shows colored RGB in alpha0 surround; real compositing is clean. Weak alpha may reach canvas bottom; strong alpha128 bounds safely inside. QA bbox+8px excludes remote weak-alpha noise; master intact.",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "prompt_text": "ART-0040 attempt2. Edit this lantern image with ONE correction: REMOVE ALL EXTERNAL AMBER GLOW / HALO / DARK BACKDROP. Keep exactly the drawn lantern/bracket/left mounting plate and internal glass/candle illumination, same east-pointing direction, same upper-left metal highlights, same1024x1536canvas, same shape and placement. Every pixel outside physical brass/glass/candle/link silhouette must become genuinely TRANSPARENT alpha0, including the background inside bracket curls and chain links. Clean hard-edged pixel-art cutout with at most a one-pixel anti-alias fringe, absolutely no fuzzy amber haze. Do not add a drop shadow, outline halo, white background, wall or stone. The internal warm light remains confined inside the closed glass body; metal can have painted highlights but emits no external glow. No crop, rotation, mirror, layout or style change. Whole object intact with transparent margins. Deliver one transparent RGBA PNG.",
+      "prompt_path": "game_factory/environment/ART-0040/v001/requests/hero_wall_lantern_east.txt",
+      "initial_prompt_path": "game_factory/environment/ART-0040/v001/requests/hero_wall_lantern_east_initial.txt",
+      "quality_status": "needs_map_calibration",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": true
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "id": "hero_wall_lantern_east_attempt_01",
+      "path": "assets_hd/lighting/east_wall_lantern/v001/rejected/hero_wall_lantern_east_attempt_01.png",
+      "sha256": "8dd0e43e1f68e2caf4c1f3b9a174c708b482481a96ae0bbfc23e8952c3ba0a8f",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "quality_status": "not_selected",
+      "reason": "Earlier attempt superseded by separately requested alpha-cleanup edit. Apparent halo in tool preview was hidden RGB beneath alpha0, not a visible alpha-composited halo; not an owner rejection.",
+      "prompt_text": "ART-0040 hero_wall_lantern_east. Produce ONE newly drawn true EAST-POINTING counterpart of the attached WEST-facing brass lantern, using attached image for material/design identity ONLY. Do NOT flip/mirror/rotate/paste it. Reconstruct and repaint the opposite view with unchanged UPPER-LEFT illumination (bright top/left brass edges, darker lower-right recesses), so it is a new proper directional drawing. A decorative tall narrow bronze-gold wall mounting backplate is on the LEFT side near upper-left; a curved S-scroll arm projects from it to the RIGHT (east), with a small hanging link suspending a vertical hexagonal glass lantern on the RIGHT, below the arm. Compact tall silhouette, same brass trim, modest pointed cap and bottom finial, warm yellow-white internal candle with amber glass, visible top planes and front plus side glass face. Camera tactical RPG south-of-room looking north/down about50degrees, orthographic. Sharp high-detail PIXEL ART clusters, 1-2pixel dark contour at native29x53, match attached master's oak-gold brass density; no blur. Single whole object, source master portrait1024x1536 or larger, minimum400x720 genuinely native; ~6% transparent safety margin. Clean genuine TRANSPARENT RGBA PNG, true alpha0 around and between bracket curls. No wall, stone blocks, floor, cast shadow, external light halo/glow, plants/ivy, banner, characters, text/label/watermark, frame, sheets or extra lanterns. Flame stays inside glass. The left mounting plate and east-projecting arm must be clearly readable. One standalone asset at one angle; not a paired comparison.",
+      "prompt_path": "game_factory/environment/ART-0040/v001/requests/hero_wall_lantern_east_initial.txt"
+    }
+  ],
+  "limitations": [
+    "L07 derivative placed in room v0028 by Claude PR178; source QA does not verify wall calibration or occlusion.",
+    "29x53 is provisional native review; source wall pivot differs from bottom-centre ground origin.",
+    "Earlier attempt stored in rejected/ archive but is nonselected, not owner-rejected; alpha diagnosis corrected."
+  ]
+}

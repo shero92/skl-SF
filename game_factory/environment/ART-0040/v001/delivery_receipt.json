@@ -1,0 +1,142 @@
+{
+  "task_id": "TASK-0102",
+  "request_id": "ART-0040",
+  "destination": "H:\\shining force\\skl-SF",
+  "cache_required": false,
+  "existing_merged_delivery_manifest_sha256": "8cd82faa554d9498296422e058e00bc765ffb16818aa00580049460ab34bec40",
+  "existing_merged_delivery_manifest_unchanged": true,
+  "files": [
+    {
+      "path": "game_factory/environment/ART-0040/v001/generation_records.json",
+      "sha256": "533c3021b9c4751d1d82798fafb7ec6a1c344fc9e25ae4181e98f6c02bf00695"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/godot_native_review.png",
+      "sha256": "9c087fcd902e6833d39a66f131c597d4219726a0ae680d47e4075d557369eaa1"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/godot_review_receipt.json",
+      "sha256": "d347c7963db7a389197615b3395c2f9810f69d599baeb85cfca5b45422ab0116"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/manifest.json",
+      "sha256": "962e1524fb1543449446b689ec79b8064b231c7e9ed88410d22486b60ab60a31"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/native_review/hero_wall_lantern_east.png",
+      "sha256": "bd9ab15264120cdfd4bffcb2511c34a9136b86f51af74f1882976a55c7f16b67"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/prepare_review.py",
+      "sha256": "f6e20af002a185cb225580c221edc22df98f4a0e1d54d249c82ea25a3cc4d70b"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/alpha_composite_01.png",
+      "sha256": "e0f0478f10d8c962a33596c11c33a092932199cc91dc9a39d8c0b690ec563f33"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/alpha_composite_02.png",
+      "sha256": "b3dd6b6412cdd78c8098800a2358072da48b9d08bc4722dc8d9185676d2b146d"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_integration_handoff/godot_native_review.png",
+      "sha256": "f494ab7219fc3b5031980c2cab5207920e86377313278a01cf2e8e8a28aad38c"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_integration_handoff/godot_review_receipt.json",
+      "sha256": "c1240c3dc8e708bca3650ff6f116cd61d1b8174773887fe10e34acf606b265a3"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_integration_handoff/manifest.json",
+      "sha256": "f86c617d41c89c19227ec82135ab9d32bcfd7f5b7428ac46244a2ba13037b4b3"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_integration_handoff/README.md",
+      "sha256": "2517eb992a106ef5f3b1d0ba75baea38732e9f7c7de9217b1e23765b587a83c7"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_integration_handoff/review.gd",
+      "sha256": "f9392ca27db1453c993b1dd2e5d5cb9543edb8b120f609a46f6c531d8e9ae17f"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_integration_handoff/verification.json",
+      "sha256": "40f650bf1c1491a62aef33f168a6723ac4135ead0f256ea928353094a567397a"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/2517eb992a10_README.md",
+      "sha256": "2517eb992a106ef5f3b1d0ba75baea38732e9f7c7de9217b1e23765b587a83c7"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/40f650bf1c14_verification.json",
+      "sha256": "40f650bf1c1491a62aef33f168a6723ac4135ead0f256ea928353094a567397a"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/5b276675db1f_prepare_review.py",
+      "sha256": "5b276675db1f200c9e3dcceb2bb8282f72c62cd34b983102c481e9ad6b6e0c8e"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/87dbf7822bf3_verify_delivery.py",
+      "sha256": "87dbf7822bf349cfba89643adaf2289cf7187310aa3e9488fa4beb0321715e47"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/c1240c3dc8e7_godot_review_receipt.json",
+      "sha256": "c1240c3dc8e708bca3650ff6f116cd61d1b8174773887fe10e34acf606b265a3"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/cfe670e289b2_technical_qa.json",
+      "sha256": "cfe670e289b27e11e3fba2ebb2fc6497a667a91a363202f017988110534155ca"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/f494ab7219fc_godot_native_review.png",
+      "sha256": "f494ab7219fc3b5031980c2cab5207920e86377313278a01cf2e8e8a28aad38c"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/f86c617d41c8_manifest.json",
+      "sha256": "f86c617d41c89c19227ec82135ab9d32bcfd7f5b7428ac46244a2ba13037b4b3"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/qa/before_provenance_delivery/f9392ca27db1_review.gd",
+      "sha256": "f9392ca27db1453c993b1dd2e5d5cb9543edb8b120f609a46f6c531d8e9ae17f"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/README.md",
+      "sha256": "4973290139f4ebac01019dae05d50e135fb9789b3a2df9f9f4b97283a39ee831"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/requests/hero_wall_lantern_east.txt",
+      "sha256": "1652110672d205593990e12e322304f7a64d67b4f3ba5a94edd8997464d5ec77"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/requests/hero_wall_lantern_east_initial.txt",
+      "sha256": "954546ae007dd6ba20015b5583479f867f47a931f3f57d0b2a86d5ea8ed63ff0"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/review.gd",
+      "sha256": "6da0a614b75905c5eab81b78f35cf74839895169c29794ec625ef07813c2b644"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/technical_qa.json",
+      "sha256": "99953b7d5413b83c01dbfcb6a171ac6c416b49387ca31de1c0e381d38f17ff53"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/verification.json",
+      "sha256": "9e3571725036a8b6486a8ab574a27ddbfdbd322f49e0be49e7bb0b335fe555ca"
+    },
+    {
+      "path": "game_factory/environment/ART-0040/v001/verify_delivery.py",
+      "sha256": "b8c306bea76d18ac8b42ad471163062d191467d85ca70cb68d7c22ac96a8c5f5"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0040/codex_source_manifest.json",
+      "sha256": "962e1524fb1543449446b689ec79b8064b231c7e9ed88410d22486b60ab60a31"
+    },
+    {
+      "path": ".agents/graphics/requests/reference_crops/ART-0040_target.png",
+      "sha256": "bea0299e74ee64272b849a9cd7f357043d058f69357f571c03ddf1e3dba0ad42"
+    },
+    {
+      "path": ".agents/graphics/requests/reference_crops/ART-0040_compare.png",
+      "sha256": "a4c15238213e1d18d34b3004ec89d97f8f1d48de6e6847f3134135fcf8d43bde"
+    }
+  ]
+}
