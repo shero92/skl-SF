@@ -136,6 +136,76 @@ func _initialize() -> void:
 	_check(not editor.create_map("Bad Name", "courtyard")["ok"], "an invalid map name is refused")
 	_check(not editor.map_ids().has("editor_test_map"), "a dry run creates nothing")
 
+	# ---- Battle setup on the map's own squares.
+	editor.open_map("hero_room_01")
+	editor.battles_dir = "user://test_battles"
+	DirAccess.remove_absolute(ProjectSettings.globalize_path(editor.battle_file()))
+	editor.load_battle_setup()
+	_check(editor.battle_units.is_empty() and editor.battle_blocked.is_empty(), "a map without a battle file starts empty")
+	_check(not editor.save_battle()["ok"], "a battle without units is refused")
+	editor.set_battle_tool("player")
+	_check(editor.battle_click(Vector2i(2, 4)) and editor.battle_click(Vector2i(2, 5)), "player start squares are placed")
+	_check(not editor.battle_click(Vector2i(2, 4)), "a taken square is refused")
+	_check(not editor.battle_click(Vector2i(5, 0)), "a square without floor cannot hold a unit")
+	_check(editor.battle_units[0]["id"] == "hero" and editor.battle_units[0]["character"] == "CHAR001", "the first player unit is the hero")
+	_check(not editor.save_battle()["ok"], "a battle without enemies is refused")
+	editor.set_battle_tool("enemy")
+	_check(editor.battle_click(Vector2i(12, 4)) and editor.battle_click(Vector2i(13, 5)), "enemy start squares are placed")
+	editor.set_battle_tool("blocked")
+	_check(editor.battle_click(Vector2i(7, 4)) and editor.is_battle_blocked(Vector2i(7, 4)), "a square can be blocked by hand")
+	_check(not editor.battle_click(Vector2i(2, 4)), "a unit's square cannot be blocked")
+	_check(editor.battle_click(Vector2i(8, 4)) and editor.battle_click(Vector2i(8, 4)) and not editor.is_battle_blocked(Vector2i(8, 4)), "clicking again unblocks")
+	editor.set_battle_tool("clear")
+	_check(editor.battle_click(Vector2i(13, 5)) and editor.battle_units.size() == 3, "clear removes a unit")
+	var battle: Dictionary = editor.battle_definition()
+	_check(battle["cols"] == int(editor.map_data["size"][0]) and battle["rows"] == int(editor.map_data["size"][1]), "the battle uses the map's grid")
+	_check(battle["blocked"].has([5, 0]) and battle["blocked"].has([7, 4]) and not battle["blocked"].has([2, 4]), "squares without floor and hand-blocked squares are blocked")
+	_check(battle["blocked_by_hand"] == [[7, 4]], "hand-blocked squares are kept apart")
+	var stored: Dictionary = editor.save_battle()
+	_check(stored["ok"] and FileAccess.file_exists(editor.battle_file()), "the battle file is written")
+	editor.battle_units.clear()
+	editor.battle_blocked.clear()
+	_check(editor.load_battle_setup() and editor.battle_units.size() == 3 and editor.battle_blocked.has("7:4"), "the battle file loads back")
+
+	# The skirmish scene plays that file over the map.
+	var arena: Node = load("res://scenes/battle/tactical_battle.tscn").instantiate()
+	arena.save_path = "user://test_battles/hero.json"
+	arena.battle_path = editor.battle_file()
+	root.add_child(arena)
+	await process_frame
+	_check(arena.battle_path == editor.battle_file() and arena._room != null, "the scene loads the battle and builds its map")
+	_check(arena.session.size == Vector2i(int(battle["cols"]), int(battle["rows"])), "the session uses the battle's field")
+	_check(arena.session.manager.combatants.size() == 3, "the battle's units fight")
+	_check(arena.session.manager.blocked.has(Vector2i(7, 4)), "blocked squares block movement")
+	_check(arena.cell_rect(Vector2i(0, 0)).position == editor.grid_origin(), "battle squares sit on the map's squares")
+	_check(arena.cell_at(editor.cell_rect(Vector2i(2, 4)).get_center()) == Vector2i(2, 4), "a click on the map finds its square")
+	var turns := 0
+	while not arena.session.is_over() and turns < 600:
+		if arena.is_animating():
+			arena._process(0.05)
+		elif arena.session.is_player_turn():
+			var targets: Array[String] = arena.session.target_ids()
+			if not targets.is_empty():
+				arena.session.attack(targets[0])
+			else:
+				var options: Array[Vector2i] = arena.session.move_cells()
+				var foe = arena.session.manager.alive("enemy")[0]
+				options.sort_custom(func(a: Vector2i, b: Vector2i) -> bool: return (a - foe.cell).length_squared() < (b - foe.cell).length_squared())
+				if not options.is_empty():
+					arena.session.move(options[0])
+				var after: Array[String] = arena.session.target_ids()
+				if not after.is_empty():
+					arena.session.attack(after[0])
+				else:
+					arena.session.wait()
+		else:
+			arena.session.step_enemy()
+		turns += 1
+	_check(arena.session.is_over(), "the edited battle can be fought to the end")
+	_check(not arena.load_battle("user://test_battles/missing.json") and arena.session.size == arena.Session.SIZE, "a missing battle falls back to the practice field")
+	arena.queue_free()
+	DirAccess.remove_absolute(ProjectSettings.globalize_path(editor.battle_file()))
+
 	editor.queue_free()
 	if _failures == 0:
 		print("ROOM_EDITOR_OK")

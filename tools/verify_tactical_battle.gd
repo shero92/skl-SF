@@ -81,6 +81,21 @@ func _initialize() -> void:
 			guard += 1
 		logs.append(replay.log_lines)
 	_check(logs[0] == logs[1] and not logs[0].is_empty(), "same seed replays identically")
+	# Battle definitions made in the editor.
+	var made := {"cols": 6, "rows": 4, "blocked": [[2, 1]],
+		"units": [{"id": "hero", "team": "player", "character": "CHAR001", "weapon": "WPN_IRON_SWORD", "cell": [0, 1]},
+			{"id": "enemy_1", "team": "enemy", "character": "CHAR004", "weapon": "WPN_HAND_AXE", "cell": [5, 2]}]}
+	_check(Session.definition_error(made) == "", "a complete battle definition is valid")
+	var custom = Session.new(3, {}, made)
+	_check(custom.size == Vector2i(6, 4) and custom.manager.combatants.size() == 2, "a definition sets the field and the units")
+	_check(custom.manager.blocked.has(Vector2i(2, 1)) and not custom.manager.blocked.has(Vector2i(4, 2)), "a definition replaces the practice rocks")
+	for broken: Dictionary in [{"cols": 1, "rows": 4, "units": made["units"]}, {"cols": 6, "rows": 4, "units": [made["units"][0]]},
+			{"cols": 6, "rows": 4, "blocked": [[0, 1]], "units": made["units"]},
+			{"cols": 6, "rows": 4, "units": [made["units"][0], made["units"][0]]},
+			{"cols": 6, "rows": 4, "units": [made["units"][0], {"id": "e", "team": "enemy", "character": "CHAR004", "cell": [9, 9]}]}]:
+		_check(Session.definition_error(broken) != "", "a broken battle definition is refused")
+	_check(Session.new(3, {}, {"cols": 1, "rows": 1}).size == Session.SIZE, "an invalid definition falls back to the practice field")
+
 	# Scene: builds, converts clicks to cells, and uses an isolated save file.
 	var scene: Node = load("res://scenes/battle/tactical_battle.tscn").instantiate()
 	scene.save_path = TEST_SAVE
