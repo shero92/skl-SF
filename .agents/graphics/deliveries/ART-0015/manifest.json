@@ -237,5 +237,15 @@
   "limitations": [
     "Native canvases311x160 and304x225 are provisional calibrated proposals; uniform fit preserves source proportions.",
     "Exact plane projection, logical footprint, placement and owner approval remain pending. No collider/shadow."
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0015/hero_study_blue_rug.png",
+      "sha256": "69b47dfad679193f9018eee2187f3c497577fc2fd3a6371f6d8abe70e8d56a79"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0015/hero_bedroom_blue_rug.png",
+      "sha256": "922ab1d65c73a7974d6b77d4f21619fc83053013a094cdc288614f5c76849c9a"
+    }
   ]
 }
