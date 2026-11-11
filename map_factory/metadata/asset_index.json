@@ -2,7 +2,7 @@
   "source_art_catalog": "map_factory/metadata/source_art_index.json",
   "source_art_guide": "docs/SOURCE_ART_CATALOG.md",
   "version": 2,
-  "asset_count": 440,
+  "asset_count": 449,
   "extracted_count": 229,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
@@ -26222,6 +26222,491 @@
         "approved_by": "owner",
         "date": "2026-11-11",
         "evidence": "Owner chat 2026-11-10: reviewed B3/ART-0023 native captures, then 'agree them all and use them' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "F027",
+      "name": "Study Chest North",
+      "category": "furniture",
+      "subtype": "chest",
+      "texture_path": "res://map_factory/parts/furniture/F027_Study_Chest_North.png",
+      "status": "ready",
+      "pixel_size": [
+        76,
+        37
+      ],
+      "origin": [
+        38,
+        37
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          60,
+          20
+        ],
+        "offset": [
+          0,
+          -10
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "chest",
+        "furniture",
+        "north",
+        "wood"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_north.png",
+        "master_sha256": "6827e5bddc01c34332475d70e060b4bbe5d3a9eab3b3d9999b587103f645b993",
+        "request_id": "ART-0021"
+      },
+      "qa_notes": "Codex image_gen master (ART-0021); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "F028",
+      "name": "Study Chest East",
+      "category": "furniture",
+      "subtype": "chest",
+      "texture_path": "res://map_factory/parts/furniture/F028_Study_Chest_East.png",
+      "status": "ready",
+      "pixel_size": [
+        76,
+        58
+      ],
+      "origin": [
+        38,
+        58
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          40,
+          30
+        ],
+        "offset": [
+          0,
+          -15
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "chest",
+        "east",
+        "furniture",
+        "wood"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_east.png",
+        "master_sha256": "9c811c843ec5b247c5947f151bc98fc9903e4b4542767a3033c98fe55641922a",
+        "request_id": "ART-0021"
+      },
+      "qa_notes": "Codex image_gen master (ART-0021); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "F029",
+      "name": "Study Chest South",
+      "category": "furniture",
+      "subtype": "chest",
+      "texture_path": "res://map_factory/parts/furniture/F029_Study_Chest_South.png",
+      "status": "ready",
+      "pixel_size": [
+        76,
+        45
+      ],
+      "origin": [
+        38,
+        45
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          60,
+          20
+        ],
+        "offset": [
+          0,
+          -10
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "chest",
+        "furniture",
+        "south",
+        "wood"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_south.png",
+        "master_sha256": "b846edba4585f76fa5df8803fb077b9d506a9e731f2e95692f834da46e436d2d",
+        "request_id": "ART-0021"
+      },
+      "qa_notes": "Codex image_gen master (ART-0021); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "F030",
+      "name": "Study Chest West",
+      "category": "furniture",
+      "subtype": "chest",
+      "texture_path": "res://map_factory/parts/furniture/F030_Study_Chest_West.png",
+      "status": "ready",
+      "pixel_size": [
+        76,
+        54
+      ],
+      "origin": [
+        38,
+        54
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          40,
+          30
+        ],
+        "offset": [
+          0,
+          -15
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "chest",
+        "furniture",
+        "west",
+        "wood"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_west.png",
+        "master_sha256": "8fb9271ba9d6434ce663eb9b3eb2a77259f6f3068881e8944b63cc37c733a839",
+        "request_id": "ART-0021"
+      },
+      "qa_notes": "Codex image_gen master (ART-0021); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "D27",
+      "name": "Bedroom Blue Rug",
+      "category": "decor",
+      "subtype": "rug",
+      "texture_path": "res://map_factory/parts/decor/D27_Bedroom_Blue_Rug.png",
+      "status": "ready",
+      "pixel_size": [
+        304,
+        182
+      ],
+      "origin": [
+        152,
+        182
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "bed",
+        "decal",
+        "decor",
+        "oblique",
+        "rug"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/hero_room_rugs/v001/hero_bedroom_blue_rug.png",
+        "master_sha256": "922ab1d65c73a7974d6b77d4f21619fc83053013a094cdc288614f5c76849c9a",
+        "request_id": "ART-0015"
+      },
+      "qa_notes": "Codex image_gen master (ART-0015); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "D28",
+      "name": "Study Blue Rug",
+      "category": "decor",
+      "subtype": "rug",
+      "texture_path": "res://map_factory/parts/decor/D28_Study_Blue_Rug.png",
+      "status": "ready",
+      "pixel_size": [
+        311,
+        123
+      ],
+      "origin": [
+        155,
+        123
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decal",
+        "decor",
+        "oblique",
+        "rug",
+        "table"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/hero_room_rugs/v001/hero_study_blue_rug.png",
+        "master_sha256": "69b47dfad679193f9018eee2187f3c497577fc2fd3a6371f6d8abe70e8d56a79",
+        "request_id": "ART-0015"
+      },
+      "qa_notes": "Codex image_gen master (ART-0015); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "B12",
+      "name": "Cloud 01",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B12_Cloud_01.png",
+      "status": "ready",
+      "pixel_size": [
+        192,
+        57
+      ],
+      "origin": [
+        96,
+        57
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cloud",
+        "environment",
+        "sky"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/drifting_clouds/v001/hero_cloud_01.png",
+        "master_sha256": "d6e7b63a8b39126ebaad8325c6cb6d2f47bbfbffee8c10f21388855cf3305248",
+        "request_id": "ART-0002"
+      },
+      "qa_notes": "Codex image_gen master (ART-0002); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "B13",
+      "name": "Cloud 02",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B13_Cloud_02.png",
+      "status": "ready",
+      "pixel_size": [
+        192,
+        62
+      ],
+      "origin": [
+        96,
+        62
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cloud",
+        "environment",
+        "sky"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/drifting_clouds/v001/hero_cloud_02.png",
+        "master_sha256": "6872ac111c374e98ebcb280c7713288d3e1e4b01a3c1045e1b7492ea8327d497",
+        "request_id": "ART-0002"
+      },
+      "qa_notes": "Codex image_gen master (ART-0002); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "B14",
+      "name": "Cloud 03",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B14_Cloud_03.png",
+      "status": "ready",
+      "pixel_size": [
+        192,
+        44
+      ],
+      "origin": [
+        96,
+        44
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cloud",
+        "environment",
+        "sky"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/drifting_clouds/v001/hero_cloud_03.png",
+        "master_sha256": "63d281c077808a3345340dafc1073bad60808c6d883ac01ab5d08a1858b13d00",
+        "request_id": "ART-0002"
+      },
+      "qa_notes": "Codex image_gen master (ART-0002); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
         "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     }
