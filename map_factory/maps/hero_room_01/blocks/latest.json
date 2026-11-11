@@ -10,7 +10,7 @@
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 24,
+  "version": 25,
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
@@ -2213,14 +2213,14 @@
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
+          90,
           16
         ],
         "offset": [
           0,
-          0
+          -8
         ]
       },
       "shadow": {
@@ -7846,14 +7846,14 @@
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          24,
+          12
         ],
         "offset": [
           0,
-          0
+          -6
         ]
       },
       "shadow": {
@@ -7912,14 +7912,14 @@
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          140,
+          40
         ],
         "offset": [
           0,
-          0
+          -20
         ]
       },
       "shadow": {
@@ -7966,14 +7966,14 @@
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          200,
+          36
         ],
         "offset": [
           0,
-          0
+          -18
         ]
       },
       "shadow": {
@@ -8020,14 +8020,14 @@
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          130,
+          24
         ],
         "offset": [
           0,
-          0
+          -12
         ]
       },
       "shadow": {
@@ -8074,14 +8074,14 @@
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          50,
+          24
         ],
         "offset": [
           0,
-          0
+          -12
         ]
       },
       "shadow": {
@@ -8128,14 +8128,14 @@
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          40,
+          20
         ],
         "offset": [
           0,
-          0
+          -10
         ]
       },
       "shadow": {
@@ -8182,14 +8182,14 @@
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          40,
+          20
         ],
         "offset": [
           0,
-          0
+          -10
         ]
       },
       "shadow": {
@@ -8228,22 +8228,22 @@
       ],
       "layer": "objects",
       "position": [
-        214,
-        660
+        352.0,
+        668.0
       ],
       "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          16,
+          10
         ],
         "offset": [
           0,
-          0
+          -5
         ]
       },
       "shadow": {
@@ -8282,22 +8282,22 @@
       ],
       "layer": "objects",
       "position": [
-        286,
-        742
+        420.0,
+        748.0
       ],
       "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          16,
+          10
         ],
         "offset": [
           0,
-          0
+          -5
         ]
       },
       "shadow": {
@@ -8336,8 +8336,8 @@
       ],
       "layer": "objects",
       "position": [
-        250,
-        700
+        386.0,
+        712.0
       ],
       "scale": 1.0,
       "rotation_degrees": 0,
@@ -8390,22 +8390,22 @@
       ],
       "layer": "objects",
       "position": [
-        1214,
-        660
+        1218.0,
+        668.0
       ],
       "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          16,
+          10
         ],
         "offset": [
           0,
-          0
+          -5
         ]
       },
       "shadow": {
@@ -8444,22 +8444,22 @@
       ],
       "layer": "objects",
       "position": [
-        1286,
-        742
+        1140.0,
+        752.0
       ],
       "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
       "collision": {
-        "enabled": false,
+        "enabled": true,
         "size": [
-          32,
-          16
+          16,
+          10
         ],
         "offset": [
           0,
-          0
+          -5
         ]
       },
       "shadow": {
@@ -8498,8 +8498,8 @@
       ],
       "layer": "objects",
       "position": [
-        1250,
-        700
+        1179.0,
+        714.0
       ],
       "scale": 1.0,
       "rotation_degrees": 0,
