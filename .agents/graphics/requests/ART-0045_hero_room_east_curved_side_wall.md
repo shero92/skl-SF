@@ -1,7 +1,7 @@
 ---
 id: ART-0045
 status: requested
-owner: graphics-specialist
+owner: codex
 task: TASK-0148
 dedupe_key: hero_room_east_curved_side_wall
 existing_asset_ids: W09
@@ -43,3 +43,9 @@ output_paths: .agents/graphics/deliveries/ART-0045/hero_east_curved_side_wall.pn
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## Production claim — 2026-11-11
+TASK-0157; agent codex; branch codex/art-0044-0045-side-walls. One independent built-in image_gen source at this facing, no bitmap mirror or rotation. Owner automatic visual approval applies, technical density/geometry checks remain separate.
+
+## Candidate evidence — TASK-0157 / 2026-11-11
+Independent built-in image_gen outputs preserved under assets_hd/architecture/curved_east_side_wall/v001/rejected. Actual sizes do not satisfy requested4x density. source_count0, items[], files[], production_active=false; no qualified requested PNG. Metadata and real Godot candidate capture: game_factory/environment/ART-0045/v001. Keep request requested / needs_regeneration, not delivered. Automatic visual approval does not waive this technical gate. No upscale/mirror/rotation or silent native-size reduction.

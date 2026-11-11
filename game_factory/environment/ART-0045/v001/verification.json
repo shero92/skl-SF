@@ -1,0 +1,9 @@
+{
+  "evidence_hashes_verified": true,
+  "actual_viewport_verified": true,
+  "requested4x_gate_passed": false,
+  "qualified_production_count": 0,
+  "production_active": false,
+  "owner_approved": true,
+  "quality_status": "needs_regeneration"
+}

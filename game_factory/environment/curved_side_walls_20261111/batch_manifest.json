@@ -1,0 +1,262 @@
+{
+  "task_id": "TASK-0157",
+  "generation_count": 3,
+  "qualified_production_count": 0,
+  "candidate_count": 3,
+  "request_status": "requested",
+  "quality_status": "needs_regeneration",
+  "candidates": [
+    {
+      "id": "hero_west_curved_side_wall_attempt_01",
+      "request_id": "ART-0044",
+      "source_path": "assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_01.png",
+      "delivery_candidate_path": ".agents/graphics/deliveries/ART-0044/rejected/hero_west_curved_side_wall_attempt_01.png",
+      "sha256": "8ba1f9ffe11509a62ab89cb16abb8db71a9960220f5179a54b23d73334d0ef19",
+      "pixel_size": [
+        877,
+        1794
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        30,
+        4,
+        821,
+        1721
+      ],
+      "origin": [
+        425.5,
+        1720
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "facing": "east/southeast inside face; arc bulges west/left; endpoints right",
+      "native_canvas": [
+        230,
+        470
+      ],
+      "native_width": 230,
+      "native_height": 470,
+      "native_review_path": "game_factory/environment/ART-0044/v001/native_review/hero_west_curved_side_wall_attempt_01.png",
+      "native_review_sha256": "8dc069cb0637d387bf28419839b8bff7783506630806b25e24dcaefd40c709cd",
+      "native_source_region": [
+        0,
+        0,
+        877,
+        1794
+      ],
+      "requested_minimum_master": [
+        920,
+        1880
+      ],
+      "actual_source_pixels_per_native_pixel": [
+        3.8130434782608695,
+        3.8170212765957445
+      ],
+      "requested_4x_gate_passed": false,
+      "maximum_native_canvas_at4x": [
+        219,
+        448
+      ],
+      "maximum_native_note": "measurement only; requested canvas is NOT silently reduced",
+      "alpha128_margins": [
+        30,
+        4,
+        56,
+        73
+      ],
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "prompt_text": "ART-0044 hero_west_curved_side_wall. ONE independently drawn connected CURVED MASONRY SIDE WALL for the WEST edge of a round terrace, isolated transparent RGBA. Reference crop is composition/material only: no paste, trace or extraction. High-resolution portrait master at least920x1880, ideally1080x2200 genuinely native; narrow canvas aspect23:47, intended native230x470. No upscale. CRITICAL GEOMETRY: this is an arc in FLOOR PLAN, not a flat straight front wall and not a stone doorway/arch. From top/rear at UPPER RIGHT of image, the wall sweeps/bulges LEFT/west through the middle, then returns toward LOWER RIGHT/front. A gentle open-C-shaped curved strip viewed from above; the open concave side faces RIGHT/east into the empty room. Both top and bottom endpoints lie toward right side; middle furthest left. Wall has real vertical thickness and3-4block-course inner face, not just flat coping slabs. South-of-room camera looking north/down50degrees, orthographic tactical RPG: see the TOP COURSE tracing the whole curve and the INSIDE east/southeast-facing vertical stone surface. Height4courses at far/rear end, descends to3at near/front end, modest alternating raised cap blocks (crenellated) along curve. Warm golden-tan limestone rectangular blocks roughly32x24px at native, staggered warm-brown joints, chipped corners and weathering, crisp detailed hard pixel clusters, thin dark contour. UPPER-LEFT sunlight, inner east face a little shaded, top surfaces bright. Whole arc within4% transparent margins. Nothing in empty centre or outside: NO floor/ground/sea/cliff/rock base, plants/ivy/flowers, banners, lanterns, posts, vases, windows/doors, cast shadow, characters, text/watermark, border, sheet or second piece. One continuous wall at one true perspective only.",
+      "prompt_path": "game_factory/environment/ART-0044/v001/requests/hero_west_curved_side_wall_attempt_01.txt",
+      "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0044_target.png",
+      "reference_crop_sha256": "d9935f2ec241d060f71f4fa3e5a3eafbcdd0e2d1c7482948cae9d9da4fd4eb4c",
+      "comparison_path": ".agents/graphics/requests/reference_crops/ART-0044_compare.png",
+      "comparison_sha256": "9918516b1845aea4e471a5d727e6d991fcd79925f8825aea03fb75c26f357ba0",
+      "collision": null,
+      "connection_sockets": null,
+      "footprint_64px_cells": null,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_regeneration",
+      "production_active": false,
+      "reason": "Below requested4x source density. Native geometry/renderable preview does not waive master resolution. No qualified production output."
+    },
+    {
+      "id": "hero_west_curved_side_wall_attempt_02",
+      "request_id": "ART-0044",
+      "source_path": "assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_02.png",
+      "delivery_candidate_path": ".agents/graphics/deliveries/ART-0044/rejected/hero_west_curved_side_wall_attempt_02.png",
+      "sha256": "69a3e8d903e7371f666ff965a6d19e35de6d87517ebb2916a7581251b20e29c6",
+      "pixel_size": [
+        878,
+        1792
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        44,
+        39,
+        815,
+        1659
+      ],
+      "origin": [
+        429.5,
+        1658
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "facing": "east/southeast inside face; arc bulges west/left; endpoints right",
+      "native_canvas": [
+        230,
+        470
+      ],
+      "native_width": 230,
+      "native_height": 470,
+      "native_review_path": "game_factory/environment/ART-0044/v001/native_review/hero_west_curved_side_wall_attempt_02.png",
+      "native_review_sha256": "c3172a6b3e8b0a5530457758e4f3fa91645b4b6340f188033fd2a6299af27ffd",
+      "native_source_region": [
+        0,
+        0,
+        878,
+        1792
+      ],
+      "requested_minimum_master": [
+        920,
+        1880
+      ],
+      "actual_source_pixels_per_native_pixel": [
+        3.8173913043478263,
+        3.8127659574468087
+      ],
+      "requested_4x_gate_passed": false,
+      "maximum_native_canvas_at4x": [
+        219,
+        448
+      ],
+      "maximum_native_note": "measurement only; requested canvas is NOT silently reduced",
+      "alpha128_margins": [
+        44,
+        39,
+        63,
+        133
+      ],
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "prompt_text": "ART-0044 attempt2. Regenerate/repaint this complete west curved wall at HIGHER NATIVE RESOLUTION: output at least920x1880 pixels, preferably1024x2092, no upscaling. Keep the same open-C floor-plan wall bulging left with both ends on the right, same perspective and upper-left illumination,3-4courses and modest crenellated caps, stone texture/palette. Add a real4% EMPTY TRANSPARENT safety margin on every side, especially ABOVE the far upper-right cap: the entire upper cap/top stone must be fully drawn inside frame and not touch the top edge. Nothing clipped. Do not add or flatten geometry, no straight-wall replacement. Draw a new clean detailed pixel-art source on portrait canvas aspect23:47; do not just enlarge bitmap pixels. Alpha0 empty interior and surround, no plants, lanterns, banners, cliff base, floor/sea/ground, cast shadow, text, frame or second wall. Same one connected west-side wall, concave inner face toward right/east. Actual high-resolution PNG pixels requested, not a written resolution label.",
+      "prompt_path": "game_factory/environment/ART-0044/v001/requests/hero_west_curved_side_wall_attempt_02.txt",
+      "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0044_target.png",
+      "reference_crop_sha256": "d9935f2ec241d060f71f4fa3e5a3eafbcdd0e2d1c7482948cae9d9da4fd4eb4c",
+      "comparison_path": ".agents/graphics/requests/reference_crops/ART-0044_compare.png",
+      "comparison_sha256": "9918516b1845aea4e471a5d727e6d991fcd79925f8825aea03fb75c26f357ba0",
+      "collision": null,
+      "connection_sockets": null,
+      "footprint_64px_cells": null,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_regeneration",
+      "production_active": false,
+      "reason": "Below requested4x source density. Native geometry/renderable preview does not waive master resolution. No qualified production output."
+    },
+    {
+      "id": "hero_east_curved_side_wall_attempt_01",
+      "request_id": "ART-0045",
+      "source_path": "assets_hd/architecture/curved_east_side_wall/v001/rejected/hero_east_curved_side_wall_attempt_01.png",
+      "delivery_candidate_path": ".agents/graphics/deliveries/ART-0045/rejected/hero_east_curved_side_wall_attempt_01.png",
+      "sha256": "36aad081a47245286b761f297ee2281f58e7f4da2c818c0c7b1a38f0c48cadd1",
+      "pixel_size": [
+        829,
+        1898
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        54,
+        64,
+        792,
+        1724
+      ],
+      "origin": [
+        423.0,
+        1723
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "facing": "west/southwest inside face; arc bulges east/right; endpoints left",
+      "native_canvas": [
+        236,
+        540
+      ],
+      "native_width": 236,
+      "native_height": 540,
+      "native_review_path": "game_factory/environment/ART-0045/v001/native_review/hero_east_curved_side_wall_attempt_01.png",
+      "native_review_sha256": "e4cae8dad0cee091e9f484e598fa0a64b7582a1d499d3cd5266015b1510b6dc7",
+      "native_source_region": [
+        0,
+        0,
+        829,
+        1898
+      ],
+      "requested_minimum_master": [
+        944,
+        2160
+      ],
+      "actual_source_pixels_per_native_pixel": [
+        3.51271186440678,
+        3.5148148148148146
+      ],
+      "requested_4x_gate_passed": false,
+      "maximum_native_canvas_at4x": [
+        207,
+        474
+      ],
+      "maximum_native_note": "measurement only; requested canvas is NOT silently reduced",
+      "alpha128_margins": [
+        54,
+        64,
+        37,
+        174
+      ],
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "prompt_text": "ART-0045 hero_east_curved_side_wall. ONE completely NEW independently drawn EAST curved masonry wall, not a flip/mirror/rotation or pasted counterpart. First attached crop is only STYLE and layout reference, second west-wall image is MATERIAL reference only. Actual native PNG must be at least944x2160pixels (4x236x540native), preferably1180x2700; no upscaling, no resolution label in image. Narrow portrait canvas aspect236:540. CRITICAL floor-plan arc: from UPPER LEFT/rear-right corner, sweep outward RIGHT/east through middle, then return to LOWER LEFT/front-right end. Open backward-C / ')' shaped curved strip viewed from above; concave/open INSIDE faces LEFT/west into empty room. Both endpoints toward left, middle furthest right. One connected wall with real3D vertical masonry thickness, not a flat2D arch, gate or floor ring. Camera south looking north/down50degrees, orthographic tactical RPG; see continuous top coping following the arc and inner WEST/SOUTHWEST face. Rear end about5block courses high, decreases to3at front; alternating modest raised cap stones along top. Same warm tan/golden limestone, rectangular staggered blocks, chipped edges/weathering and dark warm-brown mortar, crisp detailed hard pixel clusters and native1-2px outline as west material reference. Sun STILL from UPPER LEFT: inner west face brighter, lower-right/exterior recesses darker. Do not mirror the west image's illumination or joint pattern; repaint new joints/details. Whole wall inside at least4% transparent margin on all sides; no clipping of endpoints or caps. TRUE RGBA alpha0 empty centre and surround. No floor, sea, ground, cliff rock/base, planters/vases, flowers/ivy, banners/lanterns/posts, cast shadow, windows/door, characters, text/labels/watermark/border/sheet or extra objects. ONE east wall at one proper perspective.",
+      "prompt_path": "game_factory/environment/ART-0045/v001/requests/hero_east_curved_side_wall_attempt_01.txt",
+      "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0045_target.png",
+      "reference_crop_sha256": "565468c5cafba3e7a95302d1fbc780243077bc7ef1b3db9a3ba4f732f89325b1",
+      "comparison_path": ".agents/graphics/requests/reference_crops/ART-0045_compare.png",
+      "comparison_sha256": "6eb857d600d3f3bf7bde8fe8f07c93269d4e553d1542b0cdf31ff2e1a7851695",
+      "collision": null,
+      "connection_sockets": null,
+      "footprint_64px_cells": null,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_regeneration",
+      "production_active": false,
+      "reason": "Below requested4x source density. Native geometry/renderable preview does not waive master resolution. No qualified production output."
+    }
+  ],
+  "source_upscaled": false,
+  "owner_approved": true,
+  "production_active": false
+}
