@@ -96,6 +96,35 @@ func _initialize() -> void:
 	var options: Array[Vector2i] = scene.session.move_cells()
 	_check(scene.click_cell(options[options.size() - 1]), "clicking a blue cell moves the unit")
 	_check(not scene.click_cell(Vector2i(4, 2)), "clicking a rock does nothing")
+	# Attack playback: the scene queues the director, locks input, and the drawn hp follows the hit frame.
+	scene.restart()
+	var battle = scene.session
+	while not battle.is_player_turn() and not battle.is_over():
+		battle.step_enemy()
+	while scene.is_animating():
+		scene._process(0.05)
+	var target_unit = battle.manager.alive("enemy")[0]
+	var hero_unit = battle.current()
+	for reach in [1, 2, 3]:  # melee, spear or bow: put the enemy at the first distance this weapon can hit
+		var spot: Vector2i = hero_unit.cell + Vector2i(reach, 0)
+		if battle.manager.occupant(spot) == null and not battle.manager.blocked.has(spot):
+			target_unit.cell = spot
+			if battle.target_ids().has(String(target_unit.id)):
+				break
+	var before: int = battle.hp(String(target_unit.id))
+	_check(battle.target_ids().has(String(target_unit.id)), "adjacent enemy is a target")
+	_check(scene.click_cell(target_unit.cell), "clicking the enemy attacks it")
+	_check(scene.is_animating(), "an attack starts a playback")
+	_check(int(scene._shown_hp[String(target_unit.id)]) == before, "drawn hp waits for the hit frame")
+	_check(not scene.click_cell(Vector2i(0, 0)), "input is locked during the playback")
+	var play_steps := 0
+	while scene.is_animating() and play_steps < 400:
+		scene._process(0.05)
+		play_steps += 1
+	_check(not scene.is_animating(), "playback ends")
+	for c: Dictionary in battle.manager.combatants:
+		_check(int(scene._shown_hp[String(c.id)]) == battle.hp(String(c.id)), "drawn hp equals real hp after playback: " + String(c.id))
+	_check(scene._actors[String(hero_unit.id)].pose == "idle", "attacker returns to idle")
 	scene.queue_free()
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(TEST_SAVE))
 	if _failures == 0:

@@ -1,6 +1,6 @@
 ---
 id: TASK-0155
-status: todo
+status: review
 owner: claude
 agent: claude
 priority: medium
@@ -19,3 +19,10 @@ Planned 2026-11-11 after hero_room_01 v0026 (owner asked for the next tasks for 
 
 - Use the existing BattleDirector and timelines; no new art.
 - Units without battle art fall back to the current instant result.
+
+## Evidence / handoff
+- The scene queues every resolved attack (and its counter) on BattleDirector; PoseActor stand-ins receive the controller poses and are drawn as a wind-up lean, a lunge and a hurt flash. Damage text appears on the hit frame.
+- The rules still resolve at once (the director design): what waits for the hit frame is the display (hp bar, defeated unit leaving, damage text). Clicks, Space and enemy turns are locked while a playback runs.
+- `tools/verify_tactical_battle.gd` checks: playback starts, drawn hp waits for the hit, input is locked, playback ends, drawn hp equals real hp, attacker returns to idle.
+- Opened in a real window for about six seconds without script errors; nobody has played a full battle by hand.
+- Units are still plain shapes; real battle sprites need art (ART-0041 covers the field only).
