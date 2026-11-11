@@ -58,6 +58,23 @@ class SaveToolTests(unittest.TestCase):
         self.assertEqual(saver.save({"map_id": "hero_room_01", "changes": [{"op": "remove", "instance_id": name}]}, dry_run=True),
                          self.version + 1)
 
+    def test_ground_edits_and_new_map_checks(self):
+        latest = _latest()
+        rows = [list(map(list, spans)) for spans in latest["floor_footprint"]["row_spans"]]
+        rows[5] = [[1, rows[5][0][1]]]  # drop square 0 of row 5
+        request = {"map_id": "hero_room_01", "changes": [
+            {"op": "tile", "x": 0, "y": 5, "id": None},
+            {"op": "tile", "x": 3, "y": 3, "id": "G09"},
+            {"op": "property", "key": "floor_footprint", "value": {"row_spans": rows, "shape": "editor"}}]}
+        self.assertEqual(saver.save(request, dry_run=True), self.version + 1)
+        with self.assertRaises(ValueError):
+            saver.save({"map_id": "hero_room_01", "changes": [{"op": "property", "key": "camera", "value": {}}]}, dry_run=True)
+        self.assertEqual(saver.new_map("editor_test_map", "courtyard", dry_run=True), 1)
+        for name, preset in (("hero_room_01", "courtyard"), ("Bad Name", "courtyard"), ("fine_name", "no_such_preset")):
+            with self.assertRaises(ValueError):
+                saver.new_map(name, preset, dry_run=True)
+        self.assertFalse((ROOT / "map_factory/maps/editor_test_map").exists())
+
     def test_rejected_edits_leave_nothing_behind(self):
         for changes in ([{"op": "add", "layer": "objects", "id": "NO_SUCH_PART", "instance_id": "EdX_1", "x": 1, "y": 1}],
                         [{"op": "remove", "instance_id": "NoSuchBlock"}],
