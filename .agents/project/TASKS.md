@@ -145,3 +145,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0141](../tasks/TASK-0141_staff_magic.md) | review | claude | TASK-0140 | none |
 | [TASK-0142](../tasks/TASK-0142_balance_pass_two.md) | review | claude | TASK-0141 | none |
 | [TASK-0143](../tasks/TASK-0143_hero_save.md) | review | claude | TASK-0136 | none |
+| [TASK-0144](../tasks/TASK-0144_room_v0023_b1_b2.md) | review | claude | TASK-0135 | none |

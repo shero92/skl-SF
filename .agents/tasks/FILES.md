@@ -148,5 +148,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0141_staff_magic.md`](TASK-0141_staff_magic.md)
 - [`TASK-0142_balance_pass_two.md`](TASK-0142_balance_pass_two.md)
 - [`TASK-0143_hero_save.md`](TASK-0143_hero_save.md)
+- [`TASK-0144_room_v0023_b1_b2.md`](TASK-0144_room_v0023_b1_b2.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
