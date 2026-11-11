@@ -164,3 +164,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0160](../tasks/TASK-0160_art_lantern_sea_light.md) | todo | codex | TASK-0148 | ART-0040 |
 | [TASK-0161](../tasks/TASK-0161_art_skirmish_field_tiles.md) | todo | codex | TASK-0147 | ART-0041 |
 | [TASK-0162](../tasks/TASK-0162_codex_own_worktree.md) | todo | codex | none | none |
+| [TASK-0163](../tasks/TASK-0163_room_v0028_foam_east_lantern.md) | review | claude | TASK-0149 | ART-0040 |

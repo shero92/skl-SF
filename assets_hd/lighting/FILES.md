@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`east_wall_lantern/`](east_wall_lantern/FILES.md)
 - [`west_wall_lantern/`](west_wall_lantern/FILES.md)
 
 ## Files

@@ -12,5 +12,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`L06_Wall_Lantern_West.png`](L06_Wall_Lantern_West.png)
 - [`L06_Wall_Lantern_West.png.import`](L06_Wall_Lantern_West.png.import)
+- [`L07_Wall_Lantern_East.png`](L07_Wall_Lantern_East.png)
+- [`L07_Wall_Lantern_East.png.import`](L07_Wall_Lantern_East.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

@@ -44,7 +44,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0037](requests/ART-0037_hero_room_sea_light_lattice.md) | requested | graphics-specialist | TASK-0102 | none |
 | [ART-0038](requests/ART-0038_hero_room_window_wall_piece.md) | delivered | graphics-specialist | TASK-0102 | none |
 | [ART-0039](requests/ART-0039_hero_room_wooden_stool.md) | delivered | graphics-specialist | TASK-0102 | none |
-| [ART-0040](requests/ART-0040_hero_room_wall_lantern_east.md) | requested | graphics-specialist | TASK-0102 | L06 |
+| [ART-0040](requests/ART-0040_hero_room_wall_lantern_east.md) | delivered | graphics-specialist | TASK-0102 | L06 |
 | [ART-0041](requests/ART-0041_skirmish_field_tiles.md) | requested | graphics-specialist | TASK-0147 | none |
 | [ART-0042](requests/ART-0042_hero_room_rear_left_ruined_wall_window.md) | requested | graphics-specialist | TASK-0148 | W09 |
 | [ART-0043](requests/ART-0043_hero_room_rear_right_wall_arched_door_niche.md) | requested | graphics-specialist | TASK-0148 | A23 |
