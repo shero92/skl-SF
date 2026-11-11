@@ -69,6 +69,11 @@ class Design:
         self.changes.append({"op": "update_block", "instance_id": name, "set": updates})
         return self
 
+    def set_property(self, key: str, value) -> "Design":
+        """Change a map-level property such as camera, lighting or background_color."""
+        self.changes.append({"op": "set_property", "key": key, "value": value})
+        return self
+
     def remove(self, name: str) -> "Design":
         self.changes.append({"op": "remove_block", "instance_id": name})
         return self

@@ -58,6 +58,7 @@ func build_room(path: String, parent: Node2D) -> Node2D:
     backdrop.polygon = PackedVector2Array([Vector2.ZERO, Vector2(float(canvas[0]), 0),
         Vector2(float(canvas[0]), float(canvas[1])), Vector2(0, float(canvas[1]))])
     backdrop.color = Color(String(data.get("background_color", "#087ac6")))
+    root.set_meta("background_color", backdrop.color)  # the game clears the window with it outside the canvas
     root.add_child(backdrop)
 
     # No sea in dungeons or indoor chambers unless the map explicitly requests it.

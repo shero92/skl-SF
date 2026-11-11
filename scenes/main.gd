@@ -48,6 +48,9 @@ func _ready() -> void:
         var view: Dictionary = room.get_meta("camera")
         camera.position = Vector2(float(view.get("x", 768)), float(view.get("y", 512)))
         camera.zoom = Vector2.ONE * float(view.get("zoom", 1.0))
+    if room.has_meta("background_color"):
+        # A zoomed-out camera shows a margin beside the canvas; fill it with the map's own backdrop colour.
+        RenderingServer.set_default_clear_color(room.get_meta("background_color"))
     camera.enabled = true
     add_child(camera)
 
