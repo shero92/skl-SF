@@ -1,0 +1,238 @@
+{
+  "request_id": "ART-0002",
+  "task_id": "TASK-0013",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 3,
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "production_active": false,
+  "generation_cache_required": false,
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; never pasted/cropped/traced",
+  "style_references": [
+    {
+      "path": "assets_hd/background/cloud/cloud_01.png",
+      "sha256": "1c73db2bbc95465afc699a806ad2c63fd734721948d895a5a602c2bf2495eedf"
+    }
+  ],
+  "items": [
+    {
+      "id": "hero_cloud_01",
+      "request_id": "ART-0002",
+      "master_path": "assets_hd/background/drifting_clouds/v001/hero_cloud_01.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0002/hero_cloud_01.png",
+      "sha256": "d6e7b63a8b39126ebaad8325c6cb6d2f47bbfbffee8c10f21388855cf3305248",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        93,
+        66,
+        2073,
+        653
+      ],
+      "origin": [
+        1083.0,
+        652
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "non-directional background silhouette",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "prompt_text": "ART-0002 hero_cloud_01. ONE independent complete drifting cloud silhouette, low wide cumulus with a rounded central crown and short uneven wispy ends. Match viewed SKL-SF assets_hd/background/cloud/cloud_01.png: hard high-detail pixel clusters, warm ivory white sunlit upper-left tops, pale periwinkle/sky-blue underside, no black outline, no blur. One coherent cloud sprite, not multiple disconnected subjects or a sheet. Wide horizontal silhouette, native192x64 QA, master1792x1024 or larger, visible source at least768px wide. Transparent RGBA PNG, clean genuine alpha0 empty margins5% all sides; airy translucent contour with denser bright body. No sky fill, sea, horizon, ground, cast shadow, backdrop, glow/halo, rain, characters, text, watermark or frame. Whole cloud uncut. New independently drawn shape, no mirror/rotation/crop from another cloud. Motion is runtime scrolling; this is a static cloud variant.",
+      "prompt_path": "game_factory/environment/ART-0002/v001/requests/hero_cloud_01.txt",
+      "footprint_64px_cells": null,
+      "footprint_status": "not applicable: non-colliding sky background",
+      "collision": false,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "mount_points": null,
+      "native_canvas": [
+        192,
+        64
+      ],
+      "native_review_path": "game_factory/environment/ART-0002/v001/native_review/hero_cloud_01.png",
+      "native_review_sha256": "4902fc37ea6965ef15adaf77de27091043a7cbdd157b4e432a916e20bb4be691",
+      "native_source_region": [
+        85,
+        58,
+        2081,
+        661
+      ],
+      "native_review_note": "QA alpha128 plus8px; weak alpha outside may be omitted; full master preserved",
+      "resized_size": [
+        192,
+        58
+      ],
+      "offset": [
+        0,
+        6,
+        192,
+        64
+      ],
+      "uniform_scale": 0.09619238476953908,
+      "source_pixels_per_visible_pixel": 10.395833333333334,
+      "projected_visible_aspect": 3.373083475298126,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false
+    },
+    {
+      "id": "hero_cloud_02",
+      "request_id": "ART-0002",
+      "master_path": "assets_hd/background/drifting_clouds/v001/hero_cloud_02.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0002/hero_cloud_02.png",
+      "sha256": "6872ac111c374e98ebcb280c7713288d3e1e4b01a3c1045e1b7492ea8327d497",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        31,
+        26,
+        2131,
+        700
+      ],
+      "origin": [
+        1081.0,
+        699
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "non-directional background silhouette",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "prompt_text": "ART-0002 hero_cloud_02. ONE independent complete drifting cloud silhouette, asymmetric cloud with taller billowing crown on LEFT and tapering low body to RIGHT. Match viewed SKL-SF assets_hd/background/cloud/cloud_01.png: hard high-detail pixel clusters, warm ivory white sunlit upper-left tops, pale periwinkle/sky-blue underside, no black outline, no blur. One coherent cloud sprite, not multiple disconnected subjects or a sheet. Wide horizontal silhouette, native192x64 QA, master1792x1024 or larger, visible source at least768px wide. Transparent RGBA PNG, clean genuine alpha0 empty margins5% all sides; airy translucent contour with denser bright body. No sky fill, sea, horizon, ground, cast shadow, backdrop, glow/halo, rain, characters, text, watermark or frame. Whole cloud uncut. New independently drawn shape, no mirror/rotation/crop from another cloud. Motion is runtime scrolling; this is a static cloud variant.",
+      "prompt_path": "game_factory/environment/ART-0002/v001/requests/hero_cloud_02.txt",
+      "footprint_64px_cells": null,
+      "footprint_status": "not applicable: non-colliding sky background",
+      "collision": false,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "mount_points": null,
+      "native_canvas": [
+        192,
+        64
+      ],
+      "native_review_path": "game_factory/environment/ART-0002/v001/native_review/hero_cloud_02.png",
+      "native_review_sha256": "378165ea8176f909b9c8271c87d2477f83fa27d053771b56a56318c7129795fa",
+      "native_source_region": [
+        23,
+        18,
+        2139,
+        708
+      ],
+      "native_review_note": "QA alpha128 plus8px; weak alpha outside may be omitted; full master preserved",
+      "resized_size": [
+        192,
+        63
+      ],
+      "offset": [
+        0,
+        1,
+        192,
+        64
+      ],
+      "uniform_scale": 0.09073724007561437,
+      "source_pixels_per_visible_pixel": 11.020833333333332,
+      "projected_visible_aspect": 3.115727002967359,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false
+    },
+    {
+      "id": "hero_cloud_03",
+      "request_id": "ART-0002",
+      "master_path": "assets_hd/background/drifting_clouds/v001/hero_cloud_03.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0002/hero_cloud_03.png",
+      "sha256": "63d281c077808a3345340dafc1073bad60808c6d883ac01ab5d08a1858b13d00",
+      "pixel_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        48,
+        129,
+        2136,
+        606
+      ],
+      "origin": [
+        1092.0,
+        605
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "non-directional background silhouette",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "prompt_text": "ART-0002 hero_cloud_03. ONE independent complete drifting cloud silhouette, long airy flattened cloud with several small connected puffs and a modest crown on RIGHT. Match viewed SKL-SF assets_hd/background/cloud/cloud_01.png: hard high-detail pixel clusters, warm ivory white sunlit upper-left tops, pale periwinkle/sky-blue underside, no black outline, no blur. One coherent cloud sprite, not multiple disconnected subjects or a sheet. Wide horizontal silhouette, native192x64 QA, master1792x1024 or larger, visible source at least768px wide. Transparent RGBA PNG, clean genuine alpha0 empty margins5% all sides; airy translucent contour with denser bright body. No sky fill, sea, horizon, ground, cast shadow, backdrop, glow/halo, rain, characters, text, watermark or frame. Whole cloud uncut. New independently drawn shape, no mirror/rotation/crop from another cloud. Motion is runtime scrolling; this is a static cloud variant.",
+      "prompt_path": "game_factory/environment/ART-0002/v001/requests/hero_cloud_03.txt",
+      "footprint_64px_cells": null,
+      "footprint_status": "not applicable: non-colliding sky background",
+      "collision": false,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "mount_points": null,
+      "native_canvas": [
+        192,
+        64
+      ],
+      "native_review_path": "game_factory/environment/ART-0002/v001/native_review/hero_cloud_03.png",
+      "native_review_sha256": "bfedaec78a94de61984487e8eb4184d79ec8f53df67582e89978d02379719c17",
+      "native_source_region": [
+        40,
+        121,
+        2144,
+        614
+      ],
+      "native_review_note": "QA alpha128 plus8px; weak alpha outside may be omitted; full master preserved",
+      "resized_size": [
+        192,
+        45
+      ],
+      "offset": [
+        0,
+        19,
+        192,
+        64
+      ],
+      "uniform_scale": 0.09125475285171103,
+      "source_pixels_per_visible_pixel": 10.958333333333332,
+      "projected_visible_aspect": 4.377358490566038,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false
+    }
+  ],
+  "rejected_attempts": [],
+  "limitations": [
+    "Native192x64 is a provisional QA canvas; uniform fit preserves cloud proportions.",
+    "Runtime scrolling, wrap spacing/edge popping and owner approval remain pending. No collider/shadow."
+  ]
+}
