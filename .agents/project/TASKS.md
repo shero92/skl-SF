@@ -150,3 +150,17 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0146](../tasks/TASK-0146_room_v0025_fences_colliders.md) | review | claude | TASK-0145 | none |
 | [TASK-0147](../tasks/TASK-0147_playable_skirmish.md) | review | claude | TASK-0121 | ART-0041 |
 | [TASK-0148](../tasks/TASK-0148_free_transform_and_reference_requests.md) | review | claude | TASK-0146 | ART-0042 |
+| [TASK-0149](../tasks/TASK-0149_room_v0027_chest_rugs_clouds.md) | todo | claude | TASK-0148 | ART-0015 |
+| [TASK-0150](../tasks/TASK-0150_room_curved_perimeter.md) | blocked_on_art | claude | TASK-0156 | ART-0044 |
+| [TASK-0151](../tasks/TASK-0151_room_round_walk_area.md) | blocked_on_art | claude | TASK-0150 | ART-0046 |
+| [TASK-0152](../tasks/TASK-0152_room_double_bed_sea_stacks.md) | blocked_on_art | claude | TASK-0159 | ART-0048 |
+| [TASK-0153](../tasks/TASK-0153_room_side_lantern_sea_light.md) | blocked_on_art | claude | TASK-0160 | ART-0040 |
+| [TASK-0154](../tasks/TASK-0154_room_region_progress_report.md) | todo | claude | TASK-0148 | none |
+| [TASK-0155](../tasks/TASK-0155_skirmish_attack_animations.md) | todo | claude | TASK-0147 | none |
+| [TASK-0156](../tasks/TASK-0156_art_rear_walls.md) | todo | codex | TASK-0148 | ART-0042 |
+| [TASK-0157](../tasks/TASK-0157_art_curved_side_walls.md) | todo | codex | TASK-0148 | ART-0044 |
+| [TASK-0158](../tasks/TASK-0158_art_front_parapet_cliff.md) | todo | codex | TASK-0148 | ART-0046 |
+| [TASK-0159](../tasks/TASK-0159_art_double_bed_sea_stacks.md) | todo | codex | TASK-0148 | ART-0048 |
+| [TASK-0160](../tasks/TASK-0160_art_lantern_sea_light.md) | todo | codex | TASK-0148 | ART-0040 |
+| [TASK-0161](../tasks/TASK-0161_art_skirmish_field_tiles.md) | todo | codex | TASK-0147 | ART-0041 |
+| [TASK-0162](../tasks/TASK-0162_codex_own_worktree.md) | todo | codex | none | none |
