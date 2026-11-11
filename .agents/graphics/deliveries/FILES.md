@@ -14,6 +14,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0019/`](ART-0019/FILES.md)
 - [`ART-0020/`](ART-0020/FILES.md)
 - [`ART-0022/`](ART-0022/FILES.md)
+- [`ART-0023/`](ART-0023/FILES.md)
 - [`ART-0024/`](ART-0024/FILES.md)
 - [`ART-0025/`](ART-0025/FILES.md)
 - [`ART-0032/`](ART-0032/FILES.md)

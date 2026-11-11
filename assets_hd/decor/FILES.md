@@ -8,6 +8,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`compass_inlay/`](compass_inlay/FILES.md)
 - [`rope_post_fence/`](rope_post_fence/FILES.md)
+- [`side_banners/`](side_banners/FILES.md)
 
 ## Files
 

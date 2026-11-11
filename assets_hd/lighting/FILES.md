@@ -6,7 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`west_wall_lantern/`](west_wall_lantern/FILES.md)
 
 ## Files
 
