@@ -326,5 +326,23 @@
     "96x48 native canvas remains provisional until cliff terrain integration.",
     "No room placement, terrain occlusion, ocean blending or runtime map activation tested.",
     "Four authored phases at4fps; visible shape/mass changes are not optical-flow interpolation."
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_01.png",
+      "sha256": "4c44b5b35087c10fe2b3ef75a0e18242b39e5306c4f3d74d97b0b2f8c6b0ffee"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_02.png",
+      "sha256": "8095222701032f32a7e239b450fd1d2df6a714af02665e557f506c110ca1766f"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_03.png",
+      "sha256": "7deaec5d213d88cedb904a9d9e8667a633a6e55fe7a0c4e7169a81f1cfdbb392"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_04.png",
+      "sha256": "32c11a3e11bc31908fb697fc1db609b992a5466f6339673999c2166d2ac2583c"
+    }
   ]
 }
