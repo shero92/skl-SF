@@ -1,6 +1,6 @@
 ---
 id: ART-0015
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0026
 dedupe_key: hero_room_study_blue_rug
@@ -65,3 +65,10 @@ issue: 20
 ## Calibrated measurements (TASK-0038, 2026-10-27)
 - Source: docs/HERO_ROOM_CALIBRATION.md (reference SHA-256 verified; native = source px x 0.971; ground depth per D1).
 - Needed: study rug source 995,450-1315,580 (320x130) -> native 311x160 (D1-a 311x126); bedroom rug source 215,365-528,548 (313x183) -> native 304x225 (D1-a 304x178). P005 is portrait (w ratio 0.54). Output hero_bedroom_blue_rug.png added.
+
+## Next graphics delivery — TASK-0026
+- Owner explicitly assigned next graphics production against authenticated target SHA4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323. Existing square/portrait rugs inspected and preserved.
+- Two independently authored oblique ground projections at exact delivery paths; source hashes and prompts in manifest. No bitmap flip/rotation/stretch or master upscaling.
+- Four prior attempts retained. Actual Godot1x/2x capture under game_factory/environment/ART-0015/v001/.
+- D1 floor-depth alternatives remain unresolved. Current311x160/304x225 and D1-a311x126/304x178 are recorded as proposals; selected visible aspect closer to D1-a. No map/camera changes.
+- Delivered candidates only; owner approval, exact ground projection/footprint and Claude integration pending.

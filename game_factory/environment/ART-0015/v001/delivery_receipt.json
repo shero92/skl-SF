@@ -1,0 +1,108 @@
+{
+  "task_id": "TASK-0026",
+  "request_id": "ART-0015",
+  "destination": "H:\\shining force\\skl-SF",
+  "cache_required": false,
+  "files": [
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/hero_bedroom_blue_rug.png",
+      "sha256": "922ab1d65c73a7974d6b77d4f21619fc83053013a094cdc288614f5c76849c9a"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/hero_study_blue_rug.png",
+      "sha256": "69b47dfad679193f9018eee2187f3c497577fc2fd3a6371f6d8abe70e8d56a79"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/rejected/hero_bedroom_blue_rug_attempt_01.png",
+      "sha256": "dbbe35c7f95907464d5dc998751c540f02fb85eab75352475eb7a5e2a2f41f7c"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/rejected/hero_bedroom_blue_rug_attempt_02.png",
+      "sha256": "e40cea8a6acef3c7a86d7c1f0a7b960c7713e6edd5f2436ecf347f950087ca14"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/rejected/hero_study_blue_rug_attempt_01.png",
+      "sha256": "9361ff54e329e5597bdd9345719793fa61e35947c7fe79b72e1609cb260aa612"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/rejected/hero_study_blue_rug_attempt_02.png",
+      "sha256": "1c129821f27ba99757a22fd86ebe2ea1a2309a633f5491f29cb3c8a62ff6336d"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/generation_records.json",
+      "sha256": "55b975e7b7cdd8bccb798935c4412c38ae903955d8696a8469cb63e7e9ffb838"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/godot_native_review.png",
+      "sha256": "942a4d4fd591846f699d4e7f65ce192420671209d02596a490a5868ccc1145e2"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/godot_review_receipt.json",
+      "sha256": "4595627f2049d995778de71796766b376beff6ea34a93eb6d15345f44d280fa5"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/manifest.json",
+      "sha256": "6a64d64d022acff6c7ca071f9920a7719f5a4e23818924ad031bf4fd5929f0b3"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/native_review/hero_bedroom_blue_rug.png",
+      "sha256": "d04ffd8f9a1cf935a005a0c52cac5fb300d441db0c2e254f8f81d9b6cbca2bf7"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/native_review/hero_study_blue_rug.png",
+      "sha256": "881e70ec28da4ec73bb211b06eb325dd2ec8495964b93456facb7511494ae1cc"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/prepare_review.py",
+      "sha256": "9df6c07ce7ab7fc763d6bbd6fedd57acfa989f34b61509e55b51f512763001f5"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/README.md",
+      "sha256": "7ea2e22fe90477e86d64e4ba925d129f9b88a40a1c3bb953abea2ad9d759b1bb"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/requests/hero_bedroom_blue_rug.txt",
+      "sha256": "95e98e1766ba1d6bc4bfb07b52f7535f965f75ebce0f1d29454e2efc12f7542a"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/requests/hero_bedroom_blue_rug_attempt_01.txt",
+      "sha256": "bc38dc37349ce23aaad7ef7559bb8ef0b5c039ec82cad10c7d153a6cf5d7613d"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/requests/hero_bedroom_blue_rug_attempt_02.txt",
+      "sha256": "d960671a9f7a88c4025399e8593aec29886a653279a0ff23d83929930945faba"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/requests/hero_study_blue_rug.txt",
+      "sha256": "ca801a9738e38e09a3ac253bfe6a9f713d132b0056a4f9698eba15ce18aa0df4"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/requests/hero_study_blue_rug_attempt_01.txt",
+      "sha256": "7dcda697750c5a72fb80112aaea5c85ee5f55ef8c615fc11e28d10c06fbbba90"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/requests/hero_study_blue_rug_attempt_02.txt",
+      "sha256": "66969cef8f1934bfb7fd032abe5d4ffa291abce9f93ad0b3566295b045eddb09"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/review.gd",
+      "sha256": "dcc7bc883c5d206a1ca3c7d8a435e9aa82637ed4c35c98184701c000684f3c54"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/technical_qa.json",
+      "sha256": "e18cd75d6a80f0440a4ea82a7206ea6afa335cc3ad95d80abb17e5cd04a653b0"
+    },
+    {
+      "path": "game_factory/environment/ART-0015/v001/verification.json",
+      "sha256": "291f039c0328e12889ff9aebea6edec00995fc483a6c0130976d5c42ca3d0d2c"
+    }
+  ]
+}

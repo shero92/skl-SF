@@ -1,0 +1,74 @@
+{
+  "prompts": {
+    "study": "ART-0015 study attempt03 NEW DRAWING. One SQUARE rug in physical plan, lying flat on ground, viewed from30degrees above; because of perspective the FINAL projected silhouette is about TWICE as wide as tall (2:1). This is NOT a long runner: front-to-back physical length equals left-to-right physical width. Projected top trapezoid with front edge horizontal, rear edge shorter, four complete corners. Cobalt blue hard-pixel woven cloth, narrow gold double border and small diamond lattice with one flat woven compass star, matching SKL-SF rug_square_compass master viewed earlier. Flat gold thread, no metallic relief, no 3D raised star. Desired visible bounds about1500x750 in a1740x906 source, leaving clear transparent margins. Native311x160. Draw this projection independently, no bitmap transforms/upscale. Full rug and short gold tassels, hard detailed pixel clusters, upper-left light. Transparent RGBA alpha0 background. No ground, floor tiles, rug thickness, furniture, folds, cast/contact shadow, halo, letters/text, watermark, frame, characters or sheet. Exactly one floor rug.",
+    "bedroom": "ART-0015 bedroom attempt03 NEW DRAWING. One rectangular BEDROOM rug whose physical front-to-back length is1.5times physical width, lying perfectly FLAT on ground. Camera30degrees above: final PROJECTED silhouette should be wider-than-tall around1.35:1, not portrait and not a shallow runner. Projected near edge horizontal and longer than far edge, sides converge mildly. All4corners and short gold tassels intact, margins4%. Cobalt/navy textile with narrow gold double border, restrained tiny geometric knot/diamond motifs, a single FLAT WOVEN gold eight-point compass star in centre and sparse small diamonds; NO ornate raised metallic relief, keep readable hard pixel clusters like SKL-SF rug_rect_compass master. Intended native304x225, master1448x1086 or larger with visible rug about1310x970. True transparent RGBA alpha0 outside rug. Independent newly drawn floor projection, no copying/transforms/upscaling of another bitmap. Upper-left surface light. No ground, shadow, floor, raised base, folds, furniture, background, halo, text, watermark, frame, people or sheet. Exactly one complete rug."
+  },
+  "rejected_attempts": [
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/rejected/hero_study_blue_rug_attempt_01.png",
+      "sha256": "9361ff54e329e5597bdd9345719793fa61e35947c7fe79b72e1609cb260aa612",
+      "pixel_size": [
+        1748,
+        899
+      ],
+      "visible_aspect": 3.6688172043010754,
+      "reason": "Finished projection too shallow against native aspect proposal; correction requested",
+      "quality_status": "needs_regeneration"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/rejected/hero_bedroom_blue_rug_attempt_01.png",
+      "sha256": "dbbe35c7f95907464d5dc998751c540f02fb85eab75352475eb7a5e2a2f41f7c",
+      "pixel_size": [
+        1456,
+        1080
+      ],
+      "visible_aspect": 2.0891530460624073,
+      "reason": "Finished projection too shallow against native aspect proposal; correction requested",
+      "quality_status": "needs_regeneration"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/rejected/hero_study_blue_rug_attempt_02.png",
+      "sha256": "1c129821f27ba99757a22fd86ebe2ea1a2309a633f5491f29cb3c8a62ff6336d",
+      "pixel_size": [
+        1737,
+        906
+      ],
+      "visible_aspect": 2.6607142857142856,
+      "reason": "Improved depth but still shallow against proposed projected aspect; independent physical-plan retry requested",
+      "quality_status": "needs_regeneration"
+    },
+    {
+      "path": "assets_hd/decor/hero_room_rugs/v001/rejected/hero_bedroom_blue_rug_attempt_02.png",
+      "sha256": "e40cea8a6acef3c7a86d7c1f0a7b960c7713e6edd5f2436ecf347f950087ca14",
+      "pixel_size": [
+        1457,
+        1080
+      ],
+      "visible_aspect": 1.726823238566131,
+      "reason": "Improved depth but still shallow against proposed projected aspect; independent physical-plan retry requested",
+      "quality_status": "needs_regeneration"
+    }
+  ],
+  "style_references": [
+    {
+      "path": "assets_hd/decor/rug_square_compass/rug_square_compass_01.png",
+      "sha256": "3ab19b8d1e67762029689e733d396ab459dfac385393a9fb2ad47b0943e22bad"
+    },
+    {
+      "path": "assets_hd/decor/rug_rect_compass/rug_rect_compass_01.png",
+      "sha256": "42ed843f7480fbd6a9ca64d67d7574c54f616b2ddcd37b7eb0b4c8225834cf3f"
+    }
+  ],
+  "previous_correction_prompts": {
+    "study": "ART-0015 study correction02. Redraw this ONE study rug in a DEEPER ground projection while preserving its cobalt/gold woven design and geometric motifs. Critical: final VISIBLE SILHOUETTE width:height approximately1.94:1, measured in the finished image INCLUDING fringe. This is the ALREADY PROJECTED ratio, do not foreshorten it a second time. Current rug is too shallow about3.6:1. On approximately1740x906 canvas, place full rug roughly x90..1650,y55..855 (about1560wide800high). Near edge horizontal, far edge somewhat shorter, all4corners clear, true oblique rug lying FLAT, no folds. Newly draw pattern in corrected perspective, do not stretch/upscale existing pixels. Keep all fringe tips at least4%inside transparent canvas; currently side tips too close. Crisp hard pixel clusters, upper-left surface lighting. True RGBA alpha0 background, no ground, floor, shadow, glow, frame, text, characters or other objects. High resolution source at least4x311x160.",
+    "bedroom": "ART-0015 bedroom correction02. Redraw ONE bedroom rug preserving cobalt/gold compass-and-border family, with MORE visible front-to-back depth. Required finished VISIBLE SILHOUETTE width:height1.35:1 (304:225). This is the FINAL ALREADY PROJECTED ratio, do NOT apply extra foreshortening after it. Current image is roughly2:1 and too shallow. On1448x1086 canvas, complete rug approximately x70..1380,y55..1025 (1310wide970high), giving1.35:1. Make a gently trapezoid flat rectangle: long near edge horizontal, rear edge slightly shorter, all4corners and short gold fringes fully inside margins. Pattern drawn genuinely in new perspective, no stretching/upscaling copied pixels. Hard high-detail pixel clusters, thin crisp outline, upper-left surface highlights only. Entire rug about4%empty margin, RGBA alpha0 background. No floor, ground, furniture, cast/contact shadows, raised base, folds, halo, text, watermark, border or sheet. Source at least4x304x225."
+  },
+  "initial_prompts": {
+    "study": "ART-0015 hero_study_blue_rug. ONE independently drawn floor rug sprite, not top-down flat square: long rectangular cobalt-blue textile seen lying FLAT in oblique tactical RPG floor perspective from about30deg elevation. Near/front long edge horizontal, rear long edge shorter, two side edges recede gently inward; all four corners and neat short fringes visible. Overall projected width:height approximately311:160 (about2:1), elongated LEFT-RIGHT. Reference style SKL-SF assets_hd/decor/rug_square_compass/rug_square_compass_01.png and rug_rect_compass_01.png viewed in conversation: detailed HARD pixel clusters, cobalt #2f5bb7 with deep blue/navy woven shading, narrow warm gold #e0b04a double border, small nautical compass star at centre with restrained geometric diamond/lattice accents, gold tassel ends. Draw pattern genuinely projected with cloth; no rotating/warping/copying reference bitmap. Flat thin rug no raised base, NO folds/curls or furniture. Warm upper-left surface light, crisp1-2nativepixel dark outline, no blur. Transparent RGBA PNG master1792x1024 or larger, at least4x native311x160; whole object4%empty alpha0 margin. No ground, floor tiles, cast/contact shadow, backdrop, glow, text/letters, watermark, frame, people or sheet. Exactly one complete study rug.",
+    "bedroom": "ART-0015 hero_bedroom_blue_rug. ONE independent complete cobalt-and-gold BEDROOM floor rug, lying perfectly FLAT, oblique tactical RPG ground projection30deg elevation. Intended projected width:depth304:225 (wider than tall, NOT portrait rug hanging upright). Near/front edge horizontal and longest, back edge shorter, sides gently converge toward rear; all four corners and small neat gold fringes visible. Deeper front-to-back than study rug, separate newly drawn design. Match SKL-SF rug_square_compass_01.png and rug_rect_compass_01.png viewed masters: hard high-detail pixel clusters, rich cobalt blue/navy cloth, restrained warm-gold double border with tiny geometric knot/diamond motifs, one elegant eight-point compass rose woven at centre, small repeating gold diamonds. Pattern correctly foreshortened with surface, NOT copied/transformed old bitmap. Upper-left warm SURFACE lighting only, crisp thin dark outline1-2nativepx, no blur. Transparent RGBA master1536x1152 or larger (at least4x native304x225), complete rug with4%empty alpha0 margins. Flat thin textile, NO raised plinth, thickness, floor, ground, furniture, folds, shadows, halos, text/letters, watermark, frame, people or multiple panels. One bedroom rug only."
+  },
+  "selected_attempts": {
+    "study": "exec-e34951f7-2736-418b-9fee-f39c67f367af.png",
+    "bedroom": "exec-95145bf5-0dc2-4622-a8c0-c21041d4cbdb.png"
+  }
+}
