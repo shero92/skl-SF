@@ -3,6 +3,27 @@
   "notes": "Path globs (git-relative, '/' separators; '*' stays in one folder, '**' crosses folders) -> test commands. {python} is the running interpreter, {godot} the godot_executable from .agents/planner/config.json (override with --godot or GODOT_EXECUTABLE). Any changed path not matched by a test runs ALL tests.",
   "tests": [
     {
+      "id": "source_art_catalog",
+      "kind": "python",
+      "covers": "Source and linked-file hashes, safe project paths, preserved technical failures and automatic visual approval without activation.",
+      "command": [
+        "{python}",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-p",
+        "test_source_art_catalog.py"
+      ],
+      "paths": [
+        "tools/source_art_catalog.py",
+        "tools/tests/test_source_art_catalog.py",
+        "map_factory/metadata/source_art_index.json",
+        "docs/SOURCE_ART_CATALOG.md"
+      ]
+    },
+    {
       "id": "golden_cyclone_assets",
       "kind": "python",
       "covers": "Individual Hero source provenance, immutable masters, measured sockets, atlas/GIF timing and candidate-only Godot playback with both swords.",

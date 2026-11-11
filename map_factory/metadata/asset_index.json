@@ -1,4 +1,6 @@
 {
+  "source_art_catalog": "map_factory/metadata/source_art_index.json",
+  "source_art_guide": "docs/SOURCE_ART_CATALOG.md",
   "version": 2,
   "asset_count": 440,
   "extracted_count": 229,
