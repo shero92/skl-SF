@@ -77,5 +77,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`V032_Planter_Stone_Flowers_Large.png.import`](V032_Planter_Stone_Flowers_Large.png.import)
 - [`V033_Planter_Stone_Flowers_Medium.png`](V033_Planter_Stone_Flowers_Medium.png)
 - [`V033_Planter_Stone_Flowers_Medium.png.import`](V033_Planter_Stone_Flowers_Medium.png.import)
+- [`V034_Blue_White_Planter.png`](V034_Blue_White_Planter.png)
+- [`V034_Blue_White_Planter.png.import`](V034_Blue_White_Planter.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

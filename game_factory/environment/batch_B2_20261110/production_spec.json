@@ -1,0 +1,130 @@
+[
+  {
+    "key": "bookshelf_south",
+    "art": "ART-0020",
+    "id": "hero_study_bookshelf_south",
+    "dir": "assets_hd/furniture/study_bookshelf_views/v001",
+    "native": [
+      212,
+      144
+    ],
+    "minimum": [
+      1700,
+      1150
+    ],
+    "facing": "south",
+    "footprint": null
+  },
+  {
+    "key": "bookshelf_north",
+    "art": "ART-0020",
+    "id": "hero_study_bookshelf_north",
+    "dir": "assets_hd/furniture/study_bookshelf_views/v001",
+    "native": [
+      212,
+      144
+    ],
+    "minimum": [
+      1700,
+      1150
+    ],
+    "facing": "north",
+    "footprint": null
+  },
+  {
+    "key": "headboard",
+    "art": "ART-0008",
+    "id": "hero_headboard_shelf_south",
+    "dir": "assets_hd/furniture/headboard_shelf/v001",
+    "native": [
+      140,
+      85
+    ],
+    "minimum": [
+      1100,
+      680
+    ],
+    "facing": "south",
+    "footprint": null
+  },
+  {
+    "key": "sphere_post",
+    "art": "ART-0006",
+    "id": "hero_stone_sphere_finial",
+    "dir": "assets_hd/architecture/sphere_stair_post/v001",
+    "native": [
+      56,
+      120
+    ],
+    "minimum": [
+      450,
+      960
+    ],
+    "facing": "south",
+    "footprint": null
+  },
+  {
+    "key": "rope_post",
+    "art": "ART-0024",
+    "id": "hero_rope_post",
+    "dir": "assets_hd/decor/rope_post_fence/v001",
+    "native": [
+      40,
+      90
+    ],
+    "minimum": [
+      400,
+      900
+    ],
+    "facing": "south",
+    "footprint": null
+  },
+  {
+    "key": "rope_west",
+    "art": "ART-0024",
+    "id": "hero_rope_swag_west_rail",
+    "dir": "assets_hd/decor/rope_post_fence/v001",
+    "native": [
+      110,
+      40
+    ],
+    "minimum": [
+      1000,
+      400
+    ],
+    "facing": "west",
+    "footprint": null
+  },
+  {
+    "key": "rope_east",
+    "art": "ART-0024",
+    "id": "hero_rope_swag_east_rail",
+    "dir": "assets_hd/decor/rope_post_fence/v001",
+    "native": [
+      110,
+      40
+    ],
+    "minimum": [
+      1000,
+      400
+    ],
+    "facing": "east",
+    "footprint": null
+  },
+  {
+    "key": "compass",
+    "art": "ART-0022",
+    "id": "hero_compass_floor_inlay",
+    "dir": "assets_hd/decor/compass_inlay/v001",
+    "native": [
+      252,
+      185
+    ],
+    "minimum": [
+      1100,
+      800
+    ],
+    "facing": "south_ground",
+    "footprint": null
+  }
+]

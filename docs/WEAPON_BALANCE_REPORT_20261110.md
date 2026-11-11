@@ -39,3 +39,12 @@ Tool: `tools/simulate_battles.gd` (`godot --headless --path . --script res://too
 2. Reduce natural claws (attack 9 to about 6) or give the brawler lower defense/HP.
 3. Give staffs a magic power stat or a minimum damage so the mage is not better with a dagger.
 4. Re-run the simulation after each change; it is deterministic for the same seeds.
+
+## Pass one applied (TASK-0140)
+Class base HP x2.5 and natural claws attack 9 to 6. Result (20 seeds): average 2.5 rounds, 0% draws. Win rates: warrior 88, knight 86, swordsman 64, brawler 63, lancer 62, archer 36, thief 31, healer 16, mage 5. Still open: a magic stat or minimum damage for staffs so mage and healer have a role.
+
+## Staff magic applied (TASK-0141)
+Staffs (`kind: magic`) ignore target defense; the simulation uses each class's first weapon type. Win rates: lancer 92, warrior 80, knight 75, brawler 59, swordsman 44, archer 38, healer 38, mage 19, thief 9. Open: tune steel spear down and thief up.
+
+## Pass two (TASK-0142)
+Steel spear attack 11 to 8, assassin dagger 7 to 12. Win rates: knight 84, warrior 83, lancer 77, brawler 59, swordsman 44, healer 36, thief 32, archer 30, mage 10.

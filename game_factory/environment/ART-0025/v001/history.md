@@ -1,0 +1,1 @@
+Previous Blender candidate delivery (PNG and manifest) preserved byte-for-byte in `.agents/graphics/deliveries/ART-0025/archive_pre_B1_20261110/`. Exact requested delivery path now points to the new independent image_gen candidate. Existing registered assets, HD masters and map versions were untouched.

@@ -1,11 +1,11 @@
 ---
 id: ART-0024
-status: requested
+status: delivered
 owner: graphics-specialist
 task: TASK-0038
 dedupe_key: hero_room_rope_post_fence
 existing_asset_ids: D017
-output_paths: .agents/graphics/deliveries/ART-0024/hero_rope_post.png,.agents/graphics/deliveries/ART-0024/hero_rope_swag_west_rail.png,.agents/graphics/deliveries/ART-0024/hero_rope_swag_east_rail.png
+output_paths: .agents/graphics/deliveries/ART-0024/archive_pre_B2_20261110/hero_rope_post.png,.agents/graphics/deliveries/ART-0024/archive_pre_B2_20261110/hero_rope_swag_west_rail.png,.agents/graphics/deliveries/ART-0024/archive_pre_B2_20261110/hero_rope_swag_east_rail.png
 ---
 # Wooden rope-and-post terrace fence
 
@@ -29,3 +29,8 @@ output_paths: .agents/graphics/deliveries/ART-0024/hero_rope_post.png,.agents/gr
 
 ## Integration checklist
 - [ ] Registered assets and map tested; PR merged; mark `integrated`.
+
+## B2 target delivery — TASK-0031
+- Owner explicitly assigned image_gen production against `hero_room_01_target_20261110.webp`, SHA-256 `4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323`. New target spec supersedes legacy reference/size/scope proposals for these candidates.
+- Exact delivery paths and source hashes: `.agents/graphics/deliveries/ART-0024/manifest.json` (new images under `items`; compatibility `files` for ART-0022/0024 points to archived previous candidates).
+- Review: `game_factory/environment/ART-0024/v001/`. Sources and attempts retained. Literal master size deviations and unannotated footprints/mounts disclosed. No upscaling, no owner approval or integration.

@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0008",
+  "task_id": "TASK-0031",
+  "batch": "B2",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 1,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_review",
+  "items": [
+    {
+      "id": "hero_headboard_shelf_south",
+      "request_id": "ART-0008",
+      "master_path": "assets_hd/furniture/headboard_shelf/v001/hero_headboard_shelf_south.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png",
+      "sha256": "eaf81250b1acb7893ad977767d973a879c48cc3491389e1550c15027d7083f22",
+      "pixel_size": [
+        1564,
+        1006
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        79,
+        41,
+        1485,
+        906
+      ],
+      "origin": [
+        782.0,
+        905
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "intended_native_canvas": [
+        140,
+        85
+      ],
+      "requested_master_minimum": [
+        1100,
+        680
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 10.042857142857143,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0008/v001/native_review/hero_headboard_shelf_south.png",
+      "native_review_sha256": "15be2f3d63cfc7aac2b1e9b8a110d4e325170f93e3c8e803b92a2cd4914524f2",
+      "native_review_region_alpha128_plus_8px": [
+        71,
+        33,
+        1493,
+        914
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        137,
+        85
+      ],
+      "native_offset": [
+        1,
+        0,
+        138,
+        85
+      ],
+      "native_uniform_scale": 0.09648127128263337,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "headboard host anchors require scene annotation",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/furniture/bookcase_armillary/bookcase_armillary_01.png",
+        "assets_hd/furniture/bench_plain/bench_plain_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0008/v001/requests/hero_headboard_shelf_south.txt",
+      "prompt_text": "ART-0008 correction02 framing only. Preserve this single wall/headboard mounted oak bookshelf, books, flower pot and pink conch design. The highest pink flower bud is CUT OFF by the top edge: redraw the WHOLE bud and all leaves fully inside a larger transparent canvas. Give at least5% real transparent margin above every petal and below brackets and at both ends. Output landscape PNG at least1100x680, preferably1792x1152, sharp high-detail pixel clusters, upper-left lighting. All object details must remain full and uncut; no bed, wall, floor, ground or cast/contact shadow. True alpha=0 background and holes. No text, watermark, border or other objects. One complete shelf assembly only.",
+      "source_attempt_name": "exec-fd955797-63bb-44d9-85a8-bd66b678bdb4.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": []
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "path": "assets_hd/furniture/headboard_shelf/v001/rejected/hero_headboard_shelf_south_attempt_01.png",
+      "sha256": "7ea4044d4c052c4ee322cfa25592e75bdcec833d5ac3a3323c6048e5585e31df",
+      "pixel_size": [
+        1609,
+        977
+      ],
+      "reason": "See rejected/rejections.json for measured and visual rejection reasons",
+      "quality_status": "needs_regeneration"
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png",
+      "sha256": "eaf81250b1acb7893ad977767d973a879c48cc3491389e1550c15027d7083f22"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ var interactions: Array = []
 const WeaponSystemScript = preload("res://scenes/battle/weapon_system.gd")
 var weapons
 var hero_unit: Dictionary = {}
+var save_path: String = HeroSave.DEFAULT_PATH
 var equipment_layer: CanvasLayer
 var equipment_menu: EquipmentMenu
 
@@ -53,6 +54,7 @@ func _ready() -> void:
     add_child(dialogue)
     weapons = WeaponSystemScript.load_default()
     hero_unit = weapons.make_unit("CHAR001", ["WPN_IRON_SWORD"], "WPN_HERO_BASIC_SWORD")
+    HeroSave.load_into(weapons, hero_unit, save_path)
     interactions = data.get("interactions", []).duplicate(true)
     for info in data.get("npcs", []):
         var npc := RoomNpc.new()
@@ -87,6 +89,7 @@ func toggle_equipment() -> void:
         equipment_menu = EquipmentMenu.new()
         equipment_menu.position = Vector2(24, 96)
         equipment_menu.closed.connect(func(): equipment_layer.visible = false)
+        equipment_menu.changed.connect(func(unit): HeroSave.save(unit, save_path))
         equipment_layer.add_child(equipment_menu)
         equipment_layer.visible = false
     if equipment_layer.visible:

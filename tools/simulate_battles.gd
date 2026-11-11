@@ -1,6 +1,7 @@
 extends SceneTree
 ## Weapon/class balance simulation: every class (with its best tier<=2 weapon) fights every class 1v1 with the real
 ## TurnManager, BattleResolver and EnemyAI on an open 12x8 grid, many seeds. Prints one JSON report.
+## Each class uses its first listed weapon type.
 ## Usage: godot --headless --path . --script res://tools/simulate_battles.gd -- [seeds=20] [max_turns=60]
 ## Agent: claude (Claude Code); model: Sonnet 5.5. Informational: the numbers are the owner's to tune.
 
@@ -17,6 +18,8 @@ static func best_weapon(ws, class_id: String, max_tier: int = 2) -> String:
 		var item: Dictionary = ws.data.weapons[weapon_id]
 		if bool(item.get("builtin", false)) or int(item.get("tier", 0)) > max_tier or not ws.can_equip(class_id, weapon_id):
 			continue
+		if String(item.type) != String(ws.data.classes[class_id].weapon_types[0]):
+			continue  # the class's signature weapon type (first listed), so mages use staffs
 		if int(item.attack) > best_attack:
 			best_attack = int(item.attack)
 			best = weapon_id

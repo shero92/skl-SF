@@ -1,0 +1,114 @@
+[
+  {
+    "key": "south",
+    "art": "ART-0019",
+    "id": "hero_study_table_south",
+    "dir": "assets_hd/furniture/study_table_views/v001",
+    "native": [
+      150,
+      110
+    ],
+    "minimum": [
+      1450,
+      1080
+    ],
+    "facing": "south",
+    "footprint": null
+  },
+  {
+    "key": "north",
+    "art": "ART-0019",
+    "id": "hero_study_table_north",
+    "dir": "assets_hd/furniture/study_table_views/v001",
+    "native": [
+      150,
+      110
+    ],
+    "minimum": [
+      1450,
+      1080
+    ],
+    "facing": "north",
+    "footprint": null
+  },
+  {
+    "key": "east",
+    "art": "ART-0019",
+    "id": "hero_study_table_east",
+    "dir": "assets_hd/furniture/study_table_views/v001",
+    "native": [
+      150,
+      110
+    ],
+    "minimum": [
+      1450,
+      1080
+    ],
+    "facing": "east",
+    "footprint": null
+  },
+  {
+    "key": "west",
+    "art": "ART-0019",
+    "id": "hero_study_table_west",
+    "dir": "assets_hd/furniture/study_table_views/v001",
+    "native": [
+      150,
+      110
+    ],
+    "minimum": [
+      1450,
+      1080
+    ],
+    "facing": "west",
+    "footprint": null
+  },
+  {
+    "key": "stool",
+    "art": "ART-0039",
+    "id": "study_wooden_stool",
+    "dir": "assets_hd/furniture/study_stool/v001",
+    "native": [
+      36,
+      40
+    ],
+    "minimum": [
+      500,
+      560
+    ],
+    "facing": "south",
+    "footprint": null
+  },
+  {
+    "key": "plant",
+    "art": "ART-0011",
+    "id": "hero_blue_white_planter",
+    "dir": "assets_hd/plants/blue_white_planter/v001",
+    "native": [
+      130,
+      150
+    ],
+    "minimum": [
+      1100,
+      1300
+    ],
+    "facing": "south",
+    "footprint": null
+  },
+  {
+    "key": "stairs",
+    "art": "ART-0025",
+    "id": "hero_entrance_stairs_south",
+    "dir": "assets_hd/architecture/entrance_stairs/v001",
+    "native": [
+      274,
+      246
+    ],
+    "minimum": [
+      2200,
+      1960
+    ],
+    "facing": "south",
+    "footprint": null
+  }
+]

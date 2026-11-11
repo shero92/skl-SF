@@ -47,5 +47,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`A017_Ivy_Covered_Compass_Shrine_Pillar.png.import`](A017_Ivy_Covered_Compass_Shrine_Pillar.png.import)
 - [`A018_Sapphire_Compass_Doorway.png`](A018_Sapphire_Compass_Doorway.png)
 - [`A018_Sapphire_Compass_Doorway.png.import`](A018_Sapphire_Compass_Doorway.png.import)
+- [`A19_Entrance_Stairs_South.png`](A19_Entrance_Stairs_South.png)
+- [`A19_Entrance_Stairs_South.png.import`](A19_Entrance_Stairs_South.png.import)
+- [`A20_Stone_Sphere_Finial.png`](A20_Stone_Sphere_Finial.png)
+- [`A20_Stone_Sphere_Finial.png.import`](A20_Stone_Sphere_Finial.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

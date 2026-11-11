@@ -52,6 +52,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_hero_room_scenery.py`](test_hero_room_scenery.py)
 - [`test_hero_room_v0013_patch.py`](test_hero_room_v0013_patch.py)
 - [`test_hero_room_visual_contract.py`](test_hero_room_visual_contract.py)
+- [`test_hero_save.py`](test_hero_save.py)
 - [`test_layer_zorder_anchor.py`](test_layer_zorder_anchor.py)
 - [`test_lf_writers.py`](test_lf_writers.py)
 - [`test_local_planner.py`](test_local_planner.py)

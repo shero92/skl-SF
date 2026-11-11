@@ -2,6 +2,7 @@ extends SceneTree
 ## Headless check that the main scene opens the equipment menu with I and freezes the hero while it is open.
 ## Agent: claude (Claude Code); model: Sonnet 5.5.
 
+const TEST_SAVE := "user://verify_main_hero.json"
 var _failures: int = 0
 var _main: Node
 
@@ -21,6 +22,8 @@ func _key(keycode: int) -> InputEventKey:
 
 func _initialize() -> void:
 	_main = load("res://scenes/main.tscn").instantiate()
+	_main.save_path = TEST_SAVE  # never touch the real save
+	DirAccess.remove_absolute(ProjectSettings.globalize_path(TEST_SAVE))
 	root.add_child(_main)
 	process_frame.connect(_run, CONNECT_ONE_SHOT)
 
@@ -46,6 +49,8 @@ func _run() -> void:
 	_main.dialogue.open_dialogue("Test", ["hello"])
 	_main._unhandled_input(_key(KEY_I))
 	_check(not _main.is_equipment_open(), "I is ignored while a dialogue is open")
+	_check(FileAccess.file_exists(TEST_SAVE), "equipping wrote the hero save")
+	DirAccess.remove_absolute(ProjectSettings.globalize_path(TEST_SAVE))
 	if _failures == 0:
 		print("MAIN_EQUIPMENT_OK")
 	quit(0 if _failures == 0 else 1)

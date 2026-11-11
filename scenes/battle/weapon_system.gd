@@ -197,7 +197,11 @@ func crit_chance(attacker: Dictionary) -> int:
 
 ## Damage of a normal hit: max(1, attacker attack - defender defense); crits deal 1.5x (rounded down).
 func damage(attacker: Dictionary, defender: Dictionary, critical: bool = false) -> int:
-	var raw := int(effective_stats(attacker).attack) - int(effective_stats(defender).defense)
+	var defense := int(effective_stats(defender).defense)
+	var item := weapon(active_weapon_id(attacker))
+	if data.get("weapon_types", {}).get(item.get("type", ""), {}).get("kind", "") == "magic":
+		defense = 0  # magic weapons (staffs) ignore the target's defense
+	var raw := int(effective_stats(attacker).attack) - defense
 	var dealt := maxi(1, raw)
 	return int(dealt * 1.5) if critical else dealt
 

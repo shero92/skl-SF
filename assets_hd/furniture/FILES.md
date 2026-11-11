@@ -6,7 +6,10 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`headboard_shelf/`](headboard_shelf/FILES.md)
+- [`study_bookshelf_views/`](study_bookshelf_views/FILES.md)
+- [`study_stool/`](study_stool/FILES.md)
+- [`study_table_views/`](study_table_views/FILES.md)
 
 ## Files
 
