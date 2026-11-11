@@ -880,7 +880,7 @@ func _build_ui() -> void:
 		battle_button.pressed.connect(pair[1])
 		play_row.add_child(battle_button)
 	var help := Label.new()
-	help.text = "Click: select / place   Drag: move\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
+	help.text = "Click: select / place   Drag: move   Ctrl+drag: move while placing\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
 	help.add_theme_font_size_override("font_size", 12)
 	column.add_child(help)
 	_status_label = Label.new()
@@ -953,6 +953,11 @@ func _unhandled_input(event: InputEvent) -> void:
 			if event.pressed:
 				if battle_tool != "":
 					battle_click(cell_at(point))
+				elif event.ctrl_pressed and placing_part != "" and not erasing_floor and select_at(point) != "":
+					# Ctrl while a part is armed: grab the piece under the mouse instead of placing another.
+					_dragging = true
+					_drag_moved = false
+					_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
 				elif erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
 					_stroke_open = true
 					_ground_stroke(point, true)
