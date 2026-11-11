@@ -155,7 +155,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0151](../tasks/TASK-0151_room_round_walk_area.md) | blocked_on_art | claude | TASK-0150 | ART-0046 |
 | [TASK-0152](../tasks/TASK-0152_room_double_bed_sea_stacks.md) | blocked_on_art | claude | TASK-0159 | ART-0048 |
 | [TASK-0153](../tasks/TASK-0153_room_side_lantern_sea_light.md) | blocked_on_art | claude | TASK-0160 | ART-0040 |
-| [TASK-0154](../tasks/TASK-0154_room_region_progress_report.md) | todo | claude | TASK-0148 | none |
+| [TASK-0154](../tasks/TASK-0154_room_region_progress_report.md) | review | claude | TASK-0148 | none |
 | [TASK-0155](../tasks/TASK-0155_skirmish_attack_animations.md) | todo | claude | TASK-0147 | none |
 | [TASK-0156](../tasks/TASK-0156_art_rear_walls.md) | todo | codex | TASK-0148 | ART-0042 |
 | [TASK-0157](../tasks/TASK-0157_art_curved_side_walls.md) | todo | codex | TASK-0148 | ART-0044 |

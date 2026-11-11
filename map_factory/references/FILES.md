@@ -15,6 +15,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`hero_room_01_original.png`](hero_room_01_original.png)
 - [`hero_room_01_original.png.import`](hero_room_01_original.png.import)
 - [`hero_room_01_original.reference.json`](hero_room_01_original.reference.json)
+- [`hero_room_01_regions.json`](hero_room_01_regions.json)
 - [`hero_room_01_target_20261103.png`](hero_room_01_target_20261103.png)
 - [`hero_room_01_target_20261103.png.import`](hero_room_01_target_20261103.png.import)
 - [`hero_room_01_target_20261103.reference.json`](hero_room_01_target_20261103.reference.json)

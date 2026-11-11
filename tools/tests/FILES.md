@@ -79,6 +79,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`test_regenerate_main_outputs.py`](test_regenerate_main_outputs.py)
 - [`test_registry_verification.py`](test_registry_verification.py)
 - [`test_room_design.py`](test_room_design.py)
+- [`test_room_region_report.py`](test_room_region_report.py)
 - [`test_run_tests.py`](test_run_tests.py)
 - [`test_runner_main_clean.py`](test_runner_main_clean.py)
 - [`test_runner_parallel.py`](test_runner_parallel.py)

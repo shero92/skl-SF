@@ -120,6 +120,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`restore_high_detail_floors.py`](restore_high_detail_floors.py)
 - [`room_assembly.py`](room_assembly.py)
 - [`room_design.py`](room_design.py)
+- [`room_region_report.py`](room_region_report.py)
 - [`run_agents_manual.ps1`](run_agents_manual.ps1)
 - [`run_aider_worker.ps1`](run_aider_worker.ps1)
 - [`run_local_agent.ps1`](run_local_agent.ps1)
