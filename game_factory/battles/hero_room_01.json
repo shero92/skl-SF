@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "battle_id": "hero_room_01",
+  "map_id": "hero_room_01",
+  "map_version": 29,
+  "cols": 17,
+  "rows": 10,
+  "origin": [
+    226.0,
+    225.0
+  ],
+  "cell_size": 64.0,
+  "blocked": [
+    [
+      5,
+      0
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      14,
+      4
+    ],
+    [
+      15,
+      4
+    ],
+    [
+      12,
+      5
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      14,
+      5
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      16,
+      8
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      11,
+      9
+    ],
+    [
+      12,
+      9
+    ],
+    [
+      13,
+      9
+    ],
+    [
+      14,
+      9
+    ],
+    [
+      15,
+      9
+    ],
+    [
+      16,
+      9
+    ]
+  ],
+  "blocked_by_hand": [
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      14,
+      4
+    ],
+    [
+      15,
+      4
+    ],
+    [
+      12,
+      5
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      14,
+      5
+    ],
+    [
+      15,
+      5
+    ]
+  ],
+  "units": [
+    {
+      "id": "hero",
+      "team": "player",
+      "character": "CHAR001",
+      "weapon": "WPN_IRON_SWORD",
+      "cell": [
+        6,
+        6
+      ]
+    },
+    {
+      "id": "player_2",
+      "team": "player",
+      "character": "CHAR002",
+      "weapon": "WPN_BRONZE_SPEAR",
+      "cell": [
+        5,
+        7
+      ]
+    },
+    {
+      "id": "player_3",
+      "team": "player",
+      "character": "CHAR006",
+      "weapon": "WPN_SHORT_BOW",
+      "cell": [
+        8,
+        7
+      ]
+    },
+    {
+      "id": "enemy_1",
+      "team": "enemy",
+      "character": "CHAR004",
+      "weapon": "WPN_HAND_AXE",
+      "cell": [
+        8,
+        2
+      ]
+    },
+    {
+      "id": "enemy_2",
+      "team": "enemy",
+      "character": "CHAR003",
+      "weapon": "",
+      "cell": [
+        10,
+        3
+      ]
+    },
+    {
+      "id": "enemy_3",
+      "team": "enemy",
+      "character": "CHAR006",
+      "weapon": "WPN_SHORT_BOW",
+      "cell": [
+        6,
+        1
+      ]
+    }
+  ]
+}

@@ -27,17 +27,72 @@ const ROCKS := [Vector2i(4, 2), Vector2i(5, 2), Vector2i(4, 5), Vector2i(5, 4)]
 
 var weapons
 var manager
+var size: Vector2i = SIZE
+var definition: Dictionary = {}
 var ai = EnemyAI.new()
 var log_lines: Array[String] = []
 
 
-func _init(seed_value: int = 1, hero_unit: Dictionary = {}) -> void:
+## A battle built in the editor: {cols, rows, blocked: [[x, y]], units: [{id, team, character, weapon, cell: [x, y]}]}.
+## Returns "" when it can be played, otherwise the reason it cannot.
+static func definition_error(battle: Dictionary) -> String:
+	var cols := int(battle.get("cols", 0))
+	var rows := int(battle.get("rows", 0))
+	if cols < 2 or rows < 2 or cols > 64 or rows > 64:
+		return "the field needs 2 to 64 squares each way"
+	var blocked: Dictionary = {}
+	for cell in battle.get("blocked", []):
+		if not cell is Array or cell.size() != 2:
+			return "a blocked square is not [x, y]"
+		blocked[Vector2i(int(cell[0]), int(cell[1]))] = true
+	var teams: Dictionary = {}
+	var taken: Dictionary = {}
+	var ids: Dictionary = {}
+	for unit in battle.get("units", []):
+		if not unit is Dictionary or not unit.get("cell") is Array or unit["cell"].size() != 2:
+			return "a unit has no [x, y] square"
+		var id := String(unit.get("id", ""))
+		var team := String(unit.get("team", ""))
+		var cell := Vector2i(int(unit["cell"][0]), int(unit["cell"][1]))
+		if id == "" or ids.has(id):
+			return "unit ids must be unique and not empty"
+		if team != PLAYER and team != ENEMY:
+			return "unit %s has no team" % id
+		if String(unit.get("character", "")) == "":
+			return "unit %s has no character" % id
+		if cell.x < 0 or cell.y < 0 or cell.x >= cols or cell.y >= rows:
+			return "unit %s stands outside the field" % id
+		if blocked.has(cell):
+			return "unit %s stands on a blocked square" % id
+		if taken.has(cell):
+			return "two units share one square"
+		ids[id] = true
+		taken[cell] = true
+		teams[team] = true
+	if not teams.has(PLAYER) or not teams.has(ENEMY):
+		return "the battle needs at least one player unit and one enemy unit"
+	return ""
+
+
+func _init(seed_value: int = 1, hero_unit: Dictionary = {}, battle: Dictionary = {}) -> void:
 	weapons = WeaponSystem.load_default()
 	manager = TurnManager.new(Resolver.new(weapons, seed_value))
-	manager.bounds = Rect2i(Vector2i.ZERO, SIZE)
-	for cell: Vector2i in ROCKS:
+	var roster: Array = ROSTER
+	var rocks: Array = ROCKS
+	if not battle.is_empty() and definition_error(battle) == "":
+		definition = battle
+		size = Vector2i(int(battle["cols"]), int(battle["rows"]))
+		rocks = []
+		for cell: Array in battle.get("blocked", []):
+			rocks.append(Vector2i(int(cell[0]), int(cell[1])))
+		roster = []
+		for unit: Dictionary in battle["units"]:
+			roster.append([String(unit["id"]), String(unit["team"]), String(unit["character"]), String(unit.get("weapon", "")),
+				Vector2i(int(unit["cell"][0]), int(unit["cell"][1]))])
+	manager.bounds = Rect2i(Vector2i.ZERO, size)
+	for cell: Vector2i in rocks:
 		manager.blocked[cell] = true
-	for row: Array in ROSTER:
+	for row: Array in roster:
 		var unit: Dictionary = weapons.make_unit(row[2], [], row[3])
 		if row[0] == "hero" and not hero_unit.is_empty():
 			unit = hero_unit.duplicate(true)  # the hero fights with the weapon equipped in the room

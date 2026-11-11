@@ -10,6 +10,8 @@ extends Node2D
 ## level, Shift+1-5 hide or show a level, Ctrl+S save, Esc cancel / back to the room.
 ## Ground: pick a part from "floors" and click or drag over squares to paint them; "Erase floor squares"
 ## removes squares from the floor shape. Maps: open any map of the registry or create one from a preset.
+## Battle setup: mark blocked squares and the start squares of both teams on the map's own grid, save the
+## battle (game_factory/battles/<map>.json) and play it at once. Squares without floor are always blocked.
 
 const LAYERS := ["background_objects", "ground_overlays", "back_objects", "objects", "front_objects"]
 const LAYER_LABEL := {"background_objects": "1 Background (sea, sky)", "ground_overlays": "2 Ground (rugs, decals)",
@@ -19,6 +21,12 @@ const ROOM_SCENE := "res://scenes/main.tscn"
 const SAVE_TOOL := "res://tools/room_editor_save.py"
 const PRESETS := ["indoor_room", "courtyard", "dungeon", "coast", "sky_island"]
 const REGISTRY := "res://map_factory/maps/index.json"
+const BATTLE_SCENE := "res://scenes/battle/tactical_battle.tscn"
+const BattleSession = preload("res://scenes/battle/tactical_battle.gd")
+## Units handed out in this order each time a start square is clicked: [character, weapon].
+const PLAYER_ROSTER := [["CHAR001", "WPN_IRON_SWORD"], ["CHAR002", "WPN_BRONZE_SPEAR"], ["CHAR006", "WPN_SHORT_BOW"]]
+const ENEMY_ROSTER := [["CHAR004", "WPN_HAND_AXE"], ["CHAR003", ""], ["CHAR006", "WPN_SHORT_BOW"]]
+const MAX_TEAM := 8
 const SCALE_STEP := 0.05
 const TURN_STEP := 15.0
 
@@ -37,6 +45,10 @@ var original_tiles: Dictionary = {}
 var original_cells: Dictionary = {}
 var hidden_layers: Dictionary = {}
 var erasing_floor: bool = false
+var battles_dir: String = "res://game_factory/battles"
+var battle_tool: String = ""     # "" (off), "blocked", "player", "enemy" or "clear"
+var battle_blocked: Dictionary = {}  # "x:y" -> true, squares the owner blocked by hand
+var battle_units: Array[Dictionary] = []  # {id, team, character, weapon, cell: [x, y]}
 var selected: String = ""
 var placing_part: String = ""
 var active_layer: String = "objects"
@@ -126,6 +138,7 @@ func load_map() -> bool:
 			_base_rotation[id] = node.rotation_degrees - (float(item.get("rotation_degrees", 0.0)) if _turn_shows(item) else 0.0)
 	original = blocks.duplicate(true)
 	_load_ground()
+	load_battle_setup()
 	var canvas: Array = map_data.get("canvas_size", [1536, 1024])
 	# Fit the canvas into the window area that the 250 px panel leaves free, and centre it there.
 	var free_width := maxf(200.0, get_viewport_rect().size.x - 250.0)
@@ -439,6 +452,131 @@ func _row_spans() -> Array:
 	return rows
 
 
+# ---------------------------------------------------------------- battle setup
+
+func battle_file() -> String:
+	return battles_dir.path_join(map_id + ".json")
+
+
+func load_battle_setup() -> bool:
+	battle_tool = ""
+	battle_blocked.clear()
+	battle_units.clear()
+	if not FileAccess.file_exists(battle_file()):
+		return false
+	var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(battle_file()))
+	if not data is Dictionary:
+		return false
+	for cell: Array in data.get("blocked_by_hand", []):
+		battle_blocked[_cell_key(Vector2i(int(cell[0]), int(cell[1])))] = true
+	for unit: Dictionary in data.get("units", []):
+		battle_units.append(unit.duplicate(true))
+	return true
+
+
+func set_battle_tool(tool: String) -> void:
+	battle_tool = tool if ["blocked", "player", "enemy", "clear"].has(tool) else ""
+	placing_part = ""
+	erasing_floor = false
+	selected = ""
+	_refresh()
+
+
+func unit_at(cell: Vector2i) -> int:
+	for index in battle_units.size():
+		if int(battle_units[index]["cell"][0]) == cell.x and int(battle_units[index]["cell"][1]) == cell.y:
+			return index
+	return -1
+
+
+func is_battle_blocked(cell: Vector2i) -> bool:
+	return battle_blocked.has(_cell_key(cell)) or not cells.has(_cell_key(cell))
+
+
+## One click of the current battle tool on a square. Returns true when something changed.
+func battle_click(cell: Vector2i) -> bool:
+	if not in_grid(cell):
+		return false
+	var key := _cell_key(cell)
+	var changed := false
+	match battle_tool:
+		"blocked":
+			if cells.has(key) and unit_at(cell) < 0:
+				if battle_blocked.has(key):
+					battle_blocked.erase(key)
+				else:
+					battle_blocked[key] = true
+				changed = true
+		"clear":
+			if unit_at(cell) >= 0:
+				battle_units.remove_at(unit_at(cell))
+				changed = true
+			elif battle_blocked.has(key):
+				battle_blocked.erase(key)
+				changed = true
+		"player", "enemy":
+			var team := battle_tool
+			var count := battle_units.filter(func(u: Dictionary) -> bool: return u["team"] == team).size()
+			if not is_battle_blocked(cell) and unit_at(cell) < 0 and count < MAX_TEAM:
+				var roster: Array = PLAYER_ROSTER if team == "player" else ENEMY_ROSTER
+				var pick: Array = roster[count % roster.size()]
+				var number := 1
+				while battle_units.any(func(u: Dictionary) -> bool: return u["id"] == "%s_%d" % [team, number]):
+					number += 1
+				var id := "hero" if team == "player" and count == 0 and not battle_units.any(func(u: Dictionary) -> bool: return u["id"] == "hero") \
+					else "%s_%d" % [team, number]
+				battle_units.append({"id": id, "team": team, "character": pick[0], "weapon": pick[1], "cell": [cell.x, cell.y]})
+				changed = true
+	if changed:
+		_refresh()
+	return changed
+
+
+## The battle as the skirmish scene reads it: the map's own squares, every square without floor blocked.
+func battle_definition() -> Dictionary:
+	var size: Array = map_data.get("size", [0, 0])
+	var blocked: Array = []
+	var by_hand: Array = []
+	for y in int(size[1]):
+		for x in int(size[0]):
+			var cell := Vector2i(x, y)
+			if is_battle_blocked(cell):
+				blocked.append([x, y])
+			if battle_blocked.has(_cell_key(cell)):
+				by_hand.append([x, y])
+	return {"schema_version": 1, "battle_id": map_id, "map_id": map_id, "map_version": int(map_data.get("version", 0)),
+		"cols": int(size[0]), "rows": int(size[1]), "origin": [grid_origin().x, grid_origin().y],
+		"cell_size": float(map_data.get("tile_size", 64)), "blocked": blocked, "blocked_by_hand": by_hand,
+		"units": battle_units.duplicate(true)}
+
+
+## Writes the battle file. Returns {ok, message}.
+func save_battle() -> Dictionary:
+	var battle := battle_definition()
+	var problem: String = BattleSession.definition_error(battle)
+	if problem != "":
+		_say("Battle not saved: " + problem)
+		return {"ok": false, "message": problem}
+	if not pending_changes().is_empty():
+		_say("Battle not saved: save the map first (Ctrl+S), the battle uses the saved floor")
+		return {"ok": false, "message": "unsaved map edits"}
+	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(battles_dir))
+	var file := FileAccess.open(battle_file(), FileAccess.WRITE)
+	if file == null:
+		_say("Cannot write " + battle_file())
+		return {"ok": false, "message": "cannot write " + battle_file()}
+	file.store_string(JSON.stringify(battle, "  ") + "\n")
+	file.close()
+	_say("Battle saved: %s (%d units, %d blocked squares)" % [battle_file(), battle_units.size(), battle["blocked"].size()])
+	return {"ok": true, "message": battle_file()}
+
+
+func play_battle() -> void:
+	if save_battle()["ok"]:
+		load(BATTLE_SCENE.replace(".tscn", "_scene.gd")).next_battle_path = battle_file()
+		get_tree().change_scene_to_file(BATTLE_SCENE)
+
+
 # ---------------------------------------------------------------- levels and copies
 
 func move_selected_to_layer(layer: String) -> bool:
@@ -604,7 +742,11 @@ func _refresh() -> void:
 	if _status_label == null:
 		return
 	var line := status
-	if erasing_floor:
+	if battle_tool != "":
+		line = "Battle setup [%s]: click squares (Esc stops)   players %d, enemies %d, blocked by hand %d" % [battle_tool,
+			battle_units.filter(func(u: Dictionary) -> bool: return u["team"] == "player").size(),
+			battle_units.filter(func(u: Dictionary) -> bool: return u["team"] == "enemy").size(), battle_blocked.size()]
+	elif erasing_floor:
 		line = "Erasing floor squares: click or drag over squares (Esc stops)"
 	elif placing_part != "" and is_floor_part(placing_part):
 		line = "Painting floor %s: click or drag over squares (Esc stops)" % placing_part
@@ -629,6 +771,20 @@ func _draw_overlay() -> void:
 		if not cells.has(key):
 			var xy := key.split(":")
 			_overlay.draw_rect(cell_rect(Vector2i(int(xy[0]), int(xy[1]))), Color(0.1, 0.4, 0.8, 0.75))
+	if battle_tool != "" or not battle_units.is_empty() or not battle_blocked.is_empty():
+		var faint := 1.0 if battle_tool != "" else 0.45
+		var size: Array = map_data.get("size", [0, 0])
+		for y in int(size[1]):
+			for x in int(size[0]):
+				var cell := Vector2i(x, y)
+				if battle_blocked.has(_cell_key(cell)):
+					_overlay.draw_rect(cell_rect(cell).grow(-2), Color(0.9, 0.15, 0.1, 0.5 * faint))
+				elif battle_tool != "" and cells.has(_cell_key(cell)):
+					_overlay.draw_rect(cell_rect(cell).grow(-1), Color(1, 1, 1, 0.3), false, 1.0)
+		for unit: Dictionary in battle_units:
+			var centre := cell_rect(Vector2i(int(unit["cell"][0]), int(unit["cell"][1]))).get_center()
+			_overlay.draw_circle(centre, 22, Color(0.2, 0.45, 0.9, faint) if unit["team"] == "player" else Color(0.85, 0.25, 0.2, faint))
+			_overlay.draw_string(ThemeDB.fallback_font, centre + Vector2(-20, 5), String(unit["id"]).left(5), HORIZONTAL_ALIGNMENT_LEFT, 44, 13, Color.WHITE)
 	if selected != "" and nodes.has(selected):
 		var box := rect_of(selected)
 		_overlay.draw_rect(box.grow(2), Color(1, 0.9, 0.2), false, 2.0)
@@ -704,6 +860,25 @@ func _build_ui() -> void:
 		button.text = row[0]
 		button.pressed.connect(row[1])
 		column.add_child(button)
+	var battle_title := Label.new()
+	battle_title.text = "Battle setup on this map"
+	column.add_child(battle_title)
+	var battle_row := HBoxContainer.new()
+	column.add_child(battle_row)
+	for pair: Array in [["Block", "blocked"], ["Player", "player"], ["Enemy", "enemy"], ["Clear", "clear"]]:
+		var tool_button := Button.new()
+		tool_button.text = pair[0]
+		tool_button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		tool_button.pressed.connect(func(): set_battle_tool(pair[1]))
+		battle_row.add_child(tool_button)
+	var play_row := HBoxContainer.new()
+	column.add_child(play_row)
+	for pair: Array in [["Save battle", func(): save_battle()], ["Play battle", func(): play_battle()]]:
+		var battle_button := Button.new()
+		battle_button.text = pair[0]
+		battle_button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		battle_button.pressed.connect(pair[1])
+		play_row.add_child(battle_button)
 	var help := Label.new()
 	help.text = "Click: select / place   Drag: move\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
 	help.add_theme_font_size_override("font_size", 12)
@@ -743,6 +918,7 @@ func _fill_map_pick() -> void:
 
 
 func toggle_erasing() -> void:
+	battle_tool = ""
 	erasing_floor = not erasing_floor
 	placing_part = ""
 	selected = ""
@@ -751,6 +927,7 @@ func toggle_erasing() -> void:
 
 func start_placing(part_id: String) -> void:
 	erasing_floor = false
+	battle_tool = ""
 	placing_part = part_id
 	selected = ""
 	_refresh()
@@ -774,7 +951,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
-				if erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
+				if battle_tool != "":
+					battle_click(cell_at(point))
+				elif erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
 					_stroke_open = true
 					_ground_stroke(point, true)
 				elif placing_part != "":
@@ -864,9 +1043,10 @@ func _key(event: InputEventKey) -> void:
 			else:
 				set_active_layer(layer)
 		KEY_ESCAPE:
-			if placing_part != "" or erasing_floor:
+			if placing_part != "" or erasing_floor or battle_tool != "":
 				placing_part = ""
 				erasing_floor = false
+				battle_tool = ""
 				_refresh()
 			elif selected != "":
 				selected = ""
