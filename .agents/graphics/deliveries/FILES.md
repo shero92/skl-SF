@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`ART-0004/`](ART-0004/FILES.md)
+- [`ART-0005/`](ART-0005/FILES.md)
 - [`ART-0006/`](ART-0006/FILES.md)
 - [`ART-0008/`](ART-0008/FILES.md)
 - [`ART-0011/`](ART-0011/FILES.md)
@@ -21,6 +22,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0033/`](ART-0033/FILES.md)
 - [`ART-0034/`](ART-0034/FILES.md)
 - [`ART-0035/`](ART-0035/FILES.md)
+- [`ART-0037/`](ART-0037/FILES.md)
+- [`ART-0038/`](ART-0038/FILES.md)
 - [`ART-0039/`](ART-0039/FILES.md)
 
 ## Files

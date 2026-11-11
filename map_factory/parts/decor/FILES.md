@@ -57,5 +57,11 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`D22_Rope_Swag_West_Rail.png.import`](D22_Rope_Swag_West_Rail.png.import)
 - [`D23_Rope_Swag_East_Rail.png`](D23_Rope_Swag_East_Rail.png)
 - [`D23_Rope_Swag_East_Rail.png.import`](D23_Rope_Swag_East_Rail.png.import)
+- [`D24_Side_Banner_East_Facing_Long.png`](D24_Side_Banner_East_Facing_Long.png)
+- [`D24_Side_Banner_East_Facing_Long.png.import`](D24_Side_Banner_East_Facing_Long.png.import)
+- [`D25_Side_Banner_East_Facing_Short.png`](D25_Side_Banner_East_Facing_Short.png)
+- [`D25_Side_Banner_East_Facing_Short.png.import`](D25_Side_Banner_East_Facing_Short.png.import)
+- [`D26_Side_Banner_West_Facing_Long.png`](D26_Side_Banner_West_Facing_Long.png)
+- [`D26_Side_Banner_West_Facing_Long.png.import`](D26_Side_Banner_West_Facing_Long.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

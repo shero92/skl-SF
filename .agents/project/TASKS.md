@@ -22,7 +22,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0013](../tasks/TASK-0013_hero_room_cloud_drift.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0002 |
 | [TASK-0014](../tasks/TASK-0014_hero_room_cliff_foam_loop.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0003 |
 | [TASK-0015](../tasks/TASK-0015_hero_room_side_wall_views.md) | done | claude | TASK-0011 | ART-0004 |
-| [TASK-0016](../tasks/TASK-0016_hero_room_compass_wood_door.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0005 |
+| [TASK-0016](../tasks/TASK-0016_hero_room_compass_wood_door.md) | review | codex | TASK-0011 | ART-0005 |
 | [TASK-0017](../tasks/TASK-0017_hero_room_sphere_finial.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0006 |
 | [TASK-0018](../tasks/TASK-0018_hero_room_compass_blanket.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0007 |
 | [TASK-0019](../tasks/TASK-0019_hero_room_headboard_shelf.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0008 |
@@ -146,3 +146,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0142](../tasks/TASK-0142_balance_pass_two.md) | review | claude | TASK-0141 | none |
 | [TASK-0143](../tasks/TASK-0143_hero_save.md) | review | claude | TASK-0136 | none |
 | [TASK-0144](../tasks/TASK-0144_room_v0023_b1_b2.md) | review | claude | TASK-0135 | none |
+| [TASK-0145](../tasks/TASK-0145_room_v0024_b3_art0023.md) | review | claude | TASK-0144 | none |

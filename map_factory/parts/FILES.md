@@ -12,6 +12,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`environment/`](environment/FILES.md)
 - [`floors/`](floors/FILES.md)
 - [`furniture/`](furniture/FILES.md)
+- [`lighting/`](lighting/FILES.md)
 - [`objects/`](objects/FILES.md)
 - [`shadows/`](shadows/FILES.md)
 - [`stairs/`](stairs/FILES.md)

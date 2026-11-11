@@ -51,5 +51,15 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`A19_Entrance_Stairs_South.png.import`](A19_Entrance_Stairs_South.png.import)
 - [`A20_Stone_Sphere_Finial.png`](A20_Stone_Sphere_Finial.png)
 - [`A20_Stone_Sphere_Finial.png.import`](A20_Stone_Sphere_Finial.png.import)
+- [`A21_Compass_Wood_Door_North.png`](A21_Compass_Wood_Door_North.png)
+- [`A21_Compass_Wood_Door_North.png.import`](A21_Compass_Wood_Door_North.png.import)
+- [`A22_Compass_Wood_Door_East.png`](A22_Compass_Wood_Door_East.png)
+- [`A22_Compass_Wood_Door_East.png.import`](A22_Compass_Wood_Door_East.png.import)
+- [`A23_Compass_Wood_Door_South.png`](A23_Compass_Wood_Door_South.png)
+- [`A23_Compass_Wood_Door_South.png.import`](A23_Compass_Wood_Door_South.png.import)
+- [`A24_Compass_Wood_Door_West.png`](A24_Compass_Wood_Door_West.png)
+- [`A24_Compass_Wood_Door_West.png.import`](A24_Compass_Wood_Door_West.png.import)
+- [`W036_Wall_Straight_Window_Opening.png`](W036_Wall_Straight_Window_Opening.png)
+- [`W036_Wall_Straight_Window_Opening.png.import`](W036_Wall_Straight_Window_Opening.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

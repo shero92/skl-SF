@@ -11,7 +11,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0002](requests/ART-0002_hero_room_cloud_drift.md) | blocked_reference | graphics-specialist | TASK-0013 | E018 |
 | [ART-0003](requests/ART-0003_hero_room_cliff_foam_loop.md) | blocked_reference | graphics-specialist | TASK-0014 | E009,E011,E012,E013,E014 |
 | [ART-0004](requests/ART-0004_hero_room_side_wall_views.md) | integrated | graphics-specialist | TASK-0015 | W001,W006,W007,W008,W009,W019,W020 |
-| [ART-0005](requests/ART-0005_hero_room_compass_wood_door.md) | blocked_reference | graphics-specialist | TASK-0016 | A015,A016,W016 |
+| [ART-0005](requests/ART-0005_hero_room_compass_wood_door.md) | delivered | graphics-specialist | TASK-0016 | A015,A016,W016 |
 | [ART-0006](requests/ART-0006_hero_room_sphere_finial.md) | delivered | graphics-specialist | TASK-0017 | ST011,A013 |
 | [ART-0007](requests/ART-0007_hero_room_compass_blanket.md) | blocked_reference | graphics-specialist | TASK-0018 | P002,P004 |
 | [ART-0008](requests/ART-0008_hero_room_headboard_shelf.md) | delivered | graphics-specialist | TASK-0019 | P004,P014,P015 |
@@ -42,5 +42,5 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0035](requests/ART-0035_hero_room_planters_flowers_palms.md) | reviewed | codex | TASK-0102 | none |
 | [ART-0036](requests/ART-0036_weapon_icons_and_type_sprites.md) | blocked_reference | graphics-specialist | TASK-0118 | none |
 | [ART-0037](requests/ART-0037_hero_room_sea_light_lattice.md) | requested | graphics-specialist | TASK-0102 | none |
-| [ART-0038](requests/ART-0038_hero_room_window_wall_piece.md) | requested | graphics-specialist | TASK-0102 | none |
+| [ART-0038](requests/ART-0038_hero_room_window_wall_piece.md) | delivered | graphics-specialist | TASK-0102 | none |
 | [ART-0039](requests/ART-0039_hero_room_wooden_stool.md) | delivered | graphics-specialist | TASK-0102 | none |

@@ -6,9 +6,11 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`compass_wood_door_views/`](compass_wood_door_views/FILES.md)
 - [`connected_ruin_walls/`](connected_ruin_walls/FILES.md)
 - [`entrance_stairs/`](entrance_stairs/FILES.md)
 - [`sphere_stair_post/`](sphere_stair_post/FILES.md)
+- [`window_wall/`](window_wall/FILES.md)
 
 ## Files
 
