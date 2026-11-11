@@ -168,5 +168,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0161_art_skirmish_field_tiles.md`](TASK-0161_art_skirmish_field_tiles.md)
 - [`TASK-0162_codex_own_worktree.md`](TASK-0162_codex_own_worktree.md)
 - [`TASK-0163_room_v0028_foam_east_lantern.md`](TASK-0163_room_v0028_foam_east_lantern.md)
+- [`TASK-0164_room_full_view.md`](TASK-0164_room_full_view.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
