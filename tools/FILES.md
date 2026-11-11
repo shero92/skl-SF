@@ -128,6 +128,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`setup_local_planner.ps1`](setup_local_planner.ps1)
 - [`simulate_battles.gd`](simulate_battles.gd)
 - [`simulate_battles.gd.uid`](simulate_battles.gd.uid)
+- [`source_art_catalog.py`](source_art_catalog.py)
 - [`task_evidence.py`](task_evidence.py)
 - [`test_cardinal_map_blocks.gd`](test_cardinal_map_blocks.gd)
 - [`test_cardinal_map_blocks.gd.uid`](test_cardinal_map_blocks.gd.uid)

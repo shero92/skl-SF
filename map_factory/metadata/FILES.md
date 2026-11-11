@@ -22,6 +22,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`production_queue.csv.import`](production_queue.csv.import)
 - [`quality_review.json`](quality_review.json)
 - [`room_block_quality.json`](room_block_quality.json)
+- [`source_art_index.json`](source_art_index.json)
 - [`transform_rules.json`](transform_rules.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

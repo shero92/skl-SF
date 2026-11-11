@@ -8,6 +8,7 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 
 | Test | Kind | Covers | Command |
 | --- | --- | --- | --- |
+| `source_art_catalog` | python | Source and linked-file hashes, safe project paths, preserved technical failures and automatic visual approval without activation. | `python -m unittest discover -s tools/tests -p test_source_art_catalog.py` |
 | `golden_cyclone_assets` | python | Individual Hero source provenance, immutable masters, measured sockets, atlas/GIF timing and candidate-only Godot playback with both swords. | `python -m unittest discover -s tools/tests -p test_golden_cyclone_assets.py` |
 | `hero_room_capture_evidence` | python | Real Godot capture evidence validation, invalid versions, missing PNGs, provenance, immutable output and environment source guards. | `python -m unittest discover -s tools/tests -p test_hero_room_capture_evidence.py` |
 | `hero_room_reference_relayout` | python | Post-v0013 explicit target placements, registered anchors, exact asset identities, retained enclosing walls, intentional rug overlap, central floor coverage and deterministic read-only generation. | `python -m unittest discover -s tools/tests -p test_hero_room_reference_relayout.py` |
@@ -98,6 +99,7 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 
 ## Paths per test
 
+- `source_art_catalog`: `tools/source_art_catalog.py`, `tools/tests/test_source_art_catalog.py`, `map_factory/metadata/source_art_index.json`, `docs/SOURCE_ART_CATALOG.md`
 - `golden_cyclone_assets`: `tools/golden_cyclone_assets.py`, `tools/tests/test_golden_cyclone_assets.py`, `tools/verify_golden_cyclone_preview.gd`, `scenes/battle/golden_cyclone_preview.*`, `scenes/battle/battle_animation_controller.gd`, `game_factory/golden_cyclone/**`, `assets/characters/hero/battle/golden_cyclone/**`
 - `hero_room_capture_evidence`: `tools/capture_map_previews.gd`, `tools/hero_room_capture_evidence.py`, `tools/tests/test_hero_room_capture_evidence.py`, `tools/test_map.json`
 - `hero_room_reference_relayout`: `tools/build_hero_room_blueprint.py`, `tools/room_assembly.py`, `tools/tests/test_hero_room_reference_relayout.py`, `tools/test_map.json`
