@@ -4,19 +4,19 @@
     "background": 35,
     "ground": 3,
     "walls": 33,
-    "decorations": 86,
-    "shadows": 87
+    "decorations": 88,
+    "shadows": 88
   },
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 25,
+  "version": 26,
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "block_count": 157,
+  "block_count": 159,
   "unique_asset_count": 100,
   "reused_asset_ids": [
     "A01",
@@ -1780,8 +1780,8 @@
       ],
       "layer": "ground_overlays",
       "position": [
-        450.0,
-        609
+        450,
+        660
       ],
       "grid_placement": {
         "cell": [
@@ -1804,9 +1804,10 @@
         "forbidden_floor_tags": [],
         "measurement_status": "provisional"
       },
-      "scale": 1.0,
+      "scale": 1.8,
       "rotation_degrees": 0,
       "flip_h": false,
+      "free_transform": true,
       "z_index": 0,
       "collision": {
         "enabled": false,
@@ -8533,6 +8534,128 @@
         "master": "assets_hd/decor/rope_post_fence/v001/hero_rope_swag_east_rail.png",
         "master_sha256": "429ce3027fb3d7ed47655ae60f2a2181ad195ccf89c8b39ef834032526b8365c",
         "request_id": "ART-0024"
+      }
+    },
+    {
+      "instance_id": "ArchBaseFlowersLeft",
+      "asset_id": "V025",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://map_factory/parts/vegetation/V025_Flower_Mound_Blue.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        96,
+        64
+      ],
+      "anchor": [
+        48,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        640.0,
+        305.0
+      ],
+      "scale": 0.7,
+      "rotation_degrees": -8.0,
+      "flip_h": false,
+      "free_transform": true,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue",
+        "flower",
+        "mound",
+        "vegetation"
+      ],
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/coastal_garden/v001/flower_mound_blue.png",
+        "master_sha256": "c303c9d4e12f571a53a7899c90a84e3295edaf95893ac60b7a6922c3f43b387a"
+      }
+    },
+    {
+      "instance_id": "ArchBaseFlowersRight",
+      "asset_id": "P05",
+      "category": "vegetation",
+      "subtype": "foliage",
+      "texture_path": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
+      "asset_status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "layer": "objects",
+      "position": [
+        850.0,
+        305.0
+      ],
+      "scale": 0.8,
+      "rotation_degrees": 14.0,
+      "flip_h": true,
+      "free_transform": true,
+      "z_index": 0,
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "shadow": {
+        "type": "plant",
+        "opacity": 0.16,
+        "offset_x": 3,
+        "offset_y": 3
+      },
+      "tags": [
+        "cluster",
+        "flower",
+        "foliage",
+        "medium",
+        "vegetation",
+        "white"
+      ],
+      "source": {
+        "kind": "image_gen_environment_pack",
+        "pack": "assets_generated",
+        "pack_asset_id": "P05",
+        "pack_orientation": "default",
+        "sidecar": "assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.json",
+        "sha256": "2e41bd0f3e91848b976f95976cd1cec0e5aabcb8b202c18c0999d708b642b95a",
+        "anchor_declared": [
+          0,
+          64
+        ],
+        "anchor_registered": [
+          32,
+          64
+        ],
+        "identity": "P05"
       }
     },
     {

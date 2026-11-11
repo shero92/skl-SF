@@ -315,6 +315,8 @@ func _place_compiled_entries(entries: Array, group: Node2D, projection_y: float 
         node.position = Vector2(float(xy[0]), float(xy[1]) * projection_y)
         if orientation.is_empty():
             node.rotation_degrees = float(record.get("rotation_degrees", 0))
+        elif bool(record.get("free_transform", false)):
+            node.rotation_degrees += float(record.get("rotation_degrees", 0))  # free design turn on top of the facing
         var scale_value := float(record.get("scale", 1))
         node.scale = Vector2.ONE * scale_value
         # A negative or unusually high local z must not escape its semantic pass.
@@ -460,6 +462,8 @@ func _place_group(entries: Array, parent: Node2D, name: String, use_y_sort: bool
         node.position = Vector2(float(item.get("x", 0)), float(item.get("y", 0)))
         if not item.has("facing"):
             node.rotation_degrees = float(item.get("rotation_degrees", 0))
+        elif bool(item.get("free_transform", false)):
+            node.rotation_degrees += float(item.get("rotation_degrees", 0))
         var s := float(item.get("scale", 1.0))
         node.scale = Vector2(s, s)
         node.z_index = int(item.get("z_index", 0))
