@@ -12,7 +12,7 @@
 
 بعد كل تسليم: شغّل `python tools/source_art_catalog.py --root . --write` في مجلد المشروع الجامع، ثم `python tools/source_art_catalog.py --root . --check`. تحفظ الأداة فقط هذا الفهرس ودليله؛ لا تعدّل PNG أو manifests تاريخية. فهارس INDEX.md الآلية تُحدّث على main وفق سير المشروع.
 
-العدد: 100 مصادر مختارة و26 محاولات مرفوضة في 24 manifests.
+العدد: 101 مصادر مختارة و27 محاولات مرفوضة في 25 manifests.
 
 | ART | القطعة | الفئة | الاختيار | المصدر |
 | --- | --- | --- | --- | --- |
@@ -110,6 +110,8 @@
 | ART-0038 | wall_straight_window_opening | architecture | selected | [wall_straight_window_opening.png](../assets_hd/architecture/window_wall/v002/wall_straight_window_opening.png) |
 | ART-0038 | wall_straight_window_opening_attempt_03 | architecture | rejected | [wall_straight_window_opening_attempt_03.png](../assets_hd/architecture/window_wall/v002/rejected/wall_straight_window_opening_attempt_03.png) |
 | ART-0039 | study_wooden_stool | furniture | selected | [study_wooden_stool.png](../assets_hd/furniture/study_stool/v001/study_wooden_stool.png) |
+| ART-0040 | hero_wall_lantern_east | lighting | selected | [hero_wall_lantern_east.png](../assets_hd/lighting/east_wall_lantern/v001/hero_wall_lantern_east.png) |
+| ART-0040 | hero_wall_lantern_east_attempt_01 | lighting | rejected | [hero_wall_lantern_east_attempt_01.png](../assets_hd/lighting/east_wall_lantern/v001/rejected/hero_wall_lantern_east_attempt_01.png) |
 | ART-0029 | hero_golden_cyclone_001 | character | selected | [hero_golden_cyclone_001.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_001.png) |
 | ART-0029 | hero_golden_cyclone_002 | character | selected | [hero_golden_cyclone_002.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_002.png) |
 | ART-0029 | hero_golden_cyclone_003 | character | selected | [hero_golden_cyclone_003.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_003.png) |

@@ -1,0 +1,21 @@
+{
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "generation_count": 2,
+  "prompts": {
+    "initial": "ART-0040 hero_wall_lantern_east. Produce ONE newly drawn true EAST-POINTING counterpart of the attached WEST-facing brass lantern, using attached image for material/design identity ONLY. Do NOT flip/mirror/rotate/paste it. Reconstruct and repaint the opposite view with unchanged UPPER-LEFT illumination (bright top/left brass edges, darker lower-right recesses), so it is a new proper directional drawing. A decorative tall narrow bronze-gold wall mounting backplate is on the LEFT side near upper-left; a curved S-scroll arm projects from it to the RIGHT (east), with a small hanging link suspending a vertical hexagonal glass lantern on the RIGHT, below the arm. Compact tall silhouette, same brass trim, modest pointed cap and bottom finial, warm yellow-white internal candle with amber glass, visible top planes and front plus side glass face. Camera tactical RPG south-of-room looking north/down about50degrees, orthographic. Sharp high-detail PIXEL ART clusters, 1-2pixel dark contour at native29x53, match attached master's oak-gold brass density; no blur. Single whole object, source master portrait1024x1536 or larger, minimum400x720 genuinely native; ~6% transparent safety margin. Clean genuine TRANSPARENT RGBA PNG, true alpha0 around and between bracket curls. No wall, stone blocks, floor, cast shadow, external light halo/glow, plants/ivy, banner, characters, text/label/watermark, frame, sheets or extra lanterns. Flame stays inside glass. The left mounting plate and east-projecting arm must be clearly readable. One standalone asset at one angle; not a paired comparison.",
+    "final": "ART-0040 attempt2. Edit this lantern image with ONE correction: REMOVE ALL EXTERNAL AMBER GLOW / HALO / DARK BACKDROP. Keep exactly the drawn lantern/bracket/left mounting plate and internal glass/candle illumination, same east-pointing direction, same upper-left metal highlights, same1024x1536canvas, same shape and placement. Every pixel outside physical brass/glass/candle/link silhouette must become genuinely TRANSPARENT alpha0, including the background inside bracket curls and chain links. Clean hard-edged pixel-art cutout with at most a one-pixel anti-alias fringe, absolutely no fuzzy amber haze. Do not add a drop shadow, outline halo, white background, wall or stone. The internal warm light remains confined inside the closed glass body; metal can have painted highlights but emits no external glow. No crop, rotation, mirror, layout or style change. Whole object intact with transparent margins. Deliver one transparent RGBA PNG."
+  },
+  "notes": [
+    "Attempt1 appeared to have a halo in the tool preview; actual alpha compositing shows that the amber surround is hidden RGB beneath alpha0, not a visible halo. It is retained as a nonselected earlier attempt, not an owner rejection.",
+    "Attempt2 is an independently requested alpha-cleanup edit; selected final. No third generation. No production pixel manipulation, flip or rotation."
+  ],
+  "style_references": [
+    {
+      "path": "assets_hd/lighting/west_wall_lantern/v001/hero_wall_lantern_west.png",
+      "sha256": "e1beb2284d9804e1ae51480c63af498d916f6d0aa992e2d8622fb0a361a6c623",
+      "role": "material/design reference only; no flip/mirror/rotation/paste"
+    }
+  ]
+}

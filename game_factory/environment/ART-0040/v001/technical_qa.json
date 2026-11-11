@@ -1,0 +1,20 @@
+{
+  "rgba": true,
+  "minimum_master_size_passed": true,
+  "alpha128_bounds_inside": true,
+  "native_canvas": [
+    29,
+    53
+  ],
+  "source_pixels_per_native_pixel": 28.034482758620687,
+  "mount_pixel_visible": true,
+  "left_mount_x": 232,
+  "lamp_body_center_x": 715,
+  "required_east_relationship_passed": true,
+  "external_glow_visible_in_alpha_composite": false,
+  "hidden_RGB_is_not_a_visible_halo": true,
+  "origin_manually_annotated": true,
+  "room_mount_verified": false,
+  "owner_approved": true,
+  "production_active": true
+}
