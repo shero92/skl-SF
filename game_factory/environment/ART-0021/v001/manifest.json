@@ -1,0 +1,413 @@
+{
+  "request_id": "ART-0021",
+  "task_id": "TASK-0032",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 4,
+  "quality_status": "needs_review",
+  "owner_approved": false,
+  "production_active": false,
+  "generation_cache_required": false,
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; never pasted/cropped/traced",
+  "items": [
+    {
+      "id": "hero_study_chest_south",
+      "request_id": "ART-0021",
+      "master_path": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_south.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0021/hero_study_chest_south.png",
+      "sha256": "b846edba4585f76fa5df8803fb077b9d506a9e731f2e95692f834da46e436d2d",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        115,
+        192,
+        1331,
+        915
+      ],
+      "origin": [
+        723.0,
+        914
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "prompt_text": "ART-0021 hero_study_chest_south. One independent game environment sprite: a single CLOSED plain brown oak storage chest, no contents, south/front three-quarter tactical RPG view from30degrees above. Reference style SKL-SF assets_hd/furniture/crate/crate_01.png viewed earlier, warm honey-dark oak with hard detailed pixel clusters, crisp thin dark-brown outline, warm upper-left surface light. Consistent design to reuse across views: rectangular box, LOW GENTLY BARREL-CURVED plank lid (not tall treasure dome), TWO narrow dark iron bands running front-to-back over lid, simple square iron latch centred on FRONT, small iron rivets and short solid wood base rails, no feet. Front long face horizontal, slight right side visible. Plain wooden family, no blue panels, gold ornament or nautical emblems. Full object with4%genuinely transparent empty margin, RGBA PNG at least1024x1024 preferably1536x1152, no source upscaling. Native placement58x73 is provisional review canvas, preserve actual chest proportions on uniform fit. No ground, floor, cast/contact shadow, glow, background, characters, text, watermark, frame, extra props or sheet. Exactly one chest, entire lid and base uncut.",
+      "prompt_path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_south.txt",
+      "footprint_64px_cells": null,
+      "footprint_status": "needs scene calibration; projected image bounds are not floor footprint",
+      "collision_polygon": null,
+      "collision_status": "annotate base only at integration",
+      "baked_shadow": false,
+      "mount_points": null,
+      "native_review_region": [
+        107,
+        184,
+        1339,
+        923
+      ],
+      "native_review_note": "QA alpha128 bounds plus8px; weak alpha outside may be omitted; master unchanged",
+      "reviews": [
+        {
+          "kind": "placement",
+          "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_south_placement.png",
+          "sha256": "cc0f16baf838de32e554591d4db5235ba93f10ca4115c9f21a79c7c86d38bb1e",
+          "canvas": [
+            58,
+            73
+          ],
+          "resized_size": [
+            58,
+            35
+          ],
+          "offset": [
+            0,
+            38,
+            58,
+            73
+          ],
+          "uniform_scale": 0.04707792207792208,
+          "source_pixels_per_visible_pixel": 21.241379310344826
+        },
+        {
+          "kind": "catalog",
+          "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_south_catalog.png",
+          "sha256": "521764c72619a9e11cf1385e69ae91c9aa408641426a55d6bd6ba7b459a5fd8d",
+          "canvas": [
+            191,
+            157
+          ],
+          "resized_size": [
+            191,
+            115
+          ],
+          "offset": [
+            0,
+            42,
+            191,
+            157
+          ],
+          "uniform_scale": 0.15503246753246752,
+          "source_pixels_per_visible_pixel": 6.450261780104713
+        }
+      ],
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "style_reference": "assets_hd/furniture/crate/crate_01.png"
+    },
+    {
+      "id": "hero_study_chest_north",
+      "request_id": "ART-0021",
+      "master_path": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_north.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0021/hero_study_chest_north.png",
+      "sha256": "6827e5bddc01c34332475d70e060b4bbe5d3a9eab3b3d9999b587103f645b993",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        43,
+        182,
+        1474,
+        880
+      ],
+      "origin": [
+        758.5,
+        879
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "north",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "prompt_text": "ART-0021 hero_study_chest_north. ONE independently DRAWN NORTH/BACK view of the SAME plain oak CLOSED storage chest family shown in the previous south image. Preserve exact design: low gently barrel-curved plank lid (not tall dome), TWO narrow dark iron straps over lid near quarter and three-quarter positions, simple solid wooden base rails, short front/back box height, rich warm oak. From NORTH, show the long BACK face with TWO small dark iron hinge plates aligned to those two lid bands; FRONT square latch is on the far side and must NOT appear on back. Camera30deg above, long rear edge horizontal with slight LEFT side visible, keep same proportions as south. Newly draw rear construction/grain/occlusion; do not mirror or rotate south bitmap. Upper-LEFT surface light in IMAGE coordinates. Hard high-detail pixel clusters matching SKL-SF crate master, crisp dark brown outline, no blurry painting. Transparent RGBA PNG master1536x1152 or at least1024square, whole chest4%alpha0 empty margin. No gold/blue ornament, no contents, ground, floor, cast/contact shadow, background, glow, characters, text, watermark, frame or sheet. Single complete closed chest back only.",
+      "prompt_path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_north.txt",
+      "footprint_64px_cells": null,
+      "footprint_status": "needs scene calibration; projected image bounds are not floor footprint",
+      "collision_polygon": null,
+      "collision_status": "annotate base only at integration",
+      "baked_shadow": false,
+      "mount_points": null,
+      "native_review_region": [
+        35,
+        174,
+        1482,
+        888
+      ],
+      "native_review_note": "QA alpha128 bounds plus8px; weak alpha outside may be omitted; master unchanged",
+      "reviews": [
+        {
+          "kind": "placement",
+          "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_north_placement.png",
+          "sha256": "02101760d27477555c5bb465044fbb4f2f3d4117eb2bc7b7f6c20188bcc3eaeb",
+          "canvas": [
+            58,
+            73
+          ],
+          "resized_size": [
+            58,
+            29
+          ],
+          "offset": [
+            0,
+            44,
+            58,
+            73
+          ],
+          "uniform_scale": 0.04008293020041465,
+          "source_pixels_per_visible_pixel": 24.948275862068964
+        },
+        {
+          "kind": "catalog",
+          "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_north_catalog.png",
+          "sha256": "8c73efd6f898c1dbb625ff68fda4cfccf792e22ab329c7357d68bb7d79887694",
+          "canvas": [
+            191,
+            157
+          ],
+          "resized_size": [
+            191,
+            94
+          ],
+          "offset": [
+            0,
+            63,
+            191,
+            157
+          ],
+          "uniform_scale": 0.13199723565998617,
+          "source_pixels_per_visible_pixel": 7.575916230366492
+        }
+      ],
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "style_reference": "assets_hd/furniture/crate/crate_01.png"
+    },
+    {
+      "id": "hero_study_chest_east",
+      "request_id": "ART-0021",
+      "master_path": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_east.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0021/hero_study_chest_east.png",
+      "sha256": "9c811c843ec5b247c5947f151bc98fc9903e4b4542767a3033c98fe55641922a",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        49,
+        22,
+        1381,
+        1047
+      ],
+      "origin": [
+        715.0,
+        1046
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "east",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "prompt_text": "ART-0021 hero_study_chest_east. One independently drawn EAST/RIGHT END view of the same plain brown oak closed chest family as previous south: low GENTLY barrel-curved planked lid, TWO narrow dark iron bands run front-to-back over lid at quarter and three-quarter long-axis positions, simple square iron FRONT latch, wooden base rails, no feet. Camera looks toward the short RIGHT END: short end is largest/near, lid and long FRONT side recede to upper-LEFT. Square latch belongs to receding FRONT long face, not the end panel. Correct short-end plank joints/rivets and lid curvature, same overall proportions, not a different treasure chest. Tactical RPG30deg above. Independently redraw geometry, grain and highlights; no bitmap flip/rotation. Warm upper-LEFT light stays upper-left of image. Hard detailed pixel clusters matching SKL-SF crate master, thin dark outline. Transparent RGBA PNG at least1024x1024 preferably1536x1152; whole chest4%alpha0 margin. No fancy handles, gold, blue, emblems, feet, props, ground, shadow, floor, backdrop, text, watermark, frame, people or sheet. One closed chest only.",
+      "prompt_path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_east.txt",
+      "footprint_64px_cells": null,
+      "footprint_status": "needs scene calibration; projected image bounds are not floor footprint",
+      "collision_polygon": null,
+      "collision_status": "annotate base only at integration",
+      "baked_shadow": false,
+      "mount_points": null,
+      "native_review_region": [
+        41,
+        14,
+        1389,
+        1055
+      ],
+      "native_review_note": "QA alpha128 bounds plus8px; weak alpha outside may be omitted; master unchanged",
+      "reviews": [
+        {
+          "kind": "placement",
+          "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_east_placement.png",
+          "sha256": "c2a96205e271491915e6e8d79561b1eeac01e1d6201cb437496493a40c646188",
+          "canvas": [
+            58,
+            73
+          ],
+          "resized_size": [
+            58,
+            45
+          ],
+          "offset": [
+            0,
+            28,
+            58,
+            73
+          ],
+          "uniform_scale": 0.04302670623145401,
+          "source_pixels_per_visible_pixel": 23.241379310344826
+        },
+        {
+          "kind": "catalog",
+          "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_east_catalog.png",
+          "sha256": "632bfee196e629a83c3c7e25b7f43a0d953f53533187b72a10afb2f0d6fbd31b",
+          "canvas": [
+            191,
+            157
+          ],
+          "resized_size": [
+            191,
+            148
+          ],
+          "offset": [
+            0,
+            9,
+            191,
+            157
+          ],
+          "uniform_scale": 0.14169139465875372,
+          "source_pixels_per_visible_pixel": 7.057591623036648
+        }
+      ],
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "style_reference": "assets_hd/furniture/crate/crate_01.png"
+    },
+    {
+      "id": "hero_study_chest_west",
+      "request_id": "ART-0021",
+      "master_path": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_west.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0021/hero_study_chest_west.png",
+      "sha256": "8fb9271ba9d6434ce663eb9b3eb2a77259f6f3068881e8944b63cc37c733a839",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        37,
+        67,
+        1416,
+        1044
+      ],
+      "origin": [
+        726.5,
+        1043
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "west",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "prompt_text": "ART-0021 west correction02. Preserve this ONE west/left-end chest view, camera, silhouette, lid curvature, wood grain, FRONT square latch and upper-left light. Fix ONLY the two DARK IRON STRAPS extending down the long front body: below the lid/body seam REPLACE those vertical black strips with WARM OAK wooden reinforcing stiles with just small square iron rivets, matching the south/east family. Keep the two dark iron bands ON THE LID intact, they end at the lid rim. Body has wooden posts, not continuous full-height iron straps. No other construction change. Whole chest with4%transparent margin, no clipping. RGBA truealpha0 background, hard detailed pixel clusters. No ground/floor, cast/contact shadow, halo, characters, text, watermark, frame or extra objects. Same source resolution or higher without upscaling.",
+      "prompt_path": "game_factory/environment/ART-0021/v001/requests/hero_study_chest_west.txt",
+      "footprint_64px_cells": null,
+      "footprint_status": "needs scene calibration; projected image bounds are not floor footprint",
+      "collision_polygon": null,
+      "collision_status": "annotate base only at integration",
+      "baked_shadow": false,
+      "mount_points": null,
+      "native_review_region": [
+        29,
+        59,
+        1424,
+        1052
+      ],
+      "native_review_note": "QA alpha128 bounds plus8px; weak alpha outside may be omitted; master unchanged",
+      "reviews": [
+        {
+          "kind": "placement",
+          "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_west_placement.png",
+          "sha256": "28b08bc2246ce5dcc472b95db217db6425cdbc1ba2569358ea0822e1b373dc3e",
+          "canvas": [
+            58,
+            73
+          ],
+          "resized_size": [
+            58,
+            41
+          ],
+          "offset": [
+            0,
+            32,
+            58,
+            73
+          ],
+          "uniform_scale": 0.04157706093189964,
+          "source_pixels_per_visible_pixel": 24.051724137931036
+        },
+        {
+          "kind": "catalog",
+          "path": "game_factory/environment/ART-0021/v001/native_review/hero_study_chest_west_catalog.png",
+          "sha256": "2a530dfc234118133cc5aaa7fce938cc0bb7c6ed73bc99ad54b6f4c5c0983905",
+          "canvas": [
+            191,
+            157
+          ],
+          "resized_size": [
+            191,
+            136
+          ],
+          "offset": [
+            0,
+            21,
+            191,
+            157
+          ],
+          "uniform_scale": 0.13691756272401434,
+          "source_pixels_per_visible_pixel": 7.303664921465969
+        }
+      ],
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "style_reference": "assets_hd/furniture/crate/crate_01.png"
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "path": "assets_hd/furniture/study_chest_views/v001/rejected/hero_study_chest_west_attempt_01.png",
+      "sha256": "c3c6141ea647253e7dda1a56166f8f5b5f04f2f8baa45a2dd08b75bb18aec31a",
+      "reason": "Full-height body iron straps differ from south/east wooden stiles; correction requested",
+      "quality_status": "needs_regeneration"
+    }
+  ],
+  "limitations": [
+    "58x73 placement and191x157 catalog canvases are provisional; uniform fit preserves source proportions.",
+    "Footprint/collider/depth and exact placement require scene calibration. Owner approval and integration pending."
+  ]
+}

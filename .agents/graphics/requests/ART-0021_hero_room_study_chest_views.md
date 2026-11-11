@@ -1,6 +1,6 @@
 ---
 id: ART-0021
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0032
 dedupe_key: hero_room_study_chest_views
@@ -68,3 +68,10 @@ issue: 20
 ## Calibrated measurements (TASK-0038, 2026-10-27)
 - Source: docs/HERO_ROOM_CALIBRATION.md (reference SHA-256 verified; native = source px x 0.971; ground depth per D1).
 - Needed (south view first): plain brown plank chest, source 1130,715-1190,790 (60x75) -> native 58x73, contact (1167,852), collision 58x37. P023 (cobalt/gold) is kept elsewhere.
+
+## B4 next graphics delivery — TASK-0032
+- Owner explicitly assigned next graphics production; reference target SHA4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323 authenticates current design.
+- Four independent closed plain-oak chest views and measured manifests at exact delivery filenames. Current base assets untouched.
+- Review: game_factory/environment/ART-0021/v001/ (actual Godot capture, source hashes, prompt records, native58x73 and191x157,2x catalog).
+- West attempt1 retained; full-height body iron bands corrected to wood stiles. Owner approval, footprint/collider calibration and Claude integration pending.
+- Delivered candidate set only; no reviewed/integrated/ready claim.
