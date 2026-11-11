@@ -409,5 +409,23 @@
   "limitations": [
     "58x73 placement and191x157 catalog canvases are provisional; uniform fit preserves source proportions.",
     "Footprint/collider/depth and exact placement require scene calibration. Owner approval and integration pending."
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0021/hero_study_chest_north.png",
+      "sha256": "6827e5bddc01c34332475d70e060b4bbe5d3a9eab3b3d9999b587103f645b993"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0021/hero_study_chest_east.png",
+      "sha256": "9c811c843ec5b247c5947f151bc98fc9903e4b4542767a3033c98fe55641922a"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0021/hero_study_chest_south.png",
+      "sha256": "b846edba4585f76fa5df8803fb077b9d506a9e731f2e95692f834da46e436d2d"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0021/hero_study_chest_west.png",
+      "sha256": "8fb9271ba9d6434ce663eb9b3eb2a77259f6f3068881e8944b63cc37c733a839"
+    }
   ]
 }
