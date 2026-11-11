@@ -12,13 +12,17 @@
 
 بعد كل تسليم: شغّل `python tools/source_art_catalog.py --root . --write` في مجلد المشروع الجامع، ثم `python tools/source_art_catalog.py --root . --check`. تحفظ الأداة فقط هذا الفهرس ودليله؛ لا تعدّل PNG أو manifests تاريخية. فهارس INDEX.md الآلية تُحدّث على main وفق سير المشروع.
 
-العدد: 96 مصادر مختارة و26 محاولات مرفوضة في 23 manifests.
+العدد: 100 مصادر مختارة و26 محاولات مرفوضة في 24 manifests.
 
 | ART | القطعة | الفئة | الاختيار | المصدر |
 | --- | --- | --- | --- | --- |
 | ART-0002 | hero_cloud_01 | background | selected | [hero_cloud_01.png](../assets_hd/background/drifting_clouds/v001/hero_cloud_01.png) |
 | ART-0002 | hero_cloud_02 | background | selected | [hero_cloud_02.png](../assets_hd/background/drifting_clouds/v001/hero_cloud_02.png) |
 | ART-0002 | hero_cloud_03 | background | selected | [hero_cloud_03.png](../assets_hd/background/drifting_clouds/v001/hero_cloud_03.png) |
+| ART-0003 | hero_cliff_foam_01 | background | selected | [hero_cliff_foam_01.png](../assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_01.png) |
+| ART-0003 | hero_cliff_foam_02 | background | selected | [hero_cliff_foam_02.png](../assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_02.png) |
+| ART-0003 | hero_cliff_foam_03 | background | selected | [hero_cliff_foam_03.png](../assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_03.png) |
+| ART-0003 | hero_cliff_foam_04 | background | selected | [hero_cliff_foam_04.png](../assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_04.png) |
 | ART-0005 | hero_compass_wood_door_south | architecture | selected | [hero_compass_wood_door_south.png](../assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_south.png) |
 | ART-0005 | hero_compass_wood_door_north | architecture | selected | [hero_compass_wood_door_north.png](../assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_north.png) |
 | ART-0005 | hero_compass_wood_door_east | architecture | selected | [hero_compass_wood_door_east.png](../assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_east.png) |

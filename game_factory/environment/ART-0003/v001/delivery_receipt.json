@@ -1,0 +1,184 @@
+{
+  "task_id": "TASK-0014",
+  "request_id": "ART-0003",
+  "destination": "H:\\shining force\\skl-SF",
+  "cache_required": false,
+  "files": [
+    {
+      "path": "assets_hd/background/cliff_foam_loop/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_01.png",
+      "sha256": "4c44b5b35087c10fe2b3ef75a0e18242b39e5306c4f3d74d97b0b2f8c6b0ffee"
+    },
+    {
+      "path": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_02.png",
+      "sha256": "8095222701032f32a7e239b450fd1d2df6a714af02665e557f506c110ca1766f"
+    },
+    {
+      "path": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_03.png",
+      "sha256": "7deaec5d213d88cedb904a9d9e8667a633a6e55fe7a0c4e7169a81f1cfdbb392"
+    },
+    {
+      "path": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_04.png",
+      "sha256": "32c11a3e11bc31908fb697fc1db609b992a5466f6339673999c2166d2ac2583c"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/finish_review.py",
+      "sha256": "319a8a1f67d6d720ddc6a410710fd1070efc76c8346493e6579e94b951c31ff7"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/generation_records.json",
+      "sha256": "90014bc3193eed265b8fd6c51a552460688df48dc14ef25c72f43c1225c8586e"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_00.png",
+      "sha256": "6e4c20b5d74d9edd46252350c62a80a4bf859f3f222866678ddac241f103b037"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_01.png",
+      "sha256": "5008393e4035b5a2eb614f1789f6a8c13f0542d06e80f586e78a3bd6a7a6c69d"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_02.png",
+      "sha256": "517faf5bca2394b6481188a90f4a05e5f28848efbf15406ca5ab60bf3d4fce4a"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_03.png",
+      "sha256": "22471618934fdcbd9bb488e71e84851123deb626062ff40466992be658da99b3"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_04.png",
+      "sha256": "6e4c20b5d74d9edd46252350c62a80a4bf859f3f222866678ddac241f103b037"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_05.png",
+      "sha256": "5008393e4035b5a2eb614f1789f6a8c13f0542d06e80f586e78a3bd6a7a6c69d"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_06.png",
+      "sha256": "517faf5bca2394b6481188a90f4a05e5f28848efbf15406ca5ab60bf3d4fce4a"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_07.png",
+      "sha256": "22471618934fdcbd9bb488e71e84851123deb626062ff40466992be658da99b3"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_08.png",
+      "sha256": "6e4c20b5d74d9edd46252350c62a80a4bf859f3f222866678ddac241f103b037"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_09.png",
+      "sha256": "5008393e4035b5a2eb614f1789f6a8c13f0542d06e80f586e78a3bd6a7a6c69d"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_10.png",
+      "sha256": "517faf5bca2394b6481188a90f4a05e5f28848efbf15406ca5ab60bf3d4fce4a"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_frames/capture_11.png",
+      "sha256": "22471618934fdcbd9bb488e71e84851123deb626062ff40466992be658da99b3"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_native_review.png",
+      "sha256": "6e4c20b5d74d9edd46252350c62a80a4bf859f3f222866678ddac241f103b037"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_playback_4fps.gif",
+      "sha256": "90996c0fd388c829d49efa69fe767c1ce655b14e103854dc1a94ee273d32390a"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/godot_review_receipt.json",
+      "sha256": "9775cc54a8afb7e3c629e082e908958f8ba887d3157af7ec65f443d389605287"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/manifest.json",
+      "sha256": "9b21e784f1a1e5ad0da09a0aec0d386acb014fcc996fd8db1fec623f6928a471"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/native_frames_strip.png",
+      "sha256": "d98ad634991d837a651f7c37bf1f338282ac20d7c4389ac0a2f5b165f5d3aa7f"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/native_review/hero_cliff_foam_01.png",
+      "sha256": "d83455fa2c6939facd2d3411c618f3be4c175f9d6158d573c01b22e3a25abb23"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/native_review/hero_cliff_foam_02.png",
+      "sha256": "1615d484eebbe716005b0a924f8ce6dff8a56ae3b6633157c428847cc45081ed"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/native_review/hero_cliff_foam_03.png",
+      "sha256": "b048c53e14cec9c221e3bcfb0fabd4e36f60d3fd1cd84573f9df2c4387ffc44c"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/native_review/hero_cliff_foam_04.png",
+      "sha256": "fed7b42bd212372f2a3a83fd7af275481d9d777fff230cd2bd3d83bd10ff5785"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/prepare_review.py",
+      "sha256": "569757e8bc0d1c9bd6650a4d8b068de35921285f8272c767c41025e57572afd3"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/qa/before_manifest_provenance/godot_review_receipt.json",
+      "sha256": "24430dfb9ecc0713279932ad7fc334545c97e918e27859f44096657d454db342"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/qa/before_manifest_provenance/manifest.json",
+      "sha256": "848692afa995ceaf9444f10af5645379d3f609944140477979d6e5945c580190"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/README.md",
+      "sha256": "b863e83217ddb84fae4ee71d6c26820d27629368d712228ead237107639a8723"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/requests/hero_cliff_foam_01.txt",
+      "sha256": "f0b9fdeef31d10e808723776cdf13691de5e298ec7a86b11210e7ca31cf12db8"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/requests/hero_cliff_foam_02.txt",
+      "sha256": "e29ad4a6c556376b5fb78cac4e9d7eea420003f5c089fae8128b85c1847e0892"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/requests/hero_cliff_foam_03.txt",
+      "sha256": "23a151aa4ba9bad0043517e3bc73571025c601b193aa1cc1e783f47fc8dcf6e8"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/requests/hero_cliff_foam_04.txt",
+      "sha256": "d1ad7415d93d1cf2e25b068526bd03def21ff5aeccad7aeefb7f5712ad3fd373"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/review.gd",
+      "sha256": "d05932952f2814a33dae5ba81db2dcac4f8d3ec58351fdfe55b62475ac5c9a9f"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/technical_qa.json",
+      "sha256": "b237eac8d04dd1041a5103b7b29f24dc5575cda0a3b072a2d751c47a78e89c52"
+    },
+    {
+      "path": "game_factory/environment/ART-0003/v001/verification.json",
+      "sha256": "3a4ff7eb96ec414cbdbcb3eb699d7a104de0d2916680e6269edac499f3425a2c"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_01.png",
+      "sha256": "4c44b5b35087c10fe2b3ef75a0e18242b39e5306c4f3d74d97b0b2f8c6b0ffee"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_02.png",
+      "sha256": "8095222701032f32a7e239b450fd1d2df6a714af02665e557f506c110ca1766f"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_03.png",
+      "sha256": "7deaec5d213d88cedb904a9d9e8667a633a6e55fe7a0c4e7169a81f1cfdbb392"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_04.png",
+      "sha256": "32c11a3e11bc31908fb697fc1db609b992a5466f6339673999c2166d2ac2583c"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0003/manifest.json",
+      "sha256": "9b21e784f1a1e5ad0da09a0aec0d386acb014fcc996fd8db1fec623f6928a471"
+    }
+  ]
+}
