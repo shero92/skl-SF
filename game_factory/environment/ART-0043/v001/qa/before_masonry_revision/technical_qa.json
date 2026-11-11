@@ -1,0 +1,23 @@
+{
+  "rgba": true,
+  "minimum_master_passed": true,
+  "minimum_source_density_passed": true,
+  "visible_alpha128_bounds_inside": true,
+  "unique_source_sha256": "8d238e9369ea16303862ec1ce64cf298cbcca80002e107e83deefca37f269c7e",
+  "source_canvas": [
+    1397,
+    1126
+  ],
+  "native_canvas": [
+    310,
+    250
+  ],
+  "window_aperture_native_extent": null,
+  "door_niche_native_extent": [
+    74.1159627773801,
+    105.0177619893428
+  ],
+  "owner_approved": true,
+  "production_active": false,
+  "room_integration_verified": false
+}

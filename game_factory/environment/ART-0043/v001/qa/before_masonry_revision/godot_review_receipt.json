@@ -1,0 +1,19 @@
+{
+	"actual_viewport": true,
+	"approval_basis": "owner_automatic_20261111",
+	"canvas_size": [
+		1536,
+		1024
+	],
+	"engine": "4.7.2-stable (official)",
+	"manifest_sha256": "c24bdb3721e7773db070b0599fd3b4c8e6318b6d85f8ebb1f953edcf8a0c199e",
+	"owner_approved": true,
+	"production_active": false,
+	"render_sha256": "6897713d3624242b0e435daab92cab5ebc7798c19092297401bdafdc7e6be512",
+	"review_script_sha256": "e27edd546a419d8f53ada14f8610471dbfbe0f48a19446721efccce3a6977a93",
+	"review_zoom": [
+		1,
+		2
+	],
+	"room_integration_verified": false
+}

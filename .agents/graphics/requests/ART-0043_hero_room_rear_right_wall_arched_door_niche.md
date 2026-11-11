@@ -1,7 +1,7 @@
 ---
 id: ART-0043
-status: requested
-owner: graphics-specialist
+status: delivered
+owner: codex
 task: TASK-0148
 dedupe_key: hero_room_rear_right_wall_arched_door_niche
 existing_asset_ids: A23
@@ -43,3 +43,9 @@ output_paths: .agents/graphics/deliveries/ART-0043/hero_rear_right_wall_arched_d
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## Active production — 2026-11-11
+Agent: codex; TASK-0156; branch codex/art-0042-0043-rear-walls. Independent built-in image_gen source with full metadata and Godot native review. Automatic owner visual approval recorded per current policy. No existing art or map revision replaced.
+
+## Delivered — TASK-0156 / 2026-11-11
+Independent clean RGBA source [1397, 1126], master assets_hd/architecture/rear_right_door_niche/v001/hero_rear_right_wall_arched_door_niche.png, SHA256 e4c179693e6f56575cf0384b7e00aa00a7c8ea9905db34df323677e659a31735. Exact requested delivery PNG and files-list manifest populated. Native[310, 250] whole-canvas nearest review and real Godot1x/2x capture under game_factory/environment/ART-0043/v001. All source/native/delivery/reference/capture hashes verified. 2 earlier nonselected attempts preserved with reasons. Owner automatic visual approval recorded; request delivered only. Room placement, join sockets, collisions and occlusion remain uncalibrated. Produced in isolated branch codex/art-0042-0043-rear-walls; no writes to owner main checkout.

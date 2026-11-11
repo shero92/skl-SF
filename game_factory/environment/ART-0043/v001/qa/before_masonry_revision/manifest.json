@@ -1,0 +1,115 @@
+{
+  "request_id": "ART-0043",
+  "task_id": "TASK-0156",
+  "delivery_branch": "codex/art-0042-0043-rear-walls",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 1,
+  "generation_count": 1,
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "quality_status": "needs_map_calibration",
+  "production_active": false,
+  "generation_cache_required": false,
+  "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+  "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+  "reference_use": "style/composition only; no reference crop pasted/traced as art",
+  "items": [
+    {
+      "id": "hero_rear_right_wall_arched_door_niche",
+      "request_id": "ART-0043",
+      "master_path": "assets_hd/architecture/rear_right_door_niche/v001/hero_rear_right_wall_arched_door_niche.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0043/hero_rear_right_wall_arched_door_niche.png",
+      "sha256": "8d238e9369ea16303862ec1ce64cf298cbcca80002e107e83deefca37f269c7e",
+      "pixel_size": [
+        1397,
+        1126
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        32,
+        36,
+        1366,
+        1097
+      ],
+      "origin": [
+        699.0,
+        1096
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "facing": "south-facing wall; camera south looking north/down",
+      "native_canvas": [
+        310,
+        250
+      ],
+      "native_width": 310,
+      "native_height": 250,
+      "native_review_path": "game_factory/environment/ART-0043/v001/native_review/hero_rear_right_wall_arched_door_niche.png",
+      "native_review_sha256": "cb66da4f1d86d8f824dfe82d48648a6d7ec3b7aa0445241c6dcbd672aeabc82d",
+      "native_source_region": [
+        0,
+        0,
+        1397,
+        1126
+      ],
+      "source_pixels_per_native_pixel": [
+        4.506451612903226,
+        4.504
+      ],
+      "native_method": "whole canvas nearest-neighbour; no crop/flip/rotation/upscale; pixel dimensions rounded",
+      "prompt_text": "ART-0043 hero_rear_right_wall_arched_door_niche. ONE new independently drawn connected SOUTH-FACING rear sandstone wall, transparent RGBA PNG, one piece at one angle. First attached image is the DESIGN reference crop only (never paste/trace/crop it); second attached clean wall is MATERIAL/STONE STYLE reference only, to make both rear walls match. Do not edit, flip or reuse that wall's pixels; draw new geometry. Canvas aspect EXACT31:25, for example1550x1250; master must be at least1240x1000 genuinely native, not upscaled. Native310x250review. Camera south looking north/down50degrees, orthographic tactical RPG, front/south face and shallow stone top surfaces visible. Wall is broad, irregular broken stepped top, TALLEST toward central/left-middle part (about7courses), descending in steps toward RIGHT/east end; full connected wall, bottom baseline horizontal. Same warm golden tan rectangular sandstone blocks, staggered warm-brown mortar, chipped corners, hard detailed pixel clusters, native1-2px dark contour, upper-left sunlight, darker right faces as clean material reference. In LOWER CENTRE place ONE SMALL RECESSED ROUND-ARCH STONE DOOR NICHE: complete outer arch frame around70px wide x110px tall relative to310x250wall (23%width,44%height), NOT a giant doorway covering half the wall. Bottom of niche near bottom baseline. Plain CLOSED dark warm-oak wooden panel inside it, small restrained brass compass-rose emblem near upper-middle of door, tiny latch; no text. Carved stone voussoirs and a thin stone threshold, subtle recessed interior shading confined to niche. No detached free-standing door, no double door or arch columns. Keep whole piece within3%transparent safety margin. No vines/ivy/flowers/plants/moss clumps, lanterns/candles, banners, shelves/books, vases, floor/ground, sea/sky/backdrop, cast shadow, characters, labels/watermarks/frame/panels/sheet. Wall and inset closed door only.",
+      "prompt_path": "game_factory/environment/ART-0043/v001/requests/hero_rear_right_wall_arched_door_niche.txt",
+      "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0043_target.png",
+      "reference_crop_sha256": "1117757e38d75899519e6e62600937c12761fa269543c93d92e69ee323f97d74",
+      "comparison_path": ".agents/graphics/requests/reference_crops/ART-0043_compare.png",
+      "comparison_sha256": "4e72cf88b2d4fb8f34966b8b12011b59f92ad04765865196595c0d879a26cebd",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "collision": null,
+      "collision_status": "needs wall navigation annotation at integration",
+      "footprint_64px_cells": null,
+      "connection_sockets": null,
+      "connection_status": "wall endpoint/arch join calibration not measured",
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_map_calibration",
+      "production_active": false,
+      "door_niche_bounds_manual": [
+        524,
+        584,
+        858,
+        1057
+      ],
+      "door_niche_bounds_status": "manual visual bounding estimate, not collision/interaction geometry",
+      "door_niche_native_extent": [
+        74.1159627773801,
+        105.0177619893428
+      ],
+      "door_closed": true,
+      "material_reference_path": "assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png",
+      "material_reference_sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667"
+    }
+  ],
+  "rejected_attempts": [],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0043/hero_rear_right_wall_arched_door_niche.png",
+      "sha256": "8d238e9369ea16303862ec1ce64cf298cbcca80002e107e83deefca37f269c7e"
+    }
+  ],
+  "limitations": [
+    "No room placement, collisions, endpoint joins or occlusion verified; source-only Godot review.",
+    "Course counts/block widths are approximate authored geometry; native canvas includes transparent margins.",
+    "Owner main checkout unchanged; files live in isolated task worktree until branch integration."
+  ]
+}

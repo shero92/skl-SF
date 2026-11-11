@@ -1,0 +1,188 @@
+{
+  "task_id": "TASK-0156",
+  "requests": [
+    "ART-0042",
+    "ART-0043"
+  ],
+  "destination": "H:\\shining force\\skl-SF\\.worktrees\\art-rear-walls",
+  "cache_required": false,
+  "owner_main_checkout_written": false,
+  "files": [
+    {
+      "path": "assets_hd/architecture/rear_left_window_wall/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png",
+      "sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667"
+    },
+    {
+      "path": "assets_hd/architecture/rear_left_window_wall/v001/rejected/hero_rear_left_ruined_wall_window_attempt_01.png",
+      "sha256": "8c4ec564a74a1a15d2b91518ca670448be1104dd0b288cd4f6c87828aaf80f3e"
+    },
+    {
+      "path": "assets_hd/architecture/rear_right_door_niche/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/architecture/rear_right_door_niche/v001/hero_rear_right_wall_arched_door_niche.png",
+      "sha256": "e4c179693e6f56575cf0384b7e00aa00a7c8ea9905db34df323677e659a31735"
+    },
+    {
+      "path": "assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_01.png",
+      "sha256": "8d238e9369ea16303862ec1ce64cf298cbcca80002e107e83deefca37f269c7e"
+    },
+    {
+      "path": "assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_02.png",
+      "sha256": "b6e61bd0f6139f76434925de386ffa16f4f30f852c48f0b01b7740b8e65dc62b"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/godot_native_review.png",
+      "sha256": "87b19b56cabd0a066e621c856afa71469d1469669b0915383839cf1f9d99a580"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/godot_review_receipt.json",
+      "sha256": "2196f1e9084bf0b7db280243dd7a0a278f321e30076e955c29d19c4632bca59d"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/manifest.json",
+      "sha256": "93c6afa79f6486cfb95793f0e7f41332ac053feffc8e9ed69d905991841a85f3"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/native_review/hero_rear_left_ruined_wall_window.png",
+      "sha256": "6d7047c512332a34f676c1d4d5e6b46bd5363848bf0e7a5a37b3a7e476e605e4"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/README.md",
+      "sha256": "22c7732cff9fb3b7976a1667921db64f054d7fc3b8a1621aa18cd6f0c4fe555e"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window.txt",
+      "sha256": "717a6225913629de46dc4b5cddb59862c84f1b0a10245f6f0c14155a4b4c22dd"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window_initial.txt",
+      "sha256": "5b25584c2e7b38af23e57408ddf7f810450290858d2e00a22062e47b8653ea5f"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/technical_qa.json",
+      "sha256": "7335b336647a3868d3e6657d453d990171daf52efd1a7ed866818da10d833905"
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/verification.json",
+      "sha256": "707ada759c05d56a7a91b908c78a9538db1893090b467a321f51c93ae2155040"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/godot_native_review.png",
+      "sha256": "7ef2698d8684c0d8b5be842f3351e1195525a1fd6ce96a5888eb80e897955d7b"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/godot_review_receipt.json",
+      "sha256": "bc996de2e54c625e767520289754f067f22915d56de39471425b4cc998badd85"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/manifest.json",
+      "sha256": "df01cfb9c937f7edacab9609ac42c7445bf5660e9836ad1993d233203e39878a"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/native_review/hero_rear_right_wall_arched_door_niche.png",
+      "sha256": "fb4a763967d963693ea4e5431736c8aeff0a7ebf7113fa6081b552e35616a688"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/qa/before_masonry_revision/godot_native_review.png",
+      "sha256": "6897713d3624242b0e435daab92cab5ebc7798c19092297401bdafdc7e6be512"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/qa/before_masonry_revision/godot_review_receipt.json",
+      "sha256": "62631eb98acb6d25b748a2e489345e14059784cdead5db9e08169ed26897b675"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/qa/before_masonry_revision/manifest.json",
+      "sha256": "c24bdb3721e7773db070b0599fd3b4c8e6318b6d85f8ebb1f953edcf8a0c199e"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/qa/before_masonry_revision/native_review.png",
+      "sha256": "cb66da4f1d86d8f824dfe82d48648a6d7ec3b7aa0445241c6dcbd672aeabc82d"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/qa/before_masonry_revision/source_path_alias.json",
+      "sha256": "606d8cc408eac2c09d7fc5bb554ab715af1e8bde0508255e2e18b19d6c423d68"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/qa/before_masonry_revision/technical_qa.json",
+      "sha256": "a0d1faa2d234845b6d60f34b5d6394bc8b9fa450835a7f8ebce8cf5424c8b061"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/qa/before_masonry_revision/verification.json",
+      "sha256": "f02edd429e9fe360fa7eda6ce057fb99606d0b90dca4b8a83a6cd9f6286bd488"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/README.md",
+      "sha256": "7158760e83b3de5f48afd3d5b17350f9eeca242d6cda72c94d3acaab01273de1"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/requests/hero_rear_right_wall_arched_door_niche.txt",
+      "sha256": "8413980505dc4294600b9a34070425d0a420da7248aa680ae07fa03d30123e56"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/requests/hero_rear_right_wall_arched_door_niche_course_fix43.txt",
+      "sha256": "ef125ef36b3b3e2b9b657000ddaba493ceaeb8497076fd5998cb0e7958a8e0b6"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/requests/hero_rear_right_wall_arched_door_niche_initial43.txt",
+      "sha256": "bd4ec0fa03f3c1d1e4d4a6a83e111944cd316827393ccd112a0849925b50d371"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/technical_qa.json",
+      "sha256": "156efd1e757da9e4695f2ccdefe596e1b3b3649f72764f7df2df2eaf6302fcaa"
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/verification.json",
+      "sha256": "1d9e1c36f05e29a1d8668c1b8e5d1f8e70b786b65dce62e5912940df5732fd04"
+    },
+    {
+      "path": "game_factory/environment/rear_walls_20261111/additional_prompts.json",
+      "sha256": "2e09c5aa8370f8fa17d7e79515c46d394b8df62572b0c7ddecdef76bb18e6dde"
+    },
+    {
+      "path": "game_factory/environment/rear_walls_20261111/batch_manifest.json",
+      "sha256": "1a3df2b9ee07acf0f8a1f686e0661e437429444925f30c9978b4110870d684cf"
+    },
+    {
+      "path": "game_factory/environment/rear_walls_20261111/generation_records.json",
+      "sha256": "6c597540a3d019037a9282f767d37846a1df341260639f3799832a0cd32cbe26"
+    },
+    {
+      "path": "game_factory/environment/rear_walls_20261111/prepare_review.py",
+      "sha256": "42312671dda128475e2928996bc53c49098c7369e52e9a9a13c900c1f4dfc9ec"
+    },
+    {
+      "path": "game_factory/environment/rear_walls_20261111/README.md",
+      "sha256": "f3f1cf0bf7404f0a6a4131238780da72aa5f6fe8158d8d4ebc905f20f9c21353"
+    },
+    {
+      "path": "game_factory/environment/rear_walls_20261111/review.gd",
+      "sha256": "e27edd546a419d8f53ada14f8610471dbfbe0f48a19446721efccce3a6977a93"
+    },
+    {
+      "path": "game_factory/environment/rear_walls_20261111/verify_delivery.py",
+      "sha256": "84e94ab38e7339a5de6615e2910283ee22228e37199e31118dc992a1af47e629"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0042/hero_rear_left_ruined_wall_window.png",
+      "sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0042/manifest.json",
+      "sha256": "93c6afa79f6486cfb95793f0e7f41332ac053feffc8e9ed69d905991841a85f3"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0043/hero_rear_right_wall_arched_door_niche.png",
+      "sha256": "e4c179693e6f56575cf0384b7e00aa00a7c8ea9905db34df323677e659a31735"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0043/manifest.json",
+      "sha256": "df01cfb9c937f7edacab9609ac42c7445bf5660e9836ad1993d233203e39878a"
+    }
+  ]
+}
