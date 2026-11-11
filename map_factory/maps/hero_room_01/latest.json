@@ -983,50 +983,30 @@
       "x": 768,
       "y": 88,
       "scale": 1.0
+    },
+    {
+      "id": "B12",
+      "instance_id": "SkyCloudA",
+      "x": 330.0,
+      "y": 62.0,
+      "scale": 1.0
+    },
+    {
+      "id": "B13",
+      "instance_id": "SkyCloudB",
+      "x": 900.0,
+      "y": 58.0,
+      "scale": 1.0
+    },
+    {
+      "id": "B14",
+      "instance_id": "SkyCloudC",
+      "x": 1290.0,
+      "y": 66.0,
+      "scale": 1.0
     }
   ],
   "ground_overlays": [
-    {
-      "id": "D01",
-      "instance_id": "BedRug",
-      "x": 450,
-      "y": 660,
-      "scale": 1.8,
-      "grid_placement": {
-        "cell": [
-          2,
-          2
-        ],
-        "facing": "north"
-      },
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.22,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "free_transform": true
-    },
-    {
-      "id": "D02",
-      "instance_id": "TableRug",
-      "x": 1122.0,
-      "y": 673,
-      "scale": 1.0,
-      "grid_placement": {
-        "cell": [
-          12,
-          3
-        ],
-        "facing": "north"
-      },
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.22,
-        "offset_x": 0,
-        "offset_y": 0
-      }
-    },
     {
       "id": "D20",
       "instance_id": "CompassInlay",
@@ -1034,6 +1014,20 @@
       "y": 724,
       "scale": 1.0,
       "render_layer": "ground"
+    },
+    {
+      "id": "D27",
+      "instance_id": "BedRugOblique",
+      "x": 450.0,
+      "y": 600.0,
+      "scale": 1.0
+    },
+    {
+      "id": "D28",
+      "instance_id": "TableRugOblique",
+      "x": 1122.0,
+      "y": 668.0,
+      "scale": 1.0
     }
   ],
   "back_objects": [
@@ -1821,34 +1815,6 @@
       }
     },
     {
-      "id": "F10_south",
-      "instance_id": "CrateF10",
-      "x": 1250.0,
-      "y": 737,
-      "scale": 1.0,
-      "grid_placement": {
-        "cell": [
-          15,
-          7
-        ],
-        "facing": "south"
-      },
-      "facing": "south",
-      "orientation_mode": "variants",
-      "direction_asset_ids": {
-        "north": "F10_north",
-        "east": "F10_east",
-        "south": "F10_south",
-        "west": "F10_west"
-      },
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.22,
-        "offset_x": 0,
-        "offset_y": 0
-      }
-    },
-    {
       "id": "F11_south",
       "instance_id": "CrateF11",
       "x": 322.0,
@@ -1868,34 +1834,6 @@
         "east": "F11_east",
         "south": "F11_south",
         "west": "F11_west"
-      },
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.22,
-        "offset_x": 0,
-        "offset_y": 0
-      }
-    },
-    {
-      "id": "F12_south",
-      "instance_id": "CrateF12",
-      "x": 482.0,
-      "y": 801,
-      "scale": 1.0,
-      "grid_placement": {
-        "cell": [
-          3,
-          7
-        ],
-        "facing": "south"
-      },
-      "facing": "south",
-      "orientation_mode": "variants",
-      "direction_asset_ids": {
-        "north": "F12_north",
-        "east": "F12_east",
-        "south": "F12_south",
-        "west": "F12_west"
       },
       "shadow": {
         "type": "contact_medium",
@@ -2317,6 +2255,20 @@
       "rotation_degrees": 14.0,
       "free_transform": true,
       "flip_h": true
+    },
+    {
+      "id": "F029",
+      "instance_id": "FrontLeftChest",
+      "x": 470.0,
+      "y": 760.0,
+      "scale": 1.0
+    },
+    {
+      "id": "F030",
+      "instance_id": "FrontRightChest",
+      "x": 1236.0,
+      "y": 742.0,
+      "scale": 1.0
     }
   ],
   "front_objects": [
@@ -2637,15 +2589,15 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 26,
-  "parent_version": 25,
-  "created_at": "2026-11-11T11:33:48+00:00",
+  "version": 27,
+  "parent_version": 26,
+  "created_at": "2026-11-11T13:48:52+00:00",
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "change_note": "hero_room_01 v0026: bed rug enlarged and re-centred under the bed with free_transform; two independent flower pieces placed off-grid at the arch bases, turned and resized. Visual approval is still pending.",
+  "change_note": "hero_room_01 v0027: oblique bedroom and study rugs (ART-0015), plain-oak chest views instead of the front crates (ART-0021) and three independent clouds (ART-0002). Visual approval is still pending.",
   "visual_qa": {
     "status": "needs_review",
     "notes": "Native render v0013 pending; compare against reference and v0012."
@@ -2882,7 +2834,7 @@
     "joint_opacity": 0.27,
     "joint_width": 1.15
   },
-  "parent_snapshot_sha256": "7a33dde43ed484332b86d4b8543219b5d1ee75239f81e478d1e989345ea58255",
+  "parent_snapshot_sha256": "e300756e7d7f8a7d2882aeedea20b07f4771003bbc84fbf3545e813868ea8c14",
   "camera": {
     "x": 768,
     "y": 512,
@@ -3132,7 +3084,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 26,
+    "version": 27,
     "processing_passes": [
       "background",
       "ground",
@@ -4369,6 +4321,132 @@
           "attachment": null
         },
         {
+          "instance_id": "SkyCloudA",
+          "asset_id": "B12",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            330.0,
+            62.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/B12_Cloud_01.png",
+          "pixel_size": [
+            192,
+            57
+          ],
+          "origin": [
+            96,
+            57
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "SkyCloudB",
+          "asset_id": "B13",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            900.0,
+            58.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/B13_Cloud_02.png",
+          "pixel_size": [
+            192,
+            62
+          ],
+          "origin": [
+            96,
+            62
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "SkyCloudC",
+          "asset_id": "B14",
+          "source_layer": "background_objects",
+          "render_layer": "background",
+          "position": [
+            1290.0,
+            66.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/environment/B14_Cloud_03.png",
+          "pixel_size": [
+            192,
+            44
+          ],
+          "origin": [
+            96,
+            44
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
           "instance_id": "TerraceCornerLeft",
           "asset_id": "E030",
           "source_layer": "front_objects",
@@ -4623,248 +4701,6 @@
       ],
       "ground": [
         {
-          "instance_id": "BedRug",
-          "asset_id": "D01",
-          "source_layer": "ground_overlays",
-          "render_layer": "ground",
-          "position": [
-            450.0,
-            660.0
-          ],
-          "scale": 1.8,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/decor/D01__decor__bed_rug__default__3x4__192x256.png",
-          "pixel_size": [
-            192,
-            256
-          ],
-          "origin": [
-            96,
-            256
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "contact_medium",
-            "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "attachment": null,
-          "grid_placement": {
-            "cell": [
-              2,
-              2
-            ],
-            "facing": "north"
-          },
-          "placement_contract": {
-            "schema_version": 1,
-            "mode": "floor",
-            "footprint_cells": [
-              3,
-              4
-            ],
-            "occupancy_group": "overlay",
-            "allowed_floor_tags": [
-              "stone"
-            ],
-            "forbidden_floor_tags": [],
-            "measurement_status": "provisional"
-          },
-          "occupied_floor_cells": [
-            [
-              2,
-              2
-            ],
-            [
-              3,
-              2
-            ],
-            [
-              4,
-              2
-            ],
-            [
-              2,
-              3
-            ],
-            [
-              3,
-              3
-            ],
-            [
-              4,
-              3
-            ],
-            [
-              2,
-              4
-            ],
-            [
-              3,
-              4
-            ],
-            [
-              4,
-              4
-            ],
-            [
-              2,
-              5
-            ],
-            [
-              3,
-              5
-            ],
-            [
-              4,
-              5
-            ]
-          ]
-        },
-        {
-          "instance_id": "TableRug",
-          "asset_id": "D02",
-          "source_layer": "ground_overlays",
-          "render_layer": "ground",
-          "position": [
-            1122.0,
-            673.0
-          ],
-          "scale": 1.0,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/decor/D02__decor__table_rug__default__4x4__256x256.png",
-          "pixel_size": [
-            256,
-            256
-          ],
-          "origin": [
-            128,
-            256
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": false,
-            "size": [
-              32,
-              16
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
-          "shadow": {
-            "type": "contact_medium",
-            "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "attachment": null,
-          "grid_placement": {
-            "cell": [
-              12,
-              3
-            ],
-            "facing": "north"
-          },
-          "placement_contract": {
-            "schema_version": 1,
-            "mode": "floor",
-            "footprint_cells": [
-              4,
-              4
-            ],
-            "occupancy_group": "overlay",
-            "allowed_floor_tags": [
-              "stone"
-            ],
-            "forbidden_floor_tags": [],
-            "measurement_status": "provisional"
-          },
-          "occupied_floor_cells": [
-            [
-              12,
-              3
-            ],
-            [
-              13,
-              3
-            ],
-            [
-              14,
-              3
-            ],
-            [
-              15,
-              3
-            ],
-            [
-              12,
-              4
-            ],
-            [
-              13,
-              4
-            ],
-            [
-              14,
-              4
-            ],
-            [
-              15,
-              4
-            ],
-            [
-              12,
-              5
-            ],
-            [
-              13,
-              5
-            ],
-            [
-              14,
-              5
-            ],
-            [
-              15,
-              5
-            ],
-            [
-              12,
-              6
-            ],
-            [
-              13,
-              6
-            ],
-            [
-              14,
-              6
-            ],
-            [
-              15,
-              6
-            ]
-          ]
-        },
-        {
           "instance_id": "CompassInlay",
           "asset_id": "D20",
           "source_layer": "ground_overlays",
@@ -4885,6 +4721,90 @@
           "origin": [
             126,
             179
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "BedRugOblique",
+          "asset_id": "D27",
+          "source_layer": "ground_overlays",
+          "render_layer": "ground",
+          "position": [
+            450.0,
+            600.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D27_Bedroom_Blue_Rug.png",
+          "pixel_size": [
+            304,
+            182
+          ],
+          "origin": [
+            152,
+            182
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": false,
+            "size": [
+              32,
+              16
+            ],
+            "offset": [
+              0,
+              0
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "TableRugOblique",
+          "asset_id": "D28",
+          "source_layer": "ground_overlays",
+          "render_layer": "ground",
+          "position": [
+            1122.0,
+            668.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/decor/D28_Study_Blue_Rug.png",
+          "pixel_size": [
+            311,
+            123
+          ],
+          "origin": [
+            155,
+            123
           ],
           "status": "ready",
           "collision": {
@@ -7730,91 +7650,6 @@
           ]
         },
         {
-          "instance_id": "CrateF10",
-          "asset_id": "F10_south",
-          "source_layer": "objects",
-          "render_layer": "decorations",
-          "position": [
-            1250.0,
-            737.0
-          ],
-          "scale": 1.0,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/furniture/F10__furniture__bench_vertical__south__2x1__128x64.png",
-          "pixel_size": [
-            128,
-            64
-          ],
-          "origin": [
-            64,
-            64
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": true,
-            "size": [
-              128,
-              64
-            ],
-            "offset": [
-              0,
-              -32
-            ]
-          },
-          "shadow": {
-            "type": "contact_medium",
-            "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "attachment": null,
-          "orientation": {
-            "facing": "south",
-            "orientation_mode": "variants",
-            "turn_quarters": 2,
-            "resolved_asset_id": "F10_south",
-            "direction_asset_ids": {
-              "north": "F10_north",
-              "east": "F10_east",
-              "south": "F10_south",
-              "west": "F10_west"
-            }
-          },
-          "grid_placement": {
-            "cell": [
-              15,
-              7
-            ],
-            "facing": "south"
-          },
-          "placement_contract": {
-            "schema_version": 1,
-            "mode": "floor",
-            "footprint_cells": [
-              2,
-              1
-            ],
-            "occupancy_group": "solid",
-            "allowed_floor_tags": [
-              "stone"
-            ],
-            "forbidden_floor_tags": [],
-            "measurement_status": "provisional"
-          },
-          "occupied_floor_cells": [
-            [
-              16,
-              7
-            ],
-            [
-              15,
-              7
-            ]
-          ]
-        },
-        {
           "instance_id": "CrateF11",
           "asset_id": "F11_south",
           "source_layer": "objects",
@@ -7891,99 +7726,6 @@
           "occupied_floor_cells": [
             [
               1,
-              7
-            ]
-          ]
-        },
-        {
-          "instance_id": "CrateF12",
-          "asset_id": "F12_south",
-          "source_layer": "objects",
-          "render_layer": "decorations",
-          "position": [
-            482.0,
-            801.0
-          ],
-          "scale": 1.0,
-          "rotation_degrees": 0.0,
-          "flip_h": false,
-          "z_index": 0,
-          "texture_path": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__south__2x2__128x128.png",
-          "pixel_size": [
-            128,
-            128
-          ],
-          "origin": [
-            64,
-            128
-          ],
-          "status": "ready",
-          "collision": {
-            "enabled": true,
-            "size": [
-              128,
-              128
-            ],
-            "offset": [
-              0,
-              -64
-            ]
-          },
-          "shadow": {
-            "type": "contact_medium",
-            "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "attachment": null,
-          "orientation": {
-            "facing": "south",
-            "orientation_mode": "variants",
-            "turn_quarters": 2,
-            "resolved_asset_id": "F12_south",
-            "direction_asset_ids": {
-              "north": "F12_north",
-              "east": "F12_east",
-              "south": "F12_south",
-              "west": "F12_west"
-            }
-          },
-          "grid_placement": {
-            "cell": [
-              3,
-              7
-            ],
-            "facing": "south"
-          },
-          "placement_contract": {
-            "schema_version": 1,
-            "mode": "floor",
-            "footprint_cells": [
-              2,
-              2
-            ],
-            "occupancy_group": "solid",
-            "allowed_floor_tags": [
-              "stone"
-            ],
-            "forbidden_floor_tags": [],
-            "measurement_status": "provisional"
-          },
-          "occupied_floor_cells": [
-            [
-              4,
-              8
-            ],
-            [
-              3,
-              8
-            ],
-            [
-              4,
-              7
-            ],
-            [
-              3,
               7
             ]
           ]
@@ -9919,6 +9661,90 @@
           "attachment": null
         },
         {
+          "instance_id": "FrontLeftChest",
+          "asset_id": "F029",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            470.0,
+            760.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/furniture/F029_Study_Chest_South.png",
+          "pixel_size": [
+            76,
+            45
+          ],
+          "origin": [
+            38,
+            45
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": true,
+            "size": [
+              60,
+              20
+            ],
+            "offset": [
+              0,
+              -10
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
+          "instance_id": "FrontRightChest",
+          "asset_id": "F030",
+          "source_layer": "objects",
+          "render_layer": "decorations",
+          "position": [
+            1236.0,
+            742.0
+          ],
+          "scale": 1.0,
+          "rotation_degrees": 0.0,
+          "flip_h": false,
+          "z_index": 0,
+          "texture_path": "res://map_factory/parts/furniture/F030_Study_Chest_West.png",
+          "pixel_size": [
+            76,
+            54
+          ],
+          "origin": [
+            38,
+            54
+          ],
+          "status": "ready",
+          "collision": {
+            "enabled": true,
+            "size": [
+              40,
+              30
+            ],
+            "offset": [
+              0,
+              -15
+            ]
+          },
+          "shadow": {
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
+          },
+          "attachment": null
+        },
+        {
           "instance_id": "LeftWallLantern0Glow",
           "asset_id": "L05",
           "source_layer": "front_objects",
@@ -10676,54 +10502,6 @@
         }
       ],
       "shadows": [
-        {
-          "instance_id": "BedRug__shadow",
-          "owner_instance_id": "BedRug",
-          "owner_asset_id": "D01",
-          "asset_id": "S002",
-          "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-          "position": [
-            450.0,
-            660.0
-          ],
-          "scale": 1.8,
-          "sprite_pixel_size": [
-            192,
-            256
-          ],
-          "settings": {
-            "type": "contact_medium",
-            "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "TableRug__shadow",
-          "owner_instance_id": "TableRug",
-          "owner_asset_id": "D02",
-          "asset_id": "S002",
-          "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-          "position": [
-            1122.0,
-            673.0
-          ],
-          "scale": 1.0,
-          "sprite_pixel_size": [
-            256,
-            256
-          ],
-          "settings": {
-            "type": "contact_medium",
-            "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
         {
           "instance_id": "RearArch__shadow",
           "owner_instance_id": "RearArch",
@@ -11949,30 +11727,6 @@
           "display_z": 20
         },
         {
-          "instance_id": "CrateF10__shadow",
-          "owner_instance_id": "CrateF10",
-          "owner_asset_id": "F10_south",
-          "asset_id": "S002",
-          "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-          "position": [
-            1250.0,
-            737.0
-          ],
-          "scale": 1.0,
-          "sprite_pixel_size": [
-            128,
-            64
-          ],
-          "settings": {
-            "type": "contact_medium",
-            "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
           "instance_id": "CrateF11__shadow",
           "owner_instance_id": "CrateF11",
           "owner_asset_id": "F11_south",
@@ -11986,30 +11740,6 @@
           "sprite_pixel_size": [
             64,
             64
-          ],
-          "settings": {
-            "type": "contact_medium",
-            "opacity": 0.22,
-            "offset_x": 0,
-            "offset_y": 0
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "CrateF12__shadow",
-          "owner_instance_id": "CrateF12",
-          "owner_asset_id": "F12_south",
-          "asset_id": "S002",
-          "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-          "position": [
-            482.0,
-            801.0
-          ],
-          "scale": 1.0,
-          "sprite_pixel_size": [
-            128,
-            128
           ],
           "settings": {
             "type": "contact_medium",
@@ -13664,11 +13394,11 @@
       }
     },
     "counts": {
-      "background": 35,
+      "background": 38,
       "ground": 3,
       "walls": 33,
       "decorations": 88,
-      "shadows": 88
+      "shadows": 84
     },
     "unique_asset_ids": [
       "A01",
@@ -13680,8 +13410,9 @@
       "B05",
       "B06",
       "B11",
-      "D01",
-      "D02",
+      "B12",
+      "B13",
+      "B14",
       "D04",
       "D05",
       "D20",
@@ -13690,6 +13421,8 @@
       "D23",
       "D24",
       "D26",
+      "D27",
+      "D28",
       "E025",
       "E026",
       "E027",
@@ -13707,12 +13440,12 @@
       "E039",
       "E040",
       "F01",
+      "F029",
+      "F030",
       "F05_south",
       "F06_north",
       "F09_south",
-      "F10_south",
       "F11_south",
-      "F12_south",
       "G01",
       "G02",
       "G03",
@@ -14392,20 +14125,20 @@
         "sha256": "168ff1910c9f1d73f1185423731237d8a3211d0ff414da47d908bb1e783bf9c4"
       }
     },
-    "D01": {
-      "id": "D01",
-      "name": "Bed Rug",
-      "category": "decor",
-      "subtype": "rug",
-      "texture_path": "res://assets_generated/decor/D01__decor__bed_rug__default__3x4__192x256.png",
+    "B12": {
+      "id": "B12",
+      "name": "Cloud 01",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B12_Cloud_01.png",
       "status": "ready",
       "pixel_size": [
         192,
-        256
+        57
       ],
       "origin": [
         96,
-        256
+        57
       ],
       "collision": {
         "enabled": false,
@@ -14418,75 +14151,47 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
-        "opacity": 0.0,
-        "offset_x": 0,
-        "offset_y": 0
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
       },
       "tags": [
-        "bed",
-        "decal",
-        "decor",
-        "rug"
+        "cloud",
+        "environment",
+        "sky"
       ],
       "reusable": true,
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "D01",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/decor/D01__decor__bed_rug__default__3x4__192x256.json",
-        "sha256": "25ae4f28afa7d69942a1a9756dd646f1ea5e1aea8be29362ecd1a1d7beaac500",
-        "anchor_declared": [
-          0,
-          256
-        ],
-        "anchor_registered": [
-          96,
-          256
-        ],
-        "identity": "D01"
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/drifting_clouds/v001/hero_cloud_01.png",
+        "master_sha256": "d6e7b63a8b39126ebaad8325c6cb6d2f47bbfbffee8c10f21388855cf3305248",
+        "request_id": "ART-0002"
       },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          3,
-          4
-        ],
-        "occupancy_group": "overlay",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
+      "qa_notes": "Codex image_gen master (ART-0002); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
       "qa_approval": {
         "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "25ae4f28afa7d69942a1a9756dd646f1ea5e1aea8be29362ecd1a1d7beaac500"
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
-    "D02": {
-      "id": "D02",
-      "name": "Table Rug",
-      "category": "decor",
-      "subtype": "rug",
-      "texture_path": "res://assets_generated/decor/D02__decor__table_rug__default__4x4__256x256.png",
+    "B13": {
+      "id": "B13",
+      "name": "Cloud 02",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B13_Cloud_02.png",
       "status": "ready",
       "pixel_size": [
-        256,
-        256
+        192,
+        62
       ],
       "origin": [
-        128,
-        256
+        96,
+        62
       ],
       "collision": {
         "enabled": false,
@@ -14499,59 +14204,84 @@
           0
         ]
       },
-      "y_sort": true,
+      "y_sort": false,
       "shadow": {
         "type": "none",
-        "opacity": 0.0,
-        "offset_x": 0,
-        "offset_y": 0
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
       },
       "tags": [
-        "decal",
-        "decor",
-        "rug",
-        "table"
+        "cloud",
+        "environment",
+        "sky"
       ],
       "reusable": true,
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "D02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/decor/D02__decor__table_rug__default__4x4__256x256.json",
-        "sha256": "4931a99f30ca5982dc38ec95c950cea36b2717a02d78c1f248edd08006b77cb6",
-        "anchor_declared": [
-          0,
-          256
-        ],
-        "anchor_registered": [
-          128,
-          256
-        ],
-        "identity": "D02"
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/drifting_clouds/v001/hero_cloud_02.png",
+        "master_sha256": "6872ac111c374e98ebcb280c7713288d3e1e4b01a3c1045e1b7492ea8327d497",
+        "request_id": "ART-0002"
       },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          4,
-          4
-        ],
-        "occupancy_group": "overlay",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
+      "qa_notes": "Codex image_gen master (ART-0002); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
       "qa_approval": {
         "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "4931a99f30ca5982dc38ec95c950cea36b2717a02d78c1f248edd08006b77cb6"
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "B14": {
+      "id": "B14",
+      "name": "Cloud 03",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B14_Cloud_03.png",
+      "status": "ready",
+      "pixel_size": [
+        192,
+        44
+      ],
+      "origin": [
+        96,
+        44
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cloud",
+        "environment",
+        "sky"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/drifting_clouds/v001/hero_cloud_03.png",
+        "master_sha256": "63d281c077808a3345340dafc1073bad60808c6d883ac01ab5d08a1858b13d00",
+        "request_id": "ART-0002"
+      },
+      "qa_notes": "Codex image_gen master (ART-0002); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
     "D04": {
@@ -15033,6 +14763,116 @@
         "approved_by": "owner",
         "date": "2026-11-11",
         "evidence": "Owner chat 2026-11-10: reviewed B3/ART-0023 native captures, then 'agree them all and use them' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "D27": {
+      "id": "D27",
+      "name": "Bedroom Blue Rug",
+      "category": "decor",
+      "subtype": "rug",
+      "texture_path": "res://map_factory/parts/decor/D27_Bedroom_Blue_Rug.png",
+      "status": "ready",
+      "pixel_size": [
+        304,
+        182
+      ],
+      "origin": [
+        152,
+        182
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "bed",
+        "decal",
+        "decor",
+        "oblique",
+        "rug"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/hero_room_rugs/v001/hero_bedroom_blue_rug.png",
+        "master_sha256": "922ab1d65c73a7974d6b77d4f21619fc83053013a094cdc288614f5c76849c9a",
+        "request_id": "ART-0015"
+      },
+      "qa_notes": "Codex image_gen master (ART-0015); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "D28": {
+      "id": "D28",
+      "name": "Study Blue Rug",
+      "category": "decor",
+      "subtype": "rug",
+      "texture_path": "res://map_factory/parts/decor/D28_Study_Blue_Rug.png",
+      "status": "ready",
+      "pixel_size": [
+        311,
+        123
+      ],
+      "origin": [
+        155,
+        123
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decal",
+        "decor",
+        "oblique",
+        "rug",
+        "table"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/hero_room_rugs/v001/hero_study_blue_rug.png",
+        "master_sha256": "69b47dfad679193f9018eee2187f3c497577fc2fd3a6371f6d8abe70e8d56a79",
+        "request_id": "ART-0015"
+      },
+      "qa_notes": "Codex image_gen master (ART-0015); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
         "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
@@ -16064,6 +15904,60 @@
         "sha256": "f54d10a3140f9c0a4bd11009c51822831d7fd9f1a9664f96b1e3bd7b3b5763c9"
       }
     },
+    "F029": {
+      "id": "F029",
+      "name": "Study Chest South",
+      "category": "furniture",
+      "subtype": "chest",
+      "texture_path": "res://map_factory/parts/furniture/F029_Study_Chest_South.png",
+      "status": "ready",
+      "pixel_size": [
+        76,
+        45
+      ],
+      "origin": [
+        38,
+        45
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          60,
+          20
+        ],
+        "offset": [
+          0,
+          -10
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "chest",
+        "furniture",
+        "south",
+        "wood"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_south.png",
+        "master_sha256": "b846edba4585f76fa5df8803fb077b9d506a9e731f2e95692f834da46e436d2d",
+        "request_id": "ART-0021"
+      },
+      "qa_notes": "Codex image_gen master (ART-0021); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
     "F03": {
       "id": "F03",
       "name": "Royal Wooden Bed, north",
@@ -16151,6 +16045,60 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "358fefd14e7f2f2ffa9b50393bf36238ce5a52e771a0eb4a6c9d44d54f449d33"
+      }
+    },
+    "F030": {
+      "id": "F030",
+      "name": "Study Chest West",
+      "category": "furniture",
+      "subtype": "chest",
+      "texture_path": "res://map_factory/parts/furniture/F030_Study_Chest_West.png",
+      "status": "ready",
+      "pixel_size": [
+        76,
+        54
+      ],
+      "origin": [
+        38,
+        54
+      ],
+      "collision": {
+        "enabled": true,
+        "size": [
+          40,
+          30
+        ],
+        "offset": [
+          0,
+          -15
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "chest",
+        "furniture",
+        "west",
+        "wood"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_chest_views/v001/hero_study_chest_west.png",
+        "master_sha256": "8fb9271ba9d6434ce663eb9b3eb2a77259f6f3068881e8944b63cc37c733a839",
+        "request_id": "ART-0021"
+      },
+      "qa_notes": "Codex image_gen master (ART-0021); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
     "F04": {
@@ -17302,358 +17250,6 @@
         "sha256": "4cbbd04b510b28b03acd2dd20f69945d66e51110cb6b65332fc96bb32d3e4e06"
       }
     },
-    "F10_east": {
-      "id": "F10_east",
-      "name": "Bench Vertical",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F10__furniture__bench_vertical__east__1x2__64x128.png",
-      "status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "origin": [
-        32,
-        128
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          64,
-          128
-        ],
-        "offset": [
-          0,
-          -64
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "chair",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "bench",
-        "furniture",
-        "interior",
-        "vertical"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F10",
-        "pack_orientation": "east",
-        "sidecar": "assets_generated/furniture/F10__furniture__bench_vertical__east__1x2__64x128.json",
-        "sha256": "33b7821f36fc661e908338996c20f82fb4aa4acbbdfa10506e276921ee01452e",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "F10"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F10_north",
-        "east": "F10_east",
-        "south": "F10_south",
-        "west": "F10_west"
-      },
-      "canonical_view": "east",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          1,
-          2
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "33b7821f36fc661e908338996c20f82fb4aa4acbbdfa10506e276921ee01452e"
-      }
-    },
-    "F10_north": {
-      "id": "F10_north",
-      "name": "Bench Vertical",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F10__furniture__bench_vertical__north__2x1__128x64.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        64
-      ],
-      "origin": [
-        64,
-        64
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          128,
-          64
-        ],
-        "offset": [
-          0,
-          -32
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "chair",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "bench",
-        "furniture",
-        "interior",
-        "vertical"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F10",
-        "pack_orientation": "north",
-        "sidecar": "assets_generated/furniture/F10__furniture__bench_vertical__north__2x1__128x64.json",
-        "sha256": "56262cac0b5e5e83f8a37ce8ffebdf884f4767e8d3b61041241721cf875b51b1",
-        "anchor_declared": [
-          0,
-          64
-        ],
-        "anchor_registered": [
-          64,
-          64
-        ],
-        "identity": "F10"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F10_north",
-        "east": "F10_east",
-        "south": "F10_south",
-        "west": "F10_west"
-      },
-      "canonical_view": "north",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          2,
-          1
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "56262cac0b5e5e83f8a37ce8ffebdf884f4767e8d3b61041241721cf875b51b1"
-      }
-    },
-    "F10_south": {
-      "id": "F10_south",
-      "name": "Bench Vertical",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F10__furniture__bench_vertical__south__2x1__128x64.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        64
-      ],
-      "origin": [
-        64,
-        64
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          128,
-          64
-        ],
-        "offset": [
-          0,
-          -32
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "chair",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "bench",
-        "furniture",
-        "interior",
-        "vertical"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F10",
-        "pack_orientation": "south",
-        "sidecar": "assets_generated/furniture/F10__furniture__bench_vertical__south__2x1__128x64.json",
-        "sha256": "c91f80150f860cb2bad6125e428a1d922bdb436951f5bdaef82b609bd41967f4",
-        "anchor_declared": [
-          0,
-          64
-        ],
-        "anchor_registered": [
-          64,
-          64
-        ],
-        "identity": "F10"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F10_north",
-        "east": "F10_east",
-        "south": "F10_south",
-        "west": "F10_west"
-      },
-      "canonical_view": "south",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          2,
-          1
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "c91f80150f860cb2bad6125e428a1d922bdb436951f5bdaef82b609bd41967f4"
-      }
-    },
-    "F10_west": {
-      "id": "F10_west",
-      "name": "Bench Vertical",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F10__furniture__bench_vertical__west__1x2__64x128.png",
-      "status": "ready",
-      "pixel_size": [
-        64,
-        128
-      ],
-      "origin": [
-        32,
-        128
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          64,
-          128
-        ],
-        "offset": [
-          0,
-          -64
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "chair",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "bench",
-        "furniture",
-        "interior",
-        "vertical"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F10",
-        "pack_orientation": "west",
-        "sidecar": "assets_generated/furniture/F10__furniture__bench_vertical__west__1x2__64x128.json",
-        "sha256": "1848d99d2376c55e0c5bef424646fa2b7c101d6fb87cac6afdf7bd6c4a5ee4aa",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "F10"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F10_north",
-        "east": "F10_east",
-        "south": "F10_south",
-        "west": "F10_west"
-      },
-      "canonical_view": "west",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          1,
-          2
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "1848d99d2376c55e0c5bef424646fa2b7c101d6fb87cac6afdf7bd6c4a5ee4aa"
-      }
-    },
     "F11_east": {
       "id": "F11_east",
       "name": "Small Wooden Crate",
@@ -18008,362 +17604,6 @@
         "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
         "record": "assets_generated/library_manifest.json",
         "sha256": "3533ae0da48a149877285ceac8eff6da8269fae90e31bf5708571874e3c5ff2e"
-      }
-    },
-    "F12_east": {
-      "id": "F12_east",
-      "name": "Medium Wooden Crate",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__east__2x2__128x128.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        128
-      ],
-      "origin": [
-        64,
-        128
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          128,
-          128
-        ],
-        "offset": [
-          0,
-          -64
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "crate",
-        "furniture",
-        "interior",
-        "medium",
-        "wooden"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F12",
-        "pack_orientation": "east",
-        "sidecar": "assets_generated/furniture/F12__furniture__medium_wooden_crate__east__2x2__128x128.json",
-        "sha256": "9e9f0a30ed1a562c4b2b3a3a05ac02376ff87e8982383e4e7f06d0986c5070e7",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "F12"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F12_north",
-        "east": "F12_east",
-        "south": "F12_south",
-        "west": "F12_west"
-      },
-      "canonical_view": "east",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          2,
-          2
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "9e9f0a30ed1a562c4b2b3a3a05ac02376ff87e8982383e4e7f06d0986c5070e7"
-      }
-    },
-    "F12_north": {
-      "id": "F12_north",
-      "name": "Medium Wooden Crate",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__north__2x2__128x128.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        128
-      ],
-      "origin": [
-        64,
-        128
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          128,
-          128
-        ],
-        "offset": [
-          0,
-          -64
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "crate",
-        "furniture",
-        "interior",
-        "medium",
-        "wooden"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F12",
-        "pack_orientation": "north",
-        "sidecar": "assets_generated/furniture/F12__furniture__medium_wooden_crate__north__2x2__128x128.json",
-        "sha256": "ef83f0fec380787e6630bac7fd0cffa55a2211745eebbc5b350a9b0b99841dfb",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "F12"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F12_north",
-        "east": "F12_east",
-        "south": "F12_south",
-        "west": "F12_west"
-      },
-      "canonical_view": "north",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          2,
-          2
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "ef83f0fec380787e6630bac7fd0cffa55a2211745eebbc5b350a9b0b99841dfb"
-      }
-    },
-    "F12_south": {
-      "id": "F12_south",
-      "name": "Medium Wooden Crate",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__south__2x2__128x128.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        128
-      ],
-      "origin": [
-        64,
-        128
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          128,
-          128
-        ],
-        "offset": [
-          0,
-          -64
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "crate",
-        "furniture",
-        "interior",
-        "medium",
-        "wooden"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F12",
-        "pack_orientation": "south",
-        "sidecar": "assets_generated/furniture/F12__furniture__medium_wooden_crate__south__2x2__128x128.json",
-        "sha256": "ccf7d89a4cf06e8355241a4ac4d628d989a14e3785855aaee5c050f5d1fbd691",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "F12"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F12_north",
-        "east": "F12_east",
-        "south": "F12_south",
-        "west": "F12_west"
-      },
-      "canonical_view": "south",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          2,
-          2
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "ccf7d89a4cf06e8355241a4ac4d628d989a14e3785855aaee5c050f5d1fbd691"
-      }
-    },
-    "F12_west": {
-      "id": "F12_west",
-      "name": "Medium Wooden Crate",
-      "category": "furniture",
-      "subtype": "furniture",
-      "texture_path": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__west__2x2__128x128.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        128
-      ],
-      "origin": [
-        64,
-        128
-      ],
-      "collision": {
-        "enabled": true,
-        "size": [
-          128,
-          128
-        ],
-        "offset": [
-          0,
-          -64
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "contact_medium",
-        "opacity": 0.28,
-        "offset_x": 0,
-        "offset_y": 0
-      },
-      "tags": [
-        "crate",
-        "furniture",
-        "interior",
-        "medium",
-        "wooden"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "F12",
-        "pack_orientation": "west",
-        "sidecar": "assets_generated/furniture/F12__furniture__medium_wooden_crate__west__2x2__128x128.json",
-        "sha256": "9054efcd3ad65bd812968fbe32793c6ff17b343fdb7ce893550770084900e018",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "F12"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "direction_asset_ids": {
-        "north": "F12_north",
-        "east": "F12_east",
-        "south": "F12_south",
-        "west": "F12_west"
-      },
-      "canonical_view": "west",
-      "placement_contract": {
-        "schema_version": 1,
-        "mode": "floor",
-        "footprint_cells": [
-          2,
-          2
-        ],
-        "occupancy_group": "solid",
-        "allowed_floor_tags": [
-          "stone"
-        ],
-        "forbidden_floor_tags": [],
-        "measurement_status": "provisional"
-      },
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "9054efcd3ad65bd812968fbe32793c6ff17b343fdb7ce893550770084900e018"
       }
     },
     "G01": {

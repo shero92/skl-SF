@@ -35,13 +35,20 @@ class FreeTransformTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             cli.validate_transform({"id": "F01", "scale": 9, "free_transform": True}, UPRIGHT, RULES, "Bed")
 
-    def test_latest_room_validates_and_keeps_grid_cell_of_a_resized_part(self):
+    def test_grid_part_may_be_resized_and_moved_only_with_free_transform(self):
+        import map_factory_placement as placement
         latest = json.loads((ROOT / "map_factory/maps/hero_room_01/latest.json").read_text(encoding="utf-8"))
-        rug = next(b for b in latest["ground_overlays"] if b["instance_id"] == "BedRug")
-        self.assertTrue(rug["free_transform"])
-        self.assertNotEqual(float(rug["scale"]), 1.0)
-        self.assertEqual(rug["grid_placement"]["cell"], [2, 2])  # walking grid untouched
-        cli.validate_room(latest, _catalog())
+        catalog = _catalog()
+        cli.validate_room(latest, catalog)
+        layer, part = next((l, b) for l in cli.LAYERS for b in latest.get(l, []) if b.get("grid_placement"))
+        cell = list(part["grid_placement"]["cell"])
+        part.update(scale=1.5, x=float(part["x"]) + 20)
+        with self.assertRaises(ValueError):
+            placement.validate_grid_placements(latest, catalog)
+        part["free_transform"] = True
+        resolved = placement.validate_grid_placements(latest, catalog)
+        self.assertIn(cell, resolved[part["instance_id"]]["cells"] + [cell])  # walking cells still resolved from the cell
+        self.assertEqual(part["grid_placement"]["cell"], cell)
 
 
 def _catalog():
@@ -54,12 +61,13 @@ class DesignApiTests(unittest.TestCase):
     def test_place_transform_remove_build_one_patch(self):
         d = Design("hero_room_01")
         d.place("P05", "TestFern", 600, 400, scale=0.7, rotation=20, flip=True)
-        d.transform("BedRug", scale=1.5).remove("CrateF12")
+        name = next(b["instance_id"] for b in d.latest["objects"])
+        d.transform(name, scale=1.5).remove(name)
         add, update, remove = d.changes
         self.assertEqual(add["block"]["rotation_degrees"], 20.0)
         self.assertTrue(add["block"]["free_transform"] and add["block"]["flip_h"])
         self.assertEqual(update["set"], {"scale": 1.5, "free_transform": True})
-        self.assertEqual(remove, {"op": "remove_block", "instance_id": "CrateF12"})
+        self.assertEqual(remove, {"op": "remove_block", "instance_id": name})
         with self.assertRaises(ValueError):
             d.transform("NoSuchBlock", x=1)
 

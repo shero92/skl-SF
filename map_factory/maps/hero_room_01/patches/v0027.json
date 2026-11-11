@@ -1,0 +1,107 @@
+{
+ "manifest_version": 1,
+ "map_id": "hero_room_01",
+ "base_version": 26,
+ "base_sha256": "e300756e7d7f8a7d2882aeedea20b07f4771003bbc84fbf3545e813868ea8c14",
+ "note": "hero_room_01 v0027: oblique bedroom and study rugs (ART-0015), plain-oak chest views instead of the front crates (ART-0021) and three independent clouds (ART-0002). Visual approval is still pending.",
+ "source_image": {
+  "path": "map_factory/references/hero_room_01_original.png",
+  "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+  "status": "reference_imported"
+ },
+ "changes": [
+  {
+   "op": "remove_block",
+   "instance_id": "BedRug"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "TableRug"
+  },
+  {
+   "op": "add_block",
+   "layer": "ground_overlays",
+   "block": {
+    "id": "D27",
+    "instance_id": "BedRugOblique",
+    "x": 450.0,
+    "y": 600.0,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "ground_overlays",
+   "block": {
+    "id": "D28",
+    "instance_id": "TableRugOblique",
+    "x": 1122.0,
+    "y": 668.0,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "CrateF12"
+  },
+  {
+   "op": "remove_block",
+   "instance_id": "CrateF10"
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "F029",
+    "instance_id": "FrontLeftChest",
+    "x": 470.0,
+    "y": 760.0,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "objects",
+   "block": {
+    "id": "F030",
+    "instance_id": "FrontRightChest",
+    "x": 1236.0,
+    "y": 742.0,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "B12",
+    "instance_id": "SkyCloudA",
+    "x": 330.0,
+    "y": 62.0,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "B13",
+    "instance_id": "SkyCloudB",
+    "x": 900.0,
+    "y": 58.0,
+    "scale": 1.0
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "B14",
+    "instance_id": "SkyCloudC",
+    "x": 1290.0,
+    "y": 66.0,
+    "scale": 1.0
+   }
+  }
+ ]
+}

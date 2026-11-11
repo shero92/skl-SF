@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 26,
+  "version": 27,
   "processing_passes": [
     "background",
     "ground",
@@ -1238,6 +1238,132 @@
         "attachment": null
       },
       {
+        "instance_id": "SkyCloudA",
+        "asset_id": "B12",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          330.0,
+          62.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/B12_Cloud_01.png",
+        "pixel_size": [
+          192,
+          57
+        ],
+        "origin": [
+          96,
+          57
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "SkyCloudB",
+        "asset_id": "B13",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          900.0,
+          58.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/B13_Cloud_02.png",
+        "pixel_size": [
+          192,
+          62
+        ],
+        "origin": [
+          96,
+          62
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "SkyCloudC",
+        "asset_id": "B14",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1290.0,
+          66.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/B14_Cloud_03.png",
+        "pixel_size": [
+          192,
+          44
+        ],
+        "origin": [
+          96,
+          44
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
         "instance_id": "TerraceCornerLeft",
         "asset_id": "E030",
         "source_layer": "front_objects",
@@ -1492,248 +1618,6 @@
     ],
     "ground": [
       {
-        "instance_id": "BedRug",
-        "asset_id": "D01",
-        "source_layer": "ground_overlays",
-        "render_layer": "ground",
-        "position": [
-          450.0,
-          660.0
-        ],
-        "scale": 1.8,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/decor/D01__decor__bed_rug__default__3x4__192x256.png",
-        "pixel_size": [
-          192,
-          256
-        ],
-        "origin": [
-          96,
-          256
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "contact_medium",
-          "opacity": 0.22,
-          "offset_x": 0,
-          "offset_y": 0
-        },
-        "attachment": null,
-        "grid_placement": {
-          "cell": [
-            2,
-            2
-          ],
-          "facing": "north"
-        },
-        "placement_contract": {
-          "schema_version": 1,
-          "mode": "floor",
-          "footprint_cells": [
-            3,
-            4
-          ],
-          "occupancy_group": "overlay",
-          "allowed_floor_tags": [
-            "stone"
-          ],
-          "forbidden_floor_tags": [],
-          "measurement_status": "provisional"
-        },
-        "occupied_floor_cells": [
-          [
-            2,
-            2
-          ],
-          [
-            3,
-            2
-          ],
-          [
-            4,
-            2
-          ],
-          [
-            2,
-            3
-          ],
-          [
-            3,
-            3
-          ],
-          [
-            4,
-            3
-          ],
-          [
-            2,
-            4
-          ],
-          [
-            3,
-            4
-          ],
-          [
-            4,
-            4
-          ],
-          [
-            2,
-            5
-          ],
-          [
-            3,
-            5
-          ],
-          [
-            4,
-            5
-          ]
-        ]
-      },
-      {
-        "instance_id": "TableRug",
-        "asset_id": "D02",
-        "source_layer": "ground_overlays",
-        "render_layer": "ground",
-        "position": [
-          1122.0,
-          673.0
-        ],
-        "scale": 1.0,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/decor/D02__decor__table_rug__default__4x4__256x256.png",
-        "pixel_size": [
-          256,
-          256
-        ],
-        "origin": [
-          128,
-          256
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": false,
-          "size": [
-            32,
-            16
-          ],
-          "offset": [
-            0,
-            0
-          ]
-        },
-        "shadow": {
-          "type": "contact_medium",
-          "opacity": 0.22,
-          "offset_x": 0,
-          "offset_y": 0
-        },
-        "attachment": null,
-        "grid_placement": {
-          "cell": [
-            12,
-            3
-          ],
-          "facing": "north"
-        },
-        "placement_contract": {
-          "schema_version": 1,
-          "mode": "floor",
-          "footprint_cells": [
-            4,
-            4
-          ],
-          "occupancy_group": "overlay",
-          "allowed_floor_tags": [
-            "stone"
-          ],
-          "forbidden_floor_tags": [],
-          "measurement_status": "provisional"
-        },
-        "occupied_floor_cells": [
-          [
-            12,
-            3
-          ],
-          [
-            13,
-            3
-          ],
-          [
-            14,
-            3
-          ],
-          [
-            15,
-            3
-          ],
-          [
-            12,
-            4
-          ],
-          [
-            13,
-            4
-          ],
-          [
-            14,
-            4
-          ],
-          [
-            15,
-            4
-          ],
-          [
-            12,
-            5
-          ],
-          [
-            13,
-            5
-          ],
-          [
-            14,
-            5
-          ],
-          [
-            15,
-            5
-          ],
-          [
-            12,
-            6
-          ],
-          [
-            13,
-            6
-          ],
-          [
-            14,
-            6
-          ],
-          [
-            15,
-            6
-          ]
-        ]
-      },
-      {
         "instance_id": "CompassInlay",
         "asset_id": "D20",
         "source_layer": "ground_overlays",
@@ -1754,6 +1638,90 @@
         "origin": [
           126,
           179
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "BedRugOblique",
+        "asset_id": "D27",
+        "source_layer": "ground_overlays",
+        "render_layer": "ground",
+        "position": [
+          450.0,
+          600.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/decor/D27_Bedroom_Blue_Rug.png",
+        "pixel_size": [
+          304,
+          182
+        ],
+        "origin": [
+          152,
+          182
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "TableRugOblique",
+        "asset_id": "D28",
+        "source_layer": "ground_overlays",
+        "render_layer": "ground",
+        "position": [
+          1122.0,
+          668.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/decor/D28_Study_Blue_Rug.png",
+        "pixel_size": [
+          311,
+          123
+        ],
+        "origin": [
+          155,
+          123
         ],
         "status": "ready",
         "collision": {
@@ -4599,91 +4567,6 @@
         ]
       },
       {
-        "instance_id": "CrateF10",
-        "asset_id": "F10_south",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          1250.0,
-          737.0
-        ],
-        "scale": 1.0,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/furniture/F10__furniture__bench_vertical__south__2x1__128x64.png",
-        "pixel_size": [
-          128,
-          64
-        ],
-        "origin": [
-          64,
-          64
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": true,
-          "size": [
-            128,
-            64
-          ],
-          "offset": [
-            0,
-            -32
-          ]
-        },
-        "shadow": {
-          "type": "contact_medium",
-          "opacity": 0.22,
-          "offset_x": 0,
-          "offset_y": 0
-        },
-        "attachment": null,
-        "orientation": {
-          "facing": "south",
-          "orientation_mode": "variants",
-          "turn_quarters": 2,
-          "resolved_asset_id": "F10_south",
-          "direction_asset_ids": {
-            "north": "F10_north",
-            "east": "F10_east",
-            "south": "F10_south",
-            "west": "F10_west"
-          }
-        },
-        "grid_placement": {
-          "cell": [
-            15,
-            7
-          ],
-          "facing": "south"
-        },
-        "placement_contract": {
-          "schema_version": 1,
-          "mode": "floor",
-          "footprint_cells": [
-            2,
-            1
-          ],
-          "occupancy_group": "solid",
-          "allowed_floor_tags": [
-            "stone"
-          ],
-          "forbidden_floor_tags": [],
-          "measurement_status": "provisional"
-        },
-        "occupied_floor_cells": [
-          [
-            16,
-            7
-          ],
-          [
-            15,
-            7
-          ]
-        ]
-      },
-      {
         "instance_id": "CrateF11",
         "asset_id": "F11_south",
         "source_layer": "objects",
@@ -4760,99 +4643,6 @@
         "occupied_floor_cells": [
           [
             1,
-            7
-          ]
-        ]
-      },
-      {
-        "instance_id": "CrateF12",
-        "asset_id": "F12_south",
-        "source_layer": "objects",
-        "render_layer": "decorations",
-        "position": [
-          482.0,
-          801.0
-        ],
-        "scale": 1.0,
-        "rotation_degrees": 0.0,
-        "flip_h": false,
-        "z_index": 0,
-        "texture_path": "res://assets_generated/furniture/F12__furniture__medium_wooden_crate__south__2x2__128x128.png",
-        "pixel_size": [
-          128,
-          128
-        ],
-        "origin": [
-          64,
-          128
-        ],
-        "status": "ready",
-        "collision": {
-          "enabled": true,
-          "size": [
-            128,
-            128
-          ],
-          "offset": [
-            0,
-            -64
-          ]
-        },
-        "shadow": {
-          "type": "contact_medium",
-          "opacity": 0.22,
-          "offset_x": 0,
-          "offset_y": 0
-        },
-        "attachment": null,
-        "orientation": {
-          "facing": "south",
-          "orientation_mode": "variants",
-          "turn_quarters": 2,
-          "resolved_asset_id": "F12_south",
-          "direction_asset_ids": {
-            "north": "F12_north",
-            "east": "F12_east",
-            "south": "F12_south",
-            "west": "F12_west"
-          }
-        },
-        "grid_placement": {
-          "cell": [
-            3,
-            7
-          ],
-          "facing": "south"
-        },
-        "placement_contract": {
-          "schema_version": 1,
-          "mode": "floor",
-          "footprint_cells": [
-            2,
-            2
-          ],
-          "occupancy_group": "solid",
-          "allowed_floor_tags": [
-            "stone"
-          ],
-          "forbidden_floor_tags": [],
-          "measurement_status": "provisional"
-        },
-        "occupied_floor_cells": [
-          [
-            4,
-            8
-          ],
-          [
-            3,
-            8
-          ],
-          [
-            4,
-            7
-          ],
-          [
-            3,
             7
           ]
         ]
@@ -6788,6 +6578,90 @@
         "attachment": null
       },
       {
+        "instance_id": "FrontLeftChest",
+        "asset_id": "F029",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          470.0,
+          760.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/furniture/F029_Study_Chest_South.png",
+        "pixel_size": [
+          76,
+          45
+        ],
+        "origin": [
+          38,
+          45
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": true,
+          "size": [
+            60,
+            20
+          ],
+          "offset": [
+            0,
+            -10
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "FrontRightChest",
+        "asset_id": "F030",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          1236.0,
+          742.0
+        ],
+        "scale": 1.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/furniture/F030_Study_Chest_West.png",
+        "pixel_size": [
+          76,
+          54
+        ],
+        "origin": [
+          38,
+          54
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": true,
+          "size": [
+            40,
+            30
+          ],
+          "offset": [
+            0,
+            -15
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
         "instance_id": "LeftWallLantern0Glow",
         "asset_id": "L05",
         "source_layer": "front_objects",
@@ -7545,54 +7419,6 @@
       }
     ],
     "shadows": [
-      {
-        "instance_id": "BedRug__shadow",
-        "owner_instance_id": "BedRug",
-        "owner_asset_id": "D01",
-        "asset_id": "S002",
-        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-        "position": [
-          450.0,
-          660.0
-        ],
-        "scale": 1.8,
-        "sprite_pixel_size": [
-          192,
-          256
-        ],
-        "settings": {
-          "type": "contact_medium",
-          "opacity": 0.22,
-          "offset_x": 0,
-          "offset_y": 0
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "TableRug__shadow",
-        "owner_instance_id": "TableRug",
-        "owner_asset_id": "D02",
-        "asset_id": "S002",
-        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-        "position": [
-          1122.0,
-          673.0
-        ],
-        "scale": 1.0,
-        "sprite_pixel_size": [
-          256,
-          256
-        ],
-        "settings": {
-          "type": "contact_medium",
-          "opacity": 0.22,
-          "offset_x": 0,
-          "offset_y": 0
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
       {
         "instance_id": "RearArch__shadow",
         "owner_instance_id": "RearArch",
@@ -8818,30 +8644,6 @@
         "display_z": 20
       },
       {
-        "instance_id": "CrateF10__shadow",
-        "owner_instance_id": "CrateF10",
-        "owner_asset_id": "F10_south",
-        "asset_id": "S002",
-        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-        "position": [
-          1250.0,
-          737.0
-        ],
-        "scale": 1.0,
-        "sprite_pixel_size": [
-          128,
-          64
-        ],
-        "settings": {
-          "type": "contact_medium",
-          "opacity": 0.22,
-          "offset_x": 0,
-          "offset_y": 0
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
         "instance_id": "CrateF11__shadow",
         "owner_instance_id": "CrateF11",
         "owner_asset_id": "F11_south",
@@ -8855,30 +8657,6 @@
         "sprite_pixel_size": [
           64,
           64
-        ],
-        "settings": {
-          "type": "contact_medium",
-          "opacity": 0.22,
-          "offset_x": 0,
-          "offset_y": 0
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "CrateF12__shadow",
-        "owner_instance_id": "CrateF12",
-        "owner_asset_id": "F12_south",
-        "asset_id": "S002",
-        "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
-        "position": [
-          482.0,
-          801.0
-        ],
-        "scale": 1.0,
-        "sprite_pixel_size": [
-          128,
-          128
         ],
         "settings": {
           "type": "contact_medium",
@@ -10533,11 +10311,11 @@
     }
   },
   "counts": {
-    "background": 35,
+    "background": 38,
     "ground": 3,
     "walls": 33,
     "decorations": 88,
-    "shadows": 88
+    "shadows": 84
   },
   "unique_asset_ids": [
     "A01",
@@ -10549,8 +10327,9 @@
     "B05",
     "B06",
     "B11",
-    "D01",
-    "D02",
+    "B12",
+    "B13",
+    "B14",
     "D04",
     "D05",
     "D20",
@@ -10559,6 +10338,8 @@
     "D23",
     "D24",
     "D26",
+    "D27",
+    "D28",
     "E025",
     "E026",
     "E027",
@@ -10576,12 +10357,12 @@
     "E039",
     "E040",
     "F01",
+    "F029",
+    "F030",
     "F05_south",
     "F06_north",
     "F09_south",
-    "F10_south",
     "F11_south",
-    "F12_south",
     "G01",
     "G02",
     "G03",
