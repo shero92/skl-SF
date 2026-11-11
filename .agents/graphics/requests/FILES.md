@@ -6,7 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`reference_crops/`](reference_crops/FILES.md)
 
 ## Files
 
@@ -47,6 +47,16 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0037_hero_room_sea_light_lattice.md`](ART-0037_hero_room_sea_light_lattice.md)
 - [`ART-0038_hero_room_window_wall_piece.md`](ART-0038_hero_room_window_wall_piece.md)
 - [`ART-0039_hero_room_wooden_stool.md`](ART-0039_hero_room_wooden_stool.md)
+- [`ART-0040_hero_room_wall_lantern_east.md`](ART-0040_hero_room_wall_lantern_east.md)
+- [`ART-0041_skirmish_field_tiles.md`](ART-0041_skirmish_field_tiles.md)
+- [`ART-0042_hero_room_rear_left_ruined_wall_window.md`](ART-0042_hero_room_rear_left_ruined_wall_window.md)
+- [`ART-0043_hero_room_rear_right_wall_arched_door_niche.md`](ART-0043_hero_room_rear_right_wall_arched_door_niche.md)
+- [`ART-0044_hero_room_west_curved_side_wall.md`](ART-0044_hero_room_west_curved_side_wall.md)
+- [`ART-0045_hero_room_east_curved_side_wall.md`](ART-0045_hero_room_east_curved_side_wall.md)
+- [`ART-0046_hero_room_front_curved_parapet_pair.md`](ART-0046_hero_room_front_curved_parapet_pair.md)
+- [`ART-0047_hero_room_round_cliff_base.md`](ART-0047_hero_room_round_cliff_base.md)
+- [`ART-0048_hero_room_double_bed_three_quarter.md`](ART-0048_hero_room_double_bed_three_quarter.md)
+- [`ART-0049_hero_room_sea_stack_islands.md`](ART-0049_hero_room_sea_stack_islands.md)
 - [`GOAL-0001_request_coverage.json`](GOAL-0001_request_coverage.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

@@ -20,6 +20,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`t0144_v0023/`](t0144_v0023/FILES.md)
 - [`t0145_v0024/`](t0145_v0024/FILES.md)
 - [`t0146_v0025/`](t0146_v0025/FILES.md)
+- [`t0148_v0026/`](t0148_v0026/FILES.md)
 - [`task0102_v17_review/`](task0102_v17_review/FILES.md)
 
 ## Files

@@ -44,3 +44,13 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0037](requests/ART-0037_hero_room_sea_light_lattice.md) | requested | graphics-specialist | TASK-0102 | none |
 | [ART-0038](requests/ART-0038_hero_room_window_wall_piece.md) | delivered | graphics-specialist | TASK-0102 | none |
 | [ART-0039](requests/ART-0039_hero_room_wooden_stool.md) | delivered | graphics-specialist | TASK-0102 | none |
+| [ART-0040](requests/ART-0040_hero_room_wall_lantern_east.md) | requested | graphics-specialist | TASK-0102 | L06 |
+| [ART-0041](requests/ART-0041_skirmish_field_tiles.md) | requested | graphics-specialist | TASK-0147 | none |
+| [ART-0042](requests/ART-0042_hero_room_rear_left_ruined_wall_window.md) | requested | graphics-specialist | TASK-0148 | W09 |
+| [ART-0043](requests/ART-0043_hero_room_rear_right_wall_arched_door_niche.md) | requested | graphics-specialist | TASK-0148 | A23 |
+| [ART-0044](requests/ART-0044_hero_room_west_curved_side_wall.md) | requested | graphics-specialist | TASK-0148 | W09 |
+| [ART-0045](requests/ART-0045_hero_room_east_curved_side_wall.md) | requested | graphics-specialist | TASK-0148 | W09 |
+| [ART-0046](requests/ART-0046_hero_room_front_curved_parapet_pair.md) | requested | graphics-specialist | TASK-0148 | W10 |
+| [ART-0047](requests/ART-0047_hero_room_round_cliff_base.md) | requested | graphics-specialist | TASK-0148 | B03 |
+| [ART-0048](requests/ART-0048_hero_room_double_bed_three_quarter.md) | requested | graphics-specialist | TASK-0148 | F01 |
+| [ART-0049](requests/ART-0049_hero_room_sea_stack_islands.md) | requested | graphics-specialist | TASK-0148 | none |

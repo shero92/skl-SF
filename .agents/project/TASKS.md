@@ -148,3 +148,5 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0144](../tasks/TASK-0144_room_v0023_b1_b2.md) | review | claude | TASK-0135 | none |
 | [TASK-0145](../tasks/TASK-0145_room_v0024_b3_art0023.md) | review | claude | TASK-0144 | none |
 | [TASK-0146](../tasks/TASK-0146_room_v0025_fences_colliders.md) | review | claude | TASK-0145 | none |
+| [TASK-0147](../tasks/TASK-0147_playable_skirmish.md) | review | claude | TASK-0121 | ART-0041 |
+| [TASK-0148](../tasks/TASK-0148_free_transform_and_reference_requests.md) | review | claude | TASK-0146 | ART-0042 |
