@@ -39,8 +39,10 @@ class Design:
         return None
 
     def place(self, part: str, name: str, x: float, y: float, *, scale: float = 1.0, rotation: float = 0.0,
-              flip: bool = False, layer: str = "objects", z: int = 0) -> "Design":
-        """Add an independent piece (plant, decor, prop) at any pixel position, angle and size."""
+              flip: bool = False, layer: str = "objects", z: int = 0, animation: dict | None = None) -> "Design":
+        """Add an independent piece (plant, decor, prop) at any pixel position, angle and size.
+
+        animation={"frames": [part ids], "fps": n} cycles frames (background_objects layer only)."""
         block = {"id": part, "instance_id": name, "x": float(x), "y": float(y), "scale": float(scale)}
         if rotation:
             block.update(rotation_degrees=float(rotation), free_transform=True)
@@ -48,6 +50,8 @@ class Design:
             block["flip_h"] = True
         if z:
             block["z_index"] = int(z)
+        if animation:
+            block["animation"] = dict(animation)
         self.changes.append({"op": "add_block", "layer": layer, "block": block})
         return self
 

@@ -2,7 +2,7 @@
   "source_art_catalog": "map_factory/metadata/source_art_index.json",
   "source_art_guide": "docs/SOURCE_ART_CATALOG.md",
   "version": 2,
-  "asset_count": 449,
+  "asset_count": 454,
   "extracted_count": 229,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
@@ -26703,6 +26703,276 @@
         "request_id": "ART-0002"
       },
       "qa_notes": "Codex image_gen master (ART-0002); runtime part is a trimmed BOX downscale. Footprint and collision are provisional and need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "L07",
+      "name": "Wall Lantern East",
+      "category": "lighting",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/lighting/L07_Wall_Lantern_East.png",
+      "status": "ready",
+      "pixel_size": [
+        29,
+        47
+      ],
+      "origin": [
+        14,
+        47
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "east",
+        "lantern",
+        "lighting",
+        "wall"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/lighting/east_wall_lantern/v001/hero_wall_lantern_east.png",
+        "master_sha256": "5607125059ca9c72d501f740bf28a87621305c4500a84cb703adab5102f7aef5",
+        "request_id": "ART-0040"
+      },
+      "qa_notes": "Codex image_gen master (ART-0040); runtime part is a trimmed BOX downscale. Wall mount offset needs scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "B15",
+      "name": "Cliff Foam 01",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B15_Cliff_Foam_01.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        48
+      ],
+      "origin": [
+        48,
+        48
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_01.png",
+        "master_sha256": "4c44b5b35087c10fe2b3ef75a0e18242b39e5306c4f3d74d97b0b2f8c6b0ffee",
+        "request_id": "ART-0003"
+      },
+      "qa_notes": "Codex image_gen master (ART-0003); runtime part is the delivery's fixed 96x48 native frame, unchanged, so the four phases stay registered. Map contact offset is provisional.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "B16",
+      "name": "Cliff Foam 02",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B16_Cliff_Foam_02.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        48
+      ],
+      "origin": [
+        48,
+        48
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_02.png",
+        "master_sha256": "8095222701032f32a7e239b450fd1d2df6a714af02665e557f506c110ca1766f",
+        "request_id": "ART-0003"
+      },
+      "qa_notes": "Codex image_gen master (ART-0003); runtime part is the delivery's fixed 96x48 native frame, unchanged, so the four phases stay registered. Map contact offset is provisional.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "B17",
+      "name": "Cliff Foam 03",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B17_Cliff_Foam_03.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        48
+      ],
+      "origin": [
+        48,
+        48
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_03.png",
+        "master_sha256": "7deaec5d213d88cedb904a9d9e8667a633a6e55fe7a0c4e7169a81f1cfdbb392",
+        "request_id": "ART-0003"
+      },
+      "qa_notes": "Codex image_gen master (ART-0003); runtime part is the delivery's fixed 96x48 native frame, unchanged, so the four phases stay registered. Map contact offset is provisional.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "B18",
+      "name": "Cliff Foam 04",
+      "category": "environment",
+      "subtype": "seascape",
+      "texture_path": "res://map_factory/parts/environment/B18_Cliff_Foam_04.png",
+      "status": "ready",
+      "pixel_size": [
+        96,
+        48
+      ],
+      "origin": [
+        48,
+        48
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "cliff",
+        "environment",
+        "foam",
+        "water"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_04.png",
+        "master_sha256": "32c11a3e11bc31908fb697fc1db609b992a5466f6339673999c2166d2ac2583c",
+        "request_id": "ART-0003"
+      },
+      "qa_notes": "Codex image_gen master (ART-0003); runtime part is the delivery's fixed 96x48 native frame, unchanged, so the four phases stay registered. Map contact offset is provisional.",
       "qa_approval": {
         "approved_by": "owner",
         "date": "2026-11-11",

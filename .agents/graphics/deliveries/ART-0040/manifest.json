@@ -1,0 +1,50 @@
+{
+  "request_id": "ART-0040",
+  "task_id": "TASK-0163",
+  "agent": "codex (master); claude (delivery packaging only)",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "note": "Master drawn by Codex and found uncommitted in the main checkout on 2026-11-11 (preserved in branch backup/local-changes-20261111c). Packaged unchanged by Claude while Codex was paused.",
+  "items": [
+    {
+      "id": "hero_wall_lantern_east",
+      "request_id": "ART-0040",
+      "master_path": "assets_hd/lighting/east_wall_lantern/v001/hero_wall_lantern_east.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0040/hero_wall_lantern_east.png",
+      "sha256": "5607125059ca9c72d501f740bf28a87621305c4500a84cb703adab5102f7aef5",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bounds_alpha_128": [
+        123,
+        94,
+        920,
+        1374
+      ],
+      "facing": "east",
+      "rod_projection": "bracket_on_left_arm_extends_right",
+      "native_canvas": [
+        29,
+        53
+      ],
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "quality_status": "needs_map_calibration",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111"
+    }
+  ],
+  "rejected_attempts": [
+    "assets_hd/lighting/east_wall_lantern/v001/rejected/hero_wall_lantern_east_attempt_01.png"
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0040/hero_wall_lantern_east.png",
+      "sha256": "5607125059ca9c72d501f740bf28a87621305c4500a84cb703adab5102f7aef5"
+    }
+  ]
+}
