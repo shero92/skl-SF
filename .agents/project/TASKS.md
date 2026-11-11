@@ -166,3 +166,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0162](../tasks/TASK-0162_codex_own_worktree.md) | todo | codex | none | none |
 | [TASK-0163](../tasks/TASK-0163_room_v0028_foam_east_lantern.md) | review | claude | TASK-0149 | ART-0040 |
 | [TASK-0164](../tasks/TASK-0164_room_full_view.md) | review | claude | TASK-0163 | none |
+| [TASK-0165](../tasks/TASK-0165_hands_on_room_editor.md) | review | claude | TASK-0164 | none |

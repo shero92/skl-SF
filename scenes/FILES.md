@@ -27,6 +27,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`main.gd`](main.gd)
 - [`main.gd.uid`](main.gd.uid)
 - [`main.tscn`](main.tscn)
+- [`map_factory_editor.gd`](map_factory_editor.gd)
+- [`map_factory_editor.tscn`](map_factory_editor.tscn)
 - [`map_factory_preview.gd`](map_factory_preview.gd)
 - [`map_factory_preview.gd.uid`](map_factory_preview.gd.uid)
 - [`map_factory_preview.tscn`](map_factory_preview.tscn)
