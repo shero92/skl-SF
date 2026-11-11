@@ -946,31 +946,36 @@ func toggle_snap() -> void:
 	_say("Grid snap " + ("on" if snap_to_grid else "off"))
 
 
+## A left-button press at a world point. Ctrl grabs the piece under the mouse even while a part is armed.
+func press(point: Vector2, ctrl: bool = false, shift: bool = false) -> void:
+	if battle_tool != "":
+		battle_click(cell_at(point))
+	elif ctrl and placing_part != "" and not erasing_floor and select_at(point) != "":
+		# Ctrl while a part is armed: grab the piece under the mouse instead of placing another.
+		_dragging = true
+		_drag_moved = false
+		_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+	elif erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
+		_stroke_open = true
+		_ground_stroke(point, true)
+	elif placing_part != "":
+		var placed := place(placing_part, point)
+		if placed != "" and not shift:
+			placing_part = ""  # one piece per pick; it stays selected so it can be dragged at once
+			selected = placed
+			_refresh()
+	elif select_at(point) != "":
+		_dragging = true
+		_drag_moved = false
+		_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	var point := get_global_mouse_position()
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
-				if battle_tool != "":
-					battle_click(cell_at(point))
-				elif event.ctrl_pressed and placing_part != "" and not erasing_floor and select_at(point) != "":
-					# Ctrl while a part is armed: grab the piece under the mouse instead of placing another.
-					_dragging = true
-					_drag_moved = false
-					_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
-				elif erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
-					_stroke_open = true
-					_ground_stroke(point, true)
-				elif placing_part != "":
-					var placed := place(placing_part, point)
-					if placed != "" and not event.shift_pressed:
-						placing_part = ""  # one piece per pick; it stays selected so it can be dragged at once
-						selected = placed
-						_refresh()
-				elif select_at(point) != "":
-					_dragging = true
-					_drag_moved = false
-					_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+				press(point, event.ctrl_pressed, event.shift_pressed)
 			else:
 				_dragging = false
 				_stroke_open = false
