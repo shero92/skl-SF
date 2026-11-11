@@ -8,7 +8,7 @@ branch: codex/task-0102-room-review
 depends_on: TASK-0101
 issue: none
 art_request: none
-touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review,.agents/graphics/requests/ART-0033_hero_room_terrace_cliff_edge.md,.agents/graphics/deliveries/ART-0033,assets_hd/background/terrace_cliff/v001,game_factory/environment/ART-0033/v001,.agents/graphics/requests/ART-0032_hero_room_connected_ruin_walls.md,.agents/graphics/deliveries/ART-0032,assets_hd/architecture/connected_ruin_walls/v001,game_factory/environment/ART-0032/v001,.agents/graphics/requests/ART-0034_hero_room_sea_stacks_and_arches.md,.agents/graphics/requests/ART-0035_hero_room_planters_flowers_palms.md,.agents/graphics/deliveries/ART-0034,.agents/graphics/deliveries/ART-0035,assets_hd/background/sea_coast/v001,assets_hd/plants/coastal_garden/v001,game_factory/environment/ART-0034/v001,game_factory/environment/ART-0035/v001
+touches: .agents/tasks/TASK-0102_owner_room_visual_review_and_release.md,docs/previews/map_factory_renders/task0102_v17_review,.agents/graphics/requests/ART-0033_hero_room_terrace_cliff_edge.md,.agents/graphics/deliveries/ART-0033,assets_hd/background/terrace_cliff/v001,game_factory/environment/ART-0033/v001,.agents/graphics/requests/ART-0032_hero_room_connected_ruin_walls.md,.agents/graphics/deliveries/ART-0032,assets_hd/architecture/connected_ruin_walls/v001,game_factory/environment/ART-0032/v001,.agents/graphics/requests/ART-0034_hero_room_sea_stacks_and_arches.md,.agents/graphics/requests/ART-0035_hero_room_planters_flowers_palms.md,.agents/graphics/deliveries/ART-0034,.agents/graphics/deliveries/ART-0035,assets_hd/background/sea_coast/v001,assets_hd/plants/coastal_garden/v001,game_factory/environment/ART-0034/v001,game_factory/environment/ART-0035/v001,.agents/graphics/requests/ART-0023_hero_room_side_wall_fixture_views.md,.agents/graphics/deliveries/ART-0023,assets_hd/decor/side_banners/v001,assets_hd/lighting/west_wall_lantern/v001,game_factory/environment/ART-0023/v001
 test: python tools/run_tests.py --all
 done_when: Claude merges tested Aider results, publishes a new immutable version after v0013, performs a real Godot capture and side-by-side reference review, reports exact remaining visual gaps, and only marks the room visually approved with explicit owner approval.
 estimate_minutes: 120
@@ -70,3 +70,11 @@ Agent: codex. Branch: codex/art-0034-0035-coast-plants. ثمانية عناصر 
 تسليم ART-0034/0035: 17 مصدرًا مستقلًا و17 مشتق مراجعة، ولوحتا Godot فعليتان. الصخرة B الأولى محفوظة كمحاولة مرفوضة. لا تعديل للخريطة أو تفعيل تلقائي. التالي مراجعة الصور ثم معايرة الخلفية والنباتات داخل مشهد منفصل.
 
 فحوص التسليم الجديد: 74/74 مجموعة مشروع نجحت؛ تحقق 17/17 مصدرًا فريدًا و17/17 مشتقًا ولقطتي Godot. نسخ المصدر والبيانات والطلبات محفوظة في جذر المشروع ببصمات مطابقة. موافقة المالك السابقة سُجلت ودمجت لـART-0032/0033؛ ART-0034/0035 الجديدة تبقى needs_review.
+
+## ART-0023 بعد اعتماد ART-0034/0035
+
+Agent: codex. Branch: codex/art-0023-side-fixtures. سُجل اعتماد العناصر البحرية والنباتات ودُمج #136. الطلب التالي أربعة اتجاهات مستقلة للرايات والفانوس؛ لا تكرار للبوصلة الموجودة ولا إعادة رسم لأصول معتمدة.
+
+تسليم ART-0023: أربعة مصادر مستقلة ومشتقات مراجعة، مع قياسات نقاط التعليق ولقطة Godot 1x/2x. محاولتان مرفوضتان محفوظتان. بقيت معايرة المقاس والجدار واعتماد الصور الجديدة منفصلين؛ لا تغيير لخرائط الإصدارات الأحدث التي أضيفت أثناء توقف الجلسة.
+
+- ART-0023 verification: `python -u tools/run_tests.py --changed --base origin/main --timeout 120`: **80/80 passed**, exit 0. Source and Godot receipt hashes verified; scene calibration remains pending.

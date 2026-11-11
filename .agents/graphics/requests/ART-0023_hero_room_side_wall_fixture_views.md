@@ -1,7 +1,7 @@
 ---
 id: ART-0023
-status: requested
-owner: graphics-specialist
+status: delivered
+owner: codex
 task: TASK-0038
 dedupe_key: hero_room_side_wall_fixture_views
 existing_asset_ids: D001,D004,D009,W015
@@ -21,11 +21,17 @@ output_paths: .agents/graphics/deliveries/ART-0023/hero_side_banner_east_facing_
 - [x] Specifications reviewed by owner; mark `requested` (owner decision 2026-10-27, TASK-0054; D1 still open, 64x64 grid kept).
 
 ## Graphics specialist checklist
-- [ ] All required clean PNGs produced.
-- [ ] SHA-256 manifest written (pixel_size, origin, facing, footprint/mount/collision); mark `delivered`.
+- [x] All required clean PNGs produced.
+- [x] SHA-256 manifest written with source mounts and explicit pending scene calibration.
 
 ## QA checklist
 - [ ] Independent visual review against the source at Godot native scale; mark `reviewed`.
 
 ## Integration checklist
 - [ ] Registered assets and map tested; PR merged; mark `integrated`.
+
+## متابعة المالك 2026-11-10
+
+طلب المالك اعتماد تسليم ART-0034/0035 ثم مواصلة الطلبات الرسومية المتبقية. ينفذ Codex ART-0023 كمتابعة TASK-0102، مع بقاء TASK-0038 مرجع القياس التاريخي. الفرع codex/art-0023-side-fixtures؛ مصدر مستقل لكل اتجاه دون mirroring، وقياسات المعاينة من الطلب تبقى مقترحة قبل التركيب.
+
+تسليم 4 masters مستقلة و4 مشتقات مراجعة، مع حفظ محاولتين مرفوضتين، ولقطة Godot فعلية 1x/2x وقياسات التعليق. دليل الاستخدام game_factory/environment/ART-0023/v001/README.md. لا تعديل للخريطة أو تفعيل إنتاجي؛ المقاسات المقترحة لا تثبت جاهزية التركيب.
