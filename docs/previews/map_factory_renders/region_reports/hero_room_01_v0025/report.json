@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "map_id": "hero_room_01",
+  "version": 25,
+  "visual_approval": false,
+  "note": "difference: 0 = same, 100 = opposite; a progress hint only, never a visual approval",
+  "overall_difference": 25.36,
+  "regions": [
+    {
+      "id": "rear_left_wall",
+      "label": "Rear-left wall with window",
+      "box": [
+        150,
+        130,
+        620,
+        330
+      ],
+      "difference": 26.12,
+      "art_request": "ART-0042",
+      "change": 0.0
+    },
+    {
+      "id": "arch",
+      "label": "Rear arch and columns",
+      "box": [
+        560,
+        20,
+        960,
+        330
+      ],
+      "difference": 27.9,
+      "change": 0.0
+    },
+    {
+      "id": "rear_right_wall",
+      "label": "Rear-right wall with door niche",
+      "box": [
+        1030,
+        90,
+        1340,
+        340
+      ],
+      "difference": 27.42,
+      "art_request": "ART-0043",
+      "change": 0.0
+    },
+    {
+      "id": "west_wall",
+      "label": "West curved side wall",
+      "box": [
+        20,
+        330,
+        250,
+        800
+      ],
+      "difference": 27.61,
+      "art_request": "ART-0044",
+      "change": 0.0
+    },
+    {
+      "id": "east_wall",
+      "label": "East curved side wall",
+      "box": [
+        1300,
+        230,
+        1536,
+        770
+      ],
+      "difference": 26.7,
+      "art_request": "ART-0045",
+      "change": 0.0
+    },
+    {
+      "id": "bed_area",
+      "label": "Bed, rug and bedside chests",
+      "box": [
+        210,
+        320,
+        570,
+        640
+      ],
+      "difference": 32.91,
+      "art_request": "ART-0048",
+      "change": -0.08
+    },
+    {
+      "id": "floor_centre",
+      "label": "Floor centre and compass inlay",
+      "box": [
+        560,
+        330,
+        1000,
+        760
+      ],
+      "difference": 17.32,
+      "change": 0.0
+    },
+    {
+      "id": "study_area",
+      "label": "Table, rug, shelf and planter",
+      "box": [
+        1000,
+        320,
+        1360,
+        680
+      ],
+      "difference": 27.69,
+      "change": 0.05
+    },
+    {
+      "id": "front_left",
+      "label": "Front parapet, left of the stairs",
+      "box": [
+        130,
+        690,
+        700,
+        900
+      ],
+      "difference": 25.41,
+      "art_request": "ART-0046",
+      "change": -0.21
+    },
+    {
+      "id": "front_right",
+      "label": "Front parapet, right of the stairs",
+      "box": [
+        840,
+        690,
+        1420,
+        900
+      ],
+      "difference": 24.38,
+      "art_request": "ART-0046",
+      "change": 0.03
+    },
+    {
+      "id": "stairs",
+      "label": "Entrance stairs and posts",
+      "box": [
+        590,
+        690,
+        950,
+        1024
+      ],
+      "difference": 20.21,
+      "change": 0.0
+    },
+    {
+      "id": "cliff_base",
+      "label": "Cliff base",
+      "box": [
+        20,
+        770,
+        1520,
+        1024
+      ],
+      "difference": 26.44,
+      "art_request": "ART-0047",
+      "change": 0.0
+    },
+    {
+      "id": "horizon_left",
+      "label": "Horizon, left islands",
+      "box": [
+        0,
+        20,
+        300,
+        180
+      ],
+      "difference": 22.31,
+      "art_request": "ART-0049",
+      "change": 0.0
+    },
+    {
+      "id": "horizon_right",
+      "label": "Horizon, right islands",
+      "box": [
+        1010,
+        20,
+        1536,
+        210
+      ],
+      "difference": 23.95,
+      "art_request": "ART-0049",
+      "change": 0.0
+    }
+  ],
+  "previous_version": 24,
+  "overall_change": -0.01,
+  "target": "map_factory/references/hero_room_01_target_20261103.png",
+  "capture": "docs/previews/map_factory_renders/t0146_v0025/hero_room_01_v0025.png"
+}
