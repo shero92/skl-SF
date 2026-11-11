@@ -63,5 +63,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`D25_Side_Banner_East_Facing_Short.png.import`](D25_Side_Banner_East_Facing_Short.png.import)
 - [`D26_Side_Banner_West_Facing_Long.png`](D26_Side_Banner_West_Facing_Long.png)
 - [`D26_Side_Banner_West_Facing_Long.png.import`](D26_Side_Banner_West_Facing_Long.png.import)
+- [`D27_Bedroom_Blue_Rug.png`](D27_Bedroom_Blue_Rug.png)
+- [`D27_Bedroom_Blue_Rug.png.import`](D27_Bedroom_Blue_Rug.png.import)
+- [`D28_Study_Blue_Rug.png`](D28_Study_Blue_Rug.png)
+- [`D28_Study_Blue_Rug.png.import`](D28_Study_Blue_Rug.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

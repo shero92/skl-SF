@@ -11,6 +11,12 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`.gitkeep`](.gitkeep)
+- [`B12_Cloud_01.png`](B12_Cloud_01.png)
+- [`B12_Cloud_01.png.import`](B12_Cloud_01.png.import)
+- [`B13_Cloud_02.png`](B13_Cloud_02.png)
+- [`B13_Cloud_02.png.import`](B13_Cloud_02.png.import)
+- [`B14_Cloud_03.png`](B14_Cloud_03.png)
+- [`B14_Cloud_03.png.import`](B14_Cloud_03.png.import)
 - [`E001_Cliff_Edge_Straight.png`](E001_Cliff_Edge_Straight.png)
 - [`E001_Cliff_Edge_Straight.png.import`](E001_Cliff_Edge_Straight.png.import)
 - [`E002_Cliff_Edge_Corner_Left.png`](E002_Cliff_Edge_Corner_Left.png)

@@ -11,6 +11,14 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`.gitkeep`](.gitkeep)
+- [`F027_Study_Chest_North.png`](F027_Study_Chest_North.png)
+- [`F027_Study_Chest_North.png.import`](F027_Study_Chest_North.png.import)
+- [`F028_Study_Chest_East.png`](F028_Study_Chest_East.png)
+- [`F028_Study_Chest_East.png.import`](F028_Study_Chest_East.png.import)
+- [`F029_Study_Chest_South.png`](F029_Study_Chest_South.png)
+- [`F029_Study_Chest_South.png.import`](F029_Study_Chest_South.png.import)
+- [`F030_Study_Chest_West.png`](F030_Study_Chest_West.png)
+- [`F030_Study_Chest_West.png.import`](F030_Study_Chest_West.png.import)
 - [`P001_Hero_Bed.png`](P001_Hero_Bed.png)
 - [`P001_Hero_Bed.png.import`](P001_Hero_Bed.png.import)
 - [`P002_Bed_Blanket_Blue.png`](P002_Bed_Blanket_Blue.png)

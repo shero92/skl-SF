@@ -150,7 +150,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0146](../tasks/TASK-0146_room_v0025_fences_colliders.md) | review | claude | TASK-0145 | none |
 | [TASK-0147](../tasks/TASK-0147_playable_skirmish.md) | review | claude | TASK-0121 | ART-0041 |
 | [TASK-0148](../tasks/TASK-0148_free_transform_and_reference_requests.md) | review | claude | TASK-0146 | ART-0042 |
-| [TASK-0149](../tasks/TASK-0149_room_v0027_chest_rugs_clouds.md) | todo | claude | TASK-0148 | ART-0015 |
+| [TASK-0149](../tasks/TASK-0149_room_v0027_chest_rugs_clouds.md) | review | claude | TASK-0148 | ART-0015 |
 | [TASK-0150](../tasks/TASK-0150_room_curved_perimeter.md) | blocked_on_art | claude | TASK-0156 | ART-0044 |
 | [TASK-0151](../tasks/TASK-0151_room_round_walk_area.md) | blocked_on_art | claude | TASK-0150 | ART-0046 |
 | [TASK-0152](../tasks/TASK-0152_room_double_bed_sea_stacks.md) | blocked_on_art | claude | TASK-0159 | ART-0048 |
