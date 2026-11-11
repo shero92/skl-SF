@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`compass_inlay/`](compass_inlay/FILES.md)
+- [`hero_room_rugs/`](hero_room_rugs/FILES.md)
 - [`rope_post_fence/`](rope_post_fence/FILES.md)
 - [`side_banners/`](side_banners/FILES.md)
 

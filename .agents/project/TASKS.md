@@ -19,7 +19,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0010](../tasks/TASK-0010_planner_milestone_pulse.md) | done | codex | none | none |
 | [TASK-0011](../tasks/TASK-0011_create_art_requests_for_all_missing_hero_room_bloc.md) | done | codex | TASK-0008 | none |
 | [TASK-0012](../tasks/TASK-0012_planner_generated_checks.md) | done | codex | TASK-0010 | none |
-| [TASK-0013](../tasks/TASK-0013_hero_room_cloud_drift.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0002 |
+| [TASK-0013](../tasks/TASK-0013_hero_room_cloud_drift.md) | review | codex | TASK-0011 | ART-0002 |
 | [TASK-0014](../tasks/TASK-0014_hero_room_cliff_foam_loop.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0003 |
 | [TASK-0015](../tasks/TASK-0015_hero_room_side_wall_views.md) | done | claude | TASK-0011 | ART-0004 |
 | [TASK-0016](../tasks/TASK-0016_hero_room_compass_wood_door.md) | review | codex | TASK-0011 | ART-0005 |
@@ -32,7 +32,7 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0023](../tasks/TASK-0023_hero_room_cliff_palms.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0012 |
 | [TASK-0024](../tasks/TASK-0024_hero_room_arch_light_shafts.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0013 |
 | [TASK-0025](../tasks/TASK-0025_hero_room_broken_floor_edge.md) | done | claude | TASK-0011 | ART-0014 |
-| [TASK-0026](../tasks/TASK-0026_hero_room_study_blue_rug.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0015 |
+| [TASK-0026](../tasks/TASK-0026_hero_room_study_blue_rug.md) | review | codex | TASK-0011 | ART-0015 |
 | [TASK-0027](../tasks/TASK-0027_hero_room_arch_ground_shadow.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0016 |
 | [TASK-0028](../tasks/TASK-0028_hero_room_door_ground_shadow.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0017 |
 | [TASK-0029](../tasks/TASK-0029_hero_room_wide_stair_shadow.md) | blocked_on_art | graphics-specialist | TASK-0011 | ART-0018 |

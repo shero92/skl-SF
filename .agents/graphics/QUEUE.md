@@ -8,7 +8,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | Request | State | Specialist | Related task | Existing IDs |
 | --- | --- | --- | --- | --- |
 | [ART-0001](requests/ART-0001_four_view_hero_bed.md) | blocked_reference | graphics-specialist | TASK-0002 | P001 |
-| [ART-0002](requests/ART-0002_hero_room_cloud_drift.md) | blocked_reference | graphics-specialist | TASK-0013 | E018 |
+| [ART-0002](requests/ART-0002_hero_room_cloud_drift.md) | delivered | graphics-specialist | TASK-0013 | E018 |
 | [ART-0003](requests/ART-0003_hero_room_cliff_foam_loop.md) | blocked_reference | graphics-specialist | TASK-0014 | E009,E011,E012,E013,E014 |
 | [ART-0004](requests/ART-0004_hero_room_side_wall_views.md) | integrated | graphics-specialist | TASK-0015 | W001,W006,W007,W008,W009,W019,W020 |
 | [ART-0005](requests/ART-0005_hero_room_compass_wood_door.md) | delivered | graphics-specialist | TASK-0016 | A015,A016,W016 |
@@ -21,7 +21,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0012](requests/ART-0012_hero_room_cliff_palms.md) | blocked_reference | graphics-specialist | TASK-0023 | V017,V023 |
 | [ART-0013](requests/ART-0013_hero_room_arch_light_shafts.md) | blocked_reference | graphics-specialist | TASK-0024 | none |
 | [ART-0014](requests/ART-0014_hero_room_broken_floor_edge.md) | integrated | graphics-specialist | TASK-0025 | F006,F007,F008,F009,F010,F011,F012,F013 |
-| [ART-0015](requests/ART-0015_hero_room_study_blue_rug.md) | blocked_reference | graphics-specialist | TASK-0026 | P005,P006 |
+| [ART-0015](requests/ART-0015_hero_room_study_blue_rug.md) | delivered | graphics-specialist | TASK-0026 | P005,P006 |
 | [ART-0016](requests/ART-0016_hero_room_arch_ground_shadow.md) | blocked_reference | graphics-specialist | TASK-0027 | S011,S012,S016,S017 |
 | [ART-0017](requests/ART-0017_hero_room_door_ground_shadow.md) | blocked_reference | graphics-specialist | TASK-0028 | S013,S016 |
 | [ART-0018](requests/ART-0018_hero_room_wide_stair_shadow.md) | blocked_reference | graphics-specialist | TASK-0029 | S015 |
