@@ -1,0 +1,22 @@
+{
+  "task_id": "TASK-0016",
+  "batch": "B3",
+  "independent_masters": 5,
+  "rejected_attempts": 1,
+  "all_rgba": true,
+  "all_real_alpha": true,
+  "all_visible_bounds_inside": true,
+  "all_over_4x": true,
+  "unique_master_hashes": 5,
+  "exact_master_minimum_met": true,
+  "owner_approved": false,
+  "manifests": [
+    "game_factory/environment/ART-0005/v001/manifest.json",
+    "game_factory/environment/ART-0038/v001/manifest.json"
+  ],
+  "scope": "Five primary candidate sprites only; excludes low-profile alternative and failed sea attempts",
+  "secondary_window_candidate_count": 1,
+  "rejected_attempts_total_batch": 4,
+  "sea_request_complete": false,
+  "visual_approval": false
+}

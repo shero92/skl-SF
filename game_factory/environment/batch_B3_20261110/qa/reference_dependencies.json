@@ -1,0 +1,23 @@
+[
+  {
+    "source_path": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png",
+    "source_sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4",
+    "qa_derivative_path": "game_factory/environment/batch_B3_20261110/qa/neighbor_wall_native.png",
+    "qa_sha256": "424c648e59d17397f15a32bc23751ba5fd57675fa14b28dcce0e2e65e3254392",
+    "source_region": null,
+    "purpose": "review-only neighboring-wall and ocean checks; original unchanged"
+  },
+  {
+    "source_path": "assets_hd/background/sea/sea_01.png",
+    "source_sha256": "bfbd4e1d9173e285b5e5ee435992e66bd60105594621ca854984360afced9245",
+    "qa_derivative_path": "game_factory/environment/batch_B3_20261110/qa/ocean_review_backdrop.png",
+    "qa_sha256": "26d6efe4ed7a9452ae40b5fbf23cf32cadece5489eeff21890008fc44122c74a",
+    "source_region": [
+      325,
+      650,
+      929,
+      1254
+    ],
+    "purpose": "review-only neighboring-wall and ocean checks; original unchanged"
+  }
+]

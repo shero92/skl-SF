@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0005",
+  "task_id": "TASK-0016",
+  "batch": "B3",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only; no crop/paste/trace",
+  "source_count": 4,
+  "generation_cache_required": false,
+  "owner_approved": false,
+  "production_active": false,
+  "quality_status": "needs_review",
+  "items": [
+    {
+      "id": "hero_compass_wood_door_south",
+      "request_id": "ART-0005",
+      "master_path": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_south.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_south.png",
+      "sha256": "34acf2630af2711a24973a5be029e7f9e61a7d2f011485a217a7667a9f99e6b3",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        58,
+        48,
+        959,
+        1476
+      ],
+      "origin": [
+        508.5,
+        1475
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "south",
+      "intended_native_canvas": [
+        96,
+        144
+      ],
+      "requested_master_minimum": [
+        600,
+        900
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 10.027777777777777,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0005/v001/native_review/hero_compass_wood_door_south.png",
+      "native_review_sha256": "c7aa71974bcd3ab2ebec545c6d6345e1ac1c6560ed091ea792860f02d4070bf6",
+      "native_review_region_alpha128_plus_8px": [
+        50,
+        40,
+        967,
+        1484
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        91,
+        144
+      ],
+      "native_offset": [
+        2,
+        0,
+        93,
+        144
+      ],
+      "native_uniform_scale": 0.0997229916897507,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "wall opening / door threshold and end joins require scene annotation",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/furniture/table_large/table_large_01.png",
+        "assets_hd/architecture/ruined_door/ruined_door_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0005/v001/requests/hero_compass_wood_door_south.txt",
+      "prompt_text": "ART-0005 hero_compass_wood_door_south. ONE independent CLOSED arched WOODEN door leaf assembly sprite, SOUTH front view, warm oak double leaves with vertical planks, dark iron hinges, restrained brass/gold fittings and a gold eight-point compass emblem centred across the leaves. Narrow cobalt-blue decorative insets either side of compass, subtle carved oak details. Door fits a separate limestone arched doorway in SKL-SF, do NOT draw surrounding stone frame or wall. Three-quarter tactical RPG camera30deg above, front nearly straight-on, only slight top edge thickness, arched top and flat threshold. Match warm oak pixel clusters of SKL-SF table_large and gold/cobalt palette of viewed Hero Room target. Upper-left warm surface lighting, crisp dark1-2nativepixel silhouette outline, high detail hard pixel art. Master1024x1536 or larger, native96x144. Whole door leaf and hinges4%transparent margin. RGBA truly transparent background alpha0, no floor, ground, wall, baked cast/contact shadow, exterior glow, sky, people, readable text, letters, watermark, frame or multi-view sheet. Single complete closed wooden door only.",
+      "source_attempt_name": "exec-e782d9ce-308e-4eb2-912e-e5e8702edc1a.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Blue inset lengths and some decorative carving differ between independently generated views; owner review/refinement required before claiming a consistent turnaround set."
+      ],
+      "view_interpretation": "decorated front"
+    },
+    {
+      "id": "hero_compass_wood_door_north",
+      "request_id": "ART-0005",
+      "master_path": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_north.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_north.png",
+      "sha256": "b9988dfa32702f3ff61dd07efe88d4fcbbb71b489639af3a41c6c87a7b01bbb3",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        4,
+        9,
+        1019,
+        1520
+      ],
+      "origin": [
+        511.5,
+        1519
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "north",
+      "intended_native_canvas": [
+        96,
+        144
+      ],
+      "requested_master_minimum": [
+        600,
+        900
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 10.666666666666666,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0005/v001/native_review/hero_compass_wood_door_north.png",
+      "native_review_sha256": "f564c738e4588196e7fb5e26de91490d33baa7ff961161413ff361521def0fbe",
+      "native_review_region_alpha128_plus_8px": [
+        0,
+        1,
+        1024,
+        1528
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        96,
+        143
+      ],
+      "native_offset": [
+        0,
+        1,
+        96,
+        144
+      ],
+      "native_uniform_scale": 0.09375,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "wall opening / door threshold and end joins require scene annotation",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/furniture/table_large/table_large_01.png",
+        "assets_hd/architecture/ruined_door/ruined_door_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0005/v001/requests/hero_compass_wood_door_north.txt",
+      "prompt_text": "ART-0005 hero_compass_wood_door_north. ONE newly drawn NORTH/BACK view of the same closed double-leaf ARCHED oak door family from previous south image. Camera from behind: show warm oak vertical plank backs, two dark iron horizontal bracing bars and diagonal wooden braces, simple central sliding latch, narrow gold/brass hinge bolts. Rear face is functional plain oak; FRONT compass medallion and cobalt decorative insets are on far side and NOT visible through opaque wood. Preserve arched silhouette and door proportions/thickness, no stone wall or frame. Tactical RPG30deg above, slight top edge visible, back faces nearly camera. Upper-LEFT surface lighting stays image upper-left, separately authored occlusion/grain, not mirrored south bitmap. Hard detailed pixel clusters, dark1-2nativepixel outline matching SKL-SF furniture oak. Transparent RGBA PNG master1024x1536 or higher, native96x144. Entire door inclflat threshold within4%empty alpha0 margins. No floor, ground, cast/contact shadow, halo, background, furniture, people, readable text, watermark, frame or multi-view sheet. Single closed wooden door back only.",
+      "source_attempt_name": "exec-2a57667a-dc7f-43c6-b88f-fbd1a382ab77.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Visible pixels are inside canvas but some margins are less than the approximately 3 percent target.",
+        "Blue inset lengths and some decorative carving differ between independently generated views; owner review/refinement required before claiming a consistent turnaround set."
+      ],
+      "view_interpretation": "functional rear face"
+    },
+    {
+      "id": "hero_compass_wood_door_east",
+      "request_id": "ART-0005",
+      "master_path": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_east.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_east.png",
+      "sha256": "8b7f3c16b988e807a2e13bcc21e61b0778ef9db83c7bb870589b5c3b9d1c7044",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        143,
+        11,
+        849,
+        1531
+      ],
+      "origin": [
+        496.0,
+        1530
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "east",
+      "intended_native_canvas": [
+        96,
+        144
+      ],
+      "requested_master_minimum": [
+        600,
+        900
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 10.645833333333334,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0005/v001/native_review/hero_compass_wood_door_east.png",
+      "native_review_sha256": "5add74bb87a873ef5f16180e008a14c3c4181b10e285688ecf91292e4a0bc676",
+      "native_review_region_alpha128_plus_8px": [
+        135,
+        3,
+        857,
+        1536
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        68,
+        144
+      ],
+      "native_offset": [
+        14,
+        0,
+        82,
+        144
+      ],
+      "native_uniform_scale": 0.09393346379647749,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "wall opening / door threshold and end joins require scene annotation",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/furniture/table_large/table_large_01.png",
+        "assets_hd/architecture/ruined_door/ruined_door_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0005/v001/requests/hero_compass_wood_door_east.txt",
+      "prompt_text": "ART-0005 hero_compass_wood_door_east. ONE independent EAST/RIGHT oblique upright view of closed arched double-leaf OAK door matching viewed south family: vertical oak planks, two black iron strap hinges per leaf with brass bolts, gold eight-point compass medallion across front seam, narrow cobalt blue gold-edged insets, two brass ring handles. Camera from right/east looking toward left/west: RIGHT edge of door is NEAR and its thickness visible, decorated front plane recedes LEFT and is horizontally FORESHORTENED to about55% of frontal width. Keep arch vertical, threshold horizontal only mildly oblique, no isometric floor slab. Tactical RPG30deg above. Entire independent view drawn anew, correct NEW highlights from image upper-LEFT, NOT flip/rotation of bitmap. Warm oak hard detailed pixel clusters matching SKL-SF masters, dark crisp outline. Transparent RGBA PNG master1024x1536 or larger, native96x144 canvas. Whole silhouette4%alpha0 margins. No limestone frame, wall, room, floor, ground, cast/contact shadow, backdrop, characters, text, watermark, borders or sheet. One closed wooden door only.",
+      "source_attempt_name": "exec-7f9dd327-063f-4f45-b3a5-45b228f20189.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Visible pixels are inside canvas but some margins are less than the approximately 3 percent target.",
+        "Blue inset lengths and some decorative carving differ between independently generated views; owner review/refinement required before claiming a consistent turnaround set."
+      ],
+      "view_interpretation": "independently drawn oblique decorated front"
+    },
+    {
+      "id": "hero_compass_wood_door_west",
+      "request_id": "ART-0005",
+      "master_path": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_west.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_west.png",
+      "sha256": "1c31d20f14e94579775a99195394fb1299572bbfb7dd03193ebb7d7891c1b827",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        179,
+        7,
+        829,
+        1528
+      ],
+      "origin": [
+        504.0,
+        1527
+      ],
+      "origin_rule": "bottom centre of alpha-128 visible bounds",
+      "facing": "west",
+      "intended_native_canvas": [
+        96,
+        144
+      ],
+      "requested_master_minimum": [
+        600,
+        900
+      ],
+      "visible_source_pixels_per_native_canvas_pixel": 10.666666666666666,
+      "meets_4x_source_rule": true,
+      "native_review_path": "game_factory/environment/ART-0005/v001/native_review/hero_compass_wood_door_west.png",
+      "native_review_sha256": "722d5d1358cf4f759d1933f9be6db0df20c7514abcc89271ca196a5f32e841bd",
+      "native_review_region_alpha128_plus_8px": [
+        171,
+        0,
+        837,
+        1536
+      ],
+      "native_review_may_omit_weak_alpha_outside_region": true,
+      "native_resize_size": [
+        62,
+        144
+      ],
+      "native_offset": [
+        17,
+        0,
+        79,
+        144
+      ],
+      "native_uniform_scale": 0.09375,
+      "footprint_64px_cells": null,
+      "footprint_status": "needs_scene_annotation; projected sprite bounds are not a ground footprint",
+      "collision_polygon": null,
+      "collision_status": "integration agent annotates physical base; never full sprite box",
+      "mount_points": null,
+      "mount_status": "wall opening / door threshold and end joins require scene annotation",
+      "baked_shadow": false,
+      "separate_shadow_path": null,
+      "shadow_status": "runtime/integration responsibility",
+      "style_matches": [
+        "assets_hd/furniture/table_large/table_large_01.png",
+        "assets_hd/architecture/ruined_door/ruined_door_01.png"
+      ],
+      "prompt_path": "game_factory/environment/ART-0005/v001/requests/hero_compass_wood_door_west.txt",
+      "prompt_text": "ART-0005 hero_compass_wood_door_west. ONE independent WEST/LEFT oblique upright view of closed arched double-leaf OAK door matching viewed south family: vertical oak planks, two black iron strap hinges per leaf with brass bolts, gold eight-point compass medallion across front seam, narrow cobalt blue gold-edged insets, two brass ring handles. Camera from left/west looking toward right/east: LEFT edge of door is NEAR with its thickness visible, decorated front plane recedes RIGHT and horizontally FORESHORTENED to about55% frontal width. Arch vertical, threshold mildly oblique, no ground slab. Tactical RPG30deg above. DRAW WEST VIEW INDEPENDENTLY, no flip or rotation of east/south bitmap; surface highlights still from IMAGE UPPER-LEFT, new grain and correct hinge overlaps. High-detail hard pixel clusters matching SKL-SF warm oak masters, crisp dark outline. Transparent RGBA PNG master1024x1536 or higher, native96x144canvas. Whole silhouette4%alpha0 margins. No stone frame, wall, floor, ground, cast/contact shadow, backdrop, people, text, watermark, border or multi-view sheet. Exactly one closed door.",
+      "source_attempt_name": "exec-41d244c2-b1f0-4c43-a913-fb3d108dea85.png",
+      "tool": "built-in image_gen",
+      "generation_model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "quality_status": "needs_review",
+      "owner_approved": false,
+      "production_active": false,
+      "open_issues": [
+        "Visible pixels are inside canvas but some margins are less than the approximately 3 percent target.",
+        "Blue inset lengths and some decorative carving differ between independently generated views; owner review/refinement required before claiming a consistent turnaround set."
+      ],
+      "view_interpretation": "independently drawn oblique decorated front"
+    }
+  ],
+  "rejected_attempts": [],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_east.png",
+      "sha256": "8b7f3c16b988e807a2e13bcc21e61b0778ef9db83c7bb870589b5c3b9d1c7044"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_north.png",
+      "sha256": "b9988dfa32702f3ff61dd07efe88d4fcbbb71b489639af3a41c6c87a7b01bbb3"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_south.png",
+      "sha256": "34acf2630af2711a24973a5be029e7f9e61a7d2f011485a217a7667a9f99e6b3"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_west.png",
+      "sha256": "1c31d20f14e94579775a99195394fb1299572bbfb7dd03193ebb7d7891c1b827"
+    }
+  ]
+}

@@ -32,3 +32,8 @@ output_paths: .agents/graphics/deliveries/ART-0037/sea_light_lattice_tile.png
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## B3 unsuccessful attempts — TASK-0016
+- Two independent image_gen outputs retained under `assets_hd/background/sea_light_lattice/v001/rejected/` and `.agents/graphics/deliveries/ART-0037/rejected/`.
+- Neither satisfies2048x2048 /4x512 or max-alpha178. First output also has no alpha0 gaps. No delivered production PNG; status remains requested, quality needs_regeneration.
+- Technical manifest and actual Godot2x2 captures: game_factory/environment/ART-0037/v001/. No procedural substitute, upscaling or external service used.

@@ -1,0 +1,29 @@
+{
+  "task_id": "TASK-0016",
+  "batch": "B3",
+  "tests": {
+    "command": "python -u tools/run_tests.py --changed --timeout 120",
+    "passed": 84,
+    "total": 84,
+    "exit_code": 0
+  },
+  "graphics_validation": {
+    "command": "python tools/graphics_validation.py --changed",
+    "exit_code": 0,
+    "png_checked": 0,
+    "scope_note": "Candidates outside production validator scope; independent technical QA validates five primary sources, alternative/sea failures separately measured"
+  },
+  "primary_source_count": 5,
+  "independent_sources_total_including_alternative_and_attempts": 10,
+  "reused_ART0023_count": 4,
+  "godot_captures": 5,
+  "requirements_complete": false,
+  "owner_approved": false,
+  "production_active": false,
+  "outstanding": [
+    "ART-0037 needs regeneration for2048x2048 / alpha / seamless verification",
+    "Window v001 join height needs matching neighbors; low-profile v002 opening too short",
+    "Door decorative lengths differ across facings",
+    "Footprints, mounts, collisions and final scene calibration need integration agent"
+  ]
+}

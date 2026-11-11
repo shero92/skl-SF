@@ -1,0 +1,99 @@
+[
+  {
+    "key": "door_south",
+    "art": "ART-0005",
+    "id": "hero_compass_wood_door_south",
+    "dir": "assets_hd/architecture/compass_wood_door_views/v001",
+    "native": [
+      96,
+      144
+    ],
+    "minimum": [
+      600,
+      900
+    ],
+    "facing": "south",
+    "footprint": null
+  },
+  {
+    "key": "door_north",
+    "art": "ART-0005",
+    "id": "hero_compass_wood_door_north",
+    "dir": "assets_hd/architecture/compass_wood_door_views/v001",
+    "native": [
+      96,
+      144
+    ],
+    "minimum": [
+      600,
+      900
+    ],
+    "facing": "north",
+    "footprint": null
+  },
+  {
+    "key": "door_east",
+    "art": "ART-0005",
+    "id": "hero_compass_wood_door_east",
+    "dir": "assets_hd/architecture/compass_wood_door_views/v001",
+    "native": [
+      96,
+      144
+    ],
+    "minimum": [
+      600,
+      900
+    ],
+    "facing": "east",
+    "footprint": null
+  },
+  {
+    "key": "door_west",
+    "art": "ART-0005",
+    "id": "hero_compass_wood_door_west",
+    "dir": "assets_hd/architecture/compass_wood_door_views/v001",
+    "native": [
+      96,
+      144
+    ],
+    "minimum": [
+      600,
+      900
+    ],
+    "facing": "west",
+    "footprint": null
+  },
+  {
+    "key": "window_wall",
+    "art": "ART-0038",
+    "id": "wall_straight_window_opening",
+    "dir": "assets_hd/architecture/window_wall/v001",
+    "native": [
+      320,
+      190
+    ],
+    "minimum": [
+      1280,
+      760
+    ],
+    "facing": "south",
+    "footprint": null,
+    "revision": "v001"
+  },
+  {
+    "key": "sea_lattice",
+    "art": "ART-0037",
+    "id": "sea_light_lattice_tile",
+    "dir": "assets_hd/background/sea_light_lattice/v001",
+    "native": [
+      512,
+      512
+    ],
+    "minimum": [
+      2048,
+      2048
+    ],
+    "facing": "top_down",
+    "footprint": null
+  }
+]

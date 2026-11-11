@@ -1,0 +1,300 @@
+{
+  "task_id": "TASK-0016",
+  "batch": "B3",
+  "destination": "H:\\shining force\\skl-SF",
+  "cache_required": false,
+  "primary_sources": 5,
+  "secondary_window_candidate": 1,
+  "rejected_attempts": 4,
+  "sea_request_complete": false,
+  "files": [
+    {
+      "path": "assets_hd/architecture/compass_wood_door_views/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_east.png",
+      "sha256": "8b7f3c16b988e807a2e13bcc21e61b0778ef9db83c7bb870589b5c3b9d1c7044"
+    },
+    {
+      "path": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_north.png",
+      "sha256": "b9988dfa32702f3ff61dd07efe88d4fcbbb71b489639af3a41c6c87a7b01bbb3"
+    },
+    {
+      "path": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_south.png",
+      "sha256": "34acf2630af2711a24973a5be029e7f9e61a7d2f011485a217a7667a9f99e6b3"
+    },
+    {
+      "path": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_west.png",
+      "sha256": "1c31d20f14e94579775a99195394fb1299572bbfb7dd03193ebb7d7891c1b827"
+    },
+    {
+      "path": "assets_hd/architecture/window_wall/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/architecture/window_wall/v001/rejected/rejections.json",
+      "sha256": "2823e4aeeface44d0e22928a12b66595c491f3155bffa4448a2a62e4fed83d26"
+    },
+    {
+      "path": "assets_hd/architecture/window_wall/v001/rejected/wall_straight_window_opening_attempt_01.png",
+      "sha256": "f6067e0cdbcde4816552dd6ab67d5f192a262e934086bea29f109b516ba20fc1"
+    },
+    {
+      "path": "assets_hd/architecture/window_wall/v001/wall_straight_window_opening.png",
+      "sha256": "7217926d76bce518ddd5b5446d035c566868bd54f0f6674fd6374ec14e4d8b4d"
+    },
+    {
+      "path": "assets_hd/architecture/window_wall/v002/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/architecture/window_wall/v002/rejected/rejections.json",
+      "sha256": "a3e3eef0de814ade582e1da0cfbed09b5a4a8f6e5f38007a35e627b91c2e05eb"
+    },
+    {
+      "path": "assets_hd/architecture/window_wall/v002/rejected/wall_straight_window_opening_attempt_03.png",
+      "sha256": "1af8f93c40dc634e2edcc7b2ab5136c00b7132dc3ec29b0ca3e0444296f98521"
+    },
+    {
+      "path": "assets_hd/architecture/window_wall/v002/wall_straight_window_opening.png",
+      "sha256": "32b5f8bf358a4f803d946f43751d873935bbac19aa91ed936c95be4eb713b503"
+    },
+    {
+      "path": "assets_hd/background/sea_light_lattice/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/background/sea_light_lattice/v001/rejected/sea_light_lattice_tile_attempt_01.png",
+      "sha256": "1f680568fa846eb377b3a345905d83ef845ec48d1bcb44ca216b320ebb432e75"
+    },
+    {
+      "path": "assets_hd/background/sea_light_lattice/v001/rejected/sea_light_lattice_tile_attempt_02.png",
+      "sha256": "ecf86d0fccc322711483686f69f6dfd5de1074515807cc4e51e563e7755e0d1e"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/check_sea.py",
+      "sha256": "41799a846777af4dbcf3d6d74006897e85fe7e90b87449c5620d15ffc4a0a9af"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/generation_records.json",
+      "sha256": "e5969376d79238fbf3c2b0b6c31df35fa4588d73ea29b2a8d9291791bb3b19f1"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/prepare_review.py",
+      "sha256": "706e930b8e7a033e61c13503156b9ad87f5ab572bb56b6d92dcd607148698dad"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/production_spec.json",
+      "sha256": "08b0c82b327ffdf6ef1965f7f4ba21567358ecf20f866a490572662c90e95342"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/qa/neighbor_wall_native.png",
+      "sha256": "424c648e59d17397f15a32bc23751ba5fd57675fa14b28dcce0e2e65e3254392"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/qa/ocean_review_backdrop.png",
+      "sha256": "26d6efe4ed7a9452ae40b5fbf23cf32cadece5489eeff21890008fc44122c74a"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/qa/reference_dependencies.json",
+      "sha256": "c5a7851d6ff462fca4ac00e4411697be83557dc420639ae4e41d8a8edb8ddc6b"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/qa/window_v001_observation.json",
+      "sha256": "73bad197c4576a273cfca3e0f7a02706dc2a5811d82a59c44baff91bb8918edf"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/README.md",
+      "sha256": "81efd512984951b029c991c0fc72954240ccaaef0839ff5263b3784a8ca87dab"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/reused_ART-0023.json",
+      "sha256": "b7c62b24300d25379d54296bb1897af8839a1b0945f09a23dc3d98bf55da83c8"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/review.gd",
+      "sha256": "1d3a4421b06e35ac8fd90e96c96d2a4908cd5de3ad74f01e4c9fb06d9d71477c"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/review_sea.gd",
+      "sha256": "57cfa431c4cb96caa708c79b427d4dcd830a3f23da1103ae8a413f07af4f5e60"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/technical_qa.json",
+      "sha256": "87b0edf229845c2cc644e14916b50257e4e41eeb244b2d336f7c0df3b62375d6"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/godot_native_review.png",
+      "sha256": "9ac113e639266c723c736024106b04718c2af8cf1c9e1e37b64ebbb91fe5d8b8"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/godot_review_receipt.json",
+      "sha256": "f391074adc93629c79b94a63461b6f5b558c1b5f5da7d7079067134a5c5dfc85"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/manifest.json",
+      "sha256": "6fa2dcffa24213a9ed7d855bd82eb97c972ad51e5bb2bd073aa46db1b3c70b03"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/native_review/hero_compass_wood_door_east.png",
+      "sha256": "5add74bb87a873ef5f16180e008a14c3c4181b10e285688ecf91292e4a0bc676"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/native_review/hero_compass_wood_door_north.png",
+      "sha256": "f564c738e4588196e7fb5e26de91490d33baa7ff961161413ff361521def0fbe"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/native_review/hero_compass_wood_door_south.png",
+      "sha256": "c7aa71974bcd3ab2ebec545c6d6345e1ac1c6560ed091ea792860f02d4070bf6"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/native_review/hero_compass_wood_door_west.png",
+      "sha256": "722d5d1358cf4f759d1933f9be6db0df20c7514abcc89271ca196a5f32e841bd"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/README.md",
+      "sha256": "9dd01ceb0c3e82fcf5cd1dea96f4b6dce14bac80bf123e96229d7dfd118864b3"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/requests/hero_compass_wood_door_east.txt",
+      "sha256": "c120619b200ad774cc6b7e70e349b572fc95c7acd3a62ea73a91b6f05e56712a"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/requests/hero_compass_wood_door_north.txt",
+      "sha256": "44d2ffd8ab3128ccd51b62d911c46874d4f41666ee59329430f2c82acad0d977"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/requests/hero_compass_wood_door_south.txt",
+      "sha256": "13e95efafd073810dca41b77e3729c25c7bfb892e832012ecd763e3e8e1444f8"
+    },
+    {
+      "path": "game_factory/environment/ART-0005/v001/requests/hero_compass_wood_door_west.txt",
+      "sha256": "85b6b656b6a4178f3ea36f81bdf200a9dded6a109c29d65db1ba2d18c45a085c"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/godot_native_review.png",
+      "sha256": "cad583453fb3b1f3e2f6862b76632d96c7a0fffaecdd12a6a373ec32141836db"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/godot_review_receipt.json",
+      "sha256": "cbfe4278a11c34458ac105086cf6e732c54074976e18dfa3744ce81a80f554c1"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/manifest.json",
+      "sha256": "858c9c24ec0d168b2104bbd2c58199d017904eb83c9eefe3dbc703f1fbaf1a08"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/native_review/wall_straight_window_opening.png",
+      "sha256": "a0772378baf885759c4131b04d1fa141644234a445b96868796a3b9e6ea65ba4"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/README.md",
+      "sha256": "0fd1a24ddb1d6692c4631180a9143f2542117c539c97d2ea12fc5d1da72bad00"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/requests/wall_straight_window_opening.txt",
+      "sha256": "4fb11e7322fdb0bdad20a222e23767c595b6aade8a4d2d385d712e8e00b0842e"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/requests/wall_straight_window_opening_attempt_01.txt",
+      "sha256": "7673d969556ed25110d2b7b7c3864132e666c77d8e3ee73d4f0f0f2e97c76611"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v001/review_script_snapshot.gd",
+      "sha256": "b604533ba6e190d5e5555e85fd5c3c8e4d55579a18babd6cae8a755fef42c052"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v002/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v002/godot_native_review.png",
+      "sha256": "e098fde102b6a7a21b97e4d869712e92fc0230776bbf1167c044843f0ee818de"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v002/godot_review_receipt.json",
+      "sha256": "096b41e22e266267e54a2c6e9a0b3e53f4a07b5f3e39e8cd387626f6107136b9"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v002/manifest.json",
+      "sha256": "b0c407a4080db4e70180c50eec00bf79ed24e4b9d6955fd5eacbbc9838fafde2"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v002/native_review/wall_straight_window_opening.png",
+      "sha256": "7b486be9fb588957681f131fb7135dfb5e79437390a7749efd8a0bf386e4eab5"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v002/README.md",
+      "sha256": "7cf538d6b3d735196b64f8996fd13052cc851f805c403cc01d0827e72a2d5783"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v002/requests/wall_straight_window_opening.txt",
+      "sha256": "07c0b18d3cf56b2a9c650f966654fd26fe4d7cec45860d32559651901da28e25"
+    },
+    {
+      "path": "game_factory/environment/ART-0038/v002/requests/wall_straight_window_opening_attempt_01.txt",
+      "sha256": "7673d969556ed25110d2b7b7c3864132e666c77d8e3ee73d4f0f0f2e97c76611"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/godot_tiled_receipt_attempt_01.json",
+      "sha256": "ec519e582c09a6325713ac3252ce81539e4a7b5700528bfa4804e29a5cf72837"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/godot_tiled_receipt_attempt_02.json",
+      "sha256": "f48e7cbaee9c6b506c0339c70717394bdc39ddd561094a99d70cdff6d01e9d05"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/godot_tiled_review_attempt_01.png",
+      "sha256": "0db6843df7e162e3c5320d053b37685876265a813eb928ca56c2b84c316bcb35"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/godot_tiled_review_attempt_02.png",
+      "sha256": "e43bd287242c3b51bfd30415691558f6bdea4993109564d5b25a285eb4126577"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/manifest.json",
+      "sha256": "d77f7bf1fe9af3176e9db4d3c7fcbd887686ffbccca91ff12dcc5b93e490651d"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/native_review/sea_light_lattice_tile_attempt_01.png",
+      "sha256": "3c628f27cb018404df469d4b15599a97cecd48c5f67b0de37cb9a6181f546226"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/native_review/sea_light_lattice_tile_attempt_02.png",
+      "sha256": "2142a6da2652b3221c20e692c172c44a67675fe286a97b9f0462a743260a4030"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/README.md",
+      "sha256": "de361db1e326bfa2659e04a2cfae5b85e6d58ad87f65a6cbade1e9dc69ae29d3"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/requests/sea_light_lattice_tile_attempt_01.txt",
+      "sha256": "e2b2e1a8f2621d0e0eb6937661f3dcc7146f58a5b05bb07352d085e59f7d4796"
+    },
+    {
+      "path": "game_factory/environment/ART-0037/v001/requests/sea_light_lattice_tile_attempt_02.txt",
+      "sha256": "bf952ebb1cc6470137d7f1e8d80906563f40cd59d4758970bd9024ca7f5eec8d"
+    },
+    {
+      "path": "game_factory/environment/batch_B3_20261110/verification.json",
+      "sha256": "b509bf6a043016b9f6d465d9319d7e0b2fa5b09ec27c8dcfdd6488d08276d2f3"
+    }
+  ]
+}
