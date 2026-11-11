@@ -1,6 +1,6 @@
 ---
 id: ART-0002
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0013
 dedupe_key: hero_room_cloud_drift
@@ -62,3 +62,6 @@ issue: 20
 - SHA256: 42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7.
 - Identity/provenance: map_factory/references/hero_room_01_original.reference.json; prior 1536x1024 goal image is preserved historical material.
 - Source identity gate is resolved by owner-provided bytes. Native output measurements, reuse review and artistic approval remain separate requirements; this amendment does not change production/review status.
+
+## Owner next graphics delivery — TASK-0013
+Three independent static cloud variants at exact filenames, source hashes/prompts/alpha metadata and actual Godot192x64 review1x/2x supplied. Authenticated current target SHA4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323 resolves reference gate for this assignment. Runtime scrolling/wrap, owner review and integration remain pending; no animation/loop approval claimed. Sources and current assets preserved.
