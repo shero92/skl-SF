@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 28,
+  "version": 29,
   "processing_passes": [
     "background",
     "ground",
@@ -6788,7 +6788,7 @@
         "render_layer": "decorations",
         "position": [
           470.0,
-          760.0
+          742.0
         ],
         "scale": 1.0,
         "rotation_degrees": 0.0,
