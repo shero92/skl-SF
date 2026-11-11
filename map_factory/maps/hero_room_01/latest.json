@@ -1076,11 +1076,11 @@
       }
     },
     {
-      "id": "A09",
+      "id": "A23",
       "instance_id": "RearRightDoor",
       "x": 1105.875,
       "y": 297.75,
-      "scale": 1.75,
+      "scale": 1.5,
       "shadow": {
         "type": "soft_cast",
         "opacity": 0.24,
@@ -1102,7 +1102,7 @@
       }
     },
     {
-      "id": "W027",
+      "id": "W036",
       "instance_id": "PerimeterWall_03_00",
       "x": 402,
       "y": 289,
@@ -1492,11 +1492,11 @@
       ]
     },
     {
-      "id": "L02",
+      "id": "L06",
       "instance_id": "RightWallLantern2",
       "x": 1282.0,
       "y": 377,
-      "scale": 0.5,
+      "scale": 1.0,
       "render_layer": "decorations",
       "mount_on": "PerimeterWall_16_02",
       "mount_offset": [
@@ -1518,11 +1518,11 @@
       ]
     },
     {
-      "id": "L02",
+      "id": "L06",
       "instance_id": "RightWallLantern6",
       "x": 1282.0,
       "y": 633,
-      "scale": 0.5,
+      "scale": 1.0,
       "render_layer": "decorations",
       "mount_on": "PerimeterWall_16_06",
       "mount_offset": [
@@ -1557,11 +1557,11 @@
       ]
     },
     {
-      "id": "D04",
+      "id": "D24",
       "instance_id": "LeftSideWallBanner",
       "x": 258.0,
       "y": 439,
-      "scale": 0.65,
+      "scale": 1.0,
       "render_layer": "decorations",
       "mount_on": "PerimeterWall_00_02",
       "mount_offset": [
@@ -1570,11 +1570,11 @@
       ]
     },
     {
-      "id": "D05",
+      "id": "D26",
       "instance_id": "RightSideWallBanner",
       "x": 1282.0,
       "y": 439,
-      "scale": 0.65,
+      "scale": 1.0,
       "render_layer": "decorations",
       "mount_on": "PerimeterWall_16_02",
       "mount_offset": [
@@ -2617,15 +2617,15 @@
   },
   "schema_version": 2,
   "map_id": "hero_room_01",
-  "version": 23,
-  "parent_version": 22,
-  "created_at": "2026-11-10T21:51:16+00:00",
+  "version": 24,
+  "parent_version": 23,
+  "created_at": "2026-11-11T00:58:26+00:00",
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
-  "change_note": "hero_room_01 v0023: integrate the Codex B1/B2 candidates (study table, stool, bookshelf with armillary, headboard shelf, blue-white plant, entrance stair with finial posts, rope fences, compass inlay). Positions follow the owner target; visual approval is still pending.",
+  "change_note": "hero_room_01 v0024: integrate the owner-accepted Codex B3/ART-0023 graphics (compass wooden door, window wall piece, side banners, wall lantern) in place of the old instances. Visual approval is still pending.",
   "visual_qa": {
     "status": "needs_review",
     "notes": "Native render v0013 pending; compare against reference and v0012."
@@ -2862,7 +2862,7 @@
     "joint_opacity": 0.27,
     "joint_width": 1.15
   },
-  "parent_snapshot_sha256": "0fcb275270ea7b2363f11b40ea9f5efeedb23e079025d45362418e7166b7dcac",
+  "parent_snapshot_sha256": "b4d8db7503299caef2f777cb02d6888d72d0ba9ae091922fb2236ea3e0b80280",
   "camera": {
     "x": 768,
     "y": 512,
@@ -3112,7 +3112,7 @@
   "layer_stack": {
     "schema_version": 1,
     "map_id": "hero_room_01",
-    "version": 23,
+    "version": 24,
     "processing_passes": [
       "background",
       "ground",
@@ -5016,25 +5016,25 @@
         },
         {
           "instance_id": "RearRightDoor",
-          "asset_id": "A09",
+          "asset_id": "A23",
           "source_layer": "back_objects",
           "render_layer": "walls",
           "position": [
             1105.875,
             297.75
           ],
-          "scale": 1.75,
+          "scale": 1.5,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png",
+          "texture_path": "res://map_factory/parts/architecture/A23_Compass_Wood_Door_South.png",
           "pixel_size": [
-            128,
-            128
+            91,
+            144
           ],
           "origin": [
-            64,
-            128
+            45,
+            144
           ],
           "status": "ready",
           "collision": {
@@ -5100,7 +5100,7 @@
         },
         {
           "instance_id": "PerimeterWall_03_00",
-          "asset_id": "W027",
+          "asset_id": "W036",
           "source_layer": "back_objects",
           "render_layer": "walls",
           "position": [
@@ -5111,14 +5111,14 @@
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://map_factory/parts/walls/W027_Wall_Straight_Long_A.png",
+          "texture_path": "res://map_factory/parts/architecture/W036_Wall_Straight_Window_Opening.png",
           "pixel_size": [
             320,
-            95
+            168
           ],
           "origin": [
             160,
-            95
+            168
           ],
           "status": "ready",
           "collision": {
@@ -6523,25 +6523,25 @@
         },
         {
           "instance_id": "RightWallLantern2",
-          "asset_id": "L02",
+          "asset_id": "L06",
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
             1300.0,
             440.0
           ],
-          "scale": 0.5,
+          "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+          "texture_path": "res://map_factory/parts/lighting/L06_Wall_Lantern_West.png",
           "pixel_size": [
-            64,
-            64
+            29,
+            45
           ],
           "origin": [
-            32,
-            64
+            14,
+            45
           ],
           "status": "ready",
           "collision": {
@@ -6556,9 +6556,9 @@
             ]
           },
           "shadow": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
             "offset_y": 2
           },
           "attachment": {
@@ -6621,25 +6621,25 @@
         },
         {
           "instance_id": "RightWallLantern6",
-          "asset_id": "L02",
+          "asset_id": "L06",
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
             1300.0,
             700.0
           ],
-          "scale": 0.5,
+          "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+          "texture_path": "res://map_factory/parts/lighting/L06_Wall_Lantern_West.png",
           "pixel_size": [
-            64,
-            64
+            29,
+            45
           ],
           "origin": [
-            32,
-            64
+            14,
+            45
           ],
           "status": "ready",
           "collision": {
@@ -6654,9 +6654,9 @@
             ]
           },
           "shadow": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
+            "type": "none",
+            "opacity": 0.25,
+            "offset_x": 4,
             "offset_y": 2
           },
           "attachment": {
@@ -6768,25 +6768,25 @@
         },
         {
           "instance_id": "LeftSideWallBanner",
-          "asset_id": "D04",
+          "asset_id": "D24",
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
             243.0,
             438.0
           ],
-          "scale": 0.65,
+          "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.png",
+          "texture_path": "res://map_factory/parts/decor/D24_Side_Banner_East_Facing_Long.png",
           "pixel_size": [
-            64,
-            128
+            31,
+            111
           ],
           "origin": [
-            32,
-            128
+            15,
+            111
           ],
           "status": "ready",
           "collision": {
@@ -6802,9 +6802,9 @@
           },
           "shadow": {
             "type": "none",
-            "opacity": 0.0,
-            "offset_x": 0,
-            "offset_y": 0
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
           },
           "attachment": {
             "parent_instance_id": "PerimeterWall_00_02",
@@ -6817,25 +6817,25 @@
         },
         {
           "instance_id": "RightSideWallBanner",
-          "asset_id": "D05",
+          "asset_id": "D26",
           "source_layer": "back_objects",
           "render_layer": "decorations",
           "position": [
             1300.0,
             438.0
           ],
-          "scale": 0.65,
+          "scale": 1.0,
           "rotation_degrees": 0.0,
           "flip_h": false,
           "z_index": 0,
-          "texture_path": "res://assets_generated/decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.png",
+          "texture_path": "res://map_factory/parts/decor/D26_Side_Banner_West_Facing_Long.png",
           "pixel_size": [
-            64,
-            128
+            53,
+            142
           ],
           "origin": [
-            32,
-            128
+            26,
+            142
           ],
           "status": "ready",
           "collision": {
@@ -6851,9 +6851,9 @@
           },
           "shadow": {
             "type": "none",
-            "opacity": 0.0,
-            "offset_x": 0,
-            "offset_y": 0
+            "opacity": 0.25,
+            "offset_x": 4,
+            "offset_y": 2
           },
           "attachment": {
             "parent_instance_id": "PerimeterWall_16_02",
@@ -10695,17 +10695,17 @@
         {
           "instance_id": "RearRightDoor__shadow",
           "owner_instance_id": "RearRightDoor",
-          "owner_asset_id": "A09",
+          "owner_asset_id": "A23",
           "asset_id": "S016",
           "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
           "position": [
             1105.875,
             297.75
           ],
-          "scale": 1.75,
+          "scale": 1.5,
           "sprite_pixel_size": [
-            128,
-            128
+            91,
+            144
           ],
           "settings": {
             "type": "soft_cast",
@@ -10743,7 +10743,7 @@
         {
           "instance_id": "PerimeterWall_03_00__shadow",
           "owner_instance_id": "PerimeterWall_03_00",
-          "owner_asset_id": "W027",
+          "owner_asset_id": "W036",
           "asset_id": "S013",
           "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
           "position": [
@@ -10753,7 +10753,7 @@
           "scale": 1.05,
           "sprite_pixel_size": [
             320,
-            95
+            168
           ],
           "settings": {
             "type": "wall_base",
@@ -11509,57 +11509,9 @@
           "display_z": 20
         },
         {
-          "instance_id": "RightWallLantern2__shadow",
-          "owner_instance_id": "RightWallLantern2",
-          "owner_asset_id": "L02",
-          "asset_id": "S001",
-          "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-          "position": [
-            1300.0,
-            440.0
-          ],
-          "scale": 0.5,
-          "sprite_pixel_size": [
-            64,
-            64
-          ],
-          "settings": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 2
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
           "instance_id": "RightWallLantern4__shadow",
           "owner_instance_id": "RightWallLantern4",
           "owner_asset_id": "L01",
-          "asset_id": "S001",
-          "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-          "position": [
-            1300.0,
-            700.0
-          ],
-          "scale": 0.5,
-          "sprite_pixel_size": [
-            64,
-            64
-          ],
-          "settings": {
-            "type": "contact_small",
-            "opacity": 0.2,
-            "offset_x": 3,
-            "offset_y": 2
-          },
-          "render_layer": "shadows",
-          "display_z": 20
-        },
-        {
-          "instance_id": "RightWallLantern6__shadow",
-          "owner_instance_id": "RightWallLantern6",
-          "owner_asset_id": "L02",
           "asset_id": "S001",
           "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
           "position": [
@@ -13588,14 +13540,14 @@
       "ground": 3,
       "walls": 33,
       "decorations": 86,
-      "shadows": 89
+      "shadows": 87
     },
     "unique_asset_ids": [
       "A01",
       "A05",
-      "A09",
       "A19",
       "A20",
+      "A23",
       "B03",
       "B05",
       "B06",
@@ -13608,6 +13560,8 @@
       "D21",
       "D22",
       "D23",
+      "D24",
+      "D26",
       "E025",
       "E026",
       "E027",
@@ -13648,6 +13602,7 @@
       "L03",
       "L04",
       "L05",
+      "L06",
       "O001",
       "O003",
       "P01",
@@ -13689,10 +13644,10 @@
       "V033",
       "V034",
       "W01",
-      "W027",
       "W028",
       "W033",
       "W034",
+      "W036",
       "W08",
       "W09",
       "W10",
@@ -13866,74 +13821,6 @@
         "sha256": "647106515f7de8d94a5402b0c4d459c323c6ed046ca99d5e7feb02afd4d3cc56"
       }
     },
-    "A09": {
-      "id": "A09",
-      "name": "Decorative Ruined Stone Door",
-      "category": "architecture",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png",
-      "status": "ready",
-      "pixel_size": [
-        128,
-        128
-      ],
-      "origin": [
-        64,
-        128
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "soft_cast",
-        "opacity": 0.22,
-        "offset_x": 8,
-        "offset_y": 6
-      },
-      "tags": [
-        "architecture",
-        "decorative",
-        "door",
-        "ruined",
-        "stone"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "A09",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.json",
-        "sha256": "5c330931ff03960ef3f719f5e0711b77cebadf4f69f3973f2bc1146e6b0ecae4",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "A09"
-      },
-      "qa_notes": "Environment pack asset. Transparency, native size and canvas bounds scripted-checked; silhouette, palette and seams await owner visual review.",
-      "approval_status": "approved",
-      "qa_approval": {
-        "approved_by": "owner",
-        "approved_on": "2026-10-31",
-        "scope": "visual approval of all 128 environment PNGs; use in Map Factory rooms",
-        "record": "assets_generated/library_manifest.json",
-        "sha256": "5c330931ff03960ef3f719f5e0711b77cebadf4f69f3973f2bc1146e6b0ecae4"
-      }
-    },
     "A19": {
       "id": "A19",
       "name": "Entrance Stairs South",
@@ -14039,6 +13926,61 @@
         "approved_by": "owner",
         "date": "2026-11-10",
         "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "A23": {
+      "id": "A23",
+      "name": "Compass Wood Door South",
+      "category": "architecture",
+      "subtype": "door",
+      "texture_path": "res://map_factory/parts/architecture/A23_Compass_Wood_Door_South.png",
+      "status": "ready",
+      "pixel_size": [
+        91,
+        144
+      ],
+      "origin": [
+        45,
+        144
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "compass",
+        "door",
+        "south",
+        "wood"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_south.png",
+        "master_sha256": "34acf2630af2711a24973a5be029e7f9e61a7d2f011485a217a7667a9f99e6b3",
+        "request_id": "ART-0005"
+      },
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "Owner chat 2026-11-10: reviewed B3/ART-0023 native captures, then 'agree them all and use them' (integrate the delivered candidates)",
         "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
@@ -14855,6 +14797,114 @@
         "approved_by": "owner",
         "date": "2026-11-10",
         "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "D24": {
+      "id": "D24",
+      "name": "Side Banner East Facing Long",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D24_Side_Banner_East_Facing_Long.png",
+      "status": "ready",
+      "pixel_size": [
+        31,
+        111
+      ],
+      "origin": [
+        15,
+        111
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "banner",
+        "decor",
+        "east",
+        "side"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/side_banners/v001/hero_side_banner_east_facing_long.png",
+        "master_sha256": "dc261e1f2bf9e33db2e55525b399b2866d38a8c1fe930d0879290f600434d522",
+        "request_id": "ART-0023"
+      },
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "Owner chat 2026-11-10: reviewed B3/ART-0023 native captures, then 'agree them all and use them' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "D26": {
+      "id": "D26",
+      "name": "Side Banner West Facing Long",
+      "category": "decor",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D26_Side_Banner_West_Facing_Long.png",
+      "status": "ready",
+      "pixel_size": [
+        53,
+        142
+      ],
+      "origin": [
+        26,
+        142
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "banner",
+        "decor",
+        "side",
+        "west"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/side_banners/v001/hero_side_banner_west_facing_long.png",
+        "master_sha256": "5f37ff69fae6ec23adf22f1b77e568cdeaedc8bb1f4662907e70414e1fff0be6",
+        "request_id": "ART-0023"
+      },
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "Owner chat 2026-11-10: reviewed B3/ART-0023 native captures, then 'agree them all and use them' (integrate the delivered candidates)",
         "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },
@@ -19404,6 +19454,60 @@
         "sha256": "7ded2268505d3689248e198af01b78f50b06903fe3c639e6afa3114a1af00681"
       }
     },
+    "L06": {
+      "id": "L06",
+      "name": "Wall Lantern West",
+      "category": "lighting",
+      "subtype": "lantern",
+      "texture_path": "res://map_factory/parts/lighting/L06_Wall_Lantern_West.png",
+      "status": "ready",
+      "pixel_size": [
+        29,
+        45
+      ],
+      "origin": [
+        14,
+        45
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "lantern",
+        "lighting",
+        "wall",
+        "west"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/lighting/west_wall_lantern/v001/hero_wall_lantern_west.png",
+        "master_sha256": "e1beb2284d9804e1ae51480c63af498d916f6d0aa992e2d8622fb0a361a6c623",
+        "request_id": "ART-0023"
+      },
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "Owner chat 2026-11-10: reviewed B3/ART-0023 native captures, then 'agree them all and use them' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
     "O001": {
       "id": "O001",
       "name": "Blue Vase Large",
@@ -22044,59 +22148,6 @@
         "sha256": "f88979f8ed426f29006291f33c98b93251366008abbb4c0e149ae1a94037f895"
       }
     },
-    "W027": {
-      "id": "W027",
-      "name": "Wall Straight Long A",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://map_factory/parts/walls/W027_Wall_Straight_Long_A.png",
-      "status": "ready",
-      "pixel_size": [
-        320,
-        95
-      ],
-      "origin": [
-        160,
-        95
-      ],
-      "collision": {
-        "enabled": false,
-        "size": [
-          32,
-          16
-        ],
-        "offset": [
-          0,
-          0
-        ]
-      },
-      "y_sort": true,
-      "shadow": {
-        "type": "none",
-        "opacity": 0.25,
-        "offset_x": 4,
-        "offset_y": 2
-      },
-      "tags": [
-        "ivy",
-        "straight",
-        "wall",
-        "walls"
-      ],
-      "reusable": true,
-      "source": {
-        "kind": "image_gen_master",
-        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png",
-        "master_sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4"
-      },
-      "qa_notes": "Codex image_gen master (ART-0032..0035), runtime part is a trimmed BOX downscale; owner agreed 2026-11-10.",
-      "qa_approval": {
-        "approved_by": "owner",
-        "date": "2026-11-10",
-        "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
-        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
-      }
-    },
     "W028": {
       "id": "W028",
       "name": "Wall Straight Long B",
@@ -22253,6 +22304,60 @@
         "approved_by": "owner",
         "date": "2026-11-10",
         "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    "W036": {
+      "id": "W036",
+      "name": "Wall Straight Window Opening",
+      "category": "architecture",
+      "subtype": "wall",
+      "texture_path": "res://map_factory/parts/architecture/W036_Wall_Straight_Window_Opening.png",
+      "status": "ready",
+      "pixel_size": [
+        320,
+        168
+      ],
+      "origin": [
+        160,
+        168
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "ivy",
+        "wall",
+        "window"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/window_wall/v001/wall_straight_window_opening.png",
+        "master_sha256": "7217926d76bce518ddd5b5446d035c566868bd54f0f6674fd6374ec14e4d8b4d",
+        "request_id": "ART-0038"
+      },
+      "qa_notes": "Codex image_gen master (B3 / ART-0023 hero-room batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-11",
+        "evidence": "Owner chat 2026-11-10: reviewed B3/ART-0023 native captures, then 'agree them all and use them' (integrate the delivered candidates)",
         "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     },

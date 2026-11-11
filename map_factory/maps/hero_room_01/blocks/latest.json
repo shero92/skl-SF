@@ -5,25 +5,25 @@
     "ground": 3,
     "walls": 33,
     "decorations": 86,
-    "shadows": 89
+    "shadows": 87
   },
   "layer_stack_path": "map_factory/maps/hero_room_01/layers/latest.json",
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 23,
+  "version": 24,
   "source_image": {
     "path": "map_factory/references/hero_room_01_original.png",
     "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
     "status": "reference_imported"
   },
   "block_count": 157,
-  "unique_asset_count": 97,
+  "unique_asset_count": 100,
   "reused_asset_ids": [
     "A01",
     "A05",
-    "A09",
     "A19",
     "A20",
+    "A23",
     "B03",
     "B05",
     "B06",
@@ -36,6 +36,8 @@
     "D21",
     "D22",
     "D23",
+    "D24",
+    "D26",
     "E025",
     "E026",
     "E027",
@@ -76,6 +78,7 @@
     "L03",
     "L04",
     "L05",
+    "L06",
     "O001",
     "O003",
     "P01",
@@ -107,10 +110,10 @@
     "V033",
     "V034",
     "W01",
-    "W027",
     "W028",
     "W033",
     "W034",
+    "W036",
     "W08",
     "W09",
     "W10",
@@ -2187,25 +2190,25 @@
     },
     {
       "instance_id": "RearRightDoor",
-      "asset_id": "A09",
+      "asset_id": "A23",
       "category": "architecture",
-      "subtype": "stone",
-      "texture_path": "res://assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png",
+      "subtype": "door",
+      "texture_path": "res://map_factory/parts/architecture/A23_Compass_Wood_Door_South.png",
       "asset_status": "ready",
       "pixel_size": [
-        128,
-        128
+        91,
+        144
       ],
       "anchor": [
-        64,
-        128
+        45,
+        144
       ],
       "layer": "back_objects",
       "position": [
         1105.875,
         297.75
       ],
-      "scale": 1.75,
+      "scale": 1.5,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -2228,27 +2231,16 @@
       },
       "tags": [
         "architecture",
-        "decorative",
+        "compass",
         "door",
-        "ruined",
-        "stone"
+        "south",
+        "wood"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "A09",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.json",
-        "sha256": "5c330931ff03960ef3f719f5e0711b77cebadf4f69f3973f2bc1146e6b0ecae4",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          64,
-          128
-        ],
-        "identity": "A09"
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/compass_wood_door_views/v001/hero_compass_wood_door_south.png",
+        "master_sha256": "34acf2630af2711a24973a5be029e7f9e61a7d2f011485a217a7667a9f99e6b3",
+        "request_id": "ART-0005"
       }
     },
     {
@@ -2321,18 +2313,18 @@
     },
     {
       "instance_id": "PerimeterWall_03_00",
-      "asset_id": "W027",
-      "category": "walls",
-      "subtype": "stone",
-      "texture_path": "res://map_factory/parts/walls/W027_Wall_Straight_Long_A.png",
+      "asset_id": "W036",
+      "category": "architecture",
+      "subtype": "wall",
+      "texture_path": "res://map_factory/parts/architecture/W036_Wall_Straight_Window_Opening.png",
       "asset_status": "ready",
       "pixel_size": [
         320,
-        95
+        168
       ],
       "anchor": [
         160,
-        95
+        168
       ],
       "layer": "back_objects",
       "position": [
@@ -2361,15 +2353,16 @@
         "offset_y": 4
       },
       "tags": [
+        "architecture",
         "ivy",
-        "straight",
         "wall",
-        "walls"
+        "window"
       ],
       "source": {
         "kind": "image_gen_master",
-        "master": "assets_hd/architecture/connected_ruin_walls/v001/wall_straight_long_a.png",
-        "master_sha256": "6cb486cc46ae8c268aba3de73954b0fe826dca1860fe998a5e5b0b07596aafe4"
+        "master": "assets_hd/architecture/window_wall/v001/wall_straight_window_opening.png",
+        "master_sha256": "7217926d76bce518ddd5b5446d035c566868bd54f0f6674fd6374ec14e4d8b4d",
+        "request_id": "ART-0038"
       }
     },
     {
@@ -4262,25 +4255,25 @@
     },
     {
       "instance_id": "RightWallLantern2",
-      "asset_id": "L02",
-      "category": "objects",
+      "asset_id": "L06",
+      "category": "lighting",
       "subtype": "lantern",
-      "texture_path": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+      "texture_path": "res://map_factory/parts/lighting/L06_Wall_Lantern_West.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        64
+        29,
+        45
       ],
       "anchor": [
-        32,
-        64
+        14,
+        45
       ],
       "layer": "back_objects",
       "position": [
         1282.0,
         377
       ],
-      "scale": 0.5,
+      "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -4296,35 +4289,22 @@
         ]
       },
       "shadow": {
-        "type": "contact_small",
-        "opacity": 0.2,
-        "offset_x": 3,
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
         "offset_y": 2
       },
       "tags": [
-        "glowless",
         "lantern",
         "lighting",
-        "lit",
-        "objects",
-        "wall"
+        "wall",
+        "west"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "L02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.json",
-        "sha256": "37804dde9d359f26d63bc8a78d1ff3d666bfcff39101bb2b025fffeeb4726a73",
-        "anchor_declared": [
-          0,
-          64
-        ],
-        "anchor_registered": [
-          32,
-          64
-        ],
-        "identity": "L02"
+        "kind": "image_gen_master",
+        "master": "assets_hd/lighting/west_wall_lantern/v001/hero_wall_lantern_west.png",
+        "master_sha256": "e1beb2284d9804e1ae51480c63af498d916f6d0aa992e2d8622fb0a361a6c623",
+        "request_id": "ART-0023"
       }
     },
     {
@@ -4395,25 +4375,25 @@
     },
     {
       "instance_id": "RightWallLantern6",
-      "asset_id": "L02",
-      "category": "objects",
+      "asset_id": "L06",
+      "category": "lighting",
       "subtype": "lantern",
-      "texture_path": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+      "texture_path": "res://map_factory/parts/lighting/L06_Wall_Lantern_West.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        64
+        29,
+        45
       ],
       "anchor": [
-        32,
-        64
+        14,
+        45
       ],
       "layer": "back_objects",
       "position": [
         1282.0,
         633
       ],
-      "scale": 0.5,
+      "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -4429,35 +4409,22 @@
         ]
       },
       "shadow": {
-        "type": "contact_small",
-        "opacity": 0.2,
-        "offset_x": 3,
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
         "offset_y": 2
       },
       "tags": [
-        "glowless",
         "lantern",
         "lighting",
-        "lit",
-        "objects",
-        "wall"
+        "wall",
+        "west"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "L02",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.json",
-        "sha256": "37804dde9d359f26d63bc8a78d1ff3d666bfcff39101bb2b025fffeeb4726a73",
-        "anchor_declared": [
-          0,
-          64
-        ],
-        "anchor_registered": [
-          32,
-          64
-        ],
-        "identity": "L02"
+        "kind": "image_gen_master",
+        "master": "assets_hd/lighting/west_wall_lantern/v001/hero_wall_lantern_west.png",
+        "master_sha256": "e1beb2284d9804e1ae51480c63af498d916f6d0aa992e2d8622fb0a361a6c623",
+        "request_id": "ART-0023"
       }
     },
     {
@@ -4596,25 +4563,25 @@
     },
     {
       "instance_id": "LeftSideWallBanner",
-      "asset_id": "D04",
+      "asset_id": "D24",
       "category": "decor",
-      "subtype": "decal",
-      "texture_path": "res://assets_generated/decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.png",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D24_Side_Banner_East_Facing_Long.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        31,
+        111
       ],
       "anchor": [
-        32,
-        128
+        15,
+        111
       ],
       "layer": "back_objects",
       "position": [
         258.0,
         439
       ],
-      "scale": 0.65,
+      "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -4631,57 +4598,44 @@
       },
       "shadow": {
         "type": "none",
-        "opacity": 0.0,
-        "offset_x": 0,
-        "offset_y": 0
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
       },
       "tags": [
         "banner",
-        "blue",
-        "decal",
         "decor",
-        "long",
-        "wall"
+        "east",
+        "side"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "D04",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.json",
-        "sha256": "bb374378e3db8181cefb85ef40a4da65d8a661a6d975ffcdd144959266d4c310",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "D04"
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/side_banners/v001/hero_side_banner_east_facing_long.png",
+        "master_sha256": "dc261e1f2bf9e33db2e55525b399b2866d38a8c1fe930d0879290f600434d522",
+        "request_id": "ART-0023"
       }
     },
     {
       "instance_id": "RightSideWallBanner",
-      "asset_id": "D05",
+      "asset_id": "D26",
       "category": "decor",
-      "subtype": "decal",
-      "texture_path": "res://assets_generated/decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.png",
+      "subtype": "banner",
+      "texture_path": "res://map_factory/parts/decor/D26_Side_Banner_West_Facing_Long.png",
       "asset_status": "ready",
       "pixel_size": [
-        64,
-        128
+        53,
+        142
       ],
       "anchor": [
-        32,
-        128
+        26,
+        142
       ],
       "layer": "back_objects",
       "position": [
         1282.0,
         439
       ],
-      "scale": 0.65,
+      "scale": 1.0,
       "rotation_degrees": 0,
       "flip_h": false,
       "z_index": 0,
@@ -4698,34 +4652,21 @@
       },
       "shadow": {
         "type": "none",
-        "opacity": 0.0,
-        "offset_x": 0,
-        "offset_y": 0
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
       },
       "tags": [
         "banner",
-        "blue",
-        "decal",
         "decor",
-        "short",
-        "wall"
+        "side",
+        "west"
       ],
       "source": {
-        "kind": "image_gen_environment_pack",
-        "pack": "assets_generated",
-        "pack_asset_id": "D05",
-        "pack_orientation": "default",
-        "sidecar": "assets_generated/decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.json",
-        "sha256": "174b8d5e6a89e9c611bde55c34f5f334a6c05c9fa09cb62f3bf3c19dbef9f080",
-        "anchor_declared": [
-          0,
-          128
-        ],
-        "anchor_registered": [
-          32,
-          128
-        ],
-        "identity": "D05"
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/side_banners/v001/hero_side_banner_west_facing_long.png",
+        "master_sha256": "5f37ff69fae6ec23adf22f1b77e568cdeaedc8bb1f4662907e70414e1fff0be6",
+        "request_id": "ART-0023"
       }
     },
     {

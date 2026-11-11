@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 23,
+  "version": 24,
   "processing_passes": [
     "background",
     "ground",
@@ -1905,25 +1905,25 @@
       },
       {
         "instance_id": "RearRightDoor",
-        "asset_id": "A09",
+        "asset_id": "A23",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
           1105.875,
           297.75
         ],
-        "scale": 1.75,
+        "scale": 1.5,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/architecture/A09__architecture__decorative_ruined_stone_door__default__1x1__128x128.png",
+        "texture_path": "res://map_factory/parts/architecture/A23_Compass_Wood_Door_South.png",
         "pixel_size": [
-          128,
-          128
+          91,
+          144
         ],
         "origin": [
-          64,
-          128
+          45,
+          144
         ],
         "status": "ready",
         "collision": {
@@ -1989,7 +1989,7 @@
       },
       {
         "instance_id": "PerimeterWall_03_00",
-        "asset_id": "W027",
+        "asset_id": "W036",
         "source_layer": "back_objects",
         "render_layer": "walls",
         "position": [
@@ -2000,14 +2000,14 @@
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://map_factory/parts/walls/W027_Wall_Straight_Long_A.png",
+        "texture_path": "res://map_factory/parts/architecture/W036_Wall_Straight_Window_Opening.png",
         "pixel_size": [
           320,
-          95
+          168
         ],
         "origin": [
           160,
-          95
+          168
         ],
         "status": "ready",
         "collision": {
@@ -3412,25 +3412,25 @@
       },
       {
         "instance_id": "RightWallLantern2",
-        "asset_id": "L02",
+        "asset_id": "L06",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
           1300.0,
           440.0
         ],
-        "scale": 0.5,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+        "texture_path": "res://map_factory/parts/lighting/L06_Wall_Lantern_West.png",
         "pixel_size": [
-          64,
-          64
+          29,
+          45
         ],
         "origin": [
-          32,
-          64
+          14,
+          45
         ],
         "status": "ready",
         "collision": {
@@ -3445,9 +3445,9 @@
           ]
         },
         "shadow": {
-          "type": "contact_small",
-          "opacity": 0.2,
-          "offset_x": 3,
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
           "offset_y": 2
         },
         "attachment": {
@@ -3510,25 +3510,25 @@
       },
       {
         "instance_id": "RightWallLantern6",
-        "asset_id": "L02",
+        "asset_id": "L06",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
           1300.0,
           700.0
         ],
-        "scale": 0.5,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+        "texture_path": "res://map_factory/parts/lighting/L06_Wall_Lantern_West.png",
         "pixel_size": [
-          64,
-          64
+          29,
+          45
         ],
         "origin": [
-          32,
-          64
+          14,
+          45
         ],
         "status": "ready",
         "collision": {
@@ -3543,9 +3543,9 @@
           ]
         },
         "shadow": {
-          "type": "contact_small",
-          "opacity": 0.2,
-          "offset_x": 3,
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
           "offset_y": 2
         },
         "attachment": {
@@ -3657,25 +3657,25 @@
       },
       {
         "instance_id": "LeftSideWallBanner",
-        "asset_id": "D04",
+        "asset_id": "D24",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
           243.0,
           438.0
         ],
-        "scale": 0.65,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/decor/D04__decor__long_blue_wall_banner__default__1x1__64x128.png",
+        "texture_path": "res://map_factory/parts/decor/D24_Side_Banner_East_Facing_Long.png",
         "pixel_size": [
-          64,
-          128
+          31,
+          111
         ],
         "origin": [
-          32,
-          128
+          15,
+          111
         ],
         "status": "ready",
         "collision": {
@@ -3691,9 +3691,9 @@
         },
         "shadow": {
           "type": "none",
-          "opacity": 0.0,
-          "offset_x": 0,
-          "offset_y": 0
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
         },
         "attachment": {
           "parent_instance_id": "PerimeterWall_00_02",
@@ -3706,25 +3706,25 @@
       },
       {
         "instance_id": "RightSideWallBanner",
-        "asset_id": "D05",
+        "asset_id": "D26",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
           1300.0,
           438.0
         ],
-        "scale": 0.65,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/decor/D05__decor__short_blue_wall_banner__default__1x1__64x128.png",
+        "texture_path": "res://map_factory/parts/decor/D26_Side_Banner_West_Facing_Long.png",
         "pixel_size": [
-          64,
-          128
+          53,
+          142
         ],
         "origin": [
-          32,
-          128
+          26,
+          142
         ],
         "status": "ready",
         "collision": {
@@ -3740,9 +3740,9 @@
         },
         "shadow": {
           "type": "none",
-          "opacity": 0.0,
-          "offset_x": 0,
-          "offset_y": 0
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
         },
         "attachment": {
           "parent_instance_id": "PerimeterWall_16_02",
@@ -7584,17 +7584,17 @@
       {
         "instance_id": "RearRightDoor__shadow",
         "owner_instance_id": "RearRightDoor",
-        "owner_asset_id": "A09",
+        "owner_asset_id": "A23",
         "asset_id": "S016",
         "texture_path": "res://map_factory/parts/shadows/S016_Shadow_Soft_Diagonal.png",
         "position": [
           1105.875,
           297.75
         ],
-        "scale": 1.75,
+        "scale": 1.5,
         "sprite_pixel_size": [
-          128,
-          128
+          91,
+          144
         ],
         "settings": {
           "type": "soft_cast",
@@ -7632,7 +7632,7 @@
       {
         "instance_id": "PerimeterWall_03_00__shadow",
         "owner_instance_id": "PerimeterWall_03_00",
-        "owner_asset_id": "W027",
+        "owner_asset_id": "W036",
         "asset_id": "S013",
         "texture_path": "res://map_factory/parts/shadows/S013_Shadow_Wall_Base.png",
         "position": [
@@ -7642,7 +7642,7 @@
         "scale": 1.05,
         "sprite_pixel_size": [
           320,
-          95
+          168
         ],
         "settings": {
           "type": "wall_base",
@@ -8398,57 +8398,9 @@
         "display_z": 20
       },
       {
-        "instance_id": "RightWallLantern2__shadow",
-        "owner_instance_id": "RightWallLantern2",
-        "owner_asset_id": "L02",
-        "asset_id": "S001",
-        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-        "position": [
-          1300.0,
-          440.0
-        ],
-        "scale": 0.5,
-        "sprite_pixel_size": [
-          64,
-          64
-        ],
-        "settings": {
-          "type": "contact_small",
-          "opacity": 0.2,
-          "offset_x": 3,
-          "offset_y": 2
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
         "instance_id": "RightWallLantern4__shadow",
         "owner_instance_id": "RightWallLantern4",
         "owner_asset_id": "L01",
-        "asset_id": "S001",
-        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-        "position": [
-          1300.0,
-          700.0
-        ],
-        "scale": 0.5,
-        "sprite_pixel_size": [
-          64,
-          64
-        ],
-        "settings": {
-          "type": "contact_small",
-          "opacity": 0.2,
-          "offset_x": 3,
-          "offset_y": 2
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "RightWallLantern6__shadow",
-        "owner_instance_id": "RightWallLantern6",
-        "owner_asset_id": "L02",
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
@@ -10477,14 +10429,14 @@
     "ground": 3,
     "walls": 33,
     "decorations": 86,
-    "shadows": 89
+    "shadows": 87
   },
   "unique_asset_ids": [
     "A01",
     "A05",
-    "A09",
     "A19",
     "A20",
+    "A23",
     "B03",
     "B05",
     "B06",
@@ -10497,6 +10449,8 @@
     "D21",
     "D22",
     "D23",
+    "D24",
+    "D26",
     "E025",
     "E026",
     "E027",
@@ -10537,6 +10491,7 @@
     "L03",
     "L04",
     "L05",
+    "L06",
     "O001",
     "O003",
     "P01",
@@ -10578,10 +10533,10 @@
     "V033",
     "V034",
     "W01",
-    "W027",
     "W028",
     "W033",
     "W034",
+    "W036",
     "W08",
     "W09",
     "W10",
