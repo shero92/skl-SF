@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`cliff_foam_loop/`](cliff_foam_loop/FILES.md)
 - [`drifting_clouds/`](drifting_clouds/FILES.md)
 - [`sea_coast/`](sea_coast/FILES.md)
 - [`sea_light_lattice/`](sea_light_lattice/FILES.md)

@@ -22,6 +22,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0013_codex_0d6aae69a1.json`](TASK-0013_codex_0d6aae69a1.json)
 - [`TASK-0013_codex_54bc2d9163.json`](TASK-0013_codex_54bc2d9163.json)
 - [`TASK-0013_codex_ed19511935.json`](TASK-0013_codex_ed19511935.json)
+- [`TASK-0014_codex_03cade8885.json`](TASK-0014_codex_03cade8885.json)
 - [`TASK-0015_claude_4a5800581a.json`](TASK-0015_claude_4a5800581a.json)
 - [`TASK-0016_codex_93e17f75f5.json`](TASK-0016_codex_93e17f75f5.json)
 - [`TASK-0016_codex_c8230ccd42.json`](TASK-0016_codex_c8230ccd42.json)
