@@ -44,6 +44,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0034_hero_room_sea_stacks_and_arches.md`](ART-0034_hero_room_sea_stacks_and_arches.md)
 - [`ART-0035_hero_room_planters_flowers_palms.md`](ART-0035_hero_room_planters_flowers_palms.md)
 - [`ART-0036_weapon_icons_and_type_sprites.md`](ART-0036_weapon_icons_and_type_sprites.md)
+- [`ART-0037_hero_room_sea_light_lattice.md`](ART-0037_hero_room_sea_light_lattice.md)
+- [`ART-0038_hero_room_window_wall_piece.md`](ART-0038_hero_room_window_wall_piece.md)
+- [`ART-0039_hero_room_wooden_stool.md`](ART-0039_hero_room_wooden_stool.md)
 - [`GOAL-0001_request_coverage.json`](GOAL-0001_request_coverage.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

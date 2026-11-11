@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`blue_white_planter/`](blue_white_planter/FILES.md)
 - [`coastal_garden/`](coastal_garden/FILES.md)
 
 ## Files

@@ -1,0 +1,4 @@
+{
+  "hero_stone_sphere_finial_attempt_01.png": "Not selected: oversized ball relative to shaft; newer independent candidate has smaller target-like sphere. Brown RGB outside object has alpha zero, not a rendered halo.",
+  "hero_stone_sphere_finial_attempt_02.png": "Not selected: retains same oversized sphere. Alpha-zero brown RGB is invisible in renderer."
+}

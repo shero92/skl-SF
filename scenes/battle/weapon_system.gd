@@ -75,10 +75,11 @@ func equip(unit: Dictionary, weapon_id: String) -> Dictionary:
 	if reason != "":
 		return {"ok": false, "reason": reason, "previous": unit.get("weapon_id", "")}
 	var previous: String = unit.get("weapon_id", "")
+	var slot: int = unit.inventory.find(weapon_id)
 	unit.inventory.erase(weapon_id)
 	unit.weapon_id = weapon_id
 	if previous != "":
-		unit.inventory.append(previous)
+		unit.inventory.insert(slot, previous) # swap in place, like Shining Force
 	return {"ok": true, "reason": "", "previous": previous}
 
 
@@ -196,7 +197,11 @@ func crit_chance(attacker: Dictionary) -> int:
 
 ## Damage of a normal hit: max(1, attacker attack - defender defense); crits deal 1.5x (rounded down).
 func damage(attacker: Dictionary, defender: Dictionary, critical: bool = false) -> int:
-	var raw := int(effective_stats(attacker).attack) - int(effective_stats(defender).defense)
+	var defense := int(effective_stats(defender).defense)
+	var item := weapon(active_weapon_id(attacker))
+	if data.get("weapon_types", {}).get(item.get("type", ""), {}).get("kind", "") == "magic":
+		defense = 0  # magic weapons (staffs) ignore the target's defense
+	var raw := int(effective_stats(attacker).attack) - defense
 	var dealt := maxi(1, raw)
 	return int(dealt * 1.5) if critical else dealt
 

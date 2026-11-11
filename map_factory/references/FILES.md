@@ -18,6 +18,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`hero_room_01_target_20261103.png`](hero_room_01_target_20261103.png)
 - [`hero_room_01_target_20261103.png.import`](hero_room_01_target_20261103.png.import)
 - [`hero_room_01_target_20261103.reference.json`](hero_room_01_target_20261103.reference.json)
+- [`hero_room_01_target_20261110.reference.json`](hero_room_01_target_20261110.reference.json)
+- [`hero_room_01_target_20261110.webp`](hero_room_01_target_20261110.webp)
 - [`hero_room_reference_v2.png`](hero_room_reference_v2.png)
 - [`hero_room_reference_v2.png.import`](hero_room_reference_v2.png.import)
 

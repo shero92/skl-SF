@@ -1,0 +1,257 @@
+{
+  "request_id": "ART-0024",
+  "task_id": "TASK-0054",
+  "status": "rendered_unreviewed",
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_post.png",
+      "sha256": "3704229fb6882449fb69a93f4bef52497bc488adbe4f2fcaef32b7dcd990dc36",
+      "pixel_size": [
+        108,
+        166
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "foot": [
+          25.25,
+          82.75
+        ],
+        "front_post_foot": [
+          25.25,
+          82.75
+        ]
+      },
+      "builder": "rope_fence",
+      "params": {
+        "height": 0.82,
+        "radius": 0.17,
+        "sag": 0.22,
+        "rope": 0.028,
+        "posts": [
+          [
+            0,
+            0
+          ]
+        ],
+        "seed": 61
+      },
+      "master": ".agents/graphics/deliveries/ART-0024/hero_rope_post@4x.png",
+      "master_sha256": "4d63b2610799336a6aa80f9dd1b3823adec7c5a149461a61a9b2443cd76c8846",
+      "palette": {
+        "opaque_px": 1479,
+        "mean_rgb": [
+          83,
+          60,
+          39
+        ],
+        "hue_deg": 29,
+        "lightness": 0.239,
+        "saturation": 0.361,
+        "pixel_saturation": 0.362,
+        "opaque_size": [
+          26,
+          77
+        ]
+      },
+      "shadow": ".agents/graphics/deliveries/ART-0024/hero_rope_post_shadow.png"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_west_rail.png",
+      "sha256": "163fc4d9615cd85a7674ccf7b3416488e6f5cb727abea3dea75b5fdd6b7077f2",
+      "pixel_size": [
+        173,
+        262
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "foot": [
+          90.5,
+          179.75
+        ],
+        "front_post_foot": [
+          90.5,
+          179.75
+        ],
+        "back_post_foot": [
+          24.58,
+          81.19
+        ]
+      },
+      "builder": "rope_fence",
+      "params": {
+        "height": 0.82,
+        "radius": 0.17,
+        "sag": 0.22,
+        "rope": 0.028,
+        "posts": [
+          [
+            0,
+            0
+          ],
+          [
+            -1.03,
+            1.54
+          ]
+        ],
+        "seed": 62
+      },
+      "master": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_west_rail@4x.png",
+      "master_sha256": "a43b590b4561b97711a0cd2f6692110ff58a51c92ba070983f5c353fc5bfc1b6",
+      "palette": {
+        "opaque_px": 3300,
+        "mean_rgb": [
+          96,
+          70,
+          45
+        ],
+        "hue_deg": 29,
+        "lightness": 0.276,
+        "saturation": 0.362,
+        "pixel_saturation": 0.37,
+        "opaque_size": [
+          94,
+          174
+        ]
+      },
+      "shadow": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_west_rail_shadow.png"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_east_rail.png",
+      "sha256": "7177b18ea3c5d9731b456c1069003bffdba5fdf9dff6f623a8c32b5b08329c4e",
+      "pixel_size": [
+        167,
+        232
+      ],
+      "facing": "south",
+      "anchors_px": {
+        "foot": [
+          25.25,
+          149.5
+        ],
+        "front_post_foot": [
+          25.25,
+          149.5
+        ],
+        "back_post_foot": [
+          85.41,
+          82.3
+        ]
+      },
+      "builder": "rope_fence",
+      "params": {
+        "height": 0.82,
+        "radius": 0.17,
+        "sag": 0.22,
+        "rope": 0.028,
+        "posts": [
+          [
+            0,
+            0
+          ],
+          [
+            0.94,
+            1.05
+          ]
+        ],
+        "seed": 63
+      },
+      "master": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_east_rail@4x.png",
+      "master_sha256": "43fe907e1a769790d9d8dbe10bf7b7a11d4ca2e3d65519844412028725205626",
+      "palette": {
+        "opaque_px": 3249,
+        "mean_rgb": [
+          95,
+          70,
+          44
+        ],
+        "hue_deg": 31,
+        "lightness": 0.273,
+        "saturation": 0.367,
+        "pixel_saturation": 0.374,
+        "opaque_size": [
+          88,
+          143
+        ]
+      },
+      "shadow": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_east_rail_shadow.png"
+    }
+  ],
+  "extra_files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_post@4x.png",
+      "sha256": "4d63b2610799336a6aa80f9dd1b3823adec7c5a149461a61a9b2443cd76c8846",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_post_shadow.png",
+      "sha256": "6e6a656e1bed4c5d65727b4e0ab7efcdea43da6204629eadf4c4fb1c20b70eb7",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_west_rail@4x.png",
+      "sha256": "a43b590b4561b97711a0cd2f6692110ff58a51c92ba070983f5c353fc5bfc1b6",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_west_rail_shadow.png",
+      "sha256": "13d0da4c0bf09ee237e290ac667d40a5e2747f35f4af576f4d0ff984738ad8f3",
+      "role": "separate cast shadow"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_east_rail@4x.png",
+      "sha256": "43fe907e1a769790d9d8dbe10bf7b7a11d4ca2e3d65519844412028725205626",
+      "role": "4x master"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0024/hero_rope_swag_east_rail_shadow.png",
+      "sha256": "3cc4fac97f1f33657e7ef1328eeb766dbbe8dea5768dc0d26d20df1c1d7401e8",
+      "role": "separate cast shadow"
+    }
+  ],
+  "qa": {
+    "problems": [],
+    "warnings": [],
+    "expected_warnings": [],
+    "pairs": [
+      {
+        "a": "hero_rope_post.png",
+        "b": "hero_rope_swag_west_rail.png",
+        "same": 9.93,
+        "mirror": 13.42,
+        "rot90": 12.8
+      },
+      {
+        "a": "hero_rope_post.png",
+        "b": "hero_rope_swag_east_rail.png",
+        "same": 12.05,
+        "mirror": 14.57,
+        "rot90": 11.36
+      },
+      {
+        "a": "hero_rope_swag_west_rail.png",
+        "b": "hero_rope_swag_east_rail.png",
+        "same": 14.21,
+        "mirror": 14.43,
+        "rot90": 13.19
+      }
+    ]
+  },
+  "provenance": {
+    "tool": "blender",
+    "blender": "Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)",
+    "spec": "tools/blender/specs/ART-0024.json",
+    "toolkit_commit": "2a412e7ac7450cb4f8650b073eaa78fae102a58a",
+    "producing_agent": "claude",
+    "ai_image_generation": false
+  },
+  "reference": {
+    "path": ".agents/planner/goals/GOAL-0001/references/hero_room_reference.png",
+    "sha256": "01d918892ae29899f8277e590409588db5371e0019ea2c2e4ebb30f60073119c",
+    "owner_confirmed": false
+  },
+  "review": {
+    "visual_approval": null,
+    "note": "Checked only on the final Godot capture of the assembled room; pieces are improved and re-rendered from the spec, never hand-edited."
+  },
+  "cost": "unknown"
+}

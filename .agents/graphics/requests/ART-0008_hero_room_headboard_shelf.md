@@ -1,11 +1,11 @@
 ---
 id: ART-0008
-status: blocked_reference
+status: delivered
 owner: graphics-specialist
 task: TASK-0019
 dedupe_key: hero_room_headboard_shelf
 existing_asset_ids: P004,P014,P015
-output_paths: .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_north.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_east.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png, .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_west.png
+output_paths: .agents/graphics/deliveries/ART-0008/hero_headboard_shelf_south.png
 issue: 20
 ---
 # Headboard-mounted bookshelf and plant support
@@ -67,3 +67,12 @@ issue: 20
 ## Calibrated measurements (TASK-0038, 2026-10-27)
 - Source: docs/HERO_ROOM_CALIBRATION.md (reference SHA-256 verified; native = source px x 0.971; ground depth per D1).
 - Needed: low headboard shelf with books/coral, source 310,245-485,300 (175x55) -> native 170x53, rendered contact (427,249); P014 is a tall free-standing case (height ratio 3.17).
+
+## B2 target delivery — TASK-0031
+- Owner explicitly assigned image_gen production against `hero_room_01_target_20261110.webp`, SHA-256 `4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323`. New target spec supersedes legacy reference/size/scope proposals for these candidates.
+- Exact delivery paths and source hashes: `.agents/graphics/deliveries/ART-0008/manifest.json` (new images under `items`; compatibility `files` for ART-0022/0024 points to archived previous candidates).
+- Review: `game_factory/environment/ART-0008/v001/`. Sources and attempts retained. Literal master size deviations and unannotated footprints/mounts disclosed. No upscaling, no owner approval or integration.
+- Delivered south only per current target spec; north/east/west explicitly deferred.
+
+
+> Scope note (Claude, integration of B2): output_paths narrowed to the views Codex delivered in B2. The other views of the original request were deferred by the latest target spec and need a new request if wanted.

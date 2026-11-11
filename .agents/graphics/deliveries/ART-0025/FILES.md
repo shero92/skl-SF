@@ -6,10 +6,11 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`archive_pre_B1_20261110/`](archive_pre_B1_20261110/FILES.md)
 
 ## Files
 
+- [`README.md`](README.md)
 - [`hero_entrance_stairs_south.png`](hero_entrance_stairs_south.png)
 - [`hero_entrance_stairs_south@4x.png`](hero_entrance_stairs_south@4x.png)
 - [`manifest.json`](manifest.json)

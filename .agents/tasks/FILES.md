@@ -138,5 +138,16 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0131_painted_shadow_speed.md`](TASK-0131_painted_shadow_speed.md)
 - [`TASK-0132_runtime_docs.md`](TASK-0132_runtime_docs.md)
 - [`TASK-0133_strict_checks_after_regeneration.md`](TASK-0133_strict_checks_after_regeneration.md)
+- [`TASK-0134_hero_room_target_art_spec.md`](TASK-0134_hero_room_target_art_spec.md)
+- [`TASK-0135_hero_room_v0022_props.md`](TASK-0135_hero_room_v0022_props.md)
+- [`TASK-0136_equipment_menu.md`](TASK-0136_equipment_menu.md)
+- [`TASK-0137_shadow_cache.md`](TASK-0137_shadow_cache.md)
+- [`TASK-0138_battle_director.md`](TASK-0138_battle_director.md)
+- [`TASK-0139_weapon_balance_simulation.md`](TASK-0139_weapon_balance_simulation.md)
+- [`TASK-0140_balance_pass_one.md`](TASK-0140_balance_pass_one.md)
+- [`TASK-0141_staff_magic.md`](TASK-0141_staff_magic.md)
+- [`TASK-0142_balance_pass_two.md`](TASK-0142_balance_pass_two.md)
+- [`TASK-0143_hero_save.md`](TASK-0143_hero_save.md)
+- [`TASK-0144_room_v0023_b1_b2.md`](TASK-0144_room_v0023_b1_b2.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

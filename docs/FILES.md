@@ -32,6 +32,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`HERO_ROOM_HD_ART_PACK.md`](HERO_ROOM_HD_ART_PACK.md)
 - [`HERO_ROOM_LAYOUT_QA.md`](HERO_ROOM_LAYOUT_QA.md)
 - [`HERO_ROOM_RECOVERY_AUDIT.md`](HERO_ROOM_RECOVERY_AUDIT.md)
+- [`HERO_ROOM_TARGET_20261110_ASSET_SPEC.md`](HERO_ROOM_TARGET_20261110_ASSET_SPEC.md)
 - [`LIGHTING.md`](LIGHTING.md)
 - [`MAP_FACTORY_AUDIT_2026-11-02.md`](MAP_FACTORY_AUDIT_2026-11-02.md)
 - [`MAP_FACTORY_REFERENCE_DIAGNOSIS.md`](MAP_FACTORY_REFERENCE_DIAGNOSIS.md)
@@ -43,5 +44,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`REPOSITORY_CONSOLIDATION_REPORT.md`](REPOSITORY_CONSOLIDATION_REPORT.md)
 - [`ROOM_BLOCK_QA.md`](ROOM_BLOCK_QA.md)
 - [`RUNTIME_INTEGRATION.md`](RUNTIME_INTEGRATION.md)
+- [`WEAPON_BALANCE_REPORT_20261110.md`](WEAPON_BALANCE_REPORT_20261110.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

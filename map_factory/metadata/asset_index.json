@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "asset_count": 416,
+  "asset_count": 431,
   "extracted_count": 229,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
@@ -24920,6 +24920,815 @@
         "approved_by": "owner",
         "date": "2026-11-10",
         "evidence": "Owner chat 2026-11-10: all new graphics (ART-0032, ART-0033, ART-0034, ART-0035) agreed, start using them",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "A19",
+      "name": "Entrance Stairs South",
+      "category": "architecture",
+      "subtype": "stairs",
+      "texture_path": "res://map_factory/parts/architecture/A19_Entrance_Stairs_South.png",
+      "status": "ready",
+      "pixel_size": [
+        274,
+        233
+      ],
+      "origin": [
+        137,
+        233
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "entrance",
+        "ivy",
+        "stairs"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/entrance_stairs/v001/hero_entrance_stairs_south.png",
+        "master_sha256": "1ad183f2a4054081d747003c1c377bd0557a1d50f83fa56953c2a88949881adc",
+        "request_id": "ART-0025"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "A20",
+      "name": "Stone Sphere Finial",
+      "category": "architecture",
+      "subtype": "post",
+      "texture_path": "res://map_factory/parts/architecture/A20_Stone_Sphere_Finial.png",
+      "status": "ready",
+      "pixel_size": [
+        46,
+        120
+      ],
+      "origin": [
+        23,
+        120
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "architecture",
+        "finial",
+        "post",
+        "sphere"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/architecture/sphere_stair_post/v001/hero_stone_sphere_finial.png",
+        "master_sha256": "7480fde019f3e1cf63059109e1f08a7deaaa29ded16851eb550e5d62a548d475",
+        "request_id": "ART-0006"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "D20",
+      "name": "Compass Floor Inlay",
+      "category": "decor",
+      "subtype": "inlay",
+      "texture_path": "res://map_factory/parts/decor/D20_Compass_Floor_Inlay.png",
+      "status": "ready",
+      "pixel_size": [
+        252,
+        179
+      ],
+      "origin": [
+        126,
+        179
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "compass",
+        "decor",
+        "floor",
+        "inlay"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/compass_inlay/v001/hero_compass_floor_inlay.png",
+        "master_sha256": "4af0f23f62758cf2ba5baee1e8bf69af628689b827a1aef40d2465e37f69b955",
+        "request_id": "ART-0022"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "D21",
+      "name": "Rope Post",
+      "category": "decor",
+      "subtype": "fence",
+      "texture_path": "res://map_factory/parts/decor/D21_Rope_Post.png",
+      "status": "ready",
+      "pixel_size": [
+        23,
+        90
+      ],
+      "origin": [
+        11,
+        90
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "fence",
+        "post",
+        "rope"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/rope_post_fence/v001/hero_rope_post.png",
+        "master_sha256": "f8622227f1085197dc47bd1ef96f29f03fb69d61302647de0e39e1392ab5c15e",
+        "request_id": "ART-0024"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "D22",
+      "name": "Rope Swag West Rail",
+      "category": "decor",
+      "subtype": "fence",
+      "texture_path": "res://map_factory/parts/decor/D22_Rope_Swag_West_Rail.png",
+      "status": "ready",
+      "pixel_size": [
+        110,
+        30
+      ],
+      "origin": [
+        55,
+        30
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "rail",
+        "rope",
+        "west"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/rope_post_fence/v001/hero_rope_swag_west_rail.png",
+        "master_sha256": "56dd9716f6b29d46726fef5d1784fa233acb2c7cb6491a3ce3ba46d5698850a8",
+        "request_id": "ART-0024"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "D23",
+      "name": "Rope Swag East Rail",
+      "category": "decor",
+      "subtype": "fence",
+      "texture_path": "res://map_factory/parts/decor/D23_Rope_Swag_East_Rail.png",
+      "status": "ready",
+      "pixel_size": [
+        110,
+        37
+      ],
+      "origin": [
+        55,
+        37
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "decor",
+        "east",
+        "rail",
+        "rope"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/decor/rope_post_fence/v001/hero_rope_swag_east_rail.png",
+        "master_sha256": "429ce3027fb3d7ed47655ae60f2a2181ad195ccf89c8b39ef834032526b8365c",
+        "request_id": "ART-0024"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "P27",
+      "name": "Study Table South",
+      "category": "furniture",
+      "subtype": "table",
+      "texture_path": "res://map_factory/parts/furniture/P27_Study_Table_South.png",
+      "status": "ready",
+      "pixel_size": [
+        150,
+        100
+      ],
+      "origin": [
+        75,
+        100
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "south",
+        "study",
+        "table"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_table_views/v001/hero_study_table_south.png",
+        "master_sha256": "1b3ea8a1ee93dcbb6d01747ec70462f0664422e32b23b37a68badb7a0cbb6ff3",
+        "request_id": "ART-0019"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "P28",
+      "name": "Study Table North",
+      "category": "furniture",
+      "subtype": "table",
+      "texture_path": "res://map_factory/parts/furniture/P28_Study_Table_North.png",
+      "status": "ready",
+      "pixel_size": [
+        150,
+        107
+      ],
+      "origin": [
+        75,
+        107
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "north",
+        "study",
+        "table"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_table_views/v001/hero_study_table_north.png",
+        "master_sha256": "15c67a248c310c1feb3754eeebb0572e3152090d9c1f94ea71be3202f86fedbc",
+        "request_id": "ART-0019"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "P29",
+      "name": "Study Table East",
+      "category": "furniture",
+      "subtype": "table",
+      "texture_path": "res://map_factory/parts/furniture/P29_Study_Table_East.png",
+      "status": "ready",
+      "pixel_size": [
+        133,
+        110
+      ],
+      "origin": [
+        66,
+        110
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "east",
+        "furniture",
+        "study",
+        "table"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_table_views/v001/hero_study_table_east.png",
+        "master_sha256": "36c47434340e3f1cd52c78e074907b30aff653596b08e784a6479ce33ca00b7b",
+        "request_id": "ART-0019"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "P30",
+      "name": "Study Table West",
+      "category": "furniture",
+      "subtype": "table",
+      "texture_path": "res://map_factory/parts/furniture/P30_Study_Table_West.png",
+      "status": "ready",
+      "pixel_size": [
+        142,
+        110
+      ],
+      "origin": [
+        71,
+        110
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "study",
+        "table",
+        "west"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_table_views/v001/hero_study_table_west.png",
+        "master_sha256": "a33878c952c3dcb9790cbbc6a69c34c47bfd2b10e201730bb4591f79affa0acb",
+        "request_id": "ART-0019"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "P31",
+      "name": "Study Wooden Stool",
+      "category": "furniture",
+      "subtype": "stool",
+      "texture_path": "res://map_factory/parts/furniture/P31_Study_Wooden_Stool.png",
+      "status": "ready",
+      "pixel_size": [
+        30,
+        40
+      ],
+      "origin": [
+        15,
+        40
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "stool",
+        "study"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_stool/v001/study_wooden_stool.png",
+        "master_sha256": "4d0b2936583ff4abd81cf57ae2648d7d186f98701e2da72cb67a09d93bf9b86f",
+        "request_id": "ART-0039"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "P32",
+      "name": "Study Bookshelf South",
+      "category": "furniture",
+      "subtype": "bookshelf",
+      "texture_path": "res://map_factory/parts/furniture/P32_Study_Bookshelf_South.png",
+      "status": "ready",
+      "pixel_size": [
+        212,
+        124
+      ],
+      "origin": [
+        106,
+        124
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "armillary",
+        "bookshelf",
+        "furniture",
+        "south"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_bookshelf_views/v001/hero_study_bookshelf_south.png",
+        "master_sha256": "116feab55c4a93c208f2c360e42f5f9e05dbd0d7ab072c02edd61641f45372b4",
+        "request_id": "ART-0020"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "P33",
+      "name": "Study Bookshelf North",
+      "category": "furniture",
+      "subtype": "bookshelf",
+      "texture_path": "res://map_factory/parts/furniture/P33_Study_Bookshelf_North.png",
+      "status": "ready",
+      "pixel_size": [
+        197,
+        144
+      ],
+      "origin": [
+        98,
+        144
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "armillary",
+        "bookshelf",
+        "furniture",
+        "north"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/study_bookshelf_views/v001/hero_study_bookshelf_north.png",
+        "master_sha256": "fcb3079d48951276a1e245fa1bffdad591a5176282b6b002d66813b8733196c7",
+        "request_id": "ART-0020"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "P34",
+      "name": "Headboard Shelf South",
+      "category": "furniture",
+      "subtype": "shelf",
+      "texture_path": "res://map_factory/parts/furniture/P34_Headboard_Shelf_South.png",
+      "status": "ready",
+      "pixel_size": [
+        138,
+        85
+      ],
+      "origin": [
+        69,
+        85
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "furniture",
+        "headboard",
+        "shelf",
+        "south"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/furniture/headboard_shelf/v001/hero_headboard_shelf_south.png",
+        "master_sha256": "eaf81250b1acb7893ad977767d973a879c48cc3491389e1550c15027d7083f22",
+        "request_id": "ART-0008"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
+        "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
+      }
+    },
+    {
+      "id": "V034",
+      "name": "Blue White Planter",
+      "category": "vegetation",
+      "subtype": "planter",
+      "texture_path": "res://map_factory/parts/vegetation/V034_Blue_White_Planter.png",
+      "status": "ready",
+      "pixel_size": [
+        109,
+        150
+      ],
+      "origin": [
+        54,
+        150
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": true,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.25,
+        "offset_x": 4,
+        "offset_y": 2
+      },
+      "tags": [
+        "blue_white",
+        "flowers",
+        "planter",
+        "vegetation"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "image_gen_master",
+        "master": "assets_hd/plants/blue_white_planter/v001/hero_blue_white_planter.png",
+        "master_sha256": "7a4194588eaada83f4e210d6d76701cf2c6c6ab65bc6ea200b1955923f9f2a6d",
+        "request_id": "ART-0011"
+      },
+      "qa_notes": "Codex image_gen master (B1/B2 hero-room target batch); runtime part is a trimmed BOX downscale. Footprint and collision need scene calibration.",
+      "qa_approval": {
+        "approved_by": "owner",
+        "date": "2026-11-10",
+        "evidence": "Owner chat 2026-11-10: reviewed B1/B2 native captures, then 'merge and build' (integrate the delivered candidates)",
         "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
     }

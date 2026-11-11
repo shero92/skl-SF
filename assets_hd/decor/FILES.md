@@ -6,7 +6,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`compass_inlay/`](compass_inlay/FILES.md)
+- [`rope_post_fence/`](rope_post_fence/FILES.md)
 
 ## Files
 
