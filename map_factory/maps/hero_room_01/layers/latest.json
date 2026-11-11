@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 25,
+  "version": 26,
   "processing_passes": [
     "background",
     "ground",
@@ -1498,9 +1498,9 @@
         "render_layer": "ground",
         "position": [
           450.0,
-          609.0
+          660.0
         ],
-        "scale": 1.0,
+        "scale": 1.8,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
@@ -6704,6 +6704,90 @@
         "attachment": null
       },
       {
+        "instance_id": "ArchBaseFlowersLeft",
+        "asset_id": "V025",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          640.0,
+          305.0
+        ],
+        "scale": 0.7,
+        "rotation_degrees": -8.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/vegetation/V025_Flower_Mound_Blue.png",
+        "pixel_size": [
+          96,
+          64
+        ],
+        "origin": [
+          48,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null
+      },
+      {
+        "instance_id": "ArchBaseFlowersRight",
+        "asset_id": "P05",
+        "source_layer": "objects",
+        "render_layer": "decorations",
+        "position": [
+          850.0,
+          305.0
+        ],
+        "scale": 0.8,
+        "rotation_degrees": 14.0,
+        "flip_h": true,
+        "z_index": 0,
+        "texture_path": "res://assets_generated/plants/P05__plants__white_flower_cluster_medium__default__1x1__64x64.png",
+        "pixel_size": [
+          64,
+          64
+        ],
+        "origin": [
+          32,
+          64
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "attachment": null
+      },
+      {
         "instance_id": "LeftWallLantern0Glow",
         "asset_id": "L05",
         "source_layer": "front_objects",
@@ -7469,9 +7553,9 @@
         "texture_path": "res://map_factory/parts/shadows/S002_Shadow_Contact_Medium.png",
         "position": [
           450.0,
-          609.0
+          660.0
         ],
-        "scale": 1.0,
+        "scale": 1.8,
         "sprite_pixel_size": [
           192,
           256
@@ -9262,6 +9346,30 @@
         "display_z": 20
       },
       {
+        "instance_id": "ArchBaseFlowersRight__shadow",
+        "owner_instance_id": "ArchBaseFlowersRight",
+        "owner_asset_id": "P05",
+        "asset_id": "S010",
+        "texture_path": "res://map_factory/parts/shadows/S010_Shadow_Plant.png",
+        "position": [
+          850.0,
+          305.0
+        ],
+        "scale": 0.8,
+        "sprite_pixel_size": [
+          64,
+          64
+        ],
+        "settings": {
+          "type": "plant",
+          "opacity": 0.16,
+          "offset_x": 3,
+          "offset_y": 3
+        },
+        "render_layer": "shadows",
+        "display_z": 20
+      },
+      {
         "instance_id": "LeftWallLantern0Glow__shadow",
         "owner_instance_id": "LeftWallLantern0Glow",
         "owner_asset_id": "L05",
@@ -10428,8 +10536,8 @@
     "background": 35,
     "ground": 3,
     "walls": 33,
-    "decorations": 86,
-    "shadows": 87
+    "decorations": 88,
+    "shadows": 88
   },
   "unique_asset_ids": [
     "A01",

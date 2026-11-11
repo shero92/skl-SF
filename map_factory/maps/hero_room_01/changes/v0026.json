@@ -1,0 +1,51 @@
+{
+  "manifest_version": 1,
+  "map_id": "hero_room_01",
+  "base_version": 25,
+  "base_sha256": "7a33dde43ed484332b86d4b8543219b5d1ee75239f81e478d1e989345ea58255",
+  "note": "hero_room_01 v0026: bed rug enlarged and re-centred under the bed with free_transform; two independent flower pieces placed off-grid at the arch bases, turned and resized. Visual approval is still pending.",
+  "source_image": {
+    "path": "map_factory/references/hero_room_01_original.png",
+    "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+    "status": "reference_imported"
+  },
+  "changes": [
+    {
+      "op": "update_block",
+      "instance_id": "BedRug",
+      "set": {
+        "x": 450,
+        "y": 660,
+        "scale": 1.8,
+        "free_transform": true
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "V025",
+        "instance_id": "ArchBaseFlowersLeft",
+        "x": 640.0,
+        "y": 305.0,
+        "scale": 0.7,
+        "rotation_degrees": -8.0,
+        "free_transform": true
+      }
+    },
+    {
+      "op": "add_block",
+      "layer": "objects",
+      "block": {
+        "id": "P05",
+        "instance_id": "ArchBaseFlowersRight",
+        "x": 850.0,
+        "y": 305.0,
+        "scale": 0.8,
+        "rotation_degrees": 14.0,
+        "free_transform": true,
+        "flip_h": true
+      }
+    }
+  ]
+}

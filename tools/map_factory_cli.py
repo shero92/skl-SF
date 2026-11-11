@@ -56,8 +56,11 @@ def validate_transform(item, record, rules, ident):
     rotation = item.get("rotation_degrees", 0)
     if isinstance(rotation, bool):
         raise ValueError(f"Invalid rotation: {ident}")
-    if rotation % 90 != 0 and str(item.get("id")) not in rules["rotation_safe"] and not _is_flat_asset(record):
-        raise ValueError(f"{ident}: free rotation needs a rotation_safe or flat asset; use the four facing variants for upright pieces")
+    free = item.get("free_transform", False)
+    if not isinstance(free, bool):
+        raise ValueError(f"{ident}: free_transform must be boolean")
+    if rotation % 90 != 0 and not free and str(item.get("id")) not in rules["rotation_safe"] and not _is_flat_asset(record):
+        raise ValueError(f"{ident}: free rotation needs free_transform, a rotation_safe or a flat asset")
 
 
 EXCLUDED_GAMEPLAY = frozenset(("npcs", "player_spawn", "interactions"))
@@ -539,6 +542,7 @@ def build_block_manifest(snapshot, catalog):
                 "rotation_degrees": part.get("rotation_degrees", 0),
                 **({"orientation":orientation} if orientation else {}),
                 "flip_h": part.get("flip_h", False),
+                **({"free_transform": True} if part.get("free_transform") else {}),
                 "z_index": part.get("z_index", 0),
                 "collision": part.get("collision", resolved.get("collision", {})),
                 "shadow": part.get("shadow", resolved.get("shadow", {})),

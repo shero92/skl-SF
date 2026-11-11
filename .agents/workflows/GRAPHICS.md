@@ -15,6 +15,9 @@ The authorized workspace and canonical generated asset destination is `H:\shinin
 7. Build the actual room and produce a genuine Godot comparison sheet. Individual parts are checked by scripted QA; agent image viewing is limited to the assembled comparison. Numerical similarity and technical QA never count as visual approval.
 8. Set produced work to `delivered`/`review`, not `ready`/approved. Owner approval of the final assembled-room comparison remains mandatory. Integration uses a reviewed manifest, stable IDs and a new immutable map revision; never write directly over `map_factory/parts` or old maps.
 
+## Reference crop rule (owner, 2026-11-11)
+Every new art request for a piece that exists in an owner reference picture must carry, inside the request file: (1) the crop box in source pixels and the crop file cut from the source (`python tools/art_reference_crop.py`, output under `.agents/graphics/requests/reference_crops/`); (2) the target-vs-game comparison image from the same tool; (3) an exact description: which single piece, its on-canvas size, plan shape, which face is visible and which compass direction it looks, camera and light, and an explicit list of what must NOT be drawn. One request output = one piece at one angle. Plants, banners, lanterns and other decoration are always separate pieces so the Map Factory can place them anywhere.
+
 ## States and handoff
 Requests follow `blocked_reference -> requested -> in_progress -> delivered -> reviewed -> integrated`, or `cancelled` with evidence. Missing reference, measurement, executable or host permission blocks only its affected task. Do not call Blender unsupported solely because the agent is Codex or Claude. Producer, independent review and owner acceptance remain distinct; no self-approval or automatic art merge.
 

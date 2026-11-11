@@ -151,10 +151,15 @@ def validate_grid_placements(snapshot, catalog):
                 raise ValueError(f"{ident}: invalid facing")
             if require_review and cfg["measurement_status"] != "reviewed":
                 raise ValueError(f"{ident}: measured footprint has not been visually reviewed")
-            if item.get("rotation_degrees", 0) not in (0, 0.0):
-                raise ValueError(f"{ident}: use grid_placement.facing, not arbitrary sprite rotation")
-            if float(item.get("scale", 1)) != 1.0:
-                raise ValueError(f"{ident}: scaling changes grid footprint; use scale=1 and native-sized sprite art")
+            # free_transform: the cell still reserves the walking grid, but the drawn sprite may be
+            # moved, turned and resized freely (room design is visual; movement stays on squares).
+            free = item.get("free_transform", False)
+            if not isinstance(free, bool):
+                raise ValueError(f"{ident}: free_transform must be boolean")
+            if not free and item.get("rotation_degrees", 0) not in (0, 0.0):
+                raise ValueError(f"{ident}: use grid_placement.facing, not arbitrary sprite rotation (or set free_transform)")
+            if not free and float(item.get("scale", 1)) != 1.0:
+                raise ValueError(f"{ident}: scaling changes grid footprint; use scale=1 and native-sized sprite art (or set free_transform)")
             if facing != "north":
                 if "rug" in record.get("tags", []) and item.get("facing") == facing and item.get("orientation_mode") == "rotate":
                     pass
@@ -163,7 +168,7 @@ def validate_grid_placements(snapshot, catalog):
             elif item.get("facing", "north") != facing:
                 raise ValueError(f"{ident}: grid facing differs from rendered sprite facing")
             actual = world_anchor(snapshot, cfg, *xy, facing)
-            if any(not math.isfinite(v) or abs(float(item[k]) - v) > 0.01 for k, v in zip(("x", "y"), actual)):
+            if not free and any(not math.isfinite(v) or abs(float(item[k]) - v) > 0.01 for k, v in zip(("x", "y"), actual)):
                 raise ValueError(f"{ident}: x/y must match exact grid bottom-center anchor {actual}")
             cells = resolved_cells(cfg, xy[0], xy[1], facing)
             for cell in cells:
