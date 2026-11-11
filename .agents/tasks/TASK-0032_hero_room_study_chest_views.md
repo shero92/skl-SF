@@ -40,3 +40,5 @@ Produce four independent plain oak chest views, per current target reference SHA
 - `python tools/run_tests.py --changed --timeout120`: **85/85 passed**, exit0.
 - Sources/metadata copied to project root with SHA receipt; no cache dependency. Owner review and footprint/collider/depth calibration pending.
 - Next: owner reviews candidate set, Claude integrates accepted art without altering prior masters/maps.
+
+- Review PR: https://github.com/shero92/skl-SF/pull/166 (draft; owner approval and integration pending).
