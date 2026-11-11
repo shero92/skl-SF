@@ -168,3 +168,4 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0164](../tasks/TASK-0164_room_full_view.md) | review | claude | TASK-0163 | none |
 | [TASK-0165](../tasks/TASK-0165_hands_on_room_editor.md) | review | claude | TASK-0164 | none |
 | [TASK-0166](../tasks/TASK-0166_room_editor_stage_two.md) | review | claude | TASK-0165 | none |
+| [TASK-0167](../tasks/TASK-0167_battle_maps_from_editor.md) | review | claude | TASK-0166 | none |

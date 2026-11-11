@@ -26,6 +26,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`t0163_v0028/`](t0163_v0028/FILES.md)
 - [`t0164_v0029/`](t0164_v0029/FILES.md)
 - [`t0165_editor/`](t0165_editor/FILES.md)
+- [`t0167_battle_maps/`](t0167_battle_maps/FILES.md)
 - [`task0102_v17_review/`](task0102_v17_review/FILES.md)
 
 ## Files

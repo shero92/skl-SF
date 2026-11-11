@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`battle/`](battle/FILES.md)
+- [`battles/`](battles/FILES.md)
 - [`environment/`](environment/FILES.md)
 - [`golden_cyclone/`](golden_cyclone/FILES.md)
 - [`hero_attack_style/`](hero_attack_style/FILES.md)

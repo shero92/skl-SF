@@ -171,5 +171,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0164_room_full_view.md`](TASK-0164_room_full_view.md)
 - [`TASK-0165_hands_on_room_editor.md`](TASK-0165_hands_on_room_editor.md)
 - [`TASK-0166_room_editor_stage_two.md`](TASK-0166_room_editor_stage_two.md)
+- [`TASK-0167_battle_maps_from_editor.md`](TASK-0167_battle_maps_from_editor.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
