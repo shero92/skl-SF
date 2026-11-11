@@ -13,6 +13,7 @@ var equipment_menu: EquipmentMenu
 
 const MAP_ID := "hero_room_01"
 const BATTLE_SCENE := "res://scenes/battle/tactical_battle.tscn"
+const EDITOR_SCENE := "res://scenes/map_factory_editor.tscn"
 # Gameplay data (spawn, NPCs, interaction spots) stays in the legacy room JSON.
 const GAMEPLAY_PATH := "res://map_factory/rooms/hero_room.json"
 
@@ -111,6 +112,10 @@ func _unhandled_input(event: InputEvent) -> void:
         return
     if is_equipment_open():
         return # no interactions while the menu is open
+    if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F2:
+        get_viewport().set_input_as_handled()
+        get_tree().change_scene_to_file(EDITOR_SCENE)  # hands-on room editor; Esc there returns to the room
+        return
     if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_B:
         get_viewport().set_input_as_handled()
         get_tree().change_scene_to_file(BATTLE_SCENE)  # practice skirmish; Esc there returns to the room

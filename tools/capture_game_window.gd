@@ -1,6 +1,6 @@
 extends SceneTree
 ## Saves what the real game window shows (main scene, real camera and window size) to a PNG.
-## Usage: godot --path . -s res://tools/capture_game_window.gd -- <output.png>
+## Usage: godot --path . -s res://tools/capture_game_window.gd -- <output.png> [res://scene.tscn]
 ## Agent: claude (Claude Code); model: Fable 5.2.
 
 func _initialize() -> void:
@@ -9,7 +9,8 @@ func _initialize() -> void:
 		push_error("Usage: -- <output.png>")
 		quit(1)
 		return
-	var scene: Node = load(String(ProjectSettings.get_setting("application/run/main_scene"))).instantiate()
+	var scene_path := args[1] if args.size() > 1 else String(ProjectSettings.get_setting("application/run/main_scene"))
+	var scene: Node = load(scene_path).instantiate()
 	root.add_child(scene)
 	for i in 12:
 		await process_frame
