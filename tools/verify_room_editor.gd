@@ -134,6 +134,7 @@ func _initialize() -> void:
 	_check(editor.create_map("editor_test_map", "courtyard")["ok"], "a new map name and preset are accepted (dry run)")
 	_check(not editor.create_map("hero_room_01", "courtyard")["ok"], "an existing map name is refused")
 	_check(not editor.create_map("Bad Name", "courtyard")["ok"], "an invalid map name is refused")
+	_check(not editor.create_map("", "courtyard")["ok"] and editor.status.begins_with("Type a name"), "an empty map name asks for a name")
 	_check(not editor.map_ids().has("editor_test_map"), "a dry run creates nothing")
 
 	# ---- Battle setup on the map's own squares.
