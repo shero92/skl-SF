@@ -1,6 +1,6 @@
 ---
 id: ART-0040
-status: requested
+status: delivered
 owner: graphics-specialist
 task: TASK-0102
 dedupe_key: hero_room_wall_lantern_east_pointing
@@ -23,7 +23,7 @@ output_paths: .agents/graphics/deliveries/ART-0040/hero_wall_lantern_east.png
 - [x] Specifications reviewed; marked `requested`.
 
 ## Graphics specialist checklist
-- [ ] Clean PNG produced (ONLY graphics specialist); SHA-256 manifest written; mark `delivered`.
+- [x] Clean PNG produced (ONLY graphics specialist); SHA-256 manifest written; mark `delivered`.
 
 ## QA checklist
 - [ ] Independent visual review at Godot native scale on the west wall; mark `reviewed`.

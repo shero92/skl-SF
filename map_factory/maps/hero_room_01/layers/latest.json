@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "version": 27,
+  "version": 28,
   "processing_passes": [
     "background",
     "ground",
@@ -1362,6 +1362,210 @@
           "offset_y": 2
         },
         "attachment": null
+      },
+      {
+        "instance_id": "CliffFoamWestA",
+        "asset_id": "B15",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          250.0,
+          1040.0
+        ],
+        "scale": 2.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/B15_Cliff_Foam_01.png",
+        "pixel_size": [
+          96,
+          48
+        ],
+        "origin": [
+          48,
+          48
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "animation": {
+          "frames": [
+            "B15",
+            "B16",
+            "B17",
+            "B18"
+          ],
+          "fps": 4
+        }
+      },
+      {
+        "instance_id": "CliffFoamWestB",
+        "asset_id": "B15",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          480.0,
+          1046.0
+        ],
+        "scale": 2.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/B15_Cliff_Foam_01.png",
+        "pixel_size": [
+          96,
+          48
+        ],
+        "origin": [
+          48,
+          48
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "animation": {
+          "frames": [
+            "B15",
+            "B16",
+            "B17",
+            "B18"
+          ],
+          "fps": 4
+        }
+      },
+      {
+        "instance_id": "CliffFoamEastA",
+        "asset_id": "B15",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1030.0,
+          1046.0
+        ],
+        "scale": 2.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/B15_Cliff_Foam_01.png",
+        "pixel_size": [
+          96,
+          48
+        ],
+        "origin": [
+          48,
+          48
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "animation": {
+          "frames": [
+            "B15",
+            "B16",
+            "B17",
+            "B18"
+          ],
+          "fps": 4
+        }
+      },
+      {
+        "instance_id": "CliffFoamEastB",
+        "asset_id": "B15",
+        "source_layer": "background_objects",
+        "render_layer": "background",
+        "position": [
+          1280.0,
+          1040.0
+        ],
+        "scale": 2.0,
+        "rotation_degrees": 0.0,
+        "flip_h": false,
+        "z_index": 0,
+        "texture_path": "res://map_factory/parts/environment/B15_Cliff_Foam_01.png",
+        "pixel_size": [
+          96,
+          48
+        ],
+        "origin": [
+          48,
+          48
+        ],
+        "status": "ready",
+        "collision": {
+          "enabled": false,
+          "size": [
+            32,
+            16
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        "shadow": {
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
+          "offset_y": 2
+        },
+        "attachment": null,
+        "animation": {
+          "frames": [
+            "B15",
+            "B16",
+            "B17",
+            "B18"
+          ],
+          "fps": 4
+        }
       },
       {
         "instance_id": "TerraceCornerLeft",
@@ -3184,25 +3388,25 @@
       },
       {
         "instance_id": "LeftWallLantern2",
-        "asset_id": "L02",
+        "asset_id": "L07",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
           243.0,
           440.0
         ],
-        "scale": 0.5,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+        "texture_path": "res://map_factory/parts/lighting/L07_Wall_Lantern_East.png",
         "pixel_size": [
-          64,
-          64
+          29,
+          47
         ],
         "origin": [
-          32,
-          64
+          14,
+          47
         ],
         "status": "ready",
         "collision": {
@@ -3217,9 +3421,9 @@
           ]
         },
         "shadow": {
-          "type": "contact_small",
-          "opacity": 0.2,
-          "offset_x": 3,
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
           "offset_y": 2
         },
         "attachment": {
@@ -3282,25 +3486,25 @@
       },
       {
         "instance_id": "LeftWallLantern6",
-        "asset_id": "L02",
+        "asset_id": "L07",
         "source_layer": "back_objects",
         "render_layer": "decorations",
         "position": [
           243.0,
           700.0
         ],
-        "scale": 0.5,
+        "scale": 1.0,
         "rotation_degrees": 0.0,
         "flip_h": false,
         "z_index": 0,
-        "texture_path": "res://assets_generated/lighting/L02__lighting__lit_wall_lantern_glowless_base__default__1x1__64x64.png",
+        "texture_path": "res://map_factory/parts/lighting/L07_Wall_Lantern_East.png",
         "pixel_size": [
-          64,
-          64
+          29,
+          47
         ],
         "origin": [
-          32,
-          64
+          14,
+          47
         ],
         "status": "ready",
         "collision": {
@@ -3315,9 +3519,9 @@
           ]
         },
         "shadow": {
-          "type": "contact_small",
-          "opacity": 0.2,
-          "offset_x": 3,
+          "type": "none",
+          "opacity": 0.25,
+          "offset_x": 4,
           "offset_y": 2
         },
         "attachment": {
@@ -8212,57 +8416,9 @@
         "display_z": 20
       },
       {
-        "instance_id": "LeftWallLantern2__shadow",
-        "owner_instance_id": "LeftWallLantern2",
-        "owner_asset_id": "L02",
-        "asset_id": "S001",
-        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-        "position": [
-          243.0,
-          440.0
-        ],
-        "scale": 0.5,
-        "sprite_pixel_size": [
-          64,
-          64
-        ],
-        "settings": {
-          "type": "contact_small",
-          "opacity": 0.2,
-          "offset_x": 3,
-          "offset_y": 2
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
         "instance_id": "LeftWallLantern4__shadow",
         "owner_instance_id": "LeftWallLantern4",
         "owner_asset_id": "L01",
-        "asset_id": "S001",
-        "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
-        "position": [
-          243.0,
-          700.0
-        ],
-        "scale": 0.5,
-        "sprite_pixel_size": [
-          64,
-          64
-        ],
-        "settings": {
-          "type": "contact_small",
-          "opacity": 0.2,
-          "offset_x": 3,
-          "offset_y": 2
-        },
-        "render_layer": "shadows",
-        "display_z": 20
-      },
-      {
-        "instance_id": "LeftWallLantern6__shadow",
-        "owner_instance_id": "LeftWallLantern6",
-        "owner_asset_id": "L02",
         "asset_id": "S001",
         "texture_path": "res://map_factory/parts/shadows/S001_Shadow_Contact_Small.png",
         "position": [
@@ -10311,11 +10467,11 @@
     }
   },
   "counts": {
-    "background": 38,
+    "background": 42,
     "ground": 3,
     "walls": 33,
     "decorations": 88,
-    "shadows": 84
+    "shadows": 82
   },
   "unique_asset_ids": [
     "A01",
@@ -10330,6 +10486,7 @@
     "B12",
     "B13",
     "B14",
+    "B15",
     "D04",
     "D05",
     "D20",
@@ -10376,11 +10533,11 @@
     "G11",
     "G12",
     "L01",
-    "L02",
     "L03",
     "L04",
     "L05",
     "L06",
+    "L07",
     "O001",
     "O003",
     "P01",

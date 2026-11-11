@@ -1,0 +1,112 @@
+{
+ "manifest_version": 1,
+ "map_id": "hero_room_01",
+ "base_version": 27,
+ "base_sha256": "9d1687372fc75444868745d014a6b6473fc453d322cf9be08b53ca06b7590e57",
+ "note": "hero_room_01 v0028: east-pointing brass lanterns (ART-0040) on the west wall and four-phase animated cliff foam (ART-0003) at the cliff base. Visual approval is still pending.",
+ "source_image": {
+  "path": "map_factory/references/hero_room_01_original.png",
+  "sha256": "42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7",
+  "status": "reference_imported"
+ },
+ "changes": [
+  {
+   "op": "update_block",
+   "instance_id": "LeftWallLantern2",
+   "set": {
+    "scale": 1.0,
+    "id": "L07",
+    "free_transform": true
+   }
+  },
+  {
+   "op": "update_block",
+   "instance_id": "LeftWallLantern6",
+   "set": {
+    "scale": 1.0,
+    "id": "L07",
+    "free_transform": true
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "B15",
+    "instance_id": "CliffFoamWestA",
+    "x": 250.0,
+    "y": 1040.0,
+    "scale": 2.0,
+    "animation": {
+     "frames": [
+      "B15",
+      "B16",
+      "B17",
+      "B18"
+     ],
+     "fps": 4
+    }
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "B15",
+    "instance_id": "CliffFoamWestB",
+    "x": 480.0,
+    "y": 1046.0,
+    "scale": 2.0,
+    "animation": {
+     "frames": [
+      "B15",
+      "B16",
+      "B17",
+      "B18"
+     ],
+     "fps": 4
+    }
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "B15",
+    "instance_id": "CliffFoamEastA",
+    "x": 1030.0,
+    "y": 1046.0,
+    "scale": 2.0,
+    "animation": {
+     "frames": [
+      "B15",
+      "B16",
+      "B17",
+      "B18"
+     ],
+     "fps": 4
+    }
+   }
+  },
+  {
+   "op": "add_block",
+   "layer": "background_objects",
+   "block": {
+    "id": "B15",
+    "instance_id": "CliffFoamEastB",
+    "x": 1280.0,
+    "y": 1040.0,
+    "scale": 2.0,
+    "animation": {
+     "frames": [
+      "B15",
+      "B16",
+      "B17",
+      "B18"
+     ],
+     "fps": 4
+    }
+   }
+  }
+ ]
+}

@@ -70,6 +70,9 @@ class DesignApiTests(unittest.TestCase):
         self.assertEqual(remove, {"op": "remove_block", "instance_id": name})
         with self.assertRaises(ValueError):
             d.transform("NoSuchBlock", x=1)
+        d.place("B15", "TestFoam", 10, 20, layer="background_objects", animation={"frames": ["B15", "B16"], "fps": 4})
+        self.assertEqual(d.changes[-1]["block"]["animation"], {"frames": ["B15", "B16"], "fps": 4})
+        self.assertEqual(d.changes[-1]["layer"], "background_objects")
 
     def test_reference_crop_writes_target_and_comparison(self):
         from PIL import Image
