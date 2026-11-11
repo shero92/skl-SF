@@ -11,5 +11,6 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`editor_window.png`](editor_window.png)
+- [`editor_window_stage2.png`](editor_window_stage2.png)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
