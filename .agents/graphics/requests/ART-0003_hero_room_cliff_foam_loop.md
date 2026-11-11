@@ -1,7 +1,7 @@
 ---
 id: ART-0003
-status: blocked_reference
-owner: graphics-specialist
+status: delivered
+owner: codex
 task: TASK-0014
 dedupe_key: hero_room_cliff_foam_loop
 existing_asset_ids: E009,E011,E012,E013,E014
@@ -63,3 +63,9 @@ issue: 20
 - SHA256: 42511e4e05176d9057775fa05562ca5b91675d32ba70ae9b8ba1012b41df25a7.
 - Identity/provenance: map_factory/references/hero_room_01_original.reference.json; prior 1536x1024 goal image is preserved historical material.
 - Source identity gate is resolved by owner-provided bytes. Native output measurements, reuse review and artistic approval remain separate requirements; this amendment does not change production/review status.
+
+## Active production — 2026-11-11
+Agent: codex. TASK-0014, branch codex/hero-room-cliff-foam. Verified committed 20261110 target supersedes old reference blocker; 96x48 review scale provisional, 4 fps existing ocean cadence. Four independent built-in image_gen requests, equal canvas and contact registration to be verified. Automatic owner visual approval per docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md; technical loop acceptance stays separate.
+
+## Delivered — 2026-11-11
+Four independent RGBA PNGs, equal1774x887 canvases; native96x48 full-canvas nearest-neighbor reviews. 250ms per frame /4fps /1s cycle from current ocean cadence. Manifest and sources: game_factory/environment/ART-0003/v001, assets_hd/background/cliff_foam_loop/v001. Exact delivery paths populated. Real Godot12 viewport captures /3cycles and GIF; source/native/delivery/capture hashes verified. Contact-crest spread0.054nativepx. Owner automatic visual approval recorded; no room placement, terrain occlusion or production activation. Request delivered only, map calibration next.

@@ -83,6 +83,15 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Source PNG has no piece record"):
             catalog.build(self.root)
 
+    def test_new_delivery_publication_locator_comes_from_manifest(self):
+        p = self.root / self.manifest
+        data = json.loads(p.read_text(encoding="utf-8"))
+        data.update(delivery_branch="codex/new-art", pull_request="https://github.com/example/art/pull/9")
+        self.write_json(self.manifest, data)
+        row = catalog.build(self.root)["assets"][0]
+        self.assertEqual(row["publication"]["delivery_branch"], "codex/new-art")
+        self.assertEqual(row["publication"]["pull_request"], "https://github.com/example/art/pull/9")
+
 
 if __name__ == "__main__":
     unittest.main()

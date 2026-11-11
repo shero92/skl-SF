@@ -1,0 +1,57 @@
+{
+  "rgba": true,
+  "unique_source_hashes": 4,
+  "equal_canvases": true,
+  "source_pixels_per_native_pixel": 18.479166666666668,
+  "real_alpha0": true,
+  "alpha128_bounds_inside": true,
+  "white_crest_rows": [
+    280,
+    281,
+    281,
+    280
+  ],
+  "crest_registration_spread_native_px": 0.05411499436302142,
+  "adjacent_composited_differences": [
+    {
+      "from_frame": 0,
+      "to_frame": 1,
+      "mean_rgb_abs_difference": [
+        11.83962673611111,
+        7.470920138888889,
+        3.6653645833333335
+      ]
+    },
+    {
+      "from_frame": 1,
+      "to_frame": 2,
+      "mean_rgb_abs_difference": [
+        13.44509548611111,
+        8.328559027777779,
+        4.712456597222222
+      ]
+    },
+    {
+      "from_frame": 2,
+      "to_frame": 3,
+      "mean_rgb_abs_difference": [
+        15.52734375,
+        9.835069444444445,
+        5.594618055555555
+      ]
+    },
+    {
+      "from_frame": 3,
+      "to_frame": 0,
+      "mean_rgb_abs_difference": [
+        6.709201388888889,
+        4.518229166666667,
+        2.742404513888889
+      ]
+    }
+  ],
+  "metrics_are_not_visual_approval": true,
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "production_active": false
+}

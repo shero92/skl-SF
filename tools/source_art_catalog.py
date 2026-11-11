@@ -76,9 +76,10 @@ def build(root):
                               capture_output=True)
         on_main = main.returncode == 0 and hashlib.sha256(main.stdout).hexdigest() == digest(manifest)
         branch, pr = PENDING.get(request, (None, None))
+        branch = data.get("delivery_branch", branch)
         publication = {"manifest_on_origin_main": on_main,
                        "delivery_branch": branch if not on_main else None,
-                       "pull_request": f"https://github.com/shero92/skl-SF/pull/{pr}" if pr and not on_main else None}
+                       "pull_request": data.get("pull_request", f"https://github.com/shero92/skl-SF/pull/{pr}" if pr else None) if not on_main else None}
         manifests.append({"path": rel, "sha256": digest(manifest), "request_id": request,
                           "publication": publication,
                           "context": {k: v for k, v in data.items() if k not in {"items", "frames", "effects", "rejected", "rejected_sources", "rejected_attempts"}}})

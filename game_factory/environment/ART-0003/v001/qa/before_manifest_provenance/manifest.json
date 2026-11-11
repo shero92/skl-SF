@@ -1,0 +1,322 @@
+{
+  "request_id": "ART-0003",
+  "task_id": "TASK-0014",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 4,
+  "quality_status": "needs_map_calibration",
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "production_active": false,
+  "generation_cache_required": false,
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style/composition only, never pasted/cropped/traced",
+  "items": [
+    {
+      "id": "hero_cliff_foam_01",
+      "request_id": "ART-0003",
+      "master_path": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_01.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_01.png",
+      "sha256": "4c44b5b35087c10fe2b3ef75a0e18242b39e5306c4f3d74d97b0b2f8c6b0ffee",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        118,
+        249,
+        1662,
+        619
+      ],
+      "origin": [
+        890.0,
+        618
+      ],
+      "origin_rule": "bottom centre of visible alpha128 bounds; do NOT use to align animated frames",
+      "contact_anchor": [
+        887,
+        280
+      ],
+      "contact_anchor_rule": "fixed canvas registration near measured white crest row280-281; map mount still provisional",
+      "measured_white_crest_row": 280,
+      "facing": "three-quarter top-down horizontal cliff contact strip",
+      "frame_order": 0,
+      "frame_duration_ms": 250,
+      "native_canvas": [
+        96,
+        48
+      ],
+      "native_width": 96,
+      "native_height": 48,
+      "native_review_path": "game_factory/environment/ART-0003/v001/native_review/hero_cliff_foam_01.png",
+      "native_review_sha256": "d83455fa2c6939facd2d3411c618f3be4c175f9d6158d573c01b22e3a25abb23",
+      "native_source_region": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "uniform_scale": 0.05411499436302142,
+      "source_pixels_per_native_pixel": 18.479166666666668,
+      "independent_generation": true,
+      "source_generation_mode": "individual_request",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "edit_reference_id": null,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "prompt_text": "ART-0003 hero_cliff_foam_01, phase 1 of a four-frame coastal foam animation, one subject only. Generate ONE independent reusable white/ivory and pale-cyan sea-foam STRIP on a genuinely TRANSPARENT RGBA canvas, landscape 1536x768 or larger, aspect 2:1. No ocean fill, no land or rocks. Fixed composition for later frames: horizontal cliff-contact line from x8% to92% at y28% of canvas, gently uneven but overall straight; a thin lace of foam extends down toward y65%, with a few separated bubble clusters up to y75%; empty transparent margins at least6% all sides. This first phase is quiet returning water / low foam, delicate open irregular lace, not a solid band. Tactical RPG three-quarter top-down surface, upper-left light. Match viewed SKL-SF wave_foam_01 style using hard deliberate pixel clusters and crisp white foam crests with restrained cyan rims, detailed yet readable at96x48; no blur, no soft glow. Actual holes in lace are transparent alpha0. Opaque foam cores allowed; no baked ground shadow, no backdrop or blue rectangular sea texture. Keep contact line, width and overall layout fixed, all foam fully inside canvas. No UI/text/labels, no frame/border, no sheet or montage, no characters. Draw new artwork, do not trace/crop/composite the scene reference. One single foam animation frame; do not draw the cliff itself.",
+      "prompt_path": "game_factory/environment/ART-0003/v001/requests/hero_cliff_foam_01.txt",
+      "collision": false,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "footprint_64px_cells": null,
+      "footprint_status": "not applicable to non-colliding water overlay",
+      "mount_on": "cliff-base contact; exact terrain offset uncalibrated",
+      "quality_status": "needs_map_calibration",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "hero_cliff_foam_02",
+      "request_id": "ART-0003",
+      "master_path": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_02.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_02.png",
+      "sha256": "8095222701032f32a7e239b450fd1d2df6a714af02665e557f506c110ca1766f",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        117,
+        243,
+        1661,
+        642
+      ],
+      "origin": [
+        889.0,
+        641
+      ],
+      "origin_rule": "bottom centre of visible alpha128 bounds; do NOT use to align animated frames",
+      "contact_anchor": [
+        887,
+        280
+      ],
+      "contact_anchor_rule": "fixed canvas registration near measured white crest row280-281; map mount still provisional",
+      "measured_white_crest_row": 281,
+      "facing": "three-quarter top-down horizontal cliff contact strip",
+      "frame_order": 1,
+      "frame_duration_ms": 250,
+      "native_canvas": [
+        96,
+        48
+      ],
+      "native_width": 96,
+      "native_height": 48,
+      "native_review_path": "game_factory/environment/ART-0003/v001/native_review/hero_cliff_foam_02.png",
+      "native_review_sha256": "1615d484eebbe716005b0a924f8ce6dff8a56ae3b6633157c428847cc45081ed",
+      "native_source_region": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "uniform_scale": 0.05411499436302142,
+      "source_pixels_per_native_pixel": 18.479166666666668,
+      "independent_generation": true,
+      "source_generation_mode": "individual_request",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "edit_reference_id": "hero_cliff_foam_01",
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "prompt_text": "ART-0003 hero_cliff_foam_02, animation PHASE 2: rising surge. Edit the attached single foam-strip image into ONE new independently drawn frame. Preserve its EXACT 1774x887 transparent RGBA canvas, same fixed shoreline/contact upper line, same x extent, same lighting/palette, same 6%+ margins; do NOT shift, rotate, scale or mirror the whole image. Redraw only the living foam curls and bubbles: water pushes outward down-screen, the lower lace becomes moderately fuller, existing left/centre/right tongues broaden and small bubbles inflate; keep major holes and tongue locations recognizably continuous with phase1. White/ivory hard pixel clusters, pale-cyan rims, no blur or glow. Main contact upper edge remains at the same pixel coordinates, width constant. No painted sea fill behind the foam, no cliffs, rocks, ground or shadow. Transparent alpha0 holes and empty surround. One clean reusable animation PNG, not a sheet, no text/UI/border/labels. Detailed tactical RPG pixel-art foam at96x48native; no layout change or new scene.",
+      "prompt_path": "game_factory/environment/ART-0003/v001/requests/hero_cliff_foam_02.txt",
+      "collision": false,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "footprint_64px_cells": null,
+      "footprint_status": "not applicable to non-colliding water overlay",
+      "mount_on": "cliff-base contact; exact terrain offset uncalibrated",
+      "quality_status": "needs_map_calibration",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "hero_cliff_foam_03",
+      "request_id": "ART-0003",
+      "master_path": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_03.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_03.png",
+      "sha256": "7deaec5d213d88cedb904a9d9e8667a633a6e55fe7a0c4e7169a81f1cfdbb392",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "bounds_alpha_128": [
+        121,
+        251,
+        1660,
+        665
+      ],
+      "origin": [
+        890.5,
+        664
+      ],
+      "origin_rule": "bottom centre of visible alpha128 bounds; do NOT use to align animated frames",
+      "contact_anchor": [
+        887,
+        280
+      ],
+      "contact_anchor_rule": "fixed canvas registration near measured white crest row280-281; map mount still provisional",
+      "measured_white_crest_row": 281,
+      "facing": "three-quarter top-down horizontal cliff contact strip",
+      "frame_order": 2,
+      "frame_duration_ms": 250,
+      "native_canvas": [
+        96,
+        48
+      ],
+      "native_width": 96,
+      "native_height": 48,
+      "native_review_path": "game_factory/environment/ART-0003/v001/native_review/hero_cliff_foam_03.png",
+      "native_review_sha256": "b048c53e14cec9c221e3bcfb0fabd4e36f60d3fd1cd84573f9df2c4387ffc44c",
+      "native_source_region": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "uniform_scale": 0.05411499436302142,
+      "source_pixels_per_native_pixel": 18.479166666666668,
+      "independent_generation": true,
+      "source_generation_mode": "individual_request",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "edit_reference_id": "hero_cliff_foam_02",
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "prompt_text": "ART-0003 hero_cliff_foam_03, animation PHASE 3: crest breaking at maximum swell. Produce ONE new animation frame by redrawing the attached phase2 strip, preserving EXACT1774x887 canvas, fixed upper cliff contact line at identical coordinates, same x extent and major left/centre/right lace tongues, margins, viewpoint and palette. No whole-sprite translation, scaling, rotation, mirror. Break the swollen bubbles into brighter white foamy branches and a few tiny independent droplets; outer tongues reach slightly farther down than phase2, broad white crest near contact, more small transparent holes within the froth. Advance fluid motion, do not replace the structure with unrelated foam. Upper contact edge stationary. Pixel art tactical RPG, crisp hard ivory-white clusters with pale-cyan rims, upper-left light, no blur/glow. Genuine transparent RGBA alpha0 holes and empty surround; no sea/blue fill/backdrop, land/cliff/rocks, shadow, text/UI/frame/sheet. All foam within existing safe margins. This is the third of four frames displayed at4fps at96x48native.",
+      "prompt_path": "game_factory/environment/ART-0003/v001/requests/hero_cliff_foam_03.txt",
+      "collision": false,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "footprint_64px_cells": null,
+      "footprint_status": "not applicable to non-colliding water overlay",
+      "mount_on": "cliff-base contact; exact terrain offset uncalibrated",
+      "quality_status": "needs_map_calibration",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "hero_cliff_foam_04",
+      "request_id": "ART-0003",
+      "master_path": "assets_hd/background/cliff_foam_loop/v001/hero_cliff_foam_04.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0003/hero_cliff_foam_04.png",
+      "sha256": "32c11a3e11bc31908fb697fc1db609b992a5466f6339673999c2166d2ac2583c",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        115,
+        243,
+        1661,
+        632
+      ],
+      "origin": [
+        888.0,
+        631
+      ],
+      "origin_rule": "bottom centre of visible alpha128 bounds; do NOT use to align animated frames",
+      "contact_anchor": [
+        887,
+        280
+      ],
+      "contact_anchor_rule": "fixed canvas registration near measured white crest row280-281; map mount still provisional",
+      "measured_white_crest_row": 280,
+      "facing": "three-quarter top-down horizontal cliff contact strip",
+      "frame_order": 3,
+      "frame_duration_ms": 250,
+      "native_canvas": [
+        96,
+        48
+      ],
+      "native_width": 96,
+      "native_height": 48,
+      "native_review_path": "game_factory/environment/ART-0003/v001/native_review/hero_cliff_foam_04.png",
+      "native_review_sha256": "fed7b42bd212372f2a3a83fd7af275481d9d777fff230cd2bd3d83bd10ff5785",
+      "native_source_region": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "uniform_scale": 0.05411499436302142,
+      "source_pixels_per_native_pixel": 18.479166666666668,
+      "independent_generation": true,
+      "source_generation_mode": "individual_request",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "edit_reference_id": "hero_cliff_foam_01",
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "prompt_text": "ART-0003 hero_cliff_foam_04, animation PHASE4: receding wash, designed to loop back to attached PHASE1. Draw ONE independently revised frame from attached foam strip while preserving EXACT1774x887 transparent canvas, stationary upper contact line, identical width and major left/centre/right tongues, framing and palette. No whole-image movement, scale, rotation or mirror. Make a small controlled fluid change from attached quiet phase1: partially collapsed bubbles, thinner broken lace branches trailing from left/central tongues, a few tiny draining flecks, lower fringe slightly more extended and whiter than phase1 but substantially less dense than a breaking crest. Keep the SAME large transparent holes and main tongue positions, so phase4 -> phase1 is subtle, not a new silhouette. Detailed hard pixel-art white/ivory foam with pale-cyan accents, no blurred gradients or glow. Foam itself only, true alpha0 holes/surround, no ocean/backdrop, land/cliff, rocks or ground shadow. No text, watermark, border, sheet or panels. Everything inside safe margins. Used at96x48native,4fps. This is ONE phase, not an animated GIF.",
+      "prompt_path": "game_factory/environment/ART-0003/v001/requests/hero_cliff_foam_04.txt",
+      "collision": false,
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "footprint_64px_cells": null,
+      "footprint_status": "not applicable to non-colliding water overlay",
+      "mount_on": "cliff-base contact; exact terrain offset uncalibrated",
+      "quality_status": "needs_map_calibration",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    }
+  ],
+  "rejected_attempts": [],
+  "animation": {
+    "frame_ids": [
+      "hero_cliff_foam_01",
+      "hero_cliff_foam_02",
+      "hero_cliff_foam_03",
+      "hero_cliff_foam_04"
+    ],
+    "fps": 4,
+    "frame_duration_ms": 250,
+    "cycle_duration_ms": 1000,
+    "cadence_source": "map_factory/maps/hero_room_01/latest.json ocean.fps=4",
+    "loop": true,
+    "registration": "identical full source canvas, no per-frame bbox fit"
+  },
+  "limitations": [
+    "96x48 native canvas remains provisional until cliff terrain integration.",
+    "No room placement, terrain occlusion, ocean blending or runtime map activation tested.",
+    "Four authored phases at4fps; visible shape/mass changes are not optical-flow interpolation."
+  ]
+}
