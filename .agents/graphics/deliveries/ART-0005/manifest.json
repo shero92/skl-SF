@@ -363,5 +363,23 @@
       "view_interpretation": "independently drawn oblique decorated front"
     }
   ],
-  "rejected_attempts": []
+  "rejected_attempts": [],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_east.png",
+      "sha256": "8b7f3c16b988e807a2e13bcc21e61b0778ef9db83c7bb870589b5c3b9d1c7044"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_north.png",
+      "sha256": "b9988dfa32702f3ff61dd07efe88d4fcbbb71b489639af3a41c6c87a7b01bbb3"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_south.png",
+      "sha256": "34acf2630af2711a24973a5be029e7f9e61a7d2f011485a217a7667a9f99e6b3"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0005/hero_compass_wood_door_west.png",
+      "sha256": "1c31d20f14e94579775a99195394fb1299572bbfb7dd03193ebb7d7891c1b827"
+    }
+  ]
 }

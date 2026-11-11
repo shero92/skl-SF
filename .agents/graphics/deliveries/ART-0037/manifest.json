@@ -134,5 +134,6 @@
   "generation_cache_required": false,
   "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
   "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
-  "note": "Neither attempt satisfies the hard size/alpha requirements. No delivered production tile, no upscaling or procedural substitute."
+  "note": "Neither attempt satisfies the hard size/alpha requirements. No delivered production tile, no upscaling or procedural substitute.",
+  "files": []
 }

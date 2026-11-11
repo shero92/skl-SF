@@ -130,5 +130,11 @@
       "reason": "See rejected/rejections.json for measured and visual rejection reasons",
       "quality_status": "needs_regeneration"
     }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0038/wall_straight_window_opening.png",
+      "sha256": "7217926d76bce518ddd5b5446d035c566868bd54f0f6674fd6374ec14e4d8b4d"
+    }
   ]
 }
