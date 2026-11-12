@@ -1,0 +1,204 @@
+{
+  "task_id": "TASK-0159",
+  "delivery_branch": "codex/art-0048-0049-bed-stacks",
+  "destination": "H:\\shining force\\skl-SF\\.worktrees\\art-bed-sea-stacks",
+  "owner_main_checkout_written": false,
+  "generation_calls": 4,
+  "selected_assets": 2,
+  "nonselected_attempts": 2,
+  "request_complete": {
+    "ART-0048": true,
+    "ART-0049": false
+  },
+  "task_status": "blocked",
+  "cache_required": false,
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "production_active": false,
+  "limitations": [
+    "Cluster source height743 below required760; exact cluster output intentionally absent.",
+    "No room integration or map/collision calibration. Prior branch context excluded from receipt."
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0048/hero_double_bed_south.png",
+      "sha256": "1bd929fef9e2d9cbd84bb7fc2376bd0b53a7ea4704e27ba654869fb76d0da3ba"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0048/manifest.json",
+      "sha256": "12eb7e708c77204acb8aa74ce1cdc4e24d2a4d40b13243a2b1f5d2a62c095bd5"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0049/hero_sea_stack_arch_island.png",
+      "sha256": "89450e80606e40492d83530bacb3f989d52204c016bd4c96a316135343689bcf"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0049/manifest.json",
+      "sha256": "1fe99f9509676b32eb7125aa700adfa4e4cc771efbd6c064e84f210925f8be17"
+    },
+    {
+      "path": ".agents/graphics/requests/ART-0048_hero_room_double_bed_three_quarter.md",
+      "sha256": "6346a3c6b925b6b8ab95806e8706e4898a1df7850cfa585437d2b9cc15c37341"
+    },
+    {
+      "path": ".agents/graphics/requests/ART-0049_hero_room_sea_stack_islands.md",
+      "sha256": "e91fb09ca6e1bcf25e27fa801d6f57632a861523a195497c2ecbbe63784bfb35"
+    },
+    {
+      "path": ".agents/tasks/TASK-0159_art_double_bed_sea_stacks.md",
+      "sha256": "d3e4cd787ede3d97cae0b7cb86d7580847f013e40038555988f7d5606bf9bef7"
+    },
+    {
+      "path": "assets_hd/background/sea_stack_islands/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/background/sea_stack_islands/v001/hero_sea_stack_arch_island.png",
+      "sha256": "89450e80606e40492d83530bacb3f989d52204c016bd4c96a316135343689bcf"
+    },
+    {
+      "path": "assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_arch_island_attempt_01.png",
+      "sha256": "78d9a01060a58b14bfcd56036814aae57f5c12c6f2b231b7d0906ab74b0057b4"
+    },
+    {
+      "path": "assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_cluster_attempt_01.png",
+      "sha256": "8bc8f4d93b6477c8816d86583b74ac28ee17447d9f944f1bef06b29f0d83a577"
+    },
+    {
+      "path": "assets_hd/furniture/double_bed_south/v001/.gdignore",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets_hd/furniture/double_bed_south/v001/hero_double_bed_south.png",
+      "sha256": "1bd929fef9e2d9cbd84bb7fc2376bd0b53a7ea4704e27ba654869fb76d0da3ba"
+    },
+    {
+      "path": "docs/SOURCE_ART_CATALOG.md",
+      "sha256": "f9171855c408ac775350689609a6db9128790de2871aea42b8ff2d462f063fbd"
+    },
+    {
+      "path": "game_factory/environment/ART-0048/v001/godot_native_review.png",
+      "sha256": "c6503f27f0a523f949bf9a545c4b6d44fb1449338b23f210094e6e20f6efaee6"
+    },
+    {
+      "path": "game_factory/environment/ART-0048/v001/godot_review_receipt.json",
+      "sha256": "6f94230a1bbe1bdca8b16cf9cfa31cbbcfe33d4af95286be6f4c5dd5a19f615f"
+    },
+    {
+      "path": "game_factory/environment/ART-0048/v001/manifest.json",
+      "sha256": "12eb7e708c77204acb8aa74ce1cdc4e24d2a4d40b13243a2b1f5d2a62c095bd5"
+    },
+    {
+      "path": "game_factory/environment/ART-0048/v001/native_review/hero_double_bed_south.png",
+      "sha256": "9101e83e8df8c953b3911e93be42b643ecf205ca884ebe1f28ea73d739867636"
+    },
+    {
+      "path": "game_factory/environment/ART-0048/v001/README.md",
+      "sha256": "4d944b2d1ec926501097190bdc562f850add0661e1eef023fe238e02f4beb2e5"
+    },
+    {
+      "path": "game_factory/environment/ART-0048/v001/requests/hero_double_bed_south.txt",
+      "sha256": "191174b24d6a1e6cc53eb8a8d0e6494aa315fdc4fa6d1416a1e692d26d0cc606"
+    },
+    {
+      "path": "game_factory/environment/ART-0048/v001/technical_qa.json",
+      "sha256": "0e0acb791fb157a22b4671db227049409f8bd3babd7680f6b46660038910a74f"
+    },
+    {
+      "path": "game_factory/environment/ART-0048/v001/verification.json",
+      "sha256": "09d466df48a089893fe53d6a75882dd1dce83622727f377a8a7940c0b2d810c6"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/godot_native_review.png",
+      "sha256": "59ba7879bcc0a0e95983a8873d8aeb10f3dd71bc4455bfb76141ae917c694e3b"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/godot_review_receipt.json",
+      "sha256": "4a18c9c26ef739c2c5e4206d1b990de35bdae00f8544f5dc530dc9d1e40cba23"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/manifest.json",
+      "sha256": "1fe99f9509676b32eb7125aa700adfa4e4cc771efbd6c064e84f210925f8be17"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/native_review/hero_sea_stack_arch_island.png",
+      "sha256": "01228cc72c149c5d4c0c90bcf7fee6ee782b86233814f922ada397664fc92241"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/native_review/hero_sea_stack_cluster.png",
+      "sha256": "659b0a501bd7c80fd593f0749d4f78e5b781f1abd6c21a7e4d01f1aafb12e04a"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/README.md",
+      "sha256": "05b326a8f9d4ff086a561229bdec64c868194f1a258de1254bbcd2102a5791a6"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/requests/hero_sea_stack_arch_island.txt",
+      "sha256": "64c37348f8ee2a52703caee74bdcd7d0861a492620854569e18aab1142692b6e"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/requests/hero_sea_stack_arch_island_initial.txt",
+      "sha256": "dd424be9168acaece3a900ad18854c12a25a4d92c842483021e6b05e6920bac2"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/requests/hero_sea_stack_cluster.txt",
+      "sha256": "10c988c0e1ed3664cb88130cebf89010c4decda6e65c3a5651efb895dd5dae4f"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/technical_qa.json",
+      "sha256": "b4c7f1cfb7abadae99a4715075af8717c808b5aa9c85243bf1ed70f0f4642fd6"
+    },
+    {
+      "path": "game_factory/environment/ART-0049/v001/verification.json",
+      "sha256": "7f39b3b3410302efaea98671672bbcad9f61aa27e4554606e64a0bd74a1778b5"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/equipment_retry.log",
+      "sha256": "589a19a8759588ca515affbc4798214528702162411a4510d37c532e4e68051a"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/finish_delivery.py",
+      "sha256": "33326ff886d732316115e6cbe22cfe13fba89bec0fc7ed8f0da8456b880bde6d"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/generation_records.json",
+      "sha256": "1324133537d7604c6e2aa91f2e376b4297a1e69485febce4a182cc5a69e4b187"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/prepare_review.py",
+      "sha256": "a60574813cb8b0f390b77a0df4751c6d839e92385ab0cdcd0643221203b75bb4"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/README.md",
+      "sha256": "454070f7eb8b4df6a7309c4987e7449987653eea4132381ea447d11421c4a525"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/references/bed_front_view_01.png",
+      "sha256": "9da6d921aed82be8232dd949cfd592ba52e34e65c5657096487f6677fce3749d"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/review.gd",
+      "sha256": "a94b80585ee41616a720efc1bad3993bd6e2382571742e25c7bced716b0c381b"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/test_results.json",
+      "sha256": "009ef0cfabe7fc2257e8bb514bf70855b2af360d580366a1051ffadc76345a83"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/tests.log",
+      "sha256": "14472b1b24ebb27df1f4326590fb6ed41e21b7cf7a39958815377d504701b8a3"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/tests_authorized.log",
+      "sha256": "1b87b4054751002dfdf21b2bff59d64ccb6f82d87c1f5121cf69e9a543ab3022"
+    },
+    {
+      "path": "game_factory/environment/bed_stacks_20261111/verify_delivery.py",
+      "sha256": "892b8f4eb2a617e43f85f7a395be27bd010fb15b79d4c49c399770a0752661ab"
+    },
+    {
+      "path": "map_factory/metadata/source_art_index.json",
+      "sha256": "7f692caf4fd251f139c9b60acb93de06e4d272e57cac26e535d9568cef63467e"
+    }
+  ]
+}

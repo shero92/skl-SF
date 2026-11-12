@@ -1,0 +1,14 @@
+{
+	"actual_viewport": true,
+	"canvas_size": [
+		1536,
+		1200
+	],
+	"engine": "4.7.2-stable (official)",
+	"manifest_sha256": "12eb7e708c77204acb8aa74ce1cdc4e24d2a4d40b13243a2b1f5d2a62c095bd5",
+	"owner_approved": true,
+	"production_active": false,
+	"render_sha256": "c6503f27f0a523f949bf9a545c4b6d44fb1449338b23f210094e6e20f6efaee6",
+	"review_script_sha256": "a94b80585ee41616a720efc1bad3993bd6e2382571742e25c7bced716b0c381b",
+	"room_integration_verified": false
+}

@@ -1,6 +1,6 @@
 ---
 id: ART-0048
-status: requested
+status: delivered
 owner: graphics-specialist
 task: TASK-0148
 dedupe_key: hero_room_double_bed_three_quarter
@@ -35,10 +35,14 @@ output_paths: .agents/graphics/deliveries/ART-0048/hero_double_bed_south.png
 - [x] Specifications reviewed; marked `requested`.
 
 ## Graphics specialist checklist
-- [ ] Clean PNG produced (ONLY graphics specialist); SHA-256 manifest written; mark `delivered`.
+- [x] Clean PNG produced (ONLY graphics specialist); SHA-256 manifest written; mark `delivered`.
 
 ## QA checklist
 - [ ] Independent visual review in Godot against the reference crop; mark `reviewed`.
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## Producer delivery 2026-11-11
+
+Independent1178x1335 RGBA source, exact output and real Godot capture at `game_factory/environment/ART-0048/v001/`. TASK-0159 / branch `codex/art-0048-0049-bed-stacks`. Owner approval automatic; map placement and integration pending. No visual self-approval or activation claimed.

@@ -1,0 +1,119 @@
+244 changed path(s) vs origin/main
+Not covered by tools/test_map.json, running ALL tests:
+  .qa-tmp/stage_paths.txt
+  .qa-tmp/tmpuig1qqp3/spec.json
+  assets_hd/architecture/curved_east_side_wall/v001/.gdignore
+  assets_hd/architecture/curved_west_side_wall/v001/.gdignore
+  assets_hd/architecture/rear_left_window_wall/v001/.gdignore
+  assets_hd/architecture/rear_right_door_niche/v001/.gdignore
+  assets_hd/background/sea_stack_islands/v001/.gdignore
+  assets_hd/background/sea_stack_islands/v001/hero_sea_stack_arch_island.png
+  assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_arch_island_attempt_01.png
+  assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_cluster_attempt_01.png
+  assets_hd/decor/skirmish_markers/v001/.gdignore
+  assets_hd/floor/skirmish_field/v001/.gdignore
+  assets_hd/furniture/double_bed_south/v001/.gdignore
+  assets_hd/furniture/double_bed_south/v001/hero_double_bed_south.png
+  assets_hd/props/skirmish_rock/v001/.gdignore
+  map_factory/references/hero_room_01_target_20261110.webp.import
+  scenes/battle/tactical_battle.gd.uid
+  scenes/battle/tactical_battle_scene.gd.uid
+  scenes/hero_save.gd.uid
+  scenes/map_factory_editor.gd.uid
+  ... and 3 more
+PASS source_art_catalog (0.5s)
+PASS golden_cyclone_assets (4.4s)
+PASS hero_room_capture_evidence (0.3s)
+PASS hero_room_reference_relayout (2.1s)
+PASS hero_room_visual_contract (0.2s)
+PASS hero_room_v0013_patch (0.9s)
+PASS generate_factory_images (0.6s)
+PASS camera_light_shafts (0.2s)
+PASS layer_zorder_anchor (0.2s)
+PASS directional_furniture (0.5s)
+PASS hero_room_lighting_decor (0.4s)
+PASS enclosing_walls (0.3s)
+PASS hero_room_scenery (0.3s)
+PASS hero_room_floor (0.3s)
+PASS registry_verification (1.5s)
+PASS battle_hit_timing (0.6s)
+PASS battle_combo (0.5s)
+PASS battle_reactions (0.6s)
+PASS battle_preview (0.7s)
+PASS battle_registry (0.2s)
+PASS weapon_battle (0.6s)
+PASS enemy_ai (0.8s)
+PASS turn_manager (0.5s)
+PASS regenerate_main_outputs (0.2s)
+PASS navigation_grid (1.3s)
+PASS depth_sorting (1.0s)
+PASS graphics_validation (3.0s)
+PASS character_runtime (0.6s)
+PASS shadow_speed (2.0s)
+PASS equipment_menu (1.4s)
+PASS simulate_battles (6.2s)
+PASS battle_director (0.5s)
+PASS shadow_cache (3.6s)
+PASS hero_save (0.5s)
+PASS room_region_report (0.3s)
+PASS room_editor (4.4s)
+PASS room_design (0.3s)
+PASS tactical_battle (0.8s)
+PASS weapon_system (0.6s)
+PASS battle_adapter (0.7s)
+PASS battle_controller (0.5s)
+PASS battle_perspective (0.6s)
+PASS battle_camera (0.5s)
+PASS battle_vfx (0.7s)
+PASS battle_timeline (0.6s)
+PASS weapon_sockets (0.4s)
+PASS agent_file_bridge (1.0s)
+PASS game_factory (1.2s)
+PASS pixel_asset_factory (1.1s)
+PASS manual_agents (4.0s)
+PASS task_evidence (0.5s)
+PASS agent_costs (14.3s)
+PASS agent_workflow (0.3s)
+PASS art_delivery (0.7s)
+PASS goal_task_factory (6.7s)
+PASS candidate_room (0.6s)
+FAIL blender_factory (120.0s, exit timeout)
+  timed out after 120s
+  .
+  Full log: .agents/monitoring/.local/test-logs/blender_factory_20261111T222441Z.log
+PASS goal_pulse_continuous (1.8s)
+PASS local_planner (6.4s)
+PASS parallel_safety (1.4s)
+PASS runner_main_clean (20.5s)
+PASS runner_parallel (44.6s)
+PASS project_indexes (8.4s)
+PASS map_factory (1.2s)
+PASS map_cardinal (0.7s)
+PASS map_floor_geometry (0.3s)
+PASS map_floor_style (0.2s)
+PASS map_intake (0.4s)
+PASS map_layers (0.8s)
+PASS map_navigation (1.1s)
+PASS map_reference (0.5s)
+PASS map_templates (0.6s)
+PASS lf_writers (0.7s)
+PASS map_registry_validate (1.4s)
+PASS test_router (2.2s)
+PASS test_index (0.1s)
+NOTE godot_import changed 3 file(s); reverted: game_factory/environment/ART-0048/v001/godot_native_review.png.import, game_factory/environment/ART-0049/v001/godot_native_review.png.import, game_factory/environment/bed_stacks_20261111/references/bed_front_view_01.png.import
+PASS godot_import (5.1s)
+PASS godot_map_smoke (1.3s)
+PASS godot_cardinal_blocks (1.0s)
+PASS aider_worker (8.1s)
+PASS shadow_painter (0.5s)
+PASS map_factory_tools (1.0s)
+PASS prepare_map_workspace (0.2s)
+PASS map_factory_viewer (2.5s)
+PASS map_variation (0.2s)
+PASS poster_characters (16.5s)
+PASS hd_migration (0.2s)
+PASS capture_checks (0.5s)
+PASS blender_catalog (1.3s)
+PASS project_settings (0.1s)
+
+89/90 passed: failed blender_factory

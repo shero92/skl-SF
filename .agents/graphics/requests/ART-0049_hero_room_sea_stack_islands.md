@@ -45,3 +45,7 @@ output_paths: .agents/graphics/deliveries/ART-0049/hero_sea_stack_arch_island.pn
 
 ## Integration checklist
 - [ ] Registered asset and map tested; PR merged; mark `integrated`.
+
+## Partial producer evidence 2026-11-11
+
+Arch1717x916 delivered independently; cluster candidate2117x743 fails required2104x760. Request remains requested and TASK-0159 blocked. Candidate and earlier arch attempt retained with full metadata/Godot comparison in `game_factory/environment/ART-0049/v001/`; exact cluster output absent. Branch `codex/art-0048-0049-bed-stacks`. Do not activate rejected source or infer complete delivery from visual owner approval.
