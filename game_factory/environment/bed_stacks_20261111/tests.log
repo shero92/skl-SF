@@ -1,0 +1,207 @@
+242 changed path(s) vs origin/main
+Not covered by tools/test_map.json, running ALL tests:
+  .qa-tmp/stage_paths.txt
+  assets_hd/architecture/curved_east_side_wall/v001/.gdignore
+  assets_hd/architecture/curved_west_side_wall/v001/.gdignore
+  assets_hd/architecture/rear_left_window_wall/v001/.gdignore
+  assets_hd/architecture/rear_right_door_niche/v001/.gdignore
+  assets_hd/background/sea_stack_islands/v001/.gdignore
+  assets_hd/background/sea_stack_islands/v001/hero_sea_stack_arch_island.png
+  assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_arch_island_attempt_01.png
+  assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_cluster_attempt_01.png
+  assets_hd/decor/skirmish_markers/v001/.gdignore
+  assets_hd/floor/skirmish_field/v001/.gdignore
+  assets_hd/furniture/double_bed_south/v001/.gdignore
+  assets_hd/furniture/double_bed_south/v001/hero_double_bed_south.png
+  assets_hd/props/skirmish_rock/v001/.gdignore
+  map_factory/references/hero_room_01_target_20261110.webp.import
+  scenes/battle/tactical_battle.gd.uid
+  scenes/battle/tactical_battle_scene.gd.uid
+  scenes/hero_save.gd.uid
+  scenes/map_factory_editor.gd.uid
+  tools/verify_hero_save.gd.uid
+  ... and 2 more
+PASS source_art_catalog (0.8s)
+PASS golden_cyclone_assets (4.7s)
+PASS hero_room_capture_evidence (0.4s)
+PASS hero_room_reference_relayout (2.9s)
+PASS hero_room_visual_contract (0.4s)
+PASS hero_room_v0013_patch (0.9s)
+PASS generate_factory_images (0.6s)
+PASS camera_light_shafts (0.3s)
+PASS layer_zorder_anchor (0.3s)
+PASS directional_furniture (0.6s)
+PASS hero_room_lighting_decor (0.4s)
+PASS enclosing_walls (0.3s)
+PASS hero_room_scenery (0.4s)
+PASS hero_room_floor (0.3s)
+PASS registry_verification (1.7s)
+PASS battle_hit_timing (0.6s)
+FAIL battle_combo (0.7s, exit 1)
+  FAIL: test_combo_behaviour_in_godot (test_battle_combo.BattleComboTests.test_combo_behaviour_in_godot)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_battle_combo.py", line 43, in test_combo_behaviour_in_godot
+  AssertionError: 'ERROR:' unexpectedly found in 'Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nBATTLE_COMBO_OK\nERROR: Failed to open log file for writing: user://logs/godot.log\n   at: rotate_file (core/io/logger.cpp:169)\n' : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+  ERROR: Failed to open log file for writing: user://logs/godot.log
+  Full log: .agents/monitoring/.local/test-logs/battle_combo_20261111T221752Z.log
+FAIL battle_reactions (0.7s, exit 1)
+  FAIL: test_headless_reactions (test_battle_reactions.BattleReactionsTests.test_headless_reactions)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_battle_reactions.py", line 81, in test_headless_reactions
+  AssertionError: 'ERROR:' unexpectedly found in 'Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nBATTLE_REACTIONS_OK\nERROR: Failed to open log file for writing: user://logs/godot.log\n   at: rotate_file (core/io/logger.cpp:169)\nWARNING: MISSING_REACTION_ART: rear/hit\n   at: push_warning (core/variant/variant_utility.cpp:1033)\n   GDScript backtrace (most recent call first):\n       [0] on_hit (res://scenes/battle/battle_reactions.gd:111)\n       [1] _run (res://tools/verify_battle_reactions.gd:77)\nWARNING: MISSING_REACTION_ART: unknown/block\n   at: push_warning (core/variant/variant_utility.cpp:1033)\n   GDScript backtrace (most recent call first):\n       [0] on_hit (res://scenes/battle/battle_reactions.gd:111)\n       [1] _run (res://tools/verify_battle_reactions.gd:81)\n'
+  Full log: .agents/monitoring/.local/test-logs/battle_reactions_20261111T221753Z.log
+PASS battle_preview (0.7s)
+PASS battle_registry (0.2s)
+PASS weapon_battle (0.6s)
+PASS enemy_ai (0.6s)
+PASS turn_manager (0.8s)
+PASS regenerate_main_outputs (0.3s)
+PASS navigation_grid (1.5s)
+PASS depth_sorting (1.4s)
+PASS graphics_validation (3.5s)
+PASS character_runtime (0.8s)
+PASS shadow_speed (2.3s)
+FAIL equipment_menu (2.0s, exit 1)
+  FAIL: test_main_scene_opens_the_menu_with_i (test_equipment_menu.EquipmentMenuTests.test_main_scene_opens_the_menu_with_i)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_equipment_menu.py", line 32, in test_main_scene_opens_the_menu_with_i
+  AssertionError: 1 != 0 : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+  ERROR: Failed to open log file for writing: user://logs/godot.log
+  FAIL: equipping wrote the hero save
+  Full log: .agents/monitoring/.local/test-logs/equipment_menu_20261111T221808Z.log
+PASS simulate_battles (6.5s)
+PASS battle_director (0.8s)
+FAIL shadow_cache (120.0s, exit timeout)
+  timed out after 120s
+  .
+  Full log: .agents/monitoring/.local/test-logs/shadow_cache_20261111T222015Z.log
+FAIL hero_save (0.7s, exit 1)
+  FAIL: test_headless_save (test_hero_save.HeroSaveTests.test_headless_save)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_hero_save.py", line 32, in test_headless_save
+  AssertionError: 1 != 0 : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+  ERROR: Failed to open log file for writing: user://logs/godot.log
+  FAIL: save works
+  FAIL: valid save loads
+  FAIL: round trip keeps weapon and bag: { "character_id": "CHAR001", "class_id": "swordsman", "stat_offsets": { "attack": 1.0, "hp": 2.0 }, "weapon_id": "WPN_HERO_BASIC_SWORD", "inventory": ["WPN_IRON_SWORD"] } vs { "character_id": "CHAR001", "class_id": "swordsman", "stat_offsets": { "attack": 1.0, "hp": 2.0 }, "weapon_id": "WPN_IRON_SWORD", "inventory": ["WPN_HERO_BASIC_SWORD"] }
+  SCRIPT ERROR: Cannot call method 'store_string' on a null value.
+  Full log: .agents/monitoring/.local/test-logs/hero_save_20261111T222016Z.log
+PASS room_region_report (0.5s)
+FAIL room_editor (5.0s, exit 1)
+  FAIL: test_headless_editor (test_room_editor.EditorSceneTests.test_headless_editor)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_room_editor.py", line 91, in test_headless_editor
+  AssertionError: 1 != 0 : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+  FAIL: the factory accepts the edit: Cannot write C:/Users/shiya_8v7nrr4/AppData/Roaming/Godot/app_userdata/skl-SF/room_editor_changes.json
+  FAIL: save reports the next version
+  FAIL: the factory accepts the ground edit: Cannot write C:/Users/shiya_8v7nrr4/AppData/Roaming/Godot/app_userdata/skl-SF/room_editor_changes.json
+  FAIL: the factory accepts the copy and level change: Cannot write C:/Users/shiya_8v7nrr4/AppData/Roaming/Godot/app_userdata/skl-SF/room_editor_changes.json
+  FAIL: the battle file is written
+  Full log: .agents/monitoring/.local/test-logs/room_editor_20261111T222021Z.log
+PASS room_design (0.5s)
+PASS tactical_battle (0.9s)
+PASS weapon_system (0.6s)
+PASS battle_adapter (0.8s)
+PASS battle_controller (0.6s)
+FAIL battle_perspective (0.6s, exit 1)
+  FAIL: test_perspective_contract_in_godot (test_battle_perspective.BattlePerspectiveTests.test_perspective_contract_in_godot)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_battle_perspective.py", line 54, in test_perspective_contract_in_godot
+  AssertionError: 'ERROR:' unexpectedly found in 'Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nBATTLE_PERSPECTIVE_OK\nERROR: Failed to open log file for writing: user://logs/godot.log\n   at: rotate_file (core/io/logger.cpp:169)\n' : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+  ERROR: Failed to open log file for writing: user://logs/godot.log
+  Full log: .agents/monitoring/.local/test-logs/battle_perspective_20261111T222026Z.log
+FAIL battle_camera (0.7s, exit 1)
+  FAIL: test_headless_camera_contract (test_battle_camera.BattleCameraTests.test_headless_camera_contract)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_battle_camera.py", line 48, in test_headless_camera_contract
+  AssertionError: 'ERROR:' unexpectedly found in 'Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nBATTLE_CAMERA_OK\nERROR: Failed to open log file for writing: user://logs/godot.log\n   at: rotate_file (core/io/logger.cpp:169)\n' : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+  ERROR: Failed to open log file for writing: user://logs/godot.log
+  Full log: .agents/monitoring/.local/test-logs/battle_camera_20261111T222026Z.log
+FAIL battle_vfx (0.7s, exit 1)
+  FAIL: test_runtime_acceptance (test_battle_vfx.BattleVFXTests.test_runtime_acceptance)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_battle_vfx.py", line 48, in test_runtime_acceptance
+  AssertionError: 'ERROR:' unexpectedly found in 'Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nBATTLE_VFX_OK\nERROR: Failed to open log file for writing: user://logs/godot.log\n   at: rotate_file (core/io/logger.cpp:169)\n' : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+  ERROR: Failed to open log file for writing: user://logs/godot.log
+  Full log: .agents/monitoring/.local/test-logs/battle_vfx_20261111T222027Z.log
+PASS battle_timeline (0.9s)
+PASS weapon_sockets (0.7s)
+PASS agent_file_bridge (1.7s)
+PASS game_factory (2.0s)
+PASS pixel_asset_factory (1.6s)
+FAIL manual_agents (1.6s, exit 1)
+  ERROR: test_coordinator_preserves_dirty_source_and_cross_clone_lease (test_manual_agents.ManualSessionTests.test_coordinator_preserves_dirty_source_and_cross_clone_lease)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_manual_agents.py", line 194, in test_coordinator_preserves_dirty_source_and_cross_clone_lease
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_manual_agents.py", line 192, in run
+  File "C:\Users\shiya_8v7nrr4\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 577, in run
+  Full log: .agents/monitoring/.local/test-logs/manual_agents_20261111T222035Z.log
+PASS task_evidence (0.8s)
+FAIL agent_costs (17.7s, exit 1)
+  FAIL: test_complete_commits_token_trailers_and_pushes (test_agent_costs.CostTests.test_complete_commits_token_trailers_and_pushes)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_agent_costs.py", line 186, in test_complete_commits_token_trailers_and_pushes
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_agent_costs.py", line 22, in invoke
+  AssertionError: 1 != 0 : agent costs: git push origin: 0 [main] sh (3528) C:\Program Files\Git\usr\bin\sh.exe: *** fatal error - NtCreateDirectoryObject(\BaseNamedObjects\msys-2.0S5-1888ae32e00d56aa): 0xC0000022
+  Full log: .agents/monitoring/.local/test-logs/agent_costs_20261111T222054Z.log
+PASS agent_workflow (0.5s)
+PASS art_delivery (1.1s)
+PASS goal_task_factory (9.8s)
+PASS candidate_room (0.8s)
+FAIL blender_factory (120.0s, exit timeout)
+  timed out after 120s
+  ....
+  Full log: .agents/monitoring/.local/test-logs/blender_factory_20261111T222306Z.log
+PASS goal_pulse_continuous (3.1s)
+PASS local_planner (10.8s)
+PASS parallel_safety (2.3s)
+FAIL runner_main_clean (4.3s, exit 1)
+  ERROR: test_generated_set_matches_index_main_outputs (test_runner_main_clean.MainStaysClean.test_generated_set_matches_index_main_outputs)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_runner_main_clean.py", line 27, in setUp
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_runner_main_clean.py", line 17, in sh
+  File "C:\Users\shiya_8v7nrr4\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 577, in run
+  ERROR: test_main_commit_refuses_non_generated_changes (test_runner_main_clean.MainStaysClean.test_main_commit_refuses_non_generated_changes)
+  ERROR: test_record_validated_commits_regenerated_receipt_index (test_runner_main_clean.MainStaysClean.test_record_validated_commits_regenerated_receipt_index)
+  ERROR: test_run_wrapper_cleans_after_success_and_reports_after_failure (test_runner_main_clean.MainStaysClean.test_run_wrapper_cleans_after_success_and_reports_after_failure)
+  ERROR: test_scheduled_worker_logs_output (test_runner_main_clean.MainStaysClean.test_scheduled_worker_logs_output)
+  Full log: .agents/monitoring/.local/test-logs/runner_main_clean_20261111T222327Z.log
+FAIL runner_parallel (8.9s, exit 1)
+  ERROR: test_generated_set_matches_index_main_outputs (test_runner_main_clean.MainStaysClean.test_generated_set_matches_index_main_outputs)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_runner_main_clean.py", line 27, in setUp
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_runner_main_clean.py", line 17, in sh
+  File "C:\Users\shiya_8v7nrr4\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 577, in run
+  ERROR: test_main_commit_refuses_non_generated_changes (test_runner_main_clean.MainStaysClean.test_main_commit_refuses_non_generated_changes)
+  ERROR: test_record_validated_commits_regenerated_receipt_index (test_runner_main_clean.MainStaysClean.test_record_validated_commits_regenerated_receipt_index)
+  ERROR: test_run_wrapper_cleans_after_success_and_reports_after_failure (test_runner_main_clean.MainStaysClean.test_run_wrapper_cleans_after_success_and_reports_after_failure)
+  ERROR: test_scheduled_worker_logs_output (test_runner_main_clean.MainStaysClean.test_scheduled_worker_logs_output)
+  Full log: .agents/monitoring/.local/test-logs/runner_parallel_20261111T222335Z.log
+PASS project_indexes (9.7s)
+PASS map_factory (1.4s)
+PASS map_cardinal (0.9s)
+PASS map_floor_geometry (0.5s)
+PASS map_floor_style (0.4s)
+PASS map_intake (0.7s)
+PASS map_layers (1.3s)
+PASS map_navigation (1.6s)
+PASS map_reference (0.8s)
+PASS map_templates (0.9s)
+PASS lf_writers (1.3s)
+PASS map_registry_validate (1.6s)
+PASS test_router (3.4s)
+PASS test_index (0.2s)
+NOTE godot_import changed 3 file(s); reverted: game_factory/environment/ART-0048/v001/godot_native_review.png.import, game_factory/environment/ART-0049/v001/godot_native_review.png.import, game_factory/environment/bed_stacks_20261111/references/bed_front_view_01.png.import
+PASS godot_import (7.7s)
+PASS godot_map_smoke (1.6s)
+PASS godot_cardinal_blocks (1.3s)
+PASS aider_worker (11.3s)
+PASS shadow_painter (0.8s)
+PASS map_factory_tools (1.5s)
+PASS prepare_map_workspace (0.3s)
+FAIL map_factory_viewer (60.3s, exit 1)
+  FAIL: test_headless_viewer (test_map_factory_viewer.MapViewerTests.test_headless_viewer)
+  File "H:\shining force\skl-SF\.worktrees\art-bed-sea-stacks\tools\tests\test_map_factory_viewer.py", line 33, in test_headless_viewer
+  AssertionError: 124 != 0 : Godot timed out after 60s
+  ERROR: Failed to open log file for writing: user://logs/godot.log
+  SCRIPT ERROR: Cannot call method 'store_string' on a null value.
+  ERROR: Map file missing: user://viewer_test_map.json
+  FAIL: viewer builds the room
+  FAIL: loaded once
+  Full log: .agents/monitoring/.local/test-logs/map_factory_viewer_20261111T222526Z.log
+PASS map_variation (0.4s)
+PASS poster_characters (20.5s)
+PASS hd_migration (0.5s)
+PASS capture_checks (0.8s)
+PASS blender_catalog (2.5s)
+PASS project_settings (0.3s)
+
+75/90 passed: failed battle_combo, battle_reactions, equipment_menu, shadow_cache, hero_save, room_editor, battle_perspective, battle_camera, battle_vfx, manual_agents, agent_costs, blender_factory, runner_main_clean, runner_parallel, map_factory_viewer

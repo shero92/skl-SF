@@ -1,0 +1,12 @@
+{
+  "request_id": "ART-0049",
+  "selected_sources_verified": 1,
+  "minimum_selected_master_passed": true,
+  "actual_viewport_verified": true,
+  "source_capture_hashes_passed": true,
+  "request_complete": false,
+  "owner_approved": true,
+  "production_active": false,
+  "room_integration_verified": false,
+  "cluster_gate_failed": true
+}

@@ -1,0 +1,56 @@
+{
+  "task_id": "TASK-0159",
+  "agent": "codex",
+  "model": "unknown",
+  "actual_Godot": "4.7.2.stable.official",
+  "checks": [
+    {
+      "command": "python tools/graphics_validation.py --changed",
+      "exit_code": 0,
+      "png_checked": 0,
+      "scope": "runtime production paths; HD measured by dedicated audit"
+    },
+    {
+      "command": "python tools/source_art_catalog.py --root . --check",
+      "exit_code": 0,
+      "records": 147,
+      "groups": 33,
+      "unindexed_source_pngs": []
+    },
+    {
+      "command": "python tools/run_tests.py --check-index --sources-only",
+      "exit_code": 0
+    },
+    {
+      "command": "python game_factory/environment/bed_stacks_20261111/verify_delivery.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -u tools/run_tests.py --changed --timeout 120",
+      "exit_code": 1,
+      "passed": 75,
+      "total": 90,
+      "environment": "restricted sandbox; permission failures; tests.log"
+    },
+    {
+      "command": "python -m unittest discover -s tools/tests -p test_equipment_menu.py",
+      "exit_code": 0,
+      "passed": 2,
+      "environment": "authorized execution, isolated TEST_SAVE"
+    },
+    {
+      "command": "python -u tools/run_tests.py --changed --timeout 120",
+      "exit_code": 1,
+      "passed": 89,
+      "total": 90,
+      "environment": "authorized execution; tests_authorized.log",
+      "remaining_failure": "blender_factory exceeded120seconds; Blender tooling unchanged"
+    }
+  ],
+  "request_complete": {
+    "ART-0048": true,
+    "ART-0049": false
+  },
+  "task_status": "blocked",
+  "production_active": false
+}

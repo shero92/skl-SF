@@ -1,0 +1,43 @@
+{
+  "task_id": "TASK-0159",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "prompts": {
+    "bed": "Use case: stylized-concept. ART-0048 / SKL-SF standalone transparent game furniture sprite. Draw ONE NEW wide DOUBLE BED, front SOUTH foot toward camera, head NORTH at the top. Orthographic three-quarter tactical RPG camera from south looking north and 50 degrees down; no vanishing perspective. Full bed completely inside 255:290 portrait canvas, at least1020x1160 source pixels, ideally1152x1312. About3% transparent margin. Match detailed hard pixel clusters and thin dark outline of SKL-SF owner master bed_front_view_01, warm upper-left light, cobalt blue and gold textile, rich carved dark oak. Reference crop guides design ONLY, redraw independently, never trace/paste reference. FOUR short square posts, tall gently arched headboard at TOP BEHIND TWO distinct WHITE PILLOWS side by side and ONE small cobalt cushion gold compass in front of those pillows. Mattress wide enough for two adults. Broad blue quilt with ONE LARGE golden compass rose in middle, small gold star stitching and gold border. White sheet folded over at PILLOW/TOP end, thin white sheet edge at FOOT/BOTTOM. LOW front footboard at bottom, enough height to see carved wood face but does NOT hide the quilt. Carved wood, not excessive gold plates. Keep bedding arrangement logical: pillows at north/top ONLY; no pillows at foot. Bed aligned with image vertical axis, horizontal front board, slight top and right faces visible without yawing it diagonally. NO shelf, books, flowers, vases, bedside furniture, rug, shell, floor, ground, cast or contact shadow, backdrop, text, letters, watermark, frame, characters or second view. Genuine RGBA transparency outside the single bed. One subject, no sheet.",
+    "arch_initial": "Use case stylized-concept. ART-0049 SKL-SF environment production asset. ONE independent long green-topped distant sea-cliff ridge with a single NATURAL ROCK ARCH opening in its LEFT THIRD (centre of aperture at roughly30percent total ridge width). Draw newly independently, not trace/crop/paste input references. First image reference shows target composition ONLY, ignore ALL sky clouds sea foam or neighbours. Second image SKL-SF approved rock_arch_far_left is palette/hard pixel-cluster style only; DO NOT copy its central opening or stepped mountain silhouette. Ridge relatively horizontal, natural worn tan-grey vertical limestone cliffs, crevices bluegrey lower contrast than foreground room walls; lush green low shrubs along top, upper-left warm sunlight. Distant south side-on view with slight visible top surfaces, no perspective vanishing point. Left third aperture enclosed above by a stone bridge; right two-thirds long solid taller vertical ridge. No manmade masonry. Flat lower waterline with rock reaching it, no surrounding water or reflection. Whole single formation within wide15:8 canvas at least1200x640 pixels, ideally1600x853, about3percent transparent margin around outer silhouette. Genuine RGBA transparency background AND through arch tunnel, no blue sea painted in hole. Hard authored pixel clusters, detailed but readable at300x160 nearest-neighbour, 1px native muted dark outline, not painterly blur. NO ocean, foam, sky, clouds, reflection, ground, shadows outside rock, island companions, buildings, characters, text, watermark, frame, multiple views or sheet. One connected geological subject only.",
+    "arch_final": "ART-0049 precise-object-edit of the independently generated arch island input only. Keep same single geological subject, material, green shrubs, warm upper-left light, hard pixel art style, left-third transparent natural arch opening, solid long right two-thirds, flat rock waterline, NO sea sky foam ground shadows text or neighbouring objects. Correct composition proportions: TALLER CLIFF FACES filling roughly85percent of full image height, with only3-5percent transparent margin top/bottom, around3percent left/right. Do NOT leave huge blank upper quarter. Long whole ridge fits inside a 15:8 wide transparent canvas, at least1200x640 native source pixels. Re-render independently as needed without stretching/resizing old raster. Never clip rightmost rock or bottom tips. Front of distant ridge side-on with slight visible green top. Genuine RGBA transparent background and transparent tunnel. One connected ridge only, no extra islands or scene.",
+    "cluster": "Use case stylized-concept. ART-0049 SKL-SF independent distant sea-stack CLUSTER, one backdrop asset containing SIX narrow natural limestone sea stacks of different heights, tallest one near RIGHT at75-85percent of width. New independent drawing, target crop as composition reference ONLY, no tracing or copying pixels. Ignore all foreground room walls, foreground plants, sky sea foam clouds from reference. Far south side-on view with slight view of green flat tops, vertical tan-grey striated rock faces, small green shrubs on tops and ledges. Heights vary substantially; two small distant slender stacks on left, medium stacks in middle, large tall pillar at right with a short companion tip at far right. All SIX belong to one horizon cluster at same flat implied waterline; transparent channels separate the stacks; no water drawn. Lower contrast than foreground limestone room, warm upper-left light. Match SKL-SF sea_coast rock_arch_far_left muted stone palette and crisp hard pixel clusters, readable at526x190 pixels native. Output must be at least2104x760 SOURCE pixels, prefer2160x780 pixels, landscape canvas aspect2.7684:1. Do not upscale, give genuinely detailed source at requested dimensions. Entire formation inside canvas with2-3percent real transparent margin on all sides, tallest top never clipped. Genuine RGBA transparency outside rocks AND gaps. No foreground architecture, ivy-flower wall, sea, foam, clouds, sky, horizon colour plane, reflections, ground, cast shadow, text, watermark, frame, figures, multiple views, grid or sprite sheet. One subject cluster, not separate illustrated panels."
+  },
+  "calls": [
+    {
+      "key": "bed",
+      "cache_path": "C:/Users/shiya_8v7nrr4/.codex/generated_images/01a19394-a05d-7ad2-8601-e1ebc1c48c0d/exec-f00ef557-923e-478c-bbb3-d1eaf7336304.png",
+      "project_source_path": "assets_hd/furniture/double_bed_south/v001/hero_double_bed_south.png",
+      "sha256": "1bd929fef9e2d9cbd84bb7fc2376bd0b53a7ea4704e27ba654869fb76d0da3ba",
+      "bytes_identical_to_tool_output": true
+    },
+    {
+      "key": "arch_initial",
+      "cache_path": "C:/Users/shiya_8v7nrr4/.codex/generated_images/01a19394-a05d-7ad2-8601-e1ebc1c48c0d/exec-e321dc6e-613e-4fa7-9262-1329055d3e27.png",
+      "project_source_path": "assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_arch_island_attempt_01.png",
+      "sha256": "78d9a01060a58b14bfcd56036814aae57f5c12c6f2b231b7d0906ab74b0057b4",
+      "bytes_identical_to_tool_output": true
+    },
+    {
+      "key": "arch_final",
+      "cache_path": "C:/Users/shiya_8v7nrr4/.codex/generated_images/01a19394-a05d-7ad2-8601-e1ebc1c48c0d/exec-a088fd88-4c42-4749-b783-5f839308ca62.png",
+      "project_source_path": "assets_hd/background/sea_stack_islands/v001/hero_sea_stack_arch_island.png",
+      "sha256": "89450e80606e40492d83530bacb3f989d52204c016bd4c96a316135343689bcf",
+      "bytes_identical_to_tool_output": true
+    },
+    {
+      "key": "cluster",
+      "cache_path": "C:/Users/shiya_8v7nrr4/.codex/generated_images/01a19394-a05d-7ad2-8601-e1ebc1c48c0d/exec-f0c31b93-b75d-4095-874f-c953386696a7.png",
+      "project_source_path": "assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_cluster_attempt_01.png",
+      "sha256": "8bc8f4d93b6477c8816d86583b74ac28ee17447d9f944f1bef06b29f0d83a577",
+      "bytes_identical_to_tool_output": true
+    }
+  ],
+  "generation_cache_required": false
+}

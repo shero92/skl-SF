@@ -1,0 +1,120 @@
+{
+  "request_id": "ART-0048",
+  "task_id": "TASK-0159",
+  "delivery_branch": "codex/art-0048-0049-bed-stacks",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "production_active": false,
+  "generation_cache_required": false,
+  "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+  "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+  "items": [
+    {
+      "id": "hero_double_bed_south",
+      "request_id": "ART-0048",
+      "sha256": "1bd929fef9e2d9cbd84bb7fc2376bd0b53a7ea4704e27ba654869fb76d0da3ba",
+      "pixel_size": [
+        1178,
+        1335
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        67,
+        68,
+        1110,
+        1263
+      ],
+      "origin": [
+        588.5,
+        1262
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds; source pixels",
+      "native_canvas": [
+        255,
+        290
+      ],
+      "native_width": 255,
+      "native_height": 290,
+      "native_review_path": "game_factory/environment/ART-0048/v001/native_review/hero_double_bed_south.png",
+      "native_review_sha256": "9101e83e8df8c953b3911e93be42b643ecf205ca884ebe1f28ea73d739867636",
+      "native_origin": [
+        127.5,
+        272
+      ],
+      "native_source_region": [
+        0,
+        0,
+        1178,
+        1335
+      ],
+      "native_content_size": [
+        255,
+        289
+      ],
+      "native_offset": [
+        0,
+        0,
+        255,
+        289
+      ],
+      "native_method": "whole-source uniform contain, nearest neighbour, transparent padding; integer rounding only; no source edit",
+      "minimum_master_size": [
+        1020,
+        1160
+      ],
+      "minimum_master_passed": true,
+      "source_pixels_per_native_pixel": [
+        4.6196078431372545,
+        4.603448275862069
+      ],
+      "prompt_text": "Use case: stylized-concept. ART-0048 / SKL-SF standalone transparent game furniture sprite. Draw ONE NEW wide DOUBLE BED, front SOUTH foot toward camera, head NORTH at the top. Orthographic three-quarter tactical RPG camera from south looking north and 50 degrees down; no vanishing perspective. Full bed completely inside 255:290 portrait canvas, at least1020x1160 source pixels, ideally1152x1312. About3% transparent margin. Match detailed hard pixel clusters and thin dark outline of SKL-SF owner master bed_front_view_01, warm upper-left light, cobalt blue and gold textile, rich carved dark oak. Reference crop guides design ONLY, redraw independently, never trace/paste reference. FOUR short square posts, tall gently arched headboard at TOP BEHIND TWO distinct WHITE PILLOWS side by side and ONE small cobalt cushion gold compass in front of those pillows. Mattress wide enough for two adults. Broad blue quilt with ONE LARGE golden compass rose in middle, small gold star stitching and gold border. White sheet folded over at PILLOW/TOP end, thin white sheet edge at FOOT/BOTTOM. LOW front footboard at bottom, enough height to see carved wood face but does NOT hide the quilt. Carved wood, not excessive gold plates. Keep bedding arrangement logical: pillows at north/top ONLY; no pillows at foot. Bed aligned with image vertical axis, horizontal front board, slight top and right faces visible without yawing it diagonally. NO shelf, books, flowers, vases, bedside furniture, rug, shell, floor, ground, cast or contact shadow, backdrop, text, letters, watermark, frame, characters or second view. Genuine RGBA transparency outside the single bed. One subject, no sheet.",
+      "prompt_path": "game_factory/environment/ART-0048/v001/requests/hero_double_bed_south.txt",
+      "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0048_target.png",
+      "reference_crop_sha256": "7824995b0e8baa7a97e0655f5ac04a7f30b2fda65ff22dcca44214b3d005940d",
+      "comparison_path": ".agents/graphics/requests/reference_crops/ART-0048_compare.png",
+      "comparison_sha256": "59a6ff53f0c2bc396c3981603ba6060b972c189f2289d83afb084be79b1718bc",
+      "reference_use": "design/style only, never pasted/traced into generated source",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "bitmap_flip_or_rotation": false,
+      "baked_shadow": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false,
+      "quality_status": "needs_map_calibration",
+      "collision": null,
+      "footprint_64px_cells": null,
+      "calibration_status": "not measured in room; native canvas is not navigation footprint",
+      "facing": "south foot, north head; orthographic front/top",
+      "style_reference_path": "game_factory/environment/bed_stacks_20261111/references/bed_front_view_01.png",
+      "style_reference_sha256": "9da6d921aed82be8232dd949cfd592ba52e34e65c5657096487f6677fce3749d",
+      "master_path": "assets_hd/furniture/double_bed_south/v001/hero_double_bed_south.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0048/hero_double_bed_south.png"
+    }
+  ],
+  "rejected_attempts": [],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0048/hero_double_bed_south.png",
+      "sha256": "1bd929fef9e2d9cbd84bb7fc2376bd0b53a7ea4704e27ba654869fb76d0da3ba"
+    }
+  ],
+  "source_count": 1,
+  "quality_status": "needs_map_calibration",
+  "limitations": [
+    "Source-only Godot review, no room placement/occlusion/collision verified.",
+    "Owner main checkout unchanged. Task worktree sources are available through delivery branch.",
+    "Visual owner approval is automatic; source quality and integration gates remain separate."
+  ],
+  "generation_count": 1,
+  "status": "delivered"
+}
