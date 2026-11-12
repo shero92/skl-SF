@@ -21,6 +21,8 @@ static var keep_photo_mode: bool = true  # the choice survives a visit to the ed
 var photo_mode: bool = false
 var photo_room: Dictionary = {}
 var _map_navigation: NavigationGrid
+var _life: PhotoRoomLife
+var _companion: Node2D
 var _moved: Dictionary = {}  # instance id -> Node2D that a photo-room move relocates
 var _room: Node2D
 var _photo: Sprite2D
@@ -52,6 +54,7 @@ func _ready() -> void:
     companion.position = player.position + Vector2(55, 30)
     companion.follow_target = player
     entities.add_child(companion)
+    _companion = companion
 
     var camera := Camera2D.new()
     camera.position = Vector2(768, 512)
@@ -83,7 +86,7 @@ func _ready() -> void:
         entities.add_child(npc)
         _moved[String(info.get("instance_id", ""))] = npc
         interactions.append({
-            "id": info.get("instance_id", ""),
+            "id": info.get("instance_id", ""), "npc": true,
             "x": info.get("x", 0), "y": info.get("y", 0),
             "radius": info.get("radius", 100),
             "speaker": info.get("name", "NPC"), "lines": info.get("lines", [])
@@ -110,11 +113,16 @@ func set_photo_mode(on: bool) -> bool:
         _photo.centered = false
         _photo.z_index = 25  # above the hidden map levels, below characters
         _room.add_child(_photo)
+        _life = PhotoRoomLife.new()
+        _life.name = "PhotoLife"
+        _life.z_index = 26  # over the painting, under characters
+        _room.add_child(_life)
+        _life.build(texture, photo_room, _room)
     photo_mode = on
     keep_photo_mode = on
     var entities := RoomFactory.entities_parent(_room)
     for child in _room.get_children():
-        if child == _photo:
+        if child == _photo or child == _life:
             child.visible = on
         elif child.is_ancestor_of(entities):
             for inner in child.get_children():
@@ -128,6 +136,12 @@ func set_photo_mode(on: bool) -> bool:
             shape.set_deferred("disabled", on)
     if player != null:
         player.navigation = NavigationGrid.from_navigation(photo_room.get("navigation", {}), _room.global_position) if on else _map_navigation
+    # A hero-only photo room shows no NPCs and no companion; their talk spots rest too.
+    var alone := on and bool(photo_room.get("hero_only", false))
+    if _companion != null:
+        _companion.visible = not alone
+    for id: String in _moved:
+        _moved[id].visible = not alone
     # NPCs and interaction spots that sit on painted furniture or plants move to a free square.
     var moves: Dictionary = photo_room.get("moves", {})
     for spot: Dictionary in interactions:
@@ -196,6 +210,8 @@ func _unhandled_input(event: InputEvent) -> void:
         var closest: Dictionary = {}
         var best := INF
         for candidate in interactions:
+            if photo_mode and bool(photo_room.get("hero_only", false)) and bool(candidate.get("npc", false)):
+                continue
             var pos := Vector2(float(candidate.get("x",0)),float(candidate.get("y",0)))
             var distance := player.position.distance_to(pos)
             if distance <= float(candidate.get("radius", 96)) and distance < best:

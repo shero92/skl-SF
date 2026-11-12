@@ -57,9 +57,20 @@ func _run() -> void:
 	for spot: Dictionary in _main.interactions:
 		if spot.get("id", "") == "ReefFriend":
 			_check(walk.point_open(Vector2(spot["x"], spot["y"])), "a moved NPC stands on a walk square")
+	var life: PhotoRoomLife = _main._life
+	_check(life != null and life.clouds.size() == 3 and life.glows.size() == 8, "clouds drift and lanterns glow over the painting (%d clouds, %d glows)" % [life.clouds.size(), life.glows.size()])
+	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D and n.material is ShaderMaterial).size() == 6 and life.get_node_or_null("Patch") != null, "the sea ripples and the painted figures are covered")
+	var cloud_x: float = life.clouds[0].position.x
+	life._process(1.0)
+	_check(life.clouds[0].position.x > cloud_x, "clouds move")
+	_check(not _main._companion.visible and not _main._moved["Cely"].visible, "only the hero is in the painted room")
+	_main.player.position = Vector2(640, 470)
+	_main._unhandled_input(_key(KEY_E))
+	_check(not _main.dialogue.is_open, "hidden NPCs cannot be talked to")
 	_main._unhandled_input(_key(KEY_F3))
 	_check(not _main.photo_mode and not photo.visible and _main._room.get_node("Level1_Ground").visible, "F3 brings the map pieces back")
 	_check(_main.player.navigation != walk and _main.player.navigation.cell_size == 64.0, "the map's own walk grid returns")
+	_check(_main._companion.visible and _main._moved["Cely"].visible, "the map room keeps its characters")
 	_main._unhandled_input(_key(KEY_F3))
 	_check(_main.photo_mode and photo.visible, "F3 again shows the painting")
 	_main.dialogue.open_dialogue("Test", ["hello"])

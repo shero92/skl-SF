@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants.",
+  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants. hero_only hides the NPCs and the companion. patches cover the painted hero and companion with a floor piece taken from the same painting at run time (the file is untouched) until ART-0050 delivers a clean painting. sea polygons ripple (blue pixels only), clouds borrow the map's cloud parts, lanterns get a flickering glow.",
   "image": "res://map_factory/references/hero_room_01_target_20261103.png",
   "navigation": {
     "schema_version": 1,
@@ -205,5 +205,266 @@
       1235,
       705
     ]
-  }
+  },
+  "hero_only": true,
+  "patches": [
+    {
+      "from": [
+        570,
+        440,
+        132,
+        92
+      ],
+      "to": [
+        700,
+        440
+      ]
+    }
+  ],
+  "sea": [
+    [
+      [
+        0,
+        45
+      ],
+      [
+        560,
+        45
+      ],
+      [
+        560,
+        150
+      ],
+      [
+        280,
+        150
+      ],
+      [
+        120,
+        330
+      ],
+      [
+        25,
+        480
+      ],
+      [
+        0,
+        480
+      ]
+    ],
+    [
+      [
+        0,
+        560
+      ],
+      [
+        30,
+        560
+      ],
+      [
+        40,
+        800
+      ],
+      [
+        110,
+        900
+      ],
+      [
+        130,
+        1024
+      ],
+      [
+        0,
+        1024
+      ]
+    ],
+    [
+      [
+        560,
+        45
+      ],
+      [
+        1000,
+        45
+      ],
+      [
+        1000,
+        170
+      ],
+      [
+        930,
+        170
+      ],
+      [
+        930,
+        95
+      ],
+      [
+        600,
+        95
+      ],
+      [
+        560,
+        150
+      ]
+    ],
+    [
+      [
+        692,
+        120
+      ],
+      [
+        835,
+        120
+      ],
+      [
+        835,
+        320
+      ],
+      [
+        692,
+        320
+      ]
+    ],
+    [
+      [
+        1000,
+        45
+      ],
+      [
+        1536,
+        45
+      ],
+      [
+        1536,
+        1024
+      ],
+      [
+        1505,
+        1024
+      ],
+      [
+        1505,
+        480
+      ],
+      [
+        1470,
+        330
+      ],
+      [
+        1400,
+        225
+      ],
+      [
+        1330,
+        185
+      ],
+      [
+        1215,
+        90
+      ],
+      [
+        1040,
+        85
+      ],
+      [
+        1040,
+        250
+      ],
+      [
+        1000,
+        250
+      ]
+    ],
+    [
+      [
+        1140,
+        1024
+      ],
+      [
+        1200,
+        985
+      ],
+      [
+        1420,
+        930
+      ],
+      [
+        1505,
+        760
+      ],
+      [
+        1505,
+        1024
+      ]
+    ]
+  ],
+  "clouds": {
+    "speed": 6,
+    "items": [
+      {
+        "part": "SkyCloudA",
+        "x": 200,
+        "y": 34,
+        "scale": 1.0,
+        "alpha": 0.9
+      },
+      {
+        "part": "SkyCloudB",
+        "x": 760,
+        "y": 28,
+        "scale": 1.0,
+        "alpha": 0.9
+      },
+      {
+        "part": "SkyCloudC",
+        "x": 1300,
+        "y": 38,
+        "scale": 1.0,
+        "alpha": 0.9
+      }
+    ]
+  },
+  "lanterns": [
+    [
+      328,
+      245,
+      70
+    ],
+    [
+      503,
+      262,
+      70
+    ],
+    [
+      235,
+      378,
+      70
+    ],
+    [
+      1120,
+      245,
+      70
+    ],
+    [
+      1361,
+      298,
+      70
+    ],
+    [
+      1416,
+      483,
+      70
+    ],
+    [
+      1231,
+      478,
+      80
+    ],
+    [
+      1190,
+      318,
+      50
+    ]
+  ]
 }
