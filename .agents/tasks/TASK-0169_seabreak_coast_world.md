@@ -32,3 +32,7 @@ Agent: codex. Model/tokens/cost unknown. لا تفويض إلى عامل آخر.
 -8لقطات Godot فعلية وإيصال المحرك/بصمات الخريطة والربط في docs/previews/seabreak_coast. التفاصيل في docs/SEABREAK_COAST.md. cost/model/tokens unknown، والإيصال الآلي يرافق الالتزام.
 
 الخطوة التالية: دمج هذا الفرع بعد دمج أساس غرفة TASK-0168، ثم تجربة المالك للتكوين الخارجي؛ visual_qa يبقى needs_review ولا ادعاء اعتماد بصري للخريطة.
+
+PR: https://github.com/shero92/skl-SF/pull/191
+Commit: https://github.com/shero92/skl-SF/commit/904562d78a9e835aa956e1fbd4980031ab4346b9
+فحص merge-tree أكد توافق الفرع دون تعارض مع تحديث الغرفة0a309120؛ الاختبارات المحلية مسجلة ضد الأساس2c0b2ab6، ولا ندعي إعادة تشغيلها على تركيبة دمج لاحقة.

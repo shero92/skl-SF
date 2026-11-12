@@ -63,3 +63,5 @@ python tools/run_tests.py --only map_factory --only map_registry_validate --only
 التقاط المشاهد الفعلية: شغّل Godot بإعدادالمشروع و`--script res://tools/capture_seabreak_coast.gd`. لإثبات السير والانتقال: `--headless --script res://tools/verify_seabreak_coast.gd`. الإيصال لا يعتمد علىhash لملف يتغير آليًا أثناء العرض.
 
 Agent: codex. Tool: existing Godot + Python + approved reusable art. New image-generation calls:0. Model/tokens/cost:unknown؛ إيصال التكلفة الحقيقي يرافقCommit. PR مُتسلسل فوق `claude/photo-backdrop-test` للحفاظ على تعديلات الغرفة ودمج أساسها أولًا؛ لا دفع إلىmain.
+
+طلب الدمج: https://github.com/shero92/skl-SF/pull/191؛ قابل للدمج دون تعارض مع تحديث غرفة0a309120 عند الفحص. الاختبارات المحلية ضد أساس2c0b2ab6 الموضح أعلاه.

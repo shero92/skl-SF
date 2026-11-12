@@ -50,5 +50,11 @@
     "Conservative authored grid feet require owner visual play review; no claim of measured sprite alpha silhouettes as physical geometry.",
     "Room source dependency TASK-0168 must integrate before this stacked branch.",
     "This exterior scene supplies exploration and return; existing room battle/editor/equipment systems remain in their room scenes."
-  ]
+  ],
+  "pull_request": "https://github.com/shero92/skl-SF/pull/191",
+  "base_branch_compatibility": {
+    "head_checked": "0a3091209d9780d0488d263848813c5c8b567758",
+    "merge_tree_clean": true,
+    "combined_runtime_tests_performed": false
+  }
 }

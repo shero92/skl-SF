@@ -12,15 +12,15 @@
   "files": [
     {
       "path": ".agents/planner/requests/REQ-68f0779d6b24.json",
-      "sha256": "7f8ba0184c1e5c3ebf0db2c671770ed49427cfb566974ae186cc9495d45f2612"
+      "sha256": "e069ad90834fafaffb346f346df363ac5666491940d7f11821404be4dd90bc70"
     },
     {
       "path": ".agents/tasks/TASK-0169_seabreak_coast_world.md",
-      "sha256": "3a95a9bc6873f05fb477f3b6c82b4fa5ee572331a6457ad6ab9b3b209274cd9f"
+      "sha256": "61b93487e6319780c6029f6c70ed9ac04b2625999964a51e29d323e2d8c4c088"
     },
     {
       "path": "docs/SEABREAK_COAST.md",
-      "sha256": "33385c72de20bb93c3dd6db7a20753ed9c59056f904687e902302cbf9431324b"
+      "sha256": "6088ec51861357ebf7ddde8ba75f16ba2b228b0f3df37c6de78501bb71fe7578"
     },
     {
       "path": "docs/previews/seabreak_coast/arrival.png",
@@ -68,7 +68,7 @@
     },
     {
       "path": "docs/previews/seabreak_coast/verification.json",
-      "sha256": "b414cb0cb71300fb06bd797572f7590378342a5dd4ae42dcb94352e36d23d51d"
+      "sha256": "f4fc9c579b6b0a9b44a398169be0b1a645f5ddb41ba2ea92fce975f4a3cdbe2c"
     },
     {
       "path": "docs/previews/seabreak_coast/walk.log",
@@ -214,5 +214,6 @@
       "path": "tools/verify_seabreak_coast.gd",
       "sha256": "8e41d65722675b6743fad01cfc8dbb8fcbbcd2381a33191bfd807f0d88e9df10"
     }
-  ]
+  ],
+  "pull_request": "https://github.com/shero92/skl-SF/pull/191"
 }
