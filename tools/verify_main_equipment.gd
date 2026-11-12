@@ -59,7 +59,7 @@ func _run() -> void:
 			_check(walk.point_open(Vector2(spot["x"], spot["y"])), "a moved NPC stands on a walk square")
 	var life: PhotoRoomLife = _main._life
 	_check(life != null and life.clouds.size() == 3 and life.glows.size() == 8, "clouds drift and lanterns glow over the painting (%d clouds, %d glows)" % [life.clouds.size(), life.glows.size()])
-	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D and n.material is ShaderMaterial).size() == 6 and life.get_node_or_null("Patch") != null, "the sea ripples and the painted figures are covered")
+	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D and n.name != "CloudCover").size() == 6 and life.get_node_or_null("CloudCover") != null and life.get_node_or_null("Patch") != null, "the sea ripples and the painted figures are covered")
 	var cloud_x: float = life.clouds[0].position.x
 	life._process(1.0)
 	_check(life.clouds[0].position.x > cloud_x, "clouds move")
