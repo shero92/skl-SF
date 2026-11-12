@@ -480,6 +480,7 @@
       "covers": "Windows ANGLE driver, windowed 1280x720 mode and main scene so the game starts.",
       "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_project_settings.py"],
       "paths": ["project.godot", "tools/tests/test_project_settings.py", "scenes/main.tscn"]
-    }
+    },
+    {"id": "seabreak_coast", "kind": "python", "covers": "Connected6144x4096 coastal world, blocked sea and plant bases, existing grass-source hashes, actual HeroPlayer movement to six landmarks and a room/world roundtrip without re-entry loops.", "command": ["{python}", "-m", "unittest", "discover", "-s", "tools/tests", "-p", "test_seabreak_coast.py"], "paths": ["tools/tests/test_seabreak_coast.py", "tools/build_seabreak_coast.py", "tools/polish_seabreak_coast.py", "tools/refine_seabreak_coast.py", "tools/verify_seabreak_coast.gd", "tools/capture_seabreak_coast.gd", "scenes/world/**", "scenes/main.tscn", "map_factory/maps/seabreak_coast_01/**", "map_factory/worlds/**"]}
   ]
 }

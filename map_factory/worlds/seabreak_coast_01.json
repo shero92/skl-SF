@@ -1,0 +1,1883 @@
+{
+  "schema_version": 1,
+  "map_id": "seabreak_coast_01",
+  "player_spawn": [
+    1184,
+    992
+  ],
+  "room_scene": "res://scenes/main.tscn",
+  "world_scene": "res://scenes/world/seabreak_coast.tscn",
+  "room_exit_photo": {
+    "rect": [
+      704,
+      864,
+      128,
+      64
+    ],
+    "return_position": [
+      768,
+      832
+    ]
+  },
+  "room_exit_factory": {
+    "rect": [
+      688,
+      824,
+      160,
+      32
+    ],
+    "return_position": [
+      768,
+      784
+    ]
+  },
+  "world_return_rect": [
+    1088,
+    576,
+    192,
+    128
+  ],
+  "camera_limits": [
+    0,
+    0,
+    6144,
+    4096
+  ],
+  "landmarks": [
+    {
+      "id": "sanctuary_gate",
+      "name": "Sanctuary Gate",
+      "cell": [
+        18,
+        12
+      ],
+      "radius": [
+        11,
+        7
+      ]
+    },
+    {
+      "id": "compass_court",
+      "name": "Compass Court",
+      "cell": [
+        42,
+        25
+      ],
+      "radius": [
+        15,
+        10
+      ]
+    },
+    {
+      "id": "palm_gardens",
+      "name": "Palm Gardens",
+      "cell": [
+        72,
+        18
+      ],
+      "radius": [
+        13,
+        9
+      ]
+    },
+    {
+      "id": "beacon_terrace",
+      "name": "Beacon Terrace",
+      "cell": [
+        77,
+        47
+      ],
+      "radius": [
+        11,
+        9
+      ]
+    },
+    {
+      "id": "sunken_archive",
+      "name": "Sunken Archive",
+      "cell": [
+        29,
+        48
+      ],
+      "radius": [
+        15,
+        8
+      ]
+    },
+    {
+      "id": "quiet_overlook",
+      "name": "Quiet Overlook",
+      "cell": [
+        11,
+        37
+      ],
+      "radius": [
+        6,
+        5
+      ]
+    }
+  ],
+  "route_waypoints": [
+    [
+      18,
+      15
+    ],
+    [
+      24,
+      15
+    ],
+    [
+      31,
+      23
+    ],
+    [
+      42,
+      25
+    ],
+    [
+      48,
+      25
+    ],
+    [
+      59,
+      25
+    ],
+    [
+      66,
+      18
+    ],
+    [
+      72,
+      18
+    ],
+    [
+      74,
+      23
+    ],
+    [
+      76,
+      34
+    ],
+    [
+      77,
+      47
+    ],
+    [
+      72,
+      49
+    ],
+    [
+      56,
+      49
+    ],
+    [
+      42,
+      47
+    ],
+    [
+      29,
+      48
+    ],
+    [
+      40,
+      32
+    ],
+    [
+      40,
+      40
+    ],
+    [
+      29,
+      48
+    ],
+    [
+      22,
+      46
+    ],
+    [
+      15,
+      43
+    ],
+    [
+      11,
+      37
+    ]
+  ],
+  "floor_cells": 2161,
+  "walk_cells": 2029,
+  "decorative_obstacle_cells": [
+    [
+      7,
+      34
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      14
+    ],
+    [
+      9,
+      35
+    ],
+    [
+      9,
+      38
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      10,
+      38
+    ],
+    [
+      11,
+      7
+    ],
+    [
+      11,
+      10
+    ],
+    [
+      11,
+      38
+    ],
+    [
+      12,
+      10
+    ],
+    [
+      13,
+      35
+    ],
+    [
+      14,
+      16
+    ],
+    [
+      15,
+      6
+    ],
+    [
+      16,
+      35
+    ],
+    [
+      17,
+      51
+    ],
+    [
+      21,
+      45
+    ],
+    [
+      21,
+      50
+    ],
+    [
+      22,
+      45
+    ],
+    [
+      22,
+      51
+    ],
+    [
+      22,
+      53
+    ],
+    [
+      23,
+      45
+    ],
+    [
+      24,
+      7
+    ],
+    [
+      24,
+      10
+    ],
+    [
+      25,
+      10
+    ],
+    [
+      25,
+      44
+    ],
+    [
+      25,
+      49
+    ],
+    [
+      26,
+      10
+    ],
+    [
+      26,
+      44
+    ],
+    [
+      26,
+      45
+    ],
+    [
+      26,
+      49
+    ],
+    [
+      27,
+      10
+    ],
+    [
+      27,
+      44
+    ],
+    [
+      27,
+      45
+    ],
+    [
+      27,
+      49
+    ],
+    [
+      28,
+      45
+    ],
+    [
+      31,
+      28
+    ],
+    [
+      31,
+      44
+    ],
+    [
+      31,
+      45
+    ],
+    [
+      31,
+      49
+    ],
+    [
+      32,
+      31
+    ],
+    [
+      32,
+      44
+    ],
+    [
+      32,
+      45
+    ],
+    [
+      32,
+      49
+    ],
+    [
+      33,
+      44
+    ],
+    [
+      33,
+      45
+    ],
+    [
+      33,
+      49
+    ],
+    [
+      35,
+      51
+    ],
+    [
+      35,
+      53
+    ],
+    [
+      36,
+      17
+    ],
+    [
+      36,
+      30
+    ],
+    [
+      36,
+      45
+    ],
+    [
+      37,
+      22
+    ],
+    [
+      37,
+      28
+    ],
+    [
+      37,
+      45
+    ],
+    [
+      38,
+      28
+    ],
+    [
+      38,
+      45
+    ],
+    [
+      39,
+      28
+    ],
+    [
+      39,
+      52
+    ],
+    [
+      40,
+      28
+    ],
+    [
+      44,
+      28
+    ],
+    [
+      45,
+      28
+    ],
+    [
+      46,
+      21
+    ],
+    [
+      46,
+      28
+    ],
+    [
+      46,
+      34
+    ],
+    [
+      47,
+      22
+    ],
+    [
+      47,
+      28
+    ],
+    [
+      49,
+      17
+    ],
+    [
+      49,
+      30
+    ],
+    [
+      50,
+      20
+    ],
+    [
+      50,
+      33
+    ],
+    [
+      53,
+      29
+    ],
+    [
+      54,
+      19
+    ],
+    [
+      61,
+      14
+    ],
+    [
+      65,
+      13
+    ],
+    [
+      67,
+      16
+    ],
+    [
+      68,
+      21
+    ],
+    [
+      68,
+      45
+    ],
+    [
+      69,
+      12
+    ],
+    [
+      69,
+      19
+    ],
+    [
+      69,
+      25
+    ],
+    [
+      69,
+      45
+    ],
+    [
+      70,
+      19
+    ],
+    [
+      70,
+      41
+    ],
+    [
+      70,
+      45
+    ],
+    [
+      71,
+      19
+    ],
+    [
+      71,
+      44
+    ],
+    [
+      71,
+      50
+    ],
+    [
+      72,
+      44
+    ],
+    [
+      72,
+      50
+    ],
+    [
+      73,
+      11
+    ],
+    [
+      73,
+      19
+    ],
+    [
+      73,
+      44
+    ],
+    [
+      73,
+      49
+    ],
+    [
+      73,
+      50
+    ],
+    [
+      74,
+      14
+    ],
+    [
+      74,
+      19
+    ],
+    [
+      74,
+      44
+    ],
+    [
+      74,
+      49
+    ],
+    [
+      74,
+      53
+    ],
+    [
+      75,
+      19
+    ],
+    [
+      75,
+      49
+    ],
+    [
+      76,
+      15
+    ],
+    [
+      77,
+      10
+    ],
+    [
+      78,
+      13
+    ],
+    [
+      79,
+      16
+    ],
+    [
+      79,
+      20
+    ],
+    [
+      79,
+      49
+    ],
+    [
+      80,
+      19
+    ],
+    [
+      80,
+      49
+    ],
+    [
+      81,
+      16
+    ],
+    [
+      81,
+      22
+    ],
+    [
+      81,
+      44
+    ],
+    [
+      81,
+      45
+    ],
+    [
+      81,
+      49
+    ],
+    [
+      81,
+      50
+    ],
+    [
+      82,
+      16
+    ],
+    [
+      82,
+      44
+    ],
+    [
+      82,
+      50
+    ],
+    [
+      82,
+      51
+    ],
+    [
+      83,
+      15
+    ],
+    [
+      83,
+      16
+    ],
+    [
+      83,
+      41
+    ],
+    [
+      83,
+      44
+    ],
+    [
+      83,
+      50
+    ],
+    [
+      83,
+      54
+    ],
+    [
+      84,
+      18
+    ],
+    [
+      84,
+      44
+    ],
+    [
+      84,
+      45
+    ],
+    [
+      85,
+      45
+    ],
+    [
+      86,
+      45
+    ],
+    [
+      86,
+      50
+    ]
+  ],
+  "source": "owner brief and existing independent catalog assets; no generated composite or character changes",
+  "prop_navigation_annotations": [
+    {
+      "instance_id": "Seabreak_A005_0063",
+      "blocked_cells": [
+        [
+          25,
+          44
+        ],
+        [
+          26,
+          44
+        ],
+        [
+          27,
+          44
+        ],
+        [
+          31,
+          44
+        ],
+        [
+          32,
+          44
+        ],
+        [
+          33,
+          44
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_W027_0092",
+      "blocked_cells": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_W028_0093",
+      "blocked_cells": [
+        [
+          25,
+          10
+        ],
+        [
+          26,
+          10
+        ],
+        [
+          27,
+          10
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_W028_0122",
+      "blocked_cells": [
+        [
+          81,
+          16
+        ],
+        [
+          82,
+          16
+        ],
+        [
+          83,
+          16
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_W027_0131",
+      "blocked_cells": [
+        [
+          68,
+          45
+        ],
+        [
+          69,
+          45
+        ],
+        [
+          70,
+          45
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_W028_0132",
+      "blocked_cells": [
+        [
+          84,
+          45
+        ],
+        [
+          85,
+          45
+        ],
+        [
+          86,
+          45
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A012_0051",
+      "blocked_cells": [
+        [
+          37,
+          22
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A012_0052",
+      "blocked_cells": [
+        [
+          47,
+          22
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A012_0053",
+      "blocked_cells": [
+        [
+          37,
+          28
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A012_0054",
+      "blocked_cells": [
+        [
+          47,
+          28
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A017_0055",
+      "blocked_cells": [
+        [
+          71,
+          44
+        ],
+        [
+          72,
+          44
+        ],
+        [
+          73,
+          44
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A017_0056",
+      "blocked_cells": [
+        [
+          81,
+          44
+        ],
+        [
+          82,
+          44
+        ],
+        [
+          83,
+          44
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A017_0057",
+      "blocked_cells": [
+        [
+          71,
+          50
+        ],
+        [
+          72,
+          50
+        ],
+        [
+          73,
+          50
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A017_0058",
+      "blocked_cells": [
+        [
+          81,
+          50
+        ],
+        [
+          82,
+          50
+        ],
+        [
+          83,
+          50
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A011_0059",
+      "blocked_cells": [
+        [
+          21,
+          45
+        ],
+        [
+          22,
+          45
+        ],
+        [
+          23,
+          45
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A011_0060",
+      "blocked_cells": [
+        [
+          26,
+          45
+        ],
+        [
+          27,
+          45
+        ],
+        [
+          28,
+          45
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A011_0061",
+      "blocked_cells": [
+        [
+          31,
+          45
+        ],
+        [
+          32,
+          45
+        ],
+        [
+          33,
+          45
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_A011_0062",
+      "blocked_cells": [
+        [
+          36,
+          45
+        ],
+        [
+          37,
+          45
+        ],
+        [
+          38,
+          45
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0064",
+      "blocked_cells": [
+        [
+          38,
+          28
+        ],
+        [
+          39,
+          28
+        ],
+        [
+          40,
+          28
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0065",
+      "blocked_cells": [
+        [
+          44,
+          28
+        ],
+        [
+          45,
+          28
+        ],
+        [
+          46,
+          28
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0066",
+      "blocked_cells": [
+        [
+          69,
+          19
+        ],
+        [
+          70,
+          19
+        ],
+        [
+          71,
+          19
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0067",
+      "blocked_cells": [
+        [
+          73,
+          19
+        ],
+        [
+          74,
+          19
+        ],
+        [
+          75,
+          19
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0068",
+      "blocked_cells": [
+        [
+          73,
+          49
+        ],
+        [
+          74,
+          49
+        ],
+        [
+          75,
+          49
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0069",
+      "blocked_cells": [
+        [
+          79,
+          49
+        ],
+        [
+          80,
+          49
+        ],
+        [
+          81,
+          49
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0070",
+      "blocked_cells": [
+        [
+          25,
+          49
+        ],
+        [
+          26,
+          49
+        ],
+        [
+          27,
+          49
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0071",
+      "blocked_cells": [
+        [
+          31,
+          49
+        ],
+        [
+          32,
+          49
+        ],
+        [
+          33,
+          49
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_F09_south_0072",
+      "blocked_cells": [
+        [
+          9,
+          38
+        ],
+        [
+          10,
+          38
+        ],
+        [
+          11,
+          38
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0073",
+      "blocked_cells": [
+        [
+          12,
+          10
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0074",
+      "blocked_cells": [
+        [
+          24,
+          10
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0075",
+      "blocked_cells": [
+        [
+          67,
+          16
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0076",
+      "blocked_cells": [
+        [
+          76,
+          15
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0077",
+      "blocked_cells": [
+        [
+          79,
+          20
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0078",
+      "blocked_cells": [
+        [
+          68,
+          21
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0079",
+      "blocked_cells": [
+        [
+          74,
+          44
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0080",
+      "blocked_cells": [
+        [
+          81,
+          45
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0081",
+      "blocked_cells": [
+        [
+          22,
+          51
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0082",
+      "blocked_cells": [
+        [
+          35,
+          51
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0083",
+      "blocked_cells": [
+        [
+          9,
+          35
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0084",
+      "blocked_cells": [
+        [
+          13,
+          35
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0085",
+      "blocked_cells": [
+        [
+          9,
+          14
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0086",
+      "blocked_cells": [
+        [
+          11,
+          7
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0087",
+      "blocked_cells": [
+        [
+          12,
+          10
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0088",
+      "blocked_cells": [
+        [
+          14,
+          16
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0089",
+      "blocked_cells": [
+        [
+          15,
+          6
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V026_0090",
+      "blocked_cells": [
+        [
+          24,
+          7
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V026_0091",
+      "blocked_cells": [
+        [
+          25,
+          10
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P08_0094",
+      "blocked_cells": [
+        [
+          31,
+          28
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P08_0095",
+      "blocked_cells": [
+        [
+          32,
+          31
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V025_0096",
+      "blocked_cells": [
+        [
+          36,
+          17
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V026_0097",
+      "blocked_cells": [
+        [
+          36,
+          30
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0098",
+      "blocked_cells": [
+        [
+          46,
+          21
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0099",
+      "blocked_cells": [
+        [
+          46,
+          34
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0100",
+      "blocked_cells": [
+        [
+          49,
+          17
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0101",
+      "blocked_cells": [
+        [
+          49,
+          30
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0102",
+      "blocked_cells": [
+        [
+          50,
+          20
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0103",
+      "blocked_cells": [
+        [
+          50,
+          33
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0104",
+      "blocked_cells": [
+        [
+          53,
+          29
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P08_0105",
+      "blocked_cells": [
+        [
+          54,
+          19
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V026_0108",
+      "blocked_cells": [
+        [
+          61,
+          14
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V025_0109",
+      "blocked_cells": [
+        [
+          65,
+          13
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0110",
+      "blocked_cells": [
+        [
+          69,
+          12
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V025_0111",
+      "blocked_cells": [
+        [
+          69,
+          25
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0112",
+      "blocked_cells": [
+        [
+          73,
+          11
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0113",
+      "blocked_cells": [
+        [
+          74,
+          14
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0114",
+      "blocked_cells": [
+        [
+          77,
+          10
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0115",
+      "blocked_cells": [
+        [
+          78,
+          13
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0116",
+      "blocked_cells": [
+        [
+          79,
+          16
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0117",
+      "blocked_cells": [
+        [
+          80,
+          19
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0118",
+      "blocked_cells": [
+        [
+          81,
+          22
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P08_0119",
+      "blocked_cells": [
+        [
+          83,
+          15
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P08_0120",
+      "blocked_cells": [
+        [
+          84,
+          18
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P08_0123",
+      "blocked_cells": [
+        [
+          70,
+          41
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P08_0124",
+      "blocked_cells": [
+        [
+          71,
+          44
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P08_0125",
+      "blocked_cells": [
+        [
+          74,
+          53
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V025_0126",
+      "blocked_cells": [
+        [
+          82,
+          51
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0127",
+      "blocked_cells": [
+        [
+          83,
+          41
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V025_0128",
+      "blocked_cells": [
+        [
+          83,
+          54
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0129",
+      "blocked_cells": [
+        [
+          84,
+          44
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0130",
+      "blocked_cells": [
+        [
+          86,
+          50
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0133",
+      "blocked_cells": [
+        [
+          17,
+          51
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0134",
+      "blocked_cells": [
+        [
+          21,
+          50
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_P05_0135",
+      "blocked_cells": [
+        [
+          22,
+          53
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V025_0136",
+      "blocked_cells": [
+        [
+          35,
+          53
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V031_0137",
+      "blocked_cells": [
+        [
+          39,
+          52
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V025_0140",
+      "blocked_cells": [
+        [
+          7,
+          34
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    },
+    {
+      "instance_id": "Seabreak_V030_0141",
+      "blocked_cells": [
+        [
+          16,
+          35
+        ]
+      ],
+      "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
+      "review_status": "needs_review"
+    }
+  ]
+}

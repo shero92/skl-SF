@@ -1,0 +1,47 @@
+{
+	"actual_Godot_viewport": true,
+	"canvas_size": [
+		1536,
+		1024
+	],
+	"capture_script_sha256": "a8b29556481104fe8f37a171864e47f027f850a1790085d8639d51c2fc3e0890",
+	"engine": "4.7.2-stable (official)",
+	"files": [
+		{
+			"path": "docs/previews/seabreak_coast/arrival.png",
+			"sha256": "ff36f6ef8ff553c0b0e165b8184befee053b6746cac315b7661d9240f63c6bb8"
+		},
+		{
+			"path": "docs/previews/seabreak_coast/overview.png",
+			"sha256": "4756d9fd6fe2f533f8e52baf3888b3f3e67bd30ac2842c901b27df2afeada984"
+		},
+		{
+			"path": "docs/previews/seabreak_coast/sanctuary_gate.png",
+			"sha256": "d103c7c7fd5fcae87d2aef2dba07bcb81ecda377c47dd053a0cfa911dafb5abc"
+		},
+		{
+			"path": "docs/previews/seabreak_coast/compass_court.png",
+			"sha256": "b9cb78c9f8fc92763a2e195648d866dea126e048e7eb050e652e7991ea5de862"
+		},
+		{
+			"path": "docs/previews/seabreak_coast/palm_gardens.png",
+			"sha256": "5857c34afd210d6bd642b5207532be2f420ab4df2d23736740ddef691513f018"
+		},
+		{
+			"path": "docs/previews/seabreak_coast/beacon_terrace.png",
+			"sha256": "f50df74ebf99cc1e760c6861905d84d53e08774ba8847d72623da47aebca8cff"
+		},
+		{
+			"path": "docs/previews/seabreak_coast/sunken_archive.png",
+			"sha256": "b302f37b2f0957acbeaeafd355f0c107370399c189c5e4aca51ffc7808024082"
+		},
+		{
+			"path": "docs/previews/seabreak_coast/quiet_overlook.png",
+			"sha256": "abbbe3b9c1891a56fc927827584ee706d9a4b5c9c3112a0839f89931c0f51719"
+		}
+	],
+	"map_id": "seabreak_coast_01",
+	"map_sha256": "c0cb45752dc34f57fb12925fb3312058b3aec6cd5bfb54e9e2c29202ad932a2e",
+	"map_version": 3,
+	"world_connection_sha256": "fe17fcb0eb7091a79d1b63c354bfcaf5d64bb5527f10d55f9e59426ec1dd22ea"
+}
