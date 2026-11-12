@@ -23,6 +23,16 @@ void fragment() {
 }
 "
 
+const SOLID_SHADER := "
+shader_type canvas_item;
+// Redraws everything of the painting that is not sky or water, so drifting clouds pass behind arches and rocks.
+void fragment() {
+	vec4 c = texture(TEXTURE, UV);
+	if (c.b > c.r + 0.15 && c.b > c.g + 0.04) { discard; }
+	COLOR = c;
+}
+"
+
 var clouds: Array[Sprite2D] = []
 var cloud_speed: float = 6.0
 var cloud_span: float = 1536.0
@@ -74,6 +84,17 @@ func build(photo: Texture2D, definition: Dictionary, map_room: Node) -> void:
 		cloud.modulate.a = float(entry.get("alpha", 0.9))
 		add_child(cloud)
 		clouds.append(cloud)
+	var cover_height := float(sky.get("cover_height", 0))
+	if cover_height > 0.0 and not clouds.is_empty():
+		var solid := ShaderMaterial.new()
+		solid.shader = Shader.new()
+		solid.shader.code = SOLID_SHADER
+		var front := Polygon2D.new()
+		front.name = "CloudCover"
+		front.polygon = PackedVector2Array([Vector2.ZERO, Vector2(cloud_span, 0), Vector2(cloud_span, cover_height), Vector2(0, cover_height)])
+		front.texture = photo
+		front.material = solid
+		add_child(front)
 	var gradient := Gradient.new()
 	gradient.set_color(0, Color(1.0, 0.82, 0.45, 0.55))
 	gradient.set_color(1, Color(1.0, 0.7, 0.3, 0.0))

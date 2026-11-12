@@ -423,7 +423,8 @@
         "scale": 1.0,
         "alpha": 0.9
       }
-    ]
+    ],
+    "cover_height": 140
   },
   "lanterns": [
     [
