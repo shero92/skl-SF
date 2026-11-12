@@ -154,7 +154,7 @@
     },
     {
       "path": "game_factory/environment/bed_stacks_20261111/equipment_retry.log",
-      "sha256": "565c809e26cbff5d101e21ab73e03a4e1b7079579670f9255ef68d848d756038"
+      "sha256": "589a19a8759588ca515affbc4798214528702162411a4510d37c532e4e68051a"
     },
     {
       "path": "game_factory/environment/bed_stacks_20261111/finish_delivery.py",
@@ -186,11 +186,11 @@
     },
     {
       "path": "game_factory/environment/bed_stacks_20261111/tests.log",
-      "sha256": "752e61aebc6d69d65b32ae6a498dd005a2fd063ff08b729c2ff70d5a6d411fa7"
+      "sha256": "14472b1b24ebb27df1f4326590fb6ed41e21b7cf7a39958815377d504701b8a3"
     },
     {
       "path": "game_factory/environment/bed_stacks_20261111/tests_authorized.log",
-      "sha256": "b62c633b1a96ed38f8a2fcbd17af3617cb8e0c781e09dcb4aabe23a596828324"
+      "sha256": "1b87b4054751002dfdf21b2bff59d64ccb6f82d87c1f5121cf69e9a543ab3022"
     },
     {
       "path": "game_factory/environment/bed_stacks_20261111/verify_delivery.py",
