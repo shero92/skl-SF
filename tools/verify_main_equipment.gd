@@ -46,13 +46,22 @@ func _run() -> void:
 	_check(not _main.is_equipment_open(), "I closes the menu")
 	_main._physics_process(0.016)
 	_check(_main.player.movement_enabled, "hero can move again")
-	# F3: the target painting as one backdrop (owner test); the map pieces hide, characters stay.
-	_main._unhandled_input(_key(KEY_F3))
+	# Photo room: the painting is the room, with its own walk squares; F3 switches to the map pieces and back.
 	var photo: Node = _main._room.get_node_or_null("PhotoBackdrop")
-	_check(_main.photo_mode and photo != null and photo.visible, "F3 shows the painting backdrop")
+	_check(_main.photo_mode and photo != null and photo.visible, "the room starts as the painting")
 	_check(not _main._room.get_node("Level1_Ground").visible and _main.player.is_visible_in_tree(), "map pieces hide, the hero stays")
+	var walk: NavigationGrid = _main.player.navigation
+	_check(walk != null and walk.cell_size == 32.0 and walk.footprint_open(_main.player.position), "the hero stands on the painting's walk squares")
+	_check(not walk.point_open(Vector2(400, 500)) and not walk.point_open(Vector2(1130, 540)), "the painted bed and table are closed")
+	_check(walk.point_open(Vector2(768, 880)) and not walk.point_open(Vector2(600, 880)), "the painted stairs are open, the parapet is closed")
+	for spot: Dictionary in _main.interactions:
+		if spot.get("id", "") == "ReefFriend":
+			_check(walk.point_open(Vector2(spot["x"], spot["y"])), "a moved NPC stands on a walk square")
 	_main._unhandled_input(_key(KEY_F3))
-	_check(not _main.photo_mode and not photo.visible and _main._room.get_node("Level1_Ground").visible, "F3 again brings the map pieces back")
+	_check(not _main.photo_mode and not photo.visible and _main._room.get_node("Level1_Ground").visible, "F3 brings the map pieces back")
+	_check(_main.player.navigation != walk and _main.player.navigation.cell_size == 64.0, "the map's own walk grid returns")
+	_main._unhandled_input(_key(KEY_F3))
+	_check(_main.photo_mode and photo.visible, "F3 again shows the painting")
 	_main.dialogue.open_dialogue("Test", ["hello"])
 	_main._unhandled_input(_key(KEY_I))
 	_check(not _main.is_equipment_open(), "I is ignored while a dialogue is open")

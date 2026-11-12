@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "map_id": "hero_room_01",
+  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants.",
+  "image": "res://map_factory/references/hero_room_01_target_20261103.png",
+  "navigation": {
+    "schema_version": 1,
+    "origin": [
+      0,
+      0
+    ],
+    "cell_size": 32,
+    "grid_size": [
+      48,
+      32
+    ],
+    "default": {
+      "walk": false
+    },
+    "regions": [
+      {
+        "rect": [
+          21,
+          10,
+          4,
+          2
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          20,
+          12,
+          6,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          16,
+          13,
+          18,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          16,
+          14,
+          16,
+          5
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          7,
+          17,
+          2,
+          2
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          7,
+          19,
+          28,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          37,
+          19,
+          2,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          11,
+          20,
+          24,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          37,
+          20,
+          2,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          15,
+          21,
+          22,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          17,
+          22,
+          2,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          20,
+          22,
+          8,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          29,
+          22,
+          5,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          20,
+          23,
+          7,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          21,
+          24,
+          6,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          22,
+          25,
+          4,
+          4
+        ],
+        "allow": [
+          "walk"
+        ]
+      }
+    ]
+  },
+  "moves": {
+    "ReefFriend": [
+      1010,
+      700
+    ],
+    "TreasureChest": [
+      1235,
+      705
+    ]
+  }
+}

@@ -14,11 +14,14 @@ var equipment_menu: EquipmentMenu
 const MAP_ID := "hero_room_01"
 const BATTLE_SCENE := "res://scenes/battle/tactical_battle.tscn"
 const EDITOR_SCENE := "res://scenes/map_factory_editor.tscn"
-# Owner test (F3): show the target painting as one backdrop instead of the Map Factory pieces. Walking, NPCs
-# and blocked squares still come from the map. The painting is the reference file, used unchanged.
-const PHOTO_PATH := "res://map_factory/references/hero_room_01_target_20261103.png"
-static var keep_photo_mode: bool = false  # survives a visit to the editor or a battle
+# Photo room (owner decision 2026-11-12): the room is the target painting shown unchanged as one backdrop,
+# with its own walk squares measured on the painting. F3 switches to the Map Factory pieces and back.
+const PHOTO_ROOM := "res://map_factory/photo_rooms/hero_room_01.json"
+static var keep_photo_mode: bool = true  # the choice survives a visit to the editor or a battle
 var photo_mode: bool = false
+var photo_room: Dictionary = {}
+var _map_navigation: NavigationGrid
+var _moved: Dictionary = {}  # instance id -> Node2D that a photo-room move relocates
 var _room: Node2D
 var _photo: Sprite2D
 # Gameplay data (spawn, NPCs, interaction spots) stays in the legacy room JSON.
@@ -63,9 +66,6 @@ func _ready() -> void:
     camera.enabled = true
     add_child(camera)
 
-    if photo_mode or keep_photo_mode:
-        set_photo_mode(true)
-
     dialogue = DialogueUI.new()
     add_child(dialogue)
     weapons = WeaponSystemScript.load_default()
@@ -81,20 +81,28 @@ func _ready() -> void:
         npc.sprite_scale = float(info.get("scale", 0.8))
         npc.position = Vector2(float(info.get("x", 0)), float(info.get("y", 0)))
         entities.add_child(npc)
+        _moved[String(info.get("instance_id", ""))] = npc
         interactions.append({
+            "id": info.get("instance_id", ""),
             "x": info.get("x", 0), "y": info.get("y", 0),
             "radius": info.get("radius", 100),
             "speaker": info.get("name", "NPC"), "lines": info.get("lines", [])
         })
+    _map_navigation = player.navigation
+    var definition: Variant = JSON.parse_string(FileAccess.get_file_as_string(PHOTO_ROOM)) if FileAccess.file_exists(PHOTO_ROOM) else null
+    if definition is Dictionary:
+        photo_room = definition
+    if photo_mode or keep_photo_mode:
+        set_photo_mode(true)
 
-## Shows the target painting as the whole room picture (true) or the Map Factory pieces (false).
+## Shows the room as the painting with its own walk squares (true) or as the Map Factory pieces (false).
 func set_photo_mode(on: bool) -> bool:
-    if _room == null:
+    if _room == null or photo_room.is_empty():
         return false
     if on and _photo == null:
-        var texture := load(PHOTO_PATH) as Texture2D
+        var texture := load(String(photo_room.get("image", ""))) as Texture2D
         if texture == null:
-            push_warning("Photo backdrop not found: " + PHOTO_PATH)
+            push_warning("Photo room picture not found: " + String(photo_room.get("image", "")))
             return false
         _photo = Sprite2D.new()
         _photo.name = "PhotoBackdrop"
@@ -114,6 +122,25 @@ func set_photo_mode(on: bool) -> bool:
                     inner.visible = not on
         elif child != entities and child is CanvasItem:
             child.visible = not on
+    # Furniture of the tile room must not block the painting: its collision shapes rest while the photo shows.
+    for shape in _room.find_children("*", "CollisionShape2D", true, false):
+        if not entities.is_ancestor_of(shape):
+            shape.set_deferred("disabled", on)
+    if player != null:
+        player.navigation = NavigationGrid.from_navigation(photo_room.get("navigation", {}), _room.global_position) if on else _map_navigation
+    # NPCs and interaction spots that sit on painted furniture or plants move to a free square.
+    var moves: Dictionary = photo_room.get("moves", {})
+    for spot: Dictionary in interactions:
+        var id := String(spot.get("id", ""))
+        if not moves.has(id):
+            continue
+        if not spot.has("map_x"):
+            spot["map_x"] = spot.get("x", 0)
+            spot["map_y"] = spot.get("y", 0)
+        spot["x"] = moves[id][0] if on else spot["map_x"]
+        spot["y"] = moves[id][1] if on else spot["map_y"]
+        if _moved.has(id):
+            _moved[id].position = Vector2(float(spot["x"]), float(spot["y"]))
     return true
 
 
