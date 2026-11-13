@@ -174,8 +174,11 @@ func set_photo_mode(on: bool) -> bool:
         if not spot.has("map_x"):
             spot["map_x"] = spot.get("x", 0)
             spot["map_y"] = spot.get("y", 0)
+        if not spot.has("map_radius"):
+            spot["map_radius"] = spot.get("radius", 96)
         spot["x"] = moves[id][0] if on else spot["map_x"]
         spot["y"] = moves[id][1] if on else spot["map_y"]
+        spot["radius"] = moves[id][2] if on and moves[id].size() > 2 else spot["map_radius"]  # a third number widens the reach
         if _moved.has(id):
             _moved[id].position = Vector2(float(spot["x"]), float(spot["y"]))
     return true

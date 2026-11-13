@@ -54,6 +54,18 @@ func _run() -> void:
 	_check(walk != null and walk.cell_size == 32.0 and walk.footprint_open(_main.player.position), "the hero stands on the painting's walk squares")
 	_check(not walk.point_open(Vector2(400, 500)) and not walk.point_open(Vector2(1130, 540)), "the painted bed and table are closed")
 	_check(walk.point_open(Vector2(768, 880)) and not walk.point_open(Vector2(600, 880)), "the painted stairs are open, the parapet is closed")
+	_check(not walk.point_open(Vector2(400, 624)) and not walk.point_open(Vector2(1104, 624)) and not walk.point_open(Vector2(1168, 688)), "the bed foot and the table side are closed (the hero would stand inside them)")
+	# Every talk spot that is not an NPC must be reachable from some open square, or the owner could never use it.
+	for spot: Dictionary in _main.interactions:
+		if bool(spot.get("npc", false)):
+			continue
+		var reachable := false
+		for cell_y in range(0, 20):
+			for cell_x in range(0, 30):
+				var centre := Vector2(cell_x * 64 + 16, cell_y * 64 + 48)
+				if walk.footprint_open(centre) and centre.distance_to(Vector2(float(spot["x"]), float(spot["y"]))) <= float(spot.get("radius", 96)):
+					reachable = true
+		_check(reachable, "talk spot %s can be reached from an open square" % spot.get("id", ""))
 	for spot: Dictionary in _main.interactions:
 		if spot.get("id", "") == "ReefFriend":
 			_check(walk.point_open(Vector2(spot["x"], spot["y"])), "a moved NPC stands on a walk square")
