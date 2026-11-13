@@ -19,12 +19,23 @@ const EDITOR_SCENE := "res://scenes/map_factory_editor.tscn"
 # Photo room (owner decision 2026-11-12): the room is the target painting shown unchanged as one backdrop,
 # with its own walk squares measured on the painting. F3 switches to the Map Factory pieces and back.
 ## Any map can be a photo room: put map_factory/photo_rooms/<map_id>.json beside it (see map_factory/PHOTO_ROOMS.md).
+const VIGNETTE_SHADER := "
+shader_type canvas_item;
+uniform float strength = 0.3;
+void fragment() {
+	vec2 centre = UV - vec2(0.5);
+	centre.x *= 1.15;
+	float edge = smoothstep(0.32, 0.86, length(centre));
+	COLOR = vec4(0.06, 0.03, 0.08, edge * strength);
+}
+"
 const PHOTO_ROOM_DIR := "res://map_factory/photo_rooms/"
 static var keep_photo_mode: bool = true  # the choice survives a visit to the editor or a battle
 var photo_mode: bool = false
 var photo_room: Dictionary = {}
 var _map_navigation: NavigationGrid
 var _camera: FollowCamera
+var _vignette: CanvasLayer
 var _life: PhotoRoomLife
 var _mist: Polygon2D
 var _companion: Node2D
@@ -141,6 +152,7 @@ func set_photo_mode(on: bool) -> bool:
         _room.add_child(_life)
         _life.build(texture, photo_room)
         _life.hero = player
+        _life.camera = _camera
         _mist = _life.build_mist(photo_room, texture.get_size())
         if _mist != null:
             _mist.z_index = 200  # over the characters too
@@ -161,6 +173,24 @@ func set_photo_mode(on: bool) -> bool:
     for shape in _room.find_children("*", "CollisionShape2D", true, false):
         if not entities.is_ancestor_of(shape):
             shape.set_deferred("disabled", on)
+    # A soft dark edge and warm tint around the view, like a lens: only in the painted room.
+    var strength := float(photo_room.get("cinematic", {}).get("vignette", 0.0))
+    if on and strength > 0.0 and _vignette == null:
+        _vignette = CanvasLayer.new()
+        _vignette.name = "Vignette"
+        _vignette.layer = 2
+        var veil := ColorRect.new()
+        veil.set_anchors_preset(Control.PRESET_FULL_RECT)
+        veil.mouse_filter = Control.MOUSE_FILTER_IGNORE
+        var look := ShaderMaterial.new()
+        look.shader = Shader.new()
+        look.shader.code = VIGNETTE_SHADER
+        look.set_shader_parameter("strength", strength)
+        veil.material = look
+        _vignette.add_child(veil)
+        add_child(_vignette)
+    if _vignette != null:
+        _vignette.visible = on
     if _camera != null:
         # The painted room has a camera that moves with the hero; the map's own room keeps its fixed view.
         var painting_size: Vector2 = _photo.texture.get_size() if (on and _photo != null) else Vector2(1536, 1024)
@@ -177,6 +207,9 @@ func set_photo_mode(on: bool) -> bool:
             player.source_art.name = "SourceArt"
             player.source_art.figure_height = float(photo_room["hero_height"])
             player.source_art.view_squash = float(photo_room.get("hero_view_squash", 1.0))
+            player.bounce_height = float(photo_room.get("cinematic", {}).get("step_bounce", 0.0))
+            if not player.stepped.is_connected(_camera.kick):
+                player.stepped.connect(_camera.kick)  # each landed step gives the view a small push
             player.add_child(player.source_art)
         elif not on and player.source_art != null:
             player.source_art.queue_free()

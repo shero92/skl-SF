@@ -8,6 +8,7 @@ A photo room is a Map Factory map whose picture is one painting. Everything the 
 | Feature | File key | What it does |
 | --- | --- | --- |
 | Camera that moves with the hero | `camera` | `{"follow": true, "zoom": 1.4, "talk_zoom": 1.8, "lead": 48, "smoothing": 5, "focus_offset": [0, -56]}`: eases after the hero, leads in his walking direction, zooms in while he talks, stays inside the painting; **V** shows the whole room and back (`scenes/follow_camera.gd`). Without `camera` the view is fixed. |
+| Cinematic feel | `camera.sway`, `camera.step_kick`, `cinematic.step_bounce`, `cinematic.vignette`, `cinematic.parallax`, `dust` | A slow breathing drift of the view; a small push of the view and a small hop of the hero on every step; a soft dark lens edge; the far sea sliding against the room as the camera moves (depth); drifting dust motes in the sunlight (`[x, y, w, h]` area). |
 | Painting as the room | `image` | Shown unchanged; the tile pieces of the map are hidden. F3 switches between painting and pieces. |
 | One square per step | `hero_step`, `hero_step_offset` | Shining Force movement: each key press moves the hero exactly one square, four directions, no diagonals. |
 | Walk squares | `navigation.regions` | 32 px squares (`[x, y, w, h]` in squares) the hero may stand on. |

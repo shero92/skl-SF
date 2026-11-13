@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 PHOTO_DIR = Path("map_factory/photo_rooms")
-KNOWN_KEYS = {"schema_version", "map_id", "note", "image", "spawn", "navigation", "moves", "camera", "hero_only", "hero_height", "hero_view_squash", "hero_step",
+KNOWN_KEYS = {"schema_version", "map_id", "note", "image", "spawn", "navigation", "moves", "camera", "cinematic", "dust", "hero_only", "hero_height", "hero_view_squash", "hero_step",
               "hero_step_offset", "patches", "sea", "clouds", "lanterns", "petals", "mist", "depth_objects"}
 
 

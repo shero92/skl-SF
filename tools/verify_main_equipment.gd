@@ -137,6 +137,19 @@ func _run() -> void:
 	_main._unhandled_input(_key(KEY_V))
 	cam.snap()
 	_main.player.global_position = Vector2(720, 624)
+	# Cinematic feel: hop and camera push on each step, lens edge, parallax sea, dust.
+	var hop: HeroPlayer = _main.player
+	_check(hop.bounce_height > 0.0 and cam.kick_amount > 0.0 and cam.sway > 0.0, "the painted room has a step hop, a camera push and a sway")
+	_check(_main._vignette != null and _main._vignette.visible and life.parallax > 0.0 and life.dust != null, "lens edge, parallax sea and dust motes are on")
+	hop.global_position = Vector2(720, 624)
+	hop.snap_to_grid()
+	var kicked := false
+	hop.step(Vector2.RIGHT)
+	var peak := 0.0
+	for i in 40:
+		hop._physics_process(0.016)
+		peak = maxf(peak, hop.source_art.lift if hop.source_art != null else 0.0)
+	_check(peak > 3.0 and hop.source_art.lift == 0.0, "a step lifts him and puts him down (peak %.1f)" % peak)
 	var drawn: HeroSourceArt = _main.player.source_art
 	_check(drawn != null and drawn.figure_height == 134.0, "the painted room asks for the high-resolution hero")
 	_main.player._physics_process(0.016)
