@@ -4,7 +4,7 @@ status: requested
 owner: graphics-specialist
 task: TASK-0168
 dedupe_key: hero_map_sprite_shining_force_style
-existing_asset_ids: CHAR001
+existing_asset_ids: none
 output_paths: .agents/graphics/deliveries/ART-0054/hero_map_sf_down_idle_01.png
 ---
 # Hero map sprite in classic Shining Force proportions (first frame only)
