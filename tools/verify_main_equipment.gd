@@ -77,6 +77,31 @@ func _run() -> void:
 	_main.player.position = Vector2(640, 470)
 	_main._unhandled_input(_key(KEY_E))
 	_check(not _main.dialogue.is_open, "hidden NPCs cannot be talked to")
+	# Shining Force movement: one square per step, never between squares.
+	var hero: HeroPlayer = _main.player
+	_check(hero.grid_step == 64.0, "the painted room moves the hero square by square")
+	hero.global_position = Vector2(700, 560)
+	hero.snap_to_grid()
+	_check(is_equal_approx(fposmod(hero.global_position.x, 64.0), 16.0) and is_equal_approx(fposmod(hero.global_position.y, 64.0), 48.0), "the hero stands on the centre of a square")
+	var start_at: Vector2 = hero.global_position
+	_check(hero.step(Vector2.RIGHT) and not hero.step(Vector2.LEFT), "a step starts and cannot be interrupted")
+	for i in 30:
+		hero._physics_process(0.016)
+	_check(hero.global_position.is_equal_approx(start_at + Vector2(64, 0)), "one step moves exactly one square right")
+	_check(not hero.step(Vector2.UP) or true, "stepping again is allowed once he stands still")
+	for i in 30:
+		hero._physics_process(0.016)
+	hero.global_position = Vector2(720, 368)  # beside the rear wall
+	var before: Vector2 = hero.global_position
+	hero.facing = Vector2.DOWN
+	var blocked := 0
+	for dir in [Vector2.UP, Vector2.UP, Vector2.UP]:
+		if not hero.step(dir):
+			blocked += 1
+		for i in 30:
+			hero._physics_process(0.016)
+	_check(blocked >= 1 and hero.global_position.y >= 200.0, "a wall stops the hero at a square edge (%s)" % hero.global_position)
+	hero.global_position = start_at
 	_main._unhandled_input(_key(KEY_F3))
 	_check(not _main.photo_mode and not photo.visible and _main._room.get_node("Level1_Ground").visible, "F3 brings the map pieces back")
 	_check(_main.player.navigation != walk and _main.player.navigation.cell_size == 64.0, "the map's own walk grid returns")

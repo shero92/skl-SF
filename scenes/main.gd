@@ -141,6 +141,10 @@ func set_photo_mode(on: bool) -> bool:
         if not entities.is_ancestor_of(shape):
             shape.set_deferred("disabled", on)
     if player != null:
+        # Shining Force movement in the painted room: one square per press. The map room keeps free walking.
+        player.grid_step = float(photo_room.get("hero_step", 0)) if on else 0.0
+        var shift: Array = photo_room.get("hero_step_offset", [0, 0])
+        player.grid_offset = Vector2(float(shift[0]), float(shift[1]))
         # The painting is detailed, so the hero is drawn from the high-resolution source frames at a Shining Force
         # size (about two floor tiles tall). Without those local files the 96 px factory frames stay.
         if on and player.source_art == null and float(photo_room.get("hero_height", 0)) > 0.0:
@@ -153,6 +157,8 @@ func set_photo_mode(on: bool) -> bool:
             player.source_art = null
     if player != null:
         player.navigation = NavigationGrid.from_navigation(photo_room.get("navigation", {}), _room.global_position) if on else _map_navigation
+        if on and player.grid_step > 0.0:
+            player.snap_to_grid()  # after the painted room's walk squares are in place
     # A hero-only photo room shows no NPCs and no companion; their talk spots rest too.
     var alone := on and bool(photo_room.get("hero_only", false))
     if _companion != null:
