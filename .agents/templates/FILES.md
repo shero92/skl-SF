@@ -11,6 +11,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Files
 
 - [`ART_REQUEST.md`](ART_REQUEST.md)
+- [`MAP_BRIEF.md`](MAP_BRIEF.md)
 - [`TASK.md`](TASK.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
