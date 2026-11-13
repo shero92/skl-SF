@@ -29,6 +29,11 @@ var figure_height: float = 128.0  # height on screen in room pixels
 ## Vertical squash toward the room's three-quarter camera (about 50 degrees down): the drawing is a straight-on view,
 ## so a floor view foreshortens it. 1.0 leaves the drawing as it is.
 var view_squash: float = 1.0
+## A faint copy of the hero drawn above everything, shown only while a wall or plant hides him, so the owner always sees where he is.
+var ghost: Sprite2D
+func show_ghost(on: bool) -> void:
+	if ghost != null:
+		ghost.visible = on and visible
 var _index: Dictionary = {}
 var _frames: Dictionary = {}  # animation key -> Array of {texture, offset}
 var _sprite: Sprite2D
@@ -66,6 +71,15 @@ func _ready() -> void:
 	rim.set_shader_parameter("reach", WORK_HEIGHT / figure_height)
 	_sprite.material = rim
 	add_child(_sprite)
+	ghost = Sprite2D.new()
+	ghost.name = "HiddenGhost"
+	ghost.centered = false
+	ghost.z_as_relative = false
+	ghost.z_index = 60
+	ghost.modulate = Color(1, 1, 1, 0.38)
+	ghost.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	ghost.visible = false
+	add_child(ghost)
 
 
 ## True when every frame of the animation could be read.
@@ -89,6 +103,9 @@ func play(state: String, direction: String, delta: float) -> bool:
 	_sprite.texture = frame["texture"]
 	_sprite.scale = Vector2(size, size * view_squash)
 	_sprite.position = -Vector2(frame["offset"].x * size, frame["offset"].y * size * view_squash)
+	ghost.texture = frame["texture"]
+	ghost.scale = _sprite.scale
+	ghost.position = _sprite.position
 	visible = true
 	return true
 

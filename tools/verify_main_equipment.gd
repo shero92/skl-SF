@@ -102,6 +102,12 @@ func _run() -> void:
 	_main.player.global_position = Vector2(528, 640)   # in front of the bed
 	life._process(0.016)
 	_check(bed_cut.z_index < 30, "in front of the bed the hero is drawn over it")
+	_main.player.global_position = Vector2(400, 816)  # behind the left parapet
+	life._process(0.016)
+	_check(life.hidden_amount > 0.2, "behind the parapet the hero counts as hidden (%.2f)" % life.hidden_amount)
+	_main.player.global_position = Vector2(720, 624)
+	life._process(0.016)
+	_check(life.hidden_amount < 0.2, "on open floor the hero is not hidden")
 	_check(life.get_node_or_null("Shadow_bed") != null and life.get_node_or_null("Shadow_column_left_outer") != null, "tall objects cast shadows")
 	var drawn: HeroSourceArt = _main.player.source_art
 	_check(drawn != null and drawn.figure_height == 134.0, "the painted room asks for the high-resolution hero")

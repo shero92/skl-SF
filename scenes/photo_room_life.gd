@@ -105,6 +105,7 @@ const BEHIND_HERO := 27   # above the painting and its shadows, below the hero
 const ABOVE_HERO := 40
 var depth_objects: Array[Polygon2D] = []
 var hero: Node2D
+var hidden_amount: float = 0.0
 var _time: float = 0.0
 
 
@@ -283,6 +284,19 @@ func _process(delta: float) -> void:
 		for object in depth_objects:
 			# Feet above the base line: he stands behind it, so the object is drawn over him.
 			object.z_index = ABOVE_HERO if hero.global_position.y < float(object.get_meta("base_y")) else BEHIND_HERO
+		# Hidden: a wall or plant in front of him covers at least a fifth of his body, so a faint ghost shows where he stands.
+		var body := Rect2(hero.global_position + Vector2(-34, -130), Vector2(68, 130))
+		var covered := 0.0
+		for object in depth_objects:
+			if object.z_index == ABOVE_HERO:
+				var bounds := Rect2(object.polygon[0], Vector2.ZERO)
+				for point in object.polygon:
+					bounds = bounds.expand(point)
+				covered = maxf(covered, bounds.intersection(body).get_area() / body.get_area())
+		hidden_amount = covered
+		var source = hero.get("source_art")
+		if source != null:
+			source.show_ghost(covered > 0.2)
 	for cloud in clouds:
 		cloud.position.x += cloud_speed * delta
 		if cloud.position.x > cloud_span:
