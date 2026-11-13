@@ -9,6 +9,8 @@ var navigation: NavigationGrid # optional Map Factory walk validator; null keeps
 ## shipped look is unchanged; incomplete or missing animations always fall back to the legacy sprite.
 @export var use_factory_art: bool = false
 var factory_art: AnimatedSprite2D
+## Optional high-resolution drawing of the hero (painted rooms). When set and its sources exist it replaces both sprites.
+var source_art: HeroSourceArt
 const FACTORY_ACTOR = preload("res://scenes/game_factory_actor.gd")
 const FACTORY_MANIFEST := "res://game_factory/character_manifest.json"
 static var _factory_frames: SpriteFrames
@@ -73,7 +75,11 @@ func _physics_process(delta: float) -> void:
     elif facing.y < 0:
         direction = "up"
     var state := "walk" if movement.length_squared() > 0 else "idle"
-    if factory_art != null and _play_factory(state, direction):
+    if source_art != null and source_art.play(state, direction, delta):
+        art.visible = false
+        if factory_art != null:
+            factory_art.visible = false
+    elif factory_art != null and _play_factory(state, direction):
         art.visible = false
     else:
         if factory_art != null:

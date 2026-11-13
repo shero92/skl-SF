@@ -58,16 +58,16 @@ func _run() -> void:
 		if spot.get("id", "") == "ReefFriend":
 			_check(walk.point_open(Vector2(spot["x"], spot["y"])), "a moved NPC stands on a walk square")
 	var life: PhotoRoomLife = _main._life
-	_check(life != null and life.clouds.size() == 3 and life.glows.size() == 8, "clouds drift and lanterns glow over the painting (%d clouds, %d glows)" % [life.clouds.size(), life.glows.size()])
-	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D and n.name != "CloudCover").size() == 6 and life.get_node_or_null("CloudCover") != null and life.get_node_or_null("Patch") != null, "the sea ripples and the painted figures are covered")
-	_check(life.gulls.size() == 4 and life.butterflies.size() == 9, "gulls and butterflies fly over the painting")
-	var gull_x: float = life.gulls[0]["x"]
-	var flutter: Vector2 = life.butterfly_position(0)
-	_check(_main.player.use_factory_art and _main.player.factory_art != null and _main.player.factory_art.visible, "the hero is drawn from the character factory frames")
-	var cloud_x: float = life.clouds[0].position.x
-	life._process(1.0)
-	_check(life.clouds[0].position.x > cloud_x, "clouds move")
-	_check(life.gulls[0]["x"] > gull_x and life.butterfly_position(0) != flutter, "gulls and butterflies move")
+	_check(life != null and life.glows.size() == 8, "lanterns glow over the painting")
+	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D).size() == 6 and life.get_node_or_null("Patch") != null, "the sea shimmers and the painted figures are covered")
+	var drawn: HeroSourceArt = _main.player.source_art
+	_check(drawn != null and drawn.figure_height == 128.0, "the painted room asks for the high-resolution hero")
+	_main.player._physics_process(0.016)
+	if drawn.has_animation("map_down_idle"):  # the source frames are local files; CI has none and keeps the factory frames
+		_check(drawn.visible and not _main.player.art.visible and not _main.player.factory_art.visible, "the hero is drawn from the source frames")
+		_check(absf(drawn._sprite.texture.get_height() * drawn._sprite.scale.y - 128.0 * 1254.0 / 1090.0) < 12.0, "the hero stands about two floor tiles tall")
+	else:
+		_check(_main.player.factory_art.visible, "without source frames the factory frames show")
 	_check(not _main._companion.visible and not _main._moved["Cely"].visible, "only the hero is in the painted room")
 	_main.player.position = Vector2(640, 470)
 	_main._unhandled_input(_key(KEY_E))

@@ -118,7 +118,7 @@ func set_photo_mode(on: bool) -> bool:
         _life.name = "PhotoLife"
         _life.z_index = 26  # over the painting, under characters
         _room.add_child(_life)
-        _life.build(texture, photo_room, _room)
+        _life.build(texture, photo_room)
     photo_mode = on
     keep_photo_mode = on
     var entities := RoomFactory.entities_parent(_room)
@@ -135,12 +135,17 @@ func set_photo_mode(on: bool) -> bool:
     for shape in _room.find_children("*", "CollisionShape2D", true, false):
         if not entities.is_ancestor_of(shape):
             shape.set_deferred("disabled", on)
-    if player != null and player.factory_art != null:
-        # The painting is shown scaled and smooth, so the factory hero matches it: painted-figure size, smooth filter.
-        var size := float(photo_room.get("hero_scale", 1.0)) if on else 1.0
-        player.factory_art.scale = Vector2.ONE * size
-        player.factory_art.position = -Vector2(float(HeroPlayer._factory_anchor[0]), float(HeroPlayer._factory_anchor[1])) * size
-        player.factory_art.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR if on else CanvasItem.TEXTURE_FILTER_NEAREST
+    if player != null:
+        # The painting is detailed, so the hero is drawn from the high-resolution source frames at a Shining Force
+        # size (about two floor tiles tall). Without those local files the 96 px factory frames stay.
+        if on and player.source_art == null and float(photo_room.get("hero_height", 0)) > 0.0:
+            player.source_art = HeroSourceArt.new()
+            player.source_art.name = "SourceArt"
+            player.source_art.figure_height = float(photo_room["hero_height"])
+            player.add_child(player.source_art)
+        elif not on and player.source_art != null:
+            player.source_art.queue_free()
+            player.source_art = null
     if player != null:
         player.navigation = NavigationGrid.from_navigation(photo_room.get("navigation", {}), _room.global_position) if on else _map_navigation
     # A hero-only photo room shows no NPCs and no companion; their talk spots rest too.
