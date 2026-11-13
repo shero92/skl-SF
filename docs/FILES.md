@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`previews/`](previews/FILES.md)
+- [`story/`](story/FILES.md)
 
 ## Files
 

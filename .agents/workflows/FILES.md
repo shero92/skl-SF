@@ -12,6 +12,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`GRAPHICS.md`](GRAPHICS.md)
 - [`HANDOFF.md`](HANDOFF.md)
+- [`STORY.md`](STORY.md)
 - [`TASKS.md`](TASKS.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.
