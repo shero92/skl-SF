@@ -1,0 +1,116 @@
+117 changed path(s) vs origin/main
+Not covered by tools/test_map.json, running ALL tests:
+  .qa-tmp/stage_paths.txt
+  docs/previews/map_factory_renders/photo_backdrop_test/photo_mode.png
+  docs/previews/seabreak_coast/arrival.png
+  docs/previews/seabreak_coast/beacon_terrace.png
+  docs/previews/seabreak_coast/capture_receipt.json
+  docs/previews/seabreak_coast/compass_court.png
+  docs/previews/seabreak_coast/overview.png
+  docs/previews/seabreak_coast/palm_gardens.png
+  docs/previews/seabreak_coast/quiet_overlook.png
+  docs/previews/seabreak_coast/sanctuary_gate.png
+  docs/previews/seabreak_coast/sunken_archive.png
+  map_factory/photo_rooms/hero_room_01.json
+  map_factory/references/hero_room_01_target_20261110.webp.import
+  scenes/battle/tactical_battle.gd.uid
+  scenes/battle/tactical_battle_scene.gd.uid
+  scenes/hero_save.gd.uid
+  scenes/map_factory_editor.gd.uid
+  tools/verify_hero_save.gd.uid
+  tools/verify_room_editor.gd.uid
+  tools/verify_tactical_battle.gd.uid
+PASS source_art_catalog (0.3s)
+PASS golden_cyclone_assets (3.1s)
+PASS hero_room_capture_evidence (0.2s)
+PASS hero_room_reference_relayout (1.6s)
+PASS hero_room_visual_contract (0.2s)
+PASS hero_room_v0013_patch (0.6s)
+PASS generate_factory_images (0.4s)
+PASS camera_light_shafts (0.1s)
+PASS layer_zorder_anchor (0.1s)
+PASS directional_furniture (0.4s)
+PASS hero_room_lighting_decor (0.3s)
+PASS enclosing_walls (0.3s)
+PASS hero_room_scenery (0.2s)
+PASS hero_room_floor (0.3s)
+PASS registry_verification (1.3s)
+PASS battle_hit_timing (0.4s)
+PASS battle_combo (0.6s)
+PASS battle_reactions (0.6s)
+PASS battle_preview (0.5s)
+PASS battle_registry (0.2s)
+PASS weapon_battle (0.5s)
+PASS enemy_ai (0.4s)
+PASS turn_manager (0.4s)
+PASS regenerate_main_outputs (0.2s)
+PASS navigation_grid (0.9s)
+PASS depth_sorting (0.8s)
+PASS graphics_validation (2.4s)
+PASS character_runtime (0.5s)
+PASS shadow_speed (1.7s)
+PASS equipment_menu (1.2s)
+PASS simulate_battles (5.1s)
+PASS battle_director (0.5s)
+PASS shadow_cache (2.8s)
+PASS hero_save (0.4s)
+PASS room_region_report (0.2s)
+PASS room_editor (3.4s)
+PASS room_design (0.2s)
+PASS tactical_battle (0.6s)
+PASS weapon_system (0.5s)
+PASS battle_adapter (0.5s)
+PASS battle_controller (0.4s)
+PASS battle_perspective (0.3s)
+PASS battle_camera (0.3s)
+PASS battle_vfx (0.4s)
+PASS battle_timeline (0.4s)
+PASS weapon_sockets (0.3s)
+PASS agent_file_bridge (0.8s)
+PASS game_factory (0.8s)
+PASS pixel_asset_factory (0.8s)
+PASS manual_agents (2.5s)
+PASS task_evidence (0.4s)
+PASS agent_costs (9.2s)
+PASS agent_workflow (0.2s)
+PASS art_delivery (0.5s)
+PASS goal_task_factory (4.7s)
+PASS candidate_room (0.3s)
+PASS blender_factory (22.8s)
+PASS goal_pulse_continuous (1.3s)
+PASS local_planner (5.4s)
+PASS parallel_safety (1.5s)
+PASS runner_main_clean (16.6s)
+PASS runner_parallel (32.0s)
+PASS project_indexes (6.3s)
+PASS map_factory (0.7s)
+PASS map_cardinal (0.4s)
+PASS map_floor_geometry (0.2s)
+PASS map_floor_style (0.2s)
+PASS map_intake (0.3s)
+PASS map_layers (0.6s)
+PASS map_navigation (0.8s)
+PASS map_reference (0.4s)
+PASS map_templates (0.4s)
+PASS lf_writers (0.9s)
+PASS map_registry_validate (1.3s)
+PASS test_router (2.3s)
+PASS test_index (0.1s)
+NOTE godot_import changed 2 file(s); reverted: tools/capture_seabreak_coast.gd.uid, tools/verify_seabreak_coast.gd.uid
+PASS godot_import (3.9s)
+PASS godot_map_smoke (1.2s)
+PASS godot_cardinal_blocks (0.7s)
+PASS aider_worker (8.0s)
+PASS shadow_painter (0.5s)
+PASS map_factory_tools (1.0s)
+PASS prepare_map_workspace (0.1s)
+PASS map_factory_viewer (2.2s)
+PASS map_variation (0.1s)
+PASS poster_characters (17.1s)
+PASS hd_migration (0.3s)
+PASS capture_checks (0.6s)
+PASS blender_catalog (1.6s)
+PASS project_settings (0.1s)
+PASS seabreak_coast (1.9s)
+
+91/91 passed

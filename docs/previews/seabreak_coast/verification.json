@@ -1,0 +1,60 @@
+{
+  "task_id": "TASK-0169",
+  "agent": "codex",
+  "model": "unknown",
+  "base_commit": "2c0b2ab6366622866adaaaef972fead73773d54f",
+  "delivery_branch": "codex/seabreak-coast",
+  "full_tests": {
+    "command": "python -u tools/run_tests.py --changed --timeout 600",
+    "exit_code": 0,
+    "passed_groups": 91,
+    "total_groups": 91,
+    "environment": "authorized Windows execution; TEMP/TMP isolated to .qa-tmp"
+  },
+  "final_map_tests": {
+    "command": "python tools/run_tests.py --only map_factory --only map_registry_validate --only navigation_grid --only seabreak_coast --timeout 120",
+    "exit_code": 0,
+    "passed_groups": 4
+  },
+  "graphics_validation": {
+    "command": "python tools/graphics_validation.py --changed",
+    "exit_code": 0,
+    "png_checked": 705,
+    "errors": [],
+    "warnings": []
+  },
+  "test_index_sources": {
+    "command": "python tools/run_tests.py --check-index --sources-only",
+    "exit_code": 0,
+    "generated_index_regeneration": "main only"
+  },
+  "actual_HeroPlayer_walk_steps": 3451,
+  "landmarks_reached": 6,
+  "actual_scene_roundtrip_verified": true,
+  "return_spawn_modes_verified": [
+    "photo",
+    "factory"
+  ],
+  "map_version": 3,
+  "canvas_size": [
+    6144,
+    4096
+  ],
+  "floor_cells": 2161,
+  "walk_cells": 2029,
+  "actual_Godot_captures": 8,
+  "new_image_generation_calls": 0,
+  "owner_main_checkout_written": false,
+  "map_visual_approval": false,
+  "limitations": [
+    "Conservative authored grid feet require owner visual play review; no claim of measured sprite alpha silhouettes as physical geometry.",
+    "Room source dependency TASK-0168 must integrate before this stacked branch.",
+    "This exterior scene supplies exploration and return; existing room battle/editor/equipment systems remain in their room scenes."
+  ],
+  "pull_request": "https://github.com/shero92/skl-SF/pull/191",
+  "base_branch_compatibility": {
+    "head_checked": "0a3091209d9780d0488d263848813c5c8b567758",
+    "merge_tree_clean": true,
+    "combined_runtime_tests_performed": false
+  }
+}

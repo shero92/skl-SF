@@ -1,0 +1,6 @@
+PASS navigation_grid (0.8s)
+PASS map_factory (0.7s)
+PASS map_registry_validate (1.6s)
+PASS seabreak_coast (2.0s)
+
+4/4 passed

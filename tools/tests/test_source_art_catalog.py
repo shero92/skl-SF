@@ -92,6 +92,24 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(row["publication"]["delivery_branch"], "codex/new-art")
         self.assertEqual(row["publication"]["pull_request"], "https://github.com/example/art/pull/9")
 
+    def test_painted_world_is_found_through_runtime_copy_without_reusable_sprite_ids(self):
+        runtime = "map_factory/painted_worlds/island/v001/scene.png"
+        dest = self.root / runtime
+        dest.parent.mkdir(parents=True)
+        dest.write_bytes(self.source.read_bytes())
+        self.item.update(runtime_path=runtime, runtime_sha256=self.item["sha256"])
+        self.refresh()
+        self.write_json("map_factory/maps/room/latest.json", {"no_source_used": True})
+        index = json.loads((self.root / "map_factory/maps/index.json").read_text())
+        index["painted_world_index"] = "map_factory/painted_worlds/index.json"
+        self.write_json("map_factory/maps/index.json", index)
+        self.write_json(index["painted_world_index"], {"worlds": {"island": {
+            "latest": "map_factory/painted_worlds/island/v001/world.json", "version": 1}}})
+        self.write_json("map_factory/painted_worlds/island/v001/world.json", {"background": "res://" + runtime})
+        result = catalog.build(self.root)
+        self.assertEqual(result["assets"][0]["exact_path_map_references"], ["island"])
+        self.assertEqual(result["maps"][-1]["rendering_mode"], "owner_requested_painted_block_ground")
+
 
 if __name__ == "__main__":
     unittest.main()

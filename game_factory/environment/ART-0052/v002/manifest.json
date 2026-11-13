@@ -1,0 +1,113 @@
+{
+  "request_id": "ART-0052",
+  "task_id": "TASK-0170",
+  "delivery_branch": "codex/seabreak-painted-world",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 0,
+  "items": [],
+  "files": [],
+  "rejected_attempts": [
+    {
+      "id": "hidden_island_home_clearing",
+      "path": "assets_hd/background/hidden_island_painted/v001/hidden_island_home_clearing.png",
+      "sha256": "5cd26eb7b4641f925cfcb3adc74fe204fa5e65fa9d0936c4d33ee7e0f18e9e9b",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "prompt_path": "game_factory/environment/ART-0052/v002/requests/home_clearing.txt",
+      "prompt_text": "ART-0051 revised STORY-CORRECT Hidden Island scene1 HOME CLEARING. ONE finished full-bleed1536x1024 landscape3:2 game background painting. Use the attached image ONLY for exceptional art quality: rich densely detailed high-end pixel-art painting with clean hard pixel clusters, lush white flowers, vivid turquoise sea, warm natural afternoon upper-left lighting, elevated three-quarter overhead tactical-RPG view. Do NOT copy its luxurious architecture, gilding, compass patterns, furniture or characters. STORY: a hidden island where the hero is the ONLY known human, raised by a NONHUMAN father among ancient wild nature. NO human town or maintained civilization. At upper centre around(768,230), a SMALL HUMBLE lived-in shelter made from DRIFTWOOD, a patchy thatch/branch roof and remnants of an OLD ROOT-COVERED STONE RUIN beside a rocky turquoise cove. Modest rough wooden door, plain steps hewn from rock, one simple warm amber lantern and a few seashells/fishing tools near the doorway only. No palace facade, grand arch, banners or gold ornaments. Enormous wild trees, tangled thick roots, ancient mossy boulders, dense ferns and uncontrolled flowering undergrowth swallow the ruin's sides. The playable central clearing is natural compacted EARTH and ROCK, not paved ornamental flooring. A broad clearly walkable winding dirt trail goes from the home's threshold via an open clearing near(760,500) to the BOTTOM CENTRE edge near(780,1024). Keep its300px corridor unobstructed; wild nature frames it rather than covering the feet route. A glimpse of bright turquoise rocky bay on LEFT, deep inviting jungle on RIGHT. Beautiful, mysterious, isolated, lived-in by one family, not abandoned home but untamed island. Natural irregular composition, no repeated terrain tiles or checkerboard. NO people, creatures, characters, swords, magic runes, plot reveals, boats, towns, lamp posts, benches, decorative urns, compass medallions, text, UI, watermark, frames or multi-panel sheet. One cohesive detailed explorable wild home-clearing scene.\n",
+      "generation_request_id_as_issued": "ART-0051",
+      "reason": "Different hut from actual room and southern stair geography",
+      "quality_status": "not_selected_room_or_grid_view",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "hidden_island_home_descent",
+      "path": "assets_hd/background/hidden_island_painted/v001/hidden_island_home_descent.png",
+      "sha256": "db40029d34829ffd8cdcd944f0045334a7abc08694fd9ea48eda315511ca49bf",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "prompt_path": "game_factory/environment/ART-0052/v002/requests/home_descent.txt",
+      "prompt_text": "ART-0052 Hidden Island scene HOME DESCENT, the actual outdoors BELOW the attached hero room. One finished full-bleed1536x1024 pixel-art game backdrop. Reference1 is the REAL ROOM GEOGRAPHY: its SOUTH/BOTTOM CENTRAL STONE STAIR exits toward the viewer, on a high coastal limestone outcrop. Create the NEXT stretch of ground SOUTH of that room, same elevated3/4 camera facing NORTH/down, same afternoon upper-left light, same rich detailed crisp pixel-art quality. The room remains OFFSCREEN ABOVE this new scene. At TOP CENTRE edge, show ONLY the LOWER CONTINUATION of that SAME weathered narrow stone stair, about220px wide, flanked by its small plain stone posts and wildly overgrown rock; the stairs enter from image edge aroundx768 and descend to a natural small earth landing near(768,280). Do NOT redraw the whole room, its interior, bedroom furniture, grand rear arch, compass floor or painted characters. Do NOT invent a hut, door, lighthouse or a different home. Below the stairs a clearly walkable broad winding DIRT/ROCK TRAIL continues down the middle through a WILD HIDDEN ISLAND to the BOTTOM CENTRE edge around(780,1024), corridor250-300px clear for hero. Turquoise rocky sea cove on the LEFT, dense ancient tropical jungle with enormous roots, mossy boulders, uncontrolled ferns, white wildflowers and old vines on the RIGHT. A tiny fragment of the same abandoned limestone terrace lip may appear at the very top edge only, immediately swallowed by roots. Elsewhere entirely untamed nature. No maintained plazas, paving grids, garden benches, ornamental urns, banners, gold medallions, towns, people or boats. STORY: the hero is the only known human, nonhuman family/friends live here; no other human settlement. Reference2 is WILD MATERIAL/DETAIL style only: natural rich forest and soil, do NOT copy its hut or door. Keep stable scale: a128px-tall hero will be overlaid by Godot; NEVER paint a character. No creatures, skeletons, sword, runes, plot reveals, letters, UI, label, watermark, frames, panels or collage. ONE cohesive highly detailed wild trail below the existing room.\n",
+      "generation_request_id_as_issued": "ART-0052",
+      "reason": "Natural cinematic path perspective does not match the owner clarified room/Shining Force square-ground system",
+      "quality_status": "not_selected_room_or_grid_view",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "hidden_island_mossveil_edge",
+      "path": "assets_hd/background/hidden_island_painted/v001/hidden_island_mossveil_edge.png",
+      "sha256": "579ddedddf1e3a8065334cdb0e45be3246e1a1730cdf3729e571585ddf107a3a",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "prompt_path": "game_factory/environment/ART-0052/v002/requests/mossveil_edge.txt",
+      "prompt_text": "ART-0052 Hidden Island scene MOSSVEIL EDGE. ONE complete full-bleed1536x1024 high-detail pixel-art game backdrop, same3/4 elevated overhead camera, scale and warm upper-left sunlight as attached wild coastal trail. Match dense detailed crisp pixel clusters, vivid natural forest materials and beautiful colour depth. STORY: Hidden Island is wild and hidden; no humans except the hero, no human village or landscaped park. Create the next natural stretch SOUTH of the home descent: an ancient tropical FOREST EDGE, gigantic gnarled trees and mossy exposed roots at sides, thick ferns, uncontrolled white/blue wildflowers, hanging vines, layered shaded canopies, mossy boulders. A broad clearly unobstructed EARTH TRAIL enters TOP CENTRE around(768,0), winds through a wide organic clearing near(780,540), and exits BOTTOM CENTRE around(790,1024). Keep main walk corridor200-300pixels wide, with roots low and flush where trail crosses them, no trunk or vegetation across walking centre. A small empty natural resting nook on right reached by a short dirt spur, no furniture. Fleeting glimpses of turquoise rocky cove through trees at far LEFT, dense inviting jungle elsewhere, no wide empty sea replacing usable ground. No buildings or shelter here, no stone stairs, no paved roads or repeated floor grid, no maintained signs, banners, lantern posts, benches, compass mosaic, urns, gold or statues. No people, creatures, actors, swords, bones, glowing runes, plot reveals, letters, UI, text, labels, watermark, frame, panels or collage. One richly painted wild explorable forest-edge scene only.\n",
+      "generation_request_id_as_issued": "ART-0052",
+      "reason": "Natural cinematic path perspective does not match the owner clarified room/Shining Force square-ground system",
+      "quality_status": "not_selected_room_or_grid_view",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    }
+  ],
+  "generation_count": 3,
+  "generation_cache_required": false,
+  "production_active": false,
+  "quality_status": "not_selected_room_or_grid_view"
+}

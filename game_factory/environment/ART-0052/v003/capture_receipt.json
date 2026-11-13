@@ -1,0 +1,44 @@
+{
+	"actual_viewport": true,
+	"camera_zoom": 0.84375,
+	"engine": "4.7.2-stable (official)",
+	"files": [
+		{
+			"path": "game_factory/environment/ART-0052/v003/godot_room_stairs.png",
+			"sha256": "89c7bbd10bc345e84bcab153623d0fa676b216639a0bc6bf772303413df3714e"
+		},
+		{
+			"path": "game_factory/environment/ART-0052/v003/godot_home_descent.png",
+			"sha256": "1b698339e11c79935e70dd15c7ce2808edf587f658b2243f0ebd7ef0e276e3f1"
+		},
+		{
+			"path": "game_factory/environment/ART-0052/v003/godot_mossveil_edge.png",
+			"sha256": "e60e53c39b73f3655a40dd7c89de6429c30f12685834163284fe32b0b2592400"
+		},
+		{
+			"path": "game_factory/environment/ART-0052/v003/godot_mossveil_roots.png",
+			"sha256": "951a8420dc061612e2e74e1f4058e12ab2d8c83c69e823c3013732384b10741a"
+		},
+		{
+			"path": "game_factory/environment/ART-0052/v003/godot_stormwatch_ascent.png",
+			"sha256": "0cc93e2e131d6b6af53e693b98c74deaa318d59fca245403e70bfd3006e29e24"
+		},
+		{
+			"path": "game_factory/environment/ART-0052/v003/godot_stormwatch_overlook.png",
+			"sha256": "899a3359f60876782ef0aff828701543b6470cefe73cb71b9a9591ad04f840ad"
+		},
+		{
+			"path": "game_factory/environment/ART-0052/v003/godot_bone_tide_shore.png",
+			"sha256": "7c2817664ae67c4de70cee805b91d77ad718e023c326d5271e1db853cf632306"
+		}
+	],
+	"rendered_zones": 6,
+	"room_camera_zoom": 0.84375,
+	"script_sha256": "57ae0ddb2fa996b1d69c35084edc275ad05ef87d6f2d208879cdbf366f86eccd",
+	"source_master_unchanged": true,
+	"viewport": [
+		1536,
+		864
+	],
+	"world_sha256": "9aaa0280929b0e43164e85c5bd307145b64c2022e4b6006b65279b84e782373d"
+}

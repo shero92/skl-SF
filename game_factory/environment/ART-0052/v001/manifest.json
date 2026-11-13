@@ -1,0 +1,179 @@
+{
+  "request_id": "ART-0052",
+  "task_id": "TASK-0170",
+  "delivery_branch": "codex/seabreak-painted-world",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 0,
+  "items": [],
+  "files": [],
+  "rejected_attempts": [
+    {
+      "id": "seabreak_archive_ruins",
+      "path": "assets_hd/background/seabreak_painted_world/v001/seabreak_archive_ruins.png",
+      "sha256": "b4b72dd4ab42b59e8e2ca3c61bce0aa028e0159fd9161a29d0f4d6462db604c3",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "complete-scene bottom centre, not a sprite footprint",
+      "prompt_path": "game_factory/environment/ART-0052/v001/requests/archive_ruins.txt",
+      "prompt_text": "ART-0051 scene5 ARCHIVE RUINS. One complete1536x1024 landscape3:2 opaque game environment painting in exact supplied sanctuary art direction: gorgeous sophisticated detailed pixel-art clusters, warm upper-left golden afternoon sunlight, blue layered sea with distant cliffs, ancient pale golden limestone, lush vines and white/blue flowers, restrained cobalt-and-gold ornaments. Same elevated3/4 south-looking-north tactical camera, not a side-view. NEW outdoor archaeological garden with a monumental BROKEN IVY ARCH near upper centre, fragmented fluted columns along the sides, carved stone slabs and a couple cobalt ceramic urns in planted corners. An open broad natural warm flagstone court occupies centre and lower half. Three CLEAR connected walking approaches: TOP CENTRE through the OPEN ARCH and continuing to top image edge around(768,0), LEFT EDGE around(0,610) toward a quiet lookout, RIGHT EDGE around(1536,600) toward lighthouse. Keep all three exits actually open with usable stone path continuing off image edges, no railing or flowers across them. Ancient arch piers stay OUTSIDE a broad central opening. Dense flowering greenery and broken low stonework frame the paths, sea visible beyond the outer cliffs, generous clear walking space in centre(400,400) to(1150,800). No printed stone writing or glowing runes, no indoor library shelves, no bed or study table, no beacon tower or closed central door. Integrated painted terrain with irregular joints and subtle weathering, not repeated tile squares or modular floating blocks. NO people/characters/creatures, captions, text, UI, arrows, map symbols, labels, watermark, frames, multiple panels or spritesheet. One cohesive explorable ruined coastal court only.\n",
+      "quality_status": "not_selected_story_mismatch",
+      "reason": "Owner story clarification: wild hidden island and humble home; this painting has maintained ornamental architecture.",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "seabreak_beacon_headland",
+      "path": "assets_hd/background/seabreak_painted_world/v001/seabreak_beacon_headland.png",
+      "sha256": "8763086284f69f471602e20976c243f7493eb8c0f740dbd9fd5f42efee5c2d93",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "complete-scene bottom centre, not a sprite footprint",
+      "prompt_path": "game_factory/environment/ART-0052/v001/requests/beacon_headland.txt",
+      "prompt_text": "ART-0051 scene4 BEACON HEADLAND. One whole finished high-detail pixel-art game environment painting,1536x1024 landscape3:2, full-bleed opaque. Match supplied sanctuary style: very dense beautiful crisp pixel clusters, rich luminous cobalt/turquoise sea, warm limestone cliffs, lush flowering ivy and white/blue daisies, blue/gold nautical cloth, warm upper-left late-afternoon sunlight, same3/4 elevated south-looking-north camera, no blur. A dramatic coastal headland with an ANCIENT ROUND BEACON TOWER on an upper-right raised terrace, weathered tan stone, sculpted cornice, a brass lantern glow at its top and trailing ivy, cobalt/gold hanging banner. This is an exterior vista, not a room. The tower is a landmark OUTSIDE the main playable path, not a wall across it. A generously wide natural flagstone path enters TOP LEFT area near(300,0), descends through open central landing around(700,560), and exits LEFT EDGE lower down near(0,760). The walkable ground is clearly connected, about250-350pixels wide, bordered by low balustrades with openings at those two exits. Broad open viewing terrace in foreground centre with a small decorative gold-and-blue floor medallion, warm lantern posts toward borders, flowers clustered outside path. Sea and magnificent distant rock arches encircle cliff sides, with rich coastal depth. Irregular continuously painted paving, NO repeated tile grid or square-block islands. No bed, domestic furniture or copied sanctuary doorway. No people, characters, hero, monsters, letters, labels, UI, arrows, watermark, frame, split panels, collage, spritesheet, depth-of-field or photographic rendering. ONE coherent beautiful explorable lighthouse-headland scene.\n",
+      "quality_status": "not_selected_story_mismatch",
+      "reason": "Owner story clarification: wild hidden island and humble home; this painting has maintained ornamental architecture.",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "seabreak_palm_gardens",
+      "path": "assets_hd/background/seabreak_painted_world/v001/seabreak_palm_gardens.png",
+      "sha256": "7c7fdfb965297e7d89c1dd5dcbab1ae4445ed88352eb5547cb44a9aa258a791a",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "complete-scene bottom centre, not a sprite footprint",
+      "prompt_path": "game_factory/environment/ART-0052/v001/requests/palm_gardens.txt",
+      "prompt_text": "ART-0051 scene3 PALM GARDENS. One complete finished highly detailed pixel-art game painting at1536x1024 landscape3:2, full-bleed opaque. Match attached sanctuary image's rich sophisticated pixel clusters, warm upper-left afternoon sun, fixed south-looking-north elevated3/4 overhead camera, pale warm coastal limestone, cobalt/gold ceramic details, lush greenery and white/blue flowers, brilliant blue sea and tall sea stacks. NEW outdoor location: a magnificent botanical garden on broad natural cliff terraces, abundant tall graceful palms concentrated along sides, flowering vines, fern beds, dense white daisies, a few blue-white urns, ruined stone balustrades and two quiet stone benches at the edge. The WALKING PATH must be broad and continuously clear: enters from the LEFT EDGE around(0,560), curves into an open central garden landing near(760,560), then bends toward the lower right and leaves BOTTOM EDGE around(1180,1024). Keep both entrances clearly open, with natural stone paving at the image edges and no rail/plant blocking them. A small optional open viewpoint at upper centre is reachable from main landing by a short path. The walk area is warm irregular worn flagstone interwoven naturally with planted soil; no repetitive checkerboard floor, no flat tile-map assembly. Dense scene richness but clear traversable routes roughly220-300pixels wide. Sea visible beyond terraced cliffs and in background, not a tiny island made of square blocks. NO central compass mosaic or grand doorway (those belong to other areas), no room interior or bed. NO characters, people, creatures, lettering, UI, icons, arrows, text, watermark, frame, panels, sheet, collage, photoreal blur or depth-of-field. One cohesive lavishly painted explorable garden only.\n",
+      "quality_status": "not_selected_story_mismatch",
+      "reason": "Owner story clarification: wild hidden island and humble home; this painting has maintained ornamental architecture.",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "seabreak_sanctuary_approach",
+      "path": "assets_hd/background/seabreak_painted_world/v001/seabreak_sanctuary_approach.png",
+      "sha256": "37f8dba85158ee2053ff0bbd665ac02ceefadd398b1ce45593843daf1342e2ea",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "complete-scene bottom centre, not a sprite footprint",
+      "prompt_path": "game_factory/environment/ART-0052/v001/requests/sanctuary_approach.txt",
+      "prompt_text": "Use case: stylized-concept. FINAL COMPLETE PLAYABLE GAME BACKDROP, not a tileset. ART-0051, scene1 SANCTUARY APPROACH. Create one richly detailed hand-painted pixel-art coastal fantasy outdoor scene, landscape3:2 ideally1536x1024. Reference image is ART DIRECTION ONLY: match its luxurious dense detailed pixel clusters, warm limestone, cobalt-and-gold details, sunlit lush foliage and white flowers, vivid layered turquoise blue sea, warm upper-left afternoon lighting and three-quarter overhead tactical-RPG camera looking north/down about50degrees. Do NOT copy the bedroom composition, bed, furniture or painted character. New exterior scene: at TOP CENTRE, a small imposing ivy-covered sanctuary entrance with a closed cobalt/gold double door framed by warm ancient stone, its threshold near(768,230). Broad richly textured pale stone steps descend to a spacious CLEAR LANDING near(768,420). An inviting continuous naturally worn stone WALKWAY winds from this landing down the middle and exits the BOTTOM CENTRE edge near(768,1024); keep the playable corridor wide around300pixels and unobstructed, gently curving but easy to read. Surround it with irregular lush grass ledges, flowering vines, white daisies, palms, warm rock crevices, a couple lanterns on stone posts OUTSIDE the walking path. Both sides drop into spectacular blue water and distant tall sea stacks. At least half image shows usable walking terrain and rich natural stone platform, not only water. Frame as an explorable environment, NOT a decorative poster: no giant foreground plants blocking the route, no horizon-camera perspective, no depth-of-field, no blurry photorealistic grass. Subtle small irregular stone joints with natural material variations, NOT an obvious repeated checkerboard or modular square floor grid. Full-bleed opaque painting with finished edges; no transparency needed for complete scene. NO characters, people, hero, creatures, UI, text, labels, watermark, borders, montage, panels, diagram, map icons, arrows or spritesheet. Deliver exactly ONE full scene with the above high-quality integrated painting.\n",
+      "quality_status": "not_selected_story_mismatch",
+      "reason": "Owner story clarification: wild hidden island and humble home; this painting has maintained ornamental architecture.",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    },
+    {
+      "id": "seabreak_sunlit_promenade",
+      "path": "assets_hd/background/seabreak_painted_world/v001/seabreak_sunlit_promenade.png",
+      "sha256": "20d0d8253c7e62150161a8c966ea9e36d37167cc4634799e4d7238cd42b5679c",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "complete-scene bottom centre, not a sprite footprint",
+      "prompt_path": "game_factory/environment/ART-0052/v001/requests/sunlit_promenade.txt",
+      "prompt_text": "ART-0051 scene2 SUNLIT PROMENADE. ONE COMPLETE finished game-environment painting, landscape3:2 at1536x1024, opaque full-bleed. Match the two attached STYLE references: luxurious densely detailed crisp pixel-art painting, warm late-afternoon upper-left light, pale warm limestone, cobalt-and-gold nautical ornaments, abundant white flowers and rich green vines, sparkling layered turquoise sea with majestic distant sea stacks. Same three-quarter overhead camera looking north/down as the images, terrain walkable at native source size. This is a NEW exterior location, NOT a duplicate of the door/bedroom image. An expansive ancient seaside public terrace, with a gorgeous blue-and-gold COMPASS ROSE in the broad open centre, a pair of slender ruined columns toward upper left and upper right, flowering planters and elegant low broken parapets around the edge. Natural weathered irregular stone paving, no repeated modular floor checkerboard. A broad WALKABLE STONE PATH enters at TOP CENTRE near(768,0), broadens into a central clear plaza from(480,320) to(1080,800), then one broad route exits RIGHT EDGE near(1536,560), and another exits BOTTOM CENTRE near(768,1024). Keep all three openings and connecting routes clearly visible, unobstructed by plants, walls or furniture. The terrace is on a dramatic limestone cliff above the sea; lush palm clumps and white/blue flowers frame the sides without blocking the centre. Small warm brass lanterns around the borders. No giant sanctuary doorway in centre, no bed, no interior room, no bookshelf, no study table. Integrated high-quality environmental painting with material richness, rich colour depth, hard clean pixel clusters, no blur or flat tile-map look. No characters/people/creatures, text, letters, UI, borders, watermark, icons, arrows, labels, panels, montage, grid or sprite sheet. One cohesive explorable outdoor scene only.\n",
+      "quality_status": "not_selected_story_mismatch",
+      "reason": "Owner story clarification: wild hidden island and humble home; this painting has maintained ornamental architecture.",
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": false
+    }
+  ],
+  "quality_status": "not_selected_story_mismatch",
+  "production_active": false,
+  "generation_count": 5,
+  "generation_cache_required": false,
+  "generation_request_id_as_issued": "ART-0051",
+  "id_reallocation_reason": "ART-0051 allocated independently to flying creatures by room agent; raw historical prompts retained."
+}

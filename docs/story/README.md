@@ -29,17 +29,10 @@ Files mark what is decided: **[معتمد]** approved by the owner, **[مقتر�
 - Chapter 2 is open: only the weakening veil around Hidden Island is a confirmed storyline.
 - Secrets that must not be revealed early: the sword's link to Lemon, the warrior in the vision, the origin of the blue marks, who inherits the power, the source of the veil's power, the meaning of the eye and chains, why the father knows the deer, the archer's group, the truth of the shrine, the origin of the dark side. The link of the skeletons to the world of Zeon is behind-the-scenes only.
 
-## Links in INDEX.md that are not in this repository
+## Reference files
 
-INDEX.md was written for another repository (`The-Ancient-Seal`) and points to files that this repository does not have yet:
-
-- `../design/STORY_CANON_AR.md` (the shared story canon: world, father, friend, coastal home, mystery rules)
-- `../design/story_bible.md` (older bible, history only)
-- `../architecture/content_contracts.md` (JSON contract, maps and saves)
-- `docs/qa/` (test and QA evidence)
-- the root `AGENTS.md` it mentions is this repository's [AGENTS.md](../../AGENTS.md), which does not repeat the story.
-
-Until the canon file is added, treat the chapter files and their markers as the only story source, and ask the owner before fixing anything the files leave open.
+- [../design/STORY_CANON_AR.md](../design/STORY_CANON_AR.md) is the compiled shared canon (world, father, friend, coastal home, mystery rules, source order, the latest Reef Friend correction and the owner's 2026-11-13 direction that the island is hidden and wild with no human settlement). It exists in this repository.
+- INDEX.md points the JSON contract question to [../RUNTIME_INTEGRATION.md](../RUNTIME_INTEGRATION.md) and the Map Factory. The older `content_contracts.md` and `story_bible.md` of the first repository (`The-Ancient-Seal`) are not here.
 
 ## How agents use this folder
 

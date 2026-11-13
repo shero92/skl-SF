@@ -1,0 +1,15 @@
+{
+  "status": "review",
+  "title": "Seabreak Coast: walk out from the hero room into a large explorable world",
+  "problem": "Owner 2026-11-12: create a hug place after the hero goes out and walk through there to see the world and make the players seem waw map out of his room. Current main scene has no outbound world transition; only hero_room_01 is playable as a room.",
+  "file": "scenes/main.tscn",
+  "line": 5,
+  "done_when": "A large coastal map has connected walkable landmark areas, a camera following the existing hero, a room-stair exit and safe return, actual Godot screenshots and traversal/transition tests.",
+  "test": "python tools/run_tests.py --changed",
+  "priority": "high",
+  "kind": "feature",
+  "agent": "codex",
+  "task_id": "TASK-0169",
+  "delivery_branch": "codex/seabreak-coast",
+  "pull_request": "https://github.com/shero92/skl-SF/pull/191"
+}

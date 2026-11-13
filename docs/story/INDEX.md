@@ -1,7 +1,9 @@
 # The Ancient Seal — STORY INDEX
 **المصدر الرسمي لتوجيه أي Codex أو مساعد تطوير إلى ملفات القصة.** اقرأ هذا الفهرس أولًا؛ لا تقرأ كل الفصول دون حاجة.
-**المستودع:** `shero92/The-Ancient-Seal` (PC / Godot).
+**المجلد الحالي:** `docs/story` في `shero92/skl-SF` (PC / Godot). اسم The Ancient Seal في النصوص عنوان القصة؛ لا تجعل نسخة مستودع أقدم أعلى من ملفات المالك المحلية.
 **الحالة:** قصة قيد التطوير؛ الملفات لا تثبت أن المحتوى منفذ أو مختبر.
+
+**توجيه المالك2026-11-13:** الجزيرة مخفية وبرية، والبطل الإنسان الوحيد المعروف في الافتتاح. الأب والصديقان غير بشر. لا مدينة أو قرية بشرية أو منارة مصانة أو حدائق منظمة خارج البيت؛ مرجع الصورة للأسلوب لا لنقل فخامته إلى الطبيعة. المرجع المجمع الحالي [STORY_CANON_AR.md](../design/STORY_CANON_AR.md) يوضح ترتيب المصادر وتصحيح صديق الشعاب.
 
 ## مسار القراءة السريع
 1. افتح [AGENTS.md](../../AGENTS.md) لمبادئ المستودع.
@@ -25,7 +27,7 @@
 | تصميم زعيم قديم أو صديق وحشي أو لغز بيئي | [visions_creatures_and_secrets.md](shared/visions_creatures_and_secrets.md) |
 | انكشاف Hidden Island وتخطيط الفصل التالي | [chapter_02/README.md](chapter_02/README.md) |
 | قرار بشأن مواعيد الفصول أو أسماء الشخصيات غير المعتمدة | [STORY_CANON_AR.md](../design/STORY_CANON_AR.md) ثم اسأل المستخدم |
-| عقد JSON والخرائط والحفظ | [content_contracts.md](../architecture/content_contracts.md) مع مشهد القصة المناسب |
+| عقد JSON والخرائط والحفظ | [RUNTIME_INTEGRATION.md](../RUNTIME_INTEGRATION.md) و[Map Factory](../../map_factory/INDEX.md) مع مشهد القصة المناسب؛ ملف content_contracts القديم غير موجود هنا |
 
 ## ترتيب الفصل الأول الحالي
 `01_home_and_storm` → `02_sword_visions` → `03_first_battle` → `04_temple_and_second_battle` → `05_giant_door_shrine_earthquake` → `06_third_battle_islands_fury` → `07_jungle_rescue`.

@@ -1,0 +1,117 @@
+418 changed path(s) vs origin/main
+Not covered by tools/test_map.json, running ALL tests:
+  .qa-tmp/stage_paths.txt
+  AGENTS.md
+  INDEX.md
+  assets_hd/architecture/curved_east_side_wall/v001/.gdignore
+  assets_hd/architecture/curved_west_side_wall/v001/.gdignore
+  assets_hd/architecture/rear_left_window_wall/v001/.gdignore
+  assets_hd/architecture/rear_right_door_niche/v001/.gdignore
+  assets_hd/background/hidden_island_grid_painted/v001/.gdignore
+  assets_hd/background/hidden_island_grid_painted/v001/hidden_island_bone_tide_shore.png
+  assets_hd/background/hidden_island_grid_painted/v001/hidden_island_home_descent.png
+  assets_hd/background/hidden_island_grid_painted/v001/hidden_island_mossveil_edge.png
+  assets_hd/background/hidden_island_grid_painted/v001/hidden_island_mossveil_roots.png
+  assets_hd/background/hidden_island_grid_painted/v001/hidden_island_stormwatch_ascent.png
+  assets_hd/background/hidden_island_grid_painted/v001/hidden_island_stormwatch_overlook.png
+  assets_hd/background/hidden_island_painted/v001/.gdignore
+  assets_hd/background/hidden_island_painted/v001/hidden_island_home_clearing.png
+  assets_hd/background/hidden_island_painted/v001/hidden_island_home_descent.png
+  assets_hd/background/hidden_island_painted/v001/hidden_island_mossveil_edge.png
+  assets_hd/background/sea_stack_islands/v001/.gdignore
+  assets_hd/background/seabreak_painted_world/v001/.gdignore
+  ... and 43 more
+PASS source_art_catalog (0.4s)
+PASS golden_cyclone_assets (3.1s)
+PASS hero_room_capture_evidence (0.2s)
+PASS hero_room_reference_relayout (1.5s)
+PASS hero_room_visual_contract (0.2s)
+PASS hero_room_v0013_patch (0.6s)
+PASS generate_factory_images (0.3s)
+PASS camera_light_shafts (0.2s)
+PASS layer_zorder_anchor (0.1s)
+PASS directional_furniture (0.3s)
+PASS hero_room_lighting_decor (0.3s)
+PASS enclosing_walls (0.2s)
+PASS hero_room_scenery (0.2s)
+PASS hero_room_floor (0.2s)
+PASS registry_verification (1.0s)
+PASS battle_hit_timing (0.5s)
+PASS battle_combo (0.4s)
+PASS battle_reactions (0.5s)
+PASS battle_preview (0.4s)
+PASS battle_registry (0.2s)
+PASS weapon_battle (0.5s)
+PASS enemy_ai (0.4s)
+PASS turn_manager (0.5s)
+PASS regenerate_main_outputs (0.2s)
+PASS navigation_grid (0.8s)
+PASS depth_sorting (0.8s)
+PASS graphics_validation (2.3s)
+PASS character_runtime (0.5s)
+PASS shadow_speed (1.8s)
+PASS equipment_menu (1.3s)
+PASS simulate_battles (5.0s)
+PASS battle_director (0.5s)
+PASS shadow_cache (2.7s)
+PASS hero_save (0.5s)
+PASS room_region_report (0.2s)
+PASS room_editor (3.5s)
+PASS room_design (0.3s)
+PASS tactical_battle (0.6s)
+PASS weapon_system (0.4s)
+PASS battle_adapter (0.6s)
+PASS battle_controller (0.5s)
+PASS battle_perspective (0.3s)
+PASS battle_camera (0.4s)
+PASS battle_vfx (0.4s)
+PASS battle_timeline (0.5s)
+PASS weapon_sockets (0.3s)
+PASS agent_file_bridge (0.8s)
+PASS game_factory (0.8s)
+PASS pixel_asset_factory (0.8s)
+PASS manual_agents (2.4s)
+PASS task_evidence (0.4s)
+PASS agent_costs (8.7s)
+PASS agent_workflow (0.2s)
+PASS art_delivery (0.5s)
+PASS goal_task_factory (4.3s)
+PASS candidate_room (0.4s)
+PASS blender_factory (22.2s)
+PASS goal_pulse_continuous (1.4s)
+PASS local_planner (5.0s)
+PASS parallel_safety (1.1s)
+PASS runner_main_clean (14.8s)
+PASS runner_parallel (31.4s)
+PASS project_indexes (4.9s)
+PASS map_factory (0.7s)
+PASS map_cardinal (0.4s)
+PASS map_floor_geometry (0.2s)
+PASS map_floor_style (0.2s)
+PASS map_intake (0.3s)
+PASS map_layers (0.6s)
+PASS map_navigation (0.8s)
+PASS map_reference (0.4s)
+PASS map_templates (0.5s)
+PASS lf_writers (1.0s)
+PASS map_registry_validate (1.4s)
+PASS test_router (2.0s)
+PASS test_index (0.1s)
+PASS godot_import (4.3s)
+PASS godot_map_smoke (1.3s)
+PASS godot_cardinal_blocks (0.8s)
+PASS aider_worker (7.9s)
+PASS shadow_painter (0.5s)
+PASS map_factory_tools (0.9s)
+PASS prepare_map_workspace (0.1s)
+PASS map_factory_viewer (2.1s)
+PASS map_variation (0.2s)
+PASS poster_characters (15.2s)
+PASS hd_migration (0.2s)
+PASS capture_checks (0.5s)
+PASS blender_catalog (1.2s)
+PASS project_settings (0.2s)
+PASS seabreak_coast (1.9s)
+PASS painted_coast (3.4s)
+
+92/92 passed

@@ -1,0 +1,427 @@
+{
+  "request_id": "ART-0052",
+  "task_id": "TASK-0170",
+  "delivery_branch": "codex/seabreak-painted-world",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 6,
+  "items": [
+    {
+      "id": "hidden_island_home_descent",
+      "request_id": "ART-0052",
+      "master_path": "assets_hd/background/hidden_island_grid_painted/v001/hidden_island_home_descent.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0052/hidden_island_home_descent.png",
+      "runtime_path": "map_factory/painted_worlds/hidden_island/v001/hidden_island_home_descent.png",
+      "sha256": "4dbf2e2db86556001d1d0e2b087446483fac40ab4a4df42e9dff13389047c4c5",
+      "master_sha256": "4dbf2e2db86556001d1d0e2b087446483fac40ab4a4df42e9dff13389047c4c5",
+      "runtime_sha256": "76cbf330b8993364f30a556f6e0c9e65235e5b9391278586ef1edf352770e951",
+      "delivery_sha256": "76cbf330b8993364f30a556f6e0c9e65235e5b9391278586ef1edf352770e951",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "full-scene bottom centre; not a character or prop foot anchor",
+      "runtime_origin": [
+        0,
+        0
+      ],
+      "native_canvas": [
+        1536,
+        1024
+      ],
+      "runtime_mode": "RGBA",
+      "delivery_mode": "RGBA",
+      "native_method": "RGB master unchanged; lossless RGBA export adds alpha255 only; exact RGB bytes; source1:1, no upscale/crop/flip/rotation",
+      "source_pixels_per_native_pixel": 1.0,
+      "full_scene_owner_exception": "docs/OWNER_PHOTO_WORLD_20261113.md",
+      "prompt_path": "game_factory/environment/ART-0052/v003/requests/home_descent.txt",
+      "prompt_text": "ART-0052 FINAL CORRECTED SHINING FORCE VIEW: HOME DESCENT. One complete1536x1024 high-detail pixel-art GAME MAP painting, opaque full-bleed. Match attached HERO ROOM image's actual VIEWING SYSTEM, not just colour: FIXED ORTHOGRAPHIC high3/4 overhead RPG camera, ground seen as AXIS-ALIGNED SQUARE BLOCKS, CONSISTENT64px tile-sized terrain squares at EVERY height of the image, roughly24columns by16rows of ground scale. NO vanishing point, NO narrowing distant path, NO horizon or cinematic landscape perspective, NO isometric diamond grid. Upright trees/cliffs show front/top faces at the same size anywhere, like classic SHINING FORCE, with the attached reference's luxurious crisp detailed pixel-art quality. The real room is OFFSCREEN NORTH ABOVE this view: at TOP CENTRE a192px-wide continuation of its SAME south-facing weathered stone stair descends from upper edge to a small ancient stone-block landing near(768,256), two modest old stone posts at stair base. Do NOT draw another building, hut, room interior, bed or doorway. From the landing a clear route runs SOUTH down the middle, organized in readable square EARTH, GRASS and WEATHERED NATURAL ROCK ground blocks around64px each. Blocks show natural mottled material detail, subtle readable square boundaries and uneven mossy lips, NOT flat coloured squares or a drawn UI grid. Preserve square scale and straight parallel edges all the way to bottom: no path shrinking toward top. Path is at least3-4blocks wide and continues off BOTTOM CENTRE. Story location is a WILD HIDDEN ISLAND with no human settlement: dense untamed fern banks, huge tree roots and mossy boulders frame the right side and corners; naturally wild white/blue flowers, vines, ancient root-covered limestone outcrop, vivid turquoise rocky sea cove along LEFT. Cliffs descend vertically in readable RPG blocks, not staircase mountains disappearing into distance. Same upper-left afternoon sun and warm stone/green/blue palette as room. Detailed integrated painting, but clearly playable square-block terrain like reference and Shining Force. No maintained park, city, banners, gold compass floor, garden benches, ornamental urns, people, creatures, boats, weapons, plot reveals, lettering, UI, frames, watermark or multi-panel sheet. Exactly ONE map scene. Leave central route unobstructed for an independently overlaid128px-tall hero.\n",
+      "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+      "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": true,
+      "quality_status": "runtime_integrated_needs_map_review",
+      "asset_kind": "complete_world_background",
+      "reusable_as_piece": false,
+      "story_reference_path": "docs/design/STORY_CANON_AR.md",
+      "story_reference_sha256": "180f831e180eec76049dad5a0effc38ddbfce9b069b8390e3bcb130e532cc188",
+      "facing": "same fixed south-looking-north orthographic three-quarter view as hero room",
+      "visual_grid_note": "painted square ground blocks approximately64px; authored collision subgrid32px as room, not a claim of exact pixel-perfect generated seams",
+      "navigation_annotation": "manual conservative walk polygons over visible unobstructed ground; not extracted automatically from colour"
+    },
+    {
+      "id": "hidden_island_mossveil_edge",
+      "request_id": "ART-0052",
+      "master_path": "assets_hd/background/hidden_island_grid_painted/v001/hidden_island_mossveil_edge.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0052/hidden_island_mossveil_edge.png",
+      "runtime_path": "map_factory/painted_worlds/hidden_island/v001/hidden_island_mossveil_edge.png",
+      "sha256": "7a7c7ae71af73e19abc45590a870b0a9885bd35d1f958829e3500200512daa4b",
+      "master_sha256": "7a7c7ae71af73e19abc45590a870b0a9885bd35d1f958829e3500200512daa4b",
+      "runtime_sha256": "f5a5a32f88f7ea9af27327c9d1752c9b749c52308342dc45c37e190782ad2f47",
+      "delivery_sha256": "f5a5a32f88f7ea9af27327c9d1752c9b749c52308342dc45c37e190782ad2f47",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "full-scene bottom centre; not a character or prop foot anchor",
+      "runtime_origin": [
+        0,
+        0
+      ],
+      "native_canvas": [
+        1536,
+        1024
+      ],
+      "runtime_mode": "RGBA",
+      "delivery_mode": "RGBA",
+      "native_method": "RGB master unchanged; lossless RGBA export adds alpha255 only; exact RGB bytes; source1:1, no upscale/crop/flip/rotation",
+      "source_pixels_per_native_pixel": 1.0,
+      "full_scene_owner_exception": "docs/OWNER_PHOTO_WORLD_20261113.md",
+      "prompt_path": "game_factory/environment/ART-0052/v003/requests/mossveil_edge.txt",
+      "prompt_text": "ART-0052 scene MOSSVEIL EDGE, SHINING FORCE MAP VIEW. ONE complete1536x1024 opaque detailed pixel-art RPG environment. Match reference1's FIXED ORTHOGRAPHIC high3/4 overhead camera and terrain-square scale, NOT cinematic perspective: ground is axis-aligned SQUARE grass/earth/rock BLOCKS around64px, consistent same size from TOP to BOTTOM; no horizon, no vanishing point, no narrowing path, no isometric diamonds. Reference2 hero room confirms overall view and crisp rich material quality. New location on WILD HIDDEN ISLAND: enormous ancient trees at left/right edges and corners, thick mossy roots, lush ferns and wild white/blue flowers, a fleeting turquoise sea glimpse on far LEFT only. Clearly playable central EARTH-BLOCK TRAIL enters TOP CENTRE near(768,0), continues through a broad empty grassy clearing near(768,512), exits BOTTOM CENTRE near(768,1024). The route is3-5square blocks wide, gently steps left/right in whole readable terrain cells but does NOT shrink with distance. Make terrain-square boundaries naturally readable with moss edges, root seams and earth/block lips like a beautiful Shining Force game map; no flat coloured placeholders or UI grid overlay. Dense luxurious detailed pixel clusters and warm upper-left forest sunlight, layered shade with clear navigable ground. Keep vegetation beside walk route, trunks never across centre. A small right-side EMPTY forest nook reachable by a short terrain-cell spur, no furniture. No buildings, ruins, stairs or maintained human objects here; no ornate park, banners, lamps, benches, urns, compass floors, paved plaza, humans, characters, animals, weapons, bones, runes, story reveals, lettering, UI, frames, watermark, montage or spritesheet. ONE cohesive richly illustrated square-block wild forest map, same viewing system as attached room and coastal stair map.\n",
+      "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+      "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": true,
+      "quality_status": "runtime_integrated_needs_map_review",
+      "asset_kind": "complete_world_background",
+      "reusable_as_piece": false,
+      "story_reference_path": "docs/design/STORY_CANON_AR.md",
+      "story_reference_sha256": "180f831e180eec76049dad5a0effc38ddbfce9b069b8390e3bcb130e532cc188",
+      "facing": "same fixed south-looking-north orthographic three-quarter view as hero room",
+      "visual_grid_note": "painted square ground blocks approximately64px; authored collision subgrid32px as room, not a claim of exact pixel-perfect generated seams",
+      "navigation_annotation": "manual conservative walk polygons over visible unobstructed ground; not extracted automatically from colour"
+    },
+    {
+      "id": "hidden_island_mossveil_roots",
+      "request_id": "ART-0052",
+      "master_path": "assets_hd/background/hidden_island_grid_painted/v001/hidden_island_mossveil_roots.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0052/hidden_island_mossveil_roots.png",
+      "runtime_path": "map_factory/painted_worlds/hidden_island/v001/hidden_island_mossveil_roots.png",
+      "sha256": "416f25e99e40cbafc1c6f6f3d4ebc218b7eb46d434155ea916ce6c0267789f14",
+      "master_sha256": "416f25e99e40cbafc1c6f6f3d4ebc218b7eb46d434155ea916ce6c0267789f14",
+      "runtime_sha256": "79f9ef17fdcf5146c8af1522945df0031a8ed9f019fd5d9dd70e85f394a40d8b",
+      "delivery_sha256": "79f9ef17fdcf5146c8af1522945df0031a8ed9f019fd5d9dd70e85f394a40d8b",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "full-scene bottom centre; not a character or prop foot anchor",
+      "runtime_origin": [
+        0,
+        0
+      ],
+      "native_canvas": [
+        1536,
+        1024
+      ],
+      "runtime_mode": "RGBA",
+      "delivery_mode": "RGBA",
+      "native_method": "RGB master unchanged; lossless RGBA export adds alpha255 only; exact RGB bytes; source1:1, no upscale/crop/flip/rotation",
+      "source_pixels_per_native_pixel": 1.0,
+      "full_scene_owner_exception": "docs/OWNER_PHOTO_WORLD_20261113.md",
+      "prompt_path": "game_factory/environment/ART-0052/v003/requests/mossveil_roots.txt",
+      "prompt_text": "ART-0052 scene MOSSVEIL ROOTS, SHINING FORCE MAP. One complete1536x1024 opaque richly detailed pixel-art environment, same FIXED ORTHOGRAPHIC high3/4 view and constant square terrain scale as attached forest map. Ground is readable AXIS-ALIGNED SQUARE earth/grass/stone BLOCKS about64px at top AND bottom; NO vanishing point, horizon, perspective-shrinking path or diamond/isometric ground. Dense ancient jungle on Hidden Island, hero only known human, NO maintained structures. Immense old gnarled tree bases and spreading roots occupy upper-left, lower-left and right corners, mossy rock clusters and wild ferns with white/blue flowers. An inviting3-5block-wide EARTH ROUTE enters TOP CENTRE around(768,0), descends into a generous open clearing around(760,550), then turns EAST through a wide open terrain corridor and exits RIGHT EDGE around(1536,600). Also a short accessible dead-end grassy nook at LEFT-CENTRE around(380,650), joined to central clearing. Keep all walking centres visibly clear: large roots frame paths, not bridge over character route; any root across path is low and flush with soil. Rich warm upper-left canopy sunlight with dappled shade and clean hard high-detail pixel clusters. Same tile-sized scale throughout, natural irregular material detail within the square terrain units, no flat placeholder checkerboard or drawn UI overlay. NO buildings, hut, stairs, furniture, pillars, signs, fences, lantern posts, gold ornaments, compass designs, villages, people, creatures, weapons, bones, rune lettering, secrets, UI, text, watermark, panels, spritesheet or frame. One cohesive wild forest terrain map, not a cinematic illustration.\n",
+      "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+      "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": true,
+      "quality_status": "runtime_integrated_needs_map_review",
+      "asset_kind": "complete_world_background",
+      "reusable_as_piece": false,
+      "story_reference_path": "docs/design/STORY_CANON_AR.md",
+      "story_reference_sha256": "180f831e180eec76049dad5a0effc38ddbfce9b069b8390e3bcb130e532cc188",
+      "facing": "same fixed south-looking-north orthographic three-quarter view as hero room",
+      "visual_grid_note": "painted square ground blocks approximately64px; authored collision subgrid32px as room, not a claim of exact pixel-perfect generated seams",
+      "navigation_annotation": "manual conservative walk polygons over visible unobstructed ground; not extracted automatically from colour"
+    },
+    {
+      "id": "hidden_island_stormwatch_ascent",
+      "request_id": "ART-0052",
+      "master_path": "assets_hd/background/hidden_island_grid_painted/v001/hidden_island_stormwatch_ascent.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0052/hidden_island_stormwatch_ascent.png",
+      "runtime_path": "map_factory/painted_worlds/hidden_island/v001/hidden_island_stormwatch_ascent.png",
+      "sha256": "e371887c2d4e3c472a8122490cb006b6296cce93ae3c7b6c361b680497f70ece",
+      "master_sha256": "e371887c2d4e3c472a8122490cb006b6296cce93ae3c7b6c361b680497f70ece",
+      "runtime_sha256": "4a866006b360fc6dca34e796282d3e906c70f23bd194a91a0caf6564e913eb67",
+      "delivery_sha256": "4a866006b360fc6dca34e796282d3e906c70f23bd194a91a0caf6564e913eb67",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "full-scene bottom centre; not a character or prop foot anchor",
+      "runtime_origin": [
+        0,
+        0
+      ],
+      "native_canvas": [
+        1536,
+        1024
+      ],
+      "runtime_mode": "RGBA",
+      "delivery_mode": "RGBA",
+      "native_method": "RGB master unchanged; lossless RGBA export adds alpha255 only; exact RGB bytes; source1:1, no upscale/crop/flip/rotation",
+      "source_pixels_per_native_pixel": 1.0,
+      "full_scene_owner_exception": "docs/OWNER_PHOTO_WORLD_20261113.md",
+      "prompt_path": "game_factory/environment/ART-0052/v003/requests/stormwatch_ascent.txt",
+      "prompt_text": "ART-0052 scene STORMWATCH ASCENT, Shining Force square-ground game map. ONE full-bleed1536x1024 opaque high-detail pixel-art backdrop. Exact same FIXED ORTHOGRAPHIC high3/4 overhead viewing system as reference: axis-aligned SQUARE natural rock/earth/grass BLOCKS around64px, same size everywhere; no vanishing point, no horizon perspective, no shrinking far path, no diamond isometric cells. WILD Hidden Island with no human settlement. A rugged forest-to-CLIFF ASCENT: irregular ancient limestone ledges and grassy boulders in readable stepped RPG terrain, dense fern/root growth on lower-right, windswept trees and white wildflowers at margins, turquoise sea visible down far-left cliffs. A clearly open3-4block-wide natural EARTH AND ROCK ROUTE enters LEFT EDGE around(0,600), reaches an empty central rocky landing near(760,570), then turns NORTH and exits TOP CENTRE around(800,0). Keep the route continuous, broad and square-cell readable with gentle low rock steps, never a steep impassable cliff or trunk across the walking strip. Cliffs outside walk route form natural height bands and lower turquoise water, not modular floating checkerboard islands. Material-square boundaries readable as rock seams and moss-rimmed earth cells, not flat tile placeholders. Rich crisp detailed pixel clusters and warm upper-left sun matching attached game map. NO manmade stairs, tower, lighthouse, paved plaza, palace, fence, posts, furniture, banners, human settlements, people or creatures; no storms, lightning, bones, sword, glowing runes or story reveals; no text, UI, grid labels, watermark, frame, panels or spritesheet. One cohesive beautiful untamed high-ground approach.\n",
+      "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+      "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": true,
+      "quality_status": "runtime_integrated_needs_map_review",
+      "asset_kind": "complete_world_background",
+      "reusable_as_piece": false,
+      "story_reference_path": "docs/design/STORY_CANON_AR.md",
+      "story_reference_sha256": "180f831e180eec76049dad5a0effc38ddbfce9b069b8390e3bcb130e532cc188",
+      "facing": "same fixed south-looking-north orthographic three-quarter view as hero room",
+      "visual_grid_note": "painted square ground blocks approximately64px; authored collision subgrid32px as room, not a claim of exact pixel-perfect generated seams",
+      "navigation_annotation": "manual conservative walk polygons over visible unobstructed ground; not extracted automatically from colour"
+    },
+    {
+      "id": "hidden_island_stormwatch_overlook",
+      "request_id": "ART-0052",
+      "master_path": "assets_hd/background/hidden_island_grid_painted/v001/hidden_island_stormwatch_overlook.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0052/hidden_island_stormwatch_overlook.png",
+      "runtime_path": "map_factory/painted_worlds/hidden_island/v001/hidden_island_stormwatch_overlook.png",
+      "sha256": "2ebb18ee43e4dc8210f63ea6b783d0a966356f10964fe354debc4f7e6c4e2125",
+      "master_sha256": "2ebb18ee43e4dc8210f63ea6b783d0a966356f10964fe354debc4f7e6c4e2125",
+      "runtime_sha256": "fff6242fc582a2dfa4240a222ec517c9bbf3d1e5ec2ab1af955fefe19c3a36ed",
+      "delivery_sha256": "fff6242fc582a2dfa4240a222ec517c9bbf3d1e5ec2ab1af955fefe19c3a36ed",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "full-scene bottom centre; not a character or prop foot anchor",
+      "runtime_origin": [
+        0,
+        0
+      ],
+      "native_canvas": [
+        1536,
+        1024
+      ],
+      "runtime_mode": "RGBA",
+      "delivery_mode": "RGBA",
+      "native_method": "RGB master unchanged; lossless RGBA export adds alpha255 only; exact RGB bytes; source1:1, no upscale/crop/flip/rotation",
+      "source_pixels_per_native_pixel": 1.0,
+      "full_scene_owner_exception": "docs/OWNER_PHOTO_WORLD_20261113.md",
+      "prompt_path": "game_factory/environment/ART-0052/v003/requests/stormwatch_overlook.txt",
+      "prompt_text": "ART-0052 scene STORMWATCH OVERLOOK. ONE complete1536x1024 opaque high-detail pixel-art SHINING FORCE GAME MAP. Match attached room and coastal trail's FIXED ORTHOGRAPHIC high3/4 overhead camera and same-size AXIS-ALIGNED SQUARE grass/rock/earth terrain blocks around64px all across map. No horizon or vanishing point, no cinematic perspective, no narrowing far path, no diamond/isometric grid. NEW DISTINCT LOCATION: an OPEN windswept natural CLIFFTOP, not another enclosed forest. Pale rugged limestone rock shelves with thin green turf, wild grass clumps and a few white flowers, only2-3SMALL wind-bent trees near outer corners, no giant forest trunks framing every side. Spectacular vivid turquoise SEA fills LEFT and upper-left lower level, with tall natural sea stacks viewed in orthographic game scale, natural cliff front faces below platform. Broad square-block walk terrain enters BOTTOM CENTRE around(768,1024), climbs gentle low natural rock steps into a roomy empty lookout near(768,520), then an open3-block-wide rocky path leads to RIGHT EDGE around(1536,560). Leave central view and both approaches unobstructed. Ground seams/moss lips make square game-terrain cells readable, but material is beautifully detailed and naturally weathered, not flat placeholders or a UI grid. Clear same scale from foreground to upper cells. Rich bright afternoon upper-left light, blue sea and warm stone palette matching room. STORY Hidden Island wild and hidden, no human settlement: no lighthouse, tower, shrine, statues, maintained parapet, benches, signs, posts, banners, gold/cobalt medallions, boats or buildings. No people, creatures or dragons baked into art; no storm/lightning/sword/bones/runes/reveals. No letters, UI, labels, watermark, border, panels, collage or sprite sheet. One beautiful open high-ground coastal map.\n",
+      "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+      "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": true,
+      "quality_status": "runtime_integrated_needs_map_review",
+      "asset_kind": "complete_world_background",
+      "reusable_as_piece": false,
+      "story_reference_path": "docs/design/STORY_CANON_AR.md",
+      "story_reference_sha256": "180f831e180eec76049dad5a0effc38ddbfce9b069b8390e3bcb130e532cc188",
+      "facing": "same fixed south-looking-north orthographic three-quarter view as hero room",
+      "visual_grid_note": "painted square ground blocks approximately64px; authored collision subgrid32px as room, not a claim of exact pixel-perfect generated seams",
+      "navigation_annotation": "manual conservative walk polygons over visible unobstructed ground; not extracted automatically from colour"
+    },
+    {
+      "id": "hidden_island_bone_tide_shore",
+      "request_id": "ART-0052",
+      "master_path": "assets_hd/background/hidden_island_grid_painted/v001/hidden_island_bone_tide_shore.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0052/hidden_island_bone_tide_shore.png",
+      "runtime_path": "map_factory/painted_worlds/hidden_island/v001/hidden_island_bone_tide_shore.png",
+      "sha256": "9aebc761cbc2f2c8e6ded37d8facc0410cb126fb51d0ca78af9a156f8d4962d4",
+      "master_sha256": "9aebc761cbc2f2c8e6ded37d8facc0410cb126fb51d0ca78af9a156f8d4962d4",
+      "runtime_sha256": "f3359b9ca1a5395c2b42e4c4f93e00b0ea5bda7a475c516c49a8cc8aeb09ef33",
+      "delivery_sha256": "f3359b9ca1a5395c2b42e4c4f93e00b0ea5bda7a475c516c49a8cc8aeb09ef33",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "origin": [
+        768.0,
+        1023
+      ],
+      "origin_rule": "full-scene bottom centre; not a character or prop foot anchor",
+      "runtime_origin": [
+        0,
+        0
+      ],
+      "native_canvas": [
+        1536,
+        1024
+      ],
+      "runtime_mode": "RGBA",
+      "delivery_mode": "RGBA",
+      "native_method": "RGB master unchanged; lossless RGBA export adds alpha255 only; exact RGB bytes; source1:1, no upscale/crop/flip/rotation",
+      "source_pixels_per_native_pixel": 1.0,
+      "full_scene_owner_exception": "docs/OWNER_PHOTO_WORLD_20261113.md",
+      "prompt_path": "game_factory/environment/ART-0052/v003/requests/bone_tide_shore.txt",
+      "prompt_text": "ART-0052 scene BONE-TIDE SHORE BEFORE THE STORM. ONE full-bleed1536x1024 opaque high-detail pixel-art Shining Force game map, same FIXED ORTHOGRAPHIC elevated3/4 view and same-size axis-aligned SQUARE SAND/ROCK/GRASS terrain blocks as attached map. No horizon line or vanishing point, no perspective-shrinking cells, no diamond/isometric floor. NEW DISTINCT LOCATION: a WILD ROCKY TURQUOISE COVE with a broad sandy beach on CENTRE/RIGHT, weathered pale limestone outcrops, natural shell fragments, driftwood and seaweed at edges, untamed dune grass, white tiny flowers and fern/root growth near upper rocks. Calm glittering turquoise sea and foamy waterline along LOWER LEFT and bottom edge, no grid drawn on the water. Main walk ground is generous contiguous warm SAND BLOCKS with natural detailed granular material and readable subtle square terrain boundaries, rough rock blocks at its upper side, not a paved manmade plaza. Clear routes: a narrow3-block-wide EARTH/SAND PATH enters TOP CENTRE near(768,0) through wild vegetation and reaches beach centre near(850,550); a separate3-block-wide NATURAL ROCK SHELF enters LEFT EDGE around(0,480), stays above the water and connects to the same central beach. Both routes must actually reach image edges on solid walkable ground. Keep centre and lower-middle beach open and free of obstacles, sea stays visibly outside safe ground. Native tactical game scale: identical ground-block sizes top/bottom, same scale as reference. Rich bright upper-left daylight, sharp luxurious pixel clusters and vivid coastal colour. STORY opening baseline: storm has NOT exposed the sword or bones yet, NO giant bones, skeletons, sword, magic runes, enemies, dragons or plot reveals. NO docks, boats, buildings, furniture, fences, lantern posts, banners, human settlement, people, characters, UI, labels, letters, text, watermark, borders, montage or sprite sheet. One cohesive beautiful untamed exploration beach only.\n",
+      "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+      "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "production_active": true,
+      "quality_status": "runtime_integrated_needs_map_review",
+      "asset_kind": "complete_world_background",
+      "reusable_as_piece": false,
+      "story_reference_path": "docs/design/STORY_CANON_AR.md",
+      "story_reference_sha256": "180f831e180eec76049dad5a0effc38ddbfce9b069b8390e3bcb130e532cc188",
+      "facing": "same fixed south-looking-north orthographic three-quarter view as hero room",
+      "visual_grid_note": "painted square ground blocks approximately64px; authored collision subgrid32px as room, not a claim of exact pixel-perfect generated seams",
+      "navigation_annotation": "manual conservative walk polygons over visible unobstructed ground; not extracted automatically from colour"
+    }
+  ],
+  "rejected_attempts": [],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0052/hidden_island_home_descent.png",
+      "sha256": "76cbf330b8993364f30a556f6e0c9e65235e5b9391278586ef1edf352770e951"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0052/hidden_island_mossveil_edge.png",
+      "sha256": "f5a5a32f88f7ea9af27327c9d1752c9b749c52308342dc45c37e190782ad2f47"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0052/hidden_island_mossveil_roots.png",
+      "sha256": "79f9ef17fdcf5146c8af1522945df0031a8ed9f019fd5d9dd70e85f394a40d8b"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0052/hidden_island_stormwatch_ascent.png",
+      "sha256": "4a866006b360fc6dca34e796282d3e906c70f23bd194a91a0caf6564e913eb67"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0052/hidden_island_stormwatch_overlook.png",
+      "sha256": "fff6242fc582a2dfa4240a222ec517c9bbf3d1e5ec2ab1af955fefe19c3a36ed"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0052/hidden_island_bone_tide_shore.png",
+      "sha256": "f3359b9ca1a5395c2b42e4c4f93e00b0ea5bda7a475c516c49a8cc8aeb09ef33"
+    }
+  ],
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "production_active": true,
+  "quality_status": "runtime_integrated_needs_map_review",
+  "generation_cache_required": false,
+  "generation_count": 6,
+  "total_generation_calls_in_request": 14,
+  "retained_earlier_candidate_count": 8,
+  "full_scene_exception": "docs/OWNER_PHOTO_WORLD_20261113.md",
+  "world_path": "map_factory/painted_worlds/hidden_island/v001/world.json",
+  "world_sha256": "9aaa0280929b0e43164e85c5bd307145b64c2022e4b6006b65279b84e782373d"
+}

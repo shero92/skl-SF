@@ -1,0 +1,4135 @@
+{
+  "schema_version": 1,
+  "world_id": "hidden_island_opening",
+  "request_id": "ART-0052",
+  "default_zone": "home_descent",
+  "room_scene": "res://scenes/main.tscn",
+  "camera_zoom": 0.84375,
+  "hero_scale": 1.2,
+  "hero_height_if_supported": 128,
+  "geometry_reference": {
+    "room_map": "hero_room_01",
+    "exit_side": "south",
+    "first_scene_arrival_side": "north",
+    "room_trigger": [
+      704,
+      864,
+      128,
+      64
+    ],
+    "room_return": [
+      768,
+      832
+    ],
+    "first_scene_spawn": [
+      768,
+      288
+    ]
+  },
+  "story_canon": "docs/design/STORY_CANON_AR.md",
+  "zones": {
+    "home_descent": {
+      "id": "home_descent",
+      "name": "Below Hero Room",
+      "background": "res://map_factory/painted_worlds/hidden_island/v001/hidden_island_home_descent.png",
+      "background_sha256": "76cbf330b8993364f30a556f6e0c9e65235e5b9391278586ef1edf352770e951",
+      "canvas_size": [
+        1536,
+        1024
+      ],
+      "spawn": [
+        768,
+        288
+      ],
+      "landmark": [
+        768,
+        512
+      ],
+      "walk_polygons": [
+        [
+          [
+            704,
+            0
+          ],
+          [
+            832,
+            0
+          ],
+          [
+            832,
+            224
+          ],
+          [
+            864,
+            288
+          ],
+          [
+            896,
+            480
+          ],
+          [
+            928,
+            704
+          ],
+          [
+            960,
+            1024
+          ],
+          [
+            736,
+            1024
+          ],
+          [
+            672,
+            704
+          ],
+          [
+            640,
+            480
+          ],
+          [
+            672,
+            320
+          ],
+          [
+            704,
+            224
+          ]
+        ]
+      ],
+      "navigation": {
+        "schema_version": 1,
+        "origin": [
+          0,
+          0
+        ],
+        "cell_size": 32,
+        "grid_size": [
+          48,
+          32
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "safe_row_0_0",
+            "rect": [
+              22,
+              0,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_1_0",
+            "rect": [
+              22,
+              1,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_2_0",
+            "rect": [
+              22,
+              2,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_3_0",
+            "rect": [
+              22,
+              3,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_4_0",
+            "rect": [
+              22,
+              4,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_5_0",
+            "rect": [
+              22,
+              5,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_6_0",
+            "rect": [
+              22,
+              6,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_7_0",
+            "rect": [
+              22,
+              7,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_8_0",
+            "rect": [
+              22,
+              8,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_9_0",
+            "rect": [
+              22,
+              9,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_10_0",
+            "rect": [
+              21,
+              10,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_11_0",
+            "rect": [
+              21,
+              11,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_12_0",
+            "rect": [
+              21,
+              12,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_13_0",
+            "rect": [
+              21,
+              13,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_14_0",
+            "rect": [
+              21,
+              14,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_15_0",
+            "rect": [
+              21,
+              15,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_16_0",
+            "rect": [
+              21,
+              16,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_17_0",
+            "rect": [
+              21,
+              17,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_18_0",
+            "rect": [
+              21,
+              18,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_19_0",
+            "rect": [
+              21,
+              19,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_20_0",
+            "rect": [
+              21,
+              20,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_21_0",
+            "rect": [
+              21,
+              21,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_22_0",
+            "rect": [
+              22,
+              22,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_23_0",
+            "rect": [
+              22,
+              23,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_24_0",
+            "rect": [
+              22,
+              24,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_25_0",
+            "rect": [
+              22,
+              25,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_26_0",
+            "rect": [
+              22,
+              26,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_27_0",
+            "rect": [
+              23,
+              27,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_28_0",
+            "rect": [
+              23,
+              28,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_29_0",
+            "rect": [
+              23,
+              29,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_30_0",
+            "rect": [
+              23,
+              30,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_31_0",
+            "rect": [
+              23,
+              31,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [],
+        "links": []
+      },
+      "portals": [
+        {
+          "id": "room_stairs",
+          "rect": [
+            704,
+            32,
+            128,
+            64
+          ],
+          "target": "room"
+        },
+        {
+          "id": "forest",
+          "rect": [
+            736,
+            960,
+            128,
+            64
+          ],
+          "target": "mossveil_edge",
+          "arrival": [
+            768,
+            96
+          ]
+        }
+      ],
+      "walk_cells": 185,
+      "story_phase": "opening_before_storm_and_sword_reveal",
+      "story_location": "Hero's Home exterior"
+    },
+    "mossveil_edge": {
+      "id": "mossveil_edge",
+      "name": "Mossveil Refuge — forest edge",
+      "background": "res://map_factory/painted_worlds/hidden_island/v001/hidden_island_mossveil_edge.png",
+      "background_sha256": "f5a5a32f88f7ea9af27327c9d1752c9b749c52308342dc45c37e190782ad2f47",
+      "canvas_size": [
+        1536,
+        1024
+      ],
+      "spawn": [
+        768,
+        96
+      ],
+      "landmark": [
+        768,
+        544
+      ],
+      "walk_polygons": [
+        [
+          [
+            704,
+            0
+          ],
+          [
+            832,
+            0
+          ],
+          [
+            864,
+            192
+          ],
+          [
+            832,
+            288
+          ],
+          [
+            768,
+            384
+          ],
+          [
+            864,
+            512
+          ],
+          [
+            896,
+            640
+          ],
+          [
+            928,
+            768
+          ],
+          [
+            896,
+            1024
+          ],
+          [
+            704,
+            1024
+          ],
+          [
+            672,
+            832
+          ],
+          [
+            640,
+            704
+          ],
+          [
+            608,
+            576
+          ],
+          [
+            608,
+            416
+          ],
+          [
+            640,
+            288
+          ],
+          [
+            672,
+            192
+          ]
+        ],
+        [
+          [
+            416,
+            352
+          ],
+          [
+            640,
+            320
+          ],
+          [
+            768,
+            384
+          ],
+          [
+            800,
+            544
+          ],
+          [
+            736,
+            640
+          ],
+          [
+            448,
+            608
+          ],
+          [
+            384,
+            512
+          ]
+        ],
+        [
+          [
+            800,
+            512
+          ],
+          [
+            1056,
+            544
+          ],
+          [
+            1216,
+            512
+          ],
+          [
+            1344,
+            544
+          ],
+          [
+            1344,
+            608
+          ],
+          [
+            1184,
+            640
+          ],
+          [
+            1024,
+            640
+          ],
+          [
+            864,
+            608
+          ]
+        ]
+      ],
+      "navigation": {
+        "schema_version": 1,
+        "origin": [
+          0,
+          0
+        ],
+        "cell_size": 32,
+        "grid_size": [
+          48,
+          32
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "safe_row_0_0",
+            "rect": [
+              22,
+              0,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_1_0",
+            "rect": [
+              22,
+              1,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_2_0",
+            "rect": [
+              22,
+              2,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_3_0",
+            "rect": [
+              22,
+              3,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_4_0",
+            "rect": [
+              22,
+              4,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_5_0",
+            "rect": [
+              22,
+              5,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_6_0",
+            "rect": [
+              21,
+              6,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_7_0",
+            "rect": [
+              21,
+              7,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_8_0",
+            "rect": [
+              21,
+              8,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_9_0",
+            "rect": [
+              20,
+              9,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_10_0",
+            "rect": [
+              20,
+              10,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_11_0",
+            "rect": [
+              13,
+              11,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_12_0",
+            "rect": [
+              13,
+              12,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_13_0",
+            "rect": [
+              13,
+              13,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_14_0",
+            "rect": [
+              13,
+              14,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_15_0",
+            "rect": [
+              13,
+              15,
+              13,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_16_0",
+            "rect": [
+              13,
+              16,
+              14,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_17_0",
+            "rect": [
+              14,
+              17,
+              28,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_18_0",
+            "rect": [
+              14,
+              18,
+              28,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_19_0",
+            "rect": [
+              20,
+              19,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_19_1",
+            "rect": [
+              32,
+              19,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_20_0",
+            "rect": [
+              20,
+              20,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_21_0",
+            "rect": [
+              20,
+              21,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_22_0",
+            "rect": [
+              21,
+              22,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_23_0",
+            "rect": [
+              21,
+              23,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_24_0",
+            "rect": [
+              21,
+              24,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_25_0",
+            "rect": [
+              21,
+              25,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_26_0",
+            "rect": [
+              22,
+              26,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_27_0",
+            "rect": [
+              22,
+              27,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_28_0",
+            "rect": [
+              22,
+              28,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_29_0",
+            "rect": [
+              22,
+              29,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_30_0",
+            "rect": [
+              22,
+              30,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_31_0",
+            "rect": [
+              22,
+              31,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [],
+        "links": []
+      },
+      "portals": [
+        {
+          "id": "home",
+          "rect": [
+            704,
+            0,
+            128,
+            64
+          ],
+          "target": "home_descent",
+          "arrival": [
+            800,
+            928
+          ]
+        },
+        {
+          "id": "roots",
+          "rect": [
+            704,
+            960,
+            160,
+            64
+          ],
+          "target": "mossveil_roots",
+          "arrival": [
+            768,
+            96
+          ]
+        }
+      ],
+      "walk_cells": 268,
+      "story_phase": "opening_before_storm_and_sword_reveal",
+      "story_location": "Mossveil Refuge"
+    },
+    "mossveil_roots": {
+      "id": "mossveil_roots",
+      "name": "Mossveil Refuge — roots",
+      "background": "res://map_factory/painted_worlds/hidden_island/v001/hidden_island_mossveil_roots.png",
+      "background_sha256": "79f9ef17fdcf5146c8af1522945df0031a8ed9f019fd5d9dd70e85f394a40d8b",
+      "canvas_size": [
+        1536,
+        1024
+      ],
+      "spawn": [
+        768,
+        96
+      ],
+      "landmark": [
+        768,
+        576
+      ],
+      "walk_polygons": [
+        [
+          [
+            704,
+            0
+          ],
+          [
+            832,
+            0
+          ],
+          [
+            832,
+            192
+          ],
+          [
+            768,
+            256
+          ],
+          [
+            736,
+            384
+          ],
+          [
+            832,
+            448
+          ],
+          [
+            896,
+            512
+          ],
+          [
+            896,
+            640
+          ],
+          [
+            704,
+            704
+          ],
+          [
+            576,
+            640
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            416
+          ],
+          [
+            576,
+            288
+          ],
+          [
+            640,
+            192
+          ]
+        ],
+        [
+          [
+            736,
+            512
+          ],
+          [
+            1536,
+            512
+          ],
+          [
+            1536,
+            608
+          ],
+          [
+            896,
+            640
+          ],
+          [
+            736,
+            640
+          ]
+        ],
+        [
+          [
+            640,
+            544
+          ],
+          [
+            864,
+            544
+          ],
+          [
+            896,
+            832
+          ],
+          [
+            832,
+            1024
+          ],
+          [
+            672,
+            1024
+          ],
+          [
+            640,
+            832
+          ],
+          [
+            544,
+            736
+          ]
+        ],
+        [
+          [
+            320,
+            512
+          ],
+          [
+            608,
+            448
+          ],
+          [
+            768,
+            512
+          ],
+          [
+            768,
+            640
+          ],
+          [
+            544,
+            640
+          ],
+          [
+            384,
+            608
+          ]
+        ]
+      ],
+      "navigation": {
+        "schema_version": 1,
+        "origin": [
+          0,
+          0
+        ],
+        "cell_size": 32,
+        "grid_size": [
+          48,
+          32
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "safe_row_0_0",
+            "rect": [
+              22,
+              0,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_1_0",
+            "rect": [
+              22,
+              1,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_2_0",
+            "rect": [
+              22,
+              2,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_3_0",
+            "rect": [
+              21,
+              3,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_4_0",
+            "rect": [
+              21,
+              4,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_5_0",
+            "rect": [
+              21,
+              5,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_6_0",
+            "rect": [
+              20,
+              6,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_7_0",
+            "rect": [
+              20,
+              7,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_8_0",
+            "rect": [
+              19,
+              8,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_9_0",
+            "rect": [
+              18,
+              9,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_10_0",
+            "rect": [
+              18,
+              10,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_11_0",
+            "rect": [
+              17,
+              11,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_12_0",
+            "rect": [
+              17,
+              12,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_13_0",
+            "rect": [
+              16,
+              13,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_14_0",
+            "rect": [
+              16,
+              14,
+              10,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_15_0",
+            "rect": [
+              15,
+              15,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_16_0",
+            "rect": [
+              11,
+              16,
+              37,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_17_0",
+            "rect": [
+              12,
+              17,
+              36,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_18_0",
+            "rect": [
+              12,
+              18,
+              36,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_19_0",
+            "rect": [
+              17,
+              19,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_20_0",
+            "rect": [
+              19,
+              20,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_21_0",
+            "rect": [
+              18,
+              21,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_22_0",
+            "rect": [
+              18,
+              22,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_23_0",
+            "rect": [
+              18,
+              23,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_24_0",
+            "rect": [
+              19,
+              24,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_25_0",
+            "rect": [
+              20,
+              25,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_26_0",
+            "rect": [
+              21,
+              26,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_27_0",
+            "rect": [
+              21,
+              27,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_28_0",
+            "rect": [
+              21,
+              28,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_29_0",
+            "rect": [
+              21,
+              29,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_30_0",
+            "rect": [
+              21,
+              30,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_31_0",
+            "rect": [
+              21,
+              31,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [],
+        "links": []
+      },
+      "portals": [
+        {
+          "id": "forest_edge",
+          "rect": [
+            704,
+            0,
+            128,
+            64
+          ],
+          "target": "mossveil_edge",
+          "arrival": [
+            768,
+            928
+          ]
+        },
+        {
+          "id": "ridge",
+          "rect": [
+            1472,
+            512,
+            64,
+            96
+          ],
+          "target": "stormwatch_ascent",
+          "arrival": [
+            96,
+            704
+          ]
+        },
+        {
+          "id": "shore_path",
+          "rect": [
+            704,
+            960,
+            128,
+            64
+          ],
+          "target": "bone_tide_shore",
+          "arrival": [
+            768,
+            96
+          ]
+        }
+      ],
+      "walk_cells": 295,
+      "story_phase": "opening_before_storm_and_sword_reveal",
+      "story_location": "Mossveil Refuge"
+    },
+    "stormwatch_ascent": {
+      "id": "stormwatch_ascent",
+      "name": "Stormwatch Path — ascent",
+      "background": "res://map_factory/painted_worlds/hidden_island/v001/hidden_island_stormwatch_ascent.png",
+      "background_sha256": "4a866006b360fc6dca34e796282d3e906c70f23bd194a91a0caf6564e913eb67",
+      "canvas_size": [
+        1536,
+        1024
+      ],
+      "spawn": [
+        96,
+        704
+      ],
+      "landmark": [
+        768,
+        608
+      ],
+      "walk_polygons": [
+        [
+          [
+            0,
+            672
+          ],
+          [
+            256,
+            640
+          ],
+          [
+            480,
+            576
+          ],
+          [
+            736,
+            512
+          ],
+          [
+            864,
+            512
+          ],
+          [
+            864,
+            672
+          ],
+          [
+            640,
+            704
+          ],
+          [
+            384,
+            736
+          ],
+          [
+            192,
+            768
+          ],
+          [
+            0,
+            768
+          ]
+        ],
+        [
+          [
+            704,
+            0
+          ],
+          [
+            832,
+            0
+          ],
+          [
+            864,
+            192
+          ],
+          [
+            896,
+            384
+          ],
+          [
+            928,
+            512
+          ],
+          [
+            864,
+            704
+          ],
+          [
+            672,
+            704
+          ],
+          [
+            608,
+            576
+          ],
+          [
+            640,
+            448
+          ],
+          [
+            704,
+            320
+          ]
+        ],
+        [
+          [
+            672,
+            576
+          ],
+          [
+            864,
+            576
+          ],
+          [
+            896,
+            832
+          ],
+          [
+            832,
+            1024
+          ],
+          [
+            704,
+            1024
+          ],
+          [
+            640,
+            832
+          ]
+        ]
+      ],
+      "navigation": {
+        "schema_version": 1,
+        "origin": [
+          0,
+          0
+        ],
+        "cell_size": 32,
+        "grid_size": [
+          48,
+          32
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "safe_row_0_0",
+            "rect": [
+              22,
+              0,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_1_0",
+            "rect": [
+              22,
+              1,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_2_0",
+            "rect": [
+              22,
+              2,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_3_0",
+            "rect": [
+              22,
+              3,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_4_0",
+            "rect": [
+              22,
+              4,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_5_0",
+            "rect": [
+              22,
+              5,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_6_0",
+            "rect": [
+              22,
+              6,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_7_0",
+            "rect": [
+              22,
+              7,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_8_0",
+            "rect": [
+              22,
+              8,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_9_0",
+            "rect": [
+              22,
+              9,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_10_0",
+            "rect": [
+              22,
+              10,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_11_0",
+            "rect": [
+              22,
+              11,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_12_0",
+            "rect": [
+              21,
+              12,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_13_0",
+            "rect": [
+              21,
+              13,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_14_0",
+            "rect": [
+              20,
+              14,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_15_0",
+            "rect": [
+              20,
+              15,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_16_0",
+            "rect": [
+              20,
+              16,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_17_0",
+            "rect": [
+              19,
+              17,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_18_0",
+            "rect": [
+              15,
+              18,
+              13,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_19_0",
+            "rect": [
+              12,
+              19,
+              15,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_20_0",
+            "rect": [
+              8,
+              20,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_21_0",
+            "rect": [
+              0,
+              21,
+              20,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_21_1",
+            "rect": [
+              21,
+              21,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_22_0",
+            "rect": [
+              0,
+              22,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_22_1",
+            "rect": [
+              21,
+              22,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_23_0",
+            "rect": [
+              0,
+              23,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_23_1",
+            "rect": [
+              21,
+              23,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_24_0",
+            "rect": [
+              21,
+              24,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_25_0",
+            "rect": [
+              21,
+              25,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_26_0",
+            "rect": [
+              21,
+              26,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_27_0",
+            "rect": [
+              21,
+              27,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_28_0",
+            "rect": [
+              21,
+              28,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_29_0",
+            "rect": [
+              22,
+              29,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_30_0",
+            "rect": [
+              22,
+              30,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_31_0",
+            "rect": [
+              22,
+              31,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [],
+        "links": []
+      },
+      "portals": [
+        {
+          "id": "forest_west",
+          "rect": [
+            0,
+            672,
+            64,
+            96
+          ],
+          "target": "mossveil_roots",
+          "arrival": [
+            1440,
+            576
+          ]
+        },
+        {
+          "id": "forest_south",
+          "rect": [
+            704,
+            960,
+            128,
+            64
+          ],
+          "target": "mossveil_roots",
+          "arrival": [
+            1440,
+            576
+          ]
+        },
+        {
+          "id": "overlook",
+          "rect": [
+            704,
+            0,
+            128,
+            64
+          ],
+          "target": "stormwatch_overlook",
+          "arrival": [
+            768,
+            928
+          ]
+        }
+      ],
+      "walk_cells": 246,
+      "story_phase": "opening_before_storm_and_sword_reveal",
+      "story_location": "Stormwatch Path"
+    },
+    "stormwatch_overlook": {
+      "id": "stormwatch_overlook",
+      "name": "Stormwatch Path — overlook",
+      "background": "res://map_factory/painted_worlds/hidden_island/v001/hidden_island_stormwatch_overlook.png",
+      "background_sha256": "fff6242fc582a2dfa4240a222ec517c9bbf3d1e5ec2ab1af955fefe19c3a36ed",
+      "canvas_size": [
+        1536,
+        1024
+      ],
+      "spawn": [
+        768,
+        928
+      ],
+      "landmark": [
+        800,
+        512
+      ],
+      "walk_polygons": [
+        [
+          [
+            640,
+            192
+          ],
+          [
+            832,
+            192
+          ],
+          [
+            928,
+            288
+          ],
+          [
+            1024,
+            416
+          ],
+          [
+            960,
+            704
+          ],
+          [
+            832,
+            800
+          ],
+          [
+            640,
+            768
+          ],
+          [
+            512,
+            640
+          ],
+          [
+            416,
+            608
+          ],
+          [
+            416,
+            480
+          ],
+          [
+            544,
+            416
+          ],
+          [
+            608,
+            320
+          ]
+        ],
+        [
+          [
+            640,
+            640
+          ],
+          [
+            864,
+            640
+          ],
+          [
+            864,
+            1024
+          ],
+          [
+            640,
+            1024
+          ]
+        ],
+        [
+          [
+            768,
+            448
+          ],
+          [
+            1536,
+            448
+          ],
+          [
+            1536,
+            576
+          ],
+          [
+            864,
+            576
+          ]
+        ]
+      ],
+      "navigation": {
+        "schema_version": 1,
+        "origin": [
+          0,
+          0
+        ],
+        "cell_size": 32,
+        "grid_size": [
+          48,
+          32
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "safe_row_6_0",
+            "rect": [
+              20,
+              6,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_7_0",
+            "rect": [
+              20,
+              7,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_8_0",
+            "rect": [
+              20,
+              8,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_9_0",
+            "rect": [
+              20,
+              9,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_10_0",
+            "rect": [
+              19,
+              10,
+              10,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_11_0",
+            "rect": [
+              19,
+              11,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_12_0",
+            "rect": [
+              18,
+              12,
+              13,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_13_0",
+            "rect": [
+              17,
+              13,
+              14,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_14_0",
+            "rect": [
+              15,
+              14,
+              33,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_15_0",
+            "rect": [
+              13,
+              15,
+              35,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_16_0",
+            "rect": [
+              13,
+              16,
+              35,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_17_0",
+            "rect": [
+              13,
+              17,
+              35,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_18_0",
+            "rect": [
+              13,
+              18,
+              17,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_19_0",
+            "rect": [
+              16,
+              19,
+              14,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_20_0",
+            "rect": [
+              17,
+              20,
+              13,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_21_0",
+            "rect": [
+              18,
+              21,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_22_0",
+            "rect": [
+              19,
+              22,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_23_0",
+            "rect": [
+              20,
+              23,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_24_0",
+            "rect": [
+              20,
+              24,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_25_0",
+            "rect": [
+              20,
+              25,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_26_0",
+            "rect": [
+              20,
+              26,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_27_0",
+            "rect": [
+              20,
+              27,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_28_0",
+            "rect": [
+              20,
+              28,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_29_0",
+            "rect": [
+              20,
+              29,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_30_0",
+            "rect": [
+              20,
+              30,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_31_0",
+            "rect": [
+              20,
+              31,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [],
+        "links": []
+      },
+      "portals": [
+        {
+          "id": "ascent",
+          "rect": [
+            704,
+            960,
+            128,
+            64
+          ],
+          "target": "stormwatch_ascent",
+          "arrival": [
+            768,
+            96
+          ]
+        },
+        {
+          "id": "shore",
+          "rect": [
+            1472,
+            448,
+            64,
+            128
+          ],
+          "target": "bone_tide_shore",
+          "arrival": [
+            96,
+            416
+          ]
+        }
+      ],
+      "walk_cells": 344,
+      "story_phase": "opening_before_storm_and_sword_reveal",
+      "story_location": "Stormwatch Path"
+    },
+    "bone_tide_shore": {
+      "id": "bone_tide_shore",
+      "name": "Bone-Tide Shore — before the storm",
+      "background": "res://map_factory/painted_worlds/hidden_island/v001/hidden_island_bone_tide_shore.png",
+      "background_sha256": "f3359b9ca1a5395c2b42e4c4f93e00b0ea5bda7a475c516c49a8cc8aeb09ef33",
+      "canvas_size": [
+        1536,
+        1024
+      ],
+      "spawn": [
+        768,
+        96
+      ],
+      "landmark": [
+        896,
+        640
+      ],
+      "walk_polygons": [
+        [
+          [
+            704,
+            0
+          ],
+          [
+            864,
+            0
+          ],
+          [
+            896,
+            384
+          ],
+          [
+            1024,
+            448
+          ],
+          [
+            960,
+            576
+          ],
+          [
+            640,
+            576
+          ],
+          [
+            640,
+            384
+          ]
+        ],
+        [
+          [
+            0,
+            384
+          ],
+          [
+            128,
+            384
+          ],
+          [
+            288,
+            432
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            704,
+            544
+          ],
+          [
+            704,
+            640
+          ],
+          [
+            448,
+            608
+          ],
+          [
+            256,
+            512
+          ],
+          [
+            128,
+            448
+          ],
+          [
+            0,
+            448
+          ]
+        ],
+        [
+          [
+            512,
+            416
+          ],
+          [
+            1120,
+            416
+          ],
+          [
+            1376,
+            512
+          ],
+          [
+            1376,
+            768
+          ],
+          [
+            1216,
+            864
+          ],
+          [
+            800,
+            832
+          ],
+          [
+            448,
+            736
+          ],
+          [
+            288,
+            608
+          ],
+          [
+            384,
+            512
+          ]
+        ]
+      ],
+      "navigation": {
+        "schema_version": 1,
+        "origin": [
+          0,
+          0
+        ],
+        "cell_size": 32,
+        "grid_size": [
+          48,
+          32
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "safe_row_0_0",
+            "rect": [
+              22,
+              0,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_1_0",
+            "rect": [
+              22,
+              1,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_2_0",
+            "rect": [
+              22,
+              2,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_3_0",
+            "rect": [
+              22,
+              3,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_4_0",
+            "rect": [
+              22,
+              4,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_5_0",
+            "rect": [
+              22,
+              5,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_6_0",
+            "rect": [
+              21,
+              6,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_7_0",
+            "rect": [
+              21,
+              7,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_8_0",
+            "rect": [
+              21,
+              8,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_9_0",
+            "rect": [
+              21,
+              9,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_10_0",
+            "rect": [
+              21,
+              10,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_11_0",
+            "rect": [
+              21,
+              11,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_12_0",
+            "rect": [
+              0,
+              12,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_12_1",
+            "rect": [
+              20,
+              12,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_13_0",
+            "rect": [
+              0,
+              13,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_13_1",
+            "rect": [
+              16,
+              13,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_14_0",
+            "rect": [
+              6,
+              14,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_14_1",
+            "rect": [
+              15,
+              14,
+              22,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_15_0",
+            "rect": [
+              8,
+              15,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_15_1",
+            "rect": [
+              14,
+              15,
+              26,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_16_0",
+            "rect": [
+              10,
+              16,
+              33,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_17_0",
+            "rect": [
+              11,
+              17,
+              32,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_18_0",
+            "rect": [
+              10,
+              18,
+              33,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_19_0",
+            "rect": [
+              11,
+              19,
+              32,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_20_0",
+            "rect": [
+              12,
+              20,
+              31,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_21_0",
+            "rect": [
+              13,
+              21,
+              30,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_22_0",
+            "rect": [
+              14,
+              22,
+              29,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_23_0",
+            "rect": [
+              18,
+              23,
+              25,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_24_0",
+            "rect": [
+              22,
+              24,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "safe_row_25_0",
+            "rect": [
+              25,
+              25,
+              14,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [],
+        "links": []
+      },
+      "portals": [
+        {
+          "id": "forest",
+          "rect": [
+            704,
+            0,
+            160,
+            64
+          ],
+          "target": "mossveil_roots",
+          "arrival": [
+            768,
+            928
+          ]
+        },
+        {
+          "id": "ridge",
+          "rect": [
+            0,
+            384,
+            64,
+            64
+          ],
+          "target": "stormwatch_overlook",
+          "arrival": [
+            1440,
+            512
+          ]
+        }
+      ],
+      "walk_cells": 439,
+      "story_phase": "opening_before_storm_and_sword_reveal",
+      "story_location": "Bone-Tide Shore"
+    }
+  },
+  "limitations": [
+    "Only manually annotated open ground is walkable; painted foreground vegetation is not a separate occlusion layer.",
+    "Pictures are complete scene art by owner instruction, not sources for cut-out reusable pieces.",
+    "Story events, NPCs, creatures and sword reveals are not baked into opening backgrounds."
+  ]
+}
