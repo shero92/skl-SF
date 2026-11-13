@@ -45,7 +45,8 @@ func run() -> void:
 	world.player.set_physics_process(false)
 	var hero_id: int = world.player.get_instance_id()
 	check(world.definition.zones.size()==6,"Six painted regions exist")
-	check(world.camera.zoom.is_equal_approx(Vector2.ONE*0.84375),"Camera uses same room zoom")
+	check(world.camera is FollowCamera and world.camera.follow and world.camera.fixed_zoom==0.84375,"The outdoor map has the dynamic follow camera; its fixed zoom is the room zoom")
+	check(world.camera.target==world.player and world.camera.bounds.size==Vector2(1536,1024),"The camera follows the hero inside the board")
 	for id: String in world.definition.zones:
 		world.enter_zone(id)
 		check(not world.player.navigation.is_cell_open(Vector2i.ZERO),"Unknown corner is blocked in "+id)

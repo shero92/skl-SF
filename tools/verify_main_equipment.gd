@@ -111,7 +111,10 @@ func _run() -> void:
 	_check(life.get_node_or_null("Shadow_bed") != null and life.get_node_or_null("Shadow_column_left_outer") != null, "tall objects cast shadows")
 	# Dynamic camera: it follows the hero, stays inside the painting, zooms in while he talks, V shows the whole room.
 	var cam: FollowCamera = _main._camera
-	_check(cam != null and cam.follow and cam.target == _main.player, "the painted room has a camera that follows the hero")
+	_check(cam != null and not cam.follow and cam.target == _main.player, "the hero room shows the whole room: its camera does not follow")
+	_check(absf(cam.zoom.x - 0.84375) < 0.01, "the room view is the full room (zoom %.3f)" % cam.zoom.x)
+	# The same camera, switched on as a map would: follow, bounds, talk zoom, overview, sway and push.
+	cam.configure({"follow": true, "zoom": 1.4, "talk_zoom": 1.8, "lead": 48, "smoothing": 5, "sway": 3, "step_kick": 0.012}, Rect2(0, 0, 1536, 1024))
 	_main.player.global_position = Vector2(720, 624)
 	cam.snap()
 	var centre_before: Vector2 = cam.global_position
@@ -134,12 +137,12 @@ func _run() -> void:
 	for i in 300:
 		cam._process(0.016)
 	_check(cam.overview and cam.zoom.x < 1.0 and cam.global_position.is_equal_approx(cam.bounds.get_center()), "V shows the whole room")
-	_main._unhandled_input(_key(KEY_V))
-	cam.snap()
+	cam.toggle_overview()
+	cam.configure({}, Rect2(0, 0, 1536, 1024))  # back to the room's own fixed view
 	_main.player.global_position = Vector2(720, 624)
 	# Cinematic feel: hop and camera push on each step, lens edge, parallax sea, dust.
 	var hop: HeroPlayer = _main.player
-	_check(hop.bounce_height > 0.0 and cam.kick_amount > 0.0 and cam.sway > 0.0, "the painted room has a step hop, a camera push and a sway")
+	_check(hop.bounce_height > 0.0, "the painted room has a step hop")
 	_check(_main._vignette != null and _main._vignette.visible and life.parallax > 0.0 and life.dust != null, "lens edge, parallax sea and dust motes are on")
 	hop.global_position = Vector2(720, 624)
 	hop.snap_to_grid()
