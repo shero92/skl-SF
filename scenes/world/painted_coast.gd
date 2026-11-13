@@ -35,11 +35,16 @@ func _ready() -> void:
 		source.set("figure_height",float(definition.hero_height_if_supported))
 		player.set("source_art",source)
 		player.add_child(source)
-	camera = Camera2D.new()
-	camera.name = "RoomMatchedCamera"
-	camera.zoom = Vector2.ONE*float(definition.camera_zoom)
+	# Outdoor maps use the dynamic camera: it follows the hero inside the current board, leads in his walking
+	# direction, zooms in while he talks and V shows the whole board. The hero room keeps its full fixed view.
+	var follower := FollowCamera.new()
+	follower.name = "RoomMatchedCamera"
+	follower.fixed_zoom = float(definition.camera_zoom)
+	follower.target = player
+	camera = follower
 	add_child(camera)
 	camera.make_current()
+	follower.configure(definition.get("camera", {}), Rect2(Vector2.ZERO, Vector2(1536, 1024)))
 	RenderingServer.set_default_clear_color(Color("087ccc"))
 	enter_zone(str(definition.default_zone))
 
@@ -53,9 +58,17 @@ func enter_zone(zone_id: String, arrival: Array = []) -> void:
 	player.position = Travel.point(zone.spawn if arrival.is_empty() else arrival)
 	player.velocity = Vector2.ZERO
 	assert(player.navigation.footprint_open(player.position))
-	camera.position = Travel.point(zone.canvas_size)*0.5
-	camera.reset_smoothing()
+	var board := Rect2(Vector2.ZERO, Travel.point(zone.canvas_size))
+	var follower := camera as FollowCamera
+	follower.bounds = board
+	follower.fixed_position = board.get_center()
+	follower.snap()
 	transitioning = false
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_V:
+		(camera as FollowCamera).toggle_overview() # V: the whole board, V again: follow the hero
+		get_viewport().set_input_as_handled()
 
 func available_portal() -> Dictionary:
 	if player==null or not player.movement_enabled or transitioning:return {}
