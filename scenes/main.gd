@@ -24,6 +24,7 @@ static var keep_photo_mode: bool = true  # the choice survives a visit to the ed
 var photo_mode: bool = false
 var photo_room: Dictionary = {}
 var _map_navigation: NavigationGrid
+var _camera: FollowCamera
 var _life: PhotoRoomLife
 var _mist: Polygon2D
 var _companion: Node2D
@@ -77,18 +78,21 @@ func _ready() -> void:
     entities.add_child(companion)
     _companion = companion
 
-    var camera := Camera2D.new()
-    camera.position = Vector2(768, 512)
+    _camera = FollowCamera.new()
+    _camera.name = "FollowCamera"
+    _camera.position = Vector2(768, 512)
     if room.has_meta("camera"):
         # Per-map view from the Map Factory snapshot: centre in canvas pixels plus zoom.
         var view: Dictionary = room.get_meta("camera")
-        camera.position = Vector2(float(view.get("x", 768)), float(view.get("y", 512)))
-        camera.zoom = Vector2.ONE * float(view.get("zoom", 1.0))
+        _camera.fixed_position = Vector2(float(view.get("x", 768)), float(view.get("y", 512)))
+        _camera.fixed_zoom = float(view.get("zoom", 1.0))
     if room.has_meta("background_color"):
         # A zoomed-out camera shows a margin beside the canvas; fill it with the map's own backdrop colour.
         RenderingServer.set_default_clear_color(room.get_meta("background_color"))
-    camera.enabled = true
-    add_child(camera)
+    _camera.target = player
+    _camera.enabled = true
+    add_child(_camera)
+    _camera.configure({}, Rect2(Vector2.ZERO, Vector2(1536, 1024)))
 
     dialogue = DialogueUI.new()
     add_child(dialogue)
@@ -157,6 +161,10 @@ func set_photo_mode(on: bool) -> bool:
     for shape in _room.find_children("*", "CollisionShape2D", true, false):
         if not entities.is_ancestor_of(shape):
             shape.set_deferred("disabled", on)
+    if _camera != null:
+        # The painted room has a camera that moves with the hero; the map's own room keeps its fixed view.
+        var painting_size: Vector2 = _photo.texture.get_size() if (on and _photo != null) else Vector2(1536, 1024)
+        _camera.configure(photo_room.get("camera", {}) if on else {}, Rect2(Vector2.ZERO, painting_size))
     if player != null:
         # Shining Force movement in the painted room: one square per press. The map room keeps free walking.
         player.grid_step = float(photo_room.get("hero_step", 0)) if on else 0.0
@@ -202,6 +210,11 @@ func set_photo_mode(on: bool) -> bool:
     return true
 
 
+func _process(_delta: float) -> void:
+    if _camera != null and dialogue != null:
+        _camera.talking = dialogue.is_open  # zoom in on the hero while he talks
+
+
 func _physics_process(_delta: float) -> void:
     if player != null and dialogue != null:
         player.movement_enabled = not dialogue.is_open and not is_equipment_open()
@@ -241,6 +254,10 @@ func _unhandled_input(event: InputEvent) -> void:
     if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F2:
         get_viewport().set_input_as_handled()
         get_tree().change_scene_to_file(EDITOR_SCENE)  # hands-on room editor; Esc there returns to the room
+        return
+    if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_V and _camera != null:
+        get_viewport().set_input_as_handled()
+        _camera.toggle_overview()  # V: the whole map, V again: back to following the hero
         return
     if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F3:
         get_viewport().set_input_as_handled()

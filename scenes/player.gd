@@ -25,6 +25,10 @@ const FACTORY_MANIFEST := "res://game_factory/character_manifest.json"
 static var _factory_frames: SpriteFrames
 static var _factory_anchor: Array = [48, 90]
 var facing: Vector2 = Vector2.DOWN
+
+## True while he is walking (a step in progress, or free movement this frame); the camera leads in his direction.
+func is_moving() -> bool:
+    return _step_time >= 0.0 or velocity != Vector2.ZERO
 var art: Sprite2D
 var _anim_id: String = ""
 var _elapsed: float = 0.0
