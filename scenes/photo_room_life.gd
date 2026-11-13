@@ -12,6 +12,7 @@ shader_type canvas_item;
 // No pixel warping (it frayed the painted edges). Long swells roll through the water as slow light and dark
 // bands; the painted foam lines pulse with the swell, so each wave seems to break and fall back along
 // the shore, and single pixels glint in the sun. Shapes never move: only brightness.
+uniform vec2 far_shift = vec2(0.0);  // the far sea lags behind the camera, in painting pixels
 bool is_water(vec4 c) { return c.b > c.r + 0.15 && c.b > c.g + 0.04; }
 bool is_foam(vec4 c) { return min(c.r, min(c.g, c.b)) > 0.58 && c.b > c.r - 0.03; }
 float hash(vec2 p) {
@@ -25,6 +26,8 @@ void fragment() {
 	// Two swells crossing at different angles and speeds.
 	float swell = 0.5 + 0.25 * sin(dot(at, vec2(0.011, 0.016)) - TIME * 0.85) + 0.25 * sin(dot(at, vec2(-0.007, 0.013)) - TIME * 0.6 + 2.0);
 	if (is_water(c)) {
+		vec4 far = texture(TEXTURE, UV - far_shift * TEXTURE_PIXEL_SIZE);
+		if (is_water(far)) { c = far; }  // depth: the water behind the room slides a little against the room
 		c.rgb *= 0.93 + 0.14 * swell;
 		float seed = hash(floor(at / 2.0));
 		float flash = smoothstep(0.985, 1.0, sin(TIME * (1.5 + seed * 2.5) + seed * 6.2832));
@@ -105,6 +108,10 @@ const BEHIND_HERO := 27   # above the painting and its shadows, below the hero
 const ABOVE_HERO := 40
 var depth_objects: Array[Polygon2D] = []
 var hero: Node2D
+var camera: Camera2D           # the follow camera; the far sea slides against it
+var parallax: float = 0.0      # share of the camera's offset from the room centre that the far sea shows
+var _sea_material: ShaderMaterial
+var dust: CPUParticles2D
 var hidden_amount: float = 0.0
 var _time: float = 0.0
 
@@ -168,6 +175,8 @@ func build(photo: Texture2D, definition: Dictionary) -> void:
 	var water := ShaderMaterial.new()
 	water.shader = Shader.new()
 	water.shader.code = SEA_SHADER
+	_sea_material = water
+	parallax = float(definition.get("cinematic", {}).get("parallax", 0.0))
 	for points: Array in definition.get("sea", []):
 		var sea := Polygon2D.new()
 		sea.name = "Sea"
@@ -236,6 +245,30 @@ func build(photo: Texture2D, definition: Dictionary) -> void:
 		soft.set_color(soft.get_point_count() - 1, Color(1, 1, 1, 0.0))
 		petals.color_ramp = soft
 		add_child(petals)
+	var motes: Dictionary = definition.get("dust", {})
+	if int(motes.get("amount", 0)) > 0:
+		var area: Array = motes.get("area", [0, 0, 1536, 1024])
+		dust = CPUParticles2D.new()
+		dust.name = "DustMotes"
+		dust.position = Vector2(float(area[0]) + float(area[2]) * 0.5, float(area[1]) + float(area[3]) * 0.5)
+		dust.amount = int(motes["amount"])
+		dust.lifetime = 7.0
+		dust.preprocess = 7.0
+		dust.emission_shape = CPUParticles2D.EMISSION_SHAPE_RECTANGLE
+		dust.emission_rect_extents = Vector2(float(area[2]), float(area[3])) * 0.5
+		dust.direction = Vector2(0.5, -1.0)
+		dust.spread = 60.0
+		dust.initial_velocity_min = 4.0
+		dust.initial_velocity_max = 12.0
+		dust.gravity = Vector2.ZERO
+		dust.scale_amount_min = 1.0
+		dust.scale_amount_max = 2.2
+		var glow := Gradient.new()
+		glow.set_color(0, Color(1.0, 0.93, 0.7, 0.0))
+		glow.add_point(0.3, Color(1.0, 0.93, 0.7, 0.75))
+		glow.set_color(glow.get_point_count() - 1, Color(1.0, 0.93, 0.7, 0.0))
+		dust.color_ramp = glow
+		add_child(dust)
 	var gradient := Gradient.new()
 	gradient.set_color(0, Color(1.0, 0.82, 0.45, 0.55))
 	gradient.set_color(1, Color(1.0, 0.7, 0.3, 0.0))
@@ -280,6 +313,9 @@ func build_mist(definition: Dictionary, size: Vector2) -> Polygon2D:
 
 func _process(delta: float) -> void:
 	_time += delta
+	if camera != null and _sea_material != null and parallax > 0.0:
+		var from_centre: Vector2 = camera.get_screen_center_position() - Vector2(768, 512)
+		_sea_material.set_shader_parameter("far_shift", from_centre * parallax)
 	if hero != null:
 		for object in depth_objects:
 			# Feet above the base line: he stands behind it, so the object is drawn over him.

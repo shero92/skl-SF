@@ -31,6 +31,8 @@ var figure_height: float = 128.0  # height on screen in room pixels
 var view_squash: float = 1.0
 ## A faint copy of the hero drawn above everything, shown only while a wall or plant hides him, so the owner always sees where he is.
 var ghost: Sprite2D
+## Height he is lifted off the floor during a step (set by the player), in room pixels.
+var lift: float = 0.0
 func show_ghost(on: bool) -> void:
 	if ghost != null:
 		ghost.visible = on and visible
@@ -105,6 +107,7 @@ func play(state: String, direction: String, delta: float) -> bool:
 	_sprite.position = -Vector2(frame["offset"].x * size, frame["offset"].y * size * view_squash)
 	ghost.texture = frame["texture"]
 	ghost.scale = _sprite.scale
+	_sprite.position.y -= lift
 	ghost.position = _sprite.position
 	visible = true
 	return true

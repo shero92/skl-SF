@@ -22,6 +22,16 @@ var fixed_position: Vector2 = Vector2(768, 512)
 var fixed_zoom: float = 1.0
 
 var _lead_now: Vector2 = Vector2.ZERO
+## Idle drift in pixels (a slow breathing sway) and the push added to the zoom by each step; 0 turns them off.
+var sway: float = 0.0
+var kick_amount: float = 0.0
+var _kick: float = 0.0
+var _clock: float = 0.0
+
+
+## Called when the hero lands a step: the view pushes in a touch and settles back.
+func kick() -> void:
+	_kick = kick_amount
 
 
 ## Settings from the photo room file, e.g. {"follow": true, "zoom": 1.15, "talk_zoom": 1.5, "lead": 48, "smoothing": 5}.
@@ -32,6 +42,8 @@ func configure(settings: Dictionary, map_bounds: Rect2) -> void:
 	talk_zoom = float(settings.get("talk_zoom", talk_zoom))
 	lead = float(settings.get("lead", lead))
 	smoothing = float(settings.get("smoothing", smoothing))
+	sway = float(settings.get("sway", 0.0))
+	kick_amount = float(settings.get("step_kick", 0.0))
 	var offset: Array = settings.get("focus_offset", [focus_offset.x, focus_offset.y])
 	focus_offset = Vector2(float(offset[0]), float(offset[1]))
 	snap()
@@ -94,6 +106,10 @@ func _process(delta: float) -> void:
 	if moving and target != null:
 		ahead = (target.get("facing") as Vector2) * lead
 	_lead_now = _lead_now.lerp(ahead, 1.0 - exp(-3.0 * delta))
-	var level := lerpf(zoom.x, desired_zoom(), 1.0 - exp(-zoom_smoothing * delta))
+	_clock += delta
+	_kick = lerpf(_kick, 0.0, 1.0 - exp(-7.0 * delta))
+	var level := lerpf(zoom.x, desired_zoom() + _kick, 1.0 - exp(-zoom_smoothing * delta))
 	zoom = Vector2.ONE * level
-	global_position = global_position.lerp(desired_position(level), 1.0 - exp(-smoothing * delta))
+	var steer := global_position.lerp(desired_position(level), 1.0 - exp(-smoothing * delta))
+	global_position = steer
+	offset = Vector2(sin(_clock * 0.37) * sway, cos(_clock * 0.29) * sway * 0.7) if not overview else Vector2.ZERO

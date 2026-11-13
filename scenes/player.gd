@@ -25,6 +25,10 @@ const FACTORY_MANIFEST := "res://game_factory/character_manifest.json"
 static var _factory_frames: SpriteFrames
 static var _factory_anchor: Array = [48, 90]
 var facing: Vector2 = Vector2.DOWN
+## Emitted when a one-square step ends (the camera gives a small push).
+signal stepped
+## Height in pixels of the small hop he makes on each step; 0 keeps the step flat.
+var bounce_height: float = 0.0
 
 ## True while he is walking (a step in progress, or free movement this frame); the camera leads in his direction.
 func is_moving() -> bool:
@@ -121,9 +125,14 @@ func _physics_process(delta: float) -> void:
             var done := clampf(_step_time / step_seconds, 0.0, 1.0)
             global_position = _step_from.lerp(_step_to, done)
             movement = _step_to - _step_from
+            if source_art != null:
+                source_art.lift = sin(done * PI) * bounce_height
             if _step_time >= step_seconds:
                 global_position = _step_to
                 _step_time = -1.0
+                if source_art != null:
+                    source_art.lift = 0.0
+                stepped.emit()
         if _step_time < 0.0:
             var wanted := _grid_input()
             if wanted != Vector2.ZERO and step(wanted):
