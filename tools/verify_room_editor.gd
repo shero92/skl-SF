@@ -137,6 +137,30 @@ func _initialize() -> void:
 	_check(not editor.create_map("", "courtyard")["ok"] and editor.status.begins_with("Type a name"), "an empty map name asks for a name")
 	_check(not editor.map_ids().has("editor_test_map"), "a dry run creates nothing")
 
+	# ---- Mouse presses: one placement per pick, Ctrl grabs a piece while a part is armed.
+	editor.snap_to_grid = false
+	editor.set_active_layer("objects")
+	editor.placing_part = "P05"
+	var count_before: int = editor.blocks.size()
+	editor.press(Vector2(300.0, 300.0))
+	_check(editor.blocks.size() == count_before + 1 and editor.placing_part == "", "a click places one piece and disarms the part")
+	var laid: String = editor.selected
+	_check(laid != "", "the placed piece stays selected")
+	editor.placing_part = "P05"
+	var centre: Vector2 = editor.rect_of(laid).get_center()
+	editor.press(centre, true)
+	_check(editor.blocks.size() == count_before + 1 and editor.selected == laid and editor._dragging, "Ctrl+click grabs the piece instead of placing another")
+	var x_before: float = editor.blocks[laid]["x"]
+	editor.move_selected(Vector2(x_before + 50.0, float(editor.blocks[laid]["y"])))
+	_check(editor.blocks[laid]["x"] != x_before, "the grabbed piece moves")
+	editor._dragging = false
+	editor.press(Vector2(900.0, 100.0), false, true)
+	_check(editor.placing_part == "P05" and editor.blocks.size() == count_before + 2, "Shift keeps the part armed for more copies")
+	editor.placing_part = ""
+	editor.undo()
+	editor.undo()
+	editor.undo()
+
 	# ---- Battle setup on the map's own squares.
 	editor.open_map("hero_room_01")
 	editor.battles_dir = "user://test_battles"

@@ -891,7 +891,7 @@ func _build_ui() -> void:
 		battle_button.pressed.connect(pair[1])
 		play_row.add_child(battle_button)
 	var help := Label.new()
-	help.text = "Click: select / place   Drag: move\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
+	help.text = "Click: select / place (Shift keeps placing)   Drag or Ctrl+drag: move\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
 	help.add_theme_font_size_override("font_size", 12)
 	column.add_child(help)
 	_status_label = Label.new()
@@ -957,22 +957,36 @@ func toggle_snap() -> void:
 	_say("Grid snap " + ("on" if snap_to_grid else "off"))
 
 
+## A left-button press at a world point. Ctrl grabs the piece under the mouse even while a part is armed.
+func press(point: Vector2, ctrl: bool = false, shift: bool = false) -> void:
+	if battle_tool != "":
+		battle_click(cell_at(point))
+	elif ctrl and placing_part != "" and not erasing_floor and select_at(point) != "":
+		# Ctrl while a part is armed: grab the piece under the mouse instead of placing another.
+		_dragging = true
+		_drag_moved = false
+		_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+	elif erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
+		_stroke_open = true
+		_ground_stroke(point, true)
+	elif placing_part != "":
+		var placed := place(placing_part, point)
+		if placed != "" and not shift:
+			placing_part = ""  # one piece per pick; it stays selected so it can be dragged at once
+			selected = placed
+			_refresh()
+	elif select_at(point) != "":
+		_dragging = true
+		_drag_moved = false
+		_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	var point := get_global_mouse_position()
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
-				if battle_tool != "":
-					battle_click(cell_at(point))
-				elif erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
-					_stroke_open = true
-					_ground_stroke(point, true)
-				elif placing_part != "":
-					place(placing_part, point)
-				elif select_at(point) != "":
-					_dragging = true
-					_drag_moved = false
-					_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+				press(point, event.ctrl_pressed, event.shift_pressed)
 			else:
 				_dragging = false
 				_stroke_open = false
