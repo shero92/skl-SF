@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants. hero_only hides the NPCs and the companion. patches cover the painted hero and companion with a floor piece taken from the same painting at run time (the file is untouched) until ART-0050 delivers a clean painting. sea polygons ripple (blue pixels only), lanterns get a flickering glow. hero_height draws the hero from the high-resolution source frames at that height.",
+  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants. hero_only hides the NPCs and the companion. patches cover the painted hero and companion with a floor piece taken from the same painting at run time (the file is untouched) until ART-0050 delivers a clean painting. sea polygons ripple (blue pixels only), lanterns get a flickering glow. hero_height draws the hero from the high-resolution source frames at that height. clouds are cut from the painting's own sky at run time and drift behind the arch and sea stacks; splashes are pixel spray bursts at the painted foam; petals drift across the room; the sea shader adds glints.",
   "image": "res://map_factory/references/hero_room_01_target_20261103.png",
   "navigation": {
     "schema_version": 1,
@@ -465,5 +465,104 @@
       50
     ]
   ],
-  "hero_height": 128
+  "hero_height": 128,
+  "clouds": {
+    "speed": 7,
+    "cover_height": 140,
+    "cuts": [
+      {
+        "from": [
+          470,
+          10,
+          125,
+          50
+        ],
+        "x": 120
+      },
+      {
+        "from": [
+          380,
+          33,
+          75,
+          27
+        ],
+        "x": 620
+      },
+      {
+        "from": [
+          470,
+          10,
+          125,
+          50
+        ],
+        "x": 930,
+        "flip": true
+      },
+      {
+        "from": [
+          380,
+          33,
+          75,
+          27
+        ],
+        "x": 1380,
+        "flip": true
+      }
+    ]
+  },
+  "splashes": [
+    [
+      20,
+      830
+    ],
+    [
+      40,
+      885
+    ],
+    [
+      80,
+      925
+    ],
+    [
+      120,
+      985
+    ],
+    [
+      15,
+      640
+    ],
+    [
+      10,
+      520
+    ],
+    [
+      1512,
+      840
+    ],
+    [
+      1495,
+      955
+    ],
+    [
+      1450,
+      1005
+    ],
+    [
+      1518,
+      700
+    ],
+    [
+      1522,
+      560
+    ]
+  ],
+  "petals": {
+    "amount": 16,
+    "area": [
+      150,
+      120,
+      1250,
+      500
+    ]
+  }
 }

@@ -8,6 +8,23 @@ class_name HeroSourceArt
 const INDEX := "res://game_factory/hero_map_source_frames.json"
 const WORK_HEIGHT := 320.0  # figure height of the in-memory copy; drawn smaller with mipmaps for a clean edge
 
+const OUTLINE_SHADER := "
+shader_type canvas_item;
+// A dark one-pixel rim around the figure, the way classic tactical RPG sprites stand out from the floor.
+uniform float reach = 2.5;  // rim width in texture pixels (one room pixel)
+void fragment() {
+	vec4 c = texture(TEXTURE, UV);
+	float near = 0.0;
+	for (int i = 0; i < 8; i++) {
+		float a = float(i) * 0.7853982;
+		near = max(near, texture(TEXTURE, UV + vec2(cos(a), sin(a)) * reach * TEXTURE_PIXEL_SIZE).a);
+	}
+	vec4 rim = vec4(0.13, 0.08, 0.07, near);
+	COLOR = mix(rim, vec4(c.rgb, 1.0), c.a);
+	COLOR.a = max(c.a, near * 0.95);
+}
+"
+
 var figure_height: float = 128.0  # height on screen in room pixels
 var _index: Dictionary = {}
 var _frames: Dictionary = {}  # animation key -> Array of {texture, offset}
@@ -20,10 +37,24 @@ func _ready() -> void:
 	var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(INDEX)) if FileAccess.file_exists(INDEX) else null
 	if data is Dictionary:
 		_index = data
+	var shadow := Polygon2D.new()  # soft ground shadow so the figure stands on the floor
+	shadow.name = "GroundShadow"
+	var ring := PackedVector2Array()
+	for step in 20:
+		var turn := TAU * step / 20.0
+		ring.append(Vector2(cos(turn) * figure_height * 0.27, sin(turn) * figure_height * 0.085 - 3.0))
+	shadow.polygon = ring
+	shadow.color = Color(0.1, 0.06, 0.02, 0.38)
+	add_child(shadow)
 	_sprite = Sprite2D.new()
 	_sprite.name = "SourceFrame"
 	_sprite.centered = false
 	_sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	var rim := ShaderMaterial.new()
+	rim.shader = Shader.new()
+	rim.shader.code = OUTLINE_SHADER
+	rim.set_shader_parameter("reach", WORK_HEIGHT / figure_height)
+	_sprite.material = rim
 	add_child(_sprite)
 
 

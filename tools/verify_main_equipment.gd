@@ -59,7 +59,11 @@ func _run() -> void:
 			_check(walk.point_open(Vector2(spot["x"], spot["y"])), "a moved NPC stands on a walk square")
 	var life: PhotoRoomLife = _main._life
 	_check(life != null and life.glows.size() == 8, "lanterns glow over the painting")
-	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D).size() == 6 and life.get_node_or_null("Patch") != null, "the sea shimmers and the painted figures are covered")
+	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D and n.name != "CloudCover").size() == 6 and life.get_node_or_null("Patch") != null, "the sea shimmers and the painted figures are covered")
+	_check(life.clouds.size() == 4 and life.get_node_or_null("CloudCover") != null and life.splashes.size() == 11 and life.petals != null, "clouds, spray and petals are set up")
+	var cloud_x: float = life.clouds[0].position.x
+	life._process(1.0)
+	_check(life.clouds[0].position.x > cloud_x and life.splashes[0].emitting, "clouds drift and spray bursts")
 	var drawn: HeroSourceArt = _main.player.source_art
 	_check(drawn != null and drawn.figure_height == 128.0, "the painted room asks for the high-resolution hero")
 	_main.player._physics_process(0.016)
