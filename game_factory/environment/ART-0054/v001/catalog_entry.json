@@ -1,0 +1,64 @@
+{
+  "request_id": "ART-0054",
+  "manifest_path": "game_factory/environment/ART-0054/v001/manifest.json",
+  "delivery_branch": "codex/art-0054-hero-map",
+  "category": "hero",
+  "assets": [
+    {
+      "frame_id": "hero_map_sf_down_idle_01",
+      "master_path": "assets_hd/hero/map_sf_down_idle/v001/hero_map_sf_down_idle_01_master.png",
+      "sha256": "90db7537012f2c28acdce6532fae5170de33632dd3798454b416ef006d05cf0c",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        302,
+        60,
+        924,
+        1196
+      ],
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        613.0,
+        1196
+      ],
+      "anchor_method": "bottom centre of alpha-128 bounds; placement convention, not anatomical socket",
+      "native_path": ".agents/graphics/deliveries/ART-0054/hero_map_sf_down_idle_01.png",
+      "native_sha256": "e5db98e2faabc7572a7bcbb2cae69f3b39b8f8a7957e7dfe06c5a8b267ad1cd4",
+      "native_size": [
+        96,
+        96
+      ],
+      "native_figure_height": 80,
+      "native_ground_anchor": [
+        48,
+        90
+      ],
+      "facing": "down",
+      "pose": "idle",
+      "weapon_present": false,
+      "weapon_hand_anchor": null,
+      "hand_rotation": null,
+      "weapon_scale": null,
+      "weapon_render_order": null,
+      "attack_phase": null,
+      "frame_duration": null,
+      "socket_status": "not_applicable_unarmed_map_idle",
+      "native_review_path": "game_factory/environment/ART-0054/v001/native_scale_review.png",
+      "quality_status": "technical_checks_passed",
+      "production_active": false,
+      "integration_status": "independent_frame_delivered_not_animation_set"
+    }
+  ],
+  "registration": "discoverable_by_existing_source_art_catalog_manifest_glob",
+  "production_active": false
+}

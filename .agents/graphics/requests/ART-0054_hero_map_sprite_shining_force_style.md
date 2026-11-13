@@ -1,6 +1,6 @@
 ---
 id: ART-0054
-status: requested
+status: delivered
 owner: graphics-specialist
 task: TASK-0168
 dedupe_key: hero_map_sprite_shining_force_style
@@ -33,10 +33,14 @@ output_paths: .agents/graphics/deliveries/ART-0054/hero_map_sf_down_idle_01.png
 - [x] Specifications reviewed; marked `requested`.
 
 ## Graphics specialist checklist
-- [ ] Clean PNG produced (ONLY graphics specialist); SHA-256 manifest written; mark `delivered`.
+- [x] Clean PNG produced (ONLY graphics specialist); SHA-256 manifest written; mark `delivered`.
 
 ## QA checklist
 - [ ] Owner looks at the frame inside the painted room and approves the style before more frames are requested; mark `reviewed`.
 
 ## Integration checklist
 - [ ] Shown in the painted room; PR merged; mark `integrated`.
+
+## Owner override and delivery — 2026-11-13
+
+The latest direct owner instruction removes the sword: both hands are empty. Produced independently with built-in image_gen, one down-idle frame only. Source and all metadata: `game_factory/environment/ART-0054/v001/manifest.json`. Native output is the exact output_paths above; master is `assets_hd/hero/map_sf_down_idle/v001/hero_map_sf_down_idle_01_master.png`. Real Godot QA capture: `game_factory/environment/ART-0054/v001/godot_room_review.png`. Owner approval basis: owner_automatic_20261111; this is not a claim that the full directional animation set is integrated. Producer task: TASK-0171, branch codex/art-0054-hero-map.
