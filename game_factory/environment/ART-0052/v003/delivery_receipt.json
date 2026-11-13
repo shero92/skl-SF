@@ -45,7 +45,7 @@
     },
     {
       "path": ".agents/tasks/TASK-0170_painted_coastal_world.md",
-      "sha256": "1e1cc3d7a4dead33f4e0ce56e475b1c25c94fd27a0042a052db2082a9b3f3bd4"
+      "sha256": "11e1a21e240771d157a46ba217c24a1ff4e951ad93a7da0a9f5f929e237aafa7"
     },
     {
       "path": "AGENTS.md",
@@ -435,5 +435,6 @@
       "path": "tools/verify_seabreak_coast.gd",
       "sha256": "efeb50976842f13a79d9afa65174daaedbde4ed3001aac6f3ebd6f9637aa65d6"
     }
-  ]
+  ],
+  "pull_request": "https://github.com/shero92/skl-SF/pull/192"
 }
