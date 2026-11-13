@@ -13,12 +13,16 @@ void fragment() {
 	vec2 px = TEXTURE_PIXEL_SIZE;
 	vec2 at = UV / px;
 	vec4 base = texture(TEXTURE, UV);
-	vec2 shift = vec2(sin(at.y * 0.09 + TIME * 1.3) * 2.0, cos(at.x * 0.07 + TIME * 1.1) * 1.5);
+	vec2 shift = vec2(sin(at.y * 0.09 + TIME * 1.6) * 3.5 + sin(at.y * 0.031 - TIME * 0.9) * 2.0, cos(at.x * 0.07 + TIME * 1.3) * 2.5);
 	vec4 moved = texture(TEXTURE, UV + floor(shift + 0.5) * px);
 	COLOR = base;
 	if (is_water(base) && is_water(moved)) {
 		COLOR = moved;
 		COLOR.rgb += 0.05 * sin(at.x * 0.05 + at.y * 0.11 + TIME * 2.0);
+		// Travelling wave crests: bright bands that roll toward the lower left, broken up so they read as foam.
+		float roll = sin(at.x * 0.028 + at.y * 0.075 - TIME * 1.4 + sin(at.y * 0.021 + at.x * 0.013) * 2.5);
+		float crest = smoothstep(0.86, 1.0, roll);
+		COLOR.rgb = mix(COLOR.rgb, vec3(0.85, 0.96, 1.0), crest * 0.42);
 	}
 }
 "
@@ -38,6 +42,10 @@ var cloud_speed: float = 6.0
 var cloud_span: float = 1536.0
 var glows: Array[Sprite2D] = []
 var _time: float = 0.0
+var gulls: Array[Dictionary] = []        # {x, y, speed, phase}
+var butterflies: Array[Dictionary] = []  # {home, phase, color}
+var _flyers: Node2D
+const BUTTERFLY_COLORS := [Color(1, 1, 1), Color(1.0, 0.85, 0.3), Color(0.6, 0.8, 1.0), Color(1.0, 0.6, 0.75)]
 
 
 ## `definition` is the photo room file; `map_room` is the hidden Map Factory room that lends its cloud parts.
@@ -118,8 +126,52 @@ func build(photo: Texture2D, definition: Dictionary, map_room: Node) -> void:
 		glows.append(glow)
 
 
+	# Small flying life, drawn as plain shapes by code (stand-ins until real creature art is delivered).
+	var flyers: Dictionary = definition.get("flyers", {})
+	var band: Array = flyers.get("gull_band", [40, 230])
+	for index in int(flyers.get("gulls", 0)):
+		gulls.append({"x": cloud_span * float(index) / maxf(1.0, float(flyers["gulls"])) + 90.0 * index,
+			"y": lerpf(float(band[0]), float(band[1]), fmod(index * 0.37 + 0.2, 1.0)), "speed": 34.0 + 9.0 * index, "phase": index * 1.9})
+	for index in flyers.get("butterflies", []).size():
+		var home: Array = flyers["butterflies"][index]
+		butterflies.append({"home": Vector2(float(home[0]), float(home[1])), "phase": index * 2.3,
+			"color": BUTTERFLY_COLORS[index % BUTTERFLY_COLORS.size()]})
+	_flyers = Node2D.new()
+	_flyers.name = "Flyers"
+	_flyers.draw.connect(_draw_flyers)
+	add_child(_flyers)
+
+
+func butterfly_position(index: int) -> Vector2:
+	var b: Dictionary = butterflies[index]
+	var p: float = b["phase"]
+	return b["home"] + Vector2(sin(_time * 0.6 + p) * 46.0 + sin(_time * 1.7 + p * 2.0) * 10.0, sin(_time * 0.9 + p * 1.3) * 24.0 + cos(_time * 2.3 + p) * 6.0)
+
+
+func _draw_flyers() -> void:
+	for gull: Dictionary in gulls:
+		var body := Vector2(gull["x"], gull["y"] + sin(_time * 0.8 + gull["phase"]) * 9.0)
+		var lift := sin(_time * 7.0 + gull["phase"]) * 5.0
+		var wings := PackedVector2Array([body + Vector2(-11, -lift), body + Vector2(-4, -1), body, body + Vector2(4, -1), body + Vector2(11, -lift)])
+		_flyers.draw_polyline(wings, Color(0.25, 0.28, 0.35), 3.0)
+		_flyers.draw_polyline(wings, Color(1, 1, 1), 1.5)
+	for index in butterflies.size():
+		var at := butterfly_position(index)
+		var open := 1.5 + absf(sin(_time * 13.0 + butterflies[index]["phase"])) * 4.5
+		var tint: Color = butterflies[index]["color"]
+		_flyers.draw_colored_polygon(PackedVector2Array([at, at + Vector2(-open, -4), at + Vector2(-open, 3)]), tint)
+		_flyers.draw_colored_polygon(PackedVector2Array([at, at + Vector2(open, -4), at + Vector2(open, 3)]), tint)
+		_flyers.draw_line(at + Vector2(0, -3), at + Vector2(0, 3), Color(0.2, 0.15, 0.1), 1.0)
+
+
 func _process(delta: float) -> void:
 	_time += delta
+	for gull: Dictionary in gulls:
+		gull["x"] += gull["speed"] * delta
+		if gull["x"] > cloud_span + 20.0:
+			gull["x"] = -20.0
+	if _flyers != null:
+		_flyers.queue_redraw()
 	for cloud in clouds:
 		var half := cloud.texture.get_width() * cloud.scale.x * 0.5
 		cloud.position.x += cloud_speed * delta
