@@ -1,11 +1,11 @@
 ---
-id: ART-0052
+id: ART-0055
 status: requested
 owner: graphics-specialist
 task: TASK-0168
 dedupe_key: hero_room_waves_breaking_on_rocks
 existing_asset_ids: B15,B16,B17,B18
-output_paths: .agents/graphics/deliveries/ART-0052/wave_break_sheet.png,.agents/graphics/deliveries/ART-0052/wave_wash_sheet.png
+output_paths: .agents/graphics/deliveries/ART-0055/wave_break_sheet.png,.agents/graphics/deliveries/ART-0055/wave_wash_sheet.png
 ---
 # Waves breaking on the rocks of the painted hero room
 
@@ -14,8 +14,8 @@ output_paths: .agents/graphics/deliveries/ART-0052/wave_break_sheet.png,.agents/
 **Source image and SHA-256:** `map_factory/references/hero_room_01_target_20261103.png` (1536x1024), sha256 `47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b`.
 
 **Reference crops (cut from the source image; the rocks and painted foam the waves must fit):**
-- Left cliff base, box left=0, top=820, right=330, bottom=1024: `.agents/graphics/requests/reference_crops/ART-0052_cliff_base_left_target.png` (sha256 `d9f526bc433bcb4bb9e5e456fea97fdd16d0dedbca2acb9c1c099be037e4452e`)
-- Right cliff base, box left=1180, top=820, right=1536, bottom=1024: `.agents/graphics/requests/reference_crops/ART-0052_cliff_base_right_target.png` (sha256 `2591a15005e0f87642382c3d86206eba5519c0c63c969556d2c887e104e672ec`)
+- Left cliff base, box left=0, top=820, right=330, bottom=1024: `.agents/graphics/requests/reference_crops/ART-0055_cliff_base_left_target.png` (sha256 `d9f526bc433bcb4bb9e5e456fea97fdd16d0dedbca2acb9c1c099be037e4452e`)
+- Right cliff base, box left=1180, top=820, right=1536, bottom=1024: `.agents/graphics/requests/reference_crops/ART-0055_cliff_base_right_target.png` (sha256 `2591a15005e0f87642382c3d86206eba5519c0c63c969556d2c887e104e672ec`)
 
 **Camera and light (same for every hero-room piece):** three-quarter top-down view, camera south of the room looking north and about 50 degrees down. Warm late-afternoon sun from the upper left. Pixel-art style, palette and outline weight of the painting.
 

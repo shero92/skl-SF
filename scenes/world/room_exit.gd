@@ -24,6 +24,8 @@ func restore_return() -> void:
 		return
 	hero.position = destination
 	hero.velocity = Vector2.ZERO
+	if hero.grid_step > 0.0:
+		hero.snap_to_grid() # the photo room moves square by square: stand on a square centre, not between two
 	Travel.returning_to_room = false
 
 func exit_available() -> bool:

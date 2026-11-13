@@ -4,7 +4,7 @@ class_name PhotoRoomLife
 ## the painting's own sky, a drifting haze with soft cloud shadows over the whole screen, drifting petals,
 ## flickering lantern light and floor patches. Everything comes from the painting itself or from plain pixel particles
 ## at run time; no art file is created or changed. Drawn creatures and breaking-wave sheets are requested
-## as real art (ART-0051, ART-0052).
+## as real art (ART-0051, ART-0055).
 ## Agent: claude (Claude Code); model: Fable 5.2.
 
 const SEA_SHADER := "

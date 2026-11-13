@@ -97,7 +97,7 @@ func run() -> void:
 		check(current_scene.scene_file_path=="res://scenes/main.tscn","Climbing stairs returns to real room")
 		if current_scene.scene_file_path=="res://scenes/main.tscn":
 			room = current_scene
-			check(room.player.position.distance_to(Vector2(768,832))<1,"Room return uses measured safe position")
+			check(room.player.position.distance_to(Vector2(768,832))<40,"Room return uses the measured safe position, snapped to a step square")
 			check(room.player.navigation.footprint_open(room.player.position),"Room return ground is safe")
 			check(not room.get_node("OutdoorExit").exit_available(),"No room return loop")
 	check(not Travel.returning_to_room,"Room return marker consumed once")

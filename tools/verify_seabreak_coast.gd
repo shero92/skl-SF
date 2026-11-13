@@ -88,7 +88,7 @@ func run() -> void:
 		check(current_scene.scene_file_path=="res://scenes/main.tscn","World gate returns to room")
 		if current_scene.scene_file_path=="res://scenes/main.tscn":
 			room_scene = current_scene
-			check(room_scene.player.position.distance_to(Vector2(768,832))<1,"Safe return spawn restored")
+			check(room_scene.player.position.distance_to(Vector2(768,832))<40,"Safe return spawn restored (snapped to a step square)")
 			check(room_scene.player.navigation.footprint_open(room_scene.player.position),"Return spawn is walkable")
 			check(not room_scene.get_node("OutdoorExit").exit_available(),"Return does not immediately retrigger exit")
 	check(not Travel.returning_to_room,"Return marker consumed once")
