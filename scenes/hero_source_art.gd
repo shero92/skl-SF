@@ -26,6 +26,9 @@ void fragment() {
 "
 
 var figure_height: float = 128.0  # height on screen in room pixels
+## Vertical squash toward the room's three-quarter camera (about 50 degrees down): the drawing is a straight-on view,
+## so a floor view foreshortens it. 1.0 leaves the drawing as it is.
+var view_squash: float = 1.0
 var _index: Dictionary = {}
 var _frames: Dictionary = {}  # animation key -> Array of {texture, offset}
 var _sprite: Sprite2D
@@ -84,8 +87,8 @@ func play(state: String, direction: String, delta: float) -> bool:
 	var frame: Dictionary = frames[int(_elapsed * float(_index.get("fps", {}).get(state, 4))) % frames.size()]
 	var size := figure_height / WORK_HEIGHT
 	_sprite.texture = frame["texture"]
-	_sprite.scale = Vector2.ONE * size
-	_sprite.position = -Vector2(frame["offset"]) * size
+	_sprite.scale = Vector2(size, size * view_squash)
+	_sprite.position = -Vector2(frame["offset"].x * size, frame["offset"].y * size * view_squash)
 	visible = true
 	return true
 

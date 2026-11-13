@@ -168,6 +168,7 @@ func set_photo_mode(on: bool) -> bool:
             player.source_art = HeroSourceArt.new()
             player.source_art.name = "SourceArt"
             player.source_art.figure_height = float(photo_room["hero_height"])
+            player.source_art.view_squash = float(photo_room.get("hero_view_squash", 1.0))
             player.add_child(player.source_art)
         elif not on and player.source_art != null:
             player.source_art.queue_free()

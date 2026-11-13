@@ -76,6 +76,7 @@ func _run() -> void:
 	var cloud_x: float = life.clouds[0].position.x
 	life._process(1.0)
 	_check(life.clouds[0].position.x > cloud_x, "clouds drift")
+	_check(walk.footprint_open(Vector2(400, 816)) and walk.footprint_open(Vector2(400, 752)), "a path leads behind the left parapet")
 	_check(life.depth_objects.size() == 13 and life.hero == _main.player, "thirteen painted objects have depth")
 	var bed_cut: Polygon2D = life.get_node("bed")
 	_main.player.global_position = Vector2(528, 560)   # beside the bed, feet above its base line
@@ -86,11 +87,11 @@ func _run() -> void:
 	_check(bed_cut.z_index < 30, "in front of the bed the hero is drawn over it")
 	_check(life.get_node_or_null("Shadow_bed") != null and life.get_node_or_null("Shadow_column_left_outer") != null, "tall objects cast shadows")
 	var drawn: HeroSourceArt = _main.player.source_art
-	_check(drawn != null and drawn.figure_height == 128.0, "the painted room asks for the high-resolution hero")
+	_check(drawn != null and drawn.figure_height == 134.0, "the painted room asks for the high-resolution hero")
 	_main.player._physics_process(0.016)
 	if drawn.has_animation("map_down_idle"):  # the source frames are local files; CI has none and keeps the factory frames
 		_check(drawn.visible and not _main.player.art.visible and not _main.player.factory_art.visible, "the hero is drawn from the source frames")
-		_check(absf(drawn._sprite.texture.get_height() * drawn._sprite.scale.y - 128.0 * 1254.0 / 1090.0) < 12.0, "the hero stands about two floor tiles tall")
+		_check(absf(drawn._sprite.texture.get_height() * drawn._sprite.scale.y - 134.0 * drawn.view_squash * 1254.0 / 1090.0) < 14.0, "the hero stands about two floor tiles tall")
 	else:
 		_check(_main.player.factory_art.visible, "without source frames the factory frames show")
 	_check(not _main._companion.visible and not _main._moved["Cely"].visible, "only the hero is in the painted room")

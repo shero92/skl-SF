@@ -17,13 +17,15 @@ output_paths: .agents/graphics/deliveries/ART-0054/hero_map_sf_down_idle_01.png
 
 **Camera and light (same for every hero-room piece):** three-quarter top-down view, camera south looking north and about 50 degrees down. Warm late-afternoon sun from the upper left.
 
+**Owner decision 2026-11-13: the whole game is three-quarter view.** The room is painted in a three-quarter top-down view and the hero is not: every current frame is drawn straight-on, as if the camera were level with him. The code can only shorten that drawing a little; it cannot turn it. This frame must be drawn FOR the three-quarter camera: head seen slightly from above (the top of the hair and forehead visible, the face tilted down about 40 to 50 degrees from the viewer), shoulders and chest foreshortened, the cloak hem and the feet seen from above so the soles are hidden and the toes point toward the lower edge of the frame, a small oval of contact with the floor under the feet.
+
 **Exact specification (ONE frame, one direction, so the style can be approved before the other 39 frames):**
-- Facing down (toward the camera), standing idle, sword held low at the right hand side.
+- Facing down (toward the camera, which looks down at about 50 degrees), standing idle, sword held low at the right hand side.
 - Classic Shining Force / 16-bit tactical RPG map proportions: about 2 to 2.5 heads tall, large head, big readable eyes, short body, small hands and feet.
 - Bold dark outline around the whole figure (1 px at native size), flat clear colour areas with two or three shades each, no fine feather texture: the cloak reads as a few large blue, white and orange feather shapes.
 - Same design as the reference: spiky brown hair, blue eyes, teal scarf, feather cloak, rope belt, sandals.
 - Native size: figure 80 px tall inside a 96x96 px frame, feet centred at x=48, y=90.
-- Do NOT draw: floor, shadow, background, motion lines, text.
+- Do NOT draw: a straight-on or side-on view, floor, shadow, background, motion lines, text.
 
 **Output format:** one RGBA PNG, transparent background, the figure only. Master at least 4x (384x384), native 96x96 as a clean reduction on the same pixel grid. Manifest records pixel size, anchor [48, 90] and SHA-256.
 

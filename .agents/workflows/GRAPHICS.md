@@ -28,3 +28,7 @@ Project settings add only the owner-named external workspace. Keep normal sandbo
 
 ## HD masters
 Owner high-quality art lives in `assets_hd/` (see `assets_hd/RULES.md`). New or regenerated art must match it; never overwrite masters.
+
+## Camera rule (owner, 2026-11-13)
+
+Every piece of game art (rooms, props, characters, enemies, effects) is drawn for the three-quarter camera of the hero room: it looks north from the south and about 50 degrees down, light from the upper left, shadows to the lower right. A character is never drawn straight-on or side-on at eye level; code may shorten or place a drawing but never turns it, so a wrong view is a new art request.
