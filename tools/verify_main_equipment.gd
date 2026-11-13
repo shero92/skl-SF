@@ -65,6 +65,8 @@ func _run() -> void:
 	var cloud_x: float = life.clouds[0].position.x
 	life._process(1.0)
 	_check(life.clouds[0].position.x > cloud_x, "clouds drift")
+	var in_front: Node = life.get_node_or_null("InFront")
+	_check(in_front != null and in_front.get_child_count() == 2 and in_front.z_index > _main.player.z_index + 30, "the two painted posts are drawn above the hero")
 	var drawn: HeroSourceArt = _main.player.source_art
 	_check(drawn != null and drawn.figure_height == 128.0, "the painted room asks for the high-resolution hero")
 	_main.player._physics_process(0.016)

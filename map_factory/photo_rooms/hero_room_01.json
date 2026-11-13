@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants. hero_only hides the NPCs and the companion. patches cover the painted hero and companion with a floor piece taken from the same painting at run time (the file is untouched) until ART-0050 delivers a clean painting. sea polygons ripple (blue pixels only), lanterns get a flickering glow. hero_height draws the hero from the high-resolution source frames at that height. clouds are cut from the painting's own sky at run time and drift behind the arch and sea stacks; petals drift across the room; the sea shader adds glints. mist is a drifting haze with soft cloud shadows over the whole screen. hero_step moves the hero one 64 px square per key press, Shining Force style. hero_step_offset puts the square centres in the middle of walk cells.",
+  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants. hero_only hides the NPCs and the companion. patches cover the painted hero and companion with a floor piece taken from the same painting at run time (the file is untouched) until ART-0050 delivers a clean painting. sea polygons ripple (blue pixels only), lanterns get a flickering glow. hero_height draws the hero from the high-resolution source frames at that height. clouds are cut from the painting's own sky at run time and drift behind the arch and sea stacks; petals drift across the room; the sea shader adds glints. mist is a drifting haze with soft cloud shadows over the whole screen. hero_step moves the hero one 64 px square per key press, Shining Force style. hero_step_offset puts the square centres in the middle of walk cells. occluders are painted objects (the two stone posts) drawn again above the hero so he walks behind them.",
   "image": "res://map_factory/references/hero_room_01_target_20261103.png",
   "navigation": {
     "schema_version": 1,
@@ -528,5 +528,91 @@
   "hero_step_offset": [
     -16,
     16
+  ],
+  "occluders": [
+    [
+      [
+        610,
+        702
+      ],
+      [
+        626,
+        702
+      ],
+      [
+        634,
+        712
+      ],
+      [
+        636,
+        722
+      ],
+      [
+        642,
+        724
+      ],
+      [
+        642,
+        800
+      ],
+      [
+        596,
+        800
+      ],
+      [
+        596,
+        724
+      ],
+      [
+        602,
+        722
+      ],
+      [
+        604,
+        712
+      ]
+    ],
+    [
+      [
+        891,
+        702
+      ],
+      [
+        908,
+        702
+      ],
+      [
+        916,
+        712
+      ],
+      [
+        918,
+        722
+      ],
+      [
+        931,
+        724
+      ],
+      [
+        931,
+        800
+      ],
+      [
+        883,
+        800
+      ],
+      [
+        883,
+        724
+      ],
+      [
+        888,
+        722
+      ],
+      [
+        890,
+        712
+      ]
+    ]
   ]
 }

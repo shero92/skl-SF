@@ -117,6 +117,22 @@ func build(photo: Texture2D, definition: Dictionary) -> void:
 		cover.region_rect = Rect2(float(from[0]), float(from[1]), float(from[2]), float(from[3]))
 		cover.position = Vector2(float(to[0]), float(to[1]))
 		add_child(cover)
+	# Painted objects that stand in front of the hero (posts, pillars): cut out of the painting by outline and
+	# drawn again above the characters, so he walks behind them instead of looking as if he stands on them.
+	var in_front := Node2D.new()
+	in_front.name = "InFront"
+	in_front.z_as_relative = false
+	in_front.z_index = 40
+	add_child(in_front)
+	for points: Array in definition.get("occluders", []):
+		var cutout := Polygon2D.new()
+		cutout.name = "Occluder"
+		var outline := PackedVector2Array()
+		for point: Array in points:
+			outline.append(Vector2(float(point[0]), float(point[1])))
+		cutout.polygon = outline
+		cutout.texture = photo
+		in_front.add_child(cutout)
 	var water := ShaderMaterial.new()
 	water.shader = Shader.new()
 	water.shader.code = SEA_SHADER
