@@ -76,7 +76,7 @@ func _run() -> void:
 	var cloud_x: float = life.clouds[0].position.x
 	life._process(1.0)
 	_check(life.clouds[0].position.x > cloud_x, "clouds drift")
-	_check(life.depth_objects.size() == 11 and life.hero == _main.player, "eleven painted objects have depth")
+	_check(life.depth_objects.size() == 13 and life.hero == _main.player, "thirteen painted objects have depth")
 	var bed_cut: Polygon2D = life.get_node("bed")
 	_main.player.global_position = Vector2(528, 560)   # beside the bed, feet above its base line
 	life._process(0.016)
@@ -133,6 +133,16 @@ func _run() -> void:
 	_main._unhandled_input(_key(KEY_I))
 	_check(not _main.is_equipment_open(), "I is ignored while a dialogue is open")
 	_check(FileAccess.file_exists(TEST_SAVE), "equipping wrote the hero save")
+	# Any other registered map plays through the same scene: no photo room file, no gameplay file, still walkable.
+	var main_script = load("res://scenes/main.gd")
+	main_script.next_map_id = "courtyard_demo_01"
+	var other: Node = load("res://scenes/main.tscn").instantiate()
+	other.save_path = TEST_SAVE
+	root.add_child(other)
+	await process_frame
+	_check(other.map_id == "courtyard_demo_01" and other.player != null and not other.photo_mode, "another map plays through the same scene without a photo room")
+	other.queue_free()
+	main_script.next_map_id = "hero_room_01"
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(TEST_SAVE))
 	if _failures == 0:
 		print("MAIN_EQUIPMENT_OK")

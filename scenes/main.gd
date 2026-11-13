@@ -11,12 +11,15 @@ var save_path: String = HeroSave.DEFAULT_PATH
 var equipment_layer: CanvasLayer
 var equipment_menu: EquipmentMenu
 
-const MAP_ID := "hero_room_01"
+## Which Map Factory map this scene plays. Set it before the scene starts to play another map; the default is the hero room.
+static var next_map_id: String = "hero_room_01"
+var map_id: String = ""
 const BATTLE_SCENE := "res://scenes/battle/tactical_battle.tscn"
 const EDITOR_SCENE := "res://scenes/map_factory_editor.tscn"
 # Photo room (owner decision 2026-11-12): the room is the target painting shown unchanged as one backdrop,
 # with its own walk squares measured on the painting. F3 switches to the Map Factory pieces and back.
-const PHOTO_ROOM := "res://map_factory/photo_rooms/hero_room_01.json"
+## Any map can be a photo room: put map_factory/photo_rooms/<map_id>.json beside it (see map_factory/PHOTO_ROOMS.md).
+const PHOTO_ROOM_DIR := "res://map_factory/photo_rooms/"
 static var keep_photo_mode: bool = true  # the choice survives a visit to the editor or a battle
 var photo_mode: bool = false
 var photo_room: Dictionary = {}
@@ -27,20 +30,36 @@ var _companion: Node2D
 var _moved: Dictionary = {}  # instance id -> Node2D that a photo-room move relocates
 var _room: Node2D
 var _photo: Sprite2D
-# Gameplay data (spawn, NPCs, interaction spots) stays in the legacy room JSON.
-const GAMEPLAY_PATH := "res://map_factory/rooms/hero_room.json"
+# Gameplay data (spawn, NPCs, interaction spots): map_factory/rooms/<map_id>.json, or the legacy hero_room.json.
+const GAMEPLAY_DIR := "res://map_factory/rooms/"
+
+func gameplay_path(id: String) -> String:
+    for candidate in [GAMEPLAY_DIR + id + ".json", GAMEPLAY_DIR + "hero_room.json" if id == "hero_room_01" else ""]:
+        if candidate != "" and FileAccess.file_exists(candidate):
+            return candidate
+    return ""
 
 func _ready() -> void:
     # Always render the newest Map Factory version through the registry.
     var factory := RoomFactory.new()
-    var room := factory.build_latest(MAP_ID, self)
+    map_id = next_map_id
+    var room := factory.build_latest(map_id, self)
     _room = room
     var entities := RoomFactory.entities_parent(room)
-    var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(GAMEPLAY_PATH))
-    if typeof(data) != TYPE_DICTIONARY:
-        push_error("Cannot load room interactions")
-        return
-    var spawn: Array = data.get("player_spawn", [770, 720])
+    # A map without a gameplay file is just walkable: no NPCs, no talk spots, the photo room's own spawn.
+    var data: Dictionary = {}
+    var gameplay := gameplay_path(map_id)
+    if gameplay != "":
+        var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(gameplay))
+        if typeof(parsed) != TYPE_DICTIONARY:
+            push_error("Cannot load room interactions: " + gameplay)
+            return
+        data = parsed
+    var photo_file := PHOTO_ROOM_DIR + map_id + ".json"
+    var photo_data: Variant = JSON.parse_string(FileAccess.get_file_as_string(photo_file)) if FileAccess.file_exists(photo_file) else null
+    if photo_data is Dictionary:
+        photo_room = photo_data
+    var spawn: Array = data.get("player_spawn", photo_room.get("spawn", [770, 720]))
     player = HeroPlayer.new()
     player.name = "Hero"
     player.use_factory_art = true  # owner 2026-11-13: the hero comes from the character factory frames
@@ -94,9 +113,6 @@ func _ready() -> void:
             "speaker": info.get("name", "NPC"), "lines": info.get("lines", [])
         })
     _map_navigation = player.navigation
-    var definition: Variant = JSON.parse_string(FileAccess.get_file_as_string(PHOTO_ROOM)) if FileAccess.file_exists(PHOTO_ROOM) else null
-    if definition is Dictionary:
-        photo_room = definition
     if photo_mode or keep_photo_mode:
         set_photo_mode(true)
 
