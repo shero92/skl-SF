@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`design/`](design/FILES.md)
 - [`previews/`](previews/FILES.md)
 - [`story/`](story/FILES.md)
 
@@ -41,11 +42,14 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`OCEAN_REPAINT_QA.md`](OCEAN_REPAINT_QA.md)
 - [`OWNER_ART_APPROVAL_20261109.md`](OWNER_ART_APPROVAL_20261109.md)
 - [`OWNER_AUTOMATIC_ART_APPROVAL_20261111.md`](OWNER_AUTOMATIC_ART_APPROVAL_20261111.md)
+- [`OWNER_PHOTO_WORLD_20261113.md`](OWNER_PHOTO_WORLD_20261113.md)
+- [`PAINTED_COAST.md`](PAINTED_COAST.md)
 - [`PIXEL_ASSET_FACTORY.md`](PIXEL_ASSET_FACTORY.md)
 - [`REFERENCE_ART_DIRECTION.md`](REFERENCE_ART_DIRECTION.md)
 - [`REPOSITORY_CONSOLIDATION_REPORT.md`](REPOSITORY_CONSOLIDATION_REPORT.md)
 - [`ROOM_BLOCK_QA.md`](ROOM_BLOCK_QA.md)
 - [`RUNTIME_INTEGRATION.md`](RUNTIME_INTEGRATION.md)
+- [`SEABREAK_COAST.md`](SEABREAK_COAST.md)
 - [`SOURCE_ART_CATALOG.md`](SOURCE_ART_CATALOG.md)
 - [`WEAPON_BALANCE_REPORT_20261110.md`](WEAPON_BALANCE_REPORT_20261110.md)
 

@@ -56,6 +56,7 @@ Read only the linked ART request. Guide: [graphics workflow](../workflows/GRAPHI
 | [ART-0049](requests/ART-0049_hero_room_sea_stack_islands.md) | requested | graphics-specialist | TASK-0148 | none |
 | [ART-0050](requests/ART-0050_hero_room_painting_clean_plate.md) | requested | graphics-specialist | TASK-0168 | none |
 | [ART-0051](requests/ART-0051_hero_room_small_flying_creatures.md) | requested | graphics-specialist | TASK-0168 | none |
-| [ART-0052](requests/ART-0052_hero_room_waves_breaking_on_rocks.md) | requested | graphics-specialist | TASK-0168 | B15,B16,B17,B18 |
+| [ART-0052](requests/ART-0052_painted_coastal_world.md) | delivered | codex | TASK-0170 | none |
 | [ART-0053](requests/ART-0053_hero_room_painted_style_clouds.md) | requested | graphics-specialist | TASK-0168 | B12,B13,B14 |
 | [ART-0054](requests/ART-0054_hero_map_sprite_shining_force_style.md) | delivered | graphics-specialist | TASK-0168 | none |
+| [ART-0055](requests/ART-0055_hero_room_waves_breaking_on_rocks.md) | requested | graphics-specialist | TASK-0168 | B15,B16,B17,B18 |

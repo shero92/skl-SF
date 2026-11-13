@@ -12,6 +12,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`intake/`](intake/FILES.md)
 - [`maps/`](maps/FILES.md)
 - [`metadata/`](metadata/FILES.md)
+- [`painted_worlds/`](painted_worlds/FILES.md)
 - [`parts/`](parts/FILES.md)
 - [`photo_rooms/`](photo_rooms/FILES.md)
 - [`presets/`](presets/FILES.md)
@@ -19,6 +20,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`rooms/`](rooms/FILES.md)
 - [`scripts/`](scripts/FILES.md)
 - [`tests/`](tests/FILES.md)
+- [`worlds/`](worlds/FILES.md)
 
 ## Files
 

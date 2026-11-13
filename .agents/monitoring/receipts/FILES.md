@@ -81,6 +81,10 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`TASK-0102_codex_fc586b1fba.json`](TASK-0102_codex_fc586b1fba.json)
 - [`TASK-0135_codex_7dc92e3234.json`](TASK-0135_codex_7dc92e3234.json)
 - [`TASK-0136_codex_ae80068bd2.json`](TASK-0136_codex_ae80068bd2.json)
+- [`TASK-0169_codex_69060a5509.json`](TASK-0169_codex_69060a5509.json)
+- [`TASK-0169_codex_77a16da85d.json`](TASK-0169_codex_77a16da85d.json)
+- [`TASK-0170_codex_0f4f31335f.json`](TASK-0170_codex_0f4f31335f.json)
+- [`TASK-0170_codex_456ddcc2d4.json`](TASK-0170_codex_456ddcc2d4.json)
 - [`TASK-0171_codex_3beadd4777.json`](TASK-0171_codex_3beadd4777.json)
 - [`TASK-0171_codex_50a1036e58.json`](TASK-0171_codex_50a1036e58.json)
 

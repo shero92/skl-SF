@@ -8,8 +8,11 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`cliff_foam_loop/`](cliff_foam_loop/FILES.md)
 - [`drifting_clouds/`](drifting_clouds/FILES.md)
+- [`hidden_island_grid_painted/`](hidden_island_grid_painted/FILES.md)
+- [`hidden_island_painted/`](hidden_island_painted/FILES.md)
 - [`sea_coast/`](sea_coast/FILES.md)
 - [`sea_light_lattice/`](sea_light_lattice/FILES.md)
+- [`seabreak_painted_world/`](seabreak_painted_world/FILES.md)
 - [`terrace_cliff/`](terrace_cliff/FILES.md)
 
 ## Files

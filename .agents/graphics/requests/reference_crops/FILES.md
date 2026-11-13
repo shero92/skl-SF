@@ -31,8 +31,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0049_cluster_compare.png`](ART-0049_cluster_compare.png)
 - [`ART-0049_cluster_target.png`](ART-0049_cluster_target.png)
 - [`ART-0050_painted_characters_target.png`](ART-0050_painted_characters_target.png)
-- [`ART-0052_cliff_base_left_target.png`](ART-0052_cliff_base_left_target.png)
-- [`ART-0052_cliff_base_right_target.png`](ART-0052_cliff_base_right_target.png)
 - [`ART-0053_sky_target.png`](ART-0053_sky_target.png)
+- [`ART-0055_cliff_base_left_target.png`](ART-0055_cliff_base_left_target.png)
+- [`ART-0055_cliff_base_right_target.png`](ART-0055_cliff_base_right_target.png)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

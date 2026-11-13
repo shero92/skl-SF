@@ -63,5 +63,9 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`F025_Hero_Broken_Floor_Corner_Left.png.import`](F025_Hero_Broken_Floor_Corner_Left.png.import)
 - [`F026_Hero_Broken_Floor_Corner_Right.png`](F026_Hero_Broken_Floor_Corner_Right.png)
 - [`F026_Hero_Broken_Floor_Corner_Right.png.import`](F026_Hero_Broken_Floor_Corner_Right.png.import)
+- [`G13_Coastal_Grass_A.png`](G13_Coastal_Grass_A.png)
+- [`G13_Coastal_Grass_A.png.import`](G13_Coastal_Grass_A.png.import)
+- [`G14_Coastal_Grass_B.png`](G14_Coastal_Grass_B.png)
+- [`G14_Coastal_Grass_B.png.import`](G14_Coastal_Grass_B.png.import)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

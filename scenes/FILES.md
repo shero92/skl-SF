@@ -7,6 +7,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 ## Subfolders
 
 - [`battle/`](battle/FILES.md)
+- [`world/`](world/FILES.md)
 
 ## Files
 

@@ -170,4 +170,6 @@ Read only the task you need. Full guide: [tasks workflow](../workflows/TASKS.md)
 | [TASK-0166](../tasks/TASK-0166_room_editor_stage_two.md) | review | claude | TASK-0165 | none |
 | [TASK-0167](../tasks/TASK-0167_battle_maps_from_editor.md) | review | claude | TASK-0166 | none |
 | [TASK-0168](../tasks/TASK-0168_hero_room_from_painting.md) | review | claude | TASK-0167 | ART-0050 |
+| [TASK-0169](../tasks/TASK-0169_seabreak_coast_world.md) | review | codex | TASK-0168 | none |
+| [TASK-0170](../tasks/TASK-0170_painted_coastal_world.md) | review | codex | TASK-0169 | ART-0052 |
 | [TASK-0171](../tasks/TASK-0171_hero_map_swordless.md) | review | codex | TASK-0168 | ART-0054 |

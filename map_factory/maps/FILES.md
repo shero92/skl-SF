@@ -8,6 +8,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`courtyard_demo_01/`](courtyard_demo_01/FILES.md)
 - [`hero_room_01/`](hero_room_01/FILES.md)
+- [`seabreak_coast_01/`](seabreak_coast_01/FILES.md)
 
 ## Files
 

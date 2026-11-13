@@ -99,6 +99,8 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 | `capture_checks` | python | Evidence captures refuse draft or fallback placeholders (TASK-0059). | `python -m unittest discover -s tools/tests -p test_capture_checks.py` |
 | `blender_catalog` | python | Owner-accepted Blender deliveries: catalog records from measured data, working-tree staging with exact bytes, and the integrated ART-0004 and ART-0014 assets. | `python -m unittest discover -s tools/tests -p test_blender_catalog.py` |
 | `project_settings` | python | Windows ANGLE driver, windowed 1280x720 mode and main scene so the game starts. | `python -m unittest discover -s tools/tests -p test_project_settings.py` |
+| `seabreak_coast` | python | Connected6144x4096 coastal world, blocked sea and plant bases, existing grass-source hashes, actual HeroPlayer movement to six landmarks and a room/world roundtrip without re-entry loops. | `python -m unittest discover -s tools/tests -p test_seabreak_coast.py` |
+| `painted_coast` | python | Native painted square-block Hidden Island, story/canon navigation, source preservation, all13region transitions and real room-stair return. | `python -m unittest discover -s tools/tests -p test_painted_coast.py` |
 
 ## Paths per test
 
@@ -193,3 +195,5 @@ Passing tests do not certify artistic similarity. [Full file listing](FILES.md).
 - `capture_checks`: `tools/capture_checks.gd`, `tools/capture_map_previews.gd`, `tools/verify_capture_checks.gd`, `tools/tests/test_capture_checks.py`, `map_factory/scripts/asset_factory.gd`, `tools/battle_godot_harness.py`
 - `blender_catalog`: `tools/blender_catalog.py`, `tools/art_delivery.py`, `tools/tests/test_blender_catalog.py`, `map_factory/metadata/asset_index.json`
 - `project_settings`: `project.godot`, `tools/tests/test_project_settings.py`, `scenes/main.tscn`
+- `seabreak_coast`: `tools/tests/test_seabreak_coast.py`, `tools/build_seabreak_coast.py`, `tools/polish_seabreak_coast.py`, `tools/refine_seabreak_coast.py`, `tools/verify_seabreak_coast.gd`, `tools/capture_seabreak_coast.gd`, `scenes/world/**`, `scenes/main.tscn`, `map_factory/maps/seabreak_coast_01/**`, `map_factory/worlds/**`
+- `painted_coast`: `scenes/world/painted_coast.*`, `tools/prepare_hidden_island.py`, `tools/verify_painted_coast.gd`, `tools/capture_painted_coast.gd`, `tools/tests/test_painted_coast.py`, `map_factory/painted_worlds/**`, `game_factory/environment/ART-0052/**`, `docs/story/**`, `docs/design/STORY_CANON_AR.md`

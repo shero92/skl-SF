@@ -1,6 +1,6 @@
 {
-  "missing_cost_receipts": 66,
-  "missing_token_receipts": 65,
+  "missing_cost_receipts": 70,
+  "missing_token_receipts": 69,
   "tasks": [
     {
       "agents": [
@@ -646,6 +646,34 @@
       "task_id": "TASK-0136",
       "unknown_costs": 1,
       "unknown_token_receipts": 1
+    },
+    {
+      "agents": [
+        "codex"
+      ],
+      "cached_input_tokens": 0,
+      "input_tokens": 0,
+      "known_usd": 0.0,
+      "output_tokens": 0,
+      "reasoning_output_tokens": 0,
+      "receipts": 2,
+      "task_id": "TASK-0169",
+      "unknown_costs": 2,
+      "unknown_token_receipts": 2
+    },
+    {
+      "agents": [
+        "codex"
+      ],
+      "cached_input_tokens": 0,
+      "input_tokens": 0,
+      "known_usd": 0.0,
+      "output_tokens": 0,
+      "reasoning_output_tokens": 0,
+      "receipts": 2,
+      "task_id": "TASK-0170",
+      "unknown_costs": 2,
+      "unknown_token_receipts": 2
     },
     {
       "agents": [
