@@ -9,8 +9,23 @@ class_name PhotoRoomLife
 
 const SEA_SHADER := "
 shader_type canvas_item;
-// Only blue water pixels move, by one or two painting pixels, so rocks, walls and foam edges stay put.
+// Blue water pixels ripple and glint; where water meets rock a foam band surges in and falls back.
 bool is_water(vec4 c) { return c.b > c.r + 0.15 && c.b > c.g + 0.04; }
+// Rock, cliff or wall: neither water nor the pale painted foam.
+// Open water is strongly blue; shaded rock is only bluish, so it needs the wider margin.
+bool is_open_water(vec4 c) { return c.b > c.r + 0.34 && c.b > c.g + 0.04; }
+bool is_rock(vec4 c) { return !is_open_water(c) && min(c.r, min(c.g, c.b)) < 0.62; }
+float hash(vec2 p) {
+	vec3 q = fract(vec3(p.xyx) * 0.1031);
+	q += dot(q, q.yzx + 33.33);
+	return fract((q.x + q.y) * q.z);
+}
+float noise(vec2 p) {
+	vec2 i = floor(p);
+	vec2 f = fract(p);
+	f = f * f * (3.0 - 2.0 * f);
+	return mix(mix(hash(i), hash(i + vec2(1.0, 0.0)), f.x), mix(hash(i + vec2(0.0, 1.0)), hash(i + vec2(1.0, 1.0)), f.x), f.y);
+}
 void fragment() {
 	vec2 px = TEXTURE_PIXEL_SIZE;
 	vec2 at = UV / px;
@@ -21,13 +36,31 @@ void fragment() {
 	if (is_water(base) && is_water(moved)) {
 		COLOR = moved;
 		COLOR.rgb += 0.04 * sin(at.x * 0.05 + at.y * 0.11 + TIME * 2.0);
-		// Sun glints: single painting pixels that flash white for a moment, each on its own clock.
-		vec2 cell = floor(at / 2.0);
-		vec3 q = fract(vec3(cell.xyx) * 0.1031);
-		q += dot(q, q.yzx + 33.33);
-		float seed = fract((q.x + q.y) * q.z);
+		float seed = hash(floor(at / 2.0));
 		float flash = smoothstep(0.985, 1.0, sin(TIME * (1.5 + seed * 2.5) + seed * 6.2832));
 		COLOR.rgb = mix(COLOR.rgb, vec3(1.0), flash * step(0.9, seed));
+	}
+	if (is_open_water(base)) {  // never on lit or shaded rock
+		// Distance to the nearest rock, probed on five rings.
+		float near = 99.0;
+		for (int ring = 0; ring < 5; ring++) {
+			float radius = 3.0 + float(ring) * 4.0;
+			for (int i = 0; i < 8; i++) {
+				float a = float(i) * 0.7853982 + float(ring) * 0.39;
+				if (is_rock(texture(TEXTURE, UV + vec2(cos(a), sin(a)) * radius * px))) { near = min(near, radius); }
+			}
+		}
+		if (near < 90.0) {
+			// Each stretch of shore has its own rhythm: the swell runs in fast, lingers, then drains away.
+			float beat = TIME * 0.9 + noise(at * 0.012) * 6.2832;
+			float swell = pow(0.5 + 0.5 * sin(beat), 1.6);
+			float reach = mix(3.0, 21.0, swell);
+			float ragged = noise(at * 0.22 + vec2(TIME * 0.6, -TIME * 0.35));
+			float body = smoothstep(reach, reach - 5.0, near + ragged * 6.0);
+			float lip = smoothstep(2.5, 0.0, abs(near + ragged * 6.0 - reach + 2.0));  // bright leading edge
+			float foam = clamp(body * (0.45 + 0.4 * ragged) + lip * 0.75, 0.0, 1.0) * (0.35 + 0.65 * swell);
+			COLOR.rgb = mix(COLOR.rgb, vec3(0.93, 0.98, 1.0), foam);
+		}
 	}
 }
 "
@@ -80,8 +113,10 @@ void vertex() { spot = VERTEX; }  // position in picture pixels
 void fragment() {
 	vec2 at = floor(spot / 4.0) * 4.0 / size.y;  // 4 px cells
 	float t = TIME * speed;
-	float haze = smoothstep(0.50, 0.70, fbm(at * 3.6 + vec2(t * 0.06, t * 0.02)));
-	float shade = smoothstep(0.50, 0.68, fbm(at * 2.2 + vec2(7.3 + t * 0.04, 2.1 + t * 0.012)));
+	// The whole field travels to the right while a second, slower field bends it, so banks roll and change shape.
+	vec2 bend = vec2(fbm(at * 1.7 + vec2(0.0, t * 0.05)), fbm(at * 1.7 + vec2(5.2, -t * 0.04))) - 0.5;
+	float haze = smoothstep(0.50, 0.70, fbm(at * 3.6 + bend * 1.6 + vec2(-t * 0.22, t * 0.05)));
+	float shade = smoothstep(0.50, 0.68, fbm(at * 2.2 + bend * 0.9 + vec2(7.3 - t * 0.13, 2.1 + t * 0.03)));
 	float alpha = max(haze * strength, shade * shadow * (1.0 - haze));
 	COLOR = vec4(mix(vec3(0.05, 0.08, 0.2), vec3(1.0, 0.98, 0.94), haze * strength / max(alpha, 0.0001)), alpha);
 }
