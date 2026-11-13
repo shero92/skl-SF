@@ -109,6 +109,34 @@ func _run() -> void:
 	life._process(0.016)
 	_check(life.hidden_amount < 0.2, "on open floor the hero is not hidden")
 	_check(life.get_node_or_null("Shadow_bed") != null and life.get_node_or_null("Shadow_column_left_outer") != null, "tall objects cast shadows")
+	# Dynamic camera: it follows the hero, stays inside the painting, zooms in while he talks, V shows the whole room.
+	var cam: FollowCamera = _main._camera
+	_check(cam != null and cam.follow and cam.target == _main.player, "the painted room has a camera that follows the hero")
+	_main.player.global_position = Vector2(720, 624)
+	cam.snap()
+	var centre_before: Vector2 = cam.global_position
+	_main.player.global_position = Vector2(1104, 624)
+	for i in 120:
+		cam._process(0.016)
+	_check(cam.global_position.x > centre_before.x + 150.0, "the camera moves with him (%.0f to %.0f)" % [centre_before.x, cam.global_position.x])
+	var half := root.get_viewport().get_visible_rect().size / (2.0 * cam.zoom.x)
+	_main.player.global_position = Vector2(272, 816)
+	for i in 200:
+		cam._process(0.016)
+	_check(cam.global_position.x - half.x >= -1.0 and cam.global_position.y + half.y <= 1025.0, "the camera never shows beyond the painting")
+	var normal_zoom: float = cam.zoom.x
+	cam.talking = true
+	for i in 200:
+		cam._process(0.016)
+	_check(cam.zoom.x > normal_zoom + 0.2, "the camera zooms in while he talks")
+	cam.talking = false
+	_main._unhandled_input(_key(KEY_V))
+	for i in 300:
+		cam._process(0.016)
+	_check(cam.overview and cam.zoom.x < 1.0 and cam.global_position.is_equal_approx(cam.bounds.get_center()), "V shows the whole room")
+	_main._unhandled_input(_key(KEY_V))
+	cam.snap()
+	_main.player.global_position = Vector2(720, 624)
 	var drawn: HeroSourceArt = _main.player.source_art
 	_check(drawn != null and drawn.figure_height == 134.0, "the painted room asks for the high-resolution hero")
 	_main.player._physics_process(0.016)
