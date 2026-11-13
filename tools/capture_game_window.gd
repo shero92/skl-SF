@@ -14,7 +14,8 @@ func _initialize() -> void:
 	for index in range(2, args.size()):  # e.g. battle_path=res://game_factory/battles/hero_room_01.json
 		var pair := args[index].split("=", true, 1)
 		if pair.size() == 2:
-			scene.set(pair[0], pair[1])
+			var typed: Variant = str_to_var(pair[1])  # true, 3, 0.5 keep their type; paths stay text
+			scene.set(pair[0], typed if typed != null else pair[1])
 	root.add_child(scene)
 	for i in 12:
 		await process_frame

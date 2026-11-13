@@ -1,0 +1,17 @@
+[
+  {
+    "path": "map_factory/references/characters/hero.png.png",
+    "sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+    "role": "identity and map proportions only"
+  },
+  {
+    "path": "map_factory/references/hero_room_01_target_20261103.png",
+    "sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+    "role": "room context for Godot QA only"
+  },
+  {
+    "path": "C:/Users/SHIYA_~1/AppData/Local/Temp/codex-clipboard-749af69b-b7b8-4bca-be97-71857ea482c9.png",
+    "sha256": "044a89e6c67059126dfec67a9df14f11dacb54948749f64c9e2ed82a2c83da03",
+    "role": "owner latest supplied visual context only; asset does not depend on this external reference at runtime"
+  }
+]
