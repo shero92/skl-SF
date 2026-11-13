@@ -6,6 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
+- [`photo_backdrop_test/`](photo_backdrop_test/FILES.md)
 - [`region_reports/`](region_reports/FILES.md)
 - [`t0059_v0017/`](t0059_v0017/FILES.md)
 - [`t0104_v0014/`](t0104_v0014/FILES.md)

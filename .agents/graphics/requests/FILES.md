@@ -57,6 +57,11 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0047_hero_room_round_cliff_base.md`](ART-0047_hero_room_round_cliff_base.md)
 - [`ART-0048_hero_room_double_bed_three_quarter.md`](ART-0048_hero_room_double_bed_three_quarter.md)
 - [`ART-0049_hero_room_sea_stack_islands.md`](ART-0049_hero_room_sea_stack_islands.md)
+- [`ART-0050_hero_room_painting_clean_plate.md`](ART-0050_hero_room_painting_clean_plate.md)
+- [`ART-0051_hero_room_small_flying_creatures.md`](ART-0051_hero_room_small_flying_creatures.md)
+- [`ART-0052_hero_room_waves_breaking_on_rocks.md`](ART-0052_hero_room_waves_breaking_on_rocks.md)
+- [`ART-0053_hero_room_painted_style_clouds.md`](ART-0053_hero_room_painted_style_clouds.md)
+- [`ART-0054_hero_map_sprite_shining_force_style.md`](ART-0054_hero_map_sprite_shining_force_style.md)
 - [`GOAL-0001_request_coverage.json`](GOAL-0001_request_coverage.json)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

@@ -27,6 +27,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`ART-0037/`](ART-0037/FILES.md)
 - [`ART-0038/`](ART-0038/FILES.md)
 - [`ART-0039/`](ART-0039/FILES.md)
+- [`ART-0054/`](ART-0054/FILES.md)
 - [`batch_B1_20261110/`](batch_B1_20261110/FILES.md)
 - [`batch_B2_20261110/`](batch_B2_20261110/FILES.md)
 - [`batch_B3_20261110/`](batch_B3_20261110/FILES.md)
