@@ -49,5 +49,15 @@
     "tested_base": "fd708c5a",
     "execution": "authorized host test fixtures with isolated TEMP/TMP",
     "initial_run": "restricted run interrupted after missing existing source frames and denied experimental save; 40 existing frame copies used only as unstaged QA context; equipment retry passed"
+  },
+  "publication_isolation": {
+    "excluded": "two local editor files and four unpublished owner editor commits",
+    "published_base": "36240813c3f799951916d962c82c6da1c106618d",
+    "art_commit": "bf8b69d3f782922adfccfd84c6d6bc3262d3e5e7",
+    "post_isolation_tests": {
+      "room_editor": "4/4 passed",
+      "equipment_menu": "2/2 passed"
+    },
+    "pull_request": "https://github.com/shero92/skl-SF/pull/193"
   }
 }

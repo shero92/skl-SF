@@ -21,3 +21,6 @@ Owner override 2026-11-13: no sword. One down-idle frame only; preserve existing
 - No rejected attempts; no old character sources or active animation registry replaced.
 - Delivery metadata and per-piece index under game_factory/environment/ART-0054/v001; hero map art navigation added to INDEX.md.
 - Next: integrate this delivered frame as a reviewed style source; directional walks remain a separate request.
+
+- PR: https://github.com/shero92/skl-SF/pull/193 (base claude/photo-backdrop-test; open, not merged).
+- Art commit: bf8b69d3f782922adfccfd84c6d6bc3262d3e5e7. Local editor history excluded after saving all task files; post-isolation editor 4/4 and equipment 2/2 pass.
