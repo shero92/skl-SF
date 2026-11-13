@@ -1,0 +1,18 @@
+{
+  "request_id": "ART-0054",
+  "task_id": "TASK-0171",
+  "asset_id": "hero_map_sf_down_idle_01",
+  "source_file": "hero_map_sf_down_idle_01_master.png",
+  "sha256": "90db7537012f2c28acdce6532fae5170de33632dd3798454b416ef006d05cf0c",
+  "pixel_size": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "native_size": [
+    96,
+    96
+  ],
+  "metadata_path": "game_factory/environment/ART-0054/v001/manifest.json",
+  "production_active": false
+}

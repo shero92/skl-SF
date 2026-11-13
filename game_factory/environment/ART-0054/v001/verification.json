@@ -1,0 +1,63 @@
+{
+  "request_id": "ART-0054",
+  "png_custom_checks": "pass",
+  "master_pixel_size": [
+    1254,
+    1254
+  ],
+  "native_pixel_size": [
+    96,
+    96
+  ],
+  "native_bounds_alpha_128": [
+    26,
+    10,
+    70,
+    90
+  ],
+  "native_anchor": [
+    48,
+    90
+  ],
+  "source_preserved_byte_exact": true,
+  "source_sha256": "90db7537012f2c28acdce6532fae5170de33632dd3798454b416ef006d05cf0c",
+  "godot_capture": {
+    "result": 0,
+    "renderer": "Godot 4.7.2 Compatibility ANGLE NVIDIA RTX 3070",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "path": "game_factory/environment/ART-0054/v001/godot_room_review.png",
+    "scope": "independent SubViewport QA placement over unmodified room reference, not active player animation",
+    "warnings": [
+      "sandbox user log/cache unavailable",
+      "QA-only Image.load_from_file; not export path"
+    ]
+  },
+  "generic_graphics_validation": {
+    "command": "python tools/graphics_validation.py --changed",
+    "exit_code": 0,
+    "png_checked": 0,
+    "coverage_note": "new independent sources outside production registry; custom PNG checks above cover these files"
+  },
+  "rejected_attempts": [],
+  "tests": {
+    "command": "python -u tools/run_tests.py --changed --timeout 120",
+    "result": "90/90 passed",
+    "exit_code": 0,
+    "tested_base": "fd708c5a",
+    "execution": "authorized host test fixtures with isolated TEMP/TMP",
+    "initial_run": "restricted run interrupted after missing existing source frames and denied experimental save; 40 existing frame copies used only as unstaged QA context; equipment retry passed"
+  },
+  "publication_isolation": {
+    "excluded": "two local editor files and four unpublished owner editor commits",
+    "published_base": "36240813c3f799951916d962c82c6da1c106618d",
+    "art_commit": "bf8b69d3f782922adfccfd84c6d6bc3262d3e5e7",
+    "post_isolation_tests": {
+      "room_editor": "4/4 passed",
+      "equipment_menu": "2/2 passed"
+    },
+    "pull_request": "https://github.com/shero92/skl-SF/pull/193"
+  }
+}
