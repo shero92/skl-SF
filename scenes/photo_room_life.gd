@@ -1,8 +1,8 @@
 extends Node2D
 class_name PhotoRoomLife
-## Moving touches over a photo room (a room shown as one painting): rippling, glinting sea, pixel spray where
-## the painted foam meets the rocks, clouds cut from the painting's own sky, drifting petals, flickering
-## lantern light and floor patches. Everything comes from the painting itself or from plain pixel particles
+## Moving touches over a photo room (a room shown as one painting): rippling, glinting sea, clouds cut from
+## the painting's own sky, a drifting haze with soft cloud shadows over the whole screen, drifting petals,
+## flickering lantern light and floor patches. Everything comes from the painting itself or from plain pixel particles
 ## at run time; no art file is created or changed. Drawn creatures and breaking-wave sheets are requested
 ## as real art (ART-0051, ART-0052).
 ## Agent: claude (Claude Code); model: Fable 5.2.
@@ -23,7 +23,9 @@ void fragment() {
 		COLOR.rgb += 0.04 * sin(at.x * 0.05 + at.y * 0.11 + TIME * 2.0);
 		// Sun glints: single painting pixels that flash white for a moment, each on its own clock.
 		vec2 cell = floor(at / 2.0);
-		float seed = fract(sin(dot(cell, vec2(12.9898, 78.233))) * 43758.5453);
+		vec3 q = fract(vec3(cell.xyx) * 0.1031);
+		q += dot(q, q.yzx + 33.33);
+		float seed = fract((q.x + q.y) * q.z);
 		float flash = smoothstep(0.985, 1.0, sin(TIME * (1.5 + seed * 2.5) + seed * 6.2832));
 		COLOR.rgb = mix(COLOR.rgb, vec3(1.0), flash * step(0.9, seed));
 	}
@@ -49,12 +51,47 @@ void fragment() {
 }
 "
 
+const MIST_SHADER := "
+shader_type canvas_item;
+// Soft haze and cloud shadows that drift over the whole picture. Value noise in chunky cells so it sits with pixel art.
+uniform float strength = 0.3;
+uniform float shadow = 0.16;
+uniform float speed = 1.0;
+uniform vec2 size = vec2(1536.0, 1024.0);
+float hash(vec2 p) {  // no large sine products: those lose precision on some drivers and return a constant
+	vec3 q = fract(vec3(p.xyx) * 0.1031);
+	q += dot(q, q.yzx + 33.33);
+	return fract((q.x + q.y) * q.z);
+}
+float noise(vec2 p) {
+	vec2 i = floor(p);
+	vec2 f = fract(p);
+	f = f * f * (3.0 - 2.0 * f);
+	return mix(mix(hash(i), hash(i + vec2(1.0, 0.0)), f.x), mix(hash(i + vec2(0.0, 1.0)), hash(i + vec2(1.0, 1.0)), f.x), f.y);
+}
+float fbm(vec2 p) {
+	float v = 0.0;
+	float a = 0.5;
+	for (int i = 0; i < 4; i++) { v += a * noise(p); p *= 2.03; a *= 0.5; }
+	return v;
+}
+varying vec2 spot;
+void vertex() { spot = VERTEX; }  // position in picture pixels
+void fragment() {
+	vec2 at = floor(spot / 4.0) * 4.0 / size.y;  // 4 px cells
+	float t = TIME * speed;
+	float haze = smoothstep(0.50, 0.70, fbm(at * 3.6 + vec2(t * 0.06, t * 0.02)));
+	float shade = smoothstep(0.50, 0.68, fbm(at * 2.2 + vec2(7.3 + t * 0.04, 2.1 + t * 0.012)));
+	float alpha = max(haze * strength, shade * shadow * (1.0 - haze));
+	COLOR = vec4(mix(vec3(0.05, 0.08, 0.2), vec3(1.0, 0.98, 0.94), haze * strength / max(alpha, 0.0001)), alpha);
+}
+"
+
+var mist: Polygon2D
 var clouds: Array[Sprite2D] = []
 var cloud_speed: float = 6.0
 var cloud_span: float = 1536.0
-var splashes: Array[CPUParticles2D] = []
 var petals: CPUParticles2D
-var _splash_wait: Array[float] = []
 var glows: Array[Sprite2D] = []
 var _time: float = 0.0
 
@@ -115,33 +152,6 @@ func build(photo: Texture2D, definition: Dictionary) -> void:
 		front.texture = photo
 		front.material = solid
 		add_child(front)
-	# Pixel spray where the painted foam meets the rocks: short bursts of small white squares, each on its own clock.
-	var fade := Gradient.new()
-	fade.set_color(0, Color(1, 1, 1, 1))
-	fade.set_color(1, Color(0.75, 0.93, 1.0, 0.0))
-	for index in definition.get("splashes", []).size():
-		var at: Array = definition["splashes"][index]
-		var spray := CPUParticles2D.new()
-		spray.name = "Splash"
-		spray.position = Vector2(float(at[0]), float(at[1]))
-		spray.emitting = false
-		spray.one_shot = true
-		spray.amount = 70
-		spray.lifetime = 1.1
-		spray.explosiveness = 0.85
-		spray.emission_shape = CPUParticles2D.EMISSION_SHAPE_RECTANGLE
-		spray.emission_rect_extents = Vector2(26, 6)
-		spray.direction = Vector2(0, -1)
-		spray.spread = 38.0
-		spray.initial_velocity_min = 90.0
-		spray.initial_velocity_max = 230.0
-		spray.gravity = Vector2(0, 330)
-		spray.scale_amount_min = 3.0
-		spray.scale_amount_max = 6.0
-		spray.color_ramp = fade
-		add_child(spray)
-		splashes.append(spray)
-		_splash_wait.append(0.4 + 0.9 * index)
 	var drift: Dictionary = definition.get("petals", {})
 	if int(drift.get("amount", 0)) > 0:
 		var area: Array = drift.get("area", [0, 0, 1536, 1024])
@@ -193,17 +203,31 @@ func build(photo: Texture2D, definition: Dictionary) -> void:
 		glows.append(glow)
 
 
+## The haze lies over everything, characters included, so the caller parents it above them.
+func build_mist(definition: Dictionary, size: Vector2) -> Polygon2D:
+	var settings: Dictionary = definition.get("mist", {})
+	if settings.is_empty():
+		return null
+	var material := ShaderMaterial.new()
+	material.shader = Shader.new()
+	material.shader.code = MIST_SHADER
+	material.set_shader_parameter("strength", float(settings.get("strength", 0.3)))
+	material.set_shader_parameter("shadow", float(settings.get("shadow", 0.16)))
+	material.set_shader_parameter("speed", float(settings.get("speed", 1.0)))
+	material.set_shader_parameter("size", size)
+	mist = Polygon2D.new()
+	mist.name = "Mist"
+	mist.polygon = PackedVector2Array([Vector2.ZERO, Vector2(size.x, 0), size, Vector2(0, size.y)])
+	mist.material = material
+	return mist
+
+
 func _process(delta: float) -> void:
 	_time += delta
 	for cloud in clouds:
 		cloud.position.x += cloud_speed * delta
 		if cloud.position.x > cloud_span:
 			cloud.position.x = -cloud.region_rect.size.x
-	for index in splashes.size():
-		_splash_wait[index] -= delta
-		if _splash_wait[index] <= 0.0:
-			splashes[index].restart()
-			_splash_wait[index] = 2.2 + fmod(float(index) * 1.37 + _time * 0.61, 2.6)  # uneven, like real swell
 	for index in glows.size():
 		# Two slow waves and one quick one per lantern, each out of step with its neighbours.
 		var phase := float(index) * 1.7

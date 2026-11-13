@@ -22,6 +22,7 @@ var photo_mode: bool = false
 var photo_room: Dictionary = {}
 var _map_navigation: NavigationGrid
 var _life: PhotoRoomLife
+var _mist: Polygon2D
 var _companion: Node2D
 var _moved: Dictionary = {}  # instance id -> Node2D that a photo-room move relocates
 var _room: Node2D
@@ -119,11 +120,15 @@ func set_photo_mode(on: bool) -> bool:
         _life.z_index = 26  # over the painting, under characters
         _room.add_child(_life)
         _life.build(texture, photo_room)
+        _mist = _life.build_mist(photo_room, texture.get_size())
+        if _mist != null:
+            _mist.z_index = 200  # over the characters too
+            _room.add_child(_mist)
     photo_mode = on
     keep_photo_mode = on
     var entities := RoomFactory.entities_parent(_room)
     for child in _room.get_children():
-        if child == _photo or child == _life:
+        if child == _photo or child == _life or child == _mist:
             child.visible = on
         elif child.is_ancestor_of(entities):
             for inner in child.get_children():

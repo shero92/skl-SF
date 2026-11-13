@@ -60,10 +60,11 @@ func _run() -> void:
 	var life: PhotoRoomLife = _main._life
 	_check(life != null and life.glows.size() == 8, "lanterns glow over the painting")
 	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D and n.name != "CloudCover").size() == 6 and life.get_node_or_null("Patch") != null, "the sea shimmers and the painted figures are covered")
-	_check(life.clouds.size() == 4 and life.get_node_or_null("CloudCover") != null and life.splashes.size() == 11 and life.petals != null, "clouds, spray and petals are set up")
+	_check(life.clouds.size() == 4 and life.get_node_or_null("CloudCover") != null and life.petals != null, "clouds and petals are set up")
+	_check(_main._mist != null and _main._mist.visible and _main._mist.z_index > 100, "a drifting haze lies over the whole picture")
 	var cloud_x: float = life.clouds[0].position.x
 	life._process(1.0)
-	_check(life.clouds[0].position.x > cloud_x and life.splashes[0].emitting, "clouds drift and spray bursts")
+	_check(life.clouds[0].position.x > cloud_x, "clouds drift")
 	var drawn: HeroSourceArt = _main.player.source_art
 	_check(drawn != null and drawn.figure_height == 128.0, "the painted room asks for the high-resolution hero")
 	_main.player._physics_process(0.016)
@@ -80,6 +81,7 @@ func _run() -> void:
 	_check(not _main.photo_mode and not photo.visible and _main._room.get_node("Level1_Ground").visible, "F3 brings the map pieces back")
 	_check(_main.player.navigation != walk and _main.player.navigation.cell_size == 64.0, "the map's own walk grid returns")
 	_check(_main._companion.visible and _main._moved["Cely"].visible, "the map room keeps its characters")
+	_check(not _main._mist.visible, "the haze belongs to the painted room only")
 	_main._unhandled_input(_key(KEY_F3))
 	_check(_main.photo_mode and photo.visible, "F3 again shows the painting")
 	_main.dialogue.open_dialogue("Test", ["hello"])
