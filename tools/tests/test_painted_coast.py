@@ -11,6 +11,14 @@ ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'tools'))
 from prepare_hidden_island import inside
 
+def _godot():
+    try:
+        path=json.loads((ROOT/'.agents/planner/config.json').read_text(encoding='utf-8')).get('godot_executable')
+    except (OSError,ValueError):
+        return False
+    return isinstance(path,str) and Path(path).is_file()
+
+
 class PaintedCoastTests(unittest.TestCase):
     def setUp(self):
         self.world=json.loads((ROOT/'map_factory/painted_worlds/hidden_island/v001/world.json').read_text(encoding='utf-8'))
@@ -56,6 +64,7 @@ class PaintedCoastTests(unittest.TestCase):
         self.assertEqual(travel['world_scene'],'res://scenes/world/painted_coast.tscn')
         self.assertEqual(self.world['geometry_reference']['room_trigger'],travel['room_exit_photo']['rect'])
         self.assertEqual(self.world['geometry_reference']['room_return'],travel['room_exit_photo']['return_position'])
+    @unittest.skipUnless(_godot(),"configured godot_executable is not installed here")
     def test_actual_hero_walk_all_boundaries_and_room_return(self):
         config=json.loads((ROOT/'.agents/planner/config.json').read_text(encoding='utf-8'))
         proc=subprocess.run([config['godot_executable'],'--headless','--fixed-fps','60','--path',str(ROOT),

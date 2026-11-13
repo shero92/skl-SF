@@ -10,6 +10,14 @@ sys.path.insert(0,str(ROOT/'tools'))
 from battle_godot_harness import run_godot
 from map_factory_cli import get_latest,asset_catalog,validate_room
 
+def _godot():
+    try:
+        path=json.loads((ROOT/'.agents/planner/config.json').read_text(encoding='utf-8')).get('godot_executable')
+    except (OSError,ValueError):
+        return False
+    return isinstance(path,str) and Path(path).is_file()
+
+
 class SeabreakCoastTests(unittest.TestCase):
     def setUp(self):
         self.map=get_latest(ROOT,'seabreak_coast_01')
@@ -44,6 +52,7 @@ class SeabreakCoastTests(unittest.TestCase):
         self.assertTrue((versions/'v0001.json').is_file())
         self.assertTrue((versions/'v0002.json').is_file())
         self.assertTrue(any(x['id']=='G13' for x in self.map['tile_overrides']))
+    @unittest.skipUnless(_godot(),"configured godot_executable is not installed here")
     def test_actual_hero_walk_and_room_round_trip(self):
         code,output=run_godot('res://tools/verify_seabreak_coast.gd',timeout=120)
         self.assertEqual(code,0,output)
