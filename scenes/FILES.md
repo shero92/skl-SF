@@ -15,6 +15,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`dialogue_ui.gd.uid`](dialogue_ui.gd.uid)
 - [`equipment_menu.gd`](equipment_menu.gd)
 - [`equipment_menu.gd.uid`](equipment_menu.gd.uid)
+- [`follow_camera.gd`](follow_camera.gd)
+- [`follow_camera.gd.uid`](follow_camera.gd.uid)
 - [`game_factory_actor.gd`](game_factory_actor.gd)
 - [`game_factory_actor.gd.uid`](game_factory_actor.gd.uid)
 - [`game_factory_animation_viewer.tscn`](game_factory_animation_viewer.tscn)
