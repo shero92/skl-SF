@@ -101,6 +101,10 @@ var cloud_speed: float = 6.0
 var cloud_span: float = 1536.0
 var petals: CPUParticles2D
 var glows: Array[Sprite2D] = []
+const BEHIND_HERO := 27   # above the painting and its shadows, below the hero
+const ABOVE_HERO := 40
+var depth_objects: Array[Polygon2D] = []
+var hero: Node2D
 var _time: float = 0.0
 
 
@@ -117,22 +121,49 @@ func build(photo: Texture2D, definition: Dictionary) -> void:
 		cover.region_rect = Rect2(float(from[0]), float(from[1]), float(from[2]), float(from[3]))
 		cover.position = Vector2(float(to[0]), float(to[1]))
 		add_child(cover)
-	# Painted objects that stand in front of the hero (posts, pillars): cut out of the painting by outline and
-	# drawn again above the characters, so he walks behind them instead of looking as if he stands on them.
-	var in_front := Node2D.new()
-	in_front.name = "InFront"
-	in_front.z_as_relative = false
-	in_front.z_index = 40
-	add_child(in_front)
-	for points: Array in definition.get("occluders", []):
+	# Painted objects with height: each is cut from the painting and drawn again above the hero while his feet are
+	# behind its base line (so he walks behind it), and below him once he is in front. Each also casts a soft shadow
+	# toward the lower right, as long as the object is high.
+	var shade := Gradient.new()
+	for object: Dictionary in definition.get("depth_objects", []):
 		var cutout := Polygon2D.new()
-		cutout.name = "Occluder"
+		cutout.name = String(object.get("id", "Object"))
+		cutout.z_as_relative = false
+		cutout.z_index = BEHIND_HERO
 		var outline := PackedVector2Array()
-		for point: Array in points:
+		for point: Array in object.get("poly", []):
 			outline.append(Vector2(float(point[0]), float(point[1])))
 		cutout.polygon = outline
 		cutout.texture = photo
-		in_front.add_child(cutout)
+		cutout.set_meta("base_y", float(object.get("base_y", 0)))
+		add_child(cutout)
+		depth_objects.append(cutout)
+		for edge: Array in object.get("shadow", []):
+			var tall := float(edge[4]) if edge.size() > 4 else float(edge[3])
+			var shape := PackedVector2Array()
+			var colors := PackedColorArray()
+			var dark := Color(0.04, 0.03, 0.1, 0.34)
+			var clear := Color(0.04, 0.03, 0.1, 0.0)
+			var reach := Vector2(tall * 0.62, tall * 0.3)
+			if edge.size() == 5:  # a vertical edge: x1, y1, x2, y2, height
+				shape.append(Vector2(float(edge[0]), float(edge[1])))
+				shape.append(Vector2(float(edge[2]), float(edge[3])))
+				shape.append(Vector2(float(edge[2]), float(edge[3])) + reach)
+				shape.append(Vector2(float(edge[0]), float(edge[1])) + reach)
+			else:  # a base line: x1, x2, y, height
+				shape.append(Vector2(float(edge[0]), float(edge[2])))
+				shape.append(Vector2(float(edge[1]), float(edge[2])))
+				shape.append(Vector2(float(edge[1]), float(edge[2])) + reach)
+				shape.append(Vector2(float(edge[0]), float(edge[2])) + reach)
+			colors.append(dark)
+			colors.append(dark)
+			colors.append(clear)
+			colors.append(clear)
+			var cast := Polygon2D.new()
+			cast.name = "Shadow_" + String(object.get("id", ""))
+			cast.polygon = shape
+			cast.vertex_colors = colors
+			add_child(cast)
 	var water := ShaderMaterial.new()
 	water.shader = Shader.new()
 	water.shader.code = SEA_SHADER
@@ -248,6 +279,10 @@ func build_mist(definition: Dictionary, size: Vector2) -> Polygon2D:
 
 func _process(delta: float) -> void:
 	_time += delta
+	if hero != null:
+		for object in depth_objects:
+			# Feet above the base line: he stands behind it, so the object is drawn over him.
+			object.z_index = ABOVE_HERO if hero.global_position.y < float(object.get_meta("base_y")) else BEHIND_HERO
 	for cloud in clouds:
 		cloud.position.x += cloud_speed * delta
 		if cloud.position.x > cloud_span:

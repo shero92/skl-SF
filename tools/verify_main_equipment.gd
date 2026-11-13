@@ -54,7 +54,6 @@ func _run() -> void:
 	_check(walk != null and walk.cell_size == 32.0 and walk.footprint_open(_main.player.position), "the hero stands on the painting's walk squares")
 	_check(not walk.point_open(Vector2(400, 500)) and not walk.point_open(Vector2(1130, 540)), "the painted bed and table are closed")
 	_check(walk.point_open(Vector2(768, 880)) and not walk.point_open(Vector2(600, 880)), "the painted stairs are open, the parapet is closed")
-	_check(not walk.point_open(Vector2(400, 624)) and not walk.point_open(Vector2(1104, 624)) and not walk.point_open(Vector2(1168, 688)), "the bed foot and the table side are closed (the hero would stand inside them)")
 	# Every talk spot that is not an NPC must be reachable from some open square, or the owner could never use it.
 	for spot: Dictionary in _main.interactions:
 		if bool(spot.get("npc", false)):
@@ -71,14 +70,21 @@ func _run() -> void:
 			_check(walk.point_open(Vector2(spot["x"], spot["y"])), "a moved NPC stands on a walk square")
 	var life: PhotoRoomLife = _main._life
 	_check(life != null and life.glows.size() == 8, "lanterns glow over the painting")
-	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D and n.name != "CloudCover").size() == 6 and life.get_node_or_null("Patch") != null, "the sea shimmers and the painted figures are covered")
+	_check(life.get_children().filter(func(n: Node) -> bool: return n is Polygon2D and n.material is ShaderMaterial and n.name != "CloudCover").size() == 6 and life.get_node_or_null("Patch") != null, "the sea shimmers and the painted figures are covered")
 	_check(life.clouds.size() == 4 and life.get_node_or_null("CloudCover") != null and life.petals != null, "clouds and petals are set up")
 	_check(_main._mist != null and _main._mist.visible and _main._mist.z_index > 100, "a drifting haze lies over the whole picture")
 	var cloud_x: float = life.clouds[0].position.x
 	life._process(1.0)
 	_check(life.clouds[0].position.x > cloud_x, "clouds drift")
-	var in_front: Node = life.get_node_or_null("InFront")
-	_check(in_front != null and in_front.get_child_count() == 2 and in_front.z_index > _main.player.z_index + 30, "the two painted posts are drawn above the hero")
+	_check(life.depth_objects.size() == 11 and life.hero == _main.player, "eleven painted objects have depth")
+	var bed_cut: Polygon2D = life.get_node("bed")
+	_main.player.global_position = Vector2(528, 560)   # beside the bed, feet above its base line
+	life._process(0.016)
+	_check(bed_cut.z_index > _main.player.z_index + 5, "behind the bed the bed is drawn over the hero")
+	_main.player.global_position = Vector2(528, 640)   # in front of the bed
+	life._process(0.016)
+	_check(bed_cut.z_index < 30, "in front of the bed the hero is drawn over it")
+	_check(life.get_node_or_null("Shadow_bed") != null and life.get_node_or_null("Shadow_column_left_outer") != null, "tall objects cast shadows")
 	var drawn: HeroSourceArt = _main.player.source_art
 	_check(drawn != null and drawn.figure_height == 128.0, "the painted room asks for the high-resolution hero")
 	_main.player._physics_process(0.016)

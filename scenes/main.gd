@@ -120,6 +120,7 @@ func set_photo_mode(on: bool) -> bool:
         _life.z_index = 26  # over the painting, under characters
         _room.add_child(_life)
         _life.build(texture, photo_room)
+        _life.hero = player
         _mist = _life.build_mist(photo_room, texture.get_size())
         if _mist != null:
             _mist.z_index = 200  # over the characters too

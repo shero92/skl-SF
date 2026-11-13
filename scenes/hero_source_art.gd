@@ -46,6 +46,13 @@ func _ready() -> void:
 	shadow.polygon = ring
 	shadow.color = Color(0.1, 0.06, 0.02, 0.38)
 	add_child(shadow)
+	# A long soft shadow thrown to the lower right (the light comes from the upper left): he is tall, so it is long.
+	var cast := Polygon2D.new()
+	cast.name = "CastShadow"
+	var tall := figure_height
+	cast.polygon = PackedVector2Array([Vector2(-tall * 0.16, -3), Vector2(tall * 0.16, -3), Vector2(tall * 0.16 + tall * 0.55, tall * 0.2), Vector2(-tall * 0.16 + tall * 0.55, tall * 0.2)])
+	cast.vertex_colors = PackedColorArray([Color(0.05, 0.03, 0.1, 0.4), Color(0.05, 0.03, 0.1, 0.4), Color(0.05, 0.03, 0.1, 0.0), Color(0.05, 0.03, 0.1, 0.0)])
+	add_child(cast)
 	_sprite = Sprite2D.new()
 	_sprite.name = "SourceFrame"
 	_sprite.centered = false
