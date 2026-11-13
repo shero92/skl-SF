@@ -5,11 +5,11 @@
   "runtime_asset_index": "map_factory/metadata/asset_index.json",
   "map_index": "map_factory/maps/index.json",
   "map_reference_rule": "Exact source/native path matches only; no filename-based activation or inferred integration",
-  "record_count": 126,
-  "selected_count": 100,
-  "rejected_count": 26,
+  "record_count": 143,
+  "selected_count": 109,
+  "rejected_count": 34,
   "coverage": {
-    "source_groups_checked": 23,
+    "source_groups_checked": 31,
     "unindexed_source_pngs": [],
     "all_linked_item_paths_exist": true
   },
@@ -54,8 +54,8 @@
       "sha256": "9b21e784f1a1e5ad0da09a0aec0d386acb014fcc996fd8db1fec623f6928a471",
       "request_id": "ART-0003",
       "publication": {
-        "manifest_on_origin_main": false,
-        "delivery_branch": "codex/hero-room-cliff-foam",
+        "manifest_on_origin_main": true,
+        "delivery_branch": null,
         "pull_request": null
       },
       "context": {
@@ -1026,6 +1026,263 @@
       }
     },
     {
+      "path": "game_factory/environment/ART-0040/v001/manifest.json",
+      "sha256": "962e1524fb1543449446b689ec79b8064b231c7e9ed88410d22486b60ab60a31",
+      "request_id": "ART-0040",
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0040-provenance-review",
+        "pull_request": null
+      },
+      "context": {
+        "request_id": "ART-0040",
+        "task_id": "TASK-0102",
+        "delivery_branch": "codex/art-0040-provenance-review",
+        "agent": "codex",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "source_count": 1,
+        "generation_count": 2,
+        "integration_evidence": {
+          "asset_id": "L07",
+          "first_room_version": 28,
+          "pull_request": "https://github.com/shero92/skl-SF/pull/178",
+          "mount_calibration_provisional": true
+        },
+        "quality_status": "needs_map_calibration",
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "production_active": true,
+        "generation_cache_required": false,
+        "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+        "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+        "reference_use": "style/composition only; crop/comparison are reference documentation, never a game asset",
+        "style_references": [
+          {
+            "path": "assets_hd/lighting/west_wall_lantern/v001/hero_wall_lantern_west.png",
+            "sha256": "e1beb2284d9804e1ae51480c63af498d916f6d0aa992e2d8622fb0a361a6c623",
+            "role": "material/design reference only; no flip/mirror/rotation/paste"
+          }
+        ],
+        "limitations": [
+          "L07 derivative placed in room v0028 by Claude PR178; source QA does not verify wall calibration or occlusion.",
+          "29x53 is provisional native review; source wall pivot differs from bottom-centre ground origin.",
+          "Earlier attempt stored in rejected/ archive but is nonselected, not owner-rejected; alpha diagnosis corrected."
+        ]
+      }
+    },
+    {
+      "path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+      "request_id": "ART-0041",
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": null
+      },
+      "context": {
+        "request_id": "ART-0041",
+        "task_id": "TASK-0161",
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "agent": "codex",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "source_count": 6,
+        "generation_count": 7,
+        "files": [
+          {
+            "path": ".agents/graphics/deliveries/ART-0041/field_grass_a.png",
+            "sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf"
+          },
+          {
+            "path": ".agents/graphics/deliveries/ART-0041/field_grass_b.png",
+            "sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1"
+          },
+          {
+            "path": ".agents/graphics/deliveries/ART-0041/field_rock_block.png",
+            "sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24"
+          },
+          {
+            "path": ".agents/graphics/deliveries/ART-0041/marker_move.png",
+            "sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935"
+          },
+          {
+            "path": ".agents/graphics/deliveries/ART-0041/marker_target.png",
+            "sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205"
+          },
+          {
+            "path": ".agents/graphics/deliveries/ART-0041/marker_active.png",
+            "sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc"
+          }
+        ],
+        "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+        "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+        "reference_use": "style only; new battlefield designs, no source crop pasted",
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_runtime_integration",
+        "production_active": false,
+        "generation_cache_required": false,
+        "limitations": [
+          "QA-only scene override, no production battle code or damage/navigation rules changed.",
+          "Grass opaque RGBA floor exception; RGB generation files preserved with exact RGB-byte equality.",
+          "Marker frames have measured64x64 padding; use whole canvas at cell top-left, no per-frame alpha-bbox fit."
+        ]
+      }
+    },
+    {
+      "path": "game_factory/environment/ART-0042/v001/manifest.json",
+      "sha256": "93c6afa79f6486cfb95793f0e7f41332ac053feffc8e9ed69d905991841a85f3",
+      "request_id": "ART-0042",
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "pull_request": null
+      },
+      "context": {
+        "request_id": "ART-0042",
+        "task_id": "TASK-0156",
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "agent": "codex",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "source_count": 1,
+        "generation_count": 2,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_map_calibration",
+        "production_active": false,
+        "generation_cache_required": false,
+        "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+        "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+        "reference_use": "style/composition only; no reference crop pasted/traced as art",
+        "files": [
+          {
+            "path": ".agents/graphics/deliveries/ART-0042/hero_rear_left_ruined_wall_window.png",
+            "sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667"
+          }
+        ],
+        "limitations": [
+          "No room placement, collisions, endpoint joins or occlusion verified; source-only Godot review.",
+          "Course counts/block widths are approximate authored geometry; native canvas includes transparent margins.",
+          "Owner main checkout unchanged; files live in isolated task worktree until branch integration."
+        ]
+      }
+    },
+    {
+      "path": "game_factory/environment/ART-0043/v001/manifest.json",
+      "sha256": "df01cfb9c937f7edacab9609ac42c7445bf5660e9836ad1993d233203e39878a",
+      "request_id": "ART-0043",
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "pull_request": null
+      },
+      "context": {
+        "request_id": "ART-0043",
+        "task_id": "TASK-0156",
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "agent": "codex",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "source_count": 1,
+        "generation_count": 3,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_map_calibration",
+        "production_active": false,
+        "generation_cache_required": false,
+        "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+        "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+        "reference_use": "style/composition only; no reference crop pasted/traced as art",
+        "files": [
+          {
+            "path": ".agents/graphics/deliveries/ART-0043/hero_rear_right_wall_arched_door_niche.png",
+            "sha256": "e4c179693e6f56575cf0384b7e00aa00a7c8ea9905db34df323677e659a31735"
+          }
+        ],
+        "limitations": [
+          "No room placement, collisions, endpoint joins or occlusion verified; source-only Godot review.",
+          "Course counts/block widths are approximate authored geometry; native canvas includes transparent margins.",
+          "Owner main checkout unchanged; files live in isolated task worktree until branch integration."
+        ]
+      }
+    },
+    {
+      "path": "game_factory/environment/ART-0044/v001/manifest.json",
+      "sha256": "b4732ce1148a8c4829f525f5d6e050f70423d1fe08d8edb7d9e989acc8e8319e",
+      "request_id": "ART-0044",
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0044-0045-side-walls",
+        "pull_request": null
+      },
+      "context": {
+        "request_id": "ART-0044",
+        "task_id": "TASK-0157",
+        "delivery_branch": "codex/art-0044-0045-side-walls",
+        "status": "requested",
+        "agent": "codex",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "source_count": 0,
+        "candidate_count": 2,
+        "quality_status": "needs_regeneration",
+        "production_active": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "generation_cache_required": false,
+        "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+        "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+        "reference_use": "style/composition only, no pixels pasted/traced",
+        "files": [],
+        "requested_output_path": ".agents/graphics/deliveries/ART-0044/hero_west_curved_side_wall.png",
+        "blocker": "Built-in outputs below requested4x size despite explicit larger-size retry; no resampling enlargement permitted.",
+        "limitations": [
+          "No qualified production PNG exists at requested output path.",
+          "Collision/joins/room placement and east/west normals require room calibration; no map changed.",
+          "Smaller4x-native footprint numbers are informational, not a change to the owner-approved spec."
+        ]
+      }
+    },
+    {
+      "path": "game_factory/environment/ART-0045/v001/manifest.json",
+      "sha256": "69dba03e2d93bd9f399ae58254e78632b1dea9611c12b3930d8e1f44580e7866",
+      "request_id": "ART-0045",
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0044-0045-side-walls",
+        "pull_request": null
+      },
+      "context": {
+        "request_id": "ART-0045",
+        "task_id": "TASK-0157",
+        "delivery_branch": "codex/art-0044-0045-side-walls",
+        "status": "requested",
+        "agent": "codex",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "source_count": 0,
+        "candidate_count": 1,
+        "quality_status": "needs_regeneration",
+        "production_active": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "generation_cache_required": false,
+        "reference_path": "map_factory/references/hero_room_01_target_20261103.png",
+        "reference_sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+        "reference_use": "style/composition only, no pixels pasted/traced",
+        "files": [],
+        "requested_output_path": ".agents/graphics/deliveries/ART-0045/hero_east_curved_side_wall.png",
+        "blocker": "Built-in outputs below requested4x size despite explicit larger-size retry; no resampling enlargement permitted.",
+        "limitations": [
+          "No qualified production PNG exists at requested output path.",
+          "Collision/joins/room placement and east/west normals require room calibration; no map changed.",
+          "Smaller4x-native footprint numbers are informational, not a change to the owner-approved spec."
+        ]
+      }
+    },
+    {
       "path": "game_factory/golden_cyclone/v001/manifest.json",
       "sha256": "fed055720c59e96c1dafda34f83dfd630971b342a225ea261a0a33a9ceda521d",
       "request_id": "ART-0029",
@@ -1100,11 +1357,11 @@
     },
     {
       "map_id": "hero_room_01",
-      "version": 27,
+      "version": 29,
       "latest": "map_factory/maps/hero_room_01/latest.json",
-      "immutable_snapshot": "map_factory/maps/hero_room_01/versions/v0027.json",
-      "snapshot_sha256": "9d1687372fc75444868745d014a6b6473fc453d322cf9be08b53ca06b7590e57",
-      "updated_at": "2026-11-11T13:48:52+00:00",
+      "immutable_snapshot": "map_factory/maps/hero_room_01/versions/v0029.json",
+      "snapshot_sha256": "63689495c6fdec430bdf8703dda1427cd9c905e1bb50f04655aa31736abe2a9f",
+      "updated_at": "2026-11-11T16:35:48+00:00",
       "parent_map": null
     }
   ],
@@ -1547,10 +1804,12 @@
       "quality_status": "needs_map_calibration",
       "integration_status": "not_inferred_from_visual_approval",
       "production_active": false,
-      "exact_path_map_references": [],
+      "exact_path_map_references": [
+        "hero_room_01"
+      ],
       "publication": {
-        "manifest_on_origin_main": false,
-        "delivery_branch": "codex/hero-room-cliff-foam",
+        "manifest_on_origin_main": true,
+        "delivery_branch": null,
         "pull_request": null
       },
       "readme_path": "game_factory/environment/ART-0003/v001/README.md",
@@ -1658,10 +1917,12 @@
       "quality_status": "needs_map_calibration",
       "integration_status": "not_inferred_from_visual_approval",
       "production_active": false,
-      "exact_path_map_references": [],
+      "exact_path_map_references": [
+        "hero_room_01"
+      ],
       "publication": {
-        "manifest_on_origin_main": false,
-        "delivery_branch": "codex/hero-room-cliff-foam",
+        "manifest_on_origin_main": true,
+        "delivery_branch": null,
         "pull_request": null
       },
       "readme_path": "game_factory/environment/ART-0003/v001/README.md",
@@ -1769,10 +2030,12 @@
       "quality_status": "needs_map_calibration",
       "integration_status": "not_inferred_from_visual_approval",
       "production_active": false,
-      "exact_path_map_references": [],
+      "exact_path_map_references": [
+        "hero_room_01"
+      ],
       "publication": {
-        "manifest_on_origin_main": false,
-        "delivery_branch": "codex/hero-room-cliff-foam",
+        "manifest_on_origin_main": true,
+        "delivery_branch": null,
         "pull_request": null
       },
       "readme_path": "game_factory/environment/ART-0003/v001/README.md",
@@ -1880,10 +2143,12 @@
       "quality_status": "needs_map_calibration",
       "integration_status": "not_inferred_from_visual_approval",
       "production_active": false,
-      "exact_path_map_references": [],
+      "exact_path_map_references": [
+        "hero_room_01"
+      ],
       "publication": {
-        "manifest_on_origin_main": false,
-        "delivery_branch": "codex/hero-room-cliff-foam",
+        "manifest_on_origin_main": true,
+        "delivery_branch": null,
         "pull_request": null
       },
       "readme_path": "game_factory/environment/ART-0003/v001/README.md",
@@ -10066,6 +10331,1929 @@
         "pull_request": null
       },
       "readme_path": "game_factory/environment/ART-0039/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0040/v001/hero_wall_lantern_east/selected",
+      "id": "hero_wall_lantern_east",
+      "request_id": "ART-0040",
+      "category": "lighting",
+      "selection": "selected",
+      "master_path": "assets_hd/lighting/east_wall_lantern/v001/hero_wall_lantern_east.png",
+      "sha256": "5607125059ca9c72d501f740bf28a87621305c4500a84cb703adab5102f7aef5",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        123,
+        94,
+        920,
+        1374
+      ],
+      "manifest_path": "game_factory/environment/ART-0040/v001/manifest.json",
+      "manifest_sha256": "962e1524fb1543449446b689ec79b8064b231c7e9ed88410d22486b60ab60a31",
+      "metadata": {
+        "id": "hero_wall_lantern_east",
+        "request_id": "ART-0040",
+        "master_path": "assets_hd/lighting/east_wall_lantern/v001/hero_wall_lantern_east.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0040/hero_wall_lantern_east.png",
+        "sha256": "5607125059ca9c72d501f740bf28a87621305c4500a84cb703adab5102f7aef5",
+        "pixel_size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bounds_alpha_128": [
+          123,
+          94,
+          920,
+          1374
+        ],
+        "origin": [
+          232,
+          330
+        ],
+        "origin_rule": "manual measured wall-mount point on backplate at arm root, not ground pivot",
+        "bottom_center_origin": [
+          521.5,
+          1373
+        ],
+        "mount_points": {
+          "wall": [
+            232,
+            330
+          ]
+        },
+        "native_origin": [
+          4.173431734317343,
+          15.660493827160494
+        ],
+        "native_canvas": [
+          29,
+          53
+        ],
+        "native_width": 29,
+        "native_height": 53,
+        "native_review_path": "game_factory/environment/ART-0040/v001/native_review/hero_wall_lantern_east.png",
+        "native_review_sha256": "bd9ab15264120cdfd4bffcb2511c34a9136b86f51af74f1882976a55c7f16b67",
+        "native_source_region": [
+          115,
+          86,
+          928,
+          1382
+        ],
+        "resized_size": [
+          29,
+          46
+        ],
+        "offset": [
+          0,
+          7,
+          29,
+          53
+        ],
+        "uniform_scale": 0.03567035670356704,
+        "source_pixels_per_native_pixel": 28.034482758620687,
+        "facing": "east-pointing; wall mount on left and hanging lamp to right",
+        "mount_status": "source pixel manually annotated; wall-local integration offset uncalibrated",
+        "collision": false,
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "external_halo": false,
+        "alpha_note": "Tool preview shows colored RGB in alpha0 surround; real compositing is clean. Weak alpha may reach canvas bottom; strong alpha128 bounds safely inside. QA bbox+8px excludes remote weak-alpha noise; master intact.",
+        "independent_generation": true,
+        "bitmap_flip_or_rotation": false,
+        "source_upscaled": false,
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "prompt_text": "ART-0040 attempt2. Edit this lantern image with ONE correction: REMOVE ALL EXTERNAL AMBER GLOW / HALO / DARK BACKDROP. Keep exactly the drawn lantern/bracket/left mounting plate and internal glass/candle illumination, same east-pointing direction, same upper-left metal highlights, same1024x1536canvas, same shape and placement. Every pixel outside physical brass/glass/candle/link silhouette must become genuinely TRANSPARENT alpha0, including the background inside bracket curls and chain links. Clean hard-edged pixel-art cutout with at most a one-pixel anti-alias fringe, absolutely no fuzzy amber haze. Do not add a drop shadow, outline halo, white background, wall or stone. The internal warm light remains confined inside the closed glass body; metal can have painted highlights but emits no external glow. No crop, rotation, mirror, layout or style change. Whole object intact with transparent margins. Deliver one transparent RGBA PNG.",
+        "prompt_path": "game_factory/environment/ART-0040/v001/requests/hero_wall_lantern_east.txt",
+        "initial_prompt_path": "game_factory/environment/ART-0040/v001/requests/hero_wall_lantern_east_initial.txt",
+        "quality_status": "needs_map_calibration",
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "production_active": true
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_map_calibration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": true,
+      "exact_path_map_references": [
+        "hero_room_01"
+      ],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0040-provenance-review",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0040/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0040/v001/hero_wall_lantern_east_attempt_01/rejected",
+      "id": "hero_wall_lantern_east_attempt_01",
+      "request_id": "ART-0040",
+      "category": "lighting",
+      "selection": "rejected",
+      "master_path": "assets_hd/lighting/east_wall_lantern/v001/rejected/hero_wall_lantern_east_attempt_01.png",
+      "sha256": "8dd0e43e1f68e2caf4c1f3b9a174c708b482481a96ae0bbfc23e8952c3ba0a8f",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        124,
+        95,
+        921,
+        1375
+      ],
+      "manifest_path": "game_factory/environment/ART-0040/v001/manifest.json",
+      "manifest_sha256": "962e1524fb1543449446b689ec79b8064b231c7e9ed88410d22486b60ab60a31",
+      "metadata": {
+        "id": "hero_wall_lantern_east_attempt_01",
+        "path": "assets_hd/lighting/east_wall_lantern/v001/rejected/hero_wall_lantern_east_attempt_01.png",
+        "sha256": "8dd0e43e1f68e2caf4c1f3b9a174c708b482481a96ae0bbfc23e8952c3ba0a8f",
+        "pixel_size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "quality_status": "not_selected",
+        "reason": "Earlier attempt superseded by separately requested alpha-cleanup edit. Apparent halo in tool preview was hidden RGB beneath alpha0, not a visible alpha-composited halo; not an owner rejection.",
+        "prompt_text": "ART-0040 hero_wall_lantern_east. Produce ONE newly drawn true EAST-POINTING counterpart of the attached WEST-facing brass lantern, using attached image for material/design identity ONLY. Do NOT flip/mirror/rotate/paste it. Reconstruct and repaint the opposite view with unchanged UPPER-LEFT illumination (bright top/left brass edges, darker lower-right recesses), so it is a new proper directional drawing. A decorative tall narrow bronze-gold wall mounting backplate is on the LEFT side near upper-left; a curved S-scroll arm projects from it to the RIGHT (east), with a small hanging link suspending a vertical hexagonal glass lantern on the RIGHT, below the arm. Compact tall silhouette, same brass trim, modest pointed cap and bottom finial, warm yellow-white internal candle with amber glass, visible top planes and front plus side glass face. Camera tactical RPG south-of-room looking north/down about50degrees, orthographic. Sharp high-detail PIXEL ART clusters, 1-2pixel dark contour at native29x53, match attached master's oak-gold brass density; no blur. Single whole object, source master portrait1024x1536 or larger, minimum400x720 genuinely native; ~6% transparent safety margin. Clean genuine TRANSPARENT RGBA PNG, true alpha0 around and between bracket curls. No wall, stone blocks, floor, cast shadow, external light halo/glow, plants/ivy, banner, characters, text/label/watermark, frame, sheets or extra lanterns. Flame stays inside glass. The left mounting plate and east-projecting arm must be clearly readable. One standalone asset at one angle; not a paired comparison.",
+        "prompt_path": "game_factory/environment/ART-0040/v001/requests/hero_wall_lantern_east_initial.txt"
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "not_selected",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": true,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0040-provenance-review",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0040/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0041/v001/field_grass_a/selected",
+      "id": "field_grass_a",
+      "request_id": "ART-0041",
+      "category": "floor",
+      "selection": "selected",
+      "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_a.png",
+      "sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "manifest_path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "manifest_sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+      "metadata": {
+        "id": "field_grass_a",
+        "request_id": "ART-0041",
+        "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_a.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0041/field_grass_a.png",
+        "sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          255,
+          255
+        ],
+        "bounds_alpha_128": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "origin": [
+          627.0,
+          1253
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "generation_source_path": "game_factory/environment/ART-0041/v001/generation_sources/field_grass_a_rgb.png",
+        "generation_source_sha256": "5f3c01ef47a2603ace8e423dc59c7699829fc85d0eee65fe8c6d7f221f3764a0",
+        "generation_source_mode": "RGB",
+        "format_only_RGBA_export": true,
+        "RGB_pixels_unchanged": true,
+        "native_canvas": [
+          64,
+          64
+        ],
+        "native_width": 64,
+        "native_height": 64,
+        "native_review_path": "game_factory/environment/ART-0041/v001/native_review/field_grass_a.png",
+        "native_review_sha256": "77a7ca9d2d06d9ff4bd5a570d19d9bc45b050f7614e56e458642d515031c84d5",
+        "native_source_region": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "native_alignment_phase_source_px": [
+          0,
+          0
+        ],
+        "native_offset": [
+          0,
+          0
+        ],
+        "native_method": "nearest-neighbour export; original master retained",
+        "source_pixels_per_native_pixel": 19.59375,
+        "floor_surface_opaque": true,
+        "grid_anchor_native": [
+          0,
+          0
+        ],
+        "facing": "flat top-down tile/overlay",
+        "collision": false,
+        "base_cell_canvas": [
+          64,
+          64
+        ],
+        "logical_blocking": false,
+        "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+        "draw_offset_native": [
+          0,
+          0
+        ],
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "runtime_opacity_recommendation": 1.0,
+        "prompt_text": "ART-0041 field_grass_a. ONE seamless square GRASS AND EARTH FLOOR TEXTURE TILE for a64x64 tactical battle cell. New original pixel art, no scenery image or cutout. Full square canvas1024x1024or larger, minimum512x512, RGBA PNG with ALPHA255 EVERYWHERE: floor surface deliberately opaque, touching ALL FOUR EDGES with NO transparent margin. Orthographic top-down terrain viewed in a tactical RPG; no isometric diamond, side face, raised platform, perspective grid or horizon. Soft olive/moss green base around#60813f, restrained dark#4b6631 and lighter#78954d clusters, tiny occasional warm dry-earth#8a7048 cracks/specks. Hard deliberate pixel clusters readable when reduced to64x64, individual game-scale clumps1-3px; no smooth blur or photographic noise. EVEN brightness and low contrast over the entire tile: no vignette/spotlight, no bright central patch, no obvious diagonal stripe or big distinctive clump. Seamless repeating edges, grass grain continues from left to right and top to bottom, no border line or frame. Edge palette must stay near the same olive base on all sides so a second matching tile can alternate without checker seams. Upper-left daylight without directional cast shadows. No rocks, tall plants, flowers, trees, water, cliffs, characters, props, footprints, roads, text, labels, watermark, frame or sheet. ONE flat ground tile only, not a rendered landscape. Floor texture is the explicit opaque-surface exception; do not remove its background.",
+        "prompt_path": "game_factory/environment/ART-0041/v001/requests/field_grass_a.txt",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "independent_generation": true,
+        "bitmap_flip_or_rotation": false,
+        "source_upscaled": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_runtime_integration",
+        "production_active": false,
+        "import_recommendation": {
+          "compression": "lossless",
+          "mipmaps": false,
+          "texture_filter": "nearest"
+        }
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_runtime_integration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0041/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0041/v001/field_grass_b/selected",
+      "id": "field_grass_b",
+      "request_id": "ART-0041",
+      "category": "floor",
+      "selection": "selected",
+      "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_b.png",
+      "sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "manifest_path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "manifest_sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+      "metadata": {
+        "id": "field_grass_b",
+        "request_id": "ART-0041",
+        "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_b.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0041/field_grass_b.png",
+        "sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          255,
+          255
+        ],
+        "bounds_alpha_128": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "origin": [
+          627.0,
+          1253
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "generation_source_path": "game_factory/environment/ART-0041/v001/generation_sources/field_grass_b_rgb.png",
+        "generation_source_sha256": "ee17d14947cc7e2112a1a52ee31433f813901f2f61edd91a3a73ed69f1e46d24",
+        "generation_source_mode": "RGB",
+        "format_only_RGBA_export": true,
+        "RGB_pixels_unchanged": true,
+        "native_canvas": [
+          64,
+          64
+        ],
+        "native_width": 64,
+        "native_height": 64,
+        "native_review_path": "game_factory/environment/ART-0041/v001/native_review/field_grass_b.png",
+        "native_review_sha256": "019292af834c58b5d13a0e3267971e1010b9b8e468b8bd812d31f2eb8bc09ec4",
+        "native_source_region": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "native_alignment_phase_source_px": [
+          0,
+          0
+        ],
+        "native_offset": [
+          0,
+          0
+        ],
+        "native_method": "nearest-neighbour export; original master retained",
+        "source_pixels_per_native_pixel": 19.59375,
+        "floor_surface_opaque": true,
+        "grid_anchor_native": [
+          0,
+          0
+        ],
+        "facing": "flat top-down tile/overlay",
+        "collision": false,
+        "base_cell_canvas": [
+          64,
+          64
+        ],
+        "logical_blocking": false,
+        "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+        "draw_offset_native": [
+          0,
+          0
+        ],
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "runtime_opacity_recommendation": 1.0,
+        "prompt_text": "ART-0041 field_grass_b. Create ONE new matching alternate seamless floor texture tile for the attached grass A. Preserve EXACT1254x1254 square canvas, same olive-green base/average brightness, same low contrast and cluster density. Change the interior arrangement of tiny grass and warm dry-earth specks enough to be a distinct tile, but KEEP THE OUTER10% EDGE BAND visually/palette-identical and continuous with A. Both tiles alternate in a checkerboard at64x64 with no visible boundary, stripes, frames or brightness jump. Tile B should also repeat seamlessly with itself. Full opaque RGBA floor surface, alpha255 EVERYWHERE, no transparent margins/background removal. Orthographic top-down flat grass/earth texture, no isometric sides, no raised platform or perspective. Hard deliberate pixel clusters, not blur/photo, native game clumps1-3px, no central highlight/vignette or big landmark. No rock, tall tuft, flower/tree, road, water, shadow, prop, characters, text, watermark, frame, grid or sheet. One independent original floor tile; not a collage or flipped/rotated tile A. This is the opaque floor exception; do not remove any part of its full-square surface.",
+        "prompt_path": "game_factory/environment/ART-0041/v001/requests/field_grass_b.txt",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "independent_generation": true,
+        "bitmap_flip_or_rotation": false,
+        "source_upscaled": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_runtime_integration",
+        "production_active": false,
+        "import_recommendation": {
+          "compression": "lossless",
+          "mipmaps": false,
+          "texture_filter": "nearest"
+        }
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_runtime_integration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0041/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0041/v001/field_rock_block/selected",
+      "id": "field_rock_block",
+      "request_id": "ART-0041",
+      "category": "props",
+      "selection": "selected",
+      "master_path": "assets_hd/props/skirmish_rock/v001/field_rock_block.png",
+      "sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        32,
+        285,
+        989,
+        1286
+      ],
+      "manifest_path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "manifest_sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+      "metadata": {
+        "id": "field_rock_block",
+        "request_id": "ART-0041",
+        "master_path": "assets_hd/props/skirmish_rock/v001/field_rock_block.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0041/field_rock_block.png",
+        "sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24",
+        "pixel_size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bounds_alpha_128": [
+          32,
+          285,
+          989,
+          1286
+        ],
+        "origin": [
+          510.5,
+          1285
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "generation_source_path": "assets_hd/props/skirmish_rock/v001/field_rock_block.png",
+        "generation_source_sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24",
+        "generation_source_mode": "RGBA",
+        "format_only_RGBA_export": false,
+        "RGB_pixels_unchanged": true,
+        "native_canvas": [
+          64,
+          96
+        ],
+        "native_width": 64,
+        "native_height": 96,
+        "native_review_path": "game_factory/environment/ART-0041/v001/native_review/field_rock_block.png",
+        "native_review_sha256": "75b0331279f1c0e3e8aa420690d0829e9d812e27bbeeccdc807b346155400db2",
+        "native_source_region": [
+          24,
+          277,
+          997,
+          1294
+        ],
+        "native_alignment_phase_source_px": [
+          0,
+          0
+        ],
+        "native_offset": [
+          0,
+          29,
+          64,
+          96
+        ],
+        "native_method": "nearest-neighbour export; original master retained",
+        "source_pixels_per_native_pixel": 15.17910447761194,
+        "floor_surface_opaque": false,
+        "grid_anchor_native": [
+          0,
+          0
+        ],
+        "facing": "three-quarter top-down rock, upper-left light",
+        "collision": false,
+        "base_cell_canvas": [
+          64,
+          64
+        ],
+        "logical_blocking": true,
+        "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+        "draw_offset_native": [
+          0,
+          -32
+        ],
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "runtime_opacity_recommendation": 1.0,
+        "prompt_text": "ART-0041 field_rock_block. ONE independent impassable LIMESTONE BOULDER sprite for a64x64 tactical field cell, may rise into a64x96 sprite canvas. Transparent RGBA PNG, portrait1024x1536 or larger, minimum512x768, complete object with6%empty margins, no cutoffs. One connected chunky angular natural boulder, not a wall, pillar, carved cube, pile of separate rocks or island. Warm pale sandstone/limestone like the SKL-SF Mediterranean room reference: tan/cream top planes, ochre-grey shaded sides, chipped angular edges and a few dark warm cracks. Orthographic three-quarter top-down tactical RPG view, camera looking north/down about50degrees, upper-left daylight. Hard crisp detailed pixel clusters and1-2px dark outline at native64x96; no blur, no painterly photographic grain. The lower contact footprint fits one64x64cell; boulder is slightly taller than its base footprint, broad solid silhouette readable at native. The stone rests on its own flat contact edge, but NO GROUND, NO EXTERNAL DROP/CAST SHADOW, NO dirt/grass pedestal or landscape. Alpha0 around object. No plants/ivy/moss clumps, sea/water, crystals, glowing magic, characters, units, text, numbers, label, watermark, frame or sheet. One plain rock at one angle only.",
+        "prompt_path": "game_factory/environment/ART-0041/v001/requests/field_rock_block.txt",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "independent_generation": true,
+        "bitmap_flip_or_rotation": false,
+        "source_upscaled": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_runtime_integration",
+        "production_active": false,
+        "import_recommendation": {
+          "compression": "lossless",
+          "mipmaps": false,
+          "texture_filter": "nearest"
+        }
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_runtime_integration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0041/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0041/v001/marker_move/selected",
+      "id": "marker_move",
+      "request_id": "ART-0041",
+      "category": "decor",
+      "selection": "selected",
+      "master_path": "assets_hd/decor/skirmish_markers/v001/marker_move.png",
+      "sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        240
+      ],
+      "bounds_alpha_128": [
+        182,
+        182,
+        1073,
+        1073
+      ],
+      "manifest_path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "manifest_sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+      "metadata": {
+        "id": "marker_move",
+        "request_id": "ART-0041",
+        "master_path": "assets_hd/decor/skirmish_markers/v001/marker_move.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0041/marker_move.png",
+        "sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          240
+        ],
+        "bounds_alpha_128": [
+          182,
+          182,
+          1073,
+          1073
+        ],
+        "origin": [
+          627.5,
+          1072
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "generation_source_path": "assets_hd/decor/skirmish_markers/v001/marker_move.png",
+        "generation_source_sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935",
+        "generation_source_mode": "RGBA",
+        "format_only_RGBA_export": false,
+        "RGB_pixels_unchanged": true,
+        "native_canvas": [
+          64,
+          64
+        ],
+        "native_width": 64,
+        "native_height": 64,
+        "native_review_path": "game_factory/environment/ART-0041/v001/native_review/marker_move.png",
+        "native_review_sha256": "fbe9c2e66b4ccf4135eab05183da7263a60c1151e645d7759e2e41cdf3aa99dc",
+        "native_source_region": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "native_alignment_phase_source_px": [
+          0,
+          0
+        ],
+        "native_offset": [
+          0,
+          0
+        ],
+        "native_method": "nearest-neighbour export; original master retained",
+        "source_pixels_per_native_pixel": 19.59375,
+        "floor_surface_opaque": false,
+        "grid_anchor_native": [
+          0,
+          0
+        ],
+        "facing": "flat top-down tile/overlay",
+        "collision": false,
+        "base_cell_canvas": [
+          64,
+          64
+        ],
+        "logical_blocking": false,
+        "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+        "draw_offset_native": [
+          0,
+          0
+        ],
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "runtime_opacity_recommendation": 0.75,
+        "prompt_text": "ART-0041 marker_move. ONE standalone BLUE MOVE-CELL OVERLAY sprite, not an illustration, no background. Full square1254x1254master (minimum512x512), mapped to64x64native. Genuine transparent RGBA, hollow/transparent centre and outside. Geometry: axis-aligned square INNER BORDER, outer box inset2nativepixels on every side (about40sourcepx), clean line thickness EXACT2nativepixels (about40sourcepx). Sharp square90degree corners with pixel steps, no isometric diamond, no 3D perspective or bevel. Blue#2f8fe8 line, translucent about70%alpha, uniform continuous stroke. Optional interior wash blue at only10%alpha so grass and units remain clearly visible; no opaque panel. No glow, soft halo, shadow, bright white rim, complex ornament, arrows, cross, icon, numbers, text, units, grass, scenery, frame surrounding a sheet, checkerboard backdrop or watermark. It is itself ONE cell-selection border, not a canvas frame decoration. Pixel-art crisp hard edge, no blur. Keep line fully inside64x64cell and centred, visible over both olive grass and dry earth. ONE overlay PNG, not a sheet or multiple variants. All empty pixels truly alpha0; do not paint a black/white background.",
+        "prompt_path": "game_factory/environment/ART-0041/v001/requests/marker_move.txt",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "independent_generation": true,
+        "bitmap_flip_or_rotation": false,
+        "source_upscaled": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_runtime_integration",
+        "production_active": false,
+        "import_recommendation": {
+          "compression": "lossless",
+          "mipmaps": false,
+          "texture_filter": "nearest"
+        },
+        "nominal_border_native_px": 2,
+        "measured_alpha128_horizontal_core_runs": [
+          [
+            9,
+            10
+          ],
+          [
+            53,
+            54
+          ]
+        ],
+        "measured_alpha128_vertical_core_runs": [
+          [
+            9,
+            10
+          ],
+          [
+            53,
+            54
+          ]
+        ],
+        "centre_alpha": 0,
+        "alignment_note": "active ring uses2sourcepx sampling phase, with proof discarded rows/cols alpha0; no visible source pixel clipped"
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_runtime_integration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0041/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0041/v001/marker_target/selected",
+      "id": "marker_target",
+      "request_id": "ART-0041",
+      "category": "decor",
+      "selection": "selected",
+      "master_path": "assets_hd/decor/skirmish_markers/v001/marker_target.png",
+      "sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        181,
+        181,
+        1073,
+        1073
+      ],
+      "manifest_path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "manifest_sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+      "metadata": {
+        "id": "marker_target",
+        "request_id": "ART-0041",
+        "master_path": "assets_hd/decor/skirmish_markers/v001/marker_target.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0041/marker_target.png",
+        "sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          181,
+          181,
+          1073,
+          1073
+        ],
+        "origin": [
+          627.0,
+          1072
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "generation_source_path": "assets_hd/decor/skirmish_markers/v001/marker_target.png",
+        "generation_source_sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205",
+        "generation_source_mode": "RGBA",
+        "format_only_RGBA_export": false,
+        "RGB_pixels_unchanged": true,
+        "native_canvas": [
+          64,
+          64
+        ],
+        "native_width": 64,
+        "native_height": 64,
+        "native_review_path": "game_factory/environment/ART-0041/v001/native_review/marker_target.png",
+        "native_review_sha256": "3380667b38416bbaa805b37deda8826891a1bde8ade0dc07aeb76d3b375acd3f",
+        "native_source_region": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "native_alignment_phase_source_px": [
+          0,
+          0
+        ],
+        "native_offset": [
+          0,
+          0
+        ],
+        "native_method": "nearest-neighbour export; original master retained",
+        "source_pixels_per_native_pixel": 19.59375,
+        "floor_surface_opaque": false,
+        "grid_anchor_native": [
+          0,
+          0
+        ],
+        "facing": "flat top-down tile/overlay",
+        "collision": false,
+        "base_cell_canvas": [
+          64,
+          64
+        ],
+        "logical_blocking": false,
+        "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+        "draw_offset_native": [
+          0,
+          0
+        ],
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "runtime_opacity_recommendation": 0.75,
+        "prompt_text": "ART-0041 marker_target. ONE independent RED TARGET-CELL OVERLAY, matching the attached BLUE move marker's square geometry, canvas and stroke placement. True transparent RGBA1254x1254. Keep the border at the same source outer box approximately[182,182,1073,1073], about40sourcepixels thick =2nativepixels when the whole canvas is shown at64x64. New red#e54a45 continuous square line, sharp90degree corners, flat pixel-art edge, translucent about70-80%alpha; no bright-white or 3D bevel. Centre fully transparent alpha0 (no opaque wash), outside fully transparent alpha0. Absolutely no scattered colored flecks, blurry glow, halo, drop shadow or texture noise around border. One clean cell-selection frame only; do not draw grass, checkerboard, black/white backdrop, crosshair, arrows, icon, number, text, label, watermark, canvas frame or multiple variants. Match the same native alignment as blue so switching markers causes no shift. ONE new independently requested overlay PNG, not a sheet. No whole-image rotation/flip, no extra objects.",
+        "prompt_path": "game_factory/environment/ART-0041/v001/requests/marker_target.txt",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "independent_generation": true,
+        "bitmap_flip_or_rotation": false,
+        "source_upscaled": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_runtime_integration",
+        "production_active": false,
+        "import_recommendation": {
+          "compression": "lossless",
+          "mipmaps": false,
+          "texture_filter": "nearest"
+        },
+        "nominal_border_native_px": 2,
+        "measured_alpha128_horizontal_core_runs": [
+          [
+            9,
+            10
+          ],
+          [
+            53,
+            54
+          ]
+        ],
+        "measured_alpha128_vertical_core_runs": [
+          [
+            9,
+            10
+          ],
+          [
+            53,
+            54
+          ]
+        ],
+        "centre_alpha": 0,
+        "alignment_note": "active ring uses2sourcepx sampling phase, with proof discarded rows/cols alpha0; no visible source pixel clipped"
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_runtime_integration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0041/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0041/v001/marker_active/selected",
+      "id": "marker_active",
+      "request_id": "ART-0041",
+      "category": "decor",
+      "selection": "selected",
+      "master_path": "assets_hd/decor/skirmish_markers/v001/marker_active.png",
+      "sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        187,
+        188,
+        1054,
+        1061
+      ],
+      "manifest_path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "manifest_sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+      "metadata": {
+        "id": "marker_active",
+        "request_id": "ART-0041",
+        "master_path": "assets_hd/decor/skirmish_markers/v001/marker_active.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0041/marker_active.png",
+        "sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          187,
+          188,
+          1054,
+          1061
+        ],
+        "origin": [
+          620.5,
+          1060
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "generation_source_path": "assets_hd/decor/skirmish_markers/v001/marker_active.png",
+        "generation_source_sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc",
+        "generation_source_mode": "RGBA",
+        "format_only_RGBA_export": false,
+        "RGB_pixels_unchanged": true,
+        "native_canvas": [
+          64,
+          64
+        ],
+        "native_width": 64,
+        "native_height": 64,
+        "native_review_path": "game_factory/environment/ART-0041/v001/native_review/marker_active.png",
+        "native_review_sha256": "6846545bb9302f0f5212e7ca3c0ecad7f982bf13242ca86666be07e33e43961a",
+        "native_source_region": [
+          2,
+          2,
+          1256,
+          1256
+        ],
+        "native_alignment_phase_source_px": [
+          2,
+          2
+        ],
+        "native_offset": [
+          0,
+          0
+        ],
+        "native_method": "nearest-neighbour export; original master retained",
+        "source_pixels_per_native_pixel": 19.59375,
+        "floor_surface_opaque": false,
+        "grid_anchor_native": [
+          0,
+          0
+        ],
+        "facing": "flat top-down tile/overlay",
+        "collision": false,
+        "base_cell_canvas": [
+          64,
+          64
+        ],
+        "logical_blocking": false,
+        "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+        "draw_offset_native": [
+          0,
+          0
+        ],
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "runtime_opacity_recommendation": 0.75,
+        "prompt_text": "ART-0041 marker_active attempt2, precise thin-line correction. Preserve this gold circular ring's exact1254x1254 transparent canvas, centre and OUTER edge/bounds. ONLY thicken the ring INWARD slightly: present stroke is about29sourcepixels, needs40sourcepixels (EXACT2pixels at64x64native). Outer circle radius~430px around[627,627] remains fixed; inner radius~390px, so line40px. Add about10sourcepixels of gold inward along the whole circumference. Uniform stroke, particularly cardinal left/top must be as thick as right/bottom. Same flat gold hue and translucent alpha; genuine alpha0 centre and outside. Do not change the ring into a torus, square, glow or coin; no bevel, drop shadow, halo, flecks, extra texture, text or labels. Hard crisp circular outline only. No resizing/rotation/flip or background. One independent corrected RGBA overlay PNG, no other object.",
+        "prompt_path": "game_factory/environment/ART-0041/v001/requests/marker_active.txt",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "independent_generation": true,
+        "bitmap_flip_or_rotation": false,
+        "source_upscaled": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_runtime_integration",
+        "production_active": false,
+        "import_recommendation": {
+          "compression": "lossless",
+          "mipmaps": false,
+          "texture_filter": "nearest"
+        },
+        "nominal_border_native_px": 2,
+        "measured_alpha128_horizontal_core_runs": [
+          [
+            9,
+            10
+          ],
+          [
+            52,
+            53
+          ]
+        ],
+        "measured_alpha128_vertical_core_runs": [
+          [
+            9,
+            10
+          ],
+          [
+            52,
+            53
+          ]
+        ],
+        "centre_alpha": 0,
+        "alignment_note": "active ring uses2sourcepx sampling phase, with proof discarded rows/cols alpha0; no visible source pixel clipped"
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_runtime_integration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0041/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0041/v001/marker_active_attempt_01/rejected",
+      "id": "marker_active_attempt_01",
+      "request_id": "ART-0041",
+      "category": "decor",
+      "selection": "rejected",
+      "master_path": "assets_hd/decor/skirmish_markers/v001/rejected/marker_active_attempt_01.png",
+      "sha256": "2f294f0129355d532bbc5b7115a2ab78d5cc7207a9ea62b40120dc5ccf1fa46f",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        195,
+        191,
+        1049,
+        1054
+      ],
+      "manifest_path": "game_factory/environment/ART-0041/v001/manifest.json",
+      "manifest_sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+      "metadata": {
+        "id": "marker_active_attempt_01",
+        "path": "assets_hd/decor/skirmish_markers/v001/rejected/marker_active_attempt_01.png",
+        "sha256": "2f294f0129355d532bbc5b7115a2ab78d5cc7207a9ea62b40120dc5ccf1fa46f",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          195,
+          191,
+          1049,
+          1054
+        ],
+        "quality_status": "not_selected",
+        "reason": "Initial native nearest sampling left a1px cardinal side. Corrected source plus explicit empty-margin sampling alignment selected.",
+        "prompt_path": "game_factory/environment/ART-0041/v001/requests/marker_active_initial.txt",
+        "prompt_text": "ART-0041 marker_active. ONE clean GOLD ACTIVE-UNIT RING overlay sprite, NOT a coin, orb, shield, torus render or illustration. Square1254x1254transparent RGBA master, minimum512square, native64x64. Flat perfect top-down circular RING centred[627,627], outer bounds approximately[182,182,1073,1073], uniform40sourcepx stroke =2nativepixels when whole canvas displayed64x64. Ring interior fully transparent alpha0 and exterior fully transparent alpha0. Gold#e4b346, translucent about75-80%alpha, slight upper-left highlight only inside the line, otherwise flat untextured stroke. Pixel-art sharp clean edges, no blur/halo/glow, no bevel/3D depth or perspective ellipse, no shadow or background fill. Align centre/outer extent with attached blue move-cell marker so all three overlays share native cell origin. No dotted marks, scattered pixels, arrows, compass, cross, star, runes, numbers/text, UI label, unit, grass, scenery, checkerboard, black/white backdrop, border around sheet, watermark, sheet or extra objects. This is ONE independently drawn thin circular selection outline, not a square frame recolor."
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "not_selected",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0041/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0042/v001/hero_rear_left_ruined_wall_window/selected",
+      "id": "hero_rear_left_ruined_wall_window",
+      "request_id": "ART-0042",
+      "category": "architecture",
+      "selection": "selected",
+      "master_path": "assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png",
+      "sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667",
+      "pixel_size": [
+        1921,
+        819
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        35,
+        34,
+        1876,
+        770
+      ],
+      "manifest_path": "game_factory/environment/ART-0042/v001/manifest.json",
+      "manifest_sha256": "93c6afa79f6486cfb95793f0e7f41332ac053feffc8e9ed69d905991841a85f3",
+      "metadata": {
+        "id": "hero_rear_left_ruined_wall_window",
+        "request_id": "ART-0042",
+        "master_path": "assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0042/hero_rear_left_ruined_wall_window.png",
+        "sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667",
+        "pixel_size": [
+          1921,
+          819
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          35,
+          34,
+          1876,
+          770
+        ],
+        "origin": [
+          955.5,
+          769
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "facing": "south-facing wall; camera south looking north/down",
+        "native_canvas": [
+          470,
+          200
+        ],
+        "native_width": 470,
+        "native_height": 200,
+        "native_review_path": "game_factory/environment/ART-0042/v001/native_review/hero_rear_left_ruined_wall_window.png",
+        "native_review_sha256": "6d7047c512332a34f676c1d4d5e6b46bd5363848bf0e7a5a37b3a7e476e605e4",
+        "native_source_region": [
+          0,
+          0,
+          1921,
+          819
+        ],
+        "source_pixels_per_native_pixel": [
+          4.087234042553192,
+          4.095
+        ],
+        "native_method": "whole canvas nearest-neighbour; no crop/flip/rotation/upscale; pixel dimensions rounded",
+        "prompt_text": "ART-0042 attempt2. Edit ONLY the rectangular window aperture so it becomes SQUARE. Preserve EXACT1922x818transparent RGBAcanvas and all wall outline, step heights, stone texture, lighting, all other pixels/structure. Current clear opening is approximately x569..734 and y404..597 (165x193sourcepx). Required clear hole approximately164x164px, equivalent40x40native at470x200. Keep the upper lintel and opening LEFT/RIGHT borders fixed; raise the lower sill by about29sourcepixels so the alpha0 aperture runs y404..568. Fill the removed lower slit with matching sandstone/sill, maintaining a thin neat sill and consistent mortar. The hole must remain fully transparent alpha0, no blue/glass/background. Do not shrink/move/rotate the wall or resize canvas. No ivy, plants, decoration, shadow, labels, backdrop, floor or extra objects. One isolated independently edited wall, full margins intact, hard pixel-art clusters, same warm tan stones and upper-left light.",
+        "prompt_path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window.txt",
+        "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0042_target.png",
+        "reference_crop_sha256": "c8d7a4005736fa1748cc78d108cd00291f790059ae812229772353e2d448bdaa",
+        "comparison_path": ".agents/graphics/requests/reference_crops/ART-0042_compare.png",
+        "comparison_sha256": "dcf2692382fc9ce2ae53b634138d809e15e760c1e2e8d3d63c50bc5217c50d56",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "independent_generation": true,
+        "source_upscaled": false,
+        "bitmap_flip_or_rotation": false,
+        "collision": null,
+        "collision_status": "needs wall navigation annotation at integration",
+        "footprint_64px_cells": null,
+        "connection_sockets": null,
+        "connection_status": "wall endpoint/arch join calibration not measured",
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_map_calibration",
+        "production_active": false,
+        "window_aperture_bounds_alpha_le8": [
+          564,
+          403,
+          741,
+          583
+        ],
+        "window_aperture_native_extent": [
+          43.305570015616865,
+          43.956043956043956
+        ],
+        "window_alpha0_sample": [
+          650,
+          490
+        ],
+        "window_proof": "enclosed alpha<=8 flood component; alpha0 centre",
+        "aperture_note": "Approximately square44x44 maximum low-alpha extent; request about40x40. Do not report exact40x40.",
+        "initial_prompt_path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window_initial.txt"
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_map_calibration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0042/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0042/v001/hero_rear_left_ruined_wall_window_attempt_01/rejected",
+      "id": "hero_rear_left_ruined_wall_window_attempt_01",
+      "request_id": "ART-0042",
+      "category": "architecture",
+      "selection": "rejected",
+      "master_path": "assets_hd/architecture/rear_left_window_wall/v001/rejected/hero_rear_left_ruined_wall_window_attempt_01.png",
+      "sha256": "8c4ec564a74a1a15d2b91518ca670448be1104dd0b288cd4f6c87828aaf80f3e",
+      "pixel_size": [
+        1922,
+        818
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        34,
+        33,
+        1876,
+        771
+      ],
+      "manifest_path": "game_factory/environment/ART-0042/v001/manifest.json",
+      "manifest_sha256": "93c6afa79f6486cfb95793f0e7f41332ac053feffc8e9ed69d905991841a85f3",
+      "metadata": {
+        "id": "hero_rear_left_ruined_wall_window_attempt_01",
+        "path": "assets_hd/architecture/rear_left_window_wall/v001/rejected/hero_rear_left_ruined_wall_window_attempt_01.png",
+        "sha256": "8c4ec564a74a1a15d2b91518ca670448be1104dd0b288cd4f6c87828aaf80f3e",
+        "pixel_size": [
+          1922,
+          818
+        ],
+        "reason": "Window aperture too tall for the requested square; superseded by independently requested square-window edit.",
+        "quality_status": "not_selected",
+        "prompt_path": "game_factory/environment/ART-0042/v001/requests/hero_rear_left_ruined_wall_window_initial.txt",
+        "prompt_text": "ART-0042 hero_rear_left_ruined_wall_window. Generate ONE independently drawn reusable SOUTH-FACING rear limestone wall segment, transparent RGBA. Attached crop is STYLE/COMPOSITION reference ONLY: do not paste, trace or crop it. Remove all scenery and decoration conceptually; draw a fresh isolated connected wall. Wide landscape canvas aspect EXACT47:20 (for example 2256x960), master MUST be at least1880px wide AND800px high genuinely native, not upscaled. On-canvas review470x200. Camera south looking north/down50degrees, orthographic tactical RPG; see front/south face and shallow horizontal upper stone surfaces. Baseline horizontal. Wall silhouette lowest on LEFT/west (roughly3stone courses), rises in BROKEN IRREGULAR STEPS toward RIGHT/east (roughly6courses); tallest end joins an arch elsewhere, but DO NOT draw any arch/column. No symmetrical castle battlements. Warm golden tan sandstone large rectangular blocks with staggered mortar, chipped corners, fine weathering, dark warm-brown1-2px outlines at native scale, hard detailed pixel clusters matching reference. Upper-left sunlight, darker right side faces. ONE clear SQUARE OPEN WINDOW in the WESTERN THIRD at x~32% of wall width; aperture40x40native relative to470pxwide wall. Straight stone lintel and thin stone sill, no arch over window. Aperture is genuinely alpha0 transparent; absolutely no blue sky/water/glass/wood inside. Wall is physically connected around all four sides of window. Entire wall intact within ~3% transparent safety margin; show full endpoints and lower stone feet. No ivy/leaves/flowers/moss clumps, lanterns, shelves, books, banners, bed, vases, floor, ocean, rocks beneath it, cast shadow, characters, text, label, frame or watermark. One wall at one angle, not a sheet or paired view.",
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          34,
+          33,
+          1876,
+          771
+        ]
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "not_selected",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0042/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0043/v001/hero_rear_right_wall_arched_door_niche/selected",
+      "id": "hero_rear_right_wall_arched_door_niche",
+      "request_id": "ART-0043",
+      "category": "architecture",
+      "selection": "selected",
+      "master_path": "assets_hd/architecture/rear_right_door_niche/v001/hero_rear_right_wall_arched_door_niche.png",
+      "sha256": "e4c179693e6f56575cf0384b7e00aa00a7c8ea9905db34df323677e659a31735",
+      "pixel_size": [
+        1397,
+        1126
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        32,
+        33,
+        1366,
+        1103
+      ],
+      "manifest_path": "game_factory/environment/ART-0043/v001/manifest.json",
+      "manifest_sha256": "df01cfb9c937f7edacab9609ac42c7445bf5660e9836ad1993d233203e39878a",
+      "metadata": {
+        "id": "hero_rear_right_wall_arched_door_niche",
+        "request_id": "ART-0043",
+        "master_path": "assets_hd/architecture/rear_right_door_niche/v001/hero_rear_right_wall_arched_door_niche.png",
+        "delivery_path": ".agents/graphics/deliveries/ART-0043/hero_rear_right_wall_arched_door_niche.png",
+        "sha256": "e4c179693e6f56575cf0384b7e00aa00a7c8ea9905db34df323677e659a31735",
+        "pixel_size": [
+          1397,
+          1126
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          32,
+          33,
+          1366,
+          1103
+        ],
+        "origin": [
+          699.0,
+          1102
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "facing": "south-facing wall; camera south looking north/down",
+        "native_canvas": [
+          310,
+          250
+        ],
+        "native_width": 310,
+        "native_height": 250,
+        "native_review_path": "game_factory/environment/ART-0043/v001/native_review/hero_rear_right_wall_arched_door_niche.png",
+        "native_review_sha256": "fb4a763967d963693ea4e5431736c8aeff0a7ebf7113fa6081b552e35616a688",
+        "native_source_region": [
+          0,
+          0,
+          1397,
+          1126
+        ],
+        "source_pixels_per_native_pixel": [
+          4.506451612903226,
+          4.504
+        ],
+        "native_method": "whole canvas nearest-neighbour; no crop/flip/rotation/upscale; pixel dimensions rounded",
+        "prompt_text": "ART-0043 final masonry correction. Preserve this single wall's exact silhouette, EIGHT horizontal stone courses, current closed small door/niche/emblem/latch and its1397x1126transparent canvas. Change ONLY the overlong sandstone blocks by drawing extra staggered VERTICAL mortar joints. Each ordinary block should be about120-180sourcepixels wide (about27-40native pixels at310x250). NO giant600pxlong blocks: subdivide every block wider than220sourcepixels into two/three/four separate blocks as needed, with chipped corners and visible narrow warm-brown joints. Aim8-10blocks across a full-width course rather than2-4. Keep existing horizontal course lines and course heights unchanged; do not add/remove courses or change any door/arch stone. Avoid perfectly aligned vertical seams from row to row. Same warm tan color, fine hard pixel clusters, upper-left light, matching prior left window wall. No new floor/ground, plants, vines, lanterns, shadows, sea, backdrop, text or frame. True RGBA transparency outside intact; no crop, flip, rotation, rescale or sheet. Only repaint the missing masonry divisions.",
+        "prompt_path": "game_factory/environment/ART-0043/v001/requests/hero_rear_right_wall_arched_door_niche.txt",
+        "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0043_target.png",
+        "reference_crop_sha256": "1117757e38d75899519e6e62600937c12761fa269543c93d92e69ee323f97d74",
+        "comparison_path": ".agents/graphics/requests/reference_crops/ART-0043_compare.png",
+        "comparison_sha256": "4e72cf88b2d4fb8f34966b8b12011b59f92ad04765865196595c0d879a26cebd",
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "independent_generation": true,
+        "source_upscaled": false,
+        "bitmap_flip_or_rotation": false,
+        "collision": null,
+        "collision_status": "needs wall navigation annotation at integration",
+        "footprint_64px_cells": null,
+        "connection_sockets": null,
+        "connection_status": "wall endpoint/arch join calibration not measured",
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_map_calibration",
+        "production_active": false,
+        "door_niche_bounds_manual": [
+          524,
+          584,
+          858,
+          1057
+        ],
+        "door_niche_bounds_status": "manual visual bounding estimate, not collision/interaction geometry",
+        "door_niche_native_extent": [
+          74.1159627773801,
+          105.0177619893428
+        ],
+        "door_closed": true,
+        "material_reference_path": "assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png",
+        "material_reference_sha256": "a43aa0bbad6d8246083b4e9424f25ad1b9aa3450926f107a8fe3ad3f8ac10667"
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_map_calibration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0043/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0043/v001/hero_rear_right_wall_arched_door_niche_attempt_01/rejected",
+      "id": "hero_rear_right_wall_arched_door_niche_attempt_01",
+      "request_id": "ART-0043",
+      "category": "architecture",
+      "selection": "rejected",
+      "master_path": "assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_01.png",
+      "sha256": "8d238e9369ea16303862ec1ce64cf298cbcca80002e107e83deefca37f269c7e",
+      "pixel_size": [
+        1397,
+        1126
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        32,
+        36,
+        1366,
+        1097
+      ],
+      "manifest_path": "game_factory/environment/ART-0043/v001/manifest.json",
+      "manifest_sha256": "df01cfb9c937f7edacab9609ac42c7445bf5660e9836ad1993d233203e39878a",
+      "metadata": {
+        "id": "hero_rear_right_wall_arched_door_niche_attempt_01",
+        "path": "assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_01.png",
+        "sha256": "8d238e9369ea16303862ec1ce64cf298cbcca80002e107e83deefca37f269c7e",
+        "pixel_size": [
+          1397,
+          1126
+        ],
+        "reason": "Approximately11courses instead of requested7-8; superseded by separate coursing redraw.",
+        "quality_status": "not_selected",
+        "prompt_path": "game_factory/environment/ART-0043/v001/requests/hero_rear_right_wall_arched_door_niche_initial43.txt",
+        "prompt_text": "ART-0043 hero_rear_right_wall_arched_door_niche. ONE new independently drawn connected SOUTH-FACING rear sandstone wall, transparent RGBA PNG, one piece at one angle. First attached image is the DESIGN reference crop only (never paste/trace/crop it); second attached clean wall is MATERIAL/STONE STYLE reference only, to make both rear walls match. Do not edit, flip or reuse that wall's pixels; draw new geometry. Canvas aspect EXACT31:25, for example1550x1250; master must be at least1240x1000 genuinely native, not upscaled. Native310x250review. Camera south looking north/down50degrees, orthographic tactical RPG, front/south face and shallow stone top surfaces visible. Wall is broad, irregular broken stepped top, TALLEST toward central/left-middle part (about7courses), descending in steps toward RIGHT/east end; full connected wall, bottom baseline horizontal. Same warm golden tan rectangular sandstone blocks, staggered warm-brown mortar, chipped corners, hard detailed pixel clusters, native1-2px dark contour, upper-left sunlight, darker right faces as clean material reference. In LOWER CENTRE place ONE SMALL RECESSED ROUND-ARCH STONE DOOR NICHE: complete outer arch frame around70px wide x110px tall relative to310x250wall (23%width,44%height), NOT a giant doorway covering half the wall. Bottom of niche near bottom baseline. Plain CLOSED dark warm-oak wooden panel inside it, small restrained brass compass-rose emblem near upper-middle of door, tiny latch; no text. Carved stone voussoirs and a thin stone threshold, subtle recessed interior shading confined to niche. No detached free-standing door, no double door or arch columns. Keep whole piece within3%transparent safety margin. No vines/ivy/flowers/plants/moss clumps, lanterns/candles, banners, shelves/books, vases, floor/ground, sea/sky/backdrop, cast shadow, characters, labels/watermarks/frame/panels/sheet. Wall and inset closed door only.",
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          32,
+          36,
+          1366,
+          1097
+        ]
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "not_selected",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0043/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0043/v001/hero_rear_right_wall_arched_door_niche_attempt_02/rejected",
+      "id": "hero_rear_right_wall_arched_door_niche_attempt_02",
+      "request_id": "ART-0043",
+      "category": "architecture",
+      "selection": "rejected",
+      "master_path": "assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_02.png",
+      "sha256": "b6e61bd0f6139f76434925de386ffa16f4f30f852c48f0b01b7740b8e65dc62b",
+      "pixel_size": [
+        1397,
+        1126
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        32,
+        34,
+        1367,
+        1100
+      ],
+      "manifest_path": "game_factory/environment/ART-0043/v001/manifest.json",
+      "manifest_sha256": "df01cfb9c937f7edacab9609ac42c7445bf5660e9836ad1993d233203e39878a",
+      "metadata": {
+        "id": "hero_rear_right_wall_arched_door_niche_attempt_02",
+        "path": "assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_02.png",
+        "sha256": "b6e61bd0f6139f76434925de386ffa16f4f30f852c48f0b01b7740b8e65dc62b",
+        "pixel_size": [
+          1397,
+          1126
+        ],
+        "reason": "Course count corrected but several blocks excessively wide; superseded by separate vertical-joint redraw.",
+        "quality_status": "not_selected",
+        "prompt_path": "game_factory/environment/ART-0043/v001/requests/hero_rear_right_wall_arched_door_niche_course_fix43.txt",
+        "prompt_text": "ART-0043 attempt2. Revise ONLY the sandstone block coursing of the attached wall. It currently has approximately11small horizontal courses at the tallest area; the approved written design needs about7-8larger courses. Repaint the masonry so tallest area has EIGHT clear staggered courses, lower east/right end about4-5courses. Increase vertical block face height, preserving the wall's EXACT outside stepped silhouette, width, full1397x1126transparent canvas, top-face perspective, warm tan material and upper-left light. Keep varied block widths and chipped edges like the reference, no new castle battlements. Preserve the entire closed recessed door/niche and brass compass design at its existing position and size: outer arch frame roughly x524..858,y584..1057, about74x105native on310x250. Do not enlarge or move the door. Wall is one connected piece, bottom baseline unchanged, all decorations excluded. Hard detailed pixel clusters and dark warm mortar, not blurry or photorealistic. True transparent RGBA surround, no floor/sky/sea, plants, lanterns, banners, cast shadow, text/UI/border. No crop/flip/rotation/upscale. One independently redrawn wall source only.",
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          32,
+          34,
+          1367,
+          1100
+        ]
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "not_selected",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0042-0043-rear-walls",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0043/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0044/v001/hero_west_curved_side_wall_attempt_01/rejected",
+      "id": "hero_west_curved_side_wall_attempt_01",
+      "request_id": "ART-0044",
+      "category": "architecture",
+      "selection": "rejected",
+      "master_path": "assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_01.png",
+      "sha256": "8ba1f9ffe11509a62ab89cb16abb8db71a9960220f5179a54b23d73334d0ef19",
+      "pixel_size": [
+        877,
+        1794
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        30,
+        4,
+        821,
+        1721
+      ],
+      "manifest_path": "game_factory/environment/ART-0044/v001/manifest.json",
+      "manifest_sha256": "b4732ce1148a8c4829f525f5d6e050f70423d1fe08d8edb7d9e989acc8e8319e",
+      "metadata": {
+        "id": "hero_west_curved_side_wall_attempt_01",
+        "request_id": "ART-0044",
+        "source_path": "assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_01.png",
+        "delivery_candidate_path": ".agents/graphics/deliveries/ART-0044/rejected/hero_west_curved_side_wall_attempt_01.png",
+        "sha256": "8ba1f9ffe11509a62ab89cb16abb8db71a9960220f5179a54b23d73334d0ef19",
+        "pixel_size": [
+          877,
+          1794
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          30,
+          4,
+          821,
+          1721
+        ],
+        "origin": [
+          425.5,
+          1720
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "facing": "east/southeast inside face; arc bulges west/left; endpoints right",
+        "native_canvas": [
+          230,
+          470
+        ],
+        "native_width": 230,
+        "native_height": 470,
+        "native_review_path": "game_factory/environment/ART-0044/v001/native_review/hero_west_curved_side_wall_attempt_01.png",
+        "native_review_sha256": "8dc069cb0637d387bf28419839b8bff7783506630806b25e24dcaefd40c709cd",
+        "native_source_region": [
+          0,
+          0,
+          877,
+          1794
+        ],
+        "requested_minimum_master": [
+          920,
+          1880
+        ],
+        "actual_source_pixels_per_native_pixel": [
+          3.8130434782608695,
+          3.8170212765957445
+        ],
+        "requested_4x_gate_passed": false,
+        "maximum_native_canvas_at4x": [
+          219,
+          448
+        ],
+        "maximum_native_note": "measurement only; requested canvas is NOT silently reduced",
+        "alpha128_margins": [
+          30,
+          4,
+          56,
+          73
+        ],
+        "independent_generation": true,
+        "source_upscaled": false,
+        "bitmap_flip_or_rotation": false,
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "prompt_text": "ART-0044 hero_west_curved_side_wall. ONE independently drawn connected CURVED MASONRY SIDE WALL for the WEST edge of a round terrace, isolated transparent RGBA. Reference crop is composition/material only: no paste, trace or extraction. High-resolution portrait master at least920x1880, ideally1080x2200 genuinely native; narrow canvas aspect23:47, intended native230x470. No upscale. CRITICAL GEOMETRY: this is an arc in FLOOR PLAN, not a flat straight front wall and not a stone doorway/arch. From top/rear at UPPER RIGHT of image, the wall sweeps/bulges LEFT/west through the middle, then returns toward LOWER RIGHT/front. A gentle open-C-shaped curved strip viewed from above; the open concave side faces RIGHT/east into the empty room. Both top and bottom endpoints lie toward right side; middle furthest left. Wall has real vertical thickness and3-4block-course inner face, not just flat coping slabs. South-of-room camera looking north/down50degrees, orthographic tactical RPG: see the TOP COURSE tracing the whole curve and the INSIDE east/southeast-facing vertical stone surface. Height4courses at far/rear end, descends to3at near/front end, modest alternating raised cap blocks (crenellated) along curve. Warm golden-tan limestone rectangular blocks roughly32x24px at native, staggered warm-brown joints, chipped corners and weathering, crisp detailed hard pixel clusters, thin dark contour. UPPER-LEFT sunlight, inner east face a little shaded, top surfaces bright. Whole arc within4% transparent margins. Nothing in empty centre or outside: NO floor/ground/sea/cliff/rock base, plants/ivy/flowers, banners, lanterns, posts, vases, windows/doors, cast shadow, characters, text/watermark, border, sheet or second piece. One continuous wall at one true perspective only.",
+        "prompt_path": "game_factory/environment/ART-0044/v001/requests/hero_west_curved_side_wall_attempt_01.txt",
+        "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0044_target.png",
+        "reference_crop_sha256": "d9935f2ec241d060f71f4fa3e5a3eafbcdd0e2d1c7482948cae9d9da4fd4eb4c",
+        "comparison_path": ".agents/graphics/requests/reference_crops/ART-0044_compare.png",
+        "comparison_sha256": "9918516b1845aea4e471a5d727e6d991fcd79925f8825aea03fb75c26f357ba0",
+        "collision": null,
+        "connection_sockets": null,
+        "footprint_64px_cells": null,
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_regeneration",
+        "production_active": false,
+        "reason": "Below requested4x source density. Native geometry/renderable preview does not waive master resolution. No qualified production output."
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_regeneration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0044-0045-side-walls",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0044/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0044/v001/hero_west_curved_side_wall_attempt_02/rejected",
+      "id": "hero_west_curved_side_wall_attempt_02",
+      "request_id": "ART-0044",
+      "category": "architecture",
+      "selection": "rejected",
+      "master_path": "assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_02.png",
+      "sha256": "69a3e8d903e7371f666ff965a6d19e35de6d87517ebb2916a7581251b20e29c6",
+      "pixel_size": [
+        878,
+        1792
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        44,
+        39,
+        815,
+        1659
+      ],
+      "manifest_path": "game_factory/environment/ART-0044/v001/manifest.json",
+      "manifest_sha256": "b4732ce1148a8c4829f525f5d6e050f70423d1fe08d8edb7d9e989acc8e8319e",
+      "metadata": {
+        "id": "hero_west_curved_side_wall_attempt_02",
+        "request_id": "ART-0044",
+        "source_path": "assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_02.png",
+        "delivery_candidate_path": ".agents/graphics/deliveries/ART-0044/rejected/hero_west_curved_side_wall_attempt_02.png",
+        "sha256": "69a3e8d903e7371f666ff965a6d19e35de6d87517ebb2916a7581251b20e29c6",
+        "pixel_size": [
+          878,
+          1792
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          44,
+          39,
+          815,
+          1659
+        ],
+        "origin": [
+          429.5,
+          1658
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "facing": "east/southeast inside face; arc bulges west/left; endpoints right",
+        "native_canvas": [
+          230,
+          470
+        ],
+        "native_width": 230,
+        "native_height": 470,
+        "native_review_path": "game_factory/environment/ART-0044/v001/native_review/hero_west_curved_side_wall_attempt_02.png",
+        "native_review_sha256": "c3172a6b3e8b0a5530457758e4f3fa91645b4b6340f188033fd2a6299af27ffd",
+        "native_source_region": [
+          0,
+          0,
+          878,
+          1792
+        ],
+        "requested_minimum_master": [
+          920,
+          1880
+        ],
+        "actual_source_pixels_per_native_pixel": [
+          3.8173913043478263,
+          3.8127659574468087
+        ],
+        "requested_4x_gate_passed": false,
+        "maximum_native_canvas_at4x": [
+          219,
+          448
+        ],
+        "maximum_native_note": "measurement only; requested canvas is NOT silently reduced",
+        "alpha128_margins": [
+          44,
+          39,
+          63,
+          133
+        ],
+        "independent_generation": true,
+        "source_upscaled": false,
+        "bitmap_flip_or_rotation": false,
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "prompt_text": "ART-0044 attempt2. Regenerate/repaint this complete west curved wall at HIGHER NATIVE RESOLUTION: output at least920x1880 pixels, preferably1024x2092, no upscaling. Keep the same open-C floor-plan wall bulging left with both ends on the right, same perspective and upper-left illumination,3-4courses and modest crenellated caps, stone texture/palette. Add a real4% EMPTY TRANSPARENT safety margin on every side, especially ABOVE the far upper-right cap: the entire upper cap/top stone must be fully drawn inside frame and not touch the top edge. Nothing clipped. Do not add or flatten geometry, no straight-wall replacement. Draw a new clean detailed pixel-art source on portrait canvas aspect23:47; do not just enlarge bitmap pixels. Alpha0 empty interior and surround, no plants, lanterns, banners, cliff base, floor/sea/ground, cast shadow, text, frame or second wall. Same one connected west-side wall, concave inner face toward right/east. Actual high-resolution PNG pixels requested, not a written resolution label.",
+        "prompt_path": "game_factory/environment/ART-0044/v001/requests/hero_west_curved_side_wall_attempt_02.txt",
+        "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0044_target.png",
+        "reference_crop_sha256": "d9935f2ec241d060f71f4fa3e5a3eafbcdd0e2d1c7482948cae9d9da4fd4eb4c",
+        "comparison_path": ".agents/graphics/requests/reference_crops/ART-0044_compare.png",
+        "comparison_sha256": "9918516b1845aea4e471a5d727e6d991fcd79925f8825aea03fb75c26f357ba0",
+        "collision": null,
+        "connection_sockets": null,
+        "footprint_64px_cells": null,
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_regeneration",
+        "production_active": false,
+        "reason": "Below requested4x source density. Native geometry/renderable preview does not waive master resolution. No qualified production output."
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_regeneration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0044-0045-side-walls",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0044/v001/README.md",
+      "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
+    },
+    {
+      "catalog_id": "ART-0045/v001/hero_east_curved_side_wall_attempt_01/rejected",
+      "id": "hero_east_curved_side_wall_attempt_01",
+      "request_id": "ART-0045",
+      "category": "architecture",
+      "selection": "rejected",
+      "master_path": "assets_hd/architecture/curved_east_side_wall/v001/rejected/hero_east_curved_side_wall_attempt_01.png",
+      "sha256": "36aad081a47245286b761f297ee2281f58e7f4da2c818c0c7b1a38f0c48cadd1",
+      "pixel_size": [
+        829,
+        1898
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        54,
+        64,
+        792,
+        1724
+      ],
+      "manifest_path": "game_factory/environment/ART-0045/v001/manifest.json",
+      "manifest_sha256": "69dba03e2d93bd9f399ae58254e78632b1dea9611c12b3930d8e1f44580e7866",
+      "metadata": {
+        "id": "hero_east_curved_side_wall_attempt_01",
+        "request_id": "ART-0045",
+        "source_path": "assets_hd/architecture/curved_east_side_wall/v001/rejected/hero_east_curved_side_wall_attempt_01.png",
+        "delivery_candidate_path": ".agents/graphics/deliveries/ART-0045/rejected/hero_east_curved_side_wall_attempt_01.png",
+        "sha256": "36aad081a47245286b761f297ee2281f58e7f4da2c818c0c7b1a38f0c48cadd1",
+        "pixel_size": [
+          829,
+          1898
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bounds_alpha_128": [
+          54,
+          64,
+          792,
+          1724
+        ],
+        "origin": [
+          423.0,
+          1723
+        ],
+        "origin_rule": "bottom centre of alpha128 visible bounds",
+        "facing": "west/southwest inside face; arc bulges east/right; endpoints left",
+        "native_canvas": [
+          236,
+          540
+        ],
+        "native_width": 236,
+        "native_height": 540,
+        "native_review_path": "game_factory/environment/ART-0045/v001/native_review/hero_east_curved_side_wall_attempt_01.png",
+        "native_review_sha256": "e4cae8dad0cee091e9f484e598fa0a64b7582a1d499d3cd5266015b1510b6dc7",
+        "native_source_region": [
+          0,
+          0,
+          829,
+          1898
+        ],
+        "requested_minimum_master": [
+          944,
+          2160
+        ],
+        "actual_source_pixels_per_native_pixel": [
+          3.51271186440678,
+          3.5148148148148146
+        ],
+        "requested_4x_gate_passed": false,
+        "maximum_native_canvas_at4x": [
+          207,
+          474
+        ],
+        "maximum_native_note": "measurement only; requested canvas is NOT silently reduced",
+        "alpha128_margins": [
+          54,
+          64,
+          37,
+          174
+        ],
+        "independent_generation": true,
+        "source_upscaled": false,
+        "bitmap_flip_or_rotation": false,
+        "tool": "built-in image_gen",
+        "model": "unknown",
+        "prompt_text": "ART-0045 hero_east_curved_side_wall. ONE completely NEW independently drawn EAST curved masonry wall, not a flip/mirror/rotation or pasted counterpart. First attached crop is only STYLE and layout reference, second west-wall image is MATERIAL reference only. Actual native PNG must be at least944x2160pixels (4x236x540native), preferably1180x2700; no upscaling, no resolution label in image. Narrow portrait canvas aspect236:540. CRITICAL floor-plan arc: from UPPER LEFT/rear-right corner, sweep outward RIGHT/east through middle, then return to LOWER LEFT/front-right end. Open backward-C / ')' shaped curved strip viewed from above; concave/open INSIDE faces LEFT/west into empty room. Both endpoints toward left, middle furthest right. One connected wall with real3D vertical masonry thickness, not a flat2D arch, gate or floor ring. Camera south looking north/down50degrees, orthographic tactical RPG; see continuous top coping following the arc and inner WEST/SOUTHWEST face. Rear end about5block courses high, decreases to3at front; alternating modest raised cap stones along top. Same warm tan/golden limestone, rectangular staggered blocks, chipped edges/weathering and dark warm-brown mortar, crisp detailed hard pixel clusters and native1-2px outline as west material reference. Sun STILL from UPPER LEFT: inner west face brighter, lower-right/exterior recesses darker. Do not mirror the west image's illumination or joint pattern; repaint new joints/details. Whole wall inside at least4% transparent margin on all sides; no clipping of endpoints or caps. TRUE RGBA alpha0 empty centre and surround. No floor, sea, ground, cliff rock/base, planters/vases, flowers/ivy, banners/lanterns/posts, cast shadow, windows/door, characters, text/labels/watermark/border/sheet or extra objects. ONE east wall at one proper perspective.",
+        "prompt_path": "game_factory/environment/ART-0045/v001/requests/hero_east_curved_side_wall_attempt_01.txt",
+        "reference_crop_path": ".agents/graphics/requests/reference_crops/ART-0045_target.png",
+        "reference_crop_sha256": "565468c5cafba3e7a95302d1fbc780243077bc7ef1b3db9a3ba4f732f89325b1",
+        "comparison_path": ".agents/graphics/requests/reference_crops/ART-0045_compare.png",
+        "comparison_sha256": "6eb857d600d3f3bf7bde8fe8f07c93269d4e553d1542b0cdf31ff2e1a7851695",
+        "collision": null,
+        "connection_sockets": null,
+        "footprint_64px_cells": null,
+        "cast_shadow": false,
+        "baked_shadow": false,
+        "owner_approved": true,
+        "approval_basis": "owner_automatic_20261111",
+        "quality_status": "needs_regeneration",
+        "production_active": false,
+        "reason": "Below requested4x source density. Native geometry/renderable preview does not waive master resolution. No qualified production output."
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "approval_policy": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+      "quality_status": "needs_regeneration",
+      "integration_status": "not_inferred_from_visual_approval",
+      "production_active": false,
+      "exact_path_map_references": [],
+      "publication": {
+        "manifest_on_origin_main": false,
+        "delivery_branch": "codex/art-0044-0045-side-walls",
+        "pull_request": null
+      },
+      "readme_path": "game_factory/environment/ART-0045/v001/README.md",
       "usage_rule": "Do not place rejected attempts. Use the manifest for measured anchors, scale and limitations; missing values are unknown."
     },
     {

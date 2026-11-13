@@ -1,0 +1,700 @@
+{
+  "request_id": "ART-0041",
+  "task_id": "TASK-0161",
+  "delivery_branch": "codex/art-0041-skirmish-tiles",
+  "agent": "codex",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "source_count": 6,
+  "generation_count": 7,
+  "items": [
+    {
+      "id": "field_grass_a",
+      "request_id": "ART-0041",
+      "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_a.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0041/field_grass_a.png",
+      "sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "origin": [
+        627.0,
+        1253
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "generation_source_path": "game_factory/environment/ART-0041/v001/generation_sources/field_grass_a_rgb.png",
+      "generation_source_sha256": "5f3c01ef47a2603ace8e423dc59c7699829fc85d0eee65fe8c6d7f221f3764a0",
+      "generation_source_mode": "RGB",
+      "format_only_RGBA_export": true,
+      "RGB_pixels_unchanged": true,
+      "native_canvas": [
+        64,
+        64
+      ],
+      "native_width": 64,
+      "native_height": 64,
+      "native_review_path": "game_factory/environment/ART-0041/v001/native_review/field_grass_a.png",
+      "native_review_sha256": "77a7ca9d2d06d9ff4bd5a570d19d9bc45b050f7614e56e458642d515031c84d5",
+      "native_source_region": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "native_alignment_phase_source_px": [
+        0,
+        0
+      ],
+      "native_offset": [
+        0,
+        0
+      ],
+      "native_method": "nearest-neighbour export; original master retained",
+      "source_pixels_per_native_pixel": 19.59375,
+      "floor_surface_opaque": true,
+      "grid_anchor_native": [
+        0,
+        0
+      ],
+      "facing": "flat top-down tile/overlay",
+      "collision": false,
+      "base_cell_canvas": [
+        64,
+        64
+      ],
+      "logical_blocking": false,
+      "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+      "draw_offset_native": [
+        0,
+        0
+      ],
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "runtime_opacity_recommendation": 1.0,
+      "prompt_text": "ART-0041 field_grass_a. ONE seamless square GRASS AND EARTH FLOOR TEXTURE TILE for a64x64 tactical battle cell. New original pixel art, no scenery image or cutout. Full square canvas1024x1024or larger, minimum512x512, RGBA PNG with ALPHA255 EVERYWHERE: floor surface deliberately opaque, touching ALL FOUR EDGES with NO transparent margin. Orthographic top-down terrain viewed in a tactical RPG; no isometric diamond, side face, raised platform, perspective grid or horizon. Soft olive/moss green base around#60813f, restrained dark#4b6631 and lighter#78954d clusters, tiny occasional warm dry-earth#8a7048 cracks/specks. Hard deliberate pixel clusters readable when reduced to64x64, individual game-scale clumps1-3px; no smooth blur or photographic noise. EVEN brightness and low contrast over the entire tile: no vignette/spotlight, no bright central patch, no obvious diagonal stripe or big distinctive clump. Seamless repeating edges, grass grain continues from left to right and top to bottom, no border line or frame. Edge palette must stay near the same olive base on all sides so a second matching tile can alternate without checker seams. Upper-left daylight without directional cast shadows. No rocks, tall plants, flowers, trees, water, cliffs, characters, props, footprints, roads, text, labels, watermark, frame or sheet. ONE flat ground tile only, not a rendered landscape. Floor texture is the explicit opaque-surface exception; do not remove its background.",
+      "prompt_path": "game_factory/environment/ART-0041/v001/requests/field_grass_a.txt",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_runtime_integration",
+      "production_active": false,
+      "import_recommendation": {
+        "compression": "lossless",
+        "mipmaps": false,
+        "texture_filter": "nearest"
+      }
+    },
+    {
+      "id": "field_grass_b",
+      "request_id": "ART-0041",
+      "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_b.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0041/field_grass_b.png",
+      "sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "bounds_alpha_128": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "origin": [
+        627.0,
+        1253
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "generation_source_path": "game_factory/environment/ART-0041/v001/generation_sources/field_grass_b_rgb.png",
+      "generation_source_sha256": "ee17d14947cc7e2112a1a52ee31433f813901f2f61edd91a3a73ed69f1e46d24",
+      "generation_source_mode": "RGB",
+      "format_only_RGBA_export": true,
+      "RGB_pixels_unchanged": true,
+      "native_canvas": [
+        64,
+        64
+      ],
+      "native_width": 64,
+      "native_height": 64,
+      "native_review_path": "game_factory/environment/ART-0041/v001/native_review/field_grass_b.png",
+      "native_review_sha256": "019292af834c58b5d13a0e3267971e1010b9b8e468b8bd812d31f2eb8bc09ec4",
+      "native_source_region": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "native_alignment_phase_source_px": [
+        0,
+        0
+      ],
+      "native_offset": [
+        0,
+        0
+      ],
+      "native_method": "nearest-neighbour export; original master retained",
+      "source_pixels_per_native_pixel": 19.59375,
+      "floor_surface_opaque": true,
+      "grid_anchor_native": [
+        0,
+        0
+      ],
+      "facing": "flat top-down tile/overlay",
+      "collision": false,
+      "base_cell_canvas": [
+        64,
+        64
+      ],
+      "logical_blocking": false,
+      "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+      "draw_offset_native": [
+        0,
+        0
+      ],
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "runtime_opacity_recommendation": 1.0,
+      "prompt_text": "ART-0041 field_grass_b. Create ONE new matching alternate seamless floor texture tile for the attached grass A. Preserve EXACT1254x1254 square canvas, same olive-green base/average brightness, same low contrast and cluster density. Change the interior arrangement of tiny grass and warm dry-earth specks enough to be a distinct tile, but KEEP THE OUTER10% EDGE BAND visually/palette-identical and continuous with A. Both tiles alternate in a checkerboard at64x64 with no visible boundary, stripes, frames or brightness jump. Tile B should also repeat seamlessly with itself. Full opaque RGBA floor surface, alpha255 EVERYWHERE, no transparent margins/background removal. Orthographic top-down flat grass/earth texture, no isometric sides, no raised platform or perspective. Hard deliberate pixel clusters, not blur/photo, native game clumps1-3px, no central highlight/vignette or big landmark. No rock, tall tuft, flower/tree, road, water, shadow, prop, characters, text, watermark, frame, grid or sheet. One independent original floor tile; not a collage or flipped/rotated tile A. This is the opaque floor exception; do not remove any part of its full-square surface.",
+      "prompt_path": "game_factory/environment/ART-0041/v001/requests/field_grass_b.txt",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_runtime_integration",
+      "production_active": false,
+      "import_recommendation": {
+        "compression": "lossless",
+        "mipmaps": false,
+        "texture_filter": "nearest"
+      }
+    },
+    {
+      "id": "field_rock_block",
+      "request_id": "ART-0041",
+      "master_path": "assets_hd/props/skirmish_rock/v001/field_rock_block.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0041/field_rock_block.png",
+      "sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "bounds_alpha_128": [
+        32,
+        285,
+        989,
+        1286
+      ],
+      "origin": [
+        510.5,
+        1285
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "generation_source_path": "assets_hd/props/skirmish_rock/v001/field_rock_block.png",
+      "generation_source_sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24",
+      "generation_source_mode": "RGBA",
+      "format_only_RGBA_export": false,
+      "RGB_pixels_unchanged": true,
+      "native_canvas": [
+        64,
+        96
+      ],
+      "native_width": 64,
+      "native_height": 96,
+      "native_review_path": "game_factory/environment/ART-0041/v001/native_review/field_rock_block.png",
+      "native_review_sha256": "75b0331279f1c0e3e8aa420690d0829e9d812e27bbeeccdc807b346155400db2",
+      "native_source_region": [
+        24,
+        277,
+        997,
+        1294
+      ],
+      "native_alignment_phase_source_px": [
+        0,
+        0
+      ],
+      "native_offset": [
+        0,
+        29,
+        64,
+        96
+      ],
+      "native_method": "nearest-neighbour export; original master retained",
+      "source_pixels_per_native_pixel": 15.17910447761194,
+      "floor_surface_opaque": false,
+      "grid_anchor_native": [
+        0,
+        0
+      ],
+      "facing": "three-quarter top-down rock, upper-left light",
+      "collision": false,
+      "base_cell_canvas": [
+        64,
+        64
+      ],
+      "logical_blocking": true,
+      "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+      "draw_offset_native": [
+        0,
+        -32
+      ],
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "runtime_opacity_recommendation": 1.0,
+      "prompt_text": "ART-0041 field_rock_block. ONE independent impassable LIMESTONE BOULDER sprite for a64x64 tactical field cell, may rise into a64x96 sprite canvas. Transparent RGBA PNG, portrait1024x1536 or larger, minimum512x768, complete object with6%empty margins, no cutoffs. One connected chunky angular natural boulder, not a wall, pillar, carved cube, pile of separate rocks or island. Warm pale sandstone/limestone like the SKL-SF Mediterranean room reference: tan/cream top planes, ochre-grey shaded sides, chipped angular edges and a few dark warm cracks. Orthographic three-quarter top-down tactical RPG view, camera looking north/down about50degrees, upper-left daylight. Hard crisp detailed pixel clusters and1-2px dark outline at native64x96; no blur, no painterly photographic grain. The lower contact footprint fits one64x64cell; boulder is slightly taller than its base footprint, broad solid silhouette readable at native. The stone rests on its own flat contact edge, but NO GROUND, NO EXTERNAL DROP/CAST SHADOW, NO dirt/grass pedestal or landscape. Alpha0 around object. No plants/ivy/moss clumps, sea/water, crystals, glowing magic, characters, units, text, numbers, label, watermark, frame or sheet. One plain rock at one angle only.",
+      "prompt_path": "game_factory/environment/ART-0041/v001/requests/field_rock_block.txt",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_runtime_integration",
+      "production_active": false,
+      "import_recommendation": {
+        "compression": "lossless",
+        "mipmaps": false,
+        "texture_filter": "nearest"
+      }
+    },
+    {
+      "id": "marker_move",
+      "request_id": "ART-0041",
+      "master_path": "assets_hd/decor/skirmish_markers/v001/marker_move.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0041/marker_move.png",
+      "sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        240
+      ],
+      "bounds_alpha_128": [
+        182,
+        182,
+        1073,
+        1073
+      ],
+      "origin": [
+        627.5,
+        1072
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "generation_source_path": "assets_hd/decor/skirmish_markers/v001/marker_move.png",
+      "generation_source_sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935",
+      "generation_source_mode": "RGBA",
+      "format_only_RGBA_export": false,
+      "RGB_pixels_unchanged": true,
+      "native_canvas": [
+        64,
+        64
+      ],
+      "native_width": 64,
+      "native_height": 64,
+      "native_review_path": "game_factory/environment/ART-0041/v001/native_review/marker_move.png",
+      "native_review_sha256": "fbe9c2e66b4ccf4135eab05183da7263a60c1151e645d7759e2e41cdf3aa99dc",
+      "native_source_region": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "native_alignment_phase_source_px": [
+        0,
+        0
+      ],
+      "native_offset": [
+        0,
+        0
+      ],
+      "native_method": "nearest-neighbour export; original master retained",
+      "source_pixels_per_native_pixel": 19.59375,
+      "floor_surface_opaque": false,
+      "grid_anchor_native": [
+        0,
+        0
+      ],
+      "facing": "flat top-down tile/overlay",
+      "collision": false,
+      "base_cell_canvas": [
+        64,
+        64
+      ],
+      "logical_blocking": false,
+      "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+      "draw_offset_native": [
+        0,
+        0
+      ],
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "runtime_opacity_recommendation": 0.75,
+      "prompt_text": "ART-0041 marker_move. ONE standalone BLUE MOVE-CELL OVERLAY sprite, not an illustration, no background. Full square1254x1254master (minimum512x512), mapped to64x64native. Genuine transparent RGBA, hollow/transparent centre and outside. Geometry: axis-aligned square INNER BORDER, outer box inset2nativepixels on every side (about40sourcepx), clean line thickness EXACT2nativepixels (about40sourcepx). Sharp square90degree corners with pixel steps, no isometric diamond, no 3D perspective or bevel. Blue#2f8fe8 line, translucent about70%alpha, uniform continuous stroke. Optional interior wash blue at only10%alpha so grass and units remain clearly visible; no opaque panel. No glow, soft halo, shadow, bright white rim, complex ornament, arrows, cross, icon, numbers, text, units, grass, scenery, frame surrounding a sheet, checkerboard backdrop or watermark. It is itself ONE cell-selection border, not a canvas frame decoration. Pixel-art crisp hard edge, no blur. Keep line fully inside64x64cell and centred, visible over both olive grass and dry earth. ONE overlay PNG, not a sheet or multiple variants. All empty pixels truly alpha0; do not paint a black/white background.",
+      "prompt_path": "game_factory/environment/ART-0041/v001/requests/marker_move.txt",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_runtime_integration",
+      "production_active": false,
+      "import_recommendation": {
+        "compression": "lossless",
+        "mipmaps": false,
+        "texture_filter": "nearest"
+      },
+      "nominal_border_native_px": 2,
+      "measured_alpha128_horizontal_core_runs": [
+        [
+          9,
+          10
+        ],
+        [
+          53,
+          54
+        ]
+      ],
+      "measured_alpha128_vertical_core_runs": [
+        [
+          9,
+          10
+        ],
+        [
+          53,
+          54
+        ]
+      ],
+      "centre_alpha": 0,
+      "alignment_note": "active ring uses2sourcepx sampling phase, with proof discarded rows/cols alpha0; no visible source pixel clipped"
+    },
+    {
+      "id": "marker_target",
+      "request_id": "ART-0041",
+      "master_path": "assets_hd/decor/skirmish_markers/v001/marker_target.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0041/marker_target.png",
+      "sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        181,
+        181,
+        1073,
+        1073
+      ],
+      "origin": [
+        627.0,
+        1072
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "generation_source_path": "assets_hd/decor/skirmish_markers/v001/marker_target.png",
+      "generation_source_sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205",
+      "generation_source_mode": "RGBA",
+      "format_only_RGBA_export": false,
+      "RGB_pixels_unchanged": true,
+      "native_canvas": [
+        64,
+        64
+      ],
+      "native_width": 64,
+      "native_height": 64,
+      "native_review_path": "game_factory/environment/ART-0041/v001/native_review/marker_target.png",
+      "native_review_sha256": "3380667b38416bbaa805b37deda8826891a1bde8ade0dc07aeb76d3b375acd3f",
+      "native_source_region": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "native_alignment_phase_source_px": [
+        0,
+        0
+      ],
+      "native_offset": [
+        0,
+        0
+      ],
+      "native_method": "nearest-neighbour export; original master retained",
+      "source_pixels_per_native_pixel": 19.59375,
+      "floor_surface_opaque": false,
+      "grid_anchor_native": [
+        0,
+        0
+      ],
+      "facing": "flat top-down tile/overlay",
+      "collision": false,
+      "base_cell_canvas": [
+        64,
+        64
+      ],
+      "logical_blocking": false,
+      "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+      "draw_offset_native": [
+        0,
+        0
+      ],
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "runtime_opacity_recommendation": 0.75,
+      "prompt_text": "ART-0041 marker_target. ONE independent RED TARGET-CELL OVERLAY, matching the attached BLUE move marker's square geometry, canvas and stroke placement. True transparent RGBA1254x1254. Keep the border at the same source outer box approximately[182,182,1073,1073], about40sourcepixels thick =2nativepixels when the whole canvas is shown at64x64. New red#e54a45 continuous square line, sharp90degree corners, flat pixel-art edge, translucent about70-80%alpha; no bright-white or 3D bevel. Centre fully transparent alpha0 (no opaque wash), outside fully transparent alpha0. Absolutely no scattered colored flecks, blurry glow, halo, drop shadow or texture noise around border. One clean cell-selection frame only; do not draw grass, checkerboard, black/white backdrop, crosshair, arrows, icon, number, text, label, watermark, canvas frame or multiple variants. Match the same native alignment as blue so switching markers causes no shift. ONE new independently requested overlay PNG, not a sheet. No whole-image rotation/flip, no extra objects.",
+      "prompt_path": "game_factory/environment/ART-0041/v001/requests/marker_target.txt",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_runtime_integration",
+      "production_active": false,
+      "import_recommendation": {
+        "compression": "lossless",
+        "mipmaps": false,
+        "texture_filter": "nearest"
+      },
+      "nominal_border_native_px": 2,
+      "measured_alpha128_horizontal_core_runs": [
+        [
+          9,
+          10
+        ],
+        [
+          53,
+          54
+        ]
+      ],
+      "measured_alpha128_vertical_core_runs": [
+        [
+          9,
+          10
+        ],
+        [
+          53,
+          54
+        ]
+      ],
+      "centre_alpha": 0,
+      "alignment_note": "active ring uses2sourcepx sampling phase, with proof discarded rows/cols alpha0; no visible source pixel clipped"
+    },
+    {
+      "id": "marker_active",
+      "request_id": "ART-0041",
+      "master_path": "assets_hd/decor/skirmish_markers/v001/marker_active.png",
+      "delivery_path": ".agents/graphics/deliveries/ART-0041/marker_active.png",
+      "sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        187,
+        188,
+        1054,
+        1061
+      ],
+      "origin": [
+        620.5,
+        1060
+      ],
+      "origin_rule": "bottom centre of alpha128 visible bounds",
+      "generation_source_path": "assets_hd/decor/skirmish_markers/v001/marker_active.png",
+      "generation_source_sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc",
+      "generation_source_mode": "RGBA",
+      "format_only_RGBA_export": false,
+      "RGB_pixels_unchanged": true,
+      "native_canvas": [
+        64,
+        64
+      ],
+      "native_width": 64,
+      "native_height": 64,
+      "native_review_path": "game_factory/environment/ART-0041/v001/native_review/marker_active.png",
+      "native_review_sha256": "6846545bb9302f0f5212e7ca3c0ecad7f982bf13242ca86666be07e33e43961a",
+      "native_source_region": [
+        2,
+        2,
+        1256,
+        1256
+      ],
+      "native_alignment_phase_source_px": [
+        2,
+        2
+      ],
+      "native_offset": [
+        0,
+        0
+      ],
+      "native_method": "nearest-neighbour export; original master retained",
+      "source_pixels_per_native_pixel": 19.59375,
+      "floor_surface_opaque": false,
+      "grid_anchor_native": [
+        0,
+        0
+      ],
+      "facing": "flat top-down tile/overlay",
+      "collision": false,
+      "base_cell_canvas": [
+        64,
+        64
+      ],
+      "logical_blocking": false,
+      "collision_note": "Battle grid owns impassability; no new physics or gameplay rule in asset",
+      "draw_offset_native": [
+        0,
+        0
+      ],
+      "cast_shadow": false,
+      "baked_shadow": false,
+      "runtime_opacity_recommendation": 0.75,
+      "prompt_text": "ART-0041 marker_active attempt2, precise thin-line correction. Preserve this gold circular ring's exact1254x1254 transparent canvas, centre and OUTER edge/bounds. ONLY thicken the ring INWARD slightly: present stroke is about29sourcepixels, needs40sourcepixels (EXACT2pixels at64x64native). Outer circle radius~430px around[627,627] remains fixed; inner radius~390px, so line40px. Add about10sourcepixels of gold inward along the whole circumference. Uniform stroke, particularly cardinal left/top must be as thick as right/bottom. Same flat gold hue and translucent alpha; genuine alpha0 centre and outside. Do not change the ring into a torus, square, glow or coin; no bevel, drop shadow, halo, flecks, extra texture, text or labels. Hard crisp circular outline only. No resizing/rotation/flip or background. One independent corrected RGBA overlay PNG, no other object.",
+      "prompt_path": "game_factory/environment/ART-0041/v001/requests/marker_active.txt",
+      "tool": "built-in image_gen",
+      "model": "unknown",
+      "independent_generation": true,
+      "bitmap_flip_or_rotation": false,
+      "source_upscaled": false,
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111",
+      "quality_status": "needs_runtime_integration",
+      "production_active": false,
+      "import_recommendation": {
+        "compression": "lossless",
+        "mipmaps": false,
+        "texture_filter": "nearest"
+      },
+      "nominal_border_native_px": 2,
+      "measured_alpha128_horizontal_core_runs": [
+        [
+          9,
+          10
+        ],
+        [
+          52,
+          53
+        ]
+      ],
+      "measured_alpha128_vertical_core_runs": [
+        [
+          9,
+          10
+        ],
+        [
+          52,
+          53
+        ]
+      ],
+      "centre_alpha": 0,
+      "alignment_note": "active ring uses2sourcepx sampling phase, with proof discarded rows/cols alpha0; no visible source pixel clipped"
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "id": "marker_active_attempt_01",
+      "path": "assets_hd/decor/skirmish_markers/v001/rejected/marker_active_attempt_01.png",
+      "sha256": "2f294f0129355d532bbc5b7115a2ab78d5cc7207a9ea62b40120dc5ccf1fa46f",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        195,
+        191,
+        1049,
+        1054
+      ],
+      "quality_status": "not_selected",
+      "reason": "Initial native nearest sampling left a1px cardinal side. Corrected source plus explicit empty-margin sampling alignment selected.",
+      "prompt_path": "game_factory/environment/ART-0041/v001/requests/marker_active_initial.txt",
+      "prompt_text": "ART-0041 marker_active. ONE clean GOLD ACTIVE-UNIT RING overlay sprite, NOT a coin, orb, shield, torus render or illustration. Square1254x1254transparent RGBA master, minimum512square, native64x64. Flat perfect top-down circular RING centred[627,627], outer bounds approximately[182,182,1073,1073], uniform40sourcepx stroke =2nativepixels when whole canvas displayed64x64. Ring interior fully transparent alpha0 and exterior fully transparent alpha0. Gold#e4b346, translucent about75-80%alpha, slight upper-left highlight only inside the line, otherwise flat untextured stroke. Pixel-art sharp clean edges, no blur/halo/glow, no bevel/3D depth or perspective ellipse, no shadow or background fill. Align centre/outer extent with attached blue move-cell marker so all three overlays share native cell origin. No dotted marks, scattered pixels, arrows, compass, cross, star, runes, numbers/text, UI label, unit, grass, scenery, checkerboard, black/white backdrop, border around sheet, watermark, sheet or extra objects. This is ONE independently drawn thin circular selection outline, not a square frame recolor."
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/field_grass_a.png",
+      "sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/field_grass_b.png",
+      "sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/field_rock_block.png",
+      "sha256": "509903867a4f24a8ed89368fa40ba685ef33d8e164989e0f9de6d849b15aac24"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/marker_move.png",
+      "sha256": "423170ff3fb038b1d0e6acdcf5b35a74688a328819509fc71e71a1429c4c8935"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/marker_target.png",
+      "sha256": "ecd376872d8ab5f869f5d2872e2dd6650846294f007cd153002ff381ec22a205"
+    },
+    {
+      "path": ".agents/graphics/deliveries/ART-0041/marker_active.png",
+      "sha256": "0ef8ea6b7678ceb09f5bf93d0dfb8cdeb4eadba41fa7ae42b87df3a53c0348fc"
+    }
+  ],
+  "reference_path": "map_factory/references/hero_room_01_target_20261110.webp",
+  "reference_sha256": "4e55aeaa5a5e500760f48fed75c3ce7f6d56d55c1ca06b8c70839cce517e4323",
+  "reference_use": "style only; new battlefield designs, no source crop pasted",
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "quality_status": "needs_runtime_integration",
+  "production_active": false,
+  "generation_cache_required": false,
+  "limitations": [
+    "QA-only scene override, no production battle code or damage/navigation rules changed.",
+    "Grass opaque RGBA floor exception; RGB generation files preserved with exact RGB-byte equality.",
+    "Marker frames have measured64x64 padding; use whole canvas at cell top-left, no per-frame alpha-bbox fit."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+	"actual_viewport": true,
+	"asset_render_sha256": "2b25b55287b6cb7f76440d2bd5f18c2872e00e4fc564656798210bd26b2d4edd",
+	"canvas_size": [
+		1536,
+		1024
+	],
+	"engine": "4.7.2-stable (official)",
+	"existing_scene": "scenes/battle/tactical_battle.tscn",
+	"existing_scene_sha256": "6a3ed0457312b3f12d61e586c4feb01ca8833a6cc7fa9a5c2c46af4a6a6b29fe",
+	"gameplay_integration_verified": false,
+	"manifest_sha256": "bfc178ca48df0320826c92fc33577a43839bc5f8c44c561d9839e01939daa51f",
+	"marker_opacity": 0.75,
+	"owner_approved": true,
+	"production_active": false,
+	"qa_override_sha256": "35c52b1966db3aefdc7067664f7503e56c21dbf7310fad934816cc94613ffec5",
+	"review_script_sha256": "64319823c2aa3b0082c5f10d280c832c096b48bbb1f315c2b20cdf2231c9c5fa",
+	"scene_usage": "rendering-only QA subclass in memory; no production script edits; frozen session; target marker visual demo only",
+	"skirmish_render_sha256": "b62232edee2d30c2381a2c86d9cceb91c616ee7a9ac096cd333a688a8ad4733c",
+	"source_count": 6
+}
