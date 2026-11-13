@@ -11,6 +11,7 @@ Applies to Codex, Claude Code, Aider and all coding agents. Read this, then only
 
 ## Graphics
 - Read `docs/GRAPHICS_PRODUCTION_POLICY.md` first: each reusable frame/item is its own file, no multi-pose crops, sprite sheets are assembled outputs only, keep sources, review new art before activation, unapproved art is never production.
+- Maps and map graphics: follow `docs/MAP_GRAPHICS_RULES.md` (story brief, approved target board, independent blocks in the hero room's design, connected maps).
 - Assigned agents may use local Blender in `H:\shining force\pixel-art` (`.agents/workflows/GRAPHICS.md`). No paid image services.
 
 ## Scope and truth
@@ -19,7 +20,7 @@ Applies to Codex, Claude Code, Aider and all coding agents. Read this, then only
 - Locate files via `INDEX.md`; read only needed ranges. Commits/PRs and catalog IDs prove work; never call unreviewed art approved.
 
 ## Story
-- Story, dialogue, characters, creatures, battles and story places: read `docs/story/INDEX.md`, then only the scene file you need (`.agents/workflows/STORY.md`). Only text marked approved is fact; open decisions belong to the owner.
+- Story, dialogue, characters, creatures, battles, story places: read `docs/story/INDEX.md`, then only the scene file you need (`.agents/workflows/STORY.md`). Only approved text is fact; open decisions are the owner's.
 
 ## Tasks and evidence
 - Follow `.agents/workflows/TASKS.md`: claim one task, isolated branch/worktree, no overlapping touches. Receipts via `tools/agent_costs.py` (missing usage stays `unknown`); stage only task files; push task branches.

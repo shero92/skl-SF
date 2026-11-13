@@ -13,6 +13,8 @@ output_paths: .agents/graphics/deliveries/ART-XXXX/example.png
 
 **Source image and SHA-256:** must be a committed original, otherwise keep `blocked_reference`.
 
+**Map block (only for a piece of a map):** map brief `docs/maps/briefs/<map_id>.md`, owner-approved target board path and hash, the crop of this piece, block-list line (category, footprint, height, facings, variants). See `docs/MAP_GRAPHICS_RULES.md`.
+
 **Outputs:** one independent RGBA PNG per listed path; type, direction, desired on-screen/native size, pivot, tileability, palette, shadows, collisions, layer, art-quality rules; do not replace good existing assets.
 
 ## Request checklist

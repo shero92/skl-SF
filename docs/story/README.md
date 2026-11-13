@@ -36,6 +36,6 @@ Files mark what is decided: **[معتمد]** approved by the owner, **[مقتر�
 
 ## How agents use this folder
 
-See [.agents/workflows/STORY.md](../../.agents/workflows/STORY.md).
+See [.agents/workflows/STORY.md](../../.agents/workflows/STORY.md). To turn a story place into a map, follow [../MAP_GRAPHICS_RULES.md](../MAP_GRAPHICS_RULES.md); the list of maps and their story scenes is [../maps/INDEX.md](../maps/INDEX.md).
 
 Nothing here proves that a story event is implemented in Godot: dialogue, battles and maps built from it are separate tasks with their own tests.

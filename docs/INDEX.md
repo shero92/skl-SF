@@ -9,6 +9,7 @@
 | Rules to approve individual sprite replacements | [ASSET_QUALITY_POLICY.md](ASSET_QUALITY_POLICY.md) |
 | Historic room composition/review | `HERO_ROOM_COMPOSITION_REVIEW.md`, `HERO_ROOM_FIDELITY_REVIEW.md`, `HERO_ROOM_LAYOUT_QA.md` |
 | Art inspection and cleanup | `ART_QUALITY_REVIEW.md`, `ART_UPGRADE_STATUS.md`, `ASSET_AUDIT.md`, `ROOM_BLOCK_QA.md` |
+| Rules for generating maps and their graphics; list of maps with story and connections | [MAP_GRAPHICS_RULES.md](MAP_GRAPHICS_RULES.md), [maps/INDEX.md](maps/INDEX.md) |
 | The written story (Arabic): chapters, battles, creatures, secrets, open decisions | [story/INDEX.md](story/INDEX.md), [story/README.md](story/README.md) |
 | Genuine game-rendered screenshots | [previews/INDEX.md](previews/INDEX.md) |
 | Git tracking, Godot import files and local caches | [GODOT_VERSION_CONTROL.md](GODOT_VERSION_CONTROL.md) |
