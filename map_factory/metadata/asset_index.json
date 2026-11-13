@@ -2,7 +2,7 @@
   "source_art_catalog": "map_factory/metadata/source_art_index.json",
   "source_art_guide": "docs/SOURCE_ART_CATALOG.md",
   "version": 2,
-  "asset_count": 454,
+  "asset_count": 456,
   "extracted_count": 229,
   "grid_size": 48,
   "status_note": "Asset presence verified automatically; no sprites are promoted to ready without visual QA.",
@@ -26979,6 +26979,138 @@
         "evidence": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md (owner accepts Codex images automatically until one is named for regeneration)",
         "method": "independent image_gen masters kept unchanged in assets_hd; runtime part is a trimmed BOX downscale"
       }
+    },
+    {
+      "id": "G13",
+      "name": "Coastal Grass A",
+      "category": "floors",
+      "subtype": "grass",
+      "texture_path": "res://map_factory/parts/floors/G13_Coastal_Grass_A.png",
+      "status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.0,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "grass",
+        "floor",
+        "seabreak",
+        "ART-0041"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "reused_independent_image_gen_asset",
+        "request_id": "ART-0041",
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": "https://github.com/shero92/skl-SF/pull/188",
+        "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_a.png",
+        "master_pixel_size": [
+          1254,
+          1254
+        ],
+        "master_sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf",
+        "sha256": "77a7ca9d2d06d9ff4bd5a570d19d9bc45b050f7614e56e458642d515031c84d5",
+        "native_export_method": "original ART-0041 whole-canvas nearest-neighbour64x64 export; byte-identical reuse"
+      },
+      "qa_notes": "Existing independently generated grass tile reused, not regenerated. Native seam review in ART-0041 delivery.",
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-11",
+        "scope": "owner automatic visual approval; technical native export verified",
+        "record": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+        "sha256": "77a7ca9d2d06d9ff4bd5a570d19d9bc45b050f7614e56e458642d515031c84d5"
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111"
+    },
+    {
+      "id": "G14",
+      "name": "Coastal Grass B",
+      "category": "floors",
+      "subtype": "grass",
+      "texture_path": "res://map_factory/parts/floors/G14_Coastal_Grass_B.png",
+      "status": "ready",
+      "pixel_size": [
+        64,
+        64
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "collision": {
+        "enabled": false,
+        "size": [
+          32,
+          16
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "y_sort": false,
+      "shadow": {
+        "type": "none",
+        "opacity": 0.0,
+        "offset_x": 0,
+        "offset_y": 0
+      },
+      "tags": [
+        "grass",
+        "floor",
+        "seabreak",
+        "ART-0041"
+      ],
+      "reusable": true,
+      "source": {
+        "kind": "reused_independent_image_gen_asset",
+        "request_id": "ART-0041",
+        "delivery_branch": "codex/art-0041-skirmish-tiles",
+        "pull_request": "https://github.com/shero92/skl-SF/pull/188",
+        "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_b.png",
+        "master_pixel_size": [
+          1254,
+          1254
+        ],
+        "master_sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1",
+        "sha256": "019292af834c58b5d13a0e3267971e1010b9b8e468b8bd812d31f2eb8bc09ec4",
+        "native_export_method": "original ART-0041 whole-canvas nearest-neighbour64x64 export; byte-identical reuse"
+      },
+      "qa_notes": "Existing independently generated grass tile reused, not regenerated. Native seam review in ART-0041 delivery.",
+      "approval_status": "approved",
+      "qa_approval": {
+        "approved_by": "owner",
+        "approved_on": "2026-11-11",
+        "scope": "owner automatic visual approval; technical native export verified",
+        "record": "docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md",
+        "sha256": "019292af834c58b5d13a0e3267971e1010b9b8e468b8bd812d31f2eb8bc09ec4"
+      },
+      "owner_approved": true,
+      "approval_basis": "owner_automatic_20261111"
     }
   ],
   "generated_png_count": 229,

@@ -20,6 +20,15 @@
       "snapshot_sha256": "831fe961b962e46c5a6f25413ce80899e8859c47924191653dc1b8d696348289",
       "updated_at": "2026-10-23T12:56:53+00:00",
       "parent_map": null
+    },
+    "seabreak_coast_01": {
+      "map_id": "seabreak_coast_01",
+      "version": 3,
+      "latest": "map_factory/maps/seabreak_coast_01/latest.json",
+      "immutable_snapshot": "map_factory/maps/seabreak_coast_01/versions/v0003.json",
+      "snapshot_sha256": "3b7bf6e7aa0dec548927c12acce0bd99e344a6b3850d8aaf19e04258ff684979",
+      "updated_at": "2026-11-12T18:44:32+00:00",
+      "parent_map": null
     }
   }
 }

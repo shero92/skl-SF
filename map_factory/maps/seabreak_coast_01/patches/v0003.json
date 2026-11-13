@@ -1,0 +1,2931 @@
+{
+  "manifest_version": 1,
+  "map_id": "seabreak_coast_01",
+  "base_version": 2,
+  "base_sha256": "1d1e5320012040ad3866f828c0dddd131e1a97f8b55f21124d951277d0c687bc",
+  "source_image": {
+    "path": null,
+    "sha256": null,
+    "status": "owner_text_brief_20261112_existing_parts"
+  },
+  "note": "Keep roads clear of crossing walls; close decorative prop bases and arch piers while preserving its walk-through centre.",
+  "changes": [
+    {
+      "op": "remove_block",
+      "instance_id": "Seabreak_W027_0106"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "Seabreak_W028_0107"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "Seabreak_W027_0121"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "Seabreak_W027_0138"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "Seabreak_W028_0139"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "Seabreak_W027_0142"
+    },
+    {
+      "op": "remove_block",
+      "instance_id": "Seabreak_W028_0143"
+    },
+    {
+      "op": "set_property",
+      "key": "navigation",
+      "value": {
+        "schema_version": 1,
+        "origin": [
+          0,
+          0
+        ],
+        "cell_size": 64,
+        "grid_size": [
+          96,
+          64
+        ],
+        "default": {
+          "walk": false,
+          "fly": false,
+          "swim": false
+        },
+        "regions": [
+          {
+            "id": "coast_feet_5_0",
+            "rect": [
+              18,
+              5,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_6_0",
+            "rect": [
+              13,
+              6,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_6_1",
+            "rect": [
+              16,
+              6,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_7_0",
+            "rect": [
+              12,
+              7,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_7_1",
+            "rect": [
+              25,
+              7,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_8_0",
+            "rect": [
+              9,
+              8,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_9_0",
+            "rect": [
+              9,
+              9,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_9_1",
+            "rect": [
+              72,
+              9,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_10_0",
+            "rect": [
+              8,
+              10,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_10_1",
+            "rect": [
+              13,
+              10,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_10_2",
+            "rect": [
+              28,
+              10,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_10_3",
+            "rect": [
+              67,
+              10,
+              10,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_11_0",
+            "rect": [
+              8,
+              11,
+              21,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_11_1",
+            "rect": [
+              64,
+              11,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_11_2",
+            "rect": [
+              74,
+              11,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_12_0",
+            "rect": [
+              7,
+              12,
+              23,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_12_1",
+            "rect": [
+              63,
+              12,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_12_2",
+            "rect": [
+              70,
+              12,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_13_0",
+            "rect": [
+              8,
+              13,
+              21,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_13_1",
+            "rect": [
+              62,
+              13,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_13_2",
+            "rect": [
+              66,
+              13,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_13_3",
+            "rect": [
+              79,
+              13,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_14_0",
+            "rect": [
+              8,
+              14,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_14_1",
+            "rect": [
+              10,
+              14,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_14_2",
+            "rect": [
+              62,
+              14,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_14_3",
+            "rect": [
+              75,
+              14,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_15_0",
+            "rect": [
+              9,
+              15,
+              20,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_15_1",
+            "rect": [
+              42,
+              15,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_15_2",
+            "rect": [
+              60,
+              15,
+              16,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_15_3",
+            "rect": [
+              77,
+              15,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_15_4",
+            "rect": [
+              84,
+              15,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_16_0",
+            "rect": [
+              9,
+              16,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_16_1",
+            "rect": [
+              15,
+              16,
+              15,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_16_2",
+            "rect": [
+              36,
+              16,
+              13,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_16_3",
+            "rect": [
+              60,
+              16,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_16_4",
+            "rect": [
+              68,
+              16,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_16_5",
+            "rect": [
+              80,
+              16,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_16_6",
+            "rect": [
+              84,
+              16,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_17_0",
+            "rect": [
+              11,
+              17,
+              20,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_17_1",
+            "rect": [
+              33,
+              17,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_17_2",
+            "rect": [
+              37,
+              17,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_17_3",
+            "rect": [
+              50,
+              17,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_17_4",
+            "rect": [
+              60,
+              17,
+              25,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_18_0",
+            "rect": [
+              13,
+              18,
+              40,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_18_1",
+            "rect": [
+              59,
+              18,
+              25,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_18_2",
+            "rect": [
+              85,
+              18,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_19_0",
+            "rect": [
+              18,
+              19,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_19_1",
+            "rect": [
+              24,
+              19,
+              30,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_19_2",
+            "rect": [
+              60,
+              19,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_19_3",
+            "rect": [
+              72,
+              19,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_19_4",
+            "rect": [
+              76,
+              19,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_19_5",
+            "rect": [
+              81,
+              19,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_20_0",
+            "rect": [
+              24,
+              20,
+              26,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_20_1",
+            "rect": [
+              51,
+              20,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_20_2",
+            "rect": [
+              60,
+              20,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_20_3",
+            "rect": [
+              80,
+              20,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_21_0",
+            "rect": [
+              25,
+              21,
+              21,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_21_1",
+            "rect": [
+              47,
+              21,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_21_2",
+            "rect": [
+              59,
+              21,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_21_3",
+            "rect": [
+              69,
+              21,
+              16,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_22_0",
+            "rect": [
+              26,
+              22,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_22_1",
+            "rect": [
+              38,
+              22,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_22_2",
+            "rect": [
+              48,
+              22,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_22_3",
+            "rect": [
+              58,
+              22,
+              23,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_22_4",
+            "rect": [
+              82,
+              22,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_23_0",
+            "rect": [
+              27,
+              23,
+              56,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_24_0",
+            "rect": [
+              28,
+              24,
+              54,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_25_0",
+            "rect": [
+              27,
+              25,
+              42,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_25_1",
+            "rect": [
+              70,
+              25,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_26_0",
+            "rect": [
+              28,
+              26,
+              35,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_26_1",
+            "rect": [
+              67,
+              26,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_27_0",
+            "rect": [
+              28,
+              27,
+              34,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_27_1",
+            "rect": [
+              72,
+              27,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_28_0",
+            "rect": [
+              28,
+              28,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_28_1",
+            "rect": [
+              32,
+              28,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_28_2",
+            "rect": [
+              41,
+              28,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_28_3",
+            "rect": [
+              48,
+              28,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_28_4",
+            "rect": [
+              72,
+              28,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_29_0",
+            "rect": [
+              29,
+              29,
+              24,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_29_1",
+            "rect": [
+              54,
+              29,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_29_2",
+            "rect": [
+              73,
+              29,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_30_0",
+            "rect": [
+              30,
+              30,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_30_1",
+            "rect": [
+              37,
+              30,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_30_2",
+            "rect": [
+              50,
+              30,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_30_3",
+            "rect": [
+              73,
+              30,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_31_0",
+            "rect": [
+              30,
+              31,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_31_1",
+            "rect": [
+              33,
+              31,
+              22,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_31_2",
+            "rect": [
+              73,
+              31,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_32_0",
+            "rect": [
+              11,
+              32,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_32_1",
+            "rect": [
+              32,
+              32,
+              21,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_32_2",
+            "rect": [
+              73,
+              32,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_33_0",
+            "rect": [
+              8,
+              33,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_33_1",
+            "rect": [
+              33,
+              33,
+              17,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_33_2",
+            "rect": [
+              51,
+              33,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_33_3",
+            "rect": [
+              73,
+              33,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_34_0",
+            "rect": [
+              8,
+              34,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_34_1",
+            "rect": [
+              36,
+              34,
+              10,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_34_2",
+            "rect": [
+              47,
+              34,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_34_3",
+            "rect": [
+              74,
+              34,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_35_0",
+            "rect": [
+              6,
+              35,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_35_1",
+            "rect": [
+              10,
+              35,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_35_2",
+            "rect": [
+              14,
+              35,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_35_3",
+            "rect": [
+              38,
+              35,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_35_4",
+            "rect": [
+              74,
+              35,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_36_0",
+            "rect": [
+              6,
+              36,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_36_1",
+            "rect": [
+              38,
+              36,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_36_2",
+            "rect": [
+              74,
+              36,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_37_0",
+            "rect": [
+              5,
+              37,
+              13,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_37_1",
+            "rect": [
+              38,
+              37,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_37_2",
+            "rect": [
+              74,
+              37,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_38_0",
+            "rect": [
+              6,
+              38,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_38_1",
+            "rect": [
+              12,
+              38,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_38_2",
+            "rect": [
+              38,
+              38,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_38_3",
+            "rect": [
+              74,
+              38,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_39_0",
+            "rect": [
+              6,
+              39,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_39_1",
+            "rect": [
+              36,
+              39,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_39_2",
+            "rect": [
+              72,
+              39,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_40_0",
+            "rect": [
+              7,
+              40,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_40_1",
+            "rect": [
+              29,
+              40,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_40_2",
+            "rect": [
+              35,
+              40,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_40_3",
+            "rect": [
+              71,
+              40,
+              13,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_41_0",
+            "rect": [
+              8,
+              41,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_41_1",
+            "rect": [
+              22,
+              41,
+              21,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_41_2",
+            "rect": [
+              69,
+              41,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_41_3",
+            "rect": [
+              71,
+              41,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_41_4",
+            "rect": [
+              84,
+              41,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_42_0",
+            "rect": [
+              11,
+              42,
+              32,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_42_1",
+            "rect": [
+              68,
+              42,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_43_0",
+            "rect": [
+              12,
+              43,
+              30,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_43_1",
+            "rect": [
+              68,
+              43,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_44_0",
+            "rect": [
+              12,
+              44,
+              13,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_44_1",
+            "rect": [
+              28,
+              44,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_44_2",
+            "rect": [
+              34,
+              44,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_44_3",
+            "rect": [
+              67,
+              44,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_44_4",
+            "rect": [
+              75,
+              44,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_44_5",
+            "rect": [
+              85,
+              44,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_0",
+            "rect": [
+              13,
+              45,
+              8,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_1",
+            "rect": [
+              24,
+              45,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_2",
+            "rect": [
+              29,
+              45,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_3",
+            "rect": [
+              34,
+              45,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_4",
+            "rect": [
+              39,
+              45,
+              9,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_5",
+            "rect": [
+              67,
+              45,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_6",
+            "rect": [
+              71,
+              45,
+              10,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_7",
+            "rect": [
+              82,
+              45,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_45_8",
+            "rect": [
+              87,
+              45,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_46_0",
+            "rect": [
+              14,
+              46,
+              41,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_46_1",
+            "rect": [
+              67,
+              46,
+              21,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_47_0",
+            "rect": [
+              15,
+              47,
+              74,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_48_0",
+            "rect": [
+              14,
+              48,
+              74,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_49_0",
+            "rect": [
+              15,
+              49,
+              10,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_49_1",
+            "rect": [
+              28,
+              49,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_49_2",
+            "rect": [
+              34,
+              49,
+              39,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_49_3",
+            "rect": [
+              76,
+              49,
+              3,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_49_4",
+            "rect": [
+              82,
+              49,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_50_0",
+            "rect": [
+              15,
+              50,
+              6,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_50_1",
+            "rect": [
+              22,
+              50,
+              49,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_50_2",
+            "rect": [
+              74,
+              50,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_50_3",
+            "rect": [
+              84,
+              50,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_50_4",
+            "rect": [
+              87,
+              50,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_51_0",
+            "rect": [
+              16,
+              51,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_51_1",
+            "rect": [
+              18,
+              51,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_51_2",
+            "rect": [
+              23,
+              51,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_51_3",
+            "rect": [
+              36,
+              51,
+              7,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_51_4",
+            "rect": [
+              51,
+              51,
+              31,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_51_5",
+            "rect": [
+              83,
+              51,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_52_0",
+            "rect": [
+              17,
+              52,
+              22,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_52_1",
+            "rect": [
+              40,
+              52,
+              2,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_52_2",
+            "rect": [
+              68,
+              52,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_53_0",
+            "rect": [
+              18,
+              53,
+              4,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_53_1",
+            "rect": [
+              23,
+              53,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_53_2",
+            "rect": [
+              36,
+              53,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_53_3",
+            "rect": [
+              69,
+              53,
+              5,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_53_4",
+            "rect": [
+              75,
+              53,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_54_0",
+            "rect": [
+              20,
+              54,
+              19,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_54_1",
+            "rect": [
+              71,
+              54,
+              12,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_55_0",
+            "rect": [
+              22,
+              55,
+              15,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_55_1",
+            "rect": [
+              72,
+              55,
+              11,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_56_0",
+            "rect": [
+              29,
+              56,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          },
+          {
+            "id": "coast_feet_56_1",
+            "rect": [
+              77,
+              56,
+              1,
+              1
+            ],
+            "allow": [
+              "walk"
+            ],
+            "surface": "other",
+            "floor_height": 0,
+            "ceiling_height": null,
+            "review_status": "needs_review"
+          }
+        ],
+        "obstacles": [],
+        "links": []
+      }
+    }
+  ]
+}

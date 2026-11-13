@@ -1,0 +1,219 @@
+{
+  "task_id": "TASK-0169",
+  "agent": "codex",
+  "delivery_branch": "codex/seabreak-coast",
+  "base_branch": "claude/photo-backdrop-test",
+  "base_commit": "2c0b2ab6366622866adaaaef972fead73773d54f",
+  "destination": "H:\\shining force\\skl-SF\\.worktrees\\seabreak-coast",
+  "owner_main_checkout_written": false,
+  "new_image_generation_calls": 0,
+  "map_id": "seabreak_coast_01",
+  "version": 3,
+  "files": [
+    {
+      "path": ".agents/planner/requests/REQ-68f0779d6b24.json",
+      "sha256": "e069ad90834fafaffb346f346df363ac5666491940d7f11821404be4dd90bc70"
+    },
+    {
+      "path": ".agents/tasks/TASK-0169_seabreak_coast_world.md",
+      "sha256": "61b93487e6319780c6029f6c70ed9ac04b2625999964a51e29d323e2d8c4c088"
+    },
+    {
+      "path": "docs/SEABREAK_COAST.md",
+      "sha256": "6088ec51861357ebf7ddde8ba75f16ba2b228b0f3df37c6de78501bb71fe7578"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/arrival.png",
+      "sha256": "ff36f6ef8ff553c0b0e165b8184befee053b6746cac315b7661d9240f63c6bb8"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/beacon_terrace.png",
+      "sha256": "f50df74ebf99cc1e760c6861905d84d53e08774ba8847d72623da47aebca8cff"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/capture_receipt.json",
+      "sha256": "b49bbe894e1102148365c8c18dbabb4c28e5f00fb2494b405a1a7f5390757082"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/compass_court.png",
+      "sha256": "b9cb78c9f8fc92763a2e195648d866dea126e048e7eb050e652e7991ea5de862"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/final_map_tests.log",
+      "sha256": "d2da72d3ed8b8094db03488ae25410cd568c28b9326715e50f634cb5dc84e713"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/full_tests.log",
+      "sha256": "0a04adb6ad7db2966dd323018d8a29152cbdd611ed0b0ac14b740aee23d95199"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/overview.png",
+      "sha256": "4756d9fd6fe2f533f8e52baf3888b3f3e67bd30ac2842c901b27df2afeada984"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/palm_gardens.png",
+      "sha256": "5857c34afd210d6bd642b5207532be2f420ab4df2d23736740ddef691513f018"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/quiet_overlook.png",
+      "sha256": "abbbe3b9c1891a56fc927827584ee706d9a4b5c9c3112a0839f89931c0f51719"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/sanctuary_gate.png",
+      "sha256": "d103c7c7fd5fcae87d2aef2dba07bcb81ecda377c47dd053a0cfa911dafb5abc"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/sunken_archive.png",
+      "sha256": "b302f37b2f0957acbeaeafd355f0c107370399c189c5e4aca51ffc7808024082"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/verification.json",
+      "sha256": "f4fc9c579b6b0a9b44a398169be0b1a645f5ddb41ba2ea92fce975f4a3cdbe2c"
+    },
+    {
+      "path": "docs/previews/seabreak_coast/walk.log",
+      "sha256": "6611dc2bc7c8bf8c8873bee5d97dedcee3bd4161198a509e7ef0ea56028f2c30"
+    },
+    {
+      "path": "map_factory/maps/index.json",
+      "sha256": "778de655f9ff84dd40698154ec4d862f65994abffa92ab527b1fff0b76d398b3"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/blocks/latest.json",
+      "sha256": "3be64b578c233548c87f6cfc62a5610566f1a5e9e35413660badac4d0f4bbe35"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/blocks/v0001.json",
+      "sha256": "156167a3f93367a348f875801dc7d92ce1456504564457d9045007edb76c026e"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/blocks/v0002.json",
+      "sha256": "9d97fdc26cf762fae7d644a0ca5a45db10b4be53a3f20fe491164b4a46a02f86"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/blocks/v0003.json",
+      "sha256": "3be64b578c233548c87f6cfc62a5610566f1a5e9e35413660badac4d0f4bbe35"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/changes/v0002.json",
+      "sha256": "e5305140e1dfe7ec1fe72d3e002b846bc40cfd53f7691343672eb422be50b43c"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/changes/v0003.json",
+      "sha256": "573d5745a09dbe3369fa87013819dce3af15906f3a911e5415044a294e6c0606"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/latest.json",
+      "sha256": "c0cb45752dc34f57fb12925fb3312058b3aec6cd5bfb54e9e2c29202ad932a2e"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/layers/latest.json",
+      "sha256": "fdc4d15e428bd4ea18d35cf65fd075aa7658ba11527187db69c118ead6843078"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/layers/v0001.json",
+      "sha256": "47d5f928fe7b98ccc30cb818d6423cbe8dbb13e43233de74913d34ab67e7571f"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/layers/v0002.json",
+      "sha256": "14131559339083e3a0514079f232c0bcbde8f039882ba80f1565796129640cea"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/layers/v0003.json",
+      "sha256": "fdc4d15e428bd4ea18d35cf65fd075aa7658ba11527187db69c118ead6843078"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/patches/v0002.json",
+      "sha256": "e5305140e1dfe7ec1fe72d3e002b846bc40cfd53f7691343672eb422be50b43c"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/patches/v0003.json",
+      "sha256": "573d5745a09dbe3369fa87013819dce3af15906f3a911e5415044a294e6c0606"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/versions/v0001.json",
+      "sha256": "29167f78220415a63ecba09ace3af7960aa589ff337a904873fdbefa4d7a327f"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/versions/v0002.json",
+      "sha256": "79fe637877ff14c7ccf1f47b59728828bdfda32fe8ceb66e841a182eafa16c6b"
+    },
+    {
+      "path": "map_factory/maps/seabreak_coast_01/versions/v0003.json",
+      "sha256": "c0cb45752dc34f57fb12925fb3312058b3aec6cd5bfb54e9e2c29202ad932a2e"
+    },
+    {
+      "path": "map_factory/metadata/asset_index.json",
+      "sha256": "4d3446f40adf19bd731165d2e56f196be0bdb02ed8b259f2c97f8c2ffd042fd8"
+    },
+    {
+      "path": "map_factory/parts/floors/G13_Coastal_Grass_A.png",
+      "sha256": "77a7ca9d2d06d9ff4bd5a570d19d9bc45b050f7614e56e458642d515031c84d5"
+    },
+    {
+      "path": "map_factory/parts/floors/G14_Coastal_Grass_B.png",
+      "sha256": "019292af834c58b5d13a0e3267971e1010b9b8e468b8bd812d31f2eb8bc09ec4"
+    },
+    {
+      "path": "map_factory/worlds/grass_source_receipt.json",
+      "sha256": "ef386471160fff66934ee164637e70acebc9cc37c3bfa785d3bc74c4cb281f0e"
+    },
+    {
+      "path": "map_factory/worlds/seabreak_coast_01.json",
+      "sha256": "fe17fcb0eb7091a79d1b63c354bfcaf5d64bb5527f10d55f9e59426ec1dd22ea"
+    },
+    {
+      "path": "map_factory/worlds/seabreak_source_reuse.json",
+      "sha256": "0ab68d42eb815448ed256a2bfab17dcce7e2ab02f930728320603730dc4a64c5"
+    },
+    {
+      "path": "scenes/main.tscn",
+      "sha256": "fbffc1cc0e63e0d1f3c07622c5ebef1020edeebf49e1aa0c8da282e33377e741"
+    },
+    {
+      "path": "scenes/world/room_exit.gd",
+      "sha256": "c47ad135acf9303aae6469a95fe3f66ba7c9b5a74a2507c0bd836507dccab824"
+    },
+    {
+      "path": "scenes/world/seabreak_coast.gd",
+      "sha256": "95c2c7441a2829310e5546ad564431153571a8617de4d8e2dad0ea5d638670dc"
+    },
+    {
+      "path": "scenes/world/seabreak_coast.tscn",
+      "sha256": "779795306d0279968beca883b1c59838e5cab7957a0800f210dba092ce1638c4"
+    },
+    {
+      "path": "scenes/world/world_travel.gd",
+      "sha256": "0a07e7246d0edef0d50bc912372ff123b4718f460ff93cd8e2938308de2af619"
+    },
+    {
+      "path": "tools/build_seabreak_coast.py",
+      "sha256": "5489f8d82acb931b35a4ce096a80f09de7ea74517e116a500c76e05f92490085"
+    },
+    {
+      "path": "tools/capture_seabreak_coast.gd",
+      "sha256": "a8b29556481104fe8f37a171864e47f027f850a1790085d8639d51c2fc3e0890"
+    },
+    {
+      "path": "tools/polish_seabreak_coast.py",
+      "sha256": "e169abefab453f8fc288591d115c2980ae25322171a4b252cdd2cdd63805c469"
+    },
+    {
+      "path": "tools/refine_seabreak_coast.py",
+      "sha256": "04d85093623023f2c04b5e639a49dbcd2b274e1b0ae2b85e78a41e6284847d65"
+    },
+    {
+      "path": "tools/test_map.json",
+      "sha256": "92190ed29b84a6718233fee20595f96faf0bb32420e21227388e7641751ab901"
+    },
+    {
+      "path": "tools/tests/test_seabreak_coast.py",
+      "sha256": "abd166ac8cd22258eafabcaa140f27e3e5a17e3a3ea6eeb6468c7b218cb8a76f"
+    },
+    {
+      "path": "tools/verify_seabreak_coast.gd",
+      "sha256": "8e41d65722675b6743fad01cfc8dbb8fcbbcd2381a33191bfd807f0d88e9df10"
+    }
+  ],
+  "pull_request": "https://github.com/shero92/skl-SF/pull/191"
+}

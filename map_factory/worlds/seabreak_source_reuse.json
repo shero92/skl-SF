@@ -1,0 +1,37 @@
+{
+  "new_generation_calls": 0,
+  "existing_art_reused": [
+    {
+      "asset_id": "G13",
+      "runtime_path": "map_factory/parts/floors/G13_Coastal_Grass_A.png",
+      "kind": "reused_independent_image_gen_asset",
+      "request_id": "ART-0041",
+      "delivery_branch": "codex/art-0041-skirmish-tiles",
+      "pull_request": "https://github.com/shero92/skl-SF/pull/188",
+      "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_a.png",
+      "master_pixel_size": [
+        1254,
+        1254
+      ],
+      "master_sha256": "7742a517c424a3d5775d18a687599a019d8859202ce6bc0c3937ba8fd5dacbcf",
+      "sha256": "77a7ca9d2d06d9ff4bd5a570d19d9bc45b050f7614e56e458642d515031c84d5",
+      "native_export_method": "original ART-0041 whole-canvas nearest-neighbour64x64 export; byte-identical reuse"
+    },
+    {
+      "asset_id": "G14",
+      "runtime_path": "map_factory/parts/floors/G14_Coastal_Grass_B.png",
+      "kind": "reused_independent_image_gen_asset",
+      "request_id": "ART-0041",
+      "delivery_branch": "codex/art-0041-skirmish-tiles",
+      "pull_request": "https://github.com/shero92/skl-SF/pull/188",
+      "master_path": "assets_hd/floor/skirmish_field/v001/field_grass_b.png",
+      "master_pixel_size": [
+        1254,
+        1254
+      ],
+      "master_sha256": "7833ccc5e8155eae144d829fec3e9ba089c3585e14324ea54483a98132f56dd1",
+      "sha256": "019292af834c58b5d13a0e3267971e1010b9b8e468b8bd812d31f2eb8bc09ec4",
+      "native_export_method": "original ART-0041 whole-canvas nearest-neighbour64x64 export; byte-identical reuse"
+    }
+  ]
+}
