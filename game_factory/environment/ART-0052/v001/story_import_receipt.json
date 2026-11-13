@@ -1,0 +1,77 @@
+{
+  "source_folder": "H:\\shining force\\skl-SF\\docs\\story",
+  "imported_on": "2026-11-13",
+  "files": [
+    {
+      "path": "docs/story/chapter_01/01_home_and_storm.md",
+      "source_original_sha256": "9e0de6bd94fd32dd80181d685d47917bb2bbcbb787ee7d7a9909829d622d72fe",
+      "sha256": "5cbdaa587d78fb92f6b83bbfcf09ce14f27080a8506ebad465c52c0aed547dd9",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/chapter_01/02_sword_visions.md",
+      "source_original_sha256": "15e6d175e38aa721e822c7ff3c6463f4ce24a573922533928b1cd3e82dae5c96",
+      "sha256": "7c9aee7b9939eae5ef6293f1840a8457933fce560a1cbab5afc9b4590767281d",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/chapter_01/03_first_battle.md",
+      "source_original_sha256": "2e256a64a8d2b4ac0bf15dd349d92dd06b17966479ced91da7f01ab86a0092e9",
+      "sha256": "b6e60910b2f97b87efca786f73f7e3c32f028e24449fb4e1b86639932b00e5f6",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/chapter_01/04_temple_and_second_battle.md",
+      "source_original_sha256": "8ccad35e2860b1bad62307ddb2f0632f0f5bcedf5f7d20da2923cb0756282218",
+      "sha256": "1db0b55a358cca6f12bb44867783f335d8d6c05ec4b8fca14f559c214845cf94",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/chapter_01/05_giant_door_shrine_earthquake.md",
+      "source_original_sha256": "676a912765e2f2c656f768992561a531dadd1b828dae6dbe377621d2eec978ad",
+      "sha256": "0bd11b0ecae04bcd4472fa12f856f74204da8e33979e970c643faf8ab8fce4c5",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/chapter_01/06_third_battle_islands_fury.md",
+      "source_original_sha256": "559150d8a73d53e133acc3d574e332cd5942e925ddd5a185ff7241463339ee52",
+      "sha256": "1f4678d8578898482176fea42a3d29c569091419268268af6c2923fc2de062b4",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/chapter_01/07_jungle_rescue.md",
+      "source_original_sha256": "df1bb922e12338b519c807eec6b11ee9cb1a29e8dd6d5c2e801b89fc06e8c148",
+      "sha256": "f360a0601c3e00976d20e3994c1ac77f175ef84942671e62ecd3121b10c0eb29",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/chapter_02/README.md",
+      "source_original_sha256": "3785ef33e0b46043a7b3365836b6fd043f49f3094b0c03b8c63c0173c94d32af",
+      "sha256": "bcef89d99ebbbc93d3f1645538feccb5c50a3deb665b51325df725494662160d",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/INDEX.md",
+      "source_original_sha256": "06c900b102ba26ca5fab71588f27d13ec4bf2100fa7db95120c394f865095843",
+      "sha256": "af6e9ac0f606923993dcd4471f7fde60609d27f0676e139903e837d278537fe2",
+      "change": "navigation index updated"
+    },
+    {
+      "path": "docs/story/shared/three_battles_monsters.md",
+      "source_original_sha256": "3f4935714a478f46b991b526a38cd81c19e87a14a85b8e1dd7bb6c1b159db4d3",
+      "sha256": "90e2acf20a111ad28ab1f3eae6abe11f54b22acf4e1a99f7ebe61b7e3579ec76",
+      "change": "UTF8 text, LF line endings only"
+    },
+    {
+      "path": "docs/story/shared/visions_creatures_and_secrets.md",
+      "source_original_sha256": "fb0f0e21e4cd3da96c8cf8b6bbc8a3e8c95d14f187a4ea5462f177cfcd3267f6",
+      "sha256": "2d9acd0b790de4cb84da6e1dfbebb750c73abc27b15bae6df614a5017690aa81",
+      "change": "UTF8 text, LF line endings only"
+    }
+  ],
+  "note": "Owner local story text preserved; LF-normalized for Git. Navigation INDEX updated; original archived. New facts reference assembled from local approved text plus owner20261113. Older sibling-repository canon not imported as authority.",
+  "original_index_archive": {
+    "path": "game_factory/environment/ART-0052/v001/story_INDEX_original.md",
+    "sha256": "2bff42fff1d2d4b42e56d811f11586c50db89328d5178468990157a197d53dc4"
+  }
+}

@@ -6,7 +6,7 @@
     992
   ],
   "room_scene": "res://scenes/main.tscn",
-  "world_scene": "res://scenes/world/seabreak_coast.tscn",
+  "world_scene": "res://scenes/world/painted_coast.tscn",
   "room_exit_photo": {
     "rect": [
       704,
@@ -1879,5 +1879,7 @@
       "method": "conservative authored grid-foot annotation; arch has two pier groups with open centre",
       "review_status": "needs_review"
     }
-  ]
+  ],
+  "rendering_mode": "owner_requested_painted_square_block_ground",
+  "painted_world_definition": "map_factory/painted_worlds/hidden_island/v001/world.json"
 }

@@ -6,13 +6,13 @@
 
 الموافقة البصرية تلقائية وفق `docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md`. المحاولات rejected محفوظة للتتبع ولا تدخل الخريطة. وجود سجل لا يثبت التكامل؛ تُراجع المقاسات والارتكاز والتثبيت والقيود في manifest. القيم الناقصة تبقى مجهولة، ولا تُختلق collision أو اتجاه أو قياسات.
 
-سجل الخرائط الحالية مرفق في JSON؛ exact_path_map_references يرصد فقط التطابق الحرفي لمسار المصدر/المعاينة في latest.json، ولا يستنتج أن الصور غير المطابقة مستخدمة. لا يغيّر الفهرس خرائط أو يعين أصولًا نشطة.
+سجل الخرائط الحالية مرفق في JSON؛ exact_path_map_references يرصد التطابق الحرفي لمسار المصدر/المعاينة/runtime في خرائط المصنع أو تعريفات العوالم المصورة المسجلة، ولا يستنتج استخدام الصور من أسمائها. لا يغيّر الفهرس الخرائط أو يعين أصولًا نشطة. القصة عبر docs/story/INDEX.md؛ العالم المصور عبر map_factory/painted_worlds/INDEX.md.
 
 الصور المنسوخة محليًا قد تكون في PR لم يدمج بعد؛ publication يوضح الفرع والرابط. تتحقق حالة الدمج من Git عند الاستخدام. لا تستبدل الصور بأسماء متشابهة ولا تفعّل البدائل تلقائيًا.
 
 بعد كل تسليم: شغّل `python tools/source_art_catalog.py --root . --write` في مجلد المشروع الجامع، ثم `python tools/source_art_catalog.py --root . --check`. تحفظ الأداة فقط هذا الفهرس ودليله؛ لا تعدّل PNG أو manifests تاريخية. فهارس INDEX.md الآلية تُحدّث على main وفق سير المشروع.
 
-العدد: 100 مصادر مختارة و26 محاولات مرفوضة في 24 manifests.
+العدد: 117 مصادر مختارة و44 محاولات مرفوضة في 35 manifests.
 
 | ART | القطعة | الفئة | الاختيار | المصدر |
 | --- | --- | --- | --- | --- |
@@ -110,6 +110,41 @@
 | ART-0038 | wall_straight_window_opening | architecture | selected | [wall_straight_window_opening.png](../assets_hd/architecture/window_wall/v002/wall_straight_window_opening.png) |
 | ART-0038 | wall_straight_window_opening_attempt_03 | architecture | rejected | [wall_straight_window_opening_attempt_03.png](../assets_hd/architecture/window_wall/v002/rejected/wall_straight_window_opening_attempt_03.png) |
 | ART-0039 | study_wooden_stool | furniture | selected | [study_wooden_stool.png](../assets_hd/furniture/study_stool/v001/study_wooden_stool.png) |
+| ART-0040 | hero_wall_lantern_east | lighting | selected | [hero_wall_lantern_east.png](../assets_hd/lighting/east_wall_lantern/v001/hero_wall_lantern_east.png) |
+| ART-0040 | hero_wall_lantern_east_attempt_01 | lighting | rejected | [hero_wall_lantern_east_attempt_01.png](../assets_hd/lighting/east_wall_lantern/v001/rejected/hero_wall_lantern_east_attempt_01.png) |
+| ART-0041 | field_grass_a | floor | selected | [field_grass_a.png](../assets_hd/floor/skirmish_field/v001/field_grass_a.png) |
+| ART-0041 | field_grass_b | floor | selected | [field_grass_b.png](../assets_hd/floor/skirmish_field/v001/field_grass_b.png) |
+| ART-0041 | field_rock_block | props | selected | [field_rock_block.png](../assets_hd/props/skirmish_rock/v001/field_rock_block.png) |
+| ART-0041 | marker_move | decor | selected | [marker_move.png](../assets_hd/decor/skirmish_markers/v001/marker_move.png) |
+| ART-0041 | marker_target | decor | selected | [marker_target.png](../assets_hd/decor/skirmish_markers/v001/marker_target.png) |
+| ART-0041 | marker_active | decor | selected | [marker_active.png](../assets_hd/decor/skirmish_markers/v001/marker_active.png) |
+| ART-0041 | marker_active_attempt_01 | decor | rejected | [marker_active_attempt_01.png](../assets_hd/decor/skirmish_markers/v001/rejected/marker_active_attempt_01.png) |
+| ART-0042 | hero_rear_left_ruined_wall_window | architecture | selected | [hero_rear_left_ruined_wall_window.png](../assets_hd/architecture/rear_left_window_wall/v001/hero_rear_left_ruined_wall_window.png) |
+| ART-0042 | hero_rear_left_ruined_wall_window_attempt_01 | architecture | rejected | [hero_rear_left_ruined_wall_window_attempt_01.png](../assets_hd/architecture/rear_left_window_wall/v001/rejected/hero_rear_left_ruined_wall_window_attempt_01.png) |
+| ART-0043 | hero_rear_right_wall_arched_door_niche | architecture | selected | [hero_rear_right_wall_arched_door_niche.png](../assets_hd/architecture/rear_right_door_niche/v001/hero_rear_right_wall_arched_door_niche.png) |
+| ART-0043 | hero_rear_right_wall_arched_door_niche_attempt_01 | architecture | rejected | [hero_rear_right_wall_arched_door_niche_attempt_01.png](../assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_01.png) |
+| ART-0043 | hero_rear_right_wall_arched_door_niche_attempt_02 | architecture | rejected | [hero_rear_right_wall_arched_door_niche_attempt_02.png](../assets_hd/architecture/rear_right_door_niche/v001/rejected/hero_rear_right_wall_arched_door_niche_attempt_02.png) |
+| ART-0044 | hero_west_curved_side_wall_attempt_01 | architecture | rejected | [hero_west_curved_side_wall_attempt_01.png](../assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_01.png) |
+| ART-0044 | hero_west_curved_side_wall_attempt_02 | architecture | rejected | [hero_west_curved_side_wall_attempt_02.png](../assets_hd/architecture/curved_west_side_wall/v001/rejected/hero_west_curved_side_wall_attempt_02.png) |
+| ART-0045 | hero_east_curved_side_wall_attempt_01 | architecture | rejected | [hero_east_curved_side_wall_attempt_01.png](../assets_hd/architecture/curved_east_side_wall/v001/rejected/hero_east_curved_side_wall_attempt_01.png) |
+| ART-0048 | hero_double_bed_south | furniture | selected | [hero_double_bed_south.png](../assets_hd/furniture/double_bed_south/v001/hero_double_bed_south.png) |
+| ART-0049 | hero_sea_stack_arch_island | background | selected | [hero_sea_stack_arch_island.png](../assets_hd/background/sea_stack_islands/v001/hero_sea_stack_arch_island.png) |
+| ART-0049 | hero_sea_stack_cluster | background | rejected | [hero_sea_stack_cluster_attempt_01.png](../assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_cluster_attempt_01.png) |
+| ART-0049 | hero_sea_stack_arch_island_attempt_01 | background | rejected | [hero_sea_stack_arch_island_attempt_01.png](../assets_hd/background/sea_stack_islands/v001/rejected/hero_sea_stack_arch_island_attempt_01.png) |
+| ART-0052 | seabreak_archive_ruins | background | rejected | [seabreak_archive_ruins.png](../assets_hd/background/seabreak_painted_world/v001/seabreak_archive_ruins.png) |
+| ART-0052 | seabreak_beacon_headland | background | rejected | [seabreak_beacon_headland.png](../assets_hd/background/seabreak_painted_world/v001/seabreak_beacon_headland.png) |
+| ART-0052 | seabreak_palm_gardens | background | rejected | [seabreak_palm_gardens.png](../assets_hd/background/seabreak_painted_world/v001/seabreak_palm_gardens.png) |
+| ART-0052 | seabreak_sanctuary_approach | background | rejected | [seabreak_sanctuary_approach.png](../assets_hd/background/seabreak_painted_world/v001/seabreak_sanctuary_approach.png) |
+| ART-0052 | seabreak_sunlit_promenade | background | rejected | [seabreak_sunlit_promenade.png](../assets_hd/background/seabreak_painted_world/v001/seabreak_sunlit_promenade.png) |
+| ART-0052 | hidden_island_home_clearing | background | rejected | [hidden_island_home_clearing.png](../assets_hd/background/hidden_island_painted/v001/hidden_island_home_clearing.png) |
+| ART-0052 | hidden_island_home_descent | background | rejected | [hidden_island_home_descent.png](../assets_hd/background/hidden_island_painted/v001/hidden_island_home_descent.png) |
+| ART-0052 | hidden_island_mossveil_edge | background | rejected | [hidden_island_mossveil_edge.png](../assets_hd/background/hidden_island_painted/v001/hidden_island_mossveil_edge.png) |
+| ART-0052 | hidden_island_home_descent | background | selected | [hidden_island_home_descent.png](../assets_hd/background/hidden_island_grid_painted/v001/hidden_island_home_descent.png) |
+| ART-0052 | hidden_island_mossveil_edge | background | selected | [hidden_island_mossveil_edge.png](../assets_hd/background/hidden_island_grid_painted/v001/hidden_island_mossveil_edge.png) |
+| ART-0052 | hidden_island_mossveil_roots | background | selected | [hidden_island_mossveil_roots.png](../assets_hd/background/hidden_island_grid_painted/v001/hidden_island_mossveil_roots.png) |
+| ART-0052 | hidden_island_stormwatch_ascent | background | selected | [hidden_island_stormwatch_ascent.png](../assets_hd/background/hidden_island_grid_painted/v001/hidden_island_stormwatch_ascent.png) |
+| ART-0052 | hidden_island_stormwatch_overlook | background | selected | [hidden_island_stormwatch_overlook.png](../assets_hd/background/hidden_island_grid_painted/v001/hidden_island_stormwatch_overlook.png) |
+| ART-0052 | hidden_island_bone_tide_shore | background | selected | [hidden_island_bone_tide_shore.png](../assets_hd/background/hidden_island_grid_painted/v001/hidden_island_bone_tide_shore.png) |
 | ART-0029 | hero_golden_cyclone_001 | character | selected | [hero_golden_cyclone_001.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_001.png) |
 | ART-0029 | hero_golden_cyclone_002 | character | selected | [hero_golden_cyclone_002.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_002.png) |
 | ART-0029 | hero_golden_cyclone_003 | character | selected | [hero_golden_cyclone_003.png](../assets/characters/hero/battle/golden_cyclone/v001/source_frames/hero_golden_cyclone_003.png) |

@@ -4,6 +4,8 @@
 
 | Task request / feature | Go here first | Then inspect |
 | --- | --- | --- |
+| Story, Hidden Island, characters and story-grounded world design | [docs/story/INDEX.md](docs/story/INDEX.md) | `docs/design/STORY_CANON_AR.md`, then only the relevant chapter; the exterior is wild, with no other human residents |
+| Painted square-block Hidden Island exterior and room exit | [map_factory/painted_worlds/INDEX.md](map_factory/painted_worlds/INDEX.md) | `docs/PAINTED_COAST.md`, `hidden_island/v001/world.json`, `game_factory/environment/ART-0052/v003/manifest.json` |
 | Map factory design, JSON contracts, layer ordering | [map_factory/INDEX.md](map_factory/INDEX.md) | `map_factory/MAP_FACTORY_RULES.md`, targeted workflow docs |
 | Create/clone/patch a room | [map_factory/INDEX.md](map_factory/INDEX.md) | `tools/map_factory_cli.py`, `map_factory/maps/index.json` |
 | Hero Room version, placement and fidelity | [map_factory/maps/INDEX.md](map_factory/maps/INDEX.md) | `hero_room_01/latest.json`, `docs/MAP_FACTORY_REFERENCE_DIAGNOSIS.md` |

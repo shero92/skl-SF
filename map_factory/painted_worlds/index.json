@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_art_catalog": "map_factory/metadata/source_art_index.json",
+  "story_index": "docs/story/INDEX.md",
+  "worlds": {
+    "hidden_island_opening": {
+      "version": 1,
+      "latest": "map_factory/painted_worlds/hidden_island/v001/world.json",
+      "request_id": "ART-0052",
+      "runtime_scene": "scenes/world/painted_coast.tscn",
+      "guide": "docs/PAINTED_COAST.md",
+      "status": "needs_map_review"
+    }
+  }
+}

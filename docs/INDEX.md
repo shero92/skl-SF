@@ -2,6 +2,8 @@
 
 | Goal | Start here |
 | --- | --- |
+| Story, Hidden Island and character continuity | [story/INDEX.md](story/INDEX.md), then [design/STORY_CANON_AR.md](design/STORY_CANON_AR.md) and the relevant chapter |
+| Painted Hidden Island exterior, square ground and stair continuity | [PAINTED_COAST.md](PAINTED_COAST.md), [painted-world index](../map_factory/painted_worlds/INDEX.md) |
 | Intended user art style, palette, perspective | [REFERENCE_ART_DIRECTION.md](REFERENCE_ART_DIRECTION.md) |
 | Why current Godot room differs from reference | [MAP_FACTORY_REFERENCE_DIAGNOSIS.md](MAP_FACTORY_REFERENCE_DIAGNOSIS.md) |
 | Rules to approve individual sprite replacements | [ASSET_QUALITY_POLICY.md](ASSET_QUALITY_POLICY.md) |

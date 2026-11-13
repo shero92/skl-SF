@@ -30,5 +30,7 @@
       "updated_at": "2026-11-12T18:44:32+00:00",
       "parent_map": null
     }
-  }
+  },
+  "painted_world_index": "map_factory/painted_worlds/index.json",
+  "painted_world_guide": "docs/PAINTED_COAST.md"
 }

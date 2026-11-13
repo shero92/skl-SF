@@ -60,6 +60,11 @@ def build(root):
     for ident, entry in sorted(map_index["maps"].items()):
         maps.append({"map_id": ident, **entry})
         map_refs[ident] = set(strings(load(safe_path(root, entry["latest"]))))
+    painted_index = map_index.get("painted_world_index")
+    if painted_index:
+        for ident, entry in sorted(load(safe_path(root, painted_index))["worlds"].items()):
+            maps.append({"map_id": ident, "rendering_mode": "owner_requested_painted_block_ground", **entry})
+            map_refs[ident] = set(strings(load(safe_path(root, entry["latest"]))))
     sources = sorted(root.glob("game_factory/environment/ART-*/v*/manifest.json"))
     character = root / "game_factory/golden_cyclone/v001/manifest.json"
     if character.exists():
@@ -116,7 +121,7 @@ def build(root):
                             errors.append(f"Linked SHA mismatch: {value}")
                 ident = item.get("id", item.get("frame_id", path.stem))
                 category = path.parts[path.parts.index("assets_hd") + 1] if "assets_hd" in path.parts else "character"
-                relevant_paths = {source, item.get("native_review_path"), item.get("game_frame_path")}
+                relevant_paths = {source, item.get("native_review_path"), item.get("game_frame_path"), item.get("runtime_path")}
                 records.append({"catalog_id": f"{request}/{directory.name}/{ident}/{selection}",
                                 "id": ident, "request_id": request, "category": category,
                                 "selection": selection, "master_path": source, "sha256": actual_sha,
@@ -146,7 +151,7 @@ def build(root):
         raise ValueError("\n".join(errors))
     return {"schema_version": 1, "scope": "Codex environment deliveries and Golden Cyclone source frames/effects, including retained rejected attempts; derived previews are linked from metadata",
             "approval_policy": APPROVAL, "runtime_asset_index": "map_factory/metadata/asset_index.json",
-            "map_index": "map_factory/maps/index.json", "map_reference_rule": "Exact source/native path matches only; no filename-based activation or inferred integration",
+            "map_index": "map_factory/maps/index.json", "map_reference_rule": "Exact source/native/runtime path matches in factory maps or registered painted worlds; no filename-based activation or inferred integration",
             "record_count": len(records), "selected_count": sum(r["selection"] == "selected" for r in records),
             "rejected_count": sum(r["selection"] == "rejected" for r in records),
             "coverage": {"source_groups_checked": len(groups), "unindexed_source_pngs": unindexed,
@@ -159,7 +164,7 @@ def guide(data):
              "الفهرس القابل للبحث: `map_factory/metadata/source_art_index.json`. ابحث بواسطة ART أو اسم القطعة أو الفئة؛ كل سجل يحتوي بيانات المصدر الأصلية وقياسات PNG وبصمته ومسار manifest وREADME وحالة النشر والموافقة.", "",
              "الأصول محفوظة مباشرة تحت `H:/shining force/skl-SF/assets_hd/<category>/<group>/vNNN/`. بياناتها ومعايناتها تحت `game_factory/environment/ART-####/vNNN/`. لا يعتمد التسليم على cache أداة التوليد. ملفات الشخصية السابقة محفوظة في مساراتها الأصلية المحمية ولا تُنقل.", "",
              "الموافقة البصرية تلقائية وفق `docs/OWNER_AUTOMATIC_ART_APPROVAL_20261111.md`. المحاولات rejected محفوظة للتتبع ولا تدخل الخريطة. وجود سجل لا يثبت التكامل؛ تُراجع المقاسات والارتكاز والتثبيت والقيود في manifest. القيم الناقصة تبقى مجهولة، ولا تُختلق collision أو اتجاه أو قياسات.", "",
-             "سجل الخرائط الحالية مرفق في JSON؛ exact_path_map_references يرصد فقط التطابق الحرفي لمسار المصدر/المعاينة في latest.json، ولا يستنتج أن الصور غير المطابقة مستخدمة. لا يغيّر الفهرس خرائط أو يعين أصولًا نشطة.", "",
+             "سجل الخرائط الحالية مرفق في JSON؛ exact_path_map_references يرصد التطابق الحرفي لمسار المصدر/المعاينة/runtime في خرائط المصنع أو تعريفات العوالم المصورة المسجلة، ولا يستنتج استخدام الصور من أسمائها. لا يغيّر الفهرس الخرائط أو يعين أصولًا نشطة. القصة عبر docs/story/INDEX.md؛ العالم المصور عبر map_factory/painted_worlds/INDEX.md.", "",
              "الصور المنسوخة محليًا قد تكون في PR لم يدمج بعد؛ publication يوضح الفرع والرابط. تتحقق حالة الدمج من Git عند الاستخدام. لا تستبدل الصور بأسماء متشابهة ولا تفعّل البدائل تلقائيًا.", "",
              "بعد كل تسليم: شغّل `python tools/source_art_catalog.py --root . --write` في مجلد المشروع الجامع، ثم `python tools/source_art_catalog.py --root . --check`. تحفظ الأداة فقط هذا الفهرس ودليله؛ لا تعدّل PNG أو manifests تاريخية. فهارس INDEX.md الآلية تُحدّث على main وفق سير المشروع.", "",
              f"العدد: {data['selected_count']} مصادر مختارة و{data['rejected_count']} محاولات مرفوضة في {len(data['manifests'])} manifests.", "",

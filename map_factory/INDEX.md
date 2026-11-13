@@ -4,6 +4,7 @@
 
 | Concern | Entry point |
 | --- | --- |
+| Owner-requested painted square-block Hidden Island maps | [painted_worlds/INDEX.md](painted_worlds/INDEX.md), `docs/PAINTED_COAST.md`; story first: `docs/story/INDEX.md` |
 | Mandatory system invariants | [MAP_FACTORY_RULES.md](MAP_FACTORY_RULES.md) |
 | Exact image-to-map workflow and manifest operations | [MAP_FACTORY_WORKFLOW.md](MAP_FACTORY_WORKFLOW.md), [DEPLOYED_FACTORY.md](DEPLOYED_FACTORY.md) |
 | Five logical passes, drawing and mount metadata | [LAYER_SCHEMA.md](LAYER_SCHEMA.md) |

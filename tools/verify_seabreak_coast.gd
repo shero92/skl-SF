@@ -58,6 +58,9 @@ func run() -> void:
 	await process_frame
 	var gate: Node = room_scene.get_node("OutdoorExit")
 	gate.travel_enabled = false
+	# Explicit legacy-route regression. The new default painted route is verified separately.
+	gate.definition = gate.definition.duplicate(true)
+	gate.definition.world_scene = "res://scenes/world/seabreak_coast.tscn"
 	room_scene.set_photo_mode(false)
 	check(room_scene.player.navigation.footprint_open(Vector2(768,784)),"Factory room return point is safe too")
 	check(room_scene.player.navigation.footprint_open(Travel.rect(gate.settings().rect).get_center()),"Factory room stair trigger is walkable")

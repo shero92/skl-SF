@@ -14,6 +14,7 @@ Applies to Codex, Claude Code, Aider and all coding agents. Read this, then only
 - Assigned agents may use local Blender in `H:\shining force\pixel-art` (`.agents/workflows/GRAPHICS.md`). No paid image services.
 
 ## Scope and truth
+- Story/world grounding: start at `docs/story/INDEX.md` and `docs/design/STORY_CANON_AR.md` before changing a location or character role. Owner clarification2026-11-13: Hidden Island is wild; the hero is the only known human at the opening, with nonhuman family/friends. Do not infer human settlements or maintained palaces from art-style references. Local2026-10-16 Reef Friend correction takes precedence over older Cely-as-waiting-friend text. Story documents do not prove runtime implementation.
 - Environment/Map Factory by default; characters, gameplay, portraits, dialogue and UI only when the owner assigns them.
 - Locate files via `INDEX.md`; read only needed ranges. Commits/PRs and catalog IDs prove work; never call unreviewed art approved.
 
