@@ -13,6 +13,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`maps/`](maps/FILES.md)
 - [`metadata/`](metadata/FILES.md)
 - [`parts/`](parts/FILES.md)
+- [`photo_rooms/`](photo_rooms/FILES.md)
 - [`presets/`](presets/FILES.md)
 - [`references/`](references/FILES.md)
 - [`rooms/`](rooms/FILES.md)
@@ -26,6 +27,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 - [`LAYER_SCHEMA.md`](LAYER_SCHEMA.md)
 - [`MAP_FACTORY_RULES.md`](MAP_FACTORY_RULES.md)
 - [`MAP_FACTORY_WORKFLOW.md`](MAP_FACTORY_WORKFLOW.md)
+- [`PHOTO_ROOMS.md`](PHOTO_ROOMS.md)
 - [`README.md`](README.md)
 
 Navigate via INDEX.md if present for semantic routing; consult only relevant files.

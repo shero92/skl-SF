@@ -20,6 +20,8 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 - [`README.md`](README.md)
 - [`character_manifest.json`](character_manifest.json)
+- [`hero_map_art_index.json`](hero_map_art_index.json)
+- [`hero_map_source_frames.json`](hero_map_source_frames.json)
 - [`master_request.txt`](master_request.txt)
 - [`queue.json`](queue.json)
 - [`smoke_receipt.json`](smoke_receipt.json)

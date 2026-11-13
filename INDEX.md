@@ -10,12 +10,14 @@
 | Create/clone/patch a room | [map_factory/INDEX.md](map_factory/INDEX.md) | `tools/map_factory_cli.py`, `map_factory/maps/index.json` |
 | Hero Room version, placement and fidelity | [map_factory/maps/INDEX.md](map_factory/maps/INDEX.md) | `hero_room_01/latest.json`, `docs/MAP_FACTORY_REFERENCE_DIAGNOSIS.md` |
 | Add/find a sprite, PNG or reusable block ID | [map_factory/parts/INDEX.md](map_factory/parts/INDEX.md) | `map_factory/metadata/asset_index.json` (filter by ID) |
+| Hero map art, swordless idle source and measured placement | [Hero map art index](game_factory/hero_map_art_index.json) | `game_factory/environment/ART-0054/v001/README.md`; active animation registry remains `game_factory/hero_map_source_frames.json` |
 | Four-facing objects / perspective variants | [map_factory/INDEX.md](map_factory/INDEX.md) | `FOUR_DIRECTION_BLOCKS.md`, `tools/map_factory_orientation.py` |
 | Shadows, sorting, collisions, map rendering | [map_factory/scripts/INDEX.md](map_factory/scripts/INDEX.md) | `room_factory.gd`, `shadow_factory.gd`, layer docs |
 | Import reference image / pending job | [map_factory/intake/INDEX.md](map_factory/intake/INDEX.md) | `tools/prepare_map_reference.py`, `tools/process_map_intake.py` |
 | Godot-only map preview, camera, runtime | [scenes/INDEX.md](scenes/INDEX.md) | `map_factory_preview.gd`, `map_factory_preview.tscn` |
 | Python map tests / tools | [tools/INDEX.md](tools/INDEX.md) | `tools/tests/INDEX.md` |
 | Automated GitHub validation | [.github/INDEX.md](.github/INDEX.md) | `.github/workflows/INDEX.md` |
+| Story, dialogue, characters, creatures, battles, story places | [docs/story/INDEX.md](docs/story/INDEX.md) | `docs/story/README.md` (status and open decisions), `.agents/workflows/STORY.md` |
 | Art direction, visual QA and historical reviews | [docs/INDEX.md](docs/INDEX.md) | relevant review/quality policy |
 | Project constraints / milestones / current progress | [Project files](.agents/project/INDEX.md) | refer only when relevant |
 

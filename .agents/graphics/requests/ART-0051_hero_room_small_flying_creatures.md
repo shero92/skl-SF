@@ -9,7 +9,7 @@ output_paths: .agents/graphics/deliveries/ART-0051/seagull_fly_sheet.png,.agents
 ---
 # Small flying creatures for the painted hero room
 
-**What is wrong today:** The owner wants small creatures flying around so the room feels alive. The game draws stand-ins by code: gulls are a white five-point line, butterflies are two flat triangles (`scenes/photo_room_life.gd`). They move correctly but are not art.
+**What is wrong today:** The owner wants small creatures flying around so the room feels alive. Code-drawn stand-ins (a line gull, triangle butterflies) were tried and rejected by the owner on 2026-11-13 as bad; they were removed. Nothing flies in the room until this art exists.
 
 **Source image and SHA-256 (style reference only):** `map_factory/references/hero_room_01_target_20261103.png` (1536x1024), sha256 `47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b`. Nothing in the painting shows these creatures; match its pixel-art style, palette and outline weight.
 
@@ -34,4 +34,4 @@ output_paths: .agents/graphics/deliveries/ART-0051/seagull_fly_sheet.png,.agents
 - [ ] Independent visual review in Godot over the painted room; mark `reviewed`.
 
 ## Integration checklist
-- [ ] `photo_room_life.gd` plays the sheets instead of the code shapes; PR merged; mark `integrated`.
+- [ ] `photo_room_life.gd` plays the sheets over the painted room; PR merged; mark `integrated`.

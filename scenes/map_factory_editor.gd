@@ -76,6 +76,7 @@ var _parts_list: ItemList
 var _category: OptionButton
 var _layer_pick: OptionButton
 var _status_label: Label
+var _create_note: Label
 var _part_ids: Array[String] = []
 
 
@@ -643,6 +644,9 @@ func open_map(id: String) -> bool:
 
 ## Creates a new empty map from a factory preset and opens it. Returns {ok, message}.
 func create_map(new_id: String, preset: String) -> Dictionary:
+	if new_id == "":
+		_say("Type a name for the new map first (letters, digits, _ or -), then press Create")
+		return {"ok": false, "message": "no map name"}
 	var arguments: Array = ["--new", new_id, "--preset", preset]
 	if save_dry_run:
 		arguments.append("--dry-run")
@@ -757,6 +761,8 @@ func _refresh() -> void:
 		line = "%s  [%s]  x %d  y %d  size %.2f  turn %d  %s   |  %d unsaved change(s)" % [selected, block["id"], int(block["x"]),
 			int(block["y"]), float(block["scale"]), int(block["rotation_degrees"]), LAYER_LABEL[String(block["layer"])], pending_changes().size()]
 	_status_label.text = line
+	if _create_note != null:
+		_create_note.text = status
 
 
 func _draw_overlay() -> void:
@@ -831,6 +837,11 @@ func _build_ui() -> void:
 	create.text = "Create new map"
 	create.pressed.connect(func(): create_map(_new_name.text.strip_edges(), PRESETS[_new_preset.selected]))
 	column.add_child(create)
+	_create_note = Label.new()
+	_create_note.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_create_note.custom_minimum_size = Vector2(230, 0)
+	_create_note.add_theme_font_size_override("font_size", 13)
+	column.add_child(_create_note)
 	_layer_pick = OptionButton.new()
 	for name: String in LAYERS:
 		_layer_pick.add_item(LAYER_LABEL[name])
@@ -880,7 +891,7 @@ func _build_ui() -> void:
 		battle_button.pressed.connect(pair[1])
 		play_row.add_child(battle_button)
 	var help := Label.new()
-	help.text = "Click: select / place   Drag: move\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
+	help.text = "Click: select / place (Shift keeps placing)   Drag or Ctrl+drag: move\nWheel: resize   Q/E: turn   F: flip\nDelete: remove   Arrows: nudge\nCtrl+D: copy   PgUp/PgDn: level of piece\nRight drag: pan   1-5: level\nShift+1-5: hide level\nfloors: click/drag paints squares"
 	help.add_theme_font_size_override("font_size", 12)
 	column.add_child(help)
 	_status_label = Label.new()
@@ -946,22 +957,36 @@ func toggle_snap() -> void:
 	_say("Grid snap " + ("on" if snap_to_grid else "off"))
 
 
+## A left-button press at a world point. Ctrl grabs the piece under the mouse even while a part is armed.
+func press(point: Vector2, ctrl: bool = false, shift: bool = false) -> void:
+	if battle_tool != "":
+		battle_click(cell_at(point))
+	elif ctrl and placing_part != "" and not erasing_floor and select_at(point) != "":
+		# Ctrl while a part is armed: grab the piece under the mouse instead of placing another.
+		_dragging = true
+		_drag_moved = false
+		_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+	elif erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
+		_stroke_open = true
+		_ground_stroke(point, true)
+	elif placing_part != "":
+		var placed := place(placing_part, point)
+		if placed != "" and not shift:
+			placing_part = ""  # one piece per pick; it stays selected so it can be dragged at once
+			selected = placed
+			_refresh()
+	elif select_at(point) != "":
+		_dragging = true
+		_drag_moved = false
+		_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	var point := get_global_mouse_position()
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
-				if battle_tool != "":
-					battle_click(cell_at(point))
-				elif erasing_floor or (placing_part != "" and is_floor_part(placing_part)):
-					_stroke_open = true
-					_ground_stroke(point, true)
-				elif placing_part != "":
-					place(placing_part, point)
-				elif select_at(point) != "":
-					_dragging = true
-					_drag_moved = false
-					_drag_offset = Vector2(float(blocks[selected]["x"]), float(blocks[selected]["y"])) - point
+				press(point, event.ctrl_pressed, event.shift_pressed)
 			else:
 				_dragging = false
 				_stroke_open = false

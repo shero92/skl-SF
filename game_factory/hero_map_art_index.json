@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "scope": "new independent hero map source deliveries; not runtime animation selection",
+  "active_animation_registry": "game_factory/hero_map_source_frames.json",
+  "entries": [
+    {
+      "request_id": "ART-0054",
+      "frame_id": "hero_map_sf_down_idle_01",
+      "direction": "down",
+      "pose": "idle",
+      "unarmed": true,
+      "manifest": "game_factory/environment/ART-0054/v001/manifest.json",
+      "native_path": ".agents/graphics/deliveries/ART-0054/hero_map_sf_down_idle_01.png",
+      "master_path": "assets_hd/hero/map_sf_down_idle/v001/hero_map_sf_down_idle_01_master.png",
+      "production_active": false,
+      "missing_for_full_replacement": "other facings and walk cycles are outside this single-frame request"
+    }
+  ]
+}

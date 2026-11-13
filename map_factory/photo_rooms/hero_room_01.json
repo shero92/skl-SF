@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_id": "hero_room_01",
-  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants. hero_only hides the NPCs and the companion. patches cover the painted hero and companion with a floor piece taken from the same painting at run time (the file is untouched) until ART-0050 delivers a clean painting. sea polygons ripple (blue pixels only), clouds borrow the map's cloud parts, lanterns get a flickering glow. flyers are drawn by code as simple shapes (gulls over the sea, butterflies near the painted flowers) until ART-0051 delivers real small flying creatures.",
+  "note": "Room built from the owner's target painting instead of tiles. The painting is shown unchanged as one backdrop; walking uses the 32 px squares below, measured on the painting. Moves relocate NPCs and interaction spots that the tile room placed where the painting has furniture or plants. hero_only hides the NPCs and the companion. patches cover the painted hero and companion with a floor piece taken from the same painting at run time (the file is untouched) until ART-0050 delivers a clean painting. sea polygons ripple (blue pixels only), lanterns get a flickering glow. hero_height draws the hero from the high-resolution source frames at that height. clouds are cut from the painting's own sky at run time and drift behind the arch and sea stacks; petals drift across the room; the sea shader adds glints. mist is a drifting haze with soft cloud shadows over the whole screen. hero_step moves the hero one 64 px square per key press, Shining Force style. hero_step_offset puts the square centres in the middle of walk cells. occluders are painted objects (the two stone posts) drawn again above the hero so he walks behind them. Squares beside the painted table, stools, chest and vase were closed after a survey of the hero at every edge square: standing there he overlapped painted furniture. The bed's foot and right edge were closed too: the survey showed him standing in the bed. depth_objects are painted things the hero can stand behind: each is cut from the painting and drawn above him while his feet are behind its base_y line, below him once he is in front; shadow entries cast a soft dark shadow to the lower right by object height. Squares beside bed, table and chest are open again because he now walks behind them. Row y 736-768 along the left parapet is open on purpose: the hero walks behind the parapet wall and is partly hidden by it (parapet_left, parapet_right depth objects). Row y 800-832 behind the left parapet lets him stand with only head and shoulders above the wall. hero_view_squash shortens the straight-on drawing toward the 3/4 camera. Row y 672-704 on the left is open through the planter: plants_left hides his lower body so he walks behind the flowers.",
   "image": "res://map_factory/references/hero_room_01_target_20261103.png",
   "navigation": {
     "schema_version": 1,
@@ -86,31 +86,9 @@
       },
       {
         "rect": [
-          37,
-          19,
-          2,
-          1
-        ],
-        "allow": [
-          "walk"
-        ]
-      },
-      {
-        "rect": [
           11,
           20,
           24,
-          1
-        ],
-        "allow": [
-          "walk"
-        ]
-      },
-      {
-        "rect": [
-          37,
-          20,
-          2,
           1
         ],
         "allow": [
@@ -193,17 +171,61 @@
         "allow": [
           "walk"
         ]
+      },
+      {
+        "rect": [
+          8,
+          23,
+          9,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          8,
+          25,
+          9,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
+      },
+      {
+        "rect": [
+          8,
+          21,
+          8,
+          1
+        ],
+        "allow": [
+          "walk"
+        ]
       }
     ]
   },
   "moves": {
     "ReefFriend": [
-      1010,
+      900,
       700
     ],
     "TreasureChest": [
-      1235,
-      705
+      1090,
+      740,
+      200
+    ],
+    "WritingTable": [
+      1125,
+      612,
+      200
+    ],
+    "HeroBed": [
+      399,
+      560,
+      240
     ]
   },
   "hero_only": true,
@@ -423,33 +445,6 @@
       ]
     ]
   ],
-  "clouds": {
-    "speed": 6,
-    "items": [
-      {
-        "part": "SkyCloudA",
-        "x": 200,
-        "y": 34,
-        "scale": 1.0,
-        "alpha": 0.9
-      },
-      {
-        "part": "SkyCloudB",
-        "x": 760,
-        "y": 28,
-        "scale": 1.0,
-        "alpha": 0.9
-      },
-      {
-        "part": "SkyCloudC",
-        "x": 1300,
-        "y": 38,
-        "scale": 1.0,
-        "alpha": 0.9
-      }
-    ],
-    "cover_height": 140
-  },
   "lanterns": [
     [
       328,
@@ -492,50 +487,631 @@
       50
     ]
   ],
-  "flyers": {
-    "gulls": 4,
-    "gull_band": [
-      35,
-      140
-    ],
-    "butterflies": [
-      [
-        305,
-        400
-      ],
-      [
-        380,
-        690
-      ],
-      [
-        500,
-        700
-      ],
-      [
-        640,
-        745
-      ],
-      [
-        1080,
-        740
-      ],
-      [
-        1290,
-        640
-      ],
-      [
-        1320,
-        400
-      ],
-      [
-        700,
-        300
-      ],
-      [
-        1110,
-        330
-      ]
+  "hero_height": 134,
+  "clouds": {
+    "speed": 7,
+    "cover_height": 140,
+    "cuts": [
+      {
+        "from": [
+          470,
+          10,
+          125,
+          50
+        ],
+        "x": 120
+      },
+      {
+        "from": [
+          380,
+          33,
+          75,
+          27
+        ],
+        "x": 620
+      },
+      {
+        "from": [
+          470,
+          10,
+          125,
+          50
+        ],
+        "x": 930,
+        "flip": true
+      },
+      {
+        "from": [
+          380,
+          33,
+          75,
+          27
+        ],
+        "x": 1380,
+        "flip": true
+      }
     ]
   },
-  "hero_scale": 1.2
+  "petals": {
+    "amount": 16,
+    "area": [
+      150,
+      120,
+      1250,
+      500
+    ]
+  },
+  "mist": {
+    "strength": 0.32,
+    "shadow": 0.14,
+    "speed": 1.0
+  },
+  "hero_step": 64,
+  "hero_step_offset": [
+    -16,
+    16
+  ],
+  "depth_objects": [
+    {
+      "id": "bed",
+      "base_y": 603,
+      "poly": [
+        [
+          335,
+          366
+        ],
+        [
+          498,
+          366
+        ],
+        [
+          506,
+          400
+        ],
+        [
+          506,
+          606
+        ],
+        [
+          284,
+          606
+        ],
+        [
+          284,
+          540
+        ],
+        [
+          300,
+          505
+        ],
+        [
+          318,
+          430
+        ]
+      ],
+      "shadow": [
+        [
+          506,
+          400,
+          506,
+          603,
+          70
+        ]
+      ]
+    },
+    {
+      "id": "table",
+      "base_y": 610,
+      "poly": [
+        [
+          1005,
+          528
+        ],
+        [
+          1292,
+          518
+        ],
+        [
+          1302,
+          600
+        ],
+        [
+          1282,
+          614
+        ],
+        [
+          1010,
+          614
+        ]
+      ],
+      "shadow": [
+        [
+          1005,
+          1295,
+          612,
+          60
+        ]
+      ]
+    },
+    {
+      "id": "stool",
+      "base_y": 655,
+      "poly": [
+        [
+          1118,
+          583
+        ],
+        [
+          1174,
+          583
+        ],
+        [
+          1178,
+          656
+        ],
+        [
+          1124,
+          656
+        ]
+      ],
+      "shadow": [
+        [
+          1122,
+          1176,
+          655,
+          38
+        ]
+      ]
+    },
+    {
+      "id": "chest",
+      "base_y": 752,
+      "poly": [
+        [
+          1186,
+          684
+        ],
+        [
+          1284,
+          684
+        ],
+        [
+          1284,
+          756
+        ],
+        [
+          1186,
+          756
+        ]
+      ],
+      "shadow": [
+        [
+          1190,
+          1284,
+          754,
+          45
+        ]
+      ]
+    },
+    {
+      "id": "vase",
+      "base_y": 772,
+      "poly": [
+        [
+          1160,
+          712
+        ],
+        [
+          1202,
+          712
+        ],
+        [
+          1202,
+          772
+        ],
+        [
+          1160,
+          772
+        ]
+      ],
+      "shadow": [
+        [
+          1160,
+          1202,
+          772,
+          50
+        ]
+      ]
+    },
+    {
+      "id": "post_left",
+      "base_y": 800,
+      "poly": [
+        [
+          610,
+          702
+        ],
+        [
+          626,
+          702
+        ],
+        [
+          634,
+          712
+        ],
+        [
+          636,
+          722
+        ],
+        [
+          642,
+          724
+        ],
+        [
+          642,
+          800
+        ],
+        [
+          596,
+          800
+        ],
+        [
+          596,
+          724
+        ],
+        [
+          602,
+          722
+        ],
+        [
+          604,
+          712
+        ]
+      ],
+      "shadow": [
+        [
+          598,
+          642,
+          798,
+          70
+        ]
+      ]
+    },
+    {
+      "id": "post_right",
+      "base_y": 800,
+      "poly": [
+        [
+          891,
+          702
+        ],
+        [
+          908,
+          702
+        ],
+        [
+          916,
+          712
+        ],
+        [
+          918,
+          722
+        ],
+        [
+          931,
+          724
+        ],
+        [
+          931,
+          800
+        ],
+        [
+          883,
+          800
+        ],
+        [
+          883,
+          724
+        ],
+        [
+          888,
+          722
+        ],
+        [
+          890,
+          712
+        ]
+      ],
+      "shadow": [
+        [
+          885,
+          930,
+          798,
+          70
+        ]
+      ]
+    },
+    {
+      "id": "column_left_outer",
+      "base_y": 396,
+      "poly": [
+        [
+          565,
+          135
+        ],
+        [
+          632,
+          135
+        ],
+        [
+          632,
+          398
+        ],
+        [
+          565,
+          398
+        ]
+      ],
+      "shadow": [
+        [
+          565,
+          632,
+          396,
+          120
+        ]
+      ]
+    },
+    {
+      "id": "column_left_inner",
+      "base_y": 372,
+      "poly": [
+        [
+          638,
+          135
+        ],
+        [
+          690,
+          135
+        ],
+        [
+          690,
+          374
+        ],
+        [
+          638,
+          374
+        ]
+      ],
+      "shadow": [
+        [
+          638,
+          690,
+          372,
+          110
+        ]
+      ]
+    },
+    {
+      "id": "column_right_inner",
+      "base_y": 378,
+      "poly": [
+        [
+          838,
+          135
+        ],
+        [
+          886,
+          135
+        ],
+        [
+          886,
+          380
+        ],
+        [
+          838,
+          380
+        ]
+      ],
+      "shadow": [
+        [
+          838,
+          886,
+          378,
+          110
+        ]
+      ]
+    },
+    {
+      "id": "column_right_outer",
+      "base_y": 396,
+      "poly": [
+        [
+          884,
+          135
+        ],
+        [
+          946,
+          135
+        ],
+        [
+          946,
+          398
+        ],
+        [
+          884,
+          398
+        ]
+      ],
+      "shadow": [
+        [
+          884,
+          946,
+          396,
+          120
+        ]
+      ]
+    },
+    {
+      "id": "parapet_left",
+      "base_y": 905,
+      "poly": [
+        [
+          196,
+          700
+        ],
+        [
+          250,
+          690
+        ],
+        [
+          300,
+          712
+        ],
+        [
+          335,
+          716
+        ],
+        [
+          365,
+          742
+        ],
+        [
+          420,
+          750
+        ],
+        [
+          455,
+          745
+        ],
+        [
+          480,
+          765
+        ],
+        [
+          560,
+          778
+        ],
+        [
+          600,
+          772
+        ],
+        [
+          600,
+          900
+        ],
+        [
+          196,
+          900
+        ]
+      ],
+      "shadow": []
+    },
+    {
+      "id": "parapet_right",
+      "base_y": 905,
+      "poly": [
+        [
+          900,
+          775
+        ],
+        [
+          960,
+          770
+        ],
+        [
+          1020,
+          790
+        ],
+        [
+          1100,
+          785
+        ],
+        [
+          1130,
+          800
+        ],
+        [
+          1190,
+          800
+        ],
+        [
+          1230,
+          765
+        ],
+        [
+          1290,
+          740
+        ],
+        [
+          1320,
+          700
+        ],
+        [
+          1380,
+          690
+        ],
+        [
+          1400,
+          660
+        ],
+        [
+          1400,
+          900
+        ],
+        [
+          900,
+          900
+        ]
+      ],
+      "shadow": []
+    },
+    {
+      "id": "plants_left",
+      "base_y": 748,
+      "poly": [
+        [
+          236,
+          650
+        ],
+        [
+          330,
+          630
+        ],
+        [
+          430,
+          640
+        ],
+        [
+          470,
+          680
+        ],
+        [
+          520,
+          715
+        ],
+        [
+          600,
+          745
+        ],
+        [
+          600,
+          790
+        ],
+        [
+          460,
+          775
+        ],
+        [
+          330,
+          760
+        ],
+        [
+          236,
+          725
+        ]
+      ],
+      "shadow": []
+    }
+  ],
+  "hero_view_squash": 0.84
 }

@@ -6,7 +6,7 @@ This is a complete direct-file inventory, not a requirement to read every file.
 
 ## Subfolders
 
-- None
+- [`map_sf_down_idle/`](map_sf_down_idle/FILES.md)
 
 ## Files
 

@@ -11,35 +11,55 @@ var save_path: String = HeroSave.DEFAULT_PATH
 var equipment_layer: CanvasLayer
 var equipment_menu: EquipmentMenu
 
-const MAP_ID := "hero_room_01"
+## Which Map Factory map this scene plays. Set it before the scene starts to play another map; the default is the hero room.
+static var next_map_id: String = "hero_room_01"
+var map_id: String = ""
 const BATTLE_SCENE := "res://scenes/battle/tactical_battle.tscn"
 const EDITOR_SCENE := "res://scenes/map_factory_editor.tscn"
 # Photo room (owner decision 2026-11-12): the room is the target painting shown unchanged as one backdrop,
 # with its own walk squares measured on the painting. F3 switches to the Map Factory pieces and back.
-const PHOTO_ROOM := "res://map_factory/photo_rooms/hero_room_01.json"
+## Any map can be a photo room: put map_factory/photo_rooms/<map_id>.json beside it (see map_factory/PHOTO_ROOMS.md).
+const PHOTO_ROOM_DIR := "res://map_factory/photo_rooms/"
 static var keep_photo_mode: bool = true  # the choice survives a visit to the editor or a battle
 var photo_mode: bool = false
 var photo_room: Dictionary = {}
 var _map_navigation: NavigationGrid
 var _life: PhotoRoomLife
+var _mist: Polygon2D
 var _companion: Node2D
 var _moved: Dictionary = {}  # instance id -> Node2D that a photo-room move relocates
 var _room: Node2D
 var _photo: Sprite2D
-# Gameplay data (spawn, NPCs, interaction spots) stays in the legacy room JSON.
-const GAMEPLAY_PATH := "res://map_factory/rooms/hero_room.json"
+# Gameplay data (spawn, NPCs, interaction spots): map_factory/rooms/<map_id>.json, or the legacy hero_room.json.
+const GAMEPLAY_DIR := "res://map_factory/rooms/"
+
+func gameplay_path(id: String) -> String:
+    for candidate in [GAMEPLAY_DIR + id + ".json", GAMEPLAY_DIR + "hero_room.json" if id == "hero_room_01" else ""]:
+        if candidate != "" and FileAccess.file_exists(candidate):
+            return candidate
+    return ""
 
 func _ready() -> void:
     # Always render the newest Map Factory version through the registry.
     var factory := RoomFactory.new()
-    var room := factory.build_latest(MAP_ID, self)
+    map_id = next_map_id
+    var room := factory.build_latest(map_id, self)
     _room = room
     var entities := RoomFactory.entities_parent(room)
-    var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(GAMEPLAY_PATH))
-    if typeof(data) != TYPE_DICTIONARY:
-        push_error("Cannot load room interactions")
-        return
-    var spawn: Array = data.get("player_spawn", [770, 720])
+    # A map without a gameplay file is just walkable: no NPCs, no talk spots, the photo room's own spawn.
+    var data: Dictionary = {}
+    var gameplay := gameplay_path(map_id)
+    if gameplay != "":
+        var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(gameplay))
+        if typeof(parsed) != TYPE_DICTIONARY:
+            push_error("Cannot load room interactions: " + gameplay)
+            return
+        data = parsed
+    var photo_file := PHOTO_ROOM_DIR + map_id + ".json"
+    var photo_data: Variant = JSON.parse_string(FileAccess.get_file_as_string(photo_file)) if FileAccess.file_exists(photo_file) else null
+    if photo_data is Dictionary:
+        photo_room = photo_data
+    var spawn: Array = data.get("player_spawn", photo_room.get("spawn", [770, 720]))
     player = HeroPlayer.new()
     player.name = "Hero"
     player.use_factory_art = true  # owner 2026-11-13: the hero comes from the character factory frames
@@ -93,9 +113,6 @@ func _ready() -> void:
             "speaker": info.get("name", "NPC"), "lines": info.get("lines", [])
         })
     _map_navigation = player.navigation
-    var definition: Variant = JSON.parse_string(FileAccess.get_file_as_string(PHOTO_ROOM)) if FileAccess.file_exists(PHOTO_ROOM) else null
-    if definition is Dictionary:
-        photo_room = definition
     if photo_mode or keep_photo_mode:
         set_photo_mode(true)
 
@@ -118,12 +135,17 @@ func set_photo_mode(on: bool) -> bool:
         _life.name = "PhotoLife"
         _life.z_index = 26  # over the painting, under characters
         _room.add_child(_life)
-        _life.build(texture, photo_room, _room)
+        _life.build(texture, photo_room)
+        _life.hero = player
+        _mist = _life.build_mist(photo_room, texture.get_size())
+        if _mist != null:
+            _mist.z_index = 200  # over the characters too
+            _room.add_child(_mist)
     photo_mode = on
     keep_photo_mode = on
     var entities := RoomFactory.entities_parent(_room)
     for child in _room.get_children():
-        if child == _photo or child == _life:
+        if child == _photo or child == _life or child == _mist:
             child.visible = on
         elif child.is_ancestor_of(entities):
             for inner in child.get_children():
@@ -135,14 +157,26 @@ func set_photo_mode(on: bool) -> bool:
     for shape in _room.find_children("*", "CollisionShape2D", true, false):
         if not entities.is_ancestor_of(shape):
             shape.set_deferred("disabled", on)
-    if player != null and player.factory_art != null:
-        # The painting is shown scaled and smooth, so the factory hero matches it: painted-figure size, smooth filter.
-        var size := float(photo_room.get("hero_scale", 1.0)) if on else 1.0
-        player.factory_art.scale = Vector2.ONE * size
-        player.factory_art.position = -Vector2(float(HeroPlayer._factory_anchor[0]), float(HeroPlayer._factory_anchor[1])) * size
-        player.factory_art.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR if on else CanvasItem.TEXTURE_FILTER_NEAREST
+    if player != null:
+        # Shining Force movement in the painted room: one square per press. The map room keeps free walking.
+        player.grid_step = float(photo_room.get("hero_step", 0)) if on else 0.0
+        var shift: Array = photo_room.get("hero_step_offset", [0, 0])
+        player.grid_offset = Vector2(float(shift[0]), float(shift[1]))
+        # The painting is detailed, so the hero is drawn from the high-resolution source frames at a Shining Force
+        # size (about two floor tiles tall). Without those local files the 96 px factory frames stay.
+        if on and player.source_art == null and float(photo_room.get("hero_height", 0)) > 0.0:
+            player.source_art = HeroSourceArt.new()
+            player.source_art.name = "SourceArt"
+            player.source_art.figure_height = float(photo_room["hero_height"])
+            player.source_art.view_squash = float(photo_room.get("hero_view_squash", 1.0))
+            player.add_child(player.source_art)
+        elif not on and player.source_art != null:
+            player.source_art.queue_free()
+            player.source_art = null
     if player != null:
         player.navigation = NavigationGrid.from_navigation(photo_room.get("navigation", {}), _room.global_position) if on else _map_navigation
+        if on and player.grid_step > 0.0:
+            player.snap_to_grid()  # after the painted room's walk squares are in place
     # A hero-only photo room shows no NPCs and no companion; their talk spots rest too.
     var alone := on and bool(photo_room.get("hero_only", false))
     if _companion != null:
@@ -158,8 +192,11 @@ func set_photo_mode(on: bool) -> bool:
         if not spot.has("map_x"):
             spot["map_x"] = spot.get("x", 0)
             spot["map_y"] = spot.get("y", 0)
+        if not spot.has("map_radius"):
+            spot["map_radius"] = spot.get("radius", 96)
         spot["x"] = moves[id][0] if on else spot["map_x"]
         spot["y"] = moves[id][1] if on else spot["map_y"]
+        spot["radius"] = moves[id][2] if on and moves[id].size() > 2 else spot["map_radius"]  # a third number widens the reach
         if _moved.has(id):
             _moved[id].position = Vector2(float(spot["x"]), float(spot["y"]))
     return true

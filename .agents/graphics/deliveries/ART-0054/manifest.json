@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "request_id": "ART-0054",
+  "task_id": "TASK-0171",
+  "category": "hero",
+  "delivery_branch": "codex/art-0054-hero-map",
+  "owner_approved": true,
+  "approval_basis": "owner_automatic_20261111",
+  "tool": "built-in image_gen",
+  "model": "unknown",
+  "cost_usd": null,
+  "production_active": false,
+  "prompt_text": "Create ONE independent transparent RGBA game sprite: only the island-born hero, full body facing screen down toward camera in calm balanced idle pose. Reference 1 is identity DESIGN ONLY, specifically its small MAP SPRITES examples: brown spiky hair, blue eyes, tan skin, teal-blue scarf, cream white and blue feather shoulder cape, sparse orange-red feather accents, shell necklace, rope belt, brown short trousers, leather wrist wraps, strapped sandals. Reference 2 is map visual context and desired readable hero proportions ONLY: do not reproduce room, floor or any other object. IMPORTANT newest owner instruction overrides reference weapons: BOTH HANDS EMPTY and relaxed, absolutely no sword, hilt, sheath, dagger, staff, blade, shield or weapon. Reinterpret this same recognizable hero as a polished classic Shining Force tactical RPG MAP sprite, 2.5 heads tall, large expressive head, compact torso and short clearly separated legs. Elevated three-quarter top-down camera from south looking north about 50 degrees down, front-facing hero visible crown of head and tops of shoulders, feet grounded at same plane. Strong clear silhouette and deliberate pixel clusters, crisp dark outer contour, 2-3 coherent shades per material, rich warm upper-left sunlight. Simplify feather cape into a few large distinct cream, blue and orange shapes rather than hundreds of thin strands; retain shell and rope identity. Eyes read at tiny 80-pixel figure height. No painterly fine grain, no blurred edges, no realistic elongated anatomy, no huge bushy hair obscuring face, no long trailing cape obscuring sandals. Single centered complete figure with generous transparent margin on all sides, no shadow, no ground, no backdrop, no text, no border, no glow, no companion. Square canvas at high source resolution, figure occupies about 83% canvas height. This is an original independently drawn one-pose asset, never a crop or sheet.\n",
+  "owner_override": "2026-11-13: hero only, no sword; supersedes request weapon instruction",
+  "rejected_attempts": [],
+  "items": [
+    {
+      "frame_id": "hero_map_sf_down_idle_01",
+      "master_path": "assets_hd/hero/map_sf_down_idle/v001/hero_map_sf_down_idle_01_master.png",
+      "sha256": "90db7537012f2c28acdce6532fae5170de33632dd3798454b416ef006d05cf0c",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "bounds_alpha_128": [
+        302,
+        60,
+        924,
+        1196
+      ],
+      "body_canvas_size": [
+        1254,
+        1254
+      ],
+      "character_ground_anchor": [
+        613.0,
+        1196
+      ],
+      "anchor_method": "bottom centre of alpha-128 bounds; placement convention, not anatomical socket",
+      "native_path": ".agents/graphics/deliveries/ART-0054/hero_map_sf_down_idle_01.png",
+      "native_sha256": "e5db98e2faabc7572a7bcbb2cae69f3b39b8f8a7957e7dfe06c5a8b267ad1cd4",
+      "native_size": [
+        96,
+        96
+      ],
+      "native_figure_height": 80,
+      "native_ground_anchor": [
+        48,
+        90
+      ],
+      "facing": "down",
+      "pose": "idle",
+      "weapon_present": false,
+      "weapon_hand_anchor": null,
+      "hand_rotation": null,
+      "weapon_scale": null,
+      "weapon_render_order": null,
+      "attack_phase": null,
+      "frame_duration": null,
+      "socket_status": "not_applicable_unarmed_map_idle",
+      "native_review_path": "game_factory/environment/ART-0054/v001/native_scale_review.png",
+      "quality_status": "technical_checks_passed",
+      "production_active": false,
+      "integration_status": "independent_frame_delivered_not_animation_set"
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/graphics/deliveries/ART-0054/hero_map_sf_down_idle_01.png",
+      "sha256": "e5db98e2faabc7572a7bcbb2cae69f3b39b8f8a7957e7dfe06c5a8b267ad1cd4"
+    }
+  ],
+  "references": [
+    {
+      "path": "map_factory/references/characters/hero.png.png",
+      "sha256": "80293cac049d7aed31bdb5cf638adee920e3e22e47771fbc7facba487013016f",
+      "role": "identity and map proportions only"
+    },
+    {
+      "path": "map_factory/references/hero_room_01_target_20261103.png",
+      "sha256": "47a7855cf242302108e1a6b9eaf4bfd3422f9f8c812585fa4da5bcaea948668b",
+      "role": "room context for Godot QA only"
+    },
+    {
+      "path": "C:/Users/SHIYA_~1/AppData/Local/Temp/codex-clipboard-749af69b-b7b8-4bca-be97-71857ea482c9.png",
+      "sha256": "044a89e6c67059126dfec67a9df14f11dacb54948749f64c9e2ed82a2c83da03",
+      "role": "owner latest supplied visual context only; asset does not depend on this external reference at runtime"
+    }
+  ]
+}
