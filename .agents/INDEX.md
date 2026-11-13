@@ -5,6 +5,7 @@
 | Role / permissions | [roles/INDEX.md](roles/INDEX.md) |
 | Claim, update or finish a coding task | [workflows/TASKS.md](workflows/TASKS.md), [project/TASKS.md](project/TASKS.md) |
 | Graphics request / duplicate protection / specialist delivery | [workflows/GRAPHICS.md](workflows/GRAPHICS.md), [graphics/QUEUE.md](graphics/QUEUE.md) |
+| Story, dialogue, characters, creatures, battles | [workflows/STORY.md](workflows/STORY.md), then [docs/story/INDEX.md](../docs/story/INDEX.md) |
 | Cross-agent handoff | [workflows/HANDOFF.md](workflows/HANDOFF.md) |
 | Roadmap / status / decisions / changelog | [project/INDEX.md](project/INDEX.md) |
 | Agent tokens, task cost and rankings | [monitoring/INDEX.md](monitoring/INDEX.md) |

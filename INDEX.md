@@ -15,6 +15,7 @@
 | Godot-only map preview, camera, runtime | [scenes/INDEX.md](scenes/INDEX.md) | `map_factory_preview.gd`, `map_factory_preview.tscn` |
 | Python map tests / tools | [tools/INDEX.md](tools/INDEX.md) | `tools/tests/INDEX.md` |
 | Automated GitHub validation | [.github/INDEX.md](.github/INDEX.md) | `.github/workflows/INDEX.md` |
+| Story, dialogue, characters, creatures, battles, story places | [docs/story/INDEX.md](docs/story/INDEX.md) | `docs/story/README.md` (status and open decisions), `.agents/workflows/STORY.md` |
 | Art direction, visual QA and historical reviews | [docs/INDEX.md](docs/INDEX.md) | relevant review/quality policy |
 | Project constraints / milestones / current progress | [Project files](.agents/project/INDEX.md) | refer only when relevant |
 

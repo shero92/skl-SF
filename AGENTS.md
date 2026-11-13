@@ -17,6 +17,9 @@ Applies to Codex, Claude Code, Aider and all coding agents. Read this, then only
 - Environment/Map Factory by default; characters, gameplay, portraits, dialogue and UI only when the owner assigns them.
 - Locate files via `INDEX.md`; read only needed ranges. Commits/PRs and catalog IDs prove work; never call unreviewed art approved.
 
+## Story
+- Story, dialogue, characters, creatures, battles and story places: read `docs/story/INDEX.md`, then only the scene file you need (`.agents/workflows/STORY.md`). Only text marked approved is fact; open decisions belong to the owner.
+
 ## Tasks and evidence
 - Follow `.agents/workflows/TASKS.md`: claim one task, isolated branch/worktree, no overlapping touches. Receipts via `tools/agent_costs.py` (missing usage stays `unknown`); stage only task files; push task branches.
 - Run `py -3 tools/run_tests.py --changed` before commits and report real results. Direct merges to `main` follow owner ADR-006; generated indexes update on `main` only.
