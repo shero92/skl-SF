@@ -1,6 +1,6 @@
 extends Node2D
 class_name PhotoRoomLife
-## Moving touches over a photo room (a room shown as one painting): rippling, glinting sea, clouds cut from
+## Moving touches over a photo room (a room shown as one painting): a rolling, glinting sea, clouds cut from
 ## the painting's own sky, a drifting haze with soft cloud shadows over the whole screen, drifting petals,
 ## flickering lantern light and floor patches. Everything comes from the painting itself or from plain pixel particles
 ## at run time; no art file is created or changed. Drawn creatures and breaking-wave sheets are requested
@@ -9,27 +9,32 @@ class_name PhotoRoomLife
 
 const SEA_SHADER := "
 shader_type canvas_item;
-// Blue water pixels ripple and glint; the painted foam and rocks stay exactly as painted.
+// No pixel warping (it frayed the painted edges). Long swells roll through the water as slow light and dark
+// bands; the painted foam lines pulse with the swell, so each wave seems to break and fall back along
+// the shore, and single pixels glint in the sun. Shapes never move: only brightness.
 bool is_water(vec4 c) { return c.b > c.r + 0.15 && c.b > c.g + 0.04; }
+bool is_foam(vec4 c) { return min(c.r, min(c.g, c.b)) > 0.58 && c.b > c.r - 0.03; }
 float hash(vec2 p) {
 	vec3 q = fract(vec3(p.xyx) * 0.1031);
 	q += dot(q, q.yzx + 33.33);
 	return fract((q.x + q.y) * q.z);
 }
 void fragment() {
-	vec2 px = TEXTURE_PIXEL_SIZE;
-	vec2 at = UV / px;
-	vec4 base = texture(TEXTURE, UV);
-	vec2 shift = vec2(sin(at.y * 0.09 + TIME * 1.5) * 3.0, cos(at.x * 0.07 + TIME * 1.2) * 2.0);
-	vec4 moved = texture(TEXTURE, UV + floor(shift + 0.5) * px);
-	COLOR = base;
-	if (is_water(base) && is_water(moved)) {
-		COLOR = moved;
-		COLOR.rgb += 0.04 * sin(at.x * 0.05 + at.y * 0.11 + TIME * 2.0);
+	vec2 at = UV / TEXTURE_PIXEL_SIZE;
+	vec4 c = texture(TEXTURE, UV);
+	// Two swells crossing at different angles and speeds.
+	float swell = 0.5 + 0.25 * sin(dot(at, vec2(0.011, 0.016)) - TIME * 0.85) + 0.25 * sin(dot(at, vec2(-0.007, 0.013)) - TIME * 0.6 + 2.0);
+	if (is_water(c)) {
+		c.rgb *= 0.93 + 0.14 * swell;
 		float seed = hash(floor(at / 2.0));
 		float flash = smoothstep(0.985, 1.0, sin(TIME * (1.5 + seed * 2.5) + seed * 6.2832));
-		COLOR.rgb = mix(COLOR.rgb, vec3(1.0), flash * step(0.9, seed));
+		c.rgb = mix(c.rgb, vec3(1.0), flash * step(0.9, seed));
+	} else if (is_foam(c)) {
+		// Foam gathers when the swell crests and thins out in the trough.
+		float crest = smoothstep(0.45, 0.95, swell);
+		c.rgb = mix(c.rgb * 0.8, vec3(1.0), crest * 0.7);
 	}
+	COLOR = c;
 }
 "
 
@@ -83,8 +88,8 @@ void fragment() {
 	float t = TIME * speed;
 	// The whole field travels to the right while a second, slower field bends it, so banks roll and change shape.
 	vec2 bend = vec2(fbm(at * 1.7 + vec2(0.0, t * 0.05)), fbm(at * 1.7 + vec2(5.2, -t * 0.04))) - 0.5;
-	float haze = smoothstep(0.60, 0.76, fbm(at * 3.6 + bend * 1.6 + vec2(-t * 0.22, t * 0.05)));
-	float shade = smoothstep(0.60, 0.74, fbm(at * 2.2 + bend * 0.9 + vec2(7.3 - t * 0.13, 2.1 + t * 0.03)));
+	float haze = smoothstep(0.54, 0.72, fbm(at * 3.6 + bend * 1.6 + vec2(-t * 0.22, t * 0.05)));
+	float shade = smoothstep(0.54, 0.70, fbm(at * 2.2 + bend * 0.9 + vec2(7.3 - t * 0.13, 2.1 + t * 0.03)));
 	float alpha = max(haze * strength, shade * shadow * (1.0 - haze));
 	COLOR = vec4(mix(vec3(0.05, 0.08, 0.2), vec3(1.0, 0.98, 0.94), haze * strength / max(alpha, 0.0001)), alpha);
 }
