@@ -76,8 +76,25 @@ func _run() -> void:
 	var cloud_x: float = life.clouds[0].position.x
 	life._process(1.0)
 	_check(life.clouds[0].position.x > cloud_x, "clouds drift")
+	# No dead ends: every open square must be linked to every other one by single steps.
+	var squares := {}
+	for sy in range(0, 20):
+		for sx in range(0, 30):
+			var spot_centre := Vector2(sx * 64 + 16, sy * 64 + 48)
+			if walk.footprint_open(spot_centre):
+				squares[Vector2i(sx, sy)] = true
+	var seen := {}
+	var queue: Array[Vector2i] = [squares.keys()[0]]
+	seen[queue[0]] = true
+	while not queue.is_empty():
+		var at: Vector2i = queue.pop_back()
+		for step in [Vector2i(1, 0), Vector2i(-1, 0), Vector2i(0, 1), Vector2i(0, -1)]:
+			if squares.has(at + step) and not seen.has(at + step):
+				seen[at + step] = true
+				queue.append(at + step)
+	_check(seen.size() == squares.size(), "every walkable square can be reached from every other (%d of %d)" % [seen.size(), squares.size()])
 	_check(walk.footprint_open(Vector2(400, 816)) and walk.footprint_open(Vector2(400, 752)), "a path leads behind the left parapet")
-	_check(life.depth_objects.size() == 13 and life.hero == _main.player, "thirteen painted objects have depth")
+	_check(life.depth_objects.size() == 14 and life.hero == _main.player, "fourteen painted objects have depth")
 	var bed_cut: Polygon2D = life.get_node("bed")
 	_main.player.global_position = Vector2(528, 560)   # beside the bed, feet above its base line
 	life._process(0.016)
